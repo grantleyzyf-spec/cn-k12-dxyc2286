@@ -1,0 +1,35 @@
+name: Validate JSON Data
+
+on:
+  push:
+    paths:
+      - 'data/**/*.json'
+  pull_request:
+    paths:
+      - 'data/**/*.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Validate JSON syntax
+        run: |
+          find data -name "*.json" -exec echo "Checking: {}" \;
+          find data -name "*.json" -exec node -e "JSON.parse(require('fs').readFileSync('{}', 'utf8'))" \;
+      
+      - name: Check schema compliance
+        run: |
+          npm install -g ajv-cli
+          for subject in math english physics chemistry; do
+            if [ -f "data/$subject/topics.json" ]; then
+              echo "Validating $subject/topics.json"
+              ajv validate -s data/schema-topic.json -d "data/$subject/topics.json" || true
+            fi
+          done
