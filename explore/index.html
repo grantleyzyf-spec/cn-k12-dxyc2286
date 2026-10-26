@@ -260,17 +260,12 @@
 
         // 获取学科的topics文件列表
         function getTopicsFiles(subject) {
-            if (subject === 'math') {
-                return ['topics.json', 'topics_grade2-6.json', 'topics_grade7-9.json', 'topics_grade10-12.json'];
-            }
+            // v2：topics.json 已含全部学段（grade 拆分文件仅作归档，不再叠加，避免重复）
             return ['topics.json'];
         }
 
         // 获取学科的dependencies文件列表
         function getDepsFiles(subject) {
-            if (subject === 'math') {
-                return ['dependencies.json', 'dependencies_grade2-6.json', 'dependencies_grade7-9.json', 'dependencies_grade10-12.json'];
-            }
             return ['dependencies.json'];
         }
 
@@ -287,7 +282,7 @@
                         allTopics = allTopics.concat(data);
                     }
                 }
-                topicsData = allTopics;
+                topicsData = Array.from(new Map(allTopics.map(t => [t.id, t])).values());
                 
                 // 加载所有dependencies文件
                 const depsFiles = getDepsFiles(currentSubject);
@@ -299,7 +294,7 @@
                         allDeps = allDeps.concat(data);
                     }
                 }
-                dependenciesData = allDeps;
+                dependenciesData = Array.from(new Map(allDeps.map(d => [`${d.from}->${d.to}:${d.type}`, d])).values());
                 
                 updateTopicList();
                 renderGraph();

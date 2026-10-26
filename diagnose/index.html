@@ -271,25 +271,17 @@
 
         // 获取学科的topics文件列表
         function getTopicsFiles(subject) {
-            if (subject === 'math') {
-                return ['topics.json', 'topics_grade2-6.json', 'topics_grade7-9.json', 'topics_grade10-12.json'];
-            }
+            // v2：topics.json 已含全部学段（grade 拆分文件仅作归档，不再叠加，避免重复）
             return ['topics.json'];
         }
 
         // 获取学科的dependencies文件列表
         function getDepsFiles(subject) {
-            if (subject === 'math') {
-                return ['dependencies.json', 'dependencies_grade2-6.json', 'dependencies_grade7-9.json', 'dependencies_grade10-12.json'];
-            }
             return ['dependencies.json'];
         }
 
         // 获取学科的questions文件列表
         function getQuestionsFiles(subject) {
-            if (subject === 'math') {
-                return ['questions.json', 'questions_grade2-6.json', 'questions_grade7-9.json', 'questions_grade10-12.json'];
-            }
             return ['questions.json'];
         }
 
@@ -319,7 +311,7 @@
                         allTopics = allTopics.concat(data);
                     }
                 }
-                topicsData = allTopics;
+                topicsData = Array.from(new Map(allTopics.map(t => [t.id, t])).values());
                 
                 topicSelect.innerHTML = '<option value="">请选择目标知识点</option>';
                 topicsData.sort((a, b) => (a.grade || 0) - (b.grade || 0));
@@ -368,7 +360,7 @@
                         allDeps = allDeps.concat(data);
                     }
                 }
-                dependenciesData = allDeps;
+                dependenciesData = Array.from(new Map(allDeps.map(d => [`${d.from}->${d.to}:${d.type}`, d])).values());
                 
                 let allQuestions = [];
                 for (const file of qFiles) {
@@ -378,7 +370,7 @@
                         allQuestions = allQuestions.concat(data);
                     }
                 }
-                questionsData = allQuestions;
+                questionsData = Array.from(new Map(allQuestions.map(q => [q.id, q])).values());
             } catch (e) {
                 alert('数据加载失败，请刷新重试');
                 return;
@@ -432,15 +424,15 @@
             }
 
             const item = questionQueue[currentQuestionIndex];
-            document.getElementById('question-text').textContent = item.question.question;
+            document.getElementById('question-text').textContent = (item.question.prompt || item.question.question);
             document.getElementById('progress-text').textContent = `第 ${currentQuestionIndex + 1} 题`;
             document.getElementById('progress-fill').style.width = `${(currentQuestionIndex / questionQueue.length) * 100}%`;
 
             const optionsDiv = document.getElementById('options');
             optionsDiv.innerHTML = '';
             
-            if (item.question.options && item.question.options.length > 0) {
-                item.question.options.forEach(opt => {
+            if ((item.question.options || []) && (item.question.options || []).length > 0) {
+                (item.question.options || []).forEach(opt => {
                     const div = document.createElement('div');
                     div.className = 'option';
                     div.textContent = `${opt.label}. ${opt.text}`;

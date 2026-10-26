@@ -4,32 +4,59 @@ on:
   push:
     paths:
       - 'data/**/*.json'
+      - 'scripts/**'
+      - '.github/workflows/validate.yml'
   pull_request:
     paths:
       - 'data/**/*.json'
+      - 'scripts/**'
+      - '.github/workflows/validate.yml'
+  workflow_dispatch:
 
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      
-      - name: Validate JSON syntax
+
+      - name: Validate JSON syntax (all data files)
         run: |
-          find data -name "*.json" -exec echo "Checking: {}" \;
-          find data -name "*.json" -exec node -e "JSON.parse(require('fs').readFileSync('{}', 'utf8'))" \;
-      
-      - name: Check schema compliance
+          find data -name "*.json" -print0 | xargs -0 -n1 node -e "JSON.parse(require('fs').readFileSync(process.argv[1],'utf8'))" 
+
+      - name: Validate structure & references (17 subjects)
+        run: python3 scripts/validate.py --all
+
+      - name: Check schema compliance (v2 node structure)
         run: |
-          npm install -g ajv-cli
-          for subject in math english physics chemistry; do
-            if [ -f "data/$subject/topics.json" ]; then
-              echo "Validating $subject/topics.json"
-              ajv validate -s data/schema-topic.json -d "data/$subject/topics.json" || true
+          npm install -g ajv-cli ajv-formats
+          fail=0
+          for subject in $(ls data | grep -v '\.json'); do
+            [ -f "data/$subject/topics.json" ] || continue
+            echo "::group::$subject"
+            ajv validate -c ajv-formats -s data/schema-topic.json -d "data/$subject/topics.json" || fail=1
+            if [ -f "data/$subject/questions.json" ]; then
+              ajv validate -c ajv-formats -s data/schema-question.json -d "data/$subject/questions.json" || fail=1
             fi
+            echo "::endgroup::"
           done
+          exit $fail
+
+      - name: Summary
+        run: |
+          python3 - <<'PY'
+          import json, pathlib
+          t = json.load(open('data/topics.json', encoding='utf-8'))
+          q = json.load(open('data/questions.json', encoding='utf-8'))
+          d = json.load(open('data/dependencies.json', encoding='utf-8'))
+          print(f"aggregate: topics={len(t)} questions={len(q)} dependencies={len(d)}")
+          PY

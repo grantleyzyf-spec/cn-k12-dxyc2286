@@ -1,51 +1,41 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "K-12 Diagnostic Question",
-  "description": "中国K-12知识图谱 - 诊断题定义",
+  "title": "K-12 Diagnostic Question (v2, 对齐 cn-math-taxonomy)",
+  "description": "中国 K-12 知识图谱 - 诊断题。v2 以 prompt 为规范字段，question 保留为兼容别名；difficulty 采用 basic/standard/hard。",
   "type": "object",
-  "required": ["id", "topicId", "question", "answer", "type"],
+  "required": ["id", "topicId", "prompt", "answer", "type"],
   "properties": {
-    "id": {
-      "type": "string",
-      "description": "题目唯一ID"
-    },
-    "topicId": {
-      "type": "string",
-      "description": "对应的知识点ID"
-    },
-    "question": {
-      "type": "string",
-      "description": "题目内容"
-    },
+    "id": { "type": "string", "description": "题目唯一ID" },
+    "topicId": { "type": "string", "description": "对应的知识点ID" },
+    "prompt": { "type": "string", "description": "题目内容（规范字段）" },
+    "question": { "type": "string", "description": "题目内容（兼容旧前端，与 prompt 同值）" },
     "options": {
       "type": "array",
       "items": {
         "type": "object",
+        "required": ["label", "text"],
         "properties": {
           "label": { "type": "string" },
-          "text": { "type": "string" }
+          "text": { "type": "string" },
+          "correct": { "type": "boolean" }
         }
       },
-      "description": "选择题选项（非选择题为空数组）"
+      "description": "选择题选项（非选择题省略或为空数组）"
     },
-    "answer": {
-      "type": "string",
-      "description": "正确答案"
-    },
+    "answer": { "type": "string", "description": "正确答案（选择题为选项 label）" },
     "type": {
       "type": "string",
-      "enum": ["choice", "fill", "short-answer"],
+      "enum": ["choice", "fill", "short-answer", "numeric"],
       "description": "题目类型"
     },
     "difficulty": {
       "type": "string",
-      "enum": ["easy", "medium", "hard"],
+      "enum": ["basic", "standard", "hard", "easy", "medium"],
       "description": "难度级别"
     },
-    "explanation": {
-      "type": "string",
-      "description": "答案解析"
-    }
+    "explanation": { "type": "string", "description": "答案解析" },
+    "verify": { "type": "string", "description": "可复算校验式，如 3+1" },
+    "subject": { "type": "string", "description": "学科代码（可选）" }
   },
   "additionalProperties": false
 }

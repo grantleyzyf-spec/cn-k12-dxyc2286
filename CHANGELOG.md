@@ -6,6 +6,25 @@
 
 ## [Unreleased]
 
+### 新增（0.3.0-dev）
+- **节点结构对齐 cn-math-taxonomy（v2）**
+  - 知识点新增 `mastery_criteria`（可观察掌握标准）、`diagnostic_question`（节点级快诊题）、
+    `external`、`standards[{id,confidence}]` 四个字段；补齐 `domain`、`type`
+  - `semester` 由 `fall/spring` 统一为 `上/下`（与参考项目一致）
+  - 诊断题以 `prompt` 为规范字段，`question` 保留为兼容别名；新增可选 `verify` 可复算校验式
+  - 同步更新 `data/schema-topic.json`、`data/schema-question.json` 与 `scripts/validate.py`
+- **修复数学数据只暴露 24 个知识点**：`data/math/topics.json` 是旧存根，站点只读到 24 条；
+  新增 `scripts/rebuild_canonical_from_splits.py` 由 `topics_grade*.json` 重建单文件
+  ⇒ 数学 24 → **479** 知识点、14 → **469** 题、26 → **527** 先修边
+- **新增汇总数据**：`data/topics.json` / `data/dependencies.json` / `data/questions.json`
+  （全学科合并，与参考仓库同口径，便于外部直接消费）
+- **修数据一致性**：english 先修边缺 `type`、german 用了 `prerequisite` 别名、history 的
+  `type` 字段混入难度值、english 题目 `answer` 为空（改用选项 `correct` 标记）、
+  german 选项为字符串（"A. ß"）—— 全部在 `scripts/normalize_to_ref_schema.py` 中规范化
+- **CI**：`validate.yml` 由「只查 4 学科语法」升级为「全 17 学科 + 结构与引用校验 + JSON Schema 校验」
+- **部署**：启用 GitHub Pages（workflow 构建），修复 Deploy 工作流 `Get Pages site failed`
+- **README**：补 v2 节点结构说明、目录结构、脚本用法、真实统计与覆盖缺口（124 个知识点暂无诊断题）
+
 ### 待办
 - [ ] 教师审核各学科知识点拆分粒度
 - [ ] 教师审核先修关系(hard/soft)合理性
@@ -13,6 +32,7 @@
 - [ ] 课标条目逐页核对
 - [ ] 添加更多版本教材支持（北师大版、苏教版等）
 - [ ] 完善高中选修课程数据
+- [ ] 补齐物理(74)、俄语(40)、数学(10) 缺失的诊断题
 
 ---
 
