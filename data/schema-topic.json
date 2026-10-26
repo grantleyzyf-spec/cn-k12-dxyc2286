@@ -1,74 +1,178 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "K-12 Knowledge Point (v2, 对齐 cn-math-taxonomy 节点结构)",
+  "title": "K-12 Knowledge Point (v2, 对齐 cn-math-taxonomy 节点结构)（数组文件）",
   "description": "中国 K-12 全学科知识图谱 - 知识点节点。v2 增加 mastery_criteria / diagnostic_question / external / standards 四个节点级字段，semester 统一为 上/下。",
-  "type": "object",
-  "required": ["id", "name", "subject", "grade", "semester", "chapter", "description", "mastery_criteria", "diagnostic_question", "standards"],
-  "properties": {
-    "id": {
-      "type": "string",
-      "pattern": "^[a-z]{3}_[ph]\\d{3,4}$",
-      "description": "知识点唯一ID，格式: {学科3字母}_{p小学|h高中}{序号}"
-    },
-    "name": { "type": "string", "maxLength": 50, "description": "知识点名称" },
-    "subject": {
-      "type": "string",
-      "enum": ["math", "english", "chinese", "physics", "chemistry", "biology", "history", "geography", "science", "information-technology", "japanese", "russian", "german", "french", "spanish", "music", "art"],
-      "description": "学科代码"
-    },
-    "domain": { "type": "string", "description": "领域/主题，如 数与代数、图形与几何" },
-    "grade": {
-      "type": "integer",
-      "minimum": 1,
-      "maximum": 16,
-      "description": "年级: 1-6=小学, 7-9=初中, 10-12=高中必修, 13-16=高中选择性必修"
-    },
-    "semester": { "type": "string", "enum": ["上", "下"], "description": "学期：上=上册，下=下册" },
-    "chapter": { "type": "string", "description": "所属章节完整路径" },
-    "type": {
-      "type": "string",
-      "enum": ["conceptual", "procedural", "reasoning", "modeling", "application"],
-      "description": "知识类型：概念性 / 程序性 / 推理性 / 建模 / 应用"
-    },
-    "description": { "type": "string", "description": "知识点描述，说明学生应掌握的内容" },
-    "mastery_criteria": {
-      "type": "array",
-      "items": { "type": "string" },
-      "description": "可观察的掌握标准（1–3 条），用于自适应诊断与掌握判定"
-    },
-    "diagnostic_question": {
-      "type": "object",
-      "required": ["question", "answer"],
-      "properties": {
-        "question": { "type": "string" },
-        "answer": { "type": "string" }
+  "type": "array",
+  "items": {
+    "required": [
+      "id",
+      "name",
+      "subject",
+      "grade",
+      "semester",
+      "chapter",
+      "description",
+      "mastery_criteria",
+      "diagnostic_question",
+      "standards"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z]{3}_[ph]\\d{3,4}$",
+        "description": "知识点唯一ID，格式: {学科3字母}_{p小学|h高中}{序号}"
       },
-      "description": "节点级快速诊断题（与 questions.json 题库互为补充）"
-    },
-    "external": { "type": "boolean", "description": "是否为外部/跨学科引用节点" },
-    "standards": {
-      "type": "array",
-      "items": {
+      "name": {
+        "type": "string",
+        "maxLength": 50,
+        "description": "知识点名称"
+      },
+      "subject": {
+        "type": "string",
+        "enum": [
+          "math",
+          "english",
+          "chinese",
+          "physics",
+          "chemistry",
+          "biology",
+          "history",
+          "geography",
+          "science",
+          "information-technology",
+          "japanese",
+          "russian",
+          "german",
+          "french",
+          "spanish",
+          "music",
+          "art"
+        ],
+        "description": "学科代码"
+      },
+      "domain": {
+        "type": "string",
+        "description": "领域/主题，如 数与代数、图形与几何"
+      },
+      "grade": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 16,
+        "description": "年级: 1-6=小学, 7-9=初中, 10-12=高中必修, 13-16=高中选择性必修"
+      },
+      "semester": {
+        "type": "string",
+        "enum": [
+          "上",
+          "下"
+        ],
+        "description": "学期：上=上册，下=下册"
+      },
+      "chapter": {
+        "type": "string",
+        "description": "所属章节完整路径"
+      },
+      "type": {
+        "type": "string",
+        "enum": [
+          "conceptual",
+          "procedural",
+          "reasoning",
+          "modeling",
+          "application"
+        ],
+        "description": "知识类型：概念性 / 程序性 / 推理性 / 建模 / 应用"
+      },
+      "description": {
+        "type": "string",
+        "description": "知识点描述，说明学生应掌握的内容"
+      },
+      "mastery_criteria": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "可观察的掌握标准（1–3 条），用于自适应诊断与掌握判定"
+      },
+      "diagnostic_question": {
         "type": "object",
-        "required": ["id"],
+        "required": [
+          "question",
+          "answer"
+        ],
         "properties": {
-          "id": { "type": "string", "description": "课标条目编号，如 cms-2022:1.NA.01" },
-          "confidence": { "type": "string", "enum": ["exact", "partial", "inferred"] }
-        }
+          "question": {
+            "type": "string"
+          },
+          "answer": {
+            "type": "string"
+          }
+        },
+        "description": "节点级快速诊断题（与 questions.json 题库互为补充）"
       },
-      "description": "对应课程标准条目及置信度"
+      "external": {
+        "type": "boolean",
+        "description": "是否为外部/跨学科引用节点"
+      },
+      "standards": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "id"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "课标条目编号，如 cms-2022:1.NA.01"
+            },
+            "confidence": {
+              "type": "string",
+              "enum": [
+                "exact",
+                "partial",
+                "inferred"
+              ]
+            }
+          }
+        },
+        "description": "对应课程标准条目及置信度"
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "标签，如课标主题分类"
+      },
+      "prerequisites": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "直接先修知识点ID列表（与 dependencies.json 冗余，便于单文件读取）"
+      },
+      "curriculumRef": {
+        "type": "string",
+        "description": "课程标准条目编号（兼容字段）"
+      },
+      "textbookRef": {
+        "type": "string",
+        "description": "教材版本和页码参考"
+      },
+      "verified": {
+        "type": "boolean",
+        "description": "是否经过人工核验"
+      },
+      "dimension": {
+        "type": "string",
+        "description": "数学内容维度（兼容字段）"
+      },
+      "dimension_name": {
+        "type": "string",
+        "description": "数学内容维度名称（兼容字段）"
+      }
     },
-    "tags": { "type": "array", "items": { "type": "string" }, "description": "标签，如课标主题分类" },
-    "prerequisites": {
-      "type": "array",
-      "items": { "type": "string" },
-      "description": "直接先修知识点ID列表（与 dependencies.json 冗余，便于单文件读取）"
-    },
-    "curriculumRef": { "type": "string", "description": "课程标准条目编号（兼容字段）" },
-    "textbookRef": { "type": "string", "description": "教材版本和页码参考" },
-    "verified": { "type": "boolean", "description": "是否经过人工核验" },
-    "dimension": { "type": "string", "description": "数学内容维度（兼容字段）" },
-    "dimension_name": { "type": "string", "description": "数学内容维度名称（兼容字段）" }
-  },
-  "additionalProperties": false
+    "additionalProperties": false
+  }
 }
