@@ -19,8 +19,8 @@
     "properties": {
       "id": {
         "type": "string",
-        "pattern": "^[a-z]{3}_[ph]\\d{3,4}$",
-        "description": "知识点唯一ID，格式: {学科3字母}_{p小学|h高中}{序号}"
+        "pattern": "^[a-z]{2,6}_[ph]\\d{2,4}$",
+        "description": "知识点唯一ID，格式: {学科前缀}_{p小学|h高中}{2–4 位序号}"
       },
       "name": {
         "type": "string",
@@ -173,6 +173,7 @@
         "description": "数学内容维度名称（兼容字段）"
       }
     },
-    "additionalProperties": false
+    "additionalProperties": false,
+    "type": "object"
   }
 }
