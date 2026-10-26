@@ -133,8 +133,17 @@
                 "partial",
                 "inferred"
               ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "课标原文片段（12–40 字，逐字来自课标文件）"
+            },
+            "sourceLine": {
+              "type": "integer",
+              "description": "该 quote 在课标 TXT 中的行号"
             }
-          }
+          },
+          "additionalProperties": false
         },
         "description": "对应课程标准条目及置信度"
       },
