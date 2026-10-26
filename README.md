@@ -9,6 +9,17 @@
 - 🩺 自适应诊断：<https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/diagnose/>
 - 👧 学习档案（给孩子建档、诊断结果按人保存）：<https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/children/>
 - 🕘 诊断记录 / 反复未掌握清单：<https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/children/history.html>
+- ❤️ **赞助支持**：<https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/sponsor/>
+
+## ❤️ 支持本项目
+
+如果这个项目对你有帮助，欢迎通过以下方式支持我们：
+
+- 🐙 **GitHub Sponsors**：<https://github.com/sponsors/grantleyzyf-spec>
+- ⚡ **爱发电**：<https://afdian.com/a/cn-k12-dxyc2286>
+- 💰 **Open Collective**：<https://opencollective.com/cn-k12-dxyc2286>
+
+您的赞助将用于服务器运维、教师审核团队费用、新功能开发等。详见 [赞助页面](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/sponsor/)。
 
 ## ⚠️ 状态声明
 

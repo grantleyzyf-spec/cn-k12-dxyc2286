@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支持 cn-k12-dxyc2286 - 赞助与贡献</title>
+    <link rel="manifest" href="../manifest.webmanifest">
+    <meta name="theme-color" content="#667eea">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 { font-size: 32px; margin-bottom: 15px; }
+        .header p { opacity: 0.9; font-size: 16px; line-height: 1.6; }
+        .content { padding: 40px; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover { text-decoration: underline; }
+        
+        .intro {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        .intro h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .stat-item {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .stat-label {
+            font-size: 13px;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .tiers {
+            margin-bottom: 40px;
+        }
+        .tiers h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+        .tier-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .tier-card {
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 25px;
+            transition: all 0.3s;
+            position: relative;
+        }
+        .tier-card:hover {
+            border-color: #667eea;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+        .tier-card.featured {
+            border-color: #667eea;
+            background: linear-gradient(135deg, #667eea10 0%, #764ba210 100%);
+        }
+        .tier-card.featured::before {
+            content: "推荐";
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .tier-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .tier-price {
+            font-size: 32px;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        .tier-price span {
+            font-size: 14px;
+            color: #666;
+            font-weight: normal;
+        }
+        .tier-features {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        .tier-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 14px;
+            color: #555;
+        }
+        .tier-features li:last-child { border-bottom: none; }
+        .tier-features li::before {
+            content: "✓ ";
+            color: #28a745;
+            font-weight: bold;
+        }
+        .tier-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .tier-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .platforms {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .platforms h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .platform-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .platform-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.2s;
+        }
+        .platform-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .platform-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .platform-name {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .platform-desc {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .platform-link {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .platform-link:hover {
+            background: #5a6fd6;
+        }
+        
+        .qr-section {
+            text-align: center;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .qr-section h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .qr-section p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .qr-placeholder {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background: white;
+            border: 2px dashed #ccc;
+            border-radius: 12px;
+            line-height: 200px;
+            color: #999;
+            font-size: 14px;
+            margin: 0 10px;
+        }
+        .qr-note {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #888;
+        }
+        
+        .thanks {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-radius: 12px;
+        }
+        .thanks h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        .thanks p {
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 20px 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+        .footer a { color: #667eea; text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>❤️ 支持 cn-k12-dxyc2286</h1>
+            <p>您的支持将帮助更多师生获得高质量的教育资源</p>
+        </div>
+        
+        <div class="content">
+            <a href="../" class="back-link">← 返回首页</a>
+            
+            <div class="intro">
+                <h2>📚 关于本项目</h2>
+                <p>
+                    cn-k12-dxyc2286 是一个开源的中国 K-12 全学科知识图谱项目，覆盖 17 个学科，包含 1924 个知识点、2199 条先修关系和 1800 道诊断题。
+                    项目旨在帮助学生通过自适应诊断找到学习薄弱点，帮助教师精准教学。
+                </p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">17</div>
+                        <div class="stat-label">覆盖学科</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1924</div>
+                        <div class="stat-label">知识点</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">2199</div>
+                        <div class="stat-label">先修关系</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1800</div>
+                        <div class="stat-label">诊断题</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tiers">
+                <h2>💎 赞助档位</h2>
+                <div class="tier-grid">
+                    <div class="tier-card">
+                        <div class="tier-name">☕ 支持者</div>
+                        <div class="tier-price">¥30<span>/月</span></div>
+                        <ul class="tier-features">
+                            <li>感谢名单展示</li>
+                            <li>优先回复 Issue</li>
+                            <li>月度更新报告</li>
+                            <li>专属支持者徽章</li>
+                        </ul>
+                        <a href="https://github.com/sponsors/grantleyzyf-spec" class="tier-btn">GitHub 赞助</a>
+                    </div>
+                    
+                    <div class="tier-card featured">
+                        <div class="tier-name">🌟 贡献者</div>
+                        <div class="tier-price">¥100<span>/月</span></div>
+                        <ul class="tier-features">
+                            <li>包含支持者全部权益</li>
+                            <li>定制化数据导出</li>
+                            <li>新功能投票权</li>
+                            <li>优先体验新功能</li>
+                            <li>加入贡献者微信群</li>
+                        </ul>
+                        <a href="https://github.com/sponsors/grantleyzyf-spec" class="tier-btn">GitHub 赞助</a>
+                    </div>
+                    
+                    <div class="tier-card">
+                        <div class="tier-name">🏆 合作伙伴</div>
+                        <div class="tier-price">¥500<span>/月</span></div>
+                        <ul class="tier-features">
+                            <li>包含贡献者全部权益</li>
+                            <li>1对1 技术咨询</li>
+                            <li>私有部署指导</li>
+                            <li>定制功能开发</li>
+                            <li>项目 Logo 展示</li>
+                        </ul>
+                        <a href="https://github.com/sponsors/grantleyzyf-spec" class="tier-btn">GitHub 赞助</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="platforms">
+                <h2>🌐 赞助平台</h2>
+                <div class="platform-grid">
+                    <div class="platform-card">
+                        <div class="platform-icon">🐙</div>
+                        <div class="platform-name">GitHub Sponsors</div>
+                        <div class="platform-desc">国际平台，支持信用卡/PayPal</div>
+                        <a href="https://github.com/sponsors/grantleyzyf-spec" class="platform-link">前往赞助</a>
+                    </div>
+                    <div class="platform-card">
+                        <div class="platform-icon">⚡</div>
+                        <div class="platform-name">爱发电</div>
+                        <div class="platform-desc">国内平台，支持微信/支付宝</div>
+                        <a href="https://afdian.com/a/cn-k12-dxyc2286" class="platform-link">前往赞助</a>
+                    </div>
+                    <div class="platform-card">
+                        <div class="platform-icon">💰</div>
+                        <div class="platform-name">Open Collective</div>
+                        <div class="platform-desc">透明化资金管理</div>
+                        <a href="https://opencollective.com/cn-k12-dxyc2286" class="platform-link">前往赞助</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="qr-section">
+                <h2>📱 扫码赞助</h2>
+                <p>使用微信或支付宝扫描下方二维码</p>
+                <div>
+                    <div class="qr-placeholder">
+                        微信支付二维码<br>待添加
+                    </div>
+                    <div class="qr-placeholder">
+                        支付宝二维码<br>待添加
+                    </div>
+                </div>
+                <p class="qr-note">
+                    * 请将二维码图片放置到 assets/qr/ 目录，并更新此页面<br>
+                    * 或直接联系项目维护者获取收款方式
+                </p>
+            </div>
+            
+            <div class="thanks">
+                <h2>🙏 致谢</h2>
+                <p>
+                    感谢每一位支持者的信任与贡献！您的赞助将用于：<br>
+                    • 服务器运维和 API 服务扩容<br>
+                    • 教师审核团队的费用支付<br>
+                    • 新功能开发和数据质量提升<br>
+                    • 社区运营和推广活动
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>
+                <a href="https://github.com/grantleyzyf-spec/cn-k12-dxyc2286">GitHub</a> · 
+                <a href="../CONTRIBUTING.md">贡献指南</a> · 
+                <a href="../LICENSE">CC BY 4.0</a>
+            </p>
+            <p style="margin-top: 10px;">© 2026 cn-k12-dxyc2286 Contributors</p>
+        </div>
+    </div>
+    
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('../sw.js').catch(err => console.log('SW failed:', err));
+        }
+    </script>
+</body>
+</html>
