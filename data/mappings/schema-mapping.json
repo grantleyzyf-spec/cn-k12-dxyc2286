@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "教材版本映射（edition mapping）",
+  "description": "把一个教材版本的册次/课次映射到本库的知识点 ID。不重复知识点正文。",
+  "type": "object",
+  "required": ["subject", "edition", "volumes"],
+  "additionalProperties": false,
+  "properties": {
+    "subject": {
+      "type": "string",
+      "enum": ["math", "english", "chinese", "physics", "chemistry", "biology", "history", "geography", "science", "information-technology", "japanese", "russian", "german", "french", "spanish", "music", "art"]
+    },
+    "edition": { "type": "string", "description": "教材版本，如 沪教版 / 北师大版 / 山东五四制" },
+    "stage": { "type": "string", "description": "学段，如 小学 / 初中 / 高中" },
+    "alignedTo": { "type": "string", "description": "本库主版本（通常 人教版）" },
+    "generated": { "type": "string", "description": "生成日期 YYYY-MM-DD" },
+    "note": { "type": "string" },
+    "volumes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["volume", "chapters"],
+        "additionalProperties": false,
+        "properties": {
+          "volume": { "type": "string", "description": "册次，如 一年级上册 / 必修第一册" },
+          "chapters": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["chapter", "topicIds", "confidence"],
+              "additionalProperties": false,
+              "properties": {
+                "chapter": { "type": "string" },
+                "topicIds": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+                "confidence": { "type": "string", "enum": ["exact", "partial", "inferred"] },
+                "source": { "type": "string", "description": "依据：教材版本/印次/目录或页码" },
+                "reviewed": { "type": "boolean", "description": "是否经教师复核" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

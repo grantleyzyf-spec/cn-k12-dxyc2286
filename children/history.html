@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>诊断记录 · 中国 K-12 知识图谱</title>
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="stylesheet" href="children.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../">中国 K-12 全学科知识图谱</a>
+  <nav class="site-nav">
+    <a href="../">首页</a>
+    <a href="../explore/">图谱</a>
+    <a href="../diagnose/">诊断</a>
+    <a href="./">档案</a>
+    <a class="active" href="./history.html">记录</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <h1 id="title">诊断记录</h1>
+  <p class="lede">同一知识点在多次诊断里反复出现，说明它是真正的前置缺口——优先补这些。</p>
+
+  <section class="panel">
+    <h2>反复未掌握的知识点（<span id="weak-count">0</span>）</h2>
+    <table>
+      <thead><tr><th>知识点</th><th>出现次数</th><th>学科</th><th>最近一次</th></tr></thead>
+      <tbody id="weak-body"></tbody>
+    </table>
+    <p class="empty" id="weak-empty">还没有记录。去 <a href="../diagnose/">诊断页</a> 做一次，结果会自动存进来。</p>
+  </section>
+
+  <section class="panel">
+    <h2>诊断明细（<span id="rec-count">0</span>）</h2>
+    <table>
+      <thead><tr><th>时间</th><th>学科</th><th>目标知识点</th><th>检测题</th><th>未掌握</th></tr></thead>
+      <tbody id="rec-body"></tbody>
+    </table>
+    <p class="empty" id="rec-empty">暂无明细。</p>
+  </section>
+
+  <p class="foot">记录只保存在本机浏览器；换设备不同步。</p>
+</main>
+
+<script src="../assets/children.js"></script>
+<script src="history.js"></script>
+</body>
+</html>

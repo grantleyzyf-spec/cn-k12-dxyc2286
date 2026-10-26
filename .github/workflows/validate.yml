@@ -36,6 +36,17 @@ jobs:
       - name: Validate structure & references (17 subjects)
         run: python3 scripts/validate.py --all
 
+      - name: Validate edition mappings
+        run: python3 scripts/validate_mappings.py
+
+      - name: Standards index freshness (regenerate & diff)
+        run: |
+          cp data/cn-curriculum-standards.json /tmp/std.before.json
+          cp data/mappings/volume-map.json /tmp/vol.before.json
+          python3 scripts/build_standards_index.py >/dev/null
+          diff -q /tmp/std.before.json data/cn-curriculum-standards.json || { echo "::error::cn-curriculum-standards.json 已过期，请本地跑 scripts/build_standards_index.py 并提交"; exit 1; }
+          diff -q /tmp/vol.before.json data/mappings/volume-map.json || { echo "::error::volume-map.json 已过期"; exit 1; }
+
       - name: Check schema compliance (v2 node structure)
         run: |
           npm install -g ajv-cli ajv-formats

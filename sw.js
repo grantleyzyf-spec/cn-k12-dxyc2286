@@ -5,6 +5,10 @@ const ASSETS_TO_CACHE = [
   './index.html',
   './diagnose/index.html',
   './explore/index.html',
+  './children/index.html',
+  './children/history.html',
+  './children/children.css',
+  './assets/children.js',
   './manifest.webmanifest'
 ];
 

@@ -245,6 +245,7 @@
         </div>
     </div>
 
+    <script src="../assets/children.js"></script>
     <script>
         // 数据加载
         let topicsData = {};
@@ -491,6 +492,25 @@
                     </ul>
                 `;
             }
+
+            // 存入学习档案（无档案时按匿名记录保存）
+            try {
+                if (window.CnmKids) {
+                    var kid = window.CnmKids.current();
+                    window.CnmKids.addRecord({
+                        subject: currentSubject,
+                        target: targetTopic ? { id: targetTopic.id, name: targetTopic.name } : null,
+                        asked: questionQueue.length,
+                        weak: weakTopics.map(function (t) { return { id: t.id, name: t.name }; })
+                    });
+                    var tip = document.createElement('p');
+                    tip.style.cssText = 'margin-top:12px;font-size:14px;color:#6b7280';
+                    tip.innerHTML = kid
+                        ? '已存入「' + kid.name + '」的档案 · <a href="../children/history.html?child=' + encodeURIComponent(kid.id) + '">查看记录</a>'
+                        : '尚未建档，本次结果未保存 · <a href="../children/">去建档</a>';
+                    content.appendChild(tip);
+                }
+            } catch (e) { console.warn('保存诊断记录失败', e); }
         }
     </script>
     <script>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>学习档案 · 中国 K-12 知识图谱</title>
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="stylesheet" href="children.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../">中国 K-12 全学科知识图谱</a>
+  <nav class="site-nav">
+    <a href="../">首页</a>
+    <a href="../explore/">图谱</a>
+    <a href="../diagnose/">诊断</a>
+    <a class="active" href="./">档案</a>
+    <a href="./history.html">记录</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <h1>学习档案</h1>
+  <p class="lede">给每个孩子建一份档案。诊断页会按「当前孩子」保存结果，回看页可以看他反复没掌握的知识点。</p>
+
+  <section class="panel">
+    <h2 id="form-title">添加孩子</h2>
+    <form id="form" autocomplete="off">
+      <div class="row">
+        <label>称呼<input id="f-name" maxlength="12" placeholder="如：小宇" required></label>
+        <label>年级
+          <select id="f-grade" required></select>
+        </label>
+        <label>教材版本
+          <select id="f-textbook"></select>
+        </label>
+      </div>
+      <p class="err" id="f-error" hidden></p>
+      <div class="actions">
+        <button type="submit" id="f-submit">添加孩子</button>
+        <button type="button" id="f-cancel" hidden>取消编辑</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="panel">
+    <h2>已建档（<span id="count">0</span>）</h2>
+    <ul class="kids" id="list"></ul>
+    <p class="empty" id="empty">还没有档案，先在上方添加一个吧。</p>
+  </section>
+
+  <p class="foot">数据仅保存在本机浏览器（localStorage），不会上传。清除浏览器数据会一并删除。</p>
+</main>
+
+<script src="../assets/children.js"></script>
+<script src="page.js"></script>
+</body>
+</html>

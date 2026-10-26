@@ -7,6 +7,8 @@
 - 🌐 在线浏览：<https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/>
 - 🧭 图谱浏览器：<https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/explore/>
 - 🩺 自适应诊断：<https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/diagnose/>
+- 👧 学习档案（给孩子建档、诊断结果按人保存）：<https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/children/>
+- 🕘 诊断记录 / 反复未掌握清单：<https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/children/history.html>
 
 ## ⚠️ 状态声明
 
@@ -124,11 +126,30 @@ data/
 ├── schema-topic.json        # 知识点 JSON Schema（v2）
 ├── schema-question.json     # 诊断题 JSON Schema（v2）
 ├── schema-dependency.json   # 先修边 JSON Schema
-├── curriculum-standards.json# 课标条目库
+├── curriculum-standards.json# 课标来源元数据（各学科课标名称/版本）
+├── cn-curriculum-standards.json # 课标条目索引（758 条，含覆盖的知识点 id）
+├── mappings/                # 教材版本 / 册次映射（volume-map 自动生成，其它版本人工补）
 ├── verification_report.json # 数据核验报告
 └── {subject}/               # 17 个学科，各含 topics/dependencies/questions.json
     └── math/                # 数学另保留按学段拆分的 topics_grade*.json（历史文件）
+assets/
+├── children.js              # 学习档案存储（localStorage：档案 + 诊断记录）
+└── vendor/                  # cytoscape / dagre / cytoscape-dagre（MIT，本地打包，不走 CDN）
+children/                    # 学习档案 / 诊断记录页面
 ```
+
+## 课标条目索引
+
+`data/cn-curriculum-standards.json` 是**本库实际引用的课标条目索引**（不是课标原文）：
+
+- 17 学科共 **758** 个课标条目，覆盖 **1481 / 1924** 个知识点
+- 每条含：`id`（如 `cms-2022:1.NA.01`）、覆盖的 `topicIds`、年级分布、`confidence` 计数
+- 缺口：**语文 205、历史 138、德语 100** 个知识点目前没有课标条目引用（数据尚未对齐课标，待补）
+
+## 教材版本映射
+
+- `data/mappings/volume-map.json`：学科 → 册次 → 知识点数（**自动生成**，覆盖全部 1924 个知识点）
+- 其它版本（沪教版 / 北师大版 / 山东五四制…）的**逐课次映射尚未填充**——需要对照教材目录人工建，格式见 `data/mappings/README.md` 与 `schema-mapping.json`；没有依据的部分标 `inferred` 待教师复核
 
 ## 脚本
 
@@ -138,8 +159,35 @@ python3 scripts/validate.py math         # 单学科
 python3 scripts/normalize_to_ref_schema.py --check   # 体检：节点结构完整度
 python3 scripts/normalize_to_ref_schema.py --write   # 规范化到 v2 结构 + 重建汇总
 python3 scripts/rebuild_canonical_from_splits.py --write  # 由拆分文件重建单文件
+python3 scripts/build_standards_index.py # 重建课标条目索引 + 册次地图
+python3 scripts/build_standards_index.py --check  # 只体检（不落盘）
+python3 scripts/validate_mappings.py     # 校验教材版本映射（id 是否存在、confidence 合法性）
 python3 scripts/merge_math_data.py       # 数学按学段合并（归档用）
 ```
+
+## 前端页面
+
+| 页面 | 作用 |
+|---|---|
+| `index.html` | 首页：覆盖学科、数据规模、工具入口 |
+| `explore/` | 图谱浏览器：按学科/年级筛知识点，画先修关系图 |
+| `diagnose/` | 自适应诊断：沿 `hard` 先修边回溯，逐题检测前置知识 |
+| `children/` | 学习档案：建档（称呼/年级/教材版本）、切换当前孩子、删改 |
+| `children/history.html` | 诊断记录：反复未掌握知识点聚合 + 明细 |
+
+档案与记录都存在浏览器 `localStorage`（键 `k12kids.v1`），不上传、换设备不同步；诊断页完成后自动按「当前孩子」写入一条记录。
+
+## 第三方库
+
+`assets/vendor/` 本地打包，页面不访问外网 CDN：
+
+| 文件 | 包 | 版本 | 许可证 |
+|---|---|---|---|
+| `cytoscape.min.js` | cytoscape | 3.30.4 | MIT |
+| `dagre.min.js` | dagre | 0.8.5 | MIT |
+| `cytoscape-dagre.js` | cytoscape-dagre | 2.5.0 | MIT |
+
+许可证原文见同目录 `LICENSE-*.txt`；这些库保持各自许可证，不纳入本仓库的 CC BY 4.0。
 
 ## 许可证
 

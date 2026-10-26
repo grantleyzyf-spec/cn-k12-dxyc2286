@@ -24,6 +24,19 @@
 - **CI**：`validate.yml` 由「只查 4 学科语法」升级为「全 17 学科 + 结构与引用校验 + JSON Schema 校验」
 - **部署**：启用 GitHub Pages（workflow 构建），修复 Deploy 工作流 `Get Pages site failed`
 - **README**：补 v2 节点结构说明、目录结构、脚本用法、真实统计与覆盖缺口（124 个知识点暂无诊断题）
+- **新增「学习档案」页面组**（对齐参考仓库 children/ 的能力，按本库口径重写）
+  - `children/index.html` + `page.js` + `children.css`：建档（称呼/年级/教材版本）、编辑、删除、切换当前孩子
+  - `children/history.html` + `history.js`：诊断明细 + **反复未掌握知识点聚合**（按出现次数排序）
+  - `assets/children.js`：localStorage 存储层（`k12kids.v1`），`diagnose/` 完成后自动按当前孩子写入记录
+  - 首页新增「学习档案」入口
+- **本地第三方库**：`assets/vendor/` 打包 cytoscape 3.30.4 / dagre 0.8.5 / cytoscape-dagre 2.5.0（均 MIT，附许可证原文），
+  页面不再依赖外网 CDN
+- **课标条目索引** `data/cn-curriculum-standards.json`：758 个课标条目，覆盖 1481/1924 知识点，
+  每条带覆盖的 `topicIds`、年级与 `confidence`；由 `scripts/build_standards_index.py` 从数据本身生成
+  （缺口：语文 205、历史 138、德语 100 个知识点尚未挂课标条目）
+- **教材版本映射** `data/mappings/`：`volume-map.json`（册次 → 知识点，自动生成）+ `schema-mapping.json`
+  + `README.md`（如何按教材目录建版本映射，禁止无依据填写）+ `example.template.json`
+- **CI 增补**：`validate_mappings.py` 校验映射 id 合法性；课标索引/册次地图**新鲜度校验**（提交物与脚本重生成不一致即失败）
 
 ### 待办
 - [ ] 教师审核各学科知识点拆分粒度
