@@ -6,6 +6,20 @@
 
 ## [Unreleased]
 
+### 新增（0.4.0-dev · 页面结构与仓库信息架构对齐 cn-math-taxonomy）
+
+- **README 重构**（参考 `cn-math-taxonomy` 的信息架构）：徽章行 → 在线入口 → 三张截图 → 学段规模表 → 数据来源与对齐依据 → 字段契约 → 分学科覆盖表（17 科）→ 页面说明 → 运行校验 → 本地打开 → 已知局限 → Roadmap → 部署 → 贡献 → 许可。
+  - 数字全部由 `scripts/build_stats.py` 从 `data/` 现算；纠正旧 README 的过期口径（课标条目 933 → **972**，诊断题 1800 → **1924**）。
+  - 明确两级对齐口径：`standards` 非空 **1918/1924**、带 `quote` 可复核 **647/1924**，不再用「覆盖率」代替「可核验率」。
+- **首页重建**（`index.html` + `assets/site.css` + `assets/home.js`）：青绿主色、跟随系统深色模式；hero「先找到真正没学会的那一步」+ 三步 + 5 张统计卡（读 `data/stats.json`）+ 17 个学科卡 + 特性区 + FAQ + 页脚；统计读取失败时回退内置基线并提示。
+- **新增 `scripts/build_stats.py`**：从 `data/` 现算 17 学科知识点/先修边/诊断题/课标覆盖，落 `data/stats.json`，并打印可直接贴 README 的 Markdown 表。
+- **`explore/`、`diagnose/` 支持 `?subject=<id>`**：从首页学科卡可直接落进对应学科，学科下拉同步。
+- **d3 本地化**：`explore/` 不再从 `d3js.org` 取脚本，改用 `assets/vendor/d3.v7.min.js`（v7.9.0，BSD-ISC），实现「零外网 CDN」。
+- **文档**：新增 `docs/data-schema.md`（节点契约 v2 + 校验五步）、`docs/pages.md`（四页结构、URL 参数、PWA 缓存）；
+  `docs/standards-mapping.md` 由「仅数学」重写为全学科两级口径（含小语种边界与 id 规则）。
+- **PWA**：`sw.js` 升到 `k12-taxonomy-v3`，预缓存 `site.css` / `home.js` / `stats.json`；`manifest` 主题色改 `#0f6e62`。
+- **截图**：新增 `screenshots/01-home.png`、`02-explore.png`、`03-diagnose.png`（1280×900），README 直接引用。
+
 ### 新增（0.3.0-dev）
 - **节点结构对齐 cn-math-taxonomy（v2）**
   - 知识点新增 `mastery_criteria`（可观察掌握标准）、`diagnostic_question`（节点级快诊题）、

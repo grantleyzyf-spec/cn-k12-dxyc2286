@@ -253,7 +253,7 @@
         let dependenciesData = {};
 
         // 状态
-        let currentSubject = '';
+        let currentSubject = new URLSearchParams(location.search).get('subject') || '';
         let targetTopic = null;
         let questionQueue = [];
         let currentQuestionIndex = 0;

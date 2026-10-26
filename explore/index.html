@@ -244,11 +244,11 @@
         </div>
     </div>
 
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="../assets/vendor/d3.v7.min.js"></script>
     <script>
         let topicsData = [];
         let dependenciesData = [];
-        let currentSubject = 'math';
+        let currentSubject = new URLSearchParams(location.search).get('subject') || 'math';
         let currentGrade = 'all';
 
         // 颜色映射
@@ -435,6 +435,11 @@
             updateTopicList();
             renderGraph();
         });
+
+        (function syncSubjectSelect() {
+            const sel = document.getElementById('subject-select');
+            if (sel && [...sel.options].some(o => o.value === currentSubject)) sel.value = currentSubject;
+        })();
 
         // 初始化
         loadData();
