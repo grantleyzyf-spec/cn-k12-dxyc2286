@@ -135,7 +135,17 @@ def norm_topic(t, subject, qmap):
     if not std:
         ref = t.get('curriculumRef')
         std = [{'id': ref, 'confidence': 'exact'}] if ref else []
-    t['standards'] = std
+    CONF_MAP = {'direct': 'exact', 'full': 'exact', 'strong': 'exact', 'high': 'exact',
+                '完全对应': 'exact', '直接对应': 'exact', 'medium': 'partial', '部分对应': 'partial',
+                '推断': 'inferred'}
+    fixed_std = []
+    for s in std:
+        if isinstance(s, dict):
+            cf = str(s.get('confidence') or 'exact').strip()
+            s = dict(s)
+            s['confidence'] = cf if cf in ('exact', 'partial', 'inferred') else CONF_MAP.get(cf, 'partial')
+            fixed_std.append(s)
+    t['standards'] = fixed_std
     t.setdefault('verified', bool(t.get('verified', False)))
     # 字段顺序按参考结构
     order = ['id', 'name', 'subject', 'domain', 'grade', 'semester', 'chapter', 'type',
