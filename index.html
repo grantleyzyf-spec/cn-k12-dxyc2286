@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cn-k12-dxyc2286 - 中国K-12全学科知识图谱</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 { font-size: 32px; margin-bottom: 15px; }
+        .header p { opacity: 0.9; font-size: 16px; line-height: 1.6; }
+        .content { padding: 40px; }
+        .warning {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .warning h3 { color: #856404; margin-bottom: 10px; }
+        .warning p { color: #856404; font-size: 14px; line-height: 1.6; }
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .tool-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .tool-card .icon { font-size: 48px; margin-bottom: 15px; }
+        .tool-card h3 { font-size: 18px; margin-bottom: 10px; color: #333; }
+        .tool-card p { font-size: 14px; color: #666; line-height: 1.5; }
+        .subjects {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        .subjects h3 { margin-bottom: 15px; color: #333; }
+        .subject-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .subject-tag {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 20px;
+            padding: 8px 16px;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .subject-tag.ready { border-color: #28a745; color: #28a745; }
+        .subject-tag.progress { border-color: #ffc107; color: #856404; }
+        .subject-tag.pending { border-color: #6c757d; color: #6c757d; }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+        .stat-item {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .stat-number { font-size: 32px; font-weight: bold; color: #667eea; }
+        .stat-label { font-size: 14px; color: #666; margin-top: 5px; }
+        .footer {
+            background: #f8f9fa;
+            padding: 20px 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+        .footer a { color: #667eea; text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 cn-k12-dxyc2286</h1>
+            <p>中国K-12全学科知识图谱开源数据库<br>对齐教育部课程标准，覆盖小学到高中17个学科</p>
+        </div>
+        <div class="content">
+            <div class="warning">
+                <h3>⚠️ 状态声明</h3>
+                <p><strong>这是 AI 生成的初稿，未经教师审核。</strong>知识点的拆分粒度、掌握标准、诊断题答案，尤其是<strong>先修关系</strong>都需要一线教师审核后才能用于教学、诊断或学习路径推荐。请勿直接用于正式教学。</p>
+            </div>
+
+            <div class="tools-grid">
+                <a href="diagnose/" class="tool-card">
+                    <div class="icon">🎯</div>
+                    <h3>自适应诊断</h3>
+                    <p>选择目标知识点，系统自动检测前置知识掌握情况，找出薄弱环节</p>
+                </a>
+                <a href="explore/" class="tool-card">
+                    <div class="icon">🗺️</div>
+                    <h3>知识图谱浏览器</h3>
+                    <p>可视化浏览知识点之间的先修关系，按学科和年级筛选</p>
+                </a>
+            </div>
+
+            <div class="subjects">
+                <h3>📖 覆盖学科</h3>
+                <div class="subject-tags">
+                    <span class="subject-tag progress">数学 🔄</span>
+                    <span class="subject-tag progress">英语 🔄</span>
+                    <span class="subject-tag pending">物理</span>
+                    <span class="subject-tag pending">化学</span>
+                    <span class="subject-tag pending">语文</span>
+                    <span class="subject-tag pending">历史</span>
+                    <span class="subject-tag pending">地理</span>
+                    <span class="subject-tag pending">生物</span>
+                    <span class="subject-tag pending">科学</span>
+                    <span class="subject-tag pending">信息科技</span>
+                    <span class="subject-tag pending">日语</span>
+                    <span class="subject-tag pending">俄语</span>
+                    <span class="subject-tag pending">德语</span>
+                    <span class="subject-tag pending">法语</span>
+                    <span class="subject-tag pending">西班牙语</span>
+                    <span class="subject-tag pending">音乐</span>
+                    <span class="subject-tag pending">美术</span>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">17</div>
+                    <div class="stat-label">学科</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">年级</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5000+</div>
+                    <div class="stat-label">知识点(目标)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">20000+</div>
+                    <div class="stat-label">诊断题(目标)</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>
+                <a href="https://github.com/gggyyy/cn-k12-dxyc2286">GitHub</a> · 
+                <a href="CONTRIBUTING.md">贡献指南</a> · 
+                <a href="LICENSE">CC BY 4.0</a>
+            </p>
+            <p style="margin-top: 10px;">© 2026 cn-k12-dxyc2286 Contributors</p>
+        </div>
+    </div>
+</body>
+</html>
