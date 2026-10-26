@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K-12 知识图谱浏览器</title>
+    <link rel="manifest" href="../manifest.webmanifest">
+    <meta name="theme-color" content="#667eea">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -167,11 +169,25 @@
     <div class="header">
         <h1>📚 知识图谱浏览器</h1>
         <div class="controls">
+            <a href="../" style="color:white;text-decoration:none;margin-right:15px;">← 首页</a>
             <select id="subject-select">
-                <option value="math">数学</option>
-                <option value="english">英语</option>
-                <option value="physics">物理</option>
-                <option value="chemistry">化学</option>
+                <option value="math">📐 数学</option>
+                <option value="chinese">📖 语文</option>
+                <option value="english">🔤 英语</option>
+                <option value="physics">⚡ 物理</option>
+                <option value="chemistry">🧪 化学</option>
+                <option value="biology">🧬 生物</option>
+                <option value="history">📜 历史</option>
+                <option value="geography">🌍 地理</option>
+                <option value="science">🔬 科学</option>
+                <option value="information-technology">💻 信息科技</option>
+                <option value="japanese">🇯🇵 日语</option>
+                <option value="russian">🇷🇺 俄语</option>
+                <option value="german">🇩🇪 德语</option>
+                <option value="french">🇫🇷 法语</option>
+                <option value="spanish">🇪🇸 西班牙语</option>
+                <option value="music">🎵 音乐</option>
+                <option value="art">🎨 美术</option>
             </select>
             <select id="grade-select">
                 <option value="all">全部年级</option>
@@ -242,15 +258,49 @@
             return '#f093fb';
         }
 
+        // 获取学科的topics文件列表
+        function getTopicsFiles(subject) {
+            if (subject === 'math') {
+                return ['topics.json', 'topics_grade2-6.json', 'topics_grade7-9.json', 'topics_grade10-12.json'];
+            }
+            return ['topics.json'];
+        }
+
+        // 获取学科的dependencies文件列表
+        function getDepsFiles(subject) {
+            if (subject === 'math') {
+                return ['dependencies.json', 'dependencies_grade2-6.json', 'dependencies_grade7-9.json', 'dependencies_grade10-12.json'];
+            }
+            return ['dependencies.json'];
+        }
+
         // 加载数据
         async function loadData() {
             try {
-                const [topicsRes, depsRes] = await Promise.all([
-                    fetch(`data/${currentSubject}/topics.json`).then(r => r.json()),
-                    fetch(`data/${currentSubject}/dependencies.json`).then(r => r.json())
-                ]);
-                topicsData = topicsRes;
-                dependenciesData = depsRes;
+                // 加载所有topics文件
+                const topicFiles = getTopicsFiles(currentSubject);
+                let allTopics = [];
+                for (const file of topicFiles) {
+                    const response = await fetch(`../data/${currentSubject}/${file}`);
+                    if (response.ok) {
+                        const data = await response.json();
+                        allTopics = allTopics.concat(data);
+                    }
+                }
+                topicsData = allTopics;
+                
+                // 加载所有dependencies文件
+                const depsFiles = getDepsFiles(currentSubject);
+                let allDeps = [];
+                for (const file of depsFiles) {
+                    const response = await fetch(`../data/${currentSubject}/${file}`);
+                    if (response.ok) {
+                        const data = await response.json();
+                        allDeps = allDeps.concat(data);
+                    }
+                }
+                dependenciesData = allDeps;
+                
                 updateTopicList();
                 renderGraph();
             } catch (e) {
@@ -393,6 +443,12 @@
 
         // 初始化
         loadData();
+    </script>
+    <script>
+        // Register Service Worker for PWA
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('../sw.js').catch(err => console.log('SW registration failed:', err));
+        }
     </script>
 </body>
 </html>

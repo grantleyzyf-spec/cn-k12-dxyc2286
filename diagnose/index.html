@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K-12 知识图谱 - 自适应诊断</title>
+    <link rel="manifest" href="../manifest.webmanifest">
+    <meta name="theme-color" content="#667eea">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -179,16 +181,30 @@
             <p>选择目标知识点，系统将自动检测你的前置知识掌握情况</p>
         </div>
         <div class="content">
+            <a href="../" style="display:inline-block;margin-bottom:20px;color:#667eea;text-decoration:none;">← 返回首页</a>
             <div id="setup-area">
                 <div class="select-group">
                     <div>
                         <label>学科</label>
                         <select id="subject-select">
                             <option value="">请选择学科</option>
-                            <option value="math">数学</option>
-                            <option value="english">英语</option>
-                            <option value="physics">物理</option>
-                            <option value="chemistry">化学</option>
+                            <option value="math">📐 数学</option>
+                            <option value="chinese">📖 语文</option>
+                            <option value="english">🔤 英语</option>
+                            <option value="physics">⚡ 物理</option>
+                            <option value="chemistry">🧪 化学</option>
+                            <option value="biology">🧬 生物</option>
+                            <option value="history">📜 历史</option>
+                            <option value="geography">🌍 地理</option>
+                            <option value="science">🔬 科学</option>
+                            <option value="information-technology">💻 信息科技</option>
+                            <option value="japanese">🇯🇵 日语</option>
+                            <option value="russian">🇷🇺 俄语</option>
+                            <option value="german">🇩🇪 德语</option>
+                            <option value="french">🇫🇷 法语</option>
+                            <option value="spanish">🇪🇸 西班牙语</option>
+                            <option value="music">🎵 音乐</option>
+                            <option value="art">🎨 美术</option>
                         </select>
                     </div>
                     <div>
@@ -245,11 +261,37 @@
 
         // 学科名称映射
         const subjectNames = {
-            'math': '数学',
-            'english': '英语',
-            'physics': '物理',
-            'chemistry': '化学'
+            'math': '数学', 'chinese': '语文', 'english': '英语',
+            'physics': '物理', 'chemistry': '化学', 'biology': '生物',
+            'history': '历史', 'geography': '地理', 'science': '科学',
+            'information-technology': '信息科技', 'japanese': '日语',
+            'russian': '俄语', 'german': '德语', 'french': '法语',
+            'spanish': '西班牙语', 'music': '音乐', 'art': '美术'
         };
+
+        // 获取学科的topics文件列表
+        function getTopicsFiles(subject) {
+            if (subject === 'math') {
+                return ['topics.json', 'topics_grade2-6.json', 'topics_grade7-9.json', 'topics_grade10-12.json'];
+            }
+            return ['topics.json'];
+        }
+
+        // 获取学科的dependencies文件列表
+        function getDepsFiles(subject) {
+            if (subject === 'math') {
+                return ['dependencies.json', 'dependencies_grade2-6.json', 'dependencies_grade7-9.json', 'dependencies_grade10-12.json'];
+            }
+            return ['dependencies.json'];
+        }
+
+        // 获取学科的questions文件列表
+        function getQuestionsFiles(subject) {
+            if (subject === 'math') {
+                return ['questions.json', 'questions_grade2-6.json', 'questions_grade7-9.json', 'questions_grade10-12.json'];
+            }
+            return ['questions.json'];
+        }
 
         // 初始化
         document.getElementById('subject-select').addEventListener('change', loadTopics);
@@ -267,10 +309,20 @@
             topicSelect.disabled = true;
 
             try {
-                const response = await fetch(`data/${subject}/topics.json`);
-                topicsData = await response.json();
+                // 加载所有topics文件
+                const files = getTopicsFiles(subject);
+                let allTopics = [];
+                for (const file of files) {
+                    const response = await fetch(`../data/${subject}/${file}`);
+                    if (response.ok) {
+                        const data = await response.json();
+                        allTopics = allTopics.concat(data);
+                    }
+                }
+                topicsData = allTopics;
                 
                 topicSelect.innerHTML = '<option value="">请选择目标知识点</option>';
+                topicsData.sort((a, b) => (a.grade || 0) - (b.grade || 0));
                 topicsData.forEach(topic => {
                     const option = document.createElement('option');
                     option.value = topic.id;
@@ -303,14 +355,30 @@
             
             if (!targetTopic) return;
 
-            // 加载题库和依赖关系
+            // 加载题库和依赖关系（支持多文件）
             try {
-                const [qRes, dRes] = await Promise.all([
-                    fetch(`data/${currentSubject}/questions.json`).then(r => r.json()),
-                    fetch(`data/${currentSubject}/dependencies.json`).then(r => r.json())
-                ]);
-                questionsData = qRes;
-                dependenciesData = dRes;
+                const depsFiles = getDepsFiles(currentSubject);
+                const qFiles = getQuestionsFiles(currentSubject);
+                
+                let allDeps = [];
+                for (const file of depsFiles) {
+                    const response = await fetch(`../data/${currentSubject}/${file}`);
+                    if (response.ok) {
+                        const data = await response.json();
+                        allDeps = allDeps.concat(data);
+                    }
+                }
+                dependenciesData = allDeps;
+                
+                let allQuestions = [];
+                for (const file of qFiles) {
+                    const response = await fetch(`../data/${currentSubject}/${file}`);
+                    if (response.ok) {
+                        const data = await response.json();
+                        allQuestions = allQuestions.concat(data);
+                    }
+                }
+                questionsData = allQuestions;
             } catch (e) {
                 alert('数据加载失败，请刷新重试');
                 return;
@@ -431,6 +499,12 @@
                     </ul>
                 `;
             }
+        }
+    </script>
+    <script>
+        // Register Service Worker for PWA
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('../sw.js').catch(err => console.log('SW registration failed:', err));
         }
     </script>
 </body>

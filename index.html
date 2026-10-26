@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cn-k12-dxyc2286 - 中国K-12全学科知识图谱</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#667eea">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -177,12 +179,18 @@
         </div>
         <div class="footer">
             <p>
-                <a href="https://github.com/gggyyy/cn-k12-dxyc2286">GitHub</a> · 
+                <a href="https://github.com/grantleyzyf-spec/cn-k12-dxyc2286">GitHub</a> · 
                 <a href="CONTRIBUTING.md">贡献指南</a> · 
                 <a href="LICENSE">CC BY 4.0</a>
             </p>
             <p style="margin-top: 10px;">© 2026 cn-k12-dxyc2286 Contributors</p>
         </div>
     </div>
+    <script>
+        // Register Service Worker for PWA
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').catch(err => console.log('SW registration failed:', err));
+        }
+    </script>
 </body>
 </html>
