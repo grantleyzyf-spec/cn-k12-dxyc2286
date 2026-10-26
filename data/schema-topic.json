@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "K-12 Knowledge Point",
+  "description": "中国K-12知识图谱 - 知识点定义",
+  "type": "object",
+  "required": ["id", "name", "subject", "grade", "description"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z]{3}_[ph]\\d{3,4}$",
+      "description": "知识点唯一ID，格式: {学科3字母}_{p小学|h高中}{序号}"
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 50,
+      "description": "知识点名称"
+    },
+    "subject": {
+      "type": "string",
+      "enum": ["math", "english", "chinese", "physics", "chemistry", "biology", "history", "geography", "science", "information-technology", "japanese", "russian", "german", "french", "spanish", "music", "art"],
+      "description": "学科代码"
+    },
+    "grade": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 16,
+      "description": "年级: 1-6=小学, 7-9=初中, 10-12=高中必修, 13-16=高中选择性必修"
+    },
+    "semester": {
+      "type": "string",
+      "enum": ["fall", "spring"],
+      "description": "学期: fall=上册, spring=下册"
+    },
+    "chapter": {
+      "type": "string",
+      "description": "所属章节完整路径"
+    },
+    "description": {
+      "type": "string",
+      "description": "知识点描述，说明学生应掌握的内容"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "标签，如课标主题分类"
+    },
+    "prerequisites": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "直接先修知识点ID列表"
+    },
+    "curriculumRef": {
+      "type": "string",
+      "description": "对应的课程标准条目编号"
+    },
+    "textbookRef": {
+      "type": "string",
+      "description": "教材版本和页码参考"
+    }
+  },
+  "additionalProperties": false
+}

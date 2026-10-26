@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "K-12 Dependency",
+  "description": "中国K-12知识图谱 - 先修关系定义",
+  "type": "object",
+  "required": ["from", "to", "type"],
+  "properties": {
+    "from": {
+      "type": "string",
+      "description": "先修知识点ID（前置）"
+    },
+    "to": {
+      "type": "string",
+      "description": "后续知识点ID（依赖前置的）"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["hard", "soft"],
+      "description": "hard=必须先掌握, soft=建议先掌握"
+    },
+    "reason": {
+      "type": "string",
+      "description": "先修关系的原因说明"
+    }
+  },
+  "additionalProperties": false
+}
