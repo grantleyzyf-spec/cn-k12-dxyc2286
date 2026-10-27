@@ -32,6 +32,7 @@
 - 条目 id 为**本仓库自编**，不是教育部原编号，但**编码位置可追溯**：`art-2022:{学段}.T{学习任务}.{条序}`，例如 `art-2022:2.T2.04` = 义务教育第二学段（3–5 年级）学习任务 2 的第 4 条内容要求；`art-2017:G.NR.03` = 高中美术课标内容要求第 3 条。
 - **26 条 `quote` 全部逐字回表**（`scripts/test_art.py` 会重跑）。
 - `confidence` 分布：`exact` 8 · `partial` 13 · `inferred` 5。
+- 每条 `standards[]` 还带 **`sourceLine`**：该 `quote` 在底本里的行号（义教 = OCR 拼接文本行号，高中 = 解码 TXT 行号），可用 `scripts/art_standards_sources.py` 的 `find_line()` 复算；底本缺失时保留旧值，不硬编。
 - 义务教育艺术课标官方 PDF 是**扫描版（131 页、无文字层）**，`2025修订课程标准TXT /义务教育/` 里也没有它的 TXT 快照，因此回表底本由 `scripts/ocr_art_standards.py` 现场 OCR 生成（`/tmp/art_yijiao_ocr.txt`）；高中美术课标 TXT 是 **GB18030 编码**，脚本转存为 UTF-8（`/tmp/gaozhong_meishu.txt`）。底本缺失时自检跳过回表（与 `test_physics.py` 同款约定，CI 不会红）。
 
 **OCR 误识登记（4 处，`test_art.py` 的 `OCR_FIX`）**
@@ -65,7 +66,7 @@
 4. **知识点类型**：按高置信关键词细分，不再 17 个 `conceptual` 一统（技法类 → `procedural`，鉴赏类 → `application`）。
 5. **领域校正**：高中「美术鉴赏方法论」「中国美术史」「西方美术史」原误挂 `造型表现`，改挂 `欣赏评述`。
 6. **根节点**：3 个根节点补 `root_reason`。
-7. **新增自检**：`scripts/test_art.py`（31 项不变量），其中 5 项是本学科专属的**质量闸门**——答案分布不单一、选项无占位/玩笑干扰项与截断省略号、`domain` 属四类艺术实践、年级 1–12 全覆盖、课标条目无孤儿。
+7. **新增自检**：`scripts/test_art.py`（33 项不变量），其中 5 项是本学科专属的**质量闸门**——答案分布不单一、选项无占位/玩笑干扰项与截断省略号、`domain` 属四类艺术实践、年级 1–12 全覆盖、课标条目无孤儿。
 
 复算命令：`python3 scripts/fix_art.py`（dry-run，`--write` 生效，幂等）。
 
@@ -82,7 +83,7 @@
 
 ```bash
 python3 scripts/ocr_art_standards.py   # 生成课标回表底本（扫描版 OCR + GB18030 转码），约 3–5 分钟
-python3 scripts/test_art.py            # 31 项不变量，含 quote 逐字回表 26/26
+python3 scripts/test_art.py            # 33 项不变量，含 quote 逐字回表 26/26
 python3 scripts/validate.py art        # 结构 / 引用校验
 python3 scripts/validate.py --all      # 全库校验（Total Errors: 0）
 ```

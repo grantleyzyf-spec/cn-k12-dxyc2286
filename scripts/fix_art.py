@@ -14,6 +14,9 @@ import json
 import os
 import sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import art_standards_sources as SRC  # noqa: E402  底本路径 + OCR 误识表 + 行号定位
+
 S = "art"
 WRITE = "--write" in sys.argv
 D = os.path.expanduser("~/Desktop/cn-k12-dxyc2286/data")
@@ -281,8 +284,23 @@ def main():
         t["standards"] = new
         t["curriculumRef"] = sid
 
+    # ---------- 6) sourceLine（quote 在底本中的行号；义教 = OCR 底本，高中 = 解码 TXT） ----------
+    yj_txt, gz_txt = SRC.yijiao_text(), SRC.read_source(SRC.GAOZHONG)
+    n_line = n_noline = 0
+    for t in topics:
+        for s in t["standards"]:
+            src = gz_txt if s["id"].startswith("art-2017") else yj_txt
+            line = SRC.find_line(src, s.get("quote"), use_ocr_fix=not s["id"].startswith("art-2017"))
+            if line and s.get("sourceLine") != line:
+                s["sourceLine"] = line
+                n_line += 1
+            if not line:
+                s.setdefault("sourceLine", 0)
+                n_noline += 1
+
     from collections import Counter
     print(f"根节点补 reason {n_root} | 类型校正 {n_type} | 领域校正 {n_dom} | 课标重挂 {n_std}")
+    print(f"sourceLine 写入 {n_line} | 未定位 {n_noline}")
     print("置信度:", Counter(s["confidence"] for t in topics for s in t["standards"]))
     print("课标条目去重:", len({s["id"] for t in topics for s in t["standards"]}))
 

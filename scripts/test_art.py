@@ -17,21 +17,12 @@ import os
 import re
 import sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import art_standards_sources as SRC  # noqa: E402  底本路径 + OCR 误识表 + 行号定位
+
 SUBJECT = "art"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = os.path.join(ROOT, "data")
-
-YIJIAO_OCR = "/tmp/art_yijiao_ocr.txt"
-GAOZHONG_TXT = "/tmp/gaozhong_meishu.txt"
-
-# 义教扫描件 OCR 误识 → 正确字（登记项；只要新增一条就必须同步写进 docs/art.md）
-OCR_FIX = {
-    "折和县揉搓压": "折剪揉搓压",          # 1.T2.04「折、剪、揉、搓、压」
-    "书法繁刻": "书法篆刻",                # 2.T1.01
-    "运用线条有形状": "运用线条形状",        # 4.T1.04（OCR 多出一字）
-    "形式原理汰析": "形式原理分析",          # 4.T1.04
-    "情况感情继承": "情况感悟继承",          # 4.T4.01
-}
 
 fails, checks = [], []
 
@@ -40,20 +31,6 @@ def ck(name, ok, detail=None):
     checks.append((name, ok, detail))
     if not ok:
         fails.append(name + ("：" + str(detail) if detail else ""))
-
-
-def norm(s):
-    """回表归一：只保留汉字与字母数字（去空白与全部标点，含 PDF 抽取产生的杂符）。"""
-    return re.sub(r"[^\u4e00-\u9fffA-Za-z0-9]", "", s or "")
-
-
-def read_text(path):
-    if not os.path.exists(path):
-        return None
-    txt = open(path, encoding="utf-8", errors="ignore").read()
-    if txt.count("美术") < 10:  # 万一拿到的是乱码底本
-        txt = open(path, "rb").read().decode("gb18030", errors="ignore")
-    return txt
 
 
 topics = json.load(open(os.path.join(D, SUBJECT, "topics.json"), encoding="utf-8"))
@@ -72,20 +49,25 @@ ck("每条课标引用都带 quote", not [1 for t in topics for s in t.get("stan
 ck("confidence 三档", all(s.get("confidence") in ("exact", "partial", "inferred")
                           for t in topics for s in t.get("standards", [])))
 
-yj, gz = read_text(YIJIAO_OCR), read_text(GAOZHONG_TXT)
+yj, gz = SRC.yijiao_text(), SRC.read_source(SRC.GAOZHONG)
+ck("sourceLine 全为整数", all(isinstance(s.get("sourceLine"), int) for t in topics for s in t.get("standards", [])),
+   [t["id"] for t in topics for s in t.get("standards", []) if not isinstance(s.get("sourceLine"), int)][:3])
 if yj and gz:
-    src_y = norm(yj)
-    for bad, good in OCR_FIX.items():
-        src_y = src_y.replace(bad, good)
-    src_g = norm(gz)
+    src_y, _ = SRC.index(yj)
+    src_g, _ = SRC.index(gz)
     miss = []
+    bad_line = []
     for t in topics:
         for s in t.get("standards", []):
-            q = norm(s.get("quote"))
-            src = src_g if s["id"].startswith("art-2017") else src_y
+            q = SRC.norm(s.get("quote"))
+            is_y = not s["id"].startswith("art-2017")
+            src = src_y if is_y else src_g
             if q not in src:
-                miss.append((t["id"], s["id"], s["quote"][:16]))
+                miss.append((t["id"], s["id"], (s.get("quote") or "")[:16]))
+            elif SRC.find_line(yj if is_y else gz, s.get("quote"), use_ocr_fix=is_y) != s.get("sourceLine"):
+                bad_line.append((t["id"], s["id"], s.get("sourceLine")))
     ck("quote 逐字回表 100%", not miss, miss[:3])
+    ck("sourceLine 与底本定位一致", not bad_line, bad_line[:3])
 else:
     checks.append(("quote 回表（缺 OCR/TXT 底本，跳过；跑 scripts/ocr_art_standards.py 可补齐）", True, None))
 
