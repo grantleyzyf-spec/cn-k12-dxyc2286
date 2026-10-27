@@ -39,6 +39,9 @@ jobs:
       - name: Validate edition mappings
         run: python3 scripts/validate_mappings.py
 
+      - name: Subject invariants · math
+        run: python3 scripts/test_math.py
+
       - name: Standards index freshness (regenerate & diff)
         run: |
           cp data/cn-curriculum-standards.json /tmp/std.before.json
