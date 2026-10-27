@@ -43,6 +43,7 @@
   function bookLabel(t) {
     var head = ((t && t.chapter) || '').split(' ')[0].replace('各单元', '');
     var m = head.match(/^(选择性必修|必修)(第?[一二三四五六七八九十]册|上册|下册|中册)$/);
+    if (head.match(/^必修[一二三四五六]第[一二三四五]册$/)) return head;  // 西班牙语等「必修四第一册」分册
     if (m) {
       var tail = m[2].replace('册', '')
         .replace('第一', '一').replace('第二', '二').replace('第三', '三')
@@ -434,7 +435,12 @@
     var RANK = { '必修一': 11, '必修二': 12, '必修三': 13, '必修四': 14, '必修五': 15, '必修六': 16,
                  '选必一': 21, '选必二': 22, '选必三': 23, '选必四': 24 };
     books.sort(function (a, b) {
-      return (RANK[a.label] || 99) - (RANK[b.label] || 99) || a.min - b.min;
+      // 未登记册名（如西班牙语「必修四第一册」「选必第一册」grade≥13）按 grade 排在已登记册名之后
+      function bookRank(x) {
+        if (x.min >= 13 || RANK[x.label] === undefined) return 200 + x.min;
+        return RANK[x.label];
+      }
+      return bookRank(a) - bookRank(b) || a.min - b.min;
     });
     books.forEach(function (b) { html += '<option value="b:' + b.label + '">' + b.label + '</option>'; });
     sel.innerHTML = html;

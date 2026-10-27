@@ -19,7 +19,7 @@ from collections import Counter, defaultdict
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, 'data')
 
-VOLUME_RE = re.compile(r'^(未分章|(?:一|二|三|四|五|六|七|八|九|十|十一|十二)?年级[上下]册|必修[一二三四五]?[上册]*|选择性必修[一二三]?[上册]*|必修第[一二三四五]册)')
+VOLUME_RE = re.compile(r'^(未分章|(?:一|二|三|四|五|六|七|八|九|十|十一|十二)?年级[上下]册|选择性必修第[一二三四五]册|必修[一二三四五六]第[一二三四五]册|必修[一二三四五]?[上册]*|选择性必修[一二三]?[上册]*|必修第[一二三四五]册)')
 
 
 def load(p):
