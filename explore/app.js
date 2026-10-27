@@ -5,8 +5,7 @@
 (function () {
   'use strict';
 
-  var CN_NUM = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十',
-    '十一', '十二', '十三', '十四'];
+  var CN_NUM = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
   var SUBJECT_NAME = {
     math: '数学', chinese: '语文', english: '英语', physics: '物理', chemistry: '化学',
     biology: '生物', history: '历史', geography: '地理', science: '科学',
@@ -35,7 +34,7 @@
   var SENIOR_BOOK = { 10: '必修一', 11: '必修二', 12: '选必一', 13: '选必二', 14: '选必三' };
   function gradeText(g) {
     g = Number(g);
-    if (SENIOR_BOOK[g]) return SENIOR_BOOK[g];
+    if (g >= 10) return (SENIOR_BOOK[g] || '高中');
     return (CN_NUM[g] || g) + '年级';
   }
   function isSeniorBook(g) { return Number(g) >= 10; }
