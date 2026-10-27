@@ -1,0 +1,50 @@
+name: Validate Information Technology Subject Data
+
+# 信息科技（义教 3–9 年级）/ 信息技术（高中 10–12 年级册次）学科收口专用工作流。
+# 单独成文件的原因：validate.yml 由并行会话维护（physics / chemistry / chinese 等学科同时改动），
+# 避免多人同时改同一 workflow 互相卷进提交；口径与其中 math/physics 的
+# 「Subject invariants · <subject>」步骤完全一致。
+
+on:
+  push:
+    paths:
+      - 'data/information-technology/**/*.json'
+      - 'scripts/test_information-technology.py'
+      - '.github/workflows/validate-information-technology.yml'
+  pull_request:
+    paths:
+      - 'data/information-technology/**/*.json'
+      - 'scripts/test_information-technology.py'
+      - '.github/workflows/validate-information-technology.yml'
+  workflow_dispatch:
+
+jobs:
+  information-technology:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate structure & references (all subjects)
+        run: python3 scripts/validate.py --all
+
+      - name: Subject invariants · information-technology
+        run: python3 scripts/test_information-technology.py
+
+      - name: Schema compliance (topics + questions)
+        run: |
+          npm install -g ajv-cli ajv-formats
+          ajv validate -c ajv-formats -s data/schema-topic.json -d "data/information-technology/topics.json"
+          ajv validate -c ajv-formats -s data/schema-question.json -d "data/information-technology/questions.json"
+
+      - name: Standards index freshness (regenerate & diff)
+        run: |
+          cp data/cn-curriculum-standards.json /tmp/std.before.json
+          cp data/mappings/volume-map.json /tmp/vol.before.json
+          python3 scripts/build_standards_index.py >/dev/null
+          diff -q /tmp/std.before.json data/cn-curriculum-standards.json || { echo "::error::cn-curriculum-standards.json 已过期，请本地跑 scripts/build_standards_index.py 并提交"; exit 1; }
+          diff -q /tmp/vol.before.json data/mappings/volume-map.json || { echo "::error::volume-map.json 已过期"; exit 1; }
