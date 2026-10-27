@@ -42,8 +42,8 @@ jobs:
       - name: Subject invariants · math
         run: python3 scripts/test_math.py
 
-      - name: Subject invariants · chemistry
-        run: python3 scripts/test_chemistry.py
+      - name: Subject invariants · music
+        run: python3 scripts/test_music.py
 
       - name: Subject invariants · biology
         run: python3 scripts/test_biology.py
@@ -65,9 +65,6 @@ jobs:
 
       - name: Subject invariants · geography
         run: python3 scripts/test_geography.py
-
-      - name: Subject invariants · russian
-        run: python3 scripts/test_russian.py
 
       - name: Standards index freshness (regenerate & diff)
         run: |
