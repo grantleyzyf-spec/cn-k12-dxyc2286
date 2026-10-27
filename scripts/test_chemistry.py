@@ -36,6 +36,9 @@ ck("全部 subject 一致", all(t.get("subject") == SUBJECT for t in topics))
 ck("诊断题与知识点数量匹配", len(qs) >= len(topics), f"{len(qs)} vs {len(topics)}")
 ck("课标 id 均可解析", not [1 for t in topics for s in t.get("standards", []) if s.get("id") not in std_ids])
 ck("每条课标引用都带 quote", not [1 for t in topics for s in t.get("standards", []) if not s.get("quote")])
+ck("有 quote 的引用都带整数 sourceLine（schema 要求 integer）",
+   all(isinstance(st.get("sourceLine"), int) for t in topics for st in t.get("standards", []) if st.get("quote")),
+   [(t["id"], st.get("id")) for t in topics for st in t.get("standards", []) if st.get("quote") and not isinstance(st.get("sourceLine"), int)][:3])
 ck("confidence 三档", all(s.get("confidence") in ("exact", "partial", "inferred")
                           for t in topics for s in t.get("standards", [])))
 
