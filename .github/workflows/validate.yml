@@ -42,6 +42,12 @@ jobs:
       - name: Subject invariants · math
         run: python3 scripts/test_math.py
 
+      - name: Subject invariants · physics
+        run: python3 scripts/test_physics.py
+
+      - name: Subject invariants · biology
+        run: python3 scripts/test_biology.py
+
       - name: Standards index freshness (regenerate & diff)
         run: |
           cp data/cn-curriculum-standards.json /tmp/std.before.json

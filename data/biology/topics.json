@@ -31,7 +31,8 @@
     ],
     "prerequisites": [],
     "curriculumRef": "bio-2022:4.NR.01",
-    "verified": false
+    "verified": false,
+    "root_reason": "七年级上册开篇知识点：生物的基本特征是全部后续内容的起点，无更早先修；与小学科学「生物的特征」衔接。"
   },
   {
     "id": "bio_p002",
@@ -113,7 +114,7 @@
     "grade": 7,
     "semester": "上",
     "chapter": "七年级上册 第一单元 了解生物圈",
-    "type": "procedural",
+    "type": "application",
     "description": "掌握生态系统的组成（生产者、消费者、分解者、非生物部分）及食物链和食物网",
     "mastery_criteria": [
       "掌握生态系统的组成（生产者、消费者、分解者、非生物部分）及食物链和食物网"
@@ -234,7 +235,7 @@
     "grade": 7,
     "semester": "上",
     "chapter": "七年级上册 第二单元 观察细胞的结构",
-    "type": "conceptual",
+    "type": "procedural",
     "description": "学会制作植物细胞临时装片，认识植物细胞的基本结构（细胞壁、细胞膜、细胞质、细胞核、液泡、叶绿体）",
     "mastery_criteria": [
       "学会制作植物细胞临时装片，认识植物细胞的基本结构（细胞壁、细胞膜、细胞质、细胞核、液泡、叶绿体）"
@@ -313,7 +314,7 @@
     "grade": 7,
     "semester": "上",
     "chapter": "七年级上册 第二单元 细胞怎样构成生物体",
-    "type": "conceptual",
+    "type": "application",
     "description": "理解细胞的生活需要物质和能量，认识细胞膜控制物质进出，细胞质中的线粒体和叶绿体是能量转换器",
     "mastery_criteria": [
       "理解细胞的生活需要物质和能量，认识细胞膜控制物质进出，细胞质中的线粒体和叶绿体是能量转换器"
@@ -512,7 +513,7 @@
     "grade": 7,
     "semester": "上",
     "chapter": "七年级上册 第二单元 细胞怎样构成生物体",
-    "type": "conceptual",
+    "type": "application",
     "description": "认识植物的几种主要组织（保护组织、营养组织、输导组织、分生组织、机械组织），理解植物体的结构层次：细胞→组织→器官→植物体",
     "mastery_criteria": [
       "认识植物的几种主要组织（保护组织、营养组织、输导组织、分生组织、机械组织），理解植物体的结构层次：细胞→组织→器官→植物体"
@@ -734,7 +735,7 @@
     "grade": 7,
     "semester": "上",
     "chapter": "七年级上册 第三单元 生物圈中的绿色植物",
-    "type": "conceptual",
+    "type": "application",
     "description": "理解光合作用的实质：绿色植物通过叶绿体利用光能，把二氧化碳和水转化成储存能量的有机物，并释放氧气",
     "mastery_criteria": [
       "理解光合作用的实质：绿色植物通过叶绿体利用光能，把二氧化碳和水转化成储存能量的有机物，并释放氧气"
@@ -771,7 +772,7 @@
     "grade": 7,
     "semester": "上",
     "chapter": "七年级上册 第三单元 生物圈中的绿色植物",
-    "type": "conceptual",
+    "type": "application",
     "description": "理解呼吸作用的实质：细胞利用氧，将有机物分解成二氧化碳和水，并释放能量供生命活动需要",
     "mastery_criteria": [
       "理解呼吸作用的实质：细胞利用氧，将有机物分解成二氧化碳和水，并释放能量供生命活动需要"
@@ -831,7 +832,8 @@
       "蒸腾作用"
     ],
     "prerequisites": [
-      "bio_p014"
+      "bio_p014",
+      "bio_p021"
     ],
     "curriculumRef": "bio-2022:4.NR.07",
     "verified": false
@@ -1495,7 +1497,7 @@
     "grade": 8,
     "semester": "上",
     "chapter": "八年级上册 第五单元 动物的运动和行为",
-    "type": "conceptual",
+    "type": "application",
     "description": "区分先天性行为（生来就有、由遗传物质决定）和学习行为（后天获得、由生活经验和学习获得）",
     "mastery_criteria": [
       "区分先天性行为（生来就有、由遗传物质决定）和学习行为（后天获得、由生活经验和学习获得）"
@@ -1505,15 +1507,23 @@
       "answer": "C"
     },
     "external": false,
-    "standards": [],
+    "standards": [
+      {
+        "id": "bio-2022:4.XY.05",
+        "confidence": "inferred",
+        "quote": "运用进化与适应观和生态观分析生物在形态结构和行为等方面与环境相适应的特征",
+        "sourceLine": 1433
+      }
+    ],
     "tags": [
       "动物",
       "行为"
     ],
     "prerequisites": [
-      "bio_p039"
+      "bio_p039",
+      "bio_p037"
     ],
-    "curriculumRef": "",
+    "curriculumRef": "bio-2022:4.XY.05",
     "verified": false
   },
   {
@@ -1534,7 +1544,14 @@
       "answer": "C"
     },
     "external": false,
-    "standards": [],
+    "standards": [
+      {
+        "id": "bio-2022:4.XY.05",
+        "confidence": "inferred",
+        "quote": "运用进化与适应观和生态观分析生物在形态结构和行为等方面与环境相适应的特征",
+        "sourceLine": 1433
+      }
+    ],
     "tags": [
       "动物",
       "社会行为"
@@ -1542,7 +1559,7 @@
     "prerequisites": [
       "bio_p040"
     ],
-    "curriculumRef": "",
+    "curriculumRef": "bio-2022:4.XY.05",
     "verified": false
   },
   {
@@ -1589,7 +1606,7 @@
     "grade": 8,
     "semester": "上",
     "chapter": "八年级上册 第五单元 生物的生殖发育遗传",
-    "type": "conceptual",
+    "type": "procedural",
     "description": "理解无性生殖的概念和应用（扦插、嫁接、组织培养），认识无性生殖后代保持母本性状",
     "mastery_criteria": [
       "理解无性生殖的概念和应用（扦插、嫁接、组织培养），认识无性生殖后代保持母本性状"
@@ -1818,7 +1835,7 @@
     "grade": 8,
     "semester": "下",
     "chapter": "八年级下册 第七单元 生物的遗传和变异",
-    "type": "conceptual",
+    "type": "procedural",
     "description": "理解孟德尔豌豆杂交实验，掌握显性基因和隐性基因、显性性状和隐性性状的概念",
     "mastery_criteria": [
       "理解孟德尔豌豆杂交实验，掌握显性基因和隐性基因、显性性状和隐性性状的概念"
@@ -2047,7 +2064,7 @@
     "grade": 8,
     "semester": "上",
     "chapter": "八年级上册 第五单元 生物的多样性",
-    "type": "conceptual",
+    "type": "application",
     "description": "理解鱼类的主要特征（用鳃呼吸、用鳍游泳、体表有鳞片），认识鱼类适应水中生活的特点",
     "mastery_criteria": [
       "理解鱼类的主要特征（用鳃呼吸、用鳍游泳、体表有鳞片），认识鱼类适应水中生活的特点"
@@ -2265,7 +2282,7 @@
     "grade": 8,
     "semester": "上",
     "chapter": "八年级上册 第五单元 生物的多样性",
-    "type": "conceptual",
+    "type": "application",
     "description": "认识病毒的形态结构（蛋白质外壳和内部遗传物质）、生活方式（寄生）和繁殖方式",
     "mastery_criteria": [
       "认识病毒的形态结构（蛋白质外壳和内部遗传物质）、生活方式（寄生）和繁殖方式"
@@ -2345,7 +2362,7 @@
     "grade": 8,
     "semester": "上",
     "chapter": "八年级上册 第五单元 生物的多样性",
-    "type": "conceptual",
+    "type": "application",
     "description": "认识生物多样性的三个层次（基因多样性、物种多样性、生态系统多样性），理解保护生物多样性的措施",
     "mastery_criteria": [
       "认识生物多样性的三个层次（基因多样性、物种多样性、生态系统多样性），理解保护生物多样性的措施"
@@ -2382,7 +2399,7 @@
     "grade": 8,
     "semester": "下",
     "chapter": "八年级下册 第八单元 生物技术",
-    "type": "conceptual",
+    "type": "procedural",
     "description": "理解发酵技术在食品制作中的应用（制作馒头、酸奶、酿酒等），认识微生物在发酵中的作用",
     "mastery_criteria": [
       "理解发酵技术在食品制作中的应用（制作馒头、酸奶、酿酒等），认识微生物在发酵中的作用"
@@ -2455,7 +2472,7 @@
     "grade": 8,
     "semester": "下",
     "chapter": "八年级下册 第八单元 生物技术",
-    "type": "conceptual",
+    "type": "application",
     "description": "理解转基因技术的基本原理和应用，认识转基因生物的安全性讨论",
     "mastery_criteria": [
       "理解转基因技术的基本原理和应用，认识转基因生物的安全性讨论"
@@ -2491,7 +2508,7 @@
     "grade": 8,
     "semester": "下",
     "chapter": "八年级下册 第八单元 生物技术",
-    "type": "conceptual",
+    "type": "application",
     "description": "理解克隆技术的基本原理（以多莉羊为例），认识克隆技术的应用和伦理问题",
     "mastery_criteria": [
       "理解克隆技术的基本原理（以多莉羊为例），认识克隆技术的应用和伦理问题"
@@ -3043,7 +3060,7 @@
     "grade": 10,
     "semester": "上",
     "chapter": "必修1 分子与细胞 第5章 细胞的能量供应和利用",
-    "type": "conceptual",
+    "type": "application",
     "description": "理解有氧呼吸的三个阶段和无氧呼吸的过程，掌握细胞呼吸原理在生产生活中的应用",
     "mastery_criteria": [
       "理解有氧呼吸的三个阶段和无氧呼吸的过程，掌握细胞呼吸原理在生产生活中的应用"
@@ -3067,7 +3084,9 @@
     ],
     "prerequisites": [
       "bio_h010",
-      "bio_h007"
+      "bio_h007",
+      "bio_h009",
+      "bio_p021"
     ],
     "curriculumRef": "bio-2017:G.NR.20",
     "verified": false
@@ -3123,7 +3142,7 @@
     "grade": 10,
     "semester": "上",
     "chapter": "必修1 分子与细胞 第5章 细胞的能量供应和利用",
-    "type": "conceptual",
+    "type": "application",
     "description": "理解光反应和暗反应的过程及相互联系，掌握影响光合作用速率的环境因素",
     "mastery_criteria": [
       "理解光反应和暗反应的过程及相互联系，掌握影响光合作用速率的环境因素"
@@ -3153,7 +3172,8 @@
     ],
     "prerequisites": [
       "bio_h012",
-      "bio_h010"
+      "bio_h010",
+      "bio_p020"
     ],
     "curriculumRef": "bio-2017:G.NR.19",
     "verified": false
@@ -3166,7 +3186,7 @@
     "grade": 10,
     "semester": "上",
     "chapter": "必修1 分子与细胞 第6章 细胞的生命历程",
-    "type": "conceptual",
+    "type": "reasoning",
     "description": "理解细胞周期的概念，掌握有丝分裂各时期的特征和染色体、DNA数目的变化规律",
     "mastery_criteria": [
       "理解细胞周期的概念，掌握有丝分裂各时期的特征和染色体、DNA数目的变化规律"
@@ -3190,7 +3210,8 @@
     ],
     "prerequisites": [
       "bio_p011",
-      "bio_h005"
+      "bio_h005",
+      "bio_h013"
     ],
     "curriculumRef": "bio-2017:G.NR.21",
     "verified": false
@@ -3282,7 +3303,7 @@
     "grade": 10,
     "semester": "下",
     "chapter": "必修2 遗传与进化 第1章 遗传因子的发现",
-    "type": "conceptual",
+    "type": "procedural",
     "description": "理解孟德尔一对相对性状的杂交实验，掌握分离定律的内容和实质",
     "mastery_criteria": [
       "理解孟德尔一对相对性状的杂交实验，掌握分离定律的内容和实质"
@@ -3319,7 +3340,7 @@
     "grade": 10,
     "semester": "下",
     "chapter": "必修2 遗传与进化 第1章 遗传因子的发现",
-    "type": "conceptual",
+    "type": "procedural",
     "description": "理解孟德尔两对相对性状的杂交实验，掌握自由组合定律的内容和实质",
     "mastery_criteria": [
       "理解孟德尔两对相对性状的杂交实验，掌握自由组合定律的内容和实质"
@@ -3398,7 +3419,7 @@
     "grade": 10,
     "semester": "下",
     "chapter": "必修2 遗传与进化 第2章 基因和染色体的关系",
-    "type": "conceptual",
+    "type": "procedural",
     "description": "理解萨顿的假说和摩尔根的果蝇实验，认识基因位于染色体上",
     "mastery_criteria": [
       "理解萨顿的假说和摩尔根的果蝇实验，认识基因位于染色体上"
@@ -3472,7 +3493,7 @@
     "grade": 10,
     "semester": "下",
     "chapter": "必修2 遗传与进化 第3章 基因的本质",
-    "type": "conceptual",
+    "type": "procedural",
     "description": "理解肺炎链球菌转化实验和噬菌体侵染细菌实验，认识DNA是主要的遗传物质",
     "mastery_criteria": [
       "理解肺炎链球菌转化实验和噬菌体侵染细菌实验，认识DNA是主要的遗传物质"
@@ -3509,7 +3530,7 @@
     "grade": 10,
     "semester": "下",
     "chapter": "必修2 遗传与进化 第3章 基因的本质",
-    "type": "conceptual",
+    "type": "reasoning",
     "description": "理解DNA双螺旋结构的主要特点（反向平行、碱基互补配对），掌握相关计算",
     "mastery_criteria": [
       "理解DNA双螺旋结构的主要特点（反向平行、碱基互补配对），掌握相关计算"
@@ -3740,7 +3761,7 @@
     "grade": 10,
     "semester": "下",
     "chapter": "必修2 遗传与进化 第6章 生物的进化",
-    "type": "conceptual",
+    "type": "reasoning",
     "description": "理解种群是生物进化的基本单位，掌握基因频率的计算和哈迪-温伯格平衡",
     "mastery_criteria": [
       "理解种群是生物进化的基本单位，掌握基因频率的计算和哈迪-温伯格平衡"
@@ -4371,7 +4392,7 @@
     "grade": 11,
     "semester": "上",
     "chapter": "选择性必修1 稳态与调节 第4章 免疫调节",
-    "type": "conceptual",
+    "type": "application",
     "description": "理解过敏反应、自身免疫病和免疫缺陷病，认识疫苗、器官移植等免疫学应用",
     "mastery_criteria": [
       "理解过敏反应、自身免疫病和免疫缺陷病，认识疫苗、器官移植等免疫学应用"
@@ -4559,7 +4580,7 @@
     "grade": 11,
     "semester": "下",
     "chapter": "选择性必修2 生物与环境 第3章 生态系统及其稳定性",
-    "type": "conceptual",
+    "type": "application",
     "description": "理解生态系统的组成成分（生产者、消费者、分解者、非生物的物质和能量）和营养结构（食物链和食物网）",
     "mastery_criteria": [
       "理解生态系统的组成成分（生产者、消费者、分解者、非生物的物质和能量）和营养结构（食物链和食物网）"
@@ -4766,7 +4787,7 @@
     "grade": 11,
     "semester": "下",
     "chapter": "选择性必修2 生物与环境 第4章 人与环境",
-    "type": "conceptual",
+    "type": "application",
     "description": "关注全球性生态环境问题（全球变暖、臭氧层破坏、酸雨等），理解生物多样性保护的意义和措施",
     "mastery_criteria": [
       "关注全球性生态环境问题（全球变暖、臭氧层破坏、酸雨等），理解生物多样性保护的意义和措施"
@@ -4809,7 +4830,7 @@
     "grade": 12,
     "semester": "上",
     "chapter": "选择性必修3 生物技术与工程 第1章 发酵工程",
-    "type": "conceptual",
+    "type": "procedural",
     "description": "理解培养基的配制原则和灭菌方法，掌握微生物的纯培养技术（平板划线法和稀释涂布平板法）",
     "mastery_criteria": [
       "理解培养基的配制原则和灭菌方法，掌握微生物的纯培养技术（平板划线法和稀释涂布平板法）"
@@ -4853,7 +4874,7 @@
     "grade": 12,
     "semester": "上",
     "chapter": "选择性必修3 生物技术与工程 第1章 发酵工程",
-    "type": "conceptual",
+    "type": "procedural",
     "description": "理解选择培养基的原理，掌握稀释涂布平板法计数微生物的方法",
     "mastery_criteria": [
       "理解选择培养基的原理，掌握稀释涂布平板法计数微生物的方法"
@@ -4895,7 +4916,7 @@
     "grade": 12,
     "semester": "上",
     "chapter": "选择性必修3 生物技术与工程 第1章 发酵工程",
-    "type": "conceptual",
+    "type": "procedural",
     "description": "理解果酒、果醋和腐乳制作的原理和操作，认识传统发酵技术中微生物的作用",
     "mastery_criteria": [
       "理解果酒、果醋和腐乳制作的原理和操作，认识传统发酵技术中微生物的作用"
@@ -4931,7 +4952,7 @@
     "grade": 12,
     "semester": "上",
     "chapter": "选择性必修3 生物技术与工程 第2章 细胞工程",
-    "type": "conceptual",
+    "type": "procedural",
     "description": "理解植物组织培养的原理（细胞全能性）和技术流程（脱分化和再分化）",
     "mastery_criteria": [
       "理解植物组织培养的原理（细胞全能性）和技术流程（脱分化和再分化）"
@@ -4968,7 +4989,7 @@
     "grade": 12,
     "semester": "上",
     "chapter": "选择性必修3 生物技术与工程 第2章 细胞工程",
-    "type": "conceptual",
+    "type": "procedural",
     "description": "理解植物体细胞杂交的技术流程（去壁→融合→组织培养），认识其在克服远缘杂交不亲和方面的应用",
     "mastery_criteria": [
       "理解植物体细胞杂交的技术流程（去壁→融合→组织培养），认识其在克服远缘杂交不亲和方面的应用"
@@ -5004,7 +5025,7 @@
     "grade": 12,
     "semester": "上",
     "chapter": "选择性必修3 生物技术与工程 第2章 细胞工程",
-    "type": "conceptual",
+    "type": "procedural",
     "description": "理解动物细胞培养的条件和过程（原代培养和传代培养），认识其在生物制品生产中的应用",
     "mastery_criteria": [
       "理解动物细胞培养的条件和过程（原代培养和传代培养），认识其在生物制品生产中的应用"
@@ -5041,7 +5062,7 @@
     "grade": 12,
     "semester": "上",
     "chapter": "选择性必修3 生物技术与工程 第2章 细胞工程",
-    "type": "conceptual",
+    "type": "application",
     "description": "理解动物细胞融合的方法和单克隆抗体的制备原理（杂交瘤技术），认识单克隆抗体的应用",
     "mastery_criteria": [
       "理解动物细胞融合的方法和单克隆抗体的制备原理（杂交瘤技术），认识单克隆抗体的应用"
@@ -5084,7 +5105,7 @@
     "grade": 12,
     "semester": "上",
     "chapter": "选择性必修3 生物技术与工程 第2章 细胞工程",
-    "type": "conceptual",
+    "type": "application",
     "description": "理解动物体细胞核移植技术的原理和过程，认识克隆动物的应用和伦理问题",
     "mastery_criteria": [
       "理解动物体细胞核移植技术的原理和过程，认识克隆动物的应用和伦理问题"
@@ -5121,7 +5142,7 @@
     "grade": 12,
     "semester": "上",
     "chapter": "选择性必修3 生物技术与工程 第2章 细胞工程",
-    "type": "conceptual",
+    "type": "application",
     "description": "理解体外受精和胚胎移植的基本操作程序，认识胚胎工程在畜牧业中的应用",
     "mastery_criteria": [
       "理解体外受精和胚胎移植的基本操作程序，认识胚胎工程在畜牧业中的应用"
@@ -5237,7 +5258,7 @@
     "grade": 12,
     "semester": "上",
     "chapter": "选择性必修3 生物技术与工程 第3章 基因工程",
-    "type": "conceptual",
+    "type": "application",
     "description": "了解基因工程在农业、医药、环境保护等方面的应用实例",
     "mastery_criteria": [
       "了解基因工程在农业、医药、环境保护等方面的应用实例"
@@ -5353,7 +5374,7 @@
     "grade": 12,
     "semester": "上",
     "chapter": "选择性必修3 生物技术与工程 第4章 生物技术的安全性与伦理问题",
-    "type": "application",
+    "type": "conceptual",
     "description": "讨论转基因生物的安全性、克隆人和设计试管婴儿的伦理问题，形成正确的生物技术价值观",
     "mastery_criteria": [
       "讨论转基因生物的安全性、克隆人和设计试管婴儿的伦理问题，形成正确的生物技术价值观"
