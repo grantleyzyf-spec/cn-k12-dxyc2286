@@ -1,0 +1,48 @@
+name: Music invariants
+
+on:
+  push:
+    paths:
+      - 'data/music/**'
+      - 'scripts/test_music.py'
+      - '.github/workflows/music-invariants.yml'
+  pull_request:
+    paths:
+      - 'data/music/**'
+      - 'scripts/test_music.py'
+      - '.github/workflows/music-invariants.yml'
+  workflow_dispatch:
+
+jobs:
+  music:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 音乐不变量（课标 TXT 不在 CI，逐字回表自动跳过）
+        run: python3 scripts/test_music.py
+
+      - name: 音乐结构校验
+        run: python3 scripts/validate.py music
+
+      - name: 音乐数据规模与课标索引自检
+        run: |
+          python3 - <<'PY'
+          import json
+          t = json.load(open('data/music/topics.json', encoding='utf-8'))
+          q = json.load(open('data/music/questions.json', encoding='utf-8'))
+          idx = json.load(open('data/cn-curriculum-standards.json', encoding='utf-8'))
+          s = idx['subjects']['music']
+          quotes = sum(len(x.get('standards') or []) for x in t)
+          print(f"topics={len(t)} questions={len(q)} entries={s['entryCount']} quotes={quotes}")
+          assert len(t) >= 33 and len(q) >= len(t), '规模回退'
+          assert s['entryCount'] >= 35, '课标条目回退'
+          assert s['topicsWithStandard'] == len(t), '有知识点未挂课标'
+          assert quotes >= 35, '课标引文回退'
+          assert all(x.get('root_reason') for x in t if not x.get('prerequisites')), '根节点缺 root_reason'
+          print('MUSIC SCALE OK')
+          PY
