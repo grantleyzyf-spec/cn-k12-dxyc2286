@@ -60,8 +60,14 @@ jobs:
       - name: Subject invariants · spanish
         run: python3 scripts/test_spanish.py
 
+      - name: Subject invariants · german
+        run: python3 scripts/test_german.py
+
       - name: Subject invariants · geography
         run: python3 scripts/test_geography.py
+
+      - name: Spanish standards catalog · 目录条目逐字回表（课标 PDF 不在 CI，自动跳过源比对）
+        run: python3 scripts/verify_spanish_catalog_source.py
 
       - name: Standards index freshness (regenerate & diff)
         run: |
