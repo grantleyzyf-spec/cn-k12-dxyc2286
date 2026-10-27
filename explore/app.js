@@ -31,7 +31,7 @@
 
   function $(id) { return document.getElementById(id); }
   function svgEl() { return d3.select('#graph-canvas'); }
-  // 册次标签：1–9 年级用「X年级」，10–14 是高中册次（必修一/二、选必一/二/三），绝不写「十三年级」
+  // 册次标签：1–9 年级用「X年级」；10–14 是高中册次（必修一/二、选必一/二/三），一律按册名显示
   var SENIOR_BOOK = { 10: '必修一', 11: '必修二', 12: '选必一', 13: '选必二', 14: '选必三' };
   function gradeText(g) {
     g = Number(g);
@@ -40,7 +40,7 @@
   }
   function isSeniorBook(g) { return Number(g) >= 10; }
 
-  // 册名一律从 chapter 派生：物理/英语/语文的 grade 与册次不是一一对应
+  // 册名一律从 chapter 派生：物理/英语/语文的 grade 与册次并非一一对应
   function bookLabel(t) {
     var head = ((t && t.chapter) || '').split(' ')[0].replace('各单元', '');
     var m = head.match(/^(选择性必修|必修)(第?[一二三四五六七八九十]册|上册|下册|中册)$/);
