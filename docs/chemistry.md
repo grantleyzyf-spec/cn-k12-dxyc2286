@@ -10,7 +10,7 @@
 | 知识点 | 72 | 九年级 35（上 22 · 下 13）＋高中 37（必修一 11 · 必修二 8 · 选必一 10 · 选必二 3 · 选必三 5） |
 | 先修边 | 89 | hard 82 · soft 7 |
 | 诊断题 | 77 | 与知识点 1:1，另 5 道数值题加挂在定量知识点上 |
-| 课标条目 | 63 | `data/cn-curriculum-standards.json` → `subjects.chemistry.entries` |
+| 课标条目 | 58 | `data/cn-curriculum-standards.json` → `subjects.chemistry.entries` |
 | 课标引文 | 96 条 | 每条 `standards[]` 都带 `quote`，65/72 个知识点有引文 |
 | 根节点 | 2 | `chem_p001`、`chem_h001`，均带 `root_reason` |
 
@@ -51,14 +51,14 @@
 | --- | --- |
 | 题型 | 选择题 72 · 数值题 5 |
 | 难度 | `basic` 35 · `standard` 28 · `hard` 14 |
-| 知识点类型 | `conceptual` 68 · `procedural` 2 · `reasoning` 2 |
+| 知识点类型 | `conceptual` 69 · `procedural` 3 |
 | 校验式 | 5 道数值题全部带 `verify`（如 `6.5/65*22.4`） |
 
 选择题一律 4 个 `{label, text}`，`answer` 必须是 label。
 
 ## 6. 已知缺口（如实记录，不编造）
 
-1. **7 个新增节级知识点暂无课标条目**：`chem_h028` 物质的量、`chem_h030` 金属材料、`chem_h033` 无机非金属材料、`chem_h034` 自然资源的开发利用、`chem_h035` 化学品的合理使用与环境保护、`chem_h036` 原电池、`chem_h037` 电解池。原因是 `data/cn-curriculum-standards.json` 的化学条目是「本库实际引用过的条目索引」（63 条，粗粒度主题），这七处对不上现成编号；**留 `standards: []`，不新编编号**。
+1. **7 个新增节级知识点暂无课标条目**：`chem_h028` 物质的量、`chem_h030` 金属材料、`chem_h033` 无机非金属材料、`chem_h034` 自然资源的开发利用、`chem_h035` 化学品的合理使用与环境保护、`chem_h036` 原电池、`chem_h037` 电解池。原因是 `data/cn-curriculum-standards.json` 的化学条目是「本库实际引用过的条目索引」（58 条，粗粒度主题），这七处对不上现成编号；**留 `standards: []`，不新编编号**。
 2. **粒度仍偏教材节级**：九年级部分知识点按「课题」合并（如「金属的化学性质」覆盖置换与活动性顺序），比数学（479 点）粗；跨学科横向比较需注意口径。
 3. **难度标签未经学生作答数据校准**，`hard` 14 道集中在定量与平衡部分，尚不能当测评量表用。
 4. **选择性必修第二、三册只到章级**（选必二 2 个、选必三 5 个），章内节（如「共价键」「分子的空间结构」「卤代烃」「醇 酚」）尚未拆点，是下一轮扩点的主要缺口。
@@ -67,7 +67,7 @@
 
 ```bash
 cd cn-k12-dxyc2286
-python3 scripts/test_chemistry.py        # 26 项不变量（唯一性/册次/课标/回表/边/题/字段/数值复算）
+python3 scripts/test_chemistry.py        # 27 项不变量（唯一性/册次/课标/回表/边/题/字段/数值复算）
 python3 scripts/validate.py chemistry    # 单学科结构校验（CI 同款）
 python3 scripts/build_standards_index.py # 重建课标索引（改数据后必跑）
 python3 scripts/build_stats.py --write   # 重算统计
