@@ -23,6 +23,7 @@
   var stage = params.get('stage') || 'all';
   var currentGrade = params.get('grade') || 'all';
   var currentDomain = params.get('domain') || 'all';
+  var currentBook = params.get('book') || 'all';   // 高中按册筛（必修一/选必二…）
   var query = '';
   var depth = 2;
   var selectedId = null;
@@ -37,16 +38,27 @@
     if (SENIOR_BOOK[g]) return SENIOR_BOOK[g];
     return (CN_NUM[g] || g) + '年级';
   }
-  function isSeniorBook(g) { return !!SENIOR_BOOK[Number(g)]; }
+  function isSeniorBook(g) { return Number(g) >= 10; }
+
+  // 册名一律从 chapter 派生：物理/英语/语文的 grade 与册次不是一一对应
+  function bookLabel(t) {
+    var head = ((t && t.chapter) || '').split(' ')[0].replace('各单元', '');
+    var m = head.match(/^(选择性必修|必修)(第?[一二三四五六七八九十]册|上册|下册|中册)$/);
+    if (m) {
+      var tail = m[2].replace('册', '')
+        .replace('第一', '一').replace('第二', '二').replace('第三', '三')
+        .replace('第四', '四').replace('第五', '五').replace('第六', '六');
+      return (m[1] === '选择性必修' ? '选必' : '必修') + tail;
+    }
+    return head || ((CN_NUM[Number(t && t.grade)] || (t || {}).grade || '') + '年级');
+  }
   function stageOf(g) { return g <= 6 ? 'primary' : (g <= 9 ? 'junior' : 'senior'); }
   function stageName(g) { return { primary: '小学', junior: '初中', senior: '高中' }[stageOf(g)]; }
   function colorOf(g) { return g <= 6 ? '#0f9d8a' : (g <= 9 ? '#2f6fd0' : '#b5446e'); }
   function bookKey(t) {
-    if (isSeniorBook(t.grade)) {
-      var head = (t.chapter || '').split(' ')[0] || '';
-      return head || gradeText(t.grade);
-    }
-    return gradeText(t.grade) + (t.semester === '下' ? '下册' : '上册');
+    return isSeniorBook(t.grade)
+      ? bookLabel(t)
+      : gradeText(t.grade) + (t.semester === '下' ? '下册' : '上册');
   }
 
   async function fetchJSON(path) {
@@ -93,7 +105,9 @@
     var q = query.trim().toLowerCase();
     return topicsData.filter(function (t) {
       if (stage !== 'all' && stageOf(t.grade) !== stage) return false;
-      if (currentGrade !== 'all' && String(t.grade) !== String(currentGrade)) return false;
+      if (currentBook !== 'all') {
+        if (!isSeniorBook(t.grade) || bookLabel(t) !== currentBook) return false;
+      } else if (currentGrade !== 'all' && String(t.grade) !== String(currentGrade)) return false;
       if (currentDomain !== 'all' && (t.domain || '未分类') !== currentDomain) return false;
       if (!q) return true;
       return (t.name || '').toLowerCase().indexOf(q) >= 0 ||
@@ -125,7 +139,7 @@
         li.dataset.id = t.id;
         li.className = 'topic-item' + (t.id === selectedId ? ' active' : '');
         li.innerHTML = '<span class="t-name">' + t.name + '</span>' +
-          '<span class="grade">' + gradeText(t.grade) + '</span>';
+          '<span class="grade">' + (isSeniorBook(t.grade) ? bookLabel(t) : gradeText(t.grade)) + '</span>';
         li.onclick = function () { select(t.id, true); };
         d.appendChild(li);
       });
@@ -154,7 +168,8 @@
     var q = new URLSearchParams();
     q.set('subject', currentSubject);
     if (stage !== 'all') q.set('stage', stage);
-    if (currentGrade !== 'all') q.set('grade', currentGrade);
+    if (currentBook !== 'all') q.set('book', currentBook);
+    else if (currentGrade !== 'all') q.set('grade', currentGrade);
     if (currentDomain !== 'all') q.set('domain', currentDomain);
     return '?' + q.toString() + (hashId ? '#' + encodeURIComponent(hashId) : '');
   }
@@ -182,7 +197,8 @@
   function showInfo(t) {
     $('info-title').textContent = t.name;
     $('info-meta').textContent = [SUBJECT_NAME[t.subject] || t.subject, stageName(t.grade),
-      gradeText(t.grade), isSeniorBook(t.grade) ? '' : (t.semester || ''), t.domain || '']
+      isSeniorBook(t.grade) ? bookLabel(t) : gradeText(t.grade),
+      isSeniorBook(t.grade) ? '' : (t.semester || ''), t.domain || '']
       .filter(Boolean).join(' · ');
 
     var h = '<div class="kv"><b>教材位置</b>' + (t.chapter || '—') + '</div>';
@@ -320,7 +336,8 @@
       });
     node.append('title').text(function (d) {
       var t = byId.get(d.id);
-      return d.name + '\n' + gradeText(t.grade) + ' · ' + (t.domain || '') + '\n' + (t.chapter || '');
+      return d.name + '\n' + (isSeniorBook(t.grade) ? bookLabel(t) : gradeText(t.grade)) +
+        ' · ' + (t.domain || '') + '\n' + (t.chapter || '');
     });
 
     simulation.on('tick', function () {
@@ -337,7 +354,8 @@
     svg.call(zoomBehavior).on('dblclick.zoom', null);
 
     var t = byId.get(selectedId);
-    $('graph-meta').textContent = stageName(t.grade) + ' · ' + gradeText(t.grade) + ' · ' + (t.domain || '') +
+    $('graph-meta').textContent = stageName(t.grade) + ' · ' +
+      (isSeniorBook(t.grade) ? bookLabel(t) : gradeText(t.grade)) + ' · ' + (t.domain || '') +
       ' · 先修 ' + up.size + ' · 下游 ' + down.size;
   }
 
@@ -378,6 +396,7 @@
       topicsData = res[0]; dependenciesData = res[1];
       indexGraph();
       fillDomainOptions();
+      fillGradeOptions();
 
       var hashId = decodeURIComponent((location.hash || '').replace(/^#/, ''));
       if (!(hashId && byId.has(hashId))) {
@@ -403,6 +422,28 @@
     }
   }
 
+  function fillGradeOptions() {
+    var sel = $('grade-select');
+    var html = '<option value="all">全部册次</option>';
+    for (var g = 1; g <= 9; g++) html += '<option value="g:' + g + '">' + gradeText(g) + '</option>';
+    var books = [], seen = {};
+    topicsData.forEach(function (t) {
+      if (!isSeniorBook(t.grade)) return;
+      var b = bookLabel(t);
+      if (!seen[b]) { seen[b] = true; books.push({ label: b, min: t.grade }); }
+    });
+    var RANK = { '必修一': 11, '必修二': 12, '必修三': 13, '必修四': 14, '必修五': 15, '必修六': 16,
+                 '选必一': 21, '选必二': 22, '选必三': 23, '选必四': 24 };
+    books.sort(function (a, b) {
+      return (RANK[a.label] || 99) - (RANK[b.label] || 99) || a.min - b.min;
+    });
+    books.forEach(function (b) { html += '<option value="b:' + b.label + '">' + b.label + '</option>'; });
+    sel.innerHTML = html;
+    var want = currentBook !== 'all' ? ('b:' + currentBook) : (currentGrade !== 'all' ? ('g:' + currentGrade) : 'all');
+    if ([].some.call(sel.options, function (o) { return o.value === want; })) sel.value = want;
+    else { currentBook = 'all'; currentGrade = 'all'; sel.value = 'all'; }
+  }
+
   function fillDomainOptions() {
     var sel = $('domain-select');
     sel.innerHTML = '<option value="all">全部领域</option>' + domains.map(function (d) {
@@ -422,7 +463,7 @@
   function bind() {
     $('subject-select').addEventListener('change', function (e) {
       currentSubject = e.target.value;
-      stage = 'all'; currentGrade = 'all'; currentDomain = 'all';
+      stage = 'all'; currentGrade = 'all'; currentDomain = 'all'; currentBook = 'all';
       selectedId = null; closeInfo();
       history.replaceState(null, '', urlFor());
       loadData();
@@ -438,7 +479,10 @@
     });
 
     $('grade-select').addEventListener('change', function (e) {
-      currentGrade = e.target.value;
+      var v = e.target.value;
+      if (v === 'all') { currentGrade = 'all'; currentBook = 'all'; }
+      else if (v.indexOf('b:') === 0) { currentBook = v.slice(2); currentGrade = 'all'; }
+      else { currentGrade = v.slice(2); currentBook = 'all'; }
       history.replaceState(null, '', urlFor());
       refreshSelection();
     });

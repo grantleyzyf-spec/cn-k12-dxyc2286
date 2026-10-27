@@ -22,9 +22,9 @@
 
 首页的学科卡就是 `explore/?subject=<id>`，所以从首页点卡片能直接落到该学科的图。
 
-`explore/` 的交互：`#stage-tabs`（全部/小学/初中/高中）、`#subject-select`、`#grade-select`、`#domain-select`（按本学科实际领域生成）、`#topic-search`（名称/章节/领域，回车跳第一个）、`#depth-select`（向上 1/2/3 层或全部祖先）、`#zoom-in` / `#zoom-out` / `#fit-btn`、`#reset-btn`；左侧列表按「年级·册」分组折叠（高中按册），选中项自动展开并滚到可见；点图中任意节点即以它为中心重画（向下固定 1 层）。
+`explore/` 的交互：`#stage-tabs`（全部/小学/初中/高中）、`#subject-select`、`#grade-select`（1–9 年级 + 高中按册：必修一/二/三、选必一/二/三，按本学科实际册名生成）、`#domain-select`（按本学科实际领域生成）、`#topic-search`（名称/章节/领域，回车跳第一个）、`#depth-select`（向上 1/2/3 层或全部祖先）、`#zoom-in` / `#zoom-out` / `#fit-btn`、`#reset-btn`；左侧列表按「年级·册」分组折叠（高中按册），选中项自动展开并滚到可见；点图中任意节点即以它为中心重画（向下固定 1 层）。
 详情卡含：教材位置、描述、掌握标准、**课标条目（id + 置信度 + 可展开的课标原文）**、**样题（答案折叠）**、直接先修、被依赖，底部「诊断这个知识点」跳到 `diagnose/?subject=…&topic=…` 并自动预选。
-URL 可分享：`?subject=&stage=&grade=&domain=#<topic-id>`，切筛选/选点都会同步 `history.replaceState`。JS 在 `explore/app.js`。
+URL 可分享：`?subject=&stage=&grade=&book=&domain=#<topic-id>`（高中用 `book=`），切筛选/选点都会同步 `history.replaceState`。JS 在 `explore/app.js`。
 
 ## 3. 数据依赖
 

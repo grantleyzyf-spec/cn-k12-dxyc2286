@@ -263,7 +263,7 @@
                 topicsData.forEach(topic => {
                     const option = document.createElement('option');
                     option.value = topic.id;
-                    option.textContent = `${topic.name} (${getGradeText(topic.grade)})`;
+                    option.textContent = `${topic.name} (${bookLabel(topic)})`;
                     topicSelect.appendChild(option);
                 });
                 topicSelect.disabled = false;
@@ -284,13 +284,24 @@
         }
 
         // 获取年级文本
+        function bookLabel(topic) {
+            const head = ((topic && topic.chapter) || '').split(' ')[0].replace('各单元', '');
+            const m = head.match(/^(选择性必修|必修)(第?[一二三四五六七八九十]册|上册|下册|中册)$/);
+            if (m) {
+                const tail = m[2].replace('册', '')
+                    .replace('第一', '一').replace('第二', '二').replace('第三', '三')
+                    .replace('第四', '四').replace('第五', '五');
+                return (m[1] === '选择性必修' ? '选必' : '必修') + tail;
+            }
+            return head || getGradeText(topic && topic.grade);
+        }
+
         function getGradeText(grade) {
             // 1–9 年级用「X年级」；10–14 是高中册次（必修一/二、选必一/二/三），不写「十三年级」
             const CN = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
-            const BOOK = { 10: '必修一', 11: '必修二', 12: '选必一', 13: '选必二', 14: '选必三' };
             const g = Number(grade);
-            if (BOOK[g]) return BOOK[g];
-            return (CN[g] || g) + '年级';
+            if (g <= 9) return (CN[g] || g) + '年级';
+            return '高中';
         }
 
         // 开始诊断
