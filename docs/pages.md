@@ -7,7 +7,7 @@
 | 路径 | 作用 | 关键交互 |
 | --- | --- | --- |
 | `index.html` | 首页 | 一句话定位、三步、5 张统计卡（读 `data/stats.json`）、17 个学科卡、特性、FAQ |
-| `explore/` | 知识图谱 | 学科/学段/年级/领域筛选、局部先修图（Cytoscape + dagre）、右侧详情 |
+| `explore/` | 知识图谱 | 学科/年级筛选、名称/章节/领域搜索、向上 N 层先修的聚焦子图（d3 力导向）、右侧详情可跳转 |
 | `diagnose/` | 自适应诊断 | 选范围 → 沿 hard 边出题 → 结果分「根因/不稳/未测 + 路径」 |
 | `children/` | 学习档案 | 建档、切换当前孩子、诊断记录（`localStorage: k12kids.v1`） |
 | `children/history.html` | 诊断记录 | 反复未掌握知识点聚合 + 明细 |
@@ -21,6 +21,8 @@
 | 根路径 | `#<topic-id>` | 兼容旧链接：根路径带 `#cnm_…` 会转到知识图谱对应知识点 |
 
 首页的学科卡就是 `explore/?subject=<id>`，所以从首页点卡片能直接落到该学科的图。
+
+`explore/` 的交互：`#subject-select` 切学科、`#grade-select` 滤年级、`#topic-search` 按名称/章节/领域搜、`#depth-select` 选向上追溯 1/2/3 层或全部祖先、`#fit-btn` 适配画面、`#reset-btn` 回到首个；点图中任意节点即以它为中心重画（向下固定 1 层）。JS 已抽到 `explore/app.js`。
 
 ## 3. 数据依赖
 

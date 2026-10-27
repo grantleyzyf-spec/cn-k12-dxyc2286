@@ -98,6 +98,40 @@
             .info-panel { left: 12px; right: 12px; width: auto; }
             .legend { display: none; }
         }
+
+        /* 工具栏新增控件 */
+        .page-toolbar .search-wrap input {
+            min-height: 36px; width: 190px; padding: 0 10px; font-size: 13.5px;
+            color: var(--ink); background: var(--card);
+            border: 1px solid var(--line); border-radius: 9px;
+        }
+        .page-toolbar .search-wrap input:focus { outline: 2px solid var(--brand); outline-offset: 1px; }
+        .page-toolbar .tool-btn {
+            min-height: 36px; padding: 0 12px; font-size: 13px; font-weight: 600;
+            color: var(--ink); background: var(--card);
+            border: 1px solid var(--line); border-radius: 9px; cursor: pointer;
+        }
+        .page-toolbar .tool-btn:hover { border-color: var(--brand); color: var(--brand-ink); }
+
+        .list-count { font-weight: 400; color: var(--ink-3); letter-spacing: 0; }
+        .topic-list li .t-name { display: inline; }
+        .topic-list li .grade { float: right; }
+
+        /* 图内元素 */
+        .node.center circle { filter: drop-shadow(0 2px 6px rgba(15,110,98,.35)); }
+        .node.up circle { opacity: .96; }
+        .node.down circle { opacity: .9; }
+        .node-label { paint-order: stroke; stroke: var(--card); stroke-width: 3px; stroke-linejoin: round; }
+        .empty-title { font-size: 15px; fill: var(--ink-2); font-weight: 600; }
+        .empty-sub { font-size: 12.5px; fill: var(--ink-3); }
+
+        /* 详情面板内结构 */
+        .info-panel .desc .kv { font-size: 13px; color: var(--ink-2); margin: 4px 0 10px; line-height: 1.7; }
+        .info-panel .desc .desc-p { margin: 0 0 10px; font-size: 13.5px; line-height: 1.7; color: var(--ink-2); }
+        .info-panel .desc h4 { margin: 12px 0 4px; font-size: 12.5px; color: var(--ink-3); font-weight: 700; }
+        .info-panel .desc ul { margin: 4px 0 8px 18px; padding: 0; font-size: 13px; color: var(--ink-2); }
+        .info-panel .desc a { color: var(--brand); }
+        .info-panel .desc .soft-tag { color: var(--ink-3); font-size: 11.5px; }
     </style>
 </head>
 <body>
@@ -157,22 +191,37 @@
                 <option value="7">七年级</option>
                 <option value="8">八年级</option>
                 <option value="9">九年级</option>
-                <option value="10">高一</option>
-                <option value="11">高二</option>
-                <option value="12">高三</option>
+                <option value="10">高一（必修一）</option>
+                <option value="11">高二（必修二）</option>
+                <option value="12">选必一</option>
+                <option value="13">选必二</option>
+                <option value="14">选必三</option>
             </select>
         </label>
-        <span class="toolbar-hint">点左侧知识点查看先修关系；线条实线为必先修、虚线为建议先修</span>
+        <label class="search-wrap">搜索
+            <input id="topic-search" type="search" placeholder="名称 / 章节 / 领域" autocomplete="off">
+        </label>
+        <label>向上先修
+            <select id="depth-select">
+                <option value="1">1 层</option>
+                <option value="2" selected>2 层</option>
+                <option value="3">3 层</option>
+                <option value="all">全部祖先</option>
+            </select>
+        </label>
+        <button class="tool-btn" id="fit-btn" type="button">适配画面</button>
+        <button class="tool-btn" id="reset-btn" type="button">回到首个</button>
+        <span class="toolbar-hint" id="graph-hint">选一个知识点开始</span>
     </div>
     <div class="main">
         <div class="sidebar">
-            <h3>知识点列表</h3>
+            <h3>知识点列表 <span class="list-count" id="list-count">—</span></h3>
             <ul class="topic-list" id="topic-list"></ul>
         </div>
         <div class="graph-area">
             <svg id="graph-canvas"></svg>
             <div class="info-panel" id="info-panel">
-                <span class="close" onclick="closeInfo()">×</span>
+                <button class="close" id="info-close" type="button" aria-label="关闭">×</button>
                 <h3 id="info-title"></h3>
                 <div class="meta" id="info-meta"></div>
                 <div class="desc" id="info-desc"></div>
@@ -188,224 +237,22 @@
                 </div>
                 <div class="legend-item">
                     <div class="legend-color" style="background: var(--senior);"></div>
-                    <span>高中 (10-12年级)</span>
+                    <span>高中（必修 / 选必）</span>
                 </div>
                 <div class="legend-item">
                     <div class="legend-color" style="background: var(--brand); width: 30px; height: 3px;"></div>
-                    <span>必须先修 (hard)</span>
+                    <span>必先修（实线）</span>
                 </div>
                 <div class="legend-item">
                     <div class="legend-color" style="background: none; border-top: 2px dashed var(--ink-3); width: 30px; height: 0;"></div>
-                    <span>建议先修 (soft)</span>
+                    <span>建议先修（虚线）</span>
                 </div>
             </div>
         </div>
     </div>
 
     <script src="../assets/vendor/d3.v7.min.js"></script>
-    <script>
-        let topicsData = [];
-        let dependenciesData = [];
-        let currentSubject = new URLSearchParams(location.search).get('subject') || 'math';
-        let currentGrade = 'all';
-
-        // 颜色映射
-        function getColor(grade) {
-            if (grade <= 6) return '#667eea';
-            if (grade <= 9) return '#764ba2';
-            return '#f093fb';
-        }
-
-        // 获取学科的topics文件列表
-        function getTopicsFiles(subject) {
-            // v2：topics.json 已含全部学段（grade 拆分文件仅作归档，不再叠加，避免重复）
-            return ['topics.json'];
-        }
-
-        // 获取学科的dependencies文件列表
-        function getDepsFiles(subject) {
-            return ['dependencies.json'];
-        }
-
-        // 加载数据
-        async function loadData() {
-            try {
-                // 加载所有topics文件
-                const topicFiles = getTopicsFiles(currentSubject);
-                let allTopics = [];
-                for (const file of topicFiles) {
-                    const response = await fetch(`../data/${currentSubject}/${file}`);
-                    if (response.ok) {
-                        const data = await response.json();
-                        allTopics = allTopics.concat(data);
-                    }
-                }
-                topicsData = Array.from(new Map(allTopics.map(t => [t.id, t])).values());
-                
-                // 加载所有dependencies文件
-                const depsFiles = getDepsFiles(currentSubject);
-                let allDeps = [];
-                for (const file of depsFiles) {
-                    const response = await fetch(`../data/${currentSubject}/${file}`);
-                    if (response.ok) {
-                        const data = await response.json();
-                        allDeps = allDeps.concat(data);
-                    }
-                }
-                dependenciesData = Array.from(new Map(allDeps.map(d => [`${d.from}->${d.to}:${d.type}`, d])).values());
-                
-                updateTopicList();
-                renderGraph();
-            } catch (e) {
-                console.error('数据加载失败:', e);
-            }
-        }
-
-        // 更新知识点列表
-        function updateTopicList() {
-            const list = document.getElementById('topic-list');
-            list.innerHTML = '';
-            
-            let filtered = topicsData;
-            if (currentGrade !== 'all') {
-                filtered = topicsData.filter(t => t.grade === parseInt(currentGrade));
-            }
-            
-            filtered.sort((a, b) => a.grade - b.grade || a.id.localeCompare(b.id));
-            
-            filtered.forEach(topic => {
-                const li = document.createElement('li');
-                li.innerHTML = `${topic.name}<span class="grade">${getGradeText(topic.grade)}</span>`;
-                li.onclick = () => focusTopic(topic);
-                list.appendChild(li);
-            });
-        }
-
-        function getGradeText(grade) {
-            if (grade <= 6) return `${grade}年级`;
-            if (grade <= 9) return `${grade - 6}年级(初)`;
-            return `高${grade - 9}`;
-        }
-
-        // 渲染图谱
-        function renderGraph() {
-            const svg = d3.select('#graph-canvas');
-            svg.selectAll('*').remove();
-            
-            const width = svg.node().clientWidth;
-            const height = svg.node().clientHeight;
-            
-            let filtered = topicsData;
-            if (currentGrade !== 'all') {
-                filtered = topicsData.filter(t => t.grade === parseInt(currentGrade));
-            }
-            
-            const nodeIds = new Set(filtered.map(t => t.id));
-            // d3.forceLink 认的是 link.source / link.target（不是 from / to），
-            // 且每次重绘都要用新对象：它会把这两个字段改写成节点对象
-            const links = dependenciesData
-                .filter(d => d && nodeIds.has(d.from) && nodeIds.has(d.to))
-                .map(d => ({ source: d.from, target: d.to, type: d.type }));
-            
-            const nodes = filtered.map(t => ({...t}));
-            const nodeMap = new Map(nodes.map(n => [n.id, n]));
-            
-            const simulation = d3.forceSimulation(nodes)
-                .force('link', d3.forceLink(links).id(d => d.id).distance(100))
-                .force('charge', d3.forceManyBody().strength(-300))
-                .force('center', d3.forceCenter(width / 2, height / 2))
-                .force('x', d3.forceX(d => (d.grade - 1) * (width / 13)).strength(0.3));
-            
-            const link = svg.append('g')
-                .selectAll('line')
-                .data(links)
-                .join('line')
-                .attr('class', d => `link ${d.type}`);
-            
-            const node = svg.append('g')
-                .selectAll('g')
-                .data(nodes)
-                .join('g')
-                .attr('class', 'node')
-                .call(d3.drag()
-                    .on('start', dragstarted)
-                    .on('drag', dragged)
-                    .on('end', dragended));
-            
-            node.append('circle')
-                .attr('r', 8)
-                .attr('fill', d => getColor(d.grade))
-                .on('click', (e, d) => showInfo(d));
-            
-            node.append('text')
-                .attr('dx', 12)
-                .attr('dy', 4)
-                .text(d => d.name.length > 10 ? d.name.slice(0, 10) + '...' : d.name);
-            
-            simulation.on('tick', () => {
-                link
-                    .attr('x1', d => d.source.x)
-                    .attr('y1', d => d.source.y)
-                    .attr('x2', d => d.target.x)
-                    .attr('y2', d => d.target.y);
-                
-                node.attr('transform', d => `translate(${d.x},${d.y})`);
-            });
-            
-            function dragstarted(event, d) {
-                if (!event.active) simulation.alphaTarget(0.3).restart();
-                d.fx = d.x;
-                d.fy = d.y;
-            }
-            
-            function dragged(event, d) {
-                d.fx = event.x;
-                d.fy = event.y;
-            }
-            
-            function dragended(event, d) {
-                if (!event.active) simulation.alphaTarget(0);
-                d.fx = null;
-                d.fy = null;
-            }
-        }
-
-        // 显示信息面板
-        function showInfo(topic) {
-            document.getElementById('info-title').textContent = topic.name;
-            document.getElementById('info-meta').textContent = `${getGradeText(topic.grade)} | ${topic.chapter || ''}`;
-            document.getElementById('info-desc').textContent = topic.description;
-            document.getElementById('info-panel').classList.add('show');
-        }
-
-        function closeInfo() {
-            document.getElementById('info-panel').classList.remove('show');
-        }
-
-        function focusTopic(topic) {
-            showInfo(topic);
-        }
-
-        // 事件监听
-        document.getElementById('subject-select').addEventListener('change', (e) => {
-            currentSubject = e.target.value;
-            loadData();
-        });
-
-        document.getElementById('grade-select').addEventListener('change', (e) => {
-            currentGrade = e.target.value;
-            updateTopicList();
-            renderGraph();
-        });
-
-        (function syncSubjectSelect() {
-            const sel = document.getElementById('subject-select');
-            if (sel && [...sel.options].some(o => o.value === currentSubject)) sel.value = currentSubject;
-        })();
-
-        // 初始化
-        loadData();
-    </script>
+    <script src="app.js"></script>
     <script>
         // Register Service Worker for PWA
         if ('serviceWorker' in navigator) {
