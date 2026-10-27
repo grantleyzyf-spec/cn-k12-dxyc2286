@@ -1,0 +1,42 @@
+name: Validate Chinese Subject Data
+
+# 语文（chinese）学科收口专用工作流。
+# 单独成文件的原因：validate.yml 由并行会话维护（physics 等学科同时改动），
+# 避免多人同时改同一 workflow 互相卷进提交；口径与其中 math/physics 的
+# 「Subject invariants · <subject>」步骤完全一致。
+
+on:
+  push:
+    paths:
+      - 'data/chinese/**/*.json'
+      - 'scripts/test_chinese.py'
+      - '.github/workflows/validate-chinese.yml'
+  pull_request:
+    paths:
+      - 'data/chinese/**/*.json'
+      - 'scripts/test_chinese.py'
+      - '.github/workflows/validate-chinese.yml'
+  workflow_dispatch:
+
+jobs:
+  chinese:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate structure & references (all subjects)
+        run: python3 scripts/validate.py --all
+
+      - name: Subject invariants · chinese
+        run: python3 scripts/test_chinese.py
+
+      - name: Standards index freshness (regenerate & diff)
+        run: |
+          cp data/cn-curriculum-standards.json /tmp/std.before.json
+          python3 scripts/build_standards_index.py >/dev/null
+          diff -q /tmp/std.before.json data/cn-curriculum-standards.json || { echo "::error::cn-curriculum-standards.json 已过期，请本地跑 scripts/build_standards_index.py 并提交"; exit 1; }
