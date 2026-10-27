@@ -7,7 +7,7 @@
 | 路径 | 作用 | 关键交互 |
 | --- | --- | --- |
 | `index.html` | 首页 | 一句话定位、三步、5 张统计卡（读 `data/stats.json`）、17 个学科卡、特性、FAQ |
-| `explore/` | 知识图谱 | 学科/年级筛选、名称/章节/领域搜索、向上 N 层先修的聚焦子图（d3 力导向）、右侧详情可跳转 |
+| `explore/` | 知识图谱 | 学段 tabs + 学科/年级/领域筛选、名称/章节/领域搜索、按册分组折叠列表、向上 N 层先修的聚焦子图（分层布局）、缩放/适配、详情含课标原文与样题、诊断入口 |
 | `diagnose/` | 自适应诊断 | 选范围 → 沿 hard 边出题 → 结果分「根因/不稳/未测 + 路径」 |
 | `children/` | 学习档案 | 建档、切换当前孩子、诊断记录（`localStorage: k12kids.v1`） |
 | `children/history.html` | 诊断记录 | 反复未掌握知识点聚合 + 明细 |
@@ -22,7 +22,9 @@
 
 首页的学科卡就是 `explore/?subject=<id>`，所以从首页点卡片能直接落到该学科的图。
 
-`explore/` 的交互：`#subject-select` 切学科、`#grade-select` 滤年级、`#topic-search` 按名称/章节/领域搜、`#depth-select` 选向上追溯 1/2/3 层或全部祖先、`#fit-btn` 适配画面、`#reset-btn` 回到首个；点图中任意节点即以它为中心重画（向下固定 1 层）。JS 已抽到 `explore/app.js`。
+`explore/` 的交互：`#stage-tabs`（全部/小学/初中/高中）、`#subject-select`、`#grade-select`、`#domain-select`（按本学科实际领域生成）、`#topic-search`（名称/章节/领域，回车跳第一个）、`#depth-select`（向上 1/2/3 层或全部祖先）、`#zoom-in` / `#zoom-out` / `#fit-btn`、`#reset-btn`；左侧列表按「年级·册」分组折叠（高中按册），选中项自动展开并滚到可见；点图中任意节点即以它为中心重画（向下固定 1 层）。
+详情卡含：教材位置、描述、掌握标准、**课标条目（id + 置信度 + 可展开的课标原文）**、**样题（答案折叠）**、直接先修、被依赖，底部「诊断这个知识点」跳到 `diagnose/?subject=…&topic=…` 并自动预选。
+URL 可分享：`?subject=&stage=&grade=&domain=#<topic-id>`，切筛选/选点都会同步 `history.replaceState`。JS 在 `explore/app.js`。
 
 ## 3. 数据依赖
 

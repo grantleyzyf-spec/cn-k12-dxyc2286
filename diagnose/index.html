@@ -222,6 +222,9 @@
         document.getElementById('start-btn').addEventListener('click', startDiagnosis);
         document.getElementById('next-btn').addEventListener('click', nextQuestion);
 
+        // URL 参数 ?topic= 预选知识点（从知识图谱「诊断这个知识点」进来）
+        const topicParam = new URLSearchParams(location.search).get('topic') || '';
+
         // URL 参数 ?subject= 初始化（学科下拉同步并加载知识点）
         (function initSubjectFromUrl() {
             const sel = document.getElementById('subject-select');
@@ -268,6 +271,12 @@
                 topicSelect.addEventListener('change', () => {
                     document.getElementById('start-btn').disabled = !topicSelect.value;
                 });
+
+                // 从知识图谱「诊断这个知识点」进来时预选该点
+                if (topicParam && [...topicSelect.options].some(o => o.value === topicParam)) {
+                    topicSelect.value = topicParam;
+                    document.getElementById('start-btn').disabled = false;
+                }
             } catch (e) {
                 topicSelect.innerHTML = '<option value="">数据加载失败</option>';
                 console.error('加载知识点失败:', e);
@@ -276,10 +285,12 @@
 
         // 获取年级文本
         function getGradeText(grade) {
-            if (grade <= 6) return `${grade}年级`;
-            if (grade <= 9) return `${grade - 6}年级(初中)`;
-            if (grade <= 12) return `高一${grade - 10 > 0 ? '+' + (grade - 10) : ''}`;
-            return `选必${grade - 12}`;
+            // 1–9 年级用「X年级」；10–14 是高中册次（必修一/二、选必一/二/三），不写「十三年级」
+            const CN = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
+            const BOOK = { 10: '必修一', 11: '必修二', 12: '选必一', 13: '选必二', 14: '选必三' };
+            const g = Number(grade);
+            if (BOOK[g]) return BOOK[g];
+            return (CN[g] || g) + '年级';
         }
 
         // 开始诊断
