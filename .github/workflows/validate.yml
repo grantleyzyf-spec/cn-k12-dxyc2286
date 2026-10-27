@@ -48,6 +48,9 @@ jobs:
       - name: Subject invariants · geography
         run: python3 scripts/test_geography.py
 
+      - name: Subject invariants · history
+        run: python3 scripts/test_history.py
+
       - name: Standards index freshness (regenerate & diff)
         run: |
           cp data/cn-curriculum-standards.json /tmp/std.before.json
