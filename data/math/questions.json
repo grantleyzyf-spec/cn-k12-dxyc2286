@@ -62501,5 +62501,809 @@
     "difficulty": "hard",
     "explanation": "规律是 2 个圆和 1 个三角形循环，每组 3 个。用 17 除以 3 得 5 余 2，说明前面排满 5 组，第 17 个落在新一组的第 2 个位置，就是 ○。",
     "subject": "math"
+  },
+  {
+    "id": "mat_p107_q2",
+    "topicId": "mat_p107",
+    "prompt": "下面哪种图形的边是弯曲的、一个角也没有？",
+    "question": "下面哪种图形的边是弯曲的、一个角也没有？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "长方形"
+      },
+      {
+        "label": "B",
+        "text": "正方形"
+      },
+      {
+        "label": "C",
+        "text": "圆"
+      },
+      {
+        "label": "D",
+        "text": "三角形"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "长方形"
+      },
+      {
+        "label": "B",
+        "text": "正方形"
+      },
+      {
+        "label": "C",
+        "text": "圆"
+      },
+      {
+        "label": "D",
+        "text": "三角形"
+      }
+    ],
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "圆没有直直的边，也没有角；长方形、正方形、三角形都有直边和角。",
+    "subject": "math",
+    "answer": "C"
+  },
+  {
+    "id": "mat_p107_q3",
+    "topicId": "mat_p107",
+    "prompt": "一个图形有 4 条边、4 个角，而且 4 条边一样长，它是什么图形？",
+    "question": "一个图形有 4 条边、4 个角，而且 4 条边一样长，它是什么图形？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "长方形"
+      },
+      {
+        "label": "B",
+        "text": "正方形"
+      },
+      {
+        "label": "C",
+        "text": "三角形"
+      },
+      {
+        "label": "D",
+        "text": "圆"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "长方形"
+      },
+      {
+        "label": "B",
+        "text": "正方形"
+      },
+      {
+        "label": "C",
+        "text": "三角形"
+      },
+      {
+        "label": "D",
+        "text": "圆"
+      }
+    ],
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "有 4 条边、4 个角，并且 4 条边都一样长，就是正方形；长方形的 4 条边只有对边相等。",
+    "subject": "math",
+    "answer": "B"
+  },
+  {
+    "id": "mat_p107_q4",
+    "topicId": "mat_p107",
+    "prompt": "一个三角形有几条边？只填数字。",
+    "question": "一个三角形有几条边？只填数字。",
+    "choices": [],
+    "options": [],
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "三角形由 3 条边围成，所以有 3 条边、3 个角；数的时候要一条一条数，别把顶点当边。",
+    "subject": "math",
+    "answer": "3"
+  },
+  {
+    "id": "mat_p107_q5",
+    "topicId": "mat_p107",
+    "prompt": "用小棒摆 2 个分开的三角形，每个三角形用 3 根小棒，一共要用多少根小棒？只填数字。",
+    "question": "用小棒摆 2 个分开的三角形，每个三角形用 3 根小棒，一共要用多少根小棒？只填数字。",
+    "choices": [],
+    "options": [],
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "每个三角形用 3 根，摆 2 个就是 2 个 3，3+3=6（也就是 2*3=6）根；易错：只算一个三角形得 3 根。",
+    "subject": "math",
+    "answer": "6",
+    "verify": "2*3"
+  },
+  {
+    "id": "mat_p107_q6",
+    "topicId": "mat_p107",
+    "prompt": "说一说长方形和正方形有什么相同的地方，又有什么不同的地方。",
+    "question": "说一说长方形和正方形有什么相同的地方，又有什么不同的地方。",
+    "choices": [],
+    "options": [],
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "长方形和正方形都属于四边形：相同点是都有 4 条边、4 个角且 4 个角都是直角；不同点在边的长度——正方形 4 条边全部相等，长方形只是对边相等。易错：把正方形说成「边长的长方形」而忽略它 4 边相等这一关键特征。",
+    "subject": "math",
+    "answer": "都有 4 条边和 4 个角；4 个角都是直角；正方形的 4 条边一样长，长方形只有对着的两条边相等"
+  },
+  {
+    "id": "mat_p108_q2",
+    "topicId": "mat_p108",
+    "prompt": "照着正方体的一个面在纸上描一描，描出来的图形是什么？",
+    "question": "照着正方体的一个面在纸上描一描，描出来的图形是什么？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "圆"
+      },
+      {
+        "label": "B",
+        "text": "三角形"
+      },
+      {
+        "label": "C",
+        "text": "正方形"
+      },
+      {
+        "label": "D",
+        "text": "长方形"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "圆"
+      },
+      {
+        "label": "B",
+        "text": "三角形"
+      },
+      {
+        "label": "C",
+        "text": "正方形"
+      },
+      {
+        "label": "D",
+        "text": "长方形"
+      }
+    ],
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "正方体的每个面都是正方形，所以描出来的图形是正方形；易错：以为描出来是长方形。",
+    "subject": "math",
+    "answer": "C"
+  },
+  {
+    "id": "mat_p108_q3",
+    "topicId": "mat_p108",
+    "prompt": "照着圆柱的底面描一描，描出来的图形是什么？",
+    "question": "照着圆柱的底面描一描，描出来的图形是什么？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "正方形"
+      },
+      {
+        "label": "B",
+        "text": "圆"
+      },
+      {
+        "label": "C",
+        "text": "三角形"
+      },
+      {
+        "label": "D",
+        "text": "长方形"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "正方形"
+      },
+      {
+        "label": "B",
+        "text": "圆"
+      },
+      {
+        "label": "C",
+        "text": "三角形"
+      },
+      {
+        "label": "D",
+        "text": "长方形"
+      }
+    ],
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "圆柱的上下两个底面都是圆，所以描出来是圆；圆柱的侧面是弯的，描不出平平的图形。",
+    "subject": "math",
+    "answer": "B"
+  },
+  {
+    "id": "mat_p108_q4",
+    "topicId": "mat_p108",
+    "prompt": "长方体一共有几个面？只填数字。",
+    "question": "长方体一共有几个面？只填数字。",
+    "choices": [],
+    "options": [],
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "长方体有 6 个面：上面、下面、前面、后面、左面、右面各 1 个；易错：只数看得见的 3 个面。",
+    "subject": "math",
+    "answer": "6"
+  },
+  {
+    "id": "mat_p108_q5",
+    "topicId": "mat_p108",
+    "prompt": "一个正方体有 6 个面，每个面上都描出一个正方形，一共可以描出多少个正方形？只填数字。",
+    "question": "一个正方体有 6 个面，每个面上都描出一个正方形，一共可以描出多少个正方形？只填数字。",
+    "choices": [],
+    "options": [],
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "正方体每个面都是正方形，6 个面就能描出 6 个正方形，6*1=6；易错：以为描出来都一样，只算 1 个。",
+    "subject": "math",
+    "answer": "6",
+    "verify": "6*1"
+  },
+  {
+    "id": "mat_p108_q6",
+    "topicId": "mat_p108",
+    "prompt": "说一说圆柱和球有什么不同，为什么从球上描不出一个平平的图形。",
+    "question": "说一说圆柱和球有什么不同，为什么从球上描不出一个平平的图形。",
+    "choices": [],
+    "options": [],
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "圆柱的底面、上面是平平的圆形面，可以贴着纸描出圆；球的表面处处弯曲、没有平面，所以贴着纸也描不出图形。易错：把球的「圆」和平面上的圆混为一谈。",
+    "subject": "math",
+    "answer": "圆柱上下两个面是平平的圆；球的表面到处都是弯的，没有平平的面；所以球上描不出平面图形"
+  },
+  {
+    "id": "mat_p109_q2",
+    "topicId": "mat_p109",
+    "prompt": "用两个完全一样的三角形，可以拼成下面哪种图形？",
+    "question": "用两个完全一样的三角形，可以拼成下面哪种图形？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "圆"
+      },
+      {
+        "label": "B",
+        "text": "正方形或长方形"
+      },
+      {
+        "label": "C",
+        "text": "球"
+      },
+      {
+        "label": "D",
+        "text": "圆柱"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "圆"
+      },
+      {
+        "label": "B",
+        "text": "正方形或长方形"
+      },
+      {
+        "label": "C",
+        "text": "球"
+      },
+      {
+        "label": "D",
+        "text": "圆柱"
+      }
+    ],
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "两个完全一样的直角三角形可以拼成长方形，等腰直角三角形还能拼成正方形；圆、球、圆柱是弯的，拼不出来。",
+    "subject": "math",
+    "answer": "B"
+  },
+  {
+    "id": "mat_p109_q3",
+    "topicId": "mat_p109",
+    "prompt": "把一张长方形纸沿着中间的折痕剪开，可以得到两个完全一样的什么图形？",
+    "question": "把一张长方形纸沿着中间的折痕剪开，可以得到两个完全一样的什么图形？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "圆"
+      },
+      {
+        "label": "B",
+        "text": "长方形"
+      },
+      {
+        "label": "C",
+        "text": "三角形"
+      },
+      {
+        "label": "D",
+        "text": "正方形"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "圆"
+      },
+      {
+        "label": "B",
+        "text": "长方形"
+      },
+      {
+        "label": "C",
+        "text": "三角形"
+      },
+      {
+        "label": "D",
+        "text": "正方形"
+      }
+    ],
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "沿中间横（竖）着剪开，得到两个完全一样的长方形；只有沿对角线剪才得到两个三角形。",
+    "subject": "math",
+    "answer": "B"
+  },
+  {
+    "id": "mat_p109_q4",
+    "topicId": "mat_p109",
+    "prompt": "用 4 个完全一样的小正方形，可以拼成一个大 ___ 形（填图形名称）。",
+    "question": "用 4 个完全一样的小正方形，可以拼成一个大 ___ 形（填图形名称）。",
+    "choices": [],
+    "options": [],
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "4 个同样的小正方形摆成 2 行 2 列，就拼成一个大正方形；易错：写成「长方形」（摆成 1 行 4 列才是长方形）。",
+    "subject": "math",
+    "answer": "正方形"
+  },
+  {
+    "id": "mat_p109_q5",
+    "topicId": "mat_p109",
+    "prompt": "用 6 个完全一样的小三角形拼图，每 3 个拼成 1 个大三角形，一共可以拼成几个大三角形？只填数字。",
+    "question": "用 6 个完全一样的小三角形拼图，每 3 个拼成 1 个大三角形，一共可以拼成几个大三角形？只填数字。",
+    "choices": [],
+    "options": [],
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "3 个拼 1 个，6 个里有 2 个 3：6/3=2，所以能拼成 2 个大三角形；易错：用减法算成 3 个。",
+    "subject": "math",
+    "answer": "2",
+    "verify": "6/3"
+  },
+  {
+    "id": "mat_p109_q6",
+    "topicId": "mat_p109",
+    "prompt": "请说明怎样用 4 个完全相同的小正方形拼成一个大正方形，并说一拼成的图形为什么也是正方形。",
+    "question": "请说明怎样用 4 个完全相同的小正方形拼成一个大正方形，并说一拼成的图形为什么也是正方形。",
+    "choices": [],
+    "options": [],
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "拼法：上面 2 个、下面 2 个，对齐摆成 2 行 2 列。理由：每条边都由 2 条小正方形边接成，故四条边相等；每个角仍是小正方形的直角，故四个角都是直角，所以拼成大正方形。易错：把 4 个排成 1 行，得到的是长方形。",
+    "subject": "math",
+    "answer": "把 4 个小正方形摆成 2 行 2 列；大图形的每条边都由 2 条小边接成，四条边一样长；四个角都是直角，所以是正方形"
+  },
+  {
+    "id": "mat_p110_q2",
+    "topicId": "mat_p110",
+    "prompt": "把一些扣子按「颜色」分类，下面哪种做法是对的？",
+    "question": "把一些扣子按「颜色」分类，下面哪种做法是对的？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "把大的放一起、小的放一起"
+      },
+      {
+        "label": "B",
+        "text": "把红色的放一堆、蓝色的放一堆"
+      },
+      {
+        "label": "C",
+        "text": "随便分成两堆"
+      },
+      {
+        "label": "D",
+        "text": "按形状分成三堆"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "把大的放一起、小的放一起"
+      },
+      {
+        "label": "B",
+        "text": "把红色的放一堆、蓝色的放一堆"
+      },
+      {
+        "label": "C",
+        "text": "随便分成两堆"
+      },
+      {
+        "label": "D",
+        "text": "按形状分成三堆"
+      }
+    ],
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "按颜色分类，就要把同样颜色的扣子放在一起；按大小、按形状分都不是颜色这个标准。",
+    "subject": "math",
+    "answer": "B"
+  },
+  {
+    "id": "mat_p110_q3",
+    "topicId": "mat_p110",
+    "prompt": "分类的时候，每一件物品应该放进几组里？",
+    "question": "分类的时候，每一件物品应该放进几组里？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "只放进一组"
+      },
+      {
+        "label": "B",
+        "text": "放进两组"
+      },
+      {
+        "label": "C",
+        "text": "放进三组"
+      },
+      {
+        "label": "D",
+        "text": "放哪组都行"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "只放进一组"
+      },
+      {
+        "label": "B",
+        "text": "放进两组"
+      },
+      {
+        "label": "C",
+        "text": "放进三组"
+      },
+      {
+        "label": "D",
+        "text": "放哪组都行"
+      }
+    ],
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "分类要求不重不漏：每件物品只能属于一组，否则数出来的结果会重复。易错：把两件物品同时放进两组。",
+    "subject": "math",
+    "answer": "A"
+  },
+  {
+    "id": "mat_p110_q4",
+    "topicId": "mat_p110",
+    "prompt": "把 9 个苹果和 6 个梨按种类分开放，苹果一堆、梨一堆，一共分成几堆？只填数字。",
+    "question": "把 9 个苹果和 6 个梨按种类分开放，苹果一堆、梨一堆，一共分成几堆？只填数字。",
+    "choices": [],
+    "options": [],
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "按种类只有苹果和梨两类，所以分成 2 堆；注意问的是「几堆」不是「一共有几个」。",
+    "subject": "math",
+    "answer": "2"
+  },
+  {
+    "id": "mat_p110_q5",
+    "topicId": "mat_p110",
+    "prompt": "桌上有 5 个红球和 7 个白球，按颜色分类放好，红球比白球少几个？只填数字。",
+    "question": "桌上有 5 个红球和 7 个白球，按颜色分类放好，红球比白球少几个？只填数字。",
+    "choices": [],
+    "options": [],
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "分类后数一数：红球 5 个、白球 7 个，7-5=2，所以红球比白球少 2 个；易错：用加法算成 12。",
+    "subject": "math",
+    "answer": "2",
+    "verify": "7-5"
+  },
+  {
+    "id": "mat_p110_q6",
+    "topicId": "mat_p110",
+    "prompt": "说一说「分类」是什么意思，再举例说明怎样按同一个标准把文具分类。",
+    "question": "说一说「分类」是什么意思，再举例说明怎样按同一个标准把文具分类。",
+    "choices": [],
+    "options": [],
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "分类是按某个共同特点把物品分组，同一个标准要一直用到底。例如按种类分文具：铅笔、橡皮、尺子各成一组，每件只进一组，这样分组不重不漏。易错：中途换标准，或一件文具放进两组。",
+    "subject": "math",
+    "answer": "分类就是把有相同特点的物品放在一起；比如按种类分：铅笔放一起、橡皮放一起、尺子放一起；每件文具只能放进一组"
+  },
+  {
+    "id": "mat_p111_q2",
+    "topicId": "mat_p111",
+    "prompt": "同一堆图形，既可以按颜色分，还可以按什么分？",
+    "question": "同一堆图形，既可以按颜色分，还可以按什么分？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "按大小"
+      },
+      {
+        "label": "B",
+        "text": "按形状"
+      },
+      {
+        "label": "C",
+        "text": "按个数"
+      },
+      {
+        "label": "D",
+        "text": "按摆放的左右"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "按大小"
+      },
+      {
+        "label": "B",
+        "text": "按形状"
+      },
+      {
+        "label": "C",
+        "text": "按个数"
+      },
+      {
+        "label": "D",
+        "text": "按摆放的左右"
+      }
+    ],
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "形状是物品本身的特征，可以作为分类标准；个数是数出来的结果，不是物品的特征。",
+    "subject": "math",
+    "answer": "B"
+  },
+  {
+    "id": "mat_p111_q3",
+    "topicId": "mat_p111",
+    "prompt": "同样的 8 个图形，按颜色分成 2 组，按形状分成 4 组，这说明了什么？",
+    "question": "同样的 8 个图形，按颜色分成 2 组，按形状分成 4 组，这说明了什么？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "分类结果一定是固定的"
+      },
+      {
+        "label": "B",
+        "text": "分类标准不同，分出的组数可能不同"
+      },
+      {
+        "label": "C",
+        "text": "只能按颜色分"
+      },
+      {
+        "label": "D",
+        "text": "按形状分错了"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "分类结果一定是固定的"
+      },
+      {
+        "label": "B",
+        "text": "分类标准不同，分出的组数可能不同"
+      },
+      {
+        "label": "C",
+        "text": "只能按颜色分"
+      },
+      {
+        "label": "D",
+        "text": "按形状分错了"
+      }
+    ],
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "同一堆物品换一个标准再分，结果可以不一样：按颜色 2 组、按形状 4 组，两个结果都对。易错：认为只有一个正确答案。",
+    "subject": "math",
+    "answer": "B"
+  },
+  {
+    "id": "mat_p111_q4",
+    "topicId": "mat_p111",
+    "prompt": "把 6 个气球按颜色分是 3 组，按大小分是 2 组，那么按大小分类一共分成几组？只填数字。",
+    "question": "把 6 个气球按颜色分是 3 组，按大小分是 2 组，那么按大小分类一共分成几组？只填数字。",
+    "choices": [],
+    "options": [],
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "题目已经说明按大小分是 2 组，问的正是这个数；易错：把两种标准的组数相加得 5。",
+    "subject": "math",
+    "answer": "2"
+  },
+  {
+    "id": "mat_p111_q5",
+    "topicId": "mat_p111",
+    "prompt": "12 个图形按形状分成 3 组，平均每组有多少个？只填数字。",
+    "question": "12 个图形按形状分成 3 组，平均每组有多少个？只填数字。",
+    "choices": [],
+    "options": [],
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "12 个平均分成 3 组：12/3=4，每组 4 个；易错：用减法算成 9。",
+    "subject": "math",
+    "answer": "4",
+    "verify": "12/3"
+  },
+  {
+    "id": "mat_p111_q6",
+    "topicId": "mat_p111",
+    "prompt": "同一堆物品为什么可以有不同的分法？请举例说明。",
+    "question": "同一堆物品为什么可以有不同的分法？请举例说明。",
+    "choices": [],
+    "options": [],
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "分类标准取自物品的特征，特征不止一个，所以标准可以换。以 6 个扣子为例：按颜色分（红/蓝）得 2 组，按大小分（大/中/小）得 3 组，都对。易错：以为「分法不同」就说明有一次分错了。",
+    "subject": "math",
+    "answer": "因为物品有不同的特征，比如颜色、形状、大小；选不同特征作标准，分组结果就不同；例如 6 个扣子按颜色可以分 2 组，按大小可以分 3 组"
+  },
+  {
+    "id": "mat_p112_q2",
+    "topicId": "mat_p112",
+    "prompt": "把分类的结果一个物品画一个图形、一列一列摞起来表示，这种图叫什么？",
+    "question": "把分类的结果一个物品画一个图形、一列一列摞起来表示，这种图叫什么？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "象形统计图"
+      },
+      {
+        "label": "B",
+        "text": "线段图"
+      },
+      {
+        "label": "C",
+        "text": "立体图"
+      },
+      {
+        "label": "D",
+        "text": "示意图"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "象形统计图"
+      },
+      {
+        "label": "B",
+        "text": "线段图"
+      },
+      {
+        "label": "C",
+        "text": "立体图"
+      },
+      {
+        "label": "D",
+        "text": "示意图"
+      }
+    ],
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "一个物品用一个图形表示、一列一列摆齐，这种图叫象形统计图；它让人一眼看出谁多谁少。",
+    "subject": "math",
+    "answer": "A"
+  },
+  {
+    "id": "mat_p112_q3",
+    "topicId": "mat_p112",
+    "prompt": "用象形统计图表示分类结果时，哪一类的图形摞得最高，说明什么？",
+    "question": "用象形统计图表示分类结果时，哪一类的图形摞得最高，说明什么？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "那一类最少"
+      },
+      {
+        "label": "B",
+        "text": "那一类最多"
+      },
+      {
+        "label": "C",
+        "text": "每一类都一样多"
+      },
+      {
+        "label": "D",
+        "text": "看不出来"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "那一类最少"
+      },
+      {
+        "label": "B",
+        "text": "那一类最多"
+      },
+      {
+        "label": "C",
+        "text": "每一类都一样多"
+      },
+      {
+        "label": "D",
+        "text": "看不出来"
+      }
+    ],
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "象形统计图一个图形代表一个物品，摞得高说明个数多；最矮的那一列就是最少的。",
+    "subject": "math",
+    "answer": "B"
+  },
+  {
+    "id": "mat_p112_q4",
+    "topicId": "mat_p112",
+    "prompt": "分类后苹果有 5 个、梨有 3 个，画象形统计图时，苹果那一列要比梨那一列多画几个图形？只填数字。",
+    "question": "分类后苹果有 5 个、梨有 3 个，画象形统计图时，苹果那一列要比梨那一列多画几个图形？只填数字。",
+    "choices": [],
+    "options": [],
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "苹果 5 个、梨 3 个，5-3=2，苹果那一列多 2 个图形；易错：用加法算成 8。",
+    "subject": "math",
+    "answer": "2"
+  },
+  {
+    "id": "mat_p112_q5",
+    "topicId": "mat_p112",
+    "prompt": "统计结果：红气球 4 个、黄气球 6 个、蓝气球 2 个。画成象形统计图后，最高的一列有多少个图形？只填数字。",
+    "question": "统计结果：红气球 4 个、黄气球 6 个、蓝气球 2 个。画成象形统计图后，最高的一列有多少个图形？只填数字。",
+    "choices": [],
+    "options": [],
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "三列分别画 4 个、6 个、2 个图形，最高的那一列是黄气球，有 6 个；6>4>2。",
+    "subject": "math",
+    "answer": "6",
+    "verify": "6"
+  },
+  {
+    "id": "mat_p112_q6",
+    "topicId": "mat_p112",
+    "prompt": "说一说用象形统计图整理分类结果的步骤，以及从图上能直接看出什么。",
+    "question": "说一说用象形统计图整理分类结果的步骤，以及从图上能直接看出什么。",
+    "choices": [],
+    "options": [],
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "步骤：①按标准分类并数出各类个数；②每类画一列，一个物品对应一个图形，各列底部对齐、从下往上摞；③标出类别。作用：图形高低直接反映数量多少，最多、最少一目了然。易错：不数就随手画，或各列不对齐导致看不出多少。",
+    "subject": "math",
+    "answer": "先分类，再数出每一类有几个；每一类画一列，一个物品画一个图形，从下往上对齐摆；从图上能直接看出哪类最多、哪类最少"
   }
 ]

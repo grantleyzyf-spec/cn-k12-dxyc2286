@@ -542,13 +542,6 @@
 
             // 已出反馈：推进到下一题 / 下一个知识点
             if (phase === 'feedback') {
-                const cur = currentQ();
-                if (cur && cur.type === 'short-answer' && !step.failed && step.idx < step.questions.length) {
-                    // 简答题没自评就直接点「下一题」：按未掌握处理，避免同一题重复出现
-                    step.failed = true;
-                    weakTopics.push(step.topic);
-                    step.idx = step.questions.length;
-                }
                 if (step.idx >= step.questions.length) currentQuestionIndex++;
                 showQuestion();
                 return;
@@ -556,6 +549,17 @@
 
             const q = currentQ();
             if (!q) { currentQuestionIndex++; showQuestion(); return; }
+
+            // 简答题：已给出参考要点（awaitingSelf）但没点自评按钮，又点「下一题」⇒ 记为未掌握
+            if (step.awaitingSelf) {
+                step.awaitingSelf = false;
+                step.failed = true;
+                weakTopics.push(step.topic);
+                step.idx = step.questions.length;
+                phase = 'feedback';
+                btn.textContent = '下一个知识点';
+                return;
+            }
 
             if (phase === 'ask') {
                 const r = gradeCurrent();
@@ -567,12 +571,14 @@
                 askedCount++;
                 if (q.type === 'short-answer' && !r.ok) {
                     // 简答题无法机判：给参考答案，让学生自评
+                    step.awaitingSelf = true;
                     renderFeedback(false, q);
                     const fb = document.getElementById('feedback');
                     const selfCheck = document.createElement('div');
                     selfCheck.className = 'self-check';
                     selfCheck.innerHTML = '<button class="yes">我写到了要点</button><button class="no">我没写到</button>';
                     selfCheck.querySelector('.yes').onclick = () => {
+                        step.awaitingSelf = false;
                         correctCount++;
                         step.idx++;
                         phase = 'feedback';
@@ -580,6 +586,7 @@
                         btn.textContent = '下一题';
                     };
                     selfCheck.querySelector('.no').onclick = () => {
+                        step.awaitingSelf = false;
                         step.failed = true;
                         weakTopics.push(step.topic);
                         step.idx = step.questions.length;

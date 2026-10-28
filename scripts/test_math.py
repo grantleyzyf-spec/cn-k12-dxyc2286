@@ -34,15 +34,28 @@ idx = json.load(open(os.path.join(D, "cn-curriculum-standards.json"), encoding="
 T = {t["id"]: t for t in topics}
 
 # 1 规模与唯一性
-ck("知识点 479 条", len(topics) == 479, len(topics))
+ck("知识点 485 条", len(topics) == 485, len(topics))
 ck("id 唯一", len(T) == len(topics))
 ck("全部 subject=math", all(t.get("subject") == "math" for t in topics))
-ck("诊断题 5 题/点（479×5=2395）", len(qs) == len(topics) * 5, f"{len(qs)} vs {len(topics)*5}")
+ck("诊断题 5 题/点（485×5=2425）", len(qs) == len(topics) * 5, f"{len(qs)} vs {len(topics)*5}")
 ck("题 id 唯一", len({q["id"] for q in qs}) == len(qs))
+
+# 1b 领域口径：只用课标四领域（细分放 tags）
+FOUR = {"数与代数", "图形与几何", "统计与概率", "综合与实践"}
+ck("领域只用课标四领域", {t.get("domain") for t in topics} <= FOUR,
+   sorted({t.get("domain") for t in topics} - FOUR))
+ck("四领域都有点", {t.get("domain") for t in topics} == FOUR,
+   sorted(FOUR - {t.get("domain") for t in topics}))
+ck("tags 首位＝领域", all((t.get("tags") or [None])[0] == t.get("domain") for t in topics),
+   [t["id"] for t in topics if (t.get("tags") or [None])[0] != t.get("domain")][:5])
 
 # 2 册次覆盖 1..14
 grades = {int(t["grade"]) for t in topics}
 ck("年级覆盖 1–14", grades == set(range(1, 15)), sorted(grades))
+g1x = [t for t in topics if int(t["grade"]) == 1 and t.get("semester") == "下"]
+ck("一年级下册 ≥12 点（含认识图形（二）/分类与整理）", len(g1x) >= 12, len(g1x))
+ck("一下覆盖 7 个单元", len({t["chapter"] for t in g1x}) >= 7,
+   sorted({t["chapter"] for t in g1x}))
 
 # 3 课标
 no_std = [t["id"] for t in topics if not t.get("standards")]

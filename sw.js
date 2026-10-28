@@ -1,5 +1,5 @@
 // Service Worker for K-12 Knowledge Graph PWA
-const CACHE_NAME = 'k12-taxonomy-v6';
+const CACHE_NAME = 'k12-taxonomy-v8';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -8,9 +8,11 @@ const ASSETS_TO_CACHE = [
   './children/index.html',
   './children/history.html',
   './children/children.css',
+  './contact/index.html',
   './assets/children.js',
   './assets/site.css',
   './assets/home.js',
+  './assets/og.png',
   './explore/app.js',
   './data/stats.json',
   './data/subjects.json',
