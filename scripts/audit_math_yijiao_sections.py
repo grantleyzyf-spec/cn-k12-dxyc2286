@@ -109,6 +109,29 @@ NOISE_RE = re.compile(r"仅供个人|未经授权|不得另做他用|电子课�
                       r"^\d+$|^[\d\s\.\-—]+$")
 
 
+def keshi_from_txt(txt_path):
+    """解析人工抄录的《每节内容对应页码》TXT → [{unit, name, page}]。
+    认「单元标题行 `一　单元名（第a—b页…）`」与「课时行 `　课时名 页码`」；
+    `（…）` 开头的聚合行、`整理和复习/练习/综合实践活动` 行不计入课时。"""
+    rows, unit = [], None
+    for line in open(txt_path, encoding="utf-8"):
+        t = line.rstrip("\n")
+        m = re.match(r"^([一二三四五六七八九十]+)[　 ]+(.+?)（第\s*\d+\s*[—\-]\s*\d+\s*页", t)
+        if m:
+            unit = m.group(2).strip()
+            continue
+        m = re.match(r"^[　 ]{1,2}([^（\s][^\n]*?)[　 ]+(\d+)(?:\s*[-—]\s*\d+)?$", t)
+        if m and unit:
+            nm = m.group(1).strip()
+            if nm.startswith("（") or nm.startswith("("):
+                continue
+            if re.match(r"^(整理和复习|练习[一二三四五六七八九十\d]*|综合实践活动|总复习)", nm):
+                continue
+            rows.append({"unit": unit, "name": nm.lstrip("*＊").strip(),
+                         "page": int(m.group(2)), "ext": nm.startswith(("*", "＊"))})
+    return rows
+
+
 def keshi_from_pdf(path, unit_names):
     """小学新版：单元标题≈21–30pt；课时标题＝页面靠前、字号 14.5–20pt 的短标题行
     （一二年级 18pt、五六年级 15.2pt，正文只有 10.5–12pt，故这个窗口不会抓正文）。"""
@@ -165,6 +188,7 @@ def main():
         if not ts:
             L.append(f"## {name}（图谱无此册数据，跳过）\n")
             continue
+        txts = []
         if base == CH:
             secs = jie_from_toc(key)
             gran = "小节"
@@ -173,7 +197,12 @@ def main():
             if not pdfs:
                 pdfs = [p for p in glob.glob(f"{base}/*.pdf") if name[:3] in p]
             units = sorted({t["chapter"].split(" ", 1)[1].split(" ", 1)[-1] for t in ts})
-            if pdfs:
+            txts = [x for x in glob.glob(f"{base}/{name}/教学设计/*每节内容对应页码*.txt")
+                    if "草稿" not in os.path.basename(x)]
+            if txts:
+                secs = keshi_from_txt(txts[0])
+                gran = "课时(TXT)"
+            elif pdfs:
                 secs, unit_sz, ke_sz = keshi_from_pdf(pdfs[0], units)
             else:
                 secs, unit_sz, ke_sz = [], 24.0, 18.0

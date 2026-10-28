@@ -68374,5 +68374,407 @@
     "difficulty": "hard",
     "explanation": "四分位数是「位置统计量」，只看数据排在第几成，不用算总和，因此对极端值稳健。比较两组数据时，IQR 小说明中间一半更集中；看 Q1/Q3 还能发现偏态。平均数的缺点正是会被离群值拉走，这也是要用中位数与四分位数补充的原因。",
     "subject": "math"
+  },
+  {
+    "id": "mat_p961_q2",
+    "topicId": "mat_p961",
+    "prompt": "求组合图形的面积，常用的两种方法是？",
+    "question": "求组合图形的面积，常用的两种方法是？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "分割法和补全法"
+      },
+      {
+        "label": "B",
+        "text": "加减法和乘除法"
+      },
+      {
+        "label": "C",
+        "text": "平移法和旋转法"
+      },
+      {
+        "label": "D",
+        "text": "估算法和测量法"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "分割法和补全法"
+      },
+      {
+        "label": "B",
+        "text": "加减法和乘除法"
+      },
+      {
+        "label": "C",
+        "text": "平移法和旋转法"
+      },
+      {
+        "label": "D",
+        "text": "估算法和测量法"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "组合图形由几个基本图形拼成：把它分成几块（分割法）分别求面积再相加，或补成一个大图形再减去多补的部分（补全法）。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_p961_q3",
+    "topicId": "mat_p961",
+    "prompt": "一个长方形里去掉一个三角形（如图阴影部分），求阴影面积的正确做法是？",
+    "question": "一个长方形里去掉一个三角形（如图阴影部分），求阴影面积的正确做法是？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "长方形面积 − 三角形面积"
+      },
+      {
+        "label": "B",
+        "text": "长方形面积 + 三角形面积"
+      },
+      {
+        "label": "C",
+        "text": "长方形周长 − 三角形周长"
+      },
+      {
+        "label": "D",
+        "text": "三角形面积 × 2"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "长方形面积 − 三角形面积"
+      },
+      {
+        "label": "B",
+        "text": "长方形面积 + 三角形面积"
+      },
+      {
+        "label": "C",
+        "text": "长方形周长 − 三角形周长"
+      },
+      {
+        "label": "D",
+        "text": "三角形面积 × 2"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "从整体里挖去一块，用「整体减部分」：阴影面积 = 长方形面积 − 三角形面积。混淆成加法是常见错误。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_p961_q4",
+    "topicId": "mat_p961",
+    "prompt": "把组合图形分割成两个长方形，一个面积 24 平方厘米，另一个 18 平方厘米，组合图形面积是___平方厘米（只填数字）。",
+    "question": "把组合图形分割成两个长方形，一个面积 24 平方厘米，另一个 18 平方厘米，组合图形面积是___平方厘米（只填数字）。",
+    "choices": [],
+    "options": [],
+    "answer": "42",
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "分割法把面积相加：24+18 = 42（平方厘米）。易错：把两块相减得 6。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_p961_q5",
+    "topicId": "mat_p961",
+    "prompt": "一个正方形边长 6 厘米，在其中一角剪去一个直角边为 2 厘米的等腰直角三角形，剩下部分的面积是多少平方厘米？只填数字。",
+    "question": "一个正方形边长 6 厘米，在其中一角剪去一个直角边为 2 厘米的等腰直角三角形，剩下部分的面积是多少平方厘米？只填数字。",
+    "choices": [],
+    "options": [],
+    "answer": "34",
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "正方形面积 6×6=36，三角形面积 2×2÷2=2，剩余 36-2=34（平方厘米），即 6*6-2*2/2=34。",
+    "subject": "math",
+    "verify": "6*6-2*2/2"
+  },
+  {
+    "id": "mat_p961_q6",
+    "topicId": "mat_p961",
+    "prompt": "请说明分割法与补全法各自的适用情形，并各举一例。",
+    "question": "请说明分割法与补全法各自的适用情形，并各举一例。",
+    "choices": [],
+    "options": [],
+    "answer": "分割法适用于图形能干净地分成几个学过的基本图形（如 L 形分成两个长方形）；补全法适用于图形缺一块、补成大图形后更容易算（如从长方形中挖去三角形）；两种方法都要先看清边界再动笔，算完检查单位",
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "选法看「哪条辅助线最短、切出的图形是否有现成公式」。分割法：切口不穿越未知区域；补全法：补出的整体是标准图形、多补部分好算。两种方法可互相验算，结果应一致。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_p962_q2",
+    "topicId": "mat_p962",
+    "prompt": "用图形的运动设计图案，主要用到哪三种变换？",
+    "question": "用图形的运动设计图案，主要用到哪三种变换？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "平移、旋转、轴对称"
+      },
+      {
+        "label": "B",
+        "text": "加、减、乘"
+      },
+      {
+        "label": "C",
+        "text": "测量、画图、裁剪"
+      },
+      {
+        "label": "D",
+        "text": "估算、验算、比较"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "平移、旋转、轴对称"
+      },
+      {
+        "label": "B",
+        "text": "加、减、乘"
+      },
+      {
+        "label": "C",
+        "text": "测量、画图、裁剪"
+      },
+      {
+        "label": "D",
+        "text": "估算、验算、比较"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "图案设计的三把工具就是平移、旋转（含绕点旋转）与轴对称（翻折），它们都不改变图形的形状和大小。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_p962_q3",
+    "topicId": "mat_p962",
+    "prompt": "把一个基本图形沿某条直线翻折得到另一个图形，这种变换是？",
+    "question": "把一个基本图形沿某条直线翻折得到另一个图形，这种变换是？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "轴对称（翻折）"
+      },
+      {
+        "label": "B",
+        "text": "平移"
+      },
+      {
+        "label": "C",
+        "text": "旋转"
+      },
+      {
+        "label": "D",
+        "text": "放大"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "轴对称（翻折）"
+      },
+      {
+        "label": "B",
+        "text": "平移"
+      },
+      {
+        "label": "C",
+        "text": "旋转"
+      },
+      {
+        "label": "D",
+        "text": "放大"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "沿直线翻折得到的是轴对称图形，这条直线就是对称轴。平移是沿方向直移、旋转是绕点转动，都不产生镜像。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_p962_q4",
+    "topicId": "mat_p962",
+    "prompt": "把图形向右平移 4 格、再向右平移 3 格，相当于向右平移___格（只填数字）。",
+    "question": "把图形向右平移 4 格、再向右平移 3 格，相当于向右平移___格（只填数字）。",
+    "choices": [],
+    "options": [],
+    "answer": "7",
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "同方向两次平移可合并：4+3 = 7（格）。这与旋转不能简单相加不同。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_p962_q5",
+    "topicId": "mat_p962",
+    "prompt": "把一个图案绕它的中心顺时针旋转 90°，连续旋转 4 次回到原样。每次旋转多少度、共转多少度？请填 4 次累计的度数。",
+    "question": "把一个图案绕它的中心顺时针旋转 90°，连续旋转 4 次回到原样。每次旋转多少度、共转多少度？请填 4 次累计的度数。",
+    "choices": [],
+    "options": [],
+    "answer": "360",
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "每次 90°，4 次共 90×4=360（度），正好回到原来方向，即 90*4=360。",
+    "subject": "math",
+    "verify": "90*4"
+  },
+  {
+    "id": "mat_p962_q6",
+    "topicId": "mat_p962",
+    "prompt": "请说明怎样用轴对称与旋转设计一个花边图案。",
+    "question": "请说明怎样用轴对称与旋转设计一个花边图案。",
+    "choices": [],
+    "options": [],
+    "answer": "先选定一个基本图形，画一条对称轴，用轴对称得到相邻的镜像图形；再选一个旋转中心，把基本图形绕它按固定角度重复旋转，得到环绕的图案；最后检查各处变换是否一致，整幅图案就由这两种运动组合而成",
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "设计思路是「以一个基本图形为单位，用变换批量复制」。轴对称负责镜像（左右/上下成对），旋转负责环绕（绕中心等角度重复），平移负责成排。三种配合可做出花边、瓷砖纹样等。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_p963_q2",
+    "topicId": "mat_p963",
+    "prompt": "「太阳从东方升起」这件事属于？",
+    "question": "「太阳从东方升起」这件事属于？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "一定发生"
+      },
+      {
+        "label": "B",
+        "text": "可能发生"
+      },
+      {
+        "label": "C",
+        "text": "不可能发生"
+      },
+      {
+        "label": "D",
+        "text": "无法判断"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "一定发生"
+      },
+      {
+        "label": "B",
+        "text": "可能发生"
+      },
+      {
+        "label": "C",
+        "text": "不可能发生"
+      },
+      {
+        "label": "D",
+        "text": "无法判断"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "这是确定现象，必然发生，用「一定」描述。可能性只用于随机现象，如「明天下雨」。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_p963_q3",
+    "topicId": "mat_p963",
+    "prompt": "袋子里有 3 个红球、1 个白球（除颜色外都相同），任意摸一个，摸到哪种球的可能性大？",
+    "question": "袋子里有 3 个红球、1 个白球（除颜色外都相同），任意摸一个，摸到哪种球的可能性大？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "红球"
+      },
+      {
+        "label": "B",
+        "text": "白球"
+      },
+      {
+        "label": "C",
+        "text": "一样大"
+      },
+      {
+        "label": "D",
+        "text": "无法比较"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "红球"
+      },
+      {
+        "label": "B",
+        "text": "白球"
+      },
+      {
+        "label": "C",
+        "text": "一样大"
+      },
+      {
+        "label": "D",
+        "text": "无法比较"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "球除颜色外完全相同，个数多的那种被摸到的可能性更大：红球 3 个多于白球 1 个，所以摸到红球的可能性大。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_p963_q4",
+    "topicId": "mat_p963",
+    "prompt": "一个正方体骰子，任意掷一次，出现的点数有___种可能（只填数字）。",
+    "question": "一个正方体骰子，任意掷一次，出现的点数有___种可能（只填数字）。",
+    "choices": [],
+    "options": [],
+    "answer": "6",
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "骰子六个面分别是 1~6，共有 6 种可能结果，且每个结果出现的可能性相同。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_p963_q5",
+    "topicId": "mat_p963",
+    "prompt": "袋子里有 2 个红球和 6 个白球，任意摸一个，可能的颜色共有几种？只填数字。",
+    "question": "袋子里有 2 个红球和 6 个白球，任意摸一个，可能的颜色共有几种？只填数字。",
+    "choices": [],
+    "options": [],
+    "answer": "2",
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "只按颜色分类，可能结果只有「红」或「白」2 种，即 2 种可能结果（球的总数 8 个不决定结果种数）。易错：答 8。",
+    "subject": "math",
+    "verify": "2"
+  },
+  {
+    "id": "mat_p963_q6",
+    "topicId": "mat_p963",
+    "prompt": "请说明怎样判断一件事件是「一定」「可能」还是「不可能」发生，并各举一例。",
+    "question": "请说明怎样判断一件事件是「一定」「可能」还是「不可能」发生，并各举一例。",
+    "choices": [],
+    "options": [],
+    "answer": "看条件是否允许：在给定条件下必然发生的用「一定」（如太阳东升）；必然不发生的用「不可能」（如袋子里只有红球却摸出蓝球）；可能发生也可能不发生的用「可能」（如掷骰子得到 6），这就是随机现象",
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "判断三步：①列出所有可能结果；②看目标事件是否一定在结果里（一定）、一定不在（不可能）、或部分在（可能）；③对「可能」事件，再用结果个数或面积比较可能性大小。",
+    "subject": "math"
   }
 ]
