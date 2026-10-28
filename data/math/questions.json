@@ -68106,5 +68106,273 @@
     "difficulty": "hard",
     "explanation": "建立要点：三轴交于原点、两两垂直、方向按右手系、单位长度一致。坐标含义是「沿 x、y、z 三个方向的位移分量」，因此距离、中点、对称点都能用坐标运算处理，这也是用向量法解立体几何的前提。",
     "subject": "math"
+  },
+  {
+    "id": "mat_p951_q2",
+    "topicId": "mat_p951",
+    "prompt": "下列各式正确的是哪一个？",
+    "question": "下列各式正确的是哪一个？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "2^(-3)=1/8"
+      },
+      {
+        "label": "B",
+        "text": "2^(-3)=-8"
+      },
+      {
+        "label": "C",
+        "text": "2^(-3)=-1/8"
+      },
+      {
+        "label": "D",
+        "text": "2^(-3)=0"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "2^(-3)=1/8"
+      },
+      {
+        "label": "B",
+        "text": "2^(-3)=-8"
+      },
+      {
+        "label": "C",
+        "text": "2^(-3)=-1/8"
+      },
+      {
+        "label": "D",
+        "text": "2^(-3)=0"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "负整数指数幂 a^(-n)=1/a^n（a≠0），所以 2^(-3)=1/2³=1/8。-8 是把负指数当成负的幂，0 混淆了底数为 0。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_p951_q3",
+    "topicId": "mat_p951",
+    "prompt": "把 0.000 031 用科学记数法表示，正确的是哪一个？",
+    "question": "把 0.000 031 用科学记数法表示，正确的是哪一个？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "3.1×10^(-5)"
+      },
+      {
+        "label": "B",
+        "text": "3.1×10^5"
+      },
+      {
+        "label": "C",
+        "text": "31×10^(-6)"
+      },
+      {
+        "label": "D",
+        "text": "0.31×10^(-4)"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "3.1×10^(-5)"
+      },
+      {
+        "label": "B",
+        "text": "3.1×10^5"
+      },
+      {
+        "label": "C",
+        "text": "31×10^(-6)"
+      },
+      {
+        "label": "D",
+        "text": "0.31×10^(-4)"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "0.000 031 = 3.1×10^(-5)：小数点后到 3 之间有 5 位，指数取 -5。3.1×10^5 把它放大成 310000；31×10^(-6) 与 0.31×10^(-4) 都不满足 1≤|a|<10。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_p951_q4",
+    "topicId": "mat_p951",
+    "prompt": "计算：5^(-2) = ___（填分数，如 1/25）。",
+    "question": "计算：5^(-2) = ___（填分数，如 1/25）。",
+    "choices": [],
+    "options": [],
+    "answer": "1/25",
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "5^(-2)=1/5²=1/25。易错：写成 -25 或 -1/25，把负指数误当成取相反数。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_p951_q5",
+    "topicId": "mat_p951",
+    "prompt": "计算 (1/3)^(-2) 的值是多少？只填数字。",
+    "question": "计算 (1/3)^(-2) 的值是多少？只填数字。",
+    "choices": [],
+    "options": [],
+    "answer": "9",
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "(1/3)^(-2)=1/(1/3)²=1/(1/9)=9（即 3**2）。易错：算成 1/9 或 -9。",
+    "subject": "math",
+    "verify": "3**2"
+  },
+  {
+    "id": "mat_p951_q6",
+    "topicId": "mat_p951",
+    "prompt": "请说明负整数指数幂的意义，以及整数指数幂的三条运算性质在负指数时是否仍然适用。",
+    "question": "请说明负整数指数幂的意义，以及整数指数幂的三条运算性质在负指数时是否仍然适用。",
+    "choices": [],
+    "options": [],
+    "answer": "a^(-n)=1/a^n（a≠0），即负指数表示取倒数后取正指数幂；同底数幂相乘、幂的乘方、积的乘方三条性质对整数指数（含负数）仍然成立，如 a^m·a^n=a^(m+n) 在 m、n 为负整数时也成立",
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "负指数不是「负的幂」而是「倒数」：a^(-n)=1/a^n。正因为这样定义，整数指数幂的运算性质才能统一到负数指数上，幂的运算法则在整数范围内保持形式不变，这也是把分式运算化为整式指数运算的依据。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_p952_q2",
+    "topicId": "mat_p952",
+    "prompt": "把 7 个数从小到大排列后，中位数是第几个数？",
+    "question": "把 7 个数从小到大排列后，中位数是第几个数？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "第 3 个"
+      },
+      {
+        "label": "B",
+        "text": "第 4 个"
+      },
+      {
+        "label": "C",
+        "text": "第 5 个"
+      },
+      {
+        "label": "D",
+        "text": "第 1 个"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "第 3 个"
+      },
+      {
+        "label": "B",
+        "text": "第 4 个"
+      },
+      {
+        "label": "C",
+        "text": "第 5 个"
+      },
+      {
+        "label": "D",
+        "text": "第 1 个"
+      }
+    ],
+    "answer": "B",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "7 个数据的中位数是第 4 个（正中间那个）。(7+1)/2=4，所以取第 4 个。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_p952_q3",
+    "topicId": "mat_p952",
+    "prompt": "四分位数把一组从小到大排列的数据大致分成几部分？",
+    "question": "四分位数把一组从小到大排列的数据大致分成几部分？",
+    "choices": [
+      {
+        "label": "A",
+        "text": "两部分"
+      },
+      {
+        "label": "B",
+        "text": "三部分"
+      },
+      {
+        "label": "C",
+        "text": "四部分"
+      },
+      {
+        "label": "D",
+        "text": "五部分"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "两部分"
+      },
+      {
+        "label": "B",
+        "text": "三部分"
+      },
+      {
+        "label": "C",
+        "text": "四部分"
+      },
+      {
+        "label": "D",
+        "text": "五部分"
+      }
+    ],
+    "answer": "C",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "下四分位数 Q1、中位数 Q2、上四分位数 Q3 把数据分成四部分，每部分约含 1/4 的数据，这正是「四分位数」名称的由来。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_p952_q4",
+    "topicId": "mat_p952",
+    "prompt": "已知一组数据的中位数是 12，下四分位数是 8，上四分位数是 20，则四分位距（Q3−Q1）= ___（只填数字）。",
+    "question": "已知一组数据的中位数是 12，下四分位数是 8，上四分位数是 20，则四分位距（Q3−Q1）= ___（只填数字）。",
+    "choices": [],
+    "options": [],
+    "answer": "12",
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "四分位距 IQR=Q3−Q1=20-8=12。它只用到中间 50% 的数据，因此不受极端值影响。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_p952_q5",
+    "topicId": "mat_p952",
+    "prompt": "数据 2, 4, 4, 6, 8, 10, 12, 12 共 8 个，中位数是多少？只填数字。",
+    "question": "数据 2, 4, 4, 6, 8, 10, 12, 12 共 8 个，中位数是多少？只填数字。",
+    "choices": [],
+    "options": [],
+    "answer": "7",
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "8 个数据的中位数取第 4、5 个的平均：(6+8)/2=7。易错：直接取第 4 个 6。",
+    "subject": "math",
+    "verify": "(6+8)/2"
+  },
+  {
+    "id": "mat_p952_q6",
+    "topicId": "mat_p952",
+    "prompt": "请说明四分位数的作用，以及为什么它比平均数更能反映「中间部分」的分布。",
+    "question": "请说明四分位数的作用，以及为什么它比平均数更能反映「中间部分」的分布。",
+    "choices": [],
+    "options": [],
+    "answer": "四分位数把排列好的数据分成四段，Q1、Q2（中位数）、Q3 分别对应 25%、50%、75% 位置；四分位距 IQR=Q3−Q1 只反映中间 50% 数据的集中程度，不受极端值影响，而平均数会被极端值拉偏",
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "四分位数是「位置统计量」，只看数据排在第几成，不用算总和，因此对极端值稳健。比较两组数据时，IQR 小说明中间一半更集中；看 Q1/Q3 还能发现偏态。平均数的缺点正是会被离群值拉走，这也是要用中位数与四分位数补充的原因。",
+    "subject": "math"
   }
 ]

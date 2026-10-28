@@ -34,7 +34,7 @@ idx = json.load(open(os.path.join(D, "cn-curriculum-standards.json"), encoding="
 T = {t["id"]: t for t in topics}
 
 # 1 规模与唯一性
-ck("知识点 510 条", len(topics) == 510, len(topics))
+ck("知识点 512 条", len(topics) == 512, len(topics))
 ck("id 唯一", len(T) == len(topics))
 ck("全部 subject=math", all(t.get("subject") == "math" for t in topics))
 ck("诊断题 5 题/点（485×5=2425）", len(qs) == len(topics) * 5, f"{len(qs)} vs {len(topics)*5}")
