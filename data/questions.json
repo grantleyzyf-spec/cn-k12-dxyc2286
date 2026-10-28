@@ -80131,6 +80131,926 @@
     "subject": "math"
   },
   {
+    "id": "mat_h151_q2",
+    "topicId": "mat_h151",
+    "prompt": "直线与平面平行的判定定理是哪一个？",
+    "question": "直线与平面平行的判定定理是哪一个？",
+    "options": [
+      {
+        "label": "A",
+        "text": "平面外一条直线与此平面内的一条直线平行，则该直线与此平面平行"
+      },
+      {
+        "label": "B",
+        "text": "一条直线与平面内两条直线都平行，则该直线与此平面平行"
+      },
+      {
+        "label": "C",
+        "text": "两个平面内各有一条直线平行，则这两个平面平行"
+      },
+      {
+        "label": "D",
+        "text": "一条直线与平面没有公共点，则它与平面内所有直线都平行"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "判定定理要求「平面外」的直线与平面内「一条」直线平行即可（线线平行 ⇒ 线面平行）。B 少「相交」条件、C 是面面平行的错误判据、D 把结论说反了（线面平行时它与平面内无数条直线平行，但并非所有直线）。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h151_q3",
+    "topicId": "mat_h151",
+    "prompt": "已知直线 a∥平面 α，直线 b⊂α，则 a 与 b 的位置关系是？",
+    "question": "已知直线 a∥平面 α，直线 b⊂α，则 a 与 b 的位置关系是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "一定平行"
+      },
+      {
+        "label": "B",
+        "text": "一定异面"
+      },
+      {
+        "label": "C",
+        "text": "平行或异面"
+      },
+      {
+        "label": "D",
+        "text": "一定相交"
+      }
+    ],
+    "answer": "C",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "线面平行只能推出 a 与 α 无公共点，因此 a 与 α 内的直线 b 不可能相交，只能是平行或异面；要得到平行还需要额外条件（如 b 在过 a 的平面与 α 的交线上）。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h151_q4",
+    "topicId": "mat_h151",
+    "prompt": "两个平面平行的判定定理：如果一个平面内有两条___直线都平行于另一个平面，那么这两个平面平行（填「相交」或「平行」）。",
+    "question": "两个平面平行的判定定理：如果一个平面内有两条___直线都平行于另一个平面，那么这两个平面平行（填「相交」或「平行」）。",
+    "answer": "相交",
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "面面平行判定定理要求平面内两条直线**相交**（不能平行）：两条平行线确定的仍是「一条带状区域」，无法保证整个平面平行。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h151_q5",
+    "topicId": "mat_h151",
+    "prompt": "一个正方体 ABCD-A1B1C1D1 中，与平面 ABCD 平行的棱共有多少条（不含面内棱）？只填数字。",
+    "question": "一个正方体 ABCD-A1B1C1D1 中，与平面 ABCD 平行的棱共有多少条（不含面内棱）？只填数字。",
+    "answer": "4",
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "与下底面平行的棱是上底面的 4 条棱 A1B1、B1C1、C1D1、D1A1；侧棱与底面相交、底面棱在面内，都不算。即 8-4=4 条（用 4*1 校验）。",
+    "verify": "8-4",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h151_q6",
+    "topicId": "mat_h151",
+    "prompt": "请写出线面平行的判定定理与性质定理，并说明证明平行关系的常见思路。",
+    "question": "请写出线面平行的判定定理与性质定理，并说明证明平行关系的常见思路。",
+    "answer": "判定定理：平面外一条直线与此平面内的一条直线平行，则该直线与此平面平行；性质定理：一条直线与一个平面平行，则过这条直线的任一平面与此平面的交线与该直线平行；思路是「线线平行 → 线面平行 → 面面平行」逐级转化",
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "判定（线线⇒线面）：平面外直线平行于面内一条直线；性质（线面⇒线线）：过该直线的平面与已知平面的交线与之平行。证明时先把面面平行化为线面平行，再化为线线平行，找「第三条线」是关键。易错：漏掉「平面外」这一条件。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h152_q2",
+    "topicId": "mat_h152",
+    "prompt": "直线与平面垂直的判定定理是哪一个？",
+    "question": "直线与平面垂直的判定定理是哪一个？",
+    "options": [
+      {
+        "label": "A",
+        "text": "一条直线与平面内的一条直线垂直，则该直线与平面垂直"
+      },
+      {
+        "label": "B",
+        "text": "一条直线与平面内两条相交直线都垂直，则该直线与平面垂直"
+      },
+      {
+        "label": "C",
+        "text": "一条直线与平面内两条平行直线都垂直，则该直线与平面垂直"
+      },
+      {
+        "label": "D",
+        "text": "一条直线垂直于平面内无数条直线，则该直线与平面垂直"
+      }
+    ],
+    "answer": "B",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "判定定理必须是平面内**两条相交**直线（相交保证方向被张成整个平面）。两条平行线不能确定平面方向；「无数条」若都是平行线同样不行。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h152_q3",
+    "topicId": "mat_h152",
+    "prompt": "已知 PA⊥平面 ABC，则下列结论一定成立的是？",
+    "question": "已知 PA⊥平面 ABC，则下列结论一定成立的是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "PA⊥BC"
+      },
+      {
+        "label": "B",
+        "text": "PB⊥AC"
+      },
+      {
+        "label": "C",
+        "text": "PC⊥AB"
+      },
+      {
+        "label": "D",
+        "text": "AB⊥BC"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "线面垂直的性质：若一条直线垂直于一个平面，则它垂直于平面内的任意一条直线。BC⊂平面 ABC，所以 PA⊥BC；PB⊥AC、PC⊥AB 需要额外条件（如 AC⊥BC 等）才成立。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h152_q4",
+    "topicId": "mat_h152",
+    "prompt": "两个平面垂直的判定定理：如果一个平面经过另一个平面的一条___，那么这两个平面垂直（填「垂线」或「平行线」）。",
+    "question": "两个平面垂直的判定定理：如果一个平面经过另一个平面的一条___，那么这两个平面垂直（填「垂线」或「平行线」）。",
+    "answer": "垂线",
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "面面垂直判定定理：一个平面过另一个平面的垂线，则两平面垂直。这里的「垂线」指垂直于另一个平面的直线，即该直线垂直于另一平面内的两条相交直线。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h152_q5",
+    "topicId": "mat_h152",
+    "prompt": "正方体 ABCD-A1B1C1D1 中，与棱 AA1 垂直的棱共有多少条？只填数字。",
+    "question": "正方体 ABCD-A1B1C1D1 中，与棱 AA1 垂直的棱共有多少条？只填数字。",
+    "answer": "8",
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "AA1 垂直于底面与顶面内的 8 条棱（ABCD 的 4 条 + A1B1C1D1 的 4 条）；侧棱 BB1、CC1、DD1 与 AA1 平行，不算垂直。即 4+4=8 条。",
+    "verify": "4+4",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h152_q6",
+    "topicId": "mat_h152",
+    "prompt": "请说明线面垂直与面面垂直之间的转化关系，并各举一个判定依据。",
+    "question": "请说明线面垂直与面面垂直之间的转化关系，并各举一个判定依据。",
+    "answer": "线面垂直 ⇒ 面面垂直：一个平面经过另一个平面的垂线，则两平面垂直；面面垂直 ⇒ 线面垂直：两平面垂直，则一个平面内垂直于交线的直线垂直于另一个平面；两者可互相转化，证明时常用「线线垂直 → 线面垂直 → 面面垂直」",
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "判定链：线线垂直（相交）⇒ 线面垂直 ⇒ 面面垂直。反向性质：面面垂直时，在其中一个平面内作交线的垂线，即得另一平面的垂线，从而回到线面垂直。易错：判定线面垂直时用两条平行线或没用「相交」。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h153_q2",
+    "topicId": "mat_h153",
+    "prompt": "关于频率与概率的关系，下列说法正确的是？",
+    "question": "关于频率与概率的关系，下列说法正确的是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "频率就是概率，两者完全相同"
+      },
+      {
+        "label": "B",
+        "text": "试验次数很大时，频率会稳定在概率附近"
+      },
+      {
+        "label": "C",
+        "text": "概率随试验次数变化而变化"
+      },
+      {
+        "label": "D",
+        "text": "频率越小概率越大"
+      }
+    ],
+    "answer": "B",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "概率是确定的常数，频率是试验结果算出的比值、会波动；试验次数很大时频率趋近概率（频率的稳定性），但二者不能画等号。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h153_q3",
+    "topicId": "mat_h153",
+    "prompt": "抛一枚质地均匀的硬币，前 5 次都是正面朝上，第 6 次正面朝上的概率是？",
+    "question": "抛一枚质地均匀的硬币，前 5 次都是正面朝上，第 6 次正面朝上的概率是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "大于 1/2"
+      },
+      {
+        "label": "B",
+        "text": "小于 1/2"
+      },
+      {
+        "label": "C",
+        "text": "等于 1/2"
+      },
+      {
+        "label": "D",
+        "text": "无法确定"
+      }
+    ],
+    "answer": "C",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "每次抛掷相互独立，硬币均匀则每次正面概率都是 1/2；前面出现的结果不会「记忆」到下一次，这是常见的「赌徒谬误」。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h153_q4",
+    "topicId": "mat_h153",
+    "prompt": "用频率估计概率的前提是：试验次数要足够___（填「多」或「少」）。",
+    "question": "用频率估计概率的前提是：试验次数要足够___（填「多」或「少」）。",
+    "answer": "多",
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "频率的稳定性只有在试验次数很大时才体现；次数太少时频率波动大，用它估计概率不可靠。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h153_q5",
+    "topicId": "mat_h153",
+    "prompt": "某射手射击 200 次，命中 170 次，用频率估计他命中的概率是多少？（填小数）",
+    "question": "某射手射击 200 次，命中 170 次，用频率估计他命中的概率是多少？（填小数）",
+    "answer": "0.85",
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "频率 = 命中次数 / 射击次数 = 170/200 = 0.85，用 170/200 计算即 0.85。易错：用 200/170 算成 1.18（大于 1，不可能是概率）。",
+    "verify": "170/200",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h153_q6",
+    "topicId": "mat_h153",
+    "prompt": "请说明什么是随机模拟，并说明它为什么能用来估计概率。",
+    "question": "请说明什么是随机模拟，并说明它为什么能用来估计概率。",
+    "answer": "随机模拟是用计算器、计算机或随机数表大量重复某个随机试验的方法；重复次数足够多时，事件发生的频率会稳定在概率附近；所以可以用模拟得到的频率估计概率",
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "随机模拟把「掷硬币、抽球」等试验交给机器重复成千上万次，统计事件发生次数。依据仍是频率的稳定性：次数越多，频率越接近真实概率。它适合实物试验难以大量重复或成本高的情形。易错：次数太少就下结论。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h154_q2",
+    "topicId": "mat_h154",
+    "prompt": "复数 z = 1 + √3 i 的三角形式是哪一个？",
+    "question": "复数 z = 1 + √3 i 的三角形式是哪一个？",
+    "options": [
+      {
+        "label": "A",
+        "text": "2(cos60°+isin60°)"
+      },
+      {
+        "label": "B",
+        "text": "2(cos30°+isin30°)"
+      },
+      {
+        "label": "C",
+        "text": "4(cos60°+isin60°)"
+      },
+      {
+        "label": "D",
+        "text": "√3(cos30°+isin30°)"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "模 r=√(1+3)=2，辐角满足 cosθ=1/2、sinθ=√3/2，故 θ=60°，所以 z=2(cos60°+isin60°)。易错：把模算成 1+3=4，或把辐角取成 30°。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h154_q3",
+    "topicId": "mat_h154",
+    "prompt": "两个复数相乘，用三角形式计算时遵循什么规律？",
+    "question": "两个复数相乘，用三角形式计算时遵循什么规律？",
+    "options": [
+      {
+        "label": "A",
+        "text": "模相乘，辐角相加"
+      },
+      {
+        "label": "B",
+        "text": "模相加，辐角相乘"
+      },
+      {
+        "label": "C",
+        "text": "模相乘，辐角相减"
+      },
+      {
+        "label": "D",
+        "text": "模相除，辐角相加"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "z1z2 = r1r2[cos(θ1+θ2)+isin(θ1+θ2)]，即模相乘、辐角相加；除法则是模相除、辐角相减。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h154_q4",
+    "topicId": "mat_h154",
+    "prompt": "复数 z = 2(cos90°+isin90°) 的代数形式是 2i，它的模是___（只填数字）。",
+    "question": "复数 z = 2(cos90°+isin90°) 的代数形式是 2i，它的模是___（只填数字）。",
+    "answer": "2",
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "三角形式 r(cosθ+isinθ) 中的 r 就是模，所以模为 2；代入 θ=90° 得 2(0+i)=2i，验证 |2i|=2。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h154_q5",
+    "topicId": "mat_h154",
+    "prompt": "z1=2(cos30°+isin30°)，z2=3(cos60°+isin60°)，则 z1z2 的模是多少？只填数字。",
+    "question": "z1=2(cos30°+isin30°)，z2=3(cos60°+isin60°)，则 z1z2 的模是多少？只填数字。",
+    "answer": "6",
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "模相乘：2*3=6。辐角相加得 90°，故 z1z2=6(cos90°+isin90°)=6i，模仍是 6。易错：把模也相加得 5。",
+    "verify": "2*3",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h154_q6",
+    "topicId": "mat_h154",
+    "prompt": "请说明复数三角形式中 r 与 θ 的含义，以及乘法的几何意义。",
+    "question": "请说明复数三角形式中 r 与 θ 的含义，以及乘法的几何意义。",
+    "answer": "r 是复数的模，表示对应向量的长度；θ 是辐角，表示向量与实轴正方向的夹角；两复数相乘时模相乘、辐角相加，几何上相当于把向量先旋转 θ2 再伸缩 r2",
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "三角形式 z=r(cosθ+isinθ) 把复数写成「长度 + 方向」。乘法：模相乘 → 长度伸缩；辐角相加 → 方向旋转。这正是复数乘法能表示平面旋转与伸缩的原因（如乘 i 相当于逆时针转 90°）。易错：认为乘法只改变长度。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h155_q2",
+    "topicId": "mat_h155",
+    "prompt": "用数学归纳法证明命题时，第一步（奠基）要做什么？",
+    "question": "用数学归纳法证明命题时，第一步（奠基）要做什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "证明 n=k 时命题成立"
+      },
+      {
+        "label": "B",
+        "text": "证明 n 取第一个值时命题成立"
+      },
+      {
+        "label": "C",
+        "text": "假设 n=k 时命题成立"
+      },
+      {
+        "label": "D",
+        "text": "证明 n→∞ 时命题成立"
+      }
+    ],
+    "answer": "B",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "数学归纳法第一步是验证命题对第一个正整数（通常 n=1 或 n=2）成立，第二步才是「假设 n=k 成立，证明 n=k+1 成立」。两步缺一不可。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h155_q3",
+    "topicId": "mat_h155",
+    "prompt": "数学归纳法的第二步（递推步）具体要做什么？",
+    "question": "数学归纳法的第二步（递推步）具体要做什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "假设 n=k（k≥n₀）时命题成立，证明 n=k+1 时命题也成立"
+      },
+      {
+        "label": "B",
+        "text": "直接验证 n=k+1 时命题成立"
+      },
+      {
+        "label": "C",
+        "text": "假设 n=k+1 成立，推出 n=k 成立"
+      },
+      {
+        "label": "D",
+        "text": "证明命题对无穷多个 n 成立"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "第二步是「递推」：在假设 n=k 成立的前提下推出 n=k+1 成立。只有奠基没有递推，命题传不下去；只有递推没有奠基，递推就没有起点。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h155_q4",
+    "topicId": "mat_h155",
+    "prompt": "用数学归纳法证明时，第二步必须用到___假设（填「归纳」或「演绎」）。",
+    "question": "用数学归纳法证明时，第二步必须用到___假设（填「归纳」或「演绎」）。",
+    "answer": "归纳",
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "第二步的推理必须用到「n=k 时命题成立」这个归纳假设，否则就不是数学归纳法，而是直接验证了一个特例。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h155_q5",
+    "topicId": "mat_h155",
+    "prompt": "用数学归纳法证明 1+2+…+n = n(n+1)/2。若已假设 n=k 时成立，则 n=k+1 时左边比 n=k 时多了哪一项？该项在 k=5 时的值是多少？只填数字。",
+    "question": "用数学归纳法证明 1+2+…+n = n(n+1)/2。若已假设 n=k 时成立，则 n=k+1 时左边比 n=k 时多了哪一项？该项在 k=5 时的值是多少？只填数字。",
+    "answer": "6",
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "n=k+1 时左边比 n=k 时多了第 k+1 项，k=5 时即 5+1=6 项，值为 6（用 5+1 计算）。易错：答成 5。",
+    "verify": "5+1",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h155_q6",
+    "topicId": "mat_h155",
+    "prompt": "请说明数学归纳法两步各起什么作用，为什么缺一不可。",
+    "question": "请说明数学归纳法两步各起什么作用，为什么缺一不可。",
+    "answer": "第一步（奠基）保证命题在起始值成立，是递推的起点；第二步（归纳）假设 n=k 成立并推出 n=k+1 成立，保证命题可以「传下去」；缺奠基则无从开始，缺递推则无法从个别推广到全体",
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "数学归纳法本质是「有限的递推」：奠基提供第一个真命题，递推步骤把真命题一个个往后传。仅有奠基 → 只证明了有限个；仅有递推 → 可能对任何 n 都不成立（如「n=n+1」也满足递推形式）。易错：递推时不用归纳假设。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h156_q2",
+    "topicId": "mat_h156",
+    "prompt": "函数 f(x) 的「零点」指的是什么？",
+    "question": "函数 f(x) 的「零点」指的是什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "使 f(x)=0 的自变量 x 的值"
+      },
+      {
+        "label": "B",
+        "text": "函数图象与 y 轴交点的纵坐标"
+      },
+      {
+        "label": "C",
+        "text": "函数的最小值"
+      },
+      {
+        "label": "D",
+        "text": "函数定义域的右端点"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "零点是使函数值为 0 的自变量取值，不是点也不是函数值。它与「方程 f(x)=0 的实根」「图象与 x 轴交点的横坐标」是同一件事的三种说法。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h156_q3",
+    "topicId": "mat_h156",
+    "prompt": "若 f(x) 在 [a,b] 上连续，且 f(a)·f(b)<0，则 f(x) 在 (a,b) 内至少有几个零点？",
+    "question": "若 f(x) 在 [a,b] 上连续，且 f(a)·f(b)<0，则 f(x) 在 (a,b) 内至少有几个零点？",
+    "options": [
+      {
+        "label": "A",
+        "text": "0 个"
+      },
+      {
+        "label": "B",
+        "text": "1 个"
+      },
+      {
+        "label": "C",
+        "text": "2 个"
+      },
+      {
+        "label": "D",
+        "text": "3 个"
+      }
+    ],
+    "answer": "B",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "这是零点存在定理：连续函数在区间两端取值异号，图象必然从 x 轴一侧穿到另一侧，所以 (a,b) 内至少有一个零点。注意只保证「存在」，不保证唯一。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h156_q4",
+    "topicId": "mat_h156",
+    "prompt": "函数 f(x)=x-3 的零点是___（只填数字）。",
+    "question": "函数 f(x)=x-3 的零点是___（只填数字）。",
+    "answer": "3",
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "令 x-3=0 得 x=3，所以零点是 3。易错：把零点写成点 (3,0)——零点是数，不是坐标。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h156_q5",
+    "topicId": "mat_h156",
+    "prompt": "已知函数 f(x)=2x-8，求使 f(x)=0 成立的 x 的值（只填数字）。",
+    "question": "已知函数 f(x)=2x-8，求使 f(x)=0 成立的 x 的值（只填数字）。",
+    "answer": "4",
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "令 2x-8=0，得 x=4（用 8/2 计算）。易错：把 8 直接当零点，或把 2x-8 的常数项符号搞错。",
+    "verify": "8/2",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h156_q6",
+    "topicId": "mat_h156",
+    "prompt": "请说明函数的零点、方程的解、图象与 x 轴交点三者之间的关系，并说出零点存在定理的条件。",
+    "question": "请说明函数的零点、方程的解、图象与 x 轴交点三者之间的关系，并说出零点存在定理的条件。",
+    "answer": "零点 x₀ 就是方程 f(x)=0 的实根，也是图象与 x 轴交点的横坐标，三种说法等价；零点存在定理要求函数在闭区间上连续、两端函数值异号，则区间内至少存在一个零点",
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "三位一体：f(x₀)=0 ⇔ x₀ 是方程的解 ⇔ 点 (x₀,0) 在图象上。定理的两个条件缺一不可：①闭区间上连续；②f(a)f(b)<0。它只保证存在，个数与是否唯一需另作判断（如结合单调性）。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h157_q2",
+    "topicId": "mat_h157",
+    "prompt": "用二分法求方程近似解，对函数的基本要求是什么？",
+    "question": "用二分法求方程近似解，对函数的基本要求是什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "在区间上连续且两端函数值异号"
+      },
+      {
+        "label": "B",
+        "text": "在区间上是增函数"
+      },
+      {
+        "label": "C",
+        "text": "必须是二次函数"
+      },
+      {
+        "label": "D",
+        "text": "区间长度必须小于 1"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "二分法依靠「连续 + 端点异号 ⇒ 区间内有零点」，每次取中点把区间一分为二、保留有零点的那一半；单调性不是必要条件。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h157_q3",
+    "topicId": "mat_h157",
+    "prompt": "已知 f(1)<0，f(2)>0，取中点 1.5 时算得 f(1.5)>0，下一步零点所在区间是？",
+    "question": "已知 f(1)<0，f(2)>0，取中点 1.5 时算得 f(1.5)>0，下一步零点所在区间是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1,1.5)"
+      },
+      {
+        "label": "B",
+        "text": "(1.5,2)"
+      },
+      {
+        "label": "C",
+        "text": "(1,2)"
+      },
+      {
+        "label": "D",
+        "text": "无法判断"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "零点在有异号端点的那一半：f(1)<0、f(1.5)>0，所以零点在 (1,1.5)。每步都保留「两端异号」的子区间。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h157_q4",
+    "topicId": "mat_h157",
+    "prompt": "二分法每取一次中点，区间长度变成原来的___（填分数，如 1/2）。",
+    "question": "二分法每取一次中点，区间长度变成原来的___（填分数，如 1/2）。",
+    "answer": "1/2",
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "中点把区间等分，保留其中一半，所以长度变为原来的 1/2；这也是二分法「次数越多、精度越高」的原因。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h157_q5",
+    "topicId": "mat_h157",
+    "prompt": "区间 (1,2) 用二分法取一次中点后，含零点的区间长度是多少？（填小数）",
+    "question": "区间 (1,2) 用二分法取一次中点后，含零点的区间长度是多少？（填小数）",
+    "answer": "0.5",
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "原长 2-1=1，取中点后长度减半：1/2=0.5。易错：把区间写成 (1,1.5) 后仍按长度 1 计算。",
+    "verify": "1/2",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h157_q6",
+    "topicId": "mat_h157",
+    "prompt": "请说明二分法求方程近似解的步骤，并解释它为什么有效。",
+    "question": "请说明二分法求方程近似解的步骤，并解释它为什么有效。",
+    "answer": "先确定零点所在区间 [a,b] 使 f(a)f(b)<0；再取中点 m，判断 f(m) 的符号，保留两端异号的半个区间；重复直到区间长度小于给定精度，取中点作为近似解；依据是零点存在定理与区间长度每次减半",
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "三步循环：①验证端点异号；②取中点、看符号、换半区间；③检查精度是否满足。有效性来自两点：连续函数在异号端点间必有零点（定理保证存在），每次减半使误差按 1/2ⁿ 缩小（保证收敛）。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h158_q2",
+    "topicId": "mat_h158",
+    "prompt": "sin(α+β) 的展开式是哪一个？",
+    "question": "sin(α+β) 的展开式是哪一个？",
+    "options": [
+      {
+        "label": "A",
+        "text": "sinαcosβ+cosαsinβ"
+      },
+      {
+        "label": "B",
+        "text": "sinαcosβ-cosαsinβ"
+      },
+      {
+        "label": "C",
+        "text": "cosαcosβ-sinαsinβ"
+      },
+      {
+        "label": "D",
+        "text": "sinαsinβ+cosαcosβ"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "两角和的正弦「正余余正」：sin(α+β)=sinαcosβ+cosαsinβ。B 是 sin(α-β)，C 是 cos(α+β)，D 是把余弦公式的正负弄反。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h158_q3",
+    "topicId": "mat_h158",
+    "prompt": "cos75° 的值是多少？",
+    "question": "cos75° 的值是多少？",
+    "options": [
+      {
+        "label": "A",
+        "text": "(√6-√2)/4"
+      },
+      {
+        "label": "B",
+        "text": "(√6+√2)/4"
+      },
+      {
+        "label": "C",
+        "text": "(√3-1)/2"
+      },
+      {
+        "label": "D",
+        "text": "1/4"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "75°=45°+30°，cos75°=cos45°cos30°-sin45°sin30°=(√2/2)(√3/2)-(√2/2)(1/2)=(√6-√2)/4。(√6+√2)/4 是 cos15°。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h158_q4",
+    "topicId": "mat_h158",
+    "prompt": "二倍角公式 sin2α = ___·sinα·cosα，横线处应填什么数字？",
+    "question": "二倍角公式 sin2α = ___·sinα·cosα，横线处应填什么数字？",
+    "answer": "2",
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "sin2α=sin(α+α)=sinαcosα+cosαsinα=2sinαcosα，系数是 2。它正是两角和正弦公式在 β=α 时的特例。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h158_q5",
+    "topicId": "mat_h158",
+    "prompt": "已知 sinα=3/5，α 为锐角，则 sin2α 的值是多少？（填小数）",
+    "question": "已知 sinα=3/5，α 为锐角，则 sin2α 的值是多少？（填小数）",
+    "answer": "0.96",
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "α 为锐角时 cosα=4/5，sin2α=2sinαcosα=2×(3/5)×(4/5)=24/25=0.96（用 2*3/5*4/5 计算）。易错：忘了先求 cosα，或用 sin2α=2sinα 得 1.2。",
+    "verify": "2*3/5*4/5",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h158_q6",
+    "topicId": "mat_h158",
+    "prompt": "请说明两角和与差公式与二倍角公式之间的关系，并说明公式推导的起点。",
+    "question": "请说明两角和与差公式与二倍角公式之间的关系，并说明公式推导的起点。",
+    "answer": "推导起点是两角差的余弦公式 cos(α-β)=cosαcosβ+sinαsinβ；由它可推出两角和与差的正弦、余弦、正切公式；再把 β 换成 α 即得二倍角的正弦、余弦、正切公式，所以二倍角公式是和角公式的特例",
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "逻辑链：cos(α-β)（单位圆或向量数量积可证）→ 用 β→-β 得 cos(α+β) → 用诱导公式得 sin(α±β) → 商的关系得 tan(α±β) → 令 β=α 得二倍角。掌握这条链比死记六条公式更可靠。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h159_q2",
+    "topicId": "mat_h159",
+    "prompt": "余弦定理的正确写法是哪一个？",
+    "question": "余弦定理的正确写法是哪一个？",
+    "options": [
+      {
+        "label": "A",
+        "text": "a²=b²+c²-2bccosA"
+      },
+      {
+        "label": "B",
+        "text": "a²=b²+c²+2bccosA"
+      },
+      {
+        "label": "C",
+        "text": "a²=b²+c²-bccosA"
+      },
+      {
+        "label": "D",
+        "text": "a²=b²+c²"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "余弦定理 a²=b²+c²-2bccosA，其中角 A 是边 a 的对角。加号或漏掉系数 2 都是常见错误；a²=b²+c² 只在 A=90° 时成立。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h159_q3",
+    "topicId": "mat_h159",
+    "prompt": "在 △ABC 中，a=3，b=4，C=90°，则 c 等于多少？",
+    "question": "在 △ABC 中，a=3，b=4，C=90°，则 c 等于多少？",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "25"
+      },
+      {
+        "label": "D",
+        "text": "√7"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "由余弦定理 c²=9+16-2×3×4×cos90°=25，故 c=5（此时即为勾股定理）。易错：把 c²=25 的结果直接写成 25。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h159_q4",
+    "topicId": "mat_h159",
+    "prompt": "正弦定理：a/sinA = b/sinB = c/sinC = ___（填 2R 或 R，R 为外接圆半径）。",
+    "question": "正弦定理：a/sinA = b/sinB = c/sinC = ___（填 2R 或 R，R 为外接圆半径）。",
+    "answer": "2R",
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "正弦定理的比值等于三角形外接圆直径 2R，不是半径 R；这个 2R 常用于把边与角的正弦互相转化。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h159_q5",
+    "topicId": "mat_h159",
+    "prompt": "在 △ABC 中，a=5，b=8，C=60°，则 c² 的值是多少？只填数字。",
+    "question": "在 △ABC 中，a=5，b=8，C=60°，则 c² 的值是多少？只填数字。",
+    "answer": "49",
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "c²=a²+b²-2abcosC=25+64-2×5×8×(1/2)=89-40=49（用 25+64-2*5*8*0.5 计算），故 c=7。易错：把 2abcosC 算成 20 而漏乘 1/2 的位置。",
+    "verify": "25+64-2*5*8*0.5",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h159_q6",
+    "topicId": "mat_h159",
+    "prompt": "请说明正弦定理与余弦定理各自适用的情形，并各举一个典型用法。",
+    "question": "请说明正弦定理与余弦定理各自适用的情形，并各举一个典型用法。",
+    "answer": "正弦定理适合「已知两角一边」或「已知两边及其中一边的对角」求其余边角，也可用于边角互化；余弦定理适合「已知三边」或「已知两边及其夹角」求第三边或角，例如已知 a、b、C 求 c",
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "选择口诀：出现「角对角」全等条件用正弦定理（AAS/ASA/SSA），出现「边夹角的平方关系」用余弦定理（SAS/SSS）。余弦定理还能判定三角形形状（最大边的平方与另两边平方和比较）。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h160_q2",
+    "topicId": "mat_h160",
+    "prompt": "点 P(1,2,3) 关于 xOy 平面对称的点是哪一个？",
+    "question": "点 P(1,2,3) 关于 xOy 平面对称的点是哪一个？",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1,2,-3)"
+      },
+      {
+        "label": "B",
+        "text": "(-1,2,3)"
+      },
+      {
+        "label": "C",
+        "text": "(1,-2,3)"
+      },
+      {
+        "label": "D",
+        "text": "(-1,-2,-3)"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "关于坐标平面对称：只改变垂直于该平面的坐标的符号。关于 xOy 平面对称时 z 变号，得 (1,2,-3)；关于 yOz 平面对称则 x 变号。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h160_q3",
+    "topicId": "mat_h160",
+    "prompt": "点 A(1,2,2) 到原点的距离是多少？",
+    "question": "点 A(1,2,2) 到原点的距离是多少？",
+    "options": [
+      {
+        "label": "A",
+        "text": "3"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "√5"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "距离公式 d=√(x²+y²+z²)=√(1+4+4)=√9=3。易错：把平方和 9 当成距离，或漏掉 z 坐标。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h160_q4",
+    "topicId": "mat_h160",
+    "prompt": "点 (0,0,5) 在___轴上（填 x、y 或 z）。",
+    "question": "点 (0,0,5) 在___轴上（填 x、y 或 z）。",
+    "answer": "z",
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "坐标里只有第三个分量非零，说明点在 z 轴上；同理 (a,0,0) 在 x 轴、(0,b,0) 在 y 轴。",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h160_q5",
+    "topicId": "mat_h160",
+    "prompt": "点 B(2,-1,2) 到原点的距离是多少？只填数字。",
+    "question": "点 B(2,-1,2) 到原点的距离是多少？只填数字。",
+    "answer": "3",
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "d=√(4+1+4)=√9=3（用 (2**2+1**2+2**2)**0.5 计算）。易错：把 -1 的平方算成 -1。",
+    "verify": "(2**2+1**2+2**2)**0.5",
+    "subject": "math"
+  },
+  {
+    "id": "mat_h160_q6",
+    "topicId": "mat_h160",
+    "prompt": "请说明空间直角坐标系的建立方法，以及点的坐标 (x,y,z) 的含义。",
+    "question": "请说明空间直角坐标系的建立方法，以及点的坐标 (x,y,z) 的含义。",
+    "answer": "在空间中取一点 O 为原点，作三条两两垂直的数轴 x、y、z 轴并规定正方向与单位长度，就建立了空间直角坐标系；点 P 的坐标 (x,y,z) 表示它在三条坐标轴方向上的有向距离，也就是从原点出发沿三个方向的位移分量",
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "建立要点：三轴交于原点、两两垂直、方向按右手系、单位长度一致。坐标含义是「沿 x、y、z 三个方向的位移分量」，因此距离、中点、对称点都能用坐标运算处理，这也是用向量法解立体几何的前提。",
+    "subject": "math"
+  },
+  {
     "id": "mus_q001",
     "topicId": "mus_p001",
     "prompt": "一年级学生用拍手为《小星星》伴奏，最能体现良好节奏感的做法是：",
