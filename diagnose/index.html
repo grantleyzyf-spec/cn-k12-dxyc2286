@@ -72,6 +72,7 @@
             border-radius: var(--radius-sm); color: var(--ink-2);
         }
         .feedback .fb-key { margin: 6px 0 0; padding-left: 18px; }
+        .self-hint { margin: 10px 0 6px; font-size: 14px; color: #444; }
         .self-check { display: flex; gap: 10px; margin-top: 10px; }
         .self-check button {
             flex: 1; padding: 10px; font-size: 14px; cursor: pointer; font-family: inherit;
@@ -506,6 +507,27 @@
             return box ? box.value : '';
         }
 
+        // 简答题「要点关键词」初步判定：学生作答与每个得分要点的中文二元组覆盖率
+        function matchKeypoints(q, ans) {
+          const kps = q.keypoints || [];
+          if (!kps.length) return null;
+          const big = (t) => {
+            const c = (t || '').replace(/[^\u4e00-\u9fa5]/g, '');
+            const s = new Set();
+            for (let i = 0; i < c.length - 1; i++) s.add(c.slice(i, i + 2));
+            return s;
+          };
+          const A = big(ans);
+          let hit = 0;
+          kps.forEach(k => {
+            const K = big(k);
+            if (!K.size) return;
+            let n = 0; K.forEach(g => { if (A.has(g)) n++; });
+            if (n / K.size >= 0.34) hit++;
+          });
+          return { hit: hit, total: kps.length, ratio: hit / kps.length };
+        }
+
         function gradeCurrent() {
             const q = currentQ();
             const u = getUserAnswer();
@@ -574,6 +596,14 @@
                     step.awaitingSelf = true;
                     renderFeedback(false, q);
                     const fb = document.getElementById('feedback');
+                    const mk = matchKeypoints(q, getUserAnswer());
+                    if (mk) {
+                      const tip = document.createElement('div');
+                      tip.className = 'self-hint';
+                      const word = mk.ratio >= 0.66 ? '建议记为掌握' : (mk.ratio >= 0.34 ? '建议对照要点再自评' : '建议记为未掌握');
+                      tip.innerHTML = '自动判读：命中 <b>' + mk.hit + '/' + mk.total + '</b> 个要点 —— ' + word;
+                      fb.appendChild(tip);
+                    }
                     const selfCheck = document.createElement('div');
                     selfCheck.className = 'self-check';
                     selfCheck.innerHTML = '<button class="yes">我写到了要点</button><button class="no">我没写到</button>';

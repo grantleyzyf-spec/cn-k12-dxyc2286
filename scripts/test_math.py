@@ -169,6 +169,9 @@ ck("选项文本互不相同", not [q["id"] for q in qs if q.get("type") == "cho
                         and len({(o.get("text") or "").strip() for o in q.get("options") or []}) != 4])
 ck("题干 ≥ 12 字", all(len(q.get("prompt", "")) >= 12 for q in qs),
    [q["id"] for q in qs if len(q.get("prompt", "")) < 12][:5])
+ck("简答题都带 keypoints（≥2 条，供要点自动判读）",
+   all(len(q.get("keypoints") or []) >= 2 for q in qs if q.get("type") == "short-answer"),
+   [q["id"] for q in qs if q.get("type") == "short-answer" and len(q.get("keypoints") or []) < 2][:5])
 ck("解析 ≥ 20 字", all(len(q.get("explanation", "")) >= 20 for q in qs),
    [q["id"] for q in qs if len(q.get("explanation", "")) < 20][:5])
 ck("题干全域不重复", len({q.get("prompt") for q in qs}) == len(qs), len(qs) - len({q.get("prompt") for q in qs}))

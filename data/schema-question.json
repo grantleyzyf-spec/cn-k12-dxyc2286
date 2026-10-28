@@ -108,6 +108,14 @@
             }
           }
         }
+      },
+      "keypoints": {
+        "type": "array",
+        "description": "简答题得分要点（自动由 answer 按「；/。」切分而来），供前端做要点关键词匹配的初步判定；非简答题不写",
+        "items": {
+          "type": "string",
+          "minLength": 4
+        }
       }
     },
     "additionalProperties": false,
