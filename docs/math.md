@@ -47,6 +47,8 @@
 
 选择题 `answer` 必须是 label；「>、<、=」这类只有三个自然选项的题一律改填空题，不套选择题壳子。
 
+> `choices` 是**分学科数据**（`data/math/questions.json`）里的规范字段：选择题 4 项与 `options` 同值、非选择题写空数组。汇总文件 `data/questions.json` 由 `normalize_to_ref_schema.py` 的 `norm_question` 白名单生成，**不含 `choices`**（也不含空 `options`）——站点诊断页读的是分学科文件，所以线上不受影响；核 `choices` 一律核分学科件。
+
 ### 4.1 五题制（本轮升级）
 
 每个知识点 5 题，**同一知识点内按难度升序**，诊断页据此逐级提问（答错即停、答对继续追问）：
