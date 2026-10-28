@@ -56,6 +56,30 @@
         .option:hover { border-color: var(--brand); background: var(--brand-soft); }
         .option.selected { border-color: var(--brand); background: var(--brand); color: #fff; }
 
+        .answer-input { margin-top: 14px; }
+        .answer-input input, .answer-input textarea {
+            width: 100%; box-sizing: border-box; padding: 12px 14px; font-size: 15px;
+            color: var(--ink); background: var(--card); border: 1px solid var(--line);
+            border-radius: var(--radius-sm); font-family: inherit; resize: vertical;
+        }
+        .answer-input input:focus, .answer-input textarea:focus { outline: none; border-color: var(--brand); }
+        .feedback { margin-top: 14px; font-size: 14px; line-height: 1.7; }
+        .feedback .fb-ok { color: #15803d; font-weight: 600; }
+        .feedback .fb-no { color: #b91c1c; font-weight: 600; }
+        .feedback .fb-box {
+            margin-top: 8px; padding: 12px 14px; background: var(--card);
+            border: 1px solid var(--line); border-left: 3px solid var(--brand);
+            border-radius: var(--radius-sm); color: var(--ink-2);
+        }
+        .feedback .fb-key { margin: 6px 0 0; padding-left: 18px; }
+        .self-check { display: flex; gap: 10px; margin-top: 10px; }
+        .self-check button {
+            flex: 1; padding: 10px; font-size: 14px; cursor: pointer; font-family: inherit;
+            background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-sm); color: var(--ink);
+        }
+        .self-check button.yes { border-color: #15803d; color: #15803d; }
+        .self-check button.no { border-color: #b91c1c; color: #b91c1c; }
+
         .progress {
             display: flex; align-items: center; gap: 12px; margin-bottom: 16px;
             padding: 10px 14px; background: var(--card);
@@ -159,6 +183,8 @@
                 <div class="question-card">
                     <div class="question-text" id="question-text"></div>
                     <div class="options" id="options"></div>
+                    <div class="answer-input" id="answer-input"></div>
+                    <div class="feedback" id="feedback"></div>
                 </div>
                 <button class="btn" id="next-btn">下一题</button>
             </div>
@@ -190,6 +216,9 @@
         let currentQuestionIndex = 0;
         let answers = {};
         let weakTopics = [];
+        let askedCount = 0;      // 实际问过的题数
+        let correctCount = 0;    // 答对题数
+        let phase = 'ask';       // ask=待作答；feedback=已出反馈待下一题
 
         // 学科名称映射
         const subjectNames = {
@@ -345,6 +374,9 @@
             currentQuestionIndex = 0;
             answers = {};
             weakTopics = [];
+            askedCount = 0;
+            correctCount = 0;
+            phase = 'ask';
 
             document.getElementById('setup-area').style.display = 'none';
             document.getElementById('question-area').style.display = 'block';
@@ -353,78 +385,224 @@
             showQuestion();
         }
 
-        // 构建诊断路径
+        // 每知识点最多问几题（题库已补到 5 题/点，答错即停）
+        const MAX_PER_TOPIC = 5;
+        const DIFF_RANK = { basic: 0, standard: 1, hard: 2 };
+
+        // 构建诊断路径：先修在前；每个知识点带上它的全部题目（按难度升序，最多 5 题）
         function buildDiagnosisPath(topic) {
             const path = [];
             const visited = new Set();
-            
+
             function traverse(t) {
                 if (visited.has(t.id)) return;
                 visited.add(t.id);
-                
+
                 // 先递归处理先修知识点
                 const deps = dependenciesData.filter(d => d.to === t.id && d.type === 'hard');
                 deps.forEach(dep => {
                     const prereq = topicsData.find(tp => tp.id === dep.from);
                     if (prereq) traverse(prereq);
                 });
-                
-                // 再添加当前知识点的题目
-                const questions = questionsData.filter(q => q.topicId === t.id);
-                if (questions.length > 0) {
-                    path.push({ topic: t, question: questions[0] });
+
+                // 当前知识点的题目：难度升序，最多 MAX_PER_TOPIC 题
+                const qs = questionsData
+                    .filter(q => q.topicId === t.id)
+                    .sort((a, b) => (DIFF_RANK[a.difficulty] ?? 1) - (DIFF_RANK[b.difficulty] ?? 1));
+                if (qs.length > 0) {
+                    path.push({ topic: t, questions: qs.slice(0, MAX_PER_TOPIC), idx: 0, failed: false });
                 }
             }
-            
+
             traverse(topic);
             return path;
         }
 
-        // 显示题目
+        function currentStep() { return questionQueue[currentQuestionIndex] || null; }
+        function currentQ() { const st = currentStep(); return st ? st.questions[st.idx] : null; }
+
+        // 显示题目：choice→选项；fill/numeric→输入框；short-answer→文本域＋自评
         function showQuestion() {
             if (currentQuestionIndex >= questionQueue.length) {
                 showResult();
                 return;
             }
+            const step = currentStep();
+            const q = currentQ();
+            if (!q) { currentQuestionIndex++; showQuestion(); return; }
 
-            const item = questionQueue[currentQuestionIndex];
-            document.getElementById('question-text').textContent = (item.question.prompt || item.question.question);
-            document.getElementById('progress-text').textContent = `第 ${currentQuestionIndex + 1} 题`;
-            document.getElementById('progress-fill').style.width = `${(currentQuestionIndex / questionQueue.length) * 100}%`;
+            phase = 'ask';
+            document.getElementById('question-text').textContent = (q.prompt || q.question);
+            const typeName = { choice: '选择', fill: '填空', numeric: '数值计算', 'short-answer': '简答' }[q.type] || '选择';
+            document.getElementById('progress-text').textContent =
+                `${step.topic.name} · 第 ${step.idx + 1}/${step.questions.length} 题（${typeName}）`;
+            document.getElementById('progress-total').textContent =
+                `进度 ${currentQuestionIndex + 1}/${questionQueue.length} 知识点`;
+            document.getElementById('progress-fill').style.width =
+                `${(currentQuestionIndex / questionQueue.length) * 100}%`;
 
             const optionsDiv = document.getElementById('options');
-            optionsDiv.innerHTML = '';
-            
-            if ((item.question.options || []) && (item.question.options || []).length > 0) {
-                (item.question.options || []).forEach(opt => {
+            const inputArea = document.getElementById('answer-input');
+            const feedback = document.getElementById('feedback');
+            const btn = document.getElementById('next-btn');
+            optionsDiv.innerHTML = ''; inputArea.innerHTML = ''; feedback.innerHTML = '';
+            btn.disabled = false; btn.textContent = '提交答案';
+            answers[currentQuestionIndex] = undefined;
+
+            const optsOf = (q.choices && q.choices.length) ? q.choices : (q.options || []);
+            if (q.type === 'choice' && optsOf.length > 0) {
+                optsOf.forEach(opt => {
                     const div = document.createElement('div');
                     div.className = 'option';
                     div.textContent = `${opt.label}. ${opt.text}`;
                     div.onclick = () => selectOption(div, opt.label);
                     optionsDiv.appendChild(div);
                 });
+            } else if (q.type === 'numeric' || q.type === 'fill') {
+                const inp = document.createElement('input');
+                inp.id = 'answer-box';
+                inp.type = 'text';
+                inp.autocomplete = 'off';
+                inp.placeholder = q.type === 'numeric' ? '输入计算结果（只填数字，如 12 或 3/4）' : '输入你的答案';
+                inp.onkeydown = (e) => { if (e.key === 'Enter') nextQuestion(); };
+                inputArea.appendChild(inp);
+            } else {
+                const ta = document.createElement('textarea');
+                ta.id = 'answer-box';
+                ta.rows = 3;
+                ta.placeholder = '写下你的答案要点（可分行）';
+                inputArea.appendChild(ta);
             }
         }
 
         // 选择选项
         function selectOption(element, label) {
+            if (phase !== 'ask') return;
             document.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
             element.classList.add('selected');
             answers[currentQuestionIndex] = label;
         }
 
-        // 下一题
-        function nextQuestion() {
-            const item = questionQueue[currentQuestionIndex];
-            const userAnswer = answers[currentQuestionIndex];
-            
-            // 检查答案
-            if (userAnswer !== item.question.answer) {
-                weakTopics.push(item.topic);
+        // 全角→半角、去空白、统一大小写，便于机判
+        function normAns(v) {
+            return (v || '').replace(/[\uFF01-\uFF5E]/g, c => String.fromCharCode(c.charCodeAt(0) - 0xFEE0))
+                .replace(/[，、]/g, ',').replace(/。/g, '.').replace(/\s+/g, '').toLowerCase();
+        }
+
+        // 数值解析：支持小数、分数、正负号
+        function parseNum(v) {
+            const t = normAns(v).replace(/[%％]/g, '');
+            if (/^-?\d+(\.\d+)?$/.test(t)) return parseFloat(t);
+            const m = t.match(/^(-?\d+(?:\.\d+)?)\/(-?\d+(?:\.\d+)?)$/);
+            if (m && parseFloat(m[2]) !== 0) return parseFloat(m[1]) / parseFloat(m[2]);
+            return NaN;
+        }
+
+        function near(a, b) { return Math.abs(a - b) <= 1e-6 * Math.max(1, Math.abs(b)); }
+
+        function getUserAnswer() {
+            if (currentQ().type === 'choice') return answers[currentQuestionIndex];
+            const box = document.getElementById('answer-box');
+            return box ? box.value : '';
+        }
+
+        function gradeCurrent() {
+            const q = currentQ();
+            const u = getUserAnswer();
+            if (q.type === 'choice') return { ok: u === q.answer, empty: !u };
+            if (q.type === 'numeric') {
+                const un = parseNum(u);
+                return { ok: !isNaN(un) && near(un, parseFloat(q.answer)), empty: !normAns(u) };
             }
-            
-            currentQuestionIndex++;
-            showQuestion();
+            const a = normAns(q.answer), uu = normAns(u);
+            if (uu === a) return { ok: true };
+            const na = parseNum(a), nu = parseNum(uu);
+            return { ok: (!isNaN(na) && !isNaN(nu) && near(nu, na)), empty: !uu };
+        }
+
+        function renderFeedback(ok, q) {
+            const fb = document.getElementById('feedback');
+            const head = ok ? '<span class="fb-ok">✅ 答对了</span>' : '<span class="fb-no">❌ 答错了</span>';
+            const ansText = q.type === 'short-answer'
+                ? q.answer.split('；').filter(Boolean).map(x => `<li>${x}</li>`).join('')
+                : (q.type === 'choice'
+                    ? `${q.answer}. ${((q.choices && q.choices.length ? q.choices : (q.options || [])).find(o => o.label === q.answer) || {}).text || ''}`
+                    : q.answer);
+            const ansBlock = q.type === 'short-answer'
+                ? `<div class="fb-box"><strong>参考答案要点：</strong><ul class="fb-key">${ansText}</ul></div>`
+                : `<div class="fb-box"><strong>正确答案：</strong>${ansText}</div>`;
+            fb.innerHTML = head + ansBlock + `<div class="fb-box"><strong>解析：</strong>${q.explanation || ''}</div>`;
+        }
+
+        // 提交 / 下一题
+        function nextQuestion() {
+            const step = currentStep();
+            if (!step) return;
+            const btn = document.getElementById('next-btn');
+
+            // 已出反馈：推进到下一题 / 下一个知识点
+            if (phase === 'feedback') {
+                const cur = currentQ();
+                if (cur && cur.type === 'short-answer' && !step.failed && step.idx < step.questions.length) {
+                    // 简答题没自评就直接点「下一题」：按未掌握处理，避免同一题重复出现
+                    step.failed = true;
+                    weakTopics.push(step.topic);
+                    step.idx = step.questions.length;
+                }
+                if (step.idx >= step.questions.length) currentQuestionIndex++;
+                showQuestion();
+                return;
+            }
+
+            const q = currentQ();
+            if (!q) { currentQuestionIndex++; showQuestion(); return; }
+
+            if (phase === 'ask') {
+                const r = gradeCurrent();
+                if (r.empty) {
+                    const tip = document.getElementById('feedback');
+                    tip.innerHTML = '<span class="fb-no">请先作答</span>';
+                    return;
+                }
+                askedCount++;
+                if (q.type === 'short-answer' && !r.ok) {
+                    // 简答题无法机判：给参考答案，让学生自评
+                    renderFeedback(false, q);
+                    const fb = document.getElementById('feedback');
+                    const selfCheck = document.createElement('div');
+                    selfCheck.className = 'self-check';
+                    selfCheck.innerHTML = '<button class="yes">我写到了要点</button><button class="no">我没写到</button>';
+                    selfCheck.querySelector('.yes').onclick = () => {
+                        correctCount++;
+                        step.idx++;
+                        phase = 'feedback';
+                        fb.querySelector('.fb-no').outerHTML = '<span class="fb-ok">✅ 已记为掌握</span>';
+                        btn.textContent = '下一题';
+                    };
+                    selfCheck.querySelector('.no').onclick = () => {
+                        step.failed = true;
+                        weakTopics.push(step.topic);
+                        step.idx = step.questions.length;
+                        phase = 'feedback';
+                        fb.querySelector('.fb-no').outerHTML = '<span class="fb-no">❌ 已记为未掌握</span>';
+                        btn.textContent = '下一题';
+                    };
+                    fb.appendChild(selfCheck);
+                    return;
+                }
+                if (r.ok) correctCount++;
+                else {
+                    step.failed = true;
+                    weakTopics.push(step.topic);
+                    step.idx = step.questions.length;   // 答错即停，不再追问本知识点
+                }
+                if (!step.failed) step.idx++;
+                renderFeedback(r.ok, q);
+                phase = 'feedback';
+                btn.textContent = step.idx >= step.questions.length ? '下一个知识点' : '下一题';
+                return;
+            }
+
         }
 
         // 显示结果
@@ -463,7 +641,7 @@
                     window.CnmKids.addRecord({
                         subject: currentSubject,
                         target: targetTopic ? { id: targetTopic.id, name: targetTopic.name } : null,
-                        asked: questionQueue.length,
+                        asked: askedCount,
                         weak: weakTopics.map(function (t) { return { id: t.id, name: t.name }; })
                     });
                     var tip = document.createElement('p');

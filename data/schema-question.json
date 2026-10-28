@@ -48,7 +48,7 @@
             }
           }
         },
-        "description": "选择题选项（非选择题省略或为空数组）"
+        "description": "选择题选项（兼容字段，与 choices 同值；旧前端读取这里）"
       },
       "answer": {
         "type": "string",
@@ -73,7 +73,7 @@
           "easy",
           "medium"
         ],
-        "description": "难度级别"
+        "description": "难度级别（契约只用 basic|standard|hard 三档；easy/medium 为历史别名，落库前归一）"
       },
       "explanation": {
         "type": "string",
@@ -86,6 +86,28 @@
       "subject": {
         "type": "string",
         "description": "学科代码（可选）"
+      },
+      "choices": {
+        "type": "array",
+        "description": "选择题选项（规范字段，与 options 同值；4 项，answer 为 label）",
+        "items": {
+          "type": "object",
+          "required": [
+            "label",
+            "text"
+          ],
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "text": {
+              "type": "string"
+            },
+            "correct": {
+              "type": "boolean"
+            }
+          }
+        }
       }
     },
     "additionalProperties": false,
