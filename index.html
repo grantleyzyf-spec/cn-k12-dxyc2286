@@ -9,7 +9,23 @@
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#0f6e62">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="K-12 知识图谱">
+<meta name="apple-mobile-web-app-title" content="学科图谱">
+<link rel="canonical" href="https://xueketupu.com/">
+
+<!-- 社交分享（微信/QQ/微博/飞书转发时的标题与缩略图） -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="学科图谱">
+<meta property="og:title" content="学科图谱 · 找到真正没学会的那一步">
+<meta property="og:description" content="17 学科、1924 个知识点、2199 条先修关系。沿先修关系自适应出题，回溯到薄弱根因，并按年级排出补学路径。免费公益。">
+<meta property="og:url" content="https://xueketupu.com/">
+<meta property="og:image" content="https://xueketupu.com/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="学科图谱 · 找到真正没学会的那一步">
+<meta name="twitter:description" content="17 学科知识图谱 + 自适应前置诊断，回溯到薄弱根因并给出补学路径。">
+<meta name="twitter:image" content="https://xueketupu.com/assets/og.png">
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body class="page-home">
@@ -34,6 +50,7 @@
     <a class="nav-link" href="diagnose/">诊断</a>
     <a class="nav-link" href="children/">档案</a>
     <a class="nav-link" href="children/history.html">记录</a>
+    <a class="nav-link" href="contact/">联系</a>
     <a class="nav-link" href="https://github.com/grantleyzyf-spec/cn-k12-dxyc2286" target="_blank" rel="noopener noreferrer">关于</a>
   </nav>
 </header>
@@ -153,13 +170,34 @@
     <a href="diagnose/">诊断</a>
     <a href="children/">学习档案</a>
     <a href="children/history.html">诊断记录</a>
+    <a href="contact/">联系与反馈</a>
     <a href="sponsor/">赞助</a>
     <a href="CONTRIBUTING.md">贡献指南</a>
     <a href="LICENSE">许可</a>
     <a href="https://github.com/grantleyzyf-spec/cn-k12-dxyc2286" target="_blank" rel="noopener noreferrer">GitHub</a>
   </div>
   <p>数据与文档 CC BY 4.0（署名 4.0 国际）· 第三方库保留各自 MIT 许可 · 站点 GitHub Pages</p>
+  <p class="beian" id="beian-slot" hidden></p>
 </footer>
+
+<script>
+  // 备案号展示位：data/site-config.json 填好 icp / police 后自动出现（未填则整行隐藏）
+  (function () {
+    fetch('data/site-config.json', { cache: 'no-cache' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (c) {
+        if (!c) return;
+        var out = [];
+        if (c.icp) out.push('<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">' + c.icp + '</a>');
+        if (c.police) out.push('<a href="https://beian.mps.gov.cn/" target="_blank" rel="noopener noreferrer">' + c.police + '</a>');
+        if (!out.length) return;
+        var el = document.getElementById('beian-slot');
+        el.innerHTML = out.join(' · ');
+        el.hidden = false;
+      })
+      .catch(function () {});
+  })();
+</script>
 
 <script src="assets/home.js"></script>
 <script>
