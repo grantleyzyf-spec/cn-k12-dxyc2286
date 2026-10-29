@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""把 /tmp/fml/*.json（逐页视觉读公式结果）汇总成 docs/math-hs-formula-ledger.md。"""
+"""v2：把 /tmp/fml/*.json 汇总成 docs/math-hs-formula-ledger.md，按「高/中」风险档分组。"""
 import glob
 import json
 import os
@@ -10,10 +10,14 @@ OUT = f"{REPO}/docs/math-hs-formula-ledger.md"
 SRC = "/tmp/fml"
 
 
+def tier(score):
+    return "高" if score >= 60 else ("中" if score >= 20 else "低")
+
+
 def load():
     recs = [json.load(open(f, encoding="utf-8")) for f in glob.glob(f"{SRC}/*.json")]
     recs = [r for r in recs if "formula_count" in r]
-    recs.sort(key=lambda r: (r["book"], r["page"]))
+    recs.sort(key=lambda r: (r["book"], -r["score"], r["page"]))
     return recs
 
 
@@ -21,8 +25,9 @@ def main():
     recs = load()
     per = {}
     for r in recs:
-        d = per.setdefault(r["book"], {"pages": 0, "f": 0, "miss": 0, "empty": 0})
+        d = per.setdefault(r["book"], {"pages": 0, "f": 0, "miss": 0, "empty": 0, "hi": 0, "mid": 0})
         d["pages"] += 1
+        d["hi" if tier(r["score"]) == "高" else "mid"] += 1
         d["f"] += r["formula_count"]
         d["miss"] += r["ocr_missing_total"]
         if r["formula_count"] == 0:
@@ -30,7 +35,7 @@ def main():
     tot_pages = len(recs)
     tot_f = sum(r["formula_count"] for r in recs)
     tot_miss = sum(r["ocr_missing_total"] for r in recs)
-    L = ["# 高中数学（人教 A 版）公式台账 —— 高风险 58 页逐页视觉读取", "",
+    L = [f"# 高中数学（人教 A 版）公式台账 —— 风险页逐页视觉读取（{len(recs)} 页）", "",
          "## 方法与判据", "",
          "- **对象**：`docs/math-hs-formula-check.md` 附二的高风险页（公式分 ≥60），共 **58 页 / 974 页全册**。",
          "- **读法**：每页按 160 dpi 渲染 → 视觉模型 `agnes-3.0-flash` 逐条转写公式（不解释、不复述题干），"
@@ -40,17 +45,21 @@ def main():
          "- **可靠性交叉验**：另用独立视觉模型对 `必修第一册 p227` 全页复读，与本流水线同一页结果一致（24 条公式全对上，含 `tan45°=1`、"
          "`(1+tan15°)/(1−tan15°)` 推导链、`cosθ=−3/5, θ∈(π/2,π)` 等）；此前手工抽检 4 页也 4/4 全对。",
          "", "## 汇总", "",
-         "| 册 | 已读页 | 公式条数 | 无公式页 | OCR 丢失字符组 |", "| --- | ---: | ---: | ---: | ---: |"]
+         "| 册 | 高风险页 | 中风险页 | 公式条数 | 无公式页 | OCR 丢失字符组 |",
+         "| --- | ---: | ---: | ---: | ---: | ---: |"]
     for b, d in per.items():
-        L.append(f"| {b} | {d['pages']} | {d['f']} | {d['empty']} | {d['miss']} |")
-    L.append(f"| **合计** | **{tot_pages}** | **{tot_f}** | **{sum(d['empty'] for d in per.values())}** | **{tot_miss}** |")
-    L += ["", "## 全页清单", "", "| 册 | PDF 页 | 公式分 | 公式条数 | OCR 丢失 | 首条公式 |", "| --- | ---: | ---: | ---: | ---: | --- |"]
+        L.append(f"| {b} | {d['hi']} | {d['mid']} | {d['f']} | {d['empty']} | {d['miss']} |")
+    L.append(f"| **合计** | **{sum(d['hi'] for d in per.values())}** | **{sum(d['mid'] for d in per.values())}** | "
+             f"**{tot_f}** | **{sum(d['empty'] for d in per.values())}** | **{tot_miss}** |")
+    L += ["", "## 全页清单", "", "| 册 | PDF 页 | 档 | 公式分 | 公式条数 | OCR 丢失 | 首条公式 |",
+         "| --- | ---: | :--: | ---: | ---: | ---: | --- |"]
     for r in recs:
         first = r["formulas"][0]["formula"] if r["formulas"] else "—"
-        L.append(f"| {r['book']} | {r['page']} | {r['score']} | {r['formula_count']} | {r['ocr_missing_total']} | `{first[:46]}` |")
+        L.append(f"| {r['book']} | {r['page']} | {tier(r['score'])} | {r['score']} | {r['formula_count']} | "
+                 f"{r['ocr_missing_total']} | `{first[:46]}` |")
     L += ["", "## 逐页公式明细", ""]
     for r in recs:
-        L.append(f"<details><summary><b>{r['book']} · PDF p{r['page']}</b>（公式分 {r['score']}，{r['formula_count']} 条）</summary>")
+        L.append(f"<details><summary><b>{r['book']} · PDF p{r['page']}</b>（{tier(r['score'])}风险 · 公式分 {r['score']} · {r['formula_count']} 条）</summary>")
         L.append("")
         if not r["formulas"]:
             L.append("_视觉模型判断本页无公式_")
@@ -61,10 +70,12 @@ def main():
         L.append("</details>")
         L.append("")
     L += ["## 结论", "",
-          f"1. **58 页逐页读完，共 {tot_f} 条公式**，无「读不出」页；无公式页 {sum(d['empty'] for d in per.values())} 个（多为纯练习题版式）。",
+          f"1. **{tot_pages} 页逐页读完**（高风险 {sum(d['hi'] for d in per.values())} + 中风险 {sum(d['mid'] for d in per.values())}），"
+          f"共 {tot_f} 条公式；无「读不出」页；无公式页 {sum(d['empty'] for d in per.values())} 个。",
           f"2. **OCR 在这 58 页共丢失 {tot_miss} 个字符组**，即公式密集页上 OCR 文本确实不可用于公式；"
           "与 §附一 的 30 页双引擎实测（数字一致率中位 0.60）互为印证。",
-          "3. 口径不变：**知识点、例题数值、答案一律不从 OCR 抄**；需要公式时按本台账的逐页清单取，"
+          "3. 低风险 517 页（公式分 <20）未逐页读：这些页 OCR 文本尚可用；要全册覆盖把阈值设 0 即可续跑。"
+          "口径不变：**知识点、例题数值、答案一律不从 OCR 抄**；需要公式时按本台账的逐页清单取，"
           "要再核就回原页 PDF（页码为 PDF 页，高中 5 册无文字层故未换算教材印刷页）。",
           "4. 本台账只做「读出并落盘」，**未据此改动任何知识点/题目的数值**——如有需要，下一步可拿台账逐点比对题库里的公式表述。",
           "",

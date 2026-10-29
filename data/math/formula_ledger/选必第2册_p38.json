@@ -1,0 +1,42 @@
+{
+ "book": "选必第2册",
+ "page": 38,
+ "score": 29,
+ "formula_count": 8,
+ "formulas": [
+  {
+   "formula": "a_n = 1050 × 1.05^{n-1}",
+   "ocr_missing": []
+  },
+  {
+   "formula": "b_n = 1 - [90% + 0.4%(n-1)] = 0.104 - 0.004n",
+   "ocr_missing": []
+  },
+  {
+   "formula": "a_n b_n = 1050 × 1.05^{n-1} × (0.104 - 0.004n)",
+   "ocr_missing": []
+  },
+  {
+   "formula": "= 1.05^n × (104 - 4n)",
+   "ocr_missing": []
+  },
+  {
+   "formula": "a_{n+1} b_{n+1} / a_n b_n = 1.05^{n+1} × [104 - 4(n+1)] / 1.05^n × (104 - 4n) < 1",
+   "ocr_missing": []
+  },
+  {
+   "formula": "n > 5",
+   "ocr_missing": []
+  },
+  {
+   "formula": "a_{13} b_{13} ≈ 98 < 100",
+   "ocr_missing": []
+  },
+  {
+   "formula": "a_n b_n ≤ a_{13} b_{13} < 100",
+   "ocr_missing": []
+  }
+ ],
+ "ocr_missing_total": 0,
+ "raw_head": "1. a_n = 1050 × 1.05^{n-1}\n2. b_n = 1 - [90% + 0.4%(n-1)] = 0.104 - 0.004n\n3. a_n b_n = 1050 × 1.05^{n-1} × (0.104 - 0.004n)\n4. = 1.05^n × (104 - 4n)\n5. a_{n+1} b_{n+1} / a_n b_n = 1.05^{n+1} × [104 - 4(n+1)] / 1.05^n × (104 - 4n) < 1\n6. n > 5\n7. a_{13} b_{13} ≈ 98 < 100\n8. a_n b_n ≤ a_{13} b_{13} <"
+}

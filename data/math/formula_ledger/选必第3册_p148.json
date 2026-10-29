@@ -1,0 +1,55 @@
+{
+ "book": "选必第3册",
+ "page": 148,
+ "score": 27,
+ "formula_count": 8,
+ "formulas": [
+  {
+   "formula": "w = read.csv(\"pm25.csv\")",
+   "ocr_missing": []
+  },
+  {
+   "formula": "plot(PM2.5 浓度 ~ 汽车流量, w)",
+   "ocr_missing": []
+  },
+  {
+   "formula": "\\begin{cases} \\hat{Y} = bx + a + e, \\\\ E(e) = 0, \\ D(e) = \\sigma^2, \\end{cases}",
+   "ocr_missing": [
+    "begin",
+    "cases",
+    "hat",
+    "sigma",
+    "end",
+    "cases"
+   ]
+  },
+  {
+   "formula": "\\hat{y} = \\hat{b}x + \\hat{a}",
+   "ocr_missing": [
+    "hat",
+    "hat",
+    "hat"
+   ]
+  },
+  {
+   "formula": "a = lm(PM2.5 浓度 ~ 汽车流量, w)",
+   "ocr_missing": []
+  },
+  {
+   "formula": "abline(a)",
+   "ocr_missing": []
+  },
+  {
+   "formula": "summary(a)",
+   "ocr_missing": []
+  },
+  {
+   "formula": "\\hat{y} = 138.60x - 99.69.",
+   "ocr_missing": [
+    "hat"
+   ]
+  }
+ ],
+ "ocr_missing_total": 10,
+ "raw_head": "1. w = read.csv(\"pm25.csv\")\n2. plot(PM2.5 浓度 ~ 汽车流量, w)\n3. \\begin{cases} \\hat{Y} = bx + a + e, \\\\ E(e) = 0, \\ D(e) = \\sigma^2, \\end{cases}\n4. \\hat{y} = \\hat{b}x + \\hat{a}\n5. a = lm(PM2.5 浓度 ~ 汽车流量, w)\n6. abline(a)\n7. summary(a)\n8. \\hat{y} = 138.60x - 99.69."
+}

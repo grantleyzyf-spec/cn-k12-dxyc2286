@@ -1,0 +1,93 @@
+{
+ "book": "选必第2册",
+ "page": 54,
+ "score": 37,
+ "formula_count": 13,
+ "formulas": [
+  {
+   "formula": "$a_n = \\frac{n-1}{n}$ ($n \\in \\mathbf{N}^*$).",
+   "ocr_missing": [
+    "frac",
+    "mathbf"
+   ]
+  },
+  {
+   "formula": "$n=1$时，①式左边=$a_1=0$，右边=$\\frac{1-1}{1}=0$",
+   "ocr_missing": [
+    "frac"
+   ]
+  },
+  {
+   "formula": "假设当 $n=k$ ($k \\in \\mathbf{N}^*$) 时，①式成立，即 $a_k = \\frac{k-1}{k}$，",
+   "ocr_missing": [
+    "mathbf",
+    "frac"
+   ]
+  },
+  {
+   "formula": "$a_{k+1} = \\frac{1}{2-a_k} = \\frac{1}{2-\\frac{k-1}{k}} = \\frac{k}{k+1} = \\frac{(k+1)-1}{k+1}$，",
+   "ocr_missing": [
+    "frac",
+    "frac",
+    "frac",
+    "frac",
+    "frac"
+   ]
+  },
+  {
+   "formula": "即当 $n=k+1$ 时，猜想也成立.",
+   "ocr_missing": []
+  },
+  {
+   "formula": "由 (1)(2) 可知，猜想对任何 $n \\in \\mathbf{N}^*$ 都成立.",
+   "ocr_missing": [
+    "mathbf"
+   ]
+  },
+  {
+   "formula": "设 $x$ 为实数，且 $x > -1$，$x \\neq 0$，$n$ 为大于1的正整数，记数列 $x, x(1+x), x(1+x)^2, \\cdots, x(1+x)^{n-1}, \\cdots$ 的前 $n$ 项和为 $S_n$，试比较 $S_n$ 与 $nx$ 的大小，并用数学归纳法证明你的结论.",
+   "ocr_missing": [
+    "neq",
+    "cdots",
+    "cdots"
+   ]
+  },
+  {
+   "formula": "$S_n = x + x(1+x) + x(1+x)^2 + \\cdots + x(1+x)^{n-1}$.",
+   "ocr_missing": [
+    "cdots"
+   ]
+  },
+  {
+   "formula": "当 $n=2$ 时，$S_2 = x + x(1+x) = x^2 + 2x$，由 $x \\neq 0$，知 $x^2 > 0$，可得 $S_2 > 2x$;",
+   "ocr_missing": [
+    "neq"
+   ]
+  },
+  {
+   "formula": "当 $n=3$ 时，$S_3 = x + x(1+x) + x(1+x)^2 = x^2(x+3) + 3x$，由 $x > -1$ 且 $x \\neq 0$，知 $x^2(x+3) > 0$，可得 $S_3 > 3x$.",
+   "ocr_missing": [
+    "neq"
+   ]
+  },
+  {
+   "formula": "由此，我们猜想，当 $x > -1$ 且 $x \\neq 0$，$n \\in \\mathbf{N}^*$ 且 $n > 1$ 时，$S_n > nx$.",
+   "ocr_missing": [
+    "neq",
+    "mathbf"
+   ]
+  },
+  {
+   "formula": "(1) 当 $n=2$ 时，由上述过程知，猜想成立.",
+   "ocr_missing": []
+  },
+  {
+   "formula": "(2) 假设当 $n=k$ ($k \\in \\mathbf{N}^*$，且 $k \\ge 2$) 时，不等式成立，即 $S_k > kx$，",
+   "ocr_missing": [
+    "mathbf"
+   ]
+  }
+ ],
+ "ocr_missing_total": 20,
+ "raw_head": "1. $a_n = \\frac{n-1}{n}$ ($n \\in \\mathbf{N}^*$).\n2. $n=1$时，①式左边=$a_1=0$，右边=$\\frac{1-1}{1}=0$\n3. 假设当 $n=k$ ($k \\in \\mathbf{N}^*$) 时，①式成立，即 $a_k = \\frac{k-1}{k}$，\n4. $a_{k+1} = \\frac{1}{2-a_k} = \\frac{1}{2-\\frac{k-1}{k}} = \\frac{k}{k+1} = \\frac{(k+1)-1}{k+1}$，\n5. 即当 $n=k+1$ 时，猜想也成立.\n6. 由 (1)(2) 可知，猜想对"
+}

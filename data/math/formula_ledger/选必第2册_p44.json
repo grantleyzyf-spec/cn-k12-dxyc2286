@@ -1,0 +1,118 @@
+{
+ "book": "选必第2册",
+ "page": 44,
+ "score": 44,
+ "formula_count": 22,
+ "formulas": [
+  {
+   "formula": "a_n = 20(1 + 5%)^n",
+   "ocr_missing": []
+  },
+  {
+   "formula": "b_n = 6 + 1.5n",
+   "ocr_missing": []
+  },
+  {
+   "formula": "S_n = (a_1 - b_1) + (a_2 - b_2) + … + (a_n - b_n)",
+   "ocr_missing": []
+  },
+  {
+   "formula": "= (a_1 + a_2 + … + a_n) - (b_1 + b_2 + … + b_n)",
+   "ocr_missing": []
+  },
+  {
+   "formula": "= (20 × 1.05 + 20 × 1.05² + … + 20 × 1.05^n) - (7.5 + 9 + … + 6 + 1.5n)",
+   "ocr_missing": []
+  },
+  {
+   "formula": "= \\frac{(20 × 1.05)(1 - 1.05^n)}{1 - 1.05} - \\frac{n}{2}(7.5 + 6 + 1.5n)",
+   "ocr_missing": [
+    "frac",
+    "frac"
+   ]
+  },
+  {
+   "formula": "= 420 × 1.05^n - \\frac{3}{4}n² - \\frac{27}{4}n - 420",
+   "ocr_missing": [
+    "frac",
+    "frac"
+   ]
+  },
+  {
+   "formula": "当n = 5时，S₅ ≈ 63.5",
+   "ocr_missing": []
+  },
+  {
+   "formula": "所以，从今年起5年内，通过填埋方式处理的垃圾总量约为63.5万吨",
+   "ocr_missing": []
+  },
+  {
+   "formula": "例12 某牧场今年初牛的存栏数为1200，预计以后每年存栏数的增长率为8%，且在每年年底卖出100头牛。设牧场从今年起每年年初的计划存栏数依次为c₁, c₂, c₃, …",
+   "ocr_missing": []
+  },
+  {
+   "formula": "(1) 写出一个递推公式，表示c_{n+1}与c_n之间的关系；",
+   "ocr_missing": []
+  },
+  {
+   "formula": "(2) 将(1)中的递推公式表示成c_{n+1} - k = r(c_n - k)的形式，其中k, r为常数；",
+   "ocr_missing": []
+  },
+  {
+   "formula": "(3) 求S₁₀ = c₁ + c₂ + c₃ + … + c₁₀的值（精确到1）",
+   "ocr_missing": []
+  },
+  {
+   "formula": "分析：(1) 可以利用“每年存栏数的增长率为8%”和“每年年底卖出100头”建立c_{n+1}与c_n的关系；(2) 这是待定系数法的应用，可以将它还原为(1)中的递推公式的形式，通过比较系数，得到方程组；(3) 利用(2)的结论可得出解答",
+   "ocr_missing": []
+  },
+  {
+   "formula": "解：(1) 由题意，得c₁ = 1200，并且",
+   "ocr_missing": []
+  },
+  {
+   "formula": "c_{n+1} = 1.08c_n - 100 \\quad①",
+   "ocr_missing": [
+    "quad"
+   ]
+  },
+  {
+   "formula": "(2) 将c_{n+1} - k = r(c_n - k)化成",
+   "ocr_missing": []
+  },
+  {
+   "formula": "c_{n+1} = rc_n - rk + k \\quad②",
+   "ocr_missing": [
+    "quad"
+   ]
+  },
+  {
+   "formula": "比较①②的系数，可得",
+   "ocr_missing": []
+  },
+  {
+   "formula": "\\begin{cases} r = 1.08, \\\\ k - rk = -100. \\end{cases}",
+   "ocr_missing": [
+    "begin",
+    "cases",
+    "end",
+    "cases"
+   ]
+  },
+  {
+   "formula": "解这个方程组，得",
+   "ocr_missing": []
+  },
+  {
+   "formula": "\\begin{cases} r = 1.08, \\\\ k = 1250. \\end{cases}",
+   "ocr_missing": [
+    "begin",
+    "cases",
+    "end",
+    "cases"
+   ]
+  }
+ ],
+ "ocr_missing_total": 14,
+ "raw_head": "1. a_n = 20(1 + 5%)^n\n2. b_n = 6 + 1.5n\n3. S_n = (a_1 - b_1) + (a_2 - b_2) + … + (a_n - b_n)\n4. = (a_1 + a_2 + … + a_n) - (b_1 + b_2 + … + b_n)\n5. = (20 × 1.05 + 20 × 1.05² + … + 20 × 1.05^n) - (7.5 + 9 + … + 6 + 1.5n)\n6. = \\frac{(20 × 1.05)(1 - 1.05^n)}{1 - 1.05} - \\frac{n}{2}(7.5 + 6 + 1.5n)\n7. = "
+}

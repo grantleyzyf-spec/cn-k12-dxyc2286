@@ -1,0 +1,64 @@
+{
+ "book": "选必第3册",
+ "page": 78,
+ "score": 36,
+ "formula_count": 10,
+ "formulas": [
+  {
+   "formula": "i = 1, 2, 3",
+   "ocr_missing": []
+  },
+  {
+   "formula": "P(X=0) = P(A₁\\bar{A}_2\\bar{A}_3) = 0.2³",
+   "ocr_missing": [
+    "bar",
+    "bar"
+   ]
+  },
+  {
+   "formula": "P(X=1) = P(A₁\\bar{A}_2\\bar{A}_3) + P(\\bar{A}_1A_2\\bar{A}_3) + P(\\bar{A}_1\\bar{A}_2A_3) = 3 × 0.8 × 0.2²",
+   "ocr_missing": [
+    "bar",
+    "bar",
+    "bar",
+    "bar",
+    "bar",
+    "bar"
+   ]
+  },
+  {
+   "formula": "P(X=2) = P(A_1A_2\\bar{A}_3) + P(A_1\\bar{A}_2A_3) + P(\\bar{A}_1A_2A_3) = 3 × 0.8² × 0.2",
+   "ocr_missing": [
+    "bar",
+    "bar",
+    "bar"
+   ]
+  },
+  {
+   "formula": "P(X=3) = P(A_1A_2A_3) = 0.8³",
+   "ocr_missing": []
+  },
+  {
+   "formula": "0.8² × 0.2",
+   "ocr_missing": []
+  },
+  {
+   "formula": "P(X=k) = C_n^k × 0.8^k × 0.2^{n-k}, k=0, 1, 2, 3.",
+   "ocr_missing": []
+  },
+  {
+   "formula": "0 < p < 1",
+   "ocr_missing": []
+  },
+  {
+   "formula": "P(X=k) = C_n^k p^k (1-p)^{n-k}, k=0, 1, 2, ..., n.",
+   "ocr_missing": []
+  },
+  {
+   "formula": "X ~ B(n, p)",
+   "ocr_missing": []
+  }
+ ],
+ "ocr_missing_total": 11,
+ "raw_head": "1. i = 1, 2, 3\n2. P(X=0) = P(A₁\\bar{A}_2\\bar{A}_3) = 0.2³\n3. P(X=1) = P(A₁\\bar{A}_2\\bar{A}_3) + P(\\bar{A}_1A_2\\bar{A}_3) + P(\\bar{A}_1\\bar{A}_2A_3) = 3 × 0.8 × 0.2²\n4. P(X=2) = P(A_1A_2\\bar{A}_3) + P(A_1\\bar{A}_2A_3) + P(\\bar{A}_1A_2A_3) = 3 × 0.8² × 0.2\n5. P(X=3) = P(A_1A_2A_3) = 0.8³\n6. 0.8² × 0.2"
+}
