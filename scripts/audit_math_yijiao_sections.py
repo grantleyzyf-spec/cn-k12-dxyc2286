@@ -39,7 +39,9 @@ GENERIC = ["练习", "整理和复习", "复习与关联", "数学游戏", "数�
 
 
 def core(s):
-    s = re.sub(r"[\s　（）()【】\[\]、，,．.·・「」“”\"'’!！?？:：;；—\-]", "", s or "")
+    # 「～/~/-/－」统一成「-」（一上「1～5的认识」与图谱「1-5的认识」必须能对上）
+    s = re.sub(r"[～~－—-]", "-", s or "")
+    s = re.sub(r"[\s　（）()【】\[\]、，,．.·・「」“”\"'’!！?？:：;；]", "", s)
     for w in STOP:
         s = s.replace(w, "")
     return s
@@ -197,16 +199,20 @@ def main():
             if not pdfs:
                 pdfs = [p for p in glob.glob(f"{base}/*.pdf") if name[:3] in p]
             units = sorted({t["chapter"].split(" ", 1)[1].split(" ", 1)[-1] for t in ts})
-            txts = [x for x in glob.glob(f"{base}/{name}/教学设计/*每节内容对应页码*.txt")
-                    if "草稿" not in os.path.basename(x)]
+            # 优先级：人工定稿 > 自动稿（自动稿名字级只对得上五上人工件 61%，只作兜底）
+            cands = [x for x in glob.glob(f"{base}/{name}/教学设计/*每节内容对应页码*.txt")
+                     if "草稿" not in os.path.basename(x)]
+            final = [x for x in cands if "自动稿" not in os.path.basename(x)]
+            txts = final or cands
             if txts:
                 secs = keshi_from_txt(txts[0])
-                gran = "课时(TXT)"
+                gran = "课时(定稿TXT)" if final else "课时(自动稿TXT·待校)"
             elif pdfs:
                 secs, unit_sz, ke_sz = keshi_from_pdf(pdfs[0], units)
+                gran = "课时(字号抽取)"
             else:
                 secs, unit_sz, ke_sz = [], 24.0, 18.0
-            gran = "课时"
+                gran = "课时(无来源)"
         for i, s2 in enumerate(secs, 1):
             s2.setdefault("no", s2.get("no") or f"#{i}")
         ok, miss = 0, []
