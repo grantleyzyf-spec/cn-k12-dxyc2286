@@ -45,6 +45,16 @@
             background: var(--brand-soft); color: var(--brand-ink); font-size: 13.5px; line-height: 1.75; }
   .beian { text-align: center; color: var(--ink-3); font-size: 12.5px; padding: 10px 0 26px; }
   .beian a { color: inherit; }
+  /* 公众号卡片 */
+  .panel.wx { display: flex; gap: 18px; align-items: center; }
+  .wx-qr img { display: block; width: 132px; height: 132px; border-radius: 8px;
+               border: 1px solid var(--line); image-rendering: pixelated; background: #fff; }
+  .wx-text h2 { margin: 0 0 6px; }
+  .wx-name { font-size: 18px; font-weight: 700; color: var(--brand-ink); margin: 0 0 8px; }
+  .wx-text .hint { margin: 0; }
+  @media (max-width: 680px) {
+    .panel.wx { flex-direction: column; align-items: flex-start; }
+  }
 </style>
 </head>
 <body>
@@ -87,6 +97,15 @@
       <button class="copy" data-copy="grantleyzyf@gmail.com">复制邮箱</button>
     </section>
   </div>
+
+  <section class="panel wx">
+    <div class="wx-qr"><img src="../assets/wechat-mp-qr.png" alt="微信公众号「学霸轻松养成过程」二维码" width="132" height="132"></div>
+    <div class="wx-text">
+      <h2>微信公众号</h2>
+      <p class="wx-name">学霸轻松养成过程</p>
+      <p class="hint">微信扫一扫关注。公众号同步更新教材内容拆解与知识点讲解文章；本站负责图谱浏览与自适应诊断，两边内容互补。</p>
+    </div>
+  </section>
 
   <section class="panel">
     <h2>说这些最有用</h2>
