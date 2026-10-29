@@ -81,6 +81,15 @@
     box.textContent = msg;
   }
 
+  // 把页面里 <span data-stat="topics"> 之类的占位改成 stats.json 的实时数字
+  function fillStatTexts(s) {
+    if (!s) return;
+    document.querySelectorAll('[data-stat]').forEach(function (el) {
+      var k = el.getAttribute('data-stat');
+      if (s[k] !== undefined && s[k] !== null) el.textContent = s[k];
+    });
+  }
+
   fetch('data/stats.json', { cache: 'no-cache' })
     .then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
@@ -89,10 +98,12 @@
     .then(function (s) {
       renderStats(s);
       renderSubjects(s);
+      fillStatTexts(s);
     })
     .catch(function (e) {
       renderStats(FALLBACK);
       renderSubjects(FALLBACK);
+      fillStatTexts(FALLBACK);
       showError('统计文件读取失败（' + e.message + '），已回退到内置基线数字。请用本地静态服务器打开页面，或稍后重试。');
     });
 })();

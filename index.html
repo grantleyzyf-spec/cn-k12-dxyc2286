@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>中国 K-12 全学科知识图谱 · 先找到真正没学会的那一步</title>
-<meta name="description" content="17 个学科、1924 个知识点、2199 条先修边、1924 道诊断题的知识图谱。沿先修关系自适应出题，从选中的知识点往回找到薄弱根因，并给出按学习顺序排好的路径。">
+<meta name="description" content="17 个学科的中小学知识图谱：知识点、先修关系、诊断题与课标条目。沿先修关系自适应出题，从选中的知识点往回追到薄弱根因，并按学习顺序给出补学路径。免费公益。">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%227%22%20fill%3D%22%230f6e62%22%2F%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%222.6%22%20fill%3D%22%23dff3ef%22%2F%3E%3Ccircle%20cx%3D%2222%22%20cy%3D%2210%22%20r%3D%222.6%22%20fill%3D%22%23dff3ef%22%2F%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2222%22%20r%3D%222.6%22%20fill%3D%22%23dff3ef%22%2F%3E%3Ccircle%20cx%3D%2222%22%20cy%3D%2222%22%20r%3D%222.6%22%20fill%3D%22%23dff3ef%22%2F%3E%3Cpath%20d%3D%22M10%2010h12M10%2010v12M22%2022h-12%22%20stroke%3D%22%23dff3ef%22%20stroke-width%3D%221.4%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#0f6e62">
@@ -16,7 +16,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="学科图谱">
 <meta property="og:title" content="学科图谱 · 找到真正没学会的那一步">
-<meta property="og:description" content="17 学科、1924 个知识点、2199 条先修关系。沿先修关系自适应出题，回溯到薄弱根因，并按年级排出补学路径。免费公益。">
+<meta property="og:description" content="17 学科的中小学知识图谱：知识点、先修关系、诊断题与课标条目。沿先修关系自适应出题，回溯到薄弱根因，并按年级排出补学路径。免费公益。">
 <meta property="og:url" content="https://xueketupu.com/">
 <meta property="og:image" content="https://xueketupu.com/assets/og.png">
 <meta property="og:image:width" content="1200">
@@ -57,7 +57,7 @@
 
 <main class="home">
   <section class="hero">
-    <p class="eyebrow">17 个学科 · 小学到高中 · 1924 个知识点 · 2199 条先修边</p>
+    <p class="eyebrow">17 个学科 · 小学到高中 · <span data-stat="topics">—</span> 个知识点 · <span data-stat="dependencies">—</span> 条先修边</p>
     <h1>先找到真正没学会的那一步</h1>
     <p class="lede">
       沿先修关系自适应出题：从你选的知识点往回追，逐层检测前置知识，定位薄弱根因，
@@ -101,7 +101,7 @@
   <div class="subject-grid" id="subjects" aria-busy="true"></div>
 
   <div class="notice">
-    <strong>口径提醒：</strong>「已挂课标」不等于「已对齐」。1924 个知识点里 1905 个写了课标条目，其中 <strong>1905</strong> 个带可逐字复核的课标原文引文（<code>quote</code>）。
+    <strong>口径提醒：</strong>「已挂课标」不等于「已对齐」。<span data-stat="topics">—</span> 个知识点里 <span data-stat="topics_with_standards">—</span> 个写了课标条目，其中 <strong><span data-stat="topics_with_quote">—</span></strong> 个带可逐字复核的课标原文引文（<code>quote</code>）。
     所有先修边与题目都是 AI 初稿，未经一线教师审核。
   </div>
 
