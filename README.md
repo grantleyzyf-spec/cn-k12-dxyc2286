@@ -8,7 +8,9 @@
 [![课标引文](https://img.shields.io/badge/%E5%B8%A6%E5%8E%9F%E6%96%87%E5%BC%95%E6%96%87-2123%2F2135-orange)](data/cn-curriculum-standards.json)
 [![GitHub Pages](https://img.shields.io/badge/%E7%AB%99%E7%82%B9-GitHub%20Pages-lightgrey)](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/)
 
-**[→ 在线浏览](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/)** · [知识图谱](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/explore/) · [自适应诊断](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/diagnose/) · [学习档案](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/children/) · [诊断记录](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/children/history.html) · [❤️ 赞助支持](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/sponsor/)
+**[→ 在线浏览](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/)** · [知识图谱](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/explore/) · [自适应诊断](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/diagnose/) · [学习档案](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/children/) · [诊断记录](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/children/history.html) · [联系与反馈](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/contact/) · [❤️ 赞助支持](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/sponsor/)
+
+**微信公众号：学霸轻松养成过程**（同步更新教材内容拆解与知识点讲解文章；本站负责图谱浏览与自适应诊断）
 
 ![首页：一句话说明、三步用法、实时统计与 17 个学科入口](screenshots/01-home.png)
 
