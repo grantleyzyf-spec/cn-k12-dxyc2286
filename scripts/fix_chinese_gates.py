@@ -12,7 +12,10 @@ REPO = os.path.expanduser("~/Desktop/cn-k12-dxyc2286")
 TP, QP = f"{REPO}/data/chinese/topics.json", f"{REPO}/data/chinese/questions.json"
 WRITE = "--write" in sys.argv
 
-KP_FIX = {"不浪费": "不浪费食物"}
+KP_FIX = {"不浪费": "不浪费食物", "不算晚": "补救还不算晚",
+          "辽阔": "草原辽阔", "苍茫": "四野苍茫",
+          "高矮": "树的高矮", "叶形": "叶子的形状", "叶色": "叶子的颜色",
+          "当朋友": "把动物当朋友"}
 
 
 def main():
