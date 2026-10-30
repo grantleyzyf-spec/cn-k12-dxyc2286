@@ -9,7 +9,7 @@ REPO = os.path.expanduser("~/Desktop/cn-k12-dxyc2286")
 TP, QP, DP = (f"{REPO}/data/chinese/{x}" for x in ("topics.json", "questions.json", "dependencies.json"))
 WRITE = "--write" in sys.argv
 YD01 = {"id": "cyw-2022:2.YD.02", "confidence": "partial", "quote": "能联系上下文，理解词句的意思", "sourceLine": 369}
-YD03 = {"id": "cyw-2022:2.YD.03", "confidence": "partial", "quote": "诵读优秀诗文，注意在诵读过程中体验情感，展开想象", "sourceLine": 388}
+YD03 = {"id": "cyw-2022:2.YD.04", "confidence": "partial", "quote": "诵读优秀诗文，注意在诵读过程中体验情感，展开想象", "sourceLine": 388}
 
 U1, U2, U3 = "三年级上册 第一单元", "三年级上册 第二单元", "三年级上册 第三单元"
 
