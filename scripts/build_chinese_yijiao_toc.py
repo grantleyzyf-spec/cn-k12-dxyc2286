@@ -79,24 +79,35 @@ def main():
             status = "pending_manual"
             units = items_src
         elif mode == "gold_merge":
-            # gold 优先：gold 的篇名是逐课快照（33–36 条/册，质量高）；解析稿只提供「单元归属 + 页码」
+            # 单调指针匹配：gold 按教材顺序逐个来，解析稿也按页码排序后只能「向后」找。
+            # 这样同名的多篇（古诗三首）会各自吃掉下一个出现位置，不会重复指向同一页；
+            # 找不到的 gold 条目落到当前单元、页码留空待核。
             status = "draft_gold_first"
+            parsed = sorted([(u["unit"], it) for u in items_src for it in u["items"]],
+                            key=lambda x: x[1]["page"])
             units, index = [], {}
-            for u in items_src:
-                if u["unit"] not in index:
-                    index[u["unit"]] = {"unit": u["unit"], "items": []}
-                    units.append(index[u["unit"]])
-            flat = [(u["unit"], it) for u in items_src for it in u["items"]]
+            for unit, _ in parsed:
+                if unit not in index:
+                    index[unit] = {"unit": unit, "items": []}
+                    units.append(index[unit])
+            cur_unit = parsed[0][0] if parsed else "全册"
+            ptr = 0
             for board, gn in gold:
                 key = norm(gn)
-                best, bestunit = None, units[-1]["unit"] if units else "全册"
-                for unit, it in flat:
-                    k2 = norm(it["name"])
+                hit = None
+                for j in range(ptr, len(parsed)):
+                    k2 = norm(parsed[j][1]["name"])
                     if k2 and (k2 in key or key in k2):
-                        best, bestunit = it, unit
+                        hit = j
                         break
-                index[bestunit]["items"].append(
-                    {"kind": "课", "name": gn, "page": (best or {}).get("page")})
+                if hit is not None:
+                    unit, it = parsed[hit]
+                    ptr = hit + 1
+                    cur_unit = unit
+                    index[unit]["items"].append({"kind": it["kind"] if it["kind"] != "课" else "课",
+                                                 "name": gn, "page": it["page"]})
+                else:
+                    index[cur_unit]["items"].append({"kind": "课", "name": gn, "page": None, "need_page": True})
         else:
             status = "parse_only"
             units = items_src
