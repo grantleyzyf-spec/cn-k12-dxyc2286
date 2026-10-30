@@ -26,8 +26,7 @@ RISK = "/tmp/mtoc/formula_risk.json"
 LOG = "/tmp/fml_guard.log"
 THRESHOLD = 20
 RUN_WHEN_NOT_PEAK = True              # 谷段（含 12–14、18–9、周末）都跑
-PEAK = [((8, 0), (12, 0)), ((14, 0), (18, 0))]        # 工作日峰段（周一 08–09 除外，见 MON_PEAK）
-MON_PEAK = [((9, 0), (12, 0)), ((14, 0), (18, 0))]   # 周一实际峰段（0:00–9:00 属谷）
+PEAK = [((9, 0), (12, 0)), ((14, 0), (18, 0))]   # 工作日峰（周一 0:00–9:00 属谷，无需特例）
 PEAK_WEEKDAYS_ONLY = True                            # 周六/周日全天 = 谷
 TICK = 45
 
@@ -44,12 +43,12 @@ def in_window(now_min, win):
 
 def state_now(now=None):
     """→ 'peak'（该停）或 'valley'（该跑）。
-    工作日峰 08:00–12:00、14:00–18:00；**周一 08:00–09:00 属谷**；周末全天谷。"""
+    工作日峰 08:00–12:00、14:00–18:00；**周一 0:00–09:00 属谷**；周末全天谷。"""
     now = now or dt.datetime.now()
     if PEAK_WEEKDAYS_ONLY and now.weekday() >= 5:      # 周六=5、周日=6 → 全天谷
         return "valley"
     m = now.hour * 60 + now.minute
-    win = MON_PEAK if now.weekday() == 0 else PEAK      # 周一 0:00–9:00 属谷
+    win = PEAK
     return "peak" if any(in_window(m, w) for w in win) else "valley"
 
 
