@@ -1,0 +1,1089 @@
+{
+ "book": "选择性必修第三册",
+ "kind": "final",
+ "term": "上册",
+ "grade": 13,
+ "stage": "高中",
+ "paper": "期末测试卷A",
+ "duration": 120,
+ "fullScore": 150,
+ "scope": [
+  "第六章 计数原理",
+  "第七章 随机变量及其分布",
+  "第八章 成对数据的统计分析"
+ ],
+ "examId": "mat_exam_xx3_fin_a",
+ "sections": [
+  {
+   "title": "一、单选题",
+   "rule": "每小题 5 分，共 40 分",
+   "items": [
+    {
+     "no": 1,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h451"
+     ],
+     "stem": "从 3 名教师、4 名医生、5 名工程师中任选 1 人参加座谈会，则不同的选法共有（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "60 种"
+      },
+      {
+       "label": "B",
+       "text": "12 种"
+      },
+      {
+       "label": "C",
+       "text": "9 种"
+      },
+      {
+       "label": "D",
+       "text": "3 种"
+      }
+     ],
+     "answer": "B",
+     "analysis": "三类人员互不重叠，任选 1 人属于分类完成这件事，由分类加法计数原理得 3+4+5=12 种。若误用乘法会得到并不完成任务的 60。",
+     "itemId": "mat_exam_xx3_fin_a_q01",
+     "prereq": [],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h451_q1",
+       "topicId": "mat_h451",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h451_q2",
+       "topicId": "mat_h451",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h451_q3",
+       "topicId": "mat_h451",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h454"
+     ],
+     "stem": "计算 A(6,3)−C(6,3) 的值为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "100"
+      },
+      {
+       "label": "B",
+       "text": "90"
+      },
+      {
+       "label": "C",
+       "text": "80"
+      },
+      {
+       "label": "D",
+       "text": "60"
+      }
+     ],
+     "answer": "A",
+     "analysis": "A(6,3)=6×5×4=120，C(6,3)=20，故差为 100；也可用 C(6,3)×3!=20×6=120 得到排列数再相减。",
+     "itemId": "mat_exam_xx3_fin_a_q02",
+     "prereq": [
+      "mat_h453"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h454_q1",
+       "topicId": "mat_h454",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h454_q2",
+       "topicId": "mat_h454",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h454_q3",
+       "topicId": "mat_h454",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h458"
+     ],
+     "stem": "二项式 (x+2)⁷ 的展开式中，x⁵ 的系数为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "21"
+      },
+      {
+       "label": "B",
+       "text": "42"
+      },
+      {
+       "label": "C",
+       "text": "84"
+      },
+      {
+       "label": "D",
+       "text": "168"
+      }
+     ],
+     "answer": "C",
+     "analysis": "通项为 C(7,k)x^(7−k)2^k，令 7−k=5 得 k=2，故系数为 C(7,2)×2²=21×4=84。",
+     "itemId": "mat_exam_xx3_fin_a_q03",
+     "prereq": [
+      "mat_h457"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h458_q1",
+       "topicId": "mat_h458",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h458_q2",
+       "topicId": "mat_h458",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h458_q3",
+       "topicId": "mat_h458",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h461",
+      "mat_h460"
+     ],
+     "stem": "100 件产品中有 5 件次品，不放回地依次抽取 2 件。已知第一件是正品，则第二件是次品的概率为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "1/19"
+      },
+      {
+       "label": "B",
+       "text": "5/99"
+      },
+      {
+       "label": "C",
+       "text": "5/100"
+      },
+      {
+       "label": "D",
+       "text": "4/99"
+      }
+     ],
+     "answer": "B",
+     "analysis": "第一件取走 1 件正品后，剩下 99 件中仍有 5 件次品，故所求条件概率为 5/99，样本空间已由 100 件缩小为 99 件。",
+     "itemId": "mat_exam_xx3_fin_a_q04",
+     "prereq": [
+      "mat_h460"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h461_q1",
+       "topicId": "mat_h461",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h461_q2",
+       "topicId": "mat_h461",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h461_q3",
+       "topicId": "mat_h461",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h463"
+     ],
+     "stem": "某抽奖游戏中，参与者每次抽到的分值为 0 分、1 分、2 分，其概率依次为 0.2、a、0.3。若游戏规则保证每次必得其中一个分值，则 a 的值为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.3"
+      },
+      {
+       "label": "B",
+       "text": "0.4"
+      },
+      {
+       "label": "C",
+       "text": "0.5"
+      },
+      {
+       "label": "D",
+       "text": "0.6"
+      }
+     ],
+     "answer": "C",
+     "analysis": "每次必得其中一个分值，说明三个概率构成完整的分布列，其和为 1，由 0.2+a+0.3=1 得 a=0.5，这就是分布列概率之和为 1 的性质。",
+     "itemId": "mat_exam_xx3_fin_a_q05",
+     "prereq": [
+      "mat_h462"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h463_q1",
+       "topicId": "mat_h463",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h463_q2",
+       "topicId": "mat_h463",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h463_q3",
+       "topicId": "mat_h463",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h470"
+     ],
+     "stem": "设随机变量 X 服从正态分布 N(2,σ²)，若 P(X<0)=0.1，则 P(2<X<4) 的值为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.1"
+      },
+      {
+       "label": "B",
+       "text": "0.2"
+      },
+      {
+       "label": "C",
+       "text": "0.3"
+      },
+      {
+       "label": "D",
+       "text": "0.4"
+      }
+     ],
+     "answer": "D",
+     "analysis": "由正态曲线的对称性 P(X>4)=P(X<0)=0.1，故 P(0<X<4)=1−0.1−0.1=0.8；x=2 是对称轴，所以 P(2<X<4)=0.8/2=0.4。",
+     "itemId": "mat_exam_xx3_fin_a_q06",
+     "prereq": [
+      "mat_h469"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h470_q1",
+       "topicId": "mat_h470",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h470_q2",
+       "topicId": "mat_h470",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h470_q3",
+       "topicId": "mat_h470",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h473"
+     ],
+     "stem": "某组样本数据的样本相关系数 r=−0.95，则下列判断正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "两个变量负相关，且线性相关程度很强"
+      },
+      {
+       "label": "B",
+       "text": "两个变量正相关，且线性相关程度很强"
+      },
+      {
+       "label": "C",
+       "text": "两个变量负相关，但线性相关程度很弱"
+      },
+      {
+       "label": "D",
+       "text": "两个变量之间没有线性相关关系"
+      }
+     ],
+     "answer": "A",
+     "analysis": "r<0 说明两个变量负相关；|r|=0.95 很接近 1，说明线性相关程度很强，样本点集中在一条下降的直线附近。",
+     "itemId": "mat_exam_xx3_fin_a_q07",
+     "prereq": [
+      "mat_h472"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h473_q1",
+       "topicId": "mat_h473",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h473_q2",
+       "topicId": "mat_h473",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h473_q3",
+       "topicId": "mat_h473",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h476"
+     ],
+     "stem": "由一组样本数据求得经验回归方程为 ŷ=2x+1，且样本中心点的横坐标 x̄=3，则样本中心点的纵坐标 ȳ 为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "8"
+      },
+      {
+       "label": "B",
+       "text": "7"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "B",
+     "analysis": "经验回归直线必经过样本中心点 (x̄, ȳ)，把 x̄=3 代入 ŷ=2x+1 得 ȳ=7，这可以作为检验回归方程的重要依据。",
+     "itemId": "mat_exam_xx3_fin_a_q08",
+     "prereq": [
+      "mat_h475"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h476_q1",
+       "topicId": "mat_h476",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h476_q2",
+       "topicId": "mat_h476",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h476_q3",
+       "topicId": "mat_h476",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "二、多选题",
+   "rule": "每小题 5 分，共 20 分（全部选对得 5 分，部分选对得部分分，有选错得 0 分）",
+   "items": [
+    {
+     "no": 9,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h457",
+      "mat_h458",
+      "mat_h459"
+     ],
+     "stem": "关于二项式 (√x+1/x)⁶ 的展开式，下列结论正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "常数项为 15"
+      },
+      {
+       "label": "B",
+       "text": "含 x⁻³ 的项的系数为 15"
+      },
+      {
+       "label": "C",
+       "text": "展开式中的有理项共有 4 项"
+      },
+      {
+       "label": "D",
+       "text": "展开式所有项的系数之和为 32"
+      }
+     ],
+     "answer": "ABC",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对 1 项得 2 分，选对 2 项得 4 分）",
+      "有选错得 0 分"
+     ],
+     "analysis": "通项为 C(6,k)(√x)^(6−k)(1/x)^k=C(6,k)x^(3−3k/2)。令指数为 0 得 k=2，常数项 C(6,2)=15，A 对；令指数为 −3 得 k=4，系数 C(6,4)=15，B 对；指数为整数需 k 取偶数，k=0,2,4,6 共 4 项，C 对；令 x=1 得系数和 2⁶=64 而非 32，D 错。",
+     "itemId": "mat_exam_xx3_fin_a_q09",
+     "prereq": [
+      "mat_h456",
+      "mat_h457",
+      "mat_h458"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h457_q1",
+       "topicId": "mat_h457",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h457_q2",
+       "topicId": "mat_h457",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h457_q3",
+       "topicId": "mat_h457",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h465",
+      "mat_h466",
+      "mat_h464"
+     ],
+     "stem": "已知随机变量 X 满足 E(X)=−1，D(X)=2，则下列结论正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "E(1−2X)=3"
+      },
+      {
+       "label": "B",
+       "text": "D(1−2X)=−8"
+      },
+      {
+       "label": "C",
+       "text": "E(X²)=3"
+      },
+      {
+       "label": "D",
+       "text": "若 Y=X+1，则 E(Y)=0"
+      }
+     ],
+     "answer": "ACD",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对 1 项得 2 分，选对 2 项得 4 分）",
+      "有选错得 0 分"
+     ],
+     "analysis": "E(1−2X)=1−2×(−1)=3，A 对；方差恒非负，D(1−2X)=(−2)²×2=8，B 错；由 D(X)=E(X²)−[E(X)]² 得 E(X²)=2+1=3，C 对；E(X+1)=−1+1=0，D 对。",
+     "itemId": "mat_exam_xx3_fin_a_q10",
+     "prereq": [
+      "mat_h464",
+      "mat_h465",
+      "mat_h463"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h465_q1",
+       "topicId": "mat_h465",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h465_q2",
+       "topicId": "mat_h465",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h465_q3",
+       "topicId": "mat_h465",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h468",
+      "mat_h469"
+     ],
+     "stem": "袋中装有 5 个红球和 3 个白球。从中有放回地每次摸出 1 个球，共摸 3 次，用 X 表示摸到红球的次数，则下列结论正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "X 服从二项分布 B(3,5/8)"
+      },
+      {
+       "label": "B",
+       "text": "P(X=1)=135/512"
+      },
+      {
+       "label": "C",
+       "text": "E(X)=15/8"
+      },
+      {
+       "label": "D",
+       "text": "D(X)=15/8"
+      }
+     ],
+     "answer": "ABC",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对 1 项得 2 分，选对 2 项得 4 分）",
+      "有选错得 0 分"
+     ],
+     "analysis": "有放回摸球，各次独立且每次摸到红球的概率都是 5/8，故 X~B(3,5/8)，A 对；P(X=1)=C(3,1)(5/8)(3/8)²=135/512，B 对；E(X)=3×5/8=15/8，C 对；D(X)=3×5/8×3/8=45/64，D 错。",
+     "itemId": "mat_exam_xx3_fin_a_q11",
+     "prereq": [
+      "mat_h467",
+      "mat_h468"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h468_q1",
+       "topicId": "mat_h468",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h468_q2",
+       "topicId": "mat_h468",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h468_q3",
+       "topicId": "mat_h468",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h478",
+      "mat_h477"
+     ],
+     "stem": "对 200 名学生的抽样调查数据作独立性检验，算得 χ²≈4.5。附：α=0.05 时的临界值为 3.841，α=0.01 时的临界值为 6.635。则下列结论正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "依据 α=0.05 的独立性检验，可认为两个变量有关联"
+      },
+      {
+       "label": "B",
+       "text": "依据 α=0.01 的独立性检验，可认为两个变量有关联"
+      },
+      {
+       "label": "C",
+       "text": "按第一项中的判断，推断犯错误的概率不超过 0.05"
+      },
+      {
+       "label": "D",
+       "text": "若另一组数据的 χ²=7.2，则依据 α=0.01 的独立性检验可认为两个变量有关联"
+      }
+     ],
+     "answer": "ACD",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对 1 项得 2 分，选对 2 项得 4 分）",
+      "有选错得 0 分"
+     ],
+     "analysis": "4.5>3.841 而 4.5<6.635，故在 α=0.05 下认为有关联、在 α=0.01 下没有充分证据认为有关联，A 对 B 错；小概率值 α 就是该判断出错概率的上界，C 对；7.2>6.635，D 对。",
+     "itemId": "mat_exam_xx3_fin_a_q12",
+     "prereq": [
+      "mat_h477",
+      "mat_h476"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h478_q1",
+       "topicId": "mat_h478",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h478_q2",
+       "topicId": "mat_h478",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h478_q3",
+       "topicId": "mat_h478",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "三、填空题",
+   "rule": "每小题 5 分，共 20 分",
+   "items": [
+    {
+     "no": 13,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h453"
+     ],
+     "stem": "5 名同学站成一排照相，若甲必须站在乙的左边（可以不相邻），则不同的站法共有 ______ 种。",
+     "answer": "60",
+     "analysis": "5 人全排列共 5!=120 种，其中甲在乙左边与甲在乙右边的站法一一配对、各占一半，故有 120/2=60 种。",
+     "itemId": "mat_exam_xx3_fin_a_q13",
+     "prereq": [
+      "mat_h452"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h453_q1",
+       "topicId": "mat_h453",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h453_q2",
+       "topicId": "mat_h453",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h453_q3",
+       "topicId": "mat_h453",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h455"
+     ],
+     "stem": "从 6 本不同的书中选出 3 本，若其中某一本指定的书必须入选，则不同的选法共有 ______ 种。",
+     "answer": "10",
+     "analysis": "指定书已入选，只需从其余 5 本中再选 2 本，即 C(5,2)=10 种。选书与顺序无关，因此用组合数。",
+     "itemId": "mat_exam_xx3_fin_a_q14",
+     "prereq": [
+      "mat_h454"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h455_q1",
+       "topicId": "mat_h455",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h455_q2",
+       "topicId": "mat_h455",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h455_q3",
+       "topicId": "mat_h455",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h476"
+     ],
+     "stem": "已知经验回归方程为 ŷ=1.2x+0.4，且样本中心点的横坐标 x̄=5，则样本中心点的纵坐标 ȳ 的值为 ______。",
+     "answer": "6.4",
+     "analysis": "回归直线一定过样本中心点，故 ȳ=1.2×5+0.4=6.4。算出的 ȳ 与直接由数据算出的平均数应一致。",
+     "itemId": "mat_exam_xx3_fin_a_q15",
+     "prereq": [
+      "mat_h475"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h476_q1",
+       "topicId": "mat_h476",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h476_q2",
+       "topicId": "mat_h476",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h476_q3",
+       "topicId": "mat_h476",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h470"
+     ],
+     "stem": "某校 1000 名学生的一次考试成绩 X 近似服从正态分布 N(60,100)，则可估计成绩在 40 分到 80 分之间的学生约有 ______ 人（结果取整数）。",
+     "answer": "955",
+     "analysis": "由 N(60,100) 得 μ=60、σ=10，所求区间 (40,80) 即 (μ−2σ, μ+2σ)，概率约为 0.9545，故人数约为 1000×0.9545≈955。",
+     "itemId": "mat_exam_xx3_fin_a_q16",
+     "prereq": [
+      "mat_h469"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h470_q1",
+       "topicId": "mat_h470",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h470_q2",
+       "topicId": "mat_h470",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h470_q3",
+       "topicId": "mat_h470",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "四、解答题",
+   "rule": "共 70 分（第 17 题 10 分，第 18–22 题各 12 分）",
+   "items": [
+    {
+     "no": 17,
+     "score": 10,
+     "type": "solve",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h451",
+      "mat_h452",
+      "mat_h453"
+     ],
+     "stem": "用 0,1,2,3,4 这五个数字，可以组成多少个满足下列条件且没有重复数字的三位数？(1) 三位数；(2) 三位奇数；(3) 大于 200 的三位数。",
+     "answer": "(1) 48 个；(2) 18 个；(3) 36 个",
+     "scoreRule": [
+      "(1) 指出首位不能为 0，得 4×4×3=48 个，得 3 分",
+      "(2) 末位取 1 或 3（2 种），首位 3 种，中间位 3 种，共 2×3×3=18 个，得 4 分",
+      "(3) 首位取 2、3、4 共 3 种，其余两位 4×3 种，共 36 个，得 3 分"
+     ],
+     "analysis": "(1) 首位有 4 种选法（1,2,3,4），第二位从剩余 4 个数字中选（含 0），第三位 3 种，得 48 个；(2) 末位只能取 1 或 3；以末位为 1 为例，首位可取 2,3,4（3 种），中间位从剩余 3 个数字中选（含 0），得 3×3=9 个，两种末位合计 18 个；(3) 首位取 2、3、4 时三位数必大于 200，共 3×4×3=36 个。",
+     "itemId": "mat_exam_xx3_fin_a_q17",
+     "prereq": [
+      "mat_h451",
+      "mat_h452"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h451_q1",
+       "topicId": "mat_h451",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h451_q2",
+       "topicId": "mat_h451",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h451_q3",
+       "topicId": "mat_h451",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 18,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h455",
+      "mat_h456"
+     ],
+     "stem": "某小组有 8 名同学，其中男生 5 名、女生 3 名，现从中选出 3 人参加比赛。(1) 至少有 1 名女生的选法有多少种？(2) 恰有 1 名女生的选法有多少种？(3) 女生甲与男生乙都入选的选法有多少种？",
+     "answer": "(1) 46 种；(2) 30 种；(3) 6 种",
+     "scoreRule": [
+      "(1) 用间接法 C(8,3)−C(5,3)=56−10=46 种，得 4 分",
+      "(2) 由分步乘法得 C(3,1)C(5,2)=3×10=30 种，得 4 分",
+      "(3) 甲、乙已入选，再从其余 6 人中选 1 人，得 6 种，得 4 分"
+     ],
+     "analysis": "(1) 总选法 C(8,3)=56，减去 3 人全为男生的 C(5,3)=10，得 46 种；(2) 先选 1 名女生（3 种）再选 2 名男生（C(5,2)=10），得 30 种；(3) 甲、乙占用两个名额，第三个名额从剩下 6 人中任选，故 6 种。",
+     "itemId": "mat_exam_xx3_fin_a_q18",
+     "prereq": [
+      "mat_h454",
+      "mat_h455"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h455_q1",
+       "topicId": "mat_h455",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h455_q2",
+       "topicId": "mat_h455",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h455_q3",
+       "topicId": "mat_h455",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 19,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h457",
+      "mat_h458",
+      "mat_h459"
+     ],
+     "stem": "已知二项式 (1−2x)⁷。(1) 求展开式的第 4 项；(2) 求展开式所有项的系数之和；(3) 求展开式所有二项式系数之和。",
+     "answer": "(1) −280x³；(2) −1；(3) 128",
+     "scoreRule": [
+      "(1) 由通项得 T₄=C(7,3)(−2x)³=35×(−8)x³=−280x³，得 4 分",
+      "(2) 令 x=1 得各项系数之和 (1−2)⁷=−1，得 4 分",
+      "(3) 二项式系数之和为 2⁷=128，得 4 分"
+     ],
+     "analysis": "(1) 第 4 项对应 k=3，T₄=C(7,3)(−2x)³=35×(−8)x³=−280x³；(2) 令 x=1 即得系数和 (1−2)⁷=−1；(3) 二项式系数之和只与 n 有关，为 2⁷=128，与各项系数之和 −1 不同。",
+     "itemId": "mat_exam_xx3_fin_a_q19",
+     "prereq": [
+      "mat_h456",
+      "mat_h457",
+      "mat_h458"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h457_q1",
+       "topicId": "mat_h457",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h457_q2",
+       "topicId": "mat_h457",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h457_q3",
+       "topicId": "mat_h457",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 20,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_h463",
+      "mat_h465",
+      "mat_h466"
+     ],
+     "stem": "某工厂生产的一种零件按质量分为一等品、二等品、三等品，其概率分别为 0.6、0.3、0.1，每件的利润分别为 10 元、5 元、−2 元。用 X 表示生产 1 件该零件获得的利润（单位：元）。(1) 求 X 的分布列；(2) 求 E(X)；(3) 求 D(X)。",
+     "answer": "(1) P(X=10)=0.6，P(X=5)=0.3，P(X=−2)=0.1；(2) E(X)=7.3；(3) D(X)=14.61",
+     "scoreRule": [
+      "(1) 由三类产品的概率得 P(X=10)=0.6、P(X=5)=0.3、P(X=−2)=0.1，得 4 分",
+      "(2) 由定义得 E(X)=10×0.6+5×0.3+(−2)×0.1=7.3，得 4 分",
+      "(3) 先算 E(X²)=100×0.6+25×0.3+4×0.1=67.9，再由公式得 D(X)=67.9−7.3²=14.61，得 4 分"
+     ],
+     "analysis": "(1) 利润随质量等级取值，且三等品利润为负，故 P(X=10)=0.6、P(X=5)=0.3、P(X=−2)=0.1，三概率之和为 1；(2) E(X)=6+1.5−0.2=7.3，表示平均每件获利 7.3 元；(3) E(X²)=60+7.5+0.4=67.9，D(X)=67.9−53.29=14.61。",
+     "itemId": "mat_exam_xx3_fin_a_q20",
+     "prereq": [
+      "mat_h462",
+      "mat_h464",
+      "mat_h465"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h463_q1",
+       "topicId": "mat_h463",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h463_q2",
+       "topicId": "mat_h463",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h463_q3",
+       "topicId": "mat_h463",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 21,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_h474",
+      "mat_h475",
+      "mat_h476"
+     ],
+     "stem": "某产品广告费 x（万元）与销售额 y（万元）的 5 组观测数据为 (2,3)，(3,5)，(4,6)，(5,9)，(6,12)。(1) 求 x̄ 与 ȳ；(2) 求经验回归方程 ŷ=b̂x+â 中 b̂ 与 â 的值；(3) 预测广告费为 8 万元时的销售额；(4) 求 x=6 处的残差。",
+     "answer": "(1) x̄=4，ȳ=7；(2) b̂=2.2，â=−1.8；(3) 15.8 万元；(4) 0.6",
+     "scoreRule": [
+      "(1) 由平均数公式得 x̄=(2+3+4+5+6)/5=4、ȳ=(3+5+6+9+12)/5=7，得 3 分",
+      "(2) 算得 Σ(x−x̄)(y−ȳ)=22、Σ(x−x̄)²=10，故 b̂=2.2，â=7−2.2×4=−1.8，得 4 分",
+      "(3) 把 x=8 代入 ŷ=2.2x−1.8 得 ŷ=15.8 万元，得 3 分",
+      "(4) x=6 时的预测值为 11.4，残差为 12−11.4=0.6，得 2 分"
+     ],
+     "analysis": "(1) 两组数据的平均数分别为 4 与 7；(2) 由最小二乘公式 b̂=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)²=22/10=2.2，再由 â=ȳ−b̂x̄ 得 −1.8；(3) 代入 x=8 得 15.8；(4) 残差等于观测值减预测值，x=6 时为 12−11.4=0.6。",
+     "itemId": "mat_exam_xx3_fin_a_q21",
+     "prereq": [
+      "mat_h473",
+      "mat_h474",
+      "mat_h475"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h474_q1",
+       "topicId": "mat_h474",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h474_q2",
+       "topicId": "mat_h474",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h474_q3",
+       "topicId": "mat_h474",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 22,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_h477",
+      "mat_h478",
+      "mat_h479"
+     ],
+     "stem": "某校随机调查 200 名学生，其中男生 100 人、女生 100 人，男生中喜欢数学的有 60 人，女生中喜欢数学的有 40 人。(1) 补全 2×2 列联表（行分别为男、女，列分别为喜欢、不喜欢）；(2) 计算 χ² 的值（结果取整数）；(3) 依据 α=0.01 的独立性检验，判断能否认为性别与是否喜欢数学有关联（附临界值 6.635）。",
+     "answer": "(1) 男生：喜欢 60 人、不喜欢 40 人；女生：喜欢 40 人、不喜欢 60 人；(2) χ²=8；(3) 能认为有关联",
+     "scoreRule": [
+      "(1) 由题意补全列联表，得 a=60、b=40、c=40、d=60，行、列合计均为 100，总计 200，得 4 分",
+      "(2) 代入公式得 200×(3600−1600)²/(100×100×100×100)=8，得 4 分",
+      "(3) 因为 8>6.635，故依据 α=0.01 的独立性检验推断零假设不成立，认为有关联且出错概率不超过 0.01，得 4 分"
+     ],
+     "analysis": "(1) 由男生 100 人中 60 人喜欢可得不喜欢 40 人，女生同理；(2) 由 χ²=n(ad−bc)²/[(a+b)(c+d)(a+c)(b+d)] 得 200×2000²/10⁸=8；(3) 8 大于临界值 6.635，故拒绝「性别与喜欢数学独立」的零假设，认为两者有关联。",
+     "itemId": "mat_exam_xx3_fin_a_q22",
+     "prereq": [
+      "mat_h476",
+      "mat_h477",
+      "mat_h478"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h477_q1",
+       "topicId": "mat_h477",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h477_q2",
+       "topicId": "mat_h477",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h477_q3",
+       "topicId": "mat_h477",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

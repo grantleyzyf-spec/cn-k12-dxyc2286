@@ -1,0 +1,1084 @@
+{
+ "book": "选择性必修第三册",
+ "kind": "midterm",
+ "term": "上册",
+ "grade": 13,
+ "stage": "高中",
+ "paper": "期中测试卷B",
+ "duration": 120,
+ "fullScore": 150,
+ "scope": [
+  "第六章 计数原理",
+  "第七章 随机变量及其分布"
+ ],
+ "examId": "mat_exam_xx3_mid_b",
+ "sections": [
+  {
+   "title": "一、单选题",
+   "rule": "每小题 5 分，共 40 分",
+   "items": [
+    {
+     "no": 1,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h451"
+     ],
+     "stem": "从甲地到丙地可以经乙地中转，也可以直达。已知从甲地到乙地的路线有 3 条，从乙地到丙地的路线有 4 条，从甲地直达丙地的路线有 2 条，则从甲地到丙地的走法共有（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "9 种"
+      },
+      {
+       "label": "B",
+       "text": "14 种"
+      },
+      {
+       "label": "C",
+       "text": "20 种"
+      },
+      {
+       "label": "D",
+       "text": "24 种"
+      }
+     ],
+     "answer": "B",
+     "analysis": "走法分两类：经乙地中转需先到乙再到丙，有 3×4=12 种；直达有 2 种。两类互不重叠，由分类加法计数原理得 12+2=14 种。",
+     "itemId": "mat_exam_xx3_mid_b_q01",
+     "prereq": [],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h451_q1",
+       "topicId": "mat_h451",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h451_q2",
+       "topicId": "mat_h451",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h451_q3",
+       "topicId": "mat_h451",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h453"
+     ],
+     "stem": "5 名同学站成一排照相，其中甲不站排头，也不站排尾，则不同的站法共有（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "72 种"
+      },
+      {
+       "label": "B",
+       "text": "60 种"
+      },
+      {
+       "label": "C",
+       "text": "48 种"
+      },
+      {
+       "label": "D",
+       "text": "24 种"
+      }
+     ],
+     "answer": "A",
+     "analysis": "总站法 5!=120 种，其中甲站排头或排尾的各 4!=24 种且互斥，故 120−2×24=72 种；也可先安排甲（3 种）再排其余 4 人（4! 种），得 3×24=72。",
+     "itemId": "mat_exam_xx3_mid_b_q02",
+     "prereq": [
+      "mat_h452"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h453_q1",
+       "topicId": "mat_h453",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h453_q2",
+       "topicId": "mat_h453",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h453_q3",
+       "topicId": "mat_h453",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h455"
+     ],
+     "stem": "从 7 名同学中任选 3 名参加座谈会，则不同的选法共有（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "210 种"
+      },
+      {
+       "label": "B",
+       "text": "42 种"
+      },
+      {
+       "label": "C",
+       "text": "35 种"
+      },
+      {
+       "label": "D",
+       "text": "21 种"
+      }
+     ],
+     "answer": "C",
+     "analysis": "选人只讲组合不讲顺序，故为 C(7,3)=7×6×5/6=35 种。若误用排列数 A(7,3)=210，就把同一组人的 6 种先后顺序重复计算了。",
+     "itemId": "mat_exam_xx3_mid_b_q03",
+     "prereq": [
+      "mat_h454"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h455_q1",
+       "topicId": "mat_h455",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h455_q2",
+       "topicId": "mat_h455",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h455_q3",
+       "topicId": "mat_h455",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h458"
+     ],
+     "stem": "二项式 (2x−1)⁵ 的展开式中，x³ 的系数为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "−80"
+      },
+      {
+       "label": "B",
+       "text": "−40"
+      },
+      {
+       "label": "C",
+       "text": "40"
+      },
+      {
+       "label": "D",
+       "text": "80"
+      }
+     ],
+     "answer": "D",
+     "analysis": "通项为 C(5,k)(2x)^(5−k)(−1)^k，令 5−k=3 得 k=2，系数为 C(5,2)×2³×(−1)²=10×8=80。",
+     "itemId": "mat_exam_xx3_mid_b_q04",
+     "prereq": [
+      "mat_h457"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h458_q2",
+       "topicId": "mat_h458",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h458_q3",
+       "topicId": "mat_h458",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h458_q4",
+       "topicId": "mat_h458",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h459"
+     ],
+     "stem": "若 (1+2x)ⁿ 的展开式中共有 7 项，则 n 的值为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "7"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ],
+     "answer": "B",
+     "analysis": "二项展开式共有 n+1 项，由 n+1=7 得 n=6。项数与二项式系数之和 2ⁿ 是两个不同的量，不要混用。",
+     "itemId": "mat_exam_xx3_mid_b_q05",
+     "prereq": [
+      "mat_h458"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h459_q1",
+       "topicId": "mat_h459",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h459_q2",
+       "topicId": "mat_h459",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h459_q3",
+       "topicId": "mat_h459",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h461"
+     ],
+     "stem": "从 1,2,3,4,5 这五个数中不放回地依次取出两个数，已知第一次取出的数是奇数，则第二次取出的数也是奇数的概率为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "1/2"
+      },
+      {
+       "label": "B",
+       "text": "3/5"
+      },
+      {
+       "label": "C",
+       "text": "2/3"
+      },
+      {
+       "label": "D",
+       "text": "3/4"
+      }
+     ],
+     "answer": "A",
+     "analysis": "第一次取到奇数后，剩下的 4 个数中有 2 个奇数，故所求概率为 2/4=1/2，这是把样本空间缩小到「第一次为奇数」后的条件概率。",
+     "itemId": "mat_exam_xx3_mid_b_q06",
+     "prereq": [
+      "mat_h460"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h461_q1",
+       "topicId": "mat_h461",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h461_q2",
+       "topicId": "mat_h461",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h461_q3",
+       "topicId": "mat_h461",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h462",
+      "mat_h460"
+     ],
+     "stem": "有两个外观相同的箱子，甲箱装有 8 件产品（其中 2 件次品），乙箱装有 6 件产品（其中 1 件次品）。随机选取一个箱子，再从中任取 1 件产品，则取到次品的概率为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "1/8"
+      },
+      {
+       "label": "B",
+       "text": "1/6"
+      },
+      {
+       "label": "C",
+       "text": "5/24"
+      },
+      {
+       "label": "D",
+       "text": "1/4"
+      }
+     ],
+     "answer": "C",
+     "analysis": "设 A 为选中甲箱，则 P(A)=P(A')=1/2。由全概率公式 P(次品)=1/2×2/8+1/2×1/6=1/8+1/12=5/24。",
+     "itemId": "mat_exam_xx3_mid_b_q07",
+     "prereq": [
+      "mat_h461"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h462_q1",
+       "topicId": "mat_h462",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h462_q2",
+       "topicId": "mat_h462",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h462_q3",
+       "topicId": "mat_h462",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h468"
+     ],
+     "stem": "设随机变量 X 服从二项分布 B(3, 1/3)，则 P(X=2) 的值为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "1/9"
+      },
+      {
+       "label": "B",
+       "text": "2/9"
+      },
+      {
+       "label": "C",
+       "text": "4/9"
+      },
+      {
+       "label": "D",
+       "text": "2/3"
+      }
+     ],
+     "answer": "B",
+     "analysis": "P(X=2)=C(3,2)(1/3)²(2/3)=3×1/9×2/3=2/9。每次试验成功概率 1/3、失败概率 2/3，组合数不能漏。",
+     "itemId": "mat_exam_xx3_mid_b_q08",
+     "prereq": [
+      "mat_h467"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h468_q1",
+       "topicId": "mat_h468",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h468_q2",
+       "topicId": "mat_h468",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h468_q3",
+       "topicId": "mat_h468",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "二、多选题",
+   "rule": "每小题 5 分，共 20 分（全部选对得 5 分，部分选对得部分分，有选错得 0 分）",
+   "items": [
+    {
+     "no": 9,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h452",
+      "mat_h454"
+     ],
+     "stem": "关于排列数，下列结论正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "A(6,2)=30"
+      },
+      {
+       "label": "B",
+       "text": "A(n,n)=n!"
+      },
+      {
+       "label": "C",
+       "text": "A(5,3)=60"
+      },
+      {
+       "label": "D",
+       "text": "A(4,2)=8"
+      }
+     ],
+     "answer": "ABC",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对 1 项得 2 分，选对 2 项得 4 分）",
+      "有选错得 0 分"
+     ],
+     "analysis": "A(6,2)=6×5=30，A(n,n)=n×(n−1)×…×1=n!，A(5,3)=5×4×3=60，三者都正确；而 A(4,2)=4×3=12≠8，故 D 错误。",
+     "itemId": "mat_exam_xx3_mid_b_q09",
+     "prereq": [
+      "mat_h451",
+      "mat_h453"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h452_q1",
+       "topicId": "mat_h452",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h452_q2",
+       "topicId": "mat_h452",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h452_q3",
+       "topicId": "mat_h452",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h457",
+      "mat_h458"
+     ],
+     "stem": "关于二项式 (1/x−x)⁵ 的展开式，下列结论正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "展开式共有 7 项"
+      },
+      {
+       "label": "B",
+       "text": "展开式中不含常数项"
+      },
+      {
+       "label": "C",
+       "text": "含 x 的项的系数为 −10"
+      },
+      {
+       "label": "D",
+       "text": "展开式所有项的系数之和为 0"
+      }
+     ],
+     "answer": "BCD",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对 1 项得 2 分，选对 2 项得 4 分）",
+      "有选错得 0 分"
+     ],
+     "analysis": "n=5 时展开式共 6 项，A 错。通项为 C(5,k)(1/x)^(5−k)(−x)^k=C(5,k)(−1)^k x^(2k−5)，指数是奇数不可能为 0，故无常数项，B 对；k=3 时指数为 1，系数 C(5,3)(−1)³=−10，C 对；令 x=1 得系数和 (1−1)⁵=0，D 对。",
+     "itemId": "mat_exam_xx3_mid_b_q10",
+     "prereq": [
+      "mat_h456",
+      "mat_h457"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h457_q1",
+       "topicId": "mat_h457",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h457_q2",
+       "topicId": "mat_h457",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h457_q3",
+       "topicId": "mat_h457",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h463",
+      "mat_h465",
+      "mat_h466"
+     ],
+     "stem": "设离散型随机变量 X 的分布列为 P(X=−1)=0.2，P(X=0)=0.5，P(X=1)=0.3，则下列结论正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "E(X)=0.1"
+      },
+      {
+       "label": "B",
+       "text": "D(X)=0.5"
+      },
+      {
+       "label": "C",
+       "text": "E(X²)=0.5"
+      },
+      {
+       "label": "D",
+       "text": "P(X≤0)=0.7"
+      }
+     ],
+     "answer": "ACD",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对 1 项得 2 分，选对 2 项得 4 分）",
+      "有选错得 0 分"
+     ],
+     "analysis": "E(X)=−1×0.2+0×0.5+1×0.3=0.1，A 对；E(X²)=1×0.2+0+1×0.3=0.5，C 对；D(X)=0.5−0.1²=0.49，B 错；P(X≤0)=0.2+0.5=0.7，D 对。",
+     "itemId": "mat_exam_xx3_mid_b_q11",
+     "prereq": [
+      "mat_h462",
+      "mat_h464",
+      "mat_h465"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h463_q1",
+       "topicId": "mat_h463",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h463_q2",
+       "topicId": "mat_h463",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h463_q3",
+       "topicId": "mat_h463",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h469",
+      "mat_h467"
+     ],
+     "stem": "20 件产品中有 4 件次品，从中任取 5 件，用 X 表示取到的次品件数，则下列结论正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "X 服从二项分布"
+      },
+      {
+       "label": "B",
+       "text": "P(X=0)=C(16,5)/C(20,5)"
+      },
+      {
+       "label": "C",
+       "text": "E(X)=1"
+      },
+      {
+       "label": "D",
+       "text": "D(X)=12/19"
+      }
+     ],
+     "answer": "BCD",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对 1 项得 2 分，选对 2 项得 4 分）",
+      "有选错得 0 分"
+     ],
+     "analysis": "不放回抽取，X 服从超几何分布而不是二项分布，A 错；P(X=0) 即 5 件全为正品，B 对；E(X)=5×4/20=1，C 对；超几何分布的方差为 5×(1/5)×(4/5)×(20−5)/(20−1)=12/19，D 对。",
+     "itemId": "mat_exam_xx3_mid_b_q12",
+     "prereq": [
+      "mat_h468",
+      "mat_h466"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h469_q1",
+       "topicId": "mat_h469",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h469_q2",
+       "topicId": "mat_h469",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h469_q3",
+       "topicId": "mat_h469",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "三、填空题",
+   "rule": "每小题 5 分，共 20 分",
+   "items": [
+    {
+     "no": 13,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h453"
+     ],
+     "stem": "3 名男生和 2 名女生站成一排照相，若要求 2 名女生不相邻，则不同的站法共有 ______ 种。",
+     "answer": "72",
+     "analysis": "先排 3 名男生有 3!=6 种，男生之间及两端共 4 个空位，把 2 名女生插入其中两个空位有 A(4,2)=12 种，故共 6×12=72 种。",
+     "itemId": "mat_exam_xx3_mid_b_q13",
+     "prereq": [
+      "mat_h452"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h453_q1",
+       "topicId": "mat_h453",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h453_q2",
+       "topicId": "mat_h453",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h453_q3",
+       "topicId": "mat_h453",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h458"
+     ],
+     "stem": "二项式 (x−2)⁶ 的展开式中，x⁴ 的系数为 ______。",
+     "answer": "60",
+     "analysis": "通项为 C(6,k)x^(6−k)(−2)^k，令 6−k=4 得 k=2，故系数为 C(6,2)×(−2)²=15×4=60。",
+     "itemId": "mat_exam_xx3_mid_b_q14",
+     "prereq": [
+      "mat_h457"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h458_q1",
+       "topicId": "mat_h458",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h458_q2",
+       "topicId": "mat_h458",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h458_q3",
+       "topicId": "mat_h458",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h466",
+      "mat_h464"
+     ],
+     "stem": "已知随机变量 X 满足 E(X)=3，D(X)=2，则 D(3X+1) 的值为 ______。",
+     "answer": "18",
+     "analysis": "由方差性质 D(aX+b)=a²D(X) 得 D(3X+1)=9×2=18。常数项 1 不影响方差，系数 3 要平方后再乘。",
+     "itemId": "mat_exam_xx3_mid_b_q15",
+     "prereq": [
+      "mat_h465",
+      "mat_h463"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h466_q1",
+       "topicId": "mat_h466",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h466_q2",
+       "topicId": "mat_h466",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h466_q3",
+       "topicId": "mat_h466",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h470"
+     ],
+     "stem": "设随机变量 X 服从标准正态分布 N(0,1)，若 P(−1<X<1)=0.6827，则 P(X>1) 约为 ______（结果保留四位小数）。",
+     "answer": "0.1587",
+     "analysis": "正态曲线关于 x=0 对称，故 P(X>1)=P(X<−1)=[1−0.6827]/2=0.3173/2≈0.1587。",
+     "itemId": "mat_exam_xx3_mid_b_q16",
+     "prereq": [
+      "mat_h469"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h470_q1",
+       "topicId": "mat_h470",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h470_q2",
+       "topicId": "mat_h470",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h470_q3",
+       "topicId": "mat_h470",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "四、解答题",
+   "rule": "共 70 分（第 17 题 10 分，第 18–22 题各 12 分）",
+   "items": [
+    {
+     "no": 17,
+     "score": 10,
+     "type": "solve",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h451",
+      "mat_h453"
+     ],
+     "stem": "用 1,2,3,4,5 这五个数字，可以组成多少个满足下列条件且没有重复数字的三位数？(1) 三位数；(2) 三位奇数；(3) 大于 300 的三位数。",
+     "answer": "(1) 60 个；(2) 36 个；(3) 36 个",
+     "scoreRule": [
+      "(1) 从 5 个数字中取 3 个全排列，得 A(5,3)=5×4×3=60 个，得 3 分",
+      "(2) 末位取 1、3、5 共 3 种，前两位 A(4,2)=12 种，共 3×12=36 个，得 4 分",
+      "(3) 首位取 3、4、5 共 3 种，其余两位 A(4,2)=12 种，共 36 个，得 3 分"
+     ],
+     "analysis": "(1) 没有 0 的限制，直接从 5 个数字中取 3 个排列，A(5,3)=60；(2) 先定末位（奇数 3 种），再排前两位（从剩余 4 个数字中取 2 个排列，A(4,2)=12），得 36 个；(3) 首位为 3、4、5 时该三位数一定大于 300，共 3×12=36 个。",
+     "itemId": "mat_exam_xx3_mid_b_q17",
+     "prereq": [
+      "mat_h452"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h451_q1",
+       "topicId": "mat_h451",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h451_q2",
+       "topicId": "mat_h451",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h451_q3",
+       "topicId": "mat_h451",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 18,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h455",
+      "mat_h456"
+     ],
+     "stem": "某小组有 5 名男生和 5 名女生，现从中选出 3 人参加知识竞赛。(1) 至少有 1 名女生的选法有多少种？(2) 恰有 1 名女生的选法有多少种？(3) 男、女生都有的选法有多少种？",
+     "answer": "(1) 110 种；(2) 50 种；(3) 100 种",
+     "scoreRule": [
+      "(1) 用间接法 C(10,3)−C(5,3)=120−10=110 种，得 4 分",
+      "(2) 由分步乘法得 C(5,1)C(5,2)=5×10=50 种，得 4 分",
+      "(3) 从总数中减去全男、全女两种情形，得 120−10−10=100 种，得 4 分"
+     ],
+     "analysis": "(1) 总选法 C(10,3)=120，减去 3 人全为男生的 C(5,3)=10，得 110 种；(2) 先选 1 名女生（5 种）再选 2 名男生（C(5,2)=10），得 50 种；(3) 男女生都有即排除全男 C(5,3)=10 与全女 C(5,3)=10，得 120−20=100 种。",
+     "itemId": "mat_exam_xx3_mid_b_q18",
+     "prereq": [
+      "mat_h454",
+      "mat_h455"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h455_q1",
+       "topicId": "mat_h455",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h455_q2",
+       "topicId": "mat_h455",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h455_q3",
+       "topicId": "mat_h455",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 19,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h457",
+      "mat_h458",
+      "mat_h459"
+     ],
+     "stem": "已知二项式 (2x−1)⁶。(1) 求展开式的第 3 项；(2) 求展开式中 x³ 的系数；(3) 求展开式所有项的系数之和。",
+     "answer": "(1) 240x⁴；(2) −160；(3) 1",
+     "scoreRule": [
+      "(1) 由通项得 T₃=C(6,2)(2x)⁴(−1)²=15×16x⁴=240x⁴，得 4 分",
+      "(2) 通项 C(6,k)(2x)^(6−k)(−1)^k，令 6−k=3 得 k=3，系数 C(6,3)×2³×(−1)³=−160，得 4 分",
+      "(3) 令 x=1 得系数和 (2−1)⁶=1，得 4 分"
+     ],
+     "analysis": "(1) 第 3 项对应 k=2，T₃=C(6,2)(2x)⁴(−1)²=15×16x⁴=240x⁴；(2) 求 x³ 的系数需 6−k=3，即 k=3，系数为 20×8×(−1)=−160；(3) 令 x=1 得 (2−1)⁶=1，说明各项系数之和为 1。",
+     "itemId": "mat_exam_xx3_mid_b_q19",
+     "prereq": [
+      "mat_h456",
+      "mat_h457",
+      "mat_h458"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h457_q1",
+       "topicId": "mat_h457",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h457_q2",
+       "topicId": "mat_h457",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h457_q3",
+       "topicId": "mat_h457",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 20,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h461",
+      "mat_h462",
+      "mat_h463"
+     ],
+     "stem": "某校学生中走读生占 40%，住宿生占 60%。走读生的近视率为 25%，住宿生的近视率为 15%。(1) 随机抽取 1 名学生，求该生近视的概率；(2) 已知抽到的学生近视，求他是走读生的概率；(3) 已知抽到的学生不近视，求他是住宿生的概率。",
+     "answer": "(1) 0.19；(2) 10/19；(3) 17/27",
+     "scoreRule": [
+      "(1) 由全概率公式 0.4×0.25+0.6×0.15=0.19，得 4 分",
+      "(2) 由条件概率得 0.10/0.19=10/19，得 4 分",
+      "(3) 不近视概率为 0.81，住宿且不近视为 0.6×0.85=0.51，故所求为 0.51/0.81=17/27，得 4 分"
+     ],
+     "analysis": "(1) 走读生近视贡献 0.4×0.25=0.10，住宿生近视贡献 0.6×0.15=0.09，合计 0.19；(2) 以近视者为新的样本空间，走读生占 0.10/0.19=10/19；(3) 不近视者占 1−0.19=0.81，其中住宿生为 0.51，故概率为 0.51/0.81=17/27。",
+     "itemId": "mat_exam_xx3_mid_b_q20",
+     "prereq": [
+      "mat_h460",
+      "mat_h461",
+      "mat_h462"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h461_q1",
+       "topicId": "mat_h461",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h461_q2",
+       "topicId": "mat_h461",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h461_q3",
+       "topicId": "mat_h461",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 21,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_h463",
+      "mat_h465",
+      "mat_h466"
+     ],
+     "stem": "袋中装有 4 个红球和 2 个白球，从中一次取出 2 个球，用 X 表示取到的红球个数。(1) 求 X 的分布列；(2) 求 E(X)；(3) 求 D(X)；(4) 设 Y=2X+1，求 E(Y) 与 D(Y)。",
+     "answer": "(1) P(X=0)=1/15，P(X=1)=8/15，P(X=2)=2/5；(2) E(X)=4/3；(3) D(X)=16/45；(4) E(Y)=11/3，D(Y)=64/45",
+     "scoreRule": [
+      "(1) 基本事件总数为 C(6,2)=15，得 P(X=0)=1/15、P(X=1)=8/15、P(X=2)=6/15，得 3 分",
+      "(2) 由定义算得 E(X)=8/15+2×2/5=4/3，得 3 分",
+      "(3) 先算 E(X²)=8/15+4×2/5=32/15，再由公式得 D(X)=32/15−16/9=16/45，得 3 分",
+      "(4) 由线性性质得 E(Y)=2×4/3+1=11/3，D(Y)=4×16/45=64/45，得 3 分"
+     ],
+     "analysis": "(1) 基本事件共 15 个：X=0 只有 1 种，X=1 有 C(4,1)C(2,1)=8 种，X=2 有 C(4,2)=6 种；(2) E(X)=0×1/15+1×8/15+2×6/15=20/15=4/3，与超几何分布均值 2×4/6 一致；(3) E(X²)=8/15+24/15=32/15，故 D(X)=32/15−16/9=16/45；(4) E(2X+1)=2E(X)+1=11/3，D(2X+1)=4D(X)=64/45。",
+     "itemId": "mat_exam_xx3_mid_b_q21",
+     "prereq": [
+      "mat_h462",
+      "mat_h464",
+      "mat_h465"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h463_q1",
+       "topicId": "mat_h463",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h463_q2",
+       "topicId": "mat_h463",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h463_q3",
+       "topicId": "mat_h463",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 22,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_h467",
+      "mat_h468"
+     ],
+     "stem": "某次考试的 5 道单项选择题，每题 4 个选项中有且只有 1 个正确。某同学完全不会，每题都随机猜一个选项，各题相互独立，用 X 表示他答对的题数。(1) 求 P(X=0)；(2) 求 P(X≥1)；(3) 求 E(X) 与 D(X)。",
+     "answer": "(1) 243/1024；(2) 781/1024；(3) E(X)=5/4，D(X)=15/16",
+     "scoreRule": [
+      "(1) 指出每题猜对概率为 1/4，故 X~B(5,1/4)，P(X=0)=(3/4)⁵=243/1024，得 4 分",
+      "(2) 用对立事件得 P(X≥1)=1−243/1024=781/1024，得 4 分",
+      "(3) 由二项分布公式得 E(X)=5×1/4=5/4，D(X)=5×1/4×3/4=15/16，得 4 分"
+     ],
+     "analysis": "(1) 各题独立、每题猜对概率都是 1/4，故答对题数服从二项分布 B(5,1/4)，P(X=0) 即 5 题全错，为 (3/4)⁵=243/1024；(2) P(X≥1)=1−P(X=0)=781/1024；(3) 二项分布的均值 np=5/4，方差 np(1−p)=15/16。",
+     "itemId": "mat_exam_xx3_mid_b_q22",
+     "prereq": [
+      "mat_h466",
+      "mat_h467"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h467_q1",
+       "topicId": "mat_h467",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h467_q2",
+       "topicId": "mat_h467",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h467_q3",
+       "topicId": "mat_h467",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

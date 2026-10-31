@@ -1,0 +1,1070 @@
+{
+ "book": "选择性必修第二册",
+ "term": "上册",
+ "grade": 12,
+ "stage": "高中",
+ "kind": "midterm",
+ "paper": "期中测试卷B",
+ "duration": 120,
+ "fullScore": 150,
+ "scope": [
+  "第四章 数列"
+ ],
+ "examId": "mat_exam_xx2_mid_b",
+ "sections": [
+  {
+   "title": "一、单选题",
+   "rule": "每小题 5 分，共 40 分",
+   "items": [
+    {
+     "no": 1,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h480"
+     ],
+     "stem": "数列 −1, 2, −3, 4, −5, … 的一个通项公式是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "a_n = (−1)^n·n"
+      },
+      {
+       "label": "B",
+       "text": "a_n = (−1)^{n+1}·n"
+      },
+      {
+       "label": "C",
+       "text": "a_n = (−1)^n·(n+1)"
+      },
+      {
+       "label": "D",
+       "text": "a_n = (−1)^{n+1}·(n−1)"
+      }
+     ],
+     "answer": "A",
+     "analysis": "先看绝对值：1、2、3、4、5 恰为序号 n；再看符号：奇数项为负、偶数项为正，故符号因子为 (−1)^n。所以 a_n=(−1)^n·n。检验：n=1 得 −1，n=2 得 2，n=3 得 −3，与数列一致。B 的符号正好相反（n=1 会得 1），C 的绝对值多 1（n=1 得 −2），D 在 n=1 时为 0，均不符。",
+     "itemId": "mat_exam_xx2_mid_b_q01",
+     "prereq": [],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h480_q1",
+       "topicId": "mat_h480",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h480_q2",
+       "topicId": "mat_h480",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h480_q3",
+       "topicId": "mat_h480",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h482"
+     ],
+     "stem": "数列 {a_n} 满足 a_1 = 1，且 a_{n+1} = a_n + 2n + 1（n ≥ 1），则该数列的通项公式为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "a_n = n²"
+      },
+      {
+       "label": "B",
+       "text": "a_n = n² + 1"
+      },
+      {
+       "label": "C",
+       "text": "a_n = 2n − 1"
+      },
+      {
+       "label": "D",
+       "text": "a_n = n(n + 1)"
+      }
+     ],
+     "answer": "A",
+     "analysis": "逐项算：a_1=1，a_2=1+3=4，a_3=4+5=9，a_4=9+7=16，各项恰为序号的平方，故 a_n=n²。一般地 a_n=1+3+5+…+(2n−1)=n²，即前 n 个奇数之和。也可用累加法：a_n=1+[3+5+…+(2n−1)]=1+(n−1)(n+1)=n²，两法一致。B 在 n=2 时得 5≠4，C 在 n=1 时得 1 但 n=2 时得 3≠4，D 在 n=1 时得 2≠1，均不符。",
+     "itemId": "mat_exam_xx2_mid_b_q02",
+     "prereq": [
+      "mat_h481"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h482_q1",
+       "topicId": "mat_h482",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h482_q2",
+       "topicId": "mat_h482",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h482_q3",
+       "topicId": "mat_h482",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h483"
+     ],
+     "stem": "已知数列 {a_n} 的前 n 项和为 S_n = 3n² − 2n，则该数列的第 3 项 a_3 等于（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "7"
+      },
+      {
+       "label": "B",
+       "text": "11"
+      },
+      {
+       "label": "C",
+       "text": "13"
+      },
+      {
+       "label": "D",
+       "text": "21"
+      }
+     ],
+     "answer": "C",
+     "analysis": "a_3=S_3−S_2=(27−6)−(12−4)=21−8=13。也可先求通项：n≥2 时 a_n=S_n−S_{n−1}=6n−5，n=1 代入得 1=S_1，通项对一切 n 成立，故 a_3=13。直接把 S_3=21 当作 a_3 是最常见的错误。",
+     "itemId": "mat_exam_xx2_mid_b_q03",
+     "prereq": [
+      "mat_h482"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h483_q3",
+       "topicId": "mat_h483",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h483_q4",
+       "topicId": "mat_h483",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h483_q5",
+       "topicId": "mat_h483",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h485"
+     ],
+     "stem": "在等差数列 {a_n} 中，若 a_5 = 9，则 a_4 + a_6 等于（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "9"
+      },
+      {
+       "label": "B",
+       "text": "18"
+      },
+      {
+       "label": "C",
+       "text": "20"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "B",
+     "analysis": "由等差中项性质，a_4、a_5、a_6 依次相差同一个公差 d，故 a_4+a_6=(a_5−d)+(a_5+d)=2a_5=18。也就是说只要给出中间那一项，与它等距的两项之和就唯一确定，不需要知道首项和公差，因此 D 错。",
+     "itemId": "mat_exam_xx2_mid_b_q04",
+     "prereq": [
+      "mat_h484"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h485_q1",
+       "topicId": "mat_h485",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h485_q2",
+       "topicId": "mat_h485",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h485_q3",
+       "topicId": "mat_h485",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h486"
+     ],
+     "stem": "已知等差数列 {a_n} 的首项 a_1 = 5，公差 d = −2，则该数列的前 n 项和的最大值为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "8"
+      },
+      {
+       "label": "B",
+       "text": "9"
+      },
+      {
+       "label": "C",
+       "text": "10"
+      },
+      {
+       "label": "D",
+       "text": "12"
+      }
+     ],
+     "answer": "B",
+     "analysis": "各项依次为 5、3、1、−1、…，前三项为正、从第 4 项起为负，故前 n 项和先增后减，在累加到第 3 项时达到最大。S_3=5+3+1=9。验算：S_2=8，S_4=9−1=8，确实以 S_3=9 为最大。若用公式 S_n=5n+n(n−1)/2×(−2)=−n²+6n=9−(n−3)²，也能立即看出最大值为 9。",
+     "itemId": "mat_exam_xx2_mid_b_q05",
+     "prereq": [
+      "mat_h485"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h486_q1",
+       "topicId": "mat_h486",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h486_q2",
+       "topicId": "mat_h486",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h486_q3",
+       "topicId": "mat_h486",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h488"
+     ],
+     "stem": "已知等比数列 {a_n} 的各项均为正数，且 a_3 = 12，a_5 = 48，则 a_7 等于（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "96"
+      },
+      {
+       "label": "B",
+       "text": "144"
+      },
+      {
+       "label": "C",
+       "text": "192"
+      },
+      {
+       "label": "D",
+       "text": "384"
+      }
+     ],
+     "answer": "C",
+     "analysis": "由 a_5=a_3q² 得 48=12q²，q²=4，因各项为正取 q=2，故 a_7=a_5q²=48×4=192。也可用项间关系 a_5²=a_3·a_7，即 2304=12a_7，得 a_7=192，两法一致。若误把 q² 当成 q 直接乘 2，就会错得 96。",
+     "itemId": "mat_exam_xx2_mid_b_q06",
+     "prereq": [
+      "mat_h487"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h488_q1",
+       "topicId": "mat_h488",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h488_q2",
+       "topicId": "mat_h488",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h488_q3",
+       "topicId": "mat_h488",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h489"
+     ],
+     "stem": "已知等比数列 {a_n} 的首项为 4，公比为 2，则它的前 5 项和等于（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "100"
+      },
+      {
+       "label": "B",
+       "text": "124"
+      },
+      {
+       "label": "C",
+       "text": "128"
+      },
+      {
+       "label": "D",
+       "text": "248"
+      }
+     ],
+     "answer": "B",
+     "analysis": "由 S_5=a_1(q⁵−1)/(q−1)=4(32−1)/(2−1)=4×31=124。逐项相加核对：4+8+16+32+64=124，一致。若把「前 5 项和」误按 5 次乘 2 算成 4×32−4=124 之外的 128，是漏掉了首项前的减法；D 项 248 则是把 2S_5 算成了答案。",
+     "itemId": "mat_exam_xx2_mid_b_q07",
+     "prereq": [
+      "mat_h488"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h489_q1",
+       "topicId": "mat_h489",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h489_q3",
+       "topicId": "mat_h489",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h489_q4",
+       "topicId": "mat_h489",
+       "difficulty": "hard"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_h486"
+     ],
+     "stem": "已知等差数列 {a_n} 的首项 a_1 > 0，且 S_7 = S_11，则其前 n 项和 S_n 取得最大值时，n 等于（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "8"
+      },
+      {
+       "label": "B",
+       "text": "9"
+      },
+      {
+       "label": "C",
+       "text": "10"
+      },
+      {
+       "label": "D",
+       "text": "11"
+      }
+     ],
+     "answer": "B",
+     "analysis": "S_11−S_7=a_8+a_9+a_10+a_11=0。这四项的下标 8、11 与 9、10 之和都为 19，由等差性质 a_8+a_11=a_9+a_10，故 a_9+a_10=0。又 a_1>0 且 S_7=S_11 说明后面在「抵消」，公差 d<0，于是 a_9>0>a_10，S_n 在 n=9 时最大（n=10 时再累加一项负数即减少）。",
+     "itemId": "mat_exam_xx2_mid_b_q08",
+     "prereq": [
+      "mat_h485"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h486_q1",
+       "topicId": "mat_h486",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h486_q2",
+       "topicId": "mat_h486",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h486_q3",
+       "topicId": "mat_h486",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "二、多选题",
+   "rule": "每小题 5 分，共 20 分（全部选对得 5 分，部分选对得部分分，有选错得 0 分）",
+   "items": [
+    {
+     "no": 9,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h487"
+     ],
+     "stem": "关于数列 2, 4, 8, 16, …，下列说法正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "它的通项公式为 a_n = 2^n"
+      },
+      {
+       "label": "B",
+       "text": "它是公比为 2 的等比数列"
+      },
+      {
+       "label": "C",
+       "text": "它的第 10 项为 1024"
+      },
+      {
+       "label": "D",
+       "text": "它的第 10 项为 512"
+      }
+     ],
+     "answer": "ABC",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对 1 项得 2 分，选对 2 项得 4 分）",
+      "有选错得 0 分"
+     ],
+     "analysis": "后一项与前一项之比恒为 2，故是首项 2、公比 2 的等比数列，B 正确；a_n=2×2^{n−1}=2^n，A 正确；a_10=2^{10}=1024，C 正确而 D 错误。C 与 D 互斥，只要算出 2^{10}=1024 就同时判定了两项。答案为 ABC。",
+     "itemId": "mat_exam_xx2_mid_b_q09",
+     "prereq": [
+      "mat_h486"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h487_q1",
+       "topicId": "mat_h487",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h487_q2",
+       "topicId": "mat_h487",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h487_q3",
+       "topicId": "mat_h487",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h484",
+      "mat_h485"
+     ],
+     "stem": "下列结论正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "若数列 {a_n} 的前 n 项和 S_n = n²，则 {a_n} 是等差数列"
+      },
+      {
+       "label": "B",
+       "text": "若 a_{n+1} − a_n = 3 对一切正整数 n 成立，则 {a_n} 是等差数列"
+      },
+      {
+       "label": "C",
+       "text": "若 a_1 = 1，a_2 = 4，a_3 = 9，则 {a_n} 不可能是等差数列"
+      },
+      {
+       "label": "D",
+       "text": "若 {a_n} 是等差数列，则 a_2² = a_1·a_3 恒成立"
+      }
+     ],
+     "answer": "ABC",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对 1 项得 2 分，选对 2 项得 4 分）",
+      "有选错得 0 分"
+     ],
+     "analysis": "A 中 a_1=1，n≥2 时 a_n=2n−1，通项对 n=1 也成立，相邻两项差恒为 2，是等差数列，正确。B 中相邻两项之差为常数 3，按定义即为等差数列，正确。C 中 a_2−a_1=3 而 a_3−a_2=5，差不为常数，故不可能是等差数列，正确。D 中 a_2²=a_1a_3 只在特殊数列成立（如常数列），一般不等，例如 1, 2, 3 中 4≠3，错误。答案为 ABC。",
+     "itemId": "mat_exam_xx2_mid_b_q10",
+     "prereq": [
+      "mat_h483",
+      "mat_h484"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h484_q1",
+       "topicId": "mat_h484",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h484_q2",
+       "topicId": "mat_h484",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h484_q3",
+       "topicId": "mat_h484",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h488",
+      "mat_h489"
+     ],
+     "stem": "关于等比数列 {a_n}，下列结论正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "a_1 + a_4 = a_2 + a_3 恒成立"
+      },
+      {
+       "label": "B",
+       "text": "若 a_{n+1} = q·a_n 且每一项都不为零，则 {a_n} 是公比为 q 的等比数列"
+      },
+      {
+       "label": "C",
+       "text": "若 a_1 + a_2 = 3，a_3 + a_4 = 12，则公比 q = 2 或 q = −2"
+      },
+      {
+       "label": "D",
+       "text": "若公比 q = −2，则 {a_n} 一定是递增数列"
+      }
+     ],
+     "answer": "BC",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对 1 项得 2 分，选对 2 项得 4 分）",
+      "有选错得 0 分"
+     ],
+     "analysis": "A 是等差数列才有的性质，等比数列不成立：取 a_1=1、q=2，左边 1+8=9、右边 2+4=6，故错。B 正是等比数列的定义，正确。C 中 a_3+a_4=q²(a_1+a_2)，即 3q²=12，q²=4，q=±2，正确。D 中 q=−2 时各项符号交替，不是递增数列，错误。答案为 BC。",
+     "itemId": "mat_exam_xx2_mid_b_q11",
+     "prereq": [
+      "mat_h487",
+      "mat_h488"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h488_q1",
+       "topicId": "mat_h488",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h488_q2",
+       "topicId": "mat_h488",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h488_q3",
+       "topicId": "mat_h488",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h483",
+      "mat_h489"
+     ],
+     "stem": "关于数列的求和，下列结论正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "若 a_n = 1/n − 1/(n+1)，则 S_n = 1 − 1/(n+1)"
+      },
+      {
+       "label": "B",
+       "text": "若 a_n = 2^n，则 S_n = 2^{n+1} − 2"
+      },
+      {
+       "label": "C",
+       "text": "若 S_n = 2^n，则 a_n = 2^n（n ≥ 1）"
+      },
+      {
+       "label": "D",
+       "text": "若 S_n = n²，则 a_5 = 9"
+      }
+     ],
+     "answer": "ABD",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对 1 项得 2 分，选对 2 项得 4 分）",
+      "有选错得 0 分"
+     ],
+     "analysis": "A 是裂项相消：S_n=(1−1/2)+(1/2−1/3)+…+(1/n−1/(n+1))=1−1/(n+1)，正确。B 是等比求和：S_n=2(2^n−1)/(2−1)=2^{n+1}−2，正确。C 中 a_1=S_1=2，n≥2 时 a_n=2^n−2^{n−1}=2^{n−1}，与 2^n 不符，错误。D 中 a_1=1，n≥2 时 a_n=2n−1，故 a_5=9，正确。答案为 ABD，C 的错处正是把「和」当成了「项」。",
+     "itemId": "mat_exam_xx2_mid_b_q12",
+     "prereq": [
+      "mat_h482",
+      "mat_h488"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h483_q1",
+       "topicId": "mat_h483",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h483_q2",
+       "topicId": "mat_h483",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h483_q3",
+       "topicId": "mat_h483",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "三、填空题",
+   "rule": "每小题 5 分，共 20 分",
+   "items": [
+    {
+     "no": 13,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h485"
+     ],
+     "stem": "在等差数列 {a_n} 中，a_2 = 5，a_6 = 17，则 a_10 = ______。",
+     "answer": "29",
+     "verify": "17+4*3",
+     "analysis": "a_6−a_2=4d=12，得 d=3；故 a_10=a_6+4d=17+12=29。也可先求 a_1=a_2−d=2，再用 a_10=a_1+9d=29 核对，两法一致。",
+     "itemId": "mat_exam_xx2_mid_b_q13",
+     "prereq": [
+      "mat_h484"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h485_q1",
+       "topicId": "mat_h485",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h485_q2",
+       "topicId": "mat_h485",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h485_q3",
+       "topicId": "mat_h485",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h489"
+     ],
+     "stem": "等比数列 {a_n} 中 a_1 = 2，a_4 = 16，则它的前 5 项和 S_5 = ______。",
+     "answer": "62",
+     "verify": "2*(2**5-1)",
+     "analysis": "由 a_4=a_1q³ 得 16=2q³，q=2；故 S_5=2(2⁵−1)/(2−1)=2×31=62。逐项相加核对：2+4+8+16+32=62，与公式结果相同。",
+     "itemId": "mat_exam_xx2_mid_b_q14",
+     "prereq": [
+      "mat_h488"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h489_q1",
+       "topicId": "mat_h489",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h489_q2",
+       "topicId": "mat_h489",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h489_q3",
+       "topicId": "mat_h489",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h482"
+     ],
+     "stem": "已知数列 {a_n} 中 a_1 = 2，且 a_{n+1} = 2a_n − 1（n ≥ 1），则该数列的通项公式 a_n = ______。",
+     "answer": "2^{n−1}+1",
+     "analysis": "由 a_{n+1}=2a_n−1 两边同减 1 得 a_{n+1}−1=2(a_n−1)，故 {a_n−1} 是首项 a_1−1=1、公比 2 的等比数列，a_n−1=2^{n−1}，即 a_n=2^{n−1}+1。检验：n=1 得 2，n=2 得 3，n=3 得 5，与逐项递推得到的 2、3、5 一致。只写 a_n=2^{n−1} 会漏掉常数 1。",
+     "itemId": "mat_exam_xx2_mid_b_q15",
+     "prereq": [
+      "mat_h481"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h482_q1",
+       "topicId": "mat_h482",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h482_q2",
+       "topicId": "mat_h482",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h482_q3",
+       "topicId": "mat_h482",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h490"
+     ],
+     "stem": "用数学归纳法证明 1² + 2² + … + n² = n(n+1)(2n+1)/6 时，从 n = k 到 n = k+1，等式左边需添加的式子是 ______。",
+     "answer": "(k+1)²",
+     "analysis": "n=k 时左边到 k² 为止，n=k+1 时左边多出一项 (k+1)²，两式相减即得所添加的式子是 (k+1)²。归纳法第二步必须先把这一步明确写出，再把 k(k+1)(2k+1)/6+(k+1)² 通分化成 (k+1)(k+2)(2k+3)/6 才能收尾。",
+     "itemId": "mat_exam_xx2_mid_b_q16",
+     "prereq": [
+      "mat_h489"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h490_q1",
+       "topicId": "mat_h490",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h490_q2",
+       "topicId": "mat_h490",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h490_q3",
+       "topicId": "mat_h490",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "四、解答题",
+   "rule": "共 70 分（第 17 题 10 分，第 18–22 题各 12 分）",
+   "items": [
+    {
+     "no": 17,
+     "score": 10,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h485",
+      "mat_h486"
+     ],
+     "stem": "已知等差数列 {a_n} 中，a_3 = 5，a_9 = 17。(1) 求数列 {a_n} 的通项公式；(2) 判断 2025 是否为该数列中的项，若是，指出它是第几项；(3) 求前 20 项和 S_20。",
+     "answer": "(1) a_n = 2n − 1；(2) 2025 是第 1013 项；(3) S_20 = 400",
+     "scoreRule": [
+      "由 a_9 − a_3 = 6d 求得 d = 2、a_1 = 1，并写出 a_n = 2n − 1，得 3 分",
+      "令 2n − 1 = 2025 解得 n = 1013，指出 2025 是第 1013 项，得 4 分",
+      "由 S_20 = 20(1+39)/2 求得 S_20 = 400，得 3 分"
+     ],
+     "analysis": "由 a_9=a_3+6d 得 17=5+6d，d=2；再由 a_3=a_1+2d 得 a_1=1，故 a_n=1+2(n−1)=2n−1。(2) 令 2n−1=2025，解得 n=1013 为正整数，所以 2025 是该数列的第 1013 项。(3) a_20=39，S_20=20(1+39)/2=20×20=400。判断某数是否为数列中的项，关键看解出的 n 是否为正整数。",
+     "itemId": "mat_exam_xx2_mid_b_q17",
+     "prereq": [
+      "mat_h484",
+      "mat_h485"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h485_q1",
+       "topicId": "mat_h485",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h485_q2",
+       "topicId": "mat_h485",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h485_q3",
+       "topicId": "mat_h485",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 18,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h488",
+      "mat_h489"
+     ],
+     "stem": "已知等比数列 {a_n} 中，a_2 = −6，a_5 = 48。(1) 求数列 {a_n} 的通项公式；(2) 求 a_1 + a_3 + a_5 + a_7 的值；(3) 求前 6 项和 S_6。",
+     "answer": "(1) a_n = 3·(−2)^{n−1}；(2) 255；(3) S_6 = −63",
+     "scoreRule": [
+      "由 a_5 = a_2q³ 求得 q = −2、a_1 = 3，写出通项 a_n = 3·(−2)^{n−1}，得 4 分",
+      "算出 a_1 = 3、a_3 = 12、a_5 = 48、a_7 = 192 并求和得 255，得 4 分",
+      "由 S_6 = 3[1 − (−2)⁶]/[1 − (−2)] 求得 S_6 = −63，得 4 分"
+     ],
+     "analysis": "由 a_5=a_2q³ 得 48=−6q³，q³=−8，q=−2，再由 a_2=a_1q 得 a_1=3，故 a_n=3·(−2)^{n−1}。(2) a_1=3，a_3=3×4=12，a_5=3×16=48，a_7=3×64=192，和为 3+12+48+192=255。(3) S_6=3[1−(−2)⁶]/[1−(−2)]=3(1−64)/3=−63。也可逐项相加：3−6+12−24+48−96=−63，一致。",
+     "itemId": "mat_exam_xx2_mid_b_q18",
+     "prereq": [
+      "mat_h487",
+      "mat_h488"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h488_q1",
+       "topicId": "mat_h488",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h488_q2",
+       "topicId": "mat_h488",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h488_q3",
+       "topicId": "mat_h488",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 19,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h483"
+     ],
+     "stem": "已知数列 {a_n} 的前 n 项和为 S_n = n² + 2n + 1。(1) 求 a_1；(2) 求 n ≥ 2 时 a_n 的表达式；(3) 判断 {a_n} 是否为等差数列，并说明理由。",
+     "answer": "(1) a_1 = 4；(2) a_n = 2n + 1（n ≥ 2）；(3) 不是等差数列，因为 a_2 − a_1 = 1 而 a_3 − a_2 = 2，相邻两项之差不恒为常数",
+     "scoreRule": [
+      "由 a_1 = S_1 求得 a_1 = 4，得 3 分",
+      "作差求得 n ≥ 2 时 a_n = 2n + 1，得 5 分",
+      "用 a_2 − a_1 与 a_3 − a_2 不相等（或首项不符合通项）判定不是等差数列并说明理由，得 4 分"
+     ],
+     "analysis": "(1) a_1=S_1=1+2+1=4。(2) n≥2 时 a_n=S_n−S_{n−1}=(n²+2n+1)−[(n−1)²+2(n−1)+1]=(n²+2n+1)−n²=2n+1。(3) 若把 n=1 代入 2n+1 得 3，与 a_1=4 不符，所以 a_2=5、a_3=7，a_2−a_1=1，a_3−a_2=2，相邻两项之差不恒为常数，{a_n} 不是等差数列。本题的陷阱是只看 n≥2 的通项就断言等差，必须回头检查首项。",
+     "itemId": "mat_exam_xx2_mid_b_q19",
+     "prereq": [
+      "mat_h482"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h483_q1",
+       "topicId": "mat_h483",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h483_q2",
+       "topicId": "mat_h483",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h483_q3",
+       "topicId": "mat_h483",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 20,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h490"
+     ],
+     "stem": "用数学归纳法证明：对任意正整数 n，都有 1×4 + 2×7 + … + n(3n+1) = n(n+1)²。",
+     "answer": "证明见解析。关键一步是把 k(k+1)² + (k+1)(3k+4) 提取公因式 (k+1)，化为 (k+1)(k+2)²。",
+     "scoreRule": [
+      "验证 n = 1 时左边 4 与右边 4 相等，得 2 分",
+      "假设 n = k 时等式成立，写出 1×4 + … + k(3k+1) = k(k+1)²，得 2 分",
+      "证明 n = k+1 时：两边加 (k+1)(3k+4)，提取公因式化为 (k+1)(k+2)²，得 6 分",
+      "写出结论「等式对一切正整数 n 成立」，得 2 分"
+     ],
+     "analysis": "① n=1 时左边=1×4=4，右边=1×2²=4，成立。② 假设 n=k 时成立，即左边 k 项和为 k(k+1)²。则 n=k+1 时左边=k(k+1)²+(k+1)(3k+4)=(k+1)[k(k+1)+3k+4]=(k+1)(k²+4k+4)=(k+1)(k+2)²，正是右边在 n=k+1 时的形式。由①②知等式对一切正整数 n 成立。第二步的要点是把第 k+1 项写成 (k+1)(3(k+1)+1)=(k+1)(3k+4)。",
+     "itemId": "mat_exam_xx2_mid_b_q20",
+     "prereq": [
+      "mat_h489"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h490_q1",
+       "topicId": "mat_h490",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h490_q2",
+       "topicId": "mat_h490",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h490_q3",
+       "topicId": "mat_h490",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 21,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_h487",
+      "mat_h489"
+     ],
+     "stem": "已知数列 {a_n} 的通项公式为 a_n = 1/(n(n+1))。(1) 求该数列的前 n 项和 S_n；(2) 求使 S_n > 0.98 成立的最小正整数 n。",
+     "answer": "(1) S_n = n/(n+1)；(2) n = 50",
+     "scoreRule": [
+      "把 a_n 拆成 1/n − 1/(n+1) 的差，得 4 分",
+      "裂项相消求得 S_n = 1 − 1/(n+1) = n/(n+1)，得 4 分",
+      "解 n/(n+1) > 0.98 得 n > 49，取最小正整数 n = 50，得 4 分"
+     ],
+     "analysis": "(1) 把通项拆成两项之差：a_n=1/n−1/(n+1)。于是 S_n=(1−1/2)+(1/2−1/3)+…+(1/n−1/(n+1))=1−1/(n+1)=n/(n+1)，中间各项两两抵消。(2) 由 n/(n+1)>0.98 得 100n>98n+98，即 2n>98，n>49；又 S_49=49/50=0.98 恰不满足「大于」，S_50=50/51≈0.9804>0.98，故最小正整数为 50。",
+     "itemId": "mat_exam_xx2_mid_b_q21",
+     "prereq": [
+      "mat_h486",
+      "mat_h488"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h487_q1",
+       "topicId": "mat_h487",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h487_q2",
+       "topicId": "mat_h487",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h487_q3",
+       "topicId": "mat_h487",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 22,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_h480",
+      "mat_h485",
+      "mat_h486"
+     ],
+     "stem": "某市 2021 年底新能源汽车保有量为 8 万辆，此后每年比上一年增加 2 万辆；2021 年该市新建充电桩 1.2 万个，此后每年比上一年多建 0.3 万个。(1) 求 2026 年底该市新能源汽车保有量；(2) 求 2021 年底至 2026 年底（含）各年年底保有量之和；(3) 从 2021 年算起，到哪一年累计新建充电桩首次超过 10 万个？",
+     "answer": "(1) 18 万辆；(2) 78 万辆；(3) 2026 年，即第 6 年",
+     "scoreRule": [
+      "指出保有量构成首项 8、公差 2 的等差数列，求得第 6 年 a_6 = 18 万辆，得 3 分",
+      "用前 6 项和公式求得 78 万辆，得 4 分",
+      "写出充电桩数的前 n 项和 n(2.1+0.3n)/2，解不等式并确定首次超过 10 万个的年份为 2026 年，得 5 分"
+     ],
+     "analysis": "把 2021 年记为第 1 年。保有量构成等差数列 a_n=8+2(n−1)。(1) 2026 年是第 6 年，a_6=8+2×5=18（万辆）。(2) 六个年末的保有量之和 S_6=6(8+18)/2=78（万辆）。(3) 充电桩数构成首项 1.2、公差 0.3 的等差数列 b_n=1.2+0.3(n−1)，前 n 年累计 T_n=n[2×1.2+(n−1)×0.3]/2=n(2.1+0.3n)/2。T_5=5(2.1+1.5)/2=9（万个）≤10，T_6=6(2.1+1.8)/2=11.7（万个）>10，故第 6 年即 2026 年首次超过 10 万个。",
+     "itemId": "mat_exam_xx2_mid_b_q22",
+     "prereq": [
+      "mat_h484",
+      "mat_h485"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h480_q1",
+       "topicId": "mat_h480",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h480_q2",
+       "topicId": "mat_h480",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h480_q3",
+       "topicId": "mat_h480",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

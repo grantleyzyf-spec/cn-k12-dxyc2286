@@ -1,0 +1,1078 @@
+{
+ "book": "选择性必修第三册",
+ "term": "上册",
+ "grade": 11,
+ "stage": "高中",
+ "kind": "unit",
+ "paper": "第六章测试卷",
+ "duration": 120,
+ "fullScore": 150,
+ "scope": [
+  "第六章 计数原理"
+ ],
+ "examId": "mat_exam_xx3_u6",
+ "sections": [
+  {
+   "title": "一、单选题",
+   "rule": "每小题 5 分，共 40 分",
+   "items": [
+    {
+     "no": 1,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "itemId": "mat_exam_xx3_u6_q01",
+     "topicIds": [
+      "mat_h451"
+     ],
+     "stem": "某人从甲地到乙地可以乘火车或轮船，火车每天有 4 个班次，轮船每天有 3 个班次；从乙地到丙地只能乘汽车，汽车每天有 5 个班次．若他先从甲地到乙地，再从乙地到丙地，则不同的走法共有（　　）",
+     "answer": "B",
+     "analysis": "从甲地到乙地是分类完成，方法数为 4+3=7；从乙地到丙地必须乘汽车，有 5 种方法．两段行程需依次完成，用分步乘法计数原理，得 7×5=35 种不同的走法．",
+     "options": [
+      {
+       "label": "A",
+       "text": "12 种"
+      },
+      {
+       "label": "B",
+       "text": "35 种"
+      },
+      {
+       "label": "C",
+       "text": "20 种"
+      },
+      {
+       "label": "D",
+       "text": "60 种"
+      }
+     ],
+     "prereq": [],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h451_q1",
+       "topicId": "mat_h451",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h451_q2",
+       "topicId": "mat_h451",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h451_q3",
+       "topicId": "mat_h451",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "itemId": "mat_exam_xx3_u6_q02",
+     "topicIds": [
+      "mat_h453",
+      "mat_h454"
+     ],
+     "stem": "用 1，2，3，4，5 这五个数字组成没有重复数字的三位数，这样的三位数共有（　　）",
+     "answer": "A",
+     "analysis": "组成三位数需依次确定百位、十位、个位上的数字，且数字不能重复：百位有 5 种选法，十位有 4 种，个位有 3 种．由分步乘法计数原理得 A(5,3)=5×4×3=60 个．",
+     "options": [
+      {
+       "label": "A",
+       "text": "60 个"
+      },
+      {
+       "label": "B",
+       "text": "100 个"
+      },
+      {
+       "label": "C",
+       "text": "120 个"
+      },
+      {
+       "label": "D",
+       "text": "125 个"
+      }
+     ],
+     "prereq": [
+      "mat_h452",
+      "mat_h453"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h453_q1",
+       "topicId": "mat_h453",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h453_q2",
+       "topicId": "mat_h453",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h453_q3",
+       "topicId": "mat_h453",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "itemId": "mat_exam_xx3_u6_q03",
+     "topicIds": [
+      "mat_h455"
+     ],
+     "stem": "从 7 名同学中选出 2 名代表参加座谈会，不同的选法共有（　　）",
+     "answer": "B",
+     "analysis": "选出 2 名代表与先后顺序无关，是组合问题，选法数为 C(7,2)=7×6÷2=21 种．若误按排列计算会得到 42 种，那是把两人的顺序也算了进去．",
+     "options": [
+      {
+       "label": "A",
+       "text": "14 种"
+      },
+      {
+       "label": "B",
+       "text": "21 种"
+      },
+      {
+       "label": "C",
+       "text": "42 种"
+      },
+      {
+       "label": "D",
+       "text": "49 种"
+      }
+     ],
+     "prereq": [
+      "mat_h454"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h455_q1",
+       "topicId": "mat_h455",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h455_q2",
+       "topicId": "mat_h455",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h455_q3",
+       "topicId": "mat_h455",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "itemId": "mat_exam_xx3_u6_q04",
+     "topicIds": [
+      "mat_h454"
+     ],
+     "stem": "计算排列数 A(7,3) 的值，结果为（　　）",
+     "answer": "C",
+     "analysis": "由排列数公式 A(n,m)=n(n−1)…(n−m+1)，得 A(7,3)=7×6×5=210．注意它不是 7!÷3!=840，也不是组合数 C(7,3)=35．",
+     "options": [
+      {
+       "label": "A",
+       "text": "35"
+      },
+      {
+       "label": "B",
+       "text": "120"
+      },
+      {
+       "label": "C",
+       "text": "210"
+      },
+      {
+       "label": "D",
+       "text": "840"
+      }
+     ],
+     "prereq": [
+      "mat_h453"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h454_q2",
+       "topicId": "mat_h454",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h454_q3",
+       "topicId": "mat_h454",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h454_q4",
+       "topicId": "mat_h454",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "itemId": "mat_exam_xx3_u6_q05",
+     "topicIds": [
+      "mat_h458",
+      "mat_h457"
+     ],
+     "stem": "(x − 2/x)⁶ 的展开式中的常数项为（　　）",
+     "answer": "A",
+     "analysis": "通项为 T(k+1)=C(6,k)x^(6−k)(−2/x)^k=C(6,k)(−2)^k x^(6−2k)．令 6−2k=0 得 k=3，故常数项为 C(6,3)×(−2)³=20×(−8)=−160．",
+     "options": [
+      {
+       "label": "A",
+       "text": "−160"
+      },
+      {
+       "label": "B",
+       "text": "160"
+      },
+      {
+       "label": "C",
+       "text": "−20"
+      },
+      {
+       "label": "D",
+       "text": "20"
+      }
+     ],
+     "prereq": [
+      "mat_h457",
+      "mat_h456"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h458_q1",
+       "topicId": "mat_h458",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h458_q2",
+       "topicId": "mat_h458",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h458_q3",
+       "topicId": "mat_h458",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "itemId": "mat_exam_xx3_u6_q06",
+     "topicIds": [
+      "mat_h459"
+     ],
+     "stem": "在 (1+2x)ⁿ 的展开式中，所有二项式系数之和为 128，则展开式中 x³ 项的系数为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "280"
+      },
+      {
+       "label": "B",
+       "text": "560"
+      },
+      {
+       "label": "C",
+       "text": "35"
+      },
+      {
+       "label": "D",
+       "text": "1280"
+      }
+     ],
+     "answer": "A",
+     "analysis": "二项式系数之和为 2ⁿ，由 2ⁿ=128 得 n=7．通项 T(k+1)=C(7,k)(2x)^k，x³ 项对应 k=3，系数为 C(7,3)×2³=35×8=280，故选 A．",
+     "prereq": [
+      "mat_h458"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h459_q1",
+       "topicId": "mat_h459",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h459_q2",
+       "topicId": "mat_h459",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h459_q3",
+       "topicId": "mat_h459",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "itemId": "mat_exam_xx3_u6_q07",
+     "topicIds": [
+      "mat_h456"
+     ],
+     "stem": "已知 C(10,3)=120，利用组合数的性质可得 C(10,7) 的值为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "35"
+      },
+      {
+       "label": "B",
+       "text": "120"
+      },
+      {
+       "label": "C",
+       "text": "210"
+      },
+      {
+       "label": "D",
+       "text": "720"
+      }
+     ],
+     "answer": "B",
+     "analysis": "由组合数的性质 C(n,m)=C(n,n−m)，取 n=10、m=3 得 C(10,7)=C(10,3)=120．其实际意义是：从 10 个元素中取出 7 个与留下 3 个一一对应，选法数相同．",
+     "prereq": [
+      "mat_h455"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h456_q1",
+       "topicId": "mat_h456",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h456_q2",
+       "topicId": "mat_h456",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h456_q3",
+       "topicId": "mat_h456",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "hard",
+     "itemId": "mat_exam_xx3_u6_q08",
+     "topicIds": [
+      "mat_h452",
+      "mat_h453"
+     ],
+     "stem": "6 名同学站成一排照相，其中甲不站在两端的排法共有（　　）",
+     "answer": "B",
+     "analysis": "6 人全排列共 6!=720 种；甲站在两端的排法有 2×5!=240 种．故甲不站两端的排法为 720−240=480 种．也可先排甲（中间 4 个位置任选），再排其余 5 人：4×5!=480．",
+     "options": [
+      {
+       "label": "A",
+       "text": "240 种"
+      },
+      {
+       "label": "B",
+       "text": "480 种"
+      },
+      {
+       "label": "C",
+       "text": "600 种"
+      },
+      {
+       "label": "D",
+       "text": "720 种"
+      }
+     ],
+     "prereq": [
+      "mat_h451",
+      "mat_h452"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h452_q1",
+       "topicId": "mat_h452",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h452_q2",
+       "topicId": "mat_h452",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h452_q3",
+       "topicId": "mat_h452",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "二、多选题",
+   "rule": "每小题 5 分，共 20 分；全部选对得 5 分，部分选对得部分分，有选错得 0 分",
+   "items": [
+    {
+     "no": 9,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "basic",
+     "itemId": "mat_exam_xx3_u6_q09",
+     "topicIds": [
+      "mat_h451"
+     ],
+     "stem": "关于分类加法计数原理与分步乘法计数原理，下列说法正确的是（　　）",
+     "answer": "ABD",
+     "analysis": "A 正确，分类要求各类方案互斥且每类都能独立完成这件事．B 正确，分步时每一步缺一不可，只有全部完成才算完成这件事．C 错误，分步时各步方法数应相乘而不是相加．D 正确，这正是分类加法计数原理的表述．",
+     "options": [
+      {
+       "label": "A",
+       "text": "分类加法计数原理要求各类方案互不相同，且每一类方案都能独立完成这件事"
+      },
+      {
+       "label": "B",
+       "text": "分步乘法计数原理适用于完成一件事需要依次经过多个步骤、各步缺一不可的情形"
+      },
+      {
+       "label": "C",
+       "text": "用两个原理计数时，只要把每一步的方法数相加，就得到完成这件事的方法总数"
+      },
+      {
+       "label": "D",
+       "text": "若完成一件事有 n 类方案，第 i 类方案有 mᵢ 种方法，则方法总数为 m₁+m₂+…+mₙ"
+      }
+     ],
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分",
+      "有选错得 0 分"
+     ],
+     "prereq": [],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h451_q1",
+       "topicId": "mat_h451",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h451_q2",
+       "topicId": "mat_h451",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h451_q3",
+       "topicId": "mat_h451",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "basic",
+     "itemId": "mat_exam_xx3_u6_q10",
+     "topicIds": [
+      "mat_h457",
+      "mat_h458"
+     ],
+     "stem": "关于二项式定理，下列说法正确的是（　　）",
+     "answer": "ABC",
+     "analysis": "A 正确，(a+b)ⁿ 展开后按 a 的降幂排列共 n+1 项．B 正确，这就是二项展开式的通项公式．C 正确，把 b 换成 −b 只改变含 b 的奇次项的符号，各项系数的绝对值不变．D 错误，a^(n−k)b^k 的系数是组合数 C(n,k)，不是排列数 A(n,k)．",
+     "options": [
+      {
+       "label": "A",
+       "text": "(a+b)ⁿ 的展开式中共有 n+1 项"
+      },
+      {
+       "label": "B",
+       "text": "(a+b)ⁿ 的展开式的通项为 T(k+1)=C(n,k)a^(n−k)b^k，其中 k=0，1，…，n"
+      },
+      {
+       "label": "C",
+       "text": "(a−b)ⁿ 的展开式中各项系数的绝对值，与 (a+b)ⁿ 展开式对应项的系数相同"
+      },
+      {
+       "label": "D",
+       "text": "(a+b)ⁿ 的展开式中 a^(n−k)b^k 的系数为排列数 A(n,k)"
+      }
+     ],
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分",
+      "有选错得 0 分"
+     ],
+     "prereq": [
+      "mat_h456",
+      "mat_h457"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h457_q1",
+       "topicId": "mat_h457",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h457_q2",
+       "topicId": "mat_h457",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h457_q3",
+       "topicId": "mat_h457",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "itemId": "mat_exam_xx3_u6_q11",
+     "topicIds": [
+      "mat_h452",
+      "mat_h453",
+      "mat_h454"
+     ],
+     "stem": "关于排列与排列数，下列说法正确的是（　　）",
+     "answer": "ABC",
+     "analysis": "A 正确，这是排列数公式．B 正确，甲、乙相邻时把两人捆绑，与其余 3 人共 4 个元素全排列为 4!=24，内部再乘 2 得 48．C 正确，两位数的十位、个位有顺序，是排列问题，A(4,2)=4×3=12．D 错误，由 A(n,2)=n(n−1)=30 得 n=6，不是 5．",
+     "options": [
+      {
+       "label": "A",
+       "text": "从 n 个不同元素中取出 m 个元素的排列数为 A(n,m)=n!/(n−m)!"
+      },
+      {
+       "label": "B",
+       "text": "5 个人排成一排，其中甲、乙两人相邻的排法有 48 种"
+      },
+      {
+       "label": "C",
+       "text": "从 1，2，3，4 中任取 2 个不同数字组成两位数，共可组成 12 个不同的两位数"
+      },
+      {
+       "label": "D",
+       "text": "若 A(n,2)=30（n 为正整数），则 n=5"
+      }
+     ],
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分",
+      "有选错得 0 分"
+     ],
+     "prereq": [
+      "mat_h451",
+      "mat_h452",
+      "mat_h453"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h452_q1",
+       "topicId": "mat_h452",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h452_q2",
+       "topicId": "mat_h452",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h452_q3",
+       "topicId": "mat_h452",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "hard",
+     "itemId": "mat_exam_xx3_u6_q12",
+     "topicIds": [
+      "mat_h459"
+     ],
+     "stem": "关于 (1+x)ⁿ（n 为正整数）的展开式，下列说法正确的是（　　）",
+     "answer": "ABC",
+     "analysis": "A 正确，二项式系数之和为 2ⁿ．B 正确，n 为偶数时中间一项的二项式系数最大，即第 n/2+1 项．C 正确，令 x=1 即得各项系数之和为 2ⁿ．D 错误，n=10 时中间项是第 6 项（C(10,5)=252 最大），不是第 5 项．",
+     "options": [
+      {
+       "label": "A",
+       "text": "展开式中各项的二项式系数之和为 2ⁿ"
+      },
+      {
+       "label": "B",
+       "text": "当 n 为偶数时，展开式中二项式系数最大的项只有一项，即第 n/2+1 项"
+      },
+      {
+       "label": "C",
+       "text": "展开式中所有项的系数之和等于 2ⁿ"
+      },
+      {
+       "label": "D",
+       "text": "当 n=10 时，展开式中二项式系数最大的项是第 5 项"
+      }
+     ],
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分",
+      "有选错得 0 分"
+     ],
+     "prereq": [
+      "mat_h458"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h459_q1",
+       "topicId": "mat_h459",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h459_q2",
+       "topicId": "mat_h459",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h459_q3",
+       "topicId": "mat_h459",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "三、填空题",
+   "rule": "每小题 5 分，共 20 分",
+   "items": [
+    {
+     "no": 13,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "itemId": "mat_exam_xx3_u6_q13",
+     "topicIds": [
+      "mat_h451"
+     ],
+     "stem": "书架上有不同的语文书 5 本、数学书 4 本、英语书 3 本，从中任取 1 本，不同的取法共有 ______ 种．",
+     "answer": "12",
+     "analysis": "任取 1 本，可以取语文书、数学书或英语书，三类取法互不相同且任取一类都能完成\"取 1 本\"这件事，故用分类加法计数原理：5+4+3=12 种．",
+     "prereq": [],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h451_q1",
+       "topicId": "mat_h451",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h451_q2",
+       "topicId": "mat_h451",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h451_q3",
+       "topicId": "mat_h451",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "itemId": "mat_exam_xx3_u6_q14",
+     "topicIds": [
+      "mat_h454"
+     ],
+     "stem": "计算：A(6,4)=______．",
+     "answer": "360",
+     "analysis": "由排列数公式 A(6,4)=6×5×4×3=360，也可写成 6!/(6−4)!=720÷2=360．",
+     "verify": "6*5*4*3",
+     "prereq": [
+      "mat_h453"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h454_q1",
+       "topicId": "mat_h454",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h454_q2",
+       "topicId": "mat_h454",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h454_q3",
+       "topicId": "mat_h454",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "itemId": "mat_exam_xx3_u6_q15",
+     "topicIds": [
+      "mat_h456"
+     ],
+     "stem": "利用组合数的性质计算：C(9,2)+C(9,3)=______．",
+     "answer": "120",
+     "analysis": "C(9,2)=36，C(9,3)=84，两者相加得 120．利用组合数的性质 C(n,m)+C(n,m+1)=C(n+1,m+1) 可直接得 C(10,3)=120，两种算法一致．",
+     "verify": "36+84",
+     "prereq": [
+      "mat_h455"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h456_q1",
+       "topicId": "mat_h456",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h456_q2",
+       "topicId": "mat_h456",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h456_q3",
+       "topicId": "mat_h456",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "itemId": "mat_exam_xx3_u6_q16",
+     "topicIds": [
+      "mat_h458"
+     ],
+     "stem": "(x² + 1/x)⁶ 的展开式中 x³ 项的系数为 ______．",
+     "answer": "20",
+     "analysis": "通项为 T(k+1)=C(6,k)(x²)^(6−k)(1/x)^k=C(6,k)x^(12−3k)．令 12−3k=3 得 k=3，故 x³ 项的系数为 C(6,3)=20．",
+     "prereq": [
+      "mat_h457"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h458_q1",
+       "topicId": "mat_h458",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h458_q2",
+       "topicId": "mat_h458",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h458_q3",
+       "topicId": "mat_h458",
+       "difficulty": "standard"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "四、解答题",
+   "rule": "共 6 小题，共 70 分，解答应写出文字说明、证明过程或演算步骤",
+   "items": [
+    {
+     "no": 17,
+     "score": 10,
+     "type": "solve",
+     "difficulty": "standard",
+     "itemId": "mat_exam_xx3_u6_q17",
+     "topicIds": [
+      "mat_h453",
+      "mat_h454"
+     ],
+     "stem": "7 名同学站成一排照相．(1) 若甲、乙两人必须相邻，共有多少种排法？(2) 若甲、乙两人不相邻，共有多少种排法？",
+     "answer": "(1) 1440 种；(2) 3600 种．",
+     "analysis": "（1）把甲、乙捆绑成一个整体，与其余 5 人共 6 个元素全排列，有 A(6,6)=720 种；甲、乙内部还可交换顺序，有 2 种，故共 720×2=1440 种．（2）7 人全排列共 7!=5040 种，其中甲、乙相邻的 1440 种不符合要求，故不相邻的排法为 5040−1440=3600 种．",
+     "scoreRule": [
+      "把甲、乙捆绑成一个整体，与其余 5 人共 6 个元素全排列，有 A(6,6)=720 种，得 3 分",
+      "甲、乙内部可交换位置，再乘 2，得 1440 种，得 3 分",
+      "7 人无限制全排列共 7!=5040 种，得 2 分",
+      "用总排法减去相邻排法，得不相邻排法 3600 种，得 2 分"
+     ],
+     "prereq": [
+      "mat_h452",
+      "mat_h453"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h453_q1",
+       "topicId": "mat_h453",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h453_q2",
+       "topicId": "mat_h453",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h453_q3",
+       "topicId": "mat_h453",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 18,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "itemId": "mat_exam_xx3_u6_q18",
+     "topicIds": [
+      "mat_h455",
+      "mat_h456"
+     ],
+     "stem": "某医院从 5 名男医生和 4 名女医生中选 4 人组成医疗队．(1) 若至少要有 1 名女医生，共有多少种选法？(2) 若男、女医生各有 2 名，共有多少种选法？(3) 若选出的 4 人中恰有 1 名女医生，共有多少种选法？",
+     "answer": "(1) 121 种；(2) 60 种；(3) 40 种．",
+     "analysis": "（1）用间接法：从 9 人中任选 4 人共 C(9,4)=126 种，其中全是男医生的有 C(5,4)=5 种，故至少 1 名女医生有 126−5=121 种．（2）男女各 2 名即从 5 名男医生中选 2 人、从 4 名女医生中选 2 人，由分步乘法计数原理得 C(5,2)C(4,2)=10×6=60 种．（3）恰有 1 名女医生，需从 4 名女医生中选 1 人、从 5 名男医生中选 3 人，有 C(4,1)C(5,3)=4×10=40 种．",
+     "scoreRule": [
+      "不加限制时从 9 人中选 4 人，选法为 C(9,4)=126 种，得 3 分",
+      "全为男医生的选法为 C(5,4)=5 种，故至少 1 名女医生有 126−5=121 种，得 3 分",
+      "男、女各 2 名：C(5,2)·C(4,2)=10×6=60 种，得 3 分",
+      "恰有 1 名女医生：C(4,1)·C(5,3)=4×10=40 种，得 3 分"
+     ],
+     "prereq": [
+      "mat_h454",
+      "mat_h455"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h455_q1",
+       "topicId": "mat_h455",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h455_q2",
+       "topicId": "mat_h455",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h455_q3",
+       "topicId": "mat_h455",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 19,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "basic",
+     "itemId": "mat_exam_xx3_u6_q19",
+     "topicIds": [
+      "mat_h457",
+      "mat_h458"
+     ],
+     "stem": "已知 (2x − 1)⁶，回答下列问题：(1) 求展开式中 x³ 项的系数；(2) 求展开式中所有项的系数之和；(3) 求展开式中各项的二项式系数之和．",
+     "answer": "(1) −160；(2) 1；(3) 64．",
+     "analysis": "（1）通项为 T(k+1)=C(6,k)(2x)^(6−k)(−1)^k．令 6−k=3 得 k=3，x³ 项系数为 C(6,3)×2³×(−1)³=20×8×(−1)=−160．（2）令 x=1 得各项系数之和为 (2−1)⁶=1．（3）二项式系数之和只与 n 有关，为 2⁶=64，与 x 的取值无关．",
+     "scoreRule": [
+      "写出通项 T(k+1)=C(6,k)(2x)^(6−k)(−1)^k，得 3 分",
+      "由 6−k=3 得 k=3，x³ 项系数为 C(6,3)×2³×(−1)³=−160，得 4 分",
+      "令 x=1 得各项系数之和为 (2−1)⁶=1，得 3 分",
+      "二项式系数之和为 2⁶=64，得 2 分"
+     ],
+     "prereq": [
+      "mat_h456",
+      "mat_h457"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h457_q1",
+       "topicId": "mat_h457",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h457_q2",
+       "topicId": "mat_h457",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h457_q3",
+       "topicId": "mat_h457",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 20,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "itemId": "mat_exam_xx3_u6_q20",
+     "topicIds": [
+      "mat_h459",
+      "mat_h458"
+     ],
+     "stem": "已知 (1+x)⁹，回答下列问题：(1) 求展开式中二项式系数最大的项；(2) 求展开式中 x³ 项的系数；(3) 求展开式中含 x 的奇次幂的各项系数之和．",
+     "answer": "(1) 第 5 项 126x⁴ 与第 6 项 126x⁵；(2) 84；(3) 256．",
+     "analysis": "（1）n=9 为奇数，二项式系数先增后减，中间两项同时取得最大值，即第 5 项和第 6 项，其系数为 C(9,4)=C(9,5)=126，故两项分别为 126x⁴ 与 126x⁵．（2）x³ 项对应 k=3，系数为 C(9,3)=84．（3）设 f(x)=(1+x)⁹，奇次幂系数之和为 [f(1)−f(−1)]/2，而 f(1)=2⁹=512，f(−1)=0，故为 512/2=256．",
+     "scoreRule": [
+      "由 n=9 为奇数知二项式系数最大的项是中间两项，即第 5 项与第 6 项，得 3 分",
+      "算出 C(9,4)=C(9,5)=126，两项分别为 126x⁴ 与 126x⁵，得 3 分",
+      "x³ 项系数为 C(9,3)=84，得 3 分",
+      "奇次幂项系数之和为 (2⁹−0)/2=256，得 3 分"
+     ],
+     "prereq": [
+      "mat_h458",
+      "mat_h457"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h459_q1",
+       "topicId": "mat_h459",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h459_q2",
+       "topicId": "mat_h459",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h459_q3",
+       "topicId": "mat_h459",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 21,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "itemId": "mat_exam_xx3_u6_q21",
+     "topicIds": [
+      "mat_h452",
+      "mat_h455"
+     ],
+     "stem": "将 4 名志愿者分配到 3 个不同的社区服务，要求每个社区至少安排 1 名志愿者．(1) 共有多少种不同的分配方案？(2) 若甲志愿者必须去 A 社区，共有多少种不同的分配方案？",
+     "answer": "(1) 36 种；(2) 12 种．",
+     "analysis": "（1）4 人分到 3 个社区且每社区至少 1 人，人数构成只能是 2、1、1．先分组：C(4,2)C(2,1)C(1,1)/2!=6 种（除以 2! 是因为两个单人组无区别）；再把三组安排到 3 个不同社区，有 3!=6 种，共 6×6=36 种．（2）甲已去 A，其余 3 人分到 A、B、C 且 B、C 各至少 1 人：不加限制有 3³=27 种，B 无人有 2³=8 种，C 无人有 2³=8 种，B、C 都无人有 1 种，由容斥得 27−8−8+1=12 种．",
+     "scoreRule": [
+      "先分组：4 人按 2、1、1 三组分配，方法数为 C(4,2)C(2,1)C(1,1)/2!=6 种，得 4 分",
+      "再把三组安排到 3 个不同社区，有 3!=6 种，共 6×6=36 种，得 4 分",
+      "甲去 A 后，其余 3 人分配到 A、B、C 且 B、C 各至少 1 人，方法数为 3³−2×2³+1=12 种，得 4 分"
+     ],
+     "prereq": [
+      "mat_h451",
+      "mat_h454"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h452_q1",
+       "topicId": "mat_h452",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h452_q2",
+       "topicId": "mat_h452",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h452_q3",
+       "topicId": "mat_h452",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 22,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "itemId": "mat_exam_xx3_u6_q22",
+     "topicIds": [
+      "mat_h457",
+      "mat_h458"
+     ],
+     "stem": "已知 (1−x)⁶．(1) 求其展开式中 x² 项的系数；(2) 求 (1+x+x²)(1−x)⁶ 的展开式中 x³ 项的系数．",
+     "answer": "(1) 15；(2) −11．",
+     "analysis": "（1）(1−x)⁶ 的通项为 C(6,k)(−1)^k x^k，令 k=2 得 x² 项系数 C(6,2)=15．（2）把乘积展开为 1·(1−x)⁶+x·(1−x)⁶+x²·(1−x)⁶，x³ 项的系数由三部分合成：1×C(6,3)(−1)³=−20，x×C(6,2)(−1)²=15，x²×C(6,1)(−1)¹=−6，相加得 −20+15−6=−11．",
+     "scoreRule": [
+      "写出 (1−x)⁶ 的通项 C(6,k)(−1)^k x^k，得 x² 项系数 C(6,2)=15，得 4 分",
+      "把 (1+x+x²)(1−x)⁶ 拆成三部分，指出 x³ 项分别来自 1×x³、x×x²、x²×x 的项，得 4 分",
+      "算得 −20+15−6=−11，得 4 分"
+     ],
+     "prereq": [
+      "mat_h456",
+      "mat_h457"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h457_q1",
+       "topicId": "mat_h457",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h457_q2",
+       "topicId": "mat_h457",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h457_q3",
+       "topicId": "mat_h457",
+       "difficulty": "standard"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

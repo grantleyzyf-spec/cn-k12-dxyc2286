@@ -1,0 +1,1081 @@
+{
+ "book": "选择性必修第二册",
+ "term": "上册",
+ "grade": 12,
+ "stage": "高中",
+ "kind": "final",
+ "paper": "期末测试卷A",
+ "duration": 120,
+ "fullScore": 150,
+ "scope": [
+  "第四章 数列",
+  "第五章 一元函数的导数及其应用"
+ ],
+ "examId": "mat_exam_xx2_fin_a",
+ "sections": [
+  {
+   "title": "一、单选题",
+   "rule": "每小题 5 分，共 40 分",
+   "items": [
+    {
+     "no": 1,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h480"
+     ],
+     "stem": "数列 1/2, 2/3, 3/4, 4/5, … 的一个通项公式是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "a_n = n/(n+1)"
+      },
+      {
+       "label": "B",
+       "text": "a_n = (n+1)/n"
+      },
+      {
+       "label": "C",
+       "text": "a_n = 1 − 1/n"
+      },
+      {
+       "label": "D",
+       "text": "a_n = n/(n+2)"
+      }
+     ],
+     "answer": "A",
+     "analysis": "观察每项的分子恰为序号 n，分母比分子大 1 即 n+1，故 a_n=n/(n+1)。检验：n=1 得 1/2，n=4 得 4/5，与数列一致。B 在 n=1 时为 2，C 在 n=1 时为 0，D 在 n=1 时为 1/3，均不符。",
+     "itemId": "mat_exam_xx2_fin_a_q01",
+     "prereq": [],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h480_q1",
+       "topicId": "mat_h480",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h480_q2",
+       "topicId": "mat_h480",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h480_q3",
+       "topicId": "mat_h480",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h485",
+      "mat_h486"
+     ],
+     "stem": "在等差数列 {a_n} 中，a_1 = 2，a_5 = 10，则 a_8 等于（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "14"
+      },
+      {
+       "label": "B",
+       "text": "16"
+      },
+      {
+       "label": "C",
+       "text": "18"
+      },
+      {
+       "label": "D",
+       "text": "20"
+      }
+     ],
+     "answer": "B",
+     "analysis": "由 a_5=a_1+4d 得 10=2+4d，d=2；于是 a_8=a_1+7d=2+14=16。也可用 a_8=a_5+3d=10+6=16，两法一致。若把 d 算成 8/5 之类的错误值，说明把「相差 4 个公差」当成了「相差 5 个」。",
+     "itemId": "mat_exam_xx2_fin_a_q02",
+     "prereq": [
+      "mat_h484",
+      "mat_h485"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h485_q3",
+       "topicId": "mat_h485",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h485_q4",
+       "topicId": "mat_h485",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h485_q5",
+       "topicId": "mat_h485",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h483",
+      "mat_h488"
+     ],
+     "stem": "已知数列 {a_n} 的前 n 项和 S_n = 3^n − 1，则该数列的通项公式为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "a_n = 2·3^{n−1}"
+      },
+      {
+       "label": "B",
+       "text": "a_n = 3^{n−1}"
+      },
+      {
+       "label": "C",
+       "text": "a_n = 2·3^n"
+      },
+      {
+       "label": "D",
+       "text": "a_n = 2^n"
+      }
+     ],
+     "answer": "A",
+     "analysis": "a_1=S_1=3−1=2；n≥2 时 a_n=S_n−S_{n−1}=(3^n−1)−(3^{n−1}−1)=2·3^{n−1}。把 n=1 代入 2·3^{n−1} 得 2，与 a_1 相符，故通项对一切正整数 n 成立。它是以 2 为首项、3 为公比的等比数列；B 少乘了 2，C 的次数多一位。",
+     "itemId": "mat_exam_xx2_fin_a_q03",
+     "prereq": [
+      "mat_h482",
+      "mat_h487"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h483_q1",
+       "topicId": "mat_h483",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h483_q2",
+       "topicId": "mat_h483",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h483_q3",
+       "topicId": "mat_h483",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h492"
+     ],
+     "stem": "某物体做直线运动，位移 s(t) = 3t² + 2t（位移单位：m，时间单位：s），则 t = 2 s 时该物体的瞬时速度为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "12 m/s"
+      },
+      {
+       "label": "B",
+       "text": "14 m/s"
+      },
+      {
+       "label": "C",
+       "text": "16 m/s"
+      },
+      {
+       "label": "D",
+       "text": "26 m/s"
+      }
+     ],
+     "answer": "B",
+     "analysis": "瞬时速度是位移对时间的导数：s'(t)=6t+2，故 s'(2)=14（m/s）。也可从平均变化率看：s(2)=16，s(2+Δt)=3(2+Δt)²+2(2+Δt)，作差除以 Δt 得 14+3Δt，令 Δt 趋于 0 即得 14。D 项 26 是把 s(2)=16 与 s'(2) 相加所致。",
+     "itemId": "mat_exam_xx2_fin_a_q04",
+     "prereq": [
+      "mat_h491"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h492_q1",
+       "topicId": "mat_h492",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h492_q2",
+       "topicId": "mat_h492",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h492_q3",
+       "topicId": "mat_h492",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h495"
+     ],
+     "stem": "已知函数 f(x) = sin x + x³，则 f'(0) 等于（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "0"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "B",
+     "analysis": "由基本初等函数的导数公式，(sin x)'=cos x，(x³)'=3x²，故 f'(x)=cos x+3x²，于是 f'(0)=cos0+0=1。误选 A 是把 sin0=0 与 cos0=1 弄混，误选 C 是只算了对 x³ 求导后代入 x=0 时漏项。",
+     "itemId": "mat_exam_xx2_fin_a_q05",
+     "prereq": [
+      "mat_h494"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h495_q1",
+       "topicId": "mat_h495",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h495_q2",
+       "topicId": "mat_h495",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h495_q3",
+       "topicId": "mat_h495",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h496"
+     ],
+     "stem": "已知函数 f(x) = x·e^x，则 f'(1) 等于（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "e"
+      },
+      {
+       "label": "B",
+       "text": "2e"
+      },
+      {
+       "label": "C",
+       "text": "3e"
+      },
+      {
+       "label": "D",
+       "text": "e²"
+      }
+     ],
+     "answer": "B",
+     "analysis": "用积的求导法则：(x·e^x)'=1·e^x+x·e^x=e^x(x+1)，故 f'(1)=e×2=2e。若只对 e^x 求导而把 x 当常数，会得 e 而错选 A；若把 e^x 当常数只对 x 求导，会得 1。",
+     "itemId": "mat_exam_xx2_fin_a_q06",
+     "prereq": [
+      "mat_h495"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h496_q1",
+       "topicId": "mat_h496",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h496_q2",
+       "topicId": "mat_h496",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h496_q3",
+       "topicId": "mat_h496",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h497"
+     ],
+     "stem": "已知函数 y = (2x − 1)^5，则它的导函数 y' =（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "10(2x − 1)^4"
+      },
+      {
+       "label": "B",
+       "text": "5(2x − 1)^4"
+      },
+      {
+       "label": "C",
+       "text": "10(2x − 1)^5"
+      },
+      {
+       "label": "D",
+       "text": "2(2x − 1)^4"
+      }
+     ],
+     "answer": "A",
+     "analysis": "复合函数求导：先对外层幂函数求导得 5(2x−1)⁴，再乘内层 (2x−1)'=2，故 y'=10(2x−1)⁴。B 漏乘内层导数 2，C 忘了把指数降 1，D 只留下了内层导数，三者都是复合函数求导的常见错误。检验：x=1 时 y'=10，与用导数定义算出的结果一致。",
+     "itemId": "mat_exam_xx2_fin_a_q07",
+     "prereq": [
+      "mat_h496"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h497_q1",
+       "topicId": "mat_h497",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h497_q2",
+       "topicId": "mat_h497",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h497_q3",
+       "topicId": "mat_h497",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_h499"
+     ],
+     "stem": "若函数 f(x) = x³ − 3ax 在区间 (1, +∞) 上单调递增，则实数 a 的取值范围是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "a ≤ 1"
+      },
+      {
+       "label": "B",
+       "text": "a < 1"
+      },
+      {
+       "label": "C",
+       "text": "a ≤ 3"
+      },
+      {
+       "label": "D",
+       "text": "a ≥ 1"
+      }
+     ],
+     "answer": "A",
+     "analysis": "f'(x)=3x²−3a=3(x²−a)。要在 (1,+∞) 上单调递增，需 f'(x)≥0 对一切 x>1 成立，即 a≤x² 对一切 x>1 成立；由于 x>1 时 x²>1，故 a≤1。检验端点：a=1 时 f'(x)=3(x²−1)>0 对一切 x>1 恒成立，符合要求，所以等号可取。写成 a<1 就丢掉了 a=1 这一合法情形。",
+     "itemId": "mat_exam_xx2_fin_a_q08",
+     "prereq": [
+      "mat_h498"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h499_q1",
+       "topicId": "mat_h499",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h499_q2",
+       "topicId": "mat_h499",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h499_q3",
+       "topicId": "mat_h499",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "二、多选题",
+   "rule": "每小题 5 分，共 20 分（全部选对得 5 分，部分选对得部分分，有选错得 0 分）",
+   "items": [
+    {
+     "no": 9,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h484"
+     ],
+     "stem": "设等差数列 {a_n} 的首项为 a_1、公差为 d，则下列结论正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "若 a_1 = 1，d = 2，则 a_n = 2n + 1"
+      },
+      {
+       "label": "B",
+       "text": "若 S_n = n² + n，则 {a_n} 是等差数列"
+      },
+      {
+       "label": "C",
+       "text": "若 a_2 + a_9 = 12，则 a_5 + a_6 = 12"
+      },
+      {
+       "label": "D",
+       "text": "若 a_1 > 0 且 d < 0，则 S_n 存在最小值"
+      }
+     ],
+     "answer": "BC",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对 1 项得 2 分，选对 2 项得 4 分）",
+      "有选错得 0 分"
+     ],
+     "analysis": "A 中 a_n=1+2(n−1)=2n−1，写成 2n+1 差 2，错误。B 中 a_1=2，n≥2 时 a_n=S_n−S_{n−1}=2n，把 n=1 代入也等于 2，相邻两项差恒为 2，故是等差数列，正确。C 中 a_2+a_9 与 a_5+a_6 的下标和都是 11，由等差性质两者相等，正确。D 中首项为正、公差为负时 S_n 先增后减，有最大值而无最小值，错误。答案为 BC。",
+     "itemId": "mat_exam_xx2_fin_a_q09",
+     "prereq": [
+      "mat_h483"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h484_q1",
+       "topicId": "mat_h484",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h484_q2",
+       "topicId": "mat_h484",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h484_q3",
+       "topicId": "mat_h484",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h488",
+      "mat_h489"
+     ],
+     "stem": "设 {a_n} 是公比为 q 的等比数列，则下列结论正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "若公比 q = 1，则 S_n = n·a_1"
+      },
+      {
+       "label": "B",
+       "text": "若 a_n = 2·3^{n−1}，则 S_n = 3^n − 1"
+      },
+      {
+       "label": "C",
+       "text": "若 a_1 + a_2 = 6，a_3 + a_4 = 24，则公比 q = 4"
+      },
+      {
+       "label": "D",
+       "text": "若 a_1 = 1，q = −1，则 S_2025 = 0"
+      }
+     ],
+     "answer": "AB",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对 1 项得 2 分，选对 2 项得 4 分）",
+      "有选错得 0 分"
+     ],
+     "analysis": "A 中 q=1 时每项都等于 a_1，前 n 项和为 n·a_1，正确。B 中 S_n=2(3^n−1)/(3−1)=3^n−1，正确。C 中 a_3+a_4=q²(a_1+a_2)=6q²=24，q²=4，q=±2，不是 4，错误。D 中 q=−1 时各项为 1、−1、1、−1、…，前 2025 项（奇数个）之和为 1，不是 0，错误。答案为 AB。",
+     "itemId": "mat_exam_xx2_fin_a_q10",
+     "prereq": [
+      "mat_h487",
+      "mat_h488"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h488_q1",
+       "topicId": "mat_h488",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h488_q2",
+       "topicId": "mat_h488",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h488_q3",
+       "topicId": "mat_h488",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h499",
+      "mat_h500"
+     ],
+     "stem": "关于导数与函数单调性、极值的关系，下列结论正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "若 f'(x) > 0 在区间 I 上恒成立，则 f(x) 在 I 上单调递增"
+      },
+      {
+       "label": "B",
+       "text": "若 f(x) 在区间 I 上单调递增，则 f'(x) > 0 在 I 上恒成立"
+      },
+      {
+       "label": "C",
+       "text": "若 f'(x_0) = 0，则 x_0 一定是 f(x) 的极值点"
+      },
+      {
+       "label": "D",
+       "text": "若 f(x) 在 x_0 处取得极值且 f'(x_0) 存在，则 f'(x_0) = 0"
+      }
+     ],
+     "answer": "AD",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对 1 项得 2 分，选对 2 项得 4 分）",
+      "有选错得 0 分"
+     ],
+     "analysis": "A 是导数与单调性的基本定理，正确。B 反例为 f(x)=x³，它在 R 上单调递增，但 f'(0)=0，故正确说法应是 f'(x)≥0，错误。C 反例同样是 f(x)=x³，f'(0)=0 而 x=0 不是极值点（函数在两侧都递增），错误。D 是取得极值的必要条件，正确。答案为 AD。",
+     "itemId": "mat_exam_xx2_fin_a_q11",
+     "prereq": [
+      "mat_h498",
+      "mat_h499"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h499_q1",
+       "topicId": "mat_h499",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h499_q2",
+       "topicId": "mat_h499",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h499_q3",
+       "topicId": "mat_h499",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h495",
+      "mat_h496",
+      "mat_h497"
+     ],
+     "stem": "下列求导运算正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(x³ + 2)' = 3x² + 2"
+      },
+      {
+       "label": "B",
+       "text": "(sin x − cos x)' = cos x + sin x"
+      },
+      {
+       "label": "C",
+       "text": "(x·e^x)' = e^x(x + 1)"
+      },
+      {
+       "label": "D",
+       "text": "((2x + 1)³)' = 6(2x + 1)²"
+      }
+     ],
+     "answer": "BCD",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对 1 项得 2 分，选对 2 项得 4 分）",
+      "有选错得 0 分"
+     ],
+     "analysis": "A 中常数 2 的导数为 0，正确结果是 3x²，错误。B 中 (sin x)'=cos x，(cos x)'=−sin x，故结果是 cos x+sin x，正确。C 中由积的法则得 (x·e^x)'=e^x+x·e^x=e^x(x+1)，正确。D 中由复合函数法则得 3(2x+1)²·2=6(2x+1)²，正确。答案为 BCD。",
+     "itemId": "mat_exam_xx2_fin_a_q12",
+     "prereq": [
+      "mat_h494",
+      "mat_h495",
+      "mat_h496"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h495_q1",
+       "topicId": "mat_h495",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h495_q2",
+       "topicId": "mat_h495",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h495_q3",
+       "topicId": "mat_h495",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "三、填空题",
+   "rule": "每小题 5 分，共 20 分",
+   "items": [
+    {
+     "no": 13,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h488"
+     ],
+     "stem": "已知等比数列 {a_n} 中 a_1 = 3，a_4 = 24，则该数列的公比 q = ______。",
+     "answer": "2",
+     "verify": "(24/3)**(1/3)",
+     "analysis": "由 a_4=a_1q³ 得 24=3q³，q³=8，故 q=2。检验：3、6、12、24，第四项确为 24。若把 a_4/a_1=8 直接当公比，是把「公比的立方」当成了公比。",
+     "itemId": "mat_exam_xx2_fin_a_q13",
+     "prereq": [
+      "mat_h487"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h488_q1",
+       "topicId": "mat_h488",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h488_q2",
+       "topicId": "mat_h488",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h488_q3",
+       "topicId": "mat_h488",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h482"
+     ],
+     "stem": "已知数列 {a_n} 满足 a_1 = 2，且 a_{n+1} = 2a_n + 3（n ≥ 1），则 a_4 = ______。",
+     "answer": "37",
+     "verify": "5*2**3-3",
+     "analysis": "逐项递推：a_2=2×2+3=7，a_3=2×7+3=17，a_4=2×17+3=37。通项可验证为 a_n=5·2^{n−1}−3：n=1 得 2，n=4 得 37，均与递推结果一致。这类「a_{n+1}=pa_n+q」型可化为等比数列 a_n+3=2(a_{n−1}+3)。",
+     "itemId": "mat_exam_xx2_fin_a_q14",
+     "prereq": [
+      "mat_h481"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h482_q1",
+       "topicId": "mat_h482",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h482_q2",
+       "topicId": "mat_h482",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h482_q3",
+       "topicId": "mat_h482",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h493"
+     ],
+     "stem": "曲线 y = x³ − 2x + 1 在点 (1, 0) 处的切线方程为 ______。",
+     "answer": "y = x − 1",
+     "analysis": "先验证点在曲线上：1³−2×1+1=0，确为切点。y'=3x²−2，切线斜率 k=3−2=1，故切线方程为 y−0=1·(x−1)，即 y=x−1。若把原函数在 x=1 处的函数值 0 当斜率，就会得到水平线 y=0。",
+     "itemId": "mat_exam_xx2_fin_a_q15",
+     "prereq": [
+      "mat_h492"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h493_q1",
+       "topicId": "mat_h493",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h493_q2",
+       "topicId": "mat_h493",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h493_q4",
+       "topicId": "mat_h493",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h500"
+     ],
+     "stem": "函数 f(x) = x³ − 3x² + 2 的极大值为 ______。",
+     "answer": "2",
+     "verify": "0**3-3*0**2+2",
+     "analysis": "f'(x)=3x²−6x=3x(x−2)，令其为 0 得 x=0 或 x=2。x<0 时 f'>0，0<x<2 时 f'<0，故 x=0 处取极大值 f(0)=2；x=2 处取极小值 f(2)=8−12+2=−2。题目问极大值，故填 2，把 −2 当答案是把极值类型弄混。",
+     "itemId": "mat_exam_xx2_fin_a_q16",
+     "prereq": [
+      "mat_h499"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h500_q1",
+       "topicId": "mat_h500",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h500_q2",
+       "topicId": "mat_h500",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h500_q4",
+       "topicId": "mat_h500",
+       "difficulty": "hard"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "四、解答题",
+   "rule": "共 70 分（第 17 题 10 分，第 18–22 题各 12 分）",
+   "items": [
+    {
+     "no": 17,
+     "score": 10,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h485",
+      "mat_h486"
+     ],
+     "stem": "已知等差数列 {a_n} 中，a_1 = −3，a_5 = 5。(1) 求数列 {a_n} 的公差与通项公式；(2) 求前 n 项和 S_n；(3) 求 S_n 的最小值及此时 n 的值。",
+     "answer": "(1) d = 2，a_n = 2n − 5；(2) S_n = n² − 4n；(3) 当 n = 2 时 S_n 取最小值 −4",
+     "scoreRule": [
+      "由 a_5 − a_1 = 4d 求得 d = 2 并写出 a_n = 2n − 5，得 3 分",
+      "由求和公式得 S_n = n² − 4n，得 3 分",
+      "配方得 S_n = (n − 2)² − 4，指出 n = 2 时取最小值 −4，得 4 分"
+     ],
+     "analysis": "由 a_5=a_1+4d 得 5=−3+4d，d=2，故 a_n=−3+2(n−1)=2n−5。S_n=n(−3+2n−5)/2=n(n−4)=n²−4n=(n−2)²−4，所以 n=2 时 S_n 取最小值 −4。验证：a_1=−3、a_2=−1、a_3=1，S_1=−3、S_2=−4、S_3=−3，确在 n=2 处最小。也可从「前两项为负时累加最小」直接看出。",
+     "itemId": "mat_exam_xx2_fin_a_q17",
+     "prereq": [
+      "mat_h484",
+      "mat_h485"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h485_q1",
+       "topicId": "mat_h485",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h485_q2",
+       "topicId": "mat_h485",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h485_q3",
+       "topicId": "mat_h485",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 18,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h488",
+      "mat_h489"
+     ],
+     "stem": "已知等比数列 {a_n} 中，a_1 = 2，a_4 = 54。(1) 求数列 {a_n} 的通项公式；(2) 求前 5 项和 S_5；(3) 求使 S_n > 2024 成立的最小正整数 n。",
+     "answer": "(1) a_n = 2·3^{n−1}；(2) S_5 = 242；(3) n = 7",
+     "scoreRule": [
+      "由 a_4 = a_1q³ 求得 q = 3，写出通项 a_n = 2·3^{n−1}，得 4 分",
+      "由 S_5 = 2(3⁵ − 1)/(3 − 1) 求得 S_5 = 242，得 3 分",
+      "化简得 S_n = 3^n − 1，由 3^n > 2025 定出 n = 7 并检验，得 5 分"
+     ],
+     "analysis": "由 a_4=a_1q³ 得 54=2q³，q³=27，q=3，故 a_n=2·3^{n−1}。S_n=2(3^n−1)/(3−1)=3^n−1，S_5=243−1=242。要求 S_n>2024，即 3^n−1>2024，即 3^n>2025；3⁶=729<2025<2187=3⁷，故 n=7。检验：S_6=728≤2024，S_7=2186>2024，最小正整数为 7。",
+     "itemId": "mat_exam_xx2_fin_a_q18",
+     "prereq": [
+      "mat_h487",
+      "mat_h488"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h488_q1",
+       "topicId": "mat_h488",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h488_q2",
+       "topicId": "mat_h488",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h488_q3",
+       "topicId": "mat_h488",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 19,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h490"
+     ],
+     "stem": "用数学归纳法证明：对任意正整数 n，都有 1 + 1/2 + 1/4 + … + 1/2^{n−1} = 2 − 1/2^{n−1}。",
+     "answer": "证明见解析。关键一步是 n = k+1 时两边同加 1/2^k，把 2 − 1/2^{k−1} + 1/2^k 合并为 2 − 1/2^k。",
+     "scoreRule": [
+      "验证 n = 1 时左边 1 与右边 2 − 1 = 1 相等，得 2 分",
+      "假设 n = k 时等式成立，写出归纳假设，得 2 分",
+      "证明 n = k+1 时：两边加 1/2^k，化为 2 − 2/2^k + 1/2^k = 2 − 1/2^k，得 6 分",
+      "写出结论「等式对一切正整数 n 成立」，得 2 分"
+     ],
+     "analysis": "① n=1 时左边=1，右边=2−1/2⁰=1，等式成立。② 假设 n=k 时成立，即 1+1/2+…+1/2^{k−1}=2−1/2^{k−1}。则 n=k+1 时左边=2−1/2^{k−1}+1/2^k=2−2/2^k+1/2^k=2−1/2^k，正是右边在 n=k+1 时的形式。由①②知等式对一切正整数 n 成立。这一步的本质是把 −1/2^{k−1} 通分成 −2/2^k 再与 +1/2^k 合并，不通分就凑不出目标式。",
+     "itemId": "mat_exam_xx2_fin_a_q19",
+     "prereq": [
+      "mat_h489"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h490_q1",
+       "topicId": "mat_h490",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h490_q2",
+       "topicId": "mat_h490",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h490_q3",
+       "topicId": "mat_h490",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 20,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h493",
+      "mat_h496",
+      "mat_h497"
+     ],
+     "stem": "已知函数 f(x) = x³ − 2x + 3。(1) 求 f'(x)；(2) 求曲线 y = f(x) 在点 (2, 7) 处的切线方程；(3) 求曲线 y = f(x) 的斜率为 1 的切线方程。",
+     "answer": "(1) f'(x) = 3x² − 2；(2) y = 10x − 13；(3) y = x + 1 或 y = x + 5",
+     "scoreRule": [
+      "求出 f'(x) = 3x² − 2，得 4 分",
+      "由 k = f'(2) = 10 与切点 (2, 7) 写出切线 y = 10x − 13，得 4 分",
+      "由 3x² − 2 = 1 解得 x = ±1，分别求出两条切线 y = x + 1、y = x + 5，得 4 分"
+     ],
+     "analysis": "(1) f'(x)=3x²−2。(2) 先验证点在曲线上：f(2)=8−4+3=7，确为切点；k=f'(2)=10，切线为 y−7=10(x−2)，即 y=10x−13。(3) 令 3x²−2=1 得 x²=1，x=±1。x=1 时切点为 (1,2)，切线 y−2=1·(x−1)，即 y=x+1；x=−1 时切点为 (−1,4)，切线 y−4=1·(x+1)，即 y=x+5。第三问有两解，只写一条会丢分。",
+     "itemId": "mat_exam_xx2_fin_a_q20",
+     "prereq": [
+      "mat_h492",
+      "mat_h495",
+      "mat_h496"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h493_q1",
+       "topicId": "mat_h493",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h493_q2",
+       "topicId": "mat_h493",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h493_q3",
+       "topicId": "mat_h493",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 21,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_h499",
+      "mat_h500"
+     ],
+     "stem": "已知函数 f(x) = x³ − 3x² − 9x + 5。(1) 求 f'(x)，并写出 f(x) 的单调区间；(2) 求 f(x) 的极大值与极小值；(3) 求 f(x) 在区间 [0, 4] 上的最大值与最小值。",
+     "answer": "(1) f'(x) = 3(x − 3)(x + 1)，递增区间为 (−∞, −1) 与 (3, +∞)，递减区间为 (−1, 3)；(2) 极大值 f(−1) = 10，极小值 f(3) = −22；(3) 最大值 5，最小值 −22",
+     "scoreRule": [
+      "求出 f'(x) = 3x² − 6x − 9 = 3(x − 3)(x + 1)，并正确写出单调区间，得 4 分",
+      "由 f'(x) 的符号变化判定并算得极大值 10、极小值 −22，得 4 分",
+      "算出 f(0) = 5、f(3) = −22、f(4) = −15 并比较得最大值 5、最小值 −22，得 4 分"
+     ],
+     "analysis": "(1) f'(x)=3x²−6x−9=3(x²−2x−3)=3(x−3)(x+1)。当 x<−1 或 x>3 时 f'>0，当 −1<x<3 时 f'<0，故递增区间为 (−∞,−1)、(3,+∞)，递减区间为 (−1,3)。(2) 由符号变化知 x=−1 处取极大值 f(−1)=−1−3+9+5=10，x=3 处取极小值 f(3)=27−27−27+5=−22。(3) 闭区间上比较驻点与端点：f(0)=5，f(3)=−22，f(4)=64−48−36+5=−15，故最大值 5、最小值 −22。注意 f(−1)=10 虽为极大值，但不在 [0,4] 内，不能作为该区间上的最大值。",
+     "itemId": "mat_exam_xx2_fin_a_q21",
+     "prereq": [
+      "mat_h498",
+      "mat_h499"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h499_q1",
+       "topicId": "mat_h499",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h499_q2",
+       "topicId": "mat_h499",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h499_q3",
+       "topicId": "mat_h499",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 22,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_h501",
+      "mat_h497"
+     ],
+     "stem": "已知函数 f(x) = ln x − ax（a ∈ R），曲线 y = f(x) 在 x = 1 处的切线与 x 轴平行。(1) 求 a 的值；(2) 求 f(x) 的单调区间与极值；(3) 若 f(x) ≤ m − 1 对一切 x > 0 恒成立，求实数 m 的取值范围。",
+     "answer": "(1) a = 1；(2) 递增区间 (0, 1)，递减区间 (1, +∞)，极大值 f(1) = −1（也是最大值）；(3) m ≥ 0",
+     "scoreRule": [
+      "由 f'(x) = 1/x − a 及 f'(1) = 0 求得 a = 1，得 3 分",
+      "写出 f'(x) = (1 − x)/x，判定单调区间并求出极大值 −1，得 5 分",
+      "由最大值 −1 ≤ m − 1 解得 m ≥ 0，得 4 分"
+     ],
+     "analysis": "(1) f'(x)=1/x−a，切线与 x 轴平行即 f'(1)=1−a=0，得 a=1。(2) 此时 f'(x)=1/x−1=(1−x)/x：在 (0,1) 上 f'>0，在 (1,+∞) 上 f'<0，故 f 在 (0,1) 上单调递增、在 (1,+∞) 上单调递减，x=1 处取极大值 f(1)=ln1−1=−1。因为这是唯一的极值且为极大值，它也是 f 在 (0,+∞) 上的最大值。(3) f(x)≤m−1 恒成立等价于 f(x) 的最大值 ≤ m−1，即 −1≤m−1，得 m≥0。检验 m=0 时不等式为 f(x)≤−1，在 x=1 处取等号，符合要求。",
+     "itemId": "mat_exam_xx2_fin_a_q22",
+     "prereq": [
+      "mat_h500",
+      "mat_h496"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h501_q1",
+       "topicId": "mat_h501",
+       "difficulty": "hard"
+      },
+      {
+       "qid": "mat_h501_q2",
+       "topicId": "mat_h501",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h501_q3",
+       "topicId": "mat_h501",
+       "difficulty": "standard"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
