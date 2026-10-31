@@ -69,7 +69,7 @@ CH_TMPL = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>第{n}章 {title}｜{book} - 连载</title>
+<title>第{n}章 {title}｜{book} - 小说连载</title>
 <meta name="description" content="{book} 第{n}章 {title}（作者：{author}）在线免费阅读。">
 <link rel="canonical" href="{site}/{bookslug}/ch{n:04d}/">
 <link rel="stylesheet" href="{root}assets/site.css">
@@ -105,10 +105,10 @@ CH_TMPL = """<!DOCTYPE html>
 <body>
 <header class="site-header">
   <a class="brand" href="{root}">
-    <span class="brand-copy"><span class="brand-name">{book}</span><span class="brand-kicker">连载</span></span>
+    <span class="brand-copy"><span class="brand-name">{book}</span><span class="brand-kicker">小说连载</span></span>
   </a>
   <nav class="site-nav">
-    <a class="nav-link active" href="{root}novel/">连载</a>
+    <a class="nav-link active" href="{root}novel/">小说连载</a>
     <a class="nav-link" href="{root}">学生入口</a>
     <a class="nav-link" href="{root}teacher/">教师入口</a>
   </nav>
@@ -131,7 +131,7 @@ CH_TMPL = """<!DOCTYPE html>
     <b>追更 / 催更 / 讨论：公众号「{account}」</b>
     <div class="row">
       <img src="{root}assets/wechat-xueba-qr.png" alt="公众号 {account} 二维码" onerror="this.style.display='none'">
-      <div class="txt">关注后可第一时间看到当天更新（每日 5 章），也能直接留言告诉我下一段该怎么写。<br>全本免费，不设付费章节。</div>
+      <div class="txt">全本免费，不设付费章节。</div>
     </div>
   </div>
 
@@ -165,7 +165,7 @@ TOC_TMPL = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{book} 目录（共 {total} 章） - 连载</title>
+<title>{book} 目录（共 {total} 章） - 小说连载</title>
 <meta name="description" content="{book} 章节目录，作者 {author}，全本免费连载，每日更新 5 章。">
 <link rel="canonical" href="{site}/{bookslug}/">
 <link rel="stylesheet" href="{root}assets/site.css">
@@ -194,16 +194,16 @@ TOC_TMPL = """<!DOCTYPE html>
 <body>
 <header class="site-header">
   <a class="brand" href="{root}">
-    <span class="brand-copy"><span class="brand-name">{book}</span><span class="brand-kicker">连载</span></span>
+    <span class="brand-copy"><span class="brand-name">{book}</span><span class="brand-kicker">小说连载</span></span>
   </a>
   <nav class="site-nav">
-    <a class="nav-link active" href="{root}novel/">连载</a>
+    <a class="nav-link active" href="{root}novel/">小说连载</a>
     <a class="nav-link" href="{root}">学生入口</a>
     <a class="nav-link" href="{root}teacher/">教师入口</a>
   </nav>
 </header>
 <main class="toc">
-  <div class="crumb"><a href="{root}novel/">连载书架</a> › 目录</div>
+  <div class="crumb"><a href="{root}novel/">小说连载书架</a> › 目录</div>
   <h1>{book}</h1>
   <div class="sub">作者：{author} ｜ 已发布 {total} 章 ｜ 全书预计 {plan} 章 ｜ 每日更新 5 章 ｜ 全本免费</div>
   <div class="act">
@@ -262,7 +262,7 @@ SHELF_TMPL = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>连载书架 - {book}</title>
+<title>小说连载书架 - {book}</title>
 <meta name="description" content="{book}，作者 {author}，全本免费连载，每日更新 5 章。">
 <link rel="canonical" href="{site}novel/">
 <link rel="stylesheet" href="{root}assets/site.css">
@@ -292,17 +292,17 @@ SHELF_TMPL = """<!DOCTYPE html>
 <body>
 <header class="site-header">
   <a class="brand" href="{root}">
-    <span class="brand-copy"><span class="brand-name">中国 K-12 知识图谱</span><span class="brand-kicker">连载</span></span>
+    <span class="brand-copy"><span class="brand-name">中国 K-12 知识图谱</span><span class="brand-kicker">小说连载</span></span>
   </a>
   <nav class="site-nav">
-    <a class="nav-link active" href="{root}novel/">连载</a>
+    <a class="nav-link active" href="{root}novel/">小说连载</a>
     <a class="nav-link" href="{root}">学生入口</a>
     <a class="nav-link" href="{root}teacher/">教师入口</a>
     <a class="nav-link" href="{root}diagnose/?mode=exam">整卷测试</a>
   </nav>
 </header>
 <main class="shelf">
-  <h1>连载</h1>
+  <h1>小说连载</h1>
   <p class="lead">全本免费，每日 5 章。读完想做题的，旁边就是知识图谱和整卷测试。</p>
   <div class="book">
     <div class="cover"><div class="t">{book}</div><div class="a">{author}</div></div>

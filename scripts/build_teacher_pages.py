@@ -397,6 +397,7 @@ PAGE_TMPL = """<!DOCTYPE html>
   </a>
   <nav class="site-nav">
     <a class="nav-link" href="{root}teacher/">教师入口</a>
+    <a class="nav-link" href="{root}novel/">小说连载</a>
     <a class="nav-link" href="{root}diagnose/?mode=exam">整卷测试</a>
     <a class="nav-link" href="{root}">学生入口</a>
   </nav>
