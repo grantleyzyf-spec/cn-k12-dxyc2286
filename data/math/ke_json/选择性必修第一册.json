@@ -1,0 +1,5498 @@
+{
+ "book": "选择性必修第一册",
+ "keshi": [
+  {
+   "name": "1.1 空间向量及其运算",
+   "unit": "第一章",
+   "unit_name": "空间向量与立体几何",
+   "page": 2,
+   "domain": "图形与几何",
+   "type": "conceptual",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "空间向量",
+    "空间向量及其运算"
+   ],
+   "description": "由平面向量推广得到空间向量的概念，认识空间向量的模、零向量、单位向量与相反向量，理解相等向量与共线向量，并把平面向量的加法、减法、数乘运算及其运算律推广到空间。",
+   "mastery_criteria": [
+    "能举出空间向量的实例并说出它的模与方向",
+    "能判断两个空间向量是否相等或共线"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.08",
+     "confidence": "exact",
+     "quote": "经历由平面向量推广到空间向量的过程，理解空间向量的概念。",
+     "sourceLine": 1386
+    },
+    {
+     "id": "mat-2017:G.NR.09",
+     "confidence": "exact",
+     "quote": "掌握空间向量的线性运算及其坐标表示。",
+     "sourceLine": 1391
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "下列关于空间向量的说法中，正确的是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "空间中任意两个向量都可以平移到同一个平面内"
+      },
+      {
+       "label": "B",
+       "text": "空间中两个单位向量一定相等"
+      },
+      {
+       "label": "C",
+       "text": "空间中模相等的两个向量一定相等"
+      },
+      {
+       "label": "D",
+       "text": "空间中首尾相接的三个向量一定构成三角形"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "空间中任意两个向量都可以平移到同一个平面内"
+      },
+      {
+       "label": "B",
+       "text": "空间中两个单位向量一定相等"
+      },
+      {
+       "label": "C",
+       "text": "空间中模相等的两个向量一定相等"
+      },
+      {
+       "label": "D",
+       "text": "空间中首尾相接的三个向量一定构成三角形"
+      }
+     ],
+     "answer": "A",
+     "difficulty": "basic",
+     "explanation": "空间向量是自由向量，通过平移可以把任意两个向量移到同一平面内；单位向量只要求模为1，方向可以不同；模相等但方向不同的向量不相等；三个向量首尾相接由加法法则决定，一般不能围成三角形。"
+    },
+    {
+     "type": "choice",
+     "prompt": "在平行六面体 ABCD-A₁B₁C₁D₁ 中，与向量 AB 相等的向量是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "CD"
+      },
+      {
+       "label": "B",
+       "text": "BA"
+      },
+      {
+       "label": "C",
+       "text": "DC"
+      },
+      {
+       "label": "D",
+       "text": "AD"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "CD"
+      },
+      {
+       "label": "B",
+       "text": "BA"
+      },
+      {
+       "label": "C",
+       "text": "DC"
+      },
+      {
+       "label": "D",
+       "text": "AD"
+      }
+     ],
+     "answer": "C",
+     "difficulty": "basic",
+     "explanation": "DC 与 AB 方向相同、长度都等于棱 AB 的长，所以 DC=AB；CD 与 BA 都与 AB 方向相反，AD 与 AB 方向不同，都不相等。"
+    },
+    {
+     "type": "fill",
+     "prompt": "空间向量中，与向量 a 长度相等而方向相反的向量叫做 a 的____向量，记作 −a。",
+     "answer": "相反",
+     "difficulty": "basic",
+     "explanation": "由相反向量的定义，长度相等、方向相反的两个向量互为相反向量，向量 a 的相反向量记作 −a，且 a+(−a)=0。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "在棱长为 1 的正方体 ABCD-A₁B₁C₁D₁ 中，以顶点为起点和终点且与向量 AB 相等的向量共有几个？",
+     "answer": 3,
+     "verify": "len(['DC', 'D1C1', 'A1B1'])",
+     "difficulty": "basic",
+     "explanation": "与 AB 同向且等长的棱向量只有 DC、D₁C₁、A₁B₁ 三个，其余与 AB 平行的棱向量方向都与 AB 相反，不能算相等向量，所以共 3 个。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "在平行六面体 ABCD-A₁B₁C₁D₁ 中，用向量 AB、AD、AA₁ 表示向量 AC₁ 与 BD₁。",
+     "answer": "AC₁=AB+AD+AA₁；BD₁=−AB+AD+AA₁",
+     "keypoints": [
+      "AC₁=AB+AD+AA₁",
+      "BD₁=BA+AD+AA₁=−AB+AD+AA₁",
+      "按空间向量加法法则逐段拼接"
+     ],
+     "difficulty": "standard",
+     "explanation": "由加法法则 AC₁=AB+BC+CC₁=AB+AD+AA₁；而 BD₁=BA+AD+DD₁，其中 BA=−AB、DD₁=AA₁，故 BD₁=−AB+AD+AA₁。"
+    }
+   ]
+  },
+  {
+   "name": "1.1.1 空间向量及其线性运算",
+   "unit": "第一章",
+   "unit_name": "空间向量与立体几何",
+   "page": 2,
+   "domain": "图形与几何",
+   "type": "procedural",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "空间向量",
+    "线性运算"
+   ],
+   "description": "借助平面向量线性运算的推广，掌握空间向量的加法、减法与数乘运算及其运算律，会用三角形法则、平行四边形法则在平行六面体中化简向量表达式，并能用三个不共面的向量表示其他向量。",
+   "mastery_criteria": [
+    "能化简空间向量的线性表达式并说明所用的运算律",
+    "能用三个不共面的向量表示平行六面体中的其他向量"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.08",
+     "confidence": "exact",
+     "quote": "经历由平面向量推广到空间向量的过程，理解空间向量的概念。",
+     "sourceLine": 1386
+    },
+    {
+     "id": "mat-2017:G.NR.09",
+     "confidence": "exact",
+     "quote": "掌握空间向量的线性运算及其坐标表示。",
+     "sourceLine": 1391
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "化简 AB+BC+CD 的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "AC"
+      },
+      {
+       "label": "B",
+       "text": "BD"
+      },
+      {
+       "label": "C",
+       "text": "0"
+      },
+      {
+       "label": "D",
+       "text": "AD"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "AC"
+      },
+      {
+       "label": "B",
+       "text": "BD"
+      },
+      {
+       "label": "C",
+       "text": "0"
+      },
+      {
+       "label": "D",
+       "text": "AD"
+      }
+     ],
+     "answer": "D",
+     "difficulty": "basic",
+     "explanation": "由向量加法的三角形法则，AB+BC=AC，AC+CD=AD，所以原式等于 AD，这是加法结合律的直接应用。"
+    },
+    {
+     "type": "choice",
+     "prompt": "在平行六面体 ABCD-A₁B₁C₁D₁ 中，AB+AD+AA₁ 等于（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "A₁C"
+      },
+      {
+       "label": "B",
+       "text": "AC₁"
+      },
+      {
+       "label": "C",
+       "text": "BD₁"
+      },
+      {
+       "label": "D",
+       "text": "AC"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "A₁C"
+      },
+      {
+       "label": "B",
+       "text": "AC₁"
+      },
+      {
+       "label": "C",
+       "text": "BD₁"
+      },
+      {
+       "label": "D",
+       "text": "AC"
+      }
+     ],
+     "answer": "B",
+     "difficulty": "basic",
+     "explanation": "AB+AD=AC（底面平行四边形对角线），再由 AC+AA₁=AC₁（侧面平行四边形），所以三个不共面的向量之和是体对角线 AC₁。"
+    },
+    {
+     "type": "fill",
+     "prompt": "在空间四边形 ABCD 中，化简 (AB+CD)+(BC+DA) 的结果是____。",
+     "answer": "0",
+     "difficulty": "basic",
+     "explanation": "由交换律与结合律，原式=(AB+BC)+(CD+DA)=AC+CA=0，说明首尾相接绕行一周的向量之和为零向量。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "已知 M 是线段 AB 的中点，O 为空间中任意一点，若 OM=x·OA+y·OB，则 x+y 等于多少？",
+     "answer": 1,
+     "verify": "0.5+0.5",
+     "difficulty": "basic",
+     "explanation": "中点条件下 OM=½(OA+OB)，所以 x=y=½，x+y=1；这一结论与点 O 的位置无关，是空间向量线性运算的常用结果。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "在平行六面体 ABCD-A₁B₁C₁D₁ 中，O 为底面 ABCD 对角线的交点，用 AB、AD、AA₁ 表示 A₁O。",
+     "answer": "A₁O=½AB+½AD−AA₁",
+     "keypoints": [
+      "AO=½(AB+AD)",
+      "A₁O=AO−AA₁",
+      "结果为 ½AB+½AD−AA₁"
+     ],
+     "difficulty": "standard",
+     "explanation": "O 是底面中心，AO=½AC=½(AB+AD)；又 A₁A=−AA₁，由三角形法则 A₁O=A₁A+AO=AO−AA₁，代入即得 ½AB+½AD−AA₁。"
+    }
+   ]
+  },
+  {
+   "name": "1.1.2 空间向量的数量积运算",
+   "unit": "第一章",
+   "unit_name": "空间向量与立体几何",
+   "page": 6,
+   "domain": "图形与几何",
+   "type": "procedural",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "空间向量",
+    "数量积"
+   ],
+   "description": "认识空间向量的夹角与数量积，理解数量积的几何意义以及向量在向量、直线、平面上的投影，会用 a·b=|a||b|cos⟨a,b⟩ 求数量积、模与夹角，并能用数量积判断两个向量垂直。",
+   "mastery_criteria": [
+    "能由已知的模与夹角算出两个空间向量的数量积",
+    "能用数量积的运算律求模并证明垂直"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.11",
+     "confidence": "exact",
+     "quote": "掌握空间向量的数量积及其坐标表示。",
+     "sourceLine": 1392
+    },
+    {
+     "id": "mat-2017:G.NR.08",
+     "confidence": "exact",
+     "quote": "经历由平面向量推广到空间向量的过程，理解空间向量的概念。",
+     "sourceLine": 1386
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "已知 |a|=2，|b|=3，⟨a，b⟩=60°，则 a·b 等于（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "3√3"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "1.5"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "3√3"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "1.5"
+      }
+     ],
+     "answer": "A",
+     "difficulty": "basic",
+     "explanation": "由数量积定义 a·b=|a||b|cos⟨a，b⟩=2×3×cos60°=6×½=3，注意夹角是60°而不是30°。"
+    },
+    {
+     "type": "choice",
+     "prompt": "若非零向量 a、b 满足 a·b=0，则 a 与 b 的关系是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "夹角为锐角"
+      },
+      {
+       "label": "B",
+       "text": "共线且同向"
+      },
+      {
+       "label": "C",
+       "text": "垂直"
+      },
+      {
+       "label": "D",
+       "text": "共线且反向"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "夹角为锐角"
+      },
+      {
+       "label": "B",
+       "text": "共线且同向"
+      },
+      {
+       "label": "C",
+       "text": "垂直"
+      },
+      {
+       "label": "D",
+       "text": "共线且反向"
+      }
+     ],
+     "answer": "C",
+     "difficulty": "basic",
+     "explanation": "非零向量的数量积为零，说明 cos⟨a，b⟩=0，即夹角为90°，也就是两向量互相垂直，这是判断垂直的向量方法。"
+    },
+    {
+     "type": "fill",
+     "prompt": "已知单位向量 e₁ 与 e₂ 互相垂直，则 |e₁+e₂| 的值是____。",
+     "answer": "√2",
+     "difficulty": "basic",
+     "explanation": "|e₁+e₂|²=e₁²+2e₁·e₂+e₂²=1+0+1=2，所以 |e₁+e₂|=√2，这是用数量积求模的典型做法。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "已知 |a|=1，|b|=2，⟨a，b⟩=120°，则 a·b 的值为多少？",
+     "answer": -1,
+     "verify": "1*2*(-0.5)",
+     "difficulty": "basic",
+     "explanation": "cos120°=−½，代入定义得 a·b=1×2×(−½)=−1，数量积为负说明两向量夹角为钝角。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "已知 |a|=3，|b|=4，a·b=6，求 cos⟨a，b⟩ 与 |a+b|。",
+     "answer": "cos⟨a，b⟩=½，|a+b|=√37",
+     "keypoints": [
+      "由 a·b=|a||b|cosθ 得 cosθ=6/(3×4)=½",
+      "|a+b|²=9+16+2×6=37",
+      "所以 |a+b|=√37"
+     ],
+     "difficulty": "standard",
+     "explanation": "先由数量积定义反求夹角余弦得½；再用 |a+b|²=a²+2a·b+b²=9+12+16=37，开方得 |a+b|=√37。"
+    }
+   ]
+  },
+  {
+   "name": "1.2 空间向量基本定理",
+   "unit": "第一章",
+   "unit_name": "空间向量与立体几何",
+   "page": 11,
+   "domain": "图形与几何",
+   "type": "conceptual",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "空间向量",
+    "空间向量基本定理",
+    "基底"
+   ],
+   "description": "通过用三个不共面的向量表示空间任一向量，理解空间向量基本定理，认识基底、基向量、单位正交基底与正交分解，并会在给定基底下用基向量表示指定的空间向量。",
+   "mastery_criteria": [
+    "能判断三个向量能否构成空间的一个基底",
+    "能在给定基底下用基向量表示指定的向量"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.10",
+     "confidence": "exact",
+     "quote": "掌握空间向量基本定理及其意义，掌握空间向量的正交分解及其坐标表示。",
+     "sourceLine": 1389
+    },
+    {
+     "id": "mat-2017:G.NR.08",
+     "confidence": "exact",
+     "quote": "经历由平面向量推广到空间向量的过程，理解空间向量的概念。",
+     "sourceLine": 1386
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "在平行六面体 ABCD-A₁B₁C₁D₁ 中，下列三组向量能构成空间的一个基底的是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "AB，AD，AC"
+      },
+      {
+       "label": "B",
+       "text": "AB，AA₁，BA₁"
+      },
+      {
+       "label": "C",
+       "text": "AD，AB，DC"
+      },
+      {
+       "label": "D",
+       "text": "AB，AD，AA₁"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "AB，AD，AC"
+      },
+      {
+       "label": "B",
+       "text": "AB，AA₁，BA₁"
+      },
+      {
+       "label": "C",
+       "text": "AD，AB，DC"
+      },
+      {
+       "label": "D",
+       "text": "AB，AD，AA₁"
+      }
+     ],
+     "answer": "D",
+     "difficulty": "basic",
+     "explanation": "AC=AB+AD、BA₁=−AB+AA₁、DC=AB，这三组内的向量都共面；只有 AB、AD、AA₁ 两两不共面，可以构成空间的一个基底。"
+    },
+    {
+     "type": "choice",
+     "prompt": "若 {a，b，c} 是空间的一个基底，p=xa+yb+zc，则实数 x，y，z 的取值情况是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "不唯一"
+      },
+      {
+       "label": "B",
+       "text": "唯一确定"
+      },
+      {
+       "label": "C",
+       "text": "有无穷多组"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "不唯一"
+      },
+      {
+       "label": "B",
+       "text": "唯一确定"
+      },
+      {
+       "label": "C",
+       "text": "有无穷多组"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "B",
+     "difficulty": "basic",
+     "explanation": "空间向量基本定理中的有序实数组是唯一的，这正是基底可以像坐标一样表示向量的原因，若不唯一就无法用基底进行运算。"
+    },
+    {
+     "type": "fill",
+     "prompt": "若三个空间向量共面，则它们____（填“能”或“不能”）构成空间的一个基底。",
+     "answer": "不能",
+     "difficulty": "basic",
+     "explanation": "空间中任意三个不共面的向量才能构成基底；三个共面向量只能生成一个平面内的向量，无法表示该平面外的向量。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "设 G 是三角形 ABC 的重心，O 为空间中任意一点，若 OG=x·OA+y·OB+z·OC，则 x+y+z 等于多少？",
+     "answer": 1,
+     "verify": "3*(1/3)",
+     "difficulty": "standard",
+     "explanation": "重心满足 OG=⅓(OA+OB+OC)，三个系数都是⅓，其和为1；这一结论与点 O 的选取无关，常用来检验分解是否正确。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "在平行六面体 ABCD-A₁B₁C₁D₁ 中，设 AB=a，AD=b，AA₁=c，M 是上底面 A₁B₁C₁D₁ 的中心，用 a、b、c 表示 AM。",
+     "answer": "AM=½a+½b+c",
+     "keypoints": [
+      "A₁M=½(A₁B₁+A₁D₁)=½(a+b)",
+      "AM=AA₁+A₁M",
+      "所以 AM=½a+½b+c"
+     ],
+     "difficulty": "standard",
+     "explanation": "上底面中心是 A₁C₁ 的中点，故 A₁M=½(A₁B₁+A₁D₁)=½(a+b)；再由 AM=AA₁+A₁M 得 AM=½a+½b+c，体现了用基底表示向量的一般方法。"
+    }
+   ]
+  },
+  {
+   "name": "1.3 空间向量及其运算的坐标表示",
+   "unit": "第一章",
+   "unit_name": "空间向量与立体几何",
+   "page": 16,
+   "domain": "图形与几何",
+   "type": "procedural",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "空间向量",
+    "坐标表示"
+   ],
+   "description": "会用空间直角坐标系刻画点的位置并写出点与向量的坐标，掌握空间向量加减、数乘、数量积以及模的坐标运算，并能用坐标判断两个向量平行或垂直。",
+   "mastery_criteria": [
+    "能由点的位置写出坐标，并求出以两点为端点的向量坐标",
+    "能用坐标计算数量积与模，判断向量是否垂直"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.09",
+     "confidence": "exact",
+     "quote": "掌握空间向量的线性运算及其坐标表示。",
+     "sourceLine": 1391
+    },
+    {
+     "id": "mat-2017:G.NR.11",
+     "confidence": "exact",
+     "quote": "掌握空间向量的数量积及其坐标表示。",
+     "sourceLine": 1392
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "点 P(1，−2，3) 关于 Oxy 平面对称的点的坐标是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(1，−2，−3)"
+      },
+      {
+       "label": "B",
+       "text": "(−1，2，3)"
+      },
+      {
+       "label": "C",
+       "text": "(1，2，−3)"
+      },
+      {
+       "label": "D",
+       "text": "(−1，−2，3)"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "(1，−2，−3)"
+      },
+      {
+       "label": "B",
+       "text": "(−1，2，3)"
+      },
+      {
+       "label": "C",
+       "text": "(1，2，−3)"
+      },
+      {
+       "label": "D",
+       "text": "(−1，−2，3)"
+      }
+     ],
+     "answer": "A",
+     "difficulty": "basic",
+     "explanation": "关于 Oxy 平面对称时横、纵坐标不变，竖坐标变为相反数，所以对称点为 (1，−2，−3)；关于坐标轴对称则要变两个坐标。"
+    },
+    {
+     "type": "choice",
+     "prompt": "已知 a=(1，0，−1)，b=(2，1，1)，则 a·b 等于（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "−1"
+      },
+      {
+       "label": "C",
+       "text": "1"
+      },
+      {
+       "label": "D",
+       "text": "0"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "−1"
+      },
+      {
+       "label": "C",
+       "text": "1"
+      },
+      {
+       "label": "D",
+       "text": "0"
+      }
+     ],
+     "answer": "C",
+     "difficulty": "basic",
+     "explanation": "由数量积的坐标表示 a·b=1×2+0×1+(−1)×1=2−1=1，注意第三分量是 −1 与 1 相乘，容易漏掉符号。"
+    },
+    {
+     "type": "fill",
+     "prompt": "已知 a=(2，−1，3)，b=(−4，2，−6)，则 a 与 b 的位置关系是____（填“平行”或“垂直”）。",
+     "answer": "平行",
+     "difficulty": "basic",
+     "explanation": "b=−2a，对应坐标成比例，所以两向量平行；若垂直则需数量积为零，而这里 a·b=−8−2−18≠0。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "已知向量 a=(1，2，2)，则 |a| 等于多少？",
+     "answer": 3,
+     "verify": "(1+4+4)**0.5",
+     "difficulty": "basic",
+     "explanation": "由 |a|=√(a₁²+a₂²+a₃²)=√(1+4+4)=√9=3，空间向量求模是把三个分量的平方和开方。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "已知 A(1，2，3)，B(2，4，5)，求向量 AB 的坐标与 |AB|。",
+     "answer": "AB=(1，2，2)，|AB|=3",
+     "keypoints": [
+      "一个向量的坐标等于终点坐标减去起点坐标",
+      "AB=(1，2，2)",
+      "|AB|=√(1+4+4)=3"
+     ],
+     "difficulty": "standard",
+     "explanation": "由终点减起点得 AB=(2−1，4−2，5−3)=(1，2，2)，再按模的坐标公式得 |AB|=√9=3，即 A、B 两点间的距离。"
+    }
+   ]
+  },
+  {
+   "name": "1.3.1 空间直角坐标系",
+   "unit": "第一章",
+   "unit_name": "空间向量与立体几何",
+   "page": 16,
+   "domain": "图形与几何",
+   "type": "conceptual",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "空间向量",
+    "空间直角坐标系"
+   ],
+   "description": "借助单位正交基底建立空间直角坐标系，认识坐标轴、坐标平面与右手直角坐标系，会用点在坐标轴上的射影写出点的坐标，并写出点关于坐标平面、坐标轴、原点的对称点的坐标。",
+   "mastery_criteria": [
+    "能写出长方体顶点在给定坐标系中的坐标",
+    "能写出点关于坐标平面或原点的对称点坐标"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.10",
+     "confidence": "exact",
+     "quote": "掌握空间向量基本定理及其意义，掌握空间向量的正交分解及其坐标表示。",
+     "sourceLine": 1389
+    },
+    {
+     "id": "mat-2017:G.NR.09",
+     "confidence": "exact",
+     "quote": "掌握空间向量的线性运算及其坐标表示。",
+     "sourceLine": 1391
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "点 A(2，−3，4) 在 z 轴上的射影的坐标是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(2，0，0)"
+      },
+      {
+       "label": "B",
+       "text": "(0，−3，0)"
+      },
+      {
+       "label": "C",
+       "text": "(2，−3，0)"
+      },
+      {
+       "label": "D",
+       "text": "(0，0，4)"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "(2，0，0)"
+      },
+      {
+       "label": "B",
+       "text": "(0，−3，0)"
+      },
+      {
+       "label": "C",
+       "text": "(2，−3，0)"
+      },
+      {
+       "label": "D",
+       "text": "(0，0，4)"
+      }
+     ],
+     "answer": "D",
+     "difficulty": "basic",
+     "explanation": "点在 z 轴上的射影，其横、纵坐标都为0，竖坐标保持不变，故射影为 (0，0，4)；在 x 轴上的射影则是 (2，0，0)。"
+    },
+    {
+     "type": "choice",
+     "prompt": "点 P(1，−2，3) 关于原点对称的点的坐标是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(1，2，−3)"
+      },
+      {
+       "label": "B",
+       "text": "(−1，2，−3)"
+      },
+      {
+       "label": "C",
+       "text": "(−1，−2，−3)"
+      },
+      {
+       "label": "D",
+       "text": "(−1，2，3)"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "(1，2，−3)"
+      },
+      {
+       "label": "B",
+       "text": "(−1，2，−3)"
+      },
+      {
+       "label": "C",
+       "text": "(−1，−2，−3)"
+      },
+      {
+       "label": "D",
+       "text": "(−1，2，3)"
+      }
+     ],
+     "answer": "B",
+     "difficulty": "basic",
+     "explanation": "关于原点对称时三个坐标都变为相反数，所以对称点为 (−1，2，−3)；只变一个坐标那是关于坐标平面对称。"
+    },
+    {
+     "type": "fill",
+     "prompt": "点 M(3，−1，2) 关于 xOy 平面对称的点的坐标是____。",
+     "answer": "(3，−1，−2)",
+     "difficulty": "basic",
+     "explanation": "xOy 平面是竖坐标为0的平面，关于它对称时竖坐标变号而横、纵坐标不变，因此对称点为 (3，−1，−2)。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "点 A(2，−1，2) 到 z 轴的距离的平方等于多少？",
+     "answer": 5,
+     "verify": "2**2+1**2",
+     "difficulty": "basic",
+     "explanation": "点到 z 轴的距离由横、纵坐标决定，d²=x²+y²=4+1=5；竖坐标在求到 z 轴的距离时不起作用。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "写出点 P(3，−2，1) 在 xOy、yOz、zOx 三个坐标平面内的射影的坐标。",
+     "answer": "(3，−2，0)；(0，−2，1)；(3，0，1)",
+     "keypoints": [
+      "在 xOy 平面内射影的竖坐标为0",
+      "在 yOz 平面内射影的横坐标为0",
+      "在 zOx 平面内射影的纵坐标为0"
+     ],
+     "difficulty": "standard",
+     "explanation": "向某个坐标平面作射影就是让垂直于该平面的那个坐标变0，其余两个坐标不变，于是三个射影依次为 (3，−2，0)、(0，−2，1)、(3，0，1)。"
+    }
+   ]
+  },
+  {
+   "name": "1.3.2 空间向量运算的坐标表示",
+   "unit": "第一章",
+   "unit_name": "空间向量与立体几何",
+   "page": 18,
+   "domain": "图形与几何",
+   "type": "procedural",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "空间向量",
+    "坐标运算"
+   ],
+   "description": "类比平面向量运算的坐标表示得出空间向量的坐标运算，掌握加减、数乘、数量积与模的坐标公式，能由两点坐标求向量坐标与距离，并用坐标判断向量平行、垂直。",
+   "mastery_criteria": [
+    "能进行空间向量加减、数乘与数量积的坐标运算",
+    "能由坐标判断两个向量是否垂直或平行"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.09",
+     "confidence": "exact",
+     "quote": "掌握空间向量的线性运算及其坐标表示。",
+     "sourceLine": 1391
+    },
+    {
+     "id": "mat-2017:G.NR.11",
+     "confidence": "exact",
+     "quote": "掌握空间向量的数量积及其坐标表示。",
+     "sourceLine": 1392
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "已知 a=(1，2，−1)，b=(2，0，3)，则 2a−b 等于（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(0，4，−5)"
+      },
+      {
+       "label": "B",
+       "text": "(0，4，5)"
+      },
+      {
+       "label": "C",
+       "text": "(4，4，−5)"
+      },
+      {
+       "label": "D",
+       "text": "(0，−4，−5)"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "(0，4，−5)"
+      },
+      {
+       "label": "B",
+       "text": "(0，4，5)"
+      },
+      {
+       "label": "C",
+       "text": "(4，4，−5)"
+      },
+      {
+       "label": "D",
+       "text": "(0，−4，−5)"
+      }
+     ],
+     "answer": "A",
+     "difficulty": "basic",
+     "explanation": "2a=(2，4，−2)，逐分量减去 b 得 (2−2，4−0，−2−3)=(0，4，−5)，注意第三分量是 −2−3=−5。"
+    },
+    {
+     "type": "choice",
+     "prompt": "已知 a=(1，−1，2)，b=(2，1，−1)，则 a·b 等于（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "−1"
+      },
+      {
+       "label": "D",
+       "text": "−3"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "−1"
+      },
+      {
+       "label": "D",
+       "text": "−3"
+      }
+     ],
+     "answer": "C",
+     "difficulty": "basic",
+     "explanation": "由坐标式 a·b=1×2+(−1)×1+2×(−1)=2−1−2=−1，数量积为负说明两向量的夹角是钝角。"
+    },
+    {
+     "type": "fill",
+     "prompt": "若向量 a=(1，2，3) 与 b=(2，−1，m) 垂直，则 m 的值是____。",
+     "answer": "0",
+     "difficulty": "basic",
+     "explanation": "由 a⊥b 得 a·b=1×2+2×(−1)+3m=3m=0，所以 m=0；这里前两个分量的乘积恰好抵消。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "已知 A(1，1，2)，B(2，−1，3)，则 |AB|² 等于多少？",
+     "answer": 6,
+     "verify": "(2-1)**2+(-1-1)**2+(3-2)**2",
+     "difficulty": "standard",
+     "explanation": "AB=(1，−2，1)，所以 |AB|²=1²+(−2)²+1²=1+4+1=6，从而 |AB|=√6；先算平方可以避免无理数运算。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "已知 a=(1，0，1)，b=(0，1，1)，求 a 与 b 夹角的余弦值。",
+     "answer": "cos⟨a，b⟩=½，夹角为60°",
+     "keypoints": [
+      "a·b=0+0+1=1",
+      "|a|=|b|=√2",
+      "cos⟨a，b⟩=1/(√2×√2)=½"
+     ],
+     "difficulty": "standard",
+     "explanation": "先用坐标式求数量积得1，再分别求模得√2，代入夹角公式得余弦为½，所以两向量夹角为60°。"
+    }
+   ]
+  },
+  {
+   "name": "1.4 空间向量的应用",
+   "unit": "第一章",
+   "unit_name": "空间向量与立体几何",
+   "page": 26,
+   "domain": "图形与几何",
+   "type": "modeling",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "空间向量",
+    "向量应用"
+   ],
+   "description": "体会用空间向量解决立体几何问题的基本思路：先用向量表示空间中的点、直线与平面，再用向量的运算判断位置关系、求距离与夹角，形成把几何问题代数化的一般框架。",
+   "mastery_criteria": [
+    "能说出用向量法解决立体几何问题的主要步骤",
+    "能用方向向量与法向量判断线面位置关系"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.13",
+     "confidence": "exact",
+     "quote": "能用向量语言描述直线和平面，理解直线的方向向量与平面的法向量。",
+     "sourceLine": 1395
+    },
+    {
+     "id": "mat-2017:G.NR.12",
+     "confidence": "exact",
+     "quote": "能用向量语言表述直线与直线、直线与平面、平面与平面的夹角以及垂直与平行关系。",
+     "sourceLine": 1397
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "若直线 l 的方向向量 u=(1，−1，2)，平面 α 的法向量 n=(−1，1，−2)，则 l 与 α 的位置关系是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行"
+      },
+      {
+       "label": "B",
+       "text": "相交但不垂直"
+      },
+      {
+       "label": "C",
+       "text": "直线 l 在平面 α 内"
+      },
+      {
+       "label": "D",
+       "text": "垂直"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "平行"
+      },
+      {
+       "label": "B",
+       "text": "相交但不垂直"
+      },
+      {
+       "label": "C",
+       "text": "直线 l 在平面 α 内"
+      },
+      {
+       "label": "D",
+       "text": "垂直"
+      }
+     ],
+     "answer": "D",
+     "difficulty": "basic",
+     "explanation": "u=−n，方向向量与法向量平行，说明直线与平面的法线同向，因此 l⊥α；若 u·n=0 才是平行或在平面内。"
+    },
+    {
+     "type": "choice",
+     "prompt": "两个平面的法向量分别为 n₁=(1，0，1)，n₂=(0，1，1)，则这两个平面所成角的大小是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "30°"
+      },
+      {
+       "label": "B",
+       "text": "60°"
+      },
+      {
+       "label": "C",
+       "text": "45°"
+      },
+      {
+       "label": "D",
+       "text": "90°"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "30°"
+      },
+      {
+       "label": "B",
+       "text": "60°"
+      },
+      {
+       "label": "C",
+       "text": "45°"
+      },
+      {
+       "label": "D",
+       "text": "90°"
+      }
+     ],
+     "answer": "B",
+     "difficulty": "standard",
+     "explanation": "两平面所成角等于法向量夹角的余弦绝对值：cosθ=1/(√2×√2)=½，且两平面所成角为锐角或直角，故 θ=60°。"
+    },
+    {
+     "type": "fill",
+     "prompt": "若直线 l 的方向向量与平面 α 的法向量垂直，则直线 l 与平面 α 的位置关系是____。",
+     "answer": "平行或在平面内",
+     "difficulty": "basic",
+     "explanation": "方向向量与法向量垂直说明直线方向与法线方向垂直，直线与平面平行；若直线上有公共点在平面内，则直线整个在平面内。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "棱长为 1 的正方体 ABCD-A₁B₁C₁D₁ 中，直线 AB₁ 与平面 ABCD 所成的角是多少度？",
+     "answer": 45,
+     "verify": "180/4",
+     "difficulty": "standard",
+     "explanation": "AB₁ 在底面上的射影是 AB，∠B₁AB 就是所求角，其正切为 BB₁/AB=1，所以角为 45°；也可用向量：sinθ=|u·n|/(|u||n|)=√2/2。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "若两个平面的法向量互相垂直，判断这两个平面的位置关系，并说明理由。",
+     "answer": "这两个平面互相垂直",
+     "keypoints": [
+      "平面所成角由法向量夹角刻画",
+      "法向量垂直时法向量夹角为90°",
+      "所以两平面所成角为90°，两平面垂直"
+     ],
+     "difficulty": "standard",
+     "explanation": "两平面所成的角等于它们法向量的夹角（取锐角），法向量互相垂直时夹角为90°，因此两个平面互相垂直，这就是用向量判断面面垂直的方法。"
+    }
+   ]
+  },
+  {
+   "name": "1.4.1 用空间向量研究直线、平面的位置关系",
+   "unit": "第一章",
+   "unit_name": "空间向量与立体几何",
+   "page": 26,
+   "domain": "图形与几何",
+   "type": "reasoning",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "空间向量",
+    "方向向量",
+    "法向量"
+   ],
+   "description": "理解直线的方向向量与平面的法向量，会用它们把直线、平面表示成向量的形式，并用方向向量与法向量的平行、垂直关系判断线线、线面、面面的平行与垂直。",
+   "mastery_criteria": [
+    "能求出一个平面的法向量",
+    "能用向量关系写出线线、线面平行与垂直的判定条件"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.13",
+     "confidence": "exact",
+     "quote": "能用向量语言描述直线和平面，理解直线的方向向量与平面的法向量。",
+     "sourceLine": 1395
+    },
+    {
+     "id": "mat-2017:G.NR.12",
+     "confidence": "exact",
+     "quote": "能用向量语言表述直线与直线、直线与平面、平面与平面的夹角以及垂直与平行关系。",
+     "sourceLine": 1397
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "直线 l 的方向向量 a=(1，2，3)，平面 α 的法向量 n=(1，1，−1)，则 l 与 α 的关系是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行或在平面内"
+      },
+      {
+       "label": "B",
+       "text": "垂直"
+      },
+      {
+       "label": "C",
+       "text": "相交但不垂直"
+      },
+      {
+       "label": "D",
+       "text": "无法判断"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "平行或在平面内"
+      },
+      {
+       "label": "B",
+       "text": "垂直"
+      },
+      {
+       "label": "C",
+       "text": "相交但不垂直"
+      },
+      {
+       "label": "D",
+       "text": "无法判断"
+      }
+     ],
+     "answer": "A",
+     "difficulty": "basic",
+     "explanation": "a·n=1+2−3=0，说明方向向量与法向量垂直，从而直线与平面平行或直线在平面内，还需要一个公共点才能区分这两种情形。"
+    },
+    {
+     "type": "choice",
+     "prompt": "两条直线的方向向量分别为 (1，−1，0) 和 (2，−2，0)，则这两条直线的位置关系是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "垂直"
+      },
+      {
+       "label": "B",
+       "text": "相交"
+      },
+      {
+       "label": "C",
+       "text": "平行或重合"
+      },
+      {
+       "label": "D",
+       "text": "异面"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "垂直"
+      },
+      {
+       "label": "B",
+       "text": "相交"
+      },
+      {
+       "label": "C",
+       "text": "平行或重合"
+      },
+      {
+       "label": "D",
+       "text": "异面"
+      }
+     ],
+     "answer": "C",
+     "difficulty": "basic",
+     "explanation": "第二个方向向量是第一个的2倍，两方向向量共线，因此两直线平行或重合；若数量积为0才是垂直。"
+    },
+    {
+     "type": "fill",
+     "prompt": "若直线 l 的方向向量与平面 α 的法向量垂直，则 l____α（填“∥”或“⊥”）。",
+     "answer": "∥",
+     "difficulty": "basic",
+     "explanation": "方向向量与法向量垂直，意味着直线方向与平面内的方向一致，因此直线与平面平行（或直线在平面内），记作 l∥α。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "若向量 a=(1，2，λ) 与 b=(2，4，6) 平行，则 λ 等于多少？",
+     "answer": 3,
+     "verify": "6/2",
+     "difficulty": "basic",
+     "explanation": "向量平行时对应坐标成比例，由 2/1=4/2=6/λ 得 λ=3；也可由 λ 与第三分量对应比例相同直接得到。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "已知平面 α 内有两个不共线的向量 AB=(1，2，0)，AC=(0，1，1)，求平面 α 的一个法向量。",
+     "answer": "n=(2，−1，1)",
+     "keypoints": [
+      "设法向量 n=(x，y，z)，令 n·AB=0",
+      "令 n·AC=0，得 y+z=0",
+      "取 y=−1 得 x=2，z=1，即 n=(2，−1，1)"
+     ],
+     "difficulty": "standard",
+     "explanation": "法向量需同时垂直于平面内两个不共线向量：由 n·AB=x+2y=0、n·AC=y+z=0，取 y=−1 得 x=2、z=1，故 n=(2，−1，1)，法向量不唯一。"
+    }
+   ]
+  },
+  {
+   "name": "1.4.2 用空间向量研究距离、夹角问题",
+   "unit": "第一章",
+   "unit_name": "空间向量与立体几何",
+   "page": 33,
+   "domain": "图形与几何",
+   "type": "application",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "空间向量",
+    "距离",
+    "夹角"
+   ],
+   "description": "会用向量方法求点到直线、点到平面以及平行直线、平行平面之间的距离，会用方向向量与法向量求异面直线所成角、直线与平面所成角和二面角，并通过坐标运算完成求解。",
+   "mastery_criteria": [
+    "能用投影向量求点到平面的距离",
+    "能用向量求出异面直线所成角或二面角"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.04",
+     "confidence": "exact",
+     "quote": "能用向量方法解决点到直线、点到平面、相互平行的直线、相互平行的平面的距离问题",
+     "sourceLine": 1408
+    },
+    {
+     "id": "mat-2017:G.NR.12",
+     "confidence": "exact",
+     "quote": "能用向量语言表述直线与直线、直线与平面、平面与平面的夹角以及垂直与平行关系。",
+     "sourceLine": 1397
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "点 P(1，2，3) 到平面 x+y+z=0 的距离是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "√3"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "2√3"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "√3"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "2√3"
+      }
+     ],
+     "answer": "D",
+     "difficulty": "hard",
+     "explanation": "由点到平面距离公式 d=|1+2+3|/√3=6/√3=2√3，注意法向量的模是 √(1+1+1)=√3，不能直接用分母3。"
+    },
+    {
+     "type": "choice",
+     "prompt": "空间中两条异面直线所成角的取值范围是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "[0°，90°]"
+      },
+      {
+       "label": "B",
+       "text": "(0°，90°]"
+      },
+      {
+       "label": "C",
+       "text": "(0°，180°)"
+      },
+      {
+       "label": "D",
+       "text": "[0°，180°)"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "[0°，90°]"
+      },
+      {
+       "label": "B",
+       "text": "(0°，90°]"
+      },
+      {
+       "label": "C",
+       "text": "(0°，180°)"
+      },
+      {
+       "label": "D",
+       "text": "[0°，180°)"
+      }
+     ],
+     "answer": "B",
+     "difficulty": "basic",
+     "explanation": "异面直线不平行也不相交，把其中一条平移后与另一条相交所得锐角或直角就是所成角，因此范围是 (0°，90°]，不能取180°。"
+    },
+    {
+     "type": "fill",
+     "prompt": "点 (1，0，0) 到平面 x=3 的距离是____。",
+     "answer": "2",
+     "difficulty": "basic",
+     "explanation": "平面 x=3 与 yOz 平面平行，点到它的距离就是横坐标之差的绝对值 |3−1|=2，也可用法向量 (1，0，0) 代入距离公式验证。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "平面 α 内有一点 A，α 的法向量 n=(1，2，2)，若向量 AP=(3，0，0)，则点 P 到平面 α 的距离是多少？",
+     "answer": 1,
+     "verify": "3/3",
+     "difficulty": "standard",
+     "explanation": "点 P 到平面的距离等于 AP 在法向量方向上的投影长：d=|AP·n|/|n|=|3|/√(1+4+4)=3/3=1，这就是用投影求点面距离的方法。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "棱长为 2 的正方体 ABCD-A₁B₁C₁D₁ 中，求异面直线 A₁B 与 B₁C 所成角的大小。",
+     "answer": "60°",
+     "keypoints": [
+      "以 A 为原点建系，得 A₁B=(2，0，−2)",
+      "B₁C=(0，2，−2)",
+      "cosθ=|4|/(2√2×2√2)=½，故所成角为60°"
+     ],
+     "difficulty": "standard",
+     "explanation": "建系后两方向向量的数量积为4，模都是2√2，于是所成角的余弦为½，所以异面直线 A₁B 与 B₁C 所成的角是60°。"
+    }
+   ]
+  },
+  {
+   "name": "2.1 直线的倾斜角与斜率",
+   "unit": "第二章",
+   "unit_name": "直线和圆的方程",
+   "page": 51,
+   "domain": "图形与几何",
+   "type": "conceptual",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "直线方程",
+    "倾斜角",
+    "斜率"
+   ],
+   "description": "理解直线的倾斜角与斜率的概念，知道倾斜角的取值范围以及斜率与倾斜角的对应关系，掌握经过两点的直线的斜率公式，体会用代数方法刻画直线倾斜程度的过程。",
+   "mastery_criteria": [
+    "能由倾斜角求斜率、由斜率求倾斜角",
+    "能用两点的坐标计算直线的斜率并判断正负"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.06",
+     "confidence": "exact",
+     "quote": "理解直线的倾斜角和斜率的概念，经历用代数方法刻画直线斜率的过程",
+     "sourceLine": 1422
+    },
+    {
+     "id": "mat-2017:G.NR.07",
+     "confidence": "exact",
+     "quote": "能根据斜率判定两条直线平行或垂直",
+     "sourceLine": 1424
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "倾斜角为 120° 的直线的斜率是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "−√3"
+      },
+      {
+       "label": "B",
+       "text": "√3"
+      },
+      {
+       "label": "C",
+       "text": "−√3/3"
+      },
+      {
+       "label": "D",
+       "text": "√3/3"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "−√3"
+      },
+      {
+       "label": "B",
+       "text": "√3"
+      },
+      {
+       "label": "C",
+       "text": "−√3/3"
+      },
+      {
+       "label": "D",
+       "text": "√3/3"
+      }
+     ],
+     "answer": "A",
+     "difficulty": "basic",
+     "explanation": "斜率 k=tanα=tan120°，120° 的正切为 −tan60°=−√3，所以斜率是负值 −√3，说明直线自左向右下降。"
+    },
+    {
+     "type": "choice",
+     "prompt": "经过点 (1，2)、(3，6) 的直线的斜率是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "1/2"
+      },
+      {
+       "label": "B",
+       "text": "−2"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "1/2"
+      },
+      {
+       "label": "B",
+       "text": "−2"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "C",
+     "difficulty": "basic",
+     "explanation": "由斜率公式 k=(6−2)/(3−1)=4/2=2，注意分子是纵坐标之差、分母是横坐标之差，顺序要一致。"
+    },
+    {
+     "type": "fill",
+     "prompt": "直线倾斜角 α 的取值范围是____。",
+     "answer": "[0°，180°)",
+     "difficulty": "basic",
+     "explanation": "当直线与 x 轴平行或重合时倾斜角为0°，倾斜角随直线逆时针旋转而增大，但 0° 与 180° 表示同一方向，故范围是 [0°，180°)。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "已知直线经过 P(−1，2)、Q(3，m) 两点，且斜率为 1/2，求 m 的值。",
+     "answer": 4,
+     "verify": "2+4*0.5",
+     "difficulty": "standard",
+     "explanation": "由斜率公式 (m−2)/(3−(−1))=½，得 m−2=2，所以 m=4；也可理解为横坐标增加4时纵坐标增加2。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "判断“直线的斜率随倾斜角的增大而增大”这一说法是否正确，并说明理由。",
+     "answer": "说法不完全正确；在 [0°，90°) 与 (90°，180°) 内斜率分别随倾斜角增大而增大，但倾斜角为 90° 时斜率不存在",
+     "keypoints": [
+      "在 [0°，90°) 内 k=tanα 单调递增",
+      "在 (90°，180°) 内 k 也单调递增",
+      "α=90° 时斜率不存在，不能一概而论"
+     ],
+     "difficulty": "standard",
+     "explanation": "k=tanα 在两个区间内分别是增函数，但 α=90° 时正切无意义，斜率不存在；而且从 89° 到 91° 斜率由很大的正数跳到负数，因此不能简单说“增大”。"
+    }
+   ]
+  },
+  {
+   "name": "2.1.1 倾斜角与斜率",
+   "unit": "第二章",
+   "unit_name": "直线和圆的方程",
+   "page": 51,
+   "domain": "图形与几何",
+   "type": "conceptual",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "直线方程",
+    "倾斜角",
+    "斜率"
+   ],
+   "description": "认识确定直线位置的几何要素，理解倾斜角的定义与取值范围，掌握 k=tanα 以及经过 P₁(x₁，y₁)、P₂(x₂，y₂) 的斜率公式，会判断斜率的正负与倾斜角的关系。",
+   "mastery_criteria": [
+    "能画出直线的倾斜角并写出对应的斜率",
+    "能用斜率公式求过两点的直线斜率，并处理斜率不存在的情形"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.06",
+     "confidence": "exact",
+     "quote": "理解直线的倾斜角和斜率的概念，经历用代数方法刻画直线斜率的过程",
+     "sourceLine": 1422
+    },
+    {
+     "id": "mat-2017:G.XY.05",
+     "confidence": "exact",
+     "quote": "能够掌握平面解析几何解决问题的基本过程",
+     "sourceLine": 1491
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "经过点 (−1，1)、(2，1) 的直线的倾斜角是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "45°"
+      },
+      {
+       "label": "B",
+       "text": "90°"
+      },
+      {
+       "label": "C",
+       "text": "135°"
+      },
+      {
+       "label": "D",
+       "text": "0°"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "45°"
+      },
+      {
+       "label": "B",
+       "text": "90°"
+      },
+      {
+       "label": "C",
+       "text": "135°"
+      },
+      {
+       "label": "D",
+       "text": "0°"
+      }
+     ],
+     "answer": "D",
+     "difficulty": "basic",
+     "explanation": "两点的纵坐标相同，直线与 x 轴平行，斜率 k=0，由 tanα=0 且 α∈[0°，180°) 得倾斜角为 0°。"
+    },
+    {
+     "type": "choice",
+     "prompt": "若某直线的斜率 k<0，则它的倾斜角 α 的取值范围是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(0°，90°)"
+      },
+      {
+       "label": "B",
+       "text": "(90°，180°)"
+      },
+      {
+       "label": "C",
+       "text": "[0°，90°)"
+      },
+      {
+       "label": "D",
+       "text": "(90°，180°]"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "(0°，90°)"
+      },
+      {
+       "label": "B",
+       "text": "(90°，180°)"
+      },
+      {
+       "label": "C",
+       "text": "[0°，90°)"
+      },
+      {
+       "label": "D",
+       "text": "(90°，180°]"
+      }
+     ],
+     "answer": "B",
+     "difficulty": "basic",
+     "explanation": "斜率为负说明 tanα<0，而 α∈[0°，180°)，只有在 (90°，180°) 内正切才为负，此时直线自左向右下降。"
+    },
+    {
+     "type": "fill",
+     "prompt": "经过两点 (2，3)、(2，−1) 的直线的斜率____（填“存在”或“不存在”）。",
+     "answer": "不存在",
+     "difficulty": "basic",
+     "explanation": "两点的横坐标相同，斜率公式的分母 x₂−x₁=0，此时直线垂直于 x 轴、倾斜角为 90°，斜率不存在。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "经过 A(−2，5)、B(1，−4) 两点的直线的斜率是多少？",
+     "answer": -3,
+     "verify": "(5-(-4))/((-2)-1)",
+     "difficulty": "standard",
+     "explanation": "由斜率公式 k=(y₂−y₁)/(x₂−x₁)=(−4−5)/(1−(−2))=−9/3=−3，斜率为负，直线的倾斜角是钝角。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "说明倾斜角为 90° 的直线为什么没有斜率。",
+     "answer": "因为此时 Δx=0，tan90° 无意义",
+     "keypoints": [
+      "斜率 k=tanα，α=90° 时 tan90° 不存在",
+      "斜率公式的分母 x₂−x₁=0，除法无意义",
+      "该直线垂直于 x 轴，不能用斜率刻画"
+     ],
+     "difficulty": "standard",
+     "explanation": "斜率定义为倾斜角的正切，而 90° 的正切不存在；从坐标公式看分母 Δx=0 也不能作除数。因此垂直于 x 轴的直线斜率不存在，但它的方程可以写成 x=x₀。"
+    }
+   ]
+  },
+  {
+   "name": "2.1.2 两条直线平行和垂直的判定",
+   "unit": "第二章",
+   "unit_name": "直线和圆的方程",
+   "page": 55,
+   "domain": "图形与几何",
+   "type": "reasoning",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "直线方程",
+    "平行",
+    "垂直"
+   ],
+   "description": "借助斜率与倾斜角的关系得出两条直线平行与垂直的判定方法：斜率相等且不重合则平行，斜率之积为 −1 则垂直，并能用这些判定解决求参数与判断位置关系的问题。",
+   "mastery_criteria": [
+    "能由两条直线的斜率判断它们平行或垂直",
+    "能由平行、垂直的条件求直线中的字母参数"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.07",
+     "confidence": "exact",
+     "quote": "能根据斜率判定两条直线平行或垂直",
+     "sourceLine": 1424
+    },
+    {
+     "id": "mat-2017:G.NR.06",
+     "confidence": "exact",
+     "quote": "理解直线的倾斜角和斜率的概念，经历用代数方法刻画直线斜率的过程",
+     "sourceLine": 1422
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "直线 l₁：y=2x+1 与 l₂：y=2x−3 的位置关系是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行"
+      },
+      {
+       "label": "B",
+       "text": "垂直"
+      },
+      {
+       "label": "C",
+       "text": "相交但不垂直"
+      },
+      {
+       "label": "D",
+       "text": "重合"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "平行"
+      },
+      {
+       "label": "B",
+       "text": "垂直"
+      },
+      {
+       "label": "C",
+       "text": "相交但不垂直"
+      },
+      {
+       "label": "D",
+       "text": "重合"
+      }
+     ],
+     "answer": "A",
+     "difficulty": "basic",
+     "explanation": "两条直线的斜率都是2，斜率相等而截距不同，所以两直线平行；若截距也相同才是重合，斜率之积为−1才是垂直。"
+    },
+    {
+     "type": "choice",
+     "prompt": "若直线 l₁ 的斜率为 −1/3，直线 l₂ 的斜率为 3，则 l₁ 与 l₂ 的关系是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行"
+      },
+      {
+       "label": "B",
+       "text": "重合"
+      },
+      {
+       "label": "C",
+       "text": "垂直"
+      },
+      {
+       "label": "D",
+       "text": "相交但不垂直"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "平行"
+      },
+      {
+       "label": "B",
+       "text": "重合"
+      },
+      {
+       "label": "C",
+       "text": "垂直"
+      },
+      {
+       "label": "D",
+       "text": "相交但不垂直"
+      }
+     ],
+     "answer": "C",
+     "difficulty": "basic",
+     "explanation": "两斜率之积 (−1/3)×3=−1，满足垂直的判定条件，所以 l₁⊥l₂；这正是用斜率判断垂直的核心结论。"
+    },
+    {
+     "type": "fill",
+     "prompt": "若 l₁⊥l₂，且 l₁ 的斜率为 2，则 l₂ 的斜率为____。",
+     "answer": "−1/2",
+     "difficulty": "basic",
+     "explanation": "由互相垂直的两直线斜率之积为 −1，得 k₂=−1/k₁=−1/2；两条直线斜率都存在时这一关系才适用。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "已知 l₁ 经过 (0，1)、(2，5)，l₂ 经过 (1，0)、(3，m)，且 l₁∥l₂，求 m 的值。",
+     "answer": 4,
+     "verify": "0+2*2",
+     "difficulty": "standard",
+     "explanation": "l₁ 的斜率 k₁=(5−1)/(2−0)=2，由平行得 k₂=2，即 (m−0)/(3−1)=2，所以 m=4；还要注意两直线截距不同，确实平行而不重合。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "判断 A(1，1)、B(3，5)、C(4，7) 三点是否共线，并说明理由。",
+     "answer": "三点共线",
+     "keypoints": [
+      "k_AB=(5−1)/(3−1)=2",
+      "k_BC=(7−5)/(4−3)=2",
+      "两斜率相等且有公共点 B，故三点共线"
+     ],
+     "difficulty": "standard",
+     "explanation": "用斜率判断三点共线的关键是看经过同一点的两条直线斜率是否相等：k_AB=k_BC=2 且都过点 B，说明 AB 与 BC 是同一条直线，所以三点共线。"
+    }
+   ]
+  },
+  {
+   "name": "2.2 直线的方程",
+   "unit": "第二章",
+   "unit_name": "直线和圆的方程",
+   "page": 59,
+   "domain": "图形与几何",
+   "type": "procedural",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "直线方程",
+    "点斜式",
+    "一般式"
+   ],
+   "description": "理解直线方程的几种形式——点斜式、斜截式、两点式与一般式，知道各种形式的适用条件与几何意义，能根据已知条件选择合适的形式写出直线方程并实现互化。",
+   "mastery_criteria": [
+    "能由一点和斜率写出点斜式、斜截式方程",
+    "能把直线方程化为一般式，并由方程读出斜率与截距"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.08",
+     "confidence": "exact",
+     "quote": "探索并掌握直线方程的几种形式（点斜式、两点式及一般式）",
+     "sourceLine": 1425
+    },
+    {
+     "id": "mat-2017:G.NR.06",
+     "confidence": "exact",
+     "quote": "理解直线的倾斜角和斜率的概念，经历用代数方法刻画直线斜率的过程",
+     "sourceLine": 1422
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "斜率为 3 且在 y 轴上的截距为 −2 的直线的斜截式方程是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "y=3x+2"
+      },
+      {
+       "label": "B",
+       "text": "y=−2x+3"
+      },
+      {
+       "label": "C",
+       "text": "y=2x−3"
+      },
+      {
+       "label": "D",
+       "text": "y=3x−2"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "y=3x+2"
+      },
+      {
+       "label": "B",
+       "text": "y=−2x+3"
+      },
+      {
+       "label": "C",
+       "text": "y=2x−3"
+      },
+      {
+       "label": "D",
+       "text": "y=3x−2"
+      }
+     ],
+     "answer": "D",
+     "difficulty": "basic",
+     "explanation": "斜截式 y=kx+b 中 k 是斜率、b 是纵截距，把 k=3、b=−2 代入即得 y=3x−2，注意 b 是 −2 而不是 2。"
+    },
+    {
+     "type": "choice",
+     "prompt": "经过点 (1，2)、(3，6) 的直线的一般式方程是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "x−2y+3=0"
+      },
+      {
+       "label": "B",
+       "text": "2x−y=0"
+      },
+      {
+       "label": "C",
+       "text": "2x+y−4=0"
+      },
+      {
+       "label": "D",
+       "text": "x+2y−5=0"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "x−2y+3=0"
+      },
+      {
+       "label": "B",
+       "text": "2x−y=0"
+      },
+      {
+       "label": "C",
+       "text": "2x+y−4=0"
+      },
+      {
+       "label": "D",
+       "text": "x+2y−5=0"
+      }
+     ],
+     "answer": "B",
+     "difficulty": "basic",
+     "explanation": "先求斜率 k=2，写出点斜式 y−2=2(x−1)，整理得 2x−y=0；把点 (1，2) 代入可以检验方程是否正确。"
+    },
+    {
+     "type": "fill",
+     "prompt": "直线方程 y−y₀=k(x−x₀) 中，k 的几何意义是直线的____。",
+     "answer": "斜率",
+     "difficulty": "basic",
+     "explanation": "点斜式中 k 就是直线的斜率，它等于倾斜角的正切，决定直线的倾斜程度；(x₀，y₀) 则是直线经过的定点。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "直线 2x+3y−6=0 在 x 轴上的截距是多少？",
+     "answer": 3,
+     "verify": "6/2",
+     "difficulty": "basic",
+     "explanation": "在 x 轴上取 y=0，代入得 2x=6，所以 x=3，即横截距为3；求纵截距则令 x=0 得 y=2。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "直线方程 Ax+By+C=0 为什么要求 A、B 不同时为 0？",
+     "answer": "因为 A=B=0 时方程化为 C=0，不再含有 x、y，不能表示直线",
+     "keypoints": [
+      "若 A=B=0，则方程变成 C=0",
+      "C=0 时任意点都满足，C≠0 时无解",
+      "只有 A、B 不同时为0时方程才表示一条直线"
+     ],
+     "difficulty": "standard",
+     "explanation": "直线的一般式方程是二元一次方程，必须含有一个变量的一次项才能表示一条直线；当 A=B=0 时方程与 x、y 无关，要么恒成立要么无解，都不是直线。"
+    }
+   ]
+  },
+  {
+   "name": "2.2.1 直线的点斜式方程",
+   "unit": "第二章",
+   "unit_name": "直线和圆的方程",
+   "page": 59,
+   "domain": "图形与几何",
+   "type": "procedural",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "直线方程",
+    "点斜式",
+    "斜截式"
+   ],
+   "description": "会建立经过已知点且斜率为 k 的直线的点斜式方程 y−y₀=k(x−x₀)，理解斜截式 y=kx+b 中 k、b 的几何意义，并能由点斜式读出斜率、倾斜角与截距。",
+   "mastery_criteria": [
+    "能根据一点与斜率写出点斜式方程并化为斜截式",
+    "能由点斜式方程读出斜率、倾斜角与截距"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.08",
+     "confidence": "exact",
+     "quote": "探索并掌握直线方程的几种形式（点斜式、两点式及一般式）",
+     "sourceLine": 1425
+    },
+    {
+     "id": "mat-2017:G.NR.06",
+     "confidence": "exact",
+     "quote": "理解直线的倾斜角和斜率的概念，经历用代数方法刻画直线斜率的过程",
+     "sourceLine": 1422
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "经过点 (2，−1) 且斜率为 3 的直线的点斜式方程是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "y+1=3(x−2)"
+      },
+      {
+       "label": "B",
+       "text": "y−1=3(x+2)"
+      },
+      {
+       "label": "C",
+       "text": "y+1=3(x+2)"
+      },
+      {
+       "label": "D",
+       "text": "y−1=3(x−2)"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "y+1=3(x−2)"
+      },
+      {
+       "label": "B",
+       "text": "y−1=3(x+2)"
+      },
+      {
+       "label": "C",
+       "text": "y+1=3(x+2)"
+      },
+      {
+       "label": "D",
+       "text": "y−1=3(x−2)"
+      }
+     ],
+     "answer": "A",
+     "difficulty": "basic",
+     "explanation": "点斜式为 y−y₀=k(x−x₀)，把 y₀=−1、x₀=2 代入得 y−(−1)=3(x−2)，即 y+1=3(x−2)，注意两个减号都变成加号。"
+    },
+    {
+     "type": "choice",
+     "prompt": "经过点 (0，3) 且与 x 轴平行的直线方程是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "x=0"
+      },
+      {
+       "label": "B",
+       "text": "y=0"
+      },
+      {
+       "label": "C",
+       "text": "y=3"
+      },
+      {
+       "label": "D",
+       "text": "x=3"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "x=0"
+      },
+      {
+       "label": "B",
+       "text": "y=0"
+      },
+      {
+       "label": "C",
+       "text": "y=3"
+      },
+      {
+       "label": "D",
+       "text": "x=3"
+      }
+     ],
+     "answer": "C",
+     "difficulty": "basic",
+     "explanation": "与 x 轴平行的直线斜率为0，且经过点 (0，3)，由点斜式得 y−3=0，即 y=3；而 x=3 是与 y 轴平行的直线。"
+    },
+    {
+     "type": "fill",
+     "prompt": "经过点 (1，4) 且倾斜角为 45° 的直线的点斜式方程是____。",
+     "answer": "y−4=x−1",
+     "difficulty": "basic",
+     "explanation": "倾斜角45°时斜率 k=tan45°=1，代入点斜式得 y−4=1·(x−1)，即 y−4=x−1，化为斜截式为 y=x+3。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "直线 y−2=3(x+1) 在 y 轴上的截距是多少？",
+     "answer": 5,
+     "verify": "2+3*1",
+     "difficulty": "standard",
+     "explanation": "令 x=0 得 y−2=3，所以 y=5，纵截距为5；也可先化成斜截式 y=3x+5 直接读出 b=5。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "点斜式方程能否表示倾斜角为 90° 的直线？请说明理由。",
+     "answer": "不能；倾斜角为90°时斜率不存在，无法写出 y−y₀=k(x−x₀)，其方程为 x=x₀",
+     "keypoints": [
+      "点斜式要求斜率 k 存在",
+      "倾斜角90°的直线斜率不存在",
+      "这类直线的方程应写成 x=x₀"
+     ],
+     "difficulty": "standard",
+     "explanation": "点斜式的建立依赖斜率，而垂直于 x 轴的直线斜率不存在，不能写成 y−y₀=k(x−x₀) 的形式；它的方程是 x=x₀，可以看作 x−x₀=0。"
+    }
+   ]
+  },
+  {
+   "name": "2.2.2 直线的两点式方程",
+   "unit": "第二章",
+   "unit_name": "直线和圆的方程",
+   "page": 62,
+   "domain": "图形与几何",
+   "type": "procedural",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "直线方程",
+    "两点式",
+    "斜截式"
+   ],
+   "description": "会建立经过两点 P₁(x₁，y₁)、P₂(x₂，y₂)（x₁≠x₂，y₁≠y₂）的直线的两点式方程，理解斜截式 y=kx+b 中 b 为纵截距，并能在两点式、点斜式与斜截式之间转化。",
+   "mastery_criteria": [
+    "能由两点的坐标写出直线的两点式方程",
+    "能处理 x₁=x₂ 或 y₁=y₂ 的特殊情形并写出相应方程"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.08",
+     "confidence": "exact",
+     "quote": "探索并掌握直线方程的几种形式（点斜式、两点式及一般式）",
+     "sourceLine": 1425
+    },
+    {
+     "id": "mat-2017:G.NR.06",
+     "confidence": "exact",
+     "quote": "理解直线的倾斜角和斜率的概念，经历用代数方法刻画直线斜率的过程",
+     "sourceLine": 1422
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "经过点 (1，2)、(3，6) 的直线的两点式方程是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(y−1)/(6−2)=(x−2)/(3−1)"
+      },
+      {
+       "label": "B",
+       "text": "(y−2)/(3−1)=(x−1)/(6−2)"
+      },
+      {
+       "label": "C",
+       "text": "(y+2)/(6−2)=(x+1)/(3−1)"
+      },
+      {
+       "label": "D",
+       "text": "(y−2)/(6−2)=(x−1)/(3−1)"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "(y−1)/(6−2)=(x−2)/(3−1)"
+      },
+      {
+       "label": "B",
+       "text": "(y−2)/(3−1)=(x−1)/(6−2)"
+      },
+      {
+       "label": "C",
+       "text": "(y+2)/(6−2)=(x+1)/(3−1)"
+      },
+      {
+       "label": "D",
+       "text": "(y−2)/(6−2)=(x−1)/(3−1)"
+      }
+     ],
+     "answer": "D",
+     "difficulty": "basic",
+     "explanation": "两点式的结构是纵坐标之差与横坐标之差对应成比例，点 (1，2) 与 (3，6) 代入得 (y−2)/(6−2)=(x−1)/(3−1)，即 (y−2)/4=(x−1)/2。"
+    },
+    {
+     "type": "choice",
+     "prompt": "经过点 (2，3)、(2，−1) 的直线的方程是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "y=3"
+      },
+      {
+       "label": "B",
+       "text": "x=2"
+      },
+      {
+       "label": "C",
+       "text": "y=−1"
+      },
+      {
+       "label": "D",
+       "text": "x−2y+4=0"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "y=3"
+      },
+      {
+       "label": "B",
+       "text": "x=2"
+      },
+      {
+       "label": "C",
+       "text": "y=−1"
+      },
+      {
+       "label": "D",
+       "text": "x−2y+4=0"
+      }
+     ],
+     "answer": "B",
+     "difficulty": "basic",
+     "explanation": "两点的横坐标都是2，直线垂直于 x 轴，不能使用两点式，它的方程直接写成 x=2；此时斜率不存在。"
+    },
+    {
+     "type": "fill",
+     "prompt": "斜截式 y=kx+b 中，b 叫做直线在 y 轴上的____。",
+     "answer": "截距",
+     "difficulty": "basic",
+     "explanation": "斜截式中的 b 是直线与 y 轴交点的纵坐标，称为直线在 y 轴上的截距，它可以为正、为负也可以为0。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "经过点 (1，2)、(3，8) 的直线的斜率是多少？",
+     "answer": 3,
+     "verify": "(8-2)/(3-1)",
+     "difficulty": "standard",
+     "explanation": "由斜率公式 k=(8−2)/(3−1)=6/2=3，所以这条直线的斜率为3，倾斜角是锐角，方程可写成 y=3x−1。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "两点式方程为什么要求 x₁≠x₂ 且 y₁≠y₂？",
+     "answer": "否则分母为零，方程失去意义；此时应分别写成 x=x₁ 或 y=y₁",
+     "keypoints": [
+      "x₁=x₂ 时分母为0，直线垂直于 x 轴",
+      "y₁=y₂ 时分母为0，直线垂直于 y 轴",
+      "这两类直线要单独写成 x=x₁ 或 y=y₁"
+     ],
+     "difficulty": "standard",
+     "explanation": "两点式的分母分别是 x₂−x₁ 与 y₂−y₁，当两点横坐标或纵坐标相同时分母为0，式子无意义；这两种情形的直线分别垂直于 x 轴、y 轴，要用 x=x₁、y=y₁ 表示。"
+    }
+   ]
+  },
+  {
+   "name": "2.2.3 直线的一般式方程",
+   "unit": "第二章",
+   "unit_name": "直线和圆的方程",
+   "page": 65,
+   "domain": "图形与几何",
+   "type": "procedural",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "直线方程",
+    "一般式"
+   ],
+   "description": "理解关于 x、y 的二元一次方程 Ax+By+C=0（A、B 不同时为0）都表示一条直线，掌握一般式与点斜式、斜截式的互化，会由一般式求直线的斜率与在两坐标轴上的截距。",
+   "mastery_criteria": [
+    "能把点斜式、斜截式方程化为一般式",
+    "能由一般式求出斜率与坐标轴上的截距"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.08",
+     "confidence": "exact",
+     "quote": "探索并掌握直线方程的几种形式（点斜式、两点式及一般式）",
+     "sourceLine": 1425
+    },
+    {
+     "id": "mat-2017:G.NR.07",
+     "confidence": "exact",
+     "quote": "能根据斜率判定两条直线平行或垂直",
+     "sourceLine": 1424
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "直线 y=2x−1 的一般式方程是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x−y−1=0"
+      },
+      {
+       "label": "B",
+       "text": "2x+y−1=0"
+      },
+      {
+       "label": "C",
+       "text": "2x−y+1=0"
+      },
+      {
+       "label": "D",
+       "text": "x−2y−1=0"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "2x−y−1=0"
+      },
+      {
+       "label": "B",
+       "text": "2x+y−1=0"
+      },
+      {
+       "label": "C",
+       "text": "2x−y+1=0"
+      },
+      {
+       "label": "D",
+       "text": "x−2y−1=0"
+      }
+     ],
+     "answer": "A",
+     "difficulty": "basic",
+     "explanation": "把 y=2x−1 移项得 2x−y−1=0，一般式习惯上让 x 的系数为正；代点 (0，−1) 可检验方程成立。"
+    },
+    {
+     "type": "choice",
+     "prompt": "直线 3x+4y−12=0 的斜率是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "3/4"
+      },
+      {
+       "label": "B",
+       "text": "4/3"
+      },
+      {
+       "label": "C",
+       "text": "−3/4"
+      },
+      {
+       "label": "D",
+       "text": "−4/3"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "3/4"
+      },
+      {
+       "label": "B",
+       "text": "4/3"
+      },
+      {
+       "label": "C",
+       "text": "−3/4"
+      },
+      {
+       "label": "D",
+       "text": "−4/3"
+      }
+     ],
+     "answer": "C",
+     "difficulty": "basic",
+     "explanation": "由 4y=−3x+12 得 y=−¾x+3，所以斜率是 −3/4；一般式 Ax+By+C=0 中斜率为 −A/B（B≠0）。"
+    },
+    {
+     "type": "fill",
+     "prompt": "一般式 Ax+By+C=0 中，若 B=0 且 A≠0，则该直线____（填“平行于y轴”或“平行于x轴”）。",
+     "answer": "平行于y轴",
+     "difficulty": "basic",
+     "explanation": "B=0 时方程化为 Ax+C=0，即 x=−C/A，这是一条与 y 轴平行（或重合）的直线，它的斜率不存在。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "直线 4x+3y−12=0 在 y 轴上的截距是多少？",
+     "answer": 4,
+     "verify": "12/3",
+     "difficulty": "standard",
+     "explanation": "令 x=0 得 3y=12，所以 y=4，即纵截距为4；一般式求纵截距就是令 x=0 解出 y。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "把经过点 (6，−4)、斜率为 −4/3 的直线方程化为一般式。",
+     "answer": "4x+3y−12=0",
+     "keypoints": [
+      "点斜式 y+4=−4/3(x−6)",
+      "两边乘3得 3y+12=−4x+24",
+      "整理得 4x+3y−12=0"
+     ],
+     "difficulty": "standard",
+     "explanation": "先写点斜式 y+4=−4/3(x−6)，两边乘以3消去分母得 3y+12=−4x+24，移项整理即得一般式 4x+3y−12=0。"
+    }
+   ]
+  },
+  {
+   "name": "2.3 直线的交点坐标与距离公式",
+   "unit": "第二章",
+   "unit_name": "直线和圆的方程",
+   "page": 70,
+   "domain": "图形与几何",
+   "type": "procedural",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "直线方程",
+    "交点",
+    "距离公式"
+   ],
+   "description": "会用解方程组的方法求两条直线的交点坐标，掌握两点间的距离公式、点到直线的距离公式以及两条平行直线间的距离公式，并能用距离公式解决简单的几何问题。",
+   "mastery_criteria": [
+    "能通过解方程组求出两条直线的交点坐标",
+    "能用点到直线的距离公式与平行线间距离公式求距离"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.09",
+     "confidence": "exact",
+     "quote": "能用解方程组的方法求两条直线的交点坐标",
+     "sourceLine": 1427
+    },
+    {
+     "id": "mat-2017:G.NR.10",
+     "confidence": "exact",
+     "quote": "探索并掌握平面上两点间的距离公式、点到直线的距离公式",
+     "sourceLine": 1428
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "直线 2x+y−8=0 与 x−2y+1=0 的交点坐标是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(2，3)"
+      },
+      {
+       "label": "B",
+       "text": "(−3，2)"
+      },
+      {
+       "label": "C",
+       "text": "(3，−2)"
+      },
+      {
+       "label": "D",
+       "text": "(3，2)"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "(2，3)"
+      },
+      {
+       "label": "B",
+       "text": "(−3，2)"
+      },
+      {
+       "label": "C",
+       "text": "(3，−2)"
+      },
+      {
+       "label": "D",
+       "text": "(3，2)"
+      }
+     ],
+     "answer": "D",
+     "difficulty": "basic",
+     "explanation": "解方程组：由第二式 x=2y−1，代入第一式得 2(2y−1)+y−8=0，即 5y=10，y=2，x=3，故交点为 (3，2)。"
+    },
+    {
+     "type": "choice",
+     "prompt": "点 (1，2) 到直线 3x+4y−5=0 的距离是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "6/5"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "4/5"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "6/5"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "4/5"
+      }
+     ],
+     "answer": "B",
+     "difficulty": "basic",
+     "explanation": "代入距离公式 d=|3×1+4×2−5|/√(9+16)=|3+8−5|/5=6/5，分子是6，分母是5，不能漏掉分母。"
+    },
+    {
+     "type": "fill",
+     "prompt": "两点 (0，0)、(3，4) 之间的距离是____。",
+     "answer": "5",
+     "difficulty": "basic",
+     "explanation": "由两点间距离公式 d=√((3−0)²+(4−0)²)=√25=5，这是勾股数3、4、5的典型应用。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "两条平行直线 3x+4y−10=0 与 3x+4y=0 之间的距离是多少？",
+     "answer": 2,
+     "verify": "10/((3**2+4**2)**0.5)",
+     "difficulty": "standard",
+     "explanation": "两直线 A、B 对应相同，直接用公式 d=|C₁−C₂|/√(A²+B²)=|−10−0|/5=2；也可在一条直线上取点再求到另一条直线的距离。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "求直线 x+y−3=0 与 2x−y=0 的交点坐标。",
+     "answer": "(1，2)",
+     "keypoints": [
+      "由 2x−y=0 得 y=2x",
+      "代入 x+y−3=0 得 3x=3",
+      "解得 x=1，y=2，交点为 (1，2)"
+     ],
+     "difficulty": "standard",
+     "explanation": "交点坐标是两条直线方程组成的方程组的解：把 y=2x 代入 x+y−3=0 得 3x=3，所以 x=1、y=2，交点坐标是 (1，2)。"
+    }
+   ]
+  },
+  {
+   "name": "2.3.1 两条直线的交点坐标",
+   "unit": "第二章",
+   "unit_name": "直线和圆的方程",
+   "page": 70,
+   "domain": "图形与几何",
+   "type": "procedural",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "直线方程",
+    "交点坐标"
+   ],
+   "description": "理解两条直线的交点坐标就是相应二元一次方程组的解，会用代入消元或加减消元求交点坐标，并能由方程组解的个数判断两条直线相交、平行还是重合。",
+   "mastery_criteria": [
+    "能解方程组求出两条直线的交点坐标",
+    "能由方程组解的个数判断两条直线的位置关系"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.09",
+     "confidence": "exact",
+     "quote": "能用解方程组的方法求两条直线的交点坐标",
+     "sourceLine": 1427
+    },
+    {
+     "id": "mat-2017:G.XY.05",
+     "confidence": "exact",
+     "quote": "能够掌握平面解析几何解决问题的基本过程",
+     "sourceLine": 1491
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "直线 x+y−4=0 与 x−y+2=0 的交点坐标是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(1，3)"
+      },
+      {
+       "label": "B",
+       "text": "(3，1)"
+      },
+      {
+       "label": "C",
+       "text": "(−1，3)"
+      },
+      {
+       "label": "D",
+       "text": "(1，−3)"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "(1，3)"
+      },
+      {
+       "label": "B",
+       "text": "(3，1)"
+      },
+      {
+       "label": "C",
+       "text": "(−1，3)"
+      },
+      {
+       "label": "D",
+       "text": "(1，−3)"
+      }
+     ],
+     "answer": "A",
+     "difficulty": "basic",
+     "explanation": "两式相加得 2x−2=0，即 x=1，再代入第一式得 y=3，所以交点为 (1，3)；也可把交点坐标回代检验。"
+    },
+    {
+     "type": "choice",
+     "prompt": "直线 3x+y−1=0 与 6x+2y+3=0 的公共点的个数是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "0"
+      },
+      {
+       "label": "D",
+       "text": "无数个"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "0"
+      },
+      {
+       "label": "D",
+       "text": "无数个"
+      }
+     ],
+     "answer": "C",
+     "difficulty": "standard",
+     "explanation": "第二式可化为 3x+y+1.5=0，与第一式斜率相同而截距不同，方程组无解，说明两条直线平行，没有公共点。"
+    },
+    {
+     "type": "fill",
+     "prompt": "两条直线的交点坐标就是由它们的方程组成的方程组的____。",
+     "answer": "解",
+     "difficulty": "basic",
+     "explanation": "交点同时在两条直线上，它的坐标同时满足两个方程，因此交点坐标就是方程组的解，这是用代数方法研究几何位置关系的桥梁。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "直线 3x−2y=0 与 x+y−5=0 的交点的横坐标是多少？",
+     "answer": 2,
+     "verify": "10/5",
+     "difficulty": "standard",
+     "explanation": "由第二式 y=5−x，代入得 3x−2(5−x)=0，即 5x=10，x=2，于是 y=3，交点为 (2，3)，横坐标为2。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "判断三条直线 2x−y+1=0、x+y−4=0 与 3x−2y+1=0 是否共点。",
+     "answer": "三条直线不共点",
+     "keypoints": [
+      "由 2x−y+1=0 与 x+y−4=0 解得交点 (1，3)",
+      "把 (1，3) 代入 3x−2y+1 得 3−6+1=−2≠0",
+      "所以第三条直线不过该交点，三线不共点"
+     ],
+     "difficulty": "standard",
+     "explanation": "先由前两条直线求出交点 (1，3)，再检验它是否满足第三条直线的方程：3×1−2×3+1=−2≠0，说明交点不在第三条直线上，所以三条直线不共点。"
+    }
+   ]
+  },
+  {
+   "name": "2.3.2 两点间的距离公式",
+   "unit": "第二章",
+   "unit_name": "直线和圆的方程",
+   "page": 73,
+   "domain": "图形与几何",
+   "type": "procedural",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "直线方程",
+    "两点间距离"
+   ],
+   "description": "掌握平面上两点间的距离公式 |P₁P₂|=√((x₂−x₁)²+(y₂−y₁)²)，会用公式求线段长度、判断三角形的形状，并会用坐标法证明简单的平面几何命题。",
+   "mastery_criteria": [
+    "能用两点间距离公式求线段的长度",
+    "能用距离公式判断三角形的形状或点的位置"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.10",
+     "confidence": "exact",
+     "quote": "探索并掌握平面上两点间的距离公式、点到直线的距离公式",
+     "sourceLine": 1428
+    },
+    {
+     "id": "mat-2017:G.XY.05",
+     "confidence": "exact",
+     "quote": "能够掌握平面解析几何解决问题的基本过程",
+     "sourceLine": 1491
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "点 (1，2) 与点 (4，6) 之间的距离是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "√7"
+      },
+      {
+       "label": "C",
+       "text": "7"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "√7"
+      },
+      {
+       "label": "C",
+       "text": "7"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "D",
+     "difficulty": "basic",
+     "explanation": "由距离公式 d=√((4−1)²+(6−2)²)=√(9+16)=√25=5，注意两个坐标差都要平方后相加，不能相加后再平方。"
+    },
+    {
+     "type": "choice",
+     "prompt": "原点 O 与点 (−3，4) 之间的距离是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "7"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "√7"
+      },
+      {
+       "label": "D",
+       "text": "25"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "7"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "√7"
+      },
+      {
+       "label": "D",
+       "text": "25"
+      }
+     ],
+     "answer": "B",
+     "difficulty": "basic",
+     "explanation": "原点与点的距离就是 √(x²+y²)=√(9+16)=5，平方后相加再开方，得到的是长度而不是25（25是距离的平方）。"
+    },
+    {
+     "type": "fill",
+     "prompt": "点 (0，0) 与点 (√3，1) 之间的距离是____。",
+     "answer": "2",
+     "difficulty": "basic",
+     "explanation": "由距离公式得 √((√3)²+1²)=√(3+1)=2，说明含根号的坐标差平方后可以化成整数。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "已知 A(−1，2)、B(2，6)，则 |AB| 等于多少？",
+     "answer": 5,
+     "verify": "((2-(-1))**2+(6-2)**2)**0.5",
+     "difficulty": "basic",
+     "explanation": "AB 的两坐标差为 3 和 4，由距离公式得 |AB|=√(9+16)=5；注意 2−(−1)=3，符号容易算错。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "已知 A(1，2)、B(3，−4)，在 x 轴上求一点 P，使 |PA|=|PB|，求点 P 的坐标。",
+     "answer": "P(5，0)",
+     "keypoints": [
+      "设 P(x，0)，由 |PA|=|PB| 得 (x−1)²+4=(x−3)²+16",
+      "化简得 −2x+5=−6x+25，即 4x=20",
+      "所以 x=5，P(5，0)"
+     ],
+     "difficulty": "standard",
+     "explanation": "设 P(x，0) 后把距离相等写成方程：(x−1)²+(0−2)²=(x−3)²+(0+4)²，展开消去 x² 得 4x=20，所以 P(5，0)，它与 A、B 距离都是 2√5。"
+    }
+   ]
+  },
+  {
+   "name": "2.3.3 点到直线的距离公式",
+   "unit": "第二章",
+   "unit_name": "直线和圆的方程",
+   "page": 76,
+   "domain": "图形与几何",
+   "type": "procedural",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "直线方程",
+    "点到直线距离"
+   ],
+   "description": "掌握点 P(x₀，y₀) 到直线 Ax+By+C=0 的距离公式 d=|Ax₀+By₀+C|/√(A²+B²)，理解公式的向量推导思路，会用公式求距离，并由距离条件求参数。",
+   "mastery_criteria": [
+    "能直接用公式求点到直线的距离",
+    "能由距离条件求直线方程中的参数"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.10",
+     "confidence": "exact",
+     "quote": "探索并掌握平面上两点间的距离公式、点到直线的距离公式",
+     "sourceLine": 1428
+    },
+    {
+     "id": "mat-2017:G.NR.09",
+     "confidence": "exact",
+     "quote": "能用解方程组的方法求两条直线的交点坐标",
+     "sourceLine": 1427
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "点 (2，1) 到直线 3x+4y−5=0 的距离是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "A",
+     "difficulty": "basic",
+     "explanation": "代入公式 d=|3×2+4×1−5|/√25=|6+4−5|/5=5/5=1，分子先算再取绝对值，分母是法向量的模5。"
+    },
+    {
+     "type": "choice",
+     "prompt": "原点 O 到直线 4x−3y+10=0 的距离是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "10"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "10"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "C",
+     "difficulty": "basic",
+     "explanation": "原点坐标代入得 d=|0+0+10|/√(16+9)=10/5=2，这是公式在 x₀=y₀=0 时的特例，计算最简便。"
+    },
+    {
+     "type": "fill",
+     "prompt": "点 P(x₀，y₀) 到直线 Ax+By+C=0 的距离公式中，分母是____。",
+     "answer": "√(A²+B²)",
+     "difficulty": "basic",
+     "explanation": "分母是直线方程中 x、y 系数平方和的算术平方根，即法向量 (A，B) 的模，它把分子上的“代数值”化为实际长度。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "原点 O 到直线 3x+4y−15=0 的距离是多少？",
+     "answer": 3,
+     "verify": "15/((3**2+4**2)**0.5)",
+     "difficulty": "standard",
+     "explanation": "由公式 d=|0+0−15|/√(9+16)=15/5=3，所以原点到此直线的距离为3；也可先求垂足坐标再用两点距离公式验证。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "求与直线 3x+4y−1=0 平行且与它的距离为 2 的直线方程。",
+     "answer": "3x+4y−11=0 或 3x+4y+9=0",
+     "keypoints": [
+      "设所求直线为 3x+4y+C=0",
+      "由平行线距离公式 |C+1|/5=2",
+      "解得 C=9 或 C=−11，得两条直线方程"
+     ],
+     "difficulty": "standard",
+     "explanation": "与已知直线平行的直线可设为 3x+4y+C=0，由 |C−(−1)|/√(9+16)=2 得 |C+1|=10，解得 C=9 或 C=−11，对应两条直线 3x+4y+9=0 与 3x+4y−11=0。"
+    }
+   ]
+  },
+  {
+   "name": "2.3.4 两条平行直线间的距离",
+   "unit": "第二章",
+   "unit_name": "直线和圆的方程",
+   "page": 79,
+   "domain": "图形与几何",
+   "type": "procedural",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "直线方程",
+    "平行线间距离"
+   ],
+   "description": "会把两条平行直线间的距离转化为点到直线的距离，掌握公式 d=|C₁−C₂|/√(A²+B²)（两条直线的 A、B 对应相同），并会用公式解决平行线间距离的问题。",
+   "mastery_criteria": [
+    "能先判断两条直线平行，再用公式求它们之间的距离",
+    "能由平行线间的距离求方程中的参数"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.10",
+     "confidence": "exact",
+     "quote": "探索并掌握平面上两点间的距离公式、点到直线的距离公式",
+     "sourceLine": 1428
+    },
+    {
+     "id": "mat-2017:G.NR.09",
+     "confidence": "exact",
+     "quote": "能用解方程组的方法求两条直线的交点坐标",
+     "sourceLine": 1427
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "平行直线 2x+3y−8=0 与 2x+3y+18=0 之间的距离是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "√13"
+      },
+      {
+       "label": "B",
+       "text": "26"
+      },
+      {
+       "label": "C",
+       "text": "13"
+      },
+      {
+       "label": "D",
+       "text": "2√13"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "√13"
+      },
+      {
+       "label": "B",
+       "text": "26"
+      },
+      {
+       "label": "C",
+       "text": "13"
+      },
+      {
+       "label": "D",
+       "text": "2√13"
+      }
+     ],
+     "answer": "D",
+     "difficulty": "standard",
+     "explanation": "由公式 d=|−8−18|/√(4+9)=26/√13=2√13，注意分子是两个常数项之差的绝对值，分母是 √13 而不是13。"
+    },
+    {
+     "type": "choice",
+     "prompt": "直线 3x+4y=10 与 3x+4y=0 之间的距离是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "10"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "10"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "B",
+     "difficulty": "basic",
+     "explanation": "先把两直线写成同一形式：3x+4y−10=0 与 3x+4y=0，则 d=|−10−0|/√(9+16)=10/5=2。"
+    },
+    {
+     "type": "fill",
+     "prompt": "两条平行直线 Ax+By+C₁=0 与 Ax+By+C₂=0 之间的距离公式中，分母是____。",
+     "answer": "√(A²+B²)",
+     "difficulty": "basic",
+     "explanation": "两条平行直线的 x、y 系数成比例，化为同一系数后距离就是常数项之差除以法向量的模，即分母为 √(A²+B²)。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "平行直线 4x+3y−7=0 与 4x+3y+8=0 之间的距离是多少？",
+     "answer": 3,
+     "verify": "15/((4**2+3**2)**0.5)",
+     "difficulty": "standard",
+     "explanation": "由公式 d=|−7−8|/√(16+9)=15/5=3；也可在第一条直线上取点 (1，1) 求它到第二条直线的距离来验证。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "已知直线 3x−4y+6=0 与 3x−4y+C=0 之间的距离为 3，求 C 的值。",
+     "answer": "C=21 或 C=−9",
+     "keypoints": [
+      "两直线平行，用距离公式 |6−C|/√(9+16)=3",
+      "即 |6−C|=15",
+      "解得 C=21 或 C=−9"
+     ],
+     "difficulty": "standard",
+     "explanation": "两条直线 A、B 系数相同，由 |6−C|/5=3 得 |6−C|=15，所以 6−C=15 或 6−C=−15，即 C=−9 或 C=21，两条直线分别在已知直线的两侧。"
+    }
+   ]
+  },
+  {
+   "name": "2.4 圆的方程",
+   "unit": "第二章",
+   "unit_name": "直线和圆的方程",
+   "page": 82,
+   "domain": "图形与几何",
+   "type": "conceptual",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "圆的方程",
+    "标准方程",
+    "一般方程"
+   ],
+   "description": "理解确定圆的几何要素是圆心与半径，掌握圆的标准方程 (x−a)²+(y−b)²=r² 与一般方程 x²+y²+Dx+Ey+F=0（D²+E²−4F>0），会在两种形式之间互化并求出圆心与半径。",
+   "mastery_criteria": [
+    "能由圆心和半径写出圆的标准方程",
+    "能把圆的一般方程化为标准方程求出圆心与半径"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.11",
+     "confidence": "exact",
+     "quote": "在平面直角坐标系中，探索并掌握圆的标准方程与一般方程",
+     "sourceLine": 1431
+    },
+    {
+     "id": "mat-2017:G.XY.05",
+     "confidence": "exact",
+     "quote": "能够掌握平面解析几何解决问题的基本过程",
+     "sourceLine": 1491
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "圆心为 (2，−1)、半径为 3 的圆的标准方程是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(x−2)²+(y+1)²=9"
+      },
+      {
+       "label": "B",
+       "text": "(x+2)²+(y−1)²=9"
+      },
+      {
+       "label": "C",
+       "text": "(x−2)²+(y+1)²=3"
+      },
+      {
+       "label": "D",
+       "text": "(x−2)²+(y−1)²=9"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "(x−2)²+(y+1)²=9"
+      },
+      {
+       "label": "B",
+       "text": "(x+2)²+(y−1)²=9"
+      },
+      {
+       "label": "C",
+       "text": "(x−2)²+(y+1)²=3"
+      },
+      {
+       "label": "D",
+       "text": "(x−2)²+(y−1)²=9"
+      }
+     ],
+     "answer": "A",
+     "difficulty": "basic",
+     "explanation": "标准方程为 (x−a)²+(y−b)²=r²，代入 a=2、b=−1、r=3 得 (x−2)²+(y+1)²=9，右边是半径的平方而不是半径。"
+    },
+    {
+     "type": "choice",
+     "prompt": "圆 x²+y²−4x+2y=0 的圆心坐标是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(−2，1)"
+      },
+      {
+       "label": "B",
+       "text": "(2，1)"
+      },
+      {
+       "label": "C",
+       "text": "(2，−1)"
+      },
+      {
+       "label": "D",
+       "text": "(−2，−1)"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "(−2，1)"
+      },
+      {
+       "label": "B",
+       "text": "(2，1)"
+      },
+      {
+       "label": "C",
+       "text": "(2，−1)"
+      },
+      {
+       "label": "D",
+       "text": "(−2，−1)"
+      }
+     ],
+     "answer": "C",
+     "difficulty": "basic",
+     "explanation": "配方得 (x−2)²+(y+1)²=5，所以圆心为 (2，−1)；一般方程中圆心坐标是 (−D/2，−E/2)。"
+    },
+    {
+     "type": "fill",
+     "prompt": "圆 (x−1)²+(y+2)²=4 的半径是____。",
+     "answer": "2",
+     "difficulty": "basic",
+     "explanation": "标准方程右边是半径的平方4，开方得半径 r=2；圆心坐标是 (1，−2)，注意纵坐标的符号与方程中的加号相反。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "圆 x²+y²+2x−4y+1=0 的半径是多少？",
+     "answer": 2,
+     "verify": "((-1)**2+2**2-1)**0.5",
+     "difficulty": "standard",
+     "explanation": "配方得 (x+1)²+(y−2)²=4，所以圆心 (−1，2)、半径 2；也可用 r=½√(D²+E²−4F)=½√16=2。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "求经过三点 O(0，0)、A(1，0)、B(0，1) 的圆的一般方程。",
+     "answer": "x²+y²−x−y=0",
+     "keypoints": [
+      "设方程为 x²+y²+Dx+Ey+F=0",
+      "代入 O 得 F=0",
+      "再代入 A、B 得 1+D=0、1+E=0，故 D=E=−1"
+     ],
+     "difficulty": "standard",
+     "explanation": "设一般方程并代入三点：由 O(0，0) 得 F=0；由 A(1，0) 得 1+D=0，D=−1；由 B(0，1) 得 1+E=0，E=−1。所以圆的一般方程为 x²+y²−x−y=0，圆心 (½，½)、半径 √2/2。"
+    }
+   ]
+  },
+  {
+   "name": "2.4.1 圆的标准方程",
+   "unit": "第二章",
+   "unit_name": "直线和圆的方程",
+   "page": 82,
+   "domain": "图形与几何",
+   "type": "procedural",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "圆的方程",
+    "标准方程"
+   ],
+   "description": "会由圆心和半径直接写出圆的标准方程，能由圆上的点、直径端点等条件确定圆心与半径，并会判断一个点与圆的位置关系（圆上、圆外、圆内）。",
+   "mastery_criteria": [
+    "能由几何条件确定圆心与半径并写出标准方程",
+    "能通过比较距离与半径判断点与圆的位置关系"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.11",
+     "confidence": "exact",
+     "quote": "在平面直角坐标系中，探索并掌握圆的标准方程与一般方程",
+     "sourceLine": 1431
+    },
+    {
+     "id": "mat-2017:G.XY.05",
+     "confidence": "exact",
+     "quote": "能够掌握平面解析几何解决问题的基本过程",
+     "sourceLine": 1491
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "圆心在原点、半径为 5 的圆的标准方程是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "x²+y²=5"
+      },
+      {
+       "label": "B",
+       "text": "(x−5)²+y²=25"
+      },
+      {
+       "label": "C",
+       "text": "x²+y²=50"
+      },
+      {
+       "label": "D",
+       "text": "x²+y²=25"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "x²+y²=5"
+      },
+      {
+       "label": "B",
+       "text": "(x−5)²+y²=25"
+      },
+      {
+       "label": "C",
+       "text": "x²+y²=50"
+      },
+      {
+       "label": "D",
+       "text": "x²+y²=25"
+      }
+     ],
+     "answer": "D",
+     "difficulty": "basic",
+     "explanation": "圆心为 (0，0)、半径5，代入标准方程得 (x−0)²+(y−0)²=25，即 x²+y²=25，右边是半径的平方。"
+    },
+    {
+     "type": "choice",
+     "prompt": "圆心为 (−1，3) 且经过点 (2，7) 的圆的标准方程是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(x−1)²+(y+3)²=25"
+      },
+      {
+       "label": "B",
+       "text": "(x+1)²+(y−3)²=25"
+      },
+      {
+       "label": "C",
+       "text": "(x+1)²+(y−3)²=5"
+      },
+      {
+       "label": "D",
+       "text": "(x+1)²+(y+3)²=25"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "(x−1)²+(y+3)²=25"
+      },
+      {
+       "label": "B",
+       "text": "(x+1)²+(y−3)²=25"
+      },
+      {
+       "label": "C",
+       "text": "(x+1)²+(y−3)²=5"
+      },
+      {
+       "label": "D",
+       "text": "(x+1)²+(y+3)²=25"
+      }
+     ],
+     "answer": "B",
+     "difficulty": "basic",
+     "explanation": "先求半径 r=√((2+1)²+(7−3)²)=√25=5，圆心 (−1，3) 代入得 (x+1)²+(y−3)²=25；注意 x−(−1) 写成 x+1。"
+    },
+    {
+     "type": "fill",
+     "prompt": "以 A(1，2)、B(5，2) 为直径端点的圆的标准方程是____。",
+     "answer": "(x−3)²+(y−2)²=4",
+     "difficulty": "basic",
+     "explanation": "圆心是直径中点 (3，2)，半径是 |AB|的一半 = 4÷2=2，所以圆的标准方程为 (x−3)²+(y−2)²=4。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "圆 (x−2)²+(y+3)²=25 的半径是多少？",
+     "answer": 5,
+     "verify": "25**0.5",
+     "difficulty": "standard",
+     "explanation": "标准方程右边是半径的平方，所以 r=√25=5；圆心为 (2，−3)，与半径一起可以确定这个圆。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "判断点 P(3，−2) 与圆 (x−1)²+(y+1)²=9 的位置关系。",
+     "answer": "点 P 在圆内",
+     "keypoints": [
+      "圆心 C(1，−1)，半径 r=3",
+      "|PC|=√(4+1)=√5",
+      "√5<3，所以点 P 在圆内"
+     ],
+     "difficulty": "standard",
+     "explanation": "判断点与圆的位置关系是比较点到圆心的距离与半径：|PC|=√((3−1)²+(−2+1)²)=√5≈2.24，小于半径3，所以点 P 在圆内。"
+    }
+   ]
+  },
+  {
+   "name": "2.4.2 圆的一般方程",
+   "unit": "第二章",
+   "unit_name": "直线和圆的方程",
+   "page": 85,
+   "domain": "图形与几何",
+   "type": "procedural",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "圆的方程",
+    "一般方程"
+   ],
+   "description": "会把圆的一般方程 x²+y²+Dx+Ey+F=0 通过配方化为标准方程，理解它表示圆的条件 D²+E²−4F>0，并能在一般方程与标准方程之间互化、求圆心与半径。",
+   "mastery_criteria": [
+    "能判断一个二元二次方程是否表示圆",
+    "能通过配方求出圆心坐标与半径"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.11",
+     "confidence": "exact",
+     "quote": "在平面直角坐标系中，探索并掌握圆的标准方程与一般方程",
+     "sourceLine": 1431
+    },
+    {
+     "id": "mat-2017:G.XY.05",
+     "confidence": "exact",
+     "quote": "能够掌握平面解析几何解决问题的基本过程",
+     "sourceLine": 1491
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "方程 x²+y²+Dx+Ey+F=0 表示圆的条件是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "D²+E²−4F>0"
+      },
+      {
+       "label": "B",
+       "text": "D²+E²−4F=0"
+      },
+      {
+       "label": "C",
+       "text": "D²+E²−4F<0"
+      },
+      {
+       "label": "D",
+       "text": "D²+E²−4F≥0"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "D²+E²−4F>0"
+      },
+      {
+       "label": "B",
+       "text": "D²+E²−4F=0"
+      },
+      {
+       "label": "C",
+       "text": "D²+E²−4F<0"
+      },
+      {
+       "label": "D",
+       "text": "D²+E²−4F≥0"
+      }
+     ],
+     "answer": "A",
+     "difficulty": "basic",
+     "explanation": "配方得 (x+D/2)²+(y+E/2)²=(D²+E²−4F)/4，右边必须为正才有实半径，所以条件是 D²+E²−4F>0。"
+    },
+    {
+     "type": "choice",
+     "prompt": "圆 x²+y²−6x+4y−3=0 的半径是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "16"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "√3"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "16"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "√3"
+      }
+     ],
+     "answer": "C",
+     "difficulty": "basic",
+     "explanation": "配方得 (x−3)²+(y+2)²=16，所以圆心 (3，−2)、半径4；也可用 r=½√(36+16+12)=½√64=4。"
+    },
+    {
+     "type": "fill",
+     "prompt": "圆 x²+y²+4x−2y=0 的圆心坐标是____。",
+     "answer": "(−2，1)",
+     "difficulty": "basic",
+     "explanation": "配方得 (x+2)²+(y−1)²=5，所以圆心为 (−2，1)；一般方程中圆心是 (−D/2，−E/2)=(−2，1)。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "圆 x²+y²−2x+6y+6=0 的半径是多少？",
+     "answer": 2,
+     "verify": "(1+9-6)**0.5",
+     "difficulty": "standard",
+     "explanation": "配方得 (x−1)²+(y+3)²=4，半径 r=2；这里 D²+E²−4F=4+36−24=16，开方除以2得2，条件 16>0 说明确实表示圆。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "把 x²+y²−4x+2y−4=0 化为标准方程，并写出圆心坐标与半径。",
+     "answer": "(x−2)²+(y+1)²=9，圆心 (2，−1)，半径 3",
+     "keypoints": [
+      "对 x、y 分别配方：x²−4x=(x−2)²−4，y²+2y=(y+1)²−1",
+      "移项得 (x−2)²+(y+1)²=9",
+      "圆心 (2，−1)，半径 3"
+     ],
+     "difficulty": "standard",
+     "explanation": "把含 x、含 y 的项分别配方：(x−2)²−4+(y+1)²−1−4=0，移项得 (x−2)²+(y+1)²=9，因此圆心是 (2，−1)，半径是3。"
+    }
+   ]
+  },
+  {
+   "name": "2.5 直线与圆、圆与圆的位置关系",
+   "unit": "第二章",
+   "unit_name": "直线和圆的方程",
+   "page": 91,
+   "domain": "图形与几何",
+   "type": "reasoning",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "圆的方程",
+    "位置关系"
+   ],
+   "description": "会用圆心到直线的距离与半径的大小关系判断直线与圆的位置关系，会用圆心距与两圆半径和、差的关系判断圆与圆的位置关系，并会求弦长与公共弦。",
+   "mastery_criteria": [
+    "能用 d 与 r 的大小关系判断直线与圆的位置关系",
+    "能用圆心距与半径的关系判断两圆的位置关系"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.12",
+     "confidence": "exact",
+     "quote": "能根据给定直线、圆的方程，判断直线与圆、圆与圆的位置关系",
+     "sourceLine": 1440
+    },
+    {
+     "id": "mat-2017:G.NR.09",
+     "confidence": "exact",
+     "quote": "能用解方程组的方法求两条直线的交点坐标",
+     "sourceLine": 1427
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "直线 y=x 与圆 x²+y²=2 的位置关系是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "相切"
+      },
+      {
+       "label": "B",
+       "text": "相离"
+      },
+      {
+       "label": "C",
+       "text": "无法判断"
+      },
+      {
+       "label": "D",
+       "text": "相交"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "相切"
+      },
+      {
+       "label": "B",
+       "text": "相离"
+      },
+      {
+       "label": "C",
+       "text": "无法判断"
+      },
+      {
+       "label": "D",
+       "text": "相交"
+      }
+     ],
+     "answer": "D",
+     "difficulty": "basic",
+     "explanation": "圆心 (0，0) 到直线 x−y=0 的距离 d=0，小于半径 √2，所以直线过圆心，与圆相交于两点。"
+    },
+    {
+     "type": "choice",
+     "prompt": "圆 x²+y²=4 与圆 (x−3)²+y²=1 的位置关系是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "相交"
+      },
+      {
+       "label": "B",
+       "text": "外切"
+      },
+      {
+       "label": "C",
+       "text": "外离"
+      },
+      {
+       "label": "D",
+       "text": "内切"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "相交"
+      },
+      {
+       "label": "B",
+       "text": "外切"
+      },
+      {
+       "label": "C",
+       "text": "外离"
+      },
+      {
+       "label": "D",
+       "text": "内切"
+      }
+     ],
+     "answer": "B",
+     "difficulty": "basic",
+     "explanation": "两圆圆心距 d=3，半径和为 2+1=3，d 等于半径和，所以两圆外切，只有一个公共点。"
+    },
+    {
+     "type": "fill",
+     "prompt": "直线与圆相切时，圆心到直线的距离____半径（填“大于”“等于”或“小于”）。",
+     "answer": "等于",
+     "difficulty": "basic",
+     "explanation": "相切意味着直线与圆只有一个公共点，此时圆心到直线的距离恰好等于半径，即 d=r，这是几何法判断相切的核心。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "圆 x²+y²=25 的圆心到直线 3x+4y−25=0 的距离是多少？",
+     "answer": 5,
+     "verify": "25/((3**2+4**2)**0.5)",
+     "difficulty": "standard",
+     "explanation": "圆心为原点，代入点到直线距离公式得 d=|−25|/√(9+16)=25/5=5，恰好等于半径，说明该直线与圆相切。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "判断直线 x−y+2=0 与圆 (x−1)²+(y−1)²=2 的位置关系，并求公共点个数。",
+     "answer": "相切，公共点个数为1",
+     "keypoints": [
+      "圆心 (1，1) 到直线的距离 d=|1−1+2|/√2=√2",
+      "圆的半径 r=√2",
+      "d=r，所以相切，只有1个公共点"
+     ],
+     "difficulty": "standard",
+     "explanation": "用几何法：圆心 (1，1)、半径 √2，圆心到直线 x−y+2=0 的距离 d=2/√2=√2，与半径相等，因此直线与圆相切，公共点只有1个。"
+    }
+   ]
+  },
+  {
+   "name": "2.5.1 直线与圆的位置关系",
+   "unit": "第二章",
+   "unit_name": "直线和圆的方程",
+   "page": 91,
+   "domain": "图形与几何",
+   "type": "reasoning",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "圆的方程",
+    "直线与圆"
+   ],
+   "description": "掌握判断直线与圆相交、相切、相离的两种方法——代数法（方程组解的个数）与几何法（d 与 r 比较），会求直线被圆截得的弦长与过定点的圆的切线方程。",
+   "mastery_criteria": [
+    "能联立方程由判别式判断位置关系",
+    "能用 d、r 的关系求弦长或切线"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.12",
+     "confidence": "exact",
+     "quote": "判断直线与圆、圆与圆的位置关系",
+     "sourceLine": 1440
+    },
+    {
+     "id": "mat-2017:G.NR.10",
+     "confidence": "exact",
+     "quote": "探索并掌握平面上两点间的距离公式、点到直线的距离公式",
+     "sourceLine": 1428
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "直线 3x+y−6=0 与圆 x²+y²−2y−4=0 的位置关系是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "相交"
+      },
+      {
+       "label": "B",
+       "text": "相切"
+      },
+      {
+       "label": "C",
+       "text": "相离"
+      },
+      {
+       "label": "D",
+       "text": "重合"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "相交"
+      },
+      {
+       "label": "B",
+       "text": "相切"
+      },
+      {
+       "label": "C",
+       "text": "相离"
+      },
+      {
+       "label": "D",
+       "text": "重合"
+      }
+     ],
+     "answer": "A",
+     "difficulty": "hard",
+     "explanation": "圆可化为 x²+(y−1)²=5，圆心 (0，1)、半径 √5；圆心到直线的距离 d=|0+1−6|/√10=5/√10=√2.5≈1.58<2.24，所以相交。"
+    },
+    {
+     "type": "choice",
+     "prompt": "直线 y=3 被圆 x²+y²=25 截得的弦长是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "10"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "10"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "C",
+     "difficulty": "standard",
+     "explanation": "圆心到直线 y=3 的距离 d=3，半径 r=5，由弦长公式得弦长 2√(25−9)=2×4=8，注意是两倍半弦长。"
+    },
+    {
+     "type": "fill",
+     "prompt": "若圆心到直线的距离 d=r，则直线与圆有____个公共点。",
+     "answer": "1",
+     "difficulty": "basic",
+     "explanation": "圆心到直线的距离等于半径时，直线与圆相切，切点是唯一公共点，因此公共点个数为1；d<r 有2个，d>r 没有。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "已知直线 3x+4y+C=0 与圆 x²+y²=1 相切，且 C>0，求 C 的值。",
+     "answer": 5,
+     "verify": "1*((3**2+4**2)**0.5)",
+     "difficulty": "standard",
+     "explanation": "相切时圆心 (0，0) 到直线的距离等于半径1，即 |C|/5=1，所以 |C|=5，又 C>0，故 C=5；C=−5 是与之对称的另一条切线。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "判断直线 3x+4y−11=0 与圆 (x−2)²+(y−1)²=4 的位置关系，并求弦长。",
+     "answer": "相交；弦长为 2√99/5",
+     "keypoints": [
+      "圆心 (2，1) 到直线的距离 d=|6+4−11|/5=1/5",
+      "d<2，所以相交",
+      "弦长 2√(4−1/25)=2√99/5"
+     ],
+     "difficulty": "standard",
+     "explanation": "圆心到直线的距离 d=1/5 小于半径2，故直线与圆相交；由半弦长 √(r²−d²)=√(4−1/25)=√99/5，所以弦长为 2√99/5。"
+    }
+   ]
+  },
+  {
+   "name": "2.5.2 圆与圆的位置关系",
+   "unit": "第二章",
+   "unit_name": "直线和圆的方程",
+   "page": 95,
+   "domain": "图形与几何",
+   "type": "reasoning",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "圆的方程",
+    "圆与圆"
+   ],
+   "description": "会用两圆的方程判断外离、外切、相交、内切、内含五种位置关系，理解把两圆方程相减可得公共弦所在直线的方法，会求公共弦长与公共点个数。",
+   "mastery_criteria": [
+    "能由圆心距与半径和、差判断两圆的位置关系",
+    "能用两方程相减求公共弦所在直线"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.12",
+     "confidence": "exact",
+     "quote": "判断直线与圆、圆与圆的位置关系",
+     "sourceLine": 1440
+    },
+    {
+     "id": "mat-2017:G.NR.09",
+     "confidence": "exact",
+     "quote": "能用解方程组的方法求两条直线的交点坐标",
+     "sourceLine": 1427
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "圆 (x−1)²+y²=4 与圆 (x−4)²+y²=1 的位置关系是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "内切"
+      },
+      {
+       "label": "B",
+       "text": "相交"
+      },
+      {
+       "label": "C",
+       "text": "外离"
+      },
+      {
+       "label": "D",
+       "text": "外切"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "内切"
+      },
+      {
+       "label": "B",
+       "text": "相交"
+      },
+      {
+       "label": "C",
+       "text": "外离"
+      },
+      {
+       "label": "D",
+       "text": "外切"
+      }
+     ],
+     "answer": "D",
+     "difficulty": "basic",
+     "explanation": "两圆心为 (1，0)、(4，0)，圆心距 d=3，半径和为 2+1=3，d 等于半径和，所以两圆外切。"
+    },
+    {
+     "type": "choice",
+     "prompt": "圆 x²+y²=1 与圆 x²+y²−6x+8=0 的位置关系是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "外切"
+      },
+      {
+       "label": "B",
+       "text": "外离"
+      },
+      {
+       "label": "C",
+       "text": "相交"
+      },
+      {
+       "label": "D",
+       "text": "内含"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "外切"
+      },
+      {
+       "label": "B",
+       "text": "外离"
+      },
+      {
+       "label": "C",
+       "text": "相交"
+      },
+      {
+       "label": "D",
+       "text": "内含"
+      }
+     ],
+     "answer": "B",
+     "difficulty": "standard",
+     "explanation": "第二个圆配方得 (x−3)²+y²=1，圆心 (3，0)、半径1，圆心距 d=3，大于半径和 1+1=2，所以两圆外离。"
+    },
+    {
+     "type": "fill",
+     "prompt": "求两圆的公共弦所在直线的方程，可把两个圆的方程____。",
+     "answer": "相减",
+     "difficulty": "basic",
+     "explanation": "两个圆的方程都是二次式且二次项系数相同，相减后二次项被消去，得到一条直线的方程，这条直线就是公共弦所在直线。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "圆 (x−1)²+y²=9 与圆 (x−5)²+y²=4 的圆心距是多少？",
+     "answer": 4,
+     "verify": "((5-1)**2+(0-0)**2)**0.5",
+     "difficulty": "standard",
+     "explanation": "两圆圆心分别为 (1，0)、(5，0)，圆心距 d=√((5−1)²+0²)=4；两圆半径分别为3和2，因 |3−2|<4<3+2，故两圆相交。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "判断圆 x²+y²=9 与圆 (x−4)²+y²=1 的位置关系，并写出公共点个数。",
+     "answer": "外切，公共点个数为1",
+     "keypoints": [
+      "两圆圆心距 d=4",
+      "半径和为 3+1=4",
+      "d 等于半径和，两圆外切，只有1个公共点"
+     ],
+     "difficulty": "standard",
+     "explanation": "圆心距 d=4 恰好等于两半径之和 3+1=4，所以两圆外切，它们有且只有一个公共点，此时两圆方程相减得到的直线就是公切线。"
+    }
+   ]
+  },
+  {
+   "name": "3.1 椭圆",
+   "unit": "第三章",
+   "unit_name": "圆锥曲线的方程",
+   "page": 105,
+   "domain": "图形与几何",
+   "type": "conceptual",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "圆锥曲线",
+    "椭圆"
+   ],
+   "description": "经历从具体情境中抽象出椭圆的过程，理解椭圆的定义——平面内到两个定点距离之和等于常数 2a（2a>|F₁F₂|）的点的轨迹，掌握焦点在 x 轴、y 轴上的椭圆标准方程以及 a、b、c 的关系。",
+   "mastery_criteria": [
+    "能说出椭圆的定义并指出焦点、焦距与半焦距",
+    "能由 a、b、c 的关系写出椭圆的标准方程"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.15",
+     "confidence": "exact",
+     "quote": "经历从具体情境中抽象出椭圆的过程，掌握椭圆的定义、标准方程及简单几何性质",
+     "sourceLine": 1446
+    },
+    {
+     "id": "mat-2017:G.XY.06",
+     "confidence": "exact",
+     "quote": "建立椭圆、抛物线、双曲线的标准方程",
+     "sourceLine": 1496
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "平面内到两个定点 F₁、F₂ 的距离之和等于常数 2a 的点的轨迹是椭圆，其条件是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "2a>|F₁F₂|"
+      },
+      {
+       "label": "B",
+       "text": "2a=|F₁F₂|"
+      },
+      {
+       "label": "C",
+       "text": "2a<|F₁F₂|"
+      },
+      {
+       "label": "D",
+       "text": "2a>0"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "2a>|F₁F₂|"
+      },
+      {
+       "label": "B",
+       "text": "2a=|F₁F₂|"
+      },
+      {
+       "label": "C",
+       "text": "2a<|F₁F₂|"
+      },
+      {
+       "label": "D",
+       "text": "2a>0"
+      }
+     ],
+     "answer": "A",
+     "difficulty": "basic",
+     "explanation": "只有当常数大于两定点间距离时，动点轨迹才是椭圆；若 2a=|F₁F₂| 轨迹是线段 F₁F₂，若 2a<|F₁F₂| 则轨迹不存在。"
+    },
+    {
+     "type": "choice",
+     "prompt": "椭圆 x²/25+y²/9=1 的焦距是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "16"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "16"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "answer": "C",
+     "difficulty": "basic",
+     "explanation": "由 a²=25、b²=9 得 c²=a²−b²=16，c=4，焦距为 2c=8；注意焦距是 2c，不是 c。"
+    },
+    {
+     "type": "fill",
+     "prompt": "椭圆 x²/16+y²/9=1 中 a 的值是____。",
+     "answer": "4",
+     "difficulty": "basic",
+     "explanation": "标准方程中分母较大者对应 a²，这里 a²=16，所以 a=4，b=3，c=√7，长轴在 x 轴上。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "椭圆 x²/25+y²/9=1 的离心率是多少？",
+     "answer": 0.8,
+     "verify": "((25-9)**0.5)/5",
+     "difficulty": "basic",
+     "explanation": "由 a=5、c=√(25−9)=4 得 e=c/a=4/5=0.8；离心率总是小于1的正数，e 越大椭圆越扁平。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "若动点到两个定点 F₁、F₂ 的距离之和等于 |F₁F₂|，它的轨迹是什么？",
+     "answer": "线段 F₁F₂",
+     "keypoints": [
+      "此时 2a=|F₁F₂|，动点被“拉直”在线段上",
+      "轨迹是线段 F₁F₂",
+      "若 2a<|F₁F₂| 则轨迹不存在"
+     ],
+     "difficulty": "standard",
+     "explanation": "当距离之和恰好等于两定点间距离时，动点只能位于 F₁、F₂ 之间的线段上，轨迹退化为线段 F₁F₂；若常数比 |F₁F₂| 还小，则任何点都不满足条件，轨迹不存在。"
+    }
+   ]
+  },
+  {
+   "name": "3.1.1 椭圆及其标准方程",
+   "unit": "第三章",
+   "unit_name": "圆锥曲线的方程",
+   "page": 105,
+   "domain": "图形与几何",
+   "type": "procedural",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "圆锥曲线",
+    "椭圆",
+    "标准方程"
+   ],
+   "description": "会用椭圆的定义建立标准方程，掌握焦点在 x 轴上 x²/a²+y²/b²=1 与焦点在 y 轴上 y²/a²+x²/b²=1（a>b>0）两种形式及 c²=a²−b²，会用待定系数法求椭圆的方程。",
+   "mastery_criteria": [
+    "能由焦点位置与 a、b、c 的关系写出椭圆的标准方程",
+    "能用待定系数法由已知条件求椭圆方程"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.15",
+     "confidence": "exact",
+     "quote": "经历从具体情境中抽象出椭圆的过程，掌握椭圆的定义、标准方程及简单几何性质",
+     "sourceLine": 1446
+    },
+    {
+     "id": "mat-2017:G.XY.06",
+     "confidence": "exact",
+     "quote": "建立椭圆、抛物线、双曲线的标准方程",
+     "sourceLine": 1496
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "焦点在 x 轴上，a=5，c=4 的椭圆的标准方程是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "x²/9+y²/25=1"
+      },
+      {
+       "label": "B",
+       "text": "x²/25+y²/16=1"
+      },
+      {
+       "label": "C",
+       "text": "x²/16+y²/25=1"
+      },
+      {
+       "label": "D",
+       "text": "x²/25+y²/9=1"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "x²/9+y²/25=1"
+      },
+      {
+       "label": "B",
+       "text": "x²/25+y²/16=1"
+      },
+      {
+       "label": "C",
+       "text": "x²/16+y²/25=1"
+      },
+      {
+       "label": "D",
+       "text": "x²/25+y²/9=1"
+      }
+     ],
+     "answer": "D",
+     "difficulty": "basic",
+     "explanation": "由 b²=a²−c²=25−16=9，焦点在 x 轴上时大分母在 x² 下，所以方程为 x²/25+y²/9=1，注意 b²=9 不是16。"
+    },
+    {
+     "type": "choice",
+     "prompt": "焦点为 (0，3)、(0，−3)，且 a=5 的椭圆的标准方程是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "x²/25+y²/16=1"
+      },
+      {
+       "label": "B",
+       "text": "y²/25+x²/16=1"
+      },
+      {
+       "label": "C",
+       "text": "y²/25+x²/9=1"
+      },
+      {
+       "label": "D",
+       "text": "y²/16+x²/25=1"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "x²/25+y²/16=1"
+      },
+      {
+       "label": "B",
+       "text": "y²/25+x²/16=1"
+      },
+      {
+       "label": "C",
+       "text": "y²/25+x²/9=1"
+      },
+      {
+       "label": "D",
+       "text": "y²/16+x²/25=1"
+      }
+     ],
+     "answer": "B",
+     "difficulty": "basic",
+     "explanation": "焦点在 y 轴上，故 a²=25 写在 y² 下；由 b²=25−9=16，得 y²/25+x²/16=1，焦点位置决定哪个分母更大。"
+    },
+    {
+     "type": "fill",
+     "prompt": "若方程 x²/m+y²/4=1 表示焦点在 x 轴上的椭圆，则 m 的取值范围是____。",
+     "answer": "m>4",
+     "difficulty": "basic",
+     "explanation": "焦点在 x 轴上要求 x² 下的分母较大，即 m>4；同时 m>0，两者合并为 m>4，此时 b²=4、c²=m−4。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "椭圆 x²/100+y²/36=1 的焦距是多少？",
+     "answer": 16,
+     "verify": "2*((100-36)**0.5)",
+     "difficulty": "basic",
+     "explanation": "由 a²=100、b²=36 得 c²=64，c=8，焦距 2c=16；求焦距时千万别把 c 当成答案，要再乘以2。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "已知椭圆的两个焦点为 (−3，0)、(3，0)，且经过点 (5，0)，求它的标准方程。",
+     "answer": "x²/25+y²/16=1",
+     "keypoints": [
+      "焦点在 x 轴上，设方程为 x²/a²+y²/b²=1",
+      "由经过 (5，0) 得 a=5，又 c=3",
+      "b²=25−9=16，故方程为 x²/25+y²/16=1"
+     ],
+     "difficulty": "standard",
+     "explanation": "焦点在 x 轴上，顶点 (5，0) 到原点的距离就是 a，所以 a=5；又 c=3，由 b²=a²−c²=16，得标准方程 x²/25+y²/16=1。"
+    }
+   ]
+  },
+  {
+   "name": "3.1.2 椭圆的简单几何性质",
+   "unit": "第三章",
+   "unit_name": "圆锥曲线的方程",
+   "page": 110,
+   "domain": "图形与几何",
+   "type": "reasoning",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "圆锥曲线",
+    "椭圆",
+    "几何性质"
+   ],
+   "description": "借助椭圆的标准方程研究它的范围、对称性、顶点与离心率，掌握长轴、短轴与 a、b、c 的关系以及离心率 e=c/a 的几何意义，会由方程求性质、由性质求方程。",
+   "mastery_criteria": [
+    "能由椭圆方程写出范围、顶点、长轴长、短轴长与离心率",
+    "能由离心率等条件确定椭圆的标准方程"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.15",
+     "confidence": "exact",
+     "quote": "掌握椭圆的定义、标准方程及简单几何性质",
+     "sourceLine": 1446
+    },
+    {
+     "id": "mat-2017:G.XY.06",
+     "confidence": "exact",
+     "quote": "能够运用代数的方法研究上述曲线之间的基本关系",
+     "sourceLine": 1497
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "椭圆 x²/16+y²/7=1 的离心率是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "3/4"
+      },
+      {
+       "label": "B",
+       "text": "4/3"
+      },
+      {
+       "label": "C",
+       "text": "7/16"
+      },
+      {
+       "label": "D",
+       "text": "√7/4"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "3/4"
+      },
+      {
+       "label": "B",
+       "text": "4/3"
+      },
+      {
+       "label": "C",
+       "text": "7/16"
+      },
+      {
+       "label": "D",
+       "text": "√7/4"
+      }
+     ],
+     "answer": "A",
+     "difficulty": "standard",
+     "explanation": "由 a²=16、b²=7 得 c²=9，c=3，a=4，所以 e=c/a=3/4；离心率一定小于1，可据此排除 4/3。"
+    },
+    {
+     "type": "choice",
+     "prompt": "椭圆 4x²+9y²=36 的长轴长是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ],
+     "answer": "C",
+     "difficulty": "hard",
+     "explanation": "先把方程化为标准形 x²/9+y²/4=1，得 a²=9、a=3，长轴长 2a=6；若忘记化为标准形容易误选 9。"
+    },
+    {
+     "type": "fill",
+     "prompt": "椭圆 x²/9+y²/5=1 的焦点坐标是____。",
+     "answer": "(±2，0)",
+     "difficulty": "basic",
+     "explanation": "由 a²=9、b²=5 得 c²=4，c=2，焦点在 x 轴上，所以焦点坐标为 (−2，0) 与 (2，0)，可简写为 (±2，0)。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "椭圆 x²/25+y²/16=1 上的点到焦点距离的最大值是多少？",
+     "answer": 8,
+     "verify": "5+(25-16)**0.5",
+     "difficulty": "standard",
+     "explanation": "椭圆上的点到焦点的距离最大值为 a+c、最小值为 a−c；这里 a=5、c=3，所以最大值为8，在长轴端点处取得。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "说明椭圆离心率 e 的取值范围，以及 e 的大小与椭圆扁平程度的关系。",
+     "answer": "0<e<1；e 越大椭圆越扁，e 越接近0椭圆越接近圆",
+     "keypoints": [
+      "由 c<a 得 0<e=c/a<1",
+      "e 增大时 c 相对 a 变大，椭圆更扁",
+      "e→0 时 c→0，椭圆趋近于圆"
+     ],
+     "difficulty": "standard",
+     "explanation": "因为 c²=a²−b²<a²，所以 0<e<1；e 越大说明焦距相对长轴越大，椭圆越扁平；e 越接近0，两焦点越靠近，椭圆越接近圆。"
+    }
+   ]
+  },
+  {
+   "name": "3.2 双曲线",
+   "unit": "第三章",
+   "unit_name": "圆锥曲线的方程",
+   "page": 118,
+   "domain": "图形与几何",
+   "type": "conceptual",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "圆锥曲线",
+    "双曲线"
+   ],
+   "description": "类比椭圆的研究方法，理解双曲线的定义——平面内到两定点距离之差的绝对值等于常数 2a（0<2a<|F₁F₂|）的点的轨迹，掌握双曲线的标准方程、a、b、c 的关系以及渐近线。",
+   "mastery_criteria": [
+    "能说出双曲线定义中“差的绝对值”与 2a 的限制",
+    "能由 a、b、c 的关系求焦点、焦距与渐近线"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.16",
+     "confidence": "exact",
+     "quote": "了解抛物线与双曲线的定义、几何图形和标准方程",
+     "sourceLine": 1448
+    },
+    {
+     "id": "mat-2017:G.XY.06",
+     "confidence": "exact",
+     "quote": "建立椭圆、抛物线、双曲线的标准方程",
+     "sourceLine": 1496
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "平面内到两个定点 F₁、F₂ 的距离之差的绝对值等于常数 2a 的点的轨迹是双曲线，其条件是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "2a>|F₁F₂|"
+      },
+      {
+       "label": "B",
+       "text": "2a=|F₁F₂|"
+      },
+      {
+       "label": "C",
+       "text": "2a>0"
+      },
+      {
+       "label": "D",
+       "text": "0<2a<|F₁F₂|"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "2a>|F₁F₂|"
+      },
+      {
+       "label": "B",
+       "text": "2a=|F₁F₂|"
+      },
+      {
+       "label": "C",
+       "text": "2a>0"
+      },
+      {
+       "label": "D",
+       "text": "0<2a<|F₁F₂|"
+      }
+     ],
+     "answer": "D",
+     "difficulty": "basic",
+     "explanation": "常数必须小于两定点间距离且大于0；若 2a=|F₁F₂| 轨迹是两条射线，若 2a>|F₁F₂| 则轨迹不存在。"
+    },
+    {
+     "type": "choice",
+     "prompt": "双曲线 x²/9−y²/16=1 的渐近线方程是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "y=±(3/4)x"
+      },
+      {
+       "label": "B",
+       "text": "y=±(4/3)x"
+      },
+      {
+       "label": "C",
+       "text": "y=±(16/9)x"
+      },
+      {
+       "label": "D",
+       "text": "y=±(9/16)x"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "y=±(3/4)x"
+      },
+      {
+       "label": "B",
+       "text": "y=±(4/3)x"
+      },
+      {
+       "label": "C",
+       "text": "y=±(16/9)x"
+      },
+      {
+       "label": "D",
+       "text": "y=±(9/16)x"
+      }
+     ],
+     "answer": "B",
+     "difficulty": "basic",
+     "explanation": "双曲线 x²/a²−y²/b²=1 的渐近线为 y=±(b/a)x，这里 a=3、b=4，所以是 y=±(4/3)x，注意是 b/a 不是 a/b。"
+    },
+    {
+     "type": "fill",
+     "prompt": "双曲线 x²/4−y²/12=1 的焦距是____。",
+     "answer": "8",
+     "difficulty": "basic",
+     "explanation": "双曲线中 c²=a²+b²=4+12=16，c=4，所以焦距 2c=8；与椭圆不同，双曲线的 c 比 a 大。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "双曲线 x²/9−y²/16=1 的离心率是多少？",
+     "answer": 1.6666666666666667,
+     "verify": "((9+16)**0.5)/3",
+     "difficulty": "standard",
+     "explanation": "由 c²=a²+b²=25 得 c=5，a=3，所以 e=c/a=5/3；双曲线的离心率总是大于1，e 越大开口越开阔。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "比较椭圆与双曲线定义的区别。",
+     "answer": "椭圆是到两定点距离之和为常数 2a（2a>|F₁F₂|）；双曲线是到两定点距离之差的绝对值为常数 2a（0<2a<|F₁F₂|）",
+     "keypoints": [
+      "椭圆用“距离之和”，双曲线用“距离之差的绝对值”",
+      "椭圆的常数大于焦距，双曲线的常数小于焦距",
+      "两者的标准方程中 a、b、c 关系不同：椭圆 c²=a²−b²，双曲线 c²=a²+b²"
+     ],
+     "difficulty": "standard",
+     "explanation": "椭圆的定义是距离之和为定值且定值大于焦距，轨迹是封闭曲线；双曲线是距离之差的绝对值为定值且定值小于焦距，轨迹是两支开口曲线。相应地椭圆中 a 最大，双曲线中 c 最大。"
+    }
+   ]
+  },
+  {
+   "name": "3.2.1 双曲线及其标准方程",
+   "unit": "第三章",
+   "unit_name": "圆锥曲线的方程",
+   "page": 118,
+   "domain": "图形与几何",
+   "type": "procedural",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "圆锥曲线",
+    "双曲线",
+    "标准方程"
+   ],
+   "description": "会用双曲线的定义建立标准方程，掌握焦点在 x 轴上 x²/a²−y²/b²=1 与焦点在 y 轴上 y²/a²−x²/b²=1 两种形式以及 c²=a²+b²，会用待定系数法求双曲线的方程。",
+   "mastery_criteria": [
+    "能由焦点位置写出双曲线的标准方程",
+    "能利用 c²=a²+b² 求焦点、焦距等基本量"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.16",
+     "confidence": "exact",
+     "quote": "了解抛物线与双曲线的定义、几何图形和标准方程",
+     "sourceLine": 1448
+    },
+    {
+     "id": "mat-2017:G.XY.06",
+     "confidence": "exact",
+     "quote": "建立椭圆、抛物线、双曲线的标准方程",
+     "sourceLine": 1496
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "焦点为 (0，5)、(0，−5)，且 a=3 的双曲线的标准方程是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "y²/9−x²/16=1"
+      },
+      {
+       "label": "B",
+       "text": "x²/9−y²/16=1"
+      },
+      {
+       "label": "C",
+       "text": "y²/16−x²/9=1"
+      },
+      {
+       "label": "D",
+       "text": "y²/9−x²/25=1"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "y²/9−x²/16=1"
+      },
+      {
+       "label": "B",
+       "text": "x²/9−y²/16=1"
+      },
+      {
+       "label": "C",
+       "text": "y²/16−x²/9=1"
+      },
+      {
+       "label": "D",
+       "text": "y²/9−x²/25=1"
+      }
+     ],
+     "answer": "A",
+     "difficulty": "basic",
+     "explanation": "焦点在 y 轴上，故 a²=9 写在 y² 下面；由 b²=c²−a²=25−9=16，得 y²/9−x²/16=1。"
+    },
+    {
+     "type": "choice",
+     "prompt": "双曲线 x²/16−y²/9=1 的焦点坐标是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(0，±5)"
+      },
+      {
+       "label": "B",
+       "text": "(±4，0)"
+      },
+      {
+       "label": "C",
+       "text": "(±5，0)"
+      },
+      {
+       "label": "D",
+       "text": "(±3，0)"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "(0，±5)"
+      },
+      {
+       "label": "B",
+       "text": "(±4，0)"
+      },
+      {
+       "label": "C",
+       "text": "(±5，0)"
+      },
+      {
+       "label": "D",
+       "text": "(±3，0)"
+      }
+     ],
+     "answer": "C",
+     "difficulty": "basic",
+     "explanation": "由 c²=a²+b²=16+9=25 得 c=5，焦点在 x 轴上，所以焦点为 (−5，0)、(5，0)；注意双曲线中 c 由两分母之和求得。"
+    },
+    {
+     "type": "fill",
+     "prompt": "双曲线 x²/9−y²/16=1 中 b 的值是____。",
+     "answer": "4",
+     "difficulty": "basic",
+     "explanation": "标准方程中 y² 下的分母是 b²，这里 b²=16，所以 b=4；a=3，c=5，三者满足 c²=a²+b²。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "双曲线 x²/4−y²/5=1 的焦距是多少？",
+     "answer": 6,
+     "verify": "2*((4+5)**0.5)",
+     "difficulty": "standard",
+     "explanation": "由 c²=a²+b²=4+5=9 得 c=3，焦距为 2c=6；双曲线中 c 大于 a，计算时用加法而不是减法。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "已知双曲线的焦点为 (−4，0)、(4，0)，且 a=2，求它的标准方程。",
+     "answer": "x²/4−y²/12=1",
+     "keypoints": [
+      "焦点在 x 轴上，设方程为 x²/a²−y²/b²=1",
+      "由 a=2 得 a²=4，由 c=4 得 b²=c²−a²=12",
+      "所以方程为 x²/4−y²/12=1"
+     ],
+     "difficulty": "standard",
+     "explanation": "焦点在 x 轴上且 c=4、a=2，由 b²=c²−a²=16−4=12，得标准方程 x²/4−y²/12=1，此时渐近线为 y=±√3x。"
+    }
+   ]
+  },
+  {
+   "name": "3.2.2 双曲线的简单几何性质",
+   "unit": "第三章",
+   "unit_name": "圆锥曲线的方程",
+   "page": 123,
+   "domain": "图形与几何",
+   "type": "reasoning",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "圆锥曲线",
+    "双曲线",
+    "几何性质"
+   ],
+   "description": "借助双曲线的标准方程研究它的范围、对称性、顶点、渐近线与离心率，理解等轴双曲线与渐近线的意义，会由方程求性质、由性质求方程。",
+   "mastery_criteria": [
+    "能由双曲线方程写出实轴长、虚轴长、渐近线与离心率",
+    "能利用渐近线或离心率等条件确定双曲线的方程"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.43",
+     "confidence": "exact",
+     "quote": "了解抛物线与双曲线的定义、几何图形和标准方程，以及它们的简单几何性质",
+     "sourceLine": 1448
+    },
+    {
+     "id": "mat-2017:G.XY.06",
+     "confidence": "exact",
+     "quote": "能够运用代数的方法研究上述曲线之间的基本关系",
+     "sourceLine": 1497
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "双曲线 x²/4−y²/9=1 的渐近线方程是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "y=±(2/3)x"
+      },
+      {
+       "label": "B",
+       "text": "y=±(9/4)x"
+      },
+      {
+       "label": "C",
+       "text": "y=±(4/9)x"
+      },
+      {
+       "label": "D",
+       "text": "y=±(3/2)x"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "y=±(2/3)x"
+      },
+      {
+       "label": "B",
+       "text": "y=±(9/4)x"
+      },
+      {
+       "label": "C",
+       "text": "y=±(4/9)x"
+      },
+      {
+       "label": "D",
+       "text": "y=±(3/2)x"
+      }
+     ],
+     "answer": "D",
+     "difficulty": "basic",
+     "explanation": "双曲线 x²/a²−y²/b²=1 的渐近线是 y=±(b/a)x，这里 a=2、b=3，所以为 y=±(3/2)x。"
+    },
+    {
+     "type": "choice",
+     "prompt": "等轴双曲线的离心率是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "√2"
+      },
+      {
+       "label": "C",
+       "text": "√3"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "√2"
+      },
+      {
+       "label": "C",
+       "text": "√3"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "B",
+     "difficulty": "basic",
+     "explanation": "等轴双曲线满足 a=b，于是 c²=2a²，c=√2a，所以离心率 e=c/a=√2；其渐近线 y=±x 互相垂直。"
+    },
+    {
+     "type": "fill",
+     "prompt": "双曲线 x²/16−y²/9=1 的实轴长是____。",
+     "answer": "8",
+     "difficulty": "basic",
+     "explanation": "由 a²=16 得 a=4，实轴长为 2a=8；虚轴长为 2b=6，注意实轴长对应 a 而不是 c。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "双曲线 x²/9−y²/7=1 的离心率是多少？",
+     "answer": 1.3333333333333333,
+     "verify": "((9+7)**0.5)/3",
+     "difficulty": "standard",
+     "explanation": "由 c²=a²+b²=9+7=16 得 c=4，a=3，所以 e=c/a=4/3；e>1 说明开口范围比等轴双曲线（e=√2）更开阔。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "说明双曲线的离心率 e 与开口大小的关系。",
+     "answer": "双曲线 e>1；e 越大开口越开阔，e 越接近1开口越狭窄",
+     "keypoints": [
+      "e=c/a，且 c²=a²+b² 使 c>a，故 e>1",
+      "e 增大时 b/a 增大，渐近线更陡",
+      "所以开口越开阔"
+     ],
+     "difficulty": "standard",
+     "explanation": "由 c²=a²+b² 得 e=c/a>1；e 越大则 b/a=√(e²−1) 越大，渐近线越陡，双曲线的两支开口越开阔，形状越“张开”。"
+    }
+   ]
+  },
+  {
+   "name": "3.3 抛物线",
+   "unit": "第三章",
+   "unit_name": "圆锥曲线的方程",
+   "page": 130,
+   "domain": "图形与几何",
+   "type": "conceptual",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "圆锥曲线",
+    "抛物线"
+   ],
+   "description": "理解抛物线的定义——平面内到定点 F 与定直线 l（F 不在 l 上）距离相等的点的轨迹，掌握抛物线的四种标准方程、焦点与准线，理解其离心率等于1的意义。",
+   "mastery_criteria": [
+    "能说出抛物线的定义并指出焦点与准线",
+    "能由标准方程写出焦点坐标与准线方程"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.41",
+     "confidence": "exact",
+     "quote": "了解圆锥曲线的实际背景，感受圆锥曲线在刻画现实世界和解决实际问题中的作用",
+     "sourceLine": 1444
+    },
+    {
+     "id": "mat-2017:G.XY.06",
+     "confidence": "exact",
+     "quote": "建立椭圆、抛物线、双曲线的标准方程",
+     "sourceLine": 1496
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "抛物线的定义中，动点所满足的条件是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "到定点的距离等于到定直线的距离"
+      },
+      {
+       "label": "B",
+       "text": "到两个定点的距离相等"
+      },
+      {
+       "label": "C",
+       "text": "到定点的距离等于常数"
+      },
+      {
+       "label": "D",
+       "text": "到定直线的距离等于常数"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "到定点的距离等于到定直线的距离"
+      },
+      {
+       "label": "B",
+       "text": "到两个定点的距离相等"
+      },
+      {
+       "label": "C",
+       "text": "到定点的距离等于常数"
+      },
+      {
+       "label": "D",
+       "text": "到定直线的距离等于常数"
+      }
+     ],
+     "answer": "A",
+     "difficulty": "basic",
+     "explanation": "抛物线的定义是动点到定点（焦点）的距离与它到定直线（准线）的距离相等，这两种距离必须同时出现，缺一不可。"
+    },
+    {
+     "type": "choice",
+     "prompt": "抛物线 y²=8x 的焦点坐标是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(0，2)"
+      },
+      {
+       "label": "B",
+       "text": "(4，0)"
+      },
+      {
+       "label": "C",
+       "text": "(2，0)"
+      },
+      {
+       "label": "D",
+       "text": "(−2，0)"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "(0，2)"
+      },
+      {
+       "label": "B",
+       "text": "(4，0)"
+      },
+      {
+       "label": "C",
+       "text": "(2，0)"
+      },
+      {
+       "label": "D",
+       "text": "(−2，0)"
+      }
+     ],
+     "answer": "C",
+     "difficulty": "basic",
+     "explanation": "y²=2px 中 2p=8，得 p=4，焦点为 (p/2，0)=(2，0)，准线为 x=−2；焦点横坐标是 p/2 而不是 p。"
+    },
+    {
+     "type": "fill",
+     "prompt": "抛物线 y²=2px（p>0）的准线方程是____。",
+     "answer": "x=−p/2",
+     "difficulty": "basic",
+     "explanation": "抛物线 y²=2px 的焦点为 (p/2，0)，准线与焦点关于顶点对称，位于 y 轴左侧，所以准线方程为 x=−p/2。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "抛物线 y²=12x 的焦点到准线的距离是多少？",
+     "answer": 6,
+     "verify": "12/2",
+     "difficulty": "basic",
+     "explanation": "由 2p=12 得 p=6，焦点到准线的距离就是 p=6，它等于焦点横坐标 p/2 的两倍；p 越大开口越开阔。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "抛物线 y²=4x 上一点 M 到焦点的距离为 5，求 M 的横坐标。",
+     "answer": "x=4",
+     "keypoints": [
+      "抛物线 y²=4x 中 p=2，焦点 (1，0)，准线 x=−1",
+      "由定义，|MF| 等于点 M 到准线的距离 x+1",
+      "x+1=5，所以 x=4"
+     ],
+     "difficulty": "standard",
+     "explanation": "抛物线上的点到焦点的距离等于它到准线的距离；y²=4x 的准线为 x=−1，点 M(x，y) 到准线的距离是 x+1，于是 x+1=5，x=4。"
+    }
+   ]
+  },
+  {
+   "name": "3.3.1 抛物线及其标准方程",
+   "unit": "第三章",
+   "unit_name": "圆锥曲线的方程",
+   "page": 130,
+   "domain": "图形与几何",
+   "type": "procedural",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "圆锥曲线",
+    "抛物线",
+    "标准方程"
+   ],
+   "description": "会用抛物线的定义建立标准方程，掌握 y²=2px、y²=−2px、x²=2py、x²=−2py（p>0）四种形式及其焦点、准线，会用待定系数法求出抛物线的方程。",
+   "mastery_criteria": [
+    "能根据焦点位置或开口方向选用合适的标准方程形式",
+    "能由焦点或准线条件求出 p 并写出方程"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.43",
+     "confidence": "exact",
+     "quote": "了解抛物线与双曲线的定义、几何图形和标准方程",
+     "sourceLine": 1448
+    },
+    {
+     "id": "mat-2017:G.XY.06",
+     "confidence": "exact",
+     "quote": "建立椭圆、抛物线、双曲线的标准方程",
+     "sourceLine": 1496
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "焦点为 (0，2)、开口向上的抛物线的标准方程是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "y²=8x"
+      },
+      {
+       "label": "B",
+       "text": "x²=4y"
+      },
+      {
+       "label": "C",
+       "text": "x²=−8y"
+      },
+      {
+       "label": "D",
+       "text": "x²=8y"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "y²=8x"
+      },
+      {
+       "label": "B",
+       "text": "x²=4y"
+      },
+      {
+       "label": "C",
+       "text": "x²=−8y"
+      },
+      {
+       "label": "D",
+       "text": "x²=8y"
+      }
+     ],
+     "answer": "D",
+     "difficulty": "basic",
+     "explanation": "开口向上时方程为 x²=2py，焦点 (0，p/2)=(0，2) 得 p=4，所以 x²=8y；若写成 y²=8x 则开口向右。"
+    },
+    {
+     "type": "choice",
+     "prompt": "抛物线 y²=−4x 的焦点坐标是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(1，0)"
+      },
+      {
+       "label": "B",
+       "text": "(−1，0)"
+      },
+      {
+       "label": "C",
+       "text": "(0，−1)"
+      },
+      {
+       "label": "D",
+       "text": "(−2，0)"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "(1，0)"
+      },
+      {
+       "label": "B",
+       "text": "(−1，0)"
+      },
+      {
+       "label": "C",
+       "text": "(0，−1)"
+      },
+      {
+       "label": "D",
+       "text": "(−2，0)"
+      }
+     ],
+     "answer": "B",
+     "difficulty": "basic",
+     "explanation": "由 y²=−2px 得 2p=4，p=2，焦点为 (−p/2，0)=(−1，0)，准线为 x=1；负号表示开口向左。"
+    },
+    {
+     "type": "fill",
+     "prompt": "抛物线 x²=6y 的焦点坐标是____。",
+     "answer": "(0，3/2)",
+     "difficulty": "basic",
+     "explanation": "方程为 x²=2py 形，2p=6，p=3，焦点在 y 轴正半轴上，坐标为 (0，p/2)，即 (0，3/2)，准线为 y=−3/2。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "焦点为 (3，0) 的抛物线的标准方程中，p 的值是多少？",
+     "answer": 6,
+     "verify": "2*3",
+     "difficulty": "standard",
+     "explanation": "焦点为 (p/2，0)=(3，0)，所以 p/2=3，p=6，抛物线方程为 y²=12x；注意题目问的是 p 而不是 p/2。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "求顶点在原点、焦点为 (0，−1) 的抛物线的标准方程。",
+     "answer": "x²=−4y",
+     "keypoints": [
+      "焦点在 y 轴负半轴，开口向下，设方程为 x²=−2py",
+      "由 p/2=1 得 p=2",
+      "所以方程为 x²=−4y，准线为 y=1"
+     ],
+     "difficulty": "standard",
+     "explanation": "焦点在 y 轴负半轴说明开口向下，标准方程为 x²=−2py；由焦点 (0，−p/2)=(0，−1) 得 p=2，因此方程为 x²=−4y。"
+    }
+   ]
+  },
+  {
+   "name": "3.3.2 抛物线的简单几何性质",
+   "unit": "第三章",
+   "unit_name": "圆锥曲线的方程",
+   "page": 134,
+   "domain": "图形与几何",
+   "type": "reasoning",
+   "tags": [
+    "图形与几何",
+    "教材课时",
+    "圆锥曲线",
+    "抛物线",
+    "几何性质"
+   ],
+   "description": "借助抛物线的标准方程研究它的范围、对称性、顶点与离心率，理解 p 的几何意义，会用焦半径公式解决与焦点弦有关的简单问题。",
+   "mastery_criteria": [
+    "能由抛物线方程写出范围、对称轴、顶点与离心率",
+    "能用焦半径公式求抛物线上的点到焦点的距离"
+   ],
+   "standards": [
+    {
+     "id": "mat-2017:G.NR.16",
+     "confidence": "exact",
+     "quote": "了解抛物线与双曲线的定义、几何图形和标准方程，以及它们的简单几何性质",
+     "sourceLine": 1448
+    },
+    {
+     "id": "mat-2017:G.XY.06",
+     "confidence": "exact",
+     "quote": "能够运用代数的方法研究上述曲线之间的基本关系",
+     "sourceLine": 1497
+    }
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "prompt": "抛物线 y²=4x 的对称轴是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 轴"
+      },
+      {
+       "label": "B",
+       "text": "y 轴"
+      },
+      {
+       "label": "C",
+       "text": "直线 y=x"
+      },
+      {
+       "label": "D",
+       "text": "直线 x=1"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "x 轴"
+      },
+      {
+       "label": "B",
+       "text": "y 轴"
+      },
+      {
+       "label": "C",
+       "text": "直线 y=x"
+      },
+      {
+       "label": "D",
+       "text": "直线 x=1"
+      }
+     ],
+     "answer": "A",
+     "difficulty": "basic",
+     "explanation": "y²=4x 中把 y 换成 −y 方程不变，所以图象关于 x 轴对称；抛物线的对称轴就是它的轴，顶点在原点。"
+    },
+    {
+     "type": "choice",
+     "prompt": "抛物线 y²=2x 上一点 (2，2) 到焦点的距离是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3/2"
+      },
+      {
+       "label": "C",
+       "text": "5/2"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3/2"
+      },
+      {
+       "label": "C",
+       "text": "5/2"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ],
+     "answer": "C",
+     "difficulty": "standard",
+     "explanation": "由 2p=2 得 p=1，准线 x=−1/2，焦半径等于点到准线的距离 x+p/2=2+1/2=5/2，所以到焦点的距离为 5/2。"
+    },
+    {
+     "type": "fill",
+     "prompt": "抛物线的离心率 e 等于____。",
+     "answer": "1",
+     "difficulty": "basic",
+     "explanation": "抛物线上的点到焦点的距离与到准线的距离之比恒为1，所以抛物线的离心率 e=1，这是抛物线区别于椭圆与双曲线的特征。"
+    },
+    {
+     "type": "numeric",
+     "prompt": "抛物线 y²=8x 上一点 M 到焦点的距离为 4，求点 M 的横坐标。",
+     "answer": 2,
+     "verify": "4-(8/4)",
+     "difficulty": "standard",
+     "explanation": "由 2p=8 得 p/2=2，焦半径等于 x+2，于是 x+2=4，x=2；也可先求准线 x=−2 再用点到准线距离 x+2 求解。"
+    },
+    {
+     "type": "short-answer",
+     "prompt": "抛物线 y²=4x 上的点到焦点的距离的最小值是多少？此时点的坐标是什么？",
+     "answer": "最小值为1，此时点为 (0，0)",
+     "keypoints": [
+      "y²=4x 的焦点为 (1，0)，准线 x=−1",
+      "焦半径等于 x+1，且 x≥0",
+      "x=0 时取最小值1，对应顶点 (0，0)"
+     ],
+     "difficulty": "standard",
+     "explanation": "抛物线上点的焦半径等于它到准线 x=−1 的距离 x+1；因为 x≥0，所以焦半径最小值为1，在顶点 (0，0) 处取得。"
+    }
+   ]
+  }
+ ]
+}

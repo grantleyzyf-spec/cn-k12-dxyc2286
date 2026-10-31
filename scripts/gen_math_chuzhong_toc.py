@@ -69,7 +69,9 @@ def parse(book):
             continue
         # 目录页里混着正文解说行（如「0.1 ＝110，－0.5＝」「5.32 ，0.3」），
         # 它们同样以「数字.数字」开头 ⇒ 必须要求节名是中文、且不含等号/斜杠/逗号，否则会多出假课时
-        ms = re.match(r"^(\d+)\.(\d+)\s*([\u4e00-\u9fa5][\u4e00-\u9fa5、，（）与和的分式表]*)$", ln)
+        # 节名要允许破折号、数字与字母：「25.2 降次——解一元二次方程」这种
+        # 只放中文会把整节吞掉（九上 25.2、七下 10.2 都因此丢过）
+        ms = re.match(r"^(\d+)\.(\d+)\s*([\u4e00-\u9fa5][\u4e00-\u9fa5、，（）与和的分式表—－\-·0-9A-Za-z“”]*)$", ln)
         if ms:
             rows.append({"unit_no": ms.group(1), "unit": unit, "no": f"{ms.group(1)}.{ms.group(2)}",
                          "name": ms.group(3).strip(), "page": None})

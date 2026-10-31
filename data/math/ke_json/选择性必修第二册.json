@@ -1,0 +1,3267 @@
+{
+  "book": "选择性必修第二册",
+  "keshi": [
+    {
+      "name": "4.1 数列的概念",
+      "unit": "第四章",
+      "unit_name": "数列",
+      "page": 2,
+      "domain": "数与代数",
+      "type": "conceptual",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "数列",
+        "数列的定义"
+      ],
+      "description": "从身高、月亮可见部分等实际数据出发，认识按确定顺序排列的一列数就是数列，理解项、序号与首项的含义，明确项数有限与无限对应有穷数列与无穷数列。",
+      "mastery_criteria": [
+        "能判断一列数是否为数列，并说出第几项是什么",
+        "能区分有穷数列与无穷数列并各举一例"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.NR.01",
+          "confidence": "exact",
+          "quote": "了解数列的概念和表示方法（列表、图象、通项公式）",
+          "sourceLine": 1243
+        },
+        {
+          "id": "mat-2017:G.XY.01",
+          "confidence": "exact",
+          "quote": "能够结合具体实例，理解通项公式对于数列的重要性",
+          "sourceLine": 1332
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "下列关于数列的说法中，正确的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "数列中的各项可以任意交换位置"
+            },
+            {
+              "label": "B",
+              "text": "数列是按照确定的顺序排列的一列数"
+            },
+            {
+              "label": "C",
+              "text": "同一个数在同一个数列中最多出现一次"
+            },
+            {
+              "label": "D",
+              "text": "只有项数有限的才称为数列"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "数列中的各项可以任意交换位置"
+            },
+            {
+              "label": "B",
+              "text": "数列是按照确定的顺序排列的一列数"
+            },
+            {
+              "label": "C",
+              "text": "同一个数在同一个数列中最多出现一次"
+            },
+            {
+              "label": "D",
+              "text": "只有项数有限的才称为数列"
+            }
+          ],
+          "answer": "B",
+          "difficulty": "basic",
+          "explanation": "数列的核心是“确定的顺序”，交换位置就成了另一个数列；同一个数可以重复出现，项数无限的也是数列，故只有该项正确。"
+        },
+        {
+          "type": "choice",
+          "prompt": "数列 1，1/2，1/3，1/4，… 按序号依次排列，它的第 8 项是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "8"
+            },
+            {
+              "label": "B",
+              "text": "1/7"
+            },
+            {
+              "label": "C",
+              "text": "1/8"
+            },
+            {
+              "label": "D",
+              "text": "1/9"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "8"
+            },
+            {
+              "label": "B",
+              "text": "1/7"
+            },
+            {
+              "label": "C",
+              "text": "1/8"
+            },
+            {
+              "label": "D",
+              "text": "1/9"
+            }
+          ],
+          "answer": "C",
+          "difficulty": "basic",
+          "explanation": "观察可知该数列第 n 项正好是 1/n，把序号 n=8 代入即得第 8 项为 1/8。"
+        },
+        {
+          "type": "fill",
+          "prompt": "按从小到大的顺序排列的素数构成的数列 2，3，5，7，11，… 的第 6 项是 ____。",
+          "answer": "13",
+          "difficulty": "basic",
+          "explanation": "素数依次是 2、3、5、7、11、13，排在第 6 位的是 13，说明数列的项由序号唯一确定。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "数列 1，3，5，7，9，11，13 中共有多少项？只填数字。",
+          "answer": 7,
+          "verify": "len([1,3,5,7,9,11,13])",
+          "difficulty": "standard",
+          "explanation": "把数列逐项数出来共 7 个数，即从 1 到 13 的奇数一共 7 个，所以这个数列的项数是 7。"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "数列 1，2，3 与数列 3，2，1 是否表示同一个数列？请说明理由。",
+          "answer": "不是同一个数列，因为两者项的排列顺序不同。",
+          "keypoints": [
+            "两个数列含有的数完全相同",
+            "但同一序号对应的项不同",
+            "数列由顺序决定，故不是同一数列"
+          ],
+          "difficulty": "standard",
+          "explanation": "数列是按确定顺序排列的一列数，顺序变了，第 1 项由 1 变成 3，两个数列就不再是同一个数列。"
+        }
+      ]
+    },
+    {
+      "name": "4.1.1 数列的概念",
+      "unit": "第四章",
+      "unit_name": "数列",
+      "page": 2,
+      "domain": "数与代数",
+      "type": "conceptual",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "数列",
+        "通项公式"
+      ],
+      "description": "给出数列的严格定义，把数列看成定义在正整数集上的函数，会用通项公式 a_n=f(n) 求指定项，能用列表与图象表示数列，并判断数列的增减性。",
+      "mastery_criteria": [
+        "能由通项公式求出任意指定项",
+        "能说明序号与项的对应关系，指出数列是特殊的函数"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.NR.01",
+          "confidence": "exact",
+          "quote": "了解数列的概念和表示方法（列表、图象、通项公式）",
+          "sourceLine": 1243
+        },
+        {
+          "id": "mat-2017:G.XY.01",
+          "confidence": "exact",
+          "quote": "能够结合具体实例，理解通项公式对于数列的重要性",
+          "sourceLine": 1332
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "已知数列 {a_n} 的通项公式为 a_n=2n+1，则它的第 10 项是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "19"
+            },
+            {
+              "label": "B",
+              "text": "23"
+            },
+            {
+              "label": "C",
+              "text": "21"
+            },
+            {
+              "label": "D",
+              "text": "20"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "19"
+            },
+            {
+              "label": "B",
+              "text": "23"
+            },
+            {
+              "label": "C",
+              "text": "21"
+            },
+            {
+              "label": "D",
+              "text": "20"
+            }
+          ],
+          "answer": "C",
+          "difficulty": "basic",
+          "explanation": "把序号 n=10 代入通项公式，得 a_10=2×10+1=21，通项公式的好处是可以直接求任意一项。"
+        },
+        {
+          "type": "choice",
+          "prompt": "数列 {a_n} 的通项公式为 a_n=(−1)^n·(2n−1)，则 a_4 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "7"
+            },
+            {
+              "label": "B",
+              "text": "−7"
+            },
+            {
+              "label": "C",
+              "text": "9"
+            },
+            {
+              "label": "D",
+              "text": "−9"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "7"
+            },
+            {
+              "label": "B",
+              "text": "−7"
+            },
+            {
+              "label": "C",
+              "text": "9"
+            },
+            {
+              "label": "D",
+              "text": "−9"
+            }
+          ],
+          "answer": "A",
+          "difficulty": "basic",
+          "explanation": "n=4 时 (−1)^4=1，而 2×4−1=7，所以 a_4=1×7=7，偶数项为正。"
+        },
+        {
+          "type": "fill",
+          "prompt": "数列 −1，2，−3，4，… 的一个通项公式可以写成 a_n = ____（用 n 表示）。",
+          "answer": "(−1)^n·n",
+          "difficulty": "basic",
+          "explanation": "该数列奇数项为负、偶数项为正，各项绝对值恰好等于序号，故通项为 (−1)^n 与 n 的积。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "已知数列 {a_n} 的通项公式 a_n=n²−n，则 a_5 的值是多少？",
+          "answer": 20,
+          "verify": "5**2-5",
+          "difficulty": "standard",
+          "explanation": "把 n=5 代入通项公式，a_5=5²−5=25−5=20，代入时注意先算平方再相减。"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "数列可以看成定义在什么集合上的函数？请说明序号与项的对应关系。",
+          "answer": "数列是定义在正整数集或其有限子集上的函数，自变量是序号，函数值是对应的项。",
+          "keypoints": [
+            "自变量是各项的序号",
+            "函数值是数列中对应的项",
+            "定义域是正整数集或其有限子集"
+          ],
+          "difficulty": "standard",
+          "explanation": "教材把数列看作从正整数集 N*（或它的有限子集）到实数集的函数，a_n=f(n) 刻画的正是这一对应关系。"
+        }
+      ]
+    },
+    {
+      "name": "4.1.2 数列的递推公式",
+      "unit": "第四章",
+      "unit_name": "数列",
+      "page": 7,
+      "domain": "数与代数",
+      "type": "procedural",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "数列",
+        "递推公式"
+      ],
+      "description": "认识用前一项或前几项表示后一项的递推公式，能由首项与递推关系逐项写出数列的前若干项，并区分递推公式与通项公式在确定数列时的不同作用。",
+      "mastery_criteria": [
+        "能由首项和递推公式依次算出指定项",
+        "能说明递推公式必须给出初始项才能确定数列"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.NR.01",
+          "confidence": "exact",
+          "quote": "了解数列的概念和表示方法（列表、图象、通项公式）",
+          "sourceLine": 1243
+        },
+        {
+          "id": "mat-2017:G.XY.01",
+          "confidence": "exact",
+          "quote": "能够结合具体实例，理解通项公式对于数列的重要性",
+          "sourceLine": 1332
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "已知数列 {a_n} 满足 a_1=1，a_n=a_(n−1)+3（n≥2），则 a_5 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "10"
+            },
+            {
+              "label": "B",
+              "text": "13"
+            },
+            {
+              "label": "C",
+              "text": "12"
+            },
+            {
+              "label": "D",
+              "text": "16"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "10"
+            },
+            {
+              "label": "B",
+              "text": "13"
+            },
+            {
+              "label": "C",
+              "text": "12"
+            },
+            {
+              "label": "D",
+              "text": "16"
+            }
+          ],
+          "answer": "B",
+          "difficulty": "basic",
+          "explanation": "由递推公式逐项推算：a_2=1+3=4，a_3=7，a_4=10，a_5=13，每步都在前一项上加 3。"
+        },
+        {
+          "type": "choice",
+          "prompt": "数列 {a_n} 满足 a_1=2，a_(n+1)=2a_n，则 a_4 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "8"
+            },
+            {
+              "label": "B",
+              "text": "16"
+            },
+            {
+              "label": "C",
+              "text": "12"
+            },
+            {
+              "label": "D",
+              "text": "32"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "8"
+            },
+            {
+              "label": "B",
+              "text": "16"
+            },
+            {
+              "label": "C",
+              "text": "12"
+            },
+            {
+              "label": "D",
+              "text": "32"
+            }
+          ],
+          "answer": "B",
+          "difficulty": "basic",
+          "explanation": "依次计算 a_2=4，a_3=8，a_4=16，递推公式说明每一项都是前一项的 2 倍。"
+        },
+        {
+          "type": "fill",
+          "prompt": "已知 a_1=3，a_n=2a_(n−1)（n≥2），则 a_3 = ____。",
+          "answer": "12",
+          "difficulty": "basic",
+          "explanation": "先算 a_2=2×3=6，再算 a_3=2×6=12，用递推公式必须从首项开始逐项代入。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "数列 {a_n} 满足 a_1=1，a_n=a_(n−1)+n（n≥2），求 a_4 的值。",
+          "answer": 10,
+          "verify": "1+2+3+4",
+          "difficulty": "standard",
+          "explanation": "逐项推算：a_2=1+2=3，a_3=3+3=6，a_4=6+4=10，正好等于从 1 加到 4 的和。"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "递推公式与通项公式都能确定数列，二者的区别是什么？",
+          "answer": "通项公式直接用序号 n 表示项 a_n，递推公式用前若干项表示后一项，需要初始项才能确定数列。",
+          "keypoints": [
+            "通项公式可直接由序号求出该项",
+            "递推公式由前项推出后一项",
+            "使用递推公式必须先给出初始项"
+          ],
+          "difficulty": "standard",
+          "explanation": "通项公式一步就能求任意项，递推公式则必须先有首项或前几项，再一项一项推算下去。"
+        }
+      ]
+    },
+    {
+      "name": "4.1.3 数列的前 n 项和",
+      "unit": "第四章",
+      "unit_name": "数列",
+      "page": 9,
+      "domain": "数与代数",
+      "type": "procedural",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "数列",
+        "前n项和"
+      ],
+      "description": "理解数列前 n 项和 S_n 的含义，掌握 S_n 与 a_n 之间的转化关系，能用 a_n=S_n−S_(n−1)（n≥2）与 a_1=S_1 由前 n 项和公式求通项公式。",
+      "mastery_criteria": [
+        "能由 S_n 求首项 a_1 与第 n 项 a_n",
+        "能说明作差公式只在 n≥2 时成立的理由"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.NR.01",
+          "confidence": "exact",
+          "quote": "了解数列的概念和表示方法（列表、图象、通项公式）",
+          "sourceLine": 1243
+        },
+        {
+          "id": "mat-2017:G.XY.01",
+          "confidence": "exact",
+          "quote": "能够结合具体实例，理解通项公式对于数列的重要性",
+          "sourceLine": 1332
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "已知数列 {a_n} 的前 n 项和 S_n=n²+n，则 a_1 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "2"
+            },
+            {
+              "label": "B",
+              "text": "1"
+            },
+            {
+              "label": "C",
+              "text": "3"
+            },
+            {
+              "label": "D",
+              "text": "4"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "2"
+            },
+            {
+              "label": "B",
+              "text": "1"
+            },
+            {
+              "label": "C",
+              "text": "3"
+            },
+            {
+              "label": "D",
+              "text": "4"
+            }
+          ],
+          "answer": "A",
+          "difficulty": "basic",
+          "explanation": "首项就等于前 1 项和，令 n=1 代入得 a_1=S_1=1²+1=2。"
+        },
+        {
+          "type": "choice",
+          "prompt": "已知数列 {a_n} 的前 n 项和 S_n=n²，那么它的第 5 项 a_5 等于（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "7"
+            },
+            {
+              "label": "B",
+              "text": "9"
+            },
+            {
+              "label": "C",
+              "text": "11"
+            },
+            {
+              "label": "D",
+              "text": "25"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "7"
+            },
+            {
+              "label": "B",
+              "text": "9"
+            },
+            {
+              "label": "C",
+              "text": "11"
+            },
+            {
+              "label": "D",
+              "text": "25"
+            }
+          ],
+          "answer": "B",
+          "difficulty": "basic",
+          "explanation": "a_5=S_5−S_4=25−16=9，求某一项要用相邻两个前 n 项和作差。",
+          "question": "已知数列 {a_n} 的前 n 项和 S_n=n²，那么它的第 5 项 a_5 等于（　）。"
+        },
+        {
+          "type": "fill",
+          "prompt": "已知数列 {a_n} 的前 n 项和 S_n=2n²，则 a_2 = ____。",
+          "answer": "6",
+          "difficulty": "basic",
+          "explanation": "S_2=8，S_1=2，所以 a_2=S_2−S_1=6，即前 2 项和减去前 1 项和。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "数列 {a_n} 的前 n 项和 S_n=n²+1，求 a_3 的值。",
+          "answer": 5,
+          "verify": "(9+1)-(4+1)",
+          "difficulty": "standard",
+          "explanation": "n≥2 时 a_n=S_n−S_(n−1)，故 a_3=S_3−S_2=(9+1)−(4+1)=5。注意 a_1=S_1=2，n=1 需单独看。",
+          "question": "数列 {a_n} 的前 n 项和 S_n=n²+1，求 a_3 的值。"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "已知前 n 项和 S_n，求 a_n 时为什么必须分 n=1 与 n≥2 两种情况讨论？",
+          "answer": "因为 a_n=S_n−S_(n−1) 只在 n≥2 时成立，n=1 时要用 a_1=S_1，两者结果可能不同。",
+          "keypoints": [
+            "a_n=S_n−S_(n−1)只对n≥2成立",
+            "首项只能由a_1=S_1求出",
+            "两种情况结果可能不同须分别检验"
+          ],
+          "difficulty": "standard",
+          "explanation": "当 n=1 时 S_(n−1)=S_0 没有定义，作差公式失效，所以首项要单独用 a_1=S_1 来求。"
+        }
+      ]
+    },
+    {
+      "name": "4.2 等差数列",
+      "unit": "第四章",
+      "unit_name": "数列",
+      "page": 12,
+      "domain": "数与代数",
+      "type": "conceptual",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "数列",
+        "等差数列"
+      ],
+      "description": "通过石板数、尺码、气温等实例感受“相邻两项之差为常数”的取值规律，认识等差数列这一基本数列模型，明确本节要建立它的通项公式与前 n 项和公式。",
+      "mastery_criteria": [
+        "能从实例中辨认出等差数列并说出公差",
+        "能用相邻两项之差是否相同判断等差数列"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.NR.02",
+          "confidence": "exact",
+          "quote": "通过生活中的实例，理解等差数列的概念和通项公式的意义",
+          "sourceLine": 1246
+        },
+        {
+          "id": "mat-2017:G.NR.04",
+          "confidence": "exact",
+          "quote": "能在具体的问题情境中，发现数列的等差关系，并解决相应的问题",
+          "sourceLine": 1249
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "下列各组数构成的数列中，是等差数列的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "1，4，9，16"
+            },
+            {
+              "label": "B",
+              "text": "2，4，8，16"
+            },
+            {
+              "label": "C",
+              "text": "3，6，9，12"
+            },
+            {
+              "label": "D",
+              "text": "1，1/2，1/3，1/4"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "1，4，9，16"
+            },
+            {
+              "label": "B",
+              "text": "2，4，8，16"
+            },
+            {
+              "label": "C",
+              "text": "3，6，9，12"
+            },
+            {
+              "label": "D",
+              "text": "1，1/2，1/3，1/4"
+            }
+          ],
+          "answer": "C",
+          "difficulty": "basic",
+          "explanation": "等差数列要求相邻两项的差是同一个常数，3，6，9，12 的差恒为 3，其余各组的差都不恒定。"
+        },
+        {
+          "type": "choice",
+          "prompt": "等差数列 20，17，14，11，… 的公差等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "3"
+            },
+            {
+              "label": "B",
+              "text": "−2"
+            },
+            {
+              "label": "C",
+              "text": "−3"
+            },
+            {
+              "label": "D",
+              "text": "2"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "3"
+            },
+            {
+              "label": "B",
+              "text": "−2"
+            },
+            {
+              "label": "C",
+              "text": "−3"
+            },
+            {
+              "label": "D",
+              "text": "2"
+            }
+          ],
+          "answer": "C",
+          "difficulty": "basic",
+          "explanation": "公差 d=a_2−a_1=17−20=−3，数列逐项减小，说明公差是负值。"
+        },
+        {
+          "type": "fill",
+          "prompt": "在等差数列中，若首项为 5、公差为 4，则它的第 2 项是 ____。",
+          "answer": "9",
+          "difficulty": "basic",
+          "explanation": "等差数列相邻两项相差公差，所以第 2 项等于首项加公差，即 5+4=9。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "把 9 到 81 之间所有 9 的正整数倍按从小到大的顺序排成数列，共多少项？",
+          "answer": 9,
+          "verify": "len([x for x in range(1,82) if x%9==0])",
+          "difficulty": "basic",
+          "explanation": "这些数依次是 9，18，27，…，81，相邻两项相差 9，项数等于 81÷9=9。"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "请举一个等差数列的例子，并说明它为什么满足等差数列的定义。",
+          "answer": "例如 2，5，8，11，…，从第 2 项起每一项与前一项的差都是 3，故为等差数列。",
+          "keypoints": [
+            "所举数列相邻两项之差相等",
+            "指出这个相同的差就是公差",
+            "从第2项起逐项检验差值"
+          ],
+          "difficulty": "basic",
+          "explanation": "判断等差数列的依据只有一条：从第 2 项起，每一项与前一项的差都是同一个常数，这个常数就是公差。"
+        }
+      ]
+    },
+    {
+      "name": "4.2.1 等差数列的概念",
+      "unit": "第四章",
+      "unit_name": "数列",
+      "page": 12,
+      "domain": "数与代数",
+      "type": "procedural",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "数列",
+        "等差通项"
+      ],
+      "description": "掌握等差数列与公差的定义、等差中项的概念，能由首项与公差写出通项公式 a_n=a_1+(n−1)d，并会用通项公式求指定项或求公差。",
+      "mastery_criteria": [
+        "能由首项和公差求任意一项",
+        "能用等差中项关系求中间数，并推导通项公式"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.NR.02",
+          "confidence": "exact",
+          "quote": "通过生活中的实例，理解等差数列的概念和通项公式的意义",
+          "sourceLine": 1246
+        },
+        {
+          "id": "mat-2017:G.NR.04",
+          "confidence": "exact",
+          "quote": "能在具体的问题情境中，发现数列的等差关系，并解决相应的问题",
+          "sourceLine": 1249
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "已知等差数列 {a_n} 中 a_1=−1，公差 d=3，则 a_9 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "26"
+            },
+            {
+              "label": "B",
+              "text": "20"
+            },
+            {
+              "label": "C",
+              "text": "23"
+            },
+            {
+              "label": "D",
+              "text": "24"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "26"
+            },
+            {
+              "label": "B",
+              "text": "20"
+            },
+            {
+              "label": "C",
+              "text": "23"
+            },
+            {
+              "label": "D",
+              "text": "24"
+            }
+          ],
+          "answer": "C",
+          "difficulty": "basic",
+          "explanation": "由通项公式 a_9=a_1+8d=−1+8×3=23，注意从首项到第 9 项只加 8 个公差。"
+        },
+        {
+          "type": "choice",
+          "prompt": "已知等差数列 {a_n} 中 a_1=5，a_4=14，则该数列的公差 d 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "3"
+            },
+            {
+              "label": "B",
+              "text": "9"
+            },
+            {
+              "label": "C",
+              "text": "4"
+            },
+            {
+              "label": "D",
+              "text": "6"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "3"
+            },
+            {
+              "label": "B",
+              "text": "9"
+            },
+            {
+              "label": "C",
+              "text": "4"
+            },
+            {
+              "label": "D",
+              "text": "6"
+            }
+          ],
+          "answer": "A",
+          "difficulty": "basic",
+          "explanation": "a_4=a_1+3d，即 14=5+3d，解得 d=3，公差等于两项之差除以序号之差。"
+        },
+        {
+          "type": "fill",
+          "prompt": "在 2 与 10 之间插入一个数 A，使 2，A，10 成等差数列，则 A = ____。",
+          "answer": "6",
+          "difficulty": "basic",
+          "explanation": "A 是 2 与 10 的等差中项，由 2A=2+10 得 A=6，即两端数的平均数。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "等差数列 {a_n} 中 a_1=−3，公差 d=4，求 a_7 的值。",
+          "answer": 21,
+          "verify": "-3+6*4",
+          "difficulty": "standard",
+          "explanation": "a_7=a_1+6d=−3+6×4=−3+24=21，代公式时注意首项为负数。"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "请用等差数列的定义推出通项公式 a_n=a_1+(n−1)d。",
+          "answer": "由定义得 a_n−a_(n−1)=d，逐项代入累加，共出现 n−1 个公差，故 a_n=a_1+(n−1)d。",
+          "keypoints": [
+            "由定义得相邻两项之差恒为d",
+            "从a_2到a_n依次用a_1表示",
+            "累计共n−1个d，得通项公式"
+          ],
+          "difficulty": "standard",
+          "explanation": "把 a_2=a_1+d，a_3=a_2+d，…，a_n=a_(n−1)+d 依次代入，公差一共加了 n−1 次，就得到通项公式。"
+        }
+      ]
+    },
+    {
+      "name": "4.2.2 等差数列的前 n 项和公式",
+      "unit": "第四章",
+      "unit_name": "数列",
+      "page": 18,
+      "domain": "数与代数",
+      "type": "procedural",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "数列",
+        "等差数列求和"
+      ],
+      "description": "借助倒序相加的思路推出等差数列前 n 项和公式 S_n=n(a_1+a_n)/2 及 S_n=na_1+n(n−1)d/2，能根据已知条件选择公式求前 n 项和。",
+      "mastery_criteria": [
+        "能用两个求和公式求等差数列的前 n 项和",
+        "能说明倒序相加消去中间项的思路"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.NR.03",
+          "confidence": "exact",
+          "quote": "探索并掌握等差数列的前狀项和公式",
+          "sourceLine": 1247
+        },
+        {
+          "id": "mat-2017:G.NR.04",
+          "confidence": "exact",
+          "quote": "能在具体的问题情境中，发现数列的等差关系，并解决相应的问题",
+          "sourceLine": 1249
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "已知等差数列 {a_n} 中 a_1=3，a_10=39，则它的前 10 项和 S_10 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "205"
+            },
+            {
+              "label": "B",
+              "text": "420"
+            },
+            {
+              "label": "C",
+              "text": "195"
+            },
+            {
+              "label": "D",
+              "text": "210"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "205"
+            },
+            {
+              "label": "B",
+              "text": "420"
+            },
+            {
+              "label": "C",
+              "text": "195"
+            },
+            {
+              "label": "D",
+              "text": "210"
+            }
+          ],
+          "answer": "D",
+          "difficulty": "basic",
+          "explanation": "S_10=10(a_1+a_10)/2=10×42÷2=210，已知首末两项时直接用第一个求和公式。"
+        },
+        {
+          "type": "choice",
+          "prompt": "等差数列 {a_n} 中 a_1=2，公差 d=3，则前 10 项和 S_10 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "150"
+            },
+            {
+              "label": "B",
+              "text": "145"
+            },
+            {
+              "label": "C",
+              "text": "160"
+            },
+            {
+              "label": "D",
+              "text": "155"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "150"
+            },
+            {
+              "label": "B",
+              "text": "145"
+            },
+            {
+              "label": "C",
+              "text": "160"
+            },
+            {
+              "label": "D",
+              "text": "155"
+            }
+          ],
+          "answer": "D",
+          "difficulty": "basic",
+          "explanation": "先求 a_10=2+9×3=29，再用 S_10=10(2+29)/2=155。"
+        },
+        {
+          "type": "fill",
+          "prompt": "等差数列中 a_1=1，a_10=19，则它的前 10 项和 S_10 = ____。",
+          "answer": "100",
+          "difficulty": "basic",
+          "explanation": "S_10=10×(1+19)÷2=10×10=100，首末两项的平均数乘以项数即为前 n 项和。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "等差数列 2，5，8，… 的前 20 项和是多少？",
+          "answer": 610,
+          "verify": "20*(2+(2+19*3))/2",
+          "difficulty": "hard",
+          "explanation": "首项 2、公差 3，a_20=2+19×3=59，S_20=20(2+59)/2=610，也可用 na_1+n(n−1)d/2 复算。"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "请说明等差数列前 n 项和公式 S_n=n(a_1+a_n)/2 的推导思路。",
+          "answer": "用倒序相加：把 S_n 正写与倒写后逐项相配，每一对的和都是 a_1+a_n，共有 n 对。",
+          "keypoints": [
+            "正序写出S_n的n项和",
+            "再倒序写出一遍S_n",
+            "两式相加得2S_n=n(a_1+a_n)"
+          ],
+          "difficulty": "standard",
+          "explanation": "高斯求和的关键是把首末项配对，配对后每一对的和都等于 a_1+a_n，共 n 对，因此 S_n=n(a_1+a_n)/2。"
+        }
+      ]
+    },
+    {
+      "name": "4.3 等比数列",
+      "unit": "第四章",
+      "unit_name": "数列",
+      "page": 27,
+      "domain": "数与代数",
+      "type": "conceptual",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "数列",
+        "等比数列"
+      ],
+      "description": "从泥版上的数列、日取其半、细菌分裂、复利等实例中，通过除法运算发现“后项与前项之比为常数”的规律，认识等比数列模型并明确本节的研究任务。",
+      "mastery_criteria": [
+        "能从实例中辨认出等比数列并说出公比",
+        "能用相邻两项之比是否相同判断等比数列"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.NR.06",
+          "confidence": "exact",
+          "quote": "通过生活中的实例，理解等比数列的概念和通项公式的意义",
+          "sourceLine": 1253
+        },
+        {
+          "id": "mat-2017:G.NR.09",
+          "confidence": "exact",
+          "quote": "体会等比数列与指数函数的关系",
+          "sourceLine": 1258
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "下列数列中，是等比数列的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "1，3，6，10"
+            },
+            {
+              "label": "B",
+              "text": "2，6，18，54"
+            },
+            {
+              "label": "C",
+              "text": "2，4，6，8"
+            },
+            {
+              "label": "D",
+              "text": "1，4，9，16"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "1，3，6，10"
+            },
+            {
+              "label": "B",
+              "text": "2，6，18，54"
+            },
+            {
+              "label": "C",
+              "text": "2，4，6，8"
+            },
+            {
+              "label": "D",
+              "text": "1，4，9，16"
+            }
+          ],
+          "answer": "B",
+          "difficulty": "basic",
+          "explanation": "等比数列要求后一项与前一项的比是同一个常数，2，6，18，54 的比恒为 3，其余各组都不满足。"
+        },
+        {
+          "type": "choice",
+          "prompt": "数列 1，1/2，1/4，1/8，… 的公比等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "1/2"
+            },
+            {
+              "label": "B",
+              "text": "2"
+            },
+            {
+              "label": "C",
+              "text": "−1/2"
+            },
+            {
+              "label": "D",
+              "text": "1/4"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "1/2"
+            },
+            {
+              "label": "B",
+              "text": "2"
+            },
+            {
+              "label": "C",
+              "text": "−1/2"
+            },
+            {
+              "label": "D",
+              "text": "1/4"
+            }
+          ],
+          "answer": "A",
+          "difficulty": "basic",
+          "explanation": "公比 q=a_2÷a_1=(1/2)÷1=1/2，公比是后项与前项的比而不是差。"
+        },
+        {
+          "type": "fill",
+          "prompt": "等比数列 3，9，27，81，… 的公比 q = ____。",
+          "answer": "3",
+          "difficulty": "basic",
+          "explanation": "公比等于后一项与前一项的比，9÷3=3，检验 27÷9 也等于 3。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "数列 2，4，8，16，32，64，… 中，64 是它的第几项？只填数字。",
+          "answer": 6,
+          "verify": "len([2,4,8,16,32,64])",
+          "difficulty": "basic",
+          "explanation": "从第 1 项起依次是 2、4、8、16、32、64，数一数可知 64 排在第 6 项。"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "请举一个等比数列的例子，并指出它的首项与公比。",
+          "answer": "例如 1，3，9，27，…，首项为 1，公比为 3。",
+          "keypoints": [
+            "所举数列相邻两项之比为同一常数",
+            "说出该数列的首项",
+            "说出该数列的公比"
+          ],
+          "difficulty": "basic",
+          "explanation": "等比数列的判定标准是相邻两项的比恒等于同一个常数 q，且公比不能为 0。"
+        }
+      ]
+    },
+    {
+      "name": "4.3.1 等比数列的概念",
+      "unit": "第四章",
+      "unit_name": "数列",
+      "page": 27,
+      "domain": "数与代数",
+      "type": "procedural",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "数列",
+        "等比通项"
+      ],
+      "description": "掌握等比数列与公比的定义、等比中项的概念，能由首项与公比写出通项公式 a_n=a_1q^(n−1)，并会用公式求指定项。",
+      "mastery_criteria": [
+        "能用通项公式求等比数列的指定项",
+        "能利用等比中项关系求中间数，并推导通项公式"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.NR.06",
+          "confidence": "exact",
+          "quote": "通过生活中的实例，理解等比数列的概念和通项公式的意义",
+          "sourceLine": 1253
+        },
+        {
+          "id": "mat-2017:G.NR.09",
+          "confidence": "exact",
+          "quote": "体会等比数列与指数函数的关系",
+          "sourceLine": 1258
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "已知等比数列 {a_n} 中 a_1=5，公比 q=2，则 a_5 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "40"
+            },
+            {
+              "label": "B",
+              "text": "160"
+            },
+            {
+              "label": "C",
+              "text": "80"
+            },
+            {
+              "label": "D",
+              "text": "75"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "40"
+            },
+            {
+              "label": "B",
+              "text": "160"
+            },
+            {
+              "label": "C",
+              "text": "80"
+            },
+            {
+              "label": "D",
+              "text": "75"
+            }
+          ],
+          "answer": "C",
+          "difficulty": "basic",
+          "explanation": "a_5=a_1q^4=5×16=80，从首项到第 5 项共乘 4 次公比。"
+        },
+        {
+          "type": "choice",
+          "prompt": "若 G 是 4 与 16 的等比中项且 G>0，则 G 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "10"
+            },
+            {
+              "label": "B",
+              "text": "−8"
+            },
+            {
+              "label": "C",
+              "text": "8"
+            },
+            {
+              "label": "D",
+              "text": "6"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "10"
+            },
+            {
+              "label": "B",
+              "text": "−8"
+            },
+            {
+              "label": "C",
+              "text": "8"
+            },
+            {
+              "label": "D",
+              "text": "6"
+            }
+          ],
+          "answer": "C",
+          "difficulty": "basic",
+          "explanation": "等比中项满足 G²=4×16=64，又已知 G>0，所以 G=8，不能取负值。"
+        },
+        {
+          "type": "fill",
+          "prompt": "等比数列 {a_n} 中 a_1=1，公比 q=2，则 a_6 = ____。",
+          "answer": "32",
+          "difficulty": "basic",
+          "explanation": "a_6=a_1q^5=1×2^5=32，注意指数是 n−1 而不是 n。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "等比数列 {a_n} 中 a_1=3，公比 q=−2，求 a_5 的值。",
+          "answer": 48,
+          "verify": "3*(-2)**4",
+          "difficulty": "standard",
+          "explanation": "a_5=a_1q^4=3×(−2)^4=3×16=48，负公比的偶次幂为正。"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "请根据等比数列的定义写出通项公式的推导过程。",
+          "answer": "由 a_(n+1)/a_n=q 得 a_(n+1)=a_n·q，逐项代入 n−1 次得 a_n=a_1q^(n−1)。",
+          "keypoints": [
+            "由定义得后项等于前项乘q",
+            "从a_2起依次代入共乘n−1次",
+            "得a_n=a_1·q^(n−1)"
+          ],
+          "difficulty": "standard",
+          "explanation": "a_2=a_1q，a_3=a_2q=a_1q²，如此代入 n−1 次，就得到 a_n=a_1q^(n−1)。"
+        }
+      ]
+    },
+    {
+      "name": "4.3.2 等比数列的前 n 项和公式",
+      "unit": "第四章",
+      "unit_name": "数列",
+      "page": 34,
+      "domain": "数与代数",
+      "type": "procedural",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "数列",
+        "等比数列求和"
+      ],
+      "description": "用错位相减的方法推出等比数列前 n 项和公式，区分 q=1 与 q≠1 两种情形，能选择合适公式计算前 n 项和并解决简单的实际问题。",
+      "mastery_criteria": [
+        "能按公比是否为 1 选用求和公式",
+        "能说明错位相减消项的原理"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.NR.07",
+          "confidence": "exact",
+          "quote": "探索并掌握等比数列的前狀项和公式",
+          "sourceLine": 1254
+        },
+        {
+          "id": "mat-2017:G.NR.06",
+          "confidence": "exact",
+          "quote": "通过生活中的实例，理解等比数列的概念和通项公式的意义",
+          "sourceLine": 1253
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "等比数列 {a_n} 中 a_1=1，公比 q=2，则前 10 项和 S_10 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "1024"
+            },
+            {
+              "label": "B",
+              "text": "512"
+            },
+            {
+              "label": "C",
+              "text": "1023"
+            },
+            {
+              "label": "D",
+              "text": "2047"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "1024"
+            },
+            {
+              "label": "B",
+              "text": "512"
+            },
+            {
+              "label": "C",
+              "text": "1023"
+            },
+            {
+              "label": "D",
+              "text": "2047"
+            }
+          ],
+          "answer": "C",
+          "difficulty": "basic",
+          "explanation": "S_10=a_1(1−q^10)/(1−q)=(1−1024)÷(1−2)=1023，比 2^10=1024 少 1。"
+        },
+        {
+          "type": "choice",
+          "prompt": "等比数列 {a_n} 中首项为 6、公比为 2，则它的前 4 项之和是（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "84"
+            },
+            {
+              "label": "B",
+              "text": "96"
+            },
+            {
+              "label": "C",
+              "text": "48"
+            },
+            {
+              "label": "D",
+              "text": "90"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "84"
+            },
+            {
+              "label": "B",
+              "text": "96"
+            },
+            {
+              "label": "C",
+              "text": "48"
+            },
+            {
+              "label": "D",
+              "text": "90"
+            }
+          ],
+          "answer": "D",
+          "difficulty": "basic",
+          "explanation": "四项分别是 6、12、24、48，相加得 90，也可用公式 6(2⁴−1)/(2−1)=90 检验。",
+          "question": "等比数列 {a_n} 中首项为 6、公比为 2，则它的前 4 项之和是（　）。"
+        },
+        {
+          "type": "fill",
+          "prompt": "等比数列 1，2，4，8，… 的前 6 项和 S_6 = ____。",
+          "answer": "63",
+          "difficulty": "basic",
+          "explanation": "S_6=(1−2^6)/(1−2)=(1−64)÷(−1)=63，即前 6 项依次为 1、2、4、8、16、32。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "等比数列 {a_n} 中 a_1=2，公比 q=3，求前 4 项和 S_4。",
+          "answer": 80,
+          "verify": "2*(3**4-1)/(3-1)",
+          "difficulty": "hard",
+          "explanation": "由 q≠1 的前 n 项和公式 S_n=a_1(1−q^n)/(1−q)，代入 a_1=2、q=3、n=4 得 S_4=2×(1−81)/(1−3)=80。",
+          "question": "等比数列 {a_n} 中 a_1=2，公比 q=3，求前 4 项和 S_4。"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "当公比 q≠1 时，等比数列前 n 项和公式是怎样推导出来的？q=1 时为什么不能直接用它？",
+          "answer": "用错位相减：qS_n 与 S_n 相减消去中间相同项，得 S_n=a_1(1−q^n)/(1−q)；q=1 时分母为零，此时 S_n=na_1。",
+          "keypoints": [
+            "两边同乘q得到qS_n",
+            "两式相减消去中间的相同项",
+            "q=1时分母为零，应直接用S_n=na_1"
+          ],
+          "difficulty": "standard",
+          "explanation": "错位相减的依据是两式中除首末项外其余项完全相同；q=1 时每项都等于 a_1，前 n 项和直接是 na_1。"
+        }
+      ]
+    },
+    {
+      "name": "4.4.1 数学归纳法",
+      "unit": "第四章",
+      "unit_name": "数列",
+      "page": 44,
+      "domain": "数与代数",
+      "type": "reasoning",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "数列",
+        "数学归纳法"
+      ],
+      "description": "借助多米诺骨牌理解数学归纳法的原理，掌握“验证初始情形”与“由 n=k 推出 n=k+1”两个步骤，能用它证明与正整数有关的简单等式命题。",
+      "mastery_criteria": [
+        "能写出用数学归纳法证明命题的两个步骤",
+        "能在由 k 到 k+1 的推理中正确找出增加或变化的项"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.NR.01",
+          "confidence": "exact",
+          "quote": "了解数列的概念和表示方法（列表、图象、通项公式）",
+          "sourceLine": 1243
+        },
+        {
+          "id": "mat-2017:G.NR.02",
+          "confidence": "inferred",
+          "quote": "通过生活中的实例，理解等差数列的概念和通项公式的意义",
+          "sourceLine": 1246
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "用数学归纳法证明一个与正整数 n 有关的命题时，第一步需要做的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "验证命题对任意正整数都成立"
+            },
+            {
+              "label": "B",
+              "text": "验证 n 取初始值（如 n=1）时命题成立"
+            },
+            {
+              "label": "C",
+              "text": "假设 n=k 时命题成立"
+            },
+            {
+              "label": "D",
+              "text": "直接证明 n=k+1 时命题成立"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "验证命题对任意正整数都成立"
+            },
+            {
+              "label": "B",
+              "text": "验证 n 取初始值（如 n=1）时命题成立"
+            },
+            {
+              "label": "C",
+              "text": "假设 n=k 时命题成立"
+            },
+            {
+              "label": "D",
+              "text": "直接证明 n=k+1 时命题成立"
+            }
+          ],
+          "answer": "B",
+          "difficulty": "basic",
+          "explanation": "数学归纳法第一步是验证初始情形（通常为 n=1），它是整个递推过程的起点。"
+        },
+        {
+          "type": "choice",
+          "prompt": "用数学归纳法证明 1+3+5+…+(2n−1)=n²，从 n=k 到 n=k+1 时，等式左边需要增加的项是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "2k+1"
+            },
+            {
+              "label": "B",
+              "text": "2k−1"
+            },
+            {
+              "label": "C",
+              "text": "k+1"
+            },
+            {
+              "label": "D",
+              "text": "2k+3"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "2k+1"
+            },
+            {
+              "label": "B",
+              "text": "2k−1"
+            },
+            {
+              "label": "C",
+              "text": "k+1"
+            },
+            {
+              "label": "D",
+              "text": "2k+3"
+            }
+          ],
+          "answer": "A",
+          "difficulty": "standard",
+          "explanation": "n=k 时左边到 2k−1 为止，n=k+1 时多出的一项是 2(k+1)−1=2k+1。"
+        },
+        {
+          "type": "fill",
+          "prompt": "用数学归纳法证明 1+2+…+n=n(n+1)/2 时，第一步应验证当 n=1 时等式左边的值等于 ____。",
+          "answer": "1",
+          "difficulty": "basic",
+          "explanation": "n=1 时左边只有一项 1，右边等于 1×2÷2=1，等式成立，归纳的起点得到验证。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "用数学归纳法证明某等式时，从 n=k 到 n=k+1 左边增加了 2k+1，当 k=3 时增加的量是多少？",
+          "answer": 7,
+          "verify": "2*3+1",
+          "difficulty": "basic",
+          "explanation": "把 k=3 代入 2k+1，得 2×3+1=7，说明第三步左边比第二步多出 7 这一项。"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "请说明数学归纳法的两个步骤各自起什么作用，缺少其中一步会有什么问题。",
+          "answer": "第一步验证初始情形以提供起点，第二步由 n=k 成立推出 n=k+1 成立以提供递推，缺一步都无法保证命题对一切正整数成立。",
+          "keypoints": [
+            "第一步验证初始情形成立",
+            "第二步由k成立推出k+1成立",
+            "两步结合才能保证所有正整数都成立"
+          ],
+          "difficulty": "standard",
+          "explanation": "这类似多米诺骨牌：第一步保证第一块倒下，第二步保证前一块倒下能带倒后一块，两者缺一不可。"
+        }
+      ]
+    },
+    {
+      "name": "5.1 导数的概念及其意义",
+      "unit": "第五章",
+      "unit_name": "一元函数的导数及其应用",
+      "page": 59,
+      "domain": "数与代数",
+      "type": "conceptual",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "导数",
+        "平均变化率"
+      ],
+      "description": "从运动变化的速度问题出发，认识平均变化率刻画一段区间上的变化快慢，并体会让区间无限变小即可得到瞬时变化率，从而引出导数的概念。",
+      "mastery_criteria": [
+        "能计算函数在给定区间上的平均变化率",
+        "能说出平均变化率与瞬时变化率的区别与联系"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.NR.11",
+          "confidence": "exact",
+          "quote": "通过实例分析，经历由平均变化率过渡到瞬时变化率的过程",
+          "sourceLine": 1276
+        },
+        {
+          "id": "mat-2017:G.NR.13",
+          "confidence": "exact",
+          "quote": "通过函数图象直观理解导数的几何意义",
+          "sourceLine": 1280
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "函数 f(x)=x² 在区间 [1,3] 上的平均变化率等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "2"
+            },
+            {
+              "label": "B",
+              "text": "8"
+            },
+            {
+              "label": "C",
+              "text": "4"
+            },
+            {
+              "label": "D",
+              "text": "3"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "2"
+            },
+            {
+              "label": "B",
+              "text": "8"
+            },
+            {
+              "label": "C",
+              "text": "4"
+            },
+            {
+              "label": "D",
+              "text": "3"
+            }
+          ],
+          "answer": "C",
+          "difficulty": "basic",
+          "explanation": "平均变化率等于函数值增量除以自变量增量，(9−1)÷(3−1)=4。"
+        },
+        {
+          "type": "choice",
+          "prompt": "函数 f(x)=2x+1 在区间 [0,1] 上的平均变化率等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "2"
+            },
+            {
+              "label": "B",
+              "text": "1"
+            },
+            {
+              "label": "C",
+              "text": "3"
+            },
+            {
+              "label": "D",
+              "text": "0"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "2"
+            },
+            {
+              "label": "B",
+              "text": "1"
+            },
+            {
+              "label": "C",
+              "text": "3"
+            },
+            {
+              "label": "D",
+              "text": "0"
+            }
+          ],
+          "answer": "A",
+          "difficulty": "basic",
+          "explanation": "平均变化率=(f(1)−f(0))÷(1−0)=(3−1)÷1=2，一次函数的平均变化率恒等于其斜率。"
+        },
+        {
+          "type": "fill",
+          "prompt": "函数 f(x)=x² 在区间 [1,2] 上的平均变化率为 ____。",
+          "answer": "3",
+          "difficulty": "basic",
+          "explanation": "平均变化率等于 (f(2)−f(1))÷(2−1)=(4−1)÷1=3。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "某物体做直线运动，位移 s(t)=t²（单位：米），求 t 从 1 秒到 3 秒的平均速度（米/秒）。",
+          "answer": 4,
+          "verify": "(3**2-1**2)/(3-1)",
+          "difficulty": "standard",
+          "explanation": "平均速度等于位移增量除以时间增量，(9−1)÷(3−1)=4 米/秒。"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "平均变化率与瞬时变化率所刻画的变化有什么不同？",
+          "answer": "平均变化率刻画一段区间上的整体变化快慢，瞬时变化率刻画某一时刻的变化快慢，后者是前者在区间长度趋于 0 时的极限。",
+          "keypoints": [
+            "平均变化率针对一个区间",
+            "瞬时变化率针对某一时刻",
+            "瞬时变化率由平均变化率取极限得到"
+          ],
+          "difficulty": "standard",
+          "explanation": "教材先用平均速度描述一段时间内的运动状态，再让时间段无限变小得到瞬时速度，由此引入瞬时变化率。"
+        }
+      ]
+    },
+    {
+      "name": "5.1.1 变化率问题",
+      "unit": "第五章",
+      "unit_name": "一元函数的导数及其应用",
+      "page": 59,
+      "domain": "数与代数",
+      "type": "procedural",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "导数",
+        "瞬时速度"
+      ],
+      "description": "通过跳水运动员的速度问题，掌握平均速度与平均变化率的计算，理解让时间间隔无限趋近于 0 时平均速度趋近的常数即瞬时速度，为引入瞬时变化率作准备。",
+      "mastery_criteria": [
+        "能化简平均变化率并求其趋近值",
+        "能说明用平均速度逼近瞬时速度的道理"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.NR.11",
+          "confidence": "exact",
+          "quote": "通过实例分析，经历由平均变化率过渡到瞬时变化率的过程",
+          "sourceLine": 1276
+        },
+        {
+          "id": "mat-2017:G.NR.13",
+          "confidence": "inferred",
+          "quote": "通过函数图象直观理解导数的几何意义",
+          "sourceLine": 1280
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "函数 f(x)=x² 在区间 [2,2+Δx] 上的平均变化率等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "4"
+            },
+            {
+              "label": "B",
+              "text": "2+Δx"
+            },
+            {
+              "label": "C",
+              "text": "4Δx"
+            },
+            {
+              "label": "D",
+              "text": "4+Δx"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "4"
+            },
+            {
+              "label": "B",
+              "text": "2+Δx"
+            },
+            {
+              "label": "C",
+              "text": "4Δx"
+            },
+            {
+              "label": "D",
+              "text": "4+Δx"
+            }
+          ],
+          "answer": "D",
+          "difficulty": "basic",
+          "explanation": "平均变化率=[(2+Δx)²−4]÷Δx=(4Δx+Δx²)÷Δx=4+Δx，化简时约去 Δx。"
+        },
+        {
+          "type": "choice",
+          "prompt": "某物体自由下落，位移 h(t)=5t²（单位：米），则 t 从 2 秒到 2.1 秒的平均速度等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "20 米/秒"
+            },
+            {
+              "label": "B",
+              "text": "21 米/秒"
+            },
+            {
+              "label": "C",
+              "text": "20.1 米/秒"
+            },
+            {
+              "label": "D",
+              "text": "20.5 米/秒"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "20 米/秒"
+            },
+            {
+              "label": "B",
+              "text": "21 米/秒"
+            },
+            {
+              "label": "C",
+              "text": "20.1 米/秒"
+            },
+            {
+              "label": "D",
+              "text": "20.5 米/秒"
+            }
+          ],
+          "answer": "D",
+          "difficulty": "basic",
+          "explanation": "h(2.1)=5×4.41=22.05，平均速度=(22.05−20)÷(2.1−2)=20.5 米/秒。"
+        },
+        {
+          "type": "fill",
+          "prompt": "函数 f(x)=x² 在 x=1 处，当 Δx 无限趋近于 0 时，平均变化率 (f(1+Δx)−f(1))/Δx 趋近于 ____。",
+          "answer": "2",
+          "difficulty": "basic",
+          "explanation": "该平均变化率化简为 2+Δx，当 Δx 趋近于 0 时它趋近于 2，即 x=1 处的瞬时变化率。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "物体位移 s(t)=t²+1（单位：米），求 t 从 1 秒到 1.1 秒的平均速度（米/秒），结果保留一位小数。",
+          "answer": 2.1,
+          "verify": "(1.1**2+1-(1**2+1))/0.1",
+          "difficulty": "standard",
+          "explanation": "s(1.1)=1.21+1=2.21，s(1)=2，平均速度=(2.21−2)÷0.1=2.1 米/秒，常数 1 在作差时被消去。"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "用平均速度逼近瞬时速度时，为什么必须让时间间隔无限趋近于 0？",
+          "answer": "时间间隔越小，平均速度越接近该时刻的瞬时速度，只有间隔趋于 0 时平均速度的极限才是瞬时速度。",
+          "keypoints": [
+            "间隔越小平均速度越接近瞬时速度",
+            "趋于零时取极限才得到瞬时速度",
+            "取很小的间隔只能得到近似值"
+          ],
+          "difficulty": "standard",
+          "explanation": "教材让 Δt 依次取 0.1、0.01、0.001 等值计算平均速度，发现它们趋近同一个常数，这个常数就是瞬时速度。"
+        }
+      ]
+    },
+    {
+      "name": "5.1.2 导数的概念及其几何意义",
+      "unit": "第五章",
+      "unit_name": "一元函数的导数及其应用",
+      "page": 64,
+      "domain": "数与代数",
+      "type": "conceptual",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "导数",
+        "导数的几何意义"
+      ],
+      "description": "由瞬时变化率抽象出导数的定义 f′(x_0)=lim(Δy/Δx)，理解导数就是曲线在点 (x_0,f(x_0)) 处切线的斜率，能由导数求切线斜率与瞬时速度。",
+      "mastery_criteria": [
+        "能说明 f′(x_0) 的定义并计算简单函数的导数值",
+        "能指出导数的几何意义是切线斜率"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.NR.13",
+          "confidence": "exact",
+          "quote": "通过函数图象直观理解导数的几何意义",
+          "sourceLine": 1280
+        },
+        {
+          "id": "mat-2017:G.NR.04",
+          "confidence": "exact",
+          "quote": "通过函数图象直观理解导数的几何意义",
+          "sourceLine": 1280
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "已知 f(x)=x²，则 f′(2) 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "2"
+            },
+            {
+              "label": "B",
+              "text": "8"
+            },
+            {
+              "label": "C",
+              "text": "1"
+            },
+            {
+              "label": "D",
+              "text": "4"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "2"
+            },
+            {
+              "label": "B",
+              "text": "8"
+            },
+            {
+              "label": "C",
+              "text": "1"
+            },
+            {
+              "label": "D",
+              "text": "4"
+            }
+          ],
+          "answer": "D",
+          "difficulty": "basic",
+          "explanation": "在 x=2 处平均变化率化简为 4+Δx，令 Δx 趋近于 0 得 f′(2)=4。"
+        },
+        {
+          "type": "choice",
+          "prompt": "曲线 y=x² 在点 (1,1) 处的切线斜率等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "2"
+            },
+            {
+              "label": "B",
+              "text": "1"
+            },
+            {
+              "label": "C",
+              "text": "0"
+            },
+            {
+              "label": "D",
+              "text": "4"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "2"
+            },
+            {
+              "label": "B",
+              "text": "1"
+            },
+            {
+              "label": "C",
+              "text": "0"
+            },
+            {
+              "label": "D",
+              "text": "4"
+            }
+          ],
+          "answer": "A",
+          "difficulty": "basic",
+          "explanation": "切线斜率就是函数在该点的导数，f′(1)=2×1=2，该点纵坐标为 1。"
+        },
+        {
+          "type": "fill",
+          "prompt": "曲线 y=x² 在点 (2,4) 处的切线斜率为 ____。",
+          "answer": "4",
+          "difficulty": "basic",
+          "explanation": "切线斜率等于该点处的导数值，在 x=2 处平均变化率 4+Δx 趋近于 4。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "物体位移 s(t)=5t²（单位：米），求 t=2 秒时的瞬时速度（米/秒）。",
+          "answer": 20,
+          "verify": "10*2",
+          "difficulty": "standard",
+          "explanation": "由 (s(2+Δt)−s(2))÷Δt=20+5Δt，令 Δt 趋近于 0 得瞬时速度 20 米/秒。"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "请说明导数 f′(x_0) 的几何意义。",
+          "answer": "f′(x_0) 是曲线 y=f(x) 在点 (x_0,f(x_0)) 处切线的斜率。",
+          "keypoints": [
+            "f′(x_0)等于切线的斜率",
+            "切点坐标为(x_0,f(x_0))",
+            "导数为负时切线下降"
+          ],
+          "difficulty": "standard",
+          "explanation": "割线斜率在两点无限接近时的极限就是切线斜率，因此导数刻画了曲线在该点处的倾斜程度。"
+        }
+      ]
+    },
+    {
+      "name": "5.2 导数的运算",
+      "unit": "第五章",
+      "unit_name": "一元函数的导数及其应用",
+      "page": 72,
+      "domain": "数与代数",
+      "type": "procedural",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "导数",
+        "求导公式"
+      ],
+      "description": "明确本节要建立一套求导工具：基本初等函数的导数公式、导数的四则运算法则与简单复合函数的求导法则，从而不必每次都用定义求导。",
+      "mastery_criteria": [
+        "能直接用幂函数求导公式求简单函数的导数",
+        "知道求导可分解为基本公式与运算法则两步"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.NR.15",
+          "confidence": "exact",
+          "quote": "能利用给出的基本初等函数的导数公式和导数的四则运算法则",
+          "sourceLine": 1284
+        },
+        {
+          "id": "mat-2017:G.XY.03",
+          "confidence": "exact",
+          "quote": "能够借助函数的导数，从定性和定量、整体和局部等多种角度研究函数的性质和应用",
+          "sourceLine": 1349
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "下列式子中，表示函数 y=x³ 的导数的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "x²"
+            },
+            {
+              "label": "B",
+              "text": "3x"
+            },
+            {
+              "label": "C",
+              "text": "3x³"
+            },
+            {
+              "label": "D",
+              "text": "3x²"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "x²"
+            },
+            {
+              "label": "B",
+              "text": "3x"
+            },
+            {
+              "label": "C",
+              "text": "3x³"
+            },
+            {
+              "label": "D",
+              "text": "3x²"
+            }
+          ],
+          "answer": "D",
+          "difficulty": "basic",
+          "explanation": "由幂函数求导公式 (x^n)′=nx^(n−1)，取 n=3 得 (x³)′=3x²。"
+        },
+        {
+          "type": "choice",
+          "prompt": "已知 f(x)=x²+3x，则 f′(x) 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "2x+3"
+            },
+            {
+              "label": "B",
+              "text": "2x"
+            },
+            {
+              "label": "C",
+              "text": "x+3"
+            },
+            {
+              "label": "D",
+              "text": "2x+3x"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "2x+3"
+            },
+            {
+              "label": "B",
+              "text": "2x"
+            },
+            {
+              "label": "C",
+              "text": "x+3"
+            },
+            {
+              "label": "D",
+              "text": "2x+3x"
+            }
+          ],
+          "answer": "A",
+          "difficulty": "basic",
+          "explanation": "逐项求导再相加：(x²)′=2x，(3x)′=3，所以 f′(x)=2x+3。"
+        },
+        {
+          "type": "fill",
+          "prompt": "函数 y=x⁴ 的导数为 ____。",
+          "answer": "4x³",
+          "difficulty": "basic",
+          "explanation": "用幂函数求导公式 (x^n)′=nx^(n−1)，取 n=4 得导数为 4x³。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "已知 f(x)=x³+x，求 f′(1) 的值。",
+          "answer": 4,
+          "verify": "3*1**2+1",
+          "difficulty": "standard",
+          "explanation": "f′(x)=3x²+1，代入 x=1 得 3+1=4，说明求导后仍可继续代值。"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "请写出三个基本初等函数的导数公式，并说明掌握这些公式的作用。",
+          "answer": "(x^n)′=nx^(n−1)，(sin x)′=cos x，(e^x)′=e^x，有了公式就不必每次用定义求导。",
+          "keypoints": [
+            "写出幂函数的求导公式",
+            "写出正弦函数的导数公式",
+            "写出指数函数e^x的导数公式"
+          ],
+          "difficulty": "standard",
+          "explanation": "这些公式都由导数定义推出，是求导运算的基本工具，四则运算与复合求导最终都化归到它们。"
+        }
+      ]
+    },
+    {
+      "name": "5.2.1 基本初等函数的导数",
+      "unit": "第五章",
+      "unit_name": "一元函数的导数及其应用",
+      "page": 72,
+      "domain": "数与代数",
+      "type": "procedural",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "导数",
+        "基本初等函数求导"
+      ],
+      "description": "记住幂函数、三角函数、指数函数与对数函数的导数公式，能对形如 x^n、√x、1/x、sin x 的函数直接求导，并会用公式求某点处的导数值。",
+      "mastery_criteria": [
+        "能正确写出幂函数与正弦余弦函数的导数公式",
+        "能求含根式、分式的幂函数的导数"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.NR.15",
+          "confidence": "exact",
+          "quote": "能利用给出的基本初等函数的导数公式和导数的四则运算法则",
+          "sourceLine": 1284
+        },
+        {
+          "id": "mat-2017:G.XY.03",
+          "confidence": "exact",
+          "quote": "能够借助函数的导数，从定性和定量、整体和局部等多种角度研究函数的性质和应用",
+          "sourceLine": 1349
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "函数 y=x^5 的导数等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "5x⁵"
+            },
+            {
+              "label": "B",
+              "text": "x⁴"
+            },
+            {
+              "label": "C",
+              "text": "4x⁵"
+            },
+            {
+              "label": "D",
+              "text": "5x⁴"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "5x⁵"
+            },
+            {
+              "label": "B",
+              "text": "x⁴"
+            },
+            {
+              "label": "C",
+              "text": "4x⁵"
+            },
+            {
+              "label": "D",
+              "text": "5x⁴"
+            }
+          ],
+          "answer": "D",
+          "difficulty": "basic",
+          "explanation": "由 (x^n)′=nx^(n−1)，取 n=5 得导数为 5x⁴，指数减 1、原指数作系数。"
+        },
+        {
+          "type": "choice",
+          "prompt": "若 y=√x（其中 x>0），则 y′ 的表达式是（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "2√x"
+            },
+            {
+              "label": "B",
+              "text": "1/√x"
+            },
+            {
+              "label": "C",
+              "text": "√x/2"
+            },
+            {
+              "label": "D",
+              "text": "1/(2√x)"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "2√x"
+            },
+            {
+              "label": "B",
+              "text": "1/√x"
+            },
+            {
+              "label": "C",
+              "text": "√x/2"
+            },
+            {
+              "label": "D",
+              "text": "1/(2√x)"
+            }
+          ],
+          "answer": "D",
+          "difficulty": "basic",
+          "explanation": "√x=x^(1/2)，由幂函数公式得 (1/2)x^(−1/2)=1/(2√x)。",
+          "question": "若 y=√x（其中 x>0），则 y′ 的表达式是（　）。"
+        },
+        {
+          "type": "fill",
+          "prompt": "函数 y=1/x 的导数为 ____。",
+          "answer": "−1/x²",
+          "difficulty": "basic",
+          "explanation": "把 1/x 写成 x^(−1)，由幂函数公式得 −x^(−2)=−1/x²。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "已知 f(x)=x³，则曲线 y=f(x) 在点 (1,1) 处切线的斜率是多少？",
+          "answer": 3,
+          "verify": "3*1**2",
+          "difficulty": "standard",
+          "explanation": "f′(x)=3x²，切线斜率就是 f′(1)=3×1²=3，故曲线在点 (1,1) 处的切线斜率为 3。",
+          "question": "已知 f(x)=x³，则曲线 y=f(x) 在点 (1,1) 处切线的斜率是多少？"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "比较 (sin x)′ 与 (cos x)′ 的结果，说明二者之间的关系。",
+          "answer": "(sin x)′=cos x，(cos x)′=−sin x，两者互换且余弦的导数多一个负号。",
+          "keypoints": [
+            "正弦的导数是余弦",
+            "余弦的导数是负的正弦",
+            "两者相差一个负号"
+          ],
+          "difficulty": "standard",
+          "explanation": "由导数定义可算出 sin x 的导数为 cos x，而 cos x 的导数为 −sin x，记忆时要注意符号差别。"
+        }
+      ]
+    },
+    {
+      "name": "5.2.2 导数的四则运算法则",
+      "unit": "第五章",
+      "unit_name": "一元函数的导数及其应用",
+      "page": 76,
+      "domain": "数与代数",
+      "type": "procedural",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "导数",
+        "四则运算法则"
+      ],
+      "description": "掌握导数的和差法则与积商法则，能对多项式与简单初等函数的和、差、积、商求导，并注意积的导数不是两个导数的积。",
+      "mastery_criteria": [
+        "能用和差法则求多项式的导数",
+        "能用乘法法则求两个函数乘积的导数"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.NR.15",
+          "confidence": "exact",
+          "quote": "求简单函数的导数；能求简单的复合函数",
+          "sourceLine": 1285
+        },
+        {
+          "id": "mat-2017:G.XY.03",
+          "confidence": "exact",
+          "quote": "能够借助函数的导数，从定性和定量、整体和局部等多种角度研究函数的性质和应用",
+          "sourceLine": 1349
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "函数 y=x²+3x−1 的导数等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "2x+3"
+            },
+            {
+              "label": "B",
+              "text": "2x−1"
+            },
+            {
+              "label": "C",
+              "text": "2x+3−1"
+            },
+            {
+              "label": "D",
+              "text": "x+3"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "2x+3"
+            },
+            {
+              "label": "B",
+              "text": "2x−1"
+            },
+            {
+              "label": "C",
+              "text": "2x+3−1"
+            },
+            {
+              "label": "D",
+              "text": "x+3"
+            }
+          ],
+          "answer": "A",
+          "difficulty": "basic",
+          "explanation": "常数项求导为 0，逐项求导再相加得 y′=2x+3。"
+        },
+        {
+          "type": "choice",
+          "prompt": "函数 y=x·e^x 的导数等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "e^x"
+            },
+            {
+              "label": "B",
+              "text": "(1+x)e^x"
+            },
+            {
+              "label": "C",
+              "text": "xe^x"
+            },
+            {
+              "label": "D",
+              "text": "2e^x"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "e^x"
+            },
+            {
+              "label": "B",
+              "text": "(1+x)e^x"
+            },
+            {
+              "label": "C",
+              "text": "xe^x"
+            },
+            {
+              "label": "D",
+              "text": "2e^x"
+            }
+          ],
+          "answer": "B",
+          "difficulty": "basic",
+          "explanation": "用乘法法则 (uv)′=u′v+uv′，得 e^x+x·e^x=(1+x)e^x。"
+        },
+        {
+          "type": "fill",
+          "prompt": "函数 y=3x²−2x+1 的导数为 ____。",
+          "answer": "6x−2",
+          "difficulty": "basic",
+          "explanation": "逐项求导：(3x²)′=6x，(−2x)′=−2，常数 1 的导数为 0，相加得 6x−2。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "已知 f(x)=x²+2x，求 f′(1) 的值。",
+          "answer": 4,
+          "verify": "2*1+2",
+          "difficulty": "standard",
+          "explanation": "先求导得 f′(x)=2x+2，代入 x=1 得 4。"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "请说明两个函数和的导数与积的导数有什么不同，并各举一例。",
+          "answer": "(u+v)′=u′+v′，而 (uv)′=u′v+uv′，积的导数不是两个导数的积。",
+          "keypoints": [
+            "和的导数等于两导数之和",
+            "积的导数用u′v+uv′",
+            "积的导数不等于两导数之积"
+          ],
+          "difficulty": "standard",
+          "explanation": "例如 (x+x²)′=1+2x，而 (x·x²)′=(x³)′=3x²，并不等于 1×2x，可见两种法则差别很大。"
+        }
+      ]
+    },
+    {
+      "name": "5.2.3 简单复合函数的导数",
+      "unit": "第五章",
+      "unit_name": "一元函数的导数及其应用",
+      "page": 79,
+      "domain": "数与代数",
+      "type": "procedural",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "导数",
+        "复合函数求导"
+      ],
+      "description": "认识 y=f(g(x)) 的复合结构，掌握复合函数求导法则 y′=f′(u)·g′(x)，能对形如 (ax+b)^n 与 sin(ax) 的简单复合函数求导。",
+      "mastery_criteria": [
+        "能拆出外层与内层函数并分别求导",
+        "能对 (ax+b)^n 型函数正确求导"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.NR.15",
+          "confidence": "exact",
+          "quote": "求简单函数的导数；能求简单的复合函数",
+          "sourceLine": 1285
+        },
+        {
+          "id": "mat-2017:G.XY.03",
+          "confidence": "exact",
+          "quote": "能够借助函数的导数，从定性和定量、整体和局部等多种角度研究函数的性质和应用",
+          "sourceLine": 1349
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "函数 y=(3x+1)² 的导数等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "18x+6"
+            },
+            {
+              "label": "B",
+              "text": "2(3x+1)"
+            },
+            {
+              "label": "C",
+              "text": "9x+3"
+            },
+            {
+              "label": "D",
+              "text": "18x+1"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "18x+6"
+            },
+            {
+              "label": "B",
+              "text": "2(3x+1)"
+            },
+            {
+              "label": "C",
+              "text": "9x+3"
+            },
+            {
+              "label": "D",
+              "text": "18x+1"
+            }
+          ],
+          "answer": "A",
+          "difficulty": "standard",
+          "explanation": "设 u=3x+1，y′=2u·u′=2(3x+1)×3=18x+6，别漏乘内层导数 3。"
+        },
+        {
+          "type": "choice",
+          "prompt": "函数 y=sin 2x 的导数等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "cos 2x"
+            },
+            {
+              "label": "B",
+              "text": "2cos 2x"
+            },
+            {
+              "label": "C",
+              "text": "−2cos 2x"
+            },
+            {
+              "label": "D",
+              "text": "2sin 2x"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "cos 2x"
+            },
+            {
+              "label": "B",
+              "text": "2cos 2x"
+            },
+            {
+              "label": "C",
+              "text": "−2cos 2x"
+            },
+            {
+              "label": "D",
+              "text": "2sin 2x"
+            }
+          ],
+          "answer": "B",
+          "difficulty": "basic",
+          "explanation": "外层是正弦、内层是 2x，y′=cos2x·(2x)′=2cos2x。"
+        },
+        {
+          "type": "fill",
+          "prompt": "函数 y=(3x−1)³ 的导数为 ____。",
+          "answer": "9(3x−1)²",
+          "difficulty": "basic",
+          "explanation": "y′=3(3x−1)²·(3x−1)′=3(3x−1)²×3=9(3x−1)²。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "已知 f(x)=(x+1)³，求 f′(1) 的值。",
+          "answer": 12,
+          "verify": "3*(1+1)**2",
+          "difficulty": "hard",
+          "explanation": "复合求导得 f′(x)=3(x+1)²，代入 x=1 得 3×4=12。"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "求复合函数 y=f(g(x)) 的导数时，一般按什么步骤进行？",
+          "answer": "先设中间变量 u=g(x)，把 y 看成 u 的函数，则 y′=f′(u)·g′(x)，即外层导数乘内层导数。",
+          "keypoints": [
+            "先分清外层函数与内层函数",
+            "外层对中间变量求导",
+            "再乘内层函数对x的导数"
+          ],
+          "difficulty": "standard",
+          "explanation": "复合函数求导的关键是逐层求导再相乘，漏掉内层导数是最常见的错误。"
+        }
+      ]
+    },
+    {
+      "name": "5.3 导数在研究函数中的应用",
+      "unit": "第五章",
+      "unit_name": "一元函数的导数及其应用",
+      "page": 84,
+      "domain": "数与代数",
+      "type": "conceptual",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "导数",
+        "导数与单调性"
+      ],
+      "description": "从运动员重心高度的升降与速度正负的对应关系出发，认识导数的符号决定函数图象的升降，明确本节用导数研究单调性、极值与最值的研究路线。",
+      "mastery_criteria": [
+        "能由导数的正负判断函数在区间上的单调性",
+        "能说出导数符号与图象升降的对应关系"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.NR.07",
+          "confidence": "exact",
+          "quote": "了解函数的单调性与导数的关系；能利用导数研究函数的单调性",
+          "sourceLine": 1289
+        },
+        {
+          "id": "mat-2017:G.NR.05",
+          "confidence": "exact",
+          "quote": "结合实例，借助几何直观了解函数的单调性与导数的关系",
+          "sourceLine": 1289
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "若函数 f(x) 在某区间上恒有 f′(x)>0，则 f(x) 在该区间上（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "单调递减"
+            },
+            {
+              "label": "B",
+              "text": "单调递增"
+            },
+            {
+              "label": "C",
+              "text": "为常数函数"
+            },
+            {
+              "label": "D",
+              "text": "先增后减"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "单调递减"
+            },
+            {
+              "label": "B",
+              "text": "单调递增"
+            },
+            {
+              "label": "C",
+              "text": "为常数函数"
+            },
+            {
+              "label": "D",
+              "text": "先增后减"
+            }
+          ],
+          "answer": "B",
+          "difficulty": "basic",
+          "explanation": "导数为正说明函数图象随 x 增大而上升，因此函数在该区间上单调递增。"
+        },
+        {
+          "type": "choice",
+          "prompt": "函数 f(x)=2x²−8x 的单调递增区间是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "(−∞,2)"
+            },
+            {
+              "label": "B",
+              "text": "(4,+∞)"
+            },
+            {
+              "label": "C",
+              "text": "(2,+∞)"
+            },
+            {
+              "label": "D",
+              "text": "(0,+∞)"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "(−∞,2)"
+            },
+            {
+              "label": "B",
+              "text": "(4,+∞)"
+            },
+            {
+              "label": "C",
+              "text": "(2,+∞)"
+            },
+            {
+              "label": "D",
+              "text": "(0,+∞)"
+            }
+          ],
+          "answer": "C",
+          "difficulty": "basic",
+          "explanation": "f′(x)=4x−8，令 f′(x)>0 得 x>2，故单调递增区间为 (2,+∞)。"
+        },
+        {
+          "type": "fill",
+          "prompt": "若函数 f(x) 在区间 (a,b) 内满足 f′(x)<0，则 f(x) 在 (a,b) 内单调 ____。",
+          "answer": "递减",
+          "difficulty": "basic",
+          "explanation": "导数为负表示函数值随 x 增大而减小，所以函数在该区间内单调递减。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "函数 f(x)=x²−4x 的单调递减区间的右端点是多少？",
+          "answer": 2,
+          "verify": "4/2",
+          "difficulty": "standard",
+          "explanation": "f′(x)=2x−4，令 f′(x)<0 得 x<2，递减区间为 (−∞,2)，右端点为 2。"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "请说明导数的符号与函数单调性之间的关系。",
+          "answer": "在某区间上 f′(x)>0 则 f 单调递增，f′(x)<0 则 f 单调递减，f′(x) 恒为 0 则 f 为常数。",
+          "keypoints": [
+            "导数为正对应单调递增",
+            "导数为负对应单调递减",
+            "导数恒为零说明函数为常数"
+          ],
+          "difficulty": "standard",
+          "explanation": "导数的正负反映函数图象的升降，这正是用导数研究函数单调性的基本依据。"
+        }
+      ]
+    },
+    {
+      "name": "5.3.1 函数的单调性",
+      "unit": "第五章",
+      "unit_name": "一元函数的导数及其应用",
+      "page": 84,
+      "domain": "数与代数",
+      "type": "procedural",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "导数",
+        "求单调区间"
+      ],
+      "description": "掌握用导数求函数单调区间的步骤：求导、解不等式 f′(x)>0 或 f′(x)<0、写出区间，并能处理导数为零的个别点不影响单调性的情形。",
+      "mastery_criteria": [
+        "能通过解不等式求出单调区间",
+        "能说明个别点导数为零不影响单调性"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.NR.17",
+          "confidence": "exact",
+          "quote": "能利用导数研究函数的单调性",
+          "sourceLine": 1289
+        },
+        {
+          "id": "mat-2017:G.NR.07",
+          "confidence": "exact",
+          "quote": "了解函数的单调性与导数的关系；能利用导数研究函数的单调性",
+          "sourceLine": 1289
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "函数 f(x)=x³−6x² 的单调递减区间是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "(0,4)"
+            },
+            {
+              "label": "B",
+              "text": "(4,+∞)"
+            },
+            {
+              "label": "C",
+              "text": "(−∞,0)"
+            },
+            {
+              "label": "D",
+              "text": "(−∞,4)"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "(0,4)"
+            },
+            {
+              "label": "B",
+              "text": "(4,+∞)"
+            },
+            {
+              "label": "C",
+              "text": "(−∞,0)"
+            },
+            {
+              "label": "D",
+              "text": "(−∞,4)"
+            }
+          ],
+          "answer": "A",
+          "difficulty": "standard",
+          "explanation": "f′(x)=3x²−12x=3x(x−4)，令 f′(x)<0 得 0<x<4，故递减区间为 (0,4)。"
+        },
+        {
+          "type": "choice",
+          "prompt": "函数 f(x)=e^x−x 的单调递增区间是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "(−∞,0)"
+            },
+            {
+              "label": "B",
+              "text": "(1,+∞)"
+            },
+            {
+              "label": "C",
+              "text": "(0,+∞)"
+            },
+            {
+              "label": "D",
+              "text": "R"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "(−∞,0)"
+            },
+            {
+              "label": "B",
+              "text": "(1,+∞)"
+            },
+            {
+              "label": "C",
+              "text": "(0,+∞)"
+            },
+            {
+              "label": "D",
+              "text": "R"
+            }
+          ],
+          "answer": "C",
+          "difficulty": "basic",
+          "explanation": "f′(x)=e^x−1，令 f′(x)>0 得 e^x>1，即 x>0，故递增区间为 (0,+∞)。"
+        },
+        {
+          "type": "fill",
+          "prompt": "函数 f(x)=x²−2x−3 的单调递增区间为 ____。",
+          "answer": "(1,+∞)",
+          "difficulty": "basic",
+          "explanation": "f′(x)=2x−2，令 f′(x)>0 得 x>1，故单调递增区间为 (1,+∞)。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "函数 f(x)=ln x−x 在 x=1 处的导数是多少？",
+          "answer": 0,
+          "verify": "1/1-1",
+          "difficulty": "standard",
+          "explanation": "f′(x)=1/x−1，代入 x=1 得 0，说明 x=1 是导数由正变负的分界点。"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "请说明用导数判断函数 f(x)=x³ 在 R 上单调性的过程。",
+          "answer": "f′(x)=3x²≥0，且只有 x=0 处为 0，故 f(x) 在 R 上单调递增。",
+          "keypoints": [
+            "先求导得f′(x)=3x²",
+            "导数非负且仅在一点为零",
+            "据此判断函数在R上单调递增"
+          ],
+          "difficulty": "standard",
+          "explanation": "导数在个别点等于 0 不影响单调性，只要不出现导数恒为 0 的区间，函数仍严格单调递增。"
+        }
+      ]
+    },
+    {
+      "name": "5.3.2 函数的极值与最大（小）值",
+      "unit": "第五章",
+      "unit_name": "一元函数的导数及其应用",
+      "page": 90,
+      "domain": "数与代数",
+      "type": "procedural",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "导数",
+        "极值与最值"
+      ],
+      "description": "理解极值点处导数为零且左右变号的必要条件，能用导数求极大值、极小值，并会比较端点函数值求闭区间上的最大（小）值。",
+      "mastery_criteria": [
+        "能由导数变号判断极大值与极小值",
+        "能比较驻点与端点函数值求最值"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.NR.08",
+          "confidence": "exact",
+          "quote": "借助函数的图象，了解函数在某点取得极值的必要条件和充分条件",
+          "sourceLine": 1292
+        },
+        {
+          "id": "mat-2017:G.NR.09",
+          "confidence": "exact",
+          "quote": "能利用导数讨论函数的单调性，并证明某些不等式",
+          "sourceLine": 1905
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "函数 f(x)=x³−3x 的极大值等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "−2"
+            },
+            {
+              "label": "B",
+              "text": "0"
+            },
+            {
+              "label": "C",
+              "text": "1"
+            },
+            {
+              "label": "D",
+              "text": "2"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "−2"
+            },
+            {
+              "label": "B",
+              "text": "0"
+            },
+            {
+              "label": "C",
+              "text": "1"
+            },
+            {
+              "label": "D",
+              "text": "2"
+            }
+          ],
+          "answer": "D",
+          "difficulty": "basic",
+          "explanation": "f′(x)=3x²−3，x=−1 时导数为 0 且左正右负，f(−1)=−1+3=2 为极大值。"
+        },
+        {
+          "type": "choice",
+          "prompt": "函数 f(x)=x²−4x+1 的最小值等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "1"
+            },
+            {
+              "label": "B",
+              "text": "−3"
+            },
+            {
+              "label": "C",
+              "text": "−4"
+            },
+            {
+              "label": "D",
+              "text": "3"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "1"
+            },
+            {
+              "label": "B",
+              "text": "−3"
+            },
+            {
+              "label": "C",
+              "text": "−4"
+            },
+            {
+              "label": "D",
+              "text": "3"
+            }
+          ],
+          "answer": "B",
+          "difficulty": "basic",
+          "explanation": "配方得 f(x)=(x−2)²−3，x=2 时取最小值 −3，也可由 f′(x)=2x−4=0 求得。"
+        },
+        {
+          "type": "fill",
+          "prompt": "函数 f(x)=x²−6x+5 的最小值为 ____。",
+          "answer": "−4",
+          "difficulty": "basic",
+          "explanation": "f′(x)=2x−6，x=3 时取得最小值 f(3)=9−18+5=−4。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "函数 f(x)=x³−3x 的极小值是多少？",
+          "answer": -2,
+          "verify": "1**3-3*1",
+          "difficulty": "hard",
+          "explanation": "f′(x)=3x²−3，x=1 时导数为 0 且左负右正，f(1)=1−3=−2 为极小值。"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "函数的极大值与最大值有什么区别？请举例说明。",
+          "answer": "极大值是局部概念，只与附近点的函数值比较；最大值是整体概念，是全部函数值中的最大者，极大值未必是最大值。",
+          "keypoints": [
+            "极大值只与附近点比较",
+            "最大值是整体最大的函数值",
+            "极大值可能小于某个极小值"
+          ],
+          "difficulty": "standard",
+          "explanation": "例如 f(x)=x³−3x 有极大值 2 和极小值 −2，但在 R 上没有最大值；限制在闭区间上时最大值还可能出现在端点。"
+        }
+      ]
+    },
+    {
+      "name": "5.3.3 导数在研究函数中的应用举例",
+      "unit": "第五章",
+      "unit_name": "一元函数的导数及其应用",
+      "page": 97,
+      "domain": "数与代数",
+      "type": "application",
+      "tags": [
+        "数与代数",
+        "教材课时",
+        "导数",
+        "最优化问题"
+      ],
+      "description": "综合运用导数求函数在闭区间上的最值，解决用料最省、面积最大等简单最优化问题，掌握“设变量—建函数—求导数—比端点”的解题流程。",
+      "mastery_criteria": [
+        "能建立目标函数并用导数求其最值",
+        "能注意实际问题中自变量的取值范围"
+      ],
+      "standards": [
+        {
+          "id": "mat-2017:G.XY.01",
+          "confidence": "exact",
+          "quote": "能够利用导数解决简单的实际问题",
+          "sourceLine": 1346
+        },
+        {
+          "id": "mat-2017:G.XY.03",
+          "confidence": "exact",
+          "quote": "能够借助函数的导数，从定性和定量、整体和局部等多种角度研究函数的性质和应用",
+          "sourceLine": 1349
+        }
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "函数 f(x)=2x³−6x 在区间 [0,2] 上的最大值等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "0"
+            },
+            {
+              "label": "B",
+              "text": "−4"
+            },
+            {
+              "label": "C",
+              "text": "16"
+            },
+            {
+              "label": "D",
+              "text": "4"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "0"
+            },
+            {
+              "label": "B",
+              "text": "−4"
+            },
+            {
+              "label": "C",
+              "text": "16"
+            },
+            {
+              "label": "D",
+              "text": "4"
+            }
+          ],
+          "answer": "D",
+          "difficulty": "hard",
+          "explanation": "f′(x)=6x²−6，x=1 处取极小值 −4；比较端点 f(0)=0、f(2)=4，故最大值为 4。"
+        },
+        {
+          "type": "choice",
+          "prompt": "用长为 12 米的篱笆围成一个矩形菜园，当面积最大时，矩形的一边长为（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "4 米"
+            },
+            {
+              "label": "B",
+              "text": "3 米"
+            },
+            {
+              "label": "C",
+              "text": "2 米"
+            },
+            {
+              "label": "D",
+              "text": "6 米"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "4 米"
+            },
+            {
+              "label": "B",
+              "text": "3 米"
+            },
+            {
+              "label": "C",
+              "text": "2 米"
+            },
+            {
+              "label": "D",
+              "text": "6 米"
+            }
+          ],
+          "answer": "B",
+          "difficulty": "basic",
+          "explanation": "设一边为 x 米，另一边为 6−x 米，面积 S=x(6−x)，x=3 时最大，此时围成正方形。"
+        },
+        {
+          "type": "fill",
+          "prompt": "函数 y=x(8−x)（0<x<8）的最大值为 ____。",
+          "answer": "16",
+          "difficulty": "standard",
+          "explanation": "y=8x−x²，x=4 时取最大值 16，也可由二次函数顶点或求导 y′=8−2x=0 得到。"
+        },
+        {
+          "type": "numeric",
+          "prompt": "把长为 20 cm 的铁丝折成一个矩形，该矩形面积的最大值是多少平方厘米？",
+          "answer": 25,
+          "verify": "(20/4)**2",
+          "difficulty": "hard",
+          "explanation": "周长 20 cm 时相邻两边之和为 10，面积 x(10−x) 在 x=5 时取最大值 25 平方厘米。"
+        },
+        {
+          "type": "short-answer",
+          "prompt": "用导数解决实际最优化问题一般分哪几步？",
+          "answer": "先设自变量并写出目标函数及定义域，再求导找驻点，最后比较驻点与端点的函数值确定最值。",
+          "keypoints": [
+            "设自变量并写出目标函数和定义域",
+            "求导并解出导数为零的点",
+            "比较各点函数值确定最值"
+          ],
+          "difficulty": "standard",
+          "explanation": "最优化问题的关键是正确建立目标函数，并注意实际问题对自变量范围的限制，最值只在驻点或端点处取得。"
+        }
+      ]
+    }
+  ]
+}
