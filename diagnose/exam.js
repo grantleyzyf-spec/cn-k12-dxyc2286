@@ -143,17 +143,25 @@
   async function openPaper(examId) {
     const meta = S.index.exams[examId];
     if (!meta) return;
-    const r = await fetch('../data/math/' + meta.path.split('/').map(encodeURIComponent).join('/'), { cache: 'no-cache' });
-    if (!r.ok) { alert('试卷加载失败：' + r.status); return; }
+    const shown = $('exam-paper');
+    shown.style.display = 'block';
+    shown.innerHTML = '<div class="ex-tip">正在载入试卷…</div>';
+    $('exam-setup').style.display = 'none';
+    $('exam-report').style.display = 'none';
+    let r;
+    try {
+      r = await fetch('../data/math/' + meta.path.split('/').map(encodeURIComponent).join('/'), { cache: 'no-cache' });
+    } catch (e) {
+      shown.innerHTML = '<div class="ex-tip">试卷载入失败（网络）：' + esc(e.message) + '</div>';
+      return;
+    }
+    if (!r.ok) { shown.innerHTML = '<div class="ex-tip">试卷载入失败：HTTP ' + r.status + '</div>'; return; }
     S.paper = await r.json();
     S.meta = meta;
     S.answers = {}; S.judge = {}; S.startedAt = Date.now();
-    await loadTopics('math');
-    renderPaper();
+    renderPaper();               // 先用卷面把页面立起来，不等 1.8MB 的 topics.json
     startTimer(meta.duration);
-    $('exam-setup').style.display = 'none';
-    $('exam-paper').style.display = 'block';
-    $('exam-report').style.display = 'none';
+    loadTopics('math').catch(() => {});   // 报告/先修名称用，后台补
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
