@@ -9,6 +9,7 @@ import os
 from collections import OrderedDict
 
 REPO = os.path.expanduser("~/Desktop/cn-k12-dxyc2286")
+LINES = f"{REPO}/docs/math-std-lines.json"   # backfill_math_std_lines.py 产出：被截断/缺行号的条目订正
 TS = f"{REPO}/data/math/topics.json"
 OUT = f"{REPO}/docs/math-std-quotes.md"
 ORDER = ["一年级上册", "一年级下册", "二年级上册", "二年级下册", "三年级上册", "三年级下册",
@@ -22,6 +23,7 @@ def book_of(chapter):
 
 
 def main():
+    fix = json.load(open(LINES, encoding="utf-8")) if os.path.exists(LINES) else {}
     topics = json.load(open(TS, encoding="utf-8"))
     books = OrderedDict()
     for t in topics:
@@ -31,6 +33,10 @@ def main():
             sid, q, ln = s.get("id"), s.get("quote"), s.get("sourceLine")
             if not (sid and q):
                 continue
+            bf = fix.get(f"{sid}||{q}")
+            if bf:                      # 有回填则以回填为准（含整句订正）
+                q = bf.get("quote") or q
+                ln = bf["line"]
             key = (sid, q)
             if key not in bucket:
                 bucket[key] = ln

@@ -120,10 +120,19 @@ def main():
             E(f"{nm}: 缺 standards")
         for s in st:
             key = (s.get("id"), (s.get("quote") or "").strip())
-            if book and key not in pool.get(book, {}):
+            table = pool.get(book, {}) if book else {}
+            if key in table:
+                if table[key] != s.get("sourceLine"):
+                    E(f"{nm}: sourceLine 不符，应为 {table[key]}，实为 {s.get('sourceLine')}")
+                continue
+            # 允许「截断变体」：与表中同 id 的某条互为前缀（老数据里 quote 常在 30 字处被截断），
+            # 但行号必须与该条一致，防止拿 A 条的行号配 B 条的文字
+            cand = [(q, ln) for (i, q), ln in table.items()
+                    if i == s.get("id") and (q.startswith(key[1]) or key[1].startswith(q))]
+            if not cand:
                 E(f"{nm}: 课标引用不在本册引用表内 → {s.get('id')} / {s.get('quote')}")
-            elif book and pool[book][key] != s.get("sourceLine"):
-                E(f"{nm}: sourceLine 不符，应为 {pool[book][key]}，实为 {s.get('sourceLine')}")
+            elif not any(ln == s.get("sourceLine") for _q, ln in cand):
+                E(f"{nm}: sourceLine 不符（截断变体应取 {[ln for _q, ln in cand]}），实为 {s.get('sourceLine')}")
             if s.get("confidence") not in ("exact", "partial", "inferred"):
                 E(f"{nm}: confidence 只能用 exact/partial/inferred")
         qs = ke.get("questions") or []
