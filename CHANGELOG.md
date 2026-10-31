@@ -1,5 +1,13 @@
 # 变更日志
 
+## 0.4.3 · 整卷测试加「学科」选择（学科 → 教材版本 → 册次 → 试卷）
+
+- 索引改为多学科结构：`{subjects: {math: {count, editions, defaultEdition}}, exams: {…, subject, edition, …}}`，
+  扫描 `data/<学科>/exams/**`，从 `path` 中解析学科；新增学科/版本只需放卷 + 重跑 `scripts/build_exam_index.py`。
+- 整卷模式选卷区改为**四级联动**：学科 → 教材版本 → 册次 → 试卷；单选时对应下拉自动禁用并显示卷数。
+- 卷头同时标出学科与版本（badge 版本 + 副标题「数学 · 人教版教材 ｜ 单元测试卷 ｜ …」）。
+- 当前数据：数学 · 人教版 177 卷（单元 101 / 期中 38 / 期末 38），19 个册次。
+
 ## 0.4.2 · 整卷测试标注教材版本
 
 - 卷索引新增 `edition` / `editions` 字段（`scripts/build_exam_index.py`，默认 `人教版`，卷 JSON 写了 `edition` 则以卷为准）。
