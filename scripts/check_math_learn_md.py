@@ -36,7 +36,8 @@ BOOKS = {
  "选择性必修第一册": ("高中", "人教版（A版）"), "选择性必修第二册": ("高中", "人教版（A版）"),
  "选择性必修第三册": ("高中", "人教版（A版）"),
 }
-SEC = ["开场", "课本原文", "费曼翻译", "例题", "易错", "自查"]
+SEC = ["开场", "课本原文", "费曼翻译", "例题", "易错", "五步学习法", "自查"]
+STEP_KEYS = ["锻炼", "第一个知识点", "积微", "对标", "杠铃"]   # 五步学习法五步的关键词，缺一即不合格
 errs = []
 
 
@@ -111,8 +112,9 @@ def main():
         seen.add(tid)
         md = L.get("markdown") or ""
         n = len(hanzi(md))
-        if not (1000 <= n <= 2000):
-            E(f"{nm}: 汉字数 {n}，应在 1000–2000")
+        # 教学正文 1000–2000（用户口径）＋ 五步学习法 400–600 ⇒ 全篇 1200–2600
+        if not (1200 <= n <= 2600):
+            E(f"{nm}: 汉字数 {n}，应在 1200–2600（正文 1000–2000 ＋ 五步学习法 400–600）")
         if abs((L.get("words") or 0) - n) > 50:
             E(f"{nm}: words 字段写 {L.get('words')}，实际 {n}")
         for s in SEC:
@@ -141,6 +143,24 @@ def main():
             E(f"{nm}: 例题不足 2 道")
         if len(re.findall(r"- \[ \]", md)) < 3:
             E(f"{nm}: 自查题不足 3 道（用 - [ ] 列表）")
+        # 五步学习法：五步齐、每条 ≥25 汉字（防一句话凑数）
+        for k in STEP_KEYS:
+            if k not in md:
+                E(f"{nm}: 五步学习法缺「{k}」这一步")
+        sec = re.split(r"\n(?=## )", md)
+        sec = [x for x in sec if "五步学习法" in x.split("\n")[0]]
+        if not sec:
+            E(f"{nm}: 缺「五步学习法」小节")
+        else:
+            steps = [ln for ln in sec[0].split("\n") if re.match(r"^\d\.\s", ln.strip())]
+            if len(steps) < 5:
+                E(f"{nm}: 五步学习法只有 {len(steps)} 条（应 5 条）")
+            for st in steps:
+                if len(hanzi(st)) < 25:
+                    E(f"{nm}: 五步学习法某条不足 25 汉字 → {st[:18]}")
+            sw = len(hanzi(sec[0]))
+            if not (350 <= sw <= 700):
+                E(f"{nm}: 五步学习法节 {sw} 汉字，应在 350–700")
         if md.count("易错") < 1:
             E(f"{nm}: 缺易错点拨")
         if re.search(r"\$[^$]+\$|\\\\\(|\\\\\[", md):
