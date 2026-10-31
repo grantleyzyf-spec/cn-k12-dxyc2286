@@ -60,7 +60,7 @@ def add_para(doc, text="", size=10.5, bold=False, cn="宋体", align=None,
     if align == "center":
         p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     if text:
-        if "√" in text:
+        if "√" in text or "/" in text:
             # 根式：文本段写成普通 run，√ 之后的被开方数写成 OMML <m:rad>（Word 里是带横线的真根号）
             for i, seg in enumerate(re.split(r"\*\*(.+?)\*\*", text)):
                 if not seg:
@@ -72,8 +72,10 @@ def add_para(doc, text="", size=10.5, bold=False, cn="宋体", align=None,
                         set_font(r, cn=cn, size=size, bold=b)
                         if color:
                             r.font.color.rgb = RGBColor.from_string(color)
-                    else:
+                    elif kind == "rad":
                         p._p.append(parse_xml(math_typo.omml_rad(val)))
+                    else:
+                        p._p.append(parse_xml(math_typo.omml_frac(val[0], val[1])))
         else:
             # 行内 **bold** 拆成多个 run
             for i, seg in enumerate(re.split(r"\*\*(.+?)\*\*", text)):

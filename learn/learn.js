@@ -34,7 +34,17 @@
           return '<span class="rad"><span class="sq">√</span><span class="rd">' + esc(rad) + '</span></span>';
         });
     }
-    function inline(t) { return radify(esc(t)).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>'); }
+    // 分数：3/8、π/2、x/3、(a+b)/2 → 上下叠排 + 分数线（纯字母比 a/b、单位 km/h 不转）
+    function fracify(t) {
+      return t.replace(/(^|[^\d\/√])((?:\d+(?:\.\d+)?[²³]?|π|[a-zA-Z]|\([^()（）]{1,14}\)))\s*\/\s*((?:\d+(?:\.\d+)?[²³]?|π|[a-zA-Z]|\([^()（）]{1,14}\)))(?![\d\/])/g,
+        function (m, pre, a, b) {
+          var aNum = /^[\dπ]/.test(a), bNum = /^[\dπ]/.test(b);
+          if (!aNum && !bNum) return m;
+          if (a.length === 1 && b.length === 1 && /^[a-zA-Z]$/.test(a) && /^[a-zA-Z]$/.test(b)) return m;
+          return pre + '<span class="frac"><span class="num">' + a + '</span><span class="den">' + b + '</span></span>';
+        });
+    }
+    function inline(t) { return fracify(radify(esc(t))).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>'); }
     while (i < lines.length) {
       var ln = lines[i].replace(/\s+$/, '');
       if (!ln.trim()) { i++; continue; }
