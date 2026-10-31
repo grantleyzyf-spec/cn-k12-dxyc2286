@@ -2,7 +2,7 @@
 
 **17 个学科 · 2,190 个知识点 · 2,436 条先修边 · 4,260 道诊断题 · 1,324 条课标条目**，覆盖小学到高中。每个知识点带**可观察的掌握标准**、**节点级诊断题**、**课标条目与置信度**；先修边分 hard / soft 两档，可直接驱动前置诊断与学习路径推荐。
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgreen.svg)](https://creativecommons.org/licenses/by/4.0/deed.zh-hans)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgreen.svg)](https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans)
 [![知识点](https://img.shields.io/badge/%E7%9F%A5%E8%AF%86%E7%82%B9-2135-2ea44f)](data/topics.json)
 [![先修边](https://img.shields.io/badge/%E5%85%88%E4%BF%AE%E8%BE%B9-2347-1f6feb)](data/dependencies.json)
 [![课标引文](https://img.shields.io/badge/%E5%B8%A6%E5%8E%9F%E6%96%87%E5%BC%95%E6%96%87-2123%2F2135-orange)](data/cn-curriculum-standards.json)
@@ -269,14 +269,16 @@ python3 -m http.server 8000
 | `dagre.min.js` | dagre | 0.8.5 | MIT |
 | `cytoscape-dagre.js` | cytoscape-dagre | 2.5.0 | MIT |
 
-这些库保持各自许可证，不纳入本仓库的 CC BY 4.0。
+这些库保持各自许可证，不纳入本仓库的 CC BY-NC 4.0。
 
 ## 许可证 / License
 
-本仓库的知识图谱数据、题库与文档采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh-hans)（署名 4.0 国际），完整条款见 [LICENSE](LICENSE)。
+本仓库的知识图谱数据、题库与文档采用 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans)（署名—非商业性使用 4.0 国际），完整条款见 [LICENSE](LICENSE)。
 
-- ✅ 可用于个人学习、教学、研究，也可商用、修改、再分发，需**署名并注明来源**（本仓库链接）。
-- `assets/vendor/` 的第三方库保留各自 MIT 许可。
+- ✅ 可用于个人学习、教学、研究，可修改、再分发，需**署名并注明来源**（本仓库链接）。
+- ❌ **不可商用**：不得用于任何以营利为目的的用途——付费课程与培训、商业产品内置、付费分发、商业咨询交付等均需事先取得作者书面授权（联系见 [contact](contact/)）。
+- `assets/vendor/` 的第三方库保留各自 MIT 许可，不受本仓库 CC BY-NC 约束。
+- 本次许可变更自 2026-11-01 起生效；此前按 CC BY 4.0 已获得的副本不受影响。
 
 ## 参考
 

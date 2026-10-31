@@ -97,7 +97,7 @@
 
 ## 许可证
 
-通过提交 Pull Request，你同意将你的贡献以 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可证发布。
+通过提交 Pull Request，你同意将你的贡献以 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) 许可证发布。
 
 ## 联系方式
 
