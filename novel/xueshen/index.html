@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>学神：讲一道题，强一分 目录（共 100 章） - 连载</title>
+<meta name="description" content="学神：讲一道题，强一分 章节目录，作者 学霸轻松养成过程，全本免费连载，每日更新 5 章。">
+<link rel="canonical" href="https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/xueshen/">
+<link rel="stylesheet" href="../../assets/site.css">
+<style>
+  body { background: var(--bg); }
+  main.toc { max-width: 860px; margin: 0 auto; padding: 22px 18px 70px; }
+  .crumb { font-size: 13px; color: var(--ink-2); margin-bottom: 10px; }
+  .crumb a { color: var(--brand-ink); text-decoration: none; }
+  h1 { font-size: 22px; margin: 0 0 6px; }
+  .sub { font-size: 13.5px; color: var(--ink-2); margin-bottom: 16px; }
+  .act { display: flex; gap: 10px; margin-bottom: 18px; flex-wrap: wrap; }
+  .act a, .act button { padding: 10px 16px; border-radius: 8px; border: 1px solid var(--line);
+        background: var(--card); color: var(--brand-ink); text-decoration: none; font-size: 14px; cursor: pointer; font-family: inherit; }
+  .act a.primary { background: var(--brand); color: #fff; border-color: var(--brand); font-weight: 650; }
+  .group { margin: 22px 0 8px; font-size: 15px; font-weight: 700; color: var(--brand-ink); }
+  .list { list-style: none; margin: 0; padding: 0; }
+  .list li { border-bottom: 1px solid var(--line); }
+  .list a { display: flex; gap: 10px; padding: 11px 4px; text-decoration: none; color: var(--ink); font-size: 15px; }
+  .list a:hover { color: var(--brand-ink); }
+  .list .no { color: var(--ink-2); font-size: 13px; min-width: 62px; }
+  .list .read { margin-left: auto; font-size: 12px; color: #15803d; }
+  .plan { margin-top: 26px; padding: 14px 16px; border: 1px dashed var(--brand); border-radius: 10px;
+           font-size: 13.5px; line-height: 1.8; color: var(--ink-2); background: var(--card); }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../">
+    <span class="brand-copy"><span class="brand-name">学神：讲一道题，强一分</span><span class="brand-kicker">连载</span></span>
+  </a>
+  <nav class="site-nav">
+    <a class="nav-link active" href="../../novel/">连载</a>
+    <a class="nav-link" href="../../">学生入口</a>
+    <a class="nav-link" href="../../teacher/">教师入口</a>
+  </nav>
+</header>
+<main class="toc">
+  <div class="crumb"><a href="../../novel/">连载书架</a> › 目录</div>
+  <h1>学神：讲一道题，强一分</h1>
+  <div class="sub">作者：学霸轻松养成过程 ｜ 已发布 100 章 ｜ 全书预计 4000 章 ｜ 每日更新 5 章 ｜ 全本免费</div>
+  <div class="act">
+    <a class="primary" id="continue" href="ch0001/">开始阅读</a>
+    <a href="ch0100/">读最新一章</a>
+    <button id="jump-unread">跳到未读</button>
+  </div>
+  <div id="groups"></div>
+  <div class="plan">
+    <b>更新节奏：</b>当前已发布 100 章，之后每天 5 章。全书规划 4000 章，本页目录会随更新自动加长。<br>
+    <b>追更方式：</b>关注公众号「学霸轻松养成过程」，或在浏览器收藏本页（阅读进度存在本机，换设备不同步）。
+  </div>
+</main>
+<script>
+(function () {
+  if (location.protocol === 'file:') return;
+  fetch('chapters.json').then(function (r) { return r.json(); }).then(function (d) {
+    var st = {};
+    try { st = JSON.parse(localStorage.getItem('k12novel.v1') || '{}'); } catch (e) {}
+    var groups = {}, order = [];
+    d.chapters.forEach(function (c) {
+      var g = Math.floor((c.n - 1) / 50) + 1;
+      if (!groups[g]) { groups[g] = []; order.push(g); }
+      groups[g].push(c);
+    });
+    var html = order.map(function (g) {
+      var items = groups[g].map(function (c) {
+        var read = st['read_' + c.n] ? '<span class="read">已读</span>' : '';
+        return '<li><a href="ch' + String(c.n).padStart(4, '0') + '/"><span class="no">第' + c.n + '章</span>' +
+               '<span>' + c.title + '</span>' + read + '</a></li>';
+      }).join('');
+      var a = groups[g][0].n, b = groups[g][groups[g].length - 1].n;
+      return '<div class="group">第 ' + a + '–' + b + ' 章</div><ul class="list">' + items + '</ul>';
+    }).join('');
+    document.getElementById('groups').innerHTML = html;
+    if (st.last) {
+      var btn = document.getElementById('continue');
+      btn.textContent = '继续阅读（第 ' + st.last + ' 章）';
+      btn.setAttribute('href', 'ch' + String(st.last).padStart(4, '0') + '/');
+    }
+    document.getElementById('jump-unread').onclick = function () {
+      var target = d.chapters.find(function (c) { return !st['read_' + c.n]; }) || d.chapters[0];
+      location.href = 'ch' + String(target.n).padStart(4, '0') + '/';
+    };
+  }).catch(function (e) {
+    document.getElementById('groups').innerHTML = '<p style="color:#b91c1c">目录载入失败：' + e.message + '</p>';
+  });
+})();
+</script>
+</body>
+</html>
