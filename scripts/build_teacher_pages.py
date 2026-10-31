@@ -349,15 +349,14 @@ PAGE_TMPL = """<!DOCTYPE html>
   {teach_block}
 
   <div class="cta">
-    <h2>获取完整 Word 原件</h2>
-    <div class="sub">本页只展示概览与要点；完整教学设计（含学历案、板书、作业与评价量表）按下面方式获取。</div>
+    <h2>获得完整word原件</h2>
+    <div class="sub">本页只展示概览与要点；完整教学设计（含学历案、板书、作业与评价量表）请联系作者获取。</div>
     <div class="row">
       <img src="{root}assets/wechat-tfc-qr.png" alt="公众号 天方乘风 二维码">
       <div class="steps">
         1. 微信扫码关注公众号 <b>天方乘风</b><br>
-        2. 在公众号对话框回复关键词<br>
-        <span class="kw"><span id="kw">{keyword}</span><button class="copy" onclick="navigator.clipboard.writeText('{keyword}');this.textContent='已复制'">复制关键词</button></span><br>
-        3. 自动收到本单元的 Word 文件
+        2. 联系作者，获得完整word原件（把本页关键词一并发给作者，便于定位文件）<br>
+        <span class="kw">本页关键词：<span id="kw">{keyword}</span><button class="copy" onclick="navigator.clipboard.writeText('{keyword}');this.textContent='已复制'">复制关键词</button></span>
       </div>
     </div>
   </div>
