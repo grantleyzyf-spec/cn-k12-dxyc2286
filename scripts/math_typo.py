@@ -22,6 +22,9 @@ _NUM = r"(?:\d+(?:\.\d+)?[²³]?|π|[a-zA-Z]|\([^()（）]{1,14}\)|[²³])"
 # 分数：两侧都不能是中文（排除「吨/小时」），且不被数字或斜杠包住（排除日期）
 FRAC_RE = re.compile(rf"(?<![\d/√])({_NUM})\s*/\s*({_NUM})(?![\d/])")
 
+# 向量：中文「向量」后跟 1–4 个拉丁字母/数字（向量 OA、向量AB、向量a），箭头加在字母上方
+VEC_RE = re.compile(r"(向量)\s*([A-Za-z][A-Za-z0-9]{0,3})")
+
 M_NS = 'xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"'
 
 
@@ -42,9 +45,13 @@ def _frac_ok(a, b):
 
 
 def segments(text):
-    """切成 [(kind, value)]；kind ∈ {'text','rad','frac'}，frac 的 value 是 (分子, 分母)。"""
+    """切成 [(kind, value)]；kind ∈ {'text','rad','frac','vec'}，frac 的 value 是 (分子, 分母)。"""
     text = text or ""
     toks = []
+    for m in VEC_RE.finditer(text):
+        # 只把字母部分包成向量，前面的「向量」二字原样保留
+        toks.append(("text", m.start(), m.start(2), m.group(1)))
+        toks.append(("vec", m.start(2), m.end(2), m.group(2)))
     for m in RAD_RE.finditer(text):
         toks.append(("rad", m.start(), m.end(), (m.group(1) or m.group(2) or "").strip()))
     for m in FRAC_RE.finditer(text):
@@ -87,6 +94,17 @@ def omml_frac(num, den):
     )
 
 
+def omml_vec(letters):
+    """OMML 向量（字母上加右箭头，即 \\overrightarrow{AB}）。"""
+    from xml.sax.saxutils import escape
+
+    return (
+        f"<m:oMath {M_NS}><m:acc><m:accPr><m:chr m:val=\"⃗\"/></m:accPr>"
+        f"<m:e><m:r><m:t xml:space=\"preserve\">{escape(letters)}</m:t></m:r></m:e>"
+        f"</m:acc></m:oMath>"
+    )
+
+
 def html_inline(text, esc):
     """把文本转成 HTML 片段；esc 是调用方提供的转义函数。"""
     buf = []
@@ -98,6 +116,8 @@ def html_inline(text, esc):
                 '<span class="rad"><span class="sq">√</span>'
                 f'<span class="rd">{esc(val)}</span></span>'
             )
+        elif kind == "vec":
+            buf.append(f'<span class="vec">{esc(val)}</span>')
         else:
             num, den = val
             buf.append(

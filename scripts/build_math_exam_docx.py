@@ -62,7 +62,7 @@ def para(doc, text="", size=10.5, bold=False, align=None, cn="宋体",
     if keep_next:
         pf.keep_with_next = True
     if text:
-        if "√" in text or "/" in text:
+        if "√" in text or "/" in text or "向量" in text:
             # 根式写成 OMML，打印卷上就是带横线的规范根号（否则 √ 与被开方数只是并排，易误读）
             for kind, val in math_typo.segments(text):
                 if kind == "text":
@@ -70,6 +70,8 @@ def para(doc, text="", size=10.5, bold=False, align=None, cn="宋体",
                     set_font(r, cn=cn, size=size, bold=bold)
                 elif kind == "rad":
                     p._p.append(parse_xml(math_typo.omml_rad(val)))
+                elif kind == "vec":
+                    p._p.append(parse_xml(math_typo.omml_vec(val)))
                 else:
                     p._p.append(parse_xml(math_typo.omml_frac(val[0], val[1])))
         else:

@@ -45,6 +45,8 @@
       let html = node.nodeValue;
       html = html.replace(RAD_RE, (m, g1, g2) => '<span class="rad"><span class="sq">√</span><span class="rd">'
         + (g1 || g2 || '').trim() + '</span></span>');
+      html = html.replace(/(向量)\s*([A-Za-z][A-Za-z0-9]{0,3})/g,
+        (m, cn, lt) => cn + '<span class="vec">' + lt + '</span>');
       html = html.replace(FRAC_RE, (m, pre, a, b) => {
         const aNum = /^[\dπ]/.test(a), bNum = /^[\dπ]/.test(b);
         if (!aNum && !bNum) return m;

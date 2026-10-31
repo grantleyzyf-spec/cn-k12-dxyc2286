@@ -108,3 +108,12 @@ main.learn { max-width: 1180px; margin: 0 auto; padding: 24px 18px 72px; }
   position: relative; top: -0.06em; }
 .frac .num { display: block; border-bottom: 1.2px solid currentColor; padding: 0 .16em; }
 .frac .den { display: block; padding: 0 .16em; }
+
+/* 向量：字母上方一条右箭头（用 overline 紧贴字母，再用三角头收尾） */
+.vec { position: relative; text-decoration: overline; text-decoration-thickness: 1px;
+  text-underline-offset: 2px; padding-right: .06em; }
+.vec::after {
+  content: ""; position: absolute; right: -.2em; top: .02em;
+  border-left: .34em solid currentColor;
+  border-top: .13em solid transparent; border-bottom: .13em solid transparent;
+}

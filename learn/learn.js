@@ -44,7 +44,12 @@
           return pre + '<span class="frac"><span class="num">' + a + '</span><span class="den">' + b + '</span></span>';
         });
     }
-    function inline(t) { return fracify(radify(esc(t))).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>'); }
+    // 向量：向量OA / 向量AB / 向量a → 「向量」二字保留，字母上方加右箭头
+    function vecify(t) {
+      return t.replace(/(向量)\s*([A-Za-z][A-Za-z0-9]{0,3})/g,
+        function (m, cn, lt) { return cn + '<span class="vec">' + lt + '</span>'; });
+    }
+    function inline(t) { return vecify(fracify(radify(esc(t)))).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>'); }
     while (i < lines.length) {
       var ln = lines[i].replace(/\s+$/, '');
       if (!ln.trim()) { i++; continue; }
