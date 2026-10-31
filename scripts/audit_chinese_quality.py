@@ -23,34 +23,84 @@ TP = f"{REPO}/data/chinese/topics.json"
 QP = f"{REPO}/data/chinese/questions.json"
 OUT = f"{REPO}/docs/chinese-quality-audit.md"
 WRITE = "--write" in sys.argv
-BOOK_DIR = os.path.expanduser("~/Desktop/中小学教材/中小学教材/语文/小学")
+BOOK_DIRS = [
+    os.path.expanduser("~/Desktop/中小学教材/中小学教材/语文/小学"),
+    os.path.expanduser("~/Desktop/中小学教材/中小学教材/语文/初中"),
+    os.path.expanduser("~/Desktop/中小学教材/中小学教材/语文/高中"),
+]
 PYL = set("āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜüńň")
 CN = {1: "一", 2: "二", 3: "三", 4: "四", 5: "五", 6: "六"}
 
 
 def clean(s):
-    return "".join(ch for ch in s if not ch.isspace() and not (ch.isascii() and ch.isalpha()) and ch not in PYL)
+    """去空白、ASCII 字母、ASCII 数字（教材里的脚注序号/页码）、带调元音。
+    数字一并去掉：回查时两侧同规则处理，不影响命中；不去则会因「见往事耳4。」这类脚注序号漏判。"""
+    return "".join(ch for ch in s
+                   if not ch.isspace()
+                   and not (ch.isascii() and (ch.isalpha() or ch.isdigit()))
+                   and ch not in PYL)
 
 
 def norm(s):
     return re.sub(r"[\s　，。、；：！？（）()“”\"'‘’《》…—－\-·]", "", s or "")
 
 
+def qnorm(s):
+    """引文回查专用规范式：只保留汉字（去标点/空白/数字/拉丁字母/全角符号/PDF 伪字符）。
+    教材同一句的标点常有全角半角、引号式样、行末断行差异，且 PDF 抽取会混入
+    「@」「4」这类脚注伪字符；只留汉字后仍能抓住真实用字差异
+    （「它们/他们」「儿子/共产党员」「难翻/难走」都会照旧被抓出来）。"""
+    return "".join(ch for ch in (s or "") if "\u4e00" <= ch <= "\u9fff")
+
+
+def _page_body(text):
+    """单页正文：滤掉页眉页脚与页码行，再去空白/拼音/ASCII 字母。"""
+    keep = []
+    for ln in text.split("\n"):
+        s = ln.strip()
+        if not s or s.isdigit():
+            continue
+        if "仅供个人学习使用" in s:
+            continue
+        if re.search(r"第\s*\d+\s*页\s*/\s*共\s*\d+\s*页", s):
+            continue
+        if s.startswith("===="):
+            continue
+        if re.match(r"^(义务教育教科书|普通高中教科书)", s):
+            continue
+        keep.append(s)
+    # 先去拼音夹注（clean），再去标点（qnorm）——两步缺一：只用 qnorm 会把拼音当正文残留
+    return qnorm(clean("".join(keep)))
+
+
 def load_book_texts():
-    """册名 → 该册全书清洗后的正文（用于原句回查）"""
+    """册名 → 该册逐页清洗后的正文列表（用于原句回查，支持跨页命中）。"""
     import fitz
     books = {}
-    for f in glob.glob(os.path.join(BOOK_DIR, "*.pdf")):
-        m = re.search(r"语文_([一二三四五六])年级_([上下])册", os.path.basename(f))
-        if not m:
-            continue
-        key = f"{m.group(1)}年级{m.group(2)}册"
-        try:
-            d = fitz.open(f)
-            books[key] = clean("".join(d[i].get_text() for i in range(len(d))))
-        except Exception as e:
-            print("读 PDF 失败", key, e)
+    for d0 in BOOK_DIRS:
+        for f in glob.glob(os.path.join(d0, "*.pdf")):
+            base = os.path.basename(f)
+            m = re.search(r"语文_([一二三四五六七八九])年级_([上下])册", base)
+            if m:
+                key = f"{m.group(1)}年级{m.group(2)}册"
+            else:
+                m2 = re.search(r"语文_高[一二三]年级_((?:选择性)?必修[上中下]册)", base)
+                if not m2:
+                    continue
+                key = m2.group(1)
+            try:
+                d = fitz.open(f)
+                books[key] = [_page_body(d[i].get_text()) for i in range(len(d))]
+            except Exception as e:
+                print("读 PDF 失败", key, e)
     return books
+
+
+def in_book(pages, frag):
+    """片段命中判据：命中任一页，或命中相邻两页拼接（跨页句）。"""
+    if any(frag in p for p in pages):
+        return True
+    return any(frag in pages[i] + pages[i + 1] for i in range(len(pages) - 1))
 
 
 def bigrams(s):
@@ -179,8 +229,10 @@ def main():
         for q in by_topic.get(t["id"], []):
             for frag in re.findall(r"「([^」]{8,})」", q.get("prompt") or ""):
                 frag2 = frag.replace("____", q.get("answer") or "")
+                if not re.search(r"[\u4e00-\u9fff]", frag2):
+                    continue      # 拼音/符号类引文（如「zh ch sh r」）不属于课文原句回查
                 checked += 1
-                if clean(frag2) not in body:
+                if not in_book(body, qnorm(frag2)):
                     issues["F1 题干引用未在教材命中"].append((q["id"], key, frag2[:26]))
 
     # 报告
@@ -195,10 +247,11 @@ def main():
         v = issues[k]
         total += len(v)
         lines.append(f"## {k}：{len(v)} 条")
-        for item in v[:12]:
+        cap = 200 if k.startswith("F1") else 12
+        for item in v[:cap]:
             lines.append(f"- {item}")
-        if len(v) > 12:
-            lines.append(f"- …（共 {len(v)} 条，省略 {len(v) - 12} 条）")
+        if len(v) > cap:
+            lines.append(f"- …（共 {len(v)} 条，省略 {len(v) - cap} 条）")
         lines.append("")
     lines.insert(4, f"- **问题合计 {total} 条**")
     report = "\n".join(lines)
