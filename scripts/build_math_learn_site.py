@@ -37,6 +37,8 @@ def main():
     topics = {t["id"]: t for t in json.load(open(f"{D}/topics.json", encoding="utf-8"))}
     books = []
     for f in sorted(glob.glob(f"{D}/learn/*.json")):
+        if os.path.basename(f).startswith("_"):    # _ocr_waivers.json 等台账不是册数据
+            continue
         data = json.load(open(f, encoding="utf-8"))
         book = data["book"]
         stage, grade = stage_of(book)
