@@ -130,7 +130,7 @@
         {
           "type": "numeric",
           "prompt": "数列 1，3，5，7，9，11，13 中共有多少项？只填数字。",
-          "answer": 7,
+          "answer": "7",
           "verify": "len([1,3,5,7,9,11,13])",
           "difficulty": "standard",
           "explanation": "把数列逐项数出来共 7 个数，即从 1 到 13 的奇数一共 7 个，所以这个数列的项数是 7。"
@@ -278,7 +278,7 @@
         {
           "type": "numeric",
           "prompt": "已知数列 {a_n} 的通项公式 a_n=n²−n，则 a_5 的值是多少？",
-          "answer": 20,
+          "answer": "20",
           "verify": "5**2-5",
           "difficulty": "standard",
           "explanation": "把 n=5 代入通项公式，a_5=5²−5=25−5=20，代入时注意先算平方再相减。"
@@ -426,7 +426,7 @@
         {
           "type": "numeric",
           "prompt": "数列 {a_n} 满足 a_1=1，a_n=a_(n−1)+n（n≥2），求 a_4 的值。",
-          "answer": 10,
+          "answer": "10",
           "verify": "1+2+3+4",
           "difficulty": "standard",
           "explanation": "逐项推算：a_2=1+2=3，a_3=3+3=6，a_4=6+4=10，正好等于从 1 加到 4 的和。"
@@ -575,7 +575,7 @@
         {
           "type": "numeric",
           "prompt": "数列 {a_n} 的前 n 项和 S_n=n²+1，求 a_3 的值。",
-          "answer": 5,
+          "answer": "5",
           "verify": "(9+1)-(4+1)",
           "difficulty": "standard",
           "explanation": "n≥2 时 a_n=S_n−S_(n−1)，故 a_3=S_3−S_2=(9+1)−(4+1)=5。注意 a_1=S_1=2，n=1 需单独看。",
@@ -724,7 +724,7 @@
         {
           "type": "numeric",
           "prompt": "把 9 到 81 之间所有 9 的正整数倍按从小到大的顺序排成数列，共多少项？",
-          "answer": 9,
+          "answer": "9",
           "verify": "len([x for x in range(1,82) if x%9==0])",
           "difficulty": "basic",
           "explanation": "这些数依次是 9，18，27，…，81，相邻两项相差 9，项数等于 81÷9=9。"
@@ -872,7 +872,7 @@
         {
           "type": "numeric",
           "prompt": "等差数列 {a_n} 中 a_1=−3，公差 d=4，求 a_7 的值。",
-          "answer": 21,
+          "answer": "21",
           "verify": "-3+6*4",
           "difficulty": "standard",
           "explanation": "a_7=a_1+6d=−3+6×4=−3+24=21，代公式时注意首项为负数。"
@@ -1020,7 +1020,7 @@
         {
           "type": "numeric",
           "prompt": "等差数列 2，5，8，… 的前 20 项和是多少？",
-          "answer": 610,
+          "answer": "610",
           "verify": "20*(2+(2+19*3))/2",
           "difficulty": "hard",
           "explanation": "首项 2、公差 3，a_20=2+19×3=59，S_20=20(2+59)/2=610，也可用 na_1+n(n−1)d/2 复算。"
@@ -1168,7 +1168,7 @@
         {
           "type": "numeric",
           "prompt": "数列 2，4，8，16，32，64，… 中，64 是它的第几项？只填数字。",
-          "answer": 6,
+          "answer": "6",
           "verify": "len([2,4,8,16,32,64])",
           "difficulty": "basic",
           "explanation": "从第 1 项起依次是 2、4、8、16、32、64，数一数可知 64 排在第 6 项。"
@@ -1316,7 +1316,7 @@
         {
           "type": "numeric",
           "prompt": "等比数列 {a_n} 中 a_1=3，公比 q=−2，求 a_5 的值。",
-          "answer": 48,
+          "answer": "48",
           "verify": "3*(-2)**4",
           "difficulty": "standard",
           "explanation": "a_5=a_1q^4=3×(−2)^4=3×16=48，负公比的偶次幂为正。"
@@ -1465,7 +1465,7 @@
         {
           "type": "numeric",
           "prompt": "等比数列 {a_n} 中 a_1=2，公比 q=3，求前 4 项和 S_4。",
-          "answer": 80,
+          "answer": "80",
           "verify": "2*(3**4-1)/(3-1)",
           "difficulty": "hard",
           "explanation": "由 q≠1 的前 n 项和公式 S_n=a_1(1−q^n)/(1−q)，代入 a_1=2、q=3、n=4 得 S_4=2×(1−81)/(1−3)=80。",
@@ -1614,7 +1614,7 @@
         {
           "type": "numeric",
           "prompt": "用数学归纳法证明某等式时，从 n=k 到 n=k+1 左边增加了 2k+1，当 k=3 时增加的量是多少？",
-          "answer": 7,
+          "answer": "7",
           "verify": "2*3+1",
           "difficulty": "basic",
           "explanation": "把 k=3 代入 2k+1，得 2×3+1=7，说明第三步左边比第二步多出 7 这一项。"
@@ -1762,7 +1762,7 @@
         {
           "type": "numeric",
           "prompt": "某物体做直线运动，位移 s(t)=t²（单位：米），求 t 从 1 秒到 3 秒的平均速度（米/秒）。",
-          "answer": 4,
+          "answer": "4",
           "verify": "(3**2-1**2)/(3-1)",
           "difficulty": "standard",
           "explanation": "平均速度等于位移增量除以时间增量，(9−1)÷(3−1)=4 米/秒。"
@@ -1910,7 +1910,7 @@
         {
           "type": "numeric",
           "prompt": "物体位移 s(t)=t²+1（单位：米），求 t 从 1 秒到 1.1 秒的平均速度（米/秒），结果保留一位小数。",
-          "answer": 2.1,
+          "answer": "2.1",
           "verify": "(1.1**2+1-(1**2+1))/0.1",
           "difficulty": "standard",
           "explanation": "s(1.1)=1.21+1=2.21，s(1)=2，平均速度=(2.21−2)÷0.1=2.1 米/秒，常数 1 在作差时被消去。"
@@ -2058,7 +2058,7 @@
         {
           "type": "numeric",
           "prompt": "物体位移 s(t)=5t²（单位：米），求 t=2 秒时的瞬时速度（米/秒）。",
-          "answer": 20,
+          "answer": "20",
           "verify": "10*2",
           "difficulty": "standard",
           "explanation": "由 (s(2+Δt)−s(2))÷Δt=20+5Δt，令 Δt 趋近于 0 得瞬时速度 20 米/秒。"
@@ -2206,7 +2206,7 @@
         {
           "type": "numeric",
           "prompt": "已知 f(x)=x³+x，求 f′(1) 的值。",
-          "answer": 4,
+          "answer": "4",
           "verify": "3*1**2+1",
           "difficulty": "standard",
           "explanation": "f′(x)=3x²+1，代入 x=1 得 3+1=4，说明求导后仍可继续代值。"
@@ -2355,7 +2355,7 @@
         {
           "type": "numeric",
           "prompt": "已知 f(x)=x³，则曲线 y=f(x) 在点 (1,1) 处切线的斜率是多少？",
-          "answer": 3,
+          "answer": "3",
           "verify": "3*1**2",
           "difficulty": "standard",
           "explanation": "f′(x)=3x²，切线斜率就是 f′(1)=3×1²=3，故曲线在点 (1,1) 处的切线斜率为 3。",
@@ -2504,7 +2504,7 @@
         {
           "type": "numeric",
           "prompt": "已知 f(x)=x²+2x，求 f′(1) 的值。",
-          "answer": 4,
+          "answer": "4",
           "verify": "2*1+2",
           "difficulty": "standard",
           "explanation": "先求导得 f′(x)=2x+2，代入 x=1 得 4。"
@@ -2652,7 +2652,7 @@
         {
           "type": "numeric",
           "prompt": "已知 f(x)=(x+1)³，求 f′(1) 的值。",
-          "answer": 12,
+          "answer": "12",
           "verify": "3*(1+1)**2",
           "difficulty": "hard",
           "explanation": "复合求导得 f′(x)=3(x+1)²，代入 x=1 得 3×4=12。"
@@ -2800,7 +2800,7 @@
         {
           "type": "numeric",
           "prompt": "函数 f(x)=x²−4x 的单调递减区间的右端点是多少？",
-          "answer": 2,
+          "answer": "2",
           "verify": "4/2",
           "difficulty": "standard",
           "explanation": "f′(x)=2x−4，令 f′(x)<0 得 x<2，递减区间为 (−∞,2)，右端点为 2。"
@@ -2948,7 +2948,7 @@
         {
           "type": "numeric",
           "prompt": "函数 f(x)=ln x−x 在 x=1 处的导数是多少？",
-          "answer": 0,
+          "answer": "0",
           "verify": "1/1-1",
           "difficulty": "standard",
           "explanation": "f′(x)=1/x−1，代入 x=1 得 0，说明 x=1 是导数由正变负的分界点。"
@@ -3096,7 +3096,7 @@
         {
           "type": "numeric",
           "prompt": "函数 f(x)=x³−3x 的极小值是多少？",
-          "answer": -2,
+          "answer": "-2",
           "verify": "1**3-3*1",
           "difficulty": "hard",
           "explanation": "f′(x)=3x²−3，x=1 时导数为 0 且左负右正，f(1)=1−3=−2 为极小值。"
@@ -3244,7 +3244,7 @@
         {
           "type": "numeric",
           "prompt": "把长为 20 cm 的铁丝折成一个矩形，该矩形面积的最大值是多少平方厘米？",
-          "answer": 25,
+          "answer": "25",
           "verify": "(20/4)**2",
           "difficulty": "hard",
           "explanation": "周长 20 cm 时相邻两边之和为 10，面积 x(10−x) 在 x=5 时取最大值 25 平方厘米。"

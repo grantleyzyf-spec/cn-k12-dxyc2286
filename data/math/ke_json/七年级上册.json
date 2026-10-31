@@ -125,7 +125,7 @@
           "type": "numeric",
           "difficulty": "basic",
           "prompt": "仓库把运进货物80t记作+80t，把运出货物35t记作-35t。先运进80t再运出35t后，库存的净变化量是多少吨？",
-          "answer": 45,
+          "answer": "45",
           "verify": "80-35",
           "explanation": "运进记为正、运出记为负，净变化量为80+(-35)=45，即库存净增加45t，符号表示方向，绝对值表示数量。"
         },
@@ -280,7 +280,7 @@
           "type": "numeric",
           "difficulty": "basic",
           "prompt": "计算|-7|-|-2|的值，结果是多少？",
-          "answer": 5,
+          "answer": "5",
           "verify": "7-2",
           "explanation": "先分别求绝对值：|-7|=7，|-2|=2，再作减法得7-2=5，注意结果是正数，与减数的符号无关。"
         },
@@ -429,7 +429,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "计算(-12)+7-(-5)的值，结果是多少？",
-          "answer": 0,
+          "answer": "0",
           "verify": "(-12)+7+5",
           "explanation": "先把减法化为加法：(-12)+7-(-5)=(-12)+7+5；(-12)+7=-5，再算-5+5=0，互为相反数的两个数相加得0。"
         },
@@ -578,7 +578,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "计算(-3)×4÷(-6)的值，结果是多少？",
-          "answer": 2,
+          "answer": "2",
           "verify": "(-3)*4/(-6)",
           "explanation": "同级运算从左到右：先算(-3)×4=-12，再算(-12)÷(-6)=2，同号相除得正，商的绝对值为12÷6=2。"
         },
@@ -733,7 +733,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "计算-3²+(-2)³的值，结果是多少？",
-          "answer": -17,
+          "answer": "-17",
           "verify": "-3**2+(-2)**3",
           "explanation": "先算乘方：-3²表示3²的相反数，等于-9；(-2)³=-8。再相加得-9+(-8)=-17，注意-3²与(-3)²不同。"
         },
@@ -875,7 +875,7 @@
           "type": "numeric",
           "difficulty": "basic",
           "prompt": "小明每天跑步a米，一周按7天计算共跑7a米。当a=800时，他一共跑了多少米？",
-          "answer": 5600,
+          "answer": "5600",
           "verify": "7*800",
           "explanation": "把字母a换成800代入代数式7a，得7×800=5600，即一周共跑5600米，这就是用字母表示一般关系后代入求值的用法。"
         },
@@ -1017,7 +1017,7 @@
           "type": "numeric",
           "difficulty": "basic",
           "prompt": "当m=5，n=2时，代数式3m-2n的值是多少？",
-          "answer": 11,
+          "answer": "11",
           "verify": "3*5-2*2",
           "explanation": "分别把m=5、n=2代入，得3×5-2×2=15-4=11；当代数式中含多个字母时，要按字母逐一对应代入。"
         },
@@ -1160,7 +1160,7 @@
           "type": "numeric",
           "difficulty": "basic",
           "prompt": "若单项式2x^m·y是关于x，y的三次单项式，那么m的值是多少？",
-          "answer": 2,
+          "answer": "2",
           "verify": "3-1",
           "explanation": "三次单项式要求所有字母的指数之和为3，y的指数是1，所以m+1=3，解得m=2，此时该单项式即2x²y。"
         },
@@ -1303,7 +1303,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "先化简(3x²-x)-(2x²-3x)，再求当x=2时这个式子的值，结果是多少？",
-          "answer": 8,
+          "answer": "8",
           "verify": "2**2+2*2",
           "explanation": "去括号得3x²-x-2x²+3x，合并同类项得x²+2x；当x=2时，x²+2x=4+4=8。先化简再求值比直接代入更简便。"
         },
@@ -1452,7 +1452,7 @@
           "type": "numeric",
           "difficulty": "basic",
           "prompt": "利用等式的基本性质解方程2x+5=13，得到的解是多少？",
-          "answer": 4,
+          "answer": "4",
           "verify": "(13-5)/2",
           "explanation": "等式两边都减5，得2x=8；两边都除以2，得x=4。把x=4代回检验：2×4+5=13，左右两边相等，所以解是4。"
         },
@@ -1595,7 +1595,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "解方程(x-1)/2=(x+2)/3，得到的解是多少？",
-          "answer": 7,
+          "answer": "7",
           "verify": "3+4",
           "explanation": "去分母，两边都乘6得3(x-1)=2(x+2)；去括号得3x-3=2x+4；移项合并得x=7。检验：(7-1)/2=3，(7+2)/3=3，相等。"
         },
@@ -1744,7 +1744,7 @@
           "type": "numeric",
           "difficulty": "hard",
           "prompt": "某车间有22名工人，每人每天可生产1200个螺栓或2000个螺母，1个螺栓需配2个螺母。为使每天生产的螺栓和螺母刚好配套，应安排多少人生产螺栓？",
-          "answer": 10,
+          "answer": "10",
           "verify": "2000*22/(2*1200+2000)",
           "explanation": "设x人生产螺栓，则(22-x)人生产螺母，螺母数是螺栓数的2倍，列方程2000(22-x)=2×1200x，解得44000=4400x，x=10，即10人生产螺栓、12人生产螺母。"
         },
@@ -1887,7 +1887,7 @@
           "type": "numeric",
           "difficulty": "basic",
           "prompt": "一个正方体（立方体）一共有多少条棱？",
-          "answer": 12,
+          "answer": "12",
           "verify": "3*4",
           "explanation": "正方体有上下两个正方形底面，每个底面4条棱，再加4条侧棱，共4+4+4=12条棱，8个顶点、6个面。"
         },
@@ -2036,7 +2036,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "点C是线段AB的中点，AB=14cm；点D是线段AC的中点，那么线段AD的长是多少厘米？",
-          "answer": 3.5,
+          "answer": "3.5",
           "verify": "14/2/2",
           "explanation": "C是AB的中点，所以AC=14÷2=7cm；D是AC的中点，所以AD=7÷2=3.5cm。连续用两次中点，线段长度依次减半。"
         },
@@ -2191,7 +2191,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "一个角的补角是它本身的3倍，这个角是多少度？",
-          "answer": 45,
+          "answer": "45",
           "verify": "180/4",
           "explanation": "设这个角为x度，则它的补角是(180-x)度，由题意180-x=3x，解得4x=180，x=45；检验：45°的补角是135°，正好是45°的3倍。"
         },

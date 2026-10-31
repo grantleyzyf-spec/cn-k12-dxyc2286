@@ -101,7 +101,7 @@
           "type": "numeric",
           "prompt": "四个小朋友分别站在桌子的前面、后面、左面、右面观察同一只玩具熊，一共有几个不同的观察方向？",
           "difficulty": "basic",
-          "answer": 4,
+          "answer": "4",
           "verify": "len(['前面','后面','左面','右面'])",
           "explanation": "前面、后面、左面、右面各站一人，四个方向互不相同，所以一共是4个观察方向。"
         },
@@ -219,7 +219,7 @@
           "type": "numeric",
           "prompt": "一个正方体有上下、前后、左右三组相对的面，从一个方向观察，最多能同时看到几个面？",
           "difficulty": "standard",
-          "answer": 3,
+          "answer": "3",
           "verify": "len(['上面','前面','右面'])",
           "explanation": "观察正方体时最多看到上面、前面、右面各一个面，三个面共用一个顶点，再多就看不到了。"
         },
@@ -343,7 +343,7 @@
           "type": "numeric",
           "prompt": "正方体纸盒的展开图有6个面，如果把其中一个面剪下来单独放，剩下的展开图还有几个面？",
           "difficulty": "basic",
-          "answer": 5,
+          "answer": "5",
           "verify": "6-1",
           "explanation": "展开图原来有6个面，去掉单独放的一个面，剩下的就是5个面。"
         },
@@ -461,7 +461,7 @@
           "type": "numeric",
           "prompt": "从前面、后面、左面、右面、上面、下面六个方向观察一个长方体，一共有几个不同的观察方向？",
           "difficulty": "basic",
-          "answer": 6,
+          "answer": "6",
           "verify": "len(['前面','后面','左面','右面','上面','下面'])",
           "explanation": "长方体有前后左右上下六个面，对应六个观察方向，每个方向看到的面都不一样。"
         },
@@ -585,7 +585,7 @@
           "type": "numeric",
           "prompt": "按照先乘除后加减的顺序，2×8÷4 的结果是多少？",
           "difficulty": "basic",
-          "answer": 4,
+          "answer": "4",
           "verify": "2*8/4",
           "explanation": "同级运算从左往右算，2乘8得16，16除以4得4。"
         },
@@ -709,7 +709,7 @@
           "type": "numeric",
           "prompt": "按先乘除后加减的顺序计算，87−13+56 的结果是多少？",
           "difficulty": "basic",
-          "answer": 130,
+          "answer": "130",
           "verify": "87-13+56",
           "explanation": "同级运算从左往右，87减13得74，74加56得130。"
         },
@@ -833,7 +833,7 @@
           "type": "numeric",
           "prompt": "小红从家出发，5分钟走了300米，再走150米就到全程的中点，小红家到学校一共有多少米？",
           "difficulty": "hard",
-          "answer": 900,
+          "answer": "900",
           "verify": "(300+150)*2",
           "explanation": "先求一半路程300加150等于450米，全程是2个450米，450乘2得900米。"
         },
@@ -957,7 +957,7 @@
           "type": "numeric",
           "prompt": "每条毛巾12元，现在促销每条便宜3元，妈妈买了3条毛巾，需要付多少钱？",
           "difficulty": "standard",
-          "answer": 27,
+          "answer": "27",
           "verify": "(12-3)*3",
           "explanation": "促销后每条12减3等于9元，买3条就是9乘3等于27元。"
         },
@@ -1081,7 +1081,7 @@
           "type": "numeric",
           "prompt": "实验小学鼓号队有81人，鼓手方阵排成6行、每行9人，其余是号手，号手方阵有多少人？",
           "difficulty": "standard",
-          "answer": 27,
+          "answer": "27",
           "verify": "81-6*9",
           "explanation": "先求鼓手人数6乘9得54人，再用81减54，号手有27人。"
         },
@@ -1205,7 +1205,7 @@
           "type": "numeric",
           "prompt": "一支铅笔长8厘米，合多少毫米？",
           "difficulty": "basic",
-          "answer": 80,
+          "answer": "80",
           "verify": "8*10",
           "explanation": "1厘米等于10毫米，8厘米就是8个10毫米，共80毫米。"
         },
@@ -1323,7 +1323,7 @@
           "type": "numeric",
           "prompt": "一条线段长5厘米8毫米，合多少毫米？",
           "difficulty": "standard",
-          "answer": 58,
+          "answer": "58",
           "verify": "5*10+8",
           "explanation": "5厘米是50毫米，再加8毫米，这条线段长58毫米。"
         },
@@ -1447,7 +1447,7 @@
           "type": "numeric",
           "prompt": "运动场的跑道一圈是400米，跑2圈半一共跑了多少米？",
           "difficulty": "standard",
-          "answer": 1000,
+          "answer": "1000",
           "verify": "400*2.5",
           "explanation": "2圈是800米，半圈是200米，合起来800加200等于1000米，正好1千米。"
         },
@@ -1565,7 +1565,7 @@
           "type": "numeric",
           "prompt": "跑道一圈长400米，小明跑了5圈，他一共跑了多少千米？",
           "difficulty": "standard",
-          "answer": 2,
+          "answer": "2",
           "verify": "400*5/1000",
           "explanation": "5圈共400乘5等于2000米，2000米里有2个1000米，合2千米。"
         },
@@ -1683,7 +1683,7 @@
           "type": "numeric",
           "prompt": "从1千米里减去700米，还剩多少米？",
           "difficulty": "standard",
-          "answer": 300,
+          "answer": "300",
           "verify": "1000-700",
           "explanation": "先把1千米换成1000米，再减700米，还剩300米。"
         },
@@ -1807,7 +1807,7 @@
           "type": "numeric",
           "prompt": "坐过山车每人20元，3人一共需要多少元？",
           "difficulty": "basic",
-          "answer": 60,
+          "answer": "60",
           "verify": "20*3",
           "explanation": "每人20元，3人就是3个20元，20乘3等于60元。"
         },
@@ -1931,7 +1931,7 @@
           "type": "numeric",
           "prompt": "果蔬店运来6筐西红柿，每筐重20千克，一共运来多少千克西红柿？",
           "difficulty": "basic",
-          "answer": 120,
+          "answer": "120",
           "verify": "20*6",
           "explanation": "每筐20千克，6筐就是6个20千克，20乘6等于120千克。"
         },
@@ -2055,7 +2055,7 @@
           "type": "numeric",
           "prompt": "列竖式计算 48×7，积是多少？",
           "difficulty": "standard",
-          "answer": 336,
+          "answer": "336",
           "verify": "48*7",
           "explanation": "个位8乘7得56，写6进5；十位4乘7得28，加进位的5得33，积是336。"
         },
@@ -2174,7 +2174,7 @@
           "type": "numeric",
           "prompt": "动物园里一只东北虎重213千克，一头北极熊的体重是东北虎的3倍，这头北极熊重多少千克？",
           "difficulty": "standard",
-          "answer": 639,
+          "answer": "639",
           "verify": "213*3",
           "explanation": "求213的3倍是多少，用213乘3，得639千克。"
         },
@@ -2298,7 +2298,7 @@
           "type": "numeric",
           "prompt": "每个方阵有108名学生，3个方阵一共有多少名学生？",
           "difficulty": "basic",
-          "answer": 324,
+          "answer": "324",
           "verify": "108*3",
           "explanation": "求3个108是多少，用108乘3，得324名学生。"
         },
@@ -2422,7 +2422,7 @@
           "type": "numeric",
           "prompt": "每个花箱摆了126盆花，6个花箱一共摆了多少盆花？",
           "difficulty": "standard",
-          "answer": 756,
+          "answer": "756",
           "verify": "126*6",
           "explanation": "求6个126是多少，用126乘6，得756盆花。"
         },
@@ -2540,7 +2540,7 @@
           "type": "numeric",
           "prompt": "一条直线上有A、B、C三个点，以这些点为端点的线段一共有多少条？",
           "difficulty": "standard",
-          "answer": 3,
+          "answer": "3",
           "verify": "len(['AB','AC','BC'])",
           "explanation": "三个点两两相连，可以数出AB、AC、BC三条线段，不重不漏共3条。"
         },
@@ -2658,7 +2658,7 @@
           "type": "numeric",
           "prompt": "在直线l上先画长3厘米的线段AB，再用圆规作线段BC使BC等于AB，线段AC长多少厘米？",
           "difficulty": "standard",
-          "answer": 6,
+          "answer": "6",
           "verify": "3*2",
           "explanation": "AB长3厘米，BC也长3厘米，AC是两段接起来，3加3等于6厘米。"
         },
@@ -2782,7 +2782,7 @@
           "type": "numeric",
           "prompt": "一副三角尺中，每块三角尺上有1个直角，还有几个锐角？",
           "difficulty": "basic",
-          "answer": 2,
+          "answer": "2",
           "verify": "len(['第一个锐角','第二个锐角'])",
           "explanation": "每块三角尺是一个直角三角形，除1个直角外还有2个锐角。"
         },
@@ -2906,7 +2906,7 @@
           "type": "numeric",
           "prompt": "一个长方形有4个角，每个角都是直角，这个长方形一共有多少个直角？",
           "difficulty": "basic",
-          "answer": 4,
+          "answer": "4",
           "verify": "len(['左上角','右上角','左下角','右下角'])",
           "explanation": "长方形四个角都是直角，数一数共4个直角。"
         },
@@ -3030,7 +3030,7 @@
           "type": "numeric",
           "prompt": "用圆规在直线l上作线段CD，使它的长度是线段AB的3倍，如果AB长2厘米，CD长多少厘米？",
           "difficulty": "basic",
-          "answer": 6,
+          "answer": "6",
           "verify": "2*3",
           "explanation": "CD是AB的3倍，就是3个2厘米，2乘3等于6厘米。"
         },
@@ -3154,7 +3154,7 @@
           "type": "numeric",
           "prompt": "一个蛋糕平均分成6份，取出其中的1份，剩下的还有几份？",
           "difficulty": "basic",
-          "answer": 5,
+          "answer": "5",
           "verify": "6-1",
           "explanation": "平均分成6份，取走1份，剩下的就是6减1等于5份。"
         },
@@ -3278,7 +3278,7 @@
           "type": "numeric",
           "prompt": "把1分米平均分成10份，其中的7份合起来是多少毫米？",
           "difficulty": "standard",
-          "answer": 70,
+          "answer": "70",
           "verify": "100/10*7",
           "explanation": "1分米是100毫米，每份10毫米，7份就是10乘7等于70毫米。"
         },
@@ -3402,7 +3402,7 @@
           "type": "numeric",
           "prompt": "把1米平均分成10份，其中的3份合起来是多少分米？",
           "difficulty": "standard",
-          "answer": 3,
+          "answer": "3",
           "verify": "10/10*3",
           "explanation": "1米是10分米，每份1分米，3份就是3分米。"
         },
@@ -3526,7 +3526,7 @@
           "type": "numeric",
           "prompt": "一个西瓜平均分成8块，弟弟吃了1块，哥哥吃了2块，两人一共吃了几块？",
           "difficulty": "basic",
-          "answer": 3,
+          "answer": "3",
           "verify": "1+2",
           "explanation": "弟弟吃1块、哥哥吃2块，合起来就是1加2等于3块，也就是八分之三。"
         },
@@ -3650,7 +3650,7 @@
           "type": "numeric",
           "prompt": "一张彩纸用去了四分之三，用去的份数比剩下的份数多几份？",
           "difficulty": "standard",
-          "answer": 2,
+          "answer": "2",
           "verify": "3-1",
           "explanation": "整张纸平均分成4份，用去3份剩下1份，3减1等于2份。"
         },
@@ -3774,7 +3774,7 @@
           "type": "numeric",
           "prompt": "一袋面粉重25千克，已经吃了这袋面粉的五分之二，吃了多少千克？",
           "difficulty": "standard",
-          "answer": 10,
+          "answer": "10",
           "verify": "25/5*2",
           "explanation": "先求五分之一是25除以5等于5千克，再乘2得10千克。"
         },
@@ -3898,7 +3898,7 @@
           "type": "numeric",
           "prompt": "有10根小棒，取出它的五分之二，取出了多少根？",
           "difficulty": "standard",
-          "answer": 4,
+          "answer": "4",
           "verify": "10/5*2",
           "explanation": "10除以5得每份2根，取2份就是2乘2等于4根。"
         },
@@ -4022,7 +4022,7 @@
           "type": "numeric",
           "prompt": "李老师骑自行车每分钟行220米，20分钟能行多少米？",
           "difficulty": "standard",
-          "answer": 4400,
+          "answer": "4400",
           "verify": "220*20",
           "explanation": "求20个220是多少，用220乘20，得4400米。"
         },
@@ -4146,7 +4146,7 @@
           "type": "numeric",
           "prompt": "三年级4个班进行足球比赛，每2个班踢一场，一共要踢多少场？",
           "difficulty": "hard",
-          "answer": 6,
+          "answer": "6",
           "verify": "4*3/2",
           "explanation": "每个班要与其他3个班各踢一场，4乘3得12，每场被算两次，再除以2得6场。"
         },

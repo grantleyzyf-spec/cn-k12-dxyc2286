@@ -130,7 +130,7 @@
         {
           "type": "numeric",
           "prompt": "集合 B={x∈Z | −2<x≤3} 中元素的个数是（　）",
-          "answer": 5,
+          "answer": "5",
           "verify": "3-(-2)",
           "difficulty": "basic",
           "explanation": "满足 −2<x≤3 的整数依次是 −1、0、1、2、3，共 5 个。左端点 −2 不取，右端点 3 取，所以个数为 3−(−2)=5。"
@@ -278,7 +278,7 @@
         {
           "type": "numeric",
           "prompt": "集合 {x∈N | x<3} 的真子集个数是（　）",
-          "answer": 7,
+          "answer": "7",
           "verify": "2**3-1",
           "difficulty": "basic",
           "explanation": "该集合的元素为 0、1、2，共 3 个，子集总数是 2³=8；去掉它本身这一个，真子集有 8−1=7 个。"
@@ -426,7 +426,7 @@
         {
           "type": "numeric",
           "prompt": "已知集合 A={1,2,3,4}，B={2,4,6}，则 A∪B 中元素的个数是（　）",
-          "answer": 5,
+          "answer": "5",
           "verify": "4+3-2",
           "difficulty": "basic",
           "explanation": "A∪B={1,2,3,4,6}，共 5 个元素。也可用容斥关系计算：4+3−2=5，其中 2 是公共元素的个数。"
@@ -574,7 +574,7 @@
         {
           "type": "numeric",
           "prompt": "已知 A={x∈Z | 0<x<5}，B={x∈Z | 2≤x<7}，则 A∩B 中元素的个数是（　）",
-          "answer": 3,
+          "answer": "3",
           "verify": "4-2+1",
           "difficulty": "standard",
           "explanation": "A 中的整数为 1、2、3、4，B 中的整数为 2、3、4、5、6，公共部分是 2、3、4，共 3 个，即 4−2+1=3。"
@@ -722,7 +722,7 @@
         {
           "type": "numeric",
           "prompt": "设 U={1,2,3,4,5,6,7,8,9,10}，A={2,4,6,8,10}，B={1,3,5}，则 ∁U(A∪B) 中元素的个数是（　）",
-          "answer": 2,
+          "answer": "2",
           "verify": "10-(5+3)",
           "difficulty": "standard",
           "explanation": "A∪B 共有 5+3=8 个元素（两集合无公共元素），它们在 U 中的补集由剩下的 7、9 组成，共 10−8=2 个。"
@@ -870,7 +870,7 @@
         {
           "type": "numeric",
           "prompt": "有下列四组条件：①x>2 是 x>1 的充分条件；②x>1 是 x>2 的充分条件；③x=0 是 x²=0 的充分条件；④x²=4 是 x=2 的充分条件。其中正确的有（　）个。",
-          "answer": 2,
+          "answer": "2",
           "verify": "4-2",
           "difficulty": "standard",
           "explanation": "①成立；②中 x=1.5 是反例，不成立；③成立；④中 x=−2 满足 x²=4 但 x≠2，不成立。正确的共 2 个。"
@@ -1018,7 +1018,7 @@
         {
           "type": "numeric",
           "prompt": "判断下列四组推出关系成立的个数：①x=1⇒x²−x=0；②x>1⇒x>2；③ab=0⇒a=0；④a=b⇒a−b=0。成立的共有（　）个。",
-          "answer": 2,
+          "answer": "2",
           "verify": "4-2",
           "difficulty": "standard",
           "explanation": "①成立，代入即得；②不成立，x=1.5 是反例；③不成立，b=0、a=1 即为反例；④成立。所以共有 2 个成立。"
@@ -1166,7 +1166,7 @@
         {
           "type": "numeric",
           "prompt": "在①p:x=2，q:x²=4；②p:a>b，q:a−b>0；③p:ab>0，q:a>0 且 b>0 这三组中，p 是 q 的充要条件的组数是（　）。",
-          "answer": 1,
+          "answer": "1",
           "verify": "3-2",
           "difficulty": "standard",
           "explanation": "①中 x²=4 还有 x=−2，不充要；②中 a>b 与 a−b>0 等价，是充要条件；③中 a、b 同为负时 ab>0 但 a>0 不成立，不充要。共 1 组。"
@@ -1314,7 +1314,7 @@
         {
           "type": "numeric",
           "prompt": "下列四个命题中真命题的个数是（　）：①∀x∈R，x²≥0；②∃x∈R，x²<0；③∀x∈R，x+1>0；④∃x∈R，x+1=0。",
-          "answer": 2,
+          "answer": "2",
           "verify": "4-2",
           "difficulty": "standard",
           "explanation": "①真，平方非负；②假，实数的平方不可能小于 0；③假，x=−2 时为 −1；④真，x=−1 即可。所以真命题共 2 个。"
@@ -1462,7 +1462,7 @@
         {
           "type": "numeric",
           "prompt": "命题“∀x∈{1,2,3}，x²>m”是真命题，则整数 m 能取到的最大值是（　）。",
-          "answer": 0,
+          "answer": "0",
           "verify": "1-1",
           "difficulty": "standard",
           "explanation": "取 x=1 时要求 1>m，而对 x=2、3 的要求更宽松，所以只需 m<1。小于 1 的最大整数是 0，故 m 的最大值为 0。"
@@ -1604,7 +1604,7 @@
         {
           "type": "numeric",
           "prompt": "命题 p：∀x∈R，x²−2x+3>0。满足 p 的否定的整数 x 的个数是（　）。",
-          "answer": 0,
+          "answer": "0",
           "verify": "len([x for x in range(-50,51) if x**2-2*x+3<=0])",
           "difficulty": "standard",
           "explanation": "判别式 Δ=4−12=−8<0，故 x²−2x+3>0 对一切实数成立，原命题为真；其否定为假，没有整数满足 x²−2x+3≤0。"
@@ -1752,7 +1752,7 @@
         {
           "type": "numeric",
           "prompt": "已知 3<a<7，2<b<5，则 a+b 能取到的最大整数值是（　）。",
-          "answer": 11,
+          "answer": "11",
           "verify": "7+5-1",
           "difficulty": "standard",
           "explanation": "由同向不等式相加得 5<a+b<12。因为上界 12 取不到，所以 a+b 小于 12，能取到的最大整数是 11。"
@@ -1900,7 +1900,7 @@
         {
           "type": "numeric",
           "prompt": "若 x>1，则 x+1/(x−1) 的最小值是（　）。",
-          "answer": 3,
+          "answer": "3",
           "verify": "2+1",
           "difficulty": "basic",
           "explanation": "把 x 写成 (x−1)+1：x+1/(x−1)=(x−1)+1/(x−1)+1。因 x−1>0，由基本不等式得 (x−1)+1/(x−1)≥2，故原式≥2+1=3，当 x−1=1 即 x=2 时取等号，最小值为 3。",
@@ -2049,7 +2049,7 @@
         {
           "type": "numeric",
           "prompt": "不等式 x²−5x+6≤0 的整数解的个数是（　）。",
-          "answer": 2,
+          "answer": "2",
           "verify": "3-2+1",
           "difficulty": "basic",
           "explanation": "分解得 (x−2)(x−3)≤0，解集为 2≤x≤3，其中的整数只有 2 和 3，共 3−2+1=2 个。"
@@ -2197,7 +2197,7 @@
         {
           "type": "numeric",
           "prompt": "已知 f(x)=x²−2x，则 f(2)+f(−1) 的值是（　）。",
-          "answer": 3,
+          "answer": "3",
           "verify": "(4-4)+(1+2)",
           "difficulty": "basic",
           "explanation": "f(2)=4−4=0，f(−1)=1+2=3，两式相加得 0+3=3。负号代入平方项后仍为正，需特别注意符号。"
@@ -2345,7 +2345,7 @@
         {
           "type": "numeric",
           "prompt": "已知 f(x)=x²+1，则 f(f(1)) 的值是（　）。",
-          "answer": 5,
+          "answer": "5",
           "verify": "(1**2+1)**2+1",
           "difficulty": "standard",
           "explanation": "先算内层 f(1)=1+1=2，再把 2 作为自变量代入，得 f(2)=4+1=5。复合函数求值必须由内向外逐层代入。"
@@ -2493,7 +2493,7 @@
         {
           "type": "numeric",
           "prompt": "已知 f(x)=2x (x≤1)，f(x)=x+1 (x>1)，则 f(3)+f(0) 的值是（　）。",
-          "answer": 4,
+          "answer": "4",
           "verify": "(3+1)+2*0",
           "difficulty": "basic",
           "explanation": "3>1 用第二段得 f(3)=4；0≤1 用第一段得 f(0)=0；两值相加为 4。两段各自代入，不能用同一个表达式算两次。"
@@ -2641,7 +2641,7 @@
         {
           "type": "numeric",
           "prompt": "函数 f(x)=x²−4x+3 在区间 [0,3] 上的最小值是（　）。",
-          "answer": -1,
+          "answer": "-1",
           "verify": "2**2-4*2+3",
           "difficulty": "standard",
           "explanation": "对称轴 x=2 落在区间 [0,3] 内，开口向上，最小值在顶点处取得：f(2)=4−8+3=−1，而端点值 3 与 0 都更大。"
@@ -2789,7 +2789,7 @@
         {
           "type": "numeric",
           "prompt": "函数 f(x)=x²−4x 在区间 [0,5] 上的最大值是（　）。",
-          "answer": 5,
+          "answer": "5",
           "verify": "5**2-4*5",
           "difficulty": "standard",
           "explanation": "对称轴 x=2 在区间内，顶点值 f(2)=−4 是最小值；最大值在端点处比较：f(0)=0，f(5)=25−20=5，故最大值为 5。"
@@ -2937,7 +2937,7 @@
         {
           "type": "numeric",
           "prompt": "已知 f(x) 是奇函数，且 f(2)=3，则 f(−2) 的值是（　）。",
-          "answer": -3,
+          "answer": "-3",
           "verify": "-(3)",
           "difficulty": "basic",
           "explanation": "由奇函数的定义 f(−x)=−f(x)，取 x=2 得 f(−2)=−f(2)=−3。奇函数在对称点处的函数值互为相反数。"
@@ -3085,7 +3085,7 @@
         {
           "type": "numeric",
           "prompt": "已知幂函数 f(x)=x^a 的图象经过点 (4,2)，则 a 的值是（　）。",
-          "answer": 0.5,
+          "answer": "0.5",
           "verify": "1/2",
           "difficulty": "standard",
           "explanation": "把点 (4,2) 代入得 4^a=2，即 2^(2a)=2¹，所以 2a=1，a=1/2。也可直接由 4 的算术平方根为 2 得到。"
@@ -3233,7 +3233,7 @@
         {
           "type": "numeric",
           "prompt": "用长 20 m 的篱笆围成矩形，则该矩形面积的最大值是（　）平方米。",
-          "answer": 25,
+          "answer": "25",
           "verify": "5*(10-5)",
           "difficulty": "standard",
           "explanation": "S=x(10−x)=−(x−5)²+25，当 x=5 时取最大值 25。此时矩形是边长 5 m 的正方形，说明周长一定时正方形面积最大。"
@@ -3381,7 +3381,7 @@
         {
           "type": "numeric",
           "prompt": "计算 27^(2/3)+16^(1/2) 的值是（　）。",
-          "answer": 13,
+          "answer": "13",
           "verify": "27**(2/3)+16**0.5",
           "difficulty": "basic",
           "explanation": "27^(2/3)=(∛27)²=3²=9，16^(1/2)=√16=4，两式相加得 9+4=13。分数指数幂先算开方再乘方更简便。"
@@ -3523,7 +3523,7 @@
         {
           "type": "numeric",
           "prompt": "计算 ∛(−27)+√[4]{16} 的值是（　）。",
-          "answer": -1,
+          "answer": "-1",
           "verify": "-(27**(1/3))+16**0.25",
           "difficulty": "standard",
           "explanation": "∛(−27)=−3（奇次方根），√[4]{16}=2（算术方根取正），两式相加得 −3+2=−1。两个方根一负一正，符号要看清。"
@@ -3665,7 +3665,7 @@
         {
           "type": "numeric",
           "prompt": "计算 (2^(1/2))^4·2^(−1) 的值是（　）。",
-          "answer": 2,
+          "answer": "2",
           "verify": "(2**0.5)**4*2**(-1)",
           "difficulty": "basic",
           "explanation": "先算幂的乘方：(2^(1/2))^4=2^(1/2×4)=2²=4；再乘 2^(−1)=1/2，得 4×1/2=2。指数为正负时按同底数幂相加处理。"
@@ -3813,7 +3813,7 @@
         {
           "type": "numeric",
           "prompt": "已知 f(x)=2^x，则 f(3)−f(1) 的值是（　）。",
-          "answer": 6,
+          "answer": "6",
           "verify": "2**3-2**1",
           "difficulty": "basic",
           "explanation": "f(3)=2³=8，f(1)=2¹=2，两式相减得 8−2=6。指数函数的函数值随指数增大而迅速增大。"
@@ -3955,7 +3955,7 @@
         {
           "type": "numeric",
           "prompt": "某地游客人次逐年增加，每年是上一年的 1.11 倍。若把 2021 年的游客人次记为 1，则 2023 年的游客人次是 2021 年的（　）倍。",
-          "answer": 1.2321,
+          "answer": "1.2321",
           "verify": "1.11**2",
           "difficulty": "standard",
           "explanation": "经过 2 年，倍数为 1.11²=1.2321。这是典型的指数增长：倍数按年数乘方，而不是按年数线性增加。"
@@ -4097,7 +4097,7 @@
         {
           "type": "numeric",
           "prompt": "使不等式 2^x>8 成立的最小整数 x 是（　）。",
-          "answer": 4,
+          "answer": "4",
           "verify": "3+1",
           "difficulty": "standard",
           "explanation": "8=2³，由 y=2^x 单调递增得 x>3，满足条件的整数从 4 开始，所以最小整数 x 是 4，注意不能取 3。"
@@ -4239,7 +4239,7 @@
         {
           "type": "numeric",
           "prompt": "计算 log₂4+log₃27 的值是（　）。",
-          "answer": 5,
+          "answer": "5",
           "verify": "2+3",
           "difficulty": "basic",
           "explanation": "log₂4=2（因为 2²=4），log₃27=3（因为 3³=27），两式相加得 5。求对数值的关键是把它还原为指数问题。"
@@ -4381,7 +4381,7 @@
         {
           "type": "numeric",
           "prompt": "若 log₂x=4，则 x 的值是（　）。",
-          "answer": 16,
+          "answer": "16",
           "verify": "2**4",
           "difficulty": "basic",
           "explanation": "由对数定义，log₂x=4 等价于 2⁴=x，所以 x=16。求真数时把对数值作为指数还给底数即可。"
@@ -4523,7 +4523,7 @@
         {
           "type": "numeric",
           "prompt": "计算 lg25+lg4 的值是（　）。",
-          "answer": 2,
+          "answer": "2",
           "verify": "1+1",
           "difficulty": "basic",
           "explanation": "lg25+lg4=lg(25×4)=lg100=2。也可拆成 lg25=lg(5²)=2lg5 逐项计算，但合并真数相乘更快。"
@@ -4671,7 +4671,7 @@
         {
           "type": "numeric",
           "prompt": "已知 f(x)=log₂x，则 f(4)+f(8) 的值是（　）。",
-          "answer": 5,
+          "answer": "5",
           "verify": "2+3",
           "difficulty": "basic",
           "explanation": "f(4)=log₂4=2，f(8)=log₂8=3，相加得 5。也可用积的对数：log₂(4×8)=log₂32=5，结果相同。"
@@ -4813,7 +4813,7 @@
         {
           "type": "numeric",
           "prompt": "若对数函数 y=log_a x 的图象经过点 (9,2)，则 a 的值是（　）。",
-          "answer": 3,
+          "answer": "3",
           "verify": "9**0.5",
           "difficulty": "standard",
           "explanation": "把点 (9,2) 代入得 log_a9=2，即 a²=9。因底数 a>0 且 a≠1，取 a=3。另一解 a=−3 不符合底数条件。"
@@ -4961,7 +4961,7 @@
         {
           "type": "numeric",
           "prompt": "使不等式 log₂x<3 成立的最大整数 x 是（　）。",
-          "answer": 7,
+          "answer": "7",
           "verify": "2**3-1",
           "difficulty": "standard",
           "explanation": "3=log₂8，由单调递增得 0<x<8，其中的整数为 1 到 7，最大整数是 8−1=7，端点 8 不能取。"
@@ -5109,7 +5109,7 @@
         {
           "type": "numeric",
           "prompt": "计算 2^10−10² 的值是（　）。",
-          "answer": 924,
+          "answer": "924",
           "verify": "2**10-10**2",
           "difficulty": "basic",
           "explanation": "2^10=1024，10²=100，相减得 924。x=10 时指数函数已经明显超过二次函数，随 x 增大差距还会迅速扩大。"
@@ -5257,7 +5257,7 @@
         {
           "type": "numeric",
           "prompt": "用二分法求 f(x)=x³−2 在区间 (1,2) 内的零点，第一次取区间的中点，该中点的值是（　）。",
-          "answer": 1.5,
+          "answer": "1.5",
           "verify": "(1+2)/2",
           "difficulty": "standard",
           "explanation": "二分法的第一步是取区间中点，中点坐标为 (1+2)/2=1.5。再比较 f(1.5) 与 0 的大小，保留使两端异号的半区间。"
@@ -5399,7 +5399,7 @@
         {
           "type": "numeric",
           "prompt": "已知 f(x)=x³+x−1，则 f(0.5) 的值是（　）。",
-          "answer": -0.375,
+          "answer": "-0.375",
           "verify": "0.5**3+0.5-1",
           "difficulty": "standard",
           "explanation": "f(0.5)=0.125+0.5−1=−0.375。又 f(0)=−1、f(1)=1，函数连续且两端异号，可知零点在 (0,1) 内，f(0.5)<0 说明零点在 (0.5,1) 内。"
@@ -5541,7 +5541,7 @@
         {
           "type": "numeric",
           "prompt": "初始区间长度为 1，要求精确度为 0.1，用二分法至少需要二分的次数是（　）。",
-          "answer": 4,
+          "answer": "4",
           "verify": "1+3",
           "difficulty": "hard",
           "explanation": "n 次二分后长度变为 (1/2)^n，需满足 (1/2)^n<0.1，即 2^n>10。2³=8<10，2⁴=16>10，故至少 4 次。"
@@ -5689,7 +5689,7 @@
         {
           "type": "numeric",
           "prompt": "把 10000 元存入银行，年利率 2%，按复利计算，2 年后的本息和是（　）元。",
-          "answer": 10404,
+          "answer": "10404",
           "verify": "10000*1.02**2",
           "difficulty": "standard",
           "explanation": "第一年末 10000×1.02=10200 元，第二年末 10200×1.02=10404 元，即 10000×1.02²=10404。复利是逐期滚存的指数增长。"
@@ -5831,7 +5831,7 @@
         {
           "type": "numeric",
           "prompt": "半径为 3 的圆中，圆心角为 2 rad 的弧长是（　）。",
-          "answer": 6,
+          "answer": "6",
           "verify": "3*2",
           "difficulty": "basic",
           "explanation": "弧度制下弧长公式为 l=|α|r，代入 |α|=2、r=3 得 l=6。弧度制的优点正在于公式中没有 π/180 这类换算因子。"
@@ -5973,7 +5973,7 @@
         {
           "type": "numeric",
           "prompt": "在 0°～360° 范围内，与 −1000° 角终边相同的角是（　）度。",
-          "answer": 80,
+          "answer": "80",
           "verify": "-1000+3*360",
           "difficulty": "basic",
           "explanation": "−1000°+3×360°=80°。连续加上 360° 直到落在 0°～360° 范围内，得到与之终边相同的角 80°。"
@@ -6115,7 +6115,7 @@
         {
           "type": "numeric",
           "prompt": "半径为 4、弧长为 6 的扇形面积是（　）。",
-          "answer": 12,
+          "answer": "12",
           "verify": "0.5*6*4",
           "difficulty": "basic",
           "explanation": "扇形面积 S=(1/2)lr=(1/2)×6×4=12。这个公式用弧长与半径表示，无需先求圆心角，是解题中常用的简便形式。"
@@ -6257,7 +6257,7 @@
         {
           "type": "numeric",
           "prompt": "若角 α 的终边经过点 (5,12)，则 tanα 的值是（　）。",
-          "answer": 2.4,
+          "answer": "2.4",
           "verify": "12/5",
           "difficulty": "basic",
           "explanation": "tanα=y/x=12/5=2.4，与 r 无关。正切由终边上点的纵、横坐标之比确定，因此只需知道方向，不必求距离。"
@@ -6399,7 +6399,7 @@
         {
           "type": "numeric",
           "prompt": "若角 α 的终边经过点 (−6,8)，则 sinα+cosα 的值是（　）。",
-          "answer": 0.2,
+          "answer": "0.2",
           "verify": "8/10-6/10",
           "difficulty": "basic",
           "explanation": "r=√(36+64)=10，sinα=8/10=0.8，cosα=−6/10=−0.6，相加得 0.2。第二象限正弦为正、余弦为负，符号要带对。"
@@ -6541,7 +6541,7 @@
         {
           "type": "numeric",
           "prompt": "若 tanα=3，则 sinα·cosα 的值是（　）。",
-          "answer": 0.3,
+          "answer": "0.3",
           "verify": "3/(1+3**2)",
           "difficulty": "basic",
           "explanation": "sinαcosα=sinαcosα/(sin²α+cos²α)=tanα/(1+tan²α)=3/10=0.3。把分母看作 1 再用平方关系替换，是求值的常用变形。"
@@ -6683,7 +6683,7 @@
         {
           "type": "numeric",
           "prompt": "计算 sin210°+cos240° 的值是（　）。",
-          "answer": -1,
+          "answer": "-1",
           "verify": "-0.5+(-0.5)",
           "difficulty": "basic",
           "explanation": "sin210°=sin(180°+30°)=−sin30°=−1/2，cos240°=cos(180°+60°)=−cos60°=−1/2，两式相加得 −1。"
@@ -6831,7 +6831,7 @@
         {
           "type": "numeric",
           "prompt": "函数 y=3sinx+1 的最大值是（　）。",
-          "answer": 4,
+          "answer": "4",
           "verify": "3*1+1",
           "difficulty": "basic",
           "explanation": "sinx 的最大值为 1，代入得 3×1+1=4。求形如 y=Asinx+B 的最值，只需把 sinx 的最值代入，注意 A 的符号影响最大最小的对应。"
@@ -6973,7 +6973,7 @@
         {
           "type": "numeric",
           "prompt": "函数 y=1+sinx 在 [0,2π] 上的最小值是（　）。",
-          "answer": 0,
+          "answer": "0",
           "verify": "1-1",
           "difficulty": "basic",
           "explanation": "sinx 的最小值为 −1，故 y=1+sinx 的最小值为 1+(−1)=0。图象是把正弦曲线整体向上平移 1 个单位得到的。"
@@ -7121,7 +7121,7 @@
         {
           "type": "numeric",
           "prompt": "函数 y=3sinx−1 的最小值是（　）。",
-          "answer": -4,
+          "answer": "-4",
           "verify": "-3-1",
           "difficulty": "basic",
           "explanation": "sinx 的最小值为 −1，代入得 3×(−1)−1=−4，所以最小值是 −4。常数项 B 使整个图象沿 y 轴平移。"
@@ -7263,7 +7263,7 @@
         {
           "type": "numeric",
           "prompt": "计算 tan30°·tan60° 的值是（　）。",
-          "answer": 1,
+          "answer": "1",
           "verify": "(3**0.5/3)*3**0.5",
           "difficulty": "basic",
           "explanation": "tan30°=√3/3，tan60°=√3，两数相乘得 (√3/3)×√3=1。也可用 tanα·tan(90°−α)=1 这一关系直接得到。"
@@ -7411,7 +7411,7 @@
         {
           "type": "numeric",
           "prompt": "计算 sin30°cos60°+cos30°sin60° 的值是（　）。",
-          "answer": 1,
+          "answer": "1",
           "verify": "0.5*0.5+(3**0.5/2)*(3**0.5/2)",
           "difficulty": "basic",
           "explanation": "识别出这是 sin(α+β) 的展开式，α=30°、β=60°，故原式=sin90°=1。逆用公式能避免逐个查值再相加。"
@@ -7559,7 +7559,7 @@
         {
           "type": "numeric",
           "prompt": "计算 (tan45°+tan15°)/(1−tan45°·tan15°) 的值约为（　）（保留六位小数）。",
-          "answer": 1.732051,
+          "answer": "1.732051",
           "verify": "3**0.5",
           "difficulty": "basic",
           "explanation": "该式正是 tan(45°+15°)=tan60° 的展开式，所以结果为 tan60°=√3≈1.732。逆用正切和角公式比直接计算两个正切值更简便。"
@@ -7707,7 +7707,7 @@
         {
           "type": "numeric",
           "prompt": "计算 sin15°·cos15° 的值是（　）。",
-          "answer": 0.25,
+          "answer": "0.25",
           "verify": "0.5*0.5",
           "difficulty": "basic",
           "explanation": "由 sin2α=2sinαcosα 得 sin15°cos15°=(1/2)sin30°=(1/2)×(1/2)=0.25。遇到“正弦乘余弦”应联想到二倍角公式。"
@@ -7855,7 +7855,7 @@
         {
           "type": "numeric",
           "prompt": "函数 y=4sin(πx/2) 的最小正周期是（　）。",
-          "answer": 4,
+          "answer": "4",
           "verify": "2*3.141592653589793/(3.141592653589793/2)",
           "difficulty": "basic",
           "explanation": "T=2π/|ω|=2π÷(π/2)=4。ω=π/2 小于 1，周期比 2π 长得多，说明 ω 越小图象在横向被拉得越宽，直接代入周期公式最可靠。"
@@ -8003,7 +8003,7 @@
         {
           "type": "numeric",
           "prompt": "交流电的电流 i=5sin(100πt)（单位 A，t 单位 s）的周期是（　）s。",
-          "answer": 0.02,
+          "answer": "0.02",
           "verify": "2/100",
           "difficulty": "basic",
           "explanation": "T=2π/|ω|=2π/(100π)=1/50=0.02 s。频率 f=1/T=50 Hz，这正是我国交流电的频率。"

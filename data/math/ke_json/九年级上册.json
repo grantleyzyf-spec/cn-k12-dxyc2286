@@ -132,7 +132,7 @@
           "type": "numeric",
           "difficulty": "basic",
           "prompt": "把方程 (2x-1)(x+3)=5 化成一般形式 ax²+bx+c=0 后，a+b+c 的值是多少？",
-          "answer": -1,
+          "answer": "-1",
           "verify": "(2*1-1)*(1+3)-5",
           "explanation": "展开得 2x²+6x-x-3=5，移项得 2x²+5x-8=0，故 a=2，b=5，c=-8，a+b+c=2+5-8=-1。"
         },
@@ -246,7 +246,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "用公式法解方程 x²−4x−5=0，其中较大的根是多少？",
-          "answer": 5,
+          "answer": "5",
           "verify": "(4+6)/2",
           "explanation": "a=1，b=−4，c=−5，判别式 Δ=16+20=36，√Δ=6，由求根公式 x=(4±6)/2 得 x₁=5，x₂=−1，较大的根是 5。"
         },
@@ -396,7 +396,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "用长40 m的细绳围成面积为96 m²的矩形区域，这个矩形的较长边长是多少米？",
-          "answer": 12,
+          "answer": "12",
           "verify": "(20+(20**2-4*96)**0.5)/2",
           "explanation": "设一边长为 x m，则 x(20-x)=96，整理得 x²-20x+96=0，解得 x=12 或 x=8。较长边长为12 m，较短边长为8 m，两者之和为20 m、积为96 m²，符合题意。"
         },
@@ -539,7 +539,7 @@
           "type": "numeric",
           "difficulty": "basic",
           "prompt": "有 n 支球队参加单循环比赛，每两队之间赛一场，比赛场次数 m=n(n-1)/2。当 n=8 时，比赛场次数是多少场？",
-          "answer": 28,
+          "answer": "28",
           "verify": "8*7/2",
           "explanation": "把 n=8 代入关系式，每支球队要赛7场，共 8×7=56 场，但每场被两队各算一次，所以实际场次为 56÷2=28 场。"
         },
@@ -688,7 +688,7 @@
           "type": "numeric",
           "difficulty": "basic",
           "prompt": "二次函数 y=-x²+6x-5 的最大值是多少？",
-          "answer": 4,
+          "answer": "4",
           "verify": "-(3**2)+6*3-5",
           "explanation": "配方得 y=-(x-3)²+4，因为 a=-1<0，抛物线开口向下，函数在 x=3 时取得最大值4，无最小值。"
         },
@@ -837,7 +837,7 @@
           "type": "numeric",
           "difficulty": "hard",
           "prompt": "抛物线 y=x²-5x+6 与 x 轴的两个公共点之间的距离是多少？",
-          "answer": 1,
+          "answer": "1",
           "verify": "((25-24)**0.5)/1",
           "explanation": "令 y=0 得 x²-5x+6=0，即(x-2)(x-3)=0，公共点为(2,0)和(3,0)，两点间距离为 3-2=1，也可由 根号下(b²-4ac) 除以 a 的绝对值求得。"
         },
@@ -986,7 +986,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "二次函数 S=-2x²+20x 表示一块矩形菜园的面积，当 x=5 时菜园的最大面积是多少平方米？",
-          "answer": 50,
+          "answer": "50",
           "verify": "-2*(5**2)+20*5",
           "explanation": "把 x=5 代入 S=-2x²+20x，得 -2×25+20×5=-50+100=50；由于配方后为 -2(x-5)²+50，x=5 恰是顶点横坐标，这个值就是最大值。"
         },
@@ -1129,7 +1129,7 @@
           "type": "numeric",
           "difficulty": "basic",
           "prompt": "一块面积为1000 m²的矩形草坪，相邻两边长分别为 x m 和 y m，满足 y=1000/x。当 x=25 时，y 是多少米？",
-          "answer": 40,
+          "answer": "40",
           "verify": "1000/25",
           "explanation": "把 x=25 代入 y=1000/x，得 y=1000÷25=40；检验 25×40=1000 m²，与草坪面积一致。"
         },
@@ -1272,7 +1272,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "点 A(1,y₁)，B(3,y₂) 都在反比例函数 y=6/x 的图象上，则 y₁-y₂ 的值是多少？",
-          "answer": 4,
+          "answer": "4",
           "verify": "6/1-6/3",
           "explanation": "把横坐标代入解析式：y₁=6/1=6，y₂=6/3=2，所以 y₁-y₂=6-2=4；因 k>0，x 增大时 y 减小，y₁>y₂ 符合预期。"
         },
@@ -1421,7 +1421,7 @@
           "type": "numeric",
           "difficulty": "basic",
           "prompt": "汽车行驶120 km，平均速度 v（单位：km/h）与行驶时间 t（单位：h）满足 v=120/t。当 t=2.5 时，v 是多少？",
-          "answer": 48,
+          "answer": "48",
           "verify": "120/2.5",
           "explanation": "把 t=2.5 代入 v=120/t，得 v=120÷2.5=48，即平均速度为48 km/h；检验 48×2.5=120 km，与路程相符。"
         },
@@ -1570,7 +1570,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "钟表的分针从12时整的位置出发，经过20分钟，分针转过的角度是多少度？",
-          "answer": 120,
+          "answer": "120",
           "verify": "20*6",
           "explanation": "分针60分钟转过一周360°，每分钟转过6°。经过20分钟转过 20×6=120°，即从12指向4的位置。"
         },
@@ -1720,7 +1720,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "若点 (a,2) 与点 (-3,b) 关于原点对称，则 a+b 的值是多少？",
-          "answer": 1,
+          "answer": "1",
           "verify": "3+(-2)",
           "explanation": "关于原点对称的两点坐标互为相反数，所以 a=3，b=-2，a+b=3-2=1；注意 b 是纵坐标2的相反数，取-2。"
         },
@@ -1863,7 +1863,7 @@
           "type": "numeric",
           "difficulty": "basic",
           "prompt": "⊙O 的半径为6 cm，则 ⊙O 中最长的弦长是多少厘米？",
-          "answer": 12,
+          "answer": "12",
           "verify": "2*6",
           "explanation": "圆中最长的弦是直径，直径长等于半径的2倍，所以最长弦长为 2×6=12 cm，此时弦恰好经过圆心。"
         },
@@ -2012,7 +2012,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "⊙O 的半径为10 cm，弦 AB=16 cm，则圆心 O 到弦 AB 的距离是多少厘米？",
-          "answer": 6,
+          "answer": "6",
           "verify": "((10**2)-(16/2)**2)**0.5",
           "explanation": "作 OC⊥AB，由垂径定理得 AC=AB÷2=8。在 Rt△OAC 中，OC²=OA²-AC²=100-64=36，所以 OC=6 cm。"
         },
@@ -2155,7 +2155,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "一个扇形的弧长为6 cm，半径为4 cm，则它的面积是多少平方厘米？",
-          "answer": 12,
+          "answer": "12",
           "verify": "6*4/2",
           "explanation": "由扇形面积公式 S=lR/2 得 S=6×4÷2=12，即面积为12 cm²；也可理解为扇形面积等于弧长与半径乘积的一半。"
         },
@@ -2298,7 +2298,7 @@
           "type": "numeric",
           "difficulty": "hard",
           "prompt": "P 是 ⊙O 外一点，PO=10，⊙O 的半径为6，则过点 P 作 ⊙O 的切线，切线长是多少？",
-          "answer": 8,
+          "answer": "8",
           "verify": "((10**2)-(6**2))**0.5",
           "explanation": "设切点为 A，连接 OA，则 OA⊥PA。在 Rt△PAO 中，PA²=PO²-OA²=100-36=64，所以切线长 PA=8。"
         },
@@ -2441,7 +2441,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "一个三角形的周长为24，面积为36，则它的内切圆半径是多少？",
-          "answer": 3,
+          "answer": "3",
           "verify": "2*36/24",
           "explanation": "把三角形分成以内心为顶点、三边为底的三个三角形，它们的高都等于内切圆半径 r，所以 S=r×周长÷2，即 r=2S÷周长=72÷24=3。"
         },
@@ -2585,7 +2585,7 @@
           "type": "numeric",
           "difficulty": "basic",
           "prompt": "半径为3 cm 的圆内接正六边形的周长是多少厘米？",
-          "answer": 18,
+          "answer": "18",
           "verify": "6*3",
           "explanation": "正六边形的边长等于外接圆半径，所以边长为3 cm；六条边相等，周长为 6×3=18 cm。"
         },

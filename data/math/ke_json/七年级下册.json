@@ -139,7 +139,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "直线a与b相交，所得四个角中∠1与∠2互为邻补角，且∠1=3∠2，求∠2的度数（单位：度）。",
-          "answer": 45,
+          "answer": "45",
           "verify": "180/(1+3)",
           "explanation": "设∠2=x，则∠1=3x，由邻补角互补得x+3x=180°，解得x=45，所以∠2=45°。"
         },
@@ -307,7 +307,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "直线a∥b，直线c与a，b分别相交，所得一对同旁内角的度数之比为2∶7，求其中较小角的度数（单位：度）。",
-          "answer": 40,
+          "answer": "40",
           "verify": "180*2/(2+7)",
           "explanation": "同旁内角互补，设两角为2k与7k，则2k+7k=180°，k=20°，较小角为2k=40°。"
         },
@@ -458,7 +458,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "下列5个语句：①对顶角相等；②如果两个角互补，那么它们是邻补角；③若a=b，则5a=5b；④能被2整除的数一定能被4整除；⑤过直线外一点有且只有一条直线与已知直线平行。其中真命题有多少个？",
-          "answer": 3,
+          "answer": "3",
           "verify": "len([x for x in [1,0,1,0,1] if x])",
           "explanation": "①正确；②错误，互补的两个角不一定有公共顶点和公共边；③正确，等式两边同乘5仍相等；④错误，如6能被2整除但不能被4整除；⑤正确，这是平行线的基本事实。所以真命题共3个。"
         },
@@ -602,7 +602,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "把一个图形先沿水平方向向右平移4 cm，再沿同一方向向右平移6 cm，这两次平移相当于一次平移了多少厘米？",
-          "answer": 10,
+          "answer": "10",
           "verify": "4+6",
           "explanation": "两次平移方向相同，可以把两次的移动距离相加，4+6=10，即相当于沿水平方向向右平移10 cm。"
         },
@@ -751,7 +751,7 @@
           "type": "numeric",
           "difficulty": "hard",
           "prompt": "一个正数的两个平方根分别是a+3与2a-15，求这个正数。",
-          "answer": 49,
+          "answer": "49",
           "verify": "((15-3)/3+3)**2",
           "explanation": "正数的两个平方根互为相反数，所以(a+3)+(2a-15)=0，解得a=4，两个平方根为7与-7，这个正数是7²=49。"
         },
@@ -900,7 +900,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "求³√64与³√(-27)的和。",
-          "answer": 1,
+          "answer": "1",
           "verify": "64**(1/3)-27**(1/3)",
           "explanation": "因为4³=64，所以³√64=4；因为(-3)³=-27，所以³√(-27)=-3；两数相加得4+(-3)=1。"
         },
@@ -1056,7 +1056,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "数轴上表示-√2与√2的两点之间的距离约为多少（结果精确到0.01）？",
-          "answer": 2.83,
+          "answer": "2.83",
           "verify": "round(2*2**0.5,2)",
           "explanation": "两点间的距离等于两数之差的绝对值：√2-(-√2)=2√2≈2×1.4142=2.8284，精确到0.01为2.83。"
         },
@@ -1206,7 +1206,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "在平面直角坐标系中，点P(2，-3)到x轴的距离是多少？",
-          "answer": 3,
+          "answer": "3",
           "verify": "abs(-3)",
           "explanation": "点到x轴的距离等于纵坐标的绝对值，|-3|=3；到y轴的距离才是横坐标的绝对值2。"
         },
@@ -1355,7 +1355,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "将点A(1，-2)先向右平移3个单位长度，再向下平移4个单位长度得到点B，求点B的纵坐标。",
-          "answer": -6,
+          "answer": "-6",
           "verify": "-2-4",
           "explanation": "向右平移不影响纵坐标，向下平移4个单位长度使纵坐标减4，所以点B的纵坐标是-2-4=-6。"
         },
@@ -1499,7 +1499,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "二元一次方程x+y=6的正整数解共有多少组？",
-          "answer": 5,
+          "answer": "5",
           "verify": "len([(x,6-x) for x in range(1,6)])",
           "explanation": "x取正整数1，2，3，4，5时，y分别为5，4，3，2，1，都是正整数；x取6时y=0不是正整数，所以共5组。"
         },
@@ -1648,7 +1648,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "若方程组 2x+y=7，x-y=2 的解为x=a，y=b，求a+b的值。",
-          "answer": 4,
+          "answer": "4",
           "verify": "((7+2)/3)+((7+2)/3-2)",
           "explanation": "两式相加得3x=9，x=3；代入x-y=2得y=1；所以a+b=3+1=4。"
         },
@@ -1797,7 +1797,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "笼中鸡和兔共20只，共有脚56只，其中兔有多少只？",
-          "answer": 8,
+          "answer": "8",
           "verify": "max([r for r in range(21) if 4*r+2*(20-r)==56])",
           "explanation": "设兔r只、鸡(20-r)只，由4r+2(20-r)=56得2r=16，r=8；即兔8只、鸡12只，脚数4×8+2×12=56，符合题意。"
         },
@@ -1947,7 +1947,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "不等式2x>210的最小整数解是多少？",
-          "answer": 106,
+          "answer": "106",
           "verify": "min([x for x in range(0,300) if 2*x>210])",
           "explanation": "两边同除以2（正数，方向不变）得x>105，大于105的整数中最小的是106，所以最小整数解是106。"
         },
@@ -2096,7 +2096,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "不等式5x-2≤3x+6的最大整数解是多少？",
-          "answer": 4,
+          "answer": "4",
           "verify": "max([x for x in range(-10,20) if 5*x-2<=3*x+6])",
           "explanation": "移项、合并同类项得2x≤8，两边同除以2得x≤4，所以满足条件的整数中最大的是4。"
         },
@@ -2245,7 +2245,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "不等式组 2x-1<5，x+2>1 的整数解共有多少个？",
-          "answer": 3,
+          "answer": "3",
           "verify": "len([x for x in range(-20,20) if 2*x-1<5 and x+2>1])",
           "explanation": "由2x-1<5得x<3，由x+2>1得x>-1，解集为-1<x<3，其中的整数是0，1，2，共3个。"
         },
@@ -2396,7 +2396,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "某班50名同学最喜爱的课外活动统计中，喜爱文学、科技、体育、艺术的分别有7人、8人、17人、14人，则喜爱劳技的有多少人？",
-          "answer": 4,
+          "answer": "4",
           "verify": "50-(7+8+17+14)",
           "explanation": "各部分人数之和等于总人数50，所以喜爱劳技的人数为50-(7+8+17+14)=50-46=4人，与统计表中各项百分比之和为100%一致。"
         },
@@ -2546,7 +2546,7 @@
           "type": "numeric",
           "difficulty": "standard",
           "prompt": "一组数据的最大值是175，最小值是155，取组距为4，则可分成的组数是多少？",
-          "answer": 5,
+          "answer": "5",
           "verify": "(175-155)//4",
           "explanation": "极差为175-155=20，20÷4=5，能整除，所以分成5组，各组为155≤x<159，159≤x<163，…，171≤x<175。"
         },
