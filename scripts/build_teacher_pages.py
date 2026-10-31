@@ -177,23 +177,93 @@ def extract(path):
     diff_pts = to_list_items(pick(secs, SECTION_KEYS["难点"]), limit=4)
     plan_lines = pick(secs, SECTION_KEYS["课时"])
     teach = [x for x in plan_lines if not SUB_RE.match(x) and len(x) > 20][:3]
-    all_text = "".join(paras)
-    periods = []
-    for m in re.finditer(r"第\s*(\d+|[一二三四五六七八九十]+)\s*课时[：:，,]?\s*([^。；;\n]{2,40})", all_text):
-        num = m.group(1)
-        num = CN_NUM.get(num, num) if num.isdigit() else num
-        label = f"第{num}课时"
-        title = m.group(2).strip(" ·-—")
-        # 标题只留前半句（"…，学生理解…"后面是描述）
-        title = re.split(r"[，,；;]\s*(?:学生|引导|通过|使)", title)[0]
-        title = re.split(r"[，,]", title)[0] if len(title) > 22 else title
-        title = title.strip(" ·-—")
-        if not any(p["label"] == label for p in periods):
-            periods.append({"label": label, "title": title})
-        if len(periods) >= 20:
-            break
+    periods = extract_periods(paras, secs)
     return {"overview": overview, "goals": goals, "key": key_pts, "diff": diff_pts,
             "teach": teach, "periods": periods, "secs": list(secs.keys())}
+
+
+
+def _num_of(tok):
+    tok = str(tok).strip()
+    if tok.isdigit():
+        return int(tok)
+    m = {"一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "八": 8, "九": 9, "十": 10}
+    if tok == "十":
+        return 10
+    if tok.startswith("十"):
+        return 10 + m.get(tok[1:], 0)
+    if len(tok) == 2 and tok[1] == "十":
+        return m.get(tok[0], 0) * 10
+    if len(tok) == 3 and tok[1] == "十":
+        return m.get(tok[0], 0) * 10 + m.get(tok[2], 0)
+    return m.get(tok[0], 0)
+
+
+def _clean_period_title(t):
+    t = re.split(r"本课时|本课时的|这一课时", t)[0]
+    t = re.split(r"[，,]\s*第\s*[0-9一二三四五六七八九十]+\s*课时", t)[0]
+    t = re.sub(r"第\s*[0-9一二三四五六七八九十]+\s*课时", "", t)
+    t = re.split(r"[，,]\s*学生", t)[0]
+    t = re.split(r"[，,]\s*(?:其中|并|同时|进而)", t)[0]
+    if len(t) > 18:
+        t = re.split(r"[，,]", t)[0]
+    t = re.sub(r'^任务\s*[“"「]([^”"」]+)[”"」]\s*[：:]\s*', "", t)
+    t = re.sub(r"完成(.+?)的教学", r"\1", t)
+    t = re.sub(r"的教学$", "", t)
+    t = t.strip(" ，,。；;：:、·-—（）()0123456789")
+    return t[:24]
+
+
+def extract_periods(paras, secs):
+    """优先取「以第N课时开头」的段落（课时设计正文），再退回全文正则；最后按课时号排序。"""
+    found = {}
+    scores = {}
+    head_re = re.compile(r"^第\s*(\d+|[一二三四五六七八九十]+)\s*课时[：:，,、\s]+(.{2,40})$")
+
+    def scan(lines, strict=False):
+        for p in lines:
+            m = head_re.match(p.strip())
+            if not m:
+                continue
+            if strict and ("完成" in m.group(2)[:4] or "教学" == m.group(2)[:2]):
+                continue          # 「完成…的教学」是概述句，不是课时标题
+            n = _num_of(m.group(1))
+            title = _clean_period_title(m.group(2))
+            if not n or not title:
+                continue
+            score = 0 if title.startswith("完成") else 2
+            prev = found.get(n)
+            if prev is None:
+                found[n] = title
+                scores[n] = score
+            else:
+                ps = scores.get(n, 0)
+                if score > ps or (score == ps and 4 < len(title) < len(prev)):
+                    found[n] = title
+                    scores[n] = score
+
+    # ① 先只在「课时设计」段里找（最可靠）
+    for name, lines in secs.items():
+        if "教-学-评" in name or "课时设计" in name:
+            scan(lines, strict=True)
+    # ② 不足 3 条再用全文档
+    if len(found) < 3:
+        found.clear()
+        scan(paras, strict=True)
+    if len(found) < 3:
+        found.clear()
+        scan(paras)
+    if len(found) < 3:            # 没有「课时标题」式段落，退回全文扫描
+        all_text = "".join(paras)
+        for m in re.finditer(r"第\s*(\d+|[一二三四五六七八九十]+)\s*课时[：:，,、\s]*([^。；;\n]{2,40})", all_text):
+            n = _num_of(m.group(1))
+            title = _clean_period_title(m.group(2))
+            if n and title and n not in found:
+                found[n] = title
+    cn = {1: "一", 2: "二", 3: "三", 4: "四", 5: "五", 6: "六", 7: "七", 8: "八", 9: "九", 10: "十",
+          11: "十一", 12: "十二", 13: "十三", 14: "十四", 15: "十五", 16: "十六", 17: "十七", 18: "十八",
+          19: "十九", 20: "二十", 21: "二十一", 22: "二十二", 23: "二十三", 24: "二十四", 25: "二十五"}
+    return [{"label": f"第{cn.get(n, n)}课时", "title": found[n]} for n in sorted(found)]
 
 
 def slugify(s):
