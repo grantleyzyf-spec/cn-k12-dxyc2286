@@ -71,8 +71,14 @@ def fuzzy_hit(q, src, thr=0.88):
     return False
 
 
+GLYPH_MAP = {'犪': 'a', '犫': 'b', '犮': 'c', '犱': 'd', '犲': 'e', '犳': 'f', '犵': 'g', '犺': 'h', '犻': 'i', '犼': 'j', '犽': 'k', '犾': 'l', '犿': 'm', '狀': 'n', '狆': 'p', '狇': 'q', '狉': 'r', '狊': 's', '狋': 't', '狌': 'u', '狏': 'v', '狑': 'w', '狓': 'x', '狔': 'y', '狕': 'z', '犃': 'A', '犅': 'B', '犆': 'C', '犇': 'D', '犈': 'E', '犉': 'F', '犌': 'G', '犎': 'H', '犐': 'I', '犑': 'J', '犓': 'K', '犔': 'L', '犕': 'M', '犖': 'N', '犗': 'O', '犘': 'P', '犙': 'Q', '犚': 'R', '犛': 'S', '犜': 'T', '犝': 'U', '犞': 'V', '犠': 'W', '犡': 'X', '犢': 'Y', '犣': 'Z'}
+_TBL = str.maketrans(GLYPH_MAP)
+_TBL_MAP_KEYS = tuple(GLYPH_MAP.keys())
+
+
 def qnorm(s):
-    return re.sub(r"[^\u4e00-\u9fa5A-Za-z0-9]", "", s or "")
+    # 文字层把数学斜体字母映射成生僻汉字（犪=a、狓=x），比对前先还原，否则引文永远不命中
+    return re.sub(r"[^\u4e00-\u9fa5A-Za-z0-9]", "", (s or "").translate(_TBL))
 
 
 def book_pdf(book):
@@ -116,7 +122,12 @@ def main():
     src_note = ""
     if pdf:
         doc = fitz.open(pdf)
-        src = qnorm("".join(doc[i].get_text() for i in range(len(doc))))
+        _pdf_raw = "".join(doc[i].get_text() for i in range(len(doc)))
+        src = qnorm(_pdf_raw)
+        # 文字层里出现数学斜体替身字形（犪/犫/狓）说明这份文字层本身是 OCR 产物，抽取顺序也会乱
+        # ⇒ 与扫描本同等对待，允许模糊回表
+        if any(ch in _pdf_raw for ch in _TBL_MAP_KEYS):
+            src_note = "（本册文字层为 OCR 产物，引文按 90% 相似回表）"
     else:
         E(f"找不到本册教材 PDF：{book}")
     # 扫描本只有几十字的文字层（封面），引文永远回表失败 ⇒ 回退到 OCR 全册文本
