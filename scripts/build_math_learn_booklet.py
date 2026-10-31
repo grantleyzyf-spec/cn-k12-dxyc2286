@@ -21,6 +21,7 @@ OUT_ROOT = os.path.expanduser("~/Desktop/学科图谱相关资料/学层精讲/�
 def main():
     only = sys.argv[1] if len(sys.argv) > 1 else None
     files = sorted(glob.glob(f"{LEARN}/*.json"))
+    files = [f for f in files if not os.path.basename(f).startswith("_")]   # 跳过 _ocr_waivers.json 等台账
     if only:
         files = [f for f in files if os.path.basename(f)[:-5] == only]
     for f in files:
