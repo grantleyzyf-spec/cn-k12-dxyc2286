@@ -22,7 +22,7 @@ from docx.shared import Cm, Pt, RGBColor
 
 REPO = os.path.expanduser("~/Desktop/cn-k12-dxyc2286")
 LEARN = f"{REPO}/data/math/learn"
-OUT_ROOT = os.path.expanduser("~/Desktop/数学学层精讲")
+OUT_ROOT = os.path.expanduser("~/Desktop/学科图谱相关资料/学层精讲/数学/人教版")
 
 
 def set_font(run, cn="宋体", size=10.5, bold=False, en="Times New Roman"):
@@ -141,8 +141,13 @@ def main():
         book = data["book"]
         d = os.path.join(OUT_ROOT, book)
         os.makedirs(d, exist_ok=True)
+        used = set()
         for L in data.get("lessons") or []:
             safe = re.sub(r"[\\/:*?\"<>|]", "_", L["title"])
+            # 同册可能有两课时同名（如两个「练习一」）⇒ 撞名时补 topicId，否则后一篇会覆盖前一篇
+            if safe in used:
+                safe = f"{safe}_{L['topicId']}"
+            used.add(safe)
             render(L["markdown"], book, L["title"], os.path.join(d, f"{safe}.docx"))
             n += 1
     print(f"共渲染 {n} 篇学层 docx → {OUT_ROOT}")
