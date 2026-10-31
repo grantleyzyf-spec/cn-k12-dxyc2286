@@ -273,11 +273,9 @@ SHELF_TMPL = """<!DOCTYPE html>
   .lead {{ color: var(--ink-2); font-size: 14.5px; margin: 0 0 22px; }}
   .book {{ display: flex; gap: 18px; background: var(--card); border: 1px solid var(--line);
            border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); flex-wrap: wrap; }}
-  .cover {{ width: 132px; height: 178px; border-radius: 6px; flex: none;
-            background: linear-gradient(150deg, #0f6e62, #123f3a); color: #fff;
-            display: flex; flex-direction: column; justify-content: space-between; padding: 12px 10px; box-sizing: border-box; }}
-  .cover .t {{ font-size: 15px; font-weight: 750; line-height: 1.35; }}
-  .cover .a {{ font-size: 11.5px; opacity: .85; }}
+  .cover {{ width: 144px; height: 216px; border-radius: 6px; flex: none; overflow: hidden;
+            border: 1px solid var(--line); box-shadow: 0 6px 18px rgba(15,110,98,.14); background: #0f6e62; }}
+  .cover img {{ width: 100%; height: 100%; object-fit: cover; display: block; }}
   .info {{ flex: 1; min-width: 220px; }}
   .info h2 {{ margin: 0 0 6px; font-size: 19px; }}
   .info .meta {{ font-size: 13px; color: var(--ink-2); margin-bottom: 10px; }}
@@ -305,7 +303,7 @@ SHELF_TMPL = """<!DOCTYPE html>
   <h1>小说连载</h1>
   <p class="lead">全本免费，每日 5 章。读完想做题的，旁边就是知识图谱和整卷测试。</p>
   <div class="book">
-    <div class="cover"><div class="t">{book}</div><div class="a">{author}</div></div>
+    <div class="cover"><img src="{root}assets/novel-cover.jpg" alt="{book} 封面"></div>
     <div class="info">
       <h2>{book}</h2>
       <div class="meta">作者：{author} ｜ 已发布 {total} 章 / 预计 {plan} 章 ｜ 每日 5 章 ｜ 全本免费</div>
