@@ -67,7 +67,9 @@ def parse(book):
         if mc:
             unit = {"no": mc.group(1), "name": mc.group(2).strip()}
             continue
-        ms = re.match(r"^(\d+)\.(\d+)\s*(.+)$", ln)
+        # 目录页里混着正文解说行（如「0.1 ＝110，－0.5＝」「5.32 ，0.3」），
+        # 它们同样以「数字.数字」开头 ⇒ 必须要求节名是中文、且不含等号/斜杠/逗号，否则会多出假课时
+        ms = re.match(r"^(\d+)\.(\d+)\s*([\u4e00-\u9fa5][\u4e00-\u9fa5、，（）与和的分式表]*)$", ln)
         if ms:
             rows.append({"unit_no": ms.group(1), "unit": unit, "no": f"{ms.group(1)}.{ms.group(2)}",
                          "name": ms.group(3).strip(), "page": None})

@@ -103,6 +103,9 @@ def main():
         if not (1 <= len(ke.get("mastery_criteria") or []) <= 3):
             E(f"{nm}: mastery_criteria 必须 1–3 条")
         st = ke.get("standards") or []
+        ids = [x.get("id") for x in st]
+        if len(set(ids)) != len(ids):
+            E(f"{nm}: standards 里 id 重复 → {ids}（同一 id 引用两次等于没写第二条）")
         if not st:
             E(f"{nm}: 缺 standards")
         for s in st:
@@ -151,6 +154,10 @@ def main():
                 labels[q.get("answer")] += 1
             if q.get("type") == "numeric":
                 v, a = q.get("verify"), q.get("answer")
+                a0 = str(q.get("answer")).strip()
+                vv = str(v or "").replace(" ", "")
+                if v and (vv == a0 or vv in (f"1*{a0}", f"{a0}*1", f"0+{a0}", f"{a0}+0", f"1*{a0}+0")):
+                    E(f"{qid}: verify={v} 是把答案抄了一遍（伪 verify），必须写成能独立复算的表达式（计数题可用 len([...])）")
                 if not v:
                     E(f"{qid}: numeric 缺 verify")
                 else:

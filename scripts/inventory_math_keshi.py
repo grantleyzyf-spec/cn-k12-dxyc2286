@@ -72,7 +72,10 @@ def parse_chu(book):
             continue
         m = re.match(r"^　(\d+\.\d+)　(.+?)\s+(\d+|\?)$", s)
         if m and unit:
-            rows.append((unit, f"{m.group(1)} {m.group(2)}", m.group(3)))
+            item = (unit, f"{m.group(1)} {m.group(2)}", m.group(3))
+            # 目录尾页会把第一章再列一遍 ⇒ 同名节去重（七上曾因此多出 1.1/1.2 两条）
+            if item not in rows:
+                rows.append(item)
     return rows
 
 
