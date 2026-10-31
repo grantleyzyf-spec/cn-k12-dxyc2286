@@ -1,0 +1,1084 @@
+{
+ "book": "必修第一册",
+ "term": "上册",
+ "grade": 10,
+ "stage": "高中",
+ "kind": "unit",
+ "paper": "第三章测试卷",
+ "examId": "mat_exam_bx1_u3",
+ "duration": 120,
+ "fullScore": 150,
+ "scope": [
+  "第三章 函数的概念与性质"
+ ],
+ "sections": [
+  {
+   "title": "一、单选题",
+   "rule": "每小题 5 分，共 40 分",
+   "items": [
+    {
+     "no": 1,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h315"
+     ],
+     "stem": "式子 √(x − 1) + 1/(x − 3) 有意义的 x 的取值集合是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "[1, +∞)"
+      },
+      {
+       "label": "B",
+       "text": "(1, +∞)"
+      },
+      {
+       "label": "C",
+       "text": "(1, 3)∪(3, +∞)"
+      },
+      {
+       "label": "D",
+       "text": "[1, 3)∪(3, +∞)"
+      }
+     ],
+     "answer": "D",
+     "analysis": "根号内须非负：x − 1 ≥ 0 得 x ≥ 1；分式须分母不为零：x − 3 ≠ 0 得 x ≠ 3。两个条件同时满足，故定义域为 [1, 3)∪(3, +∞)。",
+     "itemId": "mat_exam_bx1_u3_q01",
+     "prereq": [
+      "mat_h314"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h315_q1",
+       "topicId": "mat_h315",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h315_q2",
+       "topicId": "mat_h315",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h315_q3",
+       "topicId": "mat_h315",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h314"
+     ],
+     "stem": "对于下列四组函数，其中 f(x) 与 g(x) 表示同一个函数的一组是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "f(x) = x，g(x) = x²/x"
+      },
+      {
+       "label": "B",
+       "text": "f(x) = |x|，g(x) = √(x²)"
+      },
+      {
+       "label": "C",
+       "text": "f(x) = x，g(x) = (√x)²"
+      },
+      {
+       "label": "D",
+       "text": "f(x) = 1，g(x) = x⁰"
+      }
+     ],
+     "answer": "B",
+     "analysis": "同一函数要求定义域与对应关系都相同。A 中 g(x) 的定义域为 x ≠ 0；C 中 g(x) 的定义域为 x ≥ 0；D 中 g(x) 的定义域为 x ≠ 0，三者的定义域都与 f 不同。B 中两函数定义域都是 R，且 √(x²) = |x|，对应关系相同，故选 B。",
+     "itemId": "mat_exam_bx1_u3_q02",
+     "prereq": [],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h314_q1",
+       "topicId": "mat_h314",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h314_q2",
+       "topicId": "mat_h314",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h314_q3",
+       "topicId": "mat_h314",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h316"
+     ],
+     "stem": "已知函数 f(x) 满足：当 x ≤ −1 时 f(x) = 2x + 3，当 x > −1 时 f(x) = x² − 1。求 f(f(−2)) 的值（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "−3"
+      },
+      {
+       "label": "B",
+       "text": "−1"
+      },
+      {
+       "label": "C",
+       "text": "1"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ],
+     "answer": "C",
+     "analysis": "先算内层：−2 ≤ −1，故 f(−2) = 2 × (−2) + 3 = −1。再算外层：−1 ≤ −1 仍满足第一段的条件，得 f(−1) = 2 × (−1) + 3 = 1。所以 f(f(−2)) = 1，注意 −1 不能代入第二段。",
+     "itemId": "mat_exam_bx1_u3_q03",
+     "prereq": [
+      "mat_h315"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h316_q1",
+       "topicId": "mat_h316",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h316_q2",
+       "topicId": "mat_h316",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h316_q3",
+       "topicId": "mat_h316",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h318"
+     ],
+     "stem": "函数 y = −x² + 4x − 1 在下列哪个区间上随 x 的增大而增大（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "[2, +∞)"
+      },
+      {
+       "label": "B",
+       "text": "(−∞, 2]"
+      },
+      {
+       "label": "C",
+       "text": "(−∞, 4]"
+      },
+      {
+       "label": "D",
+       "text": "[4, +∞)"
+      }
+     ],
+     "answer": "B",
+     "analysis": "配方得 y = −(x − 2)² + 3，图象是开口向下、对称轴为 x = 2 的抛物线，在对称轴左侧函数值随 x 增大而增大，故单调递增区间为 (−∞, 2]。",
+     "itemId": "mat_exam_bx1_u3_q04",
+     "prereq": [
+      "mat_h317"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h318_q1",
+       "topicId": "mat_h318",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h318_q2",
+       "topicId": "mat_h318",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h318_q3",
+       "topicId": "mat_h318",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h319"
+     ],
+     "stem": "若 f(x) 是在 R 上处处有定义的奇函数，且 x > 0 时 f(x) = x³ + x，那么 f(−1) 等于（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "−2"
+      },
+      {
+       "label": "B",
+       "text": "−1"
+      },
+      {
+       "label": "C",
+       "text": "1"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "A",
+     "analysis": "由奇函数性质 f(−x) = −f(x)，得 f(−1) = −f(1)。又 1 > 0，代入已知表达式得 f(1) = 1³ + 1 = 2，故 f(−1) = −2。",
+     "itemId": "mat_exam_bx1_u3_q05",
+     "prereq": [
+      "mat_h318"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h319_q1",
+       "topicId": "mat_h319",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h319_q2",
+       "topicId": "mat_h319",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h319_q3",
+       "topicId": "mat_h319",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h320"
+     ],
+     "stem": "已知幂函数 f(x) = x^α 的图象经过点 (2, √2/2)，则 f(4) 的值为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "1/4"
+      },
+      {
+       "label": "B",
+       "text": "√2"
+      },
+      {
+       "label": "C",
+       "text": "1/2"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "C",
+     "analysis": "由图象过点 (2, √2/2) 得 2^α = √2/2 = 2^(−1/2)，故 α = −1/2，即 f(x) = x^(−1/2)。于是 f(4) = 4^(−1/2) = 1/√4 = 1/2。",
+     "itemId": "mat_exam_bx1_u3_q06",
+     "prereq": [
+      "mat_h319"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h320_q1",
+       "topicId": "mat_h320",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h320_q2",
+       "topicId": "mat_h320",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h320_q3",
+       "topicId": "mat_h320",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h321"
+     ],
+     "stem": "某文具店一种笔记本的标价为每本 20 元。若一次购买不超过 10 本，全部按标价付款；若超过 10 本，则超过的部分按标价的八折付款。某人一次购买 15 本，应付款（　　）元",
+     "options": [
+      {
+       "label": "A",
+       "text": "270"
+      },
+      {
+       "label": "B",
+       "text": "280"
+      },
+      {
+       "label": "C",
+       "text": "290"
+      },
+      {
+       "label": "D",
+       "text": "300"
+      }
+     ],
+     "answer": "B",
+     "analysis": "前 10 本按标价：10 × 20 = 200 元；超过的 5 本按八折：5 × 20 × 0.8 = 5 × 16 = 80 元。合计 200 + 80 = 280 元。",
+     "itemId": "mat_exam_bx1_u3_q07",
+     "prereq": [
+      "mat_h320"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h321_q1",
+       "topicId": "mat_h321",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h321_q2",
+       "topicId": "mat_h321",
+       "difficulty": "hard"
+      },
+      {
+       "qid": "mat_h321_q3",
+       "topicId": "mat_h321",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_h318",
+      "mat_h319"
+     ],
+     "stem": "已知 f(x) 是定义在 R 上的偶函数，且在 [0, +∞) 上单调递增。若 f(2x − 1) < f(1/3)，则 x 的取值范围是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(1/2, 2/3)"
+      },
+      {
+       "label": "B",
+       "text": "(1/3, 2/3)"
+      },
+      {
+       "label": "C",
+       "text": "(1/3, 1)"
+      },
+      {
+       "label": "D",
+       "text": "(−1/3, 1/3)"
+      }
+     ],
+     "answer": "B",
+     "analysis": "偶函数满足 f(t) = f(|t|)，又 f 在 [0, +∞) 上递增，故 f(2x − 1) < f(1/3) 等价于 |2x − 1| < 1/3。解不等式：−1/3 < 2x − 1 < 1/3，两端加 1 得 2/3 < 2x < 4/3，除以 2 得 1/3 < x < 2/3。",
+     "itemId": "mat_exam_bx1_u3_q08",
+     "prereq": [
+      "mat_h317",
+      "mat_h318"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h318_q1",
+       "topicId": "mat_h318",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h318_q2",
+       "topicId": "mat_h318",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h318_q3",
+       "topicId": "mat_h318",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "二、多选题",
+   "rule": "每小题 5 分，共 20 分（全部选对得 5 分，部分选对得部分分，有选错得 0 分）",
+   "items": [
+    {
+     "no": 9,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h314",
+      "mat_h315"
+     ],
+     "stem": "下列对应关系中，能构成从集合 A 到集合 B 的函数的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "A = {1, 2, 3}，B = {4, 5, 6}，f：把 A 中每个数加上 3"
+      },
+      {
+       "label": "B",
+       "text": "A = {1, 2, 3}，B = {4, 5}，f：x → 2x + 2"
+      },
+      {
+       "label": "C",
+       "text": "A = [0, +∞)，B = R，f：x → 满足 y² = x 的 y"
+      },
+      {
+       "label": "D",
+       "text": "A = R，B = R，f：x → 3x − 1"
+      }
+     ],
+     "answer": "AD",
+     "analysis": "函数要求 A 中每个元素在 B 中都有唯一确定的像。A 中 1、2、3 的像为 4、5、6，都在 B 中且唯一，正确；B 中像为 4、6、8，其中 6、8 不在 B 中，不符合“到 B 的函数”；C 中 x > 0 时 y 有两个取值（如 x = 4 时 y = ±2），不唯一，不能构成函数；D 中每个实数 x 的像 3x − 1 唯一且仍在 R 中，正确。",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对但不全得 2 分）",
+      "有选错得 0 分"
+     ],
+     "itemId": "mat_exam_bx1_u3_q09",
+     "prereq": [
+      "mat_h314"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h314_q1",
+       "topicId": "mat_h314",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h314_q2",
+       "topicId": "mat_h314",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h314_q3",
+       "topicId": "mat_h314",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h317",
+      "mat_h318",
+      "mat_h319"
+     ],
+     "stem": "已知函数 f(x) = 1/(x² + 1)，则下列说法正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "f(x) 的定义域为 R"
+      },
+      {
+       "label": "B",
+       "text": "f(x) 的值域为 (0, 1]"
+      },
+      {
+       "label": "C",
+       "text": "f(x) 是奇函数"
+      },
+      {
+       "label": "D",
+       "text": "f(x) 在 (0, +∞) 上单调递减"
+      }
+     ],
+     "answer": "ABD",
+     "analysis": "分母 x² + 1 ≥ 1 恒不为零，故定义域为 R；x² + 1 ≥ 1 得 0 < 1/(x² + 1) ≤ 1，且 x = 0 时取到 1，又 x 无限增大时函数值趋近 0 但取不到，故值域为 (0, 1]；f(−x) = 1/(x² + 1) = f(x)，是偶函数而非奇函数，C 错误；x 增大时 x² + 1 增大，函数值减小，D 正确。",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对但不全得 2 分）",
+      "有选错得 0 分"
+     ],
+     "itemId": "mat_exam_bx1_u3_q10",
+     "prereq": [
+      "mat_h316",
+      "mat_h317",
+      "mat_h318"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h317_q1",
+       "topicId": "mat_h317",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h317_q2",
+       "topicId": "mat_h317",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h317_q3",
+       "topicId": "mat_h317",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h320"
+     ],
+     "stem": "若按幂函数 y = x^α（α 为常数）的定义来筛选，下列函数中符合这一形式的有（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = x^(−2)"
+      },
+      {
+       "label": "B",
+       "text": "y = 2x³"
+      },
+      {
+       "label": "C",
+       "text": "y = √x（即 y = x^(1/2)）"
+      },
+      {
+       "label": "D",
+       "text": "y = x^(1/3)"
+      }
+     ],
+     "answer": "ACD",
+     "analysis": "幂函数的形式必须是 y = x^α（α 为常数，系数为 1，且底数是自变量 x）。A、C、D 的系数都是 1、底数都是 x，符合定义；B 的系数为 2，不符合。",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对但不全得 2 分）",
+      "有选错得 0 分"
+     ],
+     "itemId": "mat_exam_bx1_u3_q11",
+     "prereq": [
+      "mat_h319"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h320_q1",
+       "topicId": "mat_h320",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h320_q2",
+       "topicId": "mat_h320",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h320_q3",
+       "topicId": "mat_h320",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h321",
+      "mat_h317"
+     ],
+     "stem": "某工厂生产 x 件产品所需的总成本 C(x) = 2x + 100（单位：万元），则下列说法正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "固定成本为 100 万元"
+      },
+      {
+       "label": "B",
+       "text": "每生产 1 件产品的可变成本为 2 万元"
+      },
+      {
+       "label": "C",
+       "text": "生产 50 件产品的总成本为 200 万元"
+      },
+      {
+       "label": "D",
+       "text": "平均每件产品的成本随产量 x 的增大而增大"
+      }
+     ],
+     "answer": "ABC",
+     "analysis": "C(0) = 100 即不生产时也要支出 100 万元，是固定成本；一次项系数 2 表示每多生产 1 件增加 2 万元，是可变成本；C(50) = 2 × 50 + 100 = 200（万元）。平均成本为 C(x)/x = 2 + 100/x，随 x 增大而减小，故 D 错误。",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对但不全得 2 分）",
+      "有选错得 0 分"
+     ],
+     "itemId": "mat_exam_bx1_u3_q12",
+     "prereq": [
+      "mat_h320",
+      "mat_h316"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h321_q1",
+       "topicId": "mat_h321",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h321_q2",
+       "topicId": "mat_h321",
+       "difficulty": "hard"
+      },
+      {
+       "qid": "mat_h321_q3",
+       "topicId": "mat_h321",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "三、填空题",
+   "rule": "每小题 5 分，共 20 分",
+   "items": [
+    {
+     "no": 13,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h315"
+     ],
+     "stem": "函数 f(x) = √(x + 2)/(x − 1) 的定义域是______。",
+     "answer": "[−2, 1) ∪ (1, +∞)",
+     "analysis": "两个限制同时成立：根号内 x + 2 ≥ 0 得 x ≥ −2；分母 x − 1 ≠ 0 得 x ≠ 1。取交集即 [−2, 1) ∪ (1, +∞)，注意 −2 可以取、1 不能取。",
+     "itemId": "mat_exam_bx1_u3_q13",
+     "prereq": [
+      "mat_h314"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h315_q1",
+       "topicId": "mat_h315",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h315_q2",
+       "topicId": "mat_h315",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h315_q3",
+       "topicId": "mat_h315",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h316"
+     ],
+     "stem": "已知 f(x + 1) = x² + 2x，则 f(x) = ______（x∈R）。",
+     "answer": "x² − 1",
+     "analysis": "换元法：令 t = x + 1，则 x = t − 1，代入得 f(t) = (t − 1)² + 2(t − 1) = t² − 2t + 1 + 2t − 2 = t² − 1。因此 f(x) = x² − 1，可用 x = 2 检验：f(3) = 3² + 2 × 3 = 15，而 2² − 1 = 3 的对应关系为 f(2) = 3 ✓。",
+     "itemId": "mat_exam_bx1_u3_q14",
+     "prereq": [
+      "mat_h315"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h316_q1",
+       "topicId": "mat_h316",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h316_q2",
+       "topicId": "mat_h316",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h316_q3",
+       "topicId": "mat_h316",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h318"
+     ],
+     "stem": "函数 f(x) = x + 4/x 在区间 [1, 4] 上的最小值为______。",
+     "answer": "4",
+     "analysis": "由基本不等式，x > 0 时 x + 4/x ≥ 2√4 = 4，当且仅当 x = 2 时取等号。x = 2∈[1, 4]，故最小值确实能取到，等于 4。可对照端点：f(1) = 5，f(4) = 5，均大于 4。",
+     "verify": "2*2",
+     "itemId": "mat_exam_bx1_u3_q15",
+     "prereq": [
+      "mat_h317"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h318_q1",
+       "topicId": "mat_h318",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h318_q2",
+       "topicId": "mat_h318",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h318_q3",
+       "topicId": "mat_h318",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h319"
+     ],
+     "stem": "若函数 f(x) = x² + (a − 1)x + 3 是定义在 R 上的偶函数，则实数 a 的值为______。",
+     "answer": "1",
+     "analysis": "偶函数要求 f(−x) = f(x) 对一切 x 成立：x² − (a − 1)x + 3 = x² + (a − 1)x + 3，即 2(a − 1)x = 0 恒成立，故 a − 1 = 0，得 a = 1。也可由“偶函数的奇次项系数为零”直接判断。",
+     "itemId": "mat_exam_bx1_u3_q16",
+     "prereq": [
+      "mat_h318"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h319_q1",
+       "topicId": "mat_h319",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h319_q2",
+       "topicId": "mat_h319",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h319_q3",
+       "topicId": "mat_h319",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "四、解答题",
+   "rule": "共 70 分（第 17 题 10 分，第 18–22 题各 12 分）",
+   "items": [
+    {
+     "no": 17,
+     "score": 10,
+     "type": "solve",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h316",
+      "mat_h315"
+     ],
+     "stem": "已知函数 f(x) 规定：当 x ≤ 0 时 f(x) = x² + 1，当 x > 0 时 f(x) = −2x。(1) 求 f(f(−2)) 的值；(2) 若 f(a) = 3，求实数 a 的值。",
+     "answer": "(1) −10；(2) a = −√2。",
+     "analysis": "(1) −2 ≤ 0，故 f(−2) = (−2)² + 1 = 5；5 > 0，再代入第二段得 f(5) = −2 × 5 = −10。(2) 分类讨论：若 a ≤ 0，由 a² + 1 = 3 得 a² = 2，a = ±√2，但 √2 > 0 不合，故 a = −√2；若 a > 0，由 −2a = 3 得 a = −3/2 < 0，不合。综上 a = −√2。",
+     "scoreRule": [
+      "(1) 求得 f(−2) = 5 得 3 分",
+      "求得 f(f(−2)) = f(5) = −10 得 2 分",
+      "(2) 分 a ≤ 0 与 a > 0 两种情况讨论 得 2 分",
+      "由 a² + 1 = 3 得 a = −√2，并舍去 √2 得 1 分",
+      "判断 a > 0 时 −2a = 3 无正根，得 2 分"
+     ],
+     "itemId": "mat_exam_bx1_u3_q17",
+     "prereq": [
+      "mat_h315",
+      "mat_h314"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h316_q1",
+       "topicId": "mat_h316",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h316_q2",
+       "topicId": "mat_h316",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h316_q3",
+       "topicId": "mat_h316",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 18,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h319",
+      "mat_h318"
+     ],
+     "stem": "已知函数 f(x) = x + 1/x。(1) 判断 f(x) 的奇偶性，并说明理由；(2) 用单调性的定义证明 f(x) 在区间 (0, 1) 上单调递减。",
+     "answer": "(1) f(x) 是奇函数：定义域 {x | x ≠ 0} 关于原点对称，且对任意 x ≠ 0 有 f(−x) = −x − 1/x = −f(x)；(2) 证明见解析，任取 0 < x₁ < x₂ < 1，可证 f(x₁) − f(x₂) > 0。",
+     "analysis": "(2) 任取 x₁、x₂∈(0, 1)，且 x₁ < x₂，则 f(x₁) − f(x₂) = (x₁ − x₂) + (1/x₁ − 1/x₂) = (x₁ − x₂) + (x₂ − x₁)/(x₁x₂) = (x₁ − x₂)[1 − 1/(x₁x₂)] = (x₁ − x₂)(x₁x₂ − 1)/(x₁x₂)。因 0 < x₁ < x₂ < 1，故 x₁ − x₂ < 0，0 < x₁x₂ < 1 即 x₁x₂ − 1 < 0，x₁x₂ > 0，所以 f(x₁) − f(x₂) > 0，即 f(x₁) > f(x₂)，f(x) 在 (0, 1) 上单调递减。",
+     "scoreRule": [
+      "写出定义域 {x | x ≠ 0}，指出它关于原点对称 得 2 分",
+      "验证 f(−x) = −f(x)，得出 f(x) 为奇函数 得 3 分",
+      "(2) 设 0 < x₁ < x₂ < 1，作差 f(x₁) − f(x₂) 得 3 分",
+      "因式分解为 (x₁ − x₂)(x₁x₂ − 1)/(x₁x₂)，判断各因式符号 得 2 分",
+      "由 f(x₁) > f(x₂) 得出在 (0, 1) 上单调递减 得 2 分"
+     ],
+     "itemId": "mat_exam_bx1_u3_q18",
+     "prereq": [
+      "mat_h318",
+      "mat_h317"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h319_q1",
+       "topicId": "mat_h319",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h319_q2",
+       "topicId": "mat_h319",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h319_q3",
+       "topicId": "mat_h319",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 19,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h317",
+      "mat_h318"
+     ],
+     "stem": "已知函数 f(x) = x² + 2(a − 1)x + 2。(1) 若 f(x) 在区间 (−∞, 4] 上单调递减，求实数 a 的取值范围；(2) 若 f(x) 的最小值为 −2，求实数 a 的值。",
+     "answer": "(1) a ≤ −3；(2) a = 3 或 a = −1。",
+     "analysis": "(1) 图象开口向上，对称轴为 x = 1 − a，函数在 (−∞, 1 − a] 上递减，在 [1 − a, +∞) 上递增。要在 (−∞, 4] 上递减，需 1 − a ≥ 4，故 a ≤ −3。(2) 最小值在顶点处取得：f(1 − a) = (1 − a)² + 2(a − 1)(1 − a) + 2 = 2 − (1 − a)²。由 2 − (1 − a)² = −2 得 (1 − a)² = 4，即 1 − a = ±2，故 a = −1 或 a = 3。",
+     "scoreRule": [
+      "(1) 写出对称轴 x = 1 − a，判断函数的减区间 得 3 分",
+      "由 1 − a ≥ 4 得 a ≤ −3 得 3 分",
+      "(2) 求得最小值为 2 − (1 − a)² 得 3 分",
+      "解 (1 − a)² = 4 得 a = −1 或 a = 3 得 3 分"
+     ],
+     "itemId": "mat_exam_bx1_u3_q19",
+     "prereq": [
+      "mat_h316",
+      "mat_h317"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h317_q1",
+       "topicId": "mat_h317",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h317_q2",
+       "topicId": "mat_h317",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h317_q3",
+       "topicId": "mat_h317",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 20,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h321",
+      "mat_h316"
+     ],
+     "stem": "某市居民生活用水实行阶梯收费：每户每月用水量不超过 20 吨时，每吨收费 2.5 元；超过 20 吨时，超过部分每吨收费 4 元。(1) 设某户某月用水 x 吨，应交水费 y 元，写出 y 关于 x 的函数解析式；(2) 若某户某月交水费 90 元，求该户当月的用水量。",
+     "answer": "(1) 当 0 ≤ x ≤ 20 时 y = 2.5x；当 x > 20 时 y = 20 × 2.5 + 4(x − 20) = 4x − 30；(2) 当月用水 30 吨。",
+     "analysis": "(1) 分段函数的依据是是否超过 20 吨，超过时前 20 吨仍按 2.5 元计，只有超过部分按 4 元计，故第二段为 y = 50 + 4(x − 20)。(2) 先判断：若 x ≤ 20，则 y ≤ 50 < 90，不合，故 x > 20，由 4x − 30 = 90 得 4x = 120，x = 30（吨），且 30 > 20 符合该段条件。",
+     "scoreRule": [
+      "(1) 写出 0 ≤ x ≤ 20 时的解析式 y = 2.5x 得 3 分",
+      "写出 x > 20 时的解析式 y = 50 + 4(x − 20) = 4x − 30 得 3 分",
+      "(2) 判断用水量超过 20 吨 得 2 分",
+      "解 4x − 30 = 90 得 x = 30（吨）并检验 得 4 分"
+     ],
+     "itemId": "mat_exam_bx1_u3_q20",
+     "prereq": [
+      "mat_h320",
+      "mat_h315"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h321_q1",
+       "topicId": "mat_h321",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h321_q2",
+       "topicId": "mat_h321",
+       "difficulty": "hard"
+      },
+      {
+       "qid": "mat_h321_q3",
+       "topicId": "mat_h321",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 21,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h318",
+      "mat_h319"
+     ],
+     "stem": "已知 f(x) 是定义在 (−1, 1) 上的奇函数，且在 (−1, 1) 上单调递减。解关于 a 的不等式 f(1 − a) + f(1 − a²) < 0。",
+     "answer": "a 的取值范围是 (0, 1)。",
+     "analysis": "由奇函数性质，f(1 − a) < −f(1 − a²) = f(a² − 1)。因 f 在 (−1, 1) 上递减，故 1 − a > a² − 1，即 a² + a − 2 < 0，解得 −2 < a < 1。再考虑定义域：−1 < 1 − a < 1 得 0 < a < 2；−1 < 1 − a² < 1 得 0 < a² < 2，即 0 < a < √2。三者取交集得 0 < a < 1。",
+     "scoreRule": [
+      "由奇函数性质把不等式化为 f(1 − a) < f(a² − 1) 得 3 分",
+      "由单调递减得 1 − a > a² − 1，即 a² + a − 2 < 0 得 3 分",
+      "解得 −2 < a < 1 得 2 分",
+      "由定义域列 0 < a < 2 与 0 < a < √2 得 2 分",
+      "取交集得 0 < a < 1 得 2 分"
+     ],
+     "itemId": "mat_exam_bx1_u3_q21",
+     "prereq": [
+      "mat_h317",
+      "mat_h318"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h318_q1",
+       "topicId": "mat_h318",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h318_q2",
+       "topicId": "mat_h318",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h318_q3",
+       "topicId": "mat_h318",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 22,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_h318",
+      "mat_h317"
+     ],
+     "stem": "已知函数 f(x) = x² − 2ax + 1 在区间 [0, 2] 上的最小值为 g(a)。(1) 求 g(a) 的解析式；(2) 若 g(a) = 1，求实数 a 的取值范围。",
+     "answer": "(1) 当 a < 0 时 g(a) = 1；当 0 ≤ a ≤ 2 时 g(a) = 1 − a²；当 a > 2 时 g(a) = 5 − 4a。(2) a ≤ 0。",
+     "analysis": "f(x) = (x − a)² + 1 − a²，开口向上，对称轴 x = a，最小值取决于对称轴与区间 [0, 2] 的位置关系：a < 0 时函数在 [0, 2] 上递增，最小值 f(0) = 1；0 ≤ a ≤ 2 时最小值在顶点处，为 1 − a²；a > 2 时函数在 [0, 2] 上递减，最小值 f(2) = 5 − 4a。(2) 当 a < 0 时 g(a) = 1 恒成立；当 0 ≤ a ≤ 2 时由 1 − a² = 1 得 a = 0；当 a > 2 时由 5 − 4a = 1 得 a = 1，不在该段内。综上 a ≤ 0。",
+     "scoreRule": [
+      "配方得 f(x) = (x − a)² + 1 − a²，指出对称轴 x = a 得 3 分",
+      "写出 a < 0 时 g(a) = 1 与 a > 2 时 g(a) = 5 − 4a 得 3 分",
+      "写出 0 ≤ a ≤ 2 时 g(a) = 1 − a² 得 3 分",
+      "(2) 分三段解 g(a) = 1，得 a = 0 与 a = 1（舍） 得 2 分",
+      "综合得 a ≤ 0 得 1 分"
+     ],
+     "itemId": "mat_exam_bx1_u3_q22",
+     "prereq": [
+      "mat_h317",
+      "mat_h316"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h318_q1",
+       "topicId": "mat_h318",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h318_q2",
+       "topicId": "mat_h318",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h318_q3",
+       "topicId": "mat_h318",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
