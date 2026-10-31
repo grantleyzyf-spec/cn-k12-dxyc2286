@@ -34,10 +34,10 @@ idx = json.load(open(os.path.join(D, "cn-curriculum-standards.json"), encoding="
 T = {t["id"]: t for t in topics}
 
 # 1 规模与唯一性
-ck("知识点 515 条", len(topics) == 515, len(topics))
+ck("知识点 ≥ 515 条（课时级扩建只增不减）", len(topics) >= 515, len(topics))
 ck("id 唯一", len(T) == len(topics))
 ck("全部 subject=math", all(t.get("subject") == "math" for t in topics))
-ck("诊断题 5 题/点（485×5=2425）", len(qs) == len(topics) * 5, f"{len(qs)} vs {len(topics)*5}")
+ck("诊断题 5 题/点", len(qs) == len(topics) * 5, f"{len(qs)} vs {len(topics)*5}")
 ck("题 id 唯一", len({q["id"] for q in qs}) == len(qs))
 
 # 1b 领域口径：只用课标四领域（细分放 tags）
@@ -144,7 +144,7 @@ ck("题型四类齐备", set(types_cnt) == {"choice", "fill", "numeric", "short-
 ck("每点至少 3 种题型", all(len({q["type"] for q in v}) >= 3 for v in by_topic_cnt.values()),
    [k for k, v in by_topic_cnt.items() if len({q["type"] for q in v}) < 3][:5])
 ck("numeric 占比 ≥ 20%", types_cnt["numeric"] >= len(qs) * 0.2, f'{types_cnt["numeric"]}/{len(qs)}')
-ck("fill 与 short-answer 各 ≥ 479", types_cnt["fill"] >= 479 and types_cnt["short-answer"] >= 479, dict(types_cnt))
+ck("fill 与 short-answer 各 ≥ 18%", types_cnt["fill"] >= len(qs)*0.18 and types_cnt["short-answer"] >= len(qs)*0.18, dict(types_cnt))
 
 bad_verify = []
 for q in qs:
