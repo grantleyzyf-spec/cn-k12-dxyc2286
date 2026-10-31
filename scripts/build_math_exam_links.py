@@ -39,13 +39,31 @@ def norm(s):
     return re.sub(r"\s+", "", s or "")
 
 
+CN_DIGIT = {"一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "八": 8, "九": 9}
+
+
+def cn2int(s):
+    """中文数字 → 整数。必须支持「二十五」「十八」「三十」这类两位数：
+    早期实现只取末位字符，「第二十五单元」被算成 u5、「第十八单元」算成 u8，
+    与写手写入的 g9a_u25 / g8a_u18 冲突，重跑链接器会把 examId 覆盖错。"""
+    if not s:
+        return 1
+    if s == "十":
+        return 10
+    if "十" in s:
+        a, _, b = s.partition("十")
+        return (CN_DIGIT.get(a, 1) if a else 1) * 10 + (CN_DIGIT.get(b, 0) if b else 0)
+    if "百" in s:
+        a, _, b = s.partition("百")
+        return (CN_DIGIT.get(a, 1) if a else 1) * 100 + (cn2int(b) if b else 0)
+    return CN_DIGIT.get(s, 1)
+
+
 def paper_code(paper, kind):
-    """第一单元测试卷 → u1；期中测试卷A → mid_a；期末测试卷B → fin_b"""
+    """第一单元测试卷 → u1；第二十五单元测试卷 → u25；期中测试卷A → mid_a；期末测试卷B → fin_b"""
     if kind == "unit":
-        m = re.search(r"第([一二三四五六七八九十]+)单元", paper)
-        cn = {"一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6,
-              "七": 7, "八": 8, "九": 9, "十": 10}
-        return f"u{cn.get((m.group(1) if m else '一')[-1], 1)}"
+        m = re.search(r"第([一二三四五六七八九十百]+)单元", paper)
+        return f"u{cn2int(m.group(1) if m else '一')}"
     if kind == "midterm":
         return "mid_" + (paper[-1].lower() if paper[-1] in "AB" else "a")
     return "fin_" + (paper[-1].lower() if paper[-1] in "AB" else "a")
