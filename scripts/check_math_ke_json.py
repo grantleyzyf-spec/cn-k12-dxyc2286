@@ -76,10 +76,20 @@ def main():
     pool = {b: {(i, q): ln for i, q, ln in v} for b, v in quotes.items()}
     if book and book not in pool:
         E(f"docs/math-std-quotes.md 里没有本册小节：{book}")
+    # 全库题干去重池：必须排除**本册自己的课时点**，否则已合并的册再自检时会自己撞自己
+    # （chapter 形如「一年级上册 第一单元 X · 1～5的认识」的就是课时点）
+    own_topics, other_topics = set(), set()
+    tp = f"{REPO}/data/math/topics.json"
+    if os.path.exists(tp) and book:
+        for t in json.load(open(tp, encoding="utf-8")):
+            ch = t.get("chapter") or ""
+            (own_topics if (ch.startswith(book + " ") and " · " in ch) else other_topics).add(t["id"])
     glob_prompts = set()
     gp = f"{REPO}/data/math/questions.json"
     if os.path.exists(gp):
         for q in json.load(open(gp, encoding="utf-8")):
+            if q.get("topicId") in own_topics:
+                continue
             glob_prompts.add(norm(q.get("prompt")))
     seen = set()
     labels = Counter()
