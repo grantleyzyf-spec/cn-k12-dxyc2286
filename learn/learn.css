@@ -1,0 +1,90 @@
+/* 课时讲解页 —— 只补 site.css 没有的部分 */
+/* 顶栏是 sticky，锚点/scrollIntoView 必须留出它的高度，否则标题被压在导航下面 */
+html { scroll-padding-top: 76px; }
+main.learn { max-width: 1180px; margin: 0 auto; padding: 24px 18px 72px; }
+.learn .page-head { margin: 4px 0 20px; }
+.learn .page-head h1 { margin: 0 0 6px; font-size: clamp(23px, 3.6vw, 30px); letter-spacing: -.01em; }
+.learn .page-head p { margin: 0; color: var(--ink-2); font-size: 15px; }
+
+.picker { padding: 16px 18px; margin-bottom: 18px; }
+.select-group { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+.select-group label { display: block; font-weight: 650; font-size: 13.5px; margin-bottom: 7px; }
+.select-group select {
+  width: 100%; min-height: 44px; padding: 0 12px; font-size: 14.5px; color: var(--ink);
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-sm, 8px);
+}
+.hint { margin: 12px 0 0; font-size: 13px; color: var(--ink-3); }
+
+.split { display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 18px; align-items: start; }
+@media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
+
+.lesson-list {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius, 12px);
+  padding: 10px 8px; max-height: 78vh; overflow: auto; position: sticky; top: 14px;
+}
+@media (max-width: 860px) { .lesson-list { max-height: none; position: static; } }
+.lesson-list .unit {
+  font-size: 12.5px; font-weight: 700; color: var(--ink-3); letter-spacing: .02em;
+  margin: 12px 8px 6px; padding-top: 8px; border-top: 1px solid var(--line);
+}
+.lesson-list .unit:first-child { border-top: 0; margin-top: 4px; }
+.lesson-list button.lesson {
+  display: block; width: 100%; text-align: left; padding: 9px 10px; margin: 1px 0;
+  background: none; border: 0; border-radius: 8px; cursor: pointer;
+  font-size: 14px; color: var(--ink); line-height: 1.45;
+}
+.lesson-list button.lesson:hover { background: var(--brand-soft); }
+.lesson-list button.lesson.active { background: var(--brand); color: #fff; font-weight: 650; }
+.lesson-list button.lesson .w { font-size: 11.5px; color: var(--ink-3); margin-left: 6px; }
+.lesson-list button.lesson.active .w { color: #d9f0ec; }
+.lesson-list .empty { color: var(--ink-3); font-size: 13.5px; padding: 12px; }
+
+.reader {
+  scroll-margin-top: 78px;
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius, 12px);
+  padding: 26px 30px 34px; box-shadow: var(--shadow, 0 1px 2px rgba(0,0,0,.05)); min-height: 46vh;
+}
+@media (max-width: 560px) { .reader { padding: 20px 18px 26px; } }
+.reader-empty h2 { margin: 6px 0 10px; font-size: 20px; }
+.reader-empty p { color: var(--ink-2); font-size: 14.5px; line-height: 1.7; }
+.reader-empty .cols { margin: 14px 0 0; padding-left: 20px; color: var(--ink-2); font-size: 14px; line-height: 1.9; }
+
+.reader h1 { font-size: 24px; margin: 0 0 4px; letter-spacing: -.01em; }
+.reader .meta { font-size: 12.5px; color: var(--ink-3); margin-bottom: 18px; }
+.reader h2 {
+  font-size: 17px; margin: 26px 0 10px; padding-left: 10px;
+  border-left: 3px solid var(--brand); line-height: 1.4;
+}
+.reader h3 { font-size: 15px; margin: 18px 0 8px; color: var(--brand-ink); }
+.reader p { margin: 0 0 12px; font-size: 15.5px; line-height: 1.85; color: var(--ink); }
+.reader strong { font-weight: 700; }
+.reader blockquote {
+  margin: 10px 0 12px; padding: 12px 16px; background: #f5f7f9;
+  border-left: 3px solid #cfd8e0; border-radius: 0 8px 8px 0;
+  font-size: 15px; line-height: 1.8; color: #2a3540;
+}
+.reader blockquote p { margin: 0; font-size: inherit; }
+.reader .cmp { background: none; border-left: 0; padding: 4px 0 4px 2px; }
+.reader .cmp.bad { color: #a4342a; }
+.reader .cmp.good { color: #12734f; }
+.reader ul.check { list-style: none; padding-left: 0; margin: 8px 0 14px; }
+.reader ul.check li {
+  position: relative; padding: 6px 0 6px 26px; font-size: 15px; line-height: 1.7;
+  border-bottom: 1px dashed var(--line);
+}
+.reader ul.check li::before {
+  content: "☐"; position: absolute; left: 4px; color: var(--brand); font-size: 15px;
+}
+.reader ul.dot { margin: 8px 0 14px; padding-left: 22px; }
+.reader ul.dot li { font-size: 15.5px; line-height: 1.8; margin-bottom: 4px; }
+.reader .navrow {
+  display: flex; justify-content: space-between; gap: 12px;
+  margin-top: 30px; padding-top: 16px; border-top: 1px solid var(--line);
+}
+.reader .navrow button {
+  min-height: 40px; padding: 0 14px; font-size: 14px; cursor: pointer;
+  background: var(--card); border: 1px solid var(--line); border-radius: 8px; color: var(--ink);
+}
+.reader .navrow button:hover { border-color: var(--brand); color: var(--brand-ink); }
+.reader .navrow button:disabled { opacity: .45; cursor: not-allowed; }
+.reader .src { margin-top: 14px; font-size: 12px; color: var(--ink-3); }

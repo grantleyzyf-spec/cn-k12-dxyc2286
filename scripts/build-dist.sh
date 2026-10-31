@@ -9,7 +9,7 @@ rm -rf "$OUT"; mkdir -p "$OUT/data"
 
 cp "$ROOT/index.html" "$ROOT/sw.js" "$ROOT/manifest.webmanifest" "$OUT/"
 for f in robots.txt sitemap.xml; do [ -f "$ROOT/$f" ] && cp "$ROOT/$f" "$OUT/"; done
-cp -a "$ROOT/assets" "$ROOT/explore" "$ROOT/diagnose" "$ROOT/children" "$ROOT/contact" "$OUT/"
+cp -a "$ROOT/assets" "$ROOT/explore" "$ROOT/diagnose" "$ROOT/learn" "$ROOT/children" "$ROOT/contact" "$OUT/"
 
 cp "$ROOT/data/stats.json" "$ROOT/data/cn-curriculum-standards.json" "$OUT/data/"
 [ -f "$ROOT/data/site-config.json" ] && cp "$ROOT/data/site-config.json" "$OUT/data/"
@@ -23,6 +23,8 @@ for d in "$ROOT"/data/*/; do
   for f in topics.json dependencies.json questions.json; do
     [[ -f "$d/$f" ]] && cp "$d/$f" "$OUT/data/$name/$f"
   done
+  # 学层讲解正文（课时讲解页要 fetch）：data/<学科>/learn/<册>.json
+  [[ -d "$d/learn" ]] && cp -a "$d/learn" "$OUT/data/$name/learn"
 done
 
 # 缓存头：Nginx 与 Pages 共用同一份口径说明（Nginx 见 deploy/nginx-k12.conf）

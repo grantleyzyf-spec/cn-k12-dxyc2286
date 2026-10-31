@@ -354,6 +354,7 @@
             <div class="topic-name">${esc(w.name)} <span class="ex-rate">${Math.round(w.rate * 100)}%</span></div>
             <div class="topic-desc">${esc(w.chapter)} ｜ 得分 ${Math.round(w.got * 10) / 10}/${w.full}</div>
             <div class="ex-fix">
+              <a class="ex-link" href="../learn/#${encodeURIComponent(w.tid)}">看讲解 →</a>
               <a class="ex-link" href="../diagnose/?topic=${encodeURIComponent(w.tid)}">沿先修链诊断这个点 →</a>
             </div>
           </li>`).join('')}</ul>` : `<p class="ex-ok">本次没有得分率低于 60% 的知识点。</p>`}

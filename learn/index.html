@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-12 知识图谱 - 课时讲解</title>
+    <link rel="manifest" href="../manifest.webmanifest">
+    <meta name="theme-color" href="#0f6e62">
+    <link rel="stylesheet" href="../assets/site.css">
+    <link rel="stylesheet" href="learn.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../">K-12 知识图谱</a>
+  <nav class="site-nav" aria-label="主导航">
+    <a class="nav-link" href="../">首页</a>
+    <a class="nav-link" href="../diagnose/">诊断</a>
+    <a class="nav-link active" href="./">讲解</a>
+    <a class="nav-link" href="../children/">档案</a>
+    <a class="nav-link" href="../teacher/">教师</a>
+    <a class="nav-link" href="../novel/">小说连载</a>
+  </nav>
+</header>
+
+<main class="learn">
+  <div class="page-head">
+    <h1>课时讲解</h1>
+    <p>先读课本原文，再用大白话拆开，例题分步，最后自查。每个课时 1000–2000 字。</p>
+  </div>
+
+  <div class="panel picker">
+    <div class="select-group">
+      <div>
+        <label for="sel-book">选择册次</label>
+        <select id="sel-book"><option value="">加载中…</option></select>
+      </div>
+      <div>
+        <label for="sel-unit">选择单元</label>
+        <select id="sel-unit"><option value="">全部单元</option></select>
+      </div>
+    </div>
+    <p class="hint" id="hint">点课时名称，右侧（手机为下方）显示完整讲解。</p>
+  </div>
+
+  <div class="split">
+    <aside class="lesson-list" id="lesson-list" aria-label="课时列表">
+      <p class="empty">请选择册次</p>
+    </aside>
+    <article class="reader" id="reader" aria-live="polite">
+      <div class="reader-empty">
+        <h2>点课时 → 看讲解</h2>
+        <p>左侧按单元列出课时，点开即读。已收录的册次会显示篇数，未收录的显示「整理中」。</p>
+        <ul class="cols">
+          <li><b>学</b>：课本原文 + 费曼翻译 + 例题精讲 + 易错点拨 + 自查</li>
+          <li><b>练</b>：每课时 5 道诊断题</li>
+          <li><b>测</b>：单元卷 / 期中 / 期末（<a href="../diagnose/">整卷测试</a>）</li>
+          <li><b>诊</b>：掌握度四档 + 前置缺口（<a href="../diagnose/">自适应诊断</a>）</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</main>
+
+<script src="learn.js"></script>
+</body>
+</html>
