@@ -168,8 +168,10 @@ def main():
                 try:
                     if abs(eval(str(v)) - float(it.get("answer"))) > 1e-6:
                         E(f"第 {no} 题 verify={v} 与 answer={it.get('answer')} 不符")
-                except Exception as ex:
-                    E(f"第 {no} 题 verify 不可求值：{ex}")
+                except Exception as _err:
+                    # 注意别写成 `as ex`：ex 是本卷对象，except 结束后 Python 会 del 掉它，
+                    # 后面任何 ex.get(...) 都会抛 UnboundLocalError（写手已被这个坑误导过一次）
+                    E(f"第 {no} 题 verify 不可求值：{_err}")
             ns = norm(stem)
             for b in bank:
                 if b and difflib.SequenceMatcher(None, ns, b).ratio() > 0.85:

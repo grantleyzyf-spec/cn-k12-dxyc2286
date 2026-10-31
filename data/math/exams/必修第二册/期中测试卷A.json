@@ -1,0 +1,1076 @@
+{
+ "book": "必修第二册",
+ "kind": "midterm",
+ "term": "下册",
+ "grade": 10,
+ "stage": "高中",
+ "paper": "期中测试卷A",
+ "duration": 120,
+ "fullScore": 150,
+ "scope": [
+  "第六章 平面向量及其应用",
+  "第七章 复数"
+ ],
+ "sections": [
+  {
+   "title": "一、单选题",
+   "rule": "每小题 5 分，共 40 分",
+   "items": [
+    {
+     "no": 1,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h355"
+     ],
+     "stem": "关于相等向量、单位向量与零向量，下列判断正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "向量 AB 与向量 BA 是相等向量"
+      },
+      {
+       "label": "B",
+       "text": "所有单位向量的模都相等"
+      },
+      {
+       "label": "C",
+       "text": "若 |a|=|b|，则 a=b"
+      },
+      {
+       "label": "D",
+       "text": "零向量没有方向"
+      }
+     ],
+     "answer": "B",
+     "analysis": "单位向量的模都等于 1，故模都相等；AB 与 BA 方向相反，是相反向量而非相等向量；|a|=|b| 只说明长度相等，方向可以不同；零向量的方向是任意的，不能说没有方向。",
+     "itemId": "mat_exam_bx2_mid_a_q01",
+     "prereq": [],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h355_q1",
+       "topicId": "mat_h355",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h355_q2",
+       "topicId": "mat_h355",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h355_q3",
+       "topicId": "mat_h355",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h357"
+     ],
+     "stem": "在平行四边形 ABCD 中，向量 AB+AD 等于（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "AC"
+      },
+      {
+       "label": "B",
+       "text": "BD"
+      },
+      {
+       "label": "C",
+       "text": "CA"
+      },
+      {
+       "label": "D",
+       "text": "DB"
+      }
+     ],
+     "answer": "A",
+     "analysis": "由向量加法的平行四边形法则，以 AB、AD 为邻边的平行四边形的对角线 AC 对应两向量之和，故 AB+AD=AC；而 BD=AD−AB，CA=−AC，DB=−BD，都不是正确结果。",
+     "itemId": "mat_exam_bx2_mid_a_q02",
+     "prereq": [
+      "mat_h356"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h357_q1",
+       "topicId": "mat_h357",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h357_q2",
+       "topicId": "mat_h357",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h357_q3",
+       "topicId": "mat_h357",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h360"
+     ],
+     "stem": "已知两个向量的模分别是 3 和 4，它们的夹角为 120°，则这两个向量的数量积为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "6√3"
+      },
+      {
+       "label": "B",
+       "text": "−6"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "−12"
+      }
+     ],
+     "answer": "B",
+     "analysis": "由数量积定义 a·b=|a||b|cos120°=3×4×(−1/2)=−6。夹角为钝角时数量积为负，A、C 为正数必错；D 少乘了余弦值的一半。",
+     "itemId": "mat_exam_bx2_mid_a_q03",
+     "prereq": [
+      "mat_h359"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h360_q1",
+       "topicId": "mat_h360",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h360_q2",
+       "topicId": "mat_h360",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h360_q3",
+       "topicId": "mat_h360",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h366"
+     ],
+     "stem": "已知向量 a=(1,2)，b=(x,−1)，若 a⊥b，则 x 的值为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "−2"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "1/2"
+      },
+      {
+       "label": "D",
+       "text": "−1/2"
+      }
+     ],
+     "answer": "B",
+     "analysis": "a⊥b 等价于 a·b=0，由数量积的坐标公式得 1·x+2·(−1)=0，即 x=2。也可检验：x=2 时 a·b=2−2=0，确实垂直。",
+     "itemId": "mat_exam_bx2_mid_a_q04",
+     "prereq": [
+      "mat_h365"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h366_q1",
+       "topicId": "mat_h366",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h366_q2",
+       "topicId": "mat_h366",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h366_q3",
+       "topicId": "mat_h366",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h363",
+      "mat_h364"
+     ],
+     "stem": "已知 A(2,1)，B(4,3)，C(1,−1)，若 AB=xAC+yBC（x，y∈R），则 x+y 的值为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "0"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "−1"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "A",
+     "analysis": "AB=(2,2)，AC=(−1,−2)，BC=(−3,−4)。由坐标相等得 2=−x−3y 且 2=−2x−4y，解得 x=1，y=−1，故 x+y=0。也可直接检验 1·AC+(−1)·BC=(−1+3,−2+4)=(2,2)=AB。",
+     "itemId": "mat_exam_bx2_mid_a_q05",
+     "prereq": [
+      "mat_h362",
+      "mat_h363"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h363_q1",
+       "topicId": "mat_h363",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h363_q2",
+       "topicId": "mat_h363",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h363_q3",
+       "topicId": "mat_h363",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h370"
+     ],
+     "stem": "在△ABC 中，a=7，b=5，c=3，则最大的内角为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "60°"
+      },
+      {
+       "label": "B",
+       "text": "90°"
+      },
+      {
+       "label": "C",
+       "text": "120°"
+      },
+      {
+       "label": "D",
+       "text": "150°"
+      }
+     ],
+     "answer": "C",
+     "analysis": "最大边 a=7 所对的角 A 最大。由余弦定理 cosA=(b²+c²−a²)/(2bc)=(25+9−49)/(2×5×3)=−1/2，又 A∈(0°,180°)，故 A=120°。",
+     "itemId": "mat_exam_bx2_mid_a_q06",
+     "prereq": [
+      "mat_h369"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h370_q1",
+       "topicId": "mat_h370",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h370_q2",
+       "topicId": "mat_h370",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h370_q3",
+       "topicId": "mat_h370",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h372"
+     ],
+     "stem": "已知 m∈R，复数 z=(m−1)+(m+2)i 为纯虚数，则 m 的值为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "−2"
+      },
+      {
+       "label": "C",
+       "text": "1 或 −2"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "A",
+     "analysis": "z 为纯虚数需实部为 0 且虚部不为 0，即 m−1=0 且 m+2≠0，故 m=1。若取 m=−2，则 z=−3 是实数，不满足要求。",
+     "itemId": "mat_exam_bx2_mid_a_q07",
+     "prereq": [
+      "mat_h371"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h372_q1",
+       "topicId": "mat_h372",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h372_q2",
+       "topicId": "mat_h372",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h372_q3",
+       "topicId": "mat_h372",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h376"
+     ],
+     "stem": "复数 (1+2i)/(1−i) 的共轭复数为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "−1/2−(3/2)i"
+      },
+      {
+       "label": "B",
+       "text": "−1/2+(3/2)i"
+      },
+      {
+       "label": "C",
+       "text": "1/2−(3/2)i"
+      },
+      {
+       "label": "D",
+       "text": "1/2+(3/2)i"
+      }
+     ],
+     "answer": "A",
+     "analysis": "(1+2i)/(1−i)=[(1+2i)(1+i)]/[(1−i)(1+i)]=(1+3i−2)/2=−1/2+(3/2)i，共轭复数的虚部变号，为 −1/2−(3/2)i。",
+     "itemId": "mat_exam_bx2_mid_a_q08",
+     "prereq": [
+      "mat_h375"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h376_q1",
+       "topicId": "mat_h376",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h376_q2",
+       "topicId": "mat_h376",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h376_q3",
+       "topicId": "mat_h376",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "二、多选题",
+   "rule": "每小题 5 分，共 20 分（全部选对得 5 分，部分选对得部分分，有选错得 0 分）",
+   "items": [
+    {
+     "no": 9,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h362",
+      "mat_h361"
+     ],
+     "stem": "已知 a，b 是同一平面内的一组基底，则下列各组向量中能作为该平面基底的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 与 2a"
+      },
+      {
+       "label": "B",
+       "text": "a+b 与 a−b"
+      },
+      {
+       "label": "C",
+       "text": "2a+b 与 −4a−2b"
+      },
+      {
+       "label": "D",
+       "text": "a 与 a+b"
+      }
+     ],
+     "answer": "BD",
+     "analysis": "能作为基底的向量组必须不共线（且非零）。a 与 2a 共线；−4a−2b=−2(2a+b)，与 2a+b 共线；而 a+b 与 a−b、a 与 a+b 都不共线，可以构成基底，故选 B、D。",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（每选对一个正确选项得 2 分，最多 4 分）",
+      "有选错得 0 分"
+     ],
+     "itemId": "mat_exam_bx2_mid_a_q09",
+     "prereq": [
+      "mat_h361",
+      "mat_h360"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h362_q1",
+       "topicId": "mat_h362",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h362_q2",
+       "topicId": "mat_h362",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h362_q3",
+       "topicId": "mat_h362",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h360",
+      "mat_h359"
+     ],
+     "stem": "已知 a，b 均为非零向量，则下面四个结论中正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "若 |a+b|=|a−b|，则 a⊥b"
+      },
+      {
+       "label": "B",
+       "text": "若 a·b>0，则 a 与 b 的夹角为锐角"
+      },
+      {
+       "label": "C",
+       "text": "|a·b|≤|a||b|"
+      },
+      {
+       "label": "D",
+       "text": "若 a∥b，则 |a+b|=|a|+|b|"
+      }
+     ],
+     "answer": "AC",
+     "analysis": "由 |a+b|²=|a−b|² 得 4a·b=0，即 a⊥b，A 正确；a·b>0 时夹角为锐角或零角（两向量同向），B 错误；由 |cosθ|≤1 得 |a·b|≤|a||b|，C 正确；两向量反向时 |a+b|=||a|−|b||，D 错误。",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（每选对一个正确选项得 2 分，最多 4 分）",
+      "有选错得 0 分"
+     ],
+     "itemId": "mat_exam_bx2_mid_a_q10",
+     "prereq": [
+      "mat_h359",
+      "mat_h358"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h360_q1",
+       "topicId": "mat_h360",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h360_q2",
+       "topicId": "mat_h360",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h360_q3",
+       "topicId": "mat_h360",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h374",
+      "mat_h376"
+     ],
+     "stem": "设 z₁，z₂ 都是复数，则下列结论正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "若 z₁²+z₂²=0，则 z₁=z₂=0"
+      },
+      {
+       "label": "B",
+       "text": "z₁·z̄₁=|z₁|²"
+      },
+      {
+       "label": "C",
+       "text": "若 z₁z₂=0，则 z₁=0 或 z₂=0"
+      },
+      {
+       "label": "D",
+       "text": "|z₁z₂|=|z₁||z₂|"
+      }
+     ],
+     "answer": "BCD",
+     "analysis": "取 z₁=1，z₂=i，则 z₁²+z₂²=1+(−1)=0 而两者均不为 0，A 错误；z·z̄=|z|²、|z₁z₂|=|z₁||z₂| 是复数模与共轭的基本性质；复数集是数域，乘积为零必有一个因数为零，故 B、C、D 正确。",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（每选对一个正确选项得 2 分，最多 4 分）",
+      "有选错得 0 分"
+     ],
+     "itemId": "mat_exam_bx2_mid_a_q11",
+     "prereq": [
+      "mat_h373",
+      "mat_h375"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h374_q1",
+       "topicId": "mat_h374",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h374_q2",
+       "topicId": "mat_h374",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h374_q3",
+       "topicId": "mat_h374",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h373"
+     ],
+     "stem": "在复平面内，复数 z=2+i 对应的点为 A，则下列结论正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "点 A 的坐标为 (2,1)"
+      },
+      {
+       "label": "B",
+       "text": "|z|=√5"
+      },
+      {
+       "label": "C",
+       "text": "z 的共轭复数对应的点与 A 关于虚轴对称"
+      },
+      {
+       "label": "D",
+       "text": "向量 OA 与实轴正方向的夹角为 45°"
+      }
+     ],
+     "answer": "AB",
+     "analysis": "复数 2+i 对应点 (2,1)，模为 √(4+1)=√5；共轭复数 2−i 对应点 (2,−1)，与 A 关于实轴对称，C 错误；向量 (2,1) 与实轴夹角的正切值为 1/2，不是 45°，D 错误。",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（每选对一个正确选项得 2 分，最多 4 分）",
+      "有选错得 0 分"
+     ],
+     "itemId": "mat_exam_bx2_mid_a_q12",
+     "prereq": [
+      "mat_h372"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h373_q1",
+       "topicId": "mat_h373",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h373_q2",
+       "topicId": "mat_h373",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h373_q3",
+       "topicId": "mat_h373",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "三、填空题",
+   "rule": "每小题 5 分，共 20 分",
+   "items": [
+    {
+     "no": 13,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h358"
+     ],
+     "stem": "在△ABC 中，D 是边 BC 的中点，若 AB=a，AC=b，则 AD=＿＿＿＿（用 a，b 表示）",
+     "answer": "1/2(a+b)",
+     "analysis": "D 为 BC 中点，故 BC=AC−AB=b−a，BD=(1/2)BC，于是 AD=AB+BD=a+(1/2)(b−a)=(1/2)(a+b)。",
+     "itemId": "mat_exam_bx2_mid_a_q13",
+     "prereq": [
+      "mat_h357"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h358_q1",
+       "topicId": "mat_h358",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h358_q2",
+       "topicId": "mat_h358",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h358_q3",
+       "topicId": "mat_h358",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h365",
+      "mat_h366"
+     ],
+     "stem": "已知 a=(3,4)，b=(1,−2)，若 (a+λb)⊥(a−b)，则实数 λ 的值为＿＿＿＿",
+     "answer": "3",
+     "analysis": "a+λb=(3+λ,4−2λ)，a−b=(2,6)。由垂直得数量积为 0，即 2(3+λ)+6(4−2λ)=0，化简得 30−10λ=0，解得 λ=3。",
+     "verify": "30/10",
+     "itemId": "mat_exam_bx2_mid_a_q14",
+     "prereq": [
+      "mat_h364",
+      "mat_h365"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h365_q1",
+       "topicId": "mat_h365",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h365_q2",
+       "topicId": "mat_h365",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h365_q3",
+       "topicId": "mat_h365",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h370"
+     ],
+     "stem": "在△ABC 中，A=60°，a=√3，b=1，则 B=＿＿＿＿",
+     "answer": "30°",
+     "analysis": "由正弦定理 b/sinB=a/sinA 得 sinB=bsinA/a=(1×√3/2)/√3=1/2，故 B=30° 或 150°；又 a>b，所以 A>B，只能取 B=30°（150° 会使两角之和超过 180°）。",
+     "itemId": "mat_exam_bx2_mid_a_q15",
+     "prereq": [
+      "mat_h369"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h370_q1",
+       "topicId": "mat_h370",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h370_q2",
+       "topicId": "mat_h370",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h370_q3",
+       "topicId": "mat_h370",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h376"
+     ],
+     "stem": "已知复数 z 满足 (1+i)z=2i，则 |z| 的值为＿＿＿＿",
+     "answer": "√2",
+     "analysis": "z=2i/(1+i)=2i(1−i)/2=i(1−i)=1+i，故 |z|=√(1+1)=√2。也可用模的性质：|z|=|2i|/|1+i|=2/√2=√2。",
+     "itemId": "mat_exam_bx2_mid_a_q16",
+     "prereq": [
+      "mat_h375"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h376_q1",
+       "topicId": "mat_h376",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h376_q2",
+       "topicId": "mat_h376",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h376_q3",
+       "topicId": "mat_h376",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "四、解答题",
+   "rule": "共 70 分（第 17 题 10 分，第 18–22 题各 12 分）",
+   "items": [
+    {
+     "no": 17,
+     "score": 10,
+     "type": "solve",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h374",
+      "mat_h376"
+     ],
+     "stem": "已知复数 z=(1+2i)/(2−i)。（1）化简 z，并写出 z 的实部与虚部；（2）求 z·z̄ 的值。",
+     "answer": "z=i，实部为 0，虚部为 1；z·z̄=1",
+     "analysis": "分子分母同乘 2+i 实现分母实数化：z=(1+2i)(2+i)/[(2−i)(2+i)]=(2+i+4i+2i²)/5=(2+5i−2)/5=i，所以 z 的实部为 0、虚部为 1；由 z·z̄=|z|² 得 z·z̄=1。",
+     "scoreRule": [
+      "分子分母同乘 2+i，化简得 z=(1+2i)(2+i)/5，3 分",
+      "算出 z=i，并正确写出实部 0、虚部 1，4 分",
+      "由 z·z̄=|z|² 得出结果 1，3 分"
+     ],
+     "itemId": "mat_exam_bx2_mid_a_q17",
+     "prereq": [
+      "mat_h373",
+      "mat_h375"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h374_q1",
+       "topicId": "mat_h374",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h374_q2",
+       "topicId": "mat_h374",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h374_q3",
+       "topicId": "mat_h374",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 18,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h364",
+      "mat_h366"
+     ],
+     "stem": "已知向量 a=(1,2)，b=(−3,1)。（1）求 a+2b 与 a−b 的坐标；（2）求 a 与 b 夹角 θ 的余弦值；（3）若 (ka+b)⊥(a−b)，求实数 k 的值。",
+     "answer": "a+2b=(−5,4)，a−b=(4,1)；cosθ=−√2/10；k=11/6",
+     "analysis": "（1）a+2b=(1−6,2+2)=(−5,4)，a−b=(1+3,2−1)=(4,1)。（2）a·b=−3+2=−1，|a|=√5，|b|=√10，故 cosθ=−1/√50=−√2/10。（3）ka+b=(k−3,2k+1)，由 (ka+b)·(a−b)=0 得 4(k−3)+(2k+1)=0，即 6k−11=0，k=11/6。",
+     "scoreRule": [
+      "正确算出 a+2b=(−5,4) 与 a−b=(4,1)，4 分",
+      "由数量积与模长求得 cosθ=−√2/10，4 分",
+      "列出垂直条件 4(k−3)+(2k+1)=0，解得 k=11/6，4 分"
+     ],
+     "itemId": "mat_exam_bx2_mid_a_q18",
+     "prereq": [
+      "mat_h363",
+      "mat_h365"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h364_q1",
+       "topicId": "mat_h364",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h364_q2",
+       "topicId": "mat_h364",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h364_q3",
+       "topicId": "mat_h364",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 19,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h370"
+     ],
+     "stem": "在△ABC 中，内角 A，B，C 的对边分别为 a，b，c，已知 b=2，c=3，A=60°。（1）求 a；（2）求 sinB 与△ABC 的面积。",
+     "answer": "a=√7；sinB=√21/7；S=3√3/2",
+     "analysis": "（1）由余弦定理 a²=b²+c²−2bccosA=4+9−2×2×3×(1/2)=7，故 a=√7。（2）由正弦定理 sinB=bsinA/a=(2×√3/2)/√7=√3/√7=√21/7；面积 S=(1/2)bcsinA=(1/2)×2×3×(√3/2)=3√3/2。",
+     "scoreRule": [
+      "由余弦定理列式并求得 a=√7，4 分",
+      "由正弦定理求得 sinB=√21/7，4 分",
+      "用面积公式求得 S=3√3/2，4 分"
+     ],
+     "itemId": "mat_exam_bx2_mid_a_q19",
+     "prereq": [
+      "mat_h369"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h370_q1",
+       "topicId": "mat_h370",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h370_q2",
+       "topicId": "mat_h370",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h370_q3",
+       "topicId": "mat_h370",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 20,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h368",
+      "mat_h359"
+     ],
+     "stem": "在△ABC 中，D 是 BC 的中点，E 是 AD 的中点，设 AB=a，AC=b。（1）用 a，b 表示向量 BE；（2）若 |a|=2，|b|=3，a·b=3，求 |BE|。",
+     "answer": "BE=(−3a+b)/4；|BE|=3√3/4",
+     "analysis": "（1）AD=AB+BD=a+(1/2)(b−a)=(1/2)(a+b)，E 为 AD 中点，故 AE=(1/4)(a+b)，于是 BE=AE−AB=(1/4)(a+b)−a=(b−3a)/4。（2）|BE|²=(1/16)(9|a|²−6a·b+|b|²)=(1/16)(36−18+9)=27/16，故 |BE|=3√3/4。",
+     "scoreRule": [
+      "由中点条件求出 AD=(1/2)(a+b)，3 分",
+      "求出 BE=(b−3a)/4，2 分",
+      "展开 |b−3a|² 并代入数据得 27/16，4 分",
+      "开方得 |BE|=3√3/4，3 分"
+     ],
+     "itemId": "mat_exam_bx2_mid_a_q20",
+     "prereq": [
+      "mat_h367",
+      "mat_h358"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h368_q1",
+       "topicId": "mat_h368",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h368_q2",
+       "topicId": "mat_h368",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h368_q3",
+       "topicId": "mat_h368",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 21,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_h364",
+      "mat_h368"
+     ],
+     "stem": "已知 O 为坐标原点，向量 OA=(2,1)，OB=(1,3)，动点 P 在直线 AB 上。（1）求 AB 的坐标；（2）若 OP⊥AB，求点 P 的坐标；（3）求 |OP| 的最小值。",
+     "answer": "AB=(−1,2)；P(2,1)；|OP| 的最小值为 √5",
+     "analysis": "（1）AB=OB−OA=(−1,2)。（2）点 P 在直线 AB 上，可设 OP=OA+tAB=(2−t,1+2t)。由 OP⊥AB 得 (2−t)(−1)+(1+2t)·2=0，即 −2+t+2+4t=5t=0，t=0，故 P 与 A 重合，P(2,1)。（3）|OP| 的最小值即点 O 到直线 AB 的距离：因 OA·AB=−2+2=0，OA⊥AB，所以 A 就是垂足，最小值为 |OA|=√5。",
+     "scoreRule": [
+      "求得 AB=(−1,2)，3 分",
+      "设出 P 的坐标并列出 OP·AB=0，4 分",
+      "解得 t=0，得 P(2,1)，2 分",
+      "指出最小值为 O 到直线 AB 的距离并算出 √5，3 分"
+     ],
+     "itemId": "mat_exam_bx2_mid_a_q21",
+     "prereq": [
+      "mat_h363",
+      "mat_h367"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h364_q1",
+       "topicId": "mat_h364",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h364_q2",
+       "topicId": "mat_h364",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h364_q3",
+       "topicId": "mat_h364",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 22,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_h372",
+      "mat_h373"
+     ],
+     "stem": "已知复数 z 满足 |z−1|=|z+i|，且 z 的实部为 2。（1）求 z；（2）求 1/z 的模。",
+     "answer": "z=2−2i；|1/z|=√2/4",
+     "analysis": "设 z=2+yi（y∈R）。由 |z−1|=|z+i| 得 |1+yi|=|2+(y+1)i|，两边平方得 1+y²=4+(y+1)²，即 1+y²=y²+2y+5，解得 y=−2，故 z=2−2i。又 |z|=√(4+4)=2√2，所以 |1/z|=1/|z|=1/(2√2)=√2/4。",
+     "scoreRule": [
+      "设 z=2+yi 并把模相等转化为方程，4 分",
+      "化简求得 y=−2，得到 z=2−2i，4 分",
+      "由 |z|=2√2 求得 |1/z|=√2/4，4 分"
+     ],
+     "itemId": "mat_exam_bx2_mid_a_q22",
+     "prereq": [
+      "mat_h371",
+      "mat_h372"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h372_q1",
+       "topicId": "mat_h372",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h372_q2",
+       "topicId": "mat_h372",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h372_q3",
+       "topicId": "mat_h372",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "examId": "mat_exam_bx2_mid_a"
+}

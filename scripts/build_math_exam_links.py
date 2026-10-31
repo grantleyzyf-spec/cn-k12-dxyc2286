@@ -62,7 +62,9 @@ def cn2int(s):
 def paper_code(paper, kind):
     """第一单元测试卷 → u1；第二十五单元测试卷 → u25；期中测试卷A → mid_a；期末测试卷B → fin_b"""
     if kind == "unit":
-        m = re.search(r"第([一二三四五六七八九十百]+)单元", paper)
+        # 小学/初中叫「第X单元测试卷」，高中叫「第X章测试卷」，两种都要认，
+        # 否则高中卷会落到默认 u1，全部撞成同一个 examId
+        m = re.search(r"第([一二三四五六七八九十百]+)(?:单元|章)", paper)
         return f"u{cn2int(m.group(1) if m else '一')}"
     if kind == "midterm":
         return "mid_" + (paper[-1].lower() if paper[-1] in "AB" else "a")

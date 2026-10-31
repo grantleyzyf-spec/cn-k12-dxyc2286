@@ -1,0 +1,1081 @@
+{
+ "book": "必修第二册",
+ "term": "下册",
+ "grade": 10,
+ "stage": "高中",
+ "kind": "unit",
+ "paper": "第十章测试卷",
+ "duration": 120,
+ "fullScore": 150,
+ "scope": [
+  "第十章 概率"
+ ],
+ "sections": [
+  {
+   "title": "一、单选题",
+   "rule": "每小题 5 分，共 40 分",
+   "items": [
+    {
+     "no": 1,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h405"
+     ],
+     "stem": "某班在数学活动课上讨论“一定发生的事件”，四位同学各举一例，其中属于必然事件的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "掷一枚质地均匀的骰子，出现的点数是 7"
+      },
+      {
+       "label": "B",
+       "text": "任意实数的平方不小于 0"
+      },
+      {
+       "label": "C",
+       "text": "明天本地区下雨"
+      },
+      {
+       "label": "D",
+       "text": "连续两次抛掷硬币，两次都正面朝上"
+      }
+     ],
+     "answer": "B",
+     "analysis": "必然事件是在一定条件下必然发生的事件。A 中骰子只有 1～6 点，出现 7 点是不可能事件；B 中任何实数的平方都非负，必然成立；C、D 都可能发生也可能不发生，是随机事件。故选 B。",
+     "itemId": "mat_exam_bx2_u10_q01",
+     "prereq": [],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h405_q1",
+       "topicId": "mat_h405",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h405_q2",
+       "topicId": "mat_h405",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h405_q3",
+       "topicId": "mat_h405",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h406"
+     ],
+     "stem": "连续抛掷一枚质地均匀的硬币 3 次，则这个随机试验的样本空间中样本点的个数为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "8"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "A",
+     "analysis": "每次抛掷有正、反两种结果，三次抛掷相互独立地组合，样本空间 Ω = {(正,正,正), (正,正,反), …, (反,反,反)}，共 2³ = 8 个样本点。枚举时要按顺序写全，不能漏掉或重复。",
+     "itemId": "mat_exam_bx2_u10_q02",
+     "prereq": [
+      "mat_h405"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h406_q1",
+       "topicId": "mat_h406",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h406_q3",
+       "topicId": "mat_h406",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h406_q4",
+       "topicId": "mat_h406",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h408"
+     ],
+     "stem": "一个袋中装有 3 个红球和 2 个白球，这些球除颜色外完全相同。从中随机摸出 1 个球，则摸到红球的概率为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "3/5"
+      },
+      {
+       "label": "B",
+       "text": "2/5"
+      },
+      {
+       "label": "C",
+       "text": "1/3"
+      },
+      {
+       "label": "D",
+       "text": "1/2"
+      }
+     ],
+     "answer": "A",
+     "analysis": "这是古典概型：样本空间含 5 个等可能的样本点，事件“摸到红球”含 3 个样本点，故概率为 3/5。每个球被摸到的可能性相同是使用 P(A) = k/n 的前提。",
+     "itemId": "mat_exam_bx2_u10_q03",
+     "prereq": [
+      "mat_h407"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h408_q1",
+       "topicId": "mat_h408",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h408_q2",
+       "topicId": "mat_h408",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h408_q3",
+       "topicId": "mat_h408",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h407",
+      "mat_h409"
+     ],
+     "stem": "某随机试验中，事件 A 与事件 B 不能同时发生，且 P(A) = 0.3，P(B) = 0.4，则 P(A∪B) 等于（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.7"
+      },
+      {
+       "label": "B",
+       "text": "0.12"
+      },
+      {
+       "label": "C",
+       "text": "0.5"
+      },
+      {
+       "label": "D",
+       "text": "0.6"
+      }
+     ],
+     "answer": "A",
+     "analysis": "A 与 B 不能同时发生即两事件互斥，此时 A∩B = ∅，由互斥事件的加法公式得 P(A∪B) = P(A) + P(B) = 0.3 + 0.4 = 0.7。若两事件可以同时发生，则还要减去 P(A∩B)，结果会小于 0.7。",
+     "itemId": "mat_exam_bx2_u10_q04",
+     "prereq": [
+      "mat_h406",
+      "mat_h408"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h407_q1",
+       "topicId": "mat_h407",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h407_q2",
+       "topicId": "mat_h407",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h407_q3",
+       "topicId": "mat_h407",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h408"
+     ],
+     "stem": "从 1、2、3、4、5 中任取两个不同的数，则这两个数的和为偶数的概率为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "2/5"
+      },
+      {
+       "label": "B",
+       "text": "1/2"
+      },
+      {
+       "label": "C",
+       "text": "1/5"
+      },
+      {
+       "label": "D",
+       "text": "3/5"
+      }
+     ],
+     "answer": "A",
+     "analysis": "样本空间含 C(5,2) = 10 个等可能的样本点。和为偶数要求两数同奇或同偶：奇数有 3 个，取两个有 C(3,2) = 3 种；偶数有 2 个，取两个有 1 种，共 4 种，故概率为 4/10 = 2/5。",
+     "itemId": "mat_exam_bx2_u10_q05",
+     "prereq": [
+      "mat_h407"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h408_q1",
+       "topicId": "mat_h408",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h408_q2",
+       "topicId": "mat_h408",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h408_q3",
+       "topicId": "mat_h408",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h410"
+     ],
+     "stem": "甲、乙两人独立地参加某项考核，通过的概率分别为 0.8 和 0.7，则两人都通过的概率为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.56"
+      },
+      {
+       "label": "B",
+       "text": "0.75"
+      },
+      {
+       "label": "C",
+       "text": "0.06"
+      },
+      {
+       "label": "D",
+       "text": "1.5"
+      }
+     ],
+     "answer": "A",
+     "analysis": "两事件相互独立时，积事件的概率等于概率之积：P(甲乙都通过) = 0.8×0.7 = 0.56。独立时不能把概率相加，0.8 + 0.7 = 1.5 甚至超过了 1，明显不合理。",
+     "itemId": "mat_exam_bx2_u10_q06",
+     "prereq": [
+      "mat_h409"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h410_q1",
+       "topicId": "mat_h410",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h410_q2",
+       "topicId": "mat_h410",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h410_q3",
+       "topicId": "mat_h410",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h409"
+     ],
+     "stem": "已知 P(A) = 0.4，P(B) = 0.5，P(A∪B) = 0.7，则 P(A∩B) 等于（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.2"
+      },
+      {
+       "label": "B",
+       "text": "0.1"
+      },
+      {
+       "label": "C",
+       "text": "0.9"
+      },
+      {
+       "label": "D",
+       "text": "0.3"
+      }
+     ],
+     "answer": "A",
+     "analysis": "由概率的加法公式 P(A∪B) = P(A) + P(B) − P(A∩B)，得 P(A∩B) = 0.4 + 0.5 − 0.7 = 0.2。若忽略减去交集这一项，就会误得 0.9，这是最常见的错误。",
+     "itemId": "mat_exam_bx2_u10_q07",
+     "prereq": [
+      "mat_h408"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h409_q1",
+       "topicId": "mat_h409",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h409_q2",
+       "topicId": "mat_h409",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h409_q3",
+       "topicId": "mat_h409",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_h410",
+      "mat_h408"
+     ],
+     "stem": "甲、乙、丙三人独立射击同一目标，命中的概率分别为 2/3、3/4、4/5，则目标被命中的概率为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "59/60"
+      },
+      {
+       "label": "B",
+       "text": "1/5"
+      },
+      {
+       "label": "C",
+       "text": "1/60"
+      },
+      {
+       "label": "D",
+       "text": "2/5"
+      }
+     ],
+     "answer": "A",
+     "analysis": "“目标被命中”的对立事件是“三人都未命中”，其概率为 (1 − 2/3)(1 − 3/4)(1 − 4/5) = (1/3)(1/4)(1/5) = 1/60，故目标被命中的概率为 1 − 1/60 = 59/60。求“至少一个发生”优先考虑对立事件。",
+     "itemId": "mat_exam_bx2_u10_q08",
+     "prereq": [
+      "mat_h409",
+      "mat_h407"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h410_q1",
+       "topicId": "mat_h410",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h410_q2",
+       "topicId": "mat_h410",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h410_q3",
+       "topicId": "mat_h410",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "二、多选题",
+   "rule": "每小题 5 分，共 20 分（全部选对得 5 分，部分选对得部分分，有选错得 0 分）",
+   "items": [
+    {
+     "no": 9,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h405",
+      "mat_h406"
+     ],
+     "stem": "学完事件的分类与概率的意义后，四位同学写下了如下判断，其中正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "不可能事件的概率为 0"
+      },
+      {
+       "label": "B",
+       "text": "必然事件的概率等于 1"
+      },
+      {
+       "label": "C",
+       "text": "频率就是概率，两者是同一个概念"
+      },
+      {
+       "label": "D",
+       "text": "任何事件的概率都不大于 1"
+      }
+     ],
+     "answer": "ABD",
+     "analysis": "不可能事件不会发生，其概率为 0，A 正确；必然事件必发生，概率为 1，B 正确；频率是试验得到的值，随试验而变，概率是确定的常数，两者不是同一概念，C 错误；概率的取值范围是 [0, 1]，任何事件的概率都不大于 1，D 正确。故选 ABD。",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对但不全得 2 分）",
+      "有选错得 0 分"
+     ],
+     "itemId": "mat_exam_bx2_u10_q09",
+     "prereq": [
+      "mat_h405"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h405_q1",
+       "topicId": "mat_h405",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h405_q2",
+       "topicId": "mat_h405",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h405_q3",
+       "topicId": "mat_h405",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h407"
+     ],
+     "stem": "设 A、B 为两个事件，则下列说法正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "若 A 与 B 互斥，则 A∩B = ∅"
+      },
+      {
+       "label": "B",
+       "text": "若 A 与 B 是对立事件，则 A∪B 为必然事件"
+      },
+      {
+       "label": "C",
+       "text": "若 A 与 B 是对立事件，则 P(A) + P(B) = 1"
+      },
+      {
+       "label": "D",
+       "text": "若 A 与 B 互斥，则它们一定是对立事件"
+      }
+     ],
+     "answer": "ABC",
+     "analysis": "互斥即不能同时发生，用集合语言就是 A∩B = ∅，A 正确；对立事件要求既互斥又必有一个发生，故并事件是样本空间，B 正确；由 B 及 P(Ω) = 1 得 P(A) + P(B) = 1，C 正确；互斥未必对立，如掷骰子中“出现 1 点”与“出现 2 点”互斥但不构成对立事件，D 错误。故选 ABC。",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对但不全得 2 分）",
+      "有选错得 0 分"
+     ],
+     "itemId": "mat_exam_bx2_u10_q10",
+     "prereq": [
+      "mat_h406"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h407_q1",
+       "topicId": "mat_h407",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h407_q2",
+       "topicId": "mat_h407",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h407_q3",
+       "topicId": "mat_h407",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h408",
+      "mat_h409"
+     ],
+     "stem": "同时抛掷两枚质地均匀的骰子，则下列说法正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "两枚骰子点数之和为 7 的概率是 1/6"
+      },
+      {
+       "label": "B",
+       "text": "两枚骰子点数相同的概率是 1/6"
+      },
+      {
+       "label": "C",
+       "text": "两枚骰子点数之和大于 10 的概率是 1/12"
+      },
+      {
+       "label": "D",
+       "text": "两枚骰子点数之和为 12 的概率是 1/12"
+      }
+     ],
+     "answer": "ABC",
+     "analysis": "样本空间含 6×6 = 36 个等可能的样本点。和为 7 的情形有 (1,6)(2,5)(3,4)(4,3)(5,2)(6,1) 共 6 种，概率 1/6，A 正确；点数相同有 6 种，概率 1/6，B 正确；和大于 10 只有 (5,6)(6,5)(6,6) 共 3 种，概率 3/36 = 1/12，C 正确；和为 12 只有 (6,6) 一种，概率应为 1/36，D 错误。故选 ABC。",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对但不全得 2 分）",
+      "有选错得 0 分"
+     ],
+     "itemId": "mat_exam_bx2_u10_q11",
+     "prereq": [
+      "mat_h407",
+      "mat_h408"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h408_q1",
+       "topicId": "mat_h408",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h408_q2",
+       "topicId": "mat_h408",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h408_q3",
+       "topicId": "mat_h408",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_h410",
+      "mat_h411"
+     ],
+     "stem": "关于事件的独立性与频率，下列说法正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "若 A 与 B 相互独立，则 Ā 与 B 也相互独立"
+      },
+      {
+       "label": "B",
+       "text": "若 P(AB) = P(A)P(B)，则 A 与 B 相互独立"
+      },
+      {
+       "label": "C",
+       "text": "大量重复试验中，事件发生的频率会稳定在它的概率附近"
+      },
+      {
+       "label": "D",
+       "text": "若 A 与 B 互斥，则 A 与 B 一定相互独立"
+      }
+     ],
+     "answer": "ABC",
+     "analysis": "独立事件的对立事件仍与原事件独立，A 正确；P(AB) = P(A)P(B) 正是两事件独立的定义式，B 正确；频率的稳定性是用频率估计概率的依据，C 正确；互斥事件不能同时发生，若 P(A) > 0 则 P(AB) = 0 ≠ P(A)P(B)，一般不独立，D 错误。故选 ABC。",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对但不全得 2 分）",
+      "有选错得 0 分"
+     ],
+     "itemId": "mat_exam_bx2_u10_q12",
+     "prereq": [
+      "mat_h409",
+      "mat_h410"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h410_q1",
+       "topicId": "mat_h410",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h410_q2",
+       "topicId": "mat_h410",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h410_q3",
+       "topicId": "mat_h410",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "三、填空题",
+   "rule": "每小题 5 分，共 20 分",
+   "items": [
+    {
+     "no": 13,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h406",
+      "mat_h405"
+     ],
+     "stem": "掷一枚质地均匀的骰子，记事件 A = “出现的点数为偶数”，则事件 A 包含的样本点个数为 ______。",
+     "answer": "3",
+     "analysis": "该试验的样本空间为 {1, 2, 3, 4, 5, 6}，事件 A = {2, 4, 6}，共 3 个样本点。事件是样本空间的子集，写事件时应直接列举样本点而不要只写描述。",
+     "itemId": "mat_exam_bx2_u10_q13",
+     "prereq": [
+      "mat_h405"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h406_q1",
+       "topicId": "mat_h406",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h406_q2",
+       "topicId": "mat_h406",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h406_q3",
+       "topicId": "mat_h406",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h410"
+     ],
+     "stem": "若事件 A 与 B 相互独立，且 P(A) = 0.5，P(B) = 0.4，则 P(A∩B) = ______。",
+     "answer": "0.2",
+     "analysis": "由独立性定义 P(A∩B) = P(A)P(B) = 0.5×0.4 = 0.2。若两事件只是互斥而非独立，则 P(A∩B) = 0，两种情形要区分清楚。",
+     "itemId": "mat_exam_bx2_u10_q14",
+     "prereq": [
+      "mat_h409"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h410_q1",
+       "topicId": "mat_h410",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h410_q2",
+       "topicId": "mat_h410",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h410_q3",
+       "topicId": "mat_h410",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h408"
+     ],
+     "stem": "从 5 名男生和 3 名女生中任选 2 人参加活动，则恰好选到 1 名男生的概率为 ______。",
+     "answer": "15/28",
+     "analysis": "样本空间含 C(8,2) = 28 个等可能的样本点；恰好 1 名男生即 1 男 1 女，有 C(5,1)×C(3,1) = 5×3 = 15 种，故概率为 15/28。注意“恰好 1 名”既非“至少 1 名”也不是按顺序抽。",
+     "itemId": "mat_exam_bx2_u10_q15",
+     "prereq": [
+      "mat_h407"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h408_q1",
+       "topicId": "mat_h408",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h408_q2",
+       "topicId": "mat_h408",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h408_q3",
+       "topicId": "mat_h408",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_h408",
+      "mat_h409"
+     ],
+     "stem": "袋中有 4 个红球和 6 个白球，从中不放回地随机摸出 2 个球，则两个球颜色相同的概率为 ______。",
+     "answer": "7/15",
+     "analysis": "样本空间含 C(10,2) = 45 个等可能的样本点；两球同色分为都红 C(4,2) = 6 种、都白 C(6,2) = 15 种，共 21 种，故概率为 21/45 = 7/15。也可用 1 减去一红一白的概率 24/45。",
+     "itemId": "mat_exam_bx2_u10_q16",
+     "prereq": [
+      "mat_h407",
+      "mat_h408"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h408_q1",
+       "topicId": "mat_h408",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h408_q2",
+       "topicId": "mat_h408",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h408_q3",
+       "topicId": "mat_h408",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "四、解答题",
+   "rule": "共 70 分（第 17 题 10 分，第 18—22 题各 12 分）",
+   "items": [
+    {
+     "no": 17,
+     "score": 10,
+     "type": "solve",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h406",
+      "mat_h408"
+     ],
+     "stem": "同时抛掷两枚质地均匀的硬币。(1) 写出这个随机试验的样本空间；(2) 求“恰有一枚正面朝上”的概率；(3) 求“至少有一枚正面朝上”的概率。",
+     "answer": "(1) Ω = {(正, 正), (正, 反), (反, 正), (反, 反)}；(2) 1/2；(3) 3/4。",
+     "analysis": "(1) 两枚硬币的每种结果组合都是一个样本点，故样本空间含 4 个等可能的样本点。(2) “恰有一枚正面”包含 (正, 反) 与 (反, 正) 两个样本点，概率为 2/4 = 1/2。(3) “至少有一枚正面”包含除 (反, 反) 外的 3 个样本点，概率为 3/4；也可用对立事件 1 − 1/4 = 3/4。",
+     "scoreRule": [
+      "正确写出含 4 个样本点的样本空间得 4 分",
+      "指出恰有一枚正面含 2 个样本点并求出 1/2 得 3 分",
+      "求出至少一枚正面的概率 3/4 得 3 分"
+     ],
+     "itemId": "mat_exam_bx2_u10_q17",
+     "prereq": [
+      "mat_h405",
+      "mat_h407"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h406_q1",
+       "topicId": "mat_h406",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h406_q2",
+       "topicId": "mat_h406",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h406_q3",
+       "topicId": "mat_h406",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 18,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h408",
+      "mat_h409"
+     ],
+     "stem": "袋中装有 4 个红球和 2 个白球，这些球除颜色外完全相同，从中一次摸出 2 个球。(1) 求两个球都是红球的概率；(2) 求恰有 1 个红球的概率；(3) 求至少有 1 个白球的概率。",
+     "answer": "(1) 2/5；(2) 8/15；(3) 3/5。",
+     "analysis": "样本空间含 C(6,2) = 15 个等可能的样本点。(1) 两球都红：C(4,2) = 6 种，概率 6/15 = 2/5。(2) 恰有 1 个红球即 1 红 1 白：C(4,1)×C(2,1) = 8 种，概率 8/15。(3) 至少 1 个白球与“两球都红”互为对立事件，概率为 1 − 2/5 = 3/5。",
+     "scoreRule": [
+      "写出基本事件总数 C(6,2) = 15 得 2 分",
+      "求得两球都红的概率 2/5 得 3 分",
+      "求得恰有 1 个红球的概率 8/15 得 4 分",
+      "用对立事件求得至少 1 个白球的概率 3/5 得 3 分"
+     ],
+     "itemId": "mat_exam_bx2_u10_q18",
+     "prereq": [
+      "mat_h407",
+      "mat_h408"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h408_q1",
+       "topicId": "mat_h408",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h408_q2",
+       "topicId": "mat_h408",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h408_q3",
+       "topicId": "mat_h408",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 19,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h409",
+      "mat_h407"
+     ],
+     "stem": "已知事件 A、B 满足 P(A) = 0.5，P(B) = 0.3，P(A∪B) = 0.7。(1) 求 P(A∩B)；(2) 求 P(Ā∩B̄)；(3) 判断事件 A 与 B 是否相互独立，并说明理由。",
+     "answer": "(1) 0.1；(2) 0.3；(3) A 与 B 不相互独立。",
+     "analysis": "(1) 由加法公式 P(A∪B) = P(A) + P(B) − P(A∩B)，得 P(A∩B) = 0.5 + 0.3 − 0.7 = 0.1。(2) Ā∩B̄ 是 A∪B 的对立事件，故 P(Ā∩B̄) = 1 − P(A∪B) = 1 − 0.7 = 0.3。(3) 若 A、B 独立应有 P(A∩B) = P(A)P(B) = 0.5×0.3 = 0.15，而实际为 0.1，两者不等，故 A 与 B 不相互独立。",
+     "scoreRule": [
+      "用加法公式求得 P(A∩B) = 0.1 得 4 分",
+      "由对立事件求得 P(Ā∩B̄) = 0.3 得 4 分",
+      "算出 P(A)P(B) = 0.15 并与 0.1 比较得 2 分",
+      "得出不独立的结论得 2 分"
+     ],
+     "itemId": "mat_exam_bx2_u10_q19",
+     "prereq": [
+      "mat_h408",
+      "mat_h406"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h409_q1",
+       "topicId": "mat_h409",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h409_q2",
+       "topicId": "mat_h409",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h409_q3",
+       "topicId": "mat_h409",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 20,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h410"
+     ],
+     "stem": "甲、乙两人独立地解同一道题，甲解出的概率为 0.6，乙解出的概率为 0.5。(1) 求两人都解出的概率；(2) 求恰有一人解出的概率；(3) 求这道题被解出的概率。",
+     "answer": "(1) 0.3；(2) 0.5；(3) 0.8。",
+     "analysis": "(1) 两人独立，故都解出的概率为 0.6×0.5 = 0.3。(2) 恰有一人解出包含“甲解出且乙未解出”与“乙解出且甲未解出”两种互斥情形，概率为 0.6×0.5 + 0.4×0.5 = 0.3 + 0.2 = 0.5。(3) 题目被解出即至少一人解出，其对立事件是两人都没解出，概率为 1 − 0.4×0.5 = 1 − 0.2 = 0.8。",
+     "scoreRule": [
+      "由独立性求得两人都解出 0.3 得 4 分",
+      "分两种互斥情形求得恰有一人解出 0.5 得 4 分",
+      "用对立事件求得题目被解出 0.8 得 4 分"
+     ],
+     "itemId": "mat_exam_bx2_u10_q20",
+     "prereq": [
+      "mat_h409"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h410_q1",
+       "topicId": "mat_h410",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h410_q2",
+       "topicId": "mat_h410",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h410_q3",
+       "topicId": "mat_h410",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 21,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h408",
+      "mat_h410"
+     ],
+     "stem": "甲袋中装有 2 个红球和 1 个白球，乙袋中装有 1 个红球和 2 个白球，各球除颜色外完全相同。现从甲、乙两袋中各随机摸出 1 个球。(1) 求两球颜色相同的概率；(2) 求至少摸到 1 个红球的概率；(3) 求两球颜色不同的概率。",
+     "answer": "(1) 4/9；(2) 7/9；(3) 5/9。",
+     "analysis": "从甲袋摸到红球的概率为 2/3、白球为 1/3；从乙袋摸到红球的概率为 1/3、白球为 2/3；两袋的摸球结果相互独立。(1) 同色分为都红与都白两种互斥情形：2/3×1/3 + 1/3×2/3 = 2/9 + 2/9 = 4/9。(2) 至少 1 个红球的对立事件是两个都是白球，概率为 1 − 1/3×2/3 = 1 − 2/9 = 7/9。(3) 颜色不同与颜色相同互为对立事件，概率为 1 − 4/9 = 5/9。",
+     "scoreRule": [
+      "写出两袋摸到红球的概率 2/3 与 1/3 得 2 分",
+      "求得两球同色 4/9 得 4 分",
+      "用对立事件求得至少 1 红 7/9 得 3 分",
+      "求得颜色不同 5/9 得 3 分"
+     ],
+     "itemId": "mat_exam_bx2_u10_q21",
+     "prereq": [
+      "mat_h407",
+      "mat_h409"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h408_q1",
+       "topicId": "mat_h408",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h408_q2",
+       "topicId": "mat_h408",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h408_q3",
+       "topicId": "mat_h408",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 22,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h411",
+      "mat_h412",
+      "mat_h413"
+     ],
+     "stem": "某工厂质检部门随机抽检了 200 件产品，其中合格品 194 件。(1) 求这批抽检产品中合格品的频率；(2) 据此估计该厂产品的合格率；(3) 若该厂本月生产 10000 件产品，估计其中的次品件数；(4) 简述频率与概率的关系，并说明本题中用频率估计概率的合理性。",
+     "answer": "(1) 0.97；(2) 合格率约为 97%；(3) 次品约 300 件；(4) 频率是试验值，概率是确定的常数，试验次数很大时频率稳定在概率附近。",
+     "analysis": "(1) 合格品频率 = 194/200 = 0.97。(2) 用样本频率估计总体比例，该厂产品合格率约为 0.97，即 97%。(3) 次品率约为 1 − 0.97 = 0.03，故 10000 件中次品约为 10000×0.03 = 300 件。(4) 频率随试验次数变化，具有随机性；概率是事件本身的属性，是一个确定的数。大量重复试验中频率会在概率附近摆动并趋于稳定，这正是用频率估计概率的依据；本题抽检 200 件属于较大样本，且为随机抽检，故估计较为合理，但仍存在抽样误差。",
+     "scoreRule": [
+      "算出合格品频率 0.97 得 3 分",
+      "估计合格率约为 97% 得 2 分",
+      "求得次品率 0.03 与次品约 300 件得 3 分",
+      "说明频率的随机性与概率的确定性得 2 分",
+      "说明频率稳定于概率从而估计合理得 2 分"
+     ],
+     "itemId": "mat_exam_bx2_u10_q22",
+     "prereq": [
+      "mat_h410",
+      "mat_h411",
+      "mat_h412"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h411_q1",
+       "topicId": "mat_h411",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h411_q2",
+       "topicId": "mat_h411",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h411_q3",
+       "topicId": "mat_h411",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "examId": "mat_exam_bx2_u10"
+}

@@ -1,0 +1,1098 @@
+{
+ "book": "必修第二册",
+ "term": "下册",
+ "grade": 10,
+ "stage": "高中",
+ "kind": "unit",
+ "paper": "第六章测试卷",
+ "duration": 120,
+ "fullScore": 150,
+ "scope": [
+  "第六章 平面向量及其应用"
+ ],
+ "sections": [
+  {
+   "title": "一、单选题",
+   "rule": "每小题 5 分，共 40 分",
+   "items": [
+    {
+     "no": 1,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h355"
+     ],
+     "stem": "关于平面向量的几个概念，下列命题中为真命题的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "若 |a| = |b|，则 a = b"
+      },
+      {
+       "label": "B",
+       "text": "零向量与任意向量都共线"
+      },
+      {
+       "label": "C",
+       "text": "所有单位向量都相等"
+      },
+      {
+       "label": "D",
+       "text": "若 a 与 b 共线，则 a 与 b 的方向一定相同"
+      }
+     ],
+     "answer": "B",
+     "analysis": "A 中模相等只说明长度相同，方向可以不同，如 a=(1,0) 与 b=(−1,0)；B 中规定零向量的方向任意，因此它与任意向量共线，为真命题；C 中单位向量的模都是 1，但方向不同时不相等；D 中共线向量可以方向相反，如 a 与 −a。故选 B。",
+     "itemId": "mat_exam_bx2_u6_q01",
+     "prereq": [],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h355_q1",
+       "topicId": "mat_h355",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h355_q2",
+       "topicId": "mat_h355",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h355_q3",
+       "topicId": "mat_h355",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h357",
+      "mat_h358"
+     ],
+     "stem": "化简 向量 AB + 向量 MB + 向量 BO + 向量 OM 的结果是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "向量 AB"
+      },
+      {
+       "label": "B",
+       "text": "向量 BA"
+      },
+      {
+       "label": "C",
+       "text": "零向量"
+      },
+      {
+       "label": "D",
+       "text": "向量 AM"
+      }
+     ],
+     "answer": "A",
+     "analysis": "把后三项结合：向量 MB + 向量 BO = 向量 MO，于是 向量 MB + 向量 BO + 向量 OM = 向量 MO + 向量 OM = 0，故原式 = 向量 AB + 0 = 向量 AB。关键在于相邻向量首尾相接才能相加，中点 M 只是过渡点。",
+     "itemId": "mat_exam_bx2_u6_q02",
+     "prereq": [
+      "mat_h356",
+      "mat_h357"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h357_q1",
+       "topicId": "mat_h357",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h357_q2",
+       "topicId": "mat_h357",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h357_q3",
+       "topicId": "mat_h357",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h359"
+     ],
+     "stem": "设 e₁、e₂ 是不共线的两个向量，向量 a = e₁ + 2e₂，b = λe₁ − 4e₂，若 a∥b，则 λ 的值为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "−2"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "−1/2"
+      },
+      {
+       "label": "D",
+       "text": "1/2"
+      }
+     ],
+     "answer": "A",
+     "analysis": "a 与 b 共线且 a 非零，故存在实数 k 使 b = ka，即 λe₁ − 4e₂ = k e₁ + 2k e₂；由 e₁、e₂ 不共线，对应系数相等，得 k = −2，λ = k = −2。也可用系数比 λ/1 = (−4)/2 = −2。",
+     "itemId": "mat_exam_bx2_u6_q03",
+     "prereq": [
+      "mat_h358"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h359_q1",
+       "topicId": "mat_h359",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h359_q2",
+       "topicId": "mat_h359",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h359_q3",
+       "topicId": "mat_h359",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h360"
+     ],
+     "stem": "设向量 a、b 满足 |a| = 3，|b| = 2，且 a 与 b 的夹角为 120°，则 |a + 2b| 的值为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "√13"
+      },
+      {
+       "label": "B",
+       "text": "√19"
+      },
+      {
+       "label": "C",
+       "text": "√7"
+      },
+      {
+       "label": "D",
+       "text": "13"
+      }
+     ],
+     "answer": "A",
+     "analysis": "由夹角 120° 得 a·b = 3×2×cos120° = −3；平方展开 |a + 2b|² = |a|² + 4|b|² + 4a·b = 9 + 16 − 12 = 13，故 |a + 2b| = √13。含负数数量积时符号最容易出错，代入后要保留 −3。",
+     "itemId": "mat_exam_bx2_u6_q04",
+     "prereq": [
+      "mat_h359"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h360_q1",
+       "topicId": "mat_h360",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h360_q2",
+       "topicId": "mat_h360",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h360_q3",
+       "topicId": "mat_h360",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h363",
+      "mat_h364"
+     ],
+     "stem": "已知点 A(−1, 3)，B(2, −1)，则线段 AB 的长度为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "√13"
+      },
+      {
+       "label": "C",
+       "text": "√7"
+      },
+      {
+       "label": "D",
+       "text": "25"
+      }
+     ],
+     "answer": "A",
+     "analysis": "向量 AB = (2 − (−1), −1 − 3) = (3, −4)，其模 |AB| = √(3² + (−4)²) = √25 = 5。注意两点间距离公式里终点坐标减起点坐标，顺序反了只会差一个负号，不影响长度。",
+     "itemId": "mat_exam_bx2_u6_q05",
+     "prereq": [
+      "mat_h362",
+      "mat_h363"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h363_q1",
+       "topicId": "mat_h363",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h363_q2",
+       "topicId": "mat_h363",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h363_q3",
+       "topicId": "mat_h363",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h366"
+     ],
+     "stem": "已知向量 a = (m, 1)，b = (3, −2)，若 a 与 b 互相垂直，则实数 m 的值为（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "2/3"
+      },
+      {
+       "label": "B",
+       "text": "−2/3"
+      },
+      {
+       "label": "C",
+       "text": "3/2"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "answer": "A",
+     "analysis": "向量垂直的坐标条件是数量积为零：a·b = 3m + 1×(−2) = 3m − 2 = 0，解得 m = 2/3。检验：a·b = 3×(2/3) − 2 = 0，符合要求，故选 A。",
+     "itemId": "mat_exam_bx2_u6_q06",
+     "prereq": [
+      "mat_h365"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h366_q1",
+       "topicId": "mat_h366",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h366_q2",
+       "topicId": "mat_h366",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h366_q3",
+       "topicId": "mat_h366",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h370"
+     ],
+     "stem": "在△ABC 中，角 A、B、C 的对边分别为 a、b、c。若 A = 45°，B = 60°，b = √3，则 a 等于（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "√2"
+      },
+      {
+       "label": "B",
+       "text": "√6"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "√3/2"
+      }
+     ],
+     "answer": "A",
+     "analysis": "由正弦定理 a/sinA = b/sinB，得 a = b sinA/sinB = √3 × (√2/2) ÷ (√3/2) = √2。已知两角一边求另一边，先用三角形内角和求出第三角并不必要，直接用正弦定理即可。",
+     "itemId": "mat_exam_bx2_u6_q07",
+     "prereq": [
+      "mat_h369"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h370_q1",
+       "topicId": "mat_h370",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h370_q2",
+       "topicId": "mat_h370",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h370_q3",
+       "topicId": "mat_h370",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h368",
+      "mat_h360"
+     ],
+     "stem": "在△ABC 中，|向量 AB| = |向量 AC| = 2，∠BAC = 60°，则 向量 AB·向量 BC 等于（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "−2"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "−4"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "A",
+     "analysis": "把 BC 写成 AC − AB，则 AB·BC = AB·(AC − AB) = AB·AC − |AB|² = 2×2×cos60° − 4 = 2 − 4 = −2。这里最容易错在把 AB·BC 当成 |AB||BC|cos∠ABC，用向量分解更稳妥。",
+     "itemId": "mat_exam_bx2_u6_q08",
+     "prereq": [
+      "mat_h367",
+      "mat_h359"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h368_q1",
+       "topicId": "mat_h368",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h368_q2",
+       "topicId": "mat_h368",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h368_q3",
+       "topicId": "mat_h368",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "二、多选题",
+   "rule": "每小题 5 分，共 20 分（全部选对得 5 分，部分选对得部分分，有选错得 0 分）",
+   "items": [
+    {
+     "no": 9,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h356",
+      "mat_h357"
+     ],
+     "stem": "关于向量的线性运算，下列各式恒成立的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "a + b = b + a"
+      },
+      {
+       "label": "B",
+       "text": "(λ + μ)a = λa + μa（λ、μ∈R）"
+      },
+      {
+       "label": "C",
+       "text": "λ(μa) = (λμ)a（λ、μ∈R）"
+      },
+      {
+       "label": "D",
+       "text": "a·b = |a||b| 对任意向量 a、b 都成立"
+      }
+     ],
+     "answer": "ABC",
+     "analysis": "向量加法满足交换律，A 正确；数乘对系数满足分配律，B 正确；数乘满足结合律，C 正确；D 中 a·b = |a||b|cos⟨a,b⟩，只有当两向量同向时才等于 |a||b|，一般情形不成立。故选 ABC。",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对但不全得 2 分）",
+      "有选错得 0 分"
+     ],
+     "itemId": "mat_exam_bx2_u6_q09",
+     "prereq": [
+      "mat_h355",
+      "mat_h356"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h356_q1",
+       "topicId": "mat_h356",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h356_q2",
+       "topicId": "mat_h356",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h356_q3",
+       "topicId": "mat_h356",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h361",
+      "mat_h362"
+     ],
+     "stem": "设 e₁、e₂ 是不共线的两个向量，则下列各组向量中能作为平面内所有向量的一组基底的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "e₁ − e₂ 与 e₁ + e₂"
+      },
+      {
+       "label": "B",
+       "text": "e₁ + e₂ 与 2e₁ + 2e₂"
+      },
+      {
+       "label": "C",
+       "text": "e₁ 与 e₁ + e₂"
+      },
+      {
+       "label": "D",
+       "text": "2e₁ − 3e₂ 与 4e₁ − 6e₂"
+      }
+     ],
+     "answer": "AC",
+     "analysis": "一组向量能作基底的条件是两个向量不共线。A 中若 e₁ − e₂ 与 e₁ + e₂ 共线，则相加得 2e₁ 与 e₁ 共线，矛盾，故不共线，可作基底；B 中后者是前者的 2 倍，共线；C 中 e₁ 与 e₁ + e₂ 若共线则 e₂ 与 e₁ 共线，矛盾，可作基底；D 中后者是前者的 2 倍，共线。故选 AC。",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对但不全得 2 分）",
+      "有选错得 0 分"
+     ],
+     "itemId": "mat_exam_bx2_u6_q10",
+     "prereq": [
+      "mat_h360",
+      "mat_h361"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h361_q1",
+       "topicId": "mat_h361",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h361_q2",
+       "topicId": "mat_h361",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h361_q3",
+       "topicId": "mat_h361",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h366",
+      "mat_h360"
+     ],
+     "stem": "已知向量 a = (1, 2)，b = (2, −1)，则下列结论正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "|a| = √5"
+      },
+      {
+       "label": "B",
+       "text": "a·b = 0"
+      },
+      {
+       "label": "C",
+       "text": "与 b 垂直的单位向量只有 (√5/5, 2√5/5)"
+      },
+      {
+       "label": "D",
+       "text": "|a + b| = √10"
+      }
+     ],
+     "answer": "ABD",
+     "analysis": "|a| = √(1 + 4) = √5，A 正确；a·b = 1×2 + 2×(−1) = 0，B 正确；与 b 垂直的向量形如 t(1, 2)，取单位向量有两个方向 (√5/5, 2√5/5) 与 (−√5/5, −2√5/5)，C 说“只有”一个，错误；a + b = (3, 1)，|a + b| = √10，D 正确。故选 ABD。",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对但不全得 2 分）",
+      "有选错得 0 分"
+     ],
+     "itemId": "mat_exam_bx2_u6_q11",
+     "prereq": [
+      "mat_h365",
+      "mat_h359"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h366_q1",
+       "topicId": "mat_h366",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h366_q2",
+       "topicId": "mat_h366",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h366_q3",
+       "topicId": "mat_h366",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_h370",
+      "mat_h367"
+     ],
+     "stem": "在△ABC 中，角 A、B、C 的对边分别为 a、b、c，则下列结论正确的是（　　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "若 a² + b² > c²，则角 C 为锐角"
+      },
+      {
+       "label": "B",
+       "text": "若 sinA > sinB，则 A > B"
+      },
+      {
+       "label": "C",
+       "text": "若 a cosB = b cosA，则△ABC 为等腰三角形"
+      },
+      {
+       "label": "D",
+       "text": "若 b = 2a 且 B = 30°，则 A = 60°"
+      }
+     ],
+     "answer": "ABC",
+     "analysis": "由余弦定理 cosC = (a² + b² − c²)/(2ab) > 0，故 C 为锐角，A 正确；由正弦定理 sinA > sinB 等价于 a > b，也等价于 A > B，B 正确；a cosB = b cosA 化为 sinA cosB = sinB cosA，即 sin(A − B) = 0，得 A = B，C 正确；D 中由正弦定理 sinA = a sinB/b = (1/2)·(a/2a) = 1/4，A 不是 60°，D 错误。故选 ABC。",
+     "scoreRule": [
+      "全部选对得 5 分",
+      "部分选对得部分分（选对但不全得 2 分）",
+      "有选错得 0 分"
+     ],
+     "itemId": "mat_exam_bx2_u6_q12",
+     "prereq": [
+      "mat_h369",
+      "mat_h366"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h370_q1",
+       "topicId": "mat_h370",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h370_q2",
+       "topicId": "mat_h370",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h370_q3",
+       "topicId": "mat_h370",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "三、填空题",
+   "rule": "每小题 5 分，共 20 分",
+   "items": [
+    {
+     "no": 13,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h364",
+      "mat_h363"
+     ],
+     "stem": "已知向量 a = (1, −2)，b = (3, 1)，则 2a − b = ______。",
+     "answer": "(−1, −5)",
+     "analysis": "数乘与减法都按坐标分别进行：2a = (2, −4)，2a − b = (2 − 3, −4 − 1) = (−1, −5)。注意减法是对应坐标相减，不要漏掉把 b 的纵坐标 1 也变号相减。",
+     "itemId": "mat_exam_bx2_u6_q13",
+     "prereq": [
+      "mat_h363",
+      "mat_h362"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h364_q1",
+       "topicId": "mat_h364",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h364_q2",
+       "topicId": "mat_h364",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h364_q3",
+       "topicId": "mat_h364",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h365",
+      "mat_h361"
+     ],
+     "stem": "已知点 A(1, 2)，B(3, −1)，点 P 在直线 AB 上，且 向量 AP = 2 向量 PB，则点 P 的坐标为______。",
+     "answer": "(7/3, 0)",
+     "analysis": "设 P(x, y)，由 向量 AP = 2 向量 PB 得 (x − 1, y − 2) = 2(3 − x, −1 − y)，即 3x = 7，3y = 0，故 P(7/3, 0)。也可用定比分点：P 分 AB 的比为 2，P = (A + 2B)/3。",
+     "itemId": "mat_exam_bx2_u6_q14",
+     "prereq": [
+      "mat_h364",
+      "mat_h360"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h365_q1",
+       "topicId": "mat_h365",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h365_q2",
+       "topicId": "mat_h365",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h365_q3",
+       "topicId": "mat_h365",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h360",
+      "mat_h366"
+     ],
+     "stem": "已知向量 a = (1, 2)，b = (2, 1)，则 a 与 b 夹角的余弦值为______。",
+     "answer": "4/5",
+     "analysis": "a·b = 1×2 + 2×1 = 4，|a| = |b| = √5，故 cos⟨a,b⟩ = 4/(√5·√5) = 4/5。坐标形式下求夹角余弦，只需数量积除以两模之积，注意分母是两个模相乘而不是求和。",
+     "itemId": "mat_exam_bx2_u6_q15",
+     "prereq": [
+      "mat_h359",
+      "mat_h365"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h360_q1",
+       "topicId": "mat_h360",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h360_q2",
+       "topicId": "mat_h360",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h360_q3",
+       "topicId": "mat_h360",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_h369",
+      "mat_h357"
+     ],
+     "stem": "两个大小均为 10 N 的力作用在同一物体上，它们的夹角为 120°，则这两个力的合力大小为______N。",
+     "answer": "10",
+     "analysis": "用向量加法：|F₁ + F₂|² = 100 + 100 + 2×10×10×cos120° = 200 − 100 = 100，故合力大小为 10 N。也可由平行四边形法则知两等大力夹角 120° 时合力与每个分力等大。",
+     "itemId": "mat_exam_bx2_u6_q16",
+     "prereq": [
+      "mat_h368",
+      "mat_h356"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h369_q1",
+       "topicId": "mat_h369",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h369_q2",
+       "topicId": "mat_h369",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h369_q3",
+       "topicId": "mat_h369",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "四、解答题",
+   "rule": "共 70 分（第 17 题 10 分，第 18—22 题各 12 分）",
+   "items": [
+    {
+     "no": 17,
+     "score": 10,
+     "type": "solve",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_h357",
+      "mat_h358",
+      "mat_h359"
+     ],
+     "stem": "已知向量 a、b 不共线。(1) 化简 3(a + 2b) − 2(a − b)；(2) 若 (λa + b)∥(a + λb)，求实数 λ 的值。",
+     "answer": "(1) a + 8b；(2) λ = 1 或 λ = −1。",
+     "analysis": "(1) 去括号合并同类向量：3a + 6b − 2a + 2b = (3 − 2)a + (6 + 2)b = a + 8b。(2) 由共线条件，存在实数 k 使 λa + b = k(a + λb) = ka + kλb；因 a、b 不共线，系数必须相等，得 λ = k 且 1 = kλ，消去 k 得 λ² = 1，故 λ = 1 或 λ = −1。检验：λ = 1 时两向量都是 a + b；λ = −1 时两向量分别是 −a + b 与 a − b，互为相反向量，确实共线。",
+     "scoreRule": [
+      "去括号得 3a + 6b − 2a + 2b 得 2 分",
+      "同类项合并得 a + 8b 得 3 分",
+      "由共线设 λa + b = k(a + λb) 得 2 分",
+      "比较系数得 λ = k 且 kλ = 1 得 1 分",
+      "解出 λ = ±1 并说明两个值都成立得 2 分"
+     ],
+     "itemId": "mat_exam_bx2_u6_q17",
+     "prereq": [
+      "mat_h356",
+      "mat_h357",
+      "mat_h358"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h357_q1",
+       "topicId": "mat_h357",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h357_q2",
+       "topicId": "mat_h357",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h357_q3",
+       "topicId": "mat_h357",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 18,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h362",
+      "mat_h368"
+     ],
+     "stem": "在△ABC 中，D 是边 BC 的中点，E 是线段 AD 的中点。记 向量 AB = a，向量 AC = b。(1) 用 a、b 表示 向量 BE；(2) 若 向量 BE = λa + μb，求 λ + μ 的值。",
+     "answer": "(1) 向量 BE = −(3/4)a + (1/4)b；(2) λ + μ = −1/2。",
+     "analysis": "(1) 因为 D 是 BC 中点，故 向量 AD = (1/2)(向量 AB + 向量 AC) = (1/2)(a + b)；又 E 是 AD 的中点，故 向量 AE = (1/2)向量 AD = (1/4)(a + b)。于是 向量 BE = 向量 AE − 向量 AB = (1/4)(a + b) − a = −(3/4)a + (1/4)b。(2) 与 向量 BE = λa + μb 比较得 λ = −3/4，μ = 1/4，故 λ + μ = −1/2。",
+     "scoreRule": [
+      "用中点条件写出 向量 AD = (1/2)(a + b) 得 3 分",
+      "求出 向量 AE = (1/4)(a + b) 得 3 分",
+      "由 向量 BE = 向量 AE − 向量 AB 得 向量 BE = −(3/4)a + (1/4)b 得 3 分",
+      "读出 λ = −3/4、μ = 1/4 并求和得 λ + μ = −1/2 得 3 分"
+     ],
+     "itemId": "mat_exam_bx2_u6_q18",
+     "prereq": [
+      "mat_h361",
+      "mat_h367"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h362_q1",
+       "topicId": "mat_h362",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h362_q2",
+       "topicId": "mat_h362",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h362_q3",
+       "topicId": "mat_h362",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 19,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h366",
+      "mat_h360"
+     ],
+     "stem": "已知向量 a = (1, 2)，b = (−3, 2)。(1) 求 |a + b| 与 |a − b|；(2) 求 a 与 b 夹角的余弦值；(3) 若 (ka + b)⊥(a − 3b)，求实数 k 的值。",
+     "answer": "(1) |a + b| = 2√5，|a − b| = 4；(2) √65/65；(3) k = 19。",
+     "analysis": "(1) a + b = (−2, 4)，故 |a + b| = √(4 + 16) = 2√5；a − b = (4, 0)，故 |a − b| = 4。(2) a·b = −3 + 4 = 1，|a| = √5，|b| = √13，故 cos⟨a,b⟩ = 1/√65 = √65/65。(3) ka + b = (k − 3, 2k + 2)，a − 3b = (1 + 9, 2 − 6) = (10, −4)；由垂直得 10(k − 3) − 4(2k + 2) = 0，即 2k − 38 = 0，k = 19。",
+     "scoreRule": [
+      "算出 a + b 并求 |a + b| = 2√5 得 2 分",
+      "算出 a − b 并求 |a − b| = 4 得 2 分",
+      "用数量积求出 cos⟨a,b⟩ = √65/65 得 3 分",
+      "写出 ka + b 与 a − 3b 的坐标并列出垂直方程 10(k − 3) − 4(2k + 2) = 0 得 3 分",
+      "解得 k = 19 得 2 分"
+     ],
+     "itemId": "mat_exam_bx2_u6_q19",
+     "prereq": [
+      "mat_h365",
+      "mat_h359"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h366_q1",
+       "topicId": "mat_h366",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h366_q2",
+       "topicId": "mat_h366",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h366_q3",
+       "topicId": "mat_h366",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 20,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h370",
+      "mat_h367"
+     ],
+     "stem": "在△ABC 中，角 A、B、C 的对边分别为 a、b、c，已知 a = 7，b = 8，c = 5。(1) 求 cosA 及角 A；(2) 求△ABC 的面积；(3) 求△ABC 外接圆的半径 R。",
+     "answer": "(1) cosA = 1/2，A = 60°；(2) 面积 10√3；(3) R = 7√3/3。",
+     "analysis": "(1) 由余弦定理 cosA = (b² + c² − a²)/(2bc) = (64 + 25 − 49)/(2×8×5) = 40/80 = 1/2，又 0° < A < 180°，故 A = 60°。(2) 面积 S = (1/2)bc sinA = (1/2)×8×5×(√3/2) = 10√3。(3) 由正弦定理 a/sinA = 2R，得 R = a/(2sinA) = 7/(2×√3/2) = 7/√3 = 7√3/3。",
+     "scoreRule": [
+      "写出余弦定理并代入得 cosA = 1/2 得 3 分",
+      "由 cosA = 1/2 得 A = 60° 得 2 分",
+      "用面积公式 S = (1/2)bc sinA 算出 10√3 得 4 分",
+      "用正弦定理求 R = 7√3/3 得 3 分"
+     ],
+     "itemId": "mat_exam_bx2_u6_q20",
+     "prereq": [
+      "mat_h369",
+      "mat_h366"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h370_q1",
+       "topicId": "mat_h370",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h370_q2",
+       "topicId": "mat_h370",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h370_q3",
+       "topicId": "mat_h370",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 21,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_h370",
+      "mat_h367"
+     ],
+     "stem": "在△ABC 中，角 A、B、C 的对边分别为 a、b、c，且满足 2b cosB = a cosC + c cosA。(1) 求角 B；(2) 若 b = √3，求 a + c 的最大值。",
+     "answer": "(1) B = 60°；(2) a + c 的最大值为 2√3，此时 a = c = √3。",
+     "analysis": "(1) 由余弦定理把右边化为边：a cosC + c cosA = a(a² + b² − c²)/(2ab) + c(b² + c² − a²)/(2bc) = (a² + b² − c²)/(2b) + (b² + c² − a²)/(2b) = (2b²)/(2b) = b。于是 2b cosB = b，得 cosB = 1/2，故 B = 60°。(2) 由余弦定理 b² = a² + c² − 2ac cosB = a² + c² − ac = 3。设 s = a + c，则 a² + c² = s² − 2ac，代入得 s² − 3ac = 3，即 ac = (s² − 3)/3；又 ac ≤ ((a + c)/2)² = s²/4，故 (s² − 3)/3 ≤ s²/4，即 4s² − 12 ≤ 3s²，s² ≤ 12，s ≤ 2√3。当 a = c = √3 时取等号，故 a + c 的最大值为 2√3。",
+     "scoreRule": [
+      "用余弦定理把 a cosC + c cosA 化为 b 得 3 分",
+      "得 cosB = 1/2 并写出 B = 60° 得 2 分",
+      "由余弦定理列出 a² + c² − ac = 3 得 3 分",
+      "用基本不等式 ac ≤ ((a + c)/2)² 建立关于 a + c 的不等式得 2 分",
+      "解得 a + c ≤ 2√3 并指出等号成立条件得 2 分"
+     ],
+     "itemId": "mat_exam_bx2_u6_q21",
+     "prereq": [
+      "mat_h369",
+      "mat_h366"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h370_q1",
+       "topicId": "mat_h370",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h370_q2",
+       "topicId": "mat_h370",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h370_q3",
+       "topicId": "mat_h370",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 22,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_h368",
+      "mat_h369"
+     ],
+     "stem": "在△ABC 中，|向量 AB| = 2，|向量 AC| = 3，∠BAC = 60°。(1) 用向量方法求 |向量 BC|；(2) 设 M 为 BC 的中点，求 |向量 AM|；(3) 求 向量 AB 与 向量 BC 夹角的余弦值。",
+     "answer": "(1) |BC| = √7；(2) |AM| = √19/2；(3) −√7/14。",
+     "analysis": "(1) 向量 BC = 向量 AC − 向量 AB，两边平方得 |BC|² = |AC|² + |AB|² − 2 向量 AB·向量 AC = 9 + 4 − 2×2×3×cos60° = 13 − 6 = 7，故 |BC| = √7。(2) M 为中点，向量 AM = (1/2)(向量 AB + 向量 AC)，故 |AM|² = (1/4)(4 + 9 + 2×3) = 19/4，|AM| = √19/2。(3) 向量 AB·向量 BC = 向量 AB·(向量 AC − 向量 AB) = 3 − 4 = −1，又 |AB| = 2，|BC| = √7，故余弦值为 −1/(2√7) = −√7/14，为负说明该角是钝角。",
+     "scoreRule": [
+      "写出 向量 BC = 向量 AC − 向量 AB 并平方得 7 得 3 分",
+      "求出 |BC| = √7 得 2 分",
+      "用中点表示 向量 AM = (1/2)(向量 AB + 向量 AC) 得 2 分",
+      "算出 |AM|² = 19/4、|AM| = √19/2 得 3 分",
+      "求出 向量 AB·向量 BC = −1 并得余弦值 −√7/14 得 2 分"
+     ],
+     "itemId": "mat_exam_bx2_u6_q22",
+     "prereq": [
+      "mat_h367",
+      "mat_h368"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_h368_q1",
+       "topicId": "mat_h368",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_h368_q2",
+       "topicId": "mat_h368",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_h368_q3",
+       "topicId": "mat_h368",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "examId": "mat_exam_bx2_u6"
+}
