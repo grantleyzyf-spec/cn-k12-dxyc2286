@@ -19,6 +19,7 @@ import re
 import sys
 
 from docx import Document
+from docx.oxml import parse_xml
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
@@ -26,7 +27,11 @@ from docx.shared import Cm, Pt
 
 REPO = os.path.expanduser("~/Desktop/cn-k12-dxyc2286")
 EXAM = f"{REPO}/data/math/exams"
-OUT_ROOT = os.path.expanduser("~/Desktop/数学测试卷交付")
+OUT_ROOT = os.path.expanduser("~/Desktop/学科图谱相关资料/学科图谱原创试卷/数学/人教版")
+
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import math_typo  # noqa: E402
 
 
 def set_font(run, cn="宋体", size=10.5, bold=False, en="Times New Roman"):
@@ -57,8 +62,17 @@ def para(doc, text="", size=10.5, bold=False, align=None, cn="宋体",
     if keep_next:
         pf.keep_with_next = True
     if text:
-        r = p.add_run(text)
-        set_font(r, cn=cn, size=size, bold=bold)
+        if "√" in text:
+            # 根式写成 OMML，打印卷上就是带横线的规范根号（否则 √ 与被开方数只是并排，易误读）
+            for kind, val in math_typo.segments(text):
+                if kind == "text":
+                    r = p.add_run(val)
+                    set_font(r, cn=cn, size=size, bold=bold)
+                else:
+                    p._p.append(parse_xml(math_typo.omml_rad(val)))
+        else:
+            r = p.add_run(text)
+            set_font(r, cn=cn, size=size, bold=bold)
     return p
 
 

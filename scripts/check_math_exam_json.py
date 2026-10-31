@@ -39,6 +39,12 @@ TEMPLATES = {
  "初中": [("选择", 10, 3), ("填空", 6, 4), ("解答", 8, None)],
  "高中": [("单选", 8, 5), ("多选", 4, 5), ("填空", 4, 5), ("解答", 6, None)],
 }
+# 无计算单元（整单元课时点全属「图形与几何」「统计与概率」且教材本单元无计算内容）：
+# 首段不能强行塞「直接写得数/计算」，改用看图作答段；卷内必须显式写 "variant": "no-calc"。
+NO_CALC = {
+ "小学1-2": [("看图数一数", 10, 2), ("填空", 10, 2), ("选择", 8, 2), ("操作", 4, 4), ("解决问题", 4, 7)],
+ "小学3-6": [("看图作答", 6, 4), ("填空", 10, 2), ("选择", 8, 2), ("操作", 3, 4), ("解决问题", 4, 7)],
+}
 CLUSTER_SCORES = {"初中": [6, 6, 8, 8, 9, 9, 10, 10], "高中": [10, 12, 12, 12, 12, 12]}
 errs = []
 
@@ -83,6 +89,8 @@ def main():
 
     secs = ex.get("sections") or []
     tmpl = TEMPLATES.get(stage_key) or []
+    if (ex.get("variant") or "") == "no-calc":
+        tmpl = NO_CALC.get(stage_key) or tmpl
     if len(secs) != len(tmpl):
         E(f"{stage_key} 应有 {len(tmpl)} 个大题，实为 {len(secs)}")
     for i, (kw, n, each) in enumerate(tmpl):

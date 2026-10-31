@@ -221,3 +221,8 @@ details.faq p { margin: 8px 0 0; font-size: 14px; color: var(--ink-2); }
   .hero h1 { font-size: 27px; }
   main.home { padding-top: 16px; }
 }
+
+/* 规范根号：√ 后被开方数加顶部横线（讲解页与诊断页共用；learn.css 里已有一份，等价） */
+.rad { white-space: nowrap; display: inline-block; line-height: 1.15; vertical-align: -0.02em; }
+.rad .sq { display: inline-block; transform: scaleY(1.18) translateY(.02em); }
+.rad .rd { display: inline-block; border-top: 1.5px solid currentColor; padding: .05em .16em 0 .1em; margin-left: -.04em; }

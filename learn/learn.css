@@ -81,6 +81,13 @@ main.learn { max-width: 1180px; margin: 0 auto; padding: 24px 18px 72px; }
   font-size: 15.5px; line-height: 1.85; margin-bottom: 12px; padding-left: 4px;
 }
 .reader ol.steps-list li::marker { color: var(--brand); font-weight: 700; }
+/* 规范根号：√ 后接被开方数，顶部用 border-top 画横线 */
+.rad { white-space: nowrap; display: inline-block; line-height: 1.15; vertical-align: -0.02em; }
+.rad .sq { display: inline-block; transform: scaleY(1.18) translateY(.02em); }
+.rad .rd {
+  display: inline-block; border-top: 1.5px solid currentColor;
+  padding: .05em .16em 0 .1em; margin-left: -.04em;
+}
 .reader ul.dot { margin: 8px 0 14px; padding-left: 22px; }
 .reader ul.dot li { font-size: 15.5px; line-height: 1.8; margin-bottom: 4px; }
 .reader .navrow {

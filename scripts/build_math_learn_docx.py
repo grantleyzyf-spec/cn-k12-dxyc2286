@@ -15,10 +15,15 @@ import re
 import sys
 
 from docx import Document
+from docx.oxml import parse_xml
+from docx.oxml.ns import nsdecls
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Cm, Pt, RGBColor
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import math_typo  # noqa: E402
 
 REPO = os.path.expanduser("~/Desktop/cn-k12-dxyc2286")
 LEARN = f"{REPO}/data/math/learn"
@@ -55,14 +60,29 @@ def add_para(doc, text="", size=10.5, bold=False, cn="宋体", align=None,
     if align == "center":
         p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     if text:
-        # 行内 **bold** 拆成多个 run
-        for i, seg in enumerate(re.split(r"\*\*(.+?)\*\*", text)):
-            if not seg:
-                continue
-            r = p.add_run(seg)
-            set_font(r, cn=cn, size=size, bold=bold or (i % 2 == 1))
-            if color:
-                r.font.color.rgb = RGBColor.from_string(color)
+        if "√" in text:
+            # 根式：文本段写成普通 run，√ 之后的被开方数写成 OMML <m:rad>（Word 里是带横线的真根号）
+            for i, seg in enumerate(re.split(r"\*\*(.+?)\*\*", text)):
+                if not seg:
+                    continue
+                b = bold or (i % 2 == 1)
+                for kind, val in math_typo.segments(seg):
+                    if kind == "text":
+                        r = p.add_run(val)
+                        set_font(r, cn=cn, size=size, bold=b)
+                        if color:
+                            r.font.color.rgb = RGBColor.from_string(color)
+                    else:
+                        p._p.append(parse_xml(math_typo.omml_rad(val)))
+        else:
+            # 行内 **bold** 拆成多个 run
+            for i, seg in enumerate(re.split(r"\*\*(.+?)\*\*", text)):
+                if not seg:
+                    continue
+                r = p.add_run(seg)
+                set_font(r, cn=cn, size=size, bold=bold or (i % 2 == 1))
+                if color:
+                    r.font.color.rgb = RGBColor.from_string(color)
     if shaded:
         shade(p, shaded)
     return p

@@ -26,7 +26,15 @@
    * # / ## / ### 标题；> 引用（❌✅ 转为对照块）；- [ ] 自查；- 列表；**粗体**；段落 */
   function md2html(md) {
     var lines = md.split('\n'), out = [], i = 0;
-    function inline(t) { return esc(t).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>'); }
+    // 根式：√3、2√6、√(x+1) → 规范根号（横线盖住被开方数，与印刷体一致）
+    function radify(t) {
+      return t.replace(/√\s*(?:[\(（]([^()（）]{1,30})[\)）]|([0-9A-Za-z\u4e00-\u9fa5π·×°′″²³\/．.]{1,8}))/g,
+        function (m, g1, g2) {
+          var rad = (g1 || g2 || '').trim();
+          return '<span class="rad"><span class="sq">√</span><span class="rd">' + esc(rad) + '</span></span>';
+        });
+    }
+    function inline(t) { return radify(esc(t)).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>'); }
     while (i < lines.length) {
       var ln = lines[i].replace(/\s+$/, '');
       if (!ln.trim()) { i++; continue; }
