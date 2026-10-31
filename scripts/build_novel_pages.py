@@ -303,7 +303,7 @@ SHELF_TMPL = """<!DOCTYPE html>
   <h1>小说连载</h1>
   <p class="lead">全本免费，每日 5 章。读完想做题的，旁边就是知识图谱和整卷测试。</p>
   <div class="book">
-    <div class="cover"><img src="{root}assets/novel-cover.jpg?v=2" alt="{book} 封面"></div>
+    <div class="cover"><img src="{root}assets/novel-cover.jpg?v=3" alt="{book} 封面"></div>
     <div class="info">
       <h2>{book}</h2>
       <div class="meta">作者：{author} ｜ 已发布 {total} 章 / 预计 {plan} 章 ｜ 每日 5 章 ｜ 全本免费</div>
