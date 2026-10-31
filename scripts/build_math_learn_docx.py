@@ -110,6 +110,11 @@ def render(md, book, title, path):
             add_para(doc, body, size=10.5, left=0.7 if is_q else 0.4,
                      right=0.7 if is_q else 0, before=2, after=4,
                      shaded="F2F2F2" if is_q else None)
+        elif re.match(r"^\d+\.\s", ln):
+            txt = re.sub(r"^(\d+)\.\s*", r"\1. ", ln)
+            pp = add_para(doc, txt, size=10.5, after=6, first=0)
+            pp.paragraph_format.left_indent = Cm(0.7)
+            pp.paragraph_format.first_line_indent = Cm(-0.7)
         elif ln.startswith("- [ ]"):
             add_para(doc, "☐ " + ln[5:].strip(), size=10.5, left=0.6, after=2)
         elif ln.startswith("- "):

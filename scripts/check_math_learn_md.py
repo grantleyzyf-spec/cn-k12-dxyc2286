@@ -161,6 +161,12 @@ def main():
             sw = len(hanzi(sec[0]))
             if not (350 <= sw <= 700):
                 E(f"{nm}: 五步学习法节 {sw} 汉字，应在 350–700")
+        # 序号条目之间必须有空行：粘连会让渲染器把五步并成一段（用户已就此返修一次）
+        ls = md.split("\n")
+        for a, b in zip(ls, ls[1:]):
+            if re.match(r"^\d+\.\s", a.strip()) and re.match(r"^\d+\.\s", b.strip()):
+                E(f"{nm}: 序号条目粘连未分段 → {a.strip()[:16]}")
+                break
         if md.count("易错") < 1:
             E(f"{nm}: 缺易错点拨")
         if re.search(r"\$[^$]+\$|\\\\\(|\\\\\[", md):

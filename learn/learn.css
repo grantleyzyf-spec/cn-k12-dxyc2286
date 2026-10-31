@@ -75,6 +75,12 @@ main.learn { max-width: 1180px; margin: 0 auto; padding: 24px 18px 72px; }
 .reader ul.check li::before {
   content: "☐"; position: absolute; left: 4px; color: var(--brand); font-size: 15px;
 }
+/* site.css 里 ol 被全局设成 grid（首页卡片网格用），讲解页必须重置成普通列表 */
+.reader ol.steps-list { display: block; list-style: decimal outside; margin: 10px 0 16px; padding-left: 26px; }
+.reader ol.steps-list li { display: list-item; list-style: decimal outside;
+  font-size: 15.5px; line-height: 1.85; margin-bottom: 12px; padding-left: 4px;
+}
+.reader ol.steps-list li::marker { color: var(--brand); font-weight: 700; }
 .reader ul.dot { margin: 8px 0 14px; padding-left: 22px; }
 .reader ul.dot li { font-size: 15.5px; line-height: 1.8; margin-bottom: 4px; }
 .reader .navrow {

@@ -47,6 +47,25 @@
         }
         out.push('<ul class="dot">' + dots.join('') + '</ul>'); continue;
       }
+      if (/^\d+\.\s/.test(ln)) {
+        // 有序列表：数据里每步之间有空行，必须跨空行继续收集，否则会拆成 5 个各自从 1 开始的 <ol>
+        var ols = [], k = i;
+        while (k < lines.length) {
+          if (/^\d+\.\s/.test(lines[k])) {
+            ols.push('<li>' + inline(lines[k].replace(/^\d+\.\s*/, '')) + '</li>');
+            k++;
+            continue;
+          }
+          if (!lines[k].trim()) {                      // 空行：往后找下一条编号
+            var j = k;
+            while (j < lines.length && !lines[j].trim()) j++;
+            if (j < lines.length && /^\d+\.\s/.test(lines[j])) { k = j; continue; }
+          }
+          break;
+        }
+        i = k;
+        out.push('<ol class="steps-list">' + ols.join('') + '</ol>'); continue;
+      }
       if (/^>\s?/.test(ln)) {
         var paras = [];
         while (i < lines.length && /^>\s?/.test(lines[i])) {
@@ -59,7 +78,7 @@
         continue;
       }
       var buf = [];
-      while (i < lines.length && lines[i].trim() && !/^(#{1,3}\s|-\s|>\s?)/.test(lines[i])) {
+      while (i < lines.length && lines[i].trim() && !/^(#{1,3}\s|-\s|>\s?|\d+\.\s)/.test(lines[i])) {
         buf.push(lines[i].replace(/^\s+/, '')); i++;
       }
       out.push('<p>' + inline(buf.join('')) + '</p>');
