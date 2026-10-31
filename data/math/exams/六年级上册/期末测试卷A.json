@@ -1,0 +1,1287 @@
+{
+ "book": "六年级上册",
+ "kind": "final",
+ "term": "上册",
+ "grade": 6,
+ "stage": "小学",
+ "paper": "期末测试卷A",
+ "duration": 60,
+ "fullScore": 100,
+ "scope": [
+  "第一单元 确定位置",
+  "第二单元 分数乘法",
+  "第三单元 分数除法",
+  "综合与实践 生活中的负数",
+  "第四单元 圆",
+  "第五单元 百分数",
+  "第六单元 复习与关联"
+ ],
+ "examId": "mat_exam_g6a_fin_a",
+ "sections": [
+  {
+   "title": "一、计算",
+   "rule": "每小题 4 分，共 24 分",
+   "items": [
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1190"
+     ],
+     "stem": "计算：5/6 ÷ 5/12 × 3/10＝（　）。",
+     "answer": "0.6",
+     "verify": "5/6/(5/12)*3/10",
+     "analysis": "同级运算从左到右：5/6÷5/12＝5/6×12/5＝2；再算 2×3/10＝6/10，即 0.6。",
+     "score": 4,
+     "no": 1,
+     "itemId": "mat_exam_g6a_fin_a_q01",
+     "prereq": [
+      "mat_p1189"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1190_q1",
+       "topicId": "mat_p1190",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1190_q2",
+       "topicId": "mat_p1190",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1190_q3",
+       "topicId": "mat_p1190",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1182"
+     ],
+     "stem": "用简便方法计算：7/9 × 15 ＋ 7/9 × 3＝（　）。",
+     "answer": "14",
+     "verify": "7/9*15+7/9*3",
+     "analysis": "两项都有因数 7/9，用乘法分配律：7/9×(15＋3)＝7/9×18＝14。",
+     "score": 4,
+     "no": 2,
+     "itemId": "mat_exam_g6a_fin_a_q02",
+     "prereq": [
+      "mat_p1181"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1182_q1",
+       "topicId": "mat_p1182",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1182_q2",
+       "topicId": "mat_p1182",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1182_q3",
+       "topicId": "mat_p1182",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1201"
+     ],
+     "stem": "把 3/8 化成百分数，百分号前面的数是（　）。",
+     "answer": "37.5",
+     "verify": "3/8*100",
+     "analysis": "先把分数化成小数：3÷8＝0.375；再把小数点向右移动两位并添上百分号，得 37.5%。",
+     "score": 4,
+     "no": 3,
+     "itemId": "mat_exam_g6a_fin_a_q03",
+     "prereq": [
+      "mat_p1200"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1201_q1",
+       "topicId": "mat_p1201",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1201_q2",
+       "topicId": "mat_p1201",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1201_q3",
+       "topicId": "mat_p1201",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1194"
+     ],
+     "stem": "一个圆的半径是 5 cm，π 取 3.14，它的周长是（　　）cm。",
+     "answer": "31.4",
+     "verify": "2*3.14*5",
+     "analysis": "圆的周长 C＝2πr＝2×3.14×5＝31.4 cm。要注意周长用长度单位，不要写成面积单位。",
+     "score": 4,
+     "no": 4,
+     "itemId": "mat_exam_g6a_fin_a_q04",
+     "prereq": [
+      "mat_p1193"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1194_q1",
+       "topicId": "mat_p1194",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1194_q2",
+       "topicId": "mat_p1194",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1194_q4",
+       "topicId": "mat_p1194",
+       "difficulty": "standard"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1196"
+     ],
+     "stem": "一个圆的直径是 8 dm，π 取 3.14，它的面积是（　　）dm²。",
+     "answer": "50.24",
+     "verify": "3.14*4**2",
+     "analysis": "先求半径 8÷2＝4 dm，再算面积 S＝πr²＝3.14×16＝50.24 dm²。",
+     "score": 4,
+     "no": 5,
+     "itemId": "mat_exam_g6a_fin_a_q05",
+     "prereq": [
+      "mat_p1195"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1196_q1",
+       "topicId": "mat_p1196",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1196_q4",
+       "topicId": "mat_p1196",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1196_q5",
+       "topicId": "mat_p1196",
+       "difficulty": "hard"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "numeric",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1203"
+     ],
+     "stem": "一件商品原价 240 元，打七五折出售，现价是（　　）元。",
+     "answer": "180",
+     "verify": "240*0.75",
+     "analysis": "七五折就是按原价的 75% 出售：240×75%＝240×0.75＝180 元。",
+     "score": 4,
+     "no": 6,
+     "itemId": "mat_exam_g6a_fin_a_q06",
+     "prereq": [
+      "mat_p1202"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1203_q1",
+       "topicId": "mat_p1203",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1203_q2",
+       "topicId": "mat_p1203",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1203_q3",
+       "topicId": "mat_p1203",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    }
+   ]
+  },
+  {
+   "title": "二、填空",
+   "rule": "每小题 2 分，共 20 分",
+   "items": [
+    {
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1175"
+     ],
+     "stem": "点 P 的位置用数对表示是（4，6）。把点 P 向左平移 2 格、再向上平移 3 格得到点 Q，点 Q 的位置是（　　）。",
+     "answer": "（2，9）",
+     "analysis": "向左平移从列数里减：4－2＝2；向上平移往行数上加：6＋3＝9。所以点 Q 的位置是（2，9）。",
+     "score": 2,
+     "no": 7,
+     "itemId": "mat_exam_g6a_fin_a_q07",
+     "prereq": [],
+     "reteach": [
+      {
+       "qid": "mat_p1175_q1",
+       "topicId": "mat_p1175",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1175_q2",
+       "topicId": "mat_p1175",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1175_q3",
+       "topicId": "mat_p1175",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1183"
+     ],
+     "stem": "比 60 多 1/4 的数是（　　）。",
+     "answer": "75",
+     "verify": "60*(1+1/4)",
+     "analysis": "把 60 看作单位“1”，比它多 1/4 就是它的 1＋1/4＝5/4：60×5/4＝75。也可以先算多的部分 60×1/4＝15，再相加得 75。",
+     "score": 2,
+     "no": 8,
+     "itemId": "mat_exam_g6a_fin_a_q08",
+     "prereq": [
+      "mat_p1182"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1183_q1",
+       "topicId": "mat_p1183",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1183_q2",
+       "topicId": "mat_p1183",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1183_q3",
+       "topicId": "mat_p1183",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1189"
+     ],
+     "stem": "一个数的 5/8 是 40，这个数的 3/4 是（　　）。",
+     "answer": "48",
+     "verify": "40/(5/8)*3/4",
+     "analysis": "先求这个数：40÷5/8＝40×8/5＝64；再求它的 3/4：64×3/4＝48。两次运算一次是除法、一次是乘法，不能混。",
+     "score": 2,
+     "no": 9,
+     "itemId": "mat_exam_g6a_fin_a_q09",
+     "prereq": [
+      "mat_p1188"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1189_q1",
+       "topicId": "mat_p1189",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1189_q2",
+       "topicId": "mat_p1189",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1189_q3",
+       "topicId": "mat_p1189",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "fill",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_p1199"
+     ],
+     "stem": "一个扇形所在圆的半径是 4 cm，圆心角是 90°，π 取 3.14，这个扇形的面积是（　　）cm²。",
+     "answer": "12.56",
+     "verify": "3.14*4*4/4",
+     "analysis": "圆心角 90° 的扇形是整个圆的 90/360＝1/4，所以面积是 3.14×4×4÷4＝3.14×4＝12.56 cm²。",
+     "score": 2,
+     "no": 10,
+     "itemId": "mat_exam_g6a_fin_a_q10",
+     "prereq": [
+      "mat_p1198"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1199_q1",
+       "topicId": "mat_p1199",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1199_q2",
+       "topicId": "mat_p1199",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1199_q3",
+       "topicId": "mat_p1199",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1198"
+     ],
+     "stem": "在一个边长 6 cm 的正方形内画一个最大的圆，这个圆的直径是（　　）cm，半径是（　　）cm。",
+     "answer": "6 和 3",
+     "analysis": "正方形内最大的圆与正方形的四条边都相切，它的直径等于正方形的边长，即 6 cm，半径是 6÷2＝3 cm。",
+     "score": 2,
+     "no": 11,
+     "itemId": "mat_exam_g6a_fin_a_q11",
+     "prereq": [
+      "mat_p1197"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1198_q1",
+       "topicId": "mat_p1198",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1198_q2",
+       "topicId": "mat_p1198",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1198_q3",
+       "topicId": "mat_p1198",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1200"
+     ],
+     "stem": "把 20 g 盐溶解在 80 g 水中，这杯盐水的含盐率是（　　）%。",
+     "answer": "20",
+     "verify": "20/(20+80)*100",
+     "analysis": "含盐率＝盐的质量÷盐水的质量。盐水质量是 20＋80＝100 g，所以含盐率是 20÷100＝20%，不能除以水的质量 80 g。",
+     "score": 2,
+     "no": 12,
+     "itemId": "mat_exam_g6a_fin_a_q12",
+     "prereq": [],
+     "reteach": [
+      {
+       "qid": "mat_p1200_q1",
+       "topicId": "mat_p1200",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1200_q2",
+       "topicId": "mat_p1200",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1200_q3",
+       "topicId": "mat_p1200",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1206"
+     ],
+     "stem": "一件商品先涨价 10%，再降价 10%，现价是原价的（　　）%。",
+     "answer": "99",
+     "verify": "1.1*0.9*100",
+     "analysis": "设原价为 1，涨价后是 1×(1＋10%)＝1.1；再降价 10% 是 1.1×(1－10%)＝0.99。现价是原价的 99%，比原价低。",
+     "score": 2,
+     "no": 13,
+     "itemId": "mat_exam_g6a_fin_a_q13",
+     "prereq": [
+      "mat_p1205"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1206_q1",
+       "topicId": "mat_p1206",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1206_q2",
+       "topicId": "mat_p1206",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1206_q3",
+       "topicId": "mat_p1206",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1204"
+     ],
+     "stem": "把 5000 元存入银行，存期二年，年利率是 1.75%，到期可得利息（　　）元。",
+     "answer": "175",
+     "verify": "5000*0.0175*2",
+     "analysis": "利息＝本金×年利率×存期＝5000×1.75%×2＝175 元。利息不含本金，若问“一共取回多少元”还要加 5000 元。",
+     "score": 2,
+     "no": 14,
+     "itemId": "mat_exam_g6a_fin_a_q14",
+     "prereq": [
+      "mat_p1203"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1204_q1",
+       "topicId": "mat_p1204",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1204_q2",
+       "topicId": "mat_p1204",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1204_q3",
+       "topicId": "mat_p1204",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1191"
+     ],
+     "stem": "在数轴上，－2 在 0 的（　　　）边；－2 与 1 相差（　　）。",
+     "answer": "左；3",
+     "analysis": "数轴上负数都在 0 的左边，所以 －2 在 0 的左边。－2 到 0 有 2 个单位长度，0 到 1 有 1 个单位长度，共相差 3。",
+     "score": 2,
+     "no": 15,
+     "itemId": "mat_exam_g6a_fin_a_q15",
+     "prereq": [],
+     "reteach": [
+      {
+       "qid": "mat_p1191_q1",
+       "topicId": "mat_p1191",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1191_q2",
+       "topicId": "mat_p1191",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1191_q3",
+       "topicId": "mat_p1191",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1211"
+     ],
+     "stem": "把 9 个苹果放进 4 个盘子里，总有一个盘子至少放（　　）个苹果。",
+     "answer": "3",
+     "verify": "9//4+1",
+     "analysis": "如果每个盘子最多放 2 个，4 个盘子最多放 8 个，还剩 1 个，所以必有一个盘子至少放 3 个。用算式表示是 9÷4＝2……1，2＋1＝3。",
+     "score": 2,
+     "no": 16,
+     "itemId": "mat_exam_g6a_fin_a_q16",
+     "prereq": [
+      "mat_p1210"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1211_q1",
+       "topicId": "mat_p1211",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1211_q2",
+       "topicId": "mat_p1211",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1211_q3",
+       "topicId": "mat_p1211",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    }
+   ]
+  },
+  {
+   "title": "三、选择",
+   "rule": "每小题 2 分，共 16 分",
+   "items": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1178"
+     ],
+     "stem": "以学校为观测点，公园在学校南偏西 30° 方向 500 m 处。以公园为观测点，学校在公园的",
+     "options": [
+      {
+       "label": "A",
+       "text": "北偏东 30° 方向 500 m 处"
+      },
+      {
+       "label": "B",
+       "text": "南偏西 30° 方向 500 m 处"
+      },
+      {
+       "label": "C",
+       "text": "北偏西 30° 方向 500 m 处"
+      },
+      {
+       "label": "D",
+       "text": "东偏南 30° 方向 500 m 处"
+      }
+     ],
+     "answer": "A",
+     "analysis": "互相观测时方向相反：南的相反方向是北、西的相反方向是东，角度与距离不变。所以学校在公园北偏东 30° 方向 500 m 处，选 A。",
+     "score": 2,
+     "no": 17,
+     "itemId": "mat_exam_g6a_fin_a_q17",
+     "prereq": [
+      "mat_p1177"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1178_q1",
+       "topicId": "mat_p1178",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1178_q2",
+       "topicId": "mat_p1178",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1178_q3",
+       "topicId": "mat_p1178",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1180"
+     ],
+     "stem": "算式 2/3 × 1/2 表示的意义是",
+     "options": [
+      {
+       "label": "A",
+       "text": "求 2/3 的 1/2 是多少"
+      },
+      {
+       "label": "B",
+       "text": "2/3 与 1/2 的和是多少"
+      },
+      {
+       "label": "C",
+       "text": "2/3 里面有几个 1/2"
+      },
+      {
+       "label": "D",
+       "text": "2/3 是 1/2 的几倍"
+      }
+     ],
+     "answer": "A",
+     "analysis": "分数乘分数的意义是求一个数的几分之几是多少，2/3×1/2 就是求 2/3 的 1/2 是多少，积是 1/3，故选 A。",
+     "score": 2,
+     "no": 18,
+     "itemId": "mat_exam_g6a_fin_a_q18",
+     "prereq": [
+      "mat_p1179"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1180_q1",
+       "topicId": "mat_p1180",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1180_q2",
+       "topicId": "mat_p1180",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1180_q3",
+       "topicId": "mat_p1180",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1188"
+     ],
+     "stem": "下面算式中，商小于被除数的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "5/8 ÷ 2/3"
+      },
+      {
+       "label": "B",
+       "text": "5/8 ÷ 4/3"
+      },
+      {
+       "label": "C",
+       "text": "5/8 ÷ 1"
+      },
+      {
+       "label": "D",
+       "text": "5/8 ÷ 7/8"
+      }
+     ],
+     "answer": "B",
+     "analysis": "除数大于 1，商就小于被除数。4/3＞1，所以 5/8÷4/3 的商小于 5/8；2/3、7/8 都小于 1，商比被除数大；除以 1 商与被除数相等。",
+     "score": 2,
+     "no": 19,
+     "itemId": "mat_exam_g6a_fin_a_q19",
+     "prereq": [
+      "mat_p1187"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1188_q1",
+       "topicId": "mat_p1188",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1188_q2",
+       "topicId": "mat_p1188",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1188_q3",
+       "topicId": "mat_p1188",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1195"
+     ],
+     "stem": "一个圆的周长是 25.12 cm，π 取 3.14，这个圆的半径是",
+     "options": [
+      {
+       "label": "A",
+       "text": "4 cm"
+      },
+      {
+       "label": "B",
+       "text": "8 cm"
+      },
+      {
+       "label": "C",
+       "text": "2 cm"
+      },
+      {
+       "label": "D",
+       "text": "12.56 cm"
+      }
+     ],
+     "answer": "A",
+     "analysis": "由 C＝2πr 得 r＝C÷2π＝25.12÷(2×3.14)＝25.12÷6.28＝4 cm，所以选 A。",
+     "score": 2,
+     "no": 20,
+     "itemId": "mat_exam_g6a_fin_a_q20",
+     "prereq": [
+      "mat_p1194"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1195_q1",
+       "topicId": "mat_p1195",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1195_q3",
+       "topicId": "mat_p1195",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1195_q4",
+       "topicId": "mat_p1195",
+       "difficulty": "standard"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1197"
+     ],
+     "stem": "一个圆的半径由 2 cm 增加到 6 cm，这个圆的面积变为原来的",
+     "options": [
+      {
+       "label": "A",
+       "text": "3 倍"
+      },
+      {
+       "label": "B",
+       "text": "6 倍"
+      },
+      {
+       "label": "C",
+       "text": "9 倍"
+      },
+      {
+       "label": "D",
+       "text": "不变"
+      }
+     ],
+     "answer": "C",
+     "analysis": "半径由 2 cm 变成 6 cm，扩大到原来的 3 倍。由 S＝πr² 知面积要乘 3×3＝9，即变为原来的 9 倍（12.56 cm² 变成 113.04 cm²）。周长只扩大 3 倍，面积扩大 9 倍，不要混淆。",
+     "score": 2,
+     "no": 21,
+     "itemId": "mat_exam_g6a_fin_a_q21",
+     "prereq": [
+      "mat_p1196"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1197_q1",
+       "topicId": "mat_p1197",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1197_q2",
+       "topicId": "mat_p1197",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1197_q3",
+       "topicId": "mat_p1197",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1191"
+     ],
+     "stem": "下面各数中，比 －1 小的数是",
+     "options": [
+      {
+       "label": "A",
+       "text": "0"
+      },
+      {
+       "label": "B",
+       "text": "－0.5"
+      },
+      {
+       "label": "C",
+       "text": "－2"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "C",
+     "analysis": "负数比较大小，离 0 越远的数越小。－2 比 －1 离 0 更远，所以 －2＜－1；其余三个数都大于 －1。故选 C。",
+     "score": 2,
+     "no": 22,
+     "itemId": "mat_exam_g6a_fin_a_q22",
+     "prereq": [],
+     "reteach": [
+      {
+       "qid": "mat_p1191_q1",
+       "topicId": "mat_p1191",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1191_q2",
+       "topicId": "mat_p1191",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1191_q3",
+       "topicId": "mat_p1191",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "choice",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_p1205"
+     ],
+     "stem": "同一件标价 600 元的商品，甲商场“每满 300 元减 100 元”，乙商场打八折。在两个商场各买一件，付钱的情况是",
+     "options": [
+      {
+       "label": "A",
+       "text": "在甲商场付钱少"
+      },
+      {
+       "label": "B",
+       "text": "在乙商场付钱少"
+      },
+      {
+       "label": "C",
+       "text": "两个商场付钱一样多"
+      },
+      {
+       "label": "D",
+       "text": "条件不足，无法比较"
+      }
+     ],
+     "answer": "A",
+     "analysis": "甲商场：600 元里有 2 个 300 元，减 100×2＝200 元，实付 600－200＝400 元；乙商场：600×80%＝480 元。400＜480，所以甲商场更便宜，选 A。",
+     "score": 2,
+     "no": 23,
+     "itemId": "mat_exam_g6a_fin_a_q23",
+     "prereq": [
+      "mat_p1204"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1205_q1",
+       "topicId": "mat_p1205",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1205_q2",
+       "topicId": "mat_p1205",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1205_q3",
+       "topicId": "mat_p1205",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1211"
+     ],
+     "stem": "13 名同学中，至少有（　　）名同学的属相相同",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "A",
+     "analysis": "属相一共 12 种，把这 12 种属相当作 12 个“抽屉”，13 名同学放进去，一定有一个“抽屉”里至少有 13÷12＝1……1，即有 2 人属相相同，选 A。",
+     "score": 2,
+     "no": 24,
+     "itemId": "mat_exam_g6a_fin_a_q24",
+     "prereq": [
+      "mat_p1210"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1211_q1",
+       "topicId": "mat_p1211",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1211_q2",
+       "topicId": "mat_p1211",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1211_q3",
+       "topicId": "mat_p1211",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    }
+   ]
+  },
+  {
+   "title": "四、操作",
+   "rule": "每小题 4 分，共 12 分",
+   "items": [
+    {
+     "type": "solve",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1177"
+     ],
+     "stem": "以超市为观测点，邮局在超市北偏西 45° 方向 300 m 处。请按“图上 1 cm 表示实际 100 m”的比例尺，在平面图上标出邮局的位置，并写出图上距离。",
+     "answer": "图上距离是 3 cm：从超市画出北偏西 45° 方向的射线，在射线上截取 3 cm，端点就是邮局。",
+     "analysis": "先换算：300÷100＝3 cm。再以超市为顶点、以正北方向为一边向西量 45° 画出射线，在射线上量 3 cm 定出邮局的位置。",
+     "scoreRule": [
+      "先算出图上距离 300÷100＝3 cm 2 分",
+      "画出北偏西 45° 的射线并截取 3 cm 标出邮局 2 分"
+     ],
+     "score": 4,
+     "no": 25,
+     "itemId": "mat_exam_g6a_fin_a_q25",
+     "prereq": [
+      "mat_p1176"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1177_q1",
+       "topicId": "mat_p1177",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1177_q2",
+       "topicId": "mat_p1177",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1177_q3",
+       "topicId": "mat_p1177",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1198"
+     ],
+     "stem": "用圆规画一个半径 1.5 cm 的圆，标出圆心 O、半径 r 和直径 d；再在这个圆内画两条互相垂直的直径，并说明得到的四个扇形的大小关系。",
+     "answer": "画出的圆半径 1.5 cm、直径 3 cm；两条互相垂直的直径把圆分成四个圆心角都是 90° 的扇形，这四个扇形完全相同。",
+     "analysis": "圆规两脚间的距离就是半径，取 1.5 cm 画圆，针尖所扎的点是圆心 O。直径都经过圆心，两条互相垂直的直径把圆平均分成 4 份，每份圆心角 360°÷4＝90°，面积也相等。",
+     "scoreRule": [
+      "画出半径 1.5 cm 的圆并标出圆心、半径、直径 2 分",
+      "画出两条互相垂直的直径，说明四个扇形完全相同 2 分"
+     ],
+     "score": 4,
+     "no": 26,
+     "itemId": "mat_exam_g6a_fin_a_q26",
+     "prereq": [
+      "mat_p1197"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1198_q1",
+       "topicId": "mat_p1198",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1198_q2",
+       "topicId": "mat_p1198",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1198_q3",
+       "topicId": "mat_p1198",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1208"
+     ],
+     "stem": "某班 20 名同学 1 分钟跳绳的成绩（单位：次）从小到大排列是：82、86、90、92、95、98、100、102、104、106、108、110、112、115、118、120、124、128、132、140。如果希望 60% 的同学能达标，达标线应定在多少次？请写出确定的过程。",
+     "answer": "达标线定在 104 次。",
+     "analysis": "20×60%＝12，应有 12 人达到达标线。从最高分往下数：140 是第 1 个，132 是第 2 个……数到第 12 个是 104 次；也可以从低往高数，第 20－12＋1＝9 个成绩是 104 次，所以达标线定 104 次，104 次及以上的正好 12 人。",
+     "scoreRule": [
+      "算出 20×60%＝12，即应有 12 人达标 2 分",
+      "在排序后的数据中找出从高往低数第 12 个成绩是 104 次，并把达标线定为 104 次 2 分"
+     ],
+     "score": 4,
+     "no": 27,
+     "itemId": "mat_exam_g6a_fin_a_q27",
+     "prereq": [
+      "mat_p1207"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1208_q1",
+       "topicId": "mat_p1208",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1208_q2",
+       "topicId": "mat_p1208",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1208_q3",
+       "topicId": "mat_p1208",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    }
+   ]
+  },
+  {
+   "title": "五、解决问题",
+   "rule": "每小题 7 分，共 28 分",
+   "items": [
+    {
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1205"
+     ],
+     "stem": "一种运动鞋标价 480 元。甲商场打八折出售，乙商场“每满 200 元减 50 元”。在哪个商场买更便宜？便宜多少元？",
+     "answer": "甲商场 384 元，乙商场 380 元，在乙商场买更便宜，便宜 4 元。",
+     "analysis": "甲商场：480×80%＝384 元。乙商场：480 元里有 2 个 200 元，减 50×2＝100 元，实付 480－100＝380 元。380＜384，乙商场便宜 384－380＝4 元。",
+     "scoreRule": [
+      "算出甲商场应付 480×80%＝384（元）3 分",
+      "算出乙商场应付 480－50×2＝380（元）3 分",
+      "比较得出乙商场便宜 4 元并写出答语 1 分"
+     ],
+     "score": 7,
+     "no": 28,
+     "itemId": "mat_exam_g6a_fin_a_q28",
+     "prereq": [
+      "mat_p1204"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1205_q1",
+       "topicId": "mat_p1205",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1205_q2",
+       "topicId": "mat_p1205",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1205_q3",
+       "topicId": "mat_p1205",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1204"
+     ],
+     "stem": "妈妈把 20000 元存入银行，存期三年，年利率是 2.75%。到期时她把所得利息全部捐给希望工程，能捐多少元？",
+     "answer": "20000×2.75%×3＝1650（元），能捐 1650 元。",
+     "analysis": "利息＝本金×年利率×存期。本金 20000 元，年利率 2.75%，存期 3 年，所以利息是 20000×0.0275×3＝1650 元。题目问的是利息，不包含本金。",
+     "scoreRule": [
+      "写出利息的计算方法：利息＝本金×年利率×存期 3 分",
+      "代入算出 20000×2.75%×3＝1650（元）3 分",
+      "写出答语 1 分"
+     ],
+     "score": 7,
+     "no": 29,
+     "itemId": "mat_exam_g6a_fin_a_q29",
+     "prereq": [
+      "mat_p1203"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1204_q1",
+       "topicId": "mat_p1204",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1204_q2",
+       "topicId": "mat_p1204",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1204_q3",
+       "topicId": "mat_p1204",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1197"
+     ],
+     "stem": "公园里有一个圆形花坛，外直径 10 m，花坛中间是一个直径 4 m 的圆形水池。花坛（圆环部分）的种植面积是多少平方米？π 取 3.14。",
+     "answer": "外圆面积 78.5 m²，内圆面积 12.56 m²，圆环的种植面积是 65.94 m²。",
+     "analysis": "外圆半径 10÷2＝5 m，内圆半径 4÷2＝2 m。外圆面积 3.14×5²＝78.5 m²，内圆面积 3.14×2²＝12.56 m²。圆环面积＝外圆面积－内圆面积＝78.5－12.56＝65.94 m²。",
+     "scoreRule": [
+      "求出外圆半径 5 m、内圆半径 2 m 2 分",
+      "分别算出外圆面积 78.5 m²、内圆面积 12.56 m² 2 分",
+      "用外圆面积减内圆面积得 65.94 m² 2 分",
+      "写出答语 1 分"
+     ],
+     "score": 7,
+     "no": 30,
+     "itemId": "mat_exam_g6a_fin_a_q30",
+     "prereq": [
+      "mat_p1196"
+     ],
+     "reteach": [
+      {
+       "qid": "mat_p1197_q1",
+       "topicId": "mat_p1197",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1197_q2",
+       "topicId": "mat_p1197",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1197_q3",
+       "topicId": "mat_p1197",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    },
+    {
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_p1210"
+     ],
+     "stem": "六（2）班共有学生 45 人，女生人数是男生人数的 4/5。这个班男、女生各有多少人？",
+     "answer": "男生 25 人，女生 20 人。",
+     "analysis": "把男生人数看作单位“1”，女生是男生的 4/5，全班人数就是男生的 1＋4/5＝9/5。所以男生 45÷9/5＝25 人，女生 45－25＝20 人。也可列方程 x＋4/5x＝45 解得 x＝25。检验：20÷25＝4/5，20＋25＝45，符合题意。",
+     "scoreRule": [
+      "把男生人数看作单位“1”，说明全班人数是男生的 1＋4/5＝9/5（或设未知数列方程）3 分",
+      "求出男生 45÷9/5＝25（人）2 分",
+      "求出女生 45－25＝20（人）1 分",
+      "写出答语并检验 1 分"
+     ],
+     "score": 7,
+     "no": 31,
+     "itemId": "mat_exam_g6a_fin_a_q31",
+     "prereq": [],
+     "reteach": [
+      {
+       "qid": "mat_p1210_q1",
+       "topicId": "mat_p1210",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1210_q2",
+       "topicId": "mat_p1210",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1210_q3",
+       "topicId": "mat_p1210",
+       "difficulty": "basic"
+      }
+     ],
+     "prereqUpper": []
+    }
+   ]
+  }
+ ]
+}
