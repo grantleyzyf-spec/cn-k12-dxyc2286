@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>数学自适应诊断 · 答题站</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <h1>数学自适应诊断 · 答题站</h1>
+  <div id="crumb"><a href="#" id="homeLink">选择试卷</a><span id="crumbTail"></span></div>
+</header>
+
+<main>
+  <!-- 选卷 -->
+  <section id="view-pick">
+    <p class="hint">选一份试卷开始。作答后系统自动判题并给出知识点掌握度、前置缺口与错因提示，可一键生成补练清单。</p>
+    <div id="papers" class="cards"></div>
+  </section>
+
+  <!-- 答题 -->
+  <section id="view-paper" hidden>
+    <div class="paperhead">
+      <h2 id="paperTitle"></h2>
+      <div class="meta" id="paperMeta"></div>
+      <div class="meta" id="paperScope"></div>
+    </div>
+    <form id="answerForm"></form>
+    <div class="actions">
+      <button id="submitBtn" type="button">提交并诊断</button>
+      <button id="resetBtn" type="button" class="ghost">清空作答</button>
+    </div>
+  </section>
+
+  <!-- 报告 -->
+  <section id="view-report" hidden>
+    <h2>诊断报告</h2>
+    <div id="scoreBox" class="scorebox"></div>
+    <div id="report"></div>
+    <div class="actions">
+      <button id="practiceBtn" type="button">生成补练清单</button>
+      <button id="printBtn" type="button" class="ghost">打印报告</button>
+      <button id="backBtn" type="button" class="ghost">返回选卷</button>
+    </div>
+    <div id="practiceBox"></div>
+  </section>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
