@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>教师入口 · 教学设计资源 - 中国 K-12 知识图谱</title>
+<meta name="description" content="K-12 教师入口：大单元整体教学设计、分课时教学设计、单元作业设计、项目教学设计，按学科/教材版本/册次/单元检索，附获取完整 Word 的方式。">
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+  body { background: var(--bg); }
+  main.tp { max-width: 980px; margin: 0 auto; padding: 26px 18px 64px; }
+  .hero { margin: 4px 0 22px; }
+  .hero h1 { margin: 0 0 8px; font-size: clamp(24px, 4vw, 34px); letter-spacing: -.01em; }
+  .hero p { margin: 0; color: var(--ink-2); font-size: 15px; line-height: 1.7; }
+  .search { margin: 20px 0 26px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .search input {
+    flex: 1; min-width: 220px; min-height: 46px; padding: 0 14px; font-size: 15px;
+    border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--card); color: var(--ink);
+  }
+  .search input:focus { outline: 2px solid var(--brand); outline-offset: 1px; }
+  .search button {
+    min-height: 46px; padding: 0 20px; background: var(--brand); color: #fff; border: 1px solid var(--brand);
+    border-radius: var(--radius-sm); font-size: 15px; font-weight: 650; cursor: pointer; font-family: inherit;
+  }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(228px, 1fr)); gap: 14px; }
+  .card {
+    display: block; text-decoration: none; color: inherit; background: var(--card);
+    border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow);
+  }
+  .card:hover { border-color: var(--brand); }
+  .card h2 { margin: 0 0 6px; font-size: 17px; color: var(--ink); }
+  .card .n { font-size: 22px; font-weight: 750; color: var(--brand-ink); }
+  .card .d { font-size: 13px; color: var(--ink-2); line-height: 1.6; margin-top: 6px; }
+  .badge { display: inline-block; font-size: 11.5px; padding: 1px 7px; border-radius: 99px; margin-left: 6px; vertical-align: 2px; }
+  .badge.on { background: #ecfdf5; color: #047857; }
+  .badge.soon { background: var(--line); color: var(--ink-2); }
+  .section-title { margin: 30px 0 12px; font-size: 16px; color: var(--ink); }
+  .cta { margin-top: 34px; background: linear-gradient(180deg, var(--brand-soft), var(--card));
+         border: 1px solid color-mix(in srgb, var(--brand) 35%, transparent); border-radius: var(--radius); padding: 20px; }
+  .cta h2 { margin: 0 0 8px; font-size: 17px; color: var(--brand-ink); }
+  .cta .row { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+  .cta img { width: 132px; height: 132px; border-radius: 8px; background: #fff; border: 1px solid var(--line); }
+  .cta ol { margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.9; }
+  .note { font-size: 12.5px; color: var(--ink-2); line-height: 1.7; margin-top: 22px; }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../">
+    <span class="brand-copy"><span class="brand-name">中国 K-12 知识图谱</span><span class="brand-kicker">教师入口</span></span>
+  </a>
+  <nav class="site-nav">
+    <a class="nav-link active" href="./">教师入口</a>
+    <a class="nav-link" href="../diagnose/?mode=exam">整卷测试</a>
+    <a class="nav-link" href="../">学生入口</a>
+    <a class="nav-link" href="../explore/">知识图谱</a>
+  </nav>
+</header>
+<main class="tp">
+  <div class="hero">
+    <h1>教师入口</h1>
+    <p>按「学科 → 教材版本 → 册次 → 单元」找教学设计：单元概览、学习目标、重难点、课时安排免费看；完整 Word 原件通过公众号获取。</p>
+  </div>
+
+  <div class="search">
+    <input id="q" type="search" placeholder="搜单元名、册次或关键词，例如：相交线与平行线 / 五上 / 分数的意义" autocomplete="off">
+    <button id="go">搜索</button>
+  </div>
+
+  <div class="grid" id="cards">
+    <a class="card" href="./unit-design/">
+      <h2>大单元整体教学设计<span class="badge on">已上线</span></h2>
+      <div class="n" id="n-unit">—</div>
+      <div class="d">十六部分完整结构：内容分析、课标分解、学情、目标、重难点、教学思路、学业评价、学历案、课时设计、作业、反思。</div>
+    </a>
+    <a class="card" href="./period-design/">
+      <h2>分课时教学设计<span class="badge soon">筹备中</span></h2>
+      <div class="n">—</div>
+      <div class="d">单课时教案：课时目标、重难点、教学流程、板书、作业与反思，按册次与单元归集。</div>
+    </a>
+    <a class="card" href="./homework-design/">
+      <h2>单元作业设计<span class="badge soon">筹备中</span></h2>
+      <div class="n">—</div>
+      <div class="d">分基础/提升/拓展三层的单元作业单，附答案与评价要点，与知识点掌握标准对应。</div>
+    </a>
+    <a class="card" href="./project-design/">
+      <h2>项目教学设计<span class="badge soon">筹备中</span></h2>
+      <div class="n">—</div>
+      <div class="d">跨学科项目式学习设计：驱动性问题、任务链、评价量表与课时安排。</div>
+    </a>
+  </div>
+
+  <h2 class="section-title">教师还能用什么</h2>
+  <div class="grid">
+    <a class="card" href="../diagnose/?mode=exam">
+      <h2>整卷测试</h2>
+      <div class="d">单元卷 / 期中 / 期末卷，按知识点出得分率报告，可定位到先修链上的薄弱点，适合课前诊断与考后讲评。</div>
+    </a>
+    <a class="card" href="../explore/">
+      <h2>知识图谱</h2>
+      <div class="d">按学科看知识点与先修关系，判断某个单元到底依赖哪些前置知识，用来定复习起点。</div>
+    </a>
+    <a class="card" href="../diagnose/">
+      <h2>自适应诊断</h2>
+      <div class="d">针对单个知识点沿先修链出题，找出卡住的那一步，适合个别辅导。</div>
+    </a>
+  </div>
+
+  <div class="cta">
+    <h2>下载完整 Word 原件</h2>
+    <div class="row">
+      <img src="../assets/wechat-mp-qr.png" alt="公众号 天方乘风 二维码">
+      <ol>
+        <li>微信扫码关注公众号 <b>天方乘风</b></li>
+        <li>在公众号对话框回复页面给出的关键词（例如 <b>数学七下第七章</b>）</li>
+        <li>自动收到该单元的设计文件</li>
+      </ol>
+    </div>
+  </div>
+
+  <p class="note">声明：站内教学设计为 AI 依据教材与课程标准生成的初稿，未经教研审核，教学目标、重难点与课时安排请结合本班学情调整。页面只展示概览与要点，完整文件通过公众号提供；著作权归作者所有。</p>
+</main>
+<script>
+(function () {
+  var input = document.getElementById('q');
+  function go() {
+    var q = (input.value || '').trim();
+    location.href = './unit-design/' + (q ? '?q=' + encodeURIComponent(q) : '');
+  }
+  document.getElementById('go').onclick = go;
+  input.addEventListener('keydown', function (e) { if (e.key === 'Enter') go(); });
+  fetch('./unit-design/index.json').then(function (r) { return r.json(); }).then(function (d) {
+    var n = document.getElementById('n-unit');
+    if (n) n.textContent = (d.count || 0) + ' 个单元';
+  }).catch(function () {});
+})();
+</script>
+</body>
+</html>

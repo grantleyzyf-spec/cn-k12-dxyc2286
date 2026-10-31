@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大单元整体教学设计 - 教师入口 - 中国 K-12 知识图谱</title>
+<meta name="description" content="按学科、教材版本、册次检索大单元整体教学设计：单元学习目标、重难点、课时安排免费查看，完整 Word 通过公众号获取。">
+<link rel="stylesheet" href="../../assets/site.css">
+<style>
+  body { background: var(--bg); }
+  main.ul { max-width: 980px; margin: 0 auto; padding: 26px 18px 64px; }
+  .crumb { font-size: 13px; color: var(--ink-2); margin-bottom: 10px; }
+  .crumb a { color: var(--brand-ink); text-decoration: none; }
+  h1 { font-size: clamp(22px, 3.6vw, 30px); margin: 0 0 6px; }
+  .lead { color: var(--ink-2); font-size: 14.5px; margin: 0 0 18px; line-height: 1.7; }
+  .filters { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 16px; }
+  .filters label { display: block; font-size: 12.5px; font-weight: 650; margin-bottom: 5px; color: var(--ink); }
+  .filters select, .filters input {
+    width: 100%; min-height: 42px; padding: 0 10px; font-size: 14px; font-family: inherit;
+    border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--card); color: var(--ink);
+  }
+  .count { font-size: 13px; color: var(--ink-2); margin: 6px 0 14px; }
+  .list { display: grid; gap: 10px; }
+  .item {
+    display: block; text-decoration: none; color: inherit; background: var(--card);
+    border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px;
+  }
+  .item:hover { border-color: var(--brand); }
+  .item .t { font-size: 16px; font-weight: 700; color: var(--ink); }
+  .item .m { font-size: 12.5px; color: var(--ink-2); margin-top: 4px; }
+  .item .o { font-size: 13px; color: var(--ink-2); margin-top: 6px; line-height: 1.6;
+             display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .kw { display: inline-block; margin-top: 8px; font-size: 12px; padding: 1px 8px; border-radius: 99px;
+        background: var(--brand-soft); color: var(--brand-ink); }
+  .empty { padding: 30px; text-align: center; color: var(--ink-2); }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../">
+    <span class="brand-copy"><span class="brand-name">中国 K-12 知识图谱</span><span class="brand-kicker">教师入口</span></span>
+  </a>
+  <nav class="site-nav">
+    <a class="nav-link active" href="../">教师入口</a>
+    <a class="nav-link" href="../../diagnose/?mode=exam">整卷测试</a>
+    <a class="nav-link" href="../../">学生入口</a>
+  </nav>
+</header>
+<main class="ul">
+  <div class="crumb"><a href="../">教师入口</a> › 大单元整体教学设计</div>
+  <h1>大单元整体教学设计</h1>
+  <p class="lead">每篇一页：单元概览、单元学习目标、教学重点难点、课时安排、教学过程节选免费查看；完整 Word 原件按页面关键词在公众号「天方乘风」获取。</p>
+
+  <div class="filters">
+    <div><label>学科</label><select id="f-subject"><option value="">全部</option></select></div>
+    <div><label>教材版本</label><select id="f-edition"><option value="">全部</option></select></div>
+    <div><label>册次</label><select id="f-book"><option value="">全部</option></select></div>
+    <div><label>关键词</label><input id="f-q" type="search" placeholder="单元名 / 关键词" autocomplete="off"></div>
+  </div>
+  <div class="count" id="count">载入中…</div>
+  <div class="list" id="list"></div>
+</main>
+<script>
+(function () {
+  var S = { all: [], q: new URLSearchParams(location.search).get('q') || '' };
+  var el = function (id) { return document.getElementById(id); };
+
+  function uniq(key) {
+    var m = [];
+    S.all.forEach(function (x) { if (x[key] && m.indexOf(x[key]) < 0) m.push(x[key]); });
+    return m.sort(function (a, b) { return String(a).localeCompare(String(b), 'zh'); });
+  }
+  function fillSelect(id, key) {
+    var sel = el(id), cur = sel.value;
+    sel.innerHTML = '<option value="">全部</option>' + uniq(key).map(function (v) {
+      return '<option value="' + String(v).replace(/"/g, '&quot;') + '">' + v + '</option>';
+    }).join('');
+    if (cur) sel.value = cur;
+  }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]; }); }
+
+  function render() {
+    var sub = el('f-subject').value, ed = el('f-edition').value, bk = el('f-book').value;
+    var q = (el('f-q').value || '').trim().toLowerCase();
+    var rows = S.all.filter(function (x) {
+      if (sub && x.subject !== sub) return false;
+      if (ed && x.edition !== ed) return false;
+      if (bk && x.book !== bk) return false;
+      if (q) {
+        var hay = (x.unit_name + ' ' + x.book + ' ' + x.edition + ' ' + x.keyword + ' ' + (x.overview || '')).toLowerCase();
+        if (hay.indexOf(q) < 0) return false;
+      }
+      return true;
+    });
+    el('count').textContent = '共 ' + rows.length + ' 个单元' + (S.all.length !== rows.length ? '（总 ' + S.all.length + '）' : '');
+    if (!rows.length) { el('list').innerHTML = '<div class="empty">没有匹配的单元，换个关键词试试。</div>'; return; }
+    el('list').innerHTML = rows.slice(0, 400).map(function (x) {
+      return '<a class="item" href="../' + x.path + '">' +
+        '<div class="t">' + esc(x.unit_no) + ' ' + esc(x.unit_name) + '</div>' +
+        '<div class="m">' + esc(x.subject) + ' · ' + esc(x.edition) + ' · ' + esc(x.book) + '</div>' +
+        (x.overview ? '<div class="o">' + esc(x.overview) + '</div>' : '') +
+        '<span class="kw">关键词：' + esc(x.keyword) + '</span>' +
+        '</a>';
+    }).join('') + (rows.length > 400 ? '<div class="empty">仅显示前 400 条，请用筛选缩小范围。</div>' : '');
+  }
+
+  fetch('./index.json').then(function (r) { return r.json(); }).then(function (d) {
+    S.all = d.items || [];
+    fillSelect('f-subject', 'subject'); fillSelect('f-edition', 'edition'); fillSelect('f-book', 'book');
+    if (S.q) el('f-q').value = S.q;
+    ['f-subject', 'f-edition', 'f-book'].forEach(function (id) { el(id).onchange = render; });
+    el('f-q').oninput = render;
+    render();
+  }).catch(function (e) {
+    el('count').textContent = '索引载入失败：' + e.message;
+  });
+})();
+</script>
+</body>
+</html>
