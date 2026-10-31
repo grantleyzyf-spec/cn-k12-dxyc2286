@@ -1,5 +1,17 @@
 # 变更日志
 
+## 0.4.1 · 诊断端接入整卷测试（单元 / 期中 / 期末）
+
+- 新增 `diagnose/exam.js` + `diagnose/exam-index.json`：诊断页顶部加「自适应诊断 / 整卷测试」两个 tab，
+  按册次选单元卷、期中卷、期末卷（当前数学 153 卷），卷面按 section 与 `rule` 呈现、按 `duration` 倒计时。
+- 判分：`choice` 精确比对、`multi` 集合比对、`numeric/fill` 归一化 + 数值容差 + 多空分号拆分、`solve` 与多空答案
+  对照 `scoreRule` 三档自评（全对 / 部分对 / 没得分），自评实时回写总分。
+- 报告：总分、用时、未作答数、分题型得分、**按 `topicIds` 汇总的知识点得分率**（<60% 列出），
+  每个薄弱点给「沿先修链诊断这个点」跳转；逐题明细含用户答案、标准答案、解析、先修知识点；支持导出 JSON 与打印。
+- 新增 `scripts/build_exam_index.py`（`--tracked` 只收 git 已跟踪的卷，避免把未提交卷写进索引）；
+  `sw.js` 预缓存新增 `exam.js` 与 `exam-index.json`，缓存版本 v10 → v11。
+- 说明：试卷数据来自另批生成，未经教研审核；其他学科暂无试卷。README 已知局限已同步。
+
 本文件记录 cn-k12-dxyc2286 项目的所有重要变更。
 
 格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)。

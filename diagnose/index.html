@@ -107,6 +107,68 @@
             border: 1px solid color-mix(in srgb, var(--brand) 30%, transparent);
             border-radius: var(--radius-sm);
         }
+
+        /* ---------- 整卷模式 ---------- */
+        .mode-tabs { display: flex; gap: 8px; margin: 0 0 18px; flex-wrap: wrap; }
+        .mode-tab {
+            padding: 10px 16px; font-size: 14.5px; font-weight: 650; cursor: pointer;
+            background: var(--card); color: var(--ink-2);
+            border: 1px solid var(--line); border-radius: 99px; font-family: inherit;
+        }
+        .mode-tab.active { background: var(--brand); border-color: var(--brand); color: #fff; }
+        .mode-tab small { font-weight: 400; opacity: .8; margin-left: 4px; }
+
+        .ex-head { border-bottom: 1px solid var(--line); padding-bottom: 14px; margin-bottom: 18px; }
+        .ex-title { font-size: 20px; font-weight: 750; color: var(--ink); }
+        .ex-sub { margin-top: 6px; font-size: 13.5px; color: var(--ink-2); }
+        .ex-scope { margin-top: 6px; font-size: 13px; color: var(--ink-2); }
+        .ex-timer {
+            margin-top: 10px; display: inline-block; padding: 6px 12px; font-size: 14px; font-weight: 700;
+            color: var(--brand-ink); background: var(--brand-soft); border-radius: 99px;
+            border: 1px solid color-mix(in srgb, var(--brand) 25%, transparent);
+        }
+        .ex-timer.warn { color: #b91c1c; background: #fef2f2; border-color: #fecaca; }
+
+        .ex-section { margin-bottom: 22px; }
+        .ex-sec-title { font-size: 16px; font-weight: 700; color: var(--brand-ink); margin-bottom: 4px; }
+        .ex-sec-rule { font-size: 13px; color: var(--ink-2); margin-bottom: 12px; }
+        .ex-item { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; margin-bottom: 12px; }
+        .ex-item-head { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+        .ex-no { font-weight: 700; color: var(--ink); }
+        .ex-badge { font-size: 12px; color: var(--brand-ink); background: var(--brand-soft); border-radius: 4px; padding: 1px 6px; }
+        .ex-score { font-size: 12px; color: var(--ink-2); margin-left: auto; }
+        .ex-stem { font-size: 15.5px; line-height: 1.7; color: var(--ink); white-space: pre-wrap; }
+        .ex-tip { font-size: 12.5px; color: var(--ink-2); margin-top: 8px; }
+        .ex-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+        .ex-btn-ghost {
+            width: 100%; min-height: 44px; background: var(--card); color: var(--ink);
+            border: 1px solid var(--line); border-radius: var(--radius-sm); font-size: 14.5px;
+            font-family: inherit; cursor: pointer;
+        }
+        .ex-btn-ghost:hover { border-color: var(--brand); color: var(--brand-ink); }
+
+        .ex-kpi { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin: 6px 0 4px; }
+        .ex-kpi > div { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 12px; text-align: center; }
+        .ex-kpi b { display: block; font-size: 22px; color: var(--brand-ink); }
+        .ex-kpi span { font-size: 12px; color: var(--ink-2); }
+        .ex-table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+        .ex-table th, .ex-table td { border-bottom: 1px solid var(--line); padding: 8px 6px; text-align: left; }
+        .ex-rate { font-size: 12px; color: #b91c1c; background: #fef2f2; border-radius: 99px; padding: 1px 7px; margin-left: 6px; }
+        .ex-fix { margin-top: 6px; }
+        .ex-link { font-size: 13px; color: var(--brand-ink); text-decoration: none; border-bottom: 1px dashed currentColor; }
+        .ex-ok { font-size: 14px; color: #15803d; }
+        .ex-self-row { border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 12px; margin-bottom: 10px; background: var(--bg); }
+        .ex-self-stem { font-size: 14px; line-height: 1.6; }
+        .ex-self-key { font-size: 13px; color: var(--ink-2); margin-top: 6px; line-height: 1.6; }
+        .self-check button.active { border-color: var(--brand); background: var(--brand); color: #fff; }
+        .ex-items { font-size: 13.5px; }
+        .ex-line { padding: 9px 0; border-bottom: 1px solid var(--line); line-height: 1.6; }
+        .ex-line-detail { font-size: 12.5px; color: var(--ink-2); margin-top: 3px; }
+        .ex-tag { display: inline-block; min-width: 20px; text-align: center; border-radius: 4px; font-size: 12px; margin-right: 6px; padding: 0 5px; }
+        .ex-tag.ok { color: #15803d; background: #f0fdf4; }
+        .ex-tag.no { color: #b91c1c; background: #fef2f2; }
+        .ex-tag.wait { color: #92400e; background: #fffbeb; }
+        .ex-tag.blank { color: var(--ink-2); background: var(--line); }
     </style>
 </head>
 <body>
@@ -137,7 +199,12 @@
         <h1>自适应诊断</h1>
         <p>选一个目标知识点，系统沿必先修关系逐层出题，找出真正卡住的那一步。</p>
     </div>
+    <div class="mode-tabs" role="tablist">
+        <button class="mode-tab active" id="tab-adaptive" role="tab">自适应诊断</button>
+        <button class="mode-tab" id="tab-exam" role="tab">整卷测试 <small>单元 / 期中 / 期末</small></button>
+    </div>
     <div class="panel">
+      <div id="adaptive-wrap">
                         <div id="setup-area">
                 <div class="select-group">
                     <div>
@@ -200,10 +267,58 @@
                 </div>
                 <button class="btn" style="margin-top: 20px;" onclick="location.reload()">重新诊断</button>
             </div>
+      </div><!-- /adaptive-wrap -->
+
+      <div id="exam-wrap" style="display:none">
+        <div id="exam-setup">
+          <div class="select-group">
+            <div>
+              <label>册次</label>
+              <select id="exam-book"></select>
+            </div>
+            <div>
+              <label>试卷</label>
+              <select id="exam-paper-select"></select>
+            </div>
+          </div>
+          <button class="btn" id="exam-start" disabled>开始答题</button>
+          <div class="ex-tip">整卷模式按卷面计时、按题给分；交卷后选择/判断/计算/单空填空自动判分，解答题与多空答案对照评分要点由你自评。报告会按知识点算得分率，并给出先修链与补救入口。</div>
+        </div>
+        <div id="exam-paper" style="display:none"></div>
+        <div id="exam-report" style="display:none"></div>
+      </div>
     </div>
 </main>
 
     <script src="../assets/children.js"></script>
+    <script src="exam.js"></script>
+    <script>
+        // 模式切换：自适应诊断 / 整卷测试
+        (function () {
+            const tabA = document.getElementById('tab-adaptive');
+            const tabE = document.getElementById('tab-exam');
+            const wrapA = document.getElementById('adaptive-wrap');
+            const wrapE = document.getElementById('exam-wrap');
+            const head = document.querySelector('.page-head');
+            function show(which) {
+                const isA = which === 'adaptive';
+                tabA.classList.toggle('active', isA);
+                tabE.classList.toggle('active', !isA);
+                wrapA.style.display = isA ? '' : 'none';
+                wrapE.style.display = isA ? 'none' : 'block';
+                if (head) {
+                    head.querySelector('h1').textContent = isA ? '自适应诊断' : '整卷测试';
+                    head.querySelector('p').textContent = isA
+                        ? '选一个目标知识点，系统沿必先修关系逐层出题，找出真正卡住的那一步。'
+                        : '按教材册次选单元卷、期中卷或期末卷，计时答题；交卷后按知识点出得分率与补救路径。';
+                }
+                if (!isA && window.initExamMode) window.initExamMode();
+            }
+            tabA.onclick = () => show('adaptive');
+            tabE.onclick = () => show('exam');
+            if (new URLSearchParams(location.search).get('mode') === 'exam') show('exam');
+        })();
+    </script>
     <script>
         // 数据加载
         let topicsData = {};
