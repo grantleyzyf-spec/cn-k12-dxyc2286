@@ -19,6 +19,7 @@ import os
 import subprocess
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DEFAULT_EDITION = "人教版"   # 卷 JSON 没写 edition 时的默认教材版本
 OUT = os.path.join(ROOT, "diagnose", "exam-index.json")
 
 
@@ -49,6 +50,7 @@ def main():
             print(f"跳过（无 examId）{fp}")
             continue
         rel = os.path.relpath(fp, os.path.join(ROOT, "data/math")).replace(os.sep, "/")
+        edition = d.get("edition") or DEFAULT_EDITION
         exams[eid] = {
             "examId": eid,
             "path": rel,
@@ -59,18 +61,24 @@ def main():
             "stage": d.get("stage"),
             "duration": d.get("duration"),
             "fullScore": d.get("fullScore"),
+            "edition": edition,
             "scope": d.get("scope") or [],
             "itemCount": sum(len(s.get("items") or []) for s in d.get("sections") or []),
         }
 
-    payload = {"subject": "math", "generated": __import__("datetime").date.today().isoformat(),
+    editions = sorted({v["edition"] for v in exams.values()})
+    payload = {"subject": "math", "edition": DEFAULT_EDITION, "editions": editions,
+               "generated": __import__("datetime").date.today().isoformat(),
                "count": len(exams), "exams": dict(sorted(exams.items()))}
     with open(args.out, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=1)
     kinds = {}
     for v in exams.values():
         kinds[v["kind"]] = kinds.get(v["kind"], 0) + 1
-    print(f"写入 {args.out}：{len(exams)} 卷 {kinds}")
+    ed = {}
+    for v in exams.values():
+        ed[v["edition"]] = ed.get(v["edition"], 0) + 1
+    print(f"写入 {args.out}：{len(exams)} 卷 {kinds} 版本分布 {ed}")
 
 
 if __name__ == "__main__":

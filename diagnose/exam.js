@@ -104,9 +104,10 @@
     return 99;
   }
 
-  function booksOf(subject) {
+  function booksOf(subject, edition) {
     const m = new Map();
     Object.entries(S.index.exams).forEach(([id, e]) => {
+      if (edition && (e.edition || '人教版') !== edition) return;
       const k = e.book;
       const cur = m.get(k) || { book: k, grade: e.grade, stage: e.stage, papers: [] };
       cur.papers.push(Object.assign({ examId: id }, e));
@@ -129,6 +130,8 @@
     const kind = { unit: '单元卷', midterm: '期中', final: '期末' }[e.kind] || '卷';
     return `[${kind}] ${e.paper} · ${e.itemCount} 题 / ${e.fullScore} 分 / ${e.duration} 分钟`;
   }
+
+  function editionOf(meta) { return (meta && meta.edition) || (S.index && S.index.edition) || '人教版'; }
 
   /* ---------- 试卷渲染 ---------- */
   async function loadTopics(subject) {
@@ -168,10 +171,11 @@
   function renderPaper() {
     const p = S.paper, m = S.meta;
     const kindName = { unit: '单元测试卷', midterm: '期中测试卷', final: '期末测试卷' }[p.kind] || '测试卷';
+    const ed = editionOf(m);
     let head = `
       <div class="ex-head">
-        <div class="ex-title">${esc(p.book)} · ${esc(p.paper)}</div>
-        <div class="ex-sub">${esc(kindName)} ｜ 满分 ${p.fullScore} 分 ｜ 建议用时 ${p.duration} 分钟 ｜ 共 ${m.itemCount} 题</div>
+        <div class="ex-title"><span class="ex-edition">${esc(ed)}</span>${esc(p.book)} · ${esc(p.paper)}</div>
+        <div class="ex-sub">${esc(ed)}教材 ｜ ${esc(kindName)} ｜ 满分 ${p.fullScore} 分 ｜ 建议用时 ${p.duration} 分钟 ｜ 共 ${m.itemCount} 题</div>
         ${(p.scope && p.scope.length) ? `<div class="ex-scope">考查范围：${p.scope.map(esc).join('；')}</div>` : ''}
         <div class="ex-timer" id="ex-timer">剩余 00:00</div>
       </div>`;
@@ -437,15 +441,28 @@
       return;
     }
     inited = true;
-    const books = booksOf('math');
+    const editions = S.index.editions || [S.index.edition || '人教版'];
+    const edSel = $('exam-edition');
+    if (edSel) {
+      edSel.innerHTML = editions.map(e => `<option value="${esc(e)}">${esc(e)}</option>`).join('');
+      edSel.disabled = editions.length <= 1;
+    }
     const bk = $('exam-book'), pp = $('exam-paper-select');
-    bk.innerHTML = books.map(b => `<option value="${esc(b.book)}">${esc(b.book)}（${b.papers.length} 卷）</option>`).join('');
-    const fill = () => {
+    let books = [];
+    const fillPapers = () => {
       const b = books.find(x => x.book === bk.value);
       pp.innerHTML = (b ? b.papers : []).map(p => `<option value="${esc(p.examId)}">${esc(paperLabel(p))}</option>`).join('');
       $('exam-start').disabled = !pp.options.length;
     };
-    bk.onchange = fill; fill();
+    const fillBooks = () => {
+      const ed = edSel ? edSel.value : (S.index.edition || '人教版');
+      books = booksOf('math', ed);
+      bk.innerHTML = books.map(b => `<option value="${esc(b.book)}">${esc(b.book)}（${b.papers.length} 卷）</option>`).join('');
+      fillPapers();
+    };
+    if (edSel) edSel.onchange = fillBooks;
+    bk.onchange = fillPapers;
+    fillBooks();
     $('exam-start').onclick = () => openPaper(pp.value);
   };
 

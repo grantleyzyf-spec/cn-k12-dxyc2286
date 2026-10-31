@@ -120,6 +120,11 @@
 
         .ex-head { border-bottom: 1px solid var(--line); padding-bottom: 14px; margin-bottom: 18px; }
         .ex-title { font-size: 20px; font-weight: 750; color: var(--ink); }
+        .ex-edition {
+            display: inline-block; margin-right: 8px; padding: 2px 8px; vertical-align: 2px;
+            font-size: 12.5px; font-weight: 700; color: #fff; background: var(--brand-ink);
+            border-radius: 5px; letter-spacing: .02em;
+        }
         .ex-sub { margin-top: 6px; font-size: 13.5px; color: var(--ink-2); }
         .ex-scope { margin-top: 6px; font-size: 13px; color: var(--ink-2); }
         .ex-timer {
@@ -272,6 +277,10 @@
       <div id="exam-wrap" style="display:none">
         <div id="exam-setup">
           <div class="select-group">
+            <div>
+              <label>教材版本</label>
+              <select id="exam-edition"><option value="人教版">人教版</option></select>
+            </div>
             <div>
               <label>册次</label>
               <select id="exam-book"></select>
