@@ -126,7 +126,7 @@ def norm_topic(t, subject, qmap):
     if not dq:
         q = qmap.get(t.get('id'))
         if q:
-            dq = {'question': q['prompt'], 'answer': str(q.get('answer', ''))}
+            dq = {'question': q['prompt'], 'answer': str(q.get('answer', ''))}  # answer 统一为字符串
         else:
             dq = {'question': '', 'answer': ''}
     t['diagnostic_question'] = dq
