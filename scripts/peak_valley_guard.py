@@ -24,7 +24,7 @@ WORK = os.path.expanduser("~/Desktop/qbank-upgrade/math")
 LEDGER = "/tmp/fml"
 RISK = "/tmp/mtoc/formula_risk.json"
 LOG = "/tmp/fml_guard.log"
-THRESHOLD = 20
+THRESHOLD = 0   # 0 = 连低风险（<20 分）517 页一起读；高/中两档 457 页已完成
 RUN_WHEN_NOT_PEAK = True              # 谷段（含 12–14、18–9、周末）都跑
 PEAK = [((9, 0), (12, 0)), ((14, 0), (18, 0))]   # 工作日峰（周一 0:00–9:00 属谷，无需特例）
 PEAK_WEEKDAYS_ONLY = True                            # 周六/周日全天 = 谷
