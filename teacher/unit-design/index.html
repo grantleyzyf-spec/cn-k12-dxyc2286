@@ -65,6 +65,54 @@
   var S = { all: [], q: new URLSearchParams(location.search).get('q') || '' };
   var el = function (id) { return document.getElementById(id); };
 
+
+  /* 自然顺序：年级 → 册次 → 教材版本 → 章节（前端再排一次，防止索引被别的会话重写后乱序） */
+  var CN = { 一: 1, 二: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9, 十: 10 };
+  function cn2int(t) {
+    t = String(t || '').trim();
+    if (/^\d+$/.test(t)) return parseInt(t, 10);
+    if (CN[t]) return CN[t];
+    if (t[0] === '十') return 10 + (CN[t[1]] || 0);
+    if (t.length === 2 && t[1] === '十') return (CN[t[0]] || 0) * 10;
+    if (t.length === 3 && t[1] === '十') return (CN[t[0]] || 0) * 10 + (CN[t[2]] || 0);
+    return 99;
+  }
+  function bookKey(b) {
+    b = b || '';
+    var m = b.match(/([一二三四五六七八九])年级(上|下)?册/);
+    if (m) { var g = cn2int(m[1]); return [g <= 6 ? 0 : 1, g, (m[2] || '上') === '上' ? 1 : 2]; }
+    m = b.match(/选择性必修第([一二三四五])册/);
+    if (m) return [3, cn2int(m[1]), 0];
+    m = b.match(/必修第([一二三四五])册/);
+    if (m) return [2, cn2int(m[1]), 0];
+    return [9, 99, 0];
+  }
+  function editionKey(e) {
+    e = e || '';
+    if (e === '人教版') return 0;
+    if (e.indexOf('A版') >= 0) return 1;
+    if (e.indexOf('B版') >= 0) return 2;
+    return 5;
+  }
+  function unitKey(u) {
+    u = u || '';
+    var m = u.match(/第\s*(\d+|[一二三四五六七八九十]+)\s*(单元|章|课)/);
+    if (m) return [0, cn2int(m[1]), m[2] === '单元' ? 0 : 1];
+    if (u.indexOf('综合实践') >= 0) return [1, 0, 0];
+    if (u.indexOf('主题活动') >= 0) return [2, 0, 0];
+    if (u.indexOf('复习') >= 0 || u.indexOf('整理') >= 0) return [3, 0, 0];
+    return [8, 0, 0];
+  }
+  function cmp(a, b) {
+    var ka = bookKey(a.book), kb = bookKey(b.book);
+    for (var i = 0; i < 3; i++) { if (ka[i] !== kb[i]) return ka[i] - kb[i]; }
+    var ea = editionKey(a.edition), eb = editionKey(b.edition);
+    if (ea !== eb) return ea - eb;
+    var ua = unitKey(a.unit_no), ub = unitKey(b.unit_no);
+    for (var j = 0; j < 3; j++) { if (ua[j] !== ub[j]) return ua[j] - ub[j]; }
+    return String(a.unit_name || '').localeCompare(String(b.unit_name || ''), 'zh');
+  }
+
   function uniq(key) {
     var m = [];
     S.all.forEach(function (x) { if (x[key] && m.indexOf(x[key]) < 0) m.push(x[key]); });
@@ -105,7 +153,7 @@
   }
 
   fetch('./index.json').then(function (r) { return r.json(); }).then(function (d) {
-    S.all = d.items || [];
+    S.all = (d.items || []).slice().sort(cmp);
     fillSelect('f-subject', 'subject'); fillSelect('f-edition', 'edition'); fillSelect('f-book', 'book');
     if (S.q) el('f-q').value = S.q;
     ['f-subject', 'f-edition', 'f-book'].forEach(function (id) { el(id).onchange = render; });

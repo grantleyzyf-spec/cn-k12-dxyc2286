@@ -266,6 +266,71 @@ def extract_periods(paras, secs):
     return [{"label": f"第{cn.get(n, n)}课时", "title": found[n]} for n in sorted(found)]
 
 
+
+# ---------- 自然顺序（年级 → 册次 → 版本 → 章节）----------
+_CN_DIGIT = {"一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "八": 8, "九": 9, "十": 10}
+
+
+def _cn2int(tok):
+    tok = str(tok).strip()
+    if tok.isdigit():
+        return int(tok)
+    if tok in _CN_DIGIT:
+        return _CN_DIGIT[tok]
+    if tok.startswith("十"):                      # 十一 …
+        return 10 + _CN_DIGIT.get(tok[1:2], 0)
+    if len(tok) == 2 and tok[1] == "十":          # 二十
+        return _CN_DIGIT.get(tok[0], 0) * 10
+    if len(tok) == 3 and tok[1] == "十":          # 二十一
+        return _CN_DIGIT.get(tok[0], 0) * 10 + _CN_DIGIT.get(tok[2], 0)
+    return 99
+
+
+def book_key(book):
+    """(学段序, 年级/册序号, 上下册) —— 小学1-6 → 初中7-9 → 必修 → 选必"""
+    book = book or ""
+    m = re.search(r"([一二三四五六七八九])年级(上|下)?册", book)
+    if m:
+        g = _cn2int(m.group(1))
+        stage = 0 if g <= 6 else 1
+        return (stage, g, 1 if (m.group(2) or "上") == "上" else 2)
+    m = re.search(r"选择性必修第([一二三四五])册", book)
+    if m:
+        return (3, _cn2int(m.group(1)), 0)
+    m = re.search(r"必修第([一二三四五])册", book)
+    if m:
+        return (2, _cn2int(m.group(1)), 0)
+    return (9, 99, 0)
+
+
+def edition_key(edition):
+    e = edition or ""
+    if e == "人教版":
+        return 0
+    if "A版" in e:
+        return 1
+    if "B版" in e:
+        return 2
+    return 5
+
+
+def unit_key(unit_no):
+    """章节自然序：第N单元/第N章按数字，综合实践/主题活动/复习排在后面"""
+    u = unit_no or ""
+    m = re.search(r"第\s*(\d+|[一二三四五六七八九十]+)\s*(单元|章|课)", u)
+    if m:
+        return (0, _cn2int(m.group(1)), 0 if m.group(2) == "单元" else 1)
+    for kw, rank in (("综合实践", 1), ("主题活动", 2), ("复习", 3), ("整理", 3)):
+        if kw in u:
+            return (rank, 0, 0)
+    return (8, 0, 0)
+
+
+def natural_key(rec):
+    return (book_key(rec["book"]), edition_key(rec["edition"]), unit_key(rec["unit_no"]),
+            rec["unit_no"], rec["unit_name"])
+
+
 def slugify(s):
     s = unicodedata.normalize("NFKC", s)
     s = re.sub(r"[\\/:*?\"<>|]+", "-", s)
@@ -492,6 +557,8 @@ def main():
     for rec in records:
         out_dir = os.path.join(ROOT, "teacher", rec["path"].replace("/", os.sep))
         build_page(rec, out_dir, "../" * (rec["path"].count("/") + 1))
+
+    records.sort(key=natural_key)
 
     # 列表索引
     idx_dir = os.path.join(ROOT, "teacher", "unit-design")
