@@ -1,0 +1,1080 @@
+{
+ "book": "八年级下册",
+ "kind": "final",
+ "term": "下册",
+ "grade": 8,
+ "stage": "初中",
+ "paper": "期末测试卷B",
+ "duration": 90,
+ "fullScore": 120,
+ "scope": [
+  "八年级下册 第十九章 二次根式",
+  "八年级下册 第二十章 勾股定理",
+  "八年级下册 第二十一章 四边形",
+  "八年级下册 第二十二章 函数",
+  "八年级下册 第二十三章 一次函数",
+  "八年级下册 第二十四章 数据的分析"
+ ],
+ "examId": "mat_exam_g8b_fin_b",
+ "sections": [
+  {
+   "title": "一、选择题",
+   "rule": "每小题 3 分，共 30 分",
+   "items": [
+    {
+     "no": 1,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1304"
+     ],
+     "stem": "化简 √(a³)（其中 a ≥ 0）的结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "a√a"
+      },
+      {
+       "label": "B",
+       "text": "a²√a"
+      },
+      {
+       "label": "C",
+       "text": "a√(a²)"
+      },
+      {
+       "label": "D",
+       "text": "a³"
+      }
+     ],
+     "answer": "A",
+     "analysis": "由二次根式的性质 √(a²) = a（a ≥ 0），把 a³ 拆成 a² · a，得 √(a³) = √(a²) · √a = a√a；a ≥ 0 是题目给定的条件，所以不必加绝对值，选 A。",
+     "itemId": "mat_exam_g8b_fin_b_q01",
+     "prereq": [
+      "mat_p1303"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1304_q1",
+       "topicId": "mat_p1304",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1304_q2",
+       "topicId": "mat_p1304",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1304_q3",
+       "topicId": "mat_p1304",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1303"
+     ],
+     "stem": "计算 √((−5)²) 的结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "−5"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "±5"
+      },
+      {
+       "label": "D",
+       "text": "25"
+      }
+     ],
+     "answer": "B",
+     "analysis": "√((−5)²) 先算被开方数得 √25，再取算术平方根得 5。注意 √(a²) = |a| 而不是 a，所以结果不是 −5；25 是被开方数，还没有开方，选 B。",
+     "itemId": "mat_exam_g8b_fin_b_q02",
+     "prereq": [],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1303_q1",
+       "topicId": "mat_p1303",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1303_q2",
+       "topicId": "mat_p1303",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1303_q3",
+       "topicId": "mat_p1303",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1305"
+     ],
+     "stem": "计算 3√20 − √45 的结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "3√5"
+      },
+      {
+       "label": "B",
+       "text": "2√5"
+      },
+      {
+       "label": "C",
+       "text": "5√5"
+      },
+      {
+       "label": "D",
+       "text": "√5"
+      }
+     ],
+     "answer": "A",
+     "analysis": "先化简：3√20 = 3 × 2√5 = 6√5，√45 = 3√5；两式被开方数都是 5，按系数相减得 6√5 − 3√5 = 3√5，选 A。",
+     "itemId": "mat_exam_g8b_fin_b_q03",
+     "prereq": [
+      "mat_p1304"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1305_q1",
+       "topicId": "mat_p1305",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1305_q3",
+       "topicId": "mat_p1305",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1305_q4",
+       "topicId": "mat_p1305",
+       "difficulty": "hard"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1306"
+     ],
+     "stem": "一块直角三角形菜地的两条直角边分别长 15 米和 20 米，绕着它的斜边修一条小路，这条小路至少长",
+     "options": [
+      {
+       "label": "A",
+       "text": "25 米"
+      },
+      {
+       "label": "B",
+       "text": "35 米"
+      },
+      {
+       "label": "C",
+       "text": "30 米"
+      },
+      {
+       "label": "D",
+       "text": "√175 米"
+      }
+     ],
+     "answer": "A",
+     "analysis": "由勾股定理，斜边² = 15² + 20² = 225 + 400 = 625，而 25² = 625，所以斜边长 25 米；35 米是两条直角边之和，不是斜边，选 A。",
+     "itemId": "mat_exam_g8b_fin_b_q04",
+     "prereq": [],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1306_q1",
+       "topicId": "mat_p1306",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1306_q2",
+       "topicId": "mat_p1306",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1306_q3",
+       "topicId": "mat_p1306",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1307"
+     ],
+     "stem": "三边长分别为 9、12、15 的三角形是",
+     "options": [
+      {
+       "label": "A",
+       "text": "直角三角形，直角所对的是长为 15 的边"
+      },
+      {
+       "label": "B",
+       "text": "直角三角形，直角所对的是长为 12 的边"
+      },
+      {
+       "label": "C",
+       "text": "钝角三角形"
+      },
+      {
+       "label": "D",
+       "text": "锐角三角形"
+      }
+     ],
+     "answer": "A",
+     "analysis": "最长边 15 的平方为 225，另两边的平方和 9² + 12² = 81 + 144 = 225，相等，由勾股定理的逆定理知它是直角三角形；直角总是对着最长边，所以直角所对的是长为 15 的边，选 A。",
+     "itemId": "mat_exam_g8b_fin_b_q05",
+     "prereq": [
+      "mat_p1306"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1307_q1",
+       "topicId": "mat_p1307",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1307_q2",
+       "topicId": "mat_p1307",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1307_q3",
+       "topicId": "mat_p1307",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1309"
+     ],
+     "stem": "在平行四边形 ABCD 中，∠B = 3∠A，则 ∠C 的度数为",
+     "options": [
+      {
+       "label": "A",
+       "text": "45°"
+      },
+      {
+       "label": "B",
+       "text": "135°"
+      },
+      {
+       "label": "C",
+       "text": "60°"
+      },
+      {
+       "label": "D",
+       "text": "90°"
+      }
+     ],
+     "answer": "A",
+     "analysis": "平行四边形中相邻的内角互补，∠A + ∠B = 180°；把 ∠B = 3∠A 代入得 4∠A = 180°，∠A = 45°，于是 ∠B = 135°。平行四边形对角相等，∠C = ∠A = 45°；135° 是 ∠B、∠D 的度数，选 A。",
+     "itemId": "mat_exam_g8b_fin_b_q06",
+     "prereq": [
+      "mat_p1308"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1309_q2",
+       "topicId": "mat_p1309",
+       "difficulty": "hard"
+      },
+      {
+       "qid": "mat_p1309_q3",
+       "topicId": "mat_p1309",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1309_q4",
+       "topicId": "mat_p1309",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1314"
+     ],
+     "stem": "下列一次函数中，函数值 y 随自变量 x 的增大而减小的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = 2x − 1"
+      },
+      {
+       "label": "B",
+       "text": "y = x + 3"
+      },
+      {
+       "label": "C",
+       "text": "y = −5x + 2"
+      },
+      {
+       "label": "D",
+       "text": "y = 0.5x"
+      }
+     ],
+     "answer": "C",
+     "analysis": "一次函数 y = kx + b 中，k > 0 时 y 随 x 的增大而增大，k < 0 时 y 随 x 的增大而减小。四个式子中只有 y = −5x + 2 的 k = −5 < 0，所以它的函数值随 x 增大而减小，选 C。",
+     "itemId": "mat_exam_g8b_fin_b_q07",
+     "prereq": [
+      "mat_p1313"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1314_q1",
+       "topicId": "mat_p1314",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1314_q2",
+       "topicId": "mat_p1314",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1314_q3",
+       "topicId": "mat_p1314",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1315"
+     ],
+     "stem": "已知直线 y = ax + b 与 x 轴交于点 (4, 0)，则方程 ax + b = 0 的解是",
+     "options": [
+      {
+       "label": "A",
+       "text": "x = 4"
+      },
+      {
+       "label": "B",
+       "text": "x = −4"
+      },
+      {
+       "label": "C",
+       "text": "x = 0"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "A",
+     "analysis": "直线与 x 轴交点的纵坐标为 0，横坐标就是使 ax + b = 0 成立的 x 的值。交点 (4, 0) 说明当 x = 4 时 y = 0，所以方程的解是 x = 4，这正是函数图象与方程之间的对应关系，选 A。",
+     "itemId": "mat_exam_g8b_fin_b_q08",
+     "prereq": [
+      "mat_p1314"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1315_q1",
+       "topicId": "mat_p1315",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1315_q2",
+       "topicId": "mat_p1315",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1315_q3",
+       "topicId": "mat_p1315",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1317"
+     ],
+     "stem": "一组数据 5、7、7、8、10、12 的中位数是",
+     "options": [
+      {
+       "label": "A",
+       "text": "7"
+      },
+      {
+       "label": "B",
+       "text": "7.5"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ],
+     "answer": "B",
+     "analysis": "数据已按从小到大排列，共 6 个，中间两个数是第 3 个 7 和第 4 个 8，中位数取它们的平均数 (7 + 8) ÷ 2 = 7.5；7 是这组数据的众数，与中位数不是同一个统计量，选 B。",
+     "itemId": "mat_exam_g8b_fin_b_q09",
+     "prereq": [],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1317_q1",
+       "topicId": "mat_p1317",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1317_q2",
+       "topicId": "mat_p1317",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1317_q3",
+       "topicId": "mat_p1317",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1319"
+     ],
+     "stem": "数据 1、3、5、7、9、11 的下四分位数 Q1 是",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "B",
+     "analysis": "数据共 6 个，中位数 Q2 为中间两数 5 与 7 的平均数 6。下半部分为 1、3、5，它们的中位数就是 Q1 = 3；同理上半部分 7、9、11 的中位数 Q3 = 9，选 B。",
+     "itemId": "mat_exam_g8b_fin_b_q10",
+     "prereq": [
+      "mat_p1318"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1319_q1",
+       "topicId": "mat_p1319",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1319_q2",
+       "topicId": "mat_p1319",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1319_q3",
+       "topicId": "mat_p1319",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "二、填空题",
+   "rule": "每小题 4 分，共 24 分",
+   "items": [
+    {
+     "no": 11,
+     "score": 4,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1311"
+     ],
+     "stem": "在函数 y = 5 / (2x − 6) 中，自变量 x 不能取的值是",
+     "answer": "x = 3",
+     "analysis": "函数解析式中 x 出现在分母上，分母不能为 0，即 2x − 6 ≠ 0，解得 x ≠ 3，所以自变量不能取的值为 3；函数中只有分母这一处限制。",
+     "itemId": "mat_exam_g8b_fin_b_q11",
+     "prereq": [],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1311_q1",
+       "topicId": "mat_p1311",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1311_q2",
+       "topicId": "mat_p1311",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1311_q3",
+       "topicId": "mat_p1311",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "score": 4,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1312"
+     ],
+     "stem": "一辆汽车以 60 千米/时的速度匀速行驶，路程 s（千米）与时间 t（时）满足 s = 60t，当 t = 2.5 时 s 的值是（单位：千米）",
+     "answer": 150,
+     "analysis": "把 t = 2.5 代入解析式得 s = 60 × 2.5 = 150（千米）。这是用解析式法表示函数，已知自变量的值求对应的函数值。",
+     "verify": "60*2.5",
+     "itemId": "mat_exam_g8b_fin_b_q12",
+     "prereq": [
+      "mat_p1311"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1312_q1",
+       "topicId": "mat_p1312",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1312_q2",
+       "topicId": "mat_p1312",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1312_q3",
+       "topicId": "mat_p1312",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "score": 4,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1310"
+     ],
+     "stem": "菱形的一个内角为 60°，较短的对角线长为 4，则这个菱形的周长是",
+     "answer": 16,
+     "analysis": "菱形有一个内角为 60° 时，较短的对角线把它分成两个等边三角形，所以菱形边长等于较短对角线的长，为 4，周长 = 4 × 4 = 16。",
+     "verify": "4*4",
+     "itemId": "mat_exam_g8b_fin_b_q13",
+     "prereq": [
+      "mat_p1309"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1310_q1",
+       "topicId": "mat_p1310",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1310_q2",
+       "topicId": "mat_p1310",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1310_q3",
+       "topicId": "mat_p1310",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "score": 4,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1318"
+     ],
+     "stem": "一组数据 2、4、6、8、10 的方差是",
+     "answer": 8,
+     "analysis": "平均数 = (2 + 4 + 6 + 8 + 10) ÷ 5 = 6。各数据与平均数的差的平方为 16、4、0、4、16，离差平方和 = 40，方差 = 40 ÷ 5 = 8。",
+     "verify": "40/5",
+     "itemId": "mat_exam_g8b_fin_b_q14",
+     "prereq": [
+      "mat_p1317"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1318_q1",
+       "topicId": "mat_p1318",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1318_q2",
+       "topicId": "mat_p1318",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1318_q3",
+       "topicId": "mat_p1318",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "score": 4,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1313"
+     ],
+     "stem": "若函数 y = (m + 1)x + m² − 1 是正比例函数，则 m 的值是",
+     "answer": 1,
+     "analysis": "正比例函数形如 y = kx（k ≠ 0），常数项必须为 0，即 m² − 1 = 0，解得 m = 1 或 m = −1；同时一次项系数 m + 1 ≠ 0，得 m ≠ −1，所以只能取 m = 1。",
+     "verify": "1",
+     "itemId": "mat_exam_g8b_fin_b_q15",
+     "prereq": [],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1313_q1",
+       "topicId": "mat_p1313",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1313_q2",
+       "topicId": "mat_p1313",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1313_q3",
+       "topicId": "mat_p1313",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "score": 4,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1320"
+     ],
+     "stem": "把 12 个按从小到大排列的数据分成两组，共有多少种分法",
+     "answer": 11,
+     "analysis": "分成两组需要在相邻两个数据之间确定一条分界线，12 个有序数据的相邻之间共有 12 − 1 = 11 个位置可放分界线，所以共有 11 种分法。",
+     "verify": "12-1",
+     "itemId": "mat_exam_g8b_fin_b_q16",
+     "prereq": [
+      "mat_p1319"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1320_q2",
+       "topicId": "mat_p1320",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1320_q4",
+       "topicId": "mat_p1320",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1320_q5",
+       "topicId": "mat_p1320",
+       "difficulty": "standard"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "三、解答题",
+   "rule": "共 8 题，共 66 分",
+   "items": [
+    {
+     "no": 17,
+     "score": 6,
+     "type": "solve",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1304"
+     ],
+     "stem": "计算：(1) √(3/4) × √(16/3)；(2) √8 ÷ √(1/2)。",
+     "answer": "(1) 2；(2) 4。",
+     "analysis": "(1) 用乘法法则把两个根号合并：√(3/4 × 16/3) = √4 = 2。(2) 用除法法则 √8 ÷ √(1/2) = √(8 ÷ ½) = √16 = 4；也可先化 √(1/2) = √2/2，再用 2√2 ÷ (√2/2) 得到同样结果。",
+     "scoreRule": [
+      "第(1)小题用乘法法则把被开方数相乘，得 2 分",
+      "第(1)小题化简得到 2，得 1 分",
+      "第(2)小题正确运用除法法则，得 2 分",
+      "第(2)小题得出结果 4，得 1 分"
+     ],
+     "itemId": "mat_exam_g8b_fin_b_q17",
+     "prereq": [
+      "mat_p1303"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1304_q1",
+       "topicId": "mat_p1304",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1304_q2",
+       "topicId": "mat_p1304",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1304_q3",
+       "topicId": "mat_p1304",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 18,
+     "score": 6,
+     "type": "solve",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1312"
+     ],
+     "stem": "某地一天中几个时刻的气温如下表：时间 t（时）为 0、1、2、3 时，气温 T（℃）依次为 3、5、7、9。写出 T 与 t 之间的函数解析式，并求 t = 4 时的气温。",
+     "answer": "T = 2t + 3；当 t = 4 时 T = 11 ℃。",
+     "analysis": "观察表格，t 每增加 1，T 就增加 2，且 t = 0 时 T = 3，所以 T 与 t 满足一次函数关系 T = 2t + 3。检验：t = 1 时 2 × 1 + 3 = 5，与表格一致。当 t = 4 时，T = 2 × 4 + 3 = 11（℃）。",
+     "scoreRule": [
+      "由表格看出 t 每增加 1、T 增加 2，得 2 分",
+      "写出解析式 T = 2t + 3，得 2 分",
+      "把 t = 4 代入求出 T = 11，得 2 分"
+     ],
+     "itemId": "mat_exam_g8b_fin_b_q18",
+     "prereq": [
+      "mat_p1311"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1312_q1",
+       "topicId": "mat_p1312",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1312_q2",
+       "topicId": "mat_p1312",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1312_q3",
+       "topicId": "mat_p1312",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 19,
+     "score": 8,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1314"
+     ],
+     "stem": "已知一次函数 y = 2x − 4。(1) 求它的图象与 x 轴、y 轴的交点坐标；(2) 当 −2 ≤ x ≤ 3 时，求 y 的取值范围。",
+     "answer": "(1) 与 x 轴交于 (2, 0)，与 y 轴交于 (0, −4)；(2) −8 ≤ y ≤ 2。",
+     "analysis": "(1) 令 y = 0 得 2x − 4 = 0，x = 2；令 x = 0 得 y = −4，所以交点分别是 (2, 0) 与 (0, −4)。(2) 因为 k = 2 > 0，y 随 x 的增大而增大：x = −2 时 y = −8，x = 3 时 y = 2，所以当 −2 ≤ x ≤ 3 时 −8 ≤ y ≤ 2。",
+     "scoreRule": [
+      "令 y = 0 求出与 x 轴交点 (2, 0)，得 2 分",
+      "令 x = 0 求出与 y 轴交点 (0, −4)，得 2 分",
+      "说明 k > 0 时 y 随 x 增大而增大，得 2 分",
+      "分别算出 x 取两端点时 y = −8 与 y = 2，得 1 分",
+      "写出 −8 ≤ y ≤ 2，得 1 分"
+     ],
+     "itemId": "mat_exam_g8b_fin_b_q19",
+     "prereq": [
+      "mat_p1313"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1314_q1",
+       "topicId": "mat_p1314",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1314_q2",
+       "topicId": "mat_p1314",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1314_q3",
+       "topicId": "mat_p1314",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 20,
+     "score": 8,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1316"
+     ],
+     "stem": "某手机套餐规定：每月月租 18 元，含 50 分钟通话；超过 50 分钟的部分每分钟收费 0.2 元。(1) 写出通话时间 x（x > 50，单位：分钟）与当月话费 y（单位：元）之间的函数解析式；(2) 某用户当月通话 120 分钟，应交多少元？",
+     "answer": "(1) y = 18 + 0.2(x − 50)，即 y = 0.2x + 8（x > 50）；(2) 应交 32 元。",
+     "analysis": "(1) 前 50 分钟已含在月租里，超出部分为 (x − 50) 分钟，每分钟 0.2 元，所以 y = 18 + 0.2(x − 50)，整理得 y = 0.2x + 8。(2) 把 x = 120 代入得 y = 18 + 0.2 × 70 = 18 + 14 = 32（元）。",
+     "scoreRule": [
+      "说明超出的时间是 x − 50 分钟，得 2 分",
+      "写出解析式 y = 18 + 0.2(x − 50)，得 3 分",
+      "把 x = 120 代入计算，得 2 分",
+      "得出话费 32 元，得 1 分"
+     ],
+     "itemId": "mat_exam_g8b_fin_b_q20",
+     "prereq": [
+      "mat_p1315"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1316_q1",
+       "topicId": "mat_p1316",
+       "difficulty": "hard"
+      },
+      {
+       "qid": "mat_p1316_q2",
+       "topicId": "mat_p1316",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1316_q3",
+       "topicId": "mat_p1316",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 21,
+     "score": 9,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1320"
+     ],
+     "stem": "把 8 个按从小到大排列的数据 55、60、62、67、70、75、82、90 分成两组。(1) 共有多少种分法？(2) 若在 67 与 70 之间确定分数线，求前一组 4 个数据的平均数；(3) 求后一组 4 个数据的平均数。",
+     "answer": "(1) 共有 7 种分法；(2) 前一组的平均数是 61；(3) 后一组的平均数是 79.25。",
+     "analysis": "(1) 8 个有序数据的相邻之间共有 7 个位置可放分界线，故有 7 种分法。(2) 前一组为 55、60、62、67，和 = 244，平均数 = 244 ÷ 4 = 61。(3) 后一组为 70、75、82、90，和 = 317，平均数 = 317 ÷ 4 = 79.25。可以看出在这个分界处，两组的平均数差异明显。",
+     "scoreRule": [
+      "说明 8 个有序数据分成两组有 7 种分法，得 3 分",
+      "确定前一组 4 个数据并求出平均数 61，得 3 分",
+      "确定后一组 4 个数据并求和 317，得 2 分",
+      "求出后一组的平均数，得 1 分"
+     ],
+     "itemId": "mat_exam_g8b_fin_b_q21",
+     "prereq": [
+      "mat_p1319"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1320_q1",
+       "topicId": "mat_p1320",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1320_q2",
+       "topicId": "mat_p1320",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1320_q3",
+       "topicId": "mat_p1320",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 22,
+     "score": 9,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_p1307"
+     ],
+     "stem": "在 △ABC 中，AB = 20，AC = 15，BC = 25。(1) 判断 △ABC 是不是直角三角形；(2) 求 △ABC 的面积；(3) 求 BC 边上的高。",
+     "answer": "(1) △ABC 是直角三角形，∠A = 90°；(2) 面积为 150；(3) BC 边上的高为 12。",
+     "analysis": "(1) 最长边 BC = 25，25² = 625，而 AB² + AC² = 400 + 225 = 625，两者相等，由勾股定理的逆定理知 △ABC 是直角三角形，且直角为最长边所对的 ∠A。(2) 两条直角边就是底和高，面积 = ½ × 20 × 15 = 150。(3) 以 BC 为底，½ × 25 × h = 150，得 h = 12。",
+     "scoreRule": [
+      "比较 25² 与 20² + 15²，得 3 分",
+      "由勾股定理的逆定理判断是直角三角形并指出 ∠A = 90°，得 1 分",
+      "用两条直角边乘积的一半求出面积 150，得 3 分",
+      "用等面积法求出 BC 边上的高为 12，得 2 分"
+     ],
+     "itemId": "mat_exam_g8b_fin_b_q22",
+     "prereq": [
+      "mat_p1306"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1307_q1",
+       "topicId": "mat_p1307",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1307_q2",
+       "topicId": "mat_p1307",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1307_q3",
+       "topicId": "mat_p1307",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 23,
+     "score": 10,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_p1309"
+     ],
+     "stem": "在平行四边形 ABCD 中，对角线 AC 与 BD 相交于点 O，且 AC ⊥ BD。(1) 求证：四边形 ABCD 是菱形；(2) 若 AB = 5，AC = 8，求对角线 BD 的长。",
+     "answer": "(1) 证明见解析；(2) BD = 6。",
+     "analysis": "(1) 平行四边形 ABCD 的对角线互相平分，所以 AO = CO；又因为 AC ⊥ BD，所以 BO 既是 △ABC 中 AC 边上的中线又是高，于是 AB = CB；一组邻边相等的平行四边形是菱形，故 ABCD 是菱形。(2) 菱形对角线互相垂直平分，AO = ½AC = 4，在 Rt△AOB 中 BO = √(AB² − AO²) = √(25 − 16) = 3，所以 BD = 2 × 3 = 6。",
+     "scoreRule": [
+      "由平行四边形对角线互相平分写出 AO = CO，得 2 分",
+      "结合 AC ⊥ BD 说明 AB = CB，得 2 分",
+      "依据一组邻边相等判定四边形是菱形，得 1 分",
+      "求出 AO = 4 并在 Rt△AOB 中用勾股定理，得 3 分",
+      "求出 BO = 3，进而得 BD = 6，得 2 分"
+     ],
+     "itemId": "mat_exam_g8b_fin_b_q23",
+     "prereq": [
+      "mat_p1308"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1309_q1",
+       "topicId": "mat_p1309",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1309_q2",
+       "topicId": "mat_p1309",
+       "difficulty": "hard"
+      },
+      {
+       "qid": "mat_p1309_q3",
+       "topicId": "mat_p1309",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 24,
+     "score": 10,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_p1316"
+     ],
+     "stem": "某市居民生活用水按阶梯价收费：每户每月用水不超过 10 吨的部分，每吨 2 元；超过 10 吨的部分，每吨 3 元。(1) 设某户月用水量为 x 吨，水费为 y 元，写出 y 与 x 的函数解析式；(2) 某户某月用水 15 吨，应交水费多少元？(3) 若某户某月交水费 44 元，则该户用水多少吨？",
+     "answer": "(1) 当 0 ≤ x ≤ 10 时 y = 2x；当 x > 10 时 y = 20 + 3(x − 10) = 3x − 10；(2) 35 元；(3) 18 吨。",
+     "analysis": "(1) 用水量不超过 10 吨时，每吨 2 元，y = 2x；超过 10 吨时，前 10 吨收 20 元，超出部分每吨 3 元，y = 20 + 3(x − 10)，整理得 y = 3x − 10。(2) x = 15 > 10，代入得 y = 20 + 3 × 5 = 35（元）。(3) 因为 44 > 20，说明用水超过 10 吨，由 20 + 3(x − 10) = 44 得 x − 10 = 8，x = 18（吨）。",
+     "scoreRule": [
+      "写出不超过 10 吨时的解析式 y = 2x，得 2 分",
+      "写出超过 10 吨时的解析式 y = 20 + 3(x − 10)，得 2 分",
+      "把 x = 15 代入求出水费 35 元，得 3 分",
+      "由水费 44 元判断用水超过 10 吨并列出方程，得 2 分",
+      "解出用水量为 18 吨，得 1 分"
+     ],
+     "itemId": "mat_exam_g8b_fin_b_q24",
+     "prereq": [
+      "mat_p1315"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1316_q1",
+       "topicId": "mat_p1316",
+       "difficulty": "hard"
+      },
+      {
+       "qid": "mat_p1316_q2",
+       "topicId": "mat_p1316",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1316_q3",
+       "topicId": "mat_p1316",
+       "difficulty": "standard"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

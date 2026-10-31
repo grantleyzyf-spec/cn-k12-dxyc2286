@@ -1,0 +1,1073 @@
+{
+ "book": "九年级上册",
+ "kind": "midterm",
+ "term": "上册",
+ "grade": 9,
+ "stage": "初中",
+ "paper": "期中测试卷A",
+ "duration": 90,
+ "fullScore": 120,
+ "scope": [
+  "第二十五章 一元二次方程",
+  "第二十六章 二次函数",
+  "第二十七章 反比例函数"
+ ],
+ "examId": "mat_exam_g9a_mid_a",
+ "sections": [
+  {
+   "title": "一、选择题",
+   "rule": "每小题 3 分，共 30 分",
+   "items": [
+    {
+     "no": 1,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1266"
+     ],
+     "stem": "把方程 (3x-2)(x+1)=4 化成一元二次方程的一般形式后，它的二次项系数、一次项系数和常数项分别是",
+     "options": [
+      {
+       "label": "A",
+       "text": "3，1，-6"
+      },
+      {
+       "label": "B",
+       "text": "3，1，6"
+      },
+      {
+       "label": "C",
+       "text": "3，-1，-6"
+      },
+      {
+       "label": "D",
+       "text": "3，1，-2"
+      }
+     ],
+     "answer": "A",
+     "analysis": "先把左边展开合并得 3x²+x-2，再把右边的 4 移到左边并变号，得 3x²+x-6=0，所以二次项系数是 3、一次项系数是 1、常数项是 -6．",
+     "itemId": "mat_exam_g9a_mid_a_q01",
+     "prereq": [],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1266_q1",
+       "topicId": "mat_p1266",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1266_q2",
+       "topicId": "mat_p1266",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1266_q3",
+       "topicId": "mat_p1266",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1267"
+     ],
+     "stem": "方程 (x-3)²=2(x-3) 的解是",
+     "options": [
+      {
+       "label": "A",
+       "text": "x=3"
+      },
+      {
+       "label": "B",
+       "text": "x=5"
+      },
+      {
+       "label": "C",
+       "text": "x₁=3，x₂=5"
+      },
+      {
+       "label": "D",
+       "text": "x₁=1，x₂=3"
+      }
+     ],
+     "answer": "C",
+     "analysis": "移项得 (x-3)²-2(x-3)=0，提公因式得 (x-3)(x-3-2)=0，即 (x-3)(x-5)=0，所以 x₁=3，x₂=5；若两边直接除以 x-3 就会丢掉根 x=3．",
+     "itemId": "mat_exam_g9a_mid_a_q02",
+     "prereq": [
+      "mat_p1266"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1267_q1",
+       "topicId": "mat_p1267",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1267_q2",
+       "topicId": "mat_p1267",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1267_q3",
+       "topicId": "mat_p1267",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1270"
+     ],
+     "stem": "关于抛物线 y=-2(x+1)²+3，下列说法正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "开口向上"
+      },
+      {
+       "label": "B",
+       "text": "顶点坐标是 (-1,3)"
+      },
+      {
+       "label": "C",
+       "text": "对称轴是直线 x=1"
+      },
+      {
+       "label": "D",
+       "text": "当 x>-1 时，y 随 x 的增大而增大"
+      }
+     ],
+     "answer": "B",
+     "analysis": "由顶点式知 a=-2<0，开口向下，顶点为 (-1,3)，对称轴是直线 x=-1；开口向下时在对称轴右侧 y 随 x 增大而减小，所以只有 B 正确．",
+     "itemId": "mat_exam_g9a_mid_a_q03",
+     "prereq": [
+      "mat_p1269"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1270_q1",
+       "topicId": "mat_p1270",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1270_q2",
+       "topicId": "mat_p1270",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1270_q3",
+       "topicId": "mat_p1270",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1274"
+     ],
+     "stem": "已知点 A(-2,y₁)、B(-1,y₂)、C(3,y₃) 都在反比例函数 y=6/x 的图象上，则 y₁、y₂、y₃ 的大小关系是",
+     "options": [
+      {
+       "label": "A",
+       "text": "y₁<y₂<y₃"
+      },
+      {
+       "label": "B",
+       "text": "y₂<y₁<y₃"
+      },
+      {
+       "label": "C",
+       "text": "y₃<y₁<y₂"
+      },
+      {
+       "label": "D",
+       "text": "y₂<y₃<y₁"
+      }
+     ],
+     "answer": "B",
+     "analysis": "因 k=6>0，图象在第一、三象限，每一支上 y 随 x 增大而减小；A、B 同处第三象限且 -2<-1，故 y₂<y₁<0，而 C 在第一象限 y₃>0，所以 y₂<y₁<y₃．",
+     "itemId": "mat_exam_g9a_mid_a_q04",
+     "prereq": [
+      "mat_p1273"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1274_q1",
+       "topicId": "mat_p1274",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1274_q2",
+       "topicId": "mat_p1274",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1274_q3",
+       "topicId": "mat_p1274",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1269"
+     ],
+     "stem": "下列函数中，y 关于 x 是二次函数的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "y=2x-1"
+      },
+      {
+       "label": "B",
+       "text": "y=-3x²"
+      },
+      {
+       "label": "C",
+       "text": "y=2/x²"
+      },
+      {
+       "label": "D",
+       "text": "y=x²+1/x"
+      }
+     ],
+     "answer": "B",
+     "analysis": "二次函数必须是整式且自变量最高次数为 2：y=-3x² 符合；y=2x-1 是一次函数，y=2/x² 与 y=x²+1/x 的分母中都含 x，不是整式．",
+     "itemId": "mat_exam_g9a_mid_a_q05",
+     "prereq": [],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1269_q2",
+       "topicId": "mat_p1269",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1269_q3",
+       "topicId": "mat_p1269",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1269_q4",
+       "topicId": "mat_p1269",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1271"
+     ],
+     "stem": "二次函数 y=x²+bx+c 的图象与 x 轴交于点 (-2,0) 和 (1,0)，则关于 x 的方程 x²+bx+c=0 的解是",
+     "options": [
+      {
+       "label": "A",
+       "text": "x=-2 或 x=1"
+      },
+      {
+       "label": "B",
+       "text": "x=2 或 x=-1"
+      },
+      {
+       "label": "C",
+       "text": "x=-2 或 x=-1"
+      },
+      {
+       "label": "D",
+       "text": "x=2 或 x=1"
+      }
+     ],
+     "answer": "A",
+     "analysis": "抛物线与 x 轴交点的横坐标就是方程 x²+bx+c=0 的根，所以方程的解是 x=-2 或 x=1，这正是二次函数与一元二次方程之间的对应关系．",
+     "itemId": "mat_exam_g9a_mid_a_q06",
+     "prereq": [
+      "mat_p1270"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1271_q1",
+       "topicId": "mat_p1271",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1271_q2",
+       "topicId": "mat_p1271",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1271_q3",
+       "topicId": "mat_p1271",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1273"
+     ],
+     "stem": "已知 y 是 x 的反比例函数，当 x=4 时 y=-1.5，则这个反比例函数的解析式是",
+     "options": [
+      {
+       "label": "A",
+       "text": "y=-6/x"
+      },
+      {
+       "label": "B",
+       "text": "y=6/x"
+      },
+      {
+       "label": "C",
+       "text": "y=-1.5x"
+      },
+      {
+       "label": "D",
+       "text": "y=-1.5/x"
+      }
+     ],
+     "answer": "A",
+     "analysis": "设 y=k/x，把 x=4、y=-1.5 代入得 k=4×(-1.5)=-6，所以解析式为 y=-6/x，它的图象位于第二、四象限．",
+     "itemId": "mat_exam_g9a_mid_a_q07",
+     "prereq": [],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1273_q1",
+       "topicId": "mat_p1273",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1273_q2",
+       "topicId": "mat_p1273",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1273_q3",
+       "topicId": "mat_p1273",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1274"
+     ],
+     "stem": "若反比例函数 y=(k-1)/x 的图象在每个象限内，y 都随 x 的增大而减小，则 k 的取值范围是",
+     "options": [
+      {
+       "label": "A",
+       "text": "k>1"
+      },
+      {
+       "label": "B",
+       "text": "k<1"
+      },
+      {
+       "label": "C",
+       "text": "k>0"
+      },
+      {
+       "label": "D",
+       "text": "k≠1"
+      }
+     ],
+     "answer": "A",
+     "analysis": "反比例函数在每一支上 y 随 x 增大而减小的条件是比例系数大于 0，即 k-1>0，解得 k>1；若 k=1 则函数式无意义．",
+     "itemId": "mat_exam_g9a_mid_a_q08",
+     "prereq": [
+      "mat_p1273"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1274_q1",
+       "topicId": "mat_p1274",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1274_q2",
+       "topicId": "mat_p1274",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1274_q3",
+       "topicId": "mat_p1274",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1268"
+     ],
+     "stem": "某商品原价 200 元，经过连续两次降价后售价为 128 元，若每次降价的百分率相同，则这个百分率是",
+     "options": [
+      {
+       "label": "A",
+       "text": "10%"
+      },
+      {
+       "label": "B",
+       "text": "20%"
+      },
+      {
+       "label": "C",
+       "text": "25%"
+      },
+      {
+       "label": "D",
+       "text": "36%"
+      }
+     ],
+     "answer": "B",
+     "analysis": "设每次降价的百分率为 x，则 200(1-x)²=128，即 (1-x)²=0.64，取正根 1-x=0.8，得 x=0.2=20%．",
+     "itemId": "mat_exam_g9a_mid_a_q09",
+     "prereq": [
+      "mat_p1267"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1268_q1",
+       "topicId": "mat_p1268",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1268_q2",
+       "topicId": "mat_p1268",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1268_q3",
+       "topicId": "mat_p1268",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1267"
+     ],
+     "stem": "若关于 x 的一元二次方程 x²-4x+m=0 有两个相等的实数根，则 m 的值是",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "-4"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ],
+     "answer": "B",
+     "analysis": "方程有两个相等的实数根，则 Δ=(-4)²-4m=16-4m=0，解得 m=4．",
+     "itemId": "mat_exam_g9a_mid_a_q10",
+     "prereq": [
+      "mat_p1266"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1267_q1",
+       "topicId": "mat_p1267",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1267_q2",
+       "topicId": "mat_p1267",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1267_q3",
+       "topicId": "mat_p1267",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "二、填空题",
+   "rule": "每小题 4 分，共 24 分",
+   "items": [
+    {
+     "no": 11,
+     "score": 4,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1266"
+     ],
+     "stem": "若 x=1 是关于 x 的方程 x²+mx-3=0 的一个根，则 m=______．",
+     "answer": "2",
+     "analysis": "把 x=1 代入方程得 1+m-3=0，即 m-2=0，所以 m=2；根的代入是最基本的检验手段．",
+     "itemId": "mat_exam_g9a_mid_a_q11",
+     "prereq": [],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1266_q1",
+       "topicId": "mat_p1266",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1266_q2",
+       "topicId": "mat_p1266",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1266_q3",
+       "topicId": "mat_p1266",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "score": 4,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1268"
+     ],
+     "stem": "某学习小组的同学毕业后互赠照片留念，每两人之间互赠一张，共送出 90 张照片，那么这个小组共有 ______ 名同学．",
+     "answer": "10",
+     "analysis": "设共有 n 名同学，每两人之间互赠两张照片，得 n(n-1)=90，整理为 n²-n-90=0，(n-10)(n+11)=0，n=10（负数舍去）．",
+     "itemId": "mat_exam_g9a_mid_a_q12",
+     "prereq": [
+      "mat_p1267"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1268_q1",
+       "topicId": "mat_p1268",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1268_q2",
+       "topicId": "mat_p1268",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1268_q3",
+       "topicId": "mat_p1268",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "score": 4,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1270"
+     ],
+     "stem": "先把抛物线 y=x²-4x+5 向左平移 1 个单位，再向下平移 2 个单位，则所得抛物线的顶点坐标是 ______．",
+     "answer": "(1,-1)",
+     "analysis": "配方得 y=(x-2)²+1，原顶点为 (2,1)；向左平移 1 个单位顶点横坐标减 1 得 1，向下平移 2 个单位纵坐标减 2 得 -1，所以新顶点为 (1,-1)．",
+     "itemId": "mat_exam_g9a_mid_a_q13",
+     "prereq": [
+      "mat_p1269"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1270_q1",
+       "topicId": "mat_p1270",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1270_q2",
+       "topicId": "mat_p1270",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1270_q3",
+       "topicId": "mat_p1270",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "score": 4,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1272"
+     ],
+     "stem": "二次函数 y=-x²+6x+1 的最大值是 ______．",
+     "answer": "10",
+     "analysis": "配方得 y=-(x-3)²+10，因 a=-1<0，当 x=3 时 y 取最大值 10．",
+     "itemId": "mat_exam_g9a_mid_a_q14",
+     "prereq": [
+      "mat_p1271"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1272_q1",
+       "topicId": "mat_p1272",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1272_q2",
+       "topicId": "mat_p1272",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1272_q3",
+       "topicId": "mat_p1272",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "score": 4,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1275"
+     ],
+     "stem": "一个矩形的面积为 12，它的长 y 与宽 x 之间的函数关系式为 y=______（用含 x 的式子表示）．",
+     "answer": "12/x",
+     "analysis": "由长×宽=面积得 xy=12，所以 y=12/x（x>0）；这是反比例函数，长随宽增大而减小．",
+     "itemId": "mat_exam_g9a_mid_a_q15",
+     "prereq": [
+      "mat_p1274"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1275_q1",
+       "topicId": "mat_p1275",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1275_q2",
+       "topicId": "mat_p1275",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1275_q3",
+       "topicId": "mat_p1275",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "score": 4,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1273"
+     ],
+     "stem": "若函数 y=(m+1)/x 是反比例函数，且它的图象位于第二、四象限，则 m 的取值范围是 ______．",
+     "answer": "m<-1",
+     "analysis": "反比例函数要求比例系数不为 0，即 m+1≠0；图象在第二、四象限说明 m+1<0，所以 m<-1．",
+     "itemId": "mat_exam_g9a_mid_a_q16",
+     "prereq": [],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1273_q1",
+       "topicId": "mat_p1273",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1273_q2",
+       "topicId": "mat_p1273",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1273_q3",
+       "topicId": "mat_p1273",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "三、解答题",
+   "rule": "共 8 小题，共 66 分",
+   "items": [
+    {
+     "no": 17,
+     "score": 6,
+     "type": "solve",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1267"
+     ],
+     "stem": "用适当的方法解下列方程：(1) x²-5x+6=0；(2) 2x²-4x-1=0．",
+     "answer": "(1) x₁=2，x₂=3；(2) x₁=(2+√6)/2，x₂=(2-√6)/2",
+     "analysis": "(1) 因式分解得 (x-2)(x-3)=0，所以 x=2 或 x=3．(2) a=2，b=-4，c=-1，Δ=16+8=24，代入求根公式得 x=(4±2√6)/4，化简为 x=(2±√6)/2．",
+     "scoreRule": [
+      "（1）因式分解得 (x-2)(x-3)=0 2 分",
+      "（1）写出 x₁=2、x₂=3 1 分",
+      "（2）算得 Δ=24 1 分",
+      "（2）代入求根公式并化简得 x=(2±√6)/2 2 分"
+     ],
+     "itemId": "mat_exam_g9a_mid_a_q17",
+     "prereq": [
+      "mat_p1266"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1267_q1",
+       "topicId": "mat_p1267",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1267_q2",
+       "topicId": "mat_p1267",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1267_q3",
+       "topicId": "mat_p1267",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 18,
+     "score": 6,
+     "type": "solve",
+     "difficulty": "basic",
+     "topicIds": [
+      "mat_p1274"
+     ],
+     "stem": "已知反比例函数的图象经过点 A(2,3)．(1) 求这个反比例函数的解析式；(2) 判断点 B(-3,-2) 是否在该函数的图象上．",
+     "answer": "(1) y=6/x；(2) 点 B 在该函数的图象上",
+     "analysis": "设 y=k/x，把 A(2,3) 代入得 k=6，所以解析式为 y=6/x；对点 B 有 (-3)×(-2)=6，与 k 相等，说明点 B 在图象上．",
+     "scoreRule": [
+      "设 y=k/x 并代入点 A 得 k=6 2 分",
+      "写出解析式 y=6/x 1 分",
+      "计算 (-3)×(-2)=6 1 分",
+      "判断点 B 在图象上并作答 2 分"
+     ],
+     "itemId": "mat_exam_g9a_mid_a_q18",
+     "prereq": [
+      "mat_p1273"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1274_q1",
+       "topicId": "mat_p1274",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1274_q2",
+       "topicId": "mat_p1274",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1274_q3",
+       "topicId": "mat_p1274",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 19,
+     "score": 8,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1270"
+     ],
+     "stem": "已知抛物线与 x 轴交于 (-1,0) 和 (3,0) 两点，并且经过点 (0,-3)．(1) 求这条抛物线的解析式；(2) 求它的顶点坐标．",
+     "answer": "(1) y=x²-2x-3；(2) 顶点坐标 (1,-4)",
+     "analysis": "设 y=a(x+1)(x-3)，代入 (0,-3) 得 a×1×(-3)=-3，所以 a=1，展开得 y=x²-2x-3；配方得 y=(x-1)²-4，顶点为 (1,-4)．",
+     "scoreRule": [
+      "设交点式 y=a(x+1)(x-3) 2 分",
+      "代入 (0,-3) 求得 a=1 2 分",
+      "展开写出 y=x²-2x-3 2 分",
+      "配方得顶点 (1,-4) 2 分"
+     ],
+     "itemId": "mat_exam_g9a_mid_a_q19",
+     "prereq": [
+      "mat_p1269"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1270_q1",
+       "topicId": "mat_p1270",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1270_q2",
+       "topicId": "mat_p1270",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1270_q3",
+       "topicId": "mat_p1270",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 20,
+     "score": 8,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1268"
+     ],
+     "stem": "某商店销售一种商品，每件进价 40 元，售价 60 元时每月可售出 200 件．市场调查表明：售价每降低 1 元，每月可多售出 20 件．若商店希望每月获得 4000 元利润，且尽量让利于顾客，那么售价应定为每件多少元？",
+     "answer": "每件 50 元",
+     "analysis": "设每件降价 x 元，则每件利润为 (20-x) 元、月销量为 (200+20x) 件，由 (20-x)(200+20x)=4000 整理得 20x²-200x=0，即 x²-10x=0，解得 x=0 或 x=10；为让利于顾客取 x=10，售价为 60-10=50 元．",
+     "scoreRule": [
+      "设每件降价 x 元，写出每件利润与月销量 2 分",
+      "列出方程 (20-x)(200+20x)=4000 2 分",
+      "整理得 x²-10x=0 并解得 x=0 或 x=10 2 分",
+      "按让利要求取 x=10，答售价 50 元 2 分"
+     ],
+     "itemId": "mat_exam_g9a_mid_a_q20",
+     "prereq": [
+      "mat_p1267"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1268_q1",
+       "topicId": "mat_p1268",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1268_q2",
+       "topicId": "mat_p1268",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1268_q3",
+       "topicId": "mat_p1268",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 21,
+     "score": 9,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1275"
+     ],
+     "stem": "甲、乙两地相距 300 km，一辆汽车从甲地驶往乙地，行驶速度为 v（单位：km/h），全程所用时间为 t（单位：h）．(1) 求 v 关于 t 的函数解析式；(2) 若要求 4 h 内（含 4 h）到达乙地，则速度 v 至少应为多少？",
+     "answer": "(1) v=300/t（t>0）；(2) v 至少为 75 km/h",
+     "analysis": "由路程=速度×时间得 vt=300，所以 v=300/t；要求 t≤4 时，由 v=300/t 得 v≥300÷4=75，即速度至少为 75 km/h．",
+     "scoreRule": [
+      "由 vt=300 得 v=300/t 3 分",
+      "注明 t 的取值范围 t>0 1 分",
+      "由 t≤4 得 v≥75 3 分",
+      "答速度至少 75 km/h 2 分"
+     ],
+     "itemId": "mat_exam_g9a_mid_a_q21",
+     "prereq": [
+      "mat_p1274"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1275_q1",
+       "topicId": "mat_p1275",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1275_q2",
+       "topicId": "mat_p1275",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1275_q3",
+       "topicId": "mat_p1275",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 22,
+     "score": 9,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mat_p1271"
+     ],
+     "stem": "已知二次函数 y=-x²+2x+3．(1) 求它的图象与 x 轴的交点坐标；(2) 直接写出当 x 取何值时 y>0．",
+     "answer": "(1) (-1,0) 和 (3,0)；(2) 当 -1<x<3 时 y>0",
+     "analysis": "令 y=0 得 -x²+2x+3=0，即 x²-2x-3=0，(x+1)(x-3)=0，解得 x=-1 或 x=3，交点为 (-1,0)、(3,0)；抛物线开口向下，在两根之间图象在 x 轴上方，故 -1<x<3 时 y>0．",
+     "scoreRule": [
+      "令 y=0 得到方程 x²-2x-3=0 2 分",
+      "因式分解 (x+1)(x-3)=0 并解得两根 3 分",
+      "写出两个交点坐标 2 分",
+      "由开口方向写出 -1<x<3 2 分"
+     ],
+     "itemId": "mat_exam_g9a_mid_a_q22",
+     "prereq": [
+      "mat_p1270"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1271_q1",
+       "topicId": "mat_p1271",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1271_q2",
+       "topicId": "mat_p1271",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1271_q3",
+       "topicId": "mat_p1271",
+       "difficulty": "standard"
+      }
+     ]
+    },
+    {
+     "no": 23,
+     "score": 10,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_p1272"
+     ],
+     "stem": "用长为 24 m 的篱笆靠着一面长 12 m 的墙围成一个矩形花园，墙作为花园的一条边，篱笆只围另外三边．设与墙垂直的边长为 x m，花园面积为 S m²．(1) 求 S 关于 x 的函数关系式，并写出 x 的取值范围；(2) 求花园面积的最大值．",
+     "answer": "(1) S=-2x²+24x，6≤x<12；(2) 最大面积为 72 m²",
+     "analysis": "与墙平行的一边长为 (24-2x) m，由墙长 12 m 得 24-2x≤12，即 x≥6，又 24-2x>0 得 x<12，故 S=x(24-2x)=-2x²+24x（6≤x<12）；配方得 S=-2(x-6)²+72，对称轴 x=6，在 6≤x<12 上 S 随 x 增大而减小，所以 x=6 时 S 最大，最大值为 72 m²．",
+     "scoreRule": [
+      "写出与墙平行的一边长 24-2x 1 分",
+      "由墙长与正数条件得出 6≤x<12 2 分",
+      "列出 S=-2x²+24x 2 分",
+      "配方得 S=-2(x-6)²+72 2 分",
+      "说明在 6≤x<12 上 S 随 x 增大而减小 1 分",
+      "求得最大值 72 m² 2 分"
+     ],
+     "itemId": "mat_exam_g9a_mid_a_q23",
+     "prereq": [
+      "mat_p1271"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1272_q1",
+       "topicId": "mat_p1272",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1272_q2",
+       "topicId": "mat_p1272",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1272_q3",
+       "topicId": "mat_p1272",
+       "difficulty": "basic"
+      }
+     ]
+    },
+    {
+     "no": 24,
+     "score": 10,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mat_p1267"
+     ],
+     "stem": "已知关于 x 的一元二次方程 x²-(2k+1)x+k²+k=0．(1) 求证：无论 k 取何值，该方程总有两个不相等的实数根；(2) 若方程的两个根恰好是一个直角三角形的两条直角边长，且斜边长为 √5，求 k 的值．",
+     "answer": "(1) 证明见解析（Δ=1>0）；(2) k=1",
+     "analysis": "Δ=(2k+1)²-4(k²+k)=4k²+4k+1-4k²-4k=1>0，所以方程总有两个不相等的实数根；由求根公式得两根为 x=k 与 x=k+1，由勾股定理 k²+(k+1)²=5，即 k²+k-2=0，解得 k=1 或 k=-2，因边长必须为正数，故 k=1．",
+     "scoreRule": [
+      "计算 Δ=(2k+1)²-4(k²+k) 3 分",
+      "化简得 Δ=1>0 并下结论 2 分",
+      "求出两根 x=k 与 x=k+1 2 分",
+      "由勾股定理列出 k²+k-2=0 并解得 k=1 或 k=-2 2 分",
+      "舍去负值，得 k=1 1 分"
+     ],
+     "itemId": "mat_exam_g9a_mid_a_q24",
+     "prereq": [
+      "mat_p1266"
+     ],
+     "prereqUpper": [],
+     "reteach": [
+      {
+       "qid": "mat_p1267_q1",
+       "topicId": "mat_p1267",
+       "difficulty": "basic"
+      },
+      {
+       "qid": "mat_p1267_q2",
+       "topicId": "mat_p1267",
+       "difficulty": "standard"
+      },
+      {
+       "qid": "mat_p1267_q3",
+       "topicId": "mat_p1267",
+       "difficulty": "basic"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
