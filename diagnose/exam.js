@@ -19,7 +19,25 @@
     math: '数学', chinese: '语文', english: '英语', physics: '物理', chemistry: '化学', biology: '生物',
     history: '历史', geography: '地理', science: '科学', 'information-technology': '信息科技',
     japanese: '日语', russian: '俄语', german: '德语', french: '法语', spanish: '西班牙语',
-    music: '音乐', art: '美术', 'mental-health': '心理健康'
+    music: '音乐', art: '美术'
+  };
+  // 同科多版本（math-bj=数学·北京版 等）的显示名：由 data/subject-groups.json 提供，
+  // 没有该文件时回退到上面的 SUBJECT_NAME，再回退到 id 本身。
+  const EDITION_LABEL = {};
+  const subjectLabel = (s) => SUBJECT_NAME[s] || EDITION_LABEL[s] || s;
+  const loadEditionLabels = async () => {
+    try {
+      const g = await (await fetch('../data/subject-groups.json', { cache: 'no-cache' })).json();
+      (g.subjects || []).forEach((grp) => {
+        (grp.editions || []).forEach((ed) => {
+          if (ed && ed.id) EDITION_LABEL[ed.id] = ed.name ? grp.name + '·' + ed.name : grp.name;
+        });
+      });
+    } catch (e) { /* 索引缺失不影响主流程 */ }
+    try {
+      const s = await (await fetch('../data/subjects.json', { cache: 'no-cache' })).json();
+      (s.subjects || []).forEach((x) => { if (x && x.id && x.name && !EDITION_LABEL[x.id]) EDITION_LABEL[x.id] = x.name; });
+    } catch (e) { /* 同上 */ }
   };
   const SELF_TIERS = [['full', '全对', 1], ['half', '部分对', 0.5], ['zero', '没得分', 0]];
 
@@ -228,7 +246,7 @@
     const p = S.paper, m = S.meta;
     const kindName = { unit: '单元测试卷', mid: '期中测试卷', midterm: '期中测试卷', fin: '期末测试卷', final: '期末测试卷' }[p.kind] || '测试卷';
     const ed = editionOf(m);
-    const subjName = SUBJECT_NAME[m.subject || 'math'] || (m.subject || '数学');
+    const subjName = subjectLabel(m.subject || 'math') || (m.subject || '数学');
     let head = `
       <div class="ex-head">
         <div class="ex-title"><span class="ex-edition">${esc(ed)}</span>${esc(p.book)} · ${esc(p.paper)}</div>
@@ -493,6 +511,7 @@
   window.initExamMode = async function () {
     if (inited) return;
     try {
+      await loadEditionLabels();
       await loadIndex();
     } catch (e) {
       $('exam-setup').innerHTML = '<p class="ex-tip">试卷索引加载失败：' + esc(e.message) + '</p>';
@@ -526,7 +545,7 @@
 
     if (subjSel) {
       subjSel.innerHTML = Object.keys(subjects)
-        .map(s => `<option value="${esc(s)}">${esc(SUBJECT_NAME[s] || s)}（${subjects[s].count} 卷）</option>`).join('');
+        .map(s => `<option value="${esc(s)}">${esc(subjectLabel(s))}（${subjects[s].count} 卷）</option>`).join('');
       subjSel.disabled = Object.keys(subjects).length <= 1;
       subjSel.onchange = fillEditions;
     }
