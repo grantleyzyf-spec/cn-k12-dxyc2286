@@ -1,0 +1,53 @@
+name: Validate Politics Subject Data
+
+# 道德与法治／思想政治（politics）学科专用工作流。
+# 单独成文件的原因：validate.yml 由并行会话维护（physics/biology/chinese 等学科同时改动），
+# 避免多人同时改同一 workflow 互相卷进提交；口径与其中「Subject invariants · <subject>」一致。
+
+on:
+  push:
+    paths:
+      - 'data/politics/**/*.json'
+      - 'data/politics/**/*.txt'
+      - 'data/politics/**/*.py'
+      - 'data/politics-standards-entries.json'
+      - 'scripts/test_politics.py'
+      - 'scripts/ddfz_*.py'
+      - '.github/workflows/validate-politics.yml'
+  pull_request:
+    paths:
+      - 'data/politics/**/*.json'
+      - 'data/politics/**/*.txt'
+      - 'data/politics-standards-entries.json'
+      - 'scripts/test_politics.py'
+      - 'scripts/ddfz_*.py'
+      - '.github/workflows/validate-politics.yml'
+  workflow_dispatch:
+
+jobs:
+  politics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: pip install jsonschema
+
+      - name: Validate structure & references (all subjects)
+        run: python3 scripts/validate.py --all
+
+      - name: Subject invariants · politics
+        run: python3 scripts/test_politics.py
+
+      - name: Standards index freshness (regenerate & diff)
+        run: |
+          cp data/cn-curriculum-standards.json /tmp/a.json || true
+          cp data/mappings/volume-map.json /tmp/b.json || true
+          python3 scripts/build_standards_index.py
+          diff -q /tmp/a.json data/cn-curriculum-standards.json
+          diff -q /tmp/b.json data/mappings/volume-map.json
