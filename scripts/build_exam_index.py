@@ -31,7 +31,7 @@ DEFAULT_EDITION = "人教版"
 SUBJECTS = [
     "math", "chinese", "english", "physics", "chemistry", "biology", "history", "geography",
     "science", "information-technology", "japanese", "russian", "german", "french", "spanish",
-    "music", "art",
+    "music", "art", "mental-health",
 ]
 
 
@@ -49,7 +49,10 @@ def walk_files():
         base = os.path.join(ROOT, "data", sub, "exams")
         if os.path.isdir(base):
             rels += [os.path.relpath(p, ROOT).replace(os.sep, "/")
-                     for p in glob.glob(os.path.join(base, "**", "*.json"), recursive=True)]
+                     for p in glob.glob(os.path.join(base, "**", "*.json"), recursive=True)
+                     # 跳过派单目录（_shards/）与索引文件：它们不是卷面
+                     if not any(seg.startswith("_") for seg in
+                                os.path.relpath(p, base).split(os.sep))]
     return sorted(rels)
 
 
