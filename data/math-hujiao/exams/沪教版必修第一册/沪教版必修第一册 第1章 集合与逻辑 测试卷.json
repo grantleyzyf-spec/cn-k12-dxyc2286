@@ -1,0 +1,641 @@
+{
+  "book": "沪教版必修第一册",
+  "term": "上册",
+  "grade": 10,
+  "stage": "高中",
+  "kind": "unit",
+  "paper": "沪教版必修第一册 第1章 集合与逻辑 测试卷",
+  "duration": 120,
+  "fullScore": 150,
+  "scope": [
+    "沪教版必修第一册 第1章 集合与逻辑"
+  ],
+  "topicIds": [
+    "mhj_h001",
+    "mhj_h1001",
+    "mhj_h1002"
+  ],
+  "examId": "mhj_exam_b1_u01",
+  "sections": [
+    {
+      "title": "一、单选题",
+      "rule": "每小题 5 分，共 40 分",
+      "items": [
+        {
+          "no": 1,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1001"
+          ],
+          "stem": "已知集合 A = {x | x² − 5x + 6 = 0}，则集合 A 的子集共有（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "2 个"
+            },
+            {
+              "label": "B",
+              "text": "3 个"
+            },
+            {
+              "label": "C",
+              "text": "4 个"
+            },
+            {
+              "label": "D",
+              "text": "8 个"
+            }
+          ],
+          "answer": "C",
+          "analysis": "先解方程 x² − 5x + 6 = 0，得 (x − 2)(x − 3) = 0，所以 A = {2, 3}，含 2 个元素。含 n 个元素的集合有 2ⁿ 个子集，故子集个数为 2² = 4 个，分别是 ∅、{2}、{3}、{2, 3}。若只数真子集则是 3 个，本题问的是子集，包含集合本身。",
+          "itemId": "mhj_exam_b1_u01_q01"
+        },
+        {
+          "no": 2,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1001"
+          ],
+          "stem": "不等式 2x − 1 > 5 的解集用区间表示是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "(−∞, 3)"
+            },
+            {
+              "label": "B",
+              "text": "(3, +∞)"
+            },
+            {
+              "label": "C",
+              "text": "[3, +∞)"
+            },
+            {
+              "label": "D",
+              "text": "(−∞, 3]"
+            }
+          ],
+          "answer": "B",
+          "analysis": "由 2x − 1 > 5 得 2x > 6，即 x > 3。解集 {x | x > 3} 不含端点 3，左端无下界，故写成开区间 (3, +∞)。若写成 [3, +∞) 就把 x = 3 也算了进去，而 2×3 − 1 = 5 并不大于 5，故不能用闭端点。",
+          "itemId": "mhj_exam_b1_u01_q02"
+        },
+        {
+          "no": 3,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h001"
+          ],
+          "stem": "设全集 U = {1, 2, 3, 4, 5}，集合 A = {2, 4}，B = {3, 4, 5}，则 A ∩ (∁_U B) 等于（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "{1, 2, 4}"
+            },
+            {
+              "label": "B",
+              "text": "{1, 4}"
+            },
+            {
+              "label": "C",
+              "text": "{2, 4}"
+            },
+            {
+              "label": "D",
+              "text": "{2}"
+            }
+          ],
+          "answer": "D",
+          "analysis": "先求 B 在 U 中的补集：∁_U B = {1, 2}。再与 A 求交集：A ∩ ∁_U B = {2, 4} ∩ {1, 2} = {2}。元素 4 既在 A 中又在 B 中，被补集这一步筛掉；1 不在 A 中，所以也不在结果里。",
+          "itemId": "mhj_exam_b1_u01_q03"
+        },
+        {
+          "no": 4,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1002"
+          ],
+          "stem": "下列语句中，不能判断真假的是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "3 是奇数"
+            },
+            {
+              "label": "B",
+              "text": "x + 1 > 2"
+            },
+            {
+              "label": "C",
+              "text": "√4 = 2"
+            },
+            {
+              "label": "D",
+              "text": "π 是无理数"
+            }
+          ],
+          "answer": "B",
+          "analysis": "命题必须是能判断真假的陈述句。3 是奇数（真）、√4 = 2（真）、π 是无理数（真）都能判断真假；而 x + 1 > 2 中含有未确定的字母 x，x 取不同值时真假不同，无法判断，所以它不是命题。",
+          "itemId": "mhj_exam_b1_u01_q04"
+        },
+        {
+          "no": 5,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1002"
+          ],
+          "stem": "设 p：x > 2，q：x² > 4，则 p 是 q 的（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "充分不必要条件"
+            },
+            {
+              "label": "B",
+              "text": "必要不充分条件"
+            },
+            {
+              "label": "C",
+              "text": "充要条件"
+            },
+            {
+              "label": "D",
+              "text": "既不充分也不必要条件"
+            }
+          ],
+          "answer": "A",
+          "analysis": "由 x > 2 一定能推出 x² > 4，所以 p ⇒ q，p 是 q 的充分条件。反过来 x² > 4 只能得到 x > 2 或 x < −2，取 x = −3 时 q 成立但 p 不成立，所以 q 推不出 p。因此 p 是 q 的充分不必要条件。",
+          "itemId": "mhj_exam_b1_u01_q05"
+        },
+        {
+          "no": 6,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1002"
+          ],
+          "stem": "命题“存在实数 x，使 x² + 1 < 0”的否定是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "对任意实数 x，都有 x² + 1 < 0"
+            },
+            {
+              "label": "B",
+              "text": "存在实数 x，使 x² + 1 ≥ 0"
+            },
+            {
+              "label": "C",
+              "text": "对任意实数 x，都有 x² + 1 ≥ 0"
+            },
+            {
+              "label": "D",
+              "text": "不存在实数 x，使 x² + 1 < 0"
+            }
+          ],
+          "answer": "C",
+          "analysis": "存在量词命题的否定是把“存在”改成“对任意”，同时否定结论。原命题是存在 x 使 x² + 1 < 0，其否定为：对任意实数 x，都有 x² + 1 ≥ 0。注意不能只否定结论而保留“存在”，那样写出的仍是存在性命题，并不是原命题的否定。",
+          "itemId": "mhj_exam_b1_u01_q06"
+        },
+        {
+          "no": 7,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h001"
+          ],
+          "stem": "已知集合 M = {1, a, a²} 中恰有 3 个元素，则实数 a 应满足（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "a ≠ 0 且 a ≠ 1 且 a ≠ −1"
+            },
+            {
+              "label": "B",
+              "text": "a ≠ 0 且 a ≠ 1"
+            },
+            {
+              "label": "C",
+              "text": "a ≠ 1 且 a ≠ −1"
+            },
+            {
+              "label": "D",
+              "text": "a ≠ 0"
+            }
+          ],
+          "answer": "A",
+          "analysis": "集合的元素具有互异性，三个元素必须两两不等。由 a ≠ 1；由 a² ≠ 1 得 a ≠ 1 且 a ≠ −1；由 a ≠ a² 得 a ≠ 0 且 a ≠ 1。三组条件合起来就是 a ≠ 0 且 a ≠ 1 且 a ≠ −1。若 a = −1，集合变成 {1, −1, 1} 只有 2 个元素，正说明 −1 必须排除。",
+          "itemId": "mhj_exam_b1_u01_q07"
+        },
+        {
+          "no": 8,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1001"
+          ],
+          "stem": "已知集合 A = {x | −1 < x ≤ 3}，B = {x | x > 2}，则 A ∪ B 等于（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "(2, 3]"
+            },
+            {
+              "label": "B",
+              "text": "(−1, 2)"
+            },
+            {
+              "label": "C",
+              "text": "[3, +∞)"
+            },
+            {
+              "label": "D",
+              "text": "(−1, +∞)"
+            }
+          ],
+          "answer": "D",
+          "analysis": "把两个集合画在同一条数轴上：A 覆盖 −1 到 3（不含 −1，含 3），B 覆盖 2 向右。并集取所有出现过的点，从 −1 的右侧一直连到 +∞，端点 −1 仍取不到，故 A ∪ B = (−1, +∞)。注意并集不是把两段的公共部分取出来，那是交集。",
+          "itemId": "mhj_exam_b1_u01_q08"
+        }
+      ]
+    },
+    {
+      "title": "二、多选题",
+      "rule": "每小题 5 分，共 20 分；少选得部分分，错选不得分",
+      "items": [
+        {
+          "no": 9,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h001"
+          ],
+          "stem": "已知集合 A = {x | x² − 3x + 2 ≤ 0}，B = {x | x > 1}，则下列结论正确的是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "A ∩ B = (1, 2]"
+            },
+            {
+              "label": "B",
+              "text": "A ∪ B = [1, +∞)"
+            },
+            {
+              "label": "C",
+              "text": "A ⊆ B"
+            },
+            {
+              "label": "D",
+              "text": "A 中的整数只有 1 和 2"
+            }
+          ],
+          "answer": "ABD",
+          "analysis": "先解不等式 x² − 3x + 2 ≤ 0，即 (x − 1)(x − 2) ≤ 0，得 A = [1, 2]。A ∩ B = (1, 2]，A 正确；A ∪ B = [1, +∞)，B 正确；由于 1 ∈ A 而 1 ∉ B，A 不是 B 的子集，C 错误；A 中的整数只有 1 与 2，D 正确。",
+          "itemId": "mhj_exam_b1_u01_q09"
+        },
+        {
+          "no": 10,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1002"
+          ],
+          "stem": "下列命题中为真命题的是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "若 a > b，则 a + c > b + c"
+            },
+            {
+              "label": "B",
+              "text": "若 a > b 且 c > d，则 a − c > b − d"
+            },
+            {
+              "label": "C",
+              "text": "存在实数 x，使 x² − 2x + 3 = 0"
+            },
+            {
+              "label": "D",
+              "text": "对任意实数 x，都有 x² + 2x + 2 > 0"
+            }
+          ],
+          "answer": "AD",
+          "analysis": "A 是不等式的基本性质，两边同加 c 不等号方向不变，真。B 中由 a > b、c > d 只能得 a + c > b + d，同向不等式不能相减，取 a = 3、b = 1、c = 5、d = 0 得 a − c = −2 < b − d = 1，假。C 中 x² − 2x + 3 = (x − 1)² + 2 ≥ 2 > 0，方程无解，假。D 中 x² + 2x + 2 = (x + 1)² + 1 ≥ 1 > 0 恒成立，真。",
+          "itemId": "mhj_exam_b1_u01_q10"
+        },
+        {
+          "no": 11,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1001"
+          ],
+          "stem": "对任意集合 A、B，下列结论正确的是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "A ∩ B ⊆ A"
+            },
+            {
+              "label": "B",
+              "text": "若 A ⊆ B，则 A ∩ B = A"
+            },
+            {
+              "label": "C",
+              "text": "若 A ∪ B = B，则 A ⊆ B"
+            },
+            {
+              "label": "D",
+              "text": "若 A ∩ B = A，则 B ⊆ A"
+            }
+          ],
+          "answer": "ABC",
+          "analysis": "A ∩ B 中的元素同时属于 A 与 B，当然属于 A，所以 A ∩ B ⊆ A，A 正确。若 A ⊆ B，则 A 的元素全在 B 中，公共部分就是 A 本身，即 A ∩ B = A，B 正确。若 A ∪ B = B，说明 A 中每个元素都已在 B 中，故 A ⊆ B，C 正确。D 反例：A = {1}，B = {1, 2}，此时 A ∩ B = A 成立，但 B 不是 A 的子集，D 错误。",
+          "itemId": "mhj_exam_b1_u01_q11"
+        },
+        {
+          "no": 12,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1002"
+          ],
+          "stem": "设 a、b 是实数，则下列命题正确的是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "a = b 的充要条件是 a² = b²"
+            },
+            {
+              "label": "B",
+              "text": "a > b 的一个充分条件是 a − b > 1"
+            },
+            {
+              "label": "C",
+              "text": "ab = 0 的充要条件是 a = 0 或 b = 0"
+            },
+            {
+              "label": "D",
+              "text": "a² + b² = 0 的充要条件是 a = 0 且 b = 0"
+            }
+          ],
+          "answer": "BCD",
+          "analysis": "A 中 a² = b² 只能得 a = b 或 a = −b，如 a = 1、b = −1 时平方相等而 a ≠ b，故不是充要条件，A 假。B 中 a − b > 1 > 0 直接给出 a > b，故 a − b > 1 是 a > b 的充分条件，B 真。C 中两数之积为零当且仅当至少有一个为零，真。D 中实数的平方非负，两平方和为 0 必须各自为 0，真。",
+          "itemId": "mhj_exam_b1_u01_q12"
+        }
+      ]
+    },
+    {
+      "title": "三、填空题",
+      "rule": "每小题 5 分，共 20 分",
+      "items": [
+        {
+          "no": 13,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1001"
+          ],
+          "stem": "已知集合 A = {0, 1, 2}，B = {x | x = a + b，a ∈ A，b ∈ A}，则 B 中元素的个数为 ______。",
+          "answer": "5",
+          "analysis": "把 a、b 在 A 中取值的一切组合列出：0+0=0，0+1=1，0+2=2，1+1=2，1+2=3，2+2=4。所得数值为 0、1、2、3、4，其中 2 重复出现，按集合元素的互异性只算一次，故 B = {0, 1, 2, 3, 4}，共 5 个元素。",
+          "itemId": "mhj_exam_b1_u01_q13"
+        },
+        {
+          "no": 14,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h001"
+          ],
+          "stem": "设全集 U = R，A = {x | x ≤ 1}，B = {x | x > −2}，则 A ∩ B = ______。",
+          "answer": "(−2, 1]",
+          "analysis": "A 是 (−∞, 1]，B 是 (−2, +∞)，交集是同时满足两个条件的 x，即 −2 < x ≤ 1。端点 −2 在 B 中取不到，故左端开；端点 1 在 A 中能取到，故右端闭。写成区间为 (−2, 1]。",
+          "itemId": "mhj_exam_b1_u01_q14"
+        },
+        {
+          "no": 15,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1002"
+          ],
+          "stem": "命题“对任意 x ∈ R，x² − 2x + 3 > 0”的否定是 ______。",
+          "answer": "存在 x ∈ R，使 x² − 2x + 3 ≤ 0",
+          "analysis": "全称量词命题的否定：把“对任意”改为“存在”，并把结论取反。原结论是“> 0”，其否定是“≤ 0”，所以否定为：存在 x ∈ R，使 x² − 2x + 3 ≤ 0。注意“>”的否定是“≤”而不是“<”。",
+          "itemId": "mhj_exam_b1_u01_q15"
+        },
+        {
+          "no": 16,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h001"
+          ],
+          "stem": "已知集合 A = {1, 2, 3}，若 B ⊆ A 且 B 中至少含有一个奇数，则满足条件的集合 B 的个数为 ______。",
+          "answer": "6",
+          "analysis": "A 的奇数元素是 1 和 3，偶数元素是 2。A 的全部子集共 2³ = 8 个。不含奇数的子集只能由 {2} 生成，即 ∅ 与 {2}，共 2 个。故至少含一个奇数的子集有 8 − 2 = 6 个。也可直接枚举：{1}、{3}、{1,3}、{1,2}、{2,3}、{1,2,3}。",
+          "itemId": "mhj_exam_b1_u01_q16"
+        }
+      ]
+    },
+    {
+      "title": "四、解答题",
+      "rule": "共 6 题，10 + 12 + 12 + 12 + 12 + 12 = 70 分",
+      "items": [
+        {
+          "no": 17,
+          "score": 10,
+          "type": "solve",
+          "difficulty": "medium",
+          "topicIds": [
+            "mhj_h001",
+            "mhj_h1001"
+          ],
+          "stem": "设全集 U = R，集合 A = {x | −1 ≤ x < 3}，B = {x | x ≥ 2}。求 A ∩ B、A ∪ B、∁_U A 以及 (∁_U A) ∩ B。",
+          "answer": "A ∩ B = [2, 3)；A ∪ B = [−1, +∞)；∁_U A = (−∞, −1) ∪ [3, +∞)；(∁_U A) ∩ B = [3, +∞)",
+          "analysis": "借助数轴逐段判断端点。A ∩ B 要同时满足 −1 ≤ x < 3 与 x ≥ 2，得 2 ≤ x < 3，即 [2, 3)。A ∪ B 从 −1 连续覆盖到 +∞，得 [−1, +∞)。补集把 A 的两个端点都反过来：−1 由取到变为不取，3 由不取变为取到，得 (−∞, −1) ∪ [3, +∞)。最后与 B 求交，(−∞, −1) 中的数与 x ≥ 2 无公共部分，只剩 [3, +∞)。",
+          "scoreRule": [
+            {
+              "step": "由交集定义写出 A ∩ B = [2, 3)",
+              "score": 3
+            },
+            {
+              "step": "由并集定义写出 A ∪ B = [−1, +∞)",
+              "score": 3
+            },
+            {
+              "step": "由补集定义写出 ∁_U A = (−∞, −1) ∪ [3, +∞)",
+              "score": 2
+            },
+            {
+              "step": "与 B 求交得 (∁_U A) ∩ B = [3, +∞)",
+              "score": 2
+            }
+          ],
+          "itemId": "mhj_exam_b1_u01_q17"
+        },
+        {
+          "no": 18,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "medium",
+          "topicIds": [
+            "mhj_h001",
+            "mhj_h1002"
+          ],
+          "stem": "已知集合 A = {x | x² − 3x + 2 = 0}，B = {x | x² − ax + a − 1 = 0}。若 B ⊆ A，求实数 a 的所有取值。",
+          "answer": "a = 2 或 a = 3",
+          "analysis": "由 x² − 3x + 2 = 0 得 (x − 1)(x − 2) = 0，所以 A = {1, 2}。对方程 x² − ax + a − 1 = 0，注意到 x = 1 时 1 − a + a − 1 = 0，故 1 恒为它的根；由根与系数关系，两根之积为 a − 1，另一根就是 a − 1。于是 B = {1, a − 1}（当 a − 1 = 1 时 B = {1}）。由 B ⊆ A 知 a − 1 只能取 1 或 2：a − 1 = 1 得 a = 2，此时 B = {1} ⊆ A；a − 1 = 2 得 a = 3，此时 B = {1, 2} = A。故 a = 2 或 a = 3。",
+          "scoreRule": [
+            {
+              "step": "解出 A = {1, 2}",
+              "score": 4
+            },
+            {
+              "step": "把 B 化为 {1, a − 1} 并说明理由",
+              "score": 4
+            },
+            {
+              "step": "由 B ⊆ A 分类得 a = 2 或 a = 3",
+              "score": 4
+            }
+          ],
+          "itemId": "mhj_exam_b1_u01_q18"
+        },
+        {
+          "no": 19,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "hard",
+          "topicIds": [
+            "mhj_h1001"
+          ],
+          "stem": "已知集合 A = {x | −2 ≤ x ≤ 5}，B = {x | m + 1 ≤ x ≤ 2m − 1}。若 B ⊆ A，求实数 m 的取值范围。",
+          "answer": "m ≤ 3",
+          "analysis": "先考虑 B 为空集的情形：当 m + 1 > 2m − 1，即 m < 2 时，B = ∅，空集是任何集合的子集，满足 B ⊆ A。再考虑 B 非空：需 m ≥ 2，此时要求左端点 m + 1 ≥ −2 且右端点 2m − 1 ≤ 5，解得 m ≥ −3 且 m ≤ 3，与 m ≥ 2 取交得 2 ≤ m ≤ 3。合并两种情形得 m ≤ 3。漏掉空集情形就会把 m < 2 的部分丢掉。",
+          "scoreRule": [
+            {
+              "step": "讨论 B = ∅，得 m < 2 时满足条件",
+              "score": 4
+            },
+            {
+              "step": "讨论 B 非空，列出端点不等式组",
+              "score": 4
+            },
+            {
+              "step": "解不等式组并与 m ≥ 2 取交，合并得 m ≤ 3",
+              "score": 4
+            }
+          ],
+          "itemId": "mhj_exam_b1_u01_q19"
+        },
+        {
+          "no": 20,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "hard",
+          "topicIds": [
+            "mhj_h1002"
+          ],
+          "stem": "已知命题 p：对任意实数 x，都有 x² − 2x + m > 0；命题 q：存在 x ∈ [0, 2]，使 x² − m ≤ 0。若 p 与 q 中有且只有一个为真命题，求实数 m 的取值范围。",
+          "answer": "0 ≤ m ≤ 1",
+          "analysis": "p 为真等价于二次函数 x² − 2x + m 的最小值大于 0。配方得 (x − 1)² + m − 1，最小值 m − 1，故 p 真 ⟺ m > 1。q 为真等价于 m ≥ x² 在 [0, 2] 上有解。x² 在 [0, 2] 上的最小值为 0，故只需 m ≥ 0，即 q 真 ⟺ m ≥ 0。恰有一个为真分两种：p 真 q 假，需 m > 1 且 m < 0，无解；p 假 q 真，需 m ≤ 1 且 m ≥ 0，得 0 ≤ m ≤ 1。综上 m 的取值范围是 [0, 1]。",
+          "scoreRule": [
+            {
+              "step": "求出 p 为真的条件 m > 1",
+              "score": 3
+            },
+            {
+              "step": "求出 q 为真的条件 m ≥ 0",
+              "score": 3
+            },
+            {
+              "step": "分“p 真 q 假”“p 假 q 真”两种情形讨论",
+              "score": 3
+            },
+            {
+              "step": "合并得 0 ≤ m ≤ 1",
+              "score": 3
+            }
+          ],
+          "itemId": "mhj_exam_b1_u01_q20"
+        },
+        {
+          "no": 21,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "hard",
+          "topicIds": [
+            "mhj_h001"
+          ],
+          "stem": "设 M = {1, 2, 3, 4, 5}，A ⊆ M，且 A 满足：若 x ∈ A，则 6 − x ∈ A。求这样的集合 A 的个数。",
+          "answer": "8 个",
+          "analysis": "把 M 中满足 x 与 6 − x 配对的元素分组：1 与 5 一组，2 与 4 一组，3 与自身配对（6 − 3 = 3）。条件要求：只要取了某组中的一个元素，就必须把同组的另一个也取进来；对 3 而言，取 3 时 6 − 3 = 3 仍在 A 中，条件自动满足。因此 A 只能由整组拼成：{1, 5} 取或不取有 2 种，{2, 4} 取或不取有 2 种，3 取或不取有 2 种，共 2³ = 8 个。逐个列出是 ∅、{3}、{1, 5}、{2, 4}、{1, 5, 3}、{2, 4, 3}、{1, 2, 4, 5}、M。",
+          "scoreRule": [
+            {
+              "step": "按 x 与 6 − x 把 M 分成 {1,5}、{2,4}、{3} 三组",
+              "score": 4
+            },
+            {
+              "step": "说明 A 必为若干整组的并，并解释 3 的特例",
+              "score": 4
+            },
+            {
+              "step": "由乘法原理得 2³ = 8",
+              "score": 4
+            }
+          ],
+          "itemId": "mhj_exam_b1_u01_q21"
+        },
+        {
+          "no": 22,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "medium",
+          "topicIds": [
+            "mhj_h1002"
+          ],
+          "stem": "用反证法证明：√2 不是有理数。",
+          "answer": "假设 √2 是有理数，推出矛盾，故 √2 是无理数",
+          "analysis": "假设 √2 是有理数，则可设 √2 = p/q，其中 p、q 是正整数且 p、q 互质（已约到最简）。两边平方得 2q² = p²，所以 p² 是偶数，从而 p 是偶数，设 p = 2k（k 为正整数）。代入得 2q² = 4k²，即 q² = 2k²，同理 q 也是偶数。于是 p、q 都是偶数，有公因数 2，与 p、q 互质矛盾。故假设不成立，√2 不是有理数，即 √2 是无理数。",
+          "scoreRule": [
+            {
+              "step": "假设 √2 = p/q 且 p、q 互质",
+              "score": 4
+            },
+            {
+              "step": "由 2q² = p² 推出 p 为偶数，设 p = 2k",
+              "score": 4
+            },
+            {
+              "step": "推出 q 也为偶数，与互质矛盾，结论得证",
+              "score": 4
+            }
+          ],
+          "itemId": "mhj_exam_b1_u01_q22"
+        }
+      ]
+    }
+  ]
+}

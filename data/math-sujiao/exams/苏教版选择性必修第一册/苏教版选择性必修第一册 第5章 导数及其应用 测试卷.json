@@ -1,0 +1,626 @@
+{
+  "book": "苏教版选择性必修第一册",
+  "kind": "unit",
+  "paper": "苏教版选择性必修第一册 第5章 导数及其应用 测试卷",
+  "stage": "高中",
+  "grade": 11,
+  "duration": 120,
+  "fullScore": 150,
+  "scope": [
+    "苏教版选择性必修第一册 第5章 导数及其应用"
+  ],
+  "examId": "msj_exam_x1_u05",
+  "sections": [
+    {
+      "title": "一、单选题（本大题共 8 小题，每小题 5 分，共 40 分。在每小题给出的四个选项中，只有一项是符合题目要求的）",
+      "items": [
+        {
+          "no": 1,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "stem": "已知函数 f(x)=x²，则 f′(1) 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "2"
+            },
+            {
+              "label": "B",
+              "text": "1"
+            },
+            {
+              "label": "C",
+              "text": "4"
+            },
+            {
+              "label": "D",
+              "text": "1/2"
+            }
+          ],
+          "answer": "A",
+          "analysis": "由导数定义 f′(1)=lim[f(1+Δx)−f(1)]/Δx=lim[(1+Δx)²−1]/Δx=lim(2+Δx)=2。也可直接由 f(x)=x² 得 f′(x)=2x，故 f′(1)=2，它表示曲线在点 (1,1) 处切线的斜率。",
+          "topicIds": [
+            "msj_h1086"
+          ],
+          "itemId": "msj_exam_x1_u05_q01"
+        },
+        {
+          "no": 2,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "stem": "函数 f(x)=x³−3x²+2x 的导函数 f′(x) 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "3x²−3x+2"
+            },
+            {
+              "label": "B",
+              "text": "x²−6x+2"
+            },
+            {
+              "label": "C",
+              "text": "3x²−6x+2"
+            },
+            {
+              "label": "D",
+              "text": "3x²−6x"
+            }
+          ],
+          "answer": "C",
+          "analysis": "逐项求导：(x³)′=3x²，(−3x²)′=−6x，(2x)′=2，常数项求导为 0。故 f′(x)=3x²−6x+2，注意 2x 的导数仍是 2 而不是 0。",
+          "topicIds": [
+            "msj_h1087"
+          ],
+          "itemId": "msj_exam_x1_u05_q02"
+        },
+        {
+          "no": 3,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "stem": "曲线 y=x² 在点 (1,1) 处的切线方程是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "y=2x"
+            },
+            {
+              "label": "B",
+              "text": "y=2x+1"
+            },
+            {
+              "label": "C",
+              "text": "y=x+1"
+            },
+            {
+              "label": "D",
+              "text": "y=2x−1"
+            }
+          ],
+          "answer": "D",
+          "analysis": "y′=2x，在 x=1 处切线的斜率为 2。由点斜式得 y−1=2(x−1)，即 y=2x−1，把切点 (1,1) 代入右边也等于 1，符合要求。",
+          "topicIds": [
+            "msj_h1086",
+            "msj_h1088"
+          ],
+          "itemId": "msj_exam_x1_u05_q03"
+        },
+        {
+          "no": 4,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "stem": "函数 f(x)=x³−3x 的单调递减区间是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "(−∞,−1)"
+            },
+            {
+              "label": "B",
+              "text": "(−1,1)"
+            },
+            {
+              "label": "C",
+              "text": "(1,+∞)"
+            },
+            {
+              "label": "D",
+              "text": "(−∞,−1)∪(1,+∞)"
+            }
+          ],
+          "answer": "B",
+          "analysis": "f′(x)=3x²−3=3(x+1)(x−1)。当 −1<x<1 时 f′(x)<0，函数单调递减；当 x<−1 或 x>1 时 f′(x)>0，函数单调递增。故递减区间为 (−1,1)。",
+          "topicIds": [
+            "msj_h1088"
+          ],
+          "itemId": "msj_exam_x1_u05_q04"
+        },
+        {
+          "no": 5,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "stem": "函数 f(x)=x³−6x²+9x 的极大值等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "0"
+            },
+            {
+              "label": "B",
+              "text": "9"
+            },
+            {
+              "label": "C",
+              "text": "4"
+            },
+            {
+              "label": "D",
+              "text": "−4"
+            }
+          ],
+          "answer": "C",
+          "analysis": "f′(x)=3x²−12x+9=3(x−1)(x−3)。当 x<1 或 x>3 时 f′>0，当 1<x<3 时 f′<0，故 x=1 处取极大值 f(1)=1−6+9=4，x=3 处取极小值 f(3)=27−54+27=0。",
+          "topicIds": [
+            "msj_h1088"
+          ],
+          "itemId": "msj_exam_x1_u05_q05"
+        },
+        {
+          "no": 6,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "stem": "函数 f(x)=x³−3x 在区间 [0,2] 上的最大值等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "0"
+            },
+            {
+              "label": "B",
+              "text": "−2"
+            },
+            {
+              "label": "C",
+              "text": "2"
+            },
+            {
+              "label": "D",
+              "text": "8"
+            }
+          ],
+          "answer": "C",
+          "analysis": "f′(x)=3x²−3，在 [0,2] 上的驻点为 x=1。计算端点和驻点处的函数值：f(0)=0，f(1)=−2，f(2)=8−6=2。比较得最大值为 2，最小值为 −2。",
+          "topicIds": [
+            "msj_h1088"
+          ],
+          "itemId": "msj_exam_x1_u05_q06"
+        },
+        {
+          "no": 7,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "stem": "若函数 f(x) 的导函数 f′(x)=(x−1)(x+2)，则 f(x) 的极小值点为（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "x=−2"
+            },
+            {
+              "label": "B",
+              "text": "x=2"
+            },
+            {
+              "label": "C",
+              "text": "x=−1"
+            },
+            {
+              "label": "D",
+              "text": "x=1"
+            }
+          ],
+          "answer": "D",
+          "analysis": "f′(x) 的两根为 −2 和 1。当 x<−2 时 f′>0，当 −2<x<1 时 f′<0，当 x>1 时 f′>0，故 f 在 x=−2 处由增转减取极大值，在 x=1 处由减转增取极小值，极小值点为 x=1。",
+          "topicIds": [
+            "msj_h1088"
+          ],
+          "itemId": "msj_exam_x1_u05_q07"
+        },
+        {
+          "no": 8,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "stem": "已知曲线 y=x³+ax+b 在点 (1,2) 处的切线方程为 y=4x−2，则 b 的值为（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "0"
+            },
+            {
+              "label": "B",
+              "text": "1"
+            },
+            {
+              "label": "C",
+              "text": "−1"
+            },
+            {
+              "label": "D",
+              "text": "2"
+            }
+          ],
+          "answer": "A",
+          "analysis": "切线斜率等于该点处的导数值，y′=3x²+a，故 3+a=4，a=1。又点 (1,2) 在曲线上，代入得 1+a+b=2，结合 a=1 得 b=0，此时曲线为 y=x³+x，切线为 y=4x−2。",
+          "topicIds": [
+            "msj_h1087"
+          ],
+          "itemId": "msj_exam_x1_u05_q08"
+        }
+      ]
+    },
+    {
+      "title": "二、多选题（本大题共 4 小题，每小题 5 分，共 20 分。全部选对的得 5 分，部分选对的得 2 分，有选错的得 0 分）",
+      "items": [
+        {
+          "no": 9,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "medium",
+          "stem": "下列关于求导运算的式子，正确的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "(x³)′=3x²"
+            },
+            {
+              "label": "B",
+              "text": "(sinx)′=cosx"
+            },
+            {
+              "label": "C",
+              "text": "(lnx)′=1/x（x>0）"
+            },
+            {
+              "label": "D",
+              "text": "(cosx)′=sinx"
+            }
+          ],
+          "answer": "ABC",
+          "analysis": "由基本初等函数的导数公式，(x³)′=3x²，(sinx)′=cosx，(lnx)′=1/x，前三式都正确。而 (cosx)′=−sinx，第四式漏掉了负号，故 D 错误。",
+          "topicIds": [
+            "msj_h1087"
+          ],
+          "itemId": "msj_exam_x1_u05_q09"
+        },
+        {
+          "no": 10,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "medium",
+          "stem": "已知函数 f(x)=x³−3x+1，则下列说法正确的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "f′(x)=3x²−3"
+            },
+            {
+              "label": "B",
+              "text": "f(x) 在 (−1,1) 上单调递减"
+            },
+            {
+              "label": "C",
+              "text": "f(x) 在 x=−1 处取得极小值"
+            },
+            {
+              "label": "D",
+              "text": "f(x) 的极大值为 3"
+            }
+          ],
+          "answer": "ABD",
+          "analysis": "求导得 f′(x)=3x²−3=3(x+1)(x−1)，A 正确；在 (−1,1) 内 f′<0，函数递减，B 正确；x<−1 时 f′>0，故 x=−1 处由增转减，取极大值 f(−1)=−1+3+1=3，D 正确，C 把极大值点说成了极小值点，错误。",
+          "topicIds": [
+            "msj_h1088"
+          ],
+          "itemId": "msj_exam_x1_u05_q10"
+        },
+        {
+          "no": 11,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "medium",
+          "stem": "关于曲线的切线，下列说法正确的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "曲线 y=x² 在点 (2,4) 处切线的斜率为 4"
+            },
+            {
+              "label": "B",
+              "text": "曲线 y=x² 的斜率为 4 的切线方程为 y=4x−1"
+            },
+            {
+              "label": "C",
+              "text": "曲线 y=x³ 在点 (0,0) 处的切线为 y=0"
+            },
+            {
+              "label": "D",
+              "text": "曲线 y=x³−x 在 x=0 处的切线斜率为 −1"
+            }
+          ],
+          "answer": "ACD",
+          "analysis": "y=x² 的导数为 2x，在 x=2 处为 4，A 正确；斜率为 4 的切线切点为 (2,4)，方程为 y=4x−4 而不是 y=4x−1，B 错误；y=x³ 的导数在 x=0 处为 0，切线为 y=0，C 正确；y=x³−x 的导数为 3x²−1，在 x=0 处等于 −1，D 正确。",
+          "topicIds": [
+            "msj_h1086"
+          ],
+          "itemId": "msj_exam_x1_u05_q11"
+        },
+        {
+          "no": 12,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "medium",
+          "stem": "已知函数 f(x)=x³−12x，则下列说法正确的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "f(x) 在 [−3,3] 上的最大值为 16"
+            },
+            {
+              "label": "B",
+              "text": "f(x) 在 [−3,3] 上的最小值为 −16"
+            },
+            {
+              "label": "C",
+              "text": "f(x) 在 [−3,−2] 上单调递减"
+            },
+            {
+              "label": "D",
+              "text": "f(x) 在 [2,3] 上单调递增"
+            }
+          ],
+          "answer": "ABD",
+          "analysis": "f′(x)=3x²−12，驻点为 x=±2。端点与驻点值：f(−3)=9，f(−2)=16，f(2)=−16，f(3)=−9，故最大值为 16、最小值为 −16，A、B 正确。在 [−3,−2] 上 f′>0，函数单调递增，C 错误；在 [2,3] 上 f′>0，函数单调递增，D 正确。",
+          "topicIds": [
+            "msj_h1088"
+          ],
+          "itemId": "msj_exam_x1_u05_q12"
+        }
+      ]
+    },
+    {
+      "title": "三、填空题（本大题共 4 小题，每小题 5 分，共 20 分）",
+      "items": [
+        {
+          "no": 13,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "medium",
+          "stem": "已知函数 f(x)=x·lnx，则 f′(1) 等于＿＿＿＿。",
+          "answer": "1",
+          "analysis": "由乘积的求导法则 f′(x)=lnx+x·(1/x)=lnx+1，故 f′(1)=0+1=1。这也是曲线在点 (1,0) 处切线的斜率。",
+          "topicIds": [
+            "msj_h1087"
+          ],
+          "itemId": "msj_exam_x1_u05_q13"
+        },
+        {
+          "no": 14,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "medium",
+          "stem": "曲线 y=x³−2x 在点 (1,−1) 处的切线方程为＿＿＿＿。",
+          "answer": "y=x−2",
+          "analysis": "y′=3x²−2，在 x=1 处斜率为 1。由点斜式得 y+1=1·(x−1)，即 y=x−2，代入切点坐标可得 −1=1−2，验证成立。",
+          "topicIds": [
+            "msj_h1087"
+          ],
+          "itemId": "msj_exam_x1_u05_q14"
+        },
+        {
+          "no": 15,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "medium",
+          "stem": "函数 f(x)=2x³−3x² 在区间 [0,2] 上的最小值为＿＿＿＿。",
+          "answer": "−1",
+          "analysis": "f′(x)=6x²−6x=6x(x−1)，在 (0,2) 内的驻点为 x=1。f(0)=0，f(1)=2−3=−1，f(2)=16−12=4，比较得最小值为 −1，在 x=1 处取得。",
+          "topicIds": [
+            "msj_h1088"
+          ],
+          "itemId": "msj_exam_x1_u05_q15"
+        },
+        {
+          "no": 16,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "medium",
+          "stem": "某路段纵断面用三次函数 f(x)=−x³+3x²（0≤x≤3）近似描述，则该函数在 [0,3] 上的最大值为＿＿＿＿。",
+          "answer": "4",
+          "analysis": "f′(x)=−3x²+6x=−3x(x−2)，在 (0,3) 内驻点为 x=2。f(0)=0，f(2)=−8+12=4，f(3)=−27+27=0，故最大值为 4，在 x=2 处取得，说明这段路面在此处最高。",
+          "topicIds": [
+            "msj_h1089"
+          ],
+          "itemId": "msj_exam_x1_u05_q16"
+        }
+      ]
+    },
+    {
+      "title": "四、解答题（本大题共 6 小题，共 70 分。解答应写出文字说明、证明过程或演算步骤）",
+      "items": [
+        {
+          "no": 17,
+          "score": 10,
+          "type": "solve",
+          "difficulty": "basic",
+          "stem": "已知函数 f(x)=x³−3x²+4。（1）求 f′(x)；（2）求 f(x) 的单调区间；（3）求 f(x) 的极值。",
+          "answer": "（1）f′(x)=3x²−6x；（2）递增区间为 (−∞,0) 与 (2,+∞)，递减区间为 (0,2)；（3）极大值 f(0)=4，极小值 f(2)=0",
+          "analysis": "求导得 f′(x)=3x²−6x=3x(x−2)，令 f′=0 得 x=0 或 x=2。当 x<0 或 x>2 时 f′>0，当 0<x<2 时 f′<0，故递增区间为 (−∞,0) 与 (2,+∞)，递减区间为 (0,2)。于是 f 在 x=0 处取极大值 4，在 x=2 处取极小值 8−12+4=0。",
+          "topicIds": [
+            "msj_h1088"
+          ],
+          "scoreRule": [
+            {
+              "step": "求导得 f′(x)=3x²−6x=3x(x−2)，令 f′(x)=0 得 x=0 与 x=2",
+              "score": 3
+            },
+            {
+              "step": "列表判断符号：f 在 (−∞,0) 与 (2,+∞) 上递增，在 (0,2) 上递减",
+              "score": 4
+            },
+            {
+              "step": "故极大值为 f(0)=4，极小值为 f(2)=8−12+4=0",
+              "score": 3
+            }
+          ],
+          "itemId": "msj_exam_x1_u05_q17"
+        },
+        {
+          "no": 18,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "hard",
+          "stem": "已知曲线 C: y=x³−2x+1。（1）求曲线 C 在点 (1,0) 处的切线方程；（2）求过点 (1,0) 且与曲线 C 相切的另一条直线的方程。",
+          "answer": "（1）y=x−1；（2）5x+4y−5=0",
+          "analysis": "y′=3x²−2，在 x=1 处斜率为 1，切线为 y=x−1。若切点为 (t,t³−2t+1)，则切线斜率为 3t²−2，切线过 (1,0)，可列方程 t³−2t+1=(3t²−2)(t−1)，整理得 (t−1)²(2t+1)=0，故 t=1 或 t=−1/2。t=−1/2 时切点为 (−1/2,15/8)，斜率为 −5/4，切线为 5x+4y−5=0。",
+          "topicIds": [
+            "msj_h1087",
+            "msj_h1088"
+          ],
+          "scoreRule": [
+            {
+              "step": "y′=3x²−2，在 x=1 处导数为 1，且点 (1,0) 在曲线上，切线为 y=x−1",
+              "score": 4
+            },
+            {
+              "step": "设切点 (t,t³−2t+1)，切线过 (1,0)，得 t³−2t+1=(3t²−2)(t−1)，整理为 (t−1)²(2t+1)=0，故 t=1 或 t=−1/2",
+              "score": 5
+            },
+            {
+              "step": "取 t=−1/2 得切点 (−1/2,15/8)、斜率 −5/4，切线方程为 5x+4y−5=0",
+              "score": 3
+            }
+          ],
+          "itemId": "msj_exam_x1_u05_q18"
+        },
+        {
+          "no": 19,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "medium",
+          "stem": "已知函数 f(x)=x³−3ax+1 在 x=1 处取得极值。（1）求实数 a 的值；（2）求 f(x) 在区间 [−2,2] 上的最大值与最小值。",
+          "answer": "（1）a=1；（2）最大值为 3，最小值为 −1",
+          "analysis": "f′(x)=3x²−3a，由 x=1 是极值点得 f′(1)=3−3a=0，a=1，此时 f′(x)=3(x+1)(x−1)，x=1 确实为极值点。f(x)=x³−3x+1，计算 f(−2)=−8+6+1=−1，f(−1)=−1+3+1=3，f(1)=1−3+1=−1，f(2)=8−6+1=3，故最大值为 3，最小值为 −1。",
+          "topicIds": [
+            "msj_h1088"
+          ],
+          "scoreRule": [
+            {
+              "step": "f′(x)=3x²−3a，由 f′(1)=0 得 3−3a=0，即 a=1",
+              "score": 5
+            },
+            {
+              "step": "此时 f′(x)=3(x+1)(x−1)，在 x=±1 处变号，验证 x=1 确为极小值点",
+              "score": 2
+            },
+            {
+              "step": "计算 f(−2)=−1，f(−1)=3，f(1)=−1，f(2)=3，故最大值为 3，最小值为 −1",
+              "score": 5
+            }
+          ],
+          "itemId": "msj_exam_x1_u05_q19"
+        },
+        {
+          "no": 20,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "medium",
+          "stem": "已知函数 f(x)=lnx−x。（1）求 f(x) 的单调区间与极大值；（2）证明：当 x>0 时，lnx≤x−1。",
+          "answer": "（1）递增区间 (0,1)，递减区间 (1,+∞)，极大值为 −1；（2）证明见解析",
+          "analysis": "f′(x)=1/x−1=(1−x)/x，定义域为 (0,+∞)。当 0<x<1 时 f′>0，当 x>1 时 f′<0，故 f 在 x=1 处取最大值也是极大值 f(1)=−1。于是对一切 x>0 有 f(x)≤−1，即 lnx−x≤−1，移项得 lnx≤x−1，等号仅在 x=1 时成立。",
+          "topicIds": [
+            "msj_h1088",
+            "msj_h1090",
+            "msj_h021"
+          ],
+          "scoreRule": [
+            {
+              "step": "定义域 (0,+∞)，求导得 f′(x)=(1−x)/x，令 f′=0 得 x=1",
+              "score": 4
+            },
+            {
+              "step": "0<x<1 时 f′>0 单调递增，x>1 时 f′<0 单调递减，故极大值也是最大值 f(1)=−1",
+              "score": 4
+            },
+            {
+              "step": "由 f(x)≤−1 得 lnx−x≤−1，即 lnx≤x−1，当且仅当 x=1 时取等号",
+              "score": 4
+            }
+          ],
+          "itemId": "msj_exam_x1_u05_q20"
+        },
+        {
+          "no": 21,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "medium",
+          "stem": "某工程用三次函数 f(x)=x³−6x²+9x+1（0≤x≤4）拟合一段路的纵断面，其中 x 为水平距离（单位：百米），f(x) 为高程（单位：米）。（1）求 f′(x) 以及 f(x) 在 (0,4) 内的单调区间；（2）求 f(x) 在 [0,4] 上的最大值与最小值，并说明其实际含义。",
+          "answer": "（1）f′(x)=3x²−12x+9，递增区间 (0,1) 与 (3,4)，递减区间 (1,3)；（2）最大值为 5 米，最小值为 1 米",
+          "analysis": "f′(x)=3x²−12x+9=3(x−1)(x−3)，在 (0,1)、(3,4) 上为正，在 (1,3) 上为负。计算得 f(0)=1，f(1)=5，f(3)=1，f(4)=5，故最大高程为 5 米（出现在 x=1 与 x=4 处），最小高程为 1 米，对应模型的谷底。",
+          "topicIds": [
+            "msj_h1089"
+          ],
+          "scoreRule": [
+            {
+              "step": "求导得 f′(x)=3x²−12x+9=3(x−1)(x−3)，令 f′=0 得 x=1 与 x=3",
+              "score": 4
+            },
+            {
+              "step": "在 (0,1) 与 (3,4) 上 f′>0 单调递增，在 (1,3) 上 f′<0 单调递减",
+              "score": 4
+            },
+            {
+              "step": "f(0)=1，f(1)=5，f(3)=1，f(4)=5，故最大高程 5 米、最小高程 1 米",
+              "score": 4
+            }
+          ],
+          "itemId": "msj_exam_x1_u05_q21"
+        },
+        {
+          "no": 22,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "medium",
+          "stem": "已知函数 f(x)=x³−3x²+a（a∈R）。（1）求 f(x) 的极大值点与极小值点；（2）若 f(x) 在区间 [−1,3] 上的最大值为 5，求 a 的值。",
+          "answer": "（1）极大值点为 x=0，极小值点为 x=2；（2）a=5",
+          "analysis": "f′(x)=3x²−6x=3x(x−2)，故 f 在 (−∞,0) 上递增、在 (0,2) 上递减、在 (2,+∞) 上递增，x=0 为极大值点，x=2 为极小值点。在 [−1,3] 上：f(−1)=−1−3+a=a−4，f(0)=a，f(2)=8−12+a=a−4，f(3)=27−27+a=a，最大值为 a，由 a=5 得解。",
+          "topicIds": [
+            "msj_h1091",
+            "msj_h021"
+          ],
+          "scoreRule": [
+            {
+              "step": "f′(x)=3x²−6x=3x(x−2)，令 f′=0 得 x=0 与 x=2",
+              "score": 4
+            },
+            {
+              "step": "符号变化说明 x=0 为极大值点，x=2 为极小值点，且 f(0)=a，f(2)=a−4",
+              "score": 3
+            },
+            {
+              "step": "在 [−1,3] 上比较 f(−1)=a−4，f(0)=a，f(2)=a−4，f(3)=a，最大值 a=5，故 a=5",
+              "score": 5
+            }
+          ],
+          "itemId": "msj_exam_x1_u05_q22"
+        }
+      ]
+    }
+  ]
+}

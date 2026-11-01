@@ -1,0 +1,597 @@
+{
+  "tag": "h2c2",
+  "book": "沪教版必修第二册",
+  "unit_points": [
+    {
+      "id": "mhj_h007",
+      "description": "掌握正弦、余弦、正切三类基本三角函数的图像形状、最小正周期、值域、奇偶性与单调性，并能用正弦型函数刻画现实中的周期现象",
+      "mastery_criteria": [
+        "能画出三类基本三角函数的简图，并说出各自的定义域、最小正周期与值域",
+        "能由函数表达式读出振幅、周期、频率与初始相位，解决简单的周期现象问题"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "mhj_h007_q1",
+          "topicId": "mhj_h007",
+          "prompt": "正弦函数 y=sin x 的最小正周期是多少",
+          "question": "正弦函数 y=sin x 的最小正周期是多少",
+          "options": [
+            {"label": "A", "text": "π/2"},
+            {"label": "B", "text": "π"},
+            {"label": "C", "text": "2π"},
+            {"label": "D", "text": "4π"}
+          ],
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "因为对任意实数 x 都有 sin(x+2π)=sin x，而小于 2π 的正数都不是它的周期，所以最小正周期是 2π。"
+        },
+        {
+          "id": "mhj_h007_q2",
+          "topicId": "mhj_h007",
+          "prompt": "余弦函数 y=cos x 是哪种函数，它的图像关于什么对称",
+          "question": "余弦函数 y=cos x 是哪种函数，它的图像关于什么对称",
+          "options": [
+            {"label": "A", "text": "奇函数，图像关于坐标原点对称"},
+            {"label": "B", "text": "偶函数，图像关于 y 轴对称"},
+            {"label": "C", "text": "奇函数，图像关于 y 轴对称"},
+            {"label": "D", "text": "非奇非偶函数，图像没有对称性"}
+          ],
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "由诱导公式 cos(−x)=cos x 可知余弦函数是偶函数，而偶函数的图像关于 y 轴对称。"
+        },
+        {
+          "id": "mhj_h007_q3",
+          "topicId": "mhj_h007",
+          "prompt": "正切函数 y=tan x 的定义域是实数集中除去哪些点得到的集合",
+          "question": "正切函数 y=tan x 的定义域是实数集中除去哪些点得到的集合",
+          "options": [
+            {"label": "A", "text": "全体实数，不需要除去任何点"},
+            {"label": "B", "text": "除去 x=kπ 的点，k 为整数"},
+            {"label": "C", "text": "除去 x=2kπ 的点，k 为整数"},
+            {"label": "D", "text": "除去 x=kπ+π/2 的点，k 为整数"}
+          ],
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "当角为 kπ+π/2 时其余弦值为零，正切值不存在，所以正切函数的定义域是除去这族点的实数集。"
+        },
+        {
+          "id": "mhj_h007_q4",
+          "topicId": "mhj_h007",
+          "prompt": "要得到余弦曲线，可以把正弦曲线作怎样的平移",
+          "question": "要得到余弦曲线，可以把正弦曲线作怎样的平移",
+          "options": [
+            {"label": "A", "text": "向左平移 π/2 个单位"},
+            {"label": "B", "text": "向右平移 π/2 个单位"},
+            {"label": "C", "text": "向上平移 π/2 个单位"},
+            {"label": "D", "text": "向左平移 2π 个单位"}
+          ],
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "因为 cos x=sin(x+π/2)，把正弦曲线上每一点都向左平移 π/2 个单位，就得到余弦函数的图像。"
+        },
+        {
+          "id": "mhj_h007_q5",
+          "topicId": "mhj_h007",
+          "prompt": "某简谐运动的位移与时间的关系为 y=5sin(100πt+π/3)，则该运动每秒往复振动的次数是多少",
+          "question": "某简谐运动的位移与时间的关系为 y=5sin(100πt+π/3)，则该运动每秒往复振动的次数是多少",
+          "answer": "50",
+          "type": "numeric",
+          "difficulty": "hard",
+          "verify": "{\"type\":\"num\",\"value\":50}",
+          "explanation": "圆频率 ω=100π，最小正周期 T=2π/ω=0.02 秒，频率 f=1/T=50，即每秒往复振动 50 次。"
+        }
+      ]
+    }
+  ],
+  "lesson_points": [
+    {
+      "id": "mhj_h1018",
+      "page": 70,
+      "description": "理解正弦曲线的五点法作图，掌握正弦函数的周期性、值域、奇偶性与单调性，会求正弦型函数的最小正周期与最值",
+      "mastery_criteria": [
+        "能用五个关键点画出正弦函数在一个周期上的大致图像",
+        "能利用正弦函数的单调性比较同名三角函数值的大小",
+        "会求形如 y=A sin(ωx+φ) 的函数的最小正周期与最大值最小值"
+      ],
+      "misconceptions": [
+        "把五点法中的五个关键点当成横坐标任意均匀分布的点，忽略了它们是一个周期内的零点与最值点",
+        "把正弦函数说成在定义域上的增函数，忽略了它只是分段单调"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "mhj_h1018_q1",
+          "topicId": "mhj_h1018",
+          "prompt": "用五点法作正弦曲线时，一个周期内纵坐标为 −1 的关键点，其横坐标是多少",
+          "question": "用五点法作正弦曲线时，一个周期内纵坐标为 −1 的关键点，其横坐标是多少",
+          "options": [
+            {"label": "A", "text": "π/2"},
+            {"label": "B", "text": "π"},
+            {"label": "C", "text": "3π/2"},
+            {"label": "D", "text": "2π"}
+          ],
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "正弦曲线在 0 到 2π 上的五个关键点依次是零点、最高点、零点、最低点、零点，其中最低点出现在横坐标为 3π/2 处。"
+        },
+        {
+          "id": "mhj_h1018_q2",
+          "topicId": "mhj_h1018",
+          "prompt": "函数 y=−3sin x+1 的最小正周期是多少",
+          "question": "函数 y=−3sin x+1 的最小正周期是多少",
+          "options": [
+            {"label": "A", "text": "π/2"},
+            {"label": "B", "text": "π"},
+            {"label": "C", "text": "4π"},
+            {"label": "D", "text": "2π"}
+          ],
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "常数倍与上下平移都不改变周期，y=−3sin x+1 与 y=sin x 的周期相同，因此最小正周期是 2π。"
+        },
+        {
+          "id": "mhj_h1018_q3",
+          "topicId": "mhj_h1018",
+          "prompt": "函数 y=2sin(3x+π/6) 的最小正周期是多少",
+          "question": "函数 y=2sin(3x+π/6) 的最小正周期是多少",
+          "options": [
+            {"label": "A", "text": "2π/3"},
+            {"label": "B", "text": "3π"},
+            {"label": "C", "text": "π/3"},
+            {"label": "D", "text": "6π"}
+          ],
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "对函数 y=A sin(ωx+φ)，当 ω 大于零时最小正周期 T=2π/ω，这里 ω=3，所以 T=2π/3。"
+        },
+        {
+          "id": "mhj_h1018_q4",
+          "topicId": "mhj_h1018",
+          "prompt": "利用正弦函数的单调性比较 sin(6π/5) 与 sin(7π/6) 的大小，结论是哪一个",
+          "question": "利用正弦函数的单调性比较 sin(6π/5) 与 sin(7π/6) 的大小，结论是哪一个",
+          "options": [
+            {"label": "A", "text": "sin(6π/5) 大于 sin(7π/6)"},
+            {"label": "B", "text": "sin(6π/5) 小于 sin(7π/6)"},
+            {"label": "C", "text": "两个值相等"},
+            {"label": "D", "text": "仅由已知条件无法比较"}
+          ],
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "由 π/2 小于 7π/6 小于 6π/5 小于 3π/2，而正弦函数在该区间上是严格减函数，所以 sin(6π/5) 小于 sin(7π/6)。"
+        },
+        {
+          "id": "mhj_h1018_q5",
+          "topicId": "mhj_h1018",
+          "prompt": "函数 y 等于 sin x 的平方再减去 sin x，它的最大值是多少",
+          "question": "函数 y 等于 sin x 的平方再减去 sin x，它的最大值是多少",
+          "options": [
+            {"label": "A", "text": "2"},
+            {"label": "B", "text": "1"},
+            {"label": "C", "text": "−1/4"},
+            {"label": "D", "text": "9/4"}
+          ],
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "令 t=sin x，则 t 在 −1 到 1 之间，函数化为 t 减 1/2 的平方再减 1/4，当 t=−1 时取得最大值 2。"
+        },
+        {
+          "id": "mhj_h1018_q6",
+          "topicId": "mhj_h1018",
+          "prompt": "函数 y=3sin(2x+π/4) 的最大值是多少，请写出数值",
+          "question": "函数 y=3sin(2x+π/4) 的最大值是多少，请写出数值",
+          "answer": "3",
+          "type": "numeric",
+          "difficulty": "basic",
+          "verify": "{\"type\":\"num\",\"value\":3}",
+          "explanation": "因为正弦式的值不超过 1，当 2x+π/4=2kπ+π/2 时取到 1，所以整个函数的最大值就是 3。"
+        },
+        {
+          "id": "mhj_h1018_q7",
+          "topicId": "mhj_h1018",
+          "prompt": "函数 y=1−sin x 在 0 到 2π 的开区间内取得最小值时，x 的值是多少",
+          "question": "函数 y=1−sin x 在 0 到 2π 的开区间内取得最小值时，x 的值是多少",
+          "answer": "π/2",
+          "type": "fill",
+          "difficulty": "standard",
+          "explanation": "当 x=π/2 时 sin x 取得最大值 1，此时 1−sin x 取得最小值 0，因此在所给区间内最小值在 x=π/2 处取到。"
+        },
+        {
+          "id": "mhj_h1018_q8",
+          "topicId": "mhj_h1018",
+          "prompt": "在半径为 r 的半圆形铁板中截取矩形，使其一边落在直径上、另两个顶点在圆弧上，怎样截取面积最大，最大面积是多少",
+          "question": "在半径为 r 的半圆形铁板中截取矩形，使其一边落在直径上、另两个顶点在圆弧上，怎样截取面积最大，最大面积是多少",
+          "answer": "当矩形的对角线与直径的夹角为 π/4 时面积最大，最大面积为 r 的平方，此时矩形在直径上的边长为 √2 r，另一边长为 (√2/2) r",
+          "type": "short-answer",
+          "difficulty": "hard",
+          "explanation": "设夹角为 x，则矩形面积 y=r 的平方乘 sin 2x，x 在 0 到 π/2 之间，当 2x=π/2 即 x=π/4 时 sin 2x 取到 1，面积达到最大值 r 的平方。"
+        }
+      ]
+    },
+    {
+      "id": "mhj_h1019",
+      "page": 86,
+      "description": "借助 cos x=sin(x+π/2) 由正弦曲线得到余弦曲线，掌握余弦函数的周期、值域、奇偶性与单调性，并会求相关的最值与单调区间",
+      "mastery_criteria": [
+        "能说出余弦曲线与正弦曲线之间的平移关系，并写出一个周期内的五个关键点",
+        "会求形如 y=A cos(ωx+φ) 的函数的最小正周期与单调区间"
+      ],
+      "misconceptions": [
+        "把余弦曲线最高点的横坐标误写成 π/2，与正弦曲线的关键点混淆",
+        "求余弦型函数的单调区间时，没有先看清 ω 的符号就直接套用基本余弦函数的单调区间"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "mhj_h1019_q1",
+          "topicId": "mhj_h1019",
+          "prompt": "余弦曲线在一个周期内纵坐标为 −1 的关键点，其横坐标是多少",
+          "question": "余弦曲线在一个周期内纵坐标为 −1 的关键点，其横坐标是多少",
+          "options": [
+            {"label": "A", "text": "π/4"},
+            {"label": "B", "text": "π/2"},
+            {"label": "C", "text": "π"},
+            {"label": "D", "text": "3π/2"}
+          ],
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "余弦曲线在 0 到 2π 上的五个关键点横坐标依次是 0、π/2、π、3π/2、2π，其中横坐标为 π 的点纵坐标是 −1。"
+        },
+        {
+          "id": "mhj_h1019_q2",
+          "topicId": "mhj_h1019",
+          "prompt": "函数 y=3cos 2x 的最小值是多少，请写出数值",
+          "question": "函数 y=3cos 2x 的最小值是多少，请写出数值",
+          "answer": "-3",
+          "type": "numeric",
+          "difficulty": "basic",
+          "verify": "{\"type\":\"num\",\"value\":-3}",
+          "explanation": "因为余弦式的值不小于 −1，即 cos 2x 的最小值为 −1，把它乘以 3 后，函数 y=3cos 2x 的最小值就是 −3。"
+        },
+        {
+          "id": "mhj_h1019_q3",
+          "topicId": "mhj_h1019",
+          "prompt": "余弦函数是偶函数，它的图像关于什么对称",
+          "question": "余弦函数是偶函数，它的图像关于什么对称",
+          "options": [
+            {"label": "A", "text": "坐标原点"},
+            {"label": "B", "text": "y 轴"},
+            {"label": "C", "text": "直线 x=π/2"},
+            {"label": "D", "text": "直线 x=π"}
+          ],
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "由 cos(−x)=cos x 可知余弦函数是偶函数，而偶函数的图像关于 y 轴对称，不是关于原点对称。"
+        },
+        {
+          "id": "mhj_h1019_q4",
+          "topicId": "mhj_h1019",
+          "prompt": "函数 y=2cos(2x−π/3) 的最小正周期是多少",
+          "question": "函数 y=2cos(2x−π/3) 的最小正周期是多少",
+          "options": [
+            {"label": "A", "text": "π"},
+            {"label": "B", "text": "2π"},
+            {"label": "C", "text": "π/2"},
+            {"label": "D", "text": "4π"}
+          ],
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "这里 ω=2，由余弦型函数的最小正周期 T=2π/ω 得 T=π，也可以先把它化成 2sin(2x+π/6) 再读周期。"
+        },
+        {
+          "id": "mhj_h1019_q5",
+          "topicId": "mhj_h1019",
+          "prompt": "余弦函数的严格单调递减区间是下列哪一个",
+          "question": "余弦函数的严格单调递减区间是下列哪一个",
+          "options": [
+            {"label": "A", "text": "从 2kπ−π 到 2kπ，k 为整数"},
+            {"label": "B", "text": "从 2kπ+π/2 到 2kπ+3π/2，k 为整数"},
+            {"label": "C", "text": "从 2kπ−π/2 到 2kπ+π/2，k 为整数"},
+            {"label": "D", "text": "从 2kπ 到 2kπ+π，k 为整数"}
+          ],
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "余弦函数在 2kπ 到 2kπ+π 上由 1 严格减小到 −1，所以这是它的严格单调递减区间，其余几项对应区间并不递减。"
+        },
+        {
+          "id": "mhj_h1019_q6",
+          "topicId": "mhj_h1019",
+          "prompt": "余弦函数取得最小值时，自变量 x 的取值集合是什么",
+          "question": "余弦函数取得最小值时，自变量 x 的取值集合是什么",
+          "answer": "x=2kπ+π，k 为整数",
+          "type": "fill",
+          "difficulty": "standard",
+          "explanation": "当且仅当 x=2kπ+π 时 cos x 等于 −1，此时余弦函数取得最小值 −1，因此所求集合是所有形如 2kπ+π 的实数。"
+        },
+        {
+          "id": "mhj_h1019_q7",
+          "topicId": "mhj_h1019",
+          "prompt": "求函数 y 等于 cos x 的平方减去 4cos x 再加 1 的最大值与最小值，并写出取得最大值时 x 的取值",
+          "question": "求函数 y 等于 cos x 的平方减去 4cos x 再加 1 的最大值与最小值，并写出取得最大值时 x 的取值",
+          "answer": "最大值为 6，此时 x=2kπ+π，k 为整数；最小值为 −2，此时 x=2kπ，k 为整数",
+          "type": "short-answer",
+          "difficulty": "hard",
+          "explanation": "令 t=cos x，则 t 在 −1 到 1 之间，函数化为 t 减 2 的平方再减 3，t=−1 时取最大值 6，t=1 时取最小值 −2。"
+        },
+        {
+          "id": "mhj_h1019_q8",
+          "topicId": "mhj_h1019",
+          "prompt": "函数 y 等于 1 减去 2 倍的 sin(x−π/4) 的平方，它的最小正周期与奇偶性是哪一项",
+          "question": "函数 y 等于 1 减去 2 倍的 sin(x−π/4) 的平方，它的最小正周期与奇偶性是哪一项",
+          "options": [
+            {"label": "A", "text": "最小正周期为 π 的奇函数"},
+            {"label": "B", "text": "最小正周期为 π 的偶函数"},
+            {"label": "C", "text": "最小正周期为 π/2 的奇函数"},
+            {"label": "D", "text": "最小正周期为 π/2 的偶函数"}
+          ],
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "由二倍角公式，1 减 2 倍 sin(x−π/4) 的平方等于 cos(2x−π/2)，即 sin 2x，它是奇函数且最小正周期为 π。"
+        }
+      ]
+    },
+    {
+      "id": "mhj_h1020",
+      "page": 90,
+      "description": "理解 y=A sin(ωx+φ) 中振幅、最小正周期、频率、相位与初始相位的含义，会用五点法作出它在一个周期上的图像",
+      "mastery_criteria": [
+        "能由函数表达式直接读出振幅、最小正周期、频率与初始相位",
+        "能用五点法作出正弦型函数在一个周期上的大致图像，并由图像反求表达式中的参数"
+      ],
+      "misconceptions": [
+        "把圆频率 ω 与频率 f 混为一谈，忘记了频率等于 ω 除以 2π",
+        "认为表达式中的 φ 增大时图像向右平移，实际上图像是向左平移"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "mhj_h1020_q1",
+          "topicId": "mhj_h1020",
+          "prompt": "函数 y=5sin(3x+π/4) 的振幅是多少",
+          "question": "函数 y=5sin(3x+π/4) 的振幅是多少",
+          "options": [
+            {"label": "A", "text": "3"},
+            {"label": "B", "text": "π/4"},
+            {"label": "C", "text": "5"},
+            {"label": "D", "text": "3π"}
+          ],
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "在 y=A sin(ωx+φ) 中，A 的绝对值就是振幅，这里正弦前面的系数是 5，所以振幅为 5，值域是 −5 到 5。"
+        },
+        {
+          "id": "mhj_h1020_q2",
+          "topicId": "mhj_h1020",
+          "prompt": "函数 y=3sin(2x+π/4) 的最小正周期是多少",
+          "question": "函数 y=3sin(2x+π/4) 的最小正周期是多少",
+          "options": [
+            {"label": "A", "text": "π/2"},
+            {"label": "B", "text": "π"},
+            {"label": "C", "text": "2π"},
+            {"label": "D", "text": "4π"}
+          ],
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "由 ω=2 得最小正周期 T=2π/ω=π，也就是说当 2x+π/4 从 0 变到 2π 时，x 只从 −π/8 变到 7π/8。"
+        },
+        {
+          "id": "mhj_h1020_q3",
+          "topicId": "mhj_h1020",
+          "prompt": "函数 y=3sin(2x+π/4) 的初始相位是多少",
+          "question": "函数 y=3sin(2x+π/4) 的初始相位是多少",
+          "answer": "π/4",
+          "type": "fill",
+          "difficulty": "basic",
+          "explanation": "这个函数的相位是 2x+π/4，所谓初始相位就是当 x=0 时的相位值，因此初始相位是 π/4。"
+        },
+        {
+          "id": "mhj_h1020_q4",
+          "topicId": "mhj_h1020",
+          "prompt": "下列函数中，与函数 y=5sin(3x+π/4) 的图像形状相同的是哪一个",
+          "question": "下列函数中，与函数 y=5sin(3x+π/4) 的图像形状相同的是哪一个",
+          "options": [
+            {"label": "A", "text": "y=8sin(3x+π/4)"},
+            {"label": "B", "text": "y=3sin(5x+π/4)"},
+            {"label": "C", "text": "y=5sin(2x+π/4)"},
+            {"label": "D", "text": "y=5sin(3x+3π/4)"}
+          ],
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "图像形状相同要求振幅与圆频率都相同。这里 y=5sin(3x+3π/4) 的振幅是 5、ω 是 3，只是初始相位不同，因此与已知函数形状相同。"
+        },
+        {
+          "id": "mhj_h1020_q5",
+          "topicId": "mhj_h1020",
+          "prompt": "交流电的电流强度与时间的关系为 I=10sin(100πt)，它的频率是多少赫兹",
+          "question": "交流电的电流强度与时间的关系为 I=10sin(100πt)，它的频率是多少赫兹",
+          "answer": "50",
+          "type": "numeric",
+          "difficulty": "standard",
+          "verify": "{\"type\":\"num\",\"value\":50}",
+          "explanation": "圆频率 ω=100π，由频率 f=ω/(2π) 得 f=50，也就是说最小正周期为 0.02 秒，每秒变化 50 次。"
+        },
+        {
+          "id": "mhj_h1020_q6",
+          "topicId": "mhj_h1020",
+          "prompt": "弹簧上小球离开平衡位置的位移为 h=2sin(πt+π/4)，当 t=0 时小球与平衡位置的距离是多少厘米",
+          "question": "弹簧上小球离开平衡位置的位移为 h=2sin(πt+π/4)，当 t=0 时小球与平衡位置的距离是多少厘米",
+          "options": [
+            {"label": "A", "text": "√2"},
+            {"label": "B", "text": "2"},
+            {"label": "C", "text": "0"},
+            {"label": "D", "text": "π/4"}
+          ],
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "把 t=0 代入表达式，得 h=2sin(π/4)=√2，即小球开始振动时离开平衡位置 √2 厘米，而不是 0 或 2 厘米。"
+        },
+        {
+          "id": "mhj_h1020_q7",
+          "topicId": "mhj_h1020",
+          "prompt": "已知交流电的电流强度 I=I0 sin(ωt+φ)，其中 I0 大于零、ω 大于零、φ 在 0 与 2π 之间，它的周期为 0.02 秒，电流最大值为 10 安，且 t=0.005 秒时电流达到最大值，求 I0、ω 与 φ",
+          "question": "已知交流电的电流强度 I=I0 sin(ωt+φ)，其中 I0 大于零、ω 大于零、φ 在 0 与 2π 之间，它的周期为 0.02 秒，电流最大值为 10 安，且 t=0.005 秒时电流达到最大值，求 I0、ω 与 φ",
+          "answer": "I0=10，ω=100π，φ=0",
+          "type": "short-answer",
+          "difficulty": "hard",
+          "explanation": "电流最大值就是振幅，故 I0=10；由周期 0.02 秒得 ω=2π/T=100π；把 t=0.005 代入得 sin(π/2+φ)=1，结合 φ 的范围得 φ=0。"
+        },
+        {
+          "id": "mhj_h1020_q8",
+          "topicId": "mhj_h1020",
+          "prompt": "在 y=A sin(ωx+φ) 中，当 ω 增大而其他量不变时，函数图像会怎样变化",
+          "question": "在 y=A sin(ωx+φ) 中，当 ω 增大而其他量不变时，函数图像会怎样变化",
+          "options": [
+            {"label": "A", "text": "振幅增大"},
+            {"label": "B", "text": "最小正周期减小"},
+            {"label": "C", "text": "图像整体向左平移"},
+            {"label": "D", "text": "值域变成全体实数"}
+          ],
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "最小正周期 T=2π/ω 与 ω 成反比，所以 ω 增大时周期减小，图像在水平方向被压缩，而振幅与值域都不改变。"
+        }
+      ]
+    },
+    {
+      "id": "mhj_h1021",
+      "page": 96,
+      "description": "掌握正切函数的定义域与图像由无穷多支曲线组成的特点，以及它的最小正周期、值域、奇偶性与单调区间",
+      "mastery_criteria": [
+        "能写出正切函数的定义域，并说明它的图像被哪些竖直直线隔开",
+        "会求形如 y=tan(ωx+φ) 的函数的定义域、最小正周期与单调增区间"
+      ],
+      "misconceptions": [
+        "说正切函数在整个定义域上都是增函数，忽略了图像在相邻两支之间断开",
+        "求正切型函数的定义域时漏掉 kπ+π/2 这一族点，只写了部分限制条件"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "mhj_h1021_q1",
+          "topicId": "mhj_h1021",
+          "prompt": "正切函数 y=tan x 的最小正周期是多少",
+          "question": "正切函数 y=tan x 的最小正周期是多少",
+          "options": [
+            {"label": "A", "text": "π/2"},
+            {"label": "B", "text": "π"},
+            {"label": "C", "text": "2π"},
+            {"label": "D", "text": "4π"}
+          ],
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "由诱导公式 tan(x+π)=tan x 知 π 是它的一个周期，而小于 π 的正数都不满足，所以最小正周期是 π，比正弦的周期小一半。"
+        },
+        {
+          "id": "mhj_h1021_q2",
+          "topicId": "mhj_h1021",
+          "prompt": "正切函数的定义域是实数集中除去哪些点的集合",
+          "question": "正切函数的定义域是实数集中除去哪些点的集合",
+          "options": [
+            {"label": "A", "text": "除去 x=kπ+π/2 的点，k 为整数"},
+            {"label": "B", "text": "除去 x=kπ 的点，k 为整数"},
+            {"label": "C", "text": "除去 x=2kπ 的点，k 为整数"},
+            {"label": "D", "text": "全体实数，不需要除去任何点"}
+          ],
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "当角为 kπ+π/2 时其余弦值为零，正切值不存在，所以定义域要除去这族点，图像正是被这些直线隔成无穷多支。"
+        },
+        {
+          "id": "mhj_h1021_q3",
+          "topicId": "mhj_h1021",
+          "prompt": "正切函数的值域是什么，请用文字说明",
+          "question": "正切函数的值域是什么，请用文字说明",
+          "answer": "全体实数，既没有最大值也没有最小值",
+          "type": "fill",
+          "difficulty": "basic",
+          "explanation": "当 x 从左侧趋近 π/2 时正切值无限增大，从右侧趋近 −π/2 时无限减小，所以值域是全体实数，没有最大值也没有最小值。"
+        },
+        {
+          "id": "mhj_h1021_q4",
+          "topicId": "mhj_h1021",
+          "prompt": "函数 y=tan(2x+π/6) 的最小正周期是多少",
+          "question": "函数 y=tan(2x+π/6) 的最小正周期是多少",
+          "options": [
+            {"label": "A", "text": "π"},
+            {"label": "B", "text": "2π"},
+            {"label": "C", "text": "π/2"},
+            {"label": "D", "text": "π/4"}
+          ],
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "正切型函数 y=tan(ωx+φ) 的最小正周期为 π 除以 ω，这里 ω=2，所以最小正周期是 π/2，而不是 π。"
+        },
+        {
+          "id": "mhj_h1021_q5",
+          "topicId": "mhj_h1021",
+          "prompt": "函数 y=tan(πx/6+π/3) 的定义域中，x 不能取的最小正数是多少",
+          "question": "函数 y=tan(πx/6+π/3) 的定义域中，x 不能取的最小正数是多少",
+          "answer": "1",
+          "type": "numeric",
+          "difficulty": "standard",
+          "verify": "{\"type\":\"num\",\"value\":1}",
+          "explanation": "由 πx/6+π/3=kπ+π/2 解得 x=6k+1，k 取 0 时得 x=1，这就是定义域中被除去的点里最小的正数。"
+        },
+        {
+          "id": "mhj_h1021_q6",
+          "topicId": "mhj_h1021",
+          "prompt": "函数 y=tan(πx/6+π/3) 的单调增区间可以写成 6k 减 5 到 6k 加 1，当 k 取零时这个区间是什么",
+          "question": "函数 y=tan(πx/6+π/3) 的单调增区间可以写成 6k 减 5 到 6k 加 1，当 k 取零时这个区间是什么",
+          "answer": "开区间 −5 到 1",
+          "type": "fill",
+          "difficulty": "standard",
+          "explanation": "由 kπ−π/2 小于 πx/6+π/3 小于 kπ+π/2 解得 6k−5 小于 x 小于 6k+1，当 k=0 时就是 −5 到 1 这个开区间。"
+        },
+        {
+          "id": "mhj_h1021_q7",
+          "topicId": "mhj_h1021",
+          "prompt": "求函数 y=tan(3x+π/4) 的定义域与单调增区间",
+          "question": "求函数 y=tan(3x+π/4) 的定义域与单调增区间",
+          "answer": "定义域为 x 不等于 kπ/3+π/12，k 为整数；单调增区间为每个开区间 kπ/3−π/4 到 kπ/3+π/12，k 为整数",
+          "type": "short-answer",
+          "difficulty": "hard",
+          "explanation": "由 3x+π/4 不等于 kπ+π/2 得定义域；再由 kπ−π/2 小于 3x+π/4 小于 kπ+π/2 解得 kπ/3−π/4 小于 x 小于 kπ/3+π/12，即增区间。"
+        },
+        {
+          "id": "mhj_h1021_q8",
+          "topicId": "mhj_h1021",
+          "prompt": "关于正切函数 y=tan x，下列说法正确的是哪一个",
+          "question": "关于正切函数 y=tan x，下列说法正确的是哪一个",
+          "options": [
+            {"label": "A", "text": "它在整个定义域上是严格增函数"},
+            {"label": "B", "text": "它有最大值但没有最小值"},
+            {"label": "C", "text": "它的最小正周期是 2π"},
+            {"label": "D", "text": "它的图像关于坐标原点对称"}
+          ],
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "由 tan(−x)=−tan x 知正切函数是奇函数，图像关于坐标原点对称；它只在每个开区间上递增，没有最值，最小正周期是 π。"
+        }
+      ]
+    }
+  ]
+}

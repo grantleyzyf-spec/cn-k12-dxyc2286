@@ -1,0 +1,657 @@
+{
+  "tag": "h1c2",
+  "book": "沪教版必修第一册",
+  "unit_points": [
+    {
+      "id": "mhj_h002",
+      "description": "把等式与不等式作为一个整体来处理：等式的基本性质用来解方程与方程组，不等式的基本性质用来比较大小和求解各类不等式，一元二次方程与一元二次不等式通过判别式和根与系数的关系互相转化，平均值不等式则给出两个正数的和与积之间的大小关系。",
+      "mastery_criteria": [
+        "能判断等式与不等式性质命题的真假，并用性质或反例说明理由",
+        "能用判别式和韦达定理求一元二次方程的解集与两根的对称式的值",
+        "能求解一元二次不等式、分式不等式与含绝对值的不等式"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "mhj_h002_q1",
+          "topicId": "mhj_h002",
+          "prompt": "已知 a、b、c 都是实数，且 a 大于 b，则下列不等式一定成立的是",
+          "question": "已知 a、b、c 都是实数，且 a 大于 b，则下列不等式一定成立的是",
+          "options": [
+            {
+              "label": "A",
+              "text": "a 的平方大于 b 的平方"
+            },
+            {
+              "label": "B",
+              "text": "a 减 3 大于 b 减 3"
+            },
+            {
+              "label": "C",
+              "text": "ac 大于 bc"
+            },
+            {
+              "label": "D",
+              "text": "a 分之 1 小于 b 分之 1"
+            }
+          ],
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "由不等式的加法性质，在 a 大于 b 的两边同时减去 3，不等号方向不变，所以 a 减 3 大于 b 减 3 一定成立。平方、乘积与倒数的大小还要依赖符号或 c 的正负，因此其余三项都不一定成立。"
+        },
+        {
+          "id": "mhj_h002_q2",
+          "topicId": "mhj_h002",
+          "prompt": "不等式 x 的平方减 5x 加 6 小于 0 的解集是",
+          "question": "不等式 x 的平方减 5x 加 6 小于 0 的解集是",
+          "options": [
+            {
+              "label": "A",
+              "text": "(2,3)"
+            },
+            {
+              "label": "B",
+              "text": "(-∞,2)∪(3,+∞)"
+            },
+            {
+              "label": "C",
+              "text": "(-3,-2)"
+            },
+            {
+              "label": "D",
+              "text": "(-∞,-3)∪(-2,+∞)"
+            }
+          ],
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "对应的方程 x 的平方减 5x 加 6 等于 0 的两个根是 2 和 3，二次项系数为正，小于 0 的解集在两根之间，即 2 小于 x 小于 3，写成区间就是 (2,3)。"
+        },
+        {
+          "id": "mhj_h002_q3",
+          "topicId": "mhj_h002",
+          "prompt": "已知方程 x 的平方加 x 减 3 等于 0 的两个根为 x1 和 x2，则 x1 的平方加 x2 的平方的值是多少",
+          "question": "已知方程 x 的平方加 x 减 3 等于 0 的两个根为 x1 和 x2，则 x1 的平方加 x2 的平方的值是多少",
+          "answer": 7,
+          "type": "numeric",
+          "difficulty": "standard",
+          "verify": "{\"type\": \"num\", \"value\": 7}",
+          "explanation": "由韦达定理得 x1 加 x2 等于 -1，x1 乘 x2 等于 -3。于是 x1 的平方加 x2 的平方等于两根和的平方减去两倍的积，即 1 加 6 等于 7。"
+        },
+        {
+          "id": "mhj_h002_q4",
+          "topicId": "mhj_h002",
+          "prompt": "若关于 x 的不等式 x 的平方减 2x 加 m 大于 0 的解集是全体实数，则实数 m 的取值范围是",
+          "question": "若关于 x 的不等式 x 的平方减 2x 加 m 大于 0 的解集是全体实数，则实数 m 的取值范围是",
+          "answer": "m 大于 1",
+          "type": "fill",
+          "difficulty": "standard",
+          "explanation": "二次项系数为正且解集是全体实数，说明对应方程的判别式小于 0，即 4 减 4m 小于 0，解得 m 大于 1，也就是所求的取值范围。"
+        },
+        {
+          "id": "mhj_h002_q5",
+          "topicId": "mhj_h002",
+          "prompt": "已知一元二次不等式 x 的平方加 bx 加 c 小于 0 的解集为 1 小于 x 小于 2，则 b 加 c 的值是",
+          "question": "已知一元二次不等式 x 的平方加 bx 加 c 小于 0 的解集为 1 小于 x 小于 2，则 b 加 c 的值是",
+          "options": [
+            {
+              "label": "A",
+              "text": "5"
+            },
+            {
+              "label": "B",
+              "text": "3"
+            },
+            {
+              "label": "C",
+              "text": "-1"
+            },
+            {
+              "label": "D",
+              "text": "-5"
+            }
+          ],
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "解集是两根之间的区间，说明方程 x 的平方加 bx 加 c 等于 0 的两根为 1 和 2。由韦达定理得 b 等于 -3，c 等于 2，所以 b 加 c 等于 -1。"
+        }
+      ]
+    }
+  ],
+  "lesson_points": [
+    {
+      "id": "mhj_h1003",
+      "page": 34,
+      "description": "等式的加法性质、乘法性质与传递性，以及两边同乘一个可能为零的式子时不能直接约去；不等式由两数之差的正负来定义，具有传递性、加法性质与乘法性质，乘负数要改变不等号方向，由此推出同向可加、同向同正可乘与取倒数反向等结论；一元二次方程的解集由判别式决定，两根满足韦达定理，比较两个代数式的大小常用求差法。",
+      "mastery_criteria": [
+        "能判断含参数的等式与不等式命题的真假，并给出反例或证明",
+        "能用判别式写出含参一元二次方程的解集，并用韦达定理求两根的对称式",
+        "能用求差法比较两个代数式的大小，并指出等号成立的条件"
+      ],
+      "misconceptions": [
+        "认为由 ac 等于 bc 一定能约去 c 得到 a 等于 b，忽略了 c 可能为零",
+        "在不等式两边同乘或同除以一个含字母的式子时不讨论它的正负，直接沿用原来的不等号方向",
+        "把重根当成解集中的两个不同元素，写解集时重复写出同一个根"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "mhj_h1003_q1",
+          "topicId": "mhj_h1003",
+          "prompt": "设 a、b、c 都是实数，下列命题中是假命题的是",
+          "question": "设 a、b、c 都是实数，下列命题中是假命题的是",
+          "options": [
+            {
+              "label": "A",
+              "text": "若 a 等于 b，则 ac 等于 bc"
+            },
+            {
+              "label": "B",
+              "text": "若 ac 等于 bc，则 a 等于 b"
+            },
+            {
+              "label": "C",
+              "text": "若 a 等于 b，则 a 加 c 等于 b 加 c"
+            },
+            {
+              "label": "D",
+              "text": "若 a 等于 b 且 c 等于 d，则 a 加 c 等于 b 加 d"
+            }
+          ],
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "当 c 等于 0 时，即使 a 与 b 不相等，也有 ac 与 bc 都等于 0，所以由 ac 等于 bc 推不出 a 等于 b。教材正是以 c 等于 0 为例说明该命题是假命题。"
+        },
+        {
+          "id": "mhj_h1003_q2",
+          "topicId": "mhj_h1003",
+          "prompt": "一元二次方程 x 的平方减 4x 加 4 等于 0 的解集中含有多少个元素",
+          "question": "一元二次方程 x 的平方减 4x 加 4 等于 0 的解集中含有多少个元素",
+          "answer": 1,
+          "type": "numeric",
+          "difficulty": "basic",
+          "verify": "{\"type\": \"num\", \"value\": 1}",
+          "explanation": "这个方程的判别式等于 0，因此有两个相等的实根 x 等于 2。这样的根称为重根，重根在解集中只能出现一次，所以解集只有一个元素。"
+        },
+        {
+          "id": "mhj_h1003_q3",
+          "topicId": "mhj_h1003",
+          "prompt": "已知 a 大于 b，且 c 小于 0，则下列不等式一定成立的是",
+          "question": "已知 a 大于 b，且 c 小于 0，则下列不等式一定成立的是",
+          "options": [
+            {
+              "label": "A",
+              "text": "ac 小于 bc"
+            },
+            {
+              "label": "B",
+              "text": "ac 大于 bc"
+            },
+            {
+              "label": "C",
+              "text": "a 加 c 小于 b 加 c"
+            },
+            {
+              "label": "D",
+              "text": "a 减 c 小于 b 减 c"
+            }
+          ],
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "由不等式的乘法性质，在 a 大于 b 的两边同乘负数 c，不等号方向要改变，得 ac 小于 bc。两边同加或同减同一个数不等号方向不变，所以其余三项都不成立。"
+        },
+        {
+          "id": "mhj_h1003_q4",
+          "topicId": "mhj_h1003",
+          "prompt": "已知方程 2 倍的 x 的平方加 4x 减 3 等于 0 的两个根为 x1 和 x2，则 x1 分之 1 加 x2 分之 1 的值是",
+          "question": "已知方程 2 倍的 x 的平方加 4x 减 3 等于 0 的两个根为 x1 和 x2，则 x1 分之 1 加 x2 分之 1 的值是",
+          "answer": "4/3",
+          "type": "fill",
+          "difficulty": "standard",
+          "explanation": "由韦达定理，x1 加 x2 等于 -2，x1 乘 x2 等于 -3/2。通分得 x1 分之 1 加 x2 分之 1 等于两根和除以两根积，即 -2 除以 -3/2 等于 4/3。"
+        },
+        {
+          "id": "mhj_h1003_q5",
+          "topicId": "mhj_h1003",
+          "prompt": "已知 a 大于 b 大于 0，则下列不等式一定成立的是",
+          "question": "已知 a 大于 b 大于 0，则下列不等式一定成立的是",
+          "options": [
+            {
+              "label": "A",
+              "text": "a 分之 1 大于 b 分之 1"
+            },
+            {
+              "label": "B",
+              "text": "a 的平方小于 b 的平方"
+            },
+            {
+              "label": "C",
+              "text": "ab 小于 0"
+            },
+            {
+              "label": "D",
+              "text": "b 分之 1 大于 a 分之 1 大于 0"
+            }
+          ],
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "由 a 大于 b 大于 0 得 ab 大于 0，在不等式 a 大于 b 的两边同乘 ab 分之 1，不等号方向不变，得 b 分之 1 大于 a 分之 1 大于 0，即较大的正数其倒数反而较小。"
+        },
+        {
+          "id": "mhj_h1003_q6",
+          "topicId": "mhj_h1003",
+          "prompt": "设 a 是实数，用求差法比较 a 加 1 的和的平方与 a 的平方减 a 加 1 的大小，当 a 等于 2 时两者的差是多少",
+          "question": "设 a 是实数，用求差法比较 a 加 1 的和的平方与 a 的平方减 a 加 1 的大小，当 a 等于 2 时两者的差是多少",
+          "answer": 6,
+          "type": "numeric",
+          "difficulty": "standard",
+          "verify": "{\"type\": \"num\", \"value\": 6}",
+          "explanation": "两式相减得 a 的平方加 2a 加 1 减去 a 的平方再减 a 加 1，整理后等于 3a。当 a 等于 2 时差为 6，差大于 0 说明前者较大。"
+        },
+        {
+          "id": "mhj_h1003_q7",
+          "topicId": "mhj_h1003",
+          "prompt": "已知 a 大于 b 大于 0，且 c 大于 d 大于 0，则下列不等式一定成立的是",
+          "question": "已知 a 大于 b 大于 0，且 c 大于 d 大于 0，则下列不等式一定成立的是",
+          "options": [
+            {
+              "label": "A",
+              "text": "ac 小于 bd"
+            },
+            {
+              "label": "B",
+              "text": "ad 大于 bc"
+            },
+            {
+              "label": "C",
+              "text": "ac 大于 bd"
+            },
+            {
+              "label": "D",
+              "text": "c 分之 a 大于 d 分之 b"
+            }
+          ],
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "因为 a 大于 b 且 c 大于 0，所以 ac 大于 bc；又因为 c 大于 d 且 b 大于 0，所以 bc 大于 bd；由传递性得 ac 大于 bd。其余各项都能举出使结论不成立的反例。"
+        },
+        {
+          "id": "mhj_h1003_q8",
+          "topicId": "mhj_h1003",
+          "prompt": "设 a、b 都是实数，用作差法比较 a 的平方加 b 的平方与 2ab 的大小，并指出等号成立的条件",
+          "question": "设 a、b 都是实数，用作差法比较 a 的平方加 b 的平方与 2ab 的大小，并指出等号成立的条件",
+          "answer": "a 的平方加 b 的平方大于等于 2ab，当且仅当 a 等于 b 时取等号",
+          "type": "short-answer",
+          "difficulty": "hard",
+          "explanation": "作差得 a 的平方加 b 的平方减 2ab 等于 a 减 b 的差的平方，它恒大于等于 0，所以 a 的平方加 b 的平方大于等于 2ab，且当且仅当 a 减 b 等于 0 即 a 等于 b 时差为 0，等号成立。"
+        }
+      ]
+    },
+    {
+      "id": "mhj_h1004",
+      "page": 44,
+      "description": "不等式的求解以等价变形为主线：一元一次不等式与不等式组按未知数系数的正负分类讨论，一元二次不等式按二次项系数的正负与判别式大于零、等于零、小于零三种情形对照表格写出解集，分式不等式化为分子分母同号的整式不等式或不等式组，含绝对值的不等式用几何意义或零点分段去掉绝对值符号。",
+      "mastery_criteria": [
+        "能对含参数的一元一次不等式与不等式组按参数的正负分类写出解集",
+        "能由二次项系数与判别式判断一元二次不等式解集的四种形态并求解",
+        "能把分式不等式与含绝对值的不等式等价转化为整式不等式或不等式组"
+      ],
+      "misconceptions": [
+        "解一元二次不等式时忘记先把二次项系数化为正数，把两根之间与两根之外写反",
+        "解分式不等式时直接去分母，忽略分母不能为零以及分母符号对不等号方向的影响",
+        "解含绝对值的不等式时不按零点分段讨论，直接去掉绝对值符号"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "mhj_h1004_q1",
+          "topicId": "mhj_h1004",
+          "prompt": "不等式 x 减 2 与 x 加 3 的积小于 0 的解集是",
+          "question": "不等式 x 减 2 与 x 加 3 的积小于 0 的解集是",
+          "options": [
+            {
+              "label": "A",
+              "text": "(-3,2)"
+            },
+            {
+              "label": "B",
+              "text": "(-∞,-3)∪(2,+∞)"
+            },
+            {
+              "label": "C",
+              "text": "(2,3)"
+            },
+            {
+              "label": "D",
+              "text": "(-2,3)"
+            }
+          ],
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "两个一次式异号，等价于 x 加 3 大于 0 且 x 减 2 小于 0，即 x 大于 -3 且 x 小于 2，所以解集是区间 (-3,2)。"
+        },
+        {
+          "id": "mhj_h1004_q2",
+          "topicId": "mhj_h1004",
+          "prompt": "不等式 x 减 2 与 x 加 3 的积大于等于 0 的解集，用不等式表示为",
+          "question": "不等式 x 减 2 与 x 加 3 的积大于等于 0 的解集，用不等式表示为",
+          "answer": "x 小于等于 -3 或 x 大于等于 2",
+          "type": "fill",
+          "difficulty": "basic",
+          "explanation": "二次项系数为正且判别式大于 0 时，大于等于 0 的解集是两根之外，即 x 小于等于 -3 或 x 大于等于 2，端点是使乘积为零的点，要取到。"
+        },
+        {
+          "id": "mhj_h1004_q3",
+          "topicId": "mhj_h1004",
+          "prompt": "不等式 x 的平方小于等于 4x 减 4 的解集是",
+          "question": "不等式 x 的平方小于等于 4x 减 4 的解集是",
+          "options": [
+            {
+              "label": "A",
+              "text": "空集"
+            },
+            {
+              "label": "B",
+              "text": "只含一个元素 x 等于 2"
+            },
+            {
+              "label": "C",
+              "text": "全体实数"
+            },
+            {
+              "label": "D",
+              "text": "x 大于 2 的全体实数"
+            }
+          ],
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "移项得 x 的平方减 4x 加 4 小于等于 0，即 x 减 2 的差的平方小于等于 0。平方数非负，只能等于 0，所以解集只含一个元素，即 x 等于 2。"
+        },
+        {
+          "id": "mhj_h1004_q4",
+          "topicId": "mhj_h1004",
+          "prompt": "不等式 4 倍的 x 的平方减 4x 加 3 大于 0 的解集是",
+          "question": "不等式 4 倍的 x 的平方减 4x 加 3 大于 0 的解集是",
+          "options": [
+            {
+              "label": "A",
+              "text": "空集"
+            },
+            {
+              "label": "B",
+              "text": "x 大于 1/2 的全体实数"
+            },
+            {
+              "label": "C",
+              "text": "全体实数"
+            },
+            {
+              "label": "D",
+              "text": "x 不等于 1/2 的全体实数"
+            }
+          ],
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "判别式等于 16 减 48 等于 -32，小于 0，而二次项系数为正，由判别式小于 0 的结论知，大于 0 的解集是全体实数。"
+        },
+        {
+          "id": "mhj_h1004_q5",
+          "topicId": "mhj_h1004",
+          "prompt": "若关于 x 的不等式 x 的平方加 k 减 1 的差乘以 x 再加 4 大于 0 的解集是全体实数，则整数 k 的最大值是多少",
+          "question": "若关于 x 的不等式 x 的平方加 k 减 1 的差乘以 x 再加 4 大于 0 的解集是全体实数，则整数 k 的最大值是多少",
+          "answer": 4,
+          "type": "numeric",
+          "difficulty": "standard",
+          "verify": "{\"type\": \"num\", \"value\": 4}",
+          "explanation": "解集是全体实数要求对应方程的判别式小于 0，即 k 减 1 的差的平方减 16 小于 0，分解得 k 大于 -3 且 k 小于 5，其中最大的整数是 4。"
+        },
+        {
+          "id": "mhj_h1004_q6",
+          "topicId": "mhj_h1004",
+          "prompt": "不等式 5x 加 3 除以 x 减 1 的商小于等于 3 的解集是",
+          "question": "不等式 5x 加 3 除以 x 减 1 的商小于等于 3 的解集是",
+          "answer": "-3 ≤ x < 1",
+          "type": "fill",
+          "difficulty": "hard",
+          "explanation": "移项整理得 x 减 1 分之 2x 加 6 小于等于 0，且分母不能为零。它等价于 2x 加 6 与 x 减 1 的积小于等于 0 且 x 不等于 1，解得 -3 ≤ x < 1。"
+        },
+        {
+          "id": "mhj_h1004_q7",
+          "topicId": "mhj_h1004",
+          "prompt": "不等式 x 减 1 的绝对值小于 2 的解集是",
+          "question": "不等式 x 减 1 的绝对值小于 2 的解集是",
+          "options": [
+            {
+              "label": "A",
+              "text": "(-2,2)"
+            },
+            {
+              "label": "B",
+              "text": "(-3,1)"
+            },
+            {
+              "label": "C",
+              "text": "(1,3)"
+            },
+            {
+              "label": "D",
+              "text": "(-1,3)"
+            }
+          ],
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "由绝对值的几何意义，x 减 1 的绝对值小于 2 等价于 -2 小于 x 减 1 小于 2，各项同加 1 得 -1 小于 x 小于 3，所以解集是 (-1,3)。"
+        },
+        {
+          "id": "mhj_h1004_q8",
+          "topicId": "mhj_h1004",
+          "prompt": "解不等式 x 减 3 的绝对值加 x 减 5 的绝对值小于 4，并把解集写成区间",
+          "question": "解不等式 x 减 3 的绝对值加 x 减 5 的绝对值小于 4，并把解集写成区间",
+          "answer": "(2,6)",
+          "type": "short-answer",
+          "difficulty": "hard",
+          "explanation": "以 3 和 5 为分点分段讨论：x 大于等于 5 时解得 x 小于 6；3 小于等于 x 小于 5 时不等式化为 2 小于 4，恒成立；x 小于 3 时解得 x 大于 2。三部分合并，解集为 (2,6)。"
+        }
+      ]
+    },
+    {
+      "id": "mhj_h1005",
+      "page": 58,
+      "description": "基本不等式：对正数 a、b，a 加 b 的和除以 2 称为算术平均值，根号 ab 称为几何平均值，平均值不等式说明算术平均值不小于几何平均值，等号当且仅当 a 等于 b 时成立，并且对非负实数同样成立；对任意实数还有 a 加 b 的和除以 2 的平方不小于 ab；这些不等式常用来证明形如 x 加 x 分之 1 不小于 2 的结论并求最值。",
+      "mastery_criteria": [
+        "能写出两个正数的算术平均值与几何平均值，并说明平均值不等式的等号条件",
+        "能用平均值不等式证明形如 x 加 x 分之 1 大于等于 2 的简单不等式",
+        "能说明平均值不等式成立的实数范围，并区分它与对任意实数成立的平方形式"
+      ],
+      "misconceptions": [
+        "把平均值不等式直接用于负数，忽略 a、b 必须为正数或非负数的条件",
+        "认为算术平均值恒大于几何平均值，忽略 a 等于 b 时等号成立的情形",
+        "用平均值不等式求最值时只算出数值，不检验等号能否取到"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "mhj_h1005_q1",
+          "topicId": "mhj_h1005",
+          "prompt": "对于正数 a 和 b，它们的算术平均值是",
+          "question": "对于正数 a 和 b，它们的算术平均值是",
+          "options": [
+            {
+              "label": "A",
+              "text": "根号 ab"
+            },
+            {
+              "label": "B",
+              "text": "a 加 b 的和除以 2"
+            },
+            {
+              "label": "C",
+              "text": "a 加 b 的和除以 2 的平方"
+            },
+            {
+              "label": "D",
+              "text": "a 乘 b 再除以 a 加 b"
+            }
+          ],
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "教材把正数 a、b 的 a 加 b 的和除以 2 称为算术平均值，而把根号 ab 称为几何平均值，两者合称平均值。"
+        },
+        {
+          "id": "mhj_h1005_q2",
+          "topicId": "mhj_h1005",
+          "prompt": "平均值不等式中，等号成立的条件是",
+          "question": "平均值不等式中，等号成立的条件是",
+          "options": [
+            {
+              "label": "A",
+              "text": "a 等于 b"
+            },
+            {
+              "label": "B",
+              "text": "a 等于 0"
+            },
+            {
+              "label": "C",
+              "text": "b 等于 0"
+            },
+            {
+              "label": "D",
+              "text": "a 与 b 互为相反数"
+            }
+          ],
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "证明时用到 a 加 b 的和除以 2 减根号 ab 等于根号 a 减根号 b 的差的平方除以 2，该式等于 0 当且仅当根号 a 等于根号 b，也就是 a 等于 b。"
+        },
+        {
+          "id": "mhj_h1005_q3",
+          "topicId": "mhj_h1005",
+          "prompt": "已知 x 大于 0，则 x 加 x 分之 1 的最小值是多少，此时 x 等于多少",
+          "question": "已知 x 大于 0，则 x 加 x 分之 1 的最小值是多少，此时 x 等于多少",
+          "answer": "最小值是 2，此时 x 等于 1",
+          "type": "fill",
+          "difficulty": "basic",
+          "explanation": "由平均值不等式，x 加 x 分之 1 大于等于 2 倍的根号下 x 乘 x 分之 1，等于 2。等号当且仅当 x 等于 x 分之 1，即 x 的平方等于 1，结合 x 大于 0 得 x 等于 1。"
+        },
+        {
+          "id": "mhj_h1005_q4",
+          "topicId": "mhj_h1005",
+          "prompt": "已知 x 大于 0，当 x 取何值时 x 加 x 分之 4 取得最小值",
+          "question": "已知 x 大于 0，当 x 取何值时 x 加 x 分之 4 取得最小值",
+          "answer": 2,
+          "type": "numeric",
+          "difficulty": "standard",
+          "verify": "{\"type\": \"num\", \"value\": 2}",
+          "explanation": "由平均值不等式，x 加 x 分之 4 大于等于 2 倍的根号下 x 乘 x 分之 4，等于 4。等号当且仅当 x 等于 x 分之 4，即 x 的平方等于 4，结合 x 大于 0 得 x 等于 2。"
+        },
+        {
+          "id": "mhj_h1005_q5",
+          "topicId": "mhj_h1005",
+          "prompt": "当正数 a 和 b 分别表示一个矩形的两边长时，几何平均值根号 ab 可以理解为",
+          "question": "当正数 a 和 b 分别表示一个矩形的两边长时，几何平均值根号 ab 可以理解为",
+          "options": [
+            {
+              "label": "A",
+              "text": "该矩形周长的一半"
+            },
+            {
+              "label": "B",
+              "text": "该矩形的面积"
+            },
+            {
+              "label": "C",
+              "text": "该矩形的对角线长"
+            },
+            {
+              "label": "D",
+              "text": "与该矩形面积相等的正方形的边长"
+            }
+          ],
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "根号 ab 的平方等于 ab，正好等于以 a、b 为边长的矩形面积，所以几何平均值可以理解为与该矩形面积相同的正方形的边长。"
+        },
+        {
+          "id": "mhj_h1005_q6",
+          "topicId": "mhj_h1005",
+          "prompt": "对于任意的实数 a 和 b，下列结论中正确的是",
+          "question": "对于任意的实数 a 和 b，下列结论中正确的是",
+          "options": [
+            {
+              "label": "A",
+              "text": "a 加 b 的和除以 2 的平方恒小于 ab"
+            },
+            {
+              "label": "B",
+              "text": "a 加 b 的和除以 2 的平方恒等于 ab"
+            },
+            {
+              "label": "C",
+              "text": "a 加 b 的和除以 2 的平方大于等于 ab，等号当且仅当 a 等于 b 时成立"
+            },
+            {
+              "label": "D",
+              "text": "两者的大小关系不能确定"
+            }
+          ],
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "由 a 的平方加 b 的平方大于等于 2ab 可得 a 加 b 的和的平方大于等于 4ab，两边同除以 4 即得 a 加 b 的和除以 2 的平方大于等于 ab，且等号当且仅当 a 等于 b 时成立。"
+        },
+        {
+          "id": "mhj_h1005_q7",
+          "topicId": "mhj_h1005",
+          "prompt": "下列关于平均值不等式的说法中，正确的是",
+          "question": "下列关于平均值不等式的说法中，正确的是",
+          "options": [
+            {
+              "label": "A",
+              "text": "对任意实数 a 和 b，都有 a 加 b 的和除以 2 大于等于根号 ab"
+            },
+            {
+              "label": "B",
+              "text": "对任意非负实数 a 和 b，都有 a 加 b 的和除以 2 大于等于根号 ab，等号当且仅当 a 等于 b 时成立"
+            },
+            {
+              "label": "C",
+              "text": "只有当 a 和 b 都是正数时，这个不等式才成立"
+            },
+            {
+              "label": "D",
+              "text": "对任意正数 a 和 b，都有 a 加 b 的和除以 2 大于根号 ab 恒成立"
+            }
+          ],
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "教材说明当 a 或 b 为零时平均值不等式也显然成立，所以它对任意非负实数都成立；若 a 或 b 为负数，根号 ab 可能没有意义，故不能对任意实数使用；a 等于 b 时取等号，所以严格大于的说法也不成立。"
+        },
+        {
+          "id": "mhj_h1005_q8",
+          "topicId": "mhj_h1005",
+          "prompt": "已知 x 大于 0，求证 x 加 x 分之 1 大于等于 2，并指出等号成立的条件",
+          "question": "已知 x 大于 0，求证 x 加 x 分之 1 大于等于 2，并指出等号成立的条件",
+          "answer": "由平均值不等式得 x 加 x 分之 1 大于等于 2 倍的根号 1 等于 2，当且仅当 x 等于 1 时取等号",
+          "type": "short-answer",
+          "difficulty": "hard",
+          "explanation": "因为 x 大于 0，所以 x 与 x 分之 1 都是正数，可以对它们使用平均值不等式，得 x 加 x 分之 1 大于等于 2 倍的根号 1 等于 2。等号当且仅当 x 等于 x 分之 1，结合 x 大于 0 得 x 等于 1。"
+        }
+      ]
+    }
+  ]
+}

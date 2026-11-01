@@ -1,0 +1,754 @@
+{
+ "tag": "h1c5",
+ "book": "沪教版必修第一册",
+ "unit_points": [
+  {
+   "id": "mhj_h005",
+   "description": "统整函数的概念与两个要素、奇偶性与单调性、最值与零点、实际建模以及反函数的概念",
+   "mastery_criteria": [
+    "能判断相同函数并求出定义域与值域",
+    "能按定义证明奇偶性与单调性并求最值",
+    "能建立实际问题的函数关系并用二分法求零点近似值"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h005_q1",
+     "topicId": "mhj_h005",
+     "prompt": "下列函数中，在定义域内是奇函数的是",
+     "question": "下列函数中，在定义域内是奇函数的是",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "x 的三次方减 x 分之一的定义域为 x 不等于 0，满足 f（-x）等于负的 f（x），是奇函数；另外三个分别是偶函数、非奇非偶函数和偶函数。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y 等于 x 的三次方减去 x 分之一"
+      },
+      {
+       "label": "B",
+       "text": "y 等于 2 倍 x 的四次方减 3 倍 x 的平方"
+      },
+      {
+       "label": "C",
+       "text": "y 等于（x 减 1）的平方"
+      },
+      {
+       "label": "D",
+       "text": "y 等于 x 的绝对值"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h005_q2",
+     "topicId": "mhj_h005",
+     "prompt": "函数 y 等于 x 分之 2 在闭区间 1 到 2 上的最大值是",
+     "question": "函数 y 等于 x 分之 2 在闭区间 1 到 2 上的最大值是",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "该函数在区间上严格递减，所以最大值在左端点 x 等于 1 处取得，函数值为 2，最小值在右端点处取得，为 1。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "1/2"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h005_q3",
+     "topicId": "mhj_h005",
+     "prompt": "函数 y 等于 f（x），x 属于 D 存在反函数的条件是",
+     "question": "函数 y 等于 f（x），x 属于 D 存在反函数的条件是",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "教材反函数的定义要求对值域中任意给定的 y，定义域中满足 f（x）等于 y 的 x 值只有一个，这时才能把 x 看成 y 的函数。",
+     "options": [
+      {
+       "label": "A",
+       "text": "f（x）在 D 上是单调函数"
+      },
+      {
+       "label": "B",
+       "text": "D 中任意两个不同的 x 对应的函数值不同"
+      },
+      {
+       "label": "C",
+       "text": "对值域 f（D）中任意给定的 y，D 中满足 f（x）等于 y 的 x 只有一个"
+      },
+      {
+       "label": "D",
+       "text": "f（x）的图像是一条连续曲线"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h005_q4",
+     "topicId": "mhj_h005",
+     "prompt": "函数 y 等于 6x 减 3 倍 x 的平方的最大值是",
+     "question": "函数 y 等于 6x 减 3 倍 x 的平方的最大值是",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "配方得 y 等于负 3（x 减 1）的平方加 3，所以当 x 等于 1 时函数取得最大值 3，且无最小值。",
+     "verify": "{\"type\":\"num\",\"value\":3}"
+    },
+    {
+     "id": "mhj_h005_q5",
+     "topicId": "mhj_h005",
+     "prompt": "某商场规定：一次购物总额超过 1000 元时，其中 1000 元按 9 折优惠，超过 1000 元的部分按 7 折优惠。某顾客一次购物总额为 1200 元，则实际付款额为多少元",
+     "question": "某商场规定：一次购物总额超过 1000 元时，其中 1000 元按 9 折优惠，超过 1000 元的部分按 7 折优惠。某顾客一次购物总额为 1200 元，则实际付款额为多少元",
+     "answer": "1040",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "1000 元的部分按 9 折计算为 900 元，超过的 200 元按 7 折计算为 140 元，合计实付 1040 元。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "mhj_h1011",
+   "page": 122,
+   "description": "理解函数的定义、值域与两个要素，会求简单函数的定义域和值域，能判断两个函数是否相同，了解解析法、列表法、图像法与分段表示法",
+   "mastery_criteria": [
+    "能依据表达式有意义的条件求出定义域",
+    "能用定义域与对应关系判断两个函数是否相同",
+    "能由简单函数的值域求稍复杂函数的值域"
+   ],
+   "misconceptions": [
+    "只比较解析式就断定两个函数相同，忽略定义域是否一致",
+    "把值域写成自变量的取值范围，与定义域混淆"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1011_q1",
+     "topicId": "mhj_h1011",
+     "prompt": "函数 y 等于 1 除以（x 的平方减 1）的定义域是",
+     "question": "函数 y 等于 1 除以（x 的平方减 1）的定义域是",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "分母 x 的平方减 1 不能等于 0，即 x 不等于 1 且 x 不等于 -1，与教材例 1 第（1）小题的结论一致。",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 不等于 1 且 x 不等于 -1"
+      },
+      {
+       "label": "B",
+       "text": "x 不等于 1"
+      },
+      {
+       "label": "C",
+       "text": "x 大于 1"
+      },
+      {
+       "label": "D",
+       "text": "全体实数"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1011_q2",
+     "topicId": "mhj_h1011",
+     "prompt": "下列函数中，与函数 y 等于 x 是相同函数的是",
+     "question": "下列函数中，与函数 y 等于 x 是相同函数的是",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "ln e 的 x 次方等于 x，定义域为全体实数，与 y 等于 x 的定义域和对应关系都一致；其余三个函数的定义域或对应关系与 y 等于 x 不同。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y 等于（根号 x）的平方"
+      },
+      {
+       "label": "B",
+       "text": "y 等于 ln e 的 x 次方"
+      },
+      {
+       "label": "C",
+       "text": "y 等于 x 的平方除以 x"
+      },
+      {
+       "label": "D",
+       "text": "y 等于四次根号下 x 的四次方"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1011_q3",
+     "topicId": "mhj_h1011",
+     "prompt": "根据教材中函数的定义，完全确定一个函数所需要的两个要素是",
+     "question": "根据教材中函数的定义，完全确定一个函数所需要的两个要素是",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材指出定义域和对应关系确定后这个函数就完全被确定，值域也随之确定，所以两个要素是定义域与对应关系。",
+     "options": [
+      {
+       "label": "A",
+       "text": "定义域与值域"
+      },
+      {
+       "label": "B",
+       "text": "值域与对应关系"
+      },
+      {
+       "label": "C",
+       "text": "定义域与对应关系"
+      },
+      {
+       "label": "D",
+       "text": "图像与解析式"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1011_q4",
+     "topicId": "mhj_h1011",
+     "prompt": "函数 y 等于 log 以 2 为底（x 加 1）的对数的定义域是",
+     "question": "函数 y 等于 log 以 2 为底（x 加 1）的对数的定义域是",
+     "answer": "(-1,+∞)",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "真数 x 加 1 必须大于 0，所以 x 大于 -1，定义域为开区间负一到正无穷。"
+    },
+    {
+     "id": "mhj_h1011_q5",
+     "topicId": "mhj_h1011",
+     "prompt": "某车辆装配车间每 2 小时装配完成一辆车，今天计划生产 8 小时。从开始生产起经过 5 小时时，装配完成的车辆数为",
+     "question": "某车辆装配车间每 2 小时装配完成一辆车，今天计划生产 8 小时。从开始生产起经过 5 小时时，装配完成的车辆数为",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "当时间 x 满足 4 小于等于 x 小于 6 时，装配完成的车辆数为 2，所以经过 5 小时时车辆数为 2。",
+     "verify": "{\"type\":\"num\",\"value\":2}"
+    },
+    {
+     "id": "mhj_h1011_q6",
+     "topicId": "mhj_h1011",
+     "prompt": "函数 y 等于 1 除以（2 的 x 次方加 1）的值域是",
+     "question": "函数 y 等于 1 除以（2 的 x 次方加 1）的值域是",
+     "answer": "(0,1)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "2 的 x 次方取遍全体正数，所以 2 的 x 次方加 1 大于 1，其倒数为大于 0 且小于 1 的实数，值域为开区间 0 到 1。"
+    },
+    {
+     "id": "mhj_h1011_q7",
+     "topicId": "mhj_h1011",
+     "prompt": "判断函数 y 等于 x 与函数 y 等于四次根号下 x 的四次方是否为相同函数，并说明理由",
+     "question": "判断函数 y 等于 x 与函数 y 等于四次根号下 x 的四次方是否为相同函数，并说明理由",
+     "answer": "不是相同函数。因为当 x 等于 -1 时，后者把 -1 对应到 1，而前者的函数值为 -1，两个函数的对应关系不同。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "教材例 2 第（4）小题指出，四次根号下 x 的四次方把 -1 对应到了 1 而不是 -1，对应关系与 y 等于 x 不同，所以它们不是相同函数。"
+    },
+    {
+     "id": "mhj_h1011_q8",
+     "topicId": "mhj_h1011",
+     "prompt": "函数 y 等于 3 倍 x 的平方减 4x 加 1，其中 x 大于等于 0 且小于等于 1，则它的值域是",
+     "question": "函数 y 等于 3 倍 x 的平方减 4x 加 1，其中 x 大于等于 0 且小于等于 1，则它的值域是",
+     "answer": "[-1/3,1]",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "配方得 y 等于 3（x 减 2/3）的平方减 1/3，顶点处取最小值 -1/3，端点 x 等于 0 时取最大值 1，故值域为 -1/3 到 1 的闭区间。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1012",
+   "page": 132,
+   "description": "掌握奇函数与偶函数的定义及图像特征，理解增函数、减函数与严格单调的定义，会求单调区间与闭区间上函数的最值",
+   "mastery_criteria": [
+    "能按定义证明函数的奇偶性与单调性",
+    "能借助单调性求出闭区间上函数的最大值与最小值",
+    "能由奇偶性推断另一侧区间的单调性"
+   ],
+   "misconceptions": [
+    "判断奇偶性时忽略定义域是否关于原点对称",
+    "把单调区间写成并集，或用端点处的函数值比较代替区间上任意两点"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1012_q1",
+     "topicId": "mhj_h1012",
+     "prompt": "函数 y 等于 2 倍 x 的四次方减 3 倍 x 的平方的奇偶性是",
+     "question": "函数 y 等于 2 倍 x 的四次方减 3 倍 x 的平方的奇偶性是",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "定义域为全体实数且关于原点对称，又 f（-x）等于 2 倍 x 的四次方减 3 倍 x 的平方等于 f（x），所以它是偶函数。",
+     "options": [
+      {
+       "label": "A",
+       "text": "偶函数"
+      },
+      {
+       "label": "B",
+       "text": "奇函数"
+      },
+      {
+       "label": "C",
+       "text": "既不是奇函数也不是偶函数"
+      },
+      {
+       "label": "D",
+       "text": "既是奇函数又是偶函数"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1012_q2",
+     "topicId": "mhj_h1012",
+     "prompt": "设函数 y 等于 f（x）是偶函数，且它在闭区间 -2 到 -1 上是严格减函数，则它在闭区间 1 到 2 上",
+     "question": "设函数 y 等于 f（x）是偶函数，且它在闭区间 -2 到 -1 上是严格减函数，则它在闭区间 1 到 2 上",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "任取 1 小于等于 x1 小于 x2 小于等于 2，则 -x2 小于 -x1 且都落在 -2 到 -1 内，由严格递减得 f（-x2）大于 f（-x1），再由偶函数得 f（x2）大于 f（x1），故为严格增函数。",
+     "options": [
+      {
+       "label": "A",
+       "text": "是严格减函数"
+      },
+      {
+       "label": "B",
+       "text": "是严格增函数"
+      },
+      {
+       "label": "C",
+       "text": "先减后增"
+      },
+      {
+       "label": "D",
+       "text": "无法判断单调性"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1012_q3",
+     "topicId": "mhj_h1012",
+     "prompt": "函数 y 等于 x 的平方减 2x，其中 x 大于等于 -2 且小于等于 2，它的单调区间是",
+     "question": "函数 y 等于 x 的平方减 2x，其中 x 大于等于 -2 且小于等于 2，它的单调区间是",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "配方得 y 等于（x 减 1）的平方减 1，图像以 x 等于 1 为分界点，左侧下降右侧上升，所以在 -2 到 1 上严格递减，在 1 到 2 上严格递增。",
+     "options": [
+      {
+       "label": "A",
+       "text": "在整个闭区间上严格增"
+      },
+      {
+       "label": "B",
+       "text": "在整个闭区间上严格减"
+      },
+      {
+       "label": "C",
+       "text": "在 -2 到 1 上严格减，在 1 到 2 上严格增"
+      },
+      {
+       "label": "D",
+       "text": "在 -2 到 1 上严格增，在 1 到 2 上严格减"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1012_q4",
+     "topicId": "mhj_h1012",
+     "prompt": "函数 y 等于 x 分之 2，其中 x 大于等于 1 且小于等于 2，它的最大值与最小值分别是",
+     "question": "函数 y 等于 x 分之 2，其中 x 大于等于 1 且小于等于 2，它的最大值与最小值分别是",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "该函数在这个闭区间上严格递减，所以最大值在左端点 x 等于 1 处取得，为 2；最小值在右端点 x 等于 2 处取得，为 1。",
+     "options": [
+      {
+       "label": "A",
+       "text": "最大值 1，最小值 2"
+      },
+      {
+       "label": "B",
+       "text": "最大值 4，最小值 2"
+      },
+      {
+       "label": "C",
+       "text": "最大值 2，最小值 1/2"
+      },
+      {
+       "label": "D",
+       "text": "最大值 2，最小值 1"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1012_q5",
+     "topicId": "mhj_h1012",
+     "prompt": "函数 y 等于 2 倍 x 的平方减 3x 加 1 的最小值是",
+     "question": "函数 y 等于 2 倍 x 的平方减 3x 加 1 的最小值是",
+     "answer": -0.125,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "配方得 y 等于 2（x 减 3/4）的平方减 1/8，所以当 x 等于 3/4 时取最小值负八分之一，即 -0.125，该函数没有最大值。",
+     "verify": "{\"type\":\"num\",\"value\":-0.125}"
+    },
+    {
+     "id": "mhj_h1012_q6",
+     "topicId": "mhj_h1012",
+     "prompt": "函数 y 等于 x 的平方减 4x 减 2 的最小值是",
+     "question": "函数 y 等于 x 的平方减 4x 减 2 的最小值是",
+     "answer": "-6（此时 x=2）",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "配方得 y 等于（x 减 2）的平方减 6，当 x 等于 2 时取得最小值 -6，由于图像开口向上，该函数没有最大值。"
+    },
+    {
+     "id": "mhj_h1012_q7",
+     "topicId": "mhj_h1012",
+     "prompt": "用定义证明函数 y 等于 x 的平方减 2x 在负无穷到 1 的闭区间上是严格减函数",
+     "question": "用定义证明函数 y 等于 x 的平方减 2x 在负无穷到 1 的闭区间上是严格减函数",
+     "answer": "设 x1 小于 x2 且都在该区间内，则 f（x1）减 f（x2）等于（x1 减 x2）（x1 加 x2 减 2），两个因式都小于 0，积大于 0，故 f（x1）大于 f（x2），函数严格递减。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "关键是把函数值之差分解为（x1 减 x2）与（x1 加 x2 减 2）的积，由 x1 小于 x2 且两者都不大于 1，可得 x1 加 x2 减 2 小于 0，从而差为正，函数值随自变量增大而减小。"
+    },
+    {
+     "id": "mhj_h1012_q8",
+     "topicId": "mhj_h1012",
+     "prompt": "已知 a 小于 2，函数 y 等于 x 减 1 的绝对值在闭区间 a 到 2 上的最大值是",
+     "question": "已知 a 小于 2，函数 y 等于 x 减 1 的绝对值在闭区间 a 到 2 上的最大值是",
+     "answer": "当 a 小于 0 时为 1 减 a；当 0 小于等于 a 小于 2 时为 1",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "该函数在 x 等于 1 处取最小值 0，在 1 的左侧递减、右侧递增，故最大值由两端点中函数值较大者决定：a 小于 0 时左端点的值 1 减 a 更大，否则右端点的值 1 更大。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1013",
+   "page": 144,
+   "description": "会从实际情境中建立函数关系并注明定义域，能用函数的观点考察方程与不等式，理解函数零点与二分法求近似零点的方法",
+   "mastery_criteria": [
+    "能把实际问题中的变量关系写成解析式并写明由实际意义决定的定义域",
+    "能用单调性与零点位置求解不等式",
+    "能用二分法按给定精度求零点的近似值"
+   ],
+   "misconceptions": [
+    "建立函数关系时漏写由实际意义决定的定义域",
+    "把零点当成一个点写成坐标，忘记零点是实数"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1013_q1",
+     "topicId": "mhj_h1013",
+     "prompt": "对于函数 y 等于 f（x），x 属于 D，若存在实数 c 属于 D 使 f（c）等于 0，则称 c 是该函数的",
+     "question": "对于函数 y 等于 f（x），x 属于 D，若存在实数 c 属于 D 使 f（c）等于 0，则称 c 是该函数的",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材把满足 f（c）等于 0 的实数 c 叫做函数的零点，它也就是方程 f（x）等于 0 的解，还是图像与 x 轴交点的横坐标。",
+     "options": [
+      {
+       "label": "A",
+       "text": "零点"
+      },
+      {
+       "label": "B",
+       "text": "最小值点"
+      },
+      {
+       "label": "C",
+       "text": "对称中心"
+      },
+      {
+       "label": "D",
+       "text": "极值点"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1013_q2",
+     "topicId": "mhj_h1013",
+     "prompt": "当二次项系数 a 大于 0 且判别式 b 的平方减 4ac 小于 0 时，不等式 ax 的平方加 bx 加 c 大于 0 的解集是",
+     "question": "当二次项系数 a 大于 0 且判别式 b 的平方减 4ac 小于 0 时，不等式 ax 的平方加 bx 加 c 大于 0 的解集是",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "此时相应的抛物线开口向上且与 x 轴没有公共点，图像恒在 x 轴上方，所以不等式对一切实数都成立，解集为全体实数 R。",
+     "options": [
+      {
+       "label": "A",
+       "text": "空集"
+      },
+      {
+       "label": "B",
+       "text": "全体实数 R"
+      },
+      {
+       "label": "C",
+       "text": "不等于负 2a 分之 b 的一切实数"
+      },
+      {
+       "label": "D",
+       "text": "两个零点之间的区间"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1013_q3",
+     "topicId": "mhj_h1013",
+     "prompt": "若函数 y 等于 f（x）在闭区间 a 到 b 上的图像是一段连续曲线，且 f（a）与 f（b）的乘积大于 0，则该函数在开区间 a 到 b 内",
+     "question": "若函数 y 等于 f（x）在闭区间 a 到 b 上的图像是一段连续曲线，且 f（a）与 f（b）的乘积大于 0，则该函数在开区间 a 到 b 内",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "定理只说明端点函数值异号时区间内一定有零点，这是存在零点的充分条件；端点同号时区间内仍可能有零点，所以不能断定没有零点。",
+     "options": [
+      {
+       "label": "A",
+       "text": "一定没有零点"
+      },
+      {
+       "label": "B",
+       "text": "一定有两个零点"
+      },
+      {
+       "label": "C",
+       "text": "可能有零点，也可能没有零点"
+      },
+      {
+       "label": "D",
+       "text": "一定有零点"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1013_q4",
+     "topicId": "mhj_h1013",
+     "prompt": "一个边长为 a 与 b（其中 a 小于 b）的长方形被分别平行于长与宽的两条直线分割，两块阴影部分面积之和为 S 等于 2 倍 x 的平方减（a 加 b）x 加 ab。当 a 等于 2，b 等于 3，x 等于 1 时，S 的值为",
+     "question": "一个边长为 a 与 b（其中 a 小于 b）的长方形被分别平行于长与宽的两条直线分割，两块阴影部分面积之和为 S 等于 2 倍 x 的平方减（a 加 b）x 加 ab。当 a 等于 2，b 等于 3，x 等于 1 时，S 的值为",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "把 a、b、x 的值代入得 S 等于 2 减 5 加 6，结果为 3，与分别算出两块阴影面积再相加的结果一致。",
+     "verify": "{\"type\":\"num\",\"value\":3}"
+    },
+    {
+     "id": "mhj_h1013_q5",
+     "topicId": "mhj_h1013",
+     "prompt": "要建造一面靠墙、面积相同的两间相邻长方形居室，围墙总长度为 30 米，设每间居室的宽为 x 米，则居室的最大总面积是多少平方米",
+     "question": "要建造一面靠墙、面积相同的两间相邻长方形居室，围墙总长度为 30 米，设每间居室的宽为 x 米，则居室的最大总面积是多少平方米",
+     "answer": 75,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "总面积 y 等于 x（30 减 3x），配方得 y 等于负 3（x 减 5）的平方加 75，故宽为 5 米时总面积最大，最大值为 75 平方米。",
+     "verify": "{\"type\":\"num\",\"value\":75}"
+    },
+    {
+     "id": "mhj_h1013_q6",
+     "topicId": "mhj_h1013",
+     "prompt": "某圆形喷水池直径为 16 米，喷出的水柱在离池中心 3 米处达到最高高度 4 米，各方向的水柱在池中心上方汇合，则汇合点离水面的高度是多少米",
+     "question": "某圆形喷水池直径为 16 米，喷出的水柱在离池中心 3 米处达到最高高度 4 米，各方向的水柱在池中心上方汇合，则汇合点离水面的高度是多少米",
+     "answer": 2.56,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "设右半部分抛物线为 y 等于负 a（x 减 3）的平方加 4，由 x 等于 8 时 y 等于 0 解得 a 等于 0.16，于是 x 等于 0 时高度为 4 减 1.44 等于 2.56 米。",
+     "verify": "{\"type\":\"num\",\"value\":2.56}"
+    },
+    {
+     "id": "mhj_h1013_q7",
+     "topicId": "mhj_h1013",
+     "prompt": "在一块边长为 13 厘米的正方形金属薄片的四个角上各剪去一个边长为 x 厘米的小正方形，做成容积为 140 立方厘米的无盖长方体盒子。用二分法求得相应方程在区间 3 到 4 上零点的近似值（精确到 0.1）是",
+     "question": "在一块边长为 13 厘米的正方形金属薄片的四个角上各剪去一个边长为 x 厘米的小正方形，做成容积为 140 立方厘米的无盖长方体盒子。用二分法求得相应方程在区间 3 到 4 上零点的近似值（精确到 0.1）是",
+     "answer": "3.2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "记 f（x）等于 x（13 减 2x）的平方减 140，经逐次二分零点落在 3.15625 到 3.1875 之间，其中所有数精确到 0.1 的近似值都是 3.2。"
+    },
+    {
+     "id": "mhj_h1013_q8",
+     "topicId": "mhj_h1013",
+     "prompt": "用函数的观点在区间 0 到正无穷上解不等式 x 的四次方加 x 大于 2",
+     "question": "用函数的观点在区间 0 到正无穷上解不等式 x 的四次方加 x 大于 2",
+     "answer": "解集为 (1,+∞)。设 f（x）等于 x 的四次方加 x，它在正半轴上严格递增，且 f（1）等于 2，故 f（x）大于 2 当且仅当 x 大于 1。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "先用幂函数的性质说明该函数在正半轴上严格递增，再注意 f（1）等于 1 加 1 等于 2，由单调性知满足不等式的 x 恰好是大于 1 的一切实数。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1014",
+   "page": 153,
+   "description": "理解反函数的概念与记号，知道值域中每个值只对应唯一自变量时才存在反函数，会由原函数解出并写出习惯形式的反函数",
+   "mastery_criteria": [
+    "能按定义判断一个函数是否存在反函数",
+    "能由原函数解出 x 并写成习惯形式的反函数",
+    "知道反函数的定义域是原函数的值域"
+   ],
+   "misconceptions": [
+    "认为任意函数都有反函数",
+    "求反函数时忘记互换 x 与 y，或把反函数的定义域写成原函数的定义域"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1014_q1",
+     "topicId": "mhj_h1014",
+     "prompt": "对于函数 y 等于 f（x），x 属于 D，记其值域为 f（D）。它能得到反函数的条件是",
+     "question": "对于函数 y 等于 f（x），x 属于 D，记其值域为 f（D）。它能得到反函数的条件是",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材的定义强调对值域中任意给定的 y，定义域中满足 f（x）等于 y 的 x 值只有一个，这时才能把 x 看成 y 的函数，即反函数。",
+     "options": [
+      {
+       "label": "A",
+       "text": "对 f（D）中任意给定的 y，D 中满足 f（x）等于 y 的 x 只有一个"
+      },
+      {
+       "label": "B",
+       "text": "f（x）在 D 上的图像是连续曲线"
+      },
+      {
+       "label": "C",
+       "text": "f（x）在 D 上取正值"
+      },
+      {
+       "label": "D",
+       "text": "D 是闭区间"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1014_q2",
+     "topicId": "mhj_h1014",
+     "prompt": "函数 y 等于 1.8x 加 32 的反函数通常写成",
+     "question": "函数 y 等于 1.8x 加 32 的反函数通常写成",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由 y 等于 1.8x 加 32 解出 x 等于（y 减 32）除以 1.8，按习惯把自变量记为 x、函数值记为 y，即得 y 等于（x 减 32）除以 1.8。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y 等于 1.8x 加 32"
+      },
+      {
+       "label": "B",
+       "text": "y 等于（x 减 32）除以 1.8"
+      },
+      {
+       "label": "C",
+       "text": "y 等于 32 减 1.8x"
+      },
+      {
+       "label": "D",
+       "text": "y 等于 x 除以 1.8 加 32"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1014_q3",
+     "topicId": "mhj_h1014",
+     "prompt": "若函数 y 等于 f（x），x 属于 D 存在反函数，则这个反函数的定义域是",
+     "question": "若函数 y 等于 f（x），x 属于 D 存在反函数，则这个反函数的定义域是",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "教材把反函数记作 x 等于 f 的负一次方（y），其中 y 属于 f（D），所以反函数的自变量取值集合就是原函数的值域。",
+     "options": [
+      {
+       "label": "A",
+       "text": "原函数的定义域 D"
+      },
+      {
+       "label": "B",
+       "text": "全体实数"
+      },
+      {
+       "label": "C",
+       "text": "原函数的值域 f（D）"
+      },
+      {
+       "label": "D",
+       "text": "原函数的定义域中去掉 0 的集合"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1014_q4",
+     "topicId": "mhj_h1014",
+     "prompt": "已知摄氏度 t 与华氏度 w 满足 w 等于 1.8t 加 32。当华氏度为 212 时，对应的摄氏度是多少",
+     "question": "已知摄氏度 t 与华氏度 w 满足 w 等于 1.8t 加 32。当华氏度为 212 时，对应的摄氏度是多少",
+     "answer": 100,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "由 212 等于 1.8t 加 32 得 1.8t 等于 180，所以 t 等于 100，即对应的摄氏温度为 100 度。",
+     "verify": "{\"type\":\"num\",\"value\":100}"
+    },
+    {
+     "id": "mhj_h1014_q5",
+     "topicId": "mhj_h1014",
+     "prompt": "已知摄氏度 t 与华氏度 w 满足 w 等于 1.8t 加 32。当摄氏度为 35 时，对应的华氏度是多少",
+     "question": "已知摄氏度 t 与华氏度 w 满足 w 等于 1.8t 加 32。当摄氏度为 35 时，对应的华氏度是多少",
+     "answer": 95,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把 t 等于 35 代入得 w 等于 1.8 乘 35 加 32，即 63 加 32 等于 95，与教材表 5-4 中的数据一致。",
+     "verify": "{\"type\":\"num\",\"value\":95}"
+    },
+    {
+     "id": "mhj_h1014_q6",
+     "topicId": "mhj_h1014",
+     "prompt": "函数 y 等于 3x 减 2 的反函数是",
+     "question": "函数 y 等于 3x 减 2 的反函数是",
+     "answer": "y=(x+2)/3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由 y 等于 3x 减 2 解出 x 等于（y 加 2）除以 3，再按习惯互换字母，得反函数 y 等于（x 加 2）除以 3。"
+    },
+    {
+     "id": "mhj_h1014_q7",
+     "topicId": "mhj_h1014",
+     "prompt": "函数 y 等于 1.8x 加 32 的反函数写成 y 等于（x 减 32）除以 1.8 后，其中的自变量 x 表示的是哪一种温度单位",
+     "question": "函数 y 等于 1.8x 加 32 的反函数写成 y 等于（x 减 32）除以 1.8 后，其中的自变量 x 表示的是哪一种温度单位",
+     "answer": "华氏度",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "原函数中 x 表示摄氏度、y 表示华氏度；写成反函数后自变量与函数值的地位互换，于是 x 表示华氏度，y 表示摄氏度。"
+    },
+    {
+     "id": "mhj_h1014_q8",
+     "topicId": "mhj_h1014",
+     "prompt": "函数 y 等于 x 的平方，x 属于全体实数，是否存在反函数？请结合反函数的定义说明理由",
+     "question": "函数 y 等于 x 的平方，x 属于全体实数，是否存在反函数？请结合反函数的定义说明理由",
+     "answer": "不存在。因为取 y 等于 1 时，满足 x 的平方等于 1 的 x 有 1 与 -1 两个，不符合值域中每个 y 只对应唯一一个 x 的要求。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "反函数要求值域中任意给定的 y 在定义域中只对应唯一的一个 x，而这个函数对每个正数 y 都有两个自变量与之对应，所以不能由此得到 x 关于 y 的函数。"
+    }
+   ]
+  }
+ ]
+}

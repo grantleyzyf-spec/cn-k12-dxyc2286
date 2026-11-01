@@ -1,0 +1,618 @@
+{
+  "examId": "mhj_exam_x2_mid_a",
+  "book": "沪教版选择性必修第二册",
+  "kind": "mid",
+  "paper": "期中测试卷A",
+  "stage": "高中",
+  "grade": 14,
+  "duration": 120,
+  "fullScore": 150,
+  "scope": [
+    "沪教版选择性必修第二册 第5章 导数及其应用",
+    "沪教版选择性必修第二册 第6章 计数原理"
+  ],
+  "sections": [
+    {
+      "title": "一、单选题（本题共 8 小题，每小题 5 分，共 40 分）",
+      "items": [
+        {
+          "no": 1,
+          "type": "choice",
+          "score": 5,
+          "difficulty": 2,
+          "stem": "曲线 y=x³ 在 x=2 处的切线斜率为",
+          "options": [
+            {
+              "label": "A",
+              "text": "4"
+            },
+            {
+              "label": "B",
+              "text": "8"
+            },
+            {
+              "label": "C",
+              "text": "12"
+            },
+            {
+              "label": "D",
+              "text": "18"
+            }
+          ],
+          "answer": "C",
+          "analysis": "切线斜率等于该点处的导数，由 y′=3x² 得 k=3×2²=12，所以选 C。",
+          "topicIds": [
+            "mhj_h1067",
+            "mhj_h1068"
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q01"
+        },
+        {
+          "no": 2,
+          "type": "choice",
+          "score": 5,
+          "difficulty": 2,
+          "stem": "函数 y=x+2/x（x≠0）的导数为",
+          "options": [
+            {
+              "label": "A",
+              "text": "1-2/x²"
+            },
+            {
+              "label": "B",
+              "text": "-2/x²"
+            },
+            {
+              "label": "C",
+              "text": "2/x²"
+            },
+            {
+              "label": "D",
+              "text": "1+2/x²"
+            }
+          ],
+          "answer": "A",
+          "analysis": "把函数看作两项之和，x 的导数为 1，2/x=2x⁻¹ 的导数为 -2x⁻²=-2/x²，故 y′=1-2/x²，所以选 A。",
+          "topicIds": [
+            "mhj_h1068"
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q02"
+        },
+        {
+          "no": 3,
+          "type": "choice",
+          "score": 5,
+          "difficulty": 2,
+          "stem": "函数 f(x)=x³-3x²+4 的极小值为",
+          "options": [
+            {
+              "label": "A",
+              "text": "-4"
+            },
+            {
+              "label": "B",
+              "text": "4"
+            },
+            {
+              "label": "C",
+              "text": "3"
+            },
+            {
+              "label": "D",
+              "text": "0"
+            }
+          ],
+          "answer": "D",
+          "analysis": "f′(x)=3x²-6x=3x(x-2)，x=2 两侧导数由负变正，极小值为 f(2)=8-12+4=0，所以选 D。",
+          "topicIds": [
+            "mhj_h1069"
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q03"
+        },
+        {
+          "no": 4,
+          "type": "choice",
+          "score": 5,
+          "difficulty": 2,
+          "stem": "从 5 名同学中选 2 名分别担任正组长和副组长，不同的选法共有",
+          "options": [
+            {
+              "label": "A",
+              "text": "10 种"
+            },
+            {
+              "label": "B",
+              "text": "20 种"
+            },
+            {
+              "label": "C",
+              "text": "25 种"
+            },
+            {
+              "label": "D",
+              "text": "120 种"
+            }
+          ],
+          "answer": "B",
+          "analysis": "两个职务有区别，是排列问题，A(5,2)=5×4=20 种，所以选 B。",
+          "topicIds": [
+            "mhj_h1071"
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q04"
+        },
+        {
+          "no": 5,
+          "type": "choice",
+          "score": 5,
+          "difficulty": 2,
+          "stem": "从 9 名同学中选出 2 名参加座谈会，不同的选法共有",
+          "options": [
+            {
+              "label": "A",
+              "text": "36 种"
+            },
+            {
+              "label": "B",
+              "text": "18 种"
+            },
+            {
+              "label": "C",
+              "text": "72 种"
+            },
+            {
+              "label": "D",
+              "text": "81 种"
+            }
+          ],
+          "answer": "A",
+          "analysis": "只选不排，是组合问题，C(9,2)=9×8/2=36 种，所以选 A。",
+          "topicIds": [
+            "mhj_h1072"
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q05"
+        },
+        {
+          "no": 6,
+          "type": "choice",
+          "score": 5,
+          "difficulty": 3,
+          "stem": "在 (x-1/x) 的 6 次方（x≠0）的展开式中，常数项为",
+          "options": [
+            {
+              "label": "A",
+              "text": "20"
+            },
+            {
+              "label": "B",
+              "text": "15"
+            },
+            {
+              "label": "C",
+              "text": "-15"
+            },
+            {
+              "label": "D",
+              "text": "-20"
+            }
+          ],
+          "answer": "D",
+          "analysis": "通项为 C(6,k)x^{6-k}(-1/x)^k=(-1)^k C(6,k)x^{6-2k}，令 6-2k=0 得 k=3，常数项为 (-1)³C(6,3)=-20。",
+          "topicIds": [
+            "mhj_h1074"
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q06"
+        },
+        {
+          "no": 7,
+          "type": "choice",
+          "score": 5,
+          "difficulty": 2,
+          "stem": "从 5 名男生和 3 名女生中任选 2 人，选出的 2 人都是女生的概率为",
+          "options": [
+            {
+              "label": "A",
+              "text": "3/56"
+            },
+            {
+              "label": "B",
+              "text": "3/28"
+            },
+            {
+              "label": "C",
+              "text": "1/4"
+            },
+            {
+              "label": "D",
+              "text": "5/28"
+            }
+          ],
+          "answer": "B",
+          "analysis": "样本点总数为 C(8,2)=28，2 人都是女生只有 C(3,2)=3 种，故概率为 3/28，所以选 B。",
+          "topicIds": [
+            "mhj_h1073"
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q07"
+        },
+        {
+          "no": 8,
+          "type": "choice",
+          "score": 5,
+          "difficulty": 2,
+          "stem": "函数 f(x)=x³-3x 在区间 [0,2] 上的最大值为",
+          "options": [
+            {
+              "label": "A",
+              "text": "-2"
+            },
+            {
+              "label": "B",
+              "text": "0"
+            },
+            {
+              "label": "C",
+              "text": "2"
+            },
+            {
+              "label": "D",
+              "text": "4"
+            }
+          ],
+          "answer": "C",
+          "analysis": "f′(x)=3x²-3，区间内的驻点为 x=1，比较 f(0)=0、f(1)=-2、f(2)=2，最大值为 2，所以选 C。",
+          "topicIds": [
+            "mhj_h1069"
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q08"
+        }
+      ]
+    },
+    {
+      "title": "二、多选题（本题共 4 小题，每小题 5 分，共 20 分）",
+      "items": [
+        {
+          "no": 9,
+          "type": "multi",
+          "score": 5,
+          "difficulty": 3,
+          "stem": "下列各函数的导数中，计算正确的有",
+          "options": [
+            {
+              "label": "A",
+              "text": "y=x²+ln x 的导数为 2x+1/x"
+            },
+            {
+              "label": "B",
+              "text": "y=cos 3x 的导数为 -sin 3x"
+            },
+            {
+              "label": "C",
+              "text": "y=e^{2x} 的导数为 2e^{2x}"
+            },
+            {
+              "label": "D",
+              "text": "y=x/(x+1) 的导数为 1/(x+1)²"
+            }
+          ],
+          "answer": "ACD",
+          "analysis": "A 逐项求导正确；B 中复合函数要乘内层系数 3，应为 -3sin 3x，错误；C 中内层系数 2 要乘出来，正确；D 由商的求导法则得 ((x+1)-x)/(x+1)²=1/(x+1)²，正确。故答案为 ACD。",
+          "topicIds": [
+            "mhj_h1068"
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q09"
+        },
+        {
+          "no": 10,
+          "type": "multi",
+          "score": 5,
+          "difficulty": 3,
+          "stem": "下列计数问题的结果中，正确的有",
+          "options": [
+            {
+              "label": "A",
+              "text": "从 6 人中选 3 人排成一排，排法有 120 种"
+            },
+            {
+              "label": "B",
+              "text": "从 6 人中选 3 人组成小组，选法有 20 种"
+            },
+            {
+              "label": "C",
+              "text": "3 人排成一排，甲、乙相邻的排法有 6 种"
+            },
+            {
+              "label": "D",
+              "text": "5 人排成一排，甲不站排头的排法有 96 种"
+            }
+          ],
+          "answer": "ABD",
+          "analysis": "A 中 A(6,3)=120；B 中 C(6,3)=20；C 中把甲、乙捆绑，与第三人共 2 个元素排列，再乘甲乙内部顺序，共 2×2=4 种，错误；D 中 5!-4!=120-24=96 种，正确。故答案为 ABD。",
+          "topicIds": [
+            "mhj_h1071",
+            "mhj_h1072"
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q10"
+        },
+        {
+          "no": 11,
+          "type": "multi",
+          "score": 5,
+          "difficulty": 3,
+          "stem": "已知函数 f(x)=2x³-3x²-12x，下列结论正确的有",
+          "options": [
+            {
+              "label": "A",
+              "text": "f(x) 在 x=-1 处取得极大值 7"
+            },
+            {
+              "label": "B",
+              "text": "f(x) 在 x=1 处取得极小值 -13"
+            },
+            {
+              "label": "C",
+              "text": "f(x) 在区间 (-1,2) 上单调递减"
+            },
+            {
+              "label": "D",
+              "text": "f(x) 在区间 [-2,3] 上的最大值为 7"
+            }
+          ],
+          "answer": "ACD",
+          "analysis": "f′(x)=6x²-6x-12=6(x-2)(x+1)，-1<x<2 时导数为负，故 x=-1 处取极大值 f(-1)=7，x=2 处取极小值 f(2)=-20；x=1 不是驻点，B 错误；比较 f(-2)=-4、f(-1)=7、f(2)=-20、f(3)=-9，最大值确为 7。故答案为 ACD。",
+          "topicIds": [
+            "mhj_h1069"
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q11"
+        },
+        {
+          "no": 12,
+          "type": "multi",
+          "score": 5,
+          "difficulty": 3,
+          "stem": "下列关于组合数、排列数与二项式定理的结论正确的有",
+          "options": [
+            {
+              "label": "A",
+              "text": "C(8,3)=56"
+            },
+            {
+              "label": "B",
+              "text": "(1+x) 的 4 次方展开式中各项系数之和为 16"
+            },
+            {
+              "label": "C",
+              "text": "(a+b) 的 5 次方展开式共有 5 项"
+            },
+            {
+              "label": "D",
+              "text": "A(6,2)=30"
+            }
+          ],
+          "answer": "ABD",
+          "analysis": "C(8,3)=56 正确；令 x=1 得系数和为 2⁴=16，正确；展开式共有 n+1=6 项，C 错误；A(6,2)=6×5=30，正确。故答案为 ABD。",
+          "topicIds": [
+            "mhj_h1072",
+            "mhj_h1074"
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q12"
+        }
+      ]
+    },
+    {
+      "title": "三、填空题（本题共 4 小题，每小题 5 分，共 20 分）",
+      "items": [
+        {
+          "no": 13,
+          "type": "fill",
+          "score": 5,
+          "difficulty": 2,
+          "stem": "曲线 y=x²+1 在点 (1,2) 处的切线方程为____",
+          "answer": "y=2x",
+          "analysis": "y′=2x，在 x=1 处斜率为 2，由点斜式得 y-2=2(x-1)，即 y=2x。",
+          "topicIds": [
+            "mhj_h1067"
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q13"
+        },
+        {
+          "no": 14,
+          "type": "fill",
+          "score": 5,
+          "difficulty": 2,
+          "stem": "函数 f(x)=x³-6x²+9x 的极大值为____",
+          "answer": "4",
+          "analysis": "f′(x)=3x²-12x+9=3(x-1)(x-3)，x=1 处导数由正变负，极大值为 f(1)=1-6+9=4。",
+          "topicIds": [
+            "mhj_h1069"
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q14"
+        },
+        {
+          "no": 15,
+          "type": "fill",
+          "score": 5,
+          "difficulty": 2,
+          "stem": "从 4 名男生和 3 名女生中选出 2 名男生和 1 名女生，不同的选法共有____种",
+          "answer": "18",
+          "analysis": "选男生与选女生分两步，由乘法原理得 C(4,2)C(3,1)=6×3=18 种。",
+          "topicIds": [
+            "mhj_h1070",
+            "mhj_h1072"
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q15"
+        },
+        {
+          "no": 16,
+          "type": "fill",
+          "score": 5,
+          "difficulty": 2,
+          "stem": "在 (2x+1) 的 5 次方展开式中，x 的 3 次方项的系数为____",
+          "answer": "80",
+          "analysis": "该项为 C(5,2)(2x)³×1²，系数为 C(5,2)×2³=10×8=80。",
+          "topicIds": [
+            "mhj_h1074"
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q16"
+        }
+      ]
+    },
+    {
+      "title": "四、解答题（本题共 6 小题，共 70 分）",
+      "items": [
+        {
+          "no": 17,
+          "type": "solve",
+          "score": 10,
+          "difficulty": 3,
+          "stem": "求下列函数的导数：（1）y=3x³-2x+1；（2）y=x²ln x（x>0）；（3）y=e^{3x-1}。",
+          "answer": "（1）y′=9x²-2；（2）y′=2x ln x+x；（3）y′=3e^{3x-1}。",
+          "analysis": "（1）逐项用幂函数公式求导得 9x²-2。（2）用积的求导法则得 2x ln x+x²×(1/x)=2x ln x+x。（3）内层为一次式 3x-1，按 f(ax+b) 型法则乘以内层系数 3。",
+          "topicIds": [
+            "mhj_h1068"
+          ],
+          "scoreRule": [
+            {
+              "desc": "正确写出第（1）小题的导数",
+              "score": 3
+            },
+            {
+              "desc": "正确写出第（2）小题的导数",
+              "score": 4
+            },
+            {
+              "desc": "正确写出第（3）小题的导数",
+              "score": 3
+            }
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q17"
+        },
+        {
+          "no": 18,
+          "type": "solve",
+          "score": 12,
+          "difficulty": 3,
+          "stem": "已知函数 f(x)=x³-3x²+2。（1）求 f′(x)；（2）求 f(x) 的单调区间与极值；（3）求 f(x) 在区间 [-1,3] 上的最大值与最小值。",
+          "answer": "（1）f′(x)=3x²-6x；（2）单调增区间为 (-∞,0) 与 (2,+∞)，单调减区间为 (0,2)，极大值 f(0)=2，极小值 f(2)=-2；（3）最大值为 2，最小值为 -2。",
+          "analysis": "（1）逐项求导得 f′(x)=3x²-6x。（2）令 3x(x-2)=0 得驻点 0 与 2，按两侧导数符号判断得极大值 2、极小值 -2。（3）再比较端点值 f(-1)=-2、f(3)=2，与极值一起比较得最大值 2、最小值 -2。",
+          "topicIds": [
+            "mhj_h1068",
+            "mhj_h1069"
+          ],
+          "scoreRule": [
+            {
+              "desc": "求出导函数",
+              "score": 3
+            },
+            {
+              "desc": "正确写出单调区间与极值",
+              "score": 5
+            },
+            {
+              "desc": "求出闭区间上的最值",
+              "score": 4
+            }
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q18"
+        },
+        {
+          "no": 19,
+          "type": "solve",
+          "score": 12,
+          "difficulty": 4,
+          "stem": "某班有 5 名男生和 3 名女生。（1）从中选 4 人参加劳动，要求至少有 1 名女生，共有多少种不同的选法？（2）8 人排成一排照相，若 3 名女生两两不相邻，共有多少种不同的排法？",
+          "answer": "（1）65 种；（2）14400 种。",
+          "analysis": "（1）用间接法：任选 4 人有 C(8,4)=70 种，其中 4 人全是男生的有 C(5,4)=5 种，故至少 1 名女生的选法为 70-5=65 种。（2）先排 5 名男生有 5!=120 种，排好后形成 6 个空位，从中选 3 个依次安排 3 名女生有 A(6,3)=120 种，共 120×120=14400 种。",
+          "topicIds": [
+            "mhj_h1071",
+            "mhj_h1072"
+          ],
+          "scoreRule": [
+            {
+              "desc": "用间接法求出至少 1 名女生的选法",
+              "score": 6
+            },
+            {
+              "desc": "用插空法求出女生互不相邻的排法",
+              "score": 6
+            }
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q19"
+        },
+        {
+          "no": 20,
+          "type": "solve",
+          "score": 12,
+          "difficulty": 3,
+          "stem": "已知二项式 (x+2/x) 的 6 次方（x≠0）。（1）求展开式中的常数项；（2）求展开式中 x 的 4 次方项的系数；（3）求展开式各项系数之和。",
+          "answer": "（1）常数项为 160；（2）x⁴ 项的系数为 12；（3）各项系数之和为 729。",
+          "analysis": "通项为 C(6,k)x^{6-k}(2/x)^k=C(6,k)2^k x^{6-2k}。（1）令 6-2k=0 得 k=3，常数项为 C(6,3)×2³=20×8=160。（2）令 6-2k=4 得 k=1，系数为 C(6,1)×2=12。（3）令 x=1 得 (1+2)⁶=729。",
+          "topicIds": [
+            "mhj_h1074"
+          ],
+          "scoreRule": [
+            {
+              "desc": "求出常数项",
+              "score": 4
+            },
+            {
+              "desc": "求出 x⁴ 项系数",
+              "score": 4
+            },
+            {
+              "desc": "求出各项系数之和",
+              "score": 4
+            }
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q20"
+        },
+        {
+          "no": 21,
+          "type": "solve",
+          "score": 12,
+          "difficulty": 3,
+          "stem": "用长为 20 米的篱笆围成一块一边靠墙的矩形菜地，墙的长度足够，靠墙的一边不需要篱笆。（1）设垂直于墙的一边长为 x 米，写出菜地面积 S 关于 x 的函数表达式及定义域；（2）当 x 取何值时菜地面积最大，最大面积是多少平方米？",
+          "answer": "（1）S=x(20-2x)=-2x²+20x，定义域为 0<x<10；（2）x=5 时面积最大，最大面积为 50 平方米。",
+          "analysis": "（1）垂直于墙的两边各长 x 米，共用篱笆 2x 米，故平行于墙的一边长为 20-2x 米，面积 S=x(20-2x)=-2x²+20x，由 20-2x>0 得 0<x<10。（2）S′=-4x+20，令其为零得 x=5，且 x<5 时 S′>0、x>5 时 S′<0，故 x=5 时取最大值，S(5)=5×10=50 平方米。",
+          "topicIds": [
+            "mhj_h1069",
+            "mhj_h018"
+          ],
+          "scoreRule": [
+            {
+              "desc": "正确写出面积函数及定义域",
+              "score": 6
+            },
+            {
+              "desc": "求导并求出最大面积",
+              "score": 6
+            }
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q21"
+        },
+        {
+          "no": 22,
+          "type": "solve",
+          "score": 12,
+          "difficulty": 3,
+          "stem": "袋中有 4 个红球和 3 个白球，除颜色外完全相同。从中一次取出 3 个球。（1）求取出的 3 个球中恰有 2 个红球的概率；（2）求取出的 3 个球中至少有 1 个白球的概率。",
+          "answer": "（1）18/35；（2）31/35。",
+          "analysis": "样本点总数为 C(7,3)=35。（1）恰有 2 红 1 白有 C(4,2)C(3,1)=6×3=18 个，概率为 18/35。（2）对立事件是 3 个全是红球，有 C(4,3)=4 个，故所求为 1-4/35=31/35。",
+          "topicIds": [
+            "mhj_h1073",
+            "mhj_h019"
+          ],
+          "scoreRule": [
+            {
+              "desc": "求出恰有 2 个红球的概率",
+              "score": 6
+            },
+            {
+              "desc": "用对立事件求出至少 1 个白球的概率",
+              "score": 6
+            }
+          ],
+          "itemId": "mhj_exam_x2_mid_a_q22"
+        }
+      ]
+    }
+  ]
+}

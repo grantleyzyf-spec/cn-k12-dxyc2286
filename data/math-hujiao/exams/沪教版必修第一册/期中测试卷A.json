@@ -1,0 +1,654 @@
+{
+  "book": "沪教版必修第一册",
+  "term": "上册",
+  "grade": 10,
+  "stage": "高中",
+  "kind": "mid",
+  "paper": "期中测试卷A",
+  "duration": 120,
+  "fullScore": 150,
+  "scope": [
+    "沪教版必修第一册 第1章 集合与逻辑",
+    "沪教版必修第一册 第2章 等式与不等式"
+  ],
+  "topicIds": [
+    "mhj_h001",
+    "mhj_h1001",
+    "mhj_h1002",
+    "mhj_h002",
+    "mhj_h1003",
+    "mhj_h1004",
+    "mhj_h1005"
+  ],
+  "examId": "mhj_exam_b1_mid_a",
+  "sections": [
+    {
+      "title": "一、单选题",
+      "rule": "每小题 5 分，共 40 分",
+      "items": [
+        {
+          "no": 1,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1001"
+          ],
+          "stem": "已知集合 A = {x | −1 < x < 2}，B = {x | x ≥ 1}，则 A ∩ B 等于（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "[1, 2)"
+            },
+            {
+              "label": "B",
+              "text": "(1, 2)"
+            },
+            {
+              "label": "C",
+              "text": "[1, 2]"
+            },
+            {
+              "label": "D",
+              "text": "(1, 2]"
+            }
+          ],
+          "answer": "A",
+          "analysis": "交集要同时满足两个条件：−1 < x < 2 且 x ≥ 1，合并得 1 ≤ x < 2，即 [1, 2)。端点 1 在 B 中能取到，故左端闭；端点 2 在 A 中取不到，故右端开。",
+          "itemId": "mhj_exam_b1_mid_a_q01"
+        },
+        {
+          "no": 2,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h001"
+          ],
+          "stem": "集合 {a, b, c} 的真子集的个数是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "6 个"
+            },
+            {
+              "label": "B",
+              "text": "8 个"
+            },
+            {
+              "label": "C",
+              "text": "7 个"
+            },
+            {
+              "label": "D",
+              "text": "9 个"
+            }
+          ],
+          "answer": "C",
+          "analysis": "含 3 个元素的集合共有 2³ = 8 个子集，真子集要去掉集合本身，故为 8 − 1 = 7 个。另外要注意：空集是任何集合的子集，也是真子集（当集合非空时），不能漏掉。",
+          "itemId": "mhj_exam_b1_mid_a_q02"
+        },
+        {
+          "no": 3,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1002"
+          ],
+          "stem": "设 p：x > 1，q：x² > 1，则 p 是 q 的（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "必要不充分条件"
+            },
+            {
+              "label": "B",
+              "text": "充分不必要条件"
+            },
+            {
+              "label": "C",
+              "text": "充要条件"
+            },
+            {
+              "label": "D",
+              "text": "既不充分也不必要条件"
+            }
+          ],
+          "answer": "B",
+          "analysis": "x > 1 时两边平方得 x² > 1，故 p ⇒ q。反过来 x² > 1 得 x > 1 或 x < −1，取 x = −2 可使 q 成立而 p 不成立，故 q ⇏ p。因此 p 是 q 的充分不必要条件。判断时先看“谁能推出谁”，再决定是充分还是必要。",
+          "itemId": "mhj_exam_b1_mid_a_q03"
+        },
+        {
+          "no": 4,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1002"
+          ],
+          "stem": "命题“存在实数 x，使 x² − x + 1 < 0”的否定是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "对任意实数 x，都有 x² − x + 1 ≥ 0"
+            },
+            {
+              "label": "B",
+              "text": "存在实数 x，使 x² − x + 1 ≥ 0"
+            },
+            {
+              "label": "C",
+              "text": "对任意实数 x，都有 x² − x + 1 < 0"
+            },
+            {
+              "label": "D",
+              "text": "存在实数 x，使 x² − x + 1 > 0"
+            }
+          ],
+          "answer": "A",
+          "analysis": "存在量词命题的否定：改“存在”为“对任意”，并把结论取反。“< 0”的否定是“≥ 0”，故否定为：对任意实数 x，都有 x² − x + 1 ≥ 0。事实上 x² − x + 1 = (x − 1/2)² + 3/4 > 0 恒成立，原命题为假，其否定为真。",
+          "itemId": "mhj_exam_b1_mid_a_q04"
+        },
+        {
+          "no": 5,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1003"
+          ],
+          "stem": "设 a < b < 0，则下列不等式一定成立的是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "a² < b²"
+            },
+            {
+              "label": "B",
+              "text": "ab < 0"
+            },
+            {
+              "label": "C",
+              "text": "a/b < 1"
+            },
+            {
+              "label": "D",
+              "text": "1/a > 1/b"
+            }
+          ],
+          "answer": "D",
+          "analysis": "取 a = −2、b = −1 检验：a² = 4 > b² = 1，故 A 不成立；ab = 2 > 0，故 B 不成立；a/b = 2 > 1，故 C 不成立。D 中由 a < b < 0 两边同除以正数 ab 得 1/b < 1/a，即 1/a > 1/b，成立。也可直接算：1/a = −0.5，1/b = −1，确实 1/a > 1/b。",
+          "itemId": "mhj_exam_b1_mid_a_q05"
+        },
+        {
+          "no": 6,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1004"
+          ],
+          "stem": "不等式 x² − 5x + 4 ≤ 0 的解集是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "(1, 4)"
+            },
+            {
+              "label": "B",
+              "text": "[1, 4]"
+            },
+            {
+              "label": "C",
+              "text": "(−∞, 1] ∪ [4, +∞)"
+            },
+            {
+              "label": "D",
+              "text": "[−1, 4]"
+            }
+          ],
+          "answer": "B",
+          "analysis": "因式分解得 (x − 1)(x − 4) ≤ 0，对应方程的两根为 1 与 4，开口向上，小于等于 0 的解在两根之间且包含端点，故解集为 [1, 4]。若端点不取则是 (1, 4)，但本题取“≤”。",
+          "itemId": "mhj_exam_b1_mid_a_q06"
+        },
+        {
+          "no": 7,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1005"
+          ],
+          "stem": "已知 a > 0，b > 0，且 a + b = 2，则 1/a + 4/b 的最小值是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "5"
+            },
+            {
+              "label": "B",
+              "text": "4"
+            },
+            {
+              "label": "C",
+              "text": "9/2"
+            },
+            {
+              "label": "D",
+              "text": "9"
+            }
+          ],
+          "answer": "C",
+          "analysis": "利用 a + b = 2 作代换：1/a + 4/b = (1/a + 4/b)(a + b)/2 = [1 + b/a + 4a/b + 4]/2 = [5 + b/a + 4a/b]/2。由基本不等式 b/a + 4a/b ≥ 2√(b/a · 4a/b) = 4，故原式 ≥ (5 + 4)/2 = 9/2。等号在 b/a = 4a/b 即 b = 2a 时成立，结合 a + b = 2 得 a = 2/3、b = 4/3，此时 1/a + 4/b = 3/2 + 3 = 9/2。",
+          "itemId": "mhj_exam_b1_mid_a_q07"
+        },
+        {
+          "no": 8,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1004"
+          ],
+          "stem": "不等式 |x − 2| ≥ 1 的解集是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "[1, 3]"
+            },
+            {
+              "label": "B",
+              "text": "(1, 3)"
+            },
+            {
+              "label": "C",
+              "text": "(−∞, 1]"
+            },
+            {
+              "label": "D",
+              "text": "(−∞, 1] ∪ [3, +∞)"
+            }
+          ],
+          "answer": "D",
+          "analysis": "|x − 2| ≥ 1 表示 x 到 2 的距离不小于 1，故 x − 2 ≤ −1 或 x − 2 ≥ 1，解得 x ≤ 1 或 x ≥ 3，解集为 (−∞, 1] ∪ [3, +∞)。端点满足“≥”，要取到。",
+          "itemId": "mhj_exam_b1_mid_a_q08"
+        }
+      ]
+    },
+    {
+      "title": "二、多选题",
+      "rule": "每小题 5 分，共 20 分；少选得部分分，错选不得分",
+      "items": [
+        {
+          "no": 9,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h001"
+          ],
+          "stem": "已知集合 A = {x | −1 ≤ x ≤ 2}，B = {x | x > 0}，则下列结论正确的是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "A ∩ B = (0, 2]"
+            },
+            {
+              "label": "B",
+              "text": "A ∪ B = [−1, +∞)"
+            },
+            {
+              "label": "C",
+              "text": "A 在 R 中的补集是 (−∞, −1) ∪ (2, +∞)"
+            },
+            {
+              "label": "D",
+              "text": "A ⊆ B"
+            }
+          ],
+          "answer": "ABC",
+          "analysis": "A ∩ B = (0, 2]，A 正确；A ∪ B = [−1, +∞)，B 正确；A 在 R 中的补集为 (−∞, −1) ∪ (2, +∞)，C 正确；由于 −1 ∈ A 而 −1 ∉ B，A 不是 B 的子集，D 错误。",
+          "itemId": "mhj_exam_b1_mid_a_q09"
+        },
+        {
+          "no": 10,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1002"
+          ],
+          "stem": "下列命题中为真命题的是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "若 a > b，则 a − 2 > b − 2"
+            },
+            {
+              "label": "B",
+              "text": "若 a > b，则 a/c² > b/c²"
+            },
+            {
+              "label": "C",
+              "text": "对任意实数 x，都有 x² + 2x + 3 > 0"
+            },
+            {
+              "label": "D",
+              "text": "存在实数 x，使 x² + 1 = 0"
+            }
+          ],
+          "answer": "AC",
+          "analysis": "A 是不等式性质，两边同减 2，不等号方向不变，真。B 中当 c = 0 时 a/c² 无意义，不能由 a > b 得到 a/c² > b/c²，假（应要求 c ≠ 0）。C 中 x² + 2x + 3 = (x + 1)² + 2 ≥ 2 > 0，对任意实数成立，真。D 中 x² + 1 ≥ 1 > 0，方程 x² + 1 = 0 无实根，假。",
+          "itemId": "mhj_exam_b1_mid_a_q10"
+        },
+        {
+          "no": 11,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1004"
+          ],
+          "stem": "关于一元二次不等式的解集，下列说法正确的是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "x² − 2x − 3 > 0 的解集是 (−∞, −1) ∪ (3, +∞)"
+            },
+            {
+              "label": "B",
+              "text": "x² + 1 ≤ 0 的解集是 R"
+            },
+            {
+              "label": "C",
+              "text": "x² − 3x + 2 ≤ 0 的解集是 [1, 2]"
+            },
+            {
+              "label": "D",
+              "text": "−x² + 2x + 3 > 0 的解集是 (−1, 3)"
+            }
+          ],
+          "answer": "ACD",
+          "analysis": "A 中 x² − 2x − 3 = (x − 3)(x + 1) > 0 的两根为 −1 与 3，开口向上，取两边得 (−∞, −1) ∪ (3, +∞)，真。B 中 x² + 1 ≥ 1 > 0，故 x² + 1 ≤ 0 无解，解集为 ∅ 而不是 R，假。C 中 (x − 1)(x − 2) ≤ 0 得 [1, 2]，真。D 中 −x² + 2x + 3 > 0 即 x² − 2x − 3 < 0，得 (−1, 3)，真。",
+          "itemId": "mhj_exam_b1_mid_a_q11"
+        },
+        {
+          "no": 12,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1005"
+          ],
+          "stem": "下列结论正确的是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "若 x > 0、y > 0 且 xy = 16，则 x + y 的最小值为 8"
+            },
+            {
+              "label": "B",
+              "text": "若 x > 0，则 x + 1/x ≥ 2"
+            },
+            {
+              "label": "C",
+              "text": "若 x > 0，则 x + 4/x 的最小值为 2"
+            },
+            {
+              "label": "D",
+              "text": "若 a > 0、b > 0 且 a + b = 4，则 ab 的最大值为 4"
+            }
+          ],
+          "answer": "ABD",
+          "analysis": "A 中 xy = 16 为定值，x + y ≥ 2√16 = 8，等号在 x = y = 4 时成立，真。B 中 x > 0 时 x + 1/x ≥ 2，等号在 x = 1 时成立，真。C 中 x > 0 时 x + 4/x ≥ 2√4 = 4，最小值是 4 而不是 2，假。D 中 a + b = 4 为定值，ab ≤ ((a + b)/2)² = 4，等号在 a = b = 2 时成立，真。",
+          "itemId": "mhj_exam_b1_mid_a_q12"
+        }
+      ]
+    },
+    {
+      "title": "三、填空题",
+      "rule": "每小题 5 分，共 20 分",
+      "items": [
+        {
+          "no": 13,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1001"
+          ],
+          "stem": "已知 A = {1, 2}，B = {1, 2, 3, 4}，若 A ⊆ C ⊆ B，则满足条件的集合 C 的个数为 ______。",
+          "answer": "4",
+          "analysis": "A ⊆ C 要求 1、2 必须在 C 中；C ⊆ B 要求 C 的元素只能从 {3, 4} 中再添。每个元素 3、4 都有“取”与“不取”两种选择，共 2² = 4 个，即 {1,2}、{1,2,3}、{1,2,4}、{1,2,3,4}。",
+          "itemId": "mhj_exam_b1_mid_a_q13"
+        },
+        {
+          "no": 14,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1004"
+          ],
+          "stem": "不等式 (x − 1)/(x + 3) < 0 的解集为 ______。",
+          "answer": "(−3, 1)",
+          "analysis": "分式小于 0 等价于分子分母异号且分母不为零：(x − 1)(x + 3) < 0 且 x ≠ −3。(x − 1)(x + 3) < 0 的解为 −3 < x < 1，此区间内 x ≠ −3 自动满足，故解集为 (−3, 1)。",
+          "itemId": "mhj_exam_b1_mid_a_q14"
+        },
+        {
+          "no": 15,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1005"
+          ],
+          "stem": "已知 x > 0，y > 0，且 xy = 9，则 x + y 的最小值为 ______。",
+          "answer": "6",
+          "analysis": "由基本不等式 x + y ≥ 2√(xy) = 2√9 = 6。等号成立需 x = y，结合 xy = 9 得 x = y = 3，此时 x + y = 6，故最小值为 6。",
+          "itemId": "mhj_exam_b1_mid_a_q15"
+        },
+        {
+          "no": 16,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1002"
+          ],
+          "stem": "命题“若 x² < 4，则 −2 < x < 2”的逆否命题是 ______。",
+          "answer": "若 x ≤ −2 或 x ≥ 2，则 x² ≥ 4",
+          "analysis": "逆否命题是把原命题的条件与结论互换并同时否定。原条件是 x² < 4，否定为 x² ≥ 4；原结论是 −2 < x < 2，其否定为 x ≤ −2 或 x ≥ 2。故逆否命题为：若 x ≤ −2 或 x ≥ 2，则 x² ≥ 4。逆否命题与原命题同真假，此命题为真。",
+          "itemId": "mhj_exam_b1_mid_a_q16"
+        }
+      ]
+    },
+    {
+      "title": "四、解答题",
+      "rule": "共 6 题，10 + 12 + 12 + 12 + 12 + 12 = 70 分",
+      "items": [
+        {
+          "no": 17,
+          "score": 10,
+          "type": "solve",
+          "difficulty": "medium",
+          "topicIds": [
+            "mhj_h001",
+            "mhj_h1001"
+          ],
+          "stem": "设全集 U = R，A = {x | −2 ≤ x < 1}，B = {x | x ≥ −1}。求 A ∩ B、A ∪ B 以及 A ∩ (∁_U B)。",
+          "answer": "A ∩ B = [−1, 1)；A ∪ B = [−2, +∞)；A ∩ (∁_U B) = [−2, −1)",
+          "analysis": "A ∩ B 需同时满足 −2 ≤ x < 1 与 x ≥ −1，得 −1 ≤ x < 1，即 [−1, 1)。A ∪ B 从 −2 连续覆盖到 +∞，端点 −2 由 A 决定可以取到，故为 [−2, +∞)。∁_U B = {x | x < −1} = (−∞, −1)，与 A = [−2, 1) 求交得 [−2, −1)。注意最后一段的左端点 −2 属于 A，故取闭。",
+          "scoreRule": [
+            {
+              "step": "求 A ∩ B = [−1, 1)",
+              "score": 3
+            },
+            {
+              "step": "求 A ∪ B = [−2, +∞)",
+              "score": 3
+            },
+            {
+              "step": "求 ∁_U B = (−∞, −1)",
+              "score": 2
+            },
+            {
+              "step": "得 A ∩ (∁_U B) = [−2, −1)",
+              "score": 2
+            }
+          ],
+          "itemId": "mhj_exam_b1_mid_a_q17"
+        },
+        {
+          "no": 18,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "medium",
+          "topicIds": [
+            "mhj_h001"
+          ],
+          "stem": "已知集合 A = {x | −1 ≤ x ≤ 3}，B = {x | a < x < a + 2}。若 B ⊆ A，求实数 a 的取值范围。",
+          "answer": "−1 ≤ a ≤ 1",
+          "analysis": "B 是长度恒为 2 的开区间，不可能为空集，故只需两端点都落在 A 内：a ≥ −1 且 a + 2 ≤ 3。解得 −1 ≤ a ≤ 1。注意 B 是开区间而 A 是闭区间，端点 a = −1 时 B = (−1, 1)，仍包含在 [−1, 3] 内，可以取到，所以两个不等式都带等号。",
+          "scoreRule": [
+            {
+              "step": "指出 B 非空，长度恒为 2",
+              "score": 3
+            },
+            {
+              "step": "列出 a ≥ −1 且 a + 2 ≤ 3",
+              "score": 5
+            },
+            {
+              "step": "解得 −1 ≤ a ≤ 1 并说明端点可取",
+              "score": 4
+            }
+          ],
+          "itemId": "mhj_exam_b1_mid_a_q18"
+        },
+        {
+          "no": 19,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "hard",
+          "topicIds": [
+            "mhj_h1004"
+          ],
+          "stem": "设 a ≠ 0，解关于 x 的不等式 ax² − (a + 1)x + 1 < 0。",
+          "answer": "a < 0 时解集为 (−∞, 1/a) ∪ (1, +∞)；0 < a < 1 时解集为 (1, 1/a)；a = 1 时解集为 ∅；a > 1 时解集为 (1/a, 1)",
+          "analysis": "因式分解：ax² − (a + 1)x + 1 = (ax − 1)(x − 1)，对应方程的两根为 1 与 1/a，需按 a 的符号与 1/a 和 1 的大小分类。当 a < 0 时，抛物线开口向下，不等式 < 0 的解在两根之外；此时 1/a < 0 < 1，故解集为 (−∞, 1/a) ∪ (1, +∞)。当 0 < a < 1 时，开口向上，解在两根之间，且 1/a > 1，解集为 (1, 1/a)。当 a = 1 时，不等式变为 (x − 1)² < 0，无解，解集为 ∅。当 a > 1 时，开口向上且 1/a < 1，解集为 (1/a, 1)。",
+          "scoreRule": [
+            {
+              "step": "因式分解为 (ax − 1)(x − 1) = 0，得两根 1 与 1/a",
+              "score": 3
+            },
+            {
+              "step": "a < 0 时开口向下，解集为 (−∞, 1/a) ∪ (1, +∞)",
+              "score": 3
+            },
+            {
+              "step": "0 < a < 1 时解集为 (1, 1/a)，a = 1 时解集为 ∅",
+              "score": 3
+            },
+            {
+              "step": "a > 1 时解集为 (1/a, 1)",
+              "score": 3
+            }
+          ],
+          "itemId": "mhj_exam_b1_mid_a_q19"
+        },
+        {
+          "no": 20,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "medium",
+          "topicIds": [
+            "mhj_h1005"
+          ],
+          "stem": "某工厂要建造一个面积为 200 平方米的矩形仓库，仓库的一面利用原有旧墙（旧墙长度足够），另外三面需要新建围墙。求新建围墙总长度的最小值。",
+          "answer": "新建围墙总长度的最小值为 40 米",
+          "analysis": "设垂直于旧墙的两条边长各为 x 米（x > 0），平行于旧墙的一边为 200/x 米。新建围墙包括两条垂直于旧墙的边和一条平行于旧墙的边，故总长度 L = 2x + 200/x。由基本不等式 L ≥ 2√(2x · 200/x) = 2√400 = 40，等号成立需 2x = 200/x，即 x² = 100，x = 10。此时平行边为 20 米，总长 20 + 20 = 40 米，与结果相符。故最小值为 40 米。",
+          "scoreRule": [
+            {
+              "step": "设垂直于旧墙的边长为 x，写出平行边 200/x",
+              "score": 4
+            },
+            {
+              "step": "写出总长度函数 L = 2x + 200/x",
+              "score": 3
+            },
+            {
+              "step": "用基本不等式求最小值 40，并求等号条件 x = 10",
+              "score": 3
+            },
+            {
+              "step": "回答最小值为 40 米",
+              "score": 2
+            }
+          ],
+          "itemId": "mhj_exam_b1_mid_a_q20"
+        },
+        {
+          "no": 21,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "medium",
+          "topicIds": [
+            "mhj_h1005"
+          ],
+          "stem": "已知 a > 0，b > 0，且 a + b = 1，求证：(1 + 1/a)(1 + 1/b) ≥ 9。",
+          "answer": "证明见解析",
+          "analysis": "展开左边：(1 + 1/a)(1 + 1/b) = 1 + 1/a + 1/b + 1/(ab) = 1 + (a + b)/(ab) + 1/(ab)。由 a + b = 1 得 1/a + 1/b = 1/(ab)，故左边 = 1 + 2/(ab)。又由基本不等式 ab ≤ ((a + b)/2)² = 1/4，且 ab > 0，取倒数得 1/(ab) ≥ 4，于是 2/(ab) ≥ 8。所以左边 ≥ 1 + 8 = 9。等号在 a = b = 1/2 时成立，此时 (1 + 2)(1 + 2) = 9，确实取到。",
+          "scoreRule": [
+            {
+              "step": "展开左边并利用 a + b = 1 化为 1 + 2/(ab)",
+              "score": 5
+            },
+            {
+              "step": "由 ab ≤ 1/4 得 1/(ab) ≥ 4",
+              "score": 4
+            },
+            {
+              "step": "得左边 ≥ 9，并指出等号条件 a = b = 1/2",
+              "score": 3
+            }
+          ],
+          "itemId": "mhj_exam_b1_mid_a_q21"
+        },
+        {
+          "no": 22,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "hard",
+          "topicIds": [
+            "mhj_h1002",
+            "mhj_h1004"
+          ],
+          "stem": "已知命题 p：x² − 2x − 3 ≤ 0；命题 q：x² − 2mx + m² − 9 ≤ 0。若 p 是 q 的充分不必要条件，求实数 m 的取值范围。",
+          "answer": "0 ≤ m ≤ 2",
+          "analysis": "先解两个不等式。p：x² − 2x − 3 ≤ 0 即 (x − 3)(x + 1) ≤ 0，得 −1 ≤ x ≤ 3，记集合 P = [−1, 3]。q：x² − 2mx + m² − 9 ≤ 0 即 (x − m)² ≤ 9，得 m − 3 ≤ x ≤ m + 3，记集合 Q = [m − 3, m + 3]。p 是 q 的充分条件等价于 P ⊆ Q，即 m − 3 ≤ −1 且 m + 3 ≥ 3，解得 0 ≤ m ≤ 2。再看必要性：Q 的长度恒为 6 > 4 = P 的长度，故 Q 永远不可能包含在 P 中，p 一定不是 q 的必要条件。所以 m 的取值范围是 [0, 2]。",
+          "scoreRule": [
+            {
+              "step": "解 p 得 P = [−1, 3]",
+              "score": 3
+            },
+            {
+              "step": "解 q 得 Q = [m − 3, m + 3]",
+              "score": 3
+            },
+            {
+              "step": "由 P ⊆ Q 列出 m − 3 ≤ −1 且 m + 3 ≥ 3，得 0 ≤ m ≤ 2",
+              "score": 4
+            },
+            {
+              "step": "说明 Q 长 6 > 4，故不必要，确认取值范围",
+              "score": 2
+            }
+          ],
+          "itemId": "mhj_exam_b1_mid_a_q22"
+        }
+      ]
+    }
+  ]
+}

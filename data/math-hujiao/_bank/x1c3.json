@@ -1,0 +1,817 @@
+{
+ "tag": "x1c3",
+ "book": "沪教版选择性必修第一册",
+ "unit_points": [
+  {
+   "id": "mhj_h016",
+   "description": "把空间向量作为处理立体几何的统一工具：先由向量共面的条件与空间向量基本定理确定基底，再用数量积或坐标计算夹角、长度与垂直关系，进而判断线线、线面与面面的位置关系。",
+   "mastery_criteria": [
+    "能说出空间向量与平面向量相同的运算律，并用一组基底表示几何体中的向量",
+    "能用数量积或坐标计算两个空间向量的夹角、模与垂直关系",
+    "能把直线与平面平行、垂直的判断转化为向量的平行或垂直关系"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h016_q1",
+     "topicId": "mhj_h016",
+     "prompt": "关于空间向量，下列结论正确的是",
+     "question": "关于空间向量，下列结论正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "空间中的任意两个向量总是共面的"
+      },
+      {
+       "label": "B",
+       "text": "空间中的任意三个向量一定不共面"
+      },
+      {
+       "label": "C",
+       "text": "两个向量的和可能与这两个向量都不共面"
+      },
+      {
+       "label": "D",
+       "text": "空间向量没有相等向量与负向量的概念"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材指出空间的任意两个向量总是共面的，因为两个向量的和按平行四边形或三角形法则作出，仍在同一个平面内；三个向量才可能不共面，例如正方体同一个顶点出发的三条棱对应的向量。"
+    },
+    {
+     "id": "mhj_h016_q2",
+     "topicId": "mhj_h016",
+     "prompt": "如果三个向量 e1、e2、e3 不共面，那么下列结论正确的是",
+     "question": "如果三个向量 e1、e2、e3 不共面，那么下列结论正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "空间中只有部分向量能表示成它们的线性组合"
+      },
+      {
+       "label": "B",
+       "text": "空间中任意一个向量都能唯一地表示成它们的线性组合"
+      },
+      {
+       "label": "C",
+       "text": "空间中任意一个向量都能表示成它们的线性组合，但表示方法不唯一"
+      },
+      {
+       "label": "D",
+       "text": "其中任意两个向量的线性组合仍可能与第三个向量共面"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "这正是空间向量基本定理的内容：三个向量不共面时，对空间中任意一个向量 a，存在唯一一组实数 λ、μ、ν，使 a 等于 λe1 加 μe2 加 νe3；唯一性由不共面条件推出矛盾来证明。"
+    },
+    {
+     "id": "mhj_h016_q3",
+     "topicId": "mhj_h016",
+     "prompt": "在平行六面体 ABCD-A1B1C1D1 中，点 M 在体对角线 A1B 上，且 A1M 的长是 MB 的一半，点 N 在体对角线 A1C 上，且 A1N 的长是 NC 的三分之一，则下列结论正确的是",
+     "question": "在平行六面体 ABCD-A1B1C1D1 中，点 M 在体对角线 A1B 上，且 A1M 的长是 MB 的一半，点 N 在体对角线 A1C 上，且 A1N 的长是 NC 的三分之一，则下列结论正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "M、N、D1 三点不共线"
+      },
+      {
+       "label": "B",
+       "text": "D1M 等于 3 倍的 D1N"
+      },
+      {
+       "label": "C",
+       "text": "D1M 等于三分之四倍的 D1N"
+      },
+      {
+       "label": "D",
+       "text": "D1M 等于 2 倍的 D1N"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "设 AB 等于 a、AD 等于 b、AA1 等于 c，由条件得 A1M 等于三分之一 A1B、A1N 等于四分之一 A1C，算得 D1M 等于三分之一（a 减 3b 减 c），D1N 等于四分之一（a 减 3b 减 c），两者成比例，故 D1M 等于三分之四 D1N，且 M、N、D1 三点共线。"
+    },
+    {
+     "id": "mhj_h016_q4",
+     "topicId": "mhj_h016",
+     "prompt": "在棱长为 2 的正方体 ABCD-A1B1C1D1 中，DD1 与 DC1 的数量积 DD1·DC1 的值是多少",
+     "question": "在棱长为 2 的正方体 ABCD-A1B1C1D1 中，DD1 与 DC1 的数量积 DD1·DC1 的值是多少",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\":\"op\",\"op\":\"pow\",\"values\":[{\"type\":\"num\",\"value\":2},{\"type\":\"num\",\"value\":2}]}",
+     "explanation": "由于 DD1 垂直于 DC、也垂直于 CC1，把 DC1 写成 DC 加 CC1 后，只有 CC1 这一项留下，它的长与 DD1 的长都是 2，方向相同，所以数量积等于 2 乘 2 等于 4。"
+    },
+    {
+     "id": "mhj_h016_q5",
+     "topicId": "mhj_h016",
+     "prompt": "化简下列向量算式 3(2a - b - 4c) - 4(a - 2b + 3c)，结果是什么",
+     "question": "化简下列向量算式 3(2a - b - 4c) - 4(a - 2b + 3c)，结果是什么",
+     "answer": "2a + 5b - 24c",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "先去括号得 6a 减 3b 减 12c 减 4a 加 8b 减 12c，再合并同类项：a 的系数为 6 减 4 得 2，b 的系数为负 3 加 8 得 5，c 的系数为负 12 减 12 得负 24。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "mhj_h1058",
+   "page": 104,
+   "description": "理解空间向量的加法、减法与数乘运算，会用首尾规则在几何体中求和，会用基底表示向量，并用数量积求夹角、判断垂直。",
+   "mastery_criteria": [
+    "能用首尾规则把正方体中的向量写成若干向量的和或差",
+    "会用数量积计算两个空间向量的夹角与模，并判断两向量是否垂直",
+    "能用基底 a、b、c 表示棱柱中的向量并化简线性组合"
+   ],
+   "misconceptions": [
+    "以为空间向量的加法不满足结合律，写连加时必须以括号规定运算顺序",
+    "以为两条直线异面就意味着它们的方向向量不共面，把直线的异面与三个向量不共面混为一谈",
+    "计算数量积时漏乘夹角的余弦，直接用两个向量的模相乘",
+    "用数量积为零判断垂直时，忘了先确认两个向量都是非零向量"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mhj_h1058_q1",
+     "topicId": "mhj_h1058",
+     "prompt": "在正方体 ABCD-A1B1C1D1 中，只考虑棱所对应的向量，与向量 AB 相等的向量是",
+     "question": "在正方体 ABCD-A1B1C1D1 中，只考虑棱所对应的向量，与向量 AB 相等的向量是",
+     "options": [
+      {
+       "label": "A",
+       "text": "A1B1"
+      },
+      {
+       "label": "B",
+       "text": "BA"
+      },
+      {
+       "label": "C",
+       "text": "A1B"
+      },
+      {
+       "label": "D",
+       "text": "B1A1"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "相等向量要求方向相同且模相等。A1B1 与 AB 平行同向且长度相等，所以与 AB 相等；BA 与 AB 方向相反，A1B 与 AB 方向不同，B1A1 与 AB 方向也相反。"
+    },
+    {
+     "id": "mhj_h1058_q2",
+     "topicId": "mhj_h1058",
+     "prompt": "已知两个空间向量的模分别为 3 和 4，它们的夹角为 60 度，则这两个向量的数量积是多少",
+     "question": "已知两个空间向量的模分别为 3 和 4，它们的夹角为 60 度，则这两个向量的数量积是多少",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\":\"op\",\"op\":\"mul\",\"values\":[{\"type\":\"num\",\"value\":12},{\"type\":\"num\",\"value\":0.5}]}",
+     "explanation": "数量积等于两个向量的模的乘积再乘以夹角的余弦，即 3 乘 4 再乘 cos60 度，等于 12 乘二分之一，结果为 6。"
+    },
+    {
+     "id": "mhj_h1058_q3",
+     "topicId": "mhj_h1058",
+     "prompt": "在棱长为 a 的正方体 ABCD-A1B1C1D1 中，E 是棱 CC1 的中点，则 AE·C1A1 等于",
+     "question": "在棱长为 a 的正方体 ABCD-A1B1C1D1 中，E 是棱 CC1 的中点，则 AE·C1A1 等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 的平方"
+      },
+      {
+       "label": "B",
+       "text": "负 a 的平方"
+      },
+      {
+       "label": "C",
+       "text": "2 a 的平方"
+      },
+      {
+       "label": "D",
+       "text": "负 2 a 的平方"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把 AE 写成 AB 加 BC 加二分之一 AA1，把 C1A1 写成负 AB 减 BC，利用三条棱两两垂直展开，交叉项全为 0，只剩 AB 的平方与 BC 的平方，即负 a 的平方减 a 的平方，等于负 2 a 的平方。"
+    },
+    {
+     "id": "mhj_h1058_q4",
+     "topicId": "mhj_h1058",
+     "prompt": "在棱长为 a 的正方体 ABCD-A1B1C1D1 中，E 是棱 CC1 的中点，则直线 AE 与直线 DB 的位置关系是",
+     "question": "在棱长为 a 的正方体 ABCD-A1B1C1D1 中，E 是棱 CC1 的中点，则直线 AE 与直线 DB 的位置关系是",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行"
+      },
+      {
+       "label": "B",
+       "text": "垂直"
+      },
+      {
+       "label": "C",
+       "text": "所成角为 60 度"
+      },
+      {
+       "label": "D",
+       "text": "所成角为 45 度"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把 AE 与 DB 都用 AB、BC、AA1 表示后作数量积，展开式中只剩 AB 的平方减 BC 的平方，两者都等于 a 的平方，差为 0，所以 AE 垂直于 DB，两直线互相垂直。"
+    },
+    {
+     "id": "mhj_h1058_q5",
+     "topicId": "mhj_h1058",
+     "prompt": "化简向量式 OA - (OB - (AB - AC))，结果等于哪一个向量",
+     "question": "化简向量式 OA - (OB - (AB - AC))，结果等于哪一个向量",
+     "answer": "CA",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "先去括号得 OA 减 OB 加 AB 减 AC，其中 OA 减 OB 等于 BA，而 BA 加 AB 等于零向量，所以原式等于负 AC，也就是向量 CA。"
+    },
+    {
+     "id": "mhj_h1058_q6",
+     "topicId": "mhj_h1058",
+     "prompt": "已知向量 a 垂直于向量 b，向量 c 与 a、b 的夹角都是 60 度，且 a 的模为 1，b 的模为 2，c 的模为 3，则 (3a - 2b)·(b - 3c) 的值是多少",
+     "question": "已知向量 a 垂直于向量 b，向量 c 与 a、b 的夹角都是 60 度，且 a 的模为 1，b 的模为 2，c 的模为 3，则 (3a - 2b)·(b - 3c) 的值是多少",
+     "answer": -3.5,
+     "type": "numeric",
+     "difficulty": "hard",
+     "verify": "{\"type\":\"op\",\"op\":\"sub\",\"values\":[{\"type\":\"num\",\"value\":18},{\"type\":\"op\",\"op\":\"op\",\"values\":[{\"type\":\"num\",\"value\":13.5},{\"type\":\"num\",\"value\":8}]}]}",
+     "explanation": "展开得 3a·b 减 9a·c 减 2b·b 加 6b·c。其中 a·b 等于 0，a·c 等于 1 乘 3 乘二分之一得 1.5，b·b 等于 4，b·c 等于 2 乘 3 乘二分之一得 3，代入得 0 减 13.5 减 8 加 18，结果为负 3.5。"
+    },
+    {
+     "id": "mhj_h1058_q7",
+     "topicId": "mhj_h1058",
+     "prompt": "在棱长为 a 的正方体 ABCD-A1B1C1D1 中，E 是棱 CC1 的中点，则 AE 与 C1A1 的夹角等于",
+     "question": "在棱长为 a 的正方体 ABCD-A1B1C1D1 中，E 是棱 CC1 的中点，则 AE 与 C1A1 的夹角等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "π 减 arccos(三分之根号二)"
+      },
+      {
+       "label": "B",
+       "text": "arccos(三分之二倍根号二)"
+      },
+      {
+       "label": "C",
+       "text": "π 减 arccos(三分之二倍根号二)"
+      },
+      {
+       "label": "D",
+       "text": "60 度"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由例 3 的计算，AE 与 C1A1 的数量积为负 2 a 的平方，两者的模分别为二分之三 a 与根号 2 a，夹角余弦等于负三分之二倍根号二，所以夹角为 π 减 arccos(三分之二倍根号二)。"
+    },
+    {
+     "id": "mhj_h1058_q8",
+     "topicId": "mhj_h1058",
+     "prompt": "在正方体 ABCD-A1B1C1D1 中，E 为棱 B1C1 上的任意一点，请用三个或三个以上向量的和表示向量 BE，写出一个等式",
+     "question": "在正方体 ABCD-A1B1C1D1 中，E 为棱 B1C1 上的任意一点，请用三个或三个以上向量的和表示向量 BE，写出一个等式",
+     "answer": "BE = BA1 + A1B1 + B1E",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "按首尾规则，从 B 出发依次经过 A1、B1 到达 E，每个向量的终点都是下一个向量的起点，和向量以第一个向量的起点 B 为起点、以最后一个向量的终点 E 为终点，所以 BE 等于 BA1 加 A1B1 加 B1E。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1059",
+   "page": 110,
+   "description": "理解向量共面的充要条件与空间向量基本定理，能判断三个向量是否共面，能选三棱锥的三条棱作基底表示其他向量。",
+   "mastery_criteria": [
+    "能用存在唯一一对实数这一形式表达向量共面的充要条件",
+    "能判断三个向量是否共面，并据此证明三点共线或点在平面内",
+    "能选取正四面体的三条棱作基底，表示其余棱与中线对应的向量"
+   ],
+   "misconceptions": [
+    "认为空间中的任意三个向量都能作为一组基底",
+    "把两条直线异面误判为它们的方向向量不共面",
+    "用三个系数之和是否等于 1 来判断三个向量共面，混淆四点共面与三个向量共面的条件",
+    "认为基底一旦选定，同一个向量的线性组合表示可以不唯一"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1059_q1",
+     "topicId": "mhj_h1059",
+     "prompt": "如果 e1 与 e2 是两个不平行的向量，那么空间中向量 a 与 e1、e2 共面的充要条件是",
+     "question": "如果 e1 与 e2 是两个不平行的向量，那么空间中向量 a 与 e1、e2 共面的充要条件是",
+     "options": [
+      {
+       "label": "A",
+       "text": "存在唯一的一对实数 λ、μ，使 a 等于 λe1 加 μe2"
+      },
+      {
+       "label": "B",
+       "text": "存在实数 λ，使 a 等于 λe1"
+      },
+      {
+       "label": "C",
+       "text": "a 与 e1、e2 中的至少一个平行"
+      },
+      {
+       "label": "D",
+       "text": "a 的模等于 e1 与 e2 的模之和"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "这是向量共面的充要条件：e1 与 e2 不平行时，与它们共面的向量一定能写成它们唯一的线性组合；反过来，两个不平行向量的任何线性组合都与这两个向量共面。"
+    },
+    {
+     "id": "mhj_h1059_q2",
+     "topicId": "mhj_h1059",
+     "prompt": "在长方体 ABCD-A1B1C1D1 中，E 是棱 AA1 的中点，O 是面对角线 BC1 与 B1C 的交点，则下列结论正确的是",
+     "question": "在长方体 ABCD-A1B1C1D1 中，E 是棱 AA1 的中点，O 是面对角线 BC1 与 B1C 的交点，则下列结论正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "EO 与 AB、AD 不共面"
+      },
+      {
+       "label": "B",
+       "text": "EO 等于 AB 加二分之一 AD，与 AB、AD 共面"
+      },
+      {
+       "label": "C",
+       "text": "EO 等于二分之一 AB 加 AD，与 AB、AD 共面"
+      },
+      {
+       "label": "D",
+       "text": "EO 等于 AB 减二分之一 AD，与 AB、AD 不共面"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把 EO 写成 EA 加 AB 加 BO，其中 EA 等于负二分之一 AA1，BO 等于二分之一（AD 加 AA1），两项中的 AA1 抵消，得 EO 等于 AB 加二分之一 AD，因此 EO 与 AB、AD 共面。"
+    },
+    {
+     "id": "mhj_h1059_q3",
+     "topicId": "mhj_h1059",
+     "prompt": "判断下列三个命题的真假：第一，若直线 AB 与 CD 是异面直线，则向量 AB 与 CD 不共面；第二，若 a、b 是平面 α 上互不平行的向量，点 C、D 都不在 α 上，则 CD 与 a、b 不共面；第三，若 a、b 是平面 α 上互不平行的向量，点 C 在 α 上而点 D 不在 α 上，则 CD 与 a、b 不共面。其中真命题有几个",
+     "question": "判断下列三个命题的真假：第一，若直线 AB 与 CD 是异面直线，则向量 AB 与 CD 不共面；第二，若 a、b 是平面 α 上互不平行的向量，点 C、D 都不在 α 上，则 CD 与 a、b 不共面；第三，若 a、b 是平面 α 上互不平行的向量，点 C 在 α 上而点 D 不在 α 上，则 CD 与 a、b 不共面。其中真命题有几个",
+     "answer": "1 个，只有第三个是真命题",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "空间中任意两个向量总是共面的，异面直线的方向向量也能平移到同一个平面上，故第一个是假命题；若 CD 平行于平面 α，则它与 a、b 共面，故第二个也是假命题；点 C 在 α 上而点 D 不在 α 上时 CD 不在 α 内，与 a、b 不共面，第三个为真。"
+    },
+    {
+     "id": "mhj_h1059_q4",
+     "topicId": "mhj_h1059",
+     "prompt": "在正方体 ABCD-A1B1C1D1 中，E 是面 A1B1C1D1 的中心，若 AE 等于 λAD 加 μAB 加 νAA1，则 λ、μ、ν 的值分别是",
+     "question": "在正方体 ABCD-A1B1C1D1 中，E 是面 A1B1C1D1 的中心，若 AE 等于 λAD 加 μAB 加 νAA1，则 λ、μ、ν 的值分别是",
+     "options": [
+      {
+       "label": "A",
+       "text": "1、1、1"
+      },
+      {
+       "label": "B",
+       "text": "二分之一、二分之一、二分之一"
+      },
+      {
+       "label": "C",
+       "text": "二分之一、二分之一、1"
+      },
+      {
+       "label": "D",
+       "text": "1、二分之一、二分之一"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "以 A 为起点看，从 A 到上底面中心，水平方向上沿 AB 与 AD 各走一半，竖直方向上正好走一条棱 AA1，所以 λ 与 μ 都等于二分之一，ν 等于 1。"
+    },
+    {
+     "id": "mhj_h1059_q5",
+     "topicId": "mhj_h1059",
+     "prompt": "在正四面体 ABCD 中，N 是面 ABC 的中心，令 DA 等于 a、DB 等于 b、DC 等于 c，则 DN 等于",
+     "question": "在正四面体 ABCD 中，N 是面 ABC 的中心，令 DA 等于 a、DB 等于 b、DC 等于 c，则 DN 等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "二分之一（a 加 b 加 c）"
+      },
+      {
+       "label": "B",
+       "text": "四分之一（a 加 b 加 c）"
+      },
+      {
+       "label": "C",
+       "text": "a 加 b 加 c"
+      },
+      {
+       "label": "D",
+       "text": "三分之一（a 加 b 加 c）"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "取 AB 的中点 E，则点 N 在 CE 上且 CN 等于三分之二 CE，把 CE 写成 CA 加二分之一 AB，再代入 a、b、c 化简，可得 DN 中 a、b、c 的系数都等于三分之一。"
+    },
+    {
+     "id": "mhj_h1059_q6",
+     "topicId": "mhj_h1059",
+     "prompt": "在长方体 ABCD-A1B1C1D1 中，AB、AA1、AD 的长的比为 2 比 1 比 1，E、F 分别是棱 AB、DC 的中点，若 AA1 的长为 1，则 A1F·B1C 的值是多少",
+     "question": "在长方体 ABCD-A1B1C1D1 中，AB、AA1、AD 的长的比为 2 比 1 比 1，E、F 分别是棱 AB、DC 的中点，若 AA1 的长为 1，则 A1F·B1C 的值是多少",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\":\"op\",\"op\":\"op\",\"values\":[{\"type\":\"num\",\"value\":1},{\"type\":\"num\",\"value\":1}]}",
+     "explanation": "把 A1F 写成二分之一 AB 加 AD 减 AA1，把 B1C 写成 AD 减 AA1，利用三条棱两两垂直展开，交叉项全为 0，只剩 AD 的平方与 AA1 的平方之和，即 1 加 1 等于 2。"
+    },
+    {
+     "id": "mhj_h1059_q7",
+     "topicId": "mhj_h1059",
+     "prompt": "若点 P 在平面 ABC 内，点 O 是平面 ABC 外的一点，且 OP 等于 λOA 加 μOB 加 νOC，则 λ 加 μ 加 ν 的值是多少",
+     "question": "若点 P 在平面 ABC 内，点 O 是平面 ABC 外的一点，且 OP 等于 λOA 加 μOB 加 νOC，则 λ 加 μ 加 ν 的值是多少",
+     "answer": 1,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\":\"num\",\"value\":1}",
+     "explanation": "空间四点共面的充要条件是对平面外一点 O，有 OP 等于 λOA 加 μOB 加 νOC 且三个系数之和等于 1，这可以由平面向量基本定理类比推广得到。"
+    },
+    {
+     "id": "mhj_h1059_q8",
+     "topicId": "mhj_h1059",
+     "prompt": "在正四面体 ABCD 中，N 是面 ABC 的中心，取 DA 等于 a、DB 等于 b、BC 等于 d 作为一组基底，则 DN 用这组基底表示时 b 的系数是多少",
+     "question": "在正四面体 ABCD 中，N 是面 ABC 的中心，取 DA 等于 a、DB 等于 b、BC 等于 d 作为一组基底，则 DN 用这组基底表示时 b 的系数是多少",
+     "answer": "2/3",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "教材中把 DN 用第二组基底表示为三分之一 a 加三分之二 b 加三分之一 d，所以 b 的系数是三分之二，这一组基底便于表示与 BC 相关的向量。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1060",
+   "page": 116,
+   "description": "会在空间直角坐标系中用坐标表示点与向量，用坐标计算模、数量积与夹角，并用坐标条件判断两个向量平行或垂直。",
+   "mastery_criteria": [
+    "能写出空间直角坐标系中点的坐标，以及它关于坐标平面的对称点坐标",
+    "能用终点坐标减起点坐标求向量坐标，并用坐标公式求模与数量积",
+    "能用坐标形式的充要条件判断两个向量平行或垂直"
+   ],
+   "misconceptions": [
+    "认为两点确定的向量坐标等于起点坐标减去终点坐标",
+    "把点关于 xOy 平面的对称点理解为三个坐标都变成相反数",
+    "用坐标判断平行时只比较两个坐标，忘了第三个坐标也要成同一比例",
+    "计算夹角时把向量的夹角与两条直线所成的角当成同一回事，忽略夹角的取值范围"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mhj_h1060_q1",
+     "topicId": "mhj_h1060",
+     "prompt": "在空间直角坐标系 Oxyz 中，点 P 的坐标是 7、6、4，则点 P 关于 xOy 平面的对称点的坐标是",
+     "question": "在空间直角坐标系 Oxyz 中，点 P 的坐标是 7、6、4，则点 P 关于 xOy 平面的对称点的坐标是",
+     "options": [
+      {
+       "label": "A",
+       "text": "7、6、负 4"
+      },
+      {
+       "label": "B",
+       "text": "负 7、6、4"
+      },
+      {
+       "label": "C",
+       "text": "7、负 6、4"
+      },
+      {
+       "label": "D",
+       "text": "负 7、负 6、负 4"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "关于 xOy 平面对称时，横坐标与纵坐标保持不变，竖坐标变为原来的相反数，所以对称点的坐标是 7、6、负 4。"
+    },
+    {
+     "id": "mhj_h1060_q2",
+     "topicId": "mhj_h1060",
+     "prompt": "已知向量 a 的坐标是负 m、1、3，向量 b 的坐标是 2、n、1，且 a 平行于 b，则 m、n 的值分别是",
+     "question": "已知向量 a 的坐标是负 m、1、3，向量 b 的坐标是 2、n、1，且 a 平行于 b，则 m、n 的值分别是",
+     "options": [
+      {
+       "label": "A",
+       "text": "6、三分之一"
+      },
+      {
+       "label": "B",
+       "text": "负 6、三分之一"
+      },
+      {
+       "label": "C",
+       "text": "负 6、3"
+      },
+      {
+       "label": "D",
+       "text": "6、3"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个向量平行时坐标成同一比例，由竖坐标 3 与 1 得比例系数为 3，于是负 m 等于 3 乘 2，得 m 等于负 6；1 等于 3 乘 n，得 n 等于三分之一。"
+    },
+    {
+     "id": "mhj_h1060_q3",
+     "topicId": "mhj_h1060",
+     "prompt": "已知平行四边形 ABCD 的三个顶点坐标分别为 A 的坐标 1、2、3，B 的坐标 2、负 1、5，C 的坐标 3、2、负 5，则顶点 D 的坐标是",
+     "question": "已知平行四边形 ABCD 的三个顶点坐标分别为 A 的坐标 1、2、3，B 的坐标 2、负 1、5，C 的坐标 3、2、负 5，则顶点 D 的坐标是",
+     "options": [
+      {
+       "label": "A",
+       "text": "2、5、7"
+      },
+      {
+       "label": "B",
+       "text": "4、5、负 3"
+      },
+      {
+       "label": "C",
+       "text": "2、5、负 7"
+      },
+      {
+       "label": "D",
+       "text": "0、负 1、13"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "平行四边形中两条对角线互相平分，所以 A 与 C 的坐标之和等于 B 与 D 的坐标之和，把 A、C 的对应坐标相加再减去 B 的对应坐标，得 D 的坐标为 2、5、负 7。"
+    },
+    {
+     "id": "mhj_h1060_q4",
+     "topicId": "mhj_h1060",
+     "prompt": "在棱长为 a 的正方体 ABCD-A1B1C1D1 中，以 A 为原点，射线 AB、AD、AA1 为 x、y、z 轴正半轴建立空间直角坐标系，则对角线 CA1 与 CA 所成角的余弦值是",
+     "question": "在棱长为 a 的正方体 ABCD-A1B1C1D1 中，以 A 为原点，射线 AB、AD、AA1 为 x、y、z 轴正半轴建立空间直角坐标系，则对角线 CA1 与 CA 所成角的余弦值是",
+     "options": [
+      {
+       "label": "A",
+       "text": "三分之根号三"
+      },
+      {
+       "label": "B",
+       "text": "二分之根号二"
+      },
+      {
+       "label": "C",
+       "text": "三分之一"
+      },
+      {
+       "label": "D",
+       "text": "三分之根号六"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由点的坐标得 CA 等于负 a、负 a、0，CA1 等于负 a、负 a、a，数量积等于 a 的平方加 a 的平方，而两者的模分别为根号 2 a 与根号 3 a，所以余弦值等于 2 a 的平方除以根号 6 a 的平方，即三分之根号六。"
+    },
+    {
+     "id": "mhj_h1060_q5",
+     "topicId": "mhj_h1060",
+     "prompt": "已知向量 a 的坐标是 1、2、2，则 a 的模是多少",
+     "question": "已知向量 a 的坐标是 1、2、2，则 a 的模是多少",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\":\"op\",\"op\":\"pow\",\"values\":[{\"type\":\"num\",\"value\":9},{\"type\":\"num\",\"value\":0.5}]}",
+     "explanation": "向量的模等于三个坐标的平方和的算术平方根，即根号下 1 加 4 加 4 等于根号 9，所以 a 的模为 3。"
+    },
+    {
+     "id": "mhj_h1060_q6",
+     "topicId": "mhj_h1060",
+     "prompt": "已知向量 a 的坐标是 1、1、0，向量 b 的坐标是 0、1、1，则 a 与 b 的夹角是多少度",
+     "question": "已知向量 a 的坐标是 1、1、0，向量 b 的坐标是 0、1、1，则 a 与 b 的夹角是多少度",
+     "answer": 60,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\":\"num\",\"value\":60}",
+     "explanation": "数量积等于 1 乘 0 加 1 乘 1 加 0 乘 1 等于 1，两个向量的模都是根号 2，所以夹角的余弦等于 1 除以 2 得二分之一，夹角为 60 度。"
+    },
+    {
+     "id": "mhj_h1060_q7",
+     "topicId": "mhj_h1060",
+     "prompt": "已知向量 a 等于 i 加 j 减 4k，向量 b 等于 i 减 2j 加 2k，其中 i、j、k 是坐标轴正方向的单位向量，则 a 与 b 的夹角的余弦值是多少",
+     "question": "已知向量 a 等于 i 加 j 减 4k，向量 b 等于 i 减 2j 加 2k，其中 i、j、k 是坐标轴正方向的单位向量，则 a 与 b 的夹角的余弦值是多少",
+     "answer": "-√2/2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "把 a、b 写成坐标得 1、1、负 4 与 1、负 2、2，数量积等于 1 减 2 减 8 得负 9，两者的模分别为 3 倍根号 2 与 3，所以余弦值等于负 9 除以 9 倍根号 2，即负二分之根号二。"
+    },
+    {
+     "id": "mhj_h1060_q8",
+     "topicId": "mhj_h1060",
+     "prompt": "在棱长为 2 的正方体 ABCD-A1B1C1D1 中，以 A 为原点，射线 AB、AD、AA1 为 x、y、z 轴正半轴建立空间直角坐标系，请用坐标说明 CA1 与 BD 垂直",
+     "question": "在棱长为 2 的正方体 ABCD-A1B1C1D1 中，以 A 为原点，射线 AB、AD、AA1 为 x、y、z 轴正半轴建立空间直角坐标系，请用坐标说明 CA1 与 BD 垂直",
+     "answer": "CA1 的坐标是负 2、负 2、2，BD 的坐标是负 2、2、0，数量积为 4 减 4 加 0 等于 0，故两者垂直",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "用坐标证明垂直的关键是算数量积。CA1 的坐标是负 2、负 2、2，BD 的坐标是负 2、2、0，对应坐标相乘再相加得 4 减 4 加 0 等于 0，所以这两个向量垂直，即直线 CA1 垂直于直线 BD。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1061",
+   "page": 122,
+   "description": "理解直线的方向向量与平面的法向量，用两个向量的平行与垂直刻画线线、线面、面面的位置关系，并用向量方法证明三垂线定理。",
+   "mastery_criteria": [
+    "能说出直线的方向向量与平面的法向量的定义，并在正方体中写出它们",
+    "能用方向向量与法向量的平行或垂直判断线面、面面的平行与垂直",
+    "能用向量方法证明三垂线定理与线面垂直的判定定理"
+   ],
+   "misconceptions": [
+    "把平面内的任意一个非零向量当成这个平面的法向量",
+    "认为直线与平面平行时方向向量与法向量平行，混淆线面平行与线面垂直的条件",
+    "证明三垂线定理时直接由投影垂直推出斜线垂直，漏掉斜线的向量分解",
+    "认为平面有唯一的方向向量，用方向向量刻画两个平面平行"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "mhj_h1061_q1",
+     "topicId": "mhj_h1061",
+     "prompt": "与一条直线平行的任何非零向量称为这条直线的",
+     "question": "与一条直线平行的任何非零向量称为这条直线的",
+     "options": [
+      {
+       "label": "A",
+       "text": "法向量"
+      },
+      {
+       "label": "B",
+       "text": "方向向量"
+      },
+      {
+       "label": "C",
+       "text": "投影向量"
+      },
+      {
+       "label": "D",
+       "text": "位置向量"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材把与直线平行的任何非零向量称为这条直线的方向向量，把垂直于平面的任何非零向量称为平面的法向量，它们是这一节处理位置关系的基本工具。"
+    },
+    {
+     "id": "mhj_h1061_q2",
+     "topicId": "mhj_h1061",
+     "prompt": "关于平面 α 的法向量，下列说法正确的是",
+     "question": "关于平面 α 的法向量，下列说法正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "它一定在平面 α 内"
+      },
+      {
+       "label": "B",
+       "text": "它与平面 α 内的一条直线垂直即可"
+      },
+      {
+       "label": "C",
+       "text": "它是垂直于平面 α 的任何非零向量"
+      },
+      {
+       "label": "D",
+       "text": "它必须是单位向量"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "法向量的定义是垂直于平面的任何非零向量，因此它与平面内的每一条直线都垂直；它不要求在平面内，也不要求是单位向量。"
+    },
+    {
+     "id": "mhj_h1061_q3",
+     "topicId": "mhj_h1061",
+     "prompt": "设非零向量 v 是直线 l 的方向向量，非零向量 n 是平面 α 的法向量，且直线 l 不在平面 α 内，则 l 平行于 α 的充要条件是",
+     "question": "设非零向量 v 是直线 l 的方向向量，非零向量 n 是平面 α 的法向量，且直线 l 不在平面 α 内，则 l 平行于 α 的充要条件是",
+     "options": [
+      {
+       "label": "A",
+       "text": "v 等于 λn，λ 为某个实数"
+      },
+      {
+       "label": "B",
+       "text": "v 与 n 的夹角为 60 度"
+      },
+      {
+       "label": "C",
+       "text": "v 与 n 共线"
+      },
+      {
+       "label": "D",
+       "text": "v 与 n 的数量积等于 0"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "直线与平面平行时，它的方向向量与平面的法向量互相垂直，而两向量垂直的充要条件是数量积等于 0；若方向向量与法向量共线，则直线与平面垂直而不是平行。"
+    },
+    {
+     "id": "mhj_h1061_q4",
+     "topicId": "mhj_h1061",
+     "prompt": "设平面 α 与平面 β 是两个确定的平面，则 α 平行于 β 的充要条件是",
+     "question": "设平面 α 与平面 β 是两个确定的平面，则 α 平行于 β 的充要条件是",
+     "options": [
+      {
+       "label": "A",
+       "text": "它们的法向量平行"
+      },
+      {
+       "label": "B",
+       "text": "它们的法向量垂直"
+      },
+      {
+       "label": "C",
+       "text": "它们的法向量都是单位向量"
+      },
+      {
+       "label": "D",
+       "text": "它们的方向向量平行"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个平面平行的充要条件是它们的法向量平行，法向量垂直对应的是两个平面垂直；平面没有唯一确定的方向向量，所以不能用方向向量刻画面面平行。"
+    },
+    {
+     "id": "mhj_h1061_q5",
+     "topicId": "mhj_h1061",
+     "prompt": "已知直线 l 的方向向量的坐标是 1、2、负 1，平面 α 的法向量的坐标是 2、负 1、k，且直线 l 平行于平面 α，则 k 的值是多少",
+     "question": "已知直线 l 的方向向量的坐标是 1、2、负 1，平面 α 的法向量的坐标是 2、负 1、k，且直线 l 平行于平面 α，则 k 的值是多少",
+     "answer": 0,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\":\"op\",\"op\":\"sub\",\"values\":[{\"type\":\"num\",\"value\":2},{\"type\":\"num\",\"value\":2}]}",
+     "explanation": "直线与平面平行时方向向量与法向量的数量积等于 0，即 1 乘 2 加 2 乘负 1 加负 1 乘 k 等于 2 减 2 减 k 等于 0，解得 k 等于 0。"
+    },
+    {
+     "id": "mhj_h1061_q6",
+     "topicId": "mhj_h1061",
+     "prompt": "PA 是平面 α 的一条斜线，PO 垂直于平面 α，点 O 在 α 内，OA 是 PA 在 α 上的投影，若 PA 的长为 5，OA 的长为 3，则 PO 的长是多少",
+     "question": "PA 是平面 α 的一条斜线，PO 垂直于平面 α，点 O 在 α 内，OA 是 PA 在 α 上的投影，若 PA 的长为 5，OA 的长为 3，则 PO 的长是多少",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\":\"op\",\"op\":\"pow\",\"values\":[{\"type\":\"num\",\"value\":16},{\"type\":\"num\",\"value\":0.5}]}",
+     "explanation": "由投影的定义 PO 垂直于平面 α，而 OA 在平面 α 内，所以 PO 垂直于 OA，三角形 POA 是直角三角形，由勾股定理得 PO 等于根号下 5 的平方减 3 的平方，即根号 16 等于 4。"
+    },
+    {
+     "id": "mhj_h1061_q7",
+     "topicId": "mhj_h1061",
+     "prompt": "在棱长为 1 的正方体 ABCD-A1B1C1D1 中，以 D 为原点，射线 DA、DC、DD1 为 x、y、z 轴正方向建立空间直角坐标系，则点 D1 到平面 A1BD 的距离是多少",
+     "question": "在棱长为 1 的正方体 ABCD-A1B1C1D1 中，以 D 为原点，射线 DA、DC、DD1 为 x、y、z 轴正方向建立空间直角坐标系，则点 D1 到平面 A1BD 的距离是多少",
+     "answer": "√3/3",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "平面 A1BD 经过原点，取它的一个法向量为 1、负 1、负 1，点 D1 的坐标是 0、0、1，用法向量与 DD1 的数量积的绝对值除以法向量的模，得 1 除以根号 3，即三分之根号三。"
+    },
+    {
+     "id": "mhj_h1061_q8",
+     "topicId": "mhj_h1061",
+     "prompt": "在棱长为 2 的正方体 ABCD-A1B1C1D1 中，以 D 为原点，射线 DA、DC、DD1 为 x、y、z 轴正方向建立空间直角坐标系，请用坐标证明 AC1 垂直于平面 A1BD",
+     "question": "在棱长为 2 的正方体 ABCD-A1B1C1D1 中，以 D 为原点，射线 DA、DC、DD1 为 x、y、z 轴正方向建立空间直角坐标系，请用坐标证明 AC1 垂直于平面 A1BD",
+     "answer": "AC1 的坐标是负 2、2、2，A1B 的坐标是 0、2、负 2，A1D 的坐标是负 2、0、负 2，两个数量积都等于 0，故 AC1 垂直于平面 A1BD",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "由点的坐标得 A1 的坐标 2、0、2，B 的坐标 2、2、0，C1 的坐标 0、2、2，于是 AC1 的坐标为负 2、2、2；平面 A1BD 内两条相交直线的方向向量 A1B 与 A1D 分别为 0、2、负 2 与负 2、0、负 2，两个数量积都等于 0，所以 AC1 垂直于平面内两条相交直线，从而垂直于这个平面。"
+    }
+   ]
+  }
+ ]
+}

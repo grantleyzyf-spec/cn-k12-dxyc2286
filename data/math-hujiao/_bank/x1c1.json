@@ -1,0 +1,817 @@
+{
+ "tag": "x1c1",
+ "book": "沪教版选择性必修第一册",
+ "unit_points": [
+  {
+   "id": "mhj_h014",
+   "description": "把直线放进平面直角坐标系，用倾斜角与斜率刻画方向，用直线方程的多种形式实现形与数的互化，再用两条直线的位置关系与点到直线的距离解决几何度量问题。",
+   "mastery_criteria": [
+    "能用两点坐标求直线斜率，并在斜率、倾斜角与直线方程之间相互转化",
+    "能根据条件选择点斜式、斜截式、两点式、一般式或点法式写出直线方程",
+    "能判定两条直线平行、重合、垂直并求夹角，能求点到直线的距离与平行线间的距离"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h014_q1",
+     "topicId": "mhj_h014",
+     "prompt": "在平面直角坐标系中，直线 l 的倾斜角记为 θ，则 θ 的取值范围是",
+     "question": "在平面直角坐标系中，直线 l 的倾斜角记为 θ，则 θ 的取值范围是",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材规定倾斜角是 x 轴正方向与直线向上方向所成的角，直线与 x 轴平行或重合时倾斜角为 0，所以 θ 大于等于 0 且小于 π。",
+     "options": [
+      {
+       "label": "A",
+       "text": "大于 0 且小于 π"
+      },
+      {
+       "label": "B",
+       "text": "大于等于 0 且小于 π"
+      },
+      {
+       "label": "C",
+       "text": "大于等于 0 且小于等于 π"
+      },
+      {
+       "label": "D",
+       "text": "大于 0 且小于等于 π"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h014_q2",
+     "topicId": "mhj_h014",
+     "prompt": "直线 l 的一般式方程是 ax + by + c = 0，其中 a、b 不同时为零，则 l 的一个法向量是",
+     "question": "直线 l 的一般式方程是 ax + by + c = 0，其中 a、b 不同时为零，则 l 的一个法向量是",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材证明了以一般式方程一次项系数为坐标的向量与直线上的任意向量都垂直，因此向量（a，b）就是该直线的一个法向量。",
+     "options": [
+      {
+       "label": "A",
+       "text": "（a，b）"
+      },
+      {
+       "label": "B",
+       "text": "（-a，b）"
+      },
+      {
+       "label": "C",
+       "text": "（b，a）"
+      },
+      {
+       "label": "D",
+       "text": "（b，-a）"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h014_q3",
+     "topicId": "mhj_h014",
+     "prompt": "已知两条直线都不与 x 轴垂直，则这两条直线平行的充要条件是",
+     "question": "已知两条直线都不与 x 轴垂直，则这两条直线平行的充要条件是",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "斜率都存在时，两直线平行要求斜率相等且在 y 轴上的截距不相等；斜率之积等于 -1 与法向量垂直都对应两直线垂直，有唯一公共点则对应相交。",
+     "options": [
+      {
+       "label": "A",
+       "text": "两条直线的斜率之积等于 -1"
+      },
+      {
+       "label": "B",
+       "text": "两条直线的法向量互相垂直"
+      },
+      {
+       "label": "C",
+       "text": "两条直线的斜率相等且在 y 轴上的截距不相等"
+      },
+      {
+       "label": "D",
+       "text": "两条直线有且只有一个公共点"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h014_q4",
+     "topicId": "mhj_h014",
+     "prompt": "已知点 A（1，2）与点 B（3，6），求经过这两点的直线 AB 的斜率。",
+     "question": "已知点 A（1，2）与点 B（3，6），求经过这两点的直线 AB 的斜率。",
+     "answer": "2",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由斜率公式，斜率等于纵坐标之差除以横坐标之差，即（6-2）除以（3-1），等于 6 除以 2，得斜率为 2。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 1}]}]}"
+    },
+    {
+     "id": "mhj_h014_q5",
+     "topicId": "mhj_h014",
+     "prompt": "求两条平行直线 y = 2x + 1 与 y = 2x - 3 之间的距离。",
+     "question": "求两条平行直线 y = 2x + 1 与 y = 2x - 3 之间的距离。",
+     "answer": "4√5/5",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "先把两条直线化为一般式 2x - y + 1 = 0 与 2x - y - 3 = 0，再用平行线间的距离公式，分子是常数项 1 与 -3 之差的绝对值 4，分母是根号 5，得 4√5/5。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "mhj_h1049",
+   "page": 10,
+   "description": "理解直线倾斜角的含义与取值范围，会由两点坐标用斜率公式求斜率，并能借助正切值在斜率与倾斜角之间转化，判断直线的倾斜程度。",
+   "mastery_criteria": [
+    "能说出倾斜角的取值范围，并由图形或坐标判断倾斜角是锐角、直角还是钝角",
+    "能用两点坐标求斜率，并用斜率的正负判断直线的倾斜方向"
+   ],
+   "misconceptions": [
+    "认为倾斜角可以取到 π，把与 x 轴负方向重合的方向也算成倾斜角",
+    "求斜率时把两点坐标相减的顺序弄反，横纵坐标没有对应相减",
+    "认为斜率越大直线越陡，忽略斜率为负数时的情况",
+    "忽略横坐标相等的两点所在直线斜率不存在，直接代入公式得到分母为零"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1049_q1",
+     "topicId": "mhj_h1049",
+     "prompt": "已知直线 l 经过点 P（-2，2）与点 Q（2，-2），则 l 的倾斜角是",
+     "question": "已知直线 l 经过点 P（-2，2）与点 Q（2，-2），则 l 的倾斜角是",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "先求斜率，等于（-2-2）除以（2+2），即 -1；倾斜角是钝角，满足正切值等于 -1 的倾斜角为 3π/4。",
+     "options": [
+      {
+       "label": "A",
+       "text": "π/4"
+      },
+      {
+       "label": "B",
+       "text": "π/2"
+      },
+      {
+       "label": "C",
+       "text": "3π/4"
+      },
+      {
+       "label": "D",
+       "text": "2π/3"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1049_q2",
+     "topicId": "mhj_h1049",
+     "prompt": "直线 l 经过点 P（1，2）与点 Q（2，-1），求 l 的斜率 k。",
+     "question": "直线 l 经过点 P（1，2）与点 Q（2，-1），求 l 的斜率 k。",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由斜率公式，k 等于（-1-2）除以（2-1），即 -3；斜率为负说明直线的倾斜角是钝角。",
+     "options": [
+      {
+       "label": "A",
+       "text": "-3"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "-1/3"
+      },
+      {
+       "label": "D",
+       "text": "1/3"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1049_q3",
+     "topicId": "mhj_h1049",
+     "prompt": "已知直线 l 经过点 A（1，3）与点 B（4，9），求 l 的斜率。",
+     "question": "已知直线 l 经过点 A（1，3）与点 B（4，9），求 l 的斜率。",
+     "answer": "2",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "由斜率公式，k 等于（9-3）除以（4-1），即 6 除以 3，得 k 等于 2，直线的倾斜角为锐角。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 9}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 1}]}]}"
+    },
+    {
+     "id": "mhj_h1049_q4",
+     "topicId": "mhj_h1049",
+     "prompt": "已知直线 l 的倾斜角为 π/6，求 l 的斜率。",
+     "question": "已知直线 l 的倾斜角为 π/6，求 l 的斜率。",
+     "answer": "√3/3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "斜率等于倾斜角的正切值，π/6 的正切值为 1 除以根号 3，分母有理化后得 √3/3。"
+    },
+    {
+     "id": "mhj_h1049_q5",
+     "topicId": "mhj_h1049",
+     "prompt": "已知三点 A（-1，2）、B（3，4）、C（x，y）在同一条直线上，则 x 与 y 所满足的关系式是",
+     "question": "已知三点 A（-1，2）、B（3，4）、C（x，y）在同一条直线上，则 x 与 y 所满足的关系式是",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "直线 AB 的斜率等于（4-2）除以（3+1），即 1/2；点 C 在直线 AB 上时用点 A 写点斜式，得 y - 2 = 1/2（x + 1）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y - 2 = 2（x + 1）"
+      },
+      {
+       "label": "B",
+       "text": "y - 2 = -1/2（x + 1）"
+      },
+      {
+       "label": "C",
+       "text": "y + 2 = 1/2（x - 1）"
+      },
+      {
+       "label": "D",
+       "text": "y - 2 = 1/2（x + 1）"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1049_q6",
+     "topicId": "mhj_h1049",
+     "prompt": "设直线 l1 与 l2 的倾斜角分别为 θ1 与 θ2，则 l1 与 l2 垂直的充要条件是",
+     "question": "设直线 l1 与 l2 的倾斜角分别为 θ1 与 θ2，则 l1 与 l2 垂直的充要条件是",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两条直线垂直时倾斜角相差 π/2；反过来，倾斜角之差为 π/2 的两条直线方向互相垂直，所以这个条件是充要条件。",
+     "options": [
+      {
+       "label": "A",
+       "text": "θ1 与 θ2 之差的绝对值等于 π/4"
+      },
+      {
+       "label": "B",
+       "text": "θ1 与 θ2 之差的绝对值等于 π/2"
+      },
+      {
+       "label": "C",
+       "text": "θ1 等于 θ2"
+      },
+      {
+       "label": "D",
+       "text": "θ1 与 θ2 之和等于 π"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1049_q7",
+     "topicId": "mhj_h1049",
+     "prompt": "已知三点 A（2，3）、B（4，7）、C（6，m）在同一条直线上，求实数 m 的值。",
+     "question": "已知三点 A（2，3）、B（4，7）、C（6，m）在同一条直线上，求实数 m 的值。",
+     "answer": "11",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "直线 AB 的斜率等于（7-3）除以（4-2），即 2；三点共线要求 AC 的斜率也是 2，即（m-3）除以（6-2）等于 2，解得 m 等于 11。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 4}]}]}"
+    },
+    {
+     "id": "mhj_h1049_q8",
+     "topicId": "mhj_h1049",
+     "prompt": "已知点 A（2，4）、B（-1，-1）、C（4，1），过点 B 的直线 l 与线段 AC 相交，求直线 l 的斜率 k 的取值范围。",
+     "question": "已知点 A（2，4）、B（-1，-1）、C（4，1），过点 B 的直线 l 与线段 AC 相交，求直线 l 的斜率 k 的取值范围。",
+     "answer": "2/5 ≤ k ≤ 5/3",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "直线 l 绕点 B 由 BA 转到 BC 时斜率连续变化；BA 的斜率等于（4+1）除以（2+1）即 5/3，BC 的斜率等于（1+1）除以（4+1）即 2/5，故 k 从 2/5 变化到 5/3，取值范围是 2/5 ≤ k ≤ 5/3。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1050",
+   "page": 14,
+   "description": "掌握点斜式、斜截式、两点式、一般式与点法式等直线方程形式，理解截距的含义，能按已知条件选择合适形式写出方程并实现互化。",
+   "mastery_criteria": [
+    "能由一点与斜率写出点斜式方程，并化为斜截式或一般式",
+    "能由两点、截距或法向量写出直线方程，并由一般式读出斜率与截距",
+    "能处理含参数的直线方程，求定点或参数的取值范围"
+   ],
+   "misconceptions": [
+    "写点斜式时把 y - y0 写成 y + y0，横坐标也漏变号",
+    "把截距理解成距离，认为截距一定是正数",
+    "认为与 y 轴平行的直线也有斜率和在 y 轴上的截距",
+    "求含参直线恒过的定点时只代特殊值验证一点，没有说明对任意参数都成立"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mhj_h1050_q1",
+     "topicId": "mhj_h1050",
+     "prompt": "求经过点 P（-2，3）且斜率为 -1 的直线 l 的点斜式方程。",
+     "question": "求经过点 P（-2，3）且斜率为 -1 的直线 l 的点斜式方程。",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "点斜式方程为 y - y0 = k（x - x0），把点 P 的坐标与斜率 -1 代入，得 y - 3 = -（x + 2）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y + 3 = -（x - 2）"
+      },
+      {
+       "label": "B",
+       "text": "y - 3 = -（x + 2）"
+      },
+      {
+       "label": "C",
+       "text": "y - 3 = x + 2"
+      },
+      {
+       "label": "D",
+       "text": "y + 3 = x - 2"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1050_q2",
+     "topicId": "mhj_h1050",
+     "prompt": "已知直线 l 的倾斜角为 2π/3，且在 x 轴上的截距为 -3，求 l 的点斜式方程。",
+     "question": "已知直线 l 的倾斜角为 2π/3，且在 x 轴上的截距为 -3，求 l 的点斜式方程。",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "倾斜角 2π/3 的正切值为 -√3，直线在 x 轴上的截距为 -3，说明它经过点（-3，0），故方程为 y = -√3（x + 3）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = √3（x + 3）"
+      },
+      {
+       "label": "B",
+       "text": "y = -√3（x - 3）"
+      },
+      {
+       "label": "C",
+       "text": "y = -√3（x + 3）"
+      },
+      {
+       "label": "D",
+       "text": "y = √3（x - 3）"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1050_q3",
+     "topicId": "mhj_h1050",
+     "prompt": "已知直线 l 在 x 轴上的截距为 -2，在 y 轴上的截距为 4，求 l 的斜率。",
+     "question": "已知直线 l 在 x 轴上的截距为 -2，在 y 轴上的截距为 4，求 l 的斜率。",
+     "answer": "2",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "直线经过点（-2，0）与（0，4），由斜率公式得 k 等于（4-0）除以（0+2），即 2。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 0}]}, {\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 0}, {\"type\": \"num\", \"value\": -2}]}]}"
+    },
+    {
+     "id": "mhj_h1050_q4",
+     "topicId": "mhj_h1050",
+     "prompt": "写出直线 2x - 3y + 1 = 0 的一个法向量，用坐标形式表示。",
+     "question": "写出直线 2x - 3y + 1 = 0 的一个法向量，用坐标形式表示。",
+     "answer": "（2，-3）",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "一般式方程的一次项系数分别是 2 与 -3，以这两个系数为坐标的向量就是该直线的一个法向量。"
+    },
+    {
+     "id": "mhj_h1050_q5",
+     "topicId": "mhj_h1050",
+     "prompt": "无论实数 a 取何值，直线 ax + y + a + 1 = 0 都经过一个定点，该定点的坐标是",
+     "question": "无论实数 a 取何值，直线 ax + y + a + 1 = 0 都经过一个定点，该定点的坐标是",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把方程按参数 a 整理，得 y + 1 = -a（x + 1），这是点斜式方程，定点为（-1，-1），与 a 的取值无关。",
+     "options": [
+      {
+       "label": "A",
+       "text": "（1，1）"
+      },
+      {
+       "label": "B",
+       "text": "（-1，1）"
+      },
+      {
+       "label": "C",
+       "text": "（1，-1）"
+      },
+      {
+       "label": "D",
+       "text": "（-1，-1）"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1050_q6",
+     "topicId": "mhj_h1050",
+     "prompt": "已知直线 l 与 x 轴、y 轴分别交于 A、B 两个不同的点，且 OA 与 OB 的长度相等，其中 O 为坐标原点，又点 C（1，-2）在 l 上，则 l 的方程可能是",
+     "question": "已知直线 l 与 x 轴、y 轴分别交于 A、B 两个不同的点，且 OA 与 OB 的长度相等，其中 O 为坐标原点，又点 C（1，-2）在 l 上，则 l 的方程可能是",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由截距的绝对值相等可得斜率为 1 或 -1 两类；把点 C 的坐标代入，得 y = -x - 1 与 y = x - 3 两条，选项中只有 y = x - 3 符合。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = x - 3"
+      },
+      {
+       "label": "B",
+       "text": "y = -x - 3"
+      },
+      {
+       "label": "C",
+       "text": "y = x + 3"
+      },
+      {
+       "label": "D",
+       "text": "y = -x + 1"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1050_q7",
+     "topicId": "mhj_h1050",
+     "prompt": "一个弹簧在弹性限度内挂 4 kg 物体时长度为 20 cm，挂 5 kg 物体时长度为 21.5 cm，且所挂物体质量 x 与弹簧长度 y 的关系可用直线的方程表示，求弹簧自身的长度。",
+     "question": "一个弹簧在弹性限度内挂 4 kg 物体时长度为 20 cm，挂 5 kg 物体时长度为 21.5 cm，且所挂物体质量 x 与弹簧长度 y 的关系可用直线的方程表示，求弹簧自身的长度。",
+     "answer": "14",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "斜率等于（21.5-20）除以（5-4），即 1.5，表示每增加 1 kg 弹簧伸长 1.5 cm；由 20 减去 4 乘 1.5 得挂 0 kg 时的长度，即弹簧自身的长度 14 cm。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 20}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 1.5}, {\"type\": \"num\", \"value\": 4}]}]}"
+    },
+    {
+     "id": "mhj_h1050_q8",
+     "topicId": "mhj_h1050",
+     "prompt": "已知直线 l 的方程为（m + 1）x + my + 2 - m = 0，且 l 经过平面直角坐标系的第一、第二与第四象限，求实数 m 的取值范围。",
+     "question": "已知直线 l 的方程为（m + 1）x + my + 2 - m = 0，且 l 经过平面直角坐标系的第一、第二与第四象限，求实数 m 的取值范围。",
+     "answer": "m < -1 或 m > 2",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "m 等于 0 时方程表示竖直线，只经过两个象限，不合题意；一般情形下斜率为 -（m+1）/m，在 y 轴上的截距为（m-2）/m。经过第一、二、四象限要求斜率小于 0 且截距大于 0，即（m+1）/m 大于 0 且（m-2）/m 大于 0，解得 m < -1 或 m > 2。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1051",
+   "page": 24,
+   "description": "会用方程组解的个数与系数关系判定两条直线相交、平行与重合，掌握垂直的充要条件与夹角余弦公式，并能由位置关系求参数与直线方程。",
+   "mastery_criteria": [
+    "能用系数比或斜率判定两条直线的位置关系，并在相交时求出交点坐标",
+    "能用 a1a2 + b1b2 = 0 判定垂直，并用夹角余弦公式求两直线的夹角",
+    "能根据平行、垂直或夹角条件求参数值与直线方程"
+   ],
+   "misconceptions": [
+    "判定平行时只比较一次项系数之比，不检查常数项之比而导致平行与重合混淆",
+    "认为两直线垂直一定满足斜率之积为 -1，忽略一条直线斜率不存在的情形",
+    "求夹角时忘了取绝对值，得出钝角或负的余弦值",
+    "解含参位置关系问题时把增根直接保留，没有回代检验是否真的平行或重合"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mhj_h1051_q1",
+     "topicId": "mhj_h1051",
+     "prompt": "判断直线 l1: 0.5x - y + 1 = 0 与直线 l2: 3x - 6y + 8 = 0 的位置关系。",
+     "question": "判断直线 l1: 0.5x - y + 1 = 0 与直线 l2: 3x - 6y + 8 = 0 的位置关系。",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两直线一次项系数之比满足 0.5 比 3 等于 -1 比 -6，但常数项之比 1 比 8 与它不相等，故两直线平行，没有公共点。",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行"
+      },
+      {
+       "label": "B",
+       "text": "相交"
+      },
+      {
+       "label": "C",
+       "text": "重合"
+      },
+      {
+       "label": "D",
+       "text": "无法判断"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1051_q2",
+     "topicId": "mhj_h1051",
+     "prompt": "求直线 y = 2x + 3 与直线 y = -2x + 1 的交点坐标。",
+     "question": "求直线 y = 2x + 3 与直线 y = -2x + 1 的交点坐标。",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "联立两方程得 2x + 3 = -2x + 1，即 4x = -2，解得 x = -1/2；代回得 y = 2，交点坐标为（-1/2，2）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "（1/2，2）"
+      },
+      {
+       "label": "B",
+       "text": "（-1/2，2）"
+      },
+      {
+       "label": "C",
+       "text": "（-1/2，-2）"
+      },
+      {
+       "label": "D",
+       "text": "（1/2，4）"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1051_q3",
+     "topicId": "mhj_h1051",
+     "prompt": "已知直线 l1: y = kx + 1 与直线 l2: y = 3x - 2 平行，求实数 k 的值。",
+     "question": "已知直线 l1: y = kx + 1 与直线 l2: y = 3x - 2 平行，求实数 k 的值。",
+     "answer": "3",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "两条直线的斜率都存在，平行的充要条件是斜率相等，故 k 等于 3；此时两直线在 y 轴上的截距分别是 1 与 -2，不相等，确实是平行而不是重合。",
+     "verify": "{\"type\": \"num\", \"value\": 3}"
+    },
+    {
+     "id": "mhj_h1051_q4",
+     "topicId": "mhj_h1051",
+     "prompt": "求经过直线 x - y - 4 = 0 与 2x - 3y - 7 = 0 的交点，且与直线 2x + y + 1 = 0 平行的直线方程。",
+     "question": "求经过直线 x - y - 4 = 0 与 2x - 3y - 7 = 0 的交点，且与直线 2x + y + 1 = 0 平行的直线方程。",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "联立两方程解得交点（5，1）；与 2x + y + 1 = 0 平行可设所求方程为 2x + y + c = 0，代入交点得 10 + 1 + c = 0，即 c = -11，故方程为 2x + y - 11 = 0。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x + y + 11 = 0"
+      },
+      {
+       "label": "B",
+       "text": "x - 2y - 3 = 0"
+      },
+      {
+       "label": "C",
+       "text": "2x + y - 11 = 0"
+      },
+      {
+       "label": "D",
+       "text": "2x - y - 9 = 0"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1051_q5",
+     "topicId": "mhj_h1051",
+     "prompt": "已知直线 l1: （a - 2）x + ay - 2 = 0 与直线 l2: （1 - a）x + （a + 1）y + 1 = 0 互相垂直，求实数 a 的值。",
+     "question": "已知直线 l1: （a - 2）x + ay - 2 = 0 与直线 l2: （1 - a）x + （a + 1）y + 1 = 0 互相垂直，求实数 a 的值。",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两直线垂直的充要条件是法向量数量积为零，即（a-2）（1-a）加上 a（a+1）等于零，展开化简得 4a - 2 = 0，故 a 等于 1/2。",
+     "options": [
+      {
+       "label": "A",
+       "text": "-1/2"
+      },
+      {
+       "label": "B",
+       "text": "-2"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "1/2"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1051_q6",
+     "topicId": "mhj_h1051",
+     "prompt": "已知直线 l1: 6x + （t - 1）y - 8 = 0 与直线 l2: （t + 4）x + （t + 6）y - 16 = 0 平行但不重合，求实数 t 的值。",
+     "question": "已知直线 l1: 6x + （t - 1）y - 8 = 0 与直线 l2: （t + 4）x + （t + 6）y - 16 = 0 平行但不重合，求实数 t 的值。",
+     "answer": "-5",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "由平行的系数关系得 6（t+6）等于（t-1）（t+4），整理得 t 的平方减 3t 减 40 等于零，解得 t 等于 8 或 -5；t 等于 8 时两方程对应系数成比例，两直线重合，故 t 等于 -5。",
+     "verify": "{\"type\": \"num\", \"value\": -5}"
+    },
+    {
+     "id": "mhj_h1051_q7",
+     "topicId": "mhj_h1051",
+     "prompt": "求直线 l1: x + 3y - 1 = 0 与直线 l2: y = 2x + 7 的夹角的余弦值。",
+     "question": "求直线 l1: x + 3y - 1 = 0 与直线 l2: y = 2x + 7 的夹角的余弦值。",
+     "answer": "√2/10",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "把 l2 化为一般式 2x - y + 7 = 0，两直线夹角的余弦等于法向量数量积的绝对值除以两个法向量模的乘积，即 1 除以根号 10 与根号 5 的积，化简得 √2/10。"
+    },
+    {
+     "id": "mhj_h1051_q8",
+     "topicId": "mhj_h1051",
+     "prompt": "已知直线 l1: （k - 3）x + （5 - k）y + 1 = 0 与直线 l2: 2（k - 3）x - 2y + （2 - k） = 0 互相垂直，求实数 k 的值。",
+     "question": "已知直线 l1: （k - 3）x + （5 - k）y + 1 = 0 与直线 l2: 2（k - 3）x - 2y + （2 - k） = 0 互相垂直，求实数 k 的值。",
+     "answer": "k = 1 或 k = 4",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "两直线的法向量分别是（k-3，5-k）与（2（k-3），-2），由数量积为零得 2（k-3）的平方减去 2（5-k）等于零，化简为 k 的平方减 5k 加 4 等于零，解得 k 等于 1 或 k 等于 4。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1052",
+   "page": 32,
+   "description": "掌握点到直线的距离公式与两条平行线间的距离公式，理解公式由法向量投影推导的思路，能解决与距离有关的度量与最值问题。",
+   "mastery_criteria": [
+    "能直接用点到直线的距离公式求点线距离，包括直线为水平线或竖直线的情形",
+    "能把平行线化为同系数的一般式，用常数项之差求两平行线间的距离",
+    "能用距离公式处理含参数问题与最短距离问题"
+   ],
+   "misconceptions": [
+    "代入距离公式时没有先把直线方程化为一般式，或漏掉分子的绝对值",
+    "求两平行线距离时直接把常数项相减，没有先把 x、y 的系数化成相同",
+    "认为点线距离可以为负数，或用带符号的值参与比较大小",
+    "把点到直线上点的最短距离误当成两点间距离，没有转化为点到直线的距离"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mhj_h1052_q1",
+     "topicId": "mhj_h1052",
+     "prompt": "求点 P（1，2）到直线 l: x + 2y + 5 = 0 的距离。",
+     "question": "求点 P（1，2）到直线 l: x + 2y + 5 = 0 的距离。",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由点到直线的距离公式，分子是 1 加 4 加 5 的绝对值 10，分母是 1 与 4 之和的算术平方根即根号 5，故距离为 2√5。",
+     "options": [
+      {
+       "label": "A",
+       "text": "√5"
+      },
+      {
+       "label": "B",
+       "text": "2√5"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "10"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1052_q2",
+     "topicId": "mhj_h1052",
+     "prompt": "求点 M（-2，-1）到直线 l: x = 3 的距离。",
+     "question": "求点 M（-2，-1）到直线 l: x = 3 的距离。",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "直线 x 等于 3 与 y 轴平行，点到这条直线的距离等于两点横坐标之差的绝对值，即 3 减去 -2 得 5。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1052_q3",
+     "topicId": "mhj_h1052",
+     "prompt": "求点 M（-2，-1）到直线 l: y = 3 的距离。",
+     "question": "求点 M（-2，-1）到直线 l: y = 3 的距离。",
+     "answer": "4",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "直线 y 等于 3 与 x 轴平行，点到这条直线的距离等于纵坐标之差的绝对值，即 3 减去 -1 得 4。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": -1}]}"
+    },
+    {
+     "id": "mhj_h1052_q4",
+     "topicId": "mhj_h1052",
+     "prompt": "求平行直线 l1: √2x + y + 1 = 0 与 l2: √2x + y + 4 = 0 之间的距离。",
+     "question": "求平行直线 l1: √2x + y + 1 = 0 与 l2: √2x + y + 4 = 0 之间的距离。",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两平行线间的距离等于常数项之差的绝对值除以根号下 a 方加 b 方，即 3 除以根号 3，得 √3。",
+     "options": [
+      {
+       "label": "A",
+       "text": "√3"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "√2"
+      },
+      {
+       "label": "D",
+       "text": "3/2"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1052_q5",
+     "topicId": "mhj_h1052",
+     "prompt": "已知直线 2x - y + a = 0 与直线 -4x + 2y + 1 = 0 之间的距离为 7√5/10，求实数 a 的值。",
+     "question": "已知直线 2x - y + a = 0 与直线 -4x + 2y + 1 = 0 之间的距离为 7√5/10，求实数 a 的值。",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把第二条直线化为 2x - y - 1/2 = 0，两直线系数相同；由距离公式得 a 加 1/2 的绝对值除以根号 5 等于 7√5/10，即 a 加 1/2 的绝对值为 7/2，解得 a 等于 3 或 -4。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "-4"
+      },
+      {
+       "label": "C",
+       "text": "3 或 4"
+      },
+      {
+       "label": "D",
+       "text": "3 或 -4"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1052_q6",
+     "topicId": "mhj_h1052",
+     "prompt": "在直角三角形 ABC 中，角 A 等于 π/2，AB 的长为 6，AC 的长为 8，求三角形的重心 G 到斜边 BC 所在直线的距离。",
+     "question": "在直角三角形 ABC 中，角 A 等于 π/2，AB 的长为 6，AC 的长为 8，求三角形的重心 G 到斜边 BC 所在直线的距离。",
+     "answer": "1.6",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "以 A 为原点、两条直角边所在直线为坐标轴建系，得 B（6，0）、C（0，8），重心 G 的坐标为（2，8/3）；斜边 BC 的方程是 4x + 3y - 24 = 0，代入距离公式得 8/5，即 1.6。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "mhj_h1052_q7",
+     "topicId": "mhj_h1052",
+     "prompt": "求两条平行线 2x - 3y + 1 = 0 与 4x - 6y + 1 = 0 之间的距离。",
+     "question": "求两条平行线 2x - 3y + 1 = 0 与 4x - 6y + 1 = 0 之间的距离。",
+     "answer": "√13/26",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "先把第二条直线化为 2x - 3y + 1/2 = 0，使两条直线的 x、y 系数相同；距离等于 1 减 1/2 的绝对值除以根号 13，即 1 除以 2 倍根号 13，化简得 √13/26。"
+    },
+    {
+     "id": "mhj_h1052_q8",
+     "topicId": "mhj_h1052",
+     "prompt": "已知点 P 是直线 3x - 4y + 2 = 0 上的任意一点，求点 P 与点 A（3，-1）之间距离的最小值。",
+     "question": "已知点 P 是直线 3x - 4y + 2 = 0 上的任意一点，求点 P 与点 A（3，-1）之间距离的最小值。",
+     "answer": "3",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "点 A 与直线上点的距离的最小值就是点 A 到该直线的距离；分子为 3 乘 3 减 4 乘 -1 再加 2 的绝对值，即 15，分母为根号下 9 加 16 即 5，故最小值为 3。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 15}, {\"type\": \"num\", \"value\": 5}]}"
+    }
+   ]
+  }
+ ]
+}

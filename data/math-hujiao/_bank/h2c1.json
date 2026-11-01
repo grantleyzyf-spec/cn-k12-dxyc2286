@@ -1,0 +1,627 @@
+{
+ "tag": "h2c1",
+ "book": "沪教版必修第二册",
+ "unit_points": [
+  {
+   "id": "mhj_h006",
+   "description": "把角的概念推广到任意角并引入弧度制，用终边上点的坐标定义正弦、余弦、正切与余切，借助诱导公式与和差倍半公式进行三角恒等变换，再用正弦定理与余弦定理解斜三角形。",
+   "mastery_criteria": [
+    "能判断任意角所在的象限，并进行角度与弧度的互化",
+    "能用诱导公式与和差倍半公式求值、化简并证明三角恒等式",
+    "能用正弦定理、余弦定理与面积公式求解斜三角形"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h006_q1",
+     "topicId": "mhj_h006",
+     "prompt": "下列各角中，与 -240° 的终边重合的角是",
+     "question": "下列各角中，与 -240° 的终边重合的角是",
+     "options": [
+      {
+       "label": "A",
+       "text": "60°"
+      },
+      {
+       "label": "B",
+       "text": "120°"
+      },
+      {
+       "label": "C",
+       "text": "240°"
+      },
+      {
+       "label": "D",
+       "text": "-120°"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "与 -240° 终边重合的角都可以表示为 k·360°-240°（k 为整数），取 k 等于 1 就得到 120°；而 60°、240°、-120° 这三个角与 -240° 的差都不是 360° 的整数倍，终边不与它重合。"
+    },
+    {
+     "id": "mhj_h006_q2",
+     "topicId": "mhj_h006",
+     "prompt": "若角 α 满足 sin α 小于 0 且 tan α 大于 0，则角 α 的终边位于",
+     "question": "若角 α 满足 sin α 小于 0 且 tan α 大于 0，则角 α 的终边位于",
+     "options": [
+      {
+       "label": "A",
+       "text": "第一象限"
+      },
+      {
+       "label": "B",
+       "text": "第二象限"
+      },
+      {
+       "label": "C",
+       "text": "第四象限"
+      },
+      {
+       "label": "D",
+       "text": "第三象限"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "sin α 小于 0 说明终边在第三象限、第四象限或 y 轴负半轴上；tan α 大于 0 说明正弦与余弦同号，终边在第一象限或第三象限。两个条件同时满足时，角 α 只能是第三象限的角。"
+    },
+    {
+     "id": "mhj_h006_q3",
+     "topicId": "mhj_h006",
+     "prompt": "计算 cos 60° 与 sin 30° 的和，所得结果是",
+     "question": "计算 cos 60° 与 sin 30° 的和，所得结果是",
+     "answer": 1,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 1}",
+     "explanation": "由特殊角的三角函数值可知，cos 60° 等于 1/2，sin 30° 也等于 1/2，两个值相加得 1/2 + 1/2 = 1。"
+    },
+    {
+     "id": "mhj_h006_q4",
+     "topicId": "mhj_h006",
+     "prompt": "把 sin α - cos α 化为 A sin(α + φ) 的形式，其中 A 大于 0，所得结果是",
+     "question": "把 sin α - cos α 化为 A sin(α + φ) 的形式，其中 A 大于 0，所得结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "√2 sin(α - π/4)"
+      },
+      {
+       "label": "B",
+       "text": "√2 sin(α + π/4)"
+      },
+      {
+       "label": "C",
+       "text": "2 sin(α - π/4)"
+      },
+      {
+       "label": "D",
+       "text": "√2 cos(α - π/4)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先提取公因数 √2，得 √2(√2/2 sin α - √2/2 cos α)；注意 √2/2 既是 cos π/4 也是 sin π/4，逆用两角差的正弦公式，结果化为 √2 sin(α - π/4)，振幅 A 为 √2。"
+    },
+    {
+     "id": "mhj_h006_q5",
+     "topicId": "mhj_h006",
+     "prompt": "在△ABC 中，已知边长 a = 2，A = 30°，B = 45°，则边长 b 等于",
+     "question": "在△ABC 中，已知边长 a = 2，A = 30°，B = 45°，则边长 b 等于",
+     "answer": "2√2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "根据正弦定理，三角形各边与它所对角的正弦之比相等，即 a/sin A = b/sin B，于是 b = a sin B 除以 sin A = 2×(√2/2)÷(1/2) = 2√2。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "mhj_h1015",
+   "page": 10,
+   "description": "把角推广为任意角并区分正角、负角与零角，掌握角度制与弧度制的互化及扇形弧长面积公式，用终边上点的坐标定义四种三角函数，再借助同角关系与诱导公式求值和化简。",
+   "mastery_criteria": [
+    "能判断任意角所在象限并写出与它终边重合的角的集合",
+    "能进行角度与弧度的互化，并用弧度制计算扇形弧长与面积",
+    "能用终边上点的坐标求四种三角函数值，并用诱导公式化简"
+   ],
+   "misconceptions": [
+    "认为终边重合的两个角一定相等，忽略它们相差 360° 的整数倍",
+    "把锐角与第一象限的角当成同一类角，忘记负角与超过 360° 的角",
+    "在弧度制与角度制之间换算时把角的弧度数与度数直接相加",
+    "求正切与余切时忽略分母不为零的条件，对终边在坐标轴上的角也照套公式"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1015_q1",
+     "topicId": "mhj_h1015",
+     "prompt": "角 -240° 的终边落在哪个象限",
+     "question": "角 -240° 的终边落在哪个象限",
+     "options": [
+      {
+       "label": "A",
+       "text": "第一象限"
+      },
+      {
+       "label": "B",
+       "text": "第二象限"
+      },
+      {
+       "label": "C",
+       "text": "第三象限"
+      },
+      {
+       "label": "D",
+       "text": "第四象限"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "因为 -240° 等于 -360° 加 120°，它与 120° 的终边重合，而 120° 的终边落在第二象限，所以 -240° 是第二象限的角。"
+    },
+    {
+     "id": "mhj_h1015_q2",
+     "topicId": "mhj_h1015",
+     "prompt": "将 75° 换算成弧度，结果是",
+     "question": "将 75° 换算成弧度，结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "π/5"
+      },
+      {
+       "label": "B",
+       "text": "3π/8"
+      },
+      {
+       "label": "C",
+       "text": "5π/12"
+      },
+      {
+       "label": "D",
+       "text": "7π/12"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "角度化弧度时用一度等于 π/180 弧度这个换算关系，于是 75° 等于 75 乘 π/180，约分后得到 5π/12 弧度。"
+    },
+    {
+     "id": "mhj_h1015_q3",
+     "topicId": "mhj_h1015",
+     "prompt": "一个扇形的半径为 3，圆心角为 2 弧度，则这个扇形的面积是",
+     "question": "一个扇形的半径为 3，圆心角为 2 弧度，则这个扇形的面积是",
+     "answer": 9,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}]}, {\"type\": \"num\", \"value\": 2}]}",
+     "explanation": "弧度制下扇形的面积公式是二分之一的圆心角乘以半径的平方，代入圆心角 2、半径 3，得 1/2×2×9 = 9。"
+    },
+    {
+     "id": "mhj_h1015_q4",
+     "topicId": "mhj_h1015",
+     "prompt": "已知角 α 的终边经过点 (-2, 0)，则下列三角函数值中不存在的是",
+     "question": "已知角 α 的终边经过点 (-2, 0)，则下列三角函数值中不存在的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "cot α"
+      },
+      {
+       "label": "B",
+       "text": "sin α"
+      },
+      {
+       "label": "C",
+       "text": "cos α"
+      },
+      {
+       "label": "D",
+       "text": "tan α"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "点 (-2, 0) 的纵坐标为 0，而余切等于横坐标除以纵坐标，要求纵坐标不为 0，所以 cot α 不存在；此时 sin α 等于 0，cos α 等于 -1，tan α 等于 0，都存在。"
+    },
+    {
+     "id": "mhj_h1015_q5",
+     "topicId": "mhj_h1015",
+     "prompt": "已知 sin α = 3/5，且 α 是第二象限的角，则 tan α 等于",
+     "question": "已知 sin α = 3/5，且 α 是第二象限的角，则 tan α 等于",
+     "answer": -0.75,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": -3}, {\"type\": \"num\", \"value\": 4}]}",
+     "explanation": "由平方关系得 cos α 的绝对值为 4/5，因为 α 在第二象限，余弦取负值即 -4/5，所以 tan α 等于正弦除以余弦，结果为 -3/4。"
+    },
+    {
+     "id": "mhj_h1015_q6",
+     "topicId": "mhj_h1015",
+     "prompt": "已知 α 是第二象限的角，则 α/2 是",
+     "question": "已知 α 是第二象限的角，则 α/2 是",
+     "options": [
+      {
+       "label": "A",
+       "text": "第一象限的角"
+      },
+      {
+       "label": "B",
+       "text": "第二象限的角"
+      },
+      {
+       "label": "C",
+       "text": "第三象限的角"
+      },
+      {
+       "label": "D",
+       "text": "第一象限或第三象限的角"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由 α 是第二象限的角得 2kπ + π/2 小于 α 且 α 小于 2kπ + π，两边除以 2 得 kπ + π/4 小于 α/2 且 α/2 小于 kπ + π/2。k 为偶数时 α/2 在第一象限，k 为奇数时 α/2 在第三象限，所以两种情况都可能。"
+    },
+    {
+     "id": "mhj_h1015_q7",
+     "topicId": "mhj_h1015",
+     "prompt": "利用诱导公式求值，cos(-7π/6) 的值是",
+     "question": "利用诱导公式求值，cos(-7π/6) 的值是",
+     "answer": "-√3/2",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "先用诱导公式把负角化成正角，因为余弦是偶函数，cos(-7π/6) 等于 cos(7π/6)；再把 7π/6 写成 π 加 π/6，由 cos(π + α) = -cos α 得 cos(7π/6) = -cos(π/6)，其值为 -√3/2。"
+    },
+    {
+     "id": "mhj_h1015_q8",
+     "topicId": "mhj_h1015",
+     "prompt": "已知 sin α 与 cos α 的和等于 1/5，求这两个量的乘积 sin α cos α 的值。",
+     "question": "已知 sin α 与 cos α 的和等于 1/5，求这两个量的乘积 sin α cos α 的值。",
+     "answer": "-12/25",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "把已知等式两边平方，左边展开为 sin²α + 2sin α cos α + cos²α，右边为 1/25；再用平方关系把前两项之和化为 1，得 1 + 2sin α cos α = 1/25，所以 sin α cos α = -12/25。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1016",
+   "page": 34,
+   "description": "掌握两角和与差的正弦、余弦、正切公式，并由它推出二倍角与半角公式以及积化和差、和差化积公式，能把一个角的正弦与余弦的线性组合化为一个正弦式并用于化简与求值。",
+   "mastery_criteria": [
+    "能用两角和与差公式求非特殊角的三角函数值并化简表达式",
+    "能用二倍角与半角公式由单角值求倍角、半角的值",
+    "能把正弦与余弦的线性组合化为 A sin(α + φ) 的形式"
+   ],
+   "misconceptions": [
+    "把两角和的正弦直接拆成两个正弦之和，忽略公式中的乘积结构",
+    "用二倍角公式时由正弦求余弦忘记按象限定符号",
+    "在两角和的正切公式中把分母写成 1 加两正切之积，与差角公式混淆",
+    "把线性组合的振幅写成系数之和，而不是根号下两个系数的平方和"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1016_q1",
+     "topicId": "mhj_h1016",
+     "prompt": "利用两角和的余弦公式，cos 75° 的值是",
+     "question": "利用两角和的余弦公式，cos 75° 的值是",
+     "options": [
+      {
+       "label": "A",
+       "text": "(√6 + √2)/4"
+      },
+      {
+       "label": "B",
+       "text": "(√6 - √2)/4"
+      },
+      {
+       "label": "C",
+       "text": "(√2 - √6)/4"
+      },
+      {
+       "label": "D",
+       "text": "(√6 + √2)/2"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把 75° 拆成 45° 与 30° 的和，用两角和的余弦公式展开，得 cos 45°cos 30° 减去 sin 45°sin 30°，即 √2/2×√3/2 - √2/2×1/2，整理后是 (√6 - √2)/4。"
+    },
+    {
+     "id": "mhj_h1016_q2",
+     "topicId": "mhj_h1016",
+     "prompt": "已知 sin α = 3/5，α 在 π/2 到 π 之间，cos β = 5/13，β 在 3π/2 到 2π 之间，则 cos(α - β) 等于",
+     "question": "已知 sin α = 3/5，α 在 π/2 到 π 之间，cos β = 5/13，β 在 3π/2 到 2π 之间，则 cos(α - β) 等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "-56/65"
+      },
+      {
+       "label": "B",
+       "text": "56/65"
+      },
+      {
+       "label": "C",
+       "text": "-16/65"
+      },
+      {
+       "label": "D",
+       "text": "16/65"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由 sin α 等于 3/5 且 α 在第二象限，得 cos α 等于 -4/5；由 cos β 等于 5/13 且 β 在第四象限，得 sin β 等于 -12/13。代入两角差的余弦公式得 -20/65 减 36/65，结果为 -56/65。"
+    },
+    {
+     "id": "mhj_h1016_q3",
+     "topicId": "mhj_h1016",
+     "prompt": "已知 sin α = 4/5，且 α 在 π/2 到 π 之间，则 sin 2α 等于",
+     "question": "已知 sin α = 4/5，且 α 在 π/2 到 π 之间，则 sin 2α 等于",
+     "answer": -0.96,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": -3}]}]}, {\"type\": \"num\", \"value\": 25}]}",
+     "explanation": "由 sin α 等于 4/5 且 α 在第二象限，得 cos α 等于 -3/5，用二倍角公式 sin 2α = 2sin α cos α，代入后乘得 -24/25。"
+    },
+    {
+     "id": "mhj_h1016_q4",
+     "topicId": "mhj_h1016",
+     "prompt": "化简表达式 cos(α + β)cos β + sin(α + β)sin β，所得结果是",
+     "question": "化简表达式 cos(α + β)cos β + sin(α + β)sin β，所得结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "sin α"
+      },
+      {
+       "label": "B",
+       "text": "cos β"
+      },
+      {
+       "label": "C",
+       "text": "cos α"
+      },
+      {
+       "label": "D",
+       "text": "sin β"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把 cos(α + β) 与 sin(α + β) 看作两角差的余弦公式中的两个量，逆用公式把表达式化成一个余弦，即 cos 的括号内为 (α + β) 减 β，结果为 cos α。"
+    },
+    {
+     "id": "mhj_h1016_q5",
+     "topicId": "mhj_h1016",
+     "prompt": "已知两个角的正切值分别为 tan α = 1/3 与 tan β = -2，则 tan(α + β) 的值是",
+     "question": "已知两个角的正切值分别为 tan α = 1/3 与 tan β = -2，则 tan(α + β) 的值是",
+     "answer": -1,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": -5}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 3}]}]}",
+     "explanation": "由两角和的正切公式，分子是两个正切之和，即 1/3 减 2 得 -5/3；分母是 1 减去两个正切之积，即 1 加 2/3 得 5/3；两者相除结果为 -1。"
+    },
+    {
+     "id": "mhj_h1016_q6",
+     "topicId": "mhj_h1016",
+     "prompt": "把 √3 sin α + cos α 化为 A sin(α + φ) 的形式，其中 A 大于 0，结果是",
+     "question": "把 √3 sin α + cos α 化为 A sin(α + φ) 的形式，其中 A 大于 0，结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "2 sin(α - π/6)"
+      },
+      {
+       "label": "B",
+       "text": "2 sin(α + π/3)"
+      },
+      {
+       "label": "C",
+       "text": "sin(α + π/6)"
+      },
+      {
+       "label": "D",
+       "text": "2 sin(α + π/6)"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先从两项中提取公因数 2，得 2(√3/2 sin α + 1/2 cos α)；注意 √3/2 就是 cos π/6，1/2 就是 sin π/6，逆用两角和的正弦公式，结果化为 2 sin(α + π/6)。"
+    },
+    {
+     "id": "mhj_h1016_q7",
+     "topicId": "mhj_h1016",
+     "prompt": "已知 tan α 的值为 2，则 tan 2α 的值是",
+     "question": "已知 tan α 的值为 2，则 tan 2α 的值是",
+     "answer": "-4/3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由二倍角的正切公式，分子是两倍的正切值即 4，分母是 1 减去正切值的平方即 1 减 4 等于 -3，所以结果为 -4/3。"
+    },
+    {
+     "id": "mhj_h1016_q8",
+     "topicId": "mhj_h1016",
+     "prompt": "已知角 α 的余弦值等于 -1/3，且角 α 的终边在第三象限，求 sin 2α 与 cos 2α 的值。",
+     "question": "已知角 α 的余弦值等于 -1/3，且角 α 的终边在第三象限，求 sin 2α 与 cos 2α 的值。",
+     "answer": "sin 2α = 4√2/9，cos 2α = -7/9",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "因为角 α 的终边在第三象限，正弦取负值，由平方关系得 sin α 等于 -2√2/3。用二倍角公式算得 sin 2α = 2sin α cos α = 4√2/9，而 cos 2α = 2cos²α - 1 = 2/9 - 1 = -7/9。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1017",
+   "page": 50,
+   "description": "掌握正弦定理、余弦定理与三角形面积公式，理解外接圆半径与边角之间的关系，能按已知元素求解斜三角形，并解决测量中的距离与高度等实际问题。",
+   "mastery_criteria": [
+    "能用正弦定理处理已知两角一边或两边及一边对角的情形并判断解的个数",
+    "能用余弦定理由三边求角或由两边及夹角求第三边并求面积",
+    "能建立三角形模型解决测量中的实际距离与高度问题"
+   ],
+   "misconceptions": [
+    "由正弦定理求出正弦值后只写锐角解，漏掉 180° 减该角这一可能",
+    "把余弦定理写成第三边平方等于两边平方和加上两倍乘积乘余弦，符号出错",
+    "已知三边求角时把最大角对应的边弄错，代错公式中的边长",
+    "实际问题中把方位角直接当成三角形内角，没有先换算成两边的夹角"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1017_q1",
+     "topicId": "mhj_h1017",
+     "prompt": "在△ABC 中，已知两边长 a = 3，b = 4 及其夹角 C = 60°，则第三边 c 等于",
+     "question": "在△ABC 中，已知两边长 a = 3，b = 4 及其夹角 C = 60°，则第三边 c 等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "√13"
+      },
+      {
+       "label": "B",
+       "text": "13"
+      },
+      {
+       "label": "C",
+       "text": "√37"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "用余弦定理，第三边的平方等于另外两边的平方和减去这两边与夹角余弦值乘积的两倍，即 9 加 16 减 2×3×4×1/2 等于 13，所以 c 等于 √13。"
+    },
+    {
+     "id": "mhj_h1017_q2",
+     "topicId": "mhj_h1017",
+     "prompt": "在△ABC 中，三边长分别为 a = 4，b = 5，c = 6，则 cos A 等于",
+     "question": "在△ABC 中，三边长分别为 a = 4，b = 5，c = 6，则 cos A 等于",
+     "answer": 0.75,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 45}, {\"type\": \"num\", \"value\": 60}]}",
+     "explanation": "用余弦定理的变形，夹角 A 的余弦等于另外两边的平方和减去它的对边平方，再除以这两边乘积的两倍，即 (25 + 36 - 16)/(2×5×6) = 45/60，结果为 3/4。"
+    },
+    {
+     "id": "mhj_h1017_q3",
+     "topicId": "mhj_h1017",
+     "prompt": "在△ABC 中，已知两边长 a = √6，b = √3 + 1 及其夹角 C = 45°，则第三边 c 等于",
+     "question": "在△ABC 中，已知两边长 a = √6，b = √3 + 1 及其夹角 C = 45°，则第三边 c 等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "√3"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "√5"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由余弦定理算第三边：b 的平方为 (√3 + 1)² 即 4 + 2√3，而两倍乘积乘夹角余弦为 2√6(√3 + 1)×√2/2 即 6 + 2√3，代入得 c² 等于 6 加 4 加 2√3 减 6 减 2√3 等于 4，所以 c 等于 2。"
+    },
+    {
+     "id": "mhj_h1017_q4",
+     "topicId": "mhj_h1017",
+     "prompt": "在△ABC 中，已知 a = 2，b = 2√3，A = 30°，则满足条件的 c 的所有可能值之和是",
+     "question": "在△ABC 中，已知 a = 2，b = 2√3，A = 30°，则满足条件的 c 的所有可能值之和是",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "hard",
+     "verify": "{\"type\": \"num\", \"value\": 6}",
+     "explanation": "由余弦定理得 4 等于 12 加 c² 减 6c，整理成 c² 减 6c 加 8 等于 0，解得 c 等于 2 或 c 等于 4，这两个可能值之和为 6。"
+    },
+    {
+     "id": "mhj_h1017_q5",
+     "topicId": "mhj_h1017",
+     "prompt": "在△ABC 中，若 sin²A + sin²B = sin²C，则这个三角形是",
+     "question": "在△ABC 中，若 sin²A + sin²B = sin²C，则这个三角形是",
+     "options": [
+      {
+       "label": "A",
+       "text": "锐角三角形"
+      },
+      {
+       "label": "B",
+       "text": "直角三角形"
+      },
+      {
+       "label": "C",
+       "text": "钝角三角形"
+      },
+      {
+       "label": "D",
+       "text": "等边三角形"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由正弦定理知各边等于外接圆直径乘所对角的正弦，把条件两边同乘外接圆直径的平方，得 a² + b² = c²，由勾股定理的逆定理知角 C 为直角，所以这个三角形是直角三角形。"
+    },
+    {
+     "id": "mhj_h1017_q6",
+     "topicId": "mhj_h1017",
+     "prompt": "在△ABC 中，三边长之比为 2 比 3 比 4，则最大角的余弦值等于",
+     "question": "在△ABC 中，三边长之比为 2 比 3 比 4，则最大角的余弦值等于",
+     "answer": "-1/4",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "设三边分别为 2k、3k、4k，最大角是边 4k 所对的角，用余弦定理求其余弦值，分子为 4k² 加 9k² 减 16k² 得 -3k²，分母为 12k²，结果为 -1/4。"
+    },
+    {
+     "id": "mhj_h1017_q7",
+     "topicId": "mhj_h1017",
+     "prompt": "在△ABC 中，三边长分别为 a = 6，b = 8，c = 10，则这个三角形外接圆的半径是",
+     "question": "在△ABC 中，三边长分别为 a = 6，b = 8，c = 10，则这个三角形外接圆的半径是",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 5}",
+     "explanation": "因为 6 的平方加 8 的平方等于 10 的平方，所以这个三角形是以 c 为斜边的直角三角形，其外接圆的直径等于斜边长 10，故外接圆半径为 5。"
+    },
+    {
+     "id": "mhj_h1017_q8",
+     "topicId": "mhj_h1017",
+     "prompt": "甲船在港口 A 南偏西 20° 方向 24 海里处的 C 停留，乙船在港口 A 南偏东 40° 方向的 B 处，两船相距 31 海里。乙船行驶 20 海里到达 D 处时，求此时甲、乙两船之间的距离。",
+     "question": "甲船在港口 A 南偏西 20° 方向 24 海里处的 C 停留，乙船在港口 A 南偏东 40° 方向的 B 处，两船相距 31 海里。乙船行驶 20 海里到达 D 处时，求此时甲、乙两船之间的距离。",
+     "answer": "21 海里",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "由题意两边的夹角为 20° 加 40° 等于 60°。在三角形 ABC 中由正弦定理得角 ABC 的正弦为 24 sin 60° 除以 31 即 12√3/31，因为 AC 小于 BC 所以该角为锐角，其余弦为 23/31。再在三角形 BCD 中用余弦定理得 CD 的平方为 31² 加 20² 减 2×31×20×23/31 等于 441，所以 CD 等于 21 海里。"
+    }
+   ]
+  }
+ ]
+}

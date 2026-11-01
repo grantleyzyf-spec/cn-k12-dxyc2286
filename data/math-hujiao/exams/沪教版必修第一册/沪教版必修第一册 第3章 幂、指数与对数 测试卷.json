@@ -1,0 +1,651 @@
+{
+  "book": "沪教版必修第一册",
+  "term": "上册",
+  "grade": 10,
+  "stage": "高中",
+  "kind": "unit",
+  "paper": "沪教版必修第一册 第3章 幂、指数与对数 测试卷",
+  "duration": 120,
+  "fullScore": 150,
+  "scope": [
+    "沪教版必修第一册 第3章 幂、指数与对数"
+  ],
+  "topicIds": [
+    "mhj_h003",
+    "mhj_h1006",
+    "mhj_h1007"
+  ],
+  "examId": "mhj_exam_b1_u03",
+  "sections": [
+    {
+      "title": "一、单选题",
+      "rule": "每小题 5 分，共 40 分",
+      "items": [
+        {
+          "no": 1,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1006"
+          ],
+          "stem": "计算 27 的 2/3 次幂，结果是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "3"
+            },
+            {
+              "label": "B",
+              "text": "6"
+            },
+            {
+              "label": "C",
+              "text": "9"
+            },
+            {
+              "label": "D",
+              "text": "27"
+            }
+          ],
+          "answer": "C",
+          "analysis": "把 27 写成 3³，则 27^(2/3) = (3³)^(2/3) = 3^(3×2/3) = 3² = 9。也可先开方再乘方：27^(1/3) = 3，再平方得 9。两种顺序结果相同，因为指数运算律对正底数恒成立。",
+          "itemId": "mhj_exam_b1_u03_q01"
+        },
+        {
+          "no": 2,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1006"
+          ],
+          "stem": "若 a < 0，则 4 次根号下 a 的 4 次幂等于（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "a"
+            },
+            {
+              "label": "B",
+              "text": "−a"
+            },
+            {
+              "label": "C",
+              "text": "|a| 的相反数"
+            },
+            {
+              "label": "D",
+              "text": "a²"
+            }
+          ],
+          "answer": "B",
+          "analysis": "偶次方根的结果总是非负数，即 ⁴√(a⁴) = |a|。已知 a < 0，故 |a| = −a，结果为 −a。若写成 a 就错了，例如 a = −2 时 a⁴ = 16，⁴√16 = 2，而 a = −2，符号正好相反。奇次方根才保留原符号，如 ³√(a³) = a。",
+          "itemId": "mhj_exam_b1_u03_q02"
+        },
+        {
+          "no": 3,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1007"
+          ],
+          "stem": "计算 log₃(1/27) 的值是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "1/3"
+            },
+            {
+              "label": "B",
+              "text": "3"
+            },
+            {
+              "label": "C",
+              "text": "−1/3"
+            },
+            {
+              "label": "D",
+              "text": "−3"
+            }
+          ],
+          "answer": "D",
+          "analysis": "由对数的定义，log₃(1/27) 是使 3 的多少次幂等于 1/27 的那个指数。因为 1/27 = 3⁻³，所以 log₃(1/27) = −3。也可用 log₃(1/27) = log₃1 − log₃27 = 0 − 3 = −3。结果为负是对数小于零的典型情形：真数在 0 与 1 之间时对数为负（底数大于 1）。",
+          "itemId": "mhj_exam_b1_u03_q03"
+        },
+        {
+          "no": 4,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1007"
+          ],
+          "stem": "已知 lg2 = a，lg3 = b，则 lg12 等于（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "2a + b"
+            },
+            {
+              "label": "B",
+              "text": "a + 2b"
+            },
+            {
+              "label": "C",
+              "text": "ab"
+            },
+            {
+              "label": "D",
+              "text": "a + b"
+            }
+          ],
+          "answer": "A",
+          "analysis": "12 = 4 × 3 = 2² × 3，由对数运算律 lg12 = lg2² + lg3 = 2lg2 + lg3 = 2a + b。检验：a ≈ 0.301，b ≈ 0.477，2a + b ≈ 1.079，而 lg12 ≈ 1.079，吻合。常见错误是把 lg12 拆成 lg(2×6) 后把 lg6 也算成 ab。",
+          "itemId": "mhj_exam_b1_u03_q04"
+        },
+        {
+          "no": 5,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1007"
+          ],
+          "stem": "把等式 2 的 x 次方等于 5 改写成对数式，结果是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "x = log₅2"
+            },
+            {
+              "label": "B",
+              "text": "2 = log₅x"
+            },
+            {
+              "label": "C",
+              "text": "x = log₂5"
+            },
+            {
+              "label": "D",
+              "text": "5 = log₂x"
+            }
+          ],
+          "answer": "C",
+          "analysis": "指数式 a^b = N 与对数式 log_a N = b 互为等价（a > 0、a ≠ 1、N > 0）。这里底数 a = 2，指数 x，幂 N = 5，故 x = log₂5。不要写成 log₅2，那是把底数与真数弄颠倒了。",
+          "itemId": "mhj_exam_b1_u03_q05"
+        },
+        {
+          "no": 6,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1006"
+          ],
+          "stem": "计算 2^(1/2) × 2^(1/3) × 2^(1/6) 的值是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "2"
+            },
+            {
+              "label": "B",
+              "text": "2√2"
+            },
+            {
+              "label": "C",
+              "text": "4"
+            },
+            {
+              "label": "D",
+              "text": "1"
+            }
+          ],
+          "answer": "A",
+          "analysis": "同底数幂相乘，底数不变、指数相加：1/2 + 1/3 + 1/6 = 3/6 + 2/6 + 1/6 = 1，故原式 = 2¹ = 2。也可逐个近似检查：√2 ≈ 1.414，2^(1/3) ≈ 1.260，2^(1/6) ≈ 1.122，三者之积 ≈ 2.000，与结果一致。",
+          "itemId": "mhj_exam_b1_u03_q06"
+        },
+        {
+          "no": 7,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1007"
+          ],
+          "stem": "计算 log₂(log₃81) 的值是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "1"
+            },
+            {
+              "label": "B",
+              "text": "2"
+            },
+            {
+              "label": "C",
+              "text": "3"
+            },
+            {
+              "label": "D",
+              "text": "4"
+            }
+          ],
+          "answer": "B",
+          "analysis": "先算内层：因为 3⁴ = 81，所以 log₃81 = 4。再算外层：log₂4 = 2（因为 2² = 4）。这类嵌套对数必须由内向外逐层求值，顺序颠倒会得到错误结果。",
+          "itemId": "mhj_exam_b1_u03_q07"
+        },
+        {
+          "no": 8,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1006"
+          ],
+          "stem": "已知 a > 0 且 a^(1/2) + a^(−1/2) = 3，则 a + a^(−1) 等于（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "3"
+            },
+            {
+              "label": "B",
+              "text": "5"
+            },
+            {
+              "label": "C",
+              "text": "6"
+            },
+            {
+              "label": "D",
+              "text": "7"
+            }
+          ],
+          "answer": "D",
+          "analysis": "把已知式两边平方：(a^(1/2) + a^(−1/2))² = a + 2·a^(1/2)·a^(−1/2) + a^(−1) = a + 2 + a^(−1)。左边为 3² = 9，故 a + a^(−1) = 9 − 2 = 7。交叉项 a^(1/2)·a^(−1/2) = a⁰ = 1 是关键，别漏掉这个 2。",
+          "itemId": "mhj_exam_b1_u03_q08"
+        }
+      ]
+    },
+    {
+      "title": "二、多选题",
+      "rule": "每小题 5 分，共 20 分；少选得部分分，错选不得分",
+      "items": [
+        {
+          "no": 9,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1007"
+          ],
+          "stem": "下列各式的计算结果正确的是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "log₂8 = 3"
+            },
+            {
+              "label": "B",
+              "text": "lg25 + lg4 = 1"
+            },
+            {
+              "label": "C",
+              "text": "log₃(9 × 27) = 5"
+            },
+            {
+              "label": "D",
+              "text": "log₂6 − log₂3 = 1"
+            }
+          ],
+          "answer": "ACD",
+          "analysis": "A 中 2³ = 8，故 log₂8 = 3，正确。B 中 lg25 + lg4 = lg100 = 2，不是 1，错误。C 中 log₃(9 × 27) = log₃9 + log₃27 = 2 + 3 = 5，正确。D 中 log₂6 − log₂3 = log₂(6/3) = log₂2 = 1，正确。",
+          "itemId": "mhj_exam_b1_u03_q09"
+        },
+        {
+          "no": 10,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1006"
+          ],
+          "stem": "设 a > 0，则下列关于根式与分数指数幂的式子中，正确的是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "(a^(1/3))³ = a"
+            },
+            {
+              "label": "B",
+              "text": "a^(2/3) = ³√(a²)"
+            },
+            {
+              "label": "C",
+              "text": "√(a²) = −a"
+            },
+            {
+              "label": "D",
+              "text": "⁶√(a⁶) = |a|"
+            }
+          ],
+          "answer": "ABD",
+          "analysis": "A 中 (a^(1/3))³ = a^(3×1/3) = a，正确。B 中 a^(2/3) 表示先平方再开三次方，即 ³√(a²)，正确。C 中 a > 0 时 √(a²) = |a| = a，不可能等于 −a，错误（即使 a < 0 也应是 √(a²) = −a，与所给式子不符）。D 中 ⁶√(a⁶) 是偶次方根，结果取绝对值 |a|，因 a > 0 也等于 a，正确。",
+          "itemId": "mhj_exam_b1_u03_q10"
+        },
+        {
+          "no": 11,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1007"
+          ],
+          "stem": "设 a > 0 且 a ≠ 1，M > 0，N > 0，则下列等式成立的是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "log_a(MN) = log_aM + log_aN"
+            },
+            {
+              "label": "B",
+              "text": "log_a(M + N) = log_aM + log_aN"
+            },
+            {
+              "label": "C",
+              "text": "log_a M³ = 3log_aM"
+            },
+            {
+              "label": "D",
+              "text": "log_a(M/N) = log_aM − log_aN"
+            }
+          ],
+          "answer": "ACD",
+          "analysis": "对数运算律：积的对数等于对数的和（A 正确）；商的对数等于对数的差（D 正确）；幂的对数等于指数乘对数，log_a M³ = 3log_a M（C 正确）。B 是常见错误：对数的和对应真数的积，log_aM + log_aN = log_a(MN)，而 log_a(M + N) 一般无法拆开，例如 log₂(2 + 2) = 1，而 log₂2 + log₂2 = 2，两者不等。",
+          "itemId": "mhj_exam_b1_u03_q11"
+        },
+        {
+          "no": 12,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1006"
+          ],
+          "stem": "已知正数 x、y 满足 2 的 x 次方等于 3 的 y 次方等于 6，则下列结论正确的是（　　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "1/x + 1/y = 1"
+            },
+            {
+              "label": "B",
+              "text": "xy = x + y"
+            },
+            {
+              "label": "C",
+              "text": "x > y"
+            },
+            {
+              "label": "D",
+              "text": "x + y = xy + 1"
+            }
+          ],
+          "answer": "ABC",
+          "analysis": "由定义 x = log₂6，y = log₃6。于是 1/x = log₆2，1/y = log₆3，1/x + 1/y = log₆2 + log₆3 = log₆6 = 1，A 正确；由 1/x + 1/y = 1 两边乘 xy 得 y + x = xy，B 正确。又 log₂6 ≈ 2.585 > log₃6 ≈ 1.632，故 x > y，C 正确。D 中 x + y = xy 而非 xy + 1，错误。",
+          "itemId": "mhj_exam_b1_u03_q12"
+        }
+      ]
+    },
+    {
+      "title": "三、填空题",
+      "rule": "每小题 5 分，共 20 分",
+      "items": [
+        {
+          "no": 13,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1006"
+          ],
+          "stem": "计算 0.25 的 −1/2 次幂，结果为 ______。",
+          "answer": "2",
+          "analysis": "0.25 = 1/4 = (1/2)²，故 0.25^(−1/2) = ((1/2)²)^(−1/2) = (1/2)^(−1) = 2。也可理解为先取倒数再开方：0.25^(−1/2) = 1/√0.25 = 1/0.5 = 2。负指数表示取倒数，不改变结果的符号。",
+          "itemId": "mhj_exam_b1_u03_q13"
+        },
+        {
+          "no": 14,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1007"
+          ],
+          "stem": "计算 lg25 + lg4 + 2^(log₂3) 的值为 ______。",
+          "answer": "5",
+          "analysis": "先算前两项：lg25 + lg4 = lg(25 × 4) = lg100 = 2。再算第三项：由对数恒等式 a^(log_a N) = N 得 2^(log₂3) = 3。故总和为 2 + 3 = 5。",
+          "itemId": "mhj_exam_b1_u03_q14"
+        },
+        {
+          "no": 15,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1006"
+          ],
+          "stem": "已知 10 的 a 次方等于 2，10 的 b 次方等于 3，则 10 的 (2a − b) 次方等于 ______。",
+          "answer": "4/3",
+          "analysis": "由指数运算律 10^(2a−b) = (10^a)² / 10^b = 2²/3 = 4/3。这里用到了同底数幂的乘除法则：指数相加对应幂相乘，指数相减对应幂相除。",
+          "itemId": "mhj_exam_b1_u03_q15"
+        },
+        {
+          "no": 16,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "topicIds": [
+            "mhj_h1007"
+          ],
+          "stem": "方程 log₂(x − 1) = 2 的解为 x = ______。",
+          "answer": "5",
+          "analysis": "把对数式化为指数式：x − 1 = 2² = 4，故 x = 5。代回检验：log₂(5 − 1) = log₂4 = 2，成立；且真数 4 > 0，满足对数的定义域要求。",
+          "itemId": "mhj_exam_b1_u03_q16"
+        }
+      ]
+    },
+    {
+      "title": "四、解答题",
+      "rule": "共 6 题，10 + 12 + 12 + 12 + 12 + 12 = 70 分",
+      "items": [
+        {
+          "no": 17,
+          "score": 10,
+          "type": "solve",
+          "difficulty": "medium",
+          "topicIds": [
+            "mhj_h003",
+            "mhj_h1006",
+            "mhj_h1007"
+          ],
+          "stem": "计算下列各式的值：（1）(8/27)^(−2/3) + (0.01)^(−1/2)；（2）(lg5)² + lg2·lg5 + lg2。",
+          "answer": "（1）49/4；（2）1",
+          "analysis": "（1）(8/27)^(−2/3) = (27/8)^(2/3) = ((3/2)³)^(2/3) = (3/2)² = 9/4；(0.01)^(−1/2) = 1/√0.01 = 1/0.1 = 10。两式相加得 9/4 + 10 = 49/4。（2）提出公因式 lg5：(lg5)² + lg2·lg5 = lg5(lg5 + lg2) = lg5·lg10 = lg5，再加上 lg2 得 lg5 + lg2 = lg10 = 1。",
+          "scoreRule": [
+            {
+              "step": "（1）算出 (8/27)^(−2/3) = 9/4",
+              "score": 3
+            },
+            {
+              "step": "（1）算出 (0.01)^(−1/2) = 10 并求和得 49/4",
+              "score": 2
+            },
+            {
+              "step": "（2）提取 lg5 并利用 lg5 + lg2 = 1",
+              "score": 3
+            },
+            {
+              "step": "（2）得结果 1",
+              "score": 2
+            }
+          ],
+          "itemId": "mhj_exam_b1_u03_q17"
+        },
+        {
+          "no": 18,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "medium",
+          "topicIds": [
+            "mhj_h1007",
+            "mhj_h1003"
+          ],
+          "stem": "已知 lg2 = a，lg3 = b，用 a、b 表示下列各式的值：（1）lg12；（2）log₂12。",
+          "answer": "（1）lg12 = 2a + b；（2）log₂12 = (2a + b)/a = 2 + b/a",
+          "analysis": "（1）12 = 2² × 3，由积与幂的对数法则，lg12 = 2lg2 + lg3 = 2a + b。（2）换底公式 log₂12 = lg12/lg2，把（1）的结果代入得分母为 lg2 = a，分子为 2a + b，故 log₂12 = (2a + b)/a。由于 a = lg2 ≠ 0，这个式子有意义，也可写成 2 + b/a。",
+          "scoreRule": [
+            {
+              "step": "（1）把 12 分解为 2² × 3 并用对数法则展开",
+              "score": 4
+            },
+            {
+              "step": "（1）得 lg12 = 2a + b",
+              "score": 2
+            },
+            {
+              "step": "（2）用换底公式写出 log₂12 = lg12/lg2",
+              "score": 4
+            },
+            {
+              "step": "（2）代入得 (2a + b)/a",
+              "score": 2
+            }
+          ],
+          "itemId": "mhj_exam_b1_u03_q18"
+        },
+        {
+          "no": 19,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "medium",
+          "topicIds": [
+            "mhj_h1006"
+          ],
+          "stem": "解方程：4 的 x 次方减去 3 乘以 2 的 (x + 1) 次方再加 8 等于 0。",
+          "answer": "x = 1 或 x = 2",
+          "analysis": "先统一底数：4^x = (2²)^x = (2^x)²，2^(x+1) = 2·2^x。令 t = 2^x，则 t > 0，原方程化为 t² − 6t + 8 = 0，即 (t − 2)(t − 4) = 0，得 t = 2 或 t = 4，两者都满足 t > 0。由 2^x = 2 得 x = 1；由 2^x = 4 = 2² 得 x = 2。检验：x = 1 时 4 − 12 + 8 = 0；x = 2 时 16 − 24 + 8 = 0。所以原方程的解为 x = 1 或 x = 2。",
+          "scoreRule": [
+            {
+              "step": "换元 t = 2^x（t > 0），把方程化为 t² − 6t + 8 = 0",
+              "score": 4
+            },
+            {
+              "step": "解得 t = 2 或 t = 4",
+              "score": 3
+            },
+            {
+              "step": "回代求得 x = 1 或 x = 2",
+              "score": 3
+            },
+            {
+              "step": "检验并作答",
+              "score": 2
+            }
+          ],
+          "itemId": "mhj_exam_b1_u03_q19"
+        },
+        {
+          "no": 20,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "medium",
+          "topicIds": [
+            "mhj_h1007"
+          ],
+          "stem": "解方程：log₂(x + 1) + log₂(x − 1) = log₂3。",
+          "answer": "x = 2",
+          "analysis": "先确定定义域：需 x + 1 > 0 且 x − 1 > 0，即 x > 1。由积的对数法则，左边 = log₂[(x + 1)(x − 1)] = log₂(x² − 1)，方程化为 log₂(x² − 1) = log₂3，由于对数函数是一一对应的，得 x² − 1 = 3，即 x² = 4，x = ±2。结合定义域 x > 1，舍去 x = −2，得 x = 2。检验：log₂3 + log₂1 = log₂3，成立。",
+          "scoreRule": [
+            {
+              "step": "求出定义域 x > 1",
+              "score": 3
+            },
+            {
+              "step": "用对数法则合并为 log₂(x² − 1) = log₂3",
+              "score": 4
+            },
+            {
+              "step": "解得 x² = 4，即 x = ±2",
+              "score": 3
+            },
+            {
+              "step": "依定义域舍去 x = −2，得 x = 2",
+              "score": 2
+            }
+          ],
+          "itemId": "mhj_exam_b1_u03_q20"
+        },
+        {
+          "no": 21,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "hard",
+          "topicIds": [
+            "mhj_h1007",
+            "mhj_h1006"
+          ],
+          "stem": "某企业今年的产值为 1 亿元，计划以后每年的产值比上一年增长 12%。问至少经过多少年，该企业的年产值才能达到 2 亿元？（参考数据：lg2 ≈ 0.301，lg1.12 ≈ 0.0492）",
+          "answer": "至少经过 7 年",
+          "analysis": "设经过 n 年后年产值为 1 × 1.12^n 亿元，要求 1.12^n ≥ 2。两边取常用对数（底数 10 的对数函数递增，不等号方向不变），得 n·lg1.12 ≥ lg2，即 n ≥ lg2 / lg1.12 ≈ 0.301 / 0.0492 ≈ 6.12。由于 n 必须是正整数，故 n 最小取 7。检验：1.12⁶ ≈ 1.974 < 2，1.12⁷ ≈ 2.211 ≥ 2，说明 6 年不够、7 年够。",
+          "scoreRule": [
+            {
+              "step": "设 n 年后产值为 1.12^n 亿元，列出不等式 1.12^n ≥ 2",
+              "score": 4
+            },
+            {
+              "step": "两边取对数得 n ≥ lg2 / lg1.12",
+              "score": 4
+            },
+            {
+              "step": "由数据算得 n ≈ 6.12，取整得 n = 7",
+              "score": 4
+            }
+          ],
+          "itemId": "mhj_exam_b1_u03_q21"
+        },
+        {
+          "no": 22,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "hard",
+          "topicIds": [
+            "mhj_h1007"
+          ],
+          "stem": "比较 log₂3 与 log₃4 的大小，并说明理由。",
+          "answer": "log₂3 > log₃4",
+          "analysis": "取中间量 3/2 分别比较。先看 log₂3 与 3/2：由于 2^(3/2) = 2√2 ≈ 2.828 < 3，且 y = 2^x 在 R 上严格递增，故 log₂3 > 3/2。再看 log₃4 与 3/2：由于 3^(3/2) = 3√3 ≈ 5.196 > 4，同理 log₃4 < 3/2。于是 log₂3 > 3/2 > log₃4，即 log₂3 较大。用换底公式也可验证：log₂3 ≈ 1.585，log₃4 ≈ 1.262。",
+          "scoreRule": [
+            {
+              "step": "比较 log₂3 与 3/2：由 2^(3/2) < 3 及指数函数递增得 log₂3 > 3/2",
+              "score": 4
+            },
+            {
+              "step": "比较 log₃4 与 3/2：由 3^(3/2) > 4 得 log₃4 < 3/2",
+              "score": 4
+            },
+            {
+              "step": "由传递性得 log₂3 > log₃4",
+              "score": 4
+            }
+          ],
+          "itemId": "mhj_exam_b1_u03_q22"
+        }
+      ]
+    }
+  ]
+}

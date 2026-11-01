@@ -1,0 +1,813 @@
+{
+ "tag": "h2c3",
+ "book": "沪教版必修第二册",
+ "unit_points": [
+  {
+   "id": "mhj_h008",
+   "description": "以向量的线性运算、数量积与坐标表示为三件工具，把平面上的几何关系转化为可计算的代数关系，并用向量方法处理几何与实际问题。",
+   "mastery_criteria": [
+    "能熟练进行向量的加法、减法、数乘与数量积运算，并说明所用运算律",
+    "能用坐标计算向量的模、数量积与夹角，并判断两个向量平行或垂直",
+    "能用向量方法表达并解决平面几何中的共线、垂直与求点坐标问题"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h008_q1",
+     "topicId": "mhj_h008",
+     "prompt": "下列各量中，既有大小又有方向、可以用向量表示的是",
+     "question": "下列各量中，既有大小又有方向、可以用向量表示的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "物体的位移"
+      },
+      {
+       "label": "B",
+       "text": "物体的质量"
+      },
+      {
+       "label": "C",
+       "text": "物体的温度"
+      },
+      {
+       "label": "D",
+       "text": "物体运动的时间"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "位移既有大小又有方向，符合教材对向量的刻画；质量、温度和时间都只有大小而没有方向，属于数量，不能用向量表示。"
+    },
+    {
+     "id": "mhj_h008_q2",
+     "topicId": "mhj_h008",
+     "prompt": "已知向量 a 的模等于 3，向量 b 的模等于 4，且 a 与 b 互相垂直，则 a 与 b 的和向量的模等于多少",
+     "question": "已知向量 a 的模等于 3，向量 b 的模等于 4，且 a 与 b 互相垂直，则 a 与 b 的和向量的模等于多少",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 5}",
+     "explanation": "两个向量垂直时，和向量的模的平方等于两个模的平方之和，即 9 加 16 等于 25，所以和向量的模等于 5。"
+    },
+    {
+     "id": "mhj_h008_q3",
+     "topicId": "mhj_h008",
+     "prompt": "已知向量 a 的坐标是 (4, -1)，向量 b 的坐标是 (5, 2)，则向量 2a 加 3b 的坐标是",
+     "question": "已知向量 a 的坐标是 (4, -1)，向量 b 的坐标是 (5, 2)，则向量 2a 加 3b 的坐标是",
+     "options": [
+      {
+       "label": "A",
+       "text": "(13, 0)"
+      },
+      {
+       "label": "B",
+       "text": "(18, 3)"
+      },
+      {
+       "label": "C",
+       "text": "(23, 4)"
+      },
+      {
+       "label": "D",
+       "text": "(23, 1)"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "数乘向量时把坐标分别乘以实数，2a 等于 (8, -2)，3b 等于 (15, 6)，再对应坐标相加得 (23, 4)。"
+    },
+    {
+     "id": "mhj_h008_q4",
+     "topicId": "mhj_h008",
+     "prompt": "已知向量 a 的坐标是 (1, 2)，向量 b 的坐标是 (m, 1)，若 a 加 b 与 a 减 b 互相垂直，则实数 m 的值为",
+     "question": "已知向量 a 的坐标是 (1, 2)，向量 b 的坐标是 (m, 1)，若 a 加 b 与 a 减 b 互相垂直，则实数 m 的值为",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "2 或 -2"
+      },
+      {
+       "label": "C",
+       "text": "-2"
+      },
+      {
+       "label": "D",
+       "text": "0"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "和向量与差向量垂直说明它们的数量积为零，而两者的数量积等于 a 的模的平方减 b 的模的平方，即 5 减 (m 的平方加 1) 等于零，解得 m 的平方等于 4，所以 m 等于 2 或负 2。"
+    },
+    {
+     "id": "mhj_h008_q5",
+     "topicId": "mhj_h008",
+     "prompt": "已知向量 a 的模等于 2，向量 b 的模等于 3，a 与 b 的夹角等于 120 度，则 a 与 b 的数量积等于多少",
+     "question": "已知向量 a 的模等于 2，向量 b 的模等于 3，a 与 b 的夹角等于 120 度，则 a 与 b 的数量积等于多少",
+     "answer": "-3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "数量积等于两个向量的模与夹角余弦的乘积，120 度的余弦等于负二分之一，所以 2 乘 3 再乘负二分之一等于负 3。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "mhj_h1022",
+   "page": 106,
+   "description": "从大小和方向两个方面认识向量，理解模、零向量、单位向量、平行与相等，并掌握加法、减法与实数乘向量这三类线性运算及其运算律。",
+   "mastery_criteria": [
+    "能判断两个向量是否相等、平行或互为负向量",
+    "能用三角形法则与平行四边形法则作出两个向量的和与差",
+    "能化简含向量加减与数乘的式子，并用已知向量表示其他向量"
+   ],
+   "misconceptions": [
+    "认为模相等的两个向量一定相等，忽略方向必须相同",
+    "认为零向量没有方向，或认为零向量与任何向量都不平行",
+    "化简向量式时把 AB 与 BA 当成同一个向量，随意改变起点和终点"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mhj_h1022_q1",
+     "topicId": "mhj_h1022",
+     "prompt": "下列关于向量的说法中，正确的是",
+     "question": "下列关于向量的说法中，正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "模为 1 的向量叫做单位向量"
+      },
+      {
+       "label": "B",
+       "text": "零向量没有方向，所以不能与任何向量比较"
+      },
+      {
+       "label": "C",
+       "text": "两个向量的模相等，则这两个向量一定相等"
+      },
+      {
+       "label": "D",
+       "text": "两个向量平行，则它们所在的直线一定重合"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材规定模为 1 的向量叫做单位向量；零向量具有任意方向，与任意向量平行；模相等的两个向量方向不一定相同；两个向量平行时它们所在的直线可能平行也可能重合。"
+    },
+    {
+     "id": "mhj_h1022_q2",
+     "topicId": "mhj_h1022",
+     "prompt": "已知向量 a 的模等于 6，实数 λ 等于负 2，则向量 λa 的模等于多少",
+     "question": "已知向量 a 的模等于 6，实数 λ 等于负 2，则向量 λa 的模等于多少",
+     "answer": 12,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 6}]}",
+     "explanation": "实数与向量相乘时，所得向量的模等于这个实数的绝对值与原来向量模的乘积，即 2 乘 6 等于 12，方向与 a 相反。"
+    },
+    {
+     "id": "mhj_h1022_q3",
+     "topicId": "mhj_h1022",
+     "prompt": "在平面上依次给定四个点 A、B、C、D，化简向量 AB 加向量 BC 加向量 CD 加向量 DA 的结果是什么",
+     "question": "在平面上依次给定四个点 A、B、C、D，化简向量 AB 加向量 BC 加向量 CD 加向量 DA 的结果是什么",
+     "answer": "零向量",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "按首尾规则，AB 加 BC 等于 AC，AC 加 CD 等于 AD，再加上 DA 就得到起点与终点相同的向量，即零向量。"
+    },
+    {
+     "id": "mhj_h1022_q4",
+     "topicId": "mhj_h1022",
+     "prompt": "化简向量式：向量 AB 加上向量 MB，再加上向量 BD，再加上向量 DM，所得结果是",
+     "question": "化简向量式：向量 AB 加上向量 MB，再加上向量 BD，再加上向量 DM，所得结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "向量 AD"
+      },
+      {
+       "label": "B",
+       "text": "向量 MB"
+      },
+      {
+       "label": "C",
+       "text": "向量 AB"
+      },
+      {
+       "label": "D",
+       "text": "零向量"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先把 MB 与 BD 相加得 MD，再与 DM 相加，两个互为负向量，和为向量零，于是整个式子等于 AB 加零向量，结果仍是向量 AB。"
+    },
+    {
+     "id": "mhj_h1022_q5",
+     "topicId": "mhj_h1022",
+     "prompt": "已知向量 a 与 b，则 2 倍的 a 减 b 加上 3 倍的 a 加 b 化简后的结果是",
+     "question": "已知向量 a 与 b，则 2 倍的 a 减 b 加上 3 倍的 a 加 b 化简后的结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "5a 加 5b"
+      },
+      {
+       "label": "B",
+       "text": "5a 减 b"
+      },
+      {
+       "label": "C",
+       "text": "a 加 5b"
+      },
+      {
+       "label": "D",
+       "text": "5a 加 b"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先去括号得 2a 减 2b 加 3a 加 3b，再合并同类项，a 的系数是 2 加 3 等于 5，b 的系数是负 2 加 3 等于 1，所以结果是 5a 加 b。"
+    },
+    {
+     "id": "mhj_h1022_q6",
+     "topicId": "mhj_h1022",
+     "prompt": "在三角形 ABC 中，点 D 是边 BC 的中点，点 G 是三角形的重心，若中线 AD 的长等于 6，则线段 AG 的长等于多少",
+     "question": "在三角形 ABC 中，点 D 是边 BC 的中点，点 G 是三角形的重心，若中线 AD 的长等于 6，则线段 AG 的长等于多少",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"num\", \"value\": 6}]}",
+     "explanation": "重心把三角形的每条中线分成两段，顶点到重心的距离等于这条中线上顶点到对边中点距离的三分之二，所以 AG 等于三分之二乘以 6，结果为 4。"
+    },
+    {
+     "id": "mhj_h1022_q7",
+     "topicId": "mhj_h1022",
+     "prompt": "设 e1 与 e2 是两个不平行的向量，已知向量 AB 等于 3 倍 e1 减 2 倍 e2，向量 BC 等于负 2 倍 e1 加 4 倍 e2，向量 CD 等于负 2 倍 e1 减 4 倍 e2，则下列结论正确的是",
+     "question": "设 e1 与 e2 是两个不平行的向量，已知向量 AB 等于 3 倍 e1 减 2 倍 e2，向量 BC 等于负 2 倍 e1 加 4 倍 e2，向量 CD 等于负 2 倍 e1 减 4 倍 e2，则下列结论正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "A、B、D 三点共线"
+      },
+      {
+       "label": "B",
+       "text": "A、C、D 三点共线"
+      },
+      {
+       "label": "C",
+       "text": "B、C、D 三点共线"
+      },
+      {
+       "label": "D",
+       "text": "这四点中任意三点都不共线"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先求 AC 等于 AB 加 BC 等于 e1 加 2 倍 e2，再与 CD 比较，CD 等于负 2 倍 e1 减 4 倍 e2，即负 2 倍的 AC，两向量平行且有公共点 C，所以 A、C、D 三点共线。"
+    },
+    {
+     "id": "mhj_h1022_q8",
+     "topicId": "mhj_h1022",
+     "prompt": "已知向量 a、b、c 满足二分之一倍的 a 减 3c 加上 2 倍的 2a 减 3b 等于零向量，试用 a 与 b 表示向量 c",
+     "question": "已知向量 a、b、c 满足二分之一倍的 a 减 3c 加上 2 倍的 2a 减 3b 等于零向量，试用 a 与 b 表示向量 c",
+     "answer": "c = 3a - 4b",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "展开得二分之一倍的 a 减二分之三倍的 c 加 4a 减 6b 等于零向量，移项得二分之三倍的 c 等于二分之九倍的 a 减 6b，两边同乘三分之二，得 c 等于 3a 减 4b。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1023",
+   "page": 118,
+   "description": "用向量在另一个向量方向上的投影理解数量积的来源，掌握数量积的定义与三条运算律，并用它计算模、判断垂直与求两向量的夹角。",
+   "mastery_criteria": [
+    "能求一个向量在另一个向量方向上的投影与数量投影",
+    "能运用数量积的交换律、对数乘的结合律与分配律化简式子",
+    "能用数量积求向量的模与夹角，并判断两个向量是否垂直"
+   ],
+   "misconceptions": [
+    "把数量积当成向量，认为两个向量相乘的结果仍带方向",
+    "认为数量积等于零时两个向量中必有一个是零向量，漏掉垂直的情形",
+    "把向量夹角的取值范围当成开区间，或在三角形中把内角与向量夹角混为一谈"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mhj_h1023_q1",
+     "topicId": "mhj_h1023",
+     "prompt": "设 a 与 b 是两个非零向量，则它们的数量积 a 与 b 的结果是一个",
+     "question": "设 a 与 b 是两个非零向量，则它们的数量积 a 与 b 的结果是一个",
+     "options": [
+      {
+       "label": "A",
+       "text": "与 a 同方向的向量"
+      },
+      {
+       "label": "B",
+       "text": "模为 1 的向量"
+      },
+      {
+       "label": "C",
+       "text": "与 a 加 b 同方向的向量"
+      },
+      {
+       "label": "D",
+       "text": "数量"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "数量积等于两个向量的模与夹角余弦的乘积，三个因数都是数量，所以结果是一个数量而不是向量，这正是数量积与向量加减、数乘的区别。"
+    },
+    {
+     "id": "mhj_h1023_q2",
+     "topicId": "mhj_h1023",
+     "prompt": "已知等边三角形 ABC 的边长等于 6，则向量 AB 与向量 AC 的数量积等于多少",
+     "question": "已知等边三角形 ABC 的边长等于 6，则向量 AB 与向量 AC 的数量积等于多少",
+     "answer": 18,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 18}",
+     "explanation": "两个向量都以 A 为起点，夹角就是三角形的内角 60 度，所以数量积等于 6 乘 6 再乘 60 度的余弦二分之一，结果为 18。"
+    },
+    {
+     "id": "mhj_h1023_q3",
+     "topicId": "mhj_h1023",
+     "prompt": "已知向量 a 的模等于 5，向量 b 的模等于 6，且 a 加 b 与 b 的数量积等于 21，则 a 与 b 的夹角等于多少",
+     "question": "已知向量 a 的模等于 5，向量 b 的模等于 6，且 a 加 b 与 b 的数量积等于 21，则 a 与 b 的夹角等于多少",
+     "answer": "2π/3，即 120 度",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由分配律，a 加 b 与 b 的数量积等于 a 与 b 的数量积加上 b 的模的平方，所以 a 与 b 的数量积等于 21 减 36 等于负 15，余弦等于负 15 除以 30 得负二分之一，夹角为三分之二派。"
+    },
+    {
+     "id": "mhj_h1023_q4",
+     "topicId": "mhj_h1023",
+     "prompt": "已知向量 a 的模等于 2，向量 b 的模等于 3，a 与 b 的夹角等于 60 度，则 3a 减 2b 的模等于",
+     "question": "已知向量 a 的模等于 2，向量 b 的模等于 3，a 与 b 的夹角等于 60 度，则 3a 减 2b 的模等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "12"
+      },
+      {
+       "label": "C",
+       "text": "36"
+      },
+      {
+       "label": "D",
+       "text": "根号 6"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先求模的平方，等于 9 倍的 a 的模的平方减 12 倍的两向量数量积加 4 倍的 b 的模的平方，即 36 减 36 加 36 等于 36，所以模等于 6。"
+    },
+    {
+     "id": "mhj_h1023_q5",
+     "topicId": "mhj_h1023",
+     "prompt": "在三角形 ABC 中，若向量 AB 与向量 BC 的数量积等于零，则三角形 ABC 是",
+     "question": "在三角形 ABC 中，若向量 AB 与向量 BC 的数量积等于零，则三角形 ABC 是",
+     "options": [
+      {
+       "label": "A",
+       "text": "锐角三角形"
+      },
+      {
+       "label": "B",
+       "text": "直角三角形"
+      },
+      {
+       "label": "C",
+       "text": "钝角三角形"
+      },
+      {
+       "label": "D",
+       "text": "等边三角形"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个向量的数量积为零说明它们互相垂直，即 AB 与 BC 所在的直线垂直，所以角 B 是直角，三角形 ABC 是直角三角形。"
+    },
+    {
+     "id": "mhj_h1023_q6",
+     "topicId": "mhj_h1023",
+     "prompt": "已知向量 a 的模等于 4，向量 b 的模等于 5，a 加 b 的模等于根号 21，则 a 与 b 的数量积等于多少",
+     "question": "已知向量 a 的模等于 4，向量 b 的模等于 5，a 加 b 的模等于根号 21，则 a 与 b 的数量积等于多少",
+     "answer": -10,
+     "type": "numeric",
+     "difficulty": "hard",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 21}, {\"type\": \"num\", \"value\": 41}]}, {\"type\": \"num\", \"value\": 2}]}",
+     "explanation": "把 a 加 b 的模的平方展开，等于 16 加 25 加 2 倍的数量积，令它等于 21，得 2 倍的数量积等于负 20，所以数量积等于负 10。"
+    },
+    {
+     "id": "mhj_h1023_q7",
+     "topicId": "mhj_h1023",
+     "prompt": "已知 a 与 b 都是非零向量，a 加 3b 与 7a 减 5b 垂直，a 减 4b 与 7a 减 2b 垂直，则 a 与 b 的夹角等于",
+     "question": "已知 a 与 b 都是非零向量，a 加 3b 与 7a 减 5b 垂直，a 减 4b 与 7a 减 2b 垂直，则 a 与 b 的夹角等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "π/6"
+      },
+      {
+       "label": "B",
+       "text": "π/4"
+      },
+      {
+       "label": "C",
+       "text": "π/3"
+      },
+      {
+       "label": "D",
+       "text": "2π/3"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "把两个垂直条件展开，分别得到 7 倍的 a 的模的平方加 16 倍的数量积减 15 倍的 b 的模的平方等于零，以及 7 倍的 a 的模的平方减 30 倍的数量积加 8 倍的 b 的模的平方等于零，两式相减得 b 的模的平方等于 2 倍的数量积，回代得 a 的模的平方也等于 2 倍的数量积，于是余弦等于二分之一，夹角为三分之派。"
+    },
+    {
+     "id": "mhj_h1023_q8",
+     "topicId": "mhj_h1023",
+     "prompt": "已知向量 a 的模等于 1，且 a 加 b 与 a 减 b 的数量积等于二分之一，求向量 b 的模",
+     "question": "已知向量 a 的模等于 1，且 a 加 b 与 a 减 b 的数量积等于二分之一，求向量 b 的模",
+     "answer": "根号 2 除以 2",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "由平方差公式，a 加 b 与 a 减 b 的数量积等于 a 的模的平方减去 b 的模的平方，即 1 减 b 的模的平方等于二分之一，所以 b 的模的平方等于二分之一，b 的模等于二分之根号二。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1024",
+   "page": 124,
+   "description": "由向量基本定理引入平面向量的基与坐标，把向量的线性运算、模、数量积与夹角都转化为坐标运算，从而用代数方法判断平行与垂直。",
+   "mastery_criteria": [
+    "能把向量写成两个不平行向量的线性组合，并求出向量的坐标",
+    "能用坐标进行向量的加减与数乘运算，求模与单位向量",
+    "能用坐标形式的数量积判断平行、垂直并求夹角"
+   ],
+   "misconceptions": [
+    "把点的坐标与向量的坐标混为一谈，直接把起点坐标当成向量坐标",
+    "把两向量平行的条件写成横坐标之比等于纵坐标之比，忽略分母为零的情形",
+    "记错数量积的坐标公式，把对应坐标相乘后相加写成相乘后相减"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mhj_h1024_q1",
+     "topicId": "mhj_h1024",
+     "prompt": "已知向量 a 的坐标是 (1, 2)，向量 b 的坐标是 (3, -1)，则 a 与 b 的数量积等于",
+     "question": "已知向量 a 的坐标是 (1, 2)，向量 b 的坐标是 (3, -1)，则 a 与 b 的数量积等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "-1"
+      },
+      {
+       "label": "D",
+       "text": "7"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两个向量的数量积等于对应坐标乘积的和，即 1 乘 3 加 2 乘负 1，等于 3 减 2，结果为 1。"
+    },
+    {
+     "id": "mhj_h1024_q2",
+     "topicId": "mhj_h1024",
+     "prompt": "已知向量 a 的坐标是 (3, -4)，则向量 a 的模等于多少",
+     "question": "已知向量 a 的坐标是 (3, -4)，则向量 a 的模等于多少",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 5}",
+     "explanation": "向量的模等于横坐标与纵坐标平方和的算术平方根，3 的平方加负 4 的平方等于 25，所以模等于 5。"
+    },
+    {
+     "id": "mhj_h1024_q3",
+     "topicId": "mhj_h1024",
+     "prompt": "已知向量 a 的坐标是 (2, 3)，向量 b 的坐标是 (-2, 4)，向量 c 的坐标是 (-1, -2)，则向量 c 与向量 a 减 b 的数量积等于多少",
+     "question": "已知向量 a 的坐标是 (2, 3)，向量 b 的坐标是 (-2, 4)，向量 c 的坐标是 (-1, -2)，则向量 c 与向量 a 减 b 的数量积等于多少",
+     "answer": -2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": -2}",
+     "explanation": "先求 a 减 b 的坐标，等于 (4, -1)，再与 c 的坐标对应相乘后相加，得负 1 乘 4 加负 2 乘负 1，即负 4 加 2，结果为负 2。"
+    },
+    {
+     "id": "mhj_h1024_q4",
+     "topicId": "mhj_h1024",
+     "prompt": "已知向量 a 的坐标是 (1, 2)，向量 b 的坐标是 (2, -2)，则 a 与 b 的夹角是",
+     "question": "已知向量 a 的坐标是 (1, 2)，向量 b 的坐标是 (2, -2)，则 a 与 b 的夹角是",
+     "options": [
+      {
+       "label": "A",
+       "text": "零角"
+      },
+      {
+       "label": "B",
+       "text": "直角"
+      },
+      {
+       "label": "C",
+       "text": "锐角"
+      },
+      {
+       "label": "D",
+       "text": "钝角"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先算数量积，等于 1 乘 2 加 2 乘负 2 得负 2，小于零，而两个向量的模都是正数，所以夹角余弦为负，夹角是钝角。"
+    },
+    {
+     "id": "mhj_h1024_q5",
+     "topicId": "mhj_h1024",
+     "prompt": "已知向量 a 的坐标是 (5, 3)，向量 b 的坐标是 (x, 1)，且 a 与 b 平行，则实数 x 的值是",
+     "question": "已知向量 a 的坐标是 (5, 3)，向量 b 的坐标是 (x, 1)，且 a 与 b 平行，则实数 x 的值是",
+     "options": [
+      {
+       "label": "A",
+       "text": "3/5"
+      },
+      {
+       "label": "B",
+       "text": "5/3"
+      },
+      {
+       "label": "C",
+       "text": "-5/3"
+      },
+      {
+       "label": "D",
+       "text": "15"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个向量平行的充要条件是横纵坐标交叉相乘相等，即 5 乘 1 等于 3 乘 x，解得 x 等于三分之五。"
+    },
+    {
+     "id": "mhj_h1024_q6",
+     "topicId": "mhj_h1024",
+     "prompt": "已知向量 a 的坐标是 (2, 4)，请写出一个与 a 垂直的单位向量的坐标",
+     "question": "已知向量 a 的坐标是 (2, 4)，请写出一个与 a 垂直的单位向量的坐标",
+     "answer": "(2√5/5, -√5/5) 或 (-2√5/5, √5/5)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "与 a 垂直的向量可以取 (4, -2)，它的模等于 2 倍根号 5，用它除以模就得到单位向量，即 (2√5/5, -√5/5)，取它的相反向量也满足要求。"
+    },
+    {
+     "id": "mhj_h1024_q7",
+     "topicId": "mhj_h1024",
+     "prompt": "已知向量 a 的坐标是 (3 减 m, 3m)，向量 b 的坐标是 (m 加 2, -2)，且 a 与 b 垂直，则实数 m 的值是",
+     "question": "已知向量 a 的坐标是 (3 减 m, 3m)，向量 b 的坐标是 (m 加 2, -2)，且 a 与 b 垂直，则实数 m 的值是",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "-6"
+      },
+      {
+       "label": "C",
+       "text": "1 或 -6"
+      },
+      {
+       "label": "D",
+       "text": "0"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "垂直的充要条件是数量积为零，展开得 3 减 m 与 m 加 2 的积减去 6m 等于零，整理得 m 的平方加 5m 减 6 等于零，解得 m 等于 1 或 m 等于负 6。"
+    },
+    {
+     "id": "mhj_h1024_q8",
+     "topicId": "mhj_h1024",
+     "prompt": "已知向量 a 的坐标是 (3, -1)，向量 b 的坐标是 (1, -2)，求 a 与 b 的数量积以及它们的夹角",
+     "question": "已知向量 a 的坐标是 (3, -1)，向量 b 的坐标是 (1, -2)，求 a 与 b 的数量积以及它们的夹角",
+     "answer": "a 与 b 的数量积等于 5，夹角为 π/4",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "数量积等于 3 乘 1 加负 1 乘负 2，等于 5；a 的模是根号 10，b 的模是根号 5，夹角的余弦等于 5 除以 5 倍根号 2，等于二分之根号二，所以夹角是四分之派。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1025",
+   "page": 134,
+   "description": "把向量作为工具用于几何问题，用定比分点公式与中点公式由分点的比值求点的坐标，并用坐标关系判断三点共线与求重心位置。",
+   "mastery_criteria": [
+    "能用定比分点公式由分点比求点 P 的坐标",
+    "能用线段中点公式求线段中点的坐标",
+    "能用向量方法把几何条件转化为坐标关系并求解"
+   ],
+   "misconceptions": [
+    "把定比分点公式中的比值当成线段长度之比，忽略分点在延长线上的情形",
+    "把中点公式写成两个端点坐标之差的一半，或把横纵坐标的对应关系弄反",
+    "用坐标法判断三点共线时只比较横坐标，忘记交叉相乘检验"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "mhj_h1025_q1",
+     "topicId": "mhj_h1025",
+     "prompt": "已知点 P1 的坐标是 (1, 2)，点 P2 的坐标是 (5, 6)，则线段 P1P2 的中点的坐标是",
+     "question": "已知点 P1 的坐标是 (1, 2)，点 P2 的坐标是 (5, 6)，则线段 P1P2 的中点的坐标是",
+     "options": [
+      {
+       "label": "A",
+       "text": "(2, 3)"
+      },
+      {
+       "label": "B",
+       "text": "(3, 4)"
+      },
+      {
+       "label": "C",
+       "text": "(4, 5)"
+      },
+      {
+       "label": "D",
+       "text": "(6, 8)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由线段中点公式，中点坐标等于两个端点对应坐标之和的一半，横坐标为 1 加 5 再除以 2 得 3，纵坐标为 2 加 6 再除以 2 得 4。"
+    },
+    {
+     "id": "mhj_h1025_q2",
+     "topicId": "mhj_h1025",
+     "prompt": "已知点 P1 的坐标是 (1, 2)，点 P2 的坐标是 (4, 8)，点 P 在直线 P1P2 上且满足向量 P1P 等于 2 倍的向量 PP2，则点 P 的横坐标等于多少",
+     "question": "已知点 P1 的坐标是 (1, 2)，点 P2 的坐标是 (4, 8)，点 P 在直线 P1P2 上且满足向量 P1P 等于 2 倍的向量 PP2，则点 P 的横坐标等于多少",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 4}]}]}, {\"type\": \"num\", \"value\": 3}]}",
+     "explanation": "由定比分点公式，横坐标等于 1 加 2 乘 4 再除以 1 加 2，即 9 除以 3，等于 3。"
+    },
+    {
+     "id": "mhj_h1025_q3",
+     "topicId": "mhj_h1025",
+     "prompt": "已知点 A 的坐标是 (-2, 3)，点 B 的坐标是 (4, -3)，点 P 在直线 AB 上且满足向量 AP 等于二分之一倍的向量 PB，则点 P 的坐标是",
+     "question": "已知点 A 的坐标是 (-2, 3)，点 B 的坐标是 (4, -3)，点 P 在直线 AB 上且满足向量 AP 等于二分之一倍的向量 PB，则点 P 的坐标是",
+     "options": [
+      {
+       "label": "A",
+       "text": "(0, 1)"
+      },
+      {
+       "label": "B",
+       "text": "(1, 0)"
+      },
+      {
+       "label": "C",
+       "text": "(0, -1)"
+      },
+      {
+       "label": "D",
+       "text": "(2, 0)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由定比分点公式，横坐标等于负 2 加二分之一乘 4 再除以 1 加二分之一，得 0；纵坐标等于 3 加二分之一乘负 3 再除以 1 加二分之一，得 1。"
+    },
+    {
+     "id": "mhj_h1025_q4",
+     "topicId": "mhj_h1025",
+     "prompt": "在三角形 ABC 中，点 G 是重心，点 D 是边 AB 的中点，点 C、G、D 三点共线，若线段 CG 的长等于 4，则线段 GD 的长等于多少",
+     "question": "在三角形 ABC 中，点 G 是重心，点 D 是边 AB 的中点，点 C、G、D 三点共线，若线段 CG 的长等于 4，则线段 GD 的长等于多少",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 2}]}",
+     "explanation": "教材指出重心 G 满足向量 CG 等于 2 倍的向量 GD，即重心到顶点的距离是它到对边中点距离的 2 倍，所以 GD 等于 4 除以 2，等于 2。"
+    },
+    {
+     "id": "mhj_h1025_q5",
+     "topicId": "mhj_h1025",
+     "prompt": "已知三角形 ABC 三个顶点的坐标分别是 (1, 2)、(3, -4)、(5, 6)，则这个三角形的重心 G 的坐标是",
+     "question": "已知三角形 ABC 三个顶点的坐标分别是 (1, 2)、(3, -4)、(5, 6)，则这个三角形的重心 G 的坐标是",
+     "options": [
+      {
+       "label": "A",
+       "text": "(3, 4)"
+      },
+      {
+       "label": "B",
+       "text": "(9/2, 4/3)"
+      },
+      {
+       "label": "C",
+       "text": "(3, 4/3)"
+      },
+      {
+       "label": "D",
+       "text": "(3, 8/3)"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先求前两点所连边的中点 D 为 (2, -1)，重心 G 满足向量 CG 等于 2 倍的向量 GD，由定比分点公式取比值为 2，得横坐标 3，纵坐标三分之四。"
+    },
+    {
+     "id": "mhj_h1025_q6",
+     "topicId": "mhj_h1025",
+     "prompt": "已知点 A 的坐标是 (2, 3)，点 B 的坐标是 (6, 11)，点 P 在线段 AB 上且 AP 等于 AB 的四分之三，求点 P 的坐标",
+     "question": "已知点 A 的坐标是 (2, 3)，点 B 的坐标是 (6, 11)，点 P 在线段 AB 上且 AP 等于 AB 的四分之三，求点 P 的坐标",
+     "answer": "(5, 9)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "先求向量 AB 的坐标为 (4, 8)，它的四分之三等于 (3, 6)，再加上起点 A 的坐标，得到点 P 的坐标 (5, 9)。"
+    },
+    {
+     "id": "mhj_h1025_q7",
+     "topicId": "mhj_h1025",
+     "prompt": "已知点 A(1, 1)、B(3, 5)、C(5, k) 三点共线，则实数 k 的值为",
+     "question": "已知点 A(1, 1)、B(3, 5)、C(5, k) 三点共线，则实数 k 的值为",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "7"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先写出向量 AB 为 (2, 4)，向量 AC 为 (4, k 减 1)，三点共线说明这两个向量平行，由交叉相乘相等得 2 乘 (k 减 1) 等于 4 乘 4，解得 k 等于 9。"
+    },
+    {
+     "id": "mhj_h1025_q8",
+     "topicId": "mhj_h1025",
+     "prompt": "已知点 A(1, -2)、B(3, 4)，点 P 在直线 AB 上且满足向量 AP 等于 λ 倍的向量 PB，若点 P 的横坐标等于 5，求实数 λ 的值",
+     "question": "已知点 A(1, -2)、B(3, 4)，点 P 在直线 AB 上且满足向量 AP 等于 λ 倍的向量 PB，若点 P 的横坐标等于 5，求实数 λ 的值",
+     "answer": "λ = -2",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "由定比分点公式，点 P 的横坐标等于 1 加 3λ 再除以 1 加 λ，令它等于 5，去分母得 1 加 3λ 等于 5 加 5λ，解得 λ 等于负 2，此时分点落在 AB 的延长线上。"
+    }
+   ]
+  }
+ ]
+}

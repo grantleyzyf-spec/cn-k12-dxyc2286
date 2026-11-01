@@ -1,0 +1,430 @@
+{
+  "tag": "h1c3",
+  "book": "沪教版必修第一册",
+  "unit_points": [
+    {
+      "id": "mhj_h003",
+      "description": "把乘方运算由整数指数逐级推广到有理数指数与实数指数，并用对数刻画指数方程的唯一解，实现根式、分数指数幂与对数三种表示之间的相互转化。",
+      "mastery_criteria": [
+        "能把根式与有理数指数幂互相表示，并按同底数幂的运算性质化简",
+        "能由对数定义把指数式与对数式互化，并求出简单对数的值"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "mhj_h003_q1",
+          "topicId": "mhj_h003",
+          "prompt": "把等式 3 的 5 次方等于 243 改写成对数式，下列写法正确的是",
+          "question": "把等式 3 的 5 次方等于 243 改写成对数式，下列写法正确的是",
+          "options": [
+            {
+              "label": "A",
+              "text": "以 3 为底 243 的对数等于 5"
+            },
+            {
+              "label": "B",
+              "text": "以 243 为底 3 的对数等于 5"
+            },
+            {
+              "label": "C",
+              "text": "以 3 为底 5 的对数等于 243"
+            },
+            {
+              "label": "D",
+              "text": "以 5 为底 243 的对数等于 3"
+            }
+          ],
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "由对数定义，若 a 的 x 次方等于 N，则 x 等于以 a 为底 N 的对数。这里的底数是 3，真数是幂值 243，指数 5 就是对数值，所以应写成以 3 为底 243 的对数等于 5。"
+        },
+        {
+          "id": "mhj_h003_q2",
+          "topicId": "mhj_h003",
+          "prompt": "计算 4 的 3/2 次幂的值，结果写成整数",
+          "question": "计算 4 的 3/2 次幂的值，结果写成整数",
+          "answer": 8,
+          "type": "numeric",
+          "difficulty": "basic",
+          "verify": "{\"type\":\"num\",\"value\":8}",
+          "explanation": "由分数指数幂的定义，4 的 3/2 次幂等于 3 次根号下 4 的平方，也等于根号 4 的 3 次方。根号 4 等于 2，2 的 3 次方等于 8。"
+        },
+        {
+          "id": "mhj_h003_q3",
+          "topicId": "mhj_h003",
+          "prompt": "化简 3 次根号下 x 的 5 次幂（其中 x 大于 0），结果用指数幂表示是",
+          "question": "化简 3 次根号下 x 的 5 次幂（其中 x 大于 0），结果用指数幂表示是",
+          "options": [
+            {
+              "label": "A",
+              "text": "x 的 3/5 次幂"
+            },
+            {
+              "label": "B",
+              "text": "x 的 5/3 次幂"
+            },
+            {
+              "label": "C",
+              "text": "x 的 15 次幂"
+            },
+            {
+              "label": "D",
+              "text": "x 的 8 次幂"
+            }
+          ],
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "由分数指数幂的定义，n 次根号下 x 的 m 次幂等于 x 的 m/n 次幂，根指数做分母、被开方数的指数做分子，所以结果是 x 的 5/3 次幂，而不是 x 的 3/5 次幂。"
+        },
+        {
+          "id": "mhj_h003_q4",
+          "topicId": "mhj_h003",
+          "prompt": "设 0 小于 a 小于 1，s 大于 0，则 a 的 s 次幂的取值范围是",
+          "question": "设 0 小于 a 小于 1，s 大于 0，则 a 的 s 次幂的取值范围是",
+          "options": [
+            {
+              "label": "A",
+              "text": "大于 1"
+            },
+            {
+              "label": "B",
+              "text": "等于 1"
+            },
+            {
+              "label": "C",
+              "text": "大于 0 且小于 1"
+            },
+            {
+              "label": "D",
+              "text": "小于 0"
+            }
+          ],
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "取 b 等于 a 的倒数，由 0 小于 a 小于 1 得 b 大于 1。由幂的基本不等式，b 的 s 次幂大于 1，而 a 的 s 次幂等于 b 的 s 次幂的倒数，所以它大于 0 且小于 1。"
+        },
+        {
+          "id": "mhj_h003_q5",
+          "topicId": "mhj_h003",
+          "prompt": "化简 a 的 1/3 次幂与 a 的 1/4 次幂的乘积（其中 a 大于 0），结果用指数幂表示",
+          "question": "化简 a 的 1/3 次幂与 a 的 1/4 次幂的乘积（其中 a 大于 0），结果用指数幂表示",
+          "answer": "a 的 7/12 次幂",
+          "type": "fill",
+          "difficulty": "standard",
+          "explanation": "同底数幂相乘，底数不变、指数相加。1/3 与 1/4 通分得 4/12 与 3/12，和为 7/12，所以结果是 a 的 7/12 次幂。"
+        }
+      ]
+    }
+  ],
+  "lesson_points": [
+    {
+      "id": "mhj_h1006",
+      "page": 72,
+      "description": "由 n 次方根与根式引入分数指数幂，把指数从整数推广到实数，并运用同底数幂的三条运算性质与幂的基本不等式进行化简与求值。",
+      "mastery_criteria": [
+        "能按根指数的奇偶判断 n 次方根的个数与符号，写出 n 次根式的值",
+        "能把根式写成有理数指数幂，并用同底数幂的运算性质化简求值"
+      ],
+      "misconceptions": [
+        "把偶次根号直接去掉，忽略被开方数为负时无意义、化简时需要加绝对值",
+        "把 a 的 m/n 次幂理解成 a 的 m 次幂除以 n，或把指数相加误写成相乘"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "mhj_h1006_q1",
+          "topicId": "mhj_h1006",
+          "prompt": "求 256 的 4 次方根，下列结果中正确的是",
+          "question": "求 256 的 4 次方根，下列结果中正确的是",
+          "options": [
+            {
+              "label": "A",
+              "text": "4"
+            },
+            {
+              "label": "B",
+              "text": "负 4"
+            },
+            {
+              "label": "C",
+              "text": "正负 4"
+            },
+            {
+              "label": "D",
+              "text": "16"
+            }
+          ],
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "因为 4 的 4 次方等于 256，负 4 的 4 次方也等于 256。n 为偶数时正数的 n 次方根有两个且互为相反数，所以 256 的 4 次方根是正负 4。"
+        },
+        {
+          "id": "mhj_h1006_q2",
+          "topicId": "mhj_h1006",
+          "prompt": "求负 64 的立方根，并把结果写成整数",
+          "question": "求负 64 的立方根，并把结果写成整数",
+          "answer": -4,
+          "type": "numeric",
+          "difficulty": "basic",
+          "verify": "{\"type\":\"num\",\"value\":-4}",
+          "explanation": "因为负 4 的 3 次方等于负 64，而 n 为奇数时负数的 n 次方根唯一存在，所以负 64 的立方根是负 4。"
+        },
+        {
+          "id": "mhj_h1006_q3",
+          "topicId": "mhj_h1006",
+          "prompt": "化简 3 次根号下 a 的 3 次幂（其中 a 为任意实数）",
+          "question": "化简 3 次根号下 a 的 3 次幂（其中 a 为任意实数）",
+          "answer": "a",
+          "type": "fill",
+          "difficulty": "basic",
+          "explanation": "当根指数为奇数时，n 次根号下 a 的 n 次幂等于 a 本身，无论 a 是正数还是负数都不需要加绝对值，所以结果为 a。"
+        },
+        {
+          "id": "mhj_h1006_q4",
+          "topicId": "mhj_h1006",
+          "prompt": "化简 6 次根号下 a 减 b 的差的 6 次幂（其中 a 小于 b）",
+          "question": "化简 6 次根号下 a 减 b 的差的 6 次幂（其中 a 小于 b）",
+          "options": [
+            {
+              "label": "A",
+              "text": "a 减 b"
+            },
+            {
+              "label": "B",
+              "text": "b 减 a"
+            },
+            {
+              "label": "C",
+              "text": "a 加 b"
+            },
+            {
+              "label": "D",
+              "text": "b 的平方减 a 的平方"
+            }
+          ],
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "当根指数为偶数时，n 次根号下 a 的 n 次幂等于 a 的绝对值。这里 a 小于 b，a 减 b 为负数，它的绝对值等于 b 减 a，所以结果是 b 减 a。"
+        },
+        {
+          "id": "mhj_h1006_q5",
+          "topicId": "mhj_h1006",
+          "prompt": "计算 8 的负 2/3 次幂的值",
+          "question": "计算 8 的负 2/3 次幂的值",
+          "answer": 0.25,
+          "type": "numeric",
+          "difficulty": "standard",
+          "verify": "{\"type\":\"num\",\"value\":0.25}",
+          "explanation": "8 的 2/3 次幂等于根号 8 的三次方的平方，即 2 的平方等于 4。负指数表示取倒数，所以结果是 4 的倒数，等于 0.25。"
+        },
+        {
+          "id": "mhj_h1006_q6",
+          "topicId": "mhj_h1006",
+          "prompt": "化简 a 的 3 次幂与 4 次根号下 a 的 3 次幂的乘积（其中 a 大于 0）",
+          "question": "化简 a 的 3 次幂与 4 次根号下 a 的 3 次幂的乘积（其中 a 大于 0）",
+          "options": [
+            {
+              "label": "A",
+              "text": "a 的 15/4 次幂"
+            },
+            {
+              "label": "B",
+              "text": "a 的 3/4 次幂"
+            },
+            {
+              "label": "C",
+              "text": "a 的 9/4 次幂"
+            },
+            {
+              "label": "D",
+              "text": "a 的 12 次幂"
+            }
+          ],
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "先把 4 次根号下 a 的 3 次幂写成 a 的 3/4 次幂，再按同底数幂相乘指数相加，3 加 3/4 等于 15/4，所以结果是 a 的 15/4 次幂。"
+        },
+        {
+          "id": "mhj_h1006_q7",
+          "topicId": "mhj_h1006",
+          "prompt": "已知 x 大于 0 且 x 的 3/2 次幂等于 1000，求 x 的值",
+          "question": "已知 x 大于 0 且 x 的 3/2 次幂等于 1000，求 x 的值",
+          "answer": 100,
+          "type": "numeric",
+          "difficulty": "hard",
+          "verify": "{\"type\":\"num\",\"value\":100}",
+          "explanation": "在 x 的 3/2 次幂等于 1000 两边取 2/3 次幂，得 x 等于 1000 的 2/3 次幂，即根号 1000 的三次方的平方，而 1000 的立方根是 10，10 的平方等于 100，所以 x 等于 100。"
+        },
+        {
+          "id": "mhj_h1006_q8",
+          "topicId": "mhj_h1006",
+          "prompt": "用根式形式表示 a 的负 2/5 次幂（其中 a 大于 0）",
+          "question": "用根式形式表示 a 的负 2/5 次幂（其中 a 大于 0）",
+          "answer": "1 除以 5 次根号下 a 的平方",
+          "type": "short-answer",
+          "difficulty": "hard",
+          "explanation": "负指数先化成正指数的倒数，得 a 的 2/5 次幂的倒数。再由分数指数幂与根式的互化，a 的 2/5 次幂等于 5 次根号下 a 的平方，所以结果是 1 除以 5 次根号下 a 的平方。"
+        }
+      ]
+    },
+    {
+      "id": "mhj_h1007",
+      "page": 78,
+      "description": "由指数方程 a 的 x 次方等于 N 在 a 大于 0 且 a 不等于 1 时的唯一解引入对数，明确底数与真数的要求，并用对数与指数的互化求对数值。",
+      "mastery_criteria": [
+        "能说出对数定义中对底数与真数的要求，并把指数式与对数式互化",
+        "会用对数恒等式求以 a 为底 1、以 a 为底 a 及简单幂为真数的对数值"
+      ],
+      "misconceptions": [
+        "忽略底数须大于 0 且不等于 1、真数须大于 0，对负数或 0 也去取对数",
+        "把以 a 为底 N 的对数当成 N 除以 a，忘记以 a 为底 1 的对数等于 0、以 a 为底 a 的对数等于 1"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "mhj_h1007_q1",
+          "topicId": "mhj_h1007",
+          "prompt": "把 2 的 5 次方等于 32 改写成对数式，正确的是",
+          "question": "把 2 的 5 次方等于 32 改写成对数式，正确的是",
+          "options": [
+            {
+              "label": "A",
+              "text": "以 2 为底 32 的对数等于 5"
+            },
+            {
+              "label": "B",
+              "text": "以 32 为底 2 的对数等于 5"
+            },
+            {
+              "label": "C",
+              "text": "以 2 为底 5 的对数等于 32"
+            },
+            {
+              "label": "D",
+              "text": "以 5 为底 32 的对数等于 2"
+            }
+          ],
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "由对数定义，a 的 x 次方等于 N 与 x 等于以 a 为底 N 的对数等价。底数 2 保持不变，真数是幂值 32，对数值是指数 5，所以应写成以 2 为底 32 的对数等于 5。"
+        },
+        {
+          "id": "mhj_h1007_q2",
+          "topicId": "mhj_h1007",
+          "prompt": "求以 2 为底 8 的对数的值",
+          "question": "求以 2 为底 8 的对数的值",
+          "answer": 3,
+          "type": "numeric",
+          "difficulty": "basic",
+          "verify": "{\"type\":\"num\",\"value\":3}",
+          "explanation": "因为 2 的 3 次方等于 8，即 3 是方程 2 的 x 次方等于 8 的唯一解，由对数定义得以 2 为底 8 的对数等于 3。"
+        },
+        {
+          "id": "mhj_h1007_q3",
+          "topicId": "mhj_h1007",
+          "prompt": "求以 10 为底 0.00001 的对数的值",
+          "question": "求以 10 为底 0.00001 的对数的值",
+          "answer": -5,
+          "type": "numeric",
+          "difficulty": "basic",
+          "verify": "{\"type\":\"num\",\"value\":-5}",
+          "explanation": "因为 10 的负 5 次方等于 0.00001，所以以 10 为底 0.00001 的对数等于负 5。以 10 为底的对数是常用对数，用符号 lg 表示，即 lg 0.00001 等于负 5。"
+        },
+        {
+          "id": "mhj_h1007_q4",
+          "topicId": "mhj_h1007",
+          "prompt": "求以 2 为底根号 2 的对数的值",
+          "question": "求以 2 为底根号 2 的对数的值",
+          "options": [
+            {
+              "label": "A",
+              "text": "2"
+            },
+            {
+              "label": "B",
+              "text": "1/2"
+            },
+            {
+              "label": "C",
+              "text": "1"
+            },
+            {
+              "label": "D",
+              "text": "负 1/2"
+            }
+          ],
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "因为根号 2 等于 2 的 1/2 次方，即 1/2 是方程 2 的 x 次方等于根号 2 的唯一解，由对数定义得以 2 为底根号 2 的对数等于 1/2。"
+        },
+        {
+          "id": "mhj_h1007_q5",
+          "topicId": "mhj_h1007",
+          "prompt": "已知以 2 为底 x 的对数等于负 1，求 x 的值",
+          "question": "已知以 2 为底 x 的对数等于负 1，求 x 的值",
+          "answer": "1/2",
+          "type": "fill",
+          "difficulty": "standard",
+          "explanation": "由对数与指数的互化，以 2 为底 x 的对数等于负 1 等价于 2 的负 1 次方等于 x。2 的负 1 次方等于 1/2，且真数 1/2 大于 0，所以 x 等于 1/2。"
+        },
+        {
+          "id": "mhj_h1007_q6",
+          "topicId": "mhj_h1007",
+          "prompt": "已知以二分之一为底 x 的对数等于 3，则 x 的值是",
+          "question": "已知以二分之一为底 x 的对数等于 3，则 x 的值是",
+          "options": [
+            {
+              "label": "A",
+              "text": "8"
+            },
+            {
+              "label": "B",
+              "text": "3/2"
+            },
+            {
+              "label": "C",
+              "text": "1/6"
+            },
+            {
+              "label": "D",
+              "text": "1/8"
+            }
+          ],
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "由对数定义，以二分之一为底 x 的对数等于 3 等价于二分之一的 3 次方等于 x。二分之一的 3 次方等于 1/8，所以 x 等于 1/8，而不是它的倒数 8。"
+        },
+        {
+          "id": "mhj_h1007_q7",
+          "topicId": "mhj_h1007",
+          "prompt": "某人存入银行 1 万元，年利率为百分之五，按年计复利，经过 n 年后本利和为 1.05 的 n 次方万元。请写出本利和超过 5 万元所满足的不等式，并说明 n 与方程 1.05 的 x 次方等于 5 的解 x 的关系",
+          "question": "某人存入银行 1 万元，年利率为百分之五，按年计复利，经过 n 年后本利和为 1.05 的 n 次方万元。请写出本利和超过 5 万元所满足的不等式，并说明 n 与方程 1.05 的 x 次方等于 5 的解 x 的关系",
+          "answer": "1.05 的 n 次方大于 5，且 n 是大于 x 的最小整数",
+          "type": "short-answer",
+          "difficulty": "hard",
+          "explanation": "按题意本利和为 1.05 的 n 次方万元，要求它超过 5 万元，即 1.05 的 n 次方大于 5。因为底数 1.05 大于 1，幂随指数增大而增大，若 x 满足 1.05 的 x 次方等于 5，则 n 必须是大于 x 的最小整数。"
+        },
+        {
+          "id": "mhj_h1007_q8",
+          "topicId": "mhj_h1007",
+          "prompt": "已知 a 大于 0 且 a 不等于 1，若以 a 为底 8 的对数等于 3，求 a 的值",
+          "question": "已知 a 大于 0 且 a 不等于 1，若以 a 为底 8 的对数等于 3，求 a 的值",
+          "answer": 2,
+          "type": "numeric",
+          "difficulty": "hard",
+          "verify": "{\"type\":\"num\",\"value\":2}",
+          "explanation": "由对数定义，以 a 为底 8 的对数等于 3 等价于 a 的 3 次方等于 8。因为 a 大于 0，开立方得 a 等于 2，且 2 不等于 1，符合底数的要求。"
+        }
+      ]
+    }
+  ]
+}

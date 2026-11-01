@@ -1,0 +1,626 @@
+{
+  "book": "苏教版选择性必修第一册",
+  "kind": "unit",
+  "paper": "苏教版选择性必修第一册 第4章 数列 测试卷",
+  "stage": "高中",
+  "grade": 11,
+  "duration": 120,
+  "fullScore": 150,
+  "scope": [
+    "苏教版选择性必修第一册 第4章 数列"
+  ],
+  "examId": "msj_exam_x1_u04",
+  "sections": [
+    {
+      "title": "一、单选题（本大题共 8 小题，每小题 5 分，共 40 分。在每小题给出的四个选项中，只有一项是符合题目要求的）",
+      "items": [
+        {
+          "no": 1,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "stem": "数列 1，−1/2，1/3，−1/4，… 的一个通项公式是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "(−1)^n/n"
+            },
+            {
+              "label": "B",
+              "text": "(−1)^(n+1)/n"
+            },
+            {
+              "label": "C",
+              "text": "1/n"
+            },
+            {
+              "label": "D",
+              "text": "(−1)^(n+1)/(n+1)"
+            }
+          ],
+          "answer": "B",
+          "analysis": "观察各项：绝对值依次为 1，1/2，1/3，1/4，第 n 项的绝对值为 1/n；符号正负交替且第一项为正，可用 (−1)^(n+1) 表示。故通项公式为 a_n=(−1)^(n+1)/n，也可写成 (−1)^(n−1)/n。",
+          "topicIds": [
+            "msj_h1079"
+          ],
+          "itemId": "msj_exam_x1_u04_q01"
+        },
+        {
+          "no": 2,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "stem": "已知等差数列 {a_n} 中 a1=2，公差 d=3，则 a10 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "29"
+            },
+            {
+              "label": "B",
+              "text": "26"
+            },
+            {
+              "label": "C",
+              "text": "32"
+            },
+            {
+              "label": "D",
+              "text": "30"
+            }
+          ],
+          "answer": "A",
+          "analysis": "由等差数列通项公式 a_n=a1+(n−1)d，得 a10=2+9×3=2+27=29。可以逐项递推检验：2，5，8，11，…，第 10 项确实为 29。",
+          "topicIds": [
+            "msj_h1080"
+          ],
+          "itemId": "msj_exam_x1_u04_q02"
+        },
+        {
+          "no": 3,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "stem": "已知数列 {a_n} 的前 n 项和 S_n=n²+3n，则 a_n 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "2n+1"
+            },
+            {
+              "label": "B",
+              "text": "2n−2"
+            },
+            {
+              "label": "C",
+              "text": "2n+2"
+            },
+            {
+              "label": "D",
+              "text": "4n+2"
+            }
+          ],
+          "answer": "C",
+          "analysis": "当 n≥2 时 a_n=S_n−S_(n−1)=(n²+3n)−[(n−1)²+3(n−1)]=2n+2；当 n=1 时 a1=S1=4，也满足该式，故 a_n=2n+2（n≥1）。",
+          "topicIds": [
+            "msj_h1079",
+            "msj_h1080"
+          ],
+          "itemId": "msj_exam_x1_u04_q03"
+        },
+        {
+          "no": 4,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "stem": "已知等比数列 {a_n} 中 a1=3，公比 q=2，则前 5 项和 S5 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "48"
+            },
+            {
+              "label": "B",
+              "text": "96"
+            },
+            {
+              "label": "C",
+              "text": "189"
+            },
+            {
+              "label": "D",
+              "text": "93"
+            }
+          ],
+          "answer": "D",
+          "analysis": "由等比数列求和公式 S5=a1(1−q⁵)/(1−q)=3(2⁵−1)/(2−1)=3×31=93。也可逐项相加：3+6+12+24+48=93。",
+          "topicIds": [
+            "msj_h1081"
+          ],
+          "itemId": "msj_exam_x1_u04_q04"
+        },
+        {
+          "no": 5,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "stem": "在等差数列 {a_n} 中，若 a3+a7=10，则该数列前 9 项和 S9 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "50"
+            },
+            {
+              "label": "B",
+              "text": "45"
+            },
+            {
+              "label": "C",
+              "text": "90"
+            },
+            {
+              "label": "D",
+              "text": "105"
+            }
+          ],
+          "answer": "B",
+          "analysis": "由等差数列性质 a1+a9=a3+a7=10，故 S9=9(a1+a9)/2=9×10/2=45。这里利用了下标和相等的性质 a3+a7=a1+a9，避免求首项与公差。",
+          "topicIds": [
+            "msj_h1080"
+          ],
+          "itemId": "msj_exam_x1_u04_q05"
+        },
+        {
+          "no": 6,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "stem": "已知等比数列 {a_n} 的各项均为正数，且 a2·a6=16，则 a4 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "8"
+            },
+            {
+              "label": "B",
+              "text": "−4"
+            },
+            {
+              "label": "C",
+              "text": "4"
+            },
+            {
+              "label": "D",
+              "text": "±4"
+            }
+          ],
+          "answer": "C",
+          "analysis": "由等比数列性质 a2·a6=a4²，得 a4²=16，a4=±4。题设各项均为正数，故 a4=4，不能取 −4。",
+          "topicIds": [
+            "msj_h1081"
+          ],
+          "itemId": "msj_exam_x1_u04_q06"
+        },
+        {
+          "no": 7,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "stem": "用数学归纳法证明 1+3+5+…+(2n−1)=n² 时，从 n=k 到 n=k+1，等式左边需要添加的项是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "2k−1"
+            },
+            {
+              "label": "B",
+              "text": "2k"
+            },
+            {
+              "label": "C",
+              "text": "4k+2"
+            },
+            {
+              "label": "D",
+              "text": "2k+1"
+            }
+          ],
+          "answer": "D",
+          "analysis": "n=k 时左边最后一项是 2k−1，n=k+1 时左边最后一项是 2(k+1)−1=2k+1，中间只增加这一项。故添加的项为 2k+1。",
+          "topicIds": [
+            "msj_h1082"
+          ],
+          "itemId": "msj_exam_x1_u04_q07"
+        },
+        {
+          "no": 8,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "stem": "已知数列 {a_n} 满足 a1=1，a_(n+1)=2a_n+1（n≥1），则 a4 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "15"
+            },
+            {
+              "label": "B",
+              "text": "7"
+            },
+            {
+              "label": "C",
+              "text": "31"
+            },
+            {
+              "label": "D",
+              "text": "16"
+            }
+          ],
+          "answer": "A",
+          "analysis": "逐项递推：a2=2×1+1=3，a3=2×3+1=7，a4=2×7+1=15。也可把递推式改写为 a_n+1=2(a_n+1)，得 a_n+1=2^n，即 a_n=2^n−1，a4=15。",
+          "topicIds": [
+            "msj_h1083"
+          ],
+          "itemId": "msj_exam_x1_u04_q08"
+        }
+      ]
+    },
+    {
+      "title": "二、多选题（本大题共 4 小题，每小题 5 分，共 20 分。全部选对的得 5 分，部分选对的得 2 分，有选错的得 0 分）",
+      "items": [
+        {
+          "no": 9,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "medium",
+          "stem": "已知等差数列 {a_n} 中 a1=3，a4=12，则下列说法正确的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "公差 d=3"
+            },
+            {
+              "label": "B",
+              "text": "a7=21"
+            },
+            {
+              "label": "C",
+              "text": "前 10 项和 S10=165"
+            },
+            {
+              "label": "D",
+              "text": "a5/a2=2"
+            }
+          ],
+          "answer": "ABC",
+          "analysis": "由 a4=a1+3d 得 12=3+3d，d=3，A 正确；a7=3+6×3=21，B 正确；S10=10×3+(10×9/2)×3=30+135=165，C 正确；a5=15，a2=6，其比为 5/2 而不是 2，D 错误。",
+          "topicIds": [
+            "msj_h1080"
+          ],
+          "itemId": "msj_exam_x1_u04_q09"
+        },
+        {
+          "no": 10,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "medium",
+          "stem": "已知等比数列 {a_n} 中 a1=2，公比 q=−3，则下列说法正确的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "a4=−54"
+            },
+            {
+              "label": "B",
+              "text": "前 4 项和 S4=−40"
+            },
+            {
+              "label": "C",
+              "text": "该数列是递增数列"
+            },
+            {
+              "label": "D",
+              "text": "a2·a6=a3·a5"
+            }
+          ],
+          "answer": "ABD",
+          "analysis": "a4=2×(−3)³=−54，A 正确；S4=2[1−(−3)⁴]/[1−(−3)]=2×(−80)/4=−40，B 正确；a1=2，a2=−6，数列正负交替，不是递增数列，C 错误；由等比数列性质 a2·a6=a3·a5=a4²，D 正确。",
+          "topicIds": [
+            "msj_h1081"
+          ],
+          "itemId": "msj_exam_x1_u04_q10"
+        },
+        {
+          "no": 11,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "medium",
+          "stem": "已知数列 {a_n} 满足 a1=1，a_(n+1)=a_n/(1+a_n)（n≥1），则下列说法正确的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "a_n=1/n"
+            },
+            {
+              "label": "B",
+              "text": "a5=1/5"
+            },
+            {
+              "label": "C",
+              "text": "数列 {1/a_n} 是等差数列"
+            },
+            {
+              "label": "D",
+              "text": "a_(n+1)−a_n 是常数"
+            }
+          ],
+          "answer": "ABC",
+          "analysis": "由 a_(n+1)=a_n/(1+a_n) 取倒数得 1/a_(n+1)=1/a_n+1，故 {1/a_n} 是首项为 1、公差为 1 的等差数列，1/a_n=n，a_n=1/n，A、C 正确；a5=1/5，B 正确；而 a2−a1=−1/2，a3−a2=−1/6，差不是常数，D 错误。",
+          "topicIds": [
+            "msj_h1083"
+          ],
+          "itemId": "msj_exam_x1_u04_q11"
+        },
+        {
+          "no": 12,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "medium",
+          "stem": "关于数学归纳法，下列说法正确的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "第一步必须验证 n=1（或起始值 n0）时命题成立"
+            },
+            {
+              "label": "B",
+              "text": "第二步是在假设 n=k 时命题成立的前提下，推出 n=k+1 时命题也成立"
+            },
+            {
+              "label": "C",
+              "text": "只要验证 n=1、2、3 时命题成立，命题对一切正整数都成立"
+            },
+            {
+              "label": "D",
+              "text": "若缺少第一步的验证，第二步的推理不能保证命题对起始值成立"
+            }
+          ],
+          "answer": "ABD",
+          "analysis": "数学归纳法由两步构成：第一步验证起始值成立，第二步在归纳假设下推出下一个值成立，A、B 正确。只验证前几个值可能出现后面失效的例子，不能代替完整证明，C 错误。若第一步没有验证，第二步的推理链条没有起点，命题可能对起始值不成立，D 正确。",
+          "topicIds": [
+            "msj_h1082"
+          ],
+          "itemId": "msj_exam_x1_u04_q12"
+        }
+      ]
+    },
+    {
+      "title": "三、填空题（本大题共 4 小题，每小题 5 分，共 20 分）",
+      "items": [
+        {
+          "no": 13,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "medium",
+          "stem": "已知等差数列 {a_n} 中 a3=7，a5=11，则 a7 等于＿＿＿＿。",
+          "answer": "15",
+          "analysis": "由等差数列性质 a3、a5、a7 仍成等差数列，公差不变，a5−a3=4 相当于两步公差，故 d=2。于是 a7=a5+2d=11+4=15；也可先求 a1=3 再代入通项。",
+          "topicIds": [
+            "msj_h1080"
+          ],
+          "itemId": "msj_exam_x1_u04_q13"
+        },
+        {
+          "no": 14,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "medium",
+          "stem": "已知等比数列 {a_n} 中 a2=6，a4=24，且公比 q>0，则 a6 等于＿＿＿＿。",
+          "answer": "96",
+          "analysis": "由 a4=a2·q² 得 24=6q²，q²=4，又 q>0 故 q=2。于是 a6=a4·q²=24×4=96。注意 a2、a4、a6 也成等比数列，公比为 q²=4。",
+          "topicIds": [
+            "msj_h1081"
+          ],
+          "itemId": "msj_exam_x1_u04_q14"
+        },
+        {
+          "no": 15,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "medium",
+          "stem": "计算 1/(1×2)+1/(2×3)+…+1/(9×10) 的值为＿＿＿＿。",
+          "answer": "9/10",
+          "analysis": "因为 1/[n(n+1)]=1/n−1/(n+1)，逐项相消后只剩首尾两项 1−1/10，故原式等于 1−1/10=9/10。这种裂项相消是数列求和的常用转化方法。",
+          "topicIds": [
+            "msj_h1079",
+            "msj_h1083"
+          ],
+          "itemId": "msj_exam_x1_u04_q15"
+        },
+        {
+          "no": 16,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "medium",
+          "stem": "已知数列 {a_n} 的前 n 项和 S_n=2^n−1，则 a_n 等于＿＿＿＿。",
+          "answer": "2^(n−1)",
+          "analysis": "当 n≥2 时 a_n=S_n−S_(n−1)=(2^n−1)−(2^(n−1)−1)=2^(n−1)；当 n=1 时 a1=S1=1，也符合该式。故 a_n=2^(n−1)（n≥1），该数列是首项为 1、公比为 2 的等比数列。",
+          "topicIds": [
+            "msj_h1079"
+          ],
+          "itemId": "msj_exam_x1_u04_q16"
+        }
+      ]
+    },
+    {
+      "title": "四、解答题（本大题共 6 小题，共 70 分。解答应写出文字说明、证明过程或演算步骤）",
+      "items": [
+        {
+          "no": 17,
+          "score": 10,
+          "type": "solve",
+          "difficulty": "basic",
+          "stem": "已知等差数列 {a_n} 中 a3=7，a8=22。（1）求首项 a1 与公差 d；（2）求前 10 项和 S10。",
+          "answer": "（1）a1=1，d=3；（2）S10=145",
+          "analysis": "由 a8−a3=5d 得 22−7=5d，d=3；再由 a3=a1+2d 得 7=a1+6，a1=1。于是 S10=10a1+45d=10+135=145，也可用 S10=10(a1+a10)/2 计算。",
+          "topicIds": [
+            "msj_h1080"
+          ],
+          "scoreRule": [
+            {
+              "step": "由 a8−a3=5d 得 5d=15，故公差 d=3",
+              "score": 4
+            },
+            {
+              "step": "由 a3=a1+2d 得 a1=7−6=1，并用通项检验 a8=1+7×3=22 成立",
+              "score": 2
+            },
+            {
+              "step": "S10=10a1+10×9/2×d=10+45×3=145",
+              "score": 4
+            }
+          ],
+          "itemId": "msj_exam_x1_u04_q17"
+        },
+        {
+          "no": 18,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "medium",
+          "stem": "已知等比数列 {a_n} 的各项均为正数，且 a1=2，a3=8。（1）求公比 q 与通项公式；（2）求前 n 项和 S_n 的表达式；（3）求使 S_n>1000 成立的最小正整数 n。",
+          "answer": "（1）q=2，a_n=2^n；（2）S_n=2^(n+1)−2；（3）n=9",
+          "analysis": "由 a3=a1q² 得 8=2q²，q²=4，各项为正故 q=2，通项 a_n=2·2^(n−1)=2^n。求和得 S_n=2(2^n−1)/(2−1)=2^(n+1)−2。解 2^(n+1)−2>1000 即 2^(n+1)>1002，而 2⁹=512<1002<1024=2¹⁰，故 n+1≥10，n≥9，最小正整数为 9（此时 S9=1022）。",
+          "topicIds": [
+            "msj_h1081"
+          ],
+          "scoreRule": [
+            {
+              "step": "由 a3=a1q² 得 8=2q²，结合各项为正解得 q=2",
+              "score": 4
+            },
+            {
+              "step": "通项 a_n=a1q^(n−1)=2^n，前 n 项和 S_n=2(2^n−1)=2^(n+1)−2",
+              "score": 4
+            },
+            {
+              "step": "解 2^(n+1)>1002，由 2⁹=512<1002<1024=2¹⁰ 得 n+1≥10，最小正整数 n=9",
+              "score": 4
+            }
+          ],
+          "itemId": "msj_exam_x1_u04_q18"
+        },
+        {
+          "no": 19,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "medium",
+          "stem": "已知数列 {a_n} 的通项公式为 a_n=1/[(2n−1)(2n+1)]。（1）求前 n 项和 S_n；（2）求 S10 的值；（3）证明：对任意正整数 n，都有 S_n<1/2。",
+          "answer": "（1）S_n=n/(2n+1)；（2）S10=10/21；（3）证明见解析",
+          "analysis": "由 1/[(2n−1)(2n+1)]=(1/2)[1/(2n−1)−1/(2n+1)]，求和时相邻项相消，得 S_n=(1/2)[1−1/(2n+1)]=n/(2n+1)。S10=10/21。又 n/(2n+1)<n/(2n)=1/2，故对一切正整数 n 有 S_n<1/2。",
+          "topicIds": [
+            "msj_h1083",
+            "msj_h1079"
+          ],
+          "scoreRule": [
+            {
+              "step": "裂项：a_n=(1/2)[1/(2n−1)−1/(2n+1)]",
+              "score": 4
+            },
+            {
+              "step": "相加相消得 S_n=(1/2)[1−1/(2n+1)]=n/(2n+1)，代入 n=10 得 S10=10/21",
+              "score": 5
+            },
+            {
+              "step": "由 n/(2n+1)<n/(2n)=1/2，且 S_n 随 n 增大而增大，故对一切正整数 n 有 S_n<1/2",
+              "score": 3
+            }
+          ],
+          "itemId": "msj_exam_x1_u04_q19"
+        },
+        {
+          "no": 20,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "medium",
+          "stem": "已知数列 {a_n} 满足 a1=1，a_(n+1)=2a_n+3（n≥1）。（1）证明：数列 {a_n+3} 是等比数列；（2）求 {a_n} 的通项公式；（3）求 {a_n} 的前 n 项和 S_n。",
+          "answer": "（1）证明见解析，公比为 2；（2）a_n=2^(n+1)−3；（3）S_n=2^(n+2)−3n−4",
+          "analysis": "由 a_(n+1)+3=2a_n+6=2(a_n+3)，且 a1+3=4≠0，故 {a_n+3} 是首项 4、公比 2 的等比数列。于是 a_n+3=4·2^(n−1)=2^(n+1)，a_n=2^(n+1)−3。求和得 S_n=(2²+2³+…+2^(n+1))−3n=[2^(n+2)−4]−3n。",
+          "topicIds": [
+            "msj_h1083"
+          ],
+          "scoreRule": [
+            {
+              "step": "由 a_(n+1)+3=2a_n+6=2(a_n+3)，且 a1+3=4≠0，得 {a_n+3} 是首项 4、公比 2 的等比数列",
+              "score": 4
+            },
+            {
+              "step": "a_n+3=4·2^(n−1)=2^(n+1)，故 a_n=2^(n+1)−3，代入 n=1 检验得 a1=1",
+              "score": 3
+            },
+            {
+              "step": "S_n=(2²+2³+…+2^(n+1))−3n=(2^(n+2)−4)−3n=2^(n+2)−3n−4",
+              "score": 5
+            }
+          ],
+          "itemId": "msj_exam_x1_u04_q20"
+        },
+        {
+          "no": 21,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "hard",
+          "stem": "已知等差数列 {a_n} 的前 n 项和 S_n=n²−12n。（1）求通项公式 a_n；（2）求 S_n 的最小值以及取得最小值时 n 的值；（3）求 |a1|+|a2|+…+|a10| 的值。",
+          "answer": "（1）a_n=2n−13；（2）最小值为 −36，此时 n=6；（3）52",
+          "analysis": "由 a1=S1=−11，n≥2 时 a_n=S_n−S_(n−1)=2n−13，n=1 也符合，故 a_n=2n−13。又 S_n=(n−6)²−36，当 n=6 时取最小值 −36。由 a_n<0 当且仅当 n≤6，得前 6 项为负，|a1|+…+|a6|=−S6=36，而 a7+…+a10=S10−S6=−20+36=16，故总和为 52。",
+          "topicIds": [
+            "msj_h1084",
+            "msj_h020"
+          ],
+          "scoreRule": [
+            {
+              "step": "a1=S1=−11；n≥2 时 a_n=S_n−S_(n−1)=2n−13，n=1 也成立，故 a_n=2n−13",
+              "score": 4
+            },
+            {
+              "step": "配方得 S_n=(n−6)²−36，n 为正整数，故 n=6 时 S_n 取最小值 −36",
+              "score": 4
+            },
+            {
+              "step": "a_n<0 当且仅当 n≤6，故 |a1|+…+|a10|=−S6+(S10−S6)=36+16=52",
+              "score": 4
+            }
+          ],
+          "itemId": "msj_exam_x1_u04_q21"
+        },
+        {
+          "no": 22,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "hard",
+          "stem": "已知数列 {a_n} 的通项公式为 a_n=n·2^(n−1)。（1）求前 n 项和 S_n；（2）求 S5 的值。",
+          "answer": "（1）S_n=(n−1)2^n+1；（2）S5=129",
+          "analysis": "用错位相减：S_n=1+2·2+3·2²+…+n·2^(n−1)，两边乘 2 得 2S_n=1·2+2·2²+…+n·2^n，两式相减得 −S_n=1+2+2²+…+2^(n−1)−n·2^n=(2^n−1)−n·2^n，故 S_n=(n−1)2^n+1。代入 n=5 得 S5=4×32+1=129。",
+          "topicIds": [
+            "msj_h1085",
+            "msj_h1083"
+          ],
+          "scoreRule": [
+            {
+              "step": "写出 S_n=1+2·2+3·2²+…+n·2^(n−1)，两边乘 2 得 2S_n=1·2+2·2²+…+n·2^n",
+              "score": 4
+            },
+            {
+              "step": "两式相减得 −S_n=1+2+…+2^(n−1)−n·2^n=(2^n−1)−n·2^n，故 S_n=(n−1)2^n+1",
+              "score": 5
+            },
+            {
+              "step": "代入 n=5 得 S5=4×32+1=129，与逐项相加 1+4+12+32+80=129 一致",
+              "score": 3
+            }
+          ],
+          "itemId": "msj_exam_x1_u04_q22"
+        }
+      ]
+    }
+  ]
+}

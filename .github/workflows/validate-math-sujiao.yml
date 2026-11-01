@@ -1,0 +1,87 @@
+name: Validate math-sujiao Subject Data
+
+# 苏教版数学（math-sujiao）学科专用工作流。
+# 单独成文件：validate.yml 由并行会话维护，避免多人同改一份 workflow 互相卷进提交。
+
+on:
+  push:
+    paths:
+      - 'data/math-sujiao/**/*.json'
+      - 'data/math-sujiao/**/*.py'
+      - 'data/math-sujiao/**/*.md'
+      - 'scripts/test_math_sujiao.py'
+      - 'scripts/check_math_sujiao_exam.py'
+      - 'scripts/merge_learn_parts.py'
+      - 'scripts/gen_learn_shards.py'
+      - 'scripts/gen_lecture_shards.py'
+      - '.github/workflows/validate-math-sujiao.yml'
+  pull_request:
+    paths:
+      - 'data/math-sujiao/**/*.json'
+      - 'data/math-sujiao/**/*.py'
+      - 'scripts/test_math_sujiao.py'
+      - '.github/workflows/validate-math-sujiao.yml'
+  workflow_dispatch:
+
+jobs:
+  math_sujiao:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate structure & references (all subjects)
+        run: python3 scripts/validate.py --all
+
+      - name: Subject invariants · math-sujiao
+        run: python3 scripts/test_math_sujiao.py
+
+      - name: Every exam item carries itemId（整卷测试作答依赖）
+        run: |
+          python3 - <<'PY'
+          import glob, json, sys
+          bad = []
+          for p in glob.glob('data/math-sujiao/exams/*/*.json'):
+              d = json.load(open(p, encoding='utf-8'))
+              for sec in d.get('sections') or []:
+                  for it in sec.get('items') or []:
+                      if not it.get('itemId'):
+                          bad.append((p, it.get('no')))
+          print('缺 itemId 的题：', len(bad))
+          for b in bad[:10]:
+              print(' ', b)
+          sys.exit(1 if bad else 0)
+          PY
+
+      - name: Exam gate · math-sujiao（逐卷跑卷面检查）
+        run: |
+          n=0
+          for p in data/math-sujiao/exams/*/*.json; do
+            python3 scripts/check_math_sujiao_exam.py "$p" > /tmp/e.log 2>&1 || { echo "FAIL $p"; tail -5 /tmp/e.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 卷"
+
+      - name: Learn parts gate（分片存在时逐片跑）
+        run: |
+          shopt -s nullglob
+          parts=(data/math-sujiao/learn/_parts/L*.json)
+          if [ ${#parts[@]} -eq 0 ]; then echo "无学层分片，跳过"; exit 0; fi
+          for f in "${parts[@]}"; do
+            python3 scripts/check_math_sujiao_learn.py "$f" > /tmp/l.log 2>&1 || { echo "FAIL $f"; tail -5 /tmp/l.log; exit 1; }
+          done
+          echo "PASS ${#parts[@]} 学层分片"
+
+      - name: Lecture gate（讲解存在时逐份跑）
+        run: |
+          shopt -s nullglob
+          files=(data/math-sujiao/exam_lectures/*/*.json)
+          if [ ${#files[@]} -eq 0 ]; then echo "无讲解文件，跳过"; exit 0; fi
+          for f in "${files[@]}"; do
+            python3 scripts/check_math_sujiao_lecture.py "$f" > /tmp/c.log 2>&1 || { echo "FAIL $f"; tail -5 /tmp/c.log; exit 1; }
+          done
+          echo "PASS ${#files[@]} 份讲解"

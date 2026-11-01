@@ -1,0 +1,818 @@
+{
+ "tag": "h2c4",
+ "book": "沪教版必修第二册",
+ "unit_points": [
+  {
+   "id": "mhj_h009",
+   "description": "复数以 a+bi 的代数形式统一了实数与虚数，可在其中自由进行四则运算；它又能与复平面上的点、向量一一对应，并由此讨论实系数一元二次方程的虚根与复数的三角形式。",
+   "mastery_criteria": [
+    "能说出复数的实部、虚部、纯虚数与共轭复数的含义并正确判断",
+    "能熟练进行复数的加、减、乘、除运算，并用 i 的幂的周期规律化简",
+    "能把复数与复平面上的点或向量对应起来，用模与辐角刻画复数的位置"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h009_q1",
+     "topicId": "mhj_h009",
+     "prompt": "复数 3 减 4i 的实部与虚部分别是",
+     "question": "复数 3 减 4i 的实部与虚部分别是",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "复数写成 a+bi 的形式后，实数 a 是实部，实数 b 是虚部，虚部不带虚数单位 i。所以 3 减 4i 的实部是 3，虚部是 -4。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3 与 -4"
+      },
+      {
+       "label": "B",
+       "text": "3 与 4"
+      },
+      {
+       "label": "C",
+       "text": "-3 与 4"
+      },
+      {
+       "label": "D",
+       "text": "3 与 4i"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h009_q2",
+     "topicId": "mhj_h009",
+     "prompt": "计算 1 加 2i 与 3 减 i 的乘积，结果是",
+     "question": "计算 1 加 2i 与 3 减 i 的乘积，结果是",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "按多项式相乘展开得 3 减 i 加 6i 减 2 倍的 i 的平方，即 3 加 5i 加 2，所以乘积为 5 加 5i。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 加 7i"
+      },
+      {
+       "label": "B",
+       "text": "5 加 5i"
+      },
+      {
+       "label": "C",
+       "text": "5 加 7i"
+      },
+      {
+       "label": "D",
+       "text": "1 加 5i"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h009_q3",
+     "topicId": "mhj_h009",
+     "prompt": "复数 2 加 3i 与它的共轭复数在复平面上所对应的两个点关于",
+     "question": "复数 2 加 3i 与它的共轭复数在复平面上所对应的两个点关于",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "共轭复数是 2 减 3i，两点坐标分别为（2，3）与（2，-3），横坐标相同、纵坐标互为相反数，因此关于实轴对称。",
+     "options": [
+      {
+       "label": "A",
+       "text": "虚轴对称"
+      },
+      {
+       "label": "B",
+       "text": "原点对称"
+      },
+      {
+       "label": "C",
+       "text": "实轴对称"
+      },
+      {
+       "label": "D",
+       "text": "直线 y 等于 x 对称"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h009_q4",
+     "topicId": "mhj_h009",
+     "prompt": "计算 1 加 i 与 1 减 i 的乘积，所得结果是实数几",
+     "question": "计算 1 加 i 与 1 减 i 的乘积，所得结果是实数几",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "1 加 i 与 1 减 i 互为共轭复数，而一对共轭复数的积等于模的平方，即 1 的平方加 1 的平方等于 2。",
+     "verify": "{\"type\": \"num\", \"value\": 2}"
+    },
+    {
+     "id": "mhj_h009_q5",
+     "topicId": "mhj_h009",
+     "prompt": "利用 i 的幂的周期规律，计算 1 加 i 的六次方，结果写成代数形式",
+     "question": "利用 i 的幂的周期规律，计算 1 加 i 的六次方，结果写成代数形式",
+     "answer": "-8i",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "先算 1 加 i 的平方等于 2i，再算 2i 的三次方等于 8 倍的 i 的三次方，而 i 的三次方等于 -i，所以结果是 -8i。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "mhj_h1026",
+   "page": 148,
+   "description": "在复数范围内进行加、减、乘、除四则运算，理解实部、虚部、纯虚数与共轭复数的含义，会用 i 的幂的周期规律和共轭性质化简计算。",
+   "mastery_criteria": [
+    "能按多项式运算法则完成复数的加、减、乘运算",
+    "能把分子分母同乘分母的共轭复数，将商化为代数形式",
+    "能由实部、虚部的条件求出实数参数的取值或取值范围"
+   ],
+   "misconceptions": [
+    "把虚部误认为带虚数单位 i 的整体，例如认为 3 减 4i 的虚部是 负 4i",
+    "两复数相等时只比较实部，忘记虚部也必须相等",
+    "认为纯虚数只需实部为零，忽略虚部不能为零这一条件",
+    "计算 i 的幂时忘记取模 4 的周期，把 i 的四次方写成 -1"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1026_q1",
+     "topicId": "mhj_h1026",
+     "prompt": "计算 i 的 2023 次方，结果是",
+     "question": "计算 i 的 2023 次方，结果是",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "对任意整数 n 都有 i 的四 n 次方等于 1，而 2023 除以 4 余 3，所以 i 的 2023 次方等于 i 的 4n 加 3 次方，其值为 -i。",
+     "options": [
+      {
+       "label": "A",
+       "text": "i"
+      },
+      {
+       "label": "B",
+       "text": "-1"
+      },
+      {
+       "label": "C",
+       "text": "-i"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1026_q2",
+     "topicId": "mhj_h1026",
+     "prompt": "计算 1 加 3i 与 -4 加 2i 的和，结果是",
+     "question": "计算 1 加 3i 与 -4 加 2i 的和，结果是",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两个复数相加时实部与实部分别相加、虚部与虚部分别相加，即 1 减 4 得 -3，3 加 2 得 5，所以和是 -3 加 5i。",
+     "options": [
+      {
+       "label": "A",
+       "text": "-3 加 5i"
+      },
+      {
+       "label": "B",
+       "text": "-3 加 i"
+      },
+      {
+       "label": "C",
+       "text": "5 减 3i"
+      },
+      {
+       "label": "D",
+       "text": "-3 加 5"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1026_q3",
+     "topicId": "mhj_h1026",
+     "prompt": "计算 2 减 3i 与 4 加 2i 的乘积，结果是",
+     "question": "计算 2 减 3i 与 4 加 2i 的乘积，结果是",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "按多项式相乘展开得 8 加 4i 减 12i 减 6 倍的 i 的平方，把 i 的平方换成 -1 得 8 减 8i 加 6，所以乘积是 14 减 8i。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2 减 8i"
+      },
+      {
+       "label": "B",
+       "text": "14 减 8i"
+      },
+      {
+       "label": "C",
+       "text": "14 加 8i"
+      },
+      {
+       "label": "D",
+       "text": "2 加 8i"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1026_q4",
+     "topicId": "mhj_h1026",
+     "prompt": "计算 3 加 i 除以 2 减 i 的商，结果是",
+     "question": "计算 3 加 i 除以 2 减 i 的商，结果是",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "分子分母同乘分母的共轭复数 2 加 i，分母化为 2 的平方加 1 的平方等于 5，分子化为 6 减 1 加（3 加 2）i 等于 5 加 5i，所以商是 1 加 i。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 减 i"
+      },
+      {
+       "label": "B",
+       "text": "5 加 5i"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "1 加 i"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1026_q5",
+     "topicId": "mhj_h1026",
+     "prompt": "计算 1 加 i 的四次方，所得结果是",
+     "question": "计算 1 加 i 的四次方，所得结果是",
+     "answer": -4,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "先算 1 加 i 的平方等于 2i，再平方得 2i 的平方，即 4 倍的 i 的平方，而 i 的平方等于 -1，所以结果是 -4。",
+     "verify": "{\"type\": \"num\", \"value\": -4}"
+    },
+    {
+     "id": "mhj_h1026_q6",
+     "topicId": "mhj_h1026",
+     "prompt": "已知复数 m 的平方减 1 加（m 加 1）i 是纯虚数，则实数 m 的值是",
+     "question": "已知复数 m 的平方减 1 加（m 加 1）i 是纯虚数，则实数 m 的值是",
+     "answer": 1,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "纯虚数要求实部为零且虚部不为零，由实部为零得 m 等于 1 或 -1，再由虚部 m 加 1 不为零排除 m 等于 -1，故 m 等于 1。",
+     "verify": "{\"type\": \"num\", \"value\": 1}"
+    },
+    {
+     "id": "mhj_h1026_q7",
+     "topicId": "mhj_h1026",
+     "prompt": "已知复数 z 等于 1 加 2i，则 z 的共轭复数写成代数形式是",
+     "question": "已知复数 z 等于 1 加 2i，则 z 的共轭复数写成代数形式是",
+     "answer": "1-2i",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "共轭复数只把虚部改变符号，实部保持不变，所以 1 加 2i 的共轭复数是 1 减 2i。"
+    },
+    {
+     "id": "mhj_h1026_q8",
+     "topicId": "mhj_h1026",
+     "prompt": "计算 1 加 2i、3 加 4i、-2 加 i 三个复数的连乘积，结果写成代数形式",
+     "question": "计算 1 加 2i、3 加 4i、-2 加 i 三个复数的连乘积，结果写成代数形式",
+     "answer": "-25i",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "先算前两个的积得 -5 加 10i，再与 -2 加 i 相乘，展开得 10 减 5i 减 20i 加 10 倍的 i 的平方，即 10 减 25i 减 10，结果是 -25i。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1027",
+   "page": 158,
+   "description": "把复数看作复平面上的点或向量，理解复数加减法与向量加减法的一致性，并会用两复数之差的模表示复平面上两点间的距离。",
+   "mastery_criteria": [
+    "能由复数写出对应点的坐标，并判断点所在的象限或坐标轴",
+    "能用终点与起点对应的复数之差表示向量的对应复数",
+    "能用模的运算性质与两点距离公式计算长度"
+   ],
+   "misconceptions": [
+    "把虚轴上的点都当成纯虚数，忽略坐标原点表示实数零",
+    "认为向量 AB 对应的复数是 zA 减 zB，把起点与终点的顺序弄反",
+    "把复数的模当成实部的绝对值，忽略虚部也要计入",
+    "误以为两复数模的和等于模的和，丢掉三角不等式的方向"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1027_q1",
+     "topicId": "mhj_h1027",
+     "prompt": "复平面上点 3 与 -2 对应的复数是",
+     "question": "复平面上点 3 与 -2 对应的复数是",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "点（a，b）对应的复数是 a 加 bi，横坐标给出实部，纵坐标给出虚部，所以点（3，-2）对应 3 减 2i。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3 减 2i"
+      },
+      {
+       "label": "B",
+       "text": "3 加 2i"
+      },
+      {
+       "label": "C",
+       "text": "-2 加 3i"
+      },
+      {
+       "label": "D",
+       "text": "-3 加 2i"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1027_q2",
+     "topicId": "mhj_h1027",
+     "prompt": "复数 2 加 3i 与它的共轭复数在复平面上对应的两点关于",
+     "question": "复数 2 加 3i 与它的共轭复数在复平面上对应的两点关于",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "共轭复数 2 减 3i 对应点（2，-3），与点（2，3）横坐标相同、纵坐标互为相反数，所以两点关于实轴对称。",
+     "options": [
+      {
+       "label": "A",
+       "text": "虚轴对称"
+      },
+      {
+       "label": "B",
+       "text": "实轴对称"
+      },
+      {
+       "label": "C",
+       "text": "原点对称"
+      },
+      {
+       "label": "D",
+       "text": "直线 y 等于 x 对称"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1027_q3",
+     "topicId": "mhj_h1027",
+     "prompt": "点 A 与点 B 对应的复数分别是 2 减 3i 与 4 加 5i，则向量 AB 对应的复数是",
+     "question": "点 A 与点 B 对应的复数分别是 2 减 3i 与 4 加 5i，则向量 AB 对应的复数是",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "向量 AB 对应的复数是终点对应的复数减去起点对应的复数，即（4 加 5i）减（2 减 3i），实部得 2，虚部得 8，所以是 2 加 8i。",
+     "options": [
+      {
+       "label": "A",
+       "text": "6 加 2i"
+      },
+      {
+       "label": "B",
+       "text": "-2 减 8i"
+      },
+      {
+       "label": "C",
+       "text": "2 加 8i"
+      },
+      {
+       "label": "D",
+       "text": "6 减 8i"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1027_q4",
+     "topicId": "mhj_h1027",
+     "prompt": "已知复数 z 的模为 2，复数 w 的模为 3，则 z 与 w 乘积的模等于",
+     "question": "已知复数 z 的模为 2，复数 w 的模为 3，则 z 与 w 乘积的模等于",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "积的模等于模的积，所以 z 乘 w 的模等于 2 乘 3 等于 6，这一点由模的乘法性质直接得到。",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "9"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1027_q5",
+     "topicId": "mhj_h1027",
+     "prompt": "复平面上点 1 与 0 和点 4 与 4 对应的两点之间的距离是",
+     "question": "复平面上点 1 与 0 和点 4 与 4 对应的两点之间的距离是",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "两点距离等于对应复数之差的模，差的实部为 3、虚部为 4，模是 3 的平方加 4 的平方再开方，等于 5。",
+     "verify": "{\"type\": \"num\", \"value\": 5}"
+    },
+    {
+     "id": "mhj_h1027_q6",
+     "topicId": "mhj_h1027",
+     "prompt": "在复平面上给定平行四边形 OABC，点 A 与点 C 对应的复数分别是 -1 加 i 与 3 加 2i，则点 B 所对应复数的实部是",
+     "question": "在复平面上给定平行四边形 OABC，点 A 与点 C 对应的复数分别是 -1 加 i 与 3 加 2i，则点 B 所对应复数的实部是",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由复数加法的平行四边形法则，点 B 对应的复数是这两个复数之和，即 2 加 3i，所以它的实部等于 2。",
+     "verify": "{\"type\": \"num\", \"value\": 2}"
+    },
+    {
+     "id": "mhj_h1027_q7",
+     "topicId": "mhj_h1027",
+     "prompt": "已知复数 z 等于 3 减 4i，则 z 与它的共轭复数的乘积等于",
+     "question": "已知复数 z 等于 3 减 4i，则 z 与它的共轭复数的乘积等于",
+     "answer": 25,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "一对共轭复数的积等于模的平方，而 3 减 4i 的模是 3 的平方加 4 的平方再开方等于 5，所以乘积等于 25。",
+     "verify": "{\"type\": \"num\", \"value\": 25}"
+    },
+    {
+     "id": "mhj_h1027_q8",
+     "topicId": "mhj_h1027",
+     "prompt": "若复数 z 满足它与 2 的差的模等于 2，且它与 2i 的差的模也等于 2，求复数 z",
+     "question": "若复数 z 满足它与 2 的差的模等于 2，且它与 2i 的差的模也等于 2，求复数 z",
+     "answer": "0 或 2+2i",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "设 z 等于 x 加 yi，两个条件分别给出 x 的平方加 y 的平方等于 4x，以及 x 的平方加 y 的平方等于 4y，两式比较得 x 等于 y，代回得 x 等于 0 或 2，所以 z 等于 0 或 2 加 2i。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1028",
+   "page": 166,
+   "description": "讨论实系数一元二次方程在复数范围内的根，掌握判别式小于零时的一对共轭虚根，并用根与系数的关系求系数、分解因式。",
+   "mastery_criteria": [
+    "能求出负实数在复数范围内的平方根",
+    "能按判别式的三种情形写出实系数一元二次方程的根",
+    "能用根与系数的关系求待定系数，并在复数范围内分解二次三项式"
+   ],
+   "misconceptions": [
+    "认为判别式小于零时方程无解，忽略复数范围内有一对共轭虚根",
+    "求负实数的平方根时漏掉负号，把 -25 的平方根写成 5i 而不是正负 5i",
+    "用根与系数的关系时忘记两根之和等于负的 a 分之 b，符号弄反",
+    "分解因式时漏掉二次项系数，写成两个一次因式之积而没乘上前面的系数"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1028_q1",
+     "topicId": "mhj_h1028",
+     "prompt": "在复数范围内，-9 的平方根是",
+     "question": "在复数范围内，-9 的平方根是",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "负实数 c 在复数范围内的平方根是两个共轭的纯虚数，即正负根号下负 c 再乘 i，所以 -9 的平方根是正负 3i。",
+     "options": [
+      {
+       "label": "A",
+       "text": "正负 3i"
+      },
+      {
+       "label": "B",
+       "text": "3i"
+      },
+      {
+       "label": "C",
+       "text": "正负 3"
+      },
+      {
+       "label": "D",
+       "text": "9i"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1028_q2",
+     "topicId": "mhj_h1028",
+     "prompt": "方程 x 的平方加 2 等于 0 在复数范围内的根是",
+     "question": "方程 x 的平方加 2 等于 0 在复数范围内的根是",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由方程得 x 的平方等于 -2，负实数的平方根是正负根号 2 乘 i，所以方程的两个根是正负根号 2 乘 i。",
+     "options": [
+      {
+       "label": "A",
+       "text": "正负根号 2"
+      },
+      {
+       "label": "B",
+       "text": "正负 2i"
+      },
+      {
+       "label": "C",
+       "text": "正负根号 2 乘 i"
+      },
+      {
+       "label": "D",
+       "text": "没有根"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1028_q3",
+     "topicId": "mhj_h1028",
+     "prompt": "方程 2 倍的 x 的平方减 4x 加 5 等于 0 在复数范围内的根是",
+     "question": "方程 2 倍的 x 的平方减 4x 加 5 等于 0 在复数范围内的根是",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "判别式等于 16 减 40 等于 -24 小于零，故有一对共轭虚根，由求根公式得 4 加减 2 倍根号 6 乘 i 再除以 4，即 1 加减 2 分之根号 6 乘 i。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 加减根号 6 乘 i"
+      },
+      {
+       "label": "B",
+       "text": "1 加减 2 分之根号 6 乘 i"
+      },
+      {
+       "label": "C",
+       "text": "2 分之 1 加减根号 6 乘 i"
+      },
+      {
+       "label": "D",
+       "text": "2 加减根号 6 乘 i"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1028_q4",
+     "topicId": "mhj_h1028",
+     "prompt": "已知 2 加 3i 是实系数一元二次方程 x 的平方加 bx 加 c 等于 0 的一个根，则 b 与 c 的值分别是",
+     "question": "已知 2 加 3i 是实系数一元二次方程 x 的平方加 bx 加 c 等于 0 的一个根，则 b 与 c 的值分别是",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "实系数方程的虚根成对出现，另一根是 2 减 3i，两根之和为 4 等于负 b，两根之积为 4 加 9 等于 13 即 c，所以 b 等于 -4，c 等于 13。",
+     "options": [
+      {
+       "label": "A",
+       "text": "b 等于 4，c 等于 13"
+      },
+      {
+       "label": "B",
+       "text": "b 等于 -4，c 等于 -13"
+      },
+      {
+       "label": "C",
+       "text": "b 等于 4，c 等于 -13"
+      },
+      {
+       "label": "D",
+       "text": "b 等于 -4，c 等于 13"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1028_q5",
+     "topicId": "mhj_h1028",
+     "prompt": "方程 4 倍的 x 的平方加 25 等于 0 在复数范围内的根的虚部的绝对值是",
+     "question": "方程 4 倍的 x 的平方加 25 等于 0 在复数范围内的根的虚部的绝对值是",
+     "answer": 2.5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "由方程得 x 的平方等于负 4 分之 25，其平方根为正负 2 分之 5 乘 i，所以虚部的绝对值是 2 分之 5，即 2.5。",
+     "verify": "{\"type\": \"num\", \"value\": 2.5}"
+    },
+    {
+     "id": "mhj_h1028_q6",
+     "topicId": "mhj_h1028",
+     "prompt": "若 x1 与 x2 是方程 2 倍的 x 的平方加 x 加 3 等于 0 的两个根，则 x1 与 x2 的积等于",
+     "question": "若 x1 与 x2 是方程 2 倍的 x 的平方加 x 加 3 等于 0 的两个根，则 x1 与 x2 的积等于",
+     "answer": 1.5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由根与系数的关系，两根之积等于常数项除以二次项系数，即 3 除以 2，等于 1.5，这一关系在虚根时同样成立。",
+     "verify": "{\"type\": \"num\", \"value\": 1.5}"
+    },
+    {
+     "id": "mhj_h1028_q7",
+     "topicId": "mhj_h1028",
+     "prompt": "已知 k 是实常数，且关于 x 的方程 x 的平方减 2kx 减 k 等于 0 有两个虚根，则 k 的取值范围是",
+     "question": "已知 k 是实常数，且关于 x 的方程 x 的平方减 2kx 减 k 等于 0 有两个虚根，则 k 的取值范围是",
+     "answer": "(-1,0)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "方程有两个虚根等价于判别式小于零，判别式为 4 倍的 k 的平方加 4k，由 4k 乘（k 加 1）小于零解得 k 大于 -1 且小于 0。"
+    },
+    {
+     "id": "mhj_h1028_q8",
+     "topicId": "mhj_h1028",
+     "prompt": "在复数范围内把 2 倍的 x 的平方减 6x 加 5 分解因式",
+     "question": "在复数范围内把 2 倍的 x 的平方减 6x 加 5 分解因式",
+     "answer": "2(x-3/2-i/2)(x-3/2+i/2)",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "先解对应方程，判别式等于 36 减 40 等于 -4，根为 4 分之 6 加减 2i，即 2 分之 3 加减 2 分之 1 乘 i，所以原式等于 2 乘两个一次因式之积。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1029",
+   "page": 169,
+   "description": "理解复数辐角与辐角主值的含义，知道非零复数的辐角有无数个且彼此相差 2π 的整数倍，并会用模与辐角表示复数的实部与虚部。",
+   "mastery_criteria": [
+    "能说出辐角与辐角主值的定义，并指出辐角主值的取值范围",
+    "能由复数在复平面上的位置求出它的一个辐角与辐角主值",
+    "能用模与辐角通过余弦、正弦写出复数的实部与虚部"
+   ],
+   "misconceptions": [
+    "认为一个非零复数的辐角只有一个，忽略相差 2π 整数倍的那些角",
+    "求辐角主值时把范围写成负 π 到 π，与教材规定的 0 到 2π 混淆",
+    "把第二象限复数 -根号 3 加 i 的辐角主值算成 6 分之 π",
+    "忘记复数 0 的辐角是任意的，硬给它指定一个主值"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1029_q1",
+     "topicId": "mhj_h1029",
+     "prompt": "复数 1 加 i 的一个辐角是",
+     "question": "复数 1 加 i 的一个辐角是",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "辐角是以 x 轴正半轴为始边、射线 OZ 为终边的角，点（1，1）在第一象限且在两轴夹角的平分线上，所以一个辐角是 4 分之 π。",
+     "options": [
+      {
+       "label": "A",
+       "text": "4 分之 π"
+      },
+      {
+       "label": "B",
+       "text": "2 分之 π"
+      },
+      {
+       "label": "C",
+       "text": "4 分之 3π"
+      },
+      {
+       "label": "D",
+       "text": "负 4 分之 π"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1029_q2",
+     "topicId": "mhj_h1029",
+     "prompt": "复数 -1 的辐角主值是",
+     "question": "复数 -1 的辐角主值是",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "复数 -1 对应点（-1，0），射线在 x 轴负半轴上，按逆时针从正半轴转到该位置得 π，它满足不小于 0 且小于 2π，所以辐角主值是 π。",
+     "options": [
+      {
+       "label": "A",
+       "text": "0"
+      },
+      {
+       "label": "B",
+       "text": "2 分之 π"
+      },
+      {
+       "label": "C",
+       "text": "π"
+      },
+      {
+       "label": "D",
+       "text": "2 分之 3π"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1029_q3",
+     "topicId": "mhj_h1029",
+     "prompt": "虚数单位 i 的辐角可以表示为",
+     "question": "虚数单位 i 的辐角可以表示为",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "i 对应点（0，1），射线在 y 轴正半轴上，一个辐角是 2 分之 π，加上 2π 的整数倍仍是它的辐角，所以辐角是 2 分之 π 加 2kπ。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2kπ，k 为整数"
+      },
+      {
+       "label": "B",
+       "text": "2 分之 π 加 2kπ，k 为整数"
+      },
+      {
+       "label": "C",
+       "text": "π 加 2kπ，k 为整数"
+      },
+      {
+       "label": "D",
+       "text": "负 2 分之 π 加 2kπ，k 为整数"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1029_q4",
+     "topicId": "mhj_h1029",
+     "prompt": "复数 -根号 3 加 i 的辐角主值是",
+     "question": "复数 -根号 3 加 i 的辐角主值是",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "该复数对应点在第二象限，模为 2，由实部等于模乘余弦得余弦值为负 2 分之根号 3，正弦值为 2 分之 1，故辐角主值是 6 分之 5π。",
+     "options": [
+      {
+       "label": "A",
+       "text": "6 分之 π"
+      },
+      {
+       "label": "B",
+       "text": "6 分之 7π"
+      },
+      {
+       "label": "C",
+       "text": "6 分之 11π"
+      },
+      {
+       "label": "D",
+       "text": "6 分之 5π"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1029_q5",
+     "topicId": "mhj_h1029",
+     "prompt": "复数 -根号 3 加 i 的模等于",
+     "question": "复数 -根号 3 加 i 的模等于",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "复数的模等于实部的平方加虚部的平方再开方，即 3 加 1 再开方，等于 2，它也是对应向量 OZ 的模。",
+     "verify": "{\"type\": \"num\", \"value\": 2}"
+    },
+    {
+     "id": "mhj_h1029_q6",
+     "topicId": "mhj_h1029",
+     "prompt": "已知非零复数 z 的模为 6，辐角为 3 分之 π，则 z 的实部等于",
+     "question": "已知非零复数 z 的模为 6，辐角为 3 分之 π，则 z 的实部等于",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "实部等于模乘这个辐角的余弦，6 乘 2 分之 1 等于 3，虚部则等于 6 乘正弦值，即 3 倍根号 3。",
+     "verify": "{\"type\": \"num\", \"value\": 3}"
+    },
+    {
+     "id": "mhj_h1029_q7",
+     "topicId": "mhj_h1029",
+     "prompt": "复数 -2i 的辐角主值是",
+     "question": "复数 -2i 的辐角主值是",
+     "answer": "3π/2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "该复数对应点（0，-2），射线在 y 轴负半轴上，从 x 轴正半轴逆时针转到该位置得 2 分之 3π，它在 0 到 2π 之间且唯一，故为辐角主值。"
+    },
+    {
+     "id": "mhj_h1029_q8",
+     "topicId": "mhj_h1029",
+     "prompt": "已知非零复数 z 的模为 2 倍根号 2，辐角主值为 4 分之 π，求 z 的代数形式",
+     "question": "已知非零复数 z 的模为 2 倍根号 2，辐角主值为 4 分之 π，求 z 的代数形式",
+     "answer": "2+2i",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "实部等于 2 倍根号 2 乘余弦 4 分之 π，即 2 倍根号 2 乘 2 分之根号 2 等于 2；虚部同理也等于 2，所以 z 等于 2 加 2i。"
+    }
+   ]
+  }
+ ]
+}

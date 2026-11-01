@@ -49,7 +49,7 @@
 - 册名一律带版本前缀（`苏教版一年级上册` / `苏科版七年级上册` / `苏教版必修第一册`），与人教版（裸册名）不冲突。
 - 单元点 5 题、课时点 8 题；课时点带 `page`（教材印刷页，目录未给者留空）与 `misconceptions`（≥2 条）。
 - `domain` 按学段两套口径：义务教育用四领域（数与代数／图形与几何／统计与概率／综合与实践），高中用三主题（函数／几何与代数／统计与概率）。判定按单元名关键词，顺序为「统计 → 图形 → 综合与实践 → 数与代数」，避免「数据的收集、整理与描述」被「整理」误判成综合与实践（已实测修正）。
-- `subject` 仍为 `math`：站点按「出版社」维度区分，不新增假学科。
+- `subject` 改为桶名（`math-sujiao` / `math-suke`）：2026-11-02 起与 `math-hebei` / `math-bj` / `math-hujiao` 统一。此前写死 `math` 会让 `scripts/rebuild_aggregates_only.py` 把这 642 个点归到人教桶（`normalize_to_ref_schema.norm_topic` 只补空值、不覆盖），站点「数学」入口会混进苏教/苏科的点。改后 `validate.py math-sujiao` / `math-suke` 均 0 error，`test_math_sujiao.py` 39/39。
 
 ## 四、数据来源与可靠性
 
@@ -65,7 +65,26 @@
 3. **课时名与教材措辞不一致的个案**：`s1b` 第六单元原按 docx 写作「求被减数／求减数」，经该册题材包核验（「被减数」0 次、「相差」6 次）已改为「求相差数的实际问题」「求比一个数多几（少几）的数」，改名处集中登记在 `build_skeleton.py::LESSON_NAME_FIX`，可复算。另有 `s2b` 一上「线段的认识与画法」一名在该册 OCR 文本里查不到「线段」字样（OCR 缺失所致，教材实有此内容），暂按通用口径保留。
 4. **页码部分留空**：小学课时点 `page` 多由 docx 推导，无页码者留空，需按单元起页在题材包里定位。
 4. **课标未匹配 15 条**：多为「综合与实践」类点（苏教 14、苏科 1），课标无对应条目句，`standards` 为空属正常。
-5. **站点未挂载**：`learn/`（学层精讲）、`exams/`（试卷）尚未生产，故这两版暂不进入站点「讲解／整卷」入口；知识点图谱数据本身已可按 `data/<subject>/*.json` 读取。
+5. **站点挂载**：`exams/`（160 卷）已产出并逐卷 PASS，`learn/`（393 篇学层精讲）与 `exam_lectures/`（160 份讲解）正在生产；`diagnose/exam-index.json` 已登记苏教 160 卷（`math-sujiao`）。
+
+## 五之二、整卷（2026-11-02 补齐）
+
+| 项 | 规模 | 门禁 |
+|---|---|---|
+| 卷数 | **160**（108 单元 + 52 期中期末） | 父代逐卷重跑 `check_math_sujiao_exam.py`，**160/160 PASS** |
+| 派单 | `_exam_shards/E*.json`，27 片（`gen_exam_shards.py math-sujiao`） | 分片不跨册 |
+| 卷面 | 小学1-2：40′/100 分/36 题；小学3-6：60′/100 分/31 题；高中：120′/150 分/22 题 | 分值合 100/150，题号连续 |
+| 索引 | `diagnose/exam-index.json` 苏教 160 卷 | `build_exam_index.py` 的 `SUBJECT_EDITION` 认「苏教版」 |
+
+## 五之三、学层精讲与试卷讲解（在建）
+
+| 项 | 规模 | 命令 |
+|---|---|---|
+| 学层派单 | 84 片 / **393 篇** | `gen_learn_shards.py math-sujiao --per-shard 5` |
+| 学层合同 | `learn/_shards/WORKER_LEARN.md`（七段 + 五步逐字 + 教材原文回表） | 教材 OCR `/tmp/msj/<tag>/ocr/` |
+| 学层自检 | `check_math_sujiao_learn.py` | 合并器 `merge_learn_parts.py math-sujiao scripts/check_math_sujiao_learn.py --write` |
+| 讲解派单 | 45 片 / 160 卷 | `gen_lecture_shards.py math-sujiao --per-shard 4` |
+| 讲解合同 | `_exam_shards/_lecture_shards/WORKER_LECTURE.md` | 小学 3500–7200 / 高中 4500–8800 汉字 |
 
 ## 六、复现命令
 
