@@ -67,7 +67,7 @@ def main():
     for k in ("book", "kind", "paper", "stage", "grade", "duration", "fullScore", "scope", "sections"):
         if not ex.get(k):
             E(f"缺字段 {k}")
-    if ex.get("kind") not in ("unit", "midterm", "final"):
+    if ex.get("kind") not in ("unit", "mid", "midterm", "fin", "final"):   # mid/fin 为新口径，midterm/final 保留兼容
         E(f"kind 非法：{ex.get('kind')}")
     grade = int(ex.get("grade") or 0)
     rule = STAGE_RULES["小学"].get(grade)

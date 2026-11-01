@@ -68,7 +68,7 @@ def papers():
                         "duration": ex["duration"], "grade": ex["grade"],
                         "stage": ex["stage"], "scope": ex.get("scope") or [],
                         "itemCount": sum(len(s["items"]) for s in ex["sections"])})
-    order = {"unit": 0, "midterm": 1, "final": 2}
+    order = {"unit": 0, "mid": 1, "midterm": 1, "fin": 2, "final": 2}
     # ⚠️ 中文卷名不能按字符排：'一'<'三'<'二'<'五'<'四'（按码点），
     #    必须把「第X单元/第X章」解析成数字；册次也要按年级册序而不是字符串。
     book_order = {b: i for i, b in enumerate([

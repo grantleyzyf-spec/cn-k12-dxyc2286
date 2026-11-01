@@ -226,7 +226,7 @@
 
   function renderPaper() {
     const p = S.paper, m = S.meta;
-    const kindName = { unit: '单元测试卷', midterm: '期中测试卷', final: '期末测试卷' }[p.kind] || '测试卷';
+    const kindName = { unit: '单元测试卷', mid: '期中测试卷', midterm: '期中测试卷', fin: '期末测试卷', final: '期末测试卷' }[p.kind] || '测试卷';
     const ed = editionOf(m);
     const subjName = SUBJECT_NAME[m.subject || 'math'] || (m.subject || '数学');
     let head = `

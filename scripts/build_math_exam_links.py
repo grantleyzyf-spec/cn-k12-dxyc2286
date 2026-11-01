@@ -66,7 +66,7 @@ def paper_code(paper, kind):
         # 否则高中卷会落到默认 u1，全部撞成同一个 examId
         m = re.search(r"第([一二三四五六七八九十百]+)(?:单元|章)", paper)
         return f"u{cn2int(m.group(1) if m else '一')}"
-    if kind == "midterm":
+    if kind in ("mid", "midterm"):
         return "mid_" + (paper[-1].lower() if paper[-1] in "AB" else "a")
     return "fin_" + (paper[-1].lower() if paper[-1] in "AB" else "a")
 
