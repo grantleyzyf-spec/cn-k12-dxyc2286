@@ -21,8 +21,10 @@ def main():
     b = json.load(open(bank_path, encoding="utf-8"))
 
     want_topics = {}
+    only_lessons = bool(sh.get("only_lessons"))
     for u in sh["units"]:
-        want_topics[u["unit_id"]] = "unit"
+        if not only_lessons:
+            want_topics[u["unit_id"]] = "unit"
         for l in u["lessons"]:
             want_topics[l["id"]] = "lesson"
 
