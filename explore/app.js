@@ -20,6 +20,7 @@
     math: '数学', chinese: '语文', english: '英语', physics: '物理', chemistry: '化学',
     biology: '生物', history: '历史', geography: '地理', science: '科学',
     'information-technology': '信息科技', japanese: '日语', russian: '俄语',
+    politics: '道德与法治／思想政治',
     german: '德语', french: '法语', spanish: '西班牙语', music: '音乐', art: '美术', 'math-bsd': '数学（北师大版）', 'math-xiangjiao': '数学（湘教版）',
     'math-bj': '数学（北京版）', 'math-qd': '数学（青岛版）', 'math-hujiao': '数学（沪教版）',
     'mental-health': '心理健康'

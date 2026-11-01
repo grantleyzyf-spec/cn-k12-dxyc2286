@@ -42,7 +42,7 @@ SUBJECT_LABEL = {
     "biology": "高", "history": "初·高", "german": "高", "russian": "小·初·高", "geography": "初·高",
     "chemistry": "初·高", "information-technology": "小·初", "french": "高", "japanese": "高",
     "spanish": "小·初·高", "art": "小·初·高", "music": "小·初·高", "science": "小",
-    "mental-health": "小·初·高",
+    "mental-health": "小·初·高", "politics": "小·初·高",
 }
 
 
