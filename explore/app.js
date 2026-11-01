@@ -258,6 +258,68 @@
       .attr('text-anchor', 'middle').attr('class', 'empty-sub').text(sub);
   }
 
+  /* ---------- 分层图（照 pansgo/math 的层级做法）----------
+     1) dagre 自上而下分层：上层=先修，中间=当前，下层=用到它的知识点
+     2) 向上层数可选 1/2/3/全部，选「全部」且祖先过多（>40）时按年级折叠成聚合节点
+     3) 节点按年级着色，当前节点加深描边
+     4) 图注写清「N 个知识点 / M 条先修 · 向上 X 层 · 向下 1 层」 */
+  var FOLD_AT = 40;
+  var ancestorsOpen = false;
+
+  function gradeTone(g) {
+    g = Number(g) || 1;
+    var hue = g <= 6 ? 172 : (g <= 9 ? 219 : 335);          // 小学青 / 初中蓝 / 高中玫红
+    var step = g <= 6 ? (g - 1) : (g <= 9 ? (g - 7) : (g - 10));
+    var light = Math.max(0.30, 0.58 - step * 0.05);         // 年级越大越深
+    return d3.color('hsl(' + hue + ',52%,' + Math.round(light * 100) + '%)').formatHex();
+  }
+
+  function nodeLabelW(label) { return Math.max(58, Math.min(190, String(label).length * 13 + 26)); }
+
+  function setFold(total, folded) {
+    var box = $('graph-fold');
+    if (!box) return;
+    if (depth !== Infinity || total <= FOLD_AT) { box.hidden = true; box.innerHTML = ''; return; }
+    box.hidden = false;
+    box.innerHTML = folded
+      ? '祖先较多，已按年级收起。' +
+        '<button type="button" id="fold-toggle" data-open="1">共 ' + total + ' 个，点此展开全部</button>'
+      : '已展开全部 ' + total + ' 个知识点。<button type="button" id="fold-toggle" data-open="0">按年级收起</button>';
+  }
+
+  function layoutDagre(nodes, links) {
+    if (!window.dagre) {   // 兜底：没有 dagre 就排成竖列，至少保证层次可读
+      nodes.forEach(function (n, i) { n.x = (i % 6) * 150; n.y = Math.floor(i / 6) * 90; });
+      return;
+    }
+    var g = new window.dagre.graphlib.Graph({ multigraph: false, compound: false });
+    var dense = nodes.length > 60;
+    g.setGraph({
+      rankdir: 'TB',
+      ranksep: dense ? 52 : 72,
+      nodesep: dense ? 22 : 34,
+      edgesep: dense ? 8 : 14,
+      marginx: 20, marginy: 20,
+      ranker: dense ? 'longest-path' : 'network-simplex'
+    });
+    g.setDefaultEdgeLabel(function () { return {}; });
+    nodes.forEach(function (n) { g.setNode(n.id, { width: nodeLabelW(n.name) + 26, height: 34 }); });
+    var pairSeen = {};
+    links.forEach(function (l) {
+      var k = l.source + '>' + l.target;
+      if (pairSeen[k]) return;              // dagre 非多重图：同一对节点只加一条边
+      pairSeen[k] = 1;
+      g.setEdge(l.source, l.target);
+    });
+    window.dagre.layout(g);
+    nodes.forEach(function (n) {
+      var p = g.node(n.id);
+      n.x = p ? p.x : 0;
+      n.y = p ? p.y : 0;
+      n.w = p ? p.width : nodeLabelW(n.name);
+    });
+  }
+
   function renderGraph() {
     var svg = svgEl();
     svg.selectAll('*').remove();
@@ -267,34 +329,78 @@
     if (!selectedId || !byId.has(selectedId)) {
       emptyState(svg, '先在左侧选一个知识点', '可按学段、年级、领域筛选，或直接搜索名称 / 章节');
       $('graph-meta').textContent = '';
+      setFold(0, false);
       return;
     }
 
     var up = bfs(selectedId, parentMap, depth);
     var down = bfs(selectedId, childMap, 1);
+    var upIds = []; up.forEach(function (v, id) { upIds.push(id); });
+    var downIds = []; down.forEach(function (v, id) { downIds.push(id); });
+    var total = upIds.length + downIds.length + 1;
+    var folded = depth === Infinity && total > FOLD_AT && !ancestorsOpen;
 
-    var ids = [selectedId];
-    up.forEach(function (v, id) { ids.push(id); });
-    down.forEach(function (v, id) { if (ids.indexOf(id) < 0) ids.push(id); });
+    var nodes = [], links = [], gradeOf = new Map();
 
-    var nodes = ids.map(function (id) {
-      var t = byId.get(id);
-      return {
-        id: id, name: t.name, grade: t.grade,
-        role: id === selectedId ? 'center' : (up.has(id) ? 'up' : 'down'),
-        level: id === selectedId ? 0 : (up.has(id) ? -up.get(id) : down.get(id))
-      };
-    });
-    var nodeIds = new Set(ids);
-    var links = dependenciesData
-      .filter(function (d) { return d && nodeIds.has(d.from) && nodeIds.has(d.to); })
-      .map(function (d) { return { source: d.from, target: d.to, type: d.type }; });
+    if (!folded) {
+      var ids = [selectedId].concat(upIds).concat(downIds.filter(function (id) { return !up.has(id); }));
+      var seen = {};
+      ids.forEach(function (id) {
+        if (seen[id]) return; seen[id] = 1;
+        var t = byId.get(id);
+        nodes.push({
+          id: id, name: t.name, grade: t.grade,
+          role: id === selectedId ? 'center' : (up.has(id) ? 'up' : 'down')
+        });
+      });
+      var nodeIds = new Set(nodes.map(function (n) { return n.id; }));
+      links = dependenciesData
+        .filter(function (d) { return d && nodeIds.has(d.from) && nodeIds.has(d.to); })
+        .map(function (d) { return { source: d.from, target: d.to, type: d.type }; });
+    } else {
+      // 按年级聚合祖先；当前知识点与下游保持真实节点
+      var byGrade = new Map();
+      upIds.forEach(function (id) {
+        if (id === selectedId) return;
+        var g = byId.get(id).grade;
+        if (!byGrade.has(g)) byGrade.set(g, []);
+        byGrade.get(g).push(id);
+      });
+      byGrade.forEach(function (ids, g) {
+        var label = gradeText(g) + '·' + ids.length + '个';
+        nodes.push({ id: 'grade:' + g, name: label, grade: g, role: 'agg', count: ids.length });
+        ids.forEach(function (id) { gradeOf.set(id, g); });
+      });
+      var ct = byId.get(selectedId);
+      nodes.push({ id: selectedId, name: ct.name, grade: ct.grade, role: 'center' });
+      downIds.forEach(function (id) {
+        var t = byId.get(id);
+        nodes.push({ id: id, name: t.name, grade: t.grade, role: 'down' });
+      });
+      var edgeSeen = {};
+      dependenciesData.forEach(function (d) {
+        if (!d) return;
+        var ga = gradeOf.get(d.from), gb = gradeOf.get(d.to);
+        if (ga != null && gb != null) {
+          if (ga === gb) return;
+          var k = ga + '>' + gb;
+          if (!edgeSeen[k] || d.type !== 'soft') edgeSeen[k] = { source: 'grade:' + ga, target: 'grade:' + gb, type: d.type };
+        } else if (ga != null && d.to === selectedId) {
+          edgeSeen['agg->sel:' + ga] = { source: 'grade:' + ga, target: selectedId, type: d.type };
+        } else if (gb != null && d.from === selectedId) {
+          edgeSeen['sel->agg:' + gb] = { source: selectedId, target: 'grade:' + gb, type: d.type };
+        } else if (d.from === selectedId && downIds.indexOf(d.to) >= 0) {
+          edgeSeen['sel->' + d.to] = { source: selectedId, target: d.to, type: d.type };
+        } else if (d.to === selectedId && upIds.indexOf(d.from) >= 0 && gradeOf.get(d.from) == null) {
+          edgeSeen['up->sel:' + d.from] = { source: d.from, target: selectedId, type: d.type };
+        }
+      });
+      links = Object.keys(edgeSeen).map(function (k) { return edgeSeen[k]; });
+    }
 
-    var radius = function (d) { return d.role === 'center' ? 14 : (d.role === 'up' ? 9 : 7); };
-    var rowGap = Math.max(96, Math.min(150, h / Math.max(2, up.size + 0.8)));
+    layoutDagre(nodes, links);
 
     var g = svg.append('g').attr('class', 'viewport');
-
     var defs = svg.append('defs');
     [['arr-hard', '#0f6e62'], ['arr-soft', '#8b9aa7']].forEach(function (p) {
       defs.append('marker').attr('id', p[0]).attr('viewBox', '0 -5 10 10')
@@ -302,61 +408,69 @@
         .attr('orient', 'auto').append('path').attr('d', 'M0,-4L9,0L0,4').attr('fill', p[1]);
     });
 
-    simulation = d3.forceSimulation(nodes)
-      .force('link', d3.forceLink(links).id(function (d) { return d.id; })
-        .distance(function (l) { return l.type === 'soft' ? 165 : 125; }).strength(0.5))
-      .force('charge', d3.forceManyBody().strength(function (d) { return d.role === 'center' ? -420 : -240; }))
-      .force('collide', d3.forceCollide().radius(function (d) { return radius(d) + 34; }))
-      .force('y', d3.forceY(function (d) { return h / 2 + d.level * rowGap; }).strength(0.92))
-      .force('x', d3.forceX(function (d) { return d.role === 'down' ? w * 0.6 : w * 0.46; }).strength(0.1));
+    function radius(d) {
+      return d.role === 'center' ? 15 : (d.role === 'agg' ? 17 : (d.role === 'up' ? 9 : 7));
+    }
 
     var link = g.append('g').attr('class', 'links').selectAll('line').data(links).join('line')
       .attr('class', function (d) { return 'link ' + (d.type === 'soft' ? 'soft' : 'hard'); })
       .attr('marker-end', function (d) { return d.type === 'soft' ? 'url(#arr-soft)' : 'url(#arr-hard)'; });
 
-    var node = g.append('g').attr('class', 'nodes').selectAll('g').data(nodes).join('g')
+    var node = g.append('g').attr('class', 'nodes').selectAll('g').data(nodes, function (d) { return d.id; }).join('g')
       .attr('class', function (d) { return 'node ' + d.role; })
-      .on('click', function (ev, d) { if (d.id !== selectedId) select(d.id, true); })
+      .attr('transform', function (d) { return 'translate(' + d.x + ',' + d.y + ')'; })
+      .on('click', function (ev, d) {
+        if (d.role === 'agg') { ancestorsOpen = true; renderGraph(); return; }
+        if (d.id !== selectedId) select(d.id, true);
+      })
       .call(d3.drag()
-        .on('start', function (ev, d) { if (!ev.active) simulation.alphaTarget(0.2).restart(); d.fx = d.x; d.fy = d.y; })
-        .on('drag', function (ev, d) { d.fx = ev.x; d.fy = ev.y; })
-        .on('end', function (ev, d) { if (!ev.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; }));
+        .on('drag', function (ev, d) {
+          d.x = ev.x; d.y = ev.y;
+          d3.select(this).attr('transform', 'translate(' + d.x + ',' + d.y + ')');
+          link.attr('x1', function (l) { return l.source.x; }).attr('y1', function (l) { return l.source.y; })
+            .attr('x2', function (l) { return l.target.x; }).attr('y2', function (l) { return l.target.y; });
+        }));
 
     node.append('circle')
       .attr('r', radius)
-      .attr('fill', function (d) { return colorOf(d.grade); })
-      .attr('stroke', function (d) { return d.role === 'center' ? '#0f6e62' : null; })
-      .attr('stroke-width', function (d) { return d.role === 'center' ? 4 : null; });
+      .attr('fill', function (d) { return d.role === 'agg' ? '#eef4f3' : gradeTone(d.grade); })
+      .attr('stroke', function (d) { return d.role === 'center' ? '#0f6e62' : (d.role === 'agg' ? '#0f6e62' : null); })
+      .attr('stroke-width', function (d) { return d.role === 'center' ? 4 : (d.role === 'agg' ? 1.6 : null); })
+      .attr('stroke-dasharray', function (d) { return d.role === 'agg' ? '4 3' : null; });
 
     node.append('text').attr('class', 'node-label')
       .attr('dx', function (d) { return radius(d) + 6; }).attr('dy', 4)
       .text(function (d) {
-        var n = d.name || '', max = d.role === 'center' ? 22 : 14;
+        var n = d.name || '', max = d.role === 'center' ? 22 : (d.role === 'agg' ? 20 : 14);
         return n.length > max ? n.slice(0, max) + '…' : n;
       });
     node.append('title').text(function (d) {
+      if (d.role === 'agg') return d.name + '\n点击展开这一年级的全部知识点';
       var t = byId.get(d.id);
-      return d.name + '\n' + (isSeniorBook(t.grade) ? bookLabel(t) : gradeText(t.grade)) +
-        ' · ' + (t.domain || '') + '\n' + (t.chapter || '');
+      return d.name + '\n' + gradeText(t.grade) + ' · ' + (t.domain || '') + '\n' + (t.chapter || '');
     });
-
-    simulation.on('tick', function () {
-      link.attr('x1', function (d) { return d.source.x; }).attr('y1', function (d) { return d.source.y; })
-        .attr('x2', function (d) { return d.target.x; }).attr('y2', function (d) { return d.target.y; });
-      node.attr('transform', function (d) { return 'translate(' + d.x + ',' + d.y + ')'; });
-    });
-    simulation.on('end', function () { fitView(); });
 
     zoomTarget = g;
-    zoomBehavior = d3.zoom().scaleExtent([0.25, 3]).on('zoom', function (ev) {
+    zoomBehavior = d3.zoom().scaleExtent([0.2, 3]).on('zoom', function (ev) {
       g.attr('transform', ev.transform);
     });
     svg.call(zoomBehavior).on('dblclick.zoom', null);
+    fitView();
 
     var t = byId.get(selectedId);
-    $('graph-meta').textContent = stageName(t.grade) + ' · ' +
-      (isSeniorBook(t.grade) ? bookLabel(t) : gradeText(t.grade)) + ' · ' + (t.domain || '') +
-      ' · 先修 ' + up.size + ' · 下游 ' + down.size;
+    var layerText = depth === Infinity ? '全部祖先' : (depth + ' 层');
+    var head = folded
+      ? '已按年级收起（全部 ' + total + ' 个知识点）'
+      : '局部图 ' + nodes.length + ' 个知识点、' + links.length + ' 条先修';
+    $('graph-meta').textContent = head + ' · 向上 ' + layerText + ' · 向下 1 层 · ' +
+      gradeText(t.grade) + ' · ' + (t.domain || '');
+    setFold(total, folded);
+
+    var btn = $('fold-toggle');
+    if (btn) btn.addEventListener('click', function () {
+      ancestorsOpen = btn.getAttribute('data-open') === '1';
+      renderGraph();
+    });
   }
 
   function fitView() {
@@ -508,8 +622,20 @@
 
     $('depth-select').addEventListener('change', function (e) {
       depth = e.target.value === 'all' ? Infinity : parseInt(e.target.value, 10);
+      ancestorsOpen = false;                       // 换层数先回到折叠态
+      try { sessionStorage.setItem('cnmExplore.depth', e.target.value); } catch (err) {}
       renderGraph();
     });
+    try {
+      var savedDepth = sessionStorage.getItem('cnmExplore.depth');
+      if (savedDepth) {
+        var ds = $('depth-select');
+        if ([].some.call(ds.options, function (o) { return o.value === savedDepth; })) {
+          ds.value = savedDepth;
+          depth = savedDepth === 'all' ? Infinity : parseInt(savedDepth, 10);
+        }
+      }
+    } catch (err) {}
     $('fit-btn').addEventListener('click', fitView);
     $('zoom-in').addEventListener('click', function () { zoomBy(1.25); });
     $('zoom-out').addEventListener('click', function () { zoomBy(0.8); });
