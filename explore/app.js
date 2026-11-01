@@ -498,13 +498,21 @@
       var span = Math.min(nodeLabelW(l.source.name) * 0.62, 132);
       l._sx = l.source.x + (n > 1 ? (l._i - (n - 1) / 2) * (span / Math.max(1, n - 1)) : 0);
     });
+    // 汇入同一个节点时，也在目标框顶边分散落点，避免多条线挤成一束
+    var targetIndex = new Map();
+    links.forEach(function (l) { l._j = (targetIndex.get(l.target.id) || 0); targetIndex.set(l.target.id, l._j + 1); });
+    links.forEach(function (l) {
+      var n = targetIndex.get(l.target.id) || 1;
+      var span = Math.min(nodeLabelW(l.target.name) * 0.62, 132);
+      l._tx = l.target.x + (n > 1 ? (l._j - (n - 1) / 2) * (span / Math.max(1, n - 1)) : 0);
+    });
 
     function edgePath(l) {
       var sx = l._sx == null ? l.source.x : l._sx;
+      var tx = l._tx == null ? l.target.x : l._tx;
       var sy = l.source.y + nodeH(l.source) / 2, ty = l.target.y - nodeH(l.target) / 2;
       var my = sy + (ty - sy) * 0.55;
-      return 'M' + sx + ',' + sy + ' C' + sx + ',' + my + ' ' +
-        l.target.x + ',' + my + ' ' + l.target.x + ',' + (ty - 3);
+      return 'M' + sx + ',' + sy + ' C' + sx + ',' + my + ' ' + tx + ',' + my + ' ' + tx + ',' + (ty - 3);
     }
     var link = g.append('g').attr('class', 'links').selectAll('path').data(links).join('path')
       .attr('class', function (d) { return 'link ' + (d.type === 'soft' ? 'soft' : 'hard'); })
