@@ -84,7 +84,8 @@ def main():
         for u in v['units']:
             for kind, tid, name, chapter, page, objs in [
                 ('unit', u['unit_id'], u['unit_name'], u['unit_chapter'], None, up),
-                *[('lesson', l['id'], l['sec_name'], l['chapter'], l.get('page'), lp)
+                *[('lesson', l['id'], l.get('sec_name') or l.get('name') or '', l['chapter'],
+                   l.get('page'), lp)
                   for l in u['lessons']]]:
                 o = objs.get(tid)
                 if not o:

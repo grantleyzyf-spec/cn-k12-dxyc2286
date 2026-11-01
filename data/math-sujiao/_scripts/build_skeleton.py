@@ -32,6 +32,13 @@ _kp = os.path.join(SRC, 'keshi.json')
 if os.path.isfile(_kp):
     KESHI = json.load(open(_kp, encoding='utf-8'))
 
+# 课时名人工校订（教材实证：该册题材包里「被减数/减数」0 次、「相差」6 次，
+# 大单元 docx 课时表用的术语与教材不一致 ⇒ 按教材措辞改名，并在此留痕可复算）
+LESSON_NAME_FIX = {
+    'msj_p1091': ('求相差数的实际问题', '教材用「相差」；docx 原写「求被减数的实际问题」'),
+    'msj_p1092': ('求比一个数多几（少几）的数', '教材用「相差」；docx 原写「求减数的实际问题」'),
+}
+
 EDITIONS = {
     'math-sujiao': {
         'edition': '苏教版', 'prefix': 'msj',
