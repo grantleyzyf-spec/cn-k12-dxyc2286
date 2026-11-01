@@ -13,7 +13,8 @@ import sys
 from collections import Counter
 
 REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
-SUBJECT = 'math-suke'
+# 默认学科取本脚本所在目录名（data/<subject>/_scripts/），避免复制脚本后查错目录
+SUBJECT = os.path.basename(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 for _i, _a in enumerate(sys.argv):
     if _a == '--subject' and _i + 1 < len(sys.argv):
         SUBJECT = sys.argv[_i + 1]
