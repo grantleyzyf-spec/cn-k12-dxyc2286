@@ -174,11 +174,11 @@
     return '?' + q.toString() + (hashId ? '#' + encodeURIComponent(hashId) : '');
   }
 
-  function select(id, scroll) {
+  function select(id, scroll, panel) {
     if (!byId.has(id)) return;
     selectedId = id;
     markActive();
-    showInfo(byId.get(id));
+    if (panel !== false) showInfo(byId.get(id));   // 首屏自动选中时不弹面板，图占满宽度更好读
     renderGraph();
     if (scroll) markActive();
     history.replaceState(null, '', urlFor(id));
@@ -266,6 +266,15 @@
   var FOLD_AT = 40;
   var ancestorsOpen = false;
 
+  // 让图区正好填满一屏（页面本身不滚动），否则最底层会被屏幕下沿切掉
+  function fitHeight() {
+    var m = document.querySelector('.main');
+    if (!m) return;
+    var top = m.getBoundingClientRect().top + (window.scrollY || 0);
+    m.style.minHeight = '0';
+    m.style.height = Math.max(340, window.innerHeight - top - 6) + 'px';
+  }
+
   function initLegendToggle() {
     var legend = document.querySelector('.legend');
     var btn = document.getElementById('legend-btn');
@@ -338,18 +347,30 @@
       });
     }
 
-    var gapX = 34, rowGap = 96, y = 0;
+    // 一行放不下就折成多条子行（仍属同一层，层带会把它们框在一起），避免整体被缩小到看不清
+    var gapX = 28, gapY = 56, rowGap = 92, maxRowW = 1e9, y = 0;   // 不折行：一折行连线会穿过上一排方框
+    nodes.forEach(function (n) { n.w = nodeLabelW(n.name); });
     levels.forEach(function (lv) {
       var arr = rows.get(lv);
-      var widths = arr.map(function (n) { return nodeLabelW(n.name); });
-      var total = widths.reduce(function (s, w) { return s + w; }, 0) + gapX * Math.max(0, arr.length - 1);
-      var x = -total / 2, hMax = 0;
-      arr.forEach(function (n, i) {
-        n.w = widths[i];
-        n.x = x + widths[i] / 2;
-        n.y = y + nodeH(n) / 2;
-        x += widths[i] + gapX;
-        hMax = Math.max(hMax, nodeH(n));
+      var lines = [[]], lineW = 0;
+      arr.forEach(function (n) {
+        var add = (lines[lines.length - 1].length ? gapX : 0) + n.w;
+        if (lineW + add > maxRowW && lines[lines.length - 1].length) {
+          lines.push([]); lineW = 0; add = n.w;
+        }
+        lines[lines.length - 1].push(n); lineW += add;
+      });
+      var hMax = 0;
+      lines.forEach(function (line, li) {
+        var total = line.reduce(function (s, n) { return s + n.w; }, 0) + gapX * Math.max(0, line.length - 1);
+        var x = -total / 2;
+        var hh = Math.max.apply(null, line.map(nodeH));
+        line.forEach(function (n) {
+          n.x = x + n.w / 2;
+          n.y = y + li * (hh + gapY) + nodeH(n) / 2;
+          x += n.w + gapX;
+        });
+        hMax = Math.max(hMax, line.length ? hh + li * (hh + gapY) : 0);
       });
       y += hMax + rowGap;
     });
@@ -444,8 +465,9 @@
 
     // 层带：每条层一个横向色带，左侧写层名与个数
     var band = g.append('g').attr('class', 'layers');
-    var xsAll = nodes.map(function (d) { return d.x; });
-    var minX = Math.min.apply(null, xsAll) - 190, maxX = Math.max.apply(null, xsAll) + 190;
+    var minNodeX = Math.min.apply(null, nodes.map(function (d) { return d.x - nodeLabelW(d.name) / 2; }));
+    var maxNodeX = Math.max.apply(null, nodes.map(function (d) { return d.x + nodeLabelW(d.name) / 2; }));
+    var minX = minNodeX - 212, maxX = maxNodeX + 64;   // 左侧留出层名药丸的槽位，避免压住节点
     levels.forEach(function (lv, i) {
       var arr = rows.get(lv);
       var ys = arr.map(function (d) { return d.y; });
@@ -453,22 +475,35 @@
       var isNow = lv === 0;
       band.append('rect').attr('x', minX).attr('y', top).attr('width', maxX - minX)
         .attr('height', bot - top).attr('rx', 14)
-        .attr('fill', isNow ? '#e8f4f1' : (i % 2 ? '#f2f7f7' : '#ffffff'))
-        .attr('stroke', isNow ? '#bcded7' : '#dbe7e9').attr('stroke-width', isNow ? 1.6 : 1);
+        .attr('fill', isNow ? '#dff0ec' : (i % 2 ? '#eef5f6' : '#ffffff'))
+        .attr('stroke', isNow ? '#a9d2c9' : '#cfe0e3').attr('stroke-width', isNow ? 2 : 1.2);
       var hasAgg = arr.some(function (d) { return d.role === 'agg'; });
       var label = isNow ? '当前'
         : (lv < 0 ? (hasAgg ? '先修（已按年级收起）' : '先修第 ' + (-lv) + ' 层') : '下游 1 层');
-      band.append('text').attr('x', minX + 16).attr('y', top + 23)
-        .attr('class', 'layer-label')
-        .attr('fill', isNow ? '#0b5c53' : '#516a72')
-        .text(label + '（' + arr.length + '）');
+      var pillText = label + '（' + arr.length + '）';
+      var pillW = pillText.length * 13.5 + 26;
+      var pill = band.append('g').attr('class', 'layer-pill');
+      pill.append('rect').attr('x', minX + 14).attr('y', top + 8).attr('width', pillW).attr('height', 26)
+        .attr('rx', 13).attr('fill', isNow ? '#0b5c53' : '#4d6b74');
+      pill.append('text').attr('x', minX + 14 + pillW / 2).attr('y', top + 26)
+        .attr('class', 'layer-label').attr('text-anchor', 'middle')
+        .attr('fill', '#ffffff').text(pillText);
     });
 
     // 连线：父框底边 → 子框顶边
+    var sibIndex = new Map();
+    links.forEach(function (l) { l._i = (sibIndex.get(l.source.id) || 0); sibIndex.set(l.source.id, l._i + 1); });
+    links.forEach(function (l) {
+      var n = sibIndex.get(l.source.id) || 1;
+      var span = Math.min(nodeLabelW(l.source.name) * 0.62, 132);
+      l._sx = l.source.x + (n > 1 ? (l._i - (n - 1) / 2) * (span / Math.max(1, n - 1)) : 0);
+    });
+
     function edgePath(l) {
+      var sx = l._sx == null ? l.source.x : l._sx;
       var sy = l.source.y + nodeH(l.source) / 2, ty = l.target.y - nodeH(l.target) / 2;
       var my = sy + (ty - sy) * 0.55;
-      return 'M' + l.source.x + ',' + sy + ' C' + l.source.x + ',' + my + ' ' +
+      return 'M' + sx + ',' + sy + ' C' + sx + ',' + my + ' ' +
         l.target.x + ',' + my + ' ' + l.target.x + ',' + (ty - 3);
     }
     var link = g.append('g').attr('class', 'links').selectAll('path').data(links).join('path')
@@ -495,7 +530,7 @@
       .attr('y', function (d) { return -nodeH(d) / 2; })
       .attr('width', function (d) { return nodeLabelW(d.name); })
       .attr('height', nodeH).attr('rx', 10)
-      .attr('fill', function (d) { return d.role === 'agg' ? '#ffffff' : gradeTone(d.grade); })
+      .attr('fill', function (d) { return d.role === 'agg' ? '#ffffff' : (d.role === 'center' ? '#0b5c53' : gradeTone(d.grade)); })
       .attr('stroke', function (d) { return d.role === 'center' ? '#08453e' : (d.role === 'agg' ? '#0f6e62' : '#ffffff'); })
       .attr('stroke-width', function (d) { return d.role === 'center' ? 3.4 : 1.2; })
       .attr('stroke-dasharray', function (d) { return d.role === 'agg' ? '6 3' : null; });
@@ -504,7 +539,7 @@
       .attr('text-anchor', 'middle').attr('dy', '0.35em')
       .attr('fill', function (d) { return d.role === 'agg' ? '#0b5c53' : '#ffffff'; })
       .text(function (d) {
-        var n = d.name || '', max = d.role === 'center' ? 20 : 15;
+        var n = d.name || '', max = d.role === 'center' ? 20 : 12;
         return n.length > max ? n.slice(0, max) + '…' : n;
       });
     node.append('title').text(function (d) {
@@ -521,11 +556,13 @@
     fitView();
 
     var t2 = byId.get(selectedId);
-    var layerText = depth === Infinity ? '全部祖先' : (depth + ' 层');
+    var realUp = 0;
+    up.forEach(function (v) { if (v > realUp) realUp = v; });
+    var layerText = realUp ? ('向上 ' + realUp + ' 层') : '上方没有先修知识点';
     var head = folded
       ? '已按年级收起（全部 ' + total + ' 个知识点）'
       : '局部图 ' + nodes.length + ' 个知识点、' + links.length + ' 条先修';
-    $('graph-meta').textContent = head + ' · 向上 ' + layerText + ' · 向下 1 层 · ' +
+    $('graph-meta').textContent = head + ' · ' + layerText + ' · 向下 ' + (downIds.length ? '1 层' : '0 层') + ' · ' +
       gradeText(t2.grade) + ' · ' + (t2.domain || '');
     setFold(total, folded);
 
@@ -585,8 +622,7 @@
       }
       renderList();
       if (selectedId) {
-        showInfo(byId.get(selectedId));
-        renderGraph();
+        renderGraph();                      // 首屏不弹详情面板：图先占满宽度
         history.replaceState(null, '', urlFor(selectedId));
       } else { renderGraph(); }
     } catch (e) {
@@ -677,7 +713,7 @@
     s.addEventListener('keydown', function (e) {
       if (e.key !== 'Enter') return;
       var list = filteredTopics();
-      if (list.length) select(list[0].id, true);
+      if (list.length) select(list[0].id, true, false);
     });
 
     $('depth-select').addEventListener('change', function (e) {
@@ -701,7 +737,7 @@
     $('zoom-out').addEventListener('click', function () { zoomBy(0.8); });
     $('reset-btn').addEventListener('click', function () {
       var list = filteredTopics();
-      if (list.length) select(list[0].id, true);
+      if (list.length) select(list[0].id, true, false);
     });
     $('info-close').addEventListener('click', closeInfo);
 
@@ -714,5 +750,7 @@
 
   bind();
   initLegendToggle();
+  fitHeight();
+  window.addEventListener('resize', function () { fitHeight(); if (selectedId) renderGraph(); });
   loadData();
 })();
