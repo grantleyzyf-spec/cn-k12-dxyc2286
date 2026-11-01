@@ -5,6 +5,8 @@
 (function () {
   'use strict';
 
+  var selSubject = document.getElementById('sel-subject');
+  var selEdition = document.getElementById('sel-edition');
   var selBook = document.getElementById('sel-book');
   var selUnit = document.getElementById('sel-unit');
   var listEl = document.getElementById('lesson-list');
@@ -134,23 +136,65 @@
     return null;
   }
 
-  function fillBooks() {
-    var list = (INDEX && INDEX.books) || [];
-    var html = [];
-    var stageNow = '';
+  function subjects() {
+    var list = (INDEX && INDEX.books) || [], out = [];
+    list.forEach(function (b) {
+      if (!out.some(function (x) { return x.id === b.subject; })) {
+        out.push({ id: b.subject || 'math', name: b.subjectName || '数学' });
+      }
+    });
+    return out;
+  }
+
+  function editions(subject) {
+    var list = (INDEX && INDEX.books) || [], out = [];
+    list.forEach(function (b) {
+      if ((b.subject || 'math') !== subject) return;
+      var e = b.edition || '人教版';
+      if (out.indexOf(e) < 0) out.push(e);
+    });
+    return out;
+  }
+
+  function booksOf(subject, edition) {
+    return ((INDEX && INDEX.books) || []).filter(function (b) {
+      return (b.subject || 'math') === subject && (b.edition || '人教版') === edition;
+    });
+  }
+
+  function fillSubjects() {
+    var ss = subjects();
+    selSubject.innerHTML = ss.map(function (s) {
+      return '<option value="' + esc(s.id) + '">' + esc(s.name) + '</option>';
+    }).join('');
+  }
+
+  function fillEditions(subject, keep) {
+    var es = editions(subject);
+    selEdition.innerHTML = es.map(function (e) {
+      return '<option value="' + esc(e) + '">' + esc(e) + '</option>';
+    }).join('');
+    if (keep && es.indexOf(keep) >= 0) selEdition.value = keep;
+  }
+
+  // 册次：只列当前 学科+出版社 的册，按学段分组
+  function fillBooks(keep) {
+    var list = booksOf(selSubject.value, selEdition.value);
+    var html = [], stageNow = '';
     list.forEach(function (b) {
       if (b.stage !== stageNow) {
         stageNow = b.stage;
         html.push('<optgroup label="' + esc(stageNow) + '">');
       }
-      html.push('<option value="' + esc(b.book) + '">' + esc(b.book) + '（' + b.lessonCount + ' 篇）</option>');
+      html.push('<option value="' + esc(b.book) + '">' + esc(b.book)
+        + '（' + b.lessonCount + ' 篇）</option>');
     });
-    // optgroup 需要成对闭合：简单收尾（浏览器容错，末组自动闭合）
-    selBook.innerHTML = html.join('');
-    if (INDEX && INDEX.total) {
-      hint.textContent = '已收录 ' + list.length + ' 册 / ' + INDEX.total + ' 个课时。其余册次整理中。'
-        + ' 点课时名称，右侧（手机为下方）显示完整讲解。';
-    }
+    selBook.innerHTML = html.join('') || '<option value="">暂无</option>';
+    if (keep && list.some(function (b) { return b.book === keep; })) selBook.value = keep;
+    var subjName = (subjects().filter(function (s) { return s.id === selSubject.value; })[0] || {}).name || '';
+    hint.textContent = subjName + '·' + selEdition.value + '：已收录 ' + list.length + ' 册 / '
+      + list.reduce(function (n, b) { return n + b.lessonCount; }, 0) + ' 个课时。'
+      + ' 点课时名称，右侧（手机为下方）显示完整讲解。';
   }
 
   function fillUnits(book) {
@@ -207,7 +251,9 @@
       }
     });
     if (location.hash.slice(1) !== topicId) {
-      history.replaceState(null, '', '?book=' + encodeURIComponent(BOOK.book) + '#' + topicId);
+      history.replaceState(null, '', '?subject=' + encodeURIComponent(selSubject.value)
+        + '&edition=' + encodeURIComponent(selEdition.value)
+        + '&book=' + encodeURIComponent(BOOK.book) + '#' + topicId);
     }
     renderList();
     var act = listEl.querySelector('button.lesson.active');
@@ -242,22 +288,38 @@
     }).then(function (idx) {
       INDEX = idx;
       INDEX.total = idx.count;
-      fillBooks();
-      var q = new URLSearchParams(location.search).get('book');
+      fillSubjects();
+
+      var q = new URLSearchParams(location.search);
       var hash = location.hash.slice(1);
-      var book = q;
-      if (!book && hash) {
-        idx.books.forEach(function (b) {
-          b.lessons.forEach(function (L) { if (L.topicId === hash) book = b.book; });
+      var wantBook = q.get('book'), wantSubj = q.get('subject'), wantEd = q.get('edition');
+
+      // 深链（只有 #topicId）时反查它属于哪一册 / 哪一学科 / 哪个出版社
+      var hitBook = null;
+      if (hash) {
+        (idx.books || []).forEach(function (b) {
+          (b.lessons || []).forEach(function (L) { if (L.topicId === hash) hitBook = b; });
         });
       }
-      if (!book || !getBook(book)) {
-        book = idx.books.length ? idx.books[idx.books.length - 1].book : '';
+      if (hitBook) {
+        wantBook = wantBook || hitBook.book;
+        wantSubj = wantSubj || hitBook.subject || 'math';
+        wantEd = wantEd || hitBook.edition || '人教版';
       }
-      if (!book) { hint.textContent = '讲解数据还没生成（learn/index.json 为空）。'; return; }
-      selBook.value = book;
-      loadBook(book, function () {
-        var target = hash || (getBook(book).lessons[0] || {}).topicId;
+      if (!wantSubj || !subjects().some(function (x) { return x.id === wantSubj; })) {
+        wantSubj = (subjects()[0] || {}).id || 'math';
+      }
+      selSubject.value = wantSubj;
+      fillEditions(wantSubj, wantEd);
+      var list = booksOf(wantSubj, selEdition.value);
+      if (!wantBook || !list.some(function (b) { return b.book === wantBook; })) {
+        wantBook = list.length ? list[0].book : '';   // 默认第一册（一年级上册），与试卷讲解一致
+      }
+      fillBooks(wantBook);
+      if (!wantBook) { hint.textContent = '讲解数据还没生成（learn/index.json 为空）。'; return; }
+      selBook.value = wantBook;
+      loadBook(wantBook, function () {
+        var target = hash || (getBook(wantBook).lessons[0] || {}).topicId;
         if (target) open(target);
       });
     }).catch(function (e) {
@@ -265,6 +327,31 @@
       selBook.innerHTML = '<option value="">加载失败</option>';
     });
   }
+
+  selSubject.addEventListener('change', function () {
+    var subj = selSubject.value;
+    if (!subj) return;
+    cur = null;
+    fillEditions(subj, null);
+    var list = booksOf(subj, selEdition.value);
+    if (!list.length) { selBook.innerHTML = '<option value="">暂无</option>'; return; }
+    var book = list[list.length - 1].book;
+    fillBooks(book);
+    history.replaceState(null, '', '?subject=' + encodeURIComponent(subj)
+      + '&edition=' + encodeURIComponent(selEdition.value) + '&book=' + encodeURIComponent(book));
+    loadBook(book, null);
+  });
+
+  selEdition.addEventListener('change', function () {
+    var list = booksOf(selSubject.value, selEdition.value);
+    if (!list.length) { selBook.innerHTML = '<option value="">暂无</option>'; return; }
+    cur = null;
+    var book = list[list.length - 1].book;
+    fillBooks(book);
+    history.replaceState(null, '', '?subject=' + encodeURIComponent(selSubject.value)
+      + '&edition=' + encodeURIComponent(selEdition.value) + '&book=' + encodeURIComponent(book));
+    loadBook(book, null);
+  });
 
   selBook.addEventListener('change', function () {
     var b = selBook.value;

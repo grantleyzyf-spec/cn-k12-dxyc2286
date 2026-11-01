@@ -71,7 +71,8 @@ def main():
                             "chapter": unit, "words": L.get("words") or 0})
         # 单元按中文数字升序，单元内按 topics.json 的教材次序
         lessons.sort(key=lambda L: (cn_number(L["chapter"]), torder.get(L["topicId"], 10 ** 9)))
-        books.append({"book": book, "stage": stage, "grade": grade, "edition": "人教版",
+        books.append({"book": book, "stage": stage, "grade": grade,
+                      "subject": "math", "subjectName": "数学", "edition": "人教版",
                       "lessonCount": len(lessons),
                       "path": f"data/math/learn/{book}.json", "lessons": lessons})
     order = {"一年级上册": 1, "一年级下册": 2, "二年级上册": 3, "二年级下册": 4,

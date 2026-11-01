@@ -92,7 +92,8 @@ def main():
         }
         b = next((x for x in books if x["book"] == book), None)
         if b is None:
-            b = {"book": book, "papers": [], "path": f"data/{book}.json"}
+            b = {"book": book, "papers": [], "path": f"data/{book}.json",
+                 "subject": "math", "subjectName": "数学", "edition": "人教版"}
             books.append(b)
         b["papers"].append(entry)
         total += 1
