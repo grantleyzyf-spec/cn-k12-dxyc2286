@@ -631,6 +631,7 @@
       renderList();
       if (selectedId) {
         renderGraph();                      // 首屏不弹详情面板：图先占满宽度
+        markActive();                       // 左侧列表滚到当前知识点，别停在一年级
         history.replaceState(null, '', urlFor(selectedId));
       } else { renderGraph(); }
     } catch (e) {
