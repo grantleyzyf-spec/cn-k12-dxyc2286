@@ -9,12 +9,18 @@ on:
     paths:
       - 'data/math-hebei/**/*.json'
       - 'scripts/test_math_hebei.py'
+      - 'scripts/check_math_hebei_exam.py'
+      - 'scripts/check_math_hebei_lecture.py'
+      - 'scripts/check_math_hebei_learn.py'
       - 'scripts/fix_exam_itemid.py'
       - '.github/workflows/validate-math-hebei.yml'
   pull_request:
     paths:
       - 'data/math-hebei/**/*.json'
       - 'scripts/test_math_hebei.py'
+      - 'scripts/check_math_hebei_exam.py'
+      - 'scripts/check_math_hebei_lecture.py'
+      - 'scripts/check_math_hebei_learn.py'
       - 'scripts/fix_exam_itemid.py'
       - '.github/workflows/validate-math-hebei.yml'
   workflow_dispatch:
@@ -35,6 +41,34 @@ jobs:
 
       - name: Subject invariants · math-hebei
         run: python3 scripts/test_math_hebei.py
+
+      # 下面三条是「内容质量」门禁：只看结构查不出卷面模板/满分错、讲解缺段、学层缺课本原文
+      - name: 卷面逐卷校验（模板 / 满分 / 题量 / 步分值之和）
+        run: |
+          pass=0; fail=0
+          for f in data/math-hebei/exams/*/*.json; do
+            if python3 scripts/check_math_hebei_exam.py "$f" >/tmp/ex.log 2>&1; then
+              pass=$((pass+1))
+            else
+              echo "::error file=$f::卷面校验失败"; tail -3 /tmp/ex.log; fail=$((fail+1))
+            fi
+          done
+          echo "卷面：通过 $pass / 失败 $fail"
+          [ "$fail" -eq 0 ]
+
+      - name: 试卷讲解全量校验（六段结构 / 五步学习法 / 字数带）
+        run: python3 scripts/check_math_hebei_lecture.py
+
+      - name: 学层逐册校验（七段结构 / 课本原文 / 字数带）
+        run: |
+          fail=0
+          for f in data/math-hebei/learn/*.json; do
+            if ! python3 scripts/check_math_hebei_learn.py "$f" >/tmp/lr.log 2>&1; then
+              echo "::error file=$f::学层校验失败"; tail -3 /tmp/lr.log; fail=$((fail+1))
+            fi
+          done
+          echo "学层：失败 $fail"
+          [ "$fail" -eq 0 ]
 
       - name: Every exam item carries itemId（整卷测试作答依赖）
         run: |
