@@ -51,6 +51,16 @@ def fix_type(t):
 
 def main():
     skel = json.load(open(os.path.join(OUT, '_skeleton.json'), encoding='utf-8'))
+    # 保留上一版已回填的课标 quote：合并重建时不要把 standards 抹掉
+    prev_std = {}
+    _tp = os.path.join(OUT, 'topics.json')
+    if os.path.isfile(_tp):
+        try:
+            for _t in json.load(open(_tp, encoding='utf-8')):
+                if _t.get('standards'):
+                    prev_std[_t['id']] = _t['standards']
+        except Exception:
+            pass
     deps = json.load(open(os.path.join(OUT, '_deps.json'), encoding='utf-8'))
     pre = {}
     for d in deps:
@@ -99,7 +109,7 @@ def main():
                     'mastery_criteria': o.get('mastery_criteria') or [],
                     'diagnostic_question': dq,
                     'external': False,
-                    'standards': o.get('standards') or [],
+                    'standards': o.get('standards') or prev_std.get(tid, []),
                     'tags': o.get('tags') or [u['domain'], u['unit_name']],
                     'prerequisites': sorted(pre.get(tid, [])),
                     'curriculumRef': (o.get('standards') or [{}])[0].get('id', '') if o.get('standards') else '',
