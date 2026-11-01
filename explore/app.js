@@ -258,23 +258,40 @@
       .attr('text-anchor', 'middle').attr('class', 'empty-sub').text(sub);
   }
 
-  /* ---------- 分层图（照 pansgo/math 的层级做法）----------
-     1) dagre 自上而下分层：上层=先修，中间=当前，下层=用到它的知识点
-     2) 向上层数可选 1/2/3/全部，选「全部」且祖先过多（>40）时按年级折叠成聚合节点
-     3) 节点按年级着色，当前节点加深描边
-     4) 图注写清「N 个知识点 / M 条先修 · 向上 X 层 · 向下 1 层」 */
+  /* ---------- 分层图（像思维导图：方框 + 连线 + 严格分层）----------
+     - 层：先修第 N 层 … 先修第 1 层 → 当前 → 下游 1 层，逐行排，行间画浅色层带
+     - 方框：文字居中的圆角矩形，宽度随文字长度走
+     - 连线：从父框底边到子框顶边的曲线，末端带箭头
+     - 向上层数 1/2/3/全部；选「全部」且祖先 >40 时按年级折叠成聚合框 */
   var FOLD_AT = 40;
   var ancestorsOpen = false;
 
+  function initLegendToggle() {
+    var legend = document.querySelector('.legend');
+    var btn = document.getElementById('legend-btn');
+    if (!legend || !btn) return;
+    legend.classList.add('collapsed');            // 默认收起，别压住画布
+    btn.addEventListener('click', function () {
+      legend.classList.toggle('collapsed');
+      btn.classList.toggle('active', !legend.classList.contains('collapsed'));
+    });
+  }
+
   function gradeTone(g) {
     g = Number(g) || 1;
-    var hue = g <= 6 ? 172 : (g <= 9 ? 219 : 335);          // 小学青 / 初中蓝 / 高中玫红
+    var hue = g <= 6 ? 172 : (g <= 9 ? 219 : 335);
     var step = g <= 6 ? (g - 1) : (g <= 9 ? (g - 7) : (g - 10));
-    var light = Math.max(0.30, 0.58 - step * 0.05);         // 年级越大越深
+    var light = Math.max(0.30, 0.58 - step * 0.05);
     return d3.color('hsl(' + hue + ',52%,' + Math.round(light * 100) + '%)').formatHex();
   }
 
-  function nodeLabelW(label) { return Math.max(58, Math.min(190, String(label).length * 13 + 26)); }
+  function nodeLabelW(label) {
+    var n = String(label || '');
+    var cjk = (n.match(/[\u4e00-\u9fff]/g) || []).length;
+    var other = n.length - cjk;
+    return Math.max(76, Math.min(228, cjk * 14 + other * 7.6 + 28));
+  }
+  function nodeH(d) { return d.role === 'center' ? 40 : 34; }
 
   function setFold(total, folded) {
     var box = $('graph-fold');
@@ -287,37 +304,56 @@
       : '已展开全部 ' + total + ' 个知识点。<button type="button" id="fold-toggle" data-open="0">按年级收起</button>';
   }
 
-  function layoutDagre(nodes, links) {
-    if (!window.dagre) {   // 兜底：没有 dagre 就排成竖列，至少保证层次可读
-      nodes.forEach(function (n, i) { n.x = (i % 6) * 150; n.y = Math.floor(i / 6) * 90; });
-      return;
-    }
-    var g = new window.dagre.graphlib.Graph({ multigraph: false, compound: false });
-    var dense = nodes.length > 60;
-    g.setGraph({
-      rankdir: 'TB',
-      ranksep: dense ? 52 : 72,
-      nodesep: dense ? 22 : 34,
-      edgesep: dense ? 8 : 14,
-      marginx: 20, marginy: 20,
-      ranker: dense ? 'longest-path' : 'network-simplex'
+  // 严格按「层」排版：同一层的框排在同一行，行的中心对齐，父框尽量落在子框上方
+  function layoutLayered(nodes, links) {
+    var rows = new Map();
+    nodes.forEach(function (d) {
+      if (!rows.has(d.level)) rows.set(d.level, []);
+      rows.get(d.level).push(d);
     });
-    g.setDefaultEdgeLabel(function () { return {}; });
-    nodes.forEach(function (n) { g.setNode(n.id, { width: nodeLabelW(n.name) + 26, height: 34 }); });
-    var pairSeen = {};
+    var levels = Array.from(rows.keys()).sort(function (a, b) { return a - b; });
+
+    var nb = new Map();
+    nodes.forEach(function (n) { nb.set(n.id, []); });
     links.forEach(function (l) {
-      var k = l.source + '>' + l.target;
-      if (pairSeen[k]) return;              // dagre 非多重图：同一对节点只加一条边
-      pairSeen[k] = 1;
-      g.setEdge(l.source, l.target);
+      var a = l.source.id, b = l.target.id;
+      if (nb.has(a) && nb.has(b)) { nb.get(a).push(b); nb.get(b).push(a); }
     });
-    window.dagre.layout(g);
-    nodes.forEach(function (n) {
-      var p = g.node(n.id);
-      n.x = p ? p.x : 0;
-      n.y = p ? p.y : 0;
-      n.w = p ? p.width : nodeLabelW(n.name);
+
+    var pos = new Map();
+    levels.forEach(function (lv) { rows.get(lv).forEach(function (n, i) { pos.set(n.id, i); }); });
+    for (var pass = 0; pass < 4; pass++) {
+      var seq = pass % 2 ? levels.slice().reverse() : levels;
+      seq.forEach(function (lv) {
+        var arr = rows.get(lv);
+        arr.sort(function (a, b) {
+          function bc(n) {
+            var ns = nb.get(n.id).filter(function (id) { return pos.has(id); });
+            if (!ns.length) return pos.get(n.id);
+            return ns.reduce(function (s, id) { return s + pos.get(id); }, 0) / ns.length;
+          }
+          return bc(a) - bc(b);
+        });
+        arr.forEach(function (n, i) { pos.set(n.id, i); });
+      });
+    }
+
+    var gapX = 34, rowGap = 96, y = 0;
+    levels.forEach(function (lv) {
+      var arr = rows.get(lv);
+      var widths = arr.map(function (n) { return nodeLabelW(n.name); });
+      var total = widths.reduce(function (s, w) { return s + w; }, 0) + gapX * Math.max(0, arr.length - 1);
+      var x = -total / 2, hMax = 0;
+      arr.forEach(function (n, i) {
+        n.w = widths[i];
+        n.x = x + widths[i] / 2;
+        n.y = y + nodeH(n) / 2;
+        x += widths[i] + gapX;
+        hMax = Math.max(hMax, nodeH(n));
+      });
+      y += hMax + rowGap;
     });
+    return { levels: levels, rows: rows };
   }
 
   function renderGraph() {
@@ -325,7 +361,6 @@
     svg.selectAll('*').remove();
     if (simulation) { simulation.stop(); simulation = null; }
 
-    var w = svg.node().clientWidth || 800, h = svg.node().clientHeight || 520;
     if (!selectedId || !byId.has(selectedId)) {
       emptyState(svg, '先在左侧选一个知识点', '可按学段、年级、领域筛选，或直接搜索名称 / 章节');
       $('graph-meta').textContent = '';
@@ -343,14 +378,14 @@
     var nodes = [], links = [], gradeOf = new Map();
 
     if (!folded) {
-      var ids = [selectedId].concat(upIds).concat(downIds.filter(function (id) { return !up.has(id); }));
       var seen = {};
-      ids.forEach(function (id) {
+      [selectedId].concat(upIds).concat(downIds).forEach(function (id) {
         if (seen[id]) return; seen[id] = 1;
         var t = byId.get(id);
         nodes.push({
           id: id, name: t.name, grade: t.grade,
-          role: id === selectedId ? 'center' : (up.has(id) ? 'up' : 'down')
+          role: id === selectedId ? 'center' : (up.has(id) ? 'up' : 'down'),
+          level: id === selectedId ? 0 : (up.has(id) ? -(up.get(id)) : 1)
         });
       });
       var nodeIds = new Set(nodes.map(function (n) { return n.id; }));
@@ -358,64 +393,90 @@
         .filter(function (d) { return d && nodeIds.has(d.from) && nodeIds.has(d.to); })
         .map(function (d) { return { source: d.from, target: d.to, type: d.type }; });
     } else {
-      // 按年级聚合祖先；当前知识点与下游保持真实节点
       var byGrade = new Map();
       upIds.forEach(function (id) {
-        if (id === selectedId) return;
         var g = byId.get(id).grade;
         if (!byGrade.has(g)) byGrade.set(g, []);
         byGrade.get(g).push(id);
       });
       byGrade.forEach(function (ids, g) {
-        var label = gradeText(g) + '·' + ids.length + '个';
-        nodes.push({ id: 'grade:' + g, name: label, grade: g, role: 'agg', count: ids.length });
+        nodes.push({ id: 'grade:' + g, name: gradeText(g) + '·' + ids.length + '个', grade: g, role: 'agg', level: -1 });
         ids.forEach(function (id) { gradeOf.set(id, g); });
       });
       var ct = byId.get(selectedId);
-      nodes.push({ id: selectedId, name: ct.name, grade: ct.grade, role: 'center' });
+      nodes.push({ id: selectedId, name: ct.name, grade: ct.grade, role: 'center', level: 0 });
       downIds.forEach(function (id) {
         var t = byId.get(id);
-        nodes.push({ id: id, name: t.name, grade: t.grade, role: 'down' });
+        nodes.push({ id: id, name: t.name, grade: t.grade, role: 'down', level: 1 });
       });
-      var edgeSeen = {};
+      var es = {};
       dependenciesData.forEach(function (d) {
         if (!d) return;
         var ga = gradeOf.get(d.from), gb = gradeOf.get(d.to);
         if (ga != null && gb != null) {
           if (ga === gb) return;
-          var k = ga + '>' + gb;
-          if (!edgeSeen[k] || d.type !== 'soft') edgeSeen[k] = { source: 'grade:' + ga, target: 'grade:' + gb, type: d.type };
+          es['gg:' + ga + '>' + gb] = { source: 'grade:' + ga, target: 'grade:' + gb, type: d.type };
         } else if (ga != null && d.to === selectedId) {
-          edgeSeen['agg->sel:' + ga] = { source: 'grade:' + ga, target: selectedId, type: d.type };
+          es['as:' + ga] = { source: 'grade:' + ga, target: selectedId, type: d.type };
         } else if (gb != null && d.from === selectedId) {
-          edgeSeen['sel->agg:' + gb] = { source: selectedId, target: 'grade:' + gb, type: d.type };
+          es['sa:' + gb] = { source: selectedId, target: 'grade:' + gb, type: d.type };
         } else if (d.from === selectedId && downIds.indexOf(d.to) >= 0) {
-          edgeSeen['sel->' + d.to] = { source: selectedId, target: d.to, type: d.type };
-        } else if (d.to === selectedId && upIds.indexOf(d.from) >= 0 && gradeOf.get(d.from) == null) {
-          edgeSeen['up->sel:' + d.from] = { source: d.from, target: selectedId, type: d.type };
+          es['sd:' + d.to] = { source: selectedId, target: d.to, type: d.type };
         }
       });
-      links = Object.keys(edgeSeen).map(function (k) { return edgeSeen[k]; });
+      links = Object.keys(es).map(function (k) { return es[k]; });
     }
 
-    layoutDagre(nodes, links);
+    var nodeMap = new Map(nodes.map(function (n) { return [n.id, n]; }));
+    links = links.filter(function (l) { return nodeMap.has(l.source) && nodeMap.has(l.target); });
+    links.forEach(function (l) { l.source = nodeMap.get(l.source); l.target = nodeMap.get(l.target); });
+
+    var lay = layoutLayered(nodes, links);
+    var levels = lay.levels, rows = lay.rows;
 
     var g = svg.append('g').attr('class', 'viewport');
     var defs = svg.append('defs');
-    [['arr-hard', '#0f6e62'], ['arr-soft', '#8b9aa7']].forEach(function (p) {
-      defs.append('marker').attr('id', p[0]).attr('viewBox', '0 -5 10 10')
-        .attr('refX', 20).attr('refY', 0).attr('markerWidth', 5.5).attr('markerHeight', 5.5)
-        .attr('orient', 'auto').append('path').attr('d', 'M0,-4L9,0L0,4').attr('fill', p[1]);
+    [['arr-hard', '#0b5c53'], ['arr-soft', '#7b8b96']].forEach(function (pr) {
+      defs.append('marker').attr('id', pr[0]).attr('viewBox', '0 -6 12 12')
+        .attr('refX', 9).attr('refY', 0).attr('markerWidth', 9.5).attr('markerHeight', 9.5)
+        .attr('orient', 'auto').append('path').attr('d', 'M0,-5L11,0L0,5Z').attr('fill', pr[1]);
     });
 
-    function radius(d) {
-      return d.role === 'center' ? 15 : (d.role === 'agg' ? 17 : (d.role === 'up' ? 9 : 7));
-    }
+    // 层带：每条层一个横向色带，左侧写层名与个数
+    var band = g.append('g').attr('class', 'layers');
+    var xsAll = nodes.map(function (d) { return d.x; });
+    var minX = Math.min.apply(null, xsAll) - 190, maxX = Math.max.apply(null, xsAll) + 190;
+    levels.forEach(function (lv, i) {
+      var arr = rows.get(lv);
+      var ys = arr.map(function (d) { return d.y; });
+      var top = Math.min.apply(null, ys) - 34, bot = Math.max.apply(null, ys) + 34;
+      var isNow = lv === 0;
+      band.append('rect').attr('x', minX).attr('y', top).attr('width', maxX - minX)
+        .attr('height', bot - top).attr('rx', 14)
+        .attr('fill', isNow ? '#e8f4f1' : (i % 2 ? '#f2f7f7' : '#ffffff'))
+        .attr('stroke', isNow ? '#bcded7' : '#dbe7e9').attr('stroke-width', isNow ? 1.6 : 1);
+      var hasAgg = arr.some(function (d) { return d.role === 'agg'; });
+      var label = isNow ? '当前'
+        : (lv < 0 ? (hasAgg ? '先修（已按年级收起）' : '先修第 ' + (-lv) + ' 层') : '下游 1 层');
+      band.append('text').attr('x', minX + 16).attr('y', top + 23)
+        .attr('class', 'layer-label')
+        .attr('fill', isNow ? '#0b5c53' : '#516a72')
+        .text(label + '（' + arr.length + '）');
+    });
 
-    var link = g.append('g').attr('class', 'links').selectAll('line').data(links).join('line')
+    // 连线：父框底边 → 子框顶边
+    function edgePath(l) {
+      var sy = l.source.y + nodeH(l.source) / 2, ty = l.target.y - nodeH(l.target) / 2;
+      var my = sy + (ty - sy) * 0.55;
+      return 'M' + l.source.x + ',' + sy + ' C' + l.source.x + ',' + my + ' ' +
+        l.target.x + ',' + my + ' ' + l.target.x + ',' + (ty - 3);
+    }
+    var link = g.append('g').attr('class', 'links').selectAll('path').data(links).join('path')
       .attr('class', function (d) { return 'link ' + (d.type === 'soft' ? 'soft' : 'hard'); })
+      .attr('d', edgePath).attr('fill', 'none')
       .attr('marker-end', function (d) { return d.type === 'soft' ? 'url(#arr-soft)' : 'url(#arr-hard)'; });
 
+    // 方框节点
     var node = g.append('g').attr('class', 'nodes').selectAll('g').data(nodes, function (d) { return d.id; }).join('g')
       .attr('class', function (d) { return 'node ' + d.role; })
       .attr('transform', function (d) { return 'translate(' + d.x + ',' + d.y + ')'; })
@@ -423,25 +484,27 @@
         if (d.role === 'agg') { ancestorsOpen = true; renderGraph(); return; }
         if (d.id !== selectedId) select(d.id, true);
       })
-      .call(d3.drag()
-        .on('drag', function (ev, d) {
-          d.x = ev.x; d.y = ev.y;
-          d3.select(this).attr('transform', 'translate(' + d.x + ',' + d.y + ')');
-          link.attr('x1', function (l) { return l.source.x; }).attr('y1', function (l) { return l.source.y; })
-            .attr('x2', function (l) { return l.target.x; }).attr('y2', function (l) { return l.target.y; });
-        }));
+      .call(d3.drag().on('drag', function (ev, d) {
+        d.x = ev.x; d.y = ev.y;
+        d3.select(this).attr('transform', 'translate(' + d.x + ',' + d.y + ')');
+        link.attr('d', edgePath);
+      }));
 
-    node.append('circle')
-      .attr('r', radius)
-      .attr('fill', function (d) { return d.role === 'agg' ? '#eef4f3' : gradeTone(d.grade); })
-      .attr('stroke', function (d) { return d.role === 'center' ? '#0f6e62' : (d.role === 'agg' ? '#0f6e62' : null); })
-      .attr('stroke-width', function (d) { return d.role === 'center' ? 4 : (d.role === 'agg' ? 1.6 : null); })
-      .attr('stroke-dasharray', function (d) { return d.role === 'agg' ? '4 3' : null; });
+    node.append('rect')
+      .attr('x', function (d) { return -nodeLabelW(d.name) / 2; })
+      .attr('y', function (d) { return -nodeH(d) / 2; })
+      .attr('width', function (d) { return nodeLabelW(d.name); })
+      .attr('height', nodeH).attr('rx', 10)
+      .attr('fill', function (d) { return d.role === 'agg' ? '#ffffff' : gradeTone(d.grade); })
+      .attr('stroke', function (d) { return d.role === 'center' ? '#08453e' : (d.role === 'agg' ? '#0f6e62' : '#ffffff'); })
+      .attr('stroke-width', function (d) { return d.role === 'center' ? 3.4 : 1.2; })
+      .attr('stroke-dasharray', function (d) { return d.role === 'agg' ? '6 3' : null; });
 
     node.append('text').attr('class', 'node-label')
-      .attr('dx', function (d) { return radius(d) + 6; }).attr('dy', 4)
+      .attr('text-anchor', 'middle').attr('dy', '0.35em')
+      .attr('fill', function (d) { return d.role === 'agg' ? '#0b5c53' : '#ffffff'; })
       .text(function (d) {
-        var n = d.name || '', max = d.role === 'center' ? 22 : (d.role === 'agg' ? 20 : 14);
+        var n = d.name || '', max = d.role === 'center' ? 20 : 15;
         return n.length > max ? n.slice(0, max) + '…' : n;
       });
     node.append('title').text(function (d) {
@@ -457,13 +520,13 @@
     svg.call(zoomBehavior).on('dblclick.zoom', null);
     fitView();
 
-    var t = byId.get(selectedId);
+    var t2 = byId.get(selectedId);
     var layerText = depth === Infinity ? '全部祖先' : (depth + ' 层');
     var head = folded
       ? '已按年级收起（全部 ' + total + ' 个知识点）'
       : '局部图 ' + nodes.length + ' 个知识点、' + links.length + ' 条先修';
     $('graph-meta').textContent = head + ' · 向上 ' + layerText + ' · 向下 1 层 · ' +
-      gradeText(t.grade) + ' · ' + (t.domain || '');
+      gradeText(t2.grade) + ' · ' + (t2.domain || '');
     setFold(total, folded);
 
     var btn = $('fold-toggle');
@@ -475,24 +538,21 @@
 
   function fitView() {
     var svg = svgEl(), g = svg.select('g.viewport');
-    if (g.empty()) return;
-    var box = null;
-    g.selectAll('g.node').each(function (d) {
-      var r = d.role === 'center' ? 22 : 16;
-      var b = { x0: d.x - r - 100, x1: d.x + r + 100, y0: d.y - r - 18, y1: d.y + r + 18 };
-      box = box ? {
-        x0: Math.min(box.x0, b.x0), x1: Math.max(box.x1, b.x1),
-        y0: Math.min(box.y0, b.y0), y1: Math.max(box.y1, b.y1)
-      } : b;
-    });
-    if (!box) return;
-    var W = svg.node().clientWidth || 800, H = svg.node().clientHeight || 520, pad = 26;
-    var bw = Math.max(140, box.x1 - box.x0), bh = Math.max(100, box.y1 - box.y0);
-    var k = Math.min(3, Math.max(0.25, Math.min((W - pad * 2) / bw, (H - pad * 2) / bh)));
-    var tx = W / 2 - k * ((box.x0 + box.x1) / 2);
-    var ty = H / 2 - k * ((box.y0 + box.y1) / 2);
+    if (g.empty() || !g.node()) return;
+    var b = null;
+    try { b = g.node().getBBox(); } catch (e) { return; }
+    if (!b || !b.width || !b.height) return;
+    var W = svg.node().clientWidth || 800, H = svg.node().clientHeight || 520, pad = 30;
+    var panel = $('info-panel');
+    if (panel && panel.classList.contains('show')) W -= (panel.offsetWidth + 26);   // 详情面板是浮层，别让图藏到它下面
+    var foldBar = $('graph-fold');
+    if (foldBar && !foldBar.hidden) H -= (foldBar.offsetHeight + 14);
+    var k = Math.min(1, Math.max(0.18, Math.min((W - pad * 2) / b.width, (H - pad * 2) / b.height)));
+    var tx = W / 2 - k * (b.x + b.width / 2);
+    var ty = H / 2 - k * (b.y + b.height / 2);
     svg.transition().duration(240).call(zoomBehavior.transform, d3.zoomIdentity.translate(tx, ty).scale(k));
   }
+
 
   function zoomBy(f) {
     if (!zoomBehavior) return;
@@ -653,5 +713,6 @@
   }
 
   bind();
+  initLegendToggle();
   loadData();
 })();

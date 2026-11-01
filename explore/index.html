@@ -67,7 +67,7 @@
             color: var(--brand-ink, #0f6e62); background: #eef4f3;
             border: 1px solid color-mix(in srgb, var(--brand, #0f6e62) 30%, transparent); border-radius: 7px;
         }
-        .node.agg circle { cursor: pointer; }
+        .node.agg rect { cursor: pointer; }
 
         .info-panel {
             position: absolute; top: 16px; right: 16px; width: 320px; max-height: calc(100% - 32px);
@@ -87,6 +87,7 @@
         }
         .info-panel .close:hover { color: var(--ink); }
 
+        .legend.collapsed { display: none; }
         .legend {
             position: absolute; left: 16px; bottom: 16px; padding: 12px 14px;
             background: var(--card); border: 1px solid var(--line);
@@ -97,19 +98,22 @@
         .legend-color { width: 18px; height: 18px; border-radius: 5px; margin-right: 9px; flex: none; }
 
         .node { cursor: pointer; }
-        .node circle { stroke: var(--card); stroke-width: 2px; transition: stroke-width .15s; }
-        .node:hover circle { stroke-width: 4px; }
-        .node text { font-size: 12px; fill: var(--ink); pointer-events: none; }
-        .link { stroke: var(--ink-3); stroke-opacity: .55; stroke-width: 1.8px; }
-        .link.hard { stroke: var(--brand); stroke-opacity: .85; }
-        .link.soft { stroke: var(--ink-3); stroke-dasharray: 5,5; }
+        .node rect { transition: stroke-width .15s, filter .15s; }
+        .node:hover rect { stroke: #0b4f47; stroke-width: 3px; }
+        .node text { font-size: 12.5px; fill: #fff; pointer-events: none; }
+        .node.agg text { fill: var(--brand-ink, #0f6e62); }
+        .link { stroke: #8b9aa7; stroke-opacity: .55; stroke-width: 1.4px; }
+        .link.hard { stroke: var(--brand); stroke-opacity: .78; stroke-width: 1.6px; }
+        .link.soft { stroke: #9aa8b3; stroke-dasharray: 5,5; }
+        .layer-label { font-size: 13px; font-weight: 700; letter-spacing: .6px; }
 
         @media (max-width: 820px) {
             .main { flex-direction: column; height: auto; }
             .sidebar { width: 100%; max-height: 34vh; border-right: 0; border-bottom: 1px solid var(--line); }
             .graph-area { height: 58vh; }
             .info-panel { left: 12px; right: 12px; width: auto; }
-            .legend { display: none; }
+            .legend.collapsed { display: none; }
+        .legend { display: none; }
         }
 
         /* 工具栏新增控件 */
@@ -131,10 +135,8 @@
         .topic-list li .grade { float: right; }
 
         /* 图内元素 */
-        .node.center circle { filter: drop-shadow(0 2px 6px rgba(15,110,98,.35)); }
-        .node.up circle { opacity: .96; }
-        .node.down circle { opacity: .9; }
-        .node-label { paint-order: stroke; stroke: var(--card); stroke-width: 3px; stroke-linejoin: round; }
+        .node.center rect { filter: drop-shadow(0 3px 9px rgba(15,110,98,.30)); }
+        .node-label { font-weight: 600; }
         .empty-title { font-size: 15px; fill: var(--ink-2); font-weight: 600; }
         .empty-sub { font-size: 12.5px; fill: var(--ink-3); }
 
@@ -300,6 +302,7 @@
         <button class="tool-btn" id="zoom-out" type="button" aria-label="缩小">−</button>
         <button class="tool-btn" id="zoom-in" type="button" aria-label="放大">＋</button>
         <button class="tool-btn" id="fit-btn" type="button">适配画面</button>
+        <button class="tool-btn" id="legend-btn" type="button">图例</button>
         <button class="tool-btn" id="reset-btn" type="button">回到首个</button>
         <span class="toolbar-hint" id="graph-meta">选一个知识点开始</span>
     </div>
