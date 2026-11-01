@@ -46,7 +46,8 @@
           "french",
           "spanish",
           "music",
-          "art"
+          "art",
+          "mental-health"
         ],
         "description": "学科代码"
       },
@@ -202,6 +203,14 @@
           "type": "string"
         },
         "description": "上位（单元级）知识点ID列表：只作展示与「缺口不判定」，不参与硬先修与拓扑排序"
+      },
+      "level": {
+        "type": "string",
+        "enum": [
+          "unit",
+          "lesson"
+        ],
+        "description": "知识点层级：unit=单元级（展示/上位），lesson=课时级（可诊断）"
       }
     },
     "additionalProperties": false,
