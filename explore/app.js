@@ -10,7 +10,7 @@
     math: '数学', chinese: '语文', english: '英语', physics: '物理', chemistry: '化学',
     biology: '生物', history: '历史', geography: '地理', science: '科学',
     'information-technology': '信息科技', japanese: '日语', russian: '俄语',
-    german: '德语', french: '法语', spanish: '西班牙语', music: '音乐', art: '美术', 'math-bsd': '数学（北师大版）'
+    german: '德语', french: '法语', spanish: '西班牙语', music: '音乐', art: '美术', 'math-bsd': '数学（北师大版）', 'math-xiangjiao': '数学（湘教版）'
   };
 
   var topicsData = [], dependenciesData = [];

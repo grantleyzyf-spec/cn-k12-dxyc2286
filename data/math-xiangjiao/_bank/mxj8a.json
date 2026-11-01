@@ -1,0 +1,3785 @@
+{
+ "tag": "mxj8a",
+ "book": "湘教版八年级上册",
+ "unit_points": [
+  {
+   "id": "mxj_p011",
+   "description": "整章从整式乘法的逆变形引出因式分解的定义，再依次学习提公因式法与公式法两种基本方法，并要求分解到每个因式都不能再分解为止。",
+   "mastery_criteria": [
+    "能判断一个从左到右的变形是不是因式分解并说明理由",
+    "能根据多项式的结构选择提公因式法或公式法完成分解",
+    "能把多项式分解到每一个因式都不能再分解为止"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p011_q1",
+     "topicId": "mxj_p011",
+     "prompt": "下列从左到右的变形中，属于因式分解的是哪一个？请选出正确的一项。",
+     "question": "下列从左到右的变形中，属于因式分解的是哪一个？请选出正确的一项。",
+     "options": [
+      {
+       "label": "A",
+       "text": "x(x-2y)=x²-2xy"
+      },
+      {
+       "label": "B",
+       "text": "x²-2x+1=x(x-2)+1"
+      },
+      {
+       "label": "C",
+       "text": "3x²-5x=x(3x-5)"
+      },
+      {
+       "label": "D",
+       "text": "x²-2=(x+1)(x-1)-1"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "因式分解是把一个多项式化成几个多项式的乘积。A 是整式乘法，B 与 D 的右边都不是乘积形式，只有 C 的右边是两个多项式的积。"
+    },
+    {
+     "id": "mxj_p011_q2",
+     "topicId": "mxj_p011",
+     "prompt": "已知 x²+x-20=(x-4)(x+5)，请把右边的 (x-4)(x+5) 展开，并把结果填在横线上。",
+     "question": "已知 x²+x-20=(x-4)(x+5)，请把右边的 (x-4)(x+5) 展开，并把结果填在横线上。",
+     "answer": "x²+x-20",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "(x-4)(x+5)=x²+5x-4x-20=x²+x-20，这说明整式乘法与因式分解是互逆的变形过程，可以用乘法检验分解结果。"
+    },
+    {
+     "id": "mxj_p011_q3",
+     "topicId": "mxj_p011",
+     "prompt": "下列各式中，因式分解正确的是哪一个？请选出正确的一项。",
+     "question": "下列各式中，因式分解正确的是哪一个？请选出正确的一项。",
+     "options": [
+      {
+       "label": "A",
+       "text": "x²+2x+1=(x+1)²"
+      },
+      {
+       "label": "B",
+       "text": "x²-5x-6=(x-2)(x-3)"
+      },
+      {
+       "label": "C",
+       "text": "2x²-y²=(2x+y)(2x-y)"
+      },
+      {
+       "label": "D",
+       "text": "x²-4=(x-4)(x+4)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "B 的右边展开是 x²-5x+6，C 的右边展开是 4x²-y²，D 的右边展开是 x²-16，都与左边不符；只有 A 展开后与左边完全相同。"
+    },
+    {
+     "id": "mxj_p011_q4",
+     "topicId": "mxj_p011",
+     "prompt": "下列多项式中，可以分解为 (x-1)(y-1) 的是哪一个？",
+     "question": "下列多项式中，可以分解为 (x-1)(y-1) 的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "xy-x+y-1"
+      },
+      {
+       "label": "B",
+       "text": "xy-x-y+1"
+      },
+      {
+       "label": "C",
+       "text": "xy+x+y+1"
+      },
+      {
+       "label": "D",
+       "text": "xy+x-y-1"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把 (x-1)(y-1) 展开得 xy-x-y+1，所以原多项式是 xy-x-y+1，它的两个因式分别为 x-1 和 y-1。"
+    },
+    {
+     "id": "mxj_p011_q5",
+     "topicId": "mxj_p011",
+     "prompt": "已知 a+b=5，ab=6，求 a²b+ab² 的值，结果填一个数。",
+     "question": "已知 a+b=5，ab=6，求 a²b+ab² 的值，结果填一个数。",
+     "answer": 30,
+     "verify": "{\"type\":\"op\",\"op\":\"mul\",\"values\":[{\"type\":\"num\",\"value\":5},{\"type\":\"num\",\"value\":6}]}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "先提公因式 ab，得 a²b+ab²=ab(a+b)，再把 ab=6 与 a+b=5 代入，得 6×5=30，因此所求的值为 30。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p012",
+   "description": "整章以分式的概念与基本性质为基础，依次学习约分与通分、分式的四则运算与乘方、整数指数幂，最后用分式方程解决实际问题。",
+   "mastery_criteria": [
+    "能判断分式在什么条件下无意义或值为零",
+    "能正确进行分式的约分、通分与四则运算并化成最简结果",
+    "能解可化为一元一次方程的分式方程并检验增根"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p012_q1",
+     "topicId": "mxj_p012",
+     "prompt": "下列各式中，是分式的是哪一个？",
+     "question": "下列各式中，是分式的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "5/x"
+      },
+      {
+       "label": "B",
+       "text": "x/5"
+      },
+      {
+       "label": "C",
+       "text": "(x+y)/3"
+      },
+      {
+       "label": "D",
+       "text": "2/7"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "分式的分母中含有字母。A 的分母是 x，符合定义；B、C 的分母是数，D 是两个数的比，它们都是整式。"
+    },
+    {
+     "id": "mxj_p012_q2",
+     "topicId": "mxj_p012",
+     "prompt": "当 x 取哪个数时，分式 (x-2)/(2x-3) 的值等于 0？",
+     "question": "当 x 取哪个数时，分式 (x-2)/(2x-3) 的值等于 0？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x=3/2"
+      },
+      {
+       "label": "B",
+       "text": "x=0"
+      },
+      {
+       "label": "C",
+       "text": "x=2"
+      },
+      {
+       "label": "D",
+       "text": "x=-2"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "分式值为零要求分子为零而分母不为零。由 x-2=0 得 x=2，此时分母 2×2-3=1 不为零，所以 x=2。"
+    },
+    {
+     "id": "mxj_p012_q3",
+     "topicId": "mxj_p012",
+     "prompt": "下列分式中，是最简分式的是哪一个？",
+     "question": "下列分式中，是最简分式的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(x²-1)/(x-1)"
+      },
+      {
+       "label": "B",
+       "text": "(x+1)/(x²-1)"
+      },
+      {
+       "label": "C",
+       "text": "6x/(9x²)"
+      },
+      {
+       "label": "D",
+       "text": "(x+1)/(x²+1)"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "最简分式的分子与分母没有公因式。A、B 都能约去 x-1 或 x+1，C 能约去 3x，只有 D 的分子与分母没有公因式。"
+    },
+    {
+     "id": "mxj_p012_q4",
+     "topicId": "mxj_p012",
+     "prompt": "当 x=3 时，分式 (x-5)/(x+6) 的值是多少？结果填在横线上。",
+     "question": "当 x=3 时，分式 (x-5)/(x+6) 的值是多少？结果填在横线上。",
+     "answer": "-2/9",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "把 x 用 3 代入，分子 3-5=-2，分母 3+6=9，所以分式的值为 -2/9，与教材例2 的算法相同。"
+    },
+    {
+     "id": "mxj_p012_q5",
+     "topicId": "mxj_p012",
+     "prompt": "若分式 (x²-9)/(x+3) 的值为 0，求 x 的值，结果填一个数。",
+     "question": "若分式 (x²-9)/(x+3) 的值为 0，求 x 的值，结果填一个数。",
+     "answer": 3,
+     "verify": "{\"type\":\"num\",\"value\":3}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "由分子 x²-9=0 得 x=3 或 x=-3，但 x=-3 时分母为 0，分式无意义，所以只能取 x=3。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p013",
+   "description": "整章先由算术平方根引出二次根式的概念与有意义条件，再学习积与商的算术平方根性质，最后进行二次根式的乘除与加减运算，结果都要求化成最简二次根式。",
+   "mastery_criteria": [
+    "能判断二次根式在实数范围内有意义的条件",
+    "能运用积与商的算术平方根性质化简二次根式",
+    "能按先化简后合并的顺序完成二次根式的运算"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p013_q1",
+     "topicId": "mxj_p013",
+     "prompt": "当 x 是怎样的实数时，二次根式 √(x-1) 在实数范围内有意义？",
+     "question": "当 x 是怎样的实数时，二次根式 √(x-1) 在实数范围内有意义？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 大于或等于 1"
+      },
+      {
+       "label": "B",
+       "text": "x 大于 1"
+      },
+      {
+       "label": "C",
+       "text": "x 小于或等于 1"
+      },
+      {
+       "label": "D",
+       "text": "x 不等于 1"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "只有被开方数是非负实数时，二次根式才有意义。由 x-1 大于或等于 0 解得 x 大于或等于 1，与教材例1 的结论相同。"
+    },
+    {
+     "id": "mxj_p013_q2",
+     "topicId": "mxj_p013",
+     "prompt": "计算 √((-3)²) 的值是哪一个？",
+     "question": "计算 √((-3)²) 的值是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "-3"
+      },
+      {
+       "label": "B",
+       "text": "正负 3"
+      },
+      {
+       "label": "C",
+       "text": "9"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "算术平方根表示非负数，√((-3)²)=√9=3，也可以先把根号下的平方化成它的绝对值再化简，-3 的绝对值是 3，所以结果绝不是 -3。"
+    },
+    {
+     "id": "mxj_p013_q3",
+     "topicId": "mxj_p013",
+     "prompt": "化简二次根式 √18 的结果是哪一个？",
+     "question": "化简二次根式 √18 的结果是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2√3"
+      },
+      {
+       "label": "B",
+       "text": "3√2"
+      },
+      {
+       "label": "C",
+       "text": "9√2"
+      },
+      {
+       "label": "D",
+       "text": "6√3"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "18=9×2=3²×2，由积的算术平方根性质得 √18=√(3²)×√2=3√2，被开方数不再含开得尽方的因数。"
+    },
+    {
+     "id": "mxj_p013_q4",
+     "topicId": "mxj_p013",
+     "prompt": "化简二次根式 √24，结果填在横线上。",
+     "question": "化简二次根式 √24，结果填在横线上。",
+     "answer": "2√6",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "24=4×6=2²×6，所以 √24=√(2²)×√6=2√6，结果中被开方数 6 不含开得尽方的因数，已是最简二次根式。"
+    },
+    {
+     "id": "mxj_p013_q5",
+     "topicId": "mxj_p013",
+     "prompt": "计算 √8 乘 √2 的值，结果填一个数。",
+     "question": "计算 √8 乘 √2 的值，结果填一个数。",
+     "answer": 4,
+     "verify": "{\"type\":\"num\",\"value\":4}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "由积的算术平方根性质，√8 乘 √2 等于 √(8×2)=√16，而 4 的平方是 16，所以结果为 4。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p014",
+   "description": "整章从三角形的概念与三边关系出发，研究内角和外角、高线中线与角平分线，再用命题与证明的方法得出全等三角形的判定定理，最后学习尺规作图、等腰三角形与线段的垂直平分线。",
+   "mastery_criteria": [
+    "能运用三边关系与内角和外角的结论计算三角形的边与角",
+    "能用边角边、角边角、角角边、边边边判定两个三角形全等",
+    "能运用等腰三角形与线段垂直平分线的性质定理进行推理"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p014_q1",
+     "topicId": "mxj_p014",
+     "prompt": "下列各组线段中，能组成三角形的是哪一组？",
+     "question": "下列各组线段中，能组成三角形的是哪一组？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2，3，4"
+      },
+      {
+       "label": "B",
+       "text": "1，2，3"
+      },
+      {
+       "label": "C",
+       "text": "1，4，6"
+      },
+      {
+       "label": "D",
+       "text": "2，2，5"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "三角形的任意两边之和大于第三边。A 中 2+3 大于 4 成立；B 中 1+2 等于 3，C 中 1+4 小于 6，D 中 2+2 小于 5，都不能组成三角形。"
+    },
+    {
+     "id": "mxj_p014_q2",
+     "topicId": "mxj_p014",
+     "prompt": "在三角形 ABC 中，角 A 等于 60 度，角 B 等于角 C，则角 B 的度数是多少？",
+     "question": "在三角形 ABC 中，角 A 等于 60 度，角 B 等于角 C，则角 B 的度数是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "40 度"
+      },
+      {
+       "label": "B",
+       "text": "50 度"
+      },
+      {
+       "label": "C",
+       "text": "60 度"
+      },
+      {
+       "label": "D",
+       "text": "70 度"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由三角形内角和等于 180 度，得角 B 加角 C 等于 120 度，又角 B 等于角 C，所以角 B 等于 60 度，此时三个角都相等。"
+    },
+    {
+     "id": "mxj_p014_q3",
+     "topicId": "mxj_p014",
+     "prompt": "下列条件中，能判定两个三角形全等的是哪一个？",
+     "question": "下列条件中，能判定两个三角形全等的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "三个角分别相等"
+      },
+      {
+       "label": "B",
+       "text": "两边及其中一边的对角分别相等"
+      },
+      {
+       "label": "C",
+       "text": "两边及一角分别相等"
+      },
+      {
+       "label": "D",
+       "text": "两角及夹边分别相等"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "三个角相等只能说明形状相同，边不一定相等；两边及其中一边的对角不能判定全等；两角及夹边分别相等是角边角定理，可以判定全等。"
+    },
+    {
+     "id": "mxj_p014_q4",
+     "topicId": "mxj_p014",
+     "prompt": "三角形的任意两边之和与第三边有怎样的大小关系？请填大于、等于或小于。",
+     "question": "三角形的任意两边之和与第三边有怎样的大小关系？请填大于、等于或小于。",
+     "answer": "大于",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "由两点之间线段最短可以说明三角形的任意两边之和大于第三边，移项变形后还可得任意两边之差小于第三边。"
+    },
+    {
+     "id": "mxj_p014_q5",
+     "topicId": "mxj_p014",
+     "prompt": "一个等腰三角形的两边长分别为 3 cm 和 6 cm，求它的周长，结果填一个数。",
+     "question": "一个等腰三角形的两边长分别为 3 cm 和 6 cm，求它的周长，结果填一个数。",
+     "answer": 15,
+     "verify": "{\"type\":\"num\",\"value\":15}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "若腰为 3，则 3+3 等于 6，不能组成三角形；所以腰只能是 6，三边为 6，6，3，周长为 6+6+3=15 cm。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p015",
+   "description": "整章研究直角三角形：先得出两锐角互余、斜边中线等于斜边一半等性质，再证明勾股定理及其逆定理，最后学习斜边直角边判定与角平分线的性质。",
+   "mastery_criteria": [
+    "能运用两锐角互余与斜边中线性质计算直角三角形的边和角",
+    "能运用勾股定理及其逆定理求边长并判断直角三角形",
+    "能运用斜边直角边定理与角平分线性质进行推理"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p015_q1",
+     "topicId": "mxj_p015",
+     "prompt": "直角三角形的两个锐角有什么关系？",
+     "question": "直角三角形的两个锐角有什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "互余"
+      },
+      {
+       "label": "B",
+       "text": "相等"
+      },
+      {
+       "label": "C",
+       "text": "互补"
+      },
+      {
+       "label": "D",
+       "text": "都是 45 度"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "直角三角形的直角为 90 度，由内角和得两个锐角之和为 90 度，所以两个锐角互余，反过来两个角互余的三角形也是直角三角形。"
+    },
+    {
+     "id": "mxj_p015_q2",
+     "topicId": "mxj_p015",
+     "prompt": "直角三角形斜边上的中线与斜边有怎样的数量关系？",
+     "question": "直角三角形斜边上的中线与斜边有怎样的数量关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "等于斜边的 2 倍"
+      },
+      {
+       "label": "B",
+       "text": "等于斜边的 3 倍"
+      },
+      {
+       "label": "C",
+       "text": "等于斜边的一半"
+      },
+      {
+       "label": "D",
+       "text": "等于斜边的三分之一"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "直角三角形的性质定理指出斜边上的中线等于斜边的一半，教材借助作平行线与垂直平分线给出了证明。"
+    },
+    {
+     "id": "mxj_p015_q3",
+     "topicId": "mxj_p015",
+     "prompt": "勾股定理指出，直角三角形两条直角边的平方和等于什么？",
+     "question": "勾股定理指出，直角三角形两条直角边的平方和等于什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "斜边"
+      },
+      {
+       "label": "B",
+       "text": "斜边的 2 倍"
+      },
+      {
+       "label": "C",
+       "text": "一条直角边的平方"
+      },
+      {
+       "label": "D",
+       "text": "斜边的平方"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "勾股定理的内容是两条直角边的平方和等于斜边的平方，也就是 a² 加 b² 等于 c²，其中 c 表示斜边。"
+    },
+    {
+     "id": "mxj_p015_q4",
+     "topicId": "mxj_p015",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，角 A 等于 30 度，则角 B 等于多少度？",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，角 A 等于 30 度，则角 B 等于多少度？",
+     "answer": "60",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "两个锐角互余，所以角 B 等于 90 度减角 A，即 90-30=60 度，此时斜边上的中线把原三角形分成一个等边三角形。"
+    },
+    {
+     "id": "mxj_p015_q5",
+     "topicId": "mxj_p015",
+     "prompt": "直角三角形的两条直角边分别为 6 和 8，求斜边的长，结果填一个数。",
+     "question": "直角三角形的两条直角边分别为 6 和 8，求斜边的长，结果填一个数。",
+     "answer": 10,
+     "verify": "{\"type\":\"num\",\"value\":10}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "由勾股定理，斜边的平方等于 6² 加 8²，即 36+64=100，所以斜边长为 10，这也是一组常见的勾股数。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "mxj_p1044",
+   "page": 2,
+   "description": "由 x²+2x+1=(x+1)(x+1) 这类等式抽象出因式的定义，再给出因式分解的定义，并说明因式分解与整式乘法互为逆变形。",
+   "mastery_criteria": [
+    "能说出因式分解是把一个多项式化成几个多项式乘积的形式",
+    "能用整式乘法检验一个因式分解是否正确",
+    "能指出一个多项式分解后得到的各个因式"
+   ],
+   "misconceptions": [
+    "把整式乘法的变形误认为因式分解",
+    "认为等号右边出现括号就是因式分解，忽略了必须是乘积形式"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1044_q1",
+     "topicId": "mxj_p1044",
+     "prompt": "由于 x²+2x+1=(x+1)(x+1)，下列说法正确的是哪一个？",
+     "question": "由于 x²+2x+1=(x+1)(x+1)，下列说法正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x+1 是 x²+2x+1 的一个因式"
+      },
+      {
+       "label": "B",
+       "text": "x+1 是 x²+2x+1 的倍数"
+      },
+      {
+       "label": "C",
+       "text": "x²+2x+1 是 x+1 的因式"
+      },
+      {
+       "label": "D",
+       "text": "(x+1)(x+1) 不是多项式"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材把 f=gh 中的 g 叫作 f 的一个因式，由 x²+2x+1=(x+1)(x+1) 可知 x+1 是 x²+2x+1 的因式，而 x²+2x+1 是两个 x+1 的乘积。"
+    },
+    {
+     "id": "mxj_p1044_q2",
+     "topicId": "mxj_p1044",
+     "prompt": "下列各式中，不是因式分解的是哪一个？",
+     "question": "下列各式中，不是因式分解的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x²+xy=x(x+y)"
+      },
+      {
+       "label": "B",
+       "text": "(x+1)(x+2)=x²+3x+2"
+      },
+      {
+       "label": "C",
+       "text": "ax²-bx²-x=x(ax-bx-1)"
+      },
+      {
+       "label": "D",
+       "text": "2xy+2x-y-1=(2x-1)(y+1)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "B 的左边是两个多项式的积，右边是一个多项式，这是整式乘法；A、C、D 的右边都是几个多项式的乘积，符合因式分解的定义。"
+    },
+    {
+     "id": "mxj_p1044_q3",
+     "topicId": "mxj_p1044",
+     "prompt": "若等式 x²+kx-6=(x-2)(x+3) 对任意 x 都成立，则常数 k 的值是多少？",
+     "question": "若等式 x²+kx-6=(x-2)(x+3) 对任意 x 都成立，则常数 k 的值是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "-5"
+      },
+      {
+       "label": "C",
+       "text": "1"
+      },
+      {
+       "label": "D",
+       "text": "-1"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "(x-2)(x+3)=x²+3x-2x-6=x²+x-6，把它与 x²+kx-6 比较，一次项的系数相等，所以 k=1。"
+    },
+    {
+     "id": "mxj_p1044_q4",
+     "topicId": "mxj_p1044",
+     "prompt": "已知 x²-5x+6=(x-2)(x-3)，请把右边的 (x-2)(x-3) 展开，并把结果填在横线上。",
+     "question": "已知 x²-5x+6=(x-2)(x-3)，请把右边的 (x-2)(x-3) 展开，并把结果填在横线上。",
+     "answer": "x²-5x+6",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "(x-2)(x-3)=x²-3x-2x+(-2)×(-3)=x²-5x+6，这说明三个空格都应填 x²-5x+6，与教材例1 的结果一致。"
+    },
+    {
+     "id": "mxj_p1044_q5",
+     "topicId": "mxj_p1044",
+     "prompt": "因式分解与整式乘法是互逆的变形，因此可以用哪一种运算检验因式分解的结果是否正确？",
+     "question": "因式分解与整式乘法是互逆的变形，因此可以用哪一种运算检验因式分解的结果是否正确？",
+     "answer": "整式乘法",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "把分解得到的几个因式乘开，如果乘积与原多项式完全相同，就说明分解正确，所以检验的工具是整式乘法运算。"
+    },
+    {
+     "id": "mxj_p1044_q6",
+     "topicId": "mxj_p1044",
+     "prompt": "若 x²+mx+8=(x+2)(x+4)，则 m 的值是多少？把结果填在横线上。",
+     "question": "若 x²+mx+8=(x+2)(x+4)，则 m 的值是多少？把结果填在横线上。",
+     "answer": "6",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "(x+2)(x+4)=x²+4x+2x+8=x²+6x+8，与 x²+mx+8 对比一次项系数，可得 m=6，常数项 8 也正好相等。"
+    },
+    {
+     "id": "mxj_p1044_q7",
+     "topicId": "mxj_p1044",
+     "prompt": "已知 (x+a)(x+b)=x²+5x+6 对任意 x 都成立，求 a+b 的值，结果填一个数。",
+     "question": "已知 (x+a)(x+b)=x²+5x+6 对任意 x 都成立，求 a+b 的值，结果填一个数。",
+     "answer": 5,
+     "verify": "{\"type\":\"num\",\"value\":5}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "把左边展开得 x²+(a+b)x+ab，与 x²+5x+6 逐项比较，得 a+b=5 且 ab=6，所以 a+b 的值就是一次项系数 5。"
+    },
+    {
+     "id": "mxj_p1044_q8",
+     "topicId": "mxj_p1044",
+     "prompt": "判断 x²-2=(x+1)(x-1)-1 是不是因式分解，并说明理由。",
+     "question": "判断 x²-2=(x+1)(x-1)-1 是不是因式分解，并说明理由。",
+     "answer": "不是因式分解，因为右边不是几个多项式的乘积形式",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "因式分解要求把多项式写成几个多项式的乘积，而 (x+1)(x-1)-1 的最后一步运算是减法，整体不是一个乘积，所以不符合定义。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1045",
+   "page": 5,
+   "description": "由 xy 与 3xz 的相同因式引出公因式的概念，再从右到左使用分配律得到提公因式法，并归纳系数取最大公因数、字母取最低次幂的提取规则。",
+   "mastery_criteria": [
+    "能准确说出多项式各项的公因式",
+    "能按系数取最大公因数、字母取最低次幂的规则提出公因式",
+    "能在首项系数为负或出现相反因式时正确变形后提取"
+   ],
+   "misconceptions": [
+    "提公因式后漏写剩下的一项等于 1",
+    "把 2-x 与 x-2 当成相同的因式，忽略它们互为相反式"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1045_q1",
+     "topicId": "mxj_p1045",
+     "prompt": "多项式 5x+2xy 各项的公因式是哪一个？",
+     "question": "多项式 5x+2xy 各项的公因式是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "y"
+      },
+      {
+       "label": "D",
+       "text": "5x"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "5x 与 2xy 两项都含有字母 x，而 5 只出现在第一项、y 只出现在第二项，所以公因式是 x。"
+    },
+    {
+     "id": "mxj_p1045_q2",
+     "topicId": "mxj_p1045",
+     "prompt": "把多项式 -3x²+6xy-3xz 因式分解，结果正确的是哪一个？",
+     "question": "把多项式 -3x²+6xy-3xz 因式分解，结果正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3x(-x+2y-z)"
+      },
+      {
+       "label": "B",
+       "text": "-3x(x-2y+z)"
+      },
+      {
+       "label": "C",
+       "text": "-3x(x+2y+z)"
+      },
+      {
+       "label": "D",
+       "text": "-3x(x-2y-z)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "首项系数为负，先提出负号，括号内各项都要变号，得 -3x(x-2y+z)，把它乘开正好还原为 -3x²+6xy-3xz。"
+    },
+    {
+     "id": "mxj_p1045_q3",
+     "topicId": "mxj_p1045",
+     "prompt": "把多项式 5x²-3xy+x 因式分解，结果正确的是哪一个？",
+     "question": "把多项式 5x²-3xy+x 因式分解，结果正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x(5x-3y)"
+      },
+      {
+       "label": "B",
+       "text": "x(5x-3y-1)"
+      },
+      {
+       "label": "C",
+       "text": "5x(x-3y+1)"
+      },
+      {
+       "label": "D",
+       "text": "x(5x-3y+1)"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "三项都含 x，提出 x 后第三项剩下 1，不能漏掉，因此结果是 x(5x-3y+1)，乘开后正好得到原多项式。"
+    },
+    {
+     "id": "mxj_p1045_q4",
+     "topicId": "mxj_p1045",
+     "prompt": "把多项式 8x²y⁴-12xy²z 提出公因式 4xy² 后，括号内的多项式是什么？",
+     "question": "把多项式 8x²y⁴-12xy²z 提出公因式 4xy² 后，括号内的多项式是什么？",
+     "answer": "2xy²-3z",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "8x²y⁴ 除以 4xy² 得 2xy²，-12xy²z 除以 4xy² 得 -3z，所以括号内为 2xy²-3z，与教材例2 的答案一致。"
+    },
+    {
+     "id": "mxj_p1045_q5",
+     "topicId": "mxj_p1045",
+     "prompt": "把多项式 x(x-2)-y(2-x) 因式分解，结果是什么？",
+     "question": "把多项式 x(x-2)-y(2-x) 因式分解，结果是什么？",
+     "answer": "(x-2)(x+y)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "先把 2-x 变形为 -(x-2)，原式成为 x(x-2)+y(x-2)，再提出公因式 x-2，得 (x-2)(x+y)。"
+    },
+    {
+     "id": "mxj_p1045_q6",
+     "topicId": "mxj_p1045",
+     "prompt": "多项式 -12x²y+18xy-15y 各项的公因式是什么？",
+     "question": "多项式 -12x²y+18xy-15y 各项的公因式是什么？",
+     "answer": "3y",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "系数 12，18，15 的最大公因数是 3，三项都含字母 y 且 y 的最低次数是 1，所以公因式是 3y。"
+    },
+    {
+     "id": "mxj_p1045_q7",
+     "topicId": "mxj_p1045",
+     "prompt": "已知 x+y=3，xy=2，求 x²y+xy² 的值，结果填一个数。",
+     "question": "已知 x+y=3，xy=2，求 x²y+xy² 的值，结果填一个数。",
+     "answer": 6,
+     "verify": "{\"type\":\"op\",\"op\":\"mul\",\"values\":[{\"type\":\"num\",\"value\":3},{\"type\":\"num\",\"value\":2}]}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "提出公因式 xy 得 x²y+xy²=xy(x+y)，代入 xy=2 与 x+y=3，得 2×3=6，因此原式的值为 6。"
+    },
+    {
+     "id": "mxj_p1045_q8",
+     "topicId": "mxj_p1045",
+     "prompt": "三名同学把 2x²+4x 分解为 2(x²+2x)、x(2x+4)、2x(x+2)。哪一个结果最彻底？请说明理由。",
+     "question": "三名同学把 2x²+4x 分解为 2(x²+2x)、x(2x+4)、2x(x+2)。哪一个结果最彻底？请说明理由。",
+     "answer": "2x(x+2) 最彻底，因为公因式 2x 已全部提出，括号内不再有公因式",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "前两个结果都只提出了部分公因式，括号内仍含公因式 x 或 2；而 2x(x+2) 把公因式 2x 一次提完，符合分解要彻底的要求。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1046",
+   "page": 9,
+   "description": "把平方差公式与完全平方公式从右到左使用，得到公式法：平方差公式分解两项式，完全平方公式分解三项式，并强调分解必须彻底。",
+   "mastery_criteria": [
+    "能识别多项式是否符合平方差公式或完全平方公式的特征",
+    "能用公式法完成分解并处理需要继续分解的情形",
+    "能用平方差公式对具体数值进行简便计算"
+   ],
+   "misconceptions": [
+    "把 x⁴-y⁴ 分解为 (x²+y²)(x²-y²) 后就停止，没有继续分解",
+    "把 9x²-6x+1 误写成 (9x-1)²，没有先化成 (3x)² 的形式"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1046_q1",
+     "topicId": "mxj_p1046",
+     "prompt": "下列多项式中，能用平方差公式因式分解的是哪一个？",
+     "question": "下列多项式中，能用平方差公式因式分解的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x²-25"
+      },
+      {
+       "label": "B",
+       "text": "x²+25"
+      },
+      {
+       "label": "C",
+       "text": "x²-5x"
+      },
+      {
+       "label": "D",
+       "text": "x²-10x+25"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "平方差公式要求多项式是两个平方的差。x²-25=x²-5² 符合；B 是平方和，C 含一次项，D 是三项式，应使用完全平方公式。"
+    },
+    {
+     "id": "mxj_p1046_q2",
+     "topicId": "mxj_p1046",
+     "prompt": "把多项式 25x²-4y² 因式分解，结果正确的是哪一个？",
+     "question": "把多项式 25x²-4y² 因式分解，结果正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(5x+4y)(5x-4y)"
+      },
+      {
+       "label": "B",
+       "text": "(25x+2y)(25x-2y)"
+      },
+      {
+       "label": "C",
+       "text": "(5x+2y)(5x-2y)"
+      },
+      {
+       "label": "D",
+       "text": "(5x-2y)²"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由平方差公式可知，两项都要先写成平方的形式：25x² 是 5x 的平方，4y² 是 2y 的平方，所以原式等于 (5x)²-(2y)²，分解得 (5x+2y)(5x-2y)，与教材例1 的结果相同。"
+    },
+    {
+     "id": "mxj_p1046_q3",
+     "topicId": "mxj_p1046",
+     "prompt": "把多项式 9x²-6x+1 因式分解，结果正确的是哪一个？",
+     "question": "把多项式 9x²-6x+1 因式分解，结果正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(9x-1)²"
+      },
+      {
+       "label": "B",
+       "text": "(3x-1)²"
+      },
+      {
+       "label": "C",
+       "text": "(3x+1)²"
+      },
+      {
+       "label": "D",
+       "text": "(3x-1)(3x+1)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "9x²=(3x)²，1=1²，中间项 2×3x×1=6x，符合完全平方公式2，所以原式=(3x-1)²，展开后正好还原。"
+    },
+    {
+     "id": "mxj_p1046_q4",
+     "topicId": "mxj_p1046",
+     "prompt": "把多项式 x²-16y² 因式分解，结果是什么？",
+     "question": "把多项式 x²-16y² 因式分解，结果是什么？",
+     "answer": "(x+4y)(x-4y)",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "x²-16y²=x²-(4y)²，从右到左使用平方差公式，得 (x+4y)(x-4y)，两个因式都不再能分解。"
+    },
+    {
+     "id": "mxj_p1046_q5",
+     "topicId": "mxj_p1046",
+     "prompt": "把多项式 x⁴-y⁴ 因式分解，结果是什么？要注意分解彻底。",
+     "question": "把多项式 x⁴-y⁴ 因式分解，结果是什么？要注意分解彻底。",
+     "answer": "(x²+y²)(x+y)(x-y)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "x⁴-y⁴=(x²+y²)(x²-y²)，其中 x²-y² 还能用平方差公式分解为 (x+y)(x-y)，所以最终结果是三个因式的积。"
+    },
+    {
+     "id": "mxj_p1046_q6",
+     "topicId": "mxj_p1046",
+     "prompt": "用简便方法计算 6.1²-3.9² 的值，结果填在横线上。",
+     "question": "用简便方法计算 6.1²-3.9² 的值，结果填在横线上。",
+     "answer": "22",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "利用平方差公式，6.1²-3.9²=(6.1+3.9)(6.1-3.9)=10×2.2=22，比直接算两个平方再相减简便得多。"
+    },
+    {
+     "id": "mxj_p1046_q7",
+     "topicId": "mxj_p1046",
+     "prompt": "已知 a+b=5，a-b=3，求 a²-b² 的值，结果填一个数。",
+     "question": "已知 a+b=5，a-b=3，求 a²-b² 的值，结果填一个数。",
+     "answer": 15,
+     "verify": "{\"type\":\"op\",\"op\":\"mul\",\"values\":[{\"type\":\"num\",\"value\":5},{\"type\":\"num\",\"value\":3}]}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "由平方差公式 a²-b²=(a+b)(a-b)，代入 a+b=5 与 a-b=3，得 5×3=15，不需要分别求出 a 与 b。"
+    },
+    {
+     "id": "mxj_p1046_q8",
+     "topicId": "mxj_p1046",
+     "prompt": "把多项式 x⁵-x³y² 因式分解，并说明应当先做什么运算。",
+     "question": "把多项式 x⁵-x³y² 因式分解，并说明应当先做什么运算。",
+     "answer": "结果是 x³(x+y)(x-y)，应当先提公因式 x³，再用平方差公式分解",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "两项有公因式 x³，先提出得 x³(x²-y²)，括号内是平方差，再用公式分解为 (x+y)(x-y)，即 x³(x+y)(x-y)。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1047",
+   "page": 24,
+   "description": "用两个多项式相除的结果引出分式的定义，讨论分式无意义与值为零的条件，再由分数的基本性质推广出分式的基本性质与约分。",
+   "mastery_criteria": [
+    "能判断一个代数式是不是分式并指出分子与分母",
+    "能求分式无意义、值为零时字母的取值",
+    "能用分式的基本性质约分并把分式化成最简分式"
+   ],
+   "misconceptions": [
+    "只让分子为零就断定分式的值为零，忽略分母不能为零",
+    "约分时只约系数，不约分子分母中的公因式"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1047_q1",
+     "topicId": "mxj_p1047",
+     "prompt": "当 x 取哪个数时，分式 (x-2)/(2x-3) 的值不存在？",
+     "question": "当 x 取哪个数时，分式 (x-2)/(2x-3) 的值不存在？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x=3/2"
+      },
+      {
+       "label": "B",
+       "text": "x=2"
+      },
+      {
+       "label": "C",
+       "text": "x=0"
+      },
+      {
+       "label": "D",
+       "text": "x=-3/2"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "分式无意义就是分母为零。由 2x-3=0 解得 x=3/2，此时分母为 0，分式的值不存在，与教材例1 一致。"
+    },
+    {
+     "id": "mxj_p1047_q2",
+     "topicId": "mxj_p1047",
+     "prompt": "下列分式中，与 x/y 相等的是哪一个？",
+     "question": "下列分式中，与 x/y 相等的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(x+1)/(y+1)"
+      },
+      {
+       "label": "B",
+       "text": "(2x)/(2y)"
+      },
+      {
+       "label": "C",
+       "text": "x²/y"
+      },
+      {
+       "label": "D",
+       "text": "(x-1)/(y-1)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "分式的分子与分母都乘同一个不为零的整式，分式的值不变。B 是把分子分母同乘 2 得到的，所以与原分式相等。"
+    },
+    {
+     "id": "mxj_p1047_q3",
+     "topicId": "mxj_p1047",
+     "prompt": "把分式 (x²-2x)/(x²-4x+4) 化成最简分式，结果是哪一个？",
+     "question": "把分式 (x²-2x)/(x²-4x+4) 化成最简分式，结果是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x/(x+2)"
+      },
+      {
+       "label": "B",
+       "text": "(x-2)/x"
+      },
+      {
+       "label": "C",
+       "text": "x/(x-2)"
+      },
+      {
+       "label": "D",
+       "text": "1/(x-2)"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "分子 x²-2x=x(x-2)，分母 x²-4x+4=(x-2)²，约去公因式 x-2 后得 x/(x-2)，与教材例3 的答案相同。"
+    },
+    {
+     "id": "mxj_p1047_q4",
+     "topicId": "mxj_p1047",
+     "prompt": "当 x=23，y=17 时，分式 (x-y)/(x+y) 的值是多少？结果填在横线上。",
+     "question": "当 x=23，y=17 时，分式 (x-y)/(x+y) 的值是多少？结果填在横线上。",
+     "answer": "3/20",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "代入得 (23-17)/(23+17)=6/40，约分后为 3/20，这说明先化简再代值往往比直接代值计算更简便。"
+    },
+    {
+     "id": "mxj_p1047_q5",
+     "topicId": "mxj_p1047",
+     "prompt": "若分式 x/(2x-3) 的值不存在，则 x 等于多少？",
+     "question": "若分式 x/(2x-3) 的值不存在，则 x 等于多少？",
+     "answer": "3/2",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "分式无意义只需分母为零，由 2x-3=0 解得 x=3/2，此时分子并不为零，分式只是没有意义。"
+    },
+    {
+     "id": "mxj_p1047_q6",
+     "topicId": "mxj_p1047",
+     "prompt": "利用分式的基本性质填空：把 1/(x+1) 的分子与分母都乘 2(x-1) 以后，所得分式的分母是什么？",
+     "question": "利用分式的基本性质填空：把 1/(x+1) 的分子与分母都乘 2(x-1) 以后，所得分式的分母是什么？",
+     "answer": "2(x-1)(x+1)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "分子 1 乘 2(x-1) 得 2(x-1)，分母 x+1 也乘 2(x-1)，所以分母为 2(x-1)(x+1)，这就是分式基本性质的应用。"
+    },
+    {
+     "id": "mxj_p1047_q7",
+     "topicId": "mxj_p1047",
+     "prompt": "当 x=41，y=13 时，求分式 (x²-9y²)/(x²+6xy+9y²) 的值，结果填一个数。",
+     "question": "当 x=41，y=13 时，求分式 (x²-9y²)/(x²+6xy+9y²) 的值，结果填一个数。",
+     "answer": 0.025,
+     "verify": "{\"type\":\"op\",\"op\":\"div\",\"values\":[{\"type\":\"num\",\"value\":1},{\"type\":\"num\",\"value\":40}]}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "先把分子分解为 (x-3y) 与 (x+3y) 的积，分母正好是 (x+3y) 的平方，约去公因式后得 (x-3y)/(x+3y)，再把 x=41，y=13 代入，得 2/80，即 0.025。"
+    },
+    {
+     "id": "mxj_p1047_q8",
+     "topicId": "mxj_p1047",
+     "prompt": "把分式 (x²-16)/(x+4) 化成最简分式，并写出化简时对 x 的要求。",
+     "question": "把分式 (x²-16)/(x+4) 化成最简分式，并写出化简时对 x 的要求。",
+     "answer": "化简结果为 x-4，且要求 x 不等于 -4",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "分子 x²-16=(x+4)(x-4)，约去公因式 x+4 得 x-4；约分是分子分母同除以 x+4，所以要保证 x+4 不为零，即 x 不等于 -4。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1048",
+   "page": 30,
+   "description": "类比分数的加减法规定同分母分式的加减法则，再由相反分式推出减法，最后用最简公分母通分完成异分母分式的加减运算。",
+   "mastery_criteria": [
+    "能直接按分母不变、分子相加减的法则计算同分母分式",
+    "能求出几个分式的最简公分母并正确通分",
+    "能把加减运算的结果化成最简分式或整式"
+   ],
+   "misconceptions": [
+    "把分母相加当成同分母分式相加的结果",
+    "分子相减时漏掉括号，导致符号出错"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1048_q1",
+     "topicId": "mxj_p1048",
+     "prompt": "计算 7/(x-1)+3/(x-1)-8/(x-1) 的结果是哪一个？",
+     "question": "计算 7/(x-1)+3/(x-1)-8/(x-1) 的结果是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2/(x-1)"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "0"
+      },
+      {
+       "label": "D",
+       "text": "18/(x-1)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "同分母分式相加减，分母不变，分子相加减，得 (7+3-8)/(x-1)=2/(x-1)，不能把分母也相加减。"
+    },
+    {
+     "id": "mxj_p1048_q2",
+     "topicId": "mxj_p1048",
+     "prompt": "分式 1/(4x) 与 1/(6y) 的最简公分母是哪一个？",
+     "question": "分式 1/(4x) 与 1/(6y) 的最简公分母是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "24xy"
+      },
+      {
+       "label": "B",
+       "text": "12xy"
+      },
+      {
+       "label": "C",
+       "text": "4x+6y"
+      },
+      {
+       "label": "D",
+       "text": "6xy"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "4 与 6 的最小公倍数是 12，字母 x 与 y 都要取到，所以最简公分母是 12xy，它比 24xy 更简单。"
+    },
+    {
+     "id": "mxj_p1048_q3",
+     "topicId": "mxj_p1048",
+     "prompt": "计算 x/(x²-y²)-y/(x²-y²) 的结果是哪一个？",
+     "question": "计算 x/(x²-y²)-y/(x²-y²) 的结果是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1/(x-y)"
+      },
+      {
+       "label": "B",
+       "text": "0"
+      },
+      {
+       "label": "C",
+       "text": "(x-y)/(x+y)"
+      },
+      {
+       "label": "D",
+       "text": "1/(x+y)"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "分母相同，分子相减得 x-y，而 x²-y²=(x-y)(x+y)，约去公因式 x-y 后结果为 1/(x+y)，是最简分式。"
+    },
+    {
+     "id": "mxj_p1048_q4",
+     "topicId": "mxj_p1048",
+     "prompt": "计算 3x²/(x-y)-3xy/(x-y) 的结果是什么？",
+     "question": "计算 3x²/(x-y)-3xy/(x-y) 的结果是什么？",
+     "answer": "3x",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "分母不变，分子相减得 3x²-3xy=3x(x-y)，再与分母约去 x-y，结果为 3x，是一个整式。"
+    },
+    {
+     "id": "mxj_p1048_q5",
+     "topicId": "mxj_p1048",
+     "prompt": "计算 1/(x+3)+6/(x²-9) 的结果是什么？请化成最简结果。",
+     "question": "计算 1/(x+3)+6/(x²-9) 的结果是什么？请化成最简结果。",
+     "answer": "1/(x-3)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "最简公分母是 (x+3)(x-3)，通分后分子为 x-3+6=x+3，与分母约去 x+3，结果得 1/(x-3)。"
+    },
+    {
+     "id": "mxj_p1048_q6",
+     "topicId": "mxj_p1048",
+     "prompt": "由于 2x=2x，3(x²-x)=3x(x-1)，所以分式 3/(2x) 与 5y/(3(x²-x)) 的最简公分母是什么？",
+     "question": "由于 2x=2x，3(x²-x)=3x(x-1)，所以分式 3/(2x) 与 5y/(3(x²-x)) 的最简公分母是什么？",
+     "answer": "6x(x-1)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "系数 2 与 3 的最小公倍数是 6，字母 x 取一次，再把因式 x-1 取到，所以最简公分母是 6x(x-1)，与教材例4 一致。"
+    },
+    {
+     "id": "mxj_p1048_q7",
+     "topicId": "mxj_p1048",
+     "prompt": "计算 xz/(x-y)+yz/(y-x) 的值，其中 x=5，y=3，z=2，结果填一个数。",
+     "question": "计算 xz/(x-y)+yz/(y-x) 的值，其中 x=5，y=3，z=2，结果填一个数。",
+     "answer": 2,
+     "verify": "{\"type\":\"num\",\"value\":2}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "把 y-x 化为 -(x-y)，原式变为 (xz-yz)/(x-y)=(x-y)z/(x-y)=z，所以结果为 2，与 x，y 的具体取值无关。"
+    },
+    {
+     "id": "mxj_p1048_q8",
+     "topicId": "mxj_p1048",
+     "prompt": "计算 1/(x+2)+1/(x-2)，把最简结果写在横线上。",
+     "question": "计算 1/(x+2)+1/(x-2)，把最简结果写在横线上。",
+     "answer": "2x/(x²-4)",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "最简公分母为 (x+2)(x-2)，通分后分子是 (x-2)+(x+2)=2x，分母是 x²-4，分子分母没有公因式，不能再约分。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1049",
+   "page": 38,
+   "description": "类比分数的乘除法规定分式乘分式、除以分式的法则，再由分式乘法满足结合律推出乘方法则，要求结果化成最简分式。",
+   "mastery_criteria": [
+    "能按分子乘分子、分母乘分母的法则计算分式乘法",
+    "能把除法转化为乘除式的倒数，并处理符号",
+    "能运用分式的乘方法则把分子分母各自乘方"
+   ],
+   "misconceptions": [
+    "把除法直接按被除式的分子分母相除，没有颠倒除式",
+    "乘方时只把分子乘方而忘记分母乘方"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1049_q1",
+     "topicId": "mxj_p1049",
+     "prompt": "分式乘分式的法则是把分子乘分子、分母乘分母，即 f/g 乘 u/v 等于哪一个式子？",
+     "question": "分式乘分式的法则是把分子乘分子、分母乘分母，即 f/g 乘 u/v 等于哪一个式子？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(f·u)/(g·v)"
+      },
+      {
+       "label": "B",
+       "text": "(f·v)/(g·u)"
+      },
+      {
+       "label": "C",
+       "text": "(f+u)/(g+v)"
+      },
+      {
+       "label": "D",
+       "text": "(f·g)/(u·v)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材规定分式乘分式，把分子乘分子、分母乘分母，所以 f/g 乘 u/v 等于 (f·u)/(g·v)，B 是除法颠倒后的形式。"
+    },
+    {
+     "id": "mxj_p1049_q2",
+     "topicId": "mxj_p1049",
+     "prompt": "计算 2x³/(7y) 乘 3y²/(5x⁴) 的结果是哪一个？",
+     "question": "计算 2x³/(7y) 乘 3y²/(5x⁴) 的结果是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "6x/(35y)"
+      },
+      {
+       "label": "B",
+       "text": "6/(35xy)"
+      },
+      {
+       "label": "C",
+       "text": "6y/(35x)"
+      },
+      {
+       "label": "D",
+       "text": "35x/(6y)"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "分子相乘得 6x³y²，分母相乘得 35x⁴y，约去 x³y 后为 6y/(35x)，与教材例1 的结果相同。"
+    },
+    {
+     "id": "mxj_p1049_q3",
+     "topicId": "mxj_p1049",
+     "prompt": "计算 3x²/(x-1) 除以 2x/(x-1) 的结果是哪一个？",
+     "question": "计算 3x²/(x-1) 除以 2x/(x-1) 的结果是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "6x"
+      },
+      {
+       "label": "B",
+       "text": "3x/2"
+      },
+      {
+       "label": "C",
+       "text": "2/(3x)"
+      },
+      {
+       "label": "D",
+       "text": "3x²/2"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把除式的分子分母颠倒后与被除式相乘，得 3x²/(x-1) 乘 (x-1)/(2x)，约分后为 3x/2，与教材例3 一致。"
+    },
+    {
+     "id": "mxj_p1049_q4",
+     "topicId": "mxj_p1049",
+     "prompt": "计算 2x/(x+1) 除以 4x²/(x+1) 的结果是什么？",
+     "question": "计算 2x/(x+1) 除以 4x²/(x+1) 的结果是什么？",
+     "answer": "1/(2x)",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "除以一个分式等于乘它的倒数，得 2x/(x+1) 乘 (x+1)/(4x²)，约去 2x(x+1) 后结果是 1/(2x)。"
+    },
+    {
+     "id": "mxj_p1049_q5",
+     "topicId": "mxj_p1049",
+     "prompt": "计算 (x+1)/(2x) 乘 4x²/(x²-1) 的结果是什么？",
+     "question": "计算 (x+1)/(2x) 乘 4x²/(x²-1) 的结果是什么？",
+     "answer": "2x/(x-1)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "先把 x²-1 分解为 (x+1)(x-1)，于是分子是 4x²(x+1)，分母是 2x(x+1)(x-1)，约去公因式 2x(x+1) 后得 2x/(x-1)，是最简结果。"
+    },
+    {
+     "id": "mxj_p1049_q6",
+     "topicId": "mxj_p1049",
+     "prompt": "分式的乘方就是把分子、分母各自进行哪一种运算？请填两个字。",
+     "question": "分式的乘方就是把分子、分母各自进行哪一种运算？请填两个字。",
+     "answer": "乘方",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "教材规定分式的乘方就是把分子、分母各自乘方，例如 (x/y²)³=x³/y⁶，指数同时作用在分子与分母上。"
+    },
+    {
+     "id": "mxj_p1049_q7",
+     "topicId": "mxj_p1049",
+     "prompt": "计算 8x²/(x²+2x+1) 除以 2x/(x+1)，其中 x=3，结果填一个数。",
+     "question": "计算 8x²/(x²+2x+1) 除以 2x/(x+1)，其中 x=3，结果填一个数。",
+     "answer": 3,
+     "verify": "{\"type\":\"num\",\"value\":3}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "分母 x²+2x+1=(x+1)²，除法化为乘法后约分得 4x/(x+1)，把 x=3 代入得 12/4=3，与教材例4 的化简结果一致。"
+    },
+    {
+     "id": "mxj_p1049_q8",
+     "topicId": "mxj_p1049",
+     "prompt": "计算 (2/(x-3)-1/x) 除以 (x+3)/(x²-3x)，结果是什么？",
+     "question": "计算 (2/(x-3)-1/x) 除以 (x+3)/(x²-3x)，结果是什么？",
+     "answer": "1",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "括号内通分得 (2x-(x-3))/(x(x-3))=(x+3)/(x(x-3))，再乘 x(x-3)/(x+3)，约分后结果为 1，与教材例5 相同。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1050",
+   "page": 43,
+   "description": "先由同底数幂相除得出指数相减的法则，再把指数推广到零与负整数，得到零次幂与负整数指数幂的规定，并用于科学记数法表示较小的数。",
+   "mastery_criteria": [
+    "能运用同底数幂的除法法则进行指数相减的运算",
+    "能说出任何非零实数的零次幂等于 1 并计算负整数指数幂",
+    "能用科学记数法表示绝对值较小的数"
+   ],
+   "misconceptions": [
+    "认为 0 的零次幂等于 1，忽略了底数不能为零",
+    "把 2 的负三次幂算成负的 8，不理解负指数表示倒数"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1050_q1",
+     "topicId": "mxj_p1050",
+     "prompt": "计算 y⁷ 除以 y³ 的结果是哪一个？",
+     "question": "计算 y⁷ 除以 y³ 的结果是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y⁴"
+      },
+      {
+       "label": "B",
+       "text": "y³"
+      },
+      {
+       "label": "C",
+       "text": "y¹⁰"
+      },
+      {
+       "label": "D",
+       "text": "y²¹"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "同底数幂相除，底数不变，指数相减，所以 y⁷ 除以 y³ 等于 y 的 7 减 3 次幂，即 y⁴，与教材例1 一致。"
+    },
+    {
+     "id": "mxj_p1050_q2",
+     "topicId": "mxj_p1050",
+     "prompt": "计算 (-x)⁹ 除以 (-x)⁴ 的结果是哪一个？",
+     "question": "计算 (-x)⁹ 除以 (-x)⁴ 的结果是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x⁵"
+      },
+      {
+       "label": "B",
+       "text": "-x⁵"
+      },
+      {
+       "label": "C",
+       "text": "x⁴"
+      },
+      {
+       "label": "D",
+       "text": "-x⁴"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "指数相减得 (-x)⁵，负数的奇次幂是负数，所以 (-x)⁵=-x⁵，结果为 -x⁵，不能直接写成 x⁵。"
+    },
+    {
+     "id": "mxj_p1050_q3",
+     "topicId": "mxj_p1050",
+     "prompt": "计算 (-2)⁰ 的值是哪一个？",
+     "question": "计算 (-2)⁰ 的值是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "-1"
+      },
+      {
+       "label": "B",
+       "text": "0"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "任何非零实数的零次幂都等于 1，-2 是非零实数，所以 (-2)⁰=1，与底数的正负无关。"
+    },
+    {
+     "id": "mxj_p1050_q4",
+     "topicId": "mxj_p1050",
+     "prompt": "计算 2 的负三次幂，把结果填在横线上。",
+     "question": "计算 2 的负三次幂，把结果填在横线上。",
+     "answer": "1/8",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "由负整数指数幂的规定，2 的负三次幂等于 2 的三次幂的倒数，2³=8，所以结果为 1/8，而不是 -8。"
+    },
+    {
+     "id": "mxj_p1050_q5",
+     "topicId": "mxj_p1050",
+     "prompt": "把 0.000 000 000 34 用科学记数法表示，结果填在横线上。",
+     "question": "把 0.000 000 000 34 用科学记数法表示，结果填在横线上。",
+     "answer": "3.4×10⁻¹⁰",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "0.000 000 000 34=3.4×0.000 000 000 1=3.4×10 的负十次幂，其中 1 到 10 之间是 3.4，与教材例5 一致。"
+    },
+    {
+     "id": "mxj_p1050_q6",
+     "topicId": "mxj_p1050",
+     "prompt": "计算 3x⁵y⁷ 除以 5x²y⁴ 的结果是什么？",
+     "question": "计算 3x⁵y⁷ 除以 5x²y⁴ 的结果是什么？",
+     "answer": "(3/5)x³y³",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "系数相除得 3/5，同底数幂分别相除，x 的指数 5-2=3，y 的指数 7-4=3，所以结果为 (3/5)x³y³，与教材例2 一致。"
+    },
+    {
+     "id": "mxj_p1050_q7",
+     "topicId": "mxj_p1050",
+     "prompt": "已知 1 GB 等于 1024 MB，一张光盘的容量约为 640 MB，求一个 320 GB 的移动硬盘相当于多少张这样的光盘，结果填一个数。",
+     "question": "已知 1 GB 等于 1024 MB，一张光盘的容量约为 640 MB，求一个 320 GB 的移动硬盘相当于多少张这样的光盘，结果填一个数。",
+     "answer": 512,
+     "verify": "{\"type\":\"op\",\"op\":\"div\",\"values\":[{\"type\":\"op\",\"op\":\"mul\",\"values\":[{\"type\":\"num\",\"value\":320},{\"type\":\"num\",\"value\":1024}]},{\"type\":\"num\",\"value\":640}]}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "320 GB 等于 320×1024 MB=327 680 MB，再除以 640 MB，得 512，所以相当于 512 张光盘的容量。"
+    },
+    {
+     "id": "mxj_p1050_q8",
+     "topicId": "mxj_p1050",
+     "prompt": "计算 (2/3) 的负二次幂，把结果填在横线上。",
+     "question": "计算 (2/3) 的负二次幂，把结果填在横线上。",
+     "answer": "9/4",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "由 a 的负 n 次幂等于 (1/a) 的 n 次幂，(2/3) 的负二次幂等于 (3/2) 的二次幂，即 9/4，与教材例3 的结果相同。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1051",
+   "page": 52,
+   "description": "由植树问题中的等量关系列出分母含未知数的方程，给出分式方程的定义，再用去分母把方程化为一元一次方程并检验增根，最后解决行程、工程等实际问题。",
+   "mastery_criteria": [
+    "能识别分式方程并求它的最简公分母",
+    "能按去分母、解整式方程、检验三步解分式方程",
+    "能根据实际问题的等量关系列分式方程并检验解的合理性"
+   ],
+   "misconceptions": [
+    "去分母后忘记把每一项都乘最简公分母",
+    "解出整式方程的解后不作检验，把增根当成原方程的解"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "mxj_p1051_q1",
+     "topicId": "mxj_p1051",
+     "prompt": "下列方程中，是分式方程的是哪一个？",
+     "question": "下列方程中，是分式方程的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1/x+2=3"
+      },
+      {
+       "label": "B",
+       "text": "x/2+2=3"
+      },
+      {
+       "label": "C",
+       "text": "(x+1)/3=2"
+      },
+      {
+       "label": "D",
+       "text": "2x-1=0"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "分母中含有未知数的方程叫作分式方程。A 的分母是 x，符合定义；B、C 的分母都是数，D 中不含分母，它们都是整式方程。"
+    },
+    {
+     "id": "mxj_p1051_q2",
+     "topicId": "mxj_p1051",
+     "prompt": "解可化为一元一次方程的分式方程，基本思路是哪一个？",
+     "question": "解可化为一元一次方程的分式方程，基本思路是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "直接移项把未知数都移到一边"
+      },
+      {
+       "label": "B",
+       "text": "把两边的分子直接相加"
+      },
+      {
+       "label": "C",
+       "text": "去分母，把分式方程化为一元一次方程"
+      },
+      {
+       "label": "D",
+       "text": "两边同时取倒数"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材指出目前只会解两边都是整式的方程，所以应通过去分母把分式方程化为一元一次方程，再解并检验，这是解法的核心思路。"
+    },
+    {
+     "id": "mxj_p1051_q3",
+     "topicId": "mxj_p1051",
+     "prompt": "解方程 1/(x-2)=4/(x²-4) 时，去分母后得到的整式方程是哪一个？",
+     "question": "解方程 1/(x-2)=4/(x²-4) 时，去分母后得到的整式方程是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x-2=4"
+      },
+      {
+       "label": "B",
+       "text": "x+2=4"
+      },
+      {
+       "label": "C",
+       "text": "x²-4=4"
+      },
+      {
+       "label": "D",
+       "text": "x+2=4(x-2)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "最简公分母是 (x-2)(x+2)，两边同乘后左边得 x+2，右边得 4；解得 x=2，但此时公分母为 0，所以原方程无解。"
+    },
+    {
+     "id": "mxj_p1051_q4",
+     "topicId": "mxj_p1051",
+     "prompt": "请解这个分式方程：方程 9600/x-7200/x=4 的解 x 是多少？",
+     "question": "请解这个分式方程：方程 9600/x-7200/x=4 的解 x 是多少？",
+     "answer": "600",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "两边同乘 x 得 9600-7200=4x，即 2400=4x，解得 x=600，代回原方程左边确实等于 4，所以 x=600 是解。"
+    },
+    {
+     "id": "mxj_p1051_q5",
+     "topicId": "mxj_p1051",
+     "prompt": "解分式方程时，若求得的解使最简公分母的值为多少，则它不是原分式方程的解？",
+     "question": "解分式方程时，若求得的解使最简公分母的值为多少，则它不是原分式方程的解？",
+     "answer": "0",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "把求出的值代入最简公分母，如果它的值为 0，说明原方程中有分母为零，这样的值一定是增根，必须舍去。"
+    },
+    {
+     "id": "mxj_p1051_q6",
+     "topicId": "mxj_p1051",
+     "prompt": "请解分式方程 5/(x-2)-3/x=0，并写出 x 的值。",
+     "question": "请解分式方程 5/(x-2)-3/x=0，并写出 x 的值。",
+     "answer": "-3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "两边同乘 x(x-2) 得 5x-3(x-2)=0，即 2x+6=0，解得 x=-3；此时公分母不为零，代回原方程两边都为 0，所以成立。"
+    },
+    {
+     "id": "mxj_p1051_q7",
+     "topicId": "mxj_p1051",
+     "prompt": "某村计划种 9600 棵树，实际每天种树的棵数是原计划的 4/3 倍，结果提前 4 天完成。求原计划每天种多少棵树，结果填一个数。",
+     "question": "某村计划种 9600 棵树，实际每天种树的棵数是原计划的 4/3 倍，结果提前 4 天完成。求原计划每天种多少棵树，结果填一个数。",
+     "answer": 600,
+     "verify": "{\"type\":\"num\",\"value\":600}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "设原计划每天种 x 棵，则实际每天种 4x/3 棵，由原计划天数减实际天数等于 4 得 9600/x-7200/x=4，解得 x=600，且符合题意。"
+    },
+    {
+     "id": "mxj_p1051_q8",
+     "topicId": "mxj_p1051",
+     "prompt": "某校学生走线路一全程 25 km，走线路二全程 30 km，线路二的平均车速是线路一的 1.5 倍，所用时间比线路一少 10 min。求走线路一的平均车速。",
+     "question": "某校学生走线路一全程 25 km，走线路二全程 30 km，线路二的平均车速是线路一的 1.5 倍，所用时间比线路一少 10 min。求走线路一的平均车速。",
+     "answer": "30 km/h",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "设线路一的车速为 x km/h，10 min 等于六分之一小时，列方程 25/x-30/(1.5x)=1/6，解得 x=30，检验符合题意。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1052",
+   "page": 65,
+   "description": "由 2，3，5 的算术平方根归纳出形如根号 a 的式子叫作二次根式，讨论被开方数非负的条件，并得出根号 a 的平方与根号下 a 平方的化简结果。",
+   "mastery_criteria": [
+    "能说出二次根式有意义的条件并求出字母的取值范围",
+    "能计算二次根式的平方，即根号 a 的平方等于 a",
+    "能把根号下 a 平方化成 a 的绝对值再分类化简"
+   ],
+   "misconceptions": [
+    "认为根号下 a 平方一定等于 a，忽略 a 为负数时要取相反数",
+    "求有意义条件时把大于或等于 0 误写成大于 0"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1052_q1",
+     "topicId": "mxj_p1052",
+     "prompt": "若二次根式 √(2x-3) 在实数范围内有意义，则 x 的取值范围是哪一个？",
+     "question": "若二次根式 √(2x-3) 在实数范围内有意义，则 x 的取值范围是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 大于或等于 3/2"
+      },
+      {
+       "label": "B",
+       "text": "x 大于 3/2"
+      },
+      {
+       "label": "C",
+       "text": "x 小于或等于 3/2"
+      },
+      {
+       "label": "D",
+       "text": "x 不等于 3/2"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "被开方数 2x-3 必须大于或等于 0，解得 x 大于或等于 3/2。x 等于 3/2 时被开方数为 0，根式仍然有意义。"
+    },
+    {
+     "id": "mxj_p1052_q2",
+     "topicId": "mxj_p1052",
+     "prompt": "计算 (√7)² 的结果是哪一个？",
+     "question": "计算 (√7)² 的结果是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "√7"
+      },
+      {
+       "label": "B",
+       "text": "14"
+      },
+      {
+       "label": "C",
+       "text": "7"
+      },
+      {
+       "label": "D",
+       "text": "49"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "√7 是 7 的算术平方根，由根号 a 的平方等于 a 得 (√7)²=7，注意不要算成平方根 7 的平方再开方。"
+    },
+    {
+     "id": "mxj_p1052_q3",
+     "topicId": "mxj_p1052",
+     "prompt": "计算 √((3-π)²) 的结果是哪一个？",
+     "question": "计算 √((3-π)²) 的结果是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3-π"
+      },
+      {
+       "label": "B",
+       "text": "π-3"
+      },
+      {
+       "label": "C",
+       "text": "π+3"
+      },
+      {
+       "label": "D",
+       "text": "3π"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "因为 π 约等于 3.14，比 3 大，所以 3-π 是负数，根号下平方等于它的绝对值，而 3-π 的绝对值是 π-3，与教材例3 的思路一致。"
+    },
+    {
+     "id": "mxj_p1052_q4",
+     "topicId": "mxj_p1052",
+     "prompt": "计算 (√5)²，结果填在横线上。",
+     "question": "计算 (√5)²，结果填在横线上。",
+     "answer": "5",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "对于非负实数 a，根号 a 的平方等于 a，这里 a=5，所以 (√5)²=5，这是二次根式最基本的一条性质。"
+    },
+    {
+     "id": "mxj_p1052_q5",
+     "topicId": "mxj_p1052",
+     "prompt": "化简二次根式 √72，结果填在横线上。",
+     "question": "化简二次根式 √72，结果填在横线上。",
+     "answer": "6√2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "72=36×2=6²×2，由积的算术平方根性质得 √72=√(6²)×√2=6√2，与教材例4 的第3小题结果相同。"
+    },
+    {
+     "id": "mxj_p1052_q6",
+     "topicId": "mxj_p1052",
+     "prompt": "计算 √((1-√2)²)，把结果填在横线上。",
+     "question": "计算 √((1-√2)²)，把结果填在横线上。",
+     "answer": "√2-1",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "因为 √2 约等于 1.414，比 1 大，所以 1-√2 是负数，根号下平方等于它的绝对值，即 √2-1，结果为正数。"
+    },
+    {
+     "id": "mxj_p1052_q7",
+     "topicId": "mxj_p1052",
+     "prompt": "若二次根式 √(x-4) 与 √(4-x) 同时有意义，求 x 的值，结果填一个数。",
+     "question": "若二次根式 √(x-4) 与 √(4-x) 同时有意义，求 x 的值，结果填一个数。",
+     "answer": 4,
+     "verify": "{\"type\":\"num\",\"value\":4}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "两个根式都要有意义，需要 x-4 大于或等于 0 同时 4-x 大于或等于 0，两个条件合起来只能是 x=4，此时两式都等于 0。"
+    },
+    {
+     "id": "mxj_p1052_q8",
+     "topicId": "mxj_p1052",
+     "prompt": "化简二次根式 √(3/5)，并把结果填在横线上。",
+     "question": "化简二次根式 √(3/5)，并把结果填在横线上。",
+     "answer": "√15/5",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "被开方数含分母时需要化去分母，分子分母同乘 5 得 √(15/25)，由商的算术平方根性质得 √15 除以 5，即 √15/5。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1053",
+   "page": 70,
+   "description": "把积的算术平方根性质反过来得到二次根式的乘法法则，再由商的算术平方根性质得到除法法则，并强调结果要化成最简二次根式、分母不含根式。",
+   "mastery_criteria": [
+    "能运用根号 a 乘根号 b 等于根号 ab 进行乘法运算",
+    "能运用商的算术平方根性质完成除法并把分母有理化",
+    "能把运算结果化成最简二次根式"
+   ],
+   "misconceptions": [
+    "把根号 a 加根号 b 误当成根号下 a 加 b，把乘法法则用到加法上",
+    "结果中分母仍含根式，没有进行分母有理化"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1053_q1",
+     "topicId": "mxj_p1053",
+     "prompt": "计算 √3 乘 √6 的结果是哪一个？",
+     "question": "计算 √3 乘 √6 的结果是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3√2"
+      },
+      {
+       "label": "B",
+       "text": "2√3"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由二次根式的乘法法则，√3 乘 √6 等于 √18，而 18=3²×2，所以结果为 3√2，与教材例1 一致。"
+    },
+    {
+     "id": "mxj_p1053_q2",
+     "topicId": "mxj_p1053",
+     "prompt": "计算 √15 除以 √3 的结果是哪一个？",
+     "question": "计算 √15 除以 √3 的结果是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "√3"
+      },
+      {
+       "label": "C",
+       "text": "√5"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由商的算术平方根性质，√15 除以 √3 等于 √(15/3)=√5，结果已是最简二次根式，与教材例4 一致。"
+    },
+    {
+     "id": "mxj_p1053_q3",
+     "topicId": "mxj_p1053",
+     "prompt": "化简二次根式 √(9/5) 的结果是哪一个？",
+     "question": "化简二次根式 √(9/5) 的结果是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3/5"
+      },
+      {
+       "label": "B",
+       "text": "√3/5"
+      },
+      {
+       "label": "C",
+       "text": "3√5"
+      },
+      {
+       "label": "D",
+       "text": "3√5/5"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "√(9/5)=3/√5，分子分母同乘 √5 得 3√5/5，分母中不再含根式，这就是化去分母中根号的方法。"
+    },
+    {
+     "id": "mxj_p1053_q4",
+     "topicId": "mxj_p1053",
+     "prompt": "计算 √2 乘 √8 的结果是什么？",
+     "question": "计算 √2 乘 √8 的结果是什么？",
+     "answer": "4",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "√2 乘 √8 等于 √(2×8)=√16，16 是 4 的平方，所以结果为 4，是一个整数而不是根式。"
+    },
+    {
+     "id": "mxj_p1053_q5",
+     "topicId": "mxj_p1053",
+     "prompt": "计算 2√3 乘 5√21 的结果是什么？",
+     "question": "计算 2√3 乘 5√21 的结果是什么？",
+     "answer": "30√7",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "系数相乘得 10，根式相乘得 √(3×21)=√63=3√7，所以结果为 10×3√7=30√7，与教材例2 一致。"
+    },
+    {
+     "id": "mxj_p1053_q6",
+     "topicId": "mxj_p1053",
+     "prompt": "化简二次根式 √(7/16)，结果填在横线上。",
+     "question": "化简二次根式 √(7/16)，结果填在横线上。",
+     "answer": "√7/4",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "16 是 4 的平方，由商的算术平方根性质得 √(7/16)=√7 除以 √16=√7/4，分母是整数，已是最简形式。"
+    },
+    {
+     "id": "mxj_p1053_q7",
+     "topicId": "mxj_p1053",
+     "prompt": "若 √a 乘 √12 等于 6，求 a 的值，结果填一个数。",
+     "question": "若 √a 乘 √12 等于 6，求 a 的值，结果填一个数。",
+     "answer": 3,
+     "verify": "{\"type\":\"num\",\"value\":3}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "由乘法法则，√a 乘 √12 等于 √(12a)，令它等于 6，两边平方得 12a=36，解得 a=3。"
+    },
+    {
+     "id": "mxj_p1053_q8",
+     "topicId": "mxj_p1053",
+     "prompt": "电视节目信号的传播半径 r 与塔高 h 满足 r=√(2Rh)。两座塔高分别为 600 m 与 450 m，求它们信号传播半径之比。",
+     "question": "电视节目信号的传播半径 r 与塔高 h 满足 r=√(2Rh)。两座塔高分别为 600 m 与 450 m，求它们信号传播半径之比。",
+     "answer": "2√3/3",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "半径之比等于 √(600/450)=√(4/3)=2/√3，分子分母同乘 √3 得分母有理化的结果 2√3/3，与教材例5 一致。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1054",
+   "page": 75,
+   "description": "利用实数加法与乘法的运算律，对被开方数相同的二次根式合并，得出二次根式加减的法则：先化成最简二次根式，再合并被开方数相同的项。",
+   "mastery_criteria": [
+    "能把每个二次根式化成最简二次根式后再加减",
+    "能合并被开方数相同的二次根式并保留不同的项",
+    "能用二次根式的加减解决圆环宽度一类实际问题"
+   ],
+   "misconceptions": [
+    "把被开方数不同的二次根式硬性合并，如把 √2 加 √5 写成 √7",
+    "没有先化简就直接相加减，导致可以合并的项没有合并"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1054_q1",
+     "topicId": "mxj_p1054",
+     "prompt": "计算 3√2+2√2-√2 的结果是哪一个？",
+     "question": "计算 3√2+2√2-√2 的结果是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "4√2"
+      },
+      {
+       "label": "B",
+       "text": "5√2"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "被开方数都是 2，可以像合并同类项一样把系数相加：3+2-1=4，所以结果为 4√2，根号部分保持不变。"
+    },
+    {
+     "id": "mxj_p1054_q2",
+     "topicId": "mxj_p1054",
+     "prompt": "计算 5√2+√18 的结果是哪一个？",
+     "question": "计算 5√2+√18 的结果是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "7√2"
+      },
+      {
+       "label": "B",
+       "text": "8√2"
+      },
+      {
+       "label": "C",
+       "text": "6√2"
+      },
+      {
+       "label": "D",
+       "text": "5√20"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先化简 √18=3√2，再合并得 5√2+3√2=8√2。不化简直接相加会得到错误的 5√20。"
+    },
+    {
+     "id": "mxj_p1054_q3",
+     "topicId": "mxj_p1054",
+     "prompt": "计算 3√8+5√18 的结果是哪一个？",
+     "question": "计算 3√8+5√18 的结果是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "8√2"
+      },
+      {
+       "label": "B",
+       "text": "6√2"
+      },
+      {
+       "label": "C",
+       "text": "21√2"
+      },
+      {
+       "label": "D",
+       "text": "15√2"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "3√8=3×2√2=6√2，5√18=5×3√2=15√2，两项被开方数相同，合并得 21√2，与教材中的计算结果一致。"
+    },
+    {
+     "id": "mxj_p1054_q4",
+     "topicId": "mxj_p1054",
+     "prompt": "计算 √12-√3 的结果是什么？",
+     "question": "计算 √12-√3 的结果是什么？",
+     "answer": "√3",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "先化简 √12=2√3，再与 √3 相减，得 2√3-√3=√3，系数相减为 1，根号部分不变。"
+    },
+    {
+     "id": "mxj_p1054_q5",
+     "topicId": "mxj_p1054",
+     "prompt": "计算 2√18-√50+(1/3)√45 的结果是什么？",
+     "question": "计算 2√18-√50+(1/3)√45 的结果是什么？",
+     "answer": "√2+√5",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "2√18=6√2，√50=5√2，(1/3)√45=√5，合并被开方数相同的项得 6√2-5√2+√5=√2+√5，与教材例1 一致。"
+    },
+    {
+     "id": "mxj_p1054_q6",
+     "topicId": "mxj_p1054",
+     "prompt": "二次根式相加减时，一般先将每个二次根式化成什么形式，再合并被开方数相同的二次根式？",
+     "question": "二次根式相加减时，一般先将每个二次根式化成什么形式，再合并被开方数相同的二次根式？",
+     "answer": "最简二次根式",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "教材指出，被开方数不同的二次根式相加减，一般先化成最简二次根式，才能看出哪些项的被开方数相同从而合并。"
+    },
+    {
+     "id": "mxj_p1054_q7",
+     "topicId": "mxj_p1054",
+     "prompt": "计算 √2 乘 (√2+√8) 的值，结果填一个数。",
+     "question": "计算 √2 乘 (√2+√8) 的值，结果填一个数。",
+     "answer": 6,
+     "verify": "{\"type\":\"num\",\"value\":6}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "用分配律得 √2×√2+√2×√8=2+√16=2+4=6，其中 √8 先化成 2√2 也可以得到相同的结论。"
+    },
+    {
+     "id": "mxj_p1054_q8",
+     "topicId": "mxj_p1054",
+     "prompt": "计算 √(1/2)-√(1/8)，把最简结果填在横线上。",
+     "question": "计算 √(1/2)-√(1/8)，把最简结果填在横线上。",
+     "answer": "√2/4",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "√(1/2)=√2/2，√(1/8)=√2/4，两项被开方数都化成 2 后相减，得 √2 的系数 1/2-1/4=1/4，结果为 √2/4。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1055",
+   "page": 86,
+   "description": "由三条线段首尾相接构成三角形的定义出发，得出三边关系、内角和与外角定理，并认识高线、中线、角平分线以及三角形的分类。",
+   "mastery_criteria": [
+    "能运用两边之和大于第三边判断三条线段能否组成三角形",
+    "能运用内角和与外角定理计算三角形的内角",
+    "能识别三角形的高线、中线与角平分线并说出重心的意义"
+   ],
+   "misconceptions": [
+    "认为三角形的外角等于与它相邻的内角",
+    "把中线与高线混为一谈，认为中线一定垂直于对边"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1055_q1",
+     "topicId": "mxj_p1055",
+     "prompt": "三角形的三条中线相交于一点，这个交点叫作三角形的什么？",
+     "question": "三角形的三条中线相交于一点，这个交点叫作三角形的什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "重心"
+      },
+      {
+       "label": "B",
+       "text": "顶点"
+      },
+      {
+       "label": "C",
+       "text": "中点"
+      },
+      {
+       "label": "D",
+       "text": "垂足"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材指出三角形的三条中线相交于一点，这三条中线的交点叫作三角形的重心，例如中线 AD，BE，CF 相交于点 G。"
+    },
+    {
+     "id": "mxj_p1055_q2",
+     "topicId": "mxj_p1055",
+     "prompt": "角 ACD 是三角形 ABC 的一个外角，若角 A 等于 50 度，角 B 等于 60 度，则角 ACD 等于多少度？",
+     "question": "角 ACD 是三角形 ABC 的一个外角，若角 A 等于 50 度，角 B 等于 60 度，则角 ACD 等于多少度？",
+     "options": [
+      {
+       "label": "A",
+       "text": "50 度"
+      },
+      {
+       "label": "B",
+       "text": "110 度"
+      },
+      {
+       "label": "C",
+       "text": "70 度"
+      },
+      {
+       "label": "D",
+       "text": "60 度"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "三角形的一个外角等于与它不相邻的两个内角的和，所以角 ACD 等于角 A 加角 B，即 50+60=110 度。"
+    },
+    {
+     "id": "mxj_p1055_q3",
+     "topicId": "mxj_p1055",
+     "prompt": "已知三角形的两边长为 6 和 7，则第三边长 x 的取值范围是哪一个？",
+     "question": "已知三角形的两边长为 6 和 7，则第三边长 x 的取值范围是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "6 小于 x 小于 7"
+      },
+      {
+       "label": "B",
+       "text": "0 小于 x 小于 13"
+      },
+      {
+       "label": "C",
+       "text": "1 小于或等于 x 小于或等于 13"
+      },
+      {
+       "label": "D",
+       "text": "1 小于 x 小于 13"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "第三边要大于两边之差 7-6=1，同时小于两边之和 6+7=13，而且不能取等号，所以 1 小于 x 小于 13。"
+    },
+    {
+     "id": "mxj_p1055_q4",
+     "topicId": "mxj_p1055",
+     "prompt": "三角形的内角和等于多少度？请填一个数。",
+     "question": "三角形的内角和等于多少度？请填一个数。",
+     "answer": "180",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材借助平移把三角形的一个角移到顶点处，由平角推出三角形的内角和等于 180 度，这是本章最重要的结论之一。"
+    },
+    {
+     "id": "mxj_p1055_q5",
+     "topicId": "mxj_p1055",
+     "prompt": "在三角形 ABC 中，角 A 的度数是角 B 的 3 倍，角 C 比角 B 大 15 度，则角 A 等于多少度？",
+     "question": "在三角形 ABC 中，角 A 的度数是角 B 的 3 倍，角 C 比角 B 大 15 度，则角 A 等于多少度？",
+     "answer": "99",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "设角 B 为 x 度，则角 A 为 3x 度，角 C 为 x+15 度，由内角和得 3x+x+x+15=180，解得 x=33，所以角 A 为 99 度。"
+    },
+    {
+     "id": "mxj_p1055_q6",
+     "topicId": "mxj_p1055",
+     "prompt": "在三角形中，连接一个顶点和它的对边中点的线段叫作三角形的什么线？",
+     "question": "在三角形中，连接一个顶点和它的对边中点的线段叫作三角形的什么线？",
+     "answer": "中线",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "教材把连接一个顶点和它的对边中点的线段叫作三角形的中线，例如 E 是 BC 的中点，则 AE 是 BC 边上的中线。"
+    },
+    {
+     "id": "mxj_p1055_q7",
+     "topicId": "mxj_p1055",
+     "prompt": "在三角形 ABC 中，角 A 减角 B 等于 50 度，角 C 减角 B 等于 40 度，求角 B 的度数，结果填一个数。",
+     "question": "在三角形 ABC 中，角 A 减角 B 等于 50 度，角 C 减角 B 等于 40 度，求角 B 的度数，结果填一个数。",
+     "answer": 30,
+     "verify": "{\"type\":\"num\",\"value\":30}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "设角 B 为 x 度，则角 A 为 x+50 度，角 C 为 x+40 度，由内角和得 3x+90=180，解得 x=30，所以角 B 为 30 度。"
+    },
+    {
+     "id": "mxj_p1055_q8",
+     "topicId": "mxj_p1055",
+     "prompt": "AD 是三角形 ABC 的中线，AE 是三角形 ABC 的高线。三角形 ABD 与三角形 ADC 的面积有什么关系？请说明理由。",
+     "question": "AD 是三角形 ABC 的中线，AE 是三角形 ABC 的高线。三角形 ABD 与三角形 ADC 的面积有什么关系？请说明理由。",
+     "answer": "两个三角形面积相等，因为 BD 等于 DC，而它们的高都是 AE",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "中线 AD 使 BD 与 DC 相等，AE 同时是两个三角形的高，底相等而高相同，所以两个三角形的面积相等，与教材例2 的结论一致。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1056",
+   "page": 95,
+   "description": "先认识如果那么形式的命题及其条件与结论，再学习互逆命题、举反例与证明，最后引出反证法以及定理、推论与互逆定理的概念。",
+   "mastery_criteria": [
+    "能指出一个命题的条件与结论并改写成如果那么的形式",
+    "能通过举反例说明一个命题是假命题",
+    "能说出反证法的三个基本步骤并用于简单证明"
+   ],
+   "misconceptions": [
+    "认为真命题的逆命题也一定是真命题",
+    "把举一个正面例子当成证明命题为真的方法"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p1056_q1",
+     "topicId": "mxj_p1056",
+     "prompt": "下列语句中，是命题的是哪一个？",
+     "question": "下列语句中，是命题的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "9 的平方根是 3"
+      },
+      {
+       "label": "B",
+       "text": "任何数的平方都大于 0 吗"
+      },
+      {
+       "label": "C",
+       "text": "请画一条直线"
+      },
+      {
+       "label": "D",
+       "text": "延长线段 AB 到点 C"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "命题是能判断真假的语句。A 作出了判断，是命题；B 是疑问句，C 是请求，D 是操作指令，都不能判断真假。"
+    },
+    {
+     "id": "mxj_p1056_q2",
+     "topicId": "mxj_p1056",
+     "prompt": "关于命题与逆命题，下列说法正确的是哪一个？",
+     "question": "关于命题与逆命题，下列说法正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "真命题的逆命题一定是真命题"
+      },
+      {
+       "label": "B",
+       "text": "假命题的逆命题一定是假命题"
+      },
+      {
+       "label": "C",
+       "text": "互逆命题的条件与结论互换位置"
+      },
+      {
+       "label": "D",
+       "text": "每个语句都是命题"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材指出真命题的逆命题不一定是真命题，例如 a 是整数则 a 是有理数为真，反过来为假；互逆命题的特点正是条件与结论互换。"
+    },
+    {
+     "id": "mxj_p1056_q3",
+     "topicId": "mxj_p1056",
+     "prompt": "要说明命题若 a² 等于 b² 则 a 等于 b 是假命题，下列哪个例子可以作为反例？",
+     "question": "要说明命题若 a² 等于 b² 则 a 等于 b 是假命题，下列哪个例子可以作为反例？",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 等于 1，b 等于 1"
+      },
+      {
+       "label": "B",
+       "text": "a 等于 1，b 等于 -1"
+      },
+      {
+       "label": "C",
+       "text": "a 等于 0，b 等于 0"
+      },
+      {
+       "label": "D",
+       "text": "a 等于 2，b 等于 2"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "反例要满足条件而不满足结论。a=1，b=-1 时 a² 与 b² 都等于 1，但 a 不等于 b，正好说明原命题是假命题。"
+    },
+    {
+     "id": "mxj_p1056_q4",
+     "topicId": "mxj_p1056",
+     "prompt": "判断一个命题是假命题，只需举出一个符合条件但不满足结论的例子，这种方法叫作什么？",
+     "question": "判断一个命题是假命题，只需举出一个符合条件但不满足结论的例子，这种方法叫作什么？",
+     "answer": "举反例",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材把这种做法称为举反例，例如用 0.1 是有理数但不是整数，就可以说明若 a 是有理数则 a 是整数的命题为假。"
+    },
+    {
+     "id": "mxj_p1056_q5",
+     "topicId": "mxj_p1056",
+     "prompt": "经过证明为真的命题叫作什么？请填两个字。",
+     "question": "经过证明为真的命题叫作什么？请填两个字。",
+     "answer": "定理",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "教材规定经过证明为真的命题叫作定理，例如三角形的内角和等于 180 度就称为三角形的内角和定理。"
+    },
+    {
+     "id": "mxj_p1056_q6",
+     "topicId": "mxj_p1056",
+     "prompt": "利用三角形的内角和定理可以直接推出三角形的一个外角等于与它不相邻的两个内角的和，这一结论称为内角和定理的什么？",
+     "question": "利用三角形的内角和定理可以直接推出三角形的一个外角等于与它不相邻的两个内角的和，这一结论称为内角和定理的什么？",
+     "answer": "推论",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "利用某个定理直接推导出的真命题叫作这个定理的推论，所以外角定理是内角和定理的推论，通常简称为三角形外角定理。"
+    },
+    {
+     "id": "mxj_p1056_q7",
+     "topicId": "mxj_p1056",
+     "prompt": "三角形的三个外角之和等于多少度？结果填一个数。",
+     "question": "三角形的三个外角之和等于多少度？结果填一个数。",
+     "answer": 360,
+     "verify": "{\"type\":\"num\",\"value\":360}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "三个外角分别等于 180 度减去相邻的内角，三者之和为 540 度减去内角和 180 度，得 360 度，与教材的证明一致。"
+    },
+    {
+     "id": "mxj_p1056_q8",
+     "topicId": "mxj_p1056",
+     "prompt": "用反证法证明三角形 ABC 的三个内角中至少有一个角大于或等于 60 度，请写出证明的第一步假设。",
+     "question": "用反证法证明三角形 ABC 的三个内角中至少有一个角大于或等于 60 度，请写出证明的第一步假设。",
+     "answer": "假设三个内角中没有一个角大于或等于 60 度，即三个角都小于 60 度",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "反证法第一步是否定结论，即假设没有一个角大于或等于 60 度，于是三个角都小于 60 度，其和小于 180 度，与内角和定理矛盾。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1057",
+   "page": 104,
+   "description": "由能够完全重合的两个图形引出全等三角形与对应顶点、对应边、对应角，再依次用叠合、平移旋转轴对称等方法得出边角边、角边角、角角边、边边边四条判定定理。",
+   "mastery_criteria": [
+    "能准确找出全等三角形的对应边与对应角",
+    "能根据已知条件选择合适的判定定理证明两个三角形全等",
+    "能由全等推出对应线段相等、对应角相等"
+   ],
+   "misconceptions": [
+    "书写全等符号时把对应顶点的字母顺序写乱",
+    "用两边及其中一边的对角相等判定两个三角形全等"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p1057_q1",
+     "topicId": "mxj_p1057",
+     "prompt": "全等三角形的对应边与对应角分别有什么关系？",
+     "question": "全等三角形的对应边与对应角分别有什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "对应边相等，对应角相等"
+      },
+      {
+       "label": "B",
+       "text": "对应边相等，对应角互补"
+      },
+      {
+       "label": "C",
+       "text": "对应边成比例，对应角相等"
+      },
+      {
+       "label": "D",
+       "text": "对应边成比例，对应角互补"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "能够完全重合的两条线段相等、两个角相等，所以全等三角形的对应边相等、对应角相等，这是全等三角形最基本的性质。"
+    },
+    {
+     "id": "mxj_p1057_q2",
+     "topicId": "mxj_p1057",
+     "prompt": "下列条件中，不能判定两个三角形全等的是哪一个？",
+     "question": "下列条件中，不能判定两个三角形全等的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "三边分别相等"
+      },
+      {
+       "label": "B",
+       "text": "两角及其夹边分别相等"
+      },
+      {
+       "label": "C",
+       "text": "两边及其中一边的对角分别相等"
+      },
+      {
+       "label": "D",
+       "text": "两角分别相等且其中一组等角的对边相等"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "A 是边边边，B 是角边角，D 是角角边，都能判定全等；而两边及其中一边的对角相等时，三角形可能有两种形状，不能判定全等。"
+    },
+    {
+     "id": "mxj_p1057_q3",
+     "topicId": "mxj_p1057",
+     "prompt": "在三角形 ABC 和三角形 DEF 中，AB 等于 DE，角 B 等于角 E。要用边角边判定两个三角形全等，还需添加的条件是哪一个？",
+     "question": "在三角形 ABC 和三角形 DEF 中，AB 等于 DE，角 B 等于角 E。要用边角边判定两个三角形全等，还需添加的条件是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "角 A 等于角 D"
+      },
+      {
+       "label": "B",
+       "text": "BC 等于 EF"
+      },
+      {
+       "label": "C",
+       "text": "角 C 等于角 F"
+      },
+      {
+       "label": "D",
+       "text": "AC 等于 DF"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "边角边要求两边及其夹角对应相等。已知 AB 与 DE 相等、角 B 与角 E 相等，角 B 是 AB 与 BC 的夹角，所以还需 BC 等于 EF。"
+    },
+    {
+     "id": "mxj_p1057_q4",
+     "topicId": "mxj_p1057",
+     "prompt": "表示两个三角形全等使用的符号是什么？",
+     "question": "表示两个三角形全等使用的符号是什么？",
+     "answer": "≌",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材规定全等用符号 ≌ 表示，读作全等于，例如三角形 ABC 与三角形 A 撇 B 撇 C 撇全等记作两个三角形之间的 ≌ 关系。"
+    },
+    {
+     "id": "mxj_p1057_q5",
+     "topicId": "mxj_p1057",
+     "prompt": "能够完全重合的两个三角形叫作什么三角形？",
+     "question": "能够完全重合的两个三角形叫作什么三角形？",
+     "answer": "全等",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "教材把能够完全重合的两个图形叫作全等图形，其中能够完全重合的两个三角形叫作全等三角形，重合的顶点、边、角分别叫对应顶点、对应边、对应角。"
+    },
+    {
+     "id": "mxj_p1057_q6",
+     "topicId": "mxj_p1057",
+     "prompt": "在三角形 ABC 和三角形 DEF 中，AB 等于 DE，BC 等于 EF，AC 等于 DF，则两个三角形全等，依据的判定定理是什么？",
+     "question": "在三角形 ABC 和三角形 DEF 中，AB 等于 DE，BC 等于 EF，AC 等于 DF，则两个三角形全等，依据的判定定理是什么？",
+     "answer": "边边边",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "三边分别相等的两个三角形全等，这条判定定理简称边边边，教材用折叠与圆弧交点说明了它的合理性。"
+    },
+    {
+     "id": "mxj_p1057_q7",
+     "topicId": "mxj_p1057",
+     "prompt": "已知三角形 ABC 全等于三角形 DCB，AB 等于 3，DB 等于 4，求 AC 的长，结果填一个数。",
+     "question": "已知三角形 ABC 全等于三角形 DCB，AB 等于 3，DB 等于 4，求 AC 的长，结果填一个数。",
+     "answer": 4,
+     "verify": "{\"type\":\"num\",\"value\":4}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "按对应顶点的顺序，AC 与 DB 是对应边，所以 AC 等于 DB，等于 4；同理 DC 与 AB 对应，DC 等于 3，与教材例1 相同。"
+    },
+    {
+     "id": "mxj_p1057_q8",
+     "topicId": "mxj_p1057",
+     "prompt": "一个三角形经过平移、旋转或轴对称后得到的图形，与原图形是否全等？请说明理由。",
+     "question": "一个三角形经过平移、旋转或轴对称后得到的图形，与原图形是否全等？请说明理由。",
+     "answer": "全等，因为平移、旋转、轴对称都不改变图形的形状和大小",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "教材由平移、旋转、轴对称的知识指出，一个图形经过这三种变换得到的图形与原图形全等，所以对应边、对应角都保持不变。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1058",
+   "page": 124,
+   "description": "只用没有刻度的直尺和圆规，依次学习已知三边、作一个角等于已知角、已知两边及其夹角、已知两角及其夹边作三角形，以及过直线外一点作平行线。",
+   "mastery_criteria": [
+    "能按步骤用尺规作出符合条件的三角形并保留作图痕迹",
+    "能说明每种作图所依据的全等判定定理",
+    "能过直线外一点用尺规作出这条直线的平行线"
+   ],
+   "misconceptions": [
+    "作图时使用带刻度的直尺量长度，不符合尺规作图的要求",
+    "作完图不说明作法的依据，无法判断三角形是否唯一"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1058_q1",
+     "topicId": "mxj_p1058",
+     "prompt": "尺规作图使用的工具是哪一组？",
+     "question": "尺规作图使用的工具是哪一组？",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆规和没有刻度的直尺"
+      },
+      {
+       "label": "B",
+       "text": "刻度尺和圆规"
+      },
+      {
+       "label": "C",
+       "text": "三角板和量角器"
+      },
+      {
+       "label": "D",
+       "text": "直尺和量角器"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材明确尺规作图只用没有刻度的直尺和圆规两种工具，直尺只能画线，长度要靠圆规截取，不能用刻度去量。"
+    },
+    {
+     "id": "mxj_p1058_q2",
+     "topicId": "mxj_p1058",
+     "prompt": "已知三边作三角形，作出唯一三角形的依据是哪一条判定定理？",
+     "question": "已知三边作三角形，作出唯一三角形的依据是哪一条判定定理？",
+     "options": [
+      {
+       "label": "A",
+       "text": "边角边"
+      },
+      {
+       "label": "B",
+       "text": "角边角"
+      },
+      {
+       "label": "C",
+       "text": "边边边"
+      },
+      {
+       "label": "D",
+       "text": "角角边"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材指出由边边边定理可知，按三边作出的三角形都全等，因此已知三边能作出唯一的三角形，与教材例1 的说明一致。"
+    },
+    {
+     "id": "mxj_p1058_q3",
+     "topicId": "mxj_p1058",
+     "prompt": "作一个角等于已知角时，作图过程相当于构造两个全等三角形，判定它们全等的依据是哪一条定理？",
+     "question": "作一个角等于已知角时，作图过程相当于构造两个全等三角形，判定它们全等的依据是哪一条定理？",
+     "options": [
+      {
+       "label": "A",
+       "text": "边角边"
+      },
+      {
+       "label": "B",
+       "text": "边边边"
+      },
+      {
+       "label": "C",
+       "text": "角边角"
+      },
+      {
+       "label": "D",
+       "text": "斜边、直角边"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "作图时 OC 与 O 撇 C 撇相等、OD 与 O 撇 D 撇相等、CD 与 C 撇 D 撇相等，三边分别相等，所以依据是边边边定理。"
+    },
+    {
+     "id": "mxj_p1058_q4",
+     "topicId": "mxj_p1058",
+     "prompt": "已知两边及其夹角作三角形，其依据是全等三角形的哪一条判定定理？",
+     "question": "已知两边及其夹角作三角形，其依据是全等三角形的哪一条判定定理？",
+     "answer": "边角边",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "先作夹角，再在角的两边上分别截取已知长度的线段，符合两边及其夹角对应相等，所以依据是边角边定理。"
+    },
+    {
+     "id": "mxj_p1058_q5",
+     "topicId": "mxj_p1058",
+     "prompt": "过直线外一点作这条直线的平行线，作图的依据是哪一种角相等则两直线平行？",
+     "question": "过直线外一点作这条直线的平行线，作图的依据是哪一种角相等则两直线平行？",
+     "answer": "同位角",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "教材先过点 P 作一条与已知直线相交的直线构造出角，再以 P 为顶点作它的同位角使两角相等，由同位角相等得两直线平行。"
+    },
+    {
+     "id": "mxj_p1058_q6",
+     "topicId": "mxj_p1058",
+     "prompt": "已知两角及其夹边作三角形，其依据是全等三角形的哪一条判定定理？",
+     "question": "已知两角及其夹边作三角形，其依据是全等三角形的哪一条判定定理？",
+     "answer": "角边角",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "先作夹边 BC 等于已知线段，再在 BC 的同侧分别作两个已知角，两角的一边相交于 A，得到的三角形符合角边角的条件。"
+    },
+    {
+     "id": "mxj_p1058_q7",
+     "topicId": "mxj_p1058",
+     "prompt": "已知线段 BC 长 4 cm，以点 B 为圆心、2.5 cm 为半径画弧，以点 C 为圆心、3 cm 为半径画弧，两弧在直线 BC 的一侧有几个交点，结果填一个数。",
+     "question": "已知线段 BC 长 4 cm，以点 B 为圆心、2.5 cm 为半径画弧，以点 C 为圆心、3 cm 为半径画弧，两弧在直线 BC 的一侧有几个交点，结果填一个数。",
+     "answer": 1,
+     "verify": "{\"type\":\"num\",\"value\":1}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "两个圆最多有两个交点，它们关于直线 BC 对称，因此在 BC 的一侧只有一个交点，这也说明已知三边作出的三角形是唯一的。"
+    },
+    {
+     "id": "mxj_p1058_q8",
+     "topicId": "mxj_p1058",
+     "prompt": "用尺规按已知三边作三角形时，为什么说作出的三角形是唯一的？请简述理由。",
+     "question": "用尺规按已知三边作三角形时，为什么说作出的三角形是唯一的？请简述理由。",
+     "answer": "因为按同样三边作出的三角形都与第一个三角形全等，形状和大小都确定",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "由边边边定理，任意两个三边分别相等的三角形全等，所以无论怎样作图，得到的三角形都与第一个全等，位置可能不同但形状大小唯一。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1059",
+   "page": 129,
+   "description": "由等腰三角形底边上中线构造全等，得出等边对等角与三线合一的性质定理，再由等角对等边得出判定定理，最后研究等边三角形的性质与两个判定定理。",
+   "mastery_criteria": [
+    "能运用等边对等角与三线合一计算等腰三角形的边和角",
+    "能运用等角对等边判定一个三角形是等腰三角形",
+    "能运用等边三角形的性质与两个判定定理解题"
+   ],
+   "misconceptions": [
+    "把三线合一中的高线、中线、角平分线误认为对任意边都成立",
+    "已知等腰三角形一个内角求另外两角时，不讨论这个角是顶角还是底角"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p1059_q1",
+     "topicId": "mxj_p1059",
+     "prompt": "等腰三角形的两个底角有什么关系？",
+     "question": "等腰三角形的两个底角有什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "相等"
+      },
+      {
+       "label": "B",
+       "text": "互余"
+      },
+      {
+       "label": "C",
+       "text": "互补"
+      },
+      {
+       "label": "D",
+       "text": "不一定相等"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "等腰三角形的性质定理指出两个底角相等，简称等边对等角，教材用底边上的中线构造全等三角形给出了证明。"
+    },
+    {
+     "id": "mxj_p1059_q2",
+     "topicId": "mxj_p1059",
+     "prompt": "在三角形 ABC 中，AB 等于 AC，角 A 等于 40 度，则角 B 等于多少度？",
+     "question": "在三角形 ABC 中，AB 等于 AC，角 A 等于 40 度，则角 B 等于多少度？",
+     "options": [
+      {
+       "label": "A",
+       "text": "40 度"
+      },
+      {
+       "label": "B",
+       "text": "50 度"
+      },
+      {
+       "label": "C",
+       "text": "70 度"
+      },
+      {
+       "label": "D",
+       "text": "100 度"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两底角相等，所以角 B 与角 C 相等，由内角和得两角之和为 140 度，每个底角为 70 度，即角 B 等于 70 度。"
+    },
+    {
+     "id": "mxj_p1059_q3",
+     "topicId": "mxj_p1059",
+     "prompt": "等边三角形的每一个角等于多少度？",
+     "question": "等边三角形的每一个角等于多少度？",
+     "options": [
+      {
+       "label": "A",
+       "text": "45 度"
+      },
+      {
+       "label": "B",
+       "text": "60 度"
+      },
+      {
+       "label": "C",
+       "text": "90 度"
+      },
+      {
+       "label": "D",
+       "text": "30 度"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "等边三角形三边相等，由等边对等角得三个角相等，再由内角和 180 度得每个角都是 60 度，这就是等边三角形的性质定理。"
+    },
+    {
+     "id": "mxj_p1059_q4",
+     "topicId": "mxj_p1059",
+     "prompt": "等腰三角形的底边上的高线、中线及顶角平分线有怎样的关系？请填两个字。",
+     "question": "等腰三角形的底边上的高线、中线及顶角平分线有怎样的关系？请填两个字。",
+     "answer": "重合",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "等腰三角形的性质定理指出底边上的高线、中线及顶角平分线重合，简称为三线合一，这是等腰三角形最重要的性质之一。"
+    },
+    {
+     "id": "mxj_p1059_q5",
+     "topicId": "mxj_p1059",
+     "prompt": "有两个角相等的三角形是等腰三角形，这一判定定理简称为什么？请填四个字。",
+     "question": "有两个角相等的三角形是等腰三角形，这一判定定理简称为什么？请填四个字。",
+     "answer": "等角对等边",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "教材把有两个角相等的三角形是等腰三角形简称为等角对等边，它与性质定理的等边对等角互为逆命题，两者都成立。"
+    },
+    {
+     "id": "mxj_p1059_q6",
+     "topicId": "mxj_p1059",
+     "prompt": "在三角形 ABC 中，AB 等于 AC，AD 为 BC 边上的高，角 BAC 等于 49 度，则角 BAD 等于多少度？",
+     "question": "在三角形 ABC 中，AB 等于 AC，AD 为 BC 边上的高，角 BAC 等于 49 度，则角 BAD 等于多少度？",
+     "answer": "24.5",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由三线合一，底边上的高也是顶角的平分线，所以角 BAD 等于角 BAC 的一半，即 49 度除以 2 得 24.5 度。"
+    },
+    {
+     "id": "mxj_p1059_q7",
+     "topicId": "mxj_p1059",
+     "prompt": "若等腰三角形的一个底角是 30 度，求这个等腰三角形的顶角，结果填一个数。",
+     "question": "若等腰三角形的一个底角是 30 度，求这个等腰三角形的顶角，结果填一个数。",
+     "answer": 120,
+     "verify": "{\"type\":\"num\",\"value\":120}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "等腰三角形两底角相等，所以两个底角都是 30 度，由内角和得顶角为 180-30-30=120 度，注意这个三角形是钝角三角形。"
+    },
+    {
+     "id": "mxj_p1059_q8",
+     "topicId": "mxj_p1059",
+     "prompt": "在三角形 ABC 中，AB 等于 AC，D，E 分别是 AB，AC 上的点，且 DE 平行于 BC。求证三角形 ADE 是等腰三角形，请写出主要推理过程。",
+     "question": "在三角形 ABC 中，AB 等于 AC，D，E 分别是 AB，AC 上的点，且 DE 平行于 BC。求证三角形 ADE 是等腰三角形，请写出主要推理过程。",
+     "answer": "由等边对等角得角 B 等于角 C，由平行得角 ADE 等于角 B、角 AED 等于角 C，所以角 ADE 等于角 AED，由等角对等边得 AD 等于 AE",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "先由等腰三角形的性质得到两个底角相等，再用平行线的同位角关系把底角转移到小三角形的两个角上，最后由等角对等边判定等腰。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1060",
+   "page": 137,
+   "description": "先给出线段垂直平分线的定义，再用边角边证明性质定理：垂直平分线上的点到线段两端的距离相等，最后研究它的逆命题与作图方法。",
+   "mastery_criteria": [
+    "能说出线段垂直平分线的定义并识别图形中的垂直平分线",
+    "能运用性质定理得到线段相等并进行计算",
+    "能用逆定理判断一个点是否在线段的垂直平分线上"
+   ],
+   "misconceptions": [
+    "把线段的垂直平分线误认为过中点的一条普通直线",
+    "用性质定理时忽略点到线段两端这一条件，随意用线段上的点"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p1060_q1",
+     "topicId": "mxj_p1060",
+     "prompt": "线段垂直平分线上的点到线段两端的距离有什么关系？",
+     "question": "线段垂直平分线上的点到线段两端的距离有什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "相等"
+      },
+      {
+       "label": "B",
+       "text": "互补"
+      },
+      {
+       "label": "C",
+       "text": "成比例"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "线段垂直平分线的性质定理指出，垂直平分线上的点到线段两端的距离相等，教材用边角边证明两个三角形全等得到这一结论。"
+    },
+    {
+     "id": "mxj_p1060_q2",
+     "topicId": "mxj_p1060",
+     "prompt": "到一条线段两端距离相等的点，一定在哪里？",
+     "question": "到一条线段两端距离相等的点，一定在哪里？",
+     "options": [
+      {
+       "label": "A",
+       "text": "这条线段上"
+      },
+      {
+       "label": "B",
+       "text": "这条线段的延长线上"
+      },
+      {
+       "label": "C",
+       "text": "这条线段的垂直平分线上"
+      },
+      {
+       "label": "D",
+       "text": "过线段中点的任意一条直线上"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "这是性质定理的逆命题，也是真命题：到线段两端距离相等的点在垂直平分线上，只用过中点的普通直线不能保证距离相等。"
+    },
+    {
+     "id": "mxj_p1060_q3",
+     "topicId": "mxj_p1060",
+     "prompt": "垂直并且平分一条线段的直线，叫作这条线段的什么？",
+     "question": "垂直并且平分一条线段的直线，叫作这条线段的什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "中线"
+      },
+      {
+       "label": "B",
+       "text": "垂直平分线"
+      },
+      {
+       "label": "C",
+       "text": "高线"
+      },
+      {
+       "label": "D",
+       "text": "角平分线"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材把垂直并且平分一条线段的直线叫作这条线段的垂直平分线，也叫中垂线，它必须同时满足垂直与平分两个条件。"
+    },
+    {
+     "id": "mxj_p1060_q4",
+     "topicId": "mxj_p1060",
+     "prompt": "线段的垂直平分线还有一个名称，叫作什么线？",
+     "question": "线段的垂直平分线还有一个名称，叫作什么线？",
+     "answer": "中垂线",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材在给出定义时说明，垂直并且平分一条线段的直线也叫作中垂线，两种说法指的是同一条直线。"
+    },
+    {
+     "id": "mxj_p1060_q5",
+     "topicId": "mxj_p1060",
+     "prompt": "若点 P 在线段 AB 的垂直平分线上，PA 等于 5，则 PB 等于多少？",
+     "question": "若点 P 在线段 AB 的垂直平分线上，PA 等于 5，则 PB 等于多少？",
+     "answer": "5",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由线段垂直平分线的性质定理，点 P 到线段两端的距离相等，所以 PB 等于 PA，也等于 5。"
+    },
+    {
+     "id": "mxj_p1060_q6",
+     "topicId": "mxj_p1060",
+     "prompt": "若 PA 等于 PB，则点 P 在什么图形上？",
+     "question": "若 PA 等于 PB，则点 P 在什么图形上？",
+     "answer": "线段 AB 的垂直平分线",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由性质定理的逆命题，到线段两端距离相等的点在垂直平分线上，所以点 P 在线段 AB 的垂直平分线上。"
+    },
+    {
+     "id": "mxj_p1060_q7",
+     "topicId": "mxj_p1060",
+     "prompt": "在三角形 ABC 中，AB 的垂直平分线交 AC 于点 E。若 AC 等于 10，BC 等于 6，求三角形 BCE 的周长，结果填一个数。",
+     "question": "在三角形 ABC 中，AB 的垂直平分线交 AC 于点 E。若 AC 等于 10，BC 等于 6，求三角形 BCE 的周长，结果填一个数。",
+     "answer": 16,
+     "verify": "{\"type\":\"num\",\"value\":16}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "点 E 在 AB 的垂直平分线上，所以 BE 等于 AE，于是周长 BE+EC+BC 等于 AE+EC+BC，即 AC+BC，得 10+6=16。"
+    },
+    {
+     "id": "mxj_p1060_q8",
+     "topicId": "mxj_p1060",
+     "prompt": "线段垂直平分线性质定理的逆命题是真命题吗？请简述判断的理由。",
+     "question": "线段垂直平分线性质定理的逆命题是真命题吗？请简述判断的理由。",
+     "answer": "是真命题，取线段中点后可证两个三角形全等，从而得到这个点在过中点且垂直于线段的直线上",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "设点 P 到线段 AB 两端距离相等，取 AB 中点 D，连接 PD，由边边边可证两个三角形全等，得角 PDA 等于角 PDB 都为 90 度，所以 P 在垂直平分线上。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1061",
+   "page": 157,
+   "description": "由内角和得出两锐角互余及其逆命题，再用全等与垂直平分线证明斜边上的中线等于斜边的一半，最后得出 30 度角所对直角边等于斜边一半及其逆命题。",
+   "mastery_criteria": [
+    "能运用两锐角互余及其逆命题判断直角三角形",
+    "能运用斜边中线等于斜边一半求线段的长",
+    "能运用含 30 度角的直角三角形的边角关系进行计算"
+   ],
+   "misconceptions": [
+    "把斜边上的中线等于斜边一半误用到任意一边的中线上",
+    "认为直角三角形中 30 度角所对的边等于另一直角边的一半"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1061_q1",
+     "topicId": "mxj_p1061",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，角 A 等于 40 度，则角 B 等于多少度？",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，角 A 等于 40 度，则角 B 等于多少度？",
+     "options": [
+      {
+       "label": "A",
+       "text": "50 度"
+      },
+      {
+       "label": "B",
+       "text": "40 度"
+      },
+      {
+       "label": "C",
+       "text": "60 度"
+      },
+      {
+       "label": "D",
+       "text": "140 度"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "直角三角形的两个锐角互余，所以角 B 等于 90 度减 40 度，得 50 度，两个锐角的和恰好是 90 度。"
+    },
+    {
+     "id": "mxj_p1061_q2",
+     "topicId": "mxj_p1061",
+     "prompt": "在直角三角形 ABC 中，角 ACB 等于 90 度，斜边 AB 上的中线 CD 等于 2.5，则斜边 AB 的长是多少？",
+     "question": "在直角三角形 ABC 中，角 ACB 等于 90 度，斜边 AB 上的中线 CD 等于 2.5，则斜边 AB 的长是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2.5"
+      },
+      {
+       "label": "B",
+       "text": "7.5"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "10"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "斜边上的中线等于斜边的一半，所以斜边 AB 等于中线 CD 的 2 倍，即 2.5 乘 2 等于 5，与教材练习1 一致。"
+    },
+    {
+     "id": "mxj_p1061_q3",
+     "topicId": "mxj_p1061",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，角 A 等于 30 度，AB 等于 8，则 BC 等于多少？",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，角 A 等于 30 度，AB 等于 8，则 BC 等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "8"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "4√3"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "角 A 等于 30 度，它所对的直角边是 BC，由 30 度角所对的直角边等于斜边的一半，得 BC 等于 8 的一半，即 4。"
+    },
+    {
+     "id": "mxj_p1061_q4",
+     "topicId": "mxj_p1061",
+     "prompt": "有两个角互余的三角形是什么三角形？",
+     "question": "有两个角互余的三角形是什么三角形？",
+     "answer": "直角",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "两角之和为 90 度，由内角和得第三个角为 90 度，所以这个三角形是直角三角形，这是两锐角互余的逆命题。"
+    },
+    {
+     "id": "mxj_p1061_q5",
+     "topicId": "mxj_p1061",
+     "prompt": "在直角三角形中，如果一条直角边等于斜边的一半，那么这条直角边所对的角等于多少度？",
+     "question": "在直角三角形中，如果一条直角边等于斜边的一半，那么这条直角边所对的角等于多少度？",
+     "answer": "30",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "教材由例3 得出这一结论：一条直角边等于斜边的一半时，它所对的角等于 30 度，它与 30 度角所对直角边等于斜边一半互为逆命题。"
+    },
+    {
+     "id": "mxj_p1061_q6",
+     "topicId": "mxj_p1061",
+     "prompt": "在直角三角形 ABC 中，角 BCA 等于 90 度，角 A 等于 30 度，斜边 AB 等于 6，则 BC 等于多少？",
+     "question": "在直角三角形 ABC 中，角 BCA 等于 90 度，角 A 等于 30 度，斜边 AB 等于 6，则 BC 等于多少？",
+     "answer": "3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "角 A 是 30 度，它的对边是 BC，由 30 度角所对的直角边等于斜边的一半，得 BC 等于 6 除以 2，结果为 3。"
+    },
+    {
+     "id": "mxj_p1061_q7",
+     "topicId": "mxj_p1061",
+     "prompt": "在直角三角形 ABC 中，角 ACB 等于 90 度，斜边上的中线 CD 等于 3，求斜边 AB 的长，结果填一个数。",
+     "question": "在直角三角形 ABC 中，角 ACB 等于 90 度，斜边上的中线 CD 等于 3，求斜边 AB 的长，结果填一个数。",
+     "answer": 6,
+     "verify": "{\"type\":\"num\",\"value\":6}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "由直角三角形的性质定理，斜边上的中线等于斜边的一半，所以斜边等于中线的 2 倍，3 乘 2 得 6。"
+    },
+    {
+     "id": "mxj_p1061_q8",
+     "topicId": "mxj_p1061",
+     "prompt": "已知 CD 是三角形 ABC 的边 AB 上的中线，且 CD 等于 AB 的一半。请说明三角形 ABC 是直角三角形的主要思路。",
+     "question": "已知 CD 是三角形 ABC 的边 AB 上的中线，且 CD 等于 AB 的一半。请说明三角形 ABC 是直角三角形的主要思路。",
+     "answer": "由 CD 等于 AD 等于 BD 得两个等腰三角形，两个底角分别相等，再结合内角和推出角 A 加角 B 等于 90 度，所以角 ACB 是直角",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "CD 等于斜边一半说明 CD 等于 AD 等于 BD，于是角 1 等于角 A、角 2 等于角 B，因为它们与角 ACB 组成内角，可得两倍的角 A 加角 B 等于 180 度，即角 A 加角 B 为 90 度。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1062",
+   "page": 164,
+   "description": "从勾三股四弦五出发，借助大正方形分割的面积关系证明勾股定理，再构造直角三角形用边边边证明逆定理，并用于求线段长和解决实际问题。",
+   "mastery_criteria": [
+    "能运用勾股定理求直角三角形的第三边",
+    "能用两条较短边的平方和与最长边的平方比较判断直角三角形",
+    "能把实际问题中的数量关系转化为勾股定理的计算"
+   ],
+   "misconceptions": [
+    "使用勾股定理时没有分清哪一条边是斜边，把两直角边的平方和写成一条直角边与斜边的平方和",
+    "判断直角三角形时用最长边的平方与另外两边的平方和相加比较"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p1062_q1",
+     "topicId": "mxj_p1062",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，两条直角边 a 等于 3，b 等于 4，则斜边 c 等于多少？",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，两条直角边 a 等于 3，b 等于 4，则斜边 c 等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "7"
+      },
+      {
+       "label": "D",
+       "text": "25"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由勾股定理 c² 等于 3² 加 4² 等于 9 加 16 等于 25，因为边长是正数，所以 c 等于 5，这就是勾三股四弦五。"
+    },
+    {
+     "id": "mxj_p1062_q2",
+     "topicId": "mxj_p1062",
+     "prompt": "下列各组数中，是勾股数的是哪一组？",
+     "question": "下列各组数中，是勾股数的是哪一组？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1，2，3"
+      },
+      {
+       "label": "B",
+       "text": "4，5，6"
+      },
+      {
+       "label": "C",
+       "text": "6，8，10"
+      },
+      {
+       "label": "D",
+       "text": "8，15，16"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "勾股数是满足两短边平方和等于最长边平方的三个正整数。6² 加 8² 等于 36 加 64 等于 100，等于 10²，所以选 C。"
+    },
+    {
+     "id": "mxj_p1062_q3",
+     "topicId": "mxj_p1062",
+     "prompt": "如果三角形的三条边满足 a² 加 b² 等于 c²，那么这个三角形是什么三角形？",
+     "question": "如果三角形的三条边满足 a² 加 b² 等于 c²，那么这个三角形是什么三角形？",
+     "options": [
+      {
+       "label": "A",
+       "text": "锐角三角形"
+      },
+      {
+       "label": "B",
+       "text": "直角三角形"
+      },
+      {
+       "label": "C",
+       "text": "钝角三角形"
+      },
+      {
+       "label": "D",
+       "text": "等腰三角形"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "这是勾股定理的逆定理：三边满足两短边平方和等于最长边平方的三角形是直角三角形，c 所对的角是直角。"
+    },
+    {
+     "id": "mxj_p1062_q4",
+     "topicId": "mxj_p1062",
+     "prompt": "勾股定理指出，直角三角形两条直角边的平方和等于什么的平方？",
+     "question": "勾股定理指出，直角三角形两条直角边的平方和等于什么的平方？",
+     "answer": "斜边",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "如果两条直角边分别为 a 与 b，斜边为 c，那么 a² 加 b² 等于 c²，所以两条直角边的平方和等于斜边的平方。"
+    },
+    {
+     "id": "mxj_p1062_q5",
+     "topicId": "mxj_p1062",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，直角边 a 等于 15，斜边 c 等于 17，则另一直角边 b 等于多少？",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，直角边 a 等于 15，斜边 c 等于 17，则另一直角边 b 等于多少？",
+     "answer": "8",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由勾股定理 b² 等于 17² 减 15²，即 289 减 225 等于 64，又 b 是正数，所以 b 等于 8，与教材例1 一致。"
+    },
+    {
+     "id": "mxj_p1062_q6",
+     "topicId": "mxj_p1062",
+     "prompt": "判断由线段 a 等于 12，b 等于 15，c 等于 20 组成的三角形是不是直角三角形，把结论写在横线上。",
+     "question": "判断由线段 a 等于 12，b 等于 15，c 等于 20 组成的三角形是不是直角三角形，把结论写在横线上。",
+     "answer": "不是直角三角形",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "12² 加 15² 等于 144 加 225 等于 369，而 20² 等于 400，两者不相等，所以这个三角形不是直角三角形。"
+    },
+    {
+     "id": "mxj_p1062_q7",
+     "topicId": "mxj_p1062",
+     "prompt": "一根竹子高 10 尺，折断后竹子顶端落在离竹子底端 3 尺处。求折断处离地面的高度，结果填一个数。",
+     "question": "一根竹子高 10 尺，折断后竹子顶端落在离竹子底端 3 尺处。求折断处离地面的高度，结果填一个数。",
+     "answer": 4.55,
+     "verify": "{\"type\":\"op\",\"op\":\"div\",\"values\":[{\"type\":\"op\",\"op\":\"sub\",\"values\":[{\"type\":\"num\",\"value\":100},{\"type\":\"num\",\"value\":9}]},{\"type\":\"num\",\"value\":20}]}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "设折断处离地面 x 尺，则斜着的部分为 10-x 尺，由勾股定理得 x² 加 3² 等于 (10-x)²，化简得 20x 等于 91，所以 x 等于 4.55 尺。"
+    },
+    {
+     "id": "mxj_p1062_q8",
+     "topicId": "mxj_p1062",
+     "prompt": "梯子长 4 m，靠在墙上时梯脚离墙脚 1.5 m。把梯脚向墙脚移近 0.5 m 后，梯子顶端是否也上移 0.5 m？请写出结论。",
+     "question": "梯子长 4 m，靠在墙上时梯脚离墙脚 1.5 m。把梯脚向墙脚移近 0.5 m 后，梯子顶端是否也上移 0.5 m？请写出结论。",
+     "answer": "不是，梯子顶端只上移约 0.16 m",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "原来顶端高为 √(16-2.25) 约 3.71 m，移近后梯脚离墙 1 m，顶端高为 √(16-1) 约 3.87 m，差约 0.16 m，所以并不是上移 0.5 m。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1063",
+   "page": 174,
+   "description": "在已有直角相等的条件下，讨论一锐角与一边、两直角边之外的情形，用勾股定理与边边边证明斜边和一条直角边分别相等的两个直角三角形全等。",
+   "mastery_criteria": [
+    "能说出斜边直角边定理的条件与结论",
+    "能选择斜边直角边定理证明两个直角三角形全等",
+    "能按已知一直角边和斜边用尺规作出直角三角形"
+   ],
+   "misconceptions": [
+    "认为两个锐角对应相等的两个直角三角形全等，忽略缺少边的条件",
+    "把斜边直角边定理用到一般三角形上"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p1063_q1",
+     "topicId": "mxj_p1063",
+     "prompt": "判定两个直角三角形全等所特有的方法是哪一个？",
+     "question": "判定两个直角三角形全等所特有的方法是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "斜边、直角边"
+      },
+      {
+       "label": "B",
+       "text": "边角边"
+      },
+      {
+       "label": "C",
+       "text": "角边角"
+      },
+      {
+       "label": "D",
+       "text": "边边边"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "边角边、角边角、边边边对一般三角形都适用，而斜边和一条直角边分别相等的两个直角三角形全等是直角三角形特有的判定方法。"
+    },
+    {
+     "id": "mxj_p1063_q2",
+     "topicId": "mxj_p1063",
+     "prompt": "斜边和一条直角边分别相等的两个直角三角形有怎样的关系？",
+     "question": "斜边和一条直角边分别相等的两个直角三角形有怎样的关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "不一定全等"
+      },
+      {
+       "label": "B",
+       "text": "面积相等但不全等"
+      },
+      {
+       "label": "C",
+       "text": "全等"
+      },
+      {
+       "label": "D",
+       "text": "相似但不全等"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "这就是斜边、直角边定理：斜边和一条直角边分别相等的两个直角三角形全等，教材用勾股定理求出第三边后再用边边边证明。"
+    },
+    {
+     "id": "mxj_p1063_q3",
+     "topicId": "mxj_p1063",
+     "prompt": "关于两个直角三角形全等，下列说法正确的是哪一个？",
+     "question": "关于两个直角三角形全等，下列说法正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "两个锐角对应相等的两个直角三角形全等"
+      },
+      {
+       "label": "B",
+       "text": "两条直角边对应相等的两个直角三角形全等"
+      },
+      {
+       "label": "C",
+       "text": "一条直角边对应相等的两个直角三角形全等"
+      },
+      {
+       "label": "D",
+       "text": "面积相等的两个直角三角形全等"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两条直角边及其夹角就是直角，符合边角边，所以一定全等；只有角相等或只有一条边相等都不能确定形状与大小，面积相等也不一定全等。"
+    },
+    {
+     "id": "mxj_p1063_q4",
+     "topicId": "mxj_p1063",
+     "prompt": "斜边和一条直角边分别相等的两个直角三角形全等，这一判定方法通常简称为什么？",
+     "question": "斜边和一条直角边分别相等的两个直角三角形全等，这一判定方法通常简称为什么？",
+     "answer": "斜边、直角边",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材把这一判定定理称为斜边、直角边定理，证明时先用勾股定理得到第三边相等，再用边边边判定两个三角形全等。"
+    },
+    {
+     "id": "mxj_p1063_q5",
+     "topicId": "mxj_p1063",
+     "prompt": "证明斜边、直角边定理时，先由哪一个定理得到第三边相等，再用边边边判定全等？",
+     "question": "证明斜边、直角边定理时，先由哪一个定理得到第三边相等，再用边边边判定全等？",
+     "answer": "勾股",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "在两个直角三角形中，由勾股定理可得第三边的平方等于斜边的平方减去已知直角边的平方，两边分别相等，从而第三边相等。"
+    },
+    {
+     "id": "mxj_p1063_q6",
+     "topicId": "mxj_p1063",
+     "prompt": "在直角三角形 ABC 和直角三角形 A 撇 B 撇 C 撇中，角 C 与角 C 撇都等于 90 度，AB 等于 A 撇 B 撇，AC 等于 A 撇 C 撇，则两个三角形全等的依据是什么？",
+     "question": "在直角三角形 ABC 和直角三角形 A 撇 B 撇 C 撇中，角 C 与角 C 撇都等于 90 度，AB 等于 A 撇 B 撇，AC 等于 A 撇 C 撇，则两个三角形全等的依据是什么？",
+     "answer": "斜边、直角边",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "已知两个直角三角形的一条斜边与一条直角边分别相等，正好符合斜边、直角边定理的条件，所以两个三角形全等。"
+    },
+    {
+     "id": "mxj_p1063_q7",
+     "topicId": "mxj_p1063",
+     "prompt": "两个直角三角形的斜边都等于 5，一条直角边都等于 3，求另一条直角边的长，结果填一个数。",
+     "question": "两个直角三角形的斜边都等于 5，一条直角边都等于 3，求另一条直角边的长，结果填一个数。",
+     "answer": 4,
+     "verify": "{\"type\":\"num\",\"value\":4}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "由勾股定理，第三边的平方等于 5² 减 3²，即 25 减 9 等于 16，所以第三边长为 4，这也说明两个三角形三边都相等。"
+    },
+    {
+     "id": "mxj_p1063_q8",
+     "topicId": "mxj_p1063",
+     "prompt": "已知 BD，CE 是三角形 ABC 的高，且 BE 等于 CD。求证直角三角形 BEC 与直角三角形 CDB 全等，请说明所用的判定方法。",
+     "question": "已知 BD，CE 是三角形 ABC 的高，且 BE 等于 CD。求证直角三角形 BEC 与直角三角形 CDB 全等，请说明所用的判定方法。",
+     "answer": "两个直角三角形有公共斜边 BC，又 BE 等于 CD，由斜边、直角边定理可得它们全等",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "BD 与 CE 是高，所以角 BEC 与角 CDB 都是 90 度；BC 是公共斜边，BE 等于 CD 是一条直角边，符合斜边、直角边定理，与教材例1 一致。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1064",
+   "page": 177,
+   "description": "通过折叠与圆规比较发现角平分线上的点到角两边的距离相等，用角角边证明性质定理，再用斜边直角边证明其逆命题，并用于判断点是否在角平分线上。",
+   "mastery_criteria": [
+    "能运用角平分线的性质定理得到两条垂线段相等",
+    "能运用逆定理判断一个点是否在角的平分线上",
+    "能结合三角形面积或全等解决与角平分线有关的计算"
+   ],
+   "misconceptions": [
+    "把点到角两边的距离理解成任意一条线段的长，忘记必须垂直",
+    "认为角平分线上的点到角两边的距离之和等于定值"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p1064_q1",
+     "topicId": "mxj_p1064",
+     "prompt": "角的平分线上的点到角的两边的距离有什么关系？",
+     "question": "角的平分线上的点到角的两边的距离有什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "相等"
+      },
+      {
+       "label": "B",
+       "text": "互补"
+      },
+      {
+       "label": "C",
+       "text": "成比例"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "角平分线的性质定理指出，角的平分线上的点到角的两边的距离相等，这里的距离指的是垂直距离，即垂线段的长。"
+    },
+    {
+     "id": "mxj_p1064_q2",
+     "topicId": "mxj_p1064",
+     "prompt": "角的内部到角的两边距离相等的点在哪里？",
+     "question": "角的内部到角的两边距离相等的点在哪里？",
+     "options": [
+      {
+       "label": "A",
+       "text": "角的边上"
+      },
+      {
+       "label": "B",
+       "text": "角的顶点"
+      },
+      {
+       "label": "C",
+       "text": "角的平分线上"
+      },
+      {
+       "label": "D",
+       "text": "角的外部"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "这是角平分线性质定理的逆命题：角的内部到角的两边距离相等的点在角的平分线上，教材用斜边直角边定理给出了证明。"
+    },
+    {
+     "id": "mxj_p1064_q3",
+     "topicId": "mxj_p1064",
+     "prompt": "用直尺和圆规作一个角的平分线，判定所作射线平分该角的依据是哪一条定理？",
+     "question": "用直尺和圆规作一个角的平分线，判定所作射线平分该角的依据是哪一条定理？",
+     "options": [
+      {
+       "label": "A",
+       "text": "边角边"
+      },
+      {
+       "label": "B",
+       "text": "边边边"
+      },
+      {
+       "label": "C",
+       "text": "角角边"
+      },
+      {
+       "label": "D",
+       "text": "斜边、直角边"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "作图时在角的两边上截取相等的线段，再以两端点为圆心用相同半径画弧得到交点，连成的两个三角形三边分别相等，依据是边边边。"
+    },
+    {
+     "id": "mxj_p1064_q4",
+     "topicId": "mxj_p1064",
+     "prompt": "角平分线的性质定理指出，角的平分线上的点到角的两边的什么量相等？",
+     "question": "角平分线的性质定理指出，角的平分线上的点到角的两边的什么量相等？",
+     "answer": "距离",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "性质定理中的距离指点到直线的距离，也就是从点向角的两边所作垂线段的长，只有垂直时这段长度才是距离。"
+    },
+    {
+     "id": "mxj_p1064_q5",
+     "topicId": "mxj_p1064",
+     "prompt": "在三角形 ABC 中，角 C 等于 90 度，AD 平分角 BAC 交 BC 于点 D，若 DC 等于 3，则点 D 到 AB 的距离等于多少？",
+     "question": "在三角形 ABC 中，角 C 等于 90 度，AD 平分角 BAC 交 BC 于点 D，若 DC 等于 3，则点 D 到 AB 的距离等于多少？",
+     "answer": "3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "点 D 在角 BAC 的平分线上，DC 垂直于 AC 是到 AC 的距离，由性质定理它等于到 AB 的距离，所以距离为 3。"
+    },
+    {
+     "id": "mxj_p1064_q6",
+     "topicId": "mxj_p1064",
+     "prompt": "角的内部到角的两边距离相等的点在角的什么线上？",
+     "question": "角的内部到角的两边距离相等的点在角的什么线上？",
+     "answer": "平分线",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "这正是角平分线性质定理的逆命题，它常用来判断一个点是否在角平分线上，例如判断三角形的内心位置时就会用到。"
+    },
+    {
+     "id": "mxj_p1064_q7",
+     "topicId": "mxj_p1064",
+     "prompt": "在三角形 ABC 中，角 C 等于 90 度，AD 平分角 BAC 交 BC 于点 D，DC 等于 3，AB 等于 10，求三角形 ABD 的面积，结果填一个数。",
+     "question": "在三角形 ABC 中，角 C 等于 90 度，AD 平分角 BAC 交 BC 于点 D，DC 等于 3，AB 等于 10，求三角形 ABD 的面积，结果填一个数。",
+     "answer": 15,
+     "verify": "{\"type\":\"op\",\"op\":\"div\",\"values\":[{\"type\":\"op\",\"op\":\"mul\",\"values\":[{\"type\":\"num\",\"value\":10},{\"type\":\"num\",\"value\":3}]},{\"type\":\"num\",\"value\":2}]}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "由角平分线的性质，点 D 到 AB 的距离等于 DC 等于 3，所以三角形 ABD 的面积为二分之一乘 10 乘 3，等于 15。"
+    },
+    {
+     "id": "mxj_p1064_q8",
+     "topicId": "mxj_p1064",
+     "prompt": "请说明角平分线性质定理的逆命题为什么成立，写出主要的推理依据。",
+     "question": "请说明角平分线性质定理的逆命题为什么成立，写出主要的推理依据。",
+     "answer": "作 PD 垂直 OA，PE 垂直 OB，由 PD 等于 PE 与公共斜边 OP，用斜边、直角边定理得两个直角三角形全等，所以 OP 平分该角",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "两个直角三角形有公共斜边 OP，又一条直角边 PD 等于 PE，由斜边、直角边定理全等，于是对应角相等，即射线 OP 是角平分线。"
+    }
+   ]
+  }
+ ]
+}

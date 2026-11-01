@@ -1,0 +1,4386 @@
+{
+ "tag": "mxj8b",
+ "book": "湘教版八年级下册",
+ "unit_points": [
+  {
+   "id": "mxj_p016",
+   "description": "第1章四边形全章要点：多边形内角和与外角和、平行四边形的性质与判定、中心对称、三角形的中位线定理，以及矩形、菱形、正方形的特殊性质与判定",
+   "mastery_criteria": [
+    "能综合运用四边形的性质定理与判定定理进行计算和证明",
+    "能说清矩形、菱形、正方形与平行四边形的包含关系"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p016_q1",
+     "topicId": "mxj_p016",
+     "prompt": "十边形的内角和是多少度？",
+     "question": "十边形的内角和是多少度？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 440度"
+      },
+      {
+       "label": "B",
+       "text": "1 260度"
+      },
+      {
+       "label": "C",
+       "text": "1 800度"
+      },
+      {
+       "label": "D",
+       "text": "1 080度"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由n边形内角和公式(n-2)×180度得，(10-2)×180＝1 440度，所以十边形的内角和是1 440度。"
+    },
+    {
+     "id": "mxj_p016_q2",
+     "topicId": "mxj_p016",
+     "prompt": "下列条件中，能判定四边形ABCD是平行四边形的是哪一个？",
+     "question": "下列条件中，能判定四边形ABCD是平行四边形的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "一组对边平行，另一组对边相等的四边形"
+      },
+      {
+       "label": "B",
+       "text": "对角线互相平分的四边形"
+      },
+      {
+       "label": "C",
+       "text": "两条对角线相等的四边形"
+      },
+      {
+       "label": "D",
+       "text": "一组邻边相等的四边形"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "平行四边形的判定定理3指出对角线互相平分的四边形是平行四边形；一组对边平行而另一组对边相等的四边形不一定是平行四边形。"
+    },
+    {
+     "id": "mxj_p016_q3",
+     "topicId": "mxj_p016",
+     "prompt": "关于正方形与矩形、菱形的关系，下列说法正确的是哪一个？",
+     "question": "关于正方形与矩形、菱形的关系，下列说法正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "正方形是矩形但不是菱形"
+      },
+      {
+       "label": "B",
+       "text": "正方形是菱形但不是矩形"
+      },
+      {
+       "label": "C",
+       "text": "正方形既是矩形又是菱形"
+      },
+      {
+       "label": "D",
+       "text": "正方形与矩形、菱形没有包含关系"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "正方形可看作一组邻边相等的矩形，也可看作有一个角是直角的菱形，因此它既是矩形又是菱形，兼有两者的全部性质。"
+    },
+    {
+     "id": "mxj_p016_q4",
+     "topicId": "mxj_p016",
+     "prompt": "任意多边形的外角和等于多少度？",
+     "question": "任意多边形的外角和等于多少度？",
+     "answer": 360,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "把n边形的每个外角与相邻内角相加得n个180度，再减去内角和(n-2)×180度，差为360度，可见外角和与边数无关。",
+     "verify": "{\"type\": \"num\", \"value\": 360}"
+    },
+    {
+     "id": "mxj_p016_q5",
+     "topicId": "mxj_p016",
+     "prompt": "顺次连接任意四边形ABCD各边中点E、F、G、H，得到的四边形EFGH一定是平行四边形吗？请说明理由。",
+     "question": "顺次连接任意四边形ABCD各边中点E、F、G、H，得到的四边形EFGH一定是平行四边形吗？请说明理由。",
+     "answer": "一定是平行四边形。连接AC，因为EF是△ABC的中位线，所以EF平行于AC且等于AC的一半；同理HG平行于AC且等于AC的一半，于是EF与HG平行且相等，所以四边形EFGH是平行四边形。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "中位线定理给出EF与HG都平行于AC且等于AC的一半，由一组对边平行且相等即可判定四边形EFGH是平行四边形。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p017",
+   "description": "第2章图形与坐标全章要点：平面直角坐标系的建立、用有序实数对表示点的位置与象限特征、用坐标表示简单图形，以及轴对称与平移的坐标规律",
+   "mastery_criteria": [
+    "能在给定坐标系中写出点的坐标并判断点所在的象限",
+    "能根据轴对称与平移的规律写出对应点的坐标"
+   ],
+   "type": "modeling",
+   "questions": [
+    {
+     "id": "mxj_p017_q1",
+     "topicId": "mxj_p017",
+     "prompt": "在平面直角坐标系中，点P(-3,2)位于哪一个象限？",
+     "question": "在平面直角坐标系中，点P(-3,2)位于哪一个象限？",
+     "options": [
+      {
+       "label": "A",
+       "text": "第二象限"
+      },
+      {
+       "label": "B",
+       "text": "第一象限"
+      },
+      {
+       "label": "C",
+       "text": "第三象限"
+      },
+      {
+       "label": "D",
+       "text": "第四象限"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "点的横坐标为负、纵坐标为正，属于第二象限，所以点P(-3,2)在第二象限。"
+    },
+    {
+     "id": "mxj_p017_q2",
+     "topicId": "mxj_p017",
+     "prompt": "将点P(a,b)向右平移3个单位长度，所得像的坐标是什么？",
+     "question": "将点P(a,b)向右平移3个单位长度，所得像的坐标是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(a-3,b)"
+      },
+      {
+       "label": "B",
+       "text": "(a+3,b)"
+      },
+      {
+       "label": "C",
+       "text": "(a,b+3)"
+      },
+      {
+       "label": "D",
+       "text": "(a,b-3)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "平面直角坐标系中，点向右平移k个单位长度，横坐标加k、纵坐标不变，所以像的坐标是(a+3,b)。"
+    },
+    {
+     "id": "mxj_p017_q3",
+     "topicId": "mxj_p017",
+     "prompt": "关于坐标轴对称的点的坐标，下列说法正确的是哪一个？",
+     "question": "关于坐标轴对称的点的坐标，下列说法正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "点(a,b)关于x轴对称的点的坐标是(-a,b)"
+      },
+      {
+       "label": "B",
+       "text": "点(a,b)关于y轴对称的点的坐标是(a,-b)"
+      },
+      {
+       "label": "C",
+       "text": "点(a,b)关于x轴对称的点的坐标是(a,-b)"
+      },
+      {
+       "label": "D",
+       "text": "点(a,b)关于y轴对称的点的坐标是(b,a)"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "关于x轴对称时横坐标不变、纵坐标互为相反数，得(a,-b)；关于y轴对称时横坐标互为相反数、纵坐标不变，得(-a,b)。"
+    },
+    {
+     "id": "mxj_p017_q4",
+     "topicId": "mxj_p017",
+     "prompt": "已知点P(-m+1,2m-6)在x轴上，求m的值。",
+     "question": "已知点P(-m+1,2m-6)在x轴上，求m的值。",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "x轴上的点纵坐标为0，所以2m－6＝0，解得m＝3，此时点P的坐标为(-2,0)。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "mxj_p017_q5",
+     "topicId": "mxj_p017",
+     "prompt": "正方形ABCD的边长为6，分别以顶点B为原点和以正方形的对称中心为原点建立平面直角坐标系，得到的顶点坐标相同吗？请说明理由。",
+     "question": "正方形ABCD的边长为6，分别以顶点B为原点和以正方形的对称中心为原点建立平面直角坐标系，得到的顶点坐标相同吗？请说明理由。",
+     "answer": "不相同。以B为原点、BC所在直线为x轴时，四个顶点坐标是B(0,0)、C(6,0)、D(6,6)、A(0,6)；以对称中心为原点时，顶点坐标是A(-3,3)、B(-3,-3)、C(3,-3)、D(3,3)。坐标系选择不同，同一个点的坐标就不同，所以建系时应使各顶点的坐标尽量简明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "点的坐标依赖于坐标系的选取：原点与坐标轴方向一变，同一点的坐标就随之改变，这正是教材强调建立坐标系要适当的原因。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p018",
+   "description": "第3章一次函数全章要点：函数的概念与三种表示法、一次函数与正比例函数的图象和性质、待定系数法求表达式，以及用一次函数解决实际问题",
+   "mastery_criteria": [
+    "能判断两个变量之间是否具有函数关系并写出函数表达式",
+    "能用待定系数法求一次函数表达式，并结合图象解决简单实际问题"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p018_q1",
+     "topicId": "mxj_p018",
+     "prompt": "下列函数中，是一次函数的是哪一个？",
+     "question": "下列函数中，是一次函数的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y＝7－x"
+      },
+      {
+       "label": "B",
+       "text": "y＝x的平方"
+      },
+      {
+       "label": "C",
+       "text": "y＝x分之1"
+      },
+      {
+       "label": "D",
+       "text": "y＝2x的平方加1"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "一次函数形如y＝kx＋b（k、b为常数，k不等于0）；y＝7－x中k＝－1、b＝7，符合定义，其余三个都不是x的一次式。"
+    },
+    {
+     "id": "mxj_p018_q2",
+     "topicId": "mxj_p018",
+     "prompt": "正比例函数y＝kx的图象一定经过哪一个点？",
+     "question": "正比例函数y＝kx的图象一定经过哪一个点？",
+     "options": [
+      {
+       "label": "A",
+       "text": "点(1,0)"
+      },
+      {
+       "label": "B",
+       "text": "原点"
+      },
+      {
+       "label": "C",
+       "text": "点(0,1)"
+      },
+      {
+       "label": "D",
+       "text": "点(1,1)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "正比例函数的图象是一条经过原点O的直线，因为当x＝0时y＝0，所以它一定经过原点。"
+    },
+    {
+     "id": "mxj_p018_q3",
+     "topicId": "mxj_p018",
+     "prompt": "对于一次函数y＝kx＋b，当k小于0时，函数值y随自变量x的增大如何变化？",
+     "question": "对于一次函数y＝kx＋b，当k小于0时，函数值y随自变量x的增大如何变化？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y随x增大而增大"
+      },
+      {
+       "label": "B",
+       "text": "y不随x变化"
+      },
+      {
+       "label": "C",
+       "text": "y随x增大而减小"
+      },
+      {
+       "label": "D",
+       "text": "y先增大后减小"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "一次函数的图象与正比例函数的图象平行或重合，k小于0时直线从左向右下降，所以y随x的增大而减小。"
+    },
+    {
+     "id": "mxj_p018_q4",
+     "topicId": "mxj_p018",
+     "prompt": "已知一次函数的图象经过点(0,1)和点(1,3)，求这个一次函数中k与b的和。",
+     "question": "已知一次函数的图象经过点(0,1)和点(1,3)，求这个一次函数中k与b的和。",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "设这个一次函数的表达式为y＝kx＋b，把两点坐标代入得b＝1、k＋b＝3，解这个方程组得k＝2、b＝1，因此k与b的和是3。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 1}]}"
+    },
+    {
+     "id": "mxj_p018_q5",
+     "topicId": "mxj_p018",
+     "prompt": "某地实行阶梯电价：每户每月用电量不超过200千瓦时时，按0.6元每千瓦时收费；超过200千瓦时的部分，每千瓦时加收0.3元。请说明电费y与用电量x之间的函数关系应分几段表示，并写出表达式。",
+     "question": "某地实行阶梯电价：每户每月用电量不超过200千瓦时时，按0.6元每千瓦时收费；超过200千瓦时的部分，每千瓦时加收0.3元。请说明电费y与用电量x之间的函数关系应分几段表示，并写出表达式。",
+     "answer": "分两段表示。当0≤x≤200时，y＝0.6x；当x＞200时，y＝200×0.6＋(x－200)×0.9＝0.9x－60。它的图象由两条线段拼接而成，是一个分段函数。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "教材的阶梯电价问题说明：实际问题中因变量与自变量的关系可能分段，要按用电量是否超过200千瓦时分别写出一次函数表达式。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p019",
+   "description": "第4章数据分析全章要点：平均数、中位数、众数的意义与计算，离差平方和与方差，数据分类，四分位数与箱线图，频数与频数直方图，以及用样本估计总体",
+   "mastery_criteria": [
+    "能选用合适的统计量刻画一组数据的集中趋势与离散程度",
+    "能读懂频数直方图与箱线图并用样本的数字特征估计总体"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "mxj_p019_q1",
+     "topicId": "mxj_p019",
+     "prompt": "下列统计量中，都能反映一组数据集中趋势的是哪一组？",
+     "question": "下列统计量中，都能反映一组数据集中趋势的是哪一组？",
+     "options": [
+      {
+       "label": "A",
+       "text": "平均数、中位数、众数"
+      },
+      {
+       "label": "B",
+       "text": "方差、离差平方和"
+      },
+      {
+       "label": "C",
+       "text": "频数、频率"
+      },
+      {
+       "label": "D",
+       "text": "四分位数、箱线图"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "平均数、中位数、众数都是一组数据的代表值，从不同方面反映数据的集中趋势；方差与离差平方和刻画的是离散程度。"
+    },
+    {
+     "id": "mxj_p019_q2",
+     "topicId": "mxj_p019",
+     "prompt": "一组数据的方差越小，说明这组数据怎样？",
+     "question": "一组数据的方差越小，说明这组数据怎样？",
+     "options": [
+      {
+       "label": "A",
+       "text": "数据越分散"
+      },
+      {
+       "label": "B",
+       "text": "数据越稳定，离散程度越小"
+      },
+      {
+       "label": "C",
+       "text": "平均数越大"
+      },
+      {
+       "label": "D",
+       "text": "中位数越大"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "方差是各数据与平均数之差的平方的平均值，方差越小表明这组数据的离散程度越小，数据也就越稳定。"
+    },
+    {
+     "id": "mxj_p019_q3",
+     "topicId": "mxj_p019",
+     "prompt": "绘制一组数据的箱线图时，需要用到的五个数是哪一组？",
+     "question": "绘制一组数据的箱线图时，需要用到的五个数是哪一组？",
+     "options": [
+      {
+       "label": "A",
+       "text": "平均数、中位数、众数三个数"
+      },
+      {
+       "label": "B",
+       "text": "最小值、最大值、平均数三个数"
+      },
+      {
+       "label": "C",
+       "text": "最小值、第一四分位数、中位数、第三四分位数、最大值"
+      },
+      {
+       "label": "D",
+       "text": "频数、频率、组距三个数"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "箱线图由一组数据的最小值、第一四分位数、中位数、第三四分位数、最大值这五个数绘制而成，直观表示数据的分布状态。"
+    },
+    {
+     "id": "mxj_p019_q4",
+     "topicId": "mxj_p019",
+     "prompt": "一组数据为3、4、5、6、7，求这组数据的中位数。",
+     "question": "一组数据为3、4、5、6、7，求这组数据的中位数。",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "这组数据已按从小到大排列，共有5个数据，位于中间位置的第3个数是5，所以中位数是5。",
+     "verify": "{\"type\": \"num\", \"value\": 5}"
+    },
+    {
+     "id": "mxj_p019_q5",
+     "topicId": "mxj_p019",
+     "prompt": "为什么在实际问题中常用样本的平均数和方差去估计总体的平均数和方差？",
+     "question": "为什么在实际问题中常用样本的平均数和方差去估计总体的平均数和方差？",
+     "answer": "总体的数据个数往往非常多或者不能全部得到，逐一计算总体平均数与方差常常做不到；简单随机抽样使每个个体有同等机会被抽到，样本能反映总体的情况，数学上已经证明当样本容量足够大时，可以用样本的平均数、方差作为总体平均数、方差的估计值。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "用样本估计总体是统计的基本思想：抽样要保证随机性，估计的可靠性随样本容量的增大而提高。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "mxj_p1065",
+   "page": 2,
+   "description": "多边形的边、顶点、对角线、内角与外角的含义，n边形内角和公式与任意多边形外角和等于360度，以及四边形的不稳定性",
+   "mastery_criteria": [
+    "能说出多边形的边、顶点、对角线、内角和外角的含义",
+    "能推导并运用n边形的内角和公式与外角和公式"
+   ],
+   "misconceptions": [
+    "把多边形的外角和当成随边数增大而增大的量",
+    "求内角和时漏掉减2，直接用边数乘180度"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1065_q1",
+     "topicId": "mxj_p1065",
+     "prompt": "五边形的内角和是多少度？",
+     "question": "五边形的内角和是多少度？",
+     "options": [
+      {
+       "label": "A",
+       "text": "540度"
+      },
+      {
+       "label": "B",
+       "text": "360度"
+      },
+      {
+       "label": "C",
+       "text": "720度"
+      },
+      {
+       "label": "D",
+       "text": "900度"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把五边形从一个顶点出发的对角线画出，可分成3个三角形，所以内角和为(5-2)×180＝540度。"
+    },
+    {
+     "id": "mxj_p1065_q2",
+     "topicId": "mxj_p1065",
+     "prompt": "下列生活现象中，利用四边形不稳定性的是哪一个？",
+     "question": "下列生活现象中，利用四边形不稳定性的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "用三角架固定相机"
+      },
+      {
+       "label": "B",
+       "text": "电动伸缩门"
+      },
+      {
+       "label": "C",
+       "text": "自行车的三角车架"
+      },
+      {
+       "label": "D",
+       "text": "在栅栏两横梁之间加钉斜木条"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材指出电动伸缩门、升降器都利用了四边形边长不变而形状可以改变的性质；三角车架与加钉斜木条都是为了增加稳定性。"
+    },
+    {
+     "id": "mxj_p1065_q3",
+     "topicId": "mxj_p1065",
+     "prompt": "一个多边形的每一个外角都等于45度，这个多边形是几边形？",
+     "question": "一个多边形的每一个外角都等于45度，这个多边形是几边形？",
+     "options": [
+      {
+       "label": "A",
+       "text": "六边形"
+      },
+      {
+       "label": "B",
+       "text": "七边形"
+      },
+      {
+       "label": "C",
+       "text": "八边形"
+      },
+      {
+       "label": "D",
+       "text": "十边形"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "多边形的外角和恒为360度，每个外角都是45度，则边数为360÷45＝8，所以它是八边形。"
+    },
+    {
+     "id": "mxj_p1065_q4",
+     "topicId": "mxj_p1065",
+     "prompt": "关于多边形的内角和与外角和，下列说法正确的是哪一个？",
+     "question": "关于多边形的内角和与外角和，下列说法正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "多边形的外角和随边数的增加而增大"
+      },
+      {
+       "label": "B",
+       "text": "n边形的内角和等于n乘180度"
+      },
+      {
+       "label": "C",
+       "text": "正多边形的各条边相等，各个角不相等"
+      },
+      {
+       "label": "D",
+       "text": "n边形的内角和等于(n-2)乘180度"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "教材证明n边形可分成n-2个三角形，故内角和为(n-2)×180度；而外角和恒为360度，与边数无关；正多边形各边相等、各角也相等。"
+    },
+    {
+     "id": "mxj_p1065_q5",
+     "topicId": "mxj_p1065",
+     "prompt": "任意多边形的外角和等于多少度？",
+     "question": "任意多边形的外角和等于多少度？",
+     "answer": 360,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "在n边形每个顶点处取一个外角，这些外角与相邻内角之和为n×180度，减去内角和(n-2)×180度，得360度。",
+     "verify": "{\"type\": \"num\", \"value\": 360}"
+    },
+    {
+     "id": "mxj_p1065_q6",
+     "topicId": "mxj_p1065",
+     "prompt": "一个多边形的内角和等于1 980度，它是几边形？",
+     "question": "一个多边形的内角和等于1 980度，它是几边形？",
+     "answer": 13,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "设边数为n，则(n-2)×180＝1 980，得n-2＝11，解得n＝13，所以它是十三边形。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 1980}, {\"type\": \"num\", \"value\": 180}]}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "mxj_p1065_q7",
+     "topicId": "mxj_p1065",
+     "prompt": "从n边形的一个顶点出发，可以画出多少条对角线？请用含n的式子表示。",
+     "question": "从n边形的一个顶点出发，可以画出多少条对角线？请用含n的式子表示。",
+     "answer": "n-3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "与这个顶点不相邻的顶点共有n-3个，每个这样的顶点与它连成一条对角线，所以共有n-3条对角线。"
+    },
+    {
+     "id": "mxj_p1065_q8",
+     "topicId": "mxj_p1065",
+     "prompt": "在栅栏的两横梁之间加钉一根斜木条，为什么能使栅栏变得稳固？请用四边形的性质说明。",
+     "question": "在栅栏的两横梁之间加钉一根斜木条，为什么能使栅栏变得稳固？请用四边形的性质说明。",
+     "answer": "四边形具有不稳定性，四条边长不变时形状仍会改变；加钉斜木条后，斜木条把四边形分成两个三角形，而三角形的三边确定后形状不再改变，于是栅栏被固定住，起到稳定的作用。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "教材用木框实验说明四边形边长不变而形状可变，即具有不稳定性；加斜木条相当于构造三角形，利用三角形的稳定性克服这一缺点。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1066",
+   "page": 8,
+   "description": "平行四边形的定义、对边相等与对角相等、对角线互相平分的性质定理，以及三条判定定理和梯形的概念",
+   "mastery_criteria": [
+    "能运用平行四边形的性质定理求边、角和对角线相关的量",
+    "能选择合适的判定定理证明一个四边形是平行四边形"
+   ],
+   "misconceptions": [
+    "把对角线相等当成一般平行四边形的性质",
+    "认为一组对边平行、另一组对边相等就能判定平行四边形"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p1066_q1",
+     "topicId": "mxj_p1066",
+     "prompt": "下列性质中，平行四边形不一定具有的是哪一个？",
+     "question": "下列性质中，平行四边形不一定具有的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "对角线相等"
+      },
+      {
+       "label": "B",
+       "text": "对边相等"
+      },
+      {
+       "label": "C",
+       "text": "对角相等"
+      },
+      {
+       "label": "D",
+       "text": "对角线互相平分"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "平行四边形的性质定理1、2指出对边相等、对角相等、对角线互相平分；对角线相等是矩形的特殊性质，一般平行四边形不具备。"
+    },
+    {
+     "id": "mxj_p1066_q2",
+     "topicId": "mxj_p1066",
+     "prompt": "一组对边平行而另一组对边不平行的四边形叫作什么？",
+     "question": "一组对边平行而另一组对边不平行的四边形叫作什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行四边形"
+      },
+      {
+       "label": "B",
+       "text": "梯形"
+      },
+      {
+       "label": "C",
+       "text": "矩形"
+      },
+      {
+       "label": "D",
+       "text": "菱形"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材给出梯形的定义：一组对边平行而另一组对边不平行的四边形叫作梯形，平行的两边叫底，不平行的两边叫腰。"
+    },
+    {
+     "id": "mxj_p1066_q3",
+     "topicId": "mxj_p1066",
+     "prompt": "下列条件中，能判定四边形ABCD是平行四边形的是哪一个？",
+     "question": "下列条件中，能判定四边形ABCD是平行四边形的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "一组对边平行，另一组对边相等"
+      },
+      {
+       "label": "B",
+       "text": "两条对角线相等"
+      },
+      {
+       "label": "C",
+       "text": "两组对角分别相等"
+      },
+      {
+       "label": "D",
+       "text": "一组邻边相等"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由例8可知，两组对角分别相等的四边形是平行四边形；而一组对边平行、另一组对边相等的四边形不一定是平行四边形。"
+    },
+    {
+     "id": "mxj_p1066_q4",
+     "topicId": "mxj_p1066",
+     "prompt": "在平行四边形ABCD中，对角线AC与BD相交于点O，过点O作一条直线分别交AD、BC于点M、N，则OM与ON的关系是什么？",
+     "question": "在平行四边形ABCD中，对角线AC与BD相交于点O，过点O作一条直线分别交AD、BC于点M、N，则OM与ON的关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "OM大于ON"
+      },
+      {
+       "label": "B",
+       "text": "OM小于ON"
+      },
+      {
+       "label": "C",
+       "text": "无法确定"
+      },
+      {
+       "label": "D",
+       "text": "OM等于ON"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由对角线互相平分得OA＝OC，又AD平行BC可得内错角相等，加上对顶角相等，可证两个三角形全等，于是OM＝ON。"
+    },
+    {
+     "id": "mxj_p1066_q5",
+     "topicId": "mxj_p1066",
+     "prompt": "在平行四边形ABCD中，对角线AC与BD相交于点O，AC＝6，BD＝10，CD＝4.8，求三角形COD的周长。",
+     "question": "在平行四边形ABCD中，对角线AC与BD相交于点O，AC＝6，BD＝10，CD＝4.8，求三角形COD的周长。",
+     "answer": 12.8,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "由对角线互相平分得OC＝3，OD＝5，又CD＝4.8，所以△COD的周长为3＋5＋4.8＝12.8。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 2}]}]}, {\"type\": \"num\", \"value\": 4.8}]}"
+    },
+    {
+     "id": "mxj_p1066_q6",
+     "topicId": "mxj_p1066",
+     "prompt": "在平行四边形ABCD中，AB＝5 cm，AD＝7 cm，求它的周长（单位：cm）。",
+     "question": "在平行四边形ABCD中，AB＝5 cm，AD＝7 cm，求它的周长（单位：cm）。",
+     "answer": 24,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "平行四边形的两组对边分别相等，所以周长为2×(5＋7)＝24，即24 cm。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 7}]}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "mxj_p1066_q7",
+     "topicId": "mxj_p1066",
+     "prompt": "平行四边形的两条对角线相交于一点，这个点把每条对角线分成相等的两段，这说明平行四边形的对角线具有什么关系？",
+     "question": "平行四边形的两条对角线相交于一点，这个点把每条对角线分成相等的两段，这说明平行四边形的对角线具有什么关系？",
+     "answer": "互相平分",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "平行四边形的性质定理2：平行四边形的对角线互相平分，所以交点是对角线各自的中点。"
+    },
+    {
+     "id": "mxj_p1066_q8",
+     "topicId": "mxj_p1066",
+     "prompt": "在平行四边形ABCD中，对角线AC与BD相交于点O，过点O作直线MN分别交AD、BC于点M、N。求证：点O是线段MN的中点。",
+     "question": "在平行四边形ABCD中，对角线AC与BD相交于点O，过点O作直线MN分别交AD、BC于点M、N。求证：点O是线段MN的中点。",
+     "answer": "因为平行四边形的对角线互相平分，所以OA＝OC；又AD平行BC，得角MAO＝角NCO，加上对顶角AOM＝角CON，可证△AOM与△CON全等，于是OM＝ON，即点O是线段MN的中点。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "证明的关键是用对角线互相平分得到OA＝OC，再由平行关系得内错角相等，用角边角判定三角形全等，从而得到两条线段相等。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1067",
+   "page": 19,
+   "description": "中心对称与中心对称图形的概念、成中心对称的两个图形的性质，以及线段、平行四边形的中心对称性",
+   "mastery_criteria": [
+    "能区分成中心对称的两个图形与中心对称图形",
+    "能用对应点连线被对称中心平分的性质作图与计算"
+   ],
+   "misconceptions": [
+    "把中心对称与轴对称混为一谈",
+    "认为平行四边形的对角线是它的对称轴"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1067_q1",
+     "topicId": "mxj_p1067",
+     "prompt": "在平面内，把一个图形绕某一点旋转多少度后与另一个图形重合，就说这两个图形关于这个点成中心对称？",
+     "question": "在平面内，把一个图形绕某一点旋转多少度后与另一个图形重合，就说这两个图形关于这个点成中心对称？",
+     "options": [
+      {
+       "label": "A",
+       "text": "180度"
+      },
+      {
+       "label": "B",
+       "text": "90度"
+      },
+      {
+       "label": "C",
+       "text": "120度"
+      },
+      {
+       "label": "D",
+       "text": "360度"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "中心对称是把图形绕对称中心旋转180度的变换，它是一种特殊的旋转变换。"
+    },
+    {
+     "id": "mxj_p1067_q2",
+     "topicId": "mxj_p1067",
+     "prompt": "一个图形绕某一点旋转180度后能与自身重合，这样的图形叫作什么？",
+     "question": "一个图形绕某一点旋转180度后能与自身重合，这样的图形叫作什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "轴对称图形"
+      },
+      {
+       "label": "B",
+       "text": "中心对称图形"
+      },
+      {
+       "label": "C",
+       "text": "正多边形"
+      },
+      {
+       "label": "D",
+       "text": "相似图形"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材定义：如果一个图形绕一个点旋转180度所得的像与原来的图形互相重合，这个图形叫作中心对称图形，这个点叫对称中心。"
+    },
+    {
+     "id": "mxj_p1067_q3",
+     "topicId": "mxj_p1067",
+     "prompt": "下列图形中，是中心对称图形的是哪一个？",
+     "question": "下列图形中，是中心对称图形的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "等边三角形"
+      },
+      {
+       "label": "B",
+       "text": "正五边形"
+      },
+      {
+       "label": "C",
+       "text": "线段"
+      },
+      {
+       "label": "D",
+       "text": "角"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把线段绕它的中点旋转180度，得到的像与自身重合，所以线段是中心对称图形，它的中点是对称中心。"
+    },
+    {
+     "id": "mxj_p1067_q4",
+     "topicId": "mxj_p1067",
+     "prompt": "关于中心对称图形与成中心对称的两个图形，下列说法正确的是哪一个？",
+     "question": "关于中心对称图形与成中心对称的两个图形，下列说法正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "中心对称图形是指两个图形之间的对称关系"
+      },
+      {
+       "label": "B",
+       "text": "中心对称图形的对称中心一定在图形外部"
+      },
+      {
+       "label": "C",
+       "text": "成中心对称的两个图形只关于某条直线对称"
+      },
+      {
+       "label": "D",
+       "text": "成中心对称的两个图形一定全等"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "成中心对称的两个图形绕对称中心旋转180度后重合，因此一定全等；中心对称图形说的是一个图形自身的特征，与两个图形间的关系不同。"
+    },
+    {
+     "id": "mxj_p1067_q5",
+     "topicId": "mxj_p1067",
+     "prompt": "点A与点B关于点O成中心对称，若OA＝5 cm，则OB等于多少厘米？",
+     "question": "点A与点B关于点O成中心对称，若OA＝5 cm，则OB等于多少厘米？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "成中心对称时对称中心是对应点连线的中点，所以OA＝OB，即OB＝5 cm。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 1}]}"
+    },
+    {
+     "id": "mxj_p1067_q6",
+     "topicId": "mxj_p1067",
+     "prompt": "在平行四边形ABCD中，对角线BD＝4，把这个平行四边形绕它的对称中心旋转180度，点D经过的路径长约是多少（π取3.14，结果保留两位小数）？",
+     "question": "在平行四边形ABCD中，对角线BD＝4，把这个平行四边形绕它的对称中心旋转180度，点D经过的路径长约是多少（π取3.14，结果保留两位小数）？",
+     "answer": 6.28,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "点D到对称中心的距离是对角线BD的一半，即2；旋转180度时点D走过的路径是以对称中心为圆心、半径为2的半圆，长为3.14×2＝6.28。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3.14}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "mxj_p1067_q7",
+     "topicId": "mxj_p1067",
+     "prompt": "成中心对称的两个图形中，对应点的连线经过对称中心，并且被对称中心怎样处理？请填一个词。",
+     "question": "成中心对称的两个图形中，对应点的连线经过对称中心，并且被对称中心怎样处理？请填一个词。",
+     "answer": "平分",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "这是中心对称的基本性质：成中心对称的两个图形中，对应点的连线经过对称中心，且被对称中心平分。"
+    },
+    {
+     "id": "mxj_p1067_q8",
+     "topicId": "mxj_p1067",
+     "prompt": "已知△ABC，边AC的中点为D，请说明如何作出与△ABC关于点D成中心对称的图形。",
+     "question": "已知△ABC，边AC的中点为D，请说明如何作出与△ABC关于点D成中心对称的图形。",
+     "answer": "连接BD并延长到B′，使DB′＝DB，则点B的对应点是B′；由于D是AC的中点，在关于点D的中心对称下点A的对应点是点C、点C的对应点是点A；连接AB′与CB′，所得△CB′A就是所求作的图形。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "作中心对称图形的关键是逐个作出关键点的对应点：对应点与对称中心共线，且到对称中心的距离相等。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1068",
+   "page": 23,
+   "description": "三角形中位线的概念与中位线定理，以及用中位线定理研究四边形各边中点所成四边形的形状",
+   "mastery_criteria": [
+    "能区分三角形的中线与中位线",
+    "能用中位线定理计算线段长度并证明四边形是平行四边形"
+   ],
+   "misconceptions": [
+    "把三角形的中位线当成三角形的中线",
+    "认为只要等于第三边一半的线段都是中位线"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p1068_q1",
+     "topicId": "mxj_p1068",
+     "prompt": "三角形的中位线平行于第三边，并且等于第三边的多少？",
+     "question": "三角形的中位线平行于第三边，并且等于第三边的多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "一半"
+      },
+      {
+       "label": "B",
+       "text": "两倍"
+      },
+      {
+       "label": "C",
+       "text": "三分之一"
+      },
+      {
+       "label": "D",
+       "text": "相等"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "三角形中位线定理：三角形的中位线平行于第三边，并且等于第三边的一半。"
+    },
+    {
+     "id": "mxj_p1068_q2",
+     "topicId": "mxj_p1068",
+     "prompt": "连接三角形两边中点的线段叫作三角形的什么线？",
+     "question": "连接三角形两边中点的线段叫作三角形的什么线？",
+     "options": [
+      {
+       "label": "A",
+       "text": "中线"
+      },
+      {
+       "label": "B",
+       "text": "中位线"
+      },
+      {
+       "label": "C",
+       "text": "高"
+      },
+      {
+       "label": "D",
+       "text": "角平分线"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材定义：连接三角形两边中点的线段叫作三角形的中位线，一个三角形有三条中位线。"
+    },
+    {
+     "id": "mxj_p1068_q3",
+     "topicId": "mxj_p1068",
+     "prompt": "顺次连接任意四边形各边中点得到的四边形一定是哪一种四边形？",
+     "question": "顺次连接任意四边形各边中点得到的四边形一定是哪一种四边形？",
+     "options": [
+      {
+       "label": "A",
+       "text": "矩形"
+      },
+      {
+       "label": "B",
+       "text": "菱形"
+      },
+      {
+       "label": "C",
+       "text": "平行四边形"
+      },
+      {
+       "label": "D",
+       "text": "正方形"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "连接一条对角线，由中位线定理可得两组中点连线分别平行且等于该对角线的一半，于是这组对边平行且相等，所得四边形是平行四边形。"
+    },
+    {
+     "id": "mxj_p1068_q4",
+     "topicId": "mxj_p1068",
+     "prompt": "在△ABC中，D、E、F分别是各边的中点，则△DEF的周长与原三角形周长的关系是什么？",
+     "question": "在△ABC中，D、E、F分别是各边的中点，则△DEF的周长与原三角形周长的关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "等于原三角形周长"
+      },
+      {
+       "label": "B",
+       "text": "等于原三角形周长的两倍"
+      },
+      {
+       "label": "C",
+       "text": "等于原三角形周长的四分之一"
+      },
+      {
+       "label": "D",
+       "text": "等于原三角形周长的一半"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "三条中位线分别等于对应第三边的一半，所以中点三角形的周长等于原三角形三边和的一半。"
+    },
+    {
+     "id": "mxj_p1068_q5",
+     "topicId": "mxj_p1068",
+     "prompt": "△ABC各边的长度分别为3 cm、3.4 cm、4 cm，求连接各边中点所成的△DEF的周长（单位：cm）。",
+     "question": "△ABC各边的长度分别为3 cm、3.4 cm、4 cm，求连接各边中点所成的△DEF的周长（单位：cm）。",
+     "answer": 5.2,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "中点三角形的每条边都是原三角形一条边的一半，所以它的周长是原三角形周长的一半，即(3＋3.4＋4)÷2＝5.2。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 3.4}]}, {\"type\": \"num\", \"value\": 4}]}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "mxj_p1068_q6",
+     "topicId": "mxj_p1068",
+     "prompt": "在平行四边形ABCD中，对角线AC与BD相交于点O，点E是AB的中点，若OE＝3 cm，求AD的长（单位：cm）。",
+     "question": "在平行四边形ABCD中，对角线AC与BD相交于点O，点E是AB的中点，若OE＝3 cm，求AD的长（单位：cm）。",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "在△ABD中，O是BD的中点，E是AB的中点，所以OE是△ABD的中位线，AD＝2OE＝6，即6 cm。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "mxj_p1068_q7",
+     "topicId": "mxj_p1068",
+     "prompt": "顺次连接四边形各边中点所得到的四边形，通常叫作原四边形的什么四边形？",
+     "question": "顺次连接四边形各边中点所得到的四边形，通常叫作原四边形的什么四边形？",
+     "answer": "中点四边形",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "教材把顺次连接四边形各边中点所得的四边形称为中点四边形，并用实验与中位线定理说明它是平行四边形。"
+    },
+    {
+     "id": "mxj_p1068_q8",
+     "topicId": "mxj_p1068",
+     "prompt": "证明：过三角形一边中点与另一边平行的直线必平分第三边。",
+     "question": "证明：过三角形一边中点与另一边平行的直线必平分第三边。",
+     "answer": "在△ABC中，D是AB的中点，过D作DE平行BC交AC于点E；取AC的中点F，连接DF，则DF是△ABC的中位线，所以DF平行BC；而过点D只有一条直线与BC平行，故DE与DF重合，E与F重合，即E平分AC。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "证明用同一性：中位线给出了一条过D且平行BC的直线，而过直线外一点只有一条直线与已知直线平行，所以所作的直线就是中位线。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1069",
+   "page": 26,
+   "description": "矩形的定义、四个角都是直角与对角线相等的性质定理、矩形是轴对称图形，以及矩形的两条判定定理和直角三角形斜边上中线的性质",
+   "mastery_criteria": [
+    "能运用矩形四个角是直角、对角线相等计算线段与角度",
+    "能用三个角是直角或对角线相等判定一个四边形是矩形"
+   ],
+   "misconceptions": [
+    "认为对角线相等的四边形就是矩形",
+    "把矩形的对角线当成它的一条对称轴"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1069_q1",
+     "topicId": "mxj_p1069",
+     "prompt": "矩形具有而一般平行四边形不具有的性质是哪一条？",
+     "question": "矩形具有而一般平行四边形不具有的性质是哪一条？",
+     "options": [
+      {
+       "label": "A",
+       "text": "对角线相等"
+      },
+      {
+       "label": "B",
+       "text": "对边相等"
+      },
+      {
+       "label": "C",
+       "text": "对角相等"
+      },
+      {
+       "label": "D",
+       "text": "对角线互相平分"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "矩形的性质定理2指出矩形的对角线相等，这是一般平行四边形不具备的特殊性质。"
+    },
+    {
+     "id": "mxj_p1069_q2",
+     "topicId": "mxj_p1069",
+     "prompt": "矩形的四个角都是什么角？",
+     "question": "矩形的四个角都是什么角？",
+     "options": [
+      {
+       "label": "A",
+       "text": "锐角"
+      },
+      {
+       "label": "B",
+       "text": "直角"
+      },
+      {
+       "label": "C",
+       "text": "钝角"
+      },
+      {
+       "label": "D",
+       "text": "大小不确定"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "矩形的性质定理1：矩形的四个角都是直角，这由矩形的定义与平行线的性质推出。"
+    },
+    {
+     "id": "mxj_p1069_q3",
+     "topicId": "mxj_p1069",
+     "prompt": "下列条件中，能判定四边形是矩形的是哪一个？",
+     "question": "下列条件中，能判定四边形是矩形的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "两条对角线互相垂直的四边形"
+      },
+      {
+       "label": "B",
+       "text": "一组邻边相等的四边形"
+      },
+      {
+       "label": "C",
+       "text": "三个角是直角的四边形"
+      },
+      {
+       "label": "D",
+       "text": "一条对角线平分一组对角的四边形"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "矩形的判定定理1指出三个角是直角的四边形是矩形；两个角是直角的四边形不一定是矩形，例如直角梯形。"
+    },
+    {
+     "id": "mxj_p1069_q4",
+     "topicId": "mxj_p1069",
+     "prompt": "矩形是轴对称图形，它的对称轴是什么？",
+     "question": "矩形是轴对称图形，它的对称轴是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "两条对角线"
+      },
+      {
+       "label": "B",
+       "text": "一条对角线"
+      },
+      {
+       "label": "C",
+       "text": "四条边所在的直线"
+      },
+      {
+       "label": "D",
+       "text": "过每一组对边中点的直线"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "教材由矩形的对称性证明：过对角线交点且垂直于一组对边的直线是该组对边的垂直平分线，因此过每一组对边中点的直线都是矩形的对称轴。"
+    },
+    {
+     "id": "mxj_p1069_q5",
+     "topicId": "mxj_p1069",
+     "prompt": "在矩形ABCD中，对角线AC＝10 cm，求对角线BD的长（单位：cm）。",
+     "question": "在矩形ABCD中，对角线AC＝10 cm，求对角线BD的长（单位：cm）。",
+     "answer": 10,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "矩形的性质定理2：矩形的对角线相等，所以BD＝AC＝10，即10 cm。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 1}]}"
+    },
+    {
+     "id": "mxj_p1069_q6",
+     "topicId": "mxj_p1069",
+     "prompt": "在Rt△ABC中，∠ACB＝90度，斜边AB＝10，CD是斜边上的中线，求CD的长。",
+     "question": "在Rt△ABC中，∠ACB＝90度，斜边AB＝10，CD是斜边上的中线，求CD的长。",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由矩形的性质可以证明直角三角形斜边上的中线等于斜边的一半，所以CD＝10÷2＝5。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "mxj_p1069_q7",
+     "topicId": "mxj_p1069",
+     "prompt": "矩形的两条对角线除了互相平分之外，还具有怎样的数量关系？请填一个词。",
+     "question": "矩形的两条对角线除了互相平分之外，还具有怎样的数量关系？请填一个词。",
+     "answer": "相等",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "矩形的性质定理2：矩形的对角线相等，因此矩形的两条对角线相等且互相平分。"
+    },
+    {
+     "id": "mxj_p1069_q8",
+     "topicId": "mxj_p1069",
+     "prompt": "请利用矩形的性质定理证明：直角三角形斜边上的中线等于斜边的一半。",
+     "question": "请利用矩形的性质定理证明：直角三角形斜边上的中线等于斜边的一半。",
+     "answer": "在Rt△ABC中，∠ACB＝90度，以AB为一条对角线作矩形ACBD，设两条对角线的交点为O；由矩形的对角线相等且互相平分，得OA＝OB＝OC，且O是AB的中点，所以斜边上的中线CO等于AB的一半。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "证法的要点是补出矩形，把直角三角形的问题转化为矩形对角线的问题，再用对角线相等且互相平分得到三条线段相等。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1070",
+   "page": 33,
+   "description": "菱形的定义、四条边相等与对角线互相垂直的性质定理、菱形面积与对角线的关系，以及菱形的两条判定定理",
+   "mastery_criteria": [
+    "能运用四条边相等、对角线互相垂直计算菱形中的线段与面积",
+    "能用四条边相等或对角线互相垂直判定一个四边形是菱形"
+   ],
+   "misconceptions": [
+    "认为对角线互相垂直的四边形就是菱形",
+    "把菱形的面积算成两条对角线长度和的一半"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p1070_q1",
+     "topicId": "mxj_p1070",
+     "prompt": "菱形具有而一般平行四边形不具有的性质是哪一条？",
+     "question": "菱形具有而一般平行四边形不具有的性质是哪一条？",
+     "options": [
+      {
+       "label": "A",
+       "text": "对角线互相垂直"
+      },
+      {
+       "label": "B",
+       "text": "对边平行"
+      },
+      {
+       "label": "C",
+       "text": "对角相等"
+      },
+      {
+       "label": "D",
+       "text": "对角线互相平分"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "菱形的性质定理2指出菱形的对角线互相垂直，这是一般平行四边形不具备的特殊性质。"
+    },
+    {
+     "id": "mxj_p1070_q2",
+     "topicId": "mxj_p1070",
+     "prompt": "菱形的四条边有什么关系？",
+     "question": "菱形的四条边有什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "只有两组对边分别相等"
+      },
+      {
+       "label": "B",
+       "text": "都相等"
+      },
+      {
+       "label": "C",
+       "text": "互不相等"
+      },
+      {
+       "label": "D",
+       "text": "只有一组邻边相等"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "菱形的性质定理1：菱形的四条边相等，它由菱形的定义与平行四边形的对边相等推出。"
+    },
+    {
+     "id": "mxj_p1070_q3",
+     "topicId": "mxj_p1070",
+     "prompt": "下列条件中，能判定四边形是菱形的是哪一个？",
+     "question": "下列条件中，能判定四边形是菱形的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "两条对角线相等的四边形"
+      },
+      {
+       "label": "B",
+       "text": "三个角是直角的四边形"
+      },
+      {
+       "label": "C",
+       "text": "四条边都相等的四边形"
+      },
+      {
+       "label": "D",
+       "text": "一组对边平行的四边形"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "菱形的判定定理1指出四条边都相等的四边形是菱形；判定定理2指出对角线互相垂直的平行四边形是菱形。"
+    },
+    {
+     "id": "mxj_p1070_q4",
+     "topicId": "mxj_p1070",
+     "prompt": "关于菱形的判定，下列说法正确的是哪一个？",
+     "question": "关于菱形的判定，下列说法正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "两条对角线互相垂直的四边形是菱形"
+      },
+      {
+       "label": "B",
+       "text": "对角线相等的平行四边形是菱形"
+      },
+      {
+       "label": "C",
+       "text": "四条边相等的四边形是矩形"
+      },
+      {
+       "label": "D",
+       "text": "两条对角线互相垂直的平行四边形是菱形"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "教材用反例指出，两条对角线互相垂直但两条对角线不互相平分的四边形不是平行四边形，因而不是菱形；而对角线互相垂直的平行四边形可由垂直平分推出邻边相等。"
+    },
+    {
+     "id": "mxj_p1070_q5",
+     "topicId": "mxj_p1070",
+     "prompt": "菱形的两条对角线长分别为4 cm和3 cm，求它的面积（单位：平方厘米）。",
+     "question": "菱形的两条对角线长分别为4 cm和3 cm，求它的面积（单位：平方厘米）。",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "菱形的面积等于两条对角线长度乘积的一半，即4×3÷2＝6，所以面积是6平方厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "mxj_p1070_q6",
+     "topicId": "mxj_p1070",
+     "prompt": "菱形ABCD的两条对角线AC＝6 cm，BD＝8 cm，求它的周长（单位：cm）。",
+     "question": "菱形ABCD的两条对角线AC＝6 cm，BD＝8 cm，求它的周长（单位：cm）。",
+     "answer": 20,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "菱形的对角线互相垂直且互相平分，得OA＝3，OB＝4，由勾股定理得边长AB＝5，所以周长为4×5＝20，即20 cm。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "mxj_p1070_q7",
+     "topicId": "mxj_p1070",
+     "prompt": "菱形的两条对角线除了互相平分之外，还具有怎样的位置关系？请填一个词。",
+     "question": "菱形的两条对角线除了互相平分之外，还具有怎样的位置关系？请填一个词。",
+     "answer": "互相垂直",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "菱形的性质定理2：菱形的对角线互相垂直，因此菱形的对角线互相垂直且互相平分。"
+    },
+    {
+     "id": "mxj_p1070_q8",
+     "topicId": "mxj_p1070",
+     "prompt": "在平行四边形ABCD中，AC＝6，BD＝8，AD＝5。求证：这个平行四边形是菱形，并求AB的长。",
+     "question": "在平行四边形ABCD中，AC＝6，BD＝8，AD＝5。求证：这个平行四边形是菱形，并求AB的长。",
+     "answer": "由平行四边形的对角线互相平分得OA＝3，OD＝4，而AD＝5满足AD的平方等于OA的平方加OD的平方，所以△DAO是直角三角形，角DOA＝90度，即BD垂直于AC；对角线互相垂直的平行四边形是菱形，因此AB＝AD＝5。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "先用勾股定理的逆定理判断对角线垂直，再用菱形的判定定理2得菱形，最后用菱形四条边相等求AB。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1071",
+   "page": 40,
+   "description": "正方形的定义、四条边相等且四个角是直角的性质、对角线相等且互相垂直平分，以及正方形的两种判定思路",
+   "mastery_criteria": [
+    "能根据正方形既是矩形又是菱形推出它的性质",
+    "能按先证矩形再证邻边相等或先证菱形再证直角的思路判定正方形"
+   ],
+   "misconceptions": [
+    "只证出一个角是直角就断定四边形是正方形",
+    "认为对角线相等的菱形不一定是正方形"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1071_q1",
+     "topicId": "mxj_p1071",
+     "prompt": "正方形的两条对角线具有怎样的关系？",
+     "question": "正方形的两条对角线具有怎样的关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "相等且互相垂直平分"
+      },
+      {
+       "label": "B",
+       "text": "只相等"
+      },
+      {
+       "label": "C",
+       "text": "只互相垂直"
+      },
+      {
+       "label": "D",
+       "text": "互相垂直但长度不等"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "正方形既是矩形又是菱形，兼有对角线相等与对角线互相垂直两条性质，又有平行四边形对角线互相平分的性质。"
+    },
+    {
+     "id": "mxj_p1071_q2",
+     "topicId": "mxj_p1071",
+     "prompt": "正方形是轴对称图形，它共有多少条对称轴？",
+     "question": "正方形是轴对称图形，它共有多少条对称轴？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1条"
+      },
+      {
+       "label": "B",
+       "text": "4条"
+      },
+      {
+       "label": "C",
+       "text": "2条"
+      },
+      {
+       "label": "D",
+       "text": "无数条"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两条对角线所在直线，以及过每一组对边中点的两条直线都是正方形的对称轴，共4条。"
+    },
+    {
+     "id": "mxj_p1071_q3",
+     "topicId": "mxj_p1071",
+     "prompt": "判定一个四边形是正方形，下列思路正确的是哪一个？",
+     "question": "判定一个四边形是正方形，下列思路正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "先证它是平行四边形，再证一组对边相等"
+      },
+      {
+       "label": "B",
+       "text": "先证它是梯形，再证两腰相等"
+      },
+      {
+       "label": "C",
+       "text": "先证它是矩形，再证一组邻边相等"
+      },
+      {
+       "label": "D",
+       "text": "先证它是菱形，再证有一组对边平行"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材指出两条判定思路：先判定是矩形，再判定有一组邻边相等；或先判定是菱形，再判定有一个角是直角。"
+    },
+    {
+     "id": "mxj_p1071_q4",
+     "topicId": "mxj_p1071",
+     "prompt": "如果一个矩形的两条对角线互相垂直，那么这个矩形一定是哪一种图形？",
+     "question": "如果一个矩形的两条对角线互相垂直，那么这个矩形一定是哪一种图形？",
+     "options": [
+      {
+       "label": "A",
+       "text": "一般的矩形"
+      },
+      {
+       "label": "B",
+       "text": "菱形但不是矩形"
+      },
+      {
+       "label": "C",
+       "text": "梯形"
+      },
+      {
+       "label": "D",
+       "text": "正方形"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "矩形对角线互相平分，若又互相垂直，则由垂直平分可推出邻边相等，即这个矩形也是菱形，因此它是正方形。"
+    },
+    {
+     "id": "mxj_p1071_q5",
+     "topicId": "mxj_p1071",
+     "prompt": "正方形的边长为3 cm，求它的面积（单位：平方厘米）。",
+     "question": "正方形的边长为3 cm，求它的面积（单位：平方厘米）。",
+     "answer": 9,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "正方形的四条边相等且四个角都是直角，面积等于边长的平方，即3×3＝9平方厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "mxj_p1071_q6",
+     "topicId": "mxj_p1071",
+     "prompt": "已知正方形的一条对角线长为6 cm，求它的面积（单位：平方厘米）。",
+     "question": "已知正方形的一条对角线长为6 cm，求它的面积（单位：平方厘米）。",
+     "answer": 18,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "正方形的对角线互相垂直平分，四条对角线的一半围成四个全等的等腰直角三角形，面积等于对角线平方的一半，即36÷2＝18平方厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 6}]}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "mxj_p1071_q7",
+     "topicId": "mxj_p1071",
+     "prompt": "正方形的四条边都相等，四个角都是什么角？请填一个词。",
+     "question": "正方形的四条边都相等，四个角都是什么角？请填一个词。",
+     "answer": "直角",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "正方形是有一个角是直角的菱形，也是有一组邻边相等的矩形，因此它的四个角都是直角。"
+    },
+    {
+     "id": "mxj_p1071_q8",
+     "topicId": "mxj_p1071",
+     "prompt": "已知点A′、B′、C′、D′分别是正方形ABCD四条边上的点，并且AA′＝BB′＝CC′＝DD′。请说明四边形A′B′C′D′为什么是正方形。",
+     "question": "已知点A′、B′、C′、D′分别是正方形ABCD四条边上的点，并且AA′＝BB′＝CC′＝DD′。请说明四边形A′B′C′D′为什么是正方形。",
+     "answer": "由AB＝BC及AA′＝BB′可得A′B＝B′C，又角B＝角C＝90度、BB′＝CC′，可证△BB′A′与△CC′B′全等，得B′A′＝C′B′；同理可得四条边相等，所以四边形A′B′C′D′是菱形；再由全等三角形的对应角关系可推出它的一个内角是90度，因此它是正方形。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "先证四条边相等得到菱形，再证一个角是直角，这是判定正方形常用的两步走思路。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1072",
+   "page": 54,
+   "description": "平面直角坐标系的建立、点的坐标与四个象限的符号特征、坐标轴上点的坐标特征，以及用方位角和距离描述平面上点的位置",
+   "mastery_criteria": [
+    "能由点的位置写出坐标，由坐标描出点并判断所在象限",
+    "能用方位角和距离描述两个物体的相对位置"
+   ],
+   "misconceptions": [
+    "把横坐标与纵坐标的次序颠倒",
+    "认为坐标轴上的点属于某个象限"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1072_q1",
+     "topicId": "mxj_p1072",
+     "prompt": "在平面直角坐标系中，点(-2,3)位于哪一个象限？",
+     "question": "在平面直角坐标系中，点(-2,3)位于哪一个象限？",
+     "options": [
+      {
+       "label": "A",
+       "text": "第二象限"
+      },
+      {
+       "label": "B",
+       "text": "第一象限"
+      },
+      {
+       "label": "C",
+       "text": "第三象限"
+      },
+      {
+       "label": "D",
+       "text": "第四象限"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "第一象限横纵坐标都为正，第二象限横坐标为负、纵坐标为正，故点(-2,3)在第二象限。"
+    },
+    {
+     "id": "mxj_p1072_q2",
+     "topicId": "mxj_p1072",
+     "prompt": "平面直角坐标系的原点O的坐标是什么？",
+     "question": "平面直角坐标系的原点O的坐标是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(1,0)"
+      },
+      {
+       "label": "B",
+       "text": "(0,0)"
+      },
+      {
+       "label": "C",
+       "text": "(0,1)"
+      },
+      {
+       "label": "D",
+       "text": "不存在"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "原点是横轴与纵轴的公共交点，它在两条坐标轴上的位置都是0，所以原点的坐标是(0,0)。"
+    },
+    {
+     "id": "mxj_p1072_q3",
+     "topicId": "mxj_p1072",
+     "prompt": "关于平面直角坐标系中的点，下列说法正确的是哪一个？",
+     "question": "关于平面直角坐标系中的点，下列说法正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "坐标轴上的点属于第一象限"
+      },
+      {
+       "label": "B",
+       "text": "x轴上的点横坐标为0"
+      },
+      {
+       "label": "C",
+       "text": "原点是两条坐标轴的交点"
+      },
+      {
+       "label": "D",
+       "text": "y轴上的点纵坐标不为0"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两条坐标轴的交点就是原点；x轴上的点纵坐标为0、y轴上的点横坐标为0，坐标轴上的点不属于任何一个象限。"
+    },
+    {
+     "id": "mxj_p1072_q4",
+     "topicId": "mxj_p1072",
+     "prompt": "小婷家在学校北偏西60度的方向上，那么学校在小婷家的什么方向上？",
+     "question": "小婷家在学校北偏西60度的方向上，那么学校在小婷家的什么方向上？",
+     "options": [
+      {
+       "label": "A",
+       "text": "北偏西60度方向"
+      },
+      {
+       "label": "B",
+       "text": "南偏西60度方向"
+      },
+      {
+       "label": "C",
+       "text": "北偏东60度方向"
+      },
+      {
+       "label": "D",
+       "text": "南偏东60度方向"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两个物体相互描述位置时方向正好相反、距离相同，北偏西60度的相反方向是南偏东60度。"
+    },
+    {
+     "id": "mxj_p1072_q5",
+     "topicId": "mxj_p1072",
+     "prompt": "某渔政船12时位于海岛正南方向、距海岛30海里的A处，以每小时20海里的速度向东航行，14时到达B处，求此时它与海岛的距离（单位：海里）。",
+     "question": "某渔政船12时位于海岛正南方向、距海岛30海里的A处，以每小时20海里的速度向东航行，14时到达B处，求此时它与海岛的距离（单位：海里）。",
+     "answer": 50,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "两小时航行了40海里，即AB＝40，而AC＝30且AC垂直于AB，在Rt△ABC中由勾股定理得BC＝50，所以此时渔政船与海岛相距50海里。",
+     "verify": "{\"type\": \"num\", \"value\": 50}"
+    },
+    {
+     "id": "mxj_p1072_q6",
+     "topicId": "mxj_p1072",
+     "prompt": "已知点P在第四象限，它到x轴的距离是2个单位长度，到y轴的距离是3个单位长度，则点P的坐标是什么？",
+     "question": "已知点P在第四象限，它到x轴的距离是2个单位长度，到y轴的距离是3个单位长度，则点P的坐标是什么？",
+     "answer": "(3,-2)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "到x轴的距离等于纵坐标的绝对值，到y轴的距离等于横坐标的绝对值；第四象限内横坐标为正、纵坐标为负，所以点P的坐标是(3,-2)。"
+    },
+    {
+     "id": "mxj_p1072_q7",
+     "topicId": "mxj_p1072",
+     "prompt": "已知点P(-m+1,2m-6)在第三象限，则m的取值范围是什么？",
+     "question": "已知点P(-m+1,2m-6)在第三象限，则m的取值范围是什么？",
+     "answer": "1＜m＜3",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "第三象限内点的横坐标与纵坐标都小于0，故－m＋1＜0且2m－6＜0，解得m＞1且m＜3，即1＜m＜3。"
+    },
+    {
+     "id": "mxj_p1072_q8",
+     "topicId": "mxj_p1072",
+     "prompt": "某中学校区平面示意图中，校门、图书馆、花坛、体育场、教学大楼、国旗杆、实验楼、体育馆的位置已用坐标表示。请说明建立坐标系的方法，并写出以校门为原点时各建筑的坐标。",
+     "question": "某中学校区平面示意图中，校门、图书馆、花坛、体育场、教学大楼、国旗杆、实验楼、体育馆的位置已用坐标表示。请说明建立坐标系的方法，并写出以校门为原点时各建筑的坐标。",
+     "answer": "以校门所在位置为原点，分别以正东、正北方向为x轴、y轴的正方向，取小方格边长为1个单位长度建立平面直角坐标系；此时校门(0,0)、图书馆(3,1)、花坛(3,4)、体育场(4,7)、教学大楼(0,7)、国旗杆(0,3)、实验楼(-4,6)、体育馆(-3,2)。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "教材以校门为原点建立坐标系表示校内各建筑的位置，说明用一对有序实数就能确定平面上点的位置，也说明坐标系选得恰当坐标才简明。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1073",
+   "page": 63,
+   "description": "在平面直角坐标系中用坐标表示正方形、矩形、三角形等简单图形，体会建系方式不同时同一点坐标也不同",
+   "mastery_criteria": [
+    "能为给定的简单图形建立适当的坐标系并写出各顶点坐标",
+    "能说明坐标系选择不同时同一点坐标不同的原因"
+   ],
+   "misconceptions": [
+    "建系后忘记标明坐标轴名称与单位长度",
+    "认为同一个点在所有坐标系中的坐标都相同"
+   ],
+   "type": "modeling",
+   "questions": [
+    {
+     "id": "mxj_p1073_q1",
+     "topicId": "mxj_p1073",
+     "prompt": "正方形ABCD的边长为6，以点B为原点，BC所在直线为x轴，BA所在直线为y轴建立坐标系，则点D的坐标是什么？",
+     "question": "正方形ABCD的边长为6，以点B为原点，BC所在直线为x轴，BA所在直线为y轴建立坐标系，则点D的坐标是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(6,6)"
+      },
+      {
+       "label": "B",
+       "text": "(6,0)"
+      },
+      {
+       "label": "C",
+       "text": "(0,6)"
+      },
+      {
+       "label": "D",
+       "text": "(3,3)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由BC＝6得点C的横坐标为6，由BA＝6得点A的纵坐标为6，点D在C的正上方、A的正右方，所以D(6,6)。"
+    },
+    {
+     "id": "mxj_p1073_q2",
+     "topicId": "mxj_p1073",
+     "prompt": "正方形ABCD的边长为6，以它的对称中心为原点、过对边中点的两条直线为坐标轴，若点A的坐标是(-3,3)，则点C的坐标是什么？",
+     "question": "正方形ABCD的边长为6，以它的对称中心为原点、过对边中点的两条直线为坐标轴，若点A的坐标是(-3,3)，则点C的坐标是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(3,3)"
+      },
+      {
+       "label": "B",
+       "text": "(3,-3)"
+      },
+      {
+       "label": "C",
+       "text": "(-3,-3)"
+      },
+      {
+       "label": "D",
+       "text": "(-3,3)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "正方形关于对称中心成中心对称，点C与点A关于原点对称，横纵坐标都互为相反数，故C(3,-3)。"
+    },
+    {
+     "id": "mxj_p1073_q3",
+     "topicId": "mxj_p1073",
+     "prompt": "矩形ABCD的长为8、宽为6，以点B为原点，BC所在直线为x轴，BA所在直线为y轴，则点D的坐标是什么？",
+     "question": "矩形ABCD的长为8、宽为6，以点B为原点，BC所在直线为x轴，BA所在直线为y轴，则点D的坐标是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(6,8)"
+      },
+      {
+       "label": "B",
+       "text": "(8,0)"
+      },
+      {
+       "label": "C",
+       "text": "(8,6)"
+      },
+      {
+       "label": "D",
+       "text": "(0,6)"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "BC＝8使点C的横坐标为8，AB＝6使点A的纵坐标为6，点D的横坐标与C相同、纵坐标与A相同，所以D(8,6)。"
+    },
+    {
+     "id": "mxj_p1073_q4",
+     "topicId": "mxj_p1073",
+     "prompt": "建立平面直角坐标系表示图形时，下列做法最恰当的是哪一个？",
+     "question": "建立平面直角坐标系表示图形时，下列做法最恰当的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "让图形尽量远离原点"
+      },
+      {
+       "label": "B",
+       "text": "使坐标轴穿过图形的内部"
+      },
+      {
+       "label": "C",
+       "text": "随意选取原点与单位长度"
+      },
+      {
+       "label": "D",
+       "text": "尽量使图形顶点落在坐标轴上，并使坐标成为整数"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "教材提示：坐标系构建不同则点的坐标不同，建系时应使点的坐标简明，所以常把顶点放在坐标轴上并让坐标取整数。"
+    },
+    {
+     "id": "mxj_p1073_q5",
+     "topicId": "mxj_p1073",
+     "prompt": "等腰△ABC的底边BC长为6，腰长为5，以BC的中点O为原点、BC所在直线为x轴建立坐标系，求顶点A的纵坐标。",
+     "question": "等腰△ABC的底边BC长为6，腰长为5，以BC的中点O为原点、BC所在直线为x轴建立坐标系，求顶点A的纵坐标。",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "点A在BC的垂直平分线上，OA是底边上的高，OB＝3，AB＝5，由勾股定理得OA＝4，所以点A的纵坐标是4。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 1}]}"
+    },
+    {
+     "id": "mxj_p1073_q6",
+     "topicId": "mxj_p1073",
+     "prompt": "某机器零件示意图中，以点O为原点、1个单位长度表示100 mm，四边形顶点A(-1,0)、B(4,0)、C(3,2)、D(0,2)，求线段AB的实际长度（单位：mm）。",
+     "question": "某机器零件示意图中，以点O为原点、1个单位长度表示100 mm，四边形顶点A(-1,0)、B(4,0)、C(3,2)、D(0,2)，求线段AB的实际长度（单位：mm）。",
+     "answer": 500,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "A、B两点的横坐标之差为5个单位长度，而每一个单位长度表示100 mm，所以AB＝5×100＝500 mm。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 100}]}"
+    },
+    {
+     "id": "mxj_p1073_q7",
+     "topicId": "mxj_p1073",
+     "prompt": "用平面直角坐标系表示同一个图形时，坐标系选择不同，各顶点的坐标是否相同？请填相同或不同。",
+     "question": "用平面直角坐标系表示同一个图形时，坐标系选择不同，各顶点的坐标是否相同？请填相同或不同。",
+     "answer": "不同",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "点的坐标由坐标系决定，原点位置或坐标轴方向改变后，同一个点的坐标随之改变，因此建系要适当。"
+    },
+    {
+     "id": "mxj_p1073_q8",
+     "topicId": "mxj_p1073",
+     "prompt": "菱形的边长为6，其中∠ABC＝45度。请说明怎样建立坐标系求出菱形的高，并写出高与面积的值。",
+     "question": "菱形的边长为6，其中∠ABC＝45度。请说明怎样建立坐标系求出菱形的高，并写出高与面积的值。",
+     "answer": "以顶点B为原点、BC所在直线为x轴建立平面直角坐标系，过点A作AE垂直BC，垂足为E；在Rt△ABE中，∠ABE＝45度，AB＝6，所以AE＝6×sin45度＝3√2，即菱形的高为3√2，面积为6×3√2＝18√2。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "把菱形的一边放在x轴上，用直角三角形的边角关系求高，再用底乘高求面积，这正是用坐标表示图形后计算面积的办法。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1074",
+   "page": 67,
+   "description": "点关于x轴、y轴对称的坐标规律，以及点沿坐标轴方向左右、上下平移时坐标的变化规律",
+   "mastery_criteria": [
+    "能写出点关于坐标轴对称的点的坐标",
+    "能用右加左减、上加下减的规律写出平移后对应点的坐标"
+   ],
+   "misconceptions": [
+    "把关于x轴对称与关于y轴对称的坐标变化弄反",
+    "左右平移时错误地改变纵坐标"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1074_q1",
+     "topicId": "mxj_p1074",
+     "prompt": "点A(-5,3)关于y轴对称的点的坐标是什么？",
+     "question": "点A(-5,3)关于y轴对称的点的坐标是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(5,3)"
+      },
+      {
+       "label": "B",
+       "text": "(-5,-3)"
+      },
+      {
+       "label": "C",
+       "text": "(5,-3)"
+      },
+      {
+       "label": "D",
+       "text": "(3,-5)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "关于y轴对称时纵坐标不变、横坐标互为相反数，所以点A(-5,3)的对应点是(5,3)。"
+    },
+    {
+     "id": "mxj_p1074_q2",
+     "topicId": "mxj_p1074",
+     "prompt": "点B(2,-3)关于x轴对称的点的坐标是什么？",
+     "question": "点B(2,-3)关于x轴对称的点的坐标是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(-2,-3)"
+      },
+      {
+       "label": "B",
+       "text": "(2,3)"
+      },
+      {
+       "label": "C",
+       "text": "(-2,3)"
+      },
+      {
+       "label": "D",
+       "text": "(2,-3)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "关于x轴对称时横坐标不变、纵坐标互为相反数，所以点B(2,-3)的对应点是(2,3)。"
+    },
+    {
+     "id": "mxj_p1074_q3",
+     "topicId": "mxj_p1074",
+     "prompt": "点P(a,b)关于y轴对称的点的坐标是什么？",
+     "question": "点P(a,b)关于y轴对称的点的坐标是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(a,-b)"
+      },
+      {
+       "label": "B",
+       "text": "(-a,-b)"
+      },
+      {
+       "label": "C",
+       "text": "(-a,b)"
+      },
+      {
+       "label": "D",
+       "text": "(b,a)"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材给出结论：点P(a,b)关于x轴的对称点是(a,-b)，关于y轴的对称点是(-a,b)。"
+    },
+    {
+     "id": "mxj_p1074_q4",
+     "topicId": "mxj_p1074",
+     "prompt": "将点P(a,b)向上平移k个单位长度，所得像的坐标是什么？",
+     "question": "将点P(a,b)向上平移k个单位长度，所得像的坐标是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(a+k,b)"
+      },
+      {
+       "label": "B",
+       "text": "(a-k,b)"
+      },
+      {
+       "label": "C",
+       "text": "(a,b-k)"
+      },
+      {
+       "label": "D",
+       "text": "(a,b+k)"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "上下平移只改变纵坐标：向上平移k个单位长度，纵坐标加k，横坐标不变，所以像的坐标是(a,b+k)。"
+    },
+    {
+     "id": "mxj_p1074_q5",
+     "topicId": "mxj_p1074",
+     "prompt": "将点P(3,-2)向下平移4个单位长度，所得像的纵坐标是多少？",
+     "question": "将点P(3,-2)向下平移4个单位长度，所得像的纵坐标是多少？",
+     "answer": -6,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "向下平移只改变纵坐标，且纵坐标减4，所以像的纵坐标是－2－4＝－6。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": -2}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "mxj_p1074_q6",
+     "topicId": "mxj_p1074",
+     "prompt": "点A(-1,2)向右平移2个单位长度，所得像的坐标是什么？",
+     "question": "点A(-1,2)向右平移2个单位长度，所得像的坐标是什么？",
+     "answer": "(1,2)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "点向右平移时横坐标加2、纵坐标不变，所以像的坐标是(1,2)。"
+    },
+    {
+     "id": "mxj_p1074_q7",
+     "topicId": "mxj_p1074",
+     "prompt": "四边形ABCD的顶点A(1,2)，将它先向下平移5个单位长度，再向左平移6个单位长度，所得像的对应顶点A′的坐标是什么？",
+     "question": "四边形ABCD的顶点A(1,2)，将它先向下平移5个单位长度，再向左平移6个单位长度，所得像的对应顶点A′的坐标是什么？",
+     "answer": "(-5,-3)",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "向下平移5个单位长度使纵坐标变为2－5＝－3，向左平移6个单位长度使横坐标变为1－6＝－5，所以A′的坐标是(-5,-3)。"
+    },
+    {
+     "id": "mxj_p1074_q8",
+     "topicId": "mxj_p1074",
+     "prompt": "动点从原点O出发，按向上、向右、向下、向右的方向依次平移，每次移动1个单位长度，依次得到点A1(0,1)、A2(1,1)、A3(1,0)、A4(2,0)、…。求点A2 032的坐标。",
+     "question": "动点从原点O出发，按向上、向右、向下、向右的方向依次平移，每次移动1个单位长度，依次得到点A1(0,1)、A2(1,1)、A3(1,0)、A4(2,0)、…。求点A2 032的坐标。",
+     "answer": "每移动4次为一个循环，横坐标增加2、纵坐标回到0。因为2 032等于4乘508，所以点A2 032的横坐标是2×508＝1 016，纵坐标是0，即A2 032(1 016,0)。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "先由前几个点找出循环规律：A4(2,0)、A8(4,0)，每4次移动横坐标加2并回到x轴，再用除法确定循环次数即可。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1075",
+   "page": 83,
+   "description": "变量与常量、函数的概念与自变量的取值范围、函数值，以及图象法、列表法、公式法三种表示函数关系的方法",
+   "mastery_criteria": [
+    "能判断给定的两个变量之间是否具有函数关系",
+    "能选择合适的表示法表示函数关系并求出相应的函数值"
+   ],
+   "misconceptions": [
+    "认为一个自变量的取值可以对应两个函数值",
+    "忽略实际问题中自变量的取值范围"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1075_q1",
+     "topicId": "mxj_p1075",
+     "prompt": "某型无人机以120 km/h的速度匀速飞行，飞行路程y（km）与飞行时间x（h）的关系式为y＝120x，其中常量是哪一个？",
+     "question": "某型无人机以120 km/h的速度匀速飞行，飞行路程y（km）与飞行时间x（h）的关系式为y＝120x，其中常量是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "速度120"
+      },
+      {
+       "label": "B",
+       "text": "路程y"
+      },
+      {
+       "label": "C",
+       "text": "时间x"
+      },
+      {
+       "label": "D",
+       "text": "路程与时间"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "飞行过程中速度固定不变，是常量；路程与时间都在变化，是变量，所以常量是速度120。"
+    },
+    {
+     "id": "mxj_p1075_q2",
+     "topicId": "mxj_p1075",
+     "prompt": "下列各组变量中，y不是x的函数的是哪一个？",
+     "question": "下列各组变量中，y不是x的函数的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y是正方形的周长，x是这个正方形的边长"
+      },
+      {
+       "label": "B",
+       "text": "y是一个正数的平方根，x是这个正数"
+      },
+      {
+       "label": "C",
+       "text": "y是一个正数的算术平方根，x是这个正数"
+      },
+      {
+       "label": "D",
+       "text": "y是飞行路程，x是飞行时间"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "一个正数有两个互为相反数的平方根，对于x的同一个取值y有两个值与它对应，不符合函数的定义，所以y不是x的函数。"
+    },
+    {
+     "id": "mxj_p1075_q3",
+     "topicId": "mxj_p1075",
+     "prompt": "用图象法表示函数关系的优点是什么？",
+     "question": "用图象法表示函数关系的优点是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "能方便地计算函数值"
+      },
+      {
+       "label": "B",
+       "text": "能清楚列出每一组对应值"
+      },
+      {
+       "label": "C",
+       "text": "能直观看出因变量随自变量的变化情况"
+      },
+      {
+       "label": "D",
+       "text": "不需要考虑自变量的取值范围"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材比较了三种表示法：图象法直观，列表法对应值清楚，公式法便于计算函数值，三者各有优点。"
+    },
+    {
+     "id": "mxj_p1075_q4",
+     "topicId": "mxj_p1075",
+     "prompt": "下列对函数概念的理解，正确的是哪一个？",
+     "question": "下列对函数概念的理解，正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x每取一个值，y可以有两个值与它对应"
+      },
+      {
+       "label": "B",
+       "text": "x可以任意取值而y保持不变"
+      },
+      {
+       "label": "C",
+       "text": "y的值由x唯一确定，但x不一定是自变量"
+      },
+      {
+       "label": "D",
+       "text": "对于x的每一个取值，y都有唯一确定的值与它对应"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "函数的本质是唯一对应：变量y随x变化，且对x的每一个取值y都有唯一确定的值与它对应，此时x是自变量、y是因变量。"
+    },
+    {
+     "id": "mxj_p1075_q5",
+     "topicId": "mxj_p1075",
+     "prompt": "已知等腰三角形的周长为10，底边长为y，腰长为x，则y关于x的函数表达式为y＝10－2x，当腰长为4时，底边长是多少？",
+     "question": "已知等腰三角形的周长为10，底边长为y，腰长为x，则y关于x的函数表达式为y＝10－2x，当腰长为4时，底边长是多少？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把腰长x＝4代入底边与腰长的函数表达式y＝10－2x，得y＝10－8＝2，所以这时底边长为2。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 4}]}]}"
+    },
+    {
+     "id": "mxj_p1075_q6",
+     "topicId": "mxj_p1075",
+     "prompt": "用边长为1的等边三角形依次拼接，所得图形的周长y与三角形个数n之间的表达式为y＝n＋2，当n＝50时，y的值是多少？",
+     "question": "用边长为1的等边三角形依次拼接，所得图形的周长y与三角形个数n之间的表达式为y＝n＋2，当n＝50时，y的值是多少？",
+     "answer": 52,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把三角形个数n＝50代入周长与个数的函数表达式y＝n＋2，得y＝50＋2＝52，所以所拼成图形的周长是52。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 50}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "mxj_p1075_q7",
+     "topicId": "mxj_p1075",
+     "prompt": "表示函数关系的方法有图象法、列表法和哪一种方法？",
+     "question": "表示函数关系的方法有图象法、列表法和哪一种方法？",
+     "answer": "公式法",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "教材指出可以用图象法、列表法、公式法表示两个变量之间的函数关系，用式子表示函数关系的方法称为公式法。"
+    },
+    {
+     "id": "mxj_p1075_q8",
+     "topicId": "mxj_p1075",
+     "prompt": "等腰三角形的底角度数为x，顶角度数为y。写出y随x变化的函数表达式及自变量x的取值范围，并求x＝30度时y的值。",
+     "question": "等腰三角形的底角度数为x，顶角度数为y。写出y随x变化的函数表达式及自变量x的取值范围，并求x＝30度时y的值。",
+     "answer": "由三角形内角和为180度得y＝180－2x；因为底角为正且两个底角之和小于180度，所以0＜x＜90；当x＝30度时，y＝180－2×30＝120度。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "列函数表达式要依据几何关系，确定自变量的取值范围要考虑实际意义：底角必须为正，同时两个底角之和要小于180度。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1076",
+   "page": 92,
+   "description": "一次函数与正比例函数的定义、一次函数因变量随自变量均匀变化的特征，以及实际问题中自变量取值范围的确定",
+   "mastery_criteria": [
+    "能识别一次函数与正比例函数并指出k、b的值",
+    "能根据实际情境写出一次函数表达式并确定自变量的取值范围"
+   ],
+   "misconceptions": [
+    "忽略一次函数中k不等于0的条件",
+    "认为正比例函数不是一次函数"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1076_q1",
+     "topicId": "mxj_p1076",
+     "prompt": "下列函数中，是正比例函数的是哪一个？",
+     "question": "下列函数中，是正比例函数的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y＝2x"
+      },
+      {
+       "label": "B",
+       "text": "y＝2x＋1"
+      },
+      {
+       "label": "C",
+       "text": "y＝x的平方"
+      },
+      {
+       "label": "D",
+       "text": "y＝x分之2"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "形如y＝kx＋b（k不等于0）的函数是一次函数，当b＝0时y＝kx也叫作正比例函数，所以y＝2x是正比例函数。"
+    },
+    {
+     "id": "mxj_p1076_q2",
+     "topicId": "mxj_p1076",
+     "prompt": "当一次函数y＝kx＋b中b等于0时，这个函数也叫作什么函数？",
+     "question": "当一次函数y＝kx＋b中b等于0时，这个函数也叫作什么函数？",
+     "options": [
+      {
+       "label": "A",
+       "text": "二次函数"
+      },
+      {
+       "label": "B",
+       "text": "正比例函数"
+      },
+      {
+       "label": "C",
+       "text": "反比例函数"
+      },
+      {
+       "label": "D",
+       "text": "常函数"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材指出：特别地，当b＝0时，一次函数y＝kx（k为常数，k不等于0）也叫作正比例函数。"
+    },
+    {
+     "id": "mxj_p1076_q3",
+     "topicId": "mxj_p1076",
+     "prompt": "一列高铁以350 km/h的速度匀速行驶，离开A地的距离y（km）与时间x（h）的关系式为y＝350x，其中k的值是多少？",
+     "question": "一列高铁以350 km/h的速度匀速行驶，离开A地的距离y（km）与时间x（h）的关系式为y＝350x，其中k的值是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "0"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "350"
+      },
+      {
+       "label": "D",
+       "text": "x"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把y＝350x与y＝kx对照，可知k＝350，它表示高铁每小时行驶350 km，即因变量随自变量均匀增加的数量。"
+    },
+    {
+     "id": "mxj_p1076_q4",
+     "topicId": "mxj_p1076",
+     "prompt": "下列函数关系中，成正比例函数关系的是哪一个？",
+     "question": "下列函数关系中，成正比例函数关系的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "正方体的体积与它的棱长"
+      },
+      {
+       "label": "B",
+       "text": "面积一定的菱形的两条对角线长"
+      },
+      {
+       "label": "C",
+       "text": "圆的面积与它的半径"
+      },
+      {
+       "label": "D",
+       "text": "正方形的周长与它的边长"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "正方形的周长等于边长的4倍，形如y＝4x，是正比例函数；正方体体积与棱长是三次关系，圆面积与半径是二次关系。"
+    },
+    {
+     "id": "mxj_p1076_q5",
+     "topicId": "mxj_p1076",
+     "prompt": "某弹簧秤的弹簧原长为10 cm，每挂1 kg物体弹簧伸长0.5 cm，弹簧长度y（cm）与所挂物体质量x（kg）的关系为y＝10＋0.5x，当x＝4时y的值是多少？",
+     "question": "某弹簧秤的弹簧原长为10 cm，每挂1 kg物体弹簧伸长0.5 cm，弹簧长度y（cm）与所挂物体质量x（kg）的关系为y＝10＋0.5x，当x＝4时y的值是多少？",
+     "answer": 12,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把所挂物体的质量x＝4代入弹簧长度与质量的函数表达式y＝10＋0.5x，得y＝10＋2＝12，所以弹簧的长度是12 cm。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 0.5}, {\"type\": \"num\", \"value\": 4}]}]}"
+    },
+    {
+     "id": "mxj_p1076_q6",
+     "topicId": "mxj_p1076",
+     "prompt": "海拔每升高1 km气温下降约6度，甲地地面气温为20度，高出地面x km处的气温y＝20－6x。当飞机外面的气温为－34度时，飞机离地面的高度是多少千米？",
+     "question": "海拔每升高1 km气温下降约6度，甲地地面气温为20度，高出地面x km处的气温y＝20－6x。当飞机外面的气温为－34度时，飞机离地面的高度是多少千米？",
+     "answer": 9,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由20－6x＝－34得6x＝54，解得x＝9，所以飞机离地面的高度是9 km。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 54}, {\"type\": \"num\", \"value\": 6}]}"
+    },
+    {
+     "id": "mxj_p1076_q7",
+     "topicId": "mxj_p1076",
+     "prompt": "某小区住房物业服务费为每月1.6元每平方米，有车位的业主每月另交30元。某业主有一个车位、住房面积为x平方米，每月应缴费用y＝1.6x＋30，当y＝254时，x的值是多少？",
+     "question": "某小区住房物业服务费为每月1.6元每平方米，有车位的业主每月另交30元。某业主有一个车位、住房面积为x平方米，每月应缴费用y＝1.6x＋30，当y＝254时，x的值是多少？",
+     "answer": "140",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "把y＝254代入y＝1.6x＋30，得1.6x＝224，解得x＝140，即这位业主的住房面积是140平方米。"
+    },
+    {
+     "id": "mxj_p1076_q8",
+     "topicId": "mxj_p1076",
+     "prompt": "某种储蓄的月利率是0.16%，存入1 000元本金。求本息和y（元）与所存月数x之间的函数关系式，并判断y是不是x的一次函数。",
+     "question": "某种储蓄的月利率是0.16%，存入1 000元本金。求本息和y（元）与所存月数x之间的函数关系式，并判断y是不是x的一次函数。",
+     "answer": "每月利息为1 000×0.16%＝1.6元，所以y＝1 000＋1.6x。它形如y＝kx＋b，其中k＝1.6、b＝1 000，因此y是x的一次函数。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "利息等于本金乘月利率乘月数，本息和等于本金加利息，写出表达式后与一次函数的一般形式对照即可判断。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1077",
+   "page": 96,
+   "description": "正比例函数与一次函数图象的画法，k的符号对图象位置和增减性的影响，图象与y轴交点的坐标，以及平移对图象的影响",
+   "mastery_criteria": [
+    "能用两点法画出一次函数的图象",
+    "能由k、b的符号判断图象经过的象限与函数值的增减性"
+   ],
+   "misconceptions": [
+    "认为k大于0时直线从左向右下降",
+    "把图象与y轴交点的横坐标当成b"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1077_q1",
+     "topicId": "mxj_p1077",
+     "prompt": "正比例函数y＝2x的图象经过哪些象限？",
+     "question": "正比例函数y＝2x的图象经过哪些象限？",
+     "options": [
+      {
+       "label": "A",
+       "text": "第一、三象限"
+      },
+      {
+       "label": "B",
+       "text": "第一、二象限"
+      },
+      {
+       "label": "C",
+       "text": "第二、四象限"
+      },
+      {
+       "label": "D",
+       "text": "第三、四象限"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "k＝2大于0，当x大于0时y大于0，当x小于0时y小于0，图象上的点在第一、三象限，直线从左向右上升。"
+    },
+    {
+     "id": "mxj_p1077_q2",
+     "topicId": "mxj_p1077",
+     "prompt": "对于一次函数y＝kx＋b，当k小于0时，函数值y随自变量x的增大而怎样变化？",
+     "question": "对于一次函数y＝kx＋b，当k小于0时，函数值y随自变量x的增大而怎样变化？",
+     "options": [
+      {
+       "label": "A",
+       "text": "增大"
+      },
+      {
+       "label": "B",
+       "text": "减小"
+      },
+      {
+       "label": "C",
+       "text": "不变"
+      },
+      {
+       "label": "D",
+       "text": "先增后减"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "k小于0时，直线y＝kx＋b从左向右下降，所以函数值y随自变量x的增大而减小。"
+    },
+    {
+     "id": "mxj_p1077_q3",
+     "topicId": "mxj_p1077",
+     "prompt": "关于一次函数y＝kx＋b的图象，下列说法正确的是哪一个？",
+     "question": "关于一次函数y＝kx＋b的图象，下列说法正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "图象与x轴交点的横坐标是b"
+      },
+      {
+       "label": "B",
+       "text": "图象一定经过原点"
+      },
+      {
+       "label": "C",
+       "text": "图象与y轴交点的纵坐标是b"
+      },
+      {
+       "label": "D",
+       "text": "图象与直线y＝kx一定不重合"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "令x＝0得y＝b，所以图象与y轴的交点坐标是(0,b)；当b＝0时图象过原点，且与直线y＝kx重合。"
+    },
+    {
+     "id": "mxj_p1077_q4",
+     "topicId": "mxj_p1077",
+     "prompt": "已知正比例函数y＝kx的函数值y随x的增大而增大，则一次函数y＝x＋k的图象大致经过哪些象限？",
+     "question": "已知正比例函数y＝kx的函数值y随x的增大而增大，则一次函数y＝x＋k的图象大致经过哪些象限？",
+     "options": [
+      {
+       "label": "A",
+       "text": "第一、二、四象限"
+      },
+      {
+       "label": "B",
+       "text": "第一、三、四象限"
+      },
+      {
+       "label": "C",
+       "text": "第二、三、四象限"
+      },
+      {
+       "label": "D",
+       "text": "第一、二、三象限"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由y＝kx中y随x增大而增大得k大于0，于是y＝x＋k中x的系数为1、常数项k大于0，直线从左向右上升且与y轴交于正半轴，经过第一、二、三象限。"
+    },
+    {
+     "id": "mxj_p1077_q5",
+     "topicId": "mxj_p1077",
+     "prompt": "求一次函数y＝3x－5的图象与y轴交点的纵坐标。",
+     "question": "求一次函数y＝3x－5的图象与y轴交点的纵坐标。",
+     "answer": -5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "令x＝0，得y＝－5，所以图象与y轴交点的坐标是(0,-5)，纵坐标为－5。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 0}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "mxj_p1077_q6",
+     "topicId": "mxj_p1077",
+     "prompt": "将直线y＝3x向下平移2个单位长度，得到的直线是什么？",
+     "question": "将直线y＝3x向下平移2个单位长度，得到的直线是什么？",
+     "answer": "y＝3x－2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "b小于0时，把y＝kx的图象沿y轴向下平移b的绝对值个单位长度，所以直线y＝3x向下平移2个单位长度得到的直线是y＝3x－2。"
+    },
+    {
+     "id": "mxj_p1077_q7",
+     "topicId": "mxj_p1077",
+     "prompt": "将直线y＝－x－5向上平移5个单位长度，得到的直线是什么？",
+     "question": "将直线y＝－x－5向上平移5个单位长度，得到的直线是什么？",
+     "answer": "y＝－x",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "向上平移5个单位长度相当于常数项加5，即y＝－x－5＋5，化简得y＝－x，此时直线经过原点。"
+    },
+    {
+     "id": "mxj_p1077_q8",
+     "topicId": "mxj_p1077",
+     "prompt": "函数y＝2的图象是什么形状？它与x轴、y轴分别有怎样的位置关系？",
+     "question": "函数y＝2的图象是什么形状？它与x轴、y轴分别有怎样的位置关系？",
+     "answer": "y＝2的图象是一条与x轴平行、与y轴垂直的直线，它经过点(0,2)，这条直线上所有点的纵坐标都等于2，因此它与x轴没有交点。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "像y＝2这样不论自变量取何值函数值都不变的函数叫常函数，它的图象是平行于x轴的一条直线。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1078",
+   "description": "用待定系数法确定一次函数表达式的步骤：设表达式、代入条件、解方程组求系数、写出表达式",
+   "mastery_criteria": [
+    "能设出y＝kx＋b并代入两点坐标解出k、b",
+    "能根据实际问题的两组对应值求出一次函数表达式"
+   ],
+   "misconceptions": [
+    "代入两点坐标时把横坐标与纵坐标的顺序弄反",
+    "认为确定正比例函数的表达式也需要两个条件"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1078_q1",
+     "topicId": "mxj_p1078",
+     "prompt": "用待定系数法求一次函数的表达式时，一般先设函数表达式为什么形式？",
+     "question": "用待定系数法求一次函数的表达式时，一般先设函数表达式为什么形式？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y＝kx＋b"
+      },
+      {
+       "label": "B",
+       "text": "y＝kx的平方"
+      },
+      {
+       "label": "C",
+       "text": "y＝x分之k"
+      },
+      {
+       "label": "D",
+       "text": "y＝ax的平方加bx加c"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "一次函数的一般形式是y＝kx＋b，用待定系数法求表达式时先设出这个形式，再求待定的系数k与b。"
+    },
+    {
+     "id": "mxj_p1078_q2",
+     "topicId": "mxj_p1078",
+     "prompt": "确定一个正比例函数的表达式，通常需要几个独立条件？",
+     "question": "确定一个正比例函数的表达式，通常需要几个独立条件？",
+     "options": [
+      {
+       "label": "A",
+       "text": "0个"
+      },
+      {
+       "label": "B",
+       "text": "1个"
+      },
+      {
+       "label": "C",
+       "text": "2个"
+      },
+      {
+       "label": "D",
+       "text": "3个"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "正比例函数y＝kx中只有一个待定系数k，所以只要知道图象经过的一个点，就能求出k，即只需一个条件。"
+    },
+    {
+     "id": "mxj_p1078_q3",
+     "topicId": "mxj_p1078",
+     "prompt": "某种收割机的油箱可储油40 L，剩余油量y（L）与工作时间x（h）的关系为y＝－5x＋40，一箱油可供收割机工作多少小时？",
+     "question": "某种收割机的油箱可储油40 L，剩余油量y（L）与工作时间x（h）的关系为y＝－5x＋40，一箱油可供收割机工作多少小时？",
+     "options": [
+      {
+       "label": "A",
+       "text": "5 h"
+      },
+      {
+       "label": "B",
+       "text": "40 h"
+      },
+      {
+       "label": "C",
+       "text": "8 h"
+      },
+      {
+       "label": "D",
+       "text": "45 h"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "油用完时y＝0，由－5x＋40＝0解得x＝8，所以一箱油可供收割机工作8 h。"
+    },
+    {
+     "id": "mxj_p1078_q4",
+     "topicId": "mxj_p1078",
+     "prompt": "通过先设定函数表达式，再根据条件确定表达式中的未知系数，从而求出函数表达式的方法叫作什么？",
+     "question": "通过先设定函数表达式，再根据条件确定表达式中的未知系数，从而求出函数表达式的方法叫作什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "配方法"
+      },
+      {
+       "label": "B",
+       "text": "换元法"
+      },
+      {
+       "label": "C",
+       "text": "消元法"
+      },
+      {
+       "label": "D",
+       "text": "待定系数法"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "教材给出待定系数法的定义：先设定函数表达式（确定函数模型），再根据条件确定表达式中的未知系数，从而求出函数表达式。"
+    },
+    {
+     "id": "mxj_p1078_q5",
+     "topicId": "mxj_p1078",
+     "prompt": "已知正比例函数的图象经过点M(-1,5)，则它的表达式为y＝－5x。当x＝2时，y的值是多少？",
+     "question": "已知正比例函数的图象经过点M(-1,5)，则它的表达式为y＝－5x。当x＝2时，y的值是多少？",
+     "answer": -10,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "用待定系数法求得表达式后，把x＝2代入y＝－5x，得y＝－10，所以当x＝2时函数值是－10。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": -5}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "mxj_p1078_q6",
+     "topicId": "mxj_p1078",
+     "prompt": "摄氏温度x与华氏温度y之间的函数表达式为y＝1.8x＋32，当摄氏温度为30度时，华氏温度是多少度？",
+     "question": "摄氏温度x与华氏温度y之间的函数表达式为y＝1.8x＋32，当摄氏温度为30度时，华氏温度是多少度？",
+     "answer": 86,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由摄氏温度换算华氏温度，把x＝30代入y＝1.8x＋32，得y＝54＋32＝86，所以华氏温度是86度。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 1.8}, {\"type\": \"num\", \"value\": 30}]}, {\"type\": \"num\", \"value\": 32}]}"
+    },
+    {
+     "id": "mxj_p1078_q7",
+     "topicId": "mxj_p1078",
+     "prompt": "已知y－3与x成正比例，且当x＝2时y＝7，则y关于x的表达式为y＝2x＋3。当x＝－0.5时，y的值是多少？",
+     "question": "已知y－3与x成正比例，且当x＝2时y＝7，则y关于x的表达式为y＝2x＋3。当x＝－0.5时，y的值是多少？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "先由条件求出表达式y＝2x＋3，再把x＝－0.5代入，得y＝－1＋3＝2，所以当x＝－0.5时函数值是2。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": -0.5}]}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "mxj_p1078_q8",
+     "topicId": "mxj_p1078",
+     "prompt": "请写出用待定系数法求一次函数表达式的四个步骤。",
+     "question": "请写出用待定系数法求一次函数表达式的四个步骤。",
+     "answer": "第一步，设函数表达式为y＝kx＋b；第二步，把图象上两个点的坐标代入，得到关于k、b的二元一次方程组；第三步，解这个方程组求出k与b的值；第四步，把k、b的值代回所设表达式，写出函数表达式。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "四步的核心是设、代、解、写：设出一般形式，代入已知条件，解方程组求系数，最后写出表达式并检验。"
+    }
+   ],
+   "page": null
+  },
+  {
+   "id": "mxj_p1079",
+   "page": 108,
+   "description": "一次函数与二元一次方程的关系：方程的解为坐标的点构成直线，直线与坐标轴交点的坐标，以及由直线求对应的二元一次方程",
+   "mastery_criteria": [
+    "能把二元一次方程化为一次函数并画出它表示的直线",
+    "能求一次函数图象与x轴、y轴的交点坐标"
+   ],
+   "misconceptions": [
+    "认为二元一次方程只有一个解",
+    "把直线与y轴交点的坐标写成(b,0)"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p1079_q1",
+     "topicId": "mxj_p1079",
+     "prompt": "把二元一次方程2x＋y－9＝0中的y用含x的式子表示，可以得到哪一个一次函数？",
+     "question": "把二元一次方程2x＋y－9＝0中的y用含x的式子表示，可以得到哪一个一次函数？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y＝－2x＋9"
+      },
+      {
+       "label": "B",
+       "text": "y＝2x－9"
+      },
+      {
+       "label": "C",
+       "text": "y＝2x＋9"
+      },
+      {
+       "label": "D",
+       "text": "y＝－2x－9"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由2x＋y－9＝0移项得y＝－2x＋9，把x看作自变量、y看作因变量，就得到一次函数y＝－2x＋9。"
+    },
+    {
+     "id": "mxj_p1079_q2",
+     "topicId": "mxj_p1079",
+     "prompt": "(4,1)是不是二元一次方程2x＋y－9＝0的解？",
+     "question": "(4,1)是不是二元一次方程2x＋y－9＝0的解？",
+     "options": [
+      {
+       "label": "A",
+       "text": "不是"
+      },
+      {
+       "label": "B",
+       "text": "是"
+      },
+      {
+       "label": "C",
+       "text": "无法判断"
+      },
+      {
+       "label": "D",
+       "text": "只有x＝4时才是"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把x＝4、y＝1代入左边得2×4＋1－9＝0，左右两边相等，所以(4,1)是这个方程的解。"
+    },
+    {
+     "id": "mxj_p1079_q3",
+     "topicId": "mxj_p1079",
+     "prompt": "关于x、y的二元一次方程kx－y＋b＝0（k不等于0）表示的直线与x轴的交点坐标是什么？",
+     "question": "关于x、y的二元一次方程kx－y＋b＝0（k不等于0）表示的直线与x轴的交点坐标是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(0,b)"
+      },
+      {
+       "label": "B",
+       "text": "(b,0)"
+      },
+      {
+       "label": "C",
+       "text": "(-k分之b,0)"
+      },
+      {
+       "label": "D",
+       "text": "(0,-k分之b)"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "直线与x轴交点的纵坐标为0，由kx＋b＝0解得x＝－k分之b，所以交点坐标是(-k分之b,0)，即横坐标是负的k分之b。"
+    },
+    {
+     "id": "mxj_p1079_q4",
+     "topicId": "mxj_p1079",
+     "prompt": "下列直线中，直线上每个点的坐标都是二元一次方程x－2y＝2的解的是哪一条？",
+     "question": "下列直线中，直线上每个点的坐标都是二元一次方程x－2y＝2的解的是哪一条？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y＝2x－2"
+      },
+      {
+       "label": "B",
+       "text": "y＝0.5x＋1"
+      },
+      {
+       "label": "C",
+       "text": "y＝2x＋1"
+      },
+      {
+       "label": "D",
+       "text": "y＝0.5x－1"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由x－2y＝2得2y＝x－2，即y＝0.5x－1，所以这条直线上的点的坐标都满足该方程。"
+    },
+    {
+     "id": "mxj_p1079_q5",
+     "topicId": "mxj_p1079",
+     "prompt": "求二元一次方程6x－y＋9＝0表示的直线与x轴交点的横坐标。",
+     "question": "求二元一次方程6x－y＋9＝0表示的直线与x轴交点的横坐标。",
+     "answer": -1.5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "令y＝0得6x＋9＝0，解得x＝－1.5，所以直线与x轴交点的横坐标是－1.5。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": -9}, {\"type\": \"num\", \"value\": 6}]}"
+    },
+    {
+     "id": "mxj_p1079_q6",
+     "topicId": "mxj_p1079",
+     "prompt": "求二元一次方程1.5x＋y＋6＝0表示的直线与y轴交点的坐标。",
+     "question": "求二元一次方程1.5x＋y＋6＝0表示的直线与y轴交点的坐标。",
+     "answer": "(0,-6)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "令x＝0得y＋6＝0，解得y＝－6，所以这条直线与y轴交点的坐标是(0,-6)。"
+    },
+    {
+     "id": "mxj_p1079_q7",
+     "topicId": "mxj_p1079",
+     "prompt": "二元一次方程3x－2y＝1表示的直线与经过A(a,1)、B(-1,b)两点的直线重合，求a的值。",
+     "question": "二元一次方程3x－2y＝1表示的直线与经过A(a,1)、B(-1,b)两点的直线重合，求a的值。",
+     "answer": "1",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "点A(a,1)在直线3x－2y＝1上，代入得3a－2＝1，解得a＝1，所以a的值是1。"
+    },
+    {
+     "id": "mxj_p1079_q8",
+     "topicId": "mxj_p1079",
+     "prompt": "在平面直角坐标系中，分别画出二元一次方程x＋y＝0与2x＋y＋2＝0表示的直线，并求这两条直线与x轴所围成的三角形的面积。",
+     "question": "在平面直角坐标系中，分别画出二元一次方程x＋y＝0与2x＋y＋2＝0表示的直线，并求这两条直线与x轴所围成的三角形的面积。",
+     "answer": "把两个方程化为y＝－x与y＝－2x－2，它们的交点由方程组解得为(-2,2)；两条直线与x轴的交点分别是(0,0)和(-1,0)，所以三角形的一边长为1，这边上的高为2，面积为1。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "求两直线与x轴围成的三角形面积，先求两直线的交点，再求各自与x轴的交点，最后用底乘高的一半计算。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1080",
+   "page": 112,
+   "description": "用一次函数模型解决实际问题：由数据求表达式、估计与预测、追及与方案比较、阶梯收费等分段问题",
+   "mastery_criteria": [
+    "能从实际问题中找出两个变量的两组对应值并求出一次函数表达式",
+    "能用一次函数的图象与表达式解释实际问题并作出判断"
+   ],
+   "misconceptions": [
+    "把一次函数模型任意外推作长期预测",
+    "分段计费问题中忘记判断用电量落在哪一段"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "mxj_p1080_q1",
+     "topicId": "mxj_p1080",
+     "prompt": "身高y（cm）与指尖距x（cm）之间的函数表达式为y＝9x－20，若李华的指尖距为22 cm，则他的身高大约是多少？",
+     "question": "身高y（cm）与指尖距x（cm）之间的函数表达式为y＝9x－20，若李华的指尖距为22 cm，则他的身高大约是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "178 cm"
+      },
+      {
+       "label": "B",
+       "text": "184 cm"
+      },
+      {
+       "label": "C",
+       "text": "170 cm"
+      },
+      {
+       "label": "D",
+       "text": "198 cm"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "已知李华的指尖距为22 cm，把x＝22代入身高与指尖距的表达式y＝9x－20，得y＝198－20＝178，所以他的身高大约是178 cm。"
+    },
+    {
+     "id": "mxj_p1080_q2",
+     "topicId": "mxj_p1080",
+     "prompt": "在身高与指尖距的关系y＝9x－20中，指尖距每增加1 cm，身高增加多少？",
+     "question": "在身高与指尖距的关系y＝9x－20中，指尖距每增加1 cm，身高增加多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 cm"
+      },
+      {
+       "label": "B",
+       "text": "9 cm"
+      },
+      {
+       "label": "C",
+       "text": "20 cm"
+      },
+      {
+       "label": "D",
+       "text": "151 cm"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "一次函数的因变量随自变量的变化是均匀的，x的系数是9，所以指尖距每增加1 cm，身高增加9 cm。"
+    },
+    {
+     "id": "mxj_p1080_q3",
+     "topicId": "mxj_p1080",
+     "prompt": "阶梯电价问题中，电费y与用电量x之间的函数图象是什么形状？",
+     "question": "阶梯电价问题中，电费y与用电量x之间的函数图象是什么形状？",
+     "options": [
+      {
+       "label": "A",
+       "text": "一条直线"
+      },
+      {
+       "label": "B",
+       "text": "一条曲线"
+      },
+      {
+       "label": "C",
+       "text": "由两条线段拼接而成"
+      },
+      {
+       "label": "D",
+       "text": "一条射线"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "用电量不超过200千瓦时与超过200千瓦时对应两个不同的一次函数，所以图象由两条线段拼接而成。"
+    },
+    {
+     "id": "mxj_p1080_q4",
+     "topicId": "mxj_p1080",
+     "prompt": "用一次函数模型对奥运纪录作预测时，下列说法正确的是哪一个？",
+     "question": "用一次函数模型对奥运纪录作预测时，下列说法正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "建立的函数模型可以无限期外推"
+      },
+      {
+       "label": "B",
+       "text": "只要模型是直线，预测就一定准确"
+      },
+      {
+       "label": "C",
+       "text": "远离已知数据时预测值一定偏小"
+      },
+      {
+       "label": "D",
+       "text": "用远离已知数据的函数模型作预测是不可靠的"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "教材用撑竿跳高的数据说明：由少量数据建立的一次函数模型远离已知数据时，预测值与实际纪录相差很大，因此这种外推不可靠。"
+    },
+    {
+     "id": "mxj_p1080_q5",
+     "topicId": "mxj_p1080",
+     "prompt": "某户居民某月用电220千瓦时。规定用电量不超过200千瓦时时按0.6元每千瓦时收费，超过部分每千瓦时加收0.3元，求该户应缴电费（单位：元）。",
+     "question": "某户居民某月用电220千瓦时。规定用电量不超过200千瓦时时按0.6元每千瓦时收费，超过部分每千瓦时加收0.3元，求该户应缴电费（单位：元）。",
+     "answer": 138,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "超过200千瓦时的部分为20千瓦时，按0.9元每千瓦时收费，所以电费为200×0.6＋20×0.9＝120＋18＝138元。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 200}, {\"type\": \"num\", \"value\": 0.6}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 20}, {\"type\": \"num\", \"value\": 0.9}]}]}"
+    },
+    {
+     "id": "mxj_p1080_q6",
+     "topicId": "mxj_p1080",
+     "prompt": "某种蟋蟀1 min叫的次数y与气温t（度）近似为一次函数关系，15度时叫84次，17度时叫98次。若蟋蟀1 min叫了63次，当时的气温大约是多少度？",
+     "question": "某种蟋蟀1 min叫的次数y与气温t（度）近似为一次函数关系，15度时叫84次，17度时叫98次。若蟋蟀1 min叫了63次，当时的气温大约是多少度？",
+     "answer": 12,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由两组数据求得y＝7t－21；令y＝63得7t＝84，解得t＝12，所以当时气温大约是12度。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 84}, {\"type\": \"num\", \"value\": 7}]}"
+    },
+    {
+     "id": "mxj_p1080_q7",
+     "topicId": "mxj_p1080",
+     "prompt": "某食品公司购买柑橘，甲方案每千克9元由基地送货上门，乙方案每千克8元但需自付运输费5 000元。若购买5 100 kg，按乙方案应付款多少元？",
+     "question": "某食品公司购买柑橘，甲方案每千克9元由基地送货上门，乙方案每千克8元但需自付运输费5 000元。若购买5 100 kg，按乙方案应付款多少元？",
+     "answer": 45800,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "乙方案的付款额为8×5 100＋5 000＝40 800＋5 000＝45 800元；此时甲方案需9×5 100＝45 900元，所以乙方案付款较少。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"num\", \"value\": 5100}]}, {\"type\": \"num\", \"value\": 5000}]}"
+    },
+    {
+     "id": "mxj_p1080_q8",
+     "topicId": "mxj_p1080",
+     "prompt": "甲、乙两地相距40 km，小徐8:00骑自行车从甲地去乙地，平均车速8 km/h；小李10:00坐公共汽车也从甲地去乙地，平均车速40 km/h。设小徐所用时间为x h，分别写出两人离甲地的距离与x的函数表达式，并说明谁先到达乙地。",
+     "question": "甲、乙两地相距40 km，小徐8:00骑自行车从甲地去乙地，平均车速8 km/h；小李10:00坐公共汽车也从甲地去乙地，平均车速40 km/h。设小徐所用时间为x h，分别写出两人离甲地的距离与x的函数表达式，并说明谁先到达乙地。",
+     "answer": "小徐：y1＝8x，自变量取值范围是0≤x≤5；小李比小徐晚出发2 h，所用时间为(x－2) h，故y2＝40(x－2)，自变量取值范围是2≤x≤3。画在同一坐标系中，作与x轴平行的直线y＝40，它先与y2的图象相交，说明小李先到达乙地。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "建立两个一次函数模型后，用图象比较到达同一距离所需的时间：谁的图象先达到y＝40，谁就先到达乙地。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1081",
+   "page": 129,
+   "description": "算术平均数与加权平均数的计算、权数的意义、中位数与众数的求法，以及三个统计量在反映集中趋势时各自的特点",
+   "mastery_criteria": [
+    "能计算一组数据的算术平均数、加权平均数、中位数和众数",
+    "能根据问题的需要选择合适的统计量说明数据的集中趋势"
+   ],
+   "misconceptions": [
+    "求中位数时忘记先把数据按大小顺序排列",
+    "认为一组数据的众数只能有一个"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1081_q1",
+     "topicId": "mxj_p1081",
+     "prompt": "一组数据中出现次数最多的数叫作这组数据的什么？",
+     "question": "一组数据中出现次数最多的数叫作这组数据的什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "众数"
+      },
+      {
+       "label": "B",
+       "text": "中位数"
+      },
+      {
+       "label": "C",
+       "text": "平均数"
+      },
+      {
+       "label": "D",
+       "text": "方差"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材定义：在一组数据中，出现次数最多的数叫作这组数据的众数，一组数据的众数可以不止一个。"
+    },
+    {
+     "id": "mxj_p1081_q2",
+     "topicId": "mxj_p1081",
+     "prompt": "中位数最主要的特点是不易受什么的影响？",
+     "question": "中位数最主要的特点是不易受什么的影响？",
+     "options": [
+      {
+       "label": "A",
+       "text": "数据个数的影响"
+      },
+      {
+       "label": "B",
+       "text": "极端值的影响"
+      },
+      {
+       "label": "C",
+       "text": "单位的影响"
+      },
+      {
+       "label": "D",
+       "text": "排序方式的影响"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "中位数只与数据排序后的中间位置有关，因此它不易受极端值的影响，而平均数要用到所有数据，容易受极端值影响。"
+    },
+    {
+     "id": "mxj_p1081_q3",
+     "topicId": "mxj_p1081",
+     "prompt": "关于一组数据的众数，下列说法正确的是哪一个？",
+     "question": "关于一组数据的众数，下列说法正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "只能有一个"
+      },
+      {
+       "label": "B",
+       "text": "一定有两个"
+      },
+      {
+       "label": "C",
+       "text": "可以不止一个"
+      },
+      {
+       "label": "D",
+       "text": "一定不存在"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材特别指出：一组数据的众数可以不止一个，当几个数据出现的次数同样最多时，它们都是这组数据的众数。"
+    },
+    {
+     "id": "mxj_p1081_q4",
+     "topicId": "mxj_p1081",
+     "prompt": "某企业80名员工月工资的平均数是6 115元，这个平均数偏高的主要原因是什么？",
+     "question": "某企业80名员工月工资的平均数是6 115元，这个平均数偏高的主要原因是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "数据个数太少"
+      },
+      {
+       "label": "B",
+       "text": "平均数计算错误"
+      },
+      {
+       "label": "C",
+       "text": "众数不存在"
+      },
+      {
+       "label": "D",
+       "text": "大多数员工的工资达不到平均数"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "这组数据中有少数很大的工资，把平均数拉高了，而大多数员工的工资低于平均数，所以用平均数作代表值并不合适，此时中位数与众数更能反映实际情况。"
+    },
+    {
+     "id": "mxj_p1081_q5",
+     "topicId": "mxj_p1081",
+     "prompt": "求数据5、6、7、8、9的算术平均数。",
+     "question": "求数据5、6、7、8、9的算术平均数。",
+     "answer": 7,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "把各数据的和除以数据的总个数，得(5＋6＋7＋8＋9)÷5＝35÷5＝7，所以平均数是7。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 35}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "mxj_p1081_q6",
+     "topicId": "mxj_p1081",
+     "prompt": "某阵列中20名学生身高170 cm、30名学生身高165 cm、50名学生身高160 cm，求这个阵列的平均身高（单位：cm）。",
+     "question": "某阵列中20名学生身高170 cm、30名学生身高165 cm、50名学生身高160 cm，求这个阵列的平均身高（单位：cm）。",
+     "answer": 163.5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "三个数据的权数分别是0.2、0.3、0.5，加权平均数为170×0.2＋165×0.3＋160×0.5＝34＋49.5＋80＝163.5，所以平均身高是163.5 cm。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 170}, {\"type\": \"num\", \"value\": 0.2}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 165}, {\"type\": \"num\", \"value\": 0.3}]}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 160}, {\"type\": \"num\", \"value\": 0.5}]}]}"
+    },
+    {
+     "id": "mxj_p1081_q7",
+     "topicId": "mxj_p1081",
+     "prompt": "某企业80名员工的月工资数据为：21 000元的1人、15 000元的2人、11 000元的3人、9 000元的4人、7 000元的10人、5 500元的20人、5 000元的22人、4 500元的12人、4 200元的6人。求这80个数据的平均数（单位：元）。",
+     "question": "某企业80名员工的月工资数据为：21 000元的1人、15 000元的2人、11 000元的3人、9 000元的4人、7 000元的10人、5 500元的20人、5 000元的22人、4 500元的12人、4 200元的6人。求这80个数据的平均数（单位：元）。",
+     "answer": 6115,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "各项乘积之和为489 200，除以80得6 115，所以这80个数据的平均数是6 115元。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 489200}, {\"type\": \"num\", \"value\": 80}]}"
+    },
+    {
+     "id": "mxj_p1081_q8",
+     "topicId": "mxj_p1081",
+     "prompt": "演讲比赛按服装占5%、普通话占15%、主题占40%、演讲技巧占40%计算总分。小华四项得分依次为85、70、80、85，小婷四项得分依次为90、75、75、80，谁的表现更优秀？请写出计算过程。",
+     "question": "演讲比赛按服装占5%、普通话占15%、主题占40%、演讲技巧占40%计算总分。小华四项得分依次为85、70、80、85，小婷四项得分依次为90、75、75、80，谁的表现更优秀？请写出计算过程。",
+     "answer": "小华的得分为85×5%＋70×15%＋80×40%＋85×40%＝4.25＋10.5＋32＋34＝80.75分；小婷的得分为90×5%＋75×15%＋75×40%＋80×40%＝4.5＋11.25＋30＋32＝77.75分。因为80.75大于77.75，所以小华在本次演讲比赛中表现更优秀。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "这是加权平均数的应用：四项得分的权数分别是5%、15%、40%、40%，权数之和为1，按权数相乘再相加即得总分。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1082",
+   "page": 139,
+   "description": "离差平方和与方差的概念和计算公式、方差刻画数据离散程度的含义，以及用方差比较两组数据的稳定性",
+   "mastery_criteria": [
+    "能计算一组数据的离差平方和与方差",
+    "能用方差的大小比较两组数据的稳定性并作出判断"
+   ],
+   "misconceptions": [
+    "把离差平方和与方差混为一谈",
+    "认为方差越大数据越稳定"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1082_q1",
+     "topicId": "mxj_p1082",
+     "prompt": "方差是用来刻画一组数据的什么的？",
+     "question": "方差是用来刻画一组数据的什么的？",
+     "options": [
+      {
+       "label": "A",
+       "text": "离散程度"
+      },
+      {
+       "label": "B",
+       "text": "集中趋势"
+      },
+      {
+       "label": "C",
+       "text": "平均水平的代表值"
+      },
+      {
+       "label": "D",
+       "text": "数据的个数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "方差是各数据与平均数之差的平方的平均值，它刻画一组数据与其平均数的平均离散程度，即波动大小。"
+    },
+    {
+     "id": "mxj_p1082_q2",
+     "topicId": "mxj_p1082",
+     "prompt": "两组数据的平均数相同时，方差较小的那组数据怎样？",
+     "question": "两组数据的平均数相同时，方差较小的那组数据怎样？",
+     "options": [
+      {
+       "label": "A",
+       "text": "越分散"
+      },
+      {
+       "label": "B",
+       "text": "越稳定"
+      },
+      {
+       "label": "C",
+       "text": "平均数越大"
+      },
+      {
+       "label": "D",
+       "text": "数据个数越多"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "方差越小表明这组数据的离散程度越小，各数据越集中在平均数附近，所以这组数据越稳定。"
+    },
+    {
+     "id": "mxj_p1082_q3",
+     "topicId": "mxj_p1082",
+     "prompt": "把一组数据的离差平方和除以这组数据的个数，得到的是什么？",
+     "question": "把一组数据的离差平方和除以这组数据的个数，得到的是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "极差"
+      },
+      {
+       "label": "B",
+       "text": "中位数"
+      },
+      {
+       "label": "C",
+       "text": "方差"
+      },
+      {
+       "label": "D",
+       "text": "众数"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材由离差平方和S2与方差s2的关系式s2等于S2除以n可知，离差平方和除以数据个数就是方差。"
+    },
+    {
+     "id": "mxj_p1082_q4",
+     "topicId": "mxj_p1082",
+     "prompt": "不能用各个数据与平均数的偏差之和来刻画离散程度，主要原因是什么？",
+     "question": "不能用各个数据与平均数的偏差之和来刻画离散程度，主要原因是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "偏差之和一定是负数"
+      },
+      {
+       "label": "B",
+       "text": "偏差之和无法计算"
+      },
+      {
+       "label": "C",
+       "text": "偏差之和等于数据个数"
+      },
+      {
+       "label": "D",
+       "text": "正负偏差会互相抵消"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "一组数据的各个数据与平均数的偏差之和恒为0，正负偏差相互抵消，无法反映离散程度，所以改用偏差的平方和或绝对值之和。"
+    },
+    {
+     "id": "mxj_p1082_q5",
+     "topicId": "mxj_p1082",
+     "prompt": "已知一组数据为4、5、6、7、8，求这组数据的方差。",
+     "question": "已知一组数据为4、5、6、7、8，求这组数据的方差。",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "平均数是6，各数据与6的差的平方和为4＋1＋0＋1＋4＝10，再除以5得2，所以方差是2。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "mxj_p1082_q6",
+     "topicId": "mxj_p1082",
+     "prompt": "甲队5名队员的身高（单位：cm）为160、162、159、160、159，求这组数据的方差。",
+     "question": "甲队5名队员的身高（单位：cm）为160、162、159、160、159，求这组数据的方差。",
+     "answer": 1.2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "平均身高是160，各数据与160的差的平方和为0＋4＋1＋0＋1＝6，再除以5得1.2，所以方差是1.2。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "mxj_p1082_q7",
+     "topicId": "mxj_p1082",
+     "prompt": "已知一组数据为3、6、6、6、9，求这组数据的方差。",
+     "question": "已知一组数据为3、6、6、6、9，求这组数据的方差。",
+     "answer": 3.6,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "平均数是6，各数据与6的差的平方和为9＋0＋0＋0＋9＝18，再除以5得3.6，所以这组数据的方差是3.6。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 18}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "mxj_p1082_q8",
+     "topicId": "mxj_p1082",
+     "prompt": "李明与张亮10次100 m测试成绩（单位：s）如下。李明：14.5、14.9、14.2、15.0、14.7、14.1、14.4、13.9、15.5、14.8；张亮：14.8、14.4、15.5、14.1、14.3、14.6、14.1、14.8、15.1、14.3。应该派谁参加比赛？请说明理由。",
+     "question": "李明与张亮10次100 m测试成绩（单位：s）如下。李明：14.5、14.9、14.2、15.0、14.7、14.1、14.4、13.9、15.5、14.8；张亮：14.8、14.4、15.5、14.1、14.3、14.6、14.1、14.8、15.1、14.3。应该派谁参加比赛？请说明理由。",
+     "answer": "两人的平均成绩都是14.6 s；李明成绩的离差平方和为2.06，方差为0.206，张亮成绩的离差平方和为1.86，方差为0.186。因为两人的平均水平相同而张亮的方差较小，成绩更稳定，所以应派张亮参加比赛。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "比较运动成绩时先看平均水平，平均水平相同时再看方差，方差小说明发挥更稳定，这就是用方差作决策的依据。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1083",
+   "page": 144,
+   "description": "把一组数据分成两组时组内离差平方和与组间离差平方和的意义、二者之和等于总离差平方和的结论，以及按组内离差平方和最小原则分组的方法",
+   "mastery_criteria": [
+    "能计算给定分组下的组内离差平方和与组间离差平方和",
+    "能说明按组内离差平方和最小原则分组的合理性"
+   ],
+   "misconceptions": [
+    "把组内离差平方和与组间离差平方和的作用弄反",
+    "认为分组时可以随意确定分点而不必考虑组内差异"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p1083_q1",
+     "topicId": "mxj_p1083",
+     "prompt": "把一组数据分成两组后，总离差平方和与组内离差平方和、组间离差平方和有什么关系？",
+     "question": "把一组数据分成两组后，总离差平方和与组内离差平方和、组间离差平方和有什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "等于组内离差平方和与组间离差平方和之和"
+      },
+      {
+       "label": "B",
+       "text": "等于组内离差平方和与组间离差平方和之差"
+      },
+      {
+       "label": "C",
+       "text": "等于两组平均数之和"
+      },
+      {
+       "label": "D",
+       "text": "等于两组方差的乘积"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材证明S2等于S1的平方项之和加上S2的平方项之和，即总离差平方和等于组内离差平方和与组间离差平方和之和。"
+    },
+    {
+     "id": "mxj_p1083_q2",
+     "topicId": "mxj_p1083",
+     "prompt": "对数据进行分组时，教材采用的分组原则是什么？",
+     "question": "对数据进行分组时，教材采用的分组原则是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "使组间离差平方和最小"
+      },
+      {
+       "label": "B",
+       "text": "使组内离差平方和最小"
+      },
+      {
+       "label": "C",
+       "text": "使两组的平均数相等"
+      },
+      {
+       "label": "D",
+       "text": "使两组的数据个数相等"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材指出：使得组内离差平方和最小的分组方法是最传统的，也是非常合理的，这样每一组内的数据比较稳定，组内差异小、组间差异大。"
+    },
+    {
+     "id": "mxj_p1083_q3",
+     "topicId": "mxj_p1083",
+     "prompt": "组间离差平方和反映的是什么？",
+     "question": "组间离差平方和反映的是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "两组内数据的离散程度"
+      },
+      {
+       "label": "B",
+       "text": "数据的总个数"
+      },
+      {
+       "label": "C",
+       "text": "两组数据之间的差异程度"
+      },
+      {
+       "label": "D",
+       "text": "数据的平均水平"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "组内离差平方和反映两个组内数据的离散程度，组间离差平方和反映两组数据之间的差异程度，两者之和等于总离差平方和。"
+    },
+    {
+     "id": "mxj_p1083_q4",
+     "topicId": "mxj_p1083",
+     "prompt": "10名运动员跳远成绩排序后依次尝试各种分法，计算表明哪种分组使组内离差平方和最小？",
+     "question": "10名运动员跳远成绩排序后依次尝试各种分法，计算表明哪种分组使组内离差平方和最小？",
+     "options": [
+      {
+       "label": "A",
+       "text": "前3个数据一组，后7个数据一组"
+      },
+      {
+       "label": "B",
+       "text": "前5个数据一组，后5个数据一组"
+      },
+      {
+       "label": "C",
+       "text": "前1个数据一组，后9个数据一组"
+      },
+      {
+       "label": "D",
+       "text": "前6个数据一组，后4个数据一组"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "教材逐种计算后得到：前6个数据一组、后4个数据一组时组内离差平方和为0.040 7，在各种分法中最小，因此按此分组进行分层训练。"
+    },
+    {
+     "id": "mxj_p1083_q5",
+     "topicId": "mxj_p1083",
+     "prompt": "9个城市4月份平均相对湿度（单位：%）为53、56、58、58、61、62、65、66、70，把它们分成53、56、58、58与61、62、65、66、70两组，求这种分组下的组内离差平方和。",
+     "question": "9个城市4月份平均相对湿度（单位：%）为53、56、58、58、61、62、65、66、70，把它们分成53、56、58、58与61、62、65、66、70两组，求这种分组下的组内离差平方和。",
+     "answer": 67.55,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "第一组平均数为56.25，第二组平均数为64.8；两组各数据与组内平均数之差的平方和相加得67.55，所以组内离差平方和是67.55。",
+     "verify": "{\"type\": \"num\", \"value\": 67.55}"
+    },
+    {
+     "id": "mxj_p1083_q6",
+     "topicId": "mxj_p1083",
+     "prompt": "8个城市3月份平均气温（单位：度）为5.5、7.2、7.7、9.2、12.3、16.7、17.6、18.1，把它们分成前四个数据与后四个数据两组，求这种分组下的组内离差平方和。",
+     "question": "8个城市3月份平均气温（单位：度）为5.5、7.2、7.7、9.2、12.3、16.7、17.6、18.1，把它们分成前四个数据与后四个数据两组，求这种分组下的组内离差平方和。",
+     "answer": 28.0075,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "第一组平均数为7.4，第二组平均数为16.175；两组各数据与组内平均数之差的平方和相加得28.007 5，所以组内离差平方和是28.007 5。",
+     "verify": "{\"type\": \"num\", \"value\": 28.0075}"
+    },
+    {
+     "id": "mxj_p1083_q7",
+     "topicId": "mxj_p1083",
+     "prompt": "把一组数据分成两组时，为使每一组的数据比较稳定，应使哪一种离差平方和最小？",
+     "question": "把一组数据分成两组时，为使每一组的数据比较稳定，应使哪一种离差平方和最小？",
+     "answer": "组内离差平方和",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "教材指出分组应使每一组内数据的差异小、组间差异大，也就是使组内离差平方和最小。"
+    },
+    {
+     "id": "mxj_p1083_q8",
+     "topicId": "mxj_p1083",
+     "prompt": "为什么按组内离差平方和最小的原则把10名运动员分成两组是合理的？请结合跳远成绩说明。",
+     "question": "为什么按组内离差平方和最小的原则把10名运动员分成两组是合理的？请结合跳远成绩说明。",
+     "answer": "把跳远成绩从小到大排列后，相邻数据的差距并不均匀，前6个数据彼此接近、后4个数据彼此也接近；按6个与4个分组时组内离差平方和为0.040 7，是各种分法中最小的，说明同组运动员水平相近、不同组之间差别明显，这样分层训练才有针对性，因此这种分组是合理的。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "分组的目的是使组内差异小、组间差异大，组内离差平方和最小正是对这一要求的量化表达。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1084",
+   "page": 149,
+   "description": "百分位数与四分位数的概念和计算规则、四分位距刻画分散程度的作用，以及箱线图的五个数与读图方法",
+   "mastery_criteria": [
+    "能计算一组数据的第一、第二、第三四分位数",
+    "能用四分位距和箱线图比较两组数据的分散程度"
+   ],
+   "misconceptions": [
+    "计算四分位数时忘记先排序",
+    "把四分位距当成最大值与最小值的差"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1084_q1",
+     "topicId": "mxj_p1084",
+     "prompt": "一组数据的第二四分位数就是这组数据的什么？",
+     "question": "一组数据的第二四分位数就是这组数据的什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "中位数"
+      },
+      {
+       "label": "B",
+       "text": "第一四分位数"
+      },
+      {
+       "label": "C",
+       "text": "第三四分位数"
+      },
+      {
+       "label": "D",
+       "text": "平均数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "第二四分位数即第50百分位数，它是小于或等于它的数据个数与总个数的比值不小于50%的数，也就是中位数。"
+    },
+    {
+     "id": "mxj_p1084_q2",
+     "topicId": "mxj_p1084",
+     "prompt": "四分位距是怎样得到的？",
+     "question": "四分位距是怎样得到的？",
+     "options": [
+      {
+       "label": "A",
+       "text": "最大值与最小值的差"
+      },
+      {
+       "label": "B",
+       "text": "第三四分位数与第一四分位数的差"
+      },
+      {
+       "label": "C",
+       "text": "平均数与众数的差"
+      },
+      {
+       "label": "D",
+       "text": "中位数与最小值的差"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材指出：第三四分位数减去第一四分位数的差可以用来刻画这组数据的分散程度，这个差越大，数据就越分散。"
+    },
+    {
+     "id": "mxj_p1084_q3",
+     "topicId": "mxj_p1084",
+     "prompt": "一组数据的四分位距越大，说明这组数据怎样？",
+     "question": "一组数据的四分位距越大，说明这组数据怎样？",
+     "options": [
+      {
+       "label": "A",
+       "text": "数据越集中"
+      },
+      {
+       "label": "B",
+       "text": "数据个数越多"
+      },
+      {
+       "label": "C",
+       "text": "数据越分散"
+      },
+      {
+       "label": "D",
+       "text": "平均数越大"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "第三四分位数与第一四分位数的差越大，中间一半数据所跨的范围越宽，说明这组数据越分散。"
+    },
+    {
+     "id": "mxj_p1084_q4",
+     "topicId": "mxj_p1084",
+     "prompt": "绘制箱线图需要用到哪五个数？",
+     "question": "绘制箱线图需要用到哪五个数？",
+     "options": [
+      {
+       "label": "A",
+       "text": "平均数、中位数、众数、最小值、最大值"
+      },
+      {
+       "label": "B",
+       "text": "最小值、最大值、平均数、方差、中位数"
+      },
+      {
+       "label": "C",
+       "text": "第一四分位数、第二四分位数、第三四分位数三个数"
+      },
+      {
+       "label": "D",
+       "text": "最小值、第一四分位数、中位数、第三四分位数、最大值"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "箱线图由一组数据的最小值、第一四分位数、中位数、第三四分位数、最大值这五个数绘制而成，由矩形箱子和两条线段构成。"
+    },
+    {
+     "id": "mxj_p1084_q5",
+     "topicId": "mxj_p1084",
+     "prompt": "北京市2016—2024年全年空气质量优良天数从小到大排列为198、226、227、240、271、276、286、288、290，求这组数据的第一四分位数。",
+     "question": "北京市2016—2024年全年空气质量优良天数从小到大排列为198、226、227、240、271、276、286、288、290，求这组数据的第一四分位数。",
+     "answer": 227,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "数据个数为9，四分之一乘9等于2.25不是整数，取比2.25大的最小整数3，所以第3个数227是第一四分位数。",
+     "verify": "{\"type\": \"num\", \"value\": 227}"
+    },
+    {
+     "id": "mxj_p1084_q6",
+     "topicId": "mxj_p1084",
+     "prompt": "一组男生的身高（单位：cm）从小到大排列为150、154、161、165、168、172、175、178、180、182，求这组数据的第三四分位数。",
+     "question": "一组男生的身高（单位：cm）从小到大排列为150、154、161、165、168、172、175、178、180、182，求这组数据的第三四分位数。",
+     "answer": 178,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "数据个数为10，四分之三乘10等于7.5不是整数，取比7.5大的最小整数8，所以第8个数178是第三四分位数。",
+     "verify": "{\"type\": \"num\", \"value\": 178}"
+    },
+    {
+     "id": "mxj_p1084_q7",
+     "topicId": "mxj_p1084",
+     "prompt": "甲车间14个零件质量从小到大排列后，第一四分位数是247，第三四分位数是254，求这组数据的四分位距。",
+     "question": "甲车间14个零件质量从小到大排列后，第一四分位数是247，第三四分位数是254，求这组数据的四分位距。",
+     "answer": 7,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "四分位距等于第三四分位数减去第一四分位数，即254－247＝7，所以这组数据的四分位距是7。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 254}, {\"type\": \"num\", \"value\": 247}]}"
+    },
+    {
+     "id": "mxj_p1084_q8",
+     "topicId": "mxj_p1084",
+     "prompt": "甲车间14个零件质量的四分位距是7，乙车间14个零件质量的四分位距是13。哪个车间的零件质量数据比较分散？请说明理由。",
+     "question": "甲车间14个零件质量的四分位距是7，乙车间14个零件质量的四分位距是13。哪个车间的零件质量数据比较分散？请说明理由。",
+     "answer": "乙车间的数据比较分散。两个车间抽取的零件个数相同，而乙车间数据的第三四分位数256与第一四分位数243之差为13，大于甲车间的差7，四分位距越大说明数据越分散，所以乙车间生产的零件质量数据比较分散。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "比较分散程度时用四分位距：数据个数相同时，第三四分位数与第一四分位数的差越大，中间一半数据跨度越大，数据越分散。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1085",
+   "page": 155,
+   "description": "频数与频率的概念、频数分布表与组距组数的确定、频数直方图的绘制与读图，以及用频率之和为1检验统计结果",
+   "mastery_criteria": [
+    "能计算一组数据的频数与频率并编制频数分布表",
+    "能绘制并读懂频数直方图，说明数据的分布情况"
+   ],
+   "misconceptions": [
+    "把频率与频数混为一谈",
+    "绘制直方图时在小矩形之间留出空隙"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1085_q1",
+     "topicId": "mxj_p1085",
+     "prompt": "一组数据的频率是怎样得到的？",
+     "question": "一组数据的频率是怎样得到的？",
+     "options": [
+      {
+       "label": "A",
+       "text": "频数与数据总数的比值"
+      },
+      {
+       "label": "B",
+       "text": "数据总数与频数的比值"
+      },
+      {
+       "label": "C",
+       "text": "各组频数的和"
+      },
+      {
+       "label": "D",
+       "text": "组距与频数的比值"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材定义：每一组的频数与数据总数的比值叫作这一组数据的频率，例如频数20、总数50时频率为0.4。"
+    },
+    {
+     "id": "mxj_p1085_q2",
+     "topicId": "mxj_p1085",
+     "prompt": "把一组数据分成若干组后，各组频率之和等于多少？",
+     "question": "把一组数据分成若干组后，各组频率之和等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "等于0"
+      },
+      {
+       "label": "B",
+       "text": "等于1"
+      },
+      {
+       "label": "C",
+       "text": "等于数据总数"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "各组频数之和等于数据总数，频率是频数与总数的比值，所以各组频率之和等于1。"
+    },
+    {
+     "id": "mxj_p1085_q3",
+     "topicId": "mxj_p1085",
+     "prompt": "绘制频数直方图时，下列说法正确的是哪一个？",
+     "question": "绘制频数直方图时，下列说法正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "小矩形之间应留相等的空隙"
+      },
+      {
+       "label": "B",
+       "text": "小矩形的高度表示组距"
+      },
+      {
+       "label": "C",
+       "text": "小矩形之间没有空隙"
+      },
+      {
+       "label": "D",
+       "text": "小矩形的宽度表示频数"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材提示绘制频数直方图时各小矩形之间无空隙，小矩形的宽对应组距、高对应频数，边界对应各组的组界。"
+    },
+    {
+     "id": "mxj_p1085_q4",
+     "topicId": "mxj_p1085",
+     "prompt": "在数据个数相同的情况下，组距与组数有怎样的关系？",
+     "question": "在数据个数相同的情况下，组距与组数有怎样的关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "组距越大，组数越多"
+      },
+      {
+       "label": "B",
+       "text": "组距与组数无关"
+      },
+      {
+       "label": "C",
+       "text": "组距减小，组数减少"
+      },
+      {
+       "label": "D",
+       "text": "组距越大，组数越少"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "组数等于最大值与最小值之差除以组距后向上取整，组距越大，同样的数据范围分成的组数就越少。"
+    },
+    {
+     "id": "mxj_p1085_q5",
+     "topicId": "mxj_p1085",
+     "prompt": "50名报名者中甲组有20人，求甲组报名人数的频率。",
+     "question": "50名报名者中甲组有20人，求甲组报名人数的频率。",
+     "answer": 0.4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "频率等于频数与数据总数的比值，即20÷50＝0.4，所以甲组报名人数的频率是0.4。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 20}, {\"type\": \"num\", \"value\": 50}]}"
+    },
+    {
+     "id": "mxj_p1085_q6",
+     "topicId": "mxj_p1085",
+     "prompt": "30户家庭的月饮食支出最小值为1 730元、最大值为1 956元，取第一组下限为1 720元、最后一组上限为1 960元、组距为40元，可以分成几组？",
+     "question": "30户家庭的月饮食支出最小值为1 730元、最大值为1 956元，取第一组下限为1 720元、最后一组上限为1 960元、组距为40元，可以分成几组？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "组数等于最后一组上限与第一组下限之差除以组距，即(1 960－1 720)÷40＝6，所以可以分成6组。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 1960}, {\"type\": \"num\", \"value\": 1720}]}, {\"type\": \"num\", \"value\": 40}]}"
+    },
+    {
+     "id": "mxj_p1085_q7",
+     "topicId": "mxj_p1085",
+     "prompt": "40名男生身高的最大值是176 cm、最小值是155 cm，取组距为5 cm，应分成几组？",
+     "question": "40名男生身高的最大值是176 cm、最小值是155 cm，取组距为5 cm，应分成几组？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "极差为176－155＝21，21÷5＝4.2，把4.2向上取整得5，所以应分成5组，即155≤x＜160到175≤x＜180。",
+     "verify": "{\"type\": \"num\", \"value\": 5}"
+    },
+    {
+     "id": "mxj_p1085_q8",
+     "topicId": "mxj_p1085",
+     "prompt": "40名男生身高的频数分布表中，155≤x＜160的频数为4，160≤x＜165的频数为12，165≤x＜170的频数为13，170≤x＜175的频数为8，175≤x＜180的频数为3。身高在哪个范围内的人数最多？40名男生的平均身高165.95 cm在这个范围内吗？",
+     "question": "40名男生身高的频数分布表中，155≤x＜160的频数为4，160≤x＜165的频数为12，165≤x＜170的频数为13，170≤x＜175的频数为8，175≤x＜180的频数为3。身高在哪个范围内的人数最多？40名男生的平均身高165.95 cm在这个范围内吗？",
+     "answer": "身高在165≤x＜170范围内的人数最多，有13人。40名男生的平均身高是165.95 cm，它落在165≤x＜170这个范围内，与人数最多的组一致。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "读频数直方图时看小矩形的高度即可找出人数最多的组，再把平均数与各组的分界值比较，判断它落在哪一组。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1086",
+   "page": 167,
+   "description": "总体平均数与总体方差的意义、用简单随机样本的平均数和方差作为估计值的方法，以及比较两个总体稳定性的判断",
+   "mastery_criteria": [
+    "能由样本数据计算平均数与方差的估计值",
+    "能用样本方差的估计值比较两个总体的稳定性"
+   ],
+   "misconceptions": [
+    "把样本的数字特征当成总体的准确值",
+    "比较稳定性时只看平均数不看方差"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "mxj_p1086_q1",
+     "topicId": "mxj_p1086",
+     "prompt": "当样本容量足够大时，常用什么作为总体平均数的估计值？",
+     "question": "当样本容量足够大时，常用什么作为总体平均数的估计值？",
+     "options": [
+      {
+       "label": "A",
+       "text": "样本的平均数"
+      },
+      {
+       "label": "B",
+       "text": "总体的众数"
+      },
+      {
+       "label": "C",
+       "text": "样本的个数"
+      },
+      {
+       "label": "D",
+       "text": "样本的最大值"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材指出：当样本的容量足够大时，可以用简单随机样本的平均数作为总体平均数的一个估计值。"
+    },
+    {
+     "id": "mxj_p1086_q2",
+     "topicId": "mxj_p1086",
+     "prompt": "用样本估计总体时，对样本的基本要求是什么？",
+     "question": "用样本估计总体时，对样本的基本要求是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "样本容量足够小"
+      },
+      {
+       "label": "B",
+       "text": "样本容量足够大"
+      },
+      {
+       "label": "C",
+       "text": "样本必须来自同一个班级"
+      },
+      {
+       "label": "D",
+       "text": "样本中不能有极端值"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材强调估计的前提是样本容量足够大，并且样本要用简单随机抽样方法抽取，这样才能反映总体的情况。"
+    },
+    {
+     "id": "mxj_p1086_q3",
+     "topicId": "mxj_p1086",
+     "prompt": "两个总体的样本平均数相近时，样本方差的估计值越小说明什么？",
+     "question": "两个总体的样本平均数相近时，样本方差的估计值越小说明什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "总体平均数越大"
+      },
+      {
+       "label": "B",
+       "text": "总体数据越分散"
+      },
+      {
+       "label": "C",
+       "text": "总体数据越稳定"
+      },
+      {
+       "label": "D",
+       "text": "样本容量越小"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "样本方差是总体方差的估计值，估计值越小说明总体的离散程度越小，即这个总体的数据越稳定。"
+    },
+    {
+     "id": "mxj_p1086_q4",
+     "topicId": "mxj_p1086",
+     "prompt": "简单随机抽样方法的主要特点是什么？",
+     "question": "简单随机抽样方法的主要特点是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "抽取时总挑中间的个体"
+      },
+      {
+       "label": "B",
+       "text": "前面取到的个体影响后面的抽取"
+      },
+      {
+       "label": "C",
+       "text": "只抽取成绩最好的个体"
+      },
+      {
+       "label": "D",
+       "text": "每个个体有同等机会被抽到"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "教材指出简单随机抽样使总体中每个个体都有同等的机会被取到，且前面取到的个体不影响后面的个体被取到的机会。"
+    },
+    {
+     "id": "mxj_p1086_q5",
+     "topicId": "mxj_p1086",
+     "prompt": "从甲车间试生产的零件中抽取100个，质量数据整理后算得样本平均数为250.6 g，求甲车间这批零件质量平均数的估计值（单位：g）。",
+     "question": "从甲车间试生产的零件中抽取100个，质量数据整理后算得样本平均数为250.6 g，求甲车间这批零件质量平均数的估计值（单位：g）。",
+     "answer": 250.6,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "用简单随机样本的平均数作为总体平均数的估计值，所以甲车间这批零件质量平均数的估计值是250.6 g。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 25060}, {\"type\": \"num\", \"value\": 100}]}"
+    },
+    {
+     "id": "mxj_p1086_q6",
+     "topicId": "mxj_p1086",
+     "prompt": "上题样本的离差平方和为2 682，样本容量为100，求这批零件质量方差的估计值。",
+     "question": "上题样本的离差平方和为2 682，样本容量为100，求这批零件质量方差的估计值。",
+     "answer": 26.82,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "方差的估计值等于离差平方和除以样本容量，即2 682÷100＝26.82，所以方差的估计值是26.82。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 2682}, {\"type\": \"num\", \"value\": 100}]}"
+    },
+    {
+     "id": "mxj_p1086_q7",
+     "topicId": "mxj_p1086",
+     "prompt": "乙车间抽取100个零件，算得样本平均数为249.38 g，离差平方和为3 117.56，求乙车间这批零件质量方差的估计值。",
+     "question": "乙车间抽取100个零件，算得样本平均数为249.38 g，离差平方和为3 117.56，求乙车间这批零件质量方差的估计值。",
+     "answer": 31.1756,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "方差的估计值等于离差平方和除以样本容量，即3 117.56÷100＝31.175 6，所以乙车间质量方差的估计值是31.175 6。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 3117.56}, {\"type\": \"num\", \"value\": 100}]}"
+    },
+    {
+     "id": "mxj_p1086_q8",
+     "topicId": "mxj_p1086",
+     "prompt": "甲车间零件质量方差的估计值是26.82，乙车间是31.175 6，两车间的样本平均数分别约为250.6 g与249.38 g。哪个车间生产的零件质量更稳定？请说明理由。",
+     "question": "甲车间零件质量方差的估计值是26.82，乙车间是31.175 6，两车间的样本平均数分别约为250.6 g与249.38 g。哪个车间生产的零件质量更稳定？请说明理由。",
+     "answer": "甲车间生产的零件质量更稳定。两个车间的样本平均数很接近，而甲车间方差的估计值26.82小于乙车间的31.175 6，方差越小说明零件质量的离散程度越小，所以甲车间的质量更稳定。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "比较两个总体的稳定性，要在平均水平相近的前提下比较方差的估计值，估计值小的总体波动小、更稳定。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1087",
+   "page": 171,
+   "description": "用样本的频率估计总体的频率与次品率、收视率等实际问题中的估计方法，以及用散点图与趋势图描述两个变量之间的关系",
+   "mastery_criteria": [
+    "能用样本的频率或次品率估计总体的相应比值",
+    "能用散点图判断两个变量之间是否近似成一次函数关系"
+   ],
+   "misconceptions": [
+    "把样本的次品率直接当成总体的准确次品率",
+    "认为散点图中的点必须严格落在一条直线上"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "mxj_p1087_q1",
+     "topicId": "mxj_p1087",
+     "prompt": "一批产品的次品率是怎样定义的？",
+     "question": "一批产品的次品率是怎样定义的？",
+     "options": [
+      {
+       "label": "A",
+       "text": "次品件数与这批产品总件数的比值"
+      },
+      {
+       "label": "B",
+       "text": "合格品件数与总件数的比值"
+      },
+      {
+       "label": "C",
+       "text": "次品件数与合格品件数的比值"
+      },
+      {
+       "label": "D",
+       "text": "总件数与次品件数的比值"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材定义：一般将次品的件数与这批产品的总件数的比值称为次品率，可用样本的次品率估计它。"
+    },
+    {
+     "id": "mxj_p1087_q2",
+     "topicId": "mxj_p1087",
+     "prompt": "用样本的频率估计总体的频率，对样本有什么要求？",
+     "question": "用样本的频率估计总体的频率，对样本有什么要求？",
+     "options": [
+      {
+       "label": "A",
+       "text": "样本容量足够小"
+      },
+      {
+       "label": "B",
+       "text": "样本容量足够大"
+      },
+      {
+       "label": "C",
+       "text": "样本中的数据都相同"
+      },
+      {
+       "label": "D",
+       "text": "总体个数很少"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材指出：当样本的容量足够大时，可以用简单随机样本的频率作为总体的频率的一个估计值。"
+    },
+    {
+     "id": "mxj_p1087_q3",
+     "topicId": "mxj_p1087",
+     "prompt": "在平面直角坐标系中，把样本中每一对数据对应的点描出来，这样的图形叫什么？",
+     "question": "在平面直角坐标系中，把样本中每一对数据对应的点描出来，这样的图形叫什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "频数直方图"
+      },
+      {
+       "label": "B",
+       "text": "箱线图"
+      },
+      {
+       "label": "C",
+       "text": "散点图"
+      },
+      {
+       "label": "D",
+       "text": "折线统计图"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把样本中每一名学生的身高和体重组成有序实数对，对应平面上的一个点，这些点组成的图形就是样本数据的散点图。"
+    },
+    {
+     "id": "mxj_p1087_q4",
+     "topicId": "mxj_p1087",
+     "prompt": "教材所说的趋势图是指什么？",
+     "question": "教材所说的趋势图是指什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "连接所有散点的折线"
+      },
+      {
+       "label": "B",
+       "text": "散点图中最高点所在的直线"
+      },
+      {
+       "label": "C",
+       "text": "散点图中最低点所在的直线"
+      },
+      {
+       "label": "D",
+       "text": "能较好描述散点分布趋势的直线"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "教材指出找出与散点图中各个点总体上最接近的一条直线，用它描述散点的分布趋势，这条直线称为趋势图。"
+    },
+    {
+     "id": "mxj_p1087_q5",
+     "topicId": "mxj_p1087",
+     "prompt": "某工厂用简单随机抽样方法抽取100件产品检查，发现有3件次品，估计这批产品的次品率（用小数表示）。",
+     "question": "某工厂用简单随机抽样方法抽取100件产品检查，发现有3件次品，估计这批产品的次品率（用小数表示）。",
+     "answer": 0.03,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "样本的次品率是3÷100＝0.03，所以这批产品次品率的一个估计值是0.03，即3%。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 100}]}"
+    },
+    {
+     "id": "mxj_p1087_q6",
+     "topicId": "mxj_p1087",
+     "prompt": "某媒介研究公司调查了20 000户观众，其中有6 586户收看了《春节联欢晚会》，求这届晚会收视率的一个估计值（用小数表示，保留四位小数）。",
+     "question": "某媒介研究公司调查了20 000户观众，其中有6 586户收看了《春节联欢晚会》，求这届晚会收视率的一个估计值（用小数表示，保留四位小数）。",
+     "answer": 0.3293,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "样本的收视率是6 586÷20 000＝0.329 3，所以这届《春节联欢晚会》收视率的一个估计值是0.329 3，即32.93%。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 6586}, {\"type\": \"num\", \"value\": 20000}]}"
+    },
+    {
+     "id": "mxj_p1087_q7",
+     "topicId": "mxj_p1087",
+     "prompt": "某养殖户第一次捕捞576只龙虾做上标记后放回池塘，第二次捕捞2 104只，发现其中24只有标记。估计池塘里约有多少只龙虾。",
+     "question": "某养殖户第一次捕捞576只龙虾做上标记后放回池塘，第二次捕捞2 104只，发现其中24只有标记。估计池塘里约有多少只龙虾。",
+     "answer": 50496,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "样本中有标记的龙虾所占比例为24÷2 104，用它估计总体中有标记的比例，得池塘中龙虾总数约为576×2 104÷24＝50 496只。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 576}, {\"type\": \"num\", \"value\": 2104}]}, {\"type\": \"num\", \"value\": 24}]}"
+    },
+    {
+     "id": "mxj_p1087_q8",
+     "topicId": "mxj_p1087",
+     "prompt": "用简单随机抽样方法抽取500名参赛学生的成绩，整理得51≤x＜61的40人、61≤x＜71的80人、71≤x＜81的100人、81≤x＜91的160人、91≤x＜101的120人。试估计参赛学生的成绩在71分至90分之间的百分比。",
+     "question": "用简单随机抽样方法抽取500名参赛学生的成绩，整理得51≤x＜61的40人、61≤x＜71的80人、71≤x＜81的100人、81≤x＜91的160人、91≤x＜101的120人。试估计参赛学生的成绩在71分至90分之间的百分比。",
+     "answer": "成绩在71≤x＜81与81≤x＜91两段的人数之和为100＋160＝260人，占样本人数的260÷500＝0.52，所以可以估计参赛学生的成绩在71分至90分之间的百分比约为52%。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "用样本的频率估计总体的百分比：把落在指定范围内的各组频数相加，再除以样本容量即可。"
+    }
+   ]
+  }
+ ]
+}

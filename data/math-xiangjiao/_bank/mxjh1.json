@@ -1,0 +1,4635 @@
+{
+ "tag": "mxjh1",
+ "book": "湘教版必修第一册",
+ "unit_points": [
+  {
+   "id": "mxj_h001",
+   "description": "本章先建立集合的概念，用列举法与描述法表示集合，再研究集合之间的包含关系与交集、并集、补集运算，最后学习充分条件、必要条件与全称量词、存在量词，用逻辑用语准确表达数学命题。",
+   "mastery_criteria": [
+    "能判断一组对象能否组成集合，并会用列举法和描述法表示集合",
+    "能求两个集合的交集、并集与补集，会判断充分条件、必要条件",
+    "会写出含全称量词或存在量词命题的否定"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "prompt": "下列各组对象中，能组成集合的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "所有的正三角形"
+      },
+      {
+       "label": "B",
+       "text": "某班个子比较高的同学"
+      },
+      {
+       "label": "C",
+       "text": "接近 1 的实数"
+      },
+      {
+       "label": "D",
+       "text": "历史上著名的数学家"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "集合中的元素必须具有确定性。正三角形有明确标准，可以判断任何一个三角形是否属于它；而个子较高、接近 1、著名都没有客观标准，无法判断，因此不能组成集合。",
+     "id": "mxj_h001_q1",
+     "topicId": "mxj_h001",
+     "question": "下列各组对象中，能组成集合的是（　）。"
+    },
+    {
+     "prompt": "已知全集 U 由 1、2、3、4、5 组成，集合 A 由奇数 1、3、5 组成，则 A 在 U 中的补集是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "由 1 和 3 组成的集合"
+      },
+      {
+       "label": "B",
+       "text": "由 2 和 4 组成的集合"
+      },
+      {
+       "label": "C",
+       "text": "由 2、3、4 组成的集合"
+      },
+      {
+       "label": "D",
+       "text": "由 1、2、3、4 组成的集合"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "补集由全集 U 中不属于 A 的元素组成。U 中的 1、3、5 已在 A 中，剩下 2 和 4，所以补集是由 2 和 4 组成的集合。",
+     "id": "mxj_h001_q2",
+     "topicId": "mxj_h001",
+     "question": "已知全集 U 由 1、2、3、4、5 组成，集合 A 由奇数 1、3、5 组成，则 A 在 U 中的补集是（　）。"
+    },
+    {
+     "prompt": "已知 a、b 都是实数，则 a 等于 0 且 b 等于 0 是 a 的平方加 b 的平方等于 0 的（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "充分不必要条件"
+      },
+      {
+       "label": "B",
+       "text": "必要不充分条件"
+      },
+      {
+       "label": "C",
+       "text": "充分必要条件"
+      },
+      {
+       "label": "D",
+       "text": "既不充分也不必要条件"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "若 a 与 b 都等于 0，则两个平方都等于 0，其和当然等于 0，充分性成立；反过来两个非负数的和为 0，只能各自为 0，必要性也成立，所以是充分必要条件。",
+     "id": "mxj_h001_q3",
+     "topicId": "mxj_h001",
+     "question": "已知 a、b 都是实数，则 a 等于 0 且 b 等于 0 是 a 的平方加 b 的平方等于 0 的（　）。"
+    },
+    {
+     "prompt": "集合 1、2、3、4 共有多少个真子集？",
+     "answer": 15,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "含四个元素的集合共有 2 的 4 次方即 16 个子集，真子集要求不与原集合相等，所以是 16 减 1 等于 15 个。",
+     "verify": "{\"type\": \"num\", \"value\": 15}",
+     "id": "mxj_h001_q4",
+     "topicId": "mxj_h001",
+     "question": "集合 1、2、3、4 共有多少个真子集？"
+    },
+    {
+     "prompt": "写出命题「所有实数 x 都满足 x 的平方大于或等于 0」的否定。",
+     "answer": "存在实数 x，使 x 的平方小于 0",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "全称量词命题的否定把「所有」改为「存在」，并把结论否定。原命题结论是大于或等于 0，否定后为小于 0，所以否定是存在实数 x 使它的平方小于 0，该命题为假。",
+     "id": "mxj_h001_q5",
+     "topicId": "mxj_h001",
+     "question": "写出命题「所有实数 x 都满足 x 的平方大于或等于 0」的否定。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h002",
+   "description": "本章从等式与不等式的基本性质出发，用函数的观点看待一元二次方程与一元二次不等式，把方程的根、不等式的解集与抛物线在 x 轴上下的位置对应起来，并用基本不等式处理最值问题。",
+   "mastery_criteria": [
+    "能利用不等式性质比较两个代数式的大小，并说明每一步的依据",
+    "会借助二次函数图象写出一元二次不等式的解集",
+    "能用基本不等式求简单的最值，并指出等号成立的条件"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "prompt": "已知 a 大于 b，则下列不等式一定成立的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 的平方大于 b 的平方"
+      },
+      {
+       "label": "B",
+       "text": "a 减 3 大于 b 减 3"
+      },
+      {
+       "label": "C",
+       "text": "负 2a 大于负 2b"
+      },
+      {
+       "label": "D",
+       "text": "a 分之一小于 b 分之一"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "不等式两边同加或同减同一个数，不等号方向不变，所以 a 减 3 大于 b 减 3 恒成立。平方的大小要看符号，两边同乘负数要变号，取倒数也要求同号，其余三项都可能不成立。",
+     "id": "mxj_h002_q1",
+     "topicId": "mxj_h002",
+     "question": "已知 a 大于 b，则下列不等式一定成立的是（　）。"
+    },
+    {
+     "prompt": "不等式 x 的平方减 3x 加 2 小于 0 的解集是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "大于 1 且小于 2 的实数"
+      },
+      {
+       "label": "B",
+       "text": "小于 1 或大于 2 的实数"
+      },
+      {
+       "label": "C",
+       "text": "大于负 1 且小于 2 的实数"
+      },
+      {
+       "label": "D",
+       "text": "小于负 1 或大于 2 的实数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "左边分解为 x 减 1 与 x 减 2 的积，对应抛物线开口向上，与 x 轴交于 1 和 2，函数值小于 0 的部分在两交点之间，所以解集是 1 小于 x 小于 2。",
+     "id": "mxj_h002_q2",
+     "topicId": "mxj_h002",
+     "question": "不等式 x 的平方减 3x 加 2 小于 0 的解集是（　）。"
+    },
+    {
+     "prompt": "当 x 大于 0 时，代数式 x 加 x 分之 4 的最小值是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由基本不等式，x 与 x 分之 4 都为正，其和不小于 2 倍根号下二者之积，即不小于 4，当 x 等于 2 时取到等号，所以最小值是 4。",
+     "id": "mxj_h002_q3",
+     "topicId": "mxj_h002",
+     "question": "当 x 大于 0 时，代数式 x 加 x 分之 4 的最小值是（　）。"
+    },
+    {
+     "prompt": "不等式 x 的平方减 5x 加 6 小于或等于 0 的整数解共有多少个？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "左边分解为 x 减 2 与 x 减 3 的积，解集是 2 小于或等于 x 小于或等于 3，其中的整数只有 2 和 3，共 2 个。",
+     "verify": "{\"type\": \"num\", \"value\": 2}",
+     "id": "mxj_h002_q4",
+     "topicId": "mxj_h002",
+     "question": "不等式 x 的平方减 5x 加 6 小于或等于 0 的整数解共有多少个？"
+    },
+    {
+     "prompt": "已知 a 大于 0，b 大于 0，且 a 加 b 等于 4，则 ab 的最大值是多少？",
+     "answer": "4",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "由基本不等式，两个正数的积不大于它们和的一半的平方，即 ab 不大于 4，当 a 与 b 都等于 2 时取到等号，所以最大值是 4。",
+     "id": "mxj_h002_q5",
+     "topicId": "mxj_h002",
+     "question": "已知 a 大于 0，b 大于 0，且 a 加 b 等于 4，则 ab 的最大值是多少？"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h003",
+   "description": "本章在初中函数概念的基础上，用集合与对应的语言重新刻画函数，明确定义域、值域与对应关系三要素，并研究函数的单调性、最大最小值与奇偶性，学会用图象和定义两种方式描述函数性质。",
+   "mastery_criteria": [
+    "能判断两个函数是否为同一个函数，会求简单函数的定义域与值域",
+    "会用定义证明函数的单调性，会判断函数的奇偶性并求简单最值"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "prompt": "下列各组函数中，表示同一个函数的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y 等于 x 与 y 等于根号下 x 的平方"
+      },
+      {
+       "label": "B",
+       "text": "y 等于 x 与 y 等于根号 x 整体的平方"
+      },
+      {
+       "label": "C",
+       "text": "y 等于 x 与 y 等于 x 的立方的立方根"
+      },
+      {
+       "label": "D",
+       "text": "y 等于 x 与 y 等于 x 的平方除以 x"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "判断两个函数是否相同要看定义域与对应关系是否都一致。根号下 x 的平方等于 x 的绝对值，与 x 不同；根号 x 整体的平方只在 x 大于或等于 0 时有定义；x 的平方除以 x 要求 x 不等于 0；只有立方的立方根恒等于 x。",
+     "id": "mxj_h003_q1",
+     "topicId": "mxj_h003",
+     "question": "下列各组函数中，表示同一个函数的是（　）。"
+    },
+    {
+     "prompt": "函数 f(x) 等于根号下 2 减 x 的定义域是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 小于或等于 2 的实数"
+      },
+      {
+       "label": "B",
+       "text": "x 大于或等于 2 的实数"
+      },
+      {
+       "label": "C",
+       "text": "x 小于 2 的实数"
+      },
+      {
+       "label": "D",
+       "text": "x 不等于 2 的实数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "偶次根号下必须非负，所以 2 减 x 大于或等于 0，解得 x 小于或等于 2。端点 2 使被开方式为 0，仍然有意义，因此取到等号。",
+     "id": "mxj_h003_q2",
+     "topicId": "mxj_h003",
+     "question": "函数 f(x) 等于根号下 2 减 x 的定义域是（　）。"
+    },
+    {
+     "prompt": "当 x 满足 0 小于或等于 x 小于或等于 3 时，函数 f(x) 等于 x 的平方减 2x 加 3 的最小值是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "1"
+      },
+      {
+       "label": "D",
+       "text": "0"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "配方得 f(x) 等于 x 减 1 的平方再加 2，顶点横坐标 1 落在给定范围内，所以最小值在 x 等于 1 处取得，等于 2，而不是在端点取得。",
+     "id": "mxj_h003_q3",
+     "topicId": "mxj_h003",
+     "question": "当 x 满足 0 小于或等于 x 小于或等于 3 时，函数 f(x) 等于 x 的平方减 2x 加 3 的最小值是（　）。"
+    },
+    {
+     "prompt": "已知函数 f(x) 等于 2x 减 1，求 f(3) 的值。",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把 x 换成 3 代入解析式，得 2 乘 3 减 1，即 6 减 1 等于 5，这就是 x 等于 3 时的函数值。",
+     "verify": "{\"type\": \"num\", \"value\": 5}",
+     "id": "mxj_h003_q4",
+     "topicId": "mxj_h003",
+     "question": "已知函数 f(x) 等于 2x 减 1，求 f(3) 的值。"
+    },
+    {
+     "prompt": "已知 f(x) 是定义在全体实数上的偶函数，且 f(2) 等于 5，则 f(负 2) 等于多少？",
+     "answer": "5",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "偶函数满足对定义域内任意 x 都有 f(负 x) 等于 f(x)，取 x 等于 2 得 f(负 2) 等于 f(2)，所以等于 5。",
+     "id": "mxj_h003_q5",
+     "topicId": "mxj_h003",
+     "question": "已知 f(x) 是定义在全体实数上的偶函数，且 f(2) 等于 5，则 f(负 2) 等于多少？"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h004",
+   "description": "本章把指数幂推广到实数指数，学习幂函数、指数函数与对数函数的定义、图象和性质，并用函数与方程的观点研究零点和零点存在定理，最后用函数模型刻画实际增长与衰减过程。",
+   "mastery_criteria": [
+    "能把根式与分数指数幂互化，并说出幂函数、指数函数、对数函数的图象特征",
+    "会比较同底指数式与对数式的大小，会用零点存在定理判断零点所在区间"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "prompt": "在下面的四个函数中，属于指数函数的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y 等于 x 的 3 次幂"
+      },
+      {
+       "label": "B",
+       "text": "y 等于 3 的 x 次幂"
+      },
+      {
+       "label": "C",
+       "text": "y 等于 x 的 1/2 次幂"
+      },
+      {
+       "label": "D",
+       "text": "y 等于以 2 为底 x 的对数"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "指数函数是形如 y 等于 a 的 x 次幂的函数，底数为正数且不等于 1，自变量在指数位置。第一和第三项是幂函数，第四项是对数函数。",
+     "id": "mxj_h004_q1",
+     "topicId": "mxj_h004",
+     "question": "在下面的四个函数中，属于指数函数的是（　）。"
+    },
+    {
+     "prompt": "函数 y 等于以 2 为底 x 减 1 的对数，它的定义域是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 大于 1 的实数"
+      },
+      {
+       "label": "B",
+       "text": "x 大于或等于 1 的实数"
+      },
+      {
+       "label": "C",
+       "text": "x 不等于 1 的实数"
+      },
+      {
+       "label": "D",
+       "text": "全体实数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "对数的真数必须为正，所以 x 减 1 大于 0，解得 x 大于 1。x 等于 1 时真数为 0，对数无意义，因此不能取等号。",
+     "id": "mxj_h004_q2",
+     "topicId": "mxj_h004",
+     "question": "函数 y 等于以 2 为底 x 减 1 的对数，它的定义域是（　）。"
+    },
+    {
+     "prompt": "比较以 2 为底 3 的对数与以 2 为底 5 的对数的大小，正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "前者大于后者"
+      },
+      {
+       "label": "B",
+       "text": "两者相等"
+      },
+      {
+       "label": "C",
+       "text": "无法比较"
+      },
+      {
+       "label": "D",
+       "text": "前者小于后者"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "底数 2 大于 1，对数函数单调递增，真数越大对数值越大。因为 3 小于 5，所以以 2 为底 3 的对数小于以 2 为底 5 的对数。",
+     "id": "mxj_h004_q3",
+     "topicId": "mxj_h004",
+     "question": "比较以 2 为底 3 的对数与以 2 为底 5 的对数的大小，正确的是（　）。"
+    },
+    {
+     "prompt": "求以 2 为底 32 的对数的值。",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "因为 2 的 5 次幂等于 32，所以以 2 为底 32 的对数等于 5，这就是对数与指数互化的直接应用。",
+     "verify": "{\"type\": \"num\", \"value\": 5}",
+     "id": "mxj_h004_q4",
+     "topicId": "mxj_h004",
+     "question": "求以 2 为底 32 的对数的值。"
+    },
+    {
+     "prompt": "函数 y 等于 2 的 x 次幂的值域是什么？",
+     "answer": "大于 0 的实数，即 y 大于 0",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "任何实数次幂的结果都是正数，且当 x 趋于负无穷时函数值趋于 0 但不等于 0，当 x 增大时函数值无限增大，所以值域是全体正实数。",
+     "id": "mxj_h004_q5",
+     "topicId": "mxj_h004",
+     "question": "函数 y 等于 2 的 x 次幂的值域是什么？"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h005",
+   "description": "本章把角的概念推广到任意角并引入弧度制，用单位圆定义任意角的三角函数，研究正弦、余弦、正切函数的图象与性质，再讨论形如 y 等于 A 倍 sin(ωx 加 φ) 的函数图象变换，最后用三角函数模型刻画周期现象。",
+   "mastery_criteria": [
+    "能进行角度与弧度的互化，会求扇形弧长与面积",
+    "能说出正弦、余弦、正切函数的周期、奇偶性与单调性",
+    "会用振幅、周期、初相描述简谐运动并解决简单建模问题"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "prompt": "下列各角中与 30 度角终边相同的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "60 度"
+      },
+      {
+       "label": "B",
+       "text": "390 度"
+      },
+      {
+       "label": "C",
+       "text": "300 度"
+      },
+      {
+       "label": "D",
+       "text": "330 度"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "终边相同的角相差 360 度的整数倍。390 度等于 30 度加 360 度，所以与 30 度角终边相同；其余三个与 30 度的差都不是 360 度的整数倍。",
+     "id": "mxj_h005_q1",
+     "topicId": "mxj_h005",
+     "question": "下列各角中与 30 度角终边相同的是（　）。"
+    },
+    {
+     "prompt": "在半径为 2 的圆中，圆心角为三分之 π 的扇形的面积是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "三分之二 π"
+      },
+      {
+       "label": "B",
+       "text": "三分之一 π"
+      },
+      {
+       "label": "C",
+       "text": "三分之四 π"
+      },
+      {
+       "label": "D",
+       "text": "2π"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "扇形面积等于二分之一乘圆心角再乘半径的平方，即二分之一乘三分之 π 再乘 4，结果为三分之二 π，注意圆心角必须用弧度。",
+     "id": "mxj_h005_q2",
+     "topicId": "mxj_h005",
+     "question": "在半径为 2 的圆中，圆心角为三分之 π 的扇形的面积是（　）。"
+    },
+    {
+     "prompt": "已知角 α 的正弦值小于 0，且正切值大于 0，则角 α 的终边在（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "第一象限"
+      },
+      {
+       "label": "B",
+       "text": "第二象限"
+      },
+      {
+       "label": "C",
+       "text": "第三象限"
+      },
+      {
+       "label": "D",
+       "text": "第四象限"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "正弦小于 0 说明终边在第三或第四象限，正切大于 0 说明正弦与余弦同号，两者结合只能是第三象限，此时正弦余弦都为负而正切为正。",
+     "id": "mxj_h005_q3",
+     "topicId": "mxj_h005",
+     "question": "已知角 α 的正弦值小于 0，且正切值大于 0，则角 α 的终边在（　）。"
+    },
+    {
+     "prompt": "请计算 sin 二分之 π 的值，结果是多少？",
+     "answer": 1,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "二分之 π 弧度对应 90 度角，其终边与单位圆交于纵坐标为 1 的点，所以正弦值为 1，这是正弦函数的最大值。",
+     "verify": "{\"type\": \"num\", \"value\": 1}",
+     "id": "mxj_h005_q4",
+     "topicId": "mxj_h005",
+     "question": "请计算 sin 二分之 π 的值，结果是多少？"
+    },
+    {
+     "prompt": "函数 y 等于 sin x 的最小正周期是多少？",
+     "answer": "2π",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "正弦函数每隔 2π 的函数值重复出现，且 2π 是最小的这样的正数，所以最小正周期是 2π。",
+     "id": "mxj_h005_q5",
+     "topicId": "mxj_h005",
+     "question": "函数 y 等于 sin x 的最小正周期是多少？"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h006",
+   "description": "本章学习获取数据的途径与总体、个体、样本、样本容量等统计概念，掌握简单随机抽样、分层抽样与系统抽样的方法，会用统计图表整理数据，并用样本的平均数、方差等数字特征估计总体。",
+   "mastery_criteria": [
+    "能区分总体、个体、样本与样本容量，判断何时用普查或抽样调查",
+    "能根据总体结构选择抽样方法，并按比例分配各层样本量",
+    "会读频率分布直方图，用样本数字特征估计总体"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "prompt": "下列调查中适合采用抽样调查的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "调查全班同学的身高"
+      },
+      {
+       "label": "B",
+       "text": "调查本班学生的视力状况"
+      },
+      {
+       "label": "C",
+       "text": "检测一批灯泡的使用寿命"
+      },
+      {
+       "label": "D",
+       "text": "统计某天班级的出勤人数"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "灯泡寿命检测具有破坏性，逐个检测会让产品全部报废，只能抽取一部分；而其余三项对象数量少且检测无破坏性，适合逐一普查。",
+     "id": "mxj_h006_q1",
+     "topicId": "mxj_h006",
+     "question": "下列调查中适合采用抽样调查的是（　）。"
+    },
+    {
+     "prompt": "某校共有 1000 名学生，抽取 50 名进行调查，这次调查的抽样比是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "二十分之一"
+      },
+      {
+       "label": "B",
+       "text": "五十分之一"
+      },
+      {
+       "label": "C",
+       "text": "十分之一"
+      },
+      {
+       "label": "D",
+       "text": "百分之一"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "抽样比等于样本容量除以总体容量，即 50 除以 1000，约分后等于二十分之一，也就是百分之五。",
+     "id": "mxj_h006_q2",
+     "topicId": "mxj_h006",
+     "question": "某校共有 1000 名学生，抽取 50 名进行调查，这次调查的抽样比是（　）。"
+    },
+    {
+     "prompt": "在频率分布直方图中，所有小矩形的面积之和等于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "样本容量"
+      },
+      {
+       "label": "B",
+       "text": "组距"
+      },
+      {
+       "label": "C",
+       "text": "各组的频数之和"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "每个小矩形的面积等于该组的频率，所有组的频率之和必然等于 1，所以直方图中全部小矩形的面积之和为 1，与样本容量无关。",
+     "id": "mxj_h006_q3",
+     "topicId": "mxj_h006",
+     "question": "在频率分布直方图中，所有小矩形的面积之和等于（　）。"
+    },
+    {
+     "prompt": "请计算数据 1、2、3、4、5 的平均数，结果是多少？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "平均数等于各数据之和除以数据个数，和为 15，个数为 5，所以平均数为 3。这组数据对称分布，平均数正好是中间的数。",
+     "verify": "{\"type\": \"num\", \"value\": 3}",
+     "id": "mxj_h006_q4",
+     "topicId": "mxj_h006",
+     "question": "请计算数据 1、2、3、4、5 的平均数，结果是多少？"
+    },
+    {
+     "prompt": "已知一组数据为 2、4、6、8，则这组数据的方差是多少？",
+     "answer": "5",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "平均数为 5，各数据与平均数之差的平方分别是 9、1、1、9，总和为 20，再除以数据个数 4，得方差为 5。",
+     "id": "mxj_h006_q5",
+     "topicId": "mxj_h006",
+     "question": "已知一组数据为 2、4、6、8，则这组数据的方差是多少？"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "mxj_h1001",
+   "page": null,
+   "description": "本节建立集合的概念，明确元素的确定性与互异性，学习用列举法和描述法表示集合，认识子集、真子集与集合相等，并学习交集、并集、补集三种基本运算。",
+   "mastery_criteria": [
+    "能判断元素与集合的属于关系，并用列举法或描述法表示给定集合",
+    "会求两个集合的交集与并集，会求一个集合在给定全集中的补集"
+   ],
+   "misconceptions": [
+    "把「接近 1 的数」当成集合，忽视元素的确定性",
+    "求补集时漏掉全集这一前提，或把 A 中元素也算进补集"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "prompt": "下列对象中能构成集合的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "一切很大的数"
+      },
+      {
+       "label": "B",
+       "text": "方程 x 的平方减 1 等于 0 的所有实数根"
+      },
+      {
+       "label": "C",
+       "text": "某班个子高的男生"
+      },
+      {
+       "label": "D",
+       "text": "几本有趣的书"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "方程 x 的平方减 1 等于 0 的实数根只有 1 和负 1，标准明确，能构成集合；很大、高、有趣都没有确定标准，不能判断对象是否属于，所以不能构成集合。",
+     "id": "mxj_h1001_q1",
+     "topicId": "mxj_h1001",
+     "question": "下列对象中能构成集合的是（　）。"
+    },
+    {
+     "prompt": "集合中的元素为满足 x 的平方等于 4 的自然数 x，用列举法表示这个集合是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "只含 2 的集合"
+      },
+      {
+       "label": "B",
+       "text": "只含负 2 的集合"
+      },
+      {
+       "label": "C",
+       "text": "含负 2 和 2 的集合"
+      },
+      {
+       "label": "D",
+       "text": "空集"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "方程 x 的平方等于 4 的实数根是 2 和负 2，其中只有 2 是自然数，负 2 不是自然数，所以这个集合只含元素 2。",
+     "id": "mxj_h1001_q2",
+     "topicId": "mxj_h1001",
+     "question": "集合中的元素为满足 x 的平方等于 4 的自然数 x，用列举法表示这个集合是（　）。"
+    },
+    {
+     "prompt": "已知集合 A 由 1、2、3 组成，集合 B 由 2、3、4 组成，则 A 与 B 的交集共有多少个子集？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2 个"
+      },
+      {
+       "label": "B",
+       "text": "3 个"
+      },
+      {
+       "label": "C",
+       "text": "4 个"
+      },
+      {
+       "label": "D",
+       "text": "8 个"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "交集由公共元素 2 和 3 组成，含两个元素，其子集个数为 2 的 2 次方即 4 个，包括空集、两个单元素集合和交集本身。",
+     "id": "mxj_h1001_q3",
+     "topicId": "mxj_h1001",
+     "question": "已知集合 A 由 1、2、3 组成，集合 B 由 2、3、4 组成，则 A 与 B 的交集共有多少个子集？"
+    },
+    {
+     "prompt": "已知全集 U 由 1、2、3、4、5 组成，集合 A 由奇数 1、3、5 组成，则 A 在 U 中的补集是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "由 1、2、3 组成的集合"
+      },
+      {
+       "label": "B",
+       "text": "由 1、3、5 组成的集合"
+      },
+      {
+       "label": "C",
+       "text": "由 1、4、5 组成的集合"
+      },
+      {
+       "label": "D",
+       "text": "由 2、4 组成的集合"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "补集要求元素属于全集但不属于 A。在 1 到 5 中，1、3、5 属于 A，剩下 2 和 4 不属于 A，所以补集是由 2 和 4 组成的集合。",
+     "id": "mxj_h1001_q4",
+     "topicId": "mxj_h1001",
+     "question": "已知全集 U 由 1、2、3、4、5 组成，集合 A 由奇数 1、3、5 组成，则 A 在 U 中的补集是（　）。"
+    },
+    {
+     "prompt": "设集合 M 满足：M 包含 1，且 M 是集合 1、2、3 的子集。这样的 M 共有（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2 个"
+      },
+      {
+       "label": "B",
+       "text": "3 个"
+      },
+      {
+       "label": "C",
+       "text": "4 个"
+      },
+      {
+       "label": "D",
+       "text": "5 个"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "M 必含 1，另外可以从 2 和 3 中任选若干个，因此 M 只含 1、含 1 和 2、含 1 和 3、含 1、2、3 四种情况，共 4 个。",
+     "id": "mxj_h1001_q5",
+     "topicId": "mxj_h1001",
+     "question": "设集合 M 满足：M 包含 1，且 M 是集合 1、2、3 的子集。这样的 M 共有（　）。"
+    },
+    {
+     "prompt": "由三个不同字母 a、b、c 组成的集合共有多少个真子集？",
+     "answer": 7,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "含三个元素的集合共有 2 的 3 次方即 8 个子集，去掉与原集合相等的那个，真子集共 7 个。",
+     "verify": "{\"type\": \"num\", \"value\": 7}",
+     "id": "mxj_h1001_q6",
+     "topicId": "mxj_h1001",
+     "question": "由三个不同字母 a、b、c 组成的集合共有多少个真子集？"
+    },
+    {
+     "prompt": "已知集合 A 由 1、2、3、4 组成，集合 B 由 3、4、5 组成，用列举法写出 A 与 B 的并集。",
+     "answer": "由 1、2、3、4、5 组成的集合，即 A 并 B 等于 1、2、3、4、5",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "并集由属于 A 或属于 B 的所有元素组成，把两集合元素合并，公共的 3 和 4 只写一次，得到 1、2、3、4、5。",
+     "id": "mxj_h1001_q7",
+     "topicId": "mxj_h1001",
+     "question": "已知集合 A 由 1、2、3、4 组成，集合 B 由 3、4、5 组成，用列举法写出 A 与 B 的并集。"
+    },
+    {
+     "prompt": "用描述法表示「被 3 除余 1 的正整数」组成的集合。",
+     "answer": "这个集合是 x 满足 x 等于 3k 加 1 且 k 为自然数的全体",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "被 3 除余 1 的正整数依次是 1、4、7、10，它们都形如 3k 加 1，其中 k 取 0、1、2 等自然数，因此可用 x 等于 3k 加 1、k 属于自然数来刻画这个集合。",
+     "id": "mxj_h1001_q8",
+     "topicId": "mxj_h1001",
+     "question": "用描述法表示「被 3 除余 1 的正整数」组成的集合。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1002",
+   "page": null,
+   "description": "本节学习命题与真假判断，研究充分条件、必要条件与充要条件的含义和判断方法，并学习全称量词、存在量词以及含这两种量词命题的否定形式。",
+   "mastery_criteria": [
+    "能判断给定 p 是 q 的充分条件、必要条件还是充要条件",
+    "会写出含全称量词或存在量词命题的否定，并判断其真假"
+   ],
+   "misconceptions": [
+    "把充分条件与必要条件方向弄反，误认为由结论推条件",
+    "写量词命题的否定时只换量词，忘记否定结论"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "prompt": "下列命题中是假命题的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "若 x 等于 1，则 x 的平方等于 1"
+      },
+      {
+       "label": "B",
+       "text": "所有有理数都是实数"
+      },
+      {
+       "label": "C",
+       "text": "存在实数 x，使 x 的平方加 1 等于 0"
+      },
+      {
+       "label": "D",
+       "text": "若 a 大于 b，则 a 加 1 大于 b 加 1"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "任何实数的平方都不小于 0，再加上 1 一定大于 0，不可能等于 0，所以第三个命题是假命题；其余三个都与实数与不等式的性质相符。",
+     "id": "mxj_h1002_q1",
+     "topicId": "mxj_h1002",
+     "question": "下列命题中是假命题的是（　）。"
+    },
+    {
+     "prompt": "已知 x 是实数，则 x 大于 2 是 x 大于 1 的（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "充分不必要条件"
+      },
+      {
+       "label": "B",
+       "text": "必要不充分条件"
+      },
+      {
+       "label": "C",
+       "text": "充分必要条件"
+      },
+      {
+       "label": "D",
+       "text": "既不充分也不必要条件"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由 x 大于 2 一定能推出 x 大于 1，充分性成立；但 x 取 1.5 时满足 x 大于 1 却不满足 x 大于 2，必要性不成立，所以是充分不必要条件。",
+     "id": "mxj_h1002_q2",
+     "topicId": "mxj_h1002",
+     "question": "已知 x 是实数，则 x 大于 2 是 x 大于 1 的（　）。"
+    },
+    {
+     "prompt": "已知 a、b 是实数，则 a 等于 b 是 a 的平方等于 b 的平方的（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "必要不充分条件"
+      },
+      {
+       "label": "B",
+       "text": "充分不必要条件"
+      },
+      {
+       "label": "C",
+       "text": "充分必要条件"
+      },
+      {
+       "label": "D",
+       "text": "既不充分也不必要条件"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "a 等于 b 时两边平方当然相等，充分性成立；但 a 等于 1、b 等于负 1 时平方也相等，所以必要性不成立，是充分不必要条件。",
+     "id": "mxj_h1002_q3",
+     "topicId": "mxj_h1002",
+     "question": "已知 a、b 是实数，则 a 等于 b 是 a 的平方等于 b 的平方的（　）。"
+    },
+    {
+     "prompt": "已知 x、y 是实数，则 x 等于 0 且 y 等于 0 是 x 的平方加 y 的平方等于 0 的（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "充分不必要条件"
+      },
+      {
+       "label": "B",
+       "text": "必要不充分条件"
+      },
+      {
+       "label": "C",
+       "text": "充分必要条件"
+      },
+      {
+       "label": "D",
+       "text": "既不充分也不必要条件"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两数都为 0 时平方和显然为 0；反之两个非负数之和为 0，只能每个都为 0，即 x 与 y 都等于 0，两个方向都成立，所以是充要条件。",
+     "id": "mxj_h1002_q4",
+     "topicId": "mxj_h1002",
+     "question": "已知 x、y 是实数，则 x 等于 0 且 y 等于 0 是 x 的平方加 y 的平方等于 0 的（　）。"
+    },
+    {
+     "prompt": "命题「存在实数 x，使 x 的平方加 2x 加 3 小于或等于 0」的真假是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "真命题"
+      },
+      {
+       "label": "B",
+       "text": "假命题"
+      },
+      {
+       "label": "C",
+       "text": "有时真有时假"
+      },
+      {
+       "label": "D",
+       "text": "无法判断"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "把二次式配方得 x 加 1 的平方再加 2，它对任何实数都大于或等于 2，绝不可能小于或等于 0，所以这个存在量词命题是假命题。",
+     "id": "mxj_h1002_q5",
+     "topicId": "mxj_h1002",
+     "question": "命题「存在实数 x，使 x 的平方加 2x 加 3 小于或等于 0」的真假是（　）。"
+    },
+    {
+     "prompt": "已知集合 A 是大于 1 的实数组成的集合，集合 B 是大于 a 的实数组成的集合，若 A 是 B 的子集，则 a 的最大值是多少？",
+     "answer": 1,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "A 是 B 的子集要求凡是大于 1 的数都大于 a，即 a 不能大于 1，所以 a 小于或等于 1，a 的最大值是 1。",
+     "verify": "{\"type\": \"num\", \"value\": 1}",
+     "id": "mxj_h1002_q6",
+     "topicId": "mxj_h1002",
+     "question": "已知集合 A 是大于 1 的实数组成的集合，集合 B 是大于 a 的实数组成的集合，若 A 是 B 的子集，则 a 的最大值是多少？"
+    },
+    {
+     "prompt": "写出命题「对任意实数 x，x 的平方加 2x 加 3 都大于 0」的否定。",
+     "answer": "存在实数 x，使 x 的平方加 2x 加 3 小于或等于 0",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "全称量词命题的否定是存在量词命题，同时要把结论「大于 0」否定为「小于或等于 0」，所以否定是存在实数 x 使该二次式小于或等于 0。",
+     "id": "mxj_h1002_q7",
+     "topicId": "mxj_h1002",
+     "question": "写出命题「对任意实数 x，x 的平方加 2x 加 3 都大于 0」的否定。"
+    },
+    {
+     "prompt": "写出「若两个三角形全等，则这两个三角形的面积相等」的逆命题，并判断其真假。",
+     "answer": "逆命题是若两个三角形面积相等则它们全等，这是假命题，面积相等不能保证形状相同",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "把原命题的条件与结论交换得到逆命题。面积相等的两个三角形可能一个很扁一个很陡，形状不同并不全等，所以逆命题为假。",
+     "id": "mxj_h1002_q8",
+     "topicId": "mxj_h1002",
+     "question": "写出「若两个三角形全等，则这两个三角形的面积相等」的逆命题，并判断其真假。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1003",
+   "page": null,
+   "description": "本节从等式的性质过渡到不等式的性质，学习用差值与商值比较两个实数或代数式的大小，掌握不等式在两边加减、乘除正负数时的变形规则，并用它们解决简单的范围问题。",
+   "mastery_criteria": [
+    "会用求差法比较两个代数式的大小，并说明差的符号依据",
+    "能正确运用不等式性质进行变形，特别注意乘除负数时变号"
+   ],
+   "misconceptions": [
+    "不等式两边同乘一个字母时不做符号讨论，直接保留不等号",
+    "比较大小只代特殊值，未给出一般性说明"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "prompt": "已知 a 等于 b，则下列各式一定成立的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 减 c 等于 b 加 c"
+      },
+      {
+       "label": "B",
+       "text": "ac 等于 bd"
+      },
+      {
+       "label": "C",
+       "text": "a 加 c 等于 b 加 c"
+      },
+      {
+       "label": "D",
+       "text": "a 除以 c 等于 b 除以 c"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "等式两边同加同一个数仍然相等，所以 a 加 c 等于 b 加 c 恒成立；乘不同的数、除以可能为 0 的 c 都不能保证成立。",
+     "id": "mxj_h1003_q1",
+     "topicId": "mxj_h1003",
+     "question": "已知 a 等于 b，则下列各式一定成立的是（　）。"
+    },
+    {
+     "prompt": "已知 a 等于根号 5，b 等于 2.2，则 a 与 b 的大小关系是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 大于 b"
+      },
+      {
+       "label": "B",
+       "text": "a 小于 b"
+      },
+      {
+       "label": "C",
+       "text": "a 等于 b"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "比较平方：a 的平方等于 5，b 的平方等于 4.84，二者都为正数且 5 大于 4.84，所以 a 大于 b，即根号 5 约等于 2.236 大于 2.2。",
+     "id": "mxj_h1003_q2",
+     "topicId": "mxj_h1003",
+     "question": "已知 a 等于根号 5，b 等于 2.2，则 a 与 b 的大小关系是（　）。"
+    },
+    {
+     "prompt": "已知 a 大于 b，c 小于 0，则下列不等式成立的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "ac 大于 bc"
+      },
+      {
+       "label": "B",
+       "text": "ac 小于 bc"
+      },
+      {
+       "label": "C",
+       "text": "a 加 c 小于 b 加 c"
+      },
+      {
+       "label": "D",
+       "text": "a 除以 c 大于 b 除以 c"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "不等式两边同乘负数，不等号方向改变，所以 ac 小于 bc；同加同一个数方向不变，故 a 加 c 应大于 b 加 c，同除以负数也应反向。",
+     "id": "mxj_h1003_q3",
+     "topicId": "mxj_h1003",
+     "question": "已知 a 大于 b，c 小于 0，则下列不等式成立的是（　）。"
+    },
+    {
+     "prompt": "已知 a 大于 b 大于 0，c 大于 d 大于 0，则下列不等式一定成立的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "ac 大于 bd"
+      },
+      {
+       "label": "B",
+       "text": "ac 小于 bd"
+      },
+      {
+       "label": "C",
+       "text": "a 减 c 大于 b 减 d"
+      },
+      {
+       "label": "D",
+       "text": "a 除以 c 大于 b 除以 d"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "各字母都为正数时，同向正数不等式可以相乘，由 a 大于 b 与 c 大于 d 得 ac 大于 bd；减法与异向相除都不能直接由条件推出。",
+     "id": "mxj_h1003_q4",
+     "topicId": "mxj_h1003",
+     "question": "已知 a 大于 b 大于 0，c 大于 d 大于 0，则下列不等式一定成立的是（　）。"
+    },
+    {
+     "prompt": "把「x 的 2 倍与 3 的差不大于 5」用不等式表示，正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x 减 3 大于或等于 5"
+      },
+      {
+       "label": "B",
+       "text": "2x 减 3 小于或等于 5"
+      },
+      {
+       "label": "C",
+       "text": "2x 减 3 小于 5"
+      },
+      {
+       "label": "D",
+       "text": "2x 减 3 大于 5"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "不大于就是小于或等于，含等号；先写 2x 再减去 3，所以不等式为 2x 减 3 小于或等于 5，注意不能漏掉等号也不能写成严格小于。",
+     "id": "mxj_h1003_q5",
+     "topicId": "mxj_h1003",
+     "question": "把「x 的 2 倍与 3 的差不大于 5」用不等式表示，正确的是（　）。"
+    },
+    {
+     "prompt": "不等式 3x 小于 12 的最大整数解是多少？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "两边同除以正数 3，不等号方向不变，得 x 小于 4，小于 4 的整数中最大的是 3，所以最大整数解为 3。",
+     "verify": "{\"type\": \"num\", \"value\": 3}",
+     "id": "mxj_h1003_q6",
+     "topicId": "mxj_h1003",
+     "question": "不等式 3x 小于 12 的最大整数解是多少？"
+    },
+    {
+     "prompt": "已知 a 减 b 小于 0，则 a 与 b 的大小关系是什么？",
+     "answer": "a 小于 b",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "由 a 减 b 小于 0，两边同加 b，不等号方向不变，得 a 小于 b，这就是求差法比较大小的基本结论。",
+     "id": "mxj_h1003_q7",
+     "topicId": "mxj_h1003",
+     "question": "已知 a 减 b 小于 0，则 a 与 b 的大小关系是什么？"
+    },
+    {
+     "prompt": "用求差法证明：对任意实数 a、b，都有 a 的平方加 b 的平方大于或等于 2ab。",
+     "answer": "因为 a 的平方加 b 的平方减 2ab 等于 a 减 b 的差的平方，它大于或等于 0，所以原不等式成立",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "作差得 a 的平方减 2ab 加 b 的平方，正好是 a 减 b 的完全平方。完全平方非负，所以差大于或等于 0，移项即得 a 的平方加 b 的平方大于或等于 2ab，当 a 等于 b 时取等号。",
+     "id": "mxj_h1003_q8",
+     "topicId": "mxj_h1003",
+     "question": "用求差法证明：对任意实数 a、b，都有 a 的平方加 b 的平方大于或等于 2ab。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1004",
+   "page": null,
+   "description": "本节把一元二次方程的实根看作二次函数图象与 x 轴交点的横坐标，用判别式判断交点个数，并用韦达定理研究两根之和与两根之积，建立方程与函数之间的联系。",
+   "mastery_criteria": [
+    "能把一元二次方程 ax 的平方加 bx 加 c 等于 0 的根与抛物线和 x 轴的交点对应起来",
+    "会用判别式判断实根个数，会用韦达定理求两根之和与两根之积"
+   ],
+   "misconceptions": [
+    "把函数图象与 x 轴交点个数等同于与 y 轴交点个数",
+    "使用韦达定理时忘记先把二次项系数化为 1，导致和与积的符号出错"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "prompt": "二次函数 y 等于 x 的平方减 2x 减 3 的图象与 x 轴的交点个数是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "0 个"
+      },
+      {
+       "label": "B",
+       "text": "1 个"
+      },
+      {
+       "label": "C",
+       "text": "2 个"
+      },
+      {
+       "label": "D",
+       "text": "3 个"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "令函数值为 0，方程左边分解为 x 减 3 与 x 加 1 的积，得两个不同实根 3 和负 1，所以图象与 x 轴有两个交点。",
+     "id": "mxj_h1004_q1",
+     "topicId": "mxj_h1004",
+     "question": "二次函数 y 等于 x 的平方减 2x 减 3 的图象与 x 轴的交点个数是（　）。"
+    },
+    {
+     "prompt": "一元二次方程 ax 的平方加 bx 加 c 等于 0（a 不等于 0）有两个相等实根的充要条件是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "判别式小于 0"
+      },
+      {
+       "label": "B",
+       "text": "判别式大于 0"
+      },
+      {
+       "label": "C",
+       "text": "判别式等于 0"
+      },
+      {
+       "label": "D",
+       "text": "a 等于 0"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "判别式等于 0 时方程有两个相等实根，此时抛物线顶点正好落在 x 轴上，图象与 x 轴只有一个公共点。判别式大于 0 有两个不等实根，小于 0 没有实根。",
+     "id": "mxj_h1004_q2",
+     "topicId": "mxj_h1004",
+     "question": "一元二次方程 ax 的平方加 bx 加 c 等于 0（a 不等于 0）有两个相等实根的充要条件是（　）。"
+    },
+    {
+     "prompt": "函数 y 等于 x 的平方减 4x 加 4 的零点个数是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "0 个"
+      },
+      {
+       "label": "B",
+       "text": "1 个"
+      },
+      {
+       "label": "C",
+       "text": "2 个"
+      },
+      {
+       "label": "D",
+       "text": "4 个"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "函数值等于 x 减 2 的差的平方，只有当 x 等于 2 时为零，所以零点只有一个，即 x 等于 2，对应图象与 x 轴相切。",
+     "id": "mxj_h1004_q3",
+     "topicId": "mxj_h1004",
+     "question": "函数 y 等于 x 的平方减 4x 加 4 的零点个数是（　）。"
+    },
+    {
+     "prompt": "函数 y 等于 x 的平方减 5x 加 6 的零点是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2 和 3"
+      },
+      {
+       "label": "B",
+       "text": "负 2 和负 3"
+      },
+      {
+       "label": "C",
+       "text": "1 和 6"
+      },
+      {
+       "label": "D",
+       "text": "负 1 和负 6"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "令 y 等于 0，左边分解为 x 减 2 与 x 减 3 的积，得 x 等于 2 或 x 等于 3，这两个数就是函数的零点，也就是图象与 x 轴交点的横坐标。",
+     "id": "mxj_h1004_q4",
+     "topicId": "mxj_h1004",
+     "question": "函数 y 等于 x 的平方减 5x 加 6 的零点是（　）。"
+    },
+    {
+     "prompt": "若函数 y 等于 x 的平方加 2x 加 m 的图象与 x 轴只有一个公共点，则 m 的值是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "0"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "负 1"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "只有一个公共点意味着对应方程有两个相等实根，判别式 4 减 4m 等于 0，解得 m 等于 1，此时函数为 x 加 1 的完全平方。",
+     "id": "mxj_h1004_q5",
+     "topicId": "mxj_h1004",
+     "question": "若函数 y 等于 x 的平方加 2x 加 m 的图象与 x 轴只有一个公共点，则 m 的值是（　）。"
+    },
+    {
+     "prompt": "已知方程 x 的平方减 2x 减 8 等于 0 有两个实根，则这两个根的和是多少？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由韦达定理，两根之和等于负的一次项系数除以二次项系数，即 2；也可分解为 x 减 4 与 x 加 2，两根 4 与负 2 之和为 2。",
+     "verify": "{\"type\": \"num\", \"value\": 2}",
+     "id": "mxj_h1004_q6",
+     "topicId": "mxj_h1004",
+     "question": "已知方程 x 的平方减 2x 减 8 等于 0 有两个实根，则这两个根的和是多少？"
+    },
+    {
+     "prompt": "一元二次方程 x 的平方减 7x 加 12 等于 0 的两根之积是多少？",
+     "answer": "12",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "由韦达定理，两根之积等于常数项除以二次项系数，二次项系数为 1，所以积等于 12；也可分解为 x 减 3 与 x 减 4 验证。",
+     "id": "mxj_h1004_q7",
+     "topicId": "mxj_h1004",
+     "question": "一元二次方程 x 的平方减 7x 加 12 等于 0 的两根之积是多少？"
+    },
+    {
+     "prompt": "说明二次函数 y 等于 ax 的平方加 bx 加 c（a 不等于 0）的图象与 x 轴交点个数由什么决定，并写出三种情形。",
+     "answer": "由判别式决定：判别式大于 0 时有两个交点，等于 0 时有一个交点，小于 0 时没有交点",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "图象与 x 轴交点横坐标就是方程 ax 的平方加 bx 加 c 等于 0 的实根。判别式大于 0 有两个不等实根即两个交点；等于 0 有两个相等实根即一个交点；小于 0 无实根即没有交点。",
+     "id": "mxj_h1004_q8",
+     "topicId": "mxj_h1004",
+     "question": "说明二次函数 y 等于 ax 的平方加 bx 加 c（a 不等于 0）的图象与 x 轴交点个数由什么决定，并写出三种情形。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1005",
+   "page": null,
+   "description": "本节学习一元二次不等式的解法：先求对应方程的根，再结合抛物线开口方向写出解集，并处理二次项系数为负、判别式非正以及恒成立等情形。",
+   "mastery_criteria": [
+    "能按「求根、画图、写解集」的步骤解一元二次不等式",
+    "会处理二次项系数为负的不等式，并能解决简单的不等式恒成立问题"
+   ],
+   "misconceptions": [
+    "解集写成「两根之间」还是「两根之外」看错开口方向",
+    "二次项系数为负时忘记先化为正再写解集，导致区间反向"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "prompt": "不等式 x 的平方减 x 减 6 大于 0 的解集是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "小于负 2 或大于 3 的实数"
+      },
+      {
+       "label": "B",
+       "text": "大于负 2 且小于 3 的实数"
+      },
+      {
+       "label": "C",
+       "text": "小于负 3 或大于 2 的实数"
+      },
+      {
+       "label": "D",
+       "text": "大于负 3 且小于 2 的实数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "左边分解为 x 减 3 与 x 加 2 的积，两根为负 2 和 3，抛物线开口向上，函数值大于 0 的部分在两根之外，所以解集是小于负 2 或大于 3。",
+     "id": "mxj_h1005_q1",
+     "topicId": "mxj_h1005",
+     "question": "不等式 x 的平方减 x 减 6 大于 0 的解集是（　）。"
+    },
+    {
+     "prompt": "不等式 x 减 1 与 x 加 3 的积小于 0 的解集是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "小于负 3 或大于 1 的实数"
+      },
+      {
+       "label": "B",
+       "text": "大于负 3 且小于 1 的实数"
+      },
+      {
+       "label": "C",
+       "text": "大于负 1 且小于 3 的实数"
+      },
+      {
+       "label": "D",
+       "text": "小于负 1 或大于 3 的实数"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两根为 1 和负 3，二次项系数为正，抛物线开口向上，积小于 0 的部分在两根之间，所以解集是负 3 小于 x 小于 1。",
+     "id": "mxj_h1005_q2",
+     "topicId": "mxj_h1005",
+     "question": "不等式 x 减 1 与 x 加 3 的积小于 0 的解集是（　）。"
+    },
+    {
+     "prompt": "不等式负 x 的平方加 2x 加 3 大于或等于 0 的解集是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "小于或等于负 1 或大于或等于 3 的实数"
+      },
+      {
+       "label": "B",
+       "text": "大于或等于负 3 且小于或等于 1 的实数"
+      },
+      {
+       "label": "C",
+       "text": "小于或等于负 3 或大于或等于 1 的实数"
+      },
+      {
+       "label": "D",
+       "text": "大于或等于负 1 且小于或等于 3 的实数"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两边同乘负 1 化为 x 的平方减 2x 减 3 小于或等于 0，分解为 x 减 3 与 x 加 1 的积，解集是负 1 到 3 的闭区间，即负 1 小于或等于 x 小于或等于 3。",
+     "id": "mxj_h1005_q3",
+     "topicId": "mxj_h1005",
+     "question": "不等式负 x 的平方加 2x 加 3 大于或等于 0 的解集是（　）。"
+    },
+    {
+     "prompt": "若不等式 x 的平方加 mx 加 1 大于 0 对一切实数 x 都成立，则 m 的取值范围是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "负 2 小于 m 小于 2"
+      },
+      {
+       "label": "B",
+       "text": "m 小于负 2 或 m 大于 2"
+      },
+      {
+       "label": "C",
+       "text": "负 2 小于或等于 m 小于或等于 2"
+      },
+      {
+       "label": "D",
+       "text": "0 小于 m 小于 2"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "二次项系数为正，恒大于 0 要求抛物线开口向上且与 x 轴无交点，即判别式 m 的平方减 4 小于 0，解得负 2 小于 m 小于 2。",
+     "id": "mxj_h1005_q4",
+     "topicId": "mxj_h1005",
+     "question": "若不等式 x 的平方加 mx 加 1 大于 0 对一切实数 x 都成立，则 m 的取值范围是（　）。"
+    },
+    {
+     "prompt": "不等式 x 的平方减 4 小于或等于 0 的整数解共有（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3 个"
+      },
+      {
+       "label": "B",
+       "text": "4 个"
+      },
+      {
+       "label": "C",
+       "text": "5 个"
+      },
+      {
+       "label": "D",
+       "text": "6 个"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "解集是负 2 小于或等于 x 小于或等于 2，其中的整数为负 2、负 1、0、1、2，共 5 个，注意两个端点都取到，不要漏算。",
+     "id": "mxj_h1005_q5",
+     "topicId": "mxj_h1005",
+     "question": "不等式 x 的平方减 4 小于或等于 0 的整数解共有（　）。"
+    },
+    {
+     "prompt": "不等式 x 的平方减 6x 加 5 小于或等于 0 的整数解共有多少个？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "左边分解为 x 减 1 与 x 减 5 的积，解集是 1 小于或等于 x 小于或等于 5，整数解为 1、2、3、4、5，共 5 个。",
+     "verify": "{\"type\": \"num\", \"value\": 5}",
+     "id": "mxj_h1005_q6",
+     "topicId": "mxj_h1005",
+     "question": "不等式 x 的平方减 6x 加 5 小于或等于 0 的整数解共有多少个？"
+    },
+    {
+     "prompt": "不等式 x 的平方大于 9 的解集是什么？",
+     "answer": "x 小于负 3 或 x 大于 3",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "移项得 x 的平方减 9 大于 0，分解为 x 减 3 与 x 加 3 的积，两根为负 3 和 3，开口向上取两根之外，所以解集是 x 小于负 3 或 x 大于 3。",
+     "id": "mxj_h1005_q7",
+     "topicId": "mxj_h1005",
+     "question": "不等式 x 的平方大于 9 的解集是什么？"
+    },
+    {
+     "prompt": "解不等式 2x 的平方减 3x 减 2 大于或等于 0。",
+     "answer": "左边分解为 2x 加 1 与 x 减 2 的积，解集是 x 小于或等于负二分之一或 x 大于或等于 2",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "先把左边因式分解为 2x 加 1 与 x 减 2 的积，得两根负二分之一和 2，二次项系数为 2 大于 0，抛物线开口向上，取两根之外，故解集为 x 小于或等于负二分之一或 x 大于或等于 2。",
+     "id": "mxj_h1005_q8",
+     "topicId": "mxj_h1005",
+     "question": "解不等式 2x 的平方减 3x 减 2 大于或等于 0。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1006",
+   "page": null,
+   "description": "本节用集合语言给出函数的定义，强调定义域、值域与对应关系三个要素，学习求简单函数的定义域与函数值，并认识分段函数在每一段上分别对应一个解析式的特点。",
+   "mastery_criteria": [
+    "能根据解析式求出使函数有意义的自变量取值范围",
+    "会求具体点的函数值，并能读懂分段函数并在相应段上代入"
+   ],
+   "misconceptions": [
+    "求定义域时只看形式，漏掉分母不为零或偶次根号下非负的条件",
+    "求分段函数值时选错代入的解析式，忽略分段的界点"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "prompt": "下列对应关系中，y 是 x 的函数的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 大于 0 时 y 的平方等于 x"
+      },
+      {
+       "label": "B",
+       "text": "y 的绝对值等于 x"
+      },
+      {
+       "label": "C",
+       "text": "每一个 x 都对应两个 y"
+      },
+      {
+       "label": "D",
+       "text": "y 等于 x 的平方"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "函数要求对定义域内每个 x 都有唯一确定的 y 与之对应。前三项中同一个 x 往往对应两个 y，不满足唯一性；而 y 等于 x 的平方对每个 x 只给出一个 y。",
+     "id": "mxj_h1006_q1",
+     "topicId": "mxj_h1006",
+     "question": "下列对应关系中，y 是 x 的函数的是（　）。"
+    },
+    {
+     "prompt": "函数 f(x) 等于 1 除以 x 减 2 的定义域是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 不等于 2 的实数"
+      },
+      {
+       "label": "B",
+       "text": "x 大于 2 的实数"
+      },
+      {
+       "label": "C",
+       "text": "x 小于 2 的实数"
+      },
+      {
+       "label": "D",
+       "text": "全体实数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "分式要有意义，分母不能为 0，所以 x 减 2 不等于 0，即 x 不等于 2。除此之外 x 可以取任何实数。",
+     "id": "mxj_h1006_q2",
+     "topicId": "mxj_h1006",
+     "question": "函数 f(x) 等于 1 除以 x 减 2 的定义域是（　）。"
+    },
+    {
+     "prompt": "函数 f(x) 等于根号下 x 减 1 的定义域是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 大于 1 的实数"
+      },
+      {
+       "label": "B",
+       "text": "x 小于或等于 1 的实数"
+      },
+      {
+       "label": "C",
+       "text": "x 不等于 1 的实数"
+      },
+      {
+       "label": "D",
+       "text": "x 大于或等于 1 的实数"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "偶次根号下必须非负，所以 x 减 1 大于或等于 0，得 x 大于或等于 1。x 等于 1 时根号内为 0，函数值为 0，仍然有意义，故端点要取。",
+     "id": "mxj_h1006_q3",
+     "topicId": "mxj_h1006",
+     "question": "函数 f(x) 等于根号下 x 减 1 的定义域是（　）。"
+    },
+    {
+     "prompt": "函数 f(x) 等于 x 的平方加 1 的值域是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "全体实数"
+      },
+      {
+       "label": "B",
+       "text": "大于或等于 1 的实数"
+      },
+      {
+       "label": "C",
+       "text": "大于 1 的实数"
+      },
+      {
+       "label": "D",
+       "text": "大于或等于 0 的实数"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "x 的平方最小为 0，在 x 等于 0 时取到，所以整个函数值最小为 1；当 x 的绝对值增大时函数值无限增大，因此值域是大于或等于 1 的实数。",
+     "id": "mxj_h1006_q4",
+     "topicId": "mxj_h1006",
+     "question": "函数 f(x) 等于 x 的平方加 1 的值域是（　）。"
+    },
+    {
+     "prompt": "已知函数在 x 小于 0 时等于 x 加 1，在 x 大于或等于 0 时等于 x 的平方，则 f(负 1) 与 f(2) 的和是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "负 1 小于 0，代入第一段得 f(负 1) 等于 0；2 大于或等于 0，代入第二段得 f(2) 等于 4。两值相加等于 4，关键是按自变量所在范围选对解析式。",
+     "id": "mxj_h1006_q5",
+     "topicId": "mxj_h1006",
+     "question": "已知函数在 x 小于 0 时等于 x 加 1，在 x 大于或等于 0 时等于 x 的平方，则 f(负 1) 与 f(2) 的和是（　）。"
+    },
+    {
+     "prompt": "已知函数 f(x) 等于 x 的平方减 2x，求 f(3) 的值。",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "把 x 等于 3 代入解析式，得 9 减 6，结果为 3，代入时注意负号与运算顺序，先算平方再相减。",
+     "verify": "{\"type\": \"num\", \"value\": 3}",
+     "id": "mxj_h1006_q6",
+     "topicId": "mxj_h1006",
+     "question": "已知函数 f(x) 等于 x 的平方减 2x，求 f(3) 的值。"
+    },
+    {
+     "prompt": "已知函数 f(x) 等于 3x 减 2，若 f(a) 等于 4，则 a 等于多少？",
+     "answer": "2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由 f(a) 等于 4 得 3a 减 2 等于 4，移项得 3a 等于 6，所以 a 等于 2，这是已知函数值反求自变量的基本方法。",
+     "id": "mxj_h1006_q7",
+     "topicId": "mxj_h1006",
+     "question": "已知函数 f(x) 等于 3x 减 2，若 f(a) 等于 4，则 a 等于多少？"
+    },
+    {
+     "prompt": "判断关系式 y 的平方等于 x 是否表示 y 是 x 的函数，并说明理由。",
+     "answer": "不表示，因为当 x 大于 0 时 y 有两个不同的值与之对应，不满足唯一性",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "取 x 等于 4，则 y 等于 2 或 y 等于负 2 都满足关系式，同一个 x 对应了两个 y，这与函数要求每个 x 有唯一确定的 y 相矛盾，所以它不是函数。",
+     "id": "mxj_h1006_q8",
+     "topicId": "mxj_h1006",
+     "question": "判断关系式 y 的平方等于 x 是否表示 y 是 x 的函数，并说明理由。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1007",
+   "page": null,
+   "description": "本节研究函数的单调性、最大值与最小值以及奇偶性：用定义刻画函数值随自变量增大而增大或减小，用图象的最高点最低点理解最值，用 f(负 x) 与 f(x) 的关系区分奇函数与偶函数。",
+   "mastery_criteria": [
+    "能用定义证明函数在给定区间上的单调性",
+    "会判断函数的奇偶性，并利用奇偶性与单调性求最值"
+   ],
+   "misconceptions": [
+    "证明单调性时只在区间内代两个特殊值，未作一般性推理",
+    "判断奇偶性时忽略定义域是否关于原点对称"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "prompt": "函数 f(x) 等于负 2x 加 1 在全体实数上的单调性是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "单调递减"
+      },
+      {
+       "label": "B",
+       "text": "单调递增"
+      },
+      {
+       "label": "C",
+       "text": "先增后减"
+      },
+      {
+       "label": "D",
+       "text": "不具有单调性"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "一次函数在一次项系数为负时单调递减。也可用定义验证：当 x1 小于 x2 时，f(x2) 减 f(x1) 等于负 2 倍的 x2 减 x1，为负数，所以函数值随自变量增大而减小。",
+     "id": "mxj_h1007_q1",
+     "topicId": "mxj_h1007",
+     "question": "函数 f(x) 等于负 2x 加 1 在全体实数上的单调性是（　）。"
+    },
+    {
+     "prompt": "下列函数中是奇函数的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y 等于 x 的平方"
+      },
+      {
+       "label": "B",
+       "text": "y 等于 x 的 3 次幂"
+      },
+      {
+       "label": "C",
+       "text": "y 等于 x 的平方加 1"
+      },
+      {
+       "label": "D",
+       "text": "y 等于 x 的绝对值"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把 x 换成负 x，x 的 3 次幂变为原来的相反数，满足 f(负 x) 等于负 f(x)，所以是奇函数；其余三个都满足 f(负 x) 等于 f(x)，是偶函数。",
+     "id": "mxj_h1007_q2",
+     "topicId": "mxj_h1007",
+     "question": "下列函数中是奇函数的是（　）。"
+    },
+    {
+     "prompt": "下列函数中是偶函数的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y 等于 x 的立方"
+      },
+      {
+       "label": "B",
+       "text": "y 等于 x 加 1"
+      },
+      {
+       "label": "C",
+       "text": "y 等于 x 的平方加 1"
+      },
+      {
+       "label": "D",
+       "text": "y 等于 x 分之一"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把 x 换成负 x，x 的平方加 1 的值不变，满足 f(负 x) 等于 f(x)，所以是偶函数。立方与 x 分之一是奇函数，x 加 1 既不是奇函数也不是偶函数。",
+     "id": "mxj_h1007_q3",
+     "topicId": "mxj_h1007",
+     "question": "下列函数中是偶函数的是（　）。"
+    },
+    {
+     "prompt": "当 x 满足 1 小于或等于 x 小于或等于 4 时，函数 f(x) 等于 x 的平方减 4x 加 5 的最大值是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "配方得 x 减 2 的平方再加 1，顶点横坐标 2 在范围内，最小值是 1。最大值在离对称轴较远的端点 x 等于 4 处取得，等于 16 减 16 加 5，即 5。",
+     "id": "mxj_h1007_q4",
+     "topicId": "mxj_h1007",
+     "question": "当 x 满足 1 小于或等于 x 小于或等于 4 时，函数 f(x) 等于 x 的平方减 4x 加 5 的最大值是（　）。"
+    },
+    {
+     "prompt": "已知 f(x) 是奇函数，且 f(2) 等于 3，则 f(负 2) 的值是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "0"
+      },
+      {
+       "label": "C",
+       "text": "无法确定"
+      },
+      {
+       "label": "D",
+       "text": "负 3"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "奇函数满足 f(负 x) 等于负 f(x)，取 x 等于 2 得 f(负 2) 等于负 f(2)，即负 3。注意不能把奇函数与偶函数的结论混淆。",
+     "id": "mxj_h1007_q5",
+     "topicId": "mxj_h1007",
+     "question": "已知 f(x) 是奇函数，且 f(2) 等于 3，则 f(负 2) 的值是（　）。"
+    },
+    {
+     "prompt": "当 x 满足 1 小于或等于 x 小于或等于 4 时，函数 f(x) 等于 x 的平方减 4x 加 5 的最小值是多少？",
+     "answer": 1,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "配方得 f(x) 等于 x 减 2 的平方加 1，因为 2 在 1 到 4 之间，所以 x 等于 2 时取到最小值 1；两个端点的值分别是 2 和 5，都比 1 大。",
+     "verify": "{\"type\": \"num\", \"value\": 1}",
+     "id": "mxj_h1007_q6",
+     "topicId": "mxj_h1007",
+     "question": "当 x 满足 1 小于或等于 x 小于或等于 4 时，函数 f(x) 等于 x 的平方减 4x 加 5 的最小值是多少？"
+    },
+    {
+     "prompt": "已知函数 f(x) 等于 x 的 3 次幂，且 f(a) 等于 8，则 a 等于多少？",
+     "answer": "2",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "由 a 的 3 次幂等于 8 得 a 等于 2，因为 2 的 3 次幂正好是 8，且实数范围内立方根唯一，所以只有一个解。",
+     "id": "mxj_h1007_q7",
+     "topicId": "mxj_h1007",
+     "question": "已知函数 f(x) 等于 x 的 3 次幂，且 f(a) 等于 8，则 a 等于多少？"
+    },
+    {
+     "prompt": "用定义证明函数 f(x) 等于 x 的平方在 0 到正无穷上是单调递增函数。",
+     "answer": "设 0 小于 x1 小于 x2，则 f(x1) 减 f(x2) 等于 x1 减 x2 乘 x1 加 x2，两个因式一负一正，积为负，所以函数单调递增",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "任取区间内两个数 x1 小于 x2，作差并分解为 x1 减 x2 与 x1 加 x2 的积。由于 x1 减 x2 小于 0，而两数都为正故 x1 加 x2 大于 0，差为负，即 f(x1) 小于 f(x2)，由定义知函数在 0 到正无穷上单调递增。",
+     "id": "mxj_h1007_q8",
+     "topicId": "mxj_h1007",
+     "question": "用定义证明函数 f(x) 等于 x 的平方在 0 到正无穷上是单调递增函数。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1008",
+   "page": null,
+   "description": "本节把整数指数幂推广到分数指数幂与实数指数幂，学习根式与分数指数幂的互化及幂的运算性质，并研究形如 y 等于 x 的 a 次幂的幂函数的定义域、奇偶性与单调性。",
+   "mastery_criteria": [
+    "能把根式化为分数指数幂，并用运算性质化简指数式",
+    "能说出常见幂函数的定义域、奇偶性与单调性"
+   ],
+   "misconceptions": [
+    "把负指数幂算成负数，如认为 2 的负 1 次幂等于负 2",
+    "忽略 0 的负指数幂没有意义，或把偶次根式的被开方式当成可负"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "prompt": "计算 8 的 2/3 次幂，所得的结果是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "16"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把 8 看成 2 的 3 次幂，则 8 的 2/3 次幂等于 2 的 3 乘 2/3 次幂，即 2 的平方等于 4。也可先开立方得 2，再平方得 4。",
+     "id": "mxj_h1008_q1",
+     "topicId": "mxj_h1008",
+     "question": "计算 8 的 2/3 次幂，所得的结果是（　）。"
+    },
+    {
+     "prompt": "下列各式中没有意义的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "负 8 的 1/3 次幂"
+      },
+      {
+       "label": "B",
+       "text": "8 的 0 次幂"
+      },
+      {
+       "label": "C",
+       "text": "0 的负 2 次幂"
+      },
+      {
+       "label": "D",
+       "text": "4 的 1/2 次幂"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "0 的负指数幂相当于先取倒数再乘方，而 0 不能作除数，所以没有意义。负 8 的 1/3 次幂是负 2，8 的 0 次幂是 1，4 的 1/2 次幂是 2，都有意义。",
+     "id": "mxj_h1008_q2",
+     "topicId": "mxj_h1008",
+     "question": "下列各式中没有意义的是（　）。"
+    },
+    {
+     "prompt": "关于幂函数 y 等于 x 的 3 次幂，下列说法正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "是奇函数且在全体实数上单调递增"
+      },
+      {
+       "label": "B",
+       "text": "是偶函数"
+      },
+      {
+       "label": "C",
+       "text": "在全体实数上单调递减"
+      },
+      {
+       "label": "D",
+       "text": "值域是全体正实数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把 x 换成负 x 时函数值变为相反数，所以是奇函数；三次幂随 x 增大而增大，在整个实数集上单调递增，值域是全体实数。",
+     "id": "mxj_h1008_q3",
+     "topicId": "mxj_h1008",
+     "question": "关于幂函数 y 等于 x 的 3 次幂，下列说法正确的是（　）。"
+    },
+    {
+     "prompt": "幂函数 y 等于 x 的 1/2 次幂的定义域是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "全体实数"
+      },
+      {
+       "label": "B",
+       "text": "x 大于 0 的实数"
+      },
+      {
+       "label": "C",
+       "text": "x 不等于 0 的实数"
+      },
+      {
+       "label": "D",
+       "text": "x 大于或等于 0 的实数"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "x 的 1/2 次幂就是根号 x，偶次根号下必须非负，所以 x 大于或等于 0。0 的平方根为 0，端点可以取到。",
+     "id": "mxj_h1008_q4",
+     "topicId": "mxj_h1008",
+     "question": "幂函数 y 等于 x 的 1/2 次幂的定义域是（　）。"
+    },
+    {
+     "prompt": "已知幂函数 f(x) 等于 x 的 a 次幂的图象经过点 2 与 8，则 f(3) 的值是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "9"
+      },
+      {
+       "label": "B",
+       "text": "27"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "81"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "把点代入得 2 的 a 次幂等于 8，所以 a 等于 3，函数为 x 的 3 次幂。再代入 x 等于 3 得 27。",
+     "id": "mxj_h1008_q5",
+     "topicId": "mxj_h1008",
+     "question": "已知幂函数 f(x) 等于 x 的 a 次幂的图象经过点 2 与 8，则 f(3) 的值是（　）。"
+    },
+    {
+     "prompt": "请计算 27 的 1/3 次幂，结果是多少？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "27 的 1/3 次幂就是 27 的立方根，也就是求哪个数的立方等于 27。因为 3 的 3 次幂等于 27，所以结果为 3。",
+     "verify": "{\"type\": \"num\", \"value\": 3}",
+     "id": "mxj_h1008_q6",
+     "topicId": "mxj_h1008",
+     "question": "请计算 27 的 1/3 次幂，结果是多少？"
+    },
+    {
+     "prompt": "计算 8 的负 1/3 次幂的值。",
+     "answer": "二分之一",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "8 的 1/3 次幂等于 2，负指数表示取倒数，所以 8 的负 1/3 次幂等于 2 分之一，即二分之一。",
+     "id": "mxj_h1008_q7",
+     "topicId": "mxj_h1008",
+     "question": "计算 8 的负 1/3 次幂的值。"
+    },
+    {
+     "prompt": "化简：a 的 1/2 次幂与 a 的 1/3 次幂的积，再除以 a 的 5/6 次幂，其中 a 大于 0。",
+     "answer": "结果等于 1，因为指数相加得 5/6，再减去 5/6 得 0，a 的 0 次幂等于 1",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "同底数幂相乘，指数相加，得 a 的 1/2 加 1/3 次幂即 a 的 5/6 次幂；再除以 a 的 5/6 次幂，指数相减得 0。a 大于 0 时 a 的 0 次幂等于 1。",
+     "id": "mxj_h1008_q8",
+     "topicId": "mxj_h1008",
+     "question": "化简：a 的 1/2 次幂与 a 的 1/3 次幂的积，再除以 a 的 5/6 次幂，其中 a 大于 0。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1009",
+   "page": null,
+   "description": "本节学习形如 y 等于 a 的 x 次幂的指数函数，认识其定义域为全体实数、值域为正实数、图象恒过点 0 与 1，并按底数大于 1 与小于 1 两种情况讨论单调性。",
+   "mastery_criteria": [
+    "能说出指数函数的定义域、值域、定点与单调性",
+    "会利用单调性比较同底指数式的大小"
+   ],
+   "misconceptions": [
+    "把 y 等于 x 的平方误认为指数函数，混淆幂函数与指数函数",
+    "底数小于 1 时仍按单调递增比较大小，导致结论反向"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "prompt": "在下面的四个函数中，属于指数函数的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y 等于 2x"
+      },
+      {
+       "label": "B",
+       "text": "y 等于 x 的平方"
+      },
+      {
+       "label": "C",
+       "text": "y 等于 2 的 x 次幂"
+      },
+      {
+       "label": "D",
+       "text": "y 等于 x 的 1/2 次幂"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "指数函数要求自变量在指数位置、底数为正且不等于 1，形如 y 等于 a 的 x 次幂。第一项是一次函数，第二与第四项是幂函数。",
+     "id": "mxj_h1009_q1",
+     "topicId": "mxj_h1009",
+     "question": "在下面的四个函数中，属于指数函数的是（　）。"
+    },
+    {
+     "prompt": "函数 y 等于 2 的 x 次幂的图象一定经过的点是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "0 与 1 组成的点"
+      },
+      {
+       "label": "B",
+       "text": "1 与 0 组成的点"
+      },
+      {
+       "label": "C",
+       "text": "原点"
+      },
+      {
+       "label": "D",
+       "text": "1 与 1 组成的点"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "任何非零数的 0 次幂都等于 1，所以 x 等于 0 时 y 等于 1，图象恒过横坐标 0、纵坐标 1 的点，这也是所有指数函数的公共点。",
+     "id": "mxj_h1009_q2",
+     "topicId": "mxj_h1009",
+     "question": "函数 y 等于 2 的 x 次幂的图象一定经过的点是（　）。"
+    },
+    {
+     "prompt": "函数 y 等于二分之一的 x 次幂在全体实数上的单调性是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "单调递增"
+      },
+      {
+       "label": "B",
+       "text": "单调递减"
+      },
+      {
+       "label": "C",
+       "text": "先增后减"
+      },
+      {
+       "label": "D",
+       "text": "是偶函数"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "底数为二分之一，属于大于 0 且小于 1 的情形，函数单调递减。随着 x 增大，函数值越来越接近 0，但始终为正。",
+     "id": "mxj_h1009_q3",
+     "topicId": "mxj_h1009",
+     "question": "函数 y 等于二分之一的 x 次幂在全体实数上的单调性是（　）。"
+    },
+    {
+     "prompt": "比较 2 的 0.3 次幂与 2 的 0.5 次幂的大小，正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "前者大于后者"
+      },
+      {
+       "label": "B",
+       "text": "两者相等"
+      },
+      {
+       "label": "C",
+       "text": "前者小于后者"
+      },
+      {
+       "label": "D",
+       "text": "无法比较"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "底数 2 大于 1，函数单调递增，指数越大函数值越大。因为 0.3 小于 0.5，所以 2 的 0.3 次幂小于 2 的 0.5 次幂。",
+     "id": "mxj_h1009_q4",
+     "topicId": "mxj_h1009",
+     "question": "比较 2 的 0.3 次幂与 2 的 0.5 次幂的大小，正确的是（　）。"
+    },
+    {
+     "prompt": "函数 y 等于 2 的 x 次幂再加 1 的值域是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "全体实数"
+      },
+      {
+       "label": "B",
+       "text": "大于 1 的实数"
+      },
+      {
+       "label": "C",
+       "text": "大于或等于 1 的实数"
+      },
+      {
+       "label": "D",
+       "text": "大于 0 的实数"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "2 的 x 次幂恒为正，加 1 后恒大于 1，而且当 x 趋于负无穷时函数值可以无限接近 1 却取不到，所以值域是大于 1 的实数。",
+     "id": "mxj_h1009_q5",
+     "topicId": "mxj_h1009",
+     "question": "函数 y 等于 2 的 x 次幂再加 1 的值域是（　）。"
+    },
+    {
+     "prompt": "已知函数 f(x) 等于 2 的 x 次幂，求 f(3) 的值。",
+     "answer": 8,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "把 x 等于 3 代入解析式，得 2 的 3 次幂，即 2 乘 2 乘 2，逐次相乘结果为 8，所以 f(3) 等于 8。",
+     "verify": "{\"type\": \"num\", \"value\": 8}",
+     "id": "mxj_h1009_q6",
+     "topicId": "mxj_h1009",
+     "question": "已知函数 f(x) 等于 2 的 x 次幂，求 f(3) 的值。"
+    },
+    {
+     "prompt": "函数 y 等于 3 的 x 次幂的值域是什么？",
+     "answer": "大于 0 的实数，即 y 大于 0",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "底数 3 大于 1，函数在全体实数上单调递增，函数值恒为正；x 趋于负无穷时函数值趋于 0 但不等于 0，所以值域是全体正实数。",
+     "id": "mxj_h1009_q7",
+     "topicId": "mxj_h1009",
+     "question": "函数 y 等于 3 的 x 次幂的值域是什么？"
+    },
+    {
+     "prompt": "说明指数函数 y 等于 a 的 x 次幂（a 大于 0 且 a 不等于 1）的图象为什么总在 x 轴上方。",
+     "answer": "因为对任意实数 x，a 的 x 次幂都是正数，所以函数值恒大于 0，图象不与 x 轴相交",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "指数幂的底数为正，任何实数次幂的结果都是正数，所以函数值不可能为 0 或负数。又因为 x 趋于负无穷时函数值只是趋于 0，永远取不到 0，所以图象整体位于 x 轴上方，以 x 轴为渐近线。",
+     "id": "mxj_h1009_q8",
+     "topicId": "mxj_h1009",
+     "question": "说明指数函数 y 等于 a 的 x 次幂（a 大于 0 且 a 不等于 1）的图象为什么总在 x 轴上方。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1010",
+   "page": null,
+   "description": "本节由指数式与对数式的互化引入对数，学习积、商、幂的对数运算性质，并研究形如 y 等于以 a 为底 x 的对数的对数函数的定义域、定点与单调性。",
+   "mastery_criteria": [
+    "能进行指数式与对数式的互化，并求简单对数值",
+    "会求含对数的函数的定义域，并利用单调性比较大小或解简单方程"
+   ],
+   "misconceptions": [
+    "把对数真数的条件当成可以取 0 或负数",
+    "计算对数时把真数与底数位置弄反，如把以 2 为底 8 的对数写成 8"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "prompt": "以 2 为底 8 的对数的值是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "对数就是求指数的过程：2 的几次幂等于 8。因为 2 的 3 次幂等于 8，所以以 2 为底 8 的对数等于 3。",
+     "id": "mxj_h1010_q1",
+     "topicId": "mxj_h1010",
+     "question": "以 2 为底 8 的对数的值是（　）。"
+    },
+    {
+     "prompt": "以 3 为底 9 的对数的值是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "1"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "因为 3 的平方等于 9，所以以 3 为底 9 的对数等于 2。注意结果是指数而不是真数本身。",
+     "id": "mxj_h1010_q2",
+     "topicId": "mxj_h1010",
+     "question": "以 3 为底 9 的对数的值是（　）。"
+    },
+    {
+     "prompt": "函数 y 等于以 2 为底 x 减 1 的对数，它的定义域是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 大于或等于 1 的实数"
+      },
+      {
+       "label": "B",
+       "text": "x 不等于 1 的实数"
+      },
+      {
+       "label": "C",
+       "text": "全体实数"
+      },
+      {
+       "label": "D",
+       "text": "x 大于 1 的实数"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "对数要求真数为正，所以 x 减 1 大于 0，得 x 大于 1；x 等于 1 时真数为 0，对数不存在，因此不能取等号。",
+     "id": "mxj_h1010_q3",
+     "topicId": "mxj_h1010",
+     "question": "函数 y 等于以 2 为底 x 减 1 的对数，它的定义域是（　）。"
+    },
+    {
+     "prompt": "函数 y 等于以二分之一为底 x 的对数在全体正数上的单调性是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "单调递增"
+      },
+      {
+       "label": "B",
+       "text": "单调递减"
+      },
+      {
+       "label": "C",
+       "text": "先增后减"
+      },
+      {
+       "label": "D",
+       "text": "是偶函数"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "对数函数在底数大于 1 时递增，在底数大于 0 且小于 1 时递减。此处底数为二分之一，所以函数在正数范围内单调递减。",
+     "id": "mxj_h1010_q4",
+     "topicId": "mxj_h1010",
+     "question": "函数 y 等于以二分之一为底 x 的对数在全体正数上的单调性是（　）。"
+    },
+    {
+     "prompt": "若以 2 为底 x 的对数等于 3，则 x 的值是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "9"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "把对数式化为指数式得 x 等于 2 的 3 次幂，即 8。这里容易误把真数与底数相乘得 6，要牢记互化规则。",
+     "id": "mxj_h1010_q5",
+     "topicId": "mxj_h1010",
+     "question": "若以 2 为底 x 的对数等于 3，则 x 的值是（　）。"
+    },
+    {
+     "prompt": "求以 2 为底 16 的对数的值。",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "因为 2 的 4 次幂等于 16，所以以 2 为底 16 的对数等于 4。",
+     "verify": "{\"type\": \"num\", \"value\": 4}",
+     "id": "mxj_h1010_q6",
+     "topicId": "mxj_h1010",
+     "question": "求以 2 为底 16 的对数的值。"
+    },
+    {
+     "prompt": "把指数式 2 的 3 次幂等于 8 写成对数式。",
+     "answer": "以 2 为底 8 的对数等于 3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "指数式与对数式的互化规则是：底数不变，指数作为对数值，幂作为真数。所以 2 的 3 次幂等于 8 可写成以 2 为底 8 的对数等于 3。",
+     "id": "mxj_h1010_q7",
+     "topicId": "mxj_h1010",
+     "question": "把指数式 2 的 3 次幂等于 8 写成对数式。"
+    },
+    {
+     "prompt": "已知以 2 为底 x 减 1 的对数等于 2，求 x 的值。",
+     "answer": "化为指数式得 x 减 1 等于 4，所以 x 等于 5",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "先把对数式化为指数式：真数 x 减 1 等于底数 2 的 2 次幂，即 4；解得 x 等于 5。验证 x 等于 5 时真数为 4 大于 0，符合定义域要求。",
+     "id": "mxj_h1010_q8",
+     "topicId": "mxj_h1010",
+     "question": "已知以 2 为底 x 减 1 的对数等于 2，求 x 的值。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1011",
+   "page": null,
+   "description": "本节把方程的根转化为函数图象与 x 轴交点的横坐标，学习函数零点的概念、零点存在定理与二分法，用单调性加零点存在定理确定方程解的个数与所在区间。",
+   "mastery_criteria": [
+    "能把方程的根与函数的零点互相转化，并判断零点个数",
+    "会用零点存在定理判断零点所在区间，能说明解的唯一性"
+   ],
+   "misconceptions": [
+    "只算区间端点函数值异号就断言只有一个零点，忽略单调性说明",
+    "把零点理解成点坐标，写成函数图象上的点而不是横坐标"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "prompt": "函数 y 等于 x 的平方减 3x 加 2 的零点个数是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "0 个"
+      },
+      {
+       "label": "B",
+       "text": "1 个"
+      },
+      {
+       "label": "C",
+       "text": "2 个"
+      },
+      {
+       "label": "D",
+       "text": "3 个"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "令函数值为 0，左边分解为 x 减 1 与 x 减 2 的积，得两个零点 1 和 2，所以零点个数为 2，对应图象与 x 轴有两个交点。",
+     "id": "mxj_h1011_q1",
+     "topicId": "mxj_h1011",
+     "question": "函数 y 等于 x 的平方减 3x 加 2 的零点个数是（　）。"
+    },
+    {
+     "prompt": "若函数在闭区间两端点的函数值异号，且图象在该区间上连续不断，则函数在该区间内（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "至少有一个零点"
+      },
+      {
+       "label": "B",
+       "text": "恰好有一个零点"
+      },
+      {
+       "label": "C",
+       "text": "没有零点"
+      },
+      {
+       "label": "D",
+       "text": "有两个零点"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "这是零点存在定理的内容：连续函数在两端取值异号，图象必然穿过 x 轴，所以至少有一个零点。但能否恰有一个还要看单调性，定理本身不保证唯一。",
+     "id": "mxj_h1011_q2",
+     "topicId": "mxj_h1011",
+     "question": "若函数在闭区间两端点的函数值异号，且图象在该区间上连续不断，则函数在该区间内（　）。"
+    },
+    {
+     "prompt": "函数 f(x) 等于 2 的 x 次幂加 x 减 4 的零点所在的区间是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "0 到 1 之间"
+      },
+      {
+       "label": "B",
+       "text": "1 到 2 之间"
+      },
+      {
+       "label": "C",
+       "text": "2 到 3 之间"
+      },
+      {
+       "label": "D",
+       "text": "3 到 4 之间"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "计算端点值：f(1) 等于 2 加 1 减 4，等于负 1；f(2) 等于 4 加 2 减 4，等于 2。两端异号且函数连续，所以零点在 1 到 2 之间。",
+     "id": "mxj_h1011_q3",
+     "topicId": "mxj_h1011",
+     "question": "函数 f(x) 等于 2 的 x 次幂加 x 减 4 的零点所在的区间是（　）。"
+    },
+    {
+     "prompt": "函数 y 等于 x 的 3 次幂减 2 的零点个数是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "0 个"
+      },
+      {
+       "label": "B",
+       "text": "2 个"
+      },
+      {
+       "label": "C",
+       "text": "3 个"
+      },
+      {
+       "label": "D",
+       "text": "1 个"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "令 x 的 3 次幂等于 2，得 x 等于 2 的立方根，这是唯一的实数解，因为三次幂函数在全体实数上单调递增且值域为全体实数。",
+     "id": "mxj_h1011_q4",
+     "topicId": "mxj_h1011",
+     "question": "函数 y 等于 x 的 3 次幂减 2 的零点个数是（　）。"
+    },
+    {
+     "prompt": "用二分法求方程近似解所依据的原理是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "函数的单调性"
+      },
+      {
+       "label": "B",
+       "text": "零点存在定理"
+      },
+      {
+       "label": "C",
+       "text": "韦达定理"
+      },
+      {
+       "label": "D",
+       "text": "判别式"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "二分法不断把区间一分为二，保留两端函数值异号的那一半，依据的正是零点存在定理；每一步都保证零点仍在缩小的区间内，直到区间足够小。",
+     "id": "mxj_h1011_q5",
+     "topicId": "mxj_h1011",
+     "question": "用二分法求方程近似解所依据的原理是（　）。"
+    },
+    {
+     "prompt": "已知函数 y 等于 x 的平方减 2x 减 3 有两个零点，求这两个零点的和。",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "分解得 x 减 3 与 x 加 1 的积等于 0，零点为 3 和负 1，两零点之和等于 2；也可由韦达定理直接得两根之和为 2。",
+     "verify": "{\"type\": \"num\", \"value\": 2}",
+     "id": "mxj_h1011_q6",
+     "topicId": "mxj_h1011",
+     "question": "已知函数 y 等于 x 的平方减 2x 减 3 有两个零点，求这两个零点的和。"
+    },
+    {
+     "prompt": "已知 f(1) 等于负 2，f(2) 等于 3，则函数在 1 到 2 之间至少存在一个零点，这一结论依据的定理名称是什么？",
+     "answer": "零点存在定理",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "函数在区间两端点的函数值一负一正，即异号，且题目默认函数图象连续，由零点存在定理可知在 1 到 2 之间至少有一个零点。",
+     "id": "mxj_h1011_q7",
+     "topicId": "mxj_h1011",
+     "question": "已知 f(1) 等于负 2，f(2) 等于 3，则函数在 1 到 2 之间至少存在一个零点，这一结论依据的定理名称是什么？"
+    },
+    {
+     "prompt": "说明方程 2 的 x 次幂等于 4 减 x 的解的个数，并给出理由。",
+     "answer": "只有一个解，因为函数 y 等于 2 的 x 次幂加 x 减 4 单调递增，且在 1 与 2 处函数值异号",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "把方程移项得 2 的 x 次幂加 x 减 4 等于 0。左边是两个增函数之和，在全体实数上单调递增，所以零点至多一个；又 f(1) 等于负 1，f(2) 等于 2，由零点存在定理零点至少一个，故恰有一个解。",
+     "id": "mxj_h1011_q8",
+     "topicId": "mxj_h1011",
+     "question": "说明方程 2 的 x 次幂等于 4 减 x 的解的个数，并给出理由。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1012",
+   "page": null,
+   "description": "本节用一次函数、二次函数、指数函数与对数函数刻画实际问题中的变化规律，比较不同模型的增长速度，并按「收集数据、选择模型、求解检验」的步骤解决简单的应用问题。",
+   "mastery_criteria": [
+    "能根据问题中变量的变化特点选择合适的函数模型",
+    "会用指数模型处理成倍增长或按固定比例衰减的问题并计算具体数值"
+   ],
+   "misconceptions": [
+    "把按固定百分比增长误用一次函数模型，忽略逐年按新基数计算",
+    "增长率的百分数未转化为小数，直接参与乘法运算"
+   ],
+   "type": "modeling",
+   "questions": [
+    {
+     "prompt": "矩形面积为 12，它的长 y 与宽 x 之间的函数关系属于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "一次函数"
+      },
+      {
+       "label": "B",
+       "text": "二次函数"
+      },
+      {
+       "label": "C",
+       "text": "指数函数"
+      },
+      {
+       "label": "D",
+       "text": "反比例函数"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由长乘宽等于面积得 x 乘 y 等于 12，所以 y 等于 12 除以 x，这是反比例函数，随宽度增大长度按比例减小。",
+     "id": "mxj_h1012_q1",
+     "topicId": "mxj_h1012",
+     "question": "矩形面积为 12，它的长 y 与宽 x 之间的函数关系属于（　）。"
+    },
+    {
+     "prompt": "汽车匀速行驶时，行驶路程与所用时间之间的函数关系是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "一次函数"
+      },
+      {
+       "label": "B",
+       "text": "指数函数"
+      },
+      {
+       "label": "C",
+       "text": "对数函数"
+      },
+      {
+       "label": "D",
+       "text": "幂函数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "匀速行驶时路程等于速度乘时间，速度是常数，所以路程是时间的一次函数，图象是一条过原点的直线。",
+     "id": "mxj_h1012_q2",
+     "topicId": "mxj_h1012",
+     "question": "汽车匀速行驶时，行驶路程与所用时间之间的函数关系是（　）。"
+    },
+    {
+     "prompt": "当自变量很大时，下列函数中增长速度最快的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "一次函数"
+      },
+      {
+       "label": "B",
+       "text": "二次函数"
+      },
+      {
+       "label": "C",
+       "text": "指数函数"
+      },
+      {
+       "label": "D",
+       "text": "对数函数"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "指数函数的增长按固定倍数放大，底数大于 1 时后期增长远快于多项式函数；对数函数增长最慢，一次函数是匀速增长，二次函数居中。",
+     "id": "mxj_h1012_q3",
+     "topicId": "mxj_h1012",
+     "question": "当自变量很大时，下列函数中增长速度最快的是（　）。"
+    },
+    {
+     "prompt": "某商品原价 100 元，每次降价 10 百分比，连续降价两次后的价格是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "80 元"
+      },
+      {
+       "label": "B",
+       "text": "81 元"
+      },
+      {
+       "label": "C",
+       "text": "82 元"
+      },
+      {
+       "label": "D",
+       "text": "90 元"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "第一次降价后为 100 乘 0.9 等于 90 元，第二次在 90 元基础上再乘 0.9 得 81 元。注意不能把两次降价的百分数直接相加得 80 元。",
+     "id": "mxj_h1012_q4",
+     "topicId": "mxj_h1012",
+     "question": "某商品原价 100 元，每次降价 10 百分比，连续降价两次后的价格是（　）。"
+    },
+    {
+     "prompt": "某种放射性物质原有 100 克，每经过 10 年剩下一半，则 30 年后剩余的质量是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "12.5 克"
+      },
+      {
+       "label": "B",
+       "text": "25 克"
+      },
+      {
+       "label": "C",
+       "text": "50 克"
+      },
+      {
+       "label": "D",
+       "text": "0 克"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "30 年包含 3 个半衰期，每次剩一半，所以剩余 100 乘二分之一的 3 次幂，等于 100 除以 8，即 12.5 克。",
+     "id": "mxj_h1012_q5",
+     "topicId": "mxj_h1012",
+     "question": "某种放射性物质原有 100 克，每经过 10 年剩下一半，则 30 年后剩余的质量是（　）。"
+    },
+    {
+     "prompt": "某种细胞每小时分裂一次，1 个细胞变为 2 个。若开始有 1 个细胞，3 小时后共有多少个？",
+     "answer": 8,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "每小时数量翻倍，依次为 2、4、8，所以 3 小时后是 2 的 3 次幂等于 8 个，这是按固定倍数增长的指数模型。",
+     "verify": "{\"type\": \"num\", \"value\": 8}",
+     "id": "mxj_h1012_q6",
+     "topicId": "mxj_h1012",
+     "question": "某种细胞每小时分裂一次，1 个细胞变为 2 个。若开始有 1 个细胞，3 小时后共有多少个？"
+    },
+    {
+     "prompt": "某商品原价 a 元，每年降价 20 百分比，两年后的价格是多少元？",
+     "answer": "0.64a 元",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "一年后为 a 乘 0.8，两年后再乘 0.8，得 0.64a 元。注意每年都在上一年价格基础上打折，属于按固定比例衰减的指数模型。",
+     "id": "mxj_h1012_q7",
+     "topicId": "mxj_h1012",
+     "question": "某商品原价 a 元，每年降价 20 百分比，两年后的价格是多少元？"
+    },
+    {
+     "prompt": "结合细胞分裂的例子，说明指数增长与线性增长的区别。",
+     "answer": "指数增长每个时段按固定倍数放大，增长越来越快；线性增长每个时段增加相同的量，图象是直线",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "细胞每小时翻倍，数量依次为 1、2、4、8、16，每次乘 2，增量越来越大，图象上升越来越陡；而线性增长如匀速走路，每段时间增加相同路程，增量恒定，图象是直线。",
+     "id": "mxj_h1012_q8",
+     "topicId": "mxj_h1012",
+     "question": "结合细胞分裂的例子，说明指数增长与线性增长的区别。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1013",
+   "page": null,
+   "description": "本节把角推广到任意角，规定按逆时针旋转为正角，并引入象限角与终边相同的角的概念；随后引入弧度制，建立角度与弧度的换算关系，导出弧长公式与扇形面积公式。",
+   "mastery_criteria": [
+    "能判断角所在象限，并写出与已知角终边相同的角的集合",
+    "会进行角度与弧度的互化，会用弧长公式与扇形面积公式计算"
+   ],
+   "misconceptions": [
+    "把终边相同的角写成相差 180 度的整数倍，混淆周期 360 度",
+    "使用扇形面积公式时忘记圆心角必须用弧度，直接代入角度数"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "prompt": "390 度角所在的象限是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "第二象限"
+      },
+      {
+       "label": "B",
+       "text": "第一象限"
+      },
+      {
+       "label": "C",
+       "text": "第三象限"
+      },
+      {
+       "label": "D",
+       "text": "第四象限"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "390 度等于 30 度加 360 度，与 30 度角终边相同。30 度角终边落在第一象限，所以 390 度角也是第一象限角。",
+     "id": "mxj_h1013_q1",
+     "topicId": "mxj_h1013",
+     "question": "390 度角所在的象限是（　）。"
+    },
+    {
+     "prompt": "把 150 度化为弧度，结果是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "六分之五 π"
+      },
+      {
+       "label": "B",
+       "text": "三分之二 π"
+      },
+      {
+       "label": "C",
+       "text": "四分之三 π"
+      },
+      {
+       "label": "D",
+       "text": "六分之七 π"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "角度化弧度乘 180 分之 π，即 150 乘 180 分之 π 等于六分之五 π，约等于 2.618 弧度，符合 150 度略小于 π 的判断。",
+     "id": "mxj_h1013_q2",
+     "topicId": "mxj_h1013",
+     "question": "把 150 度化为弧度，结果是（　）。"
+    },
+    {
+     "prompt": "与 30 度角终边相同的角的集合可以表示为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "30 度加 k 乘 180 度，k 为整数"
+      },
+      {
+       "label": "B",
+       "text": "30 度加 k 乘 90 度，k 为整数"
+      },
+      {
+       "label": "C",
+       "text": "30 度加 k 乘 270 度，k 为整数"
+      },
+      {
+       "label": "D",
+       "text": "30 度加 k 乘 360 度，k 为整数"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "终边相同的角相差整数个整周，一个整周是 360 度，所以通式是 30 度加 k 乘 360 度，k 取整数，正负号表示逆时针或顺时针多转的圈数。",
+     "id": "mxj_h1013_q3",
+     "topicId": "mxj_h1013",
+     "question": "与 30 度角终边相同的角的集合可以表示为（　）。"
+    },
+    {
+     "prompt": "半径为 3、圆心角为 2 弧度的扇形的弧长是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "弧长等于圆心角的弧度数乘半径，即 2 乘 3 等于 6。这里圆心角已经是弧度，可以直接相乘，不能再用角度制公式。",
+     "id": "mxj_h1013_q4",
+     "topicId": "mxj_h1013",
+     "question": "半径为 3、圆心角为 2 弧度的扇形的弧长是（　）。"
+    },
+    {
+     "prompt": "半径为 3、圆心角为 2 弧度的扇形的面积是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "9"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "18"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "扇形面积等于二分之一乘圆心角乘半径的平方，即二分之一乘 2 再乘 9，等于 9。也可用弧长乘半径的一半验证，6 乘 1.5 也是 9。",
+     "id": "mxj_h1013_q5",
+     "topicId": "mxj_h1013",
+     "question": "半径为 3、圆心角为 2 弧度的扇形的面积是（　）。"
+    },
+    {
+     "prompt": "在半径为 2 的圆中，1 弧度的圆心角所对的弧长是多少？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "弧长等于圆心角的弧度数乘半径，1 弧度乘半径 2 等于 2，这正是弧度制的定义：长度等于半径的弧所对的圆心角为 1 弧度。",
+     "verify": "{\"type\": \"num\", \"value\": 2}",
+     "id": "mxj_h1013_q6",
+     "topicId": "mxj_h1013",
+     "question": "在半径为 2 的圆中，1 弧度的圆心角所对的弧长是多少？"
+    },
+    {
+     "prompt": "把六分之五 π 弧度化为角度，结果是多少度？",
+     "answer": "150 度",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "弧度化角度乘 π 分之 180 度，六分之五 π 乘 π 分之 180 度，π 约去后等于六分之五乘 180 度，即 150 度。",
+     "id": "mxj_h1013_q7",
+     "topicId": "mxj_h1013",
+     "question": "把六分之五 π 弧度化为角度，结果是多少度？"
+    },
+    {
+     "prompt": "写出与负 60 度角终边相同的角的集合，并指出这个角是第几象限角。",
+     "answer": "集合为负 60 度加 k 乘 360 度，k 为整数，它是第四象限角",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "终边相同的角相差 360 度的整数倍，所以通式为负 60 度加 k 乘 360 度。负 60 度相当于从 x 轴正半轴顺时针转 60 度，终边落在第四象限，与其同终边的角都在第四象限。",
+     "id": "mxj_h1013_q8",
+     "topicId": "mxj_h1013",
+     "question": "写出与负 60 度角终边相同的角的集合，并指出这个角是第几象限角。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1014",
+   "page": null,
+   "description": "本节用单位圆上点的坐标定义任意角的正弦、余弦与正切，由此判断各象限三角函数的符号，学习 30 度、45 度、60 度等特殊角的函数值，并用同角三角函数的基本关系进行求值。",
+   "mastery_criteria": [
+    "能由终边上一点的坐标求该角的正弦、余弦与正切值",
+    "能判断各象限三角函数的符号，会用平方关系与商数关系求值"
+   ],
+   "misconceptions": [
+    "把终边上点的横坐标当作正弦值，纵横坐标用反",
+    "已知正弦值求余弦值时开方后不判断符号，丢掉正负"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "prompt": "若角 α 的终边经过点，该点的横坐标为 3、纵坐标为 4，则 α 的正弦值是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "五分之三"
+      },
+      {
+       "label": "B",
+       "text": "五分之四"
+      },
+      {
+       "label": "C",
+       "text": "四分之三"
+      },
+      {
+       "label": "D",
+       "text": "三分之四"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "点到原点的距离为 5。正弦值等于纵坐标除以距离，即 4 除以 5 等于五分之四；余弦值才是横坐标除以距离，等于五分之三。",
+     "id": "mxj_h1014_q1",
+     "topicId": "mxj_h1014",
+     "question": "若角 α 的终边经过点，该点的横坐标为 3、纵坐标为 4，则 α 的正弦值是（　）。"
+    },
+    {
+     "prompt": "在下列各值中，sin 30 度的值等于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "二分之一"
+      },
+      {
+       "label": "B",
+       "text": "二分之根号 2"
+      },
+      {
+       "label": "C",
+       "text": "二分之根号 3"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "在含 30 度角的直角三角形中，30 度角所对直角边是斜边的一半，所以正弦值为二分之一。二分之根号 2 对应 45 度，二分之根号 3 对应 60 度。",
+     "id": "mxj_h1014_q2",
+     "topicId": "mxj_h1014",
+     "question": "在下列各值中，sin 30 度的值等于（　）。"
+    },
+    {
+     "prompt": "若角 α 是第三象限角，则下列说法正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "正弦大于 0 且余弦大于 0"
+      },
+      {
+       "label": "B",
+       "text": "正弦大于 0 且余弦小于 0"
+      },
+      {
+       "label": "C",
+       "text": "正弦小于 0 且余弦大于 0"
+      },
+      {
+       "label": "D",
+       "text": "正弦小于 0 且余弦小于 0"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "第三象限内终边上点的横坐标与纵坐标都为负，所以余弦与正弦都为负；而二者之比的商为正，因此正切为正。",
+     "id": "mxj_h1014_q3",
+     "topicId": "mxj_h1014",
+     "question": "若角 α 是第三象限角，则下列说法正确的是（　）。"
+    },
+    {
+     "prompt": "在下列各值中，cos 60 度的值等于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "二分之根号 3"
+      },
+      {
+       "label": "B",
+       "text": "二分之根号 2"
+      },
+      {
+       "label": "C",
+       "text": "二分之一"
+      },
+      {
+       "label": "D",
+       "text": "0"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "60 度角的余弦等于该角的邻边比斜边，在含 30 度角的直角三角形中邻边是斜边的一半，所以余弦值为二分之一。",
+     "id": "mxj_h1014_q4",
+     "topicId": "mxj_h1014",
+     "question": "在下列各值中，cos 60 度的值等于（　）。"
+    },
+    {
+     "prompt": "已知角 α 的正弦值等于五分之三，且 α 是第二象限角，则 α 的余弦值是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "五分之四"
+      },
+      {
+       "label": "B",
+       "text": "负五分之四"
+      },
+      {
+       "label": "C",
+       "text": "负五分之三"
+      },
+      {
+       "label": "D",
+       "text": "四分之三"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由平方关系得余弦的平方等于 1 减二十五分之九，即二十五分之十六，开方得正负五分之四。第二象限余弦为负，所以取负五分之四。",
+     "id": "mxj_h1014_q5",
+     "topicId": "mxj_h1014",
+     "question": "已知角 α 的正弦值等于五分之三，且 α 是第二象限角，则 α 的余弦值是（　）。"
+    },
+    {
+     "prompt": "请计算 tan 45 度的值，结果是多少？",
+     "answer": 1,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "45 度角的正弦与余弦都等于二分之根号 2，二者相除得 1，所以正切值为 1，这是正切函数在特殊角处的常用值。",
+     "verify": "{\"type\": \"num\", \"value\": 1}",
+     "id": "mxj_h1014_q6",
+     "topicId": "mxj_h1014",
+     "question": "请计算 tan 45 度的值，结果是多少？"
+    },
+    {
+     "prompt": "已知角 α 的正弦值等于二分之一，且 α 是第一象限角，则 α 的余弦值是多少？",
+     "answer": "二分之根号 3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由平方关系，余弦的平方等于 1 减四分之一，等于四分之三，开方得正负二分之根号 3。第一象限余弦为正，所以取二分之根号 3。",
+     "id": "mxj_h1014_q7",
+     "topicId": "mxj_h1014",
+     "question": "已知角 α 的正弦值等于二分之一，且 α 是第一象限角，则 α 的余弦值是多少？"
+    },
+    {
+     "prompt": "已知 tan α 等于 2，求 sin α 加 cos α 的和除以 cos α 的商。",
+     "answer": "结果等于 3，因为原式可化为 tan α 加 1，即 2 加 1 等于 3",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "把分子拆开，原式等于 sin α 除以 cos α 再加上 cos α 除以 cos α，即 tan α 加 1。代入 tan α 等于 2 得 3，注意这里 cos α 不等于 0，因为正切有意义。",
+     "id": "mxj_h1014_q8",
+     "topicId": "mxj_h1014",
+     "question": "已知 tan α 等于 2，求 sin α 加 cos α 的和除以 cos α 的商。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1015",
+   "page": null,
+   "description": "本节用单位圆中的正弦线作出正弦曲线，再由图象归纳正弦、余弦、正切函数的定义域、值域、周期、奇偶性与单调区间，形成研究周期函数性质的基本套路。",
+   "mastery_criteria": [
+    "能写出正弦、余弦、正切函数的周期、值域与奇偶性",
+    "能由图象指出单调区间与最值点，并求出简单函数的最值"
+   ],
+   "misconceptions": [
+    "把正切函数的周期也当成 2π，忽略它是 π",
+    "求单调区间时漏写整数 k 的周期性，只给出一段区间"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "prompt": "函数 y 等于 sin x 的最小正周期是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "二分之 π"
+      },
+      {
+       "label": "B",
+       "text": "π"
+      },
+      {
+       "label": "C",
+       "text": "2π"
+      },
+      {
+       "label": "D",
+       "text": "4π"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "正弦曲线每隔 2π 重复出现同样的形状，且没有更小的正周期，所以最小正周期是 2π。π 是正切函数的周期，不能混用。",
+     "id": "mxj_h1015_q1",
+     "topicId": "mxj_h1015",
+     "question": "函数 y 等于 sin x 的最小正周期是（　）。"
+    },
+    {
+     "prompt": "函数 y 等于 cos x 的奇偶性是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "偶函数"
+      },
+      {
+       "label": "B",
+       "text": "奇函数"
+      },
+      {
+       "label": "C",
+       "text": "既是奇函数又是偶函数"
+      },
+      {
+       "label": "D",
+       "text": "既不是奇函数也不是偶函数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "余弦曲线关于 y 轴对称，且把 x 换成负 x 时函数值不变，即 f(负 x) 等于 f(x)，所以是偶函数；正弦函数才是奇函数。",
+     "id": "mxj_h1015_q2",
+     "topicId": "mxj_h1015",
+     "question": "函数 y 等于 cos x 的奇偶性是（　）。"
+    },
+    {
+     "prompt": "函数 y 等于 tan x 的定义域是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 不等于 kπ 的实数"
+      },
+      {
+       "label": "B",
+       "text": "全体实数"
+      },
+      {
+       "label": "C",
+       "text": "x 不等于 2kπ 的实数"
+      },
+      {
+       "label": "D",
+       "text": "x 不等于二分之 π 加 kπ 的实数"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "正切等于正弦除以余弦，当余弦为 0 时无意义，而余弦在二分之 π 加 kπ 处为 0，所以定义域要排除这些点，k 取整数。",
+     "id": "mxj_h1015_q3",
+     "topicId": "mxj_h1015",
+     "question": "函数 y 等于 tan x 的定义域是（　）。"
+    },
+    {
+     "prompt": "正弦函数 y 等于 sin x 的一个单调递增区间是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "0 到 π"
+      },
+      {
+       "label": "B",
+       "text": "负二分之 π 到二分之 π"
+      },
+      {
+       "label": "C",
+       "text": "二分之 π 到二分之三 π"
+      },
+      {
+       "label": "D",
+       "text": "π 到 2π"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "正弦曲线从负二分之 π 到二分之 π 一直在上升，函数值由负 1 增到 1，是单调递增区间；0 到 π 上先增后减，不是单调区间。",
+     "id": "mxj_h1015_q4",
+     "topicId": "mxj_h1015",
+     "question": "正弦函数 y 等于 sin x 的一个单调递增区间是（　）。"
+    },
+    {
+     "prompt": "函数 y 等于 3 倍 sin x 的最大值是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "3π"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "正弦的最大值为 1，乘以正数 3 后最大值变为 3，在 x 等于二分之 π 加 2kπ 时取到。系数只改变最值大小，不改变取到最值的位置。",
+     "id": "mxj_h1015_q5",
+     "topicId": "mxj_h1015",
+     "question": "函数 y 等于 3 倍 sin x 的最大值是（　）。"
+    },
+    {
+     "prompt": "函数 y 等于 2 倍 sin x 的最大值是多少？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "正弦函数的最大值是 1，乘 2 后最大值为 2。振幅由系数的绝对值决定，所以这个函数的值域是负 2 到 2。",
+     "verify": "{\"type\": \"num\", \"value\": 2}",
+     "id": "mxj_h1015_q6",
+     "topicId": "mxj_h1015",
+     "question": "函数 y 等于 2 倍 sin x 的最大值是多少？"
+    },
+    {
+     "prompt": "函数 y 等于 cos x 的值域是什么？",
+     "answer": "负 1 到 1，即负 1 小于或等于 y 小于或等于 1",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "余弦值等于单位圆上点的横坐标，横坐标的取值范围是负 1 到 1，并且在 0 与 π 处分别取到 1 与负 1，所以值域是负 1 到 1 的闭区间。",
+     "id": "mxj_h1015_q7",
+     "topicId": "mxj_h1015",
+     "question": "函数 y 等于 cos x 的值域是什么？"
+    },
+    {
+     "prompt": "求函数 y 等于 sin x 在 0 到 2π 上的零点。",
+     "answer": "零点为 0、π、2π，共三个",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "令正弦值为 0，即终边落在 x 轴上，在 0 到 2π 范围内满足条件的角是 0、π、2π。注意题目给出的闭区间包含两个端点，所以共三个零点。",
+     "id": "mxj_h1015_q8",
+     "topicId": "mxj_h1015",
+     "question": "求函数 y 等于 sin x 在 0 到 2π 上的零点。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1016",
+   "page": null,
+   "description": "本节研究形如 y 等于 A 倍 sin(ωx 加 φ) 的函数，认识振幅 A、角频率 ω 与初相 φ 的意义，掌握由正弦曲线经过平移与伸缩得到其图象的两种常见变换顺序。",
+   "mastery_criteria": [
+    "能由解析式读出振幅、周期与初相",
+    "能说明图象平移与伸缩的方向和倍数，并写出变换后的解析式"
+   ],
+   "misconceptions": [
+    "把周期写成 ω 分之 2π 的倒数，或把周期与频率混淆",
+    "平移量直接取 φ 而忘记先按 ω 提取，导致平移单位数出错"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "prompt": "函数 y 等于 3 倍 sin(2x 加四分之 π) 的振幅是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "四分之 π"
+      },
+      {
+       "label": "D",
+       "text": "2π"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "振幅是正弦符号前系数的绝对值，此处系数为 3，所以振幅是 3。系数 2 决定周期，四分之 π 是初相，三者含义不能混淆。",
+     "id": "mxj_h1016_q1",
+     "topicId": "mxj_h1016",
+     "question": "函数 y 等于 3 倍 sin(2x 加四分之 π) 的振幅是（　）。"
+    },
+    {
+     "prompt": "函数 y 等于 2 倍 sin 3x 的最小正周期是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "三分之二 π"
+      },
+      {
+       "label": "B",
+       "text": "3π"
+      },
+      {
+       "label": "C",
+       "text": "三分之一 π"
+      },
+      {
+       "label": "D",
+       "text": "6π"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "周期等于 2π 除以 x 的系数，即 2π 除以 3，等于三分之二 π。系数越大周期越短，图象在横向上被压缩。",
+     "id": "mxj_h1016_q2",
+     "topicId": "mxj_h1016",
+     "question": "函数 y 等于 2 倍 sin 3x 的最小正周期是（　）。"
+    },
+    {
+     "prompt": "要得到 y 等于 sin(x 加三分之 π) 的图象，只需把 y 等于 sin x 的图象（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "向右平移三分之 π 个单位"
+      },
+      {
+       "label": "B",
+       "text": "向右平移六分之 π 个单位"
+      },
+      {
+       "label": "C",
+       "text": "向左平移三分之 π 个单位"
+      },
+      {
+       "label": "D",
+       "text": "向左平移六分之 π 个单位"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "括号内是 x 加三分之 π，属于左加右减中的加，所以向左平移三分之 π 个单位。平移量就是 φ 的大小，方向由符号决定。",
+     "id": "mxj_h1016_q3",
+     "topicId": "mxj_h1016",
+     "question": "要得到 y 等于 sin(x 加三分之 π) 的图象，只需把 y 等于 sin x 的图象（　）。"
+    },
+    {
+     "prompt": "把 y 等于 sin x 图象上各点的横坐标缩短为原来的二分之一，纵坐标不变，得到的函数是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y 等于 2 倍 sin x"
+      },
+      {
+       "label": "B",
+       "text": "y 等于 sin 二分之 x"
+      },
+      {
+       "label": "C",
+       "text": "y 等于二分之一倍 sin x"
+      },
+      {
+       "label": "D",
+       "text": "y 等于 sin 2x"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "横坐标缩短为原来的二分之一，相当于周期变为一半，x 的系数变为 2，所以函数为 y 等于 sin 2x。改变纵坐标才会影响振幅。",
+     "id": "mxj_h1016_q4",
+     "topicId": "mxj_h1016",
+     "question": "把 y 等于 sin x 图象上各点的横坐标缩短为原来的二分之一，纵坐标不变，得到的函数是（　）。"
+    },
+    {
+     "prompt": "函数 y 等于 3 倍 sin(2x 加四分之 π) 的最小正周期是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "π"
+      },
+      {
+       "label": "B",
+       "text": "2π"
+      },
+      {
+       "label": "C",
+       "text": "二分之 π"
+      },
+      {
+       "label": "D",
+       "text": "4π"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "周期只由 x 的系数决定，等于 2π 除以 2，得 π。振幅 3 与初相四分之 π 都不影响周期，这一点是常见失分处。",
+     "id": "mxj_h1016_q5",
+     "topicId": "mxj_h1016",
+     "question": "函数 y 等于 3 倍 sin(2x 加四分之 π) 的最小正周期是（　）。"
+    },
+    {
+     "prompt": "已知函数 y 等于 2 倍 sin(ωx) 的最小正周期为 π，则 ω 等于多少？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "由周期公式得 2π 除以 ω 等于 π，解得 ω 等于 2。因为题目默认 ω 为正数，所以只取正值，图象每 π 长度重复一次。",
+     "verify": "{\"type\": \"num\", \"value\": 2}",
+     "id": "mxj_h1016_q6",
+     "topicId": "mxj_h1016",
+     "question": "已知函数 y 等于 2 倍 sin(ωx) 的最小正周期为 π，则 ω 等于多少？"
+    },
+    {
+     "prompt": "函数 y 等于 3 倍 sin(2x 加四分之 π) 的初相是多少？",
+     "answer": "四分之 π",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "把解析式写成 A 倍 sin(ωx 加 φ) 的标准形式后，括号内的常数项 φ 就是初相，此处为四分之 π，它决定 x 等于 0 时图象的位置。",
+     "id": "mxj_h1016_q7",
+     "topicId": "mxj_h1016",
+     "question": "函数 y 等于 3 倍 sin(2x 加四分之 π) 的初相是多少？"
+    },
+    {
+     "prompt": "说明如何由 y 等于 sin x 的图象经过平移与伸缩得到 y 等于 sin(2x 加三分之 π) 的图象。",
+     "answer": "先向左平移三分之 π 个单位，再把各点横坐标缩短为原来的二分之一；也可先压缩为 y 等于 sin 2x，再向左平移六分之 π 个单位",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "若按先平移后压缩的顺序：把 y 等于 sin x 的图象向左平移三分之 π 个单位，得到 sin(x 加三分之 π)，再把横坐标压缩为原来的一半，即得 sin(2x 加三分之 π)。若按先压缩后平移的顺序：先得 sin 2x，再向左平移六分之 π 个单位，得到 sin 2 倍(x 加六分之 π)，展开也是 sin(2x 加三分之 π)，两种顺序的平移量不同。",
+     "id": "mxj_h1016_q8",
+     "topicId": "mxj_h1016",
+     "question": "说明如何由 y 等于 sin x 的图象经过平移与伸缩得到 y 等于 sin(2x 加三分之 π) 的图象。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1017",
+   "page": null,
+   "description": "本节用形如 y 等于 A 倍 sin(ωx 加 φ) 再加 b 的函数刻画温度、潮汐、弹簧振子等周期现象，学习由最值确定振幅与平衡位置、由周期确定 ω 的建模方法。",
+   "mastery_criteria": [
+    "能由实际问题的最大值与最小值求出振幅与平衡位置",
+    "能根据周期求 ω，并把实际问题转化为三角函数模型求解"
+   ],
+   "misconceptions": [
+    "把最大值直接当作振幅，忘记振幅是最值与平衡位置之差",
+    "建立模型时不检验所得结果是否符合实际范围"
+   ],
+   "type": "modeling",
+   "questions": [
+    {
+     "prompt": "在简谐运动的函数 y 等于 A 倍 sin(ωx 加 φ) 中，字母 A 表示（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "周期"
+      },
+      {
+       "label": "B",
+       "text": "振幅"
+      },
+      {
+       "label": "C",
+       "text": "频率"
+      },
+      {
+       "label": "D",
+       "text": "初相"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "A 是偏离平衡位置的最大距离，即振幅；ω 与周期有关，φ 是初相。振幅只取正值，反映振动的幅度大小。",
+     "id": "mxj_h1017_q1",
+     "topicId": "mxj_h1017",
+     "question": "在简谐运动的函数 y 等于 A 倍 sin(ωx 加 φ) 中，字母 A 表示（　）。"
+    },
+    {
+     "prompt": "某地一天中气温最高为 8 摄氏度，最低为 2 摄氏度，用三角函数建模时振幅 A 等于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "10"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "振幅等于最大值与最小值之差的一半，即 8 减 2 再除以 2，等于 3。最大值与最小值的平均数 5 是平衡位置，不是振幅。",
+     "id": "mxj_h1017_q2",
+     "topicId": "mxj_h1017",
+     "question": "某地一天中气温最高为 8 摄氏度，最低为 2 摄氏度，用三角函数建模时振幅 A 等于（　）。"
+    },
+    {
+     "prompt": "若某地气温模型为 y 等于 A 倍 sin(ωx 加 φ) 再加 b，最高气温 8 摄氏度，最低 2 摄氏度，则 b 等于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "8"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "b 是平衡位置，等于最大值与最小值的平均数，即 8 加 2 再除以 2，等于 5。气温围绕 5 摄氏度上下波动，幅度为 3。",
+     "id": "mxj_h1017_q3",
+     "topicId": "mxj_h1017",
+     "question": "若某地气温模型为 y 等于 A 倍 sin(ωx 加 φ) 再加 b，最高气温 8 摄氏度，最低 2 摄氏度，则 b 等于（　）。"
+    },
+    {
+     "prompt": "海水潮汐的高度随时间变化近似呈周期性，其周期大约是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "6 小时"
+      },
+      {
+       "label": "B",
+       "text": "12 小时"
+      },
+      {
+       "label": "C",
+       "text": "24 小时"
+      },
+      {
+       "label": "D",
+       "text": "48 小时"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "潮汐主要由月球引潮力引起，多数海区一天出现两次高潮与两次低潮，相邻两次高潮间隔约 12 小时，所以模型的周期取 12 小时左右。",
+     "id": "mxj_h1017_q4",
+     "topicId": "mxj_h1017",
+     "question": "海水潮汐的高度随时间变化近似呈周期性，其周期大约是（　）。"
+    },
+    {
+     "prompt": "若某函数模型为 y 等于 5 加 3 倍 sin x，则该函数的最大值是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "正弦的最大值为 1，代入得最大值为 5 加 3 等于 8；最小值为 5 减 3 等于 2。常数项 5 把整条曲线向上平移，改变了最值但不改变振幅。",
+     "id": "mxj_h1017_q5",
+     "topicId": "mxj_h1017",
+     "question": "若某函数模型为 y 等于 5 加 3 倍 sin x，则该函数的最大值是（　）。"
+    },
+    {
+     "prompt": "弹簧振子偏离平衡位置的最大距离为 4 厘米，则描述该振动的三角函数模型中振幅是多少？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "振幅就是偏离平衡位置的最大距离，所以振幅等于 4 厘米。振幅只与振动幅度有关，与振动快慢即周期无关。",
+     "verify": "{\"type\": \"num\", \"value\": 4}",
+     "id": "mxj_h1017_q6",
+     "topicId": "mxj_h1017",
+     "question": "弹簧振子偏离平衡位置的最大距离为 4 厘米，则描述该振动的三角函数模型中振幅是多少？"
+    },
+    {
+     "prompt": "在三角函数模型中，2π 除以 ω 表示函数的什么量？",
+     "answer": "最小正周期",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "ω 是角频率，自变量每增加 2π 除以 ω，括号内的角就增加 2π，函数值重复一次，所以 2π 除以 ω 就是最小正周期。",
+     "id": "mxj_h1017_q7",
+     "topicId": "mxj_h1017",
+     "question": "在三角函数模型中，2π 除以 ω 表示函数的什么量？"
+    },
+    {
+     "prompt": "简述用三角函数模型解决实际周期问题的基本步骤。",
+     "answer": "先观察数据的变化规律并作散点图，再选择三角函数模型，由最值求振幅与平衡位置、由周期求 ω，最后代入检验并解释结果",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "建模要先看数据是否呈周期波动，画出散点图判断形状；然后设出含 A、ω、φ、b 的模型，用最大值与最小值定 A 与 b，用相邻峰值的时间间隔定周期并求 ω，用特殊点定 φ；最后把结果代回数据检验并说明实际意义。",
+     "id": "mxj_h1017_q8",
+     "topicId": "mxj_h1017",
+     "question": "简述用三角函数模型解决实际周期问题的基本步骤。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1018",
+   "page": null,
+   "description": "本节介绍获取数据的两种基本途径即普查与抽样调查，明确总体、个体、样本、样本容量的含义，并说明两种调查方式各自的适用场合与优缺点。",
+   "mastery_criteria": [
+    "能准确指出具体问题中的总体、个体、样本与样本容量",
+    "能根据调查对象的特点判断应选择普查还是抽样调查"
+   ],
+   "misconceptions": [
+    "把样本容量带上单位，如写成 200 名学生",
+    "把样本误认为样本容量，混淆集合与数量的区别"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "prompt": "要了解全校学生的视力状况，从中抽取 200 名学生进行检查，这里的 200 是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "总体"
+      },
+      {
+       "label": "B",
+       "text": "个体"
+      },
+      {
+       "label": "C",
+       "text": "样本容量"
+      },
+      {
+       "label": "D",
+       "text": "样本"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "样本容量是样本中包含的个体数目，是一个没有单位的数。200 表示抽取的人数，所以是样本容量；被抽取的 200 名学生的视力数据才是样本。",
+     "id": "mxj_h1018_q1",
+     "topicId": "mxj_h1018",
+     "question": "要了解全校学生的视力状况，从中抽取 200 名学生进行检查，这里的 200 是（　）。"
+    },
+    {
+     "prompt": "下列问题中适合采用普查方式的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "检测一批灯泡的使用寿命"
+      },
+      {
+       "label": "B",
+       "text": "统计全国人口总数"
+      },
+      {
+       "label": "C",
+       "text": "检测一批炮弹的杀伤半径"
+      },
+      {
+       "label": "D",
+       "text": "检测一批食品的含菌量"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "人口统计要求数据完整准确，且调查对象不会因调查而损坏，适合普查；灯泡寿命、炮弹杀伤半径与食品含菌量的检测都带破坏性，只能抽样。",
+     "id": "mxj_h1018_q2",
+     "topicId": "mxj_h1018",
+     "question": "下列问题中适合采用普查方式的是（　）。"
+    },
+    {
+     "prompt": "在统计中，研究对象的全体称为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "抽取的那部分个体"
+      },
+      {
+       "label": "B",
+       "text": "每一个研究对象"
+      },
+      {
+       "label": "C",
+       "text": "样本的个数"
+      },
+      {
+       "label": "D",
+       "text": "总体"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "总体是研究对象的全体，个体是组成总体的每一个研究对象。抽取出来的那一部分个体构成样本，样本中个体的数目叫样本容量。",
+     "id": "mxj_h1018_q3",
+     "topicId": "mxj_h1018",
+     "question": "在统计中，研究对象的全体称为（　）。"
+    },
+    {
+     "prompt": "某厂检查 5000 件产品的合格情况，从中抽取 100 件检验，这里的样本是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "被抽取的 100 件产品"
+      },
+      {
+       "label": "B",
+       "text": "5000 件产品"
+      },
+      {
+       "label": "C",
+       "text": "每一件产品"
+      },
+      {
+       "label": "D",
+       "text": "合格的那些产品"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "样本是从总体中抽取的一部分个体，此处即被抽取的 100 件产品。5000 件产品是总体，每一件产品是个体，100 是样本容量。",
+     "id": "mxj_h1018_q4",
+     "topicId": "mxj_h1018",
+     "question": "某厂检查 5000 件产品的合格情况，从中抽取 100 件检验，这里的样本是（　）。"
+    },
+    {
+     "prompt": "关于普查与抽样调查，下列说法正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "普查适用于一切调查场合"
+      },
+      {
+       "label": "B",
+       "text": "抽样调查能节约人力物力，但结果存在抽样误差"
+      },
+      {
+       "label": "C",
+       "text": "抽样调查的结果一定与普查结果相同"
+      },
+      {
+       "label": "D",
+       "text": "普查不存在任何误差"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "抽样调查只调查一部分个体，因而节省人力物力与时间，但由于样本的随机性，结果与总体真实情况之间会有抽样误差；普查虽全面，但实施中也可能出现登记误差。",
+     "id": "mxj_h1018_q5",
+     "topicId": "mxj_h1018",
+     "question": "关于普查与抽样调查，下列说法正确的是（　）。"
+    },
+    {
+     "prompt": "某校共有 1200 名学生，现抽取 60 名学生进行调查，这次调查的样本容量是多少？",
+     "answer": 60,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "样本容量就是样本中个体的数目，即被抽取的学生人数 60。样本容量是一个纯数，后面不写单位，所以答案写成 60 而不是 60 名学生。",
+     "verify": "{\"type\": \"num\", \"value\": 60}",
+     "id": "mxj_h1018_q6",
+     "topicId": "mxj_h1018",
+     "question": "某校共有 1200 名学生，现抽取 60 名学生进行调查，这次调查的样本容量是多少？"
+    },
+    {
+     "prompt": "在统计中，研究对象的全体叫做什么？组成总体的每一个研究对象叫做什么？",
+     "answer": "研究对象的全体叫总体，每一个研究对象叫个体",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "总体是研究对象的全体，个体是组成总体的每一个研究对象。例如调查全校学生视力时，全校学生的视力数据是总体，每名学生的视力数据是个体。",
+     "id": "mxj_h1018_q7",
+     "topicId": "mxj_h1018",
+     "question": "在统计中，研究对象的全体叫做什么？组成总体的每一个研究对象叫做什么？"
+    },
+    {
+     "prompt": "说明检验一批炮弹的杀伤半径为什么不宜采用普查。",
+     "answer": "因为检验具有破坏性，普查会使全部炮弹被引爆而无法继续使用，所以只能抽取少量样品做抽样调查",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "普查要求对每个个体都进行观测。炮弹的杀伤半径必须通过引爆实测，一旦普查，整批炮弹就全部损毁，失去使用价值，因此只能用抽样调查，用样本的情况估计整批炮弹的性能。",
+     "id": "mxj_h1018_q8",
+     "topicId": "mxj_h1018",
+     "question": "说明检验一批炮弹的杀伤半径为什么不宜采用普查。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1019",
+   "page": null,
+   "description": "本节学习三种基本抽样方法：简单随机抽样包括抽签法与随机数法，系统抽样按固定间隔抽取，分层抽样按各层在总体中所占比例分配样本量，并比较它们的适用条件。",
+   "mastery_criteria": [
+    "能说明简单随机抽样、系统抽样与分层抽样的适用条件与操作步骤",
+    "会按比例计算分层抽样中各层应抽取的个体数"
+   ],
+   "misconceptions": [
+    "分层抽样时不按比例分配，各层平均分配样本量",
+    "认为系统抽样中每个个体被抽到的机会不相等"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "prompt": "从 50 名学生中抽取 5 名参加座谈会，最简便的简单随机抽样方法是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "抽签法"
+      },
+      {
+       "label": "B",
+       "text": "分层抽样"
+      },
+      {
+       "label": "C",
+       "text": "系统抽样"
+      },
+      {
+       "label": "D",
+       "text": "整群抽样"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "总体容量较小且个体之间没有明显差异时，把 50 个号码写在签上搅拌均匀后逐个抽取，就是抽签法，操作简便且每个个体被抽到的机会相等。",
+     "id": "mxj_h1019_q1",
+     "topicId": "mxj_h1019",
+     "question": "从 50 名学生中抽取 5 名参加座谈会，最简便的简单随机抽样方法是（　）。"
+    },
+    {
+     "prompt": "当总体由差异明显的几部分组成时，最合适的抽样方法是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "简单随机抽样"
+      },
+      {
+       "label": "B",
+       "text": "分层抽样"
+      },
+      {
+       "label": "C",
+       "text": "系统抽样"
+      },
+      {
+       "label": "D",
+       "text": "整群抽样"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "总体内部差异明显时，先按差异把总体分成若干层，再在各层内部分别抽样，能保证样本结构与总体结构一致，这种方法是分层抽样。",
+     "id": "mxj_h1019_q2",
+     "topicId": "mxj_h1019",
+     "question": "当总体由差异明显的几部分组成时，最合适的抽样方法是（　）。"
+    },
+    {
+     "prompt": "某单位共有职工 1000 人，其中男职工 600 人、女职工 400 人。用分层抽样抽取 50 人，其中男职工应抽取（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "20 人"
+      },
+      {
+       "label": "B",
+       "text": "25 人"
+      },
+      {
+       "label": "C",
+       "text": "30 人"
+      },
+      {
+       "label": "D",
+       "text": "35 人"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "抽样比为 50 除以 1000，即二十分之一。男职工占 600 人，按同一比例抽取 600 乘二十分之一等于 30 人，女职工则抽取 20 人。",
+     "id": "mxj_h1019_q3",
+     "topicId": "mxj_h1019",
+     "question": "某单位共有职工 1000 人，其中男职工 600 人、女职工 400 人。用分层抽样抽取 50 人，其中男职工应抽取（　）。"
+    },
+    {
+     "prompt": "某总体共有 500 个个体，用系统抽样抽取容量为 50 的样本，抽样间隔是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "10"
+      },
+      {
+       "label": "C",
+       "text": "50"
+      },
+      {
+       "label": "D",
+       "text": "100"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "系统抽样的间隔等于总体容量除以样本容量，即 500 除以 50 等于 10，也就是把总体编号后每隔 10 个号抽取一个。",
+     "id": "mxj_h1019_q4",
+     "topicId": "mxj_h1019",
+     "question": "某总体共有 500 个个体，用系统抽样抽取容量为 50 的样本，抽样间隔是（　）。"
+    },
+    {
+     "prompt": "在简单随机抽样中，每一个个体被抽到的机会（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "相等"
+      },
+      {
+       "label": "B",
+       "text": "与个体的大小有关"
+      },
+      {
+       "label": "C",
+       "text": "不相等"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "简单随机抽样的基本特征是每个个体被抽到的可能性相同，这保证了样本对总体具有代表性，也是各种抽样方法都要求满足的基本原则。",
+     "id": "mxj_h1019_q5",
+     "topicId": "mxj_h1019",
+     "question": "在简单随机抽样中，每一个个体被抽到的机会（　）。"
+    },
+    {
+     "prompt": "某校共有 1000 名学生，抽取 50 名进行调查，这次调查的抽样比是多少？",
+     "answer": 0.05,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "抽样比等于样本容量除以总体容量，50 除以 1000 等于 0.05，也就是百分之五，即二十分之一。",
+     "verify": "{\"type\": \"num\", \"value\": 0.05}",
+     "id": "mxj_h1019_q6",
+     "topicId": "mxj_h1019",
+     "question": "某校共有 1000 名学生，抽取 50 名进行调查，这次调查的抽样比是多少？"
+    },
+    {
+     "prompt": "某单位共有 120 人，其中业务人员 90 人、管理人员 30 人。用分层抽样抽取 20 人，管理人员应抽取多少人？",
+     "answer": "5 人",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "抽样比为 20 除以 120，即六分之一。管理人员共 30 人，按同一比例抽取 30 乘六分之一等于 5 人；业务人员则抽取 15 人，合计 20 人。",
+     "id": "mxj_h1019_q7",
+     "topicId": "mxj_h1019",
+     "question": "某单位共有 120 人，其中业务人员 90 人、管理人员 30 人。用分层抽样抽取 20 人，管理人员应抽取多少人？"
+    },
+    {
+     "prompt": "简述分层抽样的基本步骤。",
+     "answer": "先按差异把总体分成若干层，再计算各层在总体中所占比例并按比例分配样本量，然后在各层内部分别随机抽样，最后合并成样本",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "分层抽样分四步：一是根据总体的明显差异分层，如按性别或年级；二是计算抽样比或各层所占比例；三是用比例乘各层个体数得到该层应抽的数目；四是在各层内用简单随机抽样抽取，把各层抽到的个体合起来构成样本。",
+     "id": "mxj_h1019_q8",
+     "topicId": "mxj_h1019",
+     "question": "简述分层抽样的基本步骤。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1020",
+   "page": null,
+   "description": "本节学习用条形图、折线图、扇形图与频率分布直方图整理和展示数据，重点理解频率分布直方图的横轴为组距、纵轴为频率与组距之比，每个小矩形的面积表示该组的频率。",
+   "mastery_criteria": [
+    "能根据数据特点选择合适的统计图表，并说明理由",
+    "会由频率除以组距与组距求频率，会读直方图估计频数"
+   ],
+   "misconceptions": [
+    "把直方图纵轴上的数值直接当作频率，忽略还要乘组距",
+    "认为小矩形的高度之和等于 1，实际是面积之和等于 1"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "prompt": "要表示各部分数量占总数的百分比，最合适的统计图是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "折线图"
+      },
+      {
+       "label": "B",
+       "text": "茎叶图"
+      },
+      {
+       "label": "C",
+       "text": "扇形图"
+      },
+      {
+       "label": "D",
+       "text": "散点图"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "扇形图用扇形面积占圆面积的比例表示各部分所占百分比，直观反映部分与整体的关系；折线图看趋势，茎叶图保留原始数据，散点图看相关性。",
+     "id": "mxj_h1020_q1",
+     "topicId": "mxj_h1020",
+     "question": "要表示各部分数量占总数的百分比，最合适的统计图是（　）。"
+    },
+    {
+     "prompt": "在频率分布直方图中，每个小矩形的面积表示该组的（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "频数"
+      },
+      {
+       "label": "B",
+       "text": "频率"
+      },
+      {
+       "label": "C",
+       "text": "组距"
+      },
+      {
+       "label": "D",
+       "text": "样本容量"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "直方图横轴是数据，纵轴是频率除以组距，矩形面积等于纵坐标乘组距，正好等于该组的频率。频数还要用频率乘样本容量才能得到。",
+     "id": "mxj_h1020_q2",
+     "topicId": "mxj_h1020",
+     "question": "在频率分布直方图中，每个小矩形的面积表示该组的（　）。"
+    },
+    {
+     "prompt": "折线图最适合用来表示（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "数据随时间变化的趋势"
+      },
+      {
+       "label": "B",
+       "text": "各部分所占的比例"
+      },
+      {
+       "label": "C",
+       "text": "数据的分布形态"
+      },
+      {
+       "label": "D",
+       "text": "两个变量之间的相关关系"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "折线图把各时期的数据点依次连成折线，能直观看出上升、下降或波动的趋势，适合描述随时间变化的数据，如逐月气温。",
+     "id": "mxj_h1020_q3",
+     "topicId": "mxj_h1020",
+     "question": "折线图最适合用来表示（　）。"
+    },
+    {
+     "prompt": "某小组的频率为 0.3，组距为 10，则该组的频率除以组距等于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "30"
+      },
+      {
+       "label": "C",
+       "text": "0.3"
+      },
+      {
+       "label": "D",
+       "text": "0.03"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "频率除以组距等于 0.3 除以 10，得 0.03，这就是直方图中该小矩形的高度。若反过来用高度乘组距，就能还原出频率 0.3。",
+     "id": "mxj_h1020_q4",
+     "topicId": "mxj_h1020",
+     "question": "某小组的频率为 0.3，组距为 10，则该组的频率除以组距等于（　）。"
+    },
+    {
+     "prompt": "频率分布直方图中所有小矩形的面积之和等于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "样本容量"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "各组组距之和"
+      },
+      {
+       "label": "D",
+       "text": "组数"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "每个小矩形面积是该组的频率，所有组频率之和为 1，所以面积之和为 1。这一结论常用来求缺失组的频率，或用 1 减去已知频率之和。",
+     "id": "mxj_h1020_q5",
+     "topicId": "mxj_h1020",
+     "question": "频率分布直方图中所有小矩形的面积之和等于（　）。"
+    },
+    {
+     "prompt": "某组数据共分 5 个小组，其中一组的频率为 0.2，样本容量为 50，则该组的频数是多少？",
+     "answer": 10,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "频数等于频率乘样本容量，0.2 乘 50 等于 10。频率是比值，频数是具体个数，两者通过样本容量联系。",
+     "verify": "{\"type\": \"num\", \"value\": 10}",
+     "id": "mxj_h1020_q6",
+     "topicId": "mxj_h1020",
+     "question": "某组数据共分 5 个小组，其中一组的频率为 0.2，样本容量为 50，则该组的频数是多少？"
+    },
+    {
+     "prompt": "频率分布直方图中，各小矩形的面积之和等于多少？",
+     "answer": "1",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "每个小矩形的面积表示相应组的频率，各组频率之和必然等于 1，所以全部小矩形的面积之和等于 1，这是画图与检验时的基本依据。",
+     "id": "mxj_h1020_q7",
+     "topicId": "mxj_h1020",
+     "question": "频率分布直方图中，各小矩形的面积之和等于多少？"
+    },
+    {
+     "prompt": "说明频数与频率的区别与联系。",
+     "answer": "频数是某组数据的个数，频率是该组频数与样本容量的比值，取值范围在 0 到 1 之间，两者通过样本容量相互换算",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "频数是一个计数值，带有单位，各组频数之和等于样本容量；频率是频数除以样本容量的比值，不带单位，各组频率之和等于 1。已知频率与样本容量可求频数，已知频数与样本容量也可求频率。",
+     "id": "mxj_h1020_q8",
+     "topicId": "mxj_h1020",
+     "question": "说明频数与频率的区别与联系。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1021",
+   "page": null,
+   "description": "本节学习平均数、中位数、众数与方差、标准差等数字特征，用样本的这些特征估计总体的集中趋势与离散程度，并理解样本估计总体时存在的随机误差。",
+   "mastery_criteria": [
+    "会计算一组数据的平均数、中位数、众数、方差与标准差",
+    "能根据方差或标准差比较两组数据的稳定程度，并解释估计的合理性"
+   ],
+   "misconceptions": [
+    "求方差时忘记除以数据个数，直接用偏差平方和",
+    "比较稳定性时只看平均数，忽略离散程度"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "prompt": "请计算数据 2、4、6、8、10 的平均数，结果是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "7"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "平均数为各数之和除以个数，和为 30，个数为 5，所以平均数是 6。这组数据关于 6 对称，平均数正好落在正中间。",
+     "id": "mxj_h1021_q1",
+     "topicId": "mxj_h1021",
+     "question": "请计算数据 2、4、6、8、10 的平均数，结果是（　）。"
+    },
+    {
+     "prompt": "请计算数据 1、3、5、7 的中位数，结果是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "数据已按从小到大排列，共 4 个即偶数个，中位数是中间两个数 3 与 5 的平均数，等于 4。中位数不受极端值影响。",
+     "id": "mxj_h1021_q2",
+     "topicId": "mxj_h1021",
+     "question": "请计算数据 1、3、5、7 的中位数，结果是（　）。"
+    },
+    {
+     "prompt": "请计算数据 2、4、6、8、10 的方差，结果是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "10"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "平均数为 6，各数与 6 之差的平方为 16、4、0、4、16，总和 40，除以个数 5 得方差 8。标准差则是 8 的算术平方根。",
+     "id": "mxj_h1021_q3",
+     "topicId": "mxj_h1021",
+     "question": "请计算数据 2、4、6、8、10 的方差，结果是（　）。"
+    },
+    {
+     "prompt": "要比较两组数据的稳定程度，主要应看（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "平均数"
+      },
+      {
+       "label": "B",
+       "text": "中位数"
+      },
+      {
+       "label": "C",
+       "text": "众数"
+      },
+      {
+       "label": "D",
+       "text": "标准差"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "平均数、中位数、众数反映集中趋势，标准差反映数据偏离平均数的平均程度。标准差越小，数据越集中，波动越小，也就越稳定。",
+     "id": "mxj_h1021_q4",
+     "topicId": "mxj_h1021",
+     "question": "要比较两组数据的稳定程度，主要应看（　）。"
+    },
+    {
+     "prompt": "若把一组数据中的每个数据都加上 5，则（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "平均数不变"
+      },
+      {
+       "label": "B",
+       "text": "平均数加 5，方差不变"
+      },
+      {
+       "label": "C",
+       "text": "方差加 5"
+      },
+      {
+       "label": "D",
+       "text": "平均数与方差都加 5"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "每个数据同加一个常数，平均数也加这个常数，但各数据与平均数的差保持不变，所以方差不变。这说明方差只反映波动大小，与整体平移无关。",
+     "id": "mxj_h1021_q5",
+     "topicId": "mxj_h1021",
+     "question": "若把一组数据中的每个数据都加上 5，则（　）。"
+    },
+    {
+     "prompt": "请计算数据 3、5、7、9 的平均数，结果是多少？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "各数之和为 24，数据个数为 4，平均数为 24 除以 4 等于 6。也可以看出 6 正好是这组数据的对称中心。",
+     "verify": "{\"type\": \"num\", \"value\": 6}",
+     "id": "mxj_h1021_q6",
+     "topicId": "mxj_h1021",
+     "question": "请计算数据 3、5、7、9 的平均数，结果是多少？"
+    },
+    {
+     "prompt": "请计算数据 2、4、6、8、10 的标准差，结果是多少？",
+     "answer": "2 倍根号 2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "先求平均数 6，再用各数与 6 之差的平方和 40 除以 5 得方差 8，标准差是方差的算术平方根，即根号 8，化简为 2 倍根号 2。",
+     "id": "mxj_h1021_q7",
+     "topicId": "mxj_h1021",
+     "question": "请计算数据 2、4、6、8、10 的标准差，结果是多少？"
+    },
+    {
+     "prompt": "说明用样本平均数估计总体平均数为什么合理，又存在什么局限。",
+     "answer": "样本来自总体且具有代表性时，样本平均数会接近总体平均数，但抽样具有随机性，样本平均数会随样本变化而波动，存在抽样误差",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "样本是从总体中随机抽取的，个体结构与总体相近，所以样本平均数可以作为总体平均数的估计值。但不同的样本会得到不同的平均数，估计值与真值之间总有偏差；样本容量越大、抽样越随机，这种波动通常越小。",
+     "id": "mxj_h1021_q8",
+     "topicId": "mxj_h1021",
+     "question": "说明用样本平均数估计总体平均数为什么合理，又存在什么局限。"
+    }
+   ]
+  }
+ ]
+}

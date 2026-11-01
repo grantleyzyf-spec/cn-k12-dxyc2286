@@ -1,0 +1,2933 @@
+{
+ "tag": "mxjh2",
+ "book": "湘教版必修第二册",
+ "unit_points": [
+  {
+   "id": "mxj_h007",
+   "description": "第1章导数及其应用：由平均变化率过渡到瞬时变化率，用极限的观点建立导数概念，知道导数是瞬时变化率的数学表达，并从函数图象上认识导数的几何意义；掌握基本初等函数的导数公式与四则运算法则，会用导数判断函数的单调性、求极值与最值，解决简单的实际最优化问题。",
+   "mastery_criteria": [
+    "能说出平均变化率与瞬时变化率的区别与联系",
+    "会用导数公式和运算法则求简单函数的导数",
+    "能用导数研究单调性并求出极值与最值"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_h007_q1",
+     "topicId": "mxj_h007",
+     "prompt": "设函数 y 等于 f(x)，则 f 在 x 等于 x0 处的导数 f'(x0) 表示的是",
+     "question": "设函数 y 等于 f(x)，则 f 在 x 等于 x0 处的导数 f'(x0) 表示的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "函数在该点的函数值 f(x0)"
+      },
+      {
+       "label": "B",
+       "text": "函数在该点的瞬时变化率"
+      },
+      {
+       "label": "C",
+       "text": "函数在某个区间上的平均变化率"
+      },
+      {
+       "label": "D",
+       "text": "函数在该点的变化量"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "导数是函数在一点处的瞬时变化率，它是平均变化率在自变量的改变量趋于零时的极限。函数值 f(x0) 与导数 f'(x0) 是两个不同的量，变化量也不是变化率，所以只有瞬时变化率的说法正确。"
+    },
+    {
+     "id": "mxj_h007_q2",
+     "topicId": "mxj_h007",
+     "prompt": "已知函数 f(x) 等于 x 的立方减 3x，则它的导函数 f'(x) 等于",
+     "question": "已知函数 f(x) 等于 x 的立方减 3x，则它的导函数 f'(x) 等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "3x 的平方减 3"
+      },
+      {
+       "label": "B",
+       "text": "3x 的平方减 3x"
+      },
+      {
+       "label": "C",
+       "text": "x 的平方减 3"
+      },
+      {
+       "label": "D",
+       "text": "3x 减 3"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "按幂函数的求导公式，x 的立方的导数是 3x 的平方，一次项负 3x 的导数是负 3，常数项的导数为零，逐项求导再相加得 f'(x) 等于 3x 的平方减 3。"
+    },
+    {
+     "id": "mxj_h007_q3",
+     "topicId": "mxj_h007",
+     "prompt": "函数 f(x) 等于 x 的平方减 2x 的单调递增区间是",
+     "question": "函数 f(x) 等于 x 的平方减 2x 的单调递增区间是",
+     "options": [
+      {
+       "label": "A",
+       "text": "所有小于 1 的实数"
+      },
+      {
+       "label": "B",
+       "text": "所有小于 2 的实数"
+      },
+      {
+       "label": "C",
+       "text": "所有大于 1 的实数"
+      },
+      {
+       "label": "D",
+       "text": "全体实数"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先求导得 f'(x) 等于 2x 减 2。导数大于零时函数单调递增，解 2x 减 2 大于零得 x 大于 1，所以函数的单调递增区间是所有大于 1 的实数。"
+    },
+    {
+     "id": "mxj_h007_q4",
+     "topicId": "mxj_h007",
+     "prompt": "已知函数 f(x) 等于 x 的平方，则 f'(3) 等于",
+     "question": "已知函数 f(x) 等于 x 的平方，则 f'(3) 等于",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由幂函数的求导公式得 f'(x) 等于 2x，把 x 等于 3 代入得 f'(3) 等于 2 乘 3 等于 6，这是函数在 x 等于 3 处的瞬时变化率。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "mxj_h007_q5",
+     "topicId": "mxj_h007",
+     "prompt": "用导数的方法求函数 f(x) 等于 x 的平方减 4x 加 3 的最小值，并说明取得最小值的自变量的值。",
+     "question": "用导数的方法求函数 f(x) 等于 x 的平方减 4x 加 3 的最小值，并说明取得最小值的自变量的值。",
+     "answer": "当 x 等于 2 时函数取得最小值负 1",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "求导得 f'(x) 等于 2x 减 4，令 f'(x) 等于零得 x 等于 2。当 x 小于 2 时导数为负，函数单调递减；当 x 大于 2 时导数为正，函数单调递增，所以 x 等于 2 是极小值点也是最小值点，最小值为 4 减 8 加 3 等于负 1。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h008",
+   "description": "第2章空间向量与立体几何：在平面直角坐标系的基础上建立空间直角坐标系，会用三元有序实数组刻画点的位置并得出空间两点间的距离公式；把平面向量推广到空间向量，学习空间向量基本定理、正交分解与坐标表示，并用向量方法研究空间中直线、平面的位置关系以及夹角与距离。",
+   "mastery_criteria": [
+    "能写出空间中点的坐标并求出两点间的距离",
+    "会进行空间向量的线性运算与数量积的坐标运算",
+    "能用方向向量与法向量判断平行垂直并求夹角"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_h008_q1",
+     "topicId": "mxj_h008",
+     "prompt": "在空间直角坐标系中，点 P(1，2，3) 关于 xOy 平面对称的点的坐标是",
+     "question": "在空间直角坐标系中，点 P(1，2，3) 关于 xOy 平面对称的点的坐标是",
+     "options": [
+      {
+       "label": "A",
+       "text": "(负 1，2，3)"
+      },
+      {
+       "label": "B",
+       "text": "(1，负 2，3)"
+      },
+      {
+       "label": "C",
+       "text": "(1，2，负 3)"
+      },
+      {
+       "label": "D",
+       "text": "(负 1，负 2，负 3)"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "关于 xOy 平面对称时，点的横坐标与纵坐标都不变，只有竖坐标变为原来的相反数，所以对称点的坐标是 (1，2，负 3)。另外两种答案分别对应关于 yOz 平面和 xOz 平面对称的情形。"
+    },
+    {
+     "id": "mxj_h008_q2",
+     "topicId": "mxj_h008",
+     "prompt": "已知向量 a 的坐标是 (1，2，负 1)，向量 b 的坐标是 (2，0，1)，则 a 与 b 的数量积等于",
+     "question": "已知向量 a 的坐标是 (1，2，负 1)，向量 b 的坐标是 (2，0，1)，则 a 与 b 的数量积等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "0"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "空间向量的数量积等于对应坐标乘积之和，即 1 乘 2 加 2 乘 0 加负 1 乘 1，等于 2 加 0 减 1 等于 1。"
+    },
+    {
+     "id": "mxj_h008_q3",
+     "topicId": "mxj_h008",
+     "prompt": "若直线 l 的方向向量为 (1，0，2)，平面 α 的法向量为 (2，1，负 1)，则直线 l 与平面 α 的位置关系是",
+     "question": "若直线 l 的方向向量为 (1，0，2)，平面 α 的法向量为 (2，1，负 1)，则直线 l 与平面 α 的位置关系是",
+     "options": [
+      {
+       "label": "A",
+       "text": "l 垂直于 α"
+      },
+      {
+       "label": "B",
+       "text": "l 平行于 α 或在 α 内"
+      },
+      {
+       "label": "C",
+       "text": "l 与 α 相交但不垂直"
+      },
+      {
+       "label": "D",
+       "text": "无法判断"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "方向向量与法向量的数量积为 1 乘 2 加 0 乘 1 加 2 乘负 1 等于零，说明方向向量与法向量垂直，即直线与平面平行或直线在平面内，这种情况不能断定直线一定在平面外。"
+    },
+    {
+     "id": "mxj_h008_q4",
+     "topicId": "mxj_h008",
+     "prompt": "已知向量 a 的坐标是 (3，负 1，2)，向量 b 的坐标是 (1，2，负 1)，则 a 与 b 的数量积等于",
+     "question": "已知向量 a 的坐标是 (3，负 1，2)，向量 b 的坐标是 (1，2，负 1)，则 a 与 b 的数量积等于",
+     "answer": -1,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "按坐标计算数量积，3 乘 1 得 3，负 1 乘 2 得负 2，2 乘负 1 得负 2，三部分相加得 3 减 2 减 2 等于负 1，负号说明两个向量的夹角是钝角。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "mxj_h008_q5",
+     "topicId": "mxj_h008",
+     "prompt": "长方体 ABCD 与 A1B1C1D1 中，AB 等于 1，AD 等于 2，AA1 等于 2。以 A 为原点，AB、AD、AA1 所在直线分别为 x 轴、y 轴、z 轴建立空间直角坐标系，则顶点 C1 的坐标是",
+     "question": "长方体 ABCD 与 A1B1C1D1 中，AB 等于 1，AD 等于 2，AA1 等于 2。以 A 为原点，AB、AD、AA1 所在直线分别为 x 轴、y 轴、z 轴建立空间直角坐标系，则顶点 C1 的坐标是",
+     "answer": "(1，2，2)",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "点 C1 沿三条棱方向的位移分别是 AB 的 1、AD 的 2、AA1 的 2，因此横坐标是 1，纵坐标是 2，竖坐标是 2，三个坐标依次对应三条坐标轴上的分量，所以 C1 的坐标是 (1，2，2)。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h009",
+   "description": "第3章概率：在古典概型的基础上学习条件概率，理解条件概率与事件独立性的关系，会用乘法公式与全概率公式计算概率；认识离散型随机变量，掌握分布列及其均值与方差，了解二项分布、超几何分布，并通过误差模型了解正态分布的特征以及均值、方差的含义。",
+   "mastery_criteria": [
+    "会用条件概率公式计算简单随机事件的概率",
+    "能写出离散型随机变量的分布列并求均值与方差",
+    "能说出正态分布曲线的特征与均值方差的意义"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_h009_q1",
+     "topicId": "mxj_h009",
+     "prompt": "对于任意两个事件 A 与 B，当 P(A) 大于零时，乘法公式是",
+     "question": "对于任意两个事件 A 与 B，当 P(A) 大于零时，乘法公式是",
+     "options": [
+      {
+       "label": "A",
+       "text": "P(AB) 等于 P(A) 乘 P(B 在 A 发生的条件下发生的概率)"
+      },
+      {
+       "label": "B",
+       "text": "P(AB) 等于 P(A) 加 P(B)"
+      },
+      {
+       "label": "C",
+       "text": "P(AB) 等于 P(A) 乘 P(B)，不需要任何条件"
+      },
+      {
+       "label": "D",
+       "text": "P(AB) 等于 P(B) 减 P(A)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由条件概率的定义 P(B 在 A 发生的条件下发生的概率) 等于 P(AB) 除以 P(A)，两边同乘 P(A) 就得到乘法公式，它是计算积事件概率的基本工具，而 P(AB) 等于 P(A) 乘 P(B) 只在 A 与 B 相互独立时才成立。"
+    },
+    {
+     "id": "mxj_h009_q2",
+     "topicId": "mxj_h009",
+     "prompt": "掷一枚质地均匀的骰子，在已知掷出的点数是偶数的条件下，点数恰好是 6 的概率是",
+     "question": "掷一枚质地均匀的骰子，在已知掷出的点数是偶数的条件下，点数恰好是 6 的概率是",
+     "options": [
+      {
+       "label": "A",
+       "text": "6 分之 1"
+      },
+      {
+       "label": "B",
+       "text": "3 分之 1"
+      },
+      {
+       "label": "C",
+       "text": "2 分之 1"
+      },
+      {
+       "label": "D",
+       "text": "3 分之 2"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "样本空间缩小为偶数点构成的 3 个结果，即 2、4、6 点，其中 6 点只占 1 个，所以条件概率是 3 分之 1。用公式计算也得到 6 分之 1 除以 2 分之 1 等于 3 分之 1。"
+    },
+    {
+     "id": "mxj_h009_q3",
+     "topicId": "mxj_h009",
+     "prompt": "已知事件 A 与事件 B 相互独立，且 P(A) 等于 0.5，P(B) 等于 0.4，则 P(AB) 等于",
+     "question": "已知事件 A 与事件 B 相互独立，且 P(A) 等于 0.5，P(B) 等于 0.4，则 P(AB) 等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.9"
+      },
+      {
+       "label": "B",
+       "text": "0.1"
+      },
+      {
+       "label": "C",
+       "text": "0.45"
+      },
+      {
+       "label": "D",
+       "text": "0.2"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个事件相互独立时，积事件的概率等于两个事件概率的乘积，即 0.5 乘 0.4 等于 0.2。选项中的 0.9 是把两个概率相加，只有在两个事件互斥时才适用。"
+    },
+    {
+     "id": "mxj_h009_q4",
+     "topicId": "mxj_h009",
+     "prompt": "已知 P(A) 等于 0.6，在 A 发生的条件下 B 发生的概率等于 0.5，则 P(AB) 等于",
+     "question": "已知 P(A) 等于 0.6，在 A 发生的条件下 B 发生的概率等于 0.5，则 P(AB) 等于",
+     "answer": 0.3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由乘法公式得 P(AB) 等于 P(A) 乘以在 A 发生的条件下 B 发生的概率，即 0.6 乘 0.5 等于 0.3。注意不能把两个概率相加，也不能默认两个事件独立。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 0.6}, {\"type\": \"num\", \"value\": 0.5}]}"
+    },
+    {
+     "id": "mxj_h009_q5",
+     "topicId": "mxj_h009",
+     "prompt": "某运动员投篮的命中率是 0.8，各次投篮相互独立。他投篮 3 次，则恰好命中 2 次的概率是（结果保留三位小数）",
+     "question": "某运动员投篮的命中率是 0.8，各次投篮相互独立。他投篮 3 次，则恰好命中 2 次的概率是（结果保留三位小数）",
+     "answer": "0.384",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "这是 3 次独立重复试验，命中次数服从二项分布。恰好命中 2 次有 3 种不同的位置，每种位置的概率都是 0.8 的平方乘 0.2，等于 0.128，所以所求概率是 3 乘 0.128 等于 0.384。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h010",
+   "description": "第4章统计：通过成对样本数据的散点图认识变量之间的相关关系，用样本相关系数刻画线性相关的方向与强弱；了解一元线性回归模型的含义与最小二乘原理，会由数据估计模型参数并用经验回归方程进行预测；会用 2×2 列联表与独立性检验判断两个分类变量是否有关联。",
+   "mastery_criteria": [
+    "会由散点图判断正相关与负相关",
+    "会用最小二乘公式求经验回归方程的斜率与截距",
+    "能读懂 2×2 列联表并说明独立性检验的结论"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "mxj_h010_q1",
+     "topicId": "mxj_h010",
+     "prompt": "把一组成对样本数据画成散点图，如果这些点大致分布在一条从左下方向右上方延伸的直线附近，那么这两个变量",
+     "question": "把一组成对样本数据画成散点图，如果这些点大致分布在一条从左下方向右上方延伸的直线附近，那么这两个变量",
+     "options": [
+      {
+       "label": "A",
+       "text": "呈正相关"
+      },
+      {
+       "label": "B",
+       "text": "呈负相关"
+      },
+      {
+       "label": "C",
+       "text": "不相关"
+      },
+      {
+       "label": "D",
+       "text": "呈函数关系"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "从左下到右上的走势说明一个变量增大时另一个变量也总体增大，这种相关关系称为正相关。负相关的点大致从左上方向右下方延伸，相关不是确定的函数关系，所以不能说成函数关系。"
+    },
+    {
+     "id": "mxj_h010_q2",
+     "topicId": "mxj_h010",
+     "prompt": "两组成对样本数据的样本相关系数分别是 0.9 与负 0.9，则说明这两组数据",
+     "question": "两组成对样本数据的样本相关系数分别是 0.9 与负 0.9，则说明这两组数据",
+     "options": [
+      {
+       "label": "A",
+       "text": "前者的线性相关程度比后者更强"
+      },
+      {
+       "label": "B",
+       "text": "后者不存在相关关系"
+      },
+      {
+       "label": "C",
+       "text": "线性相关程度相同，但相关方向相反"
+      },
+      {
+       "label": "D",
+       "text": "无法比较两者的相关程度"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "相关系数的绝对值刻画线性相关的强弱，两组数据的绝对值都是 0.9，所以线性相关程度相同；符号表示方向，0.9 对应正相关，负 0.9 对应负相关。比较相关强弱只看绝对值，不能因为出现负号就认为没有关系。"
+    },
+    {
+     "id": "mxj_h010_q3",
+     "topicId": "mxj_h010",
+     "prompt": "已知两个变量的经验回归方程是 y 等于 0.5x 加 3，当 x 等于 6 时，y 的预测值是",
+     "question": "已知两个变量的经验回归方程是 y 等于 0.5x 加 3，当 x 等于 6 时，y 的预测值是",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "9"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把 x 等于 6 代入经验回归方程，得预测值等于 0.5 乘 6 加 3，即 3 加 3 等于 6。这里的预测值是估计值，观测值通常不会正好落在回归直线上。"
+    },
+    {
+     "id": "mxj_h010_q4",
+     "topicId": "mxj_h010",
+     "prompt": "已知一组成对样本数据中 x 的平均数等于 4，y 的平均数等于 9，用最小二乘法求得斜率等于 1.5，则经验回归方程的截距等于",
+     "question": "已知一组成对样本数据中 x 的平均数等于 4，y 的平均数等于 9，用最小二乘法求得斜率等于 1.5，则经验回归方程的截距等于",
+     "answer": 3.0,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "经验回归直线一定经过样本点的中心，即横坐标为 x 的平均数、纵坐标为 y 的平均数的点。截距等于 y 的平均数减斜率乘 x 的平均数，即 9 减 1.5 乘 4，等于 9 减 6 等于 3。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 9}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 1.5}, {\"type\": \"num\", \"value\": 4}]}]}"
+    },
+    {
+     "id": "mxj_h010_q5",
+     "topicId": "mxj_h010",
+     "prompt": "已知四组成对样本数据为 (1，1)、(2，3)、(3，5)、(4，7)，用最小二乘法求这组数据的经验回归方程。",
+     "question": "已知四组成对样本数据为 (1，1)、(2，3)、(3，5)、(4，7)，用最小二乘法求这组数据的经验回归方程。",
+     "answer": "y 等于 2x 减 1",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "x 的平均数是 2.5，y 的平均数是 4。各点与平均数的偏差乘积之和为 4.5 加 0.5 加 0.5 加 4.5 等于 10，x 的偏差平方和为 2.25 加 0.25 加 0.25 加 2.25 等于 5，所以斜率等于 10 除以 5 等于 2，截距等于 4 减 2 乘 2.5 等于负 1，经验回归方程是 y 等于 2x 减 1。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "mxj_h1022",
+   "description": "导数概念及其意义：通过实例分析经历由平均变化率过渡到瞬时变化率的过程，理解导数的实际背景，知道 f'(x0) 是函数在 x0 处的瞬时变化率；从函数图象上直观理解导数的几何意义，即曲线在点 (x0，f(x0)) 处切线的斜率，并体会其中蕴含的极限思想。",
+   "mastery_criteria": [
+    "能计算函数在给定区间上的平均变化率",
+    "能说出导数与瞬时变化率、切线斜率的关系",
+    "能由导数值判断函数在一点附近的变化快慢"
+   ],
+   "page": null,
+   "misconceptions": [
+    "把平均变化率当成瞬时变化率，忽略了区间长度趋于零的极限过程",
+    "认为导数就是函数值，把 f'(x0) 写成 f(x0)",
+    "以为导数为正就说明函数值一定是正数，把导数的符号与函数值的符号混为一谈"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_h1022_q1",
+     "topicId": "mxj_h1022",
+     "prompt": "函数 y 等于 f(x) 从 x1 到 x2 的平均变化率等于",
+     "question": "函数 y 等于 f(x) 从 x1 到 x2 的平均变化率等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "f(x2) 减 f(x1) 除以 x2 减 x1"
+      },
+      {
+       "label": "B",
+       "text": "f(x2) 加 f(x1) 除以 2"
+      },
+      {
+       "label": "C",
+       "text": "f(x2) 除以 x2"
+      },
+      {
+       "label": "D",
+       "text": "x2 减 x1 除以 f(x2) 减 f(x1)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "平均变化率是函数值的改变量与自变量的改变量之比，即 f(x2) 减 f(x1) 除以 x2 减 x1，它刻画函数在该区间上的平均变化快慢，几何上就是割线的斜率。"
+    },
+    {
+     "id": "mxj_h1022_q2",
+     "topicId": "mxj_h1022",
+     "prompt": "某物体做直线运动，位移 s 与时间 t 的关系是 s 等于 s(t)，则该物体在时刻 t0 的瞬时速度是",
+     "question": "某物体做直线运动，位移 s 与时间 t 的关系是 s 等于 s(t)，则该物体在时刻 t0 的瞬时速度是",
+     "options": [
+      {
+       "label": "A",
+       "text": "s(t0) 的值"
+      },
+      {
+       "label": "B",
+       "text": "s(t) 在 t0 处的导数"
+      },
+      {
+       "label": "C",
+       "text": "s(t) 在 t0 处的函数值的平方"
+      },
+      {
+       "label": "D",
+       "text": "t0 与 s(t0) 的比值"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "瞬时速度是平均速度当时间间隔趋于零时的极限，也就是位移函数在 t0 处的导数。s(t0) 表示时刻 t0 的位移而不是速度，比值只能给出某段区间的平均速度。"
+    },
+    {
+     "id": "mxj_h1022_q3",
+     "topicId": "mxj_h1022",
+     "prompt": "函数 f(x) 等于 x 的平方在区间上由 x 等于 1 到 x 等于 3 的平均变化率等于",
+     "question": "函数 f(x) 等于 x 的平方在区间上由 x 等于 1 到 x 等于 3 的平均变化率等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "函数值的改变量是 9 减 1 等于 8，自变量的改变量是 3 减 1 等于 2，平均变化率等于 8 除以 2 等于 4。它等于割线的斜率，与曲线在这两点处的切线斜率无关。"
+    },
+    {
+     "id": "mxj_h1022_q4",
+     "topicId": "mxj_h1022",
+     "prompt": "曲线 y 等于 f(x) 在点 (x0，f(x0)) 处的切线斜率等于",
+     "question": "曲线 y 等于 f(x) 在点 (x0，f(x0)) 处的切线斜率等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "f(x0)"
+      },
+      {
+       "label": "B",
+       "text": "x0"
+      },
+      {
+       "label": "C",
+       "text": "f'(x0)"
+      },
+      {
+       "label": "D",
+       "text": "f'(x0) 的平方"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由导数的几何意义，曲线在一点处的切线斜率就是函数在该点处的导数值 f'(x0)。当导数为正时切线向右上方倾斜，导数为负时切线向右下方倾斜。"
+    },
+    {
+     "id": "mxj_h1022_q5",
+     "topicId": "mxj_h1022",
+     "prompt": "已知曲线 y 等于 f(x) 在点 (1，f(1)) 处的切线方程是 y 等于 3x 加 2，则 f(1) 加 f'(1) 等于",
+     "question": "已知曲线 y 等于 f(x) 在点 (1，f(1)) 处的切线方程是 y 等于 3x 加 2，则 f(1) 加 f'(1) 等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "切点在曲线上也在切线上，把 x 等于 1 代入切线方程得 f(1) 等于 3 加 2 等于 5。切线斜率就是该点处的导数值，所以 f'(1) 等于 3，两数相加得 8。"
+    },
+    {
+     "id": "mxj_h1022_q6",
+     "topicId": "mxj_h1022",
+     "prompt": "已知函数 f(x) 等于 x 的平方，则函数在 x 等于 2 处的导数等于",
+     "question": "已知函数 f(x) 等于 x 的平方，则函数在 x 等于 2 处的导数等于",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "求导得 f'(x) 等于 2x，把 x 等于 2 代入得 f'(2) 等于 4。它表示曲线在点 (2，4) 处切线的斜率为 4，也就是函数在该点的瞬时变化率。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "mxj_h1022_q7",
+     "topicId": "mxj_h1022",
+     "prompt": "函数 f(x) 等于 3x 加 1 在任何区间上的平均变化率都等于同一个常数，这个常数是",
+     "question": "函数 f(x) 等于 3x 加 1 在任何区间上的平均变化率都等于同一个常数，这个常数是",
+     "answer": "3",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "一次函数的图象是一条直线，任意两点连成的割线斜率都相同。取区间由 0 到 1，函数值由 1 变到 4，平均变化率等于 4 减 1 除以 1 等于 3，所以这个常数就是 3。"
+    },
+    {
+     "id": "mxj_h1022_q8",
+     "topicId": "mxj_h1022",
+     "prompt": "说明为什么把平均变化率中自变量的改变量不断缩小，就能得到函数在一点处的瞬时变化率，并求出函数 y 等于 x 的平方在 x 等于 1 处的导数。",
+     "question": "说明为什么把平均变化率中自变量的改变量不断缩小，就能得到函数在一点处的瞬时变化率，并求出函数 y 等于 x 的平方在 x 等于 1 处的导数。",
+     "answer": "改变量趋于零时平均变化率的极限就是导数，函数 y 等于 x 的平方在 x 等于 1 处的导数为 2",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "在 x 等于 1 处给自变量一个改变量，函数值的改变量与改变量之比等于 1 加改变量 括号的平方减 1 再除以改变量，化简得 2 加改变量。当改变量越来越接近零时，这个比值越来越接近 2，这个极限就是导数，所以函数在 x 等于 1 处的导数为 2。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1023",
+   "description": "导数的运算：由导数的定义推出基本初等函数的导数公式，掌握常函数、幂函数、正弦函数与余弦函数、指数函数与对数函数的求导公式；掌握导数的和差积商运算法则，会求简单函数的导数，并能对形如 f(ax 加 b) 的简单复合函数求导。",
+   "mastery_criteria": [
+    "能写出基本初等函数的导数公式",
+    "会用四则运算法则求简单函数的导数",
+    "会对形如 f(ax 加 b) 的复合函数求导"
+   ],
+   "page": null,
+   "misconceptions": [
+    "把常函数的导数写成这个常数本身，忘记常函数的导数为零",
+    "求积的导数时误用两个导数的乘积，即把 uv 的导数当成 u 的导数乘 v 的导数",
+    "对复合函数求导时只对外层求导，忘记再乘内层函数的导数"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_h1023_q1",
+     "topicId": "mxj_h1023",
+     "prompt": "函数 y 等于 x 的立方的导数等于",
+     "question": "函数 y 等于 x 的立方的导数等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "3x 的平方"
+      },
+      {
+       "label": "B",
+       "text": "x 的平方"
+      },
+      {
+       "label": "C",
+       "text": "3x"
+      },
+      {
+       "label": "D",
+       "text": "3x 的立方"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由幂函数的求导公式，x 的 n 次方的导数等于 n 乘 x 的 n 减 1 次方。这里 n 等于 3，所以导数是 3 乘 x 的平方，即 3x 的平方。"
+    },
+    {
+     "id": "mxj_h1023_q2",
+     "topicId": "mxj_h1023",
+     "prompt": "函数 y 等于 sin x 的导数是",
+     "question": "函数 y 等于 sin x 的导数是",
+     "options": [
+      {
+       "label": "A",
+       "text": "负 sin x"
+      },
+      {
+       "label": "B",
+       "text": "负 cos x"
+      },
+      {
+       "label": "C",
+       "text": "cos x"
+      },
+      {
+       "label": "D",
+       "text": "sin x"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "正弦函数的导数是余弦函数，余弦函数的导数才是负的正弦函数，两者不要互换。可以由导数定义结合和差化积得到这个公式。"
+    },
+    {
+     "id": "mxj_h1023_q3",
+     "topicId": "mxj_h1023",
+     "prompt": "已知函数 f(x) 等于 x 的平方加 3x 减 2，则 f'(x) 等于",
+     "question": "已知函数 f(x) 等于 x 的平方加 3x 减 2，则 f'(x) 等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 加 3"
+      },
+      {
+       "label": "B",
+       "text": "2x 加 3"
+      },
+      {
+       "label": "C",
+       "text": "2x 加 3 减 2"
+      },
+      {
+       "label": "D",
+       "text": "2x 减 2"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "逐项求导，x 的平方的导数是 2x，3x 的导数是 3，常数负 2 的导数是零，三部分相加得 f'(x) 等于 2x 加 3。常数项求导后消失是常见易错点。"
+    },
+    {
+     "id": "mxj_h1023_q4",
+     "topicId": "mxj_h1023",
+     "prompt": "已知函数 f(x) 等于 x 乘 sin x，则 f'(x) 等于",
+     "question": "已知函数 f(x) 等于 x 乘 sin x，则 f'(x) 等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "sin x 加 x 乘 cos x"
+      },
+      {
+       "label": "B",
+       "text": "sin x 乘 cos x"
+      },
+      {
+       "label": "C",
+       "text": "cos x"
+      },
+      {
+       "label": "D",
+       "text": "x 乘 cos x"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个函数乘积的导数等于第一个函数的导数乘第二个函数，加上第一个函数乘第二个函数的导数。x 的导数是 1，所以 f'(x) 等于 sin x 加 x 乘 cos x。"
+    },
+    {
+     "id": "mxj_h1023_q5",
+     "topicId": "mxj_h1023",
+     "prompt": "已知函数 f(x) 等于 3x 加 1 括号的平方，则 f'(x) 等于",
+     "question": "已知函数 f(x) 等于 3x 加 1 括号的平方，则 f'(x) 等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "2 乘 3x 加 1"
+      },
+      {
+       "label": "B",
+       "text": "6 乘 3x 加 1"
+      },
+      {
+       "label": "C",
+       "text": "3 乘 3x 加 1"
+      },
+      {
+       "label": "D",
+       "text": "6x"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "这是形如 f(ax 加 b) 的复合函数。先对外层平方求导得 2 乘 3x 加 1，再乘内层函数 3x 加 1 的导数 3，得 f'(x) 等于 6 乘 3x 加 1，也就是 18x 加 6。忘记乘内层导数是本题最常见的错误。"
+    },
+    {
+     "id": "mxj_h1023_q6",
+     "topicId": "mxj_h1023",
+     "prompt": "已知函数 f(x) 等于 x 的立方，则 f'(2) 等于",
+     "question": "已知函数 f(x) 等于 x 的立方，则 f'(2) 等于",
+     "answer": 12,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由幂函数的求导公式得 f'(x) 等于 3x 的平方，把 x 等于 2 代入得 3 乘 4 等于 12。它是曲线在点 (2，8) 处切线的斜率。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}]}"
+    },
+    {
+     "id": "mxj_h1023_q7",
+     "topicId": "mxj_h1023",
+     "prompt": "已知函数 f(x) 等于 x 分之 1，即 x 的负一次方，则 f'(1) 等于",
+     "question": "已知函数 f(x) 等于 x 分之 1，即 x 的负一次方，则 f'(1) 等于",
+     "answer": "负 1",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由幂函数求导公式，x 的负一次方的导数等于负 1 乘 x 的负二次方，也就是负的 x 的平方分之 1。把 x 等于 1 代入得 f'(1) 等于负 1。"
+    },
+    {
+     "id": "mxj_h1023_q8",
+     "topicId": "mxj_h1023",
+     "prompt": "求函数 f(x) 等于 x 的立方减 3x 的平方加 2 的导数，并求出使导数等于零的自变量的值。",
+     "question": "求函数 f(x) 等于 x 的立方减 3x 的平方加 2 的导数，并求出使导数等于零的自变量的值。",
+     "answer": "f'(x) 等于 3x 的平方减 6x，使导数等于零的 x 是 0 或 2",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "逐项求导得 f'(x) 等于 3x 的平方减 6x。令 3x 的平方减 6x 等于零，提取公因式得 3x 乘 x 减 2 等于零，所以 x 等于 0 或 x 等于 2。这两点是导数变号的位置，往往是极值点，还需进一步判断单调性。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1024",
+   "description": "导数在研究函数中的应用：借助几何直观了解函数的单调性与导数符号的关系，会用导数求函数的单调区间；了解函数在某点取得极值的条件，会求极大值与极小值以及闭区间上的最大值与最小值，并用导数解决用料最省、面积最大等简单的实际最优化问题。",
+   "mastery_criteria": [
+    "能由导数的符号判断函数的单调性并求出单调区间",
+    "会求函数的极大值与极小值",
+    "会求闭区间上函数的最大值与最小值"
+   ],
+   "page": null,
+   "misconceptions": [
+    "认为导数为零的点一定是极值点，忽略了该点两侧导数符号必须改变",
+    "把极小值当成函数在给定区间上的最小值，忽略区间端点的函数值",
+    "求闭区间上的最值时只比较各极值，漏掉区间端点的函数值"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "mxj_h1024_q1",
+     "topicId": "mxj_h1024",
+     "prompt": "如果函数 f(x) 在某个区间内满足 f'(x) 大于零，那么在这个区间内",
+     "question": "如果函数 f(x) 在某个区间内满足 f'(x) 大于零，那么在这个区间内",
+     "options": [
+      {
+       "label": "A",
+       "text": "函数单调递增"
+      },
+      {
+       "label": "B",
+       "text": "函数单调递减"
+      },
+      {
+       "label": "C",
+       "text": "函数是常数函数"
+      },
+      {
+       "label": "D",
+       "text": "函数先增后减"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "导数为正说明自变量增大时函数值也增大，函数在该区间上单调递增；导数为负则单调递减。导数恒为零时函数是该区间上的常数函数。"
+    },
+    {
+     "id": "mxj_h1024_q2",
+     "topicId": "mxj_h1024",
+     "prompt": "函数在一点处取得极值的必要条件是",
+     "question": "函数在一点处取得极值的必要条件是",
+     "options": [
+      {
+       "label": "A",
+       "text": "函数在该点的值为零"
+      },
+      {
+       "label": "B",
+       "text": "函数在该点的导数为正"
+      },
+      {
+       "label": "C",
+       "text": "函数在该点没有定义"
+      },
+      {
+       "label": "D",
+       "text": "函数在该点的导数为零或导数不存在"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "可导函数在极值点处的导数一定为零，所以导数为零是取得极值的必要条件，但导数为零不一定取得极值，还要看该点两侧导数的符号是否改变。"
+    },
+    {
+     "id": "mxj_h1024_q3",
+     "topicId": "mxj_h1024",
+     "prompt": "函数 f(x) 等于 x 的立方减 3x 的平方的单调递增区间是",
+     "question": "函数 f(x) 等于 x 的立方减 3x 的平方的单调递增区间是",
+     "options": [
+      {
+       "label": "A",
+       "text": "所有大于 0 且小于 2 的实数"
+      },
+      {
+       "label": "B",
+       "text": "所有小于 0 或大于 2 的实数"
+      },
+      {
+       "label": "C",
+       "text": "所有大于 0 的实数"
+      },
+      {
+       "label": "D",
+       "text": "全体实数"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "求导得 f'(x) 等于 3x 的平方减 6x，即 3x 乘 x 减 2。令导数大于零，得 x 小于 0 或 x 大于 2，所以单调递增区间是所有小于 0 或大于 2 的实数，中间那段区间上函数反而递减。"
+    },
+    {
+     "id": "mxj_h1024_q4",
+     "topicId": "mxj_h1024",
+     "prompt": "函数 f(x) 等于 x 的立方减 3x 的极大值等于",
+     "question": "函数 f(x) 等于 x 的立方减 3x 的极大值等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "负 2"
+      },
+      {
+       "label": "B",
+       "text": "0"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "求导得 f'(x) 等于 3x 的平方减 3，令其等于零得 x 等于 1 或 x 等于负 1。当 x 小于负 1 时导数为正，当 x 介于负 1 与 1 之间时导数为负，所以 x 等于负 1 处取极大值，函数值为负 1 加 3 等于 2。"
+    },
+    {
+     "id": "mxj_h1024_q5",
+     "topicId": "mxj_h1024",
+     "prompt": "函数 f(x) 等于 x 的立方减 3x 在闭区间上由 x 等于 0 到 x 等于 3 的最小值等于",
+     "question": "函数 f(x) 等于 x 的立方减 3x 在闭区间上由 x 等于 0 到 x 等于 3 的最小值等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "0"
+      },
+      {
+       "label": "B",
+       "text": "负 2"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "18"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "区间内的驻点是 x 等于 1。比较三个候选值：x 等于 0 时函数值为 0，x 等于 1 时函数值为负 2，x 等于 3 时函数值为 27 减 9 等于 18。三者中最小的是负 2，所以最小值是负 2。只比较驻点而漏掉端点是这类题的典型错误。"
+    },
+    {
+     "id": "mxj_h1024_q6",
+     "topicId": "mxj_h1024",
+     "prompt": "已知函数 f(x) 等于 x 的平方减 4x，则它的最小值等于",
+     "question": "已知函数 f(x) 等于 x 的平方减 4x，则它的最小值等于",
+     "answer": -4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "求导得 f'(x) 等于 2x 减 4，令其等于零得 x 等于 2。此时函数值为 4 减 8 等于负 4，且导数在 x 等于 2 两侧由负变正，所以这是极小值也是最小值，最小值是负 4。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 2}]}]}"
+    },
+    {
+     "id": "mxj_h1024_q7",
+     "topicId": "mxj_h1024",
+     "prompt": "用长 12 米的篱笆围成一个矩形菜地，要求四条边都用篱笆，则这块菜地面积的最大值是（单位：平方米）",
+     "question": "用长 12 米的篱笆围成一个矩形菜地，要求四条边都用篱笆，则这块菜地面积的最大值是（单位：平方米）",
+     "answer": "9",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "设矩形的一边长为 x 米，则邻边长为 6 减 x 米，面积 S 等于 x 乘 6 减 x，即 6x 减 x 的平方。求导得 S' 等于 6 减 2x，令其等于零得 x 等于 3，此时邻边也是 3 米，面积等于 3 乘 3 等于 9 平方米，即正方形时面积最大。"
+    },
+    {
+     "id": "mxj_h1024_q8",
+     "topicId": "mxj_h1024",
+     "prompt": "说明函数 f(x) 等于 x 的平方减 2x 的单调性，并求出它的极小值。",
+     "question": "说明函数 f(x) 等于 x 的平方减 2x 的单调性，并求出它的极小值。",
+     "answer": "函数在小于 1 的范围内单调递减，在大于 1 的范围内单调递增，极小值为负 1",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "求导得 f'(x) 等于 2x 减 2。当 x 小于 1 时导数为负，函数单调递减；当 x 大于 1 时导数为正，函数单调递增。导数在 x 等于 1 处由负变正，所以函数在 x 等于 1 处取得极小值，极小值为 1 减 2 等于负 1。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1025",
+   "description": "空间直角坐标系：在平面直角坐标系的基础上建立空间直角坐标系，认识坐标轴、坐标平面，会用三元有序实数组刻画空间中点的位置；借助所有棱分别与坐标轴平行的长方体顶点的坐标，探索并得出空间两点间的距离公式，体会用坐标法刻画空间位置的必要性。",
+   "mastery_criteria": [
+    "能写出空间中点的坐标并说出坐标平面上的点的坐标特征",
+    "会求一个点关于坐标平面或坐标轴对称的点的坐标",
+    "会用两点间的距离公式计算空间两点的距离"
+   ],
+   "page": null,
+   "misconceptions": [
+    "写点的坐标时把三个坐标的先后次序写乱，忽略横纵竖的顺序",
+    "把关于 xOy 平面对称误认为横坐标也要变号",
+    "使用两点间距离公式时只算两个坐标差的平方和，漏掉竖坐标那一项"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_h1025_q1",
+     "topicId": "mxj_h1025",
+     "prompt": "在空间直角坐标系中，位于 xOy 平面上的点，其坐标的特征是",
+     "question": "在空间直角坐标系中，位于 xOy 平面上的点，其坐标的特征是",
+     "options": [
+      {
+       "label": "A",
+       "text": "横坐标为零"
+      },
+      {
+       "label": "B",
+       "text": "纵坐标为零"
+      },
+      {
+       "label": "C",
+       "text": "竖坐标为零"
+      },
+      {
+       "label": "D",
+       "text": "三个坐标都为零"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "xOy 平面由 x 轴与 y 轴确定，平面上任意一点在 z 轴方向上的分量为零，因此竖坐标为零。同理，yOz 平面上的点横坐标为零，xOz 平面上的点纵坐标为零。"
+    },
+    {
+     "id": "mxj_h1025_q2",
+     "topicId": "mxj_h1025",
+     "prompt": "在空间直角坐标系中，点 P(1，2，负 3) 在 xOy 平面上的投影的坐标是",
+     "question": "在空间直角坐标系中，点 P(1，2，负 3) 在 xOy 平面上的投影的坐标是",
+     "options": [
+      {
+       "label": "A",
+       "text": "(0，2，负 3)"
+      },
+      {
+       "label": "B",
+       "text": "(1，0，负 3)"
+      },
+      {
+       "label": "C",
+       "text": "(0，0，负 3)"
+      },
+      {
+       "label": "D",
+       "text": "(1，2，0)"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把一个点投影到 xOy 平面上，就是沿 z 轴方向把它压到该平面上，横坐标与纵坐标保持不变，竖坐标变为零，所以投影点的坐标是 (1，2，0)。"
+    },
+    {
+     "id": "mxj_h1025_q3",
+     "topicId": "mxj_h1025",
+     "prompt": "在空间直角坐标系中，点 (1，2，3) 关于 z 轴对称的点的坐标是",
+     "question": "在空间直角坐标系中，点 (1，2，3) 关于 z 轴对称的点的坐标是",
+     "options": [
+      {
+       "label": "A",
+       "text": "(1，2，负 3)"
+      },
+      {
+       "label": "B",
+       "text": "(负 1，负 2，3)"
+      },
+      {
+       "label": "C",
+       "text": "(负 1，2，3)"
+      },
+      {
+       "label": "D",
+       "text": "(1，负 2，负 3)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "关于 z 轴对称时，z 轴上的点不动，横坐标与纵坐标同时变为相反数，竖坐标不变，所以对称点是 (负 1，负 2，3)。关于 xOy 平面对称才只改变竖坐标。"
+    },
+    {
+     "id": "mxj_h1025_q4",
+     "topicId": "mxj_h1025",
+     "prompt": "已知点 A(1，0，0)，点 B(0，2，2)，则线段 AB 的长度等于",
+     "question": "已知点 A(1，0，0)，点 B(0，2，2)，则线段 AB 的长度等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "根号 5"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两点间的距离等于三个坐标差的平方和再开平方。坐标差分别是负 1、2、2，平方和为 1 加 4 加 4 等于 9，开平方得 3，所以线段 AB 的长度是 3。"
+    },
+    {
+     "id": "mxj_h1025_q5",
+     "topicId": "mxj_h1025",
+     "prompt": "点 P(1，2，3) 关于 xOy 平面对称的点为 Q，则线段 PQ 的长度等于",
+     "question": "点 P(1，2，3) 关于 xOy 平面对称的点为 Q，则线段 PQ 的长度等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "关于 xOy 平面对称时只有竖坐标变为相反数，所以 Q 的坐标是 (1，2，负 3)。两点只在竖坐标上有差别，差的绝对值为 6，因此线段 PQ 的长度等于 6，它等于点 P 到 xOy 平面距离的 2 倍。"
+    },
+    {
+     "id": "mxj_h1025_q6",
+     "topicId": "mxj_h1025",
+     "prompt": "已知原点 O 的坐标是 (0，0，0)，点 B 的坐标是 (2，3，6)，则线段 OB 的长度等于",
+     "question": "已知原点 O 的坐标是 (0，0，0)，点 B 的坐标是 (2，3，6)，则线段 OB 的长度等于",
+     "answer": 7.0,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "三个坐标差的平方分别是 4、9、36，相加得 49，再开平方得 7，所以线段 OB 的长度是 7。计算时容易漏掉竖坐标的平方项，这是最常见的错误。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}]}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 2}]}]}, {\"type\": \"num\", \"value\": 0.5}]}"
+    },
+    {
+     "id": "mxj_h1025_q7",
+     "topicId": "mxj_h1025",
+     "prompt": "在空间直角坐标系中，点 (3，负 2，5) 关于 yOz 平面对称的点的坐标是",
+     "question": "在空间直角坐标系中，点 (3，负 2，5) 关于 yOz 平面对称的点的坐标是",
+     "answer": "(负 3，负 2，5)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "关于 yOz 平面对称时，平面上的纵坐标与竖坐标保持不变，只有横坐标变为相反数，所以对称点的坐标是 (负 3，负 2，5)。"
+    },
+    {
+     "id": "mxj_h1025_q8",
+     "topicId": "mxj_h1025",
+     "prompt": "写出空间两点间的距离公式，并说明它与平面内两点间距离公式的关系。",
+     "question": "写出空间两点间的距离公式，并说明它与平面内两点间距离公式的关系。",
+     "answer": "空间两点距离等于三个坐标差的平方和再开平方，当两点的竖坐标都为零时就退化为平面内两点间的距离公式",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "设两点的坐标分别为 (x1，y1，z1) 与 (x2，y2，z2)，则距离等于三个坐标差的平方和再开平方。若两点都落在 xOy 平面上，则竖坐标都为零，第三个平方项为零，公式就变成平面内两点间的距离公式，可见空间的距离公式是平面公式的推广，多出的只是沿竖轴方向的位移。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1026",
+   "description": "空间向量及其运算：经历由平面向量推广到空间向量的过程，理解空间向量的概念；掌握空间向量的加法、减法、数乘运算及其运算律，理解两个空间向量数量积的定义与运算律，会用数量积求向量的模与夹角，并了解共面向量定理。",
+   "mastery_criteria": [
+    "会作空间向量的加法、减法与数乘运算",
+    "会用数量积求空间向量的模与两个向量的夹角",
+    "能判断三个向量是否共面"
+   ],
+   "page": null,
+   "misconceptions": [
+    "以为空间向量只需要两个坐标分量就能确定，忽略竖坐标",
+    "计算数量积时只把前两个坐标相乘，漏掉竖坐标的乘积",
+    "把数量积为零误判成两个向量都是零向量，忽略垂直的情形"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_h1026_q1",
+     "topicId": "mxj_h1026",
+     "prompt": "关于空间向量的加法，下列说法正确的是",
+     "question": "关于空间向量的加法，下列说法正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "交换律与结合律都成立"
+      },
+      {
+       "label": "B",
+       "text": "只有交换律成立"
+      },
+      {
+       "label": "C",
+       "text": "只有结合律成立"
+      },
+      {
+       "label": "D",
+       "text": "两个运算律都不成立"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "空间向量的加法与平面向量的加法一样，可以用三角形法则或平行四边形法则作出，并且交换律与结合律都成立，这正是向量运算可以像数一样进行变形的基础。"
+    },
+    {
+     "id": "mxj_h1026_q2",
+     "topicId": "mxj_h1026",
+     "prompt": "若两个空间向量 a 与 b 都是非零向量，且它们的数量积等于零，则",
+     "question": "若两个空间向量 a 与 b 都是非零向量，且它们的数量积等于零，则",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 与 b 平行"
+      },
+      {
+       "label": "B",
+       "text": "a 与 b 相等"
+      },
+      {
+       "label": "C",
+       "text": "a 与 b 中至少有一个是零向量"
+      },
+      {
+       "label": "D",
+       "text": "a 与 b 垂直"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两个非零向量的数量积等于两个向量的模与夹角余弦的乘积，模都不为零，所以数量积为零只能是夹角余弦为零，即夹角为直角，两向量垂直。题目已说明都是非零向量，因此不可能是零向量。"
+    },
+    {
+     "id": "mxj_h1026_q3",
+     "topicId": "mxj_h1026",
+     "prompt": "已知向量 a 的坐标是 (1，2，负 1)，向量 b 的坐标是 (2，负 1，1)，则 a 与 b 的数量积等于",
+     "question": "已知向量 a 的坐标是 (1，2，负 1)，向量 b 的坐标是 (2，负 1，1)，则 a 与 b 的数量积等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "负 1"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "0"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "数量积等于对应坐标乘积之和，即 1 乘 2 加 2 乘负 1 加负 1 乘 1，等于 2 减 2 减 1 等于负 1。结果为负说明两个向量的夹角是钝角。"
+    },
+    {
+     "id": "mxj_h1026_q4",
+     "topicId": "mxj_h1026",
+     "prompt": "已知向量 a 的坐标是 (1，0，2)，则 a 的模等于",
+     "question": "已知向量 a 的坐标是 (1，0，2)，则 a 的模等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "根号 3"
+      },
+      {
+       "label": "C",
+       "text": "根号 5"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "向量的模等于各坐标平方和的算术平方根，即 1 的平方加 0 的平方加 2 的平方等于 5，再开平方得根号 5。注意模不等于坐标平方和本身。"
+    },
+    {
+     "id": "mxj_h1026_q5",
+     "topicId": "mxj_h1026",
+     "prompt": "已知向量 a 的坐标是 (1，0，0)，向量 b 的坐标是 (1，1，0)，则 a 与 b 的夹角等于",
+     "question": "已知向量 a 的坐标是 (1，0，0)，向量 b 的坐标是 (1，1，0)，则 a 与 b 的夹角等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "30 度"
+      },
+      {
+       "label": "B",
+       "text": "45 度"
+      },
+      {
+       "label": "C",
+       "text": "60 度"
+      },
+      {
+       "label": "D",
+       "text": "90 度"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "数量积等于 1 乘 1 加 0 加 0 等于 1，a 的模为 1，b 的模为根号 2，夹角的余弦等于 1 除以根号 2，即二分之根号二，所以夹角是 45 度。"
+    },
+    {
+     "id": "mxj_h1026_q6",
+     "topicId": "mxj_h1026",
+     "prompt": "已知向量 a 的坐标是 (2，负 1，2)，向量 b 的坐标是 (1，2，2)，则 a 与 b 的数量积等于",
+     "question": "已知向量 a 的坐标是 (2，负 1，2)，向量 b 的坐标是 (1，2，2)，则 a 与 b 的数量积等于",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "对应坐标相乘再相加，2 乘 1 得 2，负 1 乘 2 得负 2，2 乘 2 得 4，三部分相加得 2 减 2 加 4 等于 4。最大的一项来自竖坐标的乘积，不能漏掉。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "mxj_h1026_q7",
+     "topicId": "mxj_h1026",
+     "prompt": "已知向量 a 的坐标是 (1，1，0)，向量 b 的坐标是 (0，1，1)，则 a 加 2b 的坐标是",
+     "question": "已知向量 a 的坐标是 (1，1，0)，向量 b 的坐标是 (0，1，1)，则 a 加 2b 的坐标是",
+     "answer": "(1，3，2)",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "数乘时每个坐标都乘 2，得 2b 的坐标是 (0，2，2)。再与 a 的坐标对应相加，横坐标 1 加 0 得 1，纵坐标 1 加 2 得 3，竖坐标 0 加 2 得 2，所以结果是 (1，3，2)。"
+    },
+    {
+     "id": "mxj_h1026_q8",
+     "topicId": "mxj_h1026",
+     "prompt": "写出空间向量数量积的坐标公式，并说明它与平面向量数量积坐标公式的关系。",
+     "question": "写出空间向量数量积的坐标公式，并说明它与平面向量数量积坐标公式的关系。",
+     "answer": "空间向量的数量积等于三个对应坐标乘积之和，平面情形只保留前两项，是空间公式的特例",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "设两个空间向量的坐标分别为 (x1，y1，z1) 与 (x2，y2，z2)，则数量积等于 x1 乘 x2 加 y1 乘 y2 加 z1 乘 z2。当两个向量都在 xOy 平面内时竖坐标都是零，第三项消失，公式就变成平面向量数量积的坐标公式，可见空间公式只是多了一项，运算规律完全一致。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1027",
+   "description": "空间向量基本定理及坐标表示：掌握空间向量基本定理，即若三个向量不共面，则空间中任意一个向量都可以用它们线性表示且表示唯一；理解基底与正交分解，知道空间向量的坐标是它在三个坐标轴方向上的分向量对应的实数，会用坐标进行线性运算与数量积运算。",
+   "mastery_criteria": [
+    "能说出空间向量基本定理的条件与结论",
+    "会把空间向量正交分解并写出它的坐标",
+    "会用坐标进行线性运算与数量积运算"
+   ],
+   "page": null,
+   "misconceptions": [
+    "把共面的三个向量当作基底，忽略三向量必须不共面这一条件",
+    "以为基底向量必须是两两垂直的单位向量，把一种特殊选择当成必要条件",
+    "把向量的坐标与点的坐标混为一谈，忘记向量坐标是相对基底而言的"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_h1027_q1",
+     "topicId": "mxj_h1027",
+     "prompt": "空间向量基本定理中，作为基底的一组向量必须满足的条件是",
+     "question": "空间向量基本定理中，作为基底的一组向量必须满足的条件是",
+     "options": [
+      {
+       "label": "A",
+       "text": "两两垂直"
+      },
+      {
+       "label": "B",
+       "text": "都是单位向量"
+      },
+      {
+       "label": "C",
+       "text": "三个向量不共面"
+      },
+      {
+       "label": "D",
+       "text": "长度都相等"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "定理的条件是三个向量不共面，此时空间中任意一个向量都能唯一地表示为它们的线性组合。两两垂直与长度相等都不是必要条件，正交单位基底只是一种最常用的特殊选择。"
+    },
+    {
+     "id": "mxj_h1027_q2",
+     "topicId": "mxj_h1027",
+     "prompt": "在单位正交基底中，三个基向量之间的位置与长度关系是",
+     "question": "在单位正交基底中，三个基向量之间的位置与长度关系是",
+     "options": [
+      {
+       "label": "A",
+       "text": "两两垂直且长度都为 1"
+      },
+      {
+       "label": "B",
+       "text": "两两平行且长度都为 1"
+      },
+      {
+       "label": "C",
+       "text": "两两垂直但长度可以不同"
+      },
+      {
+       "label": "D",
+       "text": "两两夹角都是 60 度"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "单位正交基底由三条坐标轴正方向上的单位向量组成，它们两两垂直，长度都等于 1。正因为如此，向量的坐标才正好等于它在三个坐标轴方向上的分量的数值。"
+    },
+    {
+     "id": "mxj_h1027_q3",
+     "topicId": "mxj_h1027",
+     "prompt": "已知三个向量 a、b、c 不共面，向量 p 等于 2a 减 b 加 3c，则 p 在基底 a、b、c 下的坐标是",
+     "question": "已知三个向量 a、b、c 不共面，向量 p 等于 2a 减 b 加 3c，则 p 在基底 a、b、c 下的坐标是",
+     "options": [
+      {
+       "label": "A",
+       "text": "(2，1，3)"
+      },
+      {
+       "label": "B",
+       "text": "(负 2，1，3)"
+      },
+      {
+       "label": "C",
+       "text": "(2，负 1，负 3)"
+      },
+      {
+       "label": "D",
+       "text": "(2，负 1，3)"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由基本定理，向量在给定基底下的坐标就是线性表示中三个系数依次排成的有序实数组，系数分别是 2、负 1、3，所以坐标是 (2，负 1，3)。系数要带符号，不能只取绝对值。"
+    },
+    {
+     "id": "mxj_h1027_q4",
+     "topicId": "mxj_h1027",
+     "prompt": "已知向量 a 的坐标是 (1，2，3)，向量 b 的坐标是 (0，1，负 1)，则 a 减 b 的坐标是",
+     "question": "已知向量 a 的坐标是 (1，2，3)，向量 b 的坐标是 (0，1，负 1)，则 a 减 b 的坐标是",
+     "options": [
+      {
+       "label": "A",
+       "text": "(1，3，2)"
+      },
+      {
+       "label": "B",
+       "text": "(1，1，4)"
+      },
+      {
+       "label": "C",
+       "text": "(1，1，2)"
+      },
+      {
+       "label": "D",
+       "text": "(负 1，负 1，负 4)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "向量相减时对应坐标相减，横坐标 1 减 0 得 1，纵坐标 2 减 1 得 1，竖坐标 3 减负 1 得 4，所以 a 减 b 的坐标是 (1，1，4)。竖坐标是 3 加 1 而不是 3 减 1。"
+    },
+    {
+     "id": "mxj_h1027_q5",
+     "topicId": "mxj_h1027",
+     "prompt": "已知向量 a 的坐标是 (1，0，1)，向量 b 的坐标是 (0，1，1)，向量 c 的坐标是 (1，1，2)，则 a、b、c 三个向量的关系是",
+     "question": "已知向量 a 的坐标是 (1，0，1)，向量 b 的坐标是 (0，1，1)，向量 c 的坐标是 (1，1，2)，则 a、b、c 三个向量的关系是",
+     "options": [
+      {
+       "label": "A",
+       "text": "三个向量共面"
+      },
+      {
+       "label": "B",
+       "text": "三个向量不共面"
+      },
+      {
+       "label": "C",
+       "text": "a 与 c 相等"
+      },
+      {
+       "label": "D",
+       "text": "a 与 b 垂直且 c 与它们无关"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "观察坐标可以发现 c 的每个坐标都等于 a 与 b 对应坐标之和，即 c 等于 a 加 b，所以 c 可以由 a 与 b 线性表示，三个向量落在同一个平面内，不能作为空间的一组基底。判断共面往往可以先试着找线性关系。"
+    },
+    {
+     "id": "mxj_h1027_q6",
+     "topicId": "mxj_h1027",
+     "prompt": "已知向量 a 的坐标是 (1，2，3)，向量 b 的坐标是 (2，0，1)，则 a 与 b 的数量积等于",
+     "question": "已知向量 a 的坐标是 (1，2，3)，向量 b 的坐标是 (2，0，1)，则 a 与 b 的数量积等于",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "按坐标计算数量积，1 乘 2 得 2，2 乘 0 得 0，3 乘 1 得 3，相加得 5。中间一项为零是因为 b 的纵坐标为零，计算时不要因此就跳过竖坐标那一项。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 1}]}]}"
+    },
+    {
+     "id": "mxj_h1027_q7",
+     "topicId": "mxj_h1027",
+     "prompt": "已知向量 a 的坐标是 (2，负 1，3)，则 3a 的坐标是",
+     "question": "已知向量 a 的坐标是 (2，负 1，3)，则 3a 的坐标是",
+     "answer": "(6，负 3，9)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "数乘一个向量时，要把实数乘到每一个坐标上，2 乘 3 得 6，负 1 乘 3 得负 3，3 乘 3 得 9，所以结果是 (6，负 3，9)。只乘第一个坐标是常见的错误。"
+    },
+    {
+     "id": "mxj_h1027_q8",
+     "topicId": "mxj_h1027",
+     "prompt": "说明为什么三个不共面的向量可以作为空间的一组基底，并且任意向量的表示是唯一的。",
+     "question": "说明为什么三个不共面的向量可以作为空间的一组基底，并且任意向量的表示是唯一的。",
+     "answer": "三个不共面的向量能张成整个空间，任意向量都可由它们线性表示；若有两种表示，相减后得到三个不共面向量的线性组合为零，只能所有系数为零，故表示唯一",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "三个不共面的向量确定三个不同的方向，把它们平移到同一起点后可以张成整个空间，空间中的任意向量都能分解到这三个方向上，从而可以线性表示。若同一个向量有两种不同的表示，把两式相减就得到这三个向量的一个线性组合等于零向量，而系数不全为零，这与三个向量不共面相矛盾，所以表示只能有一种。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1028",
+   "description": "空间向量在立体几何中的应用：用向量语言描述直线与平面，理解直线的方向向量与平面的法向量；能用向量方法判断直线与直线、直线与平面、平面与平面的平行与垂直，求异面直线所成角、直线与平面所成角与二面角以及点到平面的距离，并用来证明立体几何中的判定定理。",
+   "mastery_criteria": [
+    "会求直线的方向向量与平面的法向量",
+    "能用向量方法判断平行与垂直并求各种夹角",
+    "能用向量方法求点到平面的距离"
+   ],
+   "page": null,
+   "misconceptions": [
+    "把直线与平面所成角直接当成方向向量与法向量的夹角，忘记取其余角",
+    "认为两个平面法向量的夹角就是二面角，忽略它可能是二面角的补角",
+    "用向量求点到平面距离时忘记把数量积的结果除以法向量的模"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "mxj_h1028_q1",
+     "topicId": "mxj_h1028",
+     "prompt": "若直线 l 的方向向量为 u，平面 α 的法向量为 n，则直线 l 平行于平面 α 或在平面 α 内的条件是",
+     "question": "若直线 l 的方向向量为 u，平面 α 的法向量为 n，则直线 l 平行于平面 α 或在平面 α 内的条件是",
+     "options": [
+      {
+       "label": "A",
+       "text": "u 与 n 的数量积等于零"
+      },
+      {
+       "label": "B",
+       "text": "u 与 n 的数量积等于 1"
+      },
+      {
+       "label": "C",
+       "text": "u 与 n 共线"
+      },
+      {
+       "label": "D",
+       "text": "u 与 n 都是单位向量"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "方向向量与法向量垂直时，直线与平面的法线垂直，直线就落在与法线垂直的方向上，因此直线平行于平面或在平面内。u 与 n 共线则说明直线垂直于平面，是另一种情形。"
+    },
+    {
+     "id": "mxj_h1028_q2",
+     "topicId": "mxj_h1028",
+     "prompt": "两个平面互相垂直的充要条件是它们的法向量满足",
+     "question": "两个平面互相垂直的充要条件是它们的法向量满足",
+     "options": [
+      {
+       "label": "A",
+       "text": "方向向量平行"
+      },
+      {
+       "label": "B",
+       "text": "法向量互相垂直"
+      },
+      {
+       "label": "C",
+       "text": "法向量互相平行"
+      },
+      {
+       "label": "D",
+       "text": "两个法向量长度相等"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "平面的方向由法向量刻画，两个平面垂直等价于它们的法向量互相垂直，此时两个法向量的数量积等于零。法向量平行则两个平面平行或重合。"
+    },
+    {
+     "id": "mxj_h1028_q3",
+     "topicId": "mxj_h1028",
+     "prompt": "在棱长为 1 的正方体 ABCD 与 A1B1C1D1 中，异面直线 AB1 与 BC1 所成的角等于",
+     "question": "在棱长为 1 的正方体 ABCD 与 A1B1C1D1 中，异面直线 AB1 与 BC1 所成的角等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "30 度"
+      },
+      {
+       "label": "B",
+       "text": "45 度"
+      },
+      {
+       "label": "C",
+       "text": "60 度"
+      },
+      {
+       "label": "D",
+       "text": "90 度"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "以 A 为原点、三条棱所在直线为坐标轴建立坐标系，则 AB1 的方向向量是 (1，0，1)，BC1 的方向向量是 (0，1，1)。两者数量积为 1，模都是根号 2，夹角余弦为二分之一，所以所成角是 60 度。"
+    },
+    {
+     "id": "mxj_h1028_q4",
+     "topicId": "mxj_h1028",
+     "prompt": "已知平面内有两个不共线的向量，坐标分别是 (1，0，0) 与 (0，1，0)，则该平面的一个法向量是",
+     "question": "已知平面内有两个不共线的向量，坐标分别是 (1，0，0) 与 (0，1，0)，则该平面的一个法向量是",
+     "options": [
+      {
+       "label": "A",
+       "text": "(1，0，0)"
+      },
+      {
+       "label": "B",
+       "text": "(0，1，0)"
+      },
+      {
+       "label": "C",
+       "text": "(1，1，0)"
+      },
+      {
+       "label": "D",
+       "text": "(0，0，1)"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "法向量要与平面内所有向量都垂直。前三个选项都落在 xOy 平面内，与平面内的向量不垂直；只有 (0，0，1) 与这两个向量的数量积都等于零，所以它是该平面的一个法向量。"
+    },
+    {
+     "id": "mxj_h1028_q5",
+     "topicId": "mxj_h1028",
+     "prompt": "在棱长为 1 的正方体 ABCD 与 A1B1C1D1 中，点 C 到平面 A1BD 的距离等于",
+     "question": "在棱长为 1 的正方体 ABCD 与 A1B1C1D1 中，点 C 到平面 A1BD 的距离等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "三分之一"
+      },
+      {
+       "label": "B",
+       "text": "三分之根号 3"
+      },
+      {
+       "label": "C",
+       "text": "二分之根号 3"
+      },
+      {
+       "label": "D",
+       "text": "根号 3"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "以 A 为原点建立坐标系，则平面 A1BD 的方程可以写成 x 加 y 加 z 等于 1，它的一个法向量是 (1，1，1)，模为根号 3。点 C 的坐标是 (1，1，0)，代入得 1 加 1 减 1 的绝对值为 1，除以根号 3 得三分之根号 3，这就是所求距离。"
+    },
+    {
+     "id": "mxj_h1028_q6",
+     "topicId": "mxj_h1028",
+     "prompt": "已知直线 l 的方向向量 u 的坐标是 (1，2，2)，平面 α 的法向量 n 的坐标是 (0，0，1)，则 u 与 n 的数量积等于",
+     "question": "已知直线 l 的方向向量 u 的坐标是 (1，2，2)，平面 α 的法向量 n 的坐标是 (0，0，1)，则 u 与 n 的数量积等于",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "数量积等于对应坐标乘积之和，即 1 乘 0 加 2 乘 0 加 2 乘 1，等于 2。这个数量积是求直线与平面所成角时的第一步，还要再除以两个向量模的乘积。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 1}]}"
+    },
+    {
+     "id": "mxj_h1028_q7",
+     "topicId": "mxj_h1028",
+     "prompt": "在棱长为 1 的正方体 ABCD 与 A1B1C1D1 中，点 A 到平面 BB1D1D 的距离是",
+     "question": "在棱长为 1 的正方体 ABCD 与 A1B1C1D1 中，点 A 到平面 BB1D1D 的距离是",
+     "answer": "二分之根号 2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "以 A 为原点建立坐标系，平面 BB1D1D 经过点 B(1，0，0) 与点 D(0，1，0)，并且与竖轴平行，可写成 x 加 y 等于 1，法向量取 (1，1，0)，模为根号 2。点 A 的坐标是原点，代入得负 1 的绝对值除以根号 2，即二分之根号 2。"
+    },
+    {
+     "id": "mxj_h1028_q8",
+     "topicId": "mxj_h1028",
+     "prompt": "用向量方法说明如何证明直线与平面垂直的判定定理：如果一条直线与一个平面内两条相交直线都垂直，那么这条直线垂直于这个平面。",
+     "question": "用向量方法说明如何证明直线与平面垂直的判定定理：如果一条直线与一个平面内两条相交直线都垂直，那么这条直线垂直于这个平面。",
+     "answer": "设直线的方向向量为 u，平面内两条相交直线的方向向量为 a 与 b，由 u 与 a、u 与 b 的数量积都为零，得 u 与平面内任意向量 a 与 b 的线性组合的数量积也为零，所以直线垂直于平面内所有直线",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "先把已知条件翻译成向量语言：设直线的方向向量为 u，平面内两条相交直线的方向向量分别为 a 与 b。由垂直条件得 u 与 a、u 与 b 的数量积都等于零。因为 a 与 b 不共线，平面内任意一个向量都可以写成它们的线性组合，用数量积的运算律可得 u 与这个向量的数量积也等于零。于是 u 垂直于平面内所有直线，即直线垂直于该平面。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1029",
+   "description": "条件概率与事件的独立性：结合古典概型了解条件概率，理解在事件 A 发生的条件下事件 B 发生的概率的含义，并能计算简单随机事件的条件概率；理解条件概率与事件独立性的关系，会用乘法公式与全概率公式计算概率，解决简单的实际问题。",
+   "mastery_criteria": [
+    "会由古典概型计算简单事件的条件概率",
+    "会用乘法公式与事件独立的定义计算积事件的概率",
+    "会用全概率公式求复杂事件的概率"
+   ],
+   "page": null,
+   "misconceptions": [
+    "把条件概率 P(B|A) 与积事件的概率 P(AB) 混为一谈，忘记还要除以 P(A)",
+    "认为 P(AB) 等于 P(A) 乘 P(B) 对任意两个事件都成立，忽略独立性这一前提",
+    "判断独立性时只看两个概率的大小，不去验证积事件的概率是否等于乘积"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_h1029_q1",
+     "topicId": "mxj_h1029",
+     "prompt": "当 P(A) 大于零时，在事件 A 发生的条件下事件 B 发生的概率等于",
+     "question": "当 P(A) 大于零时，在事件 A 发生的条件下事件 B 发生的概率等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "P(AB) 除以 P(A)"
+      },
+      {
+       "label": "B",
+       "text": "P(A) 除以 P(AB)"
+      },
+      {
+       "label": "C",
+       "text": "P(AB) 除以 P(B)"
+      },
+      {
+       "label": "D",
+       "text": "P(A) 加 P(B)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "条件概率的定义是在事件 A 发生的条件下，用积事件的概率除以事件 A 的概率，几何上相当于把样本空间缩小为事件 A 对应的部分。除以 P(B) 就变成了在 B 发生的条件下 A 发生的概率。"
+    },
+    {
+     "id": "mxj_h1029_q2",
+     "topicId": "mxj_h1029",
+     "prompt": "若事件 A 与事件 B 相互独立，则",
+     "question": "若事件 A 与事件 B 相互独立，则",
+     "options": [
+      {
+       "label": "A",
+       "text": "P(AB) 等于 P(A) 加 P(B)"
+      },
+      {
+       "label": "B",
+       "text": "P(AB) 等于 P(A) 乘 P(B)"
+      },
+      {
+       "label": "C",
+       "text": "P(AB) 等于零"
+      },
+      {
+       "label": "D",
+       "text": "P(A) 一定等于 P(B)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两个事件相互独立的含义是一个事件发生与否不影响另一个事件发生的概率，由此可推出积事件的概率等于两个事件概率的乘积。相加的公式只适用于互斥事件，两者不要混用。"
+    },
+    {
+     "id": "mxj_h1029_q3",
+     "topicId": "mxj_h1029",
+     "prompt": "掷一枚质地均匀的骰子，在已知掷出的点数是偶数的条件下，点数不超过 3 的概率是",
+     "question": "掷一枚质地均匀的骰子，在已知掷出的点数是偶数的条件下，点数不超过 3 的概率是",
+     "options": [
+      {
+       "label": "A",
+       "text": "六分之一"
+      },
+      {
+       "label": "B",
+       "text": "三分之一"
+      },
+      {
+       "label": "C",
+       "text": "二分之一"
+      },
+      {
+       "label": "D",
+       "text": "三分之二"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "偶数点构成的结果是 2、4、6，其中不超过 3 的只有 2 点一个结果，所以条件概率是三分之一。用公式计算为六分之一除以二分之一，结果同样是三分之一。"
+    },
+    {
+     "id": "mxj_h1029_q4",
+     "topicId": "mxj_h1029",
+     "prompt": "已知 P(A) 等于 0.5，在 A 发生的条件下 B 发生的概率等于 0.4，则 P(AB) 等于",
+     "question": "已知 P(A) 等于 0.5，在 A 发生的条件下 B 发生的概率等于 0.4，则 P(AB) 等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.9"
+      },
+      {
+       "label": "B",
+       "text": "0.1"
+      },
+      {
+       "label": "C",
+       "text": "0.45"
+      },
+      {
+       "label": "D",
+       "text": "0.2"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由乘法公式把条件概率的定义式两边同乘 P(A)，得 P(AB) 等于 0.5 乘 0.4 等于 0.2。0.9 是把两个概率相加，只在两个事件互斥时才是并事件的概率。"
+    },
+    {
+     "id": "mxj_h1029_q5",
+     "topicId": "mxj_h1029",
+     "prompt": "某工厂有两条生产线，甲线产量占六成，次品率为 0.01；乙线产量占四成，次品率为 0.02。从全部产品中任取一件，它是次品的概率是",
+     "question": "某工厂有两条生产线，甲线产量占六成，次品率为 0.01；乙线产量占四成，次品率为 0.02。从全部产品中任取一件，它是次品的概率是",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.014"
+      },
+      {
+       "label": "B",
+       "text": "0.03"
+      },
+      {
+       "label": "C",
+       "text": "0.015"
+      },
+      {
+       "label": "D",
+       "text": "0.02"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "取到的产品来自甲线与乙线是两个互斥的情形，可以用全概率公式求和：来自甲线且是次品的概率为 0.6 乘 0.01 等于 0.006，来自乙线且是次品的概率为 0.4 乘 0.02 等于 0.008，两者相加得 0.014。直接把两个次品率平均是典型错误。"
+    },
+    {
+     "id": "mxj_h1029_q6",
+     "topicId": "mxj_h1029",
+     "prompt": "已知事件 A 与事件 B 相互独立，且 P(A) 等于 0.6，P(B) 等于 0.5，则 P(AB) 等于",
+     "question": "已知事件 A 与事件 B 相互独立，且 P(A) 等于 0.6，P(B) 等于 0.5，则 P(AB) 等于",
+     "answer": 0.3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "两个事件相互独立时，积事件的概率等于两个事件概率的乘积，即 0.6 乘 0.5 等于 0.3。若两个事件互斥，则积事件的概率为零，可见独立与互斥是两回事。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 0.6}, {\"type\": \"num\", \"value\": 0.5}]}"
+    },
+    {
+     "id": "mxj_h1029_q7",
+     "topicId": "mxj_h1029",
+     "prompt": "一批产品共 5 件，其中有 2 件次品，从中不放回地依次取出 2 件。在第一次取出的是次品的条件下，第二次也取出次品的概率是",
+     "question": "一批产品共 5 件，其中有 2 件次品，从中不放回地依次取出 2 件。在第一次取出的是次品的条件下，第二次也取出次品的概率是",
+     "answer": "0.25",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "第一次取出次品后，剩下的 4 件产品中还有 1 件次品，所以在第一次取出次品的条件下第二次也取出次品的概率等于 1 除以 4，等于 0.25。不放回抽取时每次的条件概率都在变化。"
+    },
+    {
+     "id": "mxj_h1029_q8",
+     "topicId": "mxj_h1029",
+     "prompt": "说明事件的独立性与条件概率之间的关系，并写出判断两个事件相互独立的一个等价的概率条件。",
+     "question": "说明事件的独立性与条件概率之间的关系，并写出判断两个事件相互独立的一个等价的概率条件。",
+     "answer": "两个事件相互独立时，在其中一个发生的条件下另一个发生的概率不变，即条件概率等于原来的概率；等价条件是积事件的概率等于两个事件概率的乘积",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "若事件 A 与 B 相互独立，说明 A 发生与否不影响 B 发生的概率，用式子写就是在 A 发生的条件下 B 发生的概率等于 P(B)，也就是 P(AB) 除以 P(A) 等于 P(B)。两边同乘 P(A) 得到积事件的概率等于两个概率的乘积，这就是判断独立性的等价条件，它比用条件概率判断更方便，因为不需要 P(A) 大于零。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1030",
+   "description": "离散型随机变量及其分布列：通过具体实例了解离散型随机变量的概念，理解分布列及其性质，即各个概率非负且总和为 1；理解离散型随机变量的均值与方差的含义，会由分布列求均值与方差；理解伯努利试验与二项分布，了解超几何分布及其均值，并解决简单的实际问题。",
+   "mastery_criteria": [
+    "会写出离散型随机变量的分布列并检验概率之和为 1",
+    "会用分布列求随机变量的均值与方差",
+    "能判断一个随机变量是否服从二项分布"
+   ],
+   "page": null,
+   "misconceptions": [
+    "写完分布列后不检查各概率之和是否等于 1",
+    "把二项分布的均值记成 n 乘 p 的平方，与方差混淆",
+    "把超几何分布当成有放回抽取的模型，忽略其不放回的特征"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_h1030_q1",
+     "topicId": "mxj_h1030",
+     "prompt": "离散型随机变量的分布列中，各个取值对应的概率必须满足",
+     "question": "离散型随机变量的分布列中，各个取值对应的概率必须满足",
+     "options": [
+      {
+       "label": "A",
+       "text": "各概率之和为零"
+      },
+      {
+       "label": "B",
+       "text": "各概率都相等"
+      },
+      {
+       "label": "C",
+       "text": "各概率之和为 1"
+      },
+      {
+       "label": "D",
+       "text": "各概率都大于 0.5"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "分布列把随机变量的全部可能取值与相应概率一一列出，全部可能取值构成完备的事件组，概率之和必然等于 1，而且每个概率都大于等于零。写完分布列后求和检验，是防止计算错误的常规步骤。"
+    },
+    {
+     "id": "mxj_h1030_q2",
+     "topicId": "mxj_h1030",
+     "prompt": "若随机变量 X 服从参数为 n 与 p 的二项分布，则 X 的均值等于",
+     "question": "若随机变量 X 服从参数为 n 与 p 的二项分布，则 X 的均值等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "n 乘 p"
+      },
+      {
+       "label": "B",
+       "text": "n 乘 p 的平方"
+      },
+      {
+       "label": "C",
+       "text": "n 分之 p"
+      },
+      {
+       "label": "D",
+       "text": "p 的平方"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "二项分布的均值等于试验次数与每次试验成功概率的乘积，即 n 乘 p；方差等于 n 乘 p 再乘 1 减 p。均值可以理解为 n 次独立重复试验中成功次数的平均预期。"
+    },
+    {
+     "id": "mxj_h1030_q3",
+     "topicId": "mxj_h1030",
+     "prompt": "掷一枚质地均匀的骰子一次，用 X 表示掷出的点数，则 X 的均值等于",
+     "question": "掷一枚质地均匀的骰子一次，用 X 表示掷出的点数，则 X 的均值等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "3.5"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "X 取 1 到 6 各值的概率都是六分之一，均值为一加二加三加四加五加六的和除以 6，即 21 除以 6 等于 3.5。均值不一定是随机变量可能取到的值，这里 X 根本取不到 3.5。"
+    },
+    {
+     "id": "mxj_h1030_q4",
+     "topicId": "mxj_h1030",
+     "prompt": "已知离散型随机变量 X 的分布列为 X 等于 0 的概率是 0.2，X 等于 1 的概率是 0.5，X 等于 2 的概率是 p，则 p 等于",
+     "question": "已知离散型随机变量 X 的分布列为 X 等于 0 的概率是 0.2，X 等于 1 的概率是 0.5，X 等于 2 的概率是 p，则 p 等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.2"
+      },
+      {
+       "label": "B",
+       "text": "0.5"
+      },
+      {
+       "label": "C",
+       "text": "0.7"
+      },
+      {
+       "label": "D",
+       "text": "0.3"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由分布列的性质，三个取值对应的概率之和等于 1，即 0.2 加 0.5 加 p 等于 1，解得 p 等于 0.3。这类题一般先用概率之和为 1 求出未知概率，再计算均值或方差。"
+    },
+    {
+     "id": "mxj_h1030_q5",
+     "topicId": "mxj_h1030",
+     "prompt": "若随机变量 X 服从二项分布，试验次数为 4，每次成功的概率为 0.5，则 X 等于 2 的概率是",
+     "question": "若随机变量 X 服从二项分布，试验次数为 4，每次成功的概率为 0.5，则 X 等于 2 的概率是",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.25"
+      },
+      {
+       "label": "B",
+       "text": "0.375"
+      },
+      {
+       "label": "C",
+       "text": "0.5"
+      },
+      {
+       "label": "D",
+       "text": "0.0625"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "从 4 次试验中选出 2 次成功有 6 种情形，每种情形的概率都是 0.5 的四次方，等于 0.0625，所以所求概率为 6 乘 0.0625 等于 0.375。只用 0.0625 是漏掉了选出哪两次成功的组合数。"
+    },
+    {
+     "id": "mxj_h1030_q6",
+     "topicId": "mxj_h1030",
+     "prompt": "已知离散型随机变量 X 的分布列为：X 等于 0 的概率是 0.3，X 等于 1 的概率是 0.4，X 等于 2 的概率是 0.3，则 X 的均值等于",
+     "question": "已知离散型随机变量 X 的分布列为：X 等于 0 的概率是 0.3，X 等于 1 的概率是 0.4，X 等于 2 的概率是 0.3，则 X 的均值等于",
+     "answer": 1.0,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "均值等于各取值与对应概率乘积之和，0 乘 0.3 得 0，1 乘 0.4 得 0.4，2 乘 0.3 得 0.6，三部分相加得 1。分布列对称时均值正好落在中间取值上，可以用这个特点检验结果。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 0.4}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 0.3}]}]}"
+    },
+    {
+     "id": "mxj_h1030_q7",
+     "topicId": "mxj_h1030",
+     "prompt": "已知离散型随机变量 X 只取 0 与 1 两个值，取 0 的概率是 0.4，取 1 的概率是 0.6，则 X 的方差等于",
+     "question": "已知离散型随机变量 X 只取 0 与 1 两个值，取 0 的概率是 0.4，取 1 的概率是 0.6，则 X 的方差等于",
+     "answer": "0.24",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "先求均值，等于 0 乘 0.4 加 1 乘 0.6 等于 0.6。再求 X 的平方的均值，它等于 0 乘 0.4 加 1 乘 0.6 等于 0.6。方差等于平方的均值减去均值的平方，即 0.6 减 0.36 等于 0.24。"
+    },
+    {
+     "id": "mxj_h1030_q8",
+     "topicId": "mxj_h1030",
+     "prompt": "举一个服从二项分布的随机变量的实际例子，并说明其中试验次数与每次成功概率的含义。",
+     "question": "举一个服从二项分布的随机变量的实际例子，并说明其中试验次数与每次成功概率的含义。",
+     "answer": "例如某运动员投篮 5 次，每次命中率都是 0.7，各次相互独立，用 X 表示命中的次数，则 X 服从二项分布，试验次数为 5，每次成功的概率为 0.7",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "判断二项分布要抓住三个要点：试验次数固定，每次试验只有成功与失败两种结果，各次试验相互独立且成功概率相同。以投篮为例，投篮 5 次是固定的试验次数，每次命中的概率都是 0.7，各次投篮互不影响，命中次数 X 就服从参数为 5 与 0.7 的二项分布。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1031",
+   "description": "正态分布：通过误差模型了解服从正态分布的随机变量，借助频率分布直方图的几何直观认识正态密度曲线的特征：曲线位于横轴上方、关于直线 x 等于均值对称、在均值处取最大值、曲线与横轴之间的面积为 1；了解均值与标准差对曲线位置和形状的影响，会用三倍标准差原则估计概率。",
+   "mastery_criteria": [
+    "能说出正态密度曲线的对称性与最大值的位置",
+    "知道均值决定曲线的对称轴、标准差决定曲线的陡缓",
+    "会用一倍、两倍、三倍标准差原则估计区间内的概率"
+   ],
+   "page": null,
+   "misconceptions": [
+    "认为正态密度曲线关于 y 轴对称，忽略对称轴是直线 x 等于均值",
+    "把标准差越大误认为曲线越陡峭，颠倒了标准差与陡缓的关系",
+    "把正态分布当成离散型随机变量的分布，去追问某个具体取值的概率"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_h1031_q1",
+     "topicId": "mxj_h1031",
+     "prompt": "正态密度曲线是轴对称图形，它的对称轴是",
+     "question": "正态密度曲线是轴对称图形，它的对称轴是",
+     "options": [
+      {
+       "label": "A",
+       "text": "直线 x 等于均值"
+      },
+      {
+       "label": "B",
+       "text": "直线 x 等于零"
+      },
+      {
+       "label": "C",
+       "text": "直线 x 等于标准差"
+      },
+      {
+       "label": "D",
+       "text": "y 轴"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "正态密度曲线的对称轴由均值决定，是直线 x 等于均值。当均值等于零时对称轴才与 y 轴重合，一般情形下两者并不相同，这是把对称轴误认成 y 轴的常见错误。"
+    },
+    {
+     "id": "mxj_h1031_q2",
+     "topicId": "mxj_h1031",
+     "prompt": "关于正态密度曲线在均值处的情形，正确的说法是",
+     "question": "关于正态密度曲线在均值处的情形，正确的说法是",
+     "options": [
+      {
+       "label": "A",
+       "text": "在均值处取得最小值"
+      },
+      {
+       "label": "B",
+       "text": "在均值处的函数值等于零"
+      },
+      {
+       "label": "C",
+       "text": "在均值处单调递增"
+      },
+      {
+       "label": "D",
+       "text": "在均值处取得最大值"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "正态密度曲线呈中间高、两边低的钟形，在横坐标等于均值处取得最大值，向两侧对称地递减并无限接近横轴。正因为如此，均值附近的数据最密集。"
+    },
+    {
+     "id": "mxj_h1031_q3",
+     "topicId": "mxj_h1031",
+     "prompt": "在均值不变的情况下，正态分布的标准差越大，则正态密度曲线",
+     "question": "在均值不变的情况下，正态分布的标准差越大，则正态密度曲线",
+     "options": [
+      {
+       "label": "A",
+       "text": "越陡峭"
+      },
+      {
+       "label": "B",
+       "text": "整体向右平移"
+      },
+      {
+       "label": "C",
+       "text": "越扁平"
+      },
+      {
+       "label": "D",
+       "text": "形状完全不变"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "标准差刻画数据的离散程度。标准差越大，数据越分散，曲线越扁平、两端的尾部越厚；标准差越小，数据越集中在均值附近，曲线越陡峭。均值的改变才会使曲线左右平移。"
+    },
+    {
+     "id": "mxj_h1031_q4",
+     "topicId": "mxj_h1031",
+     "prompt": "已知随机变量 X 服从正态分布，均值为 μ，标准差为 σ，则 X 落在 μ 减 σ 与 μ 加 σ 之间的概率约为",
+     "question": "已知随机变量 X 服从正态分布，均值为 μ，标准差为 σ，则 X 落在 μ 减 σ 与 μ 加 σ 之间的概率约为",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.6827"
+      },
+      {
+       "label": "B",
+       "text": "0.9545"
+      },
+      {
+       "label": "C",
+       "text": "0.9973"
+      },
+      {
+       "label": "D",
+       "text": "0.5"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "这就是一倍标准差原则，随机变量落在一个标准差范围内的概率约为 0.6827。落在两个标准差范围内约为 0.9545，落在三个标准差范围内约为 0.9973，三个数不要互相混淆。"
+    },
+    {
+     "id": "mxj_h1031_q5",
+     "topicId": "mxj_h1031",
+     "prompt": "已知随机变量 X 服从正态分布，均值为 2，标准差为 1，则 X 大于 3 的概率约为",
+     "question": "已知随机变量 X 服从正态分布，均值为 2，标准差为 1，则 X 大于 3 的概率约为",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.3174"
+      },
+      {
+       "label": "B",
+       "text": "0.1587"
+      },
+      {
+       "label": "C",
+       "text": "0.3413"
+      },
+      {
+       "label": "D",
+       "text": "0.0228"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "3 等于均值加一个标准差。由对称性，X 落在 1 与 3 之间的概率约为 0.6827，则落在两侧之外的总概率约为 0.3173，再按对称性平分，X 大于 3 的概率约为 0.1587。忘记平分而直接写 0.3174 是本题最常见的错误。"
+    },
+    {
+     "id": "mxj_h1031_q6",
+     "topicId": "mxj_h1031",
+     "prompt": "已知随机变量 X 服从正态分布，均值为 10，标准差为 2，则 X 小于 10 的概率等于",
+     "question": "已知随机变量 X 服从正态分布，均值为 10，标准差为 2，则 X 小于 10 的概率等于",
+     "answer": 0.5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "正态密度曲线关于直线 x 等于 10 对称，横轴上方曲线的总面积等于 1，所以直线 x 等于 10 左侧与右侧的面积各占一半，X 小于 10 的概率等于 0.5。这个结论与标准差的大小无关。",
+     "verify": "{\"type\": \"num\", \"value\": 0.5}"
+    },
+    {
+     "id": "mxj_h1031_q7",
+     "topicId": "mxj_h1031",
+     "prompt": "正态密度曲线与横轴之间所围成的图形的面积等于",
+     "question": "正态密度曲线与横轴之间所围成的图形的面积等于",
+     "answer": "1",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "正态密度曲线下的总面积对应随机变量取所有可能值的概率之和，它必然等于 1，这也保证了分布列与密度曲线的概率解释一致。对称性结合总面积为 1，是估计区间概率的基本出发点。"
+    },
+    {
+     "id": "mxj_h1031_q8",
+     "topicId": "mxj_h1031",
+     "prompt": "说明正态分布的均值与标准差分别对正态密度曲线的位置和形状有什么影响。",
+     "question": "说明正态分布的均值与标准差分别对正态密度曲线的位置和形状有什么影响。",
+     "answer": "均值决定曲线的对称轴位置，均值改变时曲线沿横轴平移；标准差决定曲线的陡缓，标准差越大曲线越扁平，标准差越小曲线越陡峭",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "均值对应曲线的最高点所在的横坐标，也是对称轴的位置，均值变大曲线整体右移，均值变小曲线整体左移，形状不变。标准差反映数据的离散程度，标准差变大时数据分散，曲线变扁平而两端的尾部变厚；标准差变小时数据集中，曲线变陡峭。两个参数一个管位置一个管形状，互相独立。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1032",
+   "description": "成对数据的统计相关性：通过散点图认识成对样本数据中两个变量之间的相关关系，区分正相关与负相关、线性相关与非线性相关；了解样本相关系数的统计含义与取值范围，会用相关系数的大小与正负比较几组成对数据的线性相关强弱，并注意相关关系不等于因果关系。",
+   "mastery_criteria": [
+    "会画散点图并判断两个变量是正相关还是负相关",
+    "能说出相关系数的取值范围以及符号的含义",
+    "会比较不同样本相关系数所反映的线性相关强弱"
+   ],
+   "page": null,
+   "misconceptions": [
+    "把统计上的相关关系当成因果关系，看到相关就断言一个变量引起另一个变量",
+    "认为相关系数越接近零相关性越强，把绝对值与大小关系弄反",
+    "认为相关系数为负数就说明两个变量没有关系"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_h1032_q1",
+     "topicId": "mxj_h1032",
+     "prompt": "若一组成对样本数据的散点大致分布在一条从左下方向右上方延伸的直线附近，则这两个变量",
+     "question": "若一组成对样本数据的散点大致分布在一条从左下方向右上方延伸的直线附近，则这两个变量",
+     "options": [
+      {
+       "label": "A",
+       "text": "呈正相关"
+      },
+      {
+       "label": "B",
+       "text": "呈负相关"
+      },
+      {
+       "label": "C",
+       "text": "不相关"
+      },
+      {
+       "label": "D",
+       "text": "呈确定的函数关系"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "散点整体向右上方延伸，说明一个变量增大时另一个变量也总体增大，这种相关关系称为正相关。相关关系只是一种统计上的伴随趋势，观测点并不严格落在直线上，所以不能说成函数关系。"
+    },
+    {
+     "id": "mxj_h1032_q2",
+     "topicId": "mxj_h1032",
+     "prompt": "样本相关系数 r 的取值范围是",
+     "question": "样本相关系数 r 的取值范围是",
+     "options": [
+      {
+       "label": "A",
+       "text": "r 大于零"
+      },
+      {
+       "label": "B",
+       "text": "r 大于等于负 1 且小于等于 1"
+      },
+      {
+       "label": "C",
+       "text": "r 大于等于零"
+      },
+      {
+       "label": "D",
+       "text": "r 可以取任意实数"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "相关系数由标准化数据的夹角余弦给出，余弦的绝对值不超过 1，所以 r 落在负 1 与 1 之间。r 等于 1 或负 1 表示所有点严格共线，r 等于零表示没有线性相关关系。"
+    },
+    {
+     "id": "mxj_h1032_q3",
+     "topicId": "mxj_h1032",
+     "prompt": "若某组成对样本数据的样本相关系数等于负 0.95，则说明这两个变量",
+     "question": "若某组成对样本数据的样本相关系数等于负 0.95，则说明这两个变量",
+     "options": [
+      {
+       "label": "A",
+       "text": "呈很强的正相关"
+      },
+      {
+       "label": "B",
+       "text": "几乎没有关系"
+      },
+      {
+       "label": "C",
+       "text": "呈很强的负相关"
+      },
+      {
+       "label": "D",
+       "text": "呈完全确定的函数关系"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "相关系数为负说明一个变量增大时另一个变量总体减小，即负相关；绝对值 0.95 很接近 1，说明线性相关很强。两个条件合起来就是很强的负相关。"
+    },
+    {
+     "id": "mxj_h1032_q4",
+     "topicId": "mxj_h1032",
+     "prompt": "四组成对样本数据的样本相关系数分别是 0.3、0.85、负 0.92、0.01，其中线性相关最强的一组是",
+     "question": "四组成对样本数据的样本相关系数分别是 0.3、0.85、负 0.92、0.01，其中线性相关最强的一组是",
+     "options": [
+      {
+       "label": "A",
+       "text": "相关系数为 0.3 的一组"
+      },
+      {
+       "label": "B",
+       "text": "相关系数为 0.85 的一组"
+      },
+      {
+       "label": "C",
+       "text": "相关系数为 0.01 的一组"
+      },
+      {
+       "label": "D",
+       "text": "相关系数为负 0.92 的一组"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "比较线性相关强弱要看相关系数的绝对值，绝对值越接近 1 越强。四个数中负 0.92 的绝对值最大，所以这一组的线性相关最强，负号只表示方向是负相关。"
+    },
+    {
+     "id": "mxj_h1032_q5",
+     "topicId": "mxj_h1032",
+     "prompt": "统计发现某地冰淇淋的销量与溺水人数都随季节升高而增加，二者呈较强的正相关，这说明",
+     "question": "统计发现某地冰淇淋的销量与溺水人数都随季节升高而增加，二者呈较强的正相关，这说明",
+     "options": [
+      {
+       "label": "A",
+       "text": "二者有相关关系，但不能由此断定存在因果关系"
+      },
+      {
+       "label": "B",
+       "text": "吃冰淇淋一定会导致溺水"
+      },
+      {
+       "label": "C",
+       "text": "二者没有任何关系"
+      },
+      {
+       "label": "D",
+       "text": "二者的相关系数必然等于 1"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两个变量数值上同向变动只是相关关系的表现，背后往往还有共同的影响因素，本例中气温升高同时使冰淇淋销量和游泳人数增加。相关不等于因果，判断因果需要专门的设计与分析，同时相关系数也不会正好等于 1。"
+    },
+    {
+     "id": "mxj_h1032_q6",
+     "topicId": "mxj_h1032",
+     "prompt": "已知某组成对样本数据的样本相关系数等于负 0.8，则这个相关系数的平方等于",
+     "question": "已知某组成对样本数据的样本相关系数等于负 0.8，则这个相关系数的平方等于",
+     "answer": 0.6400000000000001,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "相关系数的平方等于负 0.8 乘负 0.8，即 0.64。平方之后符号消失，它反映的是线性关系解释的变异比例，负号只说明方向，不影响这个比例的大小。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 0.8}, {\"type\": \"num\", \"value\": 0.8}]}"
+    },
+    {
+     "id": "mxj_h1032_q7",
+     "topicId": "mxj_h1032",
+     "prompt": "把一组成对样本数据画成散点图，如果这些点大致分布在一条下降的直线附近，那么这两个变量呈什么相关关系",
+     "question": "把一组成对样本数据画成散点图，如果这些点大致分布在一条下降的直线附近，那么这两个变量呈什么相关关系",
+     "answer": "负相关",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "点大致沿一条下降的直线分布，说明一个变量增大时另一个变量总体减小，这种相关关系称为负相关，对应的样本相关系数为负数。"
+    },
+    {
+     "id": "mxj_h1032_q8",
+     "topicId": "mxj_h1032",
+     "prompt": "说明样本相关系数的绝对值越接近 1 意味着什么，以及 r 的正负分别表示什么。",
+     "question": "说明样本相关系数的绝对值越接近 1 意味着什么，以及 r 的正负分别表示什么。",
+     "answer": "绝对值越接近 1 说明两个变量的线性相关越强，越接近零说明线性相关越弱；r 为正表示正相关，r 为负表示负相关",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "样本相关系数刻画两个变量线性相关的方向与强弱。绝对值越接近 1，散点越贴近一条直线，线性相关越强；绝对值越接近零，散点越分散，线性相关越弱。符号表示方向，r 大于零表示两个变量同向变动即正相关，r 小于零表示反向变动即负相关。要注意 r 接近零只说明没有线性相关，两个变量仍可能存在非线性关系。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1033",
+   "description": "一元线性回归模型：了解一元线性回归模型的含义，理解模型中斜率与截距的统计意义以及随机误差的作用；了解最小二乘原理，会用最小二乘法估计模型参数，写出经验回归方程，并针对实际问题用它进行预测，体会用模型刻画两个变量线性关系的过程。",
+   "mastery_criteria": [
+    "能说出经验回归方程中斜率与截距的统计意义",
+    "会用最小二乘法公式估计斜率与截距",
+    "会用经验回归方程对给定自变量的值作预测"
+   ],
+   "page": null,
+   "misconceptions": [
+    "把经验回归方程当成确定的函数关系，认为每个观测值都严格落在直线上",
+    "把斜率理解成自变量增加 1 个单位时因变量的精确增加量，忽略它只是平均意义上的估计",
+    "在远离样本数据取值范围的地方用回归方程外推，并完全相信预测结果"
+   ],
+   "type": "modeling",
+   "questions": [
+    {
+     "id": "mxj_h1033_q1",
+     "topicId": "mxj_h1033",
+     "prompt": "由最小二乘法得到的经验回归直线一定经过",
+     "question": "由最小二乘法得到的经验回归直线一定经过",
+     "options": [
+      {
+       "label": "A",
+       "text": "样本点的中心，即横坐标为 x 的平均数、纵坐标为 y 的平均数的点"
+      },
+      {
+       "label": "B",
+       "text": "坐标原点"
+      },
+      {
+       "label": "C",
+       "text": "样本中横坐标最大的点"
+      },
+      {
+       "label": "D",
+       "text": "样本中的第一个点"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "最小二乘估计给出的截距等于 y 的平均数减斜率乘 x 的平均数，把它代回方程可知直线必经过样本点的中心。只有样本中心的横坐标为零时直线才经过原点。"
+    },
+    {
+     "id": "mxj_h1033_q2",
+     "topicId": "mxj_h1033",
+     "prompt": "最小二乘原理是确定一条直线，使得",
+     "question": "最小二乘原理是确定一条直线，使得",
+     "options": [
+      {
+       "label": "A",
+       "text": "各点到直线的距离之和最小"
+      },
+      {
+       "label": "B",
+       "text": "样本点的个数最多"
+      },
+      {
+       "label": "C",
+       "text": "直线的斜率最大"
+      },
+      {
+       "label": "D",
+       "text": "各点到直线的竖直距离的平方和最小"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "最小二乘原理要求各样本点与直线的竖直偏差的平方和达到最小，用平方是为了避免正负偏差相互抵消，同时便于运算。这样得到的直线在整体上最贴近样本点。"
+    },
+    {
+     "id": "mxj_h1033_q3",
+     "topicId": "mxj_h1033",
+     "prompt": "已知一组成对样本数据中 x 的平均数等于 3，y 的平均数等于 5，用最小二乘法求得斜率等于 1.2，则经验回归方程的截距等于",
+     "question": "已知一组成对样本数据中 x 的平均数等于 3，y 的平均数等于 5，用最小二乘法求得斜率等于 1.2，则经验回归方程的截距等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "3.6"
+      },
+      {
+       "label": "C",
+       "text": "1.4"
+      },
+      {
+       "label": "D",
+       "text": "6.2"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "截距等于 y 的平均数减斜率乘 x 的平均数，即 5 减 1.2 乘 3 等于 5 减 3.6 等于 1.4。选项 3.6 是斜率与 x 平均数的乘积，忘记再做减法就会选错。"
+    },
+    {
+     "id": "mxj_h1033_q4",
+     "topicId": "mxj_h1033",
+     "prompt": "已知两个变量的经验回归方程是 y 等于 2x 减 1，当 x 等于 4 时 y 的预测值是",
+     "question": "已知两个变量的经验回归方程是 y 等于 2x 减 1，当 x 等于 4 时 y 的预测值是",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "7"
+      },
+      {
+       "label": "C",
+       "text": "9"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把 x 等于 4 代入方程，得预测值等于 2 乘 4 减 1 等于 7。预测值只是估计值，实际观测值通常与它有一定偏差，这正是模型中随机误差项的作用。"
+    },
+    {
+     "id": "mxj_h1033_q5",
+     "topicId": "mxj_h1033",
+     "prompt": "若由样本数据用最小二乘法求得经验回归方程的斜率等于负 0.6，则说明两个变量",
+     "question": "若由样本数据用最小二乘法求得经验回归方程的斜率等于负 0.6，则说明两个变量",
+     "options": [
+      {
+       "label": "A",
+       "text": "呈正相关"
+      },
+      {
+       "label": "B",
+       "text": "呈负相关"
+      },
+      {
+       "label": "C",
+       "text": "没有关系"
+      },
+      {
+       "label": "D",
+       "text": "无法判断相关方向"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "斜率的符号与相关系数的符号一致。斜率为负说明自变量增大时因变量的估计值减小，两个变量呈负相关；斜率为正才是正相关。斜率的绝对值大小反映估计值随自变量变化的快慢。"
+    },
+    {
+     "id": "mxj_h1033_q6",
+     "topicId": "mxj_h1033",
+     "prompt": "已知一组成对样本数据中 x 的平均数等于 2，y 的平均数等于 6，用最小二乘法求得斜率等于 2.5，则经验回归方程的截距等于",
+     "question": "已知一组成对样本数据中 x 的平均数等于 2，y 的平均数等于 6，用最小二乘法求得斜率等于 2.5，则经验回归方程的截距等于",
+     "answer": 1.0,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "截距等于 y 的平均数减斜率乘 x 的平均数，即 6 减 2.5 乘 2，等于 6 减 5 等于 1。经验回归直线经过样本中心这一点是这类计算的依据。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2.5}, {\"type\": \"num\", \"value\": 2}]}]}"
+    },
+    {
+     "id": "mxj_h1033_q7",
+     "topicId": "mxj_h1033",
+     "prompt": "已知四组成对样本数据为 (1，2)、(2，4)、(3，6)、(4，8)，用最小二乘法求经验回归方程的斜率。",
+     "question": "已知四组成对样本数据为 (1，2)、(2，4)、(3，6)、(4，8)，用最小二乘法求经验回归方程的斜率。",
+     "answer": "2",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "x 的平均数是 2.5，y 的平均数是 5。各点与平均数的偏差乘积之和为 4.5 加 0.5 加 0.5 加 4.5 等于 10，x 的偏差平方和为 2.25 加 0.25 加 0.25 加 2.25 等于 5，斜率等于 10 除以 5 等于 2，与这组数据严格成比例的特点一致。"
+    },
+    {
+     "id": "mxj_h1033_q8",
+     "topicId": "mxj_h1033",
+     "prompt": "用经验回归方程作预测时需要注意哪些问题，请说明理由。",
+     "question": "用经验回归方程作预测时需要注意哪些问题，请说明理由。",
+     "answer": "预测值只是估计值而非确定值，并且只在样本数据的取值范围内比较可靠，超出这个范围作预测要谨慎",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "经验回归方程是用样本数据估计出来的，它反映的是两个变量之间的平均变化趋势，个别观测值总会偏离直线，因此预测值只是估计值。同时模型只对样本数据覆盖的取值区间有较好的拟合，把自变量取到样本范围之外属于外推，缺少数据支撑，结论未必成立，实际应用时要说明预测的适用范围。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h1034",
+   "description": "独立性检验：通过实例理解 2×2 列联表的统计意义，会用列联表整理两个分类变量的样本数据；了解独立性检验的基本思想与卡方统计量的计算公式，能依据小概率值对应的临界值判断两个分类变量是否有关联，并能正确表述结论的含义与适用范围。",
+   "mastery_criteria": [
+    "会由实际问题列出 2×2 列联表并读出各格数据",
+    "会用公式计算卡方统计量的值",
+    "能依据临界值作出判断并正确表述结论"
+   ],
+   "page": null,
+   "misconceptions": [
+    "把独立性检验的结论说成两个变量一定有关或一定无关，忽略结论的概率性质",
+    "计算卡方统计量时把四个数据格与行列合计的位置弄错，导致分母取错",
+    "以为列联表的行合计与列合计不参与卡方统计量的计算"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "mxj_h1034_q1",
+     "topicId": "mxj_h1034",
+     "prompt": "在 2×2 列联表的独立性检验中，原假设表示",
+     "question": "在 2×2 列联表的独立性检验中，原假设表示",
+     "options": [
+      {
+       "label": "A",
+       "text": "两个分类变量有关"
+      },
+      {
+       "label": "B",
+       "text": "两个分类变量相等"
+      },
+      {
+       "label": "C",
+       "text": "两个分类变量无关"
+      },
+      {
+       "label": "D",
+       "text": "样本容量等于零"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "独立性检验先假设两个分类变量相互独立、没有关联，在这个前提下计算卡方统计量，看样本数据与假设的偏离是否大到不能仅用随机性解释。若偏离足够大，就拒绝原假设，认为两个变量有关。"
+    },
+    {
+     "id": "mxj_h1034_q2",
+     "topicId": "mxj_h1034",
+     "prompt": "一个 2×2 列联表中，用来统计四类频数的数据格共有",
+     "question": "一个 2×2 列联表中，用来统计四类频数的数据格共有",
+     "options": [
+      {
+       "label": "A",
+       "text": "4 个"
+      },
+      {
+       "label": "B",
+       "text": "2 个"
+      },
+      {
+       "label": "C",
+       "text": "3 个"
+      },
+      {
+       "label": "D",
+       "text": "6 个"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "2×2 列联表有两个分类变量，每个变量取两个类别，交叉组合得到 4 个数据格，其余位置是行合计与列合计。卡方统计量的计算要用到这 4 个格的数据与样本容量。"
+    },
+    {
+     "id": "mxj_h1034_q3",
+     "topicId": "mxj_h1034",
+     "prompt": "在独立性检验中，如果由样本数据算出的卡方统计量的值越大，则说明",
+     "question": "在独立性检验中，如果由样本数据算出的卡方统计量的值越大，则说明",
+     "options": [
+      {
+       "label": "A",
+       "text": "两个变量有关的证据越弱"
+      },
+      {
+       "label": "B",
+       "text": "两个变量有关的证据越强"
+      },
+      {
+       "label": "C",
+       "text": "两个变量一定没有关系"
+      },
+      {
+       "label": "D",
+       "text": "样本容量一定很小"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "卡方统计量衡量样本频数与独立假设下期望频数的偏离程度，值越大说明偏离越大，用随机性解释这种偏离就越困难，因而认为两个变量有关的证据越强。判断时要与给定小概率值对应的临界值比较。"
+    },
+    {
+     "id": "mxj_h1034_q4",
+     "topicId": "mxj_h1034",
+     "prompt": "某班 60 名学生的调查数据整理成 2×2 列联表：男生 20 人中喜欢该课程的有 12 人、不喜欢的 8 人；女生 40 人中喜欢的有 8 人、不喜欢的 32 人。则卡方统计量的值等于",
+     "question": "某班 60 名学生的调查数据整理成 2×2 列联表：男生 20 人中喜欢该课程的有 12 人、不喜欢的 8 人；女生 40 人中喜欢的有 8 人、不喜欢的 32 人。则卡方统计量的值等于",
+     "answer": 9.6,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "对角线乘积之差为 12 乘 32 减 8 乘 8 等于 384 减 64 等于 320，平方得 102400。行合计是 20 与 40，列合计也是 20 与 40，分母等于 20 乘 40 乘 20 乘 40 等于 640000。分子等于 60 乘 102400 等于 6144000，除以分母得 9.6。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 60}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 12}, {\"type\": \"num\", \"value\": 32}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"num\", \"value\": 8}]}]}, {\"type\": \"num\", \"value\": 2}]}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 20}, {\"type\": \"num\", \"value\": 40}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 20}, {\"type\": \"num\", \"value\": 40}]}]}]}"
+    },
+    {
+     "id": "mxj_h1034_q5",
+     "topicId": "mxj_h1034",
+     "prompt": "若上一题算出的卡方统计量等于 9.6，而小概率值 0.01 对应的临界值是 6.635，则可以作出的判断是",
+     "question": "若上一题算出的卡方统计量等于 9.6，而小概率值 0.01 对应的临界值是 6.635，则可以作出的判断是",
+     "options": [
+      {
+       "label": "A",
+       "text": "没有证据说明两个变量有关"
+      },
+      {
+       "label": "B",
+       "text": "两个变量一定有关"
+      },
+      {
+       "label": "C",
+       "text": "需要增大样本容量才能判断"
+      },
+      {
+       "label": "D",
+       "text": "在犯错误概率不超过 0.01 的前提下认为两个变量有关"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "9.6 大于 6.635，说明在独立假设下出现这样大偏离的概率不超过 0.01，因此拒绝原假设，在犯错误概率不超过 0.01 的前提下认为两个分类变量有关。检验结论是一种概率性的判断，不能说成一定有关。"
+    },
+    {
+     "id": "mxj_h1034_q6",
+     "topicId": "mxj_h1034",
+     "prompt": "若另一组数据算出的卡方统计量等于 0.5，而小概率值 0.05 对应的临界值是 3.841，则结论应当是",
+     "question": "若另一组数据算出的卡方统计量等于 0.5，而小概率值 0.05 对应的临界值是 3.841，则结论应当是",
+     "options": [
+      {
+       "label": "A",
+       "text": "有 95 百分比把握认为两个变量有关"
+      },
+      {
+       "label": "B",
+       "text": "没有充分证据认为两个变量有关"
+      },
+      {
+       "label": "C",
+       "text": "两个变量一定无关"
+      },
+      {
+       "label": "D",
+       "text": "数据计算一定有错误"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "0.5 小于 3.841，说明样本数据与独立假设的偏离不大，可以认为这种偏离由随机性造成，因而没有充分证据认为两个分类变量有关。但也不能反过来断定两个变量一定无关，只能说没有找到足够证据。"
+    },
+    {
+     "id": "mxj_h1034_q7",
+     "topicId": "mxj_h1034",
+     "prompt": "在独立性检验中，若算出的卡方统计量大于小概率值 0.05 对应的临界值 3.841，则在犯错误概率不超过 0.05 的前提下，可以认为两个分类变量",
+     "question": "在独立性检验中，若算出的卡方统计量大于小概率值 0.05 对应的临界值 3.841，则在犯错误概率不超过 0.05 的前提下，可以认为两个分类变量",
+     "answer": "有关联",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "卡方统计量大于临界值意味着在独立假设下出现这样大偏离的概率不超过 0.05，属于小概率事件，因此拒绝独立假设，在犯错误概率不超过 0.05 的前提下认为两个分类变量有关联。"
+    },
+    {
+     "id": "mxj_h1034_q8",
+     "topicId": "mxj_h1034",
+     "prompt": "说明 2×2 列联表独立性检验的基本思想，以及为什么结论只能说成在犯错误概率不超过某个值的条件下认为两个变量有关。",
+     "question": "说明 2×2 列联表独立性检验的基本思想，以及为什么结论只能说成在犯错误概率不超过某个值的条件下认为两个变量有关。",
+     "answer": "先假设两个分类变量无关，再由样本频数与独立假设下期望频数的偏离程度算出卡方统计量，偏离越大越倾向于否定原假设；由于判断依据是样本数据，可能犯把无关误判为有关的错误，所以结论要带上犯错误的概率",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "独立性检验的思想类似于反证法：先假设两个分类变量相互独立，据此算出各格的期望频数，再用卡方统计量衡量实际频数与期望频数的偏离程度。偏离越大，在独立假设下越难用随机性解释，就越有理由否定假设。但判断只依据样本，样本有随机性，因此可能把本来无关的两个变量误判为有关，结论要说明犯这种错误的概率不超过给定的值，而不能说成两个变量一定有关或一定无关。"
+    }
+   ]
+  }
+ ]
+}

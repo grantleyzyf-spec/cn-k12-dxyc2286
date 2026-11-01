@@ -1,0 +1,3748 @@
+{
+ "tag": "mxjh3",
+ "book": "湘教版选择性必修第一册",
+ "unit_points": [
+  {
+   "id": "mxj_h011",
+   "chapter": "湘教版选择性必修第一册 第1章 数列",
+   "description": "第1章数列：从日常生活与数学中的实例抽象出数列的概念，认识数列是按一定顺序排列的一列数、是定义域为正整数集或其有限子集的特殊函数；研究等差数列与等比数列的通项公式、前 n 项和公式与基本性质，并运用它们解决简单的实际问题。",
+   "mastery_criteria": [
+    "能说出数列、项与通项公式的含义",
+    "掌握等差、等比数列的通项公式与前 n 项和公式",
+    "能用数列模型解决简单的实际问题"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_h011_q1",
+     "topicId": "mxj_h011",
+     "prompt": "数列 1, 3, 5, 7, … 的一个通项公式是下面哪一个？",
+     "question": "数列 1, 3, 5, 7, … 的一个通项公式是下面哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2n - 1"
+      },
+      {
+       "label": "B",
+       "text": "2n + 1"
+      },
+      {
+       "label": "C",
+       "text": "n + 2"
+      },
+      {
+       "label": "D",
+       "text": "n 的平方 - 1"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "观察各项与序号的关系：第 1 项是 1，第 2 项是 3，第 3 项是 5，每一项都等于序号的 2 倍减 1，所以通项公式为 2n - 1，用第 4 项检验得 7，与题设一致。"
+    },
+    {
+     "id": "mxj_h011_q2",
+     "topicId": "mxj_h011",
+     "prompt": "已知等差数列 aₙ 的首项为 3，公差为负2，则它的前 10 项和等于多少？",
+     "question": "已知等差数列 aₙ 的首项为 3，公差为负2，则它的前 10 项和等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "负30"
+      },
+      {
+       "label": "B",
+       "text": "负60"
+      },
+      {
+       "label": "C",
+       "text": "60"
+      },
+      {
+       "label": "D",
+       "text": "负120"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "用前 n 项和公式 Sₙ = na₁ + n(n-1)d/2，代入 n = 10、a₁ = 3、d = 负2，得 S₁₀ = 10 乘 3 加上 10 乘 9 除以 2 再乘负2，等于 30 减 90，结果是负60。"
+    },
+    {
+     "id": "mxj_h011_q3",
+     "topicId": "mxj_h011",
+     "prompt": "已知等比数列 aₙ 的首项为 2，公比为 3，则它的前 4 项和等于多少？",
+     "question": "已知等比数列 aₙ 的首项为 2，公比为 3，则它的前 4 项和等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "54"
+      },
+      {
+       "label": "B",
+       "text": "162"
+      },
+      {
+       "label": "C",
+       "text": "80"
+      },
+      {
+       "label": "D",
+       "text": "40"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "把前 4 项逐项写出：2, 6, 18, 54，相加得 2 加 6 加 18 加 54 等于 80；也可用求和公式 S₄ 等于 2 乘 (1 减 3 的 4 次方) 除以 (1 减 3)，结果同样是 80。"
+    },
+    {
+     "id": "mxj_h011_q4",
+     "topicId": "mxj_h011",
+     "prompt": "已知等差数列 aₙ 中 a₁ = 1，a₅ = 9，则 a₁₀ 等于多少？",
+     "question": "已知等差数列 aₙ 中 a₁ = 1，a₅ = 9，则 a₁₀ 等于多少？",
+     "answer": 19,
+     "type": "numeric",
+     "verify": "{\"type\": \"num\", \"value\": 19}",
+     "difficulty": "standard",
+     "explanation": "先由通项公式求公差：a₅ 等于 a₁ 加 4d，即 9 等于 1 加 4d，得 d = 2；再用通项公式求 a₁₀ 等于 1 加 9 乘 2 等于 19。"
+    },
+    {
+     "id": "mxj_h011_q5",
+     "topicId": "mxj_h011",
+     "prompt": "已知等比数列 aₙ 中 a₂ = 6，a₅ = 48，则它的公比 q 等于多少？",
+     "question": "已知等比数列 aₙ 中 a₂ = 6，a₅ = 48，则它的公比 q 等于多少？",
+     "answer": "2",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "由 a₅ 等于 a₂ 乘 q 的 3 次方，得 48 等于 6 乘 q 的 3 次方，即 q 的 3 次方等于 8；等比数列的公比不能为 0，所以 q 等于 2。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h012",
+   "chapter": "湘教版选择性必修第一册 第2章 平面解析几何初步",
+   "description": "第2章平面解析几何初步：在平面直角坐标系中用倾斜角与斜率刻画直线的方向，建立直线方程的各种形式，用方程研究两条直线的位置关系、点到直线的距离，建立圆的方程并研究直线与圆、圆与圆的位置关系，最后用坐标方法解决平面几何问题。",
+   "mastery_criteria": [
+    "会求过两点的直线斜率并写出直线方程",
+    "能用斜率或方程组判断两条直线的位置关系",
+    "会求点到直线的距离与圆的半径、圆心"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_h012_q1",
+     "topicId": "mxj_h012",
+     "prompt": "过两点 (1, 2) 与 (3, 6) 的直线斜率等于多少？",
+     "question": "过两点 (1, 2) 与 (3, 6) 的直线斜率等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "二分之一"
+      },
+      {
+       "label": "D",
+       "text": "负2"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "用两点斜率公式，斜率等于纵坐标之差除以横坐标之差，即 (6 减 2) 除以 (3 减 1) 等于 4 除以 2 等于 2。"
+    },
+    {
+     "id": "mxj_h012_q2",
+     "topicId": "mxj_h012",
+     "prompt": "直线 2x + 3y - 6 = 0 在 y 轴上的截距是多少？",
+     "question": "直线 2x + 3y - 6 = 0 在 y 轴上的截距是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "负2"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "求 y 轴上的截距就是令 x 等于 0，得 3y 减 6 等于 0，解得 y 等于 2，所以该直线在 y 轴上的截距为 2。"
+    },
+    {
+     "id": "mxj_h012_q3",
+     "topicId": "mxj_h012",
+     "prompt": "圆 x 的平方加 y 的平方减 4x 加 2y 减 4 等于 0 的半径是多少？",
+     "question": "圆 x 的平方加 y 的平方减 4x 加 2y 减 4 等于 0 的半径是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "根号5"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "把一般方程配方：(x 减 2) 的平方加 (y 加 1) 的平方等于 4 加 1 加 4 等于 9，所以圆心为 (2, 负1)，半径为 3。"
+    },
+    {
+     "id": "mxj_h012_q4",
+     "topicId": "mxj_h012",
+     "prompt": "点 (1, 2) 到直线 3x + 4y - 5 = 0 的距离等于多少？",
+     "question": "点 (1, 2) 到直线 3x + 4y - 5 = 0 的距离等于多少？",
+     "answer": 1.2,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 5}]}",
+     "difficulty": "standard",
+     "explanation": "代入点到直线的距离公式，分子是 3 乘 1 加 4 乘 2 减 5 的绝对值，等于 6；分母是 3 的平方加 4 的平方再开方，等于 5；所以距离为 6 除以 5 等于 1.2。"
+    },
+    {
+     "id": "mxj_h012_q5",
+     "topicId": "mxj_h012",
+     "prompt": "求两条平行直线 3x + 4y - 2 = 0 与 3x + 4y - 8 = 0 之间的距离。",
+     "question": "求两条平行直线 3x + 4y - 2 = 0 与 3x + 4y - 8 = 0 之间的距离。",
+     "answer": "五分之六",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "两条平行直线的距离等于常数项之差的绝对值除以根号下 A 的平方加 B 的平方，即 8 减 2 的绝对值 6 除以 5，结果为五分之六。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h013",
+   "chapter": "湘教版选择性必修第一册 第3章 圆锥曲线与方程",
+   "description": "第3章圆锥曲线与方程：由到定点距离的几何条件抽象出椭圆、双曲线与抛物线，建立它们的标准方程，认识焦点、顶点、离心率、渐近线等几何性质，理解曲线与方程的对应关系，并把圆锥曲线用于拱桥、卫星轨道等实际情境。",
+   "mastery_criteria": [
+    "能说出椭圆、双曲线、抛物线的定义与标准方程",
+    "会由方程求焦点、准线、渐近线与离心率",
+    "能用圆锥曲线解决简单的实际问题"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_h013_q1",
+     "topicId": "mxj_h013",
+     "prompt": "椭圆 x 的平方除以 25 加 y 的平方除以 9 等于 1 的焦距等于多少？",
+     "question": "椭圆 x 的平方除以 25 加 y 的平方除以 9 等于 1 的焦距等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "8"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "16"
+      },
+      {
+       "label": "D",
+       "text": "10"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由方程得 a 的平方等于 25、b 的平方等于 9，所以 c 的平方等于 25 减 9 等于 16，c 等于 4；焦距是 2c，等于 8。"
+    },
+    {
+     "id": "mxj_h013_q2",
+     "topicId": "mxj_h013",
+     "prompt": "抛物线 y 的平方等于 4x 的焦点到准线的距离等于多少？",
+     "question": "抛物线 y 的平方等于 4x 的焦点到准线的距离等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "抛物线 y 的平方等于 2px 中 2p 等于 4，所以 p 等于 2；焦点到准线的距离恰好等于 p，也就是 2，而焦点的横坐标只是 p 的一半，等于 1。"
+    },
+    {
+     "id": "mxj_h013_q3",
+     "topicId": "mxj_h013",
+     "prompt": "椭圆 x 的平方除以 9 加 y 的平方除以 4 等于 1 的短轴长等于多少？",
+     "question": "椭圆 x 的平方除以 9 加 y 的平方除以 4 等于 1 的短轴长等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由方程得 a 的平方等于 9、b 的平方等于 4，所以 b 等于 2，短轴长等于 2b 等于 4；长轴长则是 2a 等于 6，两个概念不能混淆。"
+    },
+    {
+     "id": "mxj_h013_q4",
+     "topicId": "mxj_h013",
+     "prompt": "椭圆 x 的平方除以 16 加 y 的平方除以 7 等于 1 的离心率等于多少？",
+     "question": "椭圆 x 的平方除以 16 加 y 的平方除以 7 等于 1 的离心率等于多少？",
+     "answer": 0.75,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 4}]}",
+     "difficulty": "standard",
+     "explanation": "由方程得 a 的平方等于 16、b 的平方等于 7，所以 c 的平方等于 16 减 7 等于 9，c 等于 3，a 等于 4；离心率 e 等于 c 除以 a 等于 3 除以 4，即 0.75。"
+    },
+    {
+     "id": "mxj_h013_q5",
+     "topicId": "mxj_h013",
+     "prompt": "椭圆 x 的平方除以 169 加 y 的平方除以 25 等于 1 的半焦距 c 等于多少？",
+     "question": "椭圆 x 的平方除以 169 加 y 的平方除以 25 等于 1 的半焦距 c 等于多少？",
+     "answer": "12",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "椭圆中 c 的平方等于 a 的平方减 b 的平方，即 169 减 25 等于 144，所以 c 等于 12；椭圆里 a 最大、c 最小，与双曲线的关系恰好相反。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_h014",
+   "chapter": "湘教版选择性必修第一册 第4章 计数原理",
+   "description": "第4章计数原理：由实例概括分类加法计数原理与分步乘法计数原理，用它们推导排列数公式与组合数公式，理解排列与组合的区别在于是否考虑顺序，再由多项式乘法与计数原理证明二项式定理并求展开式中的指定项。",
+   "mastery_criteria": [
+    "能辨析分类与分步并正确选用两个计数原理",
+    "会用排列数、组合数公式计算",
+    "会用二项式定理求指定项及其系数"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_h014_q1",
+     "topicId": "mxj_h014",
+     "prompt": "从甲地到乙地有 3 条路，从乙地到丙地有 4 条路，则从甲地经乙地到丙地的走法共有多少种？",
+     "question": "从甲地到乙地有 3 条路，从乙地到丙地有 4 条路，则从甲地经乙地到丙地的走法共有多少种？",
+     "options": [
+      {
+       "label": "A",
+       "text": "12"
+      },
+      {
+       "label": "B",
+       "text": "7"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "从甲地到丙地必须经过两步：第一步从甲到乙有 3 种走法，第二步从乙到丙有 4 种走法；这是分步计数，用乘法，共 3 乘 4 等于 12 种。"
+    },
+    {
+     "id": "mxj_h014_q2",
+     "topicId": "mxj_h014",
+     "prompt": "排列数 A(5, 3) 的值等于多少？",
+     "question": "排列数 A(5, 3) 的值等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "10"
+      },
+      {
+       "label": "B",
+       "text": "60"
+      },
+      {
+       "label": "C",
+       "text": "125"
+      },
+      {
+       "label": "D",
+       "text": "15"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "排列数 A(5, 3) 等于从 5 开始连续 3 个正整数的乘积，即 5 乘 4 乘 3，等于 60；注意它不是 5 的 3 次方，也不是组合数。"
+    },
+    {
+     "id": "mxj_h014_q3",
+     "topicId": "mxj_h014",
+     "prompt": "(x + 2) 的 5 次方展开式中 x 的 3 次方项的系数是多少？",
+     "question": "(x + 2) 的 5 次方展开式中 x 的 3 次方项的系数是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "10"
+      },
+      {
+       "label": "B",
+       "text": "20"
+      },
+      {
+       "label": "C",
+       "text": "40"
+      },
+      {
+       "label": "D",
+       "text": "80"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "通项为 C(5, k) 乘 x 的 (5 减 k) 次方乘 2 的 k 次方，要得到 x 的 3 次方需 5 减 k 等于 3，即 k 等于 2；系数为 C(5, 2) 乘 2 的平方等于 10 乘 4 等于 40。"
+    },
+    {
+     "id": "mxj_h014_q4",
+     "topicId": "mxj_h014",
+     "prompt": "组合数 C(6, 2) 的值等于多少？",
+     "question": "组合数 C(6, 2) 的值等于多少？",
+     "answer": 15,
+     "type": "numeric",
+     "verify": "{\"type\": \"num\", \"value\": 15}",
+     "difficulty": "standard",
+     "explanation": "组合数 C(6, 2) 等于 6 乘 5 除以 2 乘 1，即 30 除以 2 等于 15；也可由 C(6, 2) 等于 C(6, 4) 检验。"
+    },
+    {
+     "id": "mxj_h014_q5",
+     "topicId": "mxj_h014",
+     "prompt": "求 (2x - 1) 的 4 次方展开式中 x 的平方项的系数。",
+     "question": "求 (2x - 1) 的 4 次方展开式中 x 的平方项的系数。",
+     "answer": "24",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "通项为 C(4, k) 乘 (2x) 的 (4 减 k) 次方乘 (负1) 的 k 次方；要得到 x 的平方需 4 减 k 等于 2，即 k 等于 2，系数为 C(4, 2) 乘 2 的平方乘 (负1) 的平方，等于 6 乘 4 等于 24。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "mxj_h1035",
+   "chapter": "湘教版选择性必修第一册 第1章 数列 · 数列的概念",
+   "description": "认识数列是按一定顺序排列的一列数，数列中的每一个数叫这个数列的项，各项依次叫第 1 项、第 2 项……；理解数列是定义域为正整数集或其有限子集的函数，掌握用通项公式表示数列，并能由通项公式求指定项、判断某数是否为数列中的项。",
+   "mastery_criteria": [
+    "能说出数列、项与通项公式的含义",
+    "会用通项公式求指定项",
+    "能判断一个数是否为数列中的项"
+   ],
+   "misconceptions": [
+    "把数列当成数的集合，忽略各项的顺序",
+    "把第 n 项的序号 n 与该项的数值混为一谈"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_h1035_q1",
+     "topicId": "mxj_h1035",
+     "prompt": "下列关于数列的说法中，正确的是哪一个？",
+     "question": "下列关于数列的说法中，正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "数列 1, 2, 3 与 3, 2, 1 是同一个数列"
+      },
+      {
+       "label": "B",
+       "text": "同一个数列中的项可以重复出现"
+      },
+      {
+       "label": "C",
+       "text": "数列就是数的集合"
+      },
+      {
+       "label": "D",
+       "text": "数列的项数一定是无限的"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "数列是按一定顺序排列的一列数，顺序不同就是不同的数列，所以 1, 2, 3 与 3, 2, 1 不是同一个数列；数列中的项可以重复，如 1, 1, 1 也是数列；数列也不是集合。"
+    },
+    {
+     "id": "mxj_h1035_q2",
+     "topicId": "mxj_h1035",
+     "prompt": "数列 2, 5, 8, 11, … 的一个通项公式是下面哪一个？",
+     "question": "数列 2, 5, 8, 11, … 的一个通项公式是下面哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3n - 1"
+      },
+      {
+       "label": "B",
+       "text": "3n + 1"
+      },
+      {
+       "label": "C",
+       "text": "2n + 1"
+      },
+      {
+       "label": "D",
+       "text": "n + 3"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "相邻两项的差都是 3，第 n 项应为 3n 加一个常数；用第 1 项检验，3 乘 1 减 1 等于 2，符合；再检验第 4 项得 11，也符合，所以通项公式是 3n - 1。"
+    },
+    {
+     "id": "mxj_h1035_q3",
+     "topicId": "mxj_h1035",
+     "prompt": "已知数列的通项公式为 aₙ = n 的平方减 n，则它的第 5 项等于多少？",
+     "question": "已知数列的通项公式为 aₙ = n 的平方减 n，则它的第 5 项等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "15"
+      },
+      {
+       "label": "B",
+       "text": "25"
+      },
+      {
+       "label": "C",
+       "text": "20"
+      },
+      {
+       "label": "D",
+       "text": "30"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "求第 5 项就是把 n 等于 5 代入通项公式，得 5 的平方减 5 等于 25 减 5 等于 20；注意代入的是序号 5，而不是把 5 当成项的值。"
+    },
+    {
+     "id": "mxj_h1035_q4",
+     "topicId": "mxj_h1035",
+     "prompt": "数列 2, 6, 12, 20, … 的通项公式为 aₙ = n(n + 1)，则 72 是这个数列的第几项？",
+     "question": "数列 2, 6, 12, 20, … 的通项公式为 aₙ = n(n + 1)，则 72 是这个数列的第几项？",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "9"
+      },
+      {
+       "label": "C",
+       "text": "7"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "令 n(n + 1) 等于 72，即 n 的平方加 n 减 72 等于 0，分解得 (n 减 8)(n 加 9) 等于 0；因为 n 是正整数，所以 n 等于 8，即 72 是第 8 项。"
+    },
+    {
+     "id": "mxj_h1035_q5",
+     "topicId": "mxj_h1035",
+     "prompt": "已知数列的通项公式为 aₙ = 2n + 3，则它的第 7 项等于多少？",
+     "question": "已知数列的通项公式为 aₙ = 2n + 3，则它的第 7 项等于多少？",
+     "answer": 17,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 7}]}, {\"type\": \"num\", \"value\": 3}]}",
+     "difficulty": "basic",
+     "explanation": "把 n 等于 7 代入通项公式，得 2 乘 7 加 3 等于 14 加 3 等于 17，所以该数列的第 7 项是 17。"
+    },
+    {
+     "id": "mxj_h1035_q6",
+     "topicId": "mxj_h1035",
+     "prompt": "数列 3, 6, 9, 12, … 中，48 是这个数列的第几项？",
+     "question": "数列 3, 6, 9, 12, … 中，48 是这个数列的第几项？",
+     "answer": 16,
+     "type": "numeric",
+     "verify": "{\"type\": \"num\", \"value\": 16}",
+     "difficulty": "standard",
+     "explanation": "该数列的通项公式为 aₙ = 3n，令 3n 等于 48，得 n 等于 16；因为 16 是正整数，所以 48 是这个数列的第 16 项。"
+    },
+    {
+     "id": "mxj_h1035_q7",
+     "topicId": "mxj_h1035",
+     "prompt": "数列 1, 4, 9, 16, … 的通项公式是 aₙ 等于什么？",
+     "question": "数列 1, 4, 9, 16, … 的通项公式是 aₙ 等于什么？",
+     "answer": "n 的平方",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "各项分别是 1、2、3、4 的平方，所以第 n 项等于 n 的平方；用第 4 项检验，4 的平方等于 16，与题设一致。"
+    },
+    {
+     "id": "mxj_h1035_q8",
+     "topicId": "mxj_h1035",
+     "prompt": "已知数列的通项公式为 aₙ = n 的平方减 5n 加 4，求使 aₙ 等于 0 的所有 n 的值。",
+     "question": "已知数列的通项公式为 aₙ = n 的平方减 5n 加 4，求使 aₙ 等于 0 的所有 n 的值。",
+     "answer": "n 等于 1 或 n 等于 4",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "令 n 的平方减 5n 加 4 等于 0，因式分解得 (n 减 1)(n 减 4) 等于 0，解得 n 等于 1 或 n 等于 4；两者都是正整数，所以都符合要求，即该数列的第 1 项与第 4 项都等于 0。"
+    }
+   ],
+   "page": null
+  },
+  {
+   "id": "mxj_h1036",
+   "chapter": "湘教版选择性必修第一册 第1章 数列 · 等差数列",
+   "description": "以相邻两项之差等于同一个常数刻画等差数列，理解公差的意义；推导并掌握通项公式 aₙ = a₁ + (n - 1)d 与等差中项的概念，理解前 n 项和公式 Sₙ = n(a₁ + aₙ)/2 = na₁ + n(n - 1)d/2 的推导思路，并能求首项、公差、项数与和。",
+   "mastery_criteria": [
+    "能用定义判断等差数列并求出公差",
+    "掌握通项公式与前 n 项和公式",
+    "能由已知条件求首项、公差与指定项"
+   ],
+   "misconceptions": [
+    "把公差误算成相邻两项的比值",
+    "用求和公式时把项数算错或漏掉首项"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_h1036_q1",
+     "topicId": "mxj_h1036",
+     "prompt": "等差数列 5, 8, 11, 14, … 的公差等于多少？",
+     "question": "等差数列 5, 8, 11, 14, … 的公差等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "公差等于相邻两项之差，用 8 减 5 得 3，再用 11 减 8 检验仍得 3，所以公差 d 等于 3；注意公差不是两项的比值。"
+    },
+    {
+     "id": "mxj_h1036_q2",
+     "topicId": "mxj_h1036",
+     "prompt": "已知等差数列的首项为 4，公差为 3，则它的第 10 项等于多少？",
+     "question": "已知等差数列的首项为 4，公差为 3，则它的第 10 项等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "31"
+      },
+      {
+       "label": "B",
+       "text": "34"
+      },
+      {
+       "label": "C",
+       "text": "30"
+      },
+      {
+       "label": "D",
+       "text": "27"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由通项公式 a₁₀ 等于 a₁ 加 9d，代入得 4 加 9 乘 3 等于 4 加 27 等于 31；易错点是把项数当成 10 而不是 9，那样会得到 34。"
+    },
+    {
+     "id": "mxj_h1036_q3",
+     "topicId": "mxj_h1036",
+     "prompt": "已知等差数列 aₙ 中 a₃ = 7，a₇ = 19，则 a₁₅ 等于多少？",
+     "question": "已知等差数列 aₙ 中 a₃ = 7，a₇ = 19，则 a₁₅ 等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "40"
+      },
+      {
+       "label": "B",
+       "text": "46"
+      },
+      {
+       "label": "C",
+       "text": "43"
+      },
+      {
+       "label": "D",
+       "text": "37"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "a₇ 减 a₃ 等于 4d，即 19 减 7 等于 12，所以 d 等于 3；再由 a₃ 等于 a₁ 加 2d 得 a₁ 等于 1；于是 a₁₅ 等于 1 加 14 乘 3 等于 43。"
+    },
+    {
+     "id": "mxj_h1036_q4",
+     "topicId": "mxj_h1036",
+     "prompt": "若 2, x, 8 三个数成等差数列，则 x 等于多少？",
+     "question": "若 2, x, 8 三个数成等差数列，则 x 等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "10"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由等差中项的定义，x 等于 2 与 8 的等差中项，即 x 等于 (2 加 8) 除以 2 等于 5；也可由 x 减 2 等于 8 减 x 解出同样的结果。"
+    },
+    {
+     "id": "mxj_h1036_q5",
+     "topicId": "mxj_h1036",
+     "prompt": "已知等差数列的首项为 2，公差为 4，则它的前 5 项和等于多少？",
+     "question": "已知等差数列的首项为 2，公差为 4，则它的前 5 项和等于多少？",
+     "answer": 50,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 4}]}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 4}]}]}",
+     "difficulty": "basic",
+     "explanation": "用公式 Sₙ = na₁ + n(n-1)d/2，代入得 5 乘 2 加上 5 乘 4 除以 2 再乘 4，等于 10 加 40 等于 50；也可逐项写出 2, 6, 10, 14, 18 再相加检验。"
+    },
+    {
+     "id": "mxj_h1036_q6",
+     "topicId": "mxj_h1036",
+     "prompt": "等差数列 1, 4, 7, … 的前 10 项和等于多少？",
+     "question": "等差数列 1, 4, 7, … 的前 10 项和等于多少？",
+     "answer": 145,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 1}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 9}]}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 3}]}]}",
+     "difficulty": "standard",
+     "explanation": "首项为 1、公差为 3、项数为 10，代入求和公式得 10 乘 1 加上 10 乘 9 除以 2 再乘 3，等于 10 加 135 等于 145。"
+    },
+    {
+     "id": "mxj_h1036_q7",
+     "topicId": "mxj_h1036",
+     "prompt": "在等差数列 aₙ 中，若 a₂ + a₅ = 12，则 a₁ + a₆ 等于多少？",
+     "question": "在等差数列 aₙ 中，若 a₂ + a₅ = 12，则 a₁ + a₆ 等于多少？",
+     "answer": "12",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "等差数列中下标和相等的两项之和相等：因为 2 加 5 等于 1 加 6，所以 a₂ 加 a₅ 等于 a₁ 加 a₆，故 a₁ 加 a₆ 等于 12。"
+    },
+    {
+     "id": "mxj_h1036_q8",
+     "topicId": "mxj_h1036",
+     "prompt": "已知等差数列 aₙ 的首项为 20，公差为负3，求它的前 n 项和的最大值以及此时 n 的值。",
+     "question": "已知等差数列 aₙ 的首项为 20，公差为负3，求它的前 n 项和的最大值以及此时 n 的值。",
+     "answer": "当 n 等于 7 时，前 n 项和取得最大值 77",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "通项 aₙ 等于 20 减 3(n 减 1)，令 aₙ 大于等于 0 得 n 小于等于 7.67，即前 7 项为正、第 8 项起为负，所以前 7 项和最大；S₇ 等于 7 乘 20 加上 7 乘 6 除以 2 再乘负3，等于 140 减 63 等于 77。"
+    }
+   ],
+   "page": null
+  },
+  {
+   "id": "mxj_h1037",
+   "chapter": "湘教版选择性必修第一册 第1章 数列 · 等比数列",
+   "description": "以相邻两项之比等于同一个非零常数刻画等比数列，理解公比不能为零；掌握通项公式 aₙ = a₁ 乘 q 的 (n-1) 次方与等比中项，理解前 n 项和公式 Sₙ = a₁(1 减 q 的 n 次方) 除以 (1 减 q)（q 不等于 1）的推导，并能求和、判断项的符号与单调性。",
+   "mastery_criteria": [
+    "能用定义判断等比数列并求出公比",
+    "掌握通项公式与前 n 项和公式",
+    "能由已知项求公比、首项与其他项"
+   ],
+   "misconceptions": [
+    "忽略公比不能为零这一条件",
+    "对 q 等于 1 的情形误用求和公式"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_h1037_q1",
+     "topicId": "mxj_h1037",
+     "prompt": "等比数列 2, 6, 18, … 的公比等于多少？",
+     "question": "等比数列 2, 6, 18, … 的公比等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "公比等于后一项与前一项的比，用 6 除以 2 得 3，再用 18 除以 6 检验仍得 3，所以公比 q 等于 3；公比不是两项之差。"
+    },
+    {
+     "id": "mxj_h1037_q2",
+     "topicId": "mxj_h1037",
+     "prompt": "已知等比数列的首项为 3，公比为 2，则它的第 5 项等于多少？",
+     "question": "已知等比数列的首项为 3，公比为 2，则它的第 5 项等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "48"
+      },
+      {
+       "label": "B",
+       "text": "24"
+      },
+      {
+       "label": "C",
+       "text": "96"
+      },
+      {
+       "label": "D",
+       "text": "30"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由通项公式 a₅ 等于 a₁ 乘 q 的 4 次方，得 3 乘 2 的 4 次方等于 3 乘 16 等于 48；易错点是把指数写成 5 而得到 96。"
+    },
+    {
+     "id": "mxj_h1037_q3",
+     "topicId": "mxj_h1037",
+     "prompt": "已知等比数列 aₙ 中 a₂ = 6，a₅ = 48，则 a₈ 等于多少？",
+     "question": "已知等比数列 aₙ 中 a₂ = 6，a₅ = 48，则 a₈ 等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "192"
+      },
+      {
+       "label": "B",
+       "text": "768"
+      },
+      {
+       "label": "C",
+       "text": "384"
+      },
+      {
+       "label": "D",
+       "text": "96"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由 a₅ 等于 a₂ 乘 q 的 3 次方得 48 等于 6 乘 q 的 3 次方，所以 q 等于 2；再由 a₂ 等于 a₁q 得 a₁ 等于 3；于是 a₈ 等于 3 乘 2 的 7 次方等于 3 乘 128 等于 384。"
+    },
+    {
+     "id": "mxj_h1037_q4",
+     "topicId": "mxj_h1037",
+     "prompt": "若 2, x, 18 三个正数成等比数列，则 x 等于多少？",
+     "question": "若 2, x, 18 三个正数成等比数列，则 x 等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "10"
+      },
+      {
+       "label": "B",
+       "text": "9"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由等比中项的定义，x 的平方等于 2 乘 18 等于 36；因为 x 是正数，所以 x 等于 6，负值不合题意舍去。"
+    },
+    {
+     "id": "mxj_h1037_q5",
+     "topicId": "mxj_h1037",
+     "prompt": "已知等比数列的首项为 2，公比为 3，则它的前 3 项和等于多少？",
+     "question": "已知等比数列的首项为 2，公比为 3，则它的前 3 项和等于多少？",
+     "answer": 26,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 6}]}, {\"type\": \"num\", \"value\": 18}]}",
+     "difficulty": "basic",
+     "explanation": "前 3 项依次为 2、6、18，相加得 26；也可用求和公式，S₃ 等于 2 乘 (1 减 27) 除以 (1 减 3) 等于 2 乘负26 除以负2 等于 26。"
+    },
+    {
+     "id": "mxj_h1037_q6",
+     "topicId": "mxj_h1037",
+     "prompt": "已知等比数列的首项为 1，公比为 2，则它的前 6 项和等于多少？",
+     "question": "已知等比数列的首项为 1，公比为 2，则它的前 6 项和等于多少？",
+     "answer": 63,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 6}]}, {\"type\": \"num\", \"value\": 1}]}",
+     "difficulty": "standard",
+     "explanation": "用求和公式 S₆ 等于 1 乘 (1 减 2 的 6 次方) 除以 (1 减 2)，化简得 2 的 6 次方减 1，等于 64 减 1 等于 63。"
+    },
+    {
+     "id": "mxj_h1037_q7",
+     "topicId": "mxj_h1037",
+     "prompt": "已知等比数列 aₙ 中 a₃ = 4，a₅ = 16，且各项为正数，则公比 q 等于多少？",
+     "question": "已知等比数列 aₙ 中 a₃ = 4，a₅ = 16，且各项为正数，则公比 q 等于多少？",
+     "answer": "2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由 a₅ 等于 a₃ 乘 q 的平方得 16 等于 4 乘 q 的平方，所以 q 的平方等于 4；因为各项为正数，q 取正值 2。"
+    },
+    {
+     "id": "mxj_h1037_q8",
+     "topicId": "mxj_h1037",
+     "prompt": "已知等比数列的首项为 2，公比为 3，求它的前 5 项和，并说明求和公式的适用条件。",
+     "question": "已知等比数列的首项为 2，公比为 3，求它的前 5 项和，并说明求和公式的适用条件。",
+     "answer": "前 5 项和为 242，求和公式要求公比 q 不等于 1",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "代入 S₅ 等于 2 乘 (3 的 5 次方减 1) 除以 (3 减 1)，得 2 乘 242 除以 2 等于 242；该公式在 q 不等于 1 时成立，若 q 等于 1，各项都等于 a₁，前 n 项和直接等于 n 乘 a₁。"
+    }
+   ],
+   "page": null
+  },
+  {
+   "id": "mxj_h1038",
+   "chapter": "湘教版选择性必修第一册 第2章 平面解析几何初步 · 直线的斜率",
+   "description": "在平面直角坐标系中用倾斜角刻画直线相对于 x 轴的倾斜程度，倾斜角的范围是 0 度到 180 度且不含 180 度；定义斜率 k 等于 tan α，掌握过两点的斜率公式，并理解倾斜角为 90 度时直线的斜率不存在。",
+   "mastery_criteria": [
+    "能说出倾斜角与斜率的定义及其取值范围",
+    "会用两点坐标求直线斜率",
+    "能由倾斜角判断斜率的存在性与正负"
+   ],
+   "misconceptions": [
+    "认为每条直线都有斜率",
+    "把斜率公式中横坐标减去的顺序颠倒导致符号错误"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_h1038_q1",
+     "topicId": "mxj_h1038",
+     "prompt": "倾斜角为 45 度的直线，它的斜率等于多少？",
+     "question": "倾斜角为 45 度的直线，它的斜率等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "0"
+      },
+      {
+       "label": "C",
+       "text": "负1"
+      },
+      {
+       "label": "D",
+       "text": "不存在"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "斜率 k 等于 tan α，当倾斜角为 45 度时 tan 45 度等于 1，所以斜率为 1；倾斜角为 0 度时斜率才为 0，为 90 度时斜率不存在。"
+    },
+    {
+     "id": "mxj_h1038_q2",
+     "topicId": "mxj_h1038",
+     "prompt": "过点 A(2, 3) 与 B(5, 9) 的直线，它的斜率等于多少？",
+     "question": "过点 A(2, 3) 与 B(5, 9) 的直线，它的斜率等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "二分之一"
+      },
+      {
+       "label": "D",
+       "text": "负2"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "用两点斜率公式，斜率等于 (9 减 3) 除以 (5 减 2) 等于 6 除以 3 等于 2；两个坐标差必须保持同样的顺序，否则符号会出错。"
+    },
+    {
+     "id": "mxj_h1038_q3",
+     "topicId": "mxj_h1038",
+     "prompt": "倾斜角为 120 度的直线，它的斜率等于多少？",
+     "question": "倾斜角为 120 度的直线，它的斜率等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "根号3"
+      },
+      {
+       "label": "B",
+       "text": "三分之根号三"
+      },
+      {
+       "label": "C",
+       "text": "负根号3"
+      },
+      {
+       "label": "D",
+       "text": "不存在"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "斜率等于 tan 120 度，由诱导公式 tan 120 度等于负 tan 60 度等于负根号3；倾斜角大于 90 度时斜率为负，与结果一致。"
+    },
+    {
+     "id": "mxj_h1038_q4",
+     "topicId": "mxj_h1038",
+     "prompt": "过点 A(1, 2) 与 B(1, 5) 的直线，它的斜率是什么情况？",
+     "question": "过点 A(1, 2) 与 B(1, 5) 的直线，它的斜率是什么情况？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "0"
+      },
+      {
+       "label": "C",
+       "text": "负3"
+      },
+      {
+       "label": "D",
+       "text": "不存在"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两点的横坐标相同，直线垂直于 x 轴，倾斜角是 90 度，而 tan 90 度没有意义，所以该直线的斜率不存在，不能用斜率公式计算。"
+    },
+    {
+     "id": "mxj_h1038_q5",
+     "topicId": "mxj_h1038",
+     "prompt": "过点 (0, 1) 与 (4, 9) 的直线，它的斜率等于多少？",
+     "question": "过点 (0, 1) 与 (4, 9) 的直线，它的斜率等于多少？",
+     "answer": 2,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"num\", \"value\": 4}]}",
+     "difficulty": "basic",
+     "explanation": "斜率等于 (9 减 1) 除以 (4 减 0) 等于 8 除以 4 等于 2，所以这条直线的斜率为 2，倾斜角是锐角。"
+    },
+    {
+     "id": "mxj_h1038_q6",
+     "topicId": "mxj_h1038",
+     "prompt": "已知过点 (1, 2) 与 (3, y) 的直线的斜率为 3，则 y 等于多少？",
+     "question": "已知过点 (1, 2) 与 (3, y) 的直线的斜率为 3，则 y 等于多少？",
+     "answer": 8,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 2}]}",
+     "difficulty": "standard",
+     "explanation": "由斜率公式得 (y 减 2) 除以 (3 减 1) 等于 3，即 y 减 2 等于 6，解得 y 等于 8；代回检验，斜率确为 3。"
+    },
+    {
+     "id": "mxj_h1038_q7",
+     "topicId": "mxj_h1038",
+     "prompt": "倾斜角为 135 度的直线，它的斜率等于多少？",
+     "question": "倾斜角为 135 度的直线，它的斜率等于多少？",
+     "answer": "负1",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "斜率等于 tan 135 度，而 tan 135 度等于负 tan 45 度等于负1；倾斜角是钝角时斜率为负，符合判断。"
+    },
+    {
+     "id": "mxj_h1038_q8",
+     "topicId": "mxj_h1038",
+     "prompt": "判断点 A(1, 1)、B(2, 3)、C(4, 7) 是否共线，并说明理由。",
+     "question": "判断点 A(1, 1)、B(2, 3)、C(4, 7) 是否共线，并说明理由。",
+     "answer": "三点共线，因为 AB 与 AC 的斜率都等于 2",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "直线 AB 的斜率为 (3 减 1) 除以 (2 减 1) 等于 2，直线 AC 的斜率为 (7 减 1) 除以 (4 减 1) 等于 2；两条直线都过点 A 且斜率相等，所以它们重合，三点共线。"
+    }
+   ],
+   "page": null
+  },
+  {
+   "id": "mxj_h1039",
+   "chapter": "湘教版选择性必修第一册 第2章 平面解析几何初步 · 直线的方程",
+   "description": "根据确定直线位置的几何要素，掌握直线的点斜式、斜截式、两点式、截距式与一般式方程，理解各种形式的适用条件（如点斜式不能表示斜率不存在的直线），并能由已知条件求直线方程、把方程化为一般式。",
+   "mastery_criteria": [
+    "会根据一点与斜率写出点斜式与斜截式方程",
+    "会由两点或截距写出直线方程",
+    "能把各种形式的方程化为一般式"
+   ],
+   "misconceptions": [
+    "点斜式中把已知点的坐标符号写反",
+    "忽略截距式要求两个截距都不为零"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_h1039_q1",
+     "topicId": "mxj_h1039",
+     "prompt": "过点 (1, 2) 且斜率为 3 的直线方程是哪一个？",
+     "question": "过点 (1, 2) 且斜率为 3 的直线方程是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y - 2 = 3(x - 1)"
+      },
+      {
+       "label": "B",
+       "text": "y + 2 = 3(x + 1)"
+      },
+      {
+       "label": "C",
+       "text": "y = 3x + 2"
+      },
+      {
+       "label": "D",
+       "text": "y - 2 = 3(x + 1)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由点斜式方程 y 减 y₀ 等于 k(x 减 x₀)，把点 (1, 2) 与斜率 3 代入，得 y 减 2 等于 3(x 减 1)；这是点斜式的标准写法。"
+    },
+    {
+     "id": "mxj_h1039_q2",
+     "topicId": "mxj_h1039",
+     "prompt": "直线 y = 2x - 3 的斜率与它在 y 轴上的截距分别是多少？",
+     "question": "直线 y = 2x - 3 的斜率与它在 y 轴上的截距分别是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "斜率为负3，截距为 2"
+      },
+      {
+       "label": "B",
+       "text": "斜率为 2，截距为负3"
+      },
+      {
+       "label": "C",
+       "text": "斜率为 2，截距为 3"
+      },
+      {
+       "label": "D",
+       "text": "斜率为负2，截距为负3"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "斜截式 y 等于 kx 加 b 中，x 的系数就是斜率，常数项就是 y 轴上的截距；对应得斜率为 2，截距为负3。"
+    },
+    {
+     "id": "mxj_h1039_q3",
+     "topicId": "mxj_h1039",
+     "prompt": "过点 A(负1, 2) 与 B(3, 6) 的直线的一般式方程是哪一个？",
+     "question": "过点 A(负1, 2) 与 B(3, 6) 的直线的一般式方程是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x + y - 3 = 0"
+      },
+      {
+       "label": "B",
+       "text": "x - y - 3 = 0"
+      },
+      {
+       "label": "C",
+       "text": "x - y + 3 = 0"
+      },
+      {
+       "label": "D",
+       "text": "x + y + 3 = 0"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先求斜率，等于 (6 减 2) 除以 (3 加 1) 等于 1；由点斜式得 y 减 2 等于 x 加 1，即 y 等于 x 加 3；移项化为一般式得 x 减 y 加 3 等于 0。"
+    },
+    {
+     "id": "mxj_h1039_q4",
+     "topicId": "mxj_h1039",
+     "prompt": "直线 x 除以 2 加 y 除以 3 等于 1 在 x 轴与 y 轴上的截距分别是多少？",
+     "question": "直线 x 除以 2 加 y 除以 3 等于 1 在 x 轴与 y 轴上的截距分别是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3 与 2"
+      },
+      {
+       "label": "B",
+       "text": "负2 与负3"
+      },
+      {
+       "label": "C",
+       "text": "0 与 0"
+      },
+      {
+       "label": "D",
+       "text": "2 与 3"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "这是截距式方程，形如 x 除以 a 加 y 除以 b 等于 1 时，a 是 x 轴上的截距，b 是 y 轴上的截距；所以截距分别是 2 与 3。"
+    },
+    {
+     "id": "mxj_h1039_q5",
+     "topicId": "mxj_h1039",
+     "prompt": "直线 y = 3x + 1 在 y 轴上的截距等于多少？",
+     "question": "直线 y = 3x + 1 在 y 轴上的截距等于多少？",
+     "answer": 1,
+     "type": "numeric",
+     "verify": "{\"type\": \"num\", \"value\": 1}",
+     "difficulty": "basic",
+     "explanation": "在斜截式 y 等于 kx 加 b 中，b 就是直线在 y 轴上的截距；与 y 等于 3x 加 1 对照得 b 等于 1，也可令 x 等于 0 求得 y 等于 1。"
+    },
+    {
+     "id": "mxj_h1039_q6",
+     "topicId": "mxj_h1039",
+     "prompt": "过点 (2, 负1) 且斜率为 2 的直线，它在 y 轴上的截距等于多少？",
+     "question": "过点 (2, 负1) 且斜率为 2 的直线，它在 y 轴上的截距等于多少？",
+     "answer": -5,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": -1}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}]}",
+     "difficulty": "standard",
+     "explanation": "由点斜式得 y 加 1 等于 2(x 减 2)，整理为 y 等于 2x 减 5；所以该直线在 y 轴上的截距为负5，也可把 x 等于 0 代入求得。"
+    },
+    {
+     "id": "mxj_h1039_q7",
+     "topicId": "mxj_h1039",
+     "prompt": "过点 (0, 4) 且斜率为负1 的直线，它的斜截式方程是什么？",
+     "question": "过点 (0, 4) 且斜率为负1 的直线，它的斜截式方程是什么？",
+     "answer": "y = -x + 4",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "斜截式方程形如 y 等于 kx 加 b，其中 k 是斜率、b 是 y 轴上的截距；本题斜率为负1、截距为 4，所以方程为 y 等于负x 加 4。"
+    },
+    {
+     "id": "mxj_h1039_q8",
+     "topicId": "mxj_h1039",
+     "prompt": "一条直线在 x 轴上的截距为 3，在 y 轴上的截距为 4，写出它的截距式方程并化为一般式。",
+     "question": "一条直线在 x 轴上的截距为 3，在 y 轴上的截距为 4，写出它的截距式方程并化为一般式。",
+     "answer": "截距式为 x/3 + y/4 = 1，化为一般式为 4x + 3y - 12 = 0",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "截距式方程写成 x 除以 3 加 y 除以 4 等于 1；两边同乘 12 去分母得 4x 加 3y 等于 12，移项即 4x 加 3y 减 12 等于 0，这就是一般式。"
+    }
+   ],
+   "page": null
+  },
+  {
+   "id": "mxj_h1040",
+   "chapter": "湘教版选择性必修第一册 第2章 平面解析几何初步 · 两条直线的位置关系",
+   "description": "用斜率判定两条直线的位置关系：斜率都存在时，斜率相等且截距不等则两条直线平行，斜率之积等于负1 则两条直线垂直；通过解方程组求两条直线的交点坐标，并由方程组解的情况判断两条直线相交、平行还是重合。",
+   "mastery_criteria": [
+    "能用斜率判定两条直线平行或垂直",
+    "会解方程组求两条直线的交点",
+    "能由方程组解的情况判断位置关系"
+   ],
+   "misconceptions": [
+    "由斜率相等直接断定两直线重合",
+    "判断垂直时漏掉一条直线斜率不存在的情形"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_h1040_q1",
+     "topicId": "mxj_h1040",
+     "prompt": "若两条直线的斜率都存在且相等，则这两条直线的位置关系是什么？",
+     "question": "若两条直线的斜率都存在且相等，则这两条直线的位置关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行或重合"
+      },
+      {
+       "label": "B",
+       "text": "一定垂直"
+      },
+      {
+       "label": "C",
+       "text": "一定相交"
+      },
+      {
+       "label": "D",
+       "text": "无法判断"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "斜率相等说明两条直线倾斜程度相同，它们要么平行，要么是同一条直线即重合；要区分这两种情形，还需比较它们在 y 轴上的截距是否相等。"
+    },
+    {
+     "id": "mxj_h1040_q2",
+     "topicId": "mxj_h1040",
+     "prompt": "直线 y = 3x + 1 与直线 y = 3x - 2 的位置关系是什么？",
+     "question": "直线 y = 3x + 1 与直线 y = 3x - 2 的位置关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "垂直"
+      },
+      {
+       "label": "B",
+       "text": "平行"
+      },
+      {
+       "label": "C",
+       "text": "重合"
+      },
+      {
+       "label": "D",
+       "text": "相交但不垂直"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两条直线的斜率都等于 3，斜率相等；而截距分别是 1 与负2，截距不等，所以两条直线平行而不重合。"
+    },
+    {
+     "id": "mxj_h1040_q3",
+     "topicId": "mxj_h1040",
+     "prompt": "直线 2x + y - 1 = 0 与直线 x - 2y + 3 = 0 的位置关系是什么？",
+     "question": "直线 2x + y - 1 = 0 与直线 x - 2y + 3 = 0 的位置关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行"
+      },
+      {
+       "label": "B",
+       "text": "重合"
+      },
+      {
+       "label": "C",
+       "text": "垂直"
+      },
+      {
+       "label": "D",
+       "text": "相交但不垂直"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两直线的斜率分别为负2 与二分之一，它们的乘积等于负1，所以两条直线互相垂直；也可由系数关系 2 乘 1 加 1 乘负2 等于 0 判断垂直。"
+    },
+    {
+     "id": "mxj_h1040_q4",
+     "topicId": "mxj_h1040",
+     "prompt": "直线 x + y - 3 = 0 与直线 x - y + 1 = 0 的交点坐标是多少？",
+     "question": "直线 x + y - 3 = 0 与直线 x - y + 1 = 0 的交点坐标是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(2, 1)"
+      },
+      {
+       "label": "B",
+       "text": "(负1, 4)"
+      },
+      {
+       "label": "C",
+       "text": "(4, 负1)"
+      },
+      {
+       "label": "D",
+       "text": "(1, 2)"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把两条直线的方程联立成方程组，两式相加得 2x 减 2 等于 0，所以 x 等于 1；代回第一式得 y 等于 2；所以交点坐标是 (1, 2)。"
+    },
+    {
+     "id": "mxj_h1040_q5",
+     "topicId": "mxj_h1040",
+     "prompt": "过点 (1, 2) 且与直线 y = 2x 平行的直线，它的斜率等于多少？",
+     "question": "过点 (1, 2) 且与直线 y = 2x 平行的直线，它的斜率等于多少？",
+     "answer": 2,
+     "type": "numeric",
+     "verify": "{\"type\": \"num\", \"value\": 2}",
+     "difficulty": "basic",
+     "explanation": "两条直线平行则斜率相等，已知直线的斜率为 2，所以所求直线的斜率也是 2；再用点斜式可写出它的方程为 y 减 2 等于 2(x 减 1)。"
+    },
+    {
+     "id": "mxj_h1040_q6",
+     "topicId": "mxj_h1040",
+     "prompt": "若直线 kx + 2y - 1 = 0 与直线 3x + y + 1 = 0 平行，则 k 等于多少？",
+     "question": "若直线 kx + 2y - 1 = 0 与直线 3x + y + 1 = 0 平行，则 k 等于多少？",
+     "answer": 6,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}",
+     "difficulty": "standard",
+     "explanation": "把两条直线都化为斜截式，斜率分别为负 k 除以 2 与负3；由平行得斜率相等，即负 k 除以 2 等于负3，解得 k 等于 6，此时两直线截距不同，确实平行。"
+    },
+    {
+     "id": "mxj_h1040_q7",
+     "topicId": "mxj_h1040",
+     "prompt": "与直线 2x - 3y + 1 = 0 垂直的直线，它的斜率等于多少？",
+     "question": "与直线 2x - 3y + 1 = 0 垂直的直线，它的斜率等于多少？",
+     "answer": "负二分之三",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "已知直线的斜率为三分之二；两条直线垂直时斜率之积等于负1，所以所求直线的斜率等于负1 除以三分之二，等于负二分之三。"
+    },
+    {
+     "id": "mxj_h1040_q8",
+     "topicId": "mxj_h1040",
+     "prompt": "求过点 (2, 3) 且与直线 4x - 2y + 1 = 0 平行的直线方程，并化为一般式。",
+     "question": "求过点 (2, 3) 且与直线 4x - 2y + 1 = 0 平行的直线方程，并化为一般式。",
+     "answer": "2x - y - 1 = 0",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "已知直线的斜率为 2；所求直线与它平行，斜率也为 2；由点斜式得 y 减 3 等于 2(x 减 2)，即 y 等于 2x 减 1；移项化为一般式得 2x 减 y 减 1 等于 0。"
+    }
+   ],
+   "page": null
+  },
+  {
+   "id": "mxj_h1041",
+   "chapter": "湘教版选择性必修第一册 第2章 平面解析几何初步 · 点到直线的距离",
+   "description": "推导点到直线的距离公式：直线 Ax 加 By 加 C 等于 0 外一点 (x₀, y₀) 到它的距离等于 Ax₀ 加 By₀ 加 C 的绝对值除以根号下 A 的平方加 B 的平方；由点到直线的距离推出两条平行直线间的距离公式，并用来求三角形的面积与最值。",
+   "mastery_criteria": [
+    "会直接用公式求点到直线的距离",
+    "会求两条平行直线间的距离",
+    "能用距离公式解决面积与最值问题"
+   ],
+   "misconceptions": [
+    "代入公式前没有把直线方程化为一般式",
+    "求两平行线距离时未先统一 x 与 y 的系数"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_h1041_q1",
+     "topicId": "mxj_h1041",
+     "prompt": "点 (0, 0) 到直线 3x + 4y - 5 = 0 的距离等于多少？",
+     "question": "点 (0, 0) 到直线 3x + 4y - 5 = 0 的距离等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "0"
+      },
+      {
+       "label": "D",
+       "text": "二分之一"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "代入距离公式，分子是 3 乘 0 加 4 乘 0 减 5 的绝对值，等于 5；分母是 3 的平方加 4 的平方再开方，等于 5；所以距离等于 5 除以 5 等于 1。"
+    },
+    {
+     "id": "mxj_h1041_q2",
+     "topicId": "mxj_h1041",
+     "prompt": "点 (1, 1) 到直线 3x + 4y - 2 = 0 的距离等于多少？",
+     "question": "点 (1, 1) 到直线 3x + 4y - 2 = 0 的距离等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "五分之七"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "七分之五"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "分子是 3 乘 1 加 4 乘 1 减 2 的绝对值，等于 5；分母是根号下 9 加 16 等于 5；所以距离等于 5 除以 5 等于 1。"
+    },
+    {
+     "id": "mxj_h1041_q3",
+     "topicId": "mxj_h1041",
+     "prompt": "点 (2, 1) 到直线 3x - 4y + 6 = 0 的距离等于多少？",
+     "question": "点 (2, 1) 到直线 3x - 4y + 6 = 0 的距离等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "五分之四"
+      },
+      {
+       "label": "C",
+       "text": "五分之八"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "分子是 3 乘 2 减 4 乘 1 加 6 的绝对值，等于 8；分母是根号下 9 加 16 等于 5；所以距离等于 8 除以 5，即五分之八。"
+    },
+    {
+     "id": "mxj_h1041_q4",
+     "topicId": "mxj_h1041",
+     "prompt": "两条平行直线 3x + 4y - 2 = 0 与 3x + 4y - 7 = 0 之间的距离等于多少？",
+     "question": "两条平行直线 3x + 4y - 2 = 0 与 3x + 4y - 7 = 0 之间的距离等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "七分之五"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两条平行直线的系数已经相同，距离等于常数项之差的绝对值除以根号下 A 的平方加 B 的平方，即 7 减 2 的绝对值 5 除以 5，等于 1。"
+    },
+    {
+     "id": "mxj_h1041_q5",
+     "topicId": "mxj_h1041",
+     "prompt": "点 (1, 2) 到直线 4x + 3y - 5 = 0 的距离等于多少？",
+     "question": "点 (1, 2) 到直线 4x + 3y - 5 = 0 的距离等于多少？",
+     "answer": 1,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 5}]}",
+     "difficulty": "basic",
+     "explanation": "分子是 4 乘 1 加 3 乘 2 减 5 的绝对值，等于 5；分母是根号下 16 加 9 等于 5；所以距离等于 1。"
+    },
+    {
+     "id": "mxj_h1041_q6",
+     "topicId": "mxj_h1041",
+     "prompt": "点 (3, 负2) 到直线 3x - 4y + 1 = 0 的距离等于多少？",
+     "question": "点 (3, 负2) 到直线 3x - 4y + 1 = 0 的距离等于多少？",
+     "answer": 3.6,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 18}, {\"type\": \"num\", \"value\": 5}]}",
+     "difficulty": "standard",
+     "explanation": "分子是 3 乘 3 减 4 乘负2 加 1 的绝对值，等于 9 加 8 加 1 等于 18；分母是 5；所以距离等于 18 除以 5 等于 3.6。"
+    },
+    {
+     "id": "mxj_h1041_q7",
+     "topicId": "mxj_h1041",
+     "prompt": "点 (0, 3) 到直线 2x - y = 0 的距离等于多少？",
+     "question": "点 (0, 3) 到直线 2x - y = 0 的距离等于多少？",
+     "answer": "五分之三根号五",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "分子是 2 乘 0 减 3 的绝对值，等于 3；分母是根号下 4 加 1 等于根号5；所以距离等于 3 除以根号5，分母有理化后为五分之三根号五。"
+    },
+    {
+     "id": "mxj_h1041_q8",
+     "topicId": "mxj_h1041",
+     "prompt": "求两条平行直线 2x - y + 1 = 0 与 2x - y - 4 = 0 之间的距离。",
+     "question": "求两条平行直线 2x - y + 1 = 0 与 2x - y - 4 = 0 之间的距离。",
+     "answer": "根号5",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "两条直线的 x、y 系数相同，距离等于常数项之差的绝对值除以根号下 4 加 1，即 1 减负4 的绝对值 5 除以根号5，等于根号5。"
+    }
+   ],
+   "page": null
+  },
+  {
+   "id": "mxj_h1042",
+   "chapter": "湘教版选择性必修第一册 第2章 平面解析几何初步 · 圆的方程",
+   "description": "回顾确定圆的几何要素是圆心与半径，在平面直角坐标系中建立圆的标准方程，即 (x 减 a) 的平方加 (y 减 b) 的平方等于 r 的平方；掌握圆的一般方程及其表示圆的条件，能由方程读出圆心与半径，并能由已知条件求圆的方程。",
+   "mastery_criteria": [
+    "能写出圆的标准方程并读出圆心与半径",
+    "会把一般方程配方化为标准方程",
+    "能由已知条件求圆的方程"
+   ],
+   "misconceptions": [
+    "把标准方程中圆心的横坐标读成 a 的正负搞错",
+    "忽略一般方程表示圆的条件"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_h1042_q1",
+     "topicId": "mxj_h1042",
+     "prompt": "圆 (x - 2) 的平方加 (y + 1) 的平方等于 9 的圆心与半径分别是什么？",
+     "question": "圆 (x - 2) 的平方加 (y + 1) 的平方等于 9 的圆心与半径分别是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆心 (2, 负1)，半径 3"
+      },
+      {
+       "label": "B",
+       "text": "圆心 (负2, 1)，半径 3"
+      },
+      {
+       "label": "C",
+       "text": "圆心 (2, 负1)，半径 9"
+      },
+      {
+       "label": "D",
+       "text": "圆心 (负2, 1)，半径 9"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "标准方程中括号里减去的是圆心坐标，所以圆心为 (2, 负1)；方程右边是半径的平方，r 的平方等于 9，故半径 r 等于 3。"
+    },
+    {
+     "id": "mxj_h1042_q2",
+     "topicId": "mxj_h1042",
+     "prompt": "圆 x 的平方加 y 的平方减 4x 加 2y 等于 0 的圆心坐标是多少？",
+     "question": "圆 x 的平方加 y 的平方减 4x 加 2y 等于 0 的圆心坐标是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(负2, 1)"
+      },
+      {
+       "label": "B",
+       "text": "(2, 负1)"
+      },
+      {
+       "label": "C",
+       "text": "(4, 负2)"
+      },
+      {
+       "label": "D",
+       "text": "(负4, 2)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "配方得 (x 减 2) 的平方加 (y 加 1) 的平方等于 5，所以圆心为 (2, 负1)；也可用一般方程的结论，圆心横坐标是负 D 除以 2、纵坐标是负 E 除以 2。"
+    },
+    {
+     "id": "mxj_h1042_q3",
+     "topicId": "mxj_h1042",
+     "prompt": "圆 x 的平方加 y 的平方加 6x 减 8y 加 21 等于 0 的半径等于多少？",
+     "question": "圆 x 的平方加 y 的平方加 6x 减 8y 加 21 等于 0 的半径等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "根号21"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "21"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "配方得 (x 加 3) 的平方加 (y 减 4) 的平方等于 9 加 16 减 21 等于 4，所以半径的平方等于 4，半径等于 2；也可用公式，半径等于根号下 D 的平方加 E 的平方减 4F 再除以 2。"
+    },
+    {
+     "id": "mxj_h1042_q4",
+     "topicId": "mxj_h1042",
+     "prompt": "以点 (1, 2) 为圆心且经过点 (4, 6) 的圆的标准方程是哪一个？",
+     "question": "以点 (1, 2) 为圆心且经过点 (4, 6) 的圆的标准方程是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(x - 1) 的平方加 (y - 2) 的平方等于 5"
+      },
+      {
+       "label": "B",
+       "text": "(x + 1) 的平方加 (y + 2) 的平方等于 25"
+      },
+      {
+       "label": "C",
+       "text": "(x - 1) 的平方加 (y - 2) 的平方等于 16"
+      },
+      {
+       "label": "D",
+       "text": "(x - 1) 的平方加 (y - 2) 的平方等于 25"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "半径等于圆心到 (4, 6) 的距离，即根号下 3 的平方加 4 的平方等于 5，半径的平方为 25；圆心为 (1, 2)，所以标准方程如 D 所示。"
+    },
+    {
+     "id": "mxj_h1042_q5",
+     "topicId": "mxj_h1042",
+     "prompt": "圆 x 的平方加 y 的平方等于 16 的半径等于多少？",
+     "question": "圆 x 的平方加 y 的平方等于 16 的半径等于多少？",
+     "answer": 4,
+     "type": "numeric",
+     "verify": "{\"type\": \"num\", \"value\": 4}",
+     "difficulty": "basic",
+     "explanation": "把方程与标准方程对照，圆心为原点，半径的平方等于 16，所以半径等于 4；半径取正值，不能写成负4。"
+    },
+    {
+     "id": "mxj_h1042_q6",
+     "topicId": "mxj_h1042",
+     "prompt": "圆 x 的平方加 y 的平方减 2x 加 4y 减 4 等于 0 的半径等于多少？",
+     "question": "圆 x 的平方加 y 的平方减 2x 加 4y 减 4 等于 0 的半径等于多少？",
+     "answer": 3,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 1}]}",
+     "difficulty": "standard",
+     "explanation": "配方得 (x 减 1) 的平方加 (y 加 2) 的平方等于 1 加 4 加 4 等于 9，所以半径的平方为 9，半径等于 3。"
+    },
+    {
+     "id": "mxj_h1042_q7",
+     "topicId": "mxj_h1042",
+     "prompt": "圆 (x + 1) 的平方加 (y - 3) 的平方等于 8 的圆心坐标是什么？",
+     "question": "圆 (x + 1) 的平方加 (y - 3) 的平方等于 8 的圆心坐标是什么？",
+     "answer": "(负1, 3)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "标准方程中括号内减去的是圆心坐标，(x 加 1) 相当于 x 减负1，所以圆心的横坐标为负1，纵坐标为 3，即圆心是 (负1, 3)。"
+    },
+    {
+     "id": "mxj_h1042_q8",
+     "topicId": "mxj_h1042",
+     "prompt": "若方程 x 的平方加 y 的平方减 2x 加 4y 加 m 等于 0 表示一个圆，求 m 的取值范围。",
+     "question": "若方程 x 的平方加 y 的平方减 2x 加 4y 加 m 等于 0 表示一个圆，求 m 的取值范围。",
+     "answer": "m 小于 5",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "一般方程表示圆的条件是 D 的平方加 E 的平方减 4F 大于 0；这里 D 等于负2、E 等于 4、F 等于 m，代入得 4 加 16 减 4m 大于 0，即 m 小于 5。"
+    }
+   ],
+   "page": null
+  },
+  {
+   "id": "mxj_h1043",
+   "chapter": "湘教版选择性必修第一册 第2章 平面解析几何初步 · 直线与圆、圆与圆的位置关系",
+   "description": "用圆心到直线的距离 d 与半径 r 的大小关系判断直线与圆相交、相切、相离三种位置关系，用两圆的圆心距与两半径之和、之差比较来判断圆与圆外离、外切、相交、内切、内含，并能由几何条件求参数的值。",
+   "mastery_criteria": [
+    "会用 d 与 r 的大小关系判断直线与圆的位置关系",
+    "会用圆心距判断两圆的位置关系",
+    "能由相切条件求参数"
+   ],
+   "misconceptions": [
+    "判断直线与圆相切时把 d 与 r 的关系写反",
+    "判断两圆位置关系时只比较圆心距与半径和"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_h1043_q1",
+     "topicId": "mxj_h1043",
+     "prompt": "直线与圆相切时，圆心到直线的距离 d 与半径 r 之间是什么关系？",
+     "question": "直线与圆相切时，圆心到直线的距离 d 与半径 r 之间是什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "d 等于 r"
+      },
+      {
+       "label": "B",
+       "text": "d 大于 r"
+      },
+      {
+       "label": "C",
+       "text": "d 小于 r"
+      },
+      {
+       "label": "D",
+       "text": "d 等于 0"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "直线与圆只有一个公共点即为相切，此时圆心到直线的距离恰好等于半径；d 大于 r 时相离，d 小于 r 时相交。"
+    },
+    {
+     "id": "mxj_h1043_q2",
+     "topicId": "mxj_h1043",
+     "prompt": "圆 x 的平方加 y 的平方等于 4 与直线 y = x + 1 的位置关系是什么？",
+     "question": "圆 x 的平方加 y 的平方等于 4 与直线 y = x + 1 的位置关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "相切"
+      },
+      {
+       "label": "B",
+       "text": "相交"
+      },
+      {
+       "label": "C",
+       "text": "相离"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把直线化为一般式 x 减 y 加 1 等于 0，圆心到它的距离等于 1 除以根号2，约等于 0.7，小于半径 2，所以直线与圆相交且不过圆心。"
+    },
+    {
+     "id": "mxj_h1043_q3",
+     "topicId": "mxj_h1043",
+     "prompt": "圆 x 的平方加 y 的平方等于 1 与圆 (x - 3) 的平方加 y 的平方等于 4 的位置关系是什么？",
+     "question": "圆 x 的平方加 y 的平方等于 1 与圆 (x - 3) 的平方加 y 的平方等于 4 的位置关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "外离"
+      },
+      {
+       "label": "B",
+       "text": "相交"
+      },
+      {
+       "label": "C",
+       "text": "外切"
+      },
+      {
+       "label": "D",
+       "text": "内切"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两圆圆心分别为 (0, 0) 与 (3, 0)，圆心距等于 3；两半径分别为 1 与 2，半径和等于 3；圆心距等于半径和，所以两圆外切。"
+    },
+    {
+     "id": "mxj_h1043_q4",
+     "topicId": "mxj_h1043",
+     "prompt": "直线 3x + 4y - 5 = 0 与圆 x 的平方加 y 的平方等于 1 的位置关系是什么？",
+     "question": "直线 3x + 4y - 5 = 0 与圆 x 的平方加 y 的平方等于 1 的位置关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "相交且过圆心"
+      },
+      {
+       "label": "B",
+       "text": "相离"
+      },
+      {
+       "label": "C",
+       "text": "相交但不过圆心"
+      },
+      {
+       "label": "D",
+       "text": "相切"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "圆心到直线的距离等于 5 除以根号下 9 加 16，即 5 除以 5 等于 1，恰好等于半径 1，所以直线与圆相切。"
+    },
+    {
+     "id": "mxj_h1043_q5",
+     "topicId": "mxj_h1043",
+     "prompt": "圆心在原点、半径为 3 的圆，圆心到直线 x = 2 的距离等于多少？",
+     "question": "圆心在原点、半径为 3 的圆，圆心到直线 x = 2 的距离等于多少？",
+     "answer": 2,
+     "type": "numeric",
+     "verify": "{\"type\": \"num\", \"value\": 2}",
+     "difficulty": "basic",
+     "explanation": "直线 x 等于 2 垂直于 x 轴，原点到这条直线的距离就是横坐标的绝对值，等于 2；因为 2 小于半径 3，所以该直线与圆相交。"
+    },
+    {
+     "id": "mxj_h1043_q6",
+     "topicId": "mxj_h1043",
+     "prompt": "圆 (x - 1) 的平方加 (y - 2) 的平方等于 9 的圆心到直线 4x + 3y - 5 = 0 的距离等于多少？",
+     "question": "圆 (x - 1) 的平方加 (y - 2) 的平方等于 9 的圆心到直线 4x + 3y - 5 = 0 的距离等于多少？",
+     "answer": 1,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 5}]}",
+     "difficulty": "standard",
+     "explanation": "圆心为 (1, 2)，代入距离公式得分子为 4 乘 1 加 3 乘 2 减 5 的绝对值，等于 5；分母为 5；所以距离等于 1，小于半径 3，直线与圆相交。"
+    },
+    {
+     "id": "mxj_h1043_q7",
+     "topicId": "mxj_h1043",
+     "prompt": "圆 x 的平方加 y 的平方等于 1 与圆 x 的平方加 y 的平方减 6x 加 8y 等于 0 的位置关系是什么？",
+     "question": "圆 x 的平方加 y 的平方等于 1 与圆 x 的平方加 y 的平方减 6x 加 8y 等于 0 的位置关系是什么？",
+     "answer": "相交",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "第二个圆配方得圆心 (3, 负4)、半径 5；两圆圆心距等于 5；半径和为 6，半径差的绝对值为 4；圆心距介于两者之间，所以两圆相交。"
+    },
+    {
+     "id": "mxj_h1043_q8",
+     "topicId": "mxj_h1043",
+     "prompt": "已知圆 x 的平方加 y 的平方等于 25 与直线 3x + 4y + c = 0 相切，求 c 的值。",
+     "question": "已知圆 x 的平方加 y 的平方等于 25 与直线 3x + 4y + c = 0 相切，求 c 的值。",
+     "answer": "c 等于 25 或 c 等于负25",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "相切时圆心到直线的距离等于半径，即 c 的绝对值除以根号下 9 加 16 等于 5，得 c 的绝对值除以 5 等于 5，所以 c 的绝对值等于 25，c 等于 25 或负25。"
+    }
+   ],
+   "page": null
+  },
+  {
+   "id": "mxj_h1044",
+   "chapter": "湘教版选择性必修第一册 第2章 平面解析几何初步 · 用坐标方法解决几何问题",
+   "description": "归纳用坐标方法（解析法）解决几何问题的基本步骤：建立恰当的直角坐标系、设出点的坐标、用坐标表示几何条件、进行代数运算、把代数结论翻译回几何结论；并能用它证明中点、垂直平分线、重心等平面几何命题。",
+   "mastery_criteria": [
+    "能说出用坐标法解决几何问题的基本步骤",
+    "会用坐标表示中点、距离与对称点",
+    "能用坐标法证明简单的平面几何命题"
+   ],
+   "misconceptions": [
+    "建系时不考虑图形的对称性导致运算繁杂或出错",
+    "把代数结果直接当成结论而不作几何解释"
+   ],
+   "type": "modeling",
+   "questions": [
+    {
+     "id": "mxj_h1044_q1",
+     "topicId": "mxj_h1044",
+     "prompt": "用坐标方法解决几何问题时，第一步通常要做什么？",
+     "question": "用坐标方法解决几何问题时，第一步通常要做什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "建立适当的直角坐标系"
+      },
+      {
+       "label": "B",
+       "text": "直接写出答案"
+      },
+      {
+       "label": "C",
+       "text": "先算出所有线段的长度"
+      },
+      {
+       "label": "D",
+       "text": "先画出所有的辅助线"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "坐标法的第一步是建立恰当的直角坐标系，通常把图形放在原点或对称轴上以便简化运算；坐标系选得好，后面的代数运算会明显变简单。"
+    },
+    {
+     "id": "mxj_h1044_q2",
+     "topicId": "mxj_h1044",
+     "prompt": "线段 AB 的两个端点分别为 A(负1, 2) 与 B(3, 4)，则线段中点的坐标是多少？",
+     "question": "线段 AB 的两个端点分别为 A(负1, 2) 与 B(3, 4)，则线段中点的坐标是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(2, 6)"
+      },
+      {
+       "label": "B",
+       "text": "(1, 3)"
+      },
+      {
+       "label": "C",
+       "text": "(1, 6)"
+      },
+      {
+       "label": "D",
+       "text": "(2, 3)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "中点坐标等于两端点坐标的平均值，横坐标为 (负1 加 3) 除以 2 等于 1，纵坐标为 (2 加 4) 除以 2 等于 3，所以中点坐标是 (1, 3)。"
+    },
+    {
+     "id": "mxj_h1044_q3",
+     "topicId": "mxj_h1044",
+     "prompt": "三角形三个顶点为 A(0, 0)、B(3, 0)、C(0, 6)，则它的重心坐标是多少？",
+     "question": "三角形三个顶点为 A(0, 0)、B(3, 0)、C(0, 6)，则它的重心坐标是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(3, 6)"
+      },
+      {
+       "label": "B",
+       "text": "(1, 3)"
+      },
+      {
+       "label": "C",
+       "text": "(1, 2)"
+      },
+      {
+       "label": "D",
+       "text": "(2, 1)"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "重心坐标等于三个顶点坐标的平均值，横坐标为 (0 加 3 加 0) 除以 3 等于 1，纵坐标为 (0 加 0 加 6) 除以 3 等于 2，所以重心是 (1, 2)。"
+    },
+    {
+     "id": "mxj_h1044_q4",
+     "topicId": "mxj_h1044",
+     "prompt": "点 A(1, 2) 关于 x 轴的对称点坐标是多少？",
+     "question": "点 A(1, 2) 关于 x 轴的对称点坐标是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(负1, 2)"
+      },
+      {
+       "label": "B",
+       "text": "(负1, 负2)"
+      },
+      {
+       "label": "C",
+       "text": "(2, 1)"
+      },
+      {
+       "label": "D",
+       "text": "(1, 负2)"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "关于 x 轴对称时，点的横坐标不变、纵坐标变为相反数，所以点 (1, 2) 的对称点是 (1, 负2)；关于 y 轴对称时则是横坐标变号。"
+    },
+    {
+     "id": "mxj_h1044_q5",
+     "topicId": "mxj_h1044",
+     "prompt": "已知点 A(1, 2) 与点 B(4, 6)，则线段 AB 的长度等于多少？",
+     "question": "已知点 A(1, 2) 与点 B(4, 6)，则线段 AB 的长度等于多少？",
+     "answer": 5,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 9}, {\"type\": \"num\", \"value\": 16}]}, {\"type\": \"num\", \"value\": 0.5}]}",
+     "difficulty": "basic",
+     "explanation": "两点间距离等于根号下横坐标之差的平方加纵坐标之差的平方，即根号下 3 的平方加 4 的平方，等于根号下 9 加 16 等于 5。"
+    },
+    {
+     "id": "mxj_h1044_q6",
+     "topicId": "mxj_h1044",
+     "prompt": "已知点 A(2, 3) 与点 B(7, 15)，则线段 AB 的长度等于多少？",
+     "question": "已知点 A(2, 3) 与点 B(7, 15)，则线段 AB 的长度等于多少？",
+     "answer": 13,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 25}, {\"type\": \"num\", \"value\": 144}]}, {\"type\": \"num\", \"value\": 0.5}]}",
+     "difficulty": "standard",
+     "explanation": "横坐标之差为 5，纵坐标之差为 12，距离等于根号下 25 加 144 等于根号下 169 等于 13。"
+    },
+    {
+     "id": "mxj_h1044_q7",
+     "topicId": "mxj_h1044",
+     "prompt": "点 (2, 负3) 关于 y 轴的对称点坐标是什么？",
+     "question": "点 (2, 负3) 关于 y 轴的对称点坐标是什么？",
+     "answer": "(负2, 负3)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "关于 y 轴对称时，点的纵坐标不变、横坐标变为相反数，所以点 (2, 负3) 的对称点是 (负2, 负3)。"
+    },
+    {
+     "id": "mxj_h1044_q8",
+     "topicId": "mxj_h1044",
+     "prompt": "用坐标法说明：以 A(0, 0)、B(2, 0)、C(0, 2) 为顶点的直角三角形，斜边 BC 的中点到三个顶点的距离有什么关系。",
+     "question": "用坐标法说明：以 A(0, 0)、B(2, 0)、C(0, 2) 为顶点的直角三角形，斜边 BC 的中点到三个顶点的距离有什么关系。",
+     "answer": "斜边中点到三个顶点的距离都等于根号2",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "斜边 BC 的中点 M 的坐标是 (1, 1)；它到 B(2, 0) 的距离等于根号下 1 加 1 等于根号2，到 C(0, 2) 的距离同样等于根号2，到直角顶点 A 的距离也等于根号2；这说明直角三角形斜边上的中线等于斜边的一半。"
+    }
+   ],
+   "page": null
+  },
+  {
+   "id": "mxj_h1045",
+   "chapter": "湘教版选择性必修第一册 第3章 圆锥曲线与方程 · 椭圆",
+   "description": "从行星轨道等具体情境抽象出椭圆：平面内到两个定点 F₁、F₂ 的距离之和等于常数 2a（且 2a 大于两定点间的距离）的点的轨迹；掌握椭圆的标准方程，理解 a、b、c 满足 b 的平方等于 a 的平方减 c 的平方，以及范围、对称性、顶点、离心率等简单几何性质。",
+   "mastery_criteria": [
+    "能说出椭圆的定义并判断常数与焦距的大小关系",
+    "会由标准方程求 a、b、c 与焦距、离心率",
+    "能用椭圆的定义求焦点三角形中的距离"
+   ],
+   "misconceptions": [
+    "把定义中的常数 2a 与焦距 2c 的大小关系弄反",
+    "把 b 的平方误写成 a 的平方加 c 的平方"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_h1045_q1",
+     "topicId": "mxj_h1045",
+     "prompt": "椭圆定义中，动点到两定点距离之和 2a 与两定点间距离 2c 应满足什么关系？",
+     "question": "椭圆定义中，动点到两定点距离之和 2a 与两定点间距离 2c 应满足什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2a 大于 2c"
+      },
+      {
+       "label": "B",
+       "text": "2a 等于 2c"
+      },
+      {
+       "label": "C",
+       "text": "2a 小于 2c"
+      },
+      {
+       "label": "D",
+       "text": "2a 等于 0"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "只有当距离之和大于两定点间的距离时，动点的轨迹才是椭圆；若 2a 等于 2c，轨迹是线段 F₁F₂；若 2a 小于 2c，这样的点不存在。"
+    },
+    {
+     "id": "mxj_h1045_q2",
+     "topicId": "mxj_h1045",
+     "prompt": "椭圆 x 的平方除以 25 加 y 的平方除以 16 等于 1 的焦距等于多少？",
+     "question": "椭圆 x 的平方除以 25 加 y 的平方除以 16 等于 1 的焦距等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "10"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由方程得 a 的平方等于 25、b 的平方等于 16，由关系式 c 的平方等于 a 的平方减 b 的平方得 c 的平方等于 9，c 等于 3；焦距等于 2c 等于 6。"
+    },
+    {
+     "id": "mxj_h1045_q3",
+     "topicId": "mxj_h1045",
+     "prompt": "椭圆 x 的平方除以 9 加 y 的平方除以 4 等于 1 上一点到两个焦点的距离之和等于多少？",
+     "question": "椭圆 x 的平方除以 9 加 y 的平方除以 4 等于 1 上一点到两个焦点的距离之和等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由椭圆的定义，椭圆上任一点到两焦点的距离之和都等于 2a；本题 a 的平方等于 9，a 等于 3，所以距离之和等于 6，与点的位置无关。"
+    },
+    {
+     "id": "mxj_h1045_q4",
+     "topicId": "mxj_h1045",
+     "prompt": "椭圆 x 的平方除以 25 加 y 的平方除以 9 等于 1 的离心率等于多少？",
+     "question": "椭圆 x 的平方除以 25 加 y 的平方除以 9 等于 1 的离心率等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "五分之三"
+      },
+      {
+       "label": "B",
+       "text": "四分之三"
+      },
+      {
+       "label": "C",
+       "text": "三分之五"
+      },
+      {
+       "label": "D",
+       "text": "五分之四"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "a 的平方等于 25、b 的平方等于 9，所以 c 的平方等于 16，c 等于 4，a 等于 5；离心率 e 等于 c 除以 a 等于 4 除以 5 等于五分之四。"
+    },
+    {
+     "id": "mxj_h1045_q5",
+     "topicId": "mxj_h1045",
+     "prompt": "椭圆 x 的平方除以 36 加 y 的平方除以 11 等于 1 的半焦距 c 等于多少？",
+     "question": "椭圆 x 的平方除以 36 加 y 的平方除以 11 等于 1 的半焦距 c 等于多少？",
+     "answer": 5,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 36}, {\"type\": \"num\", \"value\": 11}]}, {\"type\": \"num\", \"value\": 0.5}]}",
+     "difficulty": "basic",
+     "explanation": "由 c 的平方等于 a 的平方减 b 的平方得 c 的平方等于 36 减 11 等于 25，所以 c 等于 5；半焦距与焦距不同，焦距是 2c。"
+    },
+    {
+     "id": "mxj_h1045_q6",
+     "topicId": "mxj_h1045",
+     "prompt": "椭圆 x 的平方除以 100 加 y 的平方除以 36 等于 1 的离心率等于多少？",
+     "question": "椭圆 x 的平方除以 100 加 y 的平方除以 36 等于 1 的离心率等于多少？",
+     "answer": 0.8,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"num\", \"value\": 10}]}",
+     "difficulty": "standard",
+     "explanation": "a 的平方等于 100、b 的平方等于 36，所以 c 的平方等于 64，c 等于 8，a 等于 10；离心率 e 等于 8 除以 10，即 0.8。"
+    },
+    {
+     "id": "mxj_h1045_q7",
+     "topicId": "mxj_h1045",
+     "prompt": "焦点在 x 轴上、a 等于 5、c 等于 3 的椭圆的标准方程是什么？",
+     "question": "焦点在 x 轴上、a 等于 5、c 等于 3 的椭圆的标准方程是什么？",
+     "answer": "x²/25 + y²/16 = 1",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由 b 的平方等于 a 的平方减 c 的平方得 b 的平方等于 25 减 9 等于 16；焦点在 x 轴上，所以标准方程为 x 的平方除以 25 加 y 的平方除以 16 等于 1。"
+    },
+    {
+     "id": "mxj_h1045_q8",
+     "topicId": "mxj_h1045",
+     "prompt": "椭圆 x 的平方除以 25 加 y 的平方除以 9 等于 1 上一点 P 到左焦点的距离为 4，求 P 到右焦点的距离。",
+     "question": "椭圆 x 的平方除以 25 加 y 的平方除以 9 等于 1 上一点 P 到左焦点的距离为 4，求 P 到右焦点的距离。",
+     "answer": "6",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "由方程得 a 等于 5，椭圆上任一点到两焦点的距离之和等于 2a 等于 10；已知到左焦点的距离为 4，所以到右焦点的距离等于 10 减 4 等于 6。"
+    }
+   ],
+   "page": null
+  },
+  {
+   "id": "mxj_h1046",
+   "chapter": "湘教版选择性必修第一册 第3章 圆锥曲线与方程 · 双曲线",
+   "description": "由到两个定点距离之差的绝对值等于常数 2a（0 小于 2a 小于 2c）的点的轨迹得到双曲线，掌握双曲线的标准方程与 a、b、c 满足 c 的平方等于 a 的平方加 b 的平方的关系，理解渐近线方程、离心率大于 1 等性质，并与椭圆作对比。",
+   "mastery_criteria": [
+    "能说出双曲线的定义并区分与椭圆的差异",
+    "会由标准方程求 c、焦距与渐近线",
+    "会求双曲线的离心率"
+   ],
+   "misconceptions": [
+    "把双曲线的 c 的平方误写成 a 的平方减 b 的平方",
+    "求渐近线斜率时把 b 与 a 的位置颠倒"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_h1046_q1",
+     "topicId": "mxj_h1046",
+     "prompt": "双曲线定义中，距离之差的绝对值 2a 与两定点间距离 2c 应满足什么关系？",
+     "question": "双曲线定义中，距离之差的绝对值 2a 与两定点间距离 2c 应满足什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "0 小于 2a 小于 2c"
+      },
+      {
+       "label": "B",
+       "text": "2a 大于 2c"
+      },
+      {
+       "label": "C",
+       "text": "2a 等于 2c"
+      },
+      {
+       "label": "D",
+       "text": "2a 等于 0"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "双曲线要求常数小于两定点间的距离且大于 0；若 2a 等于 2c，轨迹是两条射线；若 2a 大于 2c，这样的点不存在；若 2a 等于 0，轨迹是线段的垂直平分线。"
+    },
+    {
+     "id": "mxj_h1046_q2",
+     "topicId": "mxj_h1046",
+     "prompt": "双曲线 x 的平方除以 9 减 y 的平方除以 16 等于 1 的渐近线方程是什么？",
+     "question": "双曲线 x 的平方除以 9 减 y 的平方除以 16 等于 1 的渐近线方程是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y 等于正负四分之三 x"
+      },
+      {
+       "label": "B",
+       "text": "y 等于正负三分之四 x"
+      },
+      {
+       "label": "C",
+       "text": "y 等于正负九分之十六 x"
+      },
+      {
+       "label": "D",
+       "text": "y 等于正负十六分之九 x"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "焦点在 x 轴的双曲线，渐近线方程是 y 等于正负 a 分之 b 乘 x；本题 a 等于 3、b 等于 4，所以渐近线为 y 等于正负三分之四 x。"
+    },
+    {
+     "id": "mxj_h1046_q3",
+     "topicId": "mxj_h1046",
+     "prompt": "双曲线 x 的平方除以 4 减 y 的平方除以 12 等于 1 的离心率等于多少？",
+     "question": "双曲线 x 的平方除以 4 减 y 的平方除以 12 等于 1 的离心率等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "根号2"
+      },
+      {
+       "label": "B",
+       "text": "二分之根号三"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "根号3"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由 c 的平方等于 a 的平方加 b 的平方得 c 的平方等于 4 加 12 等于 16，c 等于 4；又 a 等于 2，所以离心率 e 等于 4 除以 2 等于 2，大于 1 符合双曲线的特点。"
+    },
+    {
+     "id": "mxj_h1046_q4",
+     "topicId": "mxj_h1046",
+     "prompt": "双曲线 x 的平方除以 16 减 y 的平方除以 9 等于 1 的焦距等于多少？",
+     "question": "双曲线 x 的平方除以 16 减 y 的平方除以 9 等于 1 的焦距等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "7"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "10"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由 c 的平方等于 a 的平方加 b 的平方得 c 的平方等于 16 加 9 等于 25，c 等于 5；焦距等于 2c，等于 10。"
+    },
+    {
+     "id": "mxj_h1046_q5",
+     "topicId": "mxj_h1046",
+     "prompt": "双曲线 x 的平方除以 9 减 y 的平方除以 7 等于 1 的 c 等于多少？",
+     "question": "双曲线 x 的平方除以 9 减 y 的平方除以 7 等于 1 的 c 等于多少？",
+     "answer": 4,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 9}, {\"type\": \"num\", \"value\": 7}]}, {\"type\": \"num\", \"value\": 0.5}]}",
+     "difficulty": "basic",
+     "explanation": "双曲线中 c 的平方等于 a 的平方加 b 的平方，这里 a 的平方等于 9、b 的平方等于 7，所以 c 的平方等于 16，c 等于 4。"
+    },
+    {
+     "id": "mxj_h1046_q6",
+     "topicId": "mxj_h1046",
+     "prompt": "双曲线 x 的平方除以 4 减 y 的平方除以 5 等于 1 的离心率等于多少？",
+     "question": "双曲线 x 的平方除以 4 减 y 的平方除以 5 等于 1 的离心率等于多少？",
+     "answer": 1.5,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}",
+     "difficulty": "standard",
+     "explanation": "c 的平方等于 4 加 5 等于 9，c 等于 3；a 等于 2；所以离心率 e 等于 3 除以 2 等于 1.5，双曲线的离心率总是大于 1。"
+    },
+    {
+     "id": "mxj_h1046_q7",
+     "topicId": "mxj_h1046",
+     "prompt": "双曲线 x 的平方除以 25 减 y 的平方除以 144 等于 1 的焦距等于多少？",
+     "question": "双曲线 x 的平方除以 25 减 y 的平方除以 144 等于 1 的焦距等于多少？",
+     "answer": "26",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "c 的平方等于 25 加 144 等于 169，所以 c 等于 13；焦距等于 2c，等于 26。"
+    },
+    {
+     "id": "mxj_h1046_q8",
+     "topicId": "mxj_h1046",
+     "prompt": "双曲线 x 的平方除以 9 减 y 的平方除以 16 等于 1 上一点 P 到两焦点距离之差的绝对值等于多少？",
+     "question": "双曲线 x 的平方除以 9 减 y 的平方除以 16 等于 1 上一点 P 到两焦点距离之差的绝对值等于多少？",
+     "answer": "6",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "由双曲线的定义，曲线上任一点到两焦点距离之差的绝对值等于常数 2a；本题 a 的平方等于 9，a 等于 3，所以该绝对值等于 2a 等于 6。"
+    }
+   ],
+   "page": null
+  },
+  {
+   "id": "mxj_h1047",
+   "chapter": "湘教版选择性必修第一册 第3章 圆锥曲线与方程 · 抛物线",
+   "description": "由到定点的距离等于到定直线的距离的点的轨迹得到抛物线，掌握抛物线的标准方程与焦点坐标、准线方程，理解抛物线的离心率恒等于 1，并能由方程求焦点与准线、由焦半径公式求距离。",
+   "mastery_criteria": [
+    "能说出抛物线的定义与标准方程的形式",
+    "会由方程求焦点坐标与准线方程",
+    "会用焦半径公式求抛物线上点到焦点的距离"
+   ],
+   "misconceptions": [
+    "把焦点坐标写成 (p, 0) 而不是 (p 除以 2, 0)",
+    "准线方程中把负号漏掉"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_h1047_q1",
+     "topicId": "mxj_h1047",
+     "prompt": "抛物线 y 的平方等于 8x 的焦点坐标是什么？",
+     "question": "抛物线 y 的平方等于 8x 的焦点坐标是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(2, 0)"
+      },
+      {
+       "label": "B",
+       "text": "(0, 2)"
+      },
+      {
+       "label": "C",
+       "text": "(4, 0)"
+      },
+      {
+       "label": "D",
+       "text": "(负2, 0)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "抛物线 y 的平方等于 2px 中，2p 等于 8，所以 p 等于 4；焦点坐标为 (p 除以 2, 0)，即 (2, 0)，不是 (p, 0)。"
+    },
+    {
+     "id": "mxj_h1047_q2",
+     "topicId": "mxj_h1047",
+     "prompt": "抛物线 y 的平方等于 8x 的准线方程是什么？",
+     "question": "抛物线 y 的平方等于 8x 的准线方程是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 等于 2"
+      },
+      {
+       "label": "B",
+       "text": "x 等于负2"
+      },
+      {
+       "label": "C",
+       "text": "y 等于负2"
+      },
+      {
+       "label": "D",
+       "text": "x 等于负4"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由 2p 等于 8 得 p 等于 4，准线方程为 x 等于负 p 除以 2，即 x 等于负2；准线与焦点关于顶点对称。"
+    },
+    {
+     "id": "mxj_h1047_q3",
+     "topicId": "mxj_h1047",
+     "prompt": "抛物线 y 的平方等于 4x 上一点 P 到焦点的距离为 5，则 P 的横坐标等于多少？",
+     "question": "抛物线 y 的平方等于 4x 上一点 P 到焦点的距离为 5，则 P 的横坐标等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "本题 p 等于 2，焦点为 (1, 0)，焦半径等于横坐标加 p 除以 2，即 x 加 1；由 x 加 1 等于 5 得 x 等于 4，且此时纵坐标的平方等于 16，点确实在抛物线上。"
+    },
+    {
+     "id": "mxj_h1047_q4",
+     "topicId": "mxj_h1047",
+     "prompt": "抛物线 x 的平方等于 4y 的焦点坐标是什么？",
+     "question": "抛物线 x 的平方等于 4y 的焦点坐标是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(1, 0)"
+      },
+      {
+       "label": "B",
+       "text": "(0, 负1)"
+      },
+      {
+       "label": "C",
+       "text": "(0, 2)"
+      },
+      {
+       "label": "D",
+       "text": "(0, 1)"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "形如 x 的平方等于 2py 的抛物线开口向上，焦点在 y 轴上，坐标为 (0, p 除以 2)；这里 2p 等于 4，p 等于 2，所以焦点为 (0, 1)。"
+    },
+    {
+     "id": "mxj_h1047_q5",
+     "topicId": "mxj_h1047",
+     "prompt": "抛物线 y 的平方等于 12x 中，参数 p 等于多少？",
+     "question": "抛物线 y 的平方等于 12x 中，参数 p 等于多少？",
+     "answer": 6,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 12}, {\"type\": \"num\", \"value\": 2}]}",
+     "difficulty": "basic",
+     "explanation": "标准方程 y 的平方等于 2px 中，2p 就是 x 的系数，所以 2p 等于 12，p 等于 6；焦点到准线的距离恰好等于 p。"
+    },
+    {
+     "id": "mxj_h1047_q6",
+     "topicId": "mxj_h1047",
+     "prompt": "抛物线 y 的平方等于 6x 的准线方程是 x 等于多少？",
+     "question": "抛物线 y 的平方等于 6x 的准线方程是 x 等于多少？",
+     "answer": -1.5,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": -3}, {\"type\": \"num\", \"value\": 2}]}",
+     "difficulty": "standard",
+     "explanation": "由 2p 等于 6 得 p 等于 3，准线方程为 x 等于负 p 除以 2，即 x 等于负1.5；焦点则在 (1.5, 0)。"
+    },
+    {
+     "id": "mxj_h1047_q7",
+     "topicId": "mxj_h1047",
+     "prompt": "抛物线 y 的平方等于 16x 的焦点到准线的距离等于多少？",
+     "question": "抛物线 y 的平方等于 16x 的焦点到准线的距离等于多少？",
+     "answer": "8",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "焦点到准线的距离等于参数 p；由 2p 等于 16 得 p 等于 8，所以焦点到准线的距离为 8。"
+    },
+    {
+     "id": "mxj_h1047_q8",
+     "topicId": "mxj_h1047",
+     "prompt": "抛物线 y 的平方等于 8x 的焦点为 F，点 P 在抛物线上且到 y 轴的距离为 3，求 PF 的长。",
+     "question": "抛物线 y 的平方等于 8x 的焦点为 F，点 P 在抛物线上且到 y 轴的距离为 3，求 PF 的长。",
+     "answer": "5",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "由 2p 等于 8 得 p 等于 4，焦点为 (2, 0)；点 P 到 y 轴的距离为 3 说明它的横坐标为 3；焦半径等于横坐标加 p 除以 2，即 3 加 2 等于 5。"
+    }
+   ],
+   "page": null
+  },
+  {
+   "id": "mxj_h1048",
+   "chapter": "湘教版选择性必修第一册 第3章 圆锥曲线与方程 · 曲线与方程",
+   "description": "理解曲线的方程与方程的曲线这两层含义：曲线上每一点的坐标都满足方程，且以方程的解为坐标的点都在曲线上；掌握求轨迹方程的一般步骤（建系设点、列几何条件、坐标代换、化简、检验），并能求出简单的轨迹方程。",
+   "mastery_criteria": [
+    "能说出曲线与方程对应的两个条件",
+    "会按步骤求简单轨迹的方程",
+    "能由几何条件判断轨迹的类型"
+   ],
+   "misconceptions": [
+    "求轨迹方程时省略检验，混入不在曲线上的点",
+    "把轨迹的几何条件直接写成方程而不设点坐标"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_h1048_q1",
+     "topicId": "mxj_h1048",
+     "prompt": "说方程 F(x, y) 等于 0 是曲线 C 的方程，必须同时满足哪两个条件？",
+     "question": "说方程 F(x, y) 等于 0 是曲线 C 的方程，必须同时满足哪两个条件？",
+     "options": [
+      {
+       "label": "A",
+       "text": "曲线 C 上每一点的坐标都满足方程，且以方程的解为坐标的点都在曲线 C 上"
+      },
+      {
+       "label": "B",
+       "text": "方程有解，且曲线 C 存在"
+      },
+      {
+       "label": "C",
+       "text": "曲线 C 上有些点满足方程"
+      },
+      {
+       "label": "D",
+       "text": "方程表示的图形是封闭的"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "曲线与方程要一一对应：曲线上的点都满足方程，说明没有多余的点混入；方程的解都在曲线上，说明曲线上的点没有遗漏；两个条件缺一不可。"
+    },
+    {
+     "id": "mxj_h1048_q2",
+     "topicId": "mxj_h1048",
+     "prompt": "到两个定点 A(负2, 0) 与 B(2, 0) 距离相等的点，它的轨迹方程是什么？",
+     "question": "到两个定点 A(负2, 0) 与 B(2, 0) 距离相等的点，它的轨迹方程是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = 0"
+      },
+      {
+       "label": "B",
+       "text": "x = 0"
+      },
+      {
+       "label": "C",
+       "text": "x = 2"
+      },
+      {
+       "label": "D",
+       "text": "y = 2"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "到两端点距离相等的点在线段的垂直平分线上；线段 AB 的中点是原点，AB 在 x 轴上，所以垂直平分线就是 y 轴，它的方程是 x 等于 0。"
+    },
+    {
+     "id": "mxj_h1048_q3",
+     "topicId": "mxj_h1048",
+     "prompt": "动点 P 到定点 F(2, 0) 的距离与它到直线 x 等于负2 的距离相等，则点 P 的轨迹是什么曲线？",
+     "question": "动点 P 到定点 F(2, 0) 的距离与它到直线 x 等于负2 的距离相等，则点 P 的轨迹是什么曲线？",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆"
+      },
+      {
+       "label": "B",
+       "text": "椭圆"
+      },
+      {
+       "label": "C",
+       "text": "抛物线"
+      },
+      {
+       "label": "D",
+       "text": "双曲线"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "到定点的距离等于到定直线的距离，这正是抛物线的定义；这里定点是焦点 (2, 0)，定直线是准线 x 等于负2，所以轨迹是抛物线。"
+    },
+    {
+     "id": "mxj_h1048_q4",
+     "topicId": "mxj_h1048",
+     "prompt": "方程 x 的平方加 y 的平方等于 0 表示的图形是什么？",
+     "question": "方程 x 的平方加 y 的平方等于 0 表示的图形是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "一个圆"
+      },
+      {
+       "label": "B",
+       "text": "两条直线"
+      },
+      {
+       "label": "C",
+       "text": "空集"
+      },
+      {
+       "label": "D",
+       "text": "一个点"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个非负数的和等于 0，必须每一项都等于 0，所以 x 等于 0 且 y 等于 0；因此方程表示的图形只是原点这一个点，而不是一个圆。"
+    },
+    {
+     "id": "mxj_h1048_q5",
+     "topicId": "mxj_h1048",
+     "prompt": "动点 P(x, y) 满足 x 的平方加 y 的平方等于 16，则点 P 到原点的距离等于多少？",
+     "question": "动点 P(x, y) 满足 x 的平方加 y 的平方等于 16，则点 P 到原点的距离等于多少？",
+     "answer": 4,
+     "type": "numeric",
+     "verify": "{\"type\": \"num\", \"value\": 4}",
+     "difficulty": "basic",
+     "explanation": "x 的平方加 y 的平方就是点 P 到原点距离的平方，所以距离的平方等于 16，距离等于 4；该动点的轨迹是以原点为圆心、4 为半径的圆。"
+    },
+    {
+     "id": "mxj_h1048_q6",
+     "topicId": "mxj_h1048",
+     "prompt": "动点 P 到 A(负3, 0) 与 B(3, 0) 的距离之和等于 10，则该轨迹的半长轴 a 等于多少？",
+     "question": "动点 P 到 A(负3, 0) 与 B(3, 0) 的距离之和等于 10，则该轨迹的半长轴 a 等于多少？",
+     "answer": 5,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 2}]}",
+     "difficulty": "standard",
+     "explanation": "到两定点距离之和为常数且大于两定点间距离，轨迹是椭圆；常数等于 2a 等于 10，所以半长轴 a 等于 5，而 c 等于 3、b 等于 4。"
+    },
+    {
+     "id": "mxj_h1048_q7",
+     "topicId": "mxj_h1048",
+     "prompt": "点 P 到两个定点 (负1, 0) 与 (1, 0) 的距离之差的绝对值等于 1，则点 P 的轨迹是什么曲线？",
+     "question": "点 P 到两个定点 (负1, 0) 与 (1, 0) 的距离之差的绝对值等于 1，则点 P 的轨迹是什么曲线？",
+     "answer": "双曲线",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "到两定点距离之差的绝对值为非零常数，且常数 1 小于两定点间的距离 2，这正是双曲线的定义，所以轨迹是双曲线，其半实轴 a 等于 0.5。"
+    },
+    {
+     "id": "mxj_h1048_q8",
+     "topicId": "mxj_h1048",
+     "prompt": "求到点 A(0, 2) 的距离与到 x 轴的距离相等的点的轨迹方程。",
+     "question": "求到点 A(0, 2) 的距离与到 x 轴的距离相等的点的轨迹方程。",
+     "answer": "y 等于 x 的平方除以 4 再加 1",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "设动点 P(x, y)，到 A 的距离等于根号下 x 的平方加 (y 减 2) 的平方，到 x 轴的距离等于 y 的绝对值；两边平方得 x 的平方加 y 的平方减 4y 加 4 等于 y 的平方，化简得 x 的平方等于 4y 减 4，即 y 等于 x 的平方除以 4 再加 1。"
+    }
+   ],
+   "page": null
+  },
+  {
+   "id": "mxj_h1049",
+   "chapter": "湘教版选择性必修第一册 第3章 圆锥曲线与方程 · 圆锥曲线的应用",
+   "description": "把圆锥曲线用于实际情境：行星与卫星的轨道用椭圆刻画，拱桥的拱形与抛物面天线用抛物线刻画，冷却塔等建筑轮廓用双曲线刻画；通过建立恰当的坐标系求出曲线方程，再由方程解决跨度、拱高与定位等实际问题。",
+   "mastery_criteria": [
+    "能判断实际问题对应哪一类圆锥曲线",
+    "会建系求拱形曲线方程并计算高度",
+    "能说明圆锥曲线性质的现实意义"
+   ],
+   "misconceptions": [
+    "建系时把顶点坐标设错导致方程出错",
+    "把拱高与跨度直接当成 a 与 b 而不作换算"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "mxj_h1049_q1",
+     "topicId": "mxj_h1049",
+     "prompt": "行星绕太阳运行的轨道近似是什么曲线？",
+     "question": "行星绕太阳运行的轨道近似是什么曲线？",
+     "options": [
+      {
+       "label": "A",
+       "text": "椭圆"
+      },
+      {
+       "label": "B",
+       "text": "抛物线"
+      },
+      {
+       "label": "C",
+       "text": "双曲线"
+      },
+      {
+       "label": "D",
+       "text": "圆"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由开普勒定律，行星绕太阳运行的轨道是椭圆，太阳位于椭圆的一个焦点上；这也是圆锥曲线在天体运动中的重要应用。"
+    },
+    {
+     "id": "mxj_h1049_q2",
+     "topicId": "mxj_h1049",
+     "prompt": "拱桥的拱形轮廓与抛物面天线的截面曲线，通常用哪一类圆锥曲线刻画？",
+     "question": "拱桥的拱形轮廓与抛物面天线的截面曲线，通常用哪一类圆锥曲线刻画？",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆"
+      },
+      {
+       "label": "B",
+       "text": "抛物线"
+      },
+      {
+       "label": "C",
+       "text": "双曲线"
+      },
+      {
+       "label": "D",
+       "text": "椭圆"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "拱桥在自重均匀分布时其拱形接近抛物线，抛物面天线则利用平行于对称轴的光线反射后过焦点的性质，二者都用抛物线刻画。"
+    },
+    {
+     "id": "mxj_h1049_q3",
+     "topicId": "mxj_h1049",
+     "prompt": "某抛物线形拱桥跨度为 8 米、拱高为 4 米，以拱顶为原点、竖直向下为 y 轴负方向建立坐标系，则水面所在直线为 y 等于负4；当水平距离中心线 2 米时，桥面到水面的高度是多少？",
+     "question": "某抛物线形拱桥跨度为 8 米、拱高为 4 米，以拱顶为原点、竖直向下为 y 轴负方向建立坐标系，则水面所在直线为 y 等于负4；当水平距离中心线 2 米时，桥面到水面的高度是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2 米"
+      },
+      {
+       "label": "B",
+       "text": "2.5 米"
+      },
+      {
+       "label": "C",
+       "text": "3 米"
+      },
+      {
+       "label": "D",
+       "text": "3.5 米"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "设抛物线为 y 等于 a 乘 x 的平方，端点 (4, 负4) 在曲线上，得 负4 等于 16a，a 等于负四分之一；当 x 等于 2 时 y 等于负1，即该处比拱顶低 1 米，所以到水面的高度等于 4 减 1 等于 3 米。"
+    },
+    {
+     "id": "mxj_h1049_q4",
+     "topicId": "mxj_h1049",
+     "prompt": "若某卫星轨道的离心率非常接近 0，则它的轨道最接近哪种图形？",
+     "question": "若某卫星轨道的离心率非常接近 0，则它的轨道最接近哪种图形？",
+     "options": [
+      {
+       "label": "A",
+       "text": "抛物线"
+      },
+      {
+       "label": "B",
+       "text": "双曲线"
+      },
+      {
+       "label": "C",
+       "text": "直线"
+      },
+      {
+       "label": "D",
+       "text": "圆"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "椭圆的离心率越接近 0，两个焦点越靠近，椭圆越接近圆；离心率等于 0 时轨迹就是圆，所以该卫星轨道接近圆。"
+    },
+    {
+     "id": "mxj_h1049_q5",
+     "topicId": "mxj_h1049",
+     "prompt": "某抛物线形拱桥跨度为 12 米、拱高为 3 米，以拱顶为原点、向下为 y 轴负方向建系，则水平距离中心线 3 米处桥面到水面的高度等于多少米？",
+     "question": "某抛物线形拱桥跨度为 12 米、拱高为 3 米，以拱顶为原点、向下为 y 轴负方向建系，则水平距离中心线 3 米处桥面到水面的高度等于多少米？",
+     "answer": 2.25,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 9}, {\"type\": \"num\", \"value\": 12}]}]}",
+     "difficulty": "standard",
+     "explanation": "设抛物线为 y 等于 a 乘 x 的平方，端点 (6, 负3) 在曲线上，得 a 等于负十二分之一；x 等于 3 时 y 等于负 9 除以 12 等于负0.75；所以到水面的高度等于 3 减 0.75 等于 2.25 米。"
+    },
+    {
+     "id": "mxj_h1049_q6",
+     "topicId": "mxj_h1049",
+     "prompt": "某椭圆的半长轴为 5、半短轴为 4，则它的焦点到中心的距离等于多少？",
+     "question": "某椭圆的半长轴为 5、半短轴为 4，则它的焦点到中心的距离等于多少？",
+     "answer": 3,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 25}, {\"type\": \"num\", \"value\": 16}]}, {\"type\": \"num\", \"value\": 0.5}]}",
+     "difficulty": "basic",
+     "explanation": "由 c 的平方等于 a 的平方减 b 的平方得 c 的平方等于 25 减 16 等于 9，所以 c 等于 3；焦点到中心的距离就是半焦距 c。"
+    },
+    {
+     "id": "mxj_h1049_q7",
+     "topicId": "mxj_h1049",
+     "prompt": "某抛物线形拱桥跨度 8 米、拱高 4 米，按前面的方式建系，则当水平距离中心线 4 米时对应的纵坐标等于多少？",
+     "question": "某抛物线形拱桥跨度 8 米、拱高 4 米，按前面的方式建系，则当水平距离中心线 4 米时对应的纵坐标等于多少？",
+     "answer": "负4",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "端点 (4, 负4) 在抛物线上，说明水平距离中心线 4 米处正是拱的一端，此时桥面与水面重合，纵坐标为负4；这也检验了方程的系数 a 等于负四分之一。"
+    },
+    {
+     "id": "mxj_h1049_q8",
+     "topicId": "mxj_h1049",
+     "prompt": "说明为什么抛物面天线能把平行于对称轴射来的光线汇聚到焦点。",
+     "question": "说明为什么抛物面天线能把平行于对称轴射来的光线汇聚到焦点。",
+     "answer": "因为抛物线上任一点到焦点的距离等于它到准线的距离",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "抛物线的定义给出了到焦点与到准线距离相等的性质；由光的反射定律可以证明，平行于对称轴入射的光线经抛物面反射后都通过焦点，所以抛物面天线能把信号集中到焦点处的接收器上。"
+    }
+   ],
+   "page": null
+  },
+  {
+   "id": "mxj_h1050",
+   "chapter": "湘教版选择性必修第一册 第4章 计数原理 · 两个计数原理",
+   "description": "通过实例理解分类加法计数原理与分步乘法计数原理：完成一件事有若干类互不相同的办法时，各类办法的方法数相加；需要分成几个依次进行的步骤时，各步的方法数相乘；并能辨析分类与分步，用两个原理解决简单的计数问题。",
+   "mastery_criteria": [
+    "能说出两个计数原理的内容与区别",
+    "能判断一个计数问题是分类还是分步",
+    "会用两个原理解决简单计数问题"
+   ],
+   "misconceptions": [
+    "把分步问题当成分类而用加法",
+    "分类时标准不统一导致重复计数"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_h1050_q1",
+     "topicId": "mxj_h1050",
+     "prompt": "从甲地到乙地可以乘火车，每天有 3 班；也可以乘汽车，每天有 2 班。则一天中从甲地到乙地共有多少种不同的走法？",
+     "question": "从甲地到乙地可以乘火车，每天有 3 班；也可以乘汽车，每天有 2 班。则一天中从甲地到乙地共有多少种不同的走法？",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "乘火车与乘汽车是两类互不相同的办法，任选一类都能独立完成从甲地到乙地这件事，所以用分类加法计数原理，共 3 加 2 等于 5 种。"
+    },
+    {
+     "id": "mxj_h1050_q2",
+     "topicId": "mxj_h1050",
+     "prompt": "从 A 地到 B 地有 4 条路，从 B 地到 C 地有 3 条路，则从 A 地经 B 地到 C 地共有多少种不同的走法？",
+     "question": "从 A 地到 B 地有 4 条路，从 B 地到 C 地有 3 条路，则从 A 地经 B 地到 C 地共有多少种不同的走法？",
+     "options": [
+      {
+       "label": "A",
+       "text": "7"
+      },
+      {
+       "label": "B",
+       "text": "12"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "从 A 到 C 必须依次经过两步：第一步有 4 种走法，第二步有 3 种走法，这是分步问题，用乘法，共 4 乘 3 等于 12 种。"
+    },
+    {
+     "id": "mxj_h1050_q3",
+     "topicId": "mxj_h1050",
+     "prompt": "用 0、1、2、3 这四个数字可以组成多少个没有重复数字的三位数？",
+     "question": "用 0、1、2、3 这四个数字可以组成多少个没有重复数字的三位数？",
+     "options": [
+      {
+       "label": "A",
+       "text": "24"
+      },
+      {
+       "label": "B",
+       "text": "12"
+      },
+      {
+       "label": "C",
+       "text": "18"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "分三步：百位不能是 0，有 3 种选法；十位从剩下的 3 个数字中选，有 3 种；个位有 2 种；由分步乘法计数原理得 3 乘 3 乘 2 等于 18 个。"
+    },
+    {
+     "id": "mxj_h1050_q4",
+     "topicId": "mxj_h1050",
+     "prompt": "某班有男生 20 人、女生 15 人，现要选 1 名男生和 1 名女生参加活动，不同的选法共有多少种？",
+     "question": "某班有男生 20 人、女生 15 人，现要选 1 名男生和 1 名女生参加活动，不同的选法共有多少种？",
+     "options": [
+      {
+       "label": "A",
+       "text": "35"
+      },
+      {
+       "label": "B",
+       "text": "20"
+      },
+      {
+       "label": "C",
+       "text": "15"
+      },
+      {
+       "label": "D",
+       "text": "300"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "选 1 名男生与选 1 名女生是依次进行的两步，男生有 20 种选法、女生有 15 种选法，用分步乘法计数原理得 20 乘 15 等于 300 种。"
+    },
+    {
+     "id": "mxj_h1050_q5",
+     "topicId": "mxj_h1050",
+     "prompt": "有 3 件不同的上衣和 4 条不同的裤子，从中搭配一套衣服，共有多少种不同的搭配方法？",
+     "question": "有 3 件不同的上衣和 4 条不同的裤子，从中搭配一套衣服，共有多少种不同的搭配方法？",
+     "answer": 12,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 4}]}",
+     "difficulty": "basic",
+     "explanation": "选上衣与选裤子是两步，分别有 3 种与 4 种选择，由分步乘法计数原理得 3 乘 4 等于 12 种搭配方法。"
+    },
+    {
+     "id": "mxj_h1050_q6",
+     "topicId": "mxj_h1050",
+     "prompt": "用 1、2、3、4、5 这五个数字可以组成多少个没有重复数字的两位偶数？",
+     "question": "用 1、2、3、4、5 这五个数字可以组成多少个没有重复数字的两位偶数？",
+     "answer": 8,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 4}]}",
+     "difficulty": "standard",
+     "explanation": "两位偶数的个位只能是 2 或 4，有 2 种选法；个位确定后十位可从剩下的 4 个数字中任选，有 4 种；由分步乘法计数原理得 2 乘 4 等于 8 个。"
+    },
+    {
+     "id": "mxj_h1050_q7",
+     "topicId": "mxj_h1050",
+     "prompt": "完成一件事有 3 类办法，各类办法中分别有 4 种、5 种、6 种不同的方法，则完成这件事共有多少种不同的方法？",
+     "question": "完成一件事有 3 类办法，各类办法中分别有 4 种、5 种、6 种不同的方法，则完成这件事共有多少种不同的方法？",
+     "answer": "15",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "三类办法互不相同，用其中任何一类办法都能独立完成这件事，所以用分类加法计数原理，共 4 加 5 加 6 等于 15 种。"
+    },
+    {
+     "id": "mxj_h1050_q8",
+     "topicId": "mxj_h1050",
+     "prompt": "用 0、1、2、3、4 这五个数字可以组成多少个没有重复数字的四位偶数？",
+     "question": "用 0、1、2、3、4 这五个数字可以组成多少个没有重复数字的四位偶数？",
+     "answer": "60",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "按个位分三类：个位为 0 时，千位有 4 种、百位 3 种、十位 2 种，共 24 个；个位为 2 时，千位不能为 0，有 3 种，百位 3 种、十位 2 种，共 18 个；个位为 4 时同理 18 个；由分类加法计数原理共 24 加 18 加 18 等于 60 个。"
+    }
+   ],
+   "page": null
+  },
+  {
+   "id": "mxj_h1051",
+   "chapter": "湘教版选择性必修第一册 第4章 计数原理 · 排列",
+   "description": "从 n 个不同元素中取出 m 个元素并按一定顺序排成一列，这样的排列个数记作 A(n, m)；掌握排列数公式，理解全排列的含义，并能用排列数解决排队、排数、相邻与不相邻等排列问题。",
+   "mastery_criteria": [
+    "能说出排列的定义并判断是否与顺序有关",
+    "会用排列数公式计算 A(n, m)",
+    "会用捆绑法处理相邻元素的排列问题"
+   ],
+   "misconceptions": [
+    "把排列问题当成组合问题而少乘顺序数",
+    "计算排列数时把项数写成 m 个而实际多乘或少乘一项"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_h1051_q1",
+     "topicId": "mxj_h1051",
+     "prompt": "从 5 名同学中选 3 名排成一排照相，共有多少种不同的排法？",
+     "question": "从 5 名同学中选 3 名排成一排照相，共有多少种不同的排法？",
+     "options": [
+      {
+       "label": "A",
+       "text": "60"
+      },
+      {
+       "label": "B",
+       "text": "10"
+      },
+      {
+       "label": "C",
+       "text": "125"
+      },
+      {
+       "label": "D",
+       "text": "15"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "排队与顺序有关，是排列问题；排列数 A(5, 3) 等于 5 乘 4 乘 3 等于 60，所以共有 60 种排法，而不是组合数 10。"
+    },
+    {
+     "id": "mxj_h1051_q2",
+     "topicId": "mxj_h1051",
+     "prompt": "4 名同学排成一排，共有多少种不同的排法？",
+     "question": "4 名同学排成一排，共有多少种不同的排法？",
+     "options": [
+      {
+       "label": "A",
+       "text": "12"
+      },
+      {
+       "label": "B",
+       "text": "24"
+      },
+      {
+       "label": "C",
+       "text": "16"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "这是 4 个元素的全排列，排列数等于 4 的阶乘，即 4 乘 3 乘 2 乘 1 等于 24，所以共有 24 种排法。"
+    },
+    {
+     "id": "mxj_h1051_q3",
+     "topicId": "mxj_h1051",
+     "prompt": "甲、乙、丙、丁、戊 5 人排成一排，其中甲不站在排头，共有多少种不同的排法？",
+     "question": "甲、乙、丙、丁、戊 5 人排成一排，其中甲不站在排头，共有多少种不同的排法？",
+     "options": [
+      {
+       "label": "A",
+       "text": "120"
+      },
+      {
+       "label": "B",
+       "text": "24"
+      },
+      {
+       "label": "C",
+       "text": "96"
+      },
+      {
+       "label": "D",
+       "text": "48"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先安排甲，甲可站在除排头外的 4 个位置，有 4 种选择；再安排其余 4 人，有 4 的阶乘等于 24 种；由分步乘法计数原理得 4 乘 24 等于 96 种。"
+    },
+    {
+     "id": "mxj_h1051_q4",
+     "topicId": "mxj_h1051",
+     "prompt": "用 1、2、3、4 这四个数字可以组成多少个没有重复数字的三位数？",
+     "question": "用 1、2、3、4 这四个数字可以组成多少个没有重复数字的三位数？",
+     "options": [
+      {
+       "label": "A",
+       "text": "12"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "64"
+      },
+      {
+       "label": "D",
+       "text": "24"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "从 4 个数字中取出 3 个排成三位数，与顺序有关，排列数 A(4, 3) 等于 4 乘 3 乘 2 等于 24，所以共 24 个。"
+    },
+    {
+     "id": "mxj_h1051_q5",
+     "topicId": "mxj_h1051",
+     "prompt": "排列数 A(6, 2) 的值等于多少？",
+     "question": "排列数 A(6, 2) 的值等于多少？",
+     "answer": 30,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 5}]}",
+     "difficulty": "basic",
+     "explanation": "排列数 A(6, 2) 表示从 6 个不同元素中取 2 个的排列数，等于 6 乘 5 等于 30；它比组合数 C(6, 2) 多乘了 2 的阶乘。"
+    },
+    {
+     "id": "mxj_h1051_q6",
+     "topicId": "mxj_h1051",
+     "prompt": "排列数 A(7, 3) 的值等于多少？",
+     "question": "排列数 A(7, 3) 的值等于多少？",
+     "answer": 210,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 7}, {\"type\": \"num\", \"value\": 6}]}, {\"type\": \"num\", \"value\": 5}]}",
+     "difficulty": "standard",
+     "explanation": "A(7, 3) 等于从 7 开始连续 3 个正整数的乘积，即 7 乘 6 乘 5，等于 42 乘 5 等于 210。"
+    },
+    {
+     "id": "mxj_h1051_q7",
+     "topicId": "mxj_h1051",
+     "prompt": "8 个不同元素的全排列数等于多少？",
+     "question": "8 个不同元素的全排列数等于多少？",
+     "answer": "40320",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "全排列数是 8 的阶乘，即 8 乘 7 乘 6 乘 5 乘 4 乘 3 乘 2 乘 1，逐次计算得 40320。"
+    },
+    {
+     "id": "mxj_h1051_q8",
+     "topicId": "mxj_h1051",
+     "prompt": "4 名男生与 3 名女生排成一排，要求 3 名女生必须相邻，共有多少种不同的排法？",
+     "question": "4 名男生与 3 名女生排成一排，要求 3 名女生必须相邻，共有多少种不同的排法？",
+     "answer": "720",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "把 3 名女生看作一个整体，与 4 名男生共 5 个对象全排列，有 5 的阶乘等于 120 种；再考虑 3 名女生内部的顺序，有 3 的阶乘等于 6 种；由分步乘法计数原理得 120 乘 6 等于 720 种。"
+    }
+   ],
+   "page": null
+  },
+  {
+   "id": "mxj_h1052",
+   "chapter": "湘教版选择性必修第一册 第4章 计数原理 · 组合",
+   "description": "从 n 个不同元素中取出 m 个元素作为一组，不考虑顺序，这样的组合个数记作 C(n, m)；掌握组合数公式，理解组合数与排列数的区别与联系，并能用组合数的性质 C(n, m) 等于 C(n, n 减 m) 简化计算、解决选取与分组问题。",
+   "mastery_criteria": [
+    "能辨析排列与组合的区别",
+    "会用组合数公式计算 C(n, m)",
+    "会用组合数性质简化计算并解决选取问题"
+   ],
+   "misconceptions": [
+    "把不考虑顺序的选取问题当成排列而重复计数",
+    "计算组合数时漏除以 m 的阶乘"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_h1052_q1",
+     "topicId": "mxj_h1052",
+     "prompt": "从 5 名同学中选 2 名参加座谈会，不分先后顺序，共有多少种不同的选法？",
+     "question": "从 5 名同学中选 2 名参加座谈会，不分先后顺序，共有多少种不同的选法？",
+     "options": [
+      {
+       "label": "A",
+       "text": "10"
+      },
+      {
+       "label": "B",
+       "text": "20"
+      },
+      {
+       "label": "C",
+       "text": "25"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "选出的 2 人没有顺序之分，是组合问题；组合数 C(5, 2) 等于 5 乘 4 除以 2 等于 10，所以共有 10 种选法，而不是排列数 20。"
+    },
+    {
+     "id": "mxj_h1052_q2",
+     "topicId": "mxj_h1052",
+     "prompt": "组合数 C(6, 3) 的值等于多少？",
+     "question": "组合数 C(6, 3) 的值等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "18"
+      },
+      {
+       "label": "B",
+       "text": "20"
+      },
+      {
+       "label": "C",
+       "text": "120"
+      },
+      {
+       "label": "D",
+       "text": "60"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "组合数 C(6, 3) 等于 6 乘 5 乘 4 除以 (3 乘 2 乘 1)，即 120 除以 6 等于 20；若误当成排列数就会得到 120。"
+    },
+    {
+     "id": "mxj_h1052_q3",
+     "topicId": "mxj_h1052",
+     "prompt": "组合数 C(10, 3) 的值等于多少？",
+     "question": "组合数 C(10, 3) 的值等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "720"
+      },
+      {
+       "label": "B",
+       "text": "240"
+      },
+      {
+       "label": "C",
+       "text": "120"
+      },
+      {
+       "label": "D",
+       "text": "90"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "C(10, 3) 等于 10 乘 9 乘 8 除以 (3 乘 2 乘 1)，即 720 除以 6 等于 120；也可用性质 C(10, 3) 等于 C(10, 7) 检验。"
+    },
+    {
+     "id": "mxj_h1052_q4",
+     "topicId": "mxj_h1052",
+     "prompt": "从 4 名男生和 3 名女生中选 2 名男生、1 名女生参加比赛，共有多少种不同的选法？",
+     "question": "从 4 名男生和 3 名女生中选 2 名男生、1 名女生参加比赛，共有多少种不同的选法？",
+     "options": [
+      {
+       "label": "A",
+       "text": "12"
+      },
+      {
+       "label": "B",
+       "text": "21"
+      },
+      {
+       "label": "C",
+       "text": "36"
+      },
+      {
+       "label": "D",
+       "text": "18"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "选男生与选女生是两步：选 2 名男生有 C(4, 2) 等于 6 种，选 1 名女生有 C(3, 1) 等于 3 种；由分步乘法计数原理得 6 乘 3 等于 18 种。"
+    },
+    {
+     "id": "mxj_h1052_q5",
+     "topicId": "mxj_h1052",
+     "prompt": "组合数 C(7, 2) 的值等于多少？",
+     "question": "组合数 C(7, 2) 的值等于多少？",
+     "answer": 21,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 42}, {\"type\": \"num\", \"value\": 2}]}",
+     "difficulty": "basic",
+     "explanation": "C(7, 2) 等于 7 乘 6 除以 2 乘 1，即 42 除以 2 等于 21；组合数不考虑顺序，所以要除以 2 的阶乘。"
+    },
+    {
+     "id": "mxj_h1052_q6",
+     "topicId": "mxj_h1052",
+     "prompt": "组合数 C(8, 3) 的值等于多少？",
+     "question": "组合数 C(8, 3) 的值等于多少？",
+     "answer": 56,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 336}, {\"type\": \"num\", \"value\": 6}]}",
+     "difficulty": "standard",
+     "explanation": "组合数 C(8, 3) 等于 8 乘 7 乘 6 再除以 3 乘 2 乘 1，分子得 336，分母得 6，结果为 56；组合数不考虑顺序，所以要除掉组内 3 个元素的排列数 6。"
+    },
+    {
+     "id": "mxj_h1052_q7",
+     "topicId": "mxj_h1052",
+     "prompt": "组合数 C(9, 7) 的值等于多少？",
+     "question": "组合数 C(9, 7) 的值等于多少？",
+     "answer": "36",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "由性质 C(n, m) 等于 C(n, n 减 m) 得 C(9, 7) 等于 C(9, 2)，而 C(9, 2) 等于 9 乘 8 除以 2 等于 36；这样计算比直接算 7 个因子简单得多。"
+    },
+    {
+     "id": "mxj_h1052_q8",
+     "topicId": "mxj_h1052",
+     "prompt": "从 6 名同学中选出 3 名参加劳动，其中甲、乙两人中至少有一人被选中，共有多少种不同的选法？",
+     "question": "从 6 名同学中选出 3 名参加劳动，其中甲、乙两人中至少有一人被选中，共有多少种不同的选法？",
+     "answer": "16",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "用间接法：从 6 人中任选 3 人共有 C(6, 3) 等于 20 种；甲、乙都没被选中的情形是从其余 4 人中选 3 人，有 C(4, 3) 等于 4 种；所以至少一人被选中的选法有 20 减 4 等于 16 种。"
+    }
+   ],
+   "page": null
+  },
+  {
+   "id": "mxj_h1053",
+   "chapter": "湘教版选择性必修第一册 第4章 计数原理 · 二项式定理",
+   "description": "用多项式乘法法则与计数原理证明二项式定理，掌握 (a 加 b) 的 n 次方的展开式与通项公式：展开式中的第 k 加 1 项等于 C(n, k) 乘 a 的 (n 减 k) 次方乘 b 的 k 次方；理解二项式系数的对称性与系数和等于 2 的 n 次方，并能求指定项及其系数。",
+   "mastery_criteria": [
+    "能写出二项展开式并说出其项数",
+    "会用通项公式求指定项及其系数",
+    "会用二项式系数的性质求和"
+   ],
+   "misconceptions": [
+    "把二项式系数与项的系数混为一谈",
+    "求通项时把 k 与项数混淆"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_h1053_q1",
+     "topicId": "mxj_h1053",
+     "prompt": "(a + b) 的 4 次方展开式中共有多少项？",
+     "question": "(a + b) 的 4 次方展开式中共有多少项？",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "(a 加 b) 的 n 次方展开式共有 n 加 1 项，因为 b 的次数从 0 取到 n；当 n 等于 4 时共有 5 项，各项的 b 的次数依次为 0、1、2、3、4。"
+    },
+    {
+     "id": "mxj_h1053_q2",
+     "topicId": "mxj_h1053",
+     "prompt": "(x + 1) 的 5 次方展开式中 x 的 3 次方项的系数等于多少？",
+     "question": "(x + 1) 的 5 次方展开式中 x 的 3 次方项的系数等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "10"
+      },
+      {
+       "label": "C",
+       "text": "20"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "通项为 C(5, k) 乘 x 的 (5 减 k) 次方乘 1 的 k 次方；要得到 x 的 3 次方需 k 等于 2，系数为 C(5, 2) 等于 10，这正是二项式系数。"
+    },
+    {
+     "id": "mxj_h1053_q3",
+     "topicId": "mxj_h1053",
+     "prompt": "(2x - 1) 的 4 次方展开式中 x 的平方项的系数等于多少？",
+     "question": "(2x - 1) 的 4 次方展开式中 x 的平方项的系数等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "8"
+      },
+      {
+       "label": "C",
+       "text": "24"
+      },
+      {
+       "label": "D",
+       "text": "负24"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "通项为 C(4, k) 乘 (2x) 的 (4 减 k) 次方乘 (负1) 的 k 次方；令 4 减 k 等于 2 得 k 等于 2，该项系数为 C(4, 2) 乘 2 的平方乘 (负1) 的平方，即 6 乘 4 等于 24。"
+    },
+    {
+     "id": "mxj_h1053_q4",
+     "topicId": "mxj_h1053",
+     "prompt": "(1 + x) 的 n 次方展开式中所有二项式系数之和等于多少？",
+     "question": "(1 + x) 的 n 次方展开式中所有二项式系数之和等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "n"
+      },
+      {
+       "label": "B",
+       "text": "2n"
+      },
+      {
+       "label": "C",
+       "text": "n 的平方"
+      },
+      {
+       "label": "D",
+       "text": "2 的 n 次方"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "令 a 与 b 都等于 1，则 (1 加 1) 的 n 次方等于各二项式系数之和，所以二项式系数之和等于 2 的 n 次方，例如 n 等于 3 时为 1 加 3 加 3 加 1 等于 8。"
+    },
+    {
+     "id": "mxj_h1053_q5",
+     "topicId": "mxj_h1053",
+     "prompt": "(a + b) 的 6 次方展开式共有多少项？",
+     "question": "(a + b) 的 6 次方展开式共有多少项？",
+     "answer": 7,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 1}]}",
+     "difficulty": "basic",
+     "explanation": "二项展开式的一般形式中，b 的次数从 0 逐次增大到 n，共有 n 加 1 项；所以当 n 等于 6 时共有 7 项。"
+    },
+    {
+     "id": "mxj_h1053_q6",
+     "topicId": "mxj_h1053",
+     "prompt": "(x + 2) 的 5 次方展开式中 x 的 3 次方项的系数等于多少？",
+     "question": "(x + 2) 的 5 次方展开式中 x 的 3 次方项的系数等于多少？",
+     "answer": 40,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 4}]}",
+     "difficulty": "standard",
+     "explanation": "通项中令 5 减 k 等于 3 得 k 等于 2；该项系数为 C(5, 2) 乘 2 的平方等于 10 乘 4 等于 40；注意这里 2 的平方也属于系数的一部分。"
+    },
+    {
+     "id": "mxj_h1053_q7",
+     "topicId": "mxj_h1053",
+     "prompt": "(1 + x) 的 4 次方展开式中 x 的平方项的系数等于多少？",
+     "question": "(1 + x) 的 4 次方展开式中 x 的平方项的系数等于多少？",
+     "answer": "6",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "展开式中的系数就是二项式系数，x 的平方项对应 k 等于 2，系数为 C(4, 2) 等于 4 乘 3 除以 2 等于 6。"
+    },
+    {
+     "id": "mxj_h1053_q8",
+     "topicId": "mxj_h1053",
+     "prompt": "求 (x - 2) 的 6 次方展开式中的常数项。",
+     "question": "求 (x - 2) 的 6 次方展开式中的常数项。",
+     "answer": "64",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "通项为 C(6, k) 乘 x 的 (6 减 k) 次方乘 (负2) 的 k 次方；要得到常数项需 x 的次数为 0，即 6 减 k 等于 0，k 等于 6；所以常数项等于 (负2) 的 6 次方等于 64。"
+    }
+   ],
+   "page": null
+  }
+ ]
+}

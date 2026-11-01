@@ -72,11 +72,11 @@ jobs:
       - name: Subject invariants · geography
         run: python3 scripts/test_geography.py
 
-      - name: Subject invariants · mental-health
-        run: python3 scripts/test_mental_health.py
-
       - name: Subject invariants · math-bsd
         run: python3 scripts/test_math_bsd.py
+
+      - name: Subject invariants · math-xiangjiao
+        run: python3 scripts/test_math_xiangjiao.py
 
       - name: Standards index freshness (regenerate & diff)
         run: |

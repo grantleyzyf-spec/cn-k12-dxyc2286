@@ -1,0 +1,3902 @@
+{
+ "tag": "mxj7b",
+ "book": "湘教版七年级下册",
+ "unit_points": [
+  {
+   "id": "mxj_p005",
+   "description": "整式的乘法一章：由乘方的意义得出同底数幂的乘法、幂的乘方、积的乘方法则，再依次学习单项式与单项式、单项式与多项式、多项式与多项式的乘法，最后归纳出平方差公式与完全平方公式。",
+   "mastery_criteria": [
+    "能用法则计算同底数幂的乘法与幂的乘方",
+    "能进行单项式、多项式的乘法运算",
+    "能运用平方差公式与完全平方公式计算"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p005_q1",
+     "topicId": "mxj_p005",
+     "prompt": "计算 a的平方乘以a的立方，结果是多少？",
+     "question": "计算 a的平方乘以a的立方，结果是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "a的5次方"
+      },
+      {
+       "label": "B",
+       "text": "a的6次方"
+      },
+      {
+       "label": "C",
+       "text": "a的8次方"
+      },
+      {
+       "label": "D",
+       "text": "2a的6次方"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "同底数幂相乘，底数不变，指数相加，2加3等于5，所以结果是a的5次方。"
+    },
+    {
+     "id": "mxj_p005_q2",
+     "topicId": "mxj_p005",
+     "prompt": "计算 ab 的积的立方，结果是多少？",
+     "question": "计算 ab 的积的立方，结果是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "a的立方乘以b"
+      },
+      {
+       "label": "B",
+       "text": "a乘以b的立方"
+      },
+      {
+       "label": "C",
+       "text": "a的立方乘以b的立方"
+      },
+      {
+       "label": "D",
+       "text": "3ab"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "积的乘方等于把积的每一个因式分别乘方，再把所得的幂相乘，所以ab的立方等于a的立方乘以b的立方。"
+    },
+    {
+     "id": "mxj_p005_q3",
+     "topicId": "mxj_p005",
+     "prompt": "当 x 取 2、y 取 3 时，单项式 2x的平方y 的值是多少？",
+     "question": "当 x 取 2、y 取 3 时，单项式 2x的平方y 的值是多少？",
+     "answer": 24,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "因为x等于2，所以x的平方等于4，再把2、4、3相乘，得2乘4乘3等于24，这个单项式的值是24。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 3}]}]}"
+    },
+    {
+     "id": "mxj_p005_q4",
+     "topicId": "mxj_p005",
+     "prompt": "用平方差公式计算 (2a+b)(2a-b) 的结果是（　）。",
+     "question": "用平方差公式计算 (2a+b)(2a-b) 的结果是（　）。",
+     "answer": "4a的平方减b的平方",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "两个因式中2a相同、b与负b互为相反数，用平方差公式得2a的平方减b的平方，即4a的平方减b的平方。"
+    },
+    {
+     "id": "mxj_p005_q5",
+     "topicId": "mxj_p005",
+     "prompt": "已知 (x+y)的平方等于25，且 xy 等于6，则 x的平方加y的平方等于多少？",
+     "question": "已知 (x+y)的平方等于25，且 xy 等于6，则 x的平方加y的平方等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "19"
+      },
+      {
+       "label": "B",
+       "text": "13"
+      },
+      {
+       "label": "C",
+       "text": "37"
+      },
+      {
+       "label": "D",
+       "text": "25"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由完全平方公式1得x的平方加y的平方等于x加y的和的平方减去xy的2倍，即25减12等于13。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p006",
+   "description": "实数一章：学习平方根、算术平方根与立方根的概念和求法，认识无理数与实数的分类，理解实数与数轴上的点一一对应，并会求实数的相反数、绝对值、比较大小和进行近似计算。",
+   "mastery_criteria": [
+    "能求非负数的平方根与算术平方根",
+    "能求一个数的立方根",
+    "能判断无理数并比较实数大小"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p006_q1",
+     "topicId": "mxj_p006",
+     "prompt": "16的算术平方根是多少？",
+     "question": "16的算术平方根是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "负4"
+      },
+      {
+       "label": "C",
+       "text": "正负4"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "算术平方根是正数a的正的平方根，因为4的平方等于16，所以16的算术平方根是4。"
+    },
+    {
+     "id": "mxj_p006_q2",
+     "topicId": "mxj_p006",
+     "prompt": "下列各数中，是无理数的是哪一个？",
+     "question": "下列各数中，是无理数的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.3"
+      },
+      {
+       "label": "B",
+       "text": "根号9"
+      },
+      {
+       "label": "C",
+       "text": "圆周率π"
+      },
+      {
+       "label": "D",
+       "text": "负7"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "0.3是有限小数，根号9等于3，负7是整数，它们都是有理数；π是无限不循环小数，所以是无理数。"
+    },
+    {
+     "id": "mxj_p006_q3",
+     "topicId": "mxj_p006",
+     "prompt": "负27的立方根是多少？",
+     "question": "负27的立方根是多少？",
+     "answer": -3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "因为负3的立方等于负27，负数有一个负的立方根，所以负27的立方根是负3。",
+     "verify": "{\"type\": \"num\", \"value\": -3}"
+    },
+    {
+     "id": "mxj_p006_q4",
+     "topicId": "mxj_p006",
+     "prompt": "每个正实数有（　）个平方根，它们互为相反数。",
+     "question": "每个正实数有（　）个平方根，它们互为相反数。",
+     "answer": "两",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "在实数范围内，每个正实数有且只有两个平方根，它们互为相反数，其中正的平方根是算术平方根。"
+    },
+    {
+     "id": "mxj_p006_q5",
+     "topicId": "mxj_p006",
+     "prompt": "不用计算器估计，根号115在哪两个相邻整数之间？",
+     "question": "不用计算器估计，根号115在哪两个相邻整数之间？",
+     "options": [
+      {
+       "label": "A",
+       "text": "9和10"
+      },
+      {
+       "label": "B",
+       "text": "10和11"
+      },
+      {
+       "label": "C",
+       "text": "11和12"
+      },
+      {
+       "label": "D",
+       "text": "12和13"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "因为10的平方等于100，11的平方等于121，115在100与121之间，所以根号115在10与11之间。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p007",
+   "description": "一元一次不等式（组）一章：认识不等式与不等式的解，掌握不等式的三条基本性质，会解一元一次不等式和一元一次不等式组，并能列不等式解决实际问题。",
+   "mastery_criteria": [
+    "能运用不等式的基本性质对不等式变形",
+    "能解一元一次不等式（组）并在数轴上表示解集",
+    "能列一元一次不等式解决简单实际问题"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p007_q1",
+     "topicId": "mxj_p007",
+     "prompt": "已知 a 大于 b，则下列结论正确的是哪一项？",
+     "question": "已知 a 大于 b，则下列结论正确的是哪一项？",
+     "options": [
+      {
+       "label": "A",
+       "text": "a减3大于b减3"
+      },
+      {
+       "label": "B",
+       "text": "a减3小于b减3"
+      },
+      {
+       "label": "C",
+       "text": "负a大于负b"
+      },
+      {
+       "label": "D",
+       "text": "3a小于3b"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "不等式两边都减去同一个数3，不等号方向不变，所以a减3大于b减3；两边乘负数时方向才改变。"
+    },
+    {
+     "id": "mxj_p007_q2",
+     "topicId": "mxj_p007",
+     "prompt": "不等式 负2x 大于 6 的解集是多少？",
+     "question": "不等式 负2x 大于 6 的解集是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x大于负3"
+      },
+      {
+       "label": "B",
+       "text": "x大于3"
+      },
+      {
+       "label": "C",
+       "text": "x小于负3"
+      },
+      {
+       "label": "D",
+       "text": "x小于3"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两边都除以负2，除以负数时不等号方向改变，所以解集是x小于负3。"
+    },
+    {
+     "id": "mxj_p007_q3",
+     "topicId": "mxj_p007",
+     "prompt": "不等式 x+5 大于 12 的最小整数解是多少？",
+     "question": "不等式 x+5 大于 12 的最小整数解是多少？",
+     "answer": 8,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "移项得x大于7，大于7的整数中最小的是8，所以最小整数解是8。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 7}, {\"type\": \"num\", \"value\": 1}]}"
+    },
+    {
+     "id": "mxj_p007_q4",
+     "topicId": "mxj_p007",
+     "prompt": "组成不等式组的各个不等式解集的（　）部分，叫作这个不等式组的解集。",
+     "question": "组成不等式组的各个不等式解集的（　）部分，叫作这个不等式组的解集。",
+     "answer": "公共",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "不等式组的解集是各个不等式解集的公共部分，可以借助同一条数轴找出这个公共部分，没有公共部分时不等式组无解。"
+    },
+    {
+     "id": "mxj_p007_q5",
+     "topicId": "mxj_p007",
+     "prompt": "设 a 是实数，若不等式 (a+1)x 大于 a+1 的解集是 x 小于 1，则 a 应满足什么条件？",
+     "question": "设 a 是实数，若不等式 (a+1)x 大于 a+1 的解集是 x 小于 1，则 a 应满足什么条件？",
+     "options": [
+      {
+       "label": "A",
+       "text": "a大于负1"
+      },
+      {
+       "label": "B",
+       "text": "a小于负1"
+      },
+      {
+       "label": "C",
+       "text": "a大于0"
+      },
+      {
+       "label": "D",
+       "text": "a小于0"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "解集的方向与不等号方向相反，说明两边都除以了负数，即a加1小于0，所以a小于负1。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p008",
+   "description": "平面内的两条直线一章：研究同一平面内两条直线的相交与平行，认识对顶角、同位角、内错角、同旁内角，学习平移、平行线的性质与判定、垂线以及两条平行线间的距离。",
+   "mastery_criteria": [
+    "能识别对顶角、同位角、内错角和同旁内角",
+    "能运用平行线的性质与判定进行简单推理",
+    "理解平移与垂直的有关性质"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p008_q1",
+     "topicId": "mxj_p008",
+     "prompt": "在同一平面内，两条直线的位置关系有哪几种？",
+     "question": "在同一平面内，两条直线的位置关系有哪几种？",
+     "options": [
+      {
+       "label": "A",
+       "text": "相交和平行两种"
+      },
+      {
+       "label": "B",
+       "text": "相交、重合和平行三种"
+      },
+      {
+       "label": "C",
+       "text": "只有平行"
+      },
+      {
+       "label": "D",
+       "text": "只有相交"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "同一平面内两条直线或者相交，或者重合，或者既不相交也不重合即平行，共三种，没有特别说明时重合的直线只当作一条。"
+    },
+    {
+     "id": "mxj_p008_q2",
+     "topicId": "mxj_p008",
+     "prompt": "两条平行直线被第三条直线所截，下列结论中错误的是哪一项？",
+     "question": "两条平行直线被第三条直线所截，下列结论中错误的是哪一项？",
+     "options": [
+      {
+       "label": "A",
+       "text": "同位角相等"
+      },
+      {
+       "label": "B",
+       "text": "内错角相等"
+      },
+      {
+       "label": "C",
+       "text": "同旁内角相等"
+      },
+      {
+       "label": "D",
+       "text": "同旁内角互补"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两直线平行时同旁内角互补，它们不一定相等，只有同旁内角都是90度时才相等，所以第三项错误。"
+    },
+    {
+     "id": "mxj_p008_q3",
+     "topicId": "mxj_p008",
+     "prompt": "两条平行直线被第三条直线所截，其中一个角是65度，则与它相邻的那个同旁内角的度数是多少？",
+     "question": "两条平行直线被第三条直线所截，其中一个角是65度，则与它相邻的那个同旁内角的度数是多少？",
+     "answer": 115,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "两直线平行时同旁内角互补，用180度减去65度得115度。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 180}, {\"type\": \"num\", \"value\": 65}]}"
+    },
+    {
+     "id": "mxj_p008_q4",
+     "topicId": "mxj_p008",
+     "prompt": "过直线外一点，（　）一条直线与这条直线平行。",
+     "question": "过直线外一点，（　）一条直线与这条直线平行。",
+     "answer": "有且只有",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "这是关于平行线的基本事实：过直线外一点有且只有一条直线与这条直线平行，也就是只能作一条。"
+    },
+    {
+     "id": "mxj_p008_q5",
+     "topicId": "mxj_p008",
+     "prompt": "在同一平面内，如果直线a垂直于l，直线b也垂直于l，那么a与b的位置关系是什么？",
+     "question": "在同一平面内，如果直线a垂直于l，直线b也垂直于l，那么a与b的位置关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行"
+      },
+      {
+       "label": "B",
+       "text": "垂直"
+      },
+      {
+       "label": "C",
+       "text": "相交但不垂直"
+      },
+      {
+       "label": "D",
+       "text": "重合"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两条直线都与同一条直线垂直，它们与l所成的同位角都是90度，同位角相等，所以a与b平行。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p009",
+   "description": "轴对称与旋转一章：认识轴对称图形与两个图形关于一条直线成轴对称，理解对应点连线被对称轴垂直平分；认识旋转的三要素与旋转的性质，并能综合运用平移、轴对称与旋转变换分析、设计图案。",
+   "mastery_criteria": [
+    "能判断轴对称图形并找出对称轴",
+    "能利用轴对称和旋转的性质求线段与角",
+    "能判断图案由哪种图形变换得到"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p009_q1",
+     "topicId": "mxj_p009",
+     "prompt": "下列图形中，是轴对称图形的是哪一个？",
+     "question": "下列图形中，是轴对称图形的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "任意三角形"
+      },
+      {
+       "label": "B",
+       "text": "平行四边形"
+      },
+      {
+       "label": "C",
+       "text": "等腰三角形"
+      },
+      {
+       "label": "D",
+       "text": "不等边三角形"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "等腰三角形沿底边上的中线所在直线对折，两侧能够完全重合，是轴对称图形；一般三角形和平行四边形不是。"
+    },
+    {
+     "id": "mxj_p009_q2",
+     "topicId": "mxj_p009",
+     "prompt": "成轴对称的两个图形中，对应点所连的线段与对称轴有什么关系？",
+     "question": "成轴对称的两个图形中，对应点所连的线段与对称轴有什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "被对称轴垂直平分"
+      },
+      {
+       "label": "B",
+       "text": "与对称轴平行"
+      },
+      {
+       "label": "C",
+       "text": "与对称轴重合"
+      },
+      {
+       "label": "D",
+       "text": "长度等于对称轴"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "轴对称的基本性质：成轴对称的两个图形中，对应点的连线被对称轴垂直平分。"
+    },
+    {
+     "id": "mxj_p009_q3",
+     "topicId": "mxj_p009",
+     "prompt": "把一个图形绕某点旋转120度，则每组对应点与旋转中心连线所成的角是多少度？",
+     "question": "把一个图形绕某点旋转120度，则每组对应点与旋转中心连线所成的角是多少度？",
+     "answer": 120,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "旋转中两组对应点分别与旋转中心连线所成的角相等，它们都等于旋转角120度。",
+     "verify": "{\"type\": \"num\", \"value\": 120}"
+    },
+    {
+     "id": "mxj_p009_q4",
+     "topicId": "mxj_p009",
+     "prompt": "旋转由旋转中心、旋转方向和（　）三个要素确定。",
+     "question": "旋转由旋转中心、旋转方向和（　）三个要素确定。",
+     "answer": "旋转角",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "将图形旋转时必须指明旋转中心、旋转的方向和旋转的角度，这三个要素缺一不可。"
+    },
+    {
+     "id": "mxj_p009_q5",
+     "topicId": "mxj_p009",
+     "prompt": "正三角形绕它的中心至少旋转多少度后，能与原来的图形重合？",
+     "question": "正三角形绕它的中心至少旋转多少度后，能与原来的图形重合？",
+     "options": [
+      {
+       "label": "A",
+       "text": "60度"
+      },
+      {
+       "label": "B",
+       "text": "120度"
+      },
+      {
+       "label": "C",
+       "text": "180度"
+      },
+      {
+       "label": "D",
+       "text": "240度"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "正三角形的中心角是120度，绕中心旋转120度、240度都能与自身重合，最小的是120度。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p010",
+   "description": "数据的收集与描述一章：认识全面调查与抽样调查的适用情形，理解总体、个体、样本与样本容量以及简单随机抽样，学会用条形、折线、扇形统计图和复式统计图描述数据。",
+   "mastery_criteria": [
+    "能区分全面调查与抽样调查",
+    "能指出调查中的总体、个体、样本与样本容量",
+    "能根据目的选择合适的统计图"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p010_q1",
+     "topicId": "mxj_p010",
+     "prompt": "为了了解全国初中生的课外阅读情况，最合适的调查方式是什么？",
+     "question": "为了了解全国初中生的课外阅读情况，最合适的调查方式是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "抽样调查"
+      },
+      {
+       "label": "B",
+       "text": "全面调查"
+      },
+      {
+       "label": "C",
+       "text": "只调查一个学校的学生"
+      },
+      {
+       "label": "D",
+       "text": "不需要调查"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "全国初中生人数太多，全面调查费时费力且没有必要，采用抽样调查既能省时又能推断总体情况。"
+    },
+    {
+     "id": "mxj_p010_q2",
+     "topicId": "mxj_p010",
+     "prompt": "从总体中抽取的一部分个体组成样本，样本中个体的数目叫作什么？",
+     "question": "从总体中抽取的一部分个体组成样本，样本中个体的数目叫作什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "总体"
+      },
+      {
+       "label": "B",
+       "text": "个体"
+      },
+      {
+       "label": "C",
+       "text": "样本容量"
+      },
+      {
+       "label": "D",
+       "text": "样本"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "从总体中抽取的一部分个体组成一个样本，样本中个体的数目叫作样本容量，样本容量没有单位。"
+    },
+    {
+     "id": "mxj_p010_q3",
+     "topicId": "mxj_p010",
+     "prompt": "某校共有4000名学生，随机抽取400名进行身高调查，这次调查的样本容量是多少？",
+     "question": "某校共有4000名学生，随机抽取400名进行身高调查，这次调查的样本容量是多少？",
+     "answer": 400,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "被抽取的400名学生组成样本，样本中个体的数目是400，所以样本容量是400。",
+     "verify": "{\"type\": \"num\", \"value\": 400}"
+    },
+    {
+     "id": "mxj_p010_q4",
+     "topicId": "mxj_p010",
+     "prompt": "在扇形统计图中，某部分占整体的25%，则它对应的扇形圆心角是（　）度。",
+     "question": "在扇形统计图中，某部分占整体的25%，则它对应的扇形圆心角是（　）度。",
+     "answer": "90",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "整个圆对应360度，某部分占整体的25%，圆心角为360乘25%等于90度。"
+    },
+    {
+     "id": "mxj_p010_q5",
+     "topicId": "mxj_p010",
+     "prompt": "要清楚地反映事物的变化趋势，应选择哪种统计图？",
+     "question": "要清楚地反映事物的变化趋势，应选择哪种统计图？",
+     "options": [
+      {
+       "label": "A",
+       "text": "条形统计图"
+      },
+      {
+       "label": "B",
+       "text": "折线统计图"
+      },
+      {
+       "label": "C",
+       "text": "扇形统计图"
+      },
+      {
+       "label": "D",
+       "text": "统计表"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "折线统计图能清楚地反映事物的变化趋势，条形统计图长于比较数量大小，扇形统计图长于表示百分比。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "mxj_p1023",
+   "page": 2,
+   "description": "由乘方的意义推导同底数幂的乘法、幂的乘方、积的乘方三条法则，并据此进行单项式与单项式、单项式与多项式、多项式与多项式的乘法运算。",
+   "mastery_criteria": [
+    "能用法则计算同底数幂的乘法与幂的乘方",
+    "能进行单项式与多项式、多项式与多项式的乘法运算"
+   ],
+   "misconceptions": [
+    "把同底数幂相乘的指数相加误当成指数相乘",
+    "积的乘方时漏掉数字系数的乘方"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1023_q1",
+     "topicId": "mxj_p1023",
+     "prompt": "计算 a的立方乘以a的4次方，结果是多少？",
+     "question": "计算 a的立方乘以a的4次方，结果是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "a的7次方"
+      },
+      {
+       "label": "B",
+       "text": "a的12次方"
+      },
+      {
+       "label": "C",
+       "text": "a的1次方"
+      },
+      {
+       "label": "D",
+       "text": "2a的7次方"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "同底数幂相乘，底数不变，指数相加，3加4等于7，所以结果是a的7次方。"
+    },
+    {
+     "id": "mxj_p1023_q2",
+     "topicId": "mxj_p1023",
+     "prompt": "计算 x的平方的3次方，结果是多少？",
+     "question": "计算 x的平方的3次方，结果是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x的5次方"
+      },
+      {
+       "label": "B",
+       "text": "x的6次方"
+      },
+      {
+       "label": "C",
+       "text": "x的8次方"
+      },
+      {
+       "label": "D",
+       "text": "x的9次方"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "幂的乘方，底数不变，指数相乘，2乘3等于6，所以结果是x的6次方。"
+    },
+    {
+     "id": "mxj_p1023_q3",
+     "topicId": "mxj_p1023",
+     "prompt": "计算单项式 3x的平方 与 2x 的积，所得单项式的系数是多少？",
+     "question": "计算单项式 3x的平方 与 2x 的积，所得单项式的系数是多少？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "单项式与单项式相乘，系数相乘，3乘2等于6，所以所得单项式的系数是6。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "mxj_p1023_q4",
+     "topicId": "mxj_p1023",
+     "prompt": "把 (x+2)(x+3) 展开并合并同类项，所得多项式的一次项系数是多少？",
+     "question": "把 (x+2)(x+3) 展开并合并同类项，所得多项式的一次项系数是多少？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "用一个多项式的每一项分别乘另一个多项式的每一项，得x的平方加3x加2x加6，合并同类项后一次项系数是5。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "mxj_p1023_q5",
+     "topicId": "mxj_p1023",
+     "prompt": "单项式与单项式相乘，把它们的系数、同底数幂分别相乘，只在一个单项式里含有的字母，连同它的（　）作为积的一个因式。",
+     "question": "单项式与单项式相乘，把它们的系数、同底数幂分别相乘，只在一个单项式里含有的字母，连同它的（　）作为积的一个因式。",
+     "answer": "指数",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "单独出现在某一个单项式里的字母要照抄，并且连同它的指数一起作为积的一个因式，不能把指数丢掉。"
+    },
+    {
+     "id": "mxj_p1023_q6",
+     "topicId": "mxj_p1023",
+     "prompt": "计算 2a 乘以 (3a-1) 的结果是（　）。",
+     "question": "计算 2a 乘以 (3a-1) 的结果是（　）。",
+     "answer": "6a的平方减2a",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "单项式乘多项式，用2a去乘括号里的每一项，2a乘3a得6a的平方，2a乘负1得负2a，再把积相加。"
+    },
+    {
+     "id": "mxj_p1023_q7",
+     "topicId": "mxj_p1023",
+     "prompt": "计算多项式 (x+2y) 与 (x-y) 的积，结果要合并同类项。",
+     "question": "计算多项式 (x+2y) 与 (x-y) 的积，结果要合并同类项。",
+     "answer": "x的平方加xy减2y的平方",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "用一个多项式的每一项分别乘另一个多项式的每一项，得x的平方减xy加2xy减2y的平方，合并同类项得x的平方加xy减2y的平方。"
+    },
+    {
+     "id": "mxj_p1023_q8",
+     "topicId": "mxj_p1023",
+     "prompt": "下列各式中计算正确的是哪一项？",
+     "question": "下列各式中计算正确的是哪一项？",
+     "options": [
+      {
+       "label": "A",
+       "text": "a的平方乘以a的立方等于a的6次方"
+      },
+      {
+       "label": "B",
+       "text": "a的平方的立方等于a的5次方"
+      },
+      {
+       "label": "C",
+       "text": "(2a)的立方等于8a的立方"
+      },
+      {
+       "label": "D",
+       "text": "a的立方加a的立方等于a的6次方"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "积的乘方要把2与a分别乘方，2的立方是8，所以(2a)的立方等于8a的立方；其余三项都是把指数算错了。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1024",
+   "page": 15,
+   "description": "由多项式乘法得到平方差公式与两个完全平方公式，理解公式的几何背景，并利用公式及其变形进行简便计算与简单推理。",
+   "mastery_criteria": [
+    "能用平方差公式与完全平方公式进行计算",
+    "能把三项式等变形后套用乘法公式"
+   ],
+   "misconceptions": [
+    "完全平方公式漏掉中间的2倍乘积项",
+    "平方差公式中相同项与相反项对应错误"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1024_q1",
+     "topicId": "mxj_p1024",
+     "prompt": "计算 (x+3)(x-3) 的结果是多少？",
+     "question": "计算 (x+3)(x-3) 的结果是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x的平方减9"
+      },
+      {
+       "label": "B",
+       "text": "x的平方加9"
+      },
+      {
+       "label": "C",
+       "text": "x的平方减3"
+      },
+      {
+       "label": "D",
+       "text": "x的平方减6x加9"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两个二项式中一项相同、另一项互为相反数，用平方差公式得x的平方减3的平方，即x的平方减9。"
+    },
+    {
+     "id": "mxj_p1024_q2",
+     "topicId": "mxj_p1024",
+     "prompt": "把 (a-b) 的平方展开，结果等于多少？",
+     "question": "把 (a-b) 的平方展开，结果等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "a的平方减b的平方"
+      },
+      {
+       "label": "B",
+       "text": "a的平方减2ab加b的平方"
+      },
+      {
+       "label": "C",
+       "text": "a的平方加2ab加b的平方"
+      },
+      {
+       "label": "D",
+       "text": "a的平方减ab加b的平方"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "完全平方公式2：两数差的平方等于这两个数的平方和减去它们积的2倍，即a的平方减2ab加b的平方。"
+    },
+    {
+     "id": "mxj_p1024_q3",
+     "topicId": "mxj_p1024",
+     "prompt": "用平方差公式计算 101乘以99 的结果是多少？",
+     "question": "用平方差公式计算 101乘以99 的结果是多少？",
+     "answer": 9999,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "101乘以99可以写成100加1的和乘以100减1的差，用平方差公式得100的平方减1，结果是9999。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 101}, {\"type\": \"num\", \"value\": 99}]}"
+    },
+    {
+     "id": "mxj_p1024_q4",
+     "topicId": "mxj_p1024",
+     "prompt": "用完全平方公式计算 104 的平方，结果是多少？",
+     "question": "用完全平方公式计算 104 的平方，结果是多少？",
+     "answer": 10816,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "104的平方可以写成100加4的和的平方，用完全平方公式1得10000加800加16，结果是10816。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 104}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "mxj_p1024_q5",
+     "topicId": "mxj_p1024",
+     "prompt": "完全平方公式1：两数和的平方，等于这两个数的平方和加上它们积的（　）倍。",
+     "question": "完全平方公式1：两数和的平方，等于这两个数的平方和加上它们积的（　）倍。",
+     "answer": "2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "两数和的平方等于这两个数的平方和加上它们积的2倍，中间这一项是积的2倍，不能漏掉。"
+    },
+    {
+     "id": "mxj_p1024_q6",
+     "topicId": "mxj_p1024",
+     "prompt": "计算 (a+b)的平方 减 (a-b)的平方 的结果是（　）。",
+     "question": "计算 (a+b)的平方 减 (a-b)的平方 的结果是（　）。",
+     "answer": "4ab",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "分别展开得a的平方加2ab加b的平方与a的平方减2ab加b的平方，两式相减后a的平方与b的平方都消去，剩下4ab。"
+    },
+    {
+     "id": "mxj_p1024_q7",
+     "topicId": "mxj_p1024",
+     "prompt": "计算 (x+1)(x的平方+1)(x-1) 的结果。",
+     "question": "计算 (x+1)(x的平方+1)(x-1) 的结果。",
+     "answer": "x的4次方减1",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "先用乘法交换律把第一个因式与第三个因式相乘，用平方差公式得x的平方减1，再与x的平方加1相乘，再用一次平方差公式得x的4次方减1。"
+    },
+    {
+     "id": "mxj_p1024_q8",
+     "topicId": "mxj_p1024",
+     "prompt": "用完全平方公式计算 198 的平方，第一步应把198写成什么形式？",
+     "question": "用完全平方公式计算 198 的平方，第一步应把198写成什么形式？",
+     "options": [
+      {
+       "label": "A",
+       "text": "200加2的和"
+      },
+      {
+       "label": "B",
+       "text": "190加8的和"
+      },
+      {
+       "label": "C",
+       "text": "100加98的和"
+      },
+      {
+       "label": "D",
+       "text": "200减2的差"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "198接近整百数200，写成200减2的差，就可以套用完全平方公式2计算，得40000减800加4，结果是39204。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1025",
+   "page": 28,
+   "description": "由剪拼成的正方形面积与边长的关系引出平方根，理解平方根、算术平方根与开平方的含义，会求非负数的平方根和算术平方根。",
+   "mastery_criteria": [
+    "能说出平方根与算术平方根的联系和区别",
+    "会求非负数的平方根和算术平方根"
+   ],
+   "misconceptions": [
+    "把算术平方根与平方根混为一谈",
+    "认为负数也有平方根"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1025_q1",
+     "topicId": "mxj_p1025",
+     "prompt": "9的平方根是多少？请写出所有结果。",
+     "question": "9的平方根是多少？请写出所有结果。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "负3"
+      },
+      {
+       "label": "C",
+       "text": "正负3"
+      },
+      {
+       "label": "D",
+       "text": "81"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "因为3的平方等于9，负3的平方也等于9，所以9的平方根有两个，是正负3。"
+    },
+    {
+     "id": "mxj_p1025_q2",
+     "topicId": "mxj_p1025",
+     "prompt": "16的算术平方根是多少？",
+     "question": "16的算术平方根是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "负4"
+      },
+      {
+       "label": "C",
+       "text": "正负4"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "算术平方根是正数a的正的平方根，因为4的平方等于16，所以16的算术平方根是4。"
+    },
+    {
+     "id": "mxj_p1025_q3",
+     "topicId": "mxj_p1025",
+     "prompt": "25的算术平方根是多少？",
+     "question": "25的算术平方根是多少？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "因为5的平方等于25，且算术平方根取正值，所以25的算术平方根是5。",
+     "verify": "{\"type\": \"num\", \"value\": 5}"
+    },
+    {
+     "id": "mxj_p1025_q4",
+     "topicId": "mxj_p1025",
+     "prompt": "1.44的算术平方根是多少？",
+     "question": "1.44的算术平方根是多少？",
+     "answer": 1.2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "因为1.2的平方等于1.44，算术平方根取正值，所以1.44的算术平方根是1.2。",
+     "verify": "{\"type\": \"num\", \"value\": 1.2}"
+    },
+    {
+     "id": "mxj_p1025_q5",
+     "topicId": "mxj_p1025",
+     "prompt": "0的平方根是多少？把结果填在括号内（　）。",
+     "question": "0的平方根是多少？把结果填在括号内（　）。",
+     "answer": "0",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "因为0的平方等于0，而非零数的平方不等于0，所以0的平方根就是0本身，0的算术平方根也是0。"
+    },
+    {
+     "id": "mxj_p1025_q6",
+     "topicId": "mxj_p1025",
+     "prompt": "若 x的平方 等于 121，则 x 的值是（　）。",
+     "question": "若 x的平方 等于 121，则 x 的值是（　）。",
+     "answer": "正负11",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "因为11的平方等于121，负11的平方也等于121，所以x有两个值，是正负11，不能只写11。"
+    },
+    {
+     "id": "mxj_p1025_q7",
+     "topicId": "mxj_p1025",
+     "prompt": "负数有平方根吗？请说明理由。",
+     "question": "负数有平方根吗？请说明理由。",
+     "answer": "没有平方根",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "同号两数相乘得正数，0的平方等于0，所以在目前学习的数中不存在平方等于负数的数，负数没有平方根。"
+    },
+    {
+     "id": "mxj_p1025_q8",
+     "topicId": "mxj_p1025",
+     "prompt": "下列说法中正确的是哪一项？",
+     "question": "下列说法中正确的是哪一项？",
+     "options": [
+      {
+       "label": "A",
+       "text": "4的平方根是2"
+      },
+      {
+       "label": "B",
+       "text": "负数没有平方根"
+      },
+      {
+       "label": "C",
+       "text": "0没有算术平方根"
+      },
+      {
+       "label": "D",
+       "text": "平方根等于它本身的数只有1"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "负数没有平方根，所以第二项正确；4的平方根是正负2，0的算术平方根是0，平方根等于本身的数是0。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1026",
+   "page": 35,
+   "description": "由正方体体积与棱长的关系引出立方根，理解开立方与立方互为逆运算，掌握正数、负数和0的立方根的情况，会求一个数的立方根并估计其大小。",
+   "mastery_criteria": [
+    "会求一个数的立方根",
+    "能说出正数、负数、0的立方根的情况"
+   ],
+   "misconceptions": [
+    "把立方根与平方根混淆，认为负数没有立方根",
+    "求立方根时漏掉负号"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1026_q1",
+     "topicId": "mxj_p1026",
+     "prompt": "8的立方根是多少？请写出计算结果。",
+     "question": "8的立方根是多少？请写出计算结果。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "负2"
+      },
+      {
+       "label": "C",
+       "text": "正负2"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "因为2的立方等于8，所以8的立方根是2，一个正数只有一个正的立方根。"
+    },
+    {
+     "id": "mxj_p1026_q2",
+     "topicId": "mxj_p1026",
+     "prompt": "负27的立方根是多少？",
+     "question": "负27的立方根是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "负3"
+      },
+      {
+       "label": "C",
+       "text": "正负3"
+      },
+      {
+       "label": "D",
+       "text": "不存在"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "因为负3的立方等于负27，负数有一个负的立方根，所以负27的立方根是负3。"
+    },
+    {
+     "id": "mxj_p1026_q3",
+     "topicId": "mxj_p1026",
+     "prompt": "64的立方根是多少？请写出结果。",
+     "question": "64的立方根是多少？请写出结果。",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "因为4的立方等于64，所以64的立方根是4，正数的立方根是正数。",
+     "verify": "{\"type\": \"num\", \"value\": 4}"
+    },
+    {
+     "id": "mxj_p1026_q4",
+     "topicId": "mxj_p1026",
+     "prompt": "负0.125的立方根是多少？",
+     "question": "负0.125的立方根是多少？",
+     "answer": -0.5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "因为负0.5的立方等于负0.125，所以负0.125的立方根是负0.5。",
+     "verify": "{\"type\": \"num\", \"value\": -0.5}"
+    },
+    {
+     "id": "mxj_p1026_q5",
+     "topicId": "mxj_p1026",
+     "prompt": "0的立方根是多少？把结果填在括号里（　）。",
+     "question": "0的立方根是多少？把结果填在括号里（　）。",
+     "answer": "0",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "因为0的立方等于0，所以0的立方根是0；在目前学习的数中，每个数有且只有一个立方根。"
+    },
+    {
+     "id": "mxj_p1026_q6",
+     "topicId": "mxj_p1026",
+     "prompt": "体积为216立方厘米的正方体，它的棱长是（　）厘米。",
+     "question": "体积为216立方厘米的正方体，它的棱长是（　）厘米。",
+     "answer": "6",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "设棱长为x厘米，则x的立方等于216，因为6的立方等于216，所以这个正方体的棱长是6厘米。"
+    },
+    {
+     "id": "mxj_p1026_q7",
+     "topicId": "mxj_p1026",
+     "prompt": "平方根与立方根有什么不同？请简要说明。",
+     "question": "平方根与立方根有什么不同？请简要说明。",
+     "answer": "正数有两个平方根而任何数只有一个立方根，负数没有平方根但有立方根",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "正数有两个互为相反数的平方根，负数没有平方根；而每个数只有一个立方根，正数的立方根为正，负数的立方根为负。"
+    },
+    {
+     "id": "mxj_p1026_q8",
+     "topicId": "mxj_p1026",
+     "prompt": "下列说法中正确的是哪一项？",
+     "question": "下列说法中正确的是哪一项？",
+     "options": [
+      {
+       "label": "A",
+       "text": "正负4是64的立方根"
+      },
+      {
+       "label": "B",
+       "text": "负64没有立方根"
+      },
+      {
+       "label": "C",
+       "text": "(负5)的立方的立方根是负5"
+      },
+      {
+       "label": "D",
+       "text": "互为相反数的两个数的立方根相等"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "64的立方根只有4；负数有立方根；互为相反数的两个数的立方根也互为相反数，并不相等；负5先立方再开立方仍得负5，所以第三项正确。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1027",
+   "page": 39,
+   "description": "把有理数与无理数统称为实数，学习实数的分类、实数与数轴上的点一一对应，会求实数的相反数与绝对值并比较实数的大小。",
+   "mastery_criteria": [
+    "能判断无理数并对实数分类",
+    "会比较实数大小、求实数的相反数与绝对值"
+   ],
+   "misconceptions": [
+    "认为带根号的数一定是无理数",
+    "把无限小数都当成有理数"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1027_q1",
+     "topicId": "mxj_p1027",
+     "prompt": "下列各数中，是无理数的是哪一个？",
+     "question": "下列各数中，是无理数的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.25"
+      },
+      {
+       "label": "B",
+       "text": "根号5"
+      },
+      {
+       "label": "C",
+       "text": "负3"
+      },
+      {
+       "label": "D",
+       "text": "七分之二十二"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "0.25是有限小数，负3是整数，七分之二十二是分数，它们都是有理数；根号5是无限不循环小数，是无理数。"
+    },
+    {
+     "id": "mxj_p1027_q2",
+     "topicId": "mxj_p1027",
+     "prompt": "实数与数轴上的点之间有怎样的关系？",
+     "question": "实数与数轴上的点之间有怎样的关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "一一对应"
+      },
+      {
+       "label": "B",
+       "text": "实数比点更多"
+      },
+      {
+       "label": "C",
+       "text": "点比实数更多"
+      },
+      {
+       "label": "D",
+       "text": "只有有理数能用点表示"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "每一个实数都可以用数轴上唯一的点表示，数轴上每一个点也都表示唯一的实数，所以实数和数轴上的点一一对应。"
+    },
+    {
+     "id": "mxj_p1027_q3",
+     "topicId": "mxj_p1027",
+     "prompt": "根号9 的值是多少？请算出结果。",
+     "question": "根号9 的值是多少？请算出结果。",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "根号9表示9的算术平方根，因为3的平方等于9，所以根号9等于3，它是一个有理数。",
+     "verify": "{\"type\": \"num\", \"value\": 3}"
+    },
+    {
+     "id": "mxj_p1027_q4",
+     "topicId": "mxj_p1027",
+     "prompt": "一个数的绝对值是3.5，且这个数是负数，这个数是多少？",
+     "question": "一个数的绝对值是3.5，且这个数是负数，这个数是多少？",
+     "answer": -3.5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "负实数的绝对值是它的相反数，绝对值等于3.5的负数只有负3.5。",
+     "verify": "{\"type\": \"num\", \"value\": -3.5}"
+    },
+    {
+     "id": "mxj_p1027_q5",
+     "topicId": "mxj_p1027",
+     "prompt": "实数可以分为正实数、0和（　）三类。",
+     "question": "实数可以分为正实数、0和（　）三类。",
+     "answer": "负实数",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "与有理数的分类一样，实数分为正实数、零和负实数，正实数都大于0，负实数都小于0。"
+    },
+    {
+     "id": "mxj_p1027_q6",
+     "topicId": "mxj_p1027",
+     "prompt": "数轴上表示负根号2的点在原点的（　）边。",
+     "question": "数轴上表示负根号2的点在原点的（　）边。",
+     "answer": "左",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "负实数都小于0，数轴上表示负实数的点在原点左边，所以表示负根号2的点在原点左边。"
+    },
+    {
+     "id": "mxj_p1027_q7",
+     "topicId": "mxj_p1027",
+     "prompt": "不用计算器比较 根号7 与 2.6 的大小。",
+     "question": "不用计算器比较 根号7 与 2.6 的大小。",
+     "answer": "根号7大于2.6",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "因为2.6的平方等于6.76，而7大于6.76，两个正数中平方较大的数较大，所以根号7大于2.6。"
+    },
+    {
+     "id": "mxj_p1027_q8",
+     "topicId": "mxj_p1027",
+     "prompt": "下列说法中正确的是哪一项？",
+     "question": "下列说法中正确的是哪一项？",
+     "options": [
+      {
+       "label": "A",
+       "text": "无限小数都是无理数"
+      },
+      {
+       "label": "B",
+       "text": "带根号的数都是无理数"
+      },
+      {
+       "label": "C",
+       "text": "无理数都是无限不循环小数"
+      },
+      {
+       "label": "D",
+       "text": "不带根号的数都是有理数"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "无理数的定义就是无限不循环小数；无限循环小数是有理数，根号9这类带根号的数是有理数，π不带根号却是无理数。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1028",
+   "page": 56,
+   "description": "从限速标志、天平倾斜等情境认识不等号，理解不等式的意义，会用不等式表示数量之间的不等关系，并会用代入检验估计满足不等式的数的范围。",
+   "mastery_criteria": [
+    "能用不等号表示简单的不等关系",
+    "能判断一个数是不是不等式的解"
+   ],
+   "misconceptions": [
+    "把不小于写成大于",
+    "列不等式时把不等号方向写反"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1028_q1",
+     "topicId": "mxj_p1028",
+     "prompt": "下列式子中，是不等式的是哪一个？",
+     "question": "下列式子中，是不等式的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x+1"
+      },
+      {
+       "label": "B",
+       "text": "x等于5"
+      },
+      {
+       "label": "C",
+       "text": "x大于3"
+      },
+      {
+       "label": "D",
+       "text": "3加4等于7"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "用不等号连接而成的式子叫不等式，x大于3含有大于号，是不等式；另两项分别是代数式和等式。"
+    },
+    {
+     "id": "mxj_p1028_q2",
+     "topicId": "mxj_p1028",
+     "prompt": "某高速公路规定车速不低于60 km/h，用 v 表示车速，下列式子正确的是哪一项？",
+     "question": "某高速公路规定车速不低于60 km/h，用 v 表示车速，下列式子正确的是哪一项？",
+     "options": [
+      {
+       "label": "A",
+       "text": "v大于60"
+      },
+      {
+       "label": "B",
+       "text": "v小于60"
+      },
+      {
+       "label": "C",
+       "text": "v小于或等于60"
+      },
+      {
+       "label": "D",
+       "text": "v大于或等于60"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "不低于就是大于或等于，用大于或等于号表示，所以应写成v大于或等于60。"
+    },
+    {
+     "id": "mxj_p1028_q3",
+     "topicId": "mxj_p1028",
+     "prompt": "奥运会射箭每箭最高10环，某选手前十箭中最低一箭为7环，则这十箭的总环数最少是多少环？",
+     "question": "奥运会射箭每箭最高10环，某选手前十箭中最低一箭为7环，则这十箭的总环数最少是多少环？",
+     "answer": 70,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "前十箭中最低为7环，说明每一箭都不少于7环，所以十箭的总环数至少是7乘10等于70环。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 7}, {\"type\": \"num\", \"value\": 10}]}"
+    },
+    {
+     "id": "mxj_p1028_q4",
+     "topicId": "mxj_p1028",
+     "prompt": "若 x 取正整数，且 x 小于 6，则 x 的最大值是多少？",
+     "question": "若 x 取正整数，且 x 小于 6，则 x 的最大值是多少？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "小于6的正整数有1，2，3，4，5，其中最大的是5，所以x的最大值是5。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 1}]}"
+    },
+    {
+     "id": "mxj_p1028_q5",
+     "topicId": "mxj_p1028",
+     "prompt": "网球的质量 m 克大于砝码的质量20克，用不等式表示为 m（　）20。",
+     "question": "网球的质量 m 克大于砝码的质量20克，用不等式表示为 m（　）20。",
+     "answer": "大于号",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "天平向左倾斜说明网球一侧更重，即m大于20，用大于号连接这两个量。"
+    },
+    {
+     "id": "mxj_p1028_q6",
+     "topicId": "mxj_p1028",
+     "prompt": "用不等式表示 a 是非负数，可写成 a（　）0。",
+     "question": "用不等式表示 a 是非负数，可写成 a（　）0。",
+     "answer": "大于或等于号",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "非负数就是大于或等于0的数，所以写成a大于或等于0，注意不能用大于号，因为0也是非负数。"
+    },
+    {
+     "id": "mxj_p1028_q7",
+     "topicId": "mxj_p1028",
+     "prompt": "用不等式表示：a 的5倍大于负7。",
+     "question": "用不等式表示：a 的5倍大于负7。",
+     "answer": "5a大于负7",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "a的5倍写成5a，大于用大于号表示，负7写成负7，所以不等式是5a大于负7。"
+    },
+    {
+     "id": "mxj_p1028_q8",
+     "topicId": "mxj_p1028",
+     "prompt": "下列关于不等式的说法中正确的是哪一项？",
+     "question": "下列关于不等式的说法中正确的是哪一项？",
+     "options": [
+      {
+       "label": "A",
+       "text": "不等式一定含有未知数"
+      },
+      {
+       "label": "B",
+       "text": "用不等号连接而成的式子是不等式"
+      },
+      {
+       "label": "C",
+       "text": "不等式的解只有一个"
+      },
+      {
+       "label": "D",
+       "text": "不等式 x大于2 的解是2"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "不等式的定义就是用不等号连接而成的式子；不等式可以不含未知数，解集通常有许多个数，x大于2不包括2。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1029",
+   "page": 59,
+   "description": "通过具体数的比较归纳出不等式的基本性质，理解两边同乘或同除以负数时不等号方向改变，并会用性质把不等式化为 x 小于 a 或 x 大于 a 的形式。",
+   "mastery_criteria": [
+    "能运用不等式的基本性质对不等式变形",
+    "能在两边乘除负数时正确改变不等号方向"
+   ],
+   "misconceptions": [
+    "两边乘负数时忘记改变不等号方向",
+    "把不等式的性质与等式的性质完全等同"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p1029_q1",
+     "topicId": "mxj_p1029",
+     "prompt": "已知 a 大于 b，则下列结论正确的是哪一项？",
+     "question": "已知 a 大于 b，则下列结论正确的是哪一项？",
+     "options": [
+      {
+       "label": "A",
+       "text": "a减3大于b减3"
+      },
+      {
+       "label": "B",
+       "text": "a减3小于b减3"
+      },
+      {
+       "label": "C",
+       "text": "负a大于负b"
+      },
+      {
+       "label": "D",
+       "text": "a除以负2大于b除以负2"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "不等式两边都减去同一个数3，不等号方向不变，得a减3大于b减3，其余三项都错在乘除负数时没有改变方向。"
+    },
+    {
+     "id": "mxj_p1029_q2",
+     "topicId": "mxj_p1029",
+     "prompt": "已知 a 小于 b，且 c 小于0，则 ac 与 bc 的大小关系是什么？",
+     "question": "已知 a 小于 b，且 c 小于0，则 ac 与 bc 的大小关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "ac小于bc"
+      },
+      {
+       "label": "B",
+       "text": "ac大于bc"
+      },
+      {
+       "label": "C",
+       "text": "ac等于bc"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "不等式两边都乘同一个负数c，不等号方向改变，所以ac大于bc。"
+    },
+    {
+     "id": "mxj_p1029_q3",
+     "topicId": "mxj_p1029",
+     "prompt": "已知 x+7 大于 10，则 x 大于多少？",
+     "question": "已知 x+7 大于 10，则 x 大于多少？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "两边都减去7，不等号方向不变，得x大于3。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 7}]}"
+    },
+    {
+     "id": "mxj_p1029_q4",
+     "topicId": "mxj_p1029",
+     "prompt": "不等式 负3x 小于 12 的解集是 x 大于多少？",
+     "question": "不等式 负3x 小于 12 的解集是 x 大于多少？",
+     "answer": -4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "两边都除以负3，除以负数时不等号方向改变，得x大于负4。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 12}, {\"type\": \"num\", \"value\": -3}]}"
+    },
+    {
+     "id": "mxj_p1029_q5",
+     "topicId": "mxj_p1029",
+     "prompt": "不等式的两边都乘（或除以）同一个正数，不等号的方向（　）。",
+     "question": "不等式的两边都乘（或除以）同一个正数，不等号的方向（　）。",
+     "answer": "不变",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "这是不等式的基本性质2：两边都乘或除以同一个正数，不等号方向不变，只有乘除负数时方向才改变。"
+    },
+    {
+     "id": "mxj_p1029_q6",
+     "topicId": "mxj_p1029",
+     "prompt": "已知 2a 小于 3a，那么 a 与 0 的大小关系是 a（　）0。",
+     "question": "已知 2a 小于 3a，那么 a 与 0 的大小关系是 a（　）0。",
+     "answer": "大于号",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "两边都减去2a，得0小于a，也就是a大于0，所以填大于号。"
+    },
+    {
+     "id": "mxj_p1029_q7",
+     "topicId": "mxj_p1029",
+     "prompt": "用不等式的基本性质说明：由 a 小于 b 可以得到 a减5 小于 b减5。",
+     "question": "用不等式的基本性质说明：由 a 小于 b 可以得到 a减5 小于 b减5。",
+     "answer": "两边都减去5，不等号方向不变",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "不等式的基本性质1指出，两边都加上或减去同一个数或同一个整式，不等号方向不变，这里两边都减去5，所以a减5小于b减5。"
+    },
+    {
+     "id": "mxj_p1029_q8",
+     "topicId": "mxj_p1029",
+     "prompt": "若 a 大于 b，则下列结论一定成立的是哪一项？",
+     "question": "若 a 大于 b，则下列结论一定成立的是哪一项？",
+     "options": [
+      {
+       "label": "A",
+       "text": "ac大于bc"
+      },
+      {
+       "label": "B",
+       "text": "a的平方大于b的平方"
+      },
+      {
+       "label": "C",
+       "text": "a减1大于b减1"
+      },
+      {
+       "label": "D",
+       "text": "a除以c大于b除以c"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两边都减去1，不等号方向不变，所以a减1大于b减1；当c取0或负数、a与b取负数时，其余三项都不一定成立。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1030",
+   "page": 66,
+   "description": "类比一元一次方程，按去分母、去括号、移项、合并同类项、系数化为1的步骤解一元一次不等式，并会在数轴上表示解集。",
+   "mastery_criteria": [
+    "能按步骤解一元一次不等式",
+    "能在数轴上正确表示解集"
+   ],
+   "misconceptions": [
+    "系数化为1时除以负数忘记改变不等号方向",
+    "数轴上端点该画空心圆圈却画成实心圆点"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1030_q1",
+     "topicId": "mxj_p1030",
+     "prompt": "解不等式 2x 大于 8，得到的解集是什么？",
+     "question": "解不等式 2x 大于 8，得到的解集是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x大于4"
+      },
+      {
+       "label": "B",
+       "text": "x小于4"
+      },
+      {
+       "label": "C",
+       "text": "x大于16"
+      },
+      {
+       "label": "D",
+       "text": "x小于16"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两边都除以2，2是正数，不等号方向不变，得x大于4。"
+    },
+    {
+     "id": "mxj_p1030_q2",
+     "topicId": "mxj_p1030",
+     "prompt": "解不等式 负2x 大于 6，得到的解集是什么？",
+     "question": "解不等式 负2x 大于 6，得到的解集是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x大于负3"
+      },
+      {
+       "label": "B",
+       "text": "x大于3"
+      },
+      {
+       "label": "C",
+       "text": "x小于3"
+      },
+      {
+       "label": "D",
+       "text": "x小于负3"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两边都除以负2，除以负数时不等号方向改变，得x小于负3。"
+    },
+    {
+     "id": "mxj_p1030_q3",
+     "topicId": "mxj_p1030",
+     "prompt": "不等式 x减3 大于 5 的解集中，最小的整数是多少？",
+     "question": "不等式 x减3 大于 5 的解集中，最小的整数是多少？",
+     "answer": 9,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "移项得x大于8，大于8的整数中最小的是9。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"num\", \"value\": 1}]}"
+    },
+    {
+     "id": "mxj_p1030_q4",
+     "topicId": "mxj_p1030",
+     "prompt": "不等式 3x+1 小于或等于 10 的最大整数解是多少？",
+     "question": "不等式 3x+1 小于或等于 10 的最大整数解是多少？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "移项得3x小于或等于9，两边都除以3得x小于或等于3，所以最大整数解是3。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 1}]}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "mxj_p1030_q5",
+     "topicId": "mxj_p1030",
+     "prompt": "把不等式一边的某一项改变符号后移到另一边，这种变形叫作（　）。",
+     "question": "把不等式一边的某一项改变符号后移到另一边，这种变形叫作（　）。",
+     "answer": "移项",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "移项的依据是不等式的基本性质1，移项时要把所移的项改变符号，不等号方向不变。"
+    },
+    {
+     "id": "mxj_p1030_q6",
+     "topicId": "mxj_p1030",
+     "prompt": "不等式 x 大于或等于2 的解集中，最小的正整数是（　）。",
+     "question": "不等式 x 大于或等于2 的解集中，最小的正整数是（　）。",
+     "answer": "2",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "解集是大于或等于2的一切实数，其中有正整数且有最小的正整数，它就是2。"
+    },
+    {
+     "id": "mxj_p1030_q7",
+     "topicId": "mxj_p1030",
+     "prompt": "解不等式 2(x-1) 小于 x+3，并写出解集。",
+     "question": "解不等式 2(x-1) 小于 x+3，并写出解集。",
+     "answer": "x小于5",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "去括号得2x减2小于x加3，移项得2x减x小于3加2，合并同类项得x小于5。"
+    },
+    {
+     "id": "mxj_p1030_q8",
+     "topicId": "mxj_p1030",
+     "prompt": "关于解一元一次不等式与解一元一次方程，下列说法正确的是哪一项？",
+     "question": "关于解一元一次不等式与解一元一次方程，下列说法正确的是哪一项？",
+     "options": [
+      {
+       "label": "A",
+       "text": "两者步骤完全相同，结果也相同"
+      },
+      {
+       "label": "B",
+       "text": "两者步骤类似，但不等式两边除以负数时不等号方向要改变"
+      },
+      {
+       "label": "C",
+       "text": "不等式不能去分母"
+      },
+      {
+       "label": "D",
+       "text": "不等式移项时要改变不等号的方向"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两者都按去分母、去括号、移项、合并同类项、系数化为1进行，唯一区别是两边乘除负数时不等号方向要改变。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1031",
+   "page": 71,
+   "description": "在实际问题中找出不等量关系，设未知数列出一元一次不等式，求解后结合实际意义确定整数解或最小值最大值。",
+   "mastery_criteria": [
+    "能找出实际问题中的不等量关系并列出不等式",
+    "能结合实际意义确定答案"
+   ],
+   "misconceptions": [
+    "把至多、至少对应的不等号写反",
+    "求出解集后忽略实际问题中的整数要求"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "mxj_p1031_q1",
+     "topicId": "mxj_p1031",
+     "prompt": "用一元一次不等式解决实际问题时，第一步通常做什么？",
+     "question": "用一元一次不等式解决实际问题时，第一步通常做什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "设未知数并找出不等量关系"
+      },
+      {
+       "label": "B",
+       "text": "直接计算出结果"
+      },
+      {
+       "label": "C",
+       "text": "先画数轴"
+      },
+      {
+       "label": "D",
+       "text": "先检验答案"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "列不等式的关键是设出未知数，找出题目中的不等量关系，再据此列出不等式求解。"
+    },
+    {
+     "id": "mxj_p1031_q2",
+     "topicId": "mxj_p1031",
+     "prompt": "小明坐着最多只能提举4.5 kg，桌上有两本各重1.2 kg的画册和每本重0.4 kg的记事本，设搬x本记事本，则下列不等式正确的是哪一项？",
+     "question": "小明坐着最多只能提举4.5 kg，桌上有两本各重1.2 kg的画册和每本重0.4 kg的记事本，设搬x本记事本，则下列不等式正确的是哪一项？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2.4+0.4x大于或等于4.5"
+      },
+      {
+       "label": "B",
+       "text": "2.4+0.4x小于或等于4.5"
+      },
+      {
+       "label": "C",
+       "text": "1.2+0.4x小于或等于4.5"
+      },
+      {
+       "label": "D",
+       "text": "2.4x+0.4小于或等于4.5"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两本画册共2.4 kg，x本记事本重0.4x kg，总重量不超过4.5 kg，所以是2.4加0.4x小于或等于4.5。"
+    },
+    {
+     "id": "mxj_p1031_q3",
+     "topicId": "mxj_p1031",
+     "prompt": "按上题的不等量关系，小明最多能搬动多少本记事本？",
+     "question": "按上题的不等量关系，小明最多能搬动多少本记事本？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "由2.4加0.4x小于或等于4.5解得x小于或等于5.25，记事本的本数是整数，所以最多能搬5本。",
+     "verify": "{\"type\": \"num\", \"value\": 5}"
+    },
+    {
+     "id": "mxj_p1031_q4",
+     "topicId": "mxj_p1031",
+     "prompt": "一种电子琴每台进价1800元，商店按标价的八折出售，所得利润不低于售价的10%，每台标价至少是多少元？",
+     "question": "一种电子琴每台进价1800元，商店按标价的八折出售，所得利润不低于售价的10%，每台标价至少是多少元？",
+     "answer": 2500,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "设标价为x元，则售价为0.8x元，利润不低于售价的10%，得0.8x减1800大于或等于0.08x，解得x大于或等于2500。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 1800}, {\"type\": \"num\", \"value\": 0.72}]}"
+    },
+    {
+     "id": "mxj_p1031_q5",
+     "topicId": "mxj_p1031",
+     "prompt": "「不超过」用不等号表示是（　）。",
+     "question": "「不超过」用不等号表示是（　）。",
+     "answer": "小于或等于号",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "不超过就是至多，也就是小于或等于，用小于或等于号表示；与之相对，不低于用大于或等于号表示。"
+    },
+    {
+     "id": "mxj_p1031_q6",
+     "topicId": "mxj_p1031",
+     "prompt": "某班一半学生学乐器，四分之一学计算机，七分之一练踢足球，还剩不超过6人收集植物样本，这个班最多有（　）名学生。",
+     "question": "某班一半学生学乐器，四分之一学计算机，七分之一练踢足球，还剩不超过6人收集植物样本，这个班最多有（　）名学生。",
+     "answer": "56",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "除收集样本外其余部分共占二十八分之二十五，剩下二十八分之三的学生不超过6人，得学生数不超过56，所以最多56名。"
+    },
+    {
+     "id": "mxj_p1031_q7",
+     "topicId": "mxj_p1031",
+     "prompt": "某工程队计划14天内修路1900 m，开始4天每天只能修100 m，天气转好后平均每天至少要修多少米才能按期或提前完成？",
+     "question": "某工程队计划14天内修路1900 m，开始4天每天只能修100 m，天气转好后平均每天至少要修多少米才能按期或提前完成？",
+     "answer": "至少150米",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "前4天共修400 m，还剩1500 m要在剩下的10天内完成，1500除以10等于150，所以平均每天至少修150 m。"
+    },
+    {
+     "id": "mxj_p1031_q8",
+     "topicId": "mxj_p1031",
+     "prompt": "某商品进价200元，标价300元，商店最多打几折销售，才能使利润率不低于20%？",
+     "question": "某商品进价200元，标价300元，商店最多打几折销售，才能使利润率不低于20%？",
+     "options": [
+      {
+       "label": "A",
+       "text": "六折"
+      },
+      {
+       "label": "B",
+       "text": "七折"
+      },
+      {
+       "label": "C",
+       "text": "八折"
+      },
+      {
+       "label": "D",
+       "text": "九折"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "利润率不低于20%要求售价不低于200乘1.2等于240元，240除以300等于0.8，所以最多打八折。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1032",
+   "page": 74,
+   "description": "把含有相同未知数的几个一元一次不等式联立成不等式组，借助同一条数轴求各解集的公共部分，并用不等式组解决简单的实际问题。",
+   "mastery_criteria": [
+    "会解由两个一元一次不等式组成的不等式组",
+    "会用数轴确定解集的公共部分"
+   ],
+   "misconceptions": [
+    "把解集的公共部分取成并集",
+    "不等式组无解时仍写出一段范围"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1032_q1",
+     "topicId": "mxj_p1032",
+     "prompt": "不等式组中两个不等式分别是 x 大于3 和 x 大于5，这个不等式组的解集是什么？",
+     "question": "不等式组中两个不等式分别是 x 大于3 和 x 大于5，这个不等式组的解集是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x大于3"
+      },
+      {
+       "label": "B",
+       "text": "x大于5"
+      },
+      {
+       "label": "C",
+       "text": "3小于x小于5"
+      },
+      {
+       "label": "D",
+       "text": "无解"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两个解集的公共部分是大于5的那一部分，所以不等式组的解集是x大于5。"
+    },
+    {
+     "id": "mxj_p1032_q2",
+     "topicId": "mxj_p1032",
+     "prompt": "不等式组中两个不等式分别是 x 小于2 和 x 大于5，这个不等式组的解集是什么？",
+     "question": "不等式组中两个不等式分别是 x 小于2 和 x 大于5，这个不等式组的解集是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x小于2"
+      },
+      {
+       "label": "B",
+       "text": "x大于5"
+      },
+      {
+       "label": "C",
+       "text": "2小于x小于5"
+      },
+      {
+       "label": "D",
+       "text": "无解"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "小于2的数与大于5的数没有公共部分，在数轴上两段不相交，所以这个不等式组无解。"
+    },
+    {
+     "id": "mxj_p1032_q3",
+     "topicId": "mxj_p1032",
+     "prompt": "不等式组中两个不等式分别是 x 大于1 和 x 小于6，这个不等式组的整数解共有多少个？",
+     "question": "不等式组中两个不等式分别是 x 大于1 和 x 小于6，这个不等式组的整数解共有多少个？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "解集是1小于x小于6，其中的整数有2，3，4，5，共4个。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 1}]}, {\"type\": \"num\", \"value\": 1}]}"
+    },
+    {
+     "id": "mxj_p1032_q4",
+     "topicId": "mxj_p1032",
+     "prompt": "不等式组中两个不等式分别是 x 大于负1 和 x 小于3，这个不等式组的最小整数解是多少？",
+     "question": "不等式组中两个不等式分别是 x 大于负1 和 x 小于3，这个不等式组的最小整数解是多少？",
+     "answer": 0,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "解集是负1小于x小于3，其中的整数有0，1，2，最小的是0。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": -1}, {\"type\": \"num\", \"value\": 1}]}"
+    },
+    {
+     "id": "mxj_p1032_q5",
+     "topicId": "mxj_p1032",
+     "prompt": "求不等式组的解集，就是求组成不等式组的各个不等式解集的（　）部分。",
+     "question": "求不等式组的解集，就是求组成不等式组的各个不等式解集的（　）部分。",
+     "answer": "公共",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "不等式组的解集是各个不等式解集的公共部分，通常在同一条数轴上表示各个解集后找出公共部分。"
+    },
+    {
+     "id": "mxj_p1032_q6",
+     "topicId": "mxj_p1032",
+     "prompt": "若不等式组中两个不等式分别是 x 大于a 和 x 小于3，且这个不等式组无解，则 a 应满足 a（　）3。",
+     "question": "若不等式组中两个不等式分别是 x 大于a 和 x 小于3，且这个不等式组无解，则 a 应满足 a（　）3。",
+     "answer": "大于或等于号",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "当a小于3时两段有公共部分；当a等于3或a大于3时两段没有公共部分，所以a大于或等于3时不等式组无解。"
+    },
+    {
+     "id": "mxj_p1032_q7",
+     "topicId": "mxj_p1032",
+     "prompt": "解不等式组：第一个不等式是 x减1 大于2，第二个不等式是 2x 小于10，写出这个不等式组的解集。",
+     "question": "解不等式组：第一个不等式是 x减1 大于2，第二个不等式是 2x 小于10，写出这个不等式组的解集。",
+     "answer": "3小于x小于5",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "第一个不等式解得x大于3，第二个不等式解得x小于5，两个解集的公共部分是3小于x小于5。"
+    },
+    {
+     "id": "mxj_p1032_q8",
+     "topicId": "mxj_p1032",
+     "prompt": "一个长方形足球场的宽为70 m，要求周长大于350 m、面积小于7630平方米，设长为x m，则x的取值范围是什么？",
+     "question": "一个长方形足球场的宽为70 m，要求周长大于350 m、面积小于7630平方米，设长为x m，则x的取值范围是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "105小于x小于109"
+      },
+      {
+       "label": "B",
+       "text": "105小于x小于110"
+      },
+      {
+       "label": "C",
+       "text": "100小于x小于109"
+      },
+      {
+       "label": "D",
+       "text": "x大于105"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由周长2(x+70)大于350得x大于105，由面积70x小于7630得x小于109，取公共部分得105小于x小于109。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1033",
+   "page": 90,
+   "description": "认识同一平面内两条直线的相交、重合与平行三种位置关系，理解对顶角相等，并识别两条直线被第三条直线所截形成的同位角、内错角与同旁内角。",
+   "mastery_criteria": [
+    "能判断同一平面内两条直线的位置关系",
+    "能识别同位角、内错角和同旁内角"
+   ],
+   "misconceptions": [
+    "把内错角与同旁内角的位置特征混淆",
+    "认为同一平面内两条直线只能相交或平行"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1033_q1",
+     "topicId": "mxj_p1033",
+     "prompt": "在同一平面内，两条直线的位置关系有哪几种？",
+     "question": "在同一平面内，两条直线的位置关系有哪几种？",
+     "options": [
+      {
+       "label": "A",
+       "text": "相交和平行两种"
+      },
+      {
+       "label": "B",
+       "text": "相交、重合和平行三种"
+      },
+      {
+       "label": "C",
+       "text": "只有平行"
+      },
+      {
+       "label": "D",
+       "text": "只有相交"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "同一平面内两条直线或者相交，或者重合，或者既不相交也不重合即平行，共三种。"
+    },
+    {
+     "id": "mxj_p1033_q2",
+     "topicId": "mxj_p1033",
+     "prompt": "对顶角有怎样的性质？",
+     "question": "对顶角有怎样的性质？",
+     "options": [
+      {
+       "label": "A",
+       "text": "对顶角相等"
+      },
+      {
+       "label": "B",
+       "text": "对顶角互补"
+      },
+      {
+       "label": "C",
+       "text": "对顶角互余"
+      },
+      {
+       "label": "D",
+       "text": "对顶角不一定相等"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个角都与同一个角互补，由同角的补角相等可以得出对顶角相等。"
+    },
+    {
+     "id": "mxj_p1033_q3",
+     "topicId": "mxj_p1033",
+     "prompt": "两条直线相交，其中一个角是40度，则它的对顶角是多少度？",
+     "question": "两条直线相交，其中一个角是40度，则它的对顶角是多少度？",
+     "answer": 40,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "对顶角相等，所以它的对顶角也是40度，与它相邻的两个角各是140度。",
+     "verify": "{\"type\": \"num\", \"value\": 40}"
+    },
+    {
+     "id": "mxj_p1033_q4",
+     "topicId": "mxj_p1033",
+     "prompt": "两条直线相交所成的四个角中，有一个角是65度，则与它相邻的角是多少度？",
+     "question": "两条直线相交所成的四个角中，有一个角是65度，则与它相邻的角是多少度？",
+     "answer": 115,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "相邻的两个角互为补角，用180度减去65度得115度，所以与它相邻的角是115度。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 180}, {\"type\": \"num\", \"value\": 65}]}"
+    },
+    {
+     "id": "mxj_p1033_q5",
+     "topicId": "mxj_p1033",
+     "prompt": "两条直线被第三条直线所截，在两条被截直线之间、并且分别在被截直线两侧的一对角，叫作（　）角。",
+     "question": "两条直线被第三条直线所截，在两条被截直线之间、并且分别在被截直线两侧的一对角，叫作（　）角。",
+     "answer": "内错",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "内错角的位置特征是夹在两条被截直线之间，并且分居第三条直线两侧；同旁内角则在同一旁。"
+    },
+    {
+     "id": "mxj_p1033_q6",
+     "topicId": "mxj_p1033",
+     "prompt": "两条直线被第三条直线所截，在两条被截直线的同一方、并且都在第三条直线同侧的一对角，叫作（　）角。",
+     "question": "两条直线被第三条直线所截，在两条被截直线的同一方、并且都在第三条直线同侧的一对角，叫作（　）角。",
+     "answer": "同位",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "同位角的位置特征是处在两条被截直线的同一方，并且都在截线的同一侧，形状像字母F。"
+    },
+    {
+     "id": "mxj_p1033_q7",
+     "topicId": "mxj_p1033",
+     "prompt": "两条直线被第三条直线所截，如果有一对同位角相等，那么内错角一定相等吗？请说明理由。",
+     "question": "两条直线被第三条直线所截，如果有一对同位角相等，那么内错角一定相等吗？请说明理由。",
+     "answer": "一定相等，因为对顶角相等，可以用等量代换说明",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "设同位角∠1与∠2相等，∠1与内错角∠3是对顶角所以∠1等于∠3，由等量代换得∠2等于∠3，即内错角相等。"
+    },
+    {
+     "id": "mxj_p1033_q8",
+     "topicId": "mxj_p1033",
+     "prompt": "三条直线两两相交，交点的个数最多是多少个？",
+     "question": "三条直线两两相交，交点的个数最多是多少个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1个"
+      },
+      {
+       "label": "B",
+       "text": "2个"
+      },
+      {
+       "label": "C",
+       "text": "3个"
+      },
+      {
+       "label": "D",
+       "text": "4个"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "三条直线两两相交且不经过同一点时，每两条直线有一个交点，共3个交点，这是交点个数最多的情况。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1034",
+   "page": 97,
+   "description": "理解平移由移动的方向和距离决定，掌握平移后对应点连线平行且相等、图形的形状和大小不变的性质，并能画出平移后的图形。",
+   "mastery_criteria": [
+    "能说出平移的方向与距离",
+    "能利用平移的性质求线段长和角"
+   ],
+   "misconceptions": [
+    "认为平移会改变图形的形状或大小",
+    "把平移与旋转混为一谈"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1034_q1",
+     "topicId": "mxj_p1034",
+     "prompt": "一次平移由什么要素确定？请说明。",
+     "question": "一次平移由什么要素确定？请说明。",
+     "options": [
+      {
+       "label": "A",
+       "text": "只由方向确定"
+      },
+      {
+       "label": "B",
+       "text": "只由距离确定"
+      },
+      {
+       "label": "C",
+       "text": "由移动的方向和距离确定"
+      },
+      {
+       "label": "D",
+       "text": "由旋转中心确定"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把图形上每一个点沿同一方向移动相同的距离，这个方向与这段距离共同确定了一次平移。"
+    },
+    {
+     "id": "mxj_p1034_q2",
+     "topicId": "mxj_p1034",
+     "prompt": "一个图形和它平移后所得的图形中，两组对应点的连线有什么特点？",
+     "question": "一个图形和它平移后所得的图形中，两组对应点的连线有什么特点？",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行或在同一条直线上且相等"
+      },
+      {
+       "label": "B",
+       "text": "互相垂直"
+      },
+      {
+       "label": "C",
+       "text": "互相平分"
+      },
+      {
+       "label": "D",
+       "text": "长度不一定相等"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "平移的基本性质：一个图形和它平移后所得的图形中，两组对应点的连线平行或在同一条直线上，并且相等。"
+    },
+    {
+     "id": "mxj_p1034_q3",
+     "topicId": "mxj_p1034",
+     "prompt": "点A平移到点A′，线段AA′长3 cm，则点B与它的对应点B′之间的距离是多少厘米？",
+     "question": "点A平移到点A′，线段AA′长3 cm，则点B与它的对应点B′之间的距离是多少厘米？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "平移中所有点移动的距离都相同，所以BB′与AA′相等，都是3厘米。",
+     "verify": "{\"type\": \"num\", \"value\": 3}"
+    },
+    {
+     "id": "mxj_p1034_q4",
+     "topicId": "mxj_p1034",
+     "prompt": "一个三角形先向右平移6个单位长度，再向上平移8个单位长度，这个结果相当于一次平移多少个单位长度？",
+     "question": "一个三角形先向右平移6个单位长度，再向上平移8个单位长度，这个结果相当于一次平移多少个单位长度？",
+     "answer": 10,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "两次平移合起来可以用一次平移代替，平移的距离是斜边的长，6与8分别是两条直角边，由勾股数得10。",
+     "verify": "{\"type\": \"num\", \"value\": 10}"
+    },
+    {
+     "id": "mxj_p1034_q5",
+     "topicId": "mxj_p1034",
+     "prompt": "平移保持任意两点间的距离不变，保持角的（　）不变。",
+     "question": "平移保持任意两点间的距离不变，保持角的（　）不变。",
+     "answer": "大小",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "平移不改变图形的形状和大小，只改变位置，所以任意两点间距离不变，角的大小也不变。"
+    },
+    {
+     "id": "mxj_p1034_q6",
+     "topicId": "mxj_p1034",
+     "prompt": "直线在平移下的像是与它（　）的直线。",
+     "question": "直线在平移下的像是与它（　）的直线。",
+     "answer": "平行",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "数学上已经证明，直线在平移下的像是与它平行的直线，也可能与它是同一条直线。"
+    },
+    {
+     "id": "mxj_p1034_q7",
+     "topicId": "mxj_p1034",
+     "prompt": "把三角形ABC沿某一方向平移得到三角形A′B′C′，AB与A′B′有什么关系？∠BAC与∠B′A′C′呢？",
+     "question": "把三角形ABC沿某一方向平移得到三角形A′B′C′，AB与A′B′有什么关系？∠BAC与∠B′A′C′呢？",
+     "answer": "AB等于A′B′，∠BAC等于∠B′A′C′",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "平移保持任意两点间的距离不变，所以对应线段相等；平移保持角的大小不变，所以对应角相等。"
+    },
+    {
+     "id": "mxj_p1034_q8",
+     "topicId": "mxj_p1034",
+     "prompt": "一块长为a cm、宽为b cm的长方形地板中间有一条裂缝，把裂缝右边的一块向右平移1 cm，则产生的裂缝的面积是多少平方厘米？",
+     "question": "一块长为a cm、宽为b cm的长方形地板中间有一条裂缝，把裂缝右边的一块向右平移1 cm，则产生的裂缝的面积是多少平方厘米？",
+     "options": [
+      {
+       "label": "A",
+       "text": "ab"
+      },
+      {
+       "label": "B",
+       "text": "b"
+      },
+      {
+       "label": "C",
+       "text": "a"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "平移1厘米后裂缝是一个长为b厘米、宽为1厘米的长方形，面积为b乘1等于b平方厘米。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1035",
+   "page": 103,
+   "description": "借助平移说明两条平行直线被第三条直线所截时同位角相等，并由此推出内错角相等、同旁内角互补三条性质，用来求角的度数。",
+   "mastery_criteria": [
+    "能说出平行线的三条性质",
+    "能运用平行线的性质进行角的计算和简单推理"
+   ],
+   "misconceptions": [
+    "把平行线的性质与判定颠倒使用",
+    "认为两直线平行时同旁内角相等"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p1035_q1",
+     "topicId": "mxj_p1035",
+     "prompt": "两直线平行，同位角有什么关系？",
+     "question": "两直线平行，同位角有什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "相等"
+      },
+      {
+       "label": "B",
+       "text": "互补"
+      },
+      {
+       "label": "C",
+       "text": "互余"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "平行线的性质1：两条平行直线被第三条直线所截，同位角相等，通常简说成两直线平行，同位角相等。"
+    },
+    {
+     "id": "mxj_p1035_q2",
+     "topicId": "mxj_p1035",
+     "prompt": "两直线平行，同旁内角有什么关系？",
+     "question": "两直线平行，同旁内角有什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "相等"
+      },
+      {
+       "label": "B",
+       "text": "互补"
+      },
+      {
+       "label": "C",
+       "text": "互余"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "平行线的性质3：两条平行直线被第三条直线所截，同旁内角互补，它们的和是180度。"
+    },
+    {
+     "id": "mxj_p1035_q3",
+     "topicId": "mxj_p1035",
+     "prompt": "两条平行直线被第三条直线所截，一对同旁内角中有一个是110度，另一个是多少度？",
+     "question": "两条平行直线被第三条直线所截，一对同旁内角中有一个是110度，另一个是多少度？",
+     "answer": 70,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "同旁内角互补，用180度减去110度得70度，所以另一个同旁内角是70度。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 180}, {\"type\": \"num\", \"value\": 110}]}"
+    },
+    {
+     "id": "mxj_p1035_q4",
+     "topicId": "mxj_p1035",
+     "prompt": "两条平行直线被第三条直线所截，一个同位角是125度，则与它在截线同侧的那个内角是多少度？",
+     "question": "两条平行直线被第三条直线所截，一个同位角是125度，则与它在截线同侧的那个内角是多少度？",
+     "answer": 55,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "两直线平行时同位角相等，所以另一个同位角也是125度，它与同旁内角互补，得180减125等于55度。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 180}, {\"type\": \"num\", \"value\": 125}]}"
+    },
+    {
+     "id": "mxj_p1035_q5",
+     "topicId": "mxj_p1035",
+     "prompt": "两条平行直线被第三条直线所截，内错角（　）。",
+     "question": "两条平行直线被第三条直线所截，内错角（　）。",
+     "answer": "相等",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "平行线的性质2：两条平行直线被第三条直线所截，内错角相等，可以由同位角相等与对顶角相等推得。"
+    },
+    {
+     "id": "mxj_p1035_q6",
+     "topicId": "mxj_p1035",
+     "prompt": "已知 AD 平行 BC，∠B 等于70度，则∠A 等于（　）度。",
+     "question": "已知 AD 平行 BC，∠B 等于70度，则∠A 等于（　）度。",
+     "answer": "110",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "AD平行BC，∠A与∠B是一对同旁内角，同旁内角互补，用180度减70度得110度。"
+    },
+    {
+     "id": "mxj_p1035_q7",
+     "topicId": "mxj_p1035",
+     "prompt": "已知 AB 平行 CD，∠1等于100度，∠2与∠1是同位角，∠2与∠3是同旁内角，求∠3的度数。",
+     "question": "已知 AB 平行 CD，∠1等于100度，∠2与∠1是同位角，∠2与∠3是同旁内角，求∠3的度数。",
+     "answer": "80度",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "因为AB平行CD，同位角相等，所以∠2等于100度；又∠2与∠3是同旁内角，互补，所以∠3等于180度减100度等于80度。"
+    },
+    {
+     "id": "mxj_p1035_q8",
+     "topicId": "mxj_p1035",
+     "prompt": "AB 平行 CD，∠1与∠2是同旁内角，且∠1等于∠2的3倍，则∠1是多少度？",
+     "question": "AB 平行 CD，∠1与∠2是同旁内角，且∠1等于∠2的3倍，则∠1是多少度？",
+     "options": [
+      {
+       "label": "A",
+       "text": "45度"
+      },
+      {
+       "label": "B",
+       "text": "60度"
+      },
+      {
+       "label": "C",
+       "text": "120度"
+      },
+      {
+       "label": "D",
+       "text": "135度"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "同旁内角互补，设∠2为x度，则3x加x等于180，解得x等于45，所以∠1等于135度。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1036",
+   "page": 107,
+   "description": "由平行线的基本事实推出同位角相等、内错角相等、同旁内角互补都可以判定两直线平行，并能选择合适的判定方法说明两直线平行。",
+   "mastery_criteria": [
+    "能说出平行线的三种判定方法",
+    "能选择合适的方法说明两直线平行"
+   ],
+   "misconceptions": [
+    "把性质当判定使用，不说明依据",
+    "由同旁内角相等错误判定两直线平行"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p1036_q1",
+     "topicId": "mxj_p1036",
+     "prompt": "同位角相等，两直线有什么关系？",
+     "question": "同位角相等，两直线有什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行"
+      },
+      {
+       "label": "B",
+       "text": "垂直"
+      },
+      {
+       "label": "C",
+       "text": "相交"
+      },
+      {
+       "label": "D",
+       "text": "重合"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "平行线的判定方法1：两条直线被第三条直线所截，如果同位角相等，那么这两条直线平行。"
+    },
+    {
+     "id": "mxj_p1036_q2",
+     "topicId": "mxj_p1036",
+     "prompt": "同旁内角互补，两直线有什么关系？",
+     "question": "同旁内角互补，两直线有什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "垂直"
+      },
+      {
+       "label": "B",
+       "text": "相交"
+      },
+      {
+       "label": "C",
+       "text": "无法判断"
+      },
+      {
+       "label": "D",
+       "text": "平行"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "平行线的判定方法3：两条直线被第三条直线所截，如果同旁内角互补，那么这两条直线平行。"
+    },
+    {
+     "id": "mxj_p1036_q3",
+     "topicId": "mxj_p1036",
+     "prompt": "要使直线a与直线b平行，已知一对同旁内角中一个是70度，另一个应是多少度？",
+     "question": "要使直线a与直线b平行，已知一对同旁内角中一个是70度，另一个应是多少度？",
+     "answer": 110,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "同旁内角互补时两直线平行，用180度减去70度得110度，所以另一个角应为110度。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 180}, {\"type\": \"num\", \"value\": 70}]}"
+    },
+    {
+     "id": "mxj_p1036_q4",
+     "topicId": "mxj_p1036",
+     "prompt": "直线AB、CD被直线EF所截，∠1等于65度，∠2与∠1是同位角，要使AB平行CD，∠2应等于多少度？",
+     "question": "直线AB、CD被直线EF所截，∠1等于65度，∠2与∠1是同位角，要使AB平行CD，∠2应等于多少度？",
+     "answer": 65,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "同位角相等时两直线平行，所以∠2应等于∠1，即65度。",
+     "verify": "{\"type\": \"num\", \"value\": 65}"
+    },
+    {
+     "id": "mxj_p1036_q5",
+     "topicId": "mxj_p1036",
+     "prompt": "两条直线被第三条直线所截，如果内错角相等，那么这两条直线（　）。",
+     "question": "两条直线被第三条直线所截，如果内错角相等，那么这两条直线（　）。",
+     "answer": "平行",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "这是平行线的判定方法2：内错角相等，两直线平行，可由对顶角相等和判定方法1推出。"
+    },
+    {
+     "id": "mxj_p1036_q6",
+     "topicId": "mxj_p1036",
+     "prompt": "在同一平面内，如果两条直线都垂直于第三条直线，那么这两条直线（　）。",
+     "question": "在同一平面内，如果两条直线都垂直于第三条直线，那么这两条直线（　）。",
+     "answer": "平行",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "两条直线都与第三条直线垂直，与截线所成的同位角都是90度，同位角相等，所以这两条直线平行。"
+    },
+    {
+     "id": "mxj_p1036_q7",
+     "topicId": "mxj_p1036",
+     "prompt": "直线AB、CD被直线EF所截，∠1与∠2是同位角且∠1等于∠2，∠2与∠3是对顶角，能否说明AB平行CD？请说明理由。",
+     "question": "直线AB、CD被直线EF所截，∠1与∠2是同位角且∠1等于∠2，∠2与∠3是对顶角，能否说明AB平行CD？请说明理由。",
+     "answer": "能，因为∠1等于∠3，同位角相等，两直线平行",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "由对顶角相等得∠3等于∠2，又∠1等于∠2，由等量代换得∠1等于∠3，即同位角相等，所以AB平行CD。"
+    },
+    {
+     "id": "mxj_p1036_q8",
+     "topicId": "mxj_p1036",
+     "prompt": "下列条件中，不能判定两条直线平行的是哪一项？",
+     "question": "下列条件中，不能判定两条直线平行的是哪一项？",
+     "options": [
+      {
+       "label": "A",
+       "text": "同位角相等"
+      },
+      {
+       "label": "B",
+       "text": "内错角相等"
+      },
+      {
+       "label": "C",
+       "text": "同旁内角相等"
+      },
+      {
+       "label": "D",
+       "text": "同旁内角互补"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "同旁内角互补才能判定两直线平行，同旁内角相等不能保证它们的和是180度，所以不能判定两直线平行。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1037",
+   "page": 113,
+   "description": "认识两条直线互相垂直与垂足，理解在同一平面内过一点有且只有一条直线与已知直线垂直、垂线段最短，并理解点到直线的距离。",
+   "mastery_criteria": [
+    "能判断两直线是否垂直并识别垂足",
+    "能用垂线段最短求点到直线的距离"
+   ],
+   "misconceptions": [
+    "把点到直线的距离当成斜线段的长度",
+    "认为过一点可以画两条不同的垂线"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1037_q1",
+     "topicId": "mxj_p1037",
+     "prompt": "两条直线相交所成的四个角中，若有一个角是直角，则这两条直线有什么关系？",
+     "question": "两条直线相交所成的四个角中，若有一个角是直角，则这两条直线有什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行"
+      },
+      {
+       "label": "B",
+       "text": "互相垂直"
+      },
+      {
+       "label": "C",
+       "text": "重合"
+      },
+      {
+       "label": "D",
+       "text": "无法判断"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "此时其余三个角也都是直角，两条直线互相垂直，它们的交点叫作垂足。"
+    },
+    {
+     "id": "mxj_p1037_q2",
+     "topicId": "mxj_p1037",
+     "prompt": "在同一平面内，过一点画已知直线的垂线，能画几条？",
+     "question": "在同一平面内，过一点画已知直线的垂线，能画几条？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1条"
+      },
+      {
+       "label": "B",
+       "text": "2条"
+      },
+      {
+       "label": "C",
+       "text": "无数条"
+      },
+      {
+       "label": "D",
+       "text": "0条"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "关于垂线的基本事实：在同一平面内，过一点有且只有一条直线与已知直线垂直。"
+    },
+    {
+     "id": "mxj_p1037_q3",
+     "topicId": "mxj_p1037",
+     "prompt": "两条直线互相垂直，其中一个角是90度，其余三个角各是多少度？",
+     "question": "两条直线互相垂直，其中一个角是90度，其余三个角各是多少度？",
+     "answer": 90,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "两条直线互相垂直时，所成的四个角都是直角，所以其余三个角都是90度。",
+     "verify": "{\"type\": \"num\", \"value\": 90}"
+    },
+    {
+     "id": "mxj_p1037_q4",
+     "topicId": "mxj_p1037",
+     "prompt": "在三角形ABC中，∠A等于90度，AB等于3，AC等于4，BC等于5，点C到直线AB的距离是多少？",
+     "question": "在三角形ABC中，∠A等于90度，AB等于3，AC等于4，BC等于5，点C到直线AB的距离是多少？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "∠A是直角，说明AC垂直于AB，所以点C到直线AB的垂线段就是AC，距离是4。",
+     "verify": "{\"type\": \"num\", \"value\": 4}"
+    },
+    {
+     "id": "mxj_p1037_q5",
+     "topicId": "mxj_p1037",
+     "prompt": "从直线外一点到这条直线的垂线段的（　），叫作点到直线的距离。",
+     "question": "从直线外一点到这条直线的垂线段的（　），叫作点到直线的距离。",
+     "answer": "长度",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "点到直线的距离是一个数量，它等于垂线段的长度，不能说成垂线段本身。"
+    },
+    {
+     "id": "mxj_p1037_q6",
+     "topicId": "mxj_p1037",
+     "prompt": "直线外一点与直线上各点连接的所有线段中，（　）最短。",
+     "question": "直线外一点与直线上各点连接的所有线段中，（　）最短。",
+     "answer": "垂线段",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "直线外一点到直线上各点的线段中垂线段最短，这条垂线段的长度就是点到直线的距离。"
+    },
+    {
+     "id": "mxj_p1037_q7",
+     "topicId": "mxj_p1037",
+     "prompt": "某单位要在河岸上建一个水泵房，向河岸外的C处引水，水泵房建在哪个位置最省水管？为什么？",
+     "question": "某单位要在河岸上建一个水泵房，向河岸外的C处引水，水泵房建在哪个位置最省水管？为什么？",
+     "answer": "建在过C作河岸的垂线的垂足处，因为垂线段最短",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "从C到河岸的各条线段中垂线段最短，所以水泵房建在垂足处所用管道最短，水管最省。"
+    },
+    {
+     "id": "mxj_p1037_q8",
+     "topicId": "mxj_p1037",
+     "prompt": "下列关于垂线和点到直线的距离的说法，正确的是哪一项？",
+     "question": "下列关于垂线和点到直线的距离的说法，正确的是哪一项？",
+     "options": [
+      {
+       "label": "A",
+       "text": "垂线段就是点到直线的距离"
+      },
+      {
+       "label": "B",
+       "text": "过一点可以画两条不同的垂线"
+      },
+      {
+       "label": "C",
+       "text": "点到直线的距离是垂线段的长度"
+      },
+      {
+       "label": "D",
+       "text": "直线外一点到直线的斜线段最短"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "点到直线的距离是垂线段的长度，是一个数量；垂线段是一条线段；过一点只能画一条垂线，且垂线段最短。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1038",
+   "page": 121,
+   "description": "认识两条平行直线的公垂线与公垂线段，理解两条平行线的所有公垂线段都相等，两条平行线间的距离等于其中一条直线上任一点到另一条直线的距离。",
+   "mastery_criteria": [
+    "能说出两条平行线间距离的含义",
+    "能用平行线间的距离相等进行计算"
+   ],
+   "misconceptions": [
+    "把平行线间的距离当成一条斜线段的长度",
+    "认为不同位置的公垂线段长度不同"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1038_q1",
+     "topicId": "mxj_p1038",
+     "prompt": "与两条平行直线都垂直的直线，叫作这两条平行直线的什么线？",
+     "question": "与两条平行直线都垂直的直线，叫作这两条平行直线的什么线？",
+     "options": [
+      {
+       "label": "A",
+       "text": "斜线"
+      },
+      {
+       "label": "B",
+       "text": "公垂线"
+      },
+      {
+       "label": "C",
+       "text": "对称轴"
+      },
+      {
+       "label": "D",
+       "text": "中线"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "与两条平行直线都垂直的直线叫作这两条平行直线的公垂线，两个垂足之间的线段叫公垂线段。"
+    },
+    {
+     "id": "mxj_p1038_q2",
+     "topicId": "mxj_p1038",
+     "prompt": "两条平行线的所有公垂线段的长度有什么关系？",
+     "question": "两条平行线的所有公垂线段的长度有什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "都相等"
+      },
+      {
+       "label": "B",
+       "text": "都不相等"
+      },
+      {
+       "label": "C",
+       "text": "只有两条相等"
+      },
+      {
+       "label": "D",
+       "text": "与取点位置有关"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两条平行线的所有公垂线段都相等，它们的长度就是这两条平行线间的距离。"
+    },
+    {
+     "id": "mxj_p1038_q3",
+     "topicId": "mxj_p1038",
+     "prompt": "两条平行线间的距离是4 cm，在其中一条直线上任取一点，它到另一条直线的距离是多少厘米？",
+     "question": "两条平行线间的距离是4 cm，在其中一条直线上任取一点，它到另一条直线的距离是多少厘米？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "平行线间的距离等于其中一条直线上任意一点到另一条直线的距离，所以是4厘米。",
+     "verify": "{\"type\": \"num\", \"value\": 4}"
+    },
+    {
+     "id": "mxj_p1038_q4",
+     "topicId": "mxj_p1038",
+     "prompt": "三条互相平行的直线a、b、c，a与b的距离是5，b与c的距离是2，且b在a与c之间，则a与c的距离是多少？",
+     "question": "三条互相平行的直线a、b、c，a与b的距离是5，b与c的距离是2，且b在a与c之间，则a与c的距离是多少？",
+     "answer": 7,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "a与c的距离等于a到b的距离加上b到c的距离，5加2等于7。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "mxj_p1038_q5",
+     "topicId": "mxj_p1038",
+     "prompt": "两条平行线的公垂线段的（　）叫作两条平行线间的距离。",
+     "question": "两条平行线的公垂线段的（　）叫作两条平行线间的距离。",
+     "answer": "长度",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "两条平行线间距离是一个数量，等于公垂线段的长度，所有公垂线段都相等，所以这个长度是确定的。"
+    },
+    {
+     "id": "mxj_p1038_q6",
+     "topicId": "mxj_p1038",
+     "prompt": "已知 AB 平行 CD，AB 等于 CD，DE 垂直 AB 于E，BF 垂直 CD 于F，则线段 AE 与 CF 的大小关系是（　）。",
+     "question": "已知 AB 平行 CD，AB 等于 CD，DE 垂直 AB 于E，BF 垂直 CD 于F，则线段 AE 与 CF 的大小关系是（　）。",
+     "answer": "相等",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "DE与BF都是两条平行线间的公垂线段，长度相等，从而EB等于DF，再由AB减EB等于DC减DF得AE等于CF。"
+    },
+    {
+     "id": "mxj_p1038_q7",
+     "topicId": "mxj_p1038",
+     "prompt": "为什么两条平行线间的距离可以用其中一条直线上任意一点到另一条直线的距离来表示？",
+     "question": "为什么两条平行线间的距离可以用其中一条直线上任意一点到另一条直线的距离来表示？",
+     "answer": "因为所有公垂线段都相等，而任一点到另一条直线的距离就是一条公垂线段的长度",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "过这点作另一条直线的垂线，所得垂线段就是这两条平行线的公垂线段，所有公垂线段都相等，所以可以用它表示平行线间的距离。"
+    },
+    {
+     "id": "mxj_p1038_q8",
+     "topicId": "mxj_p1038",
+     "prompt": "一个平行四边形的一边在直线l1上，对边在l2上，l1与l2平行且距离为3，则平行四边形以l1上的边为底时的高是多少？",
+     "question": "一个平行四边形的一边在直线l1上，对边在l2上，l1与l2平行且距离为3，则平行四边形以l1上的边为底时的高是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1.5"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两条平行线间的距离处处相等，平行四边形夹在两条平行线之间的高就等于这个距离3。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1039",
+   "page": 134,
+   "description": "认识轴对称图形与两个图形关于一条直线成轴对称，理解对应点连线被对称轴垂直平分、轴对称保持距离与角不变，并能画出简单图形的对称图形。",
+   "mastery_criteria": [
+    "能判断轴对称图形并指出对称轴条数",
+    "能利用轴对称的性质求线段和角"
+   ],
+   "misconceptions": [
+    "把轴对称图形与成轴对称的两个图形混为一谈",
+    "把对称轴画成线段而不是直线"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1039_q1",
+     "topicId": "mxj_p1039",
+     "prompt": "长方形有几条对称轴？",
+     "question": "长方形有几条对称轴？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1条"
+      },
+      {
+       "label": "B",
+       "text": "2条"
+      },
+      {
+       "label": "C",
+       "text": "3条"
+      },
+      {
+       "label": "D",
+       "text": "4条"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "长方形两组对边中点连线所在的两条直线都是它的对称轴，共2条，对角线所在直线不是对称轴。"
+    },
+    {
+     "id": "mxj_p1039_q2",
+     "topicId": "mxj_p1039",
+     "prompt": "成轴对称的两个图形中，对应点所连的线段与对称轴有什么关系？",
+     "question": "成轴对称的两个图形中，对应点所连的线段与对称轴有什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "与对称轴平行"
+      },
+      {
+       "label": "B",
+       "text": "与对称轴垂直"
+      },
+      {
+       "label": "C",
+       "text": "被对称轴垂直平分"
+      },
+      {
+       "label": "D",
+       "text": "与对称轴重合"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "轴对称的基本性质指出，成轴对称的两个图形中，对应点的连线被对称轴垂直平分。"
+    },
+    {
+     "id": "mxj_p1039_q3",
+     "topicId": "mxj_p1039",
+     "prompt": "正方形有几条对称轴？",
+     "question": "正方形有几条对称轴？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "正方形有两条对边中点连线所在直线和两条对角线所在直线，共4条对称轴。",
+     "verify": "{\"type\": \"num\", \"value\": 4}"
+    },
+    {
+     "id": "mxj_p1039_q4",
+     "topicId": "mxj_p1039",
+     "prompt": "点P与点P′关于直线l对称，线段PP′交l于点D，若PP′长8 cm，则PD长多少厘米？",
+     "question": "点P与点P′关于直线l对称，线段PP′交l于点D，若PP′长8 cm，则PD长多少厘米？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "对称轴垂直平分对应点的连线，所以D是PP′的中点，PD等于8除以2等于4厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "mxj_p1039_q5",
+     "topicId": "mxj_p1039",
+     "prompt": "如果一个图形沿着一条直线对折，直线两侧的部分能够互相重合，这个图形就是（　）图形。",
+     "question": "如果一个图形沿着一条直线对折，直线两侧的部分能够互相重合，这个图形就是（　）图形。",
+     "answer": "轴对称",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "这就是轴对称图形的定义，这条直线叫作它的一条对称轴，圆、正方形、等腰三角形都是轴对称图形。"
+    },
+    {
+     "id": "mxj_p1039_q6",
+     "topicId": "mxj_p1039",
+     "prompt": "等边三角形有（　）条对称轴。",
+     "question": "等边三角形有（　）条对称轴。",
+     "answer": "3",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "等边三角形三条边上的中线所在直线都是它的对称轴，共3条，与它的中心角120度相对应。"
+    },
+    {
+     "id": "mxj_p1039_q7",
+     "topicId": "mxj_p1039",
+     "prompt": "怎样画出点P关于直线l的对称点P′？请写出作法。",
+     "question": "怎样画出点P关于直线l的对称点P′？请写出作法。",
+     "answer": "过P作l的垂线交l于O，在垂线上截取OP′等于OP",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "对应点的连线被对称轴垂直平分，所以先过点P作直线l的垂线，垂足为O，再在垂线上截取OP′等于OP，所得点P′就是P关于l的对称点。"
+    },
+    {
+     "id": "mxj_p1039_q8",
+     "topicId": "mxj_p1039",
+     "prompt": "下列图形中，对称轴条数最多的是哪一个？",
+     "question": "下列图形中，对称轴条数最多的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "长方形"
+      },
+      {
+       "label": "B",
+       "text": "正方形"
+      },
+      {
+       "label": "C",
+       "text": "等边三角形"
+      },
+      {
+       "label": "D",
+       "text": "圆"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "长方形有2条，正方形有4条，等边三角形有3条，圆有无数条对称轴，所以圆最多。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1040",
+   "page": 140,
+   "description": "认识旋转的三要素即旋转中心、旋转方向与旋转角，掌握对应点到旋转中心距离相等、对应点与中心连线所成的角相等，并能画出旋转后的图形。",
+   "mastery_criteria": [
+    "能说出旋转中心、旋转方向和旋转角",
+    "能利用旋转的性质求线段长和角的度数"
+   ],
+   "misconceptions": [
+    "描述旋转时只说中心不说方向和角度",
+    "认为旋转会改变图形的大小"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1040_q1",
+     "topicId": "mxj_p1040",
+     "prompt": "旋转由哪些要素确定？",
+     "question": "旋转由哪些要素确定？",
+     "options": [
+      {
+       "label": "A",
+       "text": "只需旋转中心"
+      },
+      {
+       "label": "B",
+       "text": "只需旋转角"
+      },
+      {
+       "label": "C",
+       "text": "旋转中心、旋转方向和旋转角"
+      },
+      {
+       "label": "D",
+       "text": "对称轴和距离"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把一个图形绕定点按同一方向旋转同一个角，必须同时指明旋转中心、旋转方向和旋转角。"
+    },
+    {
+     "id": "mxj_p1040_q2",
+     "topicId": "mxj_p1040",
+     "prompt": "一个图形经过旋转后，对应点到旋转中心的距离有什么关系？",
+     "question": "一个图形经过旋转后，对应点到旋转中心的距离有什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "相等"
+      },
+      {
+       "label": "B",
+       "text": "不相等"
+      },
+      {
+       "label": "C",
+       "text": "与旋转角成正比"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "旋转的基本性质：对应点到旋转中心的距离相等，两组对应点与旋转中心连线所成的角也相等。"
+    },
+    {
+     "id": "mxj_p1040_q3",
+     "topicId": "mxj_p1040",
+     "prompt": "把三角形ABC绕点O顺时针旋转90度，则对应点与旋转中心连线所成的角是多少度？",
+     "question": "把三角形ABC绕点O顺时针旋转90度，则对应点与旋转中心连线所成的角是多少度？",
+     "answer": 90,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "两组对应点分别与旋转中心连线所成的角相等，都等于旋转角，所以是90度。",
+     "verify": "{\"type\": \"num\", \"value\": 90}"
+    },
+    {
+     "id": "mxj_p1040_q4",
+     "topicId": "mxj_p1040",
+     "prompt": "正三角形绕它的中心旋转，至少旋转多少度后才能与原来的图形重合？",
+     "question": "正三角形绕它的中心旋转，至少旋转多少度后才能与原来的图形重合？",
+     "answer": 120,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "正三角形的中心角是360除以3等于120度，所以至少旋转120度就能与原来的图形重合。",
+     "verify": "{\"type\": \"num\", \"value\": 120}"
+    },
+    {
+     "id": "mxj_p1040_q5",
+     "topicId": "mxj_p1040",
+     "prompt": "旋转保持任意两点间的距离不变，保持角的（　）不变。",
+     "question": "旋转保持任意两点间的距离不变，保持角的（　）不变。",
+     "answer": "大小",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "旋转不改变图形的形状和大小，只改变位置，所以任意两点间距离不变，角的大小也不变。"
+    },
+    {
+     "id": "mxj_p1040_q6",
+     "topicId": "mxj_p1040",
+     "prompt": "将三角形ABC绕点A按逆时针方向旋转45度得到三角形AB′C′，则∠B′AB的度数是（　）度。",
+     "question": "将三角形ABC绕点A按逆时针方向旋转45度得到三角形AB′C′，则∠B′AB的度数是（　）度。",
+     "answer": "45",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "旋转中心是点A，点B转到点B′，两条对应点与旋转中心连线所成的角就是旋转角，等于45度。"
+    },
+    {
+     "id": "mxj_p1040_q7",
+     "topicId": "mxj_p1040",
+     "prompt": "三角形ABC绕点O旋转得到三角形A′B′C′，OA与OA′有什么关系？∠AOA′与∠BOB′有什么关系？",
+     "question": "三角形ABC绕点O旋转得到三角形A′B′C′，OA与OA′有什么关系？∠AOA′与∠BOB′有什么关系？",
+     "answer": "OA等于OA′，∠AOA′等于∠BOB′且都等于旋转角",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "旋转中对应点到旋转中心的距离相等，所以OA等于OA′；两组对应点分别与旋转中心连线所成的角相等，都等于旋转角。"
+    },
+    {
+     "id": "mxj_p1040_q8",
+     "topicId": "mxj_p1040",
+     "prompt": "下列图形中，绕它的中心旋转60度后能与原图形重合的是哪一个？",
+     "question": "下列图形中，绕它的中心旋转60度后能与原图形重合的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "正方形"
+      },
+      {
+       "label": "B",
+       "text": "长方形"
+      },
+      {
+       "label": "C",
+       "text": "正三角形"
+      },
+      {
+       "label": "D",
+       "text": "正六边形"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "正六边形的中心角是60度，绕中心旋转60度能与原图形重合；正方形需90度，正三角形需120度，长方形需180度。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1041",
+   "page": 145,
+   "description": "综合运用平移、轴对称与旋转变换分析图案的生成过程，判断一个图案可以由哪一部分经过怎样的变换得到，并动手设计简单的图案。",
+   "mastery_criteria": [
+    "能判断图案由哪种图形变换得到",
+    "能综合运用三种变换设计简单图案"
+   ],
+   "misconceptions": [
+    "把旋转的结果与轴对称的结果混淆",
+    "认为一个图案只能由一种变换得到"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "mxj_p1041_q1",
+     "topicId": "mxj_p1041",
+     "prompt": "香港特别行政区区徽中的紫荆花图案，可以看作由一片花瓣绕中心依次旋转得到，每次旋转多少度？",
+     "question": "香港特别行政区区徽中的紫荆花图案，可以看作由一片花瓣绕中心依次旋转得到，每次旋转多少度？",
+     "options": [
+      {
+       "label": "A",
+       "text": "60度"
+      },
+      {
+       "label": "B",
+       "text": "72度"
+      },
+      {
+       "label": "C",
+       "text": "90度"
+      },
+      {
+       "label": "D",
+       "text": "120度"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "五片花瓣绕中心依次旋转72度、144度、216度、288度得到，因为360除以5等于72。"
+    },
+    {
+     "id": "mxj_p1041_q2",
+     "topicId": "mxj_p1041",
+     "prompt": "把一个图形沿一条直线翻折得到另一个图形，这种变换是什么变换？",
+     "question": "把一个图形沿一条直线翻折得到另一个图形，这种变换是什么变换？",
+     "options": [
+      {
+       "label": "A",
+       "text": "平移"
+      },
+      {
+       "label": "B",
+       "text": "旋转"
+      },
+      {
+       "label": "C",
+       "text": "轴对称"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "沿一条直线折叠使两侧部分重合的变换是轴对称，这条直线就是对称轴，两个图形关于它成轴对称。"
+    },
+    {
+     "id": "mxj_p1041_q3",
+     "topicId": "mxj_p1041",
+     "prompt": "一个图案由4个相同的基本图形绕中心旋转得到，每次旋转的最小角度是多少度？",
+     "question": "一个图案由4个相同的基本图形绕中心旋转得到，每次旋转的最小角度是多少度？",
+     "answer": 90,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "4个基本图形把一周角平分，360除以4等于90，所以每次旋转90度。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 360}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "mxj_p1041_q4",
+     "topicId": "mxj_p1041",
+     "prompt": "用16块相同的正方形塑料板拼成一个大正方形，大正方形的每边有几块？",
+     "question": "用16块相同的正方形塑料板拼成一个大正方形，大正方形的每边有几块？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "大正方形每边的块数相同，4的平方等于16，所以每边有4块。",
+     "verify": "{\"type\": \"num\", \"value\": 4}"
+    },
+    {
+     "id": "mxj_p1041_q5",
+     "topicId": "mxj_p1041",
+     "prompt": "平移、轴对称和旋转都保持任意两点间的距离不变，保持角的（　）不变。",
+     "question": "平移、轴对称和旋转都保持任意两点间的距离不变，保持角的（　）不变。",
+     "answer": "大小",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "这三种变换都是平面图形的全等变换，只改变图形的位置或方向，不改变图形的形状和大小。"
+    },
+    {
+     "id": "mxj_p1041_q6",
+     "topicId": "mxj_p1041",
+     "prompt": "由5个相同的基本图形绕中心旋转组成一个图案，相邻两个基本图形之间的旋转角是（　）度。",
+     "question": "由5个相同的基本图形绕中心旋转组成一个图案，相邻两个基本图形之间的旋转角是（　）度。",
+     "answer": "72",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "5个基本图形把一周角平均分成5份，360除以5等于72，所以相邻两个图形之间的旋转角是72度。"
+    },
+    {
+     "id": "mxj_p1041_q7",
+     "topicId": "mxj_p1041",
+     "prompt": "怎样用平移、轴对称和旋转把一个基本图形组合成一个连续的图案？请举出一种做法。",
+     "question": "怎样用平移、轴对称和旋转把一个基本图形组合成一个连续的图案？请举出一种做法。",
+     "answer": "把基本图形按同一方向和相同距离依次平移，或作轴对称后再绕某点依次旋转",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "选定一个基本图形后，利用平移可以把它按同一方向、相同距离重复排列；利用轴对称可以得到它的镜像；利用旋转可以让它绕某点依次转过同一个角，从而组合成图案。"
+    },
+    {
+     "id": "mxj_p1041_q8",
+     "topicId": "mxj_p1041",
+     "prompt": "同一个图案既可以看成由平移得到，也可以看成由旋转得到，这说明什么？",
+     "question": "同一个图案既可以看成由平移得到，也可以看成由旋转得到，这说明什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "图形变换只有一种"
+      },
+      {
+       "label": "B",
+       "text": "平移就是旋转"
+      },
+      {
+       "label": "C",
+       "text": "图案设计不需要变换"
+      },
+      {
+       "label": "D",
+       "text": "不同的图形变换可能得到相同的结果"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "平移、轴对称和旋转的效果可以互相配合，同一个图案往往有多种变换解释，说明不同变换可能得到相同的结果。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1042",
+   "page": 159,
+   "description": "认识全面调查与抽样调查的适用情形，理解总体、个体、样本与样本容量，理解简单随机抽样与简单随机样本，并会设计合理的抽样方案。",
+   "mastery_criteria": [
+    "能区分全面调查与抽样调查",
+    "能指出调查中的总体、个体、样本与样本容量"
+   ],
+   "misconceptions": [
+    "把样本容量与样本混为一谈",
+    "认为随便抽取一部分个体就是简单随机抽样"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1042_q1",
+     "topicId": "mxj_p1042",
+     "prompt": "为特定目的对全部考察对象进行调查的方法称为什么调查？",
+     "question": "为特定目的对全部考察对象进行调查的方法称为什么调查？",
+     "options": [
+      {
+       "label": "A",
+       "text": "抽样调查"
+      },
+      {
+       "label": "B",
+       "text": "全面调查"
+      },
+      {
+       "label": "C",
+       "text": "随机抽样"
+      },
+      {
+       "label": "D",
+       "text": "典型调查"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "为特定目的对全部考察对象进行调查叫全面调查，也叫普查，例如全国人口普查。"
+    },
+    {
+     "id": "mxj_p1042_q2",
+     "topicId": "mxj_p1042",
+     "prompt": "样本中个体的数目叫作什么？",
+     "question": "样本中个体的数目叫作什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "总体"
+      },
+      {
+       "label": "B",
+       "text": "个体"
+      },
+      {
+       "label": "C",
+       "text": "样本容量"
+      },
+      {
+       "label": "D",
+       "text": "样本"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "从总体中抽取的一部分个体组成一个样本，样本中个体的数目叫作样本容量。"
+    },
+    {
+     "id": "mxj_p1042_q3",
+     "topicId": "mxj_p1042",
+     "prompt": "某校有4000名学生，随机抽取400名进行身高调查，样本容量是多少？",
+     "question": "某校有4000名学生，随机抽取400名进行身高调查，样本容量是多少？",
+     "answer": 400,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "被抽取的400名学生组成样本，样本中个体的数目是400，所以样本容量是400，它不带单位。",
+     "verify": "{\"type\": \"num\", \"value\": 400}"
+    },
+    {
+     "id": "mxj_p1042_q4",
+     "topicId": "mxj_p1042",
+     "prompt": "某校七年级共25个班，每班40名学生，要抽取容量为100的样本，若每班抽取的人数相同，平均每班抽多少名？",
+     "question": "某校七年级共25个班，每班40名学生，要抽取容量为100的样本，若每班抽取的人数相同，平均每班抽多少名？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把100个名额平均分到25个班，100除以25等于4，所以每班抽4名。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 100}, {\"type\": \"num\", \"value\": 25}]}"
+    },
+    {
+     "id": "mxj_p1042_q5",
+     "topicId": "mxj_p1042",
+     "prompt": "从总体中抽取一部分个体进行调查，然后根据调查数据推断总体情况的调查方法叫作（　）调查。",
+     "question": "从总体中抽取一部分个体进行调查，然后根据调查数据推断总体情况的调查方法叫作（　）调查。",
+     "answer": "抽样",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "抽样调查只调查总体中的一部分个体，调查结果用于推断总体，可以省时省力，但需要样本有代表性。"
+    },
+    {
+     "id": "mxj_p1042_q6",
+     "topicId": "mxj_p1042",
+     "prompt": "在抽样调查中，如果能保证每个个体都有同等的机会被选入样本，这种抽样方法叫作（　）抽样。",
+     "question": "在抽样调查中，如果能保证每个个体都有同等的机会被选入样本，这种抽样方法叫作（　）抽样。",
+     "answer": "简单随机",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "保证每个个体被选入样本的机会都相同的抽样方法叫简单随机抽样，所得样本叫简单随机样本。"
+    },
+    {
+     "id": "mxj_p1042_q7",
+     "topicId": "mxj_p1042",
+     "prompt": "了解某品牌灯泡的使用寿命，为什么采用抽样调查而不用全面调查？",
+     "question": "了解某品牌灯泡的使用寿命，为什么采用抽样调查而不用全面调查？",
+     "answer": "因为测试灯泡寿命具有破坏性，不可能对全部灯泡逐一测试",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "全面调查要调查总体中的每个个体，而测试灯泡使用寿命会损坏灯泡，无法对全部灯泡进行测试，所以采用抽样调查。"
+    },
+    {
+     "id": "mxj_p1042_q8",
+     "topicId": "mxj_p1042",
+     "prompt": "下列调查中，适宜采用全面调查的是哪一项？",
+     "question": "下列调查中，适宜采用全面调查的是哪一项？",
+     "options": [
+      {
+       "label": "A",
+       "text": "对长江某段水域水污染情况的调查"
+      },
+      {
+       "label": "B",
+       "text": "对某电视节目收视率的调查"
+      },
+      {
+       "label": "C",
+       "text": "对各厂家生产的电池使用寿命的调查"
+      },
+      {
+       "label": "D",
+       "text": "给在职员工做工作服前测量尺寸"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "员工人数有限且必须量准每人尺寸，适合全面调查；其余三项涉及范围很大或具有破坏性，适合抽样调查。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1043",
+   "page": 164,
+   "description": "认识条形统计图、折线统计图、扇形统计图与复式统计图，会计算扇形统计图中的圆心角，能根据调查的目的和数据的性质选择合适的统计图。",
+   "mastery_criteria": [
+    "能说出三种统计图各自的特点",
+    "会计算扇形统计图中的圆心角"
+   ],
+   "misconceptions": [
+    "用扇形统计图比较各部分数量的大小",
+    "认为折线统计图能表示各部分占整体的百分比"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1043_q1",
+     "topicId": "mxj_p1043",
+     "prompt": "能清楚地表示各部分在总体中所占百分比的统计图是哪一种？",
+     "question": "能清楚地表示各部分在总体中所占百分比的统计图是哪一种？",
+     "options": [
+      {
+       "label": "A",
+       "text": "条形统计图"
+      },
+      {
+       "label": "B",
+       "text": "折线统计图"
+      },
+      {
+       "label": "C",
+       "text": "扇形统计图"
+      },
+      {
+       "label": "D",
+       "text": "复式条形统计图"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "扇形统计图用圆表示整体，用各个扇形的大小表示各部分所占的百分比。"
+    },
+    {
+     "id": "mxj_p1043_q2",
+     "topicId": "mxj_p1043",
+     "prompt": "能清楚地反映事物变化趋势的统计图是哪一种？",
+     "question": "能清楚地反映事物变化趋势的统计图是哪一种？",
+     "options": [
+      {
+       "label": "A",
+       "text": "条形统计图"
+      },
+      {
+       "label": "B",
+       "text": "折线统计图"
+      },
+      {
+       "label": "C",
+       "text": "扇形统计图"
+      },
+      {
+       "label": "D",
+       "text": "统计表"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "折线统计图能清楚地反映事物的变化趋势，条形统计图则长于表示数量的大小。"
+    },
+    {
+     "id": "mxj_p1043_q3",
+     "topicId": "mxj_p1043",
+     "prompt": "扇形统计图中，某部分占整体的25%，它对应的扇形圆心角是多少度？",
+     "question": "扇形统计图中，某部分占整体的25%，它对应的扇形圆心角是多少度？",
+     "answer": 90,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "整个圆对应360度，360乘25%等于90，所以圆心角是90度。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 360}, {\"type\": \"num\", \"value\": 0.25}]}"
+    },
+    {
+     "id": "mxj_p1043_q4",
+     "topicId": "mxj_p1043",
+     "prompt": "某扇形统计图中，一部分占整体的30%，它对应的扇形圆心角是多少度？",
+     "question": "某扇形统计图中，一部分占整体的30%，它对应的扇形圆心角是多少度？",
+     "answer": 108,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "360乘30%等于108，所以这部分对应的圆心角是108度。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 360}, {\"type\": \"num\", \"value\": 0.3}]}"
+    },
+    {
+     "id": "mxj_p1043_q5",
+     "topicId": "mxj_p1043",
+     "prompt": "用圆表示整体、用各个扇形的大小表示各部分所占百分比的统计图，叫作（　）统计图。",
+     "question": "用圆表示整体、用各个扇形的大小表示各部分所占百分比的统计图，叫作（　）统计图。",
+     "answer": "扇形",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "这就是扇形统计图，画它时要先算各部分的百分比，再算出各部分对应的圆心角。"
+    },
+    {
+     "id": "mxj_p1043_q6",
+     "topicId": "mxj_p1043",
+     "prompt": "复式统计图可以直观地比较多组数据在同一方面的（　）情况。",
+     "question": "复式统计图可以直观地比较多组数据在同一方面的（　）情况。",
+     "answer": "不同",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "把多组统计数据表示在同一条形或折线统计图上就得到复式统计图，它的长处是直观比较多组数据的差异。"
+    },
+    {
+     "id": "mxj_p1043_q7",
+     "topicId": "mxj_p1043",
+     "prompt": "要表示某市一年12个月降水量的变化情况，应选择哪种统计图？为什么？",
+     "question": "要表示某市一年12个月降水量的变化情况，应选择哪种统计图？为什么？",
+     "answer": "折线统计图，因为它能清楚反映降水量的变化趋势",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "比较不同月份降水量的增减变化要看趋势，折线统计图能清楚反映事物的变化趋势，所以选用折线统计图。"
+    },
+    {
+     "id": "mxj_p1043_q8",
+     "topicId": "mxj_p1043",
+     "prompt": "要比较两个班学生体育课上各活动项目的人数，最合适的统计图是哪一种？",
+     "question": "要比较两个班学生体育课上各活动项目的人数，最合适的统计图是哪一种？",
+     "options": [
+      {
+       "label": "A",
+       "text": "复式条形统计图"
+      },
+      {
+       "label": "B",
+       "text": "单式折线统计图"
+      },
+      {
+       "label": "C",
+       "text": "扇形统计图"
+      },
+      {
+       "label": "D",
+       "text": "复式扇形统计图"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "要比较两个班在同一方面的数据，应把两组数据画在同一个条形统计图上，即复式条形统计图。"
+    }
+   ]
+  }
+ ]
+}

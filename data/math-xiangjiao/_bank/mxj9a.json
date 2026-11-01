@@ -1,0 +1,4420 @@
+{
+ "tag": "mxj9a",
+ "book": "湘教版九年级上册",
+ "unit_points": [
+  {
+   "id": "mxj_p020",
+   "description": "第1章从线段的比与比例的基本性质出发，依次学习平行线分线段成比例、相似图形与相似三角形的判定和性质，并研究相似三角形的实际应用以及位似变换。",
+   "mastery_criteria": [
+    "能运用比例的基本性质与等比性质求线段的比",
+    "能判定两个三角形相似并用相似三角形的性质解决测量问题"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p020_q1",
+     "topicId": "mxj_p020",
+     "prompt": "已知 a，b 为非零实数，且 a 比 b 等于 3 比 4，求 a 加 b 与 b 的比值。",
+     "question": "已知 a，b 为非零实数，且 a 比 b 等于 3 比 4，求 a 加 b 与 b 的比值。",
+     "options": [
+      {
+       "label": "A",
+       "text": "四分之七"
+      },
+      {
+       "label": "B",
+       "text": "四分之三"
+      },
+      {
+       "label": "C",
+       "text": "七分之四"
+      },
+      {
+       "label": "D",
+       "text": "四分之一"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由比例的基本性质可设 a 等于 3k，b 等于 4k（k 不为零），于是 a 加 b 等于 7k，与 b 的比为 7k 比 4k，即四分之七。"
+    },
+    {
+     "id": "mxj_p020_q2",
+     "topicId": "mxj_p020",
+     "prompt": "已知两个相似三角形的相似比为 2，则它们的面积比是多少。",
+     "question": "已知两个相似三角形的相似比为 2，则它们的面积比是多少。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2 比 1"
+      },
+      {
+       "label": "B",
+       "text": "1 比 2"
+      },
+      {
+       "label": "C",
+       "text": "4 比 1"
+      },
+      {
+       "label": "D",
+       "text": "1 比 4"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "相似三角形的面积比等于相似比的平方，相似比为 2 时面积比为 2 的平方比 1，即 4 比 1。"
+    },
+    {
+     "id": "mxj_p020_q3",
+     "topicId": "mxj_p020",
+     "prompt": "在平面直角坐标系中，以原点为位似中心、位似比为 3 作位似图形，点 A 的坐标为 (2,4)，求它的对应点 A 的坐标。",
+     "question": "在平面直角坐标系中，以原点为位似中心、位似比为 3 作位似图形，点 A 的坐标为 (2,4)，求它的对应点 A 的坐标。",
+     "options": [
+      {
+       "label": "A",
+       "text": "(5,7)"
+      },
+      {
+       "label": "B",
+       "text": "(三分之二,三分之四)"
+      },
+      {
+       "label": "C",
+       "text": "(-6,-12)"
+      },
+      {
+       "label": "D",
+       "text": "(6,12)"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "以原点为位似中心、位似比为 k 时，对应点的坐标分别是原坐标乘 k，所以 A(2,4) 的对应点为 (2×3,4×3)，即 (6,12)。"
+    },
+    {
+     "id": "mxj_p020_q4",
+     "topicId": "mxj_p020",
+     "prompt": "已知 a，b 为非零实数，且 4a 等于 5b，求 a 与 b 的比值。",
+     "question": "已知 a，b 为非零实数，且 4a 等于 5b，求 a 与 b 的比值。",
+     "answer": 1.25,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 4}]}",
+     "explanation": "由 4a 等于 5b，两边同时除以 4b，得 a 比 b 等于 5 比 4，即 1.25，这里用到的正是比例的基本性质。"
+    },
+    {
+     "id": "mxj_p020_q5",
+     "topicId": "mxj_p020",
+     "prompt": "三条平行直线截两条直线，在一条直线上截得的线段 AB 等于 2、BC 等于 3，在另一条直线上截得 A1B1 等于 1.5，求 B1C1 的长。",
+     "question": "三条平行直线截两条直线，在一条直线上截得的线段 AB 等于 2、BC 等于 3，在另一条直线上截得 A1B1 等于 1.5，求 B1C1 的长。",
+     "answer": "2.25",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由平行线分线段成比例得 AB 比 BC 等于 A1B1 比 B1C1，即 2 比 3 等于 1.5 比 B1C1，所以 B1C1 等于 3 乘 1.5 除以 2 等于 2.25。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p021",
+   "description": "第2章用相似直角三角形说明锐角的正弦、余弦、正切是与三角形大小无关的常数，学习特殊角的三角函数值、计算器的使用以及解直角三角形及其应用。",
+   "mastery_criteria": [
+    "能说出正弦、余弦、正切的定义并求特殊角的三角函数值",
+    "能用锐角三角函数解直角三角形并解决仰角、坡度等实际问题"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p021_q1",
+     "topicId": "mxj_p021",
+     "prompt": "在含 30 度角的直角三角形中，30 度角的正弦值是多少。",
+     "question": "在含 30 度角的直角三角形中，30 度角的正弦值是多少。",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.5"
+      },
+      {
+       "label": "B",
+       "text": "0.866"
+      },
+      {
+       "label": "C",
+       "text": "1"
+      },
+      {
+       "label": "D",
+       "text": "0.577"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "在直角三角形中，30 度角所对的直角边等于斜边的一半，正弦是对边与斜边的比，所以 30 度的正弦值等于二分之一，即 0.5。"
+    },
+    {
+     "id": "mxj_p021_q2",
+     "topicId": "mxj_p021",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，BC 等于 3，AB 等于 5，求角 A 的余弦值。",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，BC 等于 3，AB 等于 5，求角 A 的余弦值。",
+     "options": [
+      {
+       "label": "A",
+       "text": "五分之三"
+      },
+      {
+       "label": "B",
+       "text": "五分之四"
+      },
+      {
+       "label": "C",
+       "text": "四分之三"
+      },
+      {
+       "label": "D",
+       "text": "三分之五"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由勾股定理得 AC 等于 4，因为 3 的平方加 4 的平方等于 5 的平方；余弦是邻边与斜边的比，所以角 A 的余弦等于五分之四。"
+    },
+    {
+     "id": "mxj_p021_q3",
+     "topicId": "mxj_p021",
+     "prompt": "设角 A 是锐角，下列关于它的正弦值与余弦值随角变化的说法，正确的是哪一个。",
+     "question": "设角 A 是锐角，下列关于它的正弦值与余弦值随角变化的说法，正确的是哪一个。",
+     "options": [
+      {
+       "label": "A",
+       "text": "角增大时，正弦值与余弦值都增大"
+      },
+      {
+       "label": "B",
+       "text": "角增大时，正弦值与余弦值都减小"
+      },
+      {
+       "label": "C",
+       "text": "角增大时，正弦值减小而余弦值增大"
+      },
+      {
+       "label": "D",
+       "text": "角增大时，正弦值增大而余弦值减小"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "比较 30 度与 60 度可以验证：正弦值由 0.5 增大到 0.866，余弦值由 0.866 减小到 0.5，所以锐角增大时正弦值增大、余弦值减小。"
+    },
+    {
+     "id": "mxj_p021_q4",
+     "topicId": "mxj_p021",
+     "prompt": "在直角三角形中，两条直角边分别记为 a，b，斜边记为 c，若 a 等于 6，c 等于 10，求 b 的长。",
+     "question": "在直角三角形中，两条直角边分别记为 a，b，斜边记为 c，若 a 等于 6，c 等于 10，求 b 的长。",
+     "answer": 8,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 8}",
+     "explanation": "由勾股定理，b 的平方等于 c 的平方减 a 的平方，即 100 减 36 等于 64，因为边长是正数，所以 b 等于 8。"
+    },
+    {
+     "id": "mxj_p021_q5",
+     "topicId": "mxj_p021",
+     "prompt": "已知一个锐角的正切值为 0.8391，用计算器求这个锐角的大小，结果精确到 1 度。",
+     "question": "已知一个锐角的正切值为 0.8391，用计算器求这个锐角的大小，结果精确到 1 度。",
+     "answer": "40 度",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "用计算器对 0.8391 取反正切，显示结果约为 40.0000124，精确到 1 度即为 40 度，与教材 2.2 节的例子一致。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p022",
+   "description": "第3章学习一元二次方程的概念与一般形式，掌握配方法、公式法、因式分解法三种解法，并研究根的判别式、根与系数的关系以及方程模型的实际应用。",
+   "mastery_criteria": [
+    "能根据方程特点选择合适的方法解一元二次方程",
+    "能用根的判别式判断根的情况并利用根与系数的关系求值"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p022_q1",
+     "topicId": "mxj_p022",
+     "prompt": "一元二次方程 3x 的平方减 2x 加 1 等于 0 的二次项系数、一次项系数与常数项分别是什么。",
+     "question": "一元二次方程 3x 的平方减 2x 加 1 等于 0 的二次项系数、一次项系数与常数项分别是什么。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3，-2，1"
+      },
+      {
+       "label": "B",
+       "text": "3，2，1"
+      },
+      {
+       "label": "C",
+       "text": "-2，3，1"
+      },
+      {
+       "label": "D",
+       "text": "3，-2，-1"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "一元二次方程的一般形式中，a 是二次项系数、b 是一次项系数、c 是常数项，对照方程可知分别为 3、-2 与 1。"
+    },
+    {
+     "id": "mxj_p022_q2",
+     "topicId": "mxj_p022",
+     "prompt": "不解方程，判断方程 x 的平方减 4x 加 4 等于 0 的根的情况。",
+     "question": "不解方程，判断方程 x 的平方减 4x 加 4 等于 0 的根的情况。",
+     "options": [
+      {
+       "label": "A",
+       "text": "两个不相等的实数根"
+      },
+      {
+       "label": "B",
+       "text": "两个相等的实数根"
+      },
+      {
+       "label": "C",
+       "text": "只有一个实数根"
+      },
+      {
+       "label": "D",
+       "text": "没有实数根"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "判别式等于 (-4) 的平方减 4 乘 1 乘 4，即 16 减 16 等于 0，所以方程有两个相等的实数根，其值为 2。"
+    },
+    {
+     "id": "mxj_p022_q3",
+     "topicId": "mxj_p022",
+     "prompt": "已知关于 x 的方程 x 的平方加 3x 加 m 等于 0 的一个根为 -3，求它的另一个根及 m 的值。",
+     "question": "已知关于 x 的方程 x 的平方加 3x 加 m 等于 0 的一个根为 -3，求它的另一个根及 m 的值。",
+     "options": [
+      {
+       "label": "A",
+       "text": "另一个根是 3，m 等于 0"
+      },
+      {
+       "label": "B",
+       "text": "另一个根是 3，m 等于 9"
+      },
+      {
+       "label": "C",
+       "text": "另一个根是 0，m 等于 9"
+      },
+      {
+       "label": "D",
+       "text": "另一个根是 0，m 等于 0"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由两根之和等于 -3，已知一根为 -3，则另一根为 0；再由两根之积等于 m 得 0 乘 -3 等于 m，所以 m 等于 0。"
+    },
+    {
+     "id": "mxj_p022_q4",
+     "topicId": "mxj_p022",
+     "prompt": "已知一元二次方程 x 的平方减 5x 加 6 等于 0 的两个根为 x1 与 x2，求 x1 乘 x2 的值。",
+     "question": "已知一元二次方程 x 的平方减 5x 加 6 等于 0 的两个根为 x1 与 x2，求 x1 乘 x2 的值。",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}",
+     "explanation": "由根与系数的关系，两根之积等于常数项与二次项系数的比，即 6 除以 1 等于 6；也可因式分解为 x 减 2 与 x 减 3 的积，两根为 2 和 3。"
+    },
+    {
+     "id": "mxj_p022_q5",
+     "topicId": "mxj_p022",
+     "prompt": "根据平方根的意义，解方程 x 的平方等于 9，写出它的两个根。",
+     "question": "根据平方根的意义，解方程 x 的平方等于 9，写出它的两个根。",
+     "answer": "x1 = 3，x2 = -3",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "由平方根的意义，9 的平方根有两个，分别是 3 与 -3，所以方程的两根为 x1 等于 3、x2 等于 -3，只写正根会漏解。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p023",
+   "description": "第4章从实际问题中抽象出二次函数，学习它的图象与性质、表达式的求法，研究二次函数与一元二次方程的关系并用二次函数模型解决最值与拱桥等问题。",
+   "mastery_criteria": [
+    "能画二次函数的图象并说出对称轴、顶点与开口方向",
+    "能用配方法求二次函数的最值并建立模型解决实际问题"
+   ],
+   "type": "modeling",
+   "questions": [
+    {
+     "id": "mxj_p023_q1",
+     "topicId": "mxj_p023",
+     "prompt": "下列函数中，哪一个是以 x 为自变量的二次函数。",
+     "question": "下列函数中，哪一个是以 x 为自变量的二次函数。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y 等于 3x 加 1"
+      },
+      {
+       "label": "B",
+       "text": "y 等于 3x 的平方加 2x 加 1"
+      },
+      {
+       "label": "C",
+       "text": "y 等于 x 的平方分之一"
+      },
+      {
+       "label": "D",
+       "text": "y 等于 x 的三次方加 1"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "二次函数的一般形式是 y 等于 ax 的平方加 bx 加 c，其中 a 不为零；只有第二个函数是关于 x 的二次多项式，其余分别为一次、分式与三次。"
+    },
+    {
+     "id": "mxj_p023_q2",
+     "topicId": "mxj_p023",
+     "prompt": "抛物线 y 等于 (x 减 2) 的平方加 3 的顶点坐标是什么。",
+     "question": "抛物线 y 等于 (x 减 2) 的平方加 3 的顶点坐标是什么。",
+     "options": [
+      {
+       "label": "A",
+       "text": "(2,3)"
+      },
+      {
+       "label": "B",
+       "text": "(-2,3)"
+      },
+      {
+       "label": "C",
+       "text": "(2,-3)"
+      },
+      {
+       "label": "D",
+       "text": "(-2,-3)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "形如 y 等于 a 乘 (x 减 h) 的平方加 k 的抛物线，对称轴是直线 x 等于 h，顶点坐标为 (h,k)，本题 h 等于 2、k 等于 3。"
+    },
+    {
+     "id": "mxj_p023_q3",
+     "topicId": "mxj_p023",
+     "prompt": "二次函数 y 等于负 2 乘 (x 加 1) 的平方减 3 的最大值是多少。",
+     "question": "二次函数 y 等于负 2 乘 (x 加 1) 的平方减 3 的最大值是多少。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "-1"
+      },
+      {
+       "label": "C",
+       "text": "1"
+      },
+      {
+       "label": "D",
+       "text": "-3"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "因为二次项系数 -2 小于 0，抛物线开口向下，函数在顶点 (-1,-3) 处取得最大值，所以最大值是 -3。"
+    },
+    {
+     "id": "mxj_p023_q4",
+     "topicId": "mxj_p023",
+     "prompt": "抛物线 y 等于 2x 的平方减 8x 加 1 的对称轴是直线 x 等于某个数，求这个数。",
+     "question": "抛物线 y 等于 2x 的平方减 8x 加 1 的对称轴是直线 x 等于某个数，求这个数。",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 2}",
+     "explanation": "抛物线 y 等于 ax 的平方加 bx 加 c 的对称轴是直线 x 等于负 b 除以 2a，这里 a 等于 2、b 等于 -8，所以 x 等于 8 除以 4 等于 2。"
+    },
+    {
+     "id": "mxj_p023_q5",
+     "topicId": "mxj_p023",
+     "prompt": "二次函数 y 等于 x 的平方减 2x 减 3 的图象与 x 轴交于两点，写出这两个交点的横坐标。",
+     "question": "二次函数 y 等于 x 的平方减 2x 减 3 的图象与 x 轴交于两点，写出这两个交点的横坐标。",
+     "answer": "x = -1，x = 3",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "令 y 等于 0 得 x 的平方减 2x 减 3 等于 0，因式分解为 (x 减 3)(x 加 1) 等于 0，所以交点的横坐标为 3 与 -1。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "mxj_p1088",
+   "page": 2,
+   "description": "本节由比和比例引入，学习比例的基本性质、合比与等比性质，认识成比例的线段，并了解黄金分割与黄金分割比。",
+   "mastery_criteria": [
+    "能由 ad 等于 bc 写出相应的比例式并求线段的比",
+    "能用等比性质求分子之和与分母之和的比"
+   ],
+   "misconceptions": [
+    "误以为比 a 比 b 就是 a 减 b 的差，把比与差混为一谈",
+    "由 ad 等于 bc 只会写出一种比例式，不会交换内项与比例外项"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1088_q1",
+     "topicId": "mxj_p1088",
+     "prompt": "已知四个非零实数满足 ad 等于 bc，则下列比例式中一定成立的是哪一个。",
+     "question": "已知四个非零实数满足 ad 等于 bc，则下列比例式中一定成立的是哪一个。",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 比 b 等于 c 比 d"
+      },
+      {
+       "label": "B",
+       "text": "a 比 c 等于 b 比 d"
+      },
+      {
+       "label": "C",
+       "text": "a 比 b 等于 d 比 c"
+      },
+      {
+       "label": "D",
+       "text": "a 比 d 等于 b 比 c"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由比例的基本性质，a 比 c 等于 b 比 d 两边交叉相乘正好得 ad 等于 bc；其余各式的交叉相乘结果都与已知不符。"
+    },
+    {
+     "id": "mxj_p1088_q2",
+     "topicId": "mxj_p1088",
+     "prompt": "已知 a 比 b 等于 3 比 5，求 a 加 b 与 b 的比值。",
+     "question": "已知 a 比 b 等于 3 比 5，求 a 加 b 与 b 的比值。",
+     "options": [
+      {
+       "label": "A",
+       "text": "五分之三"
+      },
+      {
+       "label": "B",
+       "text": "三分之五"
+      },
+      {
+       "label": "C",
+       "text": "五分之八"
+      },
+      {
+       "label": "D",
+       "text": "五分之二"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由合比性质，比的前项与后项同时加上后项时比值变为 (3 加 5) 比 5，即五分之八；也可设 a 等于 3k、b 等于 5k 代入求得。"
+    },
+    {
+     "id": "mxj_p1088_q3",
+     "topicId": "mxj_p1088",
+     "prompt": "黄金分割比约为 0.618，若线段 AB 长 10 厘米，点 C 是 AB 的黄金分割点且 AC 较长，求 AC 的长。",
+     "question": "黄金分割比约为 0.618，若线段 AB 长 10 厘米，点 C 是 AB 的黄金分割点且 AC 较长，求 AC 的长。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3.82 厘米"
+      },
+      {
+       "label": "B",
+       "text": "6.18 厘米"
+      },
+      {
+       "label": "C",
+       "text": "6.5 厘米"
+      },
+      {
+       "label": "D",
+       "text": "5 厘米"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "较长线段与原线段的比等于黄金分割比，所以 AC 约为 10 乘 0.618 等于 6.18 厘米，另一段 BC 约为 3.82 厘米。"
+    },
+    {
+     "id": "mxj_p1088_q4",
+     "topicId": "mxj_p1088",
+     "prompt": "已知 a 比 b、c 比 d、e 比 f 都等于 5 比 7，且 b 加 d 加 f 不等于 0，求 a 加 c 加 e 与 b 加 d 加 f 的比。",
+     "question": "已知 a 比 b、c 比 d、e 比 f 都等于 5 比 7，且 b 加 d 加 f 不等于 0，求 a 加 c 加 e 与 b 加 d 加 f 的比。",
+     "options": [
+      {
+       "label": "A",
+       "text": "5 比 7"
+      },
+      {
+       "label": "B",
+       "text": "15 比 7"
+      },
+      {
+       "label": "C",
+       "text": "5 比 21"
+      },
+      {
+       "label": "D",
+       "text": "7 比 5"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由等比性质，各比相等时分子之和与分母之和的比仍等于原来的比，所以所求比值等于 5 比 7，这正是教材例题的结论。"
+    },
+    {
+     "id": "mxj_p1088_q5",
+     "topicId": "mxj_p1088",
+     "prompt": "下列四组线段中，哪一组是成比例的线段，长度单位均为厘米。",
+     "question": "下列四组线段中，哪一组是成比例的线段，长度单位均为厘米。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1，2，3，4"
+      },
+      {
+       "label": "B",
+       "text": "3，4，5，7"
+      },
+      {
+       "label": "C",
+       "text": "1，2，2，3"
+      },
+      {
+       "label": "D",
+       "text": "2，3，4，6"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "成比例的线段要求两条线段的比等于另外两条线段的比，2 比 3 与 4 比 6 都等于三分之二，所以这一组成比例，其余各组的两组比不相等。"
+    },
+    {
+     "id": "mxj_p1088_q6",
+     "topicId": "mxj_p1088",
+     "prompt": "已知 a 比 b 等于 2 比 3，且 a 加 b 等于 15，求 a 的值。",
+     "question": "已知 a 比 b 等于 2 比 3，且 a 加 b 等于 15，求 a 的值。",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 6}",
+     "explanation": "由比例可设 a 等于 2k、b 等于 3k，则 2k 加 3k 等于 15，解得 k 等于 3，所以 a 等于 2 乘 3 等于 6。"
+    },
+    {
+     "id": "mxj_p1088_q7",
+     "topicId": "mxj_p1088",
+     "prompt": "已知四条线段的长分别为 a 等于 0.8 厘米，b 等于 2 厘米，c 等于 1.2 厘米，d 等于 3 厘米，求 a 与 b 的比。",
+     "question": "已知四条线段的长分别为 a 等于 0.8 厘米，b 等于 2 厘米，c 等于 1.2 厘米，d 等于 3 厘米，求 a 与 b 的比。",
+     "answer": 0.4,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 0.8}, {\"type\": \"num\", \"value\": 2}]}",
+     "explanation": "线段的比就是两条线段长度的比，a 与 b 的比为 0.8 除以 2 等于 0.4；同样 c 与 d 的比为 0.4，说明这四条线段成比例。"
+    },
+    {
+     "id": "mxj_p1088_q8",
+     "topicId": "mxj_p1088",
+     "prompt": "已知 x 比 y 等于 2 比 3，y 比 z 等于 4 比 7，求 x 比 y 比 z。",
+     "question": "已知 x 比 y 等于 2 比 3，y 比 z 等于 4 比 7，求 x 比 y 比 z。",
+     "answer": "x 比 y 比 z 等于 8 比 12 比 21",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "先把两个比中 y 的份数统一：2 比 3 化为 8 比 12，4 比 7 化为 12 比 21，于是 x 比 y 比 z 等于 8 比 12 比 21。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1089",
+   "page": 9,
+   "description": "本节通过面积法与全等三角形推出基本事实：两条直线被一组平行线所截，所得对应线段成比例，并由此得到三角形中的推论。",
+   "mastery_criteria": [
+    "能用平行线分线段成比例求未知线段的长",
+    "能说明平行于三角形一边的直线截其他两边所得对应线段成比例"
+   ],
+   "misconceptions": [
+    "把对应线段写成同一三角形内的相邻两段，对应关系错位",
+    "认为被截的两条直线必须平行才能用该基本事实"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p1089_q1",
+     "topicId": "mxj_p1089",
+     "prompt": "两条直线被一组平行线所截，若在其中一条直线上截得的两条线段相等，则在另一条直线上截得的两条线段有什么关系。",
+     "question": "两条直线被一组平行线所截，若在其中一条直线上截得的两条线段相等，则在另一条直线上截得的两条线段有什么关系。",
+     "options": [
+      {
+       "label": "A",
+       "text": "相等"
+      },
+      {
+       "label": "B",
+       "text": "成比例但不相等"
+      },
+      {
+       "label": "C",
+       "text": "一定不相等"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材先用全等三角形证明了这一情形：截得的线段相等时，另一条直线上截得的线段也相等，它是分线段成比例基本事实的特例。"
+    },
+    {
+     "id": "mxj_p1089_q2",
+     "topicId": "mxj_p1089",
+     "prompt": "在三角形 ABC 中，DE 平行于 BC，点 D 在 AB 上、点 E 在 AC 上，若 AD 等于 2，DB 等于 3，求 AE 与 EC 的比。",
+     "question": "在三角形 ABC 中，DE 平行于 BC，点 D 在 AB 上、点 E 在 AC 上，若 AD 等于 2，DB 等于 3，求 AE 与 EC 的比。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2 比 3"
+      },
+      {
+       "label": "B",
+       "text": "3 比 2"
+      },
+      {
+       "label": "C",
+       "text": "2 比 5"
+      },
+      {
+       "label": "D",
+       "text": "3 比 5"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "平行于三角形一边的直线截其他两边，所得的对应线段成比例，所以 AE 与 EC 的比等于 AD 与 DB 的比，即 2 比 3。"
+    },
+    {
+     "id": "mxj_p1089_q3",
+     "topicId": "mxj_p1089",
+     "prompt": "在三角形 ABC 中，DE 平行于 BC，AD 等于 2，AB 等于 5，AE 等于 1.8，求 AC 的长。",
+     "question": "在三角形 ABC 中，DE 平行于 BC，AD 等于 2，AB 等于 5，AE 等于 1.8，求 AC 的长。",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "3.6"
+      },
+      {
+       "label": "C",
+       "text": "4.5"
+      },
+      {
+       "label": "D",
+       "text": "5.4"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由平行线分线段成比例得 AD 比 AB 等于 AE 比 AC，即 2 比 5 等于 1.8 比 AC，解得 AC 等于 5 乘 1.8 除以 2 等于 4.5。"
+    },
+    {
+     "id": "mxj_p1089_q4",
+     "topicId": "mxj_p1089",
+     "prompt": "已知三条直线两两平行，AB 等于 2，BC 等于 3，A1B1 等于 1.5，求 B1C1 的长。",
+     "question": "已知三条直线两两平行，AB 等于 2，BC 等于 3，A1B1 等于 1.5，求 B1C1 的长。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "2.25"
+      },
+      {
+       "label": "C",
+       "text": "2.5"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由基本事实得 AB 比 BC 等于 A1B1 比 B1C1，即 2 比 3 等于 1.5 比 B1C1，所以 B1C1 等于 3 乘 1.5 除以 2 等于 2.25。"
+    },
+    {
+     "id": "mxj_p1089_q5",
+     "topicId": "mxj_p1089",
+     "prompt": "在三角形 ABC 中，点 D 在 AC 上且 CD 与 AD 的比为 1 比 2，过 D 作 DE 平行于 CB 交 AB 于 E，若 AB 等于 15，求 AE 的长。",
+     "question": "在三角形 ABC 中，点 D 在 AC 上且 CD 与 AD 的比为 1 比 2，过 D 作 DE 平行于 CB 交 AB 于 E，若 AB 等于 15，求 AE 的长。",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "10"
+      },
+      {
+       "label": "C",
+       "text": "12"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由 CD 比 AD 等于 1 比 2 得 AD 占 AC 的三分之二；又 DE 平行于 CB，所以 AE 比 AB 等于 AD 比 AC 等于三分之二，故 AE 等于 15 乘三分之二等于 10。"
+    },
+    {
+     "id": "mxj_p1089_q6",
+     "topicId": "mxj_p1089",
+     "prompt": "在三角形 ABC 中，DE 平行于 BC，AB 等于 3，AD 等于 2，EC 等于 1.8，求 AC 的长。",
+     "question": "在三角形 ABC 中，DE 平行于 BC，AB 等于 3，AD 等于 2，EC 等于 1.8，求 AC 的长。",
+     "answer": 5.4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 5.4}",
+     "explanation": "由平行线分线段成比例得 AD 比 AB 等于 AE 比 AC，设 AC 为 x，则 AE 为 x 减 1.8，代入得 2 比 3 等于 (x 减 1.8) 比 x，解得 x 等于 5.4。"
+    },
+    {
+     "id": "mxj_p1089_q7",
+     "topicId": "mxj_p1089",
+     "prompt": "直线 AC 与 BD 相交于点 O，直线 MN 过点 O，且 BA、MN、CD 三条直线两两平行，OA 等于 10，OB 等于 6.3，OD 等于 12.6，求 OC 的长。",
+     "question": "直线 AC 与 BD 相交于点 O，直线 MN 过点 O，且 BA、MN、CD 三条直线两两平行，OA 等于 10，OB 等于 6.3，OD 等于 12.6，求 OC 的长。",
+     "answer": 20,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 20}",
+     "explanation": "三条平行线截两条相交直线，得 OA 比 OC 等于 OB 比 OD，即 10 比 OC 等于 6.3 比 12.6；因为 6.3 比 12.6 等于 0.5，所以 OC 等于 10 除以 0.5 等于 20。"
+    },
+    {
+     "id": "mxj_p1089_q8",
+     "topicId": "mxj_p1089",
+     "prompt": "在三角形 ABC 中，点 D，E 分别在 AB，AC 上，DE 平行于 BC，且 DB 等于 AE，AB 等于 5，AC 等于 10，求 AE 的长。",
+     "question": "在三角形 ABC 中，点 D，E 分别在 AB，AC 上，DE 平行于 BC，且 DB 等于 AE，AB 等于 5，AC 等于 10，求 AE 的长。",
+     "answer": "AE 等于三分之十",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "设 AE 为 x，则 AD 等于 5 减 x，EC 等于 10 减 x，由 DE 平行于 BC 得 (5 减 x) 比 x 等于 x 比 (10 减 x)，整理得 15x 等于 50，所以 AE 等于三分之十。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1090",
+   "page": 14,
+   "description": "本节给出相似三角形的定义与记法，说明相似比的含义，并把定义推广到边数相同的相似多边形，指出全等是相似比等于 1 的特例。",
+   "mastery_criteria": [
+    "能说出相似三角形的定义并按对应顶点顺序写出相似式",
+    "能用相似比求未知边的长并判断多边形是否相似"
+   ],
+   "misconceptions": [
+    "写相似式时把不对应的顶点写在同一位置，导致对应边错乱",
+    "认为任意两个矩形或任意两个菱形都一定相似"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1090_q1",
+     "topicId": "mxj_p1090",
+     "prompt": "下列哪一个条件是判定两个三角形为相似三角形所必需的。",
+     "question": "下列哪一个条件是判定两个三角形为相似三角形所必需的。",
+     "options": [
+      {
+       "label": "A",
+       "text": "三个角对应相等"
+      },
+      {
+       "label": "B",
+       "text": "三条边对应相等"
+      },
+      {
+       "label": "C",
+       "text": "三个角对应相等且三条边对应成比例"
+      },
+      {
+       "label": "D",
+       "text": "有两组边成比例即可"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材把三个角对应相等且三条边对应成比例的两个三角形称为相似三角形，这是相似三角形的定义，只满足其中一部分不能判定相似。"
+    },
+    {
+     "id": "mxj_p1090_q2",
+     "topicId": "mxj_p1090",
+     "prompt": "若两个相似三角形的相似比等于 1，则这两个三角形有什么关系。",
+     "question": "若两个相似三角形的相似比等于 1，则这两个三角形有什么关系。",
+     "options": [
+      {
+       "label": "A",
+       "text": "全等"
+      },
+      {
+       "label": "B",
+       "text": "面积相等但形状不同"
+      },
+      {
+       "label": "C",
+       "text": "不一定全等"
+      },
+      {
+       "label": "D",
+       "text": "周长一定不相等"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "相似比等于 1 时对应边相等，对应角也相等，两个三角形全等；所以全等三角形可以看成相似比为 1 的相似三角形。"
+    },
+    {
+     "id": "mxj_p1090_q3",
+     "topicId": "mxj_p1090",
+     "prompt": "任意两个等边三角形一定相似，其主要理由是什么。",
+     "question": "任意两个等边三角形一定相似，其主要理由是什么。",
+     "options": [
+      {
+       "label": "A",
+       "text": "三个角都是 60 度，三边又对应成比例"
+      },
+      {
+       "label": "B",
+       "text": "边长一定相等"
+      },
+      {
+       "label": "C",
+       "text": "面积一定相等"
+      },
+      {
+       "label": "D",
+       "text": "周长一定相等"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "等边三角形的三个角都是 60 度，三个角对应相等，且各边相等使对应边成比例，所以任意两个等边三角形都相似。"
+    },
+    {
+     "id": "mxj_p1090_q4",
+     "topicId": "mxj_p1090",
+     "prompt": "已知三角形 ABC 相似于三角形 DEF，角 A 等于 48 度，AB 等于 8，DE 等于 4，AC 等于 6，求 DF 的长。",
+     "question": "已知三角形 ABC 相似于三角形 DEF，角 A 等于 48 度，AB 等于 8，DE 等于 4，AC 等于 6，求 DF 的长。",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "12"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "相似三角形对应边成比例，AB 比 DE 等于 AC 比 DF，即 8 比 4 等于 6 比 DF，解得 DF 等于 3；对应角相等给出角 D 也等于 48 度。"
+    },
+    {
+     "id": "mxj_p1090_q5",
+     "topicId": "mxj_p1090",
+     "prompt": "下列各组图形中，一定相似的是哪一组。",
+     "question": "下列各组图形中，一定相似的是哪一组。",
+     "options": [
+      {
+       "label": "A",
+       "text": "两个矩形"
+      },
+      {
+       "label": "B",
+       "text": "两个菱形"
+      },
+      {
+       "label": "C",
+       "text": "两个正方形"
+      },
+      {
+       "label": "D",
+       "text": "两个平行四边形"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "任意两个正方形的四个角都是直角、四条边又成比例，所以一定相似；矩形只保证角相等、菱形只保证边成比例，平行四边形两者都不保证。"
+    },
+    {
+     "id": "mxj_p1090_q6",
+     "topicId": "mxj_p1090",
+     "prompt": "已知三角形 ADE 相似于三角形 ABC，相似比为 2 比 5，DE 等于 4 厘米，求 BC 的长。",
+     "question": "已知三角形 ADE 相似于三角形 ABC，相似比为 2 比 5，DE 等于 4 厘米，求 BC 的长。",
+     "answer": 10,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 10}",
+     "explanation": "相似比就是对应边的比，DE 与 BC 是对应边，所以 4 比 BC 等于 2 比 5，解得 BC 等于 10 厘米。"
+    },
+    {
+     "id": "mxj_p1090_q7",
+     "topicId": "mxj_p1090",
+     "prompt": "四边形 ABCD 相似于四边形 A1B1C1D1，相似比为 2，AB 等于 5，求 A1B1 的长。",
+     "question": "四边形 ABCD 相似于四边形 A1B1C1D1，相似比为 2，AB 等于 5，求 A1B1 的长。",
+     "answer": 2.5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 2}]}",
+     "explanation": "相似比是 AB 与 A1B1 的比，即 5 比 A1B1 等于 2，所以 A1B1 等于 5 除以 2 等于 2.5。"
+    },
+    {
+     "id": "mxj_p1090_q8",
+     "topicId": "mxj_p1090",
+     "prompt": "矩形 ABCD 中 AB 等于 1，点 E，F 分别是 AD，BC 的中点，矩形 ABCD 与矩形 EABF 相似，求矩形 ABCD 的面积。",
+     "question": "矩形 ABCD 中 AB 等于 1，点 E，F 分别是 AD，BC 的中点，矩形 ABCD 与矩形 EABF 相似，求矩形 ABCD 的面积。",
+     "answer": "面积等于根号 2",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "设 AD 为 x，则 AE 等于 x 的一半；由两矩形相似得 1 比二分之 x 等于 x 比 1，即 x 的平方等于 2，x 等于根号 2，所以面积为 1 乘根号 2 等于根号 2。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1091",
+   "page": 21,
+   "description": "本节先证明平行于三角形一边的直线截得的三角形与原三角形相似，再依次得到两角分别相等、两边成比例且夹角相等、三边成比例三个判定定理。",
+   "mastery_criteria": [
+    "能用两角分别相等判定两个三角形相似并写出对应边之比",
+    "能根据已知边角条件选择恰当的判定定理说明相似"
+   ],
+   "misconceptions": [
+    "把两边成比例且其中一边的对角相等当成相似的条件",
+    "用三边成比例时没有按大小顺序正确配对对应边"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p1091_q1",
+     "topicId": "mxj_p1091",
+     "prompt": "在三角形 ABC 中，DE 平行于 BC，交 AB 于 D、交 AC 于 E，可以得到的相似三角形是哪一对。",
+     "question": "在三角形 ABC 中，DE 平行于 BC，交 AB 于 D、交 AC 于 E，可以得到的相似三角形是哪一对。",
+     "options": [
+      {
+       "label": "A",
+       "text": "三角形 ADE 与三角形 ABC"
+      },
+      {
+       "label": "B",
+       "text": "三角形 ADE 与三角形 ACB"
+      },
+      {
+       "label": "C",
+       "text": "三角形 ADE 与三角形 BCA"
+      },
+      {
+       "label": "D",
+       "text": "无法判定相似"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "平行于三角形一边的直线与其他两边相交，截得的三角形与原三角形相似，其中 A 与 A、D 与 B、E 与 C 分别对应。"
+    },
+    {
+     "id": "mxj_p1091_q2",
+     "topicId": "mxj_p1091",
+     "prompt": "下列条件中，不能判定两个三角形相似的是哪一个。",
+     "question": "下列条件中，不能判定两个三角形相似的是哪一个。",
+     "options": [
+      {
+       "label": "A",
+       "text": "两角分别相等"
+      },
+      {
+       "label": "B",
+       "text": "三边成比例"
+      },
+      {
+       "label": "C",
+       "text": "两边成比例且夹角相等"
+      },
+      {
+       "label": "D",
+       "text": "两边成比例且其中一组对应边的对角相等"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材小结特别提醒，两边成比例且其中一组对应边的对角相等的两个三角形不一定相似；其余三个条件都是教材给出的判定定理。"
+    },
+    {
+     "id": "mxj_p1091_q3",
+     "topicId": "mxj_p1091",
+     "prompt": "在直角三角形 ABC 与直角三角形 DEF 中，角 C 与角 F 都是 90 度，角 A 等于角 D，AB 等于 5，BC 等于 4，DE 等于 3，求 EF 的长。",
+     "question": "在直角三角形 ABC 与直角三角形 DEF 中，角 C 与角 F 都是 90 度，角 A 等于角 D，AB 等于 5，BC 等于 4，DE 等于 3，求 EF 的长。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2.4"
+      },
+      {
+       "label": "B",
+       "text": "2.5"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "1.6"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个直角三角形有一个锐角相等，因此相似；由 AB 比 DE 等于 BC 比 EF 得 5 比 3 等于 4 比 EF，解得 EF 等于 2.4。"
+    },
+    {
+     "id": "mxj_p1091_q4",
+     "topicId": "mxj_p1091",
+     "prompt": "两个三角形中，角 C 与角 F 都是 70 度，AC 等于 3.5，BC 等于 2.5，DF 等于 2.1，EF 等于 1.5，这两个三角形的关系是什么。",
+     "question": "两个三角形中，角 C 与角 F 都是 70 度，AC 等于 3.5，BC 等于 2.5，DF 等于 2.1，EF 等于 1.5，这两个三角形的关系是什么。",
+     "options": [
+      {
+       "label": "A",
+       "text": "不一定相似"
+      },
+      {
+       "label": "B",
+       "text": "相似，因为两边成比例且夹角相等"
+      },
+      {
+       "label": "C",
+       "text": "一定全等"
+      },
+      {
+       "label": "D",
+       "text": "一定不相似"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "AC 与 DF 的比为 3.5 比 2.1 等于 5 比 3，BC 与 EF 的比为 2.5 比 1.5 也等于 5 比 3，且夹角都是 70 度，所以两个三角形相似。"
+    },
+    {
+     "id": "mxj_p1091_q5",
+     "topicId": "mxj_p1091",
+     "prompt": "在三角形 ABC 中，CD 是 AB 边上的高，且 AD 比 CD 等于 CD 比 BD，求角 ACB 的度数。",
+     "question": "在三角形 ABC 中，CD 是 AB 边上的高，且 AD 比 CD 等于 CD 比 BD，求角 ACB 的度数。",
+     "options": [
+      {
+       "label": "A",
+       "text": "60 度"
+      },
+      {
+       "label": "B",
+       "text": "75 度"
+      },
+      {
+       "label": "C",
+       "text": "90 度"
+      },
+      {
+       "label": "D",
+       "text": "120 度"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由 CD 是高得两个角都是 90 度，加上 AD 比 CD 等于 CD 比 BD，得三角形 ACD 与三角形 CBD 相似，于是角 ACD 等于角 CBD，所以角 ACB 等于 90 度。"
+    },
+    {
+     "id": "mxj_p1091_q6",
+     "topicId": "mxj_p1091",
+     "prompt": "在三角形 ABC 中，点 D，E 分别是 AB，AC 的中点，DE 等于 3，求 BC 的长。",
+     "question": "在三角形 ABC 中，点 D，E 分别是 AB，AC 的中点，DE 等于 3，求 BC 的长。",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 6}",
+     "explanation": "由中位线定理，DE 平行于 BC 且等于 BC 的一半，所以三角形 ADE 与三角形 ABC 相似，相似比为 1 比 2，BC 等于 2 乘 3 等于 6。"
+    },
+    {
+     "id": "mxj_p1091_q7",
+     "topicId": "mxj_p1091",
+     "prompt": "在三角形 ABC 中，DE 平行于 BC，AD 等于 1，DB 等于 2，DE 等于 3，求 BC 的长。",
+     "question": "在三角形 ABC 中，DE 平行于 BC，AD 等于 1，DB 等于 2，DE 等于 3，求 BC 的长。",
+     "answer": 9,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 9}",
+     "explanation": "由 DE 平行于 BC 得三角形 ADE 与三角形 ABC 相似，相似比是 AD 比 AB 等于 1 比 3，所以 BC 等于 3 乘 3 等于 9。"
+    },
+    {
+     "id": "mxj_p1091_q8",
+     "topicId": "mxj_p1091",
+     "prompt": "在四边形 ABCD 中，角 B 等于角 ACD，AB 等于 6，BC 等于 4，AC 等于 5，CD 等于 7.5，求 AD 的长。",
+     "question": "在四边形 ABCD 中，角 B 等于角 ACD，AB 等于 6，BC 等于 4，AC 等于 5，CD 等于 7.5，求 AD 的长。",
+     "answer": "AD 等于 6.25",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "AB 与 DC 的比为 6 比 7.5 等于 0.8，BC 与 CA 的比为 4 比 5 也等于 0.8，且角 B 等于角 ACD，得两个三角形相似，所以 AC 比 DA 等于 0.8，AD 等于 5 除以 0.8 等于 6.25。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1092",
+   "page": 32,
+   "description": "本节证明相似三角形对应边上的高、中线与角平分线的比都等于相似比，并推出面积比等于相似比的平方，周长比等于相似比。",
+   "mastery_criteria": [
+    "能用对应线段的比等于相似比求高、中线或角平分线的长",
+    "能用面积比等于相似比的平方求图形面积"
+   ],
+   "misconceptions": [
+    "把面积比直接写成相似比，忘了要平方",
+    "在求面积或周长时没有先确定相似比就代入计算"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p1092_q1",
+     "topicId": "mxj_p1092",
+     "prompt": "两个相似三角形的相似比为 2 比 3，则它们对应边上的高的比是多少。",
+     "question": "两个相似三角形的相似比为 2 比 3，则它们对应边上的高的比是多少。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2 比 3"
+      },
+      {
+       "label": "B",
+       "text": "4 比 9"
+      },
+      {
+       "label": "C",
+       "text": "3 比 2"
+      },
+      {
+       "label": "D",
+       "text": "2 比 5"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "相似三角形对应边上的高、对应边上的中线与对应角的平分线的比都等于相似比，所以对应高的比就是 2 比 3。"
+    },
+    {
+     "id": "mxj_p1092_q2",
+     "topicId": "mxj_p1092",
+     "prompt": "相似比为 1 比 4 的两个相似三角形，它们的面积比是多少。",
+     "question": "相似比为 1 比 4 的两个相似三角形，它们的面积比是多少。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 比 4"
+      },
+      {
+       "label": "B",
+       "text": "1 比 8"
+      },
+      {
+       "label": "C",
+       "text": "1 比 16"
+      },
+      {
+       "label": "D",
+       "text": "4 比 1"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "相似三角形的面积比等于相似比的平方，1 比 4 的平方是 1 比 16，所以面积比为 1 比 16。"
+    },
+    {
+     "id": "mxj_p1092_q3",
+     "topicId": "mxj_p1092",
+     "prompt": "两个相似三角形的相似比为 2 比 3，它们的面积之和为 91，求较大三角形的面积。",
+     "question": "两个相似三角形的相似比为 2 比 3，它们的面积之和为 91，求较大三角形的面积。",
+     "options": [
+      {
+       "label": "A",
+       "text": "63"
+      },
+      {
+       "label": "B",
+       "text": "28"
+      },
+      {
+       "label": "C",
+       "text": "52"
+      },
+      {
+       "label": "D",
+       "text": "39"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "面积比等于相似比的平方即 4 比 9，设两个面积分别为 4k 与 9k，则 13k 等于 91，k 等于 7，较大三角形面积为 9 乘 7 等于 63。"
+    },
+    {
+     "id": "mxj_p1092_q4",
+     "topicId": "mxj_p1092",
+     "prompt": "在三角形 ABC 中，EF 平行于 BC，AE 与 EB 的比为 1 比 2，四边形 BCFE 的面积为 8，求三角形 ABC 的面积。",
+     "question": "在三角形 ABC 中，EF 平行于 BC，AE 与 EB 的比为 1 比 2，四边形 BCFE 的面积为 8，求三角形 ABC 的面积。",
+     "options": [
+      {
+       "label": "A",
+       "text": "8"
+      },
+      {
+       "label": "B",
+       "text": "9"
+      },
+      {
+       "label": "C",
+       "text": "12"
+      },
+      {
+       "label": "D",
+       "text": "18"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由 AE 比 EB 等于 1 比 2 得 AE 比 AB 等于 1 比 3，所以三角形 AEF 与三角形 ABC 的面积比为 1 比 9；设 AEF 面积为 x，由 x 比 (x 加 8) 等于 1 比 9 解得 x 等于 1，总面积等于 9。"
+    },
+    {
+     "id": "mxj_p1092_q5",
+     "topicId": "mxj_p1092",
+     "prompt": "两个相似三角形的一组对应边分别为 10 厘米和 20 厘米，它们的周长之差为 60 厘米，求较大三角形的周长。",
+     "question": "两个相似三角形的一组对应边分别为 10 厘米和 20 厘米，它们的周长之差为 60 厘米，求较大三角形的周长。",
+     "options": [
+      {
+       "label": "A",
+       "text": "60 厘米"
+      },
+      {
+       "label": "B",
+       "text": "90 厘米"
+      },
+      {
+       "label": "C",
+       "text": "120 厘米"
+      },
+      {
+       "label": "D",
+       "text": "180 厘米"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "相似比为 1 比 2，周长比也是 1 比 2；设小三角形周长为 x，则大三角形周长为 2x，由 2x 减 x 等于 60 得 x 等于 60，所以较大周长为 120 厘米。"
+    },
+    {
+     "id": "mxj_p1092_q6",
+     "topicId": "mxj_p1092",
+     "prompt": "已知两个三角形相似，AM 与 DN 分别是它们的一条中线，AM 等于 6，AB 等于 8，DE 等于 4，求 DN 的长。",
+     "question": "已知两个三角形相似，AM 与 DN 分别是它们的一条中线，AM 等于 6，AB 等于 8，DE 等于 4，求 DN 的长。",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 3}",
+     "explanation": "相似比是 AB 比 DE 等于 8 比 4 等于 2，对应中线的比也等于相似比，所以 DN 等于 6 除以 2 等于 3。"
+    },
+    {
+     "id": "mxj_p1092_q7",
+     "topicId": "mxj_p1092",
+     "prompt": "两个相似三角形的相似比为 1 比 3，若较小三角形的面积为 5，求较大三角形的面积。",
+     "question": "两个相似三角形的相似比为 1 比 3，若较小三角形的面积为 5，求较大三角形的面积。",
+     "answer": 45,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 45}",
+     "explanation": "面积比等于相似比的平方即 1 比 9，较小三角形面积为 5，所以较大三角形面积为 5 乘 9 等于 45。"
+    },
+    {
+     "id": "mxj_p1092_q8",
+     "topicId": "mxj_p1092",
+     "prompt": "一个直角三角形的三边长为 3，4，5，另一个与它相似的三角形的最小边长为 7，求另一个三角形的周长。",
+     "question": "一个直角三角形的三边长为 3，4，5，另一个与它相似的三角形的最小边长为 7，求另一个三角形的周长。",
+     "answer": "周长等于 28",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "原三角形的周长为 12，相似比为 3 比 7，周长比等于相似比，所以另一个三角形的周长为 12 乘 7 除以 3 等于 28。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1093",
+   "page": 38,
+   "description": "本节用相似三角形解决测量问题，包括池塘两端距离、步枪瞄准偏离、栏杆两臂升降与用影长或纸板测树高等实际情境。",
+   "mastery_criteria": [
+    "能在实际情境中构造相似三角形并确定对应边",
+    "能用对应边成比例求不可直接测量的长度"
+   ],
+   "misconceptions": [
+    "把实物长度与图上长度直接相加，不做对应边的比例换算",
+    "构造相似三角形时把对应顶点配错，列出错误的比例式"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "mxj_p1093_q1",
+     "topicId": "mxj_p1093",
+     "prompt": "测量池塘两端 A，B 的距离时，在池塘外取点 C，使 AC 与 DC 的比、BC 与 EC 的比都等于 2，测得 DE 等于 50 米，求 AB 的长。",
+     "question": "测量池塘两端 A，B 的距离时，在池塘外取点 C，使 AC 与 DC 的比、BC 与 EC 的比都等于 2，测得 DE 等于 50 米，求 AB 的长。",
+     "options": [
+      {
+       "label": "A",
+       "text": "25 米"
+      },
+      {
+       "label": "B",
+       "text": "50 米"
+      },
+      {
+       "label": "C",
+       "text": "100 米"
+      },
+      {
+       "label": "D",
+       "text": "200 米"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两组对应边成比例且顶角是对顶角，所以两个三角形相似，相似比为 2，AB 等于 2 乘 DE 等于 100 米。"
+    },
+    {
+     "id": "mxj_p1093_q2",
+     "topicId": "mxj_p1093",
+     "prompt": "同一时刻测得标杆高 1.5 米、影长 2 米，一棵树的影长为 8 米，求树高。",
+     "question": "同一时刻测得标杆高 1.5 米、影长 2 米，一棵树的影长为 8 米，求树高。",
+     "options": [
+      {
+       "label": "A",
+       "text": "6 米"
+      },
+      {
+       "label": "B",
+       "text": "7.5 米"
+      },
+      {
+       "label": "C",
+       "text": "10 米"
+      },
+      {
+       "label": "D",
+       "text": "12 米"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "同一时刻太阳光线平行，物体的高与影长成比例，设树高为 x，则 x 比 8 等于 1.5 比 2，解得 x 等于 6 米。"
+    },
+    {
+     "id": "mxj_p1093_q3",
+     "topicId": "mxj_p1093",
+     "prompt": "射击时眼睛、准星与靶心本应在一条直线上，若 OA 等于 0.2 米，OB 等于 50 米，准星偏离 AA1 等于 0.0005 米，且 AA1 平行于 BB1，求 BB1 的长。",
+     "question": "射击时眼睛、准星与靶心本应在一条直线上，若 OA 等于 0.2 米，OB 等于 50 米，准星偏离 AA1 等于 0.0005 米，且 AA1 平行于 BB1，求 BB1 的长。",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.1 米"
+      },
+      {
+       "label": "B",
+       "text": "0.125 米"
+      },
+      {
+       "label": "C",
+       "text": "0.25 米"
+      },
+      {
+       "label": "D",
+       "text": "0.0125 米"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由 AA1 平行于 BB1 得两个三角形相似，OA 比 OB 等于 AA1 比 BB1，即 0.2 比 50 等于 0.0005 比 BB1，解得 BB1 等于 0.125 米。"
+    },
+    {
+     "id": "mxj_p1093_q4",
+     "topicId": "mxj_p1093",
+     "prompt": "路口栏杆的短臂长 1 米，长臂长 6 米，当短臂端点下降 0.5 米时，长臂端点升高多少米。",
+     "question": "路口栏杆的短臂长 1 米，长臂长 6 米，当短臂端点下降 0.5 米时，长臂端点升高多少米。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2 米"
+      },
+      {
+       "label": "B",
+       "text": "3 米"
+      },
+      {
+       "label": "C",
+       "text": "4 米"
+      },
+      {
+       "label": "D",
+       "text": "6 米"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两臂绕同一支点转动，端点移动的距离与臂长成比例，短臂与长臂的比为 1 比 6，所以长臂端点升高 0.5 乘 6 等于 3 米。"
+    },
+    {
+     "id": "mxj_p1093_q5",
+     "topicId": "mxj_p1093",
+     "prompt": "宣传栏 BC 后面 2 米处植有与它平行的 6 棵树，相邻两棵树的间隔均为 2 米，一人站在栏前点 A 处正好看到两端的树干，AF 垂直 BC，AF 等于 3 米，求 BC 的长。",
+     "question": "宣传栏 BC 后面 2 米处植有与它平行的 6 棵树，相邻两棵树的间隔均为 2 米，一人站在栏前点 A 处正好看到两端的树干，AF 垂直 BC，AF 等于 3 米，求 BC 的长。",
+     "options": [
+      {
+       "label": "A",
+       "text": "6 米"
+      },
+      {
+       "label": "B",
+       "text": "5 米"
+      },
+      {
+       "label": "C",
+       "text": "4 米"
+      },
+      {
+       "label": "D",
+       "text": "8 米"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "六棵树两端相距 5 个间隔共 10 米；A 到树的距离为 3 加 2 等于 5 米，由相似得 BC 比 10 等于 3 比 5，所以 BC 等于 6 米。"
+    },
+    {
+     "id": "mxj_p1093_q6",
+     "topicId": "mxj_p1093",
+     "prompt": "同一时刻，1.2 米长的标杆影长为 3 米，一棵大树的影长为 12 米，求大树的高度。",
+     "question": "同一时刻，1.2 米长的标杆影长为 3 米，一棵大树的影长为 12 米，求大树的高度。",
+     "answer": 4.8,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 4.8}",
+     "explanation": "同一时刻物高与影长成比例，设树高为 x，则 x 比 12 等于 1.2 比 3，所以 x 等于 12 乘 1.2 除以 3 等于 4.8 米。"
+    },
+    {
+     "id": "mxj_p1093_q7",
+     "topicId": "mxj_p1093",
+     "prompt": "小芳目高 1.5 米，她与 3.5 米高竹竿的距离为 3 米，竹竿与旗杆相距 27 米，眼睛、竹竿顶端与旗杆顶端恰好在一条直线上，求旗杆的高度。",
+     "question": "小芳目高 1.5 米，她与 3.5 米高竹竿的距离为 3 米，竹竿与旗杆相距 27 米，眼睛、竹竿顶端与旗杆顶端恰好在一条直线上，求旗杆的高度。",
+     "answer": 21.5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 21.5}",
+     "explanation": "以水平视线为基准，竹竿高出视线 2 米、水平距离 3 米；旗杆与视线交点相距 30 米，由相似得旗杆高出视线 20 米，再加目高 1.5 米，旗杆高 21.5 米。"
+    },
+    {
+     "id": "mxj_p1093_q8",
+     "topicId": "mxj_p1093",
+     "prompt": "比例规两脚长度相等，合上时螺丝钉固定在刻度 m 处，使 OA 与 OC 的比、OB 与 OD 的比都等于 m；张开后两尖端 A，B 落在一条线段的两端，写出 CD 与 AB 的关系。",
+     "question": "比例规两脚长度相等，合上时螺丝钉固定在刻度 m 处，使 OA 与 OC 的比、OB 与 OD 的比都等于 m；张开后两尖端 A，B 落在一条线段的两端，写出 CD 与 AB 的关系。",
+     "answer": "CD 等于 AB 除以 m，且 CD 与 AB 平行",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "由两组边成比例且顶角是对顶角，得两个三角形相似，相似比为 m，所以 CD 等于 AB 除以 m；对应角相等推出 CD 与 AB 平行。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1094",
+   "page": 44,
+   "description": "本节以幻灯片放映为例引入位似，给出位似中心与位似比的定义，说明位似图形既相似又满足对应点连线过同一点，并研究坐标系中的坐标倍数关系。",
+   "mastery_criteria": [
+    "能说出位似图形的两条特征并指出位似中心",
+    "能在坐标系中按位似比写出对应点的坐标"
+   ],
+   "misconceptions": [
+    "认为相似图形一定是位似图形，忽略位置要求",
+    "把位似比为负数时的像点位置与正数时混为一谈"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1094_q1",
+     "topicId": "mxj_p1094",
+     "prompt": "关于位似图形，下列说法正确的是哪一个。",
+     "question": "关于位似图形，下列说法正确的是哪一个。",
+     "options": [
+      {
+       "label": "A",
+       "text": "位似图形一定全等"
+      },
+      {
+       "label": "B",
+       "text": "位似图形一定相似，且对应点的连线相交于一点"
+      },
+      {
+       "label": "C",
+       "text": "相似图形一定位似"
+      },
+      {
+       "label": "D",
+       "text": "位似图形的对应线段一定互相垂直"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "位似是特殊的相似，位似图形不仅相似，而且对应点的连线相交于位似中心、对应线段平行或在同一条直线上；相似图形不一定位似。"
+    },
+    {
+     "id": "mxj_p1094_q2",
+     "topicId": "mxj_p1094",
+     "prompt": "以点 O 为位似中心、位似比为 -2 作位似图形，已知点 P，则它的像点位于什么位置。",
+     "question": "以点 O 为位似中心、位似比为 -2 作位似图形，已知点 P，则它的像点位于什么位置。",
+     "options": [
+      {
+       "label": "A",
+       "text": "射线 OP 上"
+      },
+      {
+       "label": "B",
+       "text": "射线 OP 的反向延长线上"
+      },
+      {
+       "label": "C",
+       "text": "与点 P 重合"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "按位似的定义，位似比大于 0 时像点在射线 OP 上，位似比小于 0 时像点在射线 OP 的反向延长线上，本题位似比为 -2。"
+    },
+    {
+     "id": "mxj_p1094_q3",
+     "topicId": "mxj_p1094",
+     "prompt": "以点 O 为位似中心把三角形放大为原来的 2 倍，所得三角形与原三角形的相似比是多少。",
+     "question": "以点 O 为位似中心把三角形放大为原来的 2 倍，所得三角形与原三角形的相似比是多少。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "二分之一"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "位似比等于对应点到位似中心距离的比，放大为原来的 2 倍时位似比为 2；位似图形是相似图形，所以相似比也是 2。"
+    },
+    {
+     "id": "mxj_p1094_q4",
+     "topicId": "mxj_p1094",
+     "prompt": "在平面直角坐标系中，以原点为位似中心，把多边形各顶点的坐标都乘 3，所得图形与原图形是什么关系。",
+     "question": "在平面直角坐标系中，以原点为位似中心，把多边形各顶点的坐标都乘 3，所得图形与原图形是什么关系。",
+     "options": [
+      {
+       "label": "A",
+       "text": "关于原点对称"
+      },
+      {
+       "label": "B",
+       "text": "由原图形平移 3 个单位得到"
+      },
+      {
+       "label": "C",
+       "text": "以原点为位似中心、位似比为 3 的位似图形"
+      },
+      {
+       "label": "D",
+       "text": "关于 y 轴对称"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材的命题指出，把多边形各顶点坐标扩大或缩小至原来的 k 倍（k 大于 0），所得图形与原图形是以原点为位似中心、位似比为 k 的位似图形。"
+    },
+    {
+     "id": "mxj_p1094_q5",
+     "topicId": "mxj_p1094",
+     "prompt": "平行四边形 OABC 的顶点 O(0,0)，A(3,0)，B(4,2)，C(1,2)，以原点为位似中心、位似比为 3 作位似图形，求点 B 的对应点坐标。",
+     "question": "平行四边形 OABC 的顶点 O(0,0)，A(3,0)，B(4,2)，C(1,2)，以原点为位似中心、位似比为 3 作位似图形，求点 B 的对应点坐标。",
+     "options": [
+      {
+       "label": "A",
+       "text": "(12,6)"
+      },
+      {
+       "label": "B",
+       "text": "(6,12)"
+      },
+      {
+       "label": "C",
+       "text": "(9,0)"
+      },
+      {
+       "label": "D",
+       "text": "(3,6)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "位似比为 3 时各顶点坐标分别乘 3，点 B(4,2) 的对应点为 (4 乘 3,2 乘 3)，即 (12,6)。"
+    },
+    {
+     "id": "mxj_p1094_q6",
+     "topicId": "mxj_p1094",
+     "prompt": "三角形 AOB 的顶点为 A(2,4)，O(0,0)，B(6,0)，把各顶点坐标都乘 2 得到新三角形，求点 A 的对应点的纵坐标。",
+     "question": "三角形 AOB 的顶点为 A(2,4)，O(0,0)，B(6,0)，把各顶点坐标都乘 2 得到新三角形，求点 A 的对应点的纵坐标。",
+     "answer": 8,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 8}",
+     "explanation": "各顶点坐标乘 2 时，A(2,4) 的对应点为 (4,8)，所以对应点的纵坐标为 8。"
+    },
+    {
+     "id": "mxj_p1094_q7",
+     "topicId": "mxj_p1094",
+     "prompt": "以原点为位似中心、位似比为二分之一作位似图形，点 A 的坐标为 (3,6)，求它的对应点的横坐标。",
+     "question": "以原点为位似中心、位似比为二分之一作位似图形，点 A 的坐标为 (3,6)，求它的对应点的横坐标。",
+     "answer": 1.5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 0.5}]}",
+     "explanation": "位似比为二分之一时，对应点的坐标为原坐标乘二分之一，A(3,6) 的对应点是 (1.5,3)，横坐标为 1.5。"
+    },
+    {
+     "id": "mxj_p1094_q8",
+     "topicId": "mxj_p1094",
+     "prompt": "以原点为位似中心把三角形 AOB 放大，A 的坐标为 (-1,3)，B 的坐标为 (-3,1)，若 A 的对应点的纵坐标为 -6，求 B 的对应点的横坐标。",
+     "question": "以原点为位似中心把三角形 AOB 放大，A 的坐标为 (-1,3)，B 的坐标为 (-3,1)，若 A 的对应点的纵坐标为 -6，求 B 的对应点的横坐标。",
+     "answer": "横坐标等于 6",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "由 A 的纵坐标 3 变为 -6 可知位似比为 -2，对应点坐标都乘 -2，所以 B 的横坐标 -3 变为 6。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1095",
+   "page": 63,
+   "description": "本节先用相似三角形说明锐角的对边与斜边的比是常数，给出正弦的定义，再类似地给出余弦的定义，并推出 30 度、45 度、60 度的函数值与互余关系。",
+   "mastery_criteria": [
+    "能写出正弦与余弦的定义并求具体三角形的函数值",
+    "能用互余关系把余弦化为正弦并记住特殊角的函数值"
+   ],
+   "misconceptions": [
+    "把邻边与对边弄反，导致正弦与余弦的式子互换",
+    "把 sin 30 度写成 sin 30，把角的度数与函数值混为一谈"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1095_q1",
+     "topicId": "mxj_p1095",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，AB 等于 13，BC 等于 5，求角 A 的正弦值。",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，AB 等于 13，BC 等于 5，求角 A 的正弦值。",
+     "options": [
+      {
+       "label": "A",
+       "text": "十三分之五"
+      },
+      {
+       "label": "B",
+       "text": "十三分之十二"
+      },
+      {
+       "label": "C",
+       "text": "十二分之五"
+      },
+      {
+       "label": "D",
+       "text": "五分之十三"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "角 A 的对边是 BC 等于 5，斜边是 AB 等于 13，正弦是对边与斜边的比，所以正弦值为十三分之五。"
+    },
+    {
+     "id": "mxj_p1095_q2",
+     "topicId": "mxj_p1095",
+     "prompt": "60 度角的余弦值是多少。",
+     "question": "60 度角的余弦值是多少。",
+     "options": [
+      {
+       "label": "A",
+       "text": "二分之一"
+      },
+      {
+       "label": "B",
+       "text": "二分之根号二"
+      },
+      {
+       "label": "C",
+       "text": "二分之根号三"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由余弦与正弦的互余关系，60 度的余弦等于 30 度的正弦，而 30 度的正弦等于二分之一，所以 60 度的余弦等于二分之一。"
+    },
+    {
+     "id": "mxj_p1095_q3",
+     "topicId": "mxj_p1095",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，AC 等于 5，AB 等于 7，求角 A 的余弦值。",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，AC 等于 5，AB 等于 7，求角 A 的余弦值。",
+     "options": [
+      {
+       "label": "A",
+       "text": "七分之二"
+      },
+      {
+       "label": "B",
+       "text": "七分之五"
+      },
+      {
+       "label": "C",
+       "text": "二分之五"
+      },
+      {
+       "label": "D",
+       "text": "五分之七"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "余弦是邻边与斜边的比，角 A 的邻边是 AC 等于 5，斜边 AB 等于 7，所以余弦值为七分之五。"
+    },
+    {
+     "id": "mxj_p1095_q4",
+     "topicId": "mxj_p1095",
+     "prompt": "求 60 度角的正弦值与 30 度角的余弦值之和。",
+     "question": "求 60 度角的正弦值与 30 度角的余弦值之和。",
+     "options": [
+      {
+       "label": "A",
+       "text": "二分之根号三"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "根号三"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "60 度的正弦等于二分之根号三，30 度的余弦等于它的正弦也等于二分之根号三，两者相加等于根号三。"
+    },
+    {
+     "id": "mxj_p1095_q5",
+     "topicId": "mxj_p1095",
+     "prompt": "已知角 A 是锐角，且它的正弦值等于 0.6，求它的余弦值。",
+     "question": "已知角 A 是锐角，且它的正弦值等于 0.6，求它的余弦值。",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.4"
+      },
+      {
+       "label": "B",
+       "text": "0.6"
+      },
+      {
+       "label": "C",
+       "text": "0.8"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由同一锐角的正弦与余弦的平方和等于 1，余弦的平方等于 1 减 0.36 等于 0.64；锐角的余弦为正，所以余弦等于 0.8。"
+    },
+    {
+     "id": "mxj_p1095_q6",
+     "topicId": "mxj_p1095",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，BC 等于 3，AB 等于 5，求角 A 的正弦值。",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，BC 等于 3，AB 等于 5，求角 A 的正弦值。",
+     "answer": 0.6,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 5}]}",
+     "explanation": "正弦是角 A 的对边与斜边的比，对边 BC 等于 3，斜边 AB 等于 5，所以正弦值等于 3 除以 5 等于 0.6。"
+    },
+    {
+     "id": "mxj_p1095_q7",
+     "topicId": "mxj_p1095",
+     "prompt": "计算 30 度角的正弦值与 60 度角的余弦值之和。",
+     "question": "计算 30 度角的正弦值与 60 度角的余弦值之和。",
+     "answer": 1,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 1}",
+     "explanation": "30 度的正弦等于 0.5，60 度的余弦等于 30 度的正弦也等于 0.5，两者相加等于 1。"
+    },
+    {
+     "id": "mxj_p1095_q8",
+     "topicId": "mxj_p1095",
+     "prompt": "在平面直角坐标系中，点 P 的坐标为 (3,4)，OP 与 x 轴正方向的夹角为锐角，求这个角的正弦值。",
+     "question": "在平面直角坐标系中，点 P 的坐标为 (3,4)，OP 与 x 轴正方向的夹角为锐角，求这个角的正弦值。",
+     "answer": "正弦值等于 0.8",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "由勾股定理 OP 等于 5，角的一边在 x 轴上，对边是点 P 的纵坐标 4，所以正弦值等于 4 除以 5 等于 0.8。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1096",
+   "page": 71,
+   "description": "本节说明锐角的对边与邻边的比也是常数，给出正切的定义，求出 30 度、45 度、60 度的正切值并列出三角函数值表，最后把正弦、余弦、正切统称为锐角三角函数。",
+   "mastery_criteria": [
+    "能写出正切的定义并求特殊角的正切值",
+    "能用正切与正弦、余弦的关系进行恒等变形"
+   ],
+   "misconceptions": [
+    "把正切写成斜边与邻边的比，与余弦混淆",
+    "误认为 30 度与 60 度的正切值互为相反数"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1096_q1",
+     "topicId": "mxj_p1096",
+     "prompt": "45 度角的正切值是多少。",
+     "question": "45 度角的正切值是多少。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "三分之根号三"
+      },
+      {
+       "label": "C",
+       "text": "根号三"
+      },
+      {
+       "label": "D",
+       "text": "0"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "在等腰直角三角形中两条直角边相等，正切是对边与邻边的比，所以 45 度的正切值等于 1。"
+    },
+    {
+     "id": "mxj_p1096_q2",
+     "topicId": "mxj_p1096",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，AC 等于 7，BC 等于 5，求角 A 的正切值。",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，AC 等于 7，BC 等于 5，求角 A 的正切值。",
+     "options": [
+      {
+       "label": "A",
+       "text": "五分之七"
+      },
+      {
+       "label": "B",
+       "text": "七分之五"
+      },
+      {
+       "label": "C",
+       "text": "十二分之五"
+      },
+      {
+       "label": "D",
+       "text": "五分之十二"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "角 A 的对边是 BC 等于 5，邻边是 AC 等于 7，正切是对边与邻边的比，所以正切值为七分之五。"
+    },
+    {
+     "id": "mxj_p1096_q3",
+     "topicId": "mxj_p1096",
+     "prompt": "60 度角的正切值是多少。",
+     "question": "60 度角的正切值是多少。",
+     "options": [
+      {
+       "label": "A",
+       "text": "三分之根号三"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "根号三"
+      },
+      {
+       "label": "D",
+       "text": "二分之根号三"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "在含 60 度角的直角三角形中，60 度角的对边是邻边的根号三倍，由勾股定理计算可得 60 度的正切等于根号三。"
+    },
+    {
+     "id": "mxj_p1096_q4",
+     "topicId": "mxj_p1096",
+     "prompt": "计算 45 度角的正切值与 30 度、60 度两角正切值之积的和。",
+     "question": "计算 45 度角的正切值与 30 度、60 度两角正切值之积的和。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "三分之二倍根号三"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "45 度的正切等于 1，30 度的正切乘 60 度的正切等于三分之根号三乘根号三等于 1，所以原式等于 1 加 1 等于 2。"
+    },
+    {
+     "id": "mxj_p1096_q5",
+     "topicId": "mxj_p1096",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，角 A 的正切值等于 1，则角 A 的度数与它的正弦值分别是多少。",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，角 A 的正切值等于 1，则角 A 的度数与它的正弦值分别是多少。",
+     "options": [
+      {
+       "label": "A",
+       "text": "45 度，二分之根号二"
+      },
+      {
+       "label": "B",
+       "text": "30 度，二分之一"
+      },
+      {
+       "label": "C",
+       "text": "60 度，二分之根号三"
+      },
+      {
+       "label": "D",
+       "text": "45 度，1"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "45 度的正切值等于 1，所以角 A 等于 45 度；等腰直角三角形中 45 度的正弦值等于二分之根号二。"
+    },
+    {
+     "id": "mxj_p1096_q6",
+     "topicId": "mxj_p1096",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，AC 等于 8，BC 等于 6，求角 A 的正切值。",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，AC 等于 8，BC 等于 6，求角 A 的正切值。",
+     "answer": 0.75,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 8}]}",
+     "explanation": "正切是角 A 的对边与邻边的比，对边 BC 等于 6，邻边 AC 等于 8，所以正切值等于 6 除以 8 等于 0.75。"
+    },
+    {
+     "id": "mxj_p1096_q7",
+     "topicId": "mxj_p1096",
+     "prompt": "已知一个直角三角形的两条直角边相等，求它的一个锐角的正切值。",
+     "question": "已知一个直角三角形的两条直角边相等，求它的一个锐角的正切值。",
+     "answer": 1,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 1}",
+     "explanation": "两条直角边相等时，一个锐角的对边与邻边相等，它们的比等于 1，所以这个锐角的正切值等于 1，该角为 45 度。"
+    },
+    {
+     "id": "mxj_p1096_q8",
+     "topicId": "mxj_p1096",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，若角 A 的正切值为四分之三，求角 B 的正切值。",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，若角 A 的正切值为四分之三，求角 B 的正切值。",
+     "answer": "正切值等于三分之四",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "由正切等于正弦比余弦，角 B 的正切等于角 A 的余弦比正弦，即角 A 正切值的倒数，所以角 B 的正切等于三分之四。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1097",
+   "page": 75,
+   "description": "本节把勾股定理、两锐角互余与锐角三角函数结合起来，说明除直角外已知两个元素（至少一个是边）就能求出其余元素，这一过程叫作解直角三角形。",
+   "mastery_criteria": [
+    "能选择正弦、余弦、正切或勾股定理解直角三角形",
+    "能由已知边角求出未知的边与角"
+   ],
+   "misconceptions": [
+    "只用三角函数求边而忘记验证是否符合勾股定理",
+    "把已知的边当成斜边代入，导致比例式写错"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1097_q1",
+     "topicId": "mxj_p1097",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，角 A 等于 30 度，a 等于 5，求斜边 c 的长。",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，角 A 等于 30 度，a 等于 5，求斜边 c 的长。",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "10"
+      },
+      {
+       "label": "C",
+       "text": "五倍根号三"
+      },
+      {
+       "label": "D",
+       "text": "二分之五"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由角 A 的正弦等于 a 比 c 得 c 等于 a 除以 30 度的正弦，即 5 除以 0.5 等于 10。"
+    },
+    {
+     "id": "mxj_p1097_q2",
+     "topicId": "mxj_p1097",
+     "prompt": "解直角三角形时，除直角外至少需要知道几个元素，其中至少要有一条边。",
+     "question": "解直角三角形时，除直角外至少需要知道几个元素，其中至少要有一条边。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 个"
+      },
+      {
+       "label": "B",
+       "text": "2 个"
+      },
+      {
+       "label": "C",
+       "text": "3 个"
+      },
+      {
+       "label": "D",
+       "text": "4 个"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材指出，直角三角形除直角外有 5 个元素即三条边与两个锐角，只要知道其中 2 个元素且至少有 1 个是边，就能求出其余 3 个。"
+    },
+    {
+     "id": "mxj_p1097_q3",
+     "topicId": "mxj_p1097",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，角 A 等于 30 度，c 等于 16，求 a 的长。",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，角 A 等于 30 度，c 等于 16，求 a 的长。",
+     "options": [
+      {
+       "label": "A",
+       "text": "8"
+      },
+      {
+       "label": "B",
+       "text": "八倍根号三"
+      },
+      {
+       "label": "C",
+       "text": "三分之十六倍根号三"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由角 A 的正弦等于 a 比 c 得 a 等于 c 乘 30 度的正弦，即 16 乘 0.5 等于 8。"
+    },
+    {
+     "id": "mxj_p1097_q4",
+     "topicId": "mxj_p1097",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，角 B 等于 45 度，b 等于 3，求 a 的长。",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，角 B 等于 45 度，b 等于 3，求 a 的长。",
+     "options": [
+      {
+       "label": "A",
+       "text": "三倍根号二"
+      },
+      {
+       "label": "B",
+       "text": "二分之三倍根号二"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个锐角互余，所以角 A 也等于 45 度，两条直角边相等，a 等于 b 等于 3；此时斜边等于三倍根号二。"
+    },
+    {
+     "id": "mxj_p1097_q5",
+     "topicId": "mxj_p1097",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，角 A 的余弦等于三分之一，BC 等于 5，求 AB 的长。",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，角 A 的余弦等于三分之一，BC 等于 5，求 AB 的长。",
+     "options": [
+      {
+       "label": "A",
+       "text": "四分之十五倍根号二"
+      },
+      {
+       "label": "B",
+       "text": "四分之十五"
+      },
+      {
+       "label": "C",
+       "text": "五倍根号二"
+      },
+      {
+       "label": "D",
+       "text": "15"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "设 AB 为 x，则 AC 为三分之 x，由勾股定理得 x 的平方等于三分之 x 的平方加 25，整理得 x 的平方等于八分之二百二十五，所以 x 等于四分之十五倍根号二。"
+    },
+    {
+     "id": "mxj_p1097_q6",
+     "topicId": "mxj_p1097",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，直角边 a 等于 8，斜边 c 等于 17，求另一条直角边 b 的长。",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，直角边 a 等于 8，斜边 c 等于 17，求另一条直角边 b 的长。",
+     "answer": 15,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 15}",
+     "explanation": "由勾股定理，b 的平方等于 17 的平方减 8 的平方，即 289 减 64 等于 225，所以 b 等于 15。"
+    },
+    {
+     "id": "mxj_p1097_q7",
+     "topicId": "mxj_p1097",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，角 A 等于 30 度，斜边 c 等于 20，求角 A 的对边 a 的长。",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，角 A 等于 30 度，斜边 c 等于 20，求角 A 的对边 a 的长。",
+     "answer": 10,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 10}",
+     "explanation": "由角 A 的正弦等于 a 比 c 得 a 等于 c 乘 30 度的正弦，即 20 乘 0.5 等于 10。"
+    },
+    {
+     "id": "mxj_p1097_q8",
+     "topicId": "mxj_p1097",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，角 A 的正切值为四分之三，BC 等于 6，求 AC 的长。",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，角 A 的正切值为四分之三，BC 等于 6，求 AC 的长。",
+     "answer": "AC 等于 8",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "角 A 的正切等于 BC 比 AC，即 6 比 AC 等于 3 比 4，所以 AC 等于 6 乘 4 除以 3 等于 8。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1098",
+   "page": 78,
+   "description": "本节把实际问题转化为解直角三角形问题，涉及仰角与俯角测高、坡度与坡角、方位角与暗礁判断等常见情境，强调画出图形并构造直角三角形。",
+   "mastery_criteria": [
+    "能把仰角、俯角、坡度、方位角转化为直角三角形的边角关系",
+    "能由已知条件建立方程求出实际长度并判断是否安全"
+   ],
+   "misconceptions": [
+    "把坡度当成坡角的度数，直接用角度代替比值",
+    "测高时忘记加上仪器高度，只算出视线以上的部分"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "mxj_p1098_q1",
+     "topicId": "mxj_p1098",
+     "prompt": "坡度 i 与坡角 A 之间有什么关系。",
+     "question": "坡度 i 与坡角 A 之间有什么关系。",
+     "options": [
+      {
+       "label": "A",
+       "text": "i 等于角 A 的正切"
+      },
+      {
+       "label": "B",
+       "text": "i 等于角 A 的正弦"
+      },
+      {
+       "label": "C",
+       "text": "i 等于角 A 的余弦"
+      },
+      {
+       "label": "D",
+       "text": "i 等于角 A 正切的倒数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "坡度是升高高度与水平前进距离的比，而正切也是对边与邻边的比，所以坡度等于坡角的正切，坡度越大山坡越陡。"
+    },
+    {
+     "id": "mxj_p1098_q2",
+     "topicId": "mxj_p1098",
+     "prompt": "一艘游船以与河岸成 30 度角的方向行驶 500 米，求它离河岸的距离。",
+     "question": "一艘游船以与河岸成 30 度角的方向行驶 500 米，求它离河岸的距离。",
+     "options": [
+      {
+       "label": "A",
+       "text": "250 米"
+      },
+      {
+       "label": "B",
+       "text": "433 米"
+      },
+      {
+       "label": "C",
+       "text": "500 米"
+      },
+      {
+       "label": "D",
+       "text": "125 米"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "船到河岸的距离是斜边 500 米所对 30 度角的对边，等于 500 乘 30 度的正弦，即 500 乘 0.5 等于 250 米。"
+    },
+    {
+     "id": "mxj_p1098_q3",
+     "topicId": "mxj_p1098",
+     "prompt": "站在离塔底 1000 米处测得塔顶的仰角为 25 度，仪器距地面 1.7 米，已知 25 度的正切约为 0.4663，求塔高。",
+     "question": "站在离塔底 1000 米处测得塔顶的仰角为 25 度，仪器距地面 1.7 米，已知 25 度的正切约为 0.4663，求塔高。",
+     "options": [
+      {
+       "label": "A",
+       "text": "466 米"
+      },
+      {
+       "label": "B",
+       "text": "468 米"
+      },
+      {
+       "label": "C",
+       "text": "470 米"
+      },
+      {
+       "label": "D",
+       "text": "500 米"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "视线以上的部分约为 1000 乘 0.4663 等于 466.3 米，再加仪器高 1.7 米，塔高约为 468 米。"
+    },
+    {
+     "id": "mxj_p1098_q4",
+     "topicId": "mxj_p1098",
+     "prompt": "一山坡的坡度为 1 比 2，小华沿山坡上行 240 米，已知 26.57 度的正弦约为 0.447，求他上升的高度。",
+     "question": "一山坡的坡度为 1 比 2，小华沿山坡上行 240 米，已知 26.57 度的正弦约为 0.447，求他上升的高度。",
+     "options": [
+      {
+       "label": "A",
+       "text": "120 米"
+      },
+      {
+       "label": "B",
+       "text": "240 米"
+      },
+      {
+       "label": "C",
+       "text": "107.3 米"
+      },
+      {
+       "label": "D",
+       "text": "96 米"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "坡度 1 比 2 对应坡角约 26.57 度，上升高度等于 240 乘这个角的正弦，约为 240 乘 0.447 等于 107.3 米。"
+    },
+    {
+     "id": "mxj_p1098_q5",
+     "topicId": "mxj_p1098",
+     "prompt": "一艘船以每小时 20 千米的速度向正东航行，在 A 处测得灯塔在北偏东 45 度方向，航行半小时到 B 处测得灯塔在北偏东 30 度方向，灯塔周围 20 千米内有暗礁，判断继续航行是否安全。",
+     "question": "一艘船以每小时 20 千米的速度向正东航行，在 A 处测得灯塔在北偏东 45 度方向，航行半小时到 B 处测得灯塔在北偏东 30 度方向，灯塔周围 20 千米内有暗礁，判断继续航行是否安全。",
+     "options": [
+      {
+       "label": "A",
+       "text": "不安全，因为距离约 10 千米"
+      },
+      {
+       "label": "B",
+       "text": "不安全，因为距离约 17.3 千米"
+      },
+      {
+       "label": "C",
+       "text": "安全，因为距离约 23.7 千米"
+      },
+      {
+       "label": "D",
+       "text": "条件不足无法判断"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "半小时航行 10 千米，设灯塔到航线的距离为 x，由 x 除以 45 度的正切减去 x 除以 60 度的正切等于 10 解得 x 约为 23.7 千米，大于 20 千米，所以安全。"
+    },
+    {
+     "id": "mxj_p1098_q6",
+     "topicId": "mxj_p1098",
+     "prompt": "斜坡的坡角为 12 度，斜坡长 10 米，已知 12 度的正弦约为 0.20，求坡高。",
+     "question": "斜坡的坡角为 12 度，斜坡长 10 米，已知 12 度的正弦约为 0.20，求坡高。",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 0.2}]}",
+     "explanation": "坡高是斜坡长乘坡角的正弦，即 10 乘 0.20 等于 2 米，这是斜坡两端的高度差。"
+    },
+    {
+     "id": "mxj_p1098_q7",
+     "topicId": "mxj_p1098",
+     "prompt": "某斜坡的坡度为 1 比 3，沿水平方向前进 30 米，求高度上升了多少米。",
+     "question": "某斜坡的坡度为 1 比 3，沿水平方向前进 30 米，求高度上升了多少米。",
+     "answer": 10,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 30}, {\"type\": \"num\", \"value\": 3}]}",
+     "explanation": "坡度是升高高度与水平前进距离的比，1 比 3 表示每水平前进 3 米升高 1 米，所以前进 30 米时升高 10 米。"
+    },
+    {
+     "id": "mxj_p1098_q8",
+     "topicId": "mxj_p1098",
+     "prompt": "由地面 A 处测得山坡上 B 处的仰角为 25 度，由山顶 C 处测得 B 处的俯角为 40 度，AB 等于 120 米，BC 等于 180 米，已知 25 度的正弦约为 0.42、40 度的正弦约为 0.64，求 C 到地面的垂直距离。",
+     "question": "由地面 A 处测得山坡上 B 处的仰角为 25 度，由山顶 C 处测得 B 处的俯角为 40 度，AB 等于 120 米，BC 等于 180 米，已知 25 度的正弦约为 0.42、40 度的正弦约为 0.64，求 C 到地面的垂直距离。",
+     "answer": "约为 166 米",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "B 高出 A 的部分约为 120 乘 0.42 等于 50.4 米，C 高出 B 的部分约为 180 乘 0.64 等于 115.2 米，两者相加约为 165.6 米，精确到 1 米为 166 米。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1099",
+   "page": 96,
+   "description": "本节由挖去圆后面积变化的实际问题列方程，抽象出一元二次方程的定义与一般形式，认识二次项系数、一次项系数与常数项，并强调二次项系数不为零。",
+   "mastery_criteria": [
+    "能判断一个方程是否为一元二次方程并化为一般形式",
+    "能正确指出二次项系数、一次项系数与常数项"
+   ],
+   "misconceptions": [
+    "把含有未知数且最高次数为 2 的分式方程也当成一元二次方程",
+    "把整理后二次项被消去的方程当成一元二次方程"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1099_q1",
+     "topicId": "mxj_p1099",
+     "prompt": "下列方程中，哪一个是一元二次方程。",
+     "question": "下列方程中，哪一个是一元二次方程。",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 的平方加 2x 等于 x 的平方减 1"
+      },
+      {
+       "label": "B",
+       "text": "3x 的平方减 2x 加 1 等于 0"
+      },
+      {
+       "label": "C",
+       "text": "x 分之一加 x 等于 2"
+      },
+      {
+       "label": "D",
+       "text": "x 的三次方减 1 等于 0"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "一元二次方程要求整理后只含一个未知数且未知数的最高次数为 2；第一个方程整理后二次项消去，第三个是分式方程，第四个最高次数是 3。"
+    },
+    {
+     "id": "mxj_p1099_q2",
+     "topicId": "mxj_p1099",
+     "prompt": "一元二次方程的一般形式是哪一个。",
+     "question": "一元二次方程的一般形式是哪一个。",
+     "options": [
+      {
+       "label": "A",
+       "text": "ax 的平方加 bx 加 c 等于 0"
+      },
+      {
+       "label": "B",
+       "text": "ax 的平方加 bx 加 c 等于 0，其中 a 不等于 0"
+      },
+      {
+       "label": "C",
+       "text": "ax 加 b 等于 0，其中 a 不等于 0"
+      },
+      {
+       "label": "D",
+       "text": "ax 的平方等于 0"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "一般形式要求二次项系数 a 不为零，且等式右边为 0，否则就不是二次方程，这正是教材强调的条件。"
+    },
+    {
+     "id": "mxj_p1099_q3",
+     "topicId": "mxj_p1099",
+     "prompt": "方程 3x 的平方减 7500 等于 0 的一次项系数是多少。",
+     "question": "方程 3x 的平方减 7500 等于 0 的一次项系数是多少。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "-7500"
+      },
+      {
+       "label": "C",
+       "text": "0"
+      },
+      {
+       "label": "D",
+       "text": "-3"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "该方程中没有含 x 的一次项，即一次项系数为 0；其中二次项系数是 3，常数项是 -7500。"
+    },
+    {
+     "id": "mxj_p1099_q4",
+     "topicId": "mxj_p1099",
+     "prompt": "把方程 3x 乘 (1 减 x) 加 10 等于 2 乘 (x 加 2) 整理成一般形式后，二次项系数是多少。",
+     "question": "把方程 3x 乘 (1 减 x) 加 10 等于 2 乘 (x 加 2) 整理成一般形式后，二次项系数是多少。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "-3"
+      },
+      {
+       "label": "D",
+       "text": "-2"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "去括号得 3x 减 3x 的平方加 10 等于 2x 加 4，移项合并得 -3x 的平方加 x 加 6 等于 0，所以二次项系数是 -3。"
+    },
+    {
+     "id": "mxj_p1099_q5",
+     "topicId": "mxj_p1099",
+     "prompt": "若关于 x 的方程 ax 的平方减 x 等于 2x 的平方减 ax 减 3 是一元二次方程，则 a 应满足什么条件。",
+     "question": "若关于 x 的方程 ax 的平方减 x 等于 2x 的平方减 ax 减 3 是一元二次方程，则 a 应满足什么条件。",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 不等于 2"
+      },
+      {
+       "label": "B",
+       "text": "a 不等于 0"
+      },
+      {
+       "label": "C",
+       "text": "a 不等于 1"
+      },
+      {
+       "label": "D",
+       "text": "a 可以取任意实数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "移项整理得 (a 减 2)x 的平方加 (a 减 1)x 加 3 等于 0，要使它是一元二次方程，二次项系数不能为 0，所以 a 不等于 2。"
+    },
+    {
+     "id": "mxj_p1099_q6",
+     "topicId": "mxj_p1099",
+     "prompt": "一个数 x 与比它大 2 的数的积等于 35，把它列成一般形式后，求这个方程的常数项。",
+     "question": "一个数 x 与比它大 2 的数的积等于 35，把它列成一般形式后，求这个方程的常数项。",
+     "answer": -35,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": -35}",
+     "explanation": "由 x 乘 (x 加 2) 等于 35 得 x 的平方加 2x 减 35 等于 0，所以常数项是 -35，二次项系数是 1。"
+    },
+    {
+     "id": "mxj_p1099_q7",
+     "topicId": "mxj_p1099",
+     "prompt": "把方程 0.01y 的平方等于 2y 化为一般形式后，求它的一次项系数。",
+     "question": "把方程 0.01y 的平方等于 2y 化为一般形式后，求它的一次项系数。",
+     "answer": -2,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": -2}",
+     "explanation": "移项得 0.01y 的平方减 2y 等于 0，一次项是 -2y，所以一次项系数是 -2，常数项为 0。"
+    },
+    {
+     "id": "mxj_p1099_q8",
+     "topicId": "mxj_p1099",
+     "prompt": "某商品经过两次连续降价，每件售价由 55 元降到 35 元，设两次降价的平均降价率为 x，写出 x 应满足的方程。",
+     "question": "某商品经过两次连续降价，每件售价由 55 元降到 35 元，设两次降价的平均降价率为 x，写出 x 应满足的方程。",
+     "answer": "55 乘 (1 减 x) 的平方等于 35",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "第一次降价后售价为 55 乘 (1 减 x)，第二次再按同样的百分率降价，得 55 乘 (1 减 x) 的平方等于 35，这就是降价率满足的方程。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1100",
+   "page": 99,
+   "description": "本节按降次的思路依次学习三种解法：利用平方根的意义与配方法、由配方推出求根公式的公式法、以及把左边因式分解的因式分解法，并要求按方程特点选择方法。",
+   "mastery_criteria": [
+    "能用配方法、公式法与因式分解法解数字系数的一元二次方程",
+    "能根据方程特点选择较简便的解法并说明降次的思路"
+   ],
+   "misconceptions": [
+    "开平方时只取正根，漏掉负根",
+    "用公式法前没有把方程化为一般形式，导致 a，b，c 取错"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1100_q1",
+     "topicId": "mxj_p1100",
+     "prompt": "方程 x 的平方减 25 等于 0 的根是什么。",
+     "question": "方程 x 的平方减 25 等于 0 的根是什么。",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 等于 5"
+      },
+      {
+       "label": "B",
+       "text": "x1 等于 5，x2 等于 -5"
+      },
+      {
+       "label": "C",
+       "text": "x 等于 -5"
+      },
+      {
+       "label": "D",
+       "text": "没有实数根"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由平方根的意义，25 的平方根有两个，所以方程有两个根 5 与 -5，只写正根会漏解。"
+    },
+    {
+     "id": "mxj_p1100_q2",
+     "topicId": "mxj_p1100",
+     "prompt": "用因式分解法解方程 x 的平方减 3x 等于 0，得到的根是什么。",
+     "question": "用因式分解法解方程 x 的平方减 3x 等于 0，得到的根是什么。",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 等于 3"
+      },
+      {
+       "label": "B",
+       "text": "x 等于 0"
+      },
+      {
+       "label": "C",
+       "text": "x1 等于 0，x2 等于 3"
+      },
+      {
+       "label": "D",
+       "text": "没有实数根"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "方程左边提取公因式得 x 乘 (x 减 3) 等于 0，由两个因式的积为 0 得 x 等于 0 或 x 减 3 等于 0，所以两根为 0 与 3。"
+    },
+    {
+     "id": "mxj_p1100_q3",
+     "topicId": "mxj_p1100",
+     "prompt": "用公式法解方程 x 的平方减 x 减 2 等于 0，它的两个根是什么。",
+     "question": "用公式法解方程 x 的平方减 x 减 2 等于 0，它的两个根是什么。",
+     "options": [
+      {
+       "label": "A",
+       "text": "x1 等于 2，x2 等于 -1"
+      },
+      {
+       "label": "B",
+       "text": "x1 等于 -2，x2 等于 1"
+      },
+      {
+       "label": "C",
+       "text": "x1 等于 2，x2 等于 1"
+      },
+      {
+       "label": "D",
+       "text": "x1 等于 -2，x2 等于 -1"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "这里 a 等于 1、b 等于 -1、c 等于 -2，判别式等于 1 加 8 等于 9，代入求根公式得两根为 2 与 -1。"
+    },
+    {
+     "id": "mxj_p1100_q4",
+     "topicId": "mxj_p1100",
+     "prompt": "用配方法解方程 x 的平方加 10x 加 9 等于 0，配方后得到的等式是哪一个。",
+     "question": "用配方法解方程 x 的平方加 10x 加 9 等于 0，配方后得到的等式是哪一个。",
+     "options": [
+      {
+       "label": "A",
+       "text": "(x 加 5) 的平方等于 16"
+      },
+      {
+       "label": "B",
+       "text": "(x 加 5) 的平方等于 34"
+      },
+      {
+       "label": "C",
+       "text": "(x 加 10) 的平方等于 16"
+      },
+      {
+       "label": "D",
+       "text": "(x 减 5) 的平方等于 16"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "加上一次项系数一半的平方 25 再减去 25，得 (x 加 5) 的平方减 16 等于 0，即 (x 加 5) 的平方等于 16，两根为 -1 与 -9。"
+    },
+    {
+     "id": "mxj_p1100_q5",
+     "topicId": "mxj_p1100",
+     "prompt": "解一元二次方程的基本思路是什么。",
+     "question": "解一元二次方程的基本思路是什么。",
+     "options": [
+      {
+       "label": "A",
+       "text": "直接开平方即可"
+      },
+      {
+       "label": "B",
+       "text": "降次，把一元二次方程转化为两个一元一次方程"
+      },
+      {
+       "label": "C",
+       "text": "先求判别式"
+      },
+      {
+       "label": "D",
+       "text": "只能用图象法"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "教材指出解一元二次方程的基本思路是降次，其本质是把左边的二次多项式分解成两个一次多项式的积，配方法、公式法与因式分解法都体现这一思路。"
+    },
+    {
+     "id": "mxj_p1100_q6",
+     "topicId": "mxj_p1100",
+     "prompt": "解方程 x 的平方减 4x 加 4 等于 0，求它的根。",
+     "question": "解方程 x 的平方减 4x 加 4 等于 0，求它的根。",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 2}",
+     "explanation": "左边是完全平方式 (x 减 2) 的平方，所以 (x 减 2) 的平方等于 0，得 x1 等于 x2 等于 2，方程有两个相等的实数根。"
+    },
+    {
+     "id": "mxj_p1100_q7",
+     "topicId": "mxj_p1100",
+     "prompt": "解方程 4x 的平方减 25 等于 0，求它的正根。",
+     "question": "解方程 4x 的平方减 25 等于 0，求它的正根。",
+     "answer": 2.5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 2}]}",
+     "explanation": "移项并两边同除以 4 得 x 的平方等于四分之二十五，由平方根的意义得 x 等于二分之五或负二分之五，正根是 2.5。"
+    },
+    {
+     "id": "mxj_p1100_q8",
+     "topicId": "mxj_p1100",
+     "prompt": "用因式分解法解方程 x 的平方减 10x 加 24 等于 0，写出它的两个根。",
+     "question": "用因式分解法解方程 x 的平方减 10x 加 24 等于 0，写出它的两个根。",
+     "answer": "x1 等于 4，x2 等于 6",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "把左边因式分解为 (x 减 4)(x 减 6) 等于 0，由积为 0 得 x 等于 4 或 x 等于 6；这两个数正是积为 24、和为 10 的一对数。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1101",
+   "page": 114,
+   "description": "本节由配方法的结果分析 b 的平方减 4ac 的符号与根的关系，给出根的判别式并分大于零、等于零、小于零三种情形判断方程根的情况。",
+   "mastery_criteria": [
+    "能计算判别式并据此判断方程根的情况",
+    "能由根的情况反求字母系数的取值范围"
+   ],
+   "misconceptions": [
+    "没有先把方程化为一般形式就算判别式，取错 a，b，c",
+    "把判别式写成 b 的平方加 4ac"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p1101_q1",
+     "topicId": "mxj_p1101",
+     "prompt": "一元二次方程 x 的平方减 x 加 1 等于 0 的根的情况是什么。",
+     "question": "一元二次方程 x 的平方减 x 加 1 等于 0 的根的情况是什么。",
+     "options": [
+      {
+       "label": "A",
+       "text": "两个相等的实数根"
+      },
+      {
+       "label": "B",
+       "text": "两个不相等的实数根"
+      },
+      {
+       "label": "C",
+       "text": "只有一个实数根"
+      },
+      {
+       "label": "D",
+       "text": "没有实数根"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "这里 a 等于 1、b 等于 -1、c 等于 1，判别式等于 1 减 4 等于 -3，小于 0，所以方程没有实数根。"
+    },
+    {
+     "id": "mxj_p1101_q2",
+     "topicId": "mxj_p1101",
+     "prompt": "一元二次方程的根的判别式等于什么。",
+     "question": "一元二次方程的根的判别式等于什么。",
+     "options": [
+      {
+       "label": "A",
+       "text": "b 的平方减 4ac"
+      },
+      {
+       "label": "B",
+       "text": "b 减 4ac"
+      },
+      {
+       "label": "C",
+       "text": "b 的平方加 4ac"
+      },
+      {
+       "label": "D",
+       "text": "4ac 减 b 的平方"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材把 b 的平方减 4ac 叫作一元二次方程的根的判别式，记作 Δ，它决定方程是否有实数根以及两根是否相等。"
+    },
+    {
+     "id": "mxj_p1101_q3",
+     "topicId": "mxj_p1101",
+     "prompt": "判断方程 4x 的平方等于 12x 减 9 的根的情况。",
+     "question": "判断方程 4x 的平方等于 12x 减 9 的根的情况。",
+     "options": [
+      {
+       "label": "A",
+       "text": "两个不相等的实数根"
+      },
+      {
+       "label": "B",
+       "text": "两个相等的实数根"
+      },
+      {
+       "label": "C",
+       "text": "没有实数根"
+      },
+      {
+       "label": "D",
+       "text": "只有一个实数根"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "化为一般形式得 4x 的平方减 12x 加 9 等于 0，判别式等于 144 减 144 等于 0，所以方程有两个相等的实数根。"
+    },
+    {
+     "id": "mxj_p1101_q4",
+     "topicId": "mxj_p1101",
+     "prompt": "判断方程 3x 的平方加 4x 减 3 等于 0 的根的情况。",
+     "question": "判断方程 3x 的平方加 4x 减 3 等于 0 的根的情况。",
+     "options": [
+      {
+       "label": "A",
+       "text": "没有实数根"
+      },
+      {
+       "label": "B",
+       "text": "两个相等的实数根"
+      },
+      {
+       "label": "C",
+       "text": "两个不相等的实数根"
+      },
+      {
+       "label": "D",
+       "text": "无法判断"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "判别式等于 4 的平方减 4 乘 3 乘 -3，即 16 加 36 等于 52，大于 0，所以方程有两个不相等的实数根。"
+    },
+    {
+     "id": "mxj_p1101_q5",
+     "topicId": "mxj_p1101",
+     "prompt": "已知关于 x 的方程 x 的平方加 2x 加 2 减 m 等于 0 有两个不相等的实数根，求 m 的取值范围。",
+     "question": "已知关于 x 的方程 x 的平方加 2x 加 2 减 m 等于 0 有两个不相等的实数根，求 m 的取值范围。",
+     "options": [
+      {
+       "label": "A",
+       "text": "m 大于 1"
+      },
+      {
+       "label": "B",
+       "text": "m 小于 1"
+      },
+      {
+       "label": "C",
+       "text": "m 大于 2"
+      },
+      {
+       "label": "D",
+       "text": "m 小于 2"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "判别式等于 4 减 4 乘 (2 减 m)，即 4m 减 4；要使方程有两个不相等的实数根，需 4m 减 4 大于 0，解得 m 大于 1。"
+    },
+    {
+     "id": "mxj_p1101_q6",
+     "topicId": "mxj_p1101",
+     "prompt": "求方程 x 的平方减 6x 加 9 等于 0 的判别式的值。",
+     "question": "求方程 x 的平方减 6x 加 9 等于 0 的判别式的值。",
+     "answer": 0,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 36}, {\"type\": \"num\", \"value\": 36}]}",
+     "explanation": "判别式等于 (-6) 的平方减 4 乘 1 乘 9，即 36 减 36 等于 0，所以方程有两个相等的实数根。"
+    },
+    {
+     "id": "mxj_p1101_q7",
+     "topicId": "mxj_p1101",
+     "prompt": "求方程 2y 的平方减 3y 加 4 等于 0 的判别式的值。",
+     "question": "求方程 2y 的平方减 3y 加 4 等于 0 的判别式的值。",
+     "answer": -23,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 9}, {\"type\": \"num\", \"value\": 32}]}",
+     "explanation": "判别式等于 (-3) 的平方减 4 乘 2 乘 4，即 9 减 32 等于 -23；因为小于 0，所以方程没有实数根。"
+    },
+    {
+     "id": "mxj_p1101_q8",
+     "topicId": "mxj_p1101",
+     "prompt": "当 t 取什么值时，一元二次方程 x 的平方加 x 加 t 等于 2t 减 1 没有实数根。",
+     "question": "当 t 取什么值时，一元二次方程 x 的平方加 x 加 t 等于 2t 减 1 没有实数根。",
+     "answer": "t 小于四分之三",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "移项得 x 的平方加 x 加 (1 减 t) 等于 0，判别式等于 1 减 4 乘 (1 减 t)，即 4t 减 3；要使方程没有实数根，需 4t 减 3 小于 0，即 t 小于四分之三。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1102",
+   "page": 117,
+   "description": "本节从因式分解与多项式相等出发，推出两根之和等于负 a 分之 b、两根之积等于 a 分之 c 的根与系数关系，并用于求两根的和、积以及待定系数。",
+   "mastery_criteria": [
+    "能不解方程求两根的和与积",
+    "能用根与系数的关系求待定系数或代数式的值"
+   ],
+   "misconceptions": [
+    "忘记先把方程整理为一般形式就套用和与积的公式",
+    "把两根之和的符号记错，漏掉负号"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1102_q1",
+     "topicId": "mxj_p1102",
+     "prompt": "方程 x 的平方减 6x 加 1 等于 0 的两根之和是多少。",
+     "question": "方程 x 的平方减 6x 加 1 等于 0 的两根之和是多少。",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "-6"
+      },
+      {
+       "label": "C",
+       "text": "1"
+      },
+      {
+       "label": "D",
+       "text": "-1"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由根与系数的关系，两根之和等于负的二次项系数分之一次项系数，即负的 (-6) 除以 1，结果是 6。"
+    },
+    {
+     "id": "mxj_p1102_q2",
+     "topicId": "mxj_p1102",
+     "prompt": "方程 2x 的平方减 3x 加 1 等于 0 的两根之积是多少。",
+     "question": "方程 2x 的平方减 3x 加 1 等于 0 的两根之积是多少。",
+     "options": [
+      {
+       "label": "A",
+       "text": "二分之三"
+      },
+      {
+       "label": "B",
+       "text": "二分之一"
+      },
+      {
+       "label": "C",
+       "text": "负二分之一"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两根之积等于常数项与二次项系数的比，即 1 除以 2 等于二分之一。"
+    },
+    {
+     "id": "mxj_p1102_q3",
+     "topicId": "mxj_p1102",
+     "prompt": "方程 x 的平方减 3x 加 2 等于 10 的两根之和是多少。",
+     "question": "方程 x 的平方减 3x 加 2 等于 10 的两根之和是多少。",
+     "options": [
+      {
+       "label": "A",
+       "text": "-3"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "-8"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先把方程整理为一般形式 x 的平方减 3x 减 8 等于 0，两根之和等于负的 (-3) 除以 1，即 3。"
+    },
+    {
+     "id": "mxj_p1102_q4",
+     "topicId": "mxj_p1102",
+     "prompt": "已知方程 3x 的平方减 19x 加 m 等于 0 的一个根为 1，求它的另一个根。",
+     "question": "已知方程 3x 的平方减 19x 加 m 等于 0 的一个根为 1，求它的另一个根。",
+     "options": [
+      {
+       "label": "A",
+       "text": "三分之十六"
+      },
+      {
+       "label": "B",
+       "text": "三分之十九"
+      },
+      {
+       "label": "C",
+       "text": "三分之一"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "设另一个根为 x2，由两根之和等于三分之十九得 1 加 x2 等于三分之十九，所以 x2 等于三分之十六，再由两根之积得 m 等于 16。"
+    },
+    {
+     "id": "mxj_p1102_q5",
+     "topicId": "mxj_p1102",
+     "prompt": "已知 m，n 是方程 x 的平方加二倍根号二乘 x 加 1 等于 0 的两个根，求 m 的平方加 n 的平方加 3mn 的值。",
+     "question": "已知 m，n 是方程 x 的平方加二倍根号二乘 x 加 1 等于 0 的两个根，求 m 的平方加 n 的平方加 3mn 的值。",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "7"
+      },
+      {
+       "label": "C",
+       "text": "9"
+      },
+      {
+       "label": "D",
+       "text": "11"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由根与系数的关系，m 加 n 等于 -二倍根号二，mn 等于 1；而 m 的平方加 n 的平方加 3mn 等于 (m 加 n) 的平方加 mn，即 8 加 1 等于 9。"
+    },
+    {
+     "id": "mxj_p1102_q6",
+     "topicId": "mxj_p1102",
+     "prompt": "不解方程，求 x 的平方减 4x 减 1 等于 0 的两根之和。",
+     "question": "不解方程，求 x 的平方减 4x 减 1 等于 0 的两根之和。",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 4}",
+     "explanation": "两根之和等于负的二次项系数分之一次项系数，即负的 (-4) 除以 1，结果为 4，两根之积为 -1。"
+    },
+    {
+     "id": "mxj_p1102_q7",
+     "topicId": "mxj_p1102",
+     "prompt": "不解方程，求 3x 的平方加 2x 等于 3 的两根之积。",
+     "question": "不解方程，求 3x 的平方加 2x 等于 3 的两根之积。",
+     "answer": -1,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": -3}, {\"type\": \"num\", \"value\": 3}]}",
+     "explanation": "整理得 3x 的平方加 2x 减 3 等于 0，两根之积等于常数项比二次项系数，即 -3 除以 3 等于 -1。"
+    },
+    {
+     "id": "mxj_p1102_q8",
+     "topicId": "mxj_p1102",
+     "prompt": "已知一元二次方程 x 的平方减 6x 加 k 加 1 等于 0 的两根 x1，x2 满足 x1 的平方加 x2 的平方等于 24，求 k 的值。",
+     "question": "已知一元二次方程 x 的平方减 6x 加 k 加 1 等于 0 的两根 x1，x2 满足 x1 的平方加 x2 的平方等于 24，求 k 的值。",
+     "answer": "k 等于 5",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "由根与系数的关系得两根之和为 6、两根之积为 k 加 1；两根平方和等于和的平方减两倍积，即 36 减 2 乘 (k 加 1) 等于 24，解得 k 等于 5。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1103",
+   "page": 120,
+   "description": "本节用一元二次方程模型解决实际问题，包括增长率与降价率问题、利润问题、剪角折盒与道路平移的面积问题以及动点问题，强调检验根是否符合实际意义。",
+   "mastery_criteria": [
+    "能找出实际问题中的等量关系并列出一元二次方程",
+    "能检验方程的根是否符合实际意义并舍去不合题意的根"
+   ],
+   "misconceptions": [
+    "列降价率方程时把 (1 减 x) 写成 (1 加 x)，正负号与情境不符",
+    "求出两个根后不作检验，把使长度为负的根也作为答案"
+   ],
+   "type": "modeling",
+   "questions": [
+    {
+     "id": "mxj_p1103_q1",
+     "topicId": "mxj_p1103",
+     "prompt": "某商品原价 100 元，连续两次降价且每次降价率都是 x，那么现价应表示为多少。",
+     "question": "某商品原价 100 元，连续两次降价且每次降价率都是 x，那么现价应表示为多少。",
+     "options": [
+      {
+       "label": "A",
+       "text": "100 乘 (1 加 x) 的平方"
+      },
+      {
+       "label": "B",
+       "text": "100 乘 (1 减 x) 的平方"
+      },
+      {
+       "label": "C",
+       "text": "100 乘 (1 减 2x)"
+      },
+      {
+       "label": "D",
+       "text": "100 减 2x"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "每次降价后价格变为原来的 (1 减 x) 倍，两次降价后的价格为 100 乘 (1 减 x) 的平方，这与教材降价问题的等量关系一致。"
+    },
+    {
+     "id": "mxj_p1103_q2",
+     "topicId": "mxj_p1103",
+     "prompt": "利用一元二次方程解决实际问题时，求出方程的根之后必须做什么。",
+     "question": "利用一元二次方程解决实际问题时，求出方程的根之后必须做什么。",
+     "options": [
+      {
+       "label": "A",
+       "text": "直接作答"
+      },
+      {
+       "label": "B",
+       "text": "检验根是否符合实际意义"
+      },
+      {
+       "label": "C",
+       "text": "一律四舍五入"
+      },
+      {
+       "label": "D",
+       "text": "取绝对值"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材在剪去小正方形、降价率等例题中都强调，求出根后要检验是否符合实际意义，不符合的根应当舍去。"
+    },
+    {
+     "id": "mxj_p1103_q3",
+     "topicId": "mxj_p1103",
+     "prompt": "某药品经过两次降价，零售价由 100 元降为 81 元，求平均每次降价的百分率。",
+     "question": "某药品经过两次降价，零售价由 100 元降为 81 元，求平均每次降价的百分率。",
+     "options": [
+      {
+       "label": "A",
+       "text": "10%"
+      },
+      {
+       "label": "B",
+       "text": "5%"
+      },
+      {
+       "label": "C",
+       "text": "19%"
+      },
+      {
+       "label": "D",
+       "text": "20%"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "设平均每次降价的百分率为 x，由 100 乘 (1 减 x) 的平方等于 81 得 1 减 x 等于 0.9，所以 x 等于 10%，另一个根不合实际而舍去。"
+    },
+    {
+     "id": "mxj_p1103_q4",
+     "topicId": "mxj_p1103",
+     "prompt": "长 40 厘米、宽 28 厘米的矩形纸板四角各剪去一个全等小正方形后折成无盖盒子，底面积为 364 平方厘米，求剪去的小正方形的边长。",
+     "question": "长 40 厘米、宽 28 厘米的矩形纸板四角各剪去一个全等小正方形后折成无盖盒子，底面积为 364 平方厘米，求剪去的小正方形的边长。",
+     "options": [
+      {
+       "label": "A",
+       "text": "4 厘米"
+      },
+      {
+       "label": "B",
+       "text": "6 厘米"
+      },
+      {
+       "label": "C",
+       "text": "7 厘米"
+      },
+      {
+       "label": "D",
+       "text": "9 厘米"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "设边长为 x，底面长宽分别为 40 减 2x 与 28 减 2x，由底面积列方程解得 x 等于 7 或 27，其中 27 使底面的边长为负，应舍去。"
+    },
+    {
+     "id": "mxj_p1103_q5",
+     "topicId": "mxj_p1103",
+     "prompt": "在直角三角形中，两直角边 AC 等于 6、BC 等于 8，点 P 从 A 沿 AC 每秒 1 厘米向 C 移动，点 Q 从 C 沿 CB 每秒 2 厘米向 B 移动，问出发几秒后三角形 PCQ 的面积为 9 平方厘米。",
+     "question": "在直角三角形中，两直角边 AC 等于 6、BC 等于 8，点 P 从 A 沿 AC 每秒 1 厘米向 C 移动，点 Q 从 C 沿 CB 每秒 2 厘米向 B 移动，问出发几秒后三角形 PCQ 的面积为 9 平方厘米。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2 秒"
+      },
+      {
+       "label": "B",
+       "text": "4 秒"
+      },
+      {
+       "label": "C",
+       "text": "6 秒"
+      },
+      {
+       "label": "D",
+       "text": "3 秒"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "设出发 t 秒，则 PC 等于 6 减 t，CQ 等于 2t，由面积公式得 t 乘 (6 减 t) 等于 9，解得 t 等于 3，且 3 在 0 到 4 的范围内。"
+    },
+    {
+     "id": "mxj_p1103_q6",
+     "topicId": "mxj_p1103",
+     "prompt": "某校图书馆的藏书两年内由 5 万册增加到 7.2 万册，求藏书的年平均增长率，结果写成小数。",
+     "question": "某校图书馆的藏书两年内由 5 万册增加到 7.2 万册，求藏书的年平均增长率，结果写成小数。",
+     "answer": 0.2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 0.2}",
+     "explanation": "设年平均增长率为 x，由 5 乘 (1 加 x) 的平方等于 7.2 得 1 加 x 等于 1.2，所以年平均增长率为 0.2，即百分之二十。"
+    },
+    {
+     "id": "mxj_p1103_q7",
+     "topicId": "mxj_p1103",
+     "prompt": "某市政府去年投入 3 亿元用于保障性住房，计划明年投入 12 亿元，若年平均增长率相同，求这个增长率。",
+     "question": "某市政府去年投入 3 亿元用于保障性住房，计划明年投入 12 亿元，若年平均增长率相同，求这个增长率。",
+     "answer": 1,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 1}",
+     "explanation": "设年平均增长率为 x，由 3 乘 (1 加 x) 的平方等于 12 得 1 加 x 的平方等于 4，1 加 x 等于 2，所以增长率为 1，即百分之百。"
+    },
+    {
+     "id": "mxj_p1103_q8",
+     "topicId": "mxj_p1103",
+     "prompt": "在长 32 米、宽 20 米的矩形地面上修建等宽的道路，余下部分绿化，绿化面积为 540 平方米，求道路的宽。",
+     "question": "在长 32 米、宽 20 米的矩形地面上修建等宽的道路，余下部分绿化，绿化面积为 540 平方米，求道路的宽。",
+     "answer": "道路宽 2 米",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "用平移的方法把道路移到边上，绿化部分是长 32 减 x、宽 20 减 x 的矩形，由面积 540 解得 x 等于 2 或 50，50 不合题意舍去，所以道路宽 2 米。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1104",
+   "page": 134,
+   "description": "本节由挖去圆后剩余面积与两次降价后售价两个实例抽象出二次函数，给出一般形式与各项系数的名称，并说明实际问题中自变量的取值范围受到限制。",
+   "mastery_criteria": [
+    "能判断一个函数是否为二次函数并说出各项系数",
+    "能根据实际情境写出二次函数表达式并确定自变量取值范围"
+   ],
+   "misconceptions": [
+    "把二次项系数为零的函数仍当作二次函数",
+    "写实际问题的表达式时忽略自变量的取值范围"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mxj_p1104_q1",
+     "topicId": "mxj_p1104",
+     "prompt": "已知某函数表达式是关于 x 的二次多项式，则下列四个表达式中符合二次函数定义的是哪一个。",
+     "question": "已知某函数表达式是关于 x 的二次多项式，则下列四个表达式中符合二次函数定义的是哪一个。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y 等于 3x 加 1"
+      },
+      {
+       "label": "B",
+       "text": "y 等于 3x 的平方加 2x 加 1"
+      },
+      {
+       "label": "C",
+       "text": "y 等于 x 分之一"
+      },
+      {
+       "label": "D",
+       "text": "y 等于 x 的三次方加 1"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "二次函数的一般形式是 y 等于 ax 的平方加 bx 加 c 且 a 不为零；第二个表达式含二次项且二次项系数为 3，其余分别是一次函数、反比例函数与三次函数。"
+    },
+    {
+     "id": "mxj_p1104_q2",
+     "topicId": "mxj_p1104",
+     "prompt": "二次函数 y 等于 ax 的平方加 bx 加 c 中，二次项系数 a 必须满足什么条件。",
+     "question": "二次函数 y 等于 ax 的平方加 bx 加 c 中，二次项系数 a 必须满足什么条件。",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 大于 0"
+      },
+      {
+       "label": "B",
+       "text": "a 小于 0"
+      },
+      {
+       "label": "C",
+       "text": "a 不等于 0"
+      },
+      {
+       "label": "D",
+       "text": "a 等于 0"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "若 a 等于 0，表达式中就不含二次项，函数不再属于二次函数，所以定义要求 a 不等于 0，而 a 的正负只影响开口方向。"
+    },
+    {
+     "id": "mxj_p1104_q3",
+     "topicId": "mxj_p1104",
+     "prompt": "当 a，b，c 满足什么条件时，函数 y 等于 ax 的平方加 bx 加 c 成为正比例函数。",
+     "question": "当 a，b，c 满足什么条件时，函数 y 等于 ax 的平方加 bx 加 c 成为正比例函数。",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 不等于 0，b 等于 0，c 等于 0"
+      },
+      {
+       "label": "B",
+       "text": "a 等于 0，b 不等于 0，c 等于 0"
+      },
+      {
+       "label": "C",
+       "text": "a 等于 0，b 等于 0"
+      },
+      {
+       "label": "D",
+       "text": "a 等于 0，c 不等于 0"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材指出 a 等于 0 且 b 不等于 0 时为一次函数；再要求 c 等于 0，函数变成 y 等于 bx，即正比例函数。"
+    },
+    {
+     "id": "mxj_p1104_q4",
+     "topicId": "mxj_p1104",
+     "prompt": "用长 100 米的篱笆靠围墙围成矩形植物园，设与围墙垂直的一边长为 x 米，面积为 S 平方米，则 S 与 x 的关系式是什么。",
+     "question": "用长 100 米的篱笆靠围墙围成矩形植物园，设与围墙垂直的一边长为 x 米，面积为 S 平方米，则 S 与 x 的关系式是什么。",
+     "options": [
+      {
+       "label": "A",
+       "text": "S 等于 x 乘 (100 减 2x)"
+      },
+      {
+       "label": "B",
+       "text": "S 等于 x 乘 (100 减 x)"
+      },
+      {
+       "label": "C",
+       "text": "S 等于 2x 乘 (100 减 x)"
+      },
+      {
+       "label": "D",
+       "text": "S 等于 x 乘 (50 减 x)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "篱笆总长 100 米，两条与围墙垂直的边各长 x，与围墙平行的边为 100 减 2x，所以 S 等于 x 乘 (100 减 2x)，且 x 大于 0 小于 50。"
+    },
+    {
+     "id": "mxj_p1104_q5",
+     "topicId": "mxj_p1104",
+     "prompt": "某型号笔记本电脑原售价 6000 元，经过两次降价后售价为 y 元，每次降价率为 x，则 y 与 x 的关系式是什么。",
+     "question": "某型号笔记本电脑原售价 6000 元，经过两次降价后售价为 y 元，每次降价率为 x，则 y 与 x 的关系式是什么。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y 等于 6000 乘 (1 减 x) 的平方"
+      },
+      {
+       "label": "B",
+       "text": "y 等于 6000 乘 (1 减 2x)"
+      },
+      {
+       "label": "C",
+       "text": "y 等于 6000x 的平方"
+      },
+      {
+       "label": "D",
+       "text": "y 等于 12000 乘 (1 减 x)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "每次降价后售价为降价前的 (1 减 x) 倍，两次降价后 y 等于 6000 乘 (1 减 x) 的平方，展开即 6000x 的平方减 12000x 加 6000。"
+    },
+    {
+     "id": "mxj_p1104_q6",
+     "topicId": "mxj_p1104",
+     "prompt": "已知二次函数 y 等于 ax 的平方加 bx 加 c 中，二次项系数为 3、一次项系数为 -2、常数项为 1，求这三个系数的和。",
+     "question": "已知二次函数 y 等于 ax 的平方加 bx 加 c 中，二次项系数为 3、一次项系数为 -2、常数项为 1，求这三个系数的和。",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 2}",
+     "explanation": "把三个系数相加得 3 加 (-2) 加 1 等于 2；其中二次项系数 3 不为零，保证了这个函数确实是二次函数。"
+    },
+    {
+     "id": "mxj_p1104_q7",
+     "topicId": "mxj_p1104",
+     "prompt": "正方形的面积 S 与边长 x 满足 S 等于 x 的平方，当边长为 5 时，求面积 S 的值。",
+     "question": "正方形的面积 S 与边长 x 满足 S 等于 x 的平方，当边长为 5 时，求面积 S 的值。",
+     "answer": 25,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 2}]}",
+     "explanation": "把 x 等于 5 代入 S 等于 x 的平方，得 S 等于 25，即边长为 5 的正方形面积是 25 平方单位。"
+    },
+    {
+     "id": "mxj_p1104_q8",
+     "topicId": "mxj_p1104",
+     "prompt": "已知等腰直角三角形的斜边长为 x，面积为 y，写出 y 关于 x 的函数表达式。",
+     "question": "已知等腰直角三角形的斜边长为 x，面积为 y，写出 y 关于 x 的函数表达式。",
+     "answer": "y 等于 x 的平方除以 4",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "斜边为 x 时两条直角边各为 x 除以根号 2，面积等于两条直角边乘积的一半，即 x 的平方除以 2 再除以 2，得 x 的平方除以 4。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1105",
+   "page": 137,
+   "description": "本节用列表、描点、连线画二次函数的图象，先研究 y 等于 ax 的平方 的对称轴与增减性，再通过平移得到 y 等于 a 乘 (x 减 h) 的平方加 k 的性质，最后用配方法研究一般式。",
+   "mastery_criteria": [
+    "能说出抛物线的对称轴、顶点坐标与开口方向",
+    "能用配方法把一般式化为顶点式并求最值"
+   ],
+   "misconceptions": [
+    "把顶点坐标 (h,k) 与对称轴 x 等于 h 的符号写反",
+    "认为 a 的绝对值越大开口越大，实际正好相反"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1105_q1",
+     "topicId": "mxj_p1105",
+     "prompt": "抛物线 y 等于 2x 的平方 的对称轴是什么。",
+     "question": "抛物线 y 等于 2x 的平方 的对称轴是什么。",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 轴"
+      },
+      {
+       "label": "B",
+       "text": "y 轴"
+      },
+      {
+       "label": "C",
+       "text": "直线 x 等于 2"
+      },
+      {
+       "label": "D",
+       "text": "直线 y 等于 2"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "形如 y 等于 ax 的平方 的抛物线关于 y 轴对称，顶点是原点；本题 a 等于 2 大于 0，开口向上。"
+    },
+    {
+     "id": "mxj_p1105_q2",
+     "topicId": "mxj_p1105",
+     "prompt": "抛物线 y 等于负 3 乘 (x 加 2) 的平方 的顶点坐标是什么。",
+     "question": "抛物线 y 等于负 3 乘 (x 加 2) 的平方 的顶点坐标是什么。",
+     "options": [
+      {
+       "label": "A",
+       "text": "(2,0)"
+      },
+      {
+       "label": "B",
+       "text": "(-2,0)"
+      },
+      {
+       "label": "C",
+       "text": "(0,-2)"
+      },
+      {
+       "label": "D",
+       "text": "(-2,-3)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "形如 y 等于 a 乘 (x 减 h) 的平方 的抛物线，对称轴是直线 x 等于 h、顶点为 (h,0)；本题可写成 x 减 (-2)，所以顶点为 (-2,0)。"
+    },
+    {
+     "id": "mxj_p1105_q3",
+     "topicId": "mxj_p1105",
+     "prompt": "抛物线 y 等于 (x 减 2) 的平方加 3 的顶点坐标与开口方向分别是什么。",
+     "question": "抛物线 y 等于 (x 减 2) 的平方加 3 的顶点坐标与开口方向分别是什么。",
+     "options": [
+      {
+       "label": "A",
+       "text": "(2,3)，开口向上"
+      },
+      {
+       "label": "B",
+       "text": "(2,3)，开口向下"
+      },
+      {
+       "label": "C",
+       "text": "(-2,3)，开口向上"
+      },
+      {
+       "label": "D",
+       "text": "(2,-3)，开口向上"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由 y 等于 a 乘 (x 减 h) 的平方加 k 的性质，顶点为 (h,k) 即 (2,3)；a 等于 1 大于 0，所以开口向上。"
+    },
+    {
+     "id": "mxj_p1105_q4",
+     "topicId": "mxj_p1105",
+     "prompt": "二次函数 y 等于 x 的平方减 4x 加 5 的图象的对称轴是哪一条直线。",
+     "question": "二次函数 y 等于 x 的平方减 4x 加 5 的图象的对称轴是哪一条直线。",
+     "options": [
+      {
+       "label": "A",
+       "text": "直线 x 等于 -2"
+      },
+      {
+       "label": "B",
+       "text": "直线 x 等于 4"
+      },
+      {
+       "label": "C",
+       "text": "直线 x 等于 2"
+      },
+      {
+       "label": "D",
+       "text": "直线 x 等于 -4"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "抛物线 y 等于 ax 的平方加 bx 加 c 的对称轴是直线 x 等于负 b 除以 2a，这里 a 等于 1、b 等于 -4，得 x 等于 2。"
+    },
+    {
+     "id": "mxj_p1105_q5",
+     "topicId": "mxj_p1105",
+     "prompt": "二次函数 y 等于负 3 乘 (x 减 2) 的平方加 5 的最大值是多少。",
+     "question": "二次函数 y 等于负 3 乘 (x 减 2) 的平方加 5 的最大值是多少。",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "-5"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "-2"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "因为二次项系数 -3 小于 0，抛物线开口向下，函数在顶点 (2,5) 处取得最大值，所以最大值等于 5。"
+    },
+    {
+     "id": "mxj_p1105_q6",
+     "topicId": "mxj_p1105",
+     "prompt": "用配方法求二次函数 y 等于负 x 的平方加 2x 加 3 的最大值。",
+     "question": "用配方法求二次函数 y 等于负 x 的平方加 2x 加 3 的最大值。",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 4}",
+     "explanation": "配方得 y 等于负的 (x 减 1) 的平方加 4，顶点为 (1,4)；因为二次项系数小于 0，所以 x 等于 1 时函数取最大值 4。"
+    },
+    {
+     "id": "mxj_p1105_q7",
+     "topicId": "mxj_p1105",
+     "prompt": "求抛物线 y 等于 x 的平方减 6x 加 8 的顶点的横坐标。",
+     "question": "求抛物线 y 等于 x 的平方减 6x 加 8 的顶点的横坐标。",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 2}]}",
+     "explanation": "对称轴是直线 x 等于负 b 除以 2a，即 6 除以 2 等于 3，顶点的横坐标就是对称轴与抛物线的交点的横坐标 3。"
+    },
+    {
+     "id": "mxj_p1105_q8",
+     "topicId": "mxj_p1105",
+     "prompt": "将 y 等于 3x 的平方 的图象先向左平移 2 个单位长度、再向上平移 1 个单位长度，写出所得图象对应的函数表达式。",
+     "question": "将 y 等于 3x 的平方 的图象先向左平移 2 个单位长度、再向上平移 1 个单位长度，写出所得图象对应的函数表达式。",
+     "answer": "y 等于 3 乘 (x 加 2) 的平方加 1",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "向左平移 2 个单位长度时把 x 换成 x 加 2，向上平移 1 个单位长度时在函数值上加 1，所以表达式为 y 等于 3 乘 (x 加 2) 的平方加 1。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1106",
+   "page": 152,
+   "description": "本节学习求二次函数表达式的方法：已知顶点与另一点时用顶点式，已知图象上三点时用一般式列方程组求待定系数，并指出不共线三点可唯一确定一个二次函数。",
+   "mastery_criteria": [
+    "能根据已知条件选择顶点式或一般式求二次函数表达式",
+    "能用待定系数法解出 a，b，c 并判断三点能否确定二次函数"
+   ],
+   "misconceptions": [
+    "已知顶点是 (-1,-6) 时把顶点式写成 (x 减 1) 的平方",
+    "三点求出的 a 等于 0 仍认为存在这样的二次函数"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mxj_p1106_q1",
+     "topicId": "mxj_p1106",
+     "prompt": "已知抛物线的顶点为 (-1,-6)，求表达式时应设成什么形式。",
+     "question": "已知抛物线的顶点为 (-1,-6)，求表达式时应设成什么形式。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y 等于 a 乘 (x 加 1) 的平方减 6"
+      },
+      {
+       "label": "B",
+       "text": "y 等于 a 乘 (x 减 1) 的平方减 6"
+      },
+      {
+       "label": "C",
+       "text": "y 等于 a 乘 (x 加 1) 的平方加 6"
+      },
+      {
+       "label": "D",
+       "text": "y 等于 a 乘 (x 减 1) 的平方加 6"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "已知顶点 (h,k) 时可设顶点式 y 等于 a 乘 (x 减 h) 的平方加 k；这里 h 等于 -1、k 等于 -6，所以设为 a 乘 (x 加 1) 的平方减 6。"
+    },
+    {
+     "id": "mxj_p1106_q2",
+     "topicId": "mxj_p1106",
+     "prompt": "用一般式求二次函数的表达式，需要知道图象上几个点的坐标。",
+     "question": "用一般式求二次函数的表达式，需要知道图象上几个点的坐标。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 个"
+      },
+      {
+       "label": "B",
+       "text": "2 个"
+      },
+      {
+       "label": "C",
+       "text": "3 个"
+      },
+      {
+       "label": "D",
+       "text": "4 个"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "一般式 y 等于 ax 的平方加 bx 加 c 中有 a，b，c 三个待定系数，需要三个点的坐标列出方程组才能求出它们。"
+    },
+    {
+     "id": "mxj_p1106_q3",
+     "topicId": "mxj_p1106",
+     "prompt": "已知抛物线的顶点为 (-1,-6) 且经过点 (2,3)，求二次项系数 a 的值。",
+     "question": "已知抛物线的顶点为 (-1,-6) 且经过点 (2,3)，求二次项系数 a 的值。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "三分之一"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把点 (2,3) 代入 y 等于 a 乘 (x 加 1) 的平方减 6，得 3 等于 9a 减 6，解得 a 等于 1，表达式为 y 等于 (x 加 1) 的平方减 6。"
+    },
+    {
+     "id": "mxj_p1106_q4",
+     "topicId": "mxj_p1106",
+     "prompt": "二次函数的图象经过 A(0,2)，B(1,3)，C(-1,-1) 三点，求一般式中的常数项 c。",
+     "question": "二次函数的图象经过 A(0,2)，B(1,3)，C(-1,-1) 三点，求一般式中的常数项 c。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "-1"
+      },
+      {
+       "label": "D",
+       "text": "0"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把 x 等于 0 代入一般式得 y 等于 c，而点 A 的坐标为 (0,2)，所以常数项 c 等于 2。"
+    },
+    {
+     "id": "mxj_p1106_q5",
+     "topicId": "mxj_p1106",
+     "prompt": "三个点 P(1,-5)，Q(-1,3)，M(2,-9) 能否确定一个二次函数。",
+     "question": "三个点 P(1,-5)，Q(-1,3)，M(2,-9) 能否确定一个二次函数。",
+     "options": [
+      {
+       "label": "A",
+       "text": "能，表达式为 y 等于 2x 的平方减 4x 减 3"
+      },
+      {
+       "label": "B",
+       "text": "不能，因为解得的二次项系数 a 等于 0"
+      },
+      {
+       "label": "C",
+       "text": "能，但表达式不唯一"
+      },
+      {
+       "label": "D",
+       "text": "条件不足无法判断"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "把三点代入一般式列方程组解得 a 等于 0、b 等于 -4、c 等于 -1；二次函数要求二次项系数不为 0，所以不存在经过这三点的二次函数。"
+    },
+    {
+     "id": "mxj_p1106_q6",
+     "topicId": "mxj_p1106",
+     "prompt": "已知抛物线 y 等于 ax 的平方 经过点 (2,8)，求 a 的值。",
+     "question": "已知抛物线 y 等于 ax 的平方 经过点 (2,8)，求 a 的值。",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"num\", \"value\": 4}]}",
+     "explanation": "把点 (2,8) 代入得 8 等于 a 乘 4，所以 a 等于 2，所求表达式为 y 等于 2x 的平方。"
+    },
+    {
+     "id": "mxj_p1106_q7",
+     "topicId": "mxj_p1106",
+     "prompt": "抛物线 y 等于 ax 的平方加 bx 加 c 经过坐标原点，求常数项 c 的值。",
+     "question": "抛物线 y 等于 ax 的平方加 bx 加 c 经过坐标原点，求常数项 c 的值。",
+     "answer": 0,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 0}",
+     "explanation": "原点坐标为 (0,0)，代入一般式得 0 等于 c，所以常数项 c 等于 0；再结合另外两点的坐标即可确定 a 与 b。"
+    },
+    {
+     "id": "mxj_p1106_q8",
+     "topicId": "mxj_p1106",
+     "prompt": "二次函数的图象与 x 轴交点的横坐标分别为 -3 和 1，与 y 轴交于点 (0,-2)，写出这个二次函数的表达式。",
+     "question": "二次函数的图象与 x 轴交点的横坐标分别为 -3 和 1，与 y 轴交于点 (0,-2)，写出这个二次函数的表达式。",
+     "answer": "y 等于三分之二 x 的平方加三分之四 x 减 2",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "由与 x 轴两交点可设 y 等于 a 乘 (x 加 3)(x 减 1)，把点 (0,-2) 代入得 -3a 等于 -2，a 等于三分之二，展开即得表达式。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1107",
+   "page": 155,
+   "description": "本节研究二次函数的图象与 x 轴的交点横坐标与一元二次方程的根的关系，用判别式说明交点个数与根的情况的对应，并介绍用图象法求根的近似值。",
+   "mastery_criteria": [
+    "能由图象与 x 轴的交点情况判断方程根的情况",
+    "能用图象法或代入法求函数取某值时的自变量"
+   ],
+   "misconceptions": [
+    "认为图象与 x 轴有两个交点时方程有两个相等的实数根",
+    "用图象法求根时把近似值当成准确值"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "mxj_p1107_q1",
+     "topicId": "mxj_p1107",
+     "prompt": "二次函数 y 等于 x 的平方减 2x 减 3 的图象与 x 轴交点的横坐标是多少。",
+     "question": "二次函数 y 等于 x 的平方减 2x 减 3 的图象与 x 轴交点的横坐标是多少。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 和 -3"
+      },
+      {
+       "label": "B",
+       "text": "-1 和 3"
+      },
+      {
+       "label": "C",
+       "text": "3 和 1"
+      },
+      {
+       "label": "D",
+       "text": "-3 和 -1"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "令 y 等于 0 得 x 的平方减 2x 减 3 等于 0，因式分解为 (x 减 3)(x 加 1) 等于 0，所以交点横坐标为 3 与 -1。"
+    },
+    {
+     "id": "mxj_p1107_q2",
+     "topicId": "mxj_p1107",
+     "prompt": "若二次函数的图象与 x 轴有两个交点，则对应的一元二次方程有什么样的根。",
+     "question": "若二次函数的图象与 x 轴有两个交点，则对应的一元二次方程有什么样的根。",
+     "options": [
+      {
+       "label": "A",
+       "text": "没有实数根"
+      },
+      {
+       "label": "B",
+       "text": "有两个相等的实数根"
+      },
+      {
+       "label": "C",
+       "text": "有两个不相等的实数根"
+      },
+      {
+       "label": "D",
+       "text": "只有一个实数根"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "图象与 x 轴交点的个数等于方程实数根的个数，两个交点对应两个不相等的实数根，此时判别式大于 0。"
+    },
+    {
+     "id": "mxj_p1107_q3",
+     "topicId": "mxj_p1107",
+     "prompt": "二次函数 y 等于 x 的平方减 6x 加 9 的图象与 x 轴有几个交点。",
+     "question": "二次函数 y 等于 x 的平方减 6x 加 9 的图象与 x 轴有几个交点。",
+     "options": [
+      {
+       "label": "A",
+       "text": "0 个"
+      },
+      {
+       "label": "B",
+       "text": "1 个"
+      },
+      {
+       "label": "C",
+       "text": "2 个"
+      },
+      {
+       "label": "D",
+       "text": "3 个"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "判别式等于 36 减 36 等于 0，对应方程有两个相等的实数根 3，所以图象与 x 轴只有一个交点 (3,0)。"
+    },
+    {
+     "id": "mxj_p1107_q4",
+     "topicId": "mxj_p1107",
+     "prompt": "二次函数 y 等于 x 的平方减 2x 加 2 的图象与 x 轴的位置关系是什么。",
+     "question": "二次函数 y 等于 x 的平方减 2x 加 2 的图象与 x 轴的位置关系是什么。",
+     "options": [
+      {
+       "label": "A",
+       "text": "有两个交点"
+      },
+      {
+       "label": "B",
+       "text": "有一个交点"
+      },
+      {
+       "label": "C",
+       "text": "没有交点"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "判别式等于 4 减 8 等于 -4，小于 0，对应方程没有实数根，所以图象与 x 轴没有交点。"
+    },
+    {
+     "id": "mxj_p1107_q5",
+     "topicId": "mxj_p1107",
+     "prompt": "若二次函数 y 等于 ax 的平方加 bx 加 c（a 大于 0）的图象经过点 (1,-1)，则方程 ax 的平方加 bx 加 c 等于 0 的根的情况是什么。",
+     "question": "若二次函数 y 等于 ax 的平方加 bx 加 c（a 大于 0）的图象经过点 (1,-1)，则方程 ax 的平方加 bx 加 c 等于 0 的根的情况是什么。",
+     "options": [
+      {
+       "label": "A",
+       "text": "一个大于 1，另一个小于 1"
+      },
+      {
+       "label": "B",
+       "text": "两个都大于 1"
+      },
+      {
+       "label": "C",
+       "text": "两个都小于 1"
+      },
+      {
+       "label": "D",
+       "text": "没有实数根"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "a 大于 0 时抛物线开口向上，而点 (1,-1) 在 x 轴下方，说明图象在 x 等于 1 的两侧各穿过 x 轴一次，所以一个根大于 1、另一个根小于 1。"
+    },
+    {
+     "id": "mxj_p1107_q6",
+     "topicId": "mxj_p1107",
+     "prompt": "用图象法求方程 x 的平方减 2x 减 1 等于 0 的正根的近似值，结果精确到 0.1。",
+     "question": "用图象法求方程 x 的平方减 2x 减 1 等于 0 的正根的近似值，结果精确到 0.1。",
+     "answer": 2.4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 2.4}",
+     "explanation": "画出 y 等于 x 的平方减 2x 减 1 的图象，与 x 轴的一个交点在 2 与 3 之间，通过观察与计算得正根约为 2.4。"
+    },
+    {
+     "id": "mxj_p1107_q7",
+     "topicId": "mxj_p1107",
+     "prompt": "抛物线 y 等于 x 的平方减 2x 减 3 与 y 轴交于一点，求这个交点的纵坐标。",
+     "question": "抛物线 y 等于 x 的平方减 2x 减 3 与 y 轴交于一点，求这个交点的纵坐标。",
+     "answer": -3,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": -3}",
+     "explanation": "令 x 等于 0 得 y 等于 -3，所以图象与 y 轴的交点是 (0,-3)，纵坐标为 -3。"
+    },
+    {
+     "id": "mxj_p1107_q8",
+     "topicId": "mxj_p1107",
+     "prompt": "铅球运行的轨迹可用 y 等于负十分之一 x 的平方加五分之三 x 加五分之八 刻画，其中 x 为水平距离、y 为高度；当高度为 2.1 米时，求铅球离初始位置的水平距离。",
+     "question": "铅球运行的轨迹可用 y 等于负十分之一 x 的平方加五分之三 x 加五分之八 刻画，其中 x 为水平距离、y 为高度；当高度为 2.1 米时，求铅球离初始位置的水平距离。",
+     "answer": "1 米或 5 米",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "令 y 等于 2.1 得方程 x 的平方减 6x 加 5 等于 0，解得 x 等于 1 或 5，说明铅球在上升与下落过程中各一次达到 2.1 米的高度。"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1108",
+   "page": 161,
+   "description": "本节用二次函数模型解决实际问题，包括以拱顶为原点建立坐标系求抛物线表达式、围窗框求最大透光面积、定价求最大利润以及抛物线光学性质的应用。",
+   "mastery_criteria": [
+    "能建立恰当的坐标系求出抛物线形物体的函数表达式",
+    "能用配方法求面积或利润的最大值并说明取到最值的条件"
+   ],
+   "misconceptions": [
+    "建立坐标系时把原点取在拱脚，导致顶点式无法直接使用",
+    "求出顶点对应的自变量后不检验它是否在允许的取值范围内"
+   ],
+   "type": "modeling",
+   "questions": [
+    {
+     "id": "mxj_p1108_q1",
+     "topicId": "mxj_p1108",
+     "prompt": "建立坐标系求抛物线形拱桥的函数表达式时，通常把坐标原点取在什么位置最简便。",
+     "question": "建立坐标系求抛物线形拱桥的函数表达式时，通常把坐标原点取在什么位置最简便。",
+     "options": [
+      {
+       "label": "A",
+       "text": "一侧拱脚"
+      },
+      {
+       "label": "B",
+       "text": "拱顶"
+      },
+      {
+       "label": "C",
+       "text": "水面中心"
+      },
+      {
+       "label": "D",
+       "text": "任意位置都一样"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材以拱顶为原点、对称轴为 y 轴建立坐标系，此时顶点坐标为 (0,0)，表达式最简，为 y 等于 ax 的平方。"
+    },
+    {
+     "id": "mxj_p1108_q2",
+     "topicId": "mxj_p1108",
+     "prompt": "用 8 米长的铝材做一个日字形窗框，设窗框的宽为 x 米，则窗框的高是多少。",
+     "question": "用 8 米长的铝材做一个日字形窗框，设窗框的宽为 x 米，则窗框的高是多少。",
+     "options": [
+      {
+       "label": "A",
+       "text": "二分之 (8 减 3x)"
+      },
+      {
+       "label": "B",
+       "text": "8 减 3x"
+      },
+      {
+       "label": "C",
+       "text": "二分之 (8 减 2x)"
+      },
+      {
+       "label": "D",
+       "text": "8 减 2x"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "日字形窗框有一条竖边把窗分成两格，共用 3 条宽为 x 的竖边，剩下两条高合计 8 减 3x，所以高为二分之 (8 减 3x)。"
+    },
+    {
+     "id": "mxj_p1108_q3",
+     "topicId": "mxj_p1108",
+     "prompt": "承接上一题，窗框的透光面积的最大值是多少。",
+     "question": "承接上一题，窗框的透光面积的最大值是多少。",
+     "options": [
+      {
+       "label": "A",
+       "text": "三分之八 平方米"
+      },
+      {
+       "label": "B",
+       "text": "4 平方米"
+      },
+      {
+       "label": "C",
+       "text": "2 平方米"
+      },
+      {
+       "label": "D",
+       "text": "8 平方米"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "透光面积 S 等于 x 乘二分之 (8 减 3x)，配方得负二分之三乘 (x 减三分之四) 的平方加三分之八，所以最大面积为三分之八平方米。"
+    },
+    {
+     "id": "mxj_p1108_q4",
+     "topicId": "mxj_p1108",
+     "prompt": "某玩具进价 20 元，售价 30 元时月销 180 件，每涨价 1 元月销量减少 10 件，求一个月内的最大利润。",
+     "question": "某玩具进价 20 元，售价 30 元时月销 180 件，每涨价 1 元月销量减少 10 件，求一个月内的最大利润。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1800 元"
+      },
+      {
+       "label": "B",
+       "text": "1960 元"
+      },
+      {
+       "label": "C",
+       "text": "2000 元"
+      },
+      {
+       "label": "D",
+       "text": "2160 元"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "设涨价 x 元，利润 y 等于 (10 加 x) 乘 (180 减 10x)，配方得负 10 乘 (x 减 4) 的平方加 1960，所以涨价 4 元即售价 34 元时利润最大，为 1960 元。"
+    },
+    {
+     "id": "mxj_p1108_q5",
+     "topicId": "mxj_p1108",
+     "prompt": "某拱桥的纵截面是抛物线的一部分，跨度 4.9 米，当水面宽 4 米时拱顶离水面 2 米；若以拱顶为原点、对称轴为 y 轴建系，求该抛物线的表达式。",
+     "question": "某拱桥的纵截面是抛物线的一部分，跨度 4.9 米，当水面宽 4 米时拱顶离水面 2 米；若以拱顶为原点、对称轴为 y 轴建系，求该抛物线的表达式。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y 等于负 2x 的平方"
+      },
+      {
+       "label": "B",
+       "text": "y 等于二分之一 x 的平方"
+      },
+      {
+       "label": "C",
+       "text": "y 等于负二分之一 x 的平方"
+      },
+      {
+       "label": "D",
+       "text": "y 等于负四分之一 x 的平方"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "顶点为原点时设 y 等于 ax 的平方；水面宽 4 米、拱顶离水面 2 米，说明点 (2,-2) 在图象上，代入得 -2 等于 4a，a 等于负二分之一。"
+    },
+    {
+     "id": "mxj_p1108_q6",
+     "topicId": "mxj_p1108",
+     "prompt": "利用直角墙角及 18 米长的篱笆围成两面靠墙的矩形苗圃，设一边长为 x 米，当面积最大时，求 x 的值。",
+     "question": "利用直角墙角及 18 米长的篱笆围成两面靠墙的矩形苗圃，设一边长为 x 米，当面积最大时，求 x 的值。",
+     "answer": 9,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 9}",
+     "explanation": "两面靠墙时只需围另外两边，设一边为 x，另一边为 18 减 x，面积 S 等于 x 乘 (18 减 x)，配方知 x 等于 9 时面积最大，为 81 平方米。"
+    },
+    {
+     "id": "mxj_p1108_q7",
+     "topicId": "mxj_p1108",
+     "prompt": "求二次函数 y 等于负 x 的平方加 4 的最大值。",
+     "question": "求二次函数 y 等于负 x 的平方加 4 的最大值。",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 4}",
+     "explanation": "二次项系数 -1 小于 0，抛物线开口向下，顶点为 (0,4)，所以当 x 等于 0 时函数取最大值 4。"
+    },
+    {
+     "id": "mxj_p1108_q8",
+     "topicId": "mxj_p1108",
+     "prompt": "某产品成本为每件 10 元，每天销售量 y 件与售价 x 元满足 y 等于 700 减 10x，求每天的销售单价定为多少时利润最大，并写出最大利润。",
+     "question": "某产品成本为每件 10 元，每天销售量 y 件与售价 x 元满足 y 等于 700 减 10x，求每天的销售单价定为多少时利润最大，并写出最大利润。",
+     "answer": "售价 40 元时利润最大，为 9000 元",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "每天利润等于 (x 减 10) 乘 (700 减 10x)，配方得负 10 乘 (x 减 40) 的平方加 9000，所以售价 40 元时利润最大，最大利润 9000 元。"
+    }
+   ]
+  }
+ ]
+}

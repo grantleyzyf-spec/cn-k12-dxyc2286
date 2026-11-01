@@ -1,0 +1,4167 @@
+{
+ "tag": "mxj7a",
+ "book": "湘教版七年级上册",
+ "unit_points": [
+  {
+   "id": "mxj_p001",
+   "description": "本章从具有相反意义的量引入负数，建立有理数的分类，借助数轴、相反数与绝对值比较有理数的大小，并学习有理数的加减乘除乘方及混合运算。",
+   "mastery_criteria": [
+    "能说明正数、负数与零的意义，并正确地把有理数分类",
+    "能借助数轴与绝对值比较大小，并按顺序完成四则混合运算"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "关于数0的说法，正确的是",
+     "question": "关于数0的说法，正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "0既不是正数，也不是负数"
+      },
+      {
+       "label": "B",
+       "text": "0是最小的正数"
+      },
+      {
+       "label": "C",
+       "text": "0是负数"
+      },
+      {
+       "label": "D",
+       "text": "0是正整数"
+      }
+     ],
+     "answer": "A",
+     "explanation": "教材规定正数都大于0，负数都在正数前面添上负号，而0既不是正数也不是负数，正数和0统称为非负数，因此选0既不是正数也不是负数。",
+     "id": "mxj_p001_q1",
+     "topicId": "mxj_p001"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "负7的绝对值等于多少",
+     "question": "负7的绝对值等于多少",
+     "options": [
+      {
+       "label": "A",
+       "text": "负7"
+      },
+      {
+       "label": "B",
+       "text": "7"
+      },
+      {
+       "label": "C",
+       "text": "0"
+      },
+      {
+       "label": "D",
+       "text": "七分之一"
+      }
+     ],
+     "answer": "B",
+     "explanation": "绝对值表示数轴上的点到原点的距离，负7对应的点在原点左侧距原点7个单位长度，所以负7的绝对值是7。",
+     "id": "mxj_p001_q2",
+     "topicId": "mxj_p001"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "下列关于有理数大小关系的说法中，错误的是",
+     "question": "下列关于有理数大小关系的说法中，错误的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "正数大于所有负数"
+      },
+      {
+       "label": "B",
+       "text": "两个负数，绝对值大的反而小"
+      },
+      {
+       "label": "C",
+       "text": "负3大于负1"
+      },
+      {
+       "label": "D",
+       "text": "0大于负数"
+      }
+     ],
+     "answer": "C",
+     "explanation": "两个负数比较时绝对值大的反而小，负3的绝对值是3，负1的绝对值是1，因为3大于1，所以负3小于负1，故负3大于负1的说法错误。",
+     "id": "mxj_p001_q3",
+     "topicId": "mxj_p001"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "standard",
+     "prompt": "计算负2的3次方与负3的积",
+     "question": "计算负2的3次方与负3的积",
+     "answer": 24,
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": -2}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"num\", \"value\": -3}]}",
+     "explanation": "先算乘方，负2的3次方等于负8，再算乘法，负8乘负3，同号得正并把绝对值相乘，结果为24。",
+     "id": "mxj_p001_q4",
+     "topicId": "mxj_p001"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "某水文站记录一周内每天中午12时水位相较前一天的变化量依次为上升0.48 m、下降0.32 m、下降0.43 m、下降0.37 m、上升0.22 m、上升0.25 m、上升0.15 m，问本周日比上周日水位上升还是下降了多少米",
+     "question": "某水文站记录一周内每天中午12时水位相较前一天的变化量依次为上升0.48 m、下降0.32 m、下降0.43 m、下降0.37 m、上升0.22 m、上升0.25 m、上升0.15 m，问本周日比上周日水位上升还是下降了多少米",
+     "answer": "下降0.02 m",
+     "explanation": "把上升记为正、下降记为负，七个变化量相加得1.10与负1.12的和，即负0.02，所以水位比上周日下降了0.02 m。",
+     "id": "mxj_p001_q5",
+     "topicId": "mxj_p001"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p002",
+   "description": "本章用字母表示数，学习代数式的概念与列代数式、求代数式的值，认识单项式与多项式的系数与次数，并用合并同类项和去括号完成整式的加减运算。",
+   "mastery_criteria": [
+    "能用代数式表示实际问题中的数量关系并求出它的值",
+    "能判断同类项并正确进行整式的加减运算"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "下列各式中，属于代数式的是",
+     "question": "下列各式中，属于代数式的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "x加3"
+      },
+      {
+       "label": "B",
+       "text": "x等于3"
+      },
+      {
+       "label": "C",
+       "text": "x大于3"
+      },
+      {
+       "label": "D",
+       "text": "x不等于3"
+      }
+     ],
+     "answer": "A",
+     "explanation": "把数与表示数的字母用运算符号连接而成的式子叫代数式，x加3符合定义；含等号或不等号的式子不是代数式。",
+     "id": "mxj_p002_q1",
+     "topicId": "mxj_p002"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "单项式负3x的平方y的系数和次数分别是",
+     "question": "单项式负3x的平方y的系数和次数分别是",
+     "options": [
+      {
+       "label": "A",
+       "text": "3和2"
+      },
+      {
+       "label": "B",
+       "text": "负3和3"
+      },
+      {
+       "label": "C",
+       "text": "负3和2"
+      },
+      {
+       "label": "D",
+       "text": "3和3"
+      }
+     ],
+     "answer": "B",
+     "explanation": "单项式中的数字因数叫系数，负3x的平方y的系数是负3；所有字母的指数和叫次数，x的指数2加y的指数1等于3，所以次数是3。",
+     "id": "mxj_p002_q2",
+     "topicId": "mxj_p002"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "下列各组式子中，属于同类项的是",
+     "question": "下列各组式子中，属于同类项的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x与2y"
+      },
+      {
+       "label": "B",
+       "text": "x的平方与x的3次方"
+      },
+      {
+       "label": "C",
+       "text": "3ab与负5ba"
+      },
+      {
+       "label": "D",
+       "text": "4与4x"
+      }
+     ],
+     "answer": "C",
+     "explanation": "所含字母相同并且相同字母的指数也相同的单项式是同类项，3ab与负5ba字母相同且指数都是1，因此是同类项。",
+     "id": "mxj_p002_q3",
+     "topicId": "mxj_p002"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "当x取3时，代数式x的平方减5x加6的值是多少",
+     "question": "当x取3时，代数式x的平方减5x加6的值是多少",
+     "answer": 0,
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 3}]}]}, {\"type\": \"num\", \"value\": 6}]}",
+     "explanation": "把x用3代入，3的平方等于9，5乘3等于15，9减15加6等于0，所以当x取3时代数式的值为0。",
+     "id": "mxj_p002_q4",
+     "topicId": "mxj_p002"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "计算3乘括号内xy减2y再减去5乘括号内x减2y加1，并写出化简结果",
+     "question": "计算3乘括号内xy减2y再减去5乘括号内x减2y加1，并写出化简结果",
+     "answer": "3xy减5x加4y减5",
+     "explanation": "先用分配律去括号得3xy减6y减5x加10y再减5，然后合并同类项，xy项为3xy，x项为负5x，y项负6y加10y得4y，常数项为负5。",
+     "id": "mxj_p002_q5",
+     "topicId": "mxj_p002"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p003",
+   "description": "本章从实际问题中的等量关系列出一元一次方程，用等式的基本性质与去分母、去括号、移项、合并同类项解方程，再学习二元一次方程组与三元一次方程组的消元解法及其应用。",
+   "mastery_criteria": [
+    "能找出实际问题中的等量关系并列出一次方程或方程组",
+    "能按步骤解一元一次方程，并用消元法解二元一次方程组"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "下列方程中，属于一元一次方程的是",
+     "question": "下列方程中，属于一元一次方程的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x加1等于5"
+      },
+      {
+       "label": "B",
+       "text": "x的平方等于4"
+      },
+      {
+       "label": "C",
+       "text": "x加y等于3"
+      },
+      {
+       "label": "D",
+       "text": "x分之1等于2"
+      }
+     ],
+     "answer": "A",
+     "explanation": "只含有一个未知数并且未知数的次数是1的整式方程叫一元一次方程，2x加1等于5符合；x的平方等于4次数为2，x加y等于3含两个未知数。",
+     "id": "mxj_p003_q1",
+     "topicId": "mxj_p003"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "在等式两边都加上或减去同一个数，等式两边仍然相等，这一依据是",
+     "question": "在等式两边都加上或减去同一个数，等式两边仍然相等，这一依据是",
+     "options": [
+      {
+       "label": "A",
+       "text": "等式的基本性质2"
+      },
+      {
+       "label": "B",
+       "text": "等式的基本性质1"
+      },
+      {
+       "label": "C",
+       "text": "乘法对加法的分配律"
+      },
+      {
+       "label": "D",
+       "text": "移项法则"
+      }
+     ],
+     "answer": "B",
+     "explanation": "等式的基本性质1指等式两边都加上或减去同一个数或整式，等式两边仍然相等；性质2指的是两边都乘或除以同一个不为0的数。",
+     "id": "mxj_p003_q2",
+     "topicId": "mxj_p003"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "二元一次方程组的解必须满足的条件是",
+     "question": "二元一次方程组的解必须满足的条件是",
+     "options": [
+      {
+       "label": "A",
+       "text": "只满足第一个方程"
+      },
+      {
+       "label": "B",
+       "text": "只满足第二个方程"
+      },
+      {
+       "label": "C",
+       "text": "同时满足两个方程"
+      },
+      {
+       "label": "D",
+       "text": "两个方程都不满足"
+      }
+     ],
+     "answer": "C",
+     "explanation": "方程组中两个等量关系需同时成立，所以一组未知数的值必须使每个方程左右两边的值都相等，才叫这个方程组的解。",
+     "id": "mxj_p003_q3",
+     "topicId": "mxj_p003"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "解方程4x加3等于2x减7，未知数x的值是多少",
+     "question": "解方程4x加3等于2x减7，未知数x的值是多少",
+     "answer": -5,
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": -10}, {\"type\": \"num\", \"value\": 2}]}",
+     "explanation": "移项得4x减2x等于负7减3，合并同类项得2x等于负10，两边都除以2得x等于负5。",
+     "id": "mxj_p003_q4",
+     "topicId": "mxj_p003"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "请说明解二元一次方程组的基本思路是什么",
+     "question": "请说明解二元一次方程组的基本思路是什么",
+     "answer": "消去一个未知数，把二元一次方程组转化为一元一次方程，求出解后再回代求另一个未知数",
+     "explanation": "解方程组的关键是消元，可用代入消元法或加减消元法把一个未知数消去，得到一元一次方程，解出后再代入原方程求另一个未知数。",
+     "id": "mxj_p003_q5",
+     "topicId": "mxj_p003"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p004",
+   "description": "本章从实物中抽象出立体图形与平面图形，认识线段、射线、直线的表示方法与基本事实，理解角的两种定义、角的大小比较、度分秒换算以及余角与补角的性质。",
+   "mastery_criteria": [
+    "能区分立体图形与平面图形，说出线段、射线、直线的区别",
+    "能进行度分秒换算并求一个角的余角与补角"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "下列几何体中，属于立体图形的是",
+     "question": "下列几何体中，属于立体图形的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "正方体"
+      },
+      {
+       "label": "B",
+       "text": "三角形"
+      },
+      {
+       "label": "C",
+       "text": "圆"
+      },
+      {
+       "label": "D",
+       "text": "线段"
+      }
+     ],
+     "answer": "A",
+     "explanation": "各部分不都在同一平面内的几何图形是立体图形，正方体有长、宽、高三个方向，所以是立体图形，而三角形、圆、线段都是平面图形。",
+     "id": "mxj_p004_q1",
+     "topicId": "mxj_p004"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "过两点有且只有一条直线，这一结论在教材中被称为",
+     "question": "过两点有且只有一条直线，这一结论在教材中被称为",
+     "options": [
+      {
+       "label": "A",
+       "text": "定义"
+      },
+      {
+       "label": "B",
+       "text": "基本事实"
+      },
+      {
+       "label": "C",
+       "text": "定理"
+      },
+      {
+       "label": "D",
+       "text": "公式"
+      }
+     ],
+     "answer": "B",
+     "explanation": "这是人们在长期实践中总结出来的公认事实，教材称之为关于直线的基本事实，简单说成两点确定一条直线。",
+     "id": "mxj_p004_q2",
+     "topicId": "mxj_p004"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "把一个周角分成360等份后，1度等于多少分",
+     "question": "把一个周角分成360等份后，1度等于多少分",
+     "options": [
+      {
+       "label": "A",
+       "text": "10分"
+      },
+      {
+       "label": "B",
+       "text": "100分"
+      },
+      {
+       "label": "C",
+       "text": "60分"
+      },
+      {
+       "label": "D",
+       "text": "360分"
+      }
+     ],
+     "answer": "C",
+     "explanation": "度、分、秒之间的换算是六十进制，1度等于60分，1分等于60秒，这与时间单位时、分、秒之间的换算相同。",
+     "id": "mxj_p004_q3",
+     "topicId": "mxj_p004"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "一个平角等于多少度",
+     "question": "一个平角等于多少度",
+     "answer": 180,
+     "verify": "{\"type\": \"num\", \"value\": 180}",
+     "explanation": "当射线绕端点旋转到与原来位置在同一直线上但方向相反时，所成的角叫平角，一个平角等于180度，等于周角的一半。",
+     "id": "mxj_p004_q4",
+     "topicId": "mxj_p004"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "请说明线段、射线、直线在端点个数与能否延长方面的区别",
+     "question": "请说明线段、射线、直线在端点个数与能否延长方面的区别",
+     "answer": "线段有两个端点，不能延长；射线有一个端点，向一方无限延长；直线没有端点，向两方无限延长",
+     "explanation": "教材指出线段有两个端点，线段向一端无限延长形成射线，射线只有一个端点，线段向两端无限延长形成直线，直线没有端点。",
+     "id": "mxj_p004_q5",
+     "topicId": "mxj_p004"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "mxj_p1001",
+   "page": 2,
+   "description": "在具有相反意义的量中规定一种为正、一种为负，用前面添负号的数表示与正数意义相反的量，并把有理数分为整数和分数。",
+   "mastery_criteria": [
+    "能用正负数表示具有相反意义的量并说明0的特殊地位",
+    "能把给定的数按正整数、负整数、正分数、负分数正确归类"
+   ],
+   "misconceptions": [
+    "把0当成最小的正数或把0归入负数",
+    "把带负号的小数误判为负整数，忽略整数与分数的区别"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "下列各数中，属于负数的是",
+     "question": "下列各数中，属于负数的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "负3"
+      },
+      {
+       "label": "C",
+       "text": "0"
+      },
+      {
+       "label": "D",
+       "text": "三分之二"
+      }
+     ],
+     "answer": "B",
+     "explanation": "前面添上负号的数是负数，负3读作负3，它小于0，因此负3是负数，而5和三分之二是正数，0既不是正数也不是负数。",
+     "id": "mxj_p1001_q1",
+     "topicId": "mxj_p1001"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "若把存入银行的钱用正数表示，则支出1600元应记作",
+     "question": "若把存入银行的钱用正数表示，则支出1600元应记作",
+     "options": [
+      {
+       "label": "A",
+       "text": "正1600元"
+      },
+      {
+       "label": "B",
+       "text": "0元"
+      },
+      {
+       "label": "C",
+       "text": "负1600元"
+      },
+      {
+       "label": "D",
+       "text": "1600"
+      }
+     ],
+     "answer": "C",
+     "explanation": "存入与支出是意义相反的量，存入记为正，支出就记为负，所以支出1600元记作负1600元。",
+     "id": "mxj_p1001_q2",
+     "topicId": "mxj_p1001"
+    },
+    {
+     "type": "fill",
+     "difficulty": "basic",
+     "prompt": "如果存入2000元记作正2000元，那么支出1600元记作多少元",
+     "question": "如果存入2000元记作正2000元，那么支出1600元记作多少元",
+     "answer": "负1600元",
+     "explanation": "存入与支出意义相反，一种规定为正则另一种为负，因此支出1600元记作负1600元。",
+     "id": "mxj_p1001_q3",
+     "topicId": "mxj_p1001"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "珠穆朗玛峰峰顶高于海平面8848.86 m，若把高出海平面的高度记作正数，则奋斗者号坐底深度10909 m应记作多少米",
+     "question": "珠穆朗玛峰峰顶高于海平面8848.86 m，若把高出海平面的高度记作正数，则奋斗者号坐底深度10909 m应记作多少米",
+     "answer": -10909,
+     "verify": "{\"type\": \"num\", \"value\": -10909}",
+     "explanation": "把测量起点记作0，高出起点的量记为正，低于起点的量记为负，坐底深度在起点以下，因此记作负10909 m。",
+     "id": "mxj_p1001_q4",
+     "topicId": "mxj_p1001"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "下列说法中正确的是",
+     "question": "下列说法中正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "正数和0统称为非负数"
+      },
+      {
+       "label": "B",
+       "text": "一个数不是正数就是负数"
+      },
+      {
+       "label": "C",
+       "text": "0是最小的正数"
+      },
+      {
+       "label": "D",
+       "text": "负整数中不包括负1"
+      }
+     ],
+     "answer": "A",
+     "explanation": "0既不是正数也不是负数，所以一个数可能是0，不是正数也不一定是负数；正数和0统称非负数，负1是负整数，故只有正数和0统称非负数正确。",
+     "id": "mxj_p1001_q5",
+     "topicId": "mxj_p1001"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "在负1、12、负0.5、0、6这五个数中，正整数有哪些",
+     "question": "在负1、12、负0.5、0、6这五个数中，正整数有哪些",
+     "answer": "12和6",
+     "explanation": "大于0的整数是正整数，12与6都是大于0的整数，负1是负整数，负0.5是负分数，0既不是正数也不是负数。",
+     "id": "mxj_p1001_q6",
+     "topicId": "mxj_p1001"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "standard",
+     "prompt": "把负1、12、负0.5、3.6、0、6分成正有理数、负有理数和零三类",
+     "question": "把负1、12、负0.5、3.6、0、6分成正有理数、负有理数和零三类",
+     "answer": "正有理数：12、3.6、6；负有理数：负1、负0.5；零：0",
+     "explanation": "按符号分类，大于0的有理数12、3.6、6属于正有理数，小于0的负1与负0.5属于负有理数，剩下的0单独归为零。",
+     "id": "mxj_p1001_q7",
+     "topicId": "mxj_p1001"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "某粮库把运进的粮食质量记为正、运出的记为负，6月6日至6月8日的记录依次为50 t、负15 t、负20 t，请说明这三天的进出情况并求出三天合计运进多少吨",
+     "question": "某粮库把运进的粮食质量记为正、运出的记为负，6月6日至6月8日的记录依次为50 t、负15 t、负20 t，请说明这三天的进出情况并求出三天合计运进多少吨",
+     "answer": "6日运进50 t，7日运出15 t，8日运出20 t，三天合计运进15 t",
+     "explanation": "正数表示运进、负数表示运出，所以50 t是运进50 t，负15 t是运出15 t，负20 t是运出20 t，三天合计数为50减15减20等于15 t。",
+     "id": "mxj_p1001_q8",
+     "topicId": "mxj_p1001"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1002",
+   "page": 6,
+   "description": "数轴由原点、正方向和单位长度三要素确定，相反数是只有符号不同的两个数，绝对值表示对应点到原点的距离，三者共同刻画有理数的位置与大小。",
+   "mastery_criteria": [
+    "能画出规范数轴并用数轴上的点表示有理数",
+    "能求一个数的相反数与绝对值，并由绝对值反求原数"
+   ],
+   "misconceptions": [
+    "画数轴时漏标正方向箭头或单位长度不统一",
+    "把绝对值相等的两个数都当作相反数，忽略0的特殊情况"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "数轴的三要素分别是什么，下列选项中正确的是",
+     "question": "数轴的三要素分别是什么，下列选项中正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "原点、正方向和单位长度"
+      },
+      {
+       "label": "B",
+       "text": "原点、负方向和刻度"
+      },
+      {
+       "label": "C",
+       "text": "正方向、单位和箭头"
+      },
+      {
+       "label": "D",
+       "text": "原点、箭头和刻度"
+      }
+     ],
+     "answer": "A",
+     "explanation": "教材指出规定了原点、正方向和单位长度的直线叫数轴，三者缺一不可，因此数轴的三要素是原点、正方向和单位长度。",
+     "id": "mxj_p1002_q1",
+     "topicId": "mxj_p1002"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "在数轴上，表示负2的点位于表示负5的点的",
+     "question": "在数轴上，表示负2的点位于表示负5的点的",
+     "options": [
+      {
+       "label": "A",
+       "text": "左边"
+      },
+      {
+       "label": "B",
+       "text": "右边"
+      },
+      {
+       "label": "C",
+       "text": "同一个位置"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "B",
+     "explanation": "数轴上从左到右的数逐渐变大，负2大于负5，所以表示负2的点在表示负5的点的右边，两者相距3个单位长度。",
+     "id": "mxj_p1002_q2",
+     "topicId": "mxj_p1002"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "下列各组数中互为相反数的是",
+     "question": "下列各组数中互为相反数的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "2和负二分之一"
+      },
+      {
+       "label": "B",
+       "text": "负2和负二分之一"
+      },
+      {
+       "label": "C",
+       "text": "2.6和负2.6"
+      },
+      {
+       "label": "D",
+       "text": "0和1"
+      }
+     ],
+     "answer": "C",
+     "explanation": "只有符号不同的两个数互为相反数，2.6与负2.6数字相同而符号相反，符合定义；2与负二分之一不仅符号不同，数字也不相同，不是相反数。",
+     "id": "mxj_p1002_q3",
+     "topicId": "mxj_p1002"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "下列说法中错误的是",
+     "question": "下列说法中错误的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "0的相反数是0"
+      },
+      {
+       "label": "B",
+       "text": "0的绝对值是0"
+      },
+      {
+       "label": "C",
+       "text": "负数的绝对值是它的相反数"
+      },
+      {
+       "label": "D",
+       "text": "一个数的绝对值一定是正数"
+      }
+     ],
+     "answer": "D",
+     "explanation": "绝对值表示到原点的距离，0到原点的距离为0，所以0的绝对值是0而不是正数，一个数的绝对值一定是非负数，故该说法错误。",
+     "id": "mxj_p1002_q4",
+     "topicId": "mxj_p1002"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "求负7.5的绝对值是多少",
+     "question": "求负7.5的绝对值是多少",
+     "answer": 7.5,
+     "verify": "{\"type\": \"num\", \"value\": 7.5}",
+     "explanation": "负数的绝对值是它的相反数，负7.5的相反数是7.5，所以负7.5的绝对值等于7.5，它表示数轴上该点到原点7.5个单位长度。",
+     "id": "mxj_p1002_q5",
+     "topicId": "mxj_p1002"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "数轴上到原点距离等于2个单位长度的点有几个，它们分别表示什么数",
+     "question": "数轴上到原点距离等于2个单位长度的点有几个，它们分别表示什么数",
+     "answer": "2个，分别表示2和负2",
+     "explanation": "到原点距离为2的点可以在原点右侧也可以在原点左侧，右侧的点表示2，左侧的点表示负2，因此共有2个这样的点。",
+     "id": "mxj_p1002_q6",
+     "topicId": "mxj_p1002"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "standard",
+     "prompt": "点A在数轴上位于原点左侧且距原点4个单位长度，若将点A先向左移动2个单位长度，再向右移动10个单位长度，此时点A表示什么数",
+     "question": "点A在数轴上位于原点左侧且距原点4个单位长度，若将点A先向左移动2个单位长度，再向右移动10个单位长度，此时点A表示什么数",
+     "answer": "4",
+     "explanation": "点A原来表示负4，向左移动2个单位长度后表示负6，再向右移动10个单位长度得负6加10等于4，所以此时点A表示4。",
+     "id": "mxj_p1002_q7",
+     "topicId": "mxj_p1002"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "已知a的绝对值等于四分之三，求a的值，并说明这样的点在数轴上有几个",
+     "question": "已知a的绝对值等于四分之三，求a的值，并说明这样的点在数轴上有几个",
+     "answer": "a等于四分之三或a等于负四分之三，这样的点有2个",
+     "explanation": "绝对值等于四分之三的有理数有两个，一个是四分之三本身，一个是它的相反数负四分之三，它们在数轴上分别位于原点两侧且到原点距离相等。",
+     "id": "mxj_p1002_q8",
+     "topicId": "mxj_p1002"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1003",
+   "page": 14,
+   "description": "借助温度高低与数轴位置规定正数大于负数、0大于负数，两个负数比较时绝对值大的反而小，从而把有理数的大小关系统一到数轴上。",
+   "mastery_criteria": [
+    "能说出有理数大小比较的两条规则并说明理由",
+    "能把一组有理数按从小到大用小于号连接"
+   ],
+   "misconceptions": [
+    "比较两个负数时直接按绝对值大小判定大小",
+    "认为数轴上越靠左的点表示的数越大"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "下列比较两个数大小的式子中，正确的是",
+     "question": "下列比较两个数大小的式子中，正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "负3大于负5"
+      },
+      {
+       "label": "B",
+       "text": "负3大于2"
+      },
+      {
+       "label": "C",
+       "text": "0小于负10"
+      },
+      {
+       "label": "D",
+       "text": "负0.5大于0"
+      }
+     ],
+     "answer": "A",
+     "explanation": "两个负数比较，绝对值大的反而小，负3的绝对值3小于负5的绝对值5，所以负3大于负5；正数大于0，0大于负数，故其余三项都错。",
+     "id": "mxj_p1003_q1",
+     "topicId": "mxj_p1003"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "两个负数比较大小，正确的说法是",
+     "question": "两个负数比较大小，正确的说法是",
+     "options": [
+      {
+       "label": "A",
+       "text": "绝对值大的数较大"
+      },
+      {
+       "label": "B",
+       "text": "绝对值大的数反而较小"
+      },
+      {
+       "label": "C",
+       "text": "绝对值小的数较小"
+      },
+      {
+       "label": "D",
+       "text": "无法比较大小"
+      }
+     ],
+     "answer": "B",
+     "explanation": "温度负10 ℃比负3 ℃更冷，而负10的绝对值10大于负3的绝对值3，由此规定两个负数绝对值大的反而小。",
+     "id": "mxj_p1003_q2",
+     "topicId": "mxj_p1003"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "比较负的负0.3与负四分之一的绝对值的大小，正确的是",
+     "question": "比较负的负0.3与负四分之一的绝对值的大小，正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "前者小于后者"
+      },
+      {
+       "label": "B",
+       "text": "两者相等"
+      },
+      {
+       "label": "C",
+       "text": "前者大于后者"
+      },
+      {
+       "label": "D",
+       "text": "无法比较"
+      }
+     ],
+     "answer": "C",
+     "explanation": "负的负0.3等于0.3，四分之一的绝对值是0.25，0.3大于0.25，所以负的负0.3大于负四分之一的绝对值。",
+     "id": "mxj_p1003_q3",
+     "topicId": "mxj_p1003"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "在以向右为正方向的数轴上，右边的点表示的数比左边的点表示的数",
+     "question": "在以向右为正方向的数轴上，右边的点表示的数比左边的点表示的数",
+     "options": [
+      {
+       "label": "A",
+       "text": "小"
+      },
+      {
+       "label": "B",
+       "text": "相等"
+      },
+      {
+       "label": "C",
+       "text": "不确定"
+      },
+      {
+       "label": "D",
+       "text": "大"
+      }
+     ],
+     "answer": "D",
+     "explanation": "数轴按从左到右的顺序数逐渐增大，因此右边的点表示的数总比左边的点表示的数大，这是有理数大小比较的数轴依据。",
+     "id": "mxj_p1003_q4",
+     "topicId": "mxj_p1003"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "比较负896与0.01的大小，写出其中较小的那个数",
+     "question": "比较负896与0.01的大小，写出其中较小的那个数",
+     "answer": -896,
+     "verify": "{\"type\": \"num\", \"value\": -896}",
+     "explanation": "0.01是正数，负896是负数，正数大于负数，所以负896较小，较小的数是负896。",
+     "id": "mxj_p1003_q5",
+     "topicId": "mxj_p1003"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "用大于号或小于号填空：负五分之二与负七分之三",
+     "question": "用大于号或小于号填空：负五分之二与负七分之三",
+     "answer": "大于",
+     "explanation": "负五分之二约等于负0.4，负七分之三约等于负0.4286，两个负数中绝对值小的反而大，所以负五分之二大于负七分之三。",
+     "id": "mxj_p1003_q6",
+     "topicId": "mxj_p1003"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "standard",
+     "prompt": "把负3.5、2、0、负1这四个数用小于号连接起来",
+     "question": "把负3.5、2、0、负1这四个数用小于号连接起来",
+     "answer": "负3.5小于负1小于0小于2",
+     "explanation": "先分出负数与正数，负数中负3.5的绝对值大反而小，所以负3.5小于负1，负数小于0，0小于2，合起来即为所求顺序。",
+     "id": "mxj_p1003_q7",
+     "topicId": "mxj_p1003"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "分别写出所有满足绝对值小于3的整数",
+     "question": "分别写出所有满足绝对值小于3的整数",
+     "answer": "负2、负1、0、1、2",
+     "explanation": "绝对值小于3的整数到原点的距离小于3，包括原点两侧的负2、负1、0、1、2，而负3与3的绝对值等于3不满足条件。",
+     "id": "mxj_p1003_q8",
+     "topicId": "mxj_p1003"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1004",
+   "page": 18,
+   "description": "同号两数相加取相同的符号并把绝对值相加，异号两数相加取绝对值较大数的符号，减法统一转化为加上减数的相反数，加法还满足交换律与结合律。",
+   "mastery_criteria": [
+    "能按法则计算两个有理数的和与差并说明每一步的依据",
+    "能运用加法交换律与结合律简化多个有理数的连加运算"
+   ],
+   "misconceptions": [
+    "异号两数相加时把绝对值相加而没有相减",
+    "减去一个负数时忘记把减数变号，把减法仍按小学方法运算"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "计算负8与负12的和，结果是",
+     "question": "计算负8与负12的和，结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "负20"
+      },
+      {
+       "label": "B",
+       "text": "20"
+      },
+      {
+       "label": "C",
+       "text": "负4"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "A",
+     "explanation": "两个负数相加，结果是负数，并把它们的绝对值相加，8加12等于20，所以负8与负12的和是负20。",
+     "id": "mxj_p1004_q1",
+     "topicId": "mxj_p1004"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "计算4加负9的结果是",
+     "question": "计算4加负9的结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "13"
+      },
+      {
+       "label": "B",
+       "text": "负5"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "负13"
+      }
+     ],
+     "answer": "B",
+     "explanation": "异号两数相加，绝对值较大的是负9，取负号并用较大的绝对值减去较小的绝对值，9减4等于5，所以和为负5。",
+     "id": "mxj_p1004_q2",
+     "topicId": "mxj_p1004"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "某天最高气温负1 ℃，最低气温负9 ℃，这一天的温差是",
+     "question": "某天最高气温负1 ℃，最低气温负9 ℃，这一天的温差是",
+     "options": [
+      {
+       "label": "A",
+       "text": "负10 ℃"
+      },
+      {
+       "label": "B",
+       "text": "10 ℃"
+      },
+      {
+       "label": "C",
+       "text": "8 ℃"
+      },
+      {
+       "label": "D",
+       "text": "负8 ℃"
+      }
+     ],
+     "answer": "C",
+     "explanation": "温差等于最高气温减最低气温，即负1减负9，减去负9等于加上9，负1加9等于8，所以这一天温差是8 ℃。",
+     "id": "mxj_p1004_q3",
+     "topicId": "mxj_p1004"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "下列等式成立的是",
+     "question": "下列等式成立的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "a减b等于a加b"
+      },
+      {
+       "label": "B",
+       "text": "负的负3等于负3"
+      },
+      {
+       "label": "C",
+       "text": "5减负2等于3"
+      },
+      {
+       "label": "D",
+       "text": "减去一个数等于加上这个数的相反数"
+      }
+     ],
+     "answer": "D",
+     "explanation": "教材规定减去一个数等于加上这个数的相反数，即a减b等于a加负b，这正是减法法则；5减负2应等于7，负的负3应等于3，故其余各项错误。",
+     "id": "mxj_p1004_q4",
+     "topicId": "mxj_p1004"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "计算负3.75与负0.25这两个数的和是多少",
+     "question": "计算负3.75与负0.25这两个数的和是多少",
+     "answer": -4,
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 0}, {\"type\": \"num\", \"value\": 4}]}",
+     "explanation": "两个负数相加得负数，并把绝对值相加，3.75加0.25等于4，所以和为负4，可用0减4复核结果。",
+     "id": "mxj_p1004_q5",
+     "topicId": "mxj_p1004"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "standard",
+     "prompt": "计算0减去负3.18的结果",
+     "question": "计算0减去负3.18的结果",
+     "answer": 3.18,
+     "verify": "{\"type\": \"num\", \"value\": 3.18}",
+     "explanation": "减去一个数等于加上这个数的相反数，负3.18的相反数是3.18，所以0减负3.18等于0加3.18等于3.18。",
+     "id": "mxj_p1004_q6",
+     "topicId": "mxj_p1004"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "月球表面白昼温度可达127 ℃，黑夜可降到负183 ℃，月球表面的昼夜温差是多少摄氏度",
+     "question": "月球表面白昼温度可达127 ℃，黑夜可降到负183 ℃，月球表面的昼夜温差是多少摄氏度",
+     "answer": "310 ℃",
+     "explanation": "温差等于白昼温度减黑夜温度，127减负183等于127加183等于310，所以月球表面昼夜温差可达310 ℃。",
+     "id": "mxj_p1004_q7",
+     "topicId": "mxj_p1004"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "计算4.37加负8加负4.37，并说明所用的运算律",
+     "question": "计算4.37加负8加负4.37，并说明所用的运算律",
+     "answer": "负8",
+     "explanation": "先用加法交换律把4.37与负4.37放在一起，二者互为相反数和为0，再由0加负8得负8，恰当运用运算律可使计算简便。",
+     "id": "mxj_p1004_q8",
+     "topicId": "mxj_p1004"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1005",
+   "page": 30,
+   "description": "同号两数相乘得正、异号两数相乘得负并把绝对值相乘，除法转化为乘这个数的倒数，几个不为0的数相乘的符号由负因数的个数决定。",
+   "mastery_criteria": [
+    "能按符号法则计算两个及多个有理数的乘除运算",
+    "能求一个非零有理数的倒数并把除法转化为乘法"
+   ],
+   "misconceptions": [
+    "认为负数与负数相乘得负数",
+    "把除以一个数当作乘这个数本身，忽略应乘它的倒数"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "计算负8乘5的结果是",
+     "question": "计算负8乘5的结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "负40"
+      },
+      {
+       "label": "B",
+       "text": "40"
+      },
+      {
+       "label": "C",
+       "text": "负3"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ],
+     "answer": "A",
+     "explanation": "异号两数相乘得负数，并把绝对值相乘，8乘5等于40，所以负8乘5等于负40。",
+     "id": "mxj_p1005_q1",
+     "topicId": "mxj_p1005"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "两个有理数相乘，同号时积的符号是",
+     "question": "两个有理数相乘，同号时积的符号是",
+     "options": [
+      {
+       "label": "A",
+       "text": "负"
+      },
+      {
+       "label": "B",
+       "text": "正"
+      },
+      {
+       "label": "C",
+       "text": "0"
+      },
+      {
+       "label": "D",
+       "text": "不能确定"
+      }
+     ],
+     "answer": "B",
+     "explanation": "乘法法则规定同号两数相乘得正数、异号两数相乘得负数，并把绝对值相乘，所以同号时积为正。",
+     "id": "mxj_p1005_q2",
+     "topicId": "mxj_p1005"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "下列各组数中互为倒数的是",
+     "question": "下列各组数中互为倒数的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "2与负2"
+      },
+      {
+       "label": "B",
+       "text": "0与1"
+      },
+      {
+       "label": "C",
+       "text": "负5与负五分之一"
+      },
+      {
+       "label": "D",
+       "text": "1与负1"
+      }
+     ],
+     "answer": "C",
+     "explanation": "两个有理数的乘积等于1时互为倒数，负5乘负五分之一等于1，符合定义；0没有倒数，2与负2、1与负1都是互为相反数。",
+     "id": "mxj_p1005_q3",
+     "topicId": "mxj_p1005"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "计算负6除以负3再乘2的结果是",
+     "question": "计算负6除以负3再乘2的结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "负4"
+      },
+      {
+       "label": "B",
+       "text": "负1"
+      },
+      {
+       "label": "C",
+       "text": "1"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "D",
+     "explanation": "只含乘除运算时按从左到右的顺序计算，负6除以负3得2，2乘2得4，所以结果是4。",
+     "id": "mxj_p1005_q4",
+     "topicId": "mxj_p1005"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "计算负12除以三分之一的结果",
+     "question": "计算负12除以三分之一的结果",
+     "answer": -36,
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": -12}, {\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 3}]}]}",
+     "explanation": "除以一个不等于0的数等于乘这个数的倒数，三分之一的倒数是3，负12乘3等于负36，所以商为负36。",
+     "id": "mxj_p1005_q5",
+     "topicId": "mxj_p1005"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "standard",
+     "prompt": "计算负12.5乘负2.5乘负8乘4的结果",
+     "question": "计算负12.5乘负2.5乘负8乘4的结果",
+     "answer": -1000,
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": -12.5}, {\"type\": \"num\", \"value\": -8}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": -2.5}, {\"type\": \"num\", \"value\": 4}]}]}",
+     "explanation": "用乘法交换律与结合律把负12.5与负8结合得100，负2.5与4结合得负10，再相乘得负1000。",
+     "id": "mxj_p1005_q6",
+     "topicId": "mxj_p1005"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "负八分之五的倒数是多少",
+     "question": "负八分之五的倒数是多少",
+     "answer": "负五分之八",
+     "explanation": "因为负八分之五乘负五分之八等于1，所以负八分之五的倒数是负五分之八，负数的倒数仍是负数。",
+     "id": "mxj_p1005_q7",
+     "topicId": "mxj_p1005"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "计算负8乘负1乘负3乘4乘负5，要求先确定积的符号再计算",
+     "question": "计算负8乘负1乘负3乘4乘负5，要求先确定积的符号再计算",
+     "answer": "480",
+     "explanation": "五个因数中有四个负因数，负因数个数为偶数，所以积为正数，再把绝对值相乘，8乘1乘3乘4乘5等于480。",
+     "id": "mxj_p1005_q8",
+     "topicId": "mxj_p1005"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1006",
+   "page": 45,
+   "description": "求几个相同因数乘积的运算叫乘方，其中相同的因数叫底数、因数的个数叫指数，正数的任何正整数次幂为正，负数的奇次幂为负、偶次幂为正。",
+   "mastery_criteria": [
+    "能说出幂的底数与指数并计算简单的乘方",
+    "能把大于10的数用科学记数法表示并还原"
+   ],
+   "misconceptions": [
+    "把负数的乘方与乘方的相反数混为一谈",
+    "书写负数和分数的乘方时漏写括号导致底数判断错误"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "负2的4次方表示的意义是",
+     "question": "负2的4次方表示的意义是",
+     "options": [
+      {
+       "label": "A",
+       "text": "4个负2相乘"
+      },
+      {
+       "label": "B",
+       "text": "4个2相乘的相反数"
+      },
+      {
+       "label": "C",
+       "text": "负2乘4"
+      },
+      {
+       "label": "D",
+       "text": "2的4次方的相反数"
+      }
+     ],
+     "answer": "A",
+     "explanation": "负2的4次方中底数是负2、指数是4，表示4个负2相乘，结果为16；而2的4次方的相反数应写作负的2的4次方，两者含义不同。",
+     "id": "mxj_p1006_q1",
+     "topicId": "mxj_p1006"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "负2的3次方的计算结果是",
+     "question": "负2的3次方的计算结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "负8"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "负6"
+      }
+     ],
+     "answer": "B",
+     "explanation": "负2的3次方表示3个负2相乘，即负2乘负2乘负2，三个负因数得负，绝对值8，所以结果为负8。",
+     "id": "mxj_p1006_q2",
+     "topicId": "mxj_p1006"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "下列各式中计算结果为负数的是",
+     "question": "下列各式中计算结果为负数的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "负3的平方"
+      },
+      {
+       "label": "B",
+       "text": "负1的2024次方"
+      },
+      {
+       "label": "C",
+       "text": "负的2的3次方"
+      },
+      {
+       "label": "D",
+       "text": "负2的4次方"
+      }
+     ],
+     "answer": "C",
+     "explanation": "负的2的3次方表示2的3次方的相反数，结果为负8；负3的平方为9，负1的2024次方为1，负2的4次方为16，都是正数。",
+     "id": "mxj_p1006_q3",
+     "topicId": "mxj_p1006"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "用科学记数法表示160000000，正确的是",
+     "question": "用科学记数法表示160000000，正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "1.6乘10的7次方"
+      },
+      {
+       "label": "B",
+       "text": "16乘10的7次方"
+      },
+      {
+       "label": "C",
+       "text": "1.6乘10的9次方"
+      },
+      {
+       "label": "D",
+       "text": "1.6乘10的8次方"
+      }
+     ],
+     "answer": "D",
+     "explanation": "科学记数法要求把一个大于10的数记成a乘10的n次方的形式，其中a大于或等于1且小于10，160000000等于1.6乘100000000，即1.6乘10的8次方。",
+     "id": "mxj_p1006_q4",
+     "topicId": "mxj_p1006"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "计算3的4次方，结果是多少",
+     "question": "计算3的4次方，结果是多少",
+     "answer": 81,
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 4}]}",
+     "explanation": "3的4次方表示4个3相乘，3乘3乘3乘3等于81，所以3的4次方等于81。",
+     "id": "mxj_p1006_q5",
+     "topicId": "mxj_p1006"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "standard",
+     "prompt": "计算0.2的3次方，结果是多少",
+     "question": "计算0.2的3次方，结果是多少",
+     "answer": 0.008,
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 0.2}, {\"type\": \"num\", \"value\": 3}]}",
+     "explanation": "0.2的3次方表示3个0.2相乘，0.2乘0.2等于0.04，再乘0.2得0.008，所以结果为0.008。",
+     "id": "mxj_p1006_q6",
+     "topicId": "mxj_p1006"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "如果一个数的平方等于16，那么这个数可以是什么",
+     "question": "如果一个数的平方等于16，那么这个数可以是什么",
+     "answer": "4或负4",
+     "explanation": "4的平方等于16，负4的平方也表示两个负4相乘等于16，所以平方等于16的数有4和负4两个。",
+     "id": "mxj_p1006_q7",
+     "topicId": "mxj_p1006"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "说明负2的4次方与负的2的4次方的含义与结果有什么不同",
+     "question": "说明负2的4次方与负的2的4次方的含义与结果有什么不同",
+     "answer": "负2的4次方表示4个负2相乘，结果是16；负的2的4次方表示4个2相乘的相反数，结果是负16",
+     "explanation": "前者的底数是负2，负因数有4个，偶次幂为正，结果16；后者的底数是2，先算2的4次方得16，再取相反数得负16，两者含义与结果都不同。",
+     "id": "mxj_p1006_q8",
+     "topicId": "mxj_p1006"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1007",
+   "page": 51,
+   "description": "含有加减乘除与乘方多种运算的算式叫有理数的混合运算，其顺序为先算乘方、再算乘除、最后算加减，有括号时先算括号里面。",
+   "mastery_criteria": [
+    "能按先乘方、再乘除、最后加减的顺序计算混合运算",
+    "能在含多重括号的算式中正确确定运算次序"
+   ],
+   "misconceptions": [
+    "同级运算不按从左到右的顺序而先算后面的乘法",
+    "括号内符号未整体处理，去括号时只改第一项"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "有理数的混合运算中，最先计算的是",
+     "question": "有理数的混合运算中，最先计算的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "乘方"
+      },
+      {
+       "label": "B",
+       "text": "加减"
+      },
+      {
+       "label": "C",
+       "text": "乘除"
+      },
+      {
+       "label": "D",
+       "text": "括号外的运算"
+      }
+     ],
+     "answer": "A",
+     "explanation": "混合运算顺序为先算乘方，再算乘除，最后算加减，有括号时先进行括号里面的运算，所以乘方最先计算。",
+     "id": "mxj_p1007_q1",
+     "topicId": "mxj_p1007"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "计算3的平方乘5时，应先算",
+     "question": "计算3的平方乘5时，应先算",
+     "options": [
+      {
+       "label": "A",
+       "text": "乘法"
+      },
+      {
+       "label": "B",
+       "text": "乘方"
+      },
+      {
+       "label": "C",
+       "text": "加法"
+      },
+      {
+       "label": "D",
+       "text": "两种顺序结果不同"
+      }
+     ],
+     "answer": "B",
+     "explanation": "当只含有乘方和乘法时先算乘方更简便，3的平方等于9，再乘5得45，若先算乘法虽结果相同但过程更繁。",
+     "id": "mxj_p1007_q2",
+     "topicId": "mxj_p1007"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "计算负3加中括号内负5乘括号内1减0.6的值，结果是",
+     "question": "计算负3加中括号内负5乘括号内1减0.6的值，结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "负1"
+      },
+      {
+       "label": "C",
+       "text": "负5"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "C",
+     "explanation": "先算小括号内1减0.6得0.4，再算中括号内负5乘0.4得负2，最后负3加负2等于负5。",
+     "id": "mxj_p1007_q3",
+     "topicId": "mxj_p1007"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "计算17减16除以负2的3次方再乘3的结果是",
+     "question": "计算17减16除以负2的3次方再乘3的结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "11"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "负7"
+      },
+      {
+       "label": "D",
+       "text": "23"
+      }
+     ],
+     "answer": "D",
+     "explanation": "先算负2的3次方得负8，再从左到右算16除以负8得负2，负2乘3得负6，最后17减负6等于23。",
+     "id": "mxj_p1007_q4",
+     "topicId": "mxj_p1007"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "计算10减2乘3，结果是多少",
+     "question": "计算10减2乘3，结果是多少",
+     "answer": 4,
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}]}",
+     "explanation": "先算乘法2乘3得6，再算减法10减6得4，混合运算中乘除优先于加减。",
+     "id": "mxj_p1007_q5",
+     "topicId": "mxj_p1007"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "standard",
+     "prompt": "计算负3的4次方除以中括号内2减负7的值",
+     "question": "计算负3的4次方除以中括号内2减负7的值",
+     "answer": 9,
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": -3}, {\"type\": \"num\", \"value\": 4}]}, {\"type\": \"num\", \"value\": 9}]}",
+     "explanation": "先算括号内2减负7等于9，再算负3的4次方得81，最后81除以9等于9。",
+     "id": "mxj_p1007_q6",
+     "topicId": "mxj_p1007"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "有理数混合运算的顺序是先算乘方，再算什么，最后算加减",
+     "question": "有理数混合运算的顺序是先算乘方，再算什么，最后算加减",
+     "answer": "乘除",
+     "explanation": "教材规定混合运算的顺序为先算乘方，再算乘除，最后算加减，同级运算按从左到右的顺序进行。",
+     "id": "mxj_p1007_q7",
+     "topicId": "mxj_p1007"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "计算负二分之三乘中括号内负3的平方乘负三分之二的3次方减2的值",
+     "question": "计算负二分之三乘中括号内负3的平方乘负三分之二的3次方减2的值",
+     "answer": "负1",
+     "explanation": "先算负3的平方得负9，负三分之二的3次方得负二十七分之八，两者相乘得三分之八，减2得三分之二，再乘负二分之三得负1。",
+     "id": "mxj_p1007_q8",
+     "topicId": "mxj_p1007"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1008",
+   "page": 64,
+   "description": "把数与表示数的字母用运算符号连接而成的式子叫代数式，列代数式要按语言叙述的顺序确定运算关系，必要时加括号表示运算整体。",
+   "mastery_criteria": [
+    "能判断一个式子是不是代数式并规范书写",
+    "能把实际问题中的数量关系列成代数式"
+   ],
+   "misconceptions": [
+    "把含等号或不等号的式子当成代数式",
+    "把和的平方写成平方的和，漏掉括号"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "比a的平方大c的数，可以表示为",
+     "question": "比a的平方大c的数，可以表示为",
+     "options": [
+      {
+       "label": "A",
+       "text": "a的平方加c"
+      },
+      {
+       "label": "B",
+       "text": "括号a加c的平方"
+      },
+      {
+       "label": "C",
+       "text": "a的平方减c"
+      },
+      {
+       "label": "D",
+       "text": "2a加c"
+      }
+     ],
+     "answer": "A",
+     "explanation": "先写出a的平方即a的平方，再表示比它大c，就是在这个结果上加c，得到a的平方加c，注意平方只作用于a。",
+     "id": "mxj_p1008_q1",
+     "topicId": "mxj_p1008"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "a与b的和的平方，应表示为",
+     "question": "a与b的和的平方，应表示为",
+     "options": [
+      {
+       "label": "A",
+       "text": "a的平方加b的平方"
+      },
+      {
+       "label": "B",
+       "text": "括号a加b的平方"
+      },
+      {
+       "label": "C",
+       "text": "a加b的平方"
+      },
+      {
+       "label": "D",
+       "text": "2倍括号a加b"
+      }
+     ],
+     "answer": "B",
+     "explanation": "和的平方是先求和再平方，因此要把a加b用括号括起来再平方；a的平方加b的平方表示的是平方的和，两者不同。",
+     "id": "mxj_p1008_q2",
+     "topicId": "mxj_p1008"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "一个两位数，十位数字是a，个位数字是b，这个两位数可以表示为",
+     "question": "一个两位数，十位数字是a，个位数字是b，这个两位数可以表示为",
+     "options": [
+      {
+       "label": "A",
+       "text": "ab"
+      },
+      {
+       "label": "B",
+       "text": "a加b"
+      },
+      {
+       "label": "C",
+       "text": "10a加b"
+      },
+      {
+       "label": "D",
+       "text": "100a加b"
+      }
+     ],
+     "answer": "C",
+     "explanation": "十位上的a表示a个十即10a，个位上的b表示b个一，所以这个两位数是10a加b，这与把两个数字并排写成的ab不是一回事。",
+     "id": "mxj_p1008_q3",
+     "topicId": "mxj_p1008"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "被7除余4的数，用自然数n表示商，可以写成",
+     "question": "被7除余4的数，用自然数n表示商，可以写成",
+     "options": [
+      {
+       "label": "A",
+       "text": "7n减4"
+      },
+      {
+       "label": "B",
+       "text": "7n"
+      },
+      {
+       "label": "C",
+       "text": "4n加7"
+      },
+      {
+       "label": "D",
+       "text": "7n加4"
+      }
+     ],
+     "answer": "D",
+     "explanation": "被除数等于除数乘商加余数，除数是7、商是n、余数是4，所以这个数是7n加4。",
+     "id": "mxj_p1008_q4",
+     "topicId": "mxj_p1008"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "围m个六边形需要6加5乘括号内m减1根火柴棍，当m取4时需要多少根火柴棍",
+     "question": "围m个六边形需要6加5乘括号内m减1根火柴棍，当m取4时需要多少根火柴棍",
+     "answer": 21,
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 3}]}]}, {\"type\": \"num\", \"value\": 0}]}",
+     "explanation": "把m用4代入，m减1等于3，5乘3等于15，再加6得21，所以围4个六边形需要21根火柴棍。",
+     "id": "mxj_p1008_q5",
+     "topicId": "mxj_p1008"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "用代数式表示：a的5倍与b的8倍的和是多少",
+     "question": "用代数式表示：a的5倍与b的8倍的和是多少",
+     "answer": "5a加8b",
+     "explanation": "a的5倍记作5a，b的8倍记作8b，两者相加即为5a加8b，数字写在字母前面是代数式的书写规范。",
+     "id": "mxj_p1008_q6",
+     "topicId": "mxj_p1008"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "standard",
+     "prompt": "一件商品的进价是x元，卖出后利润率为百分之二十五，用代数式表示这件商品的利润",
+     "question": "一件商品的进价是x元，卖出后利润率为百分之二十五，用代数式表示这件商品的利润",
+     "answer": "0.25x元",
+     "explanation": "教材给出利润等于进价乘利润率，进价是x元，利润率是百分之二十五即0.25，所以利润为0.25x元。",
+     "id": "mxj_p1008_q7",
+     "topicId": "mxj_p1008"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "某市对5人及以下家庭实行阶梯水价，180立方米及以下每立方米2.07元，超过180但不超过260立方米的部分每立方米4.07元。某家庭前十个月用水180立方米，后两个月用水b立方米且b不超过80，用代数式表示该家庭一年的水费",
+     "question": "某市对5人及以下家庭实行阶梯水价，180立方米及以下每立方米2.07元，超过180但不超过260立方米的部分每立方米4.07元。某家庭前十个月用水180立方米，后两个月用水b立方米且b不超过80，用代数式表示该家庭一年的水费",
+     "answer": "372.6加4.07b元",
+     "explanation": "前十个月的水费为2.07乘180等于372.6元，后两个月用水b立方米落在第二档，水费为4.07b元，因此全年水费为372.6加4.07b元。",
+     "id": "mxj_p1008_q8",
+     "topicId": "mxj_p1008"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1009",
+   "page": 71,
+   "description": "把代数式里的字母用数代入后计算得出的结果叫这个代数式的一个值，代入负数或分数时要加括号，字母的取值还要符合问题的实际意义。",
+   "mastery_criteria": [
+    "能把给定的数代入代数式并按运算顺序求值",
+    "能说明代数式中字母取值所受的实际限制"
+   ],
+   "misconceptions": [
+    "代入负数时漏加括号，导致乘方与乘法的符号出错",
+    "认为字母可以取任意数，忽略实际意义的限制"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "当x取3时，代数式x的平方减5x加6的值是",
+     "question": "当x取3时，代数式x的平方减5x加6的值是",
+     "options": [
+      {
+       "label": "A",
+       "text": "0"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "30"
+      },
+      {
+       "label": "D",
+       "text": "负6"
+      }
+     ],
+     "answer": "A",
+     "explanation": "把x用3代入得3的平方减5乘3加6，即9减15加6，计算结果为0，所以当x取3时代数式的值是0。",
+     "id": "mxj_p1009_q1",
+     "topicId": "mxj_p1009"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "当x取负2时，代数式x的平方减5x加6的值是",
+     "question": "当x取负2时，代数式x的平方减5x加6的值是",
+     "options": [
+      {
+       "label": "A",
+       "text": "0"
+      },
+      {
+       "label": "B",
+       "text": "20"
+      },
+      {
+       "label": "C",
+       "text": "12"
+      },
+      {
+       "label": "D",
+       "text": "负20"
+      }
+     ],
+     "answer": "B",
+     "explanation": "把x用负2代入，负2的平方等于4，负5乘负2等于10，再加6得20，所以此时代数式的值为20。",
+     "id": "mxj_p1009_q2",
+     "topicId": "mxj_p1009"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "在代数式372.6加4.07b中，当b取40时，代数式的值是",
+     "question": "在代数式372.6加4.07b中，当b取40时，代数式的值是",
+     "options": [
+      {
+       "label": "A",
+       "text": "616.8"
+      },
+      {
+       "label": "B",
+       "text": "372.6"
+      },
+      {
+       "label": "C",
+       "text": "535.4"
+      },
+      {
+       "label": "D",
+       "text": "162.8"
+      }
+     ],
+     "answer": "C",
+     "explanation": "把b用40代入，4.07乘40等于162.8，再加372.6等于535.4，所以当b取40时该代数式的值是535.4。",
+     "id": "mxj_p1009_q3",
+     "topicId": "mxj_p1009"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "当a取4时，代数式负2a加1的值是多少",
+     "question": "当a取4时，代数式负2a加1的值是多少",
+     "answer": -7,
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": -2}, {\"type\": \"num\", \"value\": 4}]}, {\"type\": \"num\", \"value\": 1}]}",
+     "explanation": "把a用4代入，负2乘4等于负8，再加1等于负7，所以当a取4时代数式负2a加1的值是负7。",
+     "id": "mxj_p1009_q4",
+     "topicId": "mxj_p1009"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "standard",
+     "prompt": "当x取二分之一、y取负2时，代数式xy分之x的平方减y的3次方的值是多少",
+     "question": "当x取二分之一、y取负2时，代数式xy分之x的平方减y的3次方的值是多少",
+     "answer": -8.25,
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 0.5}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": -2}, {\"type\": \"num\", \"value\": 3}]}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 0.5}, {\"type\": \"num\", \"value\": -2}]}]}",
+     "explanation": "分母xy等于负1，分子x的平方减y的3次方等于0.25减负8等于8.25，所以代数式的值为8.25除以负1即负8.25。",
+     "id": "mxj_p1009_q5",
+     "topicId": "mxj_p1009"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "当a取负1、b取负2、c取3时，代数式b的平方减4ac的值是多少",
+     "question": "当a取负1、b取负2、c取3时，代数式b的平方减4ac的值是多少",
+     "answer": "16",
+     "explanation": "b的平方等于4，4ac等于4乘负1乘3即负12，所以b的平方减4ac等于4减负12等于16。",
+     "id": "mxj_p1009_q6",
+     "topicId": "mxj_p1009"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "standard",
+     "prompt": "科学测算表明10岁至50岁的人每天所需睡眠时间t小时可用t等于11减十分之n计算，其中n表示岁数。求15岁的人每天所需的睡眠时间",
+     "question": "科学测算表明10岁至50岁的人每天所需睡眠时间t小时可用t等于11减十分之n计算，其中n表示岁数。求15岁的人每天所需的睡眠时间",
+     "answer": "9.5小时",
+     "explanation": "把n用15代入公式，十分之15等于1.5，11减1.5等于9.5，所以15岁的人每天大约需要9.5小时睡眠。",
+     "id": "mxj_p1009_q7",
+     "topicId": "mxj_p1009"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "已知a的平方加2a减1等于0，求3倍括号内a的平方加2a再加2的值",
+     "question": "已知a的平方加2a减1等于0，求3倍括号内a的平方加2a再加2的值",
+     "answer": "5",
+     "explanation": "由a的平方加2a减1等于0可得a的平方加2a等于1，把这一整体代入所求式，3乘1加2等于5，整体代入可避免求出a的具体值。",
+     "id": "mxj_p1009_q8",
+     "topicId": "mxj_p1009"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1010",
+   "page": 75,
+   "description": "数与字母及其幂的乘积组成单项式，几个单项式的和组成多项式，所含字母相同且相同字母指数也相同的项是同类项，合并同类项只把系数相加。",
+   "mastery_criteria": [
+    "能说出单项式的系数与次数、多项式的次数与常数项",
+    "能识别同类项并正确合并，指出几次几项式"
+   ],
+   "misconceptions": [
+    "把单项式的次数当成系数的大小",
+    "合并同类项时把字母和字母的指数也相加"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "单项式负x的平方y的系数是多少",
+     "question": "单项式负x的平方y的系数是多少",
+     "options": [
+      {
+       "label": "A",
+       "text": "负1"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ],
+     "answer": "A",
+     "explanation": "单项式中的数字因数叫系数，负x的平方y可以看作负1乘x的平方y，所以它的系数是负1，系数为负1时数字1省略不写。",
+     "id": "mxj_p1010_q1",
+     "topicId": "mxj_p1010"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "单项式8t的次数是多少",
+     "question": "单项式8t的次数是多少",
+     "options": [
+      {
+       "label": "A",
+       "text": "8"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "0"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "B",
+     "explanation": "单项式的次数是所有字母的指数的和，8t中只有字母t且指数为1，所以次数是1，系数是8。",
+     "id": "mxj_p1010_q2",
+     "topicId": "mxj_p1010"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "多项式2x的3次方加x的平方减7x加9的常数项是多少",
+     "question": "多项式2x的3次方加x的平方减7x加9的常数项是多少",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "9"
+      },
+      {
+       "label": "D",
+       "text": "负7"
+      }
+     ],
+     "answer": "C",
+     "explanation": "多项式中不含字母的项叫常数项，这个多项式里只有9不含字母，所以常数项是9，它的次数是3。",
+     "id": "mxj_p1010_q3",
+     "topicId": "mxj_p1010"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "多项式3x的平方减5xy加y的平方减4x加6y减9的次数是多少",
+     "question": "多项式3x的平方减5xy加y的平方减4x加6y减9的次数是多少",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "D",
+     "explanation": "多项式的次数是次数最高的项的次数，各项次数依次为2、2、2、1、1、0，最高为2，所以这个多项式的次数是2。",
+     "id": "mxj_p1010_q4",
+     "topicId": "mxj_p1010"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "单项式5xy的平方的次数是多少",
+     "question": "单项式5xy的平方的次数是多少",
+     "answer": 3,
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 2}]}",
+     "explanation": "单项式的次数是所有字母的指数的和，x的指数为1，y的指数为2，1加2等于3，所以次数是3。",
+     "id": "mxj_p1010_q5",
+     "topicId": "mxj_p1010"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "单项式πr的平方的系数是多少",
+     "question": "单项式πr的平方的系数是多少",
+     "answer": "π",
+     "explanation": "π是圆周率，是一个确定的数而不是字母，所以单项式πr的平方的系数是π，次数是2。",
+     "id": "mxj_p1010_q6",
+     "topicId": "mxj_p1010"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "standard",
+     "prompt": "指出多项式xy加八分之一πy的平方的项和次数",
+     "question": "指出多项式xy加八分之一πy的平方的项和次数",
+     "answer": "项是xy与八分之一πy的平方，次数是2",
+     "explanation": "这个多项式由xy和八分之一πy的平方两项相加而成，两项的次数都是2，所以多项式的次数是2，常数项是0。",
+     "id": "mxj_p1010_q7",
+     "topicId": "mxj_p1010"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "合并同类项：负3x的平方y的平方加5xy的3次方减7x的平方y的平方减8xy的3次方减10，并指出结果是几次几项式",
+     "question": "合并同类项：负3x的平方y的平方加5xy的3次方减7x的平方y的平方减8xy的3次方减10，并指出结果是几次几项式",
+     "answer": "负10x的平方y的平方减3xy的3次方减10，是四次三项式",
+     "explanation": "把负3与负7的x的平方y的平方合并得负10x的平方y的平方，把5与负8的xy的3次方合并得负3xy的3次方，常数项负10保留，最高次为4且共三项。",
+     "id": "mxj_p1010_q8",
+     "topicId": "mxj_p1010"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1011",
+   "page": 82,
+   "description": "整式加减先去括号再合并同类项，括号前是正号时括号内各项符号不变，括号前是负号时括号内各项都要改变符号，减法可转化为加上相反多项式。",
+   "mastery_criteria": [
+    "能按去括号法则正确去掉括号并合并同类项",
+    "能把整式减法转化为加法并算出结果"
+   ],
+   "misconceptions": [
+    "括号前是负号时只改第一项的符号",
+    "做整式减法时漏把减数各项都反号"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "去括号：负括号内x的平方加x减1，结果是",
+     "question": "去括号：负括号内x的平方加x减1，结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "负x的平方减x加1"
+      },
+      {
+       "label": "B",
+       "text": "负x的平方加x减1"
+      },
+      {
+       "label": "C",
+       "text": "x的平方减x加1"
+      },
+      {
+       "label": "D",
+       "text": "负x的平方减x减1"
+      }
+     ],
+     "answer": "A",
+     "explanation": "括号前是负号，去掉括号和它前面的负号时括号里各项符号都要改变，x的平方变负x的平方，x变负x，负1变加1。",
+     "id": "mxj_p1011_q1",
+     "topicId": "mxj_p1011"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "括号前是负号时，去掉括号后括号内各项的符号",
+     "question": "括号前是负号时，去掉括号后括号内各项的符号",
+     "options": [
+      {
+       "label": "A",
+       "text": "都不变"
+      },
+      {
+       "label": "B",
+       "text": "都要改变"
+      },
+      {
+       "label": "C",
+       "text": "只有第一项改变"
+      },
+      {
+       "label": "D",
+       "text": "只有常数项改变"
+      }
+     ],
+     "answer": "B",
+     "explanation": "去括号法则规定括号前是正号时各项符号不变，括号前是负号时括号里各项符号均要改变，这正是整式减法转化为加法的依据。",
+     "id": "mxj_p1011_q2",
+     "topicId": "mxj_p1011"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "计算括号内5x的平方减7加括号内负6x的平方减4，结果是",
+     "question": "计算括号内5x的平方减7加括号内负6x的平方减4，结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "x的平方减11"
+      },
+      {
+       "label": "B",
+       "text": "负x的平方加11"
+      },
+      {
+       "label": "C",
+       "text": "负x的平方减11"
+      },
+      {
+       "label": "D",
+       "text": "x的平方加3"
+      }
+     ],
+     "answer": "C",
+     "explanation": "括号前都是正号可直接去括号，5x的平方与负6x的平方合并得负x的平方，负7与负4合并得负11，所以结果是负x的平方减11。",
+     "id": "mxj_p1011_q3",
+     "topicId": "mxj_p1011"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "计算括号内3x的平方加5x减去括号内负6x的平方加2x减3，结果是",
+     "question": "计算括号内3x的平方加5x减去括号内负6x的平方加2x减3，结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "负3x的平方加3x减3"
+      },
+      {
+       "label": "B",
+       "text": "9x的平方加7x减3"
+      },
+      {
+       "label": "C",
+       "text": "负9x的平方加3x加3"
+      },
+      {
+       "label": "D",
+       "text": "9x的平方加3x加3"
+      }
+     ],
+     "answer": "D",
+     "explanation": "减去一个多项式等于加上它的相反多项式，得3x的平方加5x加6x的平方减2x加3，合并同类项得9x的平方加3x加3。",
+     "id": "mxj_p1011_q4",
+     "topicId": "mxj_p1011"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "计算括号内4x的3次方y的平方减7xy的4次方加x加1加上括号内负4x的3次方y的平方加7xy的4次方减x减1的值",
+     "question": "计算括号内4x的3次方y的平方减7xy的4次方加x加1加上括号内负4x的3次方y的平方加7xy的4次方减x减1的值",
+     "answer": 0,
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 1}]}",
+     "explanation": "两个多项式对应项系数互为相反数，合并后各项系数都为0，所以结果为0，这两个多项式互为相反多项式。",
+     "id": "mxj_p1011_q5",
+     "topicId": "mxj_p1011"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "去括号：负括号内y的3次方减3y的平方加y减1的结果是多少",
+     "question": "去括号：负括号内y的3次方减3y的平方加y减1的结果是多少",
+     "answer": "负y的3次方加3y的平方减y加1",
+     "explanation": "括号前是负号，括号内每一项都要变号，y的3次方变负y的3次方，负3y的平方变加3y的平方，y变负y，负1变加1。",
+     "id": "mxj_p1011_q6",
+     "topicId": "mxj_p1011"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "standard",
+     "prompt": "计算括号内5x的3次方y的平方加3x加7减去括号内负4x的3次方y的平方加7xy的4次方减x",
+     "question": "计算括号内5x的3次方y的平方加3x加7减去括号内负4x的3次方y的平方加7xy的4次方减x",
+     "answer": "9x的3次方y的平方减7xy的4次方加4x加7",
+     "explanation": "把减法转化为加上相反多项式，得5x的3次方y的平方加3x加7加4x的3次方y的平方减7xy的4次方加x，合并同类项后即得结果。",
+     "id": "mxj_p1011_q7",
+     "topicId": "mxj_p1011"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "计算括号内3x的平方y的3次方减xy的平方减去2倍括号内x的平方y的3次方加6xy的平方再加上括号内负4x的平方y的3次方加2xy的平方",
+     "question": "计算括号内3x的平方y的3次方减xy的平方减去2倍括号内x的平方y的3次方加6xy的平方再加上括号内负4x的平方y的3次方加2xy的平方",
+     "answer": "负3x的平方y的3次方减11xy的平方",
+     "explanation": "先算2倍括号内各项得2x的平方y的3次方加12xy的平方，再去括号合并同类项，x的平方y的3次方的系数3减2减4得负3，xy的平方的系数负1减12加2得负11。",
+     "id": "mxj_p1011_q8",
+     "topicId": "mxj_p1011"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1012",
+   "page": 96,
+   "description": "含有未知数的等式叫方程，只含一个未知数且未知数次数为1的方程叫一元一次方程，使方程左右两边相等的未知数的值叫方程的解。",
+   "mastery_criteria": [
+    "能找出实际问题中的等量关系并列出方程",
+    "能检验一个数是不是给定方程的解"
+   ],
+   "misconceptions": [
+    "把不含未知数的等式或含不等号的式子当作方程",
+    "把方程的解代入时只算一边就下结论"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "下列各式中，属于方程的是",
+     "question": "下列各式中，属于方程的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x加1等于5"
+      },
+      {
+       "label": "B",
+       "text": "2x加1"
+      },
+      {
+       "label": "C",
+       "text": "2x加1大于5"
+      },
+      {
+       "label": "D",
+       "text": "x加3"
+      }
+     ],
+     "answer": "A",
+     "explanation": "含有未知数的等式叫方程，2x加1等于5既有未知数又是等式；2x加1与x加3只是代数式，2x加1大于5含不等号不是等式。",
+     "id": "mxj_p1012_q1",
+     "topicId": "mxj_p1012"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "一个方程是一元一次方程，必须满足的条件是",
+     "question": "一个方程是一元一次方程，必须满足的条件是",
+     "options": [
+      {
+       "label": "A",
+       "text": "含有两个未知数"
+      },
+      {
+       "label": "B",
+       "text": "只含一个未知数且未知数的次数是1"
+      },
+      {
+       "label": "C",
+       "text": "未知数的次数是2"
+      },
+      {
+       "label": "D",
+       "text": "不含未知数"
+      }
+     ],
+     "answer": "B",
+     "explanation": "一元一次方程要求只含有一个未知数并且未知数的次数是1，且两边都是整式，所以只有含一个未知数且次数为1才符合。",
+     "id": "mxj_p1012_q2",
+     "topicId": "mxj_p1012"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "下列各数中，是方程2x加70等于94的解的是",
+     "question": "下列各数中，是方程2x加70等于94的解的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "10"
+      },
+      {
+       "label": "B",
+       "text": "13"
+      },
+      {
+       "label": "C",
+       "text": "12"
+      },
+      {
+       "label": "D",
+       "text": "15"
+      }
+     ],
+     "answer": "C",
+     "explanation": "把各数逐一代入检验，x取12时左边2乘12加70等于94，与右边相等，其余各数代入后左右两边都不相等，所以12是方程的解。",
+     "id": "mxj_p1012_q3",
+     "topicId": "mxj_p1012"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "某篮球队参加14场比赛，胜一场得2分、输一场得1分，共得26分。若设胜了x场，则输的场数可以表示为",
+     "question": "某篮球队参加14场比赛，胜一场得2分、输一场得1分，共得26分。若设胜了x场，则输的场数可以表示为",
+     "options": [
+      {
+       "label": "A",
+       "text": "x"
+      },
+      {
+       "label": "B",
+       "text": "14加x"
+      },
+      {
+       "label": "C",
+       "text": "26减x"
+      },
+      {
+       "label": "D",
+       "text": "14减x"
+      }
+     ],
+     "answer": "D",
+     "explanation": "胜的场数与输的场数之和等于总场数14，已知胜了x场，所以输的场数为14减x，这体现了和差关系的等量关系。",
+     "id": "mxj_p1012_q4",
+     "topicId": "mxj_p1012"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "估计方程4x加1等于61的解，未知数x的值是多少",
+     "question": "估计方程4x加1等于61的解，未知数x的值是多少",
+     "answer": 15,
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 61}, {\"type\": \"num\", \"value\": 1}]}, {\"type\": \"num\", \"value\": 4}]}",
+     "explanation": "由4x加1等于61得4x等于60，两边都除以4得x等于15，代入检验左边4乘15加1等于61，与右边相等。",
+     "id": "mxj_p1012_q5",
+     "topicId": "mxj_p1012"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "排球场的长比宽多9米，周长是54米，设宽为x米，可列出的方程是什么",
+     "question": "排球场的长比宽多9米，周长是54米，设宽为x米，可列出的方程是什么",
+     "answer": "2括号内x加x加9等于54",
+     "explanation": "宽为x米则长为x加9米，长方形的周长等于长与宽的和的2倍，所以可列方程2乘括号内x加x加9等于54。",
+     "id": "mxj_p1012_q6",
+     "topicId": "mxj_p1012"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "standard",
+     "prompt": "鸡兔同笼，共有35个头、94只脚，设兔有x只，请列出一元一次方程",
+     "question": "鸡兔同笼，共有35个头、94只脚，设兔有x只，请列出一元一次方程",
+     "answer": "4x加2括号内35减x等于94",
+     "explanation": "兔有x只则鸡有35减x只，每只兔4只脚、每只鸡2只脚，两种脚数之和为94，所以可列方程4x加2乘括号内35减x等于94。",
+     "id": "mxj_p1012_q7",
+     "topicId": "mxj_p1012"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "检验x取330是不是方程2.5x加318等于1068的解，并说明理由",
+     "question": "检验x取330是不是方程2.5x加318等于1068的解，并说明理由",
+     "answer": "不是，因为左边等于1143，与右边1068不相等",
+     "explanation": "把x用330代入左边，2.5乘330等于825，825加318等于1143，右边是1068，左边不等于右边，所以x等于330不是方程的解。",
+     "id": "mxj_p1012_q8",
+     "topicId": "mxj_p1012"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1013",
+   "page": 100,
+   "description": "等式的基本性质1是两边都加上或减去同一个数或整式等式仍相等，性质2是两边都乘或除以同一个不为0的数等式仍相等，移项的依据就是性质1。",
+   "mastery_criteria": [
+    "能说出等式两条基本性质并说明变形依据",
+    "能判断等式变形是否正确并求出简单方程的解"
+   ],
+   "misconceptions": [
+    "两边都除以同一个数时忽略这个数不能为0",
+    "移项时只移动项而不改变符号"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "等式两边都乘同一个数，等式两边仍然相等，这一性质是",
+     "question": "等式两边都乘同一个数，等式两边仍然相等，这一性质是",
+     "options": [
+      {
+       "label": "A",
+       "text": "等式的基本性质2"
+      },
+      {
+       "label": "B",
+       "text": "等式的基本性质1"
+      },
+      {
+       "label": "C",
+       "text": "移项法则"
+      },
+      {
+       "label": "D",
+       "text": "合并同类项法则"
+      }
+     ],
+     "answer": "A",
+     "explanation": "等式的基本性质2指等式两边都乘或除以同一个不为0的数，等式两边仍然相等，因此两边都乘同一个数依据的是性质2。",
+     "id": "mxj_p1013_q1",
+     "topicId": "mxj_p1013"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "如果x等于y加5，那么x加2等于",
+     "question": "如果x等于y加5，那么x加2等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "y加5"
+      },
+      {
+       "label": "B",
+       "text": "y加7"
+      },
+      {
+       "label": "C",
+       "text": "y加3"
+      },
+      {
+       "label": "D",
+       "text": "2y加5"
+      }
+     ],
+     "answer": "B",
+     "explanation": "由等式的基本性质1，等式两边都加上2得x加2等于y加5加2，即y加7，等号右边要合并同类项。",
+     "id": "mxj_p1013_q2",
+     "topicId": "mxj_p1013"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "如果负二分之一x等于三分之一y，那么3x等于",
+     "question": "如果负二分之一x等于三分之一y，那么3x等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "2y"
+      },
+      {
+       "label": "B",
+       "text": "负6y"
+      },
+      {
+       "label": "C",
+       "text": "负2y"
+      },
+      {
+       "label": "D",
+       "text": "6y"
+      }
+     ],
+     "answer": "C",
+     "explanation": "由等式的基本性质2，两边都乘负6，左边负二分之一x乘负6得3x，右边三分之一y乘负6得负2y，所以3x等于负2y。",
+     "id": "mxj_p1013_q3",
+     "topicId": "mxj_p1013"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "下列等式变形中正确的是",
+     "question": "下列等式变形中正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "由2x减3y等于7得2x等于7减3y"
+      },
+      {
+       "label": "B",
+       "text": "由三分之x等于2得x等于三分之二"
+      },
+      {
+       "label": "C",
+       "text": "由负三分之一x等于6得x等于负2"
+      },
+      {
+       "label": "D",
+       "text": "由2x减3y等于7得2x等于7加3y"
+      }
+     ],
+     "answer": "D",
+     "explanation": "由2x减3y等于7，两边都加上3y得2x等于7加3y，所以第四项正确；第一项移项没有变号，第三项两边除以负三分之一应得负18。",
+     "id": "mxj_p1013_q4",
+     "topicId": "mxj_p1013"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "利用等式的基本性质解方程7x等于6x减5，未知数x的值是多少",
+     "question": "利用等式的基本性质解方程7x等于6x减5，未知数x的值是多少",
+     "answer": -5,
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 0}, {\"type\": \"num\", \"value\": 5}]}",
+     "explanation": "两边都减去6x得7x减6x等于负5，合并同类项得x等于负5，这相当于把6x改变符号后从右边移到左边。",
+     "id": "mxj_p1013_q5",
+     "topicId": "mxj_p1013"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "standard",
+     "prompt": "解方程2x加80等于110，未知数x的值是多少",
+     "question": "解方程2x加80等于110，未知数x的值是多少",
+     "answer": 15,
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 110}, {\"type\": \"num\", \"value\": 80}]}, {\"type\": \"num\", \"value\": 2}]}",
+     "explanation": "两边都减去80得2x等于30，两边都除以2得x等于15，代入检验左边2乘15加80等于110，与右边相等。",
+     "id": "mxj_p1013_q6",
+     "topicId": "mxj_p1013"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "把方程中的某一项改变符号后从等式的一边移到另一边，这种变形叫作移项，移项时必须注意什么",
+     "question": "把方程中的某一项改变符号后从等式的一边移到另一边，这种变形叫作移项，移项时必须注意什么",
+     "answer": "移项要变号",
+     "explanation": "移项的依据是等式的基本性质1，相当于在两边都加上或减去同一个项，所以被移动的项必须改变符号，否则等式不再成立。",
+     "id": "mxj_p1013_q7",
+     "topicId": "mxj_p1013"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "解方程二分之五x等于三分之四x减7，并写出每一步变形的依据",
+     "question": "解方程二分之五x等于三分之四x减7，并写出每一步变形的依据",
+     "answer": "x等于负6",
+     "explanation": "两边都乘6去分母得15x等于8x减42，移项得15x减8x等于负42，合并同类项得7x等于负42，两边都除以7得x等于负6。",
+     "id": "mxj_p1013_q8",
+     "topicId": "mxj_p1013"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1014",
+   "page": 107,
+   "description": "解一元一次方程的一般步骤是去分母、去括号、移项、合并同类项、把未知数的系数化为1，最终把方程化成x等于a的形式，每一步都依据等式的基本性质。",
+   "mastery_criteria": [
+    "能按去分母、去括号、移项、合并同类项、系数化为1的顺序解方程",
+    "能在去分母时把每一项都乘各分母的最小公倍数"
+   ],
+   "misconceptions": [
+    "去分母时漏乘不含分母的项",
+    "去括号时括号前的数只乘第一项"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "解含分母的一元一次方程时，一般最先进行的一步是",
+     "question": "解含分母的一元一次方程时，一般最先进行的一步是",
+     "options": [
+      {
+       "label": "A",
+       "text": "去分母"
+      },
+      {
+       "label": "B",
+       "text": "合并同类项"
+      },
+      {
+       "label": "C",
+       "text": "移项"
+      },
+      {
+       "label": "D",
+       "text": "系数化为1"
+      }
+     ],
+     "answer": "A",
+     "explanation": "教材总结的解方程步骤依次为去分母、去括号、移项、合并同类项、两边都除以未知数的系数，所以最先进行的是去分母。",
+     "id": "mxj_p1014_q1",
+     "topicId": "mxj_p1014"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "解方程4x加3等于2x减7时，移项后得到的方程是",
+     "question": "解方程4x加3等于2x减7时，移项后得到的方程是",
+     "options": [
+      {
+       "label": "A",
+       "text": "4x加2x等于负7减3"
+      },
+      {
+       "label": "B",
+       "text": "4x减2x等于负7减3"
+      },
+      {
+       "label": "C",
+       "text": "4x减2x等于7减3"
+      },
+      {
+       "label": "D",
+       "text": "4x加2x等于7加3"
+      }
+     ],
+     "answer": "B",
+     "explanation": "把右边的2x改变符号移到左边，把左边的3改变符号移到右边，得4x减2x等于负7减3，移项一定要变号。",
+     "id": "mxj_p1014_q2",
+     "topicId": "mxj_p1014"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "方程3倍括号内2x减1等于3x加1的解是",
+     "question": "方程3倍括号内2x减1等于3x加1的解是",
+     "options": [
+      {
+       "label": "A",
+       "text": "x等于1"
+      },
+      {
+       "label": "B",
+       "text": "x等于2"
+      },
+      {
+       "label": "C",
+       "text": "x等于三分之四"
+      },
+      {
+       "label": "D",
+       "text": "x等于四分之三"
+      }
+     ],
+     "answer": "C",
+     "explanation": "去括号得6x减3等于3x加1，移项得6x减3x等于1加3，合并同类项得3x等于4，两边都除以3得x等于三分之四。",
+     "id": "mxj_p1014_q3",
+     "topicId": "mxj_p1014"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "方程四分之x加2减去六分之2x减3等于1的解是",
+     "question": "方程四分之x加2减去六分之2x减3等于1的解是",
+     "options": [
+      {
+       "label": "A",
+       "text": "x等于1"
+      },
+      {
+       "label": "B",
+       "text": "x等于2"
+      },
+      {
+       "label": "C",
+       "text": "x等于3"
+      },
+      {
+       "label": "D",
+       "text": "x等于0"
+      }
+     ],
+     "answer": "D",
+     "explanation": "两边都乘12去分母得3倍括号内x加2减2倍括号内2x减3等于12，去括号得3x加6减4x加6等于12，化简得负x等于0，所以x等于0。",
+     "id": "mxj_p1014_q4",
+     "topicId": "mxj_p1014"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "解方程9x加2等于6x减4，未知数x的值是多少",
+     "question": "解方程9x加2等于6x减4，未知数x的值是多少",
+     "answer": -2,
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": -6}, {\"type\": \"num\", \"value\": 3}]}",
+     "explanation": "移项得9x减6x等于负4减2，合并同类项得3x等于负6，两边都除以3得x等于负2。",
+     "id": "mxj_p1014_q5",
+     "topicId": "mxj_p1014"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "standard",
+     "prompt": "解方程0.5x等于0.3x减2，未知数x的值是多少",
+     "question": "解方程0.5x等于0.3x减2，未知数x的值是多少",
+     "answer": -10,
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": -2}, {\"type\": \"num\", \"value\": 0.2}]}",
+     "explanation": "移项得0.5x减0.3x等于负2，合并同类项得0.2x等于负2，两边都除以0.2得x等于负10。",
+     "id": "mxj_p1014_q6",
+     "topicId": "mxj_p1014"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "解方程2x加1等于7，未知数x的值是多少",
+     "question": "解方程2x加1等于7，未知数x的值是多少",
+     "answer": "3",
+     "explanation": "移项得2x等于6，两边都除以2得x等于3，把x等于3代入原方程左边等于7，与右边相等，说明解正确。",
+     "id": "mxj_p1014_q7",
+     "topicId": "mxj_p1014"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "解方程0.2倍括号内x减2减去0.1倍括号内3x加4等于0.3倍括号内x加3",
+     "question": "解方程0.2倍括号内x减2减去0.1倍括号内3x加4等于0.3倍括号内x加3",
+     "answer": "x等于负四分之十七",
+     "explanation": "去括号得0.2x减0.4减0.3x减0.4等于0.3x加0.9，移项合并同类项得负0.4x等于1.7，两边都除以负0.4得x等于负四分之十七。",
+     "id": "mxj_p1014_q8",
+     "topicId": "mxj_p1014"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1015",
+   "page": 111,
+   "description": "一元一次方程是刻画实际问题的重要模型，解题时先分析题意找出等量关系，设未知数列方程求解，再检验解是否符合实际意义。",
+   "mastery_criteria": [
+    "能找出行程、工程、销售等问题中的等量关系并列方程",
+    "能检验方程的解是否符合问题的实际意义"
+   ],
+   "misconceptions": [
+    "把顺水速度与逆水速度的关系写反",
+    "求出方程的解后不检验是否符合实际意义"
+   ],
+   "type": "modeling",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "轮船顺水航行的速度等于轮船在静水中的航行速度加上",
+     "question": "轮船顺水航行的速度等于轮船在静水中的航行速度加上",
+     "options": [
+      {
+       "label": "A",
+       "text": "水流速度"
+      },
+      {
+       "label": "B",
+       "text": "逆水航行的速度"
+      },
+      {
+       "label": "C",
+       "text": "航行的路程"
+      },
+      {
+       "label": "D",
+       "text": "航行的时间"
+      }
+     ],
+     "answer": "A",
+     "explanation": "水流推动船前进，所以顺水速度等于静水速度加水速；逆水时水流阻碍前进，逆水速度等于静水速度减水速。",
+     "id": "mxj_p1015_q1",
+     "topicId": "mxj_p1015"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "工程问题中，工作量等于工作效率乘以",
+     "question": "工程问题中，工作量等于工作效率乘以",
+     "options": [
+      {
+       "label": "A",
+       "text": "工作人数"
+      },
+      {
+       "label": "B",
+       "text": "工作时间"
+      },
+      {
+       "label": "C",
+       "text": "工作总量"
+      },
+      {
+       "label": "D",
+       "text": "工作速度"
+      }
+     ],
+     "answer": "B",
+     "explanation": "教材指出工作量等于工作效率乘工作时间，若把总工作量看作1，则甲的工作效率就是甲单独完成所需天数的倒数。",
+     "id": "mxj_p1015_q2",
+     "topicId": "mxj_p1015"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "一艘轮船在甲、乙两码头之间航行，顺水需4小时、逆水需5小时，水流速度为2千米每小时。设静水速度为x千米每小时，可列方程",
+     "question": "一艘轮船在甲、乙两码头之间航行，顺水需4小时、逆水需5小时，水流速度为2千米每小时。设静水速度为x千米每小时，可列方程",
+     "options": [
+      {
+       "label": "A",
+       "text": "4x等于5x"
+      },
+      {
+       "label": "B",
+       "text": "4倍括号内x减2等于5倍括号内x加2"
+      },
+      {
+       "label": "C",
+       "text": "4倍括号内x加2等于5倍括号内x减2"
+      },
+      {
+       "label": "D",
+       "text": "5倍括号内x加2等于4倍括号内x减2"
+      }
+     ],
+     "answer": "C",
+     "explanation": "顺水速度为x加2，逆水速度为x减2，两码头间路程相等，所以4乘括号内x加2等于5乘括号内x减2，解得x等于18。",
+     "id": "mxj_p1015_q3",
+     "topicId": "mxj_p1015"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "甲班45人、乙班39人，从甲班抽调x人，从乙班抽调x减1人，抽调后甲班剩余人数是乙班剩余人数的2倍，可列方程",
+     "question": "甲班45人、乙班39人，从甲班抽调x人，从乙班抽调x减1人，抽调后甲班剩余人数是乙班剩余人数的2倍，可列方程",
+     "options": [
+      {
+       "label": "A",
+       "text": "45减x等于2倍括号内39减x"
+      },
+      {
+       "label": "B",
+       "text": "45加x等于2倍括号内39加x减1"
+      },
+      {
+       "label": "C",
+       "text": "45减x等于2倍括号内39加x减1"
+      },
+      {
+       "label": "D",
+       "text": "45减x等于2倍括号内39减括号内x减1"
+      }
+     ],
+     "answer": "D",
+     "explanation": "甲班剩余45减x人，乙班剩余39减括号内x减1人，由甲班剩余是乙班剩余的2倍得45减x等于2倍括号内39减括号内x减1，解得x等于35。",
+     "id": "mxj_p1015_q4",
+     "topicId": "mxj_p1015"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "足球比赛胜一场得3分、平一场得1分、负一场得0分，某队共踢14场，负5场，共得19分，这个队胜了多少场",
+     "question": "足球比赛胜一场得3分、平一场得1分、负一场得0分，某队共踢14场，负5场，共得19分，这个队胜了多少场",
+     "answer": 5,
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 2}]}",
+     "explanation": "设胜x场，则平14减5减x即9减x场，由3x加9减x等于19得2x等于10，所以x等于5，即该队胜了5场。",
+     "id": "mxj_p1015_q5",
+     "topicId": "mxj_p1015"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "standard",
+     "prompt": "计划在公路一侧植树，两端各栽1棵且间隔相等。每隔5米栽1棵则树苗缺21棵，每隔5.5米栽1棵则正好用完，原有树苗多少棵",
+     "question": "计划在公路一侧植树，两端各栽1棵且间隔相等。每隔5米栽1棵则树苗缺21棵，每隔5.5米栽1棵则正好用完，原有树苗多少棵",
+     "answer": 211,
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 105.5}, {\"type\": \"num\", \"value\": 0.5}]}",
+     "explanation": "设原有树苗x棵，第一种方案种x加21棵，路长为5乘括号内x加20，第二种方案路长为5.5乘括号内x减1，由路长相等解得x等于211。",
+     "id": "mxj_p1015_q6",
+     "topicId": "mxj_p1015"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "刺绣一件作品，甲单独绣需15天、乙单独绣需12天，甲先绣1天、乙接着绣4天后两人合绣x天完成，列出方程1/15乘括号内x加1加1/12乘括号内x加4等于1，则x等于多少",
+     "question": "刺绣一件作品，甲单独绣需15天、乙单独绣需12天，甲先绣1天、乙接着绣4天后两人合绣x天完成，列出方程1/15乘括号内x加1加1/12乘括号内x加4等于1，则x等于多少",
+     "answer": "4",
+     "explanation": "两边都乘60去分母得4倍括号内x加1加5倍括号内x加4等于60，去括号合并同类项得9x加24等于60，解得x等于4。",
+     "id": "mxj_p1015_q7",
+     "topicId": "mxj_p1015"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "某商场把一种书包按进价提高百分之五十标价，再按八折出售，每卖出一个可盈利8元，求这种书包的进价",
+     "question": "某商场把一种书包按进价提高百分之五十标价，再按八折出售，每卖出一个可盈利8元，求这种书包的进价",
+     "answer": "40元",
+     "explanation": "设进价为x元，标价为1.5x元，按八折出售的售价为1.2x元，由售价减进价等于8得0.2x等于8，解得x等于40，所以进价是40元。",
+     "id": "mxj_p1015_q8",
+     "topicId": "mxj_p1015"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1016",
+   "page": 117,
+   "description": "含有两个未知数并且含未知数的项的次数都是1的方程叫二元一次方程，两个这样的方程联立成二元一次方程组，同时满足两个方程的未知数的值叫方程组的解。",
+   "mastery_criteria": [
+    "能判断二元一次方程与二元一次方程组并列出方程组",
+    "能检验一组值是不是方程组的解"
+   ],
+   "misconceptions": [
+    "把含未知数项次数为2的方程当作二元一次方程",
+    "认为二元一次方程只有一个解"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "下列方程中，属于二元一次方程的是",
+     "question": "下列方程中，属于二元一次方程的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "x加y等于35"
+      },
+      {
+       "label": "B",
+       "text": "x的平方加y等于1"
+      },
+      {
+       "label": "C",
+       "text": "xy等于6"
+      },
+      {
+       "label": "D",
+       "text": "x分之1加y等于2"
+      }
+     ],
+     "answer": "A",
+     "explanation": "含有两个未知数并且含未知数的项的次数都是1的整式方程叫二元一次方程，x加y等于35符合，其余各项次数或式子类型都不符合。",
+     "id": "mxj_p1016_q1",
+     "topicId": "mxj_p1016"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "如果不考虑实际意义，二元一次方程x加y等于35的解有多少组",
+     "question": "如果不考虑实际意义，二元一次方程x加y等于35的解有多少组",
+     "options": [
+      {
+       "label": "A",
+       "text": "只有1组"
+      },
+      {
+       "label": "B",
+       "text": "有无数组"
+      },
+      {
+       "label": "C",
+       "text": "只有2组"
+      },
+      {
+       "label": "D",
+       "text": "恰好35组"
+      }
+     ],
+     "answer": "B",
+     "explanation": "给x任意取一个有理数，都能求出对应的y值使等式成立，例如x取1时y为34，x取负1时y为36，所以这样的解有无数组。",
+     "id": "mxj_p1016_q2",
+     "topicId": "mxj_p1016"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "鸡兔同笼问题中，方程组x加y等于35与4x加2y等于94的解是",
+     "question": "鸡兔同笼问题中，方程组x加y等于35与4x加2y等于94的解是",
+     "options": [
+      {
+       "label": "A",
+       "text": "x等于10，y等于25"
+      },
+      {
+       "label": "B",
+       "text": "x等于15，y等于20"
+      },
+      {
+       "label": "C",
+       "text": "x等于12，y等于23"
+      },
+      {
+       "label": "D",
+       "text": "x等于11，y等于24"
+      }
+     ],
+     "answer": "C",
+     "explanation": "把x等于12、y等于23代入检验，12加23等于35，4乘12加2乘23等于48加46等于94，两个方程都成立，所以这是方程组的解。",
+     "id": "mxj_p1016_q3",
+     "topicId": "mxj_p1016"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "把x等于3、y等于4代入方程3x加2y等于17的左边，得到的值是",
+     "question": "把x等于3、y等于4代入方程3x加2y等于17的左边，得到的值是",
+     "options": [
+      {
+       "label": "A",
+       "text": "15"
+      },
+      {
+       "label": "B",
+       "text": "21"
+      },
+      {
+       "label": "C",
+       "text": "9"
+      },
+      {
+       "label": "D",
+       "text": "17"
+      }
+     ],
+     "answer": "D",
+     "explanation": "左边3乘3加2乘4等于9加8等于17，与右边17相等，说明x等于3、y等于4是这个方程的一个解。",
+     "id": "mxj_p1016_q4",
+     "topicId": "mxj_p1016"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "在二元一次方程x加y等于10中，当x取3时，y的值是多少",
+     "question": "在二元一次方程x加y等于10中，当x取3时，y的值是多少",
+     "answer": 7,
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 3}]}",
+     "explanation": "把x用3代入方程得3加y等于10，两边都减去3得y等于7，所以当x取3时y的值是7。",
+     "id": "mxj_p1016_q5",
+     "topicId": "mxj_p1016"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "小玲买3本练习本和2支圆珠笔共花17元，买练习本比买圆珠笔多花1元。设练习本单价x元、圆珠笔单价y元，可列出的方程组是什么",
+     "question": "小玲买3本练习本和2支圆珠笔共花17元，买练习本比买圆珠笔多花1元。设练习本单价x元、圆珠笔单价y元，可列出的方程组是什么",
+     "answer": "3x加2y等于17，3x减2y等于1",
+     "explanation": "练习本花费3x元、圆珠笔花费2y元，两者之和为17；练习本花费比圆珠笔花费多1元，即3x减2y等于1，两式联立即为所求方程组。",
+     "id": "mxj_p1016_q6",
+     "topicId": "mxj_p1016"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "standard",
+     "prompt": "判断x等于2、y等于1是不是方程组3x减4y等于2与4x减3y等于6的公共解",
+     "question": "判断x等于2、y等于1是不是方程组3x减4y等于2与4x减3y等于6的公共解",
+     "answer": "不是，第二个方程不成立",
+     "explanation": "代入第一个方程左边3乘2减4乘1等于2，成立；代入第二个方程左边4乘2减3乘1等于5，与右边6不相等，所以不是公共解。",
+     "id": "mxj_p1016_q7",
+     "topicId": "mxj_p1016"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "已知x等于3、y等于2是方程组ax加by等于13与括号内a加b乘x减ay等于9的解，求a与b的值",
+     "question": "已知x等于3、y等于2是方程组ax加by等于13与括号内a加b乘x减ay等于9的解，求a与b的值",
+     "answer": "a等于3，b等于2",
+     "explanation": "代入得3a加2b等于13与3倍括号内a加b减2a等于9即a加3b等于9，由第二式得a等于9减3b，代入第一式得27减7b等于13，解得b等于2，a等于3。",
+     "id": "mxj_p1016_q8",
+     "topicId": "mxj_p1016"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1017",
+   "page": 120,
+   "description": "解二元一次方程组的关键是消元，代入消元法把一个未知数用含另一个未知数的代数式表示后代入，加减消元法把两式相加或相减直接消去一个未知数。",
+   "mastery_criteria": [
+    "能用代入消元法解二元一次方程组",
+    "能用加减消元法解二元一次方程组"
+   ],
+   "misconceptions": [
+    "代入时只代入一个方程后又回到原方程",
+    "两式相减时右边常数漏减出现符号错误"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "解二元一次方程组的基本思路是",
+     "question": "解二元一次方程组的基本思路是",
+     "options": [
+      {
+       "label": "A",
+       "text": "消元"
+      },
+      {
+       "label": "B",
+       "text": "直接代入求值"
+      },
+      {
+       "label": "C",
+       "text": "两边都平方"
+      },
+      {
+       "label": "D",
+       "text": "配方"
+      }
+     ],
+     "answer": "A",
+     "explanation": "解二元一次方程组的基本思路是消去一个未知数即消元，得到一个一元一次方程，求出解后再回代求另一个未知数。",
+     "id": "mxj_p1017_q1",
+     "topicId": "mxj_p1017"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "用代入消元法解方程组2x减4y等于0与5x减7y等于3时，由第一个方程可得x等于",
+     "question": "用代入消元法解方程组2x减4y等于0与5x减7y等于3时，由第一个方程可得x等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "4y"
+      },
+      {
+       "label": "B",
+       "text": "2y"
+      },
+      {
+       "label": "C",
+       "text": "二分之y"
+      },
+      {
+       "label": "D",
+       "text": "4y减2"
+      }
+     ],
+     "answer": "B",
+     "explanation": "由2x减4y等于0移项得2x等于4y，两边都除以2得x等于2y，把它代入第二个方程即可消去x。",
+     "id": "mxj_p1017_q2",
+     "topicId": "mxj_p1017"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "方程组7x加3y等于1与2x减3y等于8中，两式相加后得到的方程是",
+     "question": "方程组7x加3y等于1与2x减3y等于8中，两式相加后得到的方程是",
+     "options": [
+      {
+       "label": "A",
+       "text": "5x等于9"
+      },
+      {
+       "label": "B",
+       "text": "9x等于负9"
+      },
+      {
+       "label": "C",
+       "text": "9x等于9"
+      },
+      {
+       "label": "D",
+       "text": "5x等于7"
+      }
+     ],
+     "answer": "C",
+     "explanation": "两个方程中y的系数互为相反数，两式左右两边分别相加可消去y，7x加2x得9x，1加8得9，所以得9x等于9。",
+     "id": "mxj_p1017_q3",
+     "topicId": "mxj_p1017"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "方程组2x加3y等于负1与2x减5y等于7中，两式相减后得到的方程是",
+     "question": "方程组2x加3y等于负1与2x减5y等于7中，两式相减后得到的方程是",
+     "options": [
+      {
+       "label": "A",
+       "text": "8y等于6"
+      },
+      {
+       "label": "B",
+       "text": "负8y等于负8"
+      },
+      {
+       "label": "C",
+       "text": "8y等于8"
+      },
+      {
+       "label": "D",
+       "text": "8y等于负8"
+      }
+     ],
+     "answer": "D",
+     "explanation": "两式中x的系数相同，把第一个方程减去第二个方程，左边得3y减负5y即8y，右边得负1减7即负8，所以得8y等于负8。",
+     "id": "mxj_p1017_q4",
+     "topicId": "mxj_p1017"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "解方程组x加y等于35与4x加2y等于94，x的值是多少",
+     "question": "解方程组x加y等于35与4x加2y等于94，x的值是多少",
+     "answer": 12,
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 24}, {\"type\": \"num\", \"value\": 2}]}",
+     "explanation": "由第一个方程得y等于35减x，代入第二个方程得4x加70减2x等于94，即2x等于24，所以x等于12。",
+     "id": "mxj_p1017_q5",
+     "topicId": "mxj_p1017"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "standard",
+     "prompt": "解方程组2x减3y等于负1与3x加2y等于18，y的值是多少",
+     "question": "解方程组2x减3y等于负1与3x加2y等于18，y的值是多少",
+     "answer": 3,
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 39}, {\"type\": \"num\", \"value\": 13}]}",
+     "explanation": "由第一个方程得x等于二分之三y减二分之一，代入第二个方程得二分之九y减二分之三加2y等于18，解得y等于3，回代得x等于4。",
+     "id": "mxj_p1017_q6",
+     "topicId": "mxj_p1017"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "用加减消元法解方程组时，如果两个方程中同一个未知数的系数相同，应把两式怎样处理才能消去这个未知数",
+     "question": "用加减消元法解方程组时，如果两个方程中同一个未知数的系数相同，应把两式怎样处理才能消去这个未知数",
+     "answer": "相减",
+     "explanation": "同一个未知数的系数相同时两式相减可消去它，系数互为相反数时两式相加可消去它，这是加减消元法的基本做法。",
+     "id": "mxj_p1017_q7",
+     "topicId": "mxj_p1017"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "用加减消元法解方程组2x加3y等于负11与6x减5y等于9",
+     "question": "用加减消元法解方程组2x加3y等于负11与6x减5y等于9",
+     "answer": "x等于负1，y等于负3",
+     "explanation": "把第一个方程两边都乘3得6x加9y等于负33，与第二个方程相减得14y等于负42，所以y等于负3，再代入第一个方程得x等于负1。",
+     "id": "mxj_p1017_q8",
+     "topicId": "mxj_p1017"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1018",
+   "page": 128,
+   "description": "用二元一次方程组解决实际问题时，要分析题意找出两个等量关系，设两个未知数列出方程组，求解后检验结果是否符合实际意义。",
+   "mastery_criteria": [
+    "能从实际问题中找出两个等量关系并列出方程组",
+    "能根据方程组的结果回答实际问题的所求量"
+   ],
+   "misconceptions": [
+    "只找到一个等量关系就列方程组",
+    "求出解后不检验是否符合实际意义"
+   ],
+   "type": "modeling",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "用二元一次方程组解决实际问题时，最关键的一步是",
+     "question": "用二元一次方程组解决实际问题时，最关键的一步是",
+     "options": [
+      {
+       "label": "A",
+       "text": "找出两个等量关系"
+      },
+      {
+       "label": "B",
+       "text": "只找出一个等量关系"
+      },
+      {
+       "label": "C",
+       "text": "先解方程再读题"
+      },
+      {
+       "label": "D",
+       "text": "直接估计答案"
+      }
+     ],
+     "answer": "A",
+     "explanation": "两个未知数需要两个方程才能确定，所以要根据题意分析出两个等量关系，这直接决定所列方程组是否正确。",
+     "id": "mxj_p1018_q1",
+     "topicId": "mxj_p1018"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "某运动员在自行车路段和长跑路段共行5000米，设自行车路段长x米、长跑路段长y米，解得y等于2000，则自行车路段长",
+     "question": "某运动员在自行车路段和长跑路段共行5000米，设自行车路段长x米、长跑路段长y米，解得y等于2000，则自行车路段长",
+     "options": [
+      {
+       "label": "A",
+       "text": "2000米"
+      },
+      {
+       "label": "B",
+       "text": "3000米"
+      },
+      {
+       "label": "C",
+       "text": "5000米"
+      },
+      {
+       "label": "D",
+       "text": "1000米"
+      }
+     ],
+     "answer": "B",
+     "explanation": "两段路程之和为5000米，长跑路段为2000米，所以自行车路段为5000减2000等于3000米。",
+     "id": "mxj_p1018_q2",
+     "topicId": "mxj_p1018"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "甲、乙两种商品原价之和为100元，甲降价百分之十五、乙提价百分之十后，两种商品单价之和比原来降低了百分之五，则甲商品原价是",
+     "question": "甲、乙两种商品原价之和为100元，甲降价百分之十五、乙提价百分之十后，两种商品单价之和比原来降低了百分之五，则甲商品原价是",
+     "options": [
+      {
+       "label": "A",
+       "text": "40元"
+      },
+      {
+       "label": "B",
+       "text": "50元"
+      },
+      {
+       "label": "C",
+       "text": "60元"
+      },
+      {
+       "label": "D",
+       "text": "70元"
+      }
+     ],
+     "answer": "C",
+     "explanation": "设甲原价x元、乙原价y元，由x加y等于100与0.85x加1.1y等于95解得x等于60、y等于40，所以甲商品原价60元。",
+     "id": "mxj_p1018_q3",
+     "topicId": "mxj_p1018"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "第一次用2辆甲种车和3辆乙种车共运26吨，第二次用5辆甲种车和6辆乙种车共运56吨，每辆甲种车每次运",
+     "question": "第一次用2辆甲种车和3辆乙种车共运26吨，第二次用5辆甲种车和6辆乙种车共运56吨，每辆甲种车每次运",
+     "options": [
+      {
+       "label": "A",
+       "text": "5吨"
+      },
+      {
+       "label": "B",
+       "text": "6吨"
+      },
+      {
+       "label": "C",
+       "text": "3吨"
+      },
+      {
+       "label": "D",
+       "text": "4吨"
+      }
+     ],
+     "answer": "D",
+     "explanation": "设每辆甲种车运x吨、乙种车运y吨，由2x加3y等于26与5x加6y等于56解得x等于4、y等于6，所以每辆甲种车运4吨。",
+     "id": "mxj_p1018_q4",
+     "topicId": "mxj_p1018"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "在上一题中每辆甲种车运4吨、每辆乙种车运6吨，第三次租用3辆甲种车和5辆乙种车，可一次运完多少吨水果",
+     "question": "在上一题中每辆甲种车运4吨、每辆乙种车运6吨，第三次租用3辆甲种车和5辆乙种车，可一次运完多少吨水果",
+     "answer": 42,
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 4}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 6}]}]}",
+     "explanation": "3辆甲种车运3乘4等于12吨，5辆乙种车运5乘6等于30吨，两者相加得42吨，所以第三次可运42吨。",
+     "id": "mxj_p1018_q5",
+     "topicId": "mxj_p1018"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "standard",
+     "prompt": "三次共运水果124吨，若每吨运费为30元，该果园三次总共应付运费多少元",
+     "question": "三次共运水果124吨，若每吨运费为30元，该果园三次总共应付运费多少元",
+     "answer": 3720,
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 124}, {\"type\": \"num\", \"value\": 30}]}",
+     "explanation": "总运费等于总吨数乘每吨运费，124乘30等于3720，所以三次总共应付运费3720元。",
+     "id": "mxj_p1018_q6",
+     "topicId": "mxj_p1018"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "要熔制含银百分之三十的合金100千克，甲种合金含银百分之二十五、乙种合金含银百分之三十七点五。设取甲x千克、乙y千克，可列出的方程组是什么",
+     "question": "要熔制含银百分之三十的合金100千克，甲种合金含银百分之二十五、乙种合金含银百分之三十七点五。设取甲x千克、乙y千克，可列出的方程组是什么",
+     "answer": "x加y等于100，0.25x加0.375y等于30",
+     "explanation": "两种合金质量之和为100千克，其中所含纯银的质量之和等于100乘百分之三十即30千克，由此得到两个方程组成的方程组。",
+     "id": "mxj_p1018_q7",
+     "topicId": "mxj_p1018"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "对于多项式kx加b（k、b为常数），当x取1时值为负1，当x取负1时值为3，求k与b的值",
+     "question": "对于多项式kx加b（k、b为常数），当x取1时值为负1，当x取负1时值为3，求k与b的值",
+     "answer": "k等于负2，b等于1",
+     "explanation": "把两组值分别代入得k加b等于负1与负k加b等于3，两式相加得2b等于2即b等于1，再代入得k等于负2，检验x取1时值为负1成立。",
+     "id": "mxj_p1018_q8",
+     "topicId": "mxj_p1018"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1019",
+   "page": 135,
+   "description": "含有三个未知数并且含未知数的项的次数都是1的方程组叫三元一次方程组，一般含三个方程，解法是先消去一个未知数化为二元一次方程组再继续消元求解。",
+   "mastery_criteria": [
+    "能判断三元一次方程组并列出简单方程组",
+    "能通过两次消元把三元一次方程组化为一元一次方程求解"
+   ],
+   "misconceptions": [
+    "消元时只对其中一个方程变形导致未知数个数不变",
+    "回代时把已求出的值代回变形后的方程而算错"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "一般地，三元一次方程组含有几个方程",
+     "question": "一般地，三元一次方程组含有几个方程",
+     "options": [
+      {
+       "label": "A",
+       "text": "三个方程"
+      },
+      {
+       "label": "B",
+       "text": "两个方程"
+      },
+      {
+       "label": "C",
+       "text": "一个方程"
+      },
+      {
+       "label": "D",
+       "text": "四个方程"
+      }
+     ],
+     "answer": "A",
+     "explanation": "教材指出三元一次方程组含有三个未知数并且含未知数的项的次数都是1，一般地含有三个方程，这样才能确定三个未知数的值。",
+     "id": "mxj_p1019_q1",
+     "topicId": "mxj_p1019"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "解三元一次方程组的基本思路是",
+     "question": "解三元一次方程组的基本思路是",
+     "options": [
+      {
+       "label": "A",
+       "text": "直接估计三个未知数的值"
+      },
+      {
+       "label": "B",
+       "text": "消元，先化为二元一次方程组再化为一元一次方程"
+      },
+      {
+       "label": "C",
+       "text": "把三个方程都平方"
+      },
+      {
+       "label": "D",
+       "text": "只解其中一个方程"
+      }
+     ],
+     "answer": "B",
+     "explanation": "解三元一次方程组与解二元一次方程组思路一致，先消去一个未知数得到二元一次方程组，再消元得到一元一次方程求解。",
+     "id": "mxj_p1019_q2",
+     "topicId": "mxj_p1019"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "方程组x加y等于7、2y加z等于6、x减z等于7中，y的值是",
+     "question": "方程组x加y等于7、2y加z等于6、x减z等于7中，y的值是",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "负6"
+      }
+     ],
+     "answer": "C",
+     "explanation": "由第一式得x等于7减y，由第二式得z等于6减2y，代入第三式得7减y减6加2y等于7，即1加y等于7，所以y等于6，此时x等于1、z等于负6。",
+     "id": "mxj_p1019_q3",
+     "topicId": "mxj_p1019"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "一个三位数，各位数字之和为12，个位数字是十位与百位数字之和的2倍，百位数字是十位数字的3倍。若设十位数字为y，则y等于",
+     "question": "一个三位数，各位数字之和为12，个位数字是十位与百位数字之和的2倍，百位数字是十位数字的3倍。若设十位数字为y，则y等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "D",
+     "explanation": "百位数字为3y，个位数字为2倍括号内y加3y即8y，由8y加y加3y等于12得12y等于12，所以y等于1，这个三位数是318。",
+     "id": "mxj_p1019_q4",
+     "topicId": "mxj_p1019"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "在方程组x加y等于7、2y加z等于6、x减z等于7中，x的值是多少",
+     "question": "在方程组x加y等于7、2y加z等于6、x减z等于7中，x的值是多少",
+     "answer": 1,
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 7}, {\"type\": \"num\", \"value\": 6}]}",
+     "explanation": "由前两式与第三式联立解得y等于6、z等于负6，再由x等于7减y得x等于1，检验x减z等于1加6等于7成立。",
+     "id": "mxj_p1019_q5",
+     "topicId": "mxj_p1019"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "standard",
+     "prompt": "解三元一次方程组x加y加2z等于3、负2x减y加z等于负3、x加2y减4z等于负5，z的值是多少",
+     "question": "解三元一次方程组x加y加2z等于3、负2x减y加z等于负3、x加2y减4z等于负5，z的值是多少",
+     "answer": 1,
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 3}]}",
+     "explanation": "把第一个方程两边都乘2后与第二个方程相加得y加5z等于3，第一个方程减第三个方程得负y加6z等于8，两式联立解得z等于1、y等于负2，再得x等于3。",
+     "id": "mxj_p1019_q6",
+     "topicId": "mxj_p1019"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "三元一次方程组的解必须同时满足几个方程",
+     "question": "三元一次方程组的解必须同时满足几个方程",
+     "answer": "三个",
+     "explanation": "三元一次方程组由三个方程组成，方程组的解是三个未知数的一组取值，必须使三个方程左右两边的值都相等。",
+     "id": "mxj_p1019_q7",
+     "topicId": "mxj_p1019"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "解三元一次方程组5x加4y加z等于0、3x加y减4z等于1、x加y加z等于负2",
+     "question": "解三元一次方程组5x加4y加z等于0、3x加y减4z等于1、x加y加z等于负2",
+     "answer": "x等于负31，y等于42，z等于负13",
+     "explanation": "用第三个方程分别消去x，与第一个方程联立得y加4z等于负10，与第二个方程联立得2y加7z等于负7，解得z等于负13、y等于42，回代得x等于负31。",
+     "id": "mxj_p1019_q8",
+     "topicId": "mxj_p1019"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1020",
+   "page": null,
+   "description": "立体图形与平面图形是两类不同的几何图形但相互联系，立体图形中某些部分是平面图形，从不同方向看立体图形可得到平面图形，表面剪开还能展开成平面图形。",
+   "mastery_criteria": [
+    "能判断一个图形是立体图形还是平面图形",
+    "能举例说明立体图形与平面图形之间的联系"
+   ],
+   "misconceptions": [
+    "认为立体图形与平面图形互不相关",
+    "把长方体从某一方向看到的形状与整体形状混为一谈"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "正方体的每个侧面都是",
+     "question": "正方体的每个侧面都是",
+     "options": [
+      {
+       "label": "A",
+       "text": "正方形"
+      },
+      {
+       "label": "B",
+       "text": "圆"
+      },
+      {
+       "label": "C",
+       "text": "三角形"
+      },
+      {
+       "label": "D",
+       "text": "梯形"
+      }
+     ],
+     "answer": "A",
+     "explanation": "正方体的六个面都是大小相同的正方形，所以正方体的每个侧面都是正方形，这说明立体图形中某些部分可以是平面图形。",
+     "id": "mxj_p1020_q1",
+     "topicId": "mxj_p1020"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "下列图形中，属于平面图形的是",
+     "question": "下列图形中，属于平面图形的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆柱"
+      },
+      {
+       "label": "B",
+       "text": "三角形"
+      },
+      {
+       "label": "C",
+       "text": "球"
+      },
+      {
+       "label": "D",
+       "text": "圆锥"
+      }
+     ],
+     "answer": "B",
+     "explanation": "各部分都在同一平面内的几何图形是平面图形，三角形落在同一平面内，而圆柱、球、圆锥都是立体图形。",
+     "id": "mxj_p1020_q2",
+     "topicId": "mxj_p1020"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "从不同方向看一个长方体，可能看到的平面图形是",
+     "question": "从不同方向看一个长方体，可能看到的平面图形是",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆"
+      },
+      {
+       "label": "B",
+       "text": "三角形"
+      },
+      {
+       "label": "C",
+       "text": "长方形或正方形"
+      },
+      {
+       "label": "D",
+       "text": "扇形"
+      }
+     ],
+     "answer": "C",
+     "explanation": "教材指出从整体看是长方体，从不同侧面看可以看到长方形或正方形，从中还可以看到点、线段，因此不会看到圆或三角形。",
+     "id": "mxj_p1020_q3",
+     "topicId": "mxj_p1020"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "把长方体纸盒的表面适当剪开铺平，得到的图形是",
+     "question": "把长方体纸盒的表面适当剪开铺平，得到的图形是",
+     "options": [
+      {
+       "label": "A",
+       "text": "立体图形"
+      },
+      {
+       "label": "B",
+       "text": "曲线"
+      },
+      {
+       "label": "C",
+       "text": "点"
+      },
+      {
+       "label": "D",
+       "text": "平面图形"
+      }
+     ],
+     "answer": "D",
+     "explanation": "有些立体图形是由一些平面图形围成的，把它们的表面适当剪开就可以展开成平面图形，所以剪开铺平得到的是平面图形。",
+     "id": "mxj_p1020_q4",
+     "topicId": "mxj_p1020"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "把一个正方体纸盒的表面适当剪开铺平，展开图中共有多少个正方形",
+     "question": "把一个正方体纸盒的表面适当剪开铺平，展开图中共有多少个正方形",
+     "answer": 6,
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}",
+     "explanation": "正方体有六个面，每个面都是正方形，展开后这六个正方形都留在同一平面内，所以展开图中共有6个正方形。",
+     "id": "mxj_p1020_q5",
+     "topicId": "mxj_p1020"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "立体图形中某些部分是平面图形，如正方体的每个侧面都是正方形，这说明立体图形与平面图形之间是什么关系",
+     "question": "立体图形中某些部分是平面图形，如正方体的每个侧面都是正方形，这说明立体图形与平面图形之间是什么关系",
+     "answer": "相互联系",
+     "explanation": "教材明确指出立体图形与平面图形是两类不同的几何图形，但它们是相互联系的，立体图形中某些部分就是平面图形。",
+     "id": "mxj_p1020_q6",
+     "topicId": "mxj_p1020"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "standard",
+     "prompt": "以长方体为例，说明从不同角度看立体图形会得到怎样的平面图形",
+     "question": "以长方体为例，说明从不同角度看立体图形会得到怎样的平面图形",
+     "answer": "从整体看是长方体，从不同侧面看可以看到长方形或正方形，还可以看到点、线段",
+     "explanation": "观察同一个长方体，站在不同位置看到的形状不同，教材据此说明从不同角度看立体图形往往会得到不同形状的平面图形。",
+     "id": "mxj_p1020_q7",
+     "topicId": "mxj_p1020"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "请从三个角度说明立体图形与平面图形之间的联系",
+     "question": "请从三个角度说明立体图形与平面图形之间的联系",
+     "answer": "立体图形中某些部分是平面图形；从不同方向看立体图形可得到平面图形；立体图形的表面剪开可展开成平面图形",
+     "explanation": "正方体的侧面是正方形说明部分与整体的关系，从不同侧面看长方体得到长方形或正方形说明观察角度带来的平面图形，剪开纸盒得到展开图说明围成关系。",
+     "id": "mxj_p1020_q8",
+     "topicId": "mxj_p1020"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1021",
+   "page": 154,
+   "description": "线段有两个端点，射线有一个端点，直线没有端点，两点确定一条直线、两点之间线段最短是两条基本事实，线段还可比较长短、作和差并取中点。",
+   "mastery_criteria": [
+    "能正确表示线段、射线、直线并说明它们的区别",
+    "能用两点之间线段最短与线段中点进行计算"
+   ],
+   "misconceptions": [
+    "认为射线AB与射线BA是同一条射线",
+    "把两点之间的距离理解成连接两点的任意一条线"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "一条线段有几个端点",
+     "question": "一条线段有几个端点",
+     "options": [
+      {
+       "label": "A",
+       "text": "2个"
+      },
+      {
+       "label": "B",
+       "text": "1个"
+      },
+      {
+       "label": "C",
+       "text": "0个"
+      },
+      {
+       "label": "D",
+       "text": "3个"
+      }
+     ],
+     "answer": "A",
+     "explanation": "教材指出线段有两个端点，向一端无限延长形成射线，射线有一个端点，向两端无限延长形成直线，直线没有端点。",
+     "id": "mxj_p1021_q1",
+     "topicId": "mxj_p1021"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "一条射线有几个端点",
+     "question": "一条射线有几个端点",
+     "options": [
+      {
+       "label": "A",
+       "text": "0个"
+      },
+      {
+       "label": "B",
+       "text": "1个"
+      },
+      {
+       "label": "C",
+       "text": "2个"
+      },
+      {
+       "label": "D",
+       "text": "无数个"
+      }
+     ],
+     "answer": "B",
+     "explanation": "射线由线段向一端无限延长形成，保留原来那一端的端点而另一端无限延伸，所以射线只有一个端点。",
+     "id": "mxj_p1021_q2",
+     "topicId": "mxj_p1021"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "下列语句中正确的是",
+     "question": "下列语句中正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "射线AB与射线BA是同一条射线"
+      },
+      {
+       "label": "B",
+       "text": "直线AB与直线BA是两条不同的直线"
+      },
+      {
+       "label": "C",
+       "text": "线段AB与线段BA是同一条线段"
+      },
+      {
+       "label": "D",
+       "text": "直线有两个端点"
+      }
+     ],
+     "answer": "C",
+     "explanation": "线段的两个端点确定后与书写顺序无关，线段AB与线段BA是同一条线段；射线AB与射线BA端点与方向都不同，直线没有端点。",
+     "id": "mxj_p1021_q3",
+     "topicId": "mxj_p1021"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "若点B在线段AC上且AB等于BC，则点B是线段AC的",
+     "question": "若点B在线段AC上且AB等于BC，则点B是线段AC的",
+     "options": [
+      {
+       "label": "A",
+       "text": "三等分点"
+      },
+      {
+       "label": "B",
+       "text": "端点"
+      },
+      {
+       "label": "C",
+       "text": "延长线上的点"
+      },
+      {
+       "label": "D",
+       "text": "中点"
+      }
+     ],
+     "answer": "D",
+     "explanation": "点B在线段AC上把线段分成相等的两条线段AB与BC，这样的点叫线段的中点，此时AB等于BC等于AC的一半。",
+     "id": "mxj_p1021_q4",
+     "topicId": "mxj_p1021"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "已知线段AB等于6，点C是线段AB的中点，线段AC的长是多少",
+     "question": "已知线段AB等于6，点C是线段AB的中点，线段AC的长是多少",
+     "answer": 3,
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 2}]}",
+     "explanation": "点C是AB的中点，所以AC等于BC等于AB的一半，6除以2等于3，因此线段AC的长是3。",
+     "id": "mxj_p1021_q5",
+     "topicId": "mxj_p1021"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "standard",
+     "prompt": "已知线段AB等于6，点C是AB的中点，点D是AC的中点，线段AD的长是多少",
+     "question": "已知线段AB等于6，点C是AB的中点，点D是AC的中点，线段AD的长是多少",
+     "answer": 1.5,
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}",
+     "explanation": "先由C是AB的中点得AC等于3，再由D是AC的中点得AD等于AC的一半，3除以2等于1.5，所以AD的长是1.5。",
+     "id": "mxj_p1021_q6",
+     "topicId": "mxj_p1021"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "两点之间的所有连线中，哪一种线最短",
+     "question": "两点之间的所有连线中，哪一种线最短",
+     "answer": "线段",
+     "explanation": "教材给出关于线段的基本事实：两点之间的所有连线中线段最短，简单说成两点之间线段最短，连接两点的线段长度叫这两点的距离。",
+     "id": "mxj_p1021_q7",
+     "topicId": "mxj_p1021"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "平面上有A、B、C三点，经过其中任意两点画一条直线，最多能画几条，最少能画几条",
+     "question": "平面上有A、B、C三点，经过其中任意两点画一条直线，最多能画几条，最少能画几条",
+     "answer": "最多3条，最少1条",
+     "explanation": "三点不共线时每两点确定一条直线，共3条；三点共线时过这三点只能画一条直线，所以最多3条、最少1条。",
+     "id": "mxj_p1021_q8",
+     "topicId": "mxj_p1021"
+    }
+   ]
+  },
+  {
+   "id": "mxj_p1022",
+   "page": 160,
+   "description": "角可以看成由具有公共端点的两条射线组成的图形，也可看成射线绕端点旋转所成的图形，角的大小用度分秒度量，和为90度的两角互余、和为180度的两角互补。",
+   "mastery_criteria": [
+    "能说出角的顶点、边与表示方法并比较角的大小",
+    "能进行度分秒换算并求余角与补角"
+   ],
+   "misconceptions": [
+    "把度分秒按十进制换算，如把1度当作100分",
+    "把互余与互补的条件混用"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "角可以看成是由具有公共端点的两条什么组成的图形",
+     "question": "角可以看成是由具有公共端点的两条什么组成的图形",
+     "options": [
+      {
+       "label": "A",
+       "text": "射线"
+      },
+      {
+       "label": "B",
+       "text": "线段"
+      },
+      {
+       "label": "C",
+       "text": "直线"
+      },
+      {
+       "label": "D",
+       "text": "曲线"
+      }
+     ],
+     "answer": "A",
+     "explanation": "教材指出角可以看成是由具有公共端点的两条射线组成的图形，公共端点叫角的顶点，两条射线叫角的边。",
+     "id": "mxj_p1022_q1",
+     "topicId": "mxj_p1022"
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "一个周角等于多少度",
+     "question": "一个周角等于多少度",
+     "options": [
+      {
+       "label": "A",
+       "text": "180度"
+      },
+      {
+       "label": "B",
+       "text": "360度"
+      },
+      {
+       "label": "C",
+       "text": "90度"
+      },
+      {
+       "label": "D",
+       "text": "60度"
+      }
+     ],
+     "answer": "B",
+     "explanation": "射线绕端点旋转一周重新回到原来位置时所成的图形叫周角，一个周角等于360度，一个平角等于180度。",
+     "id": "mxj_p1022_q2",
+     "topicId": "mxj_p1022"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "度量角时，1度等于多少分",
+     "question": "度量角时，1度等于多少分",
+     "options": [
+      {
+       "label": "A",
+       "text": "100分"
+      },
+      {
+       "label": "B",
+       "text": "10分"
+      },
+      {
+       "label": "C",
+       "text": "60分"
+      },
+      {
+       "label": "D",
+       "text": "360分"
+      }
+     ],
+     "answer": "C",
+     "explanation": "把1度的角分成60等份，每一等份叫1分，所以1度等于60分，1分等于60秒，度分秒之间是六十进制。",
+     "id": "mxj_p1022_q3",
+     "topicId": "mxj_p1022"
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "若一个角与34度的角互为余角，则这个角等于",
+     "question": "若一个角与34度的角互为余角，则这个角等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "34度"
+      },
+      {
+       "label": "B",
+       "text": "66度"
+      },
+      {
+       "label": "C",
+       "text": "146度"
+      },
+      {
+       "label": "D",
+       "text": "56度"
+      }
+     ],
+     "answer": "D",
+     "explanation": "两个角的和等于90度时互为余角，90减34等于56，所以这个角等于56度；146度对应的是补角关系。",
+     "id": "mxj_p1022_q4",
+     "topicId": "mxj_p1022"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "basic",
+     "prompt": "一个角是72度，它的余角是多少度",
+     "question": "一个角是72度，它的余角是多少度",
+     "answer": 18,
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 90}, {\"type\": \"num\", \"value\": 72}]}",
+     "explanation": "互为余角的两个角的和等于90度，用90度减去72度得18度，所以这个角的余角是18度。",
+     "id": "mxj_p1022_q5",
+     "topicId": "mxj_p1022"
+    },
+    {
+     "type": "numeric",
+     "difficulty": "standard",
+     "prompt": "一个角是45度，它的补角比它的余角大多少度",
+     "question": "一个角是45度，它的补角比它的余角大多少度",
+     "answer": 90,
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 180}, {\"type\": \"num\", \"value\": 45}]}, {\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 90}, {\"type\": \"num\", \"value\": 45}]}]}",
+     "explanation": "这个角的补角是180减45等于135度，余角是90减45等于45度，135减45等于90，所以补角比余角大90度。",
+     "id": "mxj_p1022_q6",
+     "topicId": "mxj_p1022"
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "用度表示48度25分48秒的结果是多少",
+     "question": "用度表示48度25分48秒的结果是多少",
+     "answer": "48.43度",
+     "explanation": "48秒等于48乘六十分之一分即0.8分，25分48秒等于25.8分，25.8分等于25.8乘六十分之一度约等于0.43度，所以结果为48.43度。",
+     "id": "mxj_p1022_q7",
+     "topicId": "mxj_p1022"
+    },
+    {
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "已知一个角的余角是这个角的补角的三分之一，求这个角的度数",
+     "question": "已知一个角的余角是这个角的补角的三分之一，求这个角的度数",
+     "answer": "45度",
+     "explanation": "设这个角为x度，则余角为90减x度，补角为180减x度，由90减x等于三分之一乘括号内180减x解得x等于45，所以这个角是45度。",
+     "id": "mxj_p1022_q8",
+     "topicId": "mxj_p1022"
+    }
+   ]
+  }
+ ]
+}
