@@ -1,0 +1,2726 @@
+{
+ "tag": "s4a",
+ "book": "苏教版四年级上册",
+ "unit_points": [
+  {
+   "id": "msj_p057",
+   "description": "学习除数是两位数的除法：先口算整十数除以整十数，再笔算两、三位数除以整十数和两位数，把除数看作整十数试商、试商偏大时调商，商是两位数的除法，以及用连除解决实际问题。",
+   "mastery_criteria": [
+    "能口算整十数除以整十数并说出算理",
+    "能把除数看作整十数试商、调商后用竖式算出商和余数",
+    "能用除法解决分书、分装、连除等实际问题"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msj_p057_q1",
+     "topicId": "msj_p057",
+     "prompt": "60本《童话世界》每20本捆成一包，求要捆成几包，下面哪个算式是对的？",
+     "question": "60本《童话世界》每20本捆成一包，求要捆成几包，下面哪个算式是对的？",
+     "options": [
+      {
+       "label": "A",
+       "text": "60除以20"
+      },
+      {
+       "label": "B",
+       "text": "60乘20"
+      },
+      {
+       "label": "C",
+       "text": "60减20"
+      },
+      {
+       "label": "D",
+       "text": "60加20"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "求60里面有几个20，要用除法，列式是60除以20，商3表示能捆成3包。"
+    },
+    {
+     "id": "msj_p057_q2",
+     "topicId": "msj_p057",
+     "prompt": "笔算160除以30，商和余数分别是多少？",
+     "question": "笔算160除以30，商和余数分别是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "商5余1"
+      },
+      {
+       "label": "B",
+       "text": "商5余10"
+      },
+      {
+       "label": "C",
+       "text": "商6余0"
+      },
+      {
+       "label": "D",
+       "text": "商5余30"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "30乘5等于150，160减150等于10，余数10比30小，所以商5余10，验算30乘5再加10正好是160。"
+    },
+    {
+     "id": "msj_p057_q3",
+     "topicId": "msj_p057",
+     "prompt": "计算126除以28时，可以先把除数28看作（　）来试商。",
+     "question": "计算126除以28时，可以先把除数28看作（　）来试商。",
+     "answer": "30",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "28接近整十数30，把它看作30试商，想30乘几接近126，很快能试出商是4。"
+    },
+    {
+     "id": "msj_p057_q4",
+     "topicId": "msj_p057",
+     "prompt": "用竖式计算96除以24，商是多少？",
+     "question": "用竖式计算96除以24，商是多少？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把24看作20试商，24乘4等于96，正好除尽，所以96除以24的商是4。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 96}, {\"type\": \"num\", \"value\": 24}]}"
+    },
+    {
+     "id": "msj_p057_q5",
+     "topicId": "msj_p057",
+     "prompt": "计算438除以62时把62看作60试商，第一次试的商使除数与商的积超过了被除数，这时应该怎么办？",
+     "question": "计算438除以62时把62看作60试商，第一次试的商使除数与商的积超过了被除数，这时应该怎么办？",
+     "options": [
+      {
+       "label": "A",
+       "text": "把商调大1再算"
+      },
+      {
+       "label": "B",
+       "text": "重新从1开始一个一个试"
+      },
+      {
+       "label": "C",
+       "text": "把商调小，再乘一乘、减一减检查"
+      },
+      {
+       "label": "D",
+       "text": "直接把商写成0"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "把除数看小了试商，商容易偏大，积超过被除数时要把商调小，直到积不超过被除数、余数比除数小为止。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p058",
+   "description": "认识图形的周长和面积：描出一周边线、涂出围成的面，学会测量和计算长方形、正方形的周长与面积，认识面积单位及单位间的换算，并在拼图形中发现周长与面积的变化。",
+   "mastery_criteria": [
+    "能分清周长和面积，说出各自的含义",
+    "会计算长方形、正方形的周长和面积",
+    "能通过拼摆发现面积不变时周长会变、周长一定时面积的变化规律"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p058_q1",
+     "topicId": "msj_p058",
+     "prompt": "长方形一周边线的长度是它的什么？",
+     "question": "长方形一周边线的长度是它的什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "周长"
+      },
+      {
+       "label": "B",
+       "text": "面积"
+      },
+      {
+       "label": "C",
+       "text": "长"
+      },
+      {
+       "label": "D",
+       "text": "宽"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "一周边线的长度叫周长，由一周边线围成的面的大小叫面积，两者说的不是一回事。"
+    },
+    {
+     "id": "msj_p058_q2",
+     "topicId": "msj_p058",
+     "prompt": "用一根36厘米长的铁丝围成长方形或正方形，围成的图形中面积最大的是哪一个？",
+     "question": "用一根36厘米长的铁丝围成长方形或正方形，围成的图形中面积最大的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "长12厘米、宽6厘米的长方形"
+      },
+      {
+       "label": "B",
+       "text": "边长9厘米的正方形"
+      },
+      {
+       "label": "C",
+       "text": "长15厘米、宽3厘米的长方形"
+      },
+      {
+       "label": "D",
+       "text": "长10厘米、宽8厘米的长方形"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "周长都是36厘米时，长与宽越接近面积越大。边长9厘米的正方形面积81平方厘米，四种围法里最大。"
+    },
+    {
+     "id": "msj_p058_q3",
+     "topicId": "msj_p058",
+     "prompt": "长方形的周长等于长与宽的和乘（　）。",
+     "question": "长方形的周长等于长与宽的和乘（　）。",
+     "answer": "2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "长方形有两组同样的长和宽，所以周长等于长与宽的和乘2，写成公式是周长等于长加宽的和乘2。"
+    },
+    {
+     "id": "msj_p058_q4",
+     "topicId": "msj_p058",
+     "prompt": "一块正方形手帕的边长是25厘米，它的周长是多少厘米？",
+     "question": "一块正方形手帕的边长是25厘米，它的周长是多少厘米？",
+     "answer": 100,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "正方形四条边一样长，周长等于边长乘4，25乘4等于100，所以周长是100厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 25}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msj_p058_q5",
+     "topicId": "msj_p058",
+     "prompt": "用48个边长1厘米的正方形拼成长方形，拼成的图形中周长最短的是哪一种？",
+     "question": "用48个边长1厘米的正方形拼成长方形，拼成的图形中周长最短的是哪一种？",
+     "options": [
+      {
+       "label": "A",
+       "text": "长48厘米、宽1厘米"
+      },
+      {
+       "label": "B",
+       "text": "长24厘米、宽2厘米"
+      },
+      {
+       "label": "C",
+       "text": "长8厘米、宽6厘米"
+      },
+      {
+       "label": "D",
+       "text": "长16厘米、宽3厘米"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "面积都是48平方厘米，长与宽越接近周长越短。长8宽6的周长是28厘米，是四种拼法里最短的。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p059",
+   "description": "理解乘法的意义和除法是乘法的逆运算，认识单价、数量、总价与速度、时间、路程两组常见数量关系，学会用列表整理条件和问题，解决照这样计算的归一问题。",
+   "mastery_criteria": [
+    "能说出乘除的互逆关系并求出未知的乘数",
+    "会用总价等于单价乘数量、路程等于速度乘时间解决实际问题",
+    "会用列表整理条件和问题，先求单一量再解决归一问题"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p059_q1",
+     "topicId": "msj_p059",
+     "prompt": "求几个相同加数和的简便运算叫作什么？",
+     "question": "求几个相同加数和的简便运算叫作什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "乘法"
+      },
+      {
+       "label": "B",
+       "text": "除法"
+      },
+      {
+       "label": "C",
+       "text": "加法"
+      },
+      {
+       "label": "D",
+       "text": "减法"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "3组同学每组4人，求一共有多少人就是求3个4相加的和，用乘法算比较简便，所以乘法是求几个相同加数和的简便运算。"
+    },
+    {
+     "id": "msj_p059_q2",
+     "topicId": "msj_p059",
+     "prompt": "已知总价和数量，求单价的算式是哪一个？",
+     "question": "已知总价和数量，求单价的算式是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "总价乘数量"
+      },
+      {
+       "label": "B",
+       "text": "总价除以数量"
+      },
+      {
+       "label": "C",
+       "text": "数量除以总价"
+      },
+      {
+       "label": "D",
+       "text": "总价加数量"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "总价等于单价乘数量，反过来已知总价和数量，用总价除以数量就能求出单价。"
+    },
+    {
+     "id": "msj_p059_q3",
+     "topicId": "msj_p059",
+     "prompt": "计算路程时，路程等于速度乘（　）。",
+     "question": "计算路程时，路程等于速度乘（　）。",
+     "answer": "时间",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "每单位时间行的路程是速度，速度乘时间就是一共行的路程，所以路程等于速度乘时间。"
+    },
+    {
+     "id": "msj_p059_q4",
+     "topicId": "msj_p059",
+     "prompt": "一种椅子的单价是55元一把，买48把这样的椅子一共要付多少元？",
+     "question": "一种椅子的单价是55元一把，买48把这样的椅子一共要付多少元？",
+     "answer": 2640,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "总价等于单价乘数量，55乘48等于2640，所以一共要付2640元。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 55}, {\"type\": \"num\", \"value\": 48}]}"
+    },
+    {
+     "id": "msj_p059_q5",
+     "topicId": "msj_p059",
+     "prompt": "已知86乘75等于6450，那么6450除以86的商是多少？",
+     "question": "已知86乘75等于6450，那么6450除以86的商是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "86"
+      },
+      {
+       "label": "B",
+       "text": "6450"
+      },
+      {
+       "label": "C",
+       "text": "75"
+      },
+      {
+       "label": "D",
+       "text": "15"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "乘法与除法是互逆的，两个乘数相乘得积，用积除以其中一个乘数就得到另一个乘数，所以商是75。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "msj_p1217",
+   "description": "借助分书的情境，把被除数和除数都看作几个十，用乘法口诀口算整十数除以整十数，如60除以20、120除以20、150除以30，并会用乘法验算。",
+   "mastery_criteria": [
+    "能把被除数和除数看作几个十来口算",
+    "能用商乘除数等于被除数的方法验算口算结果"
+   ],
+   "type": "conceptual",
+   "misconceptions": [
+    "把60除以20算成30，把被除数末尾的0一起搬进商里",
+    "只记住得数，说不出是几个十除以几个十"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1217_q1",
+     "topicId": "msj_p1217",
+     "prompt": "口算60除以20时，想的是哪一句乘法口诀？",
+     "question": "口算60除以20时，想的是哪一句乘法口诀？",
+     "options": [
+      {
+       "label": "A",
+       "text": "二三得六"
+      },
+      {
+       "label": "B",
+       "text": "三三得九"
+      },
+      {
+       "label": "C",
+       "text": "二五一十"
+      },
+      {
+       "label": "D",
+       "text": "四五二十"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "60是6个十，20是2个十，6个十除以2个十就是6除以2，用口诀二三得六，商是3。"
+    },
+    {
+     "id": "msj_p1217_q2",
+     "topicId": "msj_p1217",
+     "prompt": "口算120除以20，商是多少？",
+     "question": "口算120除以20，商是多少？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "120是12个十，20是2个十，12除以2等于6，也可以想20乘6等于120，所以商是6。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 120}, {\"type\": \"num\", \"value\": 20}]}"
+    },
+    {
+     "id": "msj_p1217_q3",
+     "topicId": "msj_p1217",
+     "prompt": "口算150除以30，商应该写成多少？",
+     "question": "口算150除以30，商应该写成多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "15"
+      },
+      {
+       "label": "D",
+       "text": "50"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "150是15个十，30是3个十，15除以3等于5，也可以想30乘5等于150，所以商是5。"
+    },
+    {
+     "id": "msj_p1217_q4",
+     "topicId": "msj_p1217",
+     "prompt": "400除以80的商与下面哪个算式的商相同？",
+     "question": "400除以80的商与下面哪个算式的商相同？",
+     "options": [
+      {
+       "label": "A",
+       "text": "40除以4"
+      },
+      {
+       "label": "B",
+       "text": "8除以4"
+      },
+      {
+       "label": "C",
+       "text": "40除以8"
+      },
+      {
+       "label": "D",
+       "text": "80除以4"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "400除以80等于5，40除以8也等于5，两个算式都是5个十除以几个十，商相同。"
+    },
+    {
+     "id": "msj_p1217_q5",
+     "topicId": "msj_p1217",
+     "prompt": "因为20乘3等于60，所以60除以20等于（　）。",
+     "question": "因为20乘3等于60，所以60除以20等于（　）。",
+     "answer": "3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "乘法和除法是互逆的，20乘3得60，那么60除以20的商就是3。"
+    },
+    {
+     "id": "msj_p1217_q6",
+     "topicId": "msj_p1217",
+     "prompt": "口算720除以90，商是多少？",
+     "question": "口算720除以90，商是多少？",
+     "answer": 8,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "720是72个十，90是9个十，72除以9等于8，所以720除以90的商是8。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 720}, {\"type\": \"num\", \"value\": 90}]}"
+    },
+    {
+     "id": "msj_p1217_q7",
+     "topicId": "msj_p1217",
+     "prompt": "一根绳子长210厘米，每30厘米剪成一段，可以剪成多少段？",
+     "question": "一根绳子长210厘米，每30厘米剪成一段，可以剪成多少段？",
+     "options": [
+      {
+       "label": "A",
+       "text": "6段"
+      },
+      {
+       "label": "B",
+       "text": "9段"
+      },
+      {
+       "label": "C",
+       "text": "70段"
+      },
+      {
+       "label": "D",
+       "text": "7段"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "求210里面有几个30，用除法算，210除以30等于7，所以可以剪成7段。"
+    },
+    {
+     "id": "msj_p1217_q8",
+     "topicId": "msj_p1217",
+     "prompt": "请你说说口算60除以20时的两种想法。",
+     "question": "请你说说口算60除以20时的两种想法。",
+     "answer": "想乘法：20乘3等于60，所以60除以20等于3；想几个十：60是6个十，20是2个十，6除以2等于3，所以60除以20等于3。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "口算整十数除以整十数有两条路：一是想乘法口诀，看除数乘几得被除数；二是把两个数都看成几个十，用表内除法算。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1218",
+   "description": "用竖式计算两、三位数除以整十数，理解商要写在个位上，学会写出商和余数，并用商乘除数再加余数的方法验算。",
+   "mastery_criteria": [
+    "会列竖式计算160除以30并说出商的位置",
+    "会用商乘除数加余数的方法验算有余数的除法"
+   ],
+   "type": "procedural",
+   "misconceptions": [
+    "把商写在十位上，写成50",
+    "忘记写余数，或让余数大于除数"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1218_q1",
+     "topicId": "msj_p1218",
+     "prompt": "用竖式计算160除以30时，商应该写在哪一位上？",
+     "question": "用竖式计算160除以30时，商应该写在哪一位上？",
+     "options": [
+      {
+       "label": "A",
+       "text": "个位"
+      },
+      {
+       "label": "B",
+       "text": "十位"
+      },
+      {
+       "label": "C",
+       "text": "百位"
+      },
+      {
+       "label": "D",
+       "text": "千位"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "160的前两位16比除数30小，不够除，要看前三位160，除到个位，所以商写在个位上。"
+    },
+    {
+     "id": "msj_p1218_q2",
+     "topicId": "msj_p1218",
+     "prompt": "用竖式计算320除以40，商是多少？",
+     "question": "用竖式计算320除以40，商是多少？",
+     "answer": 8,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "40乘8等于320，正好除尽，所以320除以40的商是8，商写在个位上。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 320}, {\"type\": \"num\", \"value\": 40}]}"
+    },
+    {
+     "id": "msj_p1218_q3",
+     "topicId": "msj_p1218",
+     "prompt": "160除以30的商和余数分别是多少？",
+     "question": "160除以30的商和余数分别是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "商5余1"
+      },
+      {
+       "label": "B",
+       "text": "商5余10"
+      },
+      {
+       "label": "C",
+       "text": "商6余10"
+      },
+      {
+       "label": "D",
+       "text": "商4余40"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "30乘5等于150，160减150等于10，余数10小于除数30，所以商5余10。"
+    },
+    {
+     "id": "msj_p1218_q4",
+     "topicId": "msj_p1218",
+     "prompt": "小明算出240除以50等于4余40，下面哪种验算方法是对的？",
+     "question": "小明算出240除以50等于4余40，下面哪种验算方法是对的？",
+     "options": [
+      {
+       "label": "A",
+       "text": "50乘4等于200"
+      },
+      {
+       "label": "B",
+       "text": "40加50等于90"
+      },
+      {
+       "label": "C",
+       "text": "50乘4再加40等于240"
+      },
+      {
+       "label": "D",
+       "text": "240减40等于200"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "有余数除法的验算方法是商乘除数再加余数，50乘4得200，200加40得240，与被除数相同，说明算对了。"
+    },
+    {
+     "id": "msj_p1218_q5",
+     "topicId": "msj_p1218",
+     "prompt": "在括号里填一填：380里面最多有（　）个40。",
+     "question": "在括号里填一填：380里面最多有（　）个40。",
+     "answer": "9",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "40乘9等于360，40乘10等于400超过380，所以380里面最多有9个40。"
+    },
+    {
+     "id": "msj_p1218_q6",
+     "topicId": "msj_p1218",
+     "prompt": "用竖式计算420除以70，商是多少？",
+     "question": "用竖式计算420除以70，商是多少？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "70乘6等于420，正好除尽，所以420除以70的商是6，商写在个位上。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 420}, {\"type\": \"num\", \"value\": 70}]}"
+    },
+    {
+     "id": "msj_p1218_q7",
+     "topicId": "msj_p1218",
+     "prompt": "想一想，542里面最多有几个80？",
+     "question": "想一想，542里面最多有几个80？",
+     "options": [
+      {
+       "label": "A",
+       "text": "5个"
+      },
+      {
+       "label": "B",
+       "text": "7个"
+      },
+      {
+       "label": "C",
+       "text": "8个"
+      },
+      {
+       "label": "D",
+       "text": "6个"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "80乘6等于480，80乘7等于560超过542，所以542里面最多有6个80。"
+    },
+    {
+     "id": "msj_p1218_q8",
+     "topicId": "msj_p1218",
+     "prompt": "说说用竖式计算240除以50时，商写在哪一位，为什么。",
+     "question": "说说用竖式计算240除以50时，商写在哪一位，为什么。",
+     "answer": "商4写在个位上。因为被除数的前两位24比除数50小，不够除，要看前三位240，除到个位，所以商写在个位上；50乘4得200，余下40，余数比除数小。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "笔算除法先看前两位，前两位不够除再看前三位，除到被除数的哪一位，商就写在那一位的上面，最后还要检查余数比除数小。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1219",
+   "description": "把两位数除数看作与它接近的整十数来试商，如把24看作20、把28看作30，用竖式算出商和余数，再验算检查结果。",
+   "mastery_criteria": [
+    "会把两位数除数看作整十数试商",
+    "会检查余数是否比除数小并验算"
+   ],
+   "type": "procedural",
+   "misconceptions": [
+    "试商后不检查，余数比除数大也照抄",
+    "把除数看小了试商后，商偏大却不调整"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1219_q1",
+     "topicId": "msj_p1219",
+     "prompt": "计算96除以24时，把除数24看作几十来试商比较方便？",
+     "question": "计算96除以24时，把除数24看作几十来试商比较方便？",
+     "options": [
+      {
+       "label": "A",
+       "text": "20"
+      },
+      {
+       "label": "B",
+       "text": "30"
+      },
+      {
+       "label": "C",
+       "text": "40"
+      },
+      {
+       "label": "D",
+       "text": "90"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "24接近整十数20，把它看作20来试商，想20乘几接近96，很快能试出商是4。"
+    },
+    {
+     "id": "msj_p1219_q2",
+     "topicId": "msj_p1219",
+     "prompt": "用竖式计算96除以24，商是多少？",
+     "question": "用竖式计算96除以24，商是多少？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "24乘4等于96，正好除尽，所以96除以24的商是4，商写在个位上。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 96}, {\"type\": \"num\", \"value\": 24}]}"
+    },
+    {
+     "id": "msj_p1219_q3",
+     "topicId": "msj_p1219",
+     "prompt": "计算172除以28时，把28看作30试商，28乘6等于168，172减168等于4，那么172除以28的商和余数是？",
+     "question": "计算172除以28时，把28看作30试商，28乘6等于168，172减168等于4，那么172除以28的商和余数是？",
+     "options": [
+      {
+       "label": "A",
+       "text": "商5余32"
+      },
+      {
+       "label": "B",
+       "text": "商6余4"
+      },
+      {
+       "label": "C",
+       "text": "商6余28"
+      },
+      {
+       "label": "D",
+       "text": "商7余0"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "28乘6得168，余数172减168等于4，4比28小，所以商是6、余数是4。"
+    },
+    {
+     "id": "msj_p1219_q4",
+     "topicId": "msj_p1219",
+     "prompt": "把除数看作整十数试商后，判断商是否合适的标准是什么？",
+     "question": "把除数看作整十数试商后，判断商是否合适的标准是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "商必须是单数"
+      },
+      {
+       "label": "B",
+       "text": "商比被除数小就行"
+      },
+      {
+       "label": "C",
+       "text": "商与除数相乘的积不超过被除数，并且余数比除数小"
+      },
+      {
+       "label": "D",
+       "text": "余数比商小"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "试商后要用商乘除数，积不能超过被除数；同时余数必须比除数小，两条都满足商才合适。"
+    },
+    {
+     "id": "msj_p1219_q5",
+     "topicId": "msj_p1219",
+     "prompt": "计算108除以18时，可以把除数18看作（　）来试商。",
+     "question": "计算108除以18时，可以把除数18看作（　）来试商。",
+     "answer": "20",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "18接近整十数20，看作20试商，想20乘5等于100、20乘6等于120，试出商是6，18乘6正好108。"
+    },
+    {
+     "id": "msj_p1219_q6",
+     "topicId": "msj_p1219",
+     "prompt": "用竖式计算126除以21，商是多少？",
+     "question": "用竖式计算126除以21，商是多少？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把21看作20试商，21乘6等于126，正好除尽，所以商是6。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 126}, {\"type\": \"num\", \"value\": 21}]}"
+    },
+    {
+     "id": "msj_p1219_q7",
+     "topicId": "msj_p1219",
+     "prompt": "用竖式计算438除以62，把62看作60试商7，62乘7等于434，余4，正确的商和余数是？",
+     "question": "用竖式计算438除以62，把62看作60试商7，62乘7等于434，余4，正确的商和余数是？",
+     "options": [
+      {
+       "label": "A",
+       "text": "商6余66"
+      },
+      {
+       "label": "B",
+       "text": "商8余2"
+      },
+      {
+       "label": "C",
+       "text": "商7余62"
+      },
+      {
+       "label": "D",
+       "text": "商7余4"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "62乘7得434，438减434得4，余数4比62小，商7合适，所以商7余4。"
+    },
+    {
+     "id": "msj_p1219_q8",
+     "topicId": "msj_p1219",
+     "prompt": "为什么可以把除数24看作20来试商，而不必用24一个一个去试？",
+     "question": "为什么可以把除数24看作20来试商，而不必用24一个一个去试？",
+     "answer": "24接近整十数20，用20试商能很快想到商大约是几，再用商乘24检查、调整。这样比从1一个一个试快得多，商不合适时再调小或调大。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "试商就是先找一个接近除数的整十数，借乘法口诀快速估出商，再用真正的除数去乘、去检验，这样可以少走弯路。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1220",
+   "description": "计算商是两位数的除法，如156除以12，先看被除数的前两位够不够除，试商后如果积比被除数大就把商调小，直到余数比除数小。",
+   "mastery_criteria": [
+    "能判断商的最高位在哪一位",
+    "会在试商偏大时把商调小并算出正确结果"
+   ],
+   "type": "procedural",
+   "misconceptions": [
+    "试商偏大后直接把商加1",
+    "余数等于除数时仍当作算完"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1220_q1",
+     "topicId": "msj_p1220",
+     "prompt": "计算156除以12时，商的最高位在哪一位上？",
+     "question": "计算156除以12时，商的最高位在哪一位上？",
+     "options": [
+      {
+       "label": "A",
+       "text": "十位"
+      },
+      {
+       "label": "B",
+       "text": "个位"
+      },
+      {
+       "label": "C",
+       "text": "百位"
+      },
+      {
+       "label": "D",
+       "text": "千位"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "156的前两位15比除数12大，够除，所以商是两位数，最高位在十位上。"
+    },
+    {
+     "id": "msj_p1220_q2",
+     "topicId": "msj_p1220",
+     "prompt": "《科幻天地》一共156页，计划12天看完，平均每天看多少页？",
+     "question": "《科幻天地》一共156页，计划12天看完，平均每天看多少页？",
+     "answer": 13,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "156除以12，前两位15除以12商1，余3；把6移下来是36，36除以12商3，所以平均每天看13页。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 156}, {\"type\": \"num\", \"value\": 12}]}"
+    },
+    {
+     "id": "msj_p1220_q3",
+     "topicId": "msj_p1220",
+     "prompt": "把除数13看作10试商，商试成15，13乘15等于195，比156大，接下来应该怎么办？",
+     "question": "把除数13看作10试商，商试成15，13乘15等于195，比156大，接下来应该怎么办？",
+     "options": [
+      {
+       "label": "A",
+       "text": "把商调大到16"
+      },
+      {
+       "label": "B",
+       "text": "把商调小后再试12"
+      },
+      {
+       "label": "C",
+       "text": "商就写15"
+      },
+      {
+       "label": "D",
+       "text": "把除数改成20再算"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "积比被除数大说明商偏大，要把商调小；试12时13乘12等于156，正好除尽，所以商是12。"
+    },
+    {
+     "id": "msj_p1220_q4",
+     "topicId": "msj_p1220",
+     "prompt": "计算有余数的除法时，余数必须满足什么条件？",
+     "question": "计算有余数的除法时，余数必须满足什么条件？",
+     "options": [
+      {
+       "label": "A",
+       "text": "余数大于除数"
+      },
+      {
+       "label": "B",
+       "text": "余数等于除数"
+      },
+      {
+       "label": "C",
+       "text": "余数比除数小"
+      },
+      {
+       "label": "D",
+       "text": "余数是0以外的任何数"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "如果余数不比除数小，说明还能再分出一份，商就偏小了，所以余数一定要比除数小。"
+    },
+    {
+     "id": "msj_p1220_q5",
+     "topicId": "msj_p1220",
+     "prompt": "912除以24，先看被除数的前两位91，91除以24最多商（　）。",
+     "question": "912除以24，先看被除数的前两位91，91除以24最多商（　）。",
+     "answer": "3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "24乘3得72，24乘4得96超过91，所以前两位上最多商3，商的最高位在十位上。"
+    },
+    {
+     "id": "msj_p1220_q6",
+     "topicId": "msj_p1220",
+     "prompt": "用竖式计算912除以24，商是多少？",
+     "question": "用竖式计算912除以24，商是多少？",
+     "answer": 38,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "91除以24商3，余19；把2移下来是192，192除以24商8，24乘8得192，所以商是38。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 912}, {\"type\": \"num\", \"value\": 24}]}"
+    },
+    {
+     "id": "msj_p1220_q7",
+     "topicId": "msj_p1220",
+     "prompt": "计算272除以34，把34看作30试商9，34乘9等于306，比272大，正确的商是多少？",
+     "question": "计算272除以34，把34看作30试商9，34乘9等于306，比272大，正确的商是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "9"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "商偏大要调小，34乘8等于272，正好除尽，所以正确的商是8。"
+    },
+    {
+     "id": "msj_p1220_q8",
+     "topicId": "msj_p1220",
+     "prompt": "说说试商以后怎样判断商是不是偏大，偏大了怎么办。",
+     "question": "说说试商以后怎样判断商是不是偏大，偏大了怎么办。",
+     "answer": "用商乘除数，如果积比被除数大，说明商偏大，要把商调小1再乘；一直调到积不超过被除数、并且余数比除数小为止。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "试商只是估计，必须用商乘除数去检验：积超过被除数就调小，余数比除数大就调大，直到两条都满足。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1221",
+   "description": "回顾并整理除数是两位数的笔算方法：先看被除数的前两位，前两位不够除就看前三位，除到哪一位商就写在哪一位上面，会算商是两位数的除法并验算。",
+   "mastery_criteria": [
+    "能完整说出笔算除数是两位数的步骤",
+    "会计算商是两位数的除法并验算"
+   ],
+   "type": "procedural",
+   "misconceptions": [
+    "商的位置写错，把十位上的商写到了百位上",
+    "前两位不够除时仍在前两位上写商"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1221_q1",
+     "topicId": "msj_p1221",
+     "prompt": "笔算除数是两位数的除法时，一般先看被除数的哪几位？",
+     "question": "笔算除数是两位数的除法时，一般先看被除数的哪几位？",
+     "options": [
+      {
+       "label": "A",
+       "text": "前两位"
+      },
+      {
+       "label": "B",
+       "text": "前一位"
+      },
+      {
+       "label": "C",
+       "text": "最后两位"
+      },
+      {
+       "label": "D",
+       "text": "全部数位"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "除数是两位数，就先看被除数的前两位；前两位比除数小、不够除时，再看前三位。"
+    },
+    {
+     "id": "msj_p1221_q2",
+     "topicId": "msj_p1221",
+     "prompt": "用竖式计算312除以13，商是多少？",
+     "question": "用竖式计算312除以13，商是多少？",
+     "answer": 24,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "31除以13商2，余5；把2移下来是52，52除以13商4，所以商是24。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 312}, {\"type\": \"num\", \"value\": 13}]}"
+    },
+    {
+     "id": "msj_p1221_q3",
+     "topicId": "msj_p1221",
+     "prompt": "用竖式计算962除以37，商是多少？",
+     "question": "用竖式计算962除以37，商是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "26"
+      },
+      {
+       "label": "C",
+       "text": "260"
+      },
+      {
+       "label": "D",
+       "text": "29"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "96除以37商2，余22；把2移下来是222，222除以37商6，正好除尽，所以商是26。"
+    },
+    {
+     "id": "msj_p1221_q4",
+     "topicId": "msj_p1221",
+     "prompt": "竖式计算时，除到被除数的哪一位，商应该写在哪里？",
+     "question": "竖式计算时，除到被除数的哪一位，商应该写在哪里？",
+     "options": [
+      {
+       "label": "A",
+       "text": "写在那一位的左边"
+      },
+      {
+       "label": "B",
+       "text": "一律写在最高位上"
+      },
+      {
+       "label": "C",
+       "text": "写在那一位的上面"
+      },
+      {
+       "label": "D",
+       "text": "一律写在最后一位上面"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "商的位置由除到哪一位决定：除到十位，商就写在十位上；除到个位，商就写在个位上，这样每一位表示的大小才对。"
+    },
+    {
+     "id": "msj_p1221_q5",
+     "topicId": "msj_p1221",
+     "prompt": "828除以20，先看被除数的前两位82，82除以20最多商（　）。",
+     "question": "828除以20，先看被除数的前两位82，82除以20最多商（　）。",
+     "answer": "4",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "20乘4得80，20乘5得100超过82，所以前两位上最多商4，商的最高位在十位上。"
+    },
+    {
+     "id": "msj_p1221_q6",
+     "topicId": "msj_p1221",
+     "prompt": "用竖式计算729除以27，商是多少？",
+     "question": "用竖式计算729除以27，商是多少？",
+     "answer": 27,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "72除以27商2，余18；把9移下来是189，189除以27商7，所以商是27。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 729}, {\"type\": \"num\", \"value\": 27}]}"
+    },
+    {
+     "id": "msj_p1221_q7",
+     "topicId": "msj_p1221",
+     "prompt": "计算390除以43，把43看作40试商9，43乘9等于387，余3，说明什么？",
+     "question": "计算390除以43，把43看作40试商9，43乘9等于387，余3，说明什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "商9偏大，要调小"
+      },
+      {
+       "label": "B",
+       "text": "余数太大，商要调大"
+      },
+      {
+       "label": "C",
+       "text": "商的最高位在百位上"
+      },
+      {
+       "label": "D",
+       "text": "商9合适，390除以43等于9余3"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "43乘9得387，390减387得3，余数3比43小，两条检验都满足，所以商9合适。"
+    },
+    {
+     "id": "msj_p1221_q8",
+     "topicId": "msj_p1221",
+     "prompt": "说说笔算除数是两位数时，商的书写位置怎么确定。",
+     "question": "说说笔算除数是两位数时，商的书写位置怎么确定。",
+     "answer": "先看被除数的前两位，够除就在十位上写商；前两位不够除就看前三位，商写在个位上。总之除到被除数的哪一位，商就写在那一位的上面。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "商的每一位对着被除数的一位，写错位置商的大小就错了，所以要先判断够不够除，再确定最高位在哪一位。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1222",
+   "description": "解决把总数平均分成几份、每份再平均分成几份的实际问题，如224本书放在2个书架、每个书架4层，找出有联系的条件，可以先算一份，也可以用连除一次算完。",
+   "mastery_criteria": [
+    "能找出有联系的条件并说出先算什么",
+    "会用两种方法列式解答并检验结果"
+   ],
+   "type": "application",
+   "misconceptions": [
+    "把两步合并时忘记加小括号，算成除以2再乘4",
+    "求出得数后不把它当作条件回头检验"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1222_q1",
+     "topicId": "msj_p1222",
+     "prompt": "有224本书，放在2个书架上，每个书架有4层，每层放多少本？先算平均每个书架放多少本，算式是哪一个？",
+     "question": "有224本书，放在2个书架上，每个书架有4层，每层放多少本？先算平均每个书架放多少本，算式是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "224除以2"
+      },
+      {
+       "label": "B",
+       "text": "224除以4"
+      },
+      {
+       "label": "C",
+       "text": "224除以2再除以4"
+      },
+      {
+       "label": "D",
+       "text": "2乘4"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "先算一个书架放多少本，就是把224平均分成2份，用224除以2得112本，再除以4求每层放多少本。"
+    },
+    {
+     "id": "msj_p1222_q2",
+     "topicId": "msj_p1222",
+     "prompt": "224本书平均放在2个书架上，每个书架有4层，平均每层放多少本？",
+     "question": "224本书平均放在2个书架上，每个书架有4层，平均每层放多少本？",
+     "answer": 28,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "先算每个书架112本，再算每层112除以4等于28本，所以平均每层放28本。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 224}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msj_p1222_q3",
+     "topicId": "msj_p1222",
+     "prompt": "上面的问题还可以列成224除以2乘4的积，这个算式先算的是什么？",
+     "question": "上面的问题还可以列成224除以2乘4的积，这个算式先算的是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "每层放几本"
+      },
+      {
+       "label": "B",
+       "text": "一共有多少层"
+      },
+      {
+       "label": "C",
+       "text": "每个书架放几本"
+      },
+      {
+       "label": "D",
+       "text": "一共有几个书架"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "2乘4算的是两个书架一共有8层，再用224除以8，就得到平均每层放多少本。"
+    },
+    {
+     "id": "msj_p1222_q4",
+     "topicId": "msj_p1222",
+     "prompt": "一瓶药有150片，每天吃3次，每次吃2片，这瓶药够吃多少天？正确的列式是哪一个？",
+     "question": "一瓶药有150片，每天吃3次，每次吃2片，这瓶药够吃多少天？正确的列式是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "150除以3再乘2"
+      },
+      {
+       "label": "B",
+       "text": "150乘3除以2"
+      },
+      {
+       "label": "C",
+       "text": "150除以3乘2的积"
+      },
+      {
+       "label": "D",
+       "text": "150除以2再加3"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先算一天吃多少片，3乘2等于6片，再用150除以6得25天，所以正确列式是150除以3乘2的积。"
+    },
+    {
+     "id": "msj_p1222_q5",
+     "topicId": "msj_p1222",
+     "prompt": "3只燕子一个星期共吃924只蝗虫，平均每只燕子每天吃（　）只。",
+     "question": "3只燕子一个星期共吃924只蝗虫，平均每只燕子每天吃（　）只。",
+     "answer": "44",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "一个星期是7天。先算3只燕子一天吃924除以7等于132只，再算每只每天吃132除以3等于44只。"
+    },
+    {
+     "id": "msj_p1222_q6",
+     "topicId": "msj_p1222",
+     "prompt": "把900本书平均分给6个年级，每个年级有3个班，平均每班分到多少本？",
+     "question": "把900本书平均分给6个年级，每个年级有3个班，平均每班分到多少本？",
+     "answer": 50,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "先算每个年级分150本，再算每班50本，所以平均每班分到50本。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 900}, {\"type\": \"num\", \"value\": 6}]}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_p1222_q7",
+     "topicId": "msj_p1222",
+     "prompt": "第一组8人5分钟共夹440个玻璃球，第一组平均每人每分钟夹多少个？",
+     "question": "第一组8人5分钟共夹440个玻璃球，第一组平均每人每分钟夹多少个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "55个"
+      },
+      {
+       "label": "B",
+       "text": "88个"
+      },
+      {
+       "label": "C",
+       "text": "5个"
+      },
+      {
+       "label": "D",
+       "text": "11个"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "440除以8得55，是每人5分钟夹的个数；再除以5得11，就是平均每人每分钟夹的个数。"
+    },
+    {
+     "id": "msj_p1222_q8",
+     "topicId": "msj_p1222",
+     "prompt": "4组同学去植树，每组8人，一共植树128棵。平均每人植树多少棵？说说你的想法。",
+     "question": "4组同学去植树，每组8人，一共植树128棵。平均每人植树多少棵？说说你的想法。",
+     "answer": "先找出有联系的条件：4组、每组8人，可以先算一共有多少人，4乘8等于32人；再用总棵数除以总人数，128除以32等于4棵。也可以列成128除以4再除以8。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "两步计算的连除问题要先说清先算什么、再算什么，求出得数后还可以把得数当作条件回头检验。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1223",
+   "description": "通过练习一、练习二和本单元的复习，巩固整十数口算、试商与调商、商是两位数的笔算以及连除问题，学会找错、验算并用除法解决实际问题。",
+   "mastery_criteria": [
+    "能熟练笔算除数是两位数的除法并验算",
+    "能找出竖式中的错误并改正"
+   ],
+   "type": "application",
+   "misconceptions": [
+    "看到商偏大就重算一遍，不去调整那一位",
+    "算完不验算，余数比除数大也交卷"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1223_q1",
+     "topicId": "msj_p1223",
+     "prompt": "下面哪个算式与640除以80的商相同？",
+     "question": "下面哪个算式与640除以80的商相同？",
+     "options": [
+      {
+       "label": "A",
+       "text": "64除以8"
+      },
+      {
+       "label": "B",
+       "text": "640除以8"
+      },
+      {
+       "label": "C",
+       "text": "64除以80"
+      },
+      {
+       "label": "D",
+       "text": "640除以800"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "640除以80等于8，64除以8也等于8，被除数和除数同时缩小到原来的十分之一，商不变。"
+    },
+    {
+     "id": "msj_p1223_q2",
+     "topicId": "msj_p1223",
+     "prompt": "用竖式计算325除以25，商是多少？",
+     "question": "用竖式计算325除以25，商是多少？",
+     "answer": 13,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "32除以25商1，余7；把5移下来是75，75除以25商3，所以商是13。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 325}, {\"type\": \"num\", \"value\": 25}]}"
+    },
+    {
+     "id": "msj_p1223_q3",
+     "topicId": "msj_p1223",
+     "prompt": "计算288除以36，把36看作40试商7，36乘7等于252，余36，余数等于除数，应把商调成多少？",
+     "question": "计算288除以36，把36看作40试商7，36乘7等于252，余36，余数等于除数，应把商调成多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "8"
+      },
+      {
+       "label": "C",
+       "text": "7"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "余数等于除数说明还能再分出一份，商偏小，要调大。商8时36乘8等于288，正好除尽。"
+    },
+    {
+     "id": "msj_p1223_q4",
+     "topicId": "msj_p1223",
+     "prompt": "下面哪道题的商是两位数？",
+     "question": "下面哪道题的商是两位数？",
+     "options": [
+      {
+       "label": "A",
+       "text": "126除以21"
+      },
+      {
+       "label": "B",
+       "text": "90除以15"
+      },
+      {
+       "label": "C",
+       "text": "156除以12"
+      },
+      {
+       "label": "D",
+       "text": "438除以62"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "156的前两位15比12大，够除，所以商是两位数；其余三题前两位都比除数小，商都是一位数。"
+    },
+    {
+     "id": "msj_p1223_q5",
+     "topicId": "msj_p1223",
+     "prompt": "口算630除以70时，得到的商是（　）。",
+     "question": "口算630除以70时，得到的商是（　）。",
+     "answer": "9",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "630是63个十，70是7个十，63除以7等于9，也可以想70乘9等于630，所以商是9。"
+    },
+    {
+     "id": "msj_p1223_q6",
+     "topicId": "msj_p1223",
+     "prompt": "用竖式计算540除以36，商是多少？",
+     "question": "用竖式计算540除以36，商是多少？",
+     "answer": 15,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "54除以36商1，余18；把0移下来是180，180除以36商5，所以商是15。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 540}, {\"type\": \"num\", \"value\": 36}]}"
+    },
+    {
+     "id": "msj_p1223_q7",
+     "topicId": "msj_p1223",
+     "prompt": "青山村收获182箱苹果和178箱梨，一辆卡车每次能运4箱水果，多少次才能全部运完？",
+     "question": "青山村收获182箱苹果和178箱梨，一辆卡车每次能运4箱水果，多少次才能全部运完？",
+     "options": [
+      {
+       "label": "A",
+       "text": "45次"
+      },
+      {
+       "label": "B",
+       "text": "46次"
+      },
+      {
+       "label": "C",
+       "text": "180次"
+      },
+      {
+       "label": "D",
+       "text": "90次"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先把两种水果加起来，182加178等于360箱；再用360除以4等于90次，所以90次才能全部运完。"
+    },
+    {
+     "id": "msj_p1223_q8",
+     "topicId": "msj_p1223",
+     "prompt": "检查除法竖式时，可以从哪两个方面发现错误？",
+     "question": "检查除法竖式时，可以从哪两个方面发现错误？",
+     "answer": "一看商的位置：除到被除数的哪一位，商就要写在那一位上面；二看余数：余数必须比除数小，比除数大说明商小了。最后用商乘除数再加余数，看是否等于被除数。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "找准商的位置、检查余数大小、再做一次验算，这三步能把笔算除法的大部分错误挡在外面。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1224",
+   "description": "用6个、36个、48个边长1厘米的正方形拼出不同的图形，分别计算面积和周长，比较后发现在方格纸上画周长一定的长方形时，长与宽越接近面积越大。",
+   "mastery_criteria": [
+    "会用同样多的小正方形拼出不同图形并算出周长",
+    "能发现拼成正方形时周长最短、周长一定时长宽越接近面积越大"
+   ],
+   "type": "reasoning",
+   "misconceptions": [
+    "以为面积不变周长就不变",
+    "以为图形看起来越大周长就一定越大"
+   ],
+   "page": 42,
+   "questions": [
+    {
+     "id": "msj_p1224_q1",
+     "topicId": "msj_p1224",
+     "prompt": "用6个边长1厘米的正方形拼成一个图形，这个图形的面积是多少？",
+     "question": "用6个边长1厘米的正方形拼成一个图形，这个图形的面积是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "6平方厘米"
+      },
+      {
+       "label": "B",
+       "text": "6厘米"
+      },
+      {
+       "label": "C",
+       "text": "36平方厘米"
+      },
+      {
+       "label": "D",
+       "text": "12平方厘米"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "每个小正方形的面积是1平方厘米，6个拼成的图形面积就是6平方厘米，拼法不同面积都不变。"
+    },
+    {
+     "id": "msj_p1224_q2",
+     "topicId": "msj_p1224",
+     "prompt": "用6个边长1厘米的正方形拼成一排，拼成的长方形的周长是多少厘米？",
+     "question": "用6个边长1厘米的正方形拼成一排，拼成的长方形的周长是多少厘米？",
+     "answer": 14,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "拼成一排时长6厘米、宽1厘米，周长等于长与宽的和乘2，也就是6加1得7，7乘2等于14厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 1}]}]}"
+    },
+    {
+     "id": "msj_p1224_q3",
+     "topicId": "msj_p1224",
+     "prompt": "用同样多的小正方形拼成不同形状的图形，拼成的图形面积会怎样？",
+     "question": "用同样多的小正方形拼成不同形状的图形，拼成的图形面积会怎样？",
+     "options": [
+      {
+       "label": "A",
+       "text": "变大"
+      },
+      {
+       "label": "B",
+       "text": "不变"
+      },
+      {
+       "label": "C",
+       "text": "变小"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "小正方形的个数没有变，每个的面积也不变，所以拼成什么形状面积都不变，变的是周长。"
+    },
+    {
+     "id": "msj_p1224_q4",
+     "topicId": "msj_p1224",
+     "prompt": "用36个边长1厘米的正方形拼成长方形或正方形，周长最短的是哪一种？",
+     "question": "用36个边长1厘米的正方形拼成长方形或正方形，周长最短的是哪一种？",
+     "options": [
+      {
+       "label": "A",
+       "text": "长36厘米、宽1厘米"
+      },
+      {
+       "label": "B",
+       "text": "长18厘米、宽2厘米"
+      },
+      {
+       "label": "C",
+       "text": "长6厘米、宽6厘米"
+      },
+      {
+       "label": "D",
+       "text": "长12厘米、宽3厘米"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "长与宽越接近，周长越短。长6宽6即边长6厘米的正方形，周长24厘米，四种拼法里最短。"
+    },
+    {
+     "id": "msj_p1224_q5",
+     "topicId": "msj_p1224",
+     "prompt": "用48个边长1厘米的正方形拼成长方形，周长最短是（　）厘米。",
+     "question": "用48个边长1厘米的正方形拼成长方形，周长最短是（　）厘米。",
+     "answer": "28",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "48个正方形拼成8乘6的长方形时长与宽最接近，周长等于8加6的和乘2，也就是14乘2等于28厘米。"
+    },
+    {
+     "id": "msj_p1224_q6",
+     "topicId": "msj_p1224",
+     "prompt": "用36个边长1厘米的正方形拼成一个正方形，它的周长是多少厘米？",
+     "question": "用36个边长1厘米的正方形拼成一个正方形，它的周长是多少厘米？",
+     "answer": 24,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "36个正方形拼成正方形，边长是6厘米，周长等于边长乘4，6乘4等于24厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msj_p1224_q7",
+     "topicId": "msj_p1224",
+     "prompt": "周长都是16厘米的长方形和正方形中，面积最大的是哪一个？",
+     "question": "周长都是16厘米的长方形和正方形中，面积最大的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "长7厘米、宽1厘米的长方形"
+      },
+      {
+       "label": "B",
+       "text": "长6厘米、宽2厘米的长方形"
+      },
+      {
+       "label": "C",
+       "text": "长5厘米、宽3厘米的长方形"
+      },
+      {
+       "label": "D",
+       "text": "边长4厘米的正方形"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "周长16厘米时长与宽的和是8厘米。长与宽越接近面积越大，边长4厘米的正方形面积16平方厘米最大。"
+    },
+    {
+     "id": "msj_p1224_q8",
+     "topicId": "msj_p1224",
+     "prompt": "通过拼图形的活动，你发现了什么规律？请说出两条。",
+     "question": "通过拼图形的活动，你发现了什么规律？请说出两条。",
+     "answer": "第一条：用同样多的小正方形拼图形，面积都不变，但周长不相同；第二条：长和宽越接近，周长越短，拼成正方形时周长最短。反过来，周长一定时，长和宽越接近，面积越大。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "拼摆活动里的规律要靠比较数据发现：个数相同则面积相同，周长随长宽差变大而变长，这就是教材说的隐含规律。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1225",
+   "description": "借助跳绳分组的情境理解乘法的意义，知道求几个相同加数的和用乘法，再通过改编问题认识除法是乘法的逆运算，会用乘数乘乘数等于积来推算。",
+   "mastery_criteria": [
+    "能说出乘法的意义并列出乘法算式",
+    "能用乘除互逆关系由积和一个乘数求另一个乘数"
+   ],
+   "type": "conceptual",
+   "misconceptions": [
+    "把除法说成加法的逆运算",
+    "改编问题时把条件和问题改乱了，列式对不上"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1225_q1",
+     "topicId": "msj_p1225",
+     "prompt": "3组同学跳绳，每组4人，求一共有多少人，就是求什么？",
+     "question": "3组同学跳绳，每组4人，求一共有多少人，就是求什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3个4相加的和"
+      },
+      {
+       "label": "B",
+       "text": "4个3相乘的积"
+      },
+      {
+       "label": "C",
+       "text": "3加4的和"
+      },
+      {
+       "label": "D",
+       "text": "4减3的差"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "每组4人、有3组，就是3个4相加，求几个相同加数的和用乘法计算比较简便，列式4乘3。"
+    },
+    {
+     "id": "msj_p1225_q2",
+     "topicId": "msj_p1225",
+     "prompt": "3组同学跳绳，每组4人，一共有多少人？",
+     "question": "3组同学跳绳，每组4人，一共有多少人？",
+     "answer": 12,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "3个4相加用乘法算，4乘3等于12，所以一共有12人，这就是求几个相同加数和的简便运算。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_p1225_q3",
+     "topicId": "msj_p1225",
+     "prompt": "因为6乘7等于42，所以42除以6的商是多少？",
+     "question": "因为6乘7等于42，所以42除以6的商是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "7"
+      },
+      {
+       "label": "C",
+       "text": "42"
+      },
+      {
+       "label": "D",
+       "text": "13"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个乘数相乘得积，用积除以其中一个乘数就得到另一个乘数，所以42除以6等于7。"
+    },
+    {
+     "id": "msj_p1225_q4",
+     "topicId": "msj_p1225",
+     "prompt": "已知两个乘数的积与其中一个乘数，求另一个乘数的运算叫作什么？",
+     "question": "已知两个乘数的积与其中一个乘数，求另一个乘数的运算叫作什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "加法"
+      },
+      {
+       "label": "B",
+       "text": "减法"
+      },
+      {
+       "label": "C",
+       "text": "除法"
+      },
+      {
+       "label": "D",
+       "text": "乘法"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "这正是教材给除法下的定义：已知两个乘数的积与其中一个乘数，求另一个乘数的运算叫作除法。"
+    },
+    {
+     "id": "msj_p1225_q5",
+     "topicId": "msj_p1225",
+     "prompt": "根据45乘12等于540，540除以12等于（　）。",
+     "question": "根据45乘12等于540，540除以12等于（　）。",
+     "answer": "45",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "乘法与除法互逆，积540除以一个乘数12，就得到另一个乘数45。"
+    },
+    {
+     "id": "msj_p1225_q6",
+     "topicId": "msj_p1225",
+     "prompt": "在括号里填数：416除以16等于多少？",
+     "question": "在括号里填数：416除以16等于多少？",
+     "answer": 26,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "16乘26等于416，所以416除以16等于26，也可以用26乘16验算。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 416}, {\"type\": \"num\", \"value\": 16}]}"
+    },
+    {
+     "id": "msj_p1225_q7",
+     "topicId": "msj_p1225",
+     "prompt": "若a乘b等于c，且a、b都不是0，下面哪个算式一定正确？",
+     "question": "若a乘b等于c，且a、b都不是0，下面哪个算式一定正确？",
+     "options": [
+      {
+       "label": "A",
+       "text": "a除以b等于c"
+      },
+      {
+       "label": "B",
+       "text": "b除以c等于a"
+      },
+      {
+       "label": "C",
+       "text": "c乘a等于b"
+      },
+      {
+       "label": "D",
+       "text": "c除以b等于a"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由a乘b等于c，用积c除以乘数b就得到另一个乘数a，所以c除以b等于a；其余三式把运算关系弄反了。"
+    },
+    {
+     "id": "msj_p1225_q8",
+     "topicId": "msj_p1225",
+     "prompt": "把3组同学跳绳、每组4人、一共12人改编成两个用除法计算的问题。",
+     "question": "把3组同学跳绳、每组4人、一共12人改编成两个用除法计算的问题。",
+     "answer": "第一个：12人跳绳，平均分成3组，每组有多少人？列式12除以3等于4人。第二个：12人跳绳，每4人一组，可以分成多少组？列式12除以4等于3组。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "改编时把原来的一个条件改成问题、把问题改成条件，就能得到用除法计算的问题，这也说明除法是乘法的逆运算。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1226",
+   "description": "在买钢笔、买练习本的情境中认识单价、数量和总价，知道单价可以写成8元一支这样带斜线的形式，掌握总价等于单价乘数量，并会求单价或数量。",
+   "mastery_criteria": [
+    "能说出单价、数量、总价的含义并正确读写单价",
+    "会用总价等于单价乘数量求总价、单价或数量"
+   ],
+   "type": "application",
+   "misconceptions": [
+    "把单价说成总价，看到一共多少钱就说这是单价",
+    "求数量时用总价乘单价"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1226_q1",
+     "topicId": "msj_p1226",
+     "prompt": "每支钢笔8元，写成8元一支，它表示的是什么？",
+     "question": "每支钢笔8元，写成8元一支，它表示的是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "单价"
+      },
+      {
+       "label": "B",
+       "text": "数量"
+      },
+      {
+       "label": "C",
+       "text": "总价"
+      },
+      {
+       "label": "D",
+       "text": "路程"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "一件商品的价格叫作单价，8元一支表示每支钢笔的价钱，所以它是单价。"
+    },
+    {
+     "id": "msj_p1226_q2",
+     "topicId": "msj_p1226",
+     "prompt": "一种椅子的单价是55元一把，买48把这样的椅子一共要付多少元？",
+     "question": "一种椅子的单价是55元一把，买48把这样的椅子一共要付多少元？",
+     "answer": 2640,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "总价等于单价乘数量，55乘48等于2640，所以一共要付2640元。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 55}, {\"type\": \"num\", \"value\": 48}]}"
+    },
+    {
+     "id": "msj_p1226_q3",
+     "topicId": "msj_p1226",
+     "prompt": "买2支钢笔，每支8元，求一共要付多少元，列式是哪一个？",
+     "question": "买2支钢笔，每支8元，求一共要付多少元，列式是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "8加2"
+      },
+      {
+       "label": "B",
+       "text": "8乘2"
+      },
+      {
+       "label": "C",
+       "text": "8除以2"
+      },
+      {
+       "label": "D",
+       "text": "2除以8"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "每支8元是单价，2支是数量，求总价用单价乘数量，所以列式8乘2。"
+    },
+    {
+     "id": "msj_p1226_q4",
+     "topicId": "msj_p1226",
+     "prompt": "买8盒巧克力一共付了240元，每盒巧克力的单价是多少？",
+     "question": "买8盒巧克力一共付了240元，每盒巧克力的单价是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "240元一盒"
+      },
+      {
+       "label": "B",
+       "text": "8元一盒"
+      },
+      {
+       "label": "C",
+       "text": "30元一盒"
+      },
+      {
+       "label": "D",
+       "text": "32元一盒"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "已知总价240元和数量8盒，用总价除以数量求单价，240除以8等于30，所以单价是30元一盒。"
+    },
+    {
+     "id": "msj_p1226_q5",
+     "topicId": "msj_p1226",
+     "prompt": "填一填：总价等于单价乘（　）。",
+     "question": "填一填：总价等于单价乘（　）。",
+     "answer": "数量",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "每件商品的价钱乘买的件数就是一共要付的钱，所以总价等于单价乘数量。"
+    },
+    {
+     "id": "msj_p1226_q6",
+     "topicId": "msj_p1226",
+     "prompt": "15元能买3个同样的面包，每个面包多少元？",
+     "question": "15元能买3个同样的面包，每个面包多少元？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "15元是总价，3个是数量，用总价除以数量求单价，15除以3等于5元。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 15}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_p1226_q7",
+     "topicId": "msj_p1226",
+     "prompt": "商店运进110个玩具熊，按原价卖了一些，共收入928元，每个原价16元，已经卖出多少个？",
+     "question": "商店运进110个玩具熊，按原价卖了一些，共收入928元，每个原价16元，已经卖出多少个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "48个"
+      },
+      {
+       "label": "B",
+       "text": "64个"
+      },
+      {
+       "label": "C",
+       "text": "60个"
+      },
+      {
+       "label": "D",
+       "text": "58个"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "已知总价928元和单价16元，用总价除以单价求数量，928除以16等于58，所以已经卖出58个。"
+    },
+    {
+     "id": "msj_p1226_q8",
+     "topicId": "msj_p1226",
+     "prompt": "小明说单价越贵，总价一定越高。这句话对吗？请举例说明。",
+     "question": "小明说单价越贵，总价一定越高。这句话对吗？请举例说明。",
+     "answer": "不对，总价还和数量有关。比如练习本每本2元买10本要20元，钢笔每支8元只买2支要16元，钢笔单价贵，总价反而低。要看单价和数量两个量再比总价。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "总价等于单价乘数量，单价和数量都对总价有影响，只凭单价高低判断总价会出错。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1227",
+   "description": "通过比较小明、小红、小刚谁走得快，认识单位时间里行的路程叫作速度，学会用70米每分、80千米每时这样的写法表示速度，掌握路程等于速度乘时间。",
+   "mastery_criteria": [
+    "能读、写速度单位并说出它的含义",
+    "会用路程等于速度乘时间求路程、速度或时间"
+   ],
+   "type": "application",
+   "misconceptions": [
+    "时间不同、路程也不同时直接比路程多少",
+    "把速度单位写成米，漏掉每分或每时"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1227_q1",
+     "topicId": "msj_p1227",
+     "prompt": "小明步行的速度写作70米每分，应该怎么读？",
+     "question": "小明步行的速度写作70米每分，应该怎么读？",
+     "options": [
+      {
+       "label": "A",
+       "text": "70米每分"
+      },
+      {
+       "label": "B",
+       "text": "70分每米"
+      },
+      {
+       "label": "C",
+       "text": "70米乘分"
+      },
+      {
+       "label": "D",
+       "text": "70米加1分"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "米每分读作米每分，表示每分钟走70米，速度单位要读成每分或每时。"
+    },
+    {
+     "id": "msj_p1227_q2",
+     "topicId": "msj_p1227",
+     "prompt": "声音在空气中的传播速度大约是340米每秒，5秒可以传播多少米？",
+     "question": "声音在空气中的传播速度大约是340米每秒，5秒可以传播多少米？",
+     "answer": 1700,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "路程等于速度乘时间，340乘5等于1700，所以5秒可以传播1700米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 340}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "msj_p1227_q3",
+     "topicId": "msj_p1227",
+     "prompt": "小明4分钟走了280米，求他平均每分钟走多少米，列式是哪一个？",
+     "question": "小明4分钟走了280米，求他平均每分钟走多少米，列式是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "280乘4"
+      },
+      {
+       "label": "B",
+       "text": "280除以4"
+      },
+      {
+       "label": "C",
+       "text": "4除以280"
+      },
+      {
+       "label": "D",
+       "text": "280加4"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "已知路程280米和时间4分钟，用路程除以时间求速度，280除以4等于70米每分。"
+    },
+    {
+     "id": "msj_p1227_q4",
+     "topicId": "msj_p1227",
+     "prompt": "一辆汽车以85千米每时的速度行驶8小时，一共行了多少千米？",
+     "question": "一辆汽车以85千米每时的速度行驶8小时，一共行了多少千米？",
+     "options": [
+      {
+       "label": "A",
+       "text": "93千米"
+      },
+      {
+       "label": "B",
+       "text": "77千米"
+      },
+      {
+       "label": "C",
+       "text": "680千米"
+      },
+      {
+       "label": "D",
+       "text": "690千米"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "路程等于速度乘时间，85乘8等于680，所以一共行了680千米。"
+    },
+    {
+     "id": "msj_p1227_q5",
+     "topicId": "msj_p1227",
+     "prompt": "填一填：路程等于速度乘（　）。",
+     "question": "填一填：路程等于速度乘（　）。",
+     "answer": "时间",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "每单位时间行的路程是速度，速度乘时间就是一共行的路程，所以路程等于速度乘时间。"
+    },
+    {
+     "id": "msj_p1227_q6",
+     "topicId": "msj_p1227",
+     "prompt": "晓荣家离学校840米，他步行速度是70米每分，走到学校要多少分钟？",
+     "question": "晓荣家离学校840米，他步行速度是70米每分，走到学校要多少分钟？",
+     "answer": 12,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "已知路程840米和速度70米每分，用路程除以速度求时间，840除以70等于12分钟。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 840}, {\"type\": \"num\", \"value\": 70}]}"
+    },
+    {
+     "id": "msj_p1227_q7",
+     "topicId": "msj_p1227",
+     "prompt": "甲、乙两城之间的航线长2400千米，一架飞机飞行3小时，它的飞行速度是多少？",
+     "question": "甲、乙两城之间的航线长2400千米，一架飞机飞行3小时，它的飞行速度是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "800千米"
+      },
+      {
+       "label": "B",
+       "text": "7200千米每时"
+      },
+      {
+       "label": "C",
+       "text": "80千米每时"
+      },
+      {
+       "label": "D",
+       "text": "800千米每时"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "用路程除以时间求速度，2400除以3等于800，速度单位是千米每时，所以飞行速度是800千米每时。"
+    },
+    {
+     "id": "msj_p1227_q8",
+     "topicId": "msj_p1227",
+     "prompt": "小明和小红都走了4分钟，小明走280米，小红走240米，谁走得快？为什么？",
+     "question": "小明和小红都走了4分钟，小明走280米，小红走240米，谁走得快？为什么？",
+     "answer": "小明走得快。两人用的时间相同，小明走的路程长，平均每分钟走得就多：280除以4等于70米每分，240除以4等于60米每分，所以小明快。时间相同时比路程。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "比快慢要看单位时间里走的路程，也就是速度；时间相同可以直接比路程，时间不同就要先算速度再比。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1228",
+   "description": "用列表整理条件和问题，先求出不变的单一量（如每本的价钱、每箱的质量、每分钟放水的量），再解决照这样计算的归一问题，并学会检验结果。",
+   "mastery_criteria": [
+    "会用列表把条件和问题对齐整理",
+    "会先求单一量再解决照这样计算的问题"
+   ],
+   "type": "reasoning",
+   "misconceptions": [
+    "不先求单一量，直接拿两个不同的总数相除",
+    "列表时把单价和总价的列写反"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1228_q1",
+     "topicId": "msj_p1228",
+     "prompt": "解决3本笔记本18元、买5本要多少元的问题，要先求出什么？",
+     "question": "解决3本笔记本18元、买5本要多少元的问题，要先求出什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "每本多少元"
+      },
+      {
+       "label": "B",
+       "text": "一共买几本"
+      },
+      {
+       "label": "C",
+       "text": "还剩多少元"
+      },
+      {
+       "label": "D",
+       "text": "一共多少元"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "同样的笔记本单价相同，先求出一本18除以3等于6元，再用6乘5求出买5本要30元。"
+    },
+    {
+     "id": "msj_p1228_q2",
+     "topicId": "msj_p1228",
+     "prompt": "3本同样的笔记本一共18元，每本多少元？",
+     "question": "3本同样的笔记本一共18元，每本多少元？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "用总价除以数量求单价，18除以3等于6，所以每本6元。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 18}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_p1228_q3",
+     "topicId": "msj_p1228",
+     "prompt": "猕猴桃每箱装8千克可以装45箱，如果每箱装6千克，可以装多少箱？要先求什么？",
+     "question": "猕猴桃每箱装8千克可以装45箱，如果每箱装6千克，可以装多少箱？要先求什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "每箱的质量"
+      },
+      {
+       "label": "B",
+       "text": "猕猴桃的总质量"
+      },
+      {
+       "label": "C",
+       "text": "箱数"
+      },
+      {
+       "label": "D",
+       "text": "每箱的价钱"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两装箱方法里猕猴桃的总质量不变，所以先求总质量，8乘45等于360千克，再除以6求箱数。"
+    },
+    {
+     "id": "msj_p1228_q4",
+     "topicId": "msj_p1228",
+     "prompt": "上题中猕猴桃的总质量是多少千克？",
+     "question": "上题中猕猴桃的总质量是多少千克？",
+     "options": [
+      {
+       "label": "A",
+       "text": "270千克"
+      },
+      {
+       "label": "B",
+       "text": "45千克"
+      },
+      {
+       "label": "C",
+       "text": "360千克"
+      },
+      {
+       "label": "D",
+       "text": "53千克"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "每箱8千克、45箱，8乘45等于360，所以总质量是360千克，每箱装6千克时能装60箱。"
+    },
+    {
+     "id": "msj_p1228_q5",
+     "topicId": "msj_p1228",
+     "prompt": "每箱装8千克可以装45箱，如果每箱装6千克，可以装（　）箱。",
+     "question": "每箱装8千克可以装45箱，如果每箱装6千克，可以装（　）箱。",
+     "answer": "60",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "先求总质量8乘45等于360千克，再算360除以6等于60，所以可以装60箱。"
+    },
+    {
+     "id": "msj_p1228_q6",
+     "topicId": "msj_p1228",
+     "prompt": "前10分钟一共装好5箱猕猴桃，照这样计算，90分钟一共能装多少箱？",
+     "question": "前10分钟一共装好5箱猕猴桃，照这样计算，90分钟一共能装多少箱？",
+     "answer": 45,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "先求每分钟装5除以10等于0.5箱，再算90分钟装0.5乘90等于45箱。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 10}]}, {\"type\": \"num\", \"value\": 90}]}"
+    },
+    {
+     "id": "msj_p1228_q7",
+     "topicId": "msj_p1228",
+     "prompt": "一辆汽车以85千米每时的速度从甲地到乙地，8小时到达；返回时用了10小时，返回时速度是多少？",
+     "question": "一辆汽车以85千米每时的速度从甲地到乙地，8小时到达；返回时用了10小时，返回时速度是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "850千米每时"
+      },
+      {
+       "label": "B",
+       "text": "75千米每时"
+      },
+      {
+       "label": "C",
+       "text": "680千米每时"
+      },
+      {
+       "label": "D",
+       "text": "68千米每时"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先求全程85乘8等于680千米，再用680除以10得68，所以返回时速度是68千米每时。"
+    },
+    {
+     "id": "msj_p1228_q8",
+     "topicId": "msj_p1228",
+     "prompt": "说说用列表整理条件和问题有什么好处。",
+     "question": "说说用列表整理条件和问题有什么好处。",
+     "answer": "把条件和问题按单价、数量、总价或者速度、时间、路程对齐写进表格，一眼能看出哪个量不变、先求什么，不会把数字张冠李戴；求出单一量后，还可以用它解决新的问题。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "列表把文字信息排成行列，能看清量之间的关系，也方便找出不变的量，这是解决归一问题的常用方法。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1229",
+   "description": "通过练习六、练习七综合运用总价与路程两组数量关系，解决倍数、归一和填表问题，如蓝鲸与大象的体重倍数、火车行完全程的路程、队服总价等。",
+   "mastery_criteria": [
+    "能综合运用总价与路程数量关系解题",
+    "能根据表格中已知的量补出未知的量"
+   ],
+   "type": "application",
+   "misconceptions": [
+    "看到倍数就乘，不分辨谁是几倍",
+    "填表时用错数量关系，把总价算成单价加数量"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1229_q1",
+     "topicId": "msj_p1229",
+     "prompt": "一头蓝鲸重165吨，是一头非洲象体重的33倍，这头非洲象重多少吨？",
+     "question": "一头蓝鲸重165吨，是一头非洲象体重的33倍，这头非洲象重多少吨？",
+     "options": [
+      {
+       "label": "A",
+       "text": "5吨"
+      },
+      {
+       "label": "B",
+       "text": "132吨"
+      },
+      {
+       "label": "C",
+       "text": "198吨"
+      },
+      {
+       "label": "D",
+       "text": "33吨"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "蓝鲸的体重是大象的33倍，求大象的体重要用除法，165除以33等于5，所以大象重5吨。"
+    },
+    {
+     "id": "msj_p1229_q2",
+     "topicId": "msj_p1229",
+     "prompt": "动车组列车的速度是264千米每时，大约5小时行完全程，全程大约多少千米？",
+     "question": "动车组列车的速度是264千米每时，大约5小时行完全程，全程大约多少千米？",
+     "answer": 1320,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "路程等于速度乘时间，264乘5等于1320，所以全程大约1320千米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 264}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "msj_p1229_q3",
+     "topicId": "msj_p1229",
+     "prompt": "水果店梨的单价是每箱24元，买15箱要付多少元？",
+     "question": "水果店梨的单价是每箱24元，买15箱要付多少元？",
+     "options": [
+      {
+       "label": "A",
+       "text": "39元"
+      },
+      {
+       "label": "B",
+       "text": "360元"
+      },
+      {
+       "label": "C",
+       "text": "240元"
+      },
+      {
+       "label": "D",
+       "text": "336元"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "总价等于单价乘数量，24乘15等于360，所以买15箱要付360元。"
+    },
+    {
+     "id": "msj_p1229_q4",
+     "topicId": "msj_p1229",
+     "prompt": "苹果每箱46元，一共付了828元，买了多少箱？",
+     "question": "苹果每箱46元，一共付了828元，买了多少箱？",
+     "options": [
+      {
+       "label": "A",
+       "text": "17箱"
+      },
+      {
+       "label": "B",
+       "text": "19箱"
+      },
+      {
+       "label": "C",
+       "text": "18箱"
+      },
+      {
+       "label": "D",
+       "text": "46箱"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "已知总价828元和单价46元，用总价除以单价求数量，828除以46等于18，所以买了18箱。"
+    },
+    {
+     "id": "msj_p1229_q5",
+     "topicId": "msj_p1229",
+     "prompt": "飞机速度245米每秒，8秒飞行（　）米。",
+     "question": "飞机速度245米每秒，8秒飞行（　）米。",
+     "answer": "1960",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "路程等于速度乘时间，245乘8等于1960，所以8秒飞行1960米。"
+    },
+    {
+     "id": "msj_p1229_q6",
+     "topicId": "msj_p1229",
+     "prompt": "一辆自行车4分钟行了980米，它的速度是多少米每分？",
+     "question": "一辆自行车4分钟行了980米，它的速度是多少米每分？",
+     "answer": 245,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "用路程除以时间求速度，980除以4等于245，所以速度是245米每分。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 980}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msj_p1229_q7",
+     "topicId": "msj_p1229",
+     "prompt": "三种鼓号队服的单价分别是72元一套、96元一套、85元一套，为24个同学每人订一套，最多要用多少元？",
+     "question": "三种鼓号队服的单价分别是72元一套、96元一套、85元一套，为24个同学每人订一套，最多要用多少元？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1728元"
+      },
+      {
+       "label": "B",
+       "text": "2040元"
+      },
+      {
+       "label": "C",
+       "text": "4020元"
+      },
+      {
+       "label": "D",
+       "text": "2304元"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "要花最多就选最贵的一种，96乘24等于2304元；选72元一套最少，只要1728元。"
+    },
+    {
+     "id": "msj_p1229_q8",
+     "topicId": "msj_p1229",
+     "prompt": "乒乓球每盒6个，买7盒一共付了84元，每个乒乓球多少元？说说你的想法。",
+     "question": "乒乓球每盒6个，买7盒一共付了84元，每个乒乓球多少元？说说你的想法。",
+     "answer": "先求一共有多少个：6乘7等于42个；再用总钱数除以个数，84除以42等于2元，所以每个2元。也可以先求一盒多少元：84除以7等于12元，再算12除以6等于2元。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "这道题要先统一到个数再求单价，说明解决实际问题要先弄清数量关系，不同思路只要算理对都能得到同一个结果。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1230",
+   "description": "在单元的评价与反思中回顾乘除的意义、总价与路程两组数量关系，查找家乡到北京的距离和交通工具的速度，算一算乘这些交通工具大约各需要多长时间。",
+   "mastery_criteria": [
+    "能对照评价表说出本单元的收获与困难",
+    "能自选真实情境提出问题并解决"
+   ],
+   "type": "application",
+   "misconceptions": [
+    "只会套公式，说不出公式是怎么来的",
+    "算时间时用速度乘路程，把关系弄反"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1230_q1",
+     "topicId": "msj_p1230",
+     "prompt": "本单元学习的常见数量关系是哪一组？",
+     "question": "本单元学习的常见数量关系是哪一组？",
+     "options": [
+      {
+       "label": "A",
+       "text": "总价等于单价乘数量、路程等于速度乘时间"
+      },
+      {
+       "label": "B",
+       "text": "长乘宽等于面积"
+      },
+      {
+       "label": "C",
+       "text": "被除数除以除数等于商"
+      },
+      {
+       "label": "D",
+       "text": "加数加加数等于和"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "本单元的两组核心数量关系是总价等于单价乘数量、路程等于速度乘时间，其余是其他单元的内容。"
+    },
+    {
+     "id": "msj_p1230_q2",
+     "topicId": "msj_p1230",
+     "prompt": "某列动车速度264千米每时，从甲地到乙地大约5小时，全程大约多少千米？",
+     "question": "某列动车速度264千米每时，从甲地到乙地大约5小时，全程大约多少千米？",
+     "answer": 1320,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "路程等于速度乘时间，264乘5等于1320，所以全程大约1320千米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 264}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "msj_p1230_q3",
+     "topicId": "msj_p1230",
+     "prompt": "要算乘某种交通工具去北京需要多长时间，要用到哪条关系？",
+     "question": "要算乘某种交通工具去北京需要多长时间，要用到哪条关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "总价等于单价乘数量"
+      },
+      {
+       "label": "B",
+       "text": "时间等于路程除以速度"
+      },
+      {
+       "label": "C",
+       "text": "面积等于长乘宽"
+      },
+      {
+       "label": "D",
+       "text": "周长等于长加宽的和乘2"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "已知路程和速度求时间，用路程除以速度，所以时间等于路程除以速度。"
+    },
+    {
+     "id": "msj_p1230_q4",
+     "topicId": "msj_p1230",
+     "prompt": "汽车速度97千米每时，大约13小时行完全程，全程大约多少千米？",
+     "question": "汽车速度97千米每时，大约13小时行完全程，全程大约多少千米？",
+     "options": [
+      {
+       "label": "A",
+       "text": "110千米"
+      },
+      {
+       "label": "B",
+       "text": "84千米"
+      },
+      {
+       "label": "C",
+       "text": "1261千米"
+      },
+      {
+       "label": "D",
+       "text": "1361千米"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "路程等于速度乘时间，97乘13等于1261，所以全程大约1261千米。"
+    },
+    {
+     "id": "msj_p1230_q5",
+     "topicId": "msj_p1230",
+     "prompt": "评价表中能仔细审题、认真思考、主动检查，评的是学习（　）。",
+     "question": "评价表中能仔细审题、认真思考、主动检查，评的是学习（　）。",
+     "answer": "习惯",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "审题、思考、检查说的是学习过程中的习惯，与计算是否熟练分开评价，这样能看清自己该改哪里。"
+    },
+    {
+     "id": "msj_p1230_q6",
+     "topicId": "msj_p1230",
+     "prompt": "一辆自行车每分钟行245米，4分钟行多少米？",
+     "question": "一辆自行车每分钟行245米，4分钟行多少米？",
+     "answer": 980,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "路程等于速度乘时间，245乘4等于980，所以4分钟行980米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 245}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msj_p1230_q7",
+     "topicId": "msj_p1230",
+     "prompt": "下面哪种做法最有助于发现自己解题中的错误？",
+     "question": "下面哪种做法最有助于发现自己解题中的错误？",
+     "options": [
+      {
+       "label": "A",
+       "text": "做完马上交，不检查"
+      },
+      {
+       "label": "B",
+       "text": "只对答案，不看计算过程"
+      },
+      {
+       "label": "C",
+       "text": "遇到难题直接跳过"
+      },
+      {
+       "label": "D",
+       "text": "做完用商乘除数再加余数、或速度乘时间验算核对"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "验算是把结果代回原来的数量关系里检查，商乘除数再加余数要等于被除数，速度乘时间要等于路程，这样能发现算错的地方。"
+    },
+    {
+     "id": "msj_p1230_q8",
+     "topicId": "msj_p1230",
+     "prompt": "这个单元你学到了哪个数量关系？请举一个生活中的例子说明。",
+     "question": "这个单元你学到了哪个数量关系？请举一个生活中的例子说明。",
+     "answer": "我学到了总价等于单价乘数量。比如文具店练习本每本3元，买4本就是3乘4等于12元。也可以说路程等于速度乘时间，比如每分钟走60米，走5分钟就是60乘5等于300米。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "数量关系要能说清、用得上：先说出关系式，再找一个真实情境中的单价与数量或速度与时间，把数据代进去算一遍。"
+    }
+   ]
+  }
+ ]
+}

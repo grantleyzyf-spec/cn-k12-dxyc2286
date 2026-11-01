@@ -1,0 +1,2480 @@
+{
+ "tag": "k8a",
+ "book": "苏科版八年级上册",
+ "unit_points": [
+  {
+   "id": "msk_p013",
+   "type": "conceptual",
+   "description": "三角形的三边关系、大边对大角与大角对大边，三角形的中线、角平分线和高线，以及全等三角形的性质与判定、线段垂直平分线与角平分线的性质、等腰三角形和直角三角形的性质。",
+   "mastery_criteria": [
+    "能用任意两边之和大于第三边判断三条线段能否组成三角形",
+    "能按已知条件选择边角边、角边角、边边边或斜边、直角边判定两个三角形全等"
+   ],
+   "questions": [
+    {
+     "id": "msk_p013_q1",
+     "topicId": "msk_p013",
+     "prompt": "下列长度的三条线段能组成三角形的是",
+     "question": "下列长度的三条线段能组成三角形的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "5，6，9"
+      },
+      {
+       "label": "B",
+       "text": "3，5，8"
+      },
+      {
+       "label": "C",
+       "text": "1，4，7"
+      },
+      {
+       "label": "D",
+       "text": "2，2，5"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "判断三条线段能否组成三角形，要看两条较短线段的和是否大于第三条线段。5加6等于11，大于9，所以这三条线段能组成三角形；其余三组中两条较短边的和都不大于第三边，不能组成三角形。"
+    },
+    {
+     "id": "msk_p013_q2",
+     "topicId": "msk_p013",
+     "prompt": "判定两个三角形全等时，已知两边及其夹角分别相等，应选用的方法是",
+     "question": "判定两个三角形全等时，已知两边及其夹角分别相等，应选用的方法是",
+     "options": [
+      {
+       "label": "A",
+       "text": "角边角"
+      },
+      {
+       "label": "B",
+       "text": "边角边"
+      },
+      {
+       "label": "C",
+       "text": "边边边"
+      },
+      {
+       "label": "D",
+       "text": "斜边、直角边"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两条边和它们所夹的角分别相等，对应的是边角边判定。角边角需要两个角和它们的夹边分别相等，边边边需要三条边分别相等，斜边、直角边只用于直角三角形。"
+    },
+    {
+     "id": "msk_p013_q3",
+     "topicId": "msk_p013",
+     "prompt": "全等三角形的对应边和对应角分别有什么关系",
+     "question": "全等三角形的对应边和对应角分别有什么关系",
+     "options": [
+      {
+       "label": "A",
+       "text": "对应边不一定相等，对应角相等"
+      },
+      {
+       "label": "B",
+       "text": "对应边相等，对应角互补"
+      },
+      {
+       "label": "C",
+       "text": "对应边相等，对应角相等"
+      },
+      {
+       "label": "D",
+       "text": "对应角相等，对应边成比例"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个三角形全等是指它们能完全重合，重合时相等的边叫对应边，重合时相等的角叫对应角，所以全等三角形的对应边相等，对应角也相等。"
+    },
+    {
+     "id": "msk_p013_q4",
+     "topicId": "msk_p013",
+     "prompt": "一个三角形的两条边长分别是5和8，第三条边长是正整数，那么第三条边最长是多少？",
+     "question": "一个三角形的两条边长分别是5和8，第三条边长是正整数，那么第三条边最长是多少？",
+     "answer": 12,
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 13}, {\"type\": \"num\", \"value\": 1}]}",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由三角形任意两边之和大于第三边，第三条边要小于5加8等于13；又第三条边与5的和要大于8，所以第三条边大于3。因此正整数中第三条边最大取12。"
+    },
+    {
+     "id": "msk_p013_q5",
+     "topicId": "msk_p013",
+     "prompt": "在直角三角形ABC中，角C等于90度，AC等于6，BC等于8，那么AB等于（　）。",
+     "question": "在直角三角形ABC中，角C等于90度，AC等于6，BC等于8，那么AB等于（　）。",
+     "answer": "10",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "角C是直角，所以AB是斜边，AC和BC是两条直角边。根据勾股定理，AB的平方等于6的平方加8的平方，等于36加64等于100，所以AB等于10。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p014",
+   "type": "conceptual",
+   "description": "平方根、算术平方根与立方根的意义和求法，无理数与实数的概念及实数的分类，实数与数轴上的点一一对应，用有理数估计无理数的范围，以及用四舍五入法取近似值并说出精确度。",
+   "mastery_criteria": [
+    "能求一个数的算术平方根、平方根和立方根",
+    "能判断有理数与无理数，并用有理数估计无理数的范围"
+   ],
+   "questions": [
+    {
+     "id": "msk_p014_q1",
+     "topicId": "msk_p014",
+     "prompt": "9的平方根是多少？请选出正确的结果",
+     "question": "9的平方根是多少？请选出正确的结果",
+     "options": [
+      {
+       "label": "A",
+       "text": "正负3"
+      },
+      {
+       "label": "B",
+       "text": "负3"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "81"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "因为3的平方等于9，负3的平方也等于9，所以9的平方根有两个，分别是3和负3，合起来写作正负3；其中3是9的算术平方根。"
+    },
+    {
+     "id": "msk_p014_q2",
+     "topicId": "msk_p014",
+     "prompt": "下列各数中，是无理数的是",
+     "question": "下列各数中，是无理数的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "3.14"
+      },
+      {
+       "label": "B",
+       "text": "根号5"
+      },
+      {
+       "label": "C",
+       "text": "七分之二十二"
+      },
+      {
+       "label": "D",
+       "text": "0.101010…"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "无理数是无限不循环小数。3.14是有限小数，七分之二十二是分数，0.101010…是循环小数，它们都是有理数；根号5是无限不循环小数，是无理数。"
+    },
+    {
+     "id": "msk_p014_q3",
+     "topicId": "msk_p014",
+     "prompt": "实数与数轴上的点之间的关系是",
+     "question": "实数与数轴上的点之间的关系是",
+     "options": [
+      {
+       "label": "A",
+       "text": "只有无理数能用数轴上的点表示"
+      },
+      {
+       "label": "B",
+       "text": "只有有理数能用数轴上的点表示"
+      },
+      {
+       "label": "C",
+       "text": "一一对应"
+      },
+      {
+       "label": "D",
+       "text": "互不相关"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "每一个实数都可以用数轴上的一个点来表示，数轴上的每一个点也都表示一个实数，所以实数与数轴上的点是一一对应的。"
+    },
+    {
+     "id": "msk_p014_q4",
+     "topicId": "msk_p014",
+     "prompt": "一个正数的两个平方根分别是a加3和2a减6，求这个正数。",
+     "question": "一个正数的两个平方根分别是a加3和2a减6，求这个正数。",
+     "answer": 16,
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 2}]}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "一个正数的两个平方根互为相反数，所以a加3与2a减6的和等于0，解得a等于1。这时两个平方根分别是4和负4，这个正数就是4的平方，等于16。"
+    },
+    {
+     "id": "msk_p014_q5",
+     "topicId": "msk_p014",
+     "prompt": "有理数和无理数统称为（　）。",
+     "question": "有理数和无理数统称为（　）。",
+     "answer": "实数",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "有理数包括整数和分数，无理数是无限不循环小数，把有理数和无理数合在一起统称为实数，实数与数轴上的点一一对应。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p015",
+   "type": "procedural",
+   "description": "勾股定理的探索与证明，直角三角形两条直角边的平方和等于斜边的平方，勾股定理的逆定理，以及用勾股定理求边长、把实际问题转化为直角三角形问题。",
+   "mastery_criteria": [
+    "能说出勾股定理并用于求直角三角形中未知的边",
+    "能用勾股定理的逆定理判断一个三角形是不是直角三角形"
+   ],
+   "questions": [
+    {
+     "id": "msk_p015_q1",
+     "topicId": "msk_p015",
+     "prompt": "在直角三角形中，两条直角边的长分别是3和4，那么斜边的长是",
+     "question": "在直角三角形中，两条直角边的长分别是3和4，那么斜边的长是",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "7"
+      },
+      {
+       "label": "D",
+       "text": "25"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两条直角边的平方和是3的平方加4的平方，等于9加16等于25；斜边的平方等于25，所以斜边长为5。"
+    },
+    {
+     "id": "msk_p015_q2",
+     "topicId": "msk_p015",
+     "prompt": "三边长分别为6、8、10的三角形是",
+     "question": "三边长分别为6、8、10的三角形是",
+     "options": [
+      {
+       "label": "A",
+       "text": "锐角三角形"
+      },
+      {
+       "label": "B",
+       "text": "直角三角形"
+      },
+      {
+       "label": "C",
+       "text": "钝角三角形"
+      },
+      {
+       "label": "D",
+       "text": "不能组成三角形"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "6的平方加8的平方等于36加64等于100，而10的平方也等于100，两条较短边的平方和等于最长边的平方，由勾股定理的逆定理可知它是直角三角形。"
+    },
+    {
+     "id": "msk_p015_q3",
+     "topicId": "msk_p015",
+     "prompt": "勾股定理的内容是",
+     "question": "勾股定理的内容是",
+     "options": [
+      {
+       "label": "A",
+       "text": "三角形任意两边之和大于第三边"
+      },
+      {
+       "label": "B",
+       "text": "直角三角形的两个锐角互余"
+      },
+      {
+       "label": "C",
+       "text": "直角三角形两条直角边的平方和等于斜边的平方"
+      },
+      {
+       "label": "D",
+       "text": "等边三角形的三个角都等于60度"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "勾股定理说的是直角三角形三边之间的平方关系，即两条直角边的平方和等于斜边的平方。三边大小关系和两锐角互余都不是勾股定理的内容。"
+    },
+    {
+     "id": "msk_p015_q4",
+     "topicId": "msk_p015",
+     "prompt": "一架长10米的梯子斜靠在竖直的墙上，梯子底端离墙脚6米，那么梯子顶端离地面的高度是多少米？",
+     "question": "一架长10米的梯子斜靠在竖直的墙上，梯子底端离墙脚6米，那么梯子顶端离地面的高度是多少米？",
+     "answer": 8,
+     "verify": "{\"type\": \"num\", \"value\": 8}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "梯子、墙和地面组成直角三角形，梯子是斜边，长10米，底端离墙脚6米是一条直角边。由勾股定理，顶端高度的平方等于10的平方减6的平方，等于100减36等于64，所以高度为8米。"
+    },
+    {
+     "id": "msk_p015_q5",
+     "topicId": "msk_p015",
+     "prompt": "如果三角形的三边长a、b、c满足a²加b²等于c²，那么这个三角形是（　）三角形。",
+     "question": "如果三角形的三边长a、b、c满足a²加b²等于c²，那么这个三角形是（　）三角形。",
+     "answer": "直角",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "这是勾股定理的逆定理：三角形中如果两条较短边的平方和等于最长边的平方，那么这个三角形就是直角三角形，最长边所对的角是直角。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "msk_p1049",
+   "type": "procedural",
+   "description": "三角形的三边关系和边与角的大小关系，三角形的中线、角平分线、高线的定义和画法，以及三角形的中线把三角形分成面积相等的两个三角形。",
+   "mastery_criteria": [
+    "能用任意两边之和大于第三边判断三条线段能否组成三角形",
+    "能说出中线、角平分线、高线的定义，并在图中辨认它们"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1049_q1",
+     "topicId": "msk_p1049",
+     "prompt": "在同一个三角形中，较大的边所对的角",
+     "question": "在同一个三角形中，较大的边所对的角",
+     "options": [
+      {
+       "label": "A",
+       "text": "较大"
+      },
+      {
+       "label": "B",
+       "text": "较小"
+      },
+      {
+       "label": "C",
+       "text": "与边的长短无关"
+      },
+      {
+       "label": "D",
+       "text": "一定是直角"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材通过折纸比较得到：在同一个三角形中，较大的边所对的角也比较大，较大的角所对的边也比较大，这就是大边对大角、大角对大边。"
+    },
+    {
+     "id": "msk_p1049_q2",
+     "topicId": "msk_p1049",
+     "prompt": "下列长度的三条线段能组成三角形的是",
+     "question": "下列长度的三条线段能组成三角形的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "1，2，3"
+      },
+      {
+       "label": "B",
+       "text": "4，5，6"
+      },
+      {
+       "label": "C",
+       "text": "2，3，6"
+      },
+      {
+       "label": "D",
+       "text": "3，4，8"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "4加5等于9大于6，4加6大于5，5加6大于4，任意两边之和都大于第三边，所以能组成三角形。其余各组中都有一条边不小于另外两边之和，不能组成三角形。"
+    },
+    {
+     "id": "msk_p1049_q3",
+     "topicId": "msk_p1049",
+     "prompt": "连接三角形一个顶点与它对边中点的线段叫作三角形的",
+     "question": "连接三角形一个顶点与它对边中点的线段叫作三角形的",
+     "options": [
+      {
+       "label": "A",
+       "text": "高"
+      },
+      {
+       "label": "B",
+       "text": "角平分线"
+      },
+      {
+       "label": "C",
+       "text": "中线"
+      },
+      {
+       "label": "D",
+       "text": "中位线"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "连接三角形一个顶点与它对边中点的线段叫作三角形的中线，一个三角形有三条中线，它们相交于三角形内部一点。"
+    },
+    {
+     "id": "msk_p1049_q4",
+     "topicId": "msk_p1049",
+     "prompt": "一个三角形的两条边长分别是5和9，第三条边长是整数，那么第三条边最短是多少？",
+     "question": "一个三角形的两条边长分别是5和9，第三条边长是整数，那么第三条边最短是多少？",
+     "answer": 5,
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 9}, {\"type\": \"num\", \"value\": 4}]}",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由三角形任意两边之和大于第三边，第三条边与5的和要大于9，所以第三条边要大于4；第三条边还要小于5加9等于14。因此整数中第三条边最短取5。"
+    },
+    {
+     "id": "msk_p1049_q5",
+     "topicId": "msk_p1049",
+     "prompt": "一个三角形的两条边长分别是10和4，第三条边长是整数，这样的三角形一共有多少个？",
+     "question": "一个三角形的两条边长分别是10和4，第三条边长是整数，这样的三角形一共有多少个？",
+     "answer": 7,
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 13}, {\"type\": \"num\", \"value\": 6}]}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "第三条边要小于10加4等于14，又要大于10减4等于6，所以整数可以取7、8、9、10、11、12、13，一共7个。"
+    },
+    {
+     "id": "msk_p1049_q6",
+     "topicId": "msk_p1049",
+     "prompt": "三角形的高是一条",
+     "question": "三角形的高是一条",
+     "options": [
+      {
+       "label": "A",
+       "text": "直线"
+      },
+      {
+       "label": "B",
+       "text": "射线"
+      },
+      {
+       "label": "C",
+       "text": "曲线"
+      },
+      {
+       "label": "D",
+       "text": "线段"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "从三角形的一个顶点向它的对边所在直线作垂线，顶点与垂足之间的线段叫作三角形的高，所以高是一条线段，不是一条完整的直线。"
+    },
+    {
+     "id": "msk_p1049_q7",
+     "topicId": "msk_p1049",
+     "prompt": "一个三角形的两条边长分别是4和7，第三条边长是奇数，写出第三条边所有可能的值。",
+     "question": "一个三角形的两条边长分别是4和7，第三条边长是奇数，写出第三条边所有可能的值。",
+     "answer": "5、7、9",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "第三条边要小于4加7等于11，大于7减4等于3，所以第三条边长大于3且小于11，其中是奇数的只有5、7、9。"
+    },
+    {
+     "id": "msk_p1049_q8",
+     "topicId": "msk_p1049",
+     "prompt": "在三角形ABC中，AB大于AC，那么角C与角B的大小关系是",
+     "question": "在三角形ABC中，AB大于AC，那么角C与角B的大小关系是",
+     "options": [
+      {
+       "label": "A",
+       "text": "角C大于角B"
+      },
+      {
+       "label": "B",
+       "text": "角C等于角B"
+      },
+      {
+       "label": "C",
+       "text": "角C小于角B"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "在同一个三角形中较大的边所对的角也比较大。AB是较长的边，它对的角是角C，AC是较短的边，它对的角是角B，所以角C大于角B。"
+    }
+   ],
+   "misconceptions": [
+    "认为任意三条线段都能组成三角形，忽略两边之和要大于第三边",
+    "把三角形的高只画在三角形内部，忽略钝角三角形的高可能落在形外",
+    "把三角形的中线与中位线混为一谈"
+   ],
+   "page": 4
+  },
+  {
+   "id": "msk_p1050",
+   "type": "conceptual",
+   "description": "全等三角形的概念和表示方法，对应顶点、对应边、对应角的找法，以及全等三角形对应边相等、对应角相等的性质。",
+   "mastery_criteria": [
+    "能按对应顶点的顺序写出两个三角形的全等关系",
+    "能用全等三角形的性质求未知的边和角"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1050_q1",
+     "topicId": "msk_p1050",
+     "prompt": "两个能完全重合的三角形叫作",
+     "question": "两个能完全重合的三角形叫作",
+     "options": [
+      {
+       "label": "A",
+       "text": "全等三角形"
+      },
+      {
+       "label": "B",
+       "text": "相似三角形"
+      },
+      {
+       "label": "C",
+       "text": "等腰三角形"
+      },
+      {
+       "label": "D",
+       "text": "等边三角形"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "一个三角形经过平移、轴对称或旋转后得到另一个三角形，这两个三角形可以完全重合，能完全重合的两个三角形叫作全等三角形。"
+    },
+    {
+     "id": "msk_p1050_q2",
+     "topicId": "msk_p1050",
+     "prompt": "如果三角形ABC全等于三角形DEF，那么边AB的对应边是",
+     "question": "如果三角形ABC全等于三角形DEF，那么边AB的对应边是",
+     "options": [
+      {
+       "label": "A",
+       "text": "EF"
+      },
+      {
+       "label": "B",
+       "text": "DE"
+      },
+      {
+       "label": "C",
+       "text": "DF"
+      },
+      {
+       "label": "D",
+       "text": "BC"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "用符号表示全等时，对应顶点的字母写在对应的位置上，A与D对应，B与E对应，所以AB的对应边是DE，BC的对应边是EF。"
+    },
+    {
+     "id": "msk_p1050_q3",
+     "topicId": "msk_p1050",
+     "prompt": "全等三角形的对应边和对应角分别有什么关系",
+     "question": "全等三角形的对应边和对应角分别有什么关系",
+     "options": [
+      {
+       "label": "A",
+       "text": "对应角相等，对应边不一定相等"
+      },
+      {
+       "label": "B",
+       "text": "面积相等但对应角不一定相等"
+      },
+      {
+       "label": "C",
+       "text": "对应边相等，对应角相等"
+      },
+      {
+       "label": "D",
+       "text": "只有周长相等"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个三角形全等时可以完全重合，重合的边相等，重合的角相等，所以全等三角形的对应边相等，对应角也相等。"
+    },
+    {
+     "id": "msk_p1050_q4",
+     "topicId": "msk_p1050",
+     "prompt": "在三角形ABC与三角形DEF中，三角形ABC全等于三角形DEF，AB等于5，BC等于7，AC等于6，那么三角形DEF的周长是多少？",
+     "question": "在三角形ABC与三角形DEF中，三角形ABC全等于三角形DEF，AB等于5，BC等于7，AC等于6，那么三角形DEF的周长是多少？",
+     "answer": 18,
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 7}]}, {\"type\": \"num\", \"value\": 6}]}",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "全等三角形的对应边相等，所以DE等于5，EF等于7，DF等于6，三角形DEF的周长等于5加7加6等于18。"
+    },
+    {
+     "id": "msk_p1050_q5",
+     "topicId": "msk_p1050",
+     "prompt": "在三角形ABC与三角形DEF中，三角形ABC全等于三角形DEF，AB等于6，BC等于10，两个三角形的周长都是26，那么AC的长是多少？",
+     "question": "在三角形ABC与三角形DEF中，三角形ABC全等于三角形DEF，AB等于6，BC等于10，两个三角形的周长都是26，那么AC的长是多少？",
+     "answer": 10,
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 26}, {\"type\": \"num\", \"value\": 16}]}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "全等三角形的周长相等，所以三角形ABC的周长也是26。AB加BC等于6加10等于16，所以AC等于26减16等于10。"
+    },
+    {
+     "id": "msk_p1050_q6",
+     "topicId": "msk_p1050",
+     "prompt": "用符号表示两个三角形全等时，通常把对应顶点的字母写在",
+     "question": "用符号表示两个三角形全等时，通常把对应顶点的字母写在",
+     "options": [
+      {
+       "label": "A",
+       "text": "任意位置"
+      },
+      {
+       "label": "B",
+       "text": "前面的位置"
+      },
+      {
+       "label": "C",
+       "text": "后面的位置"
+      },
+      {
+       "label": "D",
+       "text": "对应的位置上"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "为了能从全等符号直接看出对应关系，书写时要把对应顶点的字母写在对应的位置上，这样对应边和对应角就不会找错。"
+    },
+    {
+     "id": "msk_p1050_q7",
+     "topicId": "msk_p1050",
+     "prompt": "如果三角形ABC全等于三角形DEF，角A等于50度，角B等于60度，那么角F等于（　）度。",
+     "question": "如果三角形ABC全等于三角形DEF，角A等于50度，角B等于60度，那么角F等于（　）度。",
+     "answer": "70",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "全等三角形的对应角相等，角F与角C对应。三角形ABC中角C等于180度减50度减60度等于70度，所以角F也等于70度。"
+    },
+    {
+     "id": "msk_p1050_q8",
+     "topicId": "msk_p1050",
+     "prompt": "下列说法正确的是",
+     "question": "下列说法正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "全等三角形的周长相等，面积也相等"
+      },
+      {
+       "label": "B",
+       "text": "面积相等的两个三角形一定全等"
+      },
+      {
+       "label": "C",
+       "text": "周长相等的两个三角形一定全等"
+      },
+      {
+       "label": "D",
+       "text": "三个角分别相等的两个三角形一定全等"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "全等三角形能完全重合，所以周长相等，面积也相等。反过来，周长相等、面积相等或三个角分别相等，都不能保证两个三角形完全重合，例如两个大小不同的等边三角形三个角都是60度。"
+    }
+   ],
+   "misconceptions": [
+    "写全等符号时把对应顶点的字母顺序写乱",
+    "认为面积相等的两个三角形一定全等",
+    "只按图形摆放的位置判断对应边和对应角"
+   ],
+   "page": 11
+  },
+  {
+   "id": "msk_p1051",
+   "type": "procedural",
+   "description": "全等三角形的判定方法：边角边、角边角、角角边、边边边，直角三角形特有的斜边、直角边判定，以及三个角分别相等不能判定两个三角形全等。",
+   "mastery_criteria": [
+    "能根据已知的边角条件选用边角边、角边角、角角边或边边边判定两个三角形全等",
+    "能说明三个角分别相等的两个三角形不一定全等"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1051_q1",
+     "topicId": "msk_p1051",
+     "prompt": "三边分别相等的两个三角形全等，这个判定方法可以简写成",
+     "question": "三边分别相等的两个三角形全等，这个判定方法可以简写成",
+     "options": [
+      {
+       "label": "A",
+       "text": "边边边"
+      },
+      {
+       "label": "B",
+       "text": "边角边"
+      },
+      {
+       "label": "C",
+       "text": "角边角"
+      },
+      {
+       "label": "D",
+       "text": "斜边、直角边"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "三边分别相等的两个三角形全等，简写成边边边，它是用直尺和圆规作出三角形后叠合验证得到的，也是证明两个三角形全等最常用的方法之一。"
+    },
+    {
+     "id": "msk_p1051_q2",
+     "topicId": "msk_p1051",
+     "prompt": "已知两个三角形的两边及其夹角分别相等，判定它们全等的依据是",
+     "question": "已知两个三角形的两边及其夹角分别相等，判定它们全等的依据是",
+     "options": [
+      {
+       "label": "A",
+       "text": "角边角"
+      },
+      {
+       "label": "B",
+       "text": "边角边"
+      },
+      {
+       "label": "C",
+       "text": "边边边"
+      },
+      {
+       "label": "D",
+       "text": "角角边"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两条边和它们所夹的角分别相等时，可以用边角边判定两个三角形全等。如果相等的角不是两边的夹角，那么这两个三角形不一定全等。"
+    },
+    {
+     "id": "msk_p1051_q3",
+     "topicId": "msk_p1051",
+     "prompt": "下列条件中，不能判定两个三角形全等的是",
+     "question": "下列条件中，不能判定两个三角形全等的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "两边及其夹角分别相等"
+      },
+      {
+       "label": "B",
+       "text": "三边分别相等"
+      },
+      {
+       "label": "C",
+       "text": "三个角分别相等"
+      },
+      {
+       "label": "D",
+       "text": "两角及其夹边分别相等"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "三个角分别相等只能说明两个三角形的形状相同，大小可以不同，例如边长分别为1和2的两个等边三角形三个角都是60度，它们并不全等。"
+    },
+    {
+     "id": "msk_p1051_q4",
+     "topicId": "msk_p1051",
+     "prompt": "在直角三角形中，斜边长13，一条直角边长5，另一条直角边长是多少？",
+     "question": "在直角三角形中，斜边长13，一条直角边长5，另一条直角边长是多少？",
+     "answer": 12,
+     "verify": "{\"type\": \"num\", \"value\": 12}",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "直角三角形的斜边是13，一条直角边是5，由勾股定理，另一条直角边的平方等于13的平方减5的平方，等于169减25等于144，所以另一条直角边长为12。"
+    },
+    {
+     "id": "msk_p1051_q5",
+     "topicId": "msk_p1051",
+     "prompt": "一个三角形的三边长分别为3、3、4，与它全等的另一个三角形有一条边长是4，那么这个三角形的另外两条边长之和是多少？",
+     "question": "一个三角形的三边长分别为3、3、4，与它全等的另一个三角形有一条边长是4，那么这个三角形的另外两条边长之和是多少？",
+     "answer": 6,
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 3}]}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "全等三角形的对应边相等，所以另一个三角形的三边也是3、3、4。已知它有一条边长4，另外两条边的长都是3，它们的和等于3加3等于6。"
+    },
+    {
+     "id": "msk_p1051_q6",
+     "topicId": "msk_p1051",
+     "prompt": "斜边和一条直角边分别相等的两个直角三角形全等，这个判定方法简写成",
+     "question": "斜边和一条直角边分别相等的两个直角三角形全等，这个判定方法简写成",
+     "options": [
+      {
+       "label": "A",
+       "text": "边边边"
+      },
+      {
+       "label": "B",
+       "text": "边角边"
+      },
+      {
+       "label": "C",
+       "text": "角边角"
+      },
+      {
+       "label": "D",
+       "text": "斜边、直角边"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "直角三角形已经有一对直角相等，如果再有两对边分别相等，而且其中必须包含斜边，就可以用斜边、直角边判定两个直角三角形全等。"
+    },
+    {
+     "id": "msk_p1051_q7",
+     "topicId": "msk_p1051",
+     "prompt": "两个三角形有三个角分别相等，它们一定全等吗？请举例说明。",
+     "question": "两个三角形有三个角分别相等，它们一定全等吗？请举例说明。",
+     "answer": "不一定全等。例如边长分别为1和2的两个等边三角形，三个角都是60度，但边长不同，不能完全重合，所以不全等。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "三个角分别相等只确定了三角形的形状，没有确定大小。比如边长为1的等边三角形与边长为2的等边三角形，三个角都是60度，对应边却不成相等关系，所以它们不全等。"
+    },
+    {
+     "id": "msk_p1051_q8",
+     "topicId": "msk_p1051",
+     "prompt": "在三角形ABC和三角形DEF中，角A等于角D，角B等于角E，AC等于DF，那么判定两个三角形全等的依据是",
+     "question": "在三角形ABC和三角形DEF中，角A等于角D，角B等于角E，AC等于DF，那么判定两个三角形全等的依据是",
+     "options": [
+      {
+       "label": "A",
+       "text": "角角边"
+      },
+      {
+       "label": "B",
+       "text": "角边角"
+      },
+      {
+       "label": "C",
+       "text": "边角边"
+      },
+      {
+       "label": "D",
+       "text": "边边边"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两个角分别相等，并且其中一组等角的对边也相等，符合角角边的条件。AC是角B的对边，DF是角E的对边，正好是一组等角的对边。"
+    }
+   ],
+   "misconceptions": [
+    "认为三个角分别相等的两个三角形一定全等",
+    "把两边及其中一边的对角分别相等当成全等条件",
+    "判定直角三角形全等时忘记斜边、直角边必须包含斜边和一条直角边"
+   ],
+   "page": 15
+  },
+  {
+   "id": "msk_p1052",
+   "type": "procedural",
+   "description": "线段垂直平分线的性质定理及其逆定理，角平分线的性质定理及其逆定理，以及三角形三条边的垂直平分线、三条角平分线分别交于一点。",
+   "mastery_criteria": [
+    "能用线段垂直平分线的性质定理和逆定理求线段长、确定点的位置",
+    "能用角平分线的性质定理求点到角两边的距离"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1052_q1",
+     "topicId": "msk_p1052",
+     "prompt": "线段垂直平分线上的点到线段两端的距离",
+     "question": "线段垂直平分线上的点到线段两端的距离",
+     "options": [
+      {
+       "label": "A",
+       "text": "相等"
+      },
+      {
+       "label": "B",
+       "text": "互补"
+      },
+      {
+       "label": "C",
+       "text": "成比例"
+      },
+      {
+       "label": "D",
+       "text": "不能确定"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "线段垂直平分线上的点与线段两端连成的两个直角三角形中，两条直角边分别相等，用边角边可以证明它们全等，所以这个点到线段两端的距离相等。"
+    },
+    {
+     "id": "msk_p1052_q2",
+     "topicId": "msk_p1052",
+     "prompt": "到线段两端距离相等的点在",
+     "question": "到线段两端距离相等的点在",
+     "options": [
+      {
+       "label": "A",
+       "text": "线段的中点"
+      },
+      {
+       "label": "B",
+       "text": "线段的垂直平分线上"
+      },
+      {
+       "label": "C",
+       "text": "线段的延长线上"
+      },
+      {
+       "label": "D",
+       "text": "三角形的内部"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "这是线段垂直平分线性质定理的逆定理。线段垂直平分线是到线段两端距离相等的所有点的集合，所以这样的点一定在这条线段的垂直平分线上。"
+    },
+    {
+     "id": "msk_p1052_q3",
+     "topicId": "msk_p1052",
+     "prompt": "角平分线上的点到角两边的距离指的是",
+     "question": "角平分线上的点到角两边的距离指的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "到角两边上任意两点的线段长"
+      },
+      {
+       "label": "B",
+       "text": "角的两条边的长度"
+      },
+      {
+       "label": "C",
+       "text": "到角两边的垂线段的长度"
+      },
+      {
+       "label": "D",
+       "text": "角的度数的一半"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "角平分线上的点到角两边的距离，指的是从这个点分别向角的两边作垂线所得的两条垂线段的长度，这两条垂线段的长度相等。"
+    },
+    {
+     "id": "msk_p1052_q4",
+     "topicId": "msk_p1052",
+     "prompt": "在三角形ABC中，BC等于8，AB等于10，DE是边AC的垂直平分线，交AC于D，交BC于E，那么三角形EBC的周长是多少？",
+     "question": "在三角形ABC中，BC等于8，AB等于10，DE是边AC的垂直平分线，交AC于D，交BC于E，那么三角形EBC的周长是多少？",
+     "answer": 18,
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 8}]}",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "因为DE垂直平分AC，所以EA等于EC。三角形EBC的周长等于EB加EC加BC，把EC换成EA，就是EB加EA加BC，也就是AB加BC，等于10加8等于18。"
+    },
+    {
+     "id": "msk_p1052_q5",
+     "topicId": "msk_p1052",
+     "prompt": "在三角形ABC中，角C等于90度，AD平分角BAC交BC于D，DE垂直AB于E，如果BC等于8，BD等于5，那么DE的长是多少？",
+     "question": "在三角形ABC中，角C等于90度，AD平分角BAC交BC于D，DE垂直AB于E，如果BC等于8，BD等于5，那么DE的长是多少？",
+     "answer": 3,
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"num\", \"value\": 5}]}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "CD等于BC减BD，等于8减5等于3。AD是角BAC的平分线，DE垂直AB，DC垂直AC，所以DE等于DC，都等于3。"
+    },
+    {
+     "id": "msk_p1052_q6",
+     "topicId": "msk_p1052",
+     "prompt": "三角形的三条角平分线",
+     "question": "三角形的三条角平分线",
+     "options": [
+      {
+       "label": "A",
+       "text": "一定在三角形外部"
+      },
+      {
+       "label": "B",
+       "text": "互相平行"
+      },
+      {
+       "label": "C",
+       "text": "两两垂直"
+      },
+      {
+       "label": "D",
+       "text": "相交于一点"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "三角形的三条角平分线相交于三角形内部一点，这个点到三角形三条边的距离相等，这一点可以用角平分线性质定理的逆定理来证明。"
+    },
+    {
+     "id": "msk_p1052_q7",
+     "topicId": "msk_p1052",
+     "prompt": "在三角形ABC中，AB、AC的垂直平分线相交于点O，说明点O与点B、C的距离有什么关系，并说明理由。",
+     "question": "在三角形ABC中，AB、AC的垂直平分线相交于点O，说明点O与点B、C的距离有什么关系，并说明理由。",
+     "answer": "OB等于OC。因为点O在AB的垂直平分线上，所以OA等于OB；点O在AC的垂直平分线上，所以OA等于OC；因此OB等于OC。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "由线段垂直平分线的性质，点O到A、B的距离相等，点O到A、C的距离也相等，经过等量代换得到OB等于OC，所以点O在线段BC的垂直平分线上。"
+    },
+    {
+     "id": "msk_p1052_q8",
+     "topicId": "msk_p1052",
+     "prompt": "下面关于角平分线的说法正确的是",
+     "question": "下面关于角平分线的说法正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "角平分线上的点到角两边的距离相等"
+      },
+      {
+       "label": "B",
+       "text": "到角两边距离相等的点可以在角的外部"
+      },
+      {
+       "label": "C",
+       "text": "角平分线上的点到角两边上任意点的距离都相等"
+      },
+      {
+       "label": "D",
+       "text": "角平分线一定经过角两边上的中点"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "角平分线的性质定理说的是角平分线上的点到角两边的距离相等，这里的距离是垂线段的长度。到角两边距离相等的点要在角的内部，而且到角两边上任意点的距离并不相等。"
+    }
+   ],
+   "misconceptions": [
+    "把点到角两边的距离当成任意一条线段的长，忽略必须是垂线段",
+    "认为到角两边距离相等的点可以在角的外部",
+    "把线段垂直平分线的性质与角平分线的性质混用"
+   ],
+   "page": 34
+  },
+  {
+   "id": "msk_p1053",
+   "type": "conceptual",
+   "description": "等腰三角形的性质（等边对等角、三线合一）与判定（等角对等边），等边三角形的性质与判定，以及30度角所对的直角边等于斜边的一半、直角三角形斜边上的中线等于斜边的一半。",
+   "mastery_criteria": [
+    "能用等边对等角、三线合一求等腰三角形中的角和线段",
+    "能用等角对等边判定等腰三角形，并用等边三角形的性质求角"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1053_q1",
+     "topicId": "msk_p1053",
+     "prompt": "等腰三角形的两个底角",
+     "question": "等腰三角形的两个底角",
+     "options": [
+      {
+       "label": "A",
+       "text": "相等"
+      },
+      {
+       "label": "B",
+       "text": "互余"
+      },
+      {
+       "label": "C",
+       "text": "互补"
+      },
+      {
+       "label": "D",
+       "text": "相差30度"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "等腰三角形的两底角相等，简称等边对等角。教材通过作底边上的中线，用边边边证明两个小三角形全等，从而得到两个底角相等。"
+    },
+    {
+     "id": "msk_p1053_q2",
+     "topicId": "msk_p1053",
+     "prompt": "等腰三角形有一个角是100度，那么它的一个底角是多少度",
+     "question": "等腰三角形有一个角是100度，那么它的一个底角是多少度",
+     "options": [
+      {
+       "label": "A",
+       "text": "50度"
+      },
+      {
+       "label": "B",
+       "text": "40度"
+      },
+      {
+       "label": "C",
+       "text": "80度"
+      },
+      {
+       "label": "D",
+       "text": "100度"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "100度的角不可能是底角，因为两个底角相等，若底角是100度，两个底角的和已经超过180度。所以100度是顶角，一个底角等于180度减100度再除以2，等于40度。"
+    },
+    {
+     "id": "msk_p1053_q3",
+     "topicId": "msk_p1053",
+     "prompt": "等腰三角形的顶角是40度，它的一个底角是多少度？",
+     "question": "等腰三角形的顶角是40度，它的一个底角是多少度？",
+     "answer": 70,
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 180}, {\"type\": \"num\", \"value\": 40}]}, {\"type\": \"num\", \"value\": 2}]}",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "等腰三角形的两个底角相等，三角形内角和是180度，所以一个底角等于180度减40度再除以2，等于70度。"
+    },
+    {
+     "id": "msk_p1053_q4",
+     "topicId": "msk_p1053",
+     "prompt": "等腰三角形有一条边长是3，另一条边长是7，它的周长是多少？",
+     "question": "等腰三角形有一条边长是3，另一条边长是7，它的周长是多少？",
+     "answer": 17,
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 7}, {\"type\": \"num\", \"value\": 7}]}, {\"type\": \"num\", \"value\": 3}]}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "如果两条腰都是3，那么3加3等于6，小于7，不能组成三角形；所以两条腰都是7，底边是3，周长等于7加7加3等于17。"
+    },
+    {
+     "id": "msk_p1053_q5",
+     "topicId": "msk_p1053",
+     "prompt": "三边都相等的三角形叫作（　）三角形。",
+     "question": "三边都相等的三角形叫作（　）三角形。",
+     "answer": "等边",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "三边都相等的三角形叫等边三角形，等边三角形是特殊的等腰三角形，它的三个角都等于60度。"
+    },
+    {
+     "id": "msk_p1053_q6",
+     "topicId": "msk_p1053",
+     "prompt": "等边三角形的每一个内角都等于",
+     "question": "等边三角形的每一个内角都等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "30度"
+      },
+      {
+       "label": "B",
+       "text": "45度"
+      },
+      {
+       "label": "C",
+       "text": "60度"
+      },
+      {
+       "label": "D",
+       "text": "90度"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "等边三角形的三条边相等，由等边对等角可知三个角都相等，而三角形内角和是180度，所以每个角都等于180除以3等于60度。"
+    },
+    {
+     "id": "msk_p1053_q7",
+     "topicId": "msk_p1053",
+     "prompt": "在直角三角形中，斜边长是10，斜边上的中线长是多少？",
+     "question": "在直角三角形中，斜边长是10，斜边上的中线长是多少？",
+     "answer": "5",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "直角三角形斜边上的中线等于斜边的一半。斜边长10，所以斜边上的中线长等于10除以2等于5。"
+    },
+    {
+     "id": "msk_p1053_q8",
+     "topicId": "msk_p1053",
+     "prompt": "在直角三角形中，一个锐角等于30度，斜边长是8，那么这个30度角所对的直角边长是",
+     "question": "在直角三角形中，一个锐角等于30度，斜边长是8，那么这个30度角所对的直角边长是",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "16"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "在直角三角形中，如果一个锐角等于30度，那么它所对的直角边等于斜边的一半。斜边长8，所以30度角所对的直角边长等于8除以2等于4。"
+    }
+   ],
+   "misconceptions": [
+    "求等腰三角形的角时不分类讨论，把已知角直接当成顶角",
+    "认为等腰三角形任意一条中线、高线和角平分线都重合",
+    "把等边三角形排除在等腰三角形之外"
+   ],
+   "page": 42
+  },
+  {
+   "id": "msk_p1054",
+   "type": "conceptual",
+   "description": "算术平方根与平方根的概念、记号和求法，正数有两个互为相反数的平方根，0的平方根是0，负数没有平方根，开平方与平方互为逆运算。",
+   "mastery_criteria": [
+    "能求一个数的算术平方根和平方根，并正确使用根号表示",
+    "知道正数有两个平方根、0的平方根是0、负数没有平方根"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1054_q1",
+     "topicId": "msk_p1054",
+     "prompt": "4的算术平方根是多少？",
+     "question": "4的算术平方根是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "负2"
+      },
+      {
+       "label": "C",
+       "text": "正负2"
+      },
+      {
+       "label": "D",
+       "text": "16"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "因为2的平方等于4，所以4的算术平方根是2。算术平方根只取正的那个值，4的平方根才是正负2。"
+    },
+    {
+     "id": "msk_p1054_q2",
+     "topicId": "msk_p1054",
+     "prompt": "16的平方根是多少？请写出全部结果",
+     "question": "16的平方根是多少？请写出全部结果",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "正负4"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "256"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "因为4的平方等于16，负4的平方也等于16，所以16的平方根有两个，分别是4和负4，写作正负4；其中4是16的算术平方根。"
+    },
+    {
+     "id": "msk_p1054_q3",
+     "topicId": "msk_p1054",
+     "prompt": "144的算术平方根是多少？",
+     "question": "144的算术平方根是多少？",
+     "answer": 12,
+     "verify": "{\"type\": \"num\", \"value\": 12}",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "因为12的平方等于144，所以144的算术平方根是12。算术平方根是正的那个平方根，所以结果是12而不是负12。"
+    },
+    {
+     "id": "msk_p1054_q4",
+     "topicId": "msk_p1054",
+     "prompt": "如果x的平方等于81，并且x小于0，那么x等于多少？",
+     "question": "如果x的平方等于81，并且x小于0，那么x等于多少？",
+     "answer": -9,
+     "verify": "{\"type\": \"num\", \"value\": -9}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "81的平方根是正负9，其中9的平方和负9的平方都等于81。题目要求x小于0，所以x等于负9。"
+    },
+    {
+     "id": "msk_p1054_q5",
+     "topicId": "msk_p1054",
+     "prompt": "0的算术平方根等于多少？",
+     "question": "0的算术平方根等于多少？",
+     "answer": "0",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "规定0的算术平方根是0，也就是根号0等于0。0的平方根也只有一个，就是0本身。"
+    },
+    {
+     "id": "msk_p1054_q6",
+     "topicId": "msk_p1054",
+     "prompt": "下列说法正确的是",
+     "question": "下列说法正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "正数只有一个平方根"
+      },
+      {
+       "label": "B",
+       "text": "0没有平方根"
+      },
+      {
+       "label": "C",
+       "text": "负数没有平方根"
+      },
+      {
+       "label": "D",
+       "text": "负数的平方根是负数"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "任何数的平方都不小于0，所以负数没有平方根。正数有两个平方根，0的平方根是0，只有负数没有平方根。"
+    },
+    {
+     "id": "msk_p1054_q7",
+     "topicId": "msk_p1054",
+     "prompt": "一个正数为什么有两个平方根？请说明理由。",
+     "question": "一个正数为什么有两个平方根？请说明理由。",
+     "answer": "因为正数a的算术平方根是根号a，根号a的平方等于a，负的根号a的平方也等于a，所以正数a有两个平方根，它们互为相反数。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "设正数a的算术平方根为根号a，则根号a的平方等于a。由于负数的平方也是正数，负的根号a的平方同样等于a，所以正数a有两个平方根，它们互为相反数。"
+    },
+    {
+     "id": "msk_p1054_q8",
+     "topicId": "msk_p1054",
+     "prompt": "一个面积为2的正方形，它的边长是",
+     "question": "一个面积为2的正方形，它的边长是",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "根号2"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "正方形的面积等于边长的平方，设边长为x，则x的平方等于2。因为边长是正数，所以边长等于2的算术平方根，也就是根号2。"
+    }
+   ],
+   "misconceptions": [
+    "认为9的平方根只有3，漏掉负的平方根",
+    "认为负数也有平方根",
+    "把算术平方根与平方根混为一谈，给算术平方根也加上正负号"
+   ],
+   "page": 62
+  },
+  {
+   "id": "msk_p1055",
+   "type": "conceptual",
+   "description": "立方根的概念、记号和求法，正数的立方根是正数，0的立方根是0，负数的立方根是负数，开立方与立方互为逆运算。",
+   "mastery_criteria": [
+    "能求一个数的立方根，包括负数的立方根",
+    "能用开立方与立方互逆求未知数的值"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1055_q1",
+     "topicId": "msk_p1055",
+     "prompt": "8的立方根等于多少",
+     "question": "8的立方根等于多少",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "负2"
+      },
+      {
+       "label": "C",
+       "text": "正负2"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "因为2的立方等于8，所以8的立方根是2。一个数的立方根只有一个，不需要写成正负两个值。"
+    },
+    {
+     "id": "msk_p1055_q2",
+     "topicId": "msk_p1055",
+     "prompt": "负27的立方根等于多少",
+     "question": "负27的立方根等于多少",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "负3"
+      },
+      {
+       "label": "C",
+       "text": "正负3"
+      },
+      {
+       "label": "D",
+       "text": "负9"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "因为负3的立方等于负27，所以负27的立方根是负3。负数的立方根仍然是负数，而且只有一个。"
+    },
+    {
+     "id": "msk_p1055_q3",
+     "topicId": "msk_p1055",
+     "prompt": "小数0.125的立方根是多少？",
+     "question": "小数0.125的立方根是多少？",
+     "answer": 0.5,
+     "verify": "{\"type\": \"num\", \"value\": 0.5}",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "因为0.5的立方等于0.125，所以0.125的立方根是0.5。可以验算：0.5乘0.5乘0.5等于0.125。"
+    },
+    {
+     "id": "msk_p1055_q4",
+     "topicId": "msk_p1055",
+     "prompt": "如果x减1的差的立方等于27，那么x等于多少？",
+     "question": "如果x减1的差的立方等于27，那么x等于多少？",
+     "answer": 4,
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 1}]}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "因为3的立方等于27，所以x减1等于3，从而x等于3加1等于4。可以用开立方与立方互逆来检验：4减1得3，3的立方正好是27。"
+    },
+    {
+     "id": "msk_p1055_q5",
+     "topicId": "msk_p1055",
+     "prompt": "0的立方根等于多少？",
+     "question": "0的立方根等于多少？",
+     "answer": "0",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "因为0的立方等于0，所以0的立方根是0。0既不是正数也不是负数，它的立方根只有0一个。"
+    },
+    {
+     "id": "msk_p1055_q6",
+     "topicId": "msk_p1055",
+     "prompt": "关于立方根，下列说法正确的是",
+     "question": "关于立方根，下列说法正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "正数有两个立方根"
+      },
+      {
+       "label": "B",
+       "text": "负数没有立方根"
+      },
+      {
+       "label": "C",
+       "text": "正数的立方根是正数，负数的立方根是负数"
+      },
+      {
+       "label": "D",
+       "text": "0没有立方根"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "任何数都有立方根，而且只有一个。正数的立方根是正数，负数的立方根是负数，0的立方根是0，这与平方根的情况不同。"
+    },
+    {
+     "id": "msk_p1055_q7",
+     "topicId": "msk_p1055",
+     "prompt": "一个正方体的体积扩大到原来的8倍，它的棱长扩大到原来的多少倍？请说明理由。",
+     "question": "一个正方体的体积扩大到原来的8倍，它的棱长扩大到原来的多少倍？请说明理由。",
+     "answer": "2倍",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "设原来的棱长为a，体积为a的立方。体积扩大8倍后是8a的立方，而（2a）的立方等于8a的立方，所以新的棱长是2a，即棱长扩大到原来的2倍。"
+    },
+    {
+     "id": "msk_p1055_q8",
+     "topicId": "msk_p1055",
+     "prompt": "开立方与立方的关系是",
+     "question": "开立方与立方的关系是",
+     "options": [
+      {
+       "label": "A",
+       "text": "完全相同"
+      },
+      {
+       "label": "B",
+       "text": "互为相反数"
+      },
+      {
+       "label": "C",
+       "text": "没有关系"
+      },
+      {
+       "label": "D",
+       "text": "互为逆运算"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "开立方是求一个数的立方根的运算，立方是求三个相同因数的积的运算，两者互为逆运算，可以用立方来检验立方根算得对不对。"
+    }
+   ],
+   "misconceptions": [
+    "认为负数没有立方根，或者把负数的立方根写成两个值",
+    "把立方根与平方根混淆，给立方根也加上正负号",
+    "把开立方算成开平方，例如把8的立方根算成根号8"
+   ],
+   "page": 66
+  },
+  {
+   "id": "msk_p1056",
+   "type": "conceptual",
+   "description": "无理数的概念与判断，实数的分类，实数与数轴上点的一一对应，用有理数估计无理数的范围，以及用计算器进行实数运算并比较大小。",
+   "mastery_criteria": [
+    "能判断一个数是有理数还是无理数，并给实数分类",
+    "能用有理数估计无理数的范围，把无理数表示在数轴上"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1056_q1",
+     "topicId": "msk_p1056",
+     "prompt": "无限不循环小数叫作",
+     "question": "无限不循环小数叫作",
+     "options": [
+      {
+       "label": "A",
+       "text": "无理数"
+      },
+      {
+       "label": "B",
+       "text": "有理数"
+      },
+      {
+       "label": "C",
+       "text": "整数"
+      },
+      {
+       "label": "D",
+       "text": "分数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "无限不循环小数叫作无理数，圆周率就是这样的数。因为分数都能化成有限小数或循环小数，所以无理数不能写成分数形式。"
+    },
+    {
+     "id": "msk_p1056_q2",
+     "topicId": "msk_p1056",
+     "prompt": "下列各数中，是无理数的是",
+     "question": "下列各数中，是无理数的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "3.14"
+      },
+      {
+       "label": "B",
+       "text": "根号5"
+      },
+      {
+       "label": "C",
+       "text": "七分之二十二"
+      },
+      {
+       "label": "D",
+       "text": "0.1循环"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "3.14是有限小数，七分之二十二是分数，0.1循环是循环小数，它们都是有理数。根号5是无限不循环小数，是无理数。"
+    },
+    {
+     "id": "msk_p1056_q3",
+     "topicId": "msk_p1056",
+     "prompt": "根号2的整数部分是多少？",
+     "question": "根号2的整数部分是多少？",
+     "answer": 1,
+     "verify": "{\"type\": \"num\", \"value\": 1}",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "因为1的平方等于1，2的平方等于4，而1小于2小于4，所以根号1小于根号2小于根号4，即1小于根号2小于2，因此根号2的整数部分是1。"
+    },
+    {
+     "id": "msk_p1056_q4",
+     "topicId": "msk_p1056",
+     "prompt": "一个正方形的面积是5，它的边长大于整数n并且小于n加1，那么n等于多少？",
+     "question": "一个正方形的面积是5，它的边长大于整数n并且小于n加1，那么n等于多少？",
+     "answer": 2,
+     "verify": "{\"type\": \"num\", \"value\": 2}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "设边长为x，则x的平方等于5。因为2的平方等于4，3的平方等于9，而4小于5小于9，所以2小于x小于3，边长在2与3之间，因此n等于2。"
+    },
+    {
+     "id": "msk_p1056_q5",
+     "topicId": "msk_p1056",
+     "prompt": "有理数和无理数统称为（　）。",
+     "question": "有理数和无理数统称为（　）。",
+     "answer": "实数",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "有理数包括整数和分数，无理数是无限不循环小数，把有理数和无理数统称为实数，实数与数轴上的点一一对应。"
+    },
+    {
+     "id": "msk_p1056_q6",
+     "topicId": "msk_p1056",
+     "prompt": "实数与数轴上的点之间的关系是",
+     "question": "实数与数轴上的点之间的关系是",
+     "options": [
+      {
+       "label": "A",
+       "text": "只有无理数对应"
+      },
+      {
+       "label": "B",
+       "text": "只有有理数对应"
+      },
+      {
+       "label": "C",
+       "text": "一一对应"
+      },
+      {
+       "label": "D",
+       "text": "互不相关"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "每一个实数都可以用数轴上的一个点表示，数轴上的每一个点也都表示一个实数，所以实数与数轴上的点一一对应。"
+    },
+    {
+     "id": "msk_p1056_q7",
+     "topicId": "msk_p1056",
+     "prompt": "0.1010010001…（相邻两个1之间依次多一个0）是无理数吗？说明理由。",
+     "question": "0.1010010001…（相邻两个1之间依次多一个0）是无理数吗？说明理由。",
+     "answer": "是无理数。因为它是无限小数，而且小数部分的数字排列不循环，属于无限不循环小数，所以是无理数。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "判断无理数要看它是不是无限不循环小数。这个数的小数部分0的个数依次增多，不会出现循环节，所以它虽然有规律，却不是循环小数，而是无理数。"
+    },
+    {
+     "id": "msk_p1056_q8",
+     "topicId": "msk_p1056",
+     "prompt": "根号9是有理数还是无理数",
+     "question": "根号9是有理数还是无理数",
+     "options": [
+      {
+       "label": "A",
+       "text": "无法判断"
+      },
+      {
+       "label": "B",
+       "text": "无理数，因为它带根号"
+      },
+      {
+       "label": "C",
+       "text": "既不是有理数也不是无理数"
+      },
+      {
+       "label": "D",
+       "text": "有理数，因为它等于3"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "根号9表示9的算术平方根，因为3的平方等于9，所以根号9等于3，3是整数，属于有理数。带根号的数不一定是无理数。"
+    }
+   ],
+   "misconceptions": [
+    "把所有的无限小数都当作无理数，忽略无限循环小数是有理数",
+    "认为带根号的数一定是无理数，例如把根号9当成无理数",
+    "认为数轴上的点只能表示有理数"
+   ],
+   "page": 69
+  },
+  {
+   "id": "msk_p1057",
+   "type": "application",
+   "description": "准确值与近似值的区别，用四舍五入法按要求取近似值并说出精确到哪一位，以及用科学记数法表示较大数据的近似值。",
+   "mastery_criteria": [
+    "能用四舍五入法把数精确到指定的数位",
+    "能说出一个近似值精确到哪一位，并区分准确值与近似值"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1057_q1",
+     "topicId": "msk_p1057",
+     "prompt": "某班有40人，这里的40是",
+     "question": "某班有40人，这里的40是",
+     "options": [
+      {
+       "label": "A",
+       "text": "准确值"
+      },
+      {
+       "label": "B",
+       "text": "近似值"
+      },
+      {
+       "label": "C",
+       "text": "估计值"
+      },
+      {
+       "label": "D",
+       "text": "平均值"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "全班人数是一个一个数出来的，没有误差，所以40是准确值。近似值是在测量或统计中与准确值比较接近的数，例如全国总人口约为14.4亿。"
+    },
+    {
+     "id": "msk_p1057_q2",
+     "topicId": "msk_p1057",
+     "prompt": "把3.14159精确到0.01，结果是多少",
+     "question": "把3.14159精确到0.01，结果是多少",
+     "options": [
+      {
+       "label": "A",
+       "text": "3.15"
+      },
+      {
+       "label": "B",
+       "text": "3.14"
+      },
+      {
+       "label": "C",
+       "text": "3.142"
+      },
+      {
+       "label": "D",
+       "text": "3.1"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "精确到0.01就是精确到百分位，要看千分位上的数字1，1小于5，所以把后面的数字舍去，得到3.14。"
+    },
+    {
+     "id": "msk_p1057_q3",
+     "topicId": "msk_p1057",
+     "prompt": "把3.14159精确到千分位，结果是多少？",
+     "question": "把3.14159精确到千分位，结果是多少？",
+     "answer": 3.142,
+     "verify": "{\"type\": \"num\", \"value\": 3.142}",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "精确到千分位要看万分位上的数字5，满5就向前一位进1，所以3.14159精确到千分位是3.142。"
+    },
+    {
+     "id": "msk_p1057_q4",
+     "topicId": "msk_p1057",
+     "prompt": "一头成年长江江豚的体重是63.96千克，把这个数据精确到1千克，结果是多少？",
+     "question": "一头成年长江江豚的体重是63.96千克，把这个数据精确到1千克，结果是多少？",
+     "answer": 64,
+     "verify": "{\"type\": \"num\", \"value\": 64}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "精确到1千克就是精确到个位，要看十分位上的数字9，9大于5，向个位进1，所以63.96千克精确到1千克是64千克。"
+    },
+    {
+     "id": "msk_p1057_q5",
+     "topicId": "msk_p1057",
+     "prompt": "近似值1.52精确到了哪一位？",
+     "question": "近似值1.52精确到了哪一位？",
+     "answer": "百分",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "1.52中末位数字2在百分位上，所以这个近似值精确到百分位，也就是精确到0.01。"
+    },
+    {
+     "id": "msk_p1057_q6",
+     "topicId": "msk_p1057",
+     "prompt": "关于1.5与1.50这两个数，下列说法正确的是",
+     "question": "关于1.5与1.50这两个数，下列说法正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "它们完全一样，精确度也相同"
+      },
+      {
+       "label": "B",
+       "text": "1.5比1.50精确"
+      },
+      {
+       "label": "C",
+       "text": "1.50比1.5精确，1.50精确到百分位"
+      },
+      {
+       "label": "D",
+       "text": "无法比较精确度"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "1.5的末位在十分位，精确到十分位；1.50的末位在百分位，精确到百分位。末位所在的数位越小，精确度越高，所以1.50更精确。"
+    },
+    {
+     "id": "msk_p1057_q7",
+     "topicId": "msk_p1057",
+     "prompt": "地球的半径约为6400千米，赤道周长约等于2乘以圆周率再乘以半径，用计算器算得40212.386千米。把赤道周长精确到1000千米，结果怎样表示？",
+     "question": "地球的半径约为6400千米，赤道周长约等于2乘以圆周率再乘以半径，用计算器算得40212.386千米。把赤道周长精确到1000千米，结果怎样表示？",
+     "answer": "约为40000千米，即4.0乘10的4次方千米",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "精确到1000千米要看百位上的数字2，2小于5，把后面的数字舍去，得到40000千米。用科学记数法写作4.0乘10的4次方千米，这样能看出结果精确到千位。"
+    },
+    {
+     "id": "msk_p1057_q8",
+     "topicId": "msk_p1057",
+     "prompt": "下列数据中是近似值的是",
+     "question": "下列数据中是近似值的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "一箱矿泉水有24瓶"
+      },
+      {
+       "label": "B",
+       "text": "某词典有1754页"
+      },
+      {
+       "label": "C",
+       "text": "三角形的内角和是180度"
+      },
+      {
+       "label": "D",
+       "text": "全国总人口约为14.4亿"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "总人口是统计出来的数据，而且随时间变化，14.4亿是一个近似值。一箱矿泉水24瓶、词典1754页都是数出来的准确值。"
+    }
+   ],
+   "misconceptions": [
+    "精确到0.01时直接舍去百分位以后的数字，不看下一位是否满5",
+    "把1.5与1.50的精确度当成一样",
+    "认为近似值末尾的0可以随便去掉"
+   ],
+   "page": 77
+  },
+  {
+   "id": "msk_p1058",
+   "type": "procedural",
+   "description": "用正方形面积关系探索勾股定理，勾股定理的内容与赵爽弦图的证明，用勾股定理求直角三角形的边长，以及在数轴上表示根号5这样的无理数。",
+   "mastery_criteria": [
+    "能说出勾股定理，并写出直角三角形三边的平方关系",
+    "能用勾股定理求直角三角形中未知的边"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1058_q1",
+     "topicId": "msk_p1058",
+     "prompt": "勾股定理的内容是",
+     "question": "勾股定理的内容是",
+     "options": [
+      {
+       "label": "A",
+       "text": "直角三角形两条直角边的平方和等于斜边的平方"
+      },
+      {
+       "label": "B",
+       "text": "三角形任意两边之和大于第三边"
+      },
+      {
+       "label": "C",
+       "text": "直角三角形的两个锐角互余"
+      },
+      {
+       "label": "D",
+       "text": "等边三角形的三个角都是60度"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "勾股定理研究的是直角三角形三边之间的平方关系，即两条直角边的平方和等于斜边的平方。"
+    },
+    {
+     "id": "msk_p1058_q2",
+     "topicId": "msk_p1058",
+     "prompt": "一个直角三角形的两条直角边分别是5和12，斜边长是",
+     "question": "一个直角三角形的两条直角边分别是5和12，斜边长是",
+     "options": [
+      {
+       "label": "A",
+       "text": "17"
+      },
+      {
+       "label": "B",
+       "text": "13"
+      },
+      {
+       "label": "C",
+       "text": "60"
+      },
+      {
+       "label": "D",
+       "text": "根号119"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两条直角边的平方和是25加144等于169，而169是13的平方，所以斜边长为13。"
+    },
+    {
+     "id": "msk_p1058_q3",
+     "topicId": "msk_p1058",
+     "prompt": "一个直角三角形的两条直角边分别是6和8，斜边长是多少？",
+     "question": "一个直角三角形的两条直角边分别是6和8，斜边长是多少？",
+     "answer": 10,
+     "verify": "{\"type\": \"num\", \"value\": 10}",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "两条直角边的平方和等于36加64等于100，斜边的平方等于100，所以斜边长等于10。"
+    },
+    {
+     "id": "msk_p1058_q4",
+     "topicId": "msk_p1058",
+     "prompt": "一个直角三角形的斜边长17，一条直角边长8，另一条直角边长是多少？",
+     "question": "一个直角三角形的斜边长17，一条直角边长8，另一条直角边长是多少？",
+     "answer": 15,
+     "verify": "{\"type\": \"num\", \"value\": 15}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "由勾股定理，另一条直角边的平方等于17的平方减8的平方，等于289减64等于225，225是15的平方，所以另一条直角边长15。"
+    },
+    {
+     "id": "msk_p1058_q5",
+     "topicId": "msk_p1058",
+     "prompt": "在直角三角形ABC中，角C等于90度，AC等于3，BC等于4，那么AB等于（　）。",
+     "question": "在直角三角形ABC中，角C等于90度，AC等于3，BC等于4，那么AB等于（　）。",
+     "answer": "5",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "角C是直角，所以AB是斜边。由勾股定理，AB的平方等于3的平方加4的平方，等于9加16等于25，所以AB等于5。"
+    },
+    {
+     "id": "msk_p1058_q6",
+     "topicId": "msk_p1058",
+     "prompt": "赵爽用四个全等的直角三角形和一个小正方形拼成大正方形的弦图来证明勾股定理，主要利用的是",
+     "question": "赵爽用四个全等的直角三角形和一个小正方形拼成大正方形的弦图来证明勾股定理，主要利用的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "全等三角形的周长"
+      },
+      {
+       "label": "B",
+       "text": "三角形的内角和"
+      },
+      {
+       "label": "C",
+       "text": "面积之间的关系"
+      },
+      {
+       "label": "D",
+       "text": "轴对称的性质"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "弦图中大正方形的面积等于四个直角三角形的面积与小正方形面积之和，用两种方式表示同一块面积，化简后就得到勾股定理。"
+    },
+    {
+     "id": "msk_p1058_q7",
+     "topicId": "msk_p1058",
+     "prompt": "在数轴上画出表示根号5的点，可以怎样作图？请简述作法。",
+     "question": "在数轴上画出表示根号5的点，可以怎样作图？请简述作法。",
+     "answer": "画一个两条直角边分别为2和1的直角三角形，它的斜边长等于根号5；以原点为圆心、斜边长为半径画弧，与数轴正半轴的交点就表示根号5。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "由勾股定理，直角边为2和1的直角三角形，斜边的平方等于4加1等于5，所以斜边长为根号5。以原点为圆心、斜边长为半径画弧与数轴正半轴相交，交点就表示根号5。"
+    },
+    {
+     "id": "msk_p1058_q8",
+     "topicId": "msk_p1058",
+     "prompt": "勾股定理在西方被称为",
+     "question": "勾股定理在西方被称为",
+     "options": [
+      {
+       "label": "A",
+       "text": "祖冲之定理"
+      },
+      {
+       "label": "B",
+       "text": "欧拉定理"
+      },
+      {
+       "label": "C",
+       "text": "韦达定理"
+      },
+      {
+       "label": "D",
+       "text": "毕达哥拉斯定理"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "勾股定理在西方被称为毕达哥拉斯定理。我国古代把直角三角形较短的直角边叫勾，较长的直角边叫股，斜边叫弦，所以称为勾股定理。"
+    }
+   ],
+   "misconceptions": [
+    "把斜边当成直角边代入平方关系，写错等式",
+    "认为勾股定理对任意三角形都成立",
+    "求斜边时忘记对两条直角边的平方和开平方"
+   ],
+   "page": 86
+  },
+  {
+   "id": "msk_p1059",
+   "type": "procedural",
+   "description": "勾股定理的逆定理：三角形三边满足两条较短边的平方和等于最长边的平方时是直角三角形，用逆定理判断三角形的形状，以及勾股数的概念和倍数性质。",
+   "mastery_criteria": [
+    "能用勾股定理的逆定理判断一个三角形是不是直角三角形",
+    "能识别勾股数，并知道勾股数的正整数倍仍是勾股数"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1059_q1",
+     "topicId": "msk_p1059",
+     "prompt": "三边长分别为3、4、5的三角形是",
+     "question": "三边长分别为3、4、5的三角形是",
+     "options": [
+      {
+       "label": "A",
+       "text": "直角三角形"
+      },
+      {
+       "label": "B",
+       "text": "锐角三角形"
+      },
+      {
+       "label": "C",
+       "text": "钝角三角形"
+      },
+      {
+       "label": "D",
+       "text": "不能组成三角形"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "3的平方加4的平方等于9加16等于25，等于5的平方，两条较短边的平方和等于最长边的平方，所以它是直角三角形。"
+    },
+    {
+     "id": "msk_p1059_q2",
+     "topicId": "msk_p1059",
+     "prompt": "勾股定理的逆定理的内容是",
+     "question": "勾股定理的逆定理的内容是",
+     "options": [
+      {
+       "label": "A",
+       "text": "如果三角形是直角三角形，那么两条直角边的平方和等于斜边的平方"
+      },
+      {
+       "label": "B",
+       "text": "如果三角形的三边长a、b、c满足a²加b²等于c²，那么这个三角形是直角三角形"
+      },
+      {
+       "label": "C",
+       "text": "三角形任意两边之和大于第三边"
+      },
+      {
+       "label": "D",
+       "text": "直角三角形的两个锐角互余"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "勾股定理的逆定理是由三边的平方关系判断三角形的形状：两条较短边的平方和等于最长边的平方时，这个三角形是直角三角形。"
+    },
+    {
+     "id": "msk_p1059_q3",
+     "topicId": "msk_p1059",
+     "prompt": "一个三角形的三边长分别是9、12、15，它的斜边长是多少？",
+     "question": "一个三角形的三边长分别是9、12、15，它的斜边长是多少？",
+     "answer": 15,
+     "verify": "{\"type\": \"num\", \"value\": 15}",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "9的平方加12的平方等于81加144等于225，15的平方也等于225，所以这个三角形是直角三角形，最长边15就是斜边。"
+    },
+    {
+     "id": "msk_p1059_q4",
+     "topicId": "msk_p1059",
+     "prompt": "一个三角形的三边长分别是9、40、41，如果它是直角三角形，那么它的斜边长是多少？",
+     "question": "一个三角形的三边长分别是9、40、41，如果它是直角三角形，那么它的斜边长是多少？",
+     "answer": 41,
+     "verify": "{\"type\": \"num\", \"value\": 41}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "9的平方加40的平方等于81加1600等于1681，41的平方也等于1681，满足勾股定理的逆定理，所以这个三角形是直角三角形，最长边41是斜边。"
+    },
+    {
+     "id": "msk_p1059_q5",
+     "topicId": "msk_p1059",
+     "prompt": "如果三个正整数a、b、c满足a²加b²等于c²，那么称a、b、c为（　）。",
+     "question": "如果三个正整数a、b、c满足a²加b²等于c²，那么称a、b、c为（　）。",
+     "answer": "勾股数",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "满足两条边的平方和等于第三条边的平方的三个正整数叫作勾股数，例如3、4、5和5、12、13都是勾股数。"
+    },
+    {
+     "id": "msk_p1059_q6",
+     "topicId": "msk_p1059",
+     "prompt": "下列各组数中，是勾股数的是",
+     "question": "下列各组数中，是勾股数的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "11、60、62"
+      },
+      {
+       "label": "B",
+       "text": "12、15、18"
+      },
+      {
+       "label": "C",
+       "text": "6、8、10"
+      },
+      {
+       "label": "D",
+       "text": "4、5、6"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "6的平方加8的平方等于36加64等于100，等于10的平方，所以6、8、10是勾股数。其余各组都不满足两条边的平方和等于第三条边的平方。"
+    },
+    {
+     "id": "msk_p1059_q7",
+     "topicId": "msk_p1059",
+     "prompt": "一个三角形的三边长分别是2、3、4，请判断它的形状，并说明理由。",
+     "question": "一个三角形的三边长分别是2、3、4，请判断它的形状，并说明理由。",
+     "answer": "它是钝角三角形。因为2的平方加3的平方等于13，小于4的平方16，所以最长边所对的角是钝角。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "先找出最长边4，再算两条较短边的平方和，2的平方加3的平方等于13。13小于16，说明这个三角形不是直角三角形，最长边所对的角大于90度，所以是钝角三角形。"
+    },
+    {
+     "id": "msk_p1059_q8",
+     "topicId": "msk_p1059",
+     "prompt": "四千多年前古埃及人用打结的绳子拉成三边分别为3段、4段、5段的三角形，这样得到的三角形一定是",
+     "question": "四千多年前古埃及人用打结的绳子拉成三边分别为3段、4段、5段的三角形，这样得到的三角形一定是",
+     "options": [
+      {
+       "label": "A",
+       "text": "等边三角形"
+      },
+      {
+       "label": "B",
+       "text": "等腰三角形"
+      },
+      {
+       "label": "C",
+       "text": "钝角三角形"
+      },
+      {
+       "label": "D",
+       "text": "直角三角形"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "三边之比为3比4比5的三角形满足3的平方加4的平方等于5的平方，由勾股定理的逆定理可知，它一定是直角三角形。"
+    }
+   ],
+   "misconceptions": [
+    "判断形状时没有先找出最长边，把斜边当成直角边",
+    "认为三边满足平方关系的三角形一定是锐角三角形",
+    "只记住三边数值，不检验最长边所对的角是不是直角"
+   ],
+   "page": 93
+  },
+  {
+   "id": "msk_p1060",
+   "type": "application",
+   "description": "用勾股定理及其逆定理解决实际问题：折竹问题、梯子滑动、彩旗带长度、方位角航行与最短路径，以及用面积关系证明线段的平方关系。",
+   "mastery_criteria": [
+    "能把实际问题抽象成直角三角形，用勾股定理求出未知的边",
+    "能用勾股定理的逆定理判断方位和三角形的形状"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1060_q1",
+     "topicId": "msk_p1060",
+     "prompt": "梯子斜靠在竖直的墙上，已知梯子长2.5米，梯子底端离墙脚1.5米，求梯子顶端离地面的高度，应该用勾股定理求",
+     "question": "梯子斜靠在竖直的墙上，已知梯子长2.5米，梯子底端离墙脚1.5米，求梯子顶端离地面的高度，应该用勾股定理求",
+     "options": [
+      {
+       "label": "A",
+       "text": "一条直角边"
+      },
+      {
+       "label": "B",
+       "text": "斜边"
+      },
+      {
+       "label": "C",
+       "text": "一个锐角"
+      },
+      {
+       "label": "D",
+       "text": "三角形的面积"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "梯子、墙和地面组成直角三角形，梯子是斜边，底端到墙脚的距离是一条直角边，要求的是另一条直角边，用勾股定理可以求出它的长。"
+    },
+    {
+     "id": "msk_p1060_q2",
+     "topicId": "msk_p1060",
+     "prompt": "九章算术中的折竹问题：竹子原高10尺，竹梢触地处离竹根3尺，设折断处离地面x尺，那么可以列出的方程是",
+     "question": "九章算术中的折竹问题：竹子原高10尺，竹梢触地处离竹根3尺，设折断处离地面x尺，那么可以列出的方程是",
+     "options": [
+      {
+       "label": "A",
+       "text": "x²加3²等于10²"
+      },
+      {
+       "label": "B",
+       "text": "x²加3²等于（10减x）²"
+      },
+      {
+       "label": "C",
+       "text": "x加3等于10减x"
+      },
+      {
+       "label": "D",
+       "text": "x²加（10减x）²等于3²"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "折断处离地面x尺，折断后竹梢到折断处的长度是10减x尺，它就是直角三角形的斜边，另一条直角边是3尺，由勾股定理得x的平方加3的平方等于10减x的差的平方。"
+    },
+    {
+     "id": "msk_p1060_q3",
+     "topicId": "msk_p1060",
+     "prompt": "一架长2.5米的梯子靠在竖直的墙上，梯子底端离墙脚1.5米，梯子顶端离地面的高度是多少米？",
+     "question": "一架长2.5米的梯子靠在竖直的墙上，梯子底端离墙脚1.5米，梯子顶端离地面的高度是多少米？",
+     "answer": 2,
+     "verify": "{\"type\": \"num\", \"value\": 2}",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "梯子长2.5米是斜边，底端到墙脚1.5米是一条直角边。顶端高度的平方等于2.5的平方减1.5的平方，等于6.25减2.25等于4，所以高度为2米。"
+    },
+    {
+     "id": "msk_p1060_q4",
+     "topicId": "msk_p1060",
+     "prompt": "九章算术中的折竹问题：竹子原高10尺，竹梢触地处离竹根6尺，那么折断处离地面多少尺？",
+     "question": "九章算术中的折竹问题：竹子原高10尺，竹梢触地处离竹根6尺，那么折断处离地面多少尺？",
+     "answer": 3.2,
+     "verify": "{\"type\": \"num\", \"value\": 3.2}",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "设折断处离地面x尺，则斜边长为10减x尺。由勾股定理得x的平方加36等于10减x的差的平方，展开化简得20x等于64，解得x等于3.2，即折断处离地面3.2尺。"
+    },
+    {
+     "id": "msk_p1060_q5",
+     "topicId": "msk_p1060",
+     "prompt": "在直角三角形中，两条直角边分别是9和12，斜边长是（　）。",
+     "question": "在直角三角形中，两条直角边分别是9和12，斜边长是（　）。",
+     "answer": "15",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "两条直角边的平方和等于81加144等于225，225是15的平方，所以斜边长为15。"
+    },
+    {
+     "id": "msk_p1060_q6",
+     "topicId": "msk_p1060",
+     "prompt": "在实际问题中用勾股定理的逆定理，主要是为了",
+     "question": "在实际问题中用勾股定理的逆定理，主要是为了",
+     "options": [
+      {
+       "label": "A",
+       "text": "求三角形的面积"
+      },
+      {
+       "label": "B",
+       "text": "求三角形的周长"
+      },
+      {
+       "label": "C",
+       "text": "由三边的平方关系判断三角形的形状"
+      },
+      {
+       "label": "D",
+       "text": "画出三角形的高"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "勾股定理的逆定理由三边的平方关系判断三角形是不是直角三角形，实际问题中常用它判断两条路线是否垂直，例如航海中判断船的航向。"
+    },
+    {
+     "id": "msk_p1060_q7",
+     "topicId": "msk_p1060",
+     "prompt": "某校从教学楼楼顶A处向围墙上的B处拉彩旗带，点B与教学楼的水平距离为16米，教学楼高15米，围墙高3米，至少需要多长的彩旗带？",
+     "question": "某校从教学楼楼顶A处向围墙上的B处拉彩旗带，点B与教学楼的水平距离为16米，教学楼高15米，围墙高3米，至少需要多长的彩旗带？",
+     "answer": "至少需要20米",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "以A、B两点构造直角三角形，两条直角边分别是水平距离16米和高度差15减3等于12米。由勾股定理，AB的平方等于16的平方加12的平方，等于256加144等于400，所以AB等于20米。"
+    },
+    {
+     "id": "msk_p1060_q8",
+     "topicId": "msk_p1060",
+     "prompt": "甲、乙两船同时从港口O出发，甲船每小时航行32海里，乙船每小时航行24海里，半小时后两船相距20海里。如果甲船沿北偏东45度方向航行，那么乙船航行的方向是",
+     "question": "甲、乙两船同时从港口O出发，甲船每小时航行32海里，乙船每小时航行24海里，半小时后两船相距20海里。如果甲船沿北偏东45度方向航行，那么乙船航行的方向是",
+     "options": [
+      {
+       "label": "A",
+       "text": "正北方向"
+      },
+      {
+       "label": "B",
+       "text": "北偏东45度"
+      },
+      {
+       "label": "C",
+       "text": "正东方向"
+      },
+      {
+       "label": "D",
+       "text": "南偏东45度"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "半小时后甲船行了16海里，乙船行了12海里，16的平方加12的平方等于400，等于20的平方，所以两条航线互相垂直。甲船沿北偏东45度航行，乙船就沿南偏东45度航行。"
+    }
+   ],
+   "misconceptions": [
+    "没有先判断哪条边是斜边，把已知的直角边当成斜边代入",
+    "单位不统一就直接计算，例如米与厘米混用",
+    "实际问题中只算出平方和，忘记开平方得到边长"
+   ],
+   "page": 97
+  }
+ ]
+}

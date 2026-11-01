@@ -1,0 +1,1874 @@
+{
+ "tag": "s2a",
+ "book": "苏教版二年级上册",
+ "unit_points": [
+  {
+   "id": "msj_p022",
+   "description": "第四单元 认识三位数：认识一百，知道10个十是一百，会读写几百几十几，认识个位、十位和百位，会比较三位数的大小，并认识算盘和算筹。",
+   "mastery_criteria": [
+    "能说出10个十是一百，会读数、写数并说出三位数的组成",
+    "会比较三位数的大小，知道同一个数字在不同数位上表示的大小不同"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p022_q1",
+     "topicId": "msj_p022",
+     "prompt": "99添上1以后得到的是多少？",
+     "question": "99添上1以后得到的是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "九十"
+      },
+      {
+       "label": "B",
+       "text": "一百"
+      },
+      {
+       "label": "C",
+       "text": "一百零一"
+      },
+      {
+       "label": "D",
+       "text": "一百一十"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "从九十九再添上一个，个位和十位上的数都满十了，就要向百位进一，所以99添上1是一百。"
+    },
+    {
+     "id": "msj_p022_q2",
+     "topicId": "msj_p022",
+     "prompt": "124这个数由几个百、几个十和几个一组成？",
+     "question": "124这个数由几个百、几个十和几个一组成？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1个百、2个十和4个一"
+      },
+      {
+       "label": "B",
+       "text": "12个百和4个一"
+      },
+      {
+       "label": "C",
+       "text": "1个百和24个一"
+      },
+      {
+       "label": "D",
+       "text": "4个百、2个十和1个一"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "124的百位上是1，表示1个百；十位上是2，表示2个十；个位上是4，表示4个一，所以它由1个百、2个十和4个一组成。"
+    },
+    {
+     "id": "msj_p022_q3",
+     "topicId": "msj_p022",
+     "prompt": "一个三位数百位上是7，十位上是0，个位上是6，这个数写作什么？",
+     "question": "一个三位数百位上是7，十位上是0，个位上是6，这个数写作什么？",
+     "answer": "706",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "写数时按百位、十位、个位的顺序写，百位写7，十位上一个也没有要写0占位，个位写6，所以写作706。"
+    },
+    {
+     "id": "msj_p022_q4",
+     "topicId": "msj_p022",
+     "prompt": "8个百和7个一合起来是多少？",
+     "question": "8个百和7个一合起来是多少？",
+     "answer": "807",
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"num\", \"value\": 100}]}, {\"type\": \"num\", \"value\": 7}]}",
+     "explanation": "8个百是800，7个一是7，把它们合起来就是807，十位上一个也没有，要用0占位。"
+    },
+    {
+     "id": "msj_p022_q5",
+     "topicId": "msj_p022",
+     "prompt": "用5、3、0三张数字卡片组成的三位数中，最大的是多少？",
+     "question": "用5、3、0三张数字卡片组成的三位数中，最大的是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "305"
+      },
+      {
+       "label": "B",
+       "text": "350"
+      },
+      {
+       "label": "C",
+       "text": "530"
+      },
+      {
+       "label": "D",
+       "text": "503"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "组成最大的三位数，要把最大的数字放在百位，5放百位，3放十位，0放个位，得到530；0不能放在百位。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p023",
+   "description": "第五单元 两位数加、减两位数：会口算两位数加、减两位数，理解不进位加与进位加、不退位减与退位减的算法，能用加减法解决购物、种树、跳绳等实际问题。",
+   "mastery_criteria": [
+    "能口算两位数加、减两位数，并说清先算什么、再算什么",
+    "能先说得数是几十多，再算出得数，会用加减法解决简单的实际问题"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msj_p023_q1",
+     "topicId": "msj_p023",
+     "prompt": "买35个黄色乒乓球和24个白色乒乓球，一共买了多少个？",
+     "question": "买35个黄色乒乓球和24个白色乒乓球，一共买了多少个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "51个"
+      },
+      {
+       "label": "B",
+       "text": "59个"
+      },
+      {
+       "label": "C",
+       "text": "69个"
+      },
+      {
+       "label": "D",
+       "text": "511个"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "求一共多少个要把两部分合起来，30加20得50，5加4得9，50加9得59，所以一共买了59个乒乓球。"
+    },
+    {
+     "id": "msj_p023_q2",
+     "topicId": "msj_p023",
+     "prompt": "下面哪道算式计算时个位上的数相加要进位？",
+     "question": "下面哪道算式计算时个位上的数相加要进位？",
+     "options": [
+      {
+       "label": "A",
+       "text": "23加14"
+      },
+      {
+       "label": "B",
+       "text": "45加32"
+      },
+      {
+       "label": "C",
+       "text": "36加29"
+      },
+      {
+       "label": "D",
+       "text": "52加35"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "36加29时个位上6加9得15，满十要向十位进一，其余三道算式个位相加都不满十，所以不用进位。"
+    },
+    {
+     "id": "msj_p023_q3",
+     "topicId": "msj_p023",
+     "prompt": "34加28，个位和十位上的数分别怎么算？得数是多少？",
+     "question": "34加28，个位和十位上的数分别怎么算？得数是多少？",
+     "answer": "62",
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 34}, {\"type\": \"num\", \"value\": 28}]}",
+     "explanation": "先算30加20得50，再算4加8得12，50加12得62；也可以先算34加20得54，再算54加8得62。"
+    },
+    {
+     "id": "msj_p023_q4",
+     "topicId": "msj_p023",
+     "prompt": "54减36的得数是多少？说一说你是怎样一步一步算的。",
+     "question": "54减36的得数是多少？说一说你是怎样一步一步算的。",
+     "answer": "18",
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 54}, {\"type\": \"num\", \"value\": 36}]}",
+     "explanation": "先算54减30得24，再算24减6得18，所以54减36等于18；也可以想36加18等于54，所以54减36等于18。"
+    },
+    {
+     "id": "msj_p023_q5",
+     "topicId": "msj_p023",
+     "prompt": "下面哪道算式的得数是六十多？",
+     "question": "下面哪道算式的得数是六十多？",
+     "options": [
+      {
+       "label": "A",
+       "text": "27加34"
+      },
+      {
+       "label": "B",
+       "text": "45加21"
+      },
+      {
+       "label": "C",
+       "text": "45减29"
+      },
+      {
+       "label": "D",
+       "text": "90减35"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "27加34，先算20加30得50，再算7加4得11，50加11得61，得数是六十多；其余各题得数分别是66、16和55。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p024",
+   "description": "欢乐购物街：认识1元、1角、1分的人民币，知道1元等于10角、1角等于10分，会换算整钱和零钱，会在购物活动中标价、付钱、找钱并记录购物过程。",
+   "mastery_criteria": [
+    "知道1元等于10角、1角等于10分，会进行元、角、分之间的换算",
+    "会在购物活动中算出一共要付多少钱、应找回多少钱"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "msj_p024_q1",
+     "topicId": "msj_p024",
+     "prompt": "1元等于多少角？说说你是怎么想的。",
+     "question": "1元等于多少角？说说你是怎么想的。",
+     "options": [
+      {
+       "label": "A",
+       "text": "5角"
+      },
+      {
+       "label": "B",
+       "text": "10角"
+      },
+      {
+       "label": "C",
+       "text": "100角"
+      },
+      {
+       "label": "D",
+       "text": "1角"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "人民币的元、角、分之间，1元等于10角，1角等于10分，所以1元也就是10角。"
+    },
+    {
+     "id": "msj_p024_q2",
+     "topicId": "msj_p024",
+     "prompt": "5角等于多少分？先想一想角和分的关系再填。",
+     "question": "5角等于多少分？先想一想角和分的关系再填。",
+     "answer": "50",
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 10}]}",
+     "explanation": "1角等于10分，5角就是5个10分，10乘5得50，所以5角等于50分。"
+    },
+    {
+     "id": "msj_p024_q3",
+     "topicId": "msj_p024",
+     "prompt": "一本童话书标价2元6角，付了5元，应找回多少角？",
+     "question": "一本童话书标价2元6角，付了5元，应找回多少角？",
+     "answer": "24",
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 10}]}, {\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 10}]}, {\"type\": \"num\", \"value\": 6}]}]}",
+     "explanation": "5元是50角，2元6角是26角，50角减26角得24角，也就是2元4角，所以应找回24角。"
+    },
+    {
+     "id": "msj_p024_q4",
+     "topicId": "msj_p024",
+     "prompt": "一盒水彩笔标价9元5角，付10元，营业员应找回多少？",
+     "question": "一盒水彩笔标价9元5角，付10元，营业员应找回多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "5角"
+      },
+      {
+       "label": "B",
+       "text": "1元"
+      },
+      {
+       "label": "C",
+       "text": "9角"
+      },
+      {
+       "label": "D",
+       "text": "5元"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "10元减去9元5角，先把10元看成9元10角，9元10角减9元5角等于5角，所以应找回5角。"
+    },
+    {
+     "id": "msj_p024_q5",
+     "topicId": "msj_p024",
+     "prompt": "小明有10元，买一支笔用去3元5角，还剩多少？",
+     "question": "小明有10元，买一支笔用去3元5角，还剩多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "7元5角"
+      },
+      {
+       "label": "B",
+       "text": "6元"
+      },
+      {
+       "label": "C",
+       "text": "6元5角"
+      },
+      {
+       "label": "D",
+       "text": "5元"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "10元减去3元5角，先把10元看成9元10角，9元10角减3元5角等于6元5角，所以还剩6元5角。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p025",
+   "description": "第六单元 有余数的除法：理解有余数除法的意义，认识余数，会把分不完剩下的部分写成余几，知道余数一定比除数小，会计算有余数的除法并解决装盒、钉纽扣等问题。",
+   "mastery_criteria": [
+    "会把平均分后剩下的部分用余数表示，会读、写有余数的除法算式",
+    "知道余数一定比除数小，会用乘法口诀试商算有余数的除法"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msj_p025_q1",
+     "topicId": "msj_p025",
+     "prompt": "10除以3等于3余1，算式里的1叫什么？",
+     "question": "10除以3等于3余1，算式里的1叫什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "除数"
+      },
+      {
+       "label": "B",
+       "text": "商"
+      },
+      {
+       "label": "C",
+       "text": "余数"
+      },
+      {
+       "label": "D",
+       "text": "被除数"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把10瓶蜂蜜每3瓶分一份，分给3只小熊后还剩1瓶，这个剩下不够再分的1就是余数。"
+    },
+    {
+     "id": "msj_p025_q2",
+     "topicId": "msj_p025",
+     "prompt": "19个苹果，每4个装一盘，最多能装满几盘？",
+     "question": "19个苹果，每4个装一盘，最多能装满几盘？",
+     "answer": "4",
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 4}",
+     "explanation": "每4个装一盘，4乘4得16，19减16还剩3个，剩下的3个不够装一盘，所以最多装满4盘。"
+    },
+    {
+     "id": "msj_p025_q3",
+     "topicId": "msj_p025",
+     "prompt": "9除以2的商是几，余数是几？照商4余1的样子写出来。",
+     "question": "9除以2的商是几，余数是几？照商4余1的样子写出来。",
+     "answer": "商4余1",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "每2个分一份，9里面最多有4个2，4乘2得8，9减8还剩1个，所以9除以2商4余1。"
+    },
+    {
+     "id": "msj_p025_q4",
+     "topicId": "msj_p025",
+     "prompt": "下面哪个除法算式算出来的余数是3？",
+     "question": "下面哪个除法算式算出来的余数是3？",
+     "options": [
+      {
+       "label": "A",
+       "text": "17除以5"
+      },
+      {
+       "label": "B",
+       "text": "20除以6"
+      },
+      {
+       "label": "C",
+       "text": "26除以4"
+      },
+      {
+       "label": "D",
+       "text": "15除以4"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "15除以4，4乘3得12，15减12得3，余数是3；17除以5余2，20除以6余2，26除以4余2，余数都是2。"
+    },
+    {
+     "id": "msj_p025_q5",
+     "topicId": "msj_p025",
+     "prompt": "一个数除以6，余数最大是几？",
+     "question": "一个数除以6，余数最大是几？",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "7"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "余数一定要比除数小，除数是6，余数只能是1、2、3、4、5，其中最大的是5。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p026",
+   "description": "期末复习：把本学期认识三位数、口算两位数加、减两位数、表内乘除法、有余数的除法、人民币和生活中的方向等知识分类整理，并用学过的数和运算解决简单实际问题。",
+   "mastery_criteria": [
+    "能分类说出本学期学过的数与运算知识，会读写三位数并比较大小",
+    "能口算两位数加、减两位数和有余数的除法，会解决简单实际问题"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p026_q1",
+     "topicId": "msj_p026",
+     "prompt": "最小的三位数是多少？",
+     "question": "最小的三位数是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "99"
+      },
+      {
+       "label": "B",
+       "text": "100"
+      },
+      {
+       "label": "C",
+       "text": "101"
+      },
+      {
+       "label": "D",
+       "text": "999"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "100的百位上是1，是三位数里最小的；99只有两位，最大的三位数是999。"
+    },
+    {
+     "id": "msj_p026_q2",
+     "topicId": "msj_p026",
+     "prompt": "最大的三位数是多少？",
+     "question": "最大的三位数是多少？",
+     "answer": "999",
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 999}",
+     "explanation": "三位数各位上的数最大都是9，所以最大的三位数是999，再添1就是一千。"
+    },
+    {
+     "id": "msj_p026_q3",
+     "topicId": "msj_p026",
+     "prompt": "45加29的得数是多少？先算一算再填。",
+     "question": "45加29的得数是多少？先算一算再填。",
+     "answer": "74",
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 45}, {\"type\": \"num\", \"value\": 29}]}",
+     "explanation": "先算45加20得65，再算65加9得74，所以45加29等于74；也可以把29看成30，45加30得75，再减去多加的1，也得74。"
+    },
+    {
+     "id": "msj_p026_q4",
+     "topicId": "msj_p026",
+     "prompt": "45减29的得数是多少？想一想先减哪一个数。",
+     "question": "45减29的得数是多少？想一想先减哪一个数。",
+     "options": [
+      {
+       "label": "A",
+       "text": "26"
+      },
+      {
+       "label": "B",
+       "text": "24"
+      },
+      {
+       "label": "C",
+       "text": "16"
+      },
+      {
+       "label": "D",
+       "text": "74"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先算45减20得25，再算25减9得16，所以45减29等于16；也可以想29加16等于45，所以差是16。"
+    },
+    {
+     "id": "msj_p026_q5",
+     "topicId": "msj_p026",
+     "prompt": "一本书有90页，小辉第一天看了36页，第二天接着看了48页，两天一共看了多少页？",
+     "question": "一本书有90页，小辉第一天看了36页，第二天接着看了48页，两天一共看了多少页？",
+     "options": [
+      {
+       "label": "A",
+       "text": "84页"
+      },
+      {
+       "label": "B",
+       "text": "74页"
+      },
+      {
+       "label": "C",
+       "text": "94页"
+      },
+      {
+       "label": "D",
+       "text": "12页"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "求两天一共看了多少页，把两天看的页数合起来，36加48，先算30加40得70，再算6加8得14，70加14得84页。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "msj_p1097",
+   "page": null,
+   "description": "认识一百：在99添上1得到100的过程中认识一百，知道10个十是一百、一百里面有100个一，认识计数器上的百位，知道100是三位数，会读写100。",
+   "mastery_criteria": [
+    "知道10个十是一百，会读写100，会在计数器上拨出100",
+    "知道从右边起第一位是个位、第二位是十位、第三位是百位"
+   ],
+   "misconceptions": [
+    "认为99添上1是91，把个位、十位的进位顺序弄反",
+    "认为100只占一个数位，不知道百位上要写1",
+    "数一百时以为十个十是一千"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p1097_q1",
+     "topicId": "msj_p1097",
+     "prompt": "原来有99个同学在看演出，又来了1人，一共有多少人？",
+     "question": "原来有99个同学在看演出，又来了1人，一共有多少人？",
+     "options": [
+      {
+       "label": "A",
+       "text": "九十人"
+      },
+      {
+       "label": "B",
+       "text": "一百人"
+      },
+      {
+       "label": "C",
+       "text": "一百零一人"
+      },
+      {
+       "label": "D",
+       "text": "一百一十人"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "99添上1，个位满十要向十位进一，十位也满十再向百位进一，得到100，所以一共有100人，也就是一百人。"
+    },
+    {
+     "id": "msj_p1097_q2",
+     "topicId": "msj_p1097",
+     "prompt": "十个十个地数，十个十合起来是多少？",
+     "question": "十个十个地数，十个十合起来是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "二十"
+      },
+      {
+       "label": "B",
+       "text": "九十"
+      },
+      {
+       "label": "C",
+       "text": "一百"
+      },
+      {
+       "label": "D",
+       "text": "一千"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "十个十个地数，从十数到一百，10个十合起来就是一百，所以10个十是一百。"
+    },
+    {
+     "id": "msj_p1097_q3",
+     "topicId": "msj_p1097",
+     "prompt": "从90开始一个一个地数到100，一共数了多少个数？",
+     "question": "从90开始一个一个地数到100，一共数了多少个数？",
+     "answer": "11",
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 100}, {\"type\": \"num\", \"value\": 90}]}, {\"type\": \"num\", \"value\": 1}]}",
+     "explanation": "从90数到100要数90、91、92一直到100，一共是11个数，可以用100减90再加1算出来。"
+    },
+    {
+     "id": "msj_p1097_q4",
+     "topicId": "msj_p1097",
+     "prompt": "一百里面有几个十？",
+     "question": "一百里面有几个十？",
+     "options": [
+      {
+       "label": "A",
+       "text": "10个十"
+      },
+      {
+       "label": "B",
+       "text": "9个十"
+      },
+      {
+       "label": "C",
+       "text": "1个十"
+      },
+      {
+       "label": "D",
+       "text": "100个十"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "十个十个地数，10个十合起来正好是一百，所以一百里面有10个十。"
+    },
+    {
+     "id": "msj_p1097_q5",
+     "topicId": "msj_p1097",
+     "prompt": "一百里面有几个一？",
+     "question": "一百里面有几个一？",
+     "answer": "100",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "一个一个地数，从1数到100一共要数100个数，所以一百里面有100个一。"
+    },
+    {
+     "id": "msj_p1097_q6",
+     "topicId": "msj_p1097",
+     "prompt": "9个十和几个一合起来是一百？",
+     "question": "9个十和几个一合起来是一百？",
+     "answer": "10",
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 10}",
+     "explanation": "9个十是90，100减90还剩10，这10就是10个一，所以9个十和10个一合起来是一百。"
+    },
+    {
+     "id": "msj_p1097_q7",
+     "topicId": "msj_p1097",
+     "prompt": "说一说100为什么是一个三位数。",
+     "question": "说一说100为什么是一个三位数。",
+     "answer": "100的百位上是1，十位和个位上都是0，它占了百位、十位、个位三个数位，所以100是三位数。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "看一个数是几位数，要看它占了几个数位。100在计数器上要拨到百位，百位上是1，十位和个位上是0，占了三个数位。"
+    },
+    {
+     "id": "msj_p1097_q8",
+     "topicId": "msj_p1097",
+     "prompt": "下面哪种说法是正确的？",
+     "question": "下面哪种说法是正确的？",
+     "options": [
+      {
+       "label": "A",
+       "text": "100是两位数"
+      },
+      {
+       "label": "B",
+       "text": "100的十位上是1"
+      },
+      {
+       "label": "C",
+       "text": "99比100大"
+      },
+      {
+       "label": "D",
+       "text": "100里面有10个十"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "100占了三个数位是三位数，百位上是1，十位上和个位上都是0；99添上1才是100，所以99比100小，正确的是100里面有10个十。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1098",
+   "page": null,
+   "description": "认识几百几十几：会在计数器上拨出一百二十四这样的数，知道124由1个百、2个十和4个一组成，会读写几百几十几，知道199添上1是200，能一百一百地数到900。",
+   "mastery_criteria": [
+    "会读写几百几十几，能说出每个数位上的数表示多少",
+    "知道个位、十位、百位的顺序，会写几百零几和几百几十"
+   ],
+   "misconceptions": [
+    "把十位上的数当成百位，把124读成一百四十二",
+    "认为199添上1是一百九十，不会向百位连续进一",
+    "写几百零几时把中间的0漏掉，把五百零八写成58"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p1098_q1",
+     "topicId": "msj_p1098",
+     "prompt": "124由1个百、2个十和4个一组成，这个数读作什么？",
+     "question": "124由1个百、2个十和4个一组成，这个数读作什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "一百二十四"
+      },
+      {
+       "label": "B",
+       "text": "一百四十二"
+      },
+      {
+       "label": "C",
+       "text": "一百零四"
+      },
+      {
+       "label": "D",
+       "text": "十二个四"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "读数时先读百位上的1读作一百，再读十位上的2读作二十，最后读个位上的4读作四，合起来是一百二十四。"
+    },
+    {
+     "id": "msj_p1098_q2",
+     "topicId": "msj_p1098",
+     "prompt": "3个百和5个十组成的数是多少？",
+     "question": "3个百和5个十组成的数是多少？",
+     "answer": "350",
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 100}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 10}]}]}",
+     "explanation": "3个百是300，5个十是50，300加50得350，个位上一个也没有就写0，所以这个数是350。"
+    },
+    {
+     "id": "msj_p1098_q3",
+     "topicId": "msj_p1098",
+     "prompt": "199添上1以后是多少？为什么？",
+     "question": "199添上1以后是多少？为什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "一百九十"
+      },
+      {
+       "label": "B",
+       "text": "二百"
+      },
+      {
+       "label": "C",
+       "text": "一百九十九"
+      },
+      {
+       "label": "D",
+       "text": "二百零一"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "199添上1，个位上9加1得10要向十位进一，十位上也满十再向百位进一，得到2个百，2个百就是200。"
+    },
+    {
+     "id": "msj_p1098_q4",
+     "topicId": "msj_p1098",
+     "prompt": "4个百里面一共有多少个十？",
+     "question": "4个百里面一共有多少个十？",
+     "answer": "40",
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 100}]}, {\"type\": \"num\", \"value\": 10}]}",
+     "explanation": "4个百是400，十个十个地数，400里面有40个十，所以4个百是40个十。"
+    },
+    {
+     "id": "msj_p1098_q5",
+     "topicId": "msj_p1098",
+     "prompt": "一个数百位上是5，十位上是0，个位上是8，这个数写作什么？",
+     "question": "一个数百位上是5，十位上是0，个位上是8，这个数写作什么？",
+     "answer": "508",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "写数时百位写5，十位上一个也没有要写0占位，个位写8，读作五百零八，写作508。"
+    },
+    {
+     "id": "msj_p1098_q6",
+     "topicId": "msj_p1098",
+     "prompt": "906等于900加几？说说十位上为什么是0。",
+     "question": "906等于900加几？说说十位上为什么是0。",
+     "answer": "6",
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 906}, {\"type\": \"num\", \"value\": 900}]}",
+     "explanation": "906由9个百和6个一组成，十位上是0，所以906等于900加6，中间的0要读出来也要占位。"
+    },
+    {
+     "id": "msj_p1098_q7",
+     "topicId": "msj_p1098",
+     "prompt": "从174开始一个一个地数，数到199，再添上1是多少？说说为什么。",
+     "question": "从174开始一个一个地数，数到199，再添上1是多少？说说为什么。",
+     "answer": "再添上1是200。因为199添上1，个位满十向十位进一，十位也满十向百位进一，得到2个百，2个百是200。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "一个一个地数到199，再添1时个位和十位都满十要向前一位进一，最后得到2个百，所以199后面的数是200。"
+    },
+    {
+     "id": "msj_p1098_q8",
+     "topicId": "msj_p1098",
+     "prompt": "一百一百地数，600后面的第三个数是多少？",
+     "question": "一百一百地数，600后面的第三个数是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "603"
+      },
+      {
+       "label": "B",
+       "text": "700"
+      },
+      {
+       "label": "C",
+       "text": "800"
+      },
+      {
+       "label": "D",
+       "text": "900"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "一百一百地数，600后面依次是700、800、900，第三个就是900，每次都在百位上加1。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1099",
+   "page": null,
+   "description": "数序与大小比较：会把三位数按从小到大或从大到小的顺序排好，会发现975、980、985这样一组数的规律并接着往下写，会用大于号、小于号比较三位数的大小。",
+   "mastery_criteria": [
+    "会比较两个三位数的大小，并说清先比哪一位",
+    "会发现一组数的排列规律，按规律接着写出后面的数"
+   ],
+   "misconceptions": [
+    "比较三位数时只看个位或十位，不看百位",
+    "认为数字大的数就大，不会比较4个百和40个十",
+    "找规律时只算相邻两数的差，遇到隔个数变化就算错"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "msj_p1099_q1",
+     "topicId": "msj_p1099",
+     "prompt": "975、980、985，接着往下写一个数是多少？",
+     "question": "975、980、985，接着往下写一个数是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "986"
+      },
+      {
+       "label": "B",
+       "text": "990"
+      },
+      {
+       "label": "C",
+       "text": "995"
+      },
+      {
+       "label": "D",
+       "text": "1000"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "这组数每次增加5，975加5得980，980加5得985，985再加5得990，所以下一个数是990。"
+    },
+    {
+     "id": "msj_p1099_q2",
+     "topicId": "msj_p1099",
+     "prompt": "503、502、501，接着往下写一个数是多少？",
+     "question": "503、502、501，接着往下写一个数是多少？",
+     "answer": "500",
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 501}, {\"type\": \"num\", \"value\": 1}]}",
+     "explanation": "这组数每次减少1，503减1得502，502减1得501，501再减1得500，所以下一个数是500。"
+    },
+    {
+     "id": "msj_p1099_q3",
+     "topicId": "msj_p1099",
+     "prompt": "573中的3表示3个什么？说一说理由。",
+     "question": "573中的3表示3个什么？说一说理由。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3个百"
+      },
+      {
+       "label": "B",
+       "text": "3个十"
+      },
+      {
+       "label": "C",
+       "text": "3个一"
+      },
+      {
+       "label": "D",
+       "text": "3个千"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "573的3在个位上，个位上的数表示几个一，所以这个3表示3个一；同一个数字在十位、百位上表示的大小不一样。"
+    },
+    {
+     "id": "msj_p1099_q4",
+     "topicId": "msj_p1099",
+     "prompt": "4个百里面一共有多少个十？",
+     "question": "4个百里面一共有多少个十？",
+     "answer": "40",
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 100}]}, {\"type\": \"num\", \"value\": 10}]}",
+     "explanation": "4个百是400，400里面有40个十，所以4个百是40个十，也可以说40个十是4个百。"
+    },
+    {
+     "id": "msj_p1099_q5",
+     "topicId": "msj_p1099",
+     "prompt": "下面哪一组数是从小到大排好的？",
+     "question": "下面哪一组数是从小到大排好的？",
+     "options": [
+      {
+       "label": "A",
+       "text": "385、402、599"
+      },
+      {
+       "label": "B",
+       "text": "599、402、385"
+      },
+      {
+       "label": "C",
+       "text": "402、599、385"
+      },
+      {
+       "label": "D",
+       "text": "385、599、402"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "385、402、599三个数依次变大，是从小到大排的；比较三位数先看百位，百位小的数小，百位相同再看十位、个位。"
+    },
+    {
+     "id": "msj_p1099_q6",
+     "topicId": "msj_p1099",
+     "prompt": "901和909这两个数中，大的是多少？",
+     "question": "901和909这两个数中，大的是多少？",
+     "answer": "909",
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 909}",
+     "explanation": "两个数的百位都是9，十位都是0，就比个位，9比1大，所以909比901大，大的是909。"
+    },
+    {
+     "id": "msj_p1099_q7",
+     "topicId": "msj_p1099",
+     "prompt": "在760和720中间填大于号还是小于号？",
+     "question": "在760和720中间填大于号还是小于号？",
+     "answer": "大于号",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "两个数百位都是7，就比十位，6比2大，所以760比720大，中间应填大于号。"
+    },
+    {
+     "id": "msj_p1099_q8",
+     "topicId": "msj_p1099",
+     "prompt": "说说怎样比较368和365的大小。",
+     "question": "说说怎样比较368和365的大小。",
+     "answer": "先比百位，两个数百位上都是3；再比十位，十位上都是6；最后比个位，8比5大，所以368比365大。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "比较两个三位数，从百位比起，百位相同再比十位，十位相同再比个位，一位一位比下去就能判断大小。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1100",
+   "page": null,
+   "description": "近似数：会在数轴上标出420、480这样数的大致位置，会用整百数说一个三位数接近几百，如890接近900，会用先数10个作标准的办法估计一堆物品大约有多少。",
+   "mastery_criteria": [
+    "会说一个三位数接近哪个整百数，并说清离哪个更近",
+    "会先数出一小份作标准，再估计整体大约有多少"
+   ],
+   "misconceptions": [
+    "认为890接近800，只看百位上的数不看十位",
+    "估计时随便报一个数，不先数出一小份作标准",
+    "把比400多20的420数成离500更近"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "msj_p1100_q1",
+     "topicId": "msj_p1100",
+     "prompt": "890更接近哪个整百数？",
+     "question": "890更接近哪个整百数？",
+     "options": [
+      {
+       "label": "A",
+       "text": "900"
+      },
+      {
+       "label": "B",
+       "text": "800"
+      },
+      {
+       "label": "C",
+       "text": "700"
+      },
+      {
+       "label": "D",
+       "text": "1000"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "890在800和900之间，离900只差10，离800差90，所以890更接近900，可以说大约是900。"
+    },
+    {
+     "id": "msj_p1100_q2",
+     "topicId": "msj_p1100",
+     "prompt": "420在数轴上大约在什么位置？",
+     "question": "420在数轴上大约在什么位置？",
+     "options": [
+      {
+       "label": "A",
+       "text": "比400小"
+      },
+      {
+       "label": "B",
+       "text": "在400和500之间，离400近"
+      },
+      {
+       "label": "C",
+       "text": "在400和500之间，离500近"
+      },
+      {
+       "label": "D",
+       "text": "比500大"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "420比400大、比500小，它离400只差20，离500差80，所以在400和500之间离400更近，大约在400多一点的地方。"
+    },
+    {
+     "id": "msj_p1100_q3",
+     "topicId": "msj_p1100",
+     "prompt": "598最接近的整百数是多少？",
+     "question": "598最接近的整百数是多少？",
+     "answer": "600",
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 600}",
+     "explanation": "598离600只差2，离500差98，所以598最接近的整百数是600，可以说大约是600。"
+    },
+    {
+     "id": "msj_p1100_q4",
+     "topicId": "msj_p1100",
+     "prompt": "803接近哪个整百数？为什么？",
+     "question": "803接近哪个整百数？为什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "700"
+      },
+      {
+       "label": "B",
+       "text": "750"
+      },
+      {
+       "label": "C",
+       "text": "780"
+      },
+      {
+       "label": "D",
+       "text": "800"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "803比800多3，离800最近，所以803接近800，可以说803大约是800；接近整百数是看差得最少的那个整百数。"
+    },
+    {
+     "id": "msj_p1100_q5",
+     "topicId": "msj_p1100",
+     "prompt": "一摞书有20本，另一摞的高度是它的3倍，另一摞大约有多少本？",
+     "question": "一摞书有20本，另一摞的高度是它的3倍，另一摞大约有多少本？",
+     "answer": "60",
+     "type": "numeric",
+     "difficulty": "hard",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 20}, {\"type\": \"num\", \"value\": 3}]}",
+     "explanation": "另一摞的高度是20本那一摞的3倍，本数也大约是3倍，20乘3得60，所以另一摞大约有60本。"
+    },
+    {
+     "id": "msj_p1100_q6",
+     "topicId": "msj_p1100",
+     "prompt": "先数出10粒花生米并圈成一堆，整袋花生米大约有8堆，这袋大约有多少粒？",
+     "question": "先数出10粒花生米并圈成一堆，整袋花生米大约有8堆，这袋大约有多少粒？",
+     "answer": "80",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "先数出10粒作标准，再数一数整袋能分成几个这样的10粒，有8堆就是8个十，也就是大约80粒。"
+    },
+    {
+     "id": "msj_p1100_q7",
+     "topicId": "msj_p1100",
+     "prompt": "说说怎样估计一杯黄豆大约有多少粒。",
+     "question": "说说怎样估计一杯黄豆大约有多少粒。",
+     "answer": "先数出10粒黄豆放在一边作标准，再看这杯黄豆大约能分成几个这样的10粒，有几个十粒就是几十粒，这样估计比较准。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "估计一堆物品的个数，要先数出一小份作标准，再数一数整体里有几个这样的小份，用几个十算出大约有多少。"
+    },
+    {
+     "id": "msj_p1100_q8",
+     "topicId": "msj_p1100",
+     "prompt": "下面哪个数最接近500？",
+     "question": "下面哪个数最接近500？",
+     "options": [
+      {
+       "label": "A",
+       "text": "402"
+      },
+      {
+       "label": "B",
+       "text": "610"
+      },
+      {
+       "label": "C",
+       "text": "498"
+      },
+      {
+       "label": "D",
+       "text": "590"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "498离500只差2，是四个数里离500最近的，所以498最接近500，可以说大约是500。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1101",
+   "page": null,
+   "description": "综合练习：会读、写三位数并说出组成，认识算盘上一颗下珠表示1、一颗上珠表示5，会在算盘上拨出三位数，还会在用数位图摆棋子、按规律填数中巩固三位数的认识。",
+   "mastery_criteria": [
+    "会读、写三位数，能说出每个数位上的数表示多少",
+    "认识算盘，会在算盘上拨珠表示三位数，会用数位图摆棋子表示数"
+   ],
+   "misconceptions": [
+    "把算盘上一颗上珠当成1，一颗下珠当成5",
+    "拨珠时不先确定个位在哪一档，把数位认错",
+    "认为数位上是0的那一位可以不占位，写数时漏写0"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msj_p1101_q1",
+     "topicId": "msj_p1101",
+     "prompt": "算盘上一颗上珠表示多少？",
+     "question": "算盘上一颗上珠表示多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "算盘上一颗下珠表示1，一颗上珠表示5，一颗上珠和一颗下珠合起来就表示6，所以上珠表示5。"
+    },
+    {
+     "id": "msj_p1101_q2",
+     "topicId": "msj_p1101",
+     "prompt": "算盘上百位拨1颗下珠，十位拨1颗上珠和2颗下珠，个位不拨，表示多少？",
+     "question": "算盘上百位拨1颗下珠，十位拨1颗上珠和2颗下珠，个位不拨，表示多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "107"
+      },
+      {
+       "label": "B",
+       "text": "152"
+      },
+      {
+       "label": "C",
+       "text": "170"
+      },
+      {
+       "label": "D",
+       "text": "710"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "百位上1颗下珠是100，十位上1颗上珠和2颗下珠是5加2得7，表示70，个位不拨是0，合起来是170。"
+    },
+    {
+     "id": "msj_p1101_q3",
+     "topicId": "msj_p1101",
+     "prompt": "用5枚棋子摆在数位图上，摆出的最大三位数是多少？",
+     "question": "用5枚棋子摆在数位图上，摆出的最大三位数是多少？",
+     "answer": "500",
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 500}",
+     "explanation": "要使三位数最大，把5枚棋子都摆在百位上，百位是5，十位和个位是0，摆出的数是500。"
+    },
+    {
+     "id": "msj_p1101_q4",
+     "topicId": "msj_p1101",
+     "prompt": "用5枚棋子摆三位数，摆出的最小三位数是多少？",
+     "question": "用5枚棋子摆三位数，摆出的最小三位数是多少？",
+     "answer": "104",
+     "type": "numeric",
+     "difficulty": "hard",
+     "verify": "{\"type\": \"num\", \"value\": 104}",
+     "explanation": "三位数的百位上至少要有1枚棋子，剩4枚都摆在个位上，百位是1、十位是0、个位是4，最小的三位数是104。"
+    },
+    {
+     "id": "msj_p1101_q5",
+     "topicId": "msj_p1101",
+     "prompt": "用算筹记数时，如果一个数位上是0，怎样表示？",
+     "question": "用算筹记数时，如果一个数位上是0，怎样表示？",
+     "options": [
+      {
+       "label": "A",
+       "text": "画一个圈"
+      },
+      {
+       "label": "B",
+       "text": "空着不摆"
+      },
+      {
+       "label": "C",
+       "text": "摆一根竖棍"
+      },
+      {
+       "label": "D",
+       "text": "写一个数字0"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "我国古代用算筹记数，个位用纵式、十位用横式，如果一个数位上是0，那一位就空着不摆，所以0用空格表示。"
+    },
+    {
+     "id": "msj_p1101_q6",
+     "topicId": "msj_p1101",
+     "prompt": "由7个百、3个十和8个一组成的数写作什么？",
+     "question": "由7个百、3个十和8个一组成的数写作什么？",
+     "answer": "738",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "写数时百位上写7，十位上写3，个位上写8，所以这个数写作738，读作七百三十八。"
+    },
+    {
+     "id": "msj_p1101_q7",
+     "topicId": "msj_p1101",
+     "prompt": "在算盘上拨出一个三位数，要先做什么？说说你的做法。",
+     "question": "在算盘上拨出一个三位数，要先做什么？说说你的做法。",
+     "answer": "先确定哪一档是个位，再按百位、十位、个位上的数分别拨珠，一颗下珠表示1，一颗上珠表示5，哪一位是0就不拨珠。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "拨珠前一定要先定好个位在哪一档，否则各数位会错位；定好个位后按数位从左往右拨珠，0的那一位空着。"
+    },
+    {
+     "id": "msj_p1101_q8",
+     "topicId": "msj_p1101",
+     "prompt": "用棋子先摆出405，再在个位上添1枚棋子，这个数是多少？",
+     "question": "用棋子先摆出405，再在个位上添1枚棋子，这个数是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "406"
+      },
+      {
+       "label": "B",
+       "text": "415"
+      },
+      {
+       "label": "C",
+       "text": "450"
+      },
+      {
+       "label": "D",
+       "text": "505"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "405的个位上是5，在个位添1枚棋子，个位就变成6，百位和十位不变，所以这个数是406。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1102",
+   "page": null,
+   "description": "有余数除法的意义：会把10瓶蜂蜜每只小熊分3瓶，发现分给3只还剩1瓶，会把分的过程和结果写成10除以3等于3余1，认识余数，知道剩下的不够再分一份。",
+   "mastery_criteria": [
+    "会看着分的过程说出商和余数各表示什么",
+    "会把有余数的分法写成除法算式，并会读写这个算式"
+   ],
+   "misconceptions": [
+    "把剩下不够分的部分丢掉，只写商不写余数",
+    "把余数和商的位置写反，算式写成10除以1等于3",
+    "认为剩下的不够分就不算分过，把商写成0"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p1102_q1",
+     "topicId": "msj_p1102",
+     "prompt": "把10瓶蜂蜜分给小熊，每只小熊分3瓶，分给3只后还剩几瓶？",
+     "question": "把10瓶蜂蜜分给小熊，每只小熊分3瓶，分给3只后还剩几瓶？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1瓶"
+      },
+      {
+       "label": "B",
+       "text": "2瓶"
+      },
+      {
+       "label": "C",
+       "text": "3瓶"
+      },
+      {
+       "label": "D",
+       "text": "4瓶"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "每只小熊分3瓶，3只小熊一共分掉9瓶，10减9还剩1瓶，剩下的1瓶不够再分给一只小熊。"
+    },
+    {
+     "id": "msj_p1102_q2",
+     "topicId": "msj_p1102",
+     "prompt": "8个圆片，每3个一份，能分成几份？",
+     "question": "8个圆片，每3个一份，能分成几份？",
+     "answer": "2",
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 2}",
+     "explanation": "每3个一份，8里面最多有2个3，2乘3得6，剩下的2个不够再分一份，所以能分成2份。"
+    },
+    {
+     "id": "msj_p1102_q3",
+     "topicId": "msj_p1102",
+     "prompt": "8个圆片，每3个一份，分完后还剩几个？",
+     "question": "8个圆片，每3个一份，分完后还剩几个？",
+     "answer": "2",
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"num\", \"value\": 6}]}",
+     "explanation": "8个圆片分掉2份，一共用去6个，8减6还剩2个，剩下的2个不够再分一份，就是余数。"
+    },
+    {
+     "id": "msj_p1102_q4",
+     "topicId": "msj_p1102",
+     "prompt": "14枝花，每个花瓶插4枝，插了3瓶，还剩几枝？",
+     "question": "14枝花，每个花瓶插4枝，插了3瓶，还剩几枝？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1枝"
+      },
+      {
+       "label": "B",
+       "text": "2枝"
+      },
+      {
+       "label": "C",
+       "text": "3枝"
+      },
+      {
+       "label": "D",
+       "text": "4枝"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "每个花瓶插4枝，3个花瓶插了12枝，14减12还剩2枝，14除以4商3余2。"
+    },
+    {
+     "id": "msj_p1102_q5",
+     "topicId": "msj_p1102",
+     "prompt": "22除以5，商是几余数是几？照商4余1的样子写出来。",
+     "question": "22除以5，商是几余数是几？照商4余1的样子写出来。",
+     "answer": "商4余2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "5乘4得20，22减20还剩2，剩下的2比除数5小，不够再分一份，所以22除以5商4余2。"
+    },
+    {
+     "id": "msj_p1102_q6",
+     "topicId": "msj_p1102",
+     "prompt": "在有余数的除法算式里，分完以后剩下不够再分的数叫什么？",
+     "question": "在有余数的除法算式里，分完以后剩下不够再分的数叫什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "商"
+      },
+      {
+       "label": "B",
+       "text": "除数"
+      },
+      {
+       "label": "C",
+       "text": "被除数"
+      },
+      {
+       "label": "D",
+       "text": "余数"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "平均分以后剩下不够再分一份的数叫做余数，算式里通常写成商几余几，余数一定比除数小。"
+    },
+    {
+     "id": "msj_p1102_q7",
+     "topicId": "msj_p1102",
+     "prompt": "用3根小棒摆一个三角形，11根小棒能摆几个三角形，还剩几根？说说你是怎么想的。",
+     "question": "用3根小棒摆一个三角形，11根小棒能摆几个三角形，还剩几根？说说你是怎么想的。",
+     "answer": "能摆3个三角形，还剩2根。因为3乘3得9，11减9等于2，剩下的2根不够再摆一个三角形。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "每3根摆一个三角形，先想11里面最多有几个3，3乘3得9，用去9根，11减9还剩2根，所以摆3个还剩2根。"
+    },
+    {
+     "id": "msj_p1102_q8",
+     "topicId": "msj_p1102",
+     "prompt": "30颗糖，每8颗装一袋，最多能装满几袋？",
+     "question": "30颗糖，每8颗装一袋，最多能装满几袋？",
+     "answer": "3",
+     "type": "numeric",
+     "difficulty": "hard",
+     "verify": "{\"type\": \"num\", \"value\": 3}",
+     "explanation": "每8颗装一袋，8乘3得24，30减24还剩6颗，剩下的6颗不够装一袋，所以最多装满3袋。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1103",
+   "page": null,
+   "description": "余数与除数的关系：通过9个草莓平均分给2只小兔等例子发现余数比除数小，会用这个道理检查余数写得对不对，会用乘法口诀找最大能填几、18里面最多有几个5。",
+   "mastery_criteria": [
+    "知道余数一定比除数小，会用这个道理检查算式",
+    "会用乘法口诀试商，找出一个数里面最多有几个几"
+   ],
+   "misconceptions": [
+    "认为余数可以等于除数，把9除以2写成商3余3",
+    "认为余数可能比除数大，写算式时不检查余数",
+    "用乘法口诀试商时算出的积超过被除数"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "msj_p1103_q1",
+     "topicId": "msj_p1103",
+     "prompt": "9除以2等于4余1，余数1和除数2比，哪个小？",
+     "question": "9除以2等于4余1，余数1和除数2比，哪个小？",
+     "options": [
+      {
+       "label": "A",
+       "text": "余数小"
+      },
+      {
+       "label": "B",
+       "text": "除数小"
+      },
+      {
+       "label": "C",
+       "text": "一样大"
+      },
+      {
+       "label": "D",
+       "text": "不能比较"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "9除以2，每2个分一份，剩下的1个不够再分一份，余数1比除数2小，所以余数总是比除数小。"
+    },
+    {
+     "id": "msj_p1103_q2",
+     "topicId": "msj_p1103",
+     "prompt": "18里面最多有几个5？填一填。",
+     "question": "18里面最多有几个5？填一填。",
+     "answer": "3",
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 3}",
+     "explanation": "5乘3得15，18减15还剩3，剩下的3比5小，不能再有一个5，所以18里面最多有3个5。"
+    },
+    {
+     "id": "msj_p1103_q3",
+     "topicId": "msj_p1103",
+     "prompt": "一个数除以5，余数最大是几？",
+     "question": "一个数除以5，余数最大是几？",
+     "answer": "4",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "余数必须比除数小，除数是5，余数只能是1、2、3、4，其中最大的是4。"
+    },
+    {
+     "id": "msj_p1103_q4",
+     "topicId": "msj_p1103",
+     "prompt": "下面哪个算式的余数写错了？",
+     "question": "下面哪个算式的余数写错了？",
+     "options": [
+      {
+       "label": "A",
+       "text": "17除以3等于5余2"
+      },
+      {
+       "label": "B",
+       "text": "20除以6等于3余2"
+      },
+      {
+       "label": "C",
+       "text": "25除以4等于6余1"
+      },
+      {
+       "label": "D",
+       "text": "13除以2等于5余3"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "13除以2的余数是3，可3比除数2大，还能再分一份，应该商6余1，所以这道算式的商和余数都写错了。"
+    },
+    {
+     "id": "msj_p1103_q5",
+     "topicId": "msj_p1103",
+     "prompt": "31里面最多有几个7？填一填。",
+     "question": "31里面最多有几个7？填一填。",
+     "answer": "4",
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 4}",
+     "explanation": "7乘4得28，31减28还剩3，剩下的3比7小，不能再有一个7，所以31里面最多有4个7。"
+    },
+    {
+     "id": "msj_p1103_q6",
+     "topicId": "msj_p1103",
+     "prompt": "2乘一个数的积小于13，这个数最大是几？",
+     "question": "2乘一个数的积小于13，这个数最大是几？",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "7"
+      },
+      {
+       "label": "D",
+       "text": "12"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "2乘6得12，12比13小；2乘7得14，14比13大，所以这个数最大是6，试商时积不能超过被除数。"
+    },
+    {
+     "id": "msj_p1103_q7",
+     "topicId": "msj_p1103",
+     "prompt": "为什么余数一定比除数小？",
+     "question": "为什么余数一定比除数小？",
+     "answer": "因为如果剩下的和除数一样多，或者比除数还多，就还能再分一份，商就要变大，所以余数一定比除数小。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "余数是分到最后不够再分一份的部分。剩下的要是够一份，就还能继续分，商就会变大，所以余数只能比除数小。"
+    },
+    {
+     "id": "msj_p1103_q8",
+     "topicId": "msj_p1103",
+     "prompt": "45除以6，商是几，余数是几？",
+     "question": "45除以6，商是几，余数是几？",
+     "answer": "3",
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 45}, {\"type\": \"num\", \"value\": 42}]}",
+     "explanation": "6乘7得42，45减42还剩3，3比6小，不能再分一份，所以45除以6商7余3。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1104",
+   "page": null,
+   "description": "综合练习与整理复习：会算有余数的除法并说明计算过程，会把45个皮球每6个装一盒算出一共要几个盒子，会看除数不变时余数怎样变化，能用有余数的除法解决装盒、钉纽扣等实际问题。",
+   "mastery_criteria": [
+    "会算有余数的除法，能说清楚商和余数是怎么算出来的",
+    "能用有余数的除法解决装盒、钉纽扣等问题，知道多出的还要再要一份"
+   ],
+   "misconceptions": [
+    "求至少需要几个盒子时，把余下的几个不算，少算一个盒子",
+    "认为除数不变时余数也不变，看不出余数按规律变化",
+    "把商和余数的位置写反，算式写成被除数除以余数等于商"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "msj_p1104_q1",
+     "topicId": "msj_p1104",
+     "prompt": "45个皮球，每盒装6个，可以装满几盒？",
+     "question": "45个皮球，每盒装6个，可以装满几盒？",
+     "options": [
+      {
+       "label": "A",
+       "text": "6盒"
+      },
+      {
+       "label": "B",
+       "text": "7盒"
+      },
+      {
+       "label": "C",
+       "text": "8盒"
+      },
+      {
+       "label": "D",
+       "text": "9盒"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "6乘7得42，45减42还剩3，剩下的3个不够装一盒，所以可以装满7盒，还余3个。"
+    },
+    {
+     "id": "msj_p1104_q2",
+     "topicId": "msj_p1104",
+     "prompt": "45个皮球，每盒装6个，装满7盒后还剩几个？",
+     "question": "45个皮球，每盒装6个，装满7盒后还剩几个？",
+     "answer": "3",
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 45}, {\"type\": \"num\", \"value\": 42}]}",
+     "explanation": "装满7盒用去6乘7等于42个，45减42还剩3个，这3个就是余数，比除数6小。"
+    },
+    {
+     "id": "msj_p1104_q3",
+     "topicId": "msj_p1104",
+     "prompt": "45个皮球全部装入盒中，每盒装6个，至少要几个盒子？",
+     "question": "45个皮球全部装入盒中，每盒装6个，至少要几个盒子？",
+     "answer": "8",
+     "type": "numeric",
+     "difficulty": "hard",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 42}, {\"type\": \"num\", \"value\": 6}]}, {\"type\": \"num\", \"value\": 1}]}",
+     "explanation": "装满7盒后还剩3个，这3个也要用1个盒子装，7加1得8，所以至少要8个盒子。"
+    },
+    {
+     "id": "msj_p1104_q4",
+     "topicId": "msj_p1104",
+     "prompt": "被除数依次是16、17、18、19，除数都是3，余数依次是怎样变化的？",
+     "question": "被除数依次是16、17、18、19，除数都是3，余数依次是怎样变化的？",
+     "options": [
+      {
+       "label": "A",
+       "text": "每次多1，依次是1、2、0、1"
+      },
+      {
+       "label": "B",
+       "text": "余数一直不变"
+      },
+      {
+       "label": "C",
+       "text": "每次多3，依次是3、4、5、6"
+      },
+      {
+       "label": "D",
+       "text": "依次是0、1、2、3"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "16除以3商5余1，17除以3商5余2，18除以3商6余0，19除以3商6余1，被除数每次多1，商或余数也跟着变，余数依次是1、2、0、1。"
+    },
+    {
+     "id": "msj_p1104_q5",
+     "topicId": "msj_p1104",
+     "prompt": "16除以3，商是几余数是几？照商4余1的样子写出来。",
+     "question": "16除以3，商是几余数是几？照商4余1的样子写出来。",
+     "answer": "商5余1",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "3乘5得15，16减15还剩1，剩下的1比除数3小，所以16除以3商5余1。"
+    },
+    {
+     "id": "msj_p1104_q6",
+     "topicId": "msj_p1104",
+     "prompt": "被除数是19，除数是3，商是几？",
+     "question": "被除数是19，除数是3，商是几？",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "3乘6得18，19减18还剩1，剩下的1比3小，所以19除以3商6余1，商是6。"
+    },
+    {
+     "id": "msj_p1104_q7",
+     "topicId": "msj_p1104",
+     "prompt": "用30根小棒摆正方形，每个正方形用4根，能摆几个，还剩几根？",
+     "question": "用30根小棒摆正方形，每个正方形用4根，能摆几个，还剩几根？",
+     "answer": "能摆7个正方形，还剩2根。因为4乘7得28，30减28等于2，剩下的2根不够再摆一个正方形。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "每个正方形用4根小棒，先想30里面最多有几个4，4乘7得28，用去28根，30减28还剩2根。"
+    },
+    {
+     "id": "msj_p1104_q8",
+     "topicId": "msj_p1104",
+     "prompt": "17除以3，商是几，余数是几？",
+     "question": "17除以3，商是几，余数是几？",
+     "answer": "2",
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 17}, {\"type\": \"num\", \"value\": 15}]}",
+     "explanation": "3乘5得15，17减15还剩2，2比3小，所以17除以3商5余2，余数是2。"
+    }
+   ]
+  }
+ ]
+}

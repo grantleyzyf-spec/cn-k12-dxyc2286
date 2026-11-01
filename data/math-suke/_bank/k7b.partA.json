@@ -1,0 +1,1891 @@
+{
+ "tag": "k7b",
+ "book": "苏科版七年级下册",
+ "unit_points": [
+  {
+   "id": "msk_p007",
+   "description": "第7章 幂的运算：学习同底数幂的乘法、幂的乘方与积的乘方、同底数幂的除法，理解零指数幂与负整数指数幂的意义，会用幂的运算性质进行计算，会用科学记数法表示绝对值较大或较小的数。",
+   "mastery_criteria": [
+    "能说出同底数幂的乘法、幂的乘方与积的乘方、同底数幂的除法的运算性质",
+    "能运用幂的运算性质进行简单的计算与化简",
+    "会用科学记数法表示绝对值小于1的数"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p007_q1",
+     "topicId": "msk_p007",
+     "prompt": "下列运算正确的是（　）",
+     "question": "下列运算正确的是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "a²·a³=a⁶"
+      },
+      {
+       "label": "B",
+       "text": "(a²)³=a⁵"
+      },
+      {
+       "label": "C",
+       "text": "a²·a³=a⁵"
+      },
+      {
+       "label": "D",
+       "text": "a⁶÷a²=a³"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "同底数幂相乘，底数不变，指数相加，所以a²·a³=a⁵；而a⁶÷a²应得a⁴，幂的乘方应把指数相乘得a⁶。"
+    },
+    {
+     "id": "msk_p007_q2",
+     "topicId": "msk_p007",
+     "prompt": "计算10³×10⁴，结果是10的多少次方？",
+     "question": "计算10³×10⁴，结果是10的多少次方？",
+     "answer": 7,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "10³表示3个10相乘，10⁴表示4个10相乘，合起来是7个10相乘，按同底数幂的乘法性质指数相加，得10的7次方。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msk_p007_q3",
+     "topicId": "msk_p007",
+     "prompt": "计算(3a²)³，正确的结果是（　）",
+     "question": "计算(3a²)³，正确的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "3a⁶"
+      },
+      {
+       "label": "B",
+       "text": "27a⁶"
+      },
+      {
+       "label": "C",
+       "text": "9a⁶"
+      },
+      {
+       "label": "D",
+       "text": "27a⁵"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "积的乘方要把每一个因式分别乘方，系数3也要立方，得27，a²再立方得a⁶，所以结果是27a⁶。"
+    },
+    {
+     "id": "msk_p007_q4",
+     "topicId": "msk_p007",
+     "prompt": "同底数幂相乘，底数不变，指数（　）。",
+     "question": "同底数幂相乘，底数不变，指数（　）。",
+     "answer": "相加",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材归纳出的同底数幂的乘法性质是：同底数幂相乘，底数不变，指数相加。"
+    },
+    {
+     "id": "msk_p007_q5",
+     "topicId": "msk_p007",
+     "prompt": "计算(-2)³×(-2)²，正确的结果是（　）",
+     "question": "计算(-2)³×(-2)²，正确的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "-32"
+      },
+      {
+       "label": "B",
+       "text": "32"
+      },
+      {
+       "label": "C",
+       "text": "-64"
+      },
+      {
+       "label": "D",
+       "text": "64"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两个幂的底数都是负2，指数相加得(-2)的5次方，因为负数的奇次幂是负数，2的5次方是32，所以结果是-32。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p008",
+   "description": "第8章 整式乘法：学习单项式乘单项式、单项式乘多项式、多项式乘多项式的法则，并通过图形面积的计算推导完全平方公式与平方差公式，会用乘法公式进行简便计算。",
+   "mastery_criteria": [
+    "能说出单项式乘单项式、单项式乘多项式、多项式乘多项式的法则",
+    "会用完全平方公式与平方差公式进行计算和简便运算"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msk_p008_q1",
+     "topicId": "msk_p008",
+     "prompt": "计算3a·2a，正确的结果是（　）",
+     "question": "计算3a·2a，正确的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "6a"
+      },
+      {
+       "label": "B",
+       "text": "6a²"
+      },
+      {
+       "label": "C",
+       "text": "5a²"
+      },
+      {
+       "label": "D",
+       "text": "6a³"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "单项式乘单项式，系数相乘得3×2=6，相同字母a的幂相乘得a·a=a²，所以积是6a²。"
+    },
+    {
+     "id": "msk_p008_q2",
+     "topicId": "msk_p008",
+     "prompt": "填空：平方差公式(a+b)(a-b)的结果是a²减（　）。",
+     "question": "填空：平方差公式(a+b)(a-b)的结果是a²减（　）。",
+     "answer": "b²",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "这是平方差公式：两个数的和与这两个数的差相乘，等于这两个数的平方差，所以结果是a²-b²。"
+    },
+    {
+     "id": "msk_p008_q3",
+     "topicId": "msk_p008",
+     "prompt": "当x=2时，计算式子2x(x+3)的值。",
+     "question": "当x=2时，计算式子2x(x+3)的值。",
+     "answer": 20,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "先按单项式乘多项式的法则展开得2x²+6x，再把x=2代入，得8+12=20，所以结果是20。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}]}"
+    },
+    {
+     "id": "msk_p008_q4",
+     "topicId": "msk_p008",
+     "prompt": "计算(x+2)(x-3)，正确的结果是（　）",
+     "question": "计算(x+2)(x-3)，正确的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "x²-x-6"
+      },
+      {
+       "label": "B",
+       "text": "x²+x-6"
+      },
+      {
+       "label": "C",
+       "text": "x²-6"
+      },
+      {
+       "label": "D",
+       "text": "x²-5x-6"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "用第一个多项式的每一项乘第二个多项式的每一项，得x²-3x+2x-6，合并同类项后是x²-x-6。"
+    },
+    {
+     "id": "msk_p008_q5",
+     "topicId": "msk_p008",
+     "prompt": "计算(2a-3)²，正确的结果是（　）",
+     "question": "计算(2a-3)²，正确的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "4a²-9"
+      },
+      {
+       "label": "B",
+       "text": "4a²-6a+9"
+      },
+      {
+       "label": "C",
+       "text": "4a²-12a+9"
+      },
+      {
+       "label": "D",
+       "text": "4a²+12a+9"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "用完全平方公式，首项平方得4a²，中间项是2×2a×3=12a，符号取减，末项平方得9，所以结果是4a²-12a+9。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p009",
+   "description": "第9章 图形的变换：认识平移、轴对称、旋转三种平面变换，理解变换前后的两个图形可以重合、对应线段相等、对应角相等，掌握三种变换各自的性质，并认识中心对称与中心对称图形。",
+   "mastery_criteria": [
+    "能区分平移、轴对称、旋转三种平面变换",
+    "能说出三种变换的共同性质与各自特有的性质"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p009_q1",
+     "topicId": "msk_p009",
+     "prompt": "下列变换中，把图形沿某条直线翻折后得到另一个图形的是（　）",
+     "question": "下列变换中，把图形沿某条直线翻折后得到另一个图形的是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "平移"
+      },
+      {
+       "label": "B",
+       "text": "轴对称"
+      },
+      {
+       "label": "C",
+       "text": "旋转"
+      },
+      {
+       "label": "D",
+       "text": "放大"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "轴对称是把一个平面图形沿某条直线翻折后得到另一个图形的变换，这条直线就是对称轴，翻折是它的关键动作。"
+    },
+    {
+     "id": "msk_p009_q2",
+     "topicId": "msk_p009",
+     "prompt": "平移、轴对称、旋转这三种变换前后的两个图形都可以（　）。",
+     "question": "平移、轴对称、旋转这三种变换前后的两个图形都可以（　）。",
+     "answer": "重合",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材指出三种变换的共同性质：变换前后的两个图形可以重合，对应线段相等，对应角也相等。"
+    },
+    {
+     "id": "msk_p009_q3",
+     "topicId": "msk_p009",
+     "prompt": "一个图形绕点O按逆时针方向旋转120°，对应点与旋转中心O连线所成的角是多少度？",
+     "question": "一个图形绕点O按逆时针方向旋转120°，对应点与旋转中心O连线所成的角是多少度？",
+     "answer": 120,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "旋转的性质指出，对应点与旋转中心连线所成的角都等于旋转角，旋转角是120°，所以这个角也是120°。",
+     "verify": "{\"type\": \"num\", \"value\": 120}"
+    },
+    {
+     "id": "msk_p009_q4",
+     "topicId": "msk_p009",
+     "prompt": "下列说法错误的是（　）",
+     "question": "下列说法错误的是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "平移前后对应线段相等"
+      },
+      {
+       "label": "B",
+       "text": "轴对称前后对应角相等"
+      },
+      {
+       "label": "C",
+       "text": "旋转会改变图形的形状和大小"
+      },
+      {
+       "label": "D",
+       "text": "三种变换前后的图形都能重合"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "旋转前后两个图形可以重合，对应线段相等、对应角也相等，形状和大小都不会改变，所以旋转改变形状和大小的说法错误。"
+    },
+    {
+     "id": "msk_p009_q5",
+     "topicId": "msk_p009",
+     "prompt": "在方格纸中，把点A(2,1)先向右平移3个单位，再向上平移2个单位，所得点的坐标是（　）",
+     "question": "在方格纸中，把点A(2,1)先向右平移3个单位，再向上平移2个单位，所得点的坐标是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(5,3)"
+      },
+      {
+       "label": "B",
+       "text": "(3,2)"
+      },
+      {
+       "label": "C",
+       "text": "(5,2)"
+      },
+      {
+       "label": "D",
+       "text": "(2,3)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "向右平移3个单位横坐标加3，得5；向上平移2个单位纵坐标加2，得3；所以所得点的坐标是(5,3)。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "msk_p1025",
+   "page": 4,
+   "description": "由10³×10⁴的具体计算出发，用乘方的意义和乘法结合律归纳出同底数幂的乘法性质：同底数幂相乘，底数不变，指数相加，即a的m次方乘a的n次方等于a的m加n次方（m，n是正整数），并会用这个性质进行计算。",
+   "mastery_criteria": [
+    "能说出同底数幂的乘法性质，并用式子表示",
+    "能计算底数是数或字母的同底数幂的乘法"
+   ],
+   "misconceptions": [
+    "把a²·a³算成a⁶，误把指数相乘当成指数相加",
+    "底数不同时仍把指数相加，如把2³·3²算成6⁵",
+    "负号的个数没有数清，符号判断出错"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1025_q1",
+     "topicId": "msk_p1025",
+     "prompt": "计算a²·a³，正确的结果是（　）",
+     "question": "计算a²·a³，正确的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "a⁵"
+      },
+      {
+       "label": "B",
+       "text": "a⁶"
+      },
+      {
+       "label": "C",
+       "text": "a⁹"
+      },
+      {
+       "label": "D",
+       "text": "2a⁵"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两个幂的底数都是a，按同底数幂的乘法性质，底数不变、指数相加，2加3等于5，所以结果是a⁵。"
+    },
+    {
+     "id": "msk_p1025_q2",
+     "topicId": "msk_p1025",
+     "prompt": "计算10³×10²，结果是10的多少次方？",
+     "question": "计算10³×10²，结果是10的多少次方？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "10³是3个10相乘，10²是2个10相乘，乘起来一共5个10相乘，所以结果是10的5次方。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1025_q3",
+     "topicId": "msk_p1025",
+     "prompt": "填空：10³×10⁴的结果是10的（　）次方。",
+     "question": "填空：10³×10⁴的结果是10的（　）次方。",
+     "answer": "7",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "同底数幂相乘，底数不变，指数相加，3加4等于7，所以10³×10⁴=10的7次方。"
+    },
+    {
+     "id": "msk_p1025_q4",
+     "topicId": "msk_p1025",
+     "prompt": "计算(-3)²×(-3)³，正确的结果是（　）",
+     "question": "计算(-3)²×(-3)³，正确的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "3⁵"
+      },
+      {
+       "label": "B",
+       "text": "-3⁵"
+      },
+      {
+       "label": "C",
+       "text": "-3⁶"
+      },
+      {
+       "label": "D",
+       "text": "3⁶"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个幂的底数都是负3，指数相加得(-3)的5次方；负数的奇次幂是负数，所以结果是负的3的5次方。"
+    },
+    {
+     "id": "msk_p1025_q5",
+     "topicId": "msk_p1025",
+     "prompt": "计算下列算式的值：2³×2⁴。",
+     "question": "计算下列算式的值：2³×2⁴。",
+     "answer": 128,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "底数相同，指数相加得2的7次方，2的7次方等于128，所以结果是128。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 7}]}"
+    },
+    {
+     "id": "msk_p1025_q6",
+     "topicId": "msk_p1025",
+     "prompt": "填空：a·a²·a³的结果是a的（　）次方。",
+     "question": "填空：a·a²·a³的结果是a的（　）次方。",
+     "answer": "6",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "三个幂的底数都是a，指数分别是不写时的1、2、3，相加得6，所以结果是a的6次方。"
+    },
+    {
+     "id": "msk_p1025_q7",
+     "topicId": "msk_p1025",
+     "prompt": "已知a的m次方等于2，a的n次方等于3，那么a的m加n次方的值是（　）",
+     "question": "已知a的m次方等于2，a的n次方等于3，那么a的m加n次方的值是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "9"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "a的m加n次方等于a的m次方乘a的n次方，这是同底数幂乘法性质的逆用，把2和3相乘得6。"
+    },
+    {
+     "id": "msk_p1025_q8",
+     "topicId": "msk_p1025",
+     "prompt": "请说明2⁵×2³为什么等于2⁸。",
+     "question": "请说明2⁵×2³为什么等于2⁸。",
+     "answer": "2⁵表示5个2相乘，2³表示3个2相乘，两个积相乘就是5加3共8个2相乘，按乘方的意义写成2⁸，所以指数相加。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "此题考的是性质从哪里来：同底数幂相乘只是把相同的因数合并计数，因数个数相加就是指数相加，底数始终不变。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1026",
+   "page": 8,
+   "description": "由(10³)³与(3×4)³这类具体算式的计算，归纳出幂的乘方与积的乘方的运算性质：幂的乘方，底数不变，指数相乘；积的乘方，把积的每一个因式分别乘方，再把所得的幂相乘，并会进行相关的计算与化简。",
+   "mastery_criteria": [
+    "能说出幂的乘方与积的乘方的运算性质，并用式子表示",
+    "会计算幂的乘方、积的乘方以及它们的混合运算"
+   ],
+   "misconceptions": [
+    "把(a³)²算成a⁵，幂的乘方误把指数相加",
+    "把(2a)³算成2a³，忘记系数也要乘方",
+    "把-a²与(-a)²混为一谈，符号处理出错"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1026_q1",
+     "topicId": "msk_p1026",
+     "prompt": "计算(10²)³，正确的结果是（　）",
+     "question": "计算(10²)³，正确的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "10⁵"
+      },
+      {
+       "label": "B",
+       "text": "10⁶"
+      },
+      {
+       "label": "C",
+       "text": "10⁸"
+      },
+      {
+       "label": "D",
+       "text": "10⁹"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "(10²)³表示3个10²相乘，每个10²里有2个10，一共6个10相乘，按幂的乘方性质指数相乘得10⁶。"
+    },
+    {
+     "id": "msk_p1026_q2",
+     "topicId": "msk_p1026",
+     "prompt": "填空：幂(a³)²的结果是a的（　）次方。",
+     "question": "填空：幂(a³)²的结果是a的（　）次方。",
+     "answer": "6",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "幂的乘方，底数不变，指数相乘，3乘2等于6，所以(a³)²=a⁶。"
+    },
+    {
+     "id": "msk_p1026_q3",
+     "topicId": "msk_p1026",
+     "prompt": "计算下列算式的值：(2³)²。",
+     "question": "计算下列算式的值：(2³)²。",
+     "answer": 64,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "先按幂的乘方性质化成2的6次方，再算出2的6次方等于64，所以结果是64。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 6}]}"
+    },
+    {
+     "id": "msk_p1026_q4",
+     "topicId": "msk_p1026",
+     "prompt": "计算(2a²)³，正确的结果是（　）",
+     "question": "计算(2a²)³，正确的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "2a⁶"
+      },
+      {
+       "label": "B",
+       "text": "6a⁶"
+      },
+      {
+       "label": "C",
+       "text": "8a⁶"
+      },
+      {
+       "label": "D",
+       "text": "8a⁵"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "积的乘方要把每个因式分别乘方：2的立方是8，a²的立方是a⁶，所以结果是8a⁶。"
+    },
+    {
+     "id": "msk_p1026_q5",
+     "topicId": "msk_p1026",
+     "prompt": "当a=2，b=3时，计算式子(ab)³的值。",
+     "question": "当a=2，b=3时，计算式子(ab)³的值。",
+     "answer": 216,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "按积的乘方性质(ab)³=a³b³，代入得8乘27等于216；也可以先算ab=6，再立方得216，结果相同。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msk_p1026_q6",
+     "topicId": "msk_p1026",
+     "prompt": "填空：幂(x²)⁵的结果是x的（　）次方。",
+     "question": "填空：幂(x²)⁵的结果是x的（　）次方。",
+     "answer": "10",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "幂的乘方指数相乘，2乘5等于10，所以(x²)⁵=x的10次方。"
+    },
+    {
+     "id": "msk_p1026_q7",
+     "topicId": "msk_p1026",
+     "prompt": "计算(-2a²)³，正确的结果是（　）",
+     "question": "计算(-2a²)³，正确的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "8a⁶"
+      },
+      {
+       "label": "B",
+       "text": "-6a⁶"
+      },
+      {
+       "label": "C",
+       "text": "-8a⁵"
+      },
+      {
+       "label": "D",
+       "text": "-8a⁶"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "积的乘方把每个因式分别乘方，负2的立方是负8，a²的立方是a⁶，所以结果是-8a⁶，注意系数与字母都要乘方。"
+    },
+    {
+     "id": "msk_p1026_q8",
+     "topicId": "msk_p1026",
+     "prompt": "请说明(2×5)³与2³×5³为什么相等。",
+     "question": "请说明(2×5)³与2³×5³为什么相等。",
+     "answer": "(2×5)³表示3个10相乘，等于1000；2³×5³表示3个2相乘的积乘3个5相乘的积，因数重新结合也是3个10相乘，所以两者相等。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "此题考积的乘方性质的由来：乘法交换律与结合律允许把因数重新分组，每个因式各自乘方后再相乘，结果不变。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1027",
+   "page": 13,
+   "description": "由10的5次方除以10的3次方这类具体计算，归纳出同底数幂的除法性质：同底数幂相除，底数不变，指数相减；并把指数推广到零与负整数，规定任何不等于0的数的0次幂等于1，负整数指数幂等于正整数指数幂的倒数，会用科学记数法表示绝对值小于1的数。",
+   "mastery_criteria": [
+    "能说出同底数幂的除法性质并正确计算",
+    "理解零指数幂与负整数指数幂的意义，会求值",
+    "会用科学记数法表示绝对值小于1的数"
+   ],
+   "misconceptions": [
+    "把a⁶÷a²算成a³，误把指数相除",
+    "把a⁰写成0，忘记任何不等于0的数的0次幂等于1",
+    "把2⁻³算成-8，负整数指数幂误当负数的幂"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1027_q1",
+     "topicId": "msk_p1027",
+     "prompt": "计算a⁶÷a²，正确的结果是（　）",
+     "question": "计算a⁶÷a²，正确的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "a³"
+      },
+      {
+       "label": "B",
+       "text": "a⁴"
+      },
+      {
+       "label": "C",
+       "text": "a⁸"
+      },
+      {
+       "label": "D",
+       "text": "a¹²"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "同底数幂相除，底数不变，指数相减，6减2等于4，所以结果是a⁴，不能把指数相除。"
+    },
+    {
+     "id": "msk_p1027_q2",
+     "topicId": "msk_p1027",
+     "prompt": "填空：10⁵÷10³的结果是10的（　）次方。",
+     "question": "填空：10⁵÷10³的结果是10的（　）次方。",
+     "answer": "2",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "同底数幂相除，底数不变，指数相减，5减3等于2，所以结果是10的2次方。"
+    },
+    {
+     "id": "msk_p1027_q3",
+     "topicId": "msk_p1027",
+     "prompt": "计算下列算式的值：5⁰。",
+     "question": "计算下列算式的值：5⁰。",
+     "answer": 1,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "教材规定任何不等于0的数的0次幂等于1，5不等于0，所以5⁰=1，不能写成0。",
+     "verify": "{\"type\": \"num\", \"value\": 1}"
+    },
+    {
+     "id": "msk_p1027_q4",
+     "topicId": "msk_p1027",
+     "prompt": "计算2⁻³，正确的结果是（　）",
+     "question": "计算2⁻³，正确的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "-8"
+      },
+      {
+       "label": "B",
+       "text": "-1/8"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "1/8"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "负整数指数幂等于对应的正整数指数幂的倒数，2⁻³等于1除以2的3次方，即1/8，不是负数。"
+    },
+    {
+     "id": "msk_p1027_q5",
+     "topicId": "msk_p1027",
+     "prompt": "计算下列算式的值：10⁶÷10²。",
+     "question": "计算下列算式的值：10⁶÷10²。",
+     "answer": 10000,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "同底数幂相除指数相减得10的4次方，10的4次方等于10000，所以结果是10000。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msk_p1027_q6",
+     "topicId": "msk_p1027",
+     "prompt": "用科学记数法表示0.000 031 4，结果是3.14×10的（　）次方。",
+     "question": "用科学记数法表示0.000 031 4，结果是3.14×10的（　）次方。",
+     "answer": "-5",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "0.000 031 4等于3.14乘0.000 01，而0.000 01等于10的负5次方，所以写成3.14×10的负5次方。"
+    },
+    {
+     "id": "msk_p1027_q7",
+     "topicId": "msk_p1027",
+     "prompt": "计算(-x)⁵÷(-x)²，正确的结果是（　）",
+     "question": "计算(-x)⁵÷(-x)²，正确的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "-x³"
+      },
+      {
+       "label": "B",
+       "text": "x³"
+      },
+      {
+       "label": "C",
+       "text": "-x⁷"
+      },
+      {
+       "label": "D",
+       "text": "x⁷"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "同底数幂相除指数相减，得(-x)的3次方；负数的奇次幂是负数，所以结果是-x³。"
+    },
+    {
+     "id": "msk_p1027_q8",
+     "topicId": "msk_p1027",
+     "prompt": "请说明为什么规定a⁰=1（a不等于0）。",
+     "question": "请说明为什么规定a⁰=1（a不等于0）。",
+     "answer": "因为a的m次方除以a的m次方，按除法意义商是1，按同底数幂除法性质指数相减得a⁰；为了让这条性质在m等于n时仍然成立，规定a⁰=1。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "此题考规定的合理性：零指数幂不是随意指定的，而是为保持同底数幂的除法性质普遍成立而作的补充规定。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1028",
+   "page": 26,
+   "description": "借助电视墙面积的两种算法得到3a乘3a等于9a²，再由乘法交换律与结合律归纳出单项式乘单项式的法则：把它们的系数、相同字母的幂分别相乘，对于只在一个单项式里含有的字母，则连同它的指数作为积的一个因式。",
+   "mastery_criteria": [
+    "能说出单项式乘单项式的法则",
+    "会计算单项式与单项式的积，含负号与多个字母时不出错"
+   ],
+   "misconceptions": [
+    "把2a·3a算成6a，只乘系数没有乘字母的幂",
+    "漏掉只在一个单项式里出现的字母，如把3a·2b算成6a",
+    "负因数个数没有数清，积的符号判断错误"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msk_p1028_q1",
+     "topicId": "msk_p1028",
+     "prompt": "计算3a·2a，正确的结果是（　）",
+     "question": "计算3a·2a，正确的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "6a"
+      },
+      {
+       "label": "B",
+       "text": "6a²"
+      },
+      {
+       "label": "C",
+       "text": "5a²"
+      },
+      {
+       "label": "D",
+       "text": "6a³"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "系数相乘得6，相同字母a的幂相乘得a²，所以积是6a²，只写6a就漏掉了字母的幂。"
+    },
+    {
+     "id": "msk_p1028_q2",
+     "topicId": "msk_p1028",
+     "prompt": "填空：单项式2x与3x的积是（　）x²。",
+     "question": "填空：单项式2x与3x的积是（　）x²。",
+     "answer": "6",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "单项式乘单项式，系数相乘得2乘3等于6，字母部分x·x=x²，所以填6。"
+    },
+    {
+     "id": "msk_p1028_q3",
+     "topicId": "msk_p1028",
+     "prompt": "单项式2a与3b相乘，积中ab的系数是多少？",
+     "question": "单项式2a与3b相乘，积中ab的系数是多少？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "2a乘3b，系数相乘得6，a与b分别是只在一个单项式里含有的字母，连同指数作为积的因式，所以积是6ab，系数是6。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msk_p1028_q4",
+     "topicId": "msk_p1028",
+     "prompt": "计算(-2x²y)·(3xy²)，正确的结果是（　）",
+     "question": "计算(-2x²y)·(3xy²)，正确的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "6x³y³"
+      },
+      {
+       "label": "B",
+       "text": "-6x²y²"
+      },
+      {
+       "label": "C",
+       "text": "-6x³y³"
+      },
+      {
+       "label": "D",
+       "text": "-6x³y²"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "系数相乘得负6；x²乘x得x³，y乘y²得y³；所以结果是-6x³y³，注意每个字母的指数都要相加。"
+    },
+    {
+     "id": "msk_p1028_q5",
+     "topicId": "msk_p1028",
+     "prompt": "计算(-3a)²·a，所得积中a³的系数是多少？",
+     "question": "计算(-3a)²·a，所得积中a³的系数是多少？",
+     "answer": 9,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "先算积的乘方(-3a)²=9a²，再乘a得9a³，所以a³的系数是9，负号在平方后消失。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": -3}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 1}]}"
+    },
+    {
+     "id": "msk_p1028_q6",
+     "topicId": "msk_p1028",
+     "prompt": "填空：单项式4x²与-5x的积是（　）x³。",
+     "question": "填空：单项式4x²与-5x的积是（　）x³。",
+     "answer": "-20",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "系数相乘得4乘负5等于负20，x²乘x得x³，所以积是-20x³，系数填负20。"
+    },
+    {
+     "id": "msk_p1028_q7",
+     "topicId": "msk_p1028",
+     "prompt": "计算(2×10³)×(3×10⁴)，正确的结果是（　）",
+     "question": "计算(2×10³)×(3×10⁴)，正确的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "5×10⁷"
+      },
+      {
+       "label": "B",
+       "text": "6×10¹²"
+      },
+      {
+       "label": "C",
+       "text": "6×10⁸"
+      },
+      {
+       "label": "D",
+       "text": "6×10⁷"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "把2与3相乘得6，10³与10⁴相乘按同底数幂的乘法得10⁷，所以结果是6×10⁷。"
+    },
+    {
+     "id": "msk_p1028_q8",
+     "topicId": "msk_p1028",
+     "prompt": "请说明2a·3a的积为什么是6a²。",
+     "question": "请说明2a·3a的积为什么是6a²。",
+     "answer": "系数2与3相乘得6，相同字母a的两个幂相乘，底数不变指数相加得a²，所以积是6a²；系数与字母的幂要分别相乘。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "此题考法则的分解动作：系数管系数、同字母的幂管幂，两块结果再相乘，缺一块就会写错。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1029",
+   "page": 29,
+   "description": "由改装后窗户面积的两种算法得到a乘(b加c)等于ab加ac，再由乘法分配律归纳出单项式乘多项式的法则：单项式与多项式相乘，先用单项式乘多项式的每一项，再把所得的积相加，计算时要注意符号与不漏项。",
+   "mastery_criteria": [
+    "能说出单项式乘多项式的法则",
+    "会按分配律展开单项式与多项式的积，符号和项数不出错"
+   ],
+   "misconceptions": [
+    "漏乘多项式的某一项，如把2a(a+3)算成2a²+3",
+    "符号出错，如把-2a(a-3)算成-2a²-6a",
+    "把积写成单项式，忘记逐项相乘"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msk_p1029_q1",
+     "topicId": "msk_p1029",
+     "prompt": "根据乘法分配律，a(b+c)等于（　）",
+     "question": "根据乘法分配律，a(b+c)等于（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "ab+ac"
+      },
+      {
+       "label": "B",
+       "text": "ab+c"
+      },
+      {
+       "label": "C",
+       "text": "abc"
+      },
+      {
+       "label": "D",
+       "text": "a+bc"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "用a去乘括号里的每一项，分别得ab与ac，再把积相加，所以a(b+c)=ab+ac。"
+    },
+    {
+     "id": "msk_p1029_q2",
+     "topicId": "msk_p1029",
+     "prompt": "填空：把2a(a+3)展开，得到2a²加（　）a。",
+     "question": "填空：把2a(a+3)展开，得到2a²加（　）a。",
+     "answer": "6",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "用2a分别乘a与3，得2a²与6a，再把积相加，所以括号里应填6。"
+    },
+    {
+     "id": "msk_p1029_q3",
+     "topicId": "msk_p1029",
+     "prompt": "当a=2时，计算式子a(a+3)的值。",
+     "question": "当a=2时，计算式子a(a+3)的值。",
+     "answer": 10,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "先按法则展开得a²+3a，再把a=2代入得4加6等于10，所以结果是10。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}]}"
+    },
+    {
+     "id": "msk_p1029_q4",
+     "topicId": "msk_p1029",
+     "prompt": "计算-2a(a-3)，正确的结果是（　）",
+     "question": "计算-2a(a-3)，正确的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "-2a²-6a"
+      },
+      {
+       "label": "B",
+       "text": "-2a²+6a"
+      },
+      {
+       "label": "C",
+       "text": "2a²-6a"
+      },
+      {
+       "label": "D",
+       "text": "-2a²-3"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "用-2a乘a得-2a²，用-2a乘负3得正的6a，再把积相加，所以结果是-2a²+6a。"
+    },
+    {
+     "id": "msk_p1029_q5",
+     "topicId": "msk_p1029",
+     "prompt": "填空：把3x(x-2)展开，得到3x²减（　）x。",
+     "question": "填空：把3x(x-2)展开，得到3x²减（　）x。",
+     "answer": "6",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "用3x分别乘x与负2，得3x²与负6x，所以结果是3x²-6x，横线上填6。"
+    },
+    {
+     "id": "msk_p1029_q6",
+     "topicId": "msk_p1029",
+     "prompt": "当x=3时，计算式子2x(x+1)的值。",
+     "question": "当x=3时，计算式子2x(x+1)的值。",
+     "answer": 24,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "展开得2x²+2x，代入x=3得18加6等于24；也可以先算x+1=4，再算2乘3乘4得24，结果一致。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 1}]}]}"
+    },
+    {
+     "id": "msk_p1029_q7",
+     "topicId": "msk_p1029",
+     "prompt": "计算a(a²-2a+1)，正确的结果是（　）",
+     "question": "计算a(a²-2a+1)，正确的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "a³-2a²+1"
+      },
+      {
+       "label": "B",
+       "text": "a³-2a+1"
+      },
+      {
+       "label": "C",
+       "text": "a³-2a²+a"
+      },
+      {
+       "label": "D",
+       "text": "a³+2a²+a"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "用a分别乘三项，得a³、-2a²、a，再把积相加，所以结果是a³-2a²+a，三项都不能漏。"
+    },
+    {
+     "id": "msk_p1029_q8",
+     "topicId": "msk_p1029",
+     "prompt": "计算-3x(2x-1)，并说明每一步的依据。",
+     "question": "计算-3x(2x-1)，并说明每一步的依据。",
+     "answer": "用-3x分别乘2x与负1，得-6x²与3x，再把积相加得-6x²+3x；依据是单项式乘多项式的法则，实质是乘法分配律。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "此题考符号与依据：负号要跟着每一项走，负负得正，最后一步是把所得的积相加而不是相乘。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1030",
+   "page": 32,
+   "description": "以长和宽分别加长后的长方形绿地面积为例，由乘法分配律把两个多项式的积展开成四项之和，归纳出多项式乘多项式的法则：先用一个多项式的每一项乘另一个多项式的每一项，再把所得的积相加，最后合并同类项。",
+   "mastery_criteria": [
+    "能说出多项式乘多项式的法则",
+    "会展开两个多项式的积并合并同类项，不漏项"
+   ],
+   "misconceptions": [
+    "漏乘，如把(x+1)(x+2)算成x²+2",
+    "忘记合并同类项，结果写成四项没有化简",
+    "符号出错，如(x-2)(x-3)的常数项符号写错"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msk_p1030_q1",
+     "topicId": "msk_p1030",
+     "prompt": "计算(x+1)(x+2)，正确的结果是（　）",
+     "question": "计算(x+1)(x+2)，正确的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "x²+2"
+      },
+      {
+       "label": "B",
+       "text": "x²+3x+2"
+      },
+      {
+       "label": "C",
+       "text": "x²+3x+3"
+      },
+      {
+       "label": "D",
+       "text": "x²+2x+2"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "逐项相乘得x²+2x+x+2，合并同类项后是x²+3x+2，只写两项就是漏乘。"
+    },
+    {
+     "id": "msk_p1030_q2",
+     "topicId": "msk_p1030",
+     "prompt": "(x+2)(x-3)展开后一次项的系数是（　）。",
+     "question": "(x+2)(x-3)展开后一次项的系数是（　）。",
+     "answer": "-1",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "逐项相乘得x²-3x+2x-6，合并同类项得x²-x-6，一次项的系数是负1。"
+    },
+    {
+     "id": "msk_p1030_q3",
+     "topicId": "msk_p1030",
+     "prompt": "当x=3时，计算式子(x+1)(x-2)的值。",
+     "question": "当x=3时，计算式子(x+1)(x-2)的值。",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "先算出x+1=4，x-2=1，再相乘得4；也可以先展开成x²-x-2再代入，结果相同。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 1}]}, {\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}]}"
+    },
+    {
+     "id": "msk_p1030_q4",
+     "topicId": "msk_p1030",
+     "prompt": "计算(x-2)(x-3)，正确的结果是（　）",
+     "question": "计算(x-2)(x-3)，正确的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "x²-5x+6"
+      },
+      {
+       "label": "B",
+       "text": "x²+5x+6"
+      },
+      {
+       "label": "C",
+       "text": "x²-5x-6"
+      },
+      {
+       "label": "D",
+       "text": "x²-x+6"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "逐项相乘得x²-3x-2x+6，合并同类项后是x²-5x+6，两个负数的积为正6。"
+    },
+    {
+     "id": "msk_p1030_q5",
+     "topicId": "msk_p1030",
+     "prompt": "填空：把(2x+1)(x-2)展开，x²的系数是（　）。",
+     "question": "填空：把(2x+1)(x-2)展开，x²的系数是（　）。",
+     "answer": "2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "2x乘x得2x²，x²的系数是2；其余各项次数都低于2，不会影响这个系数。"
+    },
+    {
+     "id": "msk_p1030_q6",
+     "topicId": "msk_p1030",
+     "prompt": "把(a+b)(c+d)按法则展开，合并同类项之前一共有多少项？",
+     "question": "把(a+b)(c+d)按法则展开，合并同类项之前一共有多少项？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "第一个多项式有两项，第二个多项式有两项，每一项都要乘遍对方的每一项，共得2乘2等于4个积，所以是4项。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1030_q7",
+     "topicId": "msk_p1030",
+     "prompt": "(x+y+2)(x+y+3)展开后xy项的系数是（　）",
+     "question": "(x+y+2)(x+y+3)展开后xy项的系数是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "把x+y看成整体，原式等于这个整体的平方加上5倍的整体再加6；整体的平方展开后xy项系数是2，后面各项不含xy，所以xy项的系数是2。"
+    },
+    {
+     "id": "msk_p1030_q8",
+     "topicId": "msk_p1030",
+     "prompt": "计算(x-1)(x+3)，并说明展开时怎样做到不重不漏。",
+     "question": "计算(x-1)(x+3)，并说明展开时怎样做到不重不漏。",
+     "answer": "逐项相乘得x²+3x-x-3，合并同类项得x²+2x-3；做法是用第一个多项式的每一项分别乘第二个多项式的每一项，把所得的积全部写出来再合并同类项。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "此题考展开的程序：先按顺序把每一个乘积写全，这一步只做乘法不做合并，最后才合并同类项，就不会重也不会漏。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1031",
+   "page": 35,
+   "description": "借助图形面积的计算推导完全平方公式与平方差公式：两数和的平方等于两数的平方和加上它们积的2倍，两数差的平方等于两数的平方和减去它们积的2倍，两数的和与这两数的差相乘等于这两数的平方差，并会用公式进行简便计算。",
+   "mastery_criteria": [
+    "能说出完全平方公式与平方差公式，并辨认公式的结构特征",
+    "会用乘法公式简化整式乘法运算与数的简便计算"
+   ],
+   "misconceptions": [
+    "把(a+b)²写成a²+b²，漏掉中间的2ab项",
+    "把(a-b)²与a²-b²混为一谈，结构判断错误",
+    "平方差公式用错对象，如把(a+b)(a+b)当成平方差"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msk_p1031_q1",
+     "topicId": "msk_p1031",
+     "prompt": "完全平方公式(a+b)²等于（　）",
+     "question": "完全平方公式(a+b)²等于（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "a²+b²"
+      },
+      {
+       "label": "B",
+       "text": "a²+2ab+b²"
+      },
+      {
+       "label": "C",
+       "text": "a²-2ab+b²"
+      },
+      {
+       "label": "D",
+       "text": "a²+ab+b²"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把(a+b)²看成(a+b)(a+b)，按多项式乘多项式展开并合并同类项，中间两项ab与ba合并成2ab，所以是a²+2ab+b²。"
+    },
+    {
+     "id": "msk_p1031_q2",
+     "topicId": "msk_p1031",
+     "prompt": "填空：平方差公式(a-b)(a+b)的结果是a²减（　）。",
+     "question": "填空：平方差公式(a-b)(a+b)的结果是a²减（　）。",
+     "answer": "b²",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "两个数的和与这两个数的差相乘，展开后中间两项互为相反数而抵消，只剩下两数的平方差，所以填b²。"
+    },
+    {
+     "id": "msk_p1031_q3",
+     "topicId": "msk_p1031",
+     "prompt": "用完全平方公式计算101²的值。",
+     "question": "用完全平方公式计算101²的值。",
+     "answer": 10201,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "把101看成100加1，用完全平方公式得10000加200加1等于10201，比直接相乘简便。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 101}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1031_q4",
+     "topicId": "msk_p1031",
+     "prompt": "计算(x-3)²，正确的结果是（　）",
+     "question": "计算(x-3)²，正确的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "x²-6x+9"
+      },
+      {
+       "label": "B",
+       "text": "x²-9"
+      },
+      {
+       "label": "C",
+       "text": "x²-3x+9"
+      },
+      {
+       "label": "D",
+       "text": "x²+6x+9"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "用完全平方公式，首项平方得x²，中间项是2乘x乘3得6x并取负号，末项平方得9，所以是x²-6x+9。"
+    },
+    {
+     "id": "msk_p1031_q5",
+     "topicId": "msk_p1031",
+     "prompt": "用完全平方公式计算199²，把199看成200减1，得到199²=40000-（　）+1，横线上应填多少？",
+     "question": "用完全平方公式计算199²，把199看成200减1，得到199²=40000-（　）+1，横线上应填多少？",
+     "answer": "400",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "完全平方公式的中间项是2乘200乘1等于400，符号取减，所以横线上填400。"
+    },
+    {
+     "id": "msk_p1031_q6",
+     "topicId": "msk_p1031",
+     "prompt": "用平方差公式计算301×299的值。",
+     "question": "用平方差公式计算301×299的值。",
+     "answer": 89999,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把301看成300加1，把299看成300减1，用平方差公式得300的平方减1的平方等于90000减1，结果是89999。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 301}, {\"type\": \"num\", \"value\": 299}]}"
+    },
+    {
+     "id": "msk_p1031_q7",
+     "topicId": "msk_p1031",
+     "prompt": "用平方差公式计算(2x+3)(2x-3)的结果是（　）",
+     "question": "用平方差公式计算(2x+3)(2x-3)的结果是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "4x²-3"
+      },
+      {
+       "label": "B",
+       "text": "2x²-9"
+      },
+      {
+       "label": "C",
+       "text": "4x²-9"
+      },
+      {
+       "label": "D",
+       "text": "4x²+9"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "把2x看成公式里的第一个数，3看成第二个数，平方差公式给出(2x)²-3²=4x²-9。"
+    },
+    {
+     "id": "msk_p1031_q8",
+     "topicId": "msk_p1031",
+     "prompt": "请说明(a+b)²为什么不能直接写成a²+b²。",
+     "question": "请说明(a+b)²为什么不能直接写成a²+b²。",
+     "answer": "因为(a+b)²表示(a+b)(a+b)，按多项式乘多项式展开得a²+ab+ba+b²，合并同类项后是a²+2ab+b²，中间两项不能丢，所以不等于a²+b²。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "此题考公式的来源：完全平方公式是展开后合并同类项的结果，丢掉2ab就等于把一个面积为ab的长方形漏算了。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1032",
+   "page": 50,
+   "description": "认识平移：在平面内把一个图形沿直线的某个方向平行移动一定的距离得到另一个图形，平移前后的两个图形可以重合，对应线段相等、对应角也相等；平移前后两组对应点的连线段平行或在同一条直线上，并且相等。",
+   "mastery_criteria": [
+    "能说出平移的定义，指出平移的方向与距离",
+    "会找平移前后的对应点、对应线段和对应角",
+    "能用平移的性质判断对应点连线段的关系"
+   ],
+   "misconceptions": [
+    "把旋转或翻折当成平移，变换方式判断错误",
+    "认为平移会改变图形的形状或大小",
+    "只注意方向相同，忽略对应点连线段必须相等"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1032_q1",
+     "topicId": "msk_p1032",
+     "prompt": "下列现象中属于平移的是（　）",
+     "question": "下列现象中属于平移的是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "电梯上下运行"
+      },
+      {
+       "label": "B",
+       "text": "钟摆来回摆动"
+      },
+      {
+       "label": "C",
+       "text": "翻书页"
+      },
+      {
+       "label": "D",
+       "text": "拧开水龙头"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "电梯上下运行时整体沿竖直方向平行移动，形状大小和方向都不变；钟摆、翻书页、拧水龙头都含有转动。"
+    },
+    {
+     "id": "msk_p1032_q2",
+     "topicId": "msk_p1032",
+     "prompt": "平移前后的两个图形可以（　），对应线段相等，对应角也相等。",
+     "question": "平移前后的两个图形可以（　），对应线段相等，对应角也相等。",
+     "answer": "重合",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "由平移的定义可知平移前后的两个图形可以重合，所以对应线段相等、对应角也相等。"
+    },
+    {
+     "id": "msk_p1032_q3",
+     "topicId": "msk_p1032",
+     "prompt": "把一个点先向右平移3个单位，再向右平移2个单位，相当于把这个点向右平移多少个单位？",
+     "question": "把一个点先向右平移3个单位，再向右平移2个单位，相当于把这个点向右平移多少个单位？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "两次平移方向相同，都在同一条直线上，平移的距离相加，3加2等于5，所以相当于向右平移5个单位。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1032_q4",
+     "topicId": "msk_p1032",
+     "prompt": "平移三角形ABC得到三角形A'B'C'，下列结论错误的是（　）",
+     "question": "平移三角形ABC得到三角形A'B'C'，下列结论错误的是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "AB=A'B'"
+      },
+      {
+       "label": "B",
+       "text": "角A等于角A'"
+      },
+      {
+       "label": "C",
+       "text": "AA'与BB'平行且相等"
+      },
+      {
+       "label": "D",
+       "text": "三角形的面积变大"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "平移前后的两个图形可以重合，对应线段相等、对应角相等，面积当然不变，所以面积变大是错误的。"
+    },
+    {
+     "id": "msk_p1032_q5",
+     "topicId": "msk_p1032",
+     "prompt": "平移前后两组对应点的连线段平行或在同一条直线上，并且（　）。",
+     "question": "平移前后两组对应点的连线段平行或在同一条直线上，并且（　）。",
+     "answer": "相等",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "这是平移的基本性质：对应点的连线段平行或在同一条直线上，长度都等于平移的距离，所以彼此相等。"
+    },
+    {
+     "id": "msk_p1032_q6",
+     "topicId": "msk_p1032",
+     "prompt": "一条5厘米长的线段平移6厘米后，对应线段的长度是多少厘米？",
+     "question": "一条5厘米长的线段平移6厘米后，对应线段的长度是多少厘米？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "平移前后的图形可以重合，对应线段相等，平移只改变位置不改变长度，所以对应线段仍是5厘米。",
+     "verify": "{\"type\": \"num\", \"value\": 5}"
+    },
+    {
+     "id": "msk_p1032_q7",
+     "topicId": "msk_p1032",
+     "prompt": "在方格纸中，把点A(1,2)向右平移4个单位，再向上平移3个单位，所得点的坐标是（　）",
+     "question": "在方格纸中，把点A(1,2)向右平移4个单位，再向上平移3个单位，所得点的坐标是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(4,3)"
+      },
+      {
+       "label": "B",
+       "text": "(4,5)"
+      },
+      {
+       "label": "C",
+       "text": "(5,5)"
+      },
+      {
+       "label": "D",
+       "text": "(5,3)"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "向右平移4个单位横坐标由1变5，向上平移3个单位纵坐标由2变5，所以所得点是(5,5)。"
+    },
+    {
+     "id": "msk_p1032_q8",
+     "topicId": "msk_p1032",
+     "prompt": "平移一个三角形时，画出三个顶点的对应点再顺次连接，为什么就能得到平移后的三角形？",
+     "question": "平移一个三角形时，画出三个顶点的对应点再顺次连接，为什么就能得到平移后的三角形？",
+     "answer": "平移由方向和距离确定，每个顶点都沿同一方向移动同样的距离，三个对应点确定后顺次连接，所得三角形与原三角形的对应线段相等、对应角相等，可以重合。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "此题考作图依据：平移是整体变换，只要抓住各顶点这一组对应点，整个图形的位置就唯一确定。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1033",
+   "page": 57,
+   "description": "认识轴对称：把一个平面图形沿某条直线翻折后能与另一个图形重合，这条直线叫对称轴，成轴对称的两个图形可以重合，对应线段相等、对应角也相等；还认识线段的垂直平分线，会用尺规作线段的垂直平分线。",
+   "mastery_criteria": [
+    "能说出轴对称与对称轴的含义，辨认成轴对称的图形",
+    "会找轴对称前后的对应点、对应线段和对应角",
+    "知道垂直平分线的意义，会用尺规作线段的垂直平分线"
+   ],
+   "misconceptions": [
+    "把轴对称与平移混为一谈，以为翻折只是位置移动",
+    "认为成轴对称的两个图形大小不同，忽略它们可以重合",
+    "不理解对称轴是折痕所在的直线，把对称轴画在图形内部任意位置"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1033_q1",
+     "topicId": "msk_p1033",
+     "prompt": "把一个平面图形沿某条直线翻折后得到另一个图形，这种变换叫作（　）",
+     "question": "把一个平面图形沿某条直线翻折后得到另一个图形，这种变换叫作（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "平移"
+      },
+      {
+       "label": "B",
+       "text": "旋转"
+      },
+      {
+       "label": "C",
+       "text": "轴对称"
+      },
+      {
+       "label": "D",
+       "text": "放大"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "轴对称的关键动作是沿一条直线翻折，翻折后两个图形重合，这条直线就是对称轴。"
+    },
+    {
+     "id": "msk_p1033_q2",
+     "topicId": "msk_p1033",
+     "prompt": "轴对称中，折痕所在的直线叫作（　）。",
+     "question": "轴对称中，折痕所在的直线叫作（　）。",
+     "answer": "对称轴",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材把这条折痕所在的直线叫作对称轴，它是判断和画轴对称图形的依据。"
+    },
+    {
+     "id": "msk_p1033_q3",
+     "topicId": "msk_p1033",
+     "prompt": "线段AB长8厘米，它关于某条直线的对称线段长多少厘米？",
+     "question": "线段AB长8厘米，它关于某条直线的对称线段长多少厘米？",
+     "answer": 8,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "成轴对称的两个图形可以重合，对应线段相等，所以对称线段的长仍是8厘米。",
+     "verify": "{\"type\": \"num\", \"value\": 8}"
+    },
+    {
+     "id": "msk_p1033_q4",
+     "topicId": "msk_p1033",
+     "prompt": "下列说法正确的是（　）",
+     "question": "下列说法正确的是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "成轴对称的两个图形不能重合"
+      },
+      {
+       "label": "B",
+       "text": "成轴对称的两个图形对应角相等"
+      },
+      {
+       "label": "C",
+       "text": "轴对称会改变图形的大小"
+      },
+      {
+       "label": "D",
+       "text": "对称轴一定在图形内部"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由轴对称的定义可知成轴对称的两个图形可以重合，对应线段与对应角相等，大小不变，对称轴也可以在图形外部。"
+    },
+    {
+     "id": "msk_p1033_q5",
+     "topicId": "msk_p1033",
+     "prompt": "垂直且平分一条线段的直线，叫作这条线段的（　）。",
+     "question": "垂直且平分一条线段的直线，叫作这条线段的（　）。",
+     "answer": "垂直平分线",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "教材把垂直且平分一条线段的直线定义为这条线段的垂直平分线，也简称中垂线。"
+    },
+    {
+     "id": "msk_p1033_q6",
+     "topicId": "msk_p1033",
+     "prompt": "点A与点A'关于直线l对称，AA'与l交于点O，若AO=3厘米，则AA'等于多少厘米？",
+     "question": "点A与点A'关于直线l对称，AA'与l交于点O，若AO=3厘米，则AA'等于多少厘米？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "对称轴垂直平分对应点的连线段，所以O是AA'的中点，AA'等于AO的2倍，即3乘2等于6厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1033_q7",
+     "topicId": "msk_p1033",
+     "prompt": "在方格纸中，点A(2,3)关于纵轴（横坐标为0的竖直直线）对称的点是（　）",
+     "question": "在方格纸中，点A(2,3)关于纵轴（横坐标为0的竖直直线）对称的点是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(-2,3)"
+      },
+      {
+       "label": "B",
+       "text": "(2,-3)"
+      },
+      {
+       "label": "C",
+       "text": "(-2,-3)"
+      },
+      {
+       "label": "D",
+       "text": "(3,2)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "关于纵轴对称时纵坐标不变、横坐标互为相反数，所以点A(2,3)的对称点是(-2,3)。"
+    },
+    {
+     "id": "msk_p1033_q8",
+     "topicId": "msk_p1033",
+     "prompt": "用尺规作线段AB的垂直平分线时，为什么要以大于AB一半的长为半径画弧？",
+     "question": "用尺规作线段AB的垂直平分线时，为什么要以大于AB一半的长为半径画弧？",
+     "answer": "半径要大于AB的一半，以A、B为圆心画的两条弧才能相交得到两个点C、D；由CA等于CB、DA等于DB可知直线CD垂直平分AB，半径太小时两弧不相交就作不出来。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "此题考作图的原理：垂直平分线上的点到线段两端距离相等，两弧的交点正好满足这一条件，再用两点确定一条直线。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1034",
+   "page": 68,
+   "description": "认识旋转：在平面内把一个图形绕一个定点按某个方向转动一定角度得到另一个图形，这个定点叫旋转中心，转动的角度叫旋转角；旋转前后的图形可以重合，对应点到旋转中心的距离相等，对应点与旋转中心连线所成的角都等于旋转角；还认识中心对称与中心对称图形。",
+   "mastery_criteria": [
+    "能说出旋转、旋转中心与旋转角的含义",
+    "能用旋转的性质判断对应点到旋转中心的距离与旋转角的关系",
+    "知道中心对称与中心对称图形，会找对称中心"
+   ],
+   "misconceptions": [
+    "把旋转角当成对应点连线的夹角，角度位置找错",
+    "认为旋转会改变图形的大小与形状",
+    "把中心对称与轴对称混淆，对称方式判断错误"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1034_q1",
+     "topicId": "msk_p1034",
+     "prompt": "把一个图形绕一个定点按某个方向转动一定角度得到另一个图形，这种变换叫作（　）",
+     "question": "把一个图形绕一个定点按某个方向转动一定角度得到另一个图形，这种变换叫作（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "平移"
+      },
+      {
+       "label": "B",
+       "text": "旋转"
+      },
+      {
+       "label": "C",
+       "text": "轴对称"
+      },
+      {
+       "label": "D",
+       "text": "翻折"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "旋转的关键是绕一个定点转动一定角度，这个定点叫旋转中心，转动的角度叫旋转角。"
+    },
+    {
+     "id": "msk_p1034_q2",
+     "topicId": "msk_p1034",
+     "prompt": "旋转中，图形绕着转动的那个定点叫作（　）。",
+     "question": "旋转中，图形绕着转动的那个定点叫作（　）。",
+     "answer": "旋转中心",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材把图形绕着的定点称为旋转中心，转动的角度称为旋转角，两者共同确定一次旋转。"
+    },
+    {
+     "id": "msk_p1034_q3",
+     "topicId": "msk_p1034",
+     "prompt": "一个图形绕点O旋转90°，对应点与点O的连线所成的角是多少度？",
+     "question": "一个图形绕点O旋转90°，对应点与点O的连线所成的角是多少度？",
+     "answer": 90,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "旋转的性质指出对应点与旋转中心连线所成的角等于旋转角，旋转角是90°，所以这个角也是90°。",
+     "verify": "{\"type\": \"num\", \"value\": 90}"
+    },
+    {
+     "id": "msk_p1034_q4",
+     "topicId": "msk_p1034",
+     "prompt": "旋转前后的两个图形中，下列结论一定成立的是（　）",
+     "question": "旋转前后的两个图形中，下列结论一定成立的是（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "对应点到旋转中心的距离不相等"
+      },
+      {
+       "label": "B",
+       "text": "对应线段不相等"
+      },
+      {
+       "label": "C",
+       "text": "对应点到旋转中心的距离相等"
+      },
+      {
+       "label": "D",
+       "text": "图形的面积变大"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "旋转前后的两个图形可以重合，对应线段相等、面积不变，而且对应点到旋转中心的距离相等，所以只有第三项成立。"
+    },
+    {
+     "id": "msk_p1034_q5",
+     "topicId": "msk_p1034",
+     "prompt": "旋转前后的两个图形可以（　），对应线段相等，对应角也相等。",
+     "question": "旋转前后的两个图形可以（　），对应线段相等，对应角也相等。",
+     "answer": "重合",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由旋转的定义可知旋转前后的两个图形可以重合，因此对应线段相等、对应角也相等。"
+    },
+    {
+     "id": "msk_p1034_q6",
+     "topicId": "msk_p1034",
+     "prompt": "把三角形ABC绕点A逆时针旋转60°得到三角形A'B'C'，若角BAC=50°，则角CAB'等于多少度？",
+     "question": "把三角形ABC绕点A逆时针旋转60°得到三角形A'B'C'，若角BAC=50°，则角CAB'等于多少度？",
+     "answer": 10,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "旋转角是60°，即角BAB'等于60°；角BAC是50°，所以角CAB'等于60°减50°等于10°。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 60}, {\"type\": \"num\", \"value\": 50}]}"
+    },
+    {
+     "id": "msk_p1034_q7",
+     "topicId": "msk_p1034",
+     "prompt": "把一个图形绕某一点旋转180°后能与原来的图形重合，这个图形叫作（　）",
+     "question": "把一个图形绕某一点旋转180°后能与原来的图形重合，这个图形叫作（　）",
+     "options": [
+      {
+       "label": "A",
+       "text": "中心对称图形"
+      },
+      {
+       "label": "B",
+       "text": "轴对称图形"
+      },
+      {
+       "label": "C",
+       "text": "平移图形"
+      },
+      {
+       "label": "D",
+       "text": "相似图形"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "中心对称图形的定义是：绕某一点旋转180°后能与自身重合的图形，这个点就是它的对称中心。"
+    },
+    {
+     "id": "msk_p1034_q8",
+     "topicId": "msk_p1034",
+     "prompt": "成中心对称的两个图形中，对应点的连线段与对称中心有什么关系？",
+     "question": "成中心对称的两个图形中，对应点的连线段与对称中心有什么关系？",
+     "answer": "对应点的连线段都经过对称中心，并且被对称中心平分；因为成中心对称是把一个图形绕对称中心旋转180°，对应点与对称中心在同一条直线上，到对称中心的距离相等。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "此题考中心对称的性质来源：旋转180°使对应点转到对称中心的另一侧，所以连线段被对称中心平分。"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,4014 @@
+{
+ "tag": "h1",
+ "book": "苏教版必修第一册",
+ "unit_points": [
+  {
+   "id": "msj_h001",
+   "description": "集合的含义、元素与集合的关系、集合的表示方法以及集合相等的判定",
+   "mastery_criteria": [
+    "能判断一组对象能否组成集合，并指出集合的元素",
+    "会用列举法和描述法表示给定的集合"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h001_q1",
+     "topicId": "msj_h001",
+     "prompt": "下列各组对象中，能组成集合的是哪一组？",
+     "question": "下列各组对象中，能组成集合的是哪一组？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "集合中的对象必须是确定的。著名的数学家、很大的正数、个子很高的同学都没有确定的判定标准，不能组成集合，而所有的质数是确定的。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "我国著名的数学家"
+      },
+      {
+       "label": "B",
+       "text": "很大的正数全体"
+      },
+      {
+       "label": "C",
+       "text": "所有的质数"
+      },
+      {
+       "label": "D",
+       "text": "个子很高的同学"
+      }
+     ]
+    },
+    {
+     "id": "msj_h001_q2",
+     "topicId": "msj_h001",
+     "prompt": "已知集合 A 由 1，2，3 组成，集合 B 由 0，1，2，3 组成，则 A 与 B 的关系是？",
+     "question": "已知集合 A 由 1，2，3 组成，集合 B 由 0，1，2，3 组成，则 A 与 B 的关系是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "A 中的每个元素都在 B 中，所以 A 是 B 的子集；又 B 中的元素 0 不在 A 中，两集合不相等，故 A 是 B 的真子集。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "A 是 B 的真子集"
+      },
+      {
+       "label": "B",
+       "text": "B 是 A 的真子集"
+      },
+      {
+       "label": "C",
+       "text": "A 与 B 相等"
+      },
+      {
+       "label": "D",
+       "text": "A 与 B 没有包含关系"
+      }
+     ]
+    },
+    {
+     "id": "msj_h001_q3",
+     "topicId": "msj_h001",
+     "prompt": "设全集为实数集，集合 A 由所有不小于 2 的实数组成，则 A 在全集中的补集是？",
+     "question": "设全集为实数集，集合 A 由所有不小于 2 的实数组成，则 A 在全集中的补集是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "补集由全集中不属于 A 的元素组成。不小于 2 的对立面是小于 2，所以补集是所有小于 2 的实数组成的集合。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "所有大于 2 的实数"
+      },
+      {
+       "label": "B",
+       "text": "所有小于 2 的实数"
+      },
+      {
+       "label": "C",
+       "text": "所有不大于 2 的实数"
+      },
+      {
+       "label": "D",
+       "text": "所有不等于 2 的实数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h001_q4",
+     "topicId": "msj_h001",
+     "prompt": "高一某班 45 名同学中，12 人参加排球赛，20 人参加田径赛，两项都参加的有 6 人，则两项都没有参加的有多少人？",
+     "question": "高一某班 45 名同学中，12 人参加排球赛，20 人参加田径赛，两项都参加的有 6 人，则两项都没有参加的有多少人？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由容斥关系，参加过比赛的共有 12 加 20 减 6 等于 26 人，所以两项都没有参加的有 45 减 26 等于 19 人。",
+     "answer": "19",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 45}, {\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 12}, {\"type\": \"num\", \"value\": 20}]}, {\"type\": \"num\", \"value\": 6}]}]}"
+    },
+    {
+     "id": "msj_h001_q5",
+     "topicId": "msj_h001",
+     "prompt": "“所有很大的数”能否组成一个集合？请说明理由。",
+     "question": "“所有很大的数”能否组成一个集合？请说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "集合的元素必须具有确定性，即任给一个对象都能判断它是否属于该集合，而很大这个说法因人而异，无法判定。",
+     "answer": "不能。因为很大的数没有确定的标准，对象不确定，不满足集合中元素的确定性，所以不能组成集合。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h002",
+   "description": "命题的含义与真假判断、充分条件与必要条件的判定，以及全称量词命题的否定",
+   "mastery_criteria": [
+    "能判断语句是否为命题并分清命题的条件与结论",
+    "会判断充分条件、必要条件与充要条件"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "msj_h002_q1",
+     "topicId": "msj_h002",
+     "prompt": "在命题“若 p，则 q”为真命题时，p 是 q 的什么条件？",
+     "question": "在命题“若 p，则 q”为真命题时，p 是 q 的什么条件？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由 p 可以推出 q，说明 p 成立时 q 一定成立，即 p 对 q 的成立是充分的，所以 p 是 q 的充分条件。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "充分条件"
+      },
+      {
+       "label": "B",
+       "text": "必要条件"
+      },
+      {
+       "label": "C",
+       "text": "充要条件"
+      },
+      {
+       "label": "D",
+       "text": "既不充分又不必要条件"
+      }
+     ]
+    },
+    {
+     "id": "msj_h002_q2",
+     "topicId": "msj_h002",
+     "prompt": "已知 p 表示 x 等于 1，q 表示 x 的平方等于 1，则 p 是 q 的什么条件？",
+     "question": "已知 p 表示 x 等于 1，q 表示 x 的平方等于 1，则 p 是 q 的什么条件？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由 x 等于 1 可以推出 x 的平方等于 1；反过来 x 的平方等于 1 时 x 还可以等于负 1，所以 p 能推出 q 而 q 不能推出 p。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "必要不充分条件"
+      },
+      {
+       "label": "B",
+       "text": "充要条件"
+      },
+      {
+       "label": "C",
+       "text": "充分不必要条件"
+      },
+      {
+       "label": "D",
+       "text": "既不充分又不必要条件"
+      }
+     ]
+    },
+    {
+     "id": "msj_h002_q3",
+     "topicId": "msj_h002",
+     "prompt": "命题“任意实数 x，x 的平方都不小于 0”的否定是？",
+     "question": "命题“任意实数 x，x 的平方都不小于 0”的否定是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "全称量词命题的否定是存在量词命题，既要否定量词又要否定结论，所以原命题的否定是存在实数 x 使 x 的平方小于 0。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "任意实数 x，x 的平方都小于 0"
+      },
+      {
+       "label": "B",
+       "text": "存在实数 x，使 x 的平方小于 0"
+      },
+      {
+       "label": "C",
+       "text": "存在实数 x，使 x 的平方不小于 0"
+      },
+      {
+       "label": "D",
+       "text": "不存在实数 x，使 x 的平方小于 0"
+      }
+     ]
+    },
+    {
+     "id": "msj_h002_q4",
+     "topicId": "msj_h002",
+     "prompt": "命题“若 a 的平方等于 b 的平方，则 a 等于 b”是＿＿命题（填真或假）。",
+     "question": "命题“若 a 的平方等于 b 的平方，则 a 等于 b”是＿＿命题（填真或假）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "取 a 等于 2，b 等于负 2，此时两数的平方都等于 4，但 a 与 b 不相等，所以这是假命题。",
+     "answer": "假"
+    },
+    {
+     "id": "msj_h002_q5",
+     "topicId": "msj_h002",
+     "prompt": "判定定理与充分条件之间是什么关系？请举例说明。",
+     "question": "判定定理与充分条件之间是什么关系？请举例说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "判定定理的作用是由特征推出对象类别，方向与充分条件一致；性质定理是由对象类别推出特征，方向与必要条件一致。",
+     "answer": "判定定理是充分条件。只要对象具备定理中的特征，就能推出它是该类对象。例如对角线互相平分的四边形是平行四边形，对角线互相平分就是平行四边形的充分条件。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h003",
+   "description": "不等式的基本性质、基本不等式求最值以及一元二次不等式的解法",
+   "mastery_criteria": [
+    "会用不等式的基本性质判断大小与进行变形",
+    "会用基本不等式求最值并检验等号成立的条件"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msj_h003_q1",
+     "topicId": "msj_h003",
+     "prompt": "已知 a 大于 b，c 小于 0，则下列结论正确的是？",
+     "question": "已知 a 大于 b，c 小于 0，则下列结论正确的是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "不等式两边同乘一个负数，不等号方向改变。因为 c 小于 0，所以 ac 小于 bc；而两边同加同一个数方向不变，故 a 加 c 大于 b 加 c。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "ac 大于 bc"
+      },
+      {
+       "label": "B",
+       "text": "ac 小于 bc"
+      },
+      {
+       "label": "C",
+       "text": "a 加 c 小于 b 加 c"
+      },
+      {
+       "label": "D",
+       "text": "a 除以 c 大于 b 除以 c"
+      }
+     ]
+    },
+    {
+     "id": "msj_h003_q2",
+     "topicId": "msj_h003",
+     "prompt": "正数 2 与 8 的算术平均数、几何平均数依次是？",
+     "question": "正数 2 与 8 的算术平均数、几何平均数依次是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "算术平均数为 2 加 8 再除以 2 等于 5，几何平均数为根号下 2 乘 8 等于根号 16 等于 4。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "5 与 4"
+      },
+      {
+       "label": "B",
+       "text": "4 与 5"
+      },
+      {
+       "label": "C",
+       "text": "5 与 16"
+      },
+      {
+       "label": "D",
+       "text": "10 与 4"
+      }
+     ]
+    },
+    {
+     "id": "msj_h003_q3",
+     "topicId": "msj_h003",
+     "prompt": "不等式 x 的平方减 7x 加 12 小于 0 的解集是？",
+     "question": "不等式 x 的平方减 7x 加 12 小于 0 的解集是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "方程 x 的平方减 7x 加 12 等于 0 的根为 3 和 4，二次项系数为正，图象开口向上，小于 0 的部分在两根之间。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "所有小于 3 或大于 4 的实数"
+      },
+      {
+       "label": "B",
+       "text": "所有大于 4 的实数"
+      },
+      {
+       "label": "C",
+       "text": "所有大于 3 且小于 4 的实数"
+      },
+      {
+       "label": "D",
+       "text": "所有小于 3 的实数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h003_q4",
+     "topicId": "msj_h003",
+     "prompt": "已知 x 大于 0，y 大于 0，且 x 与 y 的积等于 81，则 x 加 y 的最小值是多少？",
+     "question": "已知 x 大于 0，y 大于 0，且 x 与 y 的积等于 81，则 x 加 y 的最小值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由基本不等式，x 加 y 不小于 2 倍根号下 xy，即不小于 2 乘 9 等于 18，当且仅当 x 与 y 都等于 9 时取到等号。",
+     "answer": "18",
+     "verify": "{\"type\": \"num\", \"value\": 18}"
+    },
+    {
+     "id": "msj_h003_q5",
+     "topicId": "msj_h003",
+     "prompt": "已知 x 大于 0，用基本不等式求 x 加 x 分之 4 的最小值，并指出取最小值时 x 的值。",
+     "question": "已知 x 大于 0，用基本不等式求 x 加 x 分之 4 的最小值，并指出取最小值时 x 的值。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "两项都是正数且乘积为定值 4，所以和的最小值为 2 倍根号 4；等号成立要求两项相等，解 x 等于 x 分之 4 得 x 等于 2。",
+     "answer": "因为 x 大于 0，由基本不等式得 x 加 x 分之 4 不小于 2 倍根号 4，即不小于 4，当且仅当 x 等于 2 时取到最小值 4。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h004",
+   "description": "指数与对数的概念、根式与分数指数幂、对数的运算性质以及换底公式",
+   "mastery_criteria": [
+    "会求 n 次方根并把根式化为分数指数幂求值",
+    "会进行指数式与对数式的互化并进行简单运算"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msj_h004_q1",
+     "topicId": "msj_h004",
+     "prompt": "把 2 的 4 次方等于 16 改写成对数式，结果是？",
+     "question": "把 2 的 4 次方等于 16 改写成对数式，结果是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由对数的定义，a 的 b 次方等于 N 与以 a 为底 N 的对数等于 b 表示同一个关系，所以底数为 2，真数为 16，对数为 4。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "以 2 为底 16 的对数等于 4"
+      },
+      {
+       "label": "B",
+       "text": "以 16 为底 2 的对数等于 4"
+      },
+      {
+       "label": "C",
+       "text": "以 2 为底 4 的对数等于 16"
+      },
+      {
+       "label": "D",
+       "text": "以 4 为底 16 的对数等于 2"
+      }
+     ]
+    },
+    {
+     "id": "msj_h004_q2",
+     "topicId": "msj_h004",
+     "prompt": "以 3 为底 27 的对数等于？",
+     "question": "以 3 为底 27 的对数等于？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "因为 3 的 3 次方等于 27，所以以 3 为底 27 的对数等于 3。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "9"
+      },
+      {
+       "label": "D",
+       "text": "1/3"
+      }
+     ]
+    },
+    {
+     "id": "msj_h004_q3",
+     "topicId": "msj_h004",
+     "prompt": "正数 8 的 2/3 次幂等于多少？",
+     "question": "正数 8 的 2/3 次幂等于多少？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "8 的 2/3 次幂等于 8 的立方根再平方，8 的立方根是 2，平方得 4。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "16"
+      }
+     ]
+    },
+    {
+     "id": "msj_h004_q4",
+     "topicId": "msj_h004",
+     "prompt": "以 2 为底 64 的对数等于多少？",
+     "question": "以 2 为底 64 的对数等于多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "因为 2 的 6 次方等于 64，所以以 2 为底 64 的对数等于 6。",
+     "answer": "6",
+     "verify": "{\"type\": \"num\", \"value\": 6}"
+    },
+    {
+     "id": "msj_h004_q5",
+     "topicId": "msj_h004",
+     "prompt": "用换底公式求以 4 为底 8 的对数。",
+     "question": "用换底公式求以 4 为底 8 的对数。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "换底公式把不同底的对数化为同底的对数之比，取底数 2 后分子为 3、分母为 2，所以结果是 3/2。",
+     "answer": "由换底公式，以 4 为底 8 的对数等于以 2 为底 8 的对数除以以 2 为底 4 的对数，等于 3 除以 2，即 3/2。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h005",
+   "description": "函数的概念与表示方法，以及单调性、奇偶性等函数的基本性质",
+   "mastery_criteria": [
+    "会求简单函数的定义域与值域",
+    "会用定义判断函数的单调性与奇偶性"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h005_q1",
+     "topicId": "msj_h005",
+     "prompt": "函数 f(x) 等于根号下 x 减 1 的定义域是？",
+     "question": "函数 f(x) 等于根号下 x 减 1 的定义域是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "要使根式有意义，被开方数必须非负，即 x 减 1 不小于 0，解得 x 不小于 1，所以定义域是所有不小于 1 的实数。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "所有不小于 1 的实数"
+      },
+      {
+       "label": "B",
+       "text": "所有大于 1 的实数"
+      },
+      {
+       "label": "C",
+       "text": "全体实数"
+      },
+      {
+       "label": "D",
+       "text": "所有不小于 0 的实数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h005_q2",
+     "topicId": "msj_h005",
+     "prompt": "函数 f(x) 等于 x 的平方减 1 是？",
+     "question": "函数 f(x) 等于 x 的平方减 1 是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "定义域是全体实数，且 f 在负 x 处的值等于负 x 的平方减 1，等于 x 的平方减 1，即等于 f(x)，所以是偶函数。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "奇函数"
+      },
+      {
+       "label": "B",
+       "text": "偶函数"
+      },
+      {
+       "label": "C",
+       "text": "既是奇函数又是偶函数"
+      },
+      {
+       "label": "D",
+       "text": "既不是奇函数也不是偶函数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h005_q3",
+     "topicId": "msj_h005",
+     "prompt": "函数 y 等于负 x 的平方加 2 的单调增区间是？",
+     "question": "函数 y 等于负 x 的平方加 2 的单调增区间是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "图象是开口向下的抛物线，对称轴是 y 轴，在对称轴左侧函数值随 x 增大而增大，所以增区间是所有不大于 0 的实数。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "所有不小于 0 的实数"
+      },
+      {
+       "label": "B",
+       "text": "全体实数"
+      },
+      {
+       "label": "C",
+       "text": "所有不大于 0 的实数"
+      },
+      {
+       "label": "D",
+       "text": "所有大于 2 的实数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h005_q4",
+     "topicId": "msj_h005",
+     "prompt": "物体自由下落的距离 y 与时间 x 近似满足 y 等于 4.9 乘 x 的平方，当 x 等于 2 时下落的距离是多少米？",
+     "question": "物体自由下落的距离 y 与时间 x 近似满足 y 等于 4.9 乘 x 的平方，当 x 等于 2 时下落的距离是多少米？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把 x 等于 2 代入解析式，得 y 等于 4.9 乘 4 等于 19.6，所以下落的距离是 19.6 米。",
+     "answer": "19.6",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4.9}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}]}"
+    },
+    {
+     "id": "msj_h005_q5",
+     "topicId": "msj_h005",
+     "prompt": "用单调性定义证明函数 f(x) 等于负 2x 加 1 在实数集上是减函数。",
+     "question": "用单调性定义证明函数 f(x) 等于负 2x 加 1 在实数集上是减函数。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "用定义证明单调性要设出任意两个自变量并比较函数值之差，本题差的符号由 x2 减 x1 决定，与自变量取值无关。",
+     "answer": "任取 x1 小于 x2，则 f(x1) 减 f(x2) 等于负 2 倍 x1 加 1 减去负 2 倍 x2 加 1，等于 2 倍 x2 减 x1，它大于 0，所以 f(x1) 大于 f(x2)，故函数是减函数。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "msj_h1001",
+   "page": 5,
+   "description": "集合的含义与元素的确定性、互异性，以及列举法和描述法的使用",
+   "mastery_criteria": [
+    "能说出给定集合的元素并判断对象与集合的关系",
+    "会用列举法和描述法表示给定的集合"
+   ],
+   "misconceptions": [
+    "把接近 0 的数这一类对象当作集合，忽略了元素的确定性",
+    "认为列举法中元素书写的先后次序不同就表示不同的集合"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1001_q1",
+     "topicId": "msj_h1001",
+     "prompt": "教材中用 book 中的字母组成集合，这个集合的元素是？",
+     "question": "教材中用 book 中的字母组成集合，这个集合的元素是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "集合中的元素具有互异性，相同的字母只能算一个元素，所以 book 中的字母组成集合的元素是 b，o，k 共 3 个。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "b，o，o，k 共 4 个"
+      },
+      {
+       "label": "B",
+       "text": "b，o，k 共 3 个"
+      },
+      {
+       "label": "C",
+       "text": "b，k 共 2 个"
+      },
+      {
+       "label": "D",
+       "text": "o，k 共 2 个"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1001_q2",
+     "topicId": "msj_h1001",
+     "prompt": "由 15 的所有正约数组成的集合，用列举法表示是？",
+     "question": "由 15 的所有正约数组成的集合，用列举法表示是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "15 的正约数有 1，3，5，15，把它们一一列举并放在花括号内，就是所求集合。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "1，3，5"
+      },
+      {
+       "label": "B",
+       "text": "3，5，15"
+      },
+      {
+       "label": "C",
+       "text": "1，3，5，15"
+      },
+      {
+       "label": "D",
+       "text": "1，5，15"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1001_q3",
+     "topicId": "msj_h1001",
+     "prompt": "用描述法表示所有正偶数组成的集合，正确的写法是？",
+     "question": "用描述法表示所有正偶数组成的集合，正确的写法是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "正偶数都能写成 2 与正整数的积，所以用元素所具有的性质来描述时应写成 2k，其中 k 为正整数。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "集合的元素可写成 2k，其中 k 为正整数"
+      },
+      {
+       "label": "B",
+       "text": "集合的元素可写成 2k 加 1，其中 k 为整数"
+      },
+      {
+       "label": "C",
+       "text": "集合的元素可写成 k 的平方，其中 k 为整数"
+      },
+      {
+       "label": "D",
+       "text": "集合的元素可写成 2k，其中 k 为负整数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1001_q4",
+     "topicId": "msj_h1001",
+     "prompt": "大于 1 且小于 13 的所有偶数组成的集合，用列举法表示为＿＿。",
+     "question": "大于 1 且小于 13 的所有偶数组成的集合，用列举法表示为＿＿。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "在 1 与 13 之间的偶数依次是 2，4，6，8，10，12，把它们写在花括号内并用逗号分隔即可。",
+     "answer": "{2,4,6,8,10,12}"
+    },
+    {
+     "id": "msj_h1001_q5",
+     "topicId": "msj_h1001",
+     "prompt": "用符号属于或不属于填空：负 3 ＿＿ 自然数集，0 ＿＿ 整数集。",
+     "question": "用符号属于或不属于填空：负 3 ＿＿ 自然数集，0 ＿＿ 整数集。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "自然数集由全体非负整数组成，负 3 不是自然数；0 是整数，所以 0 属于整数集。",
+     "answer": "不属于，属于"
+    },
+    {
+     "id": "msj_h1001_q6",
+     "topicId": "msj_h1001",
+     "prompt": "集合由 20 的所有正约数组成，这个集合中元素的个数是多少？",
+     "question": "集合由 20 的所有正约数组成，这个集合中元素的个数是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "20 的正约数为 1，2，4，5，10，20，共 6 个，所以这个集合有 6 个元素。",
+     "answer": "6",
+     "verify": "{\"type\": \"num\", \"value\": 6}"
+    },
+    {
+     "id": "msj_h1001_q7",
+     "topicId": "msj_h1001",
+     "prompt": "已知集合 A 由 1 和 2 组成，集合 B 由 a 和 b 组成，且 A 与 B 相等，则 a 加 b 等于？",
+     "question": "已知集合 A 由 1 和 2 组成，集合 B 由 a 和 b 组成，且 A 与 B 相等，则 a 加 b 等于？",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两个集合相等说明它们所含元素完全相同，所以 a 与 b 分别是 1 与 2，从而 a 加 b 等于 3。",
+     "answer": "D",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1001_q8",
+     "topicId": "msj_h1001",
+     "prompt": "由方程 x 的平方减 1 等于 0 的所有实数解组成的集合，请用列举法和描述法各表示一次。",
+     "question": "由方程 x 的平方减 1 等于 0 的所有实数解组成的集合，请用列举法和描述法各表示一次。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "同一个集合可以用不同方法表示，列举法突出元素本身，描述法突出元素共同满足的条件，两者表示的是同一个集合。",
+     "answer": "方程的两个实数解是负 1 与 1，用列举法表示为负 1 和 1 组成的集合，用描述法可表示为这个集合的元素是满足 x 的平方减 1 等于 0 的实数。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1002",
+   "page": 9,
+   "description": "子集、真子集的概念，全集与补集的意义以及补集的求法",
+   "mastery_criteria": [
+    "会判断两个集合之间的包含关系并写出所有子集",
+    "会在给定全集中求一个集合的补集"
+   ],
+   "misconceptions": [
+    "认为空集不是任何集合的子集",
+    "把子集与真子集混为一谈，忽略两个集合是否相等"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1002_q1",
+     "topicId": "msj_h1002",
+     "prompt": "集合由 a 和 b 两个元素组成，它的所有子集的个数是？",
+     "question": "集合由 a 和 b 两个元素组成，它的所有子集的个数是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两个元素的集合的子集有：空集、只含 a 的集合、只含 b 的集合、以及它本身，共 4 个。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1002_q2",
+     "topicId": "msj_h1002",
+     "prompt": "集合由 1，2，3 三个元素组成，它的真子集的个数是？",
+     "question": "集合由 1，2，3 三个元素组成，它的真子集的个数是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "三个元素的集合共有 8 个子集，去掉它本身，真子集有 7 个，其中包含空集。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "7"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1002_q3",
+     "topicId": "msj_h1002",
+     "prompt": "集合由 1，2，3 三个元素组成，它所有子集的个数是多少？",
+     "question": "集合由 1，2，3 三个元素组成，它所有子集的个数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "含 n 个元素的集合有 2 的 n 次方个子集，这里 n 等于 3，所以共有 8 个子集。",
+     "answer": "8",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_h1002_q4",
+     "topicId": "msj_h1002",
+     "prompt": "已知集合 A 由 0 和 1 组成，集合 B 由方程 x 的平方等于 2x 的自然数解组成，则 A 与 B 的关系是？",
+     "question": "已知集合 A 由 0 和 1 组成，集合 B 由方程 x 的平方等于 2x 的自然数解组成，则 A 与 B 的关系是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "方程 x 的平方等于 2x 的自然数解是 0 和 2，所以 B 由 0 和 2 组成。1 在 A 中却不在 B 中，故 A 不是 B 的子集。",
+     "answer": "D",
+     "options": [
+      {
+       "label": "A",
+       "text": "A 是 B 的子集"
+      },
+      {
+       "label": "B",
+       "text": "B 是 A 的子集"
+      },
+      {
+       "label": "C",
+       "text": "A 与 B 相等"
+      },
+      {
+       "label": "D",
+       "text": "A 不是 B 的子集"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1002_q5",
+     "topicId": "msj_h1002",
+     "prompt": "设全集 U 由 1，2，3，4，5 组成，集合 A 由 1 和 3 组成，则 A 在 U 中的补集是＿＿。",
+     "question": "设全集 U 由 1，2，3，4，5 组成，集合 A 由 1 和 3 组成，则 A 在 U 中的补集是＿＿。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "补集由全集中不属于 A 的元素组成，去掉 1 和 3 后剩下 2，4，5，所以补集是由 2，4，5 组成的集合。",
+     "answer": "{2,4,5}"
+    },
+    {
+     "id": "msj_h1002_q6",
+     "topicId": "msj_h1002",
+     "prompt": "若集合 A 是集合 B 的子集，集合 B 是集合 C 的子集，则一定有？",
+     "question": "若集合 A 是集合 B 的子集，集合 B 是集合 C 的子集，则一定有？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "包含关系具有传递性。A 中每个元素都在 B 中，B 中每个元素都在 C 中，所以 A 中每个元素都在 C 中。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "A 是 C 的子集"
+      },
+      {
+       "label": "B",
+       "text": "C 是 A 的子集"
+      },
+      {
+       "label": "C",
+       "text": "A 与 C 相等"
+      },
+      {
+       "label": "D",
+       "text": "A 不是 C 的子集"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1002_q7",
+     "topicId": "msj_h1002",
+     "prompt": "设全集为实数集，集合 A 由所有不小于 2 的实数组成，求 A 的补集。",
+     "question": "设全集为实数集，集合 A 由所有不小于 2 的实数组成，求 A 的补集。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "在实数范围内，不小于 2 的反面就是小于 2，所以补集是所有小于 2 的实数组成的集合。",
+     "answer": "A 的补集由全集中不属于 A 的实数组成，即由所有小于 2 的实数组成。"
+    },
+    {
+     "id": "msj_h1002_q8",
+     "topicId": "msj_h1002",
+     "prompt": "满足 1 和 2 都在集合 A 中，且 A 是 1，2，3，4 的子集的集合 A 的个数是？",
+     "question": "满足 1 和 2 都在集合 A 中，且 A 是 1，2，3，4 的子集的集合 A 的个数是？",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "A 必须含 1 和 2，还可任意选取 3 与 4 是否放入，两种元素各有取与不取两种可能，所以共有 4 个这样的集合。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "msj_h1003",
+   "page": 13,
+   "description": "交集与并集的概念、符号表示以及区间记号的简单运用",
+   "mastery_criteria": [
+    "会求两个给定集合的交集与并集",
+    "能用区间表示集合运算的结果"
+   ],
+   "misconceptions": [
+    "求并集时把两个集合的公共元素重复计算",
+    "认为集合运算的结果可以出现相同的元素"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msj_h1003_q1",
+     "topicId": "msj_h1003",
+     "prompt": "已知集合 A 由负 1，0，1 组成，集合 B 由 0，1，2，3 组成，则 A 与 B 的交集是？",
+     "question": "已知集合 A 由负 1，0，1 组成，集合 B 由 0，1，2，3 组成，则 A 与 B 的交集是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "交集由既属于 A 又属于 B 的元素组成，两集合的公共元素是 0 和 1，所以交集是由 0 和 1 组成的集合。",
+     "answer": "D",
+     "options": [
+      {
+       "label": "A",
+       "text": "由负 1，0，1 组成"
+      },
+      {
+       "label": "B",
+       "text": "由负 1，0，1，2，3 组成"
+      },
+      {
+       "label": "C",
+       "text": "由 2 和 3 组成"
+      },
+      {
+       "label": "D",
+       "text": "由 0 和 1 组成"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1003_q2",
+     "topicId": "msj_h1003",
+     "prompt": "某班 40 名同学中，15 人参加排球赛，18 人参加田径赛，两项都参加的有 5 人，两项都没有参加的有多少人？",
+     "question": "某班 40 名同学中，15 人参加排球赛，18 人参加田径赛，两项都参加的有 5 人，两项都没有参加的有多少人？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "参加过比赛的共有 15 加 18 减 5 等于 28 人，所以两项都没有参加的有 40 减 28 等于 12 人。",
+     "answer": "12",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 40}, {\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 15}, {\"type\": \"num\", \"value\": 18}]}, {\"type\": \"num\", \"value\": 5}]}]}"
+    },
+    {
+     "id": "msj_h1003_q3",
+     "topicId": "msj_h1003",
+     "prompt": "已知集合 A 由小于 7 的正偶数组成，集合 B 由负 2，0，2，4 组成，则 A 与 B 的交集是？",
+     "question": "已知集合 A 由小于 7 的正偶数组成，集合 B 由负 2，0，2，4 组成，则 A 与 B 的交集是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "小于 7 的正偶数是 2，4，6，与集合 B 的公共元素为 2 和 4，所以交集是由 2 和 4 组成的集合。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "由 2 和 4 组成"
+      },
+      {
+       "label": "B",
+       "text": "由负 2，0，2，4，6 组成"
+      },
+      {
+       "label": "C",
+       "text": "由 2 组成"
+      },
+      {
+       "label": "D",
+       "text": "由 0，2，4 组成"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1003_q4",
+     "topicId": "msj_h1003",
+     "prompt": "设集合 A 由 1 和 2 组成，则 A 与空集的交集是＿＿。",
+     "question": "设集合 A 由 1 和 2 组成，则 A 与空集的交集是＿＿。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "空集中没有任何元素，找不到既属于 A 又属于空集的元素，所以交集是空集。",
+     "answer": "空集"
+    },
+    {
+     "id": "msj_h1003_q5",
+     "topicId": "msj_h1003",
+     "prompt": "集合由所有大于负 1 且不大于 3 的实数组成，用区间表示为？",
+     "question": "集合由所有大于负 1 且不大于 3 的实数组成，用区间表示为？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "大于负 1 不含负 1，对应左端用小括号；不大于 3 含 3，对应右端用中括号，所以是左开右闭区间。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "负 1 到 3 的闭区间"
+      },
+      {
+       "label": "B",
+       "text": "负 1 到 3 的开区间"
+      },
+      {
+       "label": "C",
+       "text": "负 1 到 3 的左开右闭区间"
+      },
+      {
+       "label": "D",
+       "text": "负 1 到 3 的左闭右开区间"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1003_q6",
+     "topicId": "msj_h1003",
+     "prompt": "已知集合 A 由所有大于 0 的实数组成，集合 B 由所有不大于 1 的实数组成，则 A 与 B 的并集是？",
+     "question": "已知集合 A 由所有大于 0 的实数组成，集合 B 由所有不大于 1 的实数组成，则 A 与 B 的并集是？",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "大于 0 的实数与不大于 1 的实数合在一起覆盖了整个数轴，所以并集是全体实数，交集则是不大于 1 的正数。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "由所有大于 0 且不大于 1 的实数组成"
+      },
+      {
+       "label": "B",
+       "text": "全体实数"
+      },
+      {
+       "label": "C",
+       "text": "由所有不大于 0 的实数组成"
+      },
+      {
+       "label": "D",
+       "text": "空集"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1003_q7",
+     "topicId": "msj_h1003",
+     "prompt": "已知集合 A 由 1，2，3，4 组成，集合 B 由 2，4，6，8 组成，则 A 与 B 的并集是＿＿。",
+     "question": "已知集合 A 由 1，2，3，4 组成，集合 B 由 2，4，6，8 组成，则 A 与 B 的并集是＿＿。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "并集由属于 A 或属于 B 的元素组成，公共元素 2 与 4 只写一次，所以并集由 1，2，3，4，6，8 组成。",
+     "answer": "{1,2,3,4,6,8}"
+    },
+    {
+     "id": "msj_h1003_q8",
+     "topicId": "msj_h1003",
+     "prompt": "某班有三个兴趣群，文学群成员为梅、兰、竹、桂、松、柳，数学群成员为梅、竹、松、枫、杨、桦，音乐群成员为兰、菊、荷、桂、松、柳，求三个群共同成员组成的集合。",
+     "question": "某班有三个兴趣群，文学群成员为梅、兰、竹、桂、松、柳，数学群成员为梅、竹、松、枫、杨、桦，音乐群成员为兰、菊、荷、桂、松、柳，求三个群共同成员组成的集合。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "三个集合的交集就是同时属于三个集合的元素组成的集合，先求两个集合的交集再与第三个集合求交集即可。",
+     "answer": "文学群与数学群的公共成员是梅、竹、松，再与音乐群求公共成员，只剩松，所以三个群的共同成员集合由松一个元素组成。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1004",
+   "page": 19,
+   "description": "集合运算的运算律，以及有限集、无限集与集合等势的初步认识",
+   "mastery_criteria": [
+    "会通过具体例子验证交集对并集的分配律",
+    "能区分有限集与无限集并理解一一对应的意义"
+   ],
+   "misconceptions": [
+    "把集合运算的运算律与实数运算律完全等同",
+    "认为两个无限集之间无法比较元素的多少"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "msj_h1004_q1",
+     "topicId": "msj_h1004",
+     "prompt": "与 A 交（B 并 C）一定相等的是？",
+     "question": "与 A 交（B 并 C）一定相等的是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "交集对并集满足分配律，这一条与实数中乘法对加法的分配律形式相同，可以用 Venn 图逐一验证。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "（A 交 B）并（A 交 C）"
+      },
+      {
+       "label": "B",
+       "text": "（A 并 B）交（A 并 C）"
+      },
+      {
+       "label": "C",
+       "text": "A 并 B 并 C"
+      },
+      {
+       "label": "D",
+       "text": "A 交 B 交 C"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1004_q2",
+     "topicId": "msj_h1004",
+     "prompt": "在集合运算中，A 交 A 等于？",
+     "question": "在集合运算中，A 交 A 等于？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "一个集合与它自身求交集，公共元素就是它本身的全部元素，所以结果仍是 A，这称为幂等律。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "空集"
+      },
+      {
+       "label": "B",
+       "text": "全集"
+      },
+      {
+       "label": "C",
+       "text": "A"
+      },
+      {
+       "label": "D",
+       "text": "A 的补集"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1004_q3",
+     "topicId": "msj_h1004",
+     "prompt": "下列集合中是无限集的是？",
+     "question": "下列集合中是无限集的是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "自然数有无限多个，是无限集；其余三个集合的元素都能一一数完，都是有限集。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "由 1，2，3 组成的集合"
+      },
+      {
+       "label": "B",
+       "text": "由 15 的所有正约数组成的集合"
+      },
+      {
+       "label": "C",
+       "text": "自然数集"
+      },
+      {
+       "label": "D",
+       "text": "由方程 x 的平方减 1 等于 0 的解组成的集合"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1004_q4",
+     "topicId": "msj_h1004",
+     "prompt": "已知集合 A 由 1，2，3 组成，集合 B 由 2，3，4 组成，则 A 与 B 的并集中元素的个数是多少？",
+     "question": "已知集合 A 由 1，2，3 组成，集合 B 由 2，3，4 组成，则 A 与 B 的并集中元素的个数是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "并集由 1，2，3，4 组成，公共元素 2 与 3 只算一次，所以并集中共有 4 个元素。",
+     "answer": "4",
+     "verify": "{\"type\": \"num\", \"value\": 4}"
+    },
+    {
+     "id": "msj_h1004_q5",
+     "topicId": "msj_h1004",
+     "prompt": "由（A 交 B）并（A 交 C）与 A 交（B 并 C）总相等可知，交集对并集满足＿＿律。",
+     "question": "由（A 交 B）并（A 交 C）与 A 交（B 并 C）总相等可知，交集对并集满足＿＿律。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "这一运算律的形式与实数乘法对加法的分配律一致，所以称为分配律，可借助 Venn 图验证其正确性。",
+     "answer": "分配"
+    },
+    {
+     "id": "msj_h1004_q6",
+     "topicId": "msj_h1004",
+     "prompt": "已知集合 A 由 1，2，3，4 组成，集合 B 由 4，5，6，7 组成，集合 C 由 1 和 6 组成，则 A 交（B 并 C）等于？",
+     "question": "已知集合 A 由 1，2，3，4 组成，集合 B 由 4，5，6，7 组成，集合 C 由 1 和 6 组成，则 A 交（B 并 C）等于？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先求 B 与 C 的并集得 1，4，5，6，7，再与 A 求交集，公共元素是 1 和 4。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "由 1 和 4 组成"
+      },
+      {
+       "label": "B",
+       "text": "由 1，4，6 组成"
+      },
+      {
+       "label": "C",
+       "text": "由 4 组成"
+      },
+      {
+       "label": "D",
+       "text": "由 1 组成"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1004_q7",
+     "topicId": "msj_h1004",
+     "prompt": "自然数集与正整数集的元素个数一样多吗？请说明理由。",
+     "question": "自然数集与正整数集的元素个数一样多吗？请说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "无限集比较元素多少依靠一一对应而不是数个数，只要能建立一个元素之间的一一对应，就说明两个集合等势。",
+     "answer": "一样多。把自然数集中的 0 对应到正整数集中的 1，1 对应 2，依次对应下去，两个集合的元素之间可以建立一一对应，所以它们等势。"
+    },
+    {
+     "id": "msj_h1004_q8",
+     "topicId": "msj_h1004",
+     "prompt": "集合 A 有 3 个元素，集合 B 有 4 个元素，则 A 与 B 的并集的元素个数可能有？",
+     "question": "集合 A 有 3 个元素，集合 B 有 4 个元素，则 A 与 B 的并集的元素个数可能有？",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两集合交集最少有 0 个元素、最多有 3 个元素，所以并集元素个数可能是 7，6，5，4，共 4 个不同的值。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "3 个值"
+      },
+      {
+       "label": "B",
+       "text": "4 个值"
+      },
+      {
+       "label": "C",
+       "text": "5 个值"
+      },
+      {
+       "label": "D",
+       "text": "6 个值"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "msj_h1005",
+   "page": 27,
+   "description": "命题的概念与真假判断、命题的条件与结论，以及定理与定义的含义",
+   "mastery_criteria": [
+    "能判断一个语句是否为命题并指出其真假",
+    "会把命题改写成若 p 则 q 的形式"
+   ],
+   "misconceptions": [
+    "把疑问句或祈使句也当成命题",
+    "改写命题时把条件与结论的位置弄颠倒"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "msj_h1005_q1",
+     "topicId": "msj_h1005",
+     "prompt": "下列语句中是命题的是？",
+     "question": "下列语句中是命题的是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "命题是可以判断真假的陈述句。对顶角相等是陈述句且为真，是命题；祈使句、疑问句和含未知数的语句都不能判断真假。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "请把课本打开"
+      },
+      {
+       "label": "B",
+       "text": "这条直线的斜率是多少"
+      },
+      {
+       "label": "C",
+       "text": "对顶角相等"
+      },
+      {
+       "label": "D",
+       "text": "x 大于 1"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1005_q2",
+     "topicId": "msj_h1005",
+     "prompt": "命题“若两个三角形的面积相等，则这两个三角形全等”的条件是？",
+     "question": "命题“若两个三角形的面积相等，则这两个三角形全等”的条件是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "在若 p 则 q 的形式中，p 是条件，q 是结论。本题中 p 是两个三角形的面积相等，q 是这两个三角形全等。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "两个三角形的面积相等"
+      },
+      {
+       "label": "B",
+       "text": "两个三角形全等"
+      },
+      {
+       "label": "C",
+       "text": "两个三角形相似"
+      },
+      {
+       "label": "D",
+       "text": "两个三角形的周长相等"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1005_q3",
+     "topicId": "msj_h1005",
+     "prompt": "命题“若 a 的平方等于 b 的平方，则 a 等于 b”的真假是？",
+     "question": "命题“若 a 的平方等于 b 的平方，则 a 等于 b”的真假是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "取 a 等于 2，b 等于负 2，两数的平方都等于 4，但 a 与 b 不相等，所以这是假命题。",
+     "answer": "D",
+     "options": [
+      {
+       "label": "A",
+       "text": "真命题"
+      },
+      {
+       "label": "B",
+       "text": "在 a 不为 0 时为真"
+      },
+      {
+       "label": "C",
+       "text": "无法判断"
+      },
+      {
+       "label": "D",
+       "text": "假命题"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1005_q4",
+     "topicId": "msj_h1005",
+     "prompt": "把命题“平行四边形的对角线互相平分”改写成若 p 则 q 的形式：＿＿。",
+     "question": "把命题“平行四边形的对角线互相平分”改写成若 p 则 q 的形式：＿＿。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "改写时要补出对象，让条件和结论都成为完整的判断。条件为一个四边形是平行四边形，结论为这个四边形的对角线互相平分。",
+     "answer": "若一个四边形是平行四边形，则这个四边形的对角线互相平分"
+    },
+    {
+     "id": "msj_h1005_q5",
+     "topicId": "msj_h1005",
+     "prompt": "把命题“对顶角相等”改写成若 p 则 q 的形式，正确的是？",
+     "question": "把命题“对顶角相等”改写成若 p 则 q 的形式，正确的是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "原命题说的是对顶角一定相等，所以条件是两个角是对顶角，结论是这两个角相等，不能把条件与结论颠倒。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "若两个角相等，则这两个角是对顶角"
+      },
+      {
+       "label": "B",
+       "text": "若两个角是对顶角，则这两个角相等"
+      },
+      {
+       "label": "C",
+       "text": "若两个角不相等，则它们不是对顶角"
+      },
+      {
+       "label": "D",
+       "text": "若两个角是对顶角，则这两个角不相等"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1005_q6",
+     "topicId": "msj_h1005",
+     "prompt": "下列四个命题中真命题的个数是：等腰三角形的底角相等；矩形的对角线相等；个位数字是 0 的整数是 5 的倍数；面积相等的两个三角形全等。",
+     "question": "下列四个命题中真命题的个数是：等腰三角形的底角相等；矩形的对角线相等；个位数字是 0 的整数是 5 的倍数；面积相等的两个三角形全等。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "前三个命题都是真命题。第四个是假命题，同底等高的直角三角形与等腰三角形面积相等但并不全等，所以真命题共 3 个。",
+     "answer": "3",
+     "verify": "{\"type\": \"num\", \"value\": 3}"
+    },
+    {
+     "id": "msj_h1005_q7",
+     "topicId": "msj_h1005",
+     "prompt": "命题“如果两个三角形的三边分别对应相等，那么这两个三角形全等”的条件是＿＿，结论是＿＿。",
+     "question": "命题“如果两个三角形的三边分别对应相等，那么这两个三角形全等”的条件是＿＿，结论是＿＿。",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "如果后面引出的部分为条件，那么后面的部分为结论，改写时要保持句意不变，只把条件和结论分别指出。",
+     "answer": "两个三角形的三边分别对应相等；这两个三角形全等"
+    },
+    {
+     "id": "msj_h1005_q8",
+     "topicId": "msj_h1005",
+     "prompt": "什么是定理？它与命题有什么关系？",
+     "question": "什么是定理？它与命题有什么关系？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "定理是命题中的特殊一类，真假的判断之外还要求得到证明，所以定理的适用范围比真命题更窄。",
+     "answer": "定理是已经被证明为真的命题，可以作为推理的依据直接使用；因此定理一定是真命题，而真命题不一定是定理，它必须经过证明。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1006",
+   "page": 31,
+   "description": "充分条件、必要条件与充要条件的含义，以及如何用推出关系进行判定",
+   "mastery_criteria": [
+    "会根据推出关系判断充分条件与必要条件",
+    "能借助定义与定理说明充要条件的意义"
+   ],
+   "misconceptions": [
+    "把充分条件与必要条件的方向弄反",
+    "认为充分条件一定也是必要条件"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "msj_h1006_q1",
+     "topicId": "msj_h1006",
+     "prompt": "如果由 p 可以推出 q，那么 p 是 q 的？",
+     "question": "如果由 p 可以推出 q，那么 p 是 q 的？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由 p 推出 q 说明 p 成立时 q 一定成立，即 p 对 q 的成立是充分的；同时 q 对 p 的成立是必要的。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "必要条件"
+      },
+      {
+       "label": "B",
+       "text": "充分条件"
+      },
+      {
+       "label": "C",
+       "text": "充要条件"
+      },
+      {
+       "label": "D",
+       "text": "既不充分又不必要条件"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1006_q2",
+     "topicId": "msj_h1006",
+     "prompt": "已知 p 表示 x 等于 1，q 表示 x 的绝对值等于 1，则 p 是 q 的？",
+     "question": "已知 p 表示 x 等于 1，q 表示 x 的绝对值等于 1，则 p 是 q 的？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由 x 等于 1 得绝对值等于 1；反过来绝对值等于 1 时 x 还可以等于负 1，所以 p 能推出 q 而 q 不能推出 p。",
+     "answer": "D",
+     "options": [
+      {
+       "label": "A",
+       "text": "必要不充分条件"
+      },
+      {
+       "label": "B",
+       "text": "充要条件"
+      },
+      {
+       "label": "C",
+       "text": "既不充分又不必要条件"
+      },
+      {
+       "label": "D",
+       "text": "充分不必要条件"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1006_q3",
+     "topicId": "msj_h1006",
+     "prompt": "已知 p 表示两个三角形全等，q 表示两个三角形面积相等，则 p 是 q 的？",
+     "question": "已知 p 表示两个三角形全等，q 表示两个三角形面积相等，则 p 是 q 的？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "全等三角形的面积一定相等，所以 p 推出 q；但面积相等的两个三角形不一定全等，所以 q 不能推出 p。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "充分不必要条件"
+      },
+      {
+       "label": "B",
+       "text": "必要不充分条件"
+      },
+      {
+       "label": "C",
+       "text": "充要条件"
+      },
+      {
+       "label": "D",
+       "text": "既不充分又不必要条件"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1006_q4",
+     "topicId": "msj_h1006",
+     "prompt": "“四边形的对角线互相平分”是“四边形是平行四边形”的？",
+     "question": "“四边形的对角线互相平分”是“四边形是平行四边形”的？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "平行四边形的对角线一定互相平分，反过来对角线互相平分的四边形一定是平行四边形，两者可以互相推出。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "充分不必要条件"
+      },
+      {
+       "label": "B",
+       "text": "必要不充分条件"
+      },
+      {
+       "label": "C",
+       "text": "充要条件"
+      },
+      {
+       "label": "D",
+       "text": "既不充分又不必要条件"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1006_q5",
+     "topicId": "msj_h1006",
+     "prompt": "在“x 等于 2”与“x 的平方减 x 减 2 等于 0”之间填上适当的推出符号（用文字说明方向）：＿＿。",
+     "question": "在“x 等于 2”与“x 的平方减 x 减 2 等于 0”之间填上适当的推出符号（用文字说明方向）：＿＿。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "把 x 等于 2 代入式子得 4 减 2 减 2 等于 0，所以左边能推出右边；而方程的解还有负 1，所以右边不能推出左边。",
+     "answer": "只能由左边推出右边，即箭头向右的推出符号"
+    },
+    {
+     "id": "msj_h1006_q6",
+     "topicId": "msj_h1006",
+     "prompt": "用充分不必要、必要不充分、充要、既不充分又不必要填空：p 为 x 大于 3，q 为 x 大于 5，则 p 是 q 的＿＿条件。",
+     "question": "用充分不必要、必要不充分、充要、既不充分又不必要填空：p 为 x 大于 3，q 为 x 大于 5，则 p 是 q 的＿＿条件。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "x 大于 5 一定能推出 x 大于 3，而 x 大于 3 推不出 x 大于 5，所以 p 是 q 的必要不充分条件。",
+     "answer": "必要不充分"
+    },
+    {
+     "id": "msj_h1006_q7",
+     "topicId": "msj_h1006",
+     "prompt": "已知命题 x 大于 3 是命题 x 大于 m 的充分条件，则实数 m 的最大值是多少？",
+     "question": "已知命题 x 大于 3 是命题 x 大于 m 的充分条件，则实数 m 的最大值是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "要使 x 大于 3 能推出 x 大于 m，必须有 m 不大于 3，所以 m 的最大值是 3，此时两个命题表示同一个条件。",
+     "answer": "3",
+     "verify": "{\"type\": \"num\", \"value\": 3}"
+    },
+    {
+     "id": "msj_h1006_q8",
+     "topicId": "msj_h1006",
+     "prompt": "性质定理与必要条件、判定定理与充分条件之间分别是什么关系？",
+     "question": "性质定理与必要条件、判定定理与充分条件之间分别是什么关系？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "性质定理的作用是由对象类别推出特征，方向与必要条件一致；判定定理的作用是由特征推出对象类别，方向与充分条件一致。",
+     "answer": "性质定理给出对象具有的特征，所以这个特征是判定该类对象的必要条件；判定定理只要对象具备某个特征就能确定它是该类对象，所以这个特征是该类对象的充分条件。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1007",
+   "page": 36,
+   "description": "全称量词与存在量词的意义，量词命题的表述、真假判断与否定",
+   "mastery_criteria": [
+    "能区分全称量词命题与存在量词命题",
+    "会判断量词命题的真假并写出其否定"
+   ],
+   "misconceptions": [
+    "判断全称量词命题为真时只验证个别元素",
+    "否定量词命题时只否定结论而不改变量词"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1007_q1",
+     "topicId": "msj_h1007",
+     "prompt": "命题“所有的正方形都是矩形”的否定是？",
+     "question": "命题“所有的正方形都是矩形”的否定是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "全称量词命题的否定，量词由所有变为有的，结论也取否定，所以是有的正方形不是矩形。",
+     "answer": "D",
+     "options": [
+      {
+       "label": "A",
+       "text": "所有的正方形都不是矩形"
+      },
+      {
+       "label": "B",
+       "text": "不是所有的矩形都是正方形"
+      },
+      {
+       "label": "C",
+       "text": "有的矩形不是正方形"
+      },
+      {
+       "label": "D",
+       "text": "有的正方形不是矩形"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1007_q2",
+     "topicId": "msj_h1007",
+     "prompt": "命题“任意实数 x，x 的平方都不小于 0”的否定是？",
+     "question": "命题“任意实数 x，x 的平方都不小于 0”的否定是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "全称量词命题的否定是存在量词命题，把任意改为存在，再把结论取否定，得到存在实数 x 使平方小于 0。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "任意实数 x，x 的平方都小于 0"
+      },
+      {
+       "label": "B",
+       "text": "存在实数 x，使 x 的平方不小于 0"
+      },
+      {
+       "label": "C",
+       "text": "存在实数 x，使 x 的平方小于 0"
+      },
+      {
+       "label": "D",
+       "text": "不存在实数 x，使 x 的平方小于 0"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1007_q3",
+     "topicId": "msj_h1007",
+     "prompt": "命题“存在有理数 x，使 x 的平方减 8 等于 0”的真假是？",
+     "question": "命题“存在有理数 x，使 x 的平方减 8 等于 0”的真假是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "方程 x 的平方等于 8 的解是正负 2 倍根号 2，它们都是无理数，所以不存在满足条件的有理数，命题为假。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "真命题"
+      },
+      {
+       "label": "B",
+       "text": "假命题"
+      },
+      {
+       "label": "C",
+       "text": "在 x 为正数时为真"
+      },
+      {
+       "label": "D",
+       "text": "无法判断"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1007_q4",
+     "topicId": "msj_h1007",
+     "prompt": "命题“任意实数 x，x 的平方加 2 都大于 0”的真假是？",
+     "question": "命题“任意实数 x，x 的平方加 2 都大于 0”的真假是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "实数的平方不小于 0，再加上 2 后一定大于 0，对每一个实数都成立，所以这是真命题。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "真命题"
+      },
+      {
+       "label": "B",
+       "text": "假命题"
+      },
+      {
+       "label": "C",
+       "text": "只有 x 不为 0 时为真"
+      },
+      {
+       "label": "D",
+       "text": "只有 x 为正数时为真"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1007_q5",
+     "topicId": "msj_h1007",
+     "prompt": "语句“存在有理数 x，使 x 的平方等于 2”中使用的量词是＿＿量词。",
+     "question": "语句“存在有理数 x，使 x 的平方等于 2”中使用的量词是＿＿量词。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "表示部分或个体的词称为存在量词，如存在、有的、有一个，本句中用了存在，所以是存在量词。",
+     "answer": "存在"
+    },
+    {
+     "id": "msj_h1007_q6",
+     "topicId": "msj_h1007",
+     "prompt": "命题“任意实数 x，2 倍 x 的平方减 3x 加 4 都大于 0”的真假是＿＿。",
+     "question": "命题“任意实数 x，2 倍 x 的平方减 3x 加 4 都大于 0”的真假是＿＿。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "该二次式的判别式等于 9 减 32 小于 0，且二次项系数大于 0，所以对任意实数它的值都大于 0，命题为真。",
+     "answer": "真"
+    },
+    {
+     "id": "msj_h1007_q7",
+     "topicId": "msj_h1007",
+     "prompt": "在集合由负 1，0，1 组成的条件下，使 2x 加 1 大于 0 成立的自变量 x 的个数是多少？",
+     "question": "在集合由负 1，0，1 组成的条件下，使 2x 加 1 大于 0 成立的自变量 x 的个数是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由 2x 加 1 大于 0 得 x 大于负 1/2，在负 1，0，1 中满足条件的是 0 和 1，共 2 个。",
+     "answer": "2",
+     "verify": "{\"type\": \"num\", \"value\": 2}"
+    },
+    {
+     "id": "msj_h1007_q8",
+     "topicId": "msj_h1007",
+     "prompt": "写出命题“有的矩形是菱形”的否定，并判断这个否定的真假。",
+     "question": "写出命题“有的矩形是菱形”的否定，并判断这个否定的真假。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "存在量词命题的否定是全称量词命题，量词由有的变为所有并否定结论；只要找出一个反例就能否定该命题。",
+     "answer": "否定是所有的矩形都不是菱形，这个否定是假命题，因为正方形既是矩形又是菱形。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1008",
+   "page": 42,
+   "description": "以 DY 三角形为例，辨析定义、性质定理与判定定理在知识体系中的作用",
+   "mastery_criteria": [
+    "能依据给定定义判断一组命题的真假",
+    "能区分性质定理与判定定理并说明理由"
+   ],
+   "misconceptions": [
+    "把三个内角和为 180 度当作等腰三角形的判定定理",
+    "忽略没有定义时命题的真假无法判断这一前提"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "msj_h1008_q1",
+     "topicId": "msj_h1008",
+     "prompt": "若把“有两条边相等的三角形是 DY三角形”作为定义，则 DY三角形就是？",
+     "question": "若把“有两条边相等的三角形是 DY三角形”作为定义，则 DY三角形就是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "定义给出了对象的本质特征。有两条边相等的三角形就是等腰三角形，所以按这个定义，DY三角形就是等腰三角形。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "等腰三角形"
+      },
+      {
+       "label": "B",
+       "text": "直角三角形"
+      },
+      {
+       "label": "C",
+       "text": "等边三角形"
+      },
+      {
+       "label": "D",
+       "text": "钝角三角形"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1008_q2",
+     "topicId": "msj_h1008",
+     "prompt": "下列命题属于判定定理的是？",
+     "question": "下列命题属于判定定理的是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "判定定理的形式是由特征推出对象类别，即具备某个条件的三角形是 DY三角形；前两条与第四条都是由对象推出特征。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "DY三角形有两个内角相等"
+      },
+      {
+       "label": "B",
+       "text": "DY三角形有一边上的高与中线重合"
+      },
+      {
+       "label": "C",
+       "text": "有两个内角相等的三角形是 DY三角形"
+      },
+      {
+       "label": "D",
+       "text": "DY三角形的三个内角之和为 180 度"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1008_q3",
+     "topicId": "msj_h1008",
+     "prompt": "依上述定义，“DY三角形的三个内角的和为 180 度”这一命题是？",
+     "question": "依上述定义，“DY三角形的三个内角的和为 180 度”这一命题是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "等腰三角形的内角和确实是 180 度，所以是真命题；但所有三角形的内角和都是 180 度，无法由此判定等腰，所以不能作判定定理。",
+     "answer": "D",
+     "options": [
+      {
+       "label": "A",
+       "text": "真命题，也可作判定定理"
+      },
+      {
+       "label": "B",
+       "text": "无法判断真假"
+      },
+      {
+       "label": "C",
+       "text": "假命题"
+      },
+      {
+       "label": "D",
+       "text": "真命题，但不能作判定定理"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1008_q4",
+     "topicId": "msj_h1008",
+     "prompt": "依上述定义，“DY三角形有两条边上的中线相等”这一命题通常称为？",
+     "question": "依上述定义，“DY三角形有两条边上的中线相等”这一命题通常称为？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "命题是由 DY三角形推出两条中线相等，方向是由对象推出特征，因此它可作为性质定理使用。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "DY三角形的定义"
+      },
+      {
+       "label": "B",
+       "text": "DY三角形的性质定理"
+      },
+      {
+       "label": "C",
+       "text": "DY三角形的判定定理"
+      },
+      {
+       "label": "D",
+       "text": "不是命题"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1008_q5",
+     "topicId": "msj_h1008",
+     "prompt": "依上述定义，“DY三角形有一边上的高、中线及所对角的平分线重合”是真命题，通常把它称为 DY三角形的＿＿定理。",
+     "question": "依上述定义，“DY三角形有一边上的高、中线及所对角的平分线重合”是真命题，通常把它称为 DY三角形的＿＿定理。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "这条命题说的是等腰三角形具有三线合一这一特征，属于由对象推出特征，所以是性质定理。",
+     "answer": "性质"
+    },
+    {
+     "id": "msj_h1008_q6",
+     "topicId": "msj_h1008",
+     "prompt": "举例说明“三个内角的和为 180 度的三角形是 DY三角形”是假命题：＿＿。",
+     "question": "举例说明“三个内角的和为 180 度的三角形是 DY三角形”是假命题：＿＿。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "要否定一个全称形式的命题只需举出一个反例，直角三角形满足内角和的条件却不满足两腰相等的条件，就是反例。",
+     "answer": "取三边分别为 3，4，5 的直角三角形，它的内角和是 180 度，但没有两条边相等，所以不是 DY三角形。"
+    },
+    {
+     "id": "msj_h1008_q7",
+     "topicId": "msj_h1008",
+     "prompt": "一个 DY三角形有两条边长都是 8，第三条边长是 4，它的周长是多少？",
+     "question": "一个 DY三角形有两条边长都是 8，第三条边长是 4，它的周长是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "等腰三角形的两条腰相等，周长为 8 加 8 加 4 等于 20，还要注意 4 加 8 大于 8，三边能构成三角形。",
+     "answer": "20",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"num\", \"value\": 4}]}]}"
+    },
+    {
+     "id": "msj_h1008_q8",
+     "topicId": "msj_h1008",
+     "prompt": "没有给出 DY三角形的定义时，第一组命题为什么无法判断真假？",
+     "question": "没有给出 DY三角形的定义时，第一组命题为什么无法判断真假？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "判断命题真假要以对象确定为前提，定义正是明确对象的方式，缺少定义时命题的讨论对象不清楚，真假无从谈起。",
+     "answer": "因为 DY三角形指哪一类三角形并不明确，命题所描述的对象不确定，所以无法判断这些命题的真假。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1009",
+   "page": 51,
+   "description": "不等式的六条基本性质及其在比较大小、解不等式中的应用",
+   "mastery_criteria": [
+    "会用基本性质判断不等式变形后的方向",
+    "会用比较差的方法比较两个式子的大小"
+   ],
+   "misconceptions": [
+    "不等式两边同乘负数时忘记改变不等号方向",
+    "把同向不等式相减也当作一定成立"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msj_h1009_q1",
+     "topicId": "msj_h1009",
+     "prompt": "已知 a 大于 b，c 小于 0，则下列结论正确的是？",
+     "question": "已知 a 大于 b，c 小于 0，则下列结论正确的是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "不等式两边同乘负数，不等号方向改变，所以 ac 小于 bc；两边同加或同减同一个数方向不变，故后两条都不成立。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "ac 大于 bc"
+      },
+      {
+       "label": "B",
+       "text": "ac 小于 bc"
+      },
+      {
+       "label": "C",
+       "text": "a 加 c 小于 b 加 c"
+      },
+      {
+       "label": "D",
+       "text": "a 减 c 小于 b 减 c"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1009_q2",
+     "topicId": "msj_h1009",
+     "prompt": "“a 大于 b”与下列哪个式子等价？",
+     "question": "“a 大于 b”与下列哪个式子等价？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "比较两个实数的大小可以考察它们的差，a 大于 b 等价于 a 减 b 大于 0，这是不等式性质的基础事实。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 减 b 小于 0"
+      },
+      {
+       "label": "B",
+       "text": "a 减 b 等于 0"
+      },
+      {
+       "label": "C",
+       "text": "a 减 b 大于 0"
+      },
+      {
+       "label": "D",
+       "text": "a 加 b 大于 0"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1009_q3",
+     "topicId": "msj_h1009",
+     "prompt": "已知 a 大于 b，c 大于 d，则一定有？",
+     "question": "已知 a 大于 b，c 大于 d，则一定有？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个同向不等式两边分别相加，所得不等式与原不等式同向；相减和相乘都必须另加条件才成立。",
+     "answer": "D",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 除以 c 大于 b 除以 d"
+      },
+      {
+       "label": "B",
+       "text": "a 减 c 大于 b 减 d"
+      },
+      {
+       "label": "C",
+       "text": "ac 大于 bd"
+      },
+      {
+       "label": "D",
+       "text": "a 加 c 大于 b 加 d"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1009_q4",
+     "topicId": "msj_h1009",
+     "prompt": "比较（a 加 1）的平方与 a 的平方加 a 加 1 的大小，两式之差等于？",
+     "question": "比较（a 加 1）的平方与 a 的平方加 a 加 1 的大小，两式之差等于？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "展开（a 加 1）的平方得 a 的平方加 2a 加 1，减去 a 的平方加 a 加 1 后等于 a，所以当 a 大于 0 时前者较大。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "a"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "负 a"
+      },
+      {
+       "label": "D",
+       "text": "a 的平方"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1009_q5",
+     "topicId": "msj_h1009",
+     "prompt": "用不等号填空：若 a 大于 b，则 a 减 3 ＿＿ b 减 3。",
+     "question": "用不等号填空：若 a 大于 b，则 a 减 3 ＿＿ b 减 3。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "不等式两边都减去同一个实数 3，不等号方向不变，所以 a 减 3 大于 b 减 3。",
+     "answer": "大于"
+    },
+    {
+     "id": "msj_h1009_q6",
+     "topicId": "msj_h1009",
+     "prompt": "若 a 大于 b 大于 0，c 小于 0，则 ac 与 bc 的大小关系是＿＿。",
+     "question": "若 a 大于 b 大于 0，c 小于 0，则 ac 与 bc 的大小关系是＿＿。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由 a 大于 b 且 c 小于 0，两边同乘负数后不等号方向改变，所以 ac 小于 bc，这里 a 与 b 同为正保证了比较的方向一致。",
+     "answer": "ac 小于 bc"
+    },
+    {
+     "id": "msj_h1009_q7",
+     "topicId": "msj_h1009",
+     "prompt": "已知 a 等于 3，b 等于 1，c 等于负 2，则 a 乘 c 减 b 乘 c 的值是多少？",
+     "question": "已知 a 等于 3，b 等于 1，c 等于负 2，则 a 乘 c 减 b 乘 c 的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "a 乘 c 等于负 6，b 乘 c 等于负 2，所以差为负 6 减负 2，等于负 4，也可以化为（a 减 b）乘 c 得 2 乘负 2。",
+     "answer": "-4",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": -2}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": -2}]}]}"
+    },
+    {
+     "id": "msj_h1009_q8",
+     "topicId": "msj_h1009",
+     "prompt": "已知 a 大于 b，c 小于 d，求证 a 减 c 大于 b 减 d。",
+     "question": "已知 a 大于 b，c 小于 d，求证 a 减 c 大于 b 减 d。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "证明的关键是把减法转化为加法，先用性质得到负 c 大于负 d，再用同向不等式可加的性质完成证明。",
+     "answer": "由 c 小于 d 得负 c 大于负 d，又 a 大于 b，把两个同向不等式两边分别相加，得 a 减 c 大于 b 减 d。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1010",
+   "page": 55,
+   "description": "算术平均数与几何平均数的大小关系，以及用基本不等式求最值的方法",
+   "mastery_criteria": [
+    "理解基本不等式的条件与等号成立的条件",
+    "会用基本不等式求积的最大值或和的最小值"
+   ],
+   "misconceptions": [
+    "忽略基本不等式中两个数必须为正数",
+    "用基本不等式求最值时不检验等号能否取到"
+   ],
+   "type": "modeling",
+   "questions": [
+    {
+     "id": "msj_h1010_q1",
+     "topicId": "msj_h1010",
+     "prompt": "正数 2 与 8 的算术平均数与几何平均数依次是？",
+     "question": "正数 2 与 8 的算术平均数与几何平均数依次是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "算术平均数是两数之和的一半，即 5；几何平均数是两数之积的算术平方根，即根号 16 等于 4。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "5 与 4"
+      },
+      {
+       "label": "B",
+       "text": "4 与 5"
+      },
+      {
+       "label": "C",
+       "text": "5 与 16"
+      },
+      {
+       "label": "D",
+       "text": "10 与 4"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1010_q2",
+     "topicId": "msj_h1010",
+     "prompt": "基本不等式取等号的条件是？",
+     "question": "基本不等式取等号的条件是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "基本不等式说明几何平均数不大于算术平均数，当且仅当两个正数相等时两者相等，这时等号成立。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "两个数中至少有一个为 0"
+      },
+      {
+       "label": "B",
+       "text": "两个数互为相反数"
+      },
+      {
+       "label": "C",
+       "text": "两个数相等"
+      },
+      {
+       "label": "D",
+       "text": "两个数中有一个为 1"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1010_q3",
+     "topicId": "msj_h1010",
+     "prompt": "已知 x 大于 0，y 大于 0，且 x 与 y 的积等于 81，则 x 加 y 的最小值是？",
+     "question": "已知 x 大于 0，y 大于 0，且 x 与 y 的积等于 81，则 x 加 y 的最小值是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由基本不等式，x 加 y 不小于 2 倍根号下 xy 等于 18，当且仅当 x 与 y 都等于 9 时取到等号。",
+     "answer": "D",
+     "options": [
+      {
+       "label": "A",
+       "text": "9"
+      },
+      {
+       "label": "B",
+       "text": "162"
+      },
+      {
+       "label": "C",
+       "text": "81"
+      },
+      {
+       "label": "D",
+       "text": "18"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1010_q4",
+     "topicId": "msj_h1010",
+     "prompt": "一个直角三角形的面积为 50，则它的两条直角边之和的最小值是？",
+     "question": "一个直角三角形的面积为 50，则它的两条直角边之和的最小值是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "设两条直角边为 a 与 b，则 ab 等于 100，由基本不等式得 a 加 b 不小于 2 倍根号 100 等于 20。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "10"
+      },
+      {
+       "label": "B",
+       "text": "20"
+      },
+      {
+       "label": "C",
+       "text": "25"
+      },
+      {
+       "label": "D",
+       "text": "50"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1010_q5",
+     "topicId": "msj_h1010",
+     "prompt": "正数 3 与 12 的几何平均数是＿＿。",
+     "question": "正数 3 与 12 的几何平均数是＿＿。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "几何平均数是两数之积的算术平方根，3 乘 12 等于 36，36 的算术平方根是 6，所以几何平均数为 6。",
+     "answer": "6"
+    },
+    {
+     "id": "msj_h1010_q6",
+     "topicId": "msj_h1010",
+     "prompt": "已知 x 大于 0，y 大于 0，且 2x 加 5y 等于 20，则 xy 的最大值是多少？",
+     "question": "已知 x 大于 0，y 大于 0，且 2x 加 5y 等于 20，则 xy 的最大值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由基本不等式，2x 加 5y 不小于 2 倍根号下 10xy，即 20 不小于它，得 xy 不大于 10，当 2x 与 5y 都等于 10 时取等号。",
+     "answer": "10",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 20}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"num\", \"value\": 5}]}]}"
+    },
+    {
+     "id": "msj_h1010_q7",
+     "topicId": "msj_h1010",
+     "prompt": "已知 x 大于负 2，则 x 加 （x 加 2）分之 16 的最小值是多少？",
+     "question": "已知 x 大于负 2，则 x 加 （x 加 2）分之 16 的最小值是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "把式子写成（x 加 2）加（x 加 2）分之 16 再减 2，由基本不等式前两项之和不小于 8，所以原式不小于 6，当 x 等于 2 时取等号。",
+     "answer": "6",
+     "verify": "{\"type\": \"num\", \"value\": 6}"
+    },
+    {
+     "id": "msj_h1010_q8",
+     "topicId": "msj_h1010",
+     "prompt": "已知 a 与 b 都是正数且它们的积等于 1，求证 a 分之 1 加 b 分之 1 不小于 2。",
+     "question": "已知 a 与 b 都是正数且它们的积等于 1，求证 a 分之 1 加 b 分之 1 不小于 2。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "证明时要先判断各项为正，再用基本不等式，最后把已知的积代入并说明等号成立的条件。",
+     "answer": "因为 a 与 b 为正数，所以 a 分之 1 与 b 分之 1 也为正数，由基本不等式它们的和不小于 2 倍根号下 ab 分之 1，又 ab 等于 1，所以不小于 2，当且仅当 a 等于 b 等于 1 时取等号。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1011",
+   "page": 63,
+   "description": "二次函数的零点与一元二次方程、一元二次不等式之间的对应关系",
+   "mastery_criteria": [
+    "会借助二次函数的图象写出不等式的解集",
+    "能用零点判断方程根的个数与根所在的区间"
+   ],
+   "misconceptions": [
+    "解不等式时忘记先把二次项系数化为正数",
+    "把判别式小于 0 时的解集一律写成空集"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "msj_h1011_q1",
+     "topicId": "msj_h1011",
+     "prompt": "二次函数 y 等于 x 的平方减 2x 减 3 的零点是？",
+     "question": "二次函数 y 等于 x 的平方减 2x 减 3 的零点是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "函数的零点就是对应方程 x 的平方减 2x 减 3 等于 0 的根，因式分解得（x 减 3）（x 加 1）等于 0，根为 3 与负 1。",
+     "answer": "D",
+     "options": [
+      {
+       "label": "A",
+       "text": "负 1 和负 3"
+      },
+      {
+       "label": "B",
+       "text": "1 和 3"
+      },
+      {
+       "label": "C",
+       "text": "负 3 和 1"
+      },
+      {
+       "label": "D",
+       "text": "负 1 和 3"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1011_q2",
+     "topicId": "msj_h1011",
+     "prompt": "不等式 x 的平方减 7x 加 12 小于 0 的解集是？",
+     "question": "不等式 x 的平方减 7x 加 12 小于 0 的解集是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "方程的两根为 3 和 4，二次项系数为正，图象开口向上，小于 0 的部分位于两根之间。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "所有小于 3 或大于 4 的实数"
+      },
+      {
+       "label": "B",
+       "text": "所有大于 4 的实数"
+      },
+      {
+       "label": "C",
+       "text": "所有大于 3 且小于 4 的实数"
+      },
+      {
+       "label": "D",
+       "text": "所有小于 3 的实数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1011_q3",
+     "topicId": "msj_h1011",
+     "prompt": "二次函数 y 等于 x 的平方减 2x 加 2 的零点个数是？",
+     "question": "二次函数 y 等于 x 的平方减 2x 加 2 的零点个数是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "判别式等于 4 减 8 等于负 4，小于 0，对应方程没有实数根，所以函数没有零点。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "0 个"
+      },
+      {
+       "label": "B",
+       "text": "1 个"
+      },
+      {
+       "label": "C",
+       "text": "2 个"
+      },
+      {
+       "label": "D",
+       "text": "3 个"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1011_q4",
+     "topicId": "msj_h1011",
+     "prompt": "不等式负 x 的平方加 2x 加 3 大于 0 的解集是？",
+     "question": "不等式负 x 的平方加 2x 加 3 大于 0 的解集是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两边同乘负 1 化为 x 的平方减 2x 减 3 小于 0，两根为负 1 与 3，开口向上取两根之间。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "所有大于 3 或小于负 1 的实数"
+      },
+      {
+       "label": "B",
+       "text": "所有大于负 1 且小于 3 的实数"
+      },
+      {
+       "label": "C",
+       "text": "所有小于负 1 的实数"
+      },
+      {
+       "label": "D",
+       "text": "全体实数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1011_q5",
+     "topicId": "msj_h1011",
+     "prompt": "不等式 x 的平方减 4x 加 3 不小于 0 的解集是＿＿。",
+     "question": "不等式 x 的平方减 4x 加 3 不小于 0 的解集是＿＿。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "方程的两根为 1 和 3，开口向上，不小于 0 的部分在两根之外，端点可以取到。",
+     "answer": "所有不大于 1 或不小于 3 的实数"
+    },
+    {
+     "id": "msj_h1011_q6",
+     "topicId": "msj_h1011",
+     "prompt": "用 100 米长的绳子围成一个矩形，所围矩形面积的最大值是多少平方米？",
+     "question": "用 100 米长的绳子围成一个矩形，所围矩形面积的最大值是多少平方米？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "设一边长为 x，则另一边为 50 减 x，面积等于 x 乘（50 减 x），它是开口向下的二次函数，在 x 等于 25 时取最大值 625。",
+     "answer": "625",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 50}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msj_h1011_q7",
+     "topicId": "msj_h1011",
+     "prompt": "某车刹车距离 s 与车速 x 满足 s 等于 0.1x 加 0.01 乘 x 的平方，若刹车距离不超过 12 米，则车速的最大值是多少千米每小时？",
+     "question": "某车刹车距离 s 与车速 x 满足 s 等于 0.1x 加 0.01 乘 x 的平方，若刹车距离不超过 12 米，则车速的最大值是多少千米每小时？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "由不等式 0.01 乘 x 的平方加 0.1x 小于等于 12，两边同乘 100 得 x 的平方加 10x 减 1200 小于等于 0，解得 x 不大于 30。",
+     "answer": "30",
+     "verify": "{\"type\": \"num\", \"value\": 30}"
+    },
+    {
+     "id": "msj_h1011_q8",
+     "topicId": "msj_h1011",
+     "prompt": "用函数观点说明：二次函数 y 等于 x 的平方减 2x 减 1 在区间 2 到 3 内存在零点。",
+     "question": "用函数观点说明：二次函数 y 等于 x 的平方减 2x 减 1 在区间 2 到 3 内存在零点。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "函数的零点就是对应方程的根，只要能说明有一根落在所给区间内，也就说明了图象与 x 轴在该区间内有交点。",
+     "answer": "方程 x 的平方减 2x 减 1 等于 0 的两根为 1 加根号 2 与 1 减根号 2，其中 1 加根号 2 约等于 2.41，落在区间 2 到 3 内，所以该函数在此区间内存在零点。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1012",
+   "page": 71,
+   "description": "基本不等式向三个、四个正数情形的推广，以及各种平均数的比较",
+   "mastery_criteria": [
+    "会把基本不等式推广到三个正数的情形",
+    "能比较算术平均数、几何平均数与调和平均数的大小"
+   ],
+   "misconceptions": [
+    "认为三个正数的算术平均数可能小于它们的几何平均数",
+    "把推广中的等号条件写成只要有两个数相等"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "msj_h1012_q1",
+     "topicId": "msj_h1012",
+     "prompt": "三个正数 a，b，c 的几何平均数与算术平均数满足？",
+     "question": "三个正数 a，b，c 的几何平均数与算术平均数满足？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "基本不等式推广到三个正数时形式不变，几何平均数不超过算术平均数，当且仅当三个数相等时取等号。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "几何平均数不小于算术平均数"
+      },
+      {
+       "label": "B",
+       "text": "两者一定相等"
+      },
+      {
+       "label": "C",
+       "text": "几何平均数不大于算术平均数"
+      },
+      {
+       "label": "D",
+       "text": "两者的大小与具体数值无关"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1012_q2",
+     "topicId": "msj_h1012",
+     "prompt": "正数 1，2，3，4 的算术平均数是？",
+     "question": "正数 1，2，3，4 的算术平均数是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "算术平均数等于所有数之和除以个数，1 加 2 加 3 加 4 等于 10，除以 4 得 2.5。",
+     "answer": "D",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "2.5"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1012_q3",
+     "topicId": "msj_h1012",
+     "prompt": "已知 a，b 都是正数，则下列不等式一定成立的是？",
+     "question": "已知 a，b 都是正数，则下列不等式一定成立的是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由（a 减 b）的平方不小于 0 展开移项即得 a 的平方加 b 的平方不小于 2ab，当且仅当 a 等于 b 时取等号。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 的平方加 b 的平方小于 2ab"
+      },
+      {
+       "label": "B",
+       "text": "a 的平方加 b 的平方不小于 2ab"
+      },
+      {
+       "label": "C",
+       "text": "a 加 b 不小于 2 倍根号下 ab 且等号不能取到"
+      },
+      {
+       "label": "D",
+       "text": "ab 不小于 a 与 b 之和"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1012_q4",
+     "topicId": "msj_h1012",
+     "prompt": "梯形两底长分别为 2 和 8，则它的中位线长、与两底相似的分界线长、过对角线交点的平行线段长由大到小依次是？",
+     "question": "梯形两底长分别为 2 和 8，则它的中位线长、与两底相似的分界线长、过对角线交点的平行线段长由大到小依次是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "中位线等于两底的平均数 5，相似分界线等于两底之积的算术平方根 4，过交点线段等于两底积的 2 倍除以两底之和 3.2。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "5，4，3.2"
+      },
+      {
+       "label": "B",
+       "text": "4，5，3.2"
+      },
+      {
+       "label": "C",
+       "text": "5，3.2，4"
+      },
+      {
+       "label": "D",
+       "text": "3.2，4，5"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1012_q5",
+     "topicId": "msj_h1012",
+     "prompt": "三个正数 2，8，32 的几何平均数是＿＿。",
+     "question": "三个正数 2，8，32 的几何平均数是＿＿。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "三个数的几何平均数是连乘积的立方根，2 乘 8 乘 32 等于 512，512 的立方根是 8。",
+     "answer": "8"
+    },
+    {
+     "id": "msj_h1012_q6",
+     "topicId": "msj_h1012",
+     "prompt": "三个正数 1，8，27 的算术平均数是多少？",
+     "question": "三个正数 1，8，27 的算术平均数是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "三数之和为 1 加 8 加 27 等于 36，除以个数 3 得 12，所以算术平均数是 12。",
+     "answer": "12",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 8}]}, {\"type\": \"num\", \"value\": 27}]}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_h1012_q7",
+     "topicId": "msj_h1012",
+     "prompt": "梯形两底长分别为 2 和 8，过对角线交点且平行于两底的线段长等于两底之积的 2 倍除以两底之和，求这条线段的长。",
+     "question": "梯形两底长分别为 2 和 8，过对角线交点且平行于两底的线段长等于两底之积的 2 倍除以两底之和，求这条线段的长。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "两底之积的 2 倍为 32，两底之和为 10，相除得 3.2，与调和平均数 2ab 除以 a 加 b 一致。",
+     "answer": "3.2",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 32}, {\"type\": \"num\", \"value\": 10}]}"
+    },
+    {
+     "id": "msj_h1012_q8",
+     "topicId": "msj_h1012",
+     "prompt": "由（a 减 b）的平方不小于 0 出发，说明 a 的平方加 b 的平方不小于 2ab，并指出等号成立的条件。",
+     "question": "由（a 减 b）的平方不小于 0 出发，说明 a 的平方加 b 的平方不小于 2ab，并指出等号成立的条件。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "这一证明的出发点是实数的平方非负，移项后得到所需不等式，等号成立当且仅当平方的底数为 0。",
+     "answer": "展开（a 减 b）的平方得 a 的平方减 2ab 加 b 的平方，它不小于 0，把负 2ab 移到另一边即得 a 的平方加 b 的平方不小于 2ab，当且仅当 a 等于 b 时等号成立。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1013",
+   "page": 81,
+   "description": "n 次方根与根式的意义，分数指数幂的规定以及根式与指数幂的互化",
+   "mastery_criteria": [
+    "会求给定数的 n 次方根并化简根式",
+    "会把根式化为分数指数幂并求值"
+   ],
+   "misconceptions": [
+    "认为负数没有奇次方根",
+    "把偶次根号下 a 的偶次方直接写成 a 而忽略绝对值"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msj_h1013_q1",
+     "topicId": "msj_h1013",
+     "prompt": "根号 5 整个式子的平方等于多少？",
+     "question": "根号 5 整个式子的平方等于多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由根式的意义，根号 5 的平方就是把 5 的算术平方根再平方，结果还原为 5。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "根号 5"
+      },
+      {
+       "label": "C",
+       "text": "25"
+      },
+      {
+       "label": "D",
+       "text": "10"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1013_q2",
+     "topicId": "msj_h1013",
+     "prompt": "正数 8 的 2/3 次幂等于多少？",
+     "question": "正数 8 的 2/3 次幂等于多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把 8 的 2/3 次幂理解为先开立方再平方，8 的立方根是 2，平方得 4。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "16"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1013_q3",
+     "topicId": "msj_h1013",
+     "prompt": "正数 9 的负 3/2 次幂等于多少？",
+     "question": "正数 9 的负 3/2 次幂等于多少？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "负指数表示取倒数，9 的 3/2 次幂等于 27，所以 9 的负 3/2 次幂等于 27 分之 1。",
+     "answer": "D",
+     "options": [
+      {
+       "label": "A",
+       "text": "27"
+      },
+      {
+       "label": "B",
+       "text": "负 27"
+      },
+      {
+       "label": "C",
+       "text": "1/3"
+      },
+      {
+       "label": "D",
+       "text": "1/27"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1013_q4",
+     "topicId": "msj_h1013",
+     "prompt": "当 n 为偶数时，a 的 n 次方的 n 次方根等于？",
+     "question": "当 n 为偶数时，a 的 n 次方的 n 次方根等于？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "n 为偶数时，正数的偶次方根有两个且互为相反数，取正的方根时结果等于 a 的绝对值，不能直接写成 a。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "a"
+      },
+      {
+       "label": "B",
+       "text": "a 的绝对值"
+      },
+      {
+       "label": "C",
+       "text": "负 a"
+      },
+      {
+       "label": "D",
+       "text": "a 的平方"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1013_q5",
+     "topicId": "msj_h1013",
+     "prompt": "正数 25 的负 1/2 次幂等于＿＿。",
+     "question": "正数 25 的负 1/2 次幂等于＿＿。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "25 的 1/2 次幂等于 5，负指数取倒数，所以结果是 5 分之 1。",
+     "answer": "1/5"
+    },
+    {
+     "id": "msj_h1013_q6",
+     "topicId": "msj_h1013",
+     "prompt": "正数 64 的 2/3 次幂等于多少？",
+     "question": "正数 64 的 2/3 次幂等于多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "64 的立方根是 4，再平方得 16，所以 64 的 2/3 次幂等于 16。",
+     "answer": "16",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 64}, {\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}]}"
+    },
+    {
+     "id": "msj_h1013_q7",
+     "topicId": "msj_h1013",
+     "prompt": "正数 1000 的 1/3 次幂等于多少？",
+     "question": "正数 1000 的 1/3 次幂等于多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "求一个数的 1/3 次幂就是求它的立方根，10 的立方等于 1000，所以结果是 10。",
+     "answer": "10",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 1000}, {\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 3}]}]}"
+    },
+    {
+     "id": "msj_h1013_q8",
+     "topicId": "msj_h1013",
+     "prompt": "求负 8 的立方根的立方，并说明理由。",
+     "question": "求负 8 的立方根的立方，并说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "n 为奇数时，a 的 n 次方根只有一个，且根式的 n 次方等于被开方数本身，不需要加绝对值。",
+     "answer": "负 8 的立方根是负 2，它的立方等于负 8，因为负 2 的立方等于负 8，奇次方根与立方运算可以抵消。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1014",
+   "page": 87,
+   "description": "对数的概念、常用对数与自然对数，以及对数的运算性质和换底公式",
+   "mastery_criteria": [
+    "会进行指数式与对数式的互化并求对数值",
+    "会用运算性质与换底公式化简求值"
+   ],
+   "misconceptions": [
+    "忽略对数中真数必须为正数这一前提",
+    "把积的对数写成对数的积"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msj_h1014_q1",
+     "topicId": "msj_h1014",
+     "prompt": "把 2 的 4 次方等于 16 改写成对数式，结果是？",
+     "question": "把 2 的 4 次方等于 16 改写成对数式，结果是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由定义，底数 2、真数 16、对数 4 三者对应，写成对数式即以 2 为底 16 的对数等于 4。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "以 2 为底 16 的对数等于 4"
+      },
+      {
+       "label": "B",
+       "text": "以 16 为底 2 的对数等于 4"
+      },
+      {
+       "label": "C",
+       "text": "以 2 为底 4 的对数等于 16"
+      },
+      {
+       "label": "D",
+       "text": "以 4 为底 16 的对数等于 2"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1014_q2",
+     "topicId": "msj_h1014",
+     "prompt": "以 3 为底 27 的对数等于？",
+     "question": "以 3 为底 27 的对数等于？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "因为 3 的 3 次方等于 27，所以以 3 为底 27 的对数等于 3。",
+     "answer": "D",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "1/3"
+      },
+      {
+       "label": "C",
+       "text": "9"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1014_q3",
+     "topicId": "msj_h1014",
+     "prompt": "以 9 为底 27 的对数等于？",
+     "question": "以 9 为底 27 的对数等于？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "设它为 t，则 9 的 t 次方等于 27，即 3 的 2t 次方等于 3 的 3 次方，得 t 等于 3/2。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "1/2"
+      },
+      {
+       "label": "B",
+       "text": "3/2"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1014_q4",
+     "topicId": "msj_h1014",
+     "prompt": "常用对数 lg1000 的值等于多少？",
+     "question": "常用对数 lg1000 的值等于多少？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "常用对数以 10 为底，10 的 3 次方等于 1000，所以 lg1000 等于 3。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "10"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1014_q5",
+     "topicId": "msj_h1014",
+     "prompt": "以 2 为底 64 的对数等于＿＿。",
+     "question": "以 2 为底 64 的对数等于＿＿。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "因为 2 的 6 次方等于 64，根据对数的定义，以 2 为底 64 的对数等于 6。",
+     "answer": "6"
+    },
+    {
+     "id": "msj_h1014_q6",
+     "topicId": "msj_h1014",
+     "prompt": "以 5 为底 125 的对数等于多少？",
+     "question": "以 5 为底 125 的对数等于多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "5 的 3 次方等于 125，所以以 5 为底 125 的对数等于 3。",
+     "answer": "3",
+     "verify": "{\"type\": \"num\", \"value\": 3}"
+    },
+    {
+     "id": "msj_h1014_q7",
+     "topicId": "msj_h1014",
+     "prompt": "lg25 与 lg4 这两个对数的和等于多少？",
+     "question": "lg25 与 lg4 这两个对数的和等于多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "由积的对数等于对数之和，lg25 加 lg4 等于 lg100，而 10 的 2 次方等于 100，所以结果为 2。",
+     "answer": "2",
+     "verify": "{\"type\": \"num\", \"value\": 2}"
+    },
+    {
+     "id": "msj_h1014_q8",
+     "topicId": "msj_h1014",
+     "prompt": "已知 lg2 约等于 0.3010，lg3 约等于 0.4771，求 lg12 的值，结果保留四位小数。",
+     "question": "已知 lg2 约等于 0.3010，lg3 约等于 0.4771，求 lg12 的值，结果保留四位小数。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "把 12 分解为 4 乘 3，用积的对数等于对数之和，再用幂的对数把 lg4 化为 2 倍 lg2 即可。",
+     "answer": "lg12 等于 lg4 加 lg3，即 2 倍 lg2 加 lg3，约等于 0.6020 加 0.4771，等于 1.0791。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1015",
+   "page": 95,
+   "description": "借助常用对数估计一个数的位数，并解决开方与位数的估算问题",
+   "mastery_criteria": [
+    "会用常用对数估计幂的位数",
+    "能由位数反推整数方根的值"
+   ],
+   "misconceptions": [
+    "把 lgN 的整数部分直接当作位数而忘记加 1",
+    "认为估计位数必须精确算出幂的值"
+   ],
+   "type": "modeling",
+   "questions": [
+    {
+     "id": "msj_h1015_q1",
+     "topicId": "msj_h1015",
+     "prompt": "若 lg13 约等于 1.11，则 13 的 31 次方是？",
+     "question": "若 lg13 约等于 1.11，则 13 的 31 次方是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "13 的 31 次方的常用对数约等于 31 乘 1.11 等于 34.41，整数部分是 34，所以它是 35 位数。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "35 位数"
+      },
+      {
+       "label": "B",
+       "text": "34 位数"
+      },
+      {
+       "label": "C",
+       "text": "33 位数"
+      },
+      {
+       "label": "D",
+       "text": "36 位数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1015_q2",
+     "topicId": "msj_h1015",
+     "prompt": "若 lgN 等于 30.1，则正整数 N 是？",
+     "question": "若 lgN 等于 30.1，则正整数 N 是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把 N 写成 a 乘 10 的 n 次方且 a 在 1 到 10 之间，则 n 等于 30，所以 N 是 31 位数。",
+     "answer": "D",
+     "options": [
+      {
+       "label": "A",
+       "text": "30 位数"
+      },
+      {
+       "label": "B",
+       "text": "无法确定"
+      },
+      {
+       "label": "C",
+       "text": "32 位数"
+      },
+      {
+       "label": "D",
+       "text": "31 位数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1015_q3",
+     "topicId": "msj_h1015",
+     "prompt": "已知 lg2 约等于 0.3010，则 2 的 100 次方是？",
+     "question": "已知 lg2 约等于 0.3010，则 2 的 100 次方是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "2 的 100 次方的常用对数约等于 100 乘 0.3010 等于 30.10，整数部分为 30，所以是 31 位数。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "29 位数"
+      },
+      {
+       "label": "B",
+       "text": "30 位数"
+      },
+      {
+       "label": "C",
+       "text": "31 位数"
+      },
+      {
+       "label": "D",
+       "text": "32 位数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1015_q4",
+     "topicId": "msj_h1015",
+     "prompt": "一个 20 位整数的 64 次方根仍是一个整数，这个方根是？",
+     "question": "一个 20 位整数的 64 次方根仍是一个整数，这个方根是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "设方根为 r，则 r 的 64 次方是 20 位数，取常用对数知 lg r 约在 0.297 与 0.313 之间，只有 lg2 约等于 0.30 符合，所以 r 等于 2。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1015_q5",
+     "topicId": "msj_h1015",
+     "prompt": "已知 lg2 约等于 0.30，lg3 约等于 0.48，则 lg6 约等于＿＿。",
+     "question": "已知 lg2 约等于 0.30，lg3 约等于 0.48，则 lg6 约等于＿＿。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "6 等于 2 乘 3，由积的对数等于对数之和，lg6 约等于 0.30 加 0.48 等于 0.78。",
+     "answer": "0.78"
+    },
+    {
+     "id": "msj_h1015_q6",
+     "topicId": "msj_h1015",
+     "prompt": "若 lgN 等于 12.4，则正整数 N 的位数是多少？",
+     "question": "若 lgN 等于 12.4，则正整数 N 的位数是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由 lgN 的整数部分为 12 可知 N 等于 a 乘 10 的 12 次方，所以 N 是 13 位数。",
+     "answer": "13",
+     "verify": "{\"type\": \"num\", \"value\": 13}"
+    },
+    {
+     "id": "msj_h1015_q7",
+     "topicId": "msj_h1015",
+     "prompt": "已知 lg3 约等于 0.48，则 3 的 20 次方是多少位数？",
+     "question": "已知 lg3 约等于 0.48，则 3 的 20 次方是多少位数？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "3 的 20 次方的常用对数约等于 20 乘 0.48 等于 9.6，整数部分是 9，所以它是 10 位数。",
+     "answer": "10",
+     "verify": "{\"type\": \"num\", \"value\": 10}"
+    },
+    {
+     "id": "msj_h1015_q8",
+     "topicId": "msj_h1015",
+     "prompt": "速算专家如何在不知道这个 35 位整数的情况下断定它的 31 次方根是 13？",
+     "question": "速算专家如何在不知道这个 35 位整数的情况下断定它的 31 次方根是 13？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "估计位数靠的是常用对数的整数部分加 1，专家记住常用对数表后不必计算幂的具体数值就能判断位数。",
+     "answer": "因为 13 的 31 次方的常用对数等于 31 乘 lg13，约等于 34.41，所以它是 35 位数；而在这类整数中只有 13 的 31 次方才是 35 位整数，因此方根是 13。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1016",
+   "page": 103,
+   "description": "函数的概念、定义域与值域，以及函数图象的画法",
+   "mastery_criteria": [
+    "会用函数的定义判断对应关系是否为函数",
+    "会求简单函数的定义域与值域"
+   ],
+   "misconceptions": [
+    "认为一个自变量可以同时对应两个函数值",
+    "求定义域时漏掉分母不为零或根号下非负的条件"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1016_q1",
+     "topicId": "msj_h1016",
+     "prompt": "下列对应关系中，是函数的是？",
+     "question": "下列对应关系中，是函数的是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "函数要求对定义域中每个值都有唯一确定的输出值，只有平方满足这一要求，其余对应都出现一个输入对应多个输出。",
+     "answer": "D",
+     "options": [
+      {
+       "label": "A",
+       "text": "每个整数对应到比它小的整数"
+      },
+      {
+       "label": "B",
+       "text": "非负实数对应到它的两个平方根"
+      },
+      {
+       "label": "C",
+       "text": "每个正数同时对应到它的倒数和相反数"
+      },
+      {
+       "label": "D",
+       "text": "每个实数对应到它的平方"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1016_q2",
+     "topicId": "msj_h1016",
+     "prompt": "函数 f(x) 等于根号下 x 减 1 的定义域是？",
+     "question": "函数 f(x) 等于根号下 x 减 1 的定义域是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "要使根式有意义，被开方数必须非负，即 x 减 1 不小于 0，解得 x 不小于 1。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "所有不小于 1 的实数"
+      },
+      {
+       "label": "B",
+       "text": "所有大于 1 的实数"
+      },
+      {
+       "label": "C",
+       "text": "全体实数"
+      },
+      {
+       "label": "D",
+       "text": "所有不小于 0 的实数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1016_q3",
+     "topicId": "msj_h1016",
+     "prompt": "函数 f(x) 等于（x 减 1）的平方加 1 的值域是？",
+     "question": "函数 f(x) 等于（x 减 1）的平方加 1 的值域是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "平方项不小于 0，所以函数值不小于 1，当 x 等于 1 时取到 1，所以值域是所有不小于 1 的实数。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "全体实数"
+      },
+      {
+       "label": "B",
+       "text": "所有不小于 0 的实数"
+      },
+      {
+       "label": "C",
+       "text": "所有不小于 1 的实数"
+      },
+      {
+       "label": "D",
+       "text": "所有大于 1 的实数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1016_q4",
+     "topicId": "msj_h1016",
+     "prompt": "函数 f(x) 等于（x 加 1）分之 1 的定义域是？",
+     "question": "函数 f(x) 等于（x 加 1）分之 1 的定义域是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "分母不能为 0，即 x 加 1 不等于 0，所以 x 不等于负 1，定义域是所有不等于负 1 的实数。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "所有不等于 1 的实数"
+      },
+      {
+       "label": "B",
+       "text": "所有不等于负 1 的实数"
+      },
+      {
+       "label": "C",
+       "text": "所有不等于 0 的实数"
+      },
+      {
+       "label": "D",
+       "text": "全体实数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1016_q5",
+     "topicId": "msj_h1016",
+     "prompt": "已知 f(x) 等于（x 减 1）的平方加 1，则 f(2) 等于＿＿。",
+     "question": "已知 f(x) 等于（x 减 1）的平方加 1，则 f(2) 等于＿＿。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "把 x 等于 2 代入解析式，得 2 减 1 的平方加 1，即 1 加 1 等于 2。",
+     "answer": "2"
+    },
+    {
+     "id": "msj_h1016_q6",
+     "topicId": "msj_h1016",
+     "prompt": "已知 f(x) 等于（x 减 1）的平方加 1，当 x 取负 1，0，1，2，3 时，函数值组成的集合中元素的个数是多少？",
+     "question": "已知 f(x) 等于（x 减 1）的平方加 1，当 x 取负 1，0，1，2，3 时，函数值组成的集合中元素的个数是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "逐一代入得函数值 5，2，1，2，5，由互异性，值域由 1，2，5 组成，共 3 个元素。",
+     "answer": "3",
+     "verify": "{\"type\": \"num\", \"value\": 3}"
+    },
+    {
+     "id": "msj_h1016_q7",
+     "topicId": "msj_h1016",
+     "prompt": "物体自由下落的距离 y 与时间 x 满足 y 等于 4.9 乘 x 的平方，当 x 等于 2 时 y 的值是多少？",
+     "question": "物体自由下落的距离 y 与时间 x 满足 y 等于 4.9 乘 x 的平方，当 x 等于 2 时 y 的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把 x 等于 2 代入解析式，得 y 等于 4.9 乘 4 等于 19.6，下落的距离是 19.6 米。",
+     "answer": "19.6",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4.9}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}]}"
+    },
+    {
+     "id": "msj_h1016_q8",
+     "topicId": "msj_h1016",
+     "prompt": "对应关系“x 对应到 y，其中 y 的平方等于 x，x 为自然数”是不是函数？请说明理由。",
+     "question": "对应关系“x 对应到 y，其中 y 的平方等于 x，x 为自然数”是不是函数？请说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "判断是否为函数的关键是唯一性，只要找到一个输入值对应两个输出值，就可以否定这个对应是函数。",
+     "answer": "不是函数。因为当 x 等于 4 时，y 可以等于 2 也可以等于负 2，一个输入值对应了两个输出值，不满足输出值的唯一性。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1017",
+   "page": 113,
+   "description": "列表法、解析法、图象法三种表示方法，以及分段函数的应用",
+   "mastery_criteria": [
+    "能根据问题选择适当的表示方法",
+    "会写出分段函数的解析式并求函数值"
+   ],
+   "misconceptions": [
+    "认为分段函数是几个函数而不是一个函数",
+    "求分段函数值时用错了对应的那一部分表达式"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "msj_h1017_q1",
+     "topicId": "msj_h1017",
+     "prompt": "表示函数的三种常用方法是？",
+     "question": "表示函数的三种常用方法是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材明确把列表法、解析法、图象法作为表示函数的三种常用方法，三者各有优点并可互相转化。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "比较法、分析法、综合法"
+      },
+      {
+       "label": "B",
+       "text": "代入法、消元法、换元法"
+      },
+      {
+       "label": "C",
+       "text": "列表法、解析法、图象法"
+      },
+      {
+       "label": "D",
+       "text": "描点法、连线法、平移法"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1017_q2",
+     "topicId": "msj_h1017",
+     "prompt": "已知 y 等于 2x，x 取 1，2，3，4，则这个函数的值域是？",
+     "question": "已知 y 等于 2x，x 取 1，2，3，4，则这个函数的值域是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "定义域只有四个值，逐一代入得函数值 2，4，6，8，所以值域是由这四个数组成的集合。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "由 2，4，6，8 组成"
+      },
+      {
+       "label": "B",
+       "text": "由 1，2，3，4 组成"
+      },
+      {
+       "label": "C",
+       "text": "由 2，4，6 组成"
+      },
+      {
+       "label": "D",
+       "text": "全体正实数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1017_q3",
+     "topicId": "msj_h1017",
+     "prompt": "某市出租车在 3 千米以内收费 9 元，超过 3 千米的部分每千米收费 2.4 元，行驶 5 千米应付多少元？",
+     "question": "某市出租车在 3 千米以内收费 9 元，超过 3 千米的部分每千米收费 2.4 元，行驶 5 千米应付多少元？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "超出 3 千米的部分是 2 千米，另收 4.8 元，加上起步价 9 元，共 13.8 元。",
+     "answer": "D",
+     "options": [
+      {
+       "label": "A",
+       "text": "12 元"
+      },
+      {
+       "label": "B",
+       "text": "21 元"
+      },
+      {
+       "label": "C",
+       "text": "14.4 元"
+      },
+      {
+       "label": "D",
+       "text": "13.8 元"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1017_q4",
+     "topicId": "msj_h1017",
+     "prompt": "已知 f(x) 等于 x 的绝对值，则 f 在负 3 处的值等于？",
+     "question": "已知 f(x) 等于 x 的绝对值，则 f 在负 3 处的值等于？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "绝对值函数把负数变为它的相反数，所以负 3 的绝对值等于 3，即 f 在负 3 处的值为 3。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "负 3"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "0"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1017_q5",
+     "topicId": "msj_h1017",
+     "prompt": "按上面的出租车收费办法，行驶 8 千米应付＿＿元。",
+     "question": "按上面的出租车收费办法，行驶 8 千米应付＿＿元。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "超出 3 千米的部分是 5 千米，另收 12 元，加上起步价 9 元，共 21 元。",
+     "answer": "21"
+    },
+    {
+     "id": "msj_h1017_q6",
+     "topicId": "msj_h1017",
+     "prompt": "按上面的出租车收费办法，行驶 10 千米应付多少元？",
+     "question": "按上面的出租车收费办法，行驶 10 千米应付多少元？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "超出 3 千米的部分是 7 千米，收费 2.4 乘 7 等于 16.8 元，加上起步价 9 元，共 25.8 元。",
+     "answer": "25.8",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 9}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2.4}, {\"type\": \"num\", \"value\": 7}]}]}"
+    },
+    {
+     "id": "msj_h1017_q7",
+     "topicId": "msj_h1017",
+     "prompt": "某种饮料每听 2 元，购买 x 听需付 y 元，当 x 等于 3 时 y 等于多少？",
+     "question": "某种饮料每听 2 元，购买 x 听需付 y 元，当 x 等于 3 时 y 等于多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "钱数等于单价乘数量，2 乘 3 等于 6，所以购买 3 听需付 6 元。",
+     "answer": "6",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_h1017_q8",
+     "topicId": "msj_h1017",
+     "prompt": "写出上述出租车收费额 y 关于路程 x 的分段函数解析式。",
+     "question": "写出上述出租车收费额 y 关于路程 x 的分段函数解析式。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "分段函数在定义域的不同部分用不同的解析式，写的时候要写清每一段的自变量范围，并注意两段在 x 等于 3 处的衔接。",
+     "answer": "当 x 大于 0 且不大于 3 时，y 等于 9；当 x 大于 3 时，y 等于 9 加 2.4 乘（x 减 3），即 y 等于 2.4x 加 1.8。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1018",
+   "page": 117,
+   "description": "增函数、减函数与单调区间的概念，以及函数最大值与最小值的求法",
+   "mastery_criteria": [
+    "会用定义证明函数在给定区间上的单调性",
+    "会由图象或解析式求函数的单调区间与最值"
+   ],
+   "misconceptions": [
+    "用几个特殊值的大小关系代替定义来证明单调性",
+    "把单调区间写成并集或漏掉区间端点的讨论"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1018_q1",
+     "topicId": "msj_h1018",
+     "prompt": "函数 y 等于负 x 的平方加 2 的单调增区间是？",
+     "question": "函数 y 等于负 x 的平方加 2 的单调增区间是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "图象是开口向下的抛物线，对称轴是 y 轴，在 y 轴左侧函数值随 x 增大而增大，所以增区间是所有不大于 0 的实数。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "所有不小于 0 的实数"
+      },
+      {
+       "label": "B",
+       "text": "全体实数"
+      },
+      {
+       "label": "C",
+       "text": "所有不大于 0 的实数"
+      },
+      {
+       "label": "D",
+       "text": "所有大于 2 的实数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1018_q2",
+     "topicId": "msj_h1018",
+     "prompt": "函数 f(x) 等于 x 的平方减 1 在区间 0 到正无穷上是？",
+     "question": "函数 f(x) 等于 x 的平方减 1 在区间 0 到正无穷上是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "在 0 到正无穷上自变量越大，平方越大，函数值也越大，所以函数在该区间上是增函数。",
+     "answer": "D",
+     "options": [
+      {
+       "label": "A",
+       "text": "减函数"
+      },
+      {
+       "label": "B",
+       "text": "常数函数"
+      },
+      {
+       "label": "C",
+       "text": "先减后增的函数"
+      },
+      {
+       "label": "D",
+       "text": "增函数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1018_q3",
+     "topicId": "msj_h1018",
+     "prompt": "函数 y 等于 x 的平方减 2x 的最小值是？",
+     "question": "函数 y 等于 x 的平方减 2x 的最小值是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "配方得 y 等于（x 减 1）的平方减 1，平方项不小于 0，所以函数值不小于负 1，当 x 等于 1 时取到最小值。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "负 1"
+      },
+      {
+       "label": "B",
+       "text": "0"
+      },
+      {
+       "label": "C",
+       "text": "1"
+      },
+      {
+       "label": "D",
+       "text": "负 2"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1018_q4",
+     "topicId": "msj_h1018",
+     "prompt": "函数 y 等于 x 分之 1 在区间 1 到 3 上的最小值是？",
+     "question": "函数 y 等于 x 分之 1 在区间 1 到 3 上的最小值是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "该函数在正数区间上单调递减，自变量越大函数值越小，所以 x 等于 3 时取到最小值 1/3。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "1/3"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "不存在"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1018_q5",
+     "topicId": "msj_h1018",
+     "prompt": "若对区间 I 上任意两个值 x1 小于 x2，都有 f(x1) 小于 f(x2)，则 f(x) 在区间 I 上是＿＿函数。",
+     "question": "若对区间 I 上任意两个值 x1 小于 x2，都有 f(x1) 小于 f(x2)，则 f(x) 在区间 I 上是＿＿函数。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "这正是增函数的定义。定义强调任意两个值，不能用几个特殊值的大小关系代替。",
+     "answer": "增"
+    },
+    {
+     "id": "msj_h1018_q6",
+     "topicId": "msj_h1018",
+     "prompt": "函数 y 等于 x 的平方减 2x 在区间 0 到 3 上的最大值是多少？",
+     "question": "函数 y 等于 x 的平方减 2x 在区间 0 到 3 上的最大值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "函数图象开口向上，对称轴为 x 等于 1，在区间 0 到 3 上端点 3 离对称轴更远，代入得 9 减 6 等于 3。",
+     "answer": "3",
+     "verify": "{\"type\": \"num\", \"value\": 3}"
+    },
+    {
+     "id": "msj_h1018_q7",
+     "topicId": "msj_h1018",
+     "prompt": "函数 y 等于负 x 的平方加 2 的最大值是多少？",
+     "question": "函数 y 等于负 x 的平方加 2 的最大值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "负 x 的平方不大于 0，所以函数值不大于 2，当 x 等于 0 时取到最大值 2。",
+     "answer": "2",
+     "verify": "{\"type\": \"num\", \"value\": 2}"
+    },
+    {
+     "id": "msj_h1018_q8",
+     "topicId": "msj_h1018",
+     "prompt": "用单调性定义证明函数 f(x) 等于负 2x 加 1 在实数集上是减函数。",
+     "question": "用单调性定义证明函数 f(x) 等于负 2x 加 1 在实数集上是减函数。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "用定义证明要先设出任意两个大小已知的自变量，再作差并判断符号，结论对任意取值都成立才说明函数单调。",
+     "answer": "任取 x1 小于 x2，则 f(x1) 减 f(x2) 等于负 2 倍 x1 加 1 减去负 2 倍 x2 加 1，等于 2 倍（x2 减 x1），它大于 0，所以 f(x1) 大于 f(x2)，故函数是减函数。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1019",
+   "page": 123,
+   "description": "奇函数与偶函数的定义、图象特征以及奇偶性的判定方法",
+   "mastery_criteria": [
+    "会用定义判断函数的奇偶性",
+    "能利用图象的对称性解决简单问题"
+   ],
+   "misconceptions": [
+    "判断奇偶性时忽略定义域是否关于原点对称",
+    "只看图象关于 y 轴对称就断定是偶函数而不检验定义域"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1019_q1",
+     "topicId": "msj_h1019",
+     "prompt": "函数 f(x) 等于 x 的平方减 1 是？",
+     "question": "函数 f(x) 等于 x 的平方减 1 是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "定义域是全体实数，且 f 在负 x 处的值等于 x 的平方减 1，等于 f(x)，所以是偶函数。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "偶函数"
+      },
+      {
+       "label": "B",
+       "text": "奇函数"
+      },
+      {
+       "label": "C",
+       "text": "既不是奇函数也不是偶函数"
+      },
+      {
+       "label": "D",
+       "text": "既是奇函数又是偶函数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1019_q2",
+     "topicId": "msj_h1019",
+     "prompt": "已知函数 f(x) 等于 2x，它是什么函数？",
+     "question": "已知函数 f(x) 等于 2x，它是什么函数？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "定义域是全体实数，且 f 在负 x 处的值等于负 2x，等于负的 f(x)，所以是奇函数。",
+     "answer": "D",
+     "options": [
+      {
+       "label": "A",
+       "text": "偶函数"
+      },
+      {
+       "label": "B",
+       "text": "常数函数"
+      },
+      {
+       "label": "C",
+       "text": "既不是奇函数也不是偶函数"
+      },
+      {
+       "label": "D",
+       "text": "奇函数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1019_q3",
+     "topicId": "msj_h1019",
+     "prompt": "函数 f(x) 等于（x 减 1）的平方是？",
+     "question": "函数 f(x) 等于（x 减 1）的平方是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "f 在 1 处的值等于 0，f 在负 1 处的值等于 4，既不相等也不互为相反数，所以既不是奇函数也不是偶函数。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "奇函数"
+      },
+      {
+       "label": "B",
+       "text": "偶函数"
+      },
+      {
+       "label": "C",
+       "text": "既不是奇函数也不是偶函数"
+      },
+      {
+       "label": "D",
+       "text": "在 x 大于 0 时为偶函数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1019_q4",
+     "topicId": "msj_h1019",
+     "prompt": "奇函数的图象一定关于什么对称？",
+     "question": "奇函数的图象一定关于什么对称？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由 f 在负 x 处的值等于负的 f(x)，点（x，y）与点（负 x，负 y）都在图象上，所以图象关于原点对称。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "y 轴"
+      },
+      {
+       "label": "B",
+       "text": "原点"
+      },
+      {
+       "label": "C",
+       "text": "直线 y 等于 x"
+      },
+      {
+       "label": "D",
+       "text": "直线 x 等于 1"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1019_q5",
+     "topicId": "msj_h1019",
+     "prompt": "偶函数 f(x) 满足 f 在负 x 处的值等于＿＿。",
+     "question": "偶函数 f(x) 满足 f 在负 x 处的值等于＿＿。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "偶函数的定义就是自变量取一对相反数时函数值相等，所以 f 在负 x 处的值等于 f 在 x 处的值。",
+     "answer": "f 在 x 处的值"
+    },
+    {
+     "id": "msj_h1019_q6",
+     "topicId": "msj_h1019",
+     "prompt": "已知 f(x) 等于 x 的立方加 5x，则 f 在负 1 处的值是多少？",
+     "question": "已知 f(x) 等于 x 的立方加 5x，则 f 在负 1 处的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把 x 等于负 1 代入得负 1 的立方加 5 乘负 1，即负 1 减 5，等于负 6。",
+     "answer": "-6",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": -1}, {\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 5}]}]}"
+    },
+    {
+     "id": "msj_h1019_q7",
+     "topicId": "msj_h1019",
+     "prompt": "已知 f(x) 等于 2 倍 x 的绝对值，则 f 在负 3 处的值是多少？",
+     "question": "已知 f(x) 等于 2 倍 x 的绝对值，则 f 在负 3 处的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "负 3 的绝对值等于 3，乘 2 得 6，所以函数值为 6，这也体现了偶函数的对称性。",
+     "answer": "6",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_h1019_q8",
+     "topicId": "msj_h1019",
+     "prompt": "判断函数 f(x) 等于 x 的立方加 5x 的奇偶性，并写出判断过程。",
+     "question": "判断函数 f(x) 等于 x 的立方加 5x 的奇偶性，并写出判断过程。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "判断奇偶性要分两步：先看定义域是否关于原点对称，再比较 f 在负 x 处的值与 f(x) 的关系。",
+     "answer": "函数的定义域是全体实数，且对任意实数 x，f 在负 x 处的值等于负 x 的立方加 5 乘负 x，等于负的（x 的立方加 5x），即等于负的 f(x)，所以它是奇函数。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1020",
+   "page": 129,
+   "description": "两个函数的和、积以及复合函数的单调性规律",
+   "mastery_criteria": [
+    "会判断两个函数之和的单调性",
+    "会按内层与外层的单调性判断复合函数的单调性"
+   ],
+   "misconceptions": [
+    "认为两个增函数之积一定是增函数而不考虑函数值的正负",
+    "判断复合函数的单调性时只看外层函数"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "msj_h1020_q1",
+     "topicId": "msj_h1020",
+     "prompt": "若 f(x) 与 g(x) 都是增函数，则 f(x) 加 g(x) 在其定义域上是？",
+     "question": "若 f(x) 与 g(x) 都是增函数，则 f(x) 加 g(x) 在其定义域上是？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "自变量增大时两个增函数的函数值都增大，它们的和也增大，所以和仍是增函数。",
+     "answer": "A",
+     "options": [
+      {
+       "label": "A",
+       "text": "增函数"
+      },
+      {
+       "label": "B",
+       "text": "减函数"
+      },
+      {
+       "label": "C",
+       "text": "不能确定"
+      },
+      {
+       "label": "D",
+       "text": "常数函数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1020_q2",
+     "topicId": "msj_h1020",
+     "prompt": "若 f(x) 是增函数，g(x) 是减函数，则 f(x) 加 g(x) 的单调性？",
+     "question": "若 f(x) 是增函数，g(x) 是减函数，则 f(x) 加 g(x) 的单调性？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两个函数变化趋势相反，和的变化取决于哪一个增加得更快，所以不能确定，需要具体分析。",
+     "answer": "C",
+     "options": [
+      {
+       "label": "A",
+       "text": "一定是增函数"
+      },
+      {
+       "label": "B",
+       "text": "一定是减函数"
+      },
+      {
+       "label": "C",
+       "text": "不能确定"
+      },
+      {
+       "label": "D",
+       "text": "一定没有单调性"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1020_q3",
+     "topicId": "msj_h1020",
+     "prompt": "若外层函数 f(x) 是增函数，内层函数 g(x) 是减函数，则复合函数 f(g(x)) 是？",
+     "question": "若外层函数 f(x) 是增函数，内层函数 g(x) 是减函数，则复合函数 f(g(x)) 是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "自变量增大时内层函数值减小，外层函数在较小的输入上给出较小的输出，所以复合函数的函数值随自变量增大而减小。",
+     "answer": "D",
+     "options": [
+      {
+       "label": "A",
+       "text": "增函数"
+      },
+      {
+       "label": "B",
+       "text": "常数函数"
+      },
+      {
+       "label": "C",
+       "text": "不能确定"
+      },
+      {
+       "label": "D",
+       "text": "减函数"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1020_q4",
+     "topicId": "msj_h1020",
+     "prompt": "若外层函数 f(x) 是减函数，内层函数 g(x) 也是减函数，则复合函数 f(g(x)) 是？",
+     "question": "若外层函数 f(x) 是减函数，内层函数 g(x) 也是减函数，则复合函数 f(g(x)) 是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "自变量增大时内层函数值减小，而外层是减函数，输入减小反而使输出增大，所以复合函数是增函数。",
+     "answer": "B",
+     "options": [
+      {
+       "label": "A",
+       "text": "减函数"
+      },
+      {
+       "label": "B",
+       "text": "增函数"
+      },
+      {
+       "label": "C",
+       "text": "不能确定"
+      },
+      {
+       "label": "D",
+       "text": "没有单调性"
+      }
+     ]
+    },
+    {
+     "id": "msj_h1020_q5",
+     "topicId": "msj_h1020",
+     "prompt": "f(x) 等于 2x 与 g(x) 等于 x 的平方在区间 0 到正无穷上都单调递增，则复合函数 f(g(x)) 在该区间上单调＿＿。",
+     "question": "f(x) 等于 2x 与 g(x) 等于 x 的平方在区间 0 到正无穷上都单调递增，则复合函数 f(g(x)) 在该区间上单调＿＿。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "内外两层都是增函数时，复合函数仍是增函数。本题中复合函数为 2 倍 x 的平方，在 0 到正无穷上递增。",
+     "answer": "递增"
+    },
+    {
+     "id": "msj_h1020_q6",
+     "topicId": "msj_h1020",
+     "prompt": "已知 f(x) 等于 2x，g(x) 等于 x 的平方，则 f(g(3)) 的值是多少？",
+     "question": "已知 f(x) 等于 2x，g(x) 等于 x 的平方，则 f(g(3)) 的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "先算内层函数值 g(3) 等于 9，再算外层函数值 f(9) 等于 18，所以复合函数值为 18。",
+     "answer": "18",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}]}"
+    },
+    {
+     "id": "msj_h1020_q7",
+     "topicId": "msj_h1020",
+     "prompt": "已知 f(x) 等于 x，g(x) 等于 x 加 1，则 f(g(2)) 的值是多少？",
+     "question": "已知 f(x) 等于 x，g(x) 等于 x 加 1，则 f(g(2)) 的值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "先算内层 g(2) 等于 3，再算外层 f(3) 等于 3，所以复合函数值为 3。",
+     "answer": "3",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 1}]}"
+    },
+    {
+     "id": "msj_h1020_q8",
+     "topicId": "msj_h1020",
+     "prompt": "举例说明两个函数一个为增函数、一个为减函数时，它们的和不一定具有确定的单调性。",
+     "question": "举例说明两个函数一个为增函数、一个为减函数时，它们的和不一定具有确定的单调性。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "说明不能确定的方法就是举出两个情形得到不同结论，从而说明仅由一增一减无法确定和的单调性。",
+     "answer": "取 f(x) 等于 x，g(x) 等于负 2x，前者增后者减，和为负 x 是减函数；再取 f(x) 等于 2x，g(x) 等于负 x，前者增后者减，和为 x 是增函数，所以和不能确定单调性。"
+    }
+   ]
+  }
+ ]
+}

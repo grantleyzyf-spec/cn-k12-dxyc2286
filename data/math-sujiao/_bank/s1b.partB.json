@@ -1,0 +1,2504 @@
+{
+ "tag": "s1b",
+ "book": "苏教版一年级下册",
+ "unit_points": [
+  {
+   "id": "msj_p014",
+   "type": "procedural",
+   "description": "在鸡蛋、蛋糕、邮票等情境中口算两位数加、减整十数和一位数，理解几个十加减几个十、几个一加减几个一，掌握进位加和退位减的道理，并能解决相关的实际问题。",
+   "mastery_criteria": [
+    "能正确口算两位数加、减整十数和一位数",
+    "能说清进位加和退位减的计算道理",
+    "能用加减法解决简单的实际问题"
+   ],
+   "questions": [
+    {
+     "id": "msj_p014_q1",
+     "topicId": "msj_p014",
+     "prompt": "计算34加20时，下面哪种想法是对的？",
+     "question": "计算34加20时，下面哪种想法是对的？",
+     "options": [
+      {
+       "label": "A",
+       "text": "34里面有3个十和4个一，3个十加2个十得5个十，再加4个一得54"
+      },
+      {
+       "label": "B",
+       "text": "把34加20算成34加2，得36"
+      },
+      {
+       "label": "C",
+       "text": "十位加2，个位也加2，得58"
+      },
+      {
+       "label": "D",
+       "text": "从34里去掉20，得14"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "20是2个十，两位数加整十数只要把十位上的数相加，个位上的4不动，30加20得50，50再加4得54，所以第一种想法是对的。"
+    },
+    {
+     "id": "msj_p014_q2",
+     "topicId": "msj_p014",
+     "prompt": "口算下面这道题：25加3，得数是多少？",
+     "question": "口算下面这道题：25加3，得数是多少？",
+     "answer": 28,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "25里面有2个十和5个一，3是一位数，先把5个一和3个一合起来得8个一，20加8得28。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 25}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_p014_q3",
+     "topicId": "msj_p014",
+     "prompt": "计算24加8时，个位4加8得12，接下来应该怎样算？",
+     "question": "计算24加8时，个位4加8得12，接下来应该怎样算？",
+     "options": [
+      {
+       "label": "A",
+       "text": "个位写12，十位不变，得212"
+      },
+      {
+       "label": "B",
+       "text": "把12个一换成1个十和2个一，20加10得30，30再加2得32"
+      },
+      {
+       "label": "C",
+       "text": "直接把个位写2，十位不动，得22"
+      },
+      {
+       "label": "D",
+       "text": "把24分成20和4，用8减4得4，得204"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "个位相加满十，要把10个一换成1个十进到十位，原来的2个十加上进的1个十得3个十，再加个位上剩下的2个一，得32。"
+    },
+    {
+     "id": "msj_p014_q4",
+     "topicId": "msj_p014",
+     "prompt": "小明有43张画片，送给同学30张，又买来8张，现在有多少张？",
+     "question": "小明有43张画片，送给同学30张，又买来8张，现在有多少张？",
+     "options": [
+      {
+       "label": "A",
+       "text": "43减30得13，13再减8得5张"
+      },
+      {
+       "label": "B",
+       "text": "43加30得73，73加8得81张"
+      },
+      {
+       "label": "C",
+       "text": "43减30得13，13加8得21张"
+      },
+      {
+       "label": "D",
+       "text": "43加8得51，51再减30得81张"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先求送人后还剩多少，43减30得13张；再把新买的8张添上去，13加8得21张，所以现在有21张画片。"
+    },
+    {
+     "id": "msj_p014_q5",
+     "topicId": "msj_p014",
+     "prompt": "计算51减15，个位1减5不够减，要从十位退1，得（　）。",
+     "question": "计算51减15，个位1减5不够减，要从十位退1，得（　）。",
+     "answer": 36,
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "个位1减5不够减，从十位退1当作10个一，11减5得6；十位退掉1个十还剩4个十，40加6得36。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p015",
+   "type": "application",
+   "description": "借助摆花片、看图比较等活动理解两个数量相差多少的关系，会用减法求相差数，会用加减法求比一个数多几或少几的数，并能解决生活中比多比少的实际问题。",
+   "mastery_criteria": [
+    "会求两个数相差多少",
+    "会求比一个数多几或少几的数",
+    "能用相差关系解决实际问题"
+   ],
+   "questions": [
+    {
+     "id": "msj_p015_q1",
+     "topicId": "msj_p015",
+     "prompt": "白兔有12只，黑兔有5只，求白兔比黑兔多多少只，用什么方法算？",
+     "question": "白兔有12只，黑兔有5只，求白兔比黑兔多多少只，用什么方法算？",
+     "options": [
+      {
+       "label": "A",
+       "text": "用减法，12减5"
+      },
+      {
+       "label": "B",
+       "text": "用加法，12加5"
+      },
+      {
+       "label": "C",
+       "text": "用减法，5减12"
+      },
+      {
+       "label": "D",
+       "text": "用乘法，12乘5"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "求一个数比另一个数多多少，要从大数里去掉和小数同样多的部分，所以用减法，列式是12减5。"
+    },
+    {
+     "id": "msj_p015_q2",
+     "topicId": "msj_p015",
+     "prompt": "红花有15朵，黄花有10朵，红花比黄花多多少朵？",
+     "question": "红花有15朵，黄花有10朵，红花比黄花多多少朵？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "求红花比黄花多多少朵，就是从15朵里去掉和10朵同样多的部分，15减10得5，多5朵。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 15}, {\"type\": \"num\", \"value\": 10}]}"
+    },
+    {
+     "id": "msj_p015_q3",
+     "topicId": "msj_p015",
+     "prompt": "求比12多3的数是多少，应该怎样算？",
+     "question": "求比12多3的数是多少，应该怎样算？",
+     "options": [
+      {
+       "label": "A",
+       "text": "12减3得9"
+      },
+      {
+       "label": "B",
+       "text": "12加3得15"
+      },
+      {
+       "label": "C",
+       "text": "3加3得6"
+      },
+      {
+       "label": "D",
+       "text": "12加12得24"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "比12多3，就是在12的基础上再添上3，所以用加法，12加3得15，这个数比12大。"
+    },
+    {
+     "id": "msj_p015_q4",
+     "topicId": "msj_p015",
+     "prompt": "红花有15朵，黄花有10朵，下面哪句话是对的？",
+     "question": "红花有15朵，黄花有10朵，下面哪句话是对的？",
+     "options": [
+      {
+       "label": "A",
+       "text": "红花比黄花少5朵"
+      },
+      {
+       "label": "B",
+       "text": "黄花比红花多10朵"
+      },
+      {
+       "label": "C",
+       "text": "红花比黄花多5朵"
+      },
+      {
+       "label": "D",
+       "text": "两种花一样多"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "15比10多5，所以红花比黄花多5朵；反过来说黄花比红花少5朵，两种花的朵数并不相同。"
+    },
+    {
+     "id": "msj_p015_q5",
+     "topicId": "msj_p015",
+     "prompt": "绘画作品有36幅，书法作品有30幅，书法作品比绘画作品少（　）幅。",
+     "question": "绘画作品有36幅，书法作品有30幅，书法作品比绘画作品少（　）幅。",
+     "answer": 6,
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "求书法作品比绘画作品少多少幅，就是从36幅里去掉和30幅同样多的部分，36减30得6，少6幅。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p016",
+   "type": "conceptual",
+   "description": "从不同位置观察茶壶、书包等物体，发现看到的样子可能不同，能辨认从不同位置看到的视图，并能按事情发生的先后顺序给一组照片编号。",
+   "mastery_criteria": [
+    "能说出从不同位置看到的物体样子可能不同",
+    "能辨认从不同位置看到的视图",
+    "能按时间顺序给照片编号"
+   ],
+   "questions": [
+    {
+     "id": "msj_p016_q1",
+     "topicId": "msj_p016",
+     "prompt": "从不同位置观察同一个茶壶，看到的样子（　）。",
+     "question": "从不同位置观察同一个茶壶，看到的样子（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "可能不同"
+      },
+      {
+       "label": "B",
+       "text": "一定相同"
+      },
+      {
+       "label": "C",
+       "text": "都只能看到壶嘴"
+      },
+      {
+       "label": "D",
+       "text": "都只能看到壶把"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "站在茶壶的不同位置，看到的部分不一样，有时只看到壶嘴，有时只看到壶把，所以看到的样子可能不同。"
+    },
+    {
+     "id": "msj_p016_q2",
+     "topicId": "msj_p016",
+     "prompt": "明明给进站的动车组拍了3张照片，按时间顺序编号，最后一张是几号？",
+     "question": "明明给进站的动车组拍了3张照片，按时间顺序编号，最后一张是几号？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "三张照片按时间先后编号是1号、2号、3号，最后拍的那张排在最后，所以编3号。",
+     "verify": "{\"type\": \"num\", \"value\": 3}"
+    },
+    {
+     "id": "msj_p016_q3",
+     "topicId": "msj_p016",
+     "prompt": "动车组进站时，最先拍到的那张照片里，动车组（　）。",
+     "question": "动车组进站时，最先拍到的那张照片里，动车组（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "离得近，看起来大"
+      },
+      {
+       "label": "B",
+       "text": "离得远，看起来小"
+      },
+      {
+       "label": "C",
+       "text": "已经停在站台上"
+      },
+      {
+       "label": "D",
+       "text": "只露出半节车厢"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "动车组从远处开进站，先拍的时候离得远，看起来小；后拍的时候离得近，看起来大。"
+    },
+    {
+     "id": "msj_p016_q4",
+     "topicId": "msj_p016",
+     "prompt": "小军和小丽面对面围着茶壶看，两人看到的样子（　）。",
+     "question": "小军和小丽面对面围着茶壶看，两人看到的样子（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "完全相同"
+      },
+      {
+       "label": "B",
+       "text": "都只看到壶嘴"
+      },
+      {
+       "label": "C",
+       "text": "壶嘴和壶把的左右位置相反"
+      },
+      {
+       "label": "D",
+       "text": "都看不到壶把"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两人面对面站立，看到的都是壶嘴和壶把，但左右方向正好相反，所以样子并不完全相同。"
+    },
+    {
+     "id": "msj_p016_q5",
+     "topicId": "msj_p016",
+     "prompt": "动车组出站时，按时间顺序拍的照片里，动车组离车站越来越（　）。",
+     "question": "动车组出站时，按时间顺序拍的照片里，动车组离车站越来越（　）。",
+     "answer": "远",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "出站时动车组从站台开走，越开越远，照片里看起来也越来越小，所以离车站越来越远。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "msj_p1083",
+   "page": null,
+   "type": "procedural",
+   "description": "结合一共有多少个鸡蛋的情境，用计数器和算式理解34加20的计算道理：在十位上添2个十，30加20得50，再加个位上的4，得54。",
+   "mastery_criteria": [
+    "能借助计数器说出两位数加整十数的口算过程",
+    "能正确口算两位数加整十数"
+   ],
+   "misconceptions": [
+    "把34加20算成34加2，只加个位不管十位",
+    "会写得数但说不清先算几个十加几个十"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1083_q1",
+     "topicId": "msj_p1083",
+     "prompt": "计算34加20时，要拨计数器，应该在哪一位上添珠？",
+     "question": "计算34加20时，要拨计数器，应该在哪一位上添珠？",
+     "options": [
+      {
+       "label": "A",
+       "text": "十位"
+      },
+      {
+       "label": "B",
+       "text": "个位"
+      },
+      {
+       "label": "C",
+       "text": "百位"
+      },
+      {
+       "label": "D",
+       "text": "哪一位都可以"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "20是2个十，加整十数要在十位上一颗一颗地添2颗珠，个位上的4颗珠不动。"
+    },
+    {
+     "id": "msj_p1083_q2",
+     "topicId": "msj_p1083",
+     "prompt": "口算下面这道题：30加20，得数是多少？",
+     "question": "口算下面这道题：30加20，得数是多少？",
+     "answer": 50,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "3个十加2个十得5个十，5个十就是50，所以30加20等于50。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 30}, {\"type\": \"num\", \"value\": 20}]}"
+    },
+    {
+     "id": "msj_p1083_q3",
+     "topicId": "msj_p1083",
+     "prompt": "计算34加20，下面哪种口算过程是对的？",
+     "question": "计算34加20，下面哪种口算过程是对的？",
+     "options": [
+      {
+       "label": "A",
+       "text": "先算34加2得36，再算36加10得46"
+      },
+      {
+       "label": "B",
+       "text": "先算30加20得50，再算50加4得54"
+      },
+      {
+       "label": "C",
+       "text": "先算4加20得24，再算24加3得27"
+      },
+      {
+       "label": "D",
+       "text": "先算34加10得44，再算44加2得46"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "34加20是加2个十，先把3个十和2个十合起来得50，再加上个位上的4，得54。"
+    },
+    {
+     "id": "msj_p1083_q4",
+     "topicId": "msj_p1083",
+     "prompt": "口算下面这道题：14加50，得数是多少？",
+     "question": "口算下面这道题：14加50，得数是多少？",
+     "answer": 64,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "50是5个十，1个十加5个十得6个十，也就是60，再加个位上的4，得64。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 14}, {\"type\": \"num\", \"value\": 50}]}"
+    },
+    {
+     "id": "msj_p1083_q5",
+     "topicId": "msj_p1083",
+     "prompt": "计算两位数加整十数，十位上的数相加，个位上的数（　）。",
+     "question": "计算两位数加整十数，十位上的数相加，个位上的数（　）。",
+     "answer": "不变",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "加的是整十数，只有十位上的数变了，个位上的数原样不动，所以个位上的数不变。"
+    },
+    {
+     "id": "msj_p1083_q6",
+     "topicId": "msj_p1083",
+     "prompt": "果园里有35棵苹果树，又栽了40棵梨树，两种果树一共有多少棵？",
+     "question": "果园里有35棵苹果树，又栽了40棵梨树，两种果树一共有多少棵？",
+     "options": [
+      {
+       "label": "A",
+       "text": "35加4得39棵"
+      },
+      {
+       "label": "B",
+       "text": "40减35得5棵"
+      },
+      {
+       "label": "C",
+       "text": "35加40得75棵"
+      },
+      {
+       "label": "D",
+       "text": "30加40得70棵"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "求两种果树一共多少棵，要把35棵和40棵合起来，40是4个十，和3个十相加得7个十，再加5棵，得75棵。"
+    },
+    {
+     "id": "msj_p1083_q7",
+     "topicId": "msj_p1083",
+     "prompt": "口算下面这道题：28加40，得数是多少？",
+     "question": "口算下面这道题：28加40，得数是多少？",
+     "answer": 68,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "2个十加4个十得6个十，也就是60，再加上个位上的8，得68。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 28}, {\"type\": \"num\", \"value\": 40}]}"
+    },
+    {
+     "id": "msj_p1083_q8",
+     "topicId": "msj_p1083",
+     "prompt": "请你说一说，计算34加20可以怎样想、怎样算。",
+     "question": "请你说一说，计算34加20可以怎样想、怎样算。",
+     "answer": "34里面有3个十和4个一，20是2个十，先把3个十和2个十合起来是5个十，也就是50，再加上个位上的4，得54。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "34加20只要把十位上的数相加，个位不变；说清算理时要讲清3个十加2个十得5个十，再和4个一合起来。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1084",
+   "page": null,
+   "type": "procedural",
+   "description": "口算25加3时先把5个一和3个一合起来；遇到24加8这样个位相加满十的，先把4个一加8个一得12个一，换成1个十和2个一，再和2个十合起来得32。",
+   "mastery_criteria": [
+    "能用几个一加几个一说明两位数加一位数的口算过程",
+    "能正确口算两位数加一位数的进位加法"
+   ],
+   "misconceptions": [
+    "24加8把十位也当成加8，得数写成错的数",
+    "个位相加满十忘记向十位进1"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1084_q1",
+     "topicId": "msj_p1084",
+     "prompt": "计算25加3，第一步先算什么？",
+     "question": "计算25加3，第一步先算什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "先算5个一加3个一得8个一"
+      },
+      {
+       "label": "B",
+       "text": "先算2个十加3个十"
+      },
+      {
+       "label": "C",
+       "text": "先算5减3得2"
+      },
+      {
+       "label": "D",
+       "text": "先算20加3得23"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "25加3是一位数，个位上的5个一和3个一先合起来得8个一，十位上的2个十不变，得28。"
+    },
+    {
+     "id": "msj_p1084_q2",
+     "topicId": "msj_p1084",
+     "prompt": "口算下面这道题：5加3，得数是多少？",
+     "question": "口算下面这道题：5加3，得数是多少？",
+     "answer": 8,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "5个一和3个一合起来是8个一，所以5加3等于8，这是25加3的个位计算。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_p1084_q3",
+     "topicId": "msj_p1084",
+     "prompt": "计算24加8时，个位上4加8得12，接下来怎样算？",
+     "question": "计算24加8时，个位上4加8得12，接下来怎样算？",
+     "options": [
+      {
+       "label": "A",
+       "text": "个位写12，十位不变，得212"
+      },
+      {
+       "label": "B",
+       "text": "把12个一换成1个十和2个一，20加10得30，30再加2得32"
+      },
+      {
+       "label": "C",
+       "text": "直接把个位写成2，十位不动，得22"
+      },
+      {
+       "label": "D",
+       "text": "把8分成6和2，先算24减6得18"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "个位相加满十要进1，12个一是1个十和2个一；20加进的10得30，30再加2得32。"
+    },
+    {
+     "id": "msj_p1084_q4",
+     "topicId": "msj_p1084",
+     "prompt": "口算下面这道题：56加4，得数是多少？",
+     "question": "口算下面这道题：56加4，得数是多少？",
+     "answer": 60,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "个位上6加4得10，满十要向十位进1，5个十加进的1个十得6个十，也就是60。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 56}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msj_p1084_q5",
+     "topicId": "msj_p1084",
+     "prompt": "个位上的数相加满十，要向十位（　）1。",
+     "question": "个位上的数相加满十，要向十位（　）1。",
+     "answer": "进",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "个位相加满十，10个一就是1个十，要把它进到十位上，所以是向十位进1。"
+    },
+    {
+     "id": "msj_p1084_q6",
+     "topicId": "msj_p1084",
+     "prompt": "一班有68个同学去春游，又来了2位老师，一共去了多少人？",
+     "question": "一班有68个同学去春游，又来了2位老师，一共去了多少人？",
+     "options": [
+      {
+       "label": "A",
+       "text": "68加2得60人"
+      },
+      {
+       "label": "B",
+       "text": "68减2得66人"
+      },
+      {
+       "label": "C",
+       "text": "68加2得70人"
+      },
+      {
+       "label": "D",
+       "text": "60加2得62人"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "求一共去了多少人，要把68人和2人合起来；个位8加2得10，向十位进1，得70人。"
+    },
+    {
+     "id": "msj_p1084_q7",
+     "topicId": "msj_p1084",
+     "prompt": "口算下面这道题：85加9，得数是多少？",
+     "question": "口算下面这道题：85加9，得数是多少？",
+     "answer": 94,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "个位5加9得14，写4向十位进1；十位上8加进的1得9，所以得数是94。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 85}, {\"type\": \"num\", \"value\": 9}]}"
+    },
+    {
+     "id": "msj_p1084_q8",
+     "topicId": "msj_p1084",
+     "prompt": "请你说一说24加8的口算过程。",
+     "question": "请你说一说24加8的口算过程。",
+     "answer": "把24分成20和4，先算4加8得12，12里面有1个十和2个一，20加10得30，30再加2得32。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "24加8先算个位，个位满十进1，再把2个十和进的1个十合起来，最后加上个位剩下的2。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1085",
+   "page": null,
+   "type": "procedural",
+   "description": "结合34减20的计算，先在十位上去掉2个十，30减20得10，再加个位上的4得14；与34加20比较，都是在十位上加减几个十。",
+   "mastery_criteria": [
+    "能借助计数器说明两位数减整十数的口算过程",
+    "能正确口算两位数减整十数"
+   ],
+   "misconceptions": [
+    "34减20算成34减2得32",
+    "减整十数时跑到个位上去珠"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1085_q1",
+     "topicId": "msj_p1085",
+     "prompt": "计算34减20，先算30减20得10，再算什么？",
+     "question": "计算34减20，先算30减20得10，再算什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "10加4得14"
+      },
+      {
+       "label": "B",
+       "text": "10减4得6"
+      },
+      {
+       "label": "C",
+       "text": "30加4得34"
+      },
+      {
+       "label": "D",
+       "text": "20加4得24"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "十位上3个十减2个十剩1个十，也就是10，个位上的4不变，10加4得14。"
+    },
+    {
+     "id": "msj_p1085_q2",
+     "topicId": "msj_p1085",
+     "prompt": "口算下面这道题：30减20，得数是多少？",
+     "question": "口算下面这道题：30减20，得数是多少？",
+     "answer": 10,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "3个十去掉2个十还剩1个十，1个十就是10，所以30减20等于10。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 30}, {\"type\": \"num\", \"value\": 20}]}"
+    },
+    {
+     "id": "msj_p1085_q3",
+     "topicId": "msj_p1085",
+     "prompt": "计算86减60，得数是多少？",
+     "question": "计算86减60，得数是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "80"
+      },
+      {
+       "label": "B",
+       "text": "26"
+      },
+      {
+       "label": "C",
+       "text": "20"
+      },
+      {
+       "label": "D",
+       "text": "86"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "86里面有8个十和6个一，减60就是减去6个十，8个十减6个十剩2个十，再加6个一，得26。"
+    },
+    {
+     "id": "msj_p1085_q4",
+     "topicId": "msj_p1085",
+     "prompt": "口算下面这道题：71减30，得数是多少？",
+     "question": "口算下面这道题：71减30，得数是多少？",
+     "answer": 41,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "7个十减3个十剩4个十，也就是40，个位上的1不变，40加1得41。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 71}, {\"type\": \"num\", \"value\": 30}]}"
+    },
+    {
+     "id": "msj_p1085_q5",
+     "topicId": "msj_p1085",
+     "prompt": "计算两位数减整十数，十位上的数相减，个位上的数（　）。",
+     "question": "计算两位数减整十数，十位上的数相减，个位上的数（　）。",
+     "answer": "不变",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "减的是整十数，只有十位上的数减少了，个位上的数没有动，所以个位上的数不变。"
+    },
+    {
+     "id": "msj_p1085_q6",
+     "topicId": "msj_p1085",
+     "prompt": "商店有82个气球，卖出50个，还剩多少个？",
+     "question": "商店有82个气球，卖出50个，还剩多少个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "82减5得77个"
+      },
+      {
+       "label": "B",
+       "text": "82加50得132个"
+      },
+      {
+       "label": "C",
+       "text": "82减50得32个"
+      },
+      {
+       "label": "D",
+       "text": "80减50得30个"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "求还剩多少个要从82个里去掉卖出的50个，8个十减5个十剩3个十，再加2个一，得32个。"
+    },
+    {
+     "id": "msj_p1085_q7",
+     "topicId": "msj_p1085",
+     "prompt": "口算下面这道题：60加12，得数是多少？",
+     "question": "口算下面这道题：60加12，得数是多少？",
+     "answer": 72,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "60是6个十，加12就是再加1个十和2个一，6个十加1个十得7个十，再加2个一，得72。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 60}, {\"type\": \"num\", \"value\": 12}]}"
+    },
+    {
+     "id": "msj_p1085_q8",
+     "topicId": "msj_p1085",
+     "prompt": "请你说一说，34减20可以怎样算。",
+     "question": "请你说一说，34减20可以怎样算。",
+     "answer": "34里面有3个十和4个一，20是2个十，3个十减2个十剩1个十，也就是10，再加上个位上的4，得14。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "两位数减整十数，只要十位上的数相减，个位上的数照写，说理时要讲清剩几个十。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1086",
+   "page": null,
+   "type": "procedural",
+   "description": "口算23减3时，3个一减3个一个也不剩，得20；遇到24减8这样个位不够减的，把24分成10和14，先用14减8得6，再和10合起来得16。",
+   "mastery_criteria": [
+    "能说明两位数减一位数时个位不够减的处理办法",
+    "能正确口算两位数减一位数的退位减法"
+   ],
+   "misconceptions": [
+    "24减8用8减4得4，把被减数和减数位置弄反",
+    "个位不够减时不退位，直接从十位减1"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1086_q1",
+     "topicId": "msj_p1086",
+     "prompt": "计算23减3，得数是多少？",
+     "question": "计算23减3，得数是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "20"
+      },
+      {
+       "label": "B",
+       "text": "26"
+      },
+      {
+       "label": "C",
+       "text": "23"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "23里面有2个十和3个一，3个一减3个一正好减完，剩下2个十，也就是20。"
+    },
+    {
+     "id": "msj_p1086_q2",
+     "topicId": "msj_p1086",
+     "prompt": "口算下面这道题：14减8，得数是多少？",
+     "question": "口算下面这道题：14减8，得数是多少？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "14可以看成10和4，4减8不够减，从10里去掉4还剩6，所以14减8得6。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 14}, {\"type\": \"num\", \"value\": 8}]}"
+    },
+    {
+     "id": "msj_p1086_q3",
+     "topicId": "msj_p1086",
+     "prompt": "计算24减8，个位上4减8不够减，应该怎么办？",
+     "question": "计算24减8，个位上4减8不够减，应该怎么办？",
+     "options": [
+      {
+       "label": "A",
+       "text": "用8减4得4，得数是4"
+      },
+      {
+       "label": "B",
+       "text": "把24分成10和14，先算14减8得6，再算10加6得16"
+      },
+      {
+       "label": "C",
+       "text": "十位也减1，得数是6"
+      },
+      {
+       "label": "D",
+       "text": "把8分成4和4，先算24减4得20"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "个位不够减要从十位退1，退下来的1个十和4合成14，14减8得6，再和剩下的10合起来得16。"
+    },
+    {
+     "id": "msj_p1086_q4",
+     "topicId": "msj_p1086",
+     "prompt": "口算下面这道题：30减6，得数是多少？",
+     "question": "口算下面这道题：30减6，得数是多少？",
+     "answer": 24,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "30的个位是0，0减6不够减，从3个十里退1个十变成10，10减6得4，还剩2个十，得24。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 30}, {\"type\": \"num\", \"value\": 6}]}"
+    },
+    {
+     "id": "msj_p1086_q5",
+     "topicId": "msj_p1086",
+     "prompt": "个位上的数不够减，要从十位退1，退下来的1个十是（　）个一。",
+     "question": "个位上的数不够减，要从十位退1，退下来的1个十是（　）个一。",
+     "answer": "10",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "十位上的1表示1个十，1个十就是10个一，退到个位上以后就可以和个位上的数合起来再减。"
+    },
+    {
+     "id": "msj_p1086_q6",
+     "topicId": "msj_p1086",
+     "prompt": "妈妈买了42个鸡蛋，吃了7个，还剩多少个？",
+     "question": "妈妈买了42个鸡蛋，吃了7个，还剩多少个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "42减7得45个"
+      },
+      {
+       "label": "B",
+       "text": "42加7得49个"
+      },
+      {
+       "label": "C",
+       "text": "42减7得35个"
+      },
+      {
+       "label": "D",
+       "text": "40减7得33个"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "求还剩多少个要从42个里去掉7个，个位2减7不够减，从十位退1，12减7得5，30加5得35个。"
+    },
+    {
+     "id": "msj_p1086_q7",
+     "topicId": "msj_p1086",
+     "prompt": "口算下面这道题：83减9，得数是多少？",
+     "question": "口算下面这道题：83减9，得数是多少？",
+     "answer": 74,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "个位3减9不够减，从十位退1，13减9得4；十位8退掉1还剩7，所以得74。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 83}, {\"type\": \"num\", \"value\": 9}]}"
+    },
+    {
+     "id": "msj_p1086_q8",
+     "topicId": "msj_p1086",
+     "prompt": "请你说一说24减8的口算过程。",
+     "question": "请你说一说24减8的口算过程。",
+     "answer": "24的个位是4，4减8不够减，把24分成10和14，用14减8得6，再和10合起来，得16。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "个位不够减先退位，把被减数分成一个整十数和十几，先算十几减一位数，再和整十数合起来。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1087",
+   "page": null,
+   "type": "application",
+   "description": "完成练习七里的圈一圈、比一比和解决问题：先说得数是几十多再算，比较两个算式的大小时先算出得数，并用加减法解决收集邮票、摘南瓜等实际问题。",
+   "mastery_criteria": [
+    "能先估计得数是几十多再计算",
+    "会比较两个算式的大小",
+    "能用加减法解决练习中的实际问题"
+   ],
+   "misconceptions": [
+    "比大小时只看数和运算符号，不先算得数",
+    "解决问题时不看清是合起来还是去掉"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1087_q1",
+     "topicId": "msj_p1087",
+     "prompt": "先说得数再计算：42加30得多少？",
+     "question": "先说得数再计算：42加30得多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "72"
+      },
+      {
+       "label": "B",
+       "text": "45"
+      },
+      {
+       "label": "C",
+       "text": "12"
+      },
+      {
+       "label": "D",
+       "text": "70"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "42是4个十和2个一，加30就是4个十加3个十得7个十，再加2个一，得72。"
+    },
+    {
+     "id": "msj_p1087_q2",
+     "topicId": "msj_p1087",
+     "prompt": "口算下面这道题：36加2，得数是多少？",
+     "question": "口算下面这道题：36加2，得数是多少？",
+     "answer": 38,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "36的个位6加2得8，十位上的3个十不变，所以36加2得38。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 36}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_p1087_q3",
+     "topicId": "msj_p1087",
+     "prompt": "比较大小：87减30和87减3，哪一个得数大？",
+     "question": "比较大小：87减30和87减3，哪一个得数大？",
+     "options": [
+      {
+       "label": "A",
+       "text": "87减30的得数大"
+      },
+      {
+       "label": "B",
+       "text": "87减3的得数大"
+      },
+      {
+       "label": "C",
+       "text": "两个得数一样大"
+      },
+      {
+       "label": "D",
+       "text": "不能比较"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "87减30得57，87减3得84，减去的数越大剩下的越少，所以87减3的得数大。"
+    },
+    {
+     "id": "msj_p1087_q4",
+     "topicId": "msj_p1087",
+     "prompt": "王小刚第一次收集了30枚邮票，第二次收集了22枚，两次一共收集了多少枚？",
+     "question": "王小刚第一次收集了30枚邮票，第二次收集了22枚，两次一共收集了多少枚？",
+     "answer": 52,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "求两次一共多少枚要把30枚和22枚合起来，3个十加2个十得5个十，再加2个一，得52枚。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 30}, {\"type\": \"num\", \"value\": 22}]}"
+    },
+    {
+     "id": "msj_p1087_q5",
+     "topicId": "msj_p1087",
+     "prompt": "13加20得三十多，91减40得（　）十多。",
+     "question": "13加20得三十多，91减40得（　）十多。",
+     "answer": "五",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "91减40，9个十减4个十剩5个十，个位上的1不变，得51，所以是五十多。"
+    },
+    {
+     "id": "msj_p1087_q6",
+     "topicId": "msj_p1087",
+     "prompt": "有48个南瓜，已经摘了6个，要求还剩多少个，怎样列式？",
+     "question": "有48个南瓜，已经摘了6个，要求还剩多少个，怎样列式？",
+     "options": [
+      {
+       "label": "A",
+       "text": "48加6，还剩54个"
+      },
+      {
+       "label": "B",
+       "text": "6加48，还剩54个"
+      },
+      {
+       "label": "C",
+       "text": "48减6，还剩42个"
+      },
+      {
+       "label": "D",
+       "text": "48减6，还剩54个"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "从48个里摘走6个，求剩下的要用减法，48减6得42，所以还剩42个南瓜。"
+    },
+    {
+     "id": "msj_p1087_q7",
+     "topicId": "msj_p1087",
+     "prompt": "书架上一共有36本书，借出20本，还剩多少本？",
+     "question": "书架上一共有36本书，借出20本，还剩多少本？",
+     "answer": 16,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "求还剩多少本要从36本里去掉借出的20本，3个十减2个十剩1个十，再加6本，得16本。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 36}, {\"type\": \"num\", \"value\": 20}]}"
+    },
+    {
+     "id": "msj_p1087_q8",
+     "topicId": "msj_p1087",
+     "prompt": "根据有52枚邮票、第一次收集了30枚这两个条件，请你提出一个问题并解答。",
+     "question": "根据有52枚邮票、第一次收集了30枚这两个条件，请你提出一个问题并解答。",
+     "answer": "问题：第二次收集了多少枚？解答：52减30得22枚。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "已知两次一共52枚和第一次的30枚，可以求第二次收集的枚数，用总数减去第一次的数量。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1088",
+   "page": null,
+   "type": "application",
+   "description": "完成练习八的计算与实际问题：圈一圈算一算38加5和42减7，填大于小于或等于，填表求还剩多少，解决折纸鹤、纸箱装皮球等问题。",
+   "mastery_criteria": [
+    "能正确计算两位数加减一位数的式题",
+    "能填表求卖出后剩下的数量",
+    "能判断物品能不能全部装下"
+   ],
+   "misconceptions": [
+    "比较算式大小时直接按运算符号判断",
+    "把能装下与装不下弄反，只看两个数谁大"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1088_q1",
+     "topicId": "msj_p1088",
+     "prompt": "圈一圈算一算：38加5等于多少？",
+     "question": "圈一圈算一算：38加5等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "43"
+      },
+      {
+       "label": "B",
+       "text": "33"
+      },
+      {
+       "label": "C",
+       "text": "42"
+      },
+      {
+       "label": "D",
+       "text": "45"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "个位8加5得13，写3向十位进1，十位3加进的1得4，所以38加5得43。"
+    },
+    {
+     "id": "msj_p1088_q2",
+     "topicId": "msj_p1088",
+     "prompt": "口算下面这道题：42减7，得数是多少？",
+     "question": "口算下面这道题：42减7，得数是多少？",
+     "answer": 35,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "个位2减7不够减，从十位退1，12减7得5，十位4退掉1还剩3，得35。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 42}, {\"type\": \"num\", \"value\": 7}]}"
+    },
+    {
+     "id": "msj_p1088_q3",
+     "topicId": "msj_p1088",
+     "prompt": "填表：商店原有56个水杯，卖出8个，还剩多少个？",
+     "question": "填表：商店原有56个水杯，卖出8个，还剩多少个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "64"
+      },
+      {
+       "label": "B",
+       "text": "48"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "56"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "求还剩多少个要从原有的56个里去掉卖出的8个，56减8得48，所以还剩48个。"
+    },
+    {
+     "id": "msj_p1088_q4",
+     "topicId": "msj_p1088",
+     "prompt": "小欣要折32只纸鹤，已经折了9只，还要折多少只？",
+     "question": "小欣要折32只纸鹤，已经折了9只，还要折多少只？",
+     "answer": 23,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "求还要折多少只要从32只里去掉已经折好的9只，个位2减9不够减，退位后12减9得3，得23只。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 32}, {\"type\": \"num\", \"value\": 9}]}"
+    },
+    {
+     "id": "msj_p1088_q5",
+     "topicId": "msj_p1088",
+     "prompt": "口算这道题：44加6，把得数填在括号里（　）。",
+     "question": "口算这道题：44加6，把得数填在括号里（　）。",
+     "answer": 50,
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "个位4加6得10，满十向十位进1，十位4加进的1得5，所以44加6得50。"
+    },
+    {
+     "id": "msj_p1088_q6",
+     "topicId": "msj_p1088",
+     "prompt": "一个纸箱能放25个皮球，现在有17个皮球，能全部放进这个纸箱吗？",
+     "question": "一个纸箱能放25个皮球，现在有17个皮球，能全部放进这个纸箱吗？",
+     "options": [
+      {
+       "label": "A",
+       "text": "不能，因为17比25大"
+      },
+      {
+       "label": "B",
+       "text": "不能，一定要两个纸箱"
+      },
+      {
+       "label": "C",
+       "text": "能，因为17比25小"
+      },
+      {
+       "label": "D",
+       "text": "说不清楚"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "一个纸箱能放25个，现有的17个比25个少，装得下还有空位，所以能全部放进这个纸箱。"
+    },
+    {
+     "id": "msj_p1088_q7",
+     "topicId": "msj_p1088",
+     "prompt": "口算下面这道题：83减9，得数是多少？",
+     "question": "口算下面这道题：83减9，得数是多少？",
+     "answer": 74,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "个位3减9不够减，从十位退1，13减9得4，十位8退掉1还剩7，得74。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 83}, {\"type\": \"num\", \"value\": 9}]}"
+    },
+    {
+     "id": "msj_p1088_q8",
+     "topicId": "msj_p1088",
+     "prompt": "商店原有46副手套，卖出9副，还剩多少副？请列式计算。",
+     "question": "商店原有46副手套，卖出9副，还剩多少副？请列式计算。",
+     "answer": "46减9得37副，还剩37副。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "求剩下多少用减法，个位6减9不够减，退位后16减9得7，十位4退掉1剩3，得37副。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1089",
+   "page": null,
+   "type": "reasoning",
+   "description": "整理本单元的口算方法：几个十加、减几个十，几个一加、减几个一；用同一组算式比较43加30、43加3、43加8的计算差别，弄清什么时候要进位、什么时候不退位。",
+   "mastery_criteria": [
+    "能用一句话概括本单元的口算方法",
+    "能区分加整十数与加一位数的计算差别"
+   ],
+   "misconceptions": [
+    "把43加30和43加3当成同一类题算",
+    "个位相加满十时不进位"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1089_q1",
+     "topicId": "msj_p1089",
+     "prompt": "计算43加30，是几个十加几个十？",
+     "question": "计算43加30，是几个十加几个十？",
+     "options": [
+      {
+       "label": "A",
+       "text": "4个十加3个十"
+      },
+      {
+       "label": "B",
+       "text": "3个一加3个十"
+      },
+      {
+       "label": "C",
+       "text": "4个十加3个一"
+      },
+      {
+       "label": "D",
+       "text": "3个一加3个一"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "43是4个十和3个一，30是3个十，加整十数就是十位与十位相加，即4个十加3个十。"
+    },
+    {
+     "id": "msj_p1089_q2",
+     "topicId": "msj_p1089",
+     "prompt": "口算下面这道题：43加30，得数是多少？",
+     "question": "口算下面这道题：43加30，得数是多少？",
+     "answer": 73,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "4个十加3个十得7个十，也就是70，再加个位上的3，得73。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 43}, {\"type\": \"num\", \"value\": 30}]}"
+    },
+    {
+     "id": "msj_p1089_q3",
+     "topicId": "msj_p1089",
+     "prompt": "43加3和43加30，下面哪一句说得对？",
+     "question": "43加3和43加30，下面哪一句说得对？",
+     "options": [
+      {
+       "label": "A",
+       "text": "两道题都是十位上的数相加"
+      },
+      {
+       "label": "B",
+       "text": "43加3是个位上的3加3，43加30是十位上的4个十加3个十"
+      },
+      {
+       "label": "C",
+       "text": "两道题得数一样"
+      },
+      {
+       "label": "D",
+       "text": "43加3是十位上的数相加，43加30是个位上的数相加"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "加3是一位数，只和个位上的3相加；加30是3个十，要和十位上的4个十相加，两道题得数并不相同。"
+    },
+    {
+     "id": "msj_p1089_q4",
+     "topicId": "msj_p1089",
+     "prompt": "口算下面这道题：43加3，得数是多少？",
+     "question": "口算下面这道题：43加3，得数是多少？",
+     "answer": 46,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "43的个位3加3得6，十位上的4个十不变，所以43加3得46。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 43}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_p1089_q5",
+     "topicId": "msj_p1089",
+     "prompt": "43加8，个位3加8得11，要向十位进（　）。",
+     "question": "43加8，个位3加8得11，要向十位进（　）。",
+     "answer": 1,
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "11里面有1个十和1个一，满十的部分要进到十位，所以向十位进1，得51。"
+    },
+    {
+     "id": "msj_p1089_q6",
+     "topicId": "msj_p1089",
+     "prompt": "口算下面这道题：43减8，得数是多少？",
+     "question": "口算下面这道题：43减8，得数是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "45"
+      },
+      {
+       "label": "B",
+       "text": "41"
+      },
+      {
+       "label": "C",
+       "text": "35"
+      },
+      {
+       "label": "D",
+       "text": "51"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "个位3减8不够减，从十位退1，13减8得5，十位4退掉1还剩3，所以43减8得35。"
+    },
+    {
+     "id": "msj_p1089_q7",
+     "topicId": "msj_p1089",
+     "prompt": "口算下面这道题：43减30，得数是多少？",
+     "question": "口算下面这道题：43减30，得数是多少？",
+     "answer": 13,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "4个十减3个十剩1个十，也就是10，再加个位上的3，得13。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 43}, {\"type\": \"num\", \"value\": 30}]}"
+    },
+    {
+     "id": "msj_p1089_q8",
+     "topicId": "msj_p1089",
+     "prompt": "请你说一说，43加30和43加3在计算方法上有什么不同。",
+     "question": "请你说一说，43加30和43加3在计算方法上有什么不同。",
+     "answer": "43加30是十位上的4个十和3个十相加，个位不变；43加3是个位上的3和3相加，十位不变，个位满十才向十位进1。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "两道题加的位置不同，加整十数改变十位，加一位数改变个位，个位满十时才进位。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1090",
+   "page": null,
+   "type": "reasoning",
+   "description": "对照本单元的评价表反思学习情况，检查是否会用小方块和计数器说明算理、能否正确计算两位数加减整十数和一位数，并尝试解决51减15这样的退位减法问题。",
+   "mastery_criteria": [
+    "能对照评价表说清自己的掌握情况",
+    "能解决51减15这类需要连续退位的计算"
+   ],
+   "misconceptions": [
+    "认为评价表只要打星，不用说自己哪里还不会",
+    "51减15只退一次位就开始减十位"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1090_q1",
+     "topicId": "msj_p1090",
+     "prompt": "本单元的评价与反思中提到，可以用什么帮助理解计算的道理？",
+     "question": "本单元的评价与反思中提到，可以用什么帮助理解计算的道理？",
+     "options": [
+      {
+       "label": "A",
+       "text": "小方块和计数器"
+      },
+      {
+       "label": "B",
+       "text": "只用眼睛看"
+      },
+      {
+       "label": "C",
+       "text": "用尺子量"
+      },
+      {
+       "label": "D",
+       "text": "用钟表看时间"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材的评价表里写着会用小方块、计数器帮助理解计算的道理，摆一摆、拨一拨就能看清几个十和几个一。"
+    },
+    {
+     "id": "msj_p1090_q2",
+     "topicId": "msj_p1090",
+     "prompt": "口算下面这道题：51减15，得数是多少？",
+     "question": "口算下面这道题：51减15，得数是多少？",
+     "answer": 36,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "把51分成40和11，11减5得6；40减10得30；30加6得36，所以51减15等于36。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 51}, {\"type\": \"num\", \"value\": 15}]}"
+    },
+    {
+     "id": "msj_p1090_q3",
+     "topicId": "msj_p1090",
+     "prompt": "计算51减15，个位1减5不够减，从十位退1以后，个位是几减5？",
+     "question": "计算51减15，个位1减5不够减，从十位退1以后，个位是几减5？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "11"
+      },
+      {
+       "label": "C",
+       "text": "15"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "十位上的1个十退到个位就是10个一，和原来的1个一合成11，所以用11减5得6。"
+    },
+    {
+     "id": "msj_p1090_q4",
+     "topicId": "msj_p1090",
+     "prompt": "口算下面这道题：47加8，得数是多少？",
+     "question": "口算下面这道题：47加8，得数是多少？",
+     "answer": 55,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "个位7加8得15，写5向十位进1，十位4加进的1得5，所以47加8得55。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 47}, {\"type\": \"num\", \"value\": 8}]}"
+    },
+    {
+     "id": "msj_p1090_q5",
+     "topicId": "msj_p1090",
+     "prompt": "51减15，十位退1后还剩（　）个十。",
+     "question": "51减15，十位退1后还剩（　）个十。",
+     "answer": 4,
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "51的十位上有5个十，退1个十到个位后剩下4个十，计算十位时要用40减去10。"
+    },
+    {
+     "id": "msj_p1090_q6",
+     "topicId": "msj_p1090",
+     "prompt": "比一比：47加8和70减5，哪道题的得数大？",
+     "question": "比一比：47加8和70减5，哪道题的得数大？",
+     "options": [
+      {
+       "label": "A",
+       "text": "47加8的得数大"
+      },
+      {
+       "label": "B",
+       "text": "两道题一样大"
+      },
+      {
+       "label": "C",
+       "text": "70减5的得数大"
+      },
+      {
+       "label": "D",
+       "text": "不能比较"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先分别算出两道题的得数：47加8，个位7加8满十进1，得55；70减5，个位0减5不够减，退位后得65。65比55大，所以70减5的得数大。"
+    },
+    {
+     "id": "msj_p1090_q7",
+     "topicId": "msj_p1090",
+     "prompt": "口算下面这道题：70减5，得数是多少？",
+     "question": "口算下面这道题：70减5，得数是多少？",
+     "answer": 65,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "70的个位是0，0减5不够减，从7个十里退1个十变成10，10减5得5，还剩6个十，得65。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 70}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "msj_p1090_q8",
+     "topicId": "msj_p1090",
+     "prompt": "请你说一说51减15可以怎样算。",
+     "question": "请你说一说51减15可以怎样算。",
+     "answer": "把51分成40和11，先用11减5得6，再用40减10得30，最后30加6得36。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "51减15个位不够减，先退位把51分成40和11，分两步减，再把两次的结果合起来。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1091",
+   "page": null,
+   "type": "application",
+   "description": "结合白兔12只与黑兔5只的比较，理解比多多少就是求两个数相差多少，用12减5算得7；再通过15个和10个的比较，说明求少多少同样用减法。",
+   "mastery_criteria": [
+    "能用减法求两个数相差多少",
+    "能说清从大数里去掉同样多的部分就是相差数"
+   ],
+   "misconceptions": [
+    "求相差多少时把两个数合起来用加法",
+    "用小一点的数去减大一点的数"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1091_q1",
+     "topicId": "msj_p1091",
+     "prompt": "白兔有12只，黑兔有5只，白兔比黑兔多多少只？",
+     "question": "白兔有12只，黑兔有5只，白兔比黑兔多多少只？",
+     "options": [
+      {
+       "label": "A",
+       "text": "7只"
+      },
+      {
+       "label": "B",
+       "text": "17只"
+      },
+      {
+       "label": "C",
+       "text": "5只"
+      },
+      {
+       "label": "D",
+       "text": "12只"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "求白兔比黑兔多多少只，要从12只里去掉和5只同样多的部分，12减5得7，所以多7只。"
+    },
+    {
+     "id": "msj_p1091_q2",
+     "topicId": "msj_p1091",
+     "prompt": "口算下面这道题：12减5，得数是多少？",
+     "question": "口算下面这道题：12减5，得数是多少？",
+     "answer": 7,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "12可以看成10和2，2减5不够减，从10里去掉3剩7，所以12减5得7。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 12}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "msj_p1091_q3",
+     "topicId": "msj_p1091",
+     "prompt": "求12比5多多少，应该怎样想？",
+     "question": "求12比5多多少，应该怎样想？",
+     "options": [
+      {
+       "label": "A",
+       "text": "把12和5合起来"
+      },
+      {
+       "label": "B",
+       "text": "从12里面去掉和5同样多的部分"
+      },
+      {
+       "label": "C",
+       "text": "用5减12"
+      },
+      {
+       "label": "D",
+       "text": "把12加5再减1"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "比多多少就是看12里去掉和5同样多的部分以后还剩几，所以要减，列式是12减5。"
+    },
+    {
+     "id": "msj_p1091_q4",
+     "topicId": "msj_p1091",
+     "prompt": "红花有15朵，黄花有10朵，红花比黄花多多少朵？",
+     "question": "红花有15朵，黄花有10朵，红花比黄花多多少朵？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "求红花比黄花多多少朵，就是从15朵里去掉和10朵同样多的部分，15减10得5朵。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 15}, {\"type\": \"num\", \"value\": 10}]}"
+    },
+    {
+     "id": "msj_p1091_q5",
+     "topicId": "msj_p1091",
+     "prompt": "红花15朵，黄花10朵，黄花比红花少（　）朵。",
+     "question": "红花15朵，黄花10朵，黄花比红花少（　）朵。",
+     "answer": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "红花比黄花多5朵，反过来黄花就比红花少5朵，两道题的答案都是相差的5朵。"
+    },
+    {
+     "id": "msj_p1091_q6",
+     "topicId": "msj_p1091",
+     "prompt": "冰箱里有16盒鸡蛋和8盒鸭蛋，鸡蛋和鸭蛋相差多少盒？",
+     "question": "冰箱里有16盒鸡蛋和8盒鸭蛋，鸡蛋和鸭蛋相差多少盒？",
+     "options": [
+      {
+       "label": "A",
+       "text": "16加8得24盒"
+      },
+      {
+       "label": "B",
+       "text": "16减8得6盒"
+      },
+      {
+       "label": "C",
+       "text": "16减8得8盒"
+      },
+      {
+       "label": "D",
+       "text": "8加8得16盒"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "求两种蛋相差多少盒，用16减8，个位6减8不够减，退位后16减8得8，所以相差8盒。"
+    },
+    {
+     "id": "msj_p1091_q7",
+     "topicId": "msj_p1091",
+     "prompt": "小驴跳了23下，小兔跳了6下，小驴比小兔多跳多少下？",
+     "question": "小驴跳了23下，小兔跳了6下，小驴比小兔多跳多少下？",
+     "answer": 17,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "求多跳多少下，要从23下里去掉和6下同样多的部分，个位3减6不够减，退位后13减6得7，得17下。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 23}, {\"type\": \"num\", \"value\": 6}]}"
+    },
+    {
+     "id": "msj_p1091_q8",
+     "topicId": "msj_p1091",
+     "prompt": "请你说一说，求两个数相差多少为什么要用减法。",
+     "question": "请你说一说，求两个数相差多少为什么要用减法。",
+     "answer": "求两个数相差多少，就是看大数里去掉和小数同样多的部分以后还剩多少，所以用减法，得数就是相差的数。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "相差数是大数比小数多出来的部分，去掉同样多的部分要用减法，不能把两个数合起来。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1092",
+   "page": null,
+   "type": "application",
+   "description": "结合白兔12只、黑兔比白兔多3只的情境，理解求比12多3的数要把12和3合起来用加法得15；再看比12少4的情形，求比12少4的数要从12里去掉4得8。",
+   "mastery_criteria": [
+    "会求比一个数多几的数，用加法算",
+    "会求比一个数少几的数，用减法算"
+   ],
+   "misconceptions": [
+    "见多就用加法、见少就用减法，不看谁和谁比",
+    "把比12多3算成12减3"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1092_q1",
+     "topicId": "msj_p1092",
+     "prompt": "黑兔比白兔多3只，白兔有12只，黑兔有多少只？",
+     "question": "黑兔比白兔多3只，白兔有12只，黑兔有多少只？",
+     "options": [
+      {
+       "label": "A",
+       "text": "15只"
+      },
+      {
+       "label": "B",
+       "text": "9只"
+      },
+      {
+       "label": "C",
+       "text": "12只"
+      },
+      {
+       "label": "D",
+       "text": "3只"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "黑兔比白兔多3只，就是在12只的基础上再添3只，12加3得15，所以黑兔有15只。"
+    },
+    {
+     "id": "msj_p1092_q2",
+     "topicId": "msj_p1092",
+     "prompt": "口算下面这道题：12加3，得数是多少？",
+     "question": "口算下面这道题：12加3，得数是多少？",
+     "answer": 15,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "12是1个十和2个一，加3就是2个一加3个一得5个一，10加5得15。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 12}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_p1092_q3",
+     "topicId": "msj_p1092",
+     "prompt": "求比12多3的数是多少，应该怎样算？",
+     "question": "求比12多3的数是多少，应该怎样算？",
+     "options": [
+      {
+       "label": "A",
+       "text": "用12减3"
+      },
+      {
+       "label": "B",
+       "text": "把12和3合起来，用加法"
+      },
+      {
+       "label": "C",
+       "text": "用12加12"
+      },
+      {
+       "label": "D",
+       "text": "用3减12"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "比12多3，就是12再添上3，要把两个数合起来，用加法12加3得15。"
+    },
+    {
+     "id": "msj_p1092_q4",
+     "topicId": "msj_p1092",
+     "prompt": "果盘里有15颗樱桃，杨梅比樱桃多9颗，杨梅有多少颗？",
+     "question": "果盘里有15颗樱桃，杨梅比樱桃多9颗，杨梅有多少颗？",
+     "answer": 24,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "杨梅比樱桃多9颗，要在15颗的基础上再加9颗，个位5加9得14，向十位进1，得24颗。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 15}, {\"type\": \"num\", \"value\": 9}]}"
+    },
+    {
+     "id": "msj_p1092_q5",
+     "topicId": "msj_p1092",
+     "prompt": "比12少4的数是多少？把答案填在括号里（　）。",
+     "question": "比12少4的数是多少？把答案填在括号里（　）。",
+     "answer": 8,
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "比12少4，就是从12里去掉4，12减4得8，所以这个数是8。"
+    },
+    {
+     "id": "msj_p1092_q6",
+     "topicId": "msj_p1092",
+     "prompt": "李林走了32格，刘芳比李林少走6格，刘芳走了多少格？",
+     "question": "李林走了32格，刘芳比李林少走6格，刘芳走了多少格？",
+     "options": [
+      {
+       "label": "A",
+       "text": "32加6得38格"
+      },
+      {
+       "label": "B",
+       "text": "32减6得28格"
+      },
+      {
+       "label": "C",
+       "text": "32减6得26格"
+      },
+      {
+       "label": "D",
+       "text": "32减2得30格"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "刘芳比李林少走6格，要从32格里去掉6格，个位2减6不够减，退位后12减6得6，得26格。"
+    },
+    {
+     "id": "msj_p1092_q7",
+     "topicId": "msj_p1092",
+     "prompt": "一个数比35少5，这个数是多少？",
+     "question": "一个数比35少5，这个数是多少？",
+     "answer": 30,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "比35少5，就是从35里去掉5，35减5得30，这个数比35小。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 35}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "msj_p1092_q8",
+     "topicId": "msj_p1092",
+     "prompt": "请你说一说，求比35多5的数与求比35少5的数有什么不同。",
+     "question": "请你说一说，求比35多5的数与求比35少5的数有什么不同。",
+     "answer": "求比35多5的数，要把35和5合起来用加法，得40；求比35少5的数，要从35里去掉5用减法，得30。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "多几是在原数上添，用加法；少几是从原数里去掉，用减法，两题的结果一个比35大、一个比35小。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1093",
+   "page": null,
+   "type": "application",
+   "description": "用相差关系和比多比少的数量关系解决练习九里的问题：比较扫地与擦课桌的人数、绘画与书法作品的幅数，求红旗和绿旗各做多少面，并会自己提出新问题。",
+   "mastery_criteria": [
+    "能根据条件判断该用加法还是减法",
+    "能解决相差关系与比多比少的实际问题",
+    "能提出有关的数学问题"
+   ],
+   "misconceptions": [
+    "看到少就用减法，不看清是求相差数还是求另一个数量",
+    "求两种物品一共多少时仍然用减法"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1093_q1",
+     "topicId": "msj_p1093",
+     "prompt": "扫地的有11人，擦课桌的有6人，扫地的比擦课桌的多多少人？",
+     "question": "扫地的有11人，擦课桌的有6人，扫地的比擦课桌的多多少人？",
+     "options": [
+      {
+       "label": "A",
+       "text": "5人"
+      },
+      {
+       "label": "B",
+       "text": "17人"
+      },
+      {
+       "label": "C",
+       "text": "6人"
+      },
+      {
+       "label": "D",
+       "text": "11人"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "求扫地的比擦课桌的多多少人，要从11人里去掉和6人同样多的部分，11减6得5人。"
+    },
+    {
+     "id": "msj_p1093_q2",
+     "topicId": "msj_p1093",
+     "prompt": "口算下面这道题：11减6，得数是多少？",
+     "question": "口算下面这道题：11减6，得数是多少？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "11可以看成10和1，1减6不够减，从10里去掉5还剩5，所以11减6得5。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 11}, {\"type\": \"num\", \"value\": 6}]}"
+    },
+    {
+     "id": "msj_p1093_q3",
+     "topicId": "msj_p1093",
+     "prompt": "绘画作品有36幅，书法作品有30幅，两种作品一共有多少幅？",
+     "question": "绘画作品有36幅，书法作品有30幅，两种作品一共有多少幅？",
+     "options": [
+      {
+       "label": "A",
+       "text": "6幅"
+      },
+      {
+       "label": "B",
+       "text": "66幅"
+      },
+      {
+       "label": "C",
+       "text": "36幅"
+      },
+      {
+       "label": "D",
+       "text": "30幅"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "求两种作品一共多少幅要把36幅和30幅合起来，3个十加3个十得6个十，再加6幅，得66幅。"
+    },
+    {
+     "id": "msj_p1093_q4",
+     "topicId": "msj_p1093",
+     "prompt": "绘画作品有36幅，书法作品有30幅，书法作品比绘画作品少多少幅？",
+     "question": "绘画作品有36幅，书法作品有30幅，书法作品比绘画作品少多少幅？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "求书法作品比绘画作品少多少幅，用36减30，3个十减3个十没有了，个位上的6不变，所以少6幅。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 36}, {\"type\": \"num\", \"value\": 30}]}"
+    },
+    {
+     "id": "msj_p1093_q5",
+     "topicId": "msj_p1093",
+     "prompt": "绘画作品36幅中有20幅是老师创作的，其余是学生创作的，学生创作的有（　）幅。",
+     "question": "绘画作品36幅中有20幅是老师创作的，其余是学生创作的，学生创作的有（　）幅。",
+     "answer": 16,
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "从36幅里去掉老师创作的20幅，剩下的就是学生创作的，36减20得16幅。"
+    },
+    {
+     "id": "msj_p1093_q6",
+     "topicId": "msj_p1093",
+     "prompt": "手工小组做了30面黄旗，做的红旗比黄旗多26面，做了多少面红旗？",
+     "question": "手工小组做了30面黄旗，做的红旗比黄旗多26面，做了多少面红旗？",
+     "options": [
+      {
+       "label": "A",
+       "text": "30减26得4面"
+      },
+      {
+       "label": "B",
+       "text": "30加26得46面"
+      },
+      {
+       "label": "C",
+       "text": "30加26得56面"
+      },
+      {
+       "label": "D",
+       "text": "26加26得52面"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "红旗比黄旗多26面，要在30面的基础上再加26面，30加26，3个十加2个十得5个十，再加6面，得56面。"
+    },
+    {
+     "id": "msj_p1093_q7",
+     "topicId": "msj_p1093",
+     "prompt": "绿旗比黄旗少8面，黄旗有30面，绿旗有多少面？",
+     "question": "绿旗比黄旗少8面，黄旗有30面，绿旗有多少面？",
+     "answer": 22,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "绿旗比黄旗少8面，要从30面里去掉8面，个位0减8不够减，退位后10减8得2，还剩2个十，得22面。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 30}, {\"type\": \"num\", \"value\": 8}]}"
+    },
+    {
+     "id": "msj_p1093_q8",
+     "topicId": "msj_p1093",
+     "prompt": "扫地的有11人，擦课桌的比扫地的少5人，擦课桌的有多少人？请列式计算。",
+     "question": "扫地的有11人，擦课桌的比扫地的少5人，擦课桌的有多少人？请列式计算。",
+     "answer": "11减5得6人，擦课桌的有6人。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "擦课桌的比扫地的少5人，要从11人里去掉5人，用减法算，得6人。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1094",
+   "page": null,
+   "type": "conceptual",
+   "description": "四个小朋友围着茶壶观察：小华在一侧只看到壶嘴，小红在另一侧只看到壶把，小军和小丽面对面，都能看到壶嘴和壶把，说明从不同位置看到的物体样子可能不同。",
+   "mastery_criteria": [
+    "能说出从不同位置观察同一物体看到的样子可能不同",
+    "能判断站在某个位置能看到物体的哪一部分"
+   ],
+   "misconceptions": [
+    "认为不管站在哪里，看到的样子都一样",
+    "把面对面的两个人看到的样子当成完全相同"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1094_q1",
+     "topicId": "msj_p1094",
+     "prompt": "四个小朋友从不同位置观察同一个茶壶，看到的样子（　）。",
+     "question": "四个小朋友从不同位置观察同一个茶壶，看到的样子（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "可能不同"
+      },
+      {
+       "label": "B",
+       "text": "一定相同"
+      },
+      {
+       "label": "C",
+       "text": "完全看不到"
+      },
+      {
+       "label": "D",
+       "text": "只有一个人能看到"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "每个人站的位置不同，能看到茶壶的部分就不同，有的看到壶嘴，有的看到壶把，所以样子可能不同。"
+    },
+    {
+     "id": "msj_p1094_q2",
+     "topicId": "msj_p1094",
+     "prompt": "观察茶壶的活动里，一共有几个小朋友在观察？",
+     "question": "观察茶壶的活动里，一共有几个小朋友在观察？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "教材的观察活动里画了四个小朋友，分别是小华、小红、小军和小丽，一共4个人。",
+     "verify": "{\"type\": \"num\", \"value\": 4}"
+    },
+    {
+     "id": "msj_p1094_q3",
+     "topicId": "msj_p1094",
+     "prompt": "站在茶壶一侧的小华，看到的是（　）。",
+     "question": "站在茶壶一侧的小华，看到的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "壶嘴和壶把都看得清清楚楚"
+      },
+      {
+       "label": "B",
+       "text": "壶嘴，看不到壶把"
+      },
+      {
+       "label": "C",
+       "text": "壶把，看不到壶嘴"
+      },
+      {
+       "label": "D",
+       "text": "什么也看不到"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "小华站在能看到壶嘴的那一侧，茶壶的壶把被壶身挡住，所以只看到壶嘴，看不到壶把。"
+    },
+    {
+     "id": "msj_p1094_q4",
+     "topicId": "msj_p1094",
+     "prompt": "小军和小丽面对面观察茶壶，每人既看到壶嘴又看到壶把，两人一共看到几样？",
+     "question": "小军和小丽面对面观察茶壶，每人既看到壶嘴又看到壶把，两人一共看到几样？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "茶壶上有壶嘴和壶把两样，小军和小丽都能看到这两样，所以每人看到2样。",
+     "verify": "{\"type\": \"num\", \"value\": 2}"
+    },
+    {
+     "id": "msj_p1094_q5",
+     "topicId": "msj_p1094",
+     "prompt": "要认识一个物体，可以从（　）的位置去观察。",
+     "question": "要认识一个物体，可以从（　）的位置去观察。",
+     "answer": "不同",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "教材的结论是认识一个物体可以从不同的位置去观察，这样看到的样子才全面。"
+    },
+    {
+     "id": "msj_p1094_q6",
+     "topicId": "msj_p1094",
+     "prompt": "小军和小丽面对面看同一个茶壶，他们看到的样子（　）。",
+     "question": "小军和小丽面对面看同一个茶壶，他们看到的样子（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "完全一样"
+      },
+      {
+       "label": "B",
+       "text": "都看不到壶嘴"
+      },
+      {
+       "label": "C",
+       "text": "壶嘴和壶把的左右位置相反"
+      },
+      {
+       "label": "D",
+       "text": "只有一个人看得到"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两人面对面站着，看到的部分相同，但左右方向正好对调，所以壶嘴和壶把的左右位置相反。"
+    },
+    {
+     "id": "msj_p1094_q7",
+     "topicId": "msj_p1094",
+     "prompt": "观察小组有2个小朋友站在茶壶左边、2个小朋友站在右边，一共有多少个小朋友在观察茶壶？",
+     "question": "观察小组有2个小朋友站在茶壶左边、2个小朋友站在右边，一共有多少个小朋友在观察茶壶？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "左边2个小朋友加上右边2个小朋友，2加2得4，一共有4个小朋友在观察茶壶。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_p1094_q8",
+     "topicId": "msj_p1094",
+     "prompt": "请你说一说，为什么从不同位置看到的茶壶样子不一样。",
+     "question": "请你说一说，为什么从不同位置看到的茶壶样子不一样。",
+     "answer": "因为每个人站的位置不同，能看到茶壶的部分就不同，站在一侧只看到壶嘴，站在另一侧只看到壶把，所以看到的样子不一样。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "观察位置决定了能看到物体的哪一面，被挡住的部分看不到，位置一变看到的样子也跟着变。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1095",
+   "page": null,
+   "type": "conceptual",
+   "description": "先想清楚从不同位置看到的茶壶、书包和动车组的样子，再把照片与观察位置连起来；动车组进站时先拍到的离得远、看起来小，后拍到的离得近、看起来大。",
+   "mastery_criteria": [
+    "能把照片与观察位置对应起来",
+    "能按时间顺序给同一物体的一组照片编号"
+   ],
+   "misconceptions": [
+    "排序时只看照片大小，不管事情发生的先后",
+    "认为离得远的照片是后拍的"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1095_q1",
+     "topicId": "msj_p1095",
+     "prompt": "一列动车组进站时拍的三张照片里，最先拍到的那张动车组（　）。",
+     "question": "一列动车组进站时拍的三张照片里，最先拍到的那张动车组（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "离得远，看起来小"
+      },
+      {
+       "label": "B",
+       "text": "离得近，看起来大"
+      },
+      {
+       "label": "C",
+       "text": "已经停在站台上"
+      },
+      {
+       "label": "D",
+       "text": "只露出半节车厢"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "动车组从远处开向车站，先拍到的时候离得远，画面里的动车组看起来最小。"
+    },
+    {
+     "id": "msj_p1095_q2",
+     "topicId": "msj_p1095",
+     "prompt": "明明给进站的动车组拍了3张照片，按时间顺序编号，最先拍的那张编几号？",
+     "question": "明明给进站的动车组拍了3张照片，按时间顺序编号，最先拍的那张编几号？",
+     "answer": 1,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "按时间顺序编号时，最先发生的事情编1号，所以最先拍的那张照片编1号。",
+     "verify": "{\"type\": \"num\", \"value\": 1}"
+    },
+    {
+     "id": "msj_p1095_q3",
+     "topicId": "msj_p1095",
+     "prompt": "动车组进站时，最后拍到的那张照片里动车组（　）。",
+     "question": "动车组进站时，最后拍到的那张照片里动车组（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "看起来最小"
+      },
+      {
+       "label": "B",
+       "text": "看起来最大"
+      },
+      {
+       "label": "C",
+       "text": "和第一张一样大"
+      },
+      {
+       "label": "D",
+       "text": "完全看不清"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "越往后拍动车组离得越近，画面里看起来就越大，所以最后拍到的那张看起来最大。"
+    },
+    {
+     "id": "msj_p1095_q4",
+     "topicId": "msj_p1095",
+     "prompt": "明明按时间顺序给3张照片编号，最后一张编几号？",
+     "question": "明明按时间顺序给3张照片编号，最后一张编几号？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "三张照片按先后顺序编成1号、2号、3号，最后拍的那张排在最后，编3号。",
+     "verify": "{\"type\": \"num\", \"value\": 3}"
+    },
+    {
+     "id": "msj_p1095_q5",
+     "topicId": "msj_p1095",
+     "prompt": "按时间顺序给照片编号时，先发生的事情编（　）号。",
+     "question": "按时间顺序给照片编号时，先发生的事情编（　）号。",
+     "answer": 1,
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "编号的规矩是先前先后，最先发生的事情编1号，接着往后依次编2号、3号。"
+    },
+    {
+     "id": "msj_p1095_q6",
+     "topicId": "msj_p1095",
+     "prompt": "动车组出站时，明明又拍了三张照片，按时间顺序排列，照片里的动车组（　）。",
+     "question": "动车组出站时，明明又拍了三张照片，按时间顺序排列，照片里的动车组（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "越来越大"
+      },
+      {
+       "label": "B",
+       "text": "大小不变"
+      },
+      {
+       "label": "C",
+       "text": "越来越小"
+      },
+      {
+       "label": "D",
+       "text": "先变小再变大"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "出站时动车组从站台开走，离得越来越远，所以按时间顺序排列，照片里的动车组越来越小。"
+    },
+    {
+     "id": "msj_p1095_q7",
+     "topicId": "msj_p1095",
+     "prompt": "转盘上的飞机模型慢慢向右转，明明拍了3张照片并按时间顺序编号，中间那张编几号？",
+     "question": "转盘上的飞机模型慢慢向右转，明明拍了3张照片并按时间顺序编号，中间那张编几号？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "三张照片按时间顺序编号是1号、2号、3号，夹在中间的那张就是第二张，编2号。",
+     "verify": "{\"type\": \"num\", \"value\": 2}"
+    },
+    {
+     "id": "msj_p1095_q8",
+     "topicId": "msj_p1095",
+     "prompt": "请你说一说，怎样按时间顺序给一组照片编号。",
+     "question": "请你说一说，怎样按时间顺序给一组照片编号。",
+     "answer": "先弄清事情是怎样一步一步发生的，再看照片上物体的大小和位置的变化，先发生的编1号，接着编2号、3号。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "编号前先判断事情发生的先后，再看照片中物体离得远近、大小变化，就能把顺序排对。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1096",
+   "page": null,
+   "type": "reasoning",
+   "description": "完成观察物体的练习：看教室前面和后面有什么不同，把照片和几号照相机对应起来，给书包、无人机和轿车行驶的照片找位置与顺序，并连一连四幅图分别是谁看到的。",
+   "mastery_criteria": [
+    "能根据看到的样子判断照片是哪架照相机拍的",
+    "能按事情发生的顺序排列图片并说明理由"
+   ],
+   "misconceptions": [
+    "把从前面看到的样子和从后面看到的样子当成一样",
+    "排序时只凭感觉，说不出判断的理由"
+   ],
+   "questions": [
+    {
+     "id": "msj_p1096_q1",
+     "topicId": "msj_p1096",
+     "prompt": "站在教室的前面和后面看，看到的样子（　）。",
+     "question": "站在教室的前面和后面看，看到的样子（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "不一样"
+      },
+      {
+       "label": "B",
+       "text": "完全一样"
+      },
+      {
+       "label": "C",
+       "text": "都看不到"
+      },
+      {
+       "label": "D",
+       "text": "只有前面看得到"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "站在教室前面看到的是课桌的正面，站在后面看到的是背面，前后看到的样子并不相同。"
+    },
+    {
+     "id": "msj_p1096_q2",
+     "topicId": "msj_p1096",
+     "prompt": "教室里挂了3张从不同位置拍的照片，要给每张标上照相机的编号，一共有几张照片？",
+     "question": "教室里挂了3张从不同位置拍的照片，要给每张标上照相机的编号，一共有几张照片？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "题目里说挂了3张照片，一张照片对应一架照相机，所以一共有3张照片要标编号。",
+     "verify": "{\"type\": \"num\", \"value\": 3}"
+    },
+    {
+     "id": "msj_p1096_q3",
+     "topicId": "msj_p1096",
+     "prompt": "判断一张照片是几号照相机拍的，主要看（　）。",
+     "question": "判断一张照片是几号照相机拍的，主要看（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "照片的颜色新不新"
+      },
+      {
+       "label": "B",
+       "text": "照片上看到的是物体的哪一面"
+      },
+      {
+       "label": "C",
+       "text": "照片大不大"
+      },
+      {
+       "label": "D",
+       "text": "拍照的人是谁"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "不同位置的照相机拍到的是物体的不同面，看清照片上出现的是哪一面，就能找到对应的照相机。"
+    },
+    {
+     "id": "msj_p1096_q4",
+     "topicId": "msj_p1096",
+     "prompt": "4架无人机从不同位置给同一座小房子拍照，一共能拍到几个不同位置的样子？",
+     "question": "4架无人机从不同位置给同一座小房子拍照，一共能拍到几个不同位置的样子？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "4架无人机分别站在4个不同位置，每个位置看到的样子不一样，所以一共拍到4个不同位置的样子。",
+     "verify": "{\"type\": \"num\", \"value\": 4}"
+    },
+    {
+     "id": "msj_p1096_q5",
+     "topicId": "msj_p1096",
+     "prompt": "一辆轿车正驶向北京，三幅图按时间顺序编号，轿车离北京越来越（　）。",
+     "question": "一辆轿车正驶向北京，三幅图按时间顺序编号，轿车离北京越来越（　）。",
+     "answer": "近",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "轿车是向着北京开的，时间越往后走，离北京就越近，所以按时间顺序排，轿车离北京越来越近。"
+    },
+    {
+     "id": "msj_p1096_q6",
+     "topicId": "msj_p1096",
+     "prompt": "明明从滑梯上往下滑，拍了三张照片按时间顺序排列，明明是（　）。",
+     "question": "明明从滑梯上往下滑，拍了三张照片按时间顺序排列，明明是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "位置越来越高"
+      },
+      {
+       "label": "B",
+       "text": "三张照片完全一样"
+      },
+      {
+       "label": "C",
+       "text": "位置越来越低"
+      },
+      {
+       "label": "D",
+       "text": "先低后高"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "滑梯是从上往下滑的，时间越往后明明的位置越低，所以按时间顺序排列，明明的位置越来越低。"
+    },
+    {
+     "id": "msj_p1096_q7",
+     "topicId": "msj_p1096",
+     "prompt": "一辆汽车从面前驶过，小红拍了2张照片，第二张里的汽车看起来更大，第二张编几号？",
+     "question": "一辆汽车从面前驶过，小红拍了2张照片，第二张里的汽车看起来更大，第二张编几号？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "两张照片按时间顺序编号是1号和2号，后拍的那张编2号，画面里汽车看起来更大。",
+     "verify": "{\"type\": \"num\", \"value\": 2}"
+    },
+    {
+     "id": "msj_p1096_q8",
+     "topicId": "msj_p1096",
+     "prompt": "请你说一说，判断照片是哪架照相机拍的，可以怎样想。",
+     "question": "请你说一说，判断照片是哪架照相机拍的，可以怎样想。",
+     "answer": "先想清楚每架照相机站在物体的哪一边，再想从那个位置能看到物体的哪一面，最后把照片上看到的样子和位置一一对应起来。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "判断照片的来源要抓两点：照相机的方位和照片里露出的是哪一面，两边对上就是同一个位置。"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2700 @@
+{
+ "tag": "h2",
+ "book": "苏教版必修第二册",
+ "unit_points": [
+  {
+   "id": "msj_h010",
+   "description": "第9章平面向量：从力、位移等实际情境抽象出向量的概念，学习向量的加法、减法、数乘与数量积，建立平面向量基本定理与坐标表示，并用向量解决平面几何与物理中的问题。",
+   "mastery_criteria": [
+    "能说出向量的模、零向量、相等向量的含义",
+    "会作向量的加法、减法、数乘并计算数量积",
+    "能用坐标解决向量的平行、垂直与长度问题"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h010_q1",
+     "topicId": "msj_h010",
+     "prompt": "下列关于向量的说法中，正确的是",
+     "question": "下列关于向量的说法中，正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "向量的模是一个非负实数"
+      },
+      {
+       "label": "B",
+       "text": "向量可以比较大小"
+      },
+      {
+       "label": "C",
+       "text": "零向量没有方向"
+      },
+      {
+       "label": "D",
+       "text": "相等向量的起点必须相同"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "向量的模是向量的大小，它是一个非负实数；向量有方向，两个向量不能比较大小；零向量也有方向，规定它的方向是任意的；相等向量只要求长度相等、方向相同，与起点位置无关。"
+    },
+    {
+     "id": "msj_h010_q2",
+     "topicId": "msj_h010",
+     "prompt": "在平面直角坐标系中，已知点A(1，2)，B(4，6)，则向量AB的坐标是",
+     "question": "在平面直角坐标系中，已知点A(1，2)，B(4，6)，则向量AB的坐标是",
+     "options": [
+      {
+       "label": "A",
+       "text": "(负3，负4)"
+      },
+      {
+       "label": "B",
+       "text": "(3，4)"
+      },
+      {
+       "label": "C",
+       "text": "(5，8)"
+      },
+      {
+       "label": "D",
+       "text": "(4，3)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "向量的坐标等于终点坐标减去起点坐标，所以向量AB的横坐标为4减1等于3，纵坐标为6减2等于4，即向量AB的坐标是(3，4)。"
+    },
+    {
+     "id": "msj_h010_q3",
+     "topicId": "msj_h010",
+     "prompt": "已知向量a的坐标是(2，1)，向量b的坐标是(1，3)，则a与b的数量积等于",
+     "question": "已知向量a的坐标是(2，1)，向量b的坐标是(1，3)，则a与b的数量积等于",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "用坐标计算数量积，等于两个向量横坐标的积加上纵坐标的积，即2乘1加1乘3等于5。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 1}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 3}]}]}"
+    },
+    {
+     "id": "msj_h010_q4",
+     "topicId": "msj_h010",
+     "prompt": "若向量a的坐标是(2，3)，向量b的坐标是(x，6)，且a与b平行，则实数x的值为",
+     "question": "若向量a的坐标是(2，3)，向量b的坐标是(x，6)，且a与b平行，则实数x的值为",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两向量平行时，横坐标与纵坐标成比例，即2乘6等于3乘x，解得x等于4，所以选4。"
+    },
+    {
+     "id": "msj_h010_q5",
+     "topicId": "msj_h010",
+     "prompt": "用向量方法证明A，B，C三点共线，通常要写出哪两步？",
+     "question": "用向量方法证明A，B，C三点共线，通常要写出哪两步？",
+     "answer": "第一步用坐标写出向量AB与向量AC；第二步判断这两个向量是否平行，即存在实数λ使向量AB等于λ倍的向量AC；两个向量有公共点A，所以A，B，C三点共线。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "第一步求向量AB与向量AC的坐标，第二步判断这两个向量是否平行，也就是看是否存在实数λ使向量AB等于λ倍的向量AC；两者平行且有公共点A，三点就共线。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h011",
+   "description": "第10章三角恒等变换：先借助单位圆上两个向量的数量积推出两角差的余弦公式，再用换元与诱导公式推出两角和与差的余弦、正弦、正切公式；由此得到二倍角公式、半角公式、积化和差与和差化积公式，并把asinx加bcosx化成一个三角函数。",
+   "mastery_criteria": [
+    "能默写和角公式与倍角公式并用于求值",
+    "能由和角公式推出倍角公式与半角公式",
+    "会把asinx加bcosx化成同名三角函数并求最值"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "msj_h011_q1",
+     "topicId": "msj_h011",
+     "prompt": "两角差的余弦公式是",
+     "question": "两角差的余弦公式是",
+     "options": [
+      {
+       "label": "A",
+       "text": "cos(α减β)等于cosαcosβ减sinαsinβ"
+      },
+      {
+       "label": "B",
+       "text": "cos(α减β)等于sinαcosβ加cosαsinβ"
+      },
+      {
+       "label": "C",
+       "text": "cos(α减β)等于sinαsinβ减cosαcosβ"
+      },
+      {
+       "label": "D",
+       "text": "cos(α减β)等于cosαcosβ加sinαsinβ"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两角差的余弦公式是cos(α减β)等于cosαcosβ加sinαsinβ；符号与两角和的余弦公式相反，后者的中间是减号。"
+    },
+    {
+     "id": "msj_h011_q2",
+     "topicId": "msj_h011",
+     "prompt": "用两角差的正弦公式求sin15度的值，结果是",
+     "question": "用两角差的正弦公式求sin15度的值，结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "四分之根号六加根号二"
+      },
+      {
+       "label": "B",
+       "text": "四分之根号六减根号二"
+      },
+      {
+       "label": "C",
+       "text": "四分之根号二减根号六"
+      },
+      {
+       "label": "D",
+       "text": "四分之一"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "sin15度等于sin(45度减30度)，展开得sin45度cos30度减cos45度sin30度，即二分之根号二乘二分之根号三减二分之根号二乘二分之一，整理得四分之根号六减根号二。"
+    },
+    {
+     "id": "msj_h011_q3",
+     "topicId": "msj_h011",
+     "prompt": "已知cosα等于3/5，且α为锐角，则sinα的值为多少？",
+     "question": "已知cosα等于3/5，且α为锐角，则sinα的值为多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.6"
+      },
+      {
+       "label": "B",
+       "text": "0.75"
+      },
+      {
+       "label": "C",
+       "text": "0.8"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由同角三角函数关系，sinα的平方等于1减cosα的平方，即1减0.36等于0.64；α是锐角，正弦取正值，所以sinα等于0.8。"
+    },
+    {
+     "id": "msj_h011_q4",
+     "topicId": "msj_h011",
+     "prompt": "已知tanα等于1/2，tanβ等于1/3，则tan(α加β)的值为多少？",
+     "question": "已知tanα等于1/2，tanβ等于1/3，则tan(α加β)的值为多少？",
+     "answer": "1",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由两角和的正切公式，tan(α加β)等于tanα加tanβ除以1减tanαtanβ，即(1/2加1/3)除以(1减1/6)，等于(5/6)除以(5/6)，等于1。"
+    },
+    {
+     "id": "msj_h011_q5",
+     "topicId": "msj_h011",
+     "prompt": "由两角差的余弦公式出发，怎样推出两角和的余弦公式与两角和的正弦公式？",
+     "question": "由两角差的余弦公式出发，怎样推出两角和的余弦公式与两角和的正弦公式？",
+     "answer": "把两角差的余弦公式中的β换成负β，用cos(负β)等于cosβ、sin(负β)等于负sinβ，得两角和的余弦公式；再用诱导公式把sin(α加β)写成cos(90度减α减β)展开，得两角和的正弦公式。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "在两角差的余弦公式中用负β代替β，利用cos(负β)等于cosβ、sin(负β)等于负sinβ，就得到两角和的余弦公式；再利用诱导公式把正弦化为余弦，即sin(α加β)等于cos(90度减α减β)，展开整理得到两角和的正弦公式。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h012",
+   "description": "第11章解三角形：用向量的数量积推出余弦定理，再用余弦定理与三角形的面积公式推出正弦定理；余弦定理把三边与一个角联系起来，正弦定理把边与它所对角的正弦联系起来，两个定理都可以用来解三角形并解决测量中的实际问题。",
+   "mastery_criteria": [
+    "能默写余弦定理与正弦定理",
+    "会用两个定理求三角形的边、角与面积",
+    "能把测量问题转化为解三角形问题"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "msj_h012_q1",
+     "topicId": "msj_h012",
+     "prompt": "余弦定理中，a的平方等于",
+     "question": "余弦定理中，a的平方等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "b平方加c平方减2bc cosA"
+      },
+      {
+       "label": "B",
+       "text": "b平方加c平方加2bc cosA"
+      },
+      {
+       "label": "C",
+       "text": "b平方减c平方"
+      },
+      {
+       "label": "D",
+       "text": "b平方加c平方减2bc sinA"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "余弦定理：三角形任何一边的平方等于其他两边平方的和减去这两边与它们夹角的余弦的积的两倍，所以a的平方等于b平方加c平方减2bc cosA。"
+    },
+    {
+     "id": "msj_h012_q2",
+     "topicId": "msj_h012",
+     "prompt": "在三角形ABC中，b等于3，c等于1，A等于60度，则a的平方等于多少？",
+     "question": "在三角形ABC中，b等于3，c等于1，A等于60度，则a的平方等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "10"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "7"
+      },
+      {
+       "label": "D",
+       "text": "13"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由余弦定理，a的平方等于b平方加c平方减2bc cosA，即9加1减2乘3乘1乘0.5，等于10减3等于7，所以a的平方是7。"
+    },
+    {
+     "id": "msj_h012_q3",
+     "topicId": "msj_h012",
+     "prompt": "三边长分别为3，4，5的三角形是什么三角形？",
+     "question": "三边长分别为3，4，5的三角形是什么三角形？",
+     "answer": "直角三角形",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "3的平方加4的平方等于25，正好等于5的平方，满足勾股定理的逆定理，所以这个三角形是直角三角形。"
+    },
+    {
+     "id": "msj_h012_q4",
+     "topicId": "msj_h012",
+     "prompt": "利用余弦定理可以解决的两类解三角形问题是",
+     "question": "利用余弦定理可以解决的两类解三角形问题是",
+     "options": [
+      {
+       "label": "A",
+       "text": "已知两角和一边求其他边角"
+      },
+      {
+       "label": "B",
+       "text": "已知两边及其夹角求第三边、已知三边求角"
+      },
+      {
+       "label": "C",
+       "text": "已知三个角求三条边"
+      },
+      {
+       "label": "D",
+       "text": "已知一边一角求面积"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "余弦定理把三边与一个角联系起来，所以已知两边及其夹角可以求第三边，已知三边可以求各个角；已知两角与一边要用正弦定理。"
+    },
+    {
+     "id": "msj_h012_q5",
+     "topicId": "msj_h012",
+     "prompt": "用坐标法证明余弦定理的主要步骤是什么？",
+     "question": "用坐标法证明余弦定理的主要步骤是什么？",
+     "answer": "以A为原点、AB所在直线为x轴建系；写出B，C的坐标；用两点间距离公式算BC的平方；展开并把坐标化成边长与cosA，整理得余弦定理。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "以顶点A为原点、AB所在直线为x轴建立坐标系，写出B与C的坐标；用两点间距离公式算出BC的平方；展开后把坐标用边长与角A的余弦表示，整理就得到余弦定理。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h013",
+   "description": "第12章复数：为解决负数的开方问题引入虚数单位i，规定i的平方等于负1；形如a加bi（a，b为实数）的数叫复数，a是实部，b是虚部；复数可以按多项式的法则进行加减乘除，也可以在复平面内用点或向量表示，还可以写成三角形式并作乘除运算。",
+   "mastery_criteria": [
+    "能说出复数、实部、虚部与复数相等的含义",
+    "会进行复数的四则运算与共轭运算",
+    "能用复平面和三角形式描述复数"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h013_q1",
+     "topicId": "msj_h013",
+     "prompt": "引入虚数单位i时，教材规定它满足",
+     "question": "引入虚数单位i时，教材规定它满足",
+     "options": [
+      {
+       "label": "A",
+       "text": "i的平方等于1"
+      },
+      {
+       "label": "B",
+       "text": "i的平方等于负1"
+      },
+      {
+       "label": "C",
+       "text": "i等于负1"
+      },
+      {
+       "label": "D",
+       "text": "i的平方等于0"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "为了解决负数的开方问题，教材引入虚数单位i，并规定i的平方等于负1；这是整个复数运算的基础。"
+    },
+    {
+     "id": "msj_h013_q2",
+     "topicId": "msj_h013",
+     "prompt": "复数2加5i的虚部是多少？",
+     "question": "复数2加5i的虚部是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "5i"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "2加5i"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "复数a加bi中，a叫实部，b叫虚部，虚部是实数b而不是bi，所以2加5i的虚部是5。"
+    },
+    {
+     "id": "msj_h013_q3",
+     "topicId": "msj_h013",
+     "prompt": "复数z等于(1加2i)加(3减i)，则z的实部为多少？",
+     "question": "复数z等于(1加2i)加(3减i)，则z的实部为多少？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "复数相加时实部与实部相加、虚部与虚部相加，实部等于1加3等于4，虚部等于2减1等于1，所以z等于4加i，实部为4。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_h013_q4",
+     "topicId": "msj_h013",
+     "prompt": "两个复数相等的充要条件是",
+     "question": "两个复数相等的充要条件是",
+     "options": [
+      {
+       "label": "A",
+       "text": "模相等"
+      },
+      {
+       "label": "B",
+       "text": "虚部相等"
+      },
+      {
+       "label": "C",
+       "text": "实部相等"
+      },
+      {
+       "label": "D",
+       "text": "实部与虚部分别相等"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个复数相等的充要条件是它们的实部与虚部分别相等；只比较模或只比较一部分都不足以判断两个复数相等。"
+    },
+    {
+     "id": "msj_h013_q5",
+     "topicId": "msj_h013",
+     "prompt": "把实数集扩充到复数集，遵循了哪些原则？",
+     "question": "把实数集扩充到复数集，遵循了哪些原则？",
+     "answer": "原有运算与运算律继续适用；新数要能解决原数集解决不了的问题，如负数开方；新数集包含原数集，实数仍是复数。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "扩充后原有的运算与运算律仍然适用；新引入的数要能解决原来不能解决的问题，例如负数的开方；扩充后的新数集包含原来的数集，实数仍然是复数。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "msj_h1035",
+   "description": "向量概念：既有大小又有方向的量叫向量，向量的大小称为模；长度为0的向量叫零向量，长度为1的向量叫单位向量；方向相同或相反的非零向量叫平行向量，也叫共线向量；长度相等且方向相同的向量叫相等向量；两个向量夹角的范围是0度到180度。",
+   "mastery_criteria": [
+    "能判断一个量是不是向量",
+    "能说出模、零向量、单位向量的含义",
+    "能识别平行向量与相等向量"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1035_q1",
+     "topicId": "msj_h1035",
+     "prompt": "下列各量中，属于向量的是",
+     "question": "下列各量中，属于向量的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "力"
+      },
+      {
+       "label": "B",
+       "text": "质量"
+      },
+      {
+       "label": "C",
+       "text": "温度"
+      },
+      {
+       "label": "D",
+       "text": "时间"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "力既有大小又有方向，所以力是向量；质量、温度、时间都只有大小没有方向，是数量而不是向量。"
+    },
+    {
+     "id": "msj_h1035_q2",
+     "topicId": "msj_h1035",
+     "prompt": "关于单位向量，下列说法正确的是",
+     "question": "关于单位向量，下列说法正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "零向量的模等于1"
+      },
+      {
+       "label": "B",
+       "text": "单位向量的模等于0"
+      },
+      {
+       "label": "C",
+       "text": "单位向量的模等于1"
+      },
+      {
+       "label": "D",
+       "text": "单位向量不存在"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "长度等于1个单位长度的向量叫单位向量，所以单位向量的模等于1；零向量的模等于0，单位向量是存在的，它的方向可以任意。"
+    },
+    {
+     "id": "msj_h1035_q3",
+     "topicId": "msj_h1035",
+     "prompt": "长度为0的向量叫作什么向量？",
+     "question": "长度为0的向量叫作什么向量？",
+     "answer": "零向量",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材规定长度为0的向量叫零向量，记作0；零向量的方向是任意的，并且规定零向量与任一向量平行。"
+    },
+    {
+     "id": "msj_h1035_q4",
+     "topicId": "msj_h1035",
+     "prompt": "若向量a的模为3，向量b与a方向相反且模也是3，则向量b的模为多少？",
+     "question": "若向量a的模为3，向量b与a方向相反且模也是3，则向量b的模为多少？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "向量的模只与长度有关，与方向无关；向量b与a方向相反但长度相同，所以向量b的模仍然等于3。",
+     "verify": "{\"type\": \"num\", \"value\": 3}"
+    },
+    {
+     "id": "msj_h1035_q5",
+     "topicId": "msj_h1035",
+     "prompt": "关于平行向量，下列说法正确的是",
+     "question": "关于平行向量，下列说法正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "只有方向相同的向量才是平行向量"
+      },
+      {
+       "label": "B",
+       "text": "平行向量的模一定相等"
+      },
+      {
+       "label": "C",
+       "text": "零向量不与任何向量平行"
+      },
+      {
+       "label": "D",
+       "text": "方向相同或相反的非零向量是平行向量"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "方向相同或相反的非零向量叫平行向量，平行向量也叫共线向量；两个平行向量的模不一定相等；零向量与任一向量平行。"
+    },
+    {
+     "id": "msj_h1035_q6",
+     "topicId": "msj_h1035",
+     "prompt": "长度相等且方向相同的两个向量叫作什么向量？",
+     "question": "长度相等且方向相同的两个向量叫作什么向量？",
+     "answer": "相等向量",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "两个向量只要长度相等、方向相同，就称为相等向量，记作a等于b；相等向量与起点位置无关，可以自由平移。"
+    },
+    {
+     "id": "msj_h1035_q7",
+     "topicId": "msj_h1035",
+     "prompt": "下列说法中正确的是",
+     "question": "下列说法中正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "零向量没有模"
+      },
+      {
+       "label": "B",
+       "text": "零向量的方向是任意的"
+      },
+      {
+       "label": "C",
+       "text": "单位向量都相等"
+      },
+      {
+       "label": "D",
+       "text": "向量AB与向量BA相等"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "零向量的长度为0，方向任意，但它仍然是向量，有模；单位向量只要求模为1，方向可以不同，所以单位向量不一定相等；向量AB与向量BA方向相反，不相等。"
+    },
+    {
+     "id": "msj_h1035_q8",
+     "topicId": "msj_h1035",
+     "prompt": "为什么说向量与它的起点位置无关？请写出理由。",
+     "question": "为什么说向量与它的起点位置无关？请写出理由。",
+     "answer": "向量由大小和方向确定；平移不改变长度和方向，平移后仍是同一个向量；所以向量与起点位置无关，作向量时可任选起点。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "向量由大小和方向两个要素确定；把一个向量平移到别的位置，长度和方向都没有改变，所以还是同一个向量；因此作向量时可以自由选择起点。"
+    }
+   ],
+   "page": 5,
+   "misconceptions": [
+    "把向量的模与向量的方向混为一谈，认为模大的向量方向更明确",
+    "认为起点不同的两个向量一定不相等",
+    "把零向量当作没有方向的向量，或者认为零向量不是向量"
+   ]
+  },
+  {
+   "id": "msj_h1036",
+   "description": "向量运算：向量加法有三角形法则与平行四边形法则，向量减法是加法的逆运算，实数与向量相乘得到数乘向量，加法、减法与数乘统称向量的线性运算；两个非零向量的数量积等于它们模的乘积再乘夹角的余弦，数量积是一个实数。",
+   "mastery_criteria": [
+    "会用三角形法则和平行四边形法则作两个向量的和",
+    "会作两个向量的差与一个向量的数乘",
+    "会用数量积公式计算数量积并求夹角"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msj_h1036_q1",
+     "topicId": "msj_h1036",
+     "prompt": "把两个向量首尾相接，和向量是",
+     "question": "把两个向量首尾相接，和向量是",
+     "options": [
+      {
+       "label": "A",
+       "text": "由第一个向量的起点指向第二个向量的终点"
+      },
+      {
+       "label": "B",
+       "text": "由第二个向量的起点指向第一个向量的终点"
+      },
+      {
+       "label": "C",
+       "text": "由两个向量的公共点指向任意方向"
+      },
+      {
+       "label": "D",
+       "text": "长度等于两个向量模的和的向量"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "向量加法的三角形法则：把向量a的终点作为向量b的起点，则从a的起点指向b的终点的向量就是a与b的和，所以和向量由第一个向量的起点指向第二个向量的终点。"
+    },
+    {
+     "id": "msj_h1036_q2",
+     "topicId": "msj_h1036",
+     "prompt": "在三角形ABC中，向量AB加向量BC等于哪个向量？",
+     "question": "在三角形ABC中，向量AB加向量BC等于哪个向量？",
+     "options": [
+      {
+       "label": "A",
+       "text": "向量CA"
+      },
+      {
+       "label": "B",
+       "text": "向量BA"
+      },
+      {
+       "label": "C",
+       "text": "向量CB"
+      },
+      {
+       "label": "D",
+       "text": "向量AC"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由向量加法的三角形法则，向量AB的终点B是向量BC的起点，所以和向量由A指向C，即向量AB加向量BC等于向量AC。"
+    },
+    {
+     "id": "msj_h1036_q3",
+     "topicId": "msj_h1036",
+     "prompt": "两个非零向量的数量积是一个",
+     "question": "两个非零向量的数量积是一个",
+     "options": [
+      {
+       "label": "A",
+       "text": "向量"
+      },
+      {
+       "label": "B",
+       "text": "实数"
+      },
+      {
+       "label": "C",
+       "text": "点"
+      },
+      {
+       "label": "D",
+       "text": "角"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个非零向量的数量积等于它们模的乘积再乘夹角的余弦，结果是一个实数，不再是向量。"
+    },
+    {
+     "id": "msj_h1036_q4",
+     "topicId": "msj_h1036",
+     "prompt": "已知向量a的模为4，则向量3a的模为多少？",
+     "question": "已知向量a的模为4，则向量3a的模为多少？",
+     "answer": 12,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "实数与向量相乘，所得向量的长度等于这个实数的绝对值乘原向量的模，所以3a的模等于3乘4等于12。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msj_h1036_q5",
+     "topicId": "msj_h1036",
+     "prompt": "设O为平面上一点，则向量OA减向量OB等于哪个向量？",
+     "question": "设O为平面上一点，则向量OA减向量OB等于哪个向量？",
+     "answer": "向量BA",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "两个向量相减，把减向量的终点指向被减向量的终点，即向量OA减向量OB等于向量BA；也可以写成向量OA加向量BO。"
+    },
+    {
+     "id": "msj_h1036_q6",
+     "topicId": "msj_h1036",
+     "prompt": "若向量a的模为5，则a与a的数量积等于多少？",
+     "question": "若向量a的模为5，则a与a的数量积等于多少？",
+     "answer": 25,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "一个向量与它自身的夹角是0度，余弦值等于1，所以a与a的数量积等于a的模乘a的模乘1，即5乘5等于25。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1036_q7",
+     "topicId": "msj_h1036",
+     "prompt": "已知两个非零向量a，b的模分别为2和3，它们的数量积为3，则它们夹角的余弦值为多少？",
+     "question": "已知两个非零向量a，b的模分别为2和3，它们的数量积为3，则它们夹角的余弦值为多少？",
+     "answer": 0.5,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "由数量积公式，a与b的数量积等于a的模乘b的模再乘夹角的余弦，所以余弦值等于3除以2乘3的积，即3除以6等于0.5。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}]}"
+    },
+    {
+     "id": "msj_h1036_q8",
+     "topicId": "msj_h1036",
+     "prompt": "向量的数量积满足哪些运算律？它与实数乘法有什么不同？",
+     "question": "向量的数量积满足哪些运算律？它与实数乘法有什么不同？",
+     "answer": "满足交换律a·b等于b·a，满足分配律，也满足与数乘的结合；但结果是一个实数，一般地(a·b)c不等于a(b·c)，所以不能随意搬动括号。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "数量积满足交换律，即a与b的数量积等于b与a的数量积；还满足分配律和与数乘的结合；但数量积的结果是实数，一般地a与b的数量积再乘向量c，不等于a乘b与c的数量积。"
+    }
+   ],
+   "page": 10,
+   "misconceptions": [
+    "作向量减法时把两个向量的起点分别相连，得出方向相反的结论",
+    "把向量的数乘理解为把向量的模相加",
+    "把两个向量的数量积写成一个向量，忘记它是实数"
+   ]
+  },
+  {
+   "id": "msj_h1037",
+   "description": "向量基本定理及坐标表示：若e1，e2不共线，则平面内任一向量a可以唯一表示成a等于x倍的e1加y倍的e2，e1，e2叫一组基底；取定坐标后向量可用有序实数对表示，并用坐标进行加减、数乘与数量积运算，还可得中点坐标公式与两点间距离公式。",
+   "mastery_criteria": [
+    "能判断两个向量能否作为一组基底",
+    "会把向量用坐标表示并进行坐标运算",
+    "会用坐标判断向量平行、垂直并求长度"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msj_h1037_q1",
+     "topicId": "msj_h1037",
+     "prompt": "平面向量基本定理中的两个向量e1，e2必须满足的条件是",
+     "question": "平面向量基本定理中的两个向量e1，e2必须满足的条件是",
+     "options": [
+      {
+       "label": "A",
+       "text": "模都等于1"
+      },
+      {
+       "label": "B",
+       "text": "都是零向量"
+      },
+      {
+       "label": "C",
+       "text": "不共线"
+      },
+      {
+       "label": "D",
+       "text": "方向相同"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "平面向量基本定理要求e1与e2不共线；只要它们不共线，平面内任一向量都能唯一表示成它们的实数倍之和。"
+    },
+    {
+     "id": "msj_h1037_q2",
+     "topicId": "msj_h1037",
+     "prompt": "若向量a的坐标是(2，1)，向量b的坐标是(1，3)，则a加b所得向量的横坐标为多少？",
+     "question": "若向量a的坐标是(2，1)，向量b的坐标是(1，3)，则a加b所得向量的横坐标为多少？",
+     "answer": "3",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "向量相加时横坐标与横坐标相加、纵坐标与纵坐标相加，所以a加b的横坐标等于2加1等于3。"
+    },
+    {
+     "id": "msj_h1037_q3",
+     "topicId": "msj_h1037",
+     "prompt": "若向量a的坐标是(1，2)，向量b的坐标是(3，4)，则a与b的数量积等于",
+     "question": "若向量a的坐标是(1，2)，向量b的坐标是(3，4)，则a与b的数量积等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "11"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "10"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "用坐标计算数量积，等于1乘3加2乘4，即3加8等于11。"
+    },
+    {
+     "id": "msj_h1037_q4",
+     "topicId": "msj_h1037",
+     "prompt": "已知点A(1，2)，B(4，6)，则线段AB的长度为多少？",
+     "question": "已知点A(1，2)，B(4，6)，则线段AB的长度为多少？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "线段长度等于向量AB的模，向量AB的坐标是(3，4)，所以AB等于3的平方加4的平方再开方，即25开方等于5。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 1}]}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 2}]}]}, {\"type\": \"num\", \"value\": 0.5}]}"
+    },
+    {
+     "id": "msj_h1037_q5",
+     "topicId": "msj_h1037",
+     "prompt": "若向量a的坐标是(x，3)，向量b的坐标是(2，6)，且a与b平行，则x等于多少？",
+     "question": "若向量a的坐标是(x，3)，向量b的坐标是(2，6)，且a与b平行，则x等于多少？",
+     "answer": "1",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "两向量平行时坐标成比例，即6x等于2乘3等于6，解得x等于1。"
+    },
+    {
+     "id": "msj_h1037_q6",
+     "topicId": "msj_h1037",
+     "prompt": "若向量a的坐标是(2，负1)，向量b的坐标是(1，2)，则a与b的位置关系是",
+     "question": "若向量a的坐标是(2，负1)，向量b的坐标是(1，2)，则a与b的位置关系是",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行"
+      },
+      {
+       "label": "B",
+       "text": "垂直"
+      },
+      {
+       "label": "C",
+       "text": "相等"
+      },
+      {
+       "label": "D",
+       "text": "夹角为锐角"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "a与b的数量积等于2乘1加负1乘2等于0，数量积为0说明两向量垂直；它们的坐标不成比例，所以不平行。"
+    },
+    {
+     "id": "msj_h1037_q7",
+     "topicId": "msj_h1037",
+     "prompt": "关于平面向量的一组基底，下列说法正确的是",
+     "question": "关于平面向量的一组基底，下列说法正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "一组基底中的两个向量可以共线"
+      },
+      {
+       "label": "B",
+       "text": "零向量可以作为基底中的一个向量"
+      },
+      {
+       "label": "C",
+       "text": "基底中的向量都必须是单位向量"
+      },
+      {
+       "label": "D",
+       "text": "用一组基底表示一个向量时，表示法唯一"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "作为基底的两个向量必须不共线，不能有零向量，也不必是单位向量；基底确定后，平面内任一向量的表示法唯一。"
+    },
+    {
+     "id": "msj_h1037_q8",
+     "topicId": "msj_h1037",
+     "prompt": "向量的坐标与点的坐标有什么联系和区别？",
+     "question": "向量的坐标与点的坐标有什么联系和区别？",
+     "answer": "向量坐标等于终点坐标减起点坐标，与起点位置无关；点坐标表示点的位置；当向量起点在原点时，终点坐标就等于向量坐标。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "向量的坐标由终点坐标减起点坐标得到，同一个向量无论起点在哪里坐标都相同；点的坐标表示点的位置；把向量起点放在原点时，向量终点的坐标正好等于这个向量的坐标。"
+    }
+   ],
+   "page": 26,
+   "misconceptions": [
+    "把共线的两个向量当作一组基底",
+    "认为向量的坐标与起点位置有关",
+    "把数量积的坐标公式错写成两个坐标的和"
+   ]
+  },
+  {
+   "id": "msj_h1038",
+   "description": "向量的应用：用向量可以证明平面几何中的共线、垂直与长度问题，可以用向量表示力、速度与位移并求合力，还可以用向量的数量积推出余弦定理、用向量方法处理测量与几何计算问题。",
+   "mastery_criteria": [
+    "会用数量积为零判断两条直线垂直",
+    "能用向量方法证明三点共线",
+    "能用向量方法解决简单的物理与测量问题"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "msj_h1038_q1",
+     "topicId": "msj_h1038",
+     "prompt": "若两个非零向量a，b的数量积等于0，则这两个向量的位置关系是",
+     "question": "若两个非零向量a，b的数量积等于0，则这两个向量的位置关系是",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行"
+      },
+      {
+       "label": "B",
+       "text": "相等"
+      },
+      {
+       "label": "C",
+       "text": "方向相反"
+      },
+      {
+       "label": "D",
+       "text": "垂直"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两个非零向量数量积为0时，它们夹角的余弦为0，夹角为90度，所以两个向量垂直。"
+    },
+    {
+     "id": "msj_h1038_q2",
+     "topicId": "msj_h1038",
+     "prompt": "两个互相垂直的力，大小分别为3牛顿和4牛顿，它们的合力大小为多少牛顿？",
+     "question": "两个互相垂直的力，大小分别为3牛顿和4牛顿，它们的合力大小为多少牛顿？",
+     "answer": "5牛顿",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "两个力互相垂直，满足勾股定理，合力大小等于3的平方加4的平方再开方，即25开方等于5牛顿。"
+    },
+    {
+     "id": "msj_h1038_q3",
+     "topicId": "msj_h1038",
+     "prompt": "用向量方法证明A，B，C三点共线，关键是证明",
+     "question": "用向量方法证明A，B，C三点共线，关键是证明",
+     "options": [
+      {
+       "label": "A",
+       "text": "向量AB与向量AC的模相等"
+      },
+      {
+       "label": "B",
+       "text": "向量AB与向量BC垂直"
+      },
+      {
+       "label": "C",
+       "text": "向量AB等于λ倍的向量AC，λ为实数"
+      },
+      {
+       "label": "D",
+       "text": "三个向量的模都为1"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "三点共线可归结为向量共线，即存在实数λ使向量AB等于λ倍的向量AC；模相等或垂直都不能说明共线。"
+    },
+    {
+     "id": "msj_h1038_q4",
+     "topicId": "msj_h1038",
+     "prompt": "已知向量a的坐标是(2，负1)，向量b的坐标是(1，2)，则a与b的数量积为多少？",
+     "question": "已知向量a的坐标是(2，负1)，向量b的坐标是(1，2)，则a与b的数量积为多少？",
+     "answer": 0,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "用坐标算数量积，等于2乘1加负1乘2，即2减2等于0，说明这两个向量互相垂直。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 1}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": -1}, {\"type\": \"num\", \"value\": 2}]}]}"
+    },
+    {
+     "id": "msj_h1038_q5",
+     "topicId": "msj_h1038",
+     "prompt": "用向量方法研究平面几何问题，先把线段写成向量，再作向量运算，最后要把向量结果翻译成什么？",
+     "question": "用向量方法研究平面几何问题，先把线段写成向量，再作向量运算，最后要把向量结果翻译成什么？",
+     "answer": "几何结论",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "向量方法的最后一步是把向量之间的关系翻译回几何关系，例如数量积为0翻译成线段垂直，向量共线翻译成三点共线。"
+    },
+    {
+     "id": "msj_h1038_q6",
+     "topicId": "msj_h1038",
+     "prompt": "用向量方法解决平面几何问题的三个步骤，正确的顺序是",
+     "question": "用向量方法解决平面几何问题的三个步骤，正确的顺序是",
+     "options": [
+      {
+       "label": "A",
+       "text": "建立向量、向量运算、翻译结论"
+      },
+      {
+       "label": "B",
+       "text": "向量运算、建立向量、翻译结论"
+      },
+      {
+       "label": "C",
+       "text": "翻译结论、建立向量、向量运算"
+      },
+      {
+       "label": "D",
+       "text": "建立向量、翻译结论、向量运算"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先用向量表示题中的线段，建立向量关系；再作向量的运算；最后把向量结果解释成几何结论，顺序不能颠倒。"
+    },
+    {
+     "id": "msj_h1038_q7",
+     "topicId": "msj_h1038",
+     "prompt": "在三角形ABC中，向量AB与向量AC的数量积等于6，这两个向量的模分别为3和4，则角A的余弦值为多少？",
+     "question": "在三角形ABC中，向量AB与向量AC的数量积等于6，这两个向量的模分别为3和4，则角A的余弦值为多少？",
+     "answer": 0.5,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "由数量积公式，向量AB与向量AC的数量积等于3乘4再乘角A的余弦，所以角A的余弦等于6除以12等于0.5。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 4}]}]}"
+    },
+    {
+     "id": "msj_h1038_q8",
+     "topicId": "msj_h1038",
+     "prompt": "用向量方法证明余弦定理，请写出主要步骤。",
+     "question": "用向量方法证明余弦定理，请写出主要步骤。",
+     "answer": "取向量CA与向量CB，夹角为角C；把向量AB写成向量CB减向量CA；两边平方展开，用数量积表示交叉项；把数量积换成模与余弦的积，即得c的平方等于a的平方加b的平方减2ab cosC。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "在三角形ABC中取向量CA与向量CB，它们的夹角就是角C；由向量AB等于向量CB减向量CA，两边平方得AB的平方等于CA的平方加CB的平方减2倍的两者数量积；把数量积写成模与余弦的积，就得到余弦定理。"
+    }
+   ],
+   "page": 41,
+   "misconceptions": [
+    "用向量证明几何结论时忘记说明两个向量有公共点",
+    "把数量积为零与两向量平行混为一谈",
+    "求两个力的合力时直接把两个力的模相加"
+   ]
+  },
+  {
+   "id": "msj_h1039",
+   "description": "两角和与差的三角函数：借助单位圆上向量的数量积推出两角差的余弦公式，用负角替换得到两角和的余弦公式，再用诱导公式得到两角和与差的正弦公式，最后由正弦、余弦公式推出两角和与差的正切公式；这些公式统称和角公式。",
+   "mastery_criteria": [
+    "能默写两角和与差的正弦、余弦、正切公式",
+    "会用和角公式求非特殊角的三角函数值",
+    "会把已知条件展开后求值或证明恒等式"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msj_h1039_q1",
+     "topicId": "msj_h1039",
+     "prompt": "两角和的正弦公式中，sin(α加β)等于",
+     "question": "两角和的正弦公式中，sin(α加β)等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "sinαcosβ减cosαsinβ"
+      },
+      {
+       "label": "B",
+       "text": "cosαcosβ减sinαsinβ"
+      },
+      {
+       "label": "C",
+       "text": "sinαsinβ加cosαcosβ"
+      },
+      {
+       "label": "D",
+       "text": "sinαcosβ加cosαsinβ"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两角和的正弦公式是sin(α加β)等于sinαcosβ加cosαsinβ，两项相加，顺序可以互换。"
+    },
+    {
+     "id": "msj_h1039_q2",
+     "topicId": "msj_h1039",
+     "prompt": "利用两角和的余弦公式求cos75度，结果是",
+     "question": "利用两角和的余弦公式求cos75度，结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "四分之根号六加根号二"
+      },
+      {
+       "label": "B",
+       "text": "四分之根号六减根号二"
+      },
+      {
+       "label": "C",
+       "text": "四分之根号二减根号六"
+      },
+      {
+       "label": "D",
+       "text": "二分之根号六加根号二"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "cos75度等于cos(45度加30度)，等于cos45度cos30度减sin45度sin30度，即四分之根号六减四分之根号二。"
+    },
+    {
+     "id": "msj_h1039_q3",
+     "topicId": "msj_h1039",
+     "prompt": "两角差的正弦公式中，sin(α减β)等于sinαcosβ减去什么？",
+     "question": "两角差的正弦公式中，sin(α减β)等于sinαcosβ减去什么？",
+     "answer": "cosαsinβ",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "两角差的正弦公式是sin(α减β)等于sinαcosβ减cosαsinβ，所以减去的是cosαsinβ。"
+    },
+    {
+     "id": "msj_h1039_q4",
+     "topicId": "msj_h1039",
+     "prompt": "已知tanα等于3，tanβ等于2，则tan(α加β)的值为多少？",
+     "question": "已知tanα等于3，tanβ等于2，则tan(α加β)的值为多少？",
+     "answer": -1,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "用两角和的正切公式，分母是1减tanαtanβ等于1减6等于负5，分子是3加2等于5，所以结果是5除以负5等于负1。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}]}]}"
+    },
+    {
+     "id": "msj_h1039_q5",
+     "topicId": "msj_h1039",
+     "prompt": "推导两角差的余弦公式时，主要用到的向量知识是",
+     "question": "推导两角差的余弦公式时，主要用到的向量知识是",
+     "options": [
+      {
+       "label": "A",
+       "text": "向量的数量积"
+      },
+      {
+       "label": "B",
+       "text": "向量的加法"
+      },
+      {
+       "label": "C",
+       "text": "向量的数乘"
+      },
+      {
+       "label": "D",
+       "text": "向量的模"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材在单位圆上取两个向量，通过计算它们数量积的两种表示，得到两角差的余弦公式，所以关键工具是向量的数量积。"
+    },
+    {
+     "id": "msj_h1039_q6",
+     "topicId": "msj_h1039",
+     "prompt": "已知sinα等于1/2，α为锐角，则sin(α加30度)的值为多少？",
+     "question": "已知sinα等于1/2，α为锐角，则sin(α加30度)的值为多少？",
+     "answer": "二分之根号三",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由两角和的正弦公式展开得sinαcos30度加cosαsin30度；α为锐角时cosα等于二分之根号三，代入得二分之一乘二分之根号三加二分之根号三乘二分之一，等于二分之根号三。"
+    },
+    {
+     "id": "msj_h1039_q7",
+     "topicId": "msj_h1039",
+     "prompt": "已知α，β都是锐角，cosα等于3/5，cosβ等于4/5，则cos(α加β)的值为",
+     "question": "已知α，β都是锐角，cosα等于3/5，cosβ等于4/5，则cos(α加β)的值为",
+     "options": [
+      {
+       "label": "A",
+       "text": "7/25"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "0"
+      },
+      {
+       "label": "D",
+       "text": "负1"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "α为锐角且cosα等于3/5，则sinα等于4/5；β为锐角且cosβ等于4/5，则sinβ等于3/5；代入两角和的余弦公式得cosαcosβ减sinαsinβ等于12/25减12/25等于0，所以α加β等于90度。"
+    },
+    {
+     "id": "msj_h1039_q8",
+     "topicId": "msj_h1039",
+     "prompt": "用两角和与差的正切公式求tan15度的值，写出过程。",
+     "question": "用两角和与差的正切公式求tan15度的值，写出过程。",
+     "answer": "tan15度等于tan(45度减30度)，等于(1减三分之根号三)除以(1加三分之根号三)，分子分母同乘根号三，化简得2减根号三。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "把15度写成45度减30度，代入两角差的正切公式，分子是tan45度减tan30度等于1减三分之根号三，分母是1加tan45度tan30度等于1加三分之根号三，化简得2减根号三。"
+    }
+   ],
+   "page": 53,
+   "misconceptions": [
+    "把cos(α加β)直接写成cosα加cosβ",
+    "认为sin(α加β)等于sinα加sinβ",
+    "使用两角和的正切公式时不检查分母1减tanαtanβ是否为零"
+   ]
+  },
+  {
+   "id": "msj_h1040",
+   "description": "二倍角的三角函数：在两角和的正弦、余弦、正切公式中令两个角相等，就得到二倍角公式；二倍角公式是和角公式的特例，反过来把二倍角公式变形可以得到降幂公式，用来把三角函数式化成一次的式子。",
+   "mastery_criteria": [
+    "能默写二倍角的正弦、余弦、正切公式",
+    "会用二倍角公式求值、化简与证明",
+    "会把二倍角公式变形为降幂公式"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msj_h1040_q1",
+     "topicId": "msj_h1040",
+     "prompt": "二倍角的正弦公式中，sin2α等于",
+     "question": "二倍角的正弦公式中，sin2α等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "2sinα"
+      },
+      {
+       "label": "B",
+       "text": "2sinαcosα"
+      },
+      {
+       "label": "C",
+       "text": "sinαcosα"
+      },
+      {
+       "label": "D",
+       "text": "cosα的平方减sinα的平方"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "在两角和的正弦公式中令两个角都等于α，得sin2α等于sinαcosα加cosαsinα，即2sinαcosα。"
+    },
+    {
+     "id": "msj_h1040_q2",
+     "topicId": "msj_h1040",
+     "prompt": "二倍角的余弦公式中，cos2α可以写成",
+     "question": "二倍角的余弦公式中，cos2α可以写成",
+     "options": [
+      {
+       "label": "A",
+       "text": "2cosα的平方加1"
+      },
+      {
+       "label": "B",
+       "text": "1减2cosα的平方"
+      },
+      {
+       "label": "C",
+       "text": "2cosα的平方减1"
+      },
+      {
+       "label": "D",
+       "text": "1加2sinα的平方"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "在两角和的余弦公式中令两个角都等于α，得cos2α等于cosα的平方减sinα的平方，再用sinα的平方等于1减cosα的平方替换，得2cosα的平方减1。"
+    },
+    {
+     "id": "msj_h1040_q3",
+     "topicId": "msj_h1040",
+     "prompt": "二倍角的正切公式中，tan2α的分母是什么？",
+     "question": "二倍角的正切公式中，tan2α的分母是什么？",
+     "answer": "1减tanα的平方",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "由两角和的正切公式令两个角都等于α，得tan2α等于2tanα除以1减tanα的平方，所以分母是1减tanα的平方。"
+    },
+    {
+     "id": "msj_h1040_q4",
+     "topicId": "msj_h1040",
+     "prompt": "已知sinα等于3/5，α为锐角，则sin2α的值为多少？",
+     "question": "已知sinα等于3/5，α为锐角，则sin2α的值为多少？",
+     "answer": 0.96,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "α为锐角，cosα等于4/5；由二倍角公式sin2α等于2sinαcosα，即2乘0.6乘0.8等于0.96。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 0.6}, {\"type\": \"num\", \"value\": 0.8}]}]}"
+    },
+    {
+     "id": "msj_h1040_q5",
+     "topicId": "msj_h1040",
+     "prompt": "已知sinα等于1/2，则cos2α的值为多少？",
+     "question": "已知sinα等于1/2，则cos2α的值为多少？",
+     "answer": 0.5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "用cos2α等于1减2sinα的平方，代入得1减2乘0.25等于0.5，所以cos2α等于0.5。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 0.5}, {\"type\": \"num\", \"value\": 2}]}]}]}"
+    },
+    {
+     "id": "msj_h1040_q6",
+     "topicId": "msj_h1040",
+     "prompt": "降幂公式中，sinα的平方等于",
+     "question": "降幂公式中，sinα的平方等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "(1减cos2α)除以2"
+      },
+      {
+       "label": "B",
+       "text": "(1加cos2α)除以2"
+      },
+      {
+       "label": "C",
+       "text": "(cos2α减1)除以2"
+      },
+      {
+       "label": "D",
+       "text": "1减cos2α"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把cos2α等于1减2sinα的平方移项，得2sinα的平方等于1减cos2α，所以sinα的平方等于1减cos2α再除以2。"
+    },
+    {
+     "id": "msj_h1040_q7",
+     "topicId": "msj_h1040",
+     "prompt": "已知cosα等于1/3，则cos2α的值为",
+     "question": "已知cosα等于1/3，则cos2α的值为",
+     "options": [
+      {
+       "label": "A",
+       "text": "7/9"
+      },
+      {
+       "label": "B",
+       "text": "1/9"
+      },
+      {
+       "label": "C",
+       "text": "负1/3"
+      },
+      {
+       "label": "D",
+       "text": "负7/9"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "用cos2α等于2cosα的平方减1，代入得2乘1/9减1，等于2/9减1，即负7/9，所以结果是负7/9。"
+    },
+    {
+     "id": "msj_h1040_q8",
+     "topicId": "msj_h1040",
+     "prompt": "用二倍角公式把sin3α表示成sinα的式子，写出推导过程。",
+     "question": "用二倍角公式把sin3α表示成sinα的式子，写出推导过程。",
+     "answer": "sin3α等于sin(α加2α)等于sinαcos2α加cosαsin2α；代入cos2α等于1减2sinα的平方与sin2α等于2sinαcosα；整理得sin3α等于3sinα减4sinα的立方。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "把3α写成α加2α，用两角和的正弦公式展开得sinαcos2α加cosαsin2α；把cos2α换成1减2sinα的平方，把sin2α换成2sinαcosα，整理得sin3α等于3sinα减4sinα的立方。"
+    }
+   ],
+   "page": 69,
+   "misconceptions": [
+    "把sin2α写成2sinα",
+    "只记住cos2α的一种形式，不会在三种形式之间转换",
+    "使用二倍角的正切公式时忽略分母不为零的条件"
+   ]
+  },
+  {
+   "id": "msj_h1041",
+   "description": "几个三角恒等式：把两角和与差的正弦、余弦公式相加或相减，得到积化和差公式；把积化和差公式反向使用，得到和差化积公式；由二倍角公式还可以得到半角公式；把asinx加bcosx化成根号下a平方加b平方倍的sin(x加φ)，可以用来求最值。",
+   "mastery_criteria": [
+    "能写出积化和差与和差化积公式",
+    "会用半角公式求值并正确选取符号",
+    "会把asinx加bcosx化成一个正弦式求最值"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "msj_h1041_q1",
+     "topicId": "msj_h1041",
+     "prompt": "积化和差公式中，sinαcosβ等于",
+     "question": "积化和差公式中，sinαcosβ等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "二分之一倍的sin(α加β)加sin(α减β)"
+      },
+      {
+       "label": "B",
+       "text": "sin(α加β)加sin(α减β)"
+      },
+      {
+       "label": "C",
+       "text": "二分之一倍的cos(α加β)加cos(α减β)"
+      },
+      {
+       "label": "D",
+       "text": "sin(α加β)减sin(α减β)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把两角和与两角差的正弦公式相加再除以2，得sinαcosβ等于二分之一倍的sin(α加β)与sin(α减β)的和。"
+    },
+    {
+     "id": "msj_h1041_q2",
+     "topicId": "msj_h1041",
+     "prompt": "和差化积公式中，sinα加sinβ等于",
+     "question": "和差化积公式中，sinα加sinβ等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "2cos((α加β)/2)sin((α减β)/2)"
+      },
+      {
+       "label": "B",
+       "text": "2sin((α加β)/2)cos((α减β)/2)"
+      },
+      {
+       "label": "C",
+       "text": "2sin((α加β)/2)sin((α减β)/2)"
+      },
+      {
+       "label": "D",
+       "text": "2cos((α加β)/2)cos((α减β)/2)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由积化和差公式反向推得，sinα加sinβ等于2倍的sin二分之(α加β)与cos二分之(α减β)的积。"
+    },
+    {
+     "id": "msj_h1041_q3",
+     "topicId": "msj_h1041",
+     "prompt": "把asinx加bcosx化成一个正弦式后，它的最大值等于什么？",
+     "question": "把asinx加bcosx化成一个正弦式后，它的最大值等于什么？",
+     "answer": "根号下a平方加b平方",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "把asinx加bcosx化成根号下a平方加b平方倍的sin(x加φ)，正弦的最大值是1，所以原式的最大值等于根号下a平方加b平方。"
+    },
+    {
+     "id": "msj_h1041_q4",
+     "topicId": "msj_h1041",
+     "prompt": "3sinx加4cosx的最大值为多少？",
+     "question": "3sinx加4cosx的最大值为多少？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "先把它化成根号下3的平方加4的平方倍的sin(x加φ)，即5倍的sin(x加φ)；正弦的最大值是1，所以原式的最大值等于5。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 2}]}]}, {\"type\": \"num\", \"value\": 0.5}]}"
+    },
+    {
+     "id": "msj_h1041_q5",
+     "topicId": "msj_h1041",
+     "prompt": "利用积化和差公式求sin15度cos15度，这个值为多少？",
+     "question": "利用积化和差公式求sin15度cos15度，这个值为多少？",
+     "answer": 0.25,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由积化和差公式，sin15度cos15度等于二分之一倍的sin30度加sin0度，即二分之一乘0.5等于0.25；也可用二倍角公式算得同样结果。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msj_h1041_q6",
+     "topicId": "msj_h1041",
+     "prompt": "3sinx加4cosx的最小值为多少？",
+     "question": "3sinx加4cosx的最小值为多少？",
+     "answer": -5,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "3sinx加4cosx等于5倍的sin(x加φ)，正弦的最小值是负1，所以原式的最小值等于负5。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": -1}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 2}]}]}, {\"type\": \"num\", \"value\": 0.5}]}]}"
+    },
+    {
+     "id": "msj_h1041_q7",
+     "topicId": "msj_h1041",
+     "prompt": "使用半角公式时，根号前的正负号由什么确定？",
+     "question": "使用半角公式时，根号前的正负号由什么确定？",
+     "options": [
+      {
+       "label": "A",
+       "text": "由角α的大小确定"
+      },
+      {
+       "label": "B",
+       "text": "由角α所在象限确定"
+      },
+      {
+       "label": "C",
+       "text": "由二分之α所在象限确定"
+      },
+      {
+       "label": "D",
+       "text": "只能取正号"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "半角公式中根号前带正负号，符号由半角二分之α所在象限决定；只有能确定二分之α的象限时，符号才能确定。"
+    },
+    {
+     "id": "msj_h1041_q8",
+     "topicId": "msj_h1041",
+     "prompt": "说明怎样把asinx加bcosx化成根号下a平方加b平方倍的sin(x加φ)。",
+     "question": "说明怎样把asinx加bcosx化成根号下a平方加b平方倍的sin(x加φ)。",
+     "answer": "提取根号下a平方加b平方，得括号内为a除以根号乘sinx加b除以根号乘cosx；令其为cosφsinx加sinφcosx，即cosφ等于a除以根号下a平方加b平方，sinφ等于b除以根号下a平方加b平方；由和角公式得根号下a平方加b平方倍的sin(x加φ)。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "先提出根号下a平方加b平方，使括号内成为cosφ乘sinx加sinφ乘cosx；令cosφ等于a除以根号下a平方加b平方，sinφ等于b除以根号下a平方加b平方，就得到根号下a平方加b平方倍的sin(x加φ)。"
+    }
+   ],
+   "page": 75,
+   "misconceptions": [
+    "使用半角公式时忽略根号前的正负号",
+    "把积化和差公式与和差化积公式用反",
+    "把asinx加bcosx的最大值直接写成a加b"
+   ]
+  },
+  {
+   "id": "msj_h1042",
+   "description": "余弦定理：三角形任何一边的平方等于其他两边平方的和减去这两边与它们夹角的余弦的积的两倍；余弦定理也可写成求余弦的形式，它是勾股定理的推广，可以用来由两边及夹角求第三边，也可以由三边求角并判断三角形的形状。",
+   "mastery_criteria": [
+    "能写出余弦定理的三种形式",
+    "会用余弦定理求三角形的边与角",
+    "会用余弦定理判断三角形的形状"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msj_h1042_q1",
+     "topicId": "msj_h1042",
+     "prompt": "把余弦定理变形后，cosA等于",
+     "question": "把余弦定理变形后，cosA等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "(b平方加c平方减a平方)除以2bc"
+      },
+      {
+       "label": "B",
+       "text": "(a平方加b平方减c平方)除以2ab"
+      },
+      {
+       "label": "C",
+       "text": "(b平方减c平方)除以2bc"
+      },
+      {
+       "label": "D",
+       "text": "(a平方减b平方)除以2ac"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把余弦定理a的平方等于b平方加c平方减2bc cosA移项，得2bc cosA等于b平方加c平方减a的平方，所以cosA等于这个差除以2bc。"
+    },
+    {
+     "id": "msj_h1042_q2",
+     "topicId": "msj_h1042",
+     "prompt": "在三角形ABC中，a等于3，b等于4，c等于5，则cosA的值为多少？",
+     "question": "在三角形ABC中，a等于3，b等于4，c等于5，则cosA的值为多少？",
+     "answer": 0.8,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由余弦定理的变形，cosA等于b平方加c平方减a平方再除以2bc，即(16加25减9)除以40，等于32除以40等于0.8。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 16}, {\"type\": \"num\", \"value\": 25}]}, {\"type\": \"num\", \"value\": 9}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 5}]}]}]}"
+    },
+    {
+     "id": "msj_h1042_q3",
+     "topicId": "msj_h1042",
+     "prompt": "在三角形ABC中，若a的平方大于b的平方加c的平方，则角A是什么角？",
+     "question": "在三角形ABC中，若a的平方大于b的平方加c的平方，则角A是什么角？",
+     "answer": "钝角",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由余弦定理，a的平方大于b平方加c平方时，cosA小于0；角A在0度到180度之间，余弦为负说明角A是钝角。"
+    },
+    {
+     "id": "msj_h1042_q4",
+     "topicId": "msj_h1042",
+     "prompt": "余弦定理可以看作勾股定理的推广，当角C等于90度时，c的平方等于",
+     "question": "余弦定理可以看作勾股定理的推广，当角C等于90度时，c的平方等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "a平方减b平方"
+      },
+      {
+       "label": "B",
+       "text": "a平方加b平方"
+      },
+      {
+       "label": "C",
+       "text": "a平方加b平方加2ab"
+      },
+      {
+       "label": "D",
+       "text": "2ab"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "角C等于90度时cosC等于0，余弦定理中的减项为0，于是c的平方等于a的平方加b的平方，正是勾股定理。"
+    },
+    {
+     "id": "msj_h1042_q5",
+     "topicId": "msj_h1042",
+     "prompt": "在三角形ABC中，b等于7，c等于8，A等于60度，则a的平方等于多少？",
+     "question": "在三角形ABC中，b等于7，c等于8，A等于60度，则a的平方等于多少？",
+     "answer": 57,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "由余弦定理，a的平方等于49加64减2乘7乘8乘cos60度，即113减2乘7乘8乘0.5；2乘7乘8乘0.5等于56，所以结果是113减56等于57。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 49}, {\"type\": \"num\", \"value\": 64}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 7}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"num\", \"value\": 0.5}]}]}]}]}"
+    },
+    {
+     "id": "msj_h1042_q6",
+     "topicId": "msj_h1042",
+     "prompt": "在三角形ABC中，三边长分别为2，3，4，则这个三角形是什么三角形？",
+     "question": "在三角形ABC中，三边长分别为2，3，4，则这个三角形是什么三角形？",
+     "answer": "钝角三角形",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "最长边是4，4的平方等于16，2的平方加3的平方等于13，16大于13，所以最长边所对的角是钝角，这个三角形是钝角三角形。"
+    },
+    {
+     "id": "msj_h1042_q7",
+     "topicId": "msj_h1042",
+     "prompt": "在三角形ABC中，a等于2，b等于3，c等于4，则最大角的余弦值为",
+     "question": "在三角形ABC中，a等于2，b等于3，c等于4，则最大角的余弦值为",
+     "options": [
+      {
+       "label": "A",
+       "text": "1/4"
+      },
+      {
+       "label": "B",
+       "text": "1/8"
+      },
+      {
+       "label": "C",
+       "text": "负1/8"
+      },
+      {
+       "label": "D",
+       "text": "负1/4"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "最大边是c等于4，所以最大角是C；由余弦定理cosC等于(4加9减16)除以(2乘2乘3)，即负3除以12，等于负1/4。"
+    },
+    {
+     "id": "msj_h1042_q8",
+     "topicId": "msj_h1042",
+     "prompt": "已知三角形的三边求一个角时，怎样判断这个角是锐角、直角还是钝角？",
+     "question": "已知三角形的三边求一个角时，怎样判断这个角是锐角、直角还是钝角？",
+     "answer": "先用余弦定理求出该角的余弦值；余弦大于0为锐角，等于0为直角，小于0为钝角；也可比较最长边的平方与另两边平方和。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "先用余弦定理的变形求出这个角的余弦值；余弦为正时这个角是锐角，余弦等于0时是直角，余弦为负时是钝角；也可以比较最长边的平方与另外两边平方和的大小。"
+    }
+   ],
+   "page": 91,
+   "misconceptions": [
+    "把余弦定理中的减号写成加号",
+    "已知三边求角时把余弦值的符号判断错",
+    "认为余弦定理只能求边，不能求角"
+   ]
+  },
+  {
+   "id": "msj_h1043",
+   "description": "正弦定理：在三角形中，各边与它所对角的正弦的比相等，并且这个比值等于三角形外接圆的直径；正弦定理可以用来由两角与一边求其他边角，也可以由两边与其中一边的对角求角，还可以推出三角形的面积公式。",
+   "mastery_criteria": [
+    "能写出正弦定理并说出比值与外接圆的关系",
+    "会用正弦定理求边与角",
+    "会判断已知两边一对角时三角形解的个数"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msj_h1043_q1",
+     "topicId": "msj_h1043",
+     "prompt": "正弦定理中，a除以sinA等于",
+     "question": "正弦定理中，a除以sinA等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "外接圆的半径"
+      },
+      {
+       "label": "B",
+       "text": "外接圆的直径"
+      },
+      {
+       "label": "C",
+       "text": "内切圆的半径"
+      },
+      {
+       "label": "D",
+       "text": "三角形的高"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "正弦定理：在一个三角形中，各边与它所对角的正弦的比相等，且这个比值等于三角形外接圆的直径，即2R，所以a除以sinA等于外接圆的直径。"
+    },
+    {
+     "id": "msj_h1043_q2",
+     "topicId": "msj_h1043",
+     "prompt": "在三角形ABC中，a等于2，A等于30度，则这个三角形外接圆的直径等于多少？",
+     "question": "在三角形ABC中，a等于2，A等于30度，则这个三角形外接圆的直径等于多少？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由正弦定理，a除以sinA等于外接圆的直径，sin30度等于0.5，所以直径等于2除以0.5等于4。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 0.5}]}"
+    },
+    {
+     "id": "msj_h1043_q3",
+     "topicId": "msj_h1043",
+     "prompt": "在三角形ABC中，A等于30度，B等于45度，a等于2，则b等于多少？",
+     "question": "在三角形ABC中，A等于30度，B等于45度，a等于2，则b等于多少？",
+     "answer": "2根号2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由正弦定理，b等于a乘sinB除以sinA，即2乘二分之根号二再除以二分之一，等于2倍的根号二。"
+    },
+    {
+     "id": "msj_h1043_q4",
+     "topicId": "msj_h1043",
+     "prompt": "在三角形ABC中，a等于3，b等于4，C等于30度，则这个三角形的面积等于多少？",
+     "question": "在三角形ABC中，a等于3，b等于4，C等于30度，则这个三角形的面积等于多少？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "三角形面积等于二分之一的ab sinC，即0.5乘3乘4乘0.5，等于3。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 0.5}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 0.5}]}]}"
+    },
+    {
+     "id": "msj_h1043_q5",
+     "topicId": "msj_h1043",
+     "prompt": "利用正弦定理可以解决的两类解三角形问题是",
+     "question": "利用正弦定理可以解决的两类解三角形问题是",
+     "options": [
+      {
+       "label": "A",
+       "text": "已知两角与一边求其他边角、已知两边与其中一边的对角求角"
+      },
+      {
+       "label": "B",
+       "text": "已知三边求角"
+      },
+      {
+       "label": "C",
+       "text": "已知两边及其夹角求第三边"
+      },
+      {
+       "label": "D",
+       "text": "已知周长求面积"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "正弦定理把边与对角的正弦联系起来，所以已知两角与一边可以求其他边角，已知两边与其中一边的对角可以求另一边的对角；已知三边或两边夹角要用余弦定理。"
+    },
+    {
+     "id": "msj_h1043_q6",
+     "topicId": "msj_h1043",
+     "prompt": "在三角形ABC中，已知a，b和角A，当a小于b乘sinA时，这样的三角形有几个？",
+     "question": "在三角形ABC中，已知a，b和角A，当a小于b乘sinA时，这样的三角形有几个？",
+     "answer": "0个",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "作角A的一边取AC等于b，点C到另一边的距离等于b sinA；当a小于这个距离时，以C为圆心、a为半径的圆与另一边没有交点，所以这样的三角形有0个。"
+    },
+    {
+     "id": "msj_h1043_q7",
+     "topicId": "msj_h1043",
+     "prompt": "在三角形ABC中，A等于30度，a等于1，b等于根号3，则角B等于",
+     "question": "在三角形ABC中，A等于30度，a等于1，b等于根号3，则角B等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "60度"
+      },
+      {
+       "label": "B",
+       "text": "120度"
+      },
+      {
+       "label": "C",
+       "text": "60度或120度"
+      },
+      {
+       "label": "D",
+       "text": "90度"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由正弦定理，sinB等于b sinA除以a，即根号3乘0.5除以1等于二分之根号三；角B可以是60度或120度，两种情形下A加B都小于180度，所以都可以。"
+    },
+    {
+     "id": "msj_h1043_q8",
+     "topicId": "msj_h1043",
+     "prompt": "说明三角形中为什么大边对大角，并用正弦定理加以解释。",
+     "question": "说明三角形中为什么大边对大角，并用正弦定理加以解释。",
+     "answer": "由正弦定理，边与对角正弦的比等于同一个正数；所以边越大对角的正弦越大；三角形内角的正弦随角增大而增大，故大边对大角。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "由正弦定理，每条边与它所对角的正弦的比都是同一个正数，所以边越大，它所对角的正弦越大；三角形的角在0度到180度之间，正弦越大角越大，因此大边对大角。"
+    }
+   ],
+   "page": 97,
+   "misconceptions": [
+    "已知两边和其中一边的对角时直接认为只有一解",
+    "把正弦定理中的比值当成外接圆的半径",
+    "把大边对大角的关系判断反了"
+   ]
+  },
+  {
+   "id": "msj_h1044",
+   "description": "余弦定理、正弦定理的应用：解决测量距离、高度与角度的问题时，先根据题意画出示意图，把实际情境转化为三角形并标出已知的边和角，再选择余弦定理或正弦定理解这个三角形，最后把结果还原成实际答案；测量底部不能到达的高度时要在一条直线上取两个测点。",
+   "mastery_criteria": [
+    "能把测量问题转化为解三角形问题",
+    "会选择余弦定理或正弦定理求解",
+    "能根据仰角、方位角算出距离与高度"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "msj_h1044_q1",
+     "topicId": "msj_h1044",
+     "prompt": "测量两个都不能到达的点之间的距离，通常的做法是",
+     "question": "测量两个都不能到达的点之间的距离，通常的做法是",
+     "options": [
+      {
+       "label": "A",
+       "text": "选一个可以到达的点，测出到两点的距离和夹角，再用余弦定理"
+      },
+      {
+       "label": "B",
+       "text": "直接用尺量出两点间的距离"
+      },
+      {
+       "label": "C",
+       "text": "只用正弦定理就能解决"
+      },
+      {
+       "label": "D",
+       "text": "凭目测估计两点间的距离"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "在两个不可到达的点之外选一个可以到达的点，量出它到两点的距离和这两条视线的夹角，再用余弦定理算出两点间的距离。"
+    },
+    {
+     "id": "msj_h1044_q2",
+     "topicId": "msj_h1044",
+     "prompt": "在距离塔底30米的A处测得塔顶的仰角为45度，塔高为多少米？",
+     "question": "在距离塔底30米的A处测得塔顶的仰角为45度，塔高为多少米？",
+     "answer": 30,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "塔底、A处与塔顶构成直角三角形，塔高等于水平距离乘仰角的正切，tan45度等于1，所以塔高等于30乘1等于30米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 30}, {\"type\": \"num\", \"value\": 1}]}"
+    },
+    {
+     "id": "msj_h1044_q3",
+     "topicId": "msj_h1044",
+     "prompt": "从一点观测目标的视线与水平线所成的角，视线在水平线上方时叫作什么角？",
+     "question": "从一点观测目标的视线与水平线所成的角，视线在水平线上方时叫作什么角？",
+     "answer": "仰角",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "视线在水平线上方时，视线与水平线的夹角叫仰角；视线在水平线下方时叫俯角。"
+    },
+    {
+     "id": "msj_h1044_q4",
+     "topicId": "msj_h1044",
+     "prompt": "甲船以每小时3千米的速度向正东航行，乙船同时以每小时5千米的速度向北偏西30度方向航行，1小时后两船相距多少千米？",
+     "question": "甲船以每小时3千米的速度向正东航行，乙船同时以每小时5千米的速度向北偏西30度方向航行，1小时后两船相距多少千米？",
+     "answer": 7,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "两条航线的夹角是90度加30度等于120度，两船航行的距离分别是3千米和5千米；用余弦定理，距离的平方等于9加25减2乘3乘5乘cos120度，cos120度等于负0.5，所以等于34加15等于49，距离为7千米。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 9}, {\"type\": \"num\", \"value\": 25}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": -0.5}]}]}]}]}, {\"type\": \"num\", \"value\": 0.5}]}"
+    },
+    {
+     "id": "msj_h1044_q5",
+     "topicId": "msj_h1044",
+     "prompt": "解决测量问题时，第一步应当",
+     "question": "解决测量问题时，第一步应当",
+     "options": [
+      {
+       "label": "A",
+       "text": "直接代入公式计算"
+      },
+      {
+       "label": "B",
+       "text": "根据题意画出三角形示意图，标出已知量与未知量"
+      },
+      {
+       "label": "C",
+       "text": "先算三角形的面积"
+      },
+      {
+       "label": "D",
+       "text": "先求外接圆的半径"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "解三角形应用题的固定步骤是先根据题意画出示意图，把实际情境转化为三角形，标出已知的边和角，再选择定理求解。"
+    },
+    {
+     "id": "msj_h1044_q6",
+     "topicId": "msj_h1044",
+     "prompt": "在A处测得塔顶的仰角为30度，A到塔底的水平距离为30米，塔高为多少米？",
+     "question": "在A处测得塔顶的仰角为30度，A到塔底的水平距离为30米，塔高为多少米？",
+     "answer": "10根号3米",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "塔高等于水平距离乘仰角的正切，tan30度等于三分之根号三，所以塔高等于30乘三分之根号三，即10倍的根号三米。"
+    },
+    {
+     "id": "msj_h1044_q7",
+     "topicId": "msj_h1044",
+     "prompt": "测量底部不能到达的建筑物高度时，通常要",
+     "question": "测量底部不能到达的建筑物高度时，通常要",
+     "options": [
+      {
+       "label": "A",
+       "text": "只测一个仰角就够"
+      },
+      {
+       "label": "B",
+       "text": "在同一地点测两次仰角"
+      },
+      {
+       "label": "C",
+       "text": "在一条直线上取两点，分别测仰角，并量出两点间距离"
+      },
+      {
+       "label": "D",
+       "text": "只需量出水平距离"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "底部不可到达时，可以在同一条直线上取两个测点，分别测出仰角，并量出两点间的距离，用两个直角三角形的关系解出高度；只测一个仰角求不出高度。"
+    },
+    {
+     "id": "msj_h1044_q8",
+     "topicId": "msj_h1044",
+     "prompt": "要测量一条河的宽度，河对岸有一点A，这一侧可以到达B，C两点，说明测量方案。",
+     "question": "要测量一条河的宽度，河对岸有一点A，这一侧可以到达B，C两点，说明测量方案。",
+     "answer": "量出BC的长，测出角ABC与角ACB；由内角和求出角A；用正弦定理求AB；再用AB乘相应角的正弦得河宽。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "在这一侧选B，C两点，量出BC的长；在B处测出角ABC，在C处测出角ACB；用内角和求出角A，再用正弦定理求出AB或AC；最后在直角三角形中用边角关系算出河宽。"
+    }
+   ],
+   "page": 104,
+   "misconceptions": [
+    "画示意图时把仰角标在三角形内部",
+    "测量高度时忘记加上测角仪器的高度",
+    "已知三边却去用正弦定理，导致出现多解"
+   ]
+  },
+  {
+   "id": "msj_h1045",
+   "description": "复数的概念：引入虚数单位i，规定i的平方等于负1；形如a加bi（a，b为实数）的数叫复数，a叫实部，b叫虚部；当b等于0时是实数，当b不等于0时是虚数，当a等于0且b不等于0时是纯虚数；两个复数相等当且仅当实部与虚部分别相等。",
+   "mastery_criteria": [
+    "能说出复数、实部、虚部的含义",
+    "能判断一个复数是实数、虚数还是纯虚数",
+    "会用复数相等的条件求未知数"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1045_q1",
+     "topicId": "msj_h1045",
+     "prompt": "复数z等于a加bi（a，b为实数）的虚部是",
+     "question": "复数z等于a加bi（a，b为实数）的虚部是",
+     "options": [
+      {
+       "label": "A",
+       "text": "a"
+      },
+      {
+       "label": "B",
+       "text": "bi"
+      },
+      {
+       "label": "C",
+       "text": "a加b"
+      },
+      {
+       "label": "D",
+       "text": "b"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "复数a加bi中，a叫实部，b叫虚部，虚部是实数b，不能写成bi，所以虚部是b。"
+    },
+    {
+     "id": "msj_h1045_q2",
+     "topicId": "msj_h1045",
+     "prompt": "当复数a加bi中的b等于0时，这个复数是什么数？",
+     "question": "当复数a加bi中的b等于0时，这个复数是什么数？",
+     "answer": "实数",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "复数a加bi中，当b等于0时它等于实数a，所以这样的复数是实数；当b不等于0时才是虚数。"
+    },
+    {
+     "id": "msj_h1045_q3",
+     "topicId": "msj_h1045",
+     "prompt": "下列各数中是纯虚数的是",
+     "question": "下列各数中是纯虚数的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "2加3i"
+      },
+      {
+       "label": "B",
+       "text": "负2"
+      },
+      {
+       "label": "C",
+       "text": "3i"
+      },
+      {
+       "label": "D",
+       "text": "0"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "纯虚数要求实部为0且虚部不为0；3i的实部是0，虚部是3，所以3i是纯虚数；0是实数，负2也是实数。"
+    },
+    {
+     "id": "msj_h1045_q4",
+     "topicId": "msj_h1045",
+     "prompt": "若复数(x减1)加(y加2)i等于0（x，y为实数），则x加y等于多少？",
+     "question": "若复数(x减1)加(y加2)i等于0（x，y为实数），则x加y等于多少？",
+     "answer": -1,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由复数相等的条件，实部与虚部都等于0，所以x减1等于0，y加2等于0，得x等于1、y等于负2，于是x加y等于负1。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": -2}]}"
+    },
+    {
+     "id": "msj_h1045_q5",
+     "topicId": "msj_h1045",
+     "prompt": "复数a加bi（a，b为实数）是纯虚数的条件是什么？",
+     "question": "复数a加bi（a，b为实数）是纯虚数的条件是什么？",
+     "answer": "a等于0且b不等于0",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "纯虚数要求实部等于0且虚部不等于0，所以条件是a等于0且b不等于0；若b也等于0，这个数就是实数0。"
+    },
+    {
+     "id": "msj_h1045_q6",
+     "topicId": "msj_h1045",
+     "prompt": "关于复数，下列说法正确的是",
+     "question": "关于复数，下列说法正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "实数一定是复数"
+      },
+      {
+       "label": "B",
+       "text": "虚数一定是纯虚数"
+      },
+      {
+       "label": "C",
+       "text": "复数的虚部一定是正数"
+      },
+      {
+       "label": "D",
+       "text": "复数之间不能相等"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "实数可以写成b等于0的复数，所以实数一定是复数；虚数中实部为0的才是纯虚数；复数的虚部可以是负数；两个复数只要实部虚部分别相等就相等。"
+    },
+    {
+     "id": "msj_h1045_q7",
+     "topicId": "msj_h1045",
+     "prompt": "实数集与复数集的关系是：实数集是复数集的什么？",
+     "question": "实数集与复数集的关系是：实数集是复数集的什么？",
+     "answer": "真子集",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "每个实数都是虚部为0的复数，而像i这样的数不是实数，所以实数集是复数集的真子集，记作R包含于C。"
+    },
+    {
+     "id": "msj_h1045_q8",
+     "topicId": "msj_h1045",
+     "prompt": "判断复数z等于(m减1)加(m加2)i是纯虚数的条件，并说明理由。",
+     "question": "判断复数z等于(m减1)加(m加2)i是纯虚数的条件，并说明理由。",
+     "answer": "纯虚数要求实部为0且虚部不为0；令m减1等于0得m等于1；此时虚部为3，不为0；所以m等于1时z是纯虚数。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "纯虚数要求实部等于0且虚部不等于0；由m减1等于0得m等于1；此时虚部m加2等于3，不等于0，所以当m等于1时这个复数是纯虚数。"
+    }
+   ],
+   "page": 119,
+   "misconceptions": [
+    "把虚部写成bi，把b与bi混为一谈",
+    "认为所有虚数都是纯虚数",
+    "判断两个复数相等时只比较实部"
+   ]
+  },
+  {
+   "id": "msj_h1046",
+   "description": "复数的运算：两个复数相加、相减时实部与实部、虚部与虚部分别相加减；相乘时按多项式乘法展开，再把i的平方换成负1并合并；相除时把分子分母同乘分母的共轭复数，使分母实数化；此外还要会用i的幂的周期性化简。",
+   "mastery_criteria": [
+    "会进行复数的加减乘除运算",
+    "会用共轭复数把分母实数化",
+    "会利用i的幂的周期性化简"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msj_h1046_q1",
+     "topicId": "msj_h1046",
+     "prompt": "两个复数相加，法则是",
+     "question": "两个复数相加，法则是",
+     "options": [
+      {
+       "label": "A",
+       "text": "直接相加两个实部"
+      },
+      {
+       "label": "B",
+       "text": "直接相加两个虚部"
+      },
+      {
+       "label": "C",
+       "text": "把虚部换成实部再相加"
+      },
+      {
+       "label": "D",
+       "text": "实部与实部相加，虚部与虚部相加"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "复数相加时，把实部与实部相加、虚部与虚部相加，再把结果写成a加bi的形式，与多项式的合并同类项一致。"
+    },
+    {
+     "id": "msj_h1046_q2",
+     "topicId": "msj_h1046",
+     "prompt": "复数(1加2i)加(3减i)的虚部是多少？",
+     "question": "复数(1加2i)加(3减i)的虚部是多少？",
+     "answer": 1,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "相加时虚部与虚部相加，即2加负1等于1，所以和的虚部是1，这个和是4加i。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 1}]}"
+    },
+    {
+     "id": "msj_h1046_q3",
+     "topicId": "msj_h1046",
+     "prompt": "复数(1加i)乘以(1减i)等于多少？",
+     "question": "复数(1加i)乘以(1减i)等于多少？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "按多项式乘法展开得1减i加i减i的平方，其中i的平方等于负1，所以等于1加1等于2；也可以看成两个共轭复数的积等于模的平方。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 2}]}]}"
+    },
+    {
+     "id": "msj_h1046_q4",
+     "topicId": "msj_h1046",
+     "prompt": "复数a加bi的共轭复数是什么？",
+     "question": "复数a加bi的共轭复数是什么？",
+     "answer": "a减bi",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "实部相等、虚部互为相反数的两个复数互为共轭复数，所以a加bi的共轭复数是a减bi。"
+    },
+    {
+     "id": "msj_h1046_q5",
+     "topicId": "msj_h1046",
+     "prompt": "复数除法中，把分母实数化的方法是",
+     "question": "复数除法中，把分母实数化的方法是",
+     "options": [
+      {
+       "label": "A",
+       "text": "分子分母同乘分母的共轭复数"
+      },
+      {
+       "label": "B",
+       "text": "分子分母同乘分母本身"
+      },
+      {
+       "label": "C",
+       "text": "只把分子乘分母"
+      },
+      {
+       "label": "D",
+       "text": "把两个复数的实部相减"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个复数相除时，把分子与分母同时乘分母的共轭复数，分母就变成实数，从而把商写成a加bi的形式。"
+    },
+    {
+     "id": "msj_h1046_q6",
+     "topicId": "msj_h1046",
+     "prompt": "计算i的4次方，结果等于多少？",
+     "question": "计算i的4次方，结果等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "负1"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "i"
+      },
+      {
+       "label": "D",
+       "text": "负i"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "i的平方等于负1，i的4次方等于i的平方的平方，即负1的平方等于1；由此i的幂按4为周期重复出现。"
+    },
+    {
+     "id": "msj_h1046_q7",
+     "topicId": "msj_h1046",
+     "prompt": "计算i的2026次方，结果等于多少？",
+     "question": "计算i的2026次方，结果等于多少？",
+     "answer": "负1",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "i的幂以4为周期，2026除以4余2，所以i的2026次方等于i的平方，等于负1。"
+    },
+    {
+     "id": "msj_h1046_q8",
+     "topicId": "msj_h1046",
+     "prompt": "复数的乘法与多项式的乘法有什么相同点和不同点？",
+     "question": "复数的乘法与多项式的乘法有什么相同点和不同点？",
+     "answer": "相同点：都按多项式乘法展开并合并同类项；不同点：要把i的平方换成负1，再把实部与虚部分别合并成a加bi。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "相同点是都按多项式乘法展开，逐项相乘后再合并同类项；不同点是要把i的平方换成负1，最后把实部与虚部分别合并，结果写成a加bi的形式。"
+    }
+   ],
+   "page": 123,
+   "misconceptions": [
+    "计算时把i的平方仍当作i参与运算",
+    "相除时分子分母同乘分母本身而不是共轭复数",
+    "把共轭复数的虚部符号写错"
+   ]
+  },
+  {
+   "id": "msj_h1047",
+   "description": "复数的几何意义：复数a加bi与复平面内的点(a，b)一一对应，也与以原点为起点、以该点为终点的向量一一对应；复数的模就是对应向量的长度，两个复数差的模表示复平面内两点间的距离，复数的加减法对应向量的加减法。",
+   "mastery_criteria": [
+    "能在复平面内画出复数对应的点与向量",
+    "会求复数的模并说出它的几何意义",
+    "会用复数差的模表示两点间的距离"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1047_q1",
+     "topicId": "msj_h1047",
+     "prompt": "复数a加bi在复平面内对应的点是",
+     "question": "复数a加bi在复平面内对应的点是",
+     "options": [
+      {
+       "label": "A",
+       "text": "(b，a)"
+      },
+      {
+       "label": "B",
+       "text": "(a，负b)"
+      },
+      {
+       "label": "C",
+       "text": "(负a，b)"
+      },
+      {
+       "label": "D",
+       "text": "(a，b)"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "复数a加bi与复平面内横坐标为a、纵坐标为b的点一一对应，所以对应的点是(a，b)，不能把两个坐标写反。"
+    },
+    {
+     "id": "msj_h1047_q2",
+     "topicId": "msj_h1047",
+     "prompt": "在复平面内，x轴叫作实轴，y轴叫作什么轴？",
+     "question": "在复平面内，x轴叫作实轴，y轴叫作什么轴？",
+     "answer": "虚轴",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "复平面内x轴上的点表示实数，所以x轴叫实轴；y轴上的点表示纯虚数，所以y轴叫虚轴。"
+    },
+    {
+     "id": "msj_h1047_q3",
+     "topicId": "msj_h1047",
+     "prompt": "复数3加4i的模等于多少？",
+     "question": "复数3加4i的模等于多少？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "复数的模等于对应向量的长度，用坐标计算等于3的平方加4的平方再开方，即25开方等于5。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 2}]}]}, {\"type\": \"num\", \"value\": 0.5}]}"
+    },
+    {
+     "id": "msj_h1047_q4",
+     "topicId": "msj_h1047",
+     "prompt": "复数的模在几何上表示",
+     "question": "复数的模在几何上表示",
+     "options": [
+      {
+       "label": "A",
+       "text": "对应向量的长度"
+      },
+      {
+       "label": "B",
+       "text": "对应点的横坐标"
+      },
+      {
+       "label": "C",
+       "text": "对应向量的方向"
+      },
+      {
+       "label": "D",
+       "text": "对应点的纵坐标"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "复数a加bi的模等于它对应向量的长度，也等于复平面内对应点到原点的距离，所以模是一个非负实数。"
+    },
+    {
+     "id": "msj_h1047_q5",
+     "topicId": "msj_h1047",
+     "prompt": "两个复数之和对应的向量，等于这两个复数对应向量的什么？",
+     "question": "两个复数之和对应的向量，等于这两个复数对应向量的什么？",
+     "answer": "和",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "复数加法对应向量的加法，所以两个复数之和对应的向量等于这两个复数对应向量的和，这就是复数加法的几何意义。"
+    },
+    {
+     "id": "msj_h1047_q6",
+     "topicId": "msj_h1047",
+     "prompt": "复数z1等于1加2i，z2等于4加6i，则z1减z2的模等于多少？",
+     "question": "复数z1等于1加2i，z2等于4加6i，则z1减z2的模等于多少？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "z1减z2等于负3减4i，它的模等于3的平方加4的平方再开方，即25开方等于5；这也表示两点(1，2)与(4，6)之间的距离。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 4}]}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 6}]}, {\"type\": \"num\", \"value\": 2}]}]}, {\"type\": \"num\", \"value\": 0.5}]}"
+    },
+    {
+     "id": "msj_h1047_q7",
+     "topicId": "msj_h1047",
+     "prompt": "满足模等于2的复数z在复平面内对应的点的集合是",
+     "question": "满足模等于2的复数z在复平面内对应的点的集合是",
+     "options": [
+      {
+       "label": "A",
+       "text": "一条直线"
+      },
+      {
+       "label": "B",
+       "text": "一个圆"
+      },
+      {
+       "label": "C",
+       "text": "一个点"
+      },
+      {
+       "label": "D",
+       "text": "一个正方形"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "复数z的模等于它对应点到原点的距离，距离恒等于2的点组成以原点为圆心、2为半径的圆。"
+    },
+    {
+     "id": "msj_h1047_q8",
+     "topicId": "msj_h1047",
+     "prompt": "说明复数、复平面内的点与向量三者之间的对应关系。",
+     "question": "说明复数、复平面内的点与向量三者之间的对应关系。",
+     "answer": "复数a加bi对应点(a，b)，也对应以原点为起点的向量；点或起点在原点的向量又唯一确定一个复数；三者一一对应。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "每个复数a加bi对应复平面内唯一的点(a，b)；也对应以原点为起点、以该点为终点的向量；反过来，复平面内的点或起点在原点的向量也唯一确定一个复数，所以三者一一对应。"
+    }
+   ],
+   "page": 129,
+   "misconceptions": [
+    "把复数a加bi对应的点写成(b，a)",
+    "认为复数的模可能是负数",
+    "把两个复数差的模当作两点间距离的平方"
+   ]
+  },
+  {
+   "id": "msj_h1048",
+   "description": "复数的三角形式：非零复数z等于a加bi可以写成r倍(cosθ加isinθ)，其中r是复数的模，θ是复数的辐角；满足0小于等于θ小于2π的辐角叫辐角主值；三角形式下乘法是模相乘、辐角相加，除法是模相除、辐角相减。",
+   "mastery_criteria": [
+    "会把复数化成三角形式",
+    "会求复数的模与辐角主值",
+    "会用三角形式进行乘法与除法运算"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "msj_h1048_q1",
+     "topicId": "msj_h1048",
+     "prompt": "复数z等于r倍(cosθ加isinθ)中，r表示",
+     "question": "复数z等于r倍(cosθ加isinθ)中，r表示",
+     "options": [
+      {
+       "label": "A",
+       "text": "复数的实部"
+      },
+      {
+       "label": "B",
+       "text": "复数的辐角"
+      },
+      {
+       "label": "C",
+       "text": "复数的虚部"
+      },
+      {
+       "label": "D",
+       "text": "复数的模"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "三角形式r倍(cosθ加isinθ)中，r是复数的模，θ是复数的辐角；模一定是非负实数。"
+    },
+    {
+     "id": "msj_h1048_q2",
+     "topicId": "msj_h1048",
+     "prompt": "非零复数z的辐角主值θ的取值范围是什么？",
+     "question": "非零复数z的辐角主值θ的取值范围是什么？",
+     "answer": "0小于等于θ小于2π",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "一个非零复数的辐角有无限多个，相差2π的整数倍；其中满足0小于等于θ小于2π的那个辐角叫辐角主值，所以范围是0到2π，包含0但不包含2π。"
+    },
+    {
+     "id": "msj_h1048_q3",
+     "topicId": "msj_h1048",
+     "prompt": "复数负1加i的模的平方等于多少？",
+     "question": "复数负1加i的模的平方等于多少？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "复数的模等于实部与虚部平方和的算术平方根，模的平方就等于实部平方加虚部平方，即1加1等于2。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": -1}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 2}]}]}"
+    },
+    {
+     "id": "msj_h1048_q4",
+     "topicId": "msj_h1048",
+     "prompt": "用三角形式计算两个复数的乘积时",
+     "question": "用三角形式计算两个复数的乘积时",
+     "options": [
+      {
+       "label": "A",
+       "text": "模相乘，辐角相加"
+      },
+      {
+       "label": "B",
+       "text": "模相加，辐角相乘"
+      },
+      {
+       "label": "C",
+       "text": "模相乘，辐角相乘"
+      },
+      {
+       "label": "D",
+       "text": "模相加，辐角相加"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "三角形式下乘法法则是模相乘、辐角相加，所以积的模等于两个复数模的积，积的辐角等于两个辐角的和。"
+    },
+    {
+     "id": "msj_h1048_q5",
+     "topicId": "msj_h1048",
+     "prompt": "复数z1等于2倍(cos30度加isin30度)，z2等于3倍(cos60度加isin60度)，则z1乘z2的模等于多少？",
+     "question": "复数z1等于2倍(cos30度加isin30度)，z2等于3倍(cos60度加isin60度)，则z1乘z2的模等于多少？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "三角形式下两个复数相乘，积的模等于两个复数模的积，即2乘3等于6；积的辐角等于30度加60度等于90度。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_h1048_q6",
+     "topicId": "msj_h1048",
+     "prompt": "用三角形式计算两个复数的商时，商的辐角等于被除数的辐角减去除数的辐角所得的什么？",
+     "question": "用三角形式计算两个复数的商时，商的辐角等于被除数的辐角减去除数的辐角所得的什么？",
+     "answer": "差",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "三角形式下两个复数相除，商的模等于模的商，商的辐角等于被除数的辐角减去除数的辐角所得的差，这正是除法与乘法在辐角上相反的表现。"
+    },
+    {
+     "id": "msj_h1048_q7",
+     "topicId": "msj_h1048",
+     "prompt": "复数负根号3加i的辐角主值是",
+     "question": "复数负根号3加i的辐角主值是",
+     "options": [
+      {
+       "label": "A",
+       "text": "30度"
+      },
+      {
+       "label": "B",
+       "text": "210度"
+      },
+      {
+       "label": "C",
+       "text": "150度"
+      },
+      {
+       "label": "D",
+       "text": "330度"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "这个复数的模为2，实部为负根号3、虚部为1，对应点在第二象限；cosθ等于负二分之根号三，sinθ等于二分之一，在0到2π内满足条件的角是150度。"
+    },
+    {
+     "id": "msj_h1048_q8",
+     "topicId": "msj_h1048",
+     "prompt": "用三角形式说明复数乘法的几何意义。",
+     "question": "用三角形式说明复数乘法的几何意义。",
+     "answer": "积的模等于两模之积，积的辐角等于两辐角之和；几何上就是把第一个复数对应的向量先伸缩（倍数等于另一个复数的模）再旋转（角度等于另一个复数的辐角）。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "按三角形式的乘法法则，积的模等于两个复数模的乘积，积的辐角等于两个复数辐角的和；所以乘法相当于把第一个复数对应的向量先按第二个复数的模伸缩，再按第二个复数的辐角旋转。"
+    }
+   ],
+   "page": 133,
+   "misconceptions": [
+    "把辐角主值的范围写成全体实数",
+    "乘法时把两个辐角也相乘",
+    "在三角形式中把r写成复数本身"
+   ]
+  }
+ ]
+}

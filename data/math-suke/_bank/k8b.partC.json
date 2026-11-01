@@ -1,0 +1,2024 @@
+{
+ "tag": "k8b",
+ "book": "苏科版八年级下册",
+ "unit_points": [],
+ "lesson_points": [
+  {
+   "id": "msk_p1081",
+   "page": 104,
+   "type": "conceptual",
+   "description": "因式分解的概念：由数的整除与质因数分解类比引入，理解因式的意义，掌握把一个多项式表示成几个整式乘积形式的变形叫作多项式的因式分解，并弄清它与整式乘法互为逆变形。",
+   "mastery_criteria": [
+    "能说出因式分解的定义，并判断一个变形是不是因式分解",
+    "能举例说明因式分解与整式乘法是互逆变形的两种书写方向"
+   ],
+   "misconceptions": [
+    "把等号右边带有加减号的式子也当作因式分解，忽略了因式分解要求右边必须是几个整式的乘积形式",
+    "把整式乘法与因式分解混为一谈，看到 (x+2)(x-2) 这种写法就认为一定是因式分解"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1081_q1",
+     "topicId": "msk_p1081",
+     "prompt": "把一个多项式表示成几个整式的乘积形式，这样的变形叫作多项式的（ ）",
+     "question": "把一个多项式表示成几个整式的乘积形式，这样的变形叫作多项式的（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "因式分解"
+      },
+      {
+       "label": "B",
+       "text": "整式乘法"
+      },
+      {
+       "label": "C",
+       "text": "乘法分配律"
+      },
+      {
+       "label": "D",
+       "text": "约分"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材给出的定义是：把一个多项式表示成几个整式的乘积形式，这样的变形叫作多项式的因式分解，因式分解也可以简称为分解因式。整式乘法是把几个整式的积展开成多项式，方向正好相反。"
+    },
+    {
+     "id": "msk_p1081_q2",
+     "topicId": "msk_p1081",
+     "prompt": "下列等式从左到右的变形中，属于整式乘法的是（ ）",
+     "question": "下列等式从左到右的变形中，属于整式乘法的是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "x²-4=(x+2)(x-2)"
+      },
+      {
+       "label": "B",
+       "text": "x²-4+3x=(x+2)(x-2)+3x"
+      },
+      {
+       "label": "C",
+       "text": "(x+2)(x-2)=x²减4"
+      },
+      {
+       "label": "D",
+       "text": "x²+4x+4=(x+2)²"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "整式乘法是把几个整式的积展开成一个多项式，等号左边是积、右边是多项式，所以 (x+2)(x-2)=x²-4 是整式乘法。其余三个等式的左边是多项式，属于把多项式写成乘积形式的方向。"
+    },
+    {
+     "id": "msk_p1081_q3",
+     "topicId": "msk_p1081",
+     "prompt": "下列从左到右的变形中，是因式分解的是（ ）",
+     "question": "下列从左到右的变形中，是因式分解的是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(x+3)(x-3)=x²-9"
+      },
+      {
+       "label": "B",
+       "text": "x²-9=(x+3)(x-3)"
+      },
+      {
+       "label": "C",
+       "text": "x²-9+4x=(x+3)(x-3)+4x"
+      },
+      {
+       "label": "D",
+       "text": "x²-9=x·x再减9"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "因式分解要求左边是一个多项式、右边是几个整式的乘积。x²-9=(x+3)(x-3) 符合这个形式；(x+3)(x-3)=x²-9 是整式乘法；另两个等式右边带加减号，不是乘积形式，所以都不是因式分解。"
+    },
+    {
+     "id": "msk_p1081_q4",
+     "topicId": "msk_p1081",
+     "prompt": "若多项式 a²+6a+k 可以分解为 (a+2)(a+4)，求 k 的值。",
+     "question": "若多项式 a²+6a+k 可以分解为 (a+2)(a+4)，求 k 的值。",
+     "answer": "8",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "先把 (a+2)(a+4) 展开，得 a²+6a+8，与 a²+6a+k 比较同类项的系数，可得常数项 k 等于 2 乘 4，即 k=8。这也说明因式分解是否正确，可以用整式乘法检验回去。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msk_p1081_q5",
+     "topicId": "msk_p1081",
+     "prompt": "因式分解与整式乘法之间的关系是（ ）",
+     "question": "因式分解与整式乘法之间的关系是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "完全相同"
+      },
+      {
+       "label": "B",
+       "text": "没有关系"
+      },
+      {
+       "label": "C",
+       "text": "因式分解就是整式乘法的一种特殊情况"
+      },
+      {
+       "label": "D",
+       "text": "互为逆变形"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材通过两组等式强调：第一组等式表示两个整式的乘法运算，第二组等式是把一个多项式表示成两个整式的乘积形式。这两个方向互为逆变形，所以可以用乘法检验分解的结果。"
+    },
+    {
+     "id": "msk_p1081_q6",
+     "topicId": "msk_p1081",
+     "prompt": "若 x²+kx+6 可以分解为 (x+2)(x+3)，求 k 的值。",
+     "question": "若 x²+kx+6 可以分解为 (x+2)(x+3)，求 k 的值。",
+     "answer": "5",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "把 (x+2)(x+3) 展开得 x²+5x+6，与 x²+kx+6 比较一次项系数，得 k=5。方法上就是把两个常数 2 与 3 相加得到一次项系数，相乘得到常数项 6。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msk_p1081_q7",
+     "topicId": "msk_p1081",
+     "prompt": "已知 x²+mx-6 可以分解为 (x+2)(x-3)，则 m 的值是（ ）",
+     "question": "已知 x²+mx-6 可以分解为 (x+2)(x-3)，则 m 的值是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "-1"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "-5"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "展开 (x+2)(x-3) 得 x²-x-6，与 x²+mx-6 比较一次项系数，得 m=-1。检验时可以看常数项：2 与 -3 的积是 -6，与题目一致；2 与 -3 的和是 -1，这就是一次项系数。"
+    },
+    {
+     "id": "msk_p1081_q8",
+     "topicId": "msk_p1081",
+     "prompt": "把一个多项式表示成几个整式的乘积，其中每个整式都叫作这个多项式的（ ）。",
+     "question": "把一个多项式表示成几个整式的乘积，其中每个整式都叫作这个多项式的（ ）。",
+     "answer": "因式",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材的原话是：如果一个多项式可以表示成若干个整式的乘积，那么其中的每个整式都叫作这个多项式的因式。所以括号里应填因式，不要与公因式混淆，公因式是各项都含有的那一个因式。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1082",
+   "page": 107,
+   "type": "procedural",
+   "description": "提公因式法：理解公因式的意义，掌握把各项的公因式提到括号外、写成公因式与另一个多项式的积的分解方法，并会在首项系数为负时把负号一并提出。",
+   "mastery_criteria": [
+    "能找出多项式各项的公因式，包括系数与字母两部分",
+    "能用提公因式法把含公因式的多项式分解到底，首项为负时符号处理正确"
+   ],
+   "misconceptions": [
+    "只把系数部分作为公因式提出，漏掉各项相同的字母或因式",
+    "提公因式后括号内漏写 1，例如把 6ab(2bc-1) 写成 6ab(2bc)"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1082_q1",
+     "topicId": "msk_p1082",
+     "prompt": "多项式各项都含有的因式称为这个多项式各项的（ ）",
+     "question": "多项式各项都含有的因式称为这个多项式各项的（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "因式"
+      },
+      {
+       "label": "B",
+       "text": "公因式"
+      },
+      {
+       "label": "C",
+       "text": "最简公因式"
+      },
+      {
+       "label": "D",
+       "text": "同类项"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材以 a²+ac+ad 为例，指出各项都含有因式 a，像这样的因式称为多项式各项的公因式。公因式是各项公共的那一个因式，而因式是对某个多项式而言的整式。"
+    },
+    {
+     "id": "msk_p1082_q2",
+     "topicId": "msk_p1082",
+     "prompt": "多项式 3x²+6x 各项的公因式是（ ）",
+     "question": "多项式 3x²+6x 各项的公因式是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "x"
+      },
+      {
+       "label": "C",
+       "text": "3x"
+      },
+      {
+       "label": "D",
+       "text": "3x²"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "公因式的系数取各项系数的最大公因数 3，字母取各项都含有的字母的最低次幂 x 的一次方，所以公因式是 3x。只取 3 或只取 x 都不完整，3x² 则不是第二项的因式。"
+    },
+    {
+     "id": "msk_p1082_q3",
+     "topicId": "msk_p1082",
+     "prompt": "把 12ab²c-6ab 分解因式，结果是（ ）",
+     "question": "把 12ab²c-6ab 分解因式，结果是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "6ab(2bc-1)"
+      },
+      {
+       "label": "B",
+       "text": "6ab(2bc+1)"
+      },
+      {
+       "label": "C",
+       "text": "6a(2b²c-b)"
+      },
+      {
+       "label": "D",
+       "text": "6ab(2bc-2)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两项的公因式是 6ab，提出后第一项剩下 2bc，第二项剩下 -1，所以结果是 6ab(2bc-1)。注意第二项被完全提出后括号里要写 -1，不能省略，可以用乘法展开检验。"
+    },
+    {
+     "id": "msk_p1082_q4",
+     "topicId": "msk_p1082",
+     "prompt": "利用提公因式法计算 99²+99 的值。",
+     "question": "利用提公因式法计算 99²+99 的值。",
+     "answer": "9900",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "99²+99 两项都含有公因式 99，提出 99 得 99 乘 (99+1)，即 99 乘 100，结果是 9900。教材正是用这种提公因式的办法说明这类式子能被 100 整除。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 99}, {\"type\": \"num\", \"value\": 100}]}"
+    },
+    {
+     "id": "msk_p1082_q5",
+     "topicId": "msk_p1082",
+     "prompt": "把 -2x²+4x 分解因式，结果是（ ）",
+     "question": "把 -2x²+4x 分解因式，结果是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x(x-2)"
+      },
+      {
+       "label": "B",
+       "text": "-2x(x+2)"
+      },
+      {
+       "label": "C",
+       "text": "-x(2x+4)"
+      },
+      {
+       "label": "D",
+       "text": "-2x(x-2)"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "首项系数为负时，通常把负号作为公因式的符号，公因式取 -2x，提出后括号里依次是 x 与 -2，所以结果是 -2x(x-2)。展开检验得 -2x²+4x，与原式相同。"
+    },
+    {
+     "id": "msk_p1082_q6",
+     "topicId": "msk_p1082",
+     "prompt": "把 15x(a+c)-5y(a+c) 分解因式，结果是（ ）",
+     "question": "把 15x(a+c)-5y(a+c) 分解因式，结果是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "5(a+c)(3x+y)"
+      },
+      {
+       "label": "B",
+       "text": "5(a+c)(3x-y)"
+      },
+      {
+       "label": "C",
+       "text": "5(a-c)(3x-y)"
+      },
+      {
+       "label": "D",
+       "text": "(a+c)(3x-y)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两项含有相同的因式 (a+c)，把它作为公因式提出，系数部分提出最大公因数 5，得到 5(a+c)(3x-y)。括回检验：5(a+c) 乘 3x 得 15x(a+c)，乘 -y 得 -5y(a+c)，与原式一致。"
+    },
+    {
+     "id": "msk_p1082_q7",
+     "topicId": "msk_p1082",
+     "prompt": "利用提公因式法计算 3.14×2.5+3.14×7.5 的值。",
+     "question": "利用提公因式法计算 3.14×2.5+3.14×7.5 的值。",
+     "answer": "31.4",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "两项都含有因数 3.14，提出 3.14 后括号内是 2.5+7.5=10，所以原式等于 3.14 乘 10，结果是 31.4。提公因式可以把两个乘法变成一次乘法，算起来更快也更不容易错。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3.14}, {\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 2.5}, {\"type\": \"num\", \"value\": 7.5}]}]}"
+    },
+    {
+     "id": "msk_p1082_q8",
+     "topicId": "msk_p1082",
+     "prompt": "把多项式各项的公因式提到括号外，把多项式写成公因式与另一个多项式的积的形式，这种分解因式的方法叫作（ ）。",
+     "question": "把多项式各项的公因式提到括号外，把多项式写成公因式与另一个多项式的积的形式，这种分解因式的方法叫作（ ）。",
+     "answer": "提公因式法",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材在给出 a²+ac+ad=a(a+c+d) 之后总结：当多项式的各项含有公因式时，可以采用添括号的方法把公因式提到括号外，把多项式写成公因式与另一个多项式的积的形式，这种分解因式的方法叫作提公因式法。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1083",
+   "page": 110,
+   "type": "procedural",
+   "description": "公式法：把平方差公式与完全平方公式反过来使用，掌握 a²-b²=(a+b)(a-b) 与 a²±2ab+b²=(a±b)² 的分解，并能用于求值。",
+   "mastery_criteria": [
+    "能识别可化为平方差或完全平方形式的多项式，并写出分解结果",
+    "能判断一个多项式能否直接用平方差公式分解，说明哪一项不是平方形式"
+   ],
+   "misconceptions": [
+    "把平方和 a²+b² 也当成能用平方差公式分解，误写成 (a+b)(a-b)",
+    "分解 9(a+b)²-4(a-b)² 时把底数写错，没有分别把 3(a+b) 与 2(a-b) 看作两个整体"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1083_q1",
+     "topicId": "msk_p1083",
+     "prompt": "逆向使用平方差公式、完全平方公式等乘法公式进行因式分解的方法叫作（ ）",
+     "question": "逆向使用平方差公式、完全平方公式等乘法公式进行因式分解的方法叫作（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "提公因式法"
+      },
+      {
+       "label": "B",
+       "text": "配方法"
+      },
+      {
+       "label": "C",
+       "text": "公式法"
+      },
+      {
+       "label": "D",
+       "text": "换元法"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材先把平方差公式、完全平方公式反过来写，再指出逆向使用这些乘法公式进行因式分解的方法叫作公式法。它与提公因式法一样，都是分解因式的基本方法。"
+    },
+    {
+     "id": "msk_p1083_q2",
+     "topicId": "msk_p1083",
+     "prompt": "把 x²-16 分解因式，结果是（ ）",
+     "question": "把 x²-16 分解因式，结果是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(x-4)²"
+      },
+      {
+       "label": "B",
+       "text": "(x+4)(x-4)"
+      },
+      {
+       "label": "C",
+       "text": "(x+4)²"
+      },
+      {
+       "label": "D",
+       "text": "(x+16)(x-1)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "16 等于 4 的平方，所以 x²-16 是两个数的平方差，用平方差公式得 (x+4)(x-4)。展开检验：x²-4x+4x-16=x²-16，与原式一致；(x-4)² 展开后多出 -8x，不正确。"
+    },
+    {
+     "id": "msk_p1083_q3",
+     "topicId": "msk_p1083",
+     "prompt": "把 4x²-9y² 分解因式，结果是（ ）",
+     "question": "把 4x²-9y² 分解因式，结果是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(2x+3y)(2x-3y)"
+      },
+      {
+       "label": "B",
+       "text": "(2x-3y)²"
+      },
+      {
+       "label": "C",
+       "text": "(4x+3y)(x-3y)"
+      },
+      {
+       "label": "D",
+       "text": "(2x+9y)(2x-y)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "4x² 是 2x 的平方，9y² 是 3y 的平方，用平方差公式把 2x 与 3y 分别看作整体，得到 (2x+3y)(2x-3y)。展开检验中间两项 6xy 与 -6xy 相消，正好回到 4x²-9y²。"
+    },
+    {
+     "id": "msk_p1083_q4",
+     "topicId": "msk_p1083",
+     "prompt": "若 9a²-kb² 可以分解为 (3a+2b)(3a-2b)，求 k 的值。",
+     "question": "若 9a²-kb² 可以分解为 (3a+2b)(3a-2b)，求 k 的值。",
+     "answer": "4",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由 (3a+2b)(3a-2b) 逆用平方差公式可知它等于 (3a)²-(2b)²，即 9a²-4b²，与 9a²-kb² 比较可得 k=4。这里 k 就是 2 的平方，即 4。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1083_q5",
+     "topicId": "msk_p1083",
+     "prompt": "下列多项式中，不能直接用平方差公式分解因式的是（ ）",
+     "question": "下列多项式中，不能直接用平方差公式分解因式的是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "x²-9y²"
+      },
+      {
+       "label": "B",
+       "text": "4-25x²"
+      },
+      {
+       "label": "C",
+       "text": "a²b²-1"
+      },
+      {
+       "label": "D",
+       "text": "x²+4"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "平方差公式要求两项的符号相反，x²+4 是平方和，不能直接用平方差公式分解。x²-9y²、4-25x²、a²b²-1 都是两个式子的平方相减，都可以直接分解。"
+    },
+    {
+     "id": "msk_p1083_q6",
+     "topicId": "msk_p1083",
+     "prompt": "把 9(a+b)²-4(a-b)² 分解因式，结果是（ ）",
+     "question": "把 9(a+b)²-4(a-b)² 分解因式，结果是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(5a-b)(a+5b)"
+      },
+      {
+       "label": "B",
+       "text": "(5a+b)(a-5b)"
+      },
+      {
+       "label": "C",
+       "text": "(5a+b)(a+5b)"
+      },
+      {
+       "label": "D",
+       "text": "(3a+b)(a+3b)"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "把 3(a+b) 与 2(a-b) 分别看作整体用平方差公式：原式等于 [3(a+b)+2(a-b)] 乘 [3(a+b)-2(a-b)]，前一个括号化简得 5a+b，后一个化简得 a+5b。教材的例3就是这一题的完整过程。"
+    },
+    {
+     "id": "msk_p1083_q7",
+     "topicId": "msk_p1083",
+     "prompt": "一个圆环形观景台，外圆半径 R 为 12.5 米，内圆半径 r 为 7.5 米，π 取 3.14，求观景台的面积（结果精确到 1 平方米）。",
+     "question": "一个圆环形观景台，外圆半径 R 为 12.5 米，内圆半径 r 为 7.5 米，π 取 3.14，求观景台的面积（结果精确到 1 平方米）。",
+     "answer": "314",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "圆环面积是 πR²-πr²，用平方差公式变形为 π(R+r)(R-r)。代入 R=12.5、r=7.5 得 R+r=20、R-r=5，于是面积等于 3.14 乘 20 乘 5，即 314 平方米。用平方差公式比分别算两个圆的面积再相减简便得多。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3.14}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 12.5}, {\"type\": \"num\", \"value\": 7.5}]}, {\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 12.5}, {\"type\": \"num\", \"value\": 7.5}]}]}]}"
+    },
+    {
+     "id": "msk_p1083_q8",
+     "topicId": "msk_p1083",
+     "prompt": "把 a²+2ab+b² 分解因式，结果是（ ）。",
+     "question": "把 a²+2ab+b² 分解因式，结果是（ ）。",
+     "answer": "(a+b)²",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "a²+2ab+b² 正好是完全平方公式 (a+b)² 的展开式反过来写，所以分解结果是 (a+b) 的平方。检验时把 (a+b)² 展开，得 a²+2ab+b²，与原式一致。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1084",
+   "page": 122,
+   "type": "conceptual",
+   "description": "分式的概念：从人均绿地面积、眼镜度数、平均产量等实际数量抽象出分式，掌握分式的定义与分子分母的意义，并会判断分式有意义、无意义及值为零的条件。",
+   "mastery_criteria": [
+    "能判断一个代数式是不是分式，说出分母中是否含有字母",
+    "能求使分式有意义、值为零时字母的取值，并说明分母不能为零"
+   ],
+   "misconceptions": [
+    "只看式子里有没有分数线就判定是分式，忽略了分母中必须含有字母这一条件",
+    "求分式值为零时只让分子为零，没有检验此时分母是否也为零"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1084_q1",
+     "topicId": "msk_p1084",
+     "prompt": "两个整式相除，如果分母中含有字母，这样的代数式叫作（ ）",
+     "question": "两个整式相除，如果分母中含有字母，这样的代数式叫作（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "分式"
+      },
+      {
+       "label": "B",
+       "text": "整式"
+      },
+      {
+       "label": "C",
+       "text": "单项式"
+      },
+      {
+       "label": "D",
+       "text": "二次根式"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材由人均拥有绿地面积、近视眼镜的度数、平均每公顷产量等代数式归纳出共同特征：分母中含有字母，这样的代数式叫作分式，其中分子与分母都是整式，且分母不等于零。"
+    },
+    {
+     "id": "msk_p1084_q2",
+     "topicId": "msk_p1084",
+     "prompt": "下列代数式中，是分式的是（ ）",
+     "question": "下列代数式中，是分式的是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "x/2"
+      },
+      {
+       "label": "B",
+       "text": "(x+y)/3"
+      },
+      {
+       "label": "C",
+       "text": "3/4"
+      },
+      {
+       "label": "D",
+       "text": "2/x"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "判断分式的关键是分母中是否含有字母。x/2、(x+y)/3 的分母都是数，3/4 是分数，都不是分式；2/x 的分母是字母 x，所以它是分式。"
+    },
+    {
+     "id": "msk_p1084_q3",
+     "topicId": "msk_p1084",
+     "prompt": "分式 (x-1)/(x+2) 有意义的条件是（ ）",
+     "question": "分式 (x-1)/(x+2) 有意义的条件是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 不等于 1"
+      },
+      {
+       "label": "B",
+       "text": "x 不等于 -2"
+      },
+      {
+       "label": "C",
+       "text": "x 不等于 2"
+      },
+      {
+       "label": "D",
+       "text": "x 不等于 -1"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "分式有意义的条件是分母不为零，由 x+2 不等于 0 得 x 不等于 -2。分子的取值不影响分式是否有意义，所以不是 x 不等于 1。"
+    },
+    {
+     "id": "msk_p1084_q4",
+     "topicId": "msk_p1084",
+     "prompt": "当 x=2 时，分式 (2x+6)/x 的值是多少？",
+     "question": "当 x=2 时，分式 (2x+6)/x 的值是多少？",
+     "answer": "5",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "用数值代替分式中的字母，分式就变成了分数的算式。把 x=2 代入，分子 2 乘 2 再加 6 得 10，分母是 2，所以分式的值为 10 除以 2，等于 5。计算前要先确认分母 2 不为零。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 6}]}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1084_q5",
+     "topicId": "msk_p1084",
+     "prompt": "当 x 取何值时，分式 (x-2)/(2x-2) 的值为零（ ）",
+     "question": "当 x 取何值时，分式 (x-2)/(2x-2) 的值为零（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "x=1"
+      },
+      {
+       "label": "B",
+       "text": "x=-1"
+      },
+      {
+       "label": "C",
+       "text": "x=2"
+      },
+      {
+       "label": "D",
+       "text": "x=0"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "分式的值为零需要分子等于零且分母不等于零。由分子 x-2=0 得 x=2，此时分母 2 乘 2 再减 2 等于 2，不等于零，所以当 x=2 时值为零。若 x=1，分母为零，分式无意义。"
+    },
+    {
+     "id": "msk_p1084_q6",
+     "topicId": "msk_p1084",
+     "prompt": "若分式 (x-3)/(x-1) 的值为零，求 x 的值。",
+     "question": "若分式 (x-3)/(x-1) 的值为零，求 x 的值。",
+     "answer": "3",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "分式的值为零，必须分子为零且分母不为零。由 x-3=0 得 x=3，再把 x=3 代入分母，得 3-1=2，不等于零，所以 x=3 是符合要求的取值。这类题一定要回头检验分母。",
+     "verify": "{\"type\": \"num\", \"value\": 3}"
+    },
+    {
+     "id": "msk_p1084_q7",
+     "topicId": "msk_p1084",
+     "prompt": "下列分式中，无论 x 取何实数都有意义的是（ ）",
+     "question": "下列分式中，无论 x 取何实数都有意义的是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(x+1)/(x²+1)"
+      },
+      {
+       "label": "B",
+       "text": "(x+1)/(x²-1)"
+      },
+      {
+       "label": "C",
+       "text": "(x+1)/x"
+      },
+      {
+       "label": "D",
+       "text": "(x²+1)/(x-1)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "x²+1 对任何实数都大于零，不可能为零，所以 (x+1)/(x²+1) 对任何实数都有意义。另三个分式的分母分别在 x 等于 1 或 -1、x 等于 0、x 等于 1 时为零，此时分式无意义。"
+    },
+    {
+     "id": "msk_p1084_q8",
+     "topicId": "msk_p1084",
+     "prompt": "如果分式中字母所取的值使分母的值为零，那么这个分式（ ）。",
+     "question": "如果分式中字母所取的值使分母的值为零，那么这个分式（ ）。",
+     "answer": "无意义",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材明确指出：分式的值随分式中字母取值的变化而变化，如果分式中字母所取的值使分母的值为零，那么分式无意义。所以讨论分式时，首先要求分母不等于零。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1085",
+   "page": 125,
+   "type": "conceptual",
+   "description": "分式的基本性质：类比分数的基本性质，理解分式的分子与分母都乘或除以同一个不等于零的整式时分式的值不变，并会用这条性质改变分子分母的符号与系数形式。",
+   "mastery_criteria": [
+    "能叙述分式的基本性质，并指出同乘或同除的整式必须不等于零",
+    "能利用基本性质把分式的分子分母化成所需的形式，值保持不变"
+   ],
+   "misconceptions": [
+    "只在分子或分母一边乘同一个整式，另一边不动，误以为分式的值不变",
+    "认为分子分母同加或同减同一个整式值也不变，把乘法性质误当成加减性质"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1085_q1",
+     "topicId": "msk_p1085",
+     "prompt": "分式的分子与分母都乘（或除以）同一个不等于零的整式，分式的值（ ）",
+     "question": "分式的分子与分母都乘（或除以）同一个不等于零的整式，分式的值（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "变为原来的倍数"
+      },
+      {
+       "label": "B",
+       "text": "可能改变"
+      },
+      {
+       "label": "C",
+       "text": "一定变为零"
+      },
+      {
+       "label": "D",
+       "text": "不变"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "这是分式的基本性质，与分数的基本性质完全类似：分子、分母同乘或同除同一个不等于零的整式，分式的值不变。这条性质是约分与通分的依据。"
+    },
+    {
+     "id": "msk_p1085_q2",
+     "topicId": "msk_p1085",
+     "prompt": "由 a/b=(a乘C)/(b乘C) 成立，需要满足的条件是（ ）",
+     "question": "由 a/b=(a乘C)/(b乘C) 成立，需要满足的条件是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "C 是任意整式"
+      },
+      {
+       "label": "B",
+       "text": "C 是不等于零的整式"
+      },
+      {
+       "label": "C",
+       "text": "C 是正整数"
+      },
+      {
+       "label": "D",
+       "text": "C 是不等于零的数"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "分式的基本性质中，同乘的整式可以含字母，但必须不等于零，否则分母可能变成零，分式失去意义。只说数或正整数都太窄，C 应是不等于零的整式。"
+    },
+    {
+     "id": "msk_p1085_q3",
+     "topicId": "msk_p1085",
+     "prompt": "判断等式 a/b=(a+1)/(b+1) 是否成立，结论是（ ）",
+     "question": "判断等式 a/b=(a+1)/(b+1) 是否成立，结论是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "不一定成立"
+      },
+      {
+       "label": "B",
+       "text": "一定成立"
+      },
+      {
+       "label": "C",
+       "text": "一定不成立"
+      },
+      {
+       "label": "D",
+       "text": "只有 b 为正数时成立"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "分式的基本性质说的是同乘或同除，不是同加。取 a=2、b=1 时，左边等于 2，右边等于 3 除以 2，两边不相等，所以这个等式不一定成立。教材例1第(3)小题正是这个反例。"
+    },
+    {
+     "id": "msk_p1085_q4",
+     "topicId": "msk_p1085",
+     "prompt": "已知 2x=3y，且 y 不等于零，求 x 与 y 的比值 x/y。",
+     "question": "已知 2x=3y，且 y 不等于零，求 x 与 y 的比值 x/y。",
+     "answer": "1.5",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由 2x=3y 两边同除以 2y（y 不等于零），得 x/y=3/2，即 1.5。这里用到的就是等式两边同除同一个不为零的式子，与分式基本性质同乘同除的思想一致。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1085_q5",
+     "topicId": "msk_p1085",
+     "prompt": "不改变分式的值，把 (-a)/(-b) 化简，结果是（ ）",
+     "question": "不改变分式的值，把 (-a)/(-b) 化简，结果是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "-a/b"
+      },
+      {
+       "label": "B",
+       "text": "a/(-b)"
+      },
+      {
+       "label": "C",
+       "text": "a/b"
+      },
+      {
+       "label": "D",
+       "text": "-b/a"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "分子、分母同时改变符号，相当于分子分母都乘 -1，由分式的基本性质，分式的值不变，所以 (-a)/(-b)=a/b。另两个写法都等于 -a/b，与原式的值符号相反。"
+    },
+    {
+     "id": "msk_p1085_q6",
+     "topicId": "msk_p1085",
+     "prompt": "不改变分式的值，使分式 (0.2a-1)/(a+b) 的分子与分母中各项的系数都是整数，可以（ ）",
+     "question": "不改变分式的值，使分式 (0.2a-1)/(a+b) 的分子与分母中各项的系数都是整数，可以（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "分子、分母同乘 10"
+      },
+      {
+       "label": "B",
+       "text": "分子、分母同乘 5"
+      },
+      {
+       "label": "C",
+       "text": "分子、分母同乘 100"
+      },
+      {
+       "label": "D",
+       "text": "分子、分母同除以 10"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "0.2 是一位小数，分子分母同乘 10 后分子变成 2a-10、分母变成 10a+10b，各项系数都成了整数，而分式的值不变。乘 5 只能去掉分母中可能的一位小数，乘 100 会把系数无谓放大；同除以 10 更使系数变成小数。"
+    },
+    {
+     "id": "msk_p1085_q7",
+     "topicId": "msk_p1085",
+     "prompt": "已知 x 与 y 的比值 x/y 等于 2/3，且 y=9，求 x 的值。",
+     "question": "已知 x 与 y 的比值 x/y 等于 2/3，且 y=9，求 x 的值。",
+     "answer": "6",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "由 x/y=2/3 得 x 等于 y 乘 2/3。把 y=9 代入，x=9 乘 2/3=6。也可以理解为把分母 3 乘 3 变成 9，分子 2 也要乘 3 才能保持分式的值不变，得 6/9。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 9}, {\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}]}"
+    },
+    {
+     "id": "msk_p1085_q8",
+     "topicId": "msk_p1085",
+     "prompt": "分式的分子与分母都乘（或除以）同一个不等于零的整式，分式的值不变，这就是分式的（ ）。",
+     "question": "分式的分子与分母都乘（或除以）同一个不等于零的整式，分式的值不变，这就是分式的（ ）。",
+     "answer": "基本性质",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材用火车行驶的路程与时间引出速度的几种表示，再与分数的基本性质类比，得到分式的基本性质：分式的分子和分母都乘（或除以）同一个不等于零的整式，分式的值不变。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1086",
+   "page": 132,
+   "type": "procedural",
+   "description": "分式的加减：掌握同分母分式相加减时分母不变、分子相加减的法则，理解异分母分式要先通分再加减，会用最简公分母把异分母化成同分母。",
+   "mastery_criteria": [
+    "能按法则计算同分母与异分母分式的加减，结果化成最简分式",
+    "能确定几个分式的最简公分母，通分时分子不漏乘相应的因式"
+   ],
+   "misconceptions": [
+    "异分母分式相加时直接把分子相加、分母相加，没有先通分",
+    "分子是多项式时减号后面不加括号，导致符号出错，如 4-(a+2) 误算成 4-a+2"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1086_q1",
+     "topicId": "msk_p1086",
+     "prompt": "同分母的分式相加减，分母不变，把（ ）相加减",
+     "question": "同分母的分式相加减，分母不变，把（ ）相加减",
+     "options": [
+      {
+       "label": "A",
+       "text": "分母"
+      },
+      {
+       "label": "B",
+       "text": "分子"
+      },
+      {
+       "label": "C",
+       "text": "系数"
+      },
+      {
+       "label": "D",
+       "text": "最简公分母"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "分式的加减法则与分数类似：同分母的分式相加减，分母不变，把分子相加减，结果能约分的要约成最简分式。所以括号里应填分子，分母始终保留。"
+    },
+    {
+     "id": "msk_p1086_q2",
+     "topicId": "msk_p1086",
+     "prompt": "计算下列各式的值，3/8+5/8 等于多少？",
+     "question": "计算下列各式的值，3/8+5/8 等于多少？",
+     "answer": "1",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "分母相同，分母不变，分子相加得 3+5=8，所以结果是 8/8，等于 1。计算时不要写成 8/16，那是把分母也相加了，正是常见的错误。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 8}]}, {\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 8}]}]}"
+    },
+    {
+     "id": "msk_p1086_q3",
+     "topicId": "msk_p1086",
+     "prompt": "异分母的分式相加减，先（ ），再加减",
+     "question": "异分母的分式相加减，先（ ），再加减",
+     "options": [
+      {
+       "label": "A",
+       "text": "通分"
+      },
+      {
+       "label": "B",
+       "text": "约分"
+      },
+      {
+       "label": "C",
+       "text": "因式分解"
+      },
+      {
+       "label": "D",
+       "text": "去分母"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "异分母的分式相加减，要先通分化为同分母的分式，再按同分母的法则计算。通分的关键是确定最简公分母，去分母是把方程两边同乘，两者不能混用。"
+    },
+    {
+     "id": "msk_p1086_q4",
+     "topicId": "msk_p1086",
+     "prompt": "计算下列分式的和，1/x+2/x 的结果是（ ）",
+     "question": "计算下列分式的和，1/x+2/x 的结果是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "3/(2x)"
+      },
+      {
+       "label": "B",
+       "text": "2/x"
+      },
+      {
+       "label": "C",
+       "text": "3/x²"
+      },
+      {
+       "label": "D",
+       "text": "3/x"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个分式分母相同都是 x，分母不变，分子相加得 1+2=3，所以结果是 3/x。把分母也相加写成 3/(2x) 是常见错误，同分母相加减时分母不参与运算。"
+    },
+    {
+     "id": "msk_p1086_q5",
+     "topicId": "msk_p1086",
+     "prompt": "计算下列各式的值，1/2+1/4 等于多少？",
+     "question": "计算下列各式的值，1/2+1/4 等于多少？",
+     "answer": "0.75",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "异分母分数相加要先通分，公分母取 4，1/2 化为 2/4，于是 2/4+1/4=3/4，即 0.75。分式的加减也走同样的路子：先化成同分母，再把分子相加。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 4}]}]}"
+    },
+    {
+     "id": "msk_p1086_q6",
+     "topicId": "msk_p1086",
+     "prompt": "计算下列分式的差，4/(a-1)-(a+2)/(a-1) 的结果是（ ）",
+     "question": "计算下列分式的差，4/(a-1)-(a+2)/(a-1) 的结果是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "(a-2)/(a-1)"
+      },
+      {
+       "label": "B",
+       "text": "(6-a)/(a-1)"
+      },
+      {
+       "label": "C",
+       "text": "(2-a)/(a-1)"
+      },
+      {
+       "label": "D",
+       "text": "(2+a)/(a-1)"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "分母相同，分子相减时要给第二个分子加括号：4-(a+2)=4-a-2=2-a，所以结果是 (2-a)/(a-1)。丢掉括号就会算成 6-a，是最常见的符号错误。"
+    },
+    {
+     "id": "msk_p1086_q7",
+     "topicId": "msk_p1086",
+     "prompt": "计算下列分式的差，(a-3)/(a+1)-(a-2)/(a+1) 的结果是（ ）",
+     "question": "计算下列分式的差，(a-3)/(a+1)-(a-2)/(a+1) 的结果是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "1/(a+1)"
+      },
+      {
+       "label": "B",
+       "text": "-1/(a+1)"
+      },
+      {
+       "label": "C",
+       "text": "-1/(a-1)"
+      },
+      {
+       "label": "D",
+       "text": "-5/(a+1)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "同分母，分母不变，分子相减为 (a-3)-(a-2)=a-3-a+2=-1，所以结果是 -1/(a+1)。这一步要注意两个括号相减后 a 被消掉，结果是一个不含 a 的常数分子。"
+    },
+    {
+     "id": "msk_p1086_q8",
+     "topicId": "msk_p1086",
+     "prompt": "异分母分式通分时，通常取各分母的（ ）作为公分母。",
+     "question": "异分母分式通分时，通常取各分母的（ ）作为公分母。",
+     "answer": "最简公分母",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "把异分母分式化为同分母分式叫作通分，通分时通常取各分母的最简公分母作为公分母。最简公分母的系数取各系数的最小公倍数，字母取各字母的最高次幂。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1087",
+   "page": 136,
+   "type": "procedural",
+   "description": "分式的乘除：掌握分式乘分式用分子的积作分子、分母的积作分母，分式除以分式把除式颠倒后相乘，并会在运算前先分解因式约分。",
+   "mastery_criteria": [
+    "能按法则完成分式的乘法与除法运算，结果化为最简分式",
+    "能把分子分母先因式分解再约分，简化分式的乘除运算"
+   ],
+   "misconceptions": [
+    "分式除法忘记把除式的分子分母颠倒，直接按乘法算",
+    "把分式乘除与加减混为一谈，乘除时先通分，导致运算走错方向"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1087_q1",
+     "topicId": "msk_p1087",
+     "prompt": "分式乘分式，用分子的积做积的分子，（ ）做积的分母",
+     "question": "分式乘分式，用分子的积做积的分子，（ ）做积的分母",
+     "options": [
+      {
+       "label": "A",
+       "text": "分母的积"
+      },
+      {
+       "label": "B",
+       "text": "分母的和"
+      },
+      {
+       "label": "C",
+       "text": "分子的和"
+      },
+      {
+       "label": "D",
+       "text": "最简公分母"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "分式的乘法法则与分数乘法类似：分式乘分式，用分子的积做积的分子，分母的积做积的分母，能约分的先约分再相乘，结果写成最简分式。"
+    },
+    {
+     "id": "msk_p1087_q2",
+     "topicId": "msk_p1087",
+     "prompt": "计算下列各式的值，(2/3)×(9/4) 等于多少？",
+     "question": "计算下列各式的值，(2/3)×(9/4) 等于多少？",
+     "answer": "1.5",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "分子相乘得 18，分母相乘得 12，所以结果是 18/12，约分后等于 3/2，即 1.5。也可以在相乘前先约分：2 与 4 约去 2，9 与 3 约去 3，直接得 3/2。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 9}, {\"type\": \"num\", \"value\": 4}]}]}"
+    },
+    {
+     "id": "msk_p1087_q3",
+     "topicId": "msk_p1087",
+     "prompt": "分式除以分式，把除式的分子、分母颠倒位置后，与被除式（ ）",
+     "question": "分式除以分式，把除式的分子、分母颠倒位置后，与被除式（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "相除"
+      },
+      {
+       "label": "B",
+       "text": "相加"
+      },
+      {
+       "label": "C",
+       "text": "相乘"
+      },
+      {
+       "label": "D",
+       "text": "相减"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "分式除以分式，把除式的分子、分母颠倒位置后，与被除式相乘，这与分数除法中除以一个数等于乘它的倒数的道理一致。所以括号里应填相乘。"
+    },
+    {
+     "id": "msk_p1087_q4",
+     "topicId": "msk_p1087",
+     "prompt": "计算 a/b 除以 a/c 的结果是（ ）",
+     "question": "计算 a/b 除以 a/c 的结果是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "b/c"
+      },
+      {
+       "label": "B",
+       "text": "c/a"
+      },
+      {
+       "label": "C",
+       "text": "a/c"
+      },
+      {
+       "label": "D",
+       "text": "c/b"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把除式 a/c 颠倒成 c/a，与被除式 a/b 相乘，得 (a乘c)/(b乘a)，约去 a 后等于 c/b。这里要求 a、b、c 都不为零，否则分式没有意义。"
+    },
+    {
+     "id": "msk_p1087_q5",
+     "topicId": "msk_p1087",
+     "prompt": "计算下列各式的值，(3/4) 除以 (3/8) 等于多少？",
+     "question": "计算下列各式的值，(3/4) 除以 (3/8) 等于多少？",
+     "answer": "2",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "除以 3/8 等于乘 8/3，于是原式等于 3/4 乘 8/3，约去 3 后得 8/4，结果是 2。除法转乘法时，颠倒的是除式的分子与分母，被除式保持不变。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 4}]}, {\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 8}]}]}"
+    },
+    {
+     "id": "msk_p1087_q6",
+     "topicId": "msk_p1087",
+     "prompt": "计算 (x²-9)/(x+3) 除以 (x-3) 的结果是（ ）",
+     "question": "计算 (x²-9)/(x+3) 除以 (x-3) 的结果是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "x-3"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "x+3"
+      },
+      {
+       "label": "D",
+       "text": "1/(x-3)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先把 x²-9 分解为 (x+3)(x-3)，它与分母 x+3 约去后得 x-3，再除以 x-3 得 1。这类题目要先分解因式再约分，比直接乘除要快得多。"
+    },
+    {
+     "id": "msk_p1087_q7",
+     "topicId": "msk_p1087",
+     "prompt": "计算 (a²-4)/(a²+2a) 除以 (a-2) 的结果是（ ）",
+     "question": "计算 (a²-4)/(a²+2a) 除以 (a-2) 的结果是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "a"
+      },
+      {
+       "label": "B",
+       "text": "1/(a-2)"
+      },
+      {
+       "label": "C",
+       "text": "1/a"
+      },
+      {
+       "label": "D",
+       "text": "(a+2)/a"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "分子 a²-4 分解为 (a-2)(a+2)，分母 a²+2a 分解为 a(a+2)，约去 a+2 后得 (a-2)/a，再除以 a-2 得 1/a。教材在分式乘除的例题中反复用到先分解因式再约分的方法。"
+    },
+    {
+     "id": "msk_p1087_q8",
+     "topicId": "msk_p1087",
+     "prompt": "分式除以分式，把除式的分子、分母颠倒位置后，与被除式相乘，这是分式的（ ）运算法则。",
+     "question": "分式除以分式，把除式的分子、分母颠倒位置后，与被除式相乘，这是分式的（ ）运算法则。",
+     "answer": "除法",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "分式的乘除法则与分数的乘除法则类似：乘法用分子的积作分子、分母的积作分母；除法则把除式的分子分母颠倒位置后与被除式相乘。所以这里说的是分式的除法运算法则。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1088",
+   "page": 141,
+   "type": "procedural",
+   "description": "分式方程：理解分母中含有未知数的方程是分式方程，掌握用同乘最简公分母把分式方程转化为整式方程求解，并知道解后必须检验。",
+   "mastery_criteria": [
+    "能判断一个方程是不是分式方程，列出实际问题中的分式方程",
+    "能按去分母、解整式方程、检验的步骤求分式方程的解"
+   ],
+   "misconceptions": [
+    "把分母中含有字母的式子当成整式，误判方程类型",
+    "去分母时漏乘不含分母的项，或解完不检验就写答案"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1088_q1",
+     "topicId": "msk_p1088",
+     "prompt": "等式两边是分式，且分母中含有未知数的方程叫作（ ）",
+     "question": "等式两边是分式，且分母中含有未知数的方程叫作（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "整式方程"
+      },
+      {
+       "label": "B",
+       "text": "分式方程"
+      },
+      {
+       "label": "C",
+       "text": "一元一次方程"
+      },
+      {
+       "label": "D",
+       "text": "分式"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材的定义是：等式两边是分式或整式、且分母中含有未知数的方程叫作分式方程。判断的关键看分母中有没有未知数，而不是看式子里有没有分数线。"
+    },
+    {
+     "id": "msk_p1088_q2",
+     "topicId": "msk_p1088",
+     "prompt": "下列方程中，是分式方程的是（ ）",
+     "question": "下列方程中，是分式方程的是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x+1=5"
+      },
+      {
+       "label": "B",
+       "text": "x/2+1=3"
+      },
+      {
+       "label": "C",
+       "text": "3/x=2"
+      },
+      {
+       "label": "D",
+       "text": "x²-1=0"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "3/x=2 的分母中含有未知数 x，所以是分式方程。2x+1=5 与 x²-1=0 是整式方程；x/2+1=3 虽然带分数线，但分母是数 2，也不含未知数，属于整式方程。"
+    },
+    {
+     "id": "msk_p1088_q3",
+     "topicId": "msk_p1088",
+     "prompt": "解分式方程的基本思路是（ ）",
+     "question": "解分式方程的基本思路是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "方程两边同乘最简公分母，转化为整式方程"
+      },
+      {
+       "label": "B",
+       "text": "方程两边同加最简公分母"
+      },
+      {
+       "label": "C",
+       "text": "把分子分母同时约分"
+      },
+      {
+       "label": "D",
+       "text": "直接移项即可求解"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材指出：解分式方程时，在方程的两边同乘各分式的最简公分母，可转化为整式方程。本章只讨论可以转化为一元一次方程的分式方程，所以去分母是解题的第一步。"
+    },
+    {
+     "id": "msk_p1088_q4",
+     "topicId": "msk_p1088",
+     "prompt": "解下列分式方程 20/x=24/(x+1)，x 的值是多少？",
+     "question": "解下列分式方程 20/x=24/(x+1)，x 的值是多少？",
+     "answer": "5",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "方程两边同乘 x(x+1)，得 20(x+1)=24x，即 20x+20=24x，解得 x=5。检验：左边 20 除以 5 等于 4，右边 24 除以 6 等于 4，左右相等，所以 x=5 是原方程的解。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 24}, {\"type\": \"num\", \"value\": 5}]}, {\"type\": \"num\", \"value\": 20}]}, {\"type\": \"num\", \"value\": 1}]}"
+    },
+    {
+     "id": "msk_p1088_q5",
+     "topicId": "msk_p1088",
+     "prompt": "解下列分式方程 3/x-2/(x-1)=0，x 的值是多少？",
+     "question": "解下列分式方程 3/x-2/(x-1)=0，x 的值是多少？",
+     "answer": "3",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "方程两边同乘 x(x-1)，得 3(x-1)-2x=0，即 3x-3-2x=0，解得 x=3。检验：把 x=3 代入原方程，两项都等于 1，左边为 0，等于右边，所以原方程的解是 x=3。",
+     "verify": "{\"type\": \"num\", \"value\": 3}"
+    },
+    {
+     "id": "msk_p1088_q6",
+     "topicId": "msk_p1088",
+     "prompt": "甲、乙两厂装配同一种汽车，乙厂每天比甲厂多装配 30 辆，乙厂装配 500 辆所用时间与甲厂装配 400 辆所用时间相同。设甲厂每天装配 x 辆，求 x 的值。",
+     "question": "甲、乙两厂装配同一种汽车，乙厂每天比甲厂多装配 30 辆，乙厂装配 500 辆所用时间与甲厂装配 400 辆所用时间相同。设甲厂每天装配 x 辆，求 x 的值。",
+     "answer": "120",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "甲厂装配 400 辆用 400/x 天，乙厂装配 500 辆用 500/(x+30) 天，时间相同得 400/x=500/(x+30)。两边同乘 x(x+30) 得 400x+12000=500x，解得 x=120。检验：甲厂 400/120 天，乙厂 500/150 天，两者相等。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 500}, {\"type\": \"num\", \"value\": 120}]}, {\"type\": \"num\", \"value\": 400}]}, {\"type\": \"num\", \"value\": 30}]}"
+    },
+    {
+     "id": "msk_p1088_q7",
+     "topicId": "msk_p1088",
+     "prompt": "解分式方程时，方程两边同乘最简公分母后必须检验，原因是（ ）",
+     "question": "解分式方程时，方程两边同乘最简公分母后必须检验，原因是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "去分母时计算容易出错"
+      },
+      {
+       "label": "B",
+       "text": "检验是老师额外提出的要求"
+      },
+      {
+       "label": "C",
+       "text": "分式方程一定有两个解"
+      },
+      {
+       "label": "D",
+       "text": "同乘的整式可能为零，会产生使原方程分母为零的解"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "去分母时两边同乘的是含未知数的整式，当这个整式的值为零时，原方程的分母也为零，得到的解并不满足原方程，这种解需要舍去。所以解分式方程必须把所求的根代回原方程检验。"
+    },
+    {
+     "id": "msk_p1088_q8",
+     "topicId": "msk_p1088",
+     "prompt": "解分式方程时，在方程的两边同乘各分式的（ ），可转化为整式方程。",
+     "question": "解分式方程时，在方程的两边同乘各分式的（ ），可转化为整式方程。",
+     "answer": "最简公分母",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材的原话是：解分式方程时，在方程的两边同乘各分式的最简公分母，可转化为整式方程。转化为整式方程后按一元一次方程的步骤求解，最后一定要检验。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1089",
+   "page": 154,
+   "type": "conceptual",
+   "description": "二次根式的概念：从正方形对角线、圆半径、直角三角形斜边等实际数量抽象出二次根式，掌握形如根号 a（a 大于等于零）的式子叫作二次根式，并会求被开方数中字母的取值范围。",
+   "mastery_criteria": [
+    "能判断一个式子是不是二次根式，说出被开方数必须非负的理由",
+    "能求使含字母的二次根式有意义的取值范围，并会用根号 a 的平方等于 a 计算"
+   ],
+   "misconceptions": [
+    "把根号下的式子当作可以取负数，忽略了被开方数必须大于等于零",
+    "把根号 a 的平方与 a 的平方的算术平方根混为一谈，前者等于 a，后者等于 a 的绝对值"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1089_q1",
+     "topicId": "msk_p1089",
+     "prompt": "形如根号 a（a 大于等于零）的式子叫作（ ）",
+     "question": "形如根号 a（a 大于等于零）的式子叫作（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "二次根式"
+      },
+      {
+       "label": "B",
+       "text": "分式"
+      },
+      {
+       "label": "C",
+       "text": "整式"
+      },
+      {
+       "label": "D",
+       "text": "无理数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材由正方形对角线的长、圆的半径、直角三角形斜边的长等实际问题引出形如根号 a 的式子，并指出一般地，我们把形如根号 a（a 大于等于零）的式子叫作二次根式。"
+    },
+    {
+     "id": "msk_p1089_q2",
+     "topicId": "msk_p1089",
+     "prompt": "使二次根式根号(x-3) 有意义的 x 的取值范围是（ ）",
+     "question": "使二次根式根号(x-3) 有意义的 x 的取值范围是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 大于 3"
+      },
+      {
+       "label": "B",
+       "text": "x 小于等于 3"
+      },
+      {
+       "label": "C",
+       "text": "x 大于等于 3"
+      },
+      {
+       "label": "D",
+       "text": "x 大于等于 0"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "二次根式有意义要求被开方数非负，由 x-3 大于等于零得 x 大于等于 3。取等号时被开方数为零，根号零等于零，仍然有意义，所以不能写成 x 大于 3。"
+    },
+    {
+     "id": "msk_p1089_q3",
+     "topicId": "msk_p1089",
+     "prompt": "下列二次根式中，无论 x 取何实数都有意义的是（ ）",
+     "question": "下列二次根式中，无论 x 取何实数都有意义的是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "根号(x-3)"
+      },
+      {
+       "label": "B",
+       "text": "根号(x²+5)"
+      },
+      {
+       "label": "C",
+       "text": "根号(x²-1)"
+      },
+      {
+       "label": "D",
+       "text": "根号(1-x)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "x² 对任何实数都大于等于零，所以 x²+5 恒大于零，根号(x²+5) 对任何实数都有意义。另三个式子的被开方数在 x 取某些值时会是负数，例如根号(x-3) 在 x 小于 3 时无意义。"
+    },
+    {
+     "id": "msk_p1089_q4",
+     "topicId": "msk_p1089",
+     "prompt": "计算二次根式根号 16 的值是多少？",
+     "question": "计算二次根式根号 16 的值是多少？",
+     "answer": "4",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "根号 16 表示 16 的算术平方根，因为 4 的平方等于 16，且 4 是非负数，所以根号 16 等于 4。算术平方根只取非负的那个值，不能写成正负 4。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 16}, {\"type\": \"num\", \"value\": 0.5}]}"
+    },
+    {
+     "id": "msk_p1089_q5",
+     "topicId": "msk_p1089",
+     "prompt": "计算（根号 5）的平方的值是（ ）",
+     "question": "计算（根号 5）的平方的值是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "25"
+      },
+      {
+       "label": "B",
+       "text": "根号 5"
+      },
+      {
+       "label": "C",
+       "text": "10"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "根据算术平方根的意义，当 a 大于等于零时，（根号 a）的平方等于 a。所以（根号 5）的平方等于 5，而不是 25；25 是 5 的平方，方向不同。"
+    },
+    {
+     "id": "msk_p1089_q6",
+     "topicId": "msk_p1089",
+     "prompt": "计算（3 倍根号 2）的平方的值。",
+     "question": "计算（3 倍根号 2）的平方的值。",
+     "answer": "18",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "（3 倍根号 2）的平方等于 3 的平方乘（根号 2）的平方，即 9 乘 2，结果是 18。计算时系数与根式分别平方，不要漏掉系数 3 的平方。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1089_q7",
+     "topicId": "msk_p1089",
+     "prompt": "若根号(a-3) 与根号(3-a) 同时有意义，求 a 的值。",
+     "question": "若根号(a-3) 与根号(3-a) 同时有意义，求 a 的值。",
+     "answer": "3",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "两个二次根式同时有意义，要求 a-3 大于等于零且 3-a 大于等于零，即 a 大于等于 3 且 a 小于等于 3，两个条件同时成立只能取 a=3。此时两个根号都等于零，都有意义。",
+     "verify": "{\"type\": \"num\", \"value\": 3}"
+    },
+    {
+     "id": "msk_p1089_q8",
+     "topicId": "msk_p1089",
+     "prompt": "根据算术平方根的意义，当 a 大于等于零时，（根号 a）的平方等于（ ）。",
+     "question": "根据算术平方根的意义，当 a 大于等于零时，（根号 a）的平方等于（ ）。",
+     "answer": "a",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材在例1之后指出：根据算术平方根的意义，当 a 大于等于零时，（根号 a）的平方等于 a。因为根号 a 表示 a 的算术平方根，它的平方自然还原为 a。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1090",
+   "page": 158,
+   "type": "procedural",
+   "description": "二次根式的乘除：由矩形面积的计算得到根号 a 乘根号 b 等于根号 ab（a、b 非负），反过来用可化简二次根式，并在此基础上有二次根式的除法。",
+   "mastery_criteria": [
+    "能用二次根式的乘法性质计算根号 a 乘根号 b，并写出成立条件",
+    "会把根号 ab 反过来写成根号 a 乘根号 b，化简被开方数含平方因数的二次根式"
+   ],
+   "misconceptions": [
+    "把根号 a 乘根号 b 直接写成根号(a+b)，把乘法性质当成加法",
+    "化简时忽略成立条件，对负数也照搬根号 ab 等于根号 a 乘根号 b"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1090_q1",
+     "topicId": "msk_p1090",
+     "prompt": "二次根式的乘法性质根号 a 乘根号 b 等于根号 ab 成立的条件是（ ）",
+     "question": "二次根式的乘法性质根号 a 乘根号 b 等于根号 ab 成立的条件是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 大于等于零且 b 大于等于零"
+      },
+      {
+       "label": "B",
+       "text": "a 大于零且 b 大于零"
+      },
+      {
+       "label": "C",
+       "text": "a、b 为任意实数"
+      },
+      {
+       "label": "D",
+       "text": "a 大于等于零且 b 大于零"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材用两个小正方形拼矩形的方法得到根号 2 乘根号 8 等于 4，再由算术平方根的定义证明：当 a 大于等于零、b 大于等于零时，根号 a 乘根号 b 等于根号 ab。两个被开方数都必须非负。"
+    },
+    {
+     "id": "msk_p1090_q2",
+     "topicId": "msk_p1090",
+     "prompt": "计算根号 2 乘根号 8 的值。",
+     "question": "计算根号 2 乘根号 8 的值。",
+     "answer": "4",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "由乘法性质，根号 2 乘根号 8 等于根号(2 乘 8)，即根号 16，而 4 的平方等于 16，所以结果是 4。教材正是用矩形面积的办法算出这个结果。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 16}, {\"type\": \"num\", \"value\": 0.5}]}"
+    },
+    {
+     "id": "msk_p1090_q3",
+     "topicId": "msk_p1090",
+     "prompt": "计算根号 56 乘根号 14 的值。",
+     "question": "计算根号 56 乘根号 14 的值。",
+     "answer": "28",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "根号 56 乘根号 14 等于根号(56 乘 14)。因 56 等于 4 乘 14，所以被开方数是 4 乘 14 乘 14，即（2 乘 14）的平方，开方得 2 乘 14，结果为 28。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 784}, {\"type\": \"num\", \"value\": 0.5}]}"
+    },
+    {
+     "id": "msk_p1090_q4",
+     "topicId": "msk_p1090",
+     "prompt": "化简根号 12 的结果是（ ）",
+     "question": "化简根号 12 的结果是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "3 倍根号 2"
+      },
+      {
+       "label": "B",
+       "text": "4 倍根号 3"
+      },
+      {
+       "label": "C",
+       "text": "2 倍根号 3"
+      },
+      {
+       "label": "D",
+       "text": "2 倍根号 6"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把 12 写成 4 乘 3，则根号 12 等于根号 4 乘根号 3，即 2 倍根号 3。这是把根号 ab 等于根号 a 乘根号 b 反过来用，把被开方数中的平方因数开出来。"
+    },
+    {
+     "id": "msk_p1090_q5",
+     "topicId": "msk_p1090",
+     "prompt": "二次根式的除法性质，根号 a 除以根号 b 等于根号(a 除以 b) 成立的条件是（ ）",
+     "question": "二次根式的除法性质，根号 a 除以根号 b 等于根号(a 除以 b) 成立的条件是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 大于零且 b 大于零"
+      },
+      {
+       "label": "B",
+       "text": "a、b 为任意实数"
+      },
+      {
+       "label": "C",
+       "text": "a 大于 b"
+      },
+      {
+       "label": "D",
+       "text": "a 大于等于零且 b 大于零"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "除法中除数不能为零，所以 b 必须大于零；被开方数非负，所以 a 大于等于零。条件写成 a 大于等于零且 b 大于零，取等号的情形对 a 是允许的，对 b 不允许。"
+    },
+    {
+     "id": "msk_p1090_q6",
+     "topicId": "msk_p1090",
+     "prompt": "已知 a 大于等于零，计算根号(2a) 乘根号(8a) 当 a=5 时的值。",
+     "question": "已知 a 大于等于零，计算根号(2a) 乘根号(8a) 当 a=5 时的值。",
+     "answer": "20",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "根号(2a) 乘根号(8a) 等于根号(16a²)，因为 a 大于等于零，开方得 4a。把 a=5 代入得 4 乘 5，结果是 20。这里要注意开方时 a 的符号决定了根号 a² 等于 a 而不是 a 的绝对值。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "msk_p1090_q7",
+     "topicId": "msk_p1090",
+     "prompt": "当 a 大于等于零、b 大于等于零时，化简根号(a²b) 的结果是（ ）",
+     "question": "当 a 大于等于零、b 大于等于零时，化简根号(a²b) 的结果是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "b 倍根号 a"
+      },
+      {
+       "label": "B",
+       "text": "a 倍根号 b"
+      },
+      {
+       "label": "C",
+       "text": "a² 倍根号 b"
+      },
+      {
+       "label": "D",
+       "text": "ab"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "根号(a²b) 等于根号 a² 乘根号 b。因为 a 大于等于零，根号 a² 等于 a，所以结果是 a 倍根号 b。若 a 是负数，根号 a² 应为 a 的绝对值，所以成立条件不可省。"
+    },
+    {
+     "id": "msk_p1090_q8",
+     "topicId": "msk_p1090",
+     "prompt": "把根号 ab 等于根号 a 乘根号 b（a、b 大于等于零）反过来使用，可以（ ）一些二次根式。",
+     "question": "把根号 ab 等于根号 a 乘根号 b（a、b 大于等于零）反过来使用，可以（ ）一些二次根式。",
+     "answer": "化简",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材指出，把根号 a 乘根号 b 等于根号 ab 反过来，可得根号 ab 等于根号 a 乘根号 b，利用这个式子可以化简一些二次根式，例如把根号 12 化成 2 倍根号 3。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1091",
+   "page": 167,
+   "type": "procedural",
+   "description": "二次根式的加减：理解同类二次根式的意义，掌握先化简每个二次根式、再合并同类二次根式的加减程序，并能用合并同类项的办法处理含根式的式子。",
+   "mastery_criteria": [
+    "能判断几个二次根式是不是同类二次根式，会化简后再判断",
+    "能按先化简、再合并的程序完成二次根式的加减运算"
+   ],
+   "misconceptions": [
+    "把根号 8 加根号 18 直接写成根号 26，被开方数相加",
+    "不先化简就判断是否同类，看到根号下的数不同就认为不能合并"
+   ],
+   "questions": [
+    {
+     "id": "msk_p1091_q1",
+     "topicId": "msk_p1091",
+     "prompt": "经过化简，可以使被开方数相同的二次根式，叫作（ ）",
+     "question": "经过化简，可以使被开方数相同的二次根式，叫作（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "最简二次根式"
+      },
+      {
+       "label": "B",
+       "text": "同底数二次根式"
+      },
+      {
+       "label": "C",
+       "text": "同类二次根式"
+      },
+      {
+       "label": "D",
+       "text": "相等二次根式"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材的定义是：经过化简，可以使被开方数相同的二次根式，叫作同类二次根式。判断同类二次根式要先化简，例如根号 8 与根号 18 化简后都被开方数是 2，它们是同类二次根式。"
+    },
+    {
+     "id": "msk_p1091_q2",
+     "topicId": "msk_p1091",
+     "prompt": "二次根式相加减的一般程序是（ ）",
+     "question": "二次根式相加减的一般程序是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "先化简每个二次根式，然后合并同类二次根式"
+      },
+      {
+       "label": "B",
+       "text": "先把被开方数相加"
+      },
+      {
+       "label": "C",
+       "text": "先通分，再合并"
+      },
+      {
+       "label": "D",
+       "text": "先平方，再开方"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材给出二次根式加减的程序：二次根式相加减，先化简每个二次根式，然后合并同类二次根式。合并的办法与合并同类项相同，只把根号前的系数相加减。"
+    },
+    {
+     "id": "msk_p1091_q3",
+     "topicId": "msk_p1091",
+     "prompt": "下列二次根式中，与根号 2 是同类二次根式的是（ ）",
+     "question": "下列二次根式中，与根号 2 是同类二次根式的是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "根号 12"
+      },
+      {
+       "label": "B",
+       "text": "根号 24"
+      },
+      {
+       "label": "C",
+       "text": "根号 27"
+      },
+      {
+       "label": "D",
+       "text": "根号 8"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "根号 8 等于 2 倍根号 2，化简后被开方数是 2，与根号 2 的被开方数相同，所以是同类二次根式。根号 12 化简为 2 倍根号 3，根号 24 化简为 2 倍根号 6，根号 27 化简为 3 倍根号 3，都与根号 2 不同类。"
+    },
+    {
+     "id": "msk_p1091_q4",
+     "topicId": "msk_p1091",
+     "prompt": "计算根号 8 加根号 18，结果是 5 倍根号 2，其中根号前的系数是多少？",
+     "question": "计算根号 8 加根号 18，结果是 5 倍根号 2，其中根号前的系数是多少？",
+     "answer": "5",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "根号 8 化简为 2 倍根号 2，根号 18 化简为 3 倍根号 2，两者是同类二次根式，系数相加得 2+3=5，所以结果是 5 倍根号 2。合并同类二次根式只看系数，根号部分保持不变。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msk_p1091_q5",
+     "topicId": "msk_p1091",
+     "prompt": "计算根号 12 加根号 18 减根号 8 减根号 32 的结果是（ ）",
+     "question": "计算根号 12 加根号 18 减根号 8 减根号 32 的结果是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "2 倍根号 3 加 3 倍根号 2"
+      },
+      {
+       "label": "B",
+       "text": "2 倍根号 3 减 3 倍根号 2"
+      },
+      {
+       "label": "C",
+       "text": "5 倍根号 3 减 5 倍根号 2"
+      },
+      {
+       "label": "D",
+       "text": "根号 3 减根号 2"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先化简：根号 12 等于 2 倍根号 3，根号 18 等于 3 倍根号 2，根号 8 等于 2 倍根号 2，根号 32 等于 4 倍根号 2。合并同类二次根式，根号 3 的系数是 2，根号 2 的系数是 3-2-4=-3，所以结果是 2 倍根号 3 减 3 倍根号 2。"
+    },
+    {
+     "id": "msk_p1091_q6",
+     "topicId": "msk_p1091",
+     "prompt": "计算（根号 12 加根号 27）除以根号 3 的值。",
+     "question": "计算（根号 12 加根号 27）除以根号 3 的值。",
+     "answer": "5",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "先化简：根号 12 等于 2 倍根号 3，根号 27 等于 3 倍根号 3，和是 5 倍根号 3，再除以根号 3 得 5。也可以先拆成两项分别除以根号 3，得 2 加 3 等于 5，结果相同。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 12}, {\"type\": \"num\", \"value\": 0.5}]}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 27}, {\"type\": \"num\", \"value\": 0.5}]}]}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 0.5}]}]}"
+    },
+    {
+     "id": "msk_p1091_q7",
+     "topicId": "msk_p1091",
+     "prompt": "若两个最简二次根式根号(2a+1) 与根号(a+3) 是同类二次根式，则 a 的值是（ ）",
+     "question": "若两个最简二次根式根号(2a+1) 与根号(a+3) 是同类二次根式，则 a 的值是（ ）",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "-2"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两个二次根式都已是最简形式，是同类二次根式意味着被开方数相同，由 2a+1=a+3 解得 a=2。检验：a=2 时两个被开方数都是 5，确实相同；若 a=-2，被开方数 2a+1 为负数，根式无意义。"
+    },
+    {
+     "id": "msk_p1091_q8",
+     "topicId": "msk_p1091",
+     "prompt": "二次根式相加减，先化简每个二次根式，然后合并（ ）。",
+     "question": "二次根式相加减，先化简每个二次根式，然后合并（ ）。",
+     "answer": "同类二次根式",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材给出二次根式加减的一般程序：二次根式相加减，先化简每个二次根式，然后合并同类二次根式。合并时把根号看作字母，用合并同类项的办法处理系数。"
+    }
+   ]
+  }
+ ]
+}

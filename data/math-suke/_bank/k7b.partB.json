@@ -1,0 +1,2765 @@
+{
+ "tag": "k7b",
+ "book": "苏科版七年级下册",
+ "unit_points": [
+  {
+   "id": "msk_p010",
+   "description": "本章从球队输赢场数与积分、包裹单价等实际问题出发，认识二元一次方程和二元一次方程组，理解方程组的解是两个方程的公共解，学习用代入消元法和加减消元法解方程组，了解三元一次方程组，并用方程组解决实际问题。",
+   "mastery_criteria": [
+    "能判断一个方程或方程组是不是二元一次方程或二元一次方程组",
+    "能用代入消元法和加减消元法求出二元一次方程组的解",
+    "能根据实际问题中的两个等量关系列出方程组并求解"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p010_q1",
+     "topicId": "msk_p010",
+     "prompt": "本章学习的核心内容是什么？",
+     "question": "本章学习的核心内容是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "二元一次方程组的概念、解法和实际应用"
+      },
+      {
+       "label": "B",
+       "text": "三元一次方程组的解法与证明"
+      },
+      {
+       "label": "C",
+       "text": "二元一次方程的图形与对称性"
+      },
+      {
+       "label": "D",
+       "text": "不等式的基本性质与解法"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "本章先由篮球联赛的输赢问题引出二元一次方程，再学习二元一次方程组的概念、解法和用方程组解决实际问题，所以核心内容就是方程组的概念、解法和应用。"
+    },
+    {
+     "id": "msk_p010_q2",
+     "topicId": "msk_p010",
+     "prompt": "下列方程组中，是二元一次方程组的是",
+     "question": "下列方程组中，是二元一次方程组的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "x分之1+y=5 与 x-y=1"
+      },
+      {
+       "label": "B",
+       "text": "x+y=5 与 x-y=1"
+      },
+      {
+       "label": "C",
+       "text": "x的平方+y=5 与 x-y=1"
+      },
+      {
+       "label": "D",
+       "text": "x+y+z=5 与 x-y=1"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "二元一次方程组要求一共只含两个未知数，并且含未知数的项的次数都是1。后三个分别有三个未知数、有平方项、未知数在分母上，都不符合。"
+    },
+    {
+     "id": "msk_p010_q3",
+     "topicId": "msk_p010",
+     "prompt": "用代入法解方程组 x+y=12 与 2x+y=22，得到的解中 x 等于多少？",
+     "question": "用代入法解方程组 x+y=12 与 2x+y=22，得到的解中 x 等于多少？",
+     "answer": 10,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 22}, {\"type\": \"num\", \"value\": 12}]}",
+     "difficulty": "standard",
+     "explanation": "由 x+y=12 得 y=12-x，代入第二个方程得 2x+12-x=22，即 x+12=22，所以 x=10，此时 y=2。"
+    },
+    {
+     "id": "msk_p010_q4",
+     "topicId": "msk_p010",
+     "prompt": "用二元一次方程组解决实际问题，最关键的一步是什么？",
+     "question": "用二元一次方程组解决实际问题，最关键的一步是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "先把方程组化成三元一次方程组"
+      },
+      {
+       "label": "B",
+       "text": "先把答案写出来再凑方程"
+      },
+      {
+       "label": "C",
+       "text": "找出问题中的两个等量关系并列出两个方程"
+      },
+      {
+       "label": "D",
+       "text": "先把两个未知数都取整数随意试算"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "实际问题中要求两个未知量，就要找到两个独立的等量关系，把它们分别写成方程再联立，方程组才有唯一确定的解。"
+    },
+    {
+     "id": "msk_p010_q5",
+     "topicId": "msk_p010",
+     "prompt": "解三元一次方程组的基本思路是消元，通过消元先把它转化为（　）。",
+     "question": "解三元一次方程组的基本思路是消元，通过消元先把它转化为（　）。",
+     "answer": "二元一次方程组",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "三元一次方程组含有三个未知数，先消去一个未知数就得到二元一次方程组，再消去一个未知数得到一元一次方程，从而求出解。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p011",
+   "description": "本章从天平的倾斜、公路限速标志、隧道限高标志等实际问题中的不等关系出发，认识不等式和它的基本性质，理解一元一次不等式及其解集，学会解一元一次不等式和不等式组，并用一元一次不等式解决问题。",
+   "mastery_criteria": [
+    "能说出不等式的基本性质，特别是乘除负数时不等号方向改变",
+    "会解一元一次不等式，并能用数轴表示解集",
+    "会解一元一次不等式组，能找出各解集的公共部分"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p011_q1",
+     "topicId": "msk_p011",
+     "prompt": "下列各式中，是不等式的是",
+     "question": "下列各式中，是不等式的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "x+20≤50"
+      },
+      {
+       "label": "B",
+       "text": "2x-1"
+      },
+      {
+       "label": "C",
+       "text": "x+20"
+      },
+      {
+       "label": "D",
+       "text": "x+20=50"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "用不等号表示数量之间关系的式子叫作不等式。含等号的是等式，只有代数式没有关系符号的既不是等式也不是不等式。"
+    },
+    {
+     "id": "msk_p011_q2",
+     "topicId": "msk_p011",
+     "prompt": "不等式的两边都乘同一个负数，不等号的方向怎样变化？",
+     "question": "不等式的两边都乘同一个负数，不等号的方向怎样变化？",
+     "options": [
+      {
+       "label": "A",
+       "text": "无法判断"
+      },
+      {
+       "label": "B",
+       "text": "方向改变"
+      },
+      {
+       "label": "C",
+       "text": "方向不变"
+      },
+      {
+       "label": "D",
+       "text": "可能改变也可能不变"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "不等式的基本性质2指出，两边都乘或除以同一个正数时方向不变，都乘或除以同一个负数时方向必须改变。"
+    },
+    {
+     "id": "msk_p011_q3",
+     "topicId": "msk_p011",
+     "prompt": "用不等式表示：x 的3倍与 y 的差大于或等于 -1，得（　）。",
+     "question": "用不等式表示：x 的3倍与 y 的差大于或等于 -1，得（　）。",
+     "answer": "3x-y≥-1",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "x 的3倍是 3x，与 y 的差写成 3x-y，大于或等于用大于等于号表示，所以式子是 3x-y≥-1。"
+    },
+    {
+     "id": "msk_p011_q4",
+     "topicId": "msk_p011",
+     "prompt": "若 a<b，则下列结论一定成立的是",
+     "question": "若 a<b，则下列结论一定成立的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "a除以c<b除以c"
+      },
+      {
+       "label": "B",
+       "text": "a乘c<b乘c"
+      },
+      {
+       "label": "C",
+       "text": "a+3<b+3"
+      },
+      {
+       "label": "D",
+       "text": "a-b>0"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两边都加上同一个数3，不等号方向不变，所以 a+3<b+3 成立；c 的取值未知，乘或除以 c 时方向可能改变，而 a-b 应小于零。"
+    },
+    {
+     "id": "msk_p011_q5",
+     "topicId": "msk_p011",
+     "prompt": "由 -2x<4，根据不等式的基本性质2，两边都除以 -2，得到 x>（　），其中横线上应填的数是多少？",
+     "question": "由 -2x<4，根据不等式的基本性质2，两边都除以 -2，得到 x>（　），其中横线上应填的数是多少？",
+     "answer": -2,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": -2}]}",
+     "difficulty": "standard",
+     "explanation": "两边都除以 -2，4除以 -2 得 -2，同时因为除数是负数，不等号方向由小于改为大于，所以解得 x>-2。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p012",
+   "description": "本章学习给数学概念下定义，认识可以判断真假的陈述句叫作命题，命题由条件和结论两部分组成，会判断命题的真假并用举反例的办法说明假命题，学习用演绎推理证明真命题，认识定理与推论。",
+   "mastery_criteria": [
+    "能说出定义、命题、真命题、假命题、证明、定理的含义",
+    "能判断一个命题的真假，并用举反例说明假命题",
+    "能按已知、求证、证明的格式写出一个简单命题的证明"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p012_q1",
+     "topicId": "msk_p012",
+     "prompt": "下列说法中，正确的是",
+     "question": "下列说法中，正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "可以判断真假的陈述句叫作命题"
+      },
+      {
+       "label": "B",
+       "text": "假命题不是命题"
+      },
+      {
+       "label": "C",
+       "text": "命题一定是真命题"
+      },
+      {
+       "label": "D",
+       "text": "疑问句也是命题"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "命题是可以判断真假的陈述句，一个命题要么为真要么为假；疑问句不能判断真假，所以不是命题，假命题也是命题。"
+    },
+    {
+     "id": "msk_p012_q2",
+     "topicId": "msk_p012",
+     "prompt": "数学命题一般都由哪两部分组成？",
+     "question": "数学命题一般都由哪两部分组成？",
+     "options": [
+      {
+       "label": "A",
+       "text": "已知和求证"
+      },
+      {
+       "label": "B",
+       "text": "条件和结论"
+      },
+      {
+       "label": "C",
+       "text": "定义和定理"
+      },
+      {
+       "label": "D",
+       "text": "大前提和小前提"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "数学命题一般都可以写成“如果……，那么……”的形式，其中“如果”后面是条件，“那么”后面是结论。"
+    },
+    {
+     "id": "msk_p012_q3",
+     "topicId": "msk_p012",
+     "prompt": "要说明一个命题是假命题，常用的方法是（　）。",
+     "question": "要说明一个命题是假命题，常用的方法是（　）。",
+     "answer": "举反例",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "只要找到一个符合命题条件但不满足命题结论的例子，就能说明这个命题的判断是错误的，这种方法叫举反例。"
+    },
+    {
+     "id": "msk_p012_q4",
+     "topicId": "msk_p012",
+     "prompt": "下列命题中，是真命题的是",
+     "question": "下列命题中，是真命题的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "相等的两个角是对顶角"
+      },
+      {
+       "label": "B",
+       "text": "有公共顶点的两个角是对顶角"
+      },
+      {
+       "label": "C",
+       "text": "对顶角相等"
+      },
+      {
+       "label": "D",
+       "text": "任何数的平方都大于0"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "对顶角一定相等，这是真命题；相等的两个角不一定是对顶角，0的平方等于0不大于0，有公共顶点的两个角也不一定是对顶角。"
+    },
+    {
+     "id": "msk_p012_q5",
+     "topicId": "msk_p012",
+     "prompt": "写出命题“如果两个数都是偶数，那么这两个数的和也是偶数”的条件和结论。",
+     "question": "写出命题“如果两个数都是偶数，那么这两个数的和也是偶数”的条件和结论。",
+     "answer": "条件是两个数都是偶数，结论是这两个数的和也是偶数",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "这个命题用了“如果……，那么……”的形式，“如果”后面的部分是两个数都是偶数，是条件；“那么”后面的部分是这两个数的和也是偶数，是结论。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "msk_p1035",
+   "description": "从篮球联赛赢输场数与积分的实际问题中列出方程 2x+y=20，认识含有两个未知数并且含未知数的项的次数都是1的方程叫作二元一次方程，理解满足方程的一对未知数的值叫作方程的一个解。",
+   "mastery_criteria": [
+    "能说出二元一次方程的两个条件：只含两个未知数、含未知数的项的次数都是1",
+    "能把方程变形为用一个未知数的代数式表示另一个未知数"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1035_q1",
+     "topicId": "msk_p1035",
+     "prompt": "下列方程中，是二元一次方程的是",
+     "question": "下列方程中，是二元一次方程的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x+y=20"
+      },
+      {
+       "label": "B",
+       "text": "x+y+z=20"
+      },
+      {
+       "label": "C",
+       "text": "x分之2+y=20"
+      },
+      {
+       "label": "D",
+       "text": "x的平方+y=20"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "二元一次方程要只含两个未知数，并且含未知数的项的次数都是1。含平方项的、含三个未知数的、未知数出现在分母上的都不是二元一次方程。"
+    },
+    {
+     "id": "msk_p1035_q2",
+     "topicId": "msk_p1035",
+     "prompt": "下列各对数值中，是方程 2x+y=20 的解的是",
+     "question": "下列各对数值中，是方程 2x+y=20 的解的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "x=4, y=10"
+      },
+      {
+       "label": "B",
+       "text": "x=6, y=8"
+      },
+      {
+       "label": "C",
+       "text": "x=3, y=15"
+      },
+      {
+       "label": "D",
+       "text": "x=5, y=12"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把一对数值代入方程左边看是否等于右边：2乘6加8等于20，等式成立；其余三对代入后分别是18、22、21，都不等于20。"
+    },
+    {
+     "id": "msk_p1035_q3",
+     "topicId": "msk_p1035",
+     "prompt": "已知二元一次方程 3x+2y=12，当 x=2 时，y 的值是多少？",
+     "question": "已知二元一次方程 3x+2y=12，当 x=2 时，y 的值是多少？",
+     "answer": 3,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 12}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}]}, {\"type\": \"num\", \"value\": 2}]}",
+     "difficulty": "standard",
+     "explanation": "把 x=2 代入方程得 6+2y=12，两边都减去6得 2y=6，两边都除以2得 y=3。"
+    },
+    {
+     "id": "msk_p1035_q4",
+     "topicId": "msk_p1035",
+     "prompt": "把方程 2x+y=20 写成用含 x 的代数式表示 y 的形式，得 y=（　）。",
+     "question": "把方程 2x+y=20 写成用含 x 的代数式表示 y 的形式，得 y=（　）。",
+     "answer": "20-2x",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "把 2x 移到等号右边要改变符号，由 2x+y=20 得 y=20-2x，这样就能任取 x 的值算出对应的 y。"
+    },
+    {
+     "id": "msk_p1035_q5",
+     "topicId": "msk_p1035",
+     "prompt": "关于二元一次方程的解，下列说法正确的是",
+     "question": "关于二元一次方程的解，下列说法正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "二元一次方程的解一定都是正整数"
+      },
+      {
+       "label": "B",
+       "text": "任意一对数值都是它的解"
+      },
+      {
+       "label": "C",
+       "text": "一个二元一次方程通常有很多个解"
+      },
+      {
+       "label": "D",
+       "text": "每个二元一次方程只有一个解"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "给定 x 的一个值，一般都能算出唯一的 y，所以二元一次方程通常有无数个解；但只有代入后等式成立的那一对数值才是它的解。"
+    },
+    {
+     "id": "msk_p1035_q6",
+     "topicId": "msk_p1035",
+     "prompt": "在环保知识竞赛中，抢答题答对一道得5分，必答题答对一道得3分。小明抢答对 x 道、必答对 y 道，共得20分，即 5x+3y=20。符合实际意义的解共有（　）对。",
+     "question": "在环保知识竞赛中，抢答题答对一道得5分，必答题答对一道得3分。小明抢答对 x 道、必答对 y 道，共得20分，即 5x+3y=20。符合实际意义的解共有（　）对。",
+     "answer": "2",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "x、y 都要取自然数：x=1 时 3y=15 得 y=5；x=4 时 3y=0 得 y=0；其余 x 的取值都使 y 不是自然数，所以共有两对。"
+    },
+    {
+     "id": "msk_p1035_q7",
+     "topicId": "msk_p1035",
+     "prompt": "某市中学生篮球联赛规定赢一场得2分，输一场得1分。某队本次联赛积20分，设赢 x 场、输 y 场，请写出 x 与 y 满足的方程，并求出该队赢6场时输了几场。",
+     "question": "某市中学生篮球联赛规定赢一场得2分，输一场得1分。某队本次联赛积20分，设赢 x 场、输 y 场，请写出 x 与 y 满足的方程，并求出该队赢6场时输了几场。",
+     "answer": "方程为 2x+y=20，赢6场时输了8场",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "赢的场数乘2加上输的场数乘1等于总积分20，得 2x+y=20；把 x=6 代入得 12+y=20，所以 y=8。"
+    },
+    {
+     "id": "msk_p1035_q8",
+     "topicId": "msk_p1035",
+     "prompt": "某景区门票价格为成人票60元一张、儿童票30元一张。现有 x 名成人、y 名儿童，买门票共花270元。请列出关于 x、y 的二元一次方程，并写出一组符合实际意义的解。",
+     "question": "某景区门票价格为成人票60元一张、儿童票30元一张。现有 x 名成人、y 名儿童，买门票共花270元。请列出关于 x、y 的二元一次方程，并写出一组符合实际意义的解。",
+     "answer": "方程为 60x+30y=270，如 x=3, y=3",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "成人票的总价加上儿童票的总价等于270元，所以 60x+30y=270。检验 x=3、y=3 时左边为180加90等于270，等式成立，符合实际意义。"
+    }
+   ],
+   "page": 86,
+   "misconceptions": [
+    "认为 x分之1 加 y 等于 5 也是二元一次方程，忽略了未知数不能出现在分母上",
+    "检验一对数值时只代入一个未知数就断定它是方程的解"
+   ]
+  },
+  {
+   "id": "msk_p1036",
+   "description": "由球队赛12场积22分的问题，把 x+y=12 与 2x+y=22 联立得到二元一次方程组，理解方程组的解是两个方程的公共解，会用列表的办法找出这个公共解。",
+   "mastery_criteria": [
+    "能说出二元一次方程组是两个一次方程联立成的整体",
+    "能理解方程组的解必须是两个方程的公共解并会检验"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1036_q1",
+     "topicId": "msk_p1036",
+     "prompt": "下列方程组中，是二元一次方程组的是",
+     "question": "下列方程组中，是二元一次方程组的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "x+y=12 与 2x+y=22"
+      },
+      {
+       "label": "B",
+       "text": "x+y=12 与 x+y+z=22"
+      },
+      {
+       "label": "C",
+       "text": "x分之1+y=12 与 2x+y=22"
+      },
+      {
+       "label": "D",
+       "text": "x的平方+y=12 与 2x+y=22"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "二元一次方程组要求两个方程一共只含两个未知数，并且含未知数的项的次数都是1，只有第一组同时满足这两个要求。"
+    },
+    {
+     "id": "msk_p1036_q2",
+     "topicId": "msk_p1036",
+     "prompt": "解方程组 x+y=12 与 2x+y=22，得到的解中 y 等于多少？",
+     "question": "解方程组 x+y=12 与 2x+y=22，得到的解中 y 等于多少？",
+     "answer": 2,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 12}, {\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 22}, {\"type\": \"num\", \"value\": 12}]}]}",
+     "difficulty": "standard",
+     "explanation": "两式相减消去 y，得 x=10；把 x=10 代入 x+y=12，得 y=2，所以方程组的解是 x=10，y=2。"
+    },
+    {
+     "id": "msk_p1036_q3",
+     "topicId": "msk_p1036",
+     "prompt": "二元一次方程组的解指的是什么？",
+     "question": "二元一次方程组的解指的是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "两个方程解的个数的总和"
+      },
+      {
+       "label": "B",
+       "text": "方程组中两个方程的公共解"
+      },
+      {
+       "label": "C",
+       "text": "使其中一个方程成立的一对数值"
+      },
+      {
+       "label": "D",
+       "text": "第一个方程的所有解"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "方程组的解必须同时满足方程组中的每一个方程，所以它是所有方程的公共解，只满足其中一个方程的一对数值不能叫方程组的解。"
+    },
+    {
+     "id": "msk_p1036_q4",
+     "topicId": "msk_p1036",
+     "prompt": "鸡兔同笼：笼中共有35个头、94只脚。设鸡有 x 只、兔有 y 只，下列方程组正确的是",
+     "question": "鸡兔同笼：笼中共有35个头、94只脚。设鸡有 x 只、兔有 y 只，下列方程组正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "x+y=94 与 2x+4y=35"
+      },
+      {
+       "label": "B",
+       "text": "x+y=35 与 4x+2y=94"
+      },
+      {
+       "label": "C",
+       "text": "x+y=35 与 2x+4y=94"
+      },
+      {
+       "label": "D",
+       "text": "x-y=35 与 2x+4y=94"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "头的总数给出 x+y=35，脚的总数中鸡两只脚、兔四只脚，给出 2x+4y=94，两个等量关系联立就是所求方程组。"
+    },
+    {
+     "id": "msk_p1036_q5",
+     "topicId": "msk_p1036",
+     "prompt": "鸡兔同笼，笼中共有35个头、94只脚，兔有多少只？",
+     "question": "鸡兔同笼，笼中共有35个头、94只脚，兔有多少只？",
+     "answer": 12,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 94}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 35}]}]}, {\"type\": \"num\", \"value\": 2}]}",
+     "difficulty": "standard",
+     "explanation": "设兔 y 只，由头数得鸡 35-y 只，脚数为 2(35-y)+4y=94，即 70+2y=94，解得 2y=24，y=12。"
+    },
+    {
+     "id": "msk_p1036_q6",
+     "topicId": "msk_p1036",
+     "prompt": "已知方程组 x+y=12 与 2x+y=22 的解中 y=2，则 x=（　）。",
+     "question": "已知方程组 x+y=12 与 2x+y=22 的解中 y=2，则 x=（　）。",
+     "answer": "10",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "把 y=2 代入 x+y=12 得 x=10，再代入第二个方程检验：2乘10加2等于22，所以方程组的解是 x=10，y=2。"
+    },
+    {
+     "id": "msk_p1036_q7",
+     "topicId": "msk_p1036",
+     "prompt": "地球的表面积约为5.1亿平方千米，其中海洋面积约为陆地面积的2.4倍。设海洋面积为 x 亿平方千米、陆地面积为 y 亿平方千米，请列出关于 x、y 的二元一次方程组。",
+     "question": "地球的表面积约为5.1亿平方千米，其中海洋面积约为陆地面积的2.4倍。设海洋面积为 x 亿平方千米、陆地面积为 y 亿平方千米，请列出关于 x、y 的二元一次方程组。",
+     "answer": "x+y=5.1 与 x=2.4y",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "海洋面积与陆地面积的和是表面积5.1亿平方千米，得到 x+y=5.1；海洋面积约是陆地面积的2.4倍，得到 x=2.4y，两式联立即为方程组。"
+    },
+    {
+     "id": "msk_p1036_q8",
+     "topicId": "msk_p1036",
+     "prompt": "我国明代数学著作中有这样一首诗：一房七客多七客，一房九客一房空。设客房有 x 间、房客有 y 人，下列方程组正确的是",
+     "question": "我国明代数学著作中有这样一首诗：一房七客多七客，一房九客一房空。设客房有 x 间、房客有 y 人，下列方程组正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "y=7x-7 与 y=9x+1"
+      },
+      {
+       "label": "B",
+       "text": "y=7x-7 与 y=9(x+1)"
+      },
+      {
+       "label": "C",
+       "text": "y=7x+7 与 y=9x-1"
+      },
+      {
+       "label": "D",
+       "text": "y=7x+7 与 y=9(x-1)"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "每间住7人时有7人无房可住，所以人数比7x多7；每间住9人时正好空出1间客房，说明用了 x-1 间房，故 y=9(x-1)。"
+    }
+   ],
+   "page": 89,
+   "misconceptions": [
+    "把方程组的解当成其中一个方程的解，只要满足一个方程就认为可以",
+    "认为两个方程各自的解合在一起就是方程组的解"
+   ]
+  },
+  {
+   "id": "msk_p1037",
+   "description": "把二元一次方程组转化为一元一次方程来解：把一个方程中的某个未知数用含另一个未知数的代数式表示后代入另一个方程，叫代入消元法；把两个方程左右两边分别相加或相减消去一个未知数，叫加减消元法。",
+   "mastery_criteria": [
+    "会用代入消元法把一个未知数用另一个未知数表示后代入求解",
+    "会在两个方程中同一未知数的系数相同或互为相反数时用加减法消元"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msk_p1037_q1",
+     "topicId": "msk_p1037",
+     "prompt": "把方程组中的一个方程变形，用含一个未知数的代数式表示另一个未知数，再代入另一个方程，这种解方程组的方法叫作",
+     "question": "把方程组中的一个方程变形，用含一个未知数的代数式表示另一个未知数，再代入另一个方程，这种解方程组的方法叫作",
+     "options": [
+      {
+       "label": "A",
+       "text": "代入消元法"
+      },
+      {
+       "label": "B",
+       "text": "加减消元法"
+      },
+      {
+       "label": "C",
+       "text": "换元法"
+      },
+      {
+       "label": "D",
+       "text": "列表讨论法"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "这种解法先用一个未知数表示另一个未知数，再代入消去这个未知数，把方程组化成一元一次方程，因此叫作代入消元法。"
+    },
+    {
+     "id": "msk_p1037_q2",
+     "topicId": "msk_p1037",
+     "prompt": "用代入法解方程组 x+y=12 与 x+2y=22，得到的解中 y 等于多少？",
+     "question": "用代入法解方程组 x+y=12 与 x+2y=22，得到的解中 y 等于多少？",
+     "answer": 10,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 22}, {\"type\": \"num\", \"value\": 12}]}",
+     "difficulty": "standard",
+     "explanation": "由第一个方程得 x=12-y，代入第二个方程得 12-y+2y=22，即 12+y=22，所以 y=10，此时 x=2。"
+    },
+    {
+     "id": "msk_p1037_q3",
+     "topicId": "msk_p1037",
+     "prompt": "用加减法解方程组 x+2y=1 与 3x-2y=5，把两个方程左右两边分别相加得到 4x=6，则 x 等于多少？",
+     "question": "用加减法解方程组 x+2y=1 与 3x-2y=5，把两个方程左右两边分别相加得到 4x=6，则 x 等于多少？",
+     "answer": 1.5,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 4}]}",
+     "difficulty": "standard",
+     "explanation": "两个方程中 y 的系数互为相反数，相加就把 y 消去了，得到 4x=6，两边都除以4得 x=1.5。"
+    },
+    {
+     "id": "msk_p1037_q4",
+     "topicId": "msk_p1037",
+     "prompt": "用加减消元法解方程组时，两个方程中同一个未知数的系数满足什么条件，可以直接把两个方程左右两边分别相加消去这个未知数？",
+     "question": "用加减消元法解方程组时，两个方程中同一个未知数的系数满足什么条件，可以直接把两个方程左右两边分别相加消去这个未知数？",
+     "options": [
+      {
+       "label": "A",
+       "text": "系数都是负数"
+      },
+      {
+       "label": "B",
+       "text": "系数互为相反数"
+      },
+      {
+       "label": "C",
+       "text": "系数都是正数"
+      },
+      {
+       "label": "D",
+       "text": "系数相等且都不为零"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "只有系数互为相反数，两个方程相加时这一项的系数之和为零，未知数才被消去；系数相等时要用相减的办法消元。"
+    },
+    {
+     "id": "msk_p1037_q5",
+     "topicId": "msk_p1037",
+     "prompt": "解方程组 3x+2y=4 与 2x-y=5 时，由第二个方程得 y=2x-5，把它代入第一个方程，就消去了未知数（　）。",
+     "question": "解方程组 3x+2y=4 与 2x-y=5 时，由第二个方程得 y=2x-5，把它代入第一个方程，就消去了未知数（　）。",
+     "answer": "y",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "y=2x-5 是把 y 用含 x 的代数式表示出来，代入第一个方程后原式中的 y 全部换成含 x 的式子，消去的就是 y。"
+    },
+    {
+     "id": "msk_p1037_q6",
+     "topicId": "msk_p1037",
+     "prompt": "用加减法解方程组 x+y=5 与 x-y=1。",
+     "question": "用加减法解方程组 x+y=5 与 x-y=1。",
+     "answer": "x=3, y=2",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "两个方程左右两边分别相加，得 2x=6，所以 x=3；把 x=3 代入 x+y=5 得 y=2，检验后满足两个方程。"
+    },
+    {
+     "id": "msk_p1037_q7",
+     "topicId": "msk_p1037",
+     "prompt": "在等式 y=ax+b 中，当 x=5 时 y=6；当 x=-3 时 y=-10。求 a 的值。",
+     "question": "在等式 y=ax+b 中，当 x=5 时 y=6；当 x=-3 时 y=-10。求 a 的值。",
+     "answer": 2,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": -10}]}, {\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": -3}]}]}",
+     "difficulty": "hard",
+     "explanation": "把两组值代入得 5a+b=6 与 -3a+b=-10，两式相减消去 b，得 8a=16，所以 a=2，进一步可得 b=-4。"
+    },
+    {
+     "id": "msk_p1037_q8",
+     "topicId": "msk_p1037",
+     "prompt": "用加减法解方程组 5x-2y=4 与 2x-3y=-5 时，下列做法正确的是",
+     "question": "用加减法解方程组 5x-2y=4 与 2x-3y=-5 时，下列做法正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "两个方程直接左右两边相加"
+      },
+      {
+       "label": "B",
+       "text": "第一个方程乘3，第二个方程乘2，再把两个方程左右两边相加"
+      },
+      {
+       "label": "C",
+       "text": "第一个方程乘3，第二个方程乘2，再把两个方程左右两边分别相减"
+      },
+      {
+       "label": "D",
+       "text": "第一个方程乘2，第二个方程乘3，再把两个方程相加"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "乘3、乘2后 y 的系数都是负六，两个方程相减即可消去 y，得 11x=22，x=2；若相加，y 的系数变成负十二，消不去。"
+    }
+   ],
+   "page": 92,
+   "misconceptions": [
+    "代入时把变形后的式子代回原方程，等于什么也没消去",
+    "加减消元时两个方程对应项没有对齐就相加，导致系数出错"
+   ]
+  },
+  {
+   "id": "msk_p1038",
+   "description": "在稻捆收成的问题中未知量有三个，可以列出三个方程并联立成三元一次方程组；解三元一次方程组的基本思路仍是消元，先化为二元一次方程组，再化为一元一次方程。",
+   "mastery_criteria": [
+    "能说出三元一次方程组的特征：三个未知数、含未知数的项的次数都是1",
+    "会用代入法或加减法逐步消元，把三元化为二元再求解"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msk_p1038_q1",
+     "topicId": "msk_p1038",
+     "prompt": "下列方程组中，是三元一次方程组的是",
+     "question": "下列方程组中，是三元一次方程组的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "x+y+z=6 与 x-y=1 与 y-z=2"
+      },
+      {
+       "label": "B",
+       "text": "x+y=6 与 x-y=1 与 y-z=2"
+      },
+      {
+       "label": "C",
+       "text": "x+y+z=6 与 x的平方+y=1 与 y-z=2"
+      },
+      {
+       "label": "D",
+       "text": "x分之1+y+z=6 与 x-y=1 与 y-z=2"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "三元一次方程组要含三个未知数，并且每个含未知数的项的次数都是1。只含两个未知数的、含平方项的、未知数在分母上的都不符合。"
+    },
+    {
+     "id": "msk_p1038_q2",
+     "topicId": "msk_p1038",
+     "prompt": "解方程组 x+y=5 与 y+z=7 与 x+z=6，得到的解中 x 等于多少？",
+     "question": "解方程组 x+y=5 与 y+z=7 与 x+z=6，得到的解中 x 等于多少？",
+     "answer": 2,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 6}]}, {\"type\": \"num\", \"value\": 7}]}, {\"type\": \"num\", \"value\": 2}]}",
+     "difficulty": "standard",
+     "explanation": "把三个方程左右两边分别相加，得 2x+2y+2z=18，即 x+y+z=9；再用它减去 y+z=7，得 x=2。"
+    },
+    {
+     "id": "msk_p1038_q3",
+     "topicId": "msk_p1038",
+     "prompt": "解三元一次方程组的基本思路是消元，通过消元先把它转化为（　）。",
+     "question": "解三元一次方程组的基本思路是消元，通过消元先把它转化为（　）。",
+     "answer": "二元一次方程组",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "三元一次方程组先消去一个未知数得到二元一次方程组，再消去一个未知数得到一元一次方程，依次求出各个未知数。"
+    },
+    {
+     "id": "msk_p1038_q4",
+     "topicId": "msk_p1038",
+     "prompt": "在方程组 x+y=5 与 y+z=7 与 x+z=6 中，z 的值是多少？",
+     "question": "在方程组 x+y=5 与 y+z=7 与 x+z=6 中，z 的值是多少？",
+     "answer": 4,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 7}, {\"type\": \"num\", \"value\": 6}]}, {\"type\": \"num\", \"value\": 5}]}, {\"type\": \"num\", \"value\": 2}]}",
+     "difficulty": "standard",
+     "explanation": "三个方程相加得 x+y+z=9，用它减去 x+y=5，得 z=4；同样可得 y=3、x=2，代入检验成立。"
+    },
+    {
+     "id": "msk_p1038_q5",
+     "topicId": "msk_p1038",
+     "prompt": "解三元一次方程组时，常用什么办法先消去一个未知数？",
+     "question": "解三元一次方程组时，常用什么办法先消去一个未知数？",
+     "options": [
+      {
+       "label": "A",
+       "text": "用列表讨论的办法"
+      },
+      {
+       "label": "B",
+       "text": "用代入消元法或加减消元法"
+      },
+      {
+       "label": "C",
+       "text": "用画数轴的办法"
+      },
+      {
+       "label": "D",
+       "text": "用因式分解的办法"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "消元仍然是解三元一次方程组的基本思路，可以像解二元一次方程组那样用代入法或加减法消去同一个未知数。"
+    },
+    {
+     "id": "msk_p1038_q6",
+     "topicId": "msk_p1038",
+     "prompt": "在等式 y=ax的平方+bx+c 中，当 x=-1 时 y=5；当 x=1 时 y=1；当 x=2 时 y=2。求 a、b、c 的值。",
+     "question": "在等式 y=ax的平方+bx+c 中，当 x=-1 时 y=5；当 x=1 时 y=1；当 x=2 时 y=2。求 a、b、c 的值。",
+     "answer": "a=1, b=-2, c=2",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "代入三组值得 a-b+c=5、a+b+c=1、4a+2b+c=2，由前两式得 a+c=3、b=-2，再代入第三式得 4a+c=6，联立得 a=1、c=2。"
+    },
+    {
+     "id": "msk_p1038_q7",
+     "topicId": "msk_p1038",
+     "prompt": "教材中的稻捆问题列出了三个方程，某同学想只取其中一个方程就求出三个未知数，他的想法的问题是",
+     "question": "教材中的稻捆问题列出了三个方程，某同学想只取其中一个方程就求出三个未知数，他的想法的问题是",
+     "options": [
+      {
+       "label": "A",
+       "text": "只要方程中含三个未知数就能解出三个未知数"
+      },
+      {
+       "label": "B",
+       "text": "三个未知数可以任意取值，不必解方程"
+      },
+      {
+       "label": "C",
+       "text": "一个方程无法确定三个未知数的值，必须把三个方程联立成方程组"
+      },
+      {
+       "label": "D",
+       "text": "三个方程中有的方程是多余的，任取两个即可"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "一个方程只能给出三个未知数之间的一个关系，取定两个之后第三个才唯一确定，所以要三个独立方程联立成方程组求解。"
+    },
+    {
+     "id": "msk_p1038_q8",
+     "topicId": "msk_p1038",
+     "prompt": "数学活动中，电工把三根导线在楼上两两相连，在地下室分别测出三段连接后的电阻之和，从而得到关于三根导线电阻的三个方程，这样做的道理是",
+     "question": "数学活动中，电工把三根导线在楼上两两相连，在地下室分别测出三段连接后的电阻之和，从而得到关于三根导线电阻的三个方程，这样做的道理是",
+     "options": [
+      {
+       "label": "A",
+       "text": "每次测量就能直接测出一根导线的电阻"
+      },
+      {
+       "label": "B",
+       "text": "三个方程中只有一个方程有用，其余是重复的"
+      },
+      {
+       "label": "C",
+       "text": "三段导线的电阻一定相等，测一次就够"
+      },
+      {
+       "label": "D",
+       "text": "每次测量给出两个电阻之和，三次测量正好给出三个不同的方程"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两两相连后测得的是一对导线的电阻之和，三次连线方式不同，得到的是三个不同的等式，联立成三元一次方程组才能求出三根导线的电阻。"
+    }
+   ],
+   "page": 97,
+   "misconceptions": [
+    "以为三个方程中任意两个联立就能解出三个未知数",
+    "消元时在两个方程之间反复消同一个未知数，得不到新的二元方程"
+   ]
+  },
+  {
+   "id": "msk_p1039",
+   "description": "用二元一次方程组解决实际问题的过程是：先设两个合适的未知数，再依据问题中的两个等量关系列出方程组，解出方程组后写出符合实际意义的答案，列表是梳理数量关系、寻找等量关系的常用策略。",
+   "mastery_criteria": [
+    "能找出实际问题中的两个等量关系并列出方程组",
+    "能根据题意检验方程组的解是否符合实际意义"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "msk_p1039_q1",
+     "topicId": "msk_p1039",
+     "prompt": "用二元一次方程组解决实际问题，一般首先做什么？",
+     "question": "用二元一次方程组解决实际问题，一般首先做什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "设两个合适的未知数"
+      },
+      {
+       "label": "B",
+       "text": "先随意试算几个数凑答案"
+      },
+      {
+       "label": "C",
+       "text": "先写答案再补方程"
+      },
+      {
+       "label": "D",
+       "text": "先画一条数轴"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "问题中有两个要求的未知量，就要设两个未知数，再用字母表示出题中的数量关系，才能依据等量关系列出两个方程。"
+    },
+    {
+     "id": "msk_p1039_q2",
+     "topicId": "msk_p1039",
+     "prompt": "林老师用78元买2个菠萝和1个哈密瓜，叶老师用84元买1个菠萝和2个哈密瓜。设菠萝每个 x 元、哈密瓜每个 y 元，可得方程组 2x+y=78 与 x+2y=84。一个菠萝多少元？",
+     "question": "林老师用78元买2个菠萝和1个哈密瓜，叶老师用84元买1个菠萝和2个哈密瓜。设菠萝每个 x 元、哈密瓜每个 y 元，可得方程组 2x+y=78 与 x+2y=84。一个菠萝多少元？",
+     "answer": 24,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 78}]}, {\"type\": \"num\", \"value\": 84}]}, {\"type\": \"num\", \"value\": 3}]}",
+     "difficulty": "standard",
+     "explanation": "把第一个方程乘2得 4x+2y=156，减去第二个方程得 3x=72，所以 x=24；再代入得 y=30，即菠萝24元一个。"
+    },
+    {
+     "id": "msk_p1039_q3",
+     "topicId": "msk_p1039",
+     "prompt": "小明用420元购买两种吉祥物共10个，甲种48元一个，乙种38元一个。设买甲种 x 个、乙种 y 个，可得方程组 x+y=10 与 48x+38y=420。买甲种多少个？",
+     "question": "小明用420元购买两种吉祥物共10个，甲种48元一个，乙种38元一个。设买甲种 x 个、乙种 y 个，可得方程组 x+y=10 与 48x+38y=420。买甲种多少个？",
+     "answer": 4,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 420}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 38}, {\"type\": \"num\", \"value\": 10}]}]}, {\"type\": \"num\", \"value\": 10}]}",
+     "difficulty": "standard",
+     "explanation": "若10个都按38元算共380元，比实际少40元，每把一个换成甲种多10元，所以甲种有40除以10等于4个，乙种6个。"
+    },
+    {
+     "id": "msk_p1039_q4",
+     "topicId": "msk_p1039",
+     "prompt": "停车场内停有中型、小型汽车共50辆，中型车每次8元、小型车每次6元，这些车共缴停车费360元。中型汽车有多少辆？",
+     "question": "停车场内停有中型、小型汽车共50辆，中型车每次8元、小型车每次6元，这些车共缴停车费360元。中型汽车有多少辆？",
+     "options": [
+      {
+       "label": "A",
+       "text": "35 辆"
+      },
+      {
+       "label": "B",
+       "text": "30 辆"
+      },
+      {
+       "label": "C",
+       "text": "25 辆"
+      },
+      {
+       "label": "D",
+       "text": "20 辆"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "若50辆都按6元收费共300元，比实际少60元，每多一辆中型车多收2元，所以中型车有60除以2等于30辆，小车20辆。"
+    },
+    {
+     "id": "msk_p1039_q5",
+     "topicId": "msk_p1039",
+     "prompt": "某小组计划做一批中国结。如果每人做5个，就比计划多做9个；如果每人做4个，就比计划少做15个。设该小组有 x 人，计划做 y 个，可得方程 y=5x-9 与 y=（　）。",
+     "question": "某小组计划做一批中国结。如果每人做5个，就比计划多做9个；如果每人做4个，就比计划少做15个。设该小组有 x 人，计划做 y 个，可得方程 y=5x-9 与 y=（　）。",
+     "answer": "4x+15",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "每人做4个时总数是4x，比计划少15个，说明计划数比4x多15，所以 y=4x+15，两个方程联立即可求出人数和计划数。"
+    },
+    {
+     "id": "msk_p1039_q6",
+     "topicId": "msk_p1039",
+     "prompt": "某城市出租车起步价允许行驶的最远路程为3千米，超过3千米的部分按路程另收费。甲乘坐这种车行驶11千米付了20元，乙行驶23千米付了38元。这种出租车的起步价是多少元？超过3千米后每千米收费多少元？",
+     "question": "某城市出租车起步价允许行驶的最远路程为3千米，超过3千米的部分按路程另收费。甲乘坐这种车行驶11千米付了20元，乙行驶23千米付了38元。这种出租车的起步价是多少元？超过3千米后每千米收费多少元？",
+     "answer": "起步价8元，超过3千米后每千米1.5元",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "设起步价 a 元、超过部分每千米 b 元，得 a+8b=20 与 a+20b=38，两式相减得 12b=18，b=1.5，再得 a=8。"
+    },
+    {
+     "id": "msk_p1039_q7",
+     "topicId": "msk_p1039",
+     "prompt": "班级图书角借来一批图书。如果全班每人分3本，那么还剩20本；如果全班每人分5本，那么还缺6本。这个班有多少名学生？",
+     "question": "班级图书角借来一批图书。如果全班每人分3本，那么还剩20本；如果全班每人分5本，那么还缺6本。这个班有多少名学生？",
+     "answer": 13,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 20}, {\"type\": \"num\", \"value\": 6}]}, {\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 3}]}]}",
+     "difficulty": "hard",
+     "explanation": "设学生 x 名，图书总数既可写成 3x+20，又可写成 5x-6，两式相等得 2x=26，所以 x=13，图书共59本。"
+    },
+    {
+     "id": "msk_p1039_q8",
+     "topicId": "msk_p1039",
+     "prompt": "某铁路桥长2120米，一列高铁从开始上桥到完全过桥用了31秒，整列列车完全在桥上的时间共22秒。设列车速度为每秒 x 米、车长为 y 米，可列方程组 31x=2120+y 与 22x=2120-y。列车的长度是多少米？",
+     "question": "某铁路桥长2120米，一列高铁从开始上桥到完全过桥用了31秒，整列列车完全在桥上的时间共22秒。设列车速度为每秒 x 米、车长为 y 米，可列方程组 31x=2120+y 与 22x=2120-y。列车的长度是多少米？",
+     "options": [
+      {
+       "label": "A",
+       "text": "260 米"
+      },
+      {
+       "label": "B",
+       "text": "480 米"
+      },
+      {
+       "label": "C",
+       "text": "360 米"
+      },
+      {
+       "label": "D",
+       "text": "400 米"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两个方程相加消去 y，得 53x=4240，所以 x=80；再代入 22x=2120-y 得 y=2120-1760=360，即车长360米。"
+    }
+   ],
+   "page": 100,
+   "misconceptions": [
+    "只设一个未知数却列了两个方程，导致前后不一致",
+    "解出方程组就结束，不检验解是否符合实际意义就写答案"
+   ]
+  },
+  {
+   "id": "msk_p1040",
+   "description": "任意两个数之间只有大于、等于、小于三种关系，用不等号表示数量之间关系的式子叫作不等式；不等式两边都加或减同一个数或整式方向不变，两边都乘或除以同一个正数方向不变，乘或除以同一个负数方向改变。",
+   "mastery_criteria": [
+    "能根据文字叙述用不等号写出不等式",
+    "能说出不等式基本性质1和基本性质2的内容并会应用"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1040_q1",
+     "topicId": "msk_p1040",
+     "prompt": "下列式子中，是不等式的是",
+     "question": "下列式子中，是不等式的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "x-80≤0"
+      },
+      {
+       "label": "B",
+       "text": "x-80=0"
+      },
+      {
+       "label": "C",
+       "text": "80x"
+      },
+      {
+       "label": "D",
+       "text": "x-80"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "不等式是用不等号表示数量之间关系的式子。x-80=0 是等式，x-80 和 80x 只是代数式，都不含不等号。"
+    },
+    {
+     "id": "msk_p1040_q2",
+     "topicId": "msk_p1040",
+     "prompt": "某路段交通标志表示汽车的最高时速不得超过80千米每时，若汽车速度为 v 千米每时，则 v 与80的关系是",
+     "question": "某路段交通标志表示汽车的最高时速不得超过80千米每时，若汽车速度为 v 千米每时，则 v 与80的关系是",
+     "options": [
+      {
+       "label": "A",
+       "text": "v=80"
+      },
+      {
+       "label": "B",
+       "text": "v≤80"
+      },
+      {
+       "label": "C",
+       "text": "v<80"
+      },
+      {
+       "label": "D",
+       "text": "v≥80"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "“不得超过”就是小于或等于，可以取到80这个临界值，所以用小于等于号表示，写作 v≤80。"
+    },
+    {
+     "id": "msk_p1040_q3",
+     "topicId": "msk_p1040",
+     "prompt": "用不等式表示：小明的跳高成绩 h 米打破了该校1.79米的纪录，得（　）。",
+     "question": "用不等式表示：小明的跳高成绩 h 米打破了该校1.79米的纪录，得（　）。",
+     "answer": "h>1.79",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "“打破纪录”表示成绩大于原纪录，且不能等于原纪录，所以用大于号，写作 h>1.79。"
+    },
+    {
+     "id": "msk_p1040_q4",
+     "topicId": "msk_p1040",
+     "prompt": "不等式 -2x>4 的两边都除以 -2，得到的结果是",
+     "question": "不等式 -2x>4 的两边都除以 -2，得到的结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "x>-2"
+      },
+      {
+       "label": "B",
+       "text": "x<2"
+      },
+      {
+       "label": "C",
+       "text": "x<-2"
+      },
+      {
+       "label": "D",
+       "text": "x>2"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两边都除以 -2，4除以 -2 等于 -2；因为除数是负数，不等号方向要改变，由大于改为小于，所以得 x<-2。"
+    },
+    {
+     "id": "msk_p1040_q5",
+     "topicId": "msk_p1040",
+     "prompt": "不等式 3x<9 的两边都除以3，得（　）。",
+     "question": "不等式 3x<9 的两边都除以3，得（　）。",
+     "answer": "x<3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "两边都除以正数3，不等号方向不变，9除以3等于3，所以解集是 x<3。"
+    },
+    {
+     "id": "msk_p1040_q6",
+     "topicId": "msk_p1040",
+     "prompt": "若 a>b，则 a-3 与 b-3 的大小关系是",
+     "question": "若 a>b，则 a-3 与 b-3 的大小关系是",
+     "options": [
+      {
+       "label": "A",
+       "text": "无法确定"
+      },
+      {
+       "label": "B",
+       "text": "a-3=b-3"
+      },
+      {
+       "label": "C",
+       "text": "a-3<b-3"
+      },
+      {
+       "label": "D",
+       "text": "a-3>b-3"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "根据不等式的基本性质1，两边都减去同一个数3，不等号方向不变，所以 a-3 仍然大于 b-3。"
+    },
+    {
+     "id": "msk_p1040_q7",
+     "topicId": "msk_p1040",
+     "prompt": "已知 a<b，下列结论一定正确的是",
+     "question": "已知 a<b，下列结论一定正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "a-5<b-5"
+      },
+      {
+       "label": "B",
+       "text": "-3a<-3b"
+      },
+      {
+       "label": "C",
+       "text": "a乘0<b乘0"
+      },
+      {
+       "label": "D",
+       "text": "a的平方<b的平方"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两边都减去5，方向不变，结论成立；乘 -3 时方向要改变，乘0时两边相等，平方后大小关系不确定，所以后三个都不一定成立。"
+    },
+    {
+     "id": "msk_p1040_q8",
+     "topicId": "msk_p1040",
+     "prompt": "利用不等式的基本性质，把不等式 3<x+5 化成 x>c 的形式。",
+     "question": "利用不等式的基本性质，把不等式 3<x+5 化成 x>c 的形式。",
+     "answer": "x>-2",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "两边都减去5，根据不等式的基本性质1，不等号方向不变，得 3-5<x，即 -2<x，写成 x>-2。"
+    }
+   ],
+   "page": 116,
+   "misconceptions": [
+    "把“不超过”写成大于号，把“不大于”写成大于等于之外的符号，混淆临界值",
+    "两边都乘或除以负数时忘记改变不等号的方向"
+   ]
+  },
+  {
+   "id": "msk_p1041",
+   "description": "只含有一个未知数，并且未知数的次数是1的不等式叫作一元一次不等式；满足不等式的未知数的某个值叫不等式的一个解，所有解组成的全体叫解集，求解集的过程叫解不等式，解集可以用数轴表示。",
+   "mastery_criteria": [
+    "能判断一个不等式是不是一元一次不等式",
+    "能在数轴上表示解集，区分实心圆圈与空心圆圈的含义"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1041_q1",
+     "topicId": "msk_p1041",
+     "prompt": "下列不等式中，是一元一次不等式的是",
+     "question": "下列不等式中，是一元一次不等式的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "4x-1>7"
+      },
+      {
+       "label": "B",
+       "text": "x分之1-1>7"
+      },
+      {
+       "label": "C",
+       "text": "x-y>7"
+      },
+      {
+       "label": "D",
+       "text": "x的平方-1>7"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "一元一次不等式只含一个未知数，并且未知数的次数是1。含平方项的、含两个未知数的、未知数在分母上的都不符合要求。"
+    },
+    {
+     "id": "msk_p1041_q2",
+     "topicId": "msk_p1041",
+     "prompt": "不等式的解集指的是什么？",
+     "question": "不等式的解集指的是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "使不等式成立的一个具体的数"
+      },
+      {
+       "label": "B",
+       "text": "不等式的所有解组成的全体"
+      },
+      {
+       "label": "C",
+       "text": "不等式的解的个数"
+      },
+      {
+       "label": "D",
+       "text": "不等式的一个解"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "满足不等式的未知数的每一个值都是它的一个解，这样的解有无数个，所有解组成的全体才叫这个不等式的解集。"
+    },
+    {
+     "id": "msk_p1041_q3",
+     "topicId": "msk_p1041",
+     "prompt": "公路隧道的限高标志表示通过隧道的汽车高度不能超过4.0米。一辆货车车厢底部离地面1.1米，车厢高度为 x 米，则 1.1+x≤4.0。这辆车的车厢高度最高不能超过多少米？",
+     "question": "公路隧道的限高标志表示通过隧道的汽车高度不能超过4.0米。一辆货车车厢底部离地面1.1米，车厢高度为 x 米，则 1.1+x≤4.0。这辆车的车厢高度最高不能超过多少米？",
+     "answer": 2.9,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 4.0}, {\"type\": \"num\", \"value\": 1.1}]}",
+     "difficulty": "standard",
+     "explanation": "由 1.1+x≤4.0，根据不等式的基本性质1，两边都减去1.1，得 x≤2.9，所以车厢高度最高不能超过2.9米。"
+    },
+    {
+     "id": "msk_p1041_q4",
+     "topicId": "msk_p1041",
+     "prompt": "由隧道限高问题得到不等式 1.1+x≤4.0，它的解集是（　）。",
+     "question": "由隧道限高问题得到不等式 1.1+x≤4.0，它的解集是（　）。",
+     "answer": "x≤2.9",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "两边都减去1.1，不等号方向不变，得 x≤2.9，即所有不大于2.9的数都满足这个不等式。"
+    },
+    {
+     "id": "msk_p1041_q5",
+     "topicId": "msk_p1041",
+     "prompt": "在数轴上表示不等式 x≥2.9 的解集时，表示2.9的这个点应画成",
+     "question": "在数轴上表示不等式 x≥2.9 的解集时，表示2.9的这个点应画成",
+     "options": [
+      {
+       "label": "A",
+       "text": "不画点，只画箭头"
+      },
+      {
+       "label": "B",
+       "text": "空心圆圈，表示解集不包含2.9这个数"
+      },
+      {
+       "label": "C",
+       "text": "实心圆圈，表示解集包含2.9这个数"
+      },
+      {
+       "label": "D",
+       "text": "一个小三角形，表示起点"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "解集包含端点时必须画实心圆圈，只有在解集不包含端点时才画空心圆圈，这里 x≥2.9 包含2.9，所以要画实心圆圈。"
+    },
+    {
+     "id": "msk_p1041_q6",
+     "topicId": "msk_p1041",
+     "prompt": "x 取任意负数时，不等式 x-2<0 都成立，能不能说这个不等式的解集是 x<0？",
+     "question": "x 取任意负数时，不等式 x-2<0 都成立，能不能说这个不等式的解集是 x<0？",
+     "options": [
+      {
+       "label": "A",
+       "text": "能，负数就是这个不等式的全部解"
+      },
+      {
+       "label": "B",
+       "text": "能，因为所有负数都满足这个不等式"
+      },
+      {
+       "label": "C",
+       "text": "不能，因为不等式的解集是 x>2"
+      },
+      {
+       "label": "D",
+       "text": "不能，因为正数中小于2的数也满足这个不等式，解集是 x<2"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "解集是全部解的全体，不只包含负数。由 x-2<0 两边都加2得 x<2，正数中像1这样的数也满足，所以解集是 x<2。"
+    },
+    {
+     "id": "msk_p1041_q7",
+     "topicId": "msk_p1041",
+     "prompt": "判断 x=3 是不是不等式 2x+1>5 的解，并说明理由。",
+     "question": "判断 x=3 是不是不等式 2x+1>5 的解，并说明理由。",
+     "answer": "是，因为 2乘3加1等于7，7大于5",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "判断一个数是不是不等式的解，只要把它代入不等式看式子是否成立。代入得7大于5，式子成立，所以 x=3 是这个不等式的一个解。"
+    },
+    {
+     "id": "msk_p1041_q8",
+     "topicId": "msk_p1041",
+     "prompt": "求不等式的解集的过程叫作（　）。",
+     "question": "求不等式的解集的过程叫作（　）。",
+     "answer": "解不等式",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材把满足不等式的未知数的某个值叫不等式的一个解，所有解组成的全体叫解集，求不等式解集的过程就叫解不等式。"
+    }
+   ],
+   "page": 122,
+   "misconceptions": [
+    "把含平方项或含两个未知数的不等式也当成一元一次不等式",
+    "数轴上表示不包含端点的解集时错画成实心圆圈"
+   ]
+  },
+  {
+   "id": "msk_p1042",
+   "description": "解一元一次不等式的步骤与解一元一次方程类似，包括去分母、去括号、移项、合并同类项、把未知数的系数化为1；不同的是两边都乘或除以同一个负数时不等号方向要改变，解集通常是未知数的一个取值范围。",
+   "mastery_criteria": [
+    "能按去分母、去括号、移项、合并同类项、系数化为1的步骤解不等式",
+    "系数化为1时遇到负数会改变不等号的方向"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msk_p1042_q1",
+     "topicId": "msk_p1042",
+     "prompt": "解一元一次不等式的一般步骤中，最后一步是什么？",
+     "question": "解一元一次不等式的一般步骤中，最后一步是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "把未知数的系数化为1"
+      },
+      {
+       "label": "B",
+       "text": "去括号"
+      },
+      {
+       "label": "C",
+       "text": "去分母"
+      },
+      {
+       "label": "D",
+       "text": "移项并检验"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "解一元一次不等式依次去分母、去括号、移项、合并同类项，最后把未知数的系数化为1，得到解集。"
+    },
+    {
+     "id": "msk_p1042_q2",
+     "topicId": "msk_p1042",
+     "prompt": "解不等式 2x+2≥6，得 x≥a，求 a 的值。",
+     "question": "解不等式 2x+2≥6，得 x≥a，求 a 的值。",
+     "answer": 2,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 2}]}",
+     "difficulty": "standard",
+     "explanation": "两边都减去2得 2x≥4，两边都除以正数2，不等号方向不变，得 x≥2，所以 a 等于2。"
+    },
+    {
+     "id": "msk_p1042_q3",
+     "topicId": "msk_p1042",
+     "prompt": "解不等式时，如果两边都除以 -2，那么不等号的方向要（　）。",
+     "question": "解不等式时，如果两边都除以 -2，那么不等号的方向要（　）。",
+     "answer": "改变",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "根据不等式的基本性质2，两边都乘或除以同一个负数时，不等号的方向要改变，这是解不等式与解方程最重要的区别。"
+    },
+    {
+     "id": "msk_p1042_q4",
+     "topicId": "msk_p1042",
+     "prompt": "解不等式 14-3x<6-x，它的解集是",
+     "question": "解不等式 14-3x<6-x，它的解集是",
+     "options": [
+      {
+       "label": "A",
+       "text": "x>8"
+      },
+      {
+       "label": "B",
+       "text": "x>4"
+      },
+      {
+       "label": "C",
+       "text": "x<4"
+      },
+      {
+       "label": "D",
+       "text": "x<8"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "移项得 -3x+x<6-14，合并同类项得 -2x<-8，两边都除以 -2 并改变方向，得 x>4。"
+    },
+    {
+     "id": "msk_p1042_q5",
+     "topicId": "msk_p1042",
+     "prompt": "解不等式 2(2x-1)>3x-1，去括号后它的解集是",
+     "question": "解不等式 2(2x-1)>3x-1，去括号后它的解集是",
+     "options": [
+      {
+       "label": "A",
+       "text": "x<1"
+      },
+      {
+       "label": "B",
+       "text": "x>3"
+      },
+      {
+       "label": "C",
+       "text": "x>1"
+      },
+      {
+       "label": "D",
+       "text": "x<-1"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "去括号得 4x-2>3x-1，移项得 4x-3x>-1+2，合并同类项得 x>1，因为系数为正，方向不变。"
+    },
+    {
+     "id": "msk_p1042_q6",
+     "topicId": "msk_p1042",
+     "prompt": "解不等式 2-x≥6，并把解集写成 x 与一个数的大小关系。",
+     "question": "解不等式 2-x≥6，并把解集写成 x 与一个数的大小关系。",
+     "answer": "x≤-4",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "移项得 -x≥6-2，即 -x≥4，两边都除以 -1 并改变不等号方向，得 x≤-4。"
+    },
+    {
+     "id": "msk_p1042_q7",
+     "topicId": "msk_p1042",
+     "prompt": "解不等式时要把未知数的系数化为1，如果未知数的系数是负数，下列说法正确的是",
+     "question": "解不等式时要把未知数的系数化为1，如果未知数的系数是负数，下列说法正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "只要把系数直接丢掉，等号照抄即可"
+      },
+      {
+       "label": "B",
+       "text": "两边都乘这个负数，不等号的方向不变"
+      },
+      {
+       "label": "C",
+       "text": "两边都除以这个负数，不等号的方向不变"
+      },
+      {
+       "label": "D",
+       "text": "两边都除以这个负数，不等号的方向要改变"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "系数化为1要两边都除以系数本身，当这个系数是负数时，依据不等式的基本性质2，不等号的方向必须改变。"
+    },
+    {
+     "id": "msk_p1042_q8",
+     "topicId": "msk_p1042",
+     "prompt": "一元一次不等式的解集通常表示未知数的一个（　）。",
+     "question": "一元一次不等式的解集通常表示未知数的一个（　）。",
+     "answer": "取值范围",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "一元一次方程的解是未知数的一个确定的值，而一元一次不等式的解集是未知数的一个取值范围，通常用不等式或数轴表示。"
+    }
+   ],
+   "page": 125,
+   "misconceptions": [
+    "去分母时漏乘不含分母的项，导致解集出错",
+    "两边都除以负数后仍然保留原来的不等号方向"
+   ]
+  },
+  {
+   "id": "msk_p1043",
+   "description": "把几个含有同一个未知数的一次不等式联立在一起就组成一元一次不等式组；不等式组中所有不等式的解集的公共部分叫作这个不等式组的解集，求不等式组解集的过程叫解不等式组，通常借助数轴找公共部分。",
+   "mastery_criteria": [
+    "能说出不等式组的解集是各个不等式解集的公共部分",
+    "会借数轴确定不等式组的解集，并会判断不等式组无解"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msk_p1043_q1",
+     "topicId": "msk_p1043",
+     "prompt": "不等式组的解集指的是什么？",
+     "question": "不等式组的解集指的是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "不等式组中所有不等式的解集的公共部分"
+      },
+      {
+       "label": "B",
+       "text": "最后一个不等式的解集"
+      },
+      {
+       "label": "C",
+       "text": "几个不等式解集合在一起的全部"
+      },
+      {
+       "label": "D",
+       "text": "第一个不等式的解集"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "不等式组的解要同时满足组里的每一个不等式，所以解集是各个不等式解集的公共部分，而不是把它们合并起来。"
+    },
+    {
+     "id": "msk_p1043_q2",
+     "topicId": "msk_p1043",
+     "prompt": "长方形花圃的一边靠墙，墙长20米，另外三边用总长30米的篱笆围成。设垂直于墙的一边长为 x 米，由 30-2x≤20 解得 x≥a，求 a 的值。",
+     "question": "长方形花圃的一边靠墙，墙长20米，另外三边用总长30米的篱笆围成。设垂直于墙的一边长为 x 米，由 30-2x≤20 解得 x≥a，求 a 的值。",
+     "answer": 5,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 30}, {\"type\": \"num\", \"value\": 20}]}, {\"type\": \"num\", \"value\": 2}]}",
+     "difficulty": "standard",
+     "explanation": "由 30-2x≤20，两边都减去30得 -2x≤-10，两边都除以 -2 并改变方向，得 x≥5，所以 a 等于5。"
+    },
+    {
+     "id": "msk_p1043_q3",
+     "topicId": "msk_p1043",
+     "prompt": "解不等式组时，如果各个不等式的解集在数轴上没有公共部分，那么这个不等式组（　）。",
+     "question": "解不等式组时，如果各个不等式的解集在数轴上没有公共部分，那么这个不等式组（　）。",
+     "answer": "无解",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "不等式组的解集是各解集的公共部分，数轴上找不到同时满足所有不等式的点，说明这个不等式组没有解。"
+    },
+    {
+     "id": "msk_p1043_q4",
+     "topicId": "msk_p1043",
+     "prompt": "不等式组 x≥-1 且 x<2 的解集是",
+     "question": "不等式组 x≥-1 且 x<2 的解集是",
+     "options": [
+      {
+       "label": "A",
+       "text": "x≥-1"
+      },
+      {
+       "label": "B",
+       "text": "-1≤x<2"
+      },
+      {
+       "label": "C",
+       "text": "x<2"
+      },
+      {
+       "label": "D",
+       "text": "-1<x<2"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "在数轴上取 x≥-1 与 x<2 的公共部分，左端取到 -1 用实心点，右端不取到2用空心点，所以解集是 -1≤x<2。"
+    },
+    {
+     "id": "msk_p1043_q5",
+     "topicId": "msk_p1043",
+     "prompt": "在三角形 ABC 中，AB=AC，BC=10，这个三角形的周长大于34且小于44，则 AB 的取值范围是",
+     "question": "在三角形 ABC 中，AB=AC，BC=10，这个三角形的周长大于34且小于44，则 AB 的取值范围是",
+     "options": [
+      {
+       "label": "A",
+       "text": "12<AB<22"
+      },
+      {
+       "label": "B",
+       "text": "10<AB<17"
+      },
+      {
+       "label": "C",
+       "text": "12<AB<17"
+      },
+      {
+       "label": "D",
+       "text": "12≤AB≤17"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "周长等于 2AB+10，由 34<2AB+10<44 得 24<2AB<34，即 12<AB<17；又两边之和大于第三边，2AB>10，这个条件已包含在内。"
+    },
+    {
+     "id": "msk_p1043_q6",
+     "topicId": "msk_p1043",
+     "prompt": "解不等式组 x-1>1 与 x<4，并写出它的解集。",
+     "question": "解不等式组 x-1>1 与 x<4，并写出它的解集。",
+     "answer": "2<x<4",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "第一个不等式两边都加1得 x>2，第二个不等式是 x<4，在数轴上取公共部分，得 2<x<4。"
+    },
+    {
+     "id": "msk_p1043_q7",
+     "topicId": "msk_p1043",
+     "prompt": "解一元一次不等式组的一般步骤是",
+     "question": "解一元一次不等式组的一般步骤是",
+     "options": [
+      {
+       "label": "A",
+       "text": "把几个不等式左右两边直接相加"
+      },
+      {
+       "label": "B",
+       "text": "先写出不等式组的解集，再分别解每个不等式"
+      },
+      {
+       "label": "C",
+       "text": "只解其中一个不等式就可以了"
+      },
+      {
+       "label": "D",
+       "text": "先分别求出每个不等式的解集，再借助数轴找出它们的公共部分"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "不等式组要先逐个求出解集，再把各个解集画在同一条数轴上，公共部分就是不等式组的解集，这是解不等式组的基本步骤。"
+    },
+    {
+     "id": "msk_p1043_q8",
+     "topicId": "msk_p1043",
+     "prompt": "当代数式 2x-1 的值大于 -3 且小于1时，x 的取值范围是 -1<x<1，其中整数解有（　）个。",
+     "question": "当代数式 2x-1 的值大于 -3 且小于1时，x 的取值范围是 -1<x<1，其中整数解有（　）个。",
+     "answer": "1",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "由 -3<2x-1<1 得 -2<2x<2，即 -1<x<1，这个范围内的整数只有0，所以整数解有1个。"
+    }
+   ],
+   "page": 129,
+   "misconceptions": [
+    "把几个解集直接相加或相并，当成不等式组的解集",
+    "数轴上找错公共部分的方向，导致解集写成相反的范围"
+   ]
+  },
+  {
+   "id": "msk_p1044",
+   "description": "用一元一次不等式解决问题时，要设一个合适的未知数，依据实际问题中的不等关系列出一元一次不等式，解出不等式后结合实际情况写出答案，并检验答案是否符合实际意义。",
+   "mastery_criteria": [
+    "能从实际问题中找出不等关系并列出不等式",
+    "能根据实际意义对不等式的解取整数或取临界值"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "msk_p1044_q1",
+     "topicId": "msk_p1044",
+     "prompt": "用一元一次不等式解决问题的一般步骤是",
+     "question": "用一元一次不等式解决问题的一般步骤是",
+     "options": [
+      {
+       "label": "A",
+       "text": "设未知数、列不等式、解不等式、写出答案"
+      },
+      {
+       "label": "B",
+       "text": "列方程、解方程、验算、写答案"
+      },
+      {
+       "label": "C",
+       "text": "画图、测量、计算、回答"
+      },
+      {
+       "label": "D",
+       "text": "设未知数、列方程组、解方程组、写答案"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "用不等式解决问题与用方程类似，区别在于要根据问题中的不等关系列出不等式，解出后还要结合实际情况写出答案。"
+    },
+    {
+     "id": "msk_p1044_q2",
+     "topicId": "msk_p1044",
+     "prompt": "一只快递包装纸箱的质量为1千克，装入苹果后纸箱和苹果的总质量不能超过10千克。若每个苹果质量约为0.25千克，这只纸箱内最多能装多少个苹果？",
+     "question": "一只快递包装纸箱的质量为1千克，装入苹果后纸箱和苹果的总质量不能超过10千克。若每个苹果质量约为0.25千克，这只纸箱内最多能装多少个苹果？",
+     "answer": 36,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 1}]}, {\"type\": \"num\", \"value\": 0.25}]}",
+     "difficulty": "standard",
+     "explanation": "设装 x 个苹果，则 1+0.25x≤10，两边都减去1得 0.25x≤9，两边都除以0.25得 x≤36，所以最多装36个。"
+    },
+    {
+     "id": "msk_p1044_q3",
+     "topicId": "msk_p1044",
+     "prompt": "某山区山脚下的平均气温为20摄氏度，海拔每上升100米气温下降0.6摄氏度。某种杜鹃花适宜生长在平均气温不低于17摄氏度的山坡上，这种花最多能种在比山脚高多少米的山坡上？",
+     "question": "某山区山脚下的平均气温为20摄氏度，海拔每上升100米气温下降0.6摄氏度。某种杜鹃花适宜生长在平均气温不低于17摄氏度的山坡上，这种花最多能种在比山脚高多少米的山坡上？",
+     "answer": 500,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 100}]}, {\"type\": \"num\", \"value\": 0.6}]}",
+     "difficulty": "hard",
+     "explanation": "设高出山脚 x 米，则 20-0.006x≥17，即 0.006x≤3，两边都除以0.006得 x≤500，所以最多高500米。"
+    },
+    {
+     "id": "msk_p1044_q4",
+     "topicId": "msk_p1044",
+     "prompt": "一部电梯的最大载重是1000千克，一名体重70千克的装修工人乘坐电梯，他最多还能携带25千克一包的装修材料（　）包。",
+     "question": "一部电梯的最大载重是1000千克，一名体重70千克的装修工人乘坐电梯，他最多还能携带25千克一包的装修材料（　）包。",
+     "answer": "37",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "设携带 x 包，则 70+25x≤1000，得 25x≤930，x≤37.2，因为包数必须是整数，所以最多携带37包。"
+    },
+    {
+     "id": "msk_p1044_q5",
+     "topicId": "msk_p1044",
+     "prompt": "某软件公司开发一种软件共花固定成本160万元，每售出一套还需支出服务成本0.2万元，每套定价0.9万元。设售出 x 套，要不亏本应满足 0.9x≥160+0.2x，解得 x≥228.6，所以至少需要售出多少套？",
+     "question": "某软件公司开发一种软件共花固定成本160万元，每售出一套还需支出服务成本0.2万元，每套定价0.9万元。设售出 x 套，要不亏本应满足 0.9x≥160+0.2x，解得 x≥228.6，所以至少需要售出多少套？",
+     "options": [
+      {
+       "label": "A",
+       "text": "230 套"
+      },
+      {
+       "label": "B",
+       "text": "229 套"
+      },
+      {
+       "label": "C",
+       "text": "200 套"
+      },
+      {
+       "label": "D",
+       "text": "228 套"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "解不等式得 x≥160除以0.7约等于228.6，售出的套数必须是整数，所以至少售出229套才能不亏本。"
+    },
+    {
+     "id": "msk_p1044_q6",
+     "topicId": "msk_p1044",
+     "prompt": "林老师骑电动车上下班，从家到学校平均每小时行12千米，从学校回家平均每小时行8千米，来回一趟的时间不少于1小时。林老师家和学校的距离至少是多少千米？",
+     "question": "林老师骑电动车上下班，从家到学校平均每小时行12千米，从学校回家平均每小时行8千米，来回一趟的时间不少于1小时。林老师家和学校的距离至少是多少千米？",
+     "answer": "至少4.8千米",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "设距离为 x 千米，来回时间为 x除以12加x除以8，得不等式 x除以12加x除以8≥1，两边都乘24得 5x≥24，所以 x≥4.8。"
+    },
+    {
+     "id": "msk_p1044_q7",
+     "topicId": "msk_p1044",
+     "prompt": "某科学展门票100元一张，入场2人以上可在两种优惠方式中任选一种：甲种两张票保持原价，其余打七折；乙种全部打八折。至少几人时选择甲种方式更合算？",
+     "question": "某科学展门票100元一张，入场2人以上可在两种优惠方式中任选一种：甲种两张票保持原价，其余打七折；乙种全部打八折。至少几人时选择甲种方式更合算？",
+     "options": [
+      {
+       "label": "A",
+       "text": "8 人"
+      },
+      {
+       "label": "B",
+       "text": "6 人"
+      },
+      {
+       "label": "C",
+       "text": "7 人"
+      },
+      {
+       "label": "D",
+       "text": "5 人"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "n 人时甲种需 200+70(n-2) 元，乙种需 80n 元，由 200+70(n-2)<80n 得 70n+60<80n，即 n>6，所以至少7人时甲种更合算。"
+    },
+    {
+     "id": "msk_p1044_q8",
+     "topicId": "msk_p1044",
+     "prompt": "甲、乙两队进行足球对抗赛，胜一场得3分，平一场得1分，负一场得0分。两队共比赛10场，甲队保持不败，得分超过22分。设甲队胜 x 场，由 3x+(10-x)>22 解得 x>6，所以甲队至少胜了多少场？",
+     "question": "甲、乙两队进行足球对抗赛，胜一场得3分，平一场得1分，负一场得0分。两队共比赛10场，甲队保持不败，得分超过22分。设甲队胜 x 场，由 3x+(10-x)>22 解得 x>6，所以甲队至少胜了多少场？",
+     "options": [
+      {
+       "label": "A",
+       "text": "6 场"
+      },
+      {
+       "label": "B",
+       "text": "9 场"
+      },
+      {
+       "label": "C",
+       "text": "8 场"
+      },
+      {
+       "label": "D",
+       "text": "7 场"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "甲队不败说明其余场次都是平局，得分是 3x 加 (10-x)，由 3x+(10-x)>22 得 2x>12，x>6，场次是整数，所以至少胜7场。"
+    }
+   ],
+   "page": 134,
+   "misconceptions": [
+    "把“不超过”“至少”这类词语对应的不等号用反",
+    "求出小数结果后不按实际意义取整数，直接照抄小数作答案"
+   ]
+  },
+  {
+   "id": "msk_p1045",
+   "description": "对一个概念作出明确规定的语句叫作这个概念的定义，根据定义就可以准确地判断一个对象是否属于这个概念；给概念下定义要求语言简单明了、标准清晰，能明确区分这个概念所包含的对象。",
+   "mastery_criteria": [
+    "能说出定义的作用：据此判断对象是否属于这个概念",
+    "能判断给出的语句是不是一个合适的定义"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1045_q1",
+     "topicId": "msk_p1045",
+     "prompt": "像“含有未知数的等式叫作方程”这样，对一个概念作出明确规定的语句叫作",
+     "question": "像“含有未知数的等式叫作方程”这样，对一个概念作出明确规定的语句叫作",
+     "options": [
+      {
+       "label": "A",
+       "text": "这个概念的定义"
+      },
+      {
+       "label": "B",
+       "text": "这个概念的定理"
+      },
+      {
+       "label": "C",
+       "text": "这个概念的推论"
+      },
+      {
+       "label": "D",
+       "text": "这个概念的命题"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "对一个概念作出明确规定，说明它区别于其他概念的本质特征的语句，就是这个概念的定义，据此可以判断对象是否属于这个概念。"
+    },
+    {
+     "id": "msk_p1045_q2",
+     "topicId": "msk_p1045",
+     "prompt": "下列语句中，可以作为对顶角定义的是",
+     "question": "下列语句中，可以作为对顶角定义的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "有公共顶点的两个角称为对顶角"
+      },
+      {
+       "label": "B",
+       "text": "两条相交直线所成的四个角中，有公共顶点没有公共边的两个角称为对顶角"
+      },
+      {
+       "label": "C",
+       "text": "两条直线相交所成的角称为对顶角"
+      },
+      {
+       "label": "D",
+       "text": "两个相等的角称为对顶角"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "对顶角的本质是有公共顶点且两边互为反向延长线，即没有公共边。只说有公共顶点、只说相等、笼统说相交所成的角都不能准确规定这个概念。"
+    },
+    {
+     "id": "msk_p1045_q3",
+     "topicId": "msk_p1045",
+     "prompt": "根据概念的定义，可以准确地判断一个对象是否（　）这个概念。",
+     "question": "根据概念的定义，可以准确地判断一个对象是否（　）这个概念。",
+     "answer": "属于",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "定义把一个概念所包含的对象明确规定下来，所以只要把对象与定义中的条件逐条对照，就能判断它是否属于这个概念。"
+    },
+    {
+     "id": "msk_p1045_q4",
+     "topicId": "msk_p1045",
+     "prompt": "下面是小明给概念下的定义，其中不合适的是",
+     "question": "下面是小明给概念下的定义，其中不合适的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "在同一平面内不相交的两条直线叫作平行线"
+      },
+      {
+       "label": "B",
+       "text": "含有未知数的等式叫作方程"
+      },
+      {
+       "label": "C",
+       "text": "四条边都相等的四边形叫作正方形"
+      },
+      {
+       "label": "D",
+       "text": "三条边都相等的三角形叫作等边三角形"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "四条边都相等的四边形还可能是菱形，缺少“四个角都是直角”这个条件，所以这个定义不能准确区分正方形，是不合适的定义。"
+    },
+    {
+     "id": "msk_p1045_q5",
+     "topicId": "msk_p1045",
+     "prompt": "把平行线定义为“像火车铁轨那样的两条线”，这样下定义不合适，主要原因是",
+     "question": "把平行线定义为“像火车铁轨那样的两条线”，这样下定义不合适，主要原因是",
+     "options": [
+      {
+       "label": "A",
+       "text": "比喻太简短，读起来不够好听"
+      },
+      {
+       "label": "B",
+       "text": "平行线不在同一平面内，与铁轨无关"
+      },
+      {
+       "label": "C",
+       "text": "火车铁轨不是直线，所以完全不能用"
+      },
+      {
+       "label": "D",
+       "text": "用比喻描述不能说明概念的本质特征，无法准确判断对象是否属于这个概念"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "定义要能明确区分概念所包含的对象，比喻只给出形象联想，没有指出同一平面内不相交这个本质特征，遇到其他情形就无法判断。"
+    },
+    {
+     "id": "msk_p1045_q6",
+     "topicId": "msk_p1045",
+     "prompt": "写出平行线的定义。",
+     "question": "写出平行线的定义。",
+     "answer": "在同一平面内，不相交的两条直线叫作平行线",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "教材对平行线的规定包含两点：一是在同一平面内，二是两条直线不相交，两条都满足才是平行线，缺少其中任何一条都不行。"
+    },
+    {
+     "id": "msk_p1045_q7",
+     "topicId": "msk_p1045",
+     "prompt": "单项式、整式、代数式三个概念之间的从属关系是",
+     "question": "单项式、整式、代数式三个概念之间的从属关系是",
+     "options": [
+      {
+       "label": "A",
+       "text": "单项式都属于整式，整式都属于代数式"
+      },
+      {
+       "label": "B",
+       "text": "代数式都属于整式，整式都属于单项式"
+      },
+      {
+       "label": "C",
+       "text": "整式都属于单项式，单项式都属于代数式"
+      },
+      {
+       "label": "D",
+       "text": "三个概念之间没有任何关系"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "单项式和多项式统称整式，整式和分式等统称代数式，所以范围由小到大依次是单项式、整式、代数式。"
+    },
+    {
+     "id": "msk_p1045_q8",
+     "topicId": "msk_p1045",
+     "prompt": "自然数6的因数有1、2、3、6，且1+2+3=6，像6这样的数叫作完全数。28的因数中除它本身以外的和是1+2+4+7+14=28，所以28（　）完全数。",
+     "question": "自然数6的因数有1、2、3、6，且1+2+3=6，像6这样的数叫作完全数。28的因数中除它本身以外的和是1+2+4+7+14=28，所以28（　）完全数。",
+     "answer": "是",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "完全数要求除它本身以外所有因数的和等于它本身。28除本身外各因数之和正好是28，符合完全数的定义，所以28是完全数。"
+    }
+   ],
+   "page": 146,
+   "misconceptions": [
+    "把“长得像某种东西”这样的比喻当成概念的定义",
+    "下定义时遗漏关键条件，例如把四条边都相等的四边形当作正方形"
+   ]
+  },
+  {
+   "id": "msk_p1046",
+   "description": "可以判断真假的陈述句叫作命题，一个命题要么为真要么为假；数学命题一般由条件和结论组成，可以改写成如果那么的形式，判断正确的叫真命题，判断错误的叫假命题，说明假命题常用举反例的办法，互换了条件与结论的两个命题叫互逆命题。",
+   "mastery_criteria": [
+    "能判断一个语句是不是命题并说明理由",
+    "能找出命题的条件和结论，并判断命题的真假"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1046_q1",
+     "topicId": "msk_p1046",
+     "prompt": "下列语句中，是命题的是",
+     "question": "下列语句中，是命题的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "对顶角相等"
+      },
+      {
+       "label": "B",
+       "text": "直线与垂直吗"
+      },
+      {
+       "label": "C",
+       "text": "3加4等于几"
+      },
+      {
+       "label": "D",
+       "text": "请你画一条直线"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "命题必须是陈述句并且可以判断真假。后三个分别是疑问句和祈使句，不能判断真假，所以不是命题。"
+    },
+    {
+     "id": "msk_p1046_q2",
+     "topicId": "msk_p1046",
+     "prompt": "一个命题要么为真，要么为假，这说明",
+     "question": "一个命题要么为真，要么为假，这说明",
+     "options": [
+      {
+       "label": "A",
+       "text": "命题一定是假命题"
+      },
+      {
+       "label": "B",
+       "text": "命题的判断只有两种结果，二者必居其一"
+      },
+      {
+       "label": "C",
+       "text": "命题可以既不真也不假"
+      },
+      {
+       "label": "D",
+       "text": "命题一定是真命题"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "命题的定义要求它可以判断真假，判断的结果只有正确与错误两种，所以一个命题不是真命题就是假命题，不会出现第三种情况。"
+    },
+    {
+     "id": "msk_p1046_q3",
+     "topicId": "msk_p1046",
+     "prompt": "命题“如果 x=1，那么 x 的平方等于1”的条件是（　）。",
+     "question": "命题“如果 x=1，那么 x 的平方等于1”的条件是（　）。",
+     "answer": "x=1",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "把命题写成“如果……，那么……”的形式后，“如果”后面的部分是条件，“那么”后面的部分是结论，所以条件是 x=1。"
+    },
+    {
+     "id": "msk_p1046_q4",
+     "topicId": "msk_p1046",
+     "prompt": "要说明命题“有公共顶点的两个角是对顶角”是假命题，可以举的反例是",
+     "question": "要说明命题“有公共顶点的两个角是对顶角”是假命题，可以举的反例是",
+     "options": [
+      {
+       "label": "A",
+       "text": "对顶角有公共顶点"
+      },
+      {
+       "label": "B",
+       "text": "两个对顶角相等"
+      },
+      {
+       "label": "C",
+       "text": "两个角有公共顶点，但它们没有公共边这一条件不成立，不是对顶角"
+      },
+      {
+       "label": "D",
+       "text": "两条直线相交成四个角"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "反例要满足命题的条件但不满足命题的结论。取两个只有公共顶点、两边不互为反向延长线的角，条件成立而结论不成立，命题即为假。"
+    },
+    {
+     "id": "msk_p1046_q5",
+     "topicId": "msk_p1046",
+     "prompt": "命题“如果 a 的绝对值等于 b 的绝对值，那么 a=b”是假命题，举反例正确的是",
+     "question": "命题“如果 a 的绝对值等于 b 的绝对值，那么 a=b”是假命题，举反例正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "取 a=0, b=0，两数绝对值相等且 a=b"
+      },
+      {
+       "label": "B",
+       "text": "取 a=2, b=2，两数绝对值相等且 a=b"
+      },
+      {
+       "label": "C",
+       "text": "取 a=2, b=3，两数绝对值不相等"
+      },
+      {
+       "label": "D",
+       "text": "取 a=2, b=-2，两数的绝对值相等，但 a 与 b 不相等"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "反例必须使条件成立而使结论不成立。取 2 与 -2，绝对值都等于2，条件成立，但这两个数不相等，结论不成立，所以是反例。"
+    },
+    {
+     "id": "msk_p1046_q6",
+     "topicId": "msk_p1046",
+     "prompt": "把命题“末位数字是5的数能被5整除”改写成如果那么的形式。",
+     "question": "把命题“末位数字是5的数能被5整除”改写成如果那么的形式。",
+     "answer": "如果一个数的末位数字是5，那么这个数能被5整除",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "改写时先把对象和被判断的性质分开：一个数的末位数字是5是条件，这个数能被5整除是结论，用如果那么连接起来即可。"
+    },
+    {
+     "id": "msk_p1046_q7",
+     "topicId": "msk_p1046",
+     "prompt": "命题“同位角相等，两直线平行”的逆命题是",
+     "question": "命题“同位角相等，两直线平行”的逆命题是",
+     "options": [
+      {
+       "label": "A",
+       "text": "两直线平行，同位角相等"
+      },
+      {
+       "label": "B",
+       "text": "两直线不平行，同位角不相等"
+      },
+      {
+       "label": "C",
+       "text": "同位角不相等，两直线不平行"
+      },
+      {
+       "label": "D",
+       "text": "两直线平行，同位角不相等"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "互逆命题是把原命题的条件与结论互换位置得到的，原命题的条件是同位角相等、结论是两直线平行，互换后就是两直线平行，同位角相等。"
+    },
+    {
+     "id": "msk_p1046_q8",
+     "topicId": "msk_p1046",
+     "prompt": "下列命题中，是假命题的是",
+     "question": "下列命题中，是假命题的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "对顶角相等"
+      },
+      {
+       "label": "B",
+       "text": "任何数的平方都大于0"
+      },
+      {
+       "label": "C",
+       "text": "两点之间线段最短"
+      },
+      {
+       "label": "D",
+       "text": "同一平面内垂直于同一条直线的两条直线平行"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "0的平方等于0，并不大于0，所以“任何数的平方都大于0”是假命题；其余三个都是教材中已经确认的真命题。"
+    }
+   ],
+   "page": 149,
+   "misconceptions": [
+    "把“2加3等于几”这样的疑问句当成命题",
+    "认为假命题里条件一定不成立，忽略了反例要满足条件但不满足结论"
+   ]
+  },
+  {
+   "id": "msk_p1047",
+   "description": "数学中不能只凭观察判断命题的真假，从命题的条件出发，根据已知的事实一步一步推出结论成立，从而确定命题为真命题的过程叫作证明；证明中每一步推理都要有依据，并可以写成已知、求证、证明的格式。",
+   "mastery_criteria": [
+    "能说出证明是从条件出发依据已知事实推出结论的过程",
+    "能按已知求证证明的格式写出简单命题的证明并注明依据"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "msk_p1047_q1",
+     "topicId": "msk_p1047",
+     "prompt": "数学中要判断一个命题为真，一般依靠什么？",
+     "question": "数学中要判断一个命题为真，一般依靠什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "从条件出发，根据已知事实一步一步推理"
+      },
+      {
+       "label": "B",
+       "text": "用尺子量一量图形的边长"
+      },
+      {
+       "label": "C",
+       "text": "多举几个例子来说明"
+      },
+      {
+       "label": "D",
+       "text": "凭眼睛观察图形的样子"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "观察和举例只能帮助发现结论，不能保证对所有情况都成立；要确定命题为真，必须从条件出发依据已知事实进行推理，这就是证明。"
+    },
+    {
+     "id": "msk_p1047_q2",
+     "topicId": "msk_p1047",
+     "prompt": "从命题的条件出发，根据一些已知的事实一步一步推出结论成立，从而确定这个命题为真命题的过程叫作",
+     "question": "从命题的条件出发，根据一些已知的事实一步一步推出结论成立，从而确定这个命题为真命题的过程叫作",
+     "options": [
+      {
+       "label": "A",
+       "text": "反例"
+      },
+      {
+       "label": "B",
+       "text": "证明"
+      },
+      {
+       "label": "C",
+       "text": "命题"
+      },
+      {
+       "label": "D",
+       "text": "定义"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "证明是由条件推出结论的推理过程，每一步都要有依据，最终确定命题为真命题，它与用反例说明命题为假是两种不同的判断方式。"
+    },
+    {
+     "id": "msk_p1047_q3",
+     "topicId": "msk_p1047",
+     "prompt": "说明一个命题是假命题时常用举反例的方法，反例要满足命题的（　），但不满足命题的结论。",
+     "question": "说明一个命题是假命题时常用举反例的方法，反例要满足命题的（　），但不满足命题的结论。",
+     "answer": "条件",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "反例的作用是说明命题的判断不能普遍成立，所以这个例子必须符合命题给出的条件，同时结论却不成立，才能否定命题。"
+    },
+    {
+     "id": "msk_p1047_q4",
+     "topicId": "msk_p1047",
+     "prompt": "证明：三个连续自然数之和能被3整除。",
+     "question": "证明：三个连续自然数之和能被3整除。",
+     "answer": "设三个连续自然数为 n-1、n、n+1，它们的和是 3n，所以能被3整除",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "设三个连续自然数为 n-1、n、n+1（n 是不小于2的自然数），相加得 3n，因为 3n 含有因数3，所以这三个数的和能被3整除。"
+    },
+    {
+     "id": "msk_p1047_q5",
+     "topicId": "msk_p1047",
+     "prompt": "已知 a、b 都是偶数，要证明 a+b 也是偶数，正确的设法是",
+     "question": "已知 a、b 都是偶数，要证明 a+b 也是偶数，正确的设法是",
+     "options": [
+      {
+       "label": "A",
+       "text": "设 a=m, b=n（m、n 是整数）"
+      },
+      {
+       "label": "B",
+       "text": "设 a=2m+1, b=2n+1（m、n 是整数）"
+      },
+      {
+       "label": "C",
+       "text": "设 a=2m, b=2n（m、n 是整数），则 a+b=2(m+n)"
+      },
+      {
+       "label": "D",
+       "text": "设 a=2m, b=2n+1（m、n 是整数）"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "偶数就是能被2整除的整数，可以写成2与一个整数的积，所以设 a=2m、b=2n，相加后提出公因数2，说明和也是偶数。"
+    },
+    {
+     "id": "msk_p1047_q6",
+     "topicId": "msk_p1047",
+     "prompt": "三个连续自然数的和是72，求中间的那个自然数。",
+     "question": "三个连续自然数的和是72，求中间的那个自然数。",
+     "answer": 24,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 72}, {\"type\": \"num\", \"value\": 3}]}",
+     "difficulty": "hard",
+     "explanation": "设中间的自然数为 n，三个数就是 n-1、n、n+1，它们的和是 3n；由 3n=72 得 n=24，所以中间的自然数是24。"
+    },
+    {
+     "id": "msk_p1047_q7",
+     "topicId": "msk_p1047",
+     "prompt": "证明“如果 a<b，c<d，那么 a+c<b+d”时，每一步推理都要写出依据，下列依据使用正确的是",
+     "question": "证明“如果 a<b，c<d，那么 a+c<b+d”时，每一步推理都要写出依据，下列依据使用正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "由 c<d 得 b+c<b+d，依据是垂直的定义"
+      },
+      {
+       "label": "B",
+       "text": "由 a<b 得 a+c<b+c，依据是偶数的定义"
+      },
+      {
+       "label": "C",
+       "text": "由 a+c<b+c 与 b+c<b+d 得结论，依据是平角的定义"
+      },
+      {
+       "label": "D",
+       "text": "由 a<b 得 a+c<b+c，依据是不等式的基本性质1"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "不等式两边都加上同一个数，不等号方向不变，这正是不等式的基本性质1；其余几项把无关的定义当成依据，推理不能用。"
+    },
+    {
+     "id": "msk_p1047_q8",
+     "topicId": "msk_p1047",
+     "prompt": "几何证明中，在每一步后面的括号里要填写的内容是",
+     "question": "几何证明中，在每一步后面的括号里要填写的内容是",
+     "options": [
+      {
+       "label": "A",
+       "text": "这一步推理的依据"
+      },
+      {
+       "label": "B",
+       "text": "图形的名称"
+      },
+      {
+       "label": "C",
+       "text": "这一步的计算结果"
+      },
+      {
+       "label": "D",
+       "text": "命题的条件"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "证明的每一步都必须有依据，括号里通常写明用到的定义、性质或已学过的定理，这样才能说明推理是合乎逻辑的。"
+    }
+   ],
+   "page": 153,
+   "misconceptions": [
+    "用画图观察或再举几个例子代替证明，认为例子多就是真命题",
+    "证明过程中只写结论不写依据，步骤无法衔接"
+   ]
+  },
+  {
+   "id": "msk_p1048",
+   "description": "经过证明之后，一些基本的、重要的真命题叫作定理，定理可以作为证明后续命题的依据；由一个定理直接推出的重要结论叫作这个定理的推论，三角形内角和定理以及多边形的内角和、外角和都是本章证明得到的结论。",
+   "mastery_criteria": [
+    "能说出定理与推论的含义以及它们在证明中的作用",
+    "会用三角形内角和定理和多边形内角和公式进行计算"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "msk_p1048_q1",
+     "topicId": "msk_p1048",
+     "prompt": "数学中把一些基本的、重要的真命题叫作",
+     "question": "数学中把一些基本的、重要的真命题叫作",
+     "options": [
+      {
+       "label": "A",
+       "text": "定理"
+      },
+      {
+       "label": "B",
+       "text": "定义"
+      },
+      {
+       "label": "C",
+       "text": "反例"
+      },
+      {
+       "label": "D",
+       "text": "命题"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "经过证明的基本的、重要的真命题叫定理，定理可以作为证明后续命题的依据，这与只作出规定的定义、尚未判断真假的语句都不同。"
+    },
+    {
+     "id": "msk_p1048_q2",
+     "topicId": "msk_p1048",
+     "prompt": "三角形三个内角的和是180度。一个三角形中有两个内角分别是50度和60度，第三个内角是多少度？",
+     "question": "三角形三个内角的和是180度。一个三角形中有两个内角分别是50度和60度，第三个内角是多少度？",
+     "answer": 70,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 180}, {\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 50}, {\"type\": \"num\", \"value\": 60}]}]}",
+     "difficulty": "standard",
+     "explanation": "根据三角形内角和定理，三个内角的和是180度，所以第三个角等于180减去50再减去60，得70度。"
+    },
+    {
+     "id": "msk_p1048_q3",
+     "topicId": "msk_p1048",
+     "prompt": "六边形的内角和是多少度？",
+     "question": "六边形的内角和是多少度？",
+     "answer": 720,
+     "type": "numeric",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 180}]}",
+     "difficulty": "standard",
+     "explanation": "多边形内角和定理指出，n 边形的内角和等于 n 减2的差乘180度；把 n=6 代入得 4乘180，即720度。"
+    },
+    {
+     "id": "msk_p1048_q4",
+     "topicId": "msk_p1048",
+     "prompt": "任意多边形的外角和都等于（　）度。",
+     "question": "任意多边形的外角和都等于（　）度。",
+     "answer": "360",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "教材通过三角形、四边形推广到一般的 n 边形，得到多边形的外角和等于360度，它与边数多少无关。"
+    },
+    {
+     "id": "msk_p1048_q5",
+     "topicId": "msk_p1048",
+     "prompt": "由一个定理直接推出的重要结论，一般叫作这个定理的",
+     "question": "由一个定理直接推出的重要结论，一般叫作这个定理的",
+     "options": [
+      {
+       "label": "A",
+       "text": "反例"
+      },
+      {
+       "label": "B",
+       "text": "推论"
+      },
+      {
+       "label": "C",
+       "text": "定义"
+      },
+      {
+       "label": "D",
+       "text": "逆命题"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "推论是由一个定理直接推出的重要结论，它和定理一样可以作为后续证明的依据，三角形外角的性质就是内角和定理的推论。"
+    },
+    {
+     "id": "msk_p1048_q6",
+     "topicId": "msk_p1048",
+     "prompt": "“直角三角形的两个锐角互余”这个结论是三角形内角和定理的",
+     "question": "“直角三角形的两个锐角互余”这个结论是三角形内角和定理的",
+     "options": [
+      {
+       "label": "A",
+       "text": "逆命题"
+      },
+      {
+       "label": "B",
+       "text": "定义"
+      },
+      {
+       "label": "C",
+       "text": "推论"
+      },
+      {
+       "label": "D",
+       "text": "反例"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "直角三角形的直角是90度，由内角和定理得两锐角之和为180减90等于90度，即两锐角互余，这是由内角和定理直接推出的推论。"
+    },
+    {
+     "id": "msk_p1048_q7",
+     "topicId": "msk_p1048",
+     "prompt": "三角形的一个外角与它不相邻的两个内角的关系是",
+     "question": "三角形的一个外角与它不相邻的两个内角的关系是",
+     "options": [
+      {
+       "label": "A",
+       "text": "等于这两个内角的差"
+      },
+      {
+       "label": "B",
+       "text": "大于这两个内角的和"
+      },
+      {
+       "label": "C",
+       "text": "等于这两个内角的积"
+      },
+      {
+       "label": "D",
+       "text": "等于这两个内角的和"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由平角的定义和三角形内角和定理可以推出，三角形的一个外角等于与它不相邻的两个内角的和，这是内角和定理的推论。"
+    },
+    {
+     "id": "msk_p1048_q8",
+     "topicId": "msk_p1048",
+     "prompt": "求五边形的内角和，并说明依据。",
+     "question": "求五边形的内角和，并说明依据。",
+     "answer": "540度，依据多边形内角和公式 n 减2的差乘180度",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "把 n=5 代入多边形内角和公式，得 3乘180等于540度；这个公式是由三角形内角和定理推出的，四边形、五边形都可以分割成若干个三角形来说明。"
+    }
+   ],
+   "page": 158,
+   "misconceptions": [
+    "把还没有证明的猜想当成定理直接使用",
+    "把多边形内角和公式中的边数代入错误，用 n 减1或直接乘 n"
+   ]
+  }
+ ]
+}

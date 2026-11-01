@@ -1,0 +1,2237 @@
+{
+ "tag": "k7a",
+ "book": "苏科版七年级上册",
+ "unit_points": [
+  {
+   "id": "msk_p004",
+   "description": "认识等式与方程，理解等式的基本性质，掌握一元一次方程的概念以及去分母、去括号、移项、合并同类项、系数化为1的解法，并能列一元一次方程解决实际问题。",
+   "mastery_criteria": [
+    "能判断一个式子是不是等式、是不是方程",
+    "能用等式的基本性质把等式变形为 x 等于常数的形式",
+    "能列一元一次方程解决简单的实际问题"
+   ],
+   "misconceptions": [
+    "认为凡是含等号的式子都是方程，忽略未知数",
+    "在等式两边除以同一个数时忽略除数不能为0"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p004_q1",
+     "topicId": "msk_p004",
+     "prompt": "下列各式中，是方程的是（　）。",
+     "question": "下列各式中，是方程的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3x+2"
+      },
+      {
+       "label": "B",
+       "text": "2x+1=5"
+      },
+      {
+       "label": "C",
+       "text": "5 大于 3"
+      },
+      {
+       "label": "D",
+       "text": "3+4=7"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "方程是含有未知数的等式。2x+1=5 既含未知数 x，又是用等号连接的等式，所以它是方程；3x+2 没有等号，5 大于 3 不是等式，3+4=7 虽是等式但不含未知数。"
+    },
+    {
+     "id": "msk_p004_q2",
+     "topicId": "msk_p004",
+     "prompt": "解方程 3x+5=11，移项后得到 3x=6，两边都除以 3，得 x 等于多少？",
+     "question": "解方程 3x+5=11，移项后得到 3x=6，两边都除以 3，得 x 等于多少？",
+     "answer": "2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "3x+5=11，两边都减去 5 得 3x=6，再两边都除以 3 得 x=2，把 2 代入原方程，左边等于 11，等式成立。"
+    },
+    {
+     "id": "msk_p004_q3",
+     "topicId": "msk_p004",
+     "prompt": "一件羽绒服的标价是进价的 1.5 倍，促销时按标价的 8 折出售，获利 96 元。这件羽绒服的进价是多少元？",
+     "question": "一件羽绒服的标价是进价的 1.5 倍，促销时按标价的 8 折出售，获利 96 元。这件羽绒服的进价是多少元？",
+     "answer": 480,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "设进价是 x 元，按标价 8 折出售的售价为 1.5x 乘 0.8，即 1.2x。由售价减进价等于获利，得 0.2x 等于 96，解得 x 等于 480，所以进价是 480 元。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 96}, {\"type\": \"num\", \"value\": 0.2}]}"
+    },
+    {
+     "id": "msk_p004_q4",
+     "topicId": "msk_p004",
+     "prompt": "解方程 2x=5x-21 时，移项后得到的方程是（　）。",
+     "question": "解方程 2x=5x-21 时，移项后得到的方程是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x+5x=21"
+      },
+      {
+       "label": "B",
+       "text": "2x-5x=21"
+      },
+      {
+       "label": "C",
+       "text": "2x-5x=-21"
+      },
+      {
+       "label": "D",
+       "text": "2x+5x=-21"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "移项要改变符号：把右边的 5x 移到左边变成负 5x，左边的 2x 不动，右边的负 21 也不动，所以得到 2x 减 5x 等于负 21，合并同类项得负 3x 等于负 21，x 等于 7。"
+    },
+    {
+     "id": "msk_p004_q5",
+     "topicId": "msk_p004",
+     "prompt": "解一元一次方程时，移项的目的是什么？",
+     "question": "解一元一次方程时，移项的目的是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "把含有未知数的项移到方程的一边，把常数项移到另一边"
+      },
+      {
+       "label": "B",
+       "text": "把方程两边的每一项都改变符号"
+      },
+      {
+       "label": "C",
+       "text": "把未知数的系数都化为 1"
+      },
+      {
+       "label": "D",
+       "text": "去掉方程中所有的括号"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "教材指出，在解一元一次方程时，移项的目的是把含有未知数的项移到方程的一边，把常数项移到另一边，使方程逐步转化为 x 等于常数的形式。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p005",
+   "description": "从现实情境中抽象出棱柱、棱锥、圆柱、圆锥、球等几何体与常见平面图形，认识点、线、面是构成几何体的基本要素，用图形的运动、平面展开与数形转化研究图形之间的关系。",
+   "mastery_criteria": [
+    "能说出常见几何体的名称并数出它的面、棱、顶点",
+    "能从运动的视角说明线、面、体是怎样形成的",
+    "能借助平面展开图和数形转化规律解决问题"
+   ],
+   "misconceptions": [
+    "把带曲面的圆柱、圆锥也当成多面体",
+    "认为展开前后几何体的面数会改变"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p005_q1",
+     "topicId": "msk_p005",
+     "prompt": "下列几何体中，属于多面体的是（　）。",
+     "question": "下列几何体中，属于多面体的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆柱"
+      },
+      {
+       "label": "B",
+       "text": "球"
+      },
+      {
+       "label": "C",
+       "text": "四棱柱"
+      },
+      {
+       "label": "D",
+       "text": "圆锥"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "多面体是由若干个平面围成的封闭图形。四棱柱的六个面都是平面，所以它是多面体；圆柱、圆锥都含有曲面，球只有一个曲面，它们都不是多面体。"
+    },
+    {
+     "id": "msk_p005_q2",
+     "topicId": "msk_p005",
+     "prompt": "把一个长方形纸板绕它的一条边快速旋转一周，形成的几何体是（　）。",
+     "question": "把一个长方形纸板绕它的一条边快速旋转一周，形成的几何体是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆锥"
+      },
+      {
+       "label": "B",
+       "text": "球"
+      },
+      {
+       "label": "C",
+       "text": "三棱柱"
+      },
+      {
+       "label": "D",
+       "text": "圆柱"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "长方形绕一条边旋转一周，上下底都是与这条边垂直的边旋转出的圆，侧面是曲面，整体形成圆柱；绕直角三角形的直角边旋转才形成圆锥。"
+    },
+    {
+     "id": "msk_p005_q3",
+     "topicId": "msk_p005",
+     "prompt": "计算 1 加 3 加 5 加 7 加 9 的值。",
+     "question": "计算 1 加 3 加 5 加 7 加 9 的值。",
+     "answer": 25,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "观察图 5 中的图形与对应表达式：1 等于 1 的平方，1 加 3 等于 2 的平方，1 加 3 加 5 等于 3 的平方，所以前 5 个连续奇数的和等于 5 的平方，即 25。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"num\", \"value\": 5}]}, {\"type\": \"num\", \"value\": 7}]}, {\"type\": \"num\", \"value\": 9}]}"
+    },
+    {
+     "id": "msk_p005_q4",
+     "topicId": "msk_p005",
+     "prompt": "1 加 3 加 5 加 7 一直加到 99，这一串连续奇数的和是（　）的平方。",
+     "question": "1 加 3 加 5 加 7 一直加到 99，这一串连续奇数的和是（　）的平方。",
+     "answer": "50",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "从 1 开始的连续奇数相加，和等于加数个数的平方。1 到 99 一共有 50 个奇数，所以它们的和等于 50 的平方，也就是 2500。"
+    },
+    {
+     "id": "msk_p005_q5",
+     "topicId": "msk_p005",
+     "prompt": "正方体的平面展开图由几个正方形组成？",
+     "question": "正方体的平面展开图由几个正方形组成？",
+     "options": [
+      {
+       "label": "A",
+       "text": "6 个"
+      },
+      {
+       "label": "B",
+       "text": "4 个"
+      },
+      {
+       "label": "C",
+       "text": "5 个"
+      },
+      {
+       "label": "D",
+       "text": "8 个"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "正方体有 6 个面，每个面都是正方形。把它沿某些棱剪开铺平后，面的个数和形状都没有改变，所以展开图仍然由 6 个正方形组成。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p006",
+   "description": "认识直线、射线、线段和角，理解两点确定一条直线、两点之间线段最短，研究相交线中的对顶角与垂直关系、平行线的判定与性质，认识多边形的边、角和对角线。",
+   "mastery_criteria": [
+    "能用符号表示直线、射线、线段和角",
+    "能运用对顶角相等、垂线段最短、平行线的性质进行简单推理",
+    "能数出多边形的边数、内角外角和对角线的条数"
+   ],
+   "misconceptions": [
+    "把所有角都按大小直接比较，不知道可以用叠合的方法比较",
+    "把点到直线的距离说成垂线段本身"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p006_q1",
+     "topicId": "msk_p006",
+     "prompt": "要把一根细木条固定在墙上并让它不能转动，至少需要钉几颗钉子？",
+     "question": "要把一根细木条固定在墙上并让它不能转动，至少需要钉几颗钉子？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 颗"
+      },
+      {
+       "label": "B",
+       "text": "2 颗"
+      },
+      {
+       "label": "C",
+       "text": "3 颗"
+      },
+      {
+       "label": "D",
+       "text": "4 颗"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "经过一点可以画无数条直线，经过两点只能画一条直线，这就是基本事实两点确定一条直线，所以至少要钉两颗钉子才能把细木条固定住。"
+    },
+    {
+     "id": "msk_p006_q2",
+     "topicId": "msk_p006",
+     "prompt": "角 1 与角 2 是对顶角，角 1 等于 48 度，角 2 等于多少度？",
+     "question": "角 1 与角 2 是对顶角，角 1 等于 48 度，角 2 等于多少度？",
+     "answer": 48,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "两条直线相交所成的四个角中，有公共顶点没有公共边的两个角是对顶角。对顶角相等，所以角 2 等于角 1，等于 48 度。",
+     "verify": "{\"type\": \"num\", \"value\": 48}"
+    },
+    {
+     "id": "msk_p006_q3",
+     "topicId": "msk_p006",
+     "prompt": "两条平行直线被第三条直线所截，下列结论正确的是（　）。",
+     "question": "两条平行直线被第三条直线所截，下列结论正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "同位角互补"
+      },
+      {
+       "label": "B",
+       "text": "内错角互补"
+      },
+      {
+       "label": "C",
+       "text": "同旁内角互补"
+      },
+      {
+       "label": "D",
+       "text": "对顶角互补"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "平行线的性质是：两直线平行，同位角相等，内错角相等，同旁内角互补。同位角和内错角是相等而不是互补，对顶角相等与两直线是否平行无关。"
+    },
+    {
+     "id": "msk_p006_q4",
+     "topicId": "msk_p006",
+     "prompt": "从六边形的一个顶点出发，连接这个顶点与其余不相邻顶点的所有对角线，可以把六边形分成几个三角形？",
+     "question": "从六边形的一个顶点出发，连接这个顶点与其余不相邻顶点的所有对角线，可以把六边形分成几个三角形？",
+     "options": [
+      {
+       "label": "A",
+       "text": "4 个"
+      },
+      {
+       "label": "B",
+       "text": "3 个"
+      },
+      {
+       "label": "C",
+       "text": "5 个"
+      },
+      {
+       "label": "D",
+       "text": "6 个"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "六边形从一个顶点出发可以连出 3 条对角线，把六边形分成 6 减 2 等于 4 个三角形，三角形的个数总是比边数少 2。"
+    },
+    {
+     "id": "msk_p006_q5",
+     "topicId": "msk_p006",
+     "prompt": "点到直线的距离指的是什么？请写出来。",
+     "question": "点到直线的距离指的是什么？请写出来。",
+     "answer": "直线外一点到这条直线的垂线段的长度",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "过直线外一点作这条直线的垂线，这点与垂足之间的线段叫作垂线段，垂线段的长度就是点到直线的距离，距离是一个长度，不是垂线段本身。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "msk_p1014",
+   "page": 106,
+   "description": "知道表示相等关系的式子叫作等式，理解方程是含有未知数的等式，会用等式的基本性质把等式变形为 x 等于常数的形式，知道方程的解与解方程的含义。",
+   "mastery_criteria": [
+    "能判断一个式子是不是等式、是不是方程",
+    "能用等式的基本性质把等式变形",
+    "能检验一个数是不是方程的解"
+   ],
+   "misconceptions": [
+    "认为含等号的式子都是方程，忽略未知数",
+    "在等式两边除以同一个数时忽略除数不能为0"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1014_q1",
+     "topicId": "msk_p1014",
+     "prompt": "下列各式中，是等式的是（　）。",
+     "question": "下列各式中，是等式的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3x+1"
+      },
+      {
+       "label": "B",
+       "text": "x-2 大于 1"
+      },
+      {
+       "label": "C",
+       "text": "2+3=5"
+      },
+      {
+       "label": "D",
+       "text": "4x"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "等式是用等号表示相等关系的式子。2+3=5 用等号连接，两边确实相等，所以它是等式；3x+1 和 4x 没有等号，x-2 大于 1 用的是大于号，都不是等式。"
+    },
+    {
+     "id": "msk_p1014_q2",
+     "topicId": "msk_p1014",
+     "prompt": "如果 a 等于 b，那么下列变形不正确的是（　）。",
+     "question": "如果 a 等于 b，那么下列变形不正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "a+3=b+3"
+      },
+      {
+       "label": "B",
+       "text": "a-5=b-5"
+      },
+      {
+       "label": "C",
+       "text": "2a=2b"
+      },
+      {
+       "label": "D",
+       "text": "a 除以 0 等于 b 除以 0"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "等式的基本性质 2 指出，等式两边都乘或除以同一个数时，除数不能为 0。所以两边不能同时除以 0，这个变形不成立，其余三个变形都符合等式的基本性质。"
+    },
+    {
+     "id": "msk_p1014_q3",
+     "topicId": "msk_p1014",
+     "prompt": "利用等式的基本性质，把 x+5=2 变形为 x 等于常数的形式，x 等于多少？",
+     "question": "利用等式的基本性质，把 x+5=2 变形为 x 等于常数的形式，x 等于多少？",
+     "answer": "-3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "根据等式的基本性质 1，在等式 x+5=2 的两边都减去 5，左边剩下 x，右边得到 2 减 5 等于负 3，所以 x 等于负 3。"
+    },
+    {
+     "id": "msk_p1014_q4",
+     "topicId": "msk_p1014",
+     "prompt": "解方程负 2x 等于 4，x 的值是多少？",
+     "question": "解方程负 2x 等于 4，x 的值是多少？",
+     "answer": -2,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "根据等式的基本性质 2，在方程负 2x 等于 4 的两边都除以负 2，左边得到 x，右边 4 除以负 2 等于负 2，所以 x 等于负 2。",
+     "verify": "{\"type\": \"num\", \"value\": -2}"
+    },
+    {
+     "id": "msk_p1014_q5",
+     "topicId": "msk_p1014",
+     "prompt": "能使方程两边相等的未知数的值叫作（　）。",
+     "question": "能使方程两边相等的未知数的值叫作（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "方程的解"
+      },
+      {
+       "label": "B",
+       "text": "等式"
+      },
+      {
+       "label": "C",
+       "text": "解方程"
+      },
+      {
+       "label": "D",
+       "text": "未知数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材指出，能使方程两边的值相等的未知数的值叫作方程的解，而求方程解的过程叫作解方程，两个概念不要混淆。"
+    },
+    {
+     "id": "msk_p1014_q6",
+     "topicId": "msk_p1014",
+     "prompt": "天平左边托盘放着两个小球和一个 1 克的砝码，右边托盘放着一个同样的球和一个 5 克的砝码，天平平衡。每个小球的质量是多少克？",
+     "question": "天平左边托盘放着两个小球和一个 1 克的砝码，右边托盘放着一个同样的球和一个 5 克的砝码，天平平衡。每个小球的质量是多少克？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "设每个小球的质量是 x 克，由天平平衡得 2x 加 1 等于 x 加 5。两边都减去 x，得 x 加 1 等于 5，再两边都减去 1，得 x 等于 4，所以每个小球的质量是 4 克。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 1}]}"
+    },
+    {
+     "id": "msk_p1014_q7",
+     "topicId": "msk_p1014",
+     "prompt": "小明说：等式两边都除以同一个数，所得结果仍是等式。他的话对吗？请说明理由。",
+     "question": "小明说：等式两边都除以同一个数，所得结果仍是等式。他的话对吗？请说明理由。",
+     "answer": "不对，除数不能为 0",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "等式的基本性质 2 要求除数不能为 0。如果在等式两边都除以 0，0 不能作除数，这个运算没有意义，所以小明的说法缺少除数不为 0 这个条件，是不对的。"
+    },
+    {
+     "id": "msk_p1014_q8",
+     "topicId": "msk_p1014",
+     "prompt": "已知方程 3x+2=2x+6，那么 x 的值是（　）。",
+     "question": "已知方程 3x+2=2x+6，那么 x 的值是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两边都减去 2x，得 x 加 2 等于 6，再两边都减去 2，得 x 等于 4。把 4 代入检验：左边等于 14，右边也等于 14，等式成立。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1015",
+   "page": 113,
+   "description": "理解一元一次方程是等号两边都是整式、只含一个未知数且未知数次数都是 1 的方程，会按去分母、去括号、移项、合并同类项、系数化为 1 的步骤解方程。",
+   "mastery_criteria": [
+    "能判断一个方程是不是一元一次方程",
+    "能按步骤解一元一次方程并把结果化为 x 等于常数的形式",
+    "能说出解方程每一步变形的依据"
+   ],
+   "misconceptions": [
+    "认为含分母的方程一定不是整式方程",
+    "去分母时漏乘不含分母的项"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msk_p1015_q1",
+     "topicId": "msk_p1015",
+     "prompt": "下列方程中，是一元一次方程的是（　）。",
+     "question": "下列方程中，是一元一次方程的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "x+2y=1"
+      },
+      {
+       "label": "B",
+       "text": "x 的平方减 4 等于 0"
+      },
+      {
+       "label": "C",
+       "text": "2x+1=5"
+      },
+      {
+       "label": "D",
+       "text": "x 分之一加 1 等于 2"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "一元一次方程要求等号两边都是整式，只含一个未知数，并且未知数的次数都是 1。x+2y=1 含两个未知数，x 的平方减 4 等于 0 中未知数的次数是 2，x 分之一加 1 等于 2 的分母含未知数不是整式，只有 2x+1=5 符合。"
+    },
+    {
+     "id": "msk_p1015_q2",
+     "topicId": "msk_p1015",
+     "prompt": "解方程 0.5x 等于负 3，x 的值是多少？",
+     "question": "解方程 0.5x 等于负 3，x 的值是多少？",
+     "answer": -6,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "方程两边都除以 0.5，左边得到 x，右边负 3 除以 0.5 等于负 6，所以 x 等于负 6。也可以两边都乘 2 检验：0.5 乘负 6 等于负 3，等式成立。",
+     "verify": "{\"type\": \"num\", \"value\": -6}"
+    },
+    {
+     "id": "msk_p1015_q3",
+     "topicId": "msk_p1015",
+     "prompt": "解方程 2x=5x-21，移项、合并同类项后得到 -3x=-21，那么 x 等于多少？",
+     "question": "解方程 2x=5x-21，移项、合并同类项后得到 -3x=-21，那么 x 等于多少？",
+     "answer": "7",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由负 3x 等于负 21，两边都除以负 3，得 x 等于 7。把 x 等于 7 代入原方程检验，左边等于 14，右边也等于 14，等式成立。"
+    },
+    {
+     "id": "msk_p1015_q4",
+     "topicId": "msk_p1015",
+     "prompt": "解方程 2(2x+1)=1-5(x-2)，去括号后得到的方程是（　）。",
+     "question": "解方程 2(2x+1)=1-5(x-2)，去括号后得到的方程是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "4x+2=1-5x+10"
+      },
+      {
+       "label": "B",
+       "text": "4x+1=1-5x-10"
+      },
+      {
+       "label": "C",
+       "text": "4x+2=1-5x-10"
+      },
+      {
+       "label": "D",
+       "text": "4x+2=1-5x+2"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "去括号时括号外的数要乘遍括号里的每一项：2 乘 2x 得 4x，2 乘 1 得 2；负 5 乘 x 得负 5x，负 5 乘负 2 得正 10，所以得到 4x 加 2 等于 1 减 5x 加 10。"
+    },
+    {
+     "id": "msk_p1015_q5",
+     "topicId": "msk_p1015",
+     "prompt": "解方程 2 分之 (x+1) 减 3 分之 x 等于 1，去分母后得到的方程是（　）。",
+     "question": "解方程 2 分之 (x+1) 减 3 分之 x 等于 1，去分母后得到的方程是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2(x+1)-3x=6"
+      },
+      {
+       "label": "B",
+       "text": "3(x+1)-x=6"
+      },
+      {
+       "label": "C",
+       "text": "3(x+1)-2x=1"
+      },
+      {
+       "label": "D",
+       "text": "3(x+1)-2x=6"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "去分母时方程两边都乘各分母的最小公倍数 6：3 乘 (x+1) 减 2 乘 x 等于 6 乘 1，即 3(x+1) 减 2x 等于 6。注意右边的 1 也要乘 6，不能漏乘。"
+    },
+    {
+     "id": "msk_p1015_q6",
+     "topicId": "msk_p1015",
+     "prompt": "解方程 5x 减 8 等于 8x 加 1，x 的值是多少？",
+     "question": "解方程 5x 减 8 等于 8x 加 1，x 的值是多少？",
+     "answer": -3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "移项得 5x 减 8x 等于 1 加 8，合并同类项得负 3x 等于 9，两边都除以负 3 得 x 等于负 3。",
+     "verify": "{\"type\": \"num\", \"value\": -3}"
+    },
+    {
+     "id": "msk_p1015_q7",
+     "topicId": "msk_p1015",
+     "prompt": "若关于 x 的方程 (m-2)x+3=0 是一元一次方程，则 m 的取值满足（　）。",
+     "question": "若关于 x 的方程 (m-2)x+3=0 是一元一次方程，则 m 的取值满足（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "m=2"
+      },
+      {
+       "label": "B",
+       "text": "m 不等于 2"
+      },
+      {
+       "label": "C",
+       "text": "m 大于 2"
+      },
+      {
+       "label": "D",
+       "text": "m 小于 2"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "一元一次方程要求未知数 x 的系数不为 0。如果 m 等于 2，含 x 的项就消失了，方程不再含未知数，所以必须 m 不等于 2，与 m 比 2 大还是比 2 小无关。"
+    },
+    {
+     "id": "msk_p1015_q8",
+     "topicId": "msk_p1015",
+     "prompt": "请按顺序写出解一元一次方程的一般步骤。",
+     "question": "请按顺序写出解一元一次方程的一般步骤。",
+     "answer": "去分母、去括号、移项、合并同类项、系数化为 1",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "教材总结：一般地，解一元一次方程的步骤是去分母、去括号、移项、合并同类项、把未知数的系数化为 1，通过这些步骤把方程转化为 x 等于常数的形式。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1016",
+   "page": 121,
+   "description": "经历设未知数、找等量关系列方程、解方程、写出答案的过程，会用列表和画示意图分析实际问题中的数量关系，解决年龄、销售、行程、工程等问题。",
+   "mastery_criteria": [
+    "能找出实际问题中的等量关系并列出方程",
+    "能用列表或画示意图整理数量关系",
+    "能检验方程的解是否符合实际意义"
+   ],
+   "misconceptions": [
+    "未知数设得不合适，导致等量关系混乱",
+    "求出方程的解后不检验是否符合实际意义"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "msk_p1016_q1",
+     "topicId": "msk_p1016",
+     "prompt": "用一元一次方程解决问题时，一般的第一步是（　）。",
+     "question": "用一元一次方程解决问题时，一般的第一步是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "解方程"
+      },
+      {
+       "label": "B",
+       "text": "设一个合适的未知数"
+      },
+      {
+       "label": "C",
+       "text": "写出答案"
+      },
+      {
+       "label": "D",
+       "text": "代入检验"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材把列方程解决问题的过程分为四步：先根据题意设一个合适的未知数，再根据等量关系列出方程，然后解方程求出未知数的值，最后写出问题的答案。"
+    },
+    {
+     "id": "msk_p1016_q2",
+     "topicId": "msk_p1016",
+     "prompt": "今年小明 13 岁，王老师 45 岁，再过几年小明的年龄是王老师年龄的三分之一？",
+     "question": "今年小明 13 岁，王老师 45 岁，再过几年小明的年龄是王老师年龄的三分之一？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "设再过 x 年，则小明 13 加 x 岁，王老师 45 加 x 岁。由题意得 13 加 x 等于三分之一乘 (45 加 x)，解得 x 等于 3。三年后小明 16 岁，王老师 48 岁，16 正好是 48 的三分之一。",
+     "verify": "{\"type\": \"num\", \"value\": 3}"
+    },
+    {
+     "id": "msk_p1016_q3",
+     "topicId": "msk_p1016",
+     "prompt": "做一套紫砂壶茶具需要 0.6 千克泥料，做一只茶杯需要 0.15 千克泥料，一套茶具含一把壶和 6 只茶杯。用 10.5 千克泥料可以做几套这样的茶具？",
+     "question": "做一套紫砂壶茶具需要 0.6 千克泥料，做一只茶杯需要 0.15 千克泥料，一套茶具含一把壶和 6 只茶杯。用 10.5 千克泥料可以做几套这样的茶具？",
+     "answer": 7,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "一套茶具用泥料 0.6 加 6 乘 0.15 等于 1.5 千克。设可以做 x 套，则 1.5x 等于 10.5，解得 x 等于 7，所以可以做 7 套茶具。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 10.5}, {\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 0.6}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 0.15}]}]}]}"
+    },
+    {
+     "id": "msk_p1016_q4",
+     "topicId": "msk_p1016",
+     "prompt": "小明以 5 千米每时的速度步行 0.5 小时后，小亮骑自行车以 15 千米每时的速度沿相同路线出发去追。设小亮出发 x 小时后追上小明，所列方程是（　）。",
+     "question": "小明以 5 千米每时的速度步行 0.5 小时后，小亮骑自行车以 15 千米每时的速度沿相同路线出发去追。设小亮出发 x 小时后追上小明，所列方程是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "5 乘 0.5 加 5x 等于 15x"
+      },
+      {
+       "label": "B",
+       "text": "5 乘 0.5 等于 15x"
+      },
+      {
+       "label": "C",
+       "text": "5x 等于 15x"
+      },
+      {
+       "label": "D",
+       "text": "5 乘 0.5 加 15x 等于 5x"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "追上时两人走的路程相等。小明先走了 5 乘 0.5 千米，又走了 5x 千米；小亮走了 15x 千米，所以等量关系是 5 乘 0.5 加 5x 等于 15x，解得 x 等于 0.25。"
+    },
+    {
+     "id": "msk_p1016_q5",
+     "topicId": "msk_p1016",
+     "prompt": "一个三角形的三个内角度数之比为 2 比 3 比 5，这个三角形是（　）。",
+     "question": "一个三角形的三个内角度数之比为 2 比 3 比 5，这个三角形是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "锐角三角形"
+      },
+      {
+       "label": "B",
+       "text": "钝角三角形"
+      },
+      {
+       "label": "C",
+       "text": "直角三角形"
+      },
+      {
+       "label": "D",
+       "text": "等边三角形"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "设三个角分别为 2x、3x、5x 度，由三角形内角和为 180 度得 2x 加 3x 加 5x 等于 180，解得 x 等于 18，三个角是 36 度、54 度、90 度，所以是直角三角形。"
+    },
+    {
+     "id": "msk_p1016_q6",
+     "topicId": "msk_p1016",
+     "prompt": "鸡兔同笼，上面数有 35 个头，下面数有 94 只脚，鸡有多少只？",
+     "question": "鸡兔同笼，上面数有 35 个头，下面数有 94 只脚，鸡有多少只？",
+     "answer": 23,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "设鸡有 x 只，则兔有 35 减 x 只。由脚数得 2x 加 4 乘 (35 减 x) 等于 94，解得 x 等于 23，所以鸡有 23 只，兔有 12 只，检验脚数为 46 加 48 等于 94。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 35}]}, {\"type\": \"num\", \"value\": 94}]}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1016_q7",
+     "topicId": "msk_p1016",
+     "prompt": "一项数据处理任务，甲单独做需 18 小时完成，乙单独做需 12 小时完成。现在甲先单独做 8 小时，剩下的由甲、乙合做，合做了多少小时？",
+     "question": "一项数据处理任务，甲单独做需 18 小时完成，乙单独做需 12 小时完成。现在甲先单独做 8 小时，剩下的由甲、乙合做，合做了多少小时？",
+     "answer": "4",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "把全部工作量看作 1，甲每小时完成 18 分之一，乙每小时完成 12 分之一。设合做 x 小时，则 18 分之 8 加 (18 分之一加 12 分之一) 乘 x 等于 1，解得 x 等于 4。"
+    },
+    {
+     "id": "msk_p1016_q8",
+     "topicId": "msk_p1016",
+     "prompt": "某自行车进价 360 元每辆，按标价的 9 折销售时利润率为 15%，设标价为 x 元，所列方程是（　）。",
+     "question": "某自行车进价 360 元每辆，按标价的 9 折销售时利润率为 15%，设标价为 x 元，所列方程是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.9x=360 乘 15%"
+      },
+      {
+       "label": "B",
+       "text": "x-360=360 乘 15%"
+      },
+      {
+       "label": "C",
+       "text": "0.9x-360=15%"
+      },
+      {
+       "label": "D",
+       "text": "0.9x-360=360 乘 15%"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "按标价的 9 折销售，售价是 0.9x 元，利润是 0.9x 减 360 元。利润率 15% 是按进价计算的，所以利润等于 360 乘 15%，得方程 0.9x 减 360 等于 360 乘 15%，解得 x 等于 460。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1017",
+   "page": 140,
+   "description": "从现实世界的物体中抽象出棱柱、棱锥、圆柱、圆锥、球等几何体与平面图形，认识多面体的面、棱、顶点，知道点、线、面是构成几何体的基本要素。",
+   "mastery_criteria": [
+    "能从实物中抽象出相应的几何体",
+    "能数出一个多面体的面数、棱数和顶点数",
+    "能说出棱与棱的交点、相邻两个面的公共边分别叫什么"
+   ],
+   "misconceptions": [
+    "把含有曲面的圆柱、圆锥当成多面体",
+    "数面、棱、顶点时把同一个面或同一条棱重复计数"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1017_q1",
+     "topicId": "msk_p1017",
+     "prompt": "一个四棱锥一共有几个面？",
+     "question": "一个四棱锥一共有几个面？",
+     "options": [
+      {
+       "label": "A",
+       "text": "4 个"
+      },
+      {
+       "label": "B",
+       "text": "5 个"
+      },
+      {
+       "label": "C",
+       "text": "6 个"
+      },
+      {
+       "label": "D",
+       "text": "8 个"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "四棱锥的底面是一个四边形，侧面是 4 个三角形，共有 1 加 4 等于 5 个面；它还有 5 个顶点和 8 条棱，不要和四棱柱混淆。"
+    },
+    {
+     "id": "msk_p1017_q2",
+     "topicId": "msk_p1017",
+     "prompt": "下列几何体中，面数是 6 的是（　）。",
+     "question": "下列几何体中，面数是 6 的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "四棱锥"
+      },
+      {
+       "label": "B",
+       "text": "圆柱"
+      },
+      {
+       "label": "C",
+       "text": "四棱柱"
+      },
+      {
+       "label": "D",
+       "text": "球"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "四棱柱有上下两个四边形底面和 4 个侧面，一共 6 个面；四棱锥有 5 个面，圆柱有 3 个面，球只有 1 个曲面。"
+    },
+    {
+     "id": "msk_p1017_q3",
+     "topicId": "msk_p1017",
+     "prompt": "一个四棱柱有 8 个顶点、12 条棱、6 个面，这三个数的和是多少？",
+     "question": "一个四棱柱有 8 个顶点、12 条棱、6 个面，这三个数的和是多少？",
+     "answer": 26,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把三个数依次相加：8 加 12 等于 20，20 加 6 等于 26，所以四棱柱的顶点数、棱数、面数之和是 26。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"num\", \"value\": 12}]}, {\"type\": \"num\", \"value\": 6}]}"
+    },
+    {
+     "id": "msk_p1017_q4",
+     "topicId": "msk_p1017",
+     "prompt": "一个五棱柱有 10 个顶点、15 条棱，它有几个面？",
+     "question": "一个五棱柱有 10 个顶点、15 条棱，它有几个面？",
+     "answer": "7",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "五棱柱的上下两个底面都是五边形，侧面有 5 个长方形，一共有 2 加 5 等于 7 个面，所以面数是 7。"
+    },
+    {
+     "id": "msk_p1017_q5",
+     "topicId": "msk_p1017",
+     "prompt": "多面体中，棱与棱的交点叫作（　）。",
+     "question": "多面体中，棱与棱的交点叫作（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "顶点"
+      },
+      {
+       "label": "B",
+       "text": "面"
+      },
+      {
+       "label": "C",
+       "text": "棱"
+      },
+      {
+       "label": "D",
+       "text": "边"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材指出，多面体由若干个面围成，相邻两个面的公共边称为棱，棱与棱的交点称为顶点，所以棱与棱的交点是顶点。"
+    },
+    {
+     "id": "msk_p1017_q6",
+     "topicId": "msk_p1017",
+     "prompt": "一个棱柱有 12 个顶点，它是几棱柱？",
+     "question": "一个棱柱有 12 个顶点，它是几棱柱？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "棱柱的上下两个底面相同，底面的顶点数与侧棱数相等，所以棱柱的顶点数是底面边数的 2 倍。12 除以 2 等于 6，它是六棱柱。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 12}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1017_q7",
+     "topicId": "msk_p1017",
+     "prompt": "请分别举出生活中形状是圆柱和圆锥的物体各一个。",
+     "question": "请分别举出生活中形状是圆柱和圆锥的物体各一个。",
+     "answer": "水杯可以看作圆柱，漏斗可以看作圆锥",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "圆柱的上下底面是大小相同的圆，侧面是曲面，水杯、罐头盒都符合；圆锥有一个圆底面和一个顶点，漏斗、冰淇淋筒都符合，所以这样的例子都可以。"
+    },
+    {
+     "id": "msk_p1017_q8",
+     "topicId": "msk_p1017",
+     "prompt": "关于多面体，下列说法正确的是（　）。",
+     "question": "关于多面体，下列说法正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "多面体的面数一定等于顶点数"
+      },
+      {
+       "label": "B",
+       "text": "多面体是由若干条棱围成的"
+      },
+      {
+       "label": "C",
+       "text": "棱与面的交点叫作顶点"
+      },
+      {
+       "label": "D",
+       "text": "多面体的各个面都是平面"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "多面体是由若干个面围成的封闭图形，这些面都是平面。面数和顶点数不一定相等：四棱锥有 5 个面、5 个顶点，四棱柱却有 6 个面、8 个顶点；围成多面体的是面而不是棱。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1018",
+   "page": 143,
+   "description": "从图形运动的视角认识点动成线、线动成面、面动成体，知道平面图形经过旋转、翻折、拼合可以形成新的图形，能想象一个平面图形绕直线旋转一周后得到的几何体。",
+   "mastery_criteria": [
+    "能用点动成线、线动成面、面动成体解释图形的形成",
+    "能判断平面图形绕直线旋转一周后形成的几何体",
+    "能通过折纸、拼图得到新的平面图形"
+   ],
+   "misconceptions": [
+    "认为长方形绕任意一条边旋转得到的都是圆锥",
+    "认为翻折前后图形的形状和大小会改变"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1018_q1",
+     "topicId": "msk_p1018",
+     "prompt": "笔尖在纸上运动，形成的图形是（　）。",
+     "question": "笔尖在纸上运动，形成的图形是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "点"
+      },
+      {
+       "label": "B",
+       "text": "线"
+      },
+      {
+       "label": "C",
+       "text": "面"
+      },
+      {
+       "label": "D",
+       "text": "体"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "点动成线：笔尖可以看成一个点，它在纸上移动时扫过的轨迹就是一条线，所以笔尖运动形成的图形是线。"
+    },
+    {
+     "id": "msk_p1018_q2",
+     "topicId": "msk_p1018",
+     "prompt": "把长方形纸板绕它的一条边旋转一周，形成的几何体是（　）。",
+     "question": "把长方形纸板绕它的一条边旋转一周，形成的几何体是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆柱"
+      },
+      {
+       "label": "B",
+       "text": "圆锥"
+      },
+      {
+       "label": "C",
+       "text": "球"
+      },
+      {
+       "label": "D",
+       "text": "正方体"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "长方形绕一条边旋转一周，上下底都是与这条边垂直的边旋转出的圆，侧面是曲面，整体形成圆柱，不是圆锥，也不是球。"
+    },
+    {
+     "id": "msk_p1018_q3",
+     "topicId": "msk_p1018",
+     "prompt": "一个长方形纸片长 5 厘米、宽 3 厘米，把它绕长为 5 厘米的边旋转一周，得到的圆柱的高是多少厘米？",
+     "question": "一个长方形纸片长 5 厘米、宽 3 厘米，把它绕长为 5 厘米的边旋转一周，得到的圆柱的高是多少厘米？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "长方形绕长为 5 厘米的边旋转时，这条边就是旋转轴，它的长度就是所成圆柱的高，所以圆柱的高是 5 厘米，宽 3 厘米成为底面圆的半径。",
+     "verify": "{\"type\": \"num\", \"value\": 5}"
+    },
+    {
+     "id": "msk_p1018_q4",
+     "topicId": "msk_p1018",
+     "prompt": "汽车雨刮器在挡风玻璃上来回运动，形成的图形是（　）。",
+     "question": "汽车雨刮器在挡风玻璃上来回运动，形成的图形是（　）。",
+     "answer": "面",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "线动成面：雨刮器本身可以看作一条线，它在挡风玻璃上摆动时扫过的范围是一个平面图形，所以形成的是面。"
+    },
+    {
+     "id": "msk_p1018_q5",
+     "topicId": "msk_p1018",
+     "prompt": "把一个半圆绕它的直径旋转一周，形成的几何体是（　）。",
+     "question": "把一个半圆绕它的直径旋转一周，形成的几何体是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆柱"
+      },
+      {
+       "label": "B",
+       "text": "圆锥"
+      },
+      {
+       "label": "C",
+       "text": "球"
+      },
+      {
+       "label": "D",
+       "text": "圆"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "半圆绕直径旋转一周，直径两侧的半圆各扫过一半空间，合起来正好是一个球，球心就是这条直径的中点。"
+    },
+    {
+     "id": "msk_p1018_q6",
+     "topicId": "msk_p1018",
+     "prompt": "把一张正方形纸片连续对折 2 次，纸片一共有几层？",
+     "question": "把一张正方形纸片连续对折 2 次，纸片一共有几层？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "对折一次层数变成 2 层，再对折一次，原来的每一层又变成 2 层，共 2 乘 2 等于 4 层，所以连续对折 2 次后纸片有 4 层。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1018_q7",
+     "topicId": "msk_p1018",
+     "prompt": "关于图形的运动，下列说法正确的是（　）。",
+     "question": "关于图形的运动，下列说法正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "点动成面"
+      },
+      {
+       "label": "B",
+       "text": "线动成体"
+      },
+      {
+       "label": "C",
+       "text": "面动成线"
+      },
+      {
+       "label": "D",
+       "text": "面动成体"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "图形运动的一般规律是点动成线、线动成面、面动成体。点运动得到线而不是面，线运动得到面而不是体，面运动得到体而不是线，所以只有面动成体正确。"
+    },
+    {
+     "id": "msk_p1018_q8",
+     "topicId": "msk_p1018",
+     "prompt": "把两块相同的三角板相等的边拼在一起，可以拼成哪些平面图形？请举出两种。",
+     "question": "把两块相同的三角板相等的边拼在一起，可以拼成哪些平面图形？请举出两种。",
+     "answer": "可以拼成三角形，也可以拼成平行四边形或长方形",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "两块相同的三角板把相等的边重合拼在一起，边数会减少，可以拼成一个较大的三角形，也可以拼成平行四边形或长方形，拼出的图形与原三角形相比形状不同。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1019",
+   "page": 147,
+   "description": "知道可以用平面直观图和平面展开图表示空间几何体，会判断常见几何体的侧面或表面展开图，能借助图形与表达式的对应关系发现并运用数的规律。",
+   "mastery_criteria": [
+    "能说出平面直观图和平面展开图各自的作用",
+    "能判断一个平面图形可以折成哪种几何体",
+    "能利用图形与表达式的对应关系进行简便计算"
+   ],
+   "misconceptions": [
+    "认为展开前后面的个数和大小会改变",
+    "只记住连续奇数求和的结果，不理解它对应正方形个数"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "msk_p1019_q1",
+     "topicId": "msk_p1019",
+     "prompt": "把一个长方体纸盒沿某些棱剪开铺平，得到的平面图形叫作（　）。",
+     "question": "把一个长方体纸盒沿某些棱剪开铺平，得到的平面图形叫作（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "平面直观图"
+      },
+      {
+       "label": "B",
+       "text": "平面展开图"
+      },
+      {
+       "label": "C",
+       "text": "三视图"
+      },
+      {
+       "label": "D",
+       "text": "立体图"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材指出，我们一般通过平面直观图表示一个空间几何体，也可以用平面展开图研究一个空间几何体。沿某些棱剪开铺平得到的平面图形就是平面展开图。"
+    },
+    {
+     "id": "msk_p1019_q2",
+     "topicId": "msk_p1019",
+     "prompt": "把圆柱的侧面沿一条与底面垂直的虚线剪开并铺平，得到的平面图形是（　）。",
+     "question": "把圆柱的侧面沿一条与底面垂直的虚线剪开并铺平，得到的平面图形是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆"
+      },
+      {
+       "label": "B",
+       "text": "三角形"
+      },
+      {
+       "label": "C",
+       "text": "长方形"
+      },
+      {
+       "label": "D",
+       "text": "扇形"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "圆柱的侧面是曲面，沿一条与底面垂直的线剪开后铺平，两边的边都等于圆柱的高，所以得到长方形，长方形的长等于底面圆的周长。"
+    },
+    {
+     "id": "msk_p1019_q3",
+     "topicId": "msk_p1019",
+     "prompt": "根据 1 加 2 加 3 一直加到 n 等于 n 乘 (n+1) 的一半这个规律，计算 1 加 2 加 3 一直加到 10 的值。",
+     "question": "根据 1 加 2 加 3 一直加到 n 等于 n 乘 (n+1) 的一半这个规律，计算 1 加 2 加 3 一直加到 10 的值。",
+     "answer": 55,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由图形与表达式的对应规律，1 加到 n 的和等于 n 乘 (n+1) 再除以 2。当 n 等于 10 时，10 乘 11 等于 110，110 除以 2 等于 55，所以和是 55。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 11}]}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1019_q4",
+     "topicId": "msk_p1019",
+     "prompt": "1 加 3 加 5 加 7 等于 4 的平方，那么 1 加 3 加 5 加 7 加 9 加 11 等于（　）的平方。",
+     "question": "1 加 3 加 5 加 7 等于 4 的平方，那么 1 加 3 加 5 加 7 加 9 加 11 等于（　）的平方。",
+     "answer": "6",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "从 1 开始的连续奇数相加，和等于加数个数的平方。1、3、5、7、9、11 一共 6 个奇数，所以它们的和等于 6 的平方，也就是 36。"
+    },
+    {
+     "id": "msk_p1019_q5",
+     "topicId": "msk_p1019",
+     "prompt": "下列几何体中，侧面展开图是扇形的是（　）。",
+     "question": "下列几何体中，侧面展开图是扇形的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆锥"
+      },
+      {
+       "label": "B",
+       "text": "圆柱"
+      },
+      {
+       "label": "C",
+       "text": "三棱柱"
+      },
+      {
+       "label": "D",
+       "text": "球"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "圆锥的侧面是曲面，沿一条母线剪开铺平后得到一个扇形，扇形的半径等于母线长；圆柱的侧面展开图是长方形，球的表面不能展开成平面图形。"
+    },
+    {
+     "id": "msk_p1019_q6",
+     "topicId": "msk_p1019",
+     "prompt": "根据 1 加 2 加 3 一直加到 n 等于 n 乘 (n+1) 的一半这个规律，计算 1 加 2 加 3 一直加到 100 的值。",
+     "question": "根据 1 加 2 加 3 一直加到 n 等于 n 乘 (n+1) 的一半这个规律，计算 1 加 2 加 3 一直加到 100 的值。",
+     "answer": 5050,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "1 加到 100 一共有 100 个加数，按规律等于 100 乘 101 再除以 2，100 乘 101 等于 10100，除以 2 得 5050，所以和是 5050。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 100}, {\"type\": \"num\", \"value\": 101}]}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1019_q7",
+     "topicId": "msk_p1019",
+     "prompt": "说一说平面直观图和平面展开图各自有什么作用。",
+     "question": "说一说平面直观图和平面展开图各自有什么作用。",
+     "answer": "平面直观图用来表示空间几何体，平面展开图用来研究它的各个面",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "教材指出，数学中一般通过平面直观图表示一个空间几何体，也可以用平面展开图来研究一个空间几何体，比如借助展开图看清各个面在展开前后的位置关系。"
+    },
+    {
+     "id": "msk_p1019_q8",
+     "topicId": "msk_p1019",
+     "prompt": "1 加 3 加 5 一直加到 19 的值是（　）。",
+     "question": "1 加 3 加 5 一直加到 19 的值是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "81"
+      },
+      {
+       "label": "B",
+       "text": "90"
+      },
+      {
+       "label": "C",
+       "text": "95"
+      },
+      {
+       "label": "D",
+       "text": "100"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "从 1 到 19 一共有 10 个连续奇数，由图形与表达式的对应规律，它们的和等于 10 的平方，即 100；也可以用首尾配对检验，每对的和是 20，共 5 对，和是 100。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1020",
+   "page": 154,
+   "description": "认识直线、射线、线段的概念和表示方法，理解两点确定一条直线、两点之间线段最短，会比较线段的长短、用尺规作线段，并利用中点的意义求线段的长。",
+   "mastery_criteria": [
+    "能用符号正确表示直线、射线、线段",
+    "能运用两点确定一条直线和两点之间线段最短说明理由",
+    "能利用线段中点的意义求线段的长"
+   ],
+   "misconceptions": [
+    "认为射线 AB 与射线 BA 是同一条射线",
+    "把两点之间的距离说成两点之间的线段"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1020_q1",
+     "topicId": "msk_p1020",
+     "prompt": "经过平面内的两点，可以画出的直线有（　）。",
+     "question": "经过平面内的两点，可以画出的直线有（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 条"
+      },
+      {
+       "label": "B",
+       "text": "2 条"
+      },
+      {
+       "label": "C",
+       "text": "3 条"
+      },
+      {
+       "label": "D",
+       "text": "无数条"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "经过一点可以画无数条直线，而经过两点只能画一条直线，这就是基本事实两点确定一条直线，所以经过两点只能画出 1 条直线。"
+    },
+    {
+     "id": "msk_p1020_q2",
+     "topicId": "msk_p1020",
+     "prompt": "关于直线、射线、线段的表示，下列说法正确的是（　）。",
+     "question": "关于直线、射线、线段的表示，下列说法正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "射线 AB 与射线 BA 是同一条射线"
+      },
+      {
+       "label": "B",
+       "text": "直线 AB 与直线 BA 不是同一条直线"
+      },
+      {
+       "label": "C",
+       "text": "直线 AB 与直线 BA 是同一条直线"
+      },
+      {
+       "label": "D",
+       "text": "线段 AB 与线段 BA 是两条不同的线段"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "直线的表示与点的顺序无关，直线 AB 和直线 BA 是同一条直线；但射线 AB 的端点是 A，射线 BA 的端点是 B，延伸方向不同，不是同一条射线；线段 AB 和线段 BA 是同一条线段。"
+    },
+    {
+     "id": "msk_p1020_q3",
+     "topicId": "msk_p1020",
+     "prompt": "线段 AB 等于 16，C 是 AB 的中点，点 D 在线段 CB 上，且 DB 等于 3，求线段 CD 的长。",
+     "question": "线段 AB 等于 16，C 是 AB 的中点，点 D 在线段 CB 上，且 DB 等于 3，求线段 CD 的长。",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "C 是 AB 的中点，所以 CB 等于 AB 的一半，即 8。CD 等于 CB 减 DB，等于 8 减 3 等于 5，所以线段 CD 的长是 5。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 16}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msk_p1020_q4",
+     "topicId": "msk_p1020",
+     "prompt": "两点之间的所有连线中，（　）最短。",
+     "question": "两点之间的所有连线中，（　）最短。",
+     "answer": "线段",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材给出的基本事实是：两点之间的所有连线中，线段最短，简单说成两点之间线段最短，所以最短的连线是线段。"
+    },
+    {
+     "id": "msk_p1020_q5",
+     "topicId": "msk_p1020",
+     "prompt": "关于直线、射线、线段，下列说法正确的是（　）。",
+     "question": "关于直线、射线、线段，下列说法正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "直线有两个端点"
+      },
+      {
+       "label": "B",
+       "text": "射线有两个端点"
+      },
+      {
+       "label": "C",
+       "text": "线段没有端点"
+      },
+      {
+       "label": "D",
+       "text": "射线有一个端点"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "直线没有端点，可以向两方无限延伸；射线只有一个端点，另一方无限延伸；线段有两个端点，可以度量长度。所以只有射线有一个端点的说法正确。"
+    },
+    {
+     "id": "msk_p1020_q6",
+     "topicId": "msk_p1020",
+     "prompt": "线段 AB 等于 10，点 C 在直线 AB 上，且 AC 等于 4，则 BC 的长是（　）。",
+     "question": "线段 AB 等于 10，点 C 在直线 AB 上，且 AC 等于 4，则 BC 的长是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "6 或 14"
+      },
+      {
+       "label": "C",
+       "text": "14"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "点 C 在直线 AB 上，可能在点 A 与点 B 之间，也可能在点 A 的另一侧。在 A、B 之间时 BC 等于 10 减 4 等于 6；在 A 的另一侧时 BC 等于 10 加 4 等于 14，所以有两种情况。"
+    },
+    {
+     "id": "msk_p1020_q7",
+     "topicId": "msk_p1020",
+     "prompt": "线段 AB 等于 12，M 是 AB 的中点，N 是 AM 的中点，求线段 AN 的长。",
+     "question": "线段 AB 等于 12，M 是 AB 的中点，N 是 AM 的中点，求线段 AN 的长。",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "M 是 AB 的中点，所以 AM 等于 12 的一半等于 6；N 是 AM 的中点，所以 AN 等于 6 的一半等于 3，线段 AN 的长是 3。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 12}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1020_q8",
+     "topicId": "msk_p1020",
+     "prompt": "要把一根细木条固定在墙上并且不能转动，至少需要几颗钉子？请说明理由。",
+     "question": "要把一根细木条固定在墙上并且不能转动，至少需要几颗钉子？请说明理由。",
+     "answer": "两颗，因为两点确定一条直线",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "一颗钉子只能固定一个点，细木条仍可以绕这一点转动；钉两颗钉子就固定了两个点，而过两点只能画一条直线，细木条的位置就被确定了，所以至少需要两颗钉子。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1021",
+   "page": 162,
+   "description": "认识角是由有公共端点的两条射线组成的图形，会用符号表示角，知道平角、周角与度分秒的换算，理解补角、余角以及角平分线的意义。",
+   "mastery_criteria": [
+    "能说出角的顶点和边并用符号表示角",
+    "能进行度、分、秒的换算和角的加减计算",
+    "能利用补角、余角、角平分线求角的大小"
+   ],
+   "misconceptions": [
+    "认为平角就是一条直线、周角就是一条射线",
+    "度分秒换算时按十进制计算，把 1 度当成 100 分"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1021_q1",
+     "topicId": "msk_p1021",
+     "prompt": "有公共端点的两条射线组成的图形叫作（　）。",
+     "question": "有公共端点的两条射线组成的图形叫作（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "角"
+      },
+      {
+       "label": "B",
+       "text": "直线"
+      },
+      {
+       "label": "C",
+       "text": "线段"
+      },
+      {
+       "label": "D",
+       "text": "三角形"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材指出，有公共端点的两条射线组成的图形叫作角，这个公共端点是角的顶点，这两条射线是角的两条边，所以这样的图形是角。"
+    },
+    {
+     "id": "msk_p1021_q2",
+     "topicId": "msk_p1021",
+     "prompt": "计算 2 乘 72 度 45 分，结果是多少度？",
+     "question": "计算 2 乘 72 度 45 分，结果是多少度？",
+     "answer": 145.5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "2 乘 72 度等于 144 度，2 乘 45 分等于 90 分，而 90 分等于 1 度 30 分，所以结果是 144 度加 1 度 30 分，即 145 度 30 分，也就是 145.5 度。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 72.75}]}"
+    },
+    {
+     "id": "msk_p1021_q3",
+     "topicId": "msk_p1021",
+     "prompt": "把 30 度 30 分化成度，结果是多少度？",
+     "question": "把 30 度 30 分化成度，结果是多少度？",
+     "answer": "30.5",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "1 度等于 60 分，30 分等于 60 分之 30 度，也就是 0.5 度，所以 30 度 30 分等于 30.5 度。"
+    },
+    {
+     "id": "msk_p1021_q4",
+     "topicId": "msk_p1021",
+     "prompt": "一个角等于 35 度，它的余角是（　）。",
+     "question": "一个角等于 35 度，它的余角是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "65 度"
+      },
+      {
+       "label": "B",
+       "text": "55 度"
+      },
+      {
+       "label": "C",
+       "text": "145 度"
+      },
+      {
+       "label": "D",
+       "text": "125 度"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个角的度数之和等于 90 度时，这两个角互为余角。90 度减 35 度等于 55 度，所以 35 度角的余角是 55 度；145 度是它的补角，不要混淆。"
+    },
+    {
+     "id": "msk_p1021_q5",
+     "topicId": "msk_p1021",
+     "prompt": "一个角的补角是它余角的 4 倍，这个角是多少度？",
+     "question": "一个角的补角是它余角的 4 倍，这个角是多少度？",
+     "answer": 60,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "设这个角为 x 度，则它的补角是 180 减 x 度，余角是 90 减 x 度。由题意得 180 减 x 等于 4 乘 (90 减 x)，展开得 180 减 x 等于 360 减 4x，解得 x 等于 60，所以这个角是 60 度。",
+     "verify": "{\"type\": \"num\", \"value\": 60}"
+    },
+    {
+     "id": "msk_p1021_q6",
+     "topicId": "msk_p1021",
+     "prompt": "OC 是角 AOB 的平分线，角 AOB 等于 70 度，则角 AOC 等于（　）。",
+     "question": "OC 是角 AOB 的平分线，角 AOB 等于 70 度，则角 AOC 等于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "140 度"
+      },
+      {
+       "label": "B",
+       "text": "70 度"
+      },
+      {
+       "label": "C",
+       "text": "35 度"
+      },
+      {
+       "label": "D",
+       "text": "30 度"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "角平分线把这个角分成两个相等的角，所以角 AOC 等于角 BOC，都等于角 AOB 的一半。70 度除以 2 等于 35 度，角 AOC 是 35 度。"
+    },
+    {
+     "id": "msk_p1021_q7",
+     "topicId": "msk_p1021",
+     "prompt": "角 AOD 等于 80 度，OB 是角 AOC 的平分线，角 AOB 等于 30 度，求角 COD 的度数。",
+     "question": "角 AOD 等于 80 度，OB 是角 AOC 的平分线，角 AOB 等于 30 度，求角 COD 的度数。",
+     "answer": 20,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "OB 平分角 AOC，所以角 AOC 等于 2 倍角 AOB，即 60 度。角 COD 等于角 AOD 减角 AOC，等于 80 度减 60 度等于 20 度。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 80}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 30}]}]}"
+    },
+    {
+     "id": "msk_p1021_q8",
+     "topicId": "msk_p1021",
+     "prompt": "关于平角、周角和余角，下列说法正确的是（　）。",
+     "question": "关于平角、周角和余角，下列说法正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "平角就是一条直线"
+      },
+      {
+       "label": "B",
+       "text": "周角就是一条射线"
+      },
+      {
+       "label": "C",
+       "text": "两个角互补，则它们都是钝角"
+      },
+      {
+       "label": "D",
+       "text": "同角或等角的余角相等"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "平角是角的两边成一条直线的角，它仍然是一个角，不等于一条直线；周角也不是一条射线；两个角互补时其中可以有锐角；而同角或等角的补角相等、余角相等是一般结论，所以只有最后一个正确。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1022",
+   "page": 171,
+   "description": "认识两条直线相交所成的对顶角，知道对顶角相等，理解两条直线互相垂直与垂足的意义，知道过一点有且只有一条垂线、垂线段最短以及点到直线的距离。",
+   "mastery_criteria": [
+    "能找出图形中的对顶角并运用对顶角相等求角",
+    "能判断两条直线是否互相垂直并说明理由",
+    "能说出点到直线的距离的含义并会画垂线段"
+   ],
+   "misconceptions": [
+    "认为有公共顶点的两个角就是对顶角",
+    "把垂线段和点到直线的距离混为一谈"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1022_q1",
+     "topicId": "msk_p1022",
+     "prompt": "两条直线相交所成的四个角中，有公共顶点而没有公共边的两个角叫作（　）。",
+     "question": "两条直线相交所成的四个角中，有公共顶点而没有公共边的两个角叫作（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "邻补角"
+      },
+      {
+       "label": "B",
+       "text": "对顶角"
+      },
+      {
+       "label": "C",
+       "text": "同位角"
+      },
+      {
+       "label": "D",
+       "text": "内错角"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材指出，两条直线相交所成的四个角中，有公共顶点没有公共边的两个角叫作对顶角；有公共边并且互补的两个角是邻补角，不要混淆。"
+    },
+    {
+     "id": "msk_p1022_q2",
+     "topicId": "msk_p1022",
+     "prompt": "角 1 与角 2 是对顶角，角 1 等于 52 度，则角 2 等于（　）。",
+     "question": "角 1 与角 2 是对顶角，角 1 等于 52 度，则角 2 等于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "38 度"
+      },
+      {
+       "label": "B",
+       "text": "128 度"
+      },
+      {
+       "label": "C",
+       "text": "52 度"
+      },
+      {
+       "label": "D",
+       "text": "148 度"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "对顶角相等，所以角 2 等于角 1，等于 52 度。与角 1 相邻的两个角才是它的邻补角，度数等于 180 减 52 等于 128 度。"
+    },
+    {
+     "id": "msk_p1022_q3",
+     "topicId": "msk_p1022",
+     "prompt": "角 1 与角 2 是对顶角，且角 1 加角 2 等于 140 度，那么角 1 等于多少度？",
+     "question": "角 1 与角 2 是对顶角，且角 1 加角 2 等于 140 度，那么角 1 等于多少度？",
+     "answer": 70,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "对顶角相等，所以角 1 等于角 2。由角 1 加角 2 等于 140 度，得 2 倍角 1 等于 140 度，所以角 1 等于 70 度。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 140}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1022_q4",
+     "topicId": "msk_p1022",
+     "prompt": "在同一平面内，经过一点有且只有（　）条直线与已知直线垂直。",
+     "question": "在同一平面内，经过一点有且只有（　）条直线与已知直线垂直。",
+     "answer": "一",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "教材给出的基本事实是：在同一平面内，过一点有且只有一条直线与已知直线垂直，所以这样的直线只有一条。"
+    },
+    {
+     "id": "msk_p1022_q5",
+     "topicId": "msk_p1022",
+     "prompt": "点到直线的距离是指（　）。",
+     "question": "点到直线的距离是指（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "直线外一点到这条直线的垂线段"
+      },
+      {
+       "label": "B",
+       "text": "过一点画出的这条直线的垂线"
+      },
+      {
+       "label": "C",
+       "text": "直线外一点与直线上任意一点连接的线段"
+      },
+      {
+       "label": "D",
+       "text": "直线外一点到这条直线的垂线段的长度"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材指出，直线外一点到这条直线的垂线段的长度叫作点到直线的距离。距离是一个长度，不是垂线段本身，也不是任意一条连线。"
+    },
+    {
+     "id": "msk_p1022_q6",
+     "topicId": "msk_p1022",
+     "prompt": "直线 AB 与 CD 相交于点 O，OE 平分角 BOD，若角 AOC 等于 68 度，求角 BOE 的度数。",
+     "question": "直线 AB 与 CD 相交于点 O，OE 平分角 BOD，若角 AOC 等于 68 度，求角 BOE 的度数。",
+     "answer": 34,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "角 AOC 与角 BOD 是对顶角，所以角 BOD 等于 68 度。OE 平分角 BOD，所以角 BOE 等于角 BOD 的一半，即 68 度除以 2 等于 34 度。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 68}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1022_q7",
+     "topicId": "msk_p1022",
+     "prompt": "下列语句正确的是（　）。",
+     "question": "下列语句正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "在同一平面内，过一点有且只有一条直线与已知直线垂直"
+      },
+      {
+       "label": "B",
+       "text": "过一点可以画无数条直线与已知直线垂直"
+      },
+      {
+       "label": "C",
+       "text": "垂线段的长度就是垂线段"
+      },
+      {
+       "label": "D",
+       "text": "两条直线相交就一定互相垂直"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "在同一平面内，过一点有且只有一条直线与已知直线垂直，所以第一个正确、第二个错误；点到直线的距离是垂线段的长度，不能把长度说成垂线段；两条直线相交所成的角不一定是直角，所以不一定垂直。"
+    },
+    {
+     "id": "msk_p1022_q8",
+     "topicId": "msk_p1022",
+     "prompt": "从人行横道线上的点 P 处过马路，怎样走路线最短？请说明理由。",
+     "question": "从人行横道线上的点 P 处过马路，怎样走路线最短？请说明理由。",
+     "answer": "过点 P 作马路边所在直线的垂线，沿垂线段走最短，因为垂线段最短",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "马路的两条边可以看作两条平行的直线，从点 P 到对面马路边的最短路线是这条垂线段，依据是直线外一点与直线上各点连接的所有线段中，垂线段最短。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1023",
+   "page": 180,
+   "description": "认识在同一平面内不相交的两条直线叫作平行线，知道过直线外一点有且只有一条直线与这条直线平行，认识同位角、内错角、同旁内角，掌握平行线的判定和性质。",
+   "mastery_criteria": [
+    "能说出平行线的意义并用符号表示",
+    "能识别同位角、内错角、同旁内角",
+    "能用平行线的判定和性质进行简单推理"
+   ],
+   "misconceptions": [
+    "认为不相交的两条直线一定平行，忽略同一平面内这个前提",
+    "把平行线的判定和性质用反，题设与结论颠倒"
+   ],
+   "type": "reasoning",
+   "questions": [
+    {
+     "id": "msk_p1023_q1",
+     "topicId": "msk_p1023",
+     "prompt": "在同一平面内，不相交的两条直线叫作（　）。",
+     "question": "在同一平面内，不相交的两条直线叫作（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "垂线"
+      },
+      {
+       "label": "B",
+       "text": "平行线"
+      },
+      {
+       "label": "C",
+       "text": "相交线"
+      },
+      {
+       "label": "D",
+       "text": "射线"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材指出，在同一平面内不相交的两条直线叫作平行线。判断平行必须以同一平面内为前提，不在同一平面内不相交的两条直线不一定平行。"
+    },
+    {
+     "id": "msk_p1023_q2",
+     "topicId": "msk_p1023",
+     "prompt": "过直线外一点，有且只有（　）条直线与这条直线平行。",
+     "question": "过直线外一点，有且只有（　）条直线与这条直线平行。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "无数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "这是平行线基本事实 1：过直线外一点有且只有一条直线与这条直线平行，所以只能画出 1 条这样的直线。"
+    },
+    {
+     "id": "msk_p1023_q3",
+     "topicId": "msk_p1023",
+     "prompt": "两条平行直线被第三条直线所截，角 1 与角 2 是同位角，角 1 等于 65 度，角 2 等于多少度？",
+     "question": "两条平行直线被第三条直线所截，角 1 与角 2 是同位角，角 1 等于 65 度，角 2 等于多少度？",
+     "answer": 65,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "两直线平行，同位角相等，所以角 2 等于角 1，等于 65 度。这是平行线的性质定理 1，与判定定理的题设结论正好相反。",
+     "verify": "{\"type\": \"num\", \"value\": 65}"
+    },
+    {
+     "id": "msk_p1023_q4",
+     "topicId": "msk_p1023",
+     "prompt": "两条平行直线被第三条直线所截，同旁内角有怎样的数量关系？",
+     "question": "两条平行直线被第三条直线所截，同旁内角有怎样的数量关系？",
+     "answer": "互补",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "平行线的性质指出，两条平行直线被第三条直线所截，同旁内角互补，也就是这两个角的度数之和等于 180 度。"
+    },
+    {
+     "id": "msk_p1023_q5",
+     "topicId": "msk_p1023",
+     "prompt": "角 1 与角 2 是内错角，若角 1 等于角 2，则这两条直线（　）。",
+     "question": "角 1 与角 2 是内错角，若角 1 等于角 2，则这两条直线（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "互相垂直"
+      },
+      {
+       "label": "B",
+       "text": "相交"
+      },
+      {
+       "label": "C",
+       "text": "无法判断"
+      },
+      {
+       "label": "D",
+       "text": "互相平行"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "内错角相等，两直线平行，这是平行线的判定定理。已知角 1 与角 2 相等且它们是内错角，就可以判定这两条直线互相平行。"
+    },
+    {
+     "id": "msk_p1023_q6",
+     "topicId": "msk_p1023",
+     "prompt": "两条平行直线被第三条直线所截，一对同旁内角中有一个角是 117 度，另一个角是多少度？",
+     "question": "两条平行直线被第三条直线所截，一对同旁内角中有一个角是 117 度，另一个角是多少度？",
+     "answer": 63,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "两直线平行，同旁内角互补，所以另一个角等于 180 度减 117 度等于 63 度。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 180}, {\"type\": \"num\", \"value\": 117}]}"
+    },
+    {
+     "id": "msk_p1023_q7",
+     "topicId": "msk_p1023",
+     "prompt": "下列条件中，不能判定两条直线平行的是（　）。",
+     "question": "下列条件中，不能判定两条直线平行的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "同位角相等"
+      },
+      {
+       "label": "B",
+       "text": "内错角相等"
+      },
+      {
+       "label": "C",
+       "text": "同旁内角相等"
+      },
+      {
+       "label": "D",
+       "text": "同旁内角互补"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "判定两直线平行的依据是同位角相等、内错角相等、同旁内角互补。同旁内角相等时两直线不一定平行，只有它们互补才能判定平行，所以同旁内角相等不能判定。"
+    },
+    {
+     "id": "msk_p1023_q8",
+     "topicId": "msk_p1023",
+     "prompt": "两条直线被第三条直线所截，如果一对同旁内角互补，能判定这两条直线平行吗？请说明理由。",
+     "question": "两条直线被第三条直线所截，如果一对同旁内角互补，能判定这两条直线平行吗？请说明理由。",
+     "answer": "能，依据是同旁内角互补，两直线平行",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "这是平行线的判定定理之一：两条直线被第三条直线所截，如果同旁内角互补，那么这两条直线平行，简单说成同旁内角互补，两直线平行。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1024",
+   "page": 193,
+   "description": "认识在平面内由不在同一条直线上的三条或三条以上的线段首尾顺次相接组成的多边形，知道多边形的边、顶点、内角、外角和对角线，认识正多边形。",
+   "mastery_criteria": [
+    "能说出多边形的边、顶点、内角和它的外角",
+    "会画多边形的对角线并能数出对角线的条数",
+    "能判断一个多边形是不是正多边形"
+   ],
+   "misconceptions": [
+    "认为各边相等的多边形就是正多边形",
+    "把多边形的外角与相邻内角当成相等"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1024_q1",
+     "topicId": "msk_p1024",
+     "prompt": "在平面内，由不在同一条直线上的三条或三条以上的线段首尾顺次相接组成的图形叫作（　）。",
+     "question": "在平面内，由不在同一条直线上的三条或三条以上的线段首尾顺次相接组成的图形叫作（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆"
+      },
+      {
+       "label": "B",
+       "text": "多边形"
+      },
+      {
+       "label": "C",
+       "text": "角"
+      },
+      {
+       "label": "D",
+       "text": "直线"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材指出，在平面内，由不在同一条直线上的三条或三条以上的线段首尾顺次相接组成的图形叫作多边形，这些线段叫作多边形的边。"
+    },
+    {
+     "id": "msk_p1024_q2",
+     "topicId": "msk_p1024",
+     "prompt": "各边相等、各内角也相等的多边形叫作（　）。",
+     "question": "各边相等、各内角也相等的多边形叫作（　）。",
+     "answer": "正多边形",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材指出，各边相等、各内角也相等的多边形叫作正多边形。只有各边相等而各内角不相等的多边形不是正多边形，比如一般的菱形。"
+    },
+    {
+     "id": "msk_p1024_q3",
+     "topicId": "msk_p1024",
+     "prompt": "从四边形的一个顶点出发，连接这个顶点与不相邻的顶点，可以把四边形分成几个三角形？",
+     "question": "从四边形的一个顶点出发，连接这个顶点与不相邻的顶点，可以把四边形分成几个三角形？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "四边形从一个顶点出发只能连出 1 条对角线，把四边形分成 2 个三角形，三角形的个数比边数少 2。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1024_q4",
+     "topicId": "msk_p1024",
+     "prompt": "五边形一共有多少条对角线？",
+     "question": "五边形一共有多少条对角线？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "五边形从一个顶点出发可以连出 2 条对角线，5 个顶点共 5 乘 2 等于 10 条，但每条对角线被两个端点各算了一次，所以实际是 10 除以 2 等于 5 条。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1024_q5",
+     "topicId": "msk_p1024",
+     "prompt": "多边形的外角与它相邻的内角（　）。",
+     "question": "多边形的外角与它相邻的内角（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "相等"
+      },
+      {
+       "label": "B",
+       "text": "互余"
+      },
+      {
+       "label": "C",
+       "text": "无法确定"
+      },
+      {
+       "label": "D",
+       "text": "互为补角"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "多边形的边与它邻边的延长线组成的角叫作外角，外角与相邻的内角正好拼成一个平角，所以它们互为补角，度数之和是 180 度。"
+    },
+    {
+     "id": "msk_p1024_q6",
+     "topicId": "msk_p1024",
+     "prompt": "从某个多边形的一个顶点出发的所有对角线，把这个多边形分成 6 个三角形，这个多边形是几边形？",
+     "question": "从某个多边形的一个顶点出发的所有对角线，把这个多边形分成 6 个三角形，这个多边形是几边形？",
+     "answer": 8,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "从一个顶点出发把多边形剪成三角形，三角形的个数总比边数少 2，所以边数等于三角形个数加 2，6 加 2 等于 8，这个多边形是八边形。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1024_q7",
+     "topicId": "msk_p1024",
+     "prompt": "关于多边形的对角线和正多边形，下列说法正确的是（　）。",
+     "question": "关于多边形的对角线和正多边形，下列说法正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "三角形有 3 条对角线"
+      },
+      {
+       "label": "B",
+       "text": "各边相等的多边形一定是正多边形"
+      },
+      {
+       "label": "C",
+       "text": "四边形有 2 条对角线"
+      },
+      {
+       "label": "D",
+       "text": "六边形有 6 条对角线"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "三角形没有对角线，四边形有 2 条对角线，六边形有 9 条对角线；各边相等还要各内角也相等才是正多边形。所以只有四边形有 2 条对角线这个说法正确。"
+    },
+    {
+     "id": "msk_p1024_q8",
+     "topicId": "msk_p1024",
+     "prompt": "一个多边形的某个内角与它相邻的外角有什么关系？请说明理由。",
+     "question": "一个多边形的某个内角与它相邻的外角有什么关系？请说明理由。",
+     "answer": "互为补角，度数之和是 180 度",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "多边形的外角是由一条边与它邻边的延长线组成的，外角与相邻的内角正好拼成一个平角，平角是 180 度，所以它们互为补角。"
+    }
+   ]
+  }
+ ]
+}

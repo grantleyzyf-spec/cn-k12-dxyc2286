@@ -1,0 +1,3042 @@
+{
+  "tag": "h3",
+  "book": "苏教版选择性必修第一册",
+  "unit_points": [
+    {
+      "id": "msj_h020",
+      "description": "数列是按一定次序排列的一列数，本章从数列的概念、通项公式与递推公式出发，研究等差数列与等比数列的通项公式和前n项和，并用数学归纳法证明与正整数有关的命题。",
+      "mastery_criteria": [
+        "能根据通项公式或递推公式写出数列的前几项",
+        "掌握等差、等比数列的通项公式与前n项和公式并会求其中的基本量",
+        "能用数学归纳法证明与正整数有关的恒等式"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "msj_h020_q1",
+          "topicId": "msj_h020",
+          "prompt": "下面关于数列的说法中，正确的是哪一个？",
+          "question": "下面关于数列的说法中，正确的是哪一个？",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "数列是按一定次序排列的一列数，同一个数可以重复出现，所以各项不必互不相同；项数有限的是有穷数列，项数无限的是无穷数列。",
+          "options": [
+            {
+              "label": "A",
+              "text": "数列中的项可以重复出现，只要按一定次序排列"
+            },
+            {
+              "label": "B",
+              "text": "数列中各项必须互不相同"
+            },
+            {
+              "label": "C",
+              "text": "数列的项数一定是有限的"
+            },
+            {
+              "label": "D",
+              "text": "数列只能由正整数组成"
+            }
+          ]
+        },
+        {
+          "id": "msj_h020_q2",
+          "topicId": "msj_h020",
+          "prompt": "在等差数列中，首项为3，公差为4，那么它的第6项等于多少？",
+          "question": "在等差数列中，首项为3，公差为4，那么它的第6项等于多少？",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "等差数列的通项公式是首项加上项数减1个公差，第6项等于3加5乘4，结果是23。",
+          "options": [
+            {
+              "label": "A",
+              "text": "19"
+            },
+            {
+              "label": "B",
+              "text": "23"
+            },
+            {
+              "label": "C",
+              "text": "27"
+            },
+            {
+              "label": "D",
+              "text": "31"
+            }
+          ]
+        },
+        {
+          "id": "msj_h020_q3",
+          "topicId": "msj_h020",
+          "prompt": "已知数列的通项公式为第n项等于n的平方加1，求这个数列的第4项。",
+          "question": "已知数列的通项公式为第n项等于n的平方加1，求这个数列的第4项。",
+          "answer": 17,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "把n等于4代入通项公式，4的平方是16，再加1得到17。",
+          "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 1}]}"
+        },
+        {
+          "id": "msj_h020_q4",
+          "topicId": "msj_h020",
+          "prompt": "在等比数列中，首项为2，公比为3，那么它的前4项和等于多少？",
+          "question": "在等比数列中，首项为2，公比为3，那么它的前4项和等于多少？",
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "等比数列前n项和公式是首项乘1减公比的n次方的差，再除以1减公比。这里等于2乘1减81的差除以负2，结果是80。",
+          "options": [
+            {
+              "label": "A",
+              "text": "40"
+            },
+            {
+              "label": "B",
+              "text": "54"
+            },
+            {
+              "label": "C",
+              "text": "80"
+            },
+            {
+              "label": "D",
+              "text": "162"
+            }
+          ]
+        },
+        {
+          "id": "msj_h020_q5",
+          "topicId": "msj_h020",
+          "prompt": "等差数列中首项为2，第10项为29，求这个数列前10项的和。",
+          "question": "等差数列中首项为2，第10项为29，求这个数列前10项的和。",
+          "answer": 155,
+          "type": "numeric",
+          "difficulty": "hard",
+          "explanation": "等差数列前n项和等于项数乘首项与末项的和的一半，即10乘2加29的和再除以2，得到155。",
+          "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 29}]}]}, {\"type\": \"num\", \"value\": 2}]}"
+        }
+      ]
+    },
+    {
+      "id": "msj_h021",
+      "description": "导数是函数在某一点处的瞬时变化率，也就是曲线在该点处切线的斜率。本章由平均变化率引入导数，学习基本初等函数、函数的和差积商以及简单复合函数的求导法则，再用导数研究函数的单调性、极值与最值，并建立三次样条模型。",
+      "mastery_criteria": [
+        "理解平均变化率与瞬时变化率的区别，知道导数的几何意义",
+        "会求基本初等函数的导数，会用四则运算法则与复合函数法则求导",
+        "会用导数判断单调性、求极值和闭区间上的最值"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "msj_h021_q1",
+          "topicId": "msj_h021",
+          "prompt": "函数f(x)等于x的平方，它在从1到3这段区间上的平均变化率是多少？",
+          "question": "函数f(x)等于x的平方，它在从1到3这段区间上的平均变化率是多少？",
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "平均变化率等于函数值的改变量除以自变量的改变量，即3的平方减1的平方得8，再除以3减1得2，结果是4。",
+          "options": [
+            {
+              "label": "A",
+              "text": "2"
+            },
+            {
+              "label": "B",
+              "text": "3"
+            },
+            {
+              "label": "C",
+              "text": "4"
+            },
+            {
+              "label": "D",
+              "text": "8"
+            }
+          ]
+        },
+        {
+          "id": "msj_h021_q2",
+          "topicId": "msj_h021",
+          "prompt": "幂函数y等于x的3次方求导之后得到什么？",
+          "question": "幂函数y等于x的3次方求导之后得到什么？",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "由幂函数的求导公式，x的n次方的导数是n乘x的n减1次方，所以x的3次方的导数是3x的平方。",
+          "options": [
+            {
+              "label": "A",
+              "text": "3x的平方"
+            },
+            {
+              "label": "B",
+              "text": "x的平方"
+            },
+            {
+              "label": "C",
+              "text": "3x"
+            },
+            {
+              "label": "D",
+              "text": "x的4次方除以4"
+            }
+          ]
+        },
+        {
+          "id": "msj_h021_q3",
+          "topicId": "msj_h021",
+          "prompt": "求函数f(x)等于x的平方加2x在x等于1处的导数。",
+          "question": "求函数f(x)等于x的平方加2x在x等于1处的导数。",
+          "answer": 4,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "先求导函数，x的平方的导数是2x，2x的导数是2，所以导函数是2x加2，把x等于1代入得4。",
+          "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 1}]}, {\"type\": \"num\", \"value\": 2}]}"
+        },
+        {
+          "id": "msj_h021_q4",
+          "topicId": "msj_h021",
+          "prompt": "函数f(x)等于x的平方减4x加3的单调递增区间是哪一个？",
+          "question": "函数f(x)等于x的平方减4x加3的单调递增区间是哪一个？",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "求导得2x减4，令它大于0，解得x大于2，所以函数在2到正无穷上单调递增，在负无穷到2上单调递减。",
+          "options": [
+            {
+              "label": "A",
+              "text": "负无穷到2"
+            },
+            {
+              "label": "B",
+              "text": "2到正无穷"
+            },
+            {
+              "label": "C",
+              "text": "负无穷到0"
+            },
+            {
+              "label": "D",
+              "text": "0到2"
+            }
+          ]
+        },
+        {
+          "id": "msj_h021_q5",
+          "topicId": "msj_h021",
+          "prompt": "已知函数f(x)等于x的3次方减3x，它的极大值是多少？",
+          "question": "已知函数f(x)等于x的3次方减3x，它的极大值是多少？",
+          "answer": 2,
+          "type": "numeric",
+          "difficulty": "hard",
+          "explanation": "求导得3x的平方减3，令它等于0得x等于1或负1；x等于负1时导数由正变负，函数取得极大值，代入得负1加3等于2。",
+          "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": -1}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": -3}, {\"type\": \"num\", \"value\": -1}]}]}"
+        }
+      ]
+    },
+    {
+      "id": "msj_h022",
+      "description": "数学建模与数学探究专题用两个案例展示完整过程：案例1比较等额本息与等额本金两种还贷方式的利息，案例2借助动态几何软件探究抛物线焦点弦端点处切线的交点轨迹。每个案例都经历理解问题、简化假设、建立模型、求解检验和评价反思。",
+      "mastery_criteria": [
+        "能说出数学建模的各个环节以及每个环节要解决的问题",
+        "会用数列与等比数列求和的知识分析贷款还款问题",
+        "能从推荐课题中选出问题并设计可行的探究方案"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "msj_h022_q1",
+          "topicId": "msj_h022",
+          "prompt": "开展一个数学建模活动，第一步应当做什么？",
+          "question": "开展一个数学建模活动，第一步应当做什么？",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "建模的第一步是理解问题，先弄清要解决什么问题、有哪些已知条件和数据，再考虑如何简化和假设。",
+          "options": [
+            {
+              "label": "A",
+              "text": "理解问题，弄清要解决什么"
+            },
+            {
+              "label": "B",
+              "text": "先把结论写出来"
+            },
+            {
+              "label": "C",
+              "text": "先做结果检验"
+            },
+            {
+              "label": "D",
+              "text": "先背熟公式"
+            }
+          ]
+        },
+        {
+          "id": "msj_h022_q2",
+          "topicId": "msj_h022",
+          "prompt": "案例1比较两种还贷方式后得出的结论是什么？",
+          "question": "案例1比较两种还贷方式后得出的结论是什么？",
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "案例1算出的结果显示，在贷款利率不变的前提下，两种还款方式贷款人所付的利息总额相同，区别只在每期还款额的分布上。",
+          "options": [
+            {
+              "label": "A",
+              "text": "等额本金还贷的利息较少"
+            },
+            {
+              "label": "B",
+              "text": "等额本息还贷的利息较少"
+            },
+            {
+              "label": "C",
+              "text": "两种还贷方式所付利息相同"
+            },
+            {
+              "label": "D",
+              "text": "两种方式无法比较"
+            }
+          ]
+        },
+        {
+          "id": "msj_h022_q3",
+          "topicId": "msj_h022",
+          "prompt": "某笔贷款采用等额本息方式，每月末固定还1655.42元，240期还清，那么这240期的还款合计是多少元？",
+          "question": "某笔贷款采用等额本息方式，每月末固定还1655.42元，240期还清，那么这240期的还款合计是多少元？",
+          "answer": 397300.8,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "还款合计等于每期还款额乘期数，即1655.42乘240，结果是397300.8元，它比本金多出的部分就是利息。",
+          "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 1655.42}, {\"type\": \"num\", \"value\": 240}]}"
+        },
+        {
+          "id": "msj_h022_q4",
+          "topicId": "msj_h022",
+          "prompt": "在贷款案例中把月利率取为年利率除以12，这条假设的主要作用是什么？",
+          "question": "在贷款案例中把月利率取为年利率除以12，这条假设的主要作用是什么？",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "这条假设把每月的利息率固定下来，使各月还款可以看成一个等比数列的求和，从而能直接套用等比数列前n项和公式算出月供。",
+          "options": [
+            {
+              "label": "A",
+              "text": "增加计算的难度"
+            },
+            {
+              "label": "B",
+              "text": "使问题可以用等比数列模型计算"
+            },
+            {
+              "label": "C",
+              "text": "让结果更加精确"
+            },
+            {
+              "label": "D",
+              "text": "说明银行的规定"
+            }
+          ]
+        },
+        {
+          "id": "msj_h022_q5",
+          "topicId": "msj_h022",
+          "prompt": "课题推荐中要求研究斐波那契数列，它的前两项都是1，从第3项起每一项等于前两项之和，这个数列的第6项等于多少？",
+          "question": "课题推荐中要求研究斐波那契数列，它的前两项都是1，从第3项起每一项等于前两项之和，这个数列的第6项等于多少？",
+          "answer": "8",
+          "type": "fill",
+          "difficulty": "hard",
+          "explanation": "按递推关系依次写出各项：第1项1，第2项1，第3项2，第4项3，第5项5，第6项8，所以第6项等于8。"
+        }
+      ]
+    }
+  ],
+  "lesson_points": [
+    {
+      "id": "msj_h1079",
+      "page": 133,
+      "description": "数列是按一定次序排列的一列数，每个数叫作这个数列的项，第一个数叫首项；项数有限的是有穷数列，项数无限的是无穷数列。数列可以用通项公式、递推公式、列表或图象给出，也可以看成定义在正整数集上的函数。",
+      "mastery_criteria": [
+        "能说出数列、项、首项的含义，会区分有穷数列与无穷数列",
+        "会根据通项公式或递推公式写出数列的前几项",
+        "能由前n项和求通项，知道n等于1时要单独计算"
+      ],
+      "misconceptions": [
+        "把集合中数的排列当成数列，忽略项的先后次序",
+        "认为数列的各项必须互不相同",
+        "由前n项和求通项时忘记n等于1要单独验证",
+        "认为数列的图象是一条连续的曲线"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "msj_h1079_q1",
+          "topicId": "msj_h1079",
+          "prompt": "数列1，3，5，7，9中排在第3位的项是多少？",
+          "question": "数列1，3，5，7，9中排在第3位的项是多少？",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "数列中按次序数下去，第1项是1，第2项是3，第3项是5，所以第3项是5。",
+          "options": [
+            {
+              "label": "A",
+              "text": "5"
+            },
+            {
+              "label": "B",
+              "text": "3"
+            },
+            {
+              "label": "C",
+              "text": "7"
+            },
+            {
+              "label": "D",
+              "text": "9"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1079_q2",
+          "topicId": "msj_h1079",
+          "prompt": "下面哪个数列是有穷数列？",
+          "question": "下面哪个数列是有穷数列？",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "1，2，3，4，5只有5项，项数有限，是有穷数列；所有正偶数和所有质数都写不完，1，1/2，1/3，1/4，…也写不完，都是无穷数列。",
+          "options": [
+            {
+              "label": "A",
+              "text": "所有正偶数按从小到大的顺序排列"
+            },
+            {
+              "label": "B",
+              "text": "1，2，3，4，5"
+            },
+            {
+              "label": "C",
+              "text": "所有质数按从小到大的顺序排列"
+            },
+            {
+              "label": "D",
+              "text": "1，1/2，1/3，1/4，…"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1079_q3",
+          "topicId": "msj_h1079",
+          "prompt": "已知数列的通项公式为第n项等于2n加3，求它的第10项。",
+          "question": "已知数列的通项公式为第n项等于2n加3，求它的第10项。",
+          "answer": 23,
+          "type": "numeric",
+          "difficulty": "basic",
+          "explanation": "把n等于10代入通项公式，2乘10得20，再加3得到23。",
+          "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 10}]}, {\"type\": \"num\", \"value\": 3}]}"
+        },
+        {
+          "id": "msj_h1079_q4",
+          "topicId": "msj_h1079",
+          "prompt": "已知数列首项为1，且从第2项起每一项都比前一项大2，这个数列的前4项依次是？",
+          "question": "已知数列首项为1，且从第2项起每一项都比前一项大2，这个数列的前4项依次是？",
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "按递推关系逐项写出，首项1，第2项1加2得3，第3项3加2得5，第4项5加2得7，所以前4项是1，3，5，7。",
+          "options": [
+            {
+              "label": "A",
+              "text": "1，2，3，4"
+            },
+            {
+              "label": "B",
+              "text": "1，3，5，9"
+            },
+            {
+              "label": "C",
+              "text": "1，3，5，7"
+            },
+            {
+              "label": "D",
+              "text": "2，4，6，8"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1079_q5",
+          "topicId": "msj_h1079",
+          "prompt": "已知数列前n项和等于n的平方，求这个数列的第3项。",
+          "question": "已知数列前n项和等于n的平方，求这个数列的第3项。",
+          "answer": 5,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "第3项等于前3项和减去前2项和，9减4等于5。",
+          "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}]}"
+        },
+        {
+          "id": "msj_h1079_q6",
+          "topicId": "msj_h1079",
+          "prompt": "已知数列首项为1，且后一项等于前一项的2倍再加1，求这个数列的第4项。",
+          "question": "已知数列首项为1，且后一项等于前一项的2倍再加1，求这个数列的第4项。",
+          "answer": "15",
+          "type": "fill",
+          "difficulty": "standard",
+          "explanation": "逐项推算：首项1，第2项1乘2加1得3，第3项3乘2加1得7，第4项7乘2加1得15。"
+        },
+        {
+          "id": "msj_h1079_q7",
+          "topicId": "msj_h1079",
+          "prompt": "已知数列的前n项和等于n的平方加1，求它的第2项。",
+          "question": "已知数列的前n项和等于n的平方加1，求它的第2项。",
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "第2项等于前2项和减去前1项和，前2项和是4加1得5，前1项和是1加1得2，所以第2项是3。",
+          "options": [
+            {
+              "label": "A",
+              "text": "1"
+            },
+            {
+              "label": "B",
+              "text": "2"
+            },
+            {
+              "label": "C",
+              "text": "4"
+            },
+            {
+              "label": "D",
+              "text": "3"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1079_q8",
+          "topicId": "msj_h1079",
+          "prompt": "数列的通项公式为第n项等于n的平方减8n加5，这个数列中最小的项是第几项？",
+          "question": "数列的通项公式为第n项等于n的平方减8n加5，这个数列中最小的项是第几项？",
+          "answer": "4",
+          "type": "fill",
+          "difficulty": "hard",
+          "explanation": "把这个式子配方成n减4的平方再减11，当n等于4时取得最小值负11，所以最小的项是第4项。"
+        }
+      ]
+    },
+    {
+      "id": "msj_h1080",
+      "page": 140,
+      "description": "等差数列从第2项起，每一项与它的前一项的差都等于同一个常数，这个常数叫公差。通项公式是首项加上项数减1个公差，前n项和等于项数乘首项与末项和的一半，也可写成项数乘首项再加项数乘积的一半乘公差。三个数成等差数列时，中间的数叫等差中项。",
+      "mastery_criteria": [
+        "会用定义判断等差数列并求出公差",
+        "能用通项公式与前n项和公式求首项、公差和项数",
+        "会用等差中项和下标和性质简化计算"
+      ],
+      "misconceptions": [
+        "求公差时把相邻两项的差算反了符号",
+        "把通项公式写成首项加n个公差，多算了一项",
+        "求和时把首项漏掉，或者把末项多算一项",
+        "认为等差数列中任意两项之和都相等，不注意下标条件"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "msj_h1080_q1",
+          "topicId": "msj_h1080",
+          "prompt": "下面哪个数列是等差数列？",
+          "question": "下面哪个数列是等差数列？",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "2，5，8，11相邻两项的差都是3，是等差数列；1，2，4，8的差在变化；1，1/2，1/3，1/4的差也不相等；1，负1，1，负1的差正负交替。",
+          "options": [
+            {
+              "label": "A",
+              "text": "1，2，4，8"
+            },
+            {
+              "label": "B",
+              "text": "2，5，8，11"
+            },
+            {
+              "label": "C",
+              "text": "1，1/2，1/3，1/4"
+            },
+            {
+              "label": "D",
+              "text": "1，负1，1，负1"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1080_q2",
+          "topicId": "msj_h1080",
+          "prompt": "等差数列的首项为5，公差为3，求它的第8项。",
+          "question": "等差数列的首项为5，公差为3，求它的第8项。",
+          "answer": 26,
+          "type": "numeric",
+          "difficulty": "basic",
+          "explanation": "由通项公式，第8项等于首项加上项数减1个公差，即5加7乘3，等于5加21，结果是26。",
+          "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 7}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"num\", \"value\": 5}]}"
+        },
+        {
+          "id": "msj_h1080_q3",
+          "topicId": "msj_h1080",
+          "prompt": "等差数列4，7，10，13，…的公差是多少？",
+          "question": "等差数列4，7，10，13，…的公差是多少？",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "公差等于后一项减前一项，7减4等于3，10减7也等于3，所以公差是3。",
+          "options": [
+            {
+              "label": "A",
+              "text": "3"
+            },
+            {
+              "label": "B",
+              "text": "4"
+            },
+            {
+              "label": "C",
+              "text": "7"
+            },
+            {
+              "label": "D",
+              "text": "10"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1080_q4",
+          "topicId": "msj_h1080",
+          "prompt": "等差数列中第3项为7，第7项为19，求这个数列的公差。",
+          "question": "等差数列中第3项为7，第7项为19，求这个数列的公差。",
+          "answer": 3,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "第7项与第3项相差4个公差，19减7得12，12除以4等于3，所以公差是3。",
+          "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 19}, {\"type\": \"num\", \"value\": 7}]}, {\"type\": \"num\", \"value\": 4}]}"
+        },
+        {
+          "id": "msj_h1080_q5",
+          "topicId": "msj_h1080",
+          "prompt": "等差数列中首项为2，第9项为18，求它的前9项和。",
+          "question": "等差数列中首项为2，第9项为18，求它的前9项和。",
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "前9项和等于9乘首项与末项和的一半，即9乘20再除以2，结果是90。",
+          "options": [
+            {
+              "label": "A",
+              "text": "81"
+            },
+            {
+              "label": "B",
+              "text": "99"
+            },
+            {
+              "label": "C",
+              "text": "90"
+            },
+            {
+              "label": "D",
+              "text": "180"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1080_q6",
+          "topicId": "msj_h1080",
+          "prompt": "在3和15之间插入一个数，使这三个数成等差数列，这个数是多少？",
+          "question": "在3和15之间插入一个数，使这三个数成等差数列，这个数是多少？",
+          "answer": 9,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "插入的数就是3与15的等差中项，等于两数之和的一半，3加15得18，18除以2等于9。",
+          "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 15}]}, {\"type\": \"num\", \"value\": 2}]}"
+        },
+        {
+          "id": "msj_h1080_q7",
+          "topicId": "msj_h1080",
+          "prompt": "等差数列中第2项与第8项的和为20，那么它的第5项等于多少？",
+          "question": "等差数列中第2项与第8项的和为20，那么它的第5项等于多少？",
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "第2项与第8项的下标之和是10，第5项的下标是5，两倍第5项等于第2项与第8项之和，所以第5项是10。",
+          "options": [
+            {
+              "label": "A",
+              "text": "5"
+            },
+            {
+              "label": "B",
+              "text": "8"
+            },
+            {
+              "label": "C",
+              "text": "12"
+            },
+            {
+              "label": "D",
+              "text": "10"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1080_q8",
+          "topicId": "msj_h1080",
+          "prompt": "等差数列的前n项和等于n的平方加2n，求这个数列的第5项。",
+          "question": "等差数列的前n项和等于n的平方加2n，求这个数列的第5项。",
+          "answer": 11,
+          "type": "numeric",
+          "difficulty": "hard",
+          "explanation": "第5项等于前5项和减去前4项和，前5项和是25加10得35，前4项和是16加8得24，所以第5项是11。",
+          "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 5}]}]}, {\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 4}]}]}]}"
+        }
+      ]
+    },
+    {
+      "id": "msj_h1081",
+      "page": 155,
+      "description": "等比数列从第2项起，每一项与它的前一项的比都等于同一个常数，这个常数叫公比，公比不能为0，各项也不能为0。通项公式是首项乘公比的项数减1次方；前n项和当公比不等于1时等于首项乘1减公比的n次方，再除以1减公比。三个数成等比数列时，中间的数叫等比中项。",
+      "mastery_criteria": [
+        "会用定义判断等比数列并求出公比",
+        "能用通项公式求指定项，用前n项和公式求和",
+        "会用等比中项和下标和性质简化计算"
+      ],
+      "misconceptions": [
+        "判断等比数列时不检查各项是否为零",
+        "求和时忘记公比等于1要单独讨论",
+        "把前n项和公式写成除以公比减1，符号弄反",
+        "求等比中项时漏掉负值"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "msj_h1081_q1",
+          "topicId": "msj_h1081",
+          "prompt": "下面哪个数列是等比数列？",
+          "question": "下面哪个数列是等比数列？",
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "2，4，8，16从第2项起每一项与前一项的比都是2，是等比数列；1，2，3，4和1，3，5，7是等差数列；1，4，9，16相邻项的比不相等。",
+          "options": [
+            {
+              "label": "A",
+              "text": "1，2，3，4"
+            },
+            {
+              "label": "B",
+              "text": "1，3，5，7"
+            },
+            {
+              "label": "C",
+              "text": "1，4，9，16"
+            },
+            {
+              "label": "D",
+              "text": "2，4，8，16"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1081_q2",
+          "topicId": "msj_h1081",
+          "prompt": "等比数列的首项为3，公比为2，求它的第5项。",
+          "question": "等比数列的首项为3，公比为2，求它的第5项。",
+          "answer": 48,
+          "type": "numeric",
+          "difficulty": "basic",
+          "explanation": "第5项等于首项乘公比的4次方，2的4次方是16，3乘16等于48。",
+          "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 4}]}]}"
+        },
+        {
+          "id": "msj_h1081_q3",
+          "topicId": "msj_h1081",
+          "prompt": "等比数列1，负2，4，负8，…的公比是多少？",
+          "question": "等比数列1，负2，4，负8，…的公比是多少？",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "公比等于后一项除以前一项，负2除以1得负2，4除以负2也得负2，所以公比是负2。",
+          "options": [
+            {
+              "label": "A",
+              "text": "负2"
+            },
+            {
+              "label": "B",
+              "text": "2"
+            },
+            {
+              "label": "C",
+              "text": "负1/2"
+            },
+            {
+              "label": "D",
+              "text": "1/2"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1081_q4",
+          "topicId": "msj_h1081",
+          "prompt": "等比数列的首项为1，公比为3，求它的前5项和。",
+          "question": "等比数列的首项为1，公比为3，求它的前5项和。",
+          "answer": 121,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "前5项和等于1乘1减3的5次方的差，再除以1减3。3的5次方是243，242除以2等于121。",
+          "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 5}]}, {\"type\": \"num\", \"value\": 1}]}, {\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 1}]}]}"
+        },
+        {
+          "id": "msj_h1081_q5",
+          "topicId": "msj_h1081",
+          "prompt": "等比数列3，6，12，…的前6项和等于多少？",
+          "question": "等比数列3，6，12，…的前6项和等于多少？",
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "首项3，公比2，前6项和等于3乘1减2的6次方的差再除以1减2，即3乘63等于189。",
+          "options": [
+            {
+              "label": "A",
+              "text": "96"
+            },
+            {
+              "label": "B",
+              "text": "192"
+            },
+            {
+              "label": "C",
+              "text": "189"
+            },
+            {
+              "label": "D",
+              "text": "381"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1081_q6",
+          "topicId": "msj_h1081",
+          "prompt": "求2与8的等比中项（取正值）。",
+          "question": "求2与8的等比中项（取正值）。",
+          "answer": "4",
+          "type": "fill",
+          "difficulty": "standard",
+          "explanation": "等比中项的平方等于两个数的乘积，2乘8得16，取正值开方得4。"
+        },
+        {
+          "id": "msj_h1081_q7",
+          "topicId": "msj_h1081",
+          "prompt": "在等比数列中，第3项为4，第5项为16，且各项均为正数，那么第4项等于多少？",
+          "question": "在等比数列中，第3项为4，第5项为16，且各项均为正数，那么第4项等于多少？",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "第4项的平方等于第3项与第5项的乘积，4乘16得64，各项为正，所以第4项是8。",
+          "options": [
+            {
+              "label": "A",
+              "text": "6"
+            },
+            {
+              "label": "B",
+              "text": "8"
+            },
+            {
+              "label": "C",
+              "text": "10"
+            },
+            {
+              "label": "D",
+              "text": "12"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1081_q8",
+          "topicId": "msj_h1081",
+          "prompt": "等比数列的首项为1，公比为2，求它的前6项和。",
+          "question": "等比数列的首项为1，公比为2，求它的前6项和。",
+          "answer": 63,
+          "type": "numeric",
+          "difficulty": "hard",
+          "explanation": "前6项和等于1乘1减2的6次方的差，再除以1减2。2的6次方是64，1减64得负63，除以负1得63。",
+          "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 6}]}, {\"type\": \"num\", \"value\": 1}]}, {\"type\": \"num\", \"value\": 1}]}"
+        }
+      ]
+    },
+    {
+      "id": "msj_h1082",
+      "page": 170,
+      "description": "数学归纳法用来证明与正整数有关的命题，分两步：第一步证明当n取第一个值（通常是1）时命题成立；第二步假设n等于k时命题成立，推出n等于k加1时命题也成立。第一步是论证的基础，第二步保证命题能不断递推下去，两步缺一不可。",
+      "mastery_criteria": [
+        "能说出数学归纳法的两个步骤和各自的作用",
+        "会用数学归纳法证明与正整数有关的恒等式",
+        "能找出证明过程中缺少归纳假设或缺少奠基的错误"
+      ],
+      "misconceptions": [
+        "只用n等于1，2，3验证几个特殊值就下结论",
+        "第二步证明时没有使用归纳假设",
+        "把n等于k加1时要证明的结论当成已知条件使用",
+        "认为第一步必须验证n等于1，特殊命题可以从别的正整数开始"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "msj_h1082_q1",
+          "topicId": "msj_h1082",
+          "prompt": "用数学归纳法证明一个与正整数n有关的命题，第一步要做的是什么？",
+          "question": "用数学归纳法证明一个与正整数n有关的命题，第一步要做的是什么？",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "第一步是归纳奠基，验证n取第一个值时命题成立，为后面的递推提供起点。",
+          "options": [
+            {
+              "label": "A",
+              "text": "验证n取第一个值时命题成立"
+            },
+            {
+              "label": "B",
+              "text": "假设n等于k时命题成立"
+            },
+            {
+              "label": "C",
+              "text": "直接写出n等于k加1时的结论"
+            },
+            {
+              "label": "D",
+              "text": "只讨论n为偶数的情况"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1082_q2",
+          "topicId": "msj_h1082",
+          "prompt": "数学归纳法第二步中，假设n等于k时命题成立这句话的作用是什么？",
+          "question": "数学归纳法第二步中，假设n等于k时命题成立这句话的作用是什么？",
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "这句话是归纳假设，它是推出n等于k加1时命题也成立的依据，没有它递推就无法进行。",
+          "options": [
+            {
+              "label": "A",
+              "text": "证明n等于1时命题成立"
+            },
+            {
+              "label": "B",
+              "text": "说明命题有无穷多个"
+            },
+            {
+              "label": "C",
+              "text": "作为推出下一步成立的依据"
+            },
+            {
+              "label": "D",
+              "text": "用来检验特殊情况"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1082_q3",
+          "topicId": "msj_h1082",
+          "prompt": "用数学归纳法证明1加3加5加…加2n减1等于n的平方时，从n等于k到n等于k加1，左边需要添加的项是哪一项？",
+          "question": "用数学归纳法证明1加3加5加…加2n减1等于n的平方时，从n等于k到n等于k加1，左边需要添加的项是哪一项？",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "n等于k时左边最后一项是2k减1，n等于k加1时最后一项是2乘k加1再减1，即2k加1，所以添加的项是2k加1。",
+          "options": [
+            {
+              "label": "A",
+              "text": "2k减1"
+            },
+            {
+              "label": "B",
+              "text": "2k加1"
+            },
+            {
+              "label": "C",
+              "text": "2k加3"
+            },
+            {
+              "label": "D",
+              "text": "k加1"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1082_q4",
+          "topicId": "msj_h1082",
+          "prompt": "有人证明2加4加6加…加2n等于n的平方加n加1时，只做了归纳递推而没有验证n等于1，这个证明错在哪里？",
+          "question": "有人证明2加4加6加…加2n等于n的平方加n加1时，只做了归纳递推而没有验证n等于1，这个证明错在哪里？",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "缺少第一步的归纳奠基。实际上n等于1时左边是2，右边是3，等式根本不成立，所以命题本身是错的。",
+          "options": [
+            {
+              "label": "A",
+              "text": "缺少第一步的验证，而且命题对n等于1不成立"
+            },
+            {
+              "label": "B",
+              "text": "归纳假设用错了"
+            },
+            {
+              "label": "C",
+              "text": "第二步的结论写错了"
+            },
+            {
+              "label": "D",
+              "text": "证明没有错误"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1082_q5",
+          "topicId": "msj_h1082",
+          "prompt": "若命题P(1)与P(2)都成立，且由P(k)可以推出P(k加2)，能断言P(n)对一切正整数n都成立吗？",
+          "question": "若命题P(1)与P(2)都成立，且由P(k)可以推出P(k加2)，能断言P(n)对一切正整数n都成立吗？",
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "不能。这样的递推只能在奇数项之间、偶数项之间各自传递，只能保证两类分别成立，必须由P(k)推出P(k加1)才行。",
+          "options": [
+            {
+              "label": "A",
+              "text": "能，因为起点有两个"
+            },
+            {
+              "label": "B",
+              "text": "能，因为递推可以无限进行"
+            },
+            {
+              "label": "C",
+              "text": "不能，只能保证奇数项或偶数项中的一类成立"
+            },
+            {
+              "label": "D",
+              "text": "与数学归纳法无关"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1082_q6",
+          "topicId": "msj_h1082",
+          "prompt": "用数学归纳法证明1加2加3加…加n等于n乘n加1再除以2，当n等于4时等式左边与右边的值都等于多少？",
+          "question": "用数学归纳法证明1加2加3加…加n等于n乘n加1再除以2，当n等于4时等式左边与右边的值都等于多少？",
+          "answer": 10,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "左边是1加2加3加4等于10，右边是4乘5除以2也等于10，两边相等。",
+          "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 5}]}, {\"type\": \"num\", \"value\": 2}]}"
+        },
+        {
+          "id": "msj_h1082_q7",
+          "topicId": "msj_h1082",
+          "prompt": "用数学归纳法证明1加2加2的平方加…加2的n减1次方等于2的n次方减1，验证n等于1时左边等于多少？",
+          "question": "用数学归纳法证明1加2加2的平方加…加2的n减1次方等于2的n次方减1，验证n等于1时左边等于多少？",
+          "answer": "1",
+          "type": "fill",
+          "difficulty": "standard",
+          "explanation": "n等于1时左边只有1这一项，右边是2的1次方减1也等于1，两边相等，奠基成立。"
+        },
+        {
+          "id": "msj_h1082_q8",
+          "topicId": "msj_h1082",
+          "prompt": "为什么数学归纳法的两个步骤缺一不可？",
+          "question": "为什么数学归纳法的两个步骤缺一不可？",
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "只有第一步，只能说明有限几个值成立，不能保证往后都成立；只有第二步，递推没有起点，等于什么都没证。所以奠基与递推必须同时具备。",
+          "options": [
+            {
+              "label": "A",
+              "text": "因为第一步比第二步重要"
+            },
+            {
+              "label": "B",
+              "text": "因为第二步可以从任意n开始"
+            },
+            {
+              "label": "C",
+              "text": "因为两步证明的是同一个结论"
+            },
+            {
+              "label": "D",
+              "text": "因为第一步提供起点，第二步保证递推能一直进行"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "msj_h1083",
+      "page": 177,
+      "description": "数列的转化研究形如后一项等于p乘前一项再加q的递推关系，其中p不等于1、q不等于0。设法把递推式写成后一项加t等于p乘前一项加t的形式，求出t等于q除以p减1，就能把原数列转化为等比数列，先求新数列的通项，再回到原数列。",
+      "mastery_criteria": [
+        "会把后一项等于p乘前一项加q的递推式转化为等比数列",
+        "会求出转化后的首项与公比并写出通项",
+        "知道斐波那契数列的递推关系及它的前几项"
+      ],
+      "misconceptions": [
+        "直接把原数列当成等比数列，忽略常数项q",
+        "构造时把t算成q除以p加1",
+        "转化后仍用首项a1当作新数列的首项，忘记加上t",
+        "把斐波那契数列当成等比数列来处理"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "msj_h1083_q1",
+          "topicId": "msj_h1083",
+          "prompt": "已知首项为1，且后一项等于前一项的2倍再加1，若把递推式写成后一项加t等于2乘前一项加t，那么t等于多少？",
+          "question": "已知首项为1，且后一项等于前一项的2倍再加1，若把递推式写成后一项加t等于2乘前一项加t，那么t等于多少？",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "展开右边得2乘前一项加2t，与左边比较常数项，得t等于2t减1，所以t等于1；也可直接用结论，t等于q除以(p减1)，即1除以1得1。",
+          "options": [
+            {
+              "label": "A",
+              "text": "1"
+            },
+            {
+              "label": "B",
+              "text": "2"
+            },
+            {
+              "label": "C",
+              "text": "负1"
+            },
+            {
+              "label": "D",
+              "text": "1/2"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1083_q2",
+          "topicId": "msj_h1083",
+          "prompt": "接上题，数列各项加1后得到的新数列是等比数列，它的首项是多少？",
+          "question": "接上题，数列各项加1后得到的新数列是等比数列，它的首项是多少？",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "新数列的第1项等于首项加1，即1加1得2，公比是2，所以首项为2。",
+          "options": [
+            {
+              "label": "A",
+              "text": "1"
+            },
+            {
+              "label": "B",
+              "text": "2"
+            },
+            {
+              "label": "C",
+              "text": "3"
+            },
+            {
+              "label": "D",
+              "text": "4"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1083_q3",
+          "topicId": "msj_h1083",
+          "prompt": "已知首项为1，后一项等于前一项的2倍再加1，转化后得到第n项等于2的n次方减1，求第4项。",
+          "question": "已知首项为1，后一项等于前一项的2倍再加1，转化后得到第n项等于2的n次方减1，求第4项。",
+          "answer": 15,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "把n等于4代入通项，2的4次方是16，减1得15，与逐项推算的结果一致。",
+          "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 4}]}, {\"type\": \"num\", \"value\": 1}]}"
+        },
+        {
+          "id": "msj_h1083_q4",
+          "topicId": "msj_h1083",
+          "prompt": "已知首项为2，且后一项等于前一项的3倍再加2，把它写成后一项加t等于3乘前一项加t，那么t等于多少？",
+          "question": "已知首项为2，且后一项等于前一项的3倍再加2，把它写成后一项加t等于3乘前一项加t，那么t等于多少？",
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "展开右边得3乘前一项加3t，比较常数项得t等于3t减2，所以t等于1；也可直接用结论，t等于q除以(p减1)，即2除以2得1。",
+          "options": [
+            {
+              "label": "A",
+              "text": "2"
+            },
+            {
+              "label": "B",
+              "text": "3"
+            },
+            {
+              "label": "C",
+              "text": "1"
+            },
+            {
+              "label": "D",
+              "text": "负1"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1083_q5",
+          "topicId": "msj_h1083",
+          "prompt": "接上题，各项加1后得到首项为3、公比为3的等比数列，求原数列的第3项。",
+          "question": "接上题，各项加1后得到首项为3、公比为3的等比数列，求原数列的第3项。",
+          "answer": 26,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "新数列第3项等于3乘3的平方，即27，所以原数列第3项是27减1等于26。",
+          "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"num\", \"value\": 1}]}"
+        },
+        {
+          "id": "msj_h1083_q6",
+          "topicId": "msj_h1083",
+          "prompt": "斐波那契数列的前两项都是1，从第3项起每一项等于前两项之和，那么它的第7项等于多少？",
+          "question": "斐波那契数列的前两项都是1，从第3项起每一项等于前两项之和，那么它的第7项等于多少？",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "按递推关系依次写出各项：第1项1，第2项1，第3项2，第4项3，第5项5，第6项8，第7项13，所以第7项等于13。",
+          "options": [
+            {
+              "label": "A",
+              "text": "8"
+            },
+            {
+              "label": "B",
+              "text": "13"
+            },
+            {
+              "label": "C",
+              "text": "21"
+            },
+            {
+              "label": "D",
+              "text": "34"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1083_q7",
+          "topicId": "msj_h1083",
+          "prompt": "把后一项等于前一项的2倍再加3转化为等比数列，正确的设法是哪一个？",
+          "question": "把后一项等于前一项的2倍再加3转化为等比数列，正确的设法是哪一个？",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "设后一项加t等于2乘前一项加t，比较常数项得t等于3，所以应设后一项加3等于2乘前一项加3，这样新数列才是等比数列。",
+          "options": [
+            {
+              "label": "A",
+              "text": "后一项加3等于2乘前一项加3"
+            },
+            {
+              "label": "B",
+              "text": "后一项减3等于2乘前一项减3"
+            },
+            {
+              "label": "C",
+              "text": "后一项加2等于2乘前一项加2"
+            },
+            {
+              "label": "D",
+              "text": "这个递推式无法转化"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1083_q8",
+          "topicId": "msj_h1083",
+          "prompt": "已知首项为3，后一项等于前一项的2倍再减1，转化后得到第n项减1是首项为2、公比为2的等比数列，求第3项。",
+          "question": "已知首项为3，后一项等于前一项的2倍再减1，转化后得到第n项减1是首项为2、公比为2的等比数列，求第3项。",
+          "answer": "9",
+          "type": "fill",
+          "difficulty": "hard",
+          "explanation": "新数列第3项等于2乘2的平方得8，所以原数列第3项是8加1等于9，与逐项推算3，5，9一致。"
+        }
+      ]
+    },
+    {
+      "id": "msj_h1084",
+      "page": 180,
+      "description": "本章回顾把数列的概念、等差数列与等比数列的通项公式和前n项和、数学归纳法串成一个整体。复习题里既有三边成等差数列的直角三角形、九章算术中的竹九节等综合问题，也有逐年续存与五年定期的存款收益比较，需要在具体情境中选对模型再计算。",
+      "mastery_criteria": [
+        "能综合运用等差、等比数列的公式解决几何与实际问题",
+        "会由前n项和求通项，会处理首项与公差、公比的方程组",
+        "能在存款、竹节等情境中建立数列模型并解释结果"
+      ],
+      "misconceptions": [
+        "看到三条边成等差数列就默认最短边是1",
+        "在存款问题中把单利和复利混用",
+        "解方程组求首项与公差时符号出错",
+        "把前n项和公式与通项公式代错位置"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "msj_h1084_q1",
+          "topicId": "msj_h1084",
+          "prompt": "若直角三角形的三条边长组成公差为3的等差数列，那么三边长可能是下面哪一组？",
+          "question": "若直角三角形的三条边长组成公差为3的等差数列，那么三边长可能是下面哪一组？",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "设三边为a减3，a，a加3，由勾股定理得a减3的平方加a的平方等于a加3的平方，解得a等于12，三边为9，12，15。",
+          "options": [
+            {
+              "label": "A",
+              "text": "5，8，11"
+            },
+            {
+              "label": "B",
+              "text": "9，12，15"
+            },
+            {
+              "label": "C",
+              "text": "10，13，16"
+            },
+            {
+              "label": "D",
+              "text": "15，18，21"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1084_q2",
+          "topicId": "msj_h1084",
+          "prompt": "等差数列中首项为2，前5项和为40，求它的第5项。",
+          "question": "等差数列中首项为2，前5项和为40，求它的第5项。",
+          "answer": 14,
+          "type": "numeric",
+          "difficulty": "basic",
+          "explanation": "前5项和等于5乘首项与第5项和的一半，所以首项与第5项之和为16，第5项等于16减2得14。",
+          "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 40}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 5}]}, {\"type\": \"num\", \"value\": 2}]}"
+        },
+        {
+          "id": "msj_h1084_q3",
+          "topicId": "msj_h1084",
+          "prompt": "甲把1万元存5年定期，年利率2.88%；乙把1万元存1年定期，年利率2.55%，每年到期把本息续存一年。5年后谁的收益较多？",
+          "question": "甲把1万元存5年定期，年利率2.88%；乙把1万元存1年定期，年利率2.55%，每年到期把本息续存一年。5年后谁的收益较多？",
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "甲5年后本息为1万乘1加5乘2.88%的和，是11440元；乙按复利计算为1万乘1.0255的5次方，约11341元，所以甲的收益较多。",
+          "options": [
+            {
+              "label": "A",
+              "text": "乙较多"
+            },
+            {
+              "label": "B",
+              "text": "两人一样多"
+            },
+            {
+              "label": "C",
+              "text": "无法比较"
+            },
+            {
+              "label": "D",
+              "text": "甲较多"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1084_q4",
+          "topicId": "msj_h1084",
+          "prompt": "等差数列中第4项与第7项的和为37，求它的前10项和。",
+          "question": "等差数列中第4项与第7项的和为37，求它的前10项和。",
+          "answer": 185,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "首项与第10项之和等于第4项与第7项之和，都是37，前10项和等于10乘37再除以2，得185。",
+          "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 37}]}"
+        },
+        {
+          "id": "msj_h1084_q5",
+          "topicId": "msj_h1084",
+          "prompt": "数列的前n项和等于n的平方加2n，那么这个数列的首项等于多少？",
+          "question": "数列的前n项和等于n的平方加2n，那么这个数列的首项等于多少？",
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "首项等于前1项和，把n等于1代入得1加2等于3，注意首项不能套用后项减前项的公式。",
+          "options": [
+            {
+              "label": "A",
+              "text": "1"
+            },
+            {
+              "label": "B",
+              "text": "2"
+            },
+            {
+              "label": "C",
+              "text": "3"
+            },
+            {
+              "label": "D",
+              "text": "4"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1084_q6",
+          "topicId": "msj_h1084",
+          "prompt": "等差数列中首项为1，且前3项和等于前11项和，求它的前14项和。",
+          "question": "等差数列中首项为1，且前3项和等于前11项和，求它的前14项和。",
+          "answer": 0,
+          "type": "numeric",
+          "difficulty": "hard",
+          "explanation": "由前3项和与前11项和相等，得3加3d等于11加55d，解得公差为负2/13；前14项和等于14加91乘负2/13，结果为0。",
+          "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 14}, {\"type\": \"num\", \"value\": 1}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 91}, {\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": -2}, {\"type\": \"num\", \"value\": 13}]}]}]}"
+        },
+        {
+          "id": "msj_h1084_q7",
+          "topicId": "msj_h1084",
+          "prompt": "等比数列的前3项和为7，前6项和为63，且公比不等于1，那么这个数列的公比是多少？",
+          "question": "等比数列的前3项和为7，前6项和为63，且公比不等于1，那么这个数列的公比是多少？",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "前6项和除以前3项和等于1加公比的3次方，63除以7得9，所以公比的3次方等于8，公比为2。",
+          "options": [
+            {
+              "label": "A",
+              "text": "2"
+            },
+            {
+              "label": "B",
+              "text": "3"
+            },
+            {
+              "label": "C",
+              "text": "4"
+            },
+            {
+              "label": "D",
+              "text": "8"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1084_q8",
+          "topicId": "msj_h1084",
+          "prompt": "数列首项为1，且后一项减前一项等于2n，求这个数列的第4项。",
+          "question": "数列首项为1，且后一项减前一项等于2n，求这个数列的第4项。",
+          "answer": "13",
+          "type": "fill",
+          "difficulty": "hard",
+          "explanation": "逐项推算：第2项是1加2得3，第3项是3加4得7，第4项是7加6得13。"
+        }
+      ]
+    },
+    {
+      "id": "msj_h1085",
+      "page": 183,
+      "description": "本章测试综合检查数列这一章的学习情况，题目涉及等差数列与等比数列的基本量计算、由前n项和求通项、分段给出的数列、等比中项与产值增长等实际应用，需要在限定时间内完成并保证运算准确。",
+      "mastery_criteria": [
+        "能熟练求出等差、等比数列的首项、公差、公比与指定项",
+        "会处理由前n项和、分段形式给出的数列问题",
+        "能在增长率问题中正确套用等比数列的求和模型"
+      ],
+      "misconceptions": [
+        "把分段数列的不同表达式混用",
+        "求公比时只取正值，漏掉负值或开方后的两种可能",
+        "把增长率8%算成1加8",
+        "在求项数解方程时忽略项数必须是正整数"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "msj_h1085_q1",
+          "topicId": "msj_h1085",
+          "prompt": "等差数列中首项为17，公差为负2，求它的第11项。",
+          "question": "等差数列中首项为17，公差为负2，求它的第11项。",
+          "answer": -3,
+          "type": "numeric",
+          "difficulty": "basic",
+          "explanation": "由通项公式，第11项等于首项加上10个公差，即17加10乘负2，也就是17减20，结果是负3。",
+          "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": -2}]}, {\"type\": \"num\", \"value\": 17}]}"
+        },
+        {
+          "id": "msj_h1085_q2",
+          "topicId": "msj_h1085",
+          "prompt": "若三个数3，z，12依次成等比数列，那么z的值是多少？",
+          "question": "若三个数3，z，12依次成等比数列，那么z的值是多少？",
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "等比中项的平方等于两个数的乘积，z的平方等于36，所以z等于6或负6，两值都要保留。",
+          "options": [
+            {
+              "label": "A",
+              "text": "6"
+            },
+            {
+              "label": "B",
+              "text": "负6"
+            },
+            {
+              "label": "C",
+              "text": "6或负6"
+            },
+            {
+              "label": "D",
+              "text": "36"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1085_q3",
+          "topicId": "msj_h1085",
+          "prompt": "等差数列中第3项为1，第7项为7，求它的前5项和。",
+          "question": "等差数列中第3项为1，第7项为7，求它的前5项和。",
+          "answer": "5",
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "由第3项为1、第7项为7求出公差为1.5，首项为负2，第5项为4，前5项和等于5乘括号里负2加4再除以2，结果为5。",
+          "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": -2}, {\"type\": \"num\", \"value\": 4}]}]}, {\"type\": \"num\", \"value\": 2}]}"
+        },
+        {
+          "id": "msj_h1085_q4",
+          "topicId": "msj_h1085",
+          "prompt": "某厂今年的产值为1，从今年起每年产值比上年增长8%，那么第三年的产值是多少（结果保留四位小数）？",
+          "question": "某厂今年的产值为1，从今年起每年产值比上年增长8%，那么第三年的产值是多少（结果保留四位小数）？",
+          "answer": 1.1664,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "第二年是1乘1.08，第三年再乘1.08，所以第三年产值为1.08的平方，等于1.1664。",
+          "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 1.08}, {\"type\": \"num\", \"value\": 2}]}"
+        },
+        {
+          "id": "msj_h1085_q5",
+          "topicId": "msj_h1085",
+          "prompt": "在1和256中间插入3个数，使这5个数成等比数列，那么这个等比数列的公比是多少？",
+          "question": "在1和256中间插入3个数，使这5个数成等比数列，那么这个等比数列的公比是多少？",
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "5个数之间相隔4个公比，公比的4次方等于256，所以公比是4或负4，公比的可能值有两个。",
+          "options": [
+            {
+              "label": "A",
+              "text": "2"
+            },
+            {
+              "label": "B",
+              "text": "负2"
+            },
+            {
+              "label": "C",
+              "text": "4"
+            },
+            {
+              "label": "D",
+              "text": "4或负4"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1085_q6",
+          "topicId": "msj_h1085",
+          "prompt": "数列的前n项和等于n的平方加2n，求它的首项。",
+          "question": "数列的前n项和等于n的平方加2n，求它的首项。",
+          "answer": 3,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "首项就是前1项和，把n等于1代入得3，所以首项是3。",
+          "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 1}]}]}"
+        },
+        {
+          "id": "msj_h1085_q7",
+          "topicId": "msj_h1085",
+          "prompt": "数列中奇数项满足第n项等于2n加1，偶数项满足第n项等于2的n次方，求这个数列第1项与第4项的和。",
+          "question": "数列中奇数项满足第n项等于2n加1，偶数项满足第n项等于2的n次方，求这个数列第1项与第4项的和。",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "第1项是奇数项，等于3；第4项是偶数项，等于2的4次方16；两项之和为19。",
+          "options": [
+            {
+              "label": "A",
+              "text": "15"
+            },
+            {
+              "label": "B",
+              "text": "19"
+            },
+            {
+              "label": "C",
+              "text": "17"
+            },
+            {
+              "label": "D",
+              "text": "21"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1085_q8",
+          "topicId": "msj_h1085",
+          "prompt": "等比数列的连续四项依次是负24，36，负54，81，求这个数列的公比。",
+          "question": "等比数列的连续四项依次是负24，36，负54，81，求这个数列的公比。",
+          "answer": "负3/2",
+          "type": "fill",
+          "difficulty": "hard",
+          "explanation": "把相邻两项相除：36除以负24得负3/2，负54除以36也是负3/2，81除以负54还是负3/2，所以公比为负3/2。"
+        }
+      ]
+    },
+    {
+      "id": "msj_h1086",
+      "page": 187,
+      "description": "平均变化率等于函数值的改变量除以自变量的改变量，它刻画一段区间上变化的快慢。当自变量的改变量无限趋近于0时，平均变化率无限趋近于一个常数，这个常数就是函数在该点处的导数，也叫瞬时变化率；导数的几何意义是曲线在该点处切线的斜率。",
+      "mastery_criteria": [
+        "会计算函数在给定区间上的平均变化率",
+        "理解导数是瞬时变化率，会用定义求简单函数的导数",
+        "知道导数的几何意义是切线斜率，会由切线方程求导数值"
+      ],
+      "misconceptions": [
+        "把平均变化率当成某一点处的导数",
+        "求导时代入点的纵坐标而不是算增量比",
+        "认为切线就是与曲线只有一个公共点的直线",
+        "把导数值误当成切点的纵坐标"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "msj_h1086_q1",
+          "topicId": "msj_h1086",
+          "prompt": "求函数f(x)等于x的平方在从1到3这段区间上的平均变化率。",
+          "question": "求函数f(x)等于x的平方在从1到3这段区间上的平均变化率。",
+          "answer": 4,
+          "type": "numeric",
+          "difficulty": "basic",
+          "explanation": "先算函数值的改变量，3的平方是9，1的平方是1，改变量为8；自变量的改变量为2；8除以2等于4。",
+          "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 2}]}]}, {\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 1}]}]}"
+        },
+        {
+          "id": "msj_h1086_q2",
+          "topicId": "msj_h1086",
+          "prompt": "在平均变化率的计算式子中，分母上的量表示的是什么？",
+          "question": "在平均变化率的计算式子中，分母上的量表示的是什么？",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "平均变化率是函数值的改变量与自变量的改变量之比，分母是自变量的改变量，它表示自变量从起点到终点增加了多少。",
+          "options": [
+            {
+              "label": "A",
+              "text": "自变量的改变量"
+            },
+            {
+              "label": "B",
+              "text": "函数值的改变量"
+            },
+            {
+              "label": "C",
+              "text": "该点处的导数值"
+            },
+            {
+              "label": "D",
+              "text": "切线的斜率"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1086_q3",
+          "topicId": "msj_h1086",
+          "prompt": "函数f(x)在x等于x0处的导数，它的几何意义是什么？",
+          "question": "函数f(x)在x等于x0处的导数，它的几何意义是什么？",
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "导数是割线斜率当自变量改变量趋近于0时的极限，割线趋于切线，所以导数的几何意义是曲线在该点处切线的斜率。",
+          "options": [
+            {
+              "label": "A",
+              "text": "曲线在该点处的函数值"
+            },
+            {
+              "label": "B",
+              "text": "曲线与x轴交点的横坐标"
+            },
+            {
+              "label": "C",
+              "text": "曲线在该点处的最高点"
+            },
+            {
+              "label": "D",
+              "text": "曲线在该点处切线的斜率"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1086_q4",
+          "topicId": "msj_h1086",
+          "prompt": "求函数f(x)等于x的平方在x等于3处的导数。",
+          "question": "求函数f(x)等于x的平方在x等于3处的导数。",
+          "answer": 6,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "由定义求增量比后取极限，可得到x的平方的导函数为2x，把x等于3代入，导数为6。",
+          "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}"
+        },
+        {
+          "id": "msj_h1086_q5",
+          "topicId": "msj_h1086",
+          "prompt": "物体做自由落体运动，位移s(t)等于5乘t的平方（位移单位米，时间单位秒），求t等于2时的瞬时速度。",
+          "question": "物体做自由落体运动，位移s(t)等于5乘t的平方（位移单位米，时间单位秒），求t等于2时的瞬时速度。",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "瞬时速度是位移对时间的导数，s的导数等于10t，把t等于2代入得20，单位是米每秒。",
+          "options": [
+            {
+              "label": "A",
+              "text": "10"
+            },
+            {
+              "label": "B",
+              "text": "20"
+            },
+            {
+              "label": "C",
+              "text": "25"
+            },
+            {
+              "label": "D",
+              "text": "40"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1086_q6",
+          "topicId": "msj_h1086",
+          "prompt": "曲线y等于x的平方在点(2，4)处切线的斜率等于多少？",
+          "question": "曲线y等于x的平方在点(2，4)处切线的斜率等于多少？",
+          "answer": 4,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "曲线在一点处切线的斜率等于函数在该点处的导数，x的平方的导数是2x，把x等于2代入得4。",
+          "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}"
+        },
+        {
+          "id": "msj_h1086_q7",
+          "topicId": "msj_h1086",
+          "prompt": "已知函数y等于f(x)的图象在点M(1，f(1))处的切线方程是y等于3x加2，那么f(1)加f(1)的导数等于多少？",
+          "question": "已知函数y等于f(x)的图象在点M(1，f(1))处的切线方程是y等于3x加2，那么f(1)加f(1)的导数等于多少？",
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "切点在切线上，把x等于1代入切线方程得f(1)等于5；切线斜率就是该点处的导数，所以导数值为3；两者相加得8。",
+          "options": [
+            {
+              "label": "A",
+              "text": "5"
+            },
+            {
+              "label": "B",
+              "text": "7"
+            },
+            {
+              "label": "C",
+              "text": "8"
+            },
+            {
+              "label": "D",
+              "text": "10"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1086_q8",
+          "topicId": "msj_h1086",
+          "prompt": "某产品的成本函数C(x)等于0.005乘x的平方加3x（单位元），求生产规模为1000件时的边际成本。",
+          "question": "某产品的成本函数C(x)等于0.005乘x的平方加3x（单位元），求生产规模为1000件时的边际成本。",
+          "answer": 13,
+          "type": "numeric",
+          "difficulty": "hard",
+          "explanation": "边际成本就是成本函数的导数，求导得0.01x加3，把x等于1000代入得13，表示再增加1件产品成本约增加13元。",
+          "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 0.01}, {\"type\": \"num\", \"value\": 1000}]}, {\"type\": \"num\", \"value\": 3}]}"
+        }
+      ]
+    },
+    {
+      "id": "msj_h1087",
+      "page": 201,
+      "description": "基本初等函数的导数公式包括常数的导数为0、x的n次方的导数为n乘x的n减1次方、正弦的导数为余弦、余弦的导数为负正弦、指数函数与对数函数的导数公式。函数的和与差可以逐项求导，积与商要按对应法则求导；简单复合函数按外层对中间变量、中间变量对自变量相乘求导。",
+      "mastery_criteria": [
+        "能直接写出基本初等函数的导数",
+        "会用和、差、积、商的求导法则求导",
+        "会用复合函数求导法则处理形如一次式复合的函数"
+      ],
+      "misconceptions": [
+        "把积的导数当成导数的积",
+        "商的导数分子上把两项相减的次序弄反",
+        "复合函数求导时忘记乘内层函数的导数",
+        "求导前后没有先化简，导致公式用错"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "msj_h1087_q1",
+          "topicId": "msj_h1087",
+          "prompt": "函数y等于x的3次方，它的导数等于什么？",
+          "question": "函数y等于x的3次方，它的导数等于什么？",
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "用幂函数求导公式，指数3写到前面，指数减1得2，所以导数是3x的平方。",
+          "options": [
+            {
+              "label": "A",
+              "text": "x的平方"
+            },
+            {
+              "label": "B",
+              "text": "3x"
+            },
+            {
+              "label": "C",
+              "text": "3x的平方"
+            },
+            {
+              "label": "D",
+              "text": "x的4次方除以4"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1087_q2",
+          "topicId": "msj_h1087",
+          "prompt": "求函数y等于2乘x的3次方在x等于1处的导数。",
+          "question": "求函数y等于2乘x的3次方在x等于1处的导数。",
+          "answer": 6,
+          "type": "numeric",
+          "difficulty": "basic",
+          "explanation": "先求导，2x的3次方的导数是6x的平方，把x等于1代入得6。",
+          "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 2}]}]}"
+        },
+        {
+          "id": "msj_h1087_q3",
+          "topicId": "msj_h1087",
+          "prompt": "函数y等于sin x的导数等于什么？",
+          "question": "函数y等于sin x的导数等于什么？",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "正弦函数的导数是余弦函数，所以sin x的导数是cos x，这是基本初等函数的导数公式。",
+          "options": [
+            {
+              "label": "A",
+              "text": "cos x"
+            },
+            {
+              "label": "B",
+              "text": "负cos x"
+            },
+            {
+              "label": "C",
+              "text": "sin x"
+            },
+            {
+              "label": "D",
+              "text": "负sin x"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1087_q4",
+          "topicId": "msj_h1087",
+          "prompt": "求函数y等于x的3次方加2x的导数在x等于1处的值。",
+          "question": "求函数y等于x的3次方加2x的导数在x等于1处的值。",
+          "answer": 5,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "逐项求导得3x的平方加2，把x等于1代入得3加2等于5。",
+          "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 2}]}]}, {\"type\": \"num\", \"value\": 2}]}"
+        },
+        {
+          "id": "msj_h1087_q5",
+          "topicId": "msj_h1087",
+          "prompt": "函数y等于x乘sin x的导数等于什么？",
+          "question": "函数y等于x乘sin x的导数等于什么？",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "按积的求导法则，前者的导数乘后者加上前者乘后者的导数，即1乘sin x加x乘cos x，结果是sin x加x乘cos x。",
+          "options": [
+            {
+              "label": "A",
+              "text": "cos x"
+            },
+            {
+              "label": "B",
+              "text": "sin x加x乘cos x"
+            },
+            {
+              "label": "C",
+              "text": "sin x减x乘cos x"
+            },
+            {
+              "label": "D",
+              "text": "x乘cos x"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1087_q6",
+          "topicId": "msj_h1087",
+          "prompt": "求函数y等于(2x加1)的平方的导数在x等于1处的值。",
+          "question": "求函数y等于(2x加1)的平方的导数在x等于1处的值。",
+          "answer": 12,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "先展开得4x的平方加4x加1，求导得8x加4，把x等于1代入得12；也可用复合函数法则得2乘(2x加1)乘2。",
+          "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"num\", \"value\": 1}]}, {\"type\": \"num\", \"value\": 4}]}"
+        },
+        {
+          "id": "msj_h1087_q7",
+          "topicId": "msj_h1087",
+          "prompt": "函数y等于ln(3x加1)的导数等于什么？",
+          "question": "函数y等于ln(3x加1)的导数等于什么？",
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "这是复合函数，外层是对数函数，内层是3x加1；外层导数乘以中间变量得1除以(3x加1)，再乘内层导数3，结果是3除以(3x加1)。",
+          "options": [
+            {
+              "label": "A",
+              "text": "1除以(3x加1)"
+            },
+            {
+              "label": "B",
+              "text": "3除以x"
+            },
+            {
+              "label": "C",
+              "text": "ln(3x加1)"
+            },
+            {
+              "label": "D",
+              "text": "3除以(3x加1)"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1087_q8",
+          "topicId": "msj_h1087",
+          "prompt": "函数y等于x乘e的x次方，求它在x等于1处的导数值（e取2.71828，结果写成小数）。",
+          "question": "函数y等于x乘e的x次方，求它在x等于1处的导数值（e取2.71828，结果写成小数）。",
+          "answer": 5.43656,
+          "type": "numeric",
+          "difficulty": "hard",
+          "explanation": "按积的求导法则得e的x次方加x乘e的x次方，即(1加x)乘e的x次方；把x等于1代入得2e，等于5.43656。",
+          "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2.71828}]}"
+        }
+      ]
+    },
+    {
+      "id": "msj_h1088",
+      "page": 212,
+      "description": "导数刻画函数在每一点处的变化趋势。若在某区间上导数大于0，则函数在该区间上单调递增；若导数小于0，则单调递减。导数等于0且左右两侧导数变号时，函数取得极值；求闭区间上的最值，要把各极值与两端点的函数值一起比较。",
+      "mastery_criteria": [
+        "会用导数的正负判断函数的单调区间",
+        "会用导数求极大值、极小值并说明取得极值的条件",
+        "会求闭区间上函数的最大值与最小值"
+      ],
+      "misconceptions": [
+        "只由导数等于0就断定该点是极值点",
+        "解不等式时把导数正负与增减方向对应错了",
+        "求闭区间最值时忘记比较端点函数值",
+        "把极值当成最值，忽略区间限制"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "msj_h1088_q1",
+          "topicId": "msj_h1088",
+          "prompt": "若函数f(x)在某区间上满足导数大于0，那么f(x)在该区间上是什么状态？",
+          "question": "若函数f(x)在某区间上满足导数大于0，那么f(x)在该区间上是什么状态？",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "导数大于0说明函数值随自变量增大而增大，所以函数在该区间上单调递增；导数小于0时才单调递减。",
+          "options": [
+            {
+              "label": "A",
+              "text": "单调递增"
+            },
+            {
+              "label": "B",
+              "text": "单调递减"
+            },
+            {
+              "label": "C",
+              "text": "一定取得极值"
+            },
+            {
+              "label": "D",
+              "text": "是常数函数"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1088_q2",
+          "topicId": "msj_h1088",
+          "prompt": "函数f(x)等于x的平方减4x，它的导数等于0的解是多少？",
+          "question": "函数f(x)等于x的平方减4x，它的导数等于0的解是多少？",
+          "answer": 2,
+          "type": "numeric",
+          "difficulty": "basic",
+          "explanation": "求导得2x减4，令导数等于0，解得x等于2，这一点也是函数取得极小值的位置。",
+          "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 2}]}"
+        },
+        {
+          "id": "msj_h1088_q3",
+          "topicId": "msj_h1088",
+          "prompt": "函数f(x)等于x的平方减4x加3在哪个区间上单调递减？",
+          "question": "函数f(x)等于x的平方减4x加3在哪个区间上单调递减？",
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "求导得2x减4，令它小于0得x小于2，所以函数在负无穷到2上单调递减，在2到正无穷上单调递增。",
+          "options": [
+            {
+              "label": "A",
+              "text": "2到正无穷"
+            },
+            {
+              "label": "B",
+              "text": "0到2"
+            },
+            {
+              "label": "C",
+              "text": "负无穷到2"
+            },
+            {
+              "label": "D",
+              "text": "负无穷到0"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1088_q4",
+          "topicId": "msj_h1088",
+          "prompt": "求函数f(x)等于x的3次方减3x的极大值。",
+          "question": "求函数f(x)等于x的3次方减3x的极大值。",
+          "answer": 2,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "求导得3x的平方减3，令它等于0得x等于1或负1；x等于负1时导数由正变负，取极大值，代入得负1加3等于2。",
+          "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": -1}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": -3}, {\"type\": \"num\", \"value\": -1}]}]}"
+        },
+        {
+          "id": "msj_h1088_q5",
+          "topicId": "msj_h1088",
+          "prompt": "函数f(x)等于x的3次方减3x的极小值点是哪一个？",
+          "question": "函数f(x)等于x的3次方减3x的极小值点是哪一个？",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "令3x的平方减3等于0得x等于1或负1；x等于1时导数由负变正，函数在这里取极小值，所以极小值点是x等于1。",
+          "options": [
+            {
+              "label": "A",
+              "text": "负1"
+            },
+            {
+              "label": "B",
+              "text": "1"
+            },
+            {
+              "label": "C",
+              "text": "0"
+            },
+            {
+              "label": "D",
+              "text": "1和负1"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1088_q6",
+          "topicId": "msj_h1088",
+          "prompt": "求函数f(x)等于x的平方减4x加3在0到3这段区间上的最小值。",
+          "question": "求函数f(x)等于x的平方减4x加3在0到3这段区间上的最小值。",
+          "answer": -1,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "导数2x减4在x等于2处为0，且由负变正，所以x等于2处取极小值负1；再比较端点值3和0，最小值是负1。",
+          "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 2}]}]}, {\"type\": \"num\", \"value\": 3}]}"
+        },
+        {
+          "id": "msj_h1088_q7",
+          "topicId": "msj_h1088",
+          "prompt": "函数f(x)等于x的3次方在x等于0处的导数等于0，但x等于0不是极值点，原因是什么？",
+          "question": "函数f(x)等于x的3次方在x等于0处的导数等于0，但x等于0不是极值点，原因是什么？",
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "极值要求导数在该点两侧变号，而3x的平方在x等于0两侧都是正的，导数没有变号，函数一直单调递增，所以不是极值点。",
+          "options": [
+            {
+              "label": "A",
+              "text": "因为x等于0不在定义域内"
+            },
+            {
+              "label": "B",
+              "text": "因为函数在该点不连续"
+            },
+            {
+              "label": "C",
+              "text": "因为函数没有最大值"
+            },
+            {
+              "label": "D",
+              "text": "因为导数在该点两侧不变号"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1088_q8",
+          "topicId": "msj_h1088",
+          "prompt": "求函数f(x)等于3x的平方减9x加5在负2到2这段区间上的最大值。",
+          "question": "求函数f(x)等于3x的平方减9x加5在负2到2这段区间上的最大值。",
+          "answer": 35,
+          "type": "numeric",
+          "difficulty": "hard",
+          "explanation": "求导得6x减9，令它等于0得x等于1.5，此处取极小值；再比较端点值，x等于负2时函数值35，x等于2时函数值负1，所以最大值是35。",
+          "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": -2}, {\"type\": \"num\", \"value\": 2}]}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 9}, {\"type\": \"num\", \"value\": -2}]}]}, {\"type\": \"num\", \"value\": 5}]}"
+        }
+      ]
+    },
+    {
+      "id": "msj_h1089",
+      "page": 225,
+      "description": "三次样条模型在每两个相邻数据点之间用一段三次多项式连接，要求每一段样条通过区间两端的数据点，并在内部数据点处一阶导数匹配，使曲线光滑。剩下的方程用端点条件补充：端点二阶导数为0的是自然样条，端点一阶导数已知的是强制样条。",
+      "mastery_criteria": [
+        "能说出三次样条模型的构造要求：过点、光滑和端点条件",
+        "会由样条表达式算出函数值与导数值并检验光滑性",
+        "知道为什么样条多用三次多项式而不用高次多项式"
+      ],
+      "misconceptions": [
+        "只要求曲线过所有数据点，忽略光滑性要求",
+        "在内部数据点处要求二阶导数匹配而一阶导数可以不同",
+        "分不清自然样条与强制样条的端点条件",
+        "认为样条的次数越高拟合效果一定越好"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "msj_h1089_q1",
+          "topicId": "msj_h1089",
+          "prompt": "三次样条模型在每两个相邻数据点之间用什么函数连接？",
+          "question": "三次样条模型在每两个相邻数据点之间用什么函数连接？",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "三次样条在连续的数据点对之间使用不同的三次多项式，这样既保证基本关系，又减少摆动和数据变化带来的敏感。",
+          "options": [
+            {
+              "label": "A",
+              "text": "三次多项式"
+            },
+            {
+              "label": "B",
+              "text": "一次函数"
+            },
+            {
+              "label": "C",
+              "text": "二次多项式"
+            },
+            {
+              "label": "D",
+              "text": "指数函数"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1089_q2",
+          "topicId": "msj_h1089",
+          "prompt": "建立三次样条时要求相邻两段样条在内部数据点处一阶导数相等，这样做的直接作用是什么？",
+          "question": "建立三次样条时要求相邻两段样条在内部数据点处一阶导数相等，这样做的直接作用是什么？",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "一阶导数相等意味着曲线经过连接点时切线方向不突然改变，曲线在该点处没有尖角，这正是三次样条光滑性要求的内容。",
+          "options": [
+            {
+              "label": "A",
+              "text": "保证曲线经过每一个数据点"
+            },
+            {
+              "label": "B",
+              "text": "保证曲线在该点处光滑、不出现尖角"
+            },
+            {
+              "label": "C",
+              "text": "把样条退化成一次函数"
+            },
+            {
+              "label": "D",
+              "text": "使样条在两个端点处导数为零"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1089_q3",
+          "topicId": "msj_h1089",
+          "prompt": "自然三次样条要求在两个外侧端点处的二阶导数等于多少？",
+          "question": "自然三次样条要求在两个外侧端点处的二阶导数等于多少？",
+          "answer": 0,
+          "type": "numeric",
+          "difficulty": "basic",
+          "explanation": "自然样条假设在两个外侧端点处的一阶导数没有变化，也就是二阶导数为0，用它补充两个方程。",
+          "verify": "{\"type\": \"num\", \"value\": 0}"
+        },
+        {
+          "id": "msj_h1089_q4",
+          "topicId": "msj_h1089",
+          "prompt": "过三点(1，5)，(2，8)，(3，25)的自然样条在1到2这段区间上为S1(x)等于2加10x减10.5乘x的平方加3.5乘x的3次方，那么S1(1)等于多少？",
+          "question": "过三点(1，5)，(2，8)，(3，25)的自然样条在1到2这段区间上为S1(x)等于2加10x减10.5乘x的平方加3.5乘x的3次方，那么S1(1)等于多少？",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "把x等于1代入：2加10减10.5加3.5，等于5，与第一个数据点的纵坐标一致。",
+          "options": [
+            {
+              "label": "A",
+              "text": "2"
+            },
+            {
+              "label": "B",
+              "text": "5"
+            },
+            {
+              "label": "C",
+              "text": "8"
+            },
+            {
+              "label": "D",
+              "text": "10"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1089_q5",
+          "topicId": "msj_h1089",
+          "prompt": "接上题，把x等于2代入S1(x)等于2加10x减10.5乘x的平方加3.5乘x的3次方，S1(2)等于多少？",
+          "question": "接上题，把x等于2代入S1(x)等于2加10x减10.5乘x的平方加3.5乘x的3次方，S1(2)等于多少？",
+          "answer": 8,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "逐项计算：2加20得22，减10.5乘4即42得负20，再加3.5乘8即28，结果是8，与第二个数据点一致。",
+          "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 2}]}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": -10.5}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}]}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3.5}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}]}]}"
+        },
+        {
+          "id": "msj_h1089_q6",
+          "topicId": "msj_h1089",
+          "prompt": "接上题，求S1(x)的导数在x等于2处的值。",
+          "question": "接上题，求S1(x)的导数在x等于2处的值。",
+          "answer": 10,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "S1的导数为10减21x加10.5乘x的平方，把x等于2代入：10减42加42，结果为10。",
+          "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 21}, {\"type\": \"num\", \"value\": 2}]}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 10.5}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}]}]}"
+        },
+        {
+          "id": "msj_h1089_q7",
+          "topicId": "msj_h1089",
+          "prompt": "接上题，第二段样条S2(x)等于58减74x加31.5乘x的平方减3.5乘x的3次方在x等于2处的导数等于多少？",
+          "question": "接上题，第二段样条S2(x)等于58减74x加31.5乘x的平方减3.5乘x的3次方在x等于2处的导数等于多少？",
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "S2的导数为负74加63x减10.5乘x的平方，把x等于2代入得负74加126减42，结果为10，与S1在x等于2处的导数相同，体现光滑性。",
+          "options": [
+            {
+              "label": "A",
+              "text": "8"
+            },
+            {
+              "label": "B",
+              "text": "12"
+            },
+            {
+              "label": "C",
+              "text": "10"
+            },
+            {
+              "label": "D",
+              "text": "14"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1089_q8",
+          "topicId": "msj_h1089",
+          "prompt": "建立样条模型时，为什么通常选用三次多项式而不用更高次的多项式？",
+          "question": "建立样条模型时，为什么通常选用三次多项式而不用更高次的多项式？",
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "高次多项式容易在相邻数据区间的端点附近摆动，而且系数对数据中很小的变化太敏感；三次多项式既能保证基本关系，又能减少摆动和敏感。",
+          "options": [
+            {
+              "label": "A",
+              "text": "高次多项式不能求导"
+            },
+            {
+              "label": "B",
+              "text": "高次多项式一定过不了数据点"
+            },
+            {
+              "label": "C",
+              "text": "三次多项式计算量最大"
+            },
+            {
+              "label": "D",
+              "text": "高次多项式在端点附近摆动，系数对数据的微小变化太敏感"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "msj_h1090",
+      "page": 229,
+      "description": "本章回顾把平均变化率、瞬时变化率与导数定义、基本初等函数的求导公式、和差积商与复合函数的求导法则以及用导数研究函数性质的思路连成整体。复习题涉及球半径增大时表面积与体积的变化率、小球下落时的高度速度与加速度、路灯下身影长度的变化率等实际问题。",
+      "mastery_criteria": [
+        "能综合运用导数的定义与求导法则解决变化率问题",
+        "会把实际情境中的量写成函数关系再求导",
+        "会用导数求切线方程、单调区间与极值最值"
+      ],
+      "misconceptions": [
+        "求变化率时忘记把中间变量的变化率乘上去",
+        "把速度与加速度的关系弄反，用位移直接求加速度",
+        "求切线方程时把切点坐标与斜率配错",
+        "在实际问题中把单位换算忽略掉"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "msj_h1090_q1",
+          "topicId": "msj_h1090",
+          "prompt": "球的表面积S等于4乘π乘r的平方，半径r以2厘米每秒的速度增大，当r等于5厘米时表面积对时间的变化率是多少平方厘米每秒（π取3.14）？",
+          "question": "球的表面积S等于4乘π乘r的平方，半径r以2厘米每秒的速度增大，当r等于5厘米时表面积对时间的变化率是多少平方厘米每秒（π取3.14）？",
+          "answer": 251.2,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "由复合函数求导，S对时间的导数为8πr乘r对时间的导数，把r等于5、半径变化率2代入，得8乘3.14乘5乘2，结果为251.2。",
+          "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"num\", \"value\": 3.14}]}, {\"type\": \"num\", \"value\": 5}]}, {\"type\": \"num\", \"value\": 2}]}"
+        },
+        {
+          "id": "msj_h1090_q2",
+          "topicId": "msj_h1090",
+          "prompt": "小球下落的高度h(t)等于1.5减0.1乘t的平方（单位米），那么t等于3秒时小球的速度是多少米每秒？",
+          "question": "小球下落的高度h(t)等于1.5减0.1乘t的平方（单位米），那么t等于3秒时小球的速度是多少米每秒？",
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "速度是高度对时间的导数，求导得负0.2t，把t等于3代入得负0.6，负号表示小球在向下运动。",
+          "options": [
+            {
+              "label": "A",
+              "text": "0.6"
+            },
+            {
+              "label": "B",
+              "text": "负1.8"
+            },
+            {
+              "label": "C",
+              "text": "负0.6"
+            },
+            {
+              "label": "D",
+              "text": "负0.9"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1090_q3",
+          "topicId": "msj_h1090",
+          "prompt": "运动物体的速度对时间的导数表示的是什么物理量？",
+          "question": "运动物体的速度对时间的导数表示的是什么物理量？",
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "速度刻画位置变化的快慢，速度对时间的导数刻画速度变化的快慢，这个量就是加速度。",
+          "options": [
+            {
+              "label": "A",
+              "text": "位移"
+            },
+            {
+              "label": "B",
+              "text": "路程"
+            },
+            {
+              "label": "C",
+              "text": "平均速度"
+            },
+            {
+              "label": "D",
+              "text": "加速度"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1090_q4",
+          "topicId": "msj_h1090",
+          "prompt": "接上题，小球下落的高度h(t)等于1.5减0.1乘t的平方，求t等于3秒时小球的加速度（单位米每二次方秒）。",
+          "question": "接上题，小球下落的高度h(t)等于1.5减0.1乘t的平方，求t等于3秒时小球的加速度（单位米每二次方秒）。",
+          "answer": "负0.2",
+          "type": "fill",
+          "difficulty": "standard",
+          "explanation": "速度是负0.2t，再对时间求导得负0.2，所以加速度恒为负0.2，方向向下。"
+        },
+        {
+          "id": "msj_h1090_q5",
+          "topicId": "msj_h1090",
+          "prompt": "身高1.8米的人以1.2米每秒的速度离开高4.2米的路灯，身影长度y（米）与人到路灯的距离x（米）的关系是什么？",
+          "question": "身高1.8米的人以1.2米每秒的速度离开高4.2米的路灯，身影长度y（米）与人到路灯的距离x（米）的关系是什么？",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "由相似三角形，y比上y加x等于1.8比4.2，解得y等于0.75x，即身影长是人与路灯距离的四分之三。",
+          "options": [
+            {
+              "label": "A",
+              "text": "y等于1.5x"
+            },
+            {
+              "label": "B",
+              "text": "y等于0.75x"
+            },
+            {
+              "label": "C",
+              "text": "y等于0.43x"
+            },
+            {
+              "label": "D",
+              "text": "y等于2.33x"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1090_q6",
+          "topicId": "msj_h1090",
+          "prompt": "接上题，人影长度y等于0.75x，人行走的速度是1.2米每秒，那么身影长度的变化率是多少米每秒？",
+          "question": "接上题，人影长度y等于0.75x，人行走的速度是1.2米每秒，那么身影长度的变化率是多少米每秒？",
+          "answer": 0.9,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "身影长度对时间的导数等于0.75乘人行走速度，即0.75乘1.2，结果为0.9米每秒。",
+          "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 0.75}, {\"type\": \"num\", \"value\": 1.2}]}"
+        },
+        {
+          "id": "msj_h1090_q7",
+          "topicId": "msj_h1090",
+          "prompt": "曲线y等于负x的3次方加2x在点A(1，1)处的切线方程是什么？",
+          "question": "曲线y等于负x的3次方加2x在点A(1，1)处的切线方程是什么？",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "求导得负3x的平方加2，把x等于1代入得斜率负1；由点斜式得y减1等于负(x减1)，即y等于负x加2。",
+          "options": [
+            {
+              "label": "A",
+              "text": "y等于负x加2"
+            },
+            {
+              "label": "B",
+              "text": "y等于x"
+            },
+            {
+              "label": "C",
+              "text": "y等于负3x加4"
+            },
+            {
+              "label": "D",
+              "text": "y等于负x"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1090_q8",
+          "topicId": "msj_h1090",
+          "prompt": "求函数f(x)等于3x的平方减9x加5在负2到2这段区间上的最小值。",
+          "question": "求函数f(x)等于3x的平方减9x加5在负2到2这段区间上的最小值。",
+          "answer": "负1.75",
+          "type": "fill",
+          "difficulty": "hard",
+          "explanation": "求导得6x减9，令它等于0得x等于1.5，此处函数值负1.75；端点值分别为35和负1，比较得最小值是负1.75。"
+        }
+      ]
+    },
+    {
+      "id": "msj_h1091",
+      "page": 231,
+      "description": "本章测试综合检查导数的概念、运算与应用，题目涉及切线方程、平均变化率、单调区间、极值与最值，还出现由极值条件反求参数、圆锥体积最大等需要建模的题目，要求在限定时间内完成并保证运算准确。",
+      "mastery_criteria": [
+        "能准确求出切线方程与函数在区间上的平均变化率",
+        "会用导数求单调区间、极值与闭区间上的最值",
+        "能由极值条件反求参数并处理简单的实际最优化问题"
+      ],
+      "misconceptions": [
+        "求切线方程时把斜率写成分母为自变量的式子",
+        "由极值条件反求参数时不检验该点是否真的变号",
+        "求单调区间时把区间端点写成闭区间",
+        "在最优化问题中忘记写自变量的取值范围"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "msj_h1091_q1",
+          "topicId": "msj_h1091",
+          "prompt": "函数y等于sin x的图象在点(π，0)处的切线方程是什么？",
+          "question": "函数y等于sin x的图象在点(π，0)处的切线方程是什么？",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "sin x的导数是cos x，把x等于π代入得斜率负1；由点斜式得y等于负(x减π)，即y等于负x加π。",
+          "options": [
+            {
+              "label": "A",
+              "text": "y等于负x加π"
+            },
+            {
+              "label": "B",
+              "text": "y等于x减π"
+            },
+            {
+              "label": "C",
+              "text": "y等于负x"
+            },
+            {
+              "label": "D",
+              "text": "y等于x加π"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1091_q2",
+          "topicId": "msj_h1091",
+          "prompt": "求函数f(x)等于x的平方减2x在0到3这段区间上的最大值。",
+          "question": "求函数f(x)等于x的平方减2x在0到3这段区间上的最大值。",
+          "answer": 3,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "求导得2x减2，x等于1处取极小值负1；端点值f(0)等于0，f(3)等于3，所以最大值是3。",
+          "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}]}"
+        },
+        {
+          "id": "msj_h1091_q3",
+          "topicId": "msj_h1091",
+          "prompt": "函数f(x)等于x的平方加2x减1在区间负无穷到0上的最值情况是怎样的？",
+          "question": "函数f(x)等于x的平方加2x减1在区间负无穷到0上的最值情况是怎样的？",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "求导得2x加2，在x等于负1处由负变正，函数取最小值负2；区间右端不包含0，函数值可以无限接近负1，所以没有最大值。",
+          "options": [
+            {
+              "label": "A",
+              "text": "有最大值，无最小值"
+            },
+            {
+              "label": "B",
+              "text": "有最小值，无最大值"
+            },
+            {
+              "label": "C",
+              "text": "既有最大值，又有最小值"
+            },
+            {
+              "label": "D",
+              "text": "既无最大值，又无最小值"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1091_q4",
+          "topicId": "msj_h1091",
+          "prompt": "求函数f(x)等于x的3次方减3x的极小值。",
+          "question": "求函数f(x)等于x的3次方减3x的极小值。",
+          "answer": -2,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "求导得3x的平方减3，令它等于0得x等于1或负1；x等于1时导数由负变正，取极小值，代入得1减3等于负2。",
+          "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 1}]}]}"
+        },
+        {
+          "id": "msj_h1091_q5",
+          "topicId": "msj_h1091",
+          "prompt": "已知函数f(x)等于x的3次方减a乘x在x等于1处取得极值，那么a等于多少？",
+          "question": "已知函数f(x)等于x的3次方减a乘x在x等于1处取得极值，那么a等于多少？",
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "求导得3x的平方减a，极值点处导数为0，把x等于1代入得3减a等于0，所以a等于3。",
+          "options": [
+            {
+              "label": "A",
+              "text": "1"
+            },
+            {
+              "label": "B",
+              "text": "2"
+            },
+            {
+              "label": "C",
+              "text": "3"
+            },
+            {
+              "label": "D",
+              "text": "6"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1091_q6",
+          "topicId": "msj_h1091",
+          "prompt": "函数f(x)等于x的平方乘e的x次方在x等于1处的导数值是多少（e取2.71828，结果写成小数）？",
+          "question": "函数f(x)等于x的平方乘e的x次方在x等于1处的导数值是多少（e取2.71828，结果写成小数）？",
+          "answer": 8.15484,
+          "type": "numeric",
+          "difficulty": "hard",
+          "explanation": "按积的求导法则得2x乘e的x次方加x的平方乘e的x次方，把x等于1代入得3e，等于8.15484。",
+          "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2.71828}]}"
+        },
+        {
+          "id": "msj_h1091_q7",
+          "topicId": "msj_h1091",
+          "prompt": "函数f(x)等于e的x次方加3x在实数集上的单调性是怎样的？",
+          "question": "函数f(x)等于e的x次方加3x在实数集上的单调性是怎样的？",
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "求导得e的x次方加3，指数函数恒大于0，所以导数恒大于3，函数在整个实数集上单调递增，没有极值点。",
+          "options": [
+            {
+              "label": "A",
+              "text": "在实数集上单调递减"
+            },
+            {
+              "label": "B",
+              "text": "在实数集上先减后增"
+            },
+            {
+              "label": "C",
+              "text": "在实数集上先增后减"
+            },
+            {
+              "label": "D",
+              "text": "在实数集上单调递增"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1091_q8",
+          "topicId": "msj_h1091",
+          "prompt": "函数f(x)等于x乘ln x满足f(x0)的导数等于2，求x0（用自然对数的底e表示）。",
+          "question": "函数f(x)等于x乘ln x满足f(x0)的导数等于2，求x0（用自然对数的底e表示）。",
+          "answer": "e",
+          "type": "fill",
+          "difficulty": "hard",
+          "explanation": "按积的求导法则得ln x加1，令它等于2得ln x等于1，所以x0等于e。"
+        }
+      ]
+    },
+    {
+      "id": "msj_h1092",
+      "page": 232,
+      "description": "案例1研究贷款还款方式：等额本息法每月还款额相同，把各月还款按复利折算到同一时间点后用等比数列求和，可以得到月供；等额本金法每月还的本金相同、利息逐月减少。算到最后发现两种方式所付利息总额相同，差别在还款额的分布。案例2用动态几何软件探究抛物线焦点弦端点处切线的交点轨迹，再借助导数与切线方程加以证明。",
+      "mastery_criteria": [
+        "能说清等额本息与等额本金两种还款方式的区别",
+        "会用等比数列求和算出月供、还款总额与利息总额",
+        "能说明案例2中交点落在准线上、张角为直角等结论的证明思路"
+      ],
+      "misconceptions": [
+        "把等额本金法每月还款额当成固定不变",
+        "计算还款总额时把期数当成240年而不是240个月",
+        "把不同时间点的钱直接相加，忽略货币的时间价值",
+        "认为两种还款方式利息不同，只看每月还款额的高低"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "msj_h1092_q1",
+          "topicId": "msj_h1092",
+          "prompt": "等额本息还款法的特点是什么？",
+          "question": "等额本息还款法的特点是什么？",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "等额本息是把贷款本息合在一起，每月按相等的金额偿还，还款额每月相同，便于家庭安排开支。",
+          "options": [
+            {
+              "label": "A",
+              "text": "每月还款额相同"
+            },
+            {
+              "label": "B",
+              "text": "每月偿还的本金相同"
+            },
+            {
+              "label": "C",
+              "text": "每月偿还的利息相同"
+            },
+            {
+              "label": "D",
+              "text": "每月还款额逐月递增"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1092_q2",
+          "topicId": "msj_h1092",
+          "prompt": "按等额本息还款，每月末还1655.42元，共240个月，还款总额是多少元？",
+          "question": "按等额本息还款，每月末还1655.42元，共240个月，还款总额是多少元？",
+          "answer": 397300.8,
+          "type": "numeric",
+          "difficulty": "basic",
+          "explanation": "还款总额等于每期还款额乘期数，1655.42乘240，结果是397300.8元，其中超过本金的部分是利息。",
+          "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 1655.42}, {\"type\": \"num\", \"value\": 240}]}"
+        },
+        {
+          "id": "msj_h1092_q3",
+          "topicId": "msj_h1092",
+          "prompt": "贷款25万元、20年还清、月利率0.0042，按等额本金还款法，第1个月末的还款额约为多少元？",
+          "question": "贷款25万元、20年还清、月利率0.0042，按等额本金还款法，第1个月末的还款额约为多少元？",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "等额本金法每月还本金250000除以240，约1041.67元，再加第一个月的利息250000乘0.0042得1050元，共约2091.67元。",
+          "options": [
+            {
+              "label": "A",
+              "text": "1655.42"
+            },
+            {
+              "label": "B",
+              "text": "2091.67"
+            },
+            {
+              "label": "C",
+              "text": "1050.00"
+            },
+            {
+              "label": "D",
+              "text": "1041.67"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1092_q4",
+          "topicId": "msj_h1092",
+          "prompt": "案例1最后得出的结论是，在贷款利率不变的条件下两种还款方式所付利息总额如何？",
+          "question": "案例1最后得出的结论是，在贷款利率不变的条件下两种还款方式所付利息总额如何？",
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "把两种方式的各期还款都按复利折算到同一时间点后相加，得到的年金终值相同，所以贷款人所付利息也相同，差别只在每期还款额的大小顺序。",
+          "options": [
+            {
+              "label": "A",
+              "text": "等额本金法的利息较少"
+            },
+            {
+              "label": "B",
+              "text": "等额本息法的利息较少"
+            },
+            {
+              "label": "C",
+              "text": "两种方式所付利息相同"
+            },
+            {
+              "label": "D",
+              "text": "两种方式无法比较"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1092_q5",
+          "topicId": "msj_h1092",
+          "prompt": "案例2中，抛物线焦点弦两端点处的两条切线的交点位于哪里？",
+          "question": "案例2中，抛物线焦点弦两端点处的两条切线的交点位于哪里？",
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "用动态几何软件拖动点观察可以发现，两条切线的交点始终在一条垂直于对称轴的定直线上，这条直线正是抛物线的准线。",
+          "options": [
+            {
+              "label": "A",
+              "text": "抛物线的对称轴上"
+            },
+            {
+              "label": "B",
+              "text": "坐标原点"
+            },
+            {
+              "label": "C",
+              "text": "抛物线的焦点上"
+            },
+            {
+              "label": "D",
+              "text": "抛物线的准线上"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1092_q6",
+          "topicId": "msj_h1092",
+          "prompt": "案例2的证明用到结论：设A(x1，y1)，B(x2，y2)是抛物线y的平方等于2px的焦点弦的两个端点，那么y1乘y2等于什么？",
+          "question": "案例2的证明用到结论：设A(x1，y1)，B(x2，y2)是抛物线y的平方等于2px的焦点弦的两个端点，那么y1乘y2等于什么？",
+          "answer": "负p的平方",
+          "type": "fill",
+          "difficulty": "hard",
+          "explanation": "把焦点弦所在直线与抛物线方程联立，由一元二次方程根与系数的关系可得两个纵坐标之积等于负的p的平方，这个结论是证明切线交点落在准线上的关键。"
+        },
+        {
+          "id": "msj_h1092_q7",
+          "topicId": "msj_h1092",
+          "prompt": "案例2中，两条切线在交点C处所成的角是多少度？",
+          "question": "案例2中，两条切线在交点C处所成的角是多少度？",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "两条切线的斜率之积等于负1，说明它们互相垂直，所以交点C对焦点弦的张角是直角，也就是C在以AB为直径的圆上。",
+          "options": [
+            {
+              "label": "A",
+              "text": "90度"
+            },
+            {
+              "label": "B",
+              "text": "60度"
+            },
+            {
+              "label": "C",
+              "text": "45度"
+            },
+            {
+              "label": "D",
+              "text": "无法确定"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1092_q8",
+          "topicId": "msj_h1092",
+          "prompt": "按等额本息还款，每月末还1655.42元，共240个月，本金为250000元，那么所付利息总额是多少元？",
+          "question": "按等额本息还款，每月末还1655.42元，共240个月，本金为250000元，那么所付利息总额是多少元？",
+          "answer": 147300.8,
+          "type": "numeric",
+          "difficulty": "hard",
+          "explanation": "先求还款总额1655.42乘240等于397300.8元，再减去本金250000元，利息总额为147300.8元。",
+          "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 1655.42}, {\"type\": \"num\", \"value\": 240}]}, {\"type\": \"num\", \"value\": 250000}]}"
+        }
+      ]
+    },
+    {
+      "id": "msj_h1093",
+      "page": 237,
+      "description": "课题推荐给出五个可供研究的题目：公积金贷款月利率算法的争议、斐波那契数列的递推与通项及应用、介绍点评中学生建模获奖论文、圆锥曲线焦点弦的性质及应用、用动态几何软件探究到两定点距离之积为定值的点的轨迹。开展活动要按选题、开题、做题、结题的环节推进。",
+      "mastery_criteria": [
+        "知道建模与探究活动的四个环节并能说出各环节的任务",
+        "能从推荐课题中选出一个，写出研究的问题、方法和步骤",
+        "会借助动态几何软件作图观察，再对猜想给出证明"
+      ],
+      "misconceptions": [
+        "跳过开题直接写结论，没有研究方案",
+        "把观察到的图形现象直接当成结论，不做证明",
+        "选题过大，没有明确的可研究的问题",
+        "只做数值计算，不解释结果的实际意义"
+      ],
+      "type": "conceptual",
+      "questions": [
+        {
+          "id": "msj_h1093_q1",
+          "topicId": "msj_h1093",
+          "prompt": "开展数学建模和数学探究活动，通常按哪四个环节推进？",
+          "question": "开展数学建模和数学探究活动，通常按哪四个环节推进？",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "教材指出要参照选题、开题、做题和结题四个环节，先确定要研究的问题，再写研究方案，然后动手研究，最后总结成果。",
+          "options": [
+            {
+              "label": "A",
+              "text": "选题、开题、做题、结题"
+            },
+            {
+              "label": "B",
+              "text": "预习、听课、作业、复习"
+            },
+            {
+              "label": "C",
+              "text": "假设、建模、求解、验证"
+            },
+            {
+              "label": "D",
+              "text": "观察、猜想、证明、推广"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1093_q2",
+          "topicId": "msj_h1093",
+          "prompt": "课题(1)中，贷款人认为按月利率等于年利率除以12的方式计算有误，理由是这种算法得出的年利率变成了多少？",
+          "question": "课题(1)中，贷款人认为按月利率等于年利率除以12的方式计算有误，理由是这种算法得出的年利率变成了多少？",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "按月利率等于年利率除以12再按月复利计算，实际年利率会高于4.5%，贷款人据此算得约4.594%，从而认为20年多还了约3000元。",
+          "options": [
+            {
+              "label": "A",
+              "text": "4.5%"
+            },
+            {
+              "label": "B",
+              "text": "4.594%"
+            },
+            {
+              "label": "C",
+              "text": "5.04%"
+            },
+            {
+              "label": "D",
+              "text": "4.2%"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1093_q3",
+          "topicId": "msj_h1093",
+          "prompt": "课题(2)要求研究斐波那契数列，它的前两项都是1，从第3项起每一项等于前两项之和，这个数列的第6项等于多少？",
+          "question": "课题(2)要求研究斐波那契数列，它的前两项都是1，从第3项起每一项等于前两项之和，这个数列的第6项等于多少？",
+          "answer": "8",
+          "type": "fill",
+          "difficulty": "basic",
+          "explanation": "依次写出：第1项1，第2项1，第3项2，第4项3，第5项5，第6项8，所以第6项是8。"
+        },
+        {
+          "id": "msj_h1093_q4",
+          "topicId": "msj_h1093",
+          "prompt": "课题(4)研究圆锥曲线焦点弦的性质，研究时最合适的做法是什么？",
+          "question": "课题(4)研究圆锥曲线焦点弦的性质，研究时最合适的做法是什么？",
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "先借助动态几何软件作出图形，拖动动点观察哪些量保持不变，提出猜想，再用坐标运算或逻辑推理加以证明。",
+          "options": [
+            {
+              "label": "A",
+              "text": "直接用软件看图就当结论"
+            },
+            {
+              "label": "B",
+              "text": "只背现成公式不做图"
+            },
+            {
+              "label": "C",
+              "text": "先作图观察提出猜想，再给出证明"
+            },
+            {
+              "label": "D",
+              "text": "只做数值计算不解释"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1093_q5",
+          "topicId": "msj_h1093",
+          "prompt": "课题(1)中若按等额本息每月还1581.62元、共240期，还款总额是多少元？",
+          "question": "课题(1)中若按等额本息每月还1581.62元、共240期，还款总额是多少元？",
+          "answer": 379588.8,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "还款总额等于每期还款额乘期数，1581.62乘240，结果是379588.8元。",
+          "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 1581.62}, {\"type\": \"num\", \"value\": 240}]}"
+        },
+        {
+          "id": "msj_h1093_q6",
+          "topicId": "msj_h1093",
+          "prompt": "接上题，本金为250000元，那么按这种方式20年共付利息多少元？",
+          "question": "接上题，本金为250000元，那么按这种方式20年共付利息多少元？",
+          "answer": 129588.8,
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "用还款总额减去本金，379588.8减250000，得到129588.8元，这就是20年付出的利息总额。",
+          "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 1581.62}, {\"type\": \"num\", \"value\": 240}]}, {\"type\": \"num\", \"value\": 250000}]}"
+        },
+        {
+          "id": "msj_h1093_q7",
+          "topicId": "msj_h1093",
+          "prompt": "课题(1)要判断贷款人的说法是否正确，关键是把各期还款按什么方式处理？",
+          "question": "课题(1)要判断贷款人的说法是否正确，关键是把各期还款按什么方式处理？",
+          "answer": "D",
+          "type": "choice",
+          "difficulty": "hard",
+          "explanation": "不同时间点的钱不能直接相加，必须把各期还款按复利折算到同一个时间点，比较两种算法的终值或现值，才能判断说法是否成立。",
+          "options": [
+            {
+              "label": "A",
+              "text": "直接把各期还款相加"
+            },
+            {
+              "label": "B",
+              "text": "只比较名义利率的大小"
+            },
+            {
+              "label": "C",
+              "text": "按单利把各期还款相加"
+            },
+            {
+              "label": "D",
+              "text": "按复利折算到同一个时间点"
+            }
+          ]
+        },
+        {
+          "id": "msj_h1093_q8",
+          "topicId": "msj_h1093",
+          "prompt": "斐波那契数列的第8项是21，第10项是55，那么第10项比第8项大多少？",
+          "question": "斐波那契数列的第8项是21，第10项是55，那么第10项比第8项大多少？",
+          "answer": 34,
+          "type": "numeric",
+          "difficulty": "hard",
+          "explanation": "用第10项减去第8项，55减21等于34，这个差恰好等于第9项，也是斐波那契数列的一个有趣性质。",
+          "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 55}, {\"type\": \"num\", \"value\": 21}]}"
+        }
+      ]
+    }
+  ]
+}

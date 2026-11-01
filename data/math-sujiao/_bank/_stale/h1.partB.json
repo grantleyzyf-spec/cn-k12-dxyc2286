@@ -1,0 +1,2852 @@
+{
+ "tag": "h1",
+ "book": "苏教版必修第一册",
+ "unit_points": [
+  {
+   "id": "msj_h006",
+   "description": "幂函数、指数函数和对数函数：认识三类基本函数的解析式、定义域、图象与单调性，能借助图象比较大小，并理解指数函数与对数函数互为反函数。",
+   "mastery_criteria": [
+    "能说出幂函数、指数函数、对数函数解析式的共同特征",
+    "能由图象判断三类函数的单调性与定点"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h006_q1",
+     "topicId": "msj_h006",
+     "prompt": "本章研究的函数中，解析式形如 y=x 的 a 次方（a 为常数）的函数称为哪一种函数？",
+     "question": "本章研究的函数中，解析式形如 y=x 的 a 次方（a 为常数）的函数称为哪一种函数？",
+     "options": [
+      {
+       "label": "A",
+       "text": "幂函数"
+      },
+      {
+       "label": "B",
+       "text": "指数函数"
+      },
+      {
+       "label": "C",
+       "text": "对数函数"
+      },
+      {
+       "label": "D",
+       "text": "一次函数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "幂函数的解析式是 y 等于 x 的 a 次方，其中 a 是常数，底数是自变量 x；指数函数的自变量在指数上，两者要分清。"
+    },
+    {
+     "id": "msj_h006_q2",
+     "topicId": "msj_h006",
+     "prompt": "已知指数函数 y=2 的 x 次方，当 x=3 时，函数 y 的值是多少？",
+     "question": "已知指数函数 y=2 的 x 次方，当 x=3 时，函数 y 的值是多少？",
+     "answer": 8,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "把 x=3 代入 y=2 的 x 次方，得 2 的 3 次方等于 2 乘 2 乘 2，结果是 8，所以函数值是 8。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_h006_q3",
+     "topicId": "msj_h006",
+     "prompt": "对数函数 y 等于以 2 为底 x 的对数，它的图象一定经过哪个点？",
+     "question": "对数函数 y 等于以 2 为底 x 的对数，它的图象一定经过哪个点？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(0,1)"
+      },
+      {
+       "label": "B",
+       "text": "(1,0)"
+      },
+      {
+       "label": "C",
+       "text": "(1,1)"
+      },
+      {
+       "label": "D",
+       "text": "(0,0)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "因为以 2 为底 1 的对数等于 0，所以当 x=1 时 y=0，图象恒过点 (1,0)；点 (0,1) 是指数函数经过的定点。"
+    },
+    {
+     "id": "msj_h006_q4",
+     "topicId": "msj_h006",
+     "prompt": "无论指数函数 y 等于 a 的 x 次方中的底数 a 取哪个大于 0 且不等于 1 的数，函数值 y 始终大于（　）。",
+     "question": "无论指数函数 y 等于 a 的 x 次方中的底数 a 取哪个大于 0 且不等于 1 的数，函数值 y 始终大于（　）。",
+     "answer": "0",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "当 a 大于 0 时，它的任何实数次幂都是正数，所以对任意实数 x 都有 a 的 x 次方大于 0，函数值恒为正。"
+    },
+    {
+     "id": "msj_h006_q5",
+     "topicId": "msj_h006",
+     "prompt": "在区间 (0,+∞) 上，幂函数 y=x 的平方、指数函数 y=2 的 x 次方、对数函数 y 等于以 2 为底 x 的对数都单调递增，当 x 充分大时，函数值增长最快的是哪一个？",
+     "question": "在区间 (0,+∞) 上，幂函数 y=x 的平方、指数函数 y=2 的 x 次方、对数函数 y 等于以 2 为底 x 的对数都单调递增，当 x 充分大时，函数值增长最快的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "幂函数 y=x 的平方"
+      },
+      {
+       "label": "B",
+       "text": "对数函数 y 等于以 2 为底 x 的对数"
+      },
+      {
+       "label": "C",
+       "text": "指数函数 y=2 的 x 次方"
+      },
+      {
+       "label": "D",
+       "text": "三个函数一样快"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "指数增长按倍数翻番，而幂函数只按方次增长，对数增长最慢；x 充分大时 2 的 x 次方远远超过 x 的平方，所以指数函数增长最快。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h007",
+   "description": "三角函数：把角的概念推广到任意角并引入弧度制，用单位圆上点的坐标定义正弦、余弦、正切，研究三角函数的图象与性质并用它刻画周期变化现象。",
+   "mastery_criteria": [
+    "能进行角度与弧度的换算",
+    "能说出正弦、余弦函数的最小正周期与基本性质"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h007_q1",
+     "topicId": "msj_h007",
+     "prompt": "1 弧度的角大约等于多少度？",
+     "question": "1 弧度的角大约等于多少度？",
+     "options": [
+      {
+       "label": "A",
+       "text": "约 57.3 度"
+      },
+      {
+       "label": "B",
+       "text": "60 度"
+      },
+      {
+       "label": "C",
+       "text": "90 度"
+      },
+      {
+       "label": "D",
+       "text": "180 度"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "长度等于半径的弧所对的圆心角是 1 弧度，由 180 度等于 π 弧度可得 1 弧度约等于 57.3 度。"
+    },
+    {
+     "id": "msj_h007_q2",
+     "topicId": "msj_h007",
+     "prompt": "在半径为 2 的圆中，圆心角为 1 弧度时所对的弧长是多少？",
+     "question": "在半径为 2 的圆中，圆心角为 1 弧度时所对的弧长是多少？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "弧长等于圆心角的弧度数的绝对值乘以半径，1 乘 2 得 2，所以弧长为 2，这正是 1 弧度角的定义。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 1}]}"
+    },
+    {
+     "id": "msj_h007_q3",
+     "topicId": "msj_h007",
+     "prompt": "在直角三角形中，sin 30 度等于多少？",
+     "question": "在直角三角形中，sin 30 度等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "二分之根号三"
+      },
+      {
+       "label": "B",
+       "text": "二分之一"
+      },
+      {
+       "label": "C",
+       "text": "二分之根号二"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "在 30 度、60 度、90 度构成的直角三角形中，30 度角所对的直角边是斜边的一半，所以 sin 30 度等于二分之一。"
+    },
+    {
+     "id": "msj_h007_q4",
+     "topicId": "msj_h007",
+     "prompt": "所有与 30 度角终边相同的角，可以统一写成 30 度加上 k 倍的（　）度，其中 k 为整数。",
+     "question": "所有与 30 度角终边相同的角，可以统一写成 30 度加上 k 倍的（　）度，其中 k 为整数。",
+     "answer": "360",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "终边每逆时针或顺时针旋转一整周回到原来的位置，整周角是 360 度，所以与 30 度终边相同的角相差 360 度的整数倍。"
+    },
+    {
+     "id": "msj_h007_q5",
+     "topicId": "msj_h007",
+     "prompt": "函数 y=sin x 的最小正周期是多少？",
+     "question": "函数 y=sin x 的最小正周期是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "二分之π"
+      },
+      {
+       "label": "B",
+       "text": "π"
+      },
+      {
+       "label": "C",
+       "text": "2π"
+      },
+      {
+       "label": "D",
+       "text": "4π"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "正弦函数的图象每隔 2π 重复出现一次，且 2π 是使函数值全部重复的最小正数，所以最小正周期是 2π。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h008",
+   "description": "函数应用：理解函数零点是函数值为零时自变量的值，用零点存在定理与二分法求方程近似解，并能选择恰当的函数模型刻画实际问题。",
+   "mastery_criteria": [
+    "能判断函数零点所在区间",
+    "能说出二分法的基本思想与常用函数模型的增长差异"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h008_q1",
+     "topicId": "msj_h008",
+     "prompt": "使函数值为零的自变量 x 的值，称为这个函数的什么？",
+     "question": "使函数值为零的自变量 x 的值，称为这个函数的什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "零点"
+      },
+      {
+       "label": "B",
+       "text": "顶点"
+      },
+      {
+       "label": "C",
+       "text": "极值点"
+      },
+      {
+       "label": "D",
+       "text": "截距"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "函数 y=f(x) 的零点就是方程 f(x)=0 的实数根，也就是图象与 x 轴交点的横坐标，与顶点、极值点含义不同。"
+    },
+    {
+     "id": "msj_h008_q2",
+     "topicId": "msj_h008",
+     "prompt": "函数 f(x)=2x-6 的零点是多少？",
+     "question": "函数 f(x)=2x-6 的零点是多少？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "令 2x 减 6 等于 0，解得 x 等于 6 除以 2 等于 3，所以函数的零点是 3，即图象与 x 轴交于 (3,0)。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h008_q3",
+     "topicId": "msj_h008",
+     "prompt": "若函数 f(x) 的图象在区间 (a,b) 上连续不断，且 f(a) 与 f(b) 异号，则 f(x) 在 (a,b) 内至少有几个零点？",
+     "question": "若函数 f(x) 的图象在区间 (a,b) 上连续不断，且 f(a) 与 f(b) 异号，则 f(x) 在 (a,b) 内至少有几个零点？",
+     "options": [
+      {
+       "label": "A",
+       "text": "没有零点"
+      },
+      {
+       "label": "B",
+       "text": "一个"
+      },
+      {
+       "label": "C",
+       "text": "两个"
+      },
+      {
+       "label": "D",
+       "text": "无法判断"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "这是零点存在定理：连续函数在区间端点函数值异号时，图象必然穿过 x 轴，所以区间内至少存在一个零点。"
+    },
+    {
+     "id": "msj_h008_q4",
+     "topicId": "msj_h008",
+     "prompt": "用二分法每次把零点所在的区间一分为二，区间长度就缩小为原来的一半，经过 n 次后区间长度是原来的（　）。",
+     "question": "用二分法每次把零点所在的区间一分为二，区间长度就缩小为原来的一半，经过 n 次后区间长度是原来的（　）。",
+     "answer": "2 的 n 次方分之一",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "每次取中点把区间分成相等的两段，长度减半，连续做 n 次就除以 n 次 2，所以区间长度变为原来的 2 的 n 次方分之一。"
+    },
+    {
+     "id": "msj_h008_q5",
+     "topicId": "msj_h008",
+     "prompt": "在下列函数模型中，当自变量充分大时函数值增长最快的是哪一个？",
+     "question": "在下列函数模型中，当自变量充分大时函数值增长最快的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "一次函数"
+      },
+      {
+       "label": "B",
+       "text": "二次函数"
+      },
+      {
+       "label": "C",
+       "text": "指数函数"
+      },
+      {
+       "label": "D",
+       "text": "对数函数"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "一次函数匀速增长，二次函数按平方增长，对数函数增长越来越慢，指数函数按倍数翻番，所以指数函数增长最快。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h009",
+   "description": "专题 数学建模与数学探究：经历从实际问题中提出问题、作出假设、建立模型、求解检验到撰写报告的完整过程，体会用数学语言描述现实世界的方法。",
+   "mastery_criteria": [
+    "能说出数学建模的主要环节",
+    "能对简单实际问题作出合理假设并建立模型"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h009_q1",
+     "topicId": "msj_h009",
+     "prompt": "数学建模解决实际问题的核心工作是什么？",
+     "question": "数学建模解决实际问题的核心工作是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "把实际问题转化为数学问题"
+      },
+      {
+       "label": "B",
+       "text": "只进行数值计算"
+      },
+      {
+       "label": "C",
+       "text": "只画函数图象"
+      },
+      {
+       "label": "D",
+       "text": "只背诵公式"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "数学建模的关键是用数学语言描述实际情境，把实际问题抽象成数学问题，计算与画图只是后续环节中的工具。"
+    },
+    {
+     "id": "msj_h009_q2",
+     "topicId": "msj_h009",
+     "prompt": "某商品原价 100 元，价格上调百分之十后的售价是多少元？",
+     "question": "某商品原价 100 元，价格上调百分之十后的售价是多少元？",
+     "answer": 110,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "上调的金额等于 100 乘 0.1 等于 10 元，原价加涨幅得 100 加 10 等于 110 元，所以售价为 110 元。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 100}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 100}, {\"type\": \"num\", \"value\": 0.1}]}]}"
+    },
+    {
+     "id": "msj_h009_q3",
+     "topicId": "msj_h009",
+     "prompt": "数学探究活动通常从哪一步开始？",
+     "question": "数学探究活动通常从哪一步开始？",
+     "options": [
+      {
+       "label": "A",
+       "text": "抄写例题"
+      },
+      {
+       "label": "B",
+       "text": "提出问题"
+      },
+      {
+       "label": "C",
+       "text": "直接交卷"
+      },
+      {
+       "label": "D",
+       "text": "背记公式"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "数学探究从观察情境、发现并提出有研究价值的问题开始，有了问题才有后续的猜想、论证与结论。"
+    },
+    {
+     "id": "msj_h009_q4",
+     "topicId": "msj_h009",
+     "prompt": "数学建模的成果一般以（　）的形式呈现，说明问题、假设、模型与结论。",
+     "question": "数学建模的成果一般以（　）的形式呈现，说明问题、假设、模型与结论。",
+     "answer": "建模报告",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "建模报告把问题背景、合理假设、模型建立与求解、结果检验和改进方向写清楚，便于交流与复核。"
+    },
+    {
+     "id": "msj_h009_q5",
+     "topicId": "msj_h009",
+     "prompt": "模型求解后与实际问题对照发现偏差较大，正确的做法是什么？",
+     "question": "模型求解后与实际问题对照发现偏差较大，正确的做法是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "直接照用模型结论"
+      },
+      {
+       "label": "B",
+       "text": "修改原始数据使它吻合"
+      },
+      {
+       "label": "C",
+       "text": "修改假设或模型后重新检验"
+      },
+      {
+       "label": "D",
+       "text": "认为数学没有用处"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "偏差大说明假设或模型与实际情况不符，应回到建模环节检查假设、调整模型结构再求解检验，不能改动原始数据迁就结论。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "msj_h1021",
+   "page": 139,
+   "description": "幂函数：认识 y 等于 x 的 a 次方这一族函数的图象，归纳 a 大于 0 与 a 小于 0 时图象的共同特征，并用单调性比较幂值的大小。",
+   "mastery_criteria": [
+    "能判断一个函数是否为幂函数",
+    "能由图象说出幂函数过定点与单调性"
+   ],
+   "misconceptions": [
+    "把 y=2 的 x 次方误认为幂函数，只看形式像就下结论",
+    "认为 y=x 的负一次方在整个定义域上都是减函数，忽略定义域被 0 分成两段"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1021_q1",
+     "topicId": "msj_h1021",
+     "prompt": "下列四个函数中，属于幂函数的是哪一个？",
+     "question": "下列四个函数中，属于幂函数的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y=x 的 3 次方"
+      },
+      {
+       "label": "B",
+       "text": "y=3 的 x 次方"
+      },
+      {
+       "label": "C",
+       "text": "y=x 的平方加 x"
+      },
+      {
+       "label": "D",
+       "text": "y=2x 加 1"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "幂函数要求解析式是 y 等于 x 的 a 次方，系数为 1、底数为 x、指数为常数，只有 y=x 的 3 次方符合。"
+    },
+    {
+     "id": "msj_h1021_q2",
+     "topicId": "msj_h1021",
+     "prompt": "已知幂函数 y=x 的 a 次方的图象经过点 (2,8)，则当 x=3 时函数值是多少？",
+     "question": "已知幂函数 y=x 的 a 次方的图象经过点 (2,8)，则当 x=3 时函数值是多少？",
+     "answer": 27,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "由 2 的 a 次方等于 8 得 a=3，所以函数为 y=x 的 3 次方；把 x=3 代入得 27，即函数值为 27。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_h1021_q3",
+     "topicId": "msj_h1021",
+     "prompt": "幂函数 y=x 的二分之一次方（即根号 x）的定义域是什么？",
+     "question": "幂函数 y=x 的二分之一次方（即根号 x）的定义域是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "全体实数"
+      },
+      {
+       "label": "B",
+       "text": "大于等于 0 的实数"
+      },
+      {
+       "label": "C",
+       "text": "大于 0 的实数"
+      },
+      {
+       "label": "D",
+       "text": "不等于 0 的实数"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "y 等于根号 x 要求被开方数 x 大于等于 0，所以定义域是大于等于 0 的实数，x=0 时函数值为 0，可以取到。"
+    },
+    {
+     "id": "msj_h1021_q4",
+     "topicId": "msj_h1021",
+     "prompt": "已知幂函数 y=x 的 a 次方的图象经过点 (2,8)，则常数 a 的值是（　）。",
+     "question": "已知幂函数 y=x 的 a 次方的图象经过点 (2,8)，则常数 a 的值是（　）。",
+     "answer": "3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "把点 (2,8) 代入得 2 的 a 次方等于 8，而 8 等于 2 的 3 次方，所以 a=3，函数为 y=x 的 3 次方。"
+    },
+    {
+     "id": "msj_h1021_q5",
+     "topicId": "msj_h1021",
+     "prompt": "关于幂函数 y=x 的负一次方（即 y 等于 x 分之一）的单调性，下列说法正确的是哪一个？",
+     "question": "关于幂函数 y=x 的负一次方（即 y 等于 x 分之一）的单调性，下列说法正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "在整个定义域上单调递减"
+      },
+      {
+       "label": "B",
+       "text": "在 (0,+∞) 上单调递增"
+      },
+      {
+       "label": "C",
+       "text": "在 (-∞,0) 和 (0,+∞) 上分别单调递减"
+      },
+      {
+       "label": "D",
+       "text": "在整个定义域上单调递增"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "这个函数的定义域被 x=0 分成两段，在每一段上 y 随 x 增大而减小，但不能说在整个定义域上递减，例如 -1 小于 1 而函数值 -1 也小于 1。"
+    },
+    {
+     "id": "msj_h1021_q6",
+     "topicId": "msj_h1021",
+     "prompt": "已知幂函数 y=x 的 a 次方的图象经过点 (2,四分之一)，则 a 的值是多少？",
+     "question": "已知幂函数 y=x 的 a 次方的图象经过点 (2,四分之一)，则 a 的值是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "-二分之一"
+      },
+      {
+       "label": "C",
+       "text": "二分之一"
+      },
+      {
+       "label": "D",
+       "text": "-2"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由 2 的 a 次方等于四分之一，即 2 的 a 次方等于 2 的 -2 次方，得 a=-2；此时函数为 y=x 的 -2 次方，图象过点 (2,四分之一)。"
+    },
+    {
+     "id": "msj_h1021_q7",
+     "topicId": "msj_h1021",
+     "prompt": "已知幂函数 y=x 的 a 次方的图象经过点 (4,2)，则当 x=9 时函数值是多少？",
+     "question": "已知幂函数 y=x 的 a 次方的图象经过点 (4,2)，则当 x=9 时函数值是多少？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由 4 的 a 次方等于 2 得 a 等于二分之一，函数为 y 等于根号 x；把 x=9 代入得 3，所以函数值为 3。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 9}, {\"type\": \"num\", \"value\": 0.5}]}"
+    },
+    {
+     "id": "msj_h1021_q8",
+     "topicId": "msj_h1021",
+     "prompt": "比较 2.3 的平方与 2.2 的平方的大小，并说明理由。",
+     "question": "比较 2.3 的平方与 2.2 的平方的大小，并说明理由。",
+     "answer": "2.3 的平方大于 2.2 的平方，因为幂函数 y=x 的平方在 (0,+∞) 上单调递增，而 2.3 大于 2.2。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "利用幂函数的单调性比较大小：y=x 的平方在区间 (0,+∞) 上单调递增，自变量大的函数值也大，所以前者大于后者。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1022",
+   "page": 143,
+   "description": "指数函数：掌握 y 等于 a 的 x 次方（a 大于 0 且 a 不等于 1）的图象与性质，会按底数大于 1 或小于 1 分类讨论单调性并比较大小。",
+   "mastery_criteria": [
+    "能由底数范围判断指数函数的单调性",
+    "能用单调性比较两个幂值的大小"
+   ],
+   "misconceptions": [
+    "忽略底数必须大于 0 且不等于 1 的限制",
+    "把 y=2 的 x 次方与 y=x 的平方的图象混为一谈"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1022_q1",
+     "topicId": "msj_h1022",
+     "prompt": "下列四个函数中，属于指数函数的是哪一个？",
+     "question": "下列四个函数中，属于指数函数的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y=2 的 x 次方"
+      },
+      {
+       "label": "B",
+       "text": "y=x 的平方"
+      },
+      {
+       "label": "C",
+       "text": "y 等于以 2 为底 x 的对数"
+      },
+      {
+       "label": "D",
+       "text": "y=2x"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "指数函数是 y 等于 a 的 x 次方且 a 大于 0、a 不等于 1，自变量在指数上；y=x 的平方是幂函数，其余两个也不是指数函数。"
+    },
+    {
+     "id": "msj_h1022_q2",
+     "topicId": "msj_h1022",
+     "prompt": "已知指数函数 y=3 的 x 次方，当 x=2 时函数值是多少？",
+     "question": "已知指数函数 y=3 的 x 次方，当 x=2 时函数值是多少？",
+     "answer": 9,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "把 x=2 代入得 3 的 2 次方，即 3 乘 3 等于 9，所以函数值为 9。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1022_q3",
+     "topicId": "msj_h1022",
+     "prompt": "函数 y 等于二分之一的 x 次方在全体实数上具有什么性质？",
+     "question": "函数 y 等于二分之一的 x 次方在全体实数上具有什么性质？",
+     "options": [
+      {
+       "label": "A",
+       "text": "单调递增"
+      },
+      {
+       "label": "B",
+       "text": "单调递减"
+      },
+      {
+       "label": "C",
+       "text": "先增后减"
+      },
+      {
+       "label": "D",
+       "text": "没有单调性"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "这个指数函数的底数是二分之一，在 0 与 1 之间，所以它在全体实数上单调递减，x 越大函数值越小。"
+    },
+    {
+     "id": "msj_h1022_q4",
+     "topicId": "msj_h1022",
+     "prompt": "指数函数 y 等于 a 的 x 次方（a 大于 0 且 a 不等于 1）的图象恒过定点，这个定点的坐标是（　）。",
+     "question": "指数函数 y 等于 a 的 x 次方（a 大于 0 且 a 不等于 1）的图象恒过定点，这个定点的坐标是（　）。",
+     "answer": "(0,1)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "任何不等于 1 的正数的 0 次方都等于 1，所以 x=0 时 y=1，图象恒过定点 (0,1)，与底数取值无关。"
+    },
+    {
+     "id": "msj_h1022_q5",
+     "topicId": "msj_h1022",
+     "prompt": "设 a=0.8 的 0.7 次方，b=0.8 的 0.9 次方，则 a 与 b 的大小关系是什么？",
+     "question": "设 a=0.8 的 0.7 次方，b=0.8 的 0.9 次方，则 a 与 b 的大小关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 等于 b"
+      },
+      {
+       "label": "B",
+       "text": "a 小于 b"
+      },
+      {
+       "label": "C",
+       "text": "a 大于 b"
+      },
+      {
+       "label": "D",
+       "text": "无法比较"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "底数 0.8 在 0 与 1 之间，函数 y=0.8 的 x 次方单调递减，而 0.7 小于 0.9，所以 a 大于 b。"
+    },
+    {
+     "id": "msj_h1022_q6",
+     "topicId": "msj_h1022",
+     "prompt": "若 2 的 x 次方大于 2 的 y 次方，则 x 与 y 的大小关系是什么？",
+     "question": "若 2 的 x 次方大于 2 的 y 次方，则 x 与 y 的大小关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 小于 y"
+      },
+      {
+       "label": "B",
+       "text": "x 等于 y"
+      },
+      {
+       "label": "C",
+       "text": "无法确定"
+      },
+      {
+       "label": "D",
+       "text": "x 大于 y"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "底数 2 大于 1，函数 y=2 的 x 次方单调递增，函数值大的自变量也大，所以由 2 的 x 次方大于 2 的 y 次方得 x 大于 y。"
+    },
+    {
+     "id": "msj_h1022_q7",
+     "topicId": "msj_h1022",
+     "prompt": "已知指数函数 y=2 的 x 次方，当 x=-2 时函数值是多少？",
+     "question": "已知指数函数 y=2 的 x 次方，当 x=-2 时函数值是多少？",
+     "answer": 0.25,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把 x=-2 代入得 2 的 -2 次方，等于 2 的 2 次方分之一，即四分之一，也就是 0.25。",
+     "verify": "{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": -2}]}"
+    },
+    {
+     "id": "msj_h1022_q8",
+     "topicId": "msj_h1022",
+     "prompt": "比较 1.5 的 2.1 次方与 1.5 的 2.3 次方的大小，并说明理由。",
+     "question": "比较 1.5 的 2.1 次方与 1.5 的 2.3 次方的大小，并说明理由。",
+     "answer": "1.5 的 2.1 次方小于 1.5 的 2.3 次方，因为底数 1.5 大于 1，函数 y=1.5 的 x 次方单调递增，而 2.1 小于 2.3。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "两个幂的底数相同且大于 1，可看作同一个指数函数在两个不同自变量处的函数值，由单调递增直接比较指数大小即可。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1023",
+   "page": 152,
+   "description": "对数函数：由指数式与对数式的互化引入 y 等于以 a 为底 x 的对数，研究其定义域、定点与单调性，并理解它与指数函数图象关于直线 y=x 对称。",
+   "mastery_criteria": [
+    "能说出对数函数的定义域与定点",
+    "能按底数范围判断对数函数的单调性"
+   ],
+   "misconceptions": [
+    "把对数函数的定义域写成全体实数，忽略真数必须大于 0",
+    "把 log 的底数与真数位置写反"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1023_q1",
+     "topicId": "msj_h1023",
+     "prompt": "对数函数 y 等于以 2 为底 x 的对数的定义域是什么？",
+     "question": "对数函数 y 等于以 2 为底 x 的对数的定义域是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(0,+∞)"
+      },
+      {
+       "label": "B",
+       "text": "全体实数"
+      },
+      {
+       "label": "C",
+       "text": "大于等于 1 的实数"
+      },
+      {
+       "label": "D",
+       "text": "(-∞,0)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "对数式要求真数大于 0，所以自变量 x 必须大于 0，定义域是 (0,+∞)，不包含 0。"
+    },
+    {
+     "id": "msj_h1023_q2",
+     "topicId": "msj_h1023",
+     "prompt": "计算 log3 27 加 log3 3 的值（其中 log3 表示以 3 为底的对数）。",
+     "question": "计算 log3 27 加 log3 3 的值（其中 log3 表示以 3 为底的对数）。",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "因为 3 的 3 次方等于 27，所以 log3 27 等于 3；又因为 3 的 1 次方等于 3，所以 log3 3 等于 1；相加得 4。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 1}]}"
+    },
+    {
+     "id": "msj_h1023_q3",
+     "topicId": "msj_h1023",
+     "prompt": "函数 y 等于以 0.5 为底 x 的对数在区间 (0,+∞) 上具有什么性质？",
+     "question": "函数 y 等于以 0.5 为底 x 的对数在区间 (0,+∞) 上具有什么性质？",
+     "options": [
+      {
+       "label": "A",
+       "text": "单调递增"
+      },
+      {
+       "label": "B",
+       "text": "单调递减"
+      },
+      {
+       "label": "C",
+       "text": "先减后增"
+      },
+      {
+       "label": "D",
+       "text": "没有单调性"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "底数 0.5 在 0 与 1 之间，所以对数函数在 (0,+∞) 上单调递减，真数越大函数值反而越小。"
+    },
+    {
+     "id": "msj_h1023_q4",
+     "topicId": "msj_h1023",
+     "prompt": "对数函数 y 等于以 2 为底 x 的对数的图象恒过定点，这个定点的坐标是（　）。",
+     "question": "对数函数 y 等于以 2 为底 x 的对数的图象恒过定点，这个定点的坐标是（　）。",
+     "answer": "(1,0)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "因为以 2 为底 1 的对数等于 0，所以当 x=1 时 y=0，图象恒过定点 (1,0)，与底数取值无关。"
+    },
+    {
+     "id": "msj_h1023_q5",
+     "topicId": "msj_h1023",
+     "prompt": "设 a 等于以 2 为底 3 的对数，b 等于以 3 为底 2 的对数，则 a 与 b 的大小关系是什么？",
+     "question": "设 a 等于以 2 为底 3 的对数，b 等于以 3 为底 2 的对数，则 a 与 b 的大小关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 等于 b"
+      },
+      {
+       "label": "B",
+       "text": "a 小于 b"
+      },
+      {
+       "label": "C",
+       "text": "a 大于 b"
+      },
+      {
+       "label": "D",
+       "text": "无法比较"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "以 2 为底 3 的对数大于以 2 为底 2 的对数即 1，而以 3 为底 2 的对数小于以 3 为底 3 的对数即 1，所以 a 大于 1 大于 b。"
+    },
+    {
+     "id": "msj_h1023_q6",
+     "topicId": "msj_h1023",
+     "prompt": "函数 y 等于以 2 为底 (x-1) 的对数的定义域是什么？",
+     "question": "函数 y 等于以 2 为底 (x-1) 的对数的定义域是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(0,+∞)"
+      },
+      {
+       "label": "B",
+       "text": "全体实数"
+      },
+      {
+       "label": "C",
+       "text": "大于等于 1 的实数"
+      },
+      {
+       "label": "D",
+       "text": "(1,+∞)"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "真数 x-1 必须大于 0，解得 x 大于 1，所以定义域是 (1,+∞)，端点 1 不能取到。"
+    },
+    {
+     "id": "msj_h1023_q7",
+     "topicId": "msj_h1023",
+     "prompt": "计算 log2 8 减 log3 9 的值（其中 log2、log3 分别表示以 2、3 为底的对数）。",
+     "question": "计算 log2 8 减 log3 9 的值（其中 log2、log3 分别表示以 2、3 为底的对数）。",
+     "answer": 1,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "因为 2 的 3 次方等于 8，所以 log2 8 等于 3；因为 3 的 2 次方等于 9，所以 log3 9 等于 2；相减得 1。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1023_q8",
+     "topicId": "msj_h1023",
+     "prompt": "说明对数函数 y 等于以 2 为底 x 的对数与指数函数 y=2 的 x 次方的图象为什么关于直线 y=x 对称。",
+     "question": "说明对数函数 y 等于以 2 为底 x 的对数与指数函数 y=2 的 x 次方的图象为什么关于直线 y=x 对称。",
+     "answer": "因为点 (m,n) 在指数函数图象上等价于 n 等于 2 的 m 次方，也就等价于 m 等于以 2 为底 n 的对数，即点 (n,m) 在对数函数图象上；而 (m,n) 与 (n,m) 关于直线 y=x 对称，所以两图象关于直线 y=x 对称。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "利用指数式与对数式的互化说明两个图象上的点互为交换坐标的关系，交换横纵坐标正是关于直线 y=x 的对称变换。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1024",
+   "page": 160,
+   "description": "钢琴与指数曲线：以十二平均律为背景，认识音的频率随音高按固定倍数变化，用指数函数刻画这种成倍增长的规律。",
+   "mastery_criteria": [
+    "能用指数函数表示音高与频率的关系",
+    "能解释八度翻倍与半音比值相同的道理"
+   ],
+   "misconceptions": [
+    "把频率随音高的变化误当成等差变化",
+    "认为相邻半音的频率差在各音区一样大"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1024_q1",
+     "topicId": "msj_h1024",
+     "prompt": "钢琴上每升高一个八度，同一个音名的频率变为原来的多少倍？",
+     "question": "钢琴上每升高一个八度，同一个音名的频率变为原来的多少倍？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2 倍"
+      },
+      {
+       "label": "B",
+       "text": "3 倍"
+      },
+      {
+       "label": "C",
+       "text": "12 倍"
+      },
+      {
+       "label": "D",
+       "text": "保持不变"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "十二平均律规定高八度的音与低八度的同名音频率之比为 2，所以每升高一个八度，频率变为原来的 2 倍。"
+    },
+    {
+     "id": "msj_h1024_q2",
+     "topicId": "msj_h1024",
+     "prompt": "某音的标准频率为 440 赫兹，升高一个八度后它的频率是多少赫兹？",
+     "question": "某音的标准频率为 440 赫兹，升高一个八度后它的频率是多少赫兹？",
+     "answer": 880,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "升高一个八度频率翻倍，用 440 乘 2 得 880，所以升高一个八度后频率是 880 赫兹。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 440}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1024_q3",
+     "topicId": "msj_h1024",
+     "prompt": "若第一个音的频率为 f，那么升高 n 个八度后的频率可以表示为哪一个？",
+     "question": "若第一个音的频率为 f，那么升高 n 个八度后的频率可以表示为哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "f 加 n"
+      },
+      {
+       "label": "B",
+       "text": "f 乘以 2 的 n 次方"
+      },
+      {
+       "label": "C",
+       "text": "f 乘以 n"
+      },
+      {
+       "label": "D",
+       "text": "f 加 2n"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "每升高一个八度乘一次 2，升高 n 个八度就乘 n 次 2，即 f 乘以 2 的 n 次方，这是典型的指数增长。"
+    },
+    {
+     "id": "msj_h1024_q4",
+     "topicId": "msj_h1024",
+     "prompt": "十二平均律把一个八度平均分成 12 个半音，相邻两个半音的频率之比是 2 的（　）次方根。",
+     "question": "十二平均律把一个八度平均分成 12 个半音，相邻两个半音的频率之比是 2 的（　）次方根。",
+     "answer": "12",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "相邻 12 个半音的频率比连乘起来正好等于一个八度的 2 倍，所以每个半音的频率比是 2 的 12 次方根。"
+    },
+    {
+     "id": "msj_h1024_q5",
+     "topicId": "msj_h1024",
+     "prompt": "已知 A 音的频率是 440 赫兹，若某音的频率是 1760 赫兹，则这个音比 A 音高多少个八度？",
+     "question": "已知 A 音的频率是 440 赫兹，若某音的频率是 1760 赫兹，则这个音比 A 音高多少个八度？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 个八度"
+      },
+      {
+       "label": "B",
+       "text": "3 个八度"
+      },
+      {
+       "label": "C",
+       "text": "2 个八度"
+      },
+      {
+       "label": "D",
+       "text": "4 个八度"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "1760 除以 440 等于 4，而 4 等于 2 的 2 次方，每升高一个八度乘 2，所以这个音比 A 音高 2 个八度。"
+    },
+    {
+     "id": "msj_h1024_q6",
+     "topicId": "msj_h1024",
+     "prompt": "把钢琴键的序号作为自变量、把对应音的频率作为函数值，画出的图象最接近下列哪种曲线？",
+     "question": "把钢琴键的序号作为自变量、把对应音的频率作为函数值，画出的图象最接近下列哪种曲线？",
+     "options": [
+      {
+       "label": "A",
+       "text": "直线"
+      },
+      {
+       "label": "B",
+       "text": "抛物线"
+      },
+      {
+       "label": "C",
+       "text": "双曲线"
+      },
+      {
+       "label": "D",
+       "text": "指数曲线"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "键序号每增加 12，频率就乘 2，函数值按固定倍数增长，图象是上升越来越快的指数曲线，不是直线或抛物线。"
+    },
+    {
+     "id": "msj_h1024_q7",
+     "topicId": "msj_h1024",
+     "prompt": "某音频率为 220 赫兹，升高两个八度后它的频率是多少赫兹？",
+     "question": "某音频率为 220 赫兹，升高两个八度后它的频率是多少赫兹？",
+     "answer": 880,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "每升高一个八度频率乘 2，升高两个八度就乘 4，用 220 乘 4 得 880，所以频率变为 880 赫兹。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 220}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msj_h1024_q8",
+     "topicId": "msj_h1024",
+     "prompt": "用指数函数说明：为什么音区越高，相邻两个半音之间的频率差越大。",
+     "question": "用指数函数说明：为什么音区越高，相邻两个半音之间的频率差越大。",
+     "answer": "因为频率随半音序号按指数规律增长，形式为 f 乘以 2 的 12 分之 n 次方；指数函数增长越来越快，序号每加 1 乘的都是同一个倍数，基数越大增量越大，所以高音区相邻半音的频率差更大。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "相邻半音的频率比固定为一个大于 1 的常数，而频率值本身随序号指数增长，同一比例作用在更大的数上得到的差也更大。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1025",
+   "page": 169,
+   "description": "角与弧度：把角的概念由 0 度到 360 度推广到任意角，认识象限角与终边相同的角，掌握角度制与弧度制的换算及弧长、扇形面积公式。",
+   "mastery_criteria": [
+    "能把任意角化为终边相同的角并判断象限",
+    "会用弧长与扇形面积公式计算"
+   ],
+   "misconceptions": [
+    "把负角误认为不能参与旋转，分不清角的旋转方向",
+    "用角度制代入弧长公式 l 等于 α 乘 r，忽略 α 必须用弧度"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1025_q1",
+     "topicId": "msj_h1025",
+     "prompt": "下列各角中，属于第一象限角的是哪一个？",
+     "question": "下列各角中，属于第一象限角的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "370 度"
+      },
+      {
+       "label": "B",
+       "text": "180 度"
+      },
+      {
+       "label": "C",
+       "text": "270 度"
+      },
+      {
+       "label": "D",
+       "text": "-90 度"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "370 度减去 360 度得 10 度，终边落在第一象限；180 度与 -90 度的终边在坐标轴上，270 度的终边在 y 轴负半轴。"
+    },
+    {
+     "id": "msj_h1025_q2",
+     "topicId": "msj_h1025",
+     "prompt": "在半径为 3 的圆中，圆心角为 2 弧度，它所对的弧长是多少？",
+     "question": "在半径为 3 的圆中，圆心角为 2 弧度，它所对的弧长是多少？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "弧长等于圆心角的弧度数乘以半径，这里 2 乘 3 等于 6，所以弧长为 6。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1025_q3",
+     "topicId": "msj_h1025",
+     "prompt": "下列哪个角与 -30 度的角终边相同？",
+     "question": "下列哪个角与 -30 度的角终边相同？",
+     "options": [
+      {
+       "label": "A",
+       "text": "30 度"
+      },
+      {
+       "label": "B",
+       "text": "330 度"
+      },
+      {
+       "label": "C",
+       "text": "300 度"
+      },
+      {
+       "label": "D",
+       "text": "390 度"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "与 -30 度终边相同的角写成 -30 度加 k 倍 360 度，取 k=1 得 330 度，它的终边与 -30 度的终边重合。"
+    },
+    {
+     "id": "msj_h1025_q4",
+     "topicId": "msj_h1025",
+     "prompt": "1 弧度约等于多少度（结果保留一位小数）？（　）",
+     "question": "1 弧度约等于多少度（结果保留一位小数）？（　）",
+     "answer": "57.3 度",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "因为 π 弧度等于 180 度，所以 1 弧度等于 180 除以 π 度，取 π 约为 3.1416 计算得约 57.3 度。"
+    },
+    {
+     "id": "msj_h1025_q5",
+     "topicId": "msj_h1025",
+     "prompt": "若角 α 是第二象限角，则二分之 α 的终边可能落在哪些象限？",
+     "question": "若角 α 是第二象限角，则二分之 α 的终边可能落在哪些象限？",
+     "options": [
+      {
+       "label": "A",
+       "text": "第一或第二象限"
+      },
+      {
+       "label": "B",
+       "text": "第二或第四象限"
+      },
+      {
+       "label": "C",
+       "text": "第一或第三象限"
+      },
+      {
+       "label": "D",
+       "text": "第三或第四象限"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "设 α 在 90 度到 180 度之间加 k 倍 360 度，除以 2 后落在 45 度到 90 度加 k 倍 180 度之间，k 为偶数时在第一象限，k 为奇数时在第三象限。"
+    },
+    {
+     "id": "msj_h1025_q6",
+     "topicId": "msj_h1025",
+     "prompt": "半径为 2、圆心角为三分之π 的扇形的面积是多少？",
+     "question": "半径为 2、圆心角为三分之π 的扇形的面积是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "三分之π"
+      },
+      {
+       "label": "B",
+       "text": "六分之π"
+      },
+      {
+       "label": "C",
+       "text": "三分之四π"
+      },
+      {
+       "label": "D",
+       "text": "三分之二π"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "扇形面积等于二分之一乘圆心角的弧度数再乘半径的平方，即二分之一乘三分之π 再乘 4，结果为三分之二π。"
+    },
+    {
+     "id": "msj_h1025_q7",
+     "topicId": "msj_h1025",
+     "prompt": "半径为 4、圆心角为 3 弧度的扇形的面积是多少？",
+     "question": "半径为 4、圆心角为 3 弧度的扇形的面积是多少？",
+     "answer": 24,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "扇形面积等于二分之一乘圆心角的弧度数再乘半径的平方，半径的平方为 16，二分之一乘 3 乘 16 得 24。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 16}]}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1025_q8",
+     "topicId": "msj_h1025",
+     "prompt": "说明 1 弧度的角是怎样规定的，并写出它与度的换算关系。",
+     "question": "说明 1 弧度的角是怎样规定的，并写出它与度的换算关系。",
+     "answer": "在圆中取一段长度等于半径的弧，这段弧所对的圆心角就是 1 弧度的角；因为半径为 r 的圆周长是 2πr，对应 360 度，所以 2π 弧度等于 360 度，即 π 弧度等于 180 度。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "弧度制用弧长与半径的比值度量角的大小，与圆的大小无关；整圆对应 2π 弧度，由此得到两种角度制的换算关系。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1026",
+   "page": 177,
+   "description": "三角函数概念：借助平面直角坐标系中角的终边上点的坐标定义任意角的正弦、余弦、正切，并归纳各象限三角函数值的符号与同角三角函数关系。",
+   "mastery_criteria": [
+    "能由终边上一点的坐标求三角函数值",
+    "能用同角关系式由一个函数值求另一个"
+   ],
+   "misconceptions": [
+    "把终边上点的横坐标直接当成余弦值，忘记除以到原点的距离",
+    "认为三角函数值的符号只与角的大小有关"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1026_q1",
+     "topicId": "msj_h1026",
+     "prompt": "三角函数 sin 0 的值是多少？",
+     "question": "三角函数 sin 0 的值是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "0"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "-1"
+      },
+      {
+       "label": "D",
+       "text": "二分之一"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "0 弧度角的终边与 x 轴正半轴重合，终边上取点 (1,0)，纵坐标为 0，所以 sin 0 等于 0。"
+    },
+    {
+     "id": "msj_h1026_q2",
+     "topicId": "msj_h1026",
+     "prompt": "已知角 α 的终边经过点 (3,4)，则 sin α 的值是多少？",
+     "question": "已知角 α 的终边经过点 (3,4)，则 sin α 的值是多少？",
+     "answer": 0.8,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "点到原点的距离等于根号下 3 的平方加 4 的平方，即 5；sin α 等于纵坐标除以距离，4 除以 5 等于 0.8。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "msj_h1026_q3",
+     "topicId": "msj_h1026",
+     "prompt": "三角函数 cos 90 度的值是多少？",
+     "question": "三角函数 cos 90 度的值是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "0"
+      },
+      {
+       "label": "C",
+       "text": "-1"
+      },
+      {
+       "label": "D",
+       "text": "二分之一"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "90 度角的终边在 y 轴正半轴上，取点 (0,1)，横坐标为 0，所以 cos 90 度等于 0。"
+    },
+    {
+     "id": "msj_h1026_q4",
+     "topicId": "msj_h1026",
+     "prompt": "对同一个角 α，sin α 的平方与 cos α 的平方之和恒等于（　）。",
+     "question": "对同一个角 α，sin α 的平方与 cos α 的平方之和恒等于（　）。",
+     "answer": "1",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由定义，正弦是纵坐标除以距离、余弦是横坐标除以距离，两者平方和等于距离平方分之横纵坐标平方和，而横纵坐标平方和等于距离平方，所以结果为 1。"
+    },
+    {
+     "id": "msj_h1026_q5",
+     "topicId": "msj_h1026",
+     "prompt": "若 sin α 小于 0 且 cos α 大于 0，则角 α 的终边落在第几象限？",
+     "question": "若 sin α 小于 0 且 cos α 大于 0，则角 α 的终边落在第几象限？",
+     "options": [
+      {
+       "label": "A",
+       "text": "第一象限"
+      },
+      {
+       "label": "B",
+       "text": "第二象限"
+      },
+      {
+       "label": "C",
+       "text": "第四象限"
+      },
+      {
+       "label": "D",
+       "text": "第三象限"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "正弦为负说明纵坐标为负，余弦为正说明横坐标为正，横坐标正、纵坐标负的点在第四象限，所以 α 是第四象限角。"
+    },
+    {
+     "id": "msj_h1026_q6",
+     "topicId": "msj_h1026",
+     "prompt": "已知 sin α 等于五分之三，且 α 是第二象限角，则 cos α 的值是多少？",
+     "question": "已知 sin α 等于五分之三，且 α 是第二象限角，则 cos α 的值是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "五分之四"
+      },
+      {
+       "label": "B",
+       "text": "四分之三"
+      },
+      {
+       "label": "C",
+       "text": "-四分之三"
+      },
+      {
+       "label": "D",
+       "text": "-五分之四"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由平方关系得 cos α 的平方等于 1 减二十五分之九，即二十五分之十六；第二象限角的余弦为负，所以 cos α 等于 -五分之四。"
+    },
+    {
+     "id": "msj_h1026_q7",
+     "topicId": "msj_h1026",
+     "prompt": "已知角 α 的终边经过点 (-3,4)，则 cos α 的值是多少？",
+     "question": "已知角 α 的终边经过点 (-3,4)，则 cos α 的值是多少？",
+     "answer": -0.6,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "点到原点的距离为 5，cos α 等于横坐标除以距离，即 -3 除以 5，结果为 -0.6，负号说明是第二象限角。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": -3}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "msj_h1026_q8",
+     "topicId": "msj_h1026",
+     "prompt": "说明为什么任意角三角函数值的符号由角的终边所在象限决定。",
+     "question": "说明为什么任意角三角函数值的符号由角的终边所在象限决定。",
+     "answer": "正弦值等于终边上点的纵坐标除以该点到原点的距离，余弦值等于横坐标除以距离，而距离恒为正；所以正弦的符号由纵坐标的正负决定，余弦的符号由横坐标的正负决定，正切是两者之比，符号同样由横纵坐标的正负决定，而横纵坐标的正负正是由终边所在象限决定的。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "三角函数值由终边上点的坐标与距离之比定义，分母距离恒正，因此符号完全由坐标的正负即终边所在象限决定。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1027",
+   "page": 194,
+   "description": "三角函数的图象和性质：用五点法画正弦、余弦函数的图象，归纳周期性、奇偶性与单调性，并研究 y 等于 A sin(ωx+φ) 的振幅、周期与图象变换。",
+   "mastery_criteria": [
+    "能说出正弦、余弦函数的最小正周期与单调区间",
+    "能由解析式读出振幅与周期"
+   ],
+   "misconceptions": [
+    "把周期写成 2π 而不除以 ω",
+    "混淆左右平移的方向：左加右减用反"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1027_q1",
+     "topicId": "msj_h1027",
+     "prompt": "函数 y=cos x 的最小正周期是多少？",
+     "question": "函数 y=cos x 的最小正周期是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2π"
+      },
+      {
+       "label": "B",
+       "text": "π"
+      },
+      {
+       "label": "C",
+       "text": "二分之π"
+      },
+      {
+       "label": "D",
+       "text": "4π"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "余弦函数的图象每隔 2π 重复一次，且 2π 是使函数值全部重复的最小正数，所以最小正周期为 2π。"
+    },
+    {
+     "id": "msj_h1027_q2",
+     "topicId": "msj_h1027",
+     "prompt": "函数 y=2sin x 加 1 的最大值是多少？",
+     "question": "函数 y=2sin x 加 1 的最大值是多少？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "sin x 的最大值为 1，此时 2 乘 1 加 1 等于 3，所以函数的最大值是 3，最小值则是 -1。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 1}]}"
+    },
+    {
+     "id": "msj_h1027_q3",
+     "topicId": "msj_h1027",
+     "prompt": "函数 y=sin x 在区间 (0,二分之π) 上具有什么性质？",
+     "question": "函数 y=sin x 在区间 (0,二分之π) 上具有什么性质？",
+     "options": [
+      {
+       "label": "A",
+       "text": "单调递减"
+      },
+      {
+       "label": "B",
+       "text": "单调递增"
+      },
+      {
+       "label": "C",
+       "text": "先增后减"
+      },
+      {
+       "label": "D",
+       "text": "保持不变"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "在第一象限对应的这段区间上，单位圆上点的纵坐标随角的增大而增大，所以正弦函数在此区间上单调递增。"
+    },
+    {
+     "id": "msj_h1027_q4",
+     "topicId": "msj_h1027",
+     "prompt": "函数 y=sin 2x 的最小正周期是（　）。",
+     "question": "函数 y=sin 2x 的最小正周期是（　）。",
+     "answer": "π",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "形如 y=sin(ωx) 的函数最小正周期为 2π 除以 ω 的绝对值，这里 ω=2，所以周期是 2π 除以 2 等于 π。"
+    },
+    {
+     "id": "msj_h1027_q5",
+     "topicId": "msj_h1027",
+     "prompt": "把 y=sin x 的图象上所有点向左平移三分之π 个单位长度，得到的图象对应的函数是哪一个？",
+     "question": "把 y=sin x 的图象上所有点向左平移三分之π 个单位长度，得到的图象对应的函数是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y=sin(x 减三分之π)"
+      },
+      {
+       "label": "B",
+       "text": "y=sin x 加三分之π"
+      },
+      {
+       "label": "C",
+       "text": "y=sin(x 加三分之π)"
+      },
+      {
+       "label": "D",
+       "text": "y=sin 3x"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "图象左右平移遵循左加右减：向左平移三分之π 个单位，就是把自变量 x 换成 x 加三分之π，所以得到 y=sin(x 加三分之π)。"
+    },
+    {
+     "id": "msj_h1027_q6",
+     "topicId": "msj_h1027",
+     "prompt": "函数 y=2sin(3x 加四分之π) 的最小正周期是多少？",
+     "question": "函数 y=2sin(3x 加四分之π) 的最小正周期是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "三分之π"
+      },
+      {
+       "label": "B",
+       "text": "3π"
+      },
+      {
+       "label": "C",
+       "text": "2π"
+      },
+      {
+       "label": "D",
+       "text": "三分之二π"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "最小正周期只由 x 的系数决定，等于 2π 除以 3，即三分之二π，与振幅 2 和初相四分之π 无关。"
+    },
+    {
+     "id": "msj_h1027_q7",
+     "topicId": "msj_h1027",
+     "prompt": "函数 y=2cos x 在 x=π 时的函数值是多少？",
+     "question": "函数 y=2cos x 在 x=π 时的函数值是多少？",
+     "answer": -2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "cos π 等于 -1，代入得 2 乘 -1 等于 -2，所以函数值为 -2，这正是余弦曲线的最低点。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": -1}]}"
+    },
+    {
+     "id": "msj_h1027_q8",
+     "topicId": "msj_h1027",
+     "prompt": "写出用五点法画 y=sin x 在区间 0 到 2π 上图象时的五个关键点。",
+     "question": "写出用五点法画 y=sin x 在区间 0 到 2π 上图象时的五个关键点。",
+     "answer": "五个关键点依次是 (0,0)、(二分之π,1)、(π,0)、(二分之三π,-1)、(2π,0)，其中三个是零点，两个是最高点与最低点，描出后用光滑曲线连接即可。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "五点法取的是使正弦值依次为 0、1、0、-1、0 的自变量，它们把周期四等分，决定了图象的走势与最值位置。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1028",
+   "page": 214,
+   "description": "三角函数应用：用 y 等于 A sin(ωt+φ) 加 k 刻画简谐运动与周期变化现象，理解振幅、周期、频率、相位的实际含义并解决简单实际问题。",
+   "mastery_criteria": [
+    "能由解析式说出振幅、周期并求最值",
+    "能把实际问题中的周期变化转化为三角函数模型"
+   ],
+   "misconceptions": [
+    "把振幅当成最大值",
+    "求周期时忘记 2π 要除以 ω"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1028_q1",
+     "topicId": "msj_h1028",
+     "prompt": "在简谐运动 y=A sin(ωt+φ) 中，常数 A（A 大于 0）表示什么？",
+     "question": "在简谐运动 y=A sin(ωt+φ) 中，常数 A（A 大于 0）表示什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "振幅"
+      },
+      {
+       "label": "B",
+       "text": "周期"
+      },
+      {
+       "label": "C",
+       "text": "频率"
+      },
+      {
+       "label": "D",
+       "text": "初相"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "A 表示质点离开平衡位置的最大距离，也就是振幅；周期由 ω 决定，φ 是初相，三者含义不同。"
+    },
+    {
+     "id": "msj_h1028_q2",
+     "topicId": "msj_h1028",
+     "prompt": "某简谐运动的位移 z 与时间 t 满足 z=3sin(二分之π 乘以 t)，则它的周期是多少？",
+     "question": "某简谐运动的位移 z 与时间 t 满足 z=3sin(二分之π 乘以 t)，则它的周期是多少？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "最小正周期等于 2π 除以 ω，这里 ω 等于二分之π，所以周期为 2π 除以二分之π 等于 4。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 0.5}]}"
+    },
+    {
+     "id": "msj_h1028_q3",
+     "topicId": "msj_h1028",
+     "prompt": "水轮上点 P 到水面的距离 h 与时间 t 满足 h=3sin(ωt)+2，则点 P 到水面距离的最大值是多少米？",
+     "question": "水轮上点 P 到水面的距离 h 与时间 t 满足 h=3sin(ωt)+2，则点 P 到水面距离的最大值是多少米？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "正弦部分的最大值为 1，此时 h 等于 3 乘 1 加 2 等于 5，所以点 P 到水面的最大距离是 5 米。"
+    },
+    {
+     "id": "msj_h1028_q4",
+     "topicId": "msj_h1028",
+     "prompt": "在 y=A sin(ωt+φ) 中，ωt 加 φ 称为这个简谐运动的（　）。",
+     "question": "在 y=A sin(ωt+φ) 中，ωt 加 φ 称为这个简谐运动的（　）。",
+     "answer": "相位",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "ωt 与 φ 的和决定时刻 t 对应的正弦值，称为相位；t=0 时的 φ 称为初相，二者是描述振动状态的量。"
+    },
+    {
+     "id": "msj_h1028_q5",
+     "topicId": "msj_h1028",
+     "prompt": "某港口的水深 h（米）与时间 t（小时）满足 h=2.5sin(六分之π 乘以 t) 加 5，则水深的最大值是多少米？",
+     "question": "某港口的水深 h（米）与时间 t（小时）满足 h=2.5sin(六分之π 乘以 t) 加 5，则水深的最大值是多少米？",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "2.5"
+      },
+      {
+       "label": "C",
+       "text": "7.5"
+      },
+      {
+       "label": "D",
+       "text": "10"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "水深最大值出现在正弦值为 1 的时刻，此时 h 等于 2.5 加 5 等于 7.5，所以最大水深为 7.5 米。"
+    },
+    {
+     "id": "msj_h1028_q6",
+     "topicId": "msj_h1028",
+     "prompt": "已知某周期变化的量满足 h=3sin(六分之π 乘以 t) 加 4，则当 t=3 时 h 的值是多少？",
+     "question": "已知某周期变化的量满足 h=3sin(六分之π 乘以 t) 加 4，则当 t=3 时 h 的值是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "1"
+      },
+      {
+       "label": "D",
+       "text": "7"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "t=3 时六分之π 乘 3 等于二分之π，正弦值为 1，所以 h 等于 3 乘 1 加 4 等于 7。"
+    },
+    {
+     "id": "msj_h1028_q7",
+     "topicId": "msj_h1028",
+     "prompt": "已知 h=2sin(二分之π 乘以 t) 加 3，则当 t=1 时 h 的值是多少？",
+     "question": "已知 h=2sin(二分之π 乘以 t) 加 3，则当 t=1 时 h 的值是多少？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "t=1 时二分之π 乘 1 等于二分之π，其正弦值为 1，所以 h 等于 2 乘 1 加 3 等于 5。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_h1028_q8",
+     "topicId": "msj_h1028",
+     "prompt": "说明用三角函数模型刻画周期变化现象的一般步骤。",
+     "question": "说明用三角函数模型刻画周期变化现象的一般步骤。",
+     "answer": "先观察数据或现象，确认变化具有周期性并找出最大值与最小值；再用最大值与最小值求出振幅 A 和平衡位置 k；由相邻两次同名最值的时间间隔或一次完整变化的时间求出周期，进而得到 ω；最后代入一个已知时刻的数据求出初相 φ，得到解析式并回到实际检验。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "建模的关键是把最大值、最小值、周期这些可测的量与 A、k、ω 对应起来，剩余的初相用一组数据确定，模型建立后还要用其他数据检验。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1029",
+   "page": 218,
+   "description": "应用与建模 港口水深的变化与三角函数：以港口水深随潮汐周期变化为背景，建立 h 等于 A sin(ωt+φ) 加 k 的模型，并据此判断船舶进出港的时间。",
+   "mastery_criteria": [
+    "能由最高最低水位求出振幅与平衡位置",
+    "能用模型判断某一时刻的水深或进出港条件"
+   ],
+   "misconceptions": [
+    "把最高水位直接当成振幅",
+    "忽略模型中的 k，认为水深在 0 与 A 之间变化"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1029_q1",
+     "topicId": "msj_h1029",
+     "prompt": "港口水深随时间上下起伏、周而复始，最适合用哪一类函数刻画？",
+     "question": "港口水深随时间上下起伏、周而复始，最适合用哪一类函数刻画？",
+     "options": [
+      {
+       "label": "A",
+       "text": "三角函数"
+      },
+      {
+       "label": "B",
+       "text": "一次函数"
+      },
+      {
+       "label": "C",
+       "text": "反比例函数"
+      },
+      {
+       "label": "D",
+       "text": "指数函数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "水深随潮汐做周期性的往复变化，有明显的最大值、最小值与固定周期，这正是三角函数模型的特征。"
+    },
+    {
+     "id": "msj_h1029_q2",
+     "topicId": "msj_h1029",
+     "prompt": "某港口水深 h（米）与时间 t（小时）满足 h=3sin(六分之π 乘以 t) 加 5，则水深的最小值是多少米？",
+     "question": "某港口水深 h（米）与时间 t（小时）满足 h=3sin(六分之π 乘以 t) 加 5，则水深的最小值是多少米？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "正弦部分的最小值为 -1，此时 h 等于 5 减 3 等于 2，所以最小水深为 2 米，也就是低潮时的水深。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_h1029_q3",
+     "topicId": "msj_h1029",
+     "prompt": "在上题模型中，这个港口一天内最高水位与最低水位的差（潮差）是多少米？",
+     "question": "在上题模型中，这个港口一天内最高水位与最低水位的差（潮差）是多少米？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "最高水位为 5 加 3 等于 8，最低水位为 5 减 3 等于 2，两者相差 6 米，这个差等于振幅的 2 倍。"
+    },
+    {
+     "id": "msj_h1029_q4",
+     "topicId": "msj_h1029",
+     "prompt": "模型 h=3sin(六分之π 乘以 t) 加 5 中，水深的平均值（平衡位置）是（　）米。",
+     "question": "模型 h=3sin(六分之π 乘以 t) 加 5 中，水深的平均值（平衡位置）是（　）米。",
+     "answer": "5",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "常数 5 表示水深围绕它上下波动，正弦部分正负相抵，所以平均水深就是 5 米，也是最高最低水位的平均数。"
+    },
+    {
+     "id": "msj_h1029_q5",
+     "topicId": "msj_h1029",
+     "prompt": "模型 h=4sin(六分之π 乘以 t) 加 6 中，水深变化的周期是多少小时？",
+     "question": "模型 h=4sin(六分之π 乘以 t) 加 6 中，水深变化的周期是多少小时？",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "12"
+      },
+      {
+       "label": "D",
+       "text": "24"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "周期等于 2π 除以 ω，这里 ω 等于六分之π，所以周期为 2π 除以六分之π 等于 12 小时，即潮汐的半日周期。"
+    },
+    {
+     "id": "msj_h1029_q6",
+     "topicId": "msj_h1029",
+     "prompt": "模型 h=3sin(六分之π 乘以 t) 加 5 中（t 从 0 时开始计时），t=0 时的水深是多少米？",
+     "question": "模型 h=3sin(六分之π 乘以 t) 加 5 中（t 从 0 时开始计时），t=0 时的水深是多少米？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "t=0 时正弦值为 0，所以 h 等于 5，说明计时起点正好选在水深等于平均值的时刻。"
+    },
+    {
+     "id": "msj_h1029_q7",
+     "topicId": "msj_h1029",
+     "prompt": "模型 h=3sin(六分之π 乘以 t) 加 5 中，t=3 时的水深是多少米？",
+     "question": "模型 h=3sin(六分之π 乘以 t) 加 5 中，t=3 时的水深是多少米？",
+     "answer": 8,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "t=3 时六分之π 乘 3 等于二分之π，正弦值为 1，所以 h 等于 3 加 5 等于 8，此时正是高潮位。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "msj_h1029_q8",
+     "topicId": "msj_h1029",
+     "prompt": "已知某港口最高水位为 8 米、最低水位为 2 米，水深变化可写成 h=A sin(ωt+φ) 加 k，说明如何求出 A 与 k。",
+     "question": "已知某港口最高水位为 8 米、最低水位为 2 米，水深变化可写成 h=A sin(ωt+φ) 加 k，说明如何求出 A 与 k。",
+     "answer": "振幅 A 等于最高水位与最低水位之差的一半，即 (8-2) 除以 2 等于 3；k 等于最高水位与最低水位的平均数，即 (8+2) 除以 2 等于 5，于是模型形如 h=3sin(ωt+φ) 加 5。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "最高值等于 k 加 A、最低值等于 k 减 A，两式相加除以 2 得 k，相减除以 2 得 A，这是由最值反求模型参数的通用方法。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1030",
+   "page": 229,
+   "description": "二分法与求方程近似解：由函数零点与方程根的联系出发，掌握零点存在定理，用二分法逐步缩小零点所在区间求出满足精确度的近似解。",
+   "mastery_criteria": [
+    "能由图象判断零点所在区间",
+    "能按步骤用二分法求方程近似解"
+   ],
+   "misconceptions": [
+    "把零点当成点坐标，答成 (3,0) 而不是 3",
+    "认为端点函数值同号就一定没有零点"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1030_q1",
+     "topicId": "msj_h1030",
+     "prompt": "函数 y=x 的平方减 1 的零点是什么？",
+     "question": "函数 y=x 的平方减 1 的零点是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 和 -1"
+      },
+      {
+       "label": "B",
+       "text": "只有 1"
+      },
+      {
+       "label": "C",
+       "text": "只有 -1"
+      },
+      {
+       "label": "D",
+       "text": "0"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "令 x 的平方减 1 等于 0，得 x 的平方等于 1，解得 x 等于 1 或 x 等于 -1，所以函数有两个零点。"
+    },
+    {
+     "id": "msj_h1030_q2",
+     "topicId": "msj_h1030",
+     "prompt": "函数 f(x)=3x-6 的零点是多少？",
+     "question": "函数 f(x)=3x-6 的零点是多少？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "令 3x 减 6 等于 0，解得 x 等于 6 除以 3 等于 2，所以零点是 2，即图象与 x 轴交于 (2,0)。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_h1030_q3",
+     "topicId": "msj_h1030",
+     "prompt": "已知函数 f(x) 在区间 1 到 2 上连续，且 f(1)=-1，f(2)=3，则 f(x) 在区间 (1,2) 内的情况是什么？",
+     "question": "已知函数 f(x) 在区间 1 到 2 上连续，且 f(1)=-1，f(2)=3，则 f(x) 在区间 (1,2) 内的情况是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "一定没有零点"
+      },
+      {
+       "label": "B",
+       "text": "一定有零点"
+      },
+      {
+       "label": "C",
+       "text": "可能有无数个零点"
+      },
+      {
+       "label": "D",
+       "text": "无法判断"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "函数图象连续且两端函数值异号，由零点存在定理可知图象必穿过 x 轴，所以区间内一定有零点。"
+    },
+    {
+     "id": "msj_h1030_q4",
+     "topicId": "msj_h1030",
+     "prompt": "用二分法求零点时，若 f(a) 与 f(m) 异号（m 为区间中点），则零点所在的区间应取（　）。",
+     "question": "用二分法求零点时，若 f(a) 与 f(m) 异号（m 为区间中点），则零点所在的区间应取（　）。",
+     "answer": "a 到 m",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "零点存在定理要求区间两端函数值异号，f(a) 与 f(m) 异号说明零点落在以 a、m 为端点的这段区间内，因此保留这一半。"
+    },
+    {
+     "id": "msj_h1030_q5",
+     "topicId": "msj_h1030",
+     "prompt": "用二分法求 f(x)=x 的平方减 2 在区间 (1,2) 内的零点，要求精确到 0.1，初始区间长度为 1，至少需要二分几次？",
+     "question": "用二分法求 f(x)=x 的平方减 2 在区间 (1,2) 内的零点，要求精确到 0.1，初始区间长度为 1，至少需要二分几次？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2 次"
+      },
+      {
+       "label": "B",
+       "text": "3 次"
+      },
+      {
+       "label": "C",
+       "text": "4 次"
+      },
+      {
+       "label": "D",
+       "text": "5 次"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "每次二分区间长度减半，二分 n 次后长度为 2 的 n 次方分之一，需小于 0.1，因为十六分之一约等于 0.0625 已小于 0.1 而八分之一为 0.125 仍大于 0.1，所以至少 4 次。"
+    },
+    {
+     "id": "msj_h1030_q6",
+     "topicId": "msj_h1030",
+     "prompt": "下列方程中，不能用二分法求近似解的是哪一个？",
+     "question": "下列方程中，不能用二分法求近似解的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 的立方加 x 减 1 等于 0 在 (0,1) 内"
+      },
+      {
+       "label": "B",
+       "text": "x 的平方减 2 等于 0 在 (1,2) 内"
+      },
+      {
+       "label": "C",
+       "text": "2 的 x 次方减 3 等于 0 在 (1,2) 内"
+      },
+      {
+       "label": "D",
+       "text": "x 的平方加 1 等于 0"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "x 的平方加 1 恒大于 0，函数值不变号也没有实根，二分法失效；其余三个方程对应的函数都连续且能找到函数值异号的区间。"
+    },
+    {
+     "id": "msj_h1030_q7",
+     "topicId": "msj_h1030",
+     "prompt": "用二分法求零点时，初始区间为 1 到 3，第一次应取的中点是多少？",
+     "question": "用二分法求零点时，初始区间为 1 到 3，第一次应取的中点是多少？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "中点等于两端点的平均数，即 (1 加 3) 除以 2 等于 2，所以第一次取的中点坐标是 2。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1030_q8",
+     "topicId": "msj_h1030",
+     "prompt": "说明二分法为什么要求函数图象在给定区间上连续不断。",
+     "question": "说明二分法为什么要求函数图象在给定区间上连续不断。",
+     "answer": "二分法依靠零点存在定理判断零点在哪一半区间内，而这个定理的前提是函数图象在闭区间上连续不断；若图象在某处断开，即使两端函数值异号，图象也可能跳过 x 轴而没有交点，缩小到的区间就无法保证含有零点。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "零点存在定理的结论建立在连续性上，断开的图象可以从 x 轴一侧跳到另一侧而不穿过它，此时函数值异号却无零点，二分法失去依据。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1031",
+   "page": 236,
+   "description": "函数与数学模型：比较一次函数、二次函数、指数函数、对数函数在增长方式上的差异，会根据问题背景选择模型并用模型作出预测与解释。",
+   "mastery_criteria": [
+    "能按实际问题的变化特点选择函数模型",
+    "能由模型计算具体的预测值"
+   ],
+   "misconceptions": [
+    "见到数据就用一次函数拟合，不考虑增长速度的变化",
+    "把增长率与增长量混为一谈"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1031_q1",
+     "topicId": "msj_h1031",
+     "prompt": "描述匀速行驶的汽车路程与时间的关系，最适合选用哪一类函数？",
+     "question": "描述匀速行驶的汽车路程与时间的关系，最适合选用哪一类函数？",
+     "options": [
+      {
+       "label": "A",
+       "text": "一次函数"
+      },
+      {
+       "label": "B",
+       "text": "指数函数"
+      },
+      {
+       "label": "C",
+       "text": "对数函数"
+      },
+      {
+       "label": "D",
+       "text": "三角函数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "匀速行驶时路程与时间成正比，增长速度恒定不变，因此用一次函数 y 等于速度乘时间刻画最合适。"
+    },
+    {
+     "id": "msj_h1031_q2",
+     "topicId": "msj_h1031",
+     "prompt": "某商品每件 5 元，购买 x 件共需 y 元，当 x=8 时总价是多少元？",
+     "question": "某商品每件 5 元，购买 x 件共需 y 元，当 x=8 时总价是多少元？",
+     "answer": 40,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "总价等于单价乘数量，5 乘 8 等于 40，所以购买 8 件共需 40 元，这是一次函数模型。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 8}]}"
+    },
+    {
+     "id": "msj_h1031_q3",
+     "topicId": "msj_h1031",
+     "prompt": "某种细胞每小时分裂一次、个数翻倍，细胞个数与时间的关系最适合用哪一类函数刻画？",
+     "question": "某种细胞每小时分裂一次、个数翻倍，细胞个数与时间的关系最适合用哪一类函数刻画？",
+     "options": [
+      {
+       "label": "A",
+       "text": "一次函数"
+      },
+      {
+       "label": "B",
+       "text": "指数函数"
+      },
+      {
+       "label": "C",
+       "text": "反比例函数"
+      },
+      {
+       "label": "D",
+       "text": "二次函数"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "每小时个数变为原来的 2 倍，是固定倍数的增长，符合 y 等于初始个数乘 2 的 t 次方，属指数函数模型。"
+    },
+    {
+     "id": "msj_h1031_q4",
+     "topicId": "msj_h1031",
+     "prompt": "一次函数模型 y=kx 加 b 中，当 x=0 时的函数值 b 表示初始值，而 k 表示函数值的（　）。",
+     "question": "一次函数模型 y=kx 加 b 中，当 x=0 时的函数值 b 表示初始值，而 k 表示函数值的（　）。",
+     "answer": "变化率",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "k 是 x 每增加 1 时函数值的改变量，反映变化的快慢，因此称为变化率，在匀速问题中它就是速度。"
+    },
+    {
+     "id": "msj_h1031_q5",
+     "topicId": "msj_h1031",
+     "prompt": "当自变量 x 充分大时，下列三个模型中函数值增长最快的是哪一个？",
+     "question": "当自变量 x 充分大时，下列三个模型中函数值增长最快的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y=2x"
+      },
+      {
+       "label": "B",
+       "text": "y=x 的平方"
+      },
+      {
+       "label": "C",
+       "text": "y=2 的 x 次方"
+      },
+      {
+       "label": "D",
+       "text": "三者一样快"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "一次函数匀速增长、二次函数按平方增长，都远远赶不上按倍数翻番的指数函数，所以 y=2 的 x 次方增长最快。"
+    },
+    {
+     "id": "msj_h1031_q6",
+     "topicId": "msj_h1031",
+     "prompt": "某地初始人口为 100 万，年增长率为百分之一，则 t 年后人口 y（万）的表达式是哪一个？",
+     "question": "某地初始人口为 100 万，年增长率为百分之一，则 t 年后人口 y（万）的表达式是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y=100 加 0.01t"
+      },
+      {
+       "label": "B",
+       "text": "y=100 乘以 (1 加 0.01t)"
+      },
+      {
+       "label": "C",
+       "text": "y=100t"
+      },
+      {
+       "label": "D",
+       "text": "y=100 乘以 1.01 的 t 次方"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "每年以上一年人口为基数增长百分之一，即每年乘 1.01，连续 t 年就乘 t 次，所以 y 等于 100 乘 1.01 的 t 次方。"
+    },
+    {
+     "id": "msj_h1031_q7",
+     "topicId": "msj_h1031",
+     "prompt": "某市出租车起步价 10 元含 3 公里，超过 3 公里后每公里加收 2 元，行驶 8 公里的车费是多少元？",
+     "question": "某市出租车起步价 10 元含 3 公里，超过 3 公里后每公里加收 2 元，行驶 8 公里的车费是多少元？",
+     "answer": 20,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "超出里程为 8 减 3 等于 5 公里，加收 2 乘 5 等于 10 元，加上起步价 10 元共 20 元，这是分段的一次函数模型。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 5}]}]}"
+    },
+    {
+     "id": "msj_h1031_q8",
+     "topicId": "msj_h1031",
+     "prompt": "说明用函数模型解决实际问题的一般步骤。",
+     "question": "说明用函数模型解决实际问题的一般步骤。",
+     "answer": "先弄清问题中的量与量之间的关系，收集数据并画出散点图观察变化趋势；再根据增长速度的特点选择一次、二次、指数或对数等模型，用数据求出待定系数；然后把模型结果与实际对照检验，必要时修改模型；最后用模型作出预测或给出结论。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "选模型要看增长方式而不是只看数据个数，求参后必须回到实际检验，必要时修正模型，这一步决定了结论是否可用。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1032",
+   "page": 245,
+   "description": "应用与建模 体重与脉搏：以动物体重与脉搏次数的实测数据为背景，画散点图、选择函数拟合、检验误差，体会数据拟合与模型评价的过程。",
+   "mastery_criteria": [
+    "能把实测数据画成散点图并判断趋势",
+    "能用拟合模型计算预测值并评价拟合效果"
+   ],
+   "misconceptions": [
+    "把散点图上的个别点当成整体规律",
+    "用预测值直接代替实测值而不做误差分析"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1032_q1",
+     "topicId": "msj_h1032",
+     "prompt": "研究动物体重与脉搏次数的关系时，通常把体重放在横轴上，此时体重是（　）。",
+     "question": "研究动物体重与脉搏次数的关系时，通常把体重放在横轴上，此时体重是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "自变量"
+      },
+      {
+       "label": "B",
+       "text": "因变量"
+      },
+      {
+       "label": "C",
+       "text": "常量"
+      },
+      {
+       "label": "D",
+       "text": "参数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "我们研究的是体重变化引起脉搏次数怎样的变化，所以体重是自变量，脉搏次数随体重变化而是因变量。"
+    },
+    {
+     "id": "msj_h1032_q2",
+     "topicId": "msj_h1032",
+     "prompt": "若某动物的脉搏为每分钟 72 次，那么 10 分钟内它一共跳动多少次？",
+     "question": "若某动物的脉搏为每分钟 72 次，那么 10 分钟内它一共跳动多少次？",
+     "answer": 720,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "每分钟跳 72 次，10 分钟就是 72 乘 10 等于 720 次，这是简单的一次函数关系。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 72}, {\"type\": \"num\", \"value\": 10}]}"
+    },
+    {
+     "id": "msj_h1032_q3",
+     "topicId": "msj_h1032",
+     "prompt": "在散点图上，如果数据点越靠近所画的拟合曲线，说明什么？",
+     "question": "在散点图上，如果数据点越靠近所画的拟合曲线，说明什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "拟合效果越差"
+      },
+      {
+       "label": "B",
+       "text": "拟合效果越好"
+      },
+      {
+       "label": "C",
+       "text": "与拟合无关"
+      },
+      {
+       "label": "D",
+       "text": "数据一定有错误"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "数据点与曲线的偏差越小，说明曲线越能反映这批数据的整体规律，拟合效果越好。"
+    },
+    {
+     "id": "msj_h1032_q4",
+     "topicId": "msj_h1032",
+     "prompt": "用函数模型拟合数据时，实际观测值与模型计算值之间的差称为（　）。",
+     "question": "用函数模型拟合数据时，实际观测值与模型计算值之间的差称为（　）。",
+     "answer": "误差",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "实际值与模型值的差就是误差，误差有正有负，通常用误差的绝对值或平方和衡量模型与数据的接近程度。"
+    },
+    {
+     "id": "msj_h1032_q5",
+     "topicId": "msj_h1032",
+     "prompt": "若实测数据显示体重越大脉搏次数越少，则拟合函数的图象大致是什么形状？",
+     "question": "若实测数据显示体重越大脉搏次数越少，则拟合函数的图象大致是什么形状？",
+     "options": [
+      {
+       "label": "A",
+       "text": "上升的"
+      },
+      {
+       "label": "B",
+       "text": "水平的"
+      },
+      {
+       "label": "C",
+       "text": "下降的"
+      },
+      {
+       "label": "D",
+       "text": "先升后降的"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "体重增大时脉搏次数减小，两个变量的变化方向相反，所以拟合曲线整体呈下降趋势。"
+    },
+    {
+     "id": "msj_h1032_q6",
+     "topicId": "msj_h1032",
+     "prompt": "某拟合模型为 p=100 减 0.5w，其中 w 为体重（千克），p 为每分钟脉搏次数，当 w=60 时 p 的值是多少？",
+     "question": "某拟合模型为 p=100 减 0.5w，其中 w 为体重（千克），p 为每分钟脉搏次数，当 w=60 时 p 的值是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "60"
+      },
+      {
+       "label": "B",
+       "text": "65"
+      },
+      {
+       "label": "C",
+       "text": "68"
+      },
+      {
+       "label": "D",
+       "text": "70"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "把 w=60 代入，0.5 乘 60 等于 30，100 减 30 等于 70，所以此时脉搏为每分钟 70 次。"
+    },
+    {
+     "id": "msj_h1032_q7",
+     "topicId": "msj_h1032",
+     "prompt": "某拟合模型为 p=100 减 0.5w，当 w=40 时 p 的值是多少？",
+     "question": "某拟合模型为 p=100 减 0.5w，当 w=40 时 p 的值是多少？",
+     "answer": 80,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把 w=40 代入得 0.5 乘 40 等于 20，再用 100 减 20 等于 80，所以预测脉搏为每分钟 80 次。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 100}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 0.5}, {\"type\": \"num\", \"value\": 40}]}]}"
+    },
+    {
+     "id": "msj_h1032_q8",
+     "topicId": "msj_h1032",
+     "prompt": "说明为什么体重与脉搏的关系不宜简单地用一个一次函数精确刻画。",
+     "question": "说明为什么体重与脉搏的关系不宜简单地用一个一次函数精确刻画。",
+     "answer": "体重与脉搏的关系受种类、年龄、代谢水平等多种因素影响，实测数据在散点图上呈下降趋势但并不严格落在一条直线上；一次函数只能描述大致的线性趋势，用它精确预测会产生较大误差，因此只能作为近似模型，必要时改用其他函数形式并做误差分析。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "实际数据带有随机波动，模型只是对主要趋势的近似；承认误差并评价误差大小，才是使用模型的正确态度。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1033",
+   "page": 256,
+   "description": "案例分析：通过教材给出的完整建模案例，经历提出问题、作出假设、建立模型、求解检验、撰写报告的全过程，学会评价模型的合理性与适用范围。",
+   "mastery_criteria": [
+    "能复述案例中的建模环节与关键假设",
+    "能对模型结果作出解释与改进"
+   ],
+   "misconceptions": [
+    "把假设当成已知事实，忽略假设对结论的限制",
+    "只关心计算结果，不检验结果是否符合实际"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1033_q1",
+     "topicId": "msj_h1033",
+     "prompt": "数学建模的一般过程中，第一步通常是什么？",
+     "question": "数学建模的一般过程中，第一步通常是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "提出问题"
+      },
+      {
+       "label": "B",
+       "text": "求解模型"
+      },
+      {
+       "label": "C",
+       "text": "检验结果"
+      },
+      {
+       "label": "D",
+       "text": "撰写报告"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "建模从实际情境出发，先把要解决的问题用数学语言表述清楚，之后才谈得上假设、建模与求解。"
+    },
+    {
+     "id": "msj_h1033_q2",
+     "topicId": "msj_h1033",
+     "prompt": "用模型 y=2x 加 1 预测，当 x=5 时 y 的值是多少？",
+     "question": "用模型 y=2x 加 1 预测，当 x=5 时 y 的值是多少？",
+     "answer": 11,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "把 x=5 代入解析式，2 乘 5 等于 10，再加 1 得 11，所以按此模型预测 y 的值为 11。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 5}]}, {\"type\": \"num\", \"value\": 1}]}"
+    },
+    {
+     "id": "msj_h1033_q3",
+     "topicId": "msj_h1033",
+     "prompt": "模型求解后把计算结果与实测数据比较，看是否吻合，这一步在建模中称为什么？",
+     "question": "模型求解后把计算结果与实测数据比较，看是否吻合，这一步在建模中称为什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "建模"
+      },
+      {
+       "label": "B",
+       "text": "检验"
+      },
+      {
+       "label": "C",
+       "text": "假设"
+      },
+      {
+       "label": "D",
+       "text": "抽象"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "用实际数据检验模型结果是否合理，这一步叫模型检验，若偏差过大就要回到假设与模型重新修改。"
+    },
+    {
+     "id": "msj_h1033_q4",
+     "topicId": "msj_h1033",
+     "prompt": "把实际问题转化为数学问题之前，常常需要忽略次要因素，对问题作出（　）。",
+     "question": "把实际问题转化为数学问题之前，常常需要忽略次要因素，对问题作出（　）。",
+     "answer": "假设",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "现实问题因素太多，建模时必须作出合理假设，把次要因素忽略或理想化，才能得到可求解的数学模型。"
+    },
+    {
+     "id": "msj_h1033_q5",
+     "topicId": "msj_h1033",
+     "prompt": "若模型预测值与实际值偏差很大，应当采取的正确做法是什么？",
+     "question": "若模型预测值与实际值偏差很大，应当采取的正确做法是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "放弃使用数学"
+      },
+      {
+       "label": "B",
+       "text": "照旧使用预测值"
+      },
+      {
+       "label": "C",
+       "text": "修改假设或模型后重新检验"
+      },
+      {
+       "label": "D",
+       "text": "改动原始数据使结论吻合"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "偏差大说明假设或模型不适合实际，应回到前面的环节修正假设、调整模型再检验；改动原始数据违背实事求是的原则。"
+    },
+    {
+     "id": "msj_h1033_q6",
+     "topicId": "msj_h1033",
+     "prompt": "在建立物体运动的模型时忽略空气阻力，这属于建模过程中的什么？",
+     "question": "在建立物体运动的模型时忽略空气阻力，这属于建模过程中的什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "数据错误"
+      },
+      {
+       "label": "B",
+       "text": "计算错误"
+      },
+      {
+       "label": "C",
+       "text": "模型检验"
+      },
+      {
+       "label": "D",
+       "text": "合理假设"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "忽略空气阻力是为了简化问题而作的人为约定，属于合理假设；它使模型可用，也决定了模型只在阻力影响较小时才适用。"
+    },
+    {
+     "id": "msj_h1033_q7",
+     "topicId": "msj_h1033",
+     "prompt": "一个长方形的周长是 20 厘米，长是 6 厘米，它的宽是多少厘米？",
+     "question": "一个长方形的周长是 20 厘米，长是 6 厘米，它的宽是多少厘米？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "周长除以 2 得长与宽的和，20 除以 2 等于 10，再减去长 6 得宽为 4 厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 20}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 6}]}"
+    },
+    {
+     "id": "msj_h1033_q8",
+     "topicId": "msj_h1033",
+     "prompt": "说明为什么建模得到的结果还要回到实际问题中去检验。",
+     "question": "说明为什么建模得到的结果还要回到实际问题中去检验。",
+     "answer": "模型是在简化假设下建立的，必然忽略了某些实际因素，求解出的结果可能偏离现实；把它与实测数据或实际情形对照，才能判断假设是否合理、模型是否可用，并据此修改假设或模型，使结论真正能指导实际。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "检验是把数学结论还原到现实情境的必经环节，它既验证模型，也界定模型的适用范围。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1034",
+   "page": 259,
+   "description": "课题研究：围绕一个可研究的小问题，经历选题、开题、收集数据、建立模型、得出结论与撰写研究报告的完整流程，学会用数学方法研究身边的现象。",
+   "mastery_criteria": [
+    "能说出课题研究的主要环节与成果形式",
+    "能对测量数据作简单处理并得出结论"
+   ],
+   "misconceptions": [
+    "把结论建立在一两次随意测量的数据上",
+    "研究报告中只写结果不写数据来源与方法"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1034_q1",
+     "topicId": "msj_h1034",
+     "prompt": "开展数学课题研究，开始阶段要做的工作是什么？",
+     "question": "开展数学课题研究，开始阶段要做的工作是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "选题"
+      },
+      {
+       "label": "B",
+       "text": "结题"
+      },
+      {
+       "label": "C",
+       "text": "答辩"
+      },
+      {
+       "label": "D",
+       "text": "发表"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "课题研究从确定一个范围明确、数据可收集、方法可操作的问题开始，选题定了才有后续的开题与研究。"
+    },
+    {
+     "id": "msj_h1034_q2",
+     "topicId": "msj_h1034",
+     "prompt": "某小组对同一长度测量三次，结果分别是 2 米、3 米、4 米，这三次测量值的平均数是多少米？",
+     "question": "某小组对同一长度测量三次，结果分别是 2 米、3 米、4 米，这三次测量值的平均数是多少米？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "平均数等于各次测量值之和除以次数，2 加 3 加 4 得 9，9 除以 3 等于 3，所以平均数是 3 米。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"num\", \"value\": 4}]}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_h1034_q3",
+     "topicId": "msj_h1034",
+     "prompt": "收集数据时，所抽取的样本应当具有什么特点，结论才可靠？",
+     "question": "收集数据时，所抽取的样本应当具有什么特点，结论才可靠？",
+     "options": [
+      {
+       "label": "A",
+       "text": "随意性"
+      },
+      {
+       "label": "B",
+       "text": "代表性"
+      },
+      {
+       "label": "C",
+       "text": "唯一性"
+      },
+      {
+       "label": "D",
+       "text": "复杂性"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "样本要能代表总体，否则由样本得到的结论无法推广；只挑特殊对象测量会使结论失真。"
+    },
+    {
+     "id": "msj_h1034_q4",
+     "topicId": "msj_h1034",
+     "prompt": "课题研究结束后，研究的成果通常写成（　），说明问题、方法、数据与结论。",
+     "question": "课题研究结束后，研究的成果通常写成（　），说明问题、方法、数据与结论。",
+     "answer": "研究报告",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "研究报告记录选题背景、研究方法、数据与计算过程、结论与反思，是课题研究成果的主要呈现形式。"
+    },
+    {
+     "id": "msj_h1034_q5",
+     "topicId": "msj_h1034",
+     "prompt": "若同一对象两次测量结果相差很大，比较合理的做法是什么？",
+     "question": "若同一对象两次测量结果相差很大，比较合理的做法是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "直接取第一次的结果"
+      },
+      {
+       "label": "B",
+       "text": "不加分析地取平均值"
+      },
+      {
+       "label": "C",
+       "text": "检查测量过程并重新测量"
+      },
+      {
+       "label": "D",
+       "text": "删掉不合意的数据"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "结果异常往往说明测量工具或操作有问题，应先检查测量方法、排除误差来源后重测；随意取舍数据会使结论失去依据。"
+    },
+    {
+     "id": "msj_h1034_q6",
+     "topicId": "msj_h1034",
+     "prompt": "下列活动中，属于数学建模课题的是哪一个？",
+     "question": "下列活动中，属于数学建模课题的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "背诵三角公式"
+      },
+      {
+       "label": "B",
+       "text": "抄写课本例题"
+      },
+      {
+       "label": "C",
+       "text": "默写所有定理"
+      },
+      {
+       "label": "D",
+       "text": "校园内旗杆高度的测量与计算"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "测量旗杆高度需要设计方案、收集数据、建立相似或三角模型并计算检验，是一个完整的建模课题；其余三项只是记忆与模仿。"
+    },
+    {
+     "id": "msj_h1034_q7",
+     "topicId": "msj_h1034",
+     "prompt": "阳光下测得 1 米高标杆的影长为 1.5 米，同一时刻旗杆的影长为 6 米，则旗杆的高度是多少米？",
+     "question": "阳光下测得 1 米高标杆的影长为 1.5 米，同一时刻旗杆的影长为 6 米，则旗杆的高度是多少米？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "同一时刻物高与影长成正比，1 米标杆对应的影长 1.5 米，所以旗杆高等于 6 除以 1.5 等于 4 米。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 1.5}, {\"type\": \"num\", \"value\": 1}]}]}"
+    },
+    {
+     "id": "msj_h1034_q8",
+     "topicId": "msj_h1034",
+     "prompt": "说明选择研究课题时应注意的两点要求。",
+     "question": "说明选择研究课题时应注意的两点要求。",
+     "answer": "一是问题要具体可行，范围不宜过大，所需数据能够通过测量、调查或查阅获得；二是问题要有数学味，能够用函数、方程、统计等已学知识建立模型并得出结论，同时还要考虑时间与条件的限制。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "课题过大则无法在有限时间内完成，缺少可收集的数据或用不上数学方法则难以形成研究结论，选题必须兼顾可行性与数学性。"
+    }
+   ]
+  }
+ ]
+}

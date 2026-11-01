@@ -1,0 +1,1980 @@
+{
+ "tag": "s6a",
+ "book": "苏教版六年级上册",
+ "unit_points": [
+  {
+   "id": "msj_p080",
+   "description": "第五单元 圆：认识圆心、半径和直径，会用圆规画圆，知道同一个圆里直径是半径的2倍；认识弧、圆心角和扇形；探索圆周率，掌握圆的周长和面积计算公式，能解决生活中的实际问题。",
+   "mastery_criteria": [
+    "能说出圆的特征以及半径与直径的关系",
+    "会用公式计算圆的周长和面积",
+    "认识扇形，知道扇形的大小与圆心角有关"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p080_q1",
+     "topicId": "msj_p080",
+     "prompt": "在同一个圆里，直径的长度是半径的几倍？",
+     "question": "在同一个圆里，直径的长度是半径的几倍？",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "直径是经过圆心并且两端都在圆上的线段，它正好由两条半径接成，所以同一个圆里直径是半径的2倍。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2倍"
+      },
+      {
+       "label": "B",
+       "text": "3倍"
+      },
+      {
+       "label": "C",
+       "text": "4倍"
+      },
+      {
+       "label": "D",
+       "text": "一半"
+      }
+     ]
+    },
+    {
+     "id": "msj_p080_q2",
+     "topicId": "msj_p080",
+     "prompt": "圆的周长与它的直径的比的比值叫作什么？",
+     "question": "圆的周长与它的直径的比的比值叫作什么？",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材在测量周长和直径后指出，任意一个圆的周长与它直径的比的比值都是一个固定的数，这个数叫作圆周率。",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆面积"
+      },
+      {
+       "label": "B",
+       "text": "圆周率"
+      },
+      {
+       "label": "C",
+       "text": "半径"
+      },
+      {
+       "label": "D",
+       "text": "圆心角"
+      }
+     ]
+    },
+    {
+     "id": "msj_p080_q3",
+     "topicId": "msj_p080",
+     "prompt": "一个圆的半径是3厘米，它的周长是多少厘米？",
+     "question": "一个圆的半径是3厘米，它的周长是多少厘米？",
+     "answer": 18.84,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "圆的周长等于圆周率乘直径，直径是3乘2等于6厘米，3.14乘6等于18.84厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3.14}]}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_p080_q4",
+     "topicId": "msj_p080",
+     "prompt": "圆是轴对称图形，它有（　）条对称轴。",
+     "question": "圆是轴对称图形，它有（　）条对称轴。",
+     "answer": "无数",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材通过折一折发现，圆沿任何一条直径对折都能完全重合，直径有无数条，所以对称轴也有无数条。"
+    },
+    {
+     "id": "msj_p080_q5",
+     "topicId": "msj_p080",
+     "prompt": "把圆平均分成若干份，剪拼成一个近似长方形，下面说法正确的是？",
+     "question": "把圆平均分成若干份，剪拼成一个近似长方形，下面说法正确的是？",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "剪拼后长方形的面积与圆的面积相等，长方形的宽相当于圆的半径，长相当于圆周长的一半，所以圆面积等于半径乘半径再乘圆周率。",
+     "options": [
+      {
+       "label": "A",
+       "text": "长方形的长相当于圆的直径"
+      },
+      {
+       "label": "B",
+       "text": "长方形的宽相当于圆的直径"
+      },
+      {
+       "label": "C",
+       "text": "长方形的面积比圆的面积大"
+      },
+      {
+       "label": "D",
+       "text": "长方形的长相当于圆周长的一半"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "msj_p081",
+   "description": "第六单元 比例尺：认识图形的放大和缩小，能按给定的比在方格纸上画出放大或缩小后的图形；理解比例尺的意义，会求一幅图的比例尺，能进行图上距离与实际距离的换算。",
+   "mastery_criteria": [
+    "能按给定的比把简单图形放大或缩小",
+    "能说出比例尺的意义并求一幅图的比例尺",
+    "能根据比例尺求图上距离或实际距离"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p081_q1",
+     "topicId": "msj_p081",
+     "prompt": "一幅图的图上距离与实际距离的比叫作什么？",
+     "question": "一幅图的图上距离与实际距离的比叫作什么？",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材指出，绘制平面图时常常把实际距离按一定的比缩小后画在图纸上，图上距离与实际距离的比就叫作这幅图的比例尺。",
+     "options": [
+      {
+       "label": "A",
+       "text": "比例尺"
+      },
+      {
+       "label": "B",
+       "text": "比值"
+      },
+      {
+       "label": "C",
+       "text": "圆周率"
+      },
+      {
+       "label": "D",
+       "text": "数对"
+      }
+     ]
+    },
+    {
+     "id": "msj_p081_q2",
+     "topicId": "msj_p081",
+     "prompt": "一幅地图的比例尺是1比1000，图上4.8厘米表示实际距离多少米？",
+     "question": "一幅地图的比例尺是1比1000，图上4.8厘米表示实际距离多少米？",
+     "answer": 48,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "比例尺1比1000表示实际距离是图上距离的1000倍，4.8乘1000等于4800厘米，4800厘米就是48米。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4.8}, {\"type\": \"num\", \"value\": 1000}]}, {\"type\": \"num\", \"value\": 100}]}"
+    },
+    {
+     "id": "msj_p081_q3",
+     "topicId": "msj_p081",
+     "prompt": "把一个图形按2比1的比放大，放大后图形的面积是原来的几倍？",
+     "question": "把一个图形按2比1的比放大，放大后图形的面积是原来的几倍？",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "按2比1放大时每条边都变为原来的2倍，长和宽都扩大2倍，所以面积扩大2乘2等于4倍。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2倍"
+      },
+      {
+       "label": "B",
+       "text": "4倍"
+      },
+      {
+       "label": "C",
+       "text": "8倍"
+      },
+      {
+       "label": "D",
+       "text": "不变"
+      }
+     ]
+    },
+    {
+     "id": "msj_p081_q4",
+     "topicId": "msj_p081",
+     "prompt": "图形放大或缩小前后，什么没有改变？",
+     "question": "图形放大或缩小前后，什么没有改变？",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材总结说，放大或缩小前后的图形大小变了，形状不变，对应边长的比都相同，角的大小也不变。",
+     "options": [
+      {
+       "label": "A",
+       "text": "大小"
+      },
+      {
+       "label": "B",
+       "text": "面积"
+      },
+      {
+       "label": "C",
+       "text": "形状"
+      },
+      {
+       "label": "D",
+       "text": "周长"
+      }
+     ]
+    },
+    {
+     "id": "msj_p081_q5",
+     "topicId": "msj_p081",
+     "prompt": "比例尺1比8000表示图上距离1厘米相当于实际距离（　）米。",
+     "question": "比例尺1比8000表示图上距离1厘米相当于实际距离（　）米。",
+     "answer": "80",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "1比8000说明实际距离是图上距离的8000倍，1厘米的8000倍是8000厘米，8000厘米就是80米。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p082",
+   "description": "第七单元 确定位置：认识列与行，用数对表示方格图上点的位置；用方向和距离描述物体相对于观测点的位置，能在平面图上标出物体的位置，会描述和设计简单的行走路线。",
+   "mastery_criteria": [
+    "能用数对表示点的位置并读懂数对的含义",
+    "能用方向和距离准确描述物体的位置",
+    "能在平面图上标出物体位置并描述行走路线"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p082_q1",
+     "topicId": "msj_p082",
+     "prompt": "用数对表示位置时，数对中第一个数表示什么？",
+     "question": "用数对表示位置时，数对中第一个数表示什么？",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材规定，竖排叫作列、横排叫作行，数对先写列后写行，所以第一个数表示第几列。",
+     "options": [
+      {
+       "label": "A",
+       "text": "列"
+      },
+      {
+       "label": "B",
+       "text": "行"
+      },
+      {
+       "label": "C",
+       "text": "距离"
+      },
+      {
+       "label": "D",
+       "text": "方向"
+      }
+     ]
+    },
+    {
+     "id": "msj_p082_q2",
+     "topicId": "msj_p082",
+     "prompt": "用方向和距离描述物体的位置时，除了说清方向，还要说清什么？",
+     "question": "用方向和距离描述物体的位置时，除了说清方向，还要说清什么？",
+     "answer": "距离",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材通过浮雷的例子说明，只说东北方向不能确定位置，还要报告物体离观测点有多远，也就是距离。"
+    },
+    {
+     "id": "msj_p082_q3",
+     "topicId": "msj_p082",
+     "prompt": "数对（7，4）表示第7列第4行，其中的行数是几？",
+     "question": "数对（7，4）表示第7列第4行，其中的行数是几？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "数对的写法是先列后行，括号里第二个数表示行数，所以（7，4）中的行数是4。",
+     "verify": "{\"type\": \"num\", \"value\": 4}"
+    },
+    {
+     "id": "msj_p082_q4",
+     "topicId": "msj_p082",
+     "prompt": "北偏东30度方向与东偏北多少度的方向是同一个方向？",
+     "question": "北偏东30度方向与东偏北多少度的方向是同一个方向？",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "北偏东30度是从北向东偏30度，北与东之间是90度，90减30等于60，所以也可以说成东偏北60度。",
+     "options": [
+      {
+       "label": "A",
+       "text": "30度"
+      },
+      {
+       "label": "B",
+       "text": "60度"
+      },
+      {
+       "label": "C",
+       "text": "90度"
+      },
+      {
+       "label": "D",
+       "text": "120度"
+      }
+     ]
+    },
+    {
+     "id": "msj_p082_q5",
+     "topicId": "msj_p082",
+     "prompt": "以不同的观测点描述同一个物体的位置，方向和距离会怎样？",
+     "question": "以不同的观测点描述同一个物体的位置，方向和距离会怎样？",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "观测点换了，物体相对观测点的方向会变成相反方向，距离也可能不同，所以描述位置必须先说清以谁为观测点。",
+     "options": [
+      {
+       "label": "A",
+       "text": "都不变"
+      },
+      {
+       "label": "B",
+       "text": "只有方向变"
+      },
+      {
+       "label": "C",
+       "text": "方向和距离都可能改变"
+      },
+      {
+       "label": "D",
+       "text": "只有距离变"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "msj_p1279",
+   "page": null,
+   "description": "认识圆和扇形：用圆规画圆，认识圆心O、半径r和直径d，知道同一个圆里半径都相等、直径是半径的2倍；认识弧、圆心角和扇形，知道同一个圆中扇形的大小与圆心角有关。",
+   "mastery_criteria": [
+    "能用圆规按要求画圆并标出圆心、半径和直径",
+    "知道同一个圆里d等于2r",
+    "能判断扇形并说出圆心角的大小与扇形大小的关系"
+   ],
+   "misconceptions": [
+    "认为任何两个圆里直径都是半径的2倍，忽略了必须在同一个圆中比较",
+    "认为只要有一段圆弧的图形就是扇形，忘了还要有经过弧两端的两条半径"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p1279_q1",
+     "topicId": "msj_p1279",
+     "prompt": "用圆规画圆时，圆规两脚间的距离决定圆的什么？",
+     "question": "用圆规画圆时，圆规两脚间的距离决定圆的什么？",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "用圆规画圆时，针尖固定不动，两脚间的距离一直不变，这个距离就是所画圆的半径，所以它决定圆的大小。",
+     "options": [
+      {
+       "label": "A",
+       "text": "半径"
+      },
+      {
+       "label": "B",
+       "text": "圆心"
+      },
+      {
+       "label": "C",
+       "text": "直径"
+      },
+      {
+       "label": "D",
+       "text": "周长"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1279_q2",
+     "topicId": "msj_p1279",
+     "prompt": "一个圆的半径是4厘米，它的直径是多少厘米？",
+     "question": "一个圆的半径是4厘米，它的直径是多少厘米？",
+     "answer": 8,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "在同一个圆里直径是半径的2倍，4乘2等于8，所以直径是8厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_p1279_q3",
+     "topicId": "msj_p1279",
+     "prompt": "圆有多少条对称轴？",
+     "question": "圆有多少条对称轴？",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把圆沿任意一条直径对折，两半都能完全重合，而直径有无数条，所以圆的对称轴有无数条。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1条"
+      },
+      {
+       "label": "B",
+       "text": "无数条"
+      },
+      {
+       "label": "C",
+       "text": "2条"
+      },
+      {
+       "label": "D",
+       "text": "4条"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1279_q4",
+     "topicId": "msj_p1279",
+     "prompt": "在同一个圆里，直径的长度是半径的（　）倍。",
+     "question": "在同一个圆里，直径的长度是半径的（　）倍。",
+     "answer": "2",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材用字母表示出 d 等于 2r，也就是同一个圆里直径的长度总是半径的2倍，半径是直径的一半。"
+    },
+    {
+     "id": "msj_p1279_q5",
+     "topicId": "msj_p1279",
+     "prompt": "由一条弧和经过这条弧两端的两条半径围成的图形叫作什么？",
+     "question": "由一条弧和经过这条弧两端的两条半径围成的图形叫作什么？",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材给出的定义是：由一条弧和经过这条弧两端的两条半径围成的图形叫作扇形，顶点在圆心的角叫圆心角。",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆"
+      },
+      {
+       "label": "B",
+       "text": "圆弧"
+      },
+      {
+       "label": "C",
+       "text": "扇形"
+      },
+      {
+       "label": "D",
+       "text": "圆心角"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1279_q6",
+     "topicId": "msj_p1279",
+     "prompt": "在同一个圆中，圆心角是90度的扇形，它的面积占整个圆面积的几分之几？",
+     "question": "在同一个圆中，圆心角是90度的扇形，它的面积占整个圆面积的几分之几？",
+     "answer": "四分之一",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "整个圆对应的圆心角是360度，90度是360度的四分之一，所以这个扇形的面积占整个圆面积的四分之一。"
+    },
+    {
+     "id": "msj_p1279_q7",
+     "topicId": "msj_p1279",
+     "prompt": "在一个长6厘米、宽4厘米的长方形里画一个最大的圆，这个圆的半径是多少厘米？",
+     "question": "在一个长6厘米、宽4厘米的长方形里画一个最大的圆，这个圆的半径是多少厘米？",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "圆要画在长方形内，直径不能超过较短的那条边，宽是4厘米，所以直径最大是4厘米，半径就是2厘米。",
+     "options": [
+      {
+       "label": "A",
+       "text": "6厘米"
+      },
+      {
+       "label": "B",
+       "text": "4厘米"
+      },
+      {
+       "label": "C",
+       "text": "3厘米"
+      },
+      {
+       "label": "D",
+       "text": "2厘米"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1279_q8",
+     "topicId": "msj_p1279",
+     "prompt": "车轮为什么要做成圆形的？车轴应该装在哪里？请用圆的知识说一说。",
+     "question": "车轮为什么要做成圆形的？车轴应该装在哪里？请用圆的知识说一说。",
+     "answer": "因为圆上任意一点到圆心的距离都相等，车轴装在圆心，车轮滚动时车轴到地面的距离始终不变，车走起来才平稳。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "同一个圆里所有半径都相等，车轴装在圆心处，车轮滚动时车轴离地面的高度始终等于半径，车子就不会上下颠簸。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1280",
+   "page": null,
+   "description": "圆的周长和面积：通过测量发现圆的周长总是直径的3倍多一些，认识圆周率，掌握周长公式C等于πd或2πr；把圆剪拼成近似长方形推导出面积公式，会计算圆的周长和面积。",
+   "mastery_criteria": [
+    "知道圆周率的意义，会取3.14计算",
+    "会用周长公式求圆的周长",
+    "会由半径或直径求圆的面积"
+   ],
+   "misconceptions": [
+    "把圆周率取成整3来计算，导致周长和面积都偏小",
+    "求面积时把直径直接代进公式，忘了先求出半径"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p1280_q1",
+     "topicId": "msj_p1280",
+     "prompt": "在解决问题时，圆周率一般保留两位小数，取它的近似值是多少？",
+     "question": "在解决问题时，圆周率一般保留两位小数，取它的近似值是多少？",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材指出圆周率是一个无限不循环小数，实际计算时一般保留两位小数，取3.14作为它的近似值。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3.14"
+      },
+      {
+       "label": "B",
+       "text": "3.41"
+      },
+      {
+       "label": "C",
+       "text": "3.1"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1280_q2",
+     "topicId": "msj_p1280",
+     "prompt": "一个圆的直径是4厘米，它的周长是多少厘米？",
+     "question": "一个圆的直径是4厘米，它的周长是多少厘米？",
+     "answer": 12.56,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "圆的周长等于圆周率乘直径，3.14乘4等于12.56，所以周长是12.56厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3.14}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msj_p1280_q3",
+     "topicId": "msj_p1280",
+     "prompt": "一个圆的半径是5厘米，它的面积是多少平方厘米？",
+     "question": "一个圆的半径是5厘米，它的面积是多少平方厘米？",
+     "answer": 78.5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "圆的面积等于圆周率乘半径的平方，5的平方是25，3.14乘25等于78.5平方厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3.14}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 2}]}]}"
+    },
+    {
+     "id": "msj_p1280_q4",
+     "topicId": "msj_p1280",
+     "prompt": "把圆剪拼成近似长方形来推导面积公式，长方形的长相当于圆的什么？",
+     "question": "把圆剪拼成近似长方形来推导面积公式，长方形的长相当于圆的什么？",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "拼成的长方形宽相当于半径，长由圆周长的一半拼成，所以长相当于圆周长的一半，面积就是半径乘半径再乘圆周率。",
+     "options": [
+      {
+       "label": "A",
+       "text": "直径"
+      },
+      {
+       "label": "B",
+       "text": "圆周长的一半"
+      },
+      {
+       "label": "C",
+       "text": "半径"
+      },
+      {
+       "label": "D",
+       "text": "圆周长的2倍"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1280_q5",
+     "topicId": "msj_p1280",
+     "prompt": "一个圆的周长是62.8厘米，它的半径是（　）厘米。",
+     "question": "一个圆的周长是62.8厘米，它的半径是（　）厘米。",
+     "answer": "10",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "周长等于2πr，62.8除以3.14得20，这是直径，再除以2得10，所以半径是10厘米。"
+    },
+    {
+     "id": "msj_p1280_q6",
+     "topicId": "msj_p1280",
+     "prompt": "一个自动喷水器的最远喷水距离大约是6米，它旋转一周喷灌的面积大约是多少平方米？",
+     "question": "一个自动喷水器的最远喷水距离大约是6米，它旋转一周喷灌的面积大约是多少平方米？",
+     "answer": 113.04,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "喷水器旋转一周喷灌的是一个圆，半径是6米，面积等于3.14乘6的平方，6的平方是36，3.14乘36等于113.04平方米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3.14}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 2}]}]}"
+    },
+    {
+     "id": "msj_p1280_q7",
+     "topicId": "msj_p1280",
+     "prompt": "把半径2厘米的圆平均分成若干份，拼成近似长方形，长方形的周长比圆的周长多多少厘米？",
+     "question": "把半径2厘米的圆平均分成若干份，拼成近似长方形，长方形的周长比圆的周长多多少厘米？",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "拼成的长方形两条宽就是圆的两条半径，它们原来不是圆周长的一部分，所以长方形的周长比圆的周长多2个半径，即4厘米。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2厘米"
+      },
+      {
+       "label": "B",
+       "text": "6.28厘米"
+      },
+      {
+       "label": "C",
+       "text": "4厘米"
+      },
+      {
+       "label": "D",
+       "text": "8厘米"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1280_q8",
+     "topicId": "msj_p1280",
+     "prompt": "一个圆环的外圆半径是10厘米，内圆半径是6厘米，求这个圆环的面积。",
+     "question": "一个圆环的外圆半径是10厘米，内圆半径是6厘米，求这个圆环的面积。",
+     "answer": "用外圆面积减去内圆面积，3.14乘10的平方得314平方厘米，3.14乘6的平方得113.04平方厘米，相减得200.96平方厘米。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "圆环面积等于外圆面积减内圆面积，先分别算出两个圆的面积，再用大数减小数，结果是200.96平方厘米。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1281",
+   "page": null,
+   "description": "整理与练习：回顾圆和扇形的特征、圆周率的意义，整理圆的周长和面积公式，练习求圆、半圆、圆环和组合图形的周长与面积，并用圆的知识解决实际问题。",
+   "mastery_criteria": [
+    "能整理出圆的特征和周长、面积公式",
+    "会计算半圆和圆环的周长与面积",
+    "能用圆的知识解决简单的实际问题"
+   ],
+   "misconceptions": [
+    "求半圆周长时只算弧长，漏掉一条直径",
+    "把圆环的面积算成外圆面积加内圆面积"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p1281_q1",
+     "topicId": "msj_p1281",
+     "prompt": "关于圆周率，下面说法正确的是？",
+     "question": "关于圆周率，下面说法正确的是？",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材在探索后说明，圆周率是一个无限不循环小数，计算时取它的近似值3.14，它不等于3，也不是分数。",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆周率是一个无限不循环小数"
+      },
+      {
+       "label": "B",
+       "text": "圆周率等于3"
+      },
+      {
+       "label": "C",
+       "text": "圆周率是一个有限的两位小数"
+      },
+      {
+       "label": "D",
+       "text": "圆周率等于直径除以周长"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1281_q2",
+     "topicId": "msj_p1281",
+     "prompt": "一个圆形金鱼池的直径是20米，它的周长是多少米？",
+     "question": "一个圆形金鱼池的直径是20米，它的周长是多少米？",
+     "answer": 62.8,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "圆的周长等于圆周率乘直径，3.14乘20等于62.8，所以这个金鱼池的周长是62.8米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3.14}, {\"type\": \"num\", \"value\": 20}]}"
+    },
+    {
+     "id": "msj_p1281_q3",
+     "topicId": "msj_p1281",
+     "prompt": "用15.7米长的篱笆靠墙围成一个半圆形花坛，这个花坛的面积是多少平方米？",
+     "question": "用15.7米长的篱笆靠墙围成一个半圆形花坛，这个花坛的面积是多少平方米？",
+     "answer": 39.25,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "靠墙围半圆时篱笆只是半圆弧，15.7除以3.14得5米，这是半径，面积是3.14乘5的平方再除以2，等于39.25平方米。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3.14}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 2}]}]}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_p1281_q4",
+     "topicId": "msj_p1281",
+     "prompt": "求一个圆的面积，除了直接用公式，还可以先求出什么再计算？",
+     "question": "求一个圆的面积，除了直接用公式，还可以先求出什么再计算？",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "题目给出直径时，要先把它除以2求出半径，再算面积；如果直接拿直径去乘平方就会算错。",
+     "options": [
+      {
+       "label": "A",
+       "text": "周长"
+      },
+      {
+       "label": "B",
+       "text": "半径"
+      },
+      {
+       "label": "C",
+       "text": "圆心角"
+      },
+      {
+       "label": "D",
+       "text": "对称轴"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1281_q5",
+     "topicId": "msj_p1281",
+     "prompt": "一个圆的半径是3厘米，它的面积是（　）平方厘米。",
+     "question": "一个圆的半径是3厘米，它的面积是（　）平方厘米。",
+     "answer": "28.26",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "3的平方是9，3.14乘9等于28.26，所以这个圆的面积是28.26平方厘米。"
+    },
+    {
+     "id": "msj_p1281_q6",
+     "topicId": "msj_p1281",
+     "prompt": "夏天中午一棵大树在地面上的阴影近似一个圆，半径大约是4米，阴影部分的面积大约是多少平方米？",
+     "question": "夏天中午一棵大树在地面上的阴影近似一个圆，半径大约是4米，阴影部分的面积大约是多少平方米？",
+     "answer": 50.24,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "阴影近似圆形，半径4米，面积等于3.14乘4的平方，4的平方是16，3.14乘16等于50.24平方米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3.14}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 2}]}]}"
+    },
+    {
+     "id": "msj_p1281_q7",
+     "topicId": "msj_p1281",
+     "prompt": "一个圆的半径扩大到原来的2倍，它的面积扩大到原来的几倍？",
+     "question": "一个圆的半径扩大到原来的2倍，它的面积扩大到原来的几倍？",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "面积与半径的平方有关，半径扩大2倍，半径的平方就扩大4倍，所以面积扩大到原来的4倍。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2倍"
+      },
+      {
+       "label": "B",
+       "text": "3倍"
+      },
+      {
+       "label": "C",
+       "text": "4倍"
+      },
+      {
+       "label": "D",
+       "text": "8倍"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1281_q8",
+     "topicId": "msj_p1281",
+     "prompt": "求圆环的面积，可以怎样想？请写出思路和算式。",
+     "question": "求圆环的面积，可以怎样想？请写出思路和算式。",
+     "answer": "先分别求外圆和内圆的面积，再用外圆面积减去内圆面积，算式是3.14乘外圆半径的平方减去3.14乘内圆半径的平方。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "圆环夹在两个同心圆之间，它的面积就是大圆面积与小圆面积的差，所以要先求两个圆的面积再相减。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1282",
+   "page": null,
+   "description": "图形的放大和缩小：按一定的比把长方形、三角形、梯形等图形放大或缩小，放大或缩小后形状不变、大小改变，对应边长的比相同，能在方格纸上画出放大或缩小后的图形。",
+   "mastery_criteria": [
+    "能说出放大或缩小前后图形的变化与不变",
+    "能在方格纸上按给定的比画放大或缩小后的图形",
+    "能判断一个图形是不是按给定的比放大或缩小得到的"
+   ],
+   "misconceptions": [
+    "认为按2比1放大只是把图形整体画大，各条边放大的倍数可以不同",
+    "认为图形放大后面积也按边的倍数扩大，把面积说成原来的2倍"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p1282_q1",
+     "topicId": "msj_p1282",
+     "prompt": "把一个长方形按2比1的比放大，放大后的图形与原来相比有什么变化？",
+     "question": "把一个长方形按2比1的比放大，放大后的图形与原来相比有什么变化？",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "按2比1放大时每条边都放大到原来的2倍，图形变大但形状不变，长与宽的比仍是原来的比。",
+     "options": [
+      {
+       "label": "A",
+       "text": "形状不变，大小变了"
+      },
+      {
+       "label": "B",
+       "text": "形状变了，大小不变"
+      },
+      {
+       "label": "C",
+       "text": "形状和大小都不变"
+      },
+      {
+       "label": "D",
+       "text": "形状和大小都变了"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1282_q2",
+     "topicId": "msj_p1282",
+     "prompt": "一个长方形长6厘米、宽4厘米，按2比1的比放大后，长是多少厘米？",
+     "question": "一个长方形长6厘米、宽4厘米，按2比1的比放大后，长是多少厘米？",
+     "answer": 12,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "按2比1放大，每条边都放大到原来的2倍，6乘2等于12，所以放大后的长是12厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_p1282_q3",
+     "topicId": "msj_p1282",
+     "prompt": "一条长6厘米的边按1比3的比缩小后，长是多少厘米？",
+     "question": "一条长6厘米的边按1比3的比缩小后，长是多少厘米？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "按1比3缩小，缩小后的长度是原来的三分之一，6除以3等于2，所以缩小后长2厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_p1282_q4",
+     "topicId": "msj_p1282",
+     "prompt": "把长方形按2比1的比放大，放大后的长方形与原长方形对应边长的比是多少？",
+     "question": "把长方形按2比1的比放大，放大后的长方形与原长方形对应边长的比是多少？",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材说明，把长方形的每条边都放大到原来的2倍，放大后的长方形与原来长方形对应边长的比就是2比1。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1比2"
+      },
+      {
+       "label": "B",
+       "text": "2比1"
+      },
+      {
+       "label": "C",
+       "text": "4比1"
+      },
+      {
+       "label": "D",
+       "text": "1比4"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1282_q5",
+     "topicId": "msj_p1282",
+     "prompt": "图形放大或缩小前后，形状（　），大小改变。",
+     "question": "图形放大或缩小前后，形状（　），大小改变。",
+     "answer": "不变",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "放大或缩小只是把图形按比例变大或变小，对应边的比相同、角的大小不变，所以形状不变，只有大小改变。"
+    },
+    {
+     "id": "msj_p1282_q6",
+     "topicId": "msj_p1282",
+     "prompt": "把一个三角形按2比1的比放大，放大后三角形的面积是原来的几倍？",
+     "question": "把一个三角形按2比1的比放大，放大后三角形的面积是原来的几倍？",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "按2比1放大时底和高都变为原来的2倍，面积等于底乘高除以2，所以要扩大2乘2等于4倍。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2倍"
+      },
+      {
+       "label": "B",
+       "text": "3倍"
+      },
+      {
+       "label": "C",
+       "text": "4倍"
+      },
+      {
+       "label": "D",
+       "text": "8倍"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1282_q7",
+     "topicId": "msj_p1282",
+     "prompt": "把一个三角形按1比3的比缩小，缩小后的面积是原来面积的几分之一？",
+     "question": "把一个三角形按1比3的比缩小，缩小后的面积是原来面积的几分之一？",
+     "answer": "九分之一",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "按1比3缩小，底和高都变为原来的三分之一，面积要乘三分之一再乘三分之一，所以是原来面积的九分之一。"
+    },
+    {
+     "id": "msj_p1282_q8",
+     "topicId": "msj_p1282",
+     "prompt": "在方格纸上画好放大后的图形，怎样检验画得对不对？",
+     "question": "在方格纸上画好放大后的图形，怎样检验画得对不对？",
+     "answer": "要检查每条对应边是不是都按给定的比放大了，再检查每个角的大小有没有变化，形状没有变才算画对。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "教材提示检验两件事：对应边长的比是否都等于题目给定的比，各个角的大小是否保持不变，两样都对形状才不变。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1283",
+   "page": null,
+   "description": "比例尺：理解图上距离与实际距离的比叫作比例尺，会用图上距离比实际距离求比例尺，能根据比例尺把图上距离换算成实际距离，也能求图上距离并在图上标出位置。",
+   "mastery_criteria": [
+    "能说出比例尺的意义和1比1000这类比例尺的含义",
+    "会求一幅图的比例尺",
+    "能根据比例尺求图上距离或实际距离"
+   ],
+   "misconceptions": [
+    "把比例尺当成图上距离与实际距离的比值，写成1000比1",
+    "换算时忘记统一单位，把厘米和米直接相乘"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p1283_q1",
+     "topicId": "msj_p1283",
+     "prompt": "图上距离与实际距离的比叫作这幅图的什么？",
+     "question": "图上距离与实际距离的比叫作这幅图的什么？",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材给出的定义是：一幅图的图上距离与实际距离的比，叫作这幅图的比例尺，通常写成前项是1的比。",
+     "options": [
+      {
+       "label": "A",
+       "text": "比例尺"
+      },
+      {
+       "label": "B",
+       "text": "比值"
+      },
+      {
+       "label": "C",
+       "text": "周长"
+      },
+      {
+       "label": "D",
+       "text": "数对"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1283_q2",
+     "topicId": "msj_p1283",
+     "prompt": "一幅图的比例尺是1比8000，图上距离是5厘米，实际距离是多少米？",
+     "question": "一幅图的比例尺是1比8000，图上距离是5厘米，实际距离是多少米？",
+     "answer": 400,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "实际距离是图上距离的8000倍，5乘8000等于40000厘米，40000厘米就是400米。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 8000}]}, {\"type\": \"num\", \"value\": 100}]}"
+    },
+    {
+     "id": "msj_p1283_q3",
+     "topicId": "msj_p1283",
+     "prompt": "一幅图的比例尺是1比1000，实际距离30米，图上距离是多少厘米？",
+     "question": "一幅图的比例尺是1比1000，实际距离30米，图上距离是多少厘米？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "先把30米化成3000厘米，图上距离是实际距离的一千分之一，3000除以1000等于3厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 30}, {\"type\": \"num\", \"value\": 100}]}, {\"type\": \"num\", \"value\": 1000}]}"
+    },
+    {
+     "id": "msj_p1283_q4",
+     "topicId": "msj_p1283",
+     "prompt": "比例尺1比1000表示什么意思？",
+     "question": "比例尺1比1000表示什么意思？",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "1比1000说明图上距离是实际距离的一千分之一，也就是图上1厘米表示实际距离1000厘米，即10米。",
+     "options": [
+      {
+       "label": "A",
+       "text": "图上1厘米表示实际1000米"
+      },
+      {
+       "label": "B",
+       "text": "图上1厘米表示实际10米"
+      },
+      {
+       "label": "C",
+       "text": "实际1米表示图上1000厘米"
+      },
+      {
+       "label": "D",
+       "text": "图上1米表示实际1000米"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1283_q5",
+     "topicId": "msj_p1283",
+     "prompt": "图上距离比实际距离等于（　）。",
+     "question": "图上距离比实际距离等于（　）。",
+     "answer": "比例尺",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "教材把比例尺写成图上距离比实际距离等于比例尺，也可以写成图上距离除以实际距离等于比例尺。"
+    },
+    {
+     "id": "msj_p1283_q6",
+     "topicId": "msj_p1283",
+     "prompt": "上海到杭州的实际距离大约是180千米，在一幅地图上量得两地间的距离是5厘米，这幅地图的比例尺是（　）。",
+     "question": "上海到杭州的实际距离大约是180千米，在一幅地图上量得两地间的距离是5厘米，这幅地图的比例尺是（　）。",
+     "answer": "1:3600000",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "180千米等于18000000厘米，图上5厘米比实际18000000厘米，前项后项同时除以5，得到1比3600000。"
+    },
+    {
+     "id": "msj_p1283_q7",
+     "topicId": "msj_p1283",
+     "prompt": "两张图纸的比例尺分别是1比5000和1比2000，同样画3厘米长的线段，哪张图纸表示的实际长度长？",
+     "question": "两张图纸的比例尺分别是1比5000和1比2000，同样画3厘米长的线段，哪张图纸表示的实际长度长？",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "比例尺1比5000的图纸上3厘米表示15000厘米即150米，1比2000的图纸上3厘米表示6000厘米即60米，所以1比5000的那张表示的实际长度长。",
+     "options": [
+      {
+       "label": "A",
+       "text": "一样长"
+      },
+      {
+       "label": "B",
+       "text": "1比2000的图纸"
+      },
+      {
+       "label": "C",
+       "text": "1比5000的图纸"
+      },
+      {
+       "label": "D",
+       "text": "无法比较"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1283_q8",
+     "topicId": "msj_p1283",
+     "prompt": "已知图上距离和实际距离，求这幅图的比例尺，要按什么步骤做？",
+     "question": "已知图上距离和实际距离，求这幅图的比例尺，要按什么步骤做？",
+     "answer": "先把图上距离和实际距离化成相同的单位，再写出图上距离比实际距离，最后把比化成前项是1的最简比。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "求比例尺的关键是单位统一：都化成厘米后写出图上距离比实际距离，再同时除以前项，把前项化成1。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1284",
+   "page": null,
+   "description": "数对确定位置：认识竖排为列、横排为行，确定第几列从左往右数、第几行从前向后数，会用数对（列，行）表示座位和方格图上点的位置，能根据数对在图上找到对应的点。",
+   "mastery_criteria": [
+    "能说出列与行的数法并用数对表示位置",
+    "能根据数对在方格图上找到对应的点",
+    "能比较两个数对表示的位置有什么相同和不同"
+   ],
+   "misconceptions": [
+    "把数对写成先行后列，把第3列第4行写成（4，3）",
+    "认为数对（2，5）和（5，2）表示同一个位置"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p1284_q1",
+     "topicId": "msj_p1284",
+     "prompt": "小军坐在第3列第4行，用数对表示是哪一个？",
+     "question": "小军坐在第3列第4行，用数对表示是哪一个？",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "数对先写列后写行，第3列第4行写成（3，4），所以选第一个。",
+     "options": [
+      {
+       "label": "A",
+       "text": "（3，4）"
+      },
+      {
+       "label": "B",
+       "text": "（4，3）"
+      },
+      {
+       "label": "C",
+       "text": "（3，3）"
+      },
+      {
+       "label": "D",
+       "text": "（4，4）"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1284_q2",
+     "topicId": "msj_p1284",
+     "prompt": "小红坐在第5列第2行，用数对表示是（　）。",
+     "question": "小红坐在第5列第2行，用数对表示是（　）。",
+     "answer": "（5，2）",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "数对先写列后写行，第5列第2行写成（5，2），两个数之间用逗号隔开。"
+    },
+    {
+     "id": "msj_p1284_q3",
+     "topicId": "msj_p1284",
+     "prompt": "数对（6，3）中，表示行数的数是几？",
+     "question": "数对（6，3）中，表示行数的数是几？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "数对先列后行，第二个数表示行数，所以（6，3）中表示行数的数是3。",
+     "verify": "{\"type\": \"num\", \"value\": 3}"
+    },
+    {
+     "id": "msj_p1284_q4",
+     "topicId": "msj_p1284",
+     "prompt": "数对（2，5）和（5，2）表示的位置相同吗？",
+     "question": "数对（2，5）和（5，2）表示的位置相同吗？",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "（2，5）是第2列第5行，（5，2）是第5列第2行，列和行都不同，所以表示的是两个不同的位置。",
+     "options": [
+      {
+       "label": "A",
+       "text": "完全相同"
+      },
+      {
+       "label": "B",
+       "text": "不同"
+      },
+      {
+       "label": "C",
+       "text": "在同一列"
+      },
+      {
+       "label": "D",
+       "text": "在同一行"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1284_q5",
+     "topicId": "msj_p1284",
+     "prompt": "方格图上点A的位置是（4，6），点A在第几列？",
+     "question": "方格图上点A的位置是（4，6），点A在第几列？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "数对第一个数表示列数，（4，6）中第一个数是4，所以点A在第4列。",
+     "verify": "{\"type\": \"num\", \"value\": 4}"
+    },
+    {
+     "id": "msj_p1284_q6",
+     "topicId": "msj_p1284",
+     "prompt": "确定第几列，一般情况下要怎样数？",
+     "question": "确定第几列，一般情况下要怎样数？",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材规定，确定第几列一般从左往右数，确定第几行一般从前向后数，这样同一个座位就只有一种表示方法。",
+     "options": [
+      {
+       "label": "A",
+       "text": "从右往左数"
+      },
+      {
+       "label": "B",
+       "text": "从上往下数"
+      },
+      {
+       "label": "C",
+       "text": "从左往右数"
+      },
+      {
+       "label": "D",
+       "text": "从中间往两边数"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1284_q7",
+     "topicId": "msj_p1284",
+     "prompt": "数对（a，3）和（b，3）表示的两个点一定在哪里？",
+     "question": "数对（a，3）和（b，3）表示的两个点一定在哪里？",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两个数对的第二个数都是3，说明行数相同，所以这两个点一定在同一行上。",
+     "options": [
+      {
+       "label": "A",
+       "text": "同一列"
+      },
+      {
+       "label": "B",
+       "text": "同一位置"
+      },
+      {
+       "label": "C",
+       "text": "无法确定"
+      },
+      {
+       "label": "D",
+       "text": "同一行"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1284_q8",
+     "topicId": "msj_p1284",
+     "prompt": "用数对表示位置时，两个数的顺序为什么不能交换？",
+     "question": "用数对表示位置时，两个数的顺序为什么不能交换？",
+     "answer": "因为第一个数表示列、第二个数表示行，交换以后列数和行数都变了，表示的就是另一个位置。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "数对是有顺序的，交换两个数等于把列和行对调，位置随之改变，所以（3，4）和（4，3）是两个不同的点。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1285",
+   "page": null,
+   "description": "方向与距离描述位置：认识北偏东、南偏西等方向的说法，会用观测点、方向和距离三件事准确描述物体位置，理解只说方向不能确定位置，还要量出物体到观测点的距离。",
+   "mastery_criteria": [
+    "能读懂北偏东30度这类方向的说法",
+    "能用方向和距离完整描述物体的位置",
+    "知道只说方向不能确定物体的位置"
+   ],
+   "misconceptions": [
+    "把北偏东30度说成东偏北30度，两个角度的起点弄反",
+    "认为报告了方向就能确定位置，漏掉距离"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p1285_q1",
+     "topicId": "msj_p1285",
+     "prompt": "东北方向还可以叫作什么方向？",
+     "question": "东北方向还可以叫作什么方向？",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材说明，东北方向也叫作北偏东方向，西南方向也叫作南偏西方向，这样说法更便于量出角度。",
+     "options": [
+      {
+       "label": "A",
+       "text": "北偏东方向"
+      },
+      {
+       "label": "B",
+       "text": "南偏东方向"
+      },
+      {
+       "label": "C",
+       "text": "北偏西方向"
+      },
+      {
+       "label": "D",
+       "text": "南偏西方向"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1285_q2",
+     "topicId": "msj_p1285",
+     "prompt": "北偏东30度，是从（　）开始向东偏30度。",
+     "question": "北偏东30度，是从（　）开始向东偏30度。",
+     "answer": "北",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "北偏东的说法以正北为起点，向东偏转30度，所以先从北量起，再看向东偏多少度。"
+    },
+    {
+     "id": "msj_p1285_q3",
+     "topicId": "msj_p1285",
+     "prompt": "雷达图上每相邻两个圆之间的距离表示10千米，一架飞机在第3个圆上，它距机场多少千米？",
+     "question": "雷达图上每相邻两个圆之间的距离表示10千米，一架飞机在第3个圆上，它距机场多少千米？",
+     "answer": 30,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "每个圆之间相差10千米，第3个圆就是3个10千米，3乘10等于30，所以飞机距机场30千米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 10}]}"
+    },
+    {
+     "id": "msj_p1285_q4",
+     "topicId": "msj_p1285",
+     "prompt": "只报告浮雷在舰艇的东北方向，能确定浮雷的位置吗？",
+     "question": "只报告浮雷在舰艇的东北方向，能确定浮雷的位置吗？",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "东北方向是一整条射线，射线上每个点都符合这个方向，所以只知道方向不能确定位置，还要报告距离。",
+     "options": [
+      {
+       "label": "A",
+       "text": "能确定"
+      },
+      {
+       "label": "B",
+       "text": "不能确定，还要知道距离"
+      },
+      {
+       "label": "C",
+       "text": "能确定，还能知道距离"
+      },
+      {
+       "label": "D",
+       "text": "能确定，还能知道角度"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1285_q5",
+     "topicId": "msj_p1285",
+     "prompt": "南偏西40度表示什么意思？",
+     "question": "南偏西40度表示什么意思？",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "南偏西40度是以正南为起点向西偏转40度，与西偏南50度是同一个方向。",
+     "options": [
+      {
+       "label": "A",
+       "text": "从西向南偏40度"
+      },
+      {
+       "label": "B",
+       "text": "从南向东偏40度"
+      },
+      {
+       "label": "C",
+       "text": "从南向西偏40度"
+      },
+      {
+       "label": "D",
+       "text": "从西向北偏40度"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1285_q6",
+     "topicId": "msj_p1285",
+     "prompt": "北偏东30度方向与东偏北多少度的方向相同？",
+     "question": "北偏东30度方向与东偏北多少度的方向相同？",
+     "answer": 60,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "北与东之间是90度，北偏东30度离正东还有90减30等于60度，所以也可以说成东偏北60度。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 90}, {\"type\": \"num\", \"value\": 30}]}"
+    },
+    {
+     "id": "msj_p1285_q7",
+     "topicId": "msj_p1285",
+     "prompt": "同一个物体，以不同的观测点来描述，它的方向和距离会怎样？",
+     "question": "同一个物体，以不同的观测点来描述，它的方向和距离会怎样？",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "观测点变了，物体相对观测点的方向和距离都会跟着变，所以描述位置时一定要先说清以谁为观测点。",
+     "options": [
+      {
+       "label": "A",
+       "text": "一定不变"
+      },
+      {
+       "label": "B",
+       "text": "只有方向改变"
+      },
+      {
+       "label": "C",
+       "text": "只有距离改变"
+      },
+      {
+       "label": "D",
+       "text": "都可能改变"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1285_q8",
+     "topicId": "msj_p1285",
+     "prompt": "要准确描述一个物体相对于观测点的位置，必须说清哪几件事？",
+     "question": "要准确描述一个物体相对于观测点的位置，必须说清哪几件事？",
+     "answer": "要说清以谁为观测点，物体在观测点的什么方向，以及物体离观测点有多远，三件事缺一不可。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "教材用浮雷的例子说明，报告位置要说明观测点、方向（如北偏东30度）和距离（如2千米），少一样就确定不了位置。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1286",
+   "page": null,
+   "description": "平面图上标定位置：以观测点为中心，按给定的方向画出射线，再根据比例尺把实际距离换算成图上距离，在射线上量出长度标出物体的位置，并能检验标得是否正确。",
+   "mastery_criteria": [
+    "能按方向在图上画出表示物体所在方向的射线",
+    "能由实际距离和比例尺算出图上距离",
+    "能在平面图上准确标出物体的位置"
+   ],
+   "misconceptions": [
+    "画方向时把角的顶点画在物体上，而不是画在观测点上",
+    "算图上距离时不换算单位，把米直接当成厘米"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p1286_q1",
+     "topicId": "msj_p1286",
+     "prompt": "在平面图上标出物体的位置，先要确定什么？",
+     "question": "在平面图上标出物体的位置，先要确定什么？",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "标位置前先要明确以谁为观测点，以观测点为中心画方向射线，再量出距离，否则方向就没有起点。",
+     "options": [
+      {
+       "label": "A",
+       "text": "观测点"
+      },
+      {
+       "label": "B",
+       "text": "比例尺的大小"
+      },
+      {
+       "label": "C",
+       "text": "图例的颜色"
+      },
+      {
+       "label": "D",
+       "text": "纸的大小"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1286_q2",
+     "topicId": "msj_p1286",
+     "prompt": "图上1厘米表示实际50米，实际距离200米在图上应画多少厘米？",
+     "question": "图上1厘米表示实际50米，实际距离200米在图上应画多少厘米？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "200米里有4个50米，每50米画1厘米，200除以50等于4，所以应画4厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 200}, {\"type\": \"num\", \"value\": 50}]}"
+    },
+    {
+     "id": "msj_p1286_q3",
+     "topicId": "msj_p1286",
+     "prompt": "在图上标定位置时，先按方向画一条（　），再按距离确定点的位置。",
+     "question": "在图上标定位置时，先按方向画一条（　），再按距离确定点的位置。",
+     "answer": "射线",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "以观测点为端点，按给定的方向画一条射线，射线上到观测点距离符合要求的那个点，就是物体所在的位置。"
+    },
+    {
+     "id": "msj_p1286_q4",
+     "topicId": "msj_p1286",
+     "prompt": "熊猫馆在猴山的北偏东80度方向200米处，图上1厘米表示50米，熊猫馆应画在距猴山多少厘米处？",
+     "question": "熊猫馆在猴山的北偏东80度方向200米处，图上1厘米表示50米，熊猫馆应画在距猴山多少厘米处？",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "每50米画1厘米，200米里有4个50米，200除以50等于4，所以熊猫馆应画在距猴山4厘米的地方。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2厘米"
+      },
+      {
+       "label": "B",
+       "text": "4厘米"
+      },
+      {
+       "label": "C",
+       "text": "5厘米"
+      },
+      {
+       "label": "D",
+       "text": "80厘米"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1286_q5",
+     "topicId": "msj_p1286",
+     "prompt": "一幅图的图上1厘米表示实际100米，某地距观测点300米，图上距离应画多少厘米？",
+     "question": "一幅图的图上1厘米表示实际100米，某地距观测点300米，图上距离应画多少厘米？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "300米里有3个100米，图上1厘米表示100米，300除以100等于3，所以图上画3厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 300}, {\"type\": \"num\", \"value\": 100}]}"
+    },
+    {
+     "id": "msj_p1286_q6",
+     "topicId": "msj_p1286",
+     "prompt": "在平面图上准确标出一个物体的位置，需要知道什么？",
+     "question": "在平面图上准确标出一个物体的位置，需要知道什么？",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "只给方向画出的是一条射线，只给距离画出的是一条弧线，只有方向和距离同时给出，才能在图上确定唯一的一个点。",
+     "options": [
+      {
+       "label": "A",
+       "text": "只要方向"
+      },
+      {
+       "label": "B",
+       "text": "只要距离"
+      },
+      {
+       "label": "C",
+       "text": "方向和距离"
+      },
+      {
+       "label": "D",
+       "text": "只要角度"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1286_q7",
+     "topicId": "msj_p1286",
+     "prompt": "以学校为观测点描述公园在北偏东40度方向，如果以公园为观测点描述学校，方向会怎样？",
+     "question": "以学校为观测点描述公园在北偏东40度方向，如果以公园为观测点描述学校，方向会怎样？",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "观测点对调后，方向正好相反，北偏东40度的相反方向是南偏西40度，所以描述的方向要反过来。",
+     "options": [
+      {
+       "label": "A",
+       "text": "仍然是北偏东40度"
+      },
+      {
+       "label": "B",
+       "text": "北偏西40度"
+      },
+      {
+       "label": "C",
+       "text": "无法确定"
+      },
+      {
+       "label": "D",
+       "text": "南偏西40度"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1286_q8",
+     "topicId": "msj_p1286",
+     "prompt": "在平面图上标出物体位置，要按怎样的步骤做？",
+     "question": "在平面图上标出物体位置，要按怎样的步骤做？",
+     "answer": "先确定观测点，再从观测点按给定的方向画一条射线，然后用比例尺算出图上距离，在射线上量出这个长度并标出点。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "三步走：定观测点、画方向射线、按比例尺算图上距离并在射线上截取，最后标上物体的名称和距离。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1287",
+   "page": null,
+   "description": "综合运用方向距离：结合雷达屏幕、跳伞着陆点、街区平面图等情境，综合运用数对与方向距离两套方法确定和描述位置，理解两者都要用两个数据，体会数与形的联系。",
+   "mastery_criteria": [
+    "能在雷达图、平面图上读出方向和距离",
+    "能用数对与方向距离两种方法描述同一位置",
+    "能比较两种确定位置方法的联系与区别"
+   ],
+   "misconceptions": [
+    "把北偏东30度和东偏北30度当成同一个方向",
+    "认为数对和方向距离可以只用一个数据就确定位置"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p1287_q1",
+     "topicId": "msj_p1287",
+     "prompt": "雷达屏幕上每相邻两个圆之间的距离表示多少千米？",
+     "question": "雷达屏幕上每相邻两个圆之间的距离表示多少千米？",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材的雷达屏幕题说明，每相邻两个圆之间的距离表示10千米，看飞机在第几个圆上就能算出它离机场的距离。",
+     "options": [
+      {
+       "label": "A",
+       "text": "10千米"
+      },
+      {
+       "label": "B",
+       "text": "5千米"
+      },
+      {
+       "label": "C",
+       "text": "20千米"
+      },
+      {
+       "label": "D",
+       "text": "30千米"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1287_q2",
+     "topicId": "msj_p1287",
+     "prompt": "飞机A在机场北偏东30度方向30千米处，图上每相邻两个圆表示10千米，飞机A应画在第几个圆上？",
+     "question": "飞机A在机场北偏东30度方向30千米处，图上每相邻两个圆表示10千米，飞机A应画在第几个圆上？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "每相邻两个圆相差10千米，30千米里有3个10千米，30除以10等于3，所以飞机A在第3个圆上。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 30}, {\"type\": \"num\", \"value\": 10}]}"
+    },
+    {
+     "id": "msj_p1287_q3",
+     "topicId": "msj_p1287",
+     "prompt": "小丽的行走路线从数对（6，2）到（7，2），她是向（　）走了一格。",
+     "question": "小丽的行走路线从数对（6，2）到（7，2），她是向（　）走了一格。",
+     "answer": "右",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "两个数对的行数都是2，说明在同一行，列数从6变成7增加1，列是从左往右数的，所以她是向右走了一格。"
+    },
+    {
+     "id": "msj_p1287_q4",
+     "topicId": "msj_p1287",
+     "prompt": "飞机B在机场北偏东60度方向40千米处，雷达图上每相邻两个圆表示10千米，飞机B在第几个圆上？",
+     "question": "飞机B在机场北偏东60度方向40千米处，雷达图上每相邻两个圆表示10千米，飞机B在第几个圆上？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "40千米里有4个10千米，40除以10等于4，所以飞机B在第4个圆上。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 40}, {\"type\": \"num\", \"value\": 10}]}"
+    },
+    {
+     "id": "msj_p1287_q5",
+     "topicId": "msj_p1287",
+     "prompt": "用数对确定位置和用方向与距离确定位置，它们的共同点是什么？",
+     "question": "用数对确定位置和用方向与距离确定位置，它们的共同点是什么？",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "数对用列和行两个数据，方向与距离也是两个数据，两者都要两个条件才能确定唯一的位置，都体现了数与形的联系。",
+     "options": [
+      {
+       "label": "A",
+       "text": "都只需要一个数据"
+      },
+      {
+       "label": "B",
+       "text": "都需要两个数据才能确定位置"
+      },
+      {
+       "label": "C",
+       "text": "都只看方向"
+      },
+      {
+       "label": "D",
+       "text": "都不需要观测点"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1287_q6",
+     "topicId": "msj_p1287",
+     "prompt": "飞机C在机场的南偏东45度方向20千米处，还可以说成在机场的什么方向20千米处？",
+     "question": "飞机C在机场的南偏东45度方向20千米处，还可以说成在机场的什么方向20千米处？",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "南偏东45度正好在东和南的正中间，从东量起也是45度，所以说成东偏南45度方向完全一样。",
+     "options": [
+      {
+       "label": "A",
+       "text": "北偏东45度"
+      },
+      {
+       "label": "B",
+       "text": "南偏西45度"
+      },
+      {
+       "label": "C",
+       "text": "东偏南45度"
+      },
+      {
+       "label": "D",
+       "text": "西偏南45度"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1287_q7",
+     "topicId": "msj_p1287",
+     "prompt": "跳伞运动员3号落地点在点O的北偏东40度方向40米处，4号落地点在点O的南偏西60度方向10米处，两人落地点到点O的距离相差多少米？",
+     "question": "跳伞运动员3号落地点在点O的北偏东40度方向40米处，4号落地点在点O的南偏西60度方向10米处，两人落地点到点O的距离相差多少米？",
+     "answer": 30,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "3号距点O是40米，4号距点O是10米，两者相差40减10等于30米。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 40}, {\"type\": \"num\", \"value\": 10}]}"
+    },
+    {
+     "id": "msj_p1287_q8",
+     "topicId": "msj_p1287",
+     "prompt": "用数对确定位置和用方向与距离确定位置，有什么区别和联系？",
+     "question": "用数对确定位置和用方向与距离确定位置，有什么区别和联系？",
+     "answer": "两者都要用两个数据确定位置；数对用列和行，适合方格图和平面图上的点；方向与距离适合说清物体相对观测点的位置，两者都体现数与形的联系。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "联系在于都需要两个数据、都能唯一确定位置；区别在于数对用列与行，方向距离用角度与长度，还要先说清观测点。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1288",
+   "page": null,
+   "description": "描述与设计路线图：根据平面图上各点的方向和距离，按顺序描述行走路线，也能按要求画出各点的位置设计路线，理解以不同观测点描述时方向相反、距离不变。",
+   "mastery_criteria": [
+    "能按顺序用方向和距离描述行走路线",
+    "能根据描述在图上画出各点并连成路线",
+    "知道观测点对调后方向相反、距离不变"
+   ],
+   "misconceptions": [
+    "描述路线时只说方向不说距离，或漏掉起点",
+    "认为观测点对调后方向和距离都要变"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p1288_q1",
+     "topicId": "msj_p1288",
+     "prompt": "描述一段行走路线时，每一段要说清什么？",
+     "question": "描述一段行走路线时，每一段要说清什么？",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "路线是一段一段走的，每一段都要说清从哪往哪个方向走、走了多远，方向和距离缺一不可。",
+     "options": [
+      {
+       "label": "A",
+       "text": "方向和距离"
+      },
+      {
+       "label": "B",
+       "text": "只说方向"
+      },
+      {
+       "label": "C",
+       "text": "只说距离"
+      },
+      {
+       "label": "D",
+       "text": "只说终点名称"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1288_q2",
+     "topicId": "msj_p1288",
+     "prompt": "小琳家在打谷场的正北方向200米处，图上1厘米表示100米，小琳家在图上距打谷场多少厘米？",
+     "question": "小琳家在打谷场的正北方向200米处，图上1厘米表示100米，小琳家在图上距打谷场多少厘米？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "每100米画1厘米，200米里有2个100米，200除以100等于2，所以图上距离是2厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 200}, {\"type\": \"num\", \"value\": 100}]}"
+    },
+    {
+     "id": "msj_p1288_q3",
+     "topicId": "msj_p1288",
+     "prompt": "晓雨家在商店的北偏西60度方向400米处，描述位置时要先说（　），再说距离。",
+     "question": "晓雨家在商店的北偏西60度方向400米处，描述位置时要先说（　），再说距离。",
+     "answer": "方向",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "描述位置的完整说法是先说方向再说距离，如北偏西60度方向400米处，这样说别人才能找到位置。"
+    },
+    {
+     "id": "msj_p1288_q4",
+     "topicId": "msj_p1288",
+     "prompt": "要根据描述画出从小琳家到晓雨家的路线，下面做法正确的是？",
+     "question": "要根据描述画出从小琳家到晓雨家的路线，下面做法正确的是？",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "画路线要一段一段按方向和距离画，每段都从上一段的终点出发，最后把各点连起来才是完整路线。",
+     "options": [
+      {
+       "label": "A",
+       "text": "只画一条连接两点的直线"
+      },
+      {
+       "label": "B",
+       "text": "按每一段的方向和距离依次画出各点"
+      },
+      {
+       "label": "C",
+       "text": "只标出终点位置"
+      },
+      {
+       "label": "D",
+       "text": "只写总距离"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1288_q5",
+     "topicId": "msj_p1288",
+     "prompt": "商场在小吉家的北偏东45度方向300米处，小吉家在商场的什么方向多少米处？",
+     "question": "商场在小吉家的北偏东45度方向300米处，小吉家在商场的什么方向多少米处？",
+     "answer": "南偏西45度方向300米处",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "观测点对调后方向相反、距离不变，所以小吉家在商场的南偏西45度方向300米处。"
+    },
+    {
+     "id": "msj_p1288_q6",
+     "topicId": "msj_p1288",
+     "prompt": "商场在小吉家的北偏东45度方向300米处，小吉家在商场的什么方向？",
+     "question": "商场在小吉家的北偏东45度方向300米处，小吉家在商场的什么方向？",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "观测点对调，方向正好相反，北偏东45度的相反方向是南偏西45度，距离不变仍是300米。",
+     "options": [
+      {
+       "label": "A",
+       "text": "仍是北偏东45度"
+      },
+      {
+       "label": "B",
+       "text": "北偏西45度"
+      },
+      {
+       "label": "C",
+       "text": "南偏西45度"
+      },
+      {
+       "label": "D",
+       "text": "南偏东45度"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1288_q7",
+     "topicId": "msj_p1288",
+     "prompt": "一段路线用数对表示为（6，2）到（7，2）到（8，2）到（9，2）到（9，3）到（9，4），最后一段是向什么方向走的？",
+     "question": "一段路线用数对表示为（6，2）到（7，2）到（8，2）到（9，2）到（9，3）到（9，4），最后一段是向什么方向走的？",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "最后一段从（9，3）到（9，4），列不变、行数增加1，方格图上行数增加的方向是向上，也就是向北走了一格。",
+     "options": [
+      {
+       "label": "A",
+       "text": "向东"
+      },
+      {
+       "label": "B",
+       "text": "向西"
+      },
+      {
+       "label": "C",
+       "text": "向南"
+      },
+      {
+       "label": "D",
+       "text": "向北"
+      }
+     ]
+    },
+    {
+     "id": "msj_p1288_q8",
+     "topicId": "msj_p1288",
+     "prompt": "设计一张从家到学校的路线图，要写清哪些内容？",
+     "question": "设计一张从家到学校的路线图，要写清哪些内容？",
+     "answer": "要写清起点，再按顺序写出每一段的方向和距离，最后说明终点，各段之间要能接得上，走完正好到达学校。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "路线图要能照着走：先说起点，再逐段说方向和距离，段与段首尾相接，最后落到终点，中间的转折点也要交代清楚。"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,592 @@
+{
+ "tag": "s2a",
+ "book": "苏教版二年级上册",
+ "unit_points": [
+  {
+   "id": "msj_p017",
+   "description": "认识乘法：把几个相同加数相加写成乘法算式，认识乘号、乘数和积，会编会背1到6的乘法口诀，并用口诀计算表内乘法、解决求几个几是多少的实际问题。",
+   "mastery_criteria": [
+    "能把几个几相加改写成乘法算式，并说出乘数和积",
+    "会背1到6的乘法口诀，能看着口诀算表内乘法",
+    "能用乘法解决求几个几是多少的简单实际问题"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p017_q1",
+     "topicId": "msj_p017",
+     "prompt": "6个2相加，写成乘法算式是下面哪一个？",
+     "question": "6个2相加，写成乘法算式是下面哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2加6"
+      },
+      {
+       "label": "B",
+       "text": "2乘6"
+      },
+      {
+       "label": "C",
+       "text": "6加6加6"
+      },
+      {
+       "label": "D",
+       "text": "6加2"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "6个2相加就是2加2加2加2加2加2，求几个相同加数的和可以用乘法，写成2乘6，得数是12。"
+    },
+    {
+     "id": "msj_p017_q2",
+     "topicId": "msj_p017",
+     "prompt": "在乘法算式4乘5等于20中，20叫作什么？",
+     "question": "在乘法算式4乘5等于20中，20叫作什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "乘数"
+      },
+      {
+       "label": "B",
+       "text": "商"
+      },
+      {
+       "label": "C",
+       "text": "积"
+      },
+      {
+       "label": "D",
+       "text": "加数"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "乘法算式中相乘的两个数叫乘数，乘得的结果叫积，所以4乘5等于20里的20是积。"
+    },
+    {
+     "id": "msj_p017_q3",
+     "topicId": "msj_p017",
+     "prompt": "计算3乘6和6乘3时，用的是下面哪一句口诀？",
+     "question": "计算3乘6和6乘3时，用的是下面哪一句口诀？",
+     "options": [
+      {
+       "label": "A",
+       "text": "三六十八"
+      },
+      {
+       "label": "B",
+       "text": "三三得九"
+      },
+      {
+       "label": "C",
+       "text": "六六三十六"
+      },
+      {
+       "label": "D",
+       "text": "三六十二"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "3乘6和6乘3都表示3个6相加或6个3相加，得数都是18，用同一句口诀三六十八。"
+    },
+    {
+     "id": "msj_p017_q4",
+     "topicId": "msj_p017",
+     "prompt": "每节车厢坐5人，4节车厢一共坐多少人？",
+     "question": "每节车厢坐5人，4节车厢一共坐多少人？",
+     "answer": 20,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "每节车厢坐5人，4节车厢就是4个5相加，用乘法算5乘4等于20，一共坐20人。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msj_p017_q5",
+     "topicId": "msj_p017",
+     "prompt": "计算5乘6等于30时，用的乘法口诀是哪一句？",
+     "question": "计算5乘6等于30时，用的乘法口诀是哪一句？",
+     "answer": "五六三十",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "5乘6表示6个5相加，得数是30，对应的乘法口诀是五六三十。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p018",
+   "description": "认识平均分和除法：把一些物体每份分得同样多叫平均分，认识被除数、除号和除数、商，会用1到6的乘法口诀求商，解决每份几个和分成几份的实际问题。",
+   "mastery_criteria": [
+    "能把一些物体平均分，并说清每份几个或分成几份",
+    "认识除法算式各部分的名称，会读除法算式",
+    "会用乘法口诀求商，能解决简单的除法实际问题"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p018_q1",
+     "topicId": "msj_p018",
+     "prompt": "把8个桃子平均分给2只小猴，每只小猴分得几个？",
+     "question": "把8个桃子平均分给2只小猴，每只小猴分得几个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2个"
+      },
+      {
+       "label": "B",
+       "text": "4个"
+      },
+      {
+       "label": "C",
+       "text": "6个"
+      },
+      {
+       "label": "D",
+       "text": "8个"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "平均分就是每只小猴分得同样多，8个桃子分给2只小猴，每只分4个，用除法算8除以2等于4。"
+    },
+    {
+     "id": "msj_p018_q2",
+     "topicId": "msj_p018",
+     "prompt": "在除法算式12除以3等于4中，12叫作什么？",
+     "question": "在除法算式12除以3等于4中，12叫作什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "除数"
+      },
+      {
+       "label": "B",
+       "text": "商"
+      },
+      {
+       "label": "C",
+       "text": "被除数"
+      },
+      {
+       "label": "D",
+       "text": "乘数"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "除法算式中被分的总数叫被除数，用来分的份数叫除数，分得的结果叫商，所以12是被除数。"
+    },
+    {
+     "id": "msj_p018_q3",
+     "topicId": "msj_p018",
+     "prompt": "计算15除以5等于3时，想的是哪一句乘法口诀？",
+     "question": "计算15除以5等于3时，想的是哪一句乘法口诀？",
+     "options": [
+      {
+       "label": "A",
+       "text": "三五十五"
+      },
+      {
+       "label": "B",
+       "text": "五五二十五"
+      },
+      {
+       "label": "C",
+       "text": "一五得五"
+      },
+      {
+       "label": "D",
+       "text": "三三得九"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "用乘法口诀求商，要想几个5是15，三五十五，所以15除以5的商是3。"
+    },
+    {
+     "id": "msj_p018_q4",
+     "topicId": "msj_p018",
+     "prompt": "有20个面包，每4个装一袋，可以装几袋？",
+     "question": "有20个面包，每4个装一袋，可以装几袋？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "每4个装一袋，就是看20里面有几个4，用除法算20除以4等于5，可以装5袋。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 20}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msj_p018_q5",
+     "topicId": "msj_p018",
+     "prompt": "除法算式9除以3等于3，读作什么？",
+     "question": "除法算式9除以3等于3，读作什么？",
+     "answer": "9除以3等于3",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "除法算式从左往右读，先读被除数，再读除以，然后读除数和商，所以读作9除以3等于3。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p019",
+   "description": "奇妙的七巧板：知道七巧板由7块板拼成一个正方形，比较各块板的形状和大小，用3块或4块板拼出长方形、正方形、平行四边形等学过的图形，并了解七巧板的来历。",
+   "mastery_criteria": [
+    "知道七巧板由7块板组成，能比较各块板的形状和大小",
+    "能用3块或4块板拼出学过的图形和有趣的图案",
+    "能讲一讲七巧板的来历，感受我国古代的益智玩具"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p019_q1",
+     "topicId": "msj_p019",
+     "prompt": "一副七巧板由几块板组成？",
+     "question": "一副七巧板由几块板组成？",
+     "options": [
+      {
+       "label": "A",
+       "text": "7块"
+      },
+      {
+       "label": "B",
+       "text": "5块"
+      },
+      {
+       "label": "C",
+       "text": "6块"
+      },
+      {
+       "label": "D",
+       "text": "8块"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "七巧板由7块板组成，把7块板全部用上正好拼成一个正方形。"
+    },
+    {
+     "id": "msj_p019_q2",
+     "topicId": "msj_p019",
+     "prompt": "从七巧板中选3块或4块拼一拼，可以拼成下面哪种学过的图形？",
+     "question": "从七巧板中选3块或4块拼一拼，可以拼成下面哪种学过的图形？",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆"
+      },
+      {
+       "label": "B",
+       "text": "球"
+      },
+      {
+       "label": "C",
+       "text": "平行四边形"
+      },
+      {
+       "label": "D",
+       "text": "圆柱"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "用七巧板中的3块或4块板可以拼出长方形、正方形和平行四边形，圆和球不是用直边板拼成的。"
+    },
+    {
+     "id": "msj_p019_q3",
+     "topicId": "msj_p019",
+     "prompt": "七巧板是我国古代的一种益智玩具，它源自宋代的什么？",
+     "question": "七巧板是我国古代的一种益智玩具，它源自宋代的什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "河图"
+      },
+      {
+       "label": "B",
+       "text": "燕几图"
+      },
+      {
+       "label": "C",
+       "text": "日历"
+      },
+      {
+       "label": "D",
+       "text": "钟表"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "七巧板源自宋代的燕几图，燕几是可以分合变化的桌子，后来慢慢演变成七巧板。"
+    },
+    {
+     "id": "msj_p019_q4",
+     "topicId": "msj_p019",
+     "prompt": "一套七巧板有7块板，5套七巧板一共有多少块板？",
+     "question": "一套七巧板有7块板，5套七巧板一共有多少块板？",
+     "answer": 35,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "一套有7块，5套就是5个7相加，用乘法算7乘5等于35，一共有35块板。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 7}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "msj_p019_q5",
+     "topicId": "msj_p019",
+     "prompt": "七巧板传到国外以后，被称为什么？",
+     "question": "七巧板传到国外以后，被称为什么？",
+     "answer": "唐图",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "七巧板传到国外后引起很多人的兴趣，外国人把它叫作唐图，意思是中国的图板。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p020",
+   "description": "7到9的表内乘除法：按顺序编出7、8、9的乘法口诀并熟记，会用一句口诀算两道乘法算式和两道除法算式，在探索9的口诀规律中体会口诀之间的联系。",
+   "mastery_criteria": [
+    "能按顺序编出7、8、9的乘法口诀并熟记",
+    "会用一句乘法口诀求积，也会用口诀求商",
+    "能用7、8、9的乘法口诀解决实际问题"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "msj_p020_q1",
+     "topicId": "msj_p020",
+     "prompt": "计算7乘8，要用下面哪一句乘法口诀？",
+     "question": "计算7乘8，要用下面哪一句乘法口诀？",
+     "options": [
+      {
+       "label": "A",
+       "text": "七八五十六"
+      },
+      {
+       "label": "B",
+       "text": "七八四十八"
+      },
+      {
+       "label": "C",
+       "text": "七八六十三"
+      },
+      {
+       "label": "D",
+       "text": "八八六十四"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "7乘8表示8个7相加，得数是56，对应的乘法口诀是七八五十六。"
+    },
+    {
+     "id": "msj_p020_q2",
+     "topicId": "msj_p020",
+     "prompt": "下面哪道题的得数可以用口诀六九五十四算出来？",
+     "question": "下面哪道题的得数可以用口诀六九五十四算出来？",
+     "options": [
+      {
+       "label": "A",
+       "text": "54除以8"
+      },
+      {
+       "label": "B",
+       "text": "56除以7"
+      },
+      {
+       "label": "C",
+       "text": "54除以6"
+      },
+      {
+       "label": "D",
+       "text": "49除以7"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "六九五十四表示6个9是54，所以54除以6等于9，用这句口诀就能算出商是9。"
+    },
+    {
+     "id": "msj_p020_q3",
+     "topicId": "msj_p020",
+     "prompt": "9的乘法口诀中，4个9比40少几？",
+     "question": "9的乘法口诀中，4个9比40少几？",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "4个9是36，40减36等于4，所以4个9比40少4，几个9就比几十少几。"
+    },
+    {
+     "id": "msj_p020_q4",
+     "topicId": "msj_p020",
+     "prompt": "做操时8个小组，每组9人，一共有多少人？",
+     "question": "做操时8个小组，每组9人，一共有多少人？",
+     "answer": 72,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "每组9人，8个小组就是8个9相加，用乘法算8乘9等于72，一共有72人。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"num\", \"value\": 9}]}"
+    },
+    {
+     "id": "msj_p020_q5",
+     "topicId": "msj_p020",
+     "prompt": "计算7乘7等于49，用的乘法口诀是哪一句？",
+     "question": "计算7乘7等于49，用的乘法口诀是哪一句？",
+     "answer": "七七四十九",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "7乘7表示7个7相加，得数是49，对应的乘法口诀是七七四十九。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p021",
+   "description": "生活中的方向：在教室里和校园中辨认东、南、西、北，会用方向词说清物体所在的位置和行走路线，认识平面图上北下南、左西右东的画法。",
+   "mastery_criteria": [
+    "能借助太阳或指路牌辨认东、南、西、北",
+    "知道东和西相对、南和北相对，能按顺序说出四个方向",
+    "会看按上北下南、左西右东绘制的平面图，说出景物的位置"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_p021_q1",
+     "topicId": "msj_p021",
+     "prompt": "早晨起来面向太阳站立，你的前面是什么方向？",
+     "question": "早晨起来面向太阳站立，你的前面是什么方向？",
+     "options": [
+      {
+       "label": "A",
+       "text": "东"
+      },
+      {
+       "label": "B",
+       "text": "南"
+      },
+      {
+       "label": "C",
+       "text": "西"
+      },
+      {
+       "label": "D",
+       "text": "北"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "早晨太阳从东方升起，面向太阳站立时前面就是东，后面是西，左边是北，右边是南。"
+    },
+    {
+     "id": "msj_p021_q2",
+     "topicId": "msj_p021",
+     "prompt": "早晨面向太阳站立时，你的左边是什么方向？",
+     "question": "早晨面向太阳站立时，你的左边是什么方向？",
+     "options": [
+      {
+       "label": "A",
+       "text": "南"
+      },
+      {
+       "label": "B",
+       "text": "西"
+      },
+      {
+       "label": "C",
+       "text": "东"
+      },
+      {
+       "label": "D",
+       "text": "北"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "早晨面向太阳，前面是东，后面是西，左手边是北，右手边是南，所以左边是北。"
+    },
+    {
+     "id": "msj_p021_q3",
+     "topicId": "msj_p021",
+     "prompt": "平面图通常按上北下南、左西右东绘制。图上小明在小红的右边，小明在小红的哪一面？",
+     "question": "平面图通常按上北下南、左西右东绘制。图上小明在小红的右边，小明在小红的哪一面？",
+     "options": [
+      {
+       "label": "A",
+       "text": "西面"
+      },
+      {
+       "label": "B",
+       "text": "东面"
+      },
+      {
+       "label": "C",
+       "text": "南面"
+      },
+      {
+       "label": "D",
+       "text": "北面"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "平面图右边表示东方，图上小明在小红的右边，所以小明就在小红的东面。"
+    },
+    {
+     "id": "msj_p021_q4",
+     "topicId": "msj_p021",
+     "prompt": "操场在教室的南面，那么教室在操场的哪一面？",
+     "question": "操场在教室的南面，那么教室在操场的哪一面？",
+     "answer": "北面",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "南和北是相对的两个方向，操场在教室南面，反过来教室就在操场的北面。"
+    },
+    {
+     "id": "msj_p021_q5",
+     "topicId": "msj_p021",
+     "prompt": "做游戏时同学们分成4队，分别面向东、南、西、北站立，每队5人，一共有多少人？",
+     "question": "做游戏时同学们分成4队，分别面向东、南、西、北站立，每队5人，一共有多少人？",
+     "answer": 20,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "四个方向各站一队，一共4队，每队5人，用乘法算4乘5等于20，一共有20人。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 5}]}"
+    }
+   ]
+  }
+ ],
+ "lesson_points": []
+}

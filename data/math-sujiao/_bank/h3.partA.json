@@ -1,0 +1,3528 @@
+{
+ "tag": "h3",
+ "book": "苏教版选择性必修第一册",
+ "unit_points": [
+  {
+   "id": "msj_h017",
+   "description": "借助平面直角坐标系建立直线的方程，用斜率与倾斜角刻画直线的倾斜程度，通过方程研究两条直线的平行、垂直与交点，并用坐标法求两点间距离、点到直线的距离。",
+   "mastery_criteria": [
+    "能用斜率公式求过两点的直线的斜率和倾斜角",
+    "能根据已知条件写出直线的方程并判断两条直线的位置关系",
+    "会用两点间距离公式与点到直线的距离公式解决简单问题"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h017_q1",
+     "topicId": "msj_h017",
+     "prompt": "直线经过点 A(1,2) 和点 B(3,6)，这条直线的斜率是多少？",
+     "question": "直线经过点 A(1,2) 和点 B(3,6)，这条直线的斜率是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "1/2"
+      },
+      {
+       "label": "C",
+       "text": "-2"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "斜率等于纵坐标的增量除以横坐标的增量，6 减 2 得 4，3 减 1 得 2，4 除以 2 等于 2。"
+    },
+    {
+     "id": "msj_h017_q2",
+     "topicId": "msj_h017",
+     "prompt": "关于直线的倾斜角与斜率，下面的说法哪一个是正确的？",
+     "question": "关于直线的倾斜角与斜率，下面的说法哪一个是正确的？",
+     "options": [
+      {
+       "label": "A",
+       "text": "直线与 x 轴垂直时斜率是 0，倾斜角是 90 度"
+      },
+      {
+       "label": "B",
+       "text": "直线与 x 轴垂直时斜率不存在，倾斜角是 90 度"
+      },
+      {
+       "label": "C",
+       "text": "倾斜角是 180 度时斜率是 0"
+      },
+      {
+       "label": "D",
+       "text": "任何直线都有斜率，斜率可以取任意实数"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "倾斜角由 x 轴绕交点逆时针旋转到与直线重合的最小正角定义，垂直于 x 轴的直线两点的横坐标相等，斜率的分母为零，所以斜率不存在，倾斜角为 90 度。"
+    },
+    {
+     "id": "msj_h017_q3",
+     "topicId": "msj_h017",
+     "prompt": "点 O(0,0) 到直线 3x + 4y - 10 = 0 的距离是多少？",
+     "question": "点 O(0,0) 到直线 3x + 4y - 10 = 0 的距离是多少？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由点到直线的距离公式，距离等于 10 除以根号下 3 的平方加 4 的平方，即 10 除以 5 等于 2。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "msj_h017_q4",
+     "topicId": "msj_h017",
+     "prompt": "两条平行直线 3x + 4y - 6 = 0 与 3x + 4y + 4 = 0 之间的距离是（　）。",
+     "question": "两条平行直线 3x + 4y - 6 = 0 与 3x + 4y + 4 = 0 之间的距离是（　）。",
+     "answer": "2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "两条平行直线的方程中一次项系数相同时，距离等于常数之差的绝对值除以根号下 A 的平方加 B 的平方，即 10 除以 5 等于 2。"
+    },
+    {
+     "id": "msj_h017_q5",
+     "topicId": "msj_h017",
+     "prompt": "直线 l 经过点 (2,3)，且与直线 x - 2y + 1 = 0 垂直，直线 l 的斜率是多少？",
+     "question": "直线 l 经过点 (2,3)，且与直线 x - 2y + 1 = 0 垂直，直线 l 的斜率是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1/2"
+      },
+      {
+       "label": "B",
+       "text": "-1/2"
+      },
+      {
+       "label": "C",
+       "text": "-2"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "已知直线的斜率为 1/2，两条斜率都存在的直线垂直时斜率之积等于负 1，所以直线 l 的斜率等于负 2。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h018",
+   "description": "在平面直角坐标系中用方程表示圆，通过圆的标准方程与一般方程研究点与圆、直线与圆、圆与圆的位置关系，进一步体会用坐标法研究曲线的基本思路。",
+   "mastery_criteria": [
+    "能根据圆心和半径写出圆的标准方程",
+    "能用圆心到直线的距离判断直线与圆的位置关系",
+    "能用圆心距与半径的关系判断两个圆的位置关系"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h018_q1",
+     "topicId": "msj_h018",
+     "prompt": "圆心为 (2,-3)、半径为 4 的圆的标准方程是哪一个？",
+     "question": "圆心为 (2,-3)、半径为 4 的圆的标准方程是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(x - 2)² + (y + 3)² = 16"
+      },
+      {
+       "label": "B",
+       "text": "(x + 2)² + (y - 3)² = 16"
+      },
+      {
+       "label": "C",
+       "text": "(x - 2)² + (y - 3)² = 4"
+      },
+      {
+       "label": "D",
+       "text": "(x + 2)² + (y + 3)² = 4"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "圆的标准方程中括号内是横坐标减圆心横坐标、纵坐标减圆心纵坐标，右边是半径的平方，所以方程是 x 减 2 的平方加 y 加 3 的平方等于 16。"
+    },
+    {
+     "id": "msj_h018_q2",
+     "topicId": "msj_h018",
+     "prompt": "把圆 x² + y² - 2x + 4y - 4 = 0 化成标准方程后，它的半径是（　）。",
+     "question": "把圆 x² + y² - 2x + 4y - 4 = 0 化成标准方程后，它的半径是（　）。",
+     "answer": "3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "配方得 (x - 1)² + (y + 2)² = 9，所以圆心是 (1,-2)，半径是 3，学生的易错点是把常数项直接当成半径的平方。"
+    },
+    {
+     "id": "msj_h018_q3",
+     "topicId": "msj_h018",
+     "prompt": "直线 3x + 4y - 10 = 0 与圆 x² + y² = 4 的位置关系是什么？",
+     "question": "直线 3x + 4y - 10 = 0 与圆 x² + y² = 4 的位置关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "相交"
+      },
+      {
+       "label": "B",
+       "text": "相切"
+      },
+      {
+       "label": "C",
+       "text": "相离"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "圆心到直线的距离等于 10 除以根号 25 即 2，正好等于圆的半径 2，所以直线与圆相切。"
+    },
+    {
+     "id": "msj_h018_q4",
+     "topicId": "msj_h018",
+     "prompt": "圆 x² + y² = 25 被直线 y = 3 截得的弦长是多少？",
+     "question": "圆 x² + y² = 25 被直线 y = 3 截得的弦长是多少？",
+     "answer": 8,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "圆心到直线的距离是 3，半径是 5，半弦长等于根号下 25 减 9 即 4，所以弦长是 8。",
+     "verify": "{\"type\": \"num\", \"value\": 8}"
+    },
+    {
+     "id": "msj_h018_q5",
+     "topicId": "msj_h018",
+     "prompt": "两个圆的半径分别是 2 和 3，圆心距是 6，这两个圆的位置关系是什么？",
+     "question": "两个圆的半径分别是 2 和 3，圆心距是 6，这两个圆的位置关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "外切"
+      },
+      {
+       "label": "B",
+       "text": "相交"
+      },
+      {
+       "label": "C",
+       "text": "外离"
+      },
+      {
+       "label": "D",
+       "text": "内切"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两半径之和是 5，圆心距 6 大于 5，所以两个圆没有公共点并且彼此外离。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h019",
+   "description": "用一个平面去截圆锥面可以得到椭圆、双曲线和抛物线，用坐标法建立它们的标准方程，再通过方程研究范围、对称性、顶点、离心率等几何性质。",
+   "mastery_criteria": [
+    "能由圆锥曲线的定义求它的标准方程",
+    "能由标准方程读出焦点坐标、顶点坐标与离心率",
+    "能判断直线与圆锥曲线公共点的个数"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h019_q1",
+     "topicId": "msj_h019",
+     "prompt": "平面内到两个定点的距离之和等于常数，且这个常数大于两定点间距离，这样的点的轨迹是什么？",
+     "question": "平面内到两个定点的距离之和等于常数，且这个常数大于两定点间距离，这样的点的轨迹是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "椭圆"
+      },
+      {
+       "label": "B",
+       "text": "双曲线"
+      },
+      {
+       "label": "C",
+       "text": "抛物线"
+      },
+      {
+       "label": "D",
+       "text": "圆"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "这正是教材给出的椭圆定义，两个定点叫焦点，两个焦点间的距离叫焦距，常数要大于焦距才能画出椭圆。"
+    },
+    {
+     "id": "msj_h019_q2",
+     "topicId": "msj_h019",
+     "prompt": "已知椭圆 x²/25 + y²/16 = 1，它的焦距是（　）。",
+     "question": "已知椭圆 x²/25 + y²/16 = 1，它的焦距是（　）。",
+     "answer": "6",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由方程得 a 等于 5，b 等于 4，c 的平方等于 25 减 16 等于 9，c 等于 3，所以焦距 2c 等于 6。"
+    },
+    {
+     "id": "msj_h019_q3",
+     "topicId": "msj_h019",
+     "prompt": "双曲线 x²/9 - y²/16 = 1 的渐近线方程是哪一个？",
+     "question": "双曲线 x²/9 - y²/16 = 1 的渐近线方程是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = ±3x/4"
+      },
+      {
+       "label": "B",
+       "text": "y = ±4x/3"
+      },
+      {
+       "label": "C",
+       "text": "y = ±4x/5"
+      },
+      {
+       "label": "D",
+       "text": "y = ±5x/3"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "双曲线的渐近线方程是 y 等于正负 a 分之 b 乘 x，这里 a 等于 3，b 等于 4，所以是 y 等于正负三分之四 x。"
+    },
+    {
+     "id": "msj_h019_q4",
+     "topicId": "msj_h019",
+     "prompt": "抛物线 y² = 8x 的焦点到准线的距离是多少？",
+     "question": "抛物线 y² = 8x 的焦点到准线的距离是多少？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由 y 的平方等于 2px 得 2p 等于 8，p 等于 4，焦点到准线的距离就等于 p，即 4。",
+     "verify": "{\"type\": \"num\", \"value\": 4}"
+    },
+    {
+     "id": "msj_h019_q5",
+     "topicId": "msj_h019",
+     "prompt": "椭圆 x²/16 + y²/9 = 1 的离心率是多少？",
+     "question": "椭圆 x²/16 + y²/9 = 1 的离心率是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3/4"
+      },
+      {
+       "label": "B",
+       "text": "4/5"
+      },
+      {
+       "label": "C",
+       "text": "√7/4"
+      },
+      {
+       "label": "D",
+       "text": "7/16"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由方程得 a 等于 4，b 等于 3，c 的平方等于 16 减 9 等于 7，所以离心率等于 c 除以 a，即根号 7 除以 4。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "msj_h1059",
+   "page": 5,
+   "description": "用直线上两点的坐标差之比定义斜率，把 x 轴绕交点逆时针旋转到与直线重合所转过的最小正角叫倾斜角，斜率与倾斜角由 k 等于 tan alpha 相联系，垂直于 x 轴的直线斜率不存在。",
+   "mastery_criteria": [
+    "能用两点的坐标求直线的斜率",
+    "知道倾斜角的取值范围，会用 k 等于 tan alpha 换算",
+    "能判断斜率的正负与直线倾斜方向的关系"
+   ],
+   "misconceptions": [
+    "认为直线的倾斜角可以等于 180 度",
+    "认为与 x 轴垂直的直线的斜率等于 0"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1059_q1",
+     "topicId": "msj_h1059",
+     "prompt": "已知直线经过点 A(1,2) 和点 B(3,8)，这条直线的斜率是多少？",
+     "question": "已知直线经过点 A(1,2) 和点 B(3,8)，这条直线的斜率是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "1/3"
+      },
+      {
+       "label": "C",
+       "text": "-3"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "斜率等于纵坐标的增量除以横坐标的增量，8 减 2 得 6，3 减 1 得 2，6 除以 2 等于 3。"
+    },
+    {
+     "id": "msj_h1059_q2",
+     "topicId": "msj_h1059",
+     "prompt": "倾斜角是 135 度的直线，它的斜率是多少？",
+     "question": "倾斜角是 135 度的直线，它的斜率是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "-1"
+      },
+      {
+       "label": "C",
+       "text": "√3"
+      },
+      {
+       "label": "D",
+       "text": "-√3/3"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "直线的斜率等于倾斜角的正切值，tan135 度等于负 1，所以这条直线的斜率是负 1。"
+    },
+    {
+     "id": "msj_h1059_q3",
+     "topicId": "msj_h1059",
+     "prompt": "已知直线经过点 (2,5) 和点 (6,1)，这条直线的斜率是多少？",
+     "question": "已知直线经过点 (2,5) 和点 (6,1)，这条直线的斜率是多少？",
+     "answer": -1,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "纵坐标从 5 变到 1 减少 4，横坐标从 2 变到 6 增加 4，斜率等于负 4 除以 4，即负 1。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": -4}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msj_h1059_q4",
+     "topicId": "msj_h1059",
+     "prompt": "直线与 x 轴垂直时，它的斜率与倾斜角分别是怎样的？",
+     "question": "直线与 x 轴垂直时，它的斜率与倾斜角分别是怎样的？",
+     "options": [
+      {
+       "label": "A",
+       "text": "斜率是 0，倾斜角是 0 度"
+      },
+      {
+       "label": "B",
+       "text": "斜率不存在，倾斜角是 180 度"
+      },
+      {
+       "label": "C",
+       "text": "斜率不存在，倾斜角是 90 度"
+      },
+      {
+       "label": "D",
+       "text": "斜率是 0，倾斜角是 90 度"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "垂直于 x 轴的直线上任意两点的横坐标相等，斜率公式的分母为零，所以斜率不存在，此时的倾斜角是 90 度。"
+    },
+    {
+     "id": "msj_h1059_q5",
+     "topicId": "msj_h1059",
+     "prompt": "与 x 轴平行或重合的直线，它的倾斜角是（　）度。",
+     "question": "与 x 轴平行或重合的直线，它的倾斜角是（　）度。",
+     "answer": "0",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材规定与 x 轴平行或重合的直线的倾斜角为 0 度，这时直线的斜率为 0。"
+    },
+    {
+     "id": "msj_h1059_q6",
+     "topicId": "msj_h1059",
+     "prompt": "已知三点 A(1,2)、B(3,6)、C(5,t) 在同一条直线上，求 t 的值。",
+     "question": "已知三点 A(1,2)、B(3,6)、C(5,t) 在同一条直线上，求 t 的值。",
+     "answer": 10,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "由 A、B 两点得斜率等于 4 除以 2 等于 2，从 B 到 C 横坐标增加 2，纵坐标也要增加 4，所以 t 等于 6 加 4 等于 10。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}]}"
+    },
+    {
+     "id": "msj_h1059_q7",
+     "topicId": "msj_h1059",
+     "prompt": "倾斜角是 60 度的直线，它的斜率是（　）。",
+     "question": "倾斜角是 60 度的直线，它的斜率是（　）。",
+     "answer": "√3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "斜率等于倾斜角的正切值，tan60 度等于根号 3，所以这条直线的斜率是根号 3。"
+    },
+    {
+     "id": "msj_h1059_q8",
+     "topicId": "msj_h1059",
+     "prompt": "请说明为什么与 x 轴垂直的直线没有斜率。",
+     "question": "请说明为什么与 x 轴垂直的直线没有斜率。",
+     "answer": "因为斜率等于两点纵坐标之差除以横坐标之差，垂直于 x 轴的直线上任意两点的横坐标相等，差为零，而除数不能为零，所以这条直线没有斜率。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "斜率是用两点坐标差之比定义的，垂直时横坐标之差为零，分母为零的比值没有意义。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1060",
+   "page": 10,
+   "description": "直线的方程有斜截式、点斜式、两点式和一般式，点斜式由直线经过的点和斜率确定，斜截式由斜率与 y 轴上的截距确定，注意截距不是距离。",
+   "mastery_criteria": [
+    "能根据已知点和斜率写出直线的点斜式方程",
+    "能由斜率和 y 轴上的截距写出斜截式方程",
+    "能把直线方程化为一般式并读出斜率与截距"
+   ],
+   "misconceptions": [
+    "把直线在 y 轴上的截距当成点到原点的距离",
+    "认为斜率不存在的直线不能用方程表示"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1060_q1",
+     "topicId": "msj_h1060",
+     "prompt": "经过点 P(1,3) 且斜率为 2 的直线方程是哪一个？",
+     "question": "经过点 P(1,3) 且斜率为 2 的直线方程是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y - 3 = 2(x - 1)"
+      },
+      {
+       "label": "B",
+       "text": "y + 3 = 2(x + 1)"
+      },
+      {
+       "label": "C",
+       "text": "y - 1 = 2(x - 3)"
+      },
+      {
+       "label": "D",
+       "text": "y - 3 = 2(x + 1)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把已知点的坐标和斜率代入点斜式，直线过点 P(1,3)、斜率为 2，所以方程是 y 减 3 等于 2 乘 x 减 1。"
+    },
+    {
+     "id": "msj_h1060_q2",
+     "topicId": "msj_h1060",
+     "prompt": "直线 y = 3x + 5 在 y 轴上的截距是（　）。",
+     "question": "直线 y = 3x + 5 在 y 轴上的截距是（　）。",
+     "answer": "5",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "令 x 等于 0，得 y 等于 5，所以这条直线与 y 轴交点的纵坐标是 5，即它在 y 轴上的截距为 5。"
+    },
+    {
+     "id": "msj_h1060_q3",
+     "topicId": "msj_h1060",
+     "prompt": "直线 y = -2x + 4 的斜率是多少？",
+     "question": "直线 y = -2x + 4 的斜率是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "-2"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "-4"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "斜截式 y 等于 k 乘 x 加 b 中 x 的系数就是斜率，这里 x 的系数是负 2，常数为 4 是截距。"
+    },
+    {
+     "id": "msj_h1060_q4",
+     "topicId": "msj_h1060",
+     "prompt": "直线 y = 2x - 3 与 x 轴交点的横坐标是多少？",
+     "question": "直线 y = 2x - 3 与 x 轴交点的横坐标是多少？",
+     "answer": 1.5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "与 x 轴的交点纵坐标为 0，令 y 等于 0 得 2x 减 3 等于 0，解得 x 等于 1.5。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1060_q5",
+     "topicId": "msj_h1060",
+     "prompt": "经过点 (2,0) 且与 x 轴垂直的直线的方程是哪一个？",
+     "question": "经过点 (2,0) 且与 x 轴垂直的直线的方程是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = 0"
+      },
+      {
+       "label": "B",
+       "text": "x = 0"
+      },
+      {
+       "label": "C",
+       "text": "x = 2"
+      },
+      {
+       "label": "D",
+       "text": "y = 2"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "与 x 轴垂直的直线上每一点的横坐标都相等，过点 (2,0) 时横坐标恒为 2，所以方程是 x 等于 2。"
+    },
+    {
+     "id": "msj_h1060_q6",
+     "topicId": "msj_h1060",
+     "prompt": "把直线 2x + y - 1 = 0 化成斜截式，它的斜率是（　）。",
+     "question": "把直线 2x + y - 1 = 0 化成斜截式，它的斜率是（　）。",
+     "answer": "-2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "把方程变形得 y 等于负 2x 加 1，所以斜率是负 2，在 y 轴上的截距是 1。"
+    },
+    {
+     "id": "msj_h1060_q7",
+     "topicId": "msj_h1060",
+     "prompt": "经过点 (2,3) 且斜率为 2 的直线与 y 轴交点的纵坐标是多少？",
+     "question": "经过点 (2,3) 且斜率为 2 的直线与 y 轴交点的纵坐标是多少？",
+     "answer": -1,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "先写出方程 y 减 3 等于 2 乘 x 减 2，化为斜截式得 y 等于 2x 减 1，令 x 等于 0 得纵坐标为负 1。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}]}"
+    },
+    {
+     "id": "msj_h1060_q8",
+     "topicId": "msj_h1060",
+     "prompt": "直线在 y 轴上的截距是什么？它和两点之间的距离有什么区别？",
+     "question": "直线在 y 轴上的截距是什么？它和两点之间的距离有什么区别？",
+     "answer": "直线在 y 轴上的截距是这条直线与 y 轴交点的纵坐标，可以是正数、负数或零；而距离是非负数，两者含义完全不同。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "截距是坐标，带符号；距离是长度，不带负号，教材特别提醒截距不是距离。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1061",
+   "page": 21,
+   "description": "两条不重合的直线斜率相等则互相平行；两条斜率都存在的直线斜率之积等于负一则互相垂直；若一条与 x 轴垂直、另一条与 x 轴平行，这两条直线也垂直。",
+   "mastery_criteria": [
+    "能由斜率关系判断两条直线平行或垂直",
+    "能求过已知点且平行于已知直线的直线的方程",
+    "能求三角形一边上的高所在直线的方程"
+   ],
+   "misconceptions": [
+    "把两个斜率之积等于负一误记为等于一",
+    "认为斜率都不存在的两条直线互相垂直"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1061_q1",
+     "topicId": "msj_h1061",
+     "prompt": "直线 y = 3x + 1 与直线 y = 3x - 2 的位置关系是什么？",
+     "question": "直线 y = 3x + 1 与直线 y = 3x - 2 的位置关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行"
+      },
+      {
+       "label": "B",
+       "text": "垂直"
+      },
+      {
+       "label": "C",
+       "text": "重合"
+      },
+      {
+       "label": "D",
+       "text": "相交但不垂直"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两条直线的斜率都是 3，在 y 轴上的截距分别是 1 和负 2，截距不等说明不重合，所以它们互相平行。"
+    },
+    {
+     "id": "msj_h1061_q2",
+     "topicId": "msj_h1061",
+     "prompt": "直线 2x - y + 1 = 0 与直线 x + 2y - 3 = 0 的位置关系是什么？",
+     "question": "直线 2x - y + 1 = 0 与直线 x + 2y - 3 = 0 的位置关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行"
+      },
+      {
+       "label": "B",
+       "text": "垂直"
+      },
+      {
+       "label": "C",
+       "text": "重合"
+      },
+      {
+       "label": "D",
+       "text": "相交但不垂直"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两条直线的斜率分别是 2 和负二分之一，它们的乘积等于负 1，所以这两条直线互相垂直。"
+    },
+    {
+     "id": "msj_h1061_q3",
+     "topicId": "msj_h1061",
+     "prompt": "与直线 y = 2x + 1 平行且经过点 (1,5) 的直线，它在 y 轴上的截距是多少？",
+     "question": "与直线 y = 2x + 1 平行且经过点 (1,5) 的直线，它在 y 轴上的截距是多少？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "所求直线与已知直线平行，斜率也是 2，由点斜式得 y 减 5 等于 2 乘 x 减 1，化为斜截式得 y 等于 2x 加 3，截距是 3。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 1}]}]}"
+    },
+    {
+     "id": "msj_h1061_q4",
+     "topicId": "msj_h1061",
+     "prompt": "经过点 A(2,4) 且垂直于直线 y = 2x 的直线的斜率是多少？",
+     "question": "经过点 A(2,4) 且垂直于直线 y = 2x 的直线的斜率是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "-2"
+      },
+      {
+       "label": "C",
+       "text": "-1/2"
+      },
+      {
+       "label": "D",
+       "text": "1/2"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "已知直线的斜率是 2，垂直的直线斜率与它之积为负 1，所以所求斜率是负二分之一。"
+    },
+    {
+     "id": "msj_h1061_q5",
+     "topicId": "msj_h1061",
+     "prompt": "两条斜率都存在的直线互相垂直时，它们斜率的乘积等于（　）。",
+     "question": "两条斜率都存在的直线互相垂直时，它们斜率的乘积等于（　）。",
+     "answer": "-1",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材的结论是两直线垂直则斜率之积等于负 1，反过来斜率之积等于负 1 时两直线也垂直。"
+    },
+    {
+     "id": "msj_h1061_q6",
+     "topicId": "msj_h1061",
+     "prompt": "三角形 ABC 中，B(0,0)，C(4,2)，顶点 A(2,4)，求 BC 边上的高所在直线的斜率。",
+     "question": "三角形 ABC 中，B(0,0)，C(4,2)，顶点 A(2,4)，求 BC 边上的高所在直线的斜率。",
+     "answer": -2,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "BC 的斜率等于 2 除以 4 等于二分之一，高与 BC 垂直，所以高的斜率等于负 2。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": -1}, {\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 4}]}]}"
+    },
+    {
+     "id": "msj_h1061_q7",
+     "topicId": "msj_h1061",
+     "prompt": "两条直线的斜率都不存在，这两条直线的位置关系是什么？",
+     "question": "两条直线的斜率都不存在，这两条直线的位置关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "互相垂直"
+      },
+      {
+       "label": "B",
+       "text": "一定相交"
+      },
+      {
+       "label": "C",
+       "text": "无法判断"
+      },
+      {
+       "label": "D",
+       "text": "平行或重合"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "斜率都不存在的直线都与 x 轴垂直，它们方向相同，因此要么平行要么重合。"
+    },
+    {
+     "id": "msj_h1061_q8",
+     "topicId": "msj_h1061",
+     "prompt": "已知两条不重合的直线斜率相等，请说明它们为什么平行。",
+     "question": "已知两条不重合的直线斜率相等，请说明它们为什么平行。",
+     "answer": "斜率相等的两条直线倾斜角相等，方向相同，倾斜程度完全一样，又已知它们不重合，所以这两条直线互相平行。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "斜率相同意味着倾斜角相同，方向一致又不重合，只能平行。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1062",
+   "page": 29,
+   "description": "两条直线的公共点坐标就是它们方程组成的方程组的解；方程组有一解、无解、无数组解分别对应两直线相交、平行、重合；三线共点的问题可以转化为方程组求解。",
+   "mastery_criteria": [
+    "会用方程组解的情况判断两条直线的位置关系",
+    "会求两条直线的交点坐标",
+    "能解决三条直线交于一点的问题"
+   ],
+   "misconceptions": [
+    "认为方程组无解时两条直线重合",
+    "求交点时把两个方程相加而不联立求解"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1062_q1",
+     "topicId": "msj_h1062",
+     "prompt": "求两条直线的交点坐标，实际上就是求什么？",
+     "question": "求两条直线的交点坐标，实际上就是求什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "两个方程组成的方程组的公共解"
+      },
+      {
+       "label": "B",
+       "text": "两个方程系数之和"
+      },
+      {
+       "label": "C",
+       "text": "两条直线的斜率之差"
+      },
+      {
+       "label": "D",
+       "text": "两条直线截距之和"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "交点的坐标同时满足两条直线的方程，所以它就是这两个方程组成的方程组的公共解。"
+    },
+    {
+     "id": "msj_h1062_q2",
+     "topicId": "msj_h1062",
+     "prompt": "直线 x + y - 4 = 0 与直线 x - y = 0 的交点的横坐标是多少？",
+     "question": "直线 x + y - 4 = 0 与直线 x - y = 0 的交点的横坐标是多少？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把两个方程相加得 2x 减 4 等于 0，解得 x 等于 2，此时 y 也等于 2，交点是 (2,2)。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1062_q3",
+     "topicId": "msj_h1062",
+     "prompt": "直线 2x + 3y - 1 = 0 与直线 4x + 6y - 5 = 0 的公共点有几个？",
+     "question": "直线 2x + 3y - 1 = 0 与直线 4x + 6y - 5 = 0 的公共点有几个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 个"
+      },
+      {
+       "label": "B",
+       "text": "0 个"
+      },
+      {
+       "label": "C",
+       "text": "2 个"
+      },
+      {
+       "label": "D",
+       "text": "无数个"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个方程的未知数系数成比例而常数项不成比例，方程组无解，所以两条直线没有公共点，它们平行。"
+    },
+    {
+     "id": "msj_h1062_q4",
+     "topicId": "msj_h1062",
+     "prompt": "若两条直线的方程组成的方程组有无数组解，那么这两条直线的位置关系是（　）。",
+     "question": "若两条直线的方程组成的方程组有无数组解，那么这两条直线的位置关系是（　）。",
+     "answer": "重合",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "方程组有无数组解说明两个方程表示的是同一条直线，所以这两条直线重合。"
+    },
+    {
+     "id": "msj_h1062_q5",
+     "topicId": "msj_h1062",
+     "prompt": "直线 x = 1 与直线 y = 2 的交点坐标是哪一个？",
+     "question": "直线 x = 1 与直线 y = 2 的交点坐标是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(2,1)"
+      },
+      {
+       "label": "B",
+       "text": "(0,0)"
+      },
+      {
+       "label": "C",
+       "text": "(1,2)"
+      },
+      {
+       "label": "D",
+       "text": "(-1,-2)"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "直线 x 等于 1 上的点横坐标都是 1，直线 y 等于 2 上的点纵坐标都是 2，同时满足两式的点就是 (1,2)。"
+    },
+    {
+     "id": "msj_h1062_q6",
+     "topicId": "msj_h1062",
+     "prompt": "三条直线 x + y - 1 = 0，2x - y + 3 = 0 与 x - 2y + a = 0 交于同一点，求 a 的值。",
+     "question": "三条直线 x + y - 1 = 0，2x - y + 3 = 0 与 x - 2y + a = 0 交于同一点，求 a 的值。",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "先联立前两个方程解得交点为 (负三分之二, 三分之五)，把这个点代入第三个方程得 a 等于 2 乘三分之五加三分之二，即 4。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 3}]}]}, {\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": -2}, {\"type\": \"num\", \"value\": 3}]}]}"
+    },
+    {
+     "id": "msj_h1062_q7",
+     "topicId": "msj_h1062",
+     "prompt": "直线 x + y - 2 = 0 与直线 x + y + 3 = 0 组成的方程组无解，这两条直线的位置关系是（　）。",
+     "question": "直线 x + y - 2 = 0 与直线 x + y + 3 = 0 组成的方程组无解，这两条直线的位置关系是（　）。",
+     "answer": "平行",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "两个方程的一次项系数相同而常数项不同，方程组无解，说明两条直线没有公共点，它们互相平行。"
+    },
+    {
+     "id": "msj_h1062_q8",
+     "topicId": "msj_h1062",
+     "prompt": "请写出用方程组的解判断两条直线位置关系的方法。",
+     "question": "请写出用方程组的解判断两条直线位置关系的方法。",
+     "answer": "把两条直线的方程联立成方程组，方程组只有一解时两条直线相交，方程组无解时两条直线平行，方程组有无数组解时两条直线重合。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "方程组的解的个数与两条直线的公共点个数一一对应，这是用方程研究位置关系的基本方法。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1063",
+   "page": 33,
+   "description": "平面上两点间的距离公式由勾股定理得到，线段中点的坐标是两端点坐标的平均数，点到直线的距离就是点到直线的垂线段的长，可以用公式直接计算。",
+   "mastery_criteria": [
+    "会用两点间距离公式求线段的长度",
+    "会求线段中点的坐标，会用中点坐标解决对称问题",
+    "会用点到直线的距离公式和两平行线间的距离公式"
+   ],
+   "misconceptions": [
+    "求两平行线间距离时忘记先把一次项系数化成相同",
+    "把点到直线的距离公式中的分母写成 A 加 B"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1063_q1",
+     "topicId": "msj_h1063",
+     "prompt": "已知点 A(0,0) 和点 B(3,4)，求线段 AB 的长度。",
+     "question": "已知点 A(0,0) 和点 B(3,4)，求线段 AB 的长度。",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "由两点间距离公式，AB 等于根号下 3 的平方加 4 的平方，即根号 25 等于 5。",
+     "verify": "{\"type\": \"num\", \"value\": 5}"
+    },
+    {
+     "id": "msj_h1063_q2",
+     "topicId": "msj_h1063",
+     "prompt": "线段 AB 的两个端点为 A(1,2)，B(5,6)，它的中点坐标是哪一个？",
+     "question": "线段 AB 的两个端点为 A(1,2)，B(5,6)，它的中点坐标是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(3,4)"
+      },
+      {
+       "label": "B",
+       "text": "(6,8)"
+      },
+      {
+       "label": "C",
+       "text": "(2,2)"
+      },
+      {
+       "label": "D",
+       "text": "(3,2)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "中点的横坐标等于 1 与 5 的平均数 3，纵坐标等于 2 与 6 的平均数 4，所以中点坐标是 (3,4)。"
+    },
+    {
+     "id": "msj_h1063_q3",
+     "topicId": "msj_h1063",
+     "prompt": "点 O(0,0) 到直线 3x + 4y - 10 = 0 的距离是多少？",
+     "question": "点 O(0,0) 到直线 3x + 4y - 10 = 0 的距离是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "10"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "0.4"
+      },
+      {
+       "label": "D",
+       "text": "2.5"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由点到直线的距离公式，距离等于 10 除以根号下 9 加 16，即 10 除以 5 等于 2。"
+    },
+    {
+     "id": "msj_h1063_q4",
+     "topicId": "msj_h1063",
+     "prompt": "两条平行直线 3x + 4y - 6 = 0 与 3x + 4y + 4 = 0 之间的距离是（　）。",
+     "question": "两条平行直线 3x + 4y - 6 = 0 与 3x + 4y + 4 = 0 之间的距离是（　）。",
+     "answer": "2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "两条平行直线的一次项系数相同，距离等于常数项之差的绝对值 10 除以根号 25 等于 5，结果是 2。"
+    },
+    {
+     "id": "msj_h1063_q5",
+     "topicId": "msj_h1063",
+     "prompt": "已知点 A(-1,2) 和点 B(2,6)，求线段 AB 的长度。",
+     "question": "已知点 A(-1,2) 和点 B(2,6)，求线段 AB 的长度。",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "横坐标之差是 3，纵坐标之差是 4，由两点间距离公式得 AB 等于根号下 9 加 16 等于 5。",
+     "verify": "{\"type\": \"num\", \"value\": 5}"
+    },
+    {
+     "id": "msj_h1063_q6",
+     "topicId": "msj_h1063",
+     "prompt": "点 A(2,3) 关于点 M(1,1) 的对称点的坐标是哪一个？",
+     "question": "点 A(2,3) 关于点 M(1,1) 的对称点的坐标是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(3,5)"
+      },
+      {
+       "label": "B",
+       "text": "(1.5,2)"
+      },
+      {
+       "label": "C",
+       "text": "(0,-1)"
+      },
+      {
+       "label": "D",
+       "text": "(-1,-2)"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "对称点与 A 的中点是 M，设对称点为 (x,y)，则 x 加 2 等于 2，y 加 3 等于 2，解得 x 等于 0，y 等于负 1。"
+    },
+    {
+     "id": "msj_h1063_q7",
+     "topicId": "msj_h1063",
+     "prompt": "点 P(2,5) 到直线 4x - 3y + 1 = 0 的距离是多少？",
+     "question": "点 P(2,5) 到直线 4x - 3y + 1 = 0 的距离是多少？",
+     "answer": 1.2,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "把点的坐标代入公式得绝对值 4 乘 2 减 3 乘 5 加 1，即 6，分母为根号下 16 加 9 等于 5，距离是 1.2。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "msj_h1063_q8",
+     "topicId": "msj_h1063",
+     "prompt": "求点到直线的距离时，如果点在直线上，距离是多少？请说明理由。",
+     "question": "求点到直线的距离时，如果点在直线上，距离是多少？请说明理由。",
+     "answer": "距离是 0，因为点到直线的距离是这点到直线的垂线段的长度，点在直线上时垂线段退化为一个点，长度为 0。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "代入公式时分子为零，距离自然为 0，几何上垂足就是点本身。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1064",
+   "page": 44,
+   "description": "用方向向量刻画直线的方向，两条直线平行的条件是它们的法向量成比例，即 A1B2 减 A2B1 等于 0，两条直线垂直的条件是 A1A2 加 B1B2 等于 0，还可以用向量方法推导点到直线的距离公式。",
+   "mastery_criteria": [
+    "知道直线 Ax 加 By 加 C 等于 0 的方向向量可以写成 (-B,A)",
+    "能用向量方法判断两条直线平行或垂直",
+    "能说明用向量推导点到直线距离公式的思路"
+   ],
+   "misconceptions": [
+    "把方向向量写成 (A,B)，与法向量混淆",
+    "把平行条件记为 A1A2 加 B1B2 等于 0"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1064_q1",
+     "topicId": "msj_h1064",
+     "prompt": "直线 Ax + By + C = 0 的一个方向向量可以写成什么？",
+     "question": "直线 Ax + By + C = 0 的一个方向向量可以写成什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(-B,A)"
+      },
+      {
+       "label": "B",
+       "text": "(A,B)"
+      },
+      {
+       "label": "C",
+       "text": "(B,A)"
+      },
+      {
+       "label": "D",
+       "text": "(-A,B)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "直线方程中 A 与 B 组成法向量 (A,B)，方向向量与法向量垂直，(-B,A) 与 (A,B) 的数量积为零，可以作为方向向量。"
+    },
+    {
+     "id": "msj_h1064_q2",
+     "topicId": "msj_h1064",
+     "prompt": "两条直线 A1x + B1y + C1 = 0 与 A2x + B2y + C2 = 0 平行的条件是 A1B2 减 A2B1 等于（　）。",
+     "question": "两条直线 A1x + B1y + C1 = 0 与 A2x + B2y + C2 = 0 平行的条件是 A1B2 减 A2B1 等于（　）。",
+     "answer": "0",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "两条直线平行时它们的法向量成比例，由比例式交叉相乘就得到 A1B2 减 A2B1 等于 0。"
+    },
+    {
+     "id": "msj_h1064_q3",
+     "topicId": "msj_h1064",
+     "prompt": "直线 3x + 5y - 10 = 0 与直线 15x - 9y + 8 = 0 的位置关系是什么？",
+     "question": "直线 3x + 5y - 10 = 0 与直线 15x - 9y + 8 = 0 的位置关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行"
+      },
+      {
+       "label": "B",
+       "text": "垂直"
+      },
+      {
+       "label": "C",
+       "text": "重合"
+      },
+      {
+       "label": "D",
+       "text": "相交但不垂直"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两式对应系数满足 3 乘 15 加 5 乘负 9 等于 45 减 45 等于 0，说明两个法向量垂直，所以两条直线垂直。"
+    },
+    {
+     "id": "msj_h1064_q4",
+     "topicId": "msj_h1064",
+     "prompt": "直线 2x - y + 1 = 0 的一个方向向量的横坐标取 1 时，纵坐标是多少？",
+     "question": "直线 2x - y + 1 = 0 的一个方向向量的横坐标取 1 时，纵坐标是多少？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "这条直线的一个方向向量是 (-B,A)，即 (1,2)，横坐标取 1 时纵坐标就是 2。",
+     "verify": "{\"type\": \"num\", \"value\": 2}"
+    },
+    {
+     "id": "msj_h1064_q5",
+     "topicId": "msj_h1064",
+     "prompt": "用向量方法推导点到直线的距离公式时，主要用到下面哪一个结论？",
+     "question": "用向量方法推导点到直线的距离公式时，主要用到下面哪一个结论？",
+     "options": [
+      {
+       "label": "A",
+       "text": "两条平行直线的斜率一定相等"
+      },
+      {
+       "label": "B",
+       "text": "方程组的解就是交点坐标"
+      },
+      {
+       "label": "C",
+       "text": "向量的数量积可以表示一条线段在某个方向上的投影长度"
+      },
+      {
+       "label": "D",
+       "text": "两点间距离与斜率无关"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把点到直线的距离看成斜线段在法向量方向上的投影，利用数量积与模的关系就能得到距离公式。"
+    },
+    {
+     "id": "msj_h1064_q6",
+     "topicId": "msj_h1064",
+     "prompt": "已知直线 l1 的方程为 x + y - 1 = 0，直线 l2 的方程为 mx + 2y + 3 = 0，若 l1 与 l2 平行，求 m 的值。",
+     "question": "已知直线 l1 的方程为 x + y - 1 = 0，直线 l2 的方程为 mx + 2y + 3 = 0，若 l1 与 l2 平行，求 m 的值。",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "两直线平行需要 1 乘 2 减 m 乘 1 等于 0，解得 m 等于 2，此时两直线常数项不成比例，确实平行。",
+     "verify": "{\"type\": \"num\", \"value\": 2}"
+    },
+    {
+     "id": "msj_h1064_q7",
+     "topicId": "msj_h1064",
+     "prompt": "直线 x + 2y - 3 = 0 的一个法向量可以写成什么？",
+     "question": "直线 x + 2y - 3 = 0 的一个法向量可以写成什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(2,1)"
+      },
+      {
+       "label": "B",
+       "text": "(-2,1)"
+      },
+      {
+       "label": "C",
+       "text": "(1,-2)"
+      },
+      {
+       "label": "D",
+       "text": "(1,2)"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "直线一般式中 x 与 y 的系数组成法向量，所以 (1,2) 是这条直线的一个法向量。"
+    },
+    {
+     "id": "msj_h1064_q8",
+     "topicId": "msj_h1064",
+     "prompt": "请说明为什么直线 Ax + By + C = 0 的方向向量可以写成 (-B,A)。",
+     "question": "请说明为什么直线 Ax + By + C = 0 的方向向量可以写成 (-B,A)。",
+     "answer": "直线方程中 A 与 B 组成法向量，法向量与直线的方向向量互相垂直，而 (-B,A) 与 (A,B) 的数量积等于负 AB 加 AB 等于 0，所以 (-B,A) 与法向量垂直，可以作为这条直线的方向向量。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "关键是把 (A,B) 认作法向量，再用数量积为零说明方向向量与它垂直。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1065",
+   "page": 47,
+   "description": "本章回顾把直线的斜率与倾斜角、直线方程的几种形式、两条直线的位置关系、交点与距离公式串成一条线索，通过综合题巩固用坐标法研究图形的思路。",
+   "mastery_criteria": [
+    "能综合运用斜率与方程形式求直线的方程",
+    "能用距离公式解决面积、对称等综合问题",
+    "能体会坐标法把几何问题转化为代数问题的思路"
+   ],
+   "misconceptions": [
+    "求直线方程时漏掉斜率不存在的情况",
+    "把直线与坐标轴围成的三角形面积算成截距之积"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1065_q1",
+     "topicId": "msj_h1065",
+     "prompt": "本章研究直线问题时使用的共同方法是什么？",
+     "question": "本章研究直线问题时使用的共同方法是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "建立坐标系，把几何问题转化为方程问题"
+      },
+      {
+       "label": "B",
+       "text": "只画图测量长度"
+      },
+      {
+       "label": "C",
+       "text": "只做代数变形，不管图形"
+      },
+      {
+       "label": "D",
+       "text": "用向量代替坐标"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "本章借助平面直角坐标系建立直线的方程，再通过方程研究直线的性质与位置关系，这就是坐标法。"
+    },
+    {
+     "id": "msj_h1065_q2",
+     "topicId": "msj_h1065",
+     "prompt": "直线经过点 (1,2) 与点 (3,6)，求这条直线的斜率。",
+     "question": "直线经过点 (1,2) 与点 (3,6)，求这条直线的斜率。",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "纵坐标之差是 4，横坐标之差是 2，斜率等于 4 除以 2 等于 2。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1065_q3",
+     "topicId": "msj_h1065",
+     "prompt": "直线 3x + 4y - 12 = 0 与两坐标轴围成的三角形的面积是多少？",
+     "question": "直线 3x + 4y - 12 = 0 与两坐标轴围成的三角形的面积是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "12"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "7"
+      },
+      {
+       "label": "D",
+       "text": "24"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "直线与 x 轴交于 (4,0)，与 y 轴交于 (0,3)，两条直角边长分别为 4 和 3，面积等于 4 乘 3 再除以 2 等于 6。"
+    },
+    {
+     "id": "msj_h1065_q4",
+     "topicId": "msj_h1065",
+     "prompt": "直线 2x - y + 1 = 0 在 y 轴上的截距是（　）。",
+     "question": "直线 2x - y + 1 = 0 在 y 轴上的截距是（　）。",
+     "answer": "1",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "令 x 等于 0 得 y 等于 1，所以这条直线在 y 轴上的截距是 1。"
+    },
+    {
+     "id": "msj_h1065_q5",
+     "topicId": "msj_h1065",
+     "prompt": "点 A(1,3) 关于直线 y = x 的对称点是哪一个？",
+     "question": "点 A(1,3) 关于直线 y = x 的对称点是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(-1,3)"
+      },
+      {
+       "label": "B",
+       "text": "(3,-1)"
+      },
+      {
+       "label": "C",
+       "text": "(3,1)"
+      },
+      {
+       "label": "D",
+       "text": "(-3,-1)"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "关于直线 y 等于 x 对称时横纵坐标互换，所以点 (1,3) 的对称点是 (3,1)。"
+    },
+    {
+     "id": "msj_h1065_q6",
+     "topicId": "msj_h1065",
+     "prompt": "直线 l 过点 (0,3) 且与直线 y = 2x 平行，求直线 l 在 x 轴上截距的绝对值。",
+     "question": "直线 l 过点 (0,3) 且与直线 y = 2x 平行，求直线 l 在 x 轴上截距的绝对值。",
+     "answer": 1.5,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "直线 l 的斜率是 2，方程为 y 等于 2x 加 3，令 y 等于 0 得 x 等于负 1.5，截距的绝对值是 1.5。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1065_q7",
+     "topicId": "msj_h1065",
+     "prompt": "若点 M(1,1) 在直线 2x + ay - 3 = 0 上，则 a 等于（　）。",
+     "question": "若点 M(1,1) 在直线 2x + ay - 3 = 0 上，则 a 等于（　）。",
+     "answer": "1",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "把点 M 的坐标代入方程得 2 加 a 减 3 等于 0，解得 a 等于 1。"
+    },
+    {
+     "id": "msj_h1065_q8",
+     "topicId": "msj_h1065",
+     "prompt": "请写出求两条直线交点坐标的步骤。",
+     "question": "请写出求两条直线交点坐标的步骤。",
+     "answer": "先写出两条直线的方程，把它们联立成方程组，再解这个方程组，方程组的解就是两条直线的交点坐标。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "交点的坐标必须同时满足两条直线的方程，所以解方程组就得到交点。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1066",
+   "page": 50,
+   "description": "本章测试综合考查斜率与倾斜角、直线方程的求法、平行与垂直的判断、交点与距离的计算，以及用坐标法解决与直线有关的简单实际问题。",
+   "mastery_criteria": [
+    "能由条件求直线的斜率与方程",
+    "能判断两条直线的位置关系并求交点",
+    "会用距离公式解决面积与最值类问题"
+   ],
+   "misconceptions": [
+    "求截距式方程时把截距与距离混同",
+    "判断平行时只比较斜率而忘记检查是否重合"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1066_q1",
+     "topicId": "msj_h1066",
+     "prompt": "经过点 A(1,2) 和点 B(3,6) 的直线的斜率是多少？",
+     "question": "经过点 A(1,2) 和点 B(3,6) 的直线的斜率是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "1/2"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "-2"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "斜率等于纵坐标之差 6 减 2 再除以横坐标之差 3 减 1，即 4 除以 2 等于 2。"
+    },
+    {
+     "id": "msj_h1066_q2",
+     "topicId": "msj_h1066",
+     "prompt": "经过点 (3,5) 且斜率为 -2 的直线，它在 y 轴上的截距是（　）。",
+     "question": "经过点 (3,5) 且斜率为 -2 的直线，它在 y 轴上的截距是（　）。",
+     "answer": "11",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "由点斜式得 y 减 5 等于负 2 乘 x 减 3，令 x 等于 0 得 y 等于 5 加 6 等于 11。"
+    },
+    {
+     "id": "msj_h1066_q3",
+     "topicId": "msj_h1066",
+     "prompt": "两条平行直线 4x + 3y + 3 = 0 与 8x + 6y - 9 = 0 之间的距离是多少？",
+     "question": "两条平行直线 4x + 3y + 3 = 0 与 8x + 6y - 9 = 0 之间的距离是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.6"
+      },
+      {
+       "label": "B",
+       "text": "1.5"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先把第一个方程乘以 2 得 8x 加 6y 加 6 等于 0，两条直线常数项之差的绝对值是 15，除以根号下 100 即 10，得 1.5。"
+    },
+    {
+     "id": "msj_h1066_q4",
+     "topicId": "msj_h1066",
+     "prompt": "直线 x + y - 5 = 0 与直线 x - y - 1 = 0 交点的横坐标是多少？",
+     "question": "直线 x + y - 5 = 0 与直线 x - y - 1 = 0 交点的横坐标是多少？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "两个方程相加得 2x 减 6 等于 0，解得 x 等于 3，此时 y 等于 2，交点为 (3,2)。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1066_q5",
+     "topicId": "msj_h1066",
+     "prompt": "点 P(2,4) 到直线 3x + 4y - 5 = 0 的距离是多少？",
+     "question": "点 P(2,4) 到直线 3x + 4y - 5 = 0 的距离是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1.7"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "3.4"
+      },
+      {
+       "label": "D",
+       "text": "17"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "代入距离公式得绝对值 6 加 16 减 5 等于 17，分母是根号 25 等于 5，距离等于 17 除以 5 即 3.4。"
+    },
+    {
+     "id": "msj_h1066_q6",
+     "topicId": "msj_h1066",
+     "prompt": "直线 l 与直线 2x + y = 0 平行，且在 y 轴上的截距为 4，求直线 l 与 x 轴交点的横坐标。",
+     "question": "直线 l 与直线 2x + y = 0 平行，且在 y 轴上的截距为 4，求直线 l 与 x 轴交点的横坐标。",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "直线 l 的斜率是负 2，由斜截式得 y 等于负 2x 加 4，令 y 等于 0 得 x 等于 2，所以交点的横坐标是 2。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1066_q7",
+     "topicId": "msj_h1066",
+     "prompt": "经过点 (0,1) 且与直线 2x - y + 3 = 0 平行的直线在 y 轴上的截距是（　）。",
+     "question": "经过点 (0,1) 且与直线 2x - y + 3 = 0 平行的直线在 y 轴上的截距是（　）。",
+     "answer": "1",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "这两条直线斜率都是 2，所求直线过点 (0,1)，所以方程是 y 等于 2x 加 1，在 y 轴上的截距为 1。"
+    },
+    {
+     "id": "msj_h1066_q8",
+     "topicId": "msj_h1066",
+     "prompt": "已知三角形三个顶点的坐标，如何求某一边上的高所在直线的方程？请写出思路。",
+     "question": "已知三角形三个顶点的坐标，如何求某一边上的高所在直线的方程？请写出思路。",
+     "answer": "先由这条边两个端点的坐标求出这条边的斜率，再取它的负倒数得到高的斜率，最后用高的斜率和高所经过的那个顶点写出点斜式方程。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "高的关键是与对边垂直，所以斜率互为负倒数，再用点斜式就能写出方程。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1067",
+   "page": 55,
+   "description": "圆是平面内到定点的距离等于定长的点的集合，圆的标准方程由圆心坐标和半径确定，圆的一般方程含三个待定常数，需要三个独立条件才能确定一个圆。",
+   "mastery_criteria": [
+    "能由圆心和半径写出圆的标准方程",
+    "能把圆的一般方程化为标准方程并求圆心和半径",
+    "能用待定系数法求过三点的圆的方程"
+   ],
+   "misconceptions": [
+    "把圆的一般方程中的半径误当作常数项 F 的算术平方根",
+    "认为任意一个形如 x² 加 y² 加 Dx 加 Ey 加 F 等于 0 的方程都表示圆"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1067_q1",
+     "topicId": "msj_h1067",
+     "prompt": "已知圆的方程是 x² + y² = 16，它的半径是多少？",
+     "question": "已知圆的方程是 x² + y² = 16，它的半径是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "16"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "圆的标准方程右边是半径的平方，16 是 4 的平方，所以这个圆的半径是 4。"
+    },
+    {
+     "id": "msj_h1067_q2",
+     "topicId": "msj_h1067",
+     "prompt": "圆 (x - 1)² + (y + 2)² = 9 的圆心坐标是哪一个？",
+     "question": "圆 (x - 1)² + (y + 2)² = 9 的圆心坐标是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(-1,2)"
+      },
+      {
+       "label": "B",
+       "text": "(1,-2)"
+      },
+      {
+       "label": "C",
+       "text": "(1,2)"
+      },
+      {
+       "label": "D",
+       "text": "(-1,-2)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "标准方程中横坐标减 1 说明圆心横坐标是 1，纵坐标加 2 说明圆心纵坐标是负 2，所以圆心是 (1,-2)。"
+    },
+    {
+     "id": "msj_h1067_q3",
+     "topicId": "msj_h1067",
+     "prompt": "圆心是原点且经过点 (5,12) 的圆的半径是多少？",
+     "question": "圆心是原点且经过点 (5,12) 的圆的半径是多少？",
+     "answer": 13,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "圆心到圆上一点的距离就是半径，由两点间距离公式得根号下 25 加 144 等于根号 169 即 13。",
+     "verify": "{\"type\": \"num\", \"value\": 13}"
+    },
+    {
+     "id": "msj_h1067_q4",
+     "topicId": "msj_h1067",
+     "prompt": "把圆 x² + y² - 4x + 2y = 0 化成标准方程，它的圆心坐标是（　）。",
+     "question": "把圆 x² + y² - 4x + 2y = 0 化成标准方程，它的圆心坐标是（　）。",
+     "answer": "(2,-1)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "配方时分别给 x 和 y 配成完全平方，得 (x - 2)² + (y + 1)² = 5，所以圆心是 (2,-1)，半径是根号 5。"
+    },
+    {
+     "id": "msj_h1067_q5",
+     "topicId": "msj_h1067",
+     "prompt": "方程 x² + y² + Dx + Ey + F = 0 表示圆的条件是什么？",
+     "question": "方程 x² + y² + Dx + Ey + F = 0 表示圆的条件是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "D 的平方加 E 的平方减 4F 等于 0"
+      },
+      {
+       "label": "B",
+       "text": "D 的平方加 E 的平方减 4F 小于 0"
+      },
+      {
+       "label": "C",
+       "text": "D 的平方加 E 的平方减 4F 大于 0"
+      },
+      {
+       "label": "D",
+       "text": "D 与 E 都不等于 0"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "配方后右边是 D 的平方加 E 的平方减 4F 再除以 4，只有它大于 0 时方程才表示以定圆心的圆。"
+    },
+    {
+     "id": "msj_h1067_q6",
+     "topicId": "msj_h1067",
+     "prompt": "已知圆的方程是 x² + y² + 6x - 8y = 0，它的半径是多少？",
+     "question": "已知圆的方程是 x² + y² + 6x - 8y = 0，它的半径是多少？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "配方得 (x + 3)² + (y - 4)² = 25，圆心是 (-3,4)，半径等于根号 25 即 5，注意常数项为零时半径仍不为零。",
+     "verify": "{\"type\": \"num\", \"value\": 5}"
+    },
+    {
+     "id": "msj_h1067_q7",
+     "topicId": "msj_h1067",
+     "prompt": "已知 A(4,3)，B(5,2)，C(1,0) 三点的外接圆方程中 x 的一次项系数 D 等于（　）。",
+     "question": "已知 A(4,3)，B(5,2)，C(1,0) 三点的外接圆方程中 x 的一次项系数 D 等于（　）。",
+     "answer": "-6",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "设圆的方程为 x² 加 y² 加 Dx 加 Ey 加 F 等于 0，把三个点的坐标代入解方程组，得到 D 等于负 6，E 等于负 2，F 等于 5。"
+    },
+    {
+     "id": "msj_h1067_q8",
+     "topicId": "msj_h1067",
+     "prompt": "确定一个圆需要几个独立条件？请结合圆的方程说明理由。",
+     "question": "确定一个圆需要几个独立条件？请结合圆的方程说明理由。",
+     "answer": "需要三个独立条件，因为圆的标准方程中圆心的横坐标、纵坐标和半径共三个待定常数，一般方程中 D、E、F 也是三个待定常数，三个条件才能把它们唯一确定。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "教材强调圆的方程含三个参变量，所以确定圆的方程要三个独立条件，这与不共线三点确定一个圆是一致的。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1068",
+   "page": 63,
+   "description": "用圆心到直线的距离与半径比较可以判断直线与圆相交、相切、相离，也可以用方程组的解的个数判断；求切线时要讨论斜率不存在的情况，求弦长常用垂径定理。",
+   "mastery_criteria": [
+    "能用圆心到直线的距离判断直线与圆的位置关系",
+    "会求过一点且与圆相切的直线的方程",
+    "会用垂径定理求直线被圆截得的弦长"
+   ],
+   "misconceptions": [
+    "求切线时漏掉斜率不存在的那一条直线",
+    "把弦长当成圆心到直线的距离的两倍"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1068_q1",
+     "topicId": "msj_h1068",
+     "prompt": "直线 4x + 3y - 40 = 0 与圆 x² + y² = 100 的位置关系是什么？",
+     "question": "直线 4x + 3y - 40 = 0 与圆 x² + y² = 100 的位置关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "相交"
+      },
+      {
+       "label": "B",
+       "text": "相切"
+      },
+      {
+       "label": "C",
+       "text": "相离"
+      },
+      {
+       "label": "D",
+       "text": "无法判断"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "圆心到直线的距离等于 40 除以 5 即 8，小于半径 10，所以直线与圆相交，有两个公共点。"
+    },
+    {
+     "id": "msj_h1068_q2",
+     "topicId": "msj_h1068",
+     "prompt": "判断直线与圆相切时，常用的条件是什么？",
+     "question": "判断直线与圆相切时，常用的条件是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆心到直线的距离大于半径"
+      },
+      {
+       "label": "B",
+       "text": "圆心到直线的距离等于圆的半径"
+      },
+      {
+       "label": "C",
+       "text": "圆心到直线的距离小于半径"
+      },
+      {
+       "label": "D",
+       "text": "直线经过圆心"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "圆心到直线的距离等于半径时，直线与圆只有一个公共点，此时直线与圆相切。"
+    },
+    {
+     "id": "msj_h1068_q3",
+     "topicId": "msj_h1068",
+     "prompt": "圆 x² + y² = 13 被直线 y = 2 截得的弦长是多少？",
+     "question": "圆 x² + y² = 13 被直线 y = 2 截得的弦长是多少？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "圆心到直线的距离是 2，半弦长等于根号下 13 减 4 即 3，所以弦长是 6。",
+     "verify": "{\"type\": \"num\", \"value\": 6}"
+    },
+    {
+     "id": "msj_h1068_q4",
+     "topicId": "msj_h1068",
+     "prompt": "直线 x = 3 与圆 (x - 1)² + y² = 4 的位置关系是（　）。",
+     "question": "直线 x = 3 与圆 (x - 1)² + y² = 4 的位置关系是（　）。",
+     "answer": "相切",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "圆心 (1,0) 到直线 x 等于 3 的距离是 2，正好等于半径 2，所以这条直线与圆相切。"
+    },
+    {
+     "id": "msj_h1068_q5",
+     "topicId": "msj_h1068",
+     "prompt": "求过圆外一点的切线方程时，先设直线的点斜式，还需要单独讨论哪种情况？",
+     "question": "求过圆外一点的切线方程时，先设直线的点斜式，还需要单独讨论哪种情况？",
+     "options": [
+      {
+       "label": "A",
+       "text": "斜率等于零的情况"
+      },
+      {
+       "label": "B",
+       "text": "截距等于零的情况"
+      },
+      {
+       "label": "C",
+       "text": "斜率不存在的情况"
+      },
+      {
+       "label": "D",
+       "text": "直线经过原点的情况"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "点斜式不能表示与 x 轴垂直的直线，所以要先检验斜率不存在时这条直线是否与圆相切，否则会漏解。"
+    },
+    {
+     "id": "msj_h1068_q6",
+     "topicId": "msj_h1068",
+     "prompt": "直线 3x + 4y - 15 = 0 与圆 x² + y² = 9 的公共点有多少个？",
+     "question": "直线 3x + 4y - 15 = 0 与圆 x² + y² = 9 的公共点有多少个？",
+     "answer": 1,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "圆心到直线的距离等于 15 除以 5 即 3，等于半径 3，所以直线与圆相切，公共点只有 1 个。",
+     "verify": "{\"type\": \"num\", \"value\": 1}"
+    },
+    {
+     "id": "msj_h1068_q7",
+     "topicId": "msj_h1068",
+     "prompt": "圆 x² + y² = 4 被直线 x = 1 截得的弦长是（　）。",
+     "question": "圆 x² + y² = 4 被直线 x = 1 截得的弦长是（　）。",
+     "answer": "2√3",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "圆心到直线的距离是 1，半径是 2，半弦长等于根号下 4 减 1 即根号 3，所以弦长是 2 倍根号 3。"
+    },
+    {
+     "id": "msj_h1068_q8",
+     "topicId": "msj_h1068",
+     "prompt": "请说明用圆心到直线的距离判断直线与圆位置关系的方法。",
+     "question": "请说明用圆心到直线的距离判断直线与圆位置关系的方法。",
+     "answer": "设圆心到直线的距离为 d，圆的半径为 r，当 d 小于 r 时直线与圆相交，当 d 等于 r 时直线与圆相切，当 d 大于 r 时直线与圆相离。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "这个判断方法与用方程组解的个数判断是一致的，但计算量更小，是本节的主要方法。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1069",
+   "page": 68,
+   "description": "两个圆的位置关系由圆心距与两半径的和、差比较决定，外离、外切、相交、内切、内含依次对应不同的数量关系，两圆相交时把方程相减可以得到公共弦所在直线。",
+   "mastery_criteria": [
+    "能用圆心距与半径的和差判断两个圆的位置关系",
+    "会求相交两圆的公共弦所在直线的方程",
+    "会求过两圆交点且满足其他条件的圆的方程"
+   ],
+   "misconceptions": [
+    "只比较圆心距与两半径之和，忘记考虑半径之差",
+    "把两圆方程相减得到的直线当成两圆心连线的中垂线"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1069_q1",
+     "topicId": "msj_h1069",
+     "prompt": "两个圆的半径分别为 1 和 4，圆心距为 5，这两个圆的位置关系是什么？",
+     "question": "两个圆的半径分别为 1 和 4，圆心距为 5，这两个圆的位置关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "外切"
+      },
+      {
+       "label": "B",
+       "text": "外离"
+      },
+      {
+       "label": "C",
+       "text": "相交"
+      },
+      {
+       "label": "D",
+       "text": "内切"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两半径之和等于 5，圆心距也等于 5，所以两个圆外切，只有一个公共点。"
+    },
+    {
+     "id": "msj_h1069_q2",
+     "topicId": "msj_h1069",
+     "prompt": "两个圆的半径分别为 2 和 √2，圆心距为 √2，这两个圆的位置关系是什么？",
+     "question": "两个圆的半径分别为 2 和 √2，圆心距为 √2，这两个圆的位置关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "外切"
+      },
+      {
+       "label": "B",
+       "text": "相交"
+      },
+      {
+       "label": "C",
+       "text": "内切"
+      },
+      {
+       "label": "D",
+       "text": "外离"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两半径之和约为 3.41，之差约为 0.59，圆心距 1.41 介于两者之间，所以两个圆相交。"
+    },
+    {
+     "id": "msj_h1069_q3",
+     "topicId": "msj_h1069",
+     "prompt": "当两个圆的圆心距小于两半径之差的绝对值时，这两个圆的位置关系是（　）。",
+     "question": "当两个圆的圆心距小于两半径之差的绝对值时，这两个圆的位置关系是（　）。",
+     "answer": "内含",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "圆心距比半径之差还小，说明小圆完全在大圆内部且没有公共点，此时两圆内含。"
+    },
+    {
+     "id": "msj_h1069_q4",
+     "topicId": "msj_h1069",
+     "prompt": "两个圆的半径分别是 3 和 5，若两个圆内切，则圆心距等于多少？",
+     "question": "两个圆的半径分别是 3 和 5，若两个圆内切，则圆心距等于多少？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "两圆内切时圆心距等于两半径之差的绝对值，即 5 减 3 等于 2。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_h1069_q5",
+     "topicId": "msj_h1069",
+     "prompt": "两个圆相交时，把两个圆的方程相减，得到的直线是什么？",
+     "question": "两个圆相交时，把两个圆的方程相减，得到的直线是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "两圆圆心连线"
+      },
+      {
+       "label": "B",
+       "text": "两个圆的公切线"
+      },
+      {
+       "label": "C",
+       "text": "公共弦所在的直线"
+      },
+      {
+       "label": "D",
+       "text": "过圆心的直线"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两圆公共点的坐标同时满足两个方程，也满足两方程之差所得的方程，所以相减得到的直线就是公共弦所在的直线。"
+    },
+    {
+     "id": "msj_h1069_q6",
+     "topicId": "msj_h1069",
+     "prompt": "求圆 x² + y² = 4 与圆 x² + y² - 6x - 8y = 0 的圆心距。",
+     "question": "求圆 x² + y² = 4 与圆 x² + y² - 6x - 8y = 0 的圆心距。",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "第二个圆配方得 (x - 3)² + (y - 4)² = 25，圆心是 (3,4)，与原点距离等于根号下 9 加 16 即 5。",
+     "verify": "{\"type\": \"num\", \"value\": 5}"
+    },
+    {
+     "id": "msj_h1069_q7",
+     "topicId": "msj_h1069",
+     "prompt": "两个圆的半径分别为 2 和 6，若两个圆外离，则圆心距 d 满足什么条件？",
+     "question": "两个圆的半径分别为 2 和 6，若两个圆外离，则圆心距 d 满足什么条件？",
+     "options": [
+      {
+       "label": "A",
+       "text": "d 等于 8"
+      },
+      {
+       "label": "B",
+       "text": "2 小于 d 小于 8"
+      },
+      {
+       "label": "C",
+       "text": "d 小于 4"
+      },
+      {
+       "label": "D",
+       "text": "d 大于 8"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两圆外离时圆心距大于两半径之和，即 d 大于 2 加 6 等于 8。"
+    },
+    {
+     "id": "msj_h1069_q8",
+     "topicId": "msj_h1069",
+     "prompt": "请写出用圆心距判断两个圆位置关系的完整标准。",
+     "question": "请写出用圆心距判断两个圆位置关系的完整标准。",
+     "answer": "设两圆半径分别为 r1 和 r2，圆心距为 d，当 d 大于 r1 加 r2 时两圆外离，当 d 等于 r1 加 r2 时外切，当 r1 减 r2 的绝对值小于 d 小于 r1 加 r2 时相交，当 d 等于 r1 减 r2 的绝对值时内切，当 d 小于 r1 减 r2 的绝对值时内含。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "这五种情况由圆心距与半径和、半径差的大小关系完整确定，缺一不可。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1070",
+   "page": 72,
+   "description": "过圆上一点的切线方程可以由圆心与该点连线垂直切线得到，过圆外一点作圆的两条切线，两个切点确定的直线叫切点弦，其方程形如 x0x 加 y0y 等于 r 的平方。",
+   "mastery_criteria": [
+    "能求过圆上一点的切线方程",
+    "知道切点弦方程的写法并会用它解题",
+    "能说明点与圆的不同位置关系对所写直线的影响"
+   ],
+   "misconceptions": [
+    "把切点弦方程当成过该点的切线方程使用",
+    "认为点在圆内时 x0x 加 y0y 等于 r 的平方没有几何意义"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1070_q1",
+     "topicId": "msj_h1070",
+     "prompt": "圆 x² + y² = r² 上一点 (x0,y0) 处的切线方程是哪一个？",
+     "question": "圆 x² + y² = r² 上一点 (x0,y0) 处的切线方程是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x0x + y0y = r²"
+      },
+      {
+       "label": "B",
+       "text": "x0y + y0x = r²"
+      },
+      {
+       "label": "C",
+       "text": "x0x - y0y = r²"
+      },
+      {
+       "label": "D",
+       "text": "x + y = r²"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把圆上点的坐标与动点坐标对应相乘再相加，右边是半径的平方，这就是教材给出的切线方程形式。"
+    },
+    {
+     "id": "msj_h1070_q2",
+     "topicId": "msj_h1070",
+     "prompt": "过圆 x² + y² = 9 上一点 (3,0) 的切线方程是（　）。",
+     "question": "过圆 x² + y² = 9 上一点 (3,0) 的切线方程是（　）。",
+     "answer": "x = 3",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "点 (3,0) 处的半径在 x 轴上，切线与它垂直，所以切线是过 (3,0) 且与 x 轴垂直的直线 x 等于 3。"
+    },
+    {
+     "id": "msj_h1070_q3",
+     "topicId": "msj_h1070",
+     "prompt": "过圆外一点作圆的两条切线，两个切点确定的直线叫作什么？",
+     "question": "过圆外一点作圆的两条切线，两个切点确定的直线叫作什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "公切线"
+      },
+      {
+       "label": "B",
+       "text": "切点弦"
+      },
+      {
+       "label": "C",
+       "text": "直径所在直线"
+      },
+      {
+       "label": "D",
+       "text": "准线"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "过圆外一点可以作圆的两条切线，两个切点连成的线段所在直线就是这条弦，教材称它为切点弦。"
+    },
+    {
+     "id": "msj_h1070_q4",
+     "topicId": "msj_h1070",
+     "prompt": "圆 x² + y² = 25 上一点 (3,4) 处的切线斜率是多少？",
+     "question": "圆 x² + y² = 25 上一点 (3,4) 处的切线斜率是多少？",
+     "answer": -0.75,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "圆心与该点连线的斜率是 4 除以 3，切线与这条连线垂直，斜率等于负四分之三，即负 0.75。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": -3}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msj_h1070_q5",
+     "topicId": "msj_h1070",
+     "prompt": "点 P(x0,y0) 在圆 x² + y² = r² 外时，方程 x0x + y0y = r² 表示的直线是什么？",
+     "question": "点 P(x0,y0) 在圆 x² + y² = r² 外时，方程 x0x + y0y = r² 表示的直线是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "过点 P 的切线"
+      },
+      {
+       "label": "B",
+       "text": "一条不过圆心的弦所在直线"
+      },
+      {
+       "label": "C",
+       "text": "过两个切点的直线"
+      },
+      {
+       "label": "D",
+       "text": "圆的一条直径"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把圆外一点的坐标按切线方程的形式写出，得到的就是两个切点所在的直线，也就是切点弦。"
+    },
+    {
+     "id": "msj_h1070_q6",
+     "topicId": "msj_h1070",
+     "prompt": "圆 x² + y² = 25 外一点 P(10,0) 对应的切点弦与 x 轴交点的横坐标是（　）。",
+     "question": "圆 x² + y² = 25 外一点 P(10,0) 对应的切点弦与 x 轴交点的横坐标是（　）。",
+     "answer": "2.5",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "切点弦方程是 10x 等于 25，即 x 等于 2.5，这条直线与 x 轴垂直，交点的横坐标就是 2.5。"
+    },
+    {
+     "id": "msj_h1070_q7",
+     "topicId": "msj_h1070",
+     "prompt": "圆 x² + y² = 8 上一点 (2,2) 处的切线在 y 轴上的截距是多少？",
+     "question": "圆 x² + y² = 8 上一点 (2,2) 处的切线在 y 轴上的截距是多少？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "点 (2,2) 在圆上，切线方程是 2x 加 2y 等于 8，化为 y 等于 4 减 x，令 x 等于 0 得截距为 4。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msj_h1070_q8",
+     "topicId": "msj_h1070",
+     "prompt": "请说明为什么圆上一点处的切线与圆心和该点的连线垂直。",
+     "question": "请说明为什么圆上一点处的切线与圆心和该点的连线垂直。",
+     "answer": "如果切线与圆心到切点的连线不垂直，那么圆心到这条直线的距离就小于半径，这条直线与圆就会有两个公共点，不再是切线，所以切线与圆心和切点的连线垂直。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "用反证法说明：不垂直则圆心到直线距离小于半径，与相切矛盾。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1071",
+   "page": 74,
+   "description": "本章回顾梳理圆的方程、直线与圆的位置关系、圆与圆的位置关系，突出用坐标法研究点、直线、圆之间关系的一般思路，并把圆的方程与初中所学的圆的性质联系起来。",
+   "mastery_criteria": [
+    "能熟练由圆心与半径或一般式求圆的方程",
+    "能综合处理直线与圆、圆与圆的综合问题",
+    "能体会坐标法研究几何对象的一般步骤"
+   ],
+   "misconceptions": [
+    "求圆方程时把一般式的常数项直接当成半径的平方",
+    "求最短弦时把弦取成直径"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1071_q1",
+     "topicId": "msj_h1071",
+     "prompt": "求圆的方程常用的两个形式是什么？",
+     "question": "求圆的方程常用的两个形式是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "标准方程与一般方程"
+      },
+      {
+       "label": "B",
+       "text": "点斜式与斜截式"
+      },
+      {
+       "label": "C",
+       "text": "两点式与截距式"
+      },
+      {
+       "label": "D",
+       "text": "参数方程与极坐标方程"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "本章给出圆的标准方程和一般方程，标准方程便于读出圆心和半径，一般方程便于用待定系数法求圆的方程。"
+    },
+    {
+     "id": "msj_h1071_q2",
+     "topicId": "msj_h1071",
+     "prompt": "已知圆的方程是 (x - 2)² + (y + 1)² = 25，它的半径是多少？",
+     "question": "已知圆的方程是 (x - 2)² + (y + 1)² = 25，它的半径是多少？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "标准方程右边是半径的平方 25，所以半径等于 5，圆心是 (2,-1)。",
+     "verify": "{\"type\": \"num\", \"value\": 5}"
+    },
+    {
+     "id": "msj_h1071_q3",
+     "topicId": "msj_h1071",
+     "prompt": "圆 x² + y² - 4x + 4y + 4 = 0 的圆心和半径分别是什么？",
+     "question": "圆 x² + y² - 4x + 4y + 4 = 0 的圆心和半径分别是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(-2,2) 和 2"
+      },
+      {
+       "label": "B",
+       "text": "(2,-2) 和 2"
+      },
+      {
+       "label": "C",
+       "text": "(2,-2) 和 4"
+      },
+      {
+       "label": "D",
+       "text": "(2,2) 和 2"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把方程配方得 (x - 2)² + (y + 2)² = 4，所以这个圆的圆心是 (2,-2)，半径是 2，而不是 4。"
+    },
+    {
+     "id": "msj_h1071_q4",
+     "topicId": "msj_h1071",
+     "prompt": "圆 x² + y² = 9 上的点到原点的距离都等于（　）。",
+     "question": "圆 x² + y² = 9 上的点到原点的距离都等于（　）。",
+     "answer": "3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "圆上的点到圆心的距离都等于半径，这个圆以原点为圆心、半径是 3，所以到原点的距离都是 3。"
+    },
+    {
+     "id": "msj_h1071_q5",
+     "topicId": "msj_h1071",
+     "prompt": "直线 3x + 4y + 12 = 0 与两坐标轴交点分别为 A、B，以线段 AB 为直径的圆的半径是多少？",
+     "question": "直线 3x + 4y + 12 = 0 与两坐标轴交点分别为 A、B，以线段 AB 为直径的圆的半径是多少？",
+     "answer": 2.5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "直线与 x 轴交于 (-4,0)，与 y 轴交于 (0,-3)，AB 等于根号下 16 加 9 即 5，所以半径是 5 除以 2 等于 2.5。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1071_q6",
+     "topicId": "msj_h1071",
+     "prompt": "圆 x² + y² - 2x - 2y = 0 内一点 M(1,0)，过点 M 的最短弦所在直线的斜率是多少？",
+     "question": "圆 x² + y² - 2x - 2y = 0 内一点 M(1,0)，过点 M 的最短弦所在直线的斜率是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "-1"
+      },
+      {
+       "label": "C",
+       "text": "0"
+      },
+      {
+       "label": "D",
+       "text": "不存在"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "圆心是 (1,1)，与 M 的连线垂直于 x 轴，最短弦与这条连线垂直，所以最短弦是水平方向，斜率为 0。"
+    },
+    {
+     "id": "msj_h1071_q7",
+     "topicId": "msj_h1071",
+     "prompt": "两圆 x² + y² = 10 与 (x - 1)² + (y - 3)² = 20 相交于 A、B 两点，公共弦 AB 所在直线的方程中 x 的系数是（　）。",
+     "question": "两圆 x² + y² = 10 与 (x - 1)² + (y - 3)² = 20 相交于 A、B 两点，公共弦 AB 所在直线的方程中 x 的系数是（　）。",
+     "answer": "1",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "把第二个圆的方程展开后与第一个方程相减，得负 2x 减 6y 等于 0，即 x 加 3y 等于 0，所以 x 的系数是 1。"
+    },
+    {
+     "id": "msj_h1071_q8",
+     "topicId": "msj_h1071",
+     "prompt": "用坐标法研究圆与直线的位置关系，一般要经过哪几个步骤？",
+     "question": "用坐标法研究圆与直线的位置关系，一般要经过哪几个步骤？",
+     "answer": "先建立适当的直角坐标系，写出圆与直线的方程，再用方程组的解或圆心到直线的距离判断位置关系，最后把代数结果翻译成几何结论。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "这是解析几何研究问题的一般思路：几何问题代数化，代数结果再几何化。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1072",
+   "page": 77,
+   "description": "本章测试综合考查圆的标准方程与一般方程、直线与圆的位置关系、弦长与切线、圆与圆的位置关系，以及圆在拱桥、隧道等实际问题中的应用。",
+   "mastery_criteria": [
+    "能由条件求圆的方程并化为标准形式",
+    "能综合处理切线、弦长与两圆位置关系的问题",
+    "能把拱桥、隧道等实际问题转化为圆的方程问题"
+   ],
+   "misconceptions": [
+    "把圆的方程平移或对称时只改圆心忘记改半径",
+    "求实际问题的圆的方程时坐标系建立不当导致计算困难"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1072_q1",
+     "topicId": "msj_h1072",
+     "prompt": "圆心为 (-1,1)、半径为 3 的圆的方程是哪一个？",
+     "question": "圆心为 (-1,1)、半径为 3 的圆的方程是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(x + 1)² + (y - 1)² = 9"
+      },
+      {
+       "label": "B",
+       "text": "(x - 1)² + (y + 1)² = 9"
+      },
+      {
+       "label": "C",
+       "text": "(x + 1)² + (y - 1)² = 3"
+      },
+      {
+       "label": "D",
+       "text": "(x - 1)² + (y - 1)² = 9"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把圆心坐标和半径代入标准方程，得 x 加 1 的平方加 y 减 1 的平方等于 9。"
+    },
+    {
+     "id": "msj_h1072_q2",
+     "topicId": "msj_h1072",
+     "prompt": "已知圆的方程是 x² + y² + 6x - 8y + 21 = 0，它的半径是多少？",
+     "question": "已知圆的方程是 x² + y² + 6x - 8y + 21 = 0，它的半径是多少？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "配方得 (x + 3)² + (y - 4)² = 4，所以圆心是 (-3,4)，半径等于根号 4 即 2。",
+     "verify": "{\"type\": \"num\", \"value\": 2}"
+    },
+    {
+     "id": "msj_h1072_q3",
+     "topicId": "msj_h1072",
+     "prompt": "过圆 x² + y² = 5 上一点 (1,-2) 的切线方程是哪一个？",
+     "question": "过圆 x² + y² = 5 上一点 (1,-2) 的切线方程是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x + 2y = 5"
+      },
+      {
+       "label": "B",
+       "text": "x - 2y = 5"
+      },
+      {
+       "label": "C",
+       "text": "2x - y = 5"
+      },
+      {
+       "label": "D",
+       "text": "x - 2y = 0"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把圆上点的坐标按切线方程的形式代入，得 1 乘 x 加负 2 乘 y 等于 5，即 x 减 2y 等于 5。"
+    },
+    {
+     "id": "msj_h1072_q4",
+     "topicId": "msj_h1072",
+     "prompt": "圆 x² + y² - 2x + 2y + 1 = 0 关于 y 轴对称的圆的方程中，常数项是（　）。",
+     "question": "圆 x² + y² - 2x + 2y + 1 = 0 关于 y 轴对称的圆的方程中，常数项是（　）。",
+     "answer": "1",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "原圆的圆心是 (1,-1)，半径是 1，关于 y 轴对称后圆心变成 (-1,-1)，半径不变，方程为 (x + 1)² + (y + 1)² = 1，展开后常数项是 1。"
+    },
+    {
+     "id": "msj_h1072_q5",
+     "topicId": "msj_h1072",
+     "prompt": "直线 x - y = 2 与圆 x² + y² = 4 的位置关系是什么？",
+     "question": "直线 x - y = 2 与圆 x² + y² = 4 的位置关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "相切"
+      },
+      {
+       "label": "B",
+       "text": "相离"
+      },
+      {
+       "label": "C",
+       "text": "相交"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "圆心到直线的距离等于 2 除以根号 2，约为 1.41，小于半径 2，所以直线与圆相交。"
+    },
+    {
+     "id": "msj_h1072_q6",
+     "topicId": "msj_h1072",
+     "prompt": "求圆 x² + y² = 4 与圆 x² + y² - 8x - 6y + 16 = 0 的圆心距。",
+     "question": "求圆 x² + y² = 4 与圆 x² + y² - 8x - 6y + 16 = 0 的圆心距。",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "第二个圆配方得 (x - 4)² + (y - 3)² = 9，圆心是 (4,3)，与原点的距离等于根号下 16 加 9 即 5。",
+     "verify": "{\"type\": \"num\", \"value\": 5}"
+    },
+    {
+     "id": "msj_h1072_q7",
+     "topicId": "msj_h1072",
+     "prompt": "圆 x² + y² = 9 上一点 (0,3) 处的切线方程是（　）。",
+     "question": "圆 x² + y² = 9 上一点 (0,3) 处的切线方程是（　）。",
+     "answer": "y = 3",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "点 (0,3) 处的半径在 y 轴上，切线与它垂直，所以切线是过 (0,3) 且与 y 轴垂直的直线 y 等于 3。"
+    },
+    {
+     "id": "msj_h1072_q8",
+     "topicId": "msj_h1072",
+     "prompt": "赵州桥的桥拱近似一段圆弧，已知跨度和拱高，请说明求这段圆弧所在圆的方程的思路。",
+     "question": "赵州桥的桥拱近似一段圆弧，已知跨度和拱高，请说明求这段圆弧所在圆的方程的思路。",
+     "answer": "以拱顶所在的竖直方向为 y 轴，以跨度所在直线为 x 轴建立直角坐标系，设圆心在 y 轴上，利用圆经过跨度的两个端点和拱顶这三个条件求出圆心坐标与半径，从而写出圆的方程。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "三个条件确定一个圆，把拱桥放到坐标系中，端点与拱顶的坐标就可以直接读出。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1073",
+   "page": 81,
+   "description": "平面内到两个定点的距离之和等于常数（大于焦距）的点的轨迹是椭圆，焦点在 x 轴上的标准方程中 a 的平方等于 b 的平方加 c 的平方，离心率等于 c 除以 a，反映椭圆的扁平程度。",
+   "mastery_criteria": [
+    "能由椭圆的定义和已知条件求标准方程",
+    "能由标准方程求焦点坐标、顶点坐标与离心率",
+    "知道离心率的大小与椭圆扁平程度的关系"
+   ],
+   "misconceptions": [
+    "把 a、b、c 的关系误记为 c 的平方等于 a 的平方加 b 的平方",
+    "认为离心率越大椭圆越接近圆"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1073_q1",
+     "topicId": "msj_h1073",
+     "prompt": "椭圆 x²/25 + y²/9 = 1 的长轴长是多少？",
+     "question": "椭圆 x²/25 + y²/9 = 1 的长轴长是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "10"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由方程得 a 的平方等于 25，a 等于 5，长轴长等于 2a，即 10，短轴长是 6。"
+    },
+    {
+     "id": "msj_h1073_q2",
+     "topicId": "msj_h1073",
+     "prompt": "椭圆 x²/16 + y²/7 = 1 的焦点在（　）轴上。",
+     "question": "椭圆 x²/16 + y²/7 = 1 的焦点在（　）轴上。",
+     "answer": "x",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "方程中 x 的平方下面分母 16 大于 y 的平方下面分母 7，分母大的对应长轴，所以焦点在 x 轴上。"
+    },
+    {
+     "id": "msj_h1073_q3",
+     "topicId": "msj_h1073",
+     "prompt": "椭圆的两个焦点为 (-3,0) 和 (3,0)，椭圆上一点到两个焦点的距离之和为 10，这个椭圆的标准方程是哪一个？",
+     "question": "椭圆的两个焦点为 (-3,0) 和 (3,0)，椭圆上一点到两个焦点的距离之和为 10，这个椭圆的标准方程是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x²/25 + y²/9 = 1"
+      },
+      {
+       "label": "B",
+       "text": "x²/25 + y²/16 = 1"
+      },
+      {
+       "label": "C",
+       "text": "x²/16 + y²/25 = 1"
+      },
+      {
+       "label": "D",
+       "text": "x²/9 + y²/25 = 1"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由定义得 2a 等于 10，a 等于 5，又 c 等于 3，所以 b 的平方等于 25 减 9 等于 16，焦点在 x 轴上，方程是 x 的平方比 25 加 y 的平方比 16 等于 1。"
+    },
+    {
+     "id": "msj_h1073_q4",
+     "topicId": "msj_h1073",
+     "prompt": "椭圆 x²/169 + y²/144 = 1 的焦距是多少？",
+     "question": "椭圆 x²/169 + y²/144 = 1 的焦距是多少？",
+     "answer": 10,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "a 的平方等于 169，b 的平方等于 144，c 的平方等于 25，c 等于 5，焦距 2c 等于 10。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1073_q5",
+     "topicId": "msj_h1073",
+     "prompt": "椭圆 x²/25 + y²/9 = 1 的离心率是多少？",
+     "question": "椭圆 x²/25 + y²/9 = 1 的离心率是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3/5"
+      },
+      {
+       "label": "B",
+       "text": "5/4"
+      },
+      {
+       "label": "C",
+       "text": "4/5"
+      },
+      {
+       "label": "D",
+       "text": "9/25"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "a 等于 5，c 等于 4，离心率等于 c 除以 a 等于五分之四，说明这个椭圆比较扁。"
+    },
+    {
+     "id": "msj_h1073_q6",
+     "topicId": "msj_h1073",
+     "prompt": "椭圆 x²/100 + y²/36 = 1 上一点到左焦点的距离是 7，求这点到右焦点的距离。",
+     "question": "椭圆 x²/100 + y²/36 = 1 上一点到左焦点的距离是 7，求这点到右焦点的距离。",
+     "answer": 13,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "由方程得 a 等于 10，长轴长 2a 等于 20，椭圆上一点到两个焦点的距离之和等于 20，所以到右焦点的距离是 20 减 7 等于 13。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 20}, {\"type\": \"num\", \"value\": 7}]}"
+    },
+    {
+     "id": "msj_h1073_q7",
+     "topicId": "msj_h1073",
+     "prompt": "关于椭圆的离心率 e，下面的说法哪一个是正确的？",
+     "question": "关于椭圆的离心率 e，下面的说法哪一个是正确的？",
+     "options": [
+      {
+       "label": "A",
+       "text": "e 越接近 1，椭圆越圆"
+      },
+      {
+       "label": "B",
+       "text": "e 可以大于 1"
+      },
+      {
+       "label": "C",
+       "text": "e 等于 1 时表示圆"
+      },
+      {
+       "label": "D",
+       "text": "e 越接近 1，椭圆越扁"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "离心率等于 c 除以 a，e 越接近 0 越接近圆，e 越接近 1 越扁，且椭圆中 e 一定小于 1。"
+    },
+    {
+     "id": "msj_h1073_q8",
+     "topicId": "msj_h1073",
+     "prompt": "已知椭圆的长轴长为 10，焦距为 6，求它的短轴长，请写出计算过程。",
+     "question": "已知椭圆的长轴长为 10，焦距为 6，求它的短轴长，请写出计算过程。",
+     "answer": "长半轴 a 等于 5，半焦距 c 等于 3，由 b 的平方等于 a 的平方减 c 的平方得 b 的平方等于 25 减 9 等于 16，b 等于 4，短轴长等于 2b 即 8。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "先由长轴长和焦距得到 a 与 c，再用椭圆中 a、b、c 的关系求出 b，最后算短轴长。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1074",
+   "page": 95,
+   "description": "平面内到两个定点距离之差的绝对值等于常数（小于焦距）的点的轨迹是双曲线，标准方程中 c 的平方等于 a 的平方加 b 的平方，渐近线由实半轴和虚半轴确定，离心率反映开口大小。",
+   "mastery_criteria": [
+    "能由双曲线的定义求标准方程",
+    "能由标准方程求实轴长、虚轴长、焦点坐标与渐近线方程",
+    "知道离心率越大双曲线的开口越大"
+   ],
+   "misconceptions": [
+    "把双曲线中 a、b、c 的关系与椭圆混同",
+    "把渐近线方程写成 y 等于正负 b 分之 a 乘 x"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1074_q1",
+     "topicId": "msj_h1074",
+     "prompt": "双曲线 x²/9 - y²/16 = 1 的实轴长是多少？",
+     "question": "双曲线 x²/9 - y²/16 = 1 的实轴长是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "8"
+      },
+      {
+       "label": "C",
+       "text": "10"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由方程得 a 的平方等于 9，a 等于 3，实轴长等于 2a 即 6，虚轴长是 8。"
+    },
+    {
+     "id": "msj_h1074_q2",
+     "topicId": "msj_h1074",
+     "prompt": "双曲线 x²/9 - y²/16 = 1 的焦距是多少？",
+     "question": "双曲线 x²/9 - y²/16 = 1 的焦距是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "10"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "双曲线中 c 的平方等于 a 的平方加 b 的平方，即 9 加 16 等于 25，c 等于 5，焦距 2c 等于 10。"
+    },
+    {
+     "id": "msj_h1074_q3",
+     "topicId": "msj_h1074",
+     "prompt": "双曲线中 a、b、c 满足的关系式是 c 的平方等于（　）。",
+     "question": "双曲线中 a、b、c 满足的关系式是 c 的平方等于（　）。",
+     "answer": "a 的平方加 b 的平方",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "与椭圆不同，双曲线中 c 最大，满足 c 的平方等于 a 的平方加 b 的平方。"
+    },
+    {
+     "id": "msj_h1074_q4",
+     "topicId": "msj_h1074",
+     "prompt": "双曲线的两个焦点为 (-5,0) 和 (5,0)，双曲线上一点到两个焦点距离之差的绝对值等于 8，求 a 的值。",
+     "question": "双曲线的两个焦点为 (-5,0) 和 (5,0)，双曲线上一点到两个焦点距离之差的绝对值等于 8，求 a 的值。",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由双曲线定义，距离之差的绝对值等于 2a，所以 2a 等于 8，a 等于 4。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1074_q5",
+     "topicId": "msj_h1074",
+     "prompt": "双曲线 x²/4 - y²/9 = 1 的渐近线方程是哪一个？",
+     "question": "双曲线 x²/4 - y²/9 = 1 的渐近线方程是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = ±2x/3"
+      },
+      {
+       "label": "B",
+       "text": "y = ±3x/√13"
+      },
+      {
+       "label": "C",
+       "text": "y = ±3x/2"
+      },
+      {
+       "label": "D",
+       "text": "y = ±9x/4"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "渐近线方程是 y 等于正负 a 分之 b 乘 x，这里 a 等于 2，b 等于 3，所以是 y 等于正负二分之三 x。"
+    },
+    {
+     "id": "msj_h1074_q6",
+     "topicId": "msj_h1074",
+     "prompt": "双曲线 x²/16 - y²/9 = 1 的离心率是多少？",
+     "question": "双曲线 x²/16 - y²/9 = 1 的离心率是多少？",
+     "answer": 1.25,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "a 等于 4，c 等于根号下 16 加 9 即 5，离心率等于 c 除以 a 等于 5 除以 4，即 1.25。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msj_h1074_q7",
+     "topicId": "msj_h1074",
+     "prompt": "等轴双曲线的两条渐近线的位置关系是什么？",
+     "question": "等轴双曲线的两条渐近线的位置关系是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "互相平行"
+      },
+      {
+       "label": "B",
+       "text": "重合"
+      },
+      {
+       "label": "C",
+       "text": "夹角为 60 度"
+      },
+      {
+       "label": "D",
+       "text": "互相垂直"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "等轴双曲线中实轴与虚轴等长，即 a 等于 b，两条渐近线的斜率分别是 1 和负 1，所以它们互相垂直。"
+    },
+    {
+     "id": "msj_h1074_q8",
+     "topicId": "msj_h1074",
+     "prompt": "为什么说双曲线的离心率越大，它的开口就越大？",
+     "question": "为什么说双曲线的离心率越大，它的开口就越大？",
+     "answer": "因为离心率等于 c 除以 a，由 c 的平方等于 a 的平方加 b 的平方可知离心率越大则 a 分之 b 越大，渐近线的斜率绝对值越大，两条渐近线张开的角越大，双曲线的开口也就越大。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "开口大小由渐近线的倾斜程度决定，而渐近线斜率由 a 分之 b 决定，离心率正好刻画它。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1075",
+   "page": 109,
+   "description": "平面内到一个定点的距离与到一条定直线的距离相等的点的轨迹是抛物线，抛物线的标准方程有四种形式，焦点在 x 轴或 y 轴上，开口方向由方程中一次项的符号决定。",
+   "mastery_criteria": [
+    "能由抛物线的定义求标准方程",
+    "能写出抛物线的焦点坐标与准线方程",
+    "能根据方程判断抛物线的开口方向"
+   ],
+   "misconceptions": [
+    "把抛物线 y² 等于 2px 的焦点坐标误写为 (p,0)",
+    "认为抛物线的标准方程只有一种形式"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1075_q1",
+     "topicId": "msj_h1075",
+     "prompt": "抛物线 y² = 4x 的焦点坐标是哪一个？",
+     "question": "抛物线 y² = 4x 的焦点坐标是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(1,0)"
+      },
+      {
+       "label": "B",
+       "text": "(2,0)"
+      },
+      {
+       "label": "C",
+       "text": "(0,1)"
+      },
+      {
+       "label": "D",
+       "text": "(4,0)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由 2p 等于 4 得 p 等于 2，焦点坐标是 (二分之 p, 0)，即 (1,0)。"
+    },
+    {
+     "id": "msj_h1075_q2",
+     "topicId": "msj_h1075",
+     "prompt": "抛物线 y² = 12x 的准线方程是（　）。",
+     "question": "抛物线 y² = 12x 的准线方程是（　）。",
+     "answer": "x = -3",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "由 2p 等于 12 得 p 等于 6，准线方程是 x 等于负二分之 p，即 x 等于负 3。"
+    },
+    {
+     "id": "msj_h1075_q3",
+     "topicId": "msj_h1075",
+     "prompt": "抛物线 x² = 8y 的开口方向是什么？",
+     "question": "抛物线 x² = 8y 的开口方向是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "向下"
+      },
+      {
+       "label": "B",
+       "text": "向上"
+      },
+      {
+       "label": "C",
+       "text": "向左"
+      },
+      {
+       "label": "D",
+       "text": "向右"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "形如 x 的平方等于 2py 且 p 大于 0 的抛物线焦点在 y 轴正半轴上，开口向上。"
+    },
+    {
+     "id": "msj_h1075_q4",
+     "topicId": "msj_h1075",
+     "prompt": "抛物线 x² = -4y 的焦点到原点的距离是多少？",
+     "question": "抛物线 x² = -4y 的焦点到原点的距离是多少？",
+     "answer": 1,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由 2p 等于 4 得 p 等于 2，焦点是 (0, 负二分之 p) 即 (0,-1)，到原点的距离是 1。",
+     "verify": "{\"type\": \"num\", \"value\": 1}"
+    },
+    {
+     "id": "msj_h1075_q5",
+     "topicId": "msj_h1075",
+     "prompt": "焦点为 (5,0) 的抛物线的标准方程是哪一个？",
+     "question": "焦点为 (5,0) 的抛物线的标准方程是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y² = 5x"
+      },
+      {
+       "label": "B",
+       "text": "x² = 20y"
+      },
+      {
+       "label": "C",
+       "text": "y² = 20x"
+      },
+      {
+       "label": "D",
+       "text": "y² = 10x"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "焦点在 x 轴正半轴，设方程为 y 的平方等于 2px，由二分之 p 等于 5 得 p 等于 10，所以方程是 y 的平方等于 20x。"
+    },
+    {
+     "id": "msj_h1075_q6",
+     "topicId": "msj_h1075",
+     "prompt": "经过点 (-2,-4) 的抛物线中，形如 y² = -2px 的那一条里的 p 是多少？",
+     "question": "经过点 (-2,-4) 的抛物线中，形如 y² = -2px 的那一条里的 p 是多少？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "把点 (-2,-4) 代入 y 的平方等于负 2px，得 16 等于 4p，所以 p 等于 4，这条抛物线是 y 的平方等于负 8x。",
+     "verify": "{\"type\": \"num\", \"value\": 4}"
+    },
+    {
+     "id": "msj_h1075_q7",
+     "topicId": "msj_h1075",
+     "prompt": "关于四种形式的抛物线标准方程，下面的说法哪一个是正确的？",
+     "question": "关于四种形式的抛物线标准方程，下面的说法哪一个是正确的？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x² = 2py 的焦点坐标是 (0,p)"
+      },
+      {
+       "label": "B",
+       "text": "y² = 2px 的准线方程是 x = p/2"
+      },
+      {
+       "label": "C",
+       "text": "x² = -2py 的焦点坐标是 (0,p/2)"
+      },
+      {
+       "label": "D",
+       "text": "y² = -2px 的焦点坐标是 (-p/2,0)"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "四种形式中焦点坐标分别是 (二分之 p,0)、负二分之 p 到 0、(0, 二分之 p)、(0, 负二分之 p)，只有 y 的平方等于负 2px 的焦点是负二分之 p 到 0。"
+    },
+    {
+     "id": "msj_h1075_q8",
+     "topicId": "msj_h1075",
+     "prompt": "请写出抛物线的定义，并说明定义中的定点和定直线分别叫什么。",
+     "question": "请写出抛物线的定义，并说明定义中的定点和定直线分别叫什么。",
+     "answer": "平面内到一个定点的距离和到一条定直线的距离相等的点的轨迹叫抛物线，这个定点叫抛物线的焦点，这条定直线叫抛物线的准线。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "定义中的定点不在定直线上，这是抛物线区别于其他曲线的重要条件。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1076",
+   "page": 120,
+   "description": "海上定位时用定位仪测出两个导航台信号的到达时间差，乘以信号传播速度得到距离差，从而判定船在以两台为焦点的双曲线的一支上，再用第二条双曲线交会出船的位置。",
+   "mastery_criteria": [
+    "能把信号的时间差换算成到两导航台的距离差",
+    "能建立适当的坐标系写出双曲线的方程",
+    "能说明为什么需要两个副导航台才能确定位置"
+   ],
+   "misconceptions": [
+    "把时间差直接当成距离差使用",
+    "认为一条双曲线就能唯一确定船的位置"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1076_q1",
+     "topicId": "msj_h1076",
+     "prompt": "双曲线时差定位法中，船到两个导航台的距离差对应双曲线中的哪一个量？",
+     "question": "双曲线时差定位法中，船到两个导航台的距离差对应双曲线中的哪一个量？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2a"
+      },
+      {
+       "label": "B",
+       "text": "2c"
+      },
+      {
+       "label": "C",
+       "text": "2b"
+      },
+      {
+       "label": "D",
+       "text": "c 的平方"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "双曲线定义中到两个焦点距离之差的绝对值等于 2a，所以距离差对应的是 2a。"
+    },
+    {
+     "id": "msj_h1076_q2",
+     "topicId": "msj_h1076",
+     "prompt": "两个导航台之间的距离为 500 海里，建立坐标系时 2c 等于（　）海里。",
+     "question": "两个导航台之间的距离为 500 海里，建立坐标系时 2c 等于（　）海里。",
+     "answer": "500",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "两个导航台就是双曲线的两个焦点，它们之间的距离等于焦距 2c，所以 2c 等于 500。"
+    },
+    {
+     "id": "msj_h1076_q3",
+     "topicId": "msj_h1076",
+     "prompt": "某点到两个导航台的距离差的绝对值是 324 海里，则双曲线中的 a 等于多少？",
+     "question": "某点到两个导航台的距离差的绝对值是 324 海里，则双曲线中的 a 等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "324"
+      },
+      {
+       "label": "B",
+       "text": "162"
+      },
+      {
+       "label": "C",
+       "text": "648"
+      },
+      {
+       "label": "D",
+       "text": "81"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "距离差的绝对值等于 2a，所以 2a 等于 324，a 等于 162。"
+    },
+    {
+     "id": "msj_h1076_q4",
+     "topicId": "msj_h1076",
+     "prompt": "某船到两个导航台的距离差是 680 米，求对应双曲线中的 a。",
+     "question": "某船到两个导航台的距离差是 680 米，求对应双曲线中的 a。",
+     "answer": 340,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "双曲线定义中到两个焦点距离之差的绝对值等于 2a，所以 2a 等于 680，a 等于 680 除以 2 即 340。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 680}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1076_q5",
+     "topicId": "msj_h1076",
+     "prompt": "时差为 0 时，海轮所在的曲线是什么？",
+     "question": "时差为 0 时，海轮所在的曲线是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "以两个导航台为焦点的双曲线的一支"
+      },
+      {
+       "label": "B",
+       "text": "以两个导航台为端点的线段"
+      },
+      {
+       "label": "C",
+       "text": "两个导航台连线的垂直平分线"
+      },
+      {
+       "label": "D",
+       "text": "过两个导航台的一条直线"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "时差为 0 说明船到两个导航台的距离相等，到两定点距离相等的点的轨迹是它们连线的垂直平分线，它是时差为 0 的等时差线。"
+    },
+    {
+     "id": "msj_h1076_q6",
+     "topicId": "msj_h1076",
+     "prompt": "两个导航台的坐标分别为 (-250,0) 和 (250,0)，某船到两导航台的距离差为 324，求对应双曲线中 b 的平方。",
+     "question": "两个导航台的坐标分别为 (-250,0) 和 (250,0)，某船到两导航台的距离差为 324，求对应双曲线中 b 的平方。",
+     "answer": 36256,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "由 2c 等于 500 得 c 等于 250，c 的平方等于 62500；由 2a 等于 324 得 a 等于 162，a 的平方等于 26244；所以 b 的平方等于 c 的平方减 a 的平方等于 36256。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 62500}, {\"type\": \"num\", \"value\": 26244}]}"
+    },
+    {
+     "id": "msj_h1076_q7",
+     "topicId": "msj_h1076",
+     "prompt": "只有一条双曲线不能唯一确定船的位置，因为对应于同一时差的双曲线有两支，两条双曲线的交点最多可能有（　）个。",
+     "question": "只有一条双曲线不能唯一确定船的位置，因为对应于同一时差的双曲线有两支，两条双曲线的交点最多可能有（　）个。",
+     "answer": "4",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "教材指出同一时差对应双曲线的两支，两条双曲线相交时最多有四个交点，还要结合方位判断船在哪一个交点上。"
+    },
+    {
+     "id": "msj_h1076_q8",
+     "topicId": "msj_h1076",
+     "prompt": "请说明双曲线时差定位法确定船的位置的基本思路。",
+     "question": "请说明双曲线时差定位法确定船的位置的基本思路。",
+     "answer": "先测出船到两个导航台信号的时间差，乘以信号传播速度得到距离差，判定船在以两台为焦点的双曲线的一支上，再用另一个副导航台得到第二条双曲线，两条双曲线的交点就是船的位置。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "一步只能确定一条曲线，两条曲线的交点才能确定一个点，这就是为什么要三个导航台。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1077",
+   "page": 123,
+   "description": "本章回顾把椭圆、双曲线、抛物线的定义、标准方程与几何性质放在一起比较，突出用方程研究曲线性质的方法，并把离心率的统一定义与准线联系起来。",
+   "mastery_criteria": [
+    "能比较三种圆锥曲线的标准方程与焦点位置",
+    "能由方程求焦距、离心率、渐近线或准线方程",
+    "会用圆锥曲线的统一定义判断曲线类型"
+   ],
+   "misconceptions": [
+    "把三种曲线的 a、b、c 关系混用",
+    "认为抛物线的离心率不等于 1"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1077_q1",
+     "topicId": "msj_h1077",
+     "prompt": "椭圆、双曲线、抛物线统称为什么？",
+     "question": "椭圆、双曲线、抛物线统称为什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆锥曲线"
+      },
+      {
+       "label": "B",
+       "text": "二次函数图象"
+      },
+      {
+       "label": "C",
+       "text": "圆系曲线"
+      },
+      {
+       "label": "D",
+       "text": "直线族"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "它们都可以用平面截圆锥面得到，所以统称为圆锥曲线，教材引言中已经说明了这一点。"
+    },
+    {
+     "id": "msj_h1077_q2",
+     "topicId": "msj_h1077",
+     "prompt": "在圆锥曲线的统一定义中，当离心率 e 等于 1 时，这条曲线是（　）。",
+     "question": "在圆锥曲线的统一定义中，当离心率 e 等于 1 时，这条曲线是（　）。",
+     "answer": "抛物线",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "统一定义中 e 小于 1 是椭圆，e 大于 1 是双曲线，e 等于 1 时就是抛物线。"
+    },
+    {
+     "id": "msj_h1077_q3",
+     "topicId": "msj_h1077",
+     "prompt": "椭圆 x²/9 + y²/5 = 1 的离心率是多少？",
+     "question": "椭圆 x²/9 + y²/5 = 1 的离心率是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "√5/3"
+      },
+      {
+       "label": "B",
+       "text": "2/3"
+      },
+      {
+       "label": "C",
+       "text": "3/2"
+      },
+      {
+       "label": "D",
+       "text": "4/9"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由方程得 a 等于 3，b 的平方等于 5，c 的平方等于 9 减 5 等于 4，c 等于 2，离心率等于 2 除以 3。"
+    },
+    {
+     "id": "msj_h1077_q4",
+     "topicId": "msj_h1077",
+     "prompt": "已知双曲线 x²/9 - y²/7 = 1，它的焦距是多少？",
+     "question": "已知双曲线 x²/9 - y²/7 = 1，它的焦距是多少？",
+     "answer": 8,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "双曲线中 c 的平方等于 a 的平方加 b 的平方，即 9 加 7 等于 16，所以 c 等于 4，焦距 2c 等于 8。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1077_q5",
+     "topicId": "msj_h1077",
+     "prompt": "抛物线的离心率等于多少？",
+     "question": "抛物线的离心率等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "0"
+      },
+      {
+       "label": "B",
+       "text": "一个小于 1 的数"
+      },
+      {
+       "label": "C",
+       "text": "1"
+      },
+      {
+       "label": "D",
+       "text": "一个大于 1 的数"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "抛物线上点到焦点的距离等于到准线的距离，比值恒为 1，所以抛物线的离心率等于 1。"
+    },
+    {
+     "id": "msj_h1077_q6",
+     "topicId": "msj_h1077",
+     "prompt": "椭圆 x²/25 + y²/16 = 1 上的点到右焦点的距离与到右准线的距离之比是多少？",
+     "question": "椭圆 x²/25 + y²/16 = 1 上的点到右焦点的距离与到右准线的距离之比是多少？",
+     "answer": 0.6,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "这个比值就是离心率，a 等于 5，c 等于 3，所以比值等于 3 除以 5 即 0.6，与右准线方程 x 等于三分之二十五相应。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "msj_h1077_q7",
+     "topicId": "msj_h1077",
+     "prompt": "双曲线 x²/16 - y²/9 = 1 的焦点到渐近线的距离是（　）。",
+     "question": "双曲线 x²/16 - y²/9 = 1 的焦点到渐近线的距离是（　）。",
+     "answer": "3",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "焦点是 (5,0)，渐近线方程是 3x 减 4y 等于 0，距离等于 15 除以 5 等于 3，正好等于虚半轴长 b。"
+    },
+    {
+     "id": "msj_h1077_q8",
+     "topicId": "msj_h1077",
+     "prompt": "请比较椭圆与双曲线中 a、b、c 的关系，并说明它们离心率的取值范围。",
+     "question": "请比较椭圆与双曲线中 a、b、c 的关系，并说明它们离心率的取值范围。",
+     "answer": "椭圆中 a 的平方等于 b 的平方加 c 的平方，a 最大，离心率大于 0 且小于 1；双曲线中 c 的平方等于 a 的平方加 b 的平方，c 最大，离心率大于 1。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "两种曲线中最大的量不同，导致离心率与 1 的大小关系也不同，这是最容易混淆的地方。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1078",
+   "page": 128,
+   "description": "本章测试综合考查椭圆、双曲线、抛物线的标准方程与几何性质，以及直线与圆锥曲线的位置关系，还涉及卫星轨道、隧道限高等实际应用问题。",
+   "mastery_criteria": [
+    "能由已知条件求圆锥曲线的标准方程",
+    "能由方程求焦点、准线、渐近线与离心率",
+    "能解决直线与圆锥曲线相交的简单综合问题"
+   ],
+   "misconceptions": [
+    "求标准方程时把焦点位置判断错导致方程形式用反",
+    "求弦长或交点时把联立后的方程解错"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1078_q1",
+     "topicId": "msj_h1078",
+     "prompt": "抛物线 y² = 8x 的焦点坐标是哪一个？",
+     "question": "抛物线 y² = 8x 的焦点坐标是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(2,0)"
+      },
+      {
+       "label": "B",
+       "text": "(0,2)"
+      },
+      {
+       "label": "C",
+       "text": "(4,0)"
+      },
+      {
+       "label": "D",
+       "text": "(-2,0)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由 2p 等于 8 得 p 等于 4，焦点坐标是 (二分之 p, 0)，即 (2,0)。"
+    },
+    {
+     "id": "msj_h1078_q2",
+     "topicId": "msj_h1078",
+     "prompt": "双曲线的实轴长为 8，则 a 等于（　）。",
+     "question": "双曲线的实轴长为 8，则 a 等于（　）。",
+     "answer": "4",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "双曲线的实轴长等于 2a，所以 2a 等于 8，解得 a 等于 4，虚轴长与它无关。"
+    },
+    {
+     "id": "msj_h1078_q3",
+     "topicId": "msj_h1078",
+     "prompt": "椭圆的焦点为 (-6,0) 和 (6,0)，且经过点 (5,2)，这个椭圆的标准方程是哪一个？",
+     "question": "椭圆的焦点为 (-6,0) 和 (6,0)，且经过点 (5,2)，这个椭圆的标准方程是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x²/36 + y²/9 = 1"
+      },
+      {
+       "label": "B",
+       "text": "x²/45 + y²/9 = 1"
+      },
+      {
+       "label": "C",
+       "text": "x²/45 + y²/36 = 1"
+      },
+      {
+       "label": "D",
+       "text": "x²/9 + y²/45 = 1"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由定义得 2a 等于点 (5,2) 到两个焦点的距离之和，即 6 倍根号 5，故 a 的平方等于 45，又 c 的平方等于 36，所以 b 的平方等于 9，方程是 x 的平方比 45 加 y 的平方比 9 等于 1。"
+    },
+    {
+     "id": "msj_h1078_q4",
+     "topicId": "msj_h1078",
+     "prompt": "抛物线 x² = -8y 的准线方程是 y 等于多少？",
+     "question": "抛物线 x² = -8y 的准线方程是 y 等于多少？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由 2p 等于 8 得 p 等于 4，焦点在 y 轴负半轴，准线方程是 y 等于二分之 p 即 y 等于 2。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1078_q5",
+     "topicId": "msj_h1078",
+     "prompt": "双曲线 x²/4 - y²/12 = 1 的渐近线方程是哪一个？",
+     "question": "双曲线 x²/4 - y²/12 = 1 的渐近线方程是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = ±√3x/2"
+      },
+      {
+       "label": "B",
+       "text": "y = ±2x"
+      },
+      {
+       "label": "C",
+       "text": "y = ±√3x"
+      },
+      {
+       "label": "D",
+       "text": "y = ±x/√3"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "a 等于 2，b 等于 2 倍根号 3，渐近线方程是 y 等于正负 a 分之 b 乘 x，即 y 等于正负根号 3 乘 x。"
+    },
+    {
+     "id": "msj_h1078_q6",
+     "topicId": "msj_h1078",
+     "prompt": "已知双曲线 x²/a² - y²/9 = 1 的一条渐近线方程是 y = 3x/2，求 a 的值。",
+     "question": "已知双曲线 x²/a² - y²/9 = 1 的一条渐近线方程是 y = 3x/2，求 a 的值。",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "这里 b 等于 3，渐近线斜率等于 a 分之 b，由 a 分之 3 等于 3 除以 2 得 a 等于 2。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_h1078_q7",
+     "topicId": "msj_h1078",
+     "prompt": "双曲线 x²/16 - y²/9 = 1 的焦点为 F1 与 F2，点 P 在双曲线上且 PF1 垂直于 PF2，则三角形 F1PF2 的面积是（　）。",
+     "question": "双曲线 x²/16 - y²/9 = 1 的焦点为 F1 与 F2，点 P 在双曲线上且 PF1 垂直于 PF2，则三角形 F1PF2 的面积是（　）。",
+     "answer": "9",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "这类问题的结论是面积等于 b 的平方，这里 b 等于 3，所以三角形的面积是 9。"
+    },
+    {
+     "id": "msj_h1078_q8",
+     "topicId": "msj_h1078",
+     "prompt": "隧道截面由长方形和抛物线构成时，如何求车辆通过隧道的限高？请写出思路。",
+     "question": "隧道截面由长方形和抛物线构成时，如何求车辆通过隧道的限高？请写出思路。",
+     "answer": "先建立适当的坐标系并写出抛物线部分的方程，再把车辆所在位置的宽度对应的横坐标代入方程求出隧道顶部的高度，用顶部高度减去要求的安全高度余量，就得到车辆通过隧道的限高。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "关键是选好坐标系让抛物线方程最简单，再用方程把几何位置转换成数值高度。"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1446 @@
+{
+ "tag": "k8a",
+ "book": "苏科版八年级上册",
+ "unit_points": [
+  {
+   "id": "msk_p016",
+   "description": "在平面内建立两条互相垂直的数轴构成平面直角坐标系，用有序实数对表示点的位置，认识象限的划分和坐标轴上点的坐标特征，并结合平移、轴对称、旋转等变换研究坐标的变化规律。",
+   "mastery_criteria": [
+    "能说出横轴、纵轴、原点、象限的含义",
+    "能由点的位置写出坐标，也能根据坐标描出点",
+    "能判断点所在象限或坐标轴，并说出图形变换后坐标的变化"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p016_q1",
+     "topicId": "msk_p016",
+     "prompt": "在平面直角坐标系中，水平的数轴和竖直的数轴的交点叫作什么？",
+     "question": "在平面直角坐标系中，水平的数轴和竖直的数轴的交点叫作什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "原点"
+      },
+      {
+       "label": "B",
+       "text": "象限"
+      },
+      {
+       "label": "C",
+       "text": "坐标"
+      },
+      {
+       "label": "D",
+       "text": "单位长度"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两条互相垂直的数轴的交点 O 叫作原点，原点的坐标是（0，0），象限是两条坐标轴把平面分成的四个区域。"
+    },
+    {
+     "id": "msk_p016_q2",
+     "topicId": "msk_p016",
+     "prompt": "在平面直角坐标系中，点（-3，4）位于第几象限？",
+     "question": "在平面直角坐标系中，点（-3，4）位于第几象限？",
+     "options": [
+      {
+       "label": "A",
+       "text": "第一象限"
+      },
+      {
+       "label": "B",
+       "text": "第二象限"
+      },
+      {
+       "label": "C",
+       "text": "第三象限"
+      },
+      {
+       "label": "D",
+       "text": "第四象限"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "点（-3，4）的横坐标小于 0，纵坐标大于 0，这样的点在第二象限，第二象限内点的横坐标为负、纵坐标为正。"
+    },
+    {
+     "id": "msk_p016_q3",
+     "topicId": "msk_p016",
+     "prompt": "若点 M（m，n）在第四象限，则下面结论一定成立的是哪一个？",
+     "question": "若点 M（m，n）在第四象限，则下面结论一定成立的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "m 大于 0，n 大于 0"
+      },
+      {
+       "label": "B",
+       "text": "m 小于 0，n 大于 0"
+      },
+      {
+       "label": "C",
+       "text": "m 大于 0，n 小于 0"
+      },
+      {
+       "label": "D",
+       "text": "m 小于 0，n 小于 0"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "第四象限在横轴正方向与纵轴负方向所夹的区域内，所以横坐标 m 大于 0，纵坐标 n 小于 0，选 m 大于 0 且 n 小于 0 这一项。"
+    },
+    {
+     "id": "msk_p016_q4",
+     "topicId": "msk_p016",
+     "prompt": "在平面直角坐标系中，点 P（-5，8）的横坐标与纵坐标的和是多少？",
+     "question": "在平面直角坐标系中，点 P（-5，8）的横坐标与纵坐标的和是多少？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "点 P 的横坐标是 -5，纵坐标是 8，两数相加得 3，所以这个和是 3。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": -5}, {\"type\": \"num\", \"value\": 8}]}"
+    },
+    {
+     "id": "msk_p016_q5",
+     "topicId": "msk_p016",
+     "prompt": "点 A（0，-6）在 y 轴上，它的纵坐标是多少？",
+     "question": "点 A（0，-6）在 y 轴上，它的纵坐标是多少？",
+     "answer": "-6",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "点 A 的坐标写作（0，-6），前一个数是横坐标 0，后一个数是纵坐标 -6，所以纵坐标是 -6。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p017",
+   "description": "从实际问题中的常量与变量出发理解函数概念，掌握一次函数与正比例函数的表达式、图象和性质，会用待定系数法求表达式，并用一次函数模型解决实际问题，体会一次函数与二元一次方程的联系。",
+   "mastery_criteria": [
+    "能说出常量、变量、函数、自变量、函数值的含义",
+    "能判断一次函数和正比例函数，并说出 k、b 的符号与图象的关系",
+    "能建立一次函数模型解决简单的实际问题"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p017_q1",
+     "topicId": "msk_p017",
+     "prompt": "形如 y=kx+b（k、b 为常数，k 不等于 0）的函数叫作什么函数？",
+     "question": "形如 y=kx+b（k、b 为常数，k 不等于 0）的函数叫作什么函数？",
+     "options": [
+      {
+       "label": "A",
+       "text": "一次函数"
+      },
+      {
+       "label": "B",
+       "text": "正比例函数"
+      },
+      {
+       "label": "C",
+       "text": "反比例函数"
+      },
+      {
+       "label": "D",
+       "text": "二次函数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材把形如 y=kx+b 且 k 不等于 0 的函数叫作一次函数，其中 x 是自变量，y 是 x 的函数。"
+    },
+    {
+     "id": "msk_p017_q2",
+     "topicId": "msk_p017",
+     "prompt": "一次函数 y=2x-3 的图象与 y 轴交点的坐标是什么？",
+     "question": "一次函数 y=2x-3 的图象与 y 轴交点的坐标是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "（0，3）"
+      },
+      {
+       "label": "B",
+       "text": "（3，0）"
+      },
+      {
+       "label": "C",
+       "text": "（0，-3）"
+      },
+      {
+       "label": "D",
+       "text": "（-3，0）"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "图象与 y 轴相交时横坐标 x 等于 0，把 x=0 代入 y=2x-3 得 y=-3，所以交点坐标是（0，-3）。"
+    },
+    {
+     "id": "msk_p017_q3",
+     "topicId": "msk_p017",
+     "prompt": "一次函数 y=-3x+1 中，函数值 y 随自变量 x 的增大而怎样变化？",
+     "question": "一次函数 y=-3x+1 中，函数值 y 随自变量 x 的增大而怎样变化？",
+     "options": [
+      {
+       "label": "A",
+       "text": "增大"
+      },
+      {
+       "label": "B",
+       "text": "减小"
+      },
+      {
+       "label": "C",
+       "text": "保持不变"
+      },
+      {
+       "label": "D",
+       "text": "先增大后减小"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "这个一次函数的 k 等于 -3，小于 0，所以 y 随 x 的增大而减小，图象从左到右是下降的。"
+    },
+    {
+     "id": "msk_p017_q4",
+     "topicId": "msk_p017",
+     "prompt": "正比例函数 y=4x 中，当 x=3 时函数值 y 是多少？",
+     "question": "正比例函数 y=4x 中，当 x=3 时函数值 y 是多少？",
+     "answer": 12,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把 x=3 代入 y=4x，得 y 等于 4 乘 3，结果是 12，所以函数值是 12。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msk_p017_q5",
+     "topicId": "msk_p017",
+     "prompt": "一次函数 y=5x-2 的图象可以由正比例函数 y=5x 的图象沿 y 轴向下平移几个单位长度得到？",
+     "question": "一次函数 y=5x-2 的图象可以由正比例函数 y=5x 的图象沿 y 轴向下平移几个单位长度得到？",
+     "answer": "2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "一次函数 y=kx+b 的图象由 y=kx 的图象沿 y 轴平移 b 的绝对值个单位长度得到，这里 b 等于 -2，所以向下平移 2 个单位长度。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "msk_p1061",
+   "page": 112,
+   "description": "在平面内建立直角坐标系，会由点的位置写出它的坐标，也会依据坐标描出点，知道象限的划分以及坐标轴上点的坐标特征。",
+   "mastery_criteria": [
+    "能说出横轴、纵轴、原点与四个象限的含义",
+    "能由点的位置写出坐标，也能根据坐标描出点",
+    "能判断点所在象限或坐标轴，并说出坐标的特点"
+   ],
+   "misconceptions": [
+    "把横坐标与纵坐标的顺序写反，把（3，4）写成（4，3）",
+    "认为坐标轴上的点也属于某个象限",
+    "以为四个象限是按顺时针方向编号的"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1061_q1",
+     "topicId": "msk_p1061",
+     "prompt": "在平面直角坐标系中，两条坐标轴把平面分成的四个区域叫作什么？",
+     "question": "在平面直角坐标系中，两条坐标轴把平面分成的四个区域叫作什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "象限"
+      },
+      {
+       "label": "B",
+       "text": "原点"
+      },
+      {
+       "label": "C",
+       "text": "坐标轴"
+      },
+      {
+       "label": "D",
+       "text": "单位长度"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两条坐标轴把平面分成四个区域，教材把这四个区域称为象限，按逆时针顺序记为第一、二、三、四象限，坐标轴不属于任何象限。"
+    },
+    {
+     "id": "msk_p1061_q2",
+     "topicId": "msk_p1061",
+     "prompt": "在平面直角坐标系中，点 A（-4，3）的横坐标是多少？",
+     "question": "在平面直角坐标系中，点 A（-4，3）的横坐标是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "-4"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "-3"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "点的坐标写作（a，b）时，前一个数 a 是横坐标，后一个数 b 是纵坐标，所以点 A 的横坐标是 -4，纵坐标是 3。"
+    },
+    {
+     "id": "msk_p1061_q3",
+     "topicId": "msk_p1061",
+     "prompt": "点（2，-5）在平面直角坐标系中位于第几象限？",
+     "question": "点（2，-5）在平面直角坐标系中位于第几象限？",
+     "options": [
+      {
+       "label": "A",
+       "text": "第一象限"
+      },
+      {
+       "label": "B",
+       "text": "第二象限"
+      },
+      {
+       "label": "C",
+       "text": "第三象限"
+      },
+      {
+       "label": "D",
+       "text": "第四象限"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "这个点的横坐标 2 大于 0，纵坐标 -5 小于 0，横坐标为正、纵坐标为负的点在第四象限。"
+    },
+    {
+     "id": "msk_p1061_q4",
+     "topicId": "msk_p1061",
+     "prompt": "若点 P（a，b）在 x 轴上，则下列结论正确的是哪一个？",
+     "question": "若点 P（a，b）在 x 轴上，则下列结论正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "a=0 且 b=0"
+      },
+      {
+       "label": "B",
+       "text": "a=0"
+      },
+      {
+       "label": "C",
+       "text": "b=0"
+      },
+      {
+       "label": "D",
+       "text": "a 与 b 都大于 0"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "x 轴上的点纵坐标都等于 0，横坐标可以取任意实数，所以一定有 b=0；只有原点才同时满足 a=0 和 b=0。"
+    },
+    {
+     "id": "msk_p1061_q5",
+     "topicId": "msk_p1061",
+     "prompt": "在平面直角坐标系中，点 M（6，-2）的横坐标与纵坐标的和是多少？",
+     "question": "在平面直角坐标系中，点 M（6，-2）的横坐标与纵坐标的和是多少？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "点 M 的横坐标是 6，纵坐标是 -2，6 加上 -2 得 4，所以它们的和是 4。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": -2}]}"
+    },
+    {
+     "id": "msk_p1061_q6",
+     "topicId": "msk_p1061",
+     "prompt": "在平面直角坐标系中，点 N（-3，-7）的纵坐标减去横坐标的差是多少？",
+     "question": "在平面直角坐标系中，点 N（-3，-7）的纵坐标减去横坐标的差是多少？",
+     "answer": -4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "点 N 的纵坐标是 -7，横坐标是 -3，用纵坐标减去横坐标得 -7 减 -3，结果是 -4。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": -7}, {\"type\": \"num\", \"value\": -3}]}"
+    },
+    {
+     "id": "msk_p1061_q7",
+     "topicId": "msk_p1061",
+     "prompt": "点（0，5）在 y 轴上，它的横坐标是多少？",
+     "question": "点（0，5）在 y 轴上，它的横坐标是多少？",
+     "answer": "0",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "y 轴上的点横坐标都为 0，所以点（0，5）的横坐标是 0，纵坐标是 5。"
+    },
+    {
+     "id": "msk_p1061_q8",
+     "topicId": "msk_p1061",
+     "prompt": "已知点 P（3a-6，a+2）在平面直角坐标系的 y 轴上，求 a 的值。",
+     "question": "已知点 P（3a-6，a+2）在平面直角坐标系的 y 轴上，求 a 的值。",
+     "answer": "a 等于 2",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "y 轴上的点横坐标等于 0，所以 3a-6=0，解得 a=2，此时纵坐标 a+2 等于 4，点 P 的坐标是（0，4）。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1062",
+   "page": 120,
+   "description": "研究点或图形平移、轴对称、旋转时坐标的变化规律，能由变换前后坐标的关系判断图形做了怎样的变换，并用坐标刻画图形位置的变化。",
+   "mastery_criteria": [
+    "能说出点左右、上下平移时横纵坐标的变化规律",
+    "知道关于 x 轴、y 轴对称时坐标的符号变化",
+    "能根据坐标的变化判断图形做了怎样的变换"
+   ],
+   "misconceptions": [
+    "平移时把横坐标与纵坐标的变化弄反",
+    "以为关于 x 轴对称是横坐标变成相反数",
+    "把先向右移再向下移的两次变化只算成一次"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1062_q1",
+     "topicId": "msk_p1062",
+     "prompt": "把点（1，2）向上平移 4 个单位长度，得到的点的纵坐标是多少？",
+     "question": "把点（1，2）向上平移 4 个单位长度，得到的点的纵坐标是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "-2"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "点向上平移时横坐标不变、纵坐标增加，2 加 4 得 6，所以得到的点的纵坐标是 6，坐标是（1，6）。"
+    },
+    {
+     "id": "msk_p1062_q2",
+     "topicId": "msk_p1062",
+     "prompt": "点（-3，4）关于 x 轴对称的点的坐标是什么？",
+     "question": "点（-3，4）关于 x 轴对称的点的坐标是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "（-3，-4）"
+      },
+      {
+       "label": "B",
+       "text": "（3，4）"
+      },
+      {
+       "label": "C",
+       "text": "（3，-4）"
+      },
+      {
+       "label": "D",
+       "text": "（-3，4）"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "关于 x 轴对称的两点横坐标相同、纵坐标互为相反数，所以点（-3，4）的对称点是（-3，-4）。"
+    },
+    {
+     "id": "msk_p1062_q3",
+     "topicId": "msk_p1062",
+     "prompt": "点（5，-2）关于坐标原点对称的点的坐标是什么？",
+     "question": "点（5，-2）关于坐标原点对称的点的坐标是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "（5，2）"
+      },
+      {
+       "label": "B",
+       "text": "（-5，-2）"
+      },
+      {
+       "label": "C",
+       "text": "（-5，2）"
+      },
+      {
+       "label": "D",
+       "text": "（2，-5）"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "关于原点对称的两点横坐标互为相反数、纵坐标也互为相反数，所以对称点的坐标是（-5，2）。"
+    },
+    {
+     "id": "msk_p1062_q4",
+     "topicId": "msk_p1062",
+     "prompt": "把一个三角形各顶点的横坐标都加上 3，纵坐标保持不变，这个三角形做了怎样的变换？",
+     "question": "把一个三角形各顶点的横坐标都加上 3，纵坐标保持不变，这个三角形做了怎样的变换？",
+     "options": [
+      {
+       "label": "A",
+       "text": "向上平移 3 个单位长度"
+      },
+      {
+       "label": "B",
+       "text": "向下平移 3 个单位长度"
+      },
+      {
+       "label": "C",
+       "text": "向左平移 3 个单位长度"
+      },
+      {
+       "label": "D",
+       "text": "向右平移 3 个单位长度"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "横坐标都增加 3 而纵坐标不变，说明每个点都沿横轴正方向移动了 3 个单位长度，整个三角形向右平移了 3 个单位长度。"
+    },
+    {
+     "id": "msk_p1062_q5",
+     "topicId": "msk_p1062",
+     "prompt": "把点（-2，7）向下平移 5 个单位长度，得到的点的纵坐标是多少？",
+     "question": "把点（-2，7）向下平移 5 个单位长度，得到的点的纵坐标是多少？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "点向下平移时横坐标不变、纵坐标减少，7 减 5 得 2，所以得到的点的纵坐标是 2。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 7}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "msk_p1062_q6",
+     "topicId": "msk_p1062",
+     "prompt": "点 A（4，-1）关于 y 轴对称的点是 B，点 B 的横坐标是多少？",
+     "question": "点 A（4，-1）关于 y 轴对称的点是 B，点 B 的横坐标是多少？",
+     "answer": -4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "关于 y 轴对称的两点纵坐标相同、横坐标互为相反数，所以点 B 的横坐标是 4 的相反数，也就是 -4。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 0}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msk_p1062_q7",
+     "topicId": "msk_p1062",
+     "prompt": "点（-6，3）关于 x 轴对称的点的纵坐标是多少？",
+     "question": "点（-6，3）关于 x 轴对称的点的纵坐标是多少？",
+     "answer": "-3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "关于 x 轴对称时纵坐标变成原来的相反数，3 的相反数是 -3，所以对称点的纵坐标是 -3，横坐标仍是 -6。"
+    },
+    {
+     "id": "msk_p1062_q8",
+     "topicId": "msk_p1062",
+     "prompt": "线段 AB 的端点坐标分别为 A（-4，5）、B（-1，1），把线段 AB 向右平移 5 个单位长度得到线段 A1B1，写出点 A1、B1 的坐标。",
+     "question": "线段 AB 的端点坐标分别为 A（-4，5）、B（-1，1），把线段 AB 向右平移 5 个单位长度得到线段 A1B1，写出点 A1、B1 的坐标。",
+     "answer": "A1 的坐标是（1，5），B1 的坐标是（4，1）",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "向右平移 5 个单位长度时纵坐标不变、横坐标都加 5，所以 A1 的横坐标是 -4 加 5 得 1，B1 的横坐标是 -1 加 5 得 4，纵坐标都不变。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1063",
+   "page": 138,
+   "description": "在具体的变化过程中分清常量与变量，理解函数、自变量与函数值的含义，会判断两个变量之间是否具有函数关系并写出简单的函数表达式。",
+   "mastery_criteria": [
+    "能在变化过程中指出哪些量是常量、哪些量是变量",
+    "能说出函数、自变量与函数值的含义",
+    "能判断两个变量之间是不是函数关系"
+   ],
+   "misconceptions": [
+    "把数值发生变化的量当成常量",
+    "认为一个自变量的值可以对应两个函数值也算函数",
+    "把函数值当成自变量的值"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1063_q1",
+     "topicId": "msk_p1063",
+     "prompt": "在一个变化过程中，数值保持不变的量叫作什么？",
+     "question": "在一个变化过程中，数值保持不变的量叫作什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "常量"
+      },
+      {
+       "label": "B",
+       "text": "变量"
+      },
+      {
+       "label": "C",
+       "text": "函数"
+      },
+      {
+       "label": "D",
+       "text": "函数值"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材把数值保持不变的量叫作常量，数值发生变化的量叫作变量，常量与变量是在同一个变化过程中相对而言的。"
+    },
+    {
+     "id": "msk_p1063_q2",
+     "topicId": "msk_p1063",
+     "prompt": "在一个变化过程中有两个变量 x 和 y，如果对于 x 的每一个确定的值，y 都有唯一的值与它对应，那么称 y 是 x 的什么？",
+     "question": "在一个变化过程中有两个变量 x 和 y，如果对于 x 的每一个确定的值，y 都有唯一的值与它对应，那么称 y 是 x 的什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "自变量"
+      },
+      {
+       "label": "B",
+       "text": "常量"
+      },
+      {
+       "label": "C",
+       "text": "函数"
+      },
+      {
+       "label": "D",
+       "text": "系数"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "这样的对应关系下称 y 是 x 的函数，其中 x 是自变量；关键词是每一个确定的值都对应唯一的函数值。"
+    },
+    {
+     "id": "msk_p1063_q3",
+     "topicId": "msk_p1063",
+     "prompt": "对于自变量 x 的每一个取值，函数 y 的对应值叫作什么？",
+     "question": "对于自变量 x 的每一个取值，函数 y 的对应值叫作什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "常量"
+      },
+      {
+       "label": "B",
+       "text": "函数值"
+      },
+      {
+       "label": "C",
+       "text": "自变量"
+      },
+      {
+       "label": "D",
+       "text": "函数表达式"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材把自变量每一个取值对应的函数 y 的值称为函数值，函数值与自变量的值是一一对应的。"
+    },
+    {
+     "id": "msk_p1063_q4",
+     "topicId": "msk_p1063",
+     "prompt": "下面哪种情况中，y 不是 x 的函数？",
+     "question": "下面哪种情况中，y 不是 x 的函数？",
+     "options": [
+      {
+       "label": "A",
+       "text": "正方形的周长 y 与边长 x"
+      },
+      {
+       "label": "B",
+       "text": "圆的面积 y 与半径 x"
+      },
+      {
+       "label": "C",
+       "text": "一个人的体重 y 与他的年龄 x"
+      },
+      {
+       "label": "D",
+       "text": "正数 x 与它的平方根 y，y 有两个取值"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "函数要求 x 的每一个确定的值只对应一个 y 值，正数的平方根有两个，对应不到唯一的值，所以这种关系不是函数关系。"
+    },
+    {
+     "id": "msk_p1063_q5",
+     "topicId": "msk_p1063",
+     "prompt": "轮船以每小时 30 海里的速度匀速航行，航行 4 小时的路程是多少海里？",
+     "question": "轮船以每小时 30 海里的速度匀速航行，航行 4 小时的路程是多少海里？",
+     "answer": 120,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "路程等于速度乘时间，30 乘 4 得 120，所以航行 4 小时的路程是 120 海里。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 30}, {\"type\": \"num\", \"value\": 4}]}"
+    },
+    {
+     "id": "msk_p1063_q6",
+     "topicId": "msk_p1063",
+     "prompt": "某轮船从甲港驶向相距 500 海里的乙港，速度是每小时 30 海里，航行 6 小时后与乙港的距离是多少海里？",
+     "question": "某轮船从甲港驶向相距 500 海里的乙港，速度是每小时 30 海里，航行 6 小时后与乙港的距离是多少海里？",
+     "answer": 320,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "6 小时航行的路程是 30 乘 6 得 180 海里，与乙港的距离是 500 减 180，结果是 320 海里。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 500}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 30}, {\"type\": \"num\", \"value\": 6}]}]}"
+    },
+    {
+     "id": "msk_p1063_q7",
+     "topicId": "msk_p1063",
+     "prompt": "橘子每千克 6 元，购买 x 千克需要的金额 y 元的函数表达式是什么？",
+     "question": "橘子每千克 6 元，购买 x 千克需要的金额 y 元的函数表达式是什么？",
+     "answer": "y=6x",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "总金额等于单价乘数量，单价 6 元保持不变是常量，数量 x 是自变量，所以函数表达式写作 y 等于 6x。"
+    },
+    {
+     "id": "msk_p1063_q8",
+     "topicId": "msk_p1063",
+     "prompt": "某列车在 13:25 到 13:30 这个时段从甲地匀速驶往乙地，请指出其中哪些量是常量，哪些量是变量。",
+     "question": "某列车在 13:25 到 13:30 这个时段从甲地匀速驶往乙地，请指出其中哪些量是常量，哪些量是变量。",
+     "answer": "列车的速度和甲、乙两地的距离是常量，列车与甲地的距离和行驶时间是变量",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "在这段时间内列车做匀速运动，速度保持不变，甲乙两地的距离也保持不变，而行驶时间不断增大，列车与甲地的距离随时间变化，所以前两个量是常量，后两个量是变量。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1064",
+   "page": 145,
+   "description": "理解一次函数与正比例函数的定义，能从实际问题中写出函数表达式并判断它是不是一次函数，会用待定系数法求一次函数的表达式。",
+   "mastery_criteria": [
+    "能说出一次函数 y=kx+b 中 k、b 满足的条件",
+    "能判断一个函数是不是一次函数或正比例函数",
+    "能用待定系数法求一次函数的表达式"
+   ],
+   "misconceptions": [
+    "忽略 k 不等于 0 这个条件",
+    "把 y=kx 当成一般的一次函数而丢掉正比例函数的名称",
+    "把含 x 的平方的表达式也当成一次函数"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1064_q1",
+     "topicId": "msk_p1064",
+     "prompt": "形如 y=kx+b（k、b 为常数，k 不等于 0）的函数叫作什么函数？",
+     "question": "形如 y=kx+b（k、b 为常数，k 不等于 0）的函数叫作什么函数？",
+     "options": [
+      {
+       "label": "A",
+       "text": "一次函数"
+      },
+      {
+       "label": "B",
+       "text": "反比例函数"
+      },
+      {
+       "label": "C",
+       "text": "二次函数"
+      },
+      {
+       "label": "D",
+       "text": "正比例函数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "k、b 为常数且 k 不等于 0 时，y=kx+b 叫作一次函数；当 b 等于 0 时，它才是正比例函数，正比例函数是一次函数的特例。"
+    },
+    {
+     "id": "msk_p1064_q2",
+     "topicId": "msk_p1064",
+     "prompt": "当 b 等于 0 时，函数 y=kx（k 为常数，k 不等于 0）叫作 x 的什么函数？",
+     "question": "当 b 等于 0 时，函数 y=kx（k 为常数，k 不等于 0）叫作 x 的什么函数？",
+     "options": [
+      {
+       "label": "A",
+       "text": "一次函数"
+      },
+      {
+       "label": "B",
+       "text": "二次函数"
+      },
+      {
+       "label": "C",
+       "text": "正比例函数"
+      },
+      {
+       "label": "D",
+       "text": "反比例函数"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "b 等于 0 时 y=kx 叫作 x 的正比例函数，它的图象是一条经过原点的直线，k 决定图象的倾斜方向和增减性。"
+    },
+    {
+     "id": "msk_p1064_q3",
+     "topicId": "msk_p1064",
+     "prompt": "下列函数中，y 是 x 的一次函数的是哪一个？",
+     "question": "下列函数中，y 是 x 的一次函数的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y 等于 x 的平方"
+      },
+      {
+       "label": "B",
+       "text": "y 等于 2x 加 1"
+      },
+      {
+       "label": "C",
+       "text": "y 等于 x 分之 1"
+      },
+      {
+       "label": "D",
+       "text": "y 等于 x 的立方"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "一次函数的自变量 x 的次数是 1 且系数不为 0，y 等于 2x 加 1 符合这个形式，另外三个含平方、含 x 在分母、含立方，都不是一次函数。"
+    },
+    {
+     "id": "msk_p1064_q4",
+     "topicId": "msk_p1064",
+     "prompt": "已知一次函数 y=kx-3，当 x=1 时 y=7，则 k 的值是多少？",
+     "question": "已知一次函数 y=kx-3，当 x=1 时 y=7，则 k 的值是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "-4"
+      },
+      {
+       "label": "D",
+       "text": "10"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "把 x=1、y=7 代入 y=kx-3，得 7 等于 k 减 3，所以 k 等于 10，这个一次函数的表达式是 y=10x-3。"
+    },
+    {
+     "id": "msk_p1064_q5",
+     "topicId": "msk_p1064",
+     "prompt": "正方形花圃的边长是 x 米，周长 C 米与边长的函数表达式是 C=4x，当 x=3 时周长是多少米？",
+     "question": "正方形花圃的边长是 x 米，周长 C 米与边长的函数表达式是 C=4x，当 x=3 时周长是多少米？",
+     "answer": 12,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "正方形四条边一样长，周长是边长的 4 倍，把边长 3 米代入 C=4x，得 C 等于 4 乘 3 等于 12，所以周长是 12 米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msk_p1064_q6",
+     "topicId": "msk_p1064",
+     "prompt": "每加 1 升油需 7.49 元，加油 x 升的金额 y 元与 x 的函数表达式是 y=7.49x，当 x=10 时金额是多少元？",
+     "question": "每加 1 升油需 7.49 元，加油 x 升的金额 y 元与 x 的函数表达式是 y=7.49x，当 x=10 时金额是多少元？",
+     "answer": 74.9,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把加油量 10 升代入 y=7.49x，得 y 等于 7.49 乘 10，结果是 74.9，所以金额是 74.9 元。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 7.49}, {\"type\": \"num\", \"value\": 10}]}"
+    },
+    {
+     "id": "msk_p1064_q7",
+     "topicId": "msk_p1064",
+     "prompt": "某油箱原有油 6 升，加油枪每分钟加油 40 升，加油 t 分钟后油量 Q 升关于 t 的函数表达式是 Q=40t+6，其中 b 的值是多少？",
+     "question": "某油箱原有油 6 升，加油枪每分钟加油 40 升，加油 t 分钟后油量 Q 升关于 t 的函数表达式是 Q=40t+6，其中 b 的值是多少？",
+     "answer": "6",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "把 Q=40t+6 与一次函数的一般形式 y=kx+b 对照，t 的系数 40 是 k，常数项 6 就是 b，它表示加油前油箱里原有的油量。"
+    },
+    {
+     "id": "msk_p1064_q8",
+     "topicId": "msk_p1064",
+     "prompt": "在弹性限度内，弹簧长度 y 厘米是所挂物体质量 x 克的一次函数，挂 10 克物体时长度为 11 厘米，挂 30 克物体时长度为 15 厘米，求 y 关于 x 的函数表达式。",
+     "question": "在弹性限度内，弹簧长度 y 厘米是所挂物体质量 x 克的一次函数，挂 10 克物体时长度为 11 厘米，挂 30 克物体时长度为 15 厘米，求 y 关于 x 的函数表达式。",
+     "answer": "y=0.2x+9",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "设 y=kx+b，把两组对应值代入得 11 等于 10k 加 b，15 等于 30k 加 b，两式相减得 20k 等于 4，所以 k 等于 0.2，再代入得 b 等于 9，所求表达式是 y=0.2x+9。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1065",
+   "page": 150,
+   "description": "会用列表、描点、连线三个步骤画出正比例函数与一次函数的图象，掌握 k、b 的符号对图象经过的象限和函数增减性的影响。",
+   "mastery_criteria": [
+    "能按列表、描点、连线的步骤画出函数图象",
+    "能由 k 的符号判断函数值随自变量增大而增大还是减小",
+    "能由 k、b 的符号判断图象经过的象限"
+   ],
+   "misconceptions": [
+    "认为一次函数的图象是曲线或折线",
+    "认为 k 小于 0 时 y 随 x 的增大而增大",
+    "把 b 当成图象与 x 轴交点的纵坐标"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1065_q1",
+     "topicId": "msk_p1065",
+     "prompt": "正比例函数 y=kx（k 不等于 0）的图象是一条经过原点的什么图形？",
+     "question": "正比例函数 y=kx（k 不等于 0）的图象是一条经过原点的什么图形？",
+     "options": [
+      {
+       "label": "A",
+       "text": "曲线"
+      },
+      {
+       "label": "B",
+       "text": "抛物线"
+      },
+      {
+       "label": "C",
+       "text": "折线"
+      },
+      {
+       "label": "D",
+       "text": "直线"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "正比例函数 y=kx 的图象是一条经过原点的直线，所以画图时只要再描出一个点就能确定这条直线。"
+    },
+    {
+     "id": "msk_p1065_q2",
+     "topicId": "msk_p1065",
+     "prompt": "一次函数 y=-2x+3 的图象与 y 轴交点的坐标是什么？",
+     "question": "一次函数 y=-2x+3 的图象与 y 轴交点的坐标是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "（0，-3）"
+      },
+      {
+       "label": "B",
+       "text": "（3，0）"
+      },
+      {
+       "label": "C",
+       "text": "（0，3）"
+      },
+      {
+       "label": "D",
+       "text": "（-3，0）"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "与 y 轴相交时 x 等于 0，把 x=0 代入得 y=3，所以交点坐标是（0，3），这个 3 就是表达式中的常数项 b。"
+    },
+    {
+     "id": "msk_p1065_q3",
+     "topicId": "msk_p1065",
+     "prompt": "一次函数 y=kx+b 中，当 k 小于 0 时，函数值 y 随自变量 x 的增大而怎样变化？",
+     "question": "一次函数 y=kx+b 中，当 k 小于 0 时，函数值 y 随自变量 x 的增大而怎样变化？",
+     "options": [
+      {
+       "label": "A",
+       "text": "增大"
+      },
+      {
+       "label": "B",
+       "text": "减小"
+      },
+      {
+       "label": "C",
+       "text": "保持不变"
+      },
+      {
+       "label": "D",
+       "text": "先增大后减小"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "k 的符号决定函数的变化趋势，k 小于 0 时图象从左到右下降，y 随 x 的增大而减小。"
+    },
+    {
+     "id": "msk_p1065_q4",
+     "topicId": "msk_p1065",
+     "prompt": "一次函数 y=2x-3 的图象经过哪些象限？",
+     "question": "一次函数 y=2x-3 的图象经过哪些象限？",
+     "options": [
+      {
+       "label": "A",
+       "text": "第一、三、四象限"
+      },
+      {
+       "label": "B",
+       "text": "第一、二、三象限"
+      },
+      {
+       "label": "C",
+       "text": "第一、二、四象限"
+      },
+      {
+       "label": "D",
+       "text": "第二、三、四象限"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "这里 k 等于 2 大于 0，b 等于 -3 小于 0，图象与 y 轴交于负半轴，画出的直线经过第一、三、四象限。"
+    },
+    {
+     "id": "msk_p1065_q5",
+     "topicId": "msk_p1065",
+     "prompt": "正比例函数 y=3x 的图象经过点（2，m），求 m 的值。",
+     "question": "正比例函数 y=3x 的图象经过点（2，m），求 m 的值。",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "点在图象上，它的坐标就满足函数表达式，把 x=2 代入 y=3x 得 y 等于 6，所以 m 等于 6。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1065_q6",
+     "topicId": "msk_p1065",
+     "prompt": "一次函数 y=-1.5x+6 的图象与 x 轴交点的横坐标是多少？",
+     "question": "一次函数 y=-1.5x+6 的图象与 x 轴交点的横坐标是多少？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "图象与 x 轴相交时 y 等于 0，解方程 -1.5x+6=0，得 1.5x 等于 6，所以 x 等于 4，交点的坐标是（4，0）。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 1.5}]}"
+    },
+    {
+     "id": "msk_p1065_q7",
+     "topicId": "msk_p1065",
+     "prompt": "一次函数 y=3x+2 的图象可以由正比例函数 y=3x 的图象沿 y 轴向上平移几个单位长度得到？",
+     "question": "一次函数 y=3x+2 的图象可以由正比例函数 y=3x 的图象沿 y 轴向上平移几个单位长度得到？",
+     "answer": "2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "一次函数 y=kx+b 的图象由 y=kx 的图象沿 y 轴平移 b 的绝对值个单位长度得到，这里 b 等于 2，所以向上平移 2 个单位长度。"
+    },
+    {
+     "id": "msk_p1065_q8",
+     "topicId": "msk_p1065",
+     "prompt": "点 P（a，b）、Q（c，d）在一次函数 y=-4x+3 的图象上，且 a 小于 c，比较 b 与 d 的大小，并说明理由。",
+     "question": "点 P（a，b）、Q（c，d）在一次函数 y=-4x+3 的图象上，且 a 小于 c，比较 b 与 d 的大小，并说明理由。",
+     "answer": "b 大于 d",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "这个一次函数的 k 等于 -4，小于 0，所以函数值 y 随自变量 x 的增大而减小；因为 a 小于 c，所以对应的函数值 b 大于 d。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1066",
+   "page": 161,
+   "description": "能从实际问题中找出变量之间的对应关系，建立一次函数模型，利用表达式或图象求函数值、比较不同方案的花费并作出判断。",
+   "mastery_criteria": [
+    "能由实际问题写出一次函数表达式并注明自变量的取值范围",
+    "能利用图象的交点比较两种方案的花费多少",
+    "能用一次函数模型求出实际问题中的临界值"
+   ],
+   "misconceptions": [
+    "写出表达式后忘记注明自变量的取值范围",
+    "把每天的固定成本当成每件的成本重复计算",
+    "看图时把交点的横坐标当成两种方案的费用差"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1066_q1",
+     "topicId": "msk_p1066",
+     "prompt": "用一次函数解决实际问题时，建立函数模型的第一步通常是什么？",
+     "question": "用一次函数解决实际问题时，建立函数模型的第一步通常是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "直接画出图象"
+      },
+      {
+       "label": "B",
+       "text": "求出两个图象的交点"
+      },
+      {
+       "label": "C",
+       "text": "把数据列成表格"
+      },
+      {
+       "label": "D",
+       "text": "找出变量并写出函数表达式"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "解决实际问题时要先分清常量和变量，弄清哪个量随哪个量变化，写出函数表达式，再代入求值或结合图象分析。"
+    },
+    {
+     "id": "msk_p1066_q2",
+     "topicId": "msk_p1066",
+     "prompt": "某工厂每天固定成本 12000 元，每件产品的成本 900 元，每件售价 1200 元，每天利润 y 元与生产件数 x 件的函数表达式是什么？",
+     "question": "某工厂每天固定成本 12000 元，每件产品的成本 900 元，每件售价 1200 元，每天利润 y 元与生产件数 x 件的函数表达式是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y=1200x"
+      },
+      {
+       "label": "B",
+       "text": "y=300x+12000"
+      },
+      {
+       "label": "C",
+       "text": "y=300x-12000"
+      },
+      {
+       "label": "D",
+       "text": "y=900x-12000"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "销售额是 1200x 元，总成本是 900x 加 12000 元，利润等于销售额减总成本，整理得 y=300x-12000。"
+    },
+    {
+     "id": "msk_p1066_q3",
+     "topicId": "msk_p1066",
+     "prompt": "汽车运输和火车运输的费用都是里程 x 千米的一次函数，两个图象在 x 等于 80 处相交，这个交点说明什么？",
+     "question": "汽车运输和火车运输的费用都是里程 x 千米的一次函数，两个图象在 x 等于 80 处相交，这个交点说明什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "里程为 80 千米时两种运输方式的费用相等"
+      },
+      {
+       "label": "B",
+       "text": "里程为 80 千米时汽车运输不收费"
+      },
+      {
+       "label": "C",
+       "text": "两种运输方式的费用都是 80 元"
+      },
+      {
+       "label": "D",
+       "text": "里程超过 80 千米时汽车运输更省"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个函数图象的交点表示同一个里程对应的费用相同，所以里程为 80 千米时两种方式的费用相等，都是 570 元。"
+    },
+    {
+     "id": "msk_p1066_q4",
+     "topicId": "msk_p1066",
+     "prompt": "某工厂每天固定成本 12000 元，每件产品成本 900 元，售价 1200 元，要使得某天的利润超过 9000 元，这天至少需要生产多少件产品？",
+     "question": "某工厂每天固定成本 12000 元，每件产品成本 900 元，售价 1200 元，要使得某天的利润超过 9000 元，这天至少需要生产多少件产品？",
+     "options": [
+      {
+       "label": "A",
+       "text": "70 件"
+      },
+      {
+       "label": "B",
+       "text": "71 件"
+      },
+      {
+       "label": "C",
+       "text": "72 件"
+      },
+      {
+       "label": "D",
+       "text": "73 件"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "利润表达式是 y=300x-12000，要求 300x-12000 大于 9000，得 300x 大于 21000，所以 x 大于 70，件数取整数，至少生产 71 件。"
+    },
+    {
+     "id": "msk_p1066_q5",
+     "topicId": "msk_p1066",
+     "prompt": "某工厂每天固定成本 12000 元，每件产品成本 900 元，售价 1200 元，某天生产 50 件产品，这天的利润是多少元？",
+     "question": "某工厂每天固定成本 12000 元，每件产品成本 900 元，售价 1200 元，某天生产 50 件产品，这天的利润是多少元？",
+     "answer": 3000,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "每件利润是 1200 减 900 等于 300 元，50 件的利润是 300 乘 50 得 15000 元，再减去固定成本 12000 元，利润是 3000 元。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 300}, {\"type\": \"num\", \"value\": 50}]}, {\"type\": \"num\", \"value\": 12000}]}"
+    },
+    {
+     "id": "msk_p1066_q6",
+     "topicId": "msk_p1066",
+     "prompt": "给一个蓄水池匀速注水，注水 1 小时池中水量为 400 立方米，注水 2.5 小时池中水量为 850 立方米，注水前池中有水多少立方米？",
+     "question": "给一个蓄水池匀速注水，注水 1 小时池中水量为 400 立方米，注水 2.5 小时池中水量为 850 立方米，注水前池中有水多少立方米？",
+     "answer": 100,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "每小时注水量是 850 减 400 的差除以 2.5 减 1 的差，得 300 立方米，所以水量 Q 与时间 t 的关系是 Q=300t+100；注水 1 小时注入 300 立方米，注水前池中有 400 减 300 等于 100 立方米。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 400}, {\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 850}, {\"type\": \"num\", \"value\": 400}]}, {\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 2.5}, {\"type\": \"num\", \"value\": 1}]}]}]}"
+    },
+    {
+     "id": "msk_p1066_q7",
+     "topicId": "msk_p1066",
+     "prompt": "一摞纸杯每增加 1 个总高度增加 0.5 厘米，纸杯个数为 x 个时总高度 y 厘米的表达式是 y=9+0.5x，自变量 x 应取什么范围的数？",
+     "question": "一摞纸杯每增加 1 个总高度增加 0.5 厘米，纸杯个数为 x 个时总高度 y 厘米的表达式是 y=9+0.5x，自变量 x 应取什么范围的数？",
+     "answer": "正整数",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "纸杯的个数只能是 1、2、3 这样的整数，不能取小数或负数，所以自变量 x 取正整数。"
+    },
+    {
+     "id": "msk_p1066_q8",
+     "topicId": "msk_p1066",
+     "prompt": "某农业基地有汽车和火车两种运输方式，费用都是里程 x 千米的一次函数，两个图象在 x 等于 80 处相交，说明里程大于 80 千米时哪种方式花费较少，并说明理由。",
+     "question": "某农业基地有汽车和火车两种运输方式，费用都是里程 x 千米的一次函数，两个图象在 x 等于 80 处相交，说明里程大于 80 千米时哪种方式花费较少，并说明理由。",
+     "answer": "火车运输花费较少",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "里程大于 80 千米时，表示汽车运输的函数图象位于表示火车运输的函数图象的上方，说明同样的里程汽车运输的费用更高，所以火车运输花费较少。"
+    }
+   ]
+  },
+  {
+   "id": "msk_p1067",
+   "page": 169,
+   "description": "理解一次函数图象上点的坐标与二元一次方程的解之间的对应关系，会利用两个一次函数图象的交点坐标求相应二元一次方程组的解。",
+   "mastery_criteria": [
+    "能把二元一次方程化成一次函数的形式",
+    "知道方程的解与图象上点的坐标一一对应",
+    "能用两个图象交点的坐标写出方程组的解"
+   ],
+   "misconceptions": [
+    "把方程变形为函数形式时符号写错",
+    "认为两个图象平行时方程组有唯一一组解",
+    "把交点的横坐标当成方程组的解"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msk_p1067_q1",
+     "topicId": "msk_p1067",
+     "prompt": "二元一次方程 2x-y-3=0 可以写成哪个一次函数的形式？",
+     "question": "二元一次方程 2x-y-3=0 可以写成哪个一次函数的形式？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y=2x+3"
+      },
+      {
+       "label": "B",
+       "text": "y=2x-3"
+      },
+      {
+       "label": "C",
+       "text": "y=-2x-3"
+      },
+      {
+       "label": "D",
+       "text": "y=-2x+3"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把方程中的 y 移到等号右边，得 2x-3 等于 y，也就是 y=2x-3，所以它对应的一次函数是 y=2x-3。"
+    },
+    {
+     "id": "msk_p1067_q2",
+     "topicId": "msk_p1067",
+     "prompt": "一次函数 y=2x-3 的图象上点的坐标与二元一次方程 2x-y-3=0 的解之间是什么关系？",
+     "question": "一次函数 y=2x-3 的图象上点的坐标与二元一次方程 2x-y-3=0 的解之间是什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "两者没有关系"
+      },
+      {
+       "label": "B",
+       "text": "只有原点的坐标是方程的解"
+      },
+      {
+       "label": "C",
+       "text": "图象上点的坐标都是方程的解"
+      },
+      {
+       "label": "D",
+       "text": "方程的解都不在图象上"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材指出一次函数图象上点的坐标都是相应二元一次方程的解，反过来以方程的解为坐标的点也都在这个函数的图象上。"
+    },
+    {
+     "id": "msk_p1067_q3",
+     "topicId": "msk_p1067",
+     "prompt": "在同一坐标系中，两个一次函数的图象有一个交点，那么交点的坐标与相应的二元一次方程组的解有什么关系？",
+     "question": "在同一坐标系中，两个一次函数的图象有一个交点，那么交点的坐标与相应的二元一次方程组的解有什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "交点的坐标就是方程组的解"
+      },
+      {
+       "label": "B",
+       "text": "交点的坐标是方程组解的两倍"
+      },
+      {
+       "label": "C",
+       "text": "交点坐标与方程组的解没有关系"
+      },
+      {
+       "label": "D",
+       "text": "交点坐标只满足其中一个方程"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "交点在两个图象上，它的坐标同时满足两个一次函数对应的方程，所以交点坐标就是相应二元一次方程组的解。"
+    },
+    {
+     "id": "msk_p1067_q4",
+     "topicId": "msk_p1067",
+     "prompt": "一次函数 y=3x-1 的图象与正比例函数 y=kx 的图象交于点（1，2），则 k 的值是多少？",
+     "question": "一次函数 y=3x-1 的图象与正比例函数 y=kx 的图象交于点（1，2），则 k 的值是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "交点同时在正比例函数的图象上，把 x=1、y=2 代入 y=kx 得 2 等于 k，所以 k 的值是 2。"
+    },
+    {
+     "id": "msk_p1067_q5",
+     "topicId": "msk_p1067",
+     "prompt": "把二元一次方程 3x+y=7 写成 y=kx+b 的形式，k 的值是多少？",
+     "question": "把二元一次方程 3x+y=7 写成 y=kx+b 的形式，k 的值是多少？",
+     "answer": -3,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "把 3x 移到等号右边得 y 等于 7 减 3x，也就是 y=-3x+7，与 y=kx+b 对照，k 的值是 -3。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 0}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msk_p1067_q6",
+     "topicId": "msk_p1067",
+     "prompt": "一次函数 y=x+1 与 y=-x+5 的图象交点的横坐标是多少？",
+     "question": "一次函数 y=x+1 与 y=-x+5 的图象交点的横坐标是多少？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "交点处两个函数值相等，令 x+1 等于 -x+5，得 2x 等于 4，所以 x 等于 2，交点的横坐标是 2。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 1}]}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msk_p1067_q7",
+     "topicId": "msk_p1067",
+     "prompt": "若一个二元一次方程组对应的两个一次函数的图象是两条平行的直线，那么这个方程组有多少个解？",
+     "question": "若一个二元一次方程组对应的两个一次函数的图象是两条平行的直线，那么这个方程组有多少个解？",
+     "answer": "无解",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "两条直线平行时没有公共点，也就没有同时满足两个方程的坐标，所以这样的二元一次方程组无解。"
+    },
+    {
+     "id": "msk_p1067_q8",
+     "topicId": "msk_p1067",
+     "prompt": "已知一次函数 y=3x-1 的图象与正比例函数 y=kx 的图象交于点（1，2），写出关于 x、y 的方程组 3x-y=1 与 kx-y=0 的解。",
+     "question": "已知一次函数 y=3x-1 的图象与正比例函数 y=kx 的图象交于点（1，2），写出关于 x、y 的方程组 3x-y=1 与 kx-y=0 的解。",
+     "answer": "x=1，y=2",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "3x-y=1 与 y=3x-1 对应，kx-y=0 与 y=kx 对应，两条直线的交点坐标就是方程组的解，交点坐标是（1，2），所以方程组的解是 x 等于 1、y 等于 2。"
+    }
+   ]
+  }
+ ]
+}

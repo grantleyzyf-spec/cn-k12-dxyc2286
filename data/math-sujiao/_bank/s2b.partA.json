@@ -1,0 +1,4116 @@
+{
+ "tag": "s2b",
+ "book": "苏教版二年级下册",
+ "part": "A",
+ "scope": "msj_p027–msj_p032（第一单元 厘米和米 / 我们的“身体尺” / 第二单元 简单的数量关系（二）/ 时间有多长 / 第三单元 两位数乘、除以一位数 / 第四单元 数据分类（二））",
+ "unit_points": [
+  {
+   "id": "msj_p027",
+   "description": "先比较两支铅笔的长短，再用蜡笔、文具盒作单位量课桌，体会选择的单位不同量出的结果也不同、测量需要统一的长度单位；接着认识厘米和米，知道1米等于100厘米，会用直尺和米尺量长度，会用1米34厘米这样的说法和1.34米表示身高，会量线段、画线段。",
+   "mastery_criteria": [
+    "知道1厘米和1米大约有多长，能用厘米和米作单位描述物体的长度",
+    "会用直尺、米尺量物体的长度，能估计常见物体的长度",
+    "能把几米几厘米改写成用厘米或米作单位的数，并比较长短"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "prompt": "要知道一支铅笔有多长，用下面哪个单位量比较合适？",
+     "options": [
+      {
+       "label": "A",
+       "text": "厘米"
+      },
+      {
+       "label": "B",
+       "text": "米"
+      },
+      {
+       "label": "C",
+       "text": "千克"
+      },
+      {
+       "label": "D",
+       "text": "小时"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "铅笔比较短，量比较短的物体用厘米作单位；米是量黑板、教室这样比较长的物体用的，千克量轻重，小时量时间。",
+     "id": "msj_p027_q1",
+     "topicId": "msj_p027",
+     "question": "要知道一支铅笔有多长，用下面哪个单位量比较合适？"
+    },
+    {
+     "prompt": "一根跳绳长2米，2米等于多少厘米？",
+     "answer": 200,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "1米等于100厘米，2米就是2个100厘米，2乘100得200，所以2米等于200厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 100}]}",
+     "id": "msj_p027_q2",
+     "topicId": "msj_p027",
+     "question": "一根跳绳长2米，2米等于多少厘米？"
+    },
+    {
+     "prompt": "测量教室门的高度，用（　）作单位比较合适。",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教室的门比一个大人还高，要用米作单位；量铅笔、橡皮这类比较短的物体，才用厘米作单位。",
+     "id": "msj_p027_q3",
+     "topicId": "msj_p027",
+     "question": "测量教室门的高度，用（　）作单位比较合适。",
+     "options": [
+      {
+       "label": "A",
+       "text": "厘米"
+      },
+      {
+       "label": "B",
+       "text": "米"
+      },
+      {
+       "label": "C",
+       "text": "千克"
+      },
+      {
+       "label": "D",
+       "text": "小时"
+      }
+     ]
+    },
+    {
+     "prompt": "小明身高1米34厘米，小红身高134厘米。两人的身高相比，结果是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "小明高"
+      },
+      {
+       "label": "B",
+       "text": "小红高"
+      },
+      {
+       "label": "C",
+       "text": "一样高"
+      },
+      {
+       "label": "D",
+       "text": "无法比较"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "1米等于100厘米，1米34厘米就是100厘米加34厘米，正好是134厘米，所以两人的身高一样高。",
+     "id": "msj_p027_q4",
+     "topicId": "msj_p027",
+     "question": "小明身高1米34厘米，小红身高134厘米。两人的身高相比，结果是（　）。"
+    },
+    {
+     "prompt": "小红身高1米34厘米，小明身高1米29厘米，小红比小明高多少厘米？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "两人的身高都满1米，只要比多出来的厘米数，34厘米比29厘米多5厘米，所以小红高5厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 34}, {\"type\": \"num\", \"value\": 29}]}",
+     "id": "msj_p027_q5",
+     "topicId": "msj_p027",
+     "question": "小红身高1米34厘米，小明身高1米29厘米，小红比小明高多少厘米？"
+    }
+   ]
+  },
+  {
+   "id": "msj_p028",
+   "description": "综合与实践活动“我们的身体尺”：认识拃、脚长、庹、拳宽、手掌长、步长等身体尺，知道古人曾把成年男子的手掌长叫尺、手指宽叫寸，也用过脚尺和肘尺；会用身体尺估测并测量课桌、教室门、校门口到教室的路程，体会身体尺方便但不精确，明白为什么要规定统一的长度单位。",
+   "mastery_criteria": [
+    "认识常见的身体尺，会用身体尺估测物体的长度",
+    "能根据物体长短选用合适的身体尺，说清统一长度单位的道理"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "prompt": "两臂平伸，两手之间的一段长度叫作（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "拃"
+      },
+      {
+       "label": "B",
+       "text": "庹"
+      },
+      {
+       "label": "C",
+       "text": "步"
+      },
+      {
+       "label": "D",
+       "text": "拳宽"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两臂平伸、两手之间的长度叫庹，教材上就是用庹量出教室的长大约是3庹。",
+     "id": "msj_p028_q1",
+     "topicId": "msj_p028",
+     "question": "两臂平伸，两手之间的一段长度叫作（　）。"
+    },
+    {
+     "prompt": "把大拇指和中指张开，两端之间的长度叫作（　）。",
+     "answer": "拃",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "张开大拇指和中指，两端之间的长度就是一拃，可以用拃量课桌的长。",
+     "id": "msj_p028_q2",
+     "topicId": "msj_p028",
+     "question": "把大拇指和中指张开，两端之间的长度叫作（　）。"
+    },
+    {
+     "prompt": "下面哪种情况适合用身体尺测量？",
+     "options": [
+      {
+       "label": "A",
+       "text": "做家具量尺寸，要求很准确的时候"
+      },
+      {
+       "label": "B",
+       "text": "量布做衣服，要求分毫不差的时候"
+      },
+      {
+       "label": "C",
+       "text": "只需要知道大约有多长、不需要很精确的时候"
+      },
+      {
+       "label": "D",
+       "text": "科学课上要精确记录数据的时候"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "身体尺量起来方便，但各人标准不同，只适合估测大约的长度；要求精确的时候还得用尺子量。",
+     "id": "msj_p028_q3",
+     "topicId": "msj_p028",
+     "question": "下面哪种情况适合用身体尺测量？"
+    },
+    {
+     "prompt": "小明量课桌的长，量了4拃，每拃大约15厘米。这张课桌大约长多少厘米？",
+     "answer": 60,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "4拃就是4个15厘米，4乘15得60，课桌大约长60厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 15}]}",
+     "id": "msj_p028_q4",
+     "topicId": "msj_p028",
+     "question": "小明量课桌的长，量了4拃，每拃大约15厘米。这张课桌大约长多少厘米？"
+    },
+    {
+     "prompt": "测量从校门口到教室的路程，用哪种身体尺比较合适？",
+     "options": [
+      {
+       "label": "A",
+       "text": "拇指宽"
+      },
+      {
+       "label": "B",
+       "text": "拃"
+      },
+      {
+       "label": "C",
+       "text": "拳宽"
+      },
+      {
+       "label": "D",
+       "text": "步"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "路程比较长，步长跨得远，用步量最省力；拇指宽、拃、拳宽都太短，要量很多次。",
+     "id": "msj_p028_q5",
+     "topicId": "msj_p028",
+     "question": "测量从校门口到教室的路程，用哪种身体尺比较合适？"
+    }
+   ]
+  },
+  {
+   "id": "msj_p029",
+   "description": "第二单元 简单的数量关系（二）：把较小的数量看作1份，用倍表示两个数量之间的关系；知道2盆的3倍就是3个2盆，求一个数量的几倍是多少用乘法算，求一个数量是另一个数量的几倍用除法算；会用圈一圈、画图的方法分析数量关系，解决采集枫叶、比较价格和辆数等实际问题。",
+   "mastery_criteria": [
+    "理解倍的含义，知道把较小的数量看作1份，另一个数量有这样的几份就是它的几倍",
+    "会用乘法求一个数量的几倍是多少，会用除法求一个数量是另一个数量的几倍"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "prompt": "蓝花有2盆，黄花有3个2盆。把2盆蓝花看作1份，黄花有这样的3份，可以说（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "黄花盆数的3倍是蓝花盆数"
+      },
+      {
+       "label": "B",
+       "text": "蓝花盆数比黄花盆数多3盆"
+      },
+      {
+       "label": "C",
+       "text": "蓝花盆数的3倍是黄花盆数"
+      },
+      {
+       "label": "D",
+       "text": "黄花盆数是蓝花盆数的一半"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把2盆蓝花看作1份，黄花有3份，就是蓝花盆数的3倍，所以说蓝花盆数的3倍是黄花盆数。",
+     "id": "msj_p029_q1",
+     "topicId": "msj_p029",
+     "question": "蓝花有2盆，黄花有3个2盆。把2盆蓝花看作1份，黄花有这样的3份，可以说（　）。"
+    },
+    {
+     "prompt": "蓝花有2盆，黄花的盆数是蓝花的3倍。黄花有多少盆？",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把2盆蓝花看作1份，黄花有这样的3份，就是3个2盆，2乘3得6，所以黄花有6盆。",
+     "id": "msj_p029_q2",
+     "topicId": "msj_p029",
+     "question": "蓝花有2盆，黄花的盆数是蓝花的3倍。黄花有多少盆？",
+     "options": [
+      {
+       "label": "A",
+       "text": "5盆"
+      },
+      {
+       "label": "B",
+       "text": "9盆"
+      },
+      {
+       "label": "C",
+       "text": "2盆"
+      },
+      {
+       "label": "D",
+       "text": "6盆"
+      }
+     ]
+    },
+    {
+     "prompt": "书架上有故事书24本，科技书6本。故事书的本数是科技书的多少倍？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "求24本是6本的几倍，就是求24里面有几个6，24除以6得4，所以故事书是科技书的4倍。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 24}, {\"type\": \"num\", \"value\": 6}]}",
+     "id": "msj_p029_q3",
+     "topicId": "msj_p029",
+     "question": "书架上有故事书24本，科技书6本。故事书的本数是科技书的多少倍？"
+    },
+    {
+     "prompt": "求一个数量的几倍是多少，用（　）计算。",
+     "options": [
+      {
+       "label": "A",
+       "text": "乘法"
+      },
+      {
+       "label": "B",
+       "text": "除法"
+      },
+      {
+       "label": "C",
+       "text": "加法"
+      },
+      {
+       "label": "D",
+       "text": "减法"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "求3的2倍是多少，就是求2个3相加的和，用乘法算比较简便，3乘2得6。",
+     "id": "msj_p029_q4",
+     "topicId": "msj_p029",
+     "question": "求一个数量的几倍是多少，用（　）计算。"
+    },
+    {
+     "prompt": "讲一个用3乘4解决的故事，并说一说谁是谁的几倍。",
+     "answer": "每盒彩笔有3支，买了4盒，一共有12支；可以说4盒的支数是1盒支数的4倍。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "3乘4表示4个3，把1盒的3支看作1份，4盒就有这样的4份，所以是1盒支数的4倍。",
+     "id": "msj_p029_q5",
+     "topicId": "msj_p029",
+     "question": "讲一个用3乘4解决的故事，并说一说谁是谁的几倍。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p030",
+   "description": "综合与实践活动“时间有多长”：观察钟面知道有12个大格、每个大格5个小格、一共60个小格，会看几时几分；通过拨钟、数格知道1时等于60分、1分等于60秒；用拍球、跳绳、数数体验30秒和1分钟有多长；会算从几时几分到几时几分经过了多少时间，并了解钟表和古人计时的知识。",
+   "mastery_criteria": [
+    "会看钟面上的几时几分，知道1时等于60分、1分等于60秒",
+    "会计算经过的时间，能说清从开始时刻到结束时刻用了多长时间"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "prompt": "钟面上一共有多少个小格？",
+     "answer": 60,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "钟面上有12个大格，每个大格里有5个小格，12个5合起来一共60个小格。",
+     "verify": "{\"type\": \"num\", \"value\": 60}",
+     "id": "msj_p030_q1",
+     "topicId": "msj_p030",
+     "question": "钟面上一共有多少个小格？"
+    },
+    {
+     "prompt": "分针走1圈，时针正好走1个大格，所以1时等于（　）分。",
+     "answer": "60",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "分针走1圈要走过60个小格，这时时针正好走1个大格，也就是1时，所以1时等于60分。",
+     "id": "msj_p030_q2",
+     "topicId": "msj_p030",
+     "question": "分针走1圈，时针正好走1个大格，所以1时等于（　）分。"
+    },
+    {
+     "prompt": "秒针走1圈，分针正好走1个小格。1分等于多少秒？",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "秒针走1圈要走60个小格，每走1个小格是1秒，这一分里正好走过60个小格，所以1分等于60秒。",
+     "id": "msj_p030_q3",
+     "topicId": "msj_p030",
+     "question": "秒针走1圈，分针正好走1个小格。1分等于多少秒？",
+     "options": [
+      {
+       "label": "A",
+       "text": "30秒"
+      },
+      {
+       "label": "B",
+       "text": "100秒"
+      },
+      {
+       "label": "C",
+       "text": "10秒"
+      },
+      {
+       "label": "D",
+       "text": "60秒"
+      }
+     ]
+    },
+    {
+     "prompt": "时针指向8和9之间，分针从12起走过了15个小格，这时是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "8时15分"
+      },
+      {
+       "label": "B",
+       "text": "9时15分"
+      },
+      {
+       "label": "C",
+       "text": "8时3分"
+      },
+      {
+       "label": "D",
+       "text": "15时8分"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "时针在8和9之间说明是8时多，分针走过15个小格就是15分，合起来是8时15分。",
+     "id": "msj_p030_q4",
+     "topicId": "msj_p030",
+     "question": "时针指向8和9之间，分针从12起走过了15个小格，这时是（　）。"
+    },
+    {
+     "prompt": "关于1分和1秒的关系，下面说法正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1时是100分"
+      },
+      {
+       "label": "B",
+       "text": "30秒加30秒是1分，1分是60秒"
+      },
+      {
+       "label": "C",
+       "text": "秒针走1圈是1时"
+      },
+      {
+       "label": "D",
+       "text": "1分是30秒"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "时间单位之间是六十进制，1分等于60秒，两个30秒合起来正好60秒，也就是1分。",
+     "id": "msj_p030_q5",
+     "topicId": "msj_p030",
+     "question": "关于1分和1秒的关系，下面说法正确的是（　）。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p031",
+   "description": "第三单元 两位数乘、除以一位数：会口算整十数乘一位数（买3瓶20元的蜂蜜，2个十乘3得6个十，是60元）和两位数乘一位数（12乘3先算3个10是30，再算3个2是6，合起来36）；会口算整十数除以一位数（60除以3是6个十除以3得2个十）和两位数除以一位数（36除以3得12，48除以4先算40除以4再算8除以4）；能用乘、除法解决植树、购物、分组、剪绳等实际问题。",
+   "mastery_criteria": [
+    "会口算整十数乘一位数和两位数乘一位数，能说清先算几个十、再算几个一",
+    "会口算整十数除以一位数和两位数除以一位数，能说清先分十再分一的过程"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "prompt": "每瓶蜂蜜20元，买3瓶一共要付多少元？",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "20元是2个十元，2个十乘3得6个十，6个十是60，所以一共要付60元。",
+     "id": "msj_p031_q1",
+     "topicId": "msj_p031",
+     "question": "每瓶蜂蜜20元，买3瓶一共要付多少元？",
+     "options": [
+      {
+       "label": "A",
+       "text": "60元"
+      },
+      {
+       "label": "B",
+       "text": "6元"
+      },
+      {
+       "label": "C",
+       "text": "23元"
+      },
+      {
+       "label": "D",
+       "text": "9元"
+      }
+     ]
+    },
+    {
+     "prompt": "每盒饼干12元，买3盒一共要付多少元？",
+     "answer": 36,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把12分成10和2，3个10是30，3个2是6，30加6得36，所以买3盒一共要付36元。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 12}, {\"type\": \"num\", \"value\": 3}]}",
+     "id": "msj_p031_q2",
+     "topicId": "msj_p031",
+     "question": "每盒饼干12元，买3盒一共要付多少元？"
+    },
+    {
+     "prompt": "6个十除以3得2个十，60除以3等于（　）。",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "60是6个十，6个十平均分成3份，每份是2个十，2个十就是20，所以60除以3等于20。",
+     "id": "msj_p031_q3",
+     "topicId": "msj_p031",
+     "question": "6个十除以3得2个十，60除以3等于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "20"
+      },
+      {
+       "label": "C",
+       "text": "30"
+      },
+      {
+       "label": "D",
+       "text": "63"
+      }
+     ]
+    },
+    {
+     "prompt": "计算48除以4，正确的想法是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "先算4除以4得1，再算8除以4得2，1加2得3"
+      },
+      {
+       "label": "B",
+       "text": "把48看成40和8，40除以4得10，8除以4得4，10加4得14"
+      },
+      {
+       "label": "C",
+       "text": "先算40除以4得10，再算8除以4得2，10加2得12"
+      },
+      {
+       "label": "D",
+       "text": "用48减4得44"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两位数除以一位数可以拆成几个十和几个一分别除，再把两个商合起来，40除以4得10，8除以4得2，合起来是12。",
+     "id": "msj_p031_q4",
+     "topicId": "msj_p031",
+     "question": "计算48除以4，正确的想法是（　）。"
+    },
+    {
+     "prompt": "3棵松树苗63元，每棵松树苗多少元？",
+     "answer": 21,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "63除以3，60除以3得20，3除以3得1，合起来21元；杨树苗每棵55除以5得11元，所以松树苗贵一些。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 63}, {\"type\": \"num\", \"value\": 3}]}",
+     "id": "msj_p031_q5",
+     "topicId": "msj_p031",
+     "question": "3棵松树苗63元，每棵松树苗多少元？"
+    }
+   ]
+  },
+  {
+   "id": "msj_p032",
+   "description": "第四单元 数据分类（二）：能根据要解决的问题确定分类标准，把纽扣按形状或按扣眼个数分一分、数一数，并会在第一次分类的基础上再分一次；会收集数据（调查同学有没有蛀牙、记录石头剪刀布20次的结果），用图画、符号、表格表示分类结果；会用分类整理的数据回答哪种最多、哪个年级作品最多等问题，知道分类后要检查有没有遗漏。",
+   "mastery_criteria": [
+    "能根据问题确定分类标准，按标准有序分类并用表格或符号表示结果",
+    "会收集、整理数据，用分类的结果回答问题，知道分类后要检查有没有遗漏"
+   ],
+   "type": "modeling",
+   "questions": [
+    {
+     "prompt": "把一堆纽扣分类，可以按（　）分。",
+     "options": [
+      {
+       "label": "A",
+       "text": "纽扣摆在第几排"
+      },
+      {
+       "label": "B",
+       "text": "形状、扣眼个数或颜色"
+      },
+      {
+       "label": "C",
+       "text": "纽扣是谁买来的"
+      },
+      {
+       "label": "D",
+       "text": "纽扣的价钱"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "分类的标准要选物体本身的特征，形状、扣眼个数、颜色都行；摆放位置和谁买的不是纽扣自己的特征。",
+     "id": "msj_p032_q1",
+     "topicId": "msj_p032",
+     "question": "把一堆纽扣分类，可以按（　）分。"
+    },
+    {
+     "prompt": "正方形纽扣按扣眼个数再分一分，可以分成2眼、3眼和（　）眼三类。",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材上正方形纽扣的扣眼有2个、3个、4个三种，按扣眼个数分类就分成这三类。",
+     "id": "msj_p032_q2",
+     "topicId": "msj_p032",
+     "question": "正方形纽扣按扣眼个数再分一分，可以分成2眼、3眼和（　）眼三类。",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ]
+    },
+    {
+     "prompt": "一组同学调查有没有蛀牙，没有蛀牙的有18人，有蛀牙的有12人。这组同学一共有多少人？",
+     "answer": 30,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把两类人数合起来就是总人数，18加12得30人。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 18}, {\"type\": \"num\", \"value\": 12}]}",
+     "id": "msj_p032_q3",
+     "topicId": "msj_p032",
+     "question": "一组同学调查有没有蛀牙，没有蛀牙的有18人，有蛀牙的有12人。这组同学一共有多少人？"
+    },
+    {
+     "prompt": "已经按形状把纽扣分成了正方形和圆形两类，还想知道正方形纽扣里几眼的最多，应该（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "把圆形纽扣再按形状分一分"
+      },
+      {
+       "label": "B",
+       "text": "把全部纽扣重新按颜色分一分"
+      },
+      {
+       "label": "C",
+       "text": "不再分类，随便猜一个"
+      },
+      {
+       "label": "D",
+       "text": "把正方形纽扣再按扣眼个数分一分"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "要解决的问题只和正方形纽扣有关，就要在正方形这一类里再选标准分一次，这样才能比出几眼的最多。",
+     "id": "msj_p032_q4",
+     "topicId": "msj_p032",
+     "question": "已经按形状把纽扣分成了正方形和圆形两类，还想知道正方形纽扣里几眼的最多，应该（　）。"
+    },
+    {
+     "prompt": "书法教室展出15幅楷书作品，按字体分：欧体5幅、柳体4幅，其余是颜体和赵体。颜体和赵体一共有多少幅？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "15幅分成四类，15减5减4得6，颜体和赵体一共6幅。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 15}, {\"type\": \"num\", \"value\": 5}]}, {\"type\": \"num\", \"value\": 4}]}",
+     "id": "msj_p032_q5",
+     "topicId": "msj_p032",
+     "question": "书法教室展出15幅楷书作品，按字体分：欧体5幅、柳体4幅，其余是颜体和赵体。颜体和赵体一共有多少幅？"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "msj_p1105",
+   "description": "认识厘米：量比较短的物体用厘米作单位，厘米可以用字母cm表示；在直尺上找到1厘米，用食指的宽、田字格一条边的长、订书钉的宽体会1厘米的实际长度；会在直尺上指认2厘米、5厘米、10厘米，并说出各是几个1厘米。",
+   "mastery_criteria": [
+    "知道1厘米的实际长度，能在直尺上找到1厘米、2厘米和10厘米"
+   ],
+   "misconceptions": [
+    "把1厘米想得很长，认为课桌的长大约是1厘米",
+    "量长度时把物体的一端对着直尺的最左边，不从0刻度线开始"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "prompt": "量一支铅笔的长度，用下面哪个单位比较合适？",
+     "options": [
+      {
+       "label": "A",
+       "text": "米"
+      },
+      {
+       "label": "B",
+       "text": "千克"
+      },
+      {
+       "label": "C",
+       "text": "厘米"
+      },
+      {
+       "label": "D",
+       "text": "元"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "铅笔比较短，用厘米作单位量最合适；米是量黑板、教室这样比较长的物体用的。",
+     "id": "msj_p1105_q1",
+     "topicId": "msj_p1105",
+     "question": "量一支铅笔的长度，用下面哪个单位比较合适？"
+    },
+    {
+     "prompt": "下面哪个物体的长度大约是1厘米？",
+     "options": [
+      {
+       "label": "A",
+       "text": "课桌的长"
+      },
+      {
+       "label": "B",
+       "text": "教室门的高"
+      },
+      {
+       "label": "C",
+       "text": "黑板的长"
+      },
+      {
+       "label": "D",
+       "text": "食指的宽"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材上用食指的宽、田字格一条边的长、订书钉的宽来体会1厘米，课桌、门和黑板都比1厘米长得多。",
+     "id": "msj_p1105_q2",
+     "topicId": "msj_p1105",
+     "question": "下面哪个物体的长度大约是1厘米？"
+    },
+    {
+     "prompt": "量比较短的物体的长度，可以用（　）作单位，它可以用字母cm表示。",
+     "answer": "厘米",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "厘米是量比较短物体时用的长度单位，写成字母就是cm。",
+     "id": "msj_p1105_q3",
+     "topicId": "msj_p1105",
+     "question": "量比较短的物体的长度，可以用（　）作单位，它可以用字母cm表示。"
+    },
+    {
+     "prompt": "在直尺上从0刻度开始，一个1厘米一个1厘米地数，数到刻度5，一共数了几个1厘米？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "直尺上0到1是1厘米，1到2又是一个1厘米，从0数到5要走过5个这样的1厘米。",
+     "verify": "{\"type\": \"num\", \"value\": 5}",
+     "id": "msj_p1105_q4",
+     "topicId": "msj_p1105",
+     "question": "在直尺上从0刻度开始，一个1厘米一个1厘米地数，数到刻度5，一共数了几个1厘米？"
+    },
+    {
+     "prompt": "数学书的一条边，一端对着直尺的0刻度，另一端正好对着刻度18。这条边长（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "18厘米"
+      },
+      {
+       "label": "B",
+       "text": "18米"
+      },
+      {
+       "label": "C",
+       "text": "17厘米"
+      },
+      {
+       "label": "D",
+       "text": "19厘米"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "一端对着0刻度时，另一端对着几，长度就是几厘米，所以这条边长18厘米。",
+     "id": "msj_p1105_q5",
+     "topicId": "msj_p1105",
+     "question": "数学书的一条边，一端对着直尺的0刻度，另一端正好对着刻度18。这条边长（　）。"
+    },
+    {
+     "prompt": "直尺上从刻度2到刻度9，中间有（　）个1厘米。",
+     "answer": "7",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "从2到9一共走过7个1厘米，也可以用9减2得7。",
+     "id": "msj_p1105_q6",
+     "topicId": "msj_p1105",
+     "question": "直尺上从刻度2到刻度9，中间有（　）个1厘米。"
+    },
+    {
+     "prompt": "小红说她的文具盒长18厘米，小明说他的文具盒长2米。下面说法正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "小明的文具盒长"
+      },
+      {
+       "label": "B",
+       "text": "小红的文具盒长"
+      },
+      {
+       "label": "C",
+       "text": "两个文具盒一样长"
+      },
+      {
+       "label": "D",
+       "text": "无法比较"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "18厘米还不到两把直尺那么长，2米比课桌还长，1米等于100厘米，2米就是200厘米，所以小明的说法一定不对。",
+     "id": "msj_p1105_q7",
+     "topicId": "msj_p1105",
+     "question": "小红说她的文具盒长18厘米，小明说他的文具盒长2米。下面说法正确的是（　）。"
+    },
+    {
+     "prompt": "不用尺子，说说你可以用身边哪些物体的长度帮助记住1厘米有多长。",
+     "answer": "食指的宽、田字格一条边的长、订书钉的宽都大约是1厘米，记住它们就能比出1厘米。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "教材用食指的宽、田字格一条边、订书钉的宽来体会1厘米，把1厘米和熟悉的物体联系起来，估测时就有根据。",
+     "id": "msj_p1105_q8",
+     "topicId": "msj_p1105",
+     "question": "不用尺子，说说你可以用身边哪些物体的长度帮助记住1厘米有多长。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1106",
+   "description": "用厘米量：会用直尺量物体的长度，量时把物体的一端对准直尺的0刻度，看另一端对着几就是几厘米；能判断哪种量法对，会量几个回形针接起来的长度，也会量小蚂蚁爬过的路程。",
+   "mastery_criteria": [
+    "会用直尺量出物体或线段的长度，读数时看另一端对着的刻度"
+   ],
+   "misconceptions": [
+    "量的时候把物体一端对着直尺的末端，不从0刻度开始",
+    "读数时把一大格当成一小格，量出的长度多一厘米或少一厘米"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "prompt": "用直尺量物体的长度时，物体的一端要对准直尺的（　）。",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "一端对准0刻度线，另一端对着几，物体的长度就是几厘米，这样读起来最方便。",
+     "id": "msj_p1106_q1",
+     "topicId": "msj_p1106",
+     "question": "用直尺量物体的长度时，物体的一端要对准直尺的（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "最左边的边缘"
+      },
+      {
+       "label": "B",
+       "text": "刻度1"
+      },
+      {
+       "label": "C",
+       "text": "最右边的边缘"
+      },
+      {
+       "label": "D",
+       "text": "0刻度线"
+      }
+     ]
+    },
+    {
+     "prompt": "下面哪种量法是对的？",
+     "options": [
+      {
+       "label": "A",
+       "text": "把物体的一端对准直尺的0刻度，再看另一端对着的刻度"
+      },
+      {
+       "label": "B",
+       "text": "把物体放在直尺的中间，两端都不对着刻度"
+      },
+      {
+       "label": "C",
+       "text": "把物体的一端对着直尺的最右边，从右边往左数"
+      },
+      {
+       "label": "D",
+       "text": "把物体的一端对着刻度1，再数另一端对着几"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "量长度要把一端对准0刻度，另一端对着的刻度就是长度；从别的刻度起量还要再减一次，容易数错。",
+     "id": "msj_p1106_q2",
+     "topicId": "msj_p1106",
+     "question": "下面哪种量法是对的？"
+    },
+    {
+     "prompt": "一支铅笔的一端对着直尺的0刻度，另一端对着刻度14。这支铅笔长多少厘米？",
+     "answer": 14,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "一端对着0刻度，另一端对着14，说明铅笔里有14个1厘米，所以长14厘米。",
+     "verify": "{\"type\": \"num\", \"value\": 14}",
+     "id": "msj_p1106_q3",
+     "topicId": "msj_p1106",
+     "question": "一支铅笔的一端对着直尺的0刻度，另一端对着刻度14。这支铅笔长多少厘米？"
+    },
+    {
+     "prompt": "一根小棒的一端对着直尺的刻度3，另一端对着刻度10。这根小棒长多少厘米？",
+     "answer": 7,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "从3到10走过7个1厘米，也可以用10减3得7，所以小棒长7厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 3}]}",
+     "id": "msj_p1106_q4",
+     "topicId": "msj_p1106",
+     "question": "一根小棒的一端对着直尺的刻度3，另一端对着刻度10。这根小棒长多少厘米？"
+    },
+    {
+     "prompt": "3个回形针连在一起，每个回形针长3厘米。连起来一共长多少厘米？",
+     "answer": 9,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "每个回形针3厘米，3个就是3个3厘米，3乘3得9，一共长9厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 3}]}",
+     "id": "msj_p1106_q5",
+     "topicId": "msj_p1106",
+     "question": "3个回形针连在一起，每个回形针长3厘米。连起来一共长多少厘米？"
+    },
+    {
+     "prompt": "小蚂蚁从直尺的0刻度爬到刻度12，它一共爬了多少厘米？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1厘米"
+      },
+      {
+       "label": "B",
+       "text": "12厘米"
+      },
+      {
+       "label": "C",
+       "text": "11厘米"
+      },
+      {
+       "label": "D",
+       "text": "13厘米"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "从0爬到12，中间走过12个1厘米，所以一共爬了12厘米。",
+     "id": "msj_p1106_q6",
+     "topicId": "msj_p1106",
+     "question": "小蚂蚁从直尺的0刻度爬到刻度12，它一共爬了多少厘米？"
+    },
+    {
+     "prompt": "一把直尺前面断了一截，从刻度4开始才有刻度。一支蜡笔的一端对着刻度4，另一端对着刻度11。这支蜡笔长多少厘米？",
+     "answer": 7,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "断尺子从4起量，只要用另一端的刻度11减去起点的4，得7，蜡笔长7厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 11}, {\"type\": \"num\", \"value\": 4}]}",
+     "id": "msj_p1106_q7",
+     "topicId": "msj_p1106",
+     "question": "一把直尺前面断了一截，从刻度4开始才有刻度。一支蜡笔的一端对着刻度4，另一端对着刻度11。这支蜡笔长多少厘米？"
+    },
+    {
+     "prompt": "量一量你的铅笔有多长，说一说是怎样量的。",
+     "answer": "把铅笔的一端对准直尺的0刻度，看另一端对着几，铅笔就长几厘米。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "量长度的方法是一端对0刻度、另一端读刻度，读数时眼睛要正对着刻度，量完还要说出单位厘米。",
+     "id": "msj_p1106_q8",
+     "topicId": "msj_p1106",
+     "question": "量一量你的铅笔有多长，说一说是怎样量的。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1107",
+   "description": "认识米：用20厘米的小尺量黑板要量很多次，量比较长的物体通常用米作单位，米可以用字母m表示；米尺的长度是1米，1米里面有100个1厘米，1米等于100厘米；用双臂张开、量到胸口、走3步等方法体会1米有多长。",
+   "mastery_criteria": [
+    "知道1米等于100厘米，能用米作单位描述较长物体的长度"
+   ],
+   "misconceptions": [
+    "认为1米和1厘米差不多长，把两个单位混为一谈",
+    "把1米记成10厘米，换算时少写一个0"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "prompt": "1米里面有多少个1厘米？",
+     "answer": 100,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "在米尺上一个一个数，1米里面有100个1厘米，所以1米等于100厘米。",
+     "verify": "{\"type\": \"num\", \"value\": 100}",
+     "id": "msj_p1107_q1",
+     "topicId": "msj_p1107",
+     "question": "1米里面有多少个1厘米？"
+    },
+    {
+     "prompt": "量比较长的物体的长度，通常用（　）作单位，它可以用字母m表示。",
+     "answer": "米",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "米是比厘米大的长度单位，量黑板、教室、旗杆这些比较长的物体用米作单位。",
+     "id": "msj_p1107_q2",
+     "topicId": "msj_p1107",
+     "question": "量比较长的物体的长度，通常用（　）作单位，它可以用字母m表示。"
+    },
+    {
+     "prompt": "教室的门很高，它的高大约2（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "米"
+      },
+      {
+       "label": "B",
+       "text": "厘米"
+      },
+      {
+       "label": "C",
+       "text": "千克"
+      },
+      {
+       "label": "D",
+       "text": "分"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教室的门比一个大人还高，用米作单位说2米；如果说成2厘米，只有两小格那么长，不可能。",
+     "id": "msj_p1107_q3",
+     "topicId": "msj_p1107",
+     "question": "教室的门很高，它的高大约2（　）。"
+    },
+    {
+     "prompt": "一条彩带长2米，2米等于多少厘米？",
+     "answer": 200,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "1米是100厘米，2米就是2个100厘米，2乘100得200，所以2米等于200厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 100}]}",
+     "id": "msj_p1107_q4",
+     "topicId": "msj_p1107",
+     "question": "一条彩带长2米，2米等于多少厘米？"
+    },
+    {
+     "prompt": "一名同学身高1米30厘米，他张开双臂，两手之间的长度大约是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "大约30厘米"
+      },
+      {
+       "label": "B",
+       "text": "大约1米30厘米"
+      },
+      {
+       "label": "C",
+       "text": "大约13厘米"
+      },
+      {
+       "label": "D",
+       "text": "大约3米"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材上说张开双臂的长度和身高差不多，身高1米30厘米，两臂展开也大约1米30厘米。",
+     "id": "msj_p1107_q5",
+     "topicId": "msj_p1107",
+     "question": "一名同学身高1米30厘米，他张开双臂，两手之间的长度大约是多少？"
+    },
+    {
+     "prompt": "用20厘米长的小尺量黑板，量了5次正好量完。这块黑板长（　）厘米。",
+     "answer": "100",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "每次量20厘米，5次就是5个20厘米，20乘5得100厘米，也就是1米。",
+     "id": "msj_p1107_q6",
+     "topicId": "msj_p1107",
+     "question": "用20厘米长的小尺量黑板，量了5次正好量完。这块黑板长（　）厘米。"
+    },
+    {
+     "prompt": "小红的身高是1米25厘米。下面说法正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "小红比1米矮25厘米"
+      },
+      {
+       "label": "B",
+       "text": "小红的身高正好是1米"
+      },
+      {
+       "label": "C",
+       "text": "小红比1米高25厘米"
+      },
+      {
+       "label": "D",
+       "text": "小红的身高是125米"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "1米25厘米比1米多25厘米，也就是125厘米，所以小红比1米高25厘米。",
+     "id": "msj_p1107_q7",
+     "topicId": "msj_p1107",
+     "question": "小红的身高是1米25厘米。下面说法正确的是（　）。"
+    },
+    {
+     "prompt": "说一说你可以用什么办法比画出1米大约有多长。",
+     "answer": "张开双臂，两手之间的长度大约1米；也可以从地面量到胸口，或者走3步大约1米。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "教材用张开双臂、量到胸口、走3步这些身体动作帮助体会1米，比画时还要和米尺对一对。",
+     "id": "msj_p1107_q8",
+     "topicId": "msj_p1107",
+     "question": "说一说你可以用什么办法比画出1米大约有多长。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1108",
+   "description": "用米量：用米尺量黑板等较长的物体，在教室外量出2米、5米、10米体会长度；会把米化成厘米（3米等于300厘米）、把厘米化成米（800厘米等于8米）；会解决小兔家到小猴家一共多少米、消防救生绳比拔河绳长多少米这类实际问题。",
+   "mastery_criteria": [
+    "会用米尺量较长物体的长度，会进行米和厘米的换算"
+   ],
+   "misconceptions": [
+    "把米化成厘米时只在后面添一个0，如把3米写成30厘米",
+    "认为800厘米比8米长，不知道它们一样长"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "prompt": "小兔家到小鹿家45米，小鹿家到小猴家27米。从小兔家经过小鹿家到小猴家，一共要走多少米？",
+     "answer": 72,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把两段路合起来就是总路程，45加27得72，一共要走72米。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 45}, {\"type\": \"num\", \"value\": 27}]}",
+     "id": "msj_p1108_q1",
+     "topicId": "msj_p1108",
+     "question": "小兔家到小鹿家45米，小鹿家到小猴家27米。从小兔家经过小鹿家到小猴家，一共要走多少米？"
+    },
+    {
+     "prompt": "一根拔河绳长25米，一根消防救生绳比它长5米。这根消防救生绳长多少米？",
+     "answer": 30,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "消防救生绳比拔河绳长5米，用25加5得30，长30米。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 25}, {\"type\": \"num\", \"value\": 5}]}",
+     "id": "msj_p1108_q2",
+     "topicId": "msj_p1108",
+     "question": "一根拔河绳长25米，一根消防救生绳比它长5米。这根消防救生绳长多少米？"
+    },
+    {
+     "prompt": "一根绳子长800厘米，800厘米等于多少米？",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "100厘米是1米，800厘米里面有8个100厘米，所以800厘米等于8米。",
+     "id": "msj_p1108_q3",
+     "topicId": "msj_p1108",
+     "question": "一根绳子长800厘米，800厘米等于多少米？",
+     "options": [
+      {
+       "label": "A",
+       "text": "80米"
+      },
+      {
+       "label": "B",
+       "text": "8米"
+      },
+      {
+       "label": "C",
+       "text": "800米"
+      },
+      {
+       "label": "D",
+       "text": "18米"
+      }
+     ]
+    },
+    {
+     "prompt": "一根跳绳长3米，3米等于多少厘米？",
+     "answer": 300,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "1米等于100厘米，3米就是3个100厘米，3乘100得300，所以3米等于300厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 100}]}",
+     "id": "msj_p1108_q4",
+     "topicId": "msj_p1108",
+     "question": "一根跳绳长3米，3米等于多少厘米？"
+    },
+    {
+     "prompt": "下面哪个物体比1米长？",
+     "options": [
+      {
+       "label": "A",
+       "text": "一块橡皮"
+      },
+      {
+       "label": "B",
+       "text": "一支铅笔"
+      },
+      {
+       "label": "C",
+       "text": "教室的门"
+      },
+      {
+       "label": "D",
+       "text": "一本数学书"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "橡皮、铅笔、数学书都不到1米，教室的门比1米高，是比1米长的物体。",
+     "id": "msj_p1108_q5",
+     "topicId": "msj_p1108",
+     "question": "下面哪个物体比1米长？"
+    },
+    {
+     "prompt": "500厘米和5米比较，结果是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "500厘米长"
+      },
+      {
+       "label": "B",
+       "text": "5米长"
+      },
+      {
+       "label": "C",
+       "text": "无法比较"
+      },
+      {
+       "label": "D",
+       "text": "一样长"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "100厘米是1米，500厘米就是5个100厘米，也就是5米，两个长度一样。",
+     "id": "msj_p1108_q6",
+     "topicId": "msj_p1108",
+     "question": "500厘米和5米比较，结果是（　）。"
+    },
+    {
+     "prompt": "一根竹竿长7米，7米等于（　）厘米。",
+     "answer": "700",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "1米等于100厘米，7米就是7个100厘米，7乘100得700，所以7米等于700厘米。",
+     "id": "msj_p1108_q7",
+     "topicId": "msj_p1108",
+     "question": "一根竹竿长7米，7米等于（　）厘米。"
+    },
+    {
+     "prompt": "用米尺量教室的黑板，说一说量的过程要注意什么。",
+     "answer": "把米尺的0刻度对准黑板的一端，量一次做一个记号，再接着量，最后数一数量了几次，就是几米。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "黑板比米尺长，要一次一次接起来量，接头处做好记号，量完还要看最后不满1米的部分，用几米几厘米表示。",
+     "id": "msj_p1108_q8",
+     "topicId": "msj_p1108",
+     "question": "用米尺量教室的黑板，说一说量的过程要注意什么。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1109",
+   "description": "认识线段与画线段：线段是直的，有两个端点，可以量出它的长度；把一根线拉直、把一张纸折一折，折出的折痕都可以看作线段；会用直尺量出线段的长度，也会从0刻度起画出指定长度的线段。",
+   "mastery_criteria": [
+    "知道线段是直的、有两个端点，会量线段的长度，会画指定长度的线段"
+   ],
+   "misconceptions": [
+    "把弯弯的线也当成线段，忽视了线段必须是直的",
+    "画线段时不从0刻度起画，画出来的长度和要求的长度不一样"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "prompt": "下面哪一个是线段？",
+     "options": [
+      {
+       "label": "A",
+       "text": "一根弯弯的毛线"
+      },
+      {
+       "label": "B",
+       "text": "一个圆圆的纽扣边"
+      },
+      {
+       "label": "C",
+       "text": "把一根毛线拉直后，两手之间的那一段"
+      },
+      {
+       "label": "D",
+       "text": "一条弯曲的小河"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "线段是直的，有两个端点。把毛线拉直以后两手之间的一段是直的，可以看作线段。",
+     "id": "msj_p1109_q1",
+     "topicId": "msj_p1109",
+     "question": "下面哪一个是线段？"
+    },
+    {
+     "prompt": "一条线段有（　）个端点。",
+     "answer": "2",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "线段有两个端点，两端各有一个点，量长度就是量这两个端点之间的长度。",
+     "id": "msj_p1109_q2",
+     "topicId": "msj_p1109",
+     "question": "一条线段有（　）个端点。"
+    },
+    {
+     "prompt": "要画一条5厘米长的线段，下面哪种画法对？",
+     "options": [
+      {
+       "label": "A",
+       "text": "从直尺的最左边画起，画到刻度5"
+      },
+      {
+       "label": "B",
+       "text": "从刻度1画到刻度5"
+      },
+      {
+       "label": "C",
+       "text": "从刻度2画到刻度6"
+      },
+      {
+       "label": "D",
+       "text": "把笔尖对准直尺的0刻度画起，画到刻度5停住"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "从0刻度画到5刻度，画出的正好是5厘米；从1画到5只有4厘米，从2画到6也是4厘米，都短了。",
+     "id": "msj_p1109_q3",
+     "topicId": "msj_p1109",
+     "question": "要画一条5厘米长的线段，下面哪种画法对？"
+    },
+    {
+     "prompt": "一条线段的一端对着直尺的0刻度，另一端对着刻度6。这条线段长多少厘米？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "一端对着0刻度，另一端对着6，说明线段里有6个1厘米，长6厘米。",
+     "verify": "{\"type\": \"num\", \"value\": 6}",
+     "id": "msj_p1109_q4",
+     "topicId": "msj_p1109",
+     "question": "一条线段的一端对着直尺的0刻度，另一端对着刻度6。这条线段长多少厘米？"
+    },
+    {
+     "prompt": "把一张长方形纸折一折，折痕的一端对着直尺的刻度3，另一端对着刻度10。这条折痕长多少厘米？",
+     "answer": 7,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "折痕也可以看作线段，从3到10走过7个1厘米，用10减3得7，折痕长7厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 3}]}",
+     "id": "msj_p1109_q5",
+     "topicId": "msj_p1109",
+     "question": "把一张长方形纸折一折，折痕的一端对着直尺的刻度3，另一端对着刻度10。这条折痕长多少厘米？"
+    },
+    {
+     "prompt": "下面关于线段的说法，正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "线段是直的，能量出长度"
+      },
+      {
+       "label": "B",
+       "text": "线段是弯的，量不出长度"
+      },
+      {
+       "label": "C",
+       "text": "线段没有端点"
+      },
+      {
+       "label": "D",
+       "text": "线段一定比1米长"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "线段是直的、有两个端点，所以可以用直尺量出长度；线段长短都可以，不一定比1米长。",
+     "id": "msj_p1109_q6",
+     "topicId": "msj_p1109",
+     "question": "下面关于线段的说法，正确的是（　）。"
+    },
+    {
+     "prompt": "要画一条8厘米长的线段，笔尖要从直尺的0刻度画到刻度（　）。",
+     "answer": "8",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "从0刻度画到8刻度，画出的线段正好是8厘米，所以终点的刻度就是线段的长度。",
+     "id": "msj_p1109_q7",
+     "topicId": "msj_p1109",
+     "question": "要画一条8厘米长的线段，笔尖要从直尺的0刻度画到刻度（　）。"
+    },
+    {
+     "prompt": "说一说怎样用直尺画一条4厘米长的线段。",
+     "answer": "把笔尖对准直尺的0刻度，沿着直尺画到刻度4停住，再在两端各点一个点表示端点，就得到一条4厘米长的线段。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "画线段要沿着直尺的边，从0刻度起画到4刻度，两端点上各点一个点表示端点，最后标出长度。",
+     "id": "msj_p1109_q8",
+     "topicId": "msj_p1109",
+     "question": "说一说怎样用直尺画一条4厘米长的线段。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1110",
+   "description": "综合练习与整理复习：会用厘米或米填空（脚掌宽约8厘米、楼房高约30米、窗户宽约1.9米、旗杆高约15米），会比较4米和4厘米、1.43米和150厘米、1米95厘米和1.95米的大小，会估测滴管的长度和游泳池的长，会解决彩带接起来有多长的实际问题。",
+   "mastery_criteria": [
+    "能根据物体长短选择合适的单位，会比较不同单位的长度"
+   ],
+   "misconceptions": [
+    "看到数小就填厘米，把旗杆的高填成15厘米",
+    "比较1.43米和150厘米时只看数的大小，不换算单位"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "prompt": "张民的脚掌宽大约是8（　）。",
+     "answer": "厘米",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "脚掌宽比一支铅笔短一些，用厘米作单位说8厘米比较合适；说成8米就太长了。",
+     "id": "msj_p1110_q1",
+     "topicId": "msj_p1110",
+     "question": "张民的脚掌宽大约是8（　）。"
+    },
+    {
+     "prompt": "一幢楼房的高度大约是30（　）。",
+     "answer": "米",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "楼房很高，量比较长的物体用米作单位，30米大约有十层楼那么高。",
+     "id": "msj_p1110_q2",
+     "topicId": "msj_p1110",
+     "question": "一幢楼房的高度大约是30（　）。"
+    },
+    {
+     "prompt": "教室的窗户大约宽1.9（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "厘米"
+      },
+      {
+       "label": "B",
+       "text": "千克"
+      },
+      {
+       "label": "C",
+       "text": "分"
+      },
+      {
+       "label": "D",
+       "text": "米"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "1.9米就是1米90厘米，和教室窗户的宽度差不多；说成1.9厘米还不到两小格。",
+     "id": "msj_p1110_q3",
+     "topicId": "msj_p1110",
+     "question": "教室的窗户大约宽1.9（　）。"
+    },
+    {
+     "prompt": "1.43米和150厘米比较，结果是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "150厘米长"
+      },
+      {
+       "label": "B",
+       "text": "1.43米长"
+      },
+      {
+       "label": "C",
+       "text": "一样长"
+      },
+      {
+       "label": "D",
+       "text": "无法比较"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "1.43米等于143厘米，143厘米比150厘米少7厘米，所以150厘米长。",
+     "id": "msj_p1110_q4",
+     "topicId": "msj_p1110",
+     "question": "1.43米和150厘米比较，结果是（　）。"
+    },
+    {
+     "prompt": "1米95厘米和1.95米比较，结果是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1米95厘米长"
+      },
+      {
+       "label": "B",
+       "text": "一样长"
+      },
+      {
+       "label": "C",
+       "text": "1.95米长"
+      },
+      {
+       "label": "D",
+       "text": "无法比较"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "1.95米就是1米95厘米，两种说法表示同一个长度，所以一样长。",
+     "id": "msj_p1110_q5",
+     "topicId": "msj_p1110",
+     "question": "1米95厘米和1.95米比较，结果是（　）。"
+    },
+    {
+     "prompt": "李青用5根长20厘米的彩带接成一根长彩带，每个连接处重叠4厘米。接成的彩带长多少厘米？",
+     "answer": 84,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "5根一共100厘米，接成一根有4个连接处，每处重叠4厘米，共重叠16厘米，100减16得84厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 20}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 4}]}]}",
+     "id": "msj_p1110_q6",
+     "topicId": "msj_p1110",
+     "question": "李青用5根长20厘米的彩带接成一根长彩带，每个连接处重叠4厘米。接成的彩带长多少厘米？"
+    },
+    {
+     "prompt": "学校旗杆的高度大约是15（　）。",
+     "answer": "米",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "旗杆比楼房还高，用米作单位，15米大约有五层楼那么高；填厘米只有手指那么长。",
+     "id": "msj_p1110_q7",
+     "topicId": "msj_p1110",
+     "question": "学校旗杆的高度大约是15（　）。"
+    },
+    {
+     "prompt": "先估一估，再用直尺量一量你的铅笔大约有多少厘米，说一说估的和量的差多少。",
+     "answer": "先估铅笔大约18厘米，再用直尺从0刻度量出实际长度是17厘米，估的比量的多1厘米。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "估测要有根据，可以用记住的1厘米或一拃作标准；量完再把两个结果比一比，看自己的估计准不准。",
+     "id": "msj_p1110_q8",
+     "topicId": "msj_p1110",
+     "question": "先估一估，再用直尺量一量你的铅笔大约有多少厘米，说一说估的和量的差多少。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1111",
+   "description": "认识“身体尺”：先用手臂量出教室的长约3庹，说明庹可以看作一种身体尺；再认识拃、步、拇指宽等身体尺，估一估、量一量自己的1拃长、1脚长、1庹长、1拳宽、1手掌长、1步长并记录下来；了解古人用掌长作尺、指宽作寸、脚长作脚尺、肘到中指尖作肘尺。",
+   "mastery_criteria": [
+    "认识拃、庹、步、指宽等身体尺，会估测并量出自己的1拃长有多长"
+   ],
+   "misconceptions": [
+    "认为所有同学的1拃都一样长",
+    "把庹和拃当成同一种身体尺"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "prompt": "人们把身体某些部位的长度作单位测量物体的长度，这样的单位叫作（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "身体尺"
+      },
+      {
+       "label": "B",
+       "text": "米尺"
+      },
+      {
+       "label": "C",
+       "text": "直角尺"
+      },
+      {
+       "label": "D",
+       "text": "卷尺"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "庹、拃、步这些用身体部位长度作的标准叫身体尺；米尺、卷尺是专门的测量工具。",
+     "id": "msj_p1111_q1",
+     "topicId": "msj_p1111",
+     "question": "人们把身体某些部位的长度作单位测量物体的长度，这样的单位叫作（　）。"
+    },
+    {
+     "prompt": "用大拇指和中指张开量课桌的长，得到的是几（　）。",
+     "answer": "拃",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "张开大拇指和中指量长度，结果用拃作单位，可以说课桌长4拃。",
+     "id": "msj_p1111_q2",
+     "topicId": "msj_p1111",
+     "question": "用大拇指和中指张开量课桌的长，得到的是几（　）。"
+    },
+    {
+     "prompt": "教材上用手臂量教室的长，量出大约3庹。1庹指的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "一只手的长度"
+      },
+      {
+       "label": "B",
+       "text": "两臂平伸时两手之间的长度"
+      },
+      {
+       "label": "C",
+       "text": "一步跨出的长度"
+      },
+      {
+       "label": "D",
+       "text": "一拃的长度"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两臂平伸、两手之间的长度叫1庹；教室长大约3庹，说明庹可以量较长的物体。",
+     "id": "msj_p1111_q3",
+     "topicId": "msj_p1111",
+     "question": "教材上用手臂量教室的长，量出大约3庹。1庹指的是（　）。"
+    },
+    {
+     "prompt": "小芳量出自己的1拃长是13厘米，她用拃量桌布的长，正好量了3拃。桌布大约长多少厘米？",
+     "answer": 39,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "3拃就是3个13厘米，13乘3得39，桌布大约长39厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 13}, {\"type\": \"num\", \"value\": 3}]}",
+     "id": "msj_p1111_q4",
+     "topicId": "msj_p1111",
+     "question": "小芳量出自己的1拃长是13厘米，她用拃量桌布的长，正好量了3拃。桌布大约长多少厘米？"
+    },
+    {
+     "prompt": "下面哪一种不是身体尺？",
+     "options": [
+      {
+       "label": "A",
+       "text": "拃"
+      },
+      {
+       "label": "B",
+       "text": "步"
+      },
+      {
+       "label": "C",
+       "text": "米尺"
+      },
+      {
+       "label": "D",
+       "text": "庹"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "拃、步、庹都是身体部位的长度，米尺是专门的测量工具，不是身体尺。",
+     "id": "msj_p1111_q5",
+     "topicId": "msj_p1111",
+     "question": "下面哪一种不是身体尺？"
+    },
+    {
+     "prompt": "小明的1步长约50厘米，他从教室前门走到后门走了8步。这段路大约长多少厘米？",
+     "answer": 400,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "8步就是8个50厘米，50乘8得400，这段路大约长400厘米，也就是4米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 50}, {\"type\": \"num\", \"value\": 8}]}",
+     "id": "msj_p1111_q6",
+     "topicId": "msj_p1111",
+     "question": "小明的1步长约50厘米，他从教室前门走到后门走了8步。这段路大约长多少厘米？"
+    },
+    {
+     "prompt": "古人把成年男子的手指宽作标准，称为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "尺"
+      },
+      {
+       "label": "B",
+       "text": "脚尺"
+      },
+      {
+       "label": "C",
+       "text": "肘尺"
+      },
+      {
+       "label": "D",
+       "text": "寸"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "教材上写，我国古代用成年男子的手指宽作标准称为寸，用成年男子的手掌长作标准称为尺。",
+     "id": "msj_p1111_q7",
+     "topicId": "msj_p1111",
+     "question": "古人把成年男子的手指宽作标准，称为（　）。"
+    },
+    {
+     "prompt": "先估一估自己的1拃有多长，再说一说准备怎样量出来。",
+     "answer": "先估1拃大约10厘米，再用直尺量大拇指尖到中指尖的长度，量出是13厘米，估的比量的少3厘米。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "估测可以用记住的1厘米作标准；量的时候把直尺的0刻度对着大拇指尖，看中指尖对着几厘米。",
+     "id": "msj_p1111_q8",
+     "topicId": "msj_p1111",
+     "question": "先估一估自己的1拃有多长，再说一说准备怎样量出来。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1112",
+   "description": "用“身体尺”测量：先估一估、再量一量自己的几步长、几拃长、几脚长约是1米；会根据物体的长短选合适的身体尺（字典的厚度用拇指宽、教室门的高用拃或手掌长、校门口到教室的路程用步）；用拃量不满1拃时可以说几拃多一些，体会身体尺方便但要用工具核对。",
+   "mastery_criteria": [
+    "能根据物体的长短选用合适的身体尺测量，会用几拃多一些表达结果"
+   ],
+   "misconceptions": [
+    "量教室门的高时用拇指宽一格一格量，不选合适的身体尺",
+    "把用身体尺量出的结果当成准确结果，不再用尺子量一量核对"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "prompt": "要知道《新华字典》有多厚，用哪种身体尺量比较合适？",
+     "options": [
+      {
+       "label": "A",
+       "text": "步"
+      },
+      {
+       "label": "B",
+       "text": "拇指宽"
+      },
+      {
+       "label": "C",
+       "text": "庹"
+      },
+      {
+       "label": "D",
+       "text": "脚长"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "字典很薄，拇指宽最短，用它一格一格量最合适；步、脚长、庹都是量比较长的距离用的。",
+     "id": "msj_p1112_q1",
+     "topicId": "msj_p1112",
+     "question": "要知道《新华字典》有多厚，用哪种身体尺量比较合适？"
+    },
+    {
+     "prompt": "用拃量课桌的长，量了3拃还多出一点，可以说课桌长3拃（　）。",
+     "answer": "多一些",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "量不满1拃时不必说得十分精确，用几拃多一些说清楚大约有多长就可以了。",
+     "id": "msj_p1112_q2",
+     "topicId": "msj_p1112",
+     "question": "用拃量课桌的长，量了3拃还多出一点，可以说课桌长3拃（　）。"
+    },
+    {
+     "prompt": "量教室门的高，用下面哪种身体尺比较合适？",
+     "options": [
+      {
+       "label": "A",
+       "text": "拇指宽"
+      },
+      {
+       "label": "B",
+       "text": "步"
+      },
+      {
+       "label": "C",
+       "text": "拃或手掌长"
+      },
+      {
+       "label": "D",
+       "text": "1庹"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "门的高大约2米，用拃或手掌长量几十次就能量完；拇指宽太短，步和庹不好量竖直的高度。",
+     "id": "msj_p1112_q3",
+     "topicId": "msj_p1112",
+     "question": "量教室门的高，用下面哪种身体尺比较合适？"
+    },
+    {
+     "prompt": "小红量出自己的3拃大约长40厘米，她用拃量出课桌的长是6拃。这张课桌大约长多少厘米？",
+     "answer": 80,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "3拃大约40厘米，6拃是2个3拃，40加40得80厘米，所以课桌大约长80厘米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 40}, {\"type\": \"num\", \"value\": 2}]}",
+     "id": "msj_p1112_q4",
+     "topicId": "msj_p1112",
+     "question": "小红量出自己的3拃大约长40厘米，她用拃量出课桌的长是6拃。这张课桌大约长多少厘米？"
+    },
+    {
+     "prompt": "用身体尺量出的结果和用米尺量出的结果相比，（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "用身体尺量出的结果更准确"
+      },
+      {
+       "label": "B",
+       "text": "两种结果一定完全一样"
+      },
+      {
+       "label": "C",
+       "text": "两种结果都无法比较"
+      },
+      {
+       "label": "D",
+       "text": "用米尺量出的结果更准确"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "身体尺各人长短不同，量出的结果有差别；米尺、直尺是统一的测量工具，量出的结果比较准确。",
+     "id": "msj_p1112_q5",
+     "topicId": "msj_p1112",
+     "question": "用身体尺量出的结果和用米尺量出的结果相比，（　）。"
+    },
+    {
+     "prompt": "三位同学要量同一张课桌的长，下面哪种做法最好？",
+     "options": [
+      {
+       "label": "A",
+       "text": "都用同一把直尺量，量完再对一对结果"
+      },
+      {
+       "label": "B",
+       "text": "各人用自己的拃量，结果不同就争论谁对"
+      },
+      {
+       "label": "C",
+       "text": "用庹量课桌的长"
+      },
+      {
+       "label": "D",
+       "text": "随便估一个数写上去"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "各人的拃长短不同，用自己的拃量结果自然不同；用同一把直尺量，标准统一，结果才能比较。",
+     "id": "msj_p1112_q6",
+     "topicId": "msj_p1112",
+     "question": "三位同学要量同一张课桌的长，下面哪种做法最好？"
+    },
+    {
+     "prompt": "从校门口到教室要走40步，小华每10步大约走5米。这段路大约长多少米？",
+     "answer": 20,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "40步里面有4个10步，4个5米是20米，所以这段路大约长20米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 5}]}",
+     "id": "msj_p1112_q7",
+     "topicId": "msj_p1112",
+     "question": "从校门口到教室要走40步，小华每10步大约走5米。这段路大约长多少米？"
+    },
+    {
+     "prompt": "用身体尺量一量课桌的长，再和用直尺量的结果比一比，说说你的发现。",
+     "answer": "用拃量课桌大约4拃，用直尺量是60厘米；两次结果不一样，用直尺量的更准确。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "身体尺方便，但各人标准不同，量出的只是大约的长度；直尺刻度统一，量出的结果更准确，所以要精确时用工具量。",
+     "id": "msj_p1112_q8",
+     "topicId": "msj_p1112",
+     "question": "用身体尺量一量课桌的长，再和用直尺量的结果比一比，说说你的发现。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1113",
+   "description": "倍的认识：先数一数、比一比三种颜色花的盆数，再把2盆蓝花看作1份，黄花有这样的3份，认识蓝花盆数的3倍是黄花盆数；知道2盆的3倍就是3个2盆，用2乘3表示；会在图上圈一圈、填一填，说出红花盆数是蓝花的几倍，也会用4倍说说两条彩带长度的关系。",
+   "mastery_criteria": [
+    "知道把较小的数量看作1份，另一个数量有几份就是它的几倍"
+   ],
+   "misconceptions": [
+    "把倍当成加法的比较，认为黄花比蓝花多3盆就是3倍",
+    "数份数时把1份也算成1份多，把3份说成4倍"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "prompt": "蓝花有2盆，黄花有3个2盆。把2盆蓝花看作1份，黄花有（　）份。",
+     "answer": "3",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "黄花是3个2盆，把2盆看作1份，黄花就有这样的3份。",
+     "id": "msj_p1113_q1",
+     "topicId": "msj_p1113",
+     "question": "蓝花有2盆，黄花有3个2盆。把2盆蓝花看作1份，黄花有（　）份。"
+    },
+    {
+     "prompt": "把2盆蓝花看作1份，2盆的3倍是多少盆？",
+     "options": [
+      {
+       "label": "A",
+       "text": "5盆"
+      },
+      {
+       "label": "B",
+       "text": "3盆"
+      },
+      {
+       "label": "C",
+       "text": "6盆"
+      },
+      {
+       "label": "D",
+       "text": "2盆"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "2盆的3倍就是3个2盆，2加2加2得6，也可以用2乘3得6，所以是6盆。",
+     "id": "msj_p1113_q2",
+     "topicId": "msj_p1113",
+     "question": "把2盆蓝花看作1份，2盆的3倍是多少盆？"
+    },
+    {
+     "prompt": "蓝花有2盆，红花的盆数是蓝花的5倍。红花有多少盆？",
+     "answer": 10,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把2盆看作1份，5倍就是这样的5份，2乘5得10，所以红花有10盆。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 5}]}",
+     "id": "msj_p1113_q3",
+     "topicId": "msj_p1113",
+     "question": "蓝花有2盆，红花的盆数是蓝花的5倍。红花有多少盆？"
+    },
+    {
+     "prompt": "黄彩带长5厘米，绿彩带的长度是黄彩带的4倍，绿彩带长（　）厘米。",
+     "answer": "20",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "5厘米的4倍就是4个5厘米，5乘4得20，绿彩带长20厘米。",
+     "id": "msj_p1113_q4",
+     "topicId": "msj_p1113",
+     "question": "黄彩带长5厘米，绿彩带的长度是黄彩带的4倍，绿彩带长（　）厘米。"
+    },
+    {
+     "prompt": "蓝花有2盆，红花有8盆。求红花的盆数是蓝花的几倍，正确的算法是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "8减2等于6，红花是蓝花的6倍"
+      },
+      {
+       "label": "B",
+       "text": "8加2等于10，红花是蓝花的10倍"
+      },
+      {
+       "label": "C",
+       "text": "8乘2等于16，红花是蓝花的16倍"
+      },
+      {
+       "label": "D",
+       "text": "8除以2等于4，红花是蓝花的4倍"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "求红花是蓝花的几倍，就是求8里面有几个2，8除以2得4，所以是4倍。",
+     "id": "msj_p1113_q5",
+     "topicId": "msj_p1113",
+     "question": "蓝花有2盆，红花有8盆。求红花的盆数是蓝花的几倍，正确的算法是（　）。"
+    },
+    {
+     "prompt": "小华摆3个圆片，三角形的个数是圆片的4倍。要摆多少个三角形？",
+     "answer": 12,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把3个圆片看作1份，4倍就是这样的4份，3乘4得12，所以要摆12个三角形。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 4}]}",
+     "id": "msj_p1113_q6",
+     "topicId": "msj_p1113",
+     "question": "小华摆3个圆片，三角形的个数是圆片的4倍。要摆多少个三角形？"
+    },
+    {
+     "prompt": "关于倍的意思，下面说法正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "把1份看作标准，另一个数量有这样的几份，就是它的几倍"
+      },
+      {
+       "label": "B",
+       "text": "倍就是两个数量相差多少"
+      },
+      {
+       "label": "C",
+       "text": "几个几相加不能用倍来说"
+      },
+      {
+       "label": "D",
+       "text": "倍只能用来比较盆数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "倍表示两个数量之间的关系：先定1份，再看另一个数量有几份，有几份就是几倍。",
+     "id": "msj_p1113_q7",
+     "topicId": "msj_p1113",
+     "question": "关于倍的意思，下面说法正确的是（　）。"
+    },
+    {
+     "prompt": "用小棒摆一摆：第一行摆2根，第二行摆的根数是第一行的3倍。说一说第二行摆了几根，是怎样想的。",
+     "answer": "第二行摆6根。第一行的2根是1份，第二行有这样的3份，3个2根是6根。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "把第一行的2根看作1份，第二行有这样的3份，也就是3个2，2乘3得6根。",
+     "id": "msj_p1113_q8",
+     "topicId": "msj_p1113",
+     "question": "用小棒摆一摆：第一行摆2根，第二行摆的根数是第一行的3倍。说一说第二行摆了几根，是怎样想的。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1114",
+   "description": "求一个数是另一个数的几倍：把绿枫叶的3片看作1份，黄枫叶6片有这样的2份，用6除以3得2，知道求一个数量是另一个数量的几倍就是求一个数里面有几个另一个数，用除法算；会解决停车棚里自行车与电动自行车的辆数、爸爸与妈妈的年龄等实际问题。",
+   "mastery_criteria": [
+    "会用除法求一个数量是另一个数量的几倍，能说清是求一个数里面有几个另一个数"
+   ],
+   "misconceptions": [
+    "求几倍时用乘法算，把6是3的几倍算成6乘3",
+    "把“是几倍”和“多多少”混在一起，用减法算"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "prompt": "黄枫叶有6片，绿枫叶有3片。黄枫叶的片数是绿枫叶的多少倍？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "求6是3的几倍，就是求6里面有几个3，6除以3得2，所以是2倍。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 3}]}",
+     "id": "msj_p1114_q1",
+     "topicId": "msj_p1114",
+     "question": "黄枫叶有6片，绿枫叶有3片。黄枫叶的片数是绿枫叶的多少倍？"
+    },
+    {
+     "prompt": "求一个数量是另一个数量的几倍，可以用（　）计算。",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把另一个数量看作1份，看这个数量里面有几个这样的1份，用除法算最方便。",
+     "id": "msj_p1114_q2",
+     "topicId": "msj_p1114",
+     "question": "求一个数量是另一个数量的几倍，可以用（　）计算。",
+     "options": [
+      {
+       "label": "A",
+       "text": "乘法"
+      },
+      {
+       "label": "B",
+       "text": "加法"
+      },
+      {
+       "label": "C",
+       "text": "减法"
+      },
+      {
+       "label": "D",
+       "text": "除法"
+      }
+     ]
+    },
+    {
+     "prompt": "停车棚里有自行车24辆、电动自行车8辆。求自行车的辆数是电动自行车的几倍，正确的算式是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "24除以8等于3"
+      },
+      {
+       "label": "B",
+       "text": "24减8等于16"
+      },
+      {
+       "label": "C",
+       "text": "24加8等于32"
+      },
+      {
+       "label": "D",
+       "text": "24乘8等于192"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "求24辆是8辆的几倍，就是求24里面有几个8，24除以8得3，所以是3倍。",
+     "id": "msj_p1114_q3",
+     "topicId": "msj_p1114",
+     "question": "停车棚里有自行车24辆、电动自行车8辆。求自行车的辆数是电动自行车的几倍，正确的算式是（　）。"
+    },
+    {
+     "prompt": "停车棚里有自行车24辆、电动自行车8辆。自行车比电动自行车多多少辆？",
+     "answer": 16,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "求多多少辆用减法，24减8得16，自行车比电动自行车多16辆。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 24}, {\"type\": \"num\", \"value\": 8}]}",
+     "id": "msj_p1114_q4",
+     "topicId": "msj_p1114",
+     "question": "停车棚里有自行车24辆、电动自行车8辆。自行车比电动自行车多多少辆？"
+    },
+    {
+     "prompt": "小红采集了3片枫叶，小敏采集了12片。小敏采集的片数是小红的多少倍？",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "求12是3的几倍，就是求12里面有几个3，12除以3得4，所以是4倍。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 12}, {\"type\": \"num\", \"value\": 3}]}",
+     "id": "msj_p1114_q5",
+     "topicId": "msj_p1114",
+     "question": "小红采集了3片枫叶，小敏采集了12片。小敏采集的片数是小红的多少倍？"
+    },
+    {
+     "prompt": "下面哪道题要用除法算？",
+     "options": [
+      {
+       "label": "A",
+       "text": "蓝花2盆，红花是蓝花的4倍，红花有多少盆"
+      },
+      {
+       "label": "B",
+       "text": "红花8盆、蓝花2盆，红花的盆数是蓝花的几倍"
+      },
+      {
+       "label": "C",
+       "text": "蓝花2盆，黄花比蓝花多4盆，黄花有多少盆"
+      },
+      {
+       "label": "D",
+       "text": "黄花6盆、蓝花2盆，两种花一共有多少盆"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "求几倍要用除法；已知1份求几倍是多少用乘法，求多多少和一共多少用减法、加法。",
+     "id": "msj_p1114_q6",
+     "topicId": "msj_p1114",
+     "question": "下面哪道题要用除法算？"
+    },
+    {
+     "prompt": "妈妈今年32岁，爸爸比妈妈大3岁，小阳今年7岁。爸爸的年龄是小阳的多少倍？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "先求爸爸的年龄，32加3得35岁；再求35是7的几倍，35除以7得5，所以是5倍。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 32}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"num\", \"value\": 7}]}",
+     "id": "msj_p1114_q7",
+     "topicId": "msj_p1114",
+     "question": "妈妈今年32岁，爸爸比妈妈大3岁，小阳今年7岁。爸爸的年龄是小阳的多少倍？"
+    },
+    {
+     "prompt": "停车棚里有自行车24辆、电动自行车8辆。请你提出一个用除法解决的问题，并解答。",
+     "answer": "自行车的辆数是电动自行车的几倍？24除以8等于3，是3倍。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "用除法解决的问题一般问几倍或平均分，这里问两种车辆数之间的倍数关系，用24除以8计算。",
+     "id": "msj_p1114_q8",
+     "topicId": "msj_p1114",
+     "question": "停车棚里有自行车24辆、电动自行车8辆。请你提出一个用除法解决的问题，并解答。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1115",
+   "description": "求一个数的几倍是多少：小红采集3片枫叶，小伟采集的片数是小红的2倍，就是求3的2倍是多少，也就是求2个3相加的和，用3乘2得6；同样算出小敏采集3乘4等于12片；知道求一个数量的几倍是多少用乘法算，会先摆一摆、画直条再列式。",
+   "mastery_criteria": [
+    "会用乘法求一个数量的几倍是多少，能说清就是求几个几相加"
+   ],
+   "misconceptions": [
+    "把“是几倍”算成加几，如把3的2倍算成3加2",
+    "求几倍是多少时用除法算"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "prompt": "小红采集了3片枫叶，小伟采集的片数是小红的2倍。小伟采集了多少片？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "3片的2倍就是2个3片，3乘2得6，小伟采集了6片。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}",
+     "id": "msj_p1115_q1",
+     "topicId": "msj_p1115",
+     "question": "小红采集了3片枫叶，小伟采集的片数是小红的2倍。小伟采集了多少片？"
+    },
+    {
+     "prompt": "小红采集了3片枫叶，小敏采集的片数是小红的4倍。小敏采集了多少片？",
+     "answer": 12,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "3片的4倍就是4个3片，3乘4得12，小敏采集了12片。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 4}]}",
+     "id": "msj_p1115_q2",
+     "topicId": "msj_p1115",
+     "question": "小红采集了3片枫叶，小敏采集的片数是小红的4倍。小敏采集了多少片？"
+    },
+    {
+     "prompt": "求3的2倍是多少，就是求（　）个3相加的和。",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "3的2倍表示有2份、每份是3，也就是2个3相加，用3乘2算得6。",
+     "id": "msj_p1115_q3",
+     "topicId": "msj_p1115",
+     "question": "求3的2倍是多少，就是求（　）个3相加的和。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ]
+    },
+    {
+     "prompt": "二年级举办美术作品展，贝壳画有6幅，树叶画的幅数是贝壳画的4倍。树叶画有多少幅？",
+     "answer": 24,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "6幅的4倍就是4个6幅，6乘4得24，所以树叶画有24幅。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 4}]}",
+     "id": "msj_p1115_q4",
+     "topicId": "msj_p1115",
+     "question": "二年级举办美术作品展，贝壳画有6幅，树叶画的幅数是贝壳画的4倍。树叶画有多少幅？"
+    },
+    {
+     "prompt": "一头大象身高2米，一只长颈鹿的身高是这头大象的3倍。这只长颈鹿的身高是多少米？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "2米的3倍就是3个2米，2乘3得6，所以长颈鹿高6米。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}",
+     "id": "msj_p1115_q5",
+     "topicId": "msj_p1115",
+     "question": "一头大象身高2米，一只长颈鹿的身高是这头大象的3倍。这只长颈鹿的身高是多少米？"
+    },
+    {
+     "prompt": "一个文具盒9元，一个书包的价格是文具盒的8倍。求书包多少元，正确的算式是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "9加8"
+      },
+      {
+       "label": "B",
+       "text": "9乘8"
+      },
+      {
+       "label": "C",
+       "text": "9除以8"
+      },
+      {
+       "label": "D",
+       "text": "8减9"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "书包的价格是文具盒的8倍，就是求9元的8倍是多少，用9乘8算，得72元。",
+     "id": "msj_p1115_q6",
+     "topicId": "msj_p1115",
+     "question": "一个文具盒9元，一个书包的价格是文具盒的8倍。求书包多少元，正确的算式是（　）。"
+    },
+    {
+     "prompt": "关于求一个数量的几倍是多少，下面说法正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "求几倍是多少要用除法"
+      },
+      {
+       "label": "B",
+       "text": "求几倍是多少就是求两个数量相差多少"
+      },
+      {
+       "label": "C",
+       "text": "求一个数量的几倍是多少，就是求几个这样的数量相加的和"
+      },
+      {
+       "label": "D",
+       "text": "几倍就是多几"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "几倍表示有几份，求一个数量的几倍是多少就是求几个几相加，用乘法算，不是求相差多少。",
+     "id": "msj_p1115_q7",
+     "topicId": "msj_p1115",
+     "question": "关于求一个数量的几倍是多少，下面说法正确的是（　）。"
+    },
+    {
+     "prompt": "讲一个用5乘2解决的故事，并说一说5的2倍表示什么意思。",
+     "answer": "每盒有5个乒乓球，2盒一共有多少个？5的2倍表示2个5，5乘2得10个。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "5的2倍就是把5看作1份、取这样的2份，也就是2个5相加，用乘法算得10。",
+     "id": "msj_p1115_q8",
+     "topicId": "msj_p1115",
+     "question": "讲一个用5乘2解决的故事，并说一说5的2倍表示什么意思。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1116",
+   "description": "求一个数的几倍是多少的应用：会用摆一摆、画直条的方法表示几倍关系，再列乘法算式解答；能解决美术作品展中树叶画的幅数、书包价格是文具盒的几倍、鸡的只数是鸭的2倍要填表等问题，会自己讲一个求几倍是多少的故事。",
+   "mastery_criteria": [
+    "能读懂几倍关系的实际问题，先表示出几份再列乘法解答"
+   ],
+   "misconceptions": [
+    "看到几倍就乱用减法，把几倍关系当成相差关系",
+    "填表时把倍数关系反过来用，把鸡的只数当成1份"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "prompt": "摆4个圆片，三角形的个数是圆片的3倍。要摆多少个三角形？",
+     "answer": 12,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "4个的3倍就是3个4，4乘3得12，所以要摆12个三角形。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 3}]}",
+     "id": "msj_p1116_q1",
+     "topicId": "msj_p1116",
+     "question": "摆4个圆片，三角形的个数是圆片的3倍。要摆多少个三角形？"
+    },
+    {
+     "prompt": "贝壳画有6幅，树叶画的幅数是贝壳画的4倍。两种画一共有多少幅？",
+     "answer": 30,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "先求树叶画，6乘4得24幅；再把两种画合起来，6加24得30幅。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 4}]}]}",
+     "id": "msj_p1116_q2",
+     "topicId": "msj_p1116",
+     "question": "贝壳画有6幅，树叶画的幅数是贝壳画的4倍。两种画一共有多少幅？"
+    },
+    {
+     "prompt": "鸡的只数是鸭的2倍，鸭有3只，鸡有多少只？",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "鸭的3只是1份，鸡有这样的2份，就是2个3只，3乘2得6只，所以鸡有6只。",
+     "id": "msj_p1116_q3",
+     "topicId": "msj_p1116",
+     "question": "鸡的只数是鸭的2倍，鸭有3只，鸡有多少只？",
+     "options": [
+      {
+       "label": "A",
+       "text": "5只"
+      },
+      {
+       "label": "B",
+       "text": "6只"
+      },
+      {
+       "label": "C",
+       "text": "3只"
+      },
+      {
+       "label": "D",
+       "text": "9只"
+      }
+     ]
+    },
+    {
+     "prompt": "一支钢笔9元，一个书包的价格是钢笔的4倍。一个书包多少元？",
+     "answer": 36,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "9元的4倍就是4个9元，9乘4得36，所以一个书包36元。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 9}, {\"type\": \"num\", \"value\": 4}]}",
+     "id": "msj_p1116_q4",
+     "topicId": "msj_p1116",
+     "question": "一支钢笔9元，一个书包的价格是钢笔的4倍。一个书包多少元？"
+    },
+    {
+     "prompt": "鸡的只数是鸭的2倍，鸭有4只。求鸡有多少只，正确的想法是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "把鸡的只数看作1份，鸭有这样的2份"
+      },
+      {
+       "label": "B",
+       "text": "用4加2得6只"
+      },
+      {
+       "label": "C",
+       "text": "把鸭的4只看作1份，鸡有这样的2份，4乘2得8只"
+      },
+      {
+       "label": "D",
+       "text": "用4除以2得2只"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "题里说鸡是鸭的2倍，鸭的只数是1份，鸡有2份，所以用4乘2算鸡的只数。",
+     "id": "msj_p1116_q5",
+     "topicId": "msj_p1116",
+     "question": "鸡的只数是鸭的2倍，鸭有4只。求鸡有多少只，正确的想法是（　）。"
+    },
+    {
+     "prompt": "小华有5张画片，小丽的画片数是小华的2倍。两人的画片一共有多少张？",
+     "options": [
+      {
+       "label": "A",
+       "text": "10张"
+      },
+      {
+       "label": "B",
+       "text": "7张"
+      },
+      {
+       "label": "C",
+       "text": "12张"
+      },
+      {
+       "label": "D",
+       "text": "15张"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先求小丽的画片，5乘2得10张；两人合起来5加10得15张。",
+     "id": "msj_p1116_q6",
+     "topicId": "msj_p1116",
+     "question": "小华有5张画片，小丽的画片数是小华的2倍。两人的画片一共有多少张？"
+    },
+    {
+     "prompt": "一个书包40元，一支钢笔5元。书包的价格是钢笔的多少倍？",
+     "answer": 8,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "求40元是5元的几倍，就是求40里面有几个5，40除以5得8，所以是8倍。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 40}, {\"type\": \"num\", \"value\": 5}]}",
+     "id": "msj_p1116_q7",
+     "topicId": "msj_p1116",
+     "question": "一个书包40元，一支钢笔5元。书包的价格是钢笔的多少倍？"
+    },
+    {
+     "prompt": "用“3的4倍”讲一个生活中的故事，并算出结果。",
+     "answer": "每个盘子放3个苹果，4个盘子一共放多少个？3的4倍是12个。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "把3个苹果看作1份，4个盘子就是这样的4份，3乘4得12个，求几倍是多少用乘法。",
+     "id": "msj_p1116_q8",
+     "topicId": "msj_p1116",
+     "question": "用“3的4倍”讲一个生活中的故事，并算出结果。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1117",
+   "description": "综合练习与整理复习：整理倍的认识和两类问题，会求一个数量是另一个数量的几倍（书包40元是文具盒8元的5倍），也会求一个数量的几倍是多少（拍球9人，跑步的人数是拍球的4倍，有36人）；还会解决爷爷的岁数是小华几倍、长颈鹿身高、跳绳与踢毽子人数比较等问题。",
+   "mastery_criteria": [
+    "能分清求几倍和求几倍是多少两类问题，选对乘法或除法解答"
+   ],
+   "misconceptions": [
+    "把求几倍和求几倍是多少混用，该除的时候乘",
+    "解决两步问题时只算一步就写答"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "prompt": "一个书包40元，一个文具盒8元。书包的价格是文具盒的多少倍？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "求40元是8元的几倍，就是求40里面有几个8，40除以8得5，所以是5倍。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 40}, {\"type\": \"num\", \"value\": 8}]}",
+     "id": "msj_p1117_q1",
+     "topicId": "msj_p1117",
+     "question": "一个书包40元，一个文具盒8元。书包的价格是文具盒的多少倍？"
+    },
+    {
+     "prompt": "一个书包40元，一个文具盒8元。书包比文具盒贵多少元？",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "求贵多少元用减法，40减8得32，所以书包比文具盒贵32元。",
+     "id": "msj_p1117_q2",
+     "topicId": "msj_p1117",
+     "question": "一个书包40元，一个文具盒8元。书包比文具盒贵多少元？",
+     "options": [
+      {
+       "label": "A",
+       "text": "48元"
+      },
+      {
+       "label": "B",
+       "text": "5元"
+      },
+      {
+       "label": "C",
+       "text": "32元"
+      },
+      {
+       "label": "D",
+       "text": "8元"
+      }
+     ]
+    },
+    {
+     "prompt": "大课间活动时，拍球的同学有3组，每组3人。跑步的人数是拍球的4倍。跑步的有多少人？",
+     "answer": 36,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "先求拍球的人数，3乘3得9人；跑步的人数是拍球的4倍，9乘4得36人。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"num\", \"value\": 4}]}",
+     "id": "msj_p1117_q3",
+     "topicId": "msj_p1117",
+     "question": "大课间活动时，拍球的同学有3组，每组3人。跑步的人数是拍球的4倍。跑步的有多少人？"
+    },
+    {
+     "prompt": "跳绳的有15人，踢毽子的有5人。跳绳的人数是踢毽子的（　）倍。",
+     "answer": "3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "求15是5的几倍，就是求15里面有几个5，15除以5得3，所以是3倍。",
+     "id": "msj_p1117_q4",
+     "topicId": "msj_p1117",
+     "question": "跳绳的有15人，踢毽子的有5人。跳绳的人数是踢毽子的（　）倍。"
+    },
+    {
+     "prompt": "爸爸的岁数是小华的4倍，爷爷的岁数是爸爸的2倍。爷爷的岁数是小华的几倍？",
+     "options": [
+      {
+       "label": "A",
+       "text": "6倍"
+      },
+      {
+       "label": "B",
+       "text": "2倍"
+      },
+      {
+       "label": "C",
+       "text": "4倍"
+      },
+      {
+       "label": "D",
+       "text": "8倍"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把小华的岁数看作1份，爸爸是4份，爷爷是爸爸的2倍就是2个4份，一共8份，所以是8倍。",
+     "id": "msj_p1117_q5",
+     "topicId": "msj_p1117",
+     "question": "爸爸的岁数是小华的4倍，爷爷的岁数是爸爸的2倍。爷爷的岁数是小华的几倍？"
+    },
+    {
+     "prompt": "一头大象身高2米，一只长颈鹿的身高是大象的3倍。长颈鹿比大象高多少米？",
+     "options": [
+      {
+       "label": "A",
+       "text": "4米"
+      },
+      {
+       "label": "B",
+       "text": "6米"
+      },
+      {
+       "label": "C",
+       "text": "3米"
+      },
+      {
+       "label": "D",
+       "text": "5米"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先求长颈鹿的高，2乘3得6米；再求高多少米，6减2得4米。",
+     "id": "msj_p1117_q6",
+     "topicId": "msj_p1117",
+     "question": "一头大象身高2米，一只长颈鹿的身高是大象的3倍。长颈鹿比大象高多少米？"
+    },
+    {
+     "prompt": "小红采集了3片枫叶，小伟采集的是小红的2倍，小敏采集的是小伟的2倍。小敏采集了多少片？",
+     "answer": 12,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "先求小伟采集的片数，3乘2得6片；再求小敏采集的，6乘2得12片。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 2}]}",
+     "id": "msj_p1117_q7",
+     "topicId": "msj_p1117",
+     "question": "小红采集了3片枫叶，小伟采集的是小红的2倍，小敏采集的是小伟的2倍。小敏采集了多少片？"
+    },
+    {
+     "prompt": "把“拍球有9人，跑步的人数是拍球的4倍”改编成一道求几倍的题，并解答。",
+     "answer": "拍球有9人，跑步的有36人，跑步的人数是拍球的几倍？36除以9等于4，是4倍。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "已知1份和几倍求总数用乘法；反过来已知两个数量求几倍用除法，改编时把已知条件换一换就可以了。",
+     "id": "msj_p1117_q8",
+     "topicId": "msj_p1117",
+     "question": "把“拍球有9人，跑步的人数是拍球的4倍”改编成一道求几倍的题，并解答。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1118",
+   "description": "秒的认识与时间体验：在钟面上拨一拨、说一说，发现12个大格每个大格5个小格、一共60个小格，时针走1个大格分针走1圈，认识1时等于60分；会看8时15分、9时45分、11时10分这样的时刻；知道秒是比分更小的单位，秒针走1圈分针走1小格，1分等于60秒，并体验30秒能拍几下球、跳几下绳。",
+   "mastery_criteria": [
+    "会看钟面上的时刻，知道1时等于60分、1分等于60秒"
+   ],
+   "misconceptions": [
+    "把时针和分针看反，把8时15分读成15时8分",
+    "认为时间单位之间是十进制，把1时当成100分"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "prompt": "钟面上分针指向12，时针指向几，就是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "几时12分"
+      },
+      {
+       "label": "B",
+       "text": "12时"
+      },
+      {
+       "label": "C",
+       "text": "几时30分"
+      },
+      {
+       "label": "D",
+       "text": "几时"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "分针指向12说明正好是整时，这时时针指向几就是几时。",
+     "id": "msj_p1118_q1",
+     "topicId": "msj_p1118",
+     "question": "钟面上分针指向12，时针指向几，就是（　）。"
+    },
+    {
+     "prompt": "钟面上一共有多少个大格？",
+     "answer": 12,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "钟面上从12到1、1到2接着数下去，一共有12个大格，每个大格里又有5个小格。",
+     "verify": "{\"type\": \"num\", \"value\": 12}",
+     "id": "msj_p1118_q2",
+     "topicId": "msj_p1118",
+     "question": "钟面上一共有多少个大格？"
+    },
+    {
+     "prompt": "秒是比分更小的时间单位，1分等于（　）秒。",
+     "answer": "60",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "秒针走1圈，分针正好走1个小格，这段时间就是1分，所以1分等于60秒。",
+     "id": "msj_p1118_q3",
+     "topicId": "msj_p1118",
+     "question": "秒是比分更小的时间单位，1分等于（　）秒。"
+    },
+    {
+     "prompt": "亮亮一家到达山顶时，时针在9和10之间，分针指向9。这时是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "9时45分"
+      },
+      {
+       "label": "B",
+       "text": "10时45分"
+      },
+      {
+       "label": "C",
+       "text": "9时9分"
+      },
+      {
+       "label": "D",
+       "text": "45时9分"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "时针在9和10之间是9时多；分针指向9，从12起走过9个大格共45个小格，就是45分，所以是9时45分。",
+     "id": "msj_p1118_q4",
+     "topicId": "msj_p1118",
+     "question": "亮亮一家到达山顶时，时针在9和10之间，分针指向9。这时是（　）。"
+    },
+    {
+     "prompt": "准备回家时，时针刚过11，分针指向2。这时是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2时11分"
+      },
+      {
+       "label": "B",
+       "text": "11时10分"
+      },
+      {
+       "label": "C",
+       "text": "11时2分"
+      },
+      {
+       "label": "D",
+       "text": "11时20分"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "时针刚过11说明是11时多；分针指向2，从12起走过2个大格共10个小格，是10分，所以是11时10分。",
+     "id": "msj_p1118_q5",
+     "topicId": "msj_p1118",
+     "question": "准备回家时，时针刚过11，分针指向2。这时是（　）。"
+    },
+    {
+     "prompt": "秒针从12起走了20个小格，经过了多少秒？",
+     "answer": 20,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "秒针走1个小格是1秒，走20个小格就是20秒。",
+     "verify": "{\"type\": \"num\", \"value\": 20}",
+     "id": "msj_p1118_q6",
+     "topicId": "msj_p1118",
+     "question": "秒针从12起走了20个小格，经过了多少秒？"
+    },
+    {
+     "prompt": "秒针走1圈，分针正好走1个小格，所以1分等于60（　）。",
+     "answer": "秒",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "分针走1小格的时间是1分，这1分里秒针正好走1圈、也就是60个小格，所以1分等于60秒。",
+     "id": "msj_p1118_q7",
+     "topicId": "msj_p1118",
+     "question": "秒针走1圈，分针正好走1个小格，所以1分等于60（　）。"
+    },
+    {
+     "prompt": "做一做：30秒拍球、30秒跳绳，说一说你是怎样记录结果的。",
+     "answer": "拍球时请同学数我拍的下数，30秒拍了30下；跳绳30秒跳了40下，把这两个数记在表格里。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "做活动时一人计时、一人数数、一人记录，30秒就是秒针走半圈，把结果填进表格再比一比，就知道30秒能做什么了。",
+     "id": "msj_p1118_q8",
+     "topicId": "msj_p1118",
+     "question": "做一做：30秒拍球、30秒跳绳，说一说你是怎样记录结果的。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1119",
+   "description": "经过了多长时间：会用两种方法算出亮亮一家从家到山下停车场用了45分钟（7时30分到8时是30分，8时到8时15分是15分，合起来45分；也可以想成比1小时少15分钟，60减15得45）；会算8时15分到9时45分上山用了多长时间，也会看课程表算一节课的时间。",
+   "mastery_criteria": [
+    "会算从几时几分到几时几分经过的时间，会用分段算或借1时当60分算"
+   ],
+   "misconceptions": [
+    "用结束时刻减开始时刻时把时和分各自相减，忘了借1时当60分",
+    "把经过的时间写成时刻的样子，如把45分钟写成8时45分"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "prompt": "从7时30分到8时，经过了（　）。",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "7时30分到8时，分针正好走过30个小格，每个小格是1分钟，所以经过了30分钟。",
+     "id": "msj_p1119_q1",
+     "topicId": "msj_p1119",
+     "question": "从7时30分到8时，经过了（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "30分钟"
+      },
+      {
+       "label": "B",
+       "text": "60分钟"
+      },
+      {
+       "label": "C",
+       "text": "15分钟"
+      },
+      {
+       "label": "D",
+       "text": "90分钟"
+      }
+     ]
+    },
+    {
+     "prompt": "从8时到8时15分，经过了多少分钟？",
+     "answer": 15,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "8时到8时15分，分针走了15个小格，经过15分钟。",
+     "verify": "{\"type\": \"num\", \"value\": 15}",
+     "id": "msj_p1119_q2",
+     "topicId": "msj_p1119",
+     "question": "从8时到8时15分，经过了多少分钟？"
+    },
+    {
+     "prompt": "亮亮一家7时30分从家出发，8时15分到山下停车场。路上用了多少分钟？",
+     "answer": 45,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "7时30分到8时是30分钟，8时到8时15分是15分钟，30加15得45分钟。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 30}, {\"type\": \"num\", \"value\": 15}]}",
+     "id": "msj_p1119_q3",
+     "topicId": "msj_p1119",
+     "question": "亮亮一家7时30分从家出发，8时15分到山下停车场。路上用了多少分钟？"
+    },
+    {
+     "prompt": "从7时30分到8时15分，还可以这样想：比1小时少15分钟。1小时是60分钟，用了多少分钟？",
+     "answer": 45,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "1小时是60分钟，比1小时少15分钟就是60减15，得45分钟，和分段算的结果一样。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 60}, {\"type\": \"num\", \"value\": 15}]}",
+     "id": "msj_p1119_q4",
+     "topicId": "msj_p1119",
+     "question": "从7时30分到8时15分，还可以这样想：比1小时少15分钟。1小时是60分钟，用了多少分钟？"
+    },
+    {
+     "prompt": "亮亮一家8时15分开始上山，9时45分到达山顶。上山用了多长时间？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1小时70分"
+      },
+      {
+       "label": "B",
+       "text": "1小时30分"
+      },
+      {
+       "label": "C",
+       "text": "30分钟"
+      },
+      {
+       "label": "D",
+       "text": "2小时30分"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "8时15分到9时15分是1小时，9时15分到9时45分是30分钟，合起来是1小时30分。",
+     "id": "msj_p1119_q5",
+     "topicId": "msj_p1119",
+     "question": "亮亮一家8时15分开始上山，9时45分到达山顶。上山用了多长时间？"
+    },
+    {
+     "prompt": "亮亮一家9时45分到达山顶，11时10分准备回家。这段时间是多少分钟？",
+     "answer": 85,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "9时45分到10时是15分钟，10时到11时是60分钟，11时到11时10分是10分钟，15加60加10得85分钟。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 60}, {\"type\": \"num\", \"value\": 45}]}, {\"type\": \"num\", \"value\": 60}]}, {\"type\": \"num\", \"value\": 10}]}",
+     "id": "msj_p1119_q6",
+     "topicId": "msj_p1119",
+     "question": "亮亮一家9时45分到达山顶，11时10分准备回家。这段时间是多少分钟？"
+    },
+    {
+     "prompt": "一节课8时20分开始，9时整下课。一节课上了多少分钟？",
+     "options": [
+      {
+       "label": "A",
+       "text": "80分钟"
+      },
+      {
+       "label": "B",
+       "text": "20分钟"
+      },
+      {
+       "label": "C",
+       "text": "40分钟"
+      },
+      {
+       "label": "D",
+       "text": "1小时20分"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "8时20分到9时是40分钟，也可以想成8时20分到8时60分，60减20得40分钟。",
+     "id": "msj_p1119_q7",
+     "topicId": "msj_p1119",
+     "question": "一节课8时20分开始，9时整下课。一节课上了多少分钟？"
+    },
+    {
+     "prompt": "亮亮一家8时15分上山，9时45分到山顶，11时10分准备回家。算一算从上山到准备回家一共用了多长时间。",
+     "answer": "从8时15分到11时10分一共是2小时55分钟。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "8时15分到10时15分是2小时，再到11时10分是55分钟，合起来2小时55分钟；也可以先算上山用1小时30分，山顶停留和下山用1小时25分，加起来也是2小时55分。",
+     "id": "msj_p1119_q8",
+     "topicId": "msj_p1119",
+     "question": "亮亮一家8时15分上山，9时45分到山顶，11时10分准备回家。算一算从上山到准备回家一共用了多长时间。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1120",
+   "description": "整十数乘一位数和两位数乘一位数（不进位）：结合买蜂蜜、买饼干的情境，用20、40、60这样数一数或20加20加20的方法算出20乘3得60，用2个十乘3得6个十说明道理；再用3个10是30、3个2是6、合起来是36算出12乘3；会计算24乘2、13乘3、32乘3、44乘2等算式，也会看图填一填10乘3加2乘3。",
+   "mastery_criteria": [
+    "会口算整十数乘一位数和两位数乘一位数，能说清先算几个十再算几个一"
+   ],
+   "misconceptions": [
+    "20乘3算成6，忘了6个十后面还有一个0",
+    "12乘3只算3乘2得6，把3个10漏掉，结果写成6"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "prompt": "20是2个十，2个十乘4得8个十，20乘4等于多少？",
+     "answer": 80,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "20表示2个十，2个十乘4得8个十，8个十是80，所以20乘4等于80。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 20}, {\"type\": \"num\", \"value\": 4}]}",
+     "id": "msj_p1120_q1",
+     "topicId": "msj_p1120",
+     "question": "20是2个十，2个十乘4得8个十，20乘4等于多少？"
+    },
+    {
+     "prompt": "先算3个10是30，再算3个3是9，13乘3等于多少？",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把13分成10和3，3个10是30，3个3是9，30加9得39，所以13乘3等于39。",
+     "id": "msj_p1120_q2",
+     "topicId": "msj_p1120",
+     "question": "先算3个10是30，再算3个3是9，13乘3等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "36"
+      },
+      {
+       "label": "B",
+       "text": "39"
+      },
+      {
+       "label": "C",
+       "text": "16"
+      },
+      {
+       "label": "D",
+       "text": "30"
+      }
+     ]
+    },
+    {
+     "prompt": "先算2个十乘2得4个十，再算4乘2得8，24乘2等于多少？",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "2个十乘2是4个十，也就是40；4乘2得8；40加8得48，所以24乘2等于48。",
+     "id": "msj_p1120_q3",
+     "topicId": "msj_p1120",
+     "question": "先算2个十乘2得4个十，再算4乘2得8，24乘2等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "28"
+      },
+      {
+       "label": "B",
+       "text": "44"
+      },
+      {
+       "label": "C",
+       "text": "48"
+      },
+      {
+       "label": "D",
+       "text": "84"
+      }
+     ]
+    },
+    {
+     "prompt": "计算12乘3时，先算3个10是30，再算3个2是6，最后30加6得（　）。",
+     "answer": "36",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "把12拆成10和2分别乘3，再把两个积合起来，30加6得36。",
+     "id": "msj_p1120_q4",
+     "topicId": "msj_p1120",
+     "question": "计算12乘3时，先算3个10是30，再算3个2是6，最后30加6得（　）。"
+    },
+    {
+     "prompt": "20乘3得60，下面哪个说法把道理说清楚了？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2乘3得6，所以结果是6"
+      },
+      {
+       "label": "B",
+       "text": "20加3得23"
+      },
+      {
+       "label": "C",
+       "text": "2个一乘3得6个一"
+      },
+      {
+       "label": "D",
+       "text": "2个十乘3得6个十，6个十是60"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "20表示2个十，2个十乘3得6个十，6个十写成数就是60，所以20乘3得60。",
+     "id": "msj_p1120_q5",
+     "topicId": "msj_p1120",
+     "question": "20乘3得60，下面哪个说法把道理说清楚了？"
+    },
+    {
+     "prompt": "先算3个十乘3得9个十，再算2乘3得6，32乘3等于多少？",
+     "answer": 96,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "3个十乘3是9个十，也就是90；2乘3得6；90加6得96，所以32乘3等于96。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 32}, {\"type\": \"num\", \"value\": 3}]}",
+     "id": "msj_p1120_q6",
+     "topicId": "msj_p1120",
+     "question": "先算3个十乘3得9个十，再算2乘3得6，32乘3等于多少？"
+    },
+    {
+     "prompt": "买一个书包要44元，买2个要多少元？",
+     "answer": 88,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "4个十乘2是8个十，也就是80；4乘2得8；80加8得88，所以买2个要88元。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 44}, {\"type\": \"num\", \"value\": 2}]}",
+     "id": "msj_p1120_q7",
+     "topicId": "msj_p1120",
+     "question": "买一个书包要44元，买2个要多少元？"
+    },
+    {
+     "prompt": "看图说一说：3个10是30，3个2是6，合起来是36。请用这种想法算出12乘3。",
+     "answer": "12乘3，先把12分成10和2，10乘3得30，2乘3得6，30加6得36。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "两位数乘一位数可以先按十和一分开算，再把两个积相加，这样口算又快又不容易错。",
+     "id": "msj_p1120_q8",
+     "topicId": "msj_p1120",
+     "question": "看图说一说：3个10是30，3个2是6，合起来是36。请用这种想法算出12乘3。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1121",
+   "description": "整十数除以一位数和两位数除以一位数：结合3盒蜂蜜一共60元、3盒饼干一共36元的情境，想6个十平均分成3份每份是2个十，算出60除以3得20，也可以想20乘3得60来检验；用先分十再分一的方法算出36除以3得12、48除以4得12；会口算90除以3、26除以2、84除以4等，会解决打乒乓球分组、比较树苗价钱的问题。",
+   "mastery_criteria": [
+    "会口算整十数除以一位数和两位数除以一位数，能说清先分十再分一的过程"
+   ],
+   "misconceptions": [
+    "60除以3算成2，把2个十当成2个一",
+    "36除以3只把6除以3得2，漏掉十位上的10，结果写成2"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "prompt": "6个十平均分成3份，每份是2个十，60除以3等于多少？",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "60是6个十，6个十平均分成3份，每份是2个十，2个十就是20，所以60除以3等于20。",
+     "id": "msj_p1121_q1",
+     "topicId": "msj_p1121",
+     "question": "6个十平均分成3份，每份是2个十，60除以3等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "30"
+      },
+      {
+       "label": "C",
+       "text": "20"
+      },
+      {
+       "label": "D",
+       "text": "63"
+      }
+     ]
+    },
+    {
+     "prompt": "先算30除以3得10，再算6除以3得2，36除以3等于多少？",
+     "answer": 12,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把36分成30和6，30除以3得10，6除以3得2，10加2得12，所以36除以3等于12。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 36}, {\"type\": \"num\", \"value\": 3}]}",
+     "id": "msj_p1121_q2",
+     "topicId": "msj_p1121",
+     "question": "先算30除以3得10，再算6除以3得2，36除以3等于多少？"
+    },
+    {
+     "prompt": "60除以3得20，可以用（　）乘3等于60来检验。",
+     "answer": "20",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "除法可以用乘法检验，20乘3得60，说明60除以3等于20是对的。",
+     "id": "msj_p1121_q3",
+     "topicId": "msj_p1121",
+     "question": "60除以3得20，可以用（　）乘3等于60来检验。"
+    },
+    {
+     "prompt": "先算40除以4得10，再算8除以4得2，48除以4等于多少？",
+     "answer": 12,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把48分成40和8，40除以4得10，8除以4得2，10加2得12，所以48除以4等于12。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 48}, {\"type\": \"num\", \"value\": 4}]}",
+     "id": "msj_p1121_q4",
+     "topicId": "msj_p1121",
+     "question": "先算40除以4得10，再算8除以4得2，48除以4等于多少？"
+    },
+    {
+     "prompt": "90是9个十，9个十除以3得3个十，90除以3等于多少？",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "90是9个十，9个十平均分成3份，每份是3个十，3个十就是30，所以90除以3等于30。",
+     "id": "msj_p1121_q5",
+     "topicId": "msj_p1121",
+     "question": "90是9个十，9个十除以3得3个十，90除以3等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "60"
+      },
+      {
+       "label": "C",
+       "text": "93"
+      },
+      {
+       "label": "D",
+       "text": "30"
+      }
+     ]
+    },
+    {
+     "prompt": "40个同学打乒乓球，都是双打（每4人一组），可以分成多少组？",
+     "options": [
+      {
+       "label": "A",
+       "text": "10组"
+      },
+      {
+       "label": "B",
+       "text": "20组"
+      },
+      {
+       "label": "C",
+       "text": "80组"
+      },
+      {
+       "label": "D",
+       "text": "4组"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "40人每4人一组，40除以4得10组；如果是单打每2人一组，就是20组。",
+     "id": "msj_p1121_q6",
+     "topicId": "msj_p1121",
+     "question": "40个同学打乒乓球，都是双打（每4人一组），可以分成多少组？"
+    },
+    {
+     "prompt": "3棵松树苗63元，5棵杨树苗55元。每棵松树苗多少元？",
+     "answer": 21,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "63除以3，60除以3得20，3除以3得1，合起来21元；杨树苗每棵55除以5得11元，松树苗贵。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 63}, {\"type\": \"num\", \"value\": 3}]}",
+     "id": "msj_p1121_q7",
+     "topicId": "msj_p1121",
+     "question": "3棵松树苗63元，5棵杨树苗55元。每棵松树苗多少元？"
+    },
+    {
+     "prompt": "先分一分，再说一说怎样计算48除以4。",
+     "answer": "把48分成40和8，40除以4得10，8除以4得2，10加2得12。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "两位数除以一位数可以先把十位上的数除一除，再把个位上的数除一除，最后把两个商加起来。",
+     "id": "msj_p1121_q8",
+     "topicId": "msj_p1121",
+     "question": "先分一分，再说一说怎样计算48除以4。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1122",
+   "description": "综合练习与整理复习：整理两位数乘、除以一位数的口算方法，会算33乘2、39除以3、77除以7、84除以2、2乘42、23乘3等算式；能解决一卷绳88米剪成4米或2米长各能剪几根、76只风筝送走13只后平均分给3个班、48人平均分成4组每组几人需要几张双人课桌、两张车票96元中小宇的票价是妈妈一半等实际问题。",
+   "mastery_criteria": [
+    "能熟练口算两位数乘、除以一位数，能解决连除、平均分等实际问题"
+   ],
+   "misconceptions": [
+    "求出每组人数后忘了每张双人课桌坐2人，还要再除一次",
+    "解决问题时把单位写错，把人数写成张数"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "prompt": "先算3个十乘2得6个十，再算3乘2得6，33乘2等于多少？",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "3个十乘2是6个十，也就是60；3乘2得6；60加6得66，所以33乘2等于66。",
+     "id": "msj_p1122_q1",
+     "topicId": "msj_p1122",
+     "question": "先算3个十乘2得6个十，再算3乘2得6，33乘2等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "36"
+      },
+      {
+       "label": "B",
+       "text": "63"
+      },
+      {
+       "label": "C",
+       "text": "33"
+      },
+      {
+       "label": "D",
+       "text": "66"
+      }
+     ]
+    },
+    {
+     "prompt": "先算80除以2得40，再算4除以2得2，84除以2等于多少？",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把84分成80和4，80除以2得40，4除以2得2，40加2得42，所以84除以2等于42。",
+     "id": "msj_p1122_q2",
+     "topicId": "msj_p1122",
+     "question": "先算80除以2得40，再算4除以2得2，84除以2等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "42"
+      },
+      {
+       "label": "B",
+       "text": "24"
+      },
+      {
+       "label": "C",
+       "text": "44"
+      },
+      {
+       "label": "D",
+       "text": "82"
+      }
+     ]
+    },
+    {
+     "prompt": "学校买来一卷绳，长88米。把这卷绳都剪成4米长的短绳，一共能剪多少根？",
+     "answer": 22,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "88米每4米剪一根，88除以4，80除以4得20，8除以4得2，合起来22根。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 88}, {\"type\": \"num\", \"value\": 4}]}",
+     "id": "msj_p1122_q3",
+     "topicId": "msj_p1122",
+     "question": "学校买来一卷绳，长88米。把这卷绳都剪成4米长的短绳，一共能剪多少根？"
+    },
+    {
+     "prompt": "同样一卷88米长的绳，如果都剪成2米长的短绳，一共能剪多少根？",
+     "answer": 44,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "88除以2，80除以2得40，8除以2得4，合起来44根；短绳越短，剪出的根数越多。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 88}, {\"type\": \"num\", \"value\": 2}]}",
+     "id": "msj_p1122_q4",
+     "topicId": "msj_p1122",
+     "question": "同样一卷88米长的绳，如果都剪成2米长的短绳，一共能剪多少根？"
+    },
+    {
+     "prompt": "一共做了76只风筝，送给幼儿园13只。剩下的平均分给一年级3个班，每个班分得多少只？",
+     "options": [
+      {
+       "label": "A",
+       "text": "63只"
+      },
+      {
+       "label": "B",
+       "text": "21只"
+      },
+      {
+       "label": "C",
+       "text": "23只"
+      },
+      {
+       "label": "D",
+       "text": "25只"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先求剩下多少只，76减13得63只；再平均分给3个班，63除以3得21只。",
+     "id": "msj_p1122_q5",
+     "topicId": "msj_p1122",
+     "question": "一共做了76只风筝，送给幼儿园13只。剩下的平均分给一年级3个班，每个班分得多少只？"
+    },
+    {
+     "prompt": "三年级一班有48人，平均分成4组，每组有多少人？",
+     "answer": 12,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把48分成40和8，40除以4得10，8除以4得2，10加2得12，所以每组有12人。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 48}, {\"type\": \"num\", \"value\": 4}]}",
+     "id": "msj_p1122_q6",
+     "topicId": "msj_p1122",
+     "question": "三年级一班有48人，平均分成4组，每组有多少人？"
+    },
+    {
+     "prompt": "三年级一班有48人，平均分成4组，每组需要多少张双人课桌？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "先求每组人数，48除以4得12人；每张双人课桌坐2人，12除以2得6张。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 48}, {\"type\": \"num\", \"value\": 4}]}, {\"type\": \"num\", \"value\": 2}]}",
+     "id": "msj_p1122_q7",
+     "topicId": "msj_p1122",
+     "question": "三年级一班有48人，平均分成4组，每组需要多少张双人课桌？"
+    },
+    {
+     "prompt": "丁小宇和妈妈去外婆家，买两张火车票一共用去96元。丁小宇的火车票票价是妈妈的一半。丁小宇的票价是多少元？",
+     "answer": "妈妈一张票的价钱是丁小宇的2倍，两张票合起来是3份，96除以3得32元，丁小宇的票价是32元。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "把丁小宇的票价看作1份，妈妈的是2份，合起来3份正好96元，96除以3得32，所以丁小宇的票价是32元。",
+     "id": "msj_p1122_q8",
+     "topicId": "msj_p1122",
+     "question": "丁小宇和妈妈去外婆家，买两张火车票一共用去96元。丁小宇的火车票票价是妈妈的一半。丁小宇的票价是多少元？"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1123",
+   "description": "按不同标准分类与整理：面对一堆纽扣，先按形状分成正方形和圆形两类，数一数比出正方形纽扣多；再想还可以怎样分类，把正方形纽扣按扣眼个数分成2眼、3眼、4眼，把4眼纽扣按形状再分一次；体会同一批物体按不同标准分类结果不同，会把画片、扑克牌分一分并表示结果。",
+   "mastery_criteria": [
+    "能对同一批物体按不同标准分类，会在一次分类的基础上再分一次"
+   ],
+   "misconceptions": [
+    "分类时一会儿按形状、一会儿按颜色，标准中途变来变去",
+    "只分一次就以为分完了，不会根据需要再往下分"
+   ],
+   "type": "modeling",
+   "questions": [
+    {
+     "prompt": "把纽扣按形状分类，可以分成（　）两类。",
+     "options": [
+      {
+       "label": "A",
+       "text": "正方形和圆形"
+      },
+      {
+       "label": "B",
+       "text": "2眼和4眼"
+      },
+      {
+       "label": "C",
+       "text": "红色和黄色"
+      },
+      {
+       "label": "D",
+       "text": "大的和小的"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "按形状分就看纽扣的外形，教材上的纽扣是正方形和圆形两种，所以分成这两类。",
+     "id": "msj_p1123_q1",
+     "topicId": "msj_p1123",
+     "question": "把纽扣按形状分类，可以分成（　）两类。"
+    },
+    {
+     "prompt": "按形状把纽扣分成两类后，数出正方形纽扣有9个、圆形纽扣有6个，正方形纽扣比圆形纽扣多（　）个。",
+     "answer": "3",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "正方形纽扣有9个，圆形纽扣有6个，9减6得3，所以正方形纽扣比圆形纽扣多3个。",
+     "id": "msj_p1123_q2",
+     "topicId": "msj_p1123",
+     "question": "按形状把纽扣分成两类后，数出正方形纽扣有9个、圆形纽扣有6个，正方形纽扣比圆形纽扣多（　）个。"
+    },
+    {
+     "prompt": "同一堆纽扣，按形状分和按扣眼个数分，得到的结果（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "一定完全一样"
+      },
+      {
+       "label": "B",
+       "text": "不一样，因为分类标准不同"
+      },
+      {
+       "label": "C",
+       "text": "都无法统计"
+      },
+      {
+       "label": "D",
+       "text": "只和纽扣的颜色有关"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "分类标准不同，分出的类别和各类的个数就不同，所以两次分类的结果不一样。",
+     "id": "msj_p1123_q3",
+     "topicId": "msj_p1123",
+     "question": "同一堆纽扣，按形状分和按扣眼个数分，得到的结果（　）。"
+    },
+    {
+     "prompt": "摆出的纽扣中正方形有9个、圆形有6个。两种纽扣一共有多少个？",
+     "answer": 15,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把两类的个数合起来就是总数，9加6得15个。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 9}, {\"type\": \"num\", \"value\": 6}]}",
+     "id": "msj_p1123_q4",
+     "topicId": "msj_p1123",
+     "question": "摆出的纽扣中正方形有9个、圆形有6个。两种纽扣一共有多少个？"
+    },
+    {
+     "prompt": "把4眼纽扣再按形状分一分，是想知道（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "纽扣一共有多少个"
+      },
+      {
+       "label": "B",
+       "text": "纽扣是什么颜色的"
+      },
+      {
+       "label": "C",
+       "text": "4眼纽扣中哪种形状的最多"
+      },
+      {
+       "label": "D",
+       "text": "纽扣是谁做的"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "已经限定在4眼纽扣里，再按形状分，就能比较4眼纽扣中正方形和圆形哪种多。",
+     "id": "msj_p1123_q5",
+     "topicId": "msj_p1123",
+     "question": "把4眼纽扣再按形状分一分，是想知道（　）。"
+    },
+    {
+     "prompt": "扑克牌按花色分成4类，每类13张。一共有多少张？",
+     "answer": 52,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "按花色分成4类，每类13张，13乘4，10乘4得40，3乘4得12，40加12得52，所以一共有52张。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 13}]}",
+     "id": "msj_p1123_q6",
+     "topicId": "msj_p1123",
+     "question": "扑克牌按花色分成4类，每类13张。一共有多少张？"
+    },
+    {
+     "prompt": "下面哪种说法是对的？",
+     "options": [
+      {
+       "label": "A",
+       "text": "一批物体只能有一种分法"
+      },
+      {
+       "label": "B",
+       "text": "分类标准可以边分边换，换了也没关系"
+      },
+      {
+       "label": "C",
+       "text": "分类后不用检查有没有遗漏"
+      },
+      {
+       "label": "D",
+       "text": "同一批物体可以按不同的标准分类，分类结果可能不同"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "标准不同结果不同，但一次分类只能用同一个标准，分完还要检查有没有重复和遗漏。",
+     "id": "msj_p1123_q7",
+     "topicId": "msj_p1123",
+     "question": "下面哪种说法是对的？"
+    },
+    {
+     "prompt": "有8个正方形纽扣和5个圆形纽扣，请按形状分类，并用表格表示结果。",
+     "answer": "按形状分成两类：正方形8个，圆形5个，合起来一共13个。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "先定标准是形状，再数出每类的个数填进表格，最后把两类合起来检查是不是13个，确认没有遗漏。",
+     "id": "msj_p1123_q8",
+     "topicId": "msj_p1123",
+     "question": "有8个正方形纽扣和5个圆形纽扣，请按形状分类，并用表格表示结果。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1124",
+   "description": "收集数据分类整理：先在小组里了解每个同学有没有蛀牙，全班交流后把数据分类整理成没有蛀牙和有蛀牙两类；为了知道有蛀牙的同学中几颗蛀牙的人最多，再按蛀牙颗数分类整理一次；还会在课程表上分类数出各门课程每星期的节数并涂色（1个格表示1节），记录石头剪刀布20次的结果。",
+   "mastery_criteria": [
+    "会先收集数据再按标准分类整理，能用表格或涂色表示结果"
+   ],
+   "misconceptions": [
+    "还没收集数据就先写结论，凭印象填表",
+    "记录时把同一人的结果记两次或者漏记，分类后有重复和遗漏"
+   ],
+   "type": "modeling",
+   "questions": [
+    {
+     "prompt": "要知道全班同学中有多少人没有蛀牙、多少人有蛀牙，应该（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "凭感觉估一个数写上去"
+      },
+      {
+       "label": "B",
+       "text": "先一个一个问同学，把得到的数据分类整理"
+      },
+      {
+       "label": "C",
+       "text": "只问一个同学就算全班"
+      },
+      {
+       "label": "D",
+       "text": "看谁的牙齿白就记下来"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "解决这类问题要先收集每个人的情况，再把数据按有没有蛀牙分成两类整理，才能得到全班的数。",
+     "id": "msj_p1124_q1",
+     "topicId": "msj_p1124",
+     "question": "要知道全班同学中有多少人没有蛀牙、多少人有蛀牙，应该（　）。"
+    },
+    {
+     "prompt": "课程表上用1个格表示1节，语文一星期有8节，就要涂（　）个格。",
+     "answer": "8",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "1个格表示1节，8节就要涂8个格，格数和节数一样多。",
+     "id": "msj_p1124_q2",
+     "topicId": "msj_p1124",
+     "question": "课程表上用1个格表示1节，语文一星期有8节，就要涂（　）个格。"
+    },
+    {
+     "prompt": "全班没有蛀牙的有26人，有蛀牙的有14人。全班一共有多少人？",
+     "answer": 40,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把没有蛀牙和有蛀牙的两类人数合起来就是总人数，26加14得40，所以全班一共40人。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 26}, {\"type\": \"num\", \"value\": 14}]}",
+     "id": "msj_p1124_q3",
+     "topicId": "msj_p1124",
+     "question": "全班没有蛀牙的有26人，有蛀牙的有14人。全班一共有多少人？"
+    },
+    {
+     "prompt": "要想知道有蛀牙的同学中，有几颗蛀牙的人最多，应该（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "按同学的身高分类"
+      },
+      {
+       "label": "B",
+       "text": "按同学的名字分类"
+      },
+      {
+       "label": "C",
+       "text": "再按蛀牙的颗数把有蛀牙的同学分类整理"
+      },
+      {
+       "label": "D",
+       "text": "只数有蛀牙的总人数"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "问题问的是蛀牙颗数的多少，就要按颗数再分一次，才能看出几颗蛀牙的人最多。",
+     "id": "msj_p1124_q4",
+     "topicId": "msj_p1124",
+     "question": "要想知道有蛀牙的同学中，有几颗蛀牙的人最多，应该（　）。"
+    },
+    {
+     "prompt": "做石头剪刀布游戏20次，赢8次、平5次，输了几次？",
+     "answer": 7,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把20次分成赢、输、平三类，先用20减8得12，再用12减5得7，所以输了7次。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 20}, {\"type\": \"num\", \"value\": 8}]}, {\"type\": \"num\", \"value\": 5}]}",
+     "id": "msj_p1124_q5",
+     "topicId": "msj_p1124",
+     "question": "做石头剪刀布游戏20次，赢8次、平5次，输了几次？"
+    },
+    {
+     "prompt": "整理蛀牙情况的数据时，有一名同学被漏掉了，结果会（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "各类人数合起来比全班人数多"
+      },
+      {
+       "label": "B",
+       "text": "结果仍然完全正确"
+      },
+      {
+       "label": "C",
+       "text": "不影响任何结论"
+      },
+      {
+       "label": "D",
+       "text": "各类人数合起来比全班人数少，结论不可靠"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "分类要不重复、不遗漏，漏掉一个人的数据，各类合起来就比总人数少，结论就不准了。",
+     "id": "msj_p1124_q6",
+     "topicId": "msj_p1124",
+     "question": "整理蛀牙情况的数据时，有一名同学被漏掉了，结果会（　）。"
+    },
+    {
+     "prompt": "小华收集全班40人的蛀牙情况，没有蛀牙的有25人，有1颗蛀牙的有9人，其余的人有2颗蛀牙。有2颗蛀牙的有多少人？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "40人分成三类，40减25得15，15减9得6，有2颗蛀牙的有6人。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 40}, {\"type\": \"num\", \"value\": 25}]}, {\"type\": \"num\", \"value\": 9}]}",
+     "id": "msj_p1124_q7",
+     "topicId": "msj_p1124",
+     "question": "小华收集全班40人的蛀牙情况，没有蛀牙的有25人，有1颗蛀牙的有9人，其余的人有2颗蛀牙。有2颗蛀牙的有多少人？"
+    },
+    {
+     "prompt": "记录石头剪刀布游戏的结果，说一说你打算怎样记录，结果怎样整理。",
+     "answer": "每做一次就在赢、输、平下面画一笔，做20次后用正字计数，再把三类的次数填进表格，三类的和应该是20。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "做一次记一次，用画正字或画线的方法记录最方便；整理时数出每类的次数，再把三类相加检查是不是等于20。",
+     "id": "msj_p1124_q8",
+     "topicId": "msj_p1124",
+     "question": "记录石头剪刀布游戏的结果，说一说你打算怎样记录，结果怎样整理。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1125",
+   "description": "数据分类的应用：会对交通标志按形状分类并说出哪种形状的最多，会把艺术节的获奖名单按获奖等级、项目分类，回答获一等奖的同学中是唱歌的多还是跳舞的多；还会把扑克牌按花色或点数分类，用表格表示分类的结果，体会分类能帮助回答问题。",
+   "mastery_criteria": [
+    "会根据要回答的问题选择分类标准，用分类的结果作比较"
+   ],
+   "misconceptions": [
+    "分类只看登记顺序，不按标准一类一类数",
+    "比较两个类别的多少时把其他类别的数也加进去"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "prompt": "要知道哪种形状的交通标志最多，可以（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "按交通标志摆放的位置分"
+      },
+      {
+       "label": "B",
+       "text": "按颜色深浅分"
+      },
+      {
+       "label": "C",
+       "text": "按形状把交通标志分一分，再数一数比一比"
+      },
+      {
+       "label": "D",
+       "text": "看一下就算出来了"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "问题问的是形状的多少，就按形状分类，数出每类有几个，再比一比谁最多。",
+     "id": "msj_p1125_q1",
+     "topicId": "msj_p1125",
+     "question": "要知道哪种形状的交通标志最多，可以（　）。"
+    },
+    {
+     "prompt": "获奖的同学按获奖等级分，可以分成一等奖、二等奖和（　）等奖。",
+     "answer": "三",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材上的获奖登记有一等奖、二等奖、三等奖三个等级，按等级分类就分成这三类。",
+     "id": "msj_p1125_q2",
+     "topicId": "msj_p1125",
+     "question": "获奖的同学按获奖等级分，可以分成一等奖、二等奖和（　）等奖。"
+    },
+    {
+     "prompt": "获奖的同学中，获一等奖的唱歌有4人、跳舞有5人。获一等奖的一共有多少人？",
+     "answer": 9,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "问题只问一等奖中唱歌和跳舞的人数，把这两类合起来，4加5得9人。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 5}]}",
+     "id": "msj_p1125_q3",
+     "topicId": "msj_p1125",
+     "question": "获奖的同学中，获一等奖的唱歌有4人、跳舞有5人。获一等奖的一共有多少人？"
+    },
+    {
+     "prompt": "获一等奖的同学中，唱歌的有4人、跳舞的有5人。下面说法正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "获一等奖的同学中唱歌的比跳舞的多1人"
+      },
+      {
+       "label": "B",
+       "text": "两种人数一样多"
+      },
+      {
+       "label": "C",
+       "text": "无法比较"
+      },
+      {
+       "label": "D",
+       "text": "获一等奖的同学中跳舞的比唱歌的多1人"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "5人比4人多1人，所以在获一等奖的同学中，跳舞的比唱歌的多1人。",
+     "id": "msj_p1125_q4",
+     "topicId": "msj_p1125",
+     "question": "获一等奖的同学中，唱歌的有4人、跳舞的有5人。下面说法正确的是（　）。"
+    },
+    {
+     "prompt": "把15幅书法作品按字体分，是为了回答（　）这样的问题。",
+     "options": [
+      {
+       "label": "A",
+       "text": "哪种字体的作品最多"
+      },
+      {
+       "label": "B",
+       "text": "这些作品一共写了多少笔画"
+      },
+      {
+       "label": "C",
+       "text": "写字用了多长时间"
+      },
+      {
+       "label": "D",
+       "text": "作品挂在第几面墙"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "按字体分类数一数，就能比较各种字体的作品各有多少，回答哪种字体的作品最多。",
+     "id": "msj_p1125_q5",
+     "topicId": "msj_p1125",
+     "question": "把15幅书法作品按字体分，是为了回答（　）这样的问题。"
+    },
+    {
+     "prompt": "15幅书法作品按年级分类，四年级3幅、五年级6幅，其余是其他年级。其他年级一共多少幅？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "15幅分成几类，15减3减6得6，其他年级一共6幅。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 15}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"num\", \"value\": 6}]}",
+     "id": "msj_p1125_q6",
+     "topicId": "msj_p1125",
+     "question": "15幅书法作品按年级分类，四年级3幅、五年级6幅，其余是其他年级。其他年级一共多少幅？"
+    },
+    {
+     "prompt": "要回答“获一等奖的同学中跳舞的多还是唱歌的多”，最合适的做法是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "把全部获奖同学按项目分类再比较"
+      },
+      {
+       "label": "B",
+       "text": "只把获一等奖的同学按项目分类，再比较唱歌和跳舞的人数"
+      },
+      {
+       "label": "C",
+       "text": "只数跳舞的人数"
+      },
+      {
+       "label": "D",
+       "text": "把一等奖和二等奖合起来按项目分类"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "问题限定在获一等奖的同学里，分类范围就要和问题一致；把其他等级混进来比较会得出错误的结论。",
+     "id": "msj_p1125_q7",
+     "topicId": "msj_p1125",
+     "question": "要回答“获一等奖的同学中跳舞的多还是唱歌的多”，最合适的做法是（　）。"
+    },
+    {
+     "prompt": "把几位同学的获奖情况按项目分类：唱歌3人、跳舞2人、书法2人、绘画1人。请用表格表示分类结果，并回答哪一类最多。",
+     "answer": "按项目分成四类：唱歌3人最多，跳舞2人、书法2人，绘画1人最少。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "先定标准是项目，再一类一类列出人数填进表格，四类合起来是8人，比较之后知道唱歌的最多。",
+     "id": "msj_p1125_q8",
+     "topicId": "msj_p1125",
+     "question": "把几位同学的获奖情况按项目分类：唱歌3人、跳舞2人、书法2人、绘画1人。请用表格表示分类结果，并回答哪一类最多。"
+    }
+   ]
+  },
+  {
+   "id": "msj_p1126",
+   "description": "综合练习与整理复习：复习按标准分类、涂一涂表示分类结果、分一分填一填（红、黄、绿三类），会把一组加法算式按得数或按是否是进位加法分成两组；还会用分类的方法解决调查全班男、女生喜欢红色各有多少人的问题，体会收集数据是解决问题的好方法，分类后要检查有没有遗漏。",
+   "mastery_criteria": [
+    "能按不同标准对算式、图形或调查数据分类，并用表格、涂色的方式表示结果"
+   ],
+   "misconceptions": [
+    "给算式分类时没有先定标准，同一条算式被分进两组",
+    "分类后不检查，漏掉的对象不算进总数"
+   ],
+   "type": "modeling",
+   "questions": [
+    {
+     "prompt": "把一组加法算式分成两组，可以按（　）分。",
+     "options": [
+      {
+       "label": "A",
+       "text": "算式写在书上的位置"
+      },
+      {
+       "label": "B",
+       "text": "算式的长短"
+      },
+      {
+       "label": "C",
+       "text": "算式是谁写的"
+      },
+      {
+       "label": "D",
+       "text": "得数大于50和得数小于50"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "给算式分类也要先定标准，按得数的大小、按是不是进位加法都能分，但标准要统一。",
+     "id": "msj_p1126_q1",
+     "topicId": "msj_p1126",
+     "question": "把一组加法算式分成两组，可以按（　）分。"
+    },
+    {
+     "prompt": "把图形按颜色分类，教材上分成了红色、黄色和（　）色三类。",
+     "answer": "绿",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "教材练习里把图形按颜色分成红色、黄色、绿色三类，一类一类数清楚再填表。",
+     "id": "msj_p1126_q2",
+     "topicId": "msj_p1126",
+     "question": "把图形按颜色分类，教材上分成了红色、黄色和（　）色三类。"
+    },
+    {
+     "prompt": "分类整理全班同学喜欢红色的情况：男生喜欢红色的有9人，女生喜欢红色的有7人。喜欢红色的一共有多少人？",
+     "answer": 16,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "问题问全班喜欢红色的人数，把男生和女生两类合起来，9加7得16人。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 9}, {\"type\": \"num\", \"value\": 7}]}",
+     "id": "msj_p1126_q3",
+     "topicId": "msj_p1126",
+     "question": "分类整理全班同学喜欢红色的情况：男生喜欢红色的有9人，女生喜欢红色的有7人。喜欢红色的一共有多少人？"
+    },
+    {
+     "prompt": "分类之后，下面哪件事必须做？",
+     "options": [
+      {
+       "label": "A",
+       "text": "检查有没有重复和遗漏"
+      },
+      {
+       "label": "B",
+       "text": "把分类结果改得好看一点"
+      },
+      {
+       "label": "C",
+       "text": "把分类标准换成另一个"
+      },
+      {
+       "label": "D",
+       "text": "只保留数量最多的一类"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "分类的各项合起来要等于总数，所以分完一定要检查有没有重复、有没有遗漏。",
+     "id": "msj_p1126_q4",
+     "topicId": "msj_p1126",
+     "question": "分类之后，下面哪件事必须做？"
+    },
+    {
+     "prompt": "把12道加法算式分成两组：得数大于50的有7道，其余得数小于50。得数小于50的有多少道？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把12道算式分成得数大于50和小于50两类，12减7得5，所以得数小于50的有5道。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 12}, {\"type\": \"num\", \"value\": 7}]}",
+     "id": "msj_p1126_q5",
+     "topicId": "msj_p1126",
+     "question": "把12道加法算式分成两组：得数大于50的有7道，其余得数小于50。得数小于50的有多少道？"
+    },
+    {
+     "prompt": "下面是分类整理的结果：喜欢苹果12人、喜欢香蕉9人、喜欢橘子6人。最喜欢的水果是哪一种？",
+     "options": [
+      {
+       "label": "A",
+       "text": "香蕉"
+      },
+      {
+       "label": "B",
+       "text": "苹果"
+      },
+      {
+       "label": "C",
+       "text": "橘子"
+      },
+      {
+       "label": "D",
+       "text": "三种一样多"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "12人比9人和6人都多，所以最喜欢苹果的人最多。",
+     "id": "msj_p1126_q6",
+     "topicId": "msj_p1126",
+     "question": "下面是分类整理的结果：喜欢苹果12人、喜欢香蕉9人、喜欢橘子6人。最喜欢的水果是哪一种？"
+    },
+    {
+     "prompt": "全班40人，男生22人。全班女生有多少人？",
+     "answer": 18,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "全班40人分成男生和女生两类，40减22得18，女生有18人。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 40}, {\"type\": \"num\", \"value\": 22}]}",
+     "id": "msj_p1126_q7",
+     "topicId": "msj_p1126",
+     "question": "全班40人，男生22人。全班女生有多少人？"
+    },
+    {
+     "prompt": "要调查全班男、女生喜欢红色各有多少人，说一说你怎样分类收集数据，结果怎样表示。",
+     "answer": "先按男生、女生分成两类，每一类里再按喜欢红色和喜欢其他颜色分，逐个问清后记录，最后用表格把四个数填好。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "分类的标准要和问题对应：先分男女，再分是否喜欢红色，这样得到的四个数正好回答男生、女生喜欢红色各有多少人。",
+     "id": "msj_p1126_q8",
+     "topicId": "msj_p1126",
+     "question": "要调查全班男、女生喜欢红色各有多少人，说一说你怎样分类收集数据，结果怎样表示。"
+    }
+   ]
+  }
+ ]
+}

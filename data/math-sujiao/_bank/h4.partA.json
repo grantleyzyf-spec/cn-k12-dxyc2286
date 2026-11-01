@@ -1,0 +1,1376 @@
+{
+ "tag": "h4",
+ "book": "苏教版选择性必修第二册",
+ "unit_points": [
+  {
+   "id": "msj_h023",
+   "description": "空间向量是平面向量的推广，既有大小又有方向，可以用有向线段表示；它有线性运算、数量积运算和坐标表示，借助这些运算可以判断空间中点线面的共线共面与平行垂直关系，并求空间的角和距离。",
+   "mastery_criteria": [
+    "能用有向线段表示空间向量并说出线性运算的含义",
+    "能计算空间向量的数量积并求向量的模与夹角",
+    "能用向量方法判断空间位置关系并求空间角与距离"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h023_q1",
+     "topicId": "msj_h023",
+     "prompt": "在空间中，像位移、力、速度这样既有大小又有方向的量，教材把它叫作什么？",
+     "question": "在空间中，像位移、力、速度这样既有大小又有方向的量，教材把它叫作什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "空间向量"
+      },
+      {
+       "label": "B",
+       "text": "数量"
+      },
+      {
+       "label": "C",
+       "text": "有向线段"
+      },
+      {
+       "label": "D",
+       "text": "平面图形"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "位移、力、速度都同时具有大小和方向，教材把这类量叫作空间向量，并用有向线段表示，与只讲大小的数量不同。"
+    },
+    {
+     "id": "msj_h023_q2",
+     "topicId": "msj_h023",
+     "prompt": "空间向量的加法、减法与数乘运算满足三条运算律，其中加法满足的是哪两条？",
+     "question": "空间向量的加法、减法与数乘运算满足三条运算律，其中加法满足的是哪两条？",
+     "options": [
+      {
+       "label": "A",
+       "text": "分配律与结合律"
+      },
+      {
+       "label": "B",
+       "text": "交换律与结合律"
+      },
+      {
+       "label": "C",
+       "text": "交换律与消去律"
+      },
+      {
+       "label": "D",
+       "text": "结合律与消去律"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材指出空间向量的加法满足交换律和结合律，数乘与加法之间满足分配律，三条运算律合起来刻画线性运算。"
+    },
+    {
+     "id": "msj_h023_q3",
+     "topicId": "msj_h023",
+     "prompt": "如果表示非零向量 n 的有向线段所在直线垂直于平面，那么向量 n 叫作这个平面的什么？",
+     "question": "如果表示非零向量 n 的有向线段所在直线垂直于平面，那么向量 n 叫作这个平面的什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "方向向量"
+      },
+      {
+       "label": "B",
+       "text": "投影向量"
+      },
+      {
+       "label": "C",
+       "text": "法向量"
+      },
+      {
+       "label": "D",
+       "text": "位置向量"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "垂直于平面的非零向量叫作该平面的法向量，它与平面内所有直线都垂直，是判断线面关系的关键量。"
+    },
+    {
+     "id": "msj_h023_q4",
+     "topicId": "msj_h023",
+     "prompt": "已知 O 为空间任意一点，A、B、C 三点不共线，若向量 OP 等于 x 倍的向量 OA 加 y 倍的向量 OB 加 z 倍的向量 OC，且 x 加 y 加 z 等于 1，则 P、A、B、C 四点有什么关系？",
+     "question": "已知 O 为空间任意一点，A、B、C 三点不共线，若向量 OP 等于 x 倍的向量 OA 加 y 倍的向量 OB 加 z 倍的向量 OC，且 x 加 y 加 z 等于 1，则 P、A、B、C 四点有什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "四点一定不共面"
+      },
+      {
+       "label": "B",
+       "text": "四点共线"
+      },
+      {
+       "label": "C",
+       "text": "无法判断"
+      },
+      {
+       "label": "D",
+       "text": "四点共面"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由 x 加 y 加 z 等于 1 可把 OP 改写成 OA 加上 y 倍的向量 AB 加上 z 倍的向量 AC，即向量 AP 由两个不共线向量线性表示，故四点共面。"
+    },
+    {
+     "id": "msj_h023_q5",
+     "topicId": "msj_h023",
+     "prompt": "已知空间两个非零向量 a 与 b 的夹角为 60 度，a 的模为 2，b 的模为 3，则 a 与 b 的数量积是多少？",
+     "question": "已知空间两个非零向量 a 与 b 的夹角为 60 度，a 的模为 2，b 的模为 3，则 a 与 b 的数量积是多少？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "数量积等于两个向量的模与夹角余弦的乘积，即用 2 乘 3 再乘 cos 60 度，而 cos 60 度等于 0.5，所以数量积是 3。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"num\", \"value\": 0.5}]}"
+    }
+   ]
+  },
+  {
+   "id": "msj_h024",
+   "description": "计数原理研究按一定规则数出对象个数的问题，分类计数原理把各类方法数相加，分步计数原理把各步方法数相乘，排列、组合与二项式定理都建立在这两个基本计数原理之上。",
+   "mastery_criteria": [
+    "能分清分类与分步并正确选用加法或乘法原理",
+    "能用排列数、组合数公式计算个数",
+    "能用二项式定理展开并求指定项"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h024_q1",
+     "topicId": "msj_h024",
+     "prompt": "从甲地到乙地有 3 条道路，从乙地到丙地有 2 条道路，求从甲地经乙地到丙地的走法种数时要用哪种运算？",
+     "question": "从甲地到乙地有 3 条道路，从乙地到丙地有 2 条道路，求从甲地经乙地到丙地的走法种数时要用哪种运算？",
+     "options": [
+      {
+       "label": "A",
+       "text": "加法"
+      },
+      {
+       "label": "B",
+       "text": "乘法"
+      },
+      {
+       "label": "C",
+       "text": "减法"
+      },
+      {
+       "label": "D",
+       "text": "除法"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "从甲地经乙地到丙地必须依次走完两段路，属于分步，各步的方法数相乘，所以用乘法，得 3 乘 2 等于 6 种。"
+    },
+    {
+     "id": "msj_h024_q2",
+     "topicId": "msj_h024",
+     "prompt": "完成一件事有若干类方式，各类方式中分别有若干种不同方法，求完成这件事的方法总数用的是什么原理？",
+     "question": "完成一件事有若干类方式，各类方式中分别有若干种不同方法，求完成这件事的方法总数用的是什么原理？",
+     "options": [
+      {
+       "label": "A",
+       "text": "分类计数原理"
+      },
+      {
+       "label": "B",
+       "text": "分步计数原理"
+      },
+      {
+       "label": "C",
+       "text": "二项式定理"
+      },
+      {
+       "label": "D",
+       "text": "排列数公式"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "每一类中的任意一种方法都能单独完成这件事，各类之间互不依赖，把各类方法数相加，这就是分类计数原理。"
+    },
+    {
+     "id": "msj_h024_q3",
+     "topicId": "msj_h024",
+     "prompt": "若某网站邮箱密码为 4 位，每位均为 0 到 9 这 10 个数字中的一个，则这样的密码共有多少个？",
+     "question": "若某网站邮箱密码为 4 位，每位均为 0 到 9 这 10 个数字中的一个，则这样的密码共有多少个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "40 个"
+      },
+      {
+       "label": "B",
+       "text": "1000 个"
+      },
+      {
+       "label": "C",
+       "text": "10000 个"
+      },
+      {
+       "label": "D",
+       "text": "4 的 10 次方个"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "设置 4 位密码要分 4 步逐位确定，每一位都有 10 种取法，由分步计数原理得 10 乘 10 乘 10 乘 10 等于 10000 个。"
+    },
+    {
+     "id": "msj_h024_q4",
+     "topicId": "msj_h024",
+     "prompt": "某班有男生 28 名、女生 20 名，要选男生代表和女生代表各 1 名，共有多少种不同的选法？",
+     "question": "某班有男生 28 名、女生 20 名，要选男生代表和女生代表各 1 名，共有多少种不同的选法？",
+     "answer": 560,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "选男生代表有 28 种选法，选女生代表有 20 种选法，两步都要完成才能得到一男一女，所以由分步计数原理得 560 种。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 28}, {\"type\": \"num\", \"value\": 20}]}"
+    },
+    {
+     "id": "msj_h024_q5",
+     "topicId": "msj_h024",
+     "prompt": "某市汽车号牌后 5 位由 1 个英文字母和 4 个数字按顺序排列组成，计算号牌总数时为什么用分步计数原理而不用分类计数原理？",
+     "question": "某市汽车号牌后 5 位由 1 个英文字母和 4 个数字按顺序排列组成，计算号牌总数时为什么用分步计数原理而不用分类计数原理？",
+     "options": [
+      {
+       "label": "A",
+       "text": "因为字母和数字的个数不一样"
+      },
+      {
+       "label": "B",
+       "text": "因为号牌总数很大"
+      },
+      {
+       "label": "C",
+       "text": "因为每一位都不能重复"
+      },
+      {
+       "label": "D",
+       "text": "因为必须依次确定每一位才能组成一个号牌"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "分类的各类方法都能单独完成任务，而号牌的每一位只是任务的一部分，只有逐位全部确定才得到一个号牌，属于分步，故各步方法数相乘。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "msj_h1094",
+   "page": 5,
+   "description": "本节把平面向量推广到空间，给出空间向量的加法、减法、数乘与数量积运算及其运算律，并用共线向量定理和共面向量定理刻画空间中的平行与共面关系。",
+   "mastery_criteria": [
+    "能进行空间向量的加减与数乘运算并化简向量式",
+    "能求两个空间向量的夹角与数量积",
+    "能用共线定理和共面定理判断线线平行与四点共面"
+   ],
+   "misconceptions": [
+    "把空间向量的加法当成数的加法，化简向量式时丢掉方向",
+    "忽略共面向量定理中两个向量必须不共线的前提，认为任意三个向量都共面"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1094_q1",
+     "topicId": "msj_h1094",
+     "prompt": "向量的加法、减法和数乘运算合起来统称为什么运算？",
+     "question": "向量的加法、减法和数乘运算合起来统称为什么运算？",
+     "options": [
+      {
+       "label": "A",
+       "text": "线性运算"
+      },
+      {
+       "label": "B",
+       "text": "数量积运算"
+      },
+      {
+       "label": "C",
+       "text": "投影运算"
+      },
+      {
+       "label": "D",
+       "text": "坐标运算"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材把向量的加法、减法与数乘这三种运算统称为线性运算，它们的运算结果仍是向量，与数量积的结果是实数不同。"
+    },
+    {
+     "id": "msj_h1094_q2",
+     "topicId": "msj_h1094",
+     "prompt": "教材规定零向量与任意向量之间是什么关系？",
+     "question": "教材规定零向量与任意向量之间是什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "互相垂直"
+      },
+      {
+       "label": "B",
+       "text": "共线"
+      },
+      {
+       "label": "C",
+       "text": "相等"
+      },
+      {
+       "label": "D",
+       "text": "方向相反"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材规定零向量与任意向量共线，这样共线向量定理中的特殊情形也能统一处理，讨论共线时不必单独排除零向量。"
+    },
+    {
+     "id": "msj_h1094_q3",
+     "topicId": "msj_h1094",
+     "prompt": "在空间四边形 A、B、C、D 中，向量 AB 加向量 BC 加向量 CD 等于哪个向量？",
+     "question": "在空间四边形 A、B、C、D 中，向量 AB 加向量 BC 加向量 CD 等于哪个向量？",
+     "answer": "向量 AD",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "由向量加法的三角形法则，前两个向量的和是向量 AC，再加向量 CD 得向量 AD，说明连续相加可以用首尾相接的方式化简。"
+    },
+    {
+     "id": "msj_h1094_q4",
+     "topicId": "msj_h1094",
+     "prompt": "已知两个空间向量 a 与 b 满足 a 的模为 4，b 的模为 2，它们的夹角为 60 度，则 a 加 2 倍的 b 与 a 的数量积是多少？",
+     "question": "已知两个空间向量 a 与 b 满足 a 的模为 4，b 的模为 2，它们的夹角为 60 度，则 a 加 2 倍的 b 与 a 的数量积是多少？",
+     "answer": 24,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由分配律把所求数量积拆成 a 与 a 的数量积加上 2 倍的 a 与 b 的数量积，前者等于 16，后者等于 2 乘 4 乘 2 乘 cos 60 度即 8，相加得 24。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 4}]}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"num\", \"value\": 0.5}]}]}"
+    },
+    {
+     "id": "msj_h1094_q5",
+     "topicId": "msj_h1094",
+     "prompt": "如果两个向量 a、b 不共线，那么向量 p 与 a、b 共面的充要条件是什么？",
+     "question": "如果两个向量 a、b 不共线，那么向量 p 与 a、b 共面的充要条件是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "存在实数 λ 使 p 等于 λ 倍的 a"
+      },
+      {
+       "label": "B",
+       "text": "p 与 a、b 都垂直"
+      },
+      {
+       "label": "C",
+       "text": "存在有序实数组 x、y 使 p 等于 x 倍的 a 加 y 倍的 b"
+      },
+      {
+       "label": "D",
+       "text": "p 的模等于 a 的模加 b 的模"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "这就是共面向量定理：两个不共线向量的线性组合可以表示与它们共面的任意向量，反过来共面的向量也一定能这样表示。"
+    },
+    {
+     "id": "msj_h1094_q6",
+     "topicId": "msj_h1094",
+     "prompt": "由向量 a 出发作垂线得到向量 OA1 的变换称为向量向向量的投影，向量 OA1 叫作向量 a 在向量 b 上的什么？",
+     "question": "由向量 a 出发作垂线得到向量 OA1 的变换称为向量向向量的投影，向量 OA1 叫作向量 a 在向量 b 上的什么？",
+     "answer": "投影向量",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "教材把 a 在 b 方向上的投影得到的向量 OA1 叫作投影向量，它把数量积转化成一个向量与另一个向量的数量积，便于证明运算律。"
+    },
+    {
+     "id": "msj_h1094_q7",
+     "topicId": "msj_h1094",
+     "prompt": "在正方体中分别用向量表示出向量 MN 与向量 BP，得到向量 BP 等于 3 倍的向量 MN，由此可以直接得到什么结论？",
+     "question": "在正方体中分别用向量表示出向量 MN 与向量 BP，得到向量 BP 等于 3 倍的向量 MN，由此可以直接得到什么结论？",
+     "options": [
+      {
+       "label": "A",
+       "text": "两向量垂直"
+      },
+      {
+       "label": "B",
+       "text": "两向量相等"
+      },
+      {
+       "label": "C",
+       "text": "两向量夹角为 60 度"
+      },
+      {
+       "label": "D",
+       "text": "两向量共线"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "一个向量等于另一个向量的实数倍说明两向量共线，又因为 MN 与 BP 所在直线不重合，所以对应的两条直线平行。"
+    },
+    {
+     "id": "msj_h1094_q8",
+     "topicId": "msj_h1094",
+     "prompt": "已知 O 为空间任意一点，A、B、C 三点不共线，若向量 OP 等于 x 倍的向量 OA 加 y 倍的向量 OB 加 z 倍的向量 OC，且 x 加 y 加 z 等于 1，请说明 P、A、B、C 四点共面的理由。",
+     "question": "已知 O 为空间任意一点，A、B、C 三点不共线，若向量 OP 等于 x 倍的向量 OA 加 y 倍的向量 OB 加 z 倍的向量 OC，且 x 加 y 加 z 等于 1，请说明 P、A、B、C 四点共面的理由。",
+     "answer": "把 x 换成 1 减 y 减 z 后代回，两边同减向量 OA，得到向量 AP 等于 y 倍的向量 AB 加 z 倍的向量 AC，所以 AP 与 AB、AC 共面且有公共起点 A，故四点共面。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "关键是把条件 x 加 y 加 z 等于 1 代入并移项，使表示式的系数和为 1，从而把三个起点相同的向量关系变成以 A 为起点的两个向量线性组合。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1095",
+   "page": 18,
+   "description": "本节由空间向量基本定理引入基底的概念，用单位正交基底建立空间直角坐标系，写出向量与点的坐标，并由坐标进行线性运算、数量积运算，求模、夹角与距离。",
+   "mastery_criteria": [
+    "能判断三个向量能否构成空间的一个基底",
+    "能由点的坐标写出向量坐标并进行坐标运算",
+    "能用坐标求向量的模与夹角，判断平行与垂直"
+   ],
+   "misconceptions": [
+    "把点 P 的坐标与向量 OP 的坐标混为一谈",
+    "用坐标判断平行时忽略两个向量都不能是零向量的要求"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1095_q1",
+     "topicId": "msj_h1095",
+     "prompt": "如果三个向量不共面，那么空间任一向量都能由它们线性表示，这样的一组向量称为什么？",
+     "question": "如果三个向量不共面，那么空间任一向量都能由它们线性表示，这样的一组向量称为什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "空间的一个基底"
+      },
+      {
+       "label": "B",
+       "text": "一个方向向量"
+      },
+      {
+       "label": "C",
+       "text": "平面的法向量"
+      },
+      {
+       "label": "D",
+       "text": "一个投影向量"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由空间向量基本定理，三个不共面的向量可以线性表示空间任一向量，这组向量叫作空间的一个基底，三个向量叫作基向量。"
+    },
+    {
+     "id": "msj_h1095_q2",
+     "topicId": "msj_h1095",
+     "prompt": "已知向量 a 等于 (1, -3, 8)，向量 b 等于 (3, 10, -4)，则 a 加 b 的第二个坐标是多少？",
+     "question": "已知向量 a 等于 (1, -3, 8)，向量 b 等于 (3, 10, -4)，则 a 加 b 的第二个坐标是多少？",
+     "answer": 7,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "坐标相加时对应坐标分别相加，第二个坐标由负 3 加 10 得 7，其余坐标不受影响，所以所求的第二个坐标是 7。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": -3}, {\"type\": \"num\", \"value\": 10}]}"
+    },
+    {
+     "id": "msj_h1095_q3",
+     "topicId": "msj_h1095",
+     "prompt": "当一个正交基底的三个基向量都是单位向量时，这个基底叫作什么？",
+     "question": "当一个正交基底的三个基向量都是单位向量时，这个基底叫作什么？",
+     "answer": "单位正交基底",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "三个基向量两两垂直的基底叫正交基底，若这些基向量又都是单位向量，就称为单位正交基底，通常用小写字母 i、j、k 表示。"
+    },
+    {
+     "id": "msj_h1095_q4",
+     "topicId": "msj_h1095",
+     "prompt": "已知向量 a 等于 (1, 3, 7)，向量 b 等于 (3, -1, 0)，则 a 与 b 的数量积是多少？",
+     "question": "已知向量 a 等于 (1, 3, 7)，向量 b 等于 (3, -1, 0)，则 a 与 b 的数量积是多少？",
+     "answer": 0,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "用坐标求数量积，把对应坐标相乘再相加，得 3 加负 3 加 0 等于 0，说明这两个向量互相垂直。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": -1}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 7}, {\"type\": \"num\", \"value\": 0}]}]}]}"
+    },
+    {
+     "id": "msj_h1095_q5",
+     "topicId": "msj_h1095",
+     "prompt": "设两个非零空间向量的坐标分别为 x1、y1、z1 与 x2、y2、z2，它们互相垂直的坐标条件是什么？",
+     "question": "设两个非零空间向量的坐标分别为 x1、y1、z1 与 x2、y2、z2，它们互相垂直的坐标条件是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x1x2 加 y1y2 加 z1z2 等于 1"
+      },
+      {
+       "label": "B",
+       "text": "x1x2 加 y1y2 加 z1z2 等于 0"
+      },
+      {
+       "label": "C",
+       "text": "各坐标之和都等于 0"
+      },
+      {
+       "label": "D",
+       "text": "对应坐标成比例"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个非零向量垂直等价于它们的数量积为零，而用坐标算出的数量积正是对应坐标乘积之和，所以条件是这个和等于 0。"
+    },
+    {
+     "id": "msj_h1095_q6",
+     "topicId": "msj_h1095",
+     "prompt": "设两个空间向量 a、b 的坐标分别为 x1、y1、z1 与 x2、y2、z2，且 b 不是零向量，a 与 b 平行的坐标条件是什么？",
+     "question": "设两个空间向量 a、b 的坐标分别为 x1、y1、z1 与 x2、y2、z2，且 b 不是零向量，a 与 b 平行的坐标条件是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "两向量的模相等"
+      },
+      {
+       "label": "B",
+       "text": "两向量的坐标之和相等"
+      },
+      {
+       "label": "C",
+       "text": "存在实数 λ 使 a 等于 λ 倍的 b"
+      },
+      {
+       "label": "D",
+       "text": "两向量的数量积为 0"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "向量平行就是共线，共线的充要条件是其中一个向量是另一个向量的实数倍，用坐标写出来就是对应坐标成比例。"
+    },
+    {
+     "id": "msj_h1095_q7",
+     "topicId": "msj_h1095",
+     "prompt": "已知点 A 的坐标为 (3, 1, 3)，点 B 的坐标为 (1, 5, 0)，则线段 AB 中点的第三个坐标是多少？",
+     "question": "已知点 A 的坐标为 (3, 1, 3)，点 B 的坐标为 (1, 5, 0)，则线段 AB 中点的第三个坐标是多少？",
+     "answer": 1.5,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "中点坐标等于两端点对应坐标的平均数，第三个坐标由 3 与 0 相加后除以 2 得 1.5，所以中点的第三个坐标是 1.5。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 0}]}, {\"type\": \"num\", \"value\": 0.5}]}"
+    },
+    {
+     "id": "msj_h1095_q8",
+     "topicId": "msj_h1095",
+     "prompt": "已知 A(3, 1, 3)，B(1, 5, 0)，点 P(x, y, z) 到 A、B 两点的距离相等，请写出用向量方法求 x、y、z 满足的关系式的思路。",
+     "question": "已知 A(3, 1, 3)，B(1, 5, 0)，点 P(x, y, z) 到 A、B 两点的距离相等，请写出用向量方法求 x、y、z 满足的关系式的思路。",
+     "answer": "距离相等就是向量 PA 的模等于向量 PB 的模，把两边平方去掉根号，把坐标代入后展开合并，化简得 4x 减 8y 加 6z 加 7 等于 0。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "求到两点距离相等的点，本质是求线段的垂直平分面，用模相等列式比直接用两点间距离公式更简洁，平方后可避免根号。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1096",
+   "page": 29,
+   "description": "本节用直线的方向向量和平面的法向量刻画空间直线与平面，通过向量的平行、垂直与夹角计算判断空间位置关系，并求线线角、线面角、二面角以及点到直线、点到平面的距离。",
+   "mastery_criteria": [
+    "能求直线的方向向量和平面的法向量",
+    "能用方向向量与法向量判断空间中的平行与垂直",
+    "能用向量方法求空间角和空间距离"
+   ],
+   "misconceptions": [
+    "把线面角直接当成立方向向量与法向量的夹角",
+    "认为二面角一定等于两个法向量的夹角，忽略还有互补的情形"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1096_q1",
+     "topicId": "msj_h1096",
+     "prompt": "直线 l 上的向量 e 以及与 e 共线的非零向量叫作直线 l 的什么？",
+     "question": "直线 l 上的向量 e 以及与 e 共线的非零向量叫作直线 l 的什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "方向向量"
+      },
+      {
+       "label": "B",
+       "text": "法向量"
+      },
+      {
+       "label": "C",
+       "text": "投影向量"
+      },
+      {
+       "label": "D",
+       "text": "位置向量"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "方向向量用来刻画直线的方向，与它共线的非零向量也都是这条直线的方向向量，判断两直线平行或求夹角时都用到它。"
+    },
+    {
+     "id": "msj_h1096_q2",
+     "topicId": "msj_h1096",
+     "prompt": "如果表示非零向量的有向线段所在直线垂直于平面，那么这个向量叫作平面的什么？",
+     "question": "如果表示非零向量的有向线段所在直线垂直于平面，那么这个向量叫作平面的什么？",
+     "answer": "法向量",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "垂直于平面的非零向量叫作该平面的法向量，它垂直于平面内所有直线，因此可以用来刻画平面的方向并判断线面、面面关系。"
+    },
+    {
+     "id": "msj_h1096_q3",
+     "topicId": "msj_h1096",
+     "prompt": "已知直线 l 垂直于平面，l 的方向向量为 (t, 2, 4)，平面的法向量为 (1, 2, 4)，则实数 t 的值是多少？",
+     "question": "已知直线 l 垂直于平面，l 的方向向量为 (t, 2, 4)，平面的法向量为 (1, 2, 4)，则实数 t 的值是多少？",
+     "answer": 1,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "直线垂直于平面时方向向量与法向量共线，对应坐标成比例，由第二个坐标 2 比 2 得比例为 1，所以 t 等于 1。",
+     "verify": "{\"type\": \"num\", \"value\": 1}"
+    },
+    {
+     "id": "msj_h1096_q4",
+     "topicId": "msj_h1096",
+     "prompt": "设斜线与平面所成的角为 α，该直线的方向向量与平面法向量的夹角为 θ，α 与 θ 有什么关系？",
+     "question": "设斜线与平面所成的角为 α，该直线的方向向量与平面法向量的夹角为 θ，α 与 θ 有什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "α 等于 θ"
+      },
+      {
+       "label": "B",
+       "text": "α 等于 θ 的余角"
+      },
+      {
+       "label": "C",
+       "text": "α 与 θ 互补"
+      },
+      {
+       "label": "D",
+       "text": "α 等于 2 倍的 θ"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "方向向量与法向量的夹角反映的是直线与平面垂线的夹角，而线面角是它与垂线夹角的余角，所以 α 等于 90 度减 θ。"
+    },
+    {
+     "id": "msj_h1096_q5",
+     "topicId": "msj_h1096",
+     "prompt": "用两个平面的法向量求二面角的大小时，二面角与两个法向量的夹角是什么关系？",
+     "question": "用两个平面的法向量求二面角的大小时，二面角与两个法向量的夹角是什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "一定相等"
+      },
+      {
+       "label": "B",
+       "text": "一定互补"
+      },
+      {
+       "label": "C",
+       "text": "一定互余"
+      },
+      {
+       "label": "D",
+       "text": "相等或互补"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "二面角的平面角与两个法向量的夹角要么相等，要么互补，具体取哪一个要根据图形判断，所以要先看二面角是锐角还是钝角。"
+    },
+    {
+     "id": "msj_h1096_q6",
+     "topicId": "msj_h1096",
+     "prompt": "在棱长为 1 的正方体中，以 D 为原点、DA、DC、DD1 所在直线为坐标轴建立坐标系，则向量 DB1 与向量 AC 的数量积是多少？",
+     "question": "在棱长为 1 的正方体中，以 D 为原点、DA、DC、DD1 所在直线为坐标轴建立坐标系，则向量 DB1 与向量 AC 的数量积是多少？",
+     "answer": 0,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由坐标系得 A(1, 0, 0)、C(0, 1, 0)、B1(1, 1, 1)，向量 DB1 等于 (1, 1, 1)，向量 AC 等于 (-1, 1, 0)，数量积为负 1 加 1 加 0 等于 0，故两向量垂直。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": -1}]}, {\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 1}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 0}]}]}]}"
+    },
+    {
+     "id": "msj_h1096_q7",
+     "topicId": "msj_h1096",
+     "prompt": "平面经过坐标原点，其法向量为 (1, 2, 2)，则点 P(1, 2, 2) 到这个平面的距离是多少？",
+     "question": "平面经过坐标原点，其法向量为 (1, 2, 2)，则点 P(1, 2, 2) 到这个平面的距离是多少？",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "点到平面的距离等于向量 OP 与法向量数量积的绝对值除以法向量的模，数量积为 9，法向量的模为 3，所以距离是 3。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 1}]}, {\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}]}]}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 2}]}]}]}, {\"type\": \"num\", \"value\": 0.5}]}]}"
+    },
+    {
+     "id": "msj_h1096_q8",
+     "topicId": "msj_h1096",
+     "prompt": "用向量方法求两条异面直线所成的角，需要先求什么，再把什么与什么比较？",
+     "question": "用向量方法求两条异面直线所成的角，需要先求什么，再把什么与什么比较？",
+     "answer": "先求两条直线各自的方向向量，再求这两个方向向量的夹角余弦，因为异面直线所成的角是锐角或直角，所以取这个余弦的绝对值作为所成角的余弦。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "两条异面直线所成的角由方向向量的夹角决定，但方向向量夹角可能是钝角，而直线所成的角不超过 90 度，因此必须取绝对值。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1097",
+   "page": 59,
+   "description": "本节从公路铁路与经乙地中转的两个实例引出分类计数原理和分步计数原理，前者把各类方法数相加，后者把各步方法数相乘，并用它们解决选代表、电路开关、密码设置等计数问题。",
+   "mastery_criteria": [
+    "能判断一个计数问题属于分类还是分步",
+    "能用加法原理或乘法原理算出方法种数",
+    "能处理密码、编号这类分类与分步混合的问题"
+   ],
+   "misconceptions": [
+    "把分步问题当成分类问题，用加法去求总数",
+    "分类时漏掉某一类或重复计数，使总数偏小或偏大"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1097_q1",
+     "topicId": "msj_h1097",
+     "prompt": "完成一件事有 n 类方式，各类方式中分别有若干种不同方法，求完成这件事的方法总数用的是什么原理？",
+     "question": "完成一件事有 n 类方式，各类方式中分别有若干种不同方法，求完成这件事的方法总数用的是什么原理？",
+     "options": [
+      {
+       "label": "A",
+       "text": "分类计数原理"
+      },
+      {
+       "label": "B",
+       "text": "分步计数原理"
+      },
+      {
+       "label": "C",
+       "text": "二项式定理"
+      },
+      {
+       "label": "D",
+       "text": "组合数公式"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "每一类中的任意一种方法都能单独完成这件事，各类之间没有先后依赖，把各类方法数相加，这就是分类计数原理，也叫加法原理。"
+    },
+    {
+     "id": "msj_h1097_q2",
+     "topicId": "msj_h1097",
+     "prompt": "从甲地到乙地有 3 条公路、2 条铁路，走任意一条公路或者任意一条铁路都能从甲地到乙地，共有多少种不同的走法？",
+     "question": "从甲地到乙地有 3 条公路、2 条铁路，走任意一条公路或者任意一条铁路都能从甲地到乙地，共有多少种不同的走法？",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "公路与铁路是两类互不影响的走法，每一条都能单独把人送到乙地，属于分类，故把两类方法数相加得 5 种。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1097_q3",
+     "topicId": "msj_h1097",
+     "prompt": "从甲地到乙地有 3 条道路，从乙地到丙地有 2 条道路，从甲地经乙地到丙地共有多少种不同的走法？",
+     "question": "从甲地到乙地有 3 条道路，从乙地到丙地有 2 条道路，从甲地经乙地到丙地共有多少种不同的走法？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "从甲地经乙地到丙地必须先到乙地再去丙地，两步都要完成，属于分步，各步方法数相乘得 6 种不同走法。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1097_q4",
+     "topicId": "msj_h1097",
+     "prompt": "3 名同学每人从 5 本不同的电子书中任选 1 本，共有多少种不同的选法？",
+     "question": "3 名同学每人从 5 本不同的电子书中任选 1 本，共有多少种不同的选法？",
+     "answer": 125,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "按同学依次选择分成 3 步，每名同学都有 5 种选法，由分步计数原理得 5 乘 5 乘 5 等于 125 种。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 5}]}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "msj_h1097_q5",
+     "topicId": "msj_h1097",
+     "prompt": "某电路的第一部分有 2 只开关，第二部分有 3 只开关，仅合上 1 只开关就能接通电路，共有多少种不同的方法？",
+     "question": "某电路的第一部分有 2 只开关，第二部分有 3 只开关，仅合上 1 只开关就能接通电路，共有多少种不同的方法？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2 种"
+      },
+      {
+       "label": "B",
+       "text": "5 种"
+      },
+      {
+       "label": "C",
+       "text": "6 种"
+      },
+      {
+       "label": "D",
+       "text": "10 种"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "合上第一部分中的 1 只开关或第二部分中的 1 只开关都能接通电路，两类之间用加法，得 2 加 3 等于 5 种不同方法。"
+    },
+    {
+     "id": "msj_h1097_q6",
+     "topicId": "msj_h1097",
+     "prompt": "手表厂为统一机芯设计 4 种形状的外壳、2 种颜色的表面和 3 种形式的数字，共可生产多少种不同款式？",
+     "question": "手表厂为统一机芯设计 4 种形状的外壳、2 种颜色的表面和 3 种形式的数字，共可生产多少种不同款式？",
+     "options": [
+      {
+       "label": "A",
+       "text": "9 种"
+      },
+      {
+       "label": "B",
+       "text": "12 种"
+      },
+      {
+       "label": "C",
+       "text": "24 种"
+      },
+      {
+       "label": "D",
+       "text": "4 种"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "确定一款手表要依次选定外壳、表面和数字，分三步完成，由分步计数原理得 4 乘 2 乘 3 等于 24 种不同款式。"
+    },
+    {
+     "id": "msj_h1097_q7",
+     "topicId": "msj_h1097",
+     "prompt": "某网站邮箱密码为 4 到 6 位，每位均为 0 到 9 这 10 个数字中的一个，则这样的密码共有多少个？",
+     "question": "某网站邮箱密码为 4 到 6 位，每位均为 0 到 9 这 10 个数字中的一个，则这样的密码共有多少个？",
+     "answer": 1110000,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "4 位、5 位、6 位这三类密码之间用加法，每一类内部逐位确定用乘法，得 10 的 4 次方加 10 的 5 次方加 10 的 6 次方等于 1110000 个。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 4}]}, {\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 5}]}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 10}, {\"type\": \"num\", \"value\": 6}]}]}]}"
+    },
+    {
+     "id": "msj_h1097_q8",
+     "topicId": "msj_h1097",
+     "prompt": "某同学从甲地到丙地，既可以先到乙地再去丙地，也可以从甲地坐船直接到丙地，计算总走法时哪一部分用乘法、哪一部分用加法？",
+     "question": "某同学从甲地到丙地，既可以先到乙地再去丙地，也可以从甲地坐船直接到丙地，计算总走法时哪一部分用乘法、哪一部分用加法？",
+     "answer": "先到乙地再去丙地属于分步，这两个步骤的方法数相乘；经乙地的这一类与坐船直接到丙地的这一类都能单独完成任务，两类之间用加法相加。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "同一件事内部有先后步骤时用乘法，不同类别可各自独立完成时用加法，实际问题常常同时含两类结构，需要分段判断。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1098",
+   "page": 65,
+   "description": "本节由选班长和组两位数两个实例引出排列的概念，规定从 n 个不同元素中取出 m 个元素按一定顺序排成一列为一个排列，并给出排列数公式与阶乘记号，解决排队、比赛场次、组数等问题。",
+   "mastery_criteria": [
+    "能判断一个问题是排列问题还是非排列问题",
+    "能用排列数公式计算排列数",
+    "能处理含特殊元素或特殊位置限制的排列问题"
+   ],
+   "misconceptions": [
+    "把排列与组合混为一谈，忽略顺序是否影响结果",
+    "计算带 0 的三位数时忘记百位不能为 0 的限制"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1098_q1",
+     "topicId": "msj_h1098",
+     "prompt": "从 n 个不同元素中取出 m 个元素，按照一定的顺序排成一列，叫作什么？",
+     "question": "从 n 个不同元素中取出 m 个元素，按照一定的顺序排成一列，叫作什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "从 n 个元素中取出 m 个元素的一个排列"
+      },
+      {
+       "label": "B",
+       "text": "从 n 个元素中取出 m 个元素的一个组合"
+      },
+      {
+       "label": "C",
+       "text": "一个全排列"
+      },
+      {
+       "label": "D",
+       "text": "一个阶乘"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "排列强调取出元素后还要按一定顺序排队，顺序不同算不同的排列，这与只讲选出哪些元素的组合有本质区别。"
+    },
+    {
+     "id": "msj_h1098_q2",
+     "topicId": "msj_h1098",
+     "prompt": "从 5 名同学中选 3 名排成一列，共有多少种不同的排法？",
+     "question": "从 5 名同学中选 3 名排成一列，共有多少种不同的排法？",
+     "answer": 60,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "排第一位有 5 种选法，排第二位有 4 种，排第三位有 3 种，由分步计数原理得排列数 5 乘 4 乘 3 等于 60 种。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 4}]}, {\"type\": \"num\", \"value\": 3}]}"
+    },
+    {
+     "id": "msj_h1098_q3",
+     "topicId": "msj_h1098",
+     "prompt": "从 a、b、c、d 这 4 个字母中取出 3 个字母，所有排列的个数是多少？",
+     "question": "从 a、b、c、d 这 4 个字母中取出 3 个字母，所有排列的个数是多少？",
+     "answer": 24,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "按位置依次选填，第 1 位有 4 种排法，第 2 位有 3 种，第 3 位有 2 种，共得 4 乘 3 乘 2 等于 24 个不同排列。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"num\", \"value\": 2}]}"
+    },
+    {
+     "id": "msj_h1098_q4",
+     "topicId": "msj_h1098",
+     "prompt": "某足球联赛共有 12 支球队，每队都要与其余各队在主、客场分别比赛 1 次，共要进行多少场比赛？",
+     "question": "某足球联赛共有 12 支球队，每队都要与其余各队在主、客场分别比赛 1 次，共要进行多少场比赛？",
+     "answer": 132,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "一场主场比赛对应从 12 支球队中任取 2 支的一个排列，所以场次等于排列数 12 乘 11 等于 132 场。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 12}, {\"type\": \"num\", \"value\": 11}]}"
+    },
+    {
+     "id": "msj_h1098_q5",
+     "topicId": "msj_h1098",
+     "prompt": "从 n 个不同元素中取出 m 个元素的排列数，用阶乘形式写出来是怎样的？",
+     "question": "从 n 个不同元素中取出 m 个元素的排列数，用阶乘形式写出来是怎样的？",
+     "options": [
+      {
+       "label": "A",
+       "text": "m 的阶乘除以 n 的阶乘"
+      },
+      {
+       "label": "B",
+       "text": "n 的阶乘除以 n 减 m 的阶乘"
+      },
+      {
+       "label": "C",
+       "text": "n 的阶乘除以 m 的阶乘"
+      },
+      {
+       "label": "D",
+       "text": "n 减 m 的阶乘"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "排列数等于 n 乘 n 减 1 一直乘到 n 减 m 加 1，分子分母同乘 n 减 m 的阶乘后，正好写成 n 的阶乘除以 n 减 m 的阶乘。"
+    },
+    {
+     "id": "msj_h1098_q6",
+     "topicId": "msj_h1098",
+     "prompt": "一天有 6 节课，安排 6 门学科各 1 节，这一天的课程表共有多少种不同的排法？",
+     "question": "一天有 6 节课，安排 6 门学科各 1 节，这一天的课程表共有多少种不同的排法？",
+     "options": [
+      {
+       "label": "A",
+       "text": "6 种"
+      },
+      {
+       "label": "B",
+       "text": "36 种"
+      },
+      {
+       "label": "C",
+       "text": "720 种"
+      },
+      {
+       "label": "D",
+       "text": "120 种"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "这是 6 个元素的全排列，排列数等于 6 的阶乘，即 6 乘 5 乘 4 乘 3 乘 2 乘 1 等于 720 种。"
+    },
+    {
+     "id": "msj_h1098_q7",
+     "topicId": "msj_h1098",
+     "prompt": "用 0 到 9 这 10 个数字能组成多少个没有重复数字的三位数？",
+     "question": "用 0 到 9 这 10 个数字能组成多少个没有重复数字的三位数？",
+     "answer": 648,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "百位不能是 0，只能从 1 到 9 中选，有 9 种；十位从余下 9 个数字中选，有 9 种；个位有 8 种，由分步计数原理得 9 乘 9 乘 8 等于 648 个。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 9}, {\"type\": \"num\", \"value\": 9}]}, {\"type\": \"num\", \"value\": 8}]}"
+    },
+    {
+     "id": "msj_h1098_q8",
+     "topicId": "msj_h1098",
+     "prompt": "用 0 到 9 这 10 个数字组成没有重复数字的三位数，除了先排百位的分步方法，还可以用排除法怎样算？",
+     "question": "用 0 到 9 这 10 个数字组成没有重复数字的三位数，除了先排百位的分步方法，还可以用排除法怎样算？",
+     "answer": "先算从 10 个数字中任取 3 个的排列数，共有 10 乘 9 乘 8 等于 720 个，再减去 0 排在百位的那些，即 9 乘 8 等于 72 个，得 648 个。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "排除法先算不限制条件的全部排列，再减去不符合条件的情形，本题中 0 不能排在首位，所以减去 0 在百位的 72 个排列。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1099",
+   "page": 73,
+   "description": "本节由选代表和组集合两个实例引出组合的概念，说明组合与顺序无关，并由排列数推出组合数公式，给出组合数的两个性质，用它们解决抽产品、握手、开灯等计数问题。",
+   "mastery_criteria": [
+    "能判断一个计数问题是排列还是组合",
+    "能用组合数公式计算组合数",
+    "能用组合数的性质与排除法解决至少至多类问题"
+   ],
+   "misconceptions": [
+    "把组合问题按排列来算，多算了元素顺序造成的重复",
+    "处理至少问题时分类不全或重复，导致结果偏小或偏大"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1099_q1",
+     "topicId": "msj_h1099",
+     "prompt": "从 n 个不同元素中取出 m 个元素并成一组，与取出后按顺序排成一列相比，最大的区别是什么？",
+     "question": "从 n 个不同元素中取出 m 个元素并成一组，与取出后按顺序排成一列相比，最大的区别是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "与所选元素的顺序无关"
+      },
+      {
+       "label": "B",
+       "text": "取出的元素个数更少"
+      },
+      {
+       "label": "C",
+       "text": "取出的元素不能重复"
+      },
+      {
+       "label": "D",
+       "text": "必须把所有元素都取出"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "组合只关心选出的是哪 m 个元素，把它们并成一组即可，顺序不同不算新的结果，而排列还要考虑这 m 个元素的先后顺序。"
+    },
+    {
+     "id": "msj_h1099_q2",
+     "topicId": "msj_h1099",
+     "prompt": "从 9 个不同元素中取出 2 个元素的组合数是多少？",
+     "question": "从 9 个不同元素中取出 2 个元素的组合数是多少？",
+     "answer": 36,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "组合数等于排列数除以这 2 个元素的全排列数，即 9 乘 8 再除以 2，得 36，所以共有 36 种不同的组合。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 9}, {\"type\": \"num\", \"value\": 8}]}, {\"type\": \"num\", \"value\": 0.5}]}"
+    },
+    {
+     "id": "msj_h1099_q3",
+     "topicId": "msj_h1099",
+     "prompt": "6 个朋友聚会，每两人握手 1 次，一共握手多少次？",
+     "question": "6 个朋友聚会，每两人握手 1 次，一共握手多少次？",
+     "answer": 15,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "两人握手与先后顺序无关，属于组合问题，从 6 人中任取 2 人的组合数为 6 乘 5 除以 2 等于 15，所以共握手 15 次。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 5}]}, {\"type\": \"num\", \"value\": 0.5}]}"
+    },
+    {
+     "id": "msj_h1099_q4",
+     "topicId": "msj_h1099",
+     "prompt": "从 100 件产品中任意抽出 3 件，一共有多少种不同的抽法？",
+     "question": "从 100 件产品中任意抽出 3 件，一共有多少种不同的抽法？",
+     "answer": 161700,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "抽取与顺序无关，属于组合问题，组合数等于 100 乘 99 乘 98 再除以 3 的阶乘，即分子 970200 除以 6，得 161700 种。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 100}, {\"type\": \"num\", \"value\": 99}]}, {\"type\": \"num\", \"value\": 98}]}, {\"type\": \"num\", \"value\": 6}]}"
+    },
+    {
+     "id": "msj_h1099_q5",
+     "topicId": "msj_h1099",
+     "prompt": "从 n 个不同元素中取出 m 个元素的组合数，与从这 n 个元素中取出 n 减 m 个元素的组合数是什么关系？",
+     "question": "从 n 个不同元素中取出 m 个元素的组合数，与从这 n 个元素中取出 n 减 m 个元素的组合数是什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "前者是后者的 m 倍"
+      },
+      {
+       "label": "B",
+       "text": "两者相等"
+      },
+      {
+       "label": "C",
+       "text": "后者更大"
+      },
+      {
+       "label": "D",
+       "text": "没有固定关系"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "取出 m 个元素等价于留下 n 减 m 个元素，两种取法一一对应，所以组合数相等，这条性质能简化较大的组合数计算。"
+    },
+    {
+     "id": "msj_h1099_q6",
+     "topicId": "msj_h1099",
+     "prompt": "从 n 个不同元素中取出 m 个元素的组合数，可以拆成哪两个组合数之和？",
+     "question": "从 n 个不同元素中取出 m 个元素的组合数，可以拆成哪两个组合数之和？",
+     "options": [
+      {
+       "label": "A",
+       "text": "取出 m 个与取出 m 加 1 个的组合数"
+      },
+      {
+       "label": "B",
+       "text": "取出 n 减 m 个与取出 n 减 m 加 1 个的组合数"
+      },
+      {
+       "label": "C",
+       "text": "取出 m 个与取出 m 减 1 个的组合数"
+      },
+      {
+       "label": "D",
+       "text": "取出 m 个与取出 n 减 m 个的组合数"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "按某个指定元素是否被取出分成两类：含它的取法数为取出 m 减 1 个的组合数，不含它的为取出 m 个的组合数，两类相加即得原组合数。"
+    },
+    {
+     "id": "msj_h1099_q7",
+     "topicId": "msj_h1099",
+     "prompt": "100 件产品中有 98 件合格品、2 件不合格品，从中任意抽出 3 件，抽出的 3 件中至少有 1 件不合格品的抽法有多少种？",
+     "question": "100 件产品中有 98 件合格品、2 件不合格品，从中任意抽出 3 件，抽出的 3 件中至少有 1 件不合格品的抽法有多少种？",
+     "answer": 9604,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "用排除法，总抽法 161700 种减去 3 件全是合格品的抽法 152096 种，得 9604 种；也可以分类算恰好 1 件与恰好 2 件不合格的抽法再相加。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 100}, {\"type\": \"num\", \"value\": 99}]}, {\"type\": \"num\", \"value\": 98}]}, {\"type\": \"num\", \"value\": 6}]}, {\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 98}, {\"type\": \"num\", \"value\": 97}]}, {\"type\": \"num\", \"value\": 96}]}, {\"type\": \"num\", \"value\": 6}]}]}"
+    },
+    {
+     "id": "msj_h1099_q8",
+     "topicId": "msj_h1099",
+     "prompt": "房间里有 5 盏电灯，分别由 5 个开关控制，至少开 1 盏灯用以照明，有多少种不同的方法？为什么可以这样算？",
+     "question": "房间里有 5 盏电灯，分别由 5 个开关控制，至少开 1 盏灯用以照明，有多少种不同的方法？为什么可以这样算？",
+     "answer": "共有 31 种。每一盏灯都有开与不开两种处理，5 盏共 2 的 5 次方等于 32 种，其中全不开的那一种不能照明，减去后得 31 种。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "开灯顺序不影响结果，只需数出各盏灯开或不开的组合，用总数减去不合要求的全不开情形，比逐一分类相加更简便。"
+    }
+   ]
+  },
+  {
+   "id": "msj_h1100",
+   "page": 82,
+   "description": "本节由多项式乘法的规律推出二项式定理，给出展开式与通项公式，说明二项式系数的对称性、增减性与和为 2 的 n 次方等性质，并用通项求指定项及其系数。",
+   "mastery_criteria": [
+    "能写出二项展开式并说明项数",
+    "能用通项公式求指定项或指定项的系数",
+    "能说出二项式系数的基本性质并用于求和"
+   ],
+   "misconceptions": [
+    "把项的系数与二项式系数混为一谈",
+    "用通项求常数项时忘记同时处理字母的指数与符号"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "msj_h1100_q1",
+     "topicId": "msj_h1100",
+     "prompt": "(a 加 b) 的 n 次方的展开式一共有多少项？",
+     "question": "(a 加 b) 的 n 次方的展开式一共有多少项？",
+     "options": [
+      {
+       "label": "A",
+       "text": "n 加 1 项"
+      },
+      {
+       "label": "B",
+       "text": "n 项"
+      },
+      {
+       "label": "C",
+       "text": "n 减 1 项"
+      },
+      {
+       "label": "D",
+       "text": "2n 项"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "展开式中 a 的指数从 n 逐项减到 0，共 n 加 1 种情形，所以展开式共有 n 加 1 项，二项式系数也正好有 n 加 1 个。"
+    },
+    {
+     "id": "msj_h1100_q2",
+     "topicId": "msj_h1100",
+     "prompt": "(1 加 x) 的 4 次方的展开式中，x 的平方项的系数是多少？",
+     "question": "(1 加 x) 的 4 次方的展开式中，x 的平方项的系数是多少？",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "由二项式定理，x 的平方项对应从 4 个括号中选 2 个取 x，系数为组合数 4 取 2，即 4 乘 3 除以 2 等于 6。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"num\", \"value\": 0.5}]}"
+    },
+    {
+     "id": "msj_h1100_q3",
+     "topicId": "msj_h1100",
+     "prompt": "(a 加 b) 的 5 次方展开式中，第 4 项的二项式系数是多少？",
+     "question": "(a 加 b) 的 5 次方展开式中，第 4 项的二项式系数是多少？",
+     "answer": 10,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "第 4 项对应 r 等于 3，它的二项式系数为组合数 5 取 3，即 5 乘 4 乘 3 除以 6，得 10。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 4}]}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"num\", \"value\": 6}]}"
+    },
+    {
+     "id": "msj_h1100_q4",
+     "topicId": "msj_h1100",
+     "prompt": "(1 加 2x) 的 7 次方的展开式中，含 x 的立方项的系数是多少？",
+     "question": "(1 加 2x) 的 7 次方的展开式中，含 x 的立方项的系数是多少？",
+     "answer": 280,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "第 r 加 1 项为组合数 7 取 r 乘以 2x 的 r 次方，取 r 等于 3 得二项式系数 35 与 8 的乘积，所以系数是 280。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 7}, {\"type\": \"num\", \"value\": 6}]}, {\"type\": \"num\", \"value\": 5}]}, {\"type\": \"num\", \"value\": 6}]}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}]}"
+    },
+    {
+     "id": "msj_h1100_q5",
+     "topicId": "msj_h1100",
+     "prompt": "(a 加 b) 的 n 次方展开式中所有二项式系数的和等于多少？",
+     "question": "(a 加 b) 的 n 次方展开式中所有二项式系数的和等于多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "n 的平方"
+      },
+      {
+       "label": "B",
+       "text": "2 的 n 次方"
+      },
+      {
+       "label": "C",
+       "text": "n 的阶乘"
+      },
+      {
+       "label": "D",
+       "text": "2n"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "在二项式定理中令 a 和 b 都等于 1，右边各项的二项式系数之和就等于左边 2 的 n 次方，这是二项式系数的重要性质。"
+    },
+    {
+     "id": "msj_h1100_q6",
+     "topicId": "msj_h1100",
+     "prompt": "(a 加 b) 的 n 次方展开式中，奇数项的二项式系数之和与偶数项的二项式系数之和是什么关系？",
+     "question": "(a 加 b) 的 n 次方展开式中，奇数项的二项式系数之和与偶数项的二项式系数之和是什么关系？",
+     "options": [
+      {
+       "label": "A",
+       "text": "前者是后者的 2 倍"
+      },
+      {
+       "label": "B",
+       "text": "前者比后者大 1"
+      },
+      {
+       "label": "C",
+       "text": "两者相等"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "在二项式定理中分别令 a、b 取 1 与负 1，两式相加再除以 2 得奇数项系数和，相减得偶数项系数和，两者都等于 2 的 n 减 1 次方。"
+    },
+    {
+     "id": "msj_h1100_q7",
+     "topicId": "msj_h1100",
+     "prompt": "(x 减 x 分之 1) 的 6 次方的展开式中，常数项是多少？",
+     "question": "(x 减 x 分之 1) 的 6 次方的展开式中，常数项是多少？",
+     "answer": -20,
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "第 r 加 1 项为组合数 6 取 r 乘以 x 的 6 减 2r 次方再乘负 1 的 r 次方，令指数为 0 得 r 等于 3，所以常数项为 20 乘负 1 等于负 20。",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 5}]}, {\"type\": \"num\", \"value\": 4}]}, {\"type\": \"num\", \"value\": 6}]}, {\"type\": \"num\", \"value\": -1}]}"
+    },
+    {
+     "id": "msj_h1100_q8",
+     "topicId": "msj_h1100",
+     "prompt": "(a 加 b) 的 n 次方展开式中各项二项式系数之和为 2 的 n 次方，请说明这个结论是怎样得到的。",
+     "question": "(a 加 b) 的 n 次方展开式中各项二项式系数之和为 2 的 n 次方，请说明这个结论是怎样得到的。",
+     "answer": "在二项式定理中令 a 等于 1、b 等于 1，左边变成 2 的 n 次方，右边每一项都只剩二项式系数，于是各项二项式系数之和等于 2 的 n 次方。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "给字母赋特殊值是证明组合恒等式的常用手段，令两个字母都等于 1 可以把含字母的项全部化为 1，从而只留下系数之和。"
+    }
+   ]
+  }
+ ]
+}
