@@ -58,10 +58,17 @@
    - 试点两片在跑：S01（一年级上册 66 题）、S110（选必3 逻辑与思维 68 题）；跑通后按片并发。
 4. ~~并发写题~~ ✅ 57 片全部 PASS，共 **3135 题**（`data/politics/_bank/S01…S57.json`）
 5. ~~合并 + 门禁~~ ✅ `scripts/ddfz_merge_bank.py` 合并 → `questions.json`（3135 题，schema OK，回写 435 个 `diagnostic_question`）；`scripts/test_politics.py` **39/39**；`validate.py politics` 0 错误
-6. **文档与上线**（未完成）→ 已备 `.github/workflows/validate-politics.yml`（politics 专用，validate --all ＋ test_politics ＋ 索引新鲜度）；待办：`build_standards_index.py` 生成 politics 桶、README 加分学科行/小节、推送走 Git Data API（只动 `data/politics/**`＋`data/politics-standards-entries.json`＋自己脚本＋派生文件按桶增量改）
+6. ~~文档与上线~~ ✅（2026-11-02：commit `ce8a62b`，远端 head 已含 politics；CI `Validate Politics Subject Data` success、`Deploy` success；线上 `data/politics/{topics,questions,dependencies}.json` 与本地 md5 一致；explore 下拉 19 学科含「道德与法治／思想政治」，深链 `?subject=politics` 出图）
+
+### 上线备注→ 已备 `.github/workflows/validate-politics.yml`（politics 专用，validate --all ＋ test_politics ＋ 索引新鲜度）；待办：`build_standards_index.py` 生成 politics 桶、README 加分学科行/小节、推送走 Git Data API（只动 `data/politics/**`＋`data/politics-standards-entries.json`＋自己脚本＋派生文件按桶增量改）
 
 ## 口径备忘
 
 - 义教以「课」为可诊断点（每点 8 题），单元 5 题；高中以「框」为可诊断点、课为单元点
 - 领域五板块：道德教育 / 政治认同 / 法治教育 / 经济发展 / 哲学思维
 - 上课时长限制：`github.com:443` 不通，推走 `api.github.com` ＋ `gh auth token`（详见技能 `cn-k12-knowledge-graph-build` §8.5）
+
+- 远端聚合（`data/topics.json` / `questions.json` / `dependencies.json` / 课标索引 / volume-map / stats）**在我推送前已含 politics**（另一会话在本机工作树里跑过聚合脚本并推送），且与我分学科数据逐条一致（topics 435 / deps 646 / questions 3135）⇒ 本次只补源文件与站点注册，没再重算聚合。
+- ⛔ 不要为刷新人这个仓库的全局 `build_standards_index.py`：它按分学科文件重算，而 `math-bsd` 的分学科文件（31 点）与已提交聚合（562 点）不一致，重算会把 531 点从聚合里抹掉。politics 的索引新鲜度改用 `scripts/check_politics_standards_index.py`（只核本学科桶）。
+- ⛔ `build_subjects_registry.py` 全量重生成会因 `data/math-hebei/` 缺 `topics.json` 而删掉「冀教版」版本 ⇒ politics 是**手工插入** `data/subject-groups.json`（并在脚本 `SUBJECT_LABEL` 里登记，供以后正常重生成时保留）。
+- 共享 workflow `validate.yml` 的 `Validate JSON Data` 仍红，红在 `Subject invariants · math-qd`（另一会话的青岛版数学），与 politics 无关；politics 自己的 workflow 是绿的。
