@@ -14,6 +14,7 @@
   var hint = document.getElementById('hint');
 
   var INDEX = null, BOOK = null, cur = null, USER_SCROLLED = false;
+  var REG = null;   // ../data/subject-groups.json：一级学科 → 二级教材版本
 
   function esc(s) {
     return String(s == null ? '' : s)
@@ -145,14 +146,29 @@
     return null;
   }
 
+  // 一级学科：优先读注册表（18 个），标出该学科在本站有没有试卷讲解数据
   function subjects() {
-    var list = (INDEX && INDEX.books) || [], out = [];
-    list.forEach(function (b) {
+    var books = (INDEX && INDEX.books) || [];
+    var hasData = function (subjId) {
+      return books.some(function (b) { return (b.subject || 'math') === subjId; });
+    };
+    if (REG && REG.subjects && REG.subjects.length) {
+      return REG.subjects.map(function (g) {
+        return { id: g.id, name: g.name, editions: (g.editions || []).length, hasData: hasData(g.id) };
+      });
+    }
+    var out = [];
+    books.forEach(function (b) {
       if (!out.some(function (x) { return x.id === b.subject; })) {
-        out.push({ id: b.subject || 'math', name: b.subjectName || '数学' });
+        out.push({ id: b.subject || 'math', name: b.subjectName || '数学', editions: 1, hasData: true });
       }
     });
     return out;
+  }
+
+  function groupOf(subjectId) {
+    if (!REG || !REG.subjects) return null;
+    return REG.subjects.filter(function (g) { return g.id === subjectId; })[0] || null;
   }
 
   function editions(subject) {
@@ -173,12 +189,21 @@
 
   function fillSubjects() {
     selSubject.innerHTML = subjects().map(function (x) {
-      return '<option value="' + esc(x.id) + '">' + esc(x.name) + '</option>';
+      return '<option value="' + esc(x.id) + '">' + esc(x.name + (x.hasData ? '' : '（暂无讲解）')) + '</option>';
     }).join('');
   }
 
   function fillEditions(subject, keep) {
     var es = editions(subject);
+    var g = groupOf(subject);
+    if (!es.length) {
+      selEdition.innerHTML = '<option value="">暂无</option>';
+      hint.textContent = (g ? g.name : subject) + '：本学科暂无试卷讲解数据。';
+      if (typeof listEl !== 'undefined' && listEl) listEl.innerHTML = '';
+      if (typeof reader !== 'undefined' && reader) reader.innerHTML = '<p class="empty">暂无讲解</p>';
+      if (typeof selBook !== 'undefined' && selBook) selBook.innerHTML = '<option value="">—</option>';
+      return;
+    }
     selEdition.innerHTML = es.map(function (e) {
       return '<option value="' + esc(e) + '">' + esc(e) + '</option>';
     }).join('');
@@ -293,10 +318,17 @@
   }
 
   function boot() {
-    fetch('index.json').then(function (r) {
+    var pIndex = fetch('index.json').then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
-    }).then(function (idx) {
+    });
+    var pReg = fetch('../../data/subject-groups.json')
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .catch(function () { return null; });
+
+    Promise.all([pIndex, pReg]).then(function (rs) {
+      var idx = rs[0];
+      REG = rs[1];
       INDEX = idx;
       fillSubjects();
 

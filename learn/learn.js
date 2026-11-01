@@ -14,6 +14,7 @@
   var hint = document.getElementById('hint');
 
   var INDEX = null;      // learn/index.json
+  var REG = null;        // data/subject-groups.json：一级学科 → 二级教材版本
   var BOOK = null;       // {index 条目, markdown map}
   var cur = null;        // 当前 topicId
   var USER_SCROLLED = false;  // 首屏不滚动，避免 sticky 顶栏把正文标题压出去
@@ -136,11 +137,29 @@
     return null;
   }
 
+  // 一级学科：优先读注册表（18 个），并标出该学科在本站有没有课时讲解数据
   function subjects() {
-    var list = (INDEX && INDEX.books) || [], out = [];
-    list.forEach(function (b) {
+    var books = (INDEX && INDEX.books) || [];
+    var hasData = function (subjId) {
+      return books.some(function (b) { return (b.subject || 'math') === subjId; });
+    };
+    if (REG && REG.subjects && REG.subjects.length) {
+      return REG.subjects.map(function (g) {
+        return {
+          id: g.id,
+          name: g.name,
+          editions: (g.editions || []).length,
+          hasData: hasData(g.id),
+          editionsWithData: books.filter(function (b) { return (b.subject || 'math') === g.id; })
+            .map(function (b) { return b.edition || '人教版'; })
+            .filter(function (v, i, a) { return a.indexOf(v) === i; })
+        };
+      });
+    }
+    var out = [];
+    books.forEach(function (b) {
       if (!out.some(function (x) { return x.id === b.subject; })) {
-        out.push({ id: b.subject || 'math', name: b.subjectName || '数学' });
+        out.push({ id: b.subject || 'math', name: b.subjectName || '数学', editions: 1, hasData: true, editionsWithData: [] });
       }
     });
     return out;
@@ -162,19 +181,36 @@
     });
   }
 
-  function fillSubjects() {
+  function fillSubjects(keep) {
     var ss = subjects();
     selSubject.innerHTML = ss.map(function (s) {
-      return '<option value="' + esc(s.id) + '">' + esc(s.name) + '</option>';
+      var label = s.name + (s.hasData ? '' : '（暂无讲解）');
+      return '<option value="' + esc(s.id) + '">' + esc(label) + '</option>';
     }).join('');
+    if (keep && ss.some(function (s) { return s.id === keep; })) selSubject.value = keep;
   }
 
   function fillEditions(subject, keep) {
-    var es = editions(subject);
+    var es = editions(subject);           // 只有真正有讲解数据的版本
+    var g = groupOf(subject);
+    if (!es.length) {
+      selEdition.innerHTML = '<option value="">暂无</option>';
+      hint.textContent = (g ? g.name : subject) + '：本学科暂无课时讲解数据。'
+        + (g && (g.editions || []).length > 1 ? '（共 ' + g.editions.length + ' 个教材版本，均未生成讲解）' : '');
+      if (typeof selBook !== 'undefined' && selBook) selBook.innerHTML = '<option value="">—</option>';
+      if (typeof listEl !== 'undefined' && listEl) listEl.innerHTML = '';
+      if (typeof reader !== 'undefined' && reader) reader.innerHTML = '<p class="empty">暂无讲解</p>';
+      return;
+    }
     selEdition.innerHTML = es.map(function (e) {
       return '<option value="' + esc(e) + '">' + esc(e) + '</option>';
     }).join('');
     if (keep && es.indexOf(keep) >= 0) selEdition.value = keep;
+  }
+
+  function groupOf(subjectId) {
+    if (!REG || !REG.subjects) return null;
+    return REG.subjects.filter(function (g) { return g.id === subjectId; })[0] || null;
   }
 
   // 册次：只列当前 学科+出版社 的册，按学段分组
@@ -194,9 +230,17 @@
     if (opened) html.push('</optgroup>');
     selBook.innerHTML = html.join('') || '<option value="">暂无</option>';
     if (keep && list.some(function (b) { return b.book === keep; })) selBook.value = keep;
-    var subjName = (subjects().filter(function (s) { return s.id === selSubject.value; })[0] || {}).name || '';
+    var cur = (subjects().filter(function (s) { return s.id === selSubject.value; })[0] || {});
+    var subjName = cur.name || '';
+    if (!list.length) {
+      hint.textContent = subjName + '：本学科暂无课时讲解数据。';
+      return;
+    }
+    var g2 = groupOf(selSubject.value);
+    var more = (g2 && (g2.editions || []).length > editions(selSubject.value).length)
+      ? '（另有 ' + (g2.editions.length - editions(selSubject.value).length) + ' 个教材版本暂无讲解）' : '';
     hint.textContent = subjName + '·' + selEdition.value + '：已收录 ' + list.length + ' 册 / '
-      + list.reduce(function (n, b) { return n + b.lessonCount; }, 0) + ' 个课时。'
+      + list.reduce(function (n, b) { return n + b.lessonCount; }, 0) + ' 个课时' + more + '。'
       + ' 点课时名称，右侧（手机为下方）显示完整讲解。';
   }
 
@@ -285,10 +329,18 @@
   }
 
   function boot() {
-    fetch('index.json').then(function (r) {
+    // 索引（讲解数据）+ 注册表（学科→版本）并行取
+    var pIndex = fetch('index.json').then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
-    }).then(function (idx) {
+    });
+    var pReg = fetch('../data/subject-groups.json')
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .catch(function () { return null; });
+
+    Promise.all([pIndex, pReg]).then(function (rs) {
+      var idx = rs[0];
+      REG = rs[1];
       INDEX = idx;
       INDEX.total = idx.count;
       fillSubjects();
@@ -319,7 +371,12 @@
         wantBook = list.length ? list[0].book : '';   // 默认第一册（一年级上册），与试卷讲解一致
       }
       fillBooks(wantBook);
-      if (!wantBook) { hint.textContent = '讲解数据还没生成（learn/index.json 为空）。'; return; }
+      if (!wantBook) {
+        var gx = (typeof groupOf === 'function') ? groupOf(selSubject.value) : null;
+        hint.textContent = (gx ? gx.name : '本学科') + '：暂无课时讲解数据。';
+        if (selBook) selBook.innerHTML = '<option value="">—</option>';
+        return;
+      }
       selBook.value = wantBook;
       loadBook(wantBook, function () {
         var target = hash || (getBook(wantBook).lessons[0] || {}).topicId;
