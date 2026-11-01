@@ -131,9 +131,17 @@
     return pure ? '<blockquote>' + paras.join('') + '</blockquote>' : paras.join('');
   }
 
-  function getBook(book) {
+  // ⚠️ 同一册名在不同版本下都会出现（人教版/北京版/冀教版都有「一年级上册」），
+  // 必须按 学科 + 版本 + 册 三者定位，否则会取到别的版本的书。
+  function getBook(book, subject, edition) {
     var list = (INDEX && INDEX.books) || [];
-    for (var i = 0; i < list.length; i++) if (list[i].book === book) return list[i];
+    for (var i = 0; i < list.length; i++) {
+      var b = list[i];
+      if (b.book !== book) continue;
+      if (subject && (b.subject || 'math') !== subject) continue;
+      if (edition && (b.edition || '人教版') !== edition) continue;
+      return b;
+    }
     return null;
   }
 
@@ -310,7 +318,7 @@
   }
 
   function loadBook(book, then) {
-    var b = getBook(book);
+    var b = getBook(book, selSubject.value, selEdition.value);
     if (!b) return;
     fetch('../' + b.path).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
@@ -379,7 +387,7 @@
       }
       selBook.value = wantBook;
       loadBook(wantBook, function () {
-        var target = hash || (getBook(wantBook).lessons[0] || {}).topicId;
+        var target = hash || (getBook(wantBook, selSubject.value, selEdition.value).lessons[0] || {}).topicId;
         if (target) open(target);
       });
     }).catch(function (e) {
@@ -405,8 +413,10 @@
   selEdition.addEventListener('change', function () {
     var list = booksOf(selSubject.value, selEdition.value);
     if (!list.length) { selBook.innerHTML = '<option value="">暂无</option>'; return; }
+    var prev = selBook.value;
     cur = null;
-    var book = list[list.length - 1].book;
+    // 换版本时尽量停在同一册（如都有一年级上册）；没有才退回第一册
+    var book = list.some(function (b) { return b.book === prev; }) ? prev : list[0].book;
     fillBooks(book);
     history.replaceState(null, '', '?subject=' + encodeURIComponent(selSubject.value)
       + '&edition=' + encodeURIComponent(selEdition.value) + '&book=' + encodeURIComponent(book));
@@ -417,7 +427,8 @@
     var b = selBook.value;
     if (!b) return;
     cur = null;
-    history.replaceState(null, '', '?book=' + encodeURIComponent(b));
+    history.replaceState(null, '', '?subject=' + encodeURIComponent(selSubject.value)
+      + '&edition=' + encodeURIComponent(selEdition.value) + '&book=' + encodeURIComponent(b));
     loadBook(b, null);
   });
   selUnit.addEventListener('change', function () { USER_SCROLLED = true; renderList(); });

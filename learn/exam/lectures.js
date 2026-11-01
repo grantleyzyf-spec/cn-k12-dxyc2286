@@ -140,9 +140,16 @@
   }
   var KIND_LABEL = { unit: '单元卷', mid: '期中', fin: '期末' };
 
-  function getBook(name) {
+  // 同册名可能存在于多个教材版本（人教版/北京版/冀教版…），必须按 学科 + 版本 + 册 三者定位
+  function getBook(name, subject, edition) {
     var list = (INDEX && INDEX.books) || [];
-    for (var i = 0; i < list.length; i++) if (list[i].book === name) return list[i];
+    for (var i = 0; i < list.length; i++) {
+      var b = list[i];
+      if (b.book !== name) continue;
+      if (subject && (b.subject || 'math') !== subject) continue;
+      if (edition && (b.edition || '人教版') !== edition) continue;
+      return b;
+    }
     return null;
   }
 
@@ -300,7 +307,7 @@
   }
 
   function loadBook(name, then) {
-    var b = getBook(name);
+    var b = getBook(name, selSubject.value, selEdition.value);
     if (!b) return;
     fetch(b.path + '?v=2').then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
@@ -361,7 +368,7 @@
       if (!wantBook) { hint.textContent = '讲解数据还没生成（learn/exam/index.json 为空）。'; return; }
       selBook.value = wantBook;
       loadBook(wantBook, function () {
-        var target = hash || ((getBook(wantBook).papers[0] || {}).examId);
+        var target = hash || ((getBook(wantBook, selSubject.value, selEdition.value).papers[0] || {}).examId);
         if (target) open(target);
       });
     }).catch(function (e) {
