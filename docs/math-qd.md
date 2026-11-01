@@ -36,12 +36,12 @@
 
 | 项目 | 数值 |
 | --- | --- |
-| 已交题库册次 | **一年级上册**（26 个知识点 / 186 题） |
+| 已交题库册次 | **全部 14 册**（372 个知识点 / 2655 题） |
 | 题量口径 | 课时点 8 题、单元点 5 题 |
-| 难度 | basic 64 + 5 · standard 62 · hard 55（含手工补的 5 道主题活动题） |
-| 答案位 | A 48 · B 48 · C 46 · D 44 |
+| 难度 | basic 827 · standard 1040 · hard 788 |
+| 答案位 | A 677 · B 677 · C 656 · D 645 |
 | 题型 | 全部 `choice`（4 选项、真干扰项：多算、少算、符号看错、顺序错、把「比多少」当「合起来」） |
-| 待补 | **其余 13 册（346 个知识点）题库未写**，自检按「已交册次白名单」放行并打印缺口 |
+| 分片 | 46 片（`data/math-qd/_bank/S01–S46.json`），每片自带 `_shards/S{NN}/WORKER.md` 派单与 checker |
 
 ## 5. 本轮怎么跑出来的
 
@@ -49,13 +49,13 @@
 2. `python3 scripts/qd_skeleton_source.py --write` → `_inventory.json`（14 册 / 107 单元 / 265 课时点；缺 4 册登记）。
 3. `python3 scripts/qd_build.py --write` → `topics.json` + `dependencies.json`（372 点 / 517 边 / 课标借调 / 根节点 reason）。
 4. 分片派单：一年级上册拆 4 片（37＋53＋39＋52 题）并发写库，每片跑 `scripts/qd_check_bank.py` 到 `PASS`；父代再逐片复跑一遍（不信自报）。
-5. `python3 scripts/qd_merge_bank.py` → `questions.json`（合并、排序、回写 `diagnostic_question`）。
+5. `python3 scripts/qd_merge_bank.py` → `questions.json`（合并 46 片、排序、回写 `diagnostic_question`）。
 6. `rebuild_aggregates_only.py` → `build_standards_index.py` → `build_stats.py --write` → `test_math_qd.py`（28/28）。
 
 ## 6. 已知缺口
 
 - **教材缺 4 册**：四下、五下、六下、九下；这 4 册不建点（不猜章节），站点上也不显示。
-- **题库只交 1 册**（一上）；其余 13 册 346 点待写，按册分片并发补。
+- **题库 14 册全覆盖**（372 点 / 2655 题）：全部 `choice`，无填空、无开放题；`application` 类（如统计调查）建议后续补情境简答。
 - **课标全部 `inferred`**：借调自人教版同段条目，逐点人工对齐（`exact/partial`）还没做。
 - **小学课时名取教材情境名**（如「箱子里有什么」「折纸鹤」）：这是青岛版教材的真实栏目标题，与人教版「小节名」口径不同，跨版本横向比较时要注意。
 - 单元 `description` 目前多为情境名（大单元 docx 的知识要素句还没提取进 `description`）。
