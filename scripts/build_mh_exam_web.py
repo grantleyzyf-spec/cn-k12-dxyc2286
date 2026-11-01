@@ -28,13 +28,13 @@ BOOK_CODE = {
 JUDGE_OPTS = [{"label": "A", "text": "正确"}, {"label": "B", "text": "错误"}]
 
 
-def convert_item(it, code):
+def convert_item(it, code, sec_type=None):
     """原卷题 → 前端题。判断题渲染成两个选项（正确/错误），简答渲染成解答题。"""
     no = it["no"]
     base = {"itemId": f"mh_{code}_q{no:02d}", "no": no, "stem": it["stem"],
             "score": it.get("score", 0), "topicIds": [it["topicId"]],
             "analysis": it.get("explain", "")}
-    t = it.get("type")
+    t = it.get("type") or sec_type          # 部分卷把题型写在 section 上，题内无 type
     if t == "choice":
         base["type"] = "choice"
         base["options"] = it.get("options", [])
@@ -63,7 +63,7 @@ def convert(paper):
         sections.append({
             "title": sec.get("name") or "试题",
             "rule": "",
-            "items": [convert_item(it, code) for it in sec.get("items", [])],
+            "items": [convert_item(it, code, sec.get("type")) for it in sec.get("items", [])],
         })
     units = []
     for bp in paper.get("blueprint") or []:
