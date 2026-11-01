@@ -180,15 +180,18 @@
   // 册次：只列当前 学科+出版社 的册，按学段分组
   function fillBooks(keep) {
     var list = booksOf(selSubject.value, selEdition.value);
-    var html = [], stageNow = '';
+    var html = [], stageNow = '', opened = false;
     list.forEach(function (b) {
       if (b.stage !== stageNow) {
+        if (opened) html.push('</optgroup>');   // ⚠️ 必须成对闭合：不闭合时浏览器会把后一个 optgroup 嵌进前一个，初中/高中整组选不到
         stageNow = b.stage;
         html.push('<optgroup label="' + esc(stageNow) + '">');
+        opened = true;
       }
       html.push('<option value="' + esc(b.book) + '">' + esc(b.book)
         + '（' + b.lessonCount + ' 篇）</option>');
     });
+    if (opened) html.push('</optgroup>');
     selBook.innerHTML = html.join('') || '<option value="">暂无</option>';
     if (keep && list.some(function (b) { return b.book === keep; })) selBook.value = keep;
     var subjName = (subjects().filter(function (s) { return s.id === selSubject.value; })[0] || {}).name || '';
