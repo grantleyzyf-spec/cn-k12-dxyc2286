@@ -107,6 +107,8 @@ def main():
                     qq.setdefault('question', qq.get('prompt', ''))
                     if qq.get('type') == 'choice':
                         qq.setdefault('choices', qq.get('options'))
+                    if not isinstance(qq.get('answer'), str):
+                        qq['answer'] = str(qq.get('answer', ''))   # schema: answer 必须 string
                     questions.append({k: val for k, val in qq.items() if k in Q_FIELDS})
 
     json.dump(topics, open(os.path.join(OUT, 'topics.json'), 'w', encoding='utf-8'),
