@@ -75,6 +75,9 @@ jobs:
       - name: Subject invariants · mental-health
         run: python3 scripts/test_mental_health.py
 
+      - name: Subject invariants · math-bsd
+        run: python3 scripts/test_math_bsd.py
+
       - name: Standards index freshness (regenerate & diff)
         run: |
           cp data/cn-curriculum-standards.json /tmp/std.before.json
