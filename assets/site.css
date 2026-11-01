@@ -165,6 +165,16 @@ ol.steps p { margin: 0; font-size: 14px; color: var(--ink-2); }
 .subject-card:hover { text-decoration: none; border-color: var(--brand); transform: translateY(-1px); }
 .subject-card .sc-name { font-weight: 650; font-size: 15px; }
 .subject-card .sc-meta { font-size: 12px; color: var(--ink-3); }
+/* 学科卡 = 一级学科；版本 chips = 二级分支（同一学科的不同教材版本） */
+.subject-block { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.sc-editions { display: flex; flex-wrap: wrap; gap: 6px; padding-left: 2px; }
+.sc-chip {
+  display: inline-block; padding: 2px 8px; border-radius: 999px;
+  border: 1px solid var(--line, #d8dee5); background: var(--bg-2, #f6f8fa);
+  font-size: 12px; color: var(--ink-2, #475467); text-decoration: none; white-space: nowrap;
+}
+.sc-chip:hover { border-color: var(--brand); color: var(--brand); background: #fff; }
+
 .subject-card .sc-count {
   margin-left: auto; font-variant-numeric: tabular-nums;
   font-weight: 700; color: var(--brand-ink); font-size: 15px;

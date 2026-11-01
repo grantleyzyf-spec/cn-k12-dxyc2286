@@ -6,6 +6,16 @@
   'use strict';
 
   var CN_NUM = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
+  // 学科 → 版本 注册表（data/subjects.json）：一级只列学科，版本是二级分支。
+  // 深链仍是 ?subject=<版本目录>（math / math-bsd …），所以 currentSubject 仍存版本 id。
+  var REGISTRY = null;
+  var SUBJECT_ICON = {
+    math: '📐', chinese: '📖', english: '🔤', physics: '⚡', chemistry: '🧪', biology: '🧬',
+    history: '📜', geography: '🌍', science: '🔬', 'information-technology': '💻', japanese: '🇯🇵',
+    russian: '🇷🇺', german: '🇩🇪', french: '🇫🇷', spanish: '🇪🇸', music: '🎵', art: '🎨',
+    'mental-health': '🧠'
+  };
+
   var SUBJECT_NAME = {
     math: '数学', chinese: '语文', english: '英语', physics: '物理', chemistry: '化学',
     biology: '生物', history: '历史', geography: '地理', science: '科学',
@@ -688,12 +698,26 @@
 
   function bind() {
     $('subject-select').addEventListener('change', function (e) {
-      currentSubject = e.target.value;
+      var subj = groupOf(e.target.value);
+      var ed = subj && subj.editions.length ? subj.editions[0].id : e.target.value;
+      currentSubject = ed;
+      fillEditions(subj, ed);
       stage = 'all'; currentGrade = 'all'; currentDomain = 'all'; currentBook = 'all';
       selectedId = null; closeInfo();
       history.replaceState(null, '', urlFor());
       loadData();
     });
+
+    var edSel = $('edition-select');
+    if (edSel) {
+      edSel.addEventListener('change', function (e) {
+        currentSubject = e.target.value;
+        stage = 'all'; currentGrade = 'all'; currentDomain = 'all'; currentBook = 'all';
+        selectedId = null; closeInfo();
+        history.replaceState(null, '', urlFor());
+        loadData();
+      });
+    }
 
     document.querySelectorAll('#stage-tabs button').forEach(function (b) {
       b.addEventListener('click', function () {
@@ -759,9 +783,65 @@
     });
   }
 
-  bind();
-  initLegendToggle();
-  fitHeight();
-  window.addEventListener('resize', function () { fitHeight(); if (selectedId) renderGraph(); });
-  loadData();
+  function groupOf(editionId) {
+    if (!REGISTRY) return null;
+    return (REGISTRY.subjects || []).filter(function (s) {
+      return (s.editions || []).some(function (e) { return e.id === editionId; });
+    })[0] || null;
+  }
+
+  function fillSubjects() {
+    var sel = $('subject-select');
+    if (!sel || !REGISTRY) return;
+    sel.innerHTML = (REGISTRY.subjects || []).map(function (s) {
+      var label = (SUBJECT_ICON[s.id] ? SUBJECT_ICON[s.id] + ' ' : '') + s.name;
+      if ((s.editions || []).length > 1) label += '（' + s.editions.length + ' 版）';
+      return '<option value="' + s.editions[0].id + '">' + label + '</option>';
+    }).join('');
+  }
+
+  function fillEditions(group, want) {
+    var wrap = $('edition-wrap');
+    var sel = $('edition-select');
+    if (!wrap || !sel) return;
+    if (!group || (group.editions || []).length <= 1) {
+      wrap.hidden = true;
+      sel.innerHTML = '';
+      return;
+    }
+    wrap.hidden = false;
+    sel.innerHTML = group.editions.map(function (e) {
+      return '<option value="' + e.id + '">' + (e.name || e.id) + '（' + e.topics + ' 点）</option>';
+    }).join('');
+    sel.value = want || group.editions[0].id;
+  }
+
+  function syncSelectors() {
+    var group = groupOf(currentSubject);
+    var subjSel = $('subject-select');
+    if (!REGISTRY) return;
+    fillSubjects();
+    if (!group) group = (REGISTRY.subjects || [])[0];
+    if (subjSel && group) subjSel.value = group.editions[0].id;
+    fillEditions(group, currentSubject);
+    if ($('edition-select') && group && (group.editions || []).length > 1) $('edition-select').value = currentSubject;
+  }
+
+  function boot() {
+    bind();
+    initLegendToggle();
+    fitHeight();
+    window.addEventListener('resize', function () { fitHeight(); if (selectedId) renderGraph(); });
+    fetch('../data/subject-groups.json').then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    }).then(function (reg) {
+      REGISTRY = reg;
+      syncSelectors();
+    }).catch(function () {
+      // 注册表拿不到也照常跑：保留 HTML 里的默认学科，版本下拉隐藏
+    }).then(loadData);
+  }
+
+  boot();
 })();

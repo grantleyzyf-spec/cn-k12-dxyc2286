@@ -14,6 +14,7 @@ cp -a "$ROOT/assets" "$ROOT/explore" "$ROOT/diagnose" "$ROOT/learn" "$ROOT/lectu
 cp "$ROOT/data/stats.json" "$ROOT/data/cn-curriculum-standards.json" "$OUT/data/"
 [ -f "$ROOT/data/site-config.json" ] && cp "$ROOT/data/site-config.json" "$OUT/data/"
 [ -f "$ROOT/data/id-aliases.json" ] && cp "$ROOT/data/id-aliases.json" "$OUT/data/"
+[ -f "$ROOT/data/subject-groups.json" ] && cp "$ROOT/data/subject-groups.json" "$OUT/data/"   # 学科→版本注册表（首页学科卡/explore/诊断读它）
 
 for d in "$ROOT"/data/*/; do
   name="$(basename "$d")"

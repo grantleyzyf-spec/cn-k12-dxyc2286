@@ -18,6 +18,14 @@
     ]
   };
 
+  // 学科图标（与 explore 页一致）
+  var SUBJECT_ICON = {
+    math: '📐', chinese: '📖', english: '🔤', physics: '⚡', chemistry: '🧪', biology: '🧬',
+    history: '📜', geography: '🌍', science: '🔬', 'information-technology': '💻', japanese: '🇯🇵',
+    russian: '🇷🇺', german: '🇩🇪', french: '🇫🇷', spanish: '🇪🇸', music: '🎵', art: '🎨',
+    'mental-health': '🧠'
+  };
+
   var SUBJECT_LABEL = {
     math: '小·初·高', chinese: '小·初·高', english: '小·初·高', physics: '初·高',
     biology: '高', history: '初·高', german: '高', russian: '小·初·高', geography: '初·高',
@@ -45,9 +53,64 @@
     if (box) box.setAttribute('aria-busy', 'false');
   }
 
-  function renderSubjects(s) {
+  // 一级=学科卡，二级=版本 chips：同一学科的不同教材版本不单列成学科
+  function renderSubjects(s, reg) {
     var host = document.getElementById('subjects');
     if (!host) return;
+
+    if (reg && reg.subjects && reg.subjects.length) {
+      host.innerHTML = '';
+      reg.subjects.slice().sort(function (a, b) { return b.topics - a.topics; }).forEach(function (sub) {
+        var block = document.createElement('div');
+        block.className = 'subject-block';
+
+        var eds = (sub.editions || []).slice();
+        var main = eds[0] || { id: sub.id, name: '', topics: sub.topics };
+
+        var a = document.createElement('a');
+        a.className = 'subject-card';
+        a.href = 'explore/?subject=' + encodeURIComponent(main.id);
+
+        var wrap = document.createElement('span');
+        var name = document.createElement('span');
+        name.className = 'sc-name';
+        name.textContent = (SUBJECT_ICON[sub.id] ? SUBJECT_ICON[sub.id] + ' ' : '') + sub.name;
+        var meta = document.createElement('span');
+        meta.className = 'sc-meta';
+        meta.textContent = (sub.label || SUBJECT_LABEL[sub.id] || '') + (eds.length > 1 ? ' · ' + eds.length + ' 个版本' : '');
+        wrap.appendChild(name);
+        wrap.appendChild(document.createElement('br'));
+        wrap.appendChild(meta);
+
+        var count = document.createElement('span');
+        count.className = 'sc-count';
+        count.textContent = fmt(sub.topics);
+        a.appendChild(wrap);
+        a.appendChild(count);
+        block.appendChild(a);
+
+        if (eds.length > 1) {
+          var chips = document.createElement('div');
+          chips.className = 'sc-editions';
+          eds.forEach(function (e) {
+            var c = document.createElement('a');
+            c.className = 'sc-chip';
+            c.href = 'explore/?subject=' + encodeURIComponent(e.id);
+            c.textContent = (e.name || e.id) + ' ' + fmt(e.topics);
+            c.title = sub.name + ' · ' + (e.name || e.id) + ' · ' + fmt(e.topics) + ' 个知识点';
+            chips.appendChild(c);
+          });
+          block.appendChild(chips);
+        }
+        host.appendChild(block);
+      });
+      host.setAttribute('aria-busy', 'false');
+      var ns = document.getElementById('n-subjects');
+      if (ns) ns.textContent = String(reg.subjects.length);
+      return;
+    }
+
+    // 回退：没有注册表时按 stats.json 的 per_subject 平铺（旧行为）
     var rows = (s.per_subject || []).slice().sort(function (a, b) { return b.topics - a.topics; });
     host.innerHTML = '';
     rows.forEach(function (r) {
@@ -90,19 +153,24 @@
     });
   }
 
-  fetch('data/stats.json', { cache: 'no-cache' })
-    .then(function (r) {
-      if (!r.ok) throw new Error('HTTP ' + r.status);
-      return r.json();
-    })
-    .then(function (s) {
+  var pStats = fetch('data/stats.json', { cache: 'no-cache' }).then(function (r) {
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return r.json();
+  });
+  var pReg = fetch('data/subject-groups.json', { cache: 'no-cache' })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .catch(function () { return null; });
+
+  Promise.all([pStats, pReg])
+    .then(function (rs) {
+      var s = rs[0], reg = rs[1];
       renderStats(s);
-      renderSubjects(s);
+      renderSubjects(s, reg);
       fillStatTexts(s);
     })
     .catch(function (e) {
       renderStats(FALLBACK);
-      renderSubjects(FALLBACK);
+      renderSubjects(FALLBACK, null);
       fillStatTexts(FALLBACK);
       showError('统计文件读取失败（' + e.message + '），已回退到内置基线数字。请用本地静态服务器打开页面，或稍后重试。');
     });
