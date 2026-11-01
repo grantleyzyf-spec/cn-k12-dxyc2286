@@ -76,3 +76,37 @@ python3 scripts/rebuild_aggregates_only.py   # 重建 data/ 汇总三件套
 ## 8. 页面用法
 
 首页学科卡「数学（北京版）」→ `explore/?subject=math-bj`（聚焦子图看先修）／`diagnose/?subject=math-bj`（自适应诊断，答错回溯先修链）；册次筛选用 `?book=<册名>`。
+
+## 9. 试卷（`data/math-bj/exams/`）
+
+| 口径 | 数量 |
+|---|---|
+| 单元卷 | **80**（每个正式单元/章 1 卷；「数学百花园」「总复习」属综合与实践，不出卷） |
+| 期中卷 | 28（14 册 × A/B） |
+| 期末卷 | 28（14 册 × A/B） |
+| 合计 | **136 卷 / 4,134 题** |
+
+- 卷面结构：小学 1–2 年级 40 分钟/100 分（直接写得数 10×2＋填空 10×2＋选择 8×2＋操作 4×4＋解决问题 4×7）；小学 3–6 年级 60 分钟/100 分（计算 6×4＋填空 10×2＋选择 8×2＋操作 3×4＋解决问题 4×7）；初中 90 分钟/120 分（选择 10×3＋填空 6×4＋解答 8 题，分值 6,6,8,8,9,9,10,10）。
+- 无计算单元（图形/统计）用 `variant: no-calc`，首段改「看图作答」。
+- 卷名/examId 已归一：`第X单元测试卷` / `第X章 <章名> 测试卷` / `期中测试卷A|B` / `期末测试卷A|B`；`mbj_exam_g<年级><a|b>_u<NN>|mid_a|fin_b`。
+- 原创性：卷面题干与题库相似度 <0.85（`scripts/check_math_bj_exam.py` 硬断言），题库题只作 `reteach` 引用。
+- **已修 14 处卷面确错**（子代讲解时上报、父代逐条复核后改）：一上第六单元 3 处答案错位、三上第一单元「450×4 末尾 0 个数」、三上第三单元两处等值选项、三下期中A 题干「添一个 0」、四上「65 万≈65 万」、六上倒数解析字母、九上优弧圆周角 30→150 度、九上第十八章位似坐标选 B。
+
+## 10. 学层精讲（`data/math-bj/learn/`）
+
+- **528 篇 = 528 个课时点，一篇不落**：14 册文件 `learn/<册>.json`，`{book, lessons:[{topicId,title,markdown,words}]}`。
+- 合计 **841,695 汉字**（平均 1,594 字/篇，全部落在 1,200–2,600 带内）。
+- 七段固定：开场／课本原文（≥2 处 `> ` 引文，逐字回教材 TXT＋「这句话的意思是」）／费曼翻译／例题精讲（2 道，各配 ❌/✅）／易错点拨（取 `misconceptions`）／五步学习法（五条固定序、每条 ≥25 汉字、整节 350–700）／方法锚与自查（`- [ ]` ≥3）。
+- 引文回表：7 册文字层直抽 + 7 册扫描本 OCR（一上 4,765 → 七下 58,444 汉字）；`quote` 一律 **逐字** 命中教材 TXT（OCR 源且汉字 ≥6,000 时不给模糊余量）。
+- 自检：`python3 scripts/check_math_bj_learn.py data/math-bj/learn/<册>.json`（14/14 通过）。
+
+## 11. 试卷讲解（`data/math-bj/exam_lectures/`）
+
+- **136 份 = 136 卷全覆盖**，`{examId, book, paper, kind, markdown}`，合计 **665,075 汉字**。
+- 六段：这份卷在考什么／考点地图（列表，末行给最重三考点及合计分）／逐题精讲（每题 `### 第 N 题（X 分）`＋思路·关键一步·易错；选择题逐项说干扰项；解答题按 `scoreRule` 分步给分且和＝题分）／整卷复盘／五步学习法（绑本卷题号）／自查清单（6–8 条）。
+- 字数带：小学 3,500–7,200 / 初中 4,000–7,800；禁 Markdown 表格与 LaTeX；数字与单位留空格。
+- 自检：`python3 scripts/check_math_bj_lecture.py data/math-bj/exam_lectures/<册>/<卷>.json`（136/136 通过）。
+
+## 12. 复算脚本与分片（`data/math-bj/_build/`）
+
+`ocr_mathbj.py`（教材 PDF→TXT，7 册直抽 7 册 OCR）→ `parse_structure.py`＋`skeleton.py`（626 点骨架）→ `attach_standards.py`／`build_std_pool.py`（课标挂标与条目池）→ `make_shards.py`／`make_exam_shards*.py`／`make_learn_shards.py`／`make_lecture_shards.py`（分片）→ `merge_bank.py`／`merge_learn.py`（合并）→ `normalize_exams.py`／`normalize_learn_titles.py`（口径归一）→ `fix_exam_errata.py`／`fix_learn_wubu.py`／`fix_lecture_errata.py`（返修）。
