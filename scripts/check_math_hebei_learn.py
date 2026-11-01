@@ -8,7 +8,7 @@
 """
 import difflib, json, os, re, sys
 
-REPO = os.path.expanduser("~/Desktop/cn-k12-dxyc2286")
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # 不能写 ~/Desktop/…：CI 上的 ~ 是 /home/runner
 D = f"{REPO}/data/math-hebei"
 TXT = {"一年级上册": "x一_上", "一年级下册": "x一_下", "二年级上册": "x二_上", "二年级下册": "x二_下",
        "三年级上册": "x三_上", "三年级下册": "x三_下", "四年级上册": "x四_上", "五年级上册": "x五_上",
