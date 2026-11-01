@@ -1,0 +1,2521 @@
+{
+ "shard": "S14",
+ "subject": "math-bj",
+ "book": "三上",
+ "points": [
+  {
+   "topicId": "mbj_p248",
+   "description": "结合具体情境认识两个数量的相差关系，会用线段图表示「比一个数多几」和「比一个数少几」，能根据相差数和其中一个数求出另一个数，并会检验结果是否合理。",
+   "mastery_criteria": [
+    "能画出线段图表示两个量的相差关系",
+    "能根据「多几」「少几」正确列式并计算",
+    "会用减法检验求出的较大数是否正确"
+   ],
+   "misconceptions": [
+    "看到「多」就用加法，不先分清谁是较大数",
+    "把相差数直接当成结果，漏加或漏减",
+    "已知较大数和相差数求较小数时错用加法"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.24",
+    "quote": "建立加法模型和乘法模型，知道模型中数量的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p248_q1",
+     "topicId": "mbj_p248",
+     "prompt": "小明有12张画片，小红的画片比小明多5张。小红有多少张画片？",
+     "question": "小明有12张画片，小红的画片比小明多5张。小红有多少张画片？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "C",
+     "explanation": "小红比小明多5张，说明小红的张数是在12张的基础上再添5张，应该用加法：12加5等于17张。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "7张"
+      },
+      {
+       "label": "B",
+       "text": "12张"
+      },
+      {
+       "label": "C",
+       "text": "17张"
+      },
+      {
+       "label": "D",
+       "text": "5张"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p248_q2",
+     "topicId": "mbj_p248",
+     "prompt": "果园里有桃树28棵，梨树比桃树少9棵。梨树有多少棵？",
+     "question": "果园里有桃树28棵，梨树比桃树少9棵。梨树有多少棵？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "19",
+     "explanation": "梨树比桃树少9棵，就是比28少9，用减法计算：28减9等于19棵。",
+     "subject": "math-bj",
+     "verify": "28-9"
+    },
+    {
+     "id": "mbj_p248_q3",
+     "topicId": "mbj_p248",
+     "prompt": "甲有35元，乙比甲少8元。甲、乙两人一共有多少元？",
+     "question": "甲有35元，乙比甲少8元。甲、乙两人一共有多少元？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "62",
+     "explanation": "先求乙的钱数：35减8等于27元；再把两人的钱合起来：35加27等于62元。求「一共」用加法。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p248_q4",
+     "topicId": "mbj_p248",
+     "prompt": "小红有20支铅笔，她比小明多6支。小明有多少支铅笔？",
+     "question": "小红有20支铅笔，她比小明多6支。小明有多少支铅笔？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "A",
+     "explanation": "「小红比小明多6支」说明小明少6支，求较小的数要用减法：20减6等于14支。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "14支"
+      },
+      {
+       "label": "B",
+       "text": "26支"
+      },
+      {
+       "label": "C",
+       "text": "20支"
+      },
+      {
+       "label": "D",
+       "text": "6支"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p248_q5",
+     "topicId": "mbj_p248",
+     "prompt": "两筐苹果共85个，第一筐比第二筐多13个。第一筐有多少个苹果？",
+     "question": "两筐苹果共85个，第一筐比第二筐多13个。第一筐有多少个苹果？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "49",
+     "explanation": "从总数85里减去相差的13个，剩下的72个是两筐同样多的部分，每份36个，第一筐再添上13个得49个。",
+     "subject": "math-bj",
+     "verify": "(85-13)/2+13"
+    },
+    {
+     "id": "mbj_p248_q6",
+     "topicId": "mbj_p248",
+     "prompt": "为什么求「比一个数多几的数」要用加法？请结合一个例子说一说。",
+     "question": "为什么求「比一个数多几的数」要用加法？请结合一个例子说一说。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "把较小的数看作一份，比它多几，就要在这一份后面再添上相差的那几个，所以求较大数要把较小数与相差数合起来，用加法。例如小明有12张画片，小红比他多5张，就是12加5，得17张。",
+     "explanation": "把较小的数看成一份，比它多几就是在这份后面再添上相差的几个，所以要把较小数和相差数合起来，用加法计算。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p248_q7",
+     "topicId": "mbj_p248",
+     "prompt": "小明有48元，小红有36元。小明给小红多少元后，两人的钱数同样多？",
+     "question": "小明有48元，小红有36元。小明给小红多少元后，两人的钱数同样多？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "B",
+     "explanation": "两人相差12元，只要把相差的12元平均分成两份，小明给小红6元，小明少6元、小红多6元，两人就都是42元。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "12元"
+      },
+      {
+       "label": "B",
+       "text": "6元"
+      },
+      {
+       "label": "C",
+       "text": "24元"
+      },
+      {
+       "label": "D",
+       "text": "4元"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p248_q8",
+     "topicId": "mbj_p248",
+     "prompt": "小刚身高135厘米，小强比小刚高8厘米。要求小强的身高，应该列的算式是哪一个？",
+     "question": "小刚身高135厘米，小强比小刚高8厘米。要求小强的身高，应该列的算式是哪一个？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "135+8",
+     "explanation": "「小强比小刚高8厘米」说明小强高一些，求较高的身高要在135厘米上添8厘米，所以列式是135加8。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p249",
+   "description": "围绕相差关系做综合练习：在文字叙述、表格和生活场景中辨认较大数、较小数和相差数，能正确选择加法或减法列式，会用两步计算解决稍复杂的实际问题。",
+   "mastery_criteria": [
+    "能从题中找出较大数、较小数和相差数",
+    "能根据所求的量选择加法或减法并算对",
+    "能用两步计算解决相差关系的实际问题"
+   ],
+   "misconceptions": [
+    "题目里出现「多」「少」就随手加减，不看所求的是哪个量",
+    "两步计算时把中间结果当成最终答案",
+    "把两个数的差当成两个数的和来用"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.06",
+    "quote": "理解现实问题中的加法模型是表示总量等于各分量之和"
+   },
+   "questions": [
+    {
+     "id": "mbj_p249_q1",
+     "topicId": "mbj_p249",
+     "prompt": "五年级有72人，六年级比五年级多9人。要求六年级有多少人，正确的算式是哪一个？",
+     "question": "五年级有72人，六年级比五年级多9人。要求六年级有多少人，正确的算式是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "六年级比五年级多9人，是在72人的基础上添9人，用加法；72减9求的是比五年级少9人的情况。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "72-9"
+      },
+      {
+       "label": "B",
+       "text": "72+9+72"
+      },
+      {
+       "label": "C",
+       "text": "72-9+72"
+      },
+      {
+       "label": "D",
+       "text": "72+9"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p249_q2",
+     "topicId": "mbj_p249",
+     "prompt": "图书馆有故事书145本，科技书比故事书少38本。科技书有多少本？",
+     "question": "图书馆有故事书145本，科技书比故事书少38本。科技书有多少本？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "107",
+     "explanation": "科技书比故事书少38本，就是比145少38，用减法：145减38等于107本。",
+     "subject": "math-bj",
+     "verify": "145-38"
+    },
+    {
+     "id": "mbj_p249_q3",
+     "topicId": "mbj_p249",
+     "prompt": "三年级有男生86人，女生比男生多12人。三年级一共有多少人？",
+     "question": "三年级有男生86人，女生比男生多12人。三年级一共有多少人？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "184",
+     "explanation": "先求女生人数：86加12等于98人；再求总人数：86加98等于184人。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p249_q4",
+     "topicId": "mbj_p249",
+     "prompt": "商店上午卖出52箱牛奶，下午比上午多卖17箱。这一天一共卖出多少箱牛奶？",
+     "question": "商店上午卖出52箱牛奶，下午比上午多卖17箱。这一天一共卖出多少箱牛奶？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "121",
+     "explanation": "下午卖出52加17等于69箱，全天是52加69等于121箱。两步都要算，不能只算下午的69箱。",
+     "subject": "math-bj",
+     "verify": "52+(52+17)"
+    },
+    {
+     "id": "mbj_p249_q5",
+     "topicId": "mbj_p249",
+     "prompt": "小明有64本课外书，小红有39本。小明比小红多多少本？",
+     "question": "小明有64本课外书，小红有39本。小明比小红多多少本？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "A",
+     "explanation": "求两个数相差多少，用较大数减较小数：64减39等于25本。相加求出的是两人的总数。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "25本"
+      },
+      {
+       "label": "B",
+       "text": "103本"
+      },
+      {
+       "label": "C",
+       "text": "35本"
+      },
+      {
+       "label": "D",
+       "text": "15本"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p249_q6",
+     "topicId": "mbj_p249",
+     "prompt": "三（1）班有43人，三（2）班比三（1）班少5人。两个班一共有多少人？",
+     "question": "三（1）班有43人，三（2）班比三（1）班少5人。两个班一共有多少人？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "81",
+     "explanation": "三（2）班有43减5等于38人，两个班合起来是43加38等于81人。先算少5人的班，再求总数。",
+     "subject": "math-bj",
+     "verify": "43+(43-5)"
+    },
+    {
+     "id": "mbj_p249_q7",
+     "topicId": "mbj_p249",
+     "prompt": "小红比小明多6张卡片，小明有15张。小丽算出小红有9张，她的答案对吗？请说出检验的办法。",
+     "question": "小红比小明多6张卡片，小明有15张。小丽算出小红有9张，她的答案对吗？请说出检验的办法。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "不对。小明15张，小红比小明多6张，应比15张多，用15加6得21张。检验时可以算21减15，看是否等于6，结果正好是6，说明21张才对；9张比15张少，方向就错了。",
+     "explanation": "答案不对。小明15张，小红比他多6张，应比15大，用15加6得21张。可以用21减15看是否等于相差的6，正好等于6，说明21张正确。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p249_q8",
+     "topicId": "mbj_p249",
+     "prompt": "一棵小树高95厘米，旁边的大树比小树高120厘米。大树高多少厘米？",
+     "question": "一棵小树高95厘米，旁边的大树比小树高120厘米。大树高多少厘米？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "215",
+     "explanation": "大树比小树高120厘米，求大树的高度要在95厘米上添120厘米，用加法：95加120等于215厘米。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p250",
+   "description": "回顾本单元的数量关系：把「求较大数」「求较小数」「求相差数」三类问题整理成表，明确每类问题的已知与未知，复习画线段图分析和检验的方法，形成解题的一般步骤。",
+   "mastery_criteria": [
+    "能把三类相差问题按已知、未知分类整理",
+    "会用「较大数＝较小数＋相差数」判断算法",
+    "会用画线段图和倒算的方法检验答案"
+   ],
+   "misconceptions": [
+    "只记「多就加、少就减」，不会按已知未知判断",
+    "整理时把三类问题混成一类",
+    "检验时又用原式重算一遍，查不出错"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.10",
+    "quote": "形成初步的模型意识和应用意识"
+   },
+   "questions": [
+    {
+     "id": "mbj_p250_q1",
+     "topicId": "mbj_p250",
+     "prompt": "「甲比乙多多少」和「乙比甲少多少」，这两个问题的结果有什么关系？",
+     "question": "「甲比乙多多少」和「乙比甲少多少」，这两个问题的结果有什么关系？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "C",
+     "explanation": "两次比较的都是甲、乙之间相差的那一部分，只是说法不同，所以算出来的结果完全一样。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "甲比乙多得多"
+      },
+      {
+       "label": "B",
+       "text": "乙比甲少得多"
+      },
+      {
+       "label": "C",
+       "text": "两个结果相同"
+      },
+      {
+       "label": "D",
+       "text": "无法比较"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p250_q2",
+     "topicId": "mbj_p250",
+     "prompt": "乙数是40，甲数比乙数多18。甲数是多少？",
+     "question": "乙数是40，甲数比乙数多18。甲数是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "58",
+     "explanation": "甲数比乙数多18，就是把40和18合起来，用加法：40加18等于58。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p250_q3",
+     "topicId": "mbj_p250",
+     "prompt": "小红有24元，比小东多7元。小明算出小东有31元，请你算出小东实际有多少元。",
+     "question": "小红有24元，比小东多7元。小明算出小东有31元，请你算出小东实际有多少元。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "17",
+     "explanation": "小红比小东多7元，小东就比小红少7元，用24减7等于17元。31元是把7加到了24上，方向弄反了。",
+     "subject": "math-bj",
+     "verify": "24-7"
+    },
+    {
+     "id": "mbj_p250_q4",
+     "topicId": "mbj_p250",
+     "prompt": "下面哪一种情况可以用「较大数＝较小数＋相差数」来求？",
+     "question": "下面哪一种情况可以用「较大数＝较小数＋相差数」来求？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "A",
+     "explanation": "这条关系式的左边是较大数，右边是较小数加相差数，所以适用于已知较小数和相差数、求较大数的情况。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "已知较小数和相差数，求较大数"
+      },
+      {
+       "label": "B",
+       "text": "已知两数的和与差，求两个数"
+      },
+      {
+       "label": "C",
+       "text": "已知较大数和相差数，求较小数"
+      },
+      {
+       "label": "D",
+       "text": "已知两个数，求它们的差"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p250_q5",
+     "topicId": "mbj_p250",
+     "prompt": "整理本单元的数量关系时，为什么先画线段图再列式比较不容易出错？",
+     "question": "整理本单元的数量关系时，为什么先画线段图再列式比较不容易出错？",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "线段图把两个数量画成长短不同的两条线段，谁多谁少一眼就能看出来，相差的部分也能标在图上。看清哪条是较大数、哪条是较小数、哪段是相差数，再决定用加还是用减，就不会把加减弄反，也不会把相差数当成结果。",
+     "explanation": "线段图能看出谁多谁少，把较大数、较小数、相差数标清楚，再决定用加还是用减。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p250_q6",
+     "topicId": "mbj_p250",
+     "prompt": "小华有32张画片，小明的画片比小华多9张，小刚的画片比小明少14张。小刚有多少张画片？",
+     "question": "小华有32张画片，小明的画片比小华多9张，小刚的画片比小明少14张。小刚有多少张画片？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "27",
+     "explanation": "先求小明：32加9等于41张；再求小刚：41减14等于27张。要按「比谁多、比谁少」的顺序一步步算。",
+     "subject": "math-bj",
+     "verify": "32+9-14"
+    },
+    {
+     "id": "mbj_p250_q7",
+     "topicId": "mbj_p250",
+     "prompt": "关于相差关系，下面说法正确的是哪一个？",
+     "question": "关于相差关系，下面说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "D",
+     "explanation": "较大数减相差数正好得较小数，所以已知较大数和相差数时用减法求较小数；求比一个数多几的数要用加法，相差数也不会比两个数都大。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "求比一个数多几的数要用减法"
+      },
+      {
+       "label": "B",
+       "text": "相差数一定比两个数都大"
+      },
+      {
+       "label": "C",
+       "text": "「甲比乙多5」说明甲是乙的5倍"
+      },
+      {
+       "label": "D",
+       "text": "已知较大数和相差数，用减法可以求出较小数"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p250_q8",
+     "topicId": "mbj_p250",
+     "prompt": "果园里有桃树156棵，梨树比桃树少49棵。梨树有多少棵？",
+     "question": "果园里有桃树156棵，梨树比桃树少49棵。梨树有多少棵？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "107",
+     "explanation": "梨树比桃树少49棵，用156减49等于107棵。减的时候注意退位，156减49的个位要向十位借1。",
+     "subject": "math-bj",
+     "verify": "156-49"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p251",
+   "description": "认识角，知道角由一个顶点和两条边组成；会比较角的大小，认识直角、锐角、钝角，会用三角尺上的直角判断直角，在生活情境中感受角的存在。",
+   "mastery_criteria": [
+    "能指出角的顶点和两条边",
+    "会比较两个角的大小并说出理由",
+    "能把角分成直角、锐角、钝角三类"
+   ],
+   "misconceptions": [
+    "认为角的两条边画得越长，角就越大",
+    "把角的边数成三条，把顶点也算作边",
+    "比较角的大小时只看图形的大小"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.06",
+    "quote": "结合生活情境认识角，知道角的大小关系; 会用量角器量角"
+   },
+   "questions": [
+    {
+     "id": "mbj_p251_q1",
+     "topicId": "mbj_p251",
+     "prompt": "一个角是由哪些部分组成的？",
+     "question": "一个角是由哪些部分组成的？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "从一个点起，用尺子向不同方向画两条直直的线，就画成一个角。这个点是顶点，两条线是角的边，所以角有一个顶点和两条边。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "一个顶点和两条边"
+      },
+      {
+       "label": "B",
+       "text": "两个顶点和一条边"
+      },
+      {
+       "label": "C",
+       "text": "一个顶点和一条边"
+      },
+      {
+       "label": "D",
+       "text": "两个顶点和两条边"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p251_q2",
+     "topicId": "mbj_p251",
+     "prompt": "一个长方形一共有几个直角？",
+     "question": "一个长方形一共有几个直角？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "4",
+     "explanation": "长方形四个角都是方方正正的，用三角尺上的直角比一比都能完全重合，所以长方形有4个直角。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p251_q3",
+     "topicId": "mbj_p251",
+     "prompt": "一块三角尺上有2个锐角，4块同样的三角尺一共有多少个锐角？",
+     "question": "一块三角尺上有2个锐角，4块同样的三角尺一共有多少个锐角？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "8",
+     "explanation": "每块三角尺有2个锐角，4块就是4个2，用乘法算：4乘2等于8个。",
+     "subject": "math-bj",
+     "verify": "4*2"
+    },
+    {
+     "id": "mbj_p251_q4",
+     "topicId": "mbj_p251",
+     "prompt": "角的大小与下面哪一项有关？",
+     "question": "角的大小与下面哪一项有关？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "D",
+     "explanation": "把角的两条边延长，两条边张开的样子没有变，角的大小也不变；角的大小只跟两条边张开的程度有关，张口越大角越大。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "与两条边画得长短有关"
+      },
+      {
+       "label": "B",
+       "text": "与顶点画在纸上的位置有关"
+      },
+      {
+       "label": "C",
+       "text": "与两条边画的方向有关"
+      },
+      {
+       "label": "D",
+       "text": "与两条边张开的程度有关"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p251_q5",
+     "topicId": "mbj_p251",
+     "prompt": "怎样用三角尺上的直角判断一个角是不是直角？请写出你的做法。",
+     "question": "怎样用三角尺上的直角判断一个角是不是直角？请写出你的做法。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "先把三角尺上直角的顶点和要判断的角的顶点对齐，再让三角尺直角的一条边和角的一条边重合，看角的另一条边是不是也落在三角尺直角的另一条边上。如果完全重合，这个角就是直角；落在里面就比直角小，落在外面就比直角大。",
+     "explanation": "顶点对齐、一条边重合，再看另一条边是否也重合，重合就是直角。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p252",
+   "description": "从剪刀、钟面等实物中抽象出角，认识角的顶点和边，会数简单图形中的角，知道角的大小与两边张开的程度有关、与边的长短无关，会用尺子画角。",
+   "mastery_criteria": [
+    "能从实物图中找出角并指出顶点和边",
+    "会数简单图形中角的个数",
+    "能按「先画顶点再画两条边」的步骤画角"
+   ],
+   "misconceptions": [
+    "数角时把顶点也当成一个角",
+    "画角时两条边没有从同一个点出发",
+    "认为边画得长角就大"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.06",
+    "quote": "结合生活情境认识角，知道角的大小关系; 会用量角器量角"
+   },
+   "questions": [
+    {
+     "id": "mbj_p252_q1",
+     "topicId": "mbj_p252",
+     "prompt": "下面关于角的说法，正确的是哪一个？",
+     "question": "下面关于角的说法，正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "角由一个顶点和两条边组成；边是可以延长的线，长短不影响角的大小，所以「边越长角越大」的说法不对。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "角的两条边越长，角就越大"
+      },
+      {
+       "label": "B",
+       "text": "角的两条边是弯的"
+      },
+      {
+       "label": "C",
+       "text": "角的两条边一定一样长"
+      },
+      {
+       "label": "D",
+       "text": "角有一个顶点和两条边"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p252_q2",
+     "topicId": "mbj_p252",
+     "prompt": "填一填：一个角有（　）个顶点，（　）条边。两个数按前后顺序写出来，中间用顿号隔开。",
+     "question": "填一填：一个角有（　）个顶点，（　）条边。两个数按前后顺序写出来，中间用顿号隔开。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "1、2",
+     "explanation": "角是从一个点起画出两条直直的线组成的，那个点是唯一的一个顶点，两条线就是两条边。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p252_q3",
+     "topicId": "mbj_p252",
+     "prompt": "用4根小棒摆成一个四边形，它一共有几个角？",
+     "question": "用4根小棒摆成一个四边形，它一共有几个角？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4",
+     "explanation": "四边形有4条边，相邻两条边相交的地方就是一个角，四条边围起来正好有4个角。",
+     "subject": "math-bj",
+     "verify": "2*2"
+    },
+    {
+     "id": "mbj_p252_q4",
+     "topicId": "mbj_p252",
+     "prompt": "把一个角的两条边都延长一些，这个角的大小会怎样变化？",
+     "question": "把一个角的两条边都延长一些，这个角的大小会怎样变化？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "C",
+     "explanation": "角的大小由两条边张开的程度决定，边延长后张开的程度没有改变，所以角的大小保持不变。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "变大"
+      },
+      {
+       "label": "B",
+       "text": "变小"
+      },
+      {
+       "label": "C",
+       "text": "不变"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p252_q5",
+     "topicId": "mbj_p252",
+     "prompt": "钟面上3时整，时针和分针组成的角是什么角？",
+     "question": "钟面上3时整，时针和分针组成的角是什么角？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "直",
+     "explanation": "3时整时，时针指向3，分针指向12，两针正好张开四分之一圈，这样的角与三角尺上的直角一样大，是直角。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p252_q6",
+     "topicId": "mbj_p252",
+     "prompt": "一块三角尺有3个角，3块同样的三角尺一共有多少个角？",
+     "question": "一块三角尺有3个角，3块同样的三角尺一共有多少个角？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "9",
+     "explanation": "每块三角尺有3个角，3块就是3个3，用乘法算：3乘3等于9个。",
+     "subject": "math-bj",
+     "verify": "3*3"
+    },
+    {
+     "id": "mbj_p252_q7",
+     "topicId": "mbj_p252",
+     "prompt": "从一个点出发画了4条射线，一共可以数出多少个角？",
+     "question": "从一个点出发画了4条射线，一共可以数出多少个角？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "C",
+     "explanation": "每两条射线都能组成一个角，4条射线两两配对，共有6对，所以能数出6个角。数的时候要按顺序配，才不会漏。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "4个"
+      },
+      {
+       "label": "B",
+       "text": "5个"
+      },
+      {
+       "label": "C",
+       "text": "6个"
+      },
+      {
+       "label": "D",
+       "text": "8个"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p252_q8",
+     "topicId": "mbj_p252",
+     "prompt": "画一个角时，为什么要先确定顶点，再从顶点出发画两条边？",
+     "question": "画一个角时，为什么要先确定顶点，再从顶点出发画两条边？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为角的两条边必须从同一个点出发，这个点就是角的顶点。如果两条边不是从同一点画出去的，两条线就不会在一点相交，画出来的图形就不是一个角。所以要先点出顶点，再用尺子从这个点向两个不同方向画边。",
+     "explanation": "角的两条边必须从同一个顶点出发，否则两条线不相交于一点，就不成角。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p253",
+   "description": "认识直角、锐角和钝角：知道比直角小的角是锐角、比直角大的角是钝角，会用三角尺上的直角比一比来判断角的种类，会借助三角尺画直角。",
+   "mastery_criteria": [
+    "能说出锐角、钝角与直角的大小关系",
+    "会用三角尺比一比判断角的种类",
+    "会借助三角尺画出一个直角"
+   ],
+   "misconceptions": [
+    "把比直角小的角叫作钝角，两类名称颠倒",
+    "用眼睛估计角的大小，不用三角尺比",
+    "认为角的两条边张开得宽就是钝角，不看与直角比"
+   ],
+   "std": {
+    "id": "mat-2022:2.TS.03",
+    "quote": "让学生观察角的大小变化，认识直角、锐角、钝角、平角和周角"
+   },
+   "questions": [
+    {
+     "id": "mbj_p253_q1",
+     "topicId": "mbj_p253",
+     "prompt": "下面说法正确的是哪一个？",
+     "question": "下面说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "C",
+     "explanation": "以直角为标准：比直角小的角是锐角，比直角大的角是钝角。所以锐角、直角、钝角按从小到大排列是锐角、直角、钝角。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "比直角小的角是钝角"
+      },
+      {
+       "label": "B",
+       "text": "比直角大的角是锐角"
+      },
+      {
+       "label": "C",
+       "text": "比直角小的角是锐角"
+      },
+      {
+       "label": "D",
+       "text": "所有的角都比直角小"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p253_q2",
+     "topicId": "mbj_p253",
+     "prompt": "一块三角尺上最大的那个角是什么角？",
+     "question": "一块三角尺上最大的那个角是什么角？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "直",
+     "explanation": "三角尺上最大的角与三角尺的直角边围成的方角一样大，用另一块三角尺的直角比一比能完全重合，所以是直角。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p253_q3",
+     "topicId": "mbj_p253",
+     "prompt": "一个长方形有4个直角，两个长方形一共有多少个直角？",
+     "question": "一个长方形有4个直角，两个长方形一共有多少个直角？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "8",
+     "explanation": "每个长方形有4个直角，两个就是4加4等于8个，也可以用乘法4乘2等于8。",
+     "subject": "math-bj",
+     "verify": "4*2"
+    },
+    {
+     "id": "mbj_p253_q4",
+     "topicId": "mbj_p253",
+     "prompt": "一个角比三角尺上的直角大一些，这个角是什么角？",
+     "question": "一个角比三角尺上的直角大一些，这个角是什么角？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "A",
+     "explanation": "判断角的种类要以直角为标准，比直角大的角是钝角，所以这个角是钝角。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "钝角"
+      },
+      {
+       "label": "B",
+       "text": "直角"
+      },
+      {
+       "label": "C",
+       "text": "锐角"
+      },
+      {
+       "label": "D",
+       "text": "无法判断"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p253_q5",
+     "topicId": "mbj_p253",
+     "prompt": "一个图形里有3个锐角、1个钝角，锐角比钝角多几个？",
+     "question": "一个图形里有3个锐角、1个钝角，锐角比钝角多几个？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "2",
+     "explanation": "求相差多少用减法：3减1等于2，所以锐角比钝角多2个。",
+     "subject": "math-bj",
+     "verify": "3-1"
+    },
+    {
+     "id": "mbj_p253_q6",
+     "topicId": "mbj_p253",
+     "prompt": "怎样判断一个角是锐角还是钝角？请写出你的做法。",
+     "question": "怎样判断一个角是锐角还是钝角？请写出你的做法。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "用三角尺上的直角去比：把直角顶点和这个角的顶点对齐，一条边重合，再看另一条边。如果另一条边落在直角里面，这个角比直角小，是锐角；如果落在直角外面，这个角比直角大，是钝角。",
+     "explanation": "用三角尺的直角比一比，比直角小是锐角，比直角大是钝角。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p253_q7",
+     "topicId": "mbj_p253",
+     "prompt": "把一个直角从顶点处分成两个角，这两个角可能是什么角？",
+     "question": "把一个直角从顶点处分成两个角，这两个角可能是什么角？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "C",
+     "explanation": "分出的两个角合起来正好是一个直角，每个角都比直角小，所以两个角都是锐角。它们不可能等于或大于直角。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "两个都是直角"
+      },
+      {
+       "label": "B",
+       "text": "两个都是钝角"
+      },
+      {
+       "label": "C",
+       "text": "两个都是锐角"
+      },
+      {
+       "label": "D",
+       "text": "一个钝角和一个锐角"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p253_q8",
+     "topicId": "mbj_p253",
+     "prompt": "把两个完全一样的长方形沿着长边拼成一个大长方形，大长方形一共有几个直角？",
+     "question": "把两个完全一样的长方形沿着长边拼成一个大长方形，大长方形一共有几个直角？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "4",
+     "explanation": "拼合处的那两条边落到图形内部，不再是大长方形的边，大长方形的四个角仍然都是方方正正的直角，所以一共是4个。",
+     "subject": "math-bj",
+     "verify": "3+1"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p254",
+   "description": "经历收集数据、整理数据、填写统计表、分析数据的过程，知道整理数据能让杂乱的信息变得清楚，会根据统计表中的数据回答简单的数学问题。",
+   "mastery_criteria": [
+    "能说出整理数据的一般步骤",
+    "会把收集到的数据填入统计表并算出合计",
+    "能根据统计表中的数据回答问题"
+   ],
+   "misconceptions": [
+    "把整理数据当成随便把数字抄一遍",
+    "统计表合计栏与各栏数据对不上",
+    "看统计表时把人数最多的类别看错"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p254_q1",
+     "topicId": "mbj_p254",
+     "prompt": "要整理同学们喜欢的水果情况，第一步应该做什么？",
+     "question": "要整理同学们喜欢的水果情况，第一步应该做什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "整理数据要先有数据，所以要先去调查、收集每个人喜欢的水果，有了原始数据才能分类统计、填表和分析。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "先画统计表"
+      },
+      {
+       "label": "B",
+       "text": "先收集数据"
+      },
+      {
+       "label": "C",
+       "text": "先写结论"
+      },
+      {
+       "label": "D",
+       "text": "先算平均数"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p254_q2",
+     "topicId": "mbj_p254",
+     "prompt": "用画「正」字的方法记录人数时，一个完整的「正」字表示多少人？",
+     "question": "用画「正」字的方法记录人数时，一个完整的「正」字表示多少人？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "5",
+     "explanation": "「正」字正好五画，画一笔代表一个人，所以写完一个完整的「正」字就表示已经记录到5个人。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p254_q3",
+     "topicId": "mbj_p254",
+     "prompt": "统计全班同学最喜欢的水果：喜欢苹果的12人，喜欢香蕉的9人，喜欢橘子的15人。一共调查了多少人？",
+     "question": "统计全班同学最喜欢的水果：喜欢苹果的12人，喜欢香蕉的9人，喜欢橘子的15人。一共调查了多少人？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "36",
+     "explanation": "把三类人数合起来就是被调查的总人数：12加9等于21，21加15等于36人。",
+     "subject": "math-bj",
+     "verify": "12+9+15"
+    },
+    {
+     "id": "mbj_p254_q4",
+     "topicId": "mbj_p254",
+     "prompt": "把收集到的数据整理成统计表，主要好处是什么？",
+     "question": "把收集到的数据整理成统计表，主要好处是什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "原始数据是一个个零散的信息，整理成统计表后各类数量排在一起，多少一目了然，方便比较和发现规律，也方便算总数。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "可以让数据变少"
+      },
+      {
+       "label": "B",
+       "text": "便于比较多少、发现问题"
+      },
+      {
+       "label": "C",
+       "text": "能让数据不再变化"
+      },
+      {
+       "label": "D",
+       "text": "整理后就不用计算了"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p254_q5",
+     "topicId": "mbj_p254",
+     "prompt": "全班同学的身高数据很乱，怎样整理才能既快又不出错？请写出你的办法。",
+     "question": "全班同学的身高数据很乱，怎样整理才能既快又不出错？请写出你的办法。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "先把数据按范围分成几段，例如130厘米以下、130至139厘米、140至149厘米、150厘米及以上；再一个一个地读数据，读到哪一个就在那一段的格子里画一笔记录；最后数出每一段的人数填进统计表，并把各段人数相加，看是否等于全班人数，用来检查有没有重复或遗漏。",
+     "explanation": "先确定分段的范围，再逐个记录，最后填表并用合计检验。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p255",
+   "description": "学习把一组数据按一定范围分段整理：确定分段的界限，逐个数出每段的数据个数，填入统计表，并用各段人数之和与总人数对照，检查有没有重复或遗漏。",
+   "mastery_criteria": [
+    "能按给定的范围把数据分到各段",
+    "会数出并填写各段的人数",
+    "会用合计数检验分段整理的结果"
+   ],
+   "misconceptions": [
+    "同一数据被同时放进两段",
+    "分段时把端点数据漏掉不统计",
+    "各段人数相加与总人数不符却不检查"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p255_q1",
+     "topicId": "mbj_p255",
+     "prompt": "把全班同学的身高按130厘米以下、130～139厘米、140～149厘米、150厘米及以上分成几组来数人数，这种整理方法叫什么？",
+     "question": "把全班同学的身高按130厘米以下、130～139厘米、140～149厘米、150厘米及以上分成几组来数人数，这种整理方法叫什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "按一定的范围把数据分成几段再统计，每段是一个区间，这种整理方法叫分段整理数据，它适合数据比较多、范围比较大的情况。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "分类整理数据"
+      },
+      {
+       "label": "B",
+       "text": "估算"
+      },
+      {
+       "label": "C",
+       "text": "抽样调查"
+      },
+      {
+       "label": "D",
+       "text": "分段整理数据"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p255_q2",
+     "topicId": "mbj_p255",
+     "prompt": "分段统计身高：130～139厘米的有8人，140～149厘米的有12人。这两段一共有多少人？",
+     "question": "分段统计身高：130～139厘米的有8人，140～149厘米的有12人。这两段一共有多少人？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "20",
+     "explanation": "求两段一共多少人，把两段的人数合起来：8加12等于20人。",
+     "subject": "math-bj",
+     "verify": "8+12"
+    },
+    {
+     "id": "mbj_p255_q3",
+     "topicId": "mbj_p255",
+     "prompt": "把体重在25～29千克的数据作为一段，小华体重29千克。他的体重应归入哪一段？",
+     "question": "把体重在25～29千克的数据作为一段，小华体重29千克。他的体重应归入哪一段？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "25～29",
+     "explanation": "分段的两个端点是25千克和29千克，29千克正好落在这段的范围内，所以归入25～29千克这一段。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p255_q4",
+     "topicId": "mbj_p255",
+     "prompt": "分段统计结果是：第一段7人、第二段9人、第三段6人。这三段一共有多少人？",
+     "question": "分段统计结果是：第一段7人、第二段9人、第三段6人。这三段一共有多少人？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "22",
+     "explanation": "把三段人数依次相加：7加9等于16，16加6等于22人。",
+     "subject": "math-bj",
+     "verify": "7+9+6"
+    },
+    {
+     "id": "mbj_p255_q5",
+     "topicId": "mbj_p255",
+     "prompt": "分段整理数据时，下面哪种做法是正确的？",
+     "question": "分段整理数据时，下面哪种做法是正确的？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "分段整理要保证每个数据都能而且只能落进一段，所以各段之间不重复、合起来不遗漏，最后各段人数相加应正好等于总人数，这样才能检查出错误。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "每段的范围可以互相重叠"
+      },
+      {
+       "label": "B",
+       "text": "各段不重复不遗漏，合计等于总人数"
+      },
+      {
+       "label": "C",
+       "text": "段数分得越少越准确"
+      },
+      {
+       "label": "D",
+       "text": "同一个数据可以同时放进两段"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p255_q6",
+     "topicId": "mbj_p255",
+     "prompt": "全班40人，分段统计后第一段12人、第二段15人，第三段有多少人？",
+     "question": "全班40人，分段统计后第一段12人、第二段15人，第三段有多少人？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "13",
+     "explanation": "总人数等于各段人数之和，所以第三段是40减12再减15：40减12等于28，28减15等于13人。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p255_q7",
+     "topicId": "mbj_p255",
+     "prompt": "某班50人按身高分段：130厘米以下8人，130～139厘米17人，140～149厘米20人。150厘米及以上有多少人？",
+     "question": "某班50人按身高分段：130厘米以下8人，130～139厘米17人，140～149厘米20人。150厘米及以上有多少人？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "5",
+     "explanation": "用总人数减去前面各段的人数：50减8等于42，42减17等于25，25减20等于5人，所以最后一段是5人。",
+     "subject": "math-bj",
+     "verify": "50-8-17-20"
+    },
+    {
+     "id": "mbj_p255_q8",
+     "topicId": "mbj_p255",
+     "prompt": "为什么数据多的时候，分段整理比一个一个地看更清楚？",
+     "question": "为什么数据多的时候，分段整理比一个一个地看更清楚？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "数据多的时候，一个一个地看只能看到零散的数字，很难看出整体情况。分段整理把数据按范围归到几段里，每段只记一个数字，人数最多、最少的是哪一段一眼就能看出来，还能算出各段占全班的多少，便于比较和作出判断。",
+     "explanation": "分段后数据变少变整齐，容易看出集中在哪一段，便于比较。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p256",
+   "description": "学习用调查的方法收集数据：确定调查的问题和对象，用画对勾、写「正」字或直接写数的方法记录，把记录结果整理成统计表，并根据数据作出简单判断。",
+   "mastery_criteria": [
+    "能围绕一个问题确定调查对象和方法",
+    "会用画对勾或写「正」字记录调查结果",
+    "能根据记录的结果作出简单判断"
+   ],
+   "misconceptions": [
+    "只问身边的几个同学就当成全班的情况",
+    "记录时漏记或一人记两次",
+    "把「正」字的画数当成人数，多数或少数"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p256_q1",
+     "topicId": "mbj_p256",
+     "prompt": "要了解全班同学最喜欢的课外活动，最合适的做法是什么？",
+     "question": "要了解全班同学最喜欢的课外活动，最合适的做法是什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "要了解全班的情况，就要让全班每位同学都表达一次，逐个调查并记录，得到的才是全班的数据；只问几个人只能代表少数人的想法。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "向全班每位同学调查并记录"
+      },
+      {
+       "label": "B",
+       "text": "凭感觉猜一猜"
+      },
+      {
+       "label": "C",
+       "text": "只问自己的好朋友"
+      },
+      {
+       "label": "D",
+       "text": "看老师喜欢什么"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p256_q2",
+     "topicId": "mbj_p256",
+     "prompt": "用画「正」字的方法记录时，一个完整的「正」字表示几个人？",
+     "question": "用画「正」字的方法记录时，一个完整的「正」字表示几个人？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "5",
+     "explanation": "「正」字有五画，画一画记一个人，所以一个完整的「正」字正好表示5个人，这种方法数起来又快又清楚。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p256_q3",
+     "topicId": "mbj_p256",
+     "prompt": "调查20名同学最喜欢的运动：跳绳7人、踢球6人、跑步4人，其余的人喜欢打乒乓球。喜欢乒乓球的有多少人？",
+     "question": "调查20名同学最喜欢的运动：跳绳7人、踢球6人、跑步4人，其余的人喜欢打乒乓球。喜欢乒乓球的有多少人？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "3",
+     "explanation": "先从总人数里减去已经统计的三类：20减7等于13，13减6等于7，7减4等于3人，所以喜欢乒乓球的有3人。",
+     "subject": "math-bj",
+     "verify": "20-7-6-4"
+    },
+    {
+     "id": "mbj_p256_q4",
+     "topicId": "mbj_p256",
+     "prompt": "用「正」字记录，画了3个完整的「正」字，一共表示多少人？",
+     "question": "用「正」字记录，画了3个完整的「正」字，一共表示多少人？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "15",
+     "explanation": "一个完整的「正」字表示5人，3个就是3个5，用乘法算：3乘5等于15人。",
+     "subject": "math-bj",
+     "verify": "3*5"
+    },
+    {
+     "id": "mbj_p256_q5",
+     "topicId": "mbj_p256",
+     "prompt": "记录时画了2个完整的「正」字，另外还画了3画。一共记录了多少人？",
+     "question": "记录时画了2个完整的「正」字，另外还画了3画。一共记录了多少人？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "2个完整的「正」字是2乘5等于10人，再加后面的3画也就是3人，10加3等于13人。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "10人"
+      },
+      {
+       "label": "B",
+       "text": "13人"
+      },
+      {
+       "label": "C",
+       "text": "15人"
+      },
+      {
+       "label": "D",
+       "text": "8人"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p256_q6",
+     "topicId": "mbj_p256",
+     "prompt": "如果要调查全班同学每天睡觉的时间够不够，你会怎样一步步做？请写出主要步骤。",
+     "question": "如果要调查全班同学每天睡觉的时间够不够，你会怎样一步步做？请写出主要步骤。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "第一步确定调查的问题：全班同学每天大约睡多少小时；第二步确定调查对象是全班每一位同学；第三步一个一个地问并记录，可以用画对勾或写「正」字的方法；第四步把记录结果整理成统计表，数出每一类的人数；第五步根据统计表判断有多少人睡觉时间不足，并提出建议。",
+     "explanation": "定问题、定对象、逐个记录、整理成表、分析判断。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p256_q7",
+     "topicId": "mbj_p256",
+     "prompt": "调查全班45人是否喜欢阅读：喜欢的有38人，其余的人不喜欢。喜欢阅读的比不喜欢阅读的多多少人？",
+     "question": "调查全班45人是否喜欢阅读：喜欢的有38人，其余的人不喜欢。喜欢阅读的比不喜欢阅读的多多少人？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "31",
+     "explanation": "先求不喜欢的人数：45减38等于7人；再求相差：38减7等于31人。",
+     "subject": "math-bj",
+     "verify": "38-(45-38)"
+    },
+    {
+     "id": "mbj_p256_q8",
+     "topicId": "mbj_p256",
+     "prompt": "调查发现全班40人中有32人喜欢跳绳。下面说法最合理的是哪一个？",
+     "question": "调查发现全班40人中有32人喜欢跳绳。下面说法最合理的是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "B",
+     "explanation": "40人中有32人喜欢，说明喜欢跳绳的占大多数，比不喜欢的8人明显多；但不能说全班每个人都喜欢，也不能保证以后调查结果一定不变。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "全班每个人都喜欢跳绳"
+      },
+      {
+       "label": "B",
+       "text": "喜欢跳绳的比不喜欢的多得多"
+      },
+      {
+       "label": "C",
+       "text": "喜欢跳绳的一定永远正好32人"
+      },
+      {
+       "label": "D",
+       "text": "没被调查到的同学都不喜欢跳绳"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p257",
+   "description": "对本学期所学内容做整体回顾：万以内数的加减法、多位数乘一位数、角的初步认识、长方形和正方形的周长、常见数量关系、数据整理，把各部分知识连成网络。",
+   "mastery_criteria": [
+    "能说出本学期学过的主要内容和所在单元",
+    "能在综合情境中选择合适的方法解决问题",
+    "能对自己的解答过程和结果进行检查"
+   ],
+   "misconceptions": [
+    "复习时只记公式，说不清知识的来历",
+    "把周长与面积混淆，单位用错",
+    "解决综合问题时漏用已知条件"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p257_q1",
+     "topicId": "mbj_p257",
+     "prompt": "绕图形一周的长度叫做什么？",
+     "question": "绕图形一周的长度叫做什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "从图形边上的一点出发，沿着边线绕一圈回到这一点，这一圈的长度就是图形的周长，所以周长是围图形一周的长度。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "面积"
+      },
+      {
+       "label": "B",
+       "text": "容积"
+      },
+      {
+       "label": "C",
+       "text": "体积"
+      },
+      {
+       "label": "D",
+       "text": "周长"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p257_q2",
+     "topicId": "mbj_p257",
+     "prompt": "1米等于多少厘米？请填出这个数。",
+     "question": "1米等于多少厘米？请填出这个数。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "100",
+     "explanation": "米和厘米都是长度单位，1米里面有100个1厘米，所以1米等于100厘米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p257_q3",
+     "topicId": "mbj_p257",
+     "prompt": "一本书有180页，小明每天看25页，看了4天。还剩多少页没看？",
+     "question": "一本书有180页，小明每天看25页，看了4天。还剩多少页没看？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "80",
+     "explanation": "先求已经看的页数：25乘4等于100页；再求剩下的页数：180减100等于80页。",
+     "subject": "math-bj",
+     "verify": "180-25*4"
+    },
+    {
+     "id": "mbj_p257_q4",
+     "topicId": "mbj_p257",
+     "prompt": "估算398加205的结果，大约是多少？",
+     "question": "估算398加205的结果，大约是多少？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "把398看作400，205看作200，400加200等于600，所以结果大约是600，实际结果比600略多。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "500"
+      },
+      {
+       "label": "B",
+       "text": "600"
+      },
+      {
+       "label": "C",
+       "text": "700"
+      },
+      {
+       "label": "D",
+       "text": "800"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p257_q5",
+     "topicId": "mbj_p257",
+     "prompt": "举一个例子，说明本学期学的知识能解决生活中的什么问题。",
+     "question": "举一个例子，说明本学期学的知识能解决生活中的什么问题。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "例如给一块长方形菜地围篱笆：量出长8米、宽5米，用（8加5）乘2算出一圈的长度是26米，就知道要买26米篱笆。再如统计班里同学喜欢的水果，收集数据后整理成统计表，就能看出喜欢哪种水果的人最多。",
+     "explanation": "举例说明周长公式用于围篱笆，统计表用于比较人数。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p258",
+   "description": "复习数与运算：巩固万以内数的加减法、多位数乘一位数的笔算方法，理解进位与退位的道理，会用估算判断结果是否合理，会按顺序进行两步混合运算。",
+   "mastery_criteria": [
+    "能正确笔算万以内数的加减法和多位数乘一位数",
+    "会用估算判断计算结果是否合理",
+    "能按先乘后加的顺序进行两步计算"
+   ],
+   "misconceptions": [
+    "减法退位时忘了从十位退1当10",
+    "乘法进位忘加进上来的数",
+    "两步计算时先算加减后算乘法"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p258_q1",
+     "topicId": "mbj_p258",
+     "prompt": "计算325加178，结果是多少？",
+     "question": "计算325加178，结果是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "503",
+     "explanation": "相同数位对齐相加：个位5加8得13，写3向十位进1；十位2加7再加进的1得10，写0向百位进1；百位3加1再加1得5，所以是503。",
+     "subject": "math-bj",
+     "verify": "325+178"
+    },
+    {
+     "id": "mbj_p258_q2",
+     "topicId": "mbj_p258",
+     "prompt": "计算604减287，结果是多少？",
+     "question": "计算604减287，结果是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "个位4减7不够减，从十位退1当10，14减7得7；十位已退成9，9减8得1；百位6减2得4，所以结果是317。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "317"
+      },
+      {
+       "label": "B",
+       "text": "327"
+      },
+      {
+       "label": "C",
+       "text": "417"
+      },
+      {
+       "label": "D",
+       "text": "383"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p258_q3",
+     "topicId": "mbj_p258",
+     "prompt": "计算236乘4，积是多少？",
+     "question": "计算236乘4，积是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "944",
+     "explanation": "从个位乘起：4乘6得24，写4进2；4乘3得12，加进上来的2得14，写4进1；4乘2得8，加进的1得9，所以积是944。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p258_q4",
+     "topicId": "mbj_p258",
+     "prompt": "小明算得500减268等于242，请你算出正确的结果是多少。",
+     "question": "小明算得500减268等于242，请你算出正确的结果是多少。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "232",
+     "explanation": "个位0减8不够减，从十位退1，但十位是0，要向百位退1，个位变成10减8得2；十位10退1剩9，9减6得3；百位4减2得2，结果是232。",
+     "subject": "math-bj",
+     "verify": "500-268"
+    },
+    {
+     "id": "mbj_p258_q5",
+     "topicId": "mbj_p258",
+     "prompt": "一位数乘三位数，积可能是几位数？",
+     "question": "一位数乘三位数，积可能是几位数？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "C",
+     "explanation": "最小的三位数100乘1得100，是三位数；最大的三位数999乘9得8991，是四位数。所以积可能是三位数，也可能是四位数。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "一定是三位数"
+      },
+      {
+       "label": "B",
+       "text": "一定是四位数"
+      },
+      {
+       "label": "C",
+       "text": "三位数或四位数"
+      },
+      {
+       "label": "D",
+       "text": "一定是五位数"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p258_q6",
+     "topicId": "mbj_p258",
+     "prompt": "计算125乘8，积是多少？",
+     "question": "计算125乘8，积是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "1000",
+     "explanation": "8乘5得40，写0进4；8乘2得16，加4得20，写0进2；8乘1得8，加2得10，所以积是1000。",
+     "subject": "math-bj",
+     "verify": "125*8"
+    },
+    {
+     "id": "mbj_p258_q7",
+     "topicId": "mbj_p258",
+     "prompt": "笔算多位数乘一位数时，应该按什么顺序乘？进位时要注意什么？",
+     "question": "笔算多位数乘一位数时，应该按什么顺序乘？进位时要注意什么？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "先从个位乘起，用一位数依次去乘多位数的每一位，哪一位上的积满几十就向前一位进几。乘到前一位时，要把后一位进上来的数加上，再加到下一位的积里。最后看有没有漏写进位的数，可以用估算检查积的大小是否合理。",
+     "explanation": "从个位乘起，逐位相乘，满几十向前一位进几，下一位要把进上来的数加上。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p258_q8",
+     "topicId": "mbj_p258",
+     "prompt": "计算（25加15）乘3，结果是多少？",
+     "question": "计算（25加15）乘3，结果是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "A",
+     "explanation": "有小括号要先算括号里面的：25加15等于40，再算40乘3等于120。如果先算乘法，就会得到错误的结果。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "120"
+      },
+      {
+       "label": "B",
+       "text": "90"
+      },
+      {
+       "label": "C",
+       "text": "105"
+      },
+      {
+       "label": "D",
+       "text": "135"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p259",
+   "description": "复习图形与测量：巩固角的分类和直角的判断，理解周长的含义，熟记长方形、正方形的周长公式，能正确使用米、厘米等长度单位并进行简单换算。",
+   "mastery_criteria": [
+    "能判断直角、锐角、钝角并说出依据",
+    "能运用周长公式计算长方形、正方形的周长",
+    "能正确选择长度单位并进行单位换算"
+   ],
+   "misconceptions": [
+    "求周长时把（长＋宽）×2 记成 长＋宽×2",
+    "把周长和面积混为一谈",
+    "单位不统一就直接计算，如米和厘米混用"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.07",
+    "quote": "探索并掌握长方形、正方形的周长和面积的计算公式"
+   },
+   "questions": [
+    {
+     "id": "mbj_p259_q1",
+     "topicId": "mbj_p259",
+     "prompt": "长方形的周长可以用哪个式子计算？",
+     "question": "长方形的周长可以用哪个式子计算？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "C",
+     "explanation": "长方形有两组相等的长和宽，先把一条长和一条宽相加求出一组的长度，再乘2，就是四条边的总长度。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "长＋宽"
+      },
+      {
+       "label": "B",
+       "text": "长×宽"
+      },
+      {
+       "label": "C",
+       "text": "（长＋宽）×2"
+      },
+      {
+       "label": "D",
+       "text": "长×2＋宽"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p259_q2",
+     "topicId": "mbj_p259",
+     "prompt": "一个长方形长8厘米、宽5厘米，它的周长是多少厘米？",
+     "question": "一个长方形长8厘米、宽5厘米，它的周长是多少厘米？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "26",
+     "explanation": "长方形周长等于（长加宽）乘2：（8加5）等于13，13乘2等于26厘米。",
+     "subject": "math-bj",
+     "verify": "2*(8+5)"
+    },
+    {
+     "id": "mbj_p259_q3",
+     "topicId": "mbj_p259",
+     "prompt": "一个正方形的边长是6厘米，它的周长是多少厘米？",
+     "question": "一个正方形的边长是6厘米，它的周长是多少厘米？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "24",
+     "explanation": "正方形的四条边一样长，周长等于边长乘4：6乘4等于24厘米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p259_q4",
+     "topicId": "mbj_p259",
+     "prompt": "一个正方形的周长是36厘米，它的边长是多少厘米？",
+     "question": "一个正方形的周长是36厘米，它的边长是多少厘米？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "9",
+     "explanation": "正方形周长是边长的4倍，反过来求边长要用周长除以4：36除以4等于9厘米。",
+     "subject": "math-bj",
+     "verify": "36/4"
+    },
+    {
+     "id": "mbj_p259_q5",
+     "topicId": "mbj_p259",
+     "prompt": "教室的长大约是8什么？请选择合适的长度单位。",
+     "question": "教室的长大约是8什么？请选择合适的长度单位。",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "D",
+     "explanation": "教室的长有一间房那么长，用厘米太小、用千米太大，8米比较符合实际，所以填米。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "厘米"
+      },
+      {
+       "label": "B",
+       "text": "分米"
+      },
+      {
+       "label": "C",
+       "text": "千米"
+      },
+      {
+       "label": "D",
+       "text": "米"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p259_q6",
+     "topicId": "mbj_p259",
+     "prompt": "3米等于多少厘米？请写出换算结果。",
+     "question": "3米等于多少厘米？请写出换算结果。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "300",
+     "explanation": "1米等于100厘米，3米就是3个100厘米，3乘100等于300厘米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p259_q7",
+     "topicId": "mbj_p259",
+     "prompt": "一个长方形长12厘米、宽8厘米，它的周长和一个正方形的周长相等。这个正方形的边长是多少厘米？",
+     "question": "一个长方形长12厘米、宽8厘米，它的周长和一个正方形的周长相等。这个正方形的边长是多少厘米？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "10",
+     "explanation": "先求长方形的周长：（12加8）乘2等于40厘米；正方形的周长也是40厘米，边长就是40除以4等于10厘米。",
+     "subject": "math-bj",
+     "verify": "(2*(12+8))/4"
+    },
+    {
+     "id": "mbj_p259_q8",
+     "topicId": "mbj_p259",
+     "prompt": "求图形的周长时，为什么不能只把几条边的长度加起来就完事？请举例说明要注意什么。",
+     "question": "求图形的周长时，为什么不能只把几条边的长度加起来就完事？请举例说明要注意什么。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "求周长要把围成图形的所有边的长度加起来，少加一条边或把内部的线也算进去都会算错。例如求长方形周长，要算两条长和两条宽，只加一条长和一条宽就少算了一半；再如几条边单位不同时，要先把单位统一成同一种，如把米化成厘米，才能相加。",
+     "explanation": "周长要算围一周的所有边，少加、多加或单位不统一都会出错。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p260",
+   "description": "复习数量关系与数据整理：回顾相差关系的三类问题，复习用统计表和分段整理描述数据，能根据数据回答问题和作出简单推断。",
+   "mastery_criteria": [
+    "能判断相差关系中已知什么、求什么并列式",
+    "会读统计表并算出合计与相差",
+    "能根据数据作出简单推断"
+   ],
+   "misconceptions": [
+    "看统计表时把相邻两栏的数据读错位",
+    "求相差时用小数减大数",
+    "根据数据推断时把个别情况当成全部"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.24",
+    "quote": "建立加法模型和乘法模型，知道模型中数量的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p260_q1",
+     "topicId": "mbj_p260",
+     "prompt": "小明有35张邮票，小红比小明少9张。求小红有多少张，应该怎样列式？",
+     "question": "小明有35张邮票，小红比小明少9张。求小红有多少张，应该怎样列式？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "小红比小明少9张，就是比35少9，用减法：35减9等于26张。加9求的是比小明多9张的情况。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "35+9"
+      },
+      {
+       "label": "B",
+       "text": "35-9"
+      },
+      {
+       "label": "C",
+       "text": "35-9+35"
+      },
+      {
+       "label": "D",
+       "text": "9-35"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p260_q2",
+     "topicId": "mbj_p260",
+     "prompt": "统计表显示：一班32人、二班28人、三班35人。三个班一共有多少人？",
+     "question": "统计表显示：一班32人、二班28人、三班35人。三个班一共有多少人？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "95",
+     "explanation": "把三个班的人数合起来：32加28等于60，60加35等于95人。",
+     "subject": "math-bj",
+     "verify": "32+28+35"
+    },
+    {
+     "id": "mbj_p260_q3",
+     "topicId": "mbj_p260",
+     "prompt": "小红有45张画片，小明比小红少8张。小明有多少张画片？",
+     "question": "小红有45张画片，小明比小红少8张。小明有多少张画片？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "37",
+     "explanation": "小明比小红少8张，用45减8等于37张，注意个位5减8要退位。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p260_q4",
+     "topicId": "mbj_p260",
+     "prompt": "学校有足球36个，篮球比足球多14个。篮球有多少个？",
+     "question": "学校有足球36个，篮球比足球多14个。篮球有多少个？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "50",
+     "explanation": "篮球比足球多14个，就是36加14等于50个。求较多的数量用加法。",
+     "subject": "math-bj",
+     "verify": "36+14"
+    },
+    {
+     "id": "mbj_p260_q5",
+     "topicId": "mbj_p260",
+     "prompt": "把整理好的数据做成统计表，主要作用是什么？",
+     "question": "把整理好的数据做成统计表，主要作用是什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "A",
+     "explanation": "统计表把各类数量按栏目排好，既能看出每一类有多少，也方便比较多少和算出总数，是分析数据的基础。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "能清楚看出各类数量的多少，便于比较"
+      },
+      {
+       "label": "B",
+       "text": "不能用来计算总数"
+      },
+      {
+       "label": "C",
+       "text": "一定要画成图才有用"
+      },
+      {
+       "label": "D",
+       "text": "只能记录一个数据"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p260_q6",
+     "topicId": "mbj_p260",
+     "prompt": "用画「正」字的方法记录数据有什么好处？",
+     "question": "用画「正」字的方法记录数据有什么好处？",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "「正」字刚好五画，每来一个人就添一画，边收集边记录，不用回头再数；一画代表一个人，数的时候五个五个地数，又快又不容易漏。而且写满一个「正」字就表示5人，最后把几个「正」字和剩下的画数加起来就是总人数。",
+     "explanation": "边收集边记，五个五个数，又快又不容易漏。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p260_q7",
+     "topicId": "mbj_p260",
+     "prompt": "三（1）班有45人，喜欢跳绳的有28人，喜欢踢球的有19人，两项都喜欢的有10人。两项都不喜欢的有多少人？",
+     "question": "三（1）班有45人，喜欢跳绳的有28人，喜欢踢球的有19人，两项都喜欢的有10人。两项都不喜欢的有多少人？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "8",
+     "explanation": "先算至少喜欢一项的人数：28加19等于47，其中两项都喜欢的10人被算了两次，要减去，47减10等于37人；再用全班人数减：45减37等于8人。",
+     "subject": "math-bj",
+     "verify": "45-(28+19-10)"
+    },
+    {
+     "id": "mbj_p260_q8",
+     "topicId": "mbj_p260",
+     "prompt": "甲数比乙数多15，乙数比丙数多8。甲数比丙数多多少？",
+     "question": "甲数比乙数多15，乙数比丙数多8。甲数比丙数多多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "C",
+     "explanation": "甲比乙多15，而乙又比丙多8，把两段相差合起来：15加8等于23，所以甲比丙多23。这里的比较是连着传下去的，两段差要相加。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "7"
+      },
+      {
+       "label": "B",
+       "text": "15"
+      },
+      {
+       "label": "C",
+       "text": "23"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p261",
+   "description": "在综合情境中解决问题：学会筛选有用信息、排除多余条件，用两步或多步计算解决实际问题，能清楚说明自己的思考过程并对结果进行检验。",
+   "mastery_criteria": [
+    "能从题目中找出有用的条件，排除多余信息",
+    "能用两步计算解决生活中的实际问题",
+    "会说明解题思路并检验结果的合理性"
+   ],
+   "misconceptions": [
+    "见到数字就都拿来算，不看条件是否有用",
+    "只算一步就写出答案，漏掉第二步",
+    "算出结果后不检验，答案明显不合理也不改"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.10",
+    "quote": "形成初步的模型意识和应用意识"
+   },
+   "questions": [
+    {
+     "id": "mbj_p261_q1",
+     "topicId": "mbj_p261",
+     "prompt": "妈妈买了3千克苹果，每千克6元，付给售货员20元。应找回多少元？",
+     "question": "妈妈买了3千克苹果，每千克6元，付给售货员20元。应找回多少元？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "2",
+     "explanation": "先求苹果的总价：3乘6等于18元；再求找回的钱：20减18等于2元。",
+     "subject": "math-bj",
+     "verify": "20-3*6"
+    },
+    {
+     "id": "mbj_p261_q2",
+     "topicId": "mbj_p261",
+     "prompt": "小明从家到学校要走15分钟，他7时30分从家出发。他到学校的时刻是几时几分？",
+     "question": "小明从家到学校要走15分钟，他7时30分从家出发。他到学校的时刻是几时几分？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "7:45",
+     "explanation": "7时30分再过15分钟，分针要走3大格，30分加15分等于45分，所以到校时刻是7时45分。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p261_q3",
+     "topicId": "mbj_p261",
+     "prompt": "解决一道实际问题时，第一步应该做什么？",
+     "question": "解决一道实际问题时，第一步应该做什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "解决问题要先读题，弄清题目告诉了什么条件、要求什么问题，想清楚条件和问题的关系，然后才列式计算，最后还要检验。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "直接列式算"
+      },
+      {
+       "label": "B",
+       "text": "先检查一遍"
+      },
+      {
+       "label": "C",
+       "text": "先把答案写下来"
+      },
+      {
+       "label": "D",
+       "text": "先读题，弄清条件和问题"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p261_q4",
+     "topicId": "mbj_p261",
+     "prompt": "图书馆有故事书240本，上午借出56本，下午还回38本。现在有故事书多少本？",
+     "question": "图书馆有故事书240本，上午借出56本，下午还回38本。现在有故事书多少本？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "222",
+     "explanation": "借出要减去，还回要加上：240减56等于184，184加38等于222本。",
+     "subject": "math-bj",
+     "verify": "240-56+38"
+    },
+    {
+     "id": "mbj_p261_q5",
+     "topicId": "mbj_p261",
+     "prompt": "图书角有故事书120本、科技书80本，上午借出35本故事书。还剩多少本故事书？下面哪个算式正确？",
+     "question": "图书角有故事书120本、科技书80本，上午借出35本故事书。还剩多少本故事书？下面哪个算式正确？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "A",
+     "explanation": "要求的是故事书还剩多少，科技书80本与这个问题无关，是多余条件。用故事书本数减借出的本数：120减35等于85本。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "120-35"
+      },
+      {
+       "label": "B",
+       "text": "120+80-35"
+      },
+      {
+       "label": "C",
+       "text": "120-80"
+      },
+      {
+       "label": "D",
+       "text": "80-35"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p261_q6",
+     "topicId": "mbj_p261",
+     "prompt": "算出一道应用题的结果后，怎样检验答案是否合理？请写出两种办法。",
+     "question": "算出一道应用题的结果后，怎样检验答案是否合理？请写出两种办法。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "第一种是把答案代回题目倒着算，例如求出一共有多少后，用总数减去其中一部分，看是否等于另一部分；第二种是看结果是否符合生活实际，比如人数不能是小数，找回的钱不能比付的钱还多，剩下的本数不能比原来的多。两种办法都能帮助发现错误。",
+     "explanation": "倒着算回去核对，或看结果是否符合生活实际。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p261_q7",
+     "topicId": "mbj_p261",
+     "prompt": "一根绳子长20米，剪成每段2米长的小段，一共要剪多少次？",
+     "question": "一根绳子长20米，剪成每段2米长的小段，一共要剪多少次？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "9",
+     "explanation": "20米每段2米，能剪成20除以2等于10段；剪成10段只需要剪9次，因为最后一次剪开就同时得到两段。",
+     "subject": "math-bj",
+     "verify": "20/2-1"
+    },
+    {
+     "id": "mbj_p261_q8",
+     "topicId": "mbj_p261",
+     "prompt": "把一根木棒锯成5段，每锯一次要用3分钟。一共要用多少分钟？",
+     "question": "把一根木棒锯成5段，每锯一次要用3分钟。一共要用多少分钟？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "B",
+     "explanation": "锯成5段只需要锯4次，因为第一锯得到2段，以后每锯一次多一段；4乘3等于12分钟。按5次算就多算了一次。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "15分钟"
+      },
+      {
+       "label": "B",
+       "text": "12分钟"
+      },
+      {
+       "label": "C",
+       "text": "9分钟"
+      },
+      {
+       "label": "D",
+       "text": "18分钟"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p262",
+   "description": "在数学百花园中感受数学的趣味：通过合理搭配、按规律排列与填数等活动，学习有序思考和找规律的方法，体会数学与生活的联系。",
+   "mastery_criteria": [
+    "能有序地列举出全部搭配方案",
+    "能观察出数列或数阵中的简单规律",
+    "能用自己的话说明发现的规律"
+   ],
+   "misconceptions": [
+    "列举时想到一种写一种，出现重复或遗漏",
+    "找到前一个规律就套用到所有地方，不再验证",
+    "把搭配总数算成两部分数量相加"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p262_q1",
+     "topicId": "mbj_p262",
+     "prompt": "解决搭配问题时，按一定顺序一个一个地列举，好处是什么？",
+     "question": "解决搭配问题时，按一定顺序一个一个地列举，好处是什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "按顺序列举，例如先固定第一类中的一种，再依次与第二类的每一种搭配，这样每一种情况都会出现一次，既不会重复也不会遗漏。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "既不重复也不遗漏"
+      },
+      {
+       "label": "B",
+       "text": "可以少列几种情况"
+      },
+      {
+       "label": "C",
+       "text": "只列自己想到的就行"
+      },
+      {
+       "label": "D",
+       "text": "顺序和结果没有关系"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p262_q2",
+     "topicId": "mbj_p262",
+     "prompt": "有2件不同的上衣和3条不同的裤子，一件上衣配一条裤子，一共有多少种不同的搭配？",
+     "question": "有2件不同的上衣和3条不同的裤子，一件上衣配一条裤子，一共有多少种不同的搭配？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "6",
+     "explanation": "每件上衣都能和3条裤子分别搭配成3种，2件上衣就有2个3，2乘3等于6种。",
+     "subject": "math-bj",
+     "verify": "2*3"
+    },
+    {
+     "id": "mbj_p262_q3",
+     "topicId": "mbj_p262",
+     "prompt": "早餐有3种主食和4种菜，各选一种搭配成一份早餐，一共有多少种不同的搭配？",
+     "question": "早餐有3种主食和4种菜，各选一种搭配成一份早餐，一共有多少种不同的搭配？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "12",
+     "explanation": "每一种主食都能和4种菜分别搭配，3种主食就是3个4，3乘4等于12种。",
+     "subject": "math-bj",
+     "verify": "3*4"
+    },
+    {
+     "id": "mbj_p262_q4",
+     "topicId": "mbj_p262",
+     "prompt": "从学校到公园有4条路，从公园到书店有2条路。从学校经过公园到书店，一共有多少种不同的走法？",
+     "question": "从学校到公园有4条路，从公园到书店有2条路。从学校经过公园到书店，一共有多少种不同的走法？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "每一段路的选择都要搭配一次，4条路与2条路两两组合，4乘2等于8种走法。把4和2相加是把路程相加，不是搭配的种数。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "6种"
+      },
+      {
+       "label": "B",
+       "text": "8种"
+      },
+      {
+       "label": "C",
+       "text": "4种"
+      },
+      {
+       "label": "D",
+       "text": "2种"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p262_q5",
+     "topicId": "mbj_p262",
+     "prompt": "要找出2件上衣和3条裤子的全部搭配，可以怎样想才能又快又不漏？请写出你的思考过程。",
+     "question": "要找出2件上衣和3条裤子的全部搭配，可以怎样想才能又快又不漏？请写出你的思考过程。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "先固定第一件上衣，让它依次和3条裤子搭配，得到3种；再固定第二件上衣，同样依次和3条裤子搭配，又得到3种。因为每一件上衣都配过每一条裤子，2个3合起来就是6种，这样按顺序想，既不会重复也不会漏掉。",
+     "explanation": "固定一件上衣依次配每条裤子，再换另一件，按顺序列举。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p263",
+   "description": "研究简单的搭配问题：在衣服、路线、饭菜等情境中，用连线、列表等方法有序地列举所有搭配方案，发现搭配总数与各部分数量之间的关系。",
+   "mastery_criteria": [
+    "会用连线或列表有序列举搭配方案",
+    "能算出两类物品搭配的总数",
+    "能说明为什么搭配总数是两部分数量的积"
+   ],
+   "misconceptions": [
+    "把两类物品的数量相加当成搭配种数",
+    "列举时重复计算同一种搭配",
+    "遗漏「反过来配」也算一种的情况判断错误"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p263_q1",
+     "topicId": "mbj_p263",
+     "prompt": "要找出所有搭配，下面哪种做法最可靠？",
+     "question": "要找出所有搭配，下面哪种做法最可靠？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "先固定一件上衣，依次配每一条裤子，配完再换下一件上衣，这样按顺序走，每一种搭配只出现一次，不会重复也不会漏。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "想到一种写一种"
+      },
+      {
+       "label": "B",
+       "text": "随便连线后再删掉几条"
+      },
+      {
+       "label": "C",
+       "text": "只配自己最喜欢的那一种"
+      },
+      {
+       "label": "D",
+       "text": "先固定一件上衣，依次配每条裤子"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p263_q2",
+     "topicId": "mbj_p263",
+     "prompt": "有2件不同的上衣和3条不同的裤子，一件上衣配一条裤子，一共有多少种搭配？",
+     "question": "有2件不同的上衣和3条不同的裤子，一件上衣配一条裤子，一共有多少种搭配？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "6",
+     "explanation": "2件上衣，每件都能配3条裤子，共2个3，用乘法算：2乘3等于6种。",
+     "subject": "math-bj",
+     "verify": "2*3"
+    },
+    {
+     "id": "mbj_p263_q3",
+     "topicId": "mbj_p263",
+     "prompt": "有3顶不同的帽子和2条不同的围巾，一顶帽子配一条围巾，一共有多少种搭配？",
+     "question": "有3顶不同的帽子和2条不同的围巾，一顶帽子配一条围巾，一共有多少种搭配？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "6",
+     "explanation": "每顶帽子都能配2条围巾，3顶帽子就是3个2，3乘2等于6种搭配。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p263_q4",
+     "topicId": "mbj_p263",
+     "prompt": "从小明家到学校有3条路，从学校到少年宫有2条路。小明从家经过学校到少年宫，一共有多少种走法？",
+     "question": "从小明家到学校有3条路，从学校到少年宫有2条路。小明从家经过学校到少年宫，一共有多少种走法？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "6",
+     "explanation": "先走家到学校的3条路中的一条，再走学校到少年宫的2条路中的一条，3乘2等于6种走法。",
+     "subject": "math-bj",
+     "verify": "3*2"
+    },
+    {
+     "id": "mbj_p263_q5",
+     "topicId": "mbj_p263",
+     "prompt": "饮料有4种，点心有2种，各选一种，一共有多少种不同的搭配？",
+     "question": "饮料有4种，点心有2种，各选一种，一共有多少种不同的搭配？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "每种饮料都能配2种点心，4种饮料就是4个2，4乘2等于8种搭配。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "6种"
+      },
+      {
+       "label": "B",
+       "text": "8种"
+      },
+      {
+       "label": "C",
+       "text": "4种"
+      },
+      {
+       "label": "D",
+       "text": "12种"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p263_q6",
+     "topicId": "mbj_p263",
+     "prompt": "用列表或连线的方法列举搭配，比随便想要好在哪里？",
+     "question": "用列表或连线的方法列举搭配，比随便想要好在哪里？",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "列表或连线能把两类物品一一对应地摆出来，每一条线就是一种搭配，看表或看图就能知道哪些配过了、哪些还没配，所以不会重复，也不会漏掉。随便想容易出现重复记录或漏掉几种，数量就算错了。",
+     "explanation": "列表连线一一对应，看得清配过哪些，不重复不遗漏。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p263_q7",
+     "topicId": "mbj_p263",
+     "prompt": "用2、5、7、9四张数字卡片，每次取两张组成两位数（同一张卡片不能重复使用），一共能组成多少个不同的两位数？",
+     "question": "用2、5、7、9四张数字卡片，每次取两张组成两位数（同一张卡片不能重复使用），一共能组成多少个不同的两位数？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "12",
+     "explanation": "先确定十位上的数，有4种选法；十位定下后，个位只能从剩下的3张里选，有3种选法。4乘3等于12个不同的两位数。",
+     "subject": "math-bj",
+     "verify": "4*3"
+    },
+    {
+     "id": "mbj_p263_q8",
+     "topicId": "mbj_p263",
+     "prompt": "小明有2双不同的鞋、3条不同的裤子、2件不同的上衣。一双鞋、一条裤子、一件上衣配成一套，一共有多少种不同的穿法？",
+     "question": "小明有2双不同的鞋、3条不同的裤子、2件不同的上衣。一双鞋、一条裤子、一件上衣配成一套，一共有多少种不同的穿法？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "B",
+     "explanation": "先配上衣和裤子：2乘3等于6种；每一种再配2双鞋中的一双，6乘2等于12种。三类物品搭配时，要把各部分的数量依次相乘。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "7种"
+      },
+      {
+       "label": "B",
+       "text": "12种"
+      },
+      {
+       "label": "C",
+       "text": "6种"
+      },
+      {
+       "label": "D",
+       "text": "10种"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p264",
+   "description": "研究按规律排列的数与图形：观察数的大小变化和位置上数的关系，找出其中的规律，用规律推算出未知的数，学习有序观察和有根据地推理。",
+   "mastery_criteria": [
+    "能找出数列中相邻两数的变化规律",
+    "能按规律推算出后面或缺少的数",
+    "能说明自己发现的规律并检验"
+   ],
+   "misconceptions": [
+    "只看相邻两数的差是1就说「每次加1」",
+    "把规律套错位置，第几个数与加减几弄混",
+    "凑出一个数就算完，不回头验证规律"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p264_q1",
+     "topicId": "mbj_p264",
+     "prompt": "观察这列数：2、4、6、8、…，接下来的一个数是多少？",
+     "question": "观察这列数：2、4、6、8、…，接下来的一个数是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "每次都比前一个数多2，是连续的双数，8后面再添2就是10。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "10"
+      },
+      {
+       "label": "B",
+       "text": "9"
+      },
+      {
+       "label": "C",
+       "text": "12"
+      },
+      {
+       "label": "D",
+       "text": "16"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p264_q2",
+     "topicId": "mbj_p264",
+     "prompt": "一列数按1、3、5、7、…的规律排列，第6个数是多少？",
+     "question": "一列数按1、3、5、7、…的规律排列，第6个数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "11",
+     "explanation": "这列数是连续的单数，第1个是1，第6个就是2乘6再减1，等于11；也可以依次往后数：9、11。",
+     "subject": "math-bj",
+     "verify": "2*6-1"
+    },
+    {
+     "id": "mbj_p264_q3",
+     "topicId": "mbj_p264",
+     "prompt": "观察这列数：3、6、9、12、（　），括号里应该填多少？",
+     "question": "观察这列数：3、6、9、12、（　），括号里应该填多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "15",
+     "explanation": "每次都比前一个数多3，是3的倍数：12再添3等于15。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p264_q4",
+     "topicId": "mbj_p264",
+     "prompt": "摆图形时每行摆4个，第1行4个、第2行8个、第3行12个……按这样的规律，第5行有多少个？",
+     "question": "摆图形时每行摆4个，第1行4个、第2行8个、第3行12个……按这样的规律，第5行有多少个？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "20",
+     "explanation": "第几行就是几个4，第5行是5个4，5乘4等于20个。也可以一行一行加上去：16、20。",
+     "subject": "math-bj",
+     "verify": "4*5"
+    },
+    {
+     "id": "mbj_p264_q5",
+     "topicId": "mbj_p264",
+     "prompt": "观察这列数：1、4、9、16、…，接下来的一个数是多少？",
+     "question": "观察这列数：1、4、9、16、…，接下来的一个数是多少？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "C",
+     "explanation": "相邻两数的差依次是3、5、7，每次多2，所以下一个差是9，16加9等于25；这列数也正好是1乘1、2乘2、3乘3、4乘4，下一个是5乘5等于25。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "20"
+      },
+      {
+       "label": "B",
+       "text": "24"
+      },
+      {
+       "label": "C",
+       "text": "25"
+      },
+      {
+       "label": "D",
+       "text": "36"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p264_q6",
+     "topicId": "mbj_p264",
+     "prompt": "找一列数的规律时，怎样做才不容易看错？",
+     "question": "找一列数的规律时，怎样做才不容易看错？",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "先看相邻两个数的差，看差是不是都一样；如果差在变化，再比较相邻的差之间又有什么变化。只看相邻两三个数容易看错，至少要验证四五个数都符合这个规律，才能按它往后推，推完还要回头检查推算的数是否仍然符合。",
+     "explanation": "先看相邻两数的差，再验证四五个数都符合，最后回头核对。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p264_q7",
+     "topicId": "mbj_p264",
+     "prompt": "观察这列数：1、2、4、7、11、…，第7个数是多少？",
+     "question": "观察这列数：1、2、4、7、11、…，第7个数是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "22",
+     "explanation": "相邻两数的差依次是1、2、3、4、5……每次多1。第5个数是11，第6个是11加5等于16，第7个是16加6等于22。",
+     "subject": "math-bj",
+     "verify": "1+1+2+3+4+5+6"
+    },
+    {
+     "id": "mbj_p264_q8",
+     "topicId": "mbj_p264",
+     "prompt": "把一根绳子对折3次后，从中间剪一刀，一共可以得到多少段？",
+     "question": "把一根绳子对折3次后，从中间剪一刀，一共可以得到多少段？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "B",
+     "explanation": "对折1次变成2层，对折2次变成4层，对折3次变成8层。一刀同时剪断8层，每层各被剪断一次，原来的绳子就分成8加1等于9段。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "8段"
+      },
+      {
+       "label": "B",
+       "text": "9段"
+      },
+      {
+       "label": "C",
+       "text": "16段"
+      },
+      {
+       "label": "D",
+       "text": "4段"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

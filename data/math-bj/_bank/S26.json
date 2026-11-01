@@ -1,0 +1,2596 @@
+{
+ "shard": "S26",
+ "subject": "math-bj",
+ "book": "七上",
+ "grade": 7,
+ "semester": "上",
+ "points": [
+  {
+   "topicId": "mbj_p486",
+   "description": "认识等式与方程的联系与区别：含有未知数的等式叫做方程。学会从文字叙述中找出相等关系，用字母表示未知数后列出方程，理解方程是刻画现实数量关系的一种模型。",
+   "mastery_criteria": [
+    "能判断一个式子是不是等式、是不是方程",
+    "能从文字叙述中写出对应的方程",
+    "能举例说明等式与方程的包含关系"
+   ],
+   "misconceptions": [
+    "见到含字母的式子就当成方程，忽略等号",
+    "认为 7-3=4 是方程，因为右边也是数",
+    "列方程时把“多 3”写成减 3"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.03",
+    "quote": "能根据现实情境理解方程的意义，能针对具体问题列出方程"
+   },
+   "questions": [
+    {
+     "id": "mbj_p486_q1",
+     "topicId": "mbj_p486",
+     "prompt": "下列各式中，是方程的是哪一个？",
+     "question": "下列各式中，是方程的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "3x+1"
+      },
+      {
+       "label": "B",
+       "text": "2+3=5"
+      },
+      {
+       "label": "C",
+       "text": "5x-2=8"
+      },
+      {
+       "label": "D",
+       "text": "x>4"
+      }
+     ],
+     "answer": "C",
+     "explanation": "方程必须同时满足两个条件：一是等式，二是含有未知数。3x+1 没有等号，2+3=5 不含未知数，x>4 是不等式，只有 5x-2=8 两个条件都满足。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p486_q2",
+     "topicId": "mbj_p486",
+     "prompt": "式子 5+2x 不是方程，主要原因是什么？",
+     "question": "式子 5+2x 不是方程，主要原因是什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "它含有未知数 x"
+      },
+      {
+       "label": "B",
+       "text": "它左右两边都是整式"
+      },
+      {
+       "label": "C",
+       "text": "它的未知数写在右边"
+      },
+      {
+       "label": "D",
+       "text": "它没有等号，不是等式"
+      }
+     ],
+     "answer": "D",
+     "explanation": "方程的定义是含有未知数的等式。5+2x 虽然含未知数，但整个式子没有等号连接两边，只是一个代数式，所以不是方程。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p486_q3",
+     "topicId": "mbj_p486",
+     "prompt": "用 x 表示某数，把“某数的 3 倍减去 4 等于 11”写成方程。",
+     "question": "用 x 表示某数，把“某数的 3 倍减去 4 等于 11”写成方程。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "3x-4=11",
+     "explanation": "“某数的 3 倍”写成 3x，“减去 4”写成 3x-4，“等于 11”用等号连接，得到 3x-4=11，其中 x 是要求的未知数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p486_q4",
+     "topicId": "mbj_p486",
+     "prompt": "小明买 4 支同样的笔，付了 20 元，找回 4 元，每支笔多少元？",
+     "question": "小明买 4 支同样的笔，付了 20 元，找回 4 元，每支笔多少元？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4",
+     "verify": "(20-4)/4",
+     "explanation": "4 支笔的总价是 20-4=16 元，每支笔的价钱是 16÷4=4 元。设每支 x 元，则列方程 4x=20-4。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p486_q5",
+     "topicId": "mbj_p486",
+     "prompt": "下列各式中，不是方程的是哪一个？",
+     "question": "下列各式中，不是方程的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x=0"
+      },
+      {
+       "label": "B",
+       "text": "x-1=3"
+      },
+      {
+       "label": "C",
+       "text": "7-3=4"
+      },
+      {
+       "label": "D",
+       "text": "3y+2=8"
+      }
+     ],
+     "answer": "C",
+     "explanation": "7-3=4 是等式，但式中的数都是已知的，没有未知数，所以只是等式而不是方程；其余三个都同时具备等式和含未知数两个条件。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p486_q6",
+     "topicId": "mbj_p486",
+     "prompt": "请说出等式与方程的关系，并各举一个例子说明。",
+     "question": "请说出等式与方程的关系，并各举一个例子说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "方程一定是等式，等式不一定是方程。判断的关键是看有没有未知数。例如 7-3=4 是等式但不是方程，因为它不含未知数；5x-2=8 既是等式又含未知数 x，所以是方程。",
+     "explanation": "这里要抓住定义中“含有未知数的等式”这一限定，用两个反方向的例子把包含关系说清楚，避免把所有的等式都当成方程。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p486_q7",
+     "topicId": "mbj_p486",
+     "prompt": "一个长方形长比宽多 3 厘米，周长是 26 厘米，它的宽是多少厘米？",
+     "question": "一个长方形长比宽多 3 厘米，周长是 26 厘米，它的宽是多少厘米？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "5",
+     "verify": "((26/2)-3)/2",
+     "explanation": "设宽为 x 厘米，则长为 x+3 厘米。周长等于（长+宽）×2，列方程 2(x+x+3)=26，解得 2x+3=13，x=5，宽是 5 厘米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p486_q8",
+     "topicId": "mbj_p486",
+     "prompt": "关于等式与方程，下列说法正确的是哪一个？",
+     "question": "关于等式与方程，下列说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "等式一定是方程"
+      },
+      {
+       "label": "B",
+       "text": "含有字母的式子一定是方程"
+      },
+      {
+       "label": "C",
+       "text": "方程中的未知数只能有一个"
+      },
+      {
+       "label": "D",
+       "text": "方程一定是等式"
+      }
+     ],
+     "answer": "D",
+     "explanation": "方程要求是等式且含未知数，所以方程一定落在等式范围内；反过来等式不一定含未知数。含字母的式子没有等号时只是代数式，方程也可以含多个未知数。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p487",
+   "description": "掌握等式的基本性质：等式两边同时加上或减去同一个数或式，结果仍是等式；等式两边同时乘同一个数，或除以同一个不为零的数，结果仍是等式，并能据此对等式作等价变形。",
+   "mastery_criteria": [
+    "能叙述等式两条基本性质的内容",
+    "能按性质对等式作等价变形",
+    "能判断除法变形中除数是否为零"
+   ],
+   "misconceptions": [
+    "两边同除以一个数时忘记该数不能为 0",
+    "由 x+3=5 得 x=5+3，移项没变号",
+    "认为等式两边同乘 0 后仍与原等式等价"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p487_q1",
+     "topicId": "mbj_p487",
+     "prompt": "由 x-5=3 得到 x=8，依据的是等式的哪条性质？",
+     "question": "由 x-5=3 得到 x=8，依据的是等式的哪条性质？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "等式两边都加 5"
+      },
+      {
+       "label": "B",
+       "text": "等式两边都减 5"
+      },
+      {
+       "label": "C",
+       "text": "等式两边都乘 5"
+      },
+      {
+       "label": "D",
+       "text": "等式两边都除以 5"
+      }
+     ],
+     "answer": "A",
+     "explanation": "要消去左边的 -5，就在等式两边同时加 5：x-5+5=3+5，左边只剩 x，右边是 8，所以依据是等式两边都加同一个数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p487_q2",
+     "topicId": "mbj_p487",
+     "prompt": "由 3x=12 得到 x=4，依据的是等式的哪条性质？",
+     "question": "由 3x=12 得到 x=4，依据的是等式的哪条性质？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "等式两边都加 3"
+      },
+      {
+       "label": "B",
+       "text": "等式两边都减 3"
+      },
+      {
+       "label": "C",
+       "text": "等式两边都除以 3"
+      },
+      {
+       "label": "D",
+       "text": "等式两边都乘 3"
+      }
+     ],
+     "answer": "C",
+     "explanation": "3x 表示 3 乘 x，要得到 x 就应在两边同时除以 3：3x÷3=12÷3，得 x=4。除以的数 3 不为零，性质成立。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p487_q3",
+     "topicId": "mbj_p487",
+     "prompt": "若 2x+7=15，那么 x 等于多少？",
+     "question": "若 2x+7=15，那么 x 等于多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4",
+     "verify": "(15-7)/2",
+     "explanation": "先在等式两边同时减 7，得 2x=8；再在两边同时除以 2，得 x=4。每一步都依据等式的基本性质，等式仍然成立。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p487_q4",
+     "topicId": "mbj_p487",
+     "prompt": "下列对等式的变形，正确的是哪一个？",
+     "question": "下列对等式的变形，正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "由 a=b 得 a÷c=b÷c，其中 c 可以是任意数"
+      },
+      {
+       "label": "B",
+       "text": "由 a/c=b/c 得 a=b"
+      },
+      {
+       "label": "C",
+       "text": "由 a=b 得 a+2=b-2"
+      },
+      {
+       "label": "D",
+       "text": "由 3a=2b 得 a=2b"
+      }
+     ],
+     "answer": "B",
+     "explanation": "等式两边除以同一个数时，这个数不能为零，所以第一项错在 c 可以为零。a/c=b/c 本身已说明 c≠0，两边乘 c 得 a=b。第三项一边加 2 一边减 2，第四项漏除了 3。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p487_q5",
+     "topicId": "mbj_p487",
+     "prompt": "若 x 除以 3 的商是 4，那么 x 等于多少？",
+     "question": "若 x 除以 3 的商是 4，那么 x 等于多少？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "12",
+     "explanation": "由 x÷3=4，在等式两边同时乘 3，得 x=12。这里用的是等式两边同乘一个数的性质，乘的数 3 不为零，等式仍成立。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p487_q6",
+     "topicId": "mbj_p487",
+     "prompt": "由 3x-2=2x+5 变形，正确的是哪一个？",
+     "question": "由 3x-2=2x+5 变形，正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "3x+2x=5-2"
+      },
+      {
+       "label": "B",
+       "text": "3x-2x=5+2"
+      },
+      {
+       "label": "C",
+       "text": "3x-2x=5-2"
+      },
+      {
+       "label": "D",
+       "text": "3x+2x=5+2"
+      }
+     ],
+     "answer": "B",
+     "explanation": "把右边的 2x 移到左边要变号成 -2x，把左边的 -2 移到右边要变号成 +2，得到 3x-2x=5+2。移项的本质是等式两边同加或同减同一个式子。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p487_q7",
+     "topicId": "mbj_p487",
+     "prompt": "已知 5 乘（x 减 1）的积等于 20，求 x 的值。",
+     "question": "已知 5 乘（x 减 1）的积等于 20，求 x 的值。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "5",
+     "verify": "20/5+1",
+     "explanation": "两边同时除以 5，得 x-1=4；再在两边同时加 1，得 x=5。两次变形都只用了等式的基本性质，没有改变解。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p487_q8",
+     "topicId": "mbj_p487",
+     "prompt": "为什么由 ac=bc 不能直接得到 a=b？请说明理由。",
+     "question": "为什么由 ac=bc 不能直接得到 a=b？请说明理由。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "因为等式两边除以同一个数时，这个数不能为零。当 c=0 时，ac=bc 变成 0=0，对任意 a、b 都成立，此时 a 与 b 不一定相等。只有补充 c≠0 这个条件，才能由 ac=bc 推出 a=b。",
+     "explanation": "这道题辨析的是等式性质中“除数不为零”的限定条件，缺了这个条件，变形就不再是等价变形，结论也就不一定成立。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p488",
+   "description": "理解一元一次方程的定义：只含一个未知数、未知数的次数是 1 的整式方程。会判断一个式子是否为一元一次方程，会检验某数是不是方程的解，会用移项、合并同类项解简单的方程。",
+   "mastery_criteria": [
+    "能按三个条件判断一元一次方程",
+    "能检验一个数是否为方程的解",
+    "能用移项与合并解简单方程"
+   ],
+   "misconceptions": [
+    "认为含平方项的方程也是一元一次方程",
+    "移项时跨过等号却不变号",
+    "把方程的解代入时只算一边"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.24",
+    "quote": "能解一元一次方程和可化为一元一次方程的分式方程"
+   },
+   "questions": [
+    {
+     "id": "mbj_p488_q1",
+     "topicId": "mbj_p488",
+     "prompt": "下列各式中，是一元一次方程的是哪一个？",
+     "question": "下列各式中，是一元一次方程的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "x+1"
+      },
+      {
+       "label": "B",
+       "text": "2x+3=7"
+      },
+      {
+       "label": "C",
+       "text": "3x+y=5"
+      },
+      {
+       "label": "D",
+       "text": "x 的平方等于 4"
+      }
+     ],
+     "answer": "B",
+     "explanation": "一元一次方程要同时满足三点：只含一个未知数、未知数的次数是 1、两边都是整式。x+1 没有等号；3x+y=5 含两个未知数；x 的平方等于 4 中未知数次数是 2。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p488_q2",
+     "topicId": "mbj_p488",
+     "prompt": "方程 4x-3=13 的解是哪一个？",
+     "question": "方程 4x-3=13 的解是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "x=2"
+      },
+      {
+       "label": "B",
+       "text": "x=5"
+      },
+      {
+       "label": "C",
+       "text": "x=4"
+      },
+      {
+       "label": "D",
+       "text": "x=3"
+      }
+     ],
+     "answer": "C",
+     "explanation": "移项得 4x=13+3=16，两边同除以 4 得 x=4。把 x=4 代回原式，左边 4×4-3=13，与右边相等，所以 x=4 是解。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p488_q3",
+     "topicId": "mbj_p488",
+     "prompt": "解方程 5x+7=2x-2，x 等于多少？",
+     "question": "解方程 5x+7=2x-2，x 等于多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "-3",
+     "verify": "(-2-7)/3",
+     "explanation": "把 2x 移到左边、7 移到右边，得 5x-2x=-2-7，即 3x=-9，两边同除以 3 得 x=-3。移项时跨过等号的项都要变号。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p488_q4",
+     "topicId": "mbj_p488",
+     "prompt": "若 x=2 是方程 ax-3=5 的解，那么 a 等于多少？",
+     "question": "若 x=2 是方程 ax-3=5 的解，那么 a 等于多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "4",
+     "verify": "(5+3)/2",
+     "explanation": "把 x=2 代入方程，得 2a-3=5，即 2a=8，a=4。所谓方程的解，就是代入后能使左右两边相等的未知数的值。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p488_q5",
+     "topicId": "mbj_p488",
+     "prompt": "下列方程中，解为 x=3 的是哪一个？",
+     "question": "下列方程中，解为 x=3 的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x+1=5"
+      },
+      {
+       "label": "B",
+       "text": "x-1=4"
+      },
+      {
+       "label": "C",
+       "text": "4x=16"
+      },
+      {
+       "label": "D",
+       "text": "3x-2=7"
+      }
+     ],
+     "answer": "D",
+     "explanation": "把 x=3 分别代入检验：2×3+1=7 不等于 5；3-1=2 不等于 4；4×3=12 不等于 16；3×3-2=7，左右相等，所以只有 3x-2=7 的解是 x=3。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p488_q6",
+     "topicId": "mbj_p488",
+     "prompt": "关于 x 的方程（m-2）x+3=0 是一元一次方程，则 m 应满足什么条件？",
+     "question": "关于 x 的方程（m-2）x+3=0 是一元一次方程，则 m 应满足什么条件？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "m=2"
+      },
+      {
+       "label": "B",
+       "text": "m 大于 2"
+      },
+      {
+       "label": "C",
+       "text": "m 不等于 2"
+      },
+      {
+       "label": "D",
+       "text": "m 不等于 0"
+      }
+     ],
+     "answer": "C",
+     "explanation": "一元一次方程要求未知数 x 的系数不为零，否则含 x 的项消失，方程就不再是一元一次方程。因此 m-2≠0，即 m≠2。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p488_q7",
+     "topicId": "mbj_p488",
+     "prompt": "检验 x=-1 是不是方程 3（x+2）=2x-1 的解，请写出检验过程。",
+     "question": "检验 x=-1 是不是方程 3（x+2）=2x-1 的解，请写出检验过程。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "把 x=-1 分别代入左右两边：左边等于 3×（-1+2）=3×1=3，右边等于 2×（-1）-1=-3。因为 3 不等于 -3，左右两边不相等，所以 x=-1 不是这个方程的解。",
+     "explanation": "检验方程的解必须把未知数的值同时代入左右两边再比较，只算一边或者只看符号都会得出错误结论。这里两边分别是 3 和 -3，明显不等。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p488_q8",
+     "topicId": "mbj_p488",
+     "prompt": "方程 2x=-8 的解是多少？",
+     "question": "方程 2x=-8 的解是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "-4",
+     "explanation": "在等式两边同时除以 2，得 x=-8÷2=-4。除以正数 2 不改变符号关系，所以解是负数，代回原式 2×（-4）=-8 成立。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p489",
+   "description": "学会从实际问题中找出等量关系，设出未知数并用含未知数的式子表示其他量，再列出方程；掌握设、列、解、检验、作答的完整过程，能解决价格、行程、工程等常见情境中的问题。",
+   "mastery_criteria": [
+    "能从情境中写出等量关系式",
+    "能设未知数并列出对应方程",
+    "能按四步完整作答并检验"
+   ],
+   "misconceptions": [
+    "设了未知数却仍用算术方法硬算",
+    "把“比…多”写成减号",
+    "求出解后不检验是否符合实际"
+   ],
+   "std": {
+    "id": "mat-2022:4.TS.01",
+    "quote": "经历对现实问题中量的分析，借助用字母表达的未知数"
+   },
+   "questions": [
+    {
+     "id": "mbj_p489_q1",
+     "topicId": "mbj_p489",
+     "prompt": "某数的 2 倍加 3 等于 17，这个数是多少？",
+     "question": "某数的 2 倍加 3 等于 17，这个数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "7",
+     "verify": "(17-3)/2",
+     "explanation": "设这个数为 x，则 2x+3=17。两边同减 3 得 2x=14，再同除以 2 得 x=7。把 7 代回原题，2×7+3=17，符合题意。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p489_q2",
+     "topicId": "mbj_p489",
+     "prompt": "一件商品原价 x 元，打八折后售价 64 元，所列方程是哪一个？",
+     "question": "一件商品原价 x 元，打八折后售价 64 元，所列方程是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "x-0.8=64"
+      },
+      {
+       "label": "B",
+       "text": "0.8x=64"
+      },
+      {
+       "label": "C",
+       "text": "x÷0.8=64"
+      },
+      {
+       "label": "D",
+       "text": "0.8+x=64"
+      }
+     ],
+     "answer": "B",
+     "explanation": "打八折就是按原价的 80% 出售，八折价等于原价乘 0.8。已知售价 64 元，所以 0.8x=64。用减 0.8 或加 0.8 都把折数当成了减价的钱数，属于概念混淆。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p489_q3",
+     "topicId": "mbj_p489",
+     "prompt": "甲每小时走 6 千米，乙每小时走 4 千米，两人同时同地同向出发，3 小时后两人相距多少千米？",
+     "question": "甲每小时走 6 千米，乙每小时走 4 千米，两人同时同地同向出发，3 小时后两人相距多少千米？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "6",
+     "verify": "(6-4)*3",
+     "explanation": "同向行走时两人距离等于速度差乘时间。速度差是 6-4=2 千米每小时，经过 3 小时相距 2×3=6 千米。若用速度和计算就变成相向而行的情形了。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p489_q4",
+     "topicId": "mbj_p489",
+     "prompt": "某班共有学生 45 人，男生比女生多 3 人，若女生有 x 人，所列方程是哪一个？",
+     "question": "某班共有学生 45 人，男生比女生多 3 人，若女生有 x 人，所列方程是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "x+(x+3)=45"
+      },
+      {
+       "label": "B",
+       "text": "x+(x-3)=45"
+      },
+      {
+       "label": "C",
+       "text": "x+3=45"
+      },
+      {
+       "label": "D",
+       "text": "x+(x+3)=45-3"
+      }
+     ],
+     "answer": "A",
+     "explanation": "女生 x 人，男生比女生多 3 人，所以男生是 x+3 人，男女生人数之和等于全班 45 人，得 x+(x+3)=45。若写成 x-3，就把“比女生多”错当成“比女生少”了。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p489_q5",
+     "topicId": "mbj_p489",
+     "prompt": "买一支钢笔需 x 元，买 3 支付 30 元找回 6 元，每支钢笔多少元？",
+     "question": "买一支钢笔需 x 元，买 3 支付 30 元找回 6 元，每支钢笔多少元？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "8",
+     "verify": "(30-6)/3",
+     "explanation": "3 支钢笔的价钱是 30-6=24 元，列方程 3x=24，解得 x=8。检验：3 支共 24 元，付 30 元正好找回 6 元，符合实际。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p489_q6",
+     "topicId": "mbj_p489",
+     "prompt": "一项工作甲单独做 10 天完成，乙单独做 15 天完成，两人合作需要多少天完成？",
+     "question": "一项工作甲单独做 10 天完成，乙单独做 15 天完成，两人合作需要多少天完成？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "6",
+     "verify": "1/(1/10+1/15)",
+     "explanation": "把这项工作看成一个整体 1，甲每天完成十分之一，乙每天完成十五分之一，合作每天完成三分之一。设合作 x 天完成，则 x 乘三分之一等于 1，解得 x=6。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p489_q7",
+     "topicId": "mbj_p489",
+     "prompt": "某数的 3 倍与 5 的差等于 16，请按设、列、解、答四步写出完整过程。",
+     "question": "某数的 3 倍与 5 的差等于 16，请按设、列、解、答四步写出完整过程。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "设这个数为 x。根据题意列出方程 3x-5=16。解方程：两边同时加 5 得 3x=21，两边同时除以 3 得 x=7。答：这个数是 7。检验：3×7-5=16，符合题意。",
+     "explanation": "列方程解决实际问题要有完整的四步：先设未知数，再按题中的相等关系列方程，然后解方程，最后作答并检验结果是否符合实际意义，缺一步都不算规范。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p489_q8",
+     "topicId": "mbj_p489",
+     "prompt": "用方程解完应用题后，检验结果是否合理，正确的做法是哪一个？",
+     "question": "用方程解完应用题后，检验结果是否合理，正确的做法是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "只把方程解出来就行，不必检验"
+      },
+      {
+       "label": "B",
+       "text": "只看解出来的数是不是正数"
+      },
+      {
+       "label": "C",
+       "text": "把解代回原题的数量关系，看是否符合实际"
+      },
+      {
+       "label": "D",
+       "text": "凡是负数解都直接舍去"
+      }
+     ],
+     "answer": "C",
+     "explanation": "检验要做两件事：一是把解代回原方程看左右是否相等，二是看结果在实际情境中讲得通，例如人数必须是正整数、时间不能为负。只看数的正负或干脆不检验都可能留下错解。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p490",
+   "description": "本章从实物抽象出几何体、平面图形、直线、射线、线段和角。认识长方体、正方体、圆柱、圆锥、球的特征与展开图，会从不同方向观察立体图形，掌握线段与角的度量、比较和简单计算。",
+   "mastery_criteria": [
+    "能辨认常见几何体并说出面、棱、顶点数",
+    "能画出简单几何体的展开图与三视图",
+    "能比较线段长短和角的大小并作简单计算"
+   ],
+   "misconceptions": [
+    "把棱柱的棱数与面数混同",
+    "认为球可以展开成一个平面图形",
+    "把射线当成能量出长度的线"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p490_q1",
+     "topicId": "mbj_p490",
+     "prompt": "下列几何体中，表面全部是平面的是哪一个？",
+     "question": "下列几何体中，表面全部是平面的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆柱"
+      },
+      {
+       "label": "B",
+       "text": "圆锥"
+      },
+      {
+       "label": "C",
+       "text": "正方体"
+      },
+      {
+       "label": "D",
+       "text": "球"
+      }
+     ],
+     "answer": "C",
+     "explanation": "正方体的六个面都是正方形，全部是平面。圆柱和圆锥都有曲面，球面是曲面，它们都不是由平面围成的几何体。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p490_q2",
+     "topicId": "mbj_p490",
+     "prompt": "关于长方体的面、棱、顶点，下列说法正确的是哪一个？",
+     "question": "关于长方体的面、棱、顶点，下列说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "长方体有 12 条棱"
+      },
+      {
+       "label": "B",
+       "text": "长方体有 6 条棱"
+      },
+      {
+       "label": "C",
+       "text": "长方体有 12 个顶点"
+      },
+      {
+       "label": "D",
+       "text": "长方体有 4 个面"
+      }
+     ],
+     "answer": "A",
+     "explanation": "长方体有 6 个面、12 条棱、8 个顶点。棱是面与面相交得到的线段，每个面有 4 条边，6 个面共 24 条边，每条棱被两个面共用，所以是 12 条。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p490_q3",
+     "topicId": "mbj_p490",
+     "prompt": "一个棱柱共有 12 个顶点，它有多少条棱？",
+     "question": "一个棱柱共有 12 个顶点，它有多少条棱？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "18",
+     "verify": "12/2*3",
+     "explanation": "棱柱的上下底面相同，12 个顶点说明每个底面有 6 个顶点，是六棱柱。六棱柱有 6 条侧棱，两个底面各有 6 条棱，共 6+6+6=18 条。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p490_q4",
+     "topicId": "mbj_p490",
+     "prompt": "从上面观察一个圆柱，看到的平面图形是什么？",
+     "question": "从上面观察一个圆柱，看到的平面图形是什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "长方形"
+      },
+      {
+       "label": "B",
+       "text": "圆"
+      },
+      {
+       "label": "C",
+       "text": "三角形"
+      },
+      {
+       "label": "D",
+       "text": "梯形"
+      }
+     ],
+     "answer": "B",
+     "explanation": "从上面正对圆柱看，看到的是它的上底面，上底面是一个圆。长方形是圆柱从正面或左面看到的形状，圆锥从正面看才是三角形。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p490_q5",
+     "topicId": "mbj_p490",
+     "prompt": "请举例说明点、线、面、体之间的关系，至少举两个例子。",
+     "question": "请举例说明点、线、面、体之间的关系，至少举两个例子。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "点动成线，例如笔尖在纸上移动留下一条笔迹；线动成面，例如汽车雨刷摆动扫出一片扇面；面动成体，例如长方形绕一边旋转形成一个圆柱。几何体由面围成，面与面相交成线，线与线相交成点。",
+     "explanation": "点、线、面、体是几何的基本元素，它们之间既有“动”的生成关系，也有“围成、相交”的结构关系。答题时要把两种关系都说清楚，并用生活中的具体现象作例子。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p491",
+   "description": "区分平面图形与立体图形：各部分都在同一平面内的是平面图形，占有一定空间的是立体图形。能对常见的三角形、长方形、圆和长方体、圆柱、圆锥、球等正确分类，并说出它们的基本特征。",
+   "mastery_criteria": [
+    "能判断一个图形是平面图形还是立体图形",
+    "能说出常见立体图形的面、棱、顶点特征",
+    "能举出平面与立体图形的生活实例"
+   ],
+   "misconceptions": [
+    "认为三角形也有体积",
+    "把圆柱的侧面当成平面",
+    "把圆和球当成同一类图形"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p491_q1",
+     "topicId": "mbj_p491",
+     "prompt": "下列图形中，属于立体图形的是哪一个？",
+     "question": "下列图形中，属于立体图形的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "正方形"
+      },
+      {
+       "label": "B",
+       "text": "圆"
+      },
+      {
+       "label": "C",
+       "text": "球"
+      },
+      {
+       "label": "D",
+       "text": "梯形"
+      }
+     ],
+     "answer": "C",
+     "explanation": "立体图形占有一定的空间，球是立体图形。正方形、圆、梯形各部分都在同一平面内，是平面图形，它们只有面积没有体积。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p491_q2",
+     "topicId": "mbj_p491",
+     "prompt": "下列图形中，属于平面图形的是哪一个？",
+     "question": "下列图形中，属于平面图形的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆锥"
+      },
+      {
+       "label": "B",
+       "text": "正方体"
+      },
+      {
+       "label": "C",
+       "text": "球"
+      },
+      {
+       "label": "D",
+       "text": "长方形"
+      }
+     ],
+     "answer": "D",
+     "explanation": "长方形各部分都在同一平面内，是平面图形。圆锥、正方体、球都占有空间，是立体图形，从不同方向看才会看到平面图形。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p491_q3",
+     "topicId": "mbj_p491",
+     "prompt": "关于圆柱，下列说法正确的是哪一个？",
+     "question": "关于圆柱，下列说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "它由两个平面和一个曲面围成"
+      },
+      {
+       "label": "B",
+       "text": "它的表面全是平面"
+      },
+      {
+       "label": "C",
+       "text": "它有 4 条棱"
+      },
+      {
+       "label": "D",
+       "text": "它没有曲面"
+      }
+     ],
+     "answer": "A",
+     "explanation": "圆柱的上下两个底面是大小相同的圆，都是平面；侧面是弯曲的，是曲面。圆柱没有棱，它的曲面与平面相交处是圆而不是线段。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p491_q4",
+     "topicId": "mbj_p491",
+     "prompt": "一个正方体有几条棱、几个面？把棱数和面数相加，和是多少？",
+     "question": "一个正方体有几条棱、几个面？把棱数和面数相加，和是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "18",
+     "verify": "12+6",
+     "explanation": "正方体有 12 条棱、6 个面，12+6=18。棱是相邻两个面的交线，正方体相邻面成对相交，正好形成 12 条棱，与 8 个顶点、6 个面一起构成它的基本特征。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p491_q5",
+     "topicId": "mbj_p491",
+     "prompt": "圆柱上下两个底面的形状是大小相同的什么图形？",
+     "question": "圆柱上下两个底面的形状是大小相同的什么图形？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "圆",
+     "explanation": "圆柱可以看成由一个圆向上平移一段距离形成的几何体，平移过程中圆的大小不变，所以上下两个底面是大小相同的圆，它们所在的平面互相平行。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p491_q6",
+     "topicId": "mbj_p491",
+     "prompt": "请说明“面动成体”的含义，并举一个生活中的例子。",
+     "question": "请说明“面动成体”的含义，并举一个生活中的例子。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "面动成体的意思是平面图形运动起来会形成立体图形。例如把一枚硬币竖直立在桌面上快速旋转，硬币扫过的部分形成一个球；再如长方形绕它的一条边旋转一周，得到的是一个圆柱。",
+     "explanation": "点、线、面运动分别生成线、面、体，这是认识图形的一种动态方式。举例时要说明是哪个面、怎样运动、最后形成什么体，只说“转一下就成体”讲不清关系。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p491_q7",
+     "topicId": "mbj_p491",
+     "prompt": "下列各组图形中，全部是平面图形的是哪一组？",
+     "question": "下列各组图形中，全部是平面图形的是哪一组？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆、球、正方体"
+      },
+      {
+       "label": "B",
+       "text": "圆柱、圆锥、三角形"
+      },
+      {
+       "label": "C",
+       "text": "球、正方体、长方形"
+      },
+      {
+       "label": "D",
+       "text": "圆、三角形、正方形"
+      }
+     ],
+     "answer": "D",
+     "explanation": "判断的标准是图形各部分是否都在同一平面内。球、正方体、圆柱、圆锥都占有空间，属立体图形；圆、三角形、正方形都在一个平面内，是平面图形。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p491_q8",
+     "topicId": "mbj_p491",
+     "prompt": "一个四棱柱有多少个顶点？",
+     "question": "一个四棱柱有多少个顶点？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "8",
+     "verify": "4*2",
+     "explanation": "四棱柱的上下两个底面都是四边形，每个底面有 4 个顶点，两个底面的顶点不重合，所以共 4×2=8 个顶点。它还有 6 个面和 12 条棱。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p492",
+   "description": "认识正方体、长方体、棱柱、圆柱、圆锥的展开图。能由立体图形想象它的展开图，也能由展开图判断折叠后得到的立体图形，会判断给出的平面图形能否折成指定的立体图形。",
+   "mastery_criteria": [
+    "能说出正方体展开图的常见形状",
+    "能由展开图指认折叠后的立体图形",
+    "能判断正方体表面展开图是否成立"
+   ],
+   "misconceptions": [
+    "认为有“田”字形的展开图也能折成正方体",
+    "以为圆柱展开图只有两个圆",
+    "把圆锥的侧面展开当成长方形"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p492_q1",
+     "topicId": "mbj_p492",
+     "prompt": "把圆柱的侧面沿高剪开并展开，得到的平面图形是什么？",
+     "question": "把圆柱的侧面沿高剪开并展开，得到的平面图形是什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆"
+      },
+      {
+       "label": "B",
+       "text": "长方形"
+      },
+      {
+       "label": "C",
+       "text": "三角形"
+      },
+      {
+       "label": "D",
+       "text": "扇形"
+      }
+     ],
+     "answer": "B",
+     "explanation": "圆柱的侧面沿一条高剪开后摊平，得到一个长方形。这个长方形的长等于底面圆的周长，宽等于圆柱的高，所以侧面积可以用周长乘高来计算。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p492_q2",
+     "topicId": "mbj_p492",
+     "prompt": "圆锥的侧面展开后得到的平面图形是什么？",
+     "question": "圆锥的侧面展开后得到的平面图形是什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "扇形"
+      },
+      {
+       "label": "B",
+       "text": "长方形"
+      },
+      {
+       "label": "C",
+       "text": "正方形"
+      },
+      {
+       "label": "D",
+       "text": "圆"
+      }
+     ],
+     "answer": "A",
+     "explanation": "圆锥的侧面沿一条母线剪开摊平，得到一个扇形。扇形的半径是圆锥的母线长，弧长是底面圆的周长，所以它不可能是长方形或圆。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p492_q3",
+     "topicId": "mbj_p492",
+     "prompt": "正方体的表面展开图共有多少种基本形状？",
+     "question": "正方体的表面展开图共有多少种基本形状？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "6 种"
+      },
+      {
+       "label": "B",
+       "text": "9 种"
+      },
+      {
+       "label": "C",
+       "text": "11 种"
+      },
+      {
+       "label": "D",
+       "text": "12 种"
+      }
+     ],
+     "answer": "C",
+     "explanation": "正方体的表面展开图共有 11 种，通常按“一四一”“二三一”“二二二”“三三”四类归纳。数的时候不去重，就容易把旋转或翻转后相同的图形重复计数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p492_q4",
+     "topicId": "mbj_p492",
+     "prompt": "一个长方体纸盒沿棱剪开摊平后，展开图中共有多少个面？",
+     "question": "一个长方体纸盒沿棱剪开摊平后，展开图中共有多少个面？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "6",
+     "verify": "3*2",
+     "explanation": "长方体有 6 个面，沿棱剪开摊平后 6 个面都留在同一张展开图上，形状可能各不相同。展开图的面数与立体图形的面数相等，这是判断展开图是否完整的基本依据。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p492_q5",
+     "topicId": "mbj_p492",
+     "prompt": "圆锥的侧面沿一条母线剪开摊平后，得到的图形叫什么？",
+     "question": "圆锥的侧面沿一条母线剪开摊平后，得到的图形叫什么？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "扇形",
+     "explanation": "圆锥的侧面是曲面，沿母线剪开摊平后，曲边变成一段圆弧，两条母线变成两条半径，围成的图形是扇形，它的弧长等于底面圆的周长。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p492_q6",
+     "topicId": "mbj_p492",
+     "prompt": "下列形状中，不能作为正方体表面展开图的是哪一个？",
+     "question": "下列形状中，不能作为正方体表面展开图的是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "四个小正方形排成一排，两侧各接一个"
+      },
+      {
+       "label": "B",
+       "text": "四个小正方形拼成一个“田”字形，另两个分别接在两侧"
+      },
+      {
+       "label": "C",
+       "text": "三个小正方形排成一排，上面接两个、下面接一个且错开"
+      },
+      {
+       "label": "D",
+       "text": "六个小正方形连成“Z”字形"
+      }
+     ],
+     "answer": "B",
+     "explanation": "“田”字形中四个正方形共用一个交点，折叠时这些面会重叠在同一处，必然有一个面空缺，所以不能折成正方体。正方体展开图中不能出现四个面围成“田”字的情况。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p492_q7",
+     "topicId": "mbj_p492",
+     "prompt": "为什么四个小正方形拼成的“田”字形不能折成正方体？",
+     "question": "为什么四个小正方形拼成的“田”字形不能折成正方体？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为“田”字形中间有一个公共顶点，四条棱在这里相交，折叠时与这个顶点相邻的两个面会重叠到同一个面上，六个面就无法分别落到正方体的六个面上，必然出现空缺，所以折不成正方体。",
+     "explanation": "正方体的每个顶点只连着 3 条棱、3 个面。若展开图中某个顶点连着 4 个面，折叠后必有面重叠，这正是不成立展开图的共同特征。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p492_q8",
+     "topicId": "mbj_p492",
+     "prompt": "下列立体图形的展开图中含有扇形的是哪一个？",
+     "question": "下列立体图形的展开图中含有扇形的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆柱"
+      },
+      {
+       "label": "B",
+       "text": "长方体"
+      },
+      {
+       "label": "C",
+       "text": "圆锥"
+      },
+      {
+       "label": "D",
+       "text": "三棱柱"
+      }
+     ],
+     "answer": "C",
+     "explanation": "圆锥的侧面展开是扇形，所以它的展开图由扇形和底面圆组成。圆柱、长方体、三棱柱的侧面展开都是长方形或若干长方形，展开图中不含扇形。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p493",
+   "description": "学会从正面、左面、上面三个方向观察简单的立体图形，画出或辨认相应的主视图、左视图、俯视图。理解同一几何体从不同方向看到的形状可能不同，能由三视图想象原立体图形。",
+   "mastery_criteria": [
+    "能画出圆柱、圆锥等几何体的三视图",
+    "能由三视图判断立体图形",
+    "能说出三个视图各自对应的观察方向"
+   ],
+   "misconceptions": [
+    "把左视图当成从上面往下看",
+    "认为同一物体三个方向看到的形状一定相同",
+    "画视图时把宽度与高度混淆"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p493_q1",
+     "topicId": "mbj_p493",
+     "prompt": "从正面观察一个圆锥，看到的平面图形是什么？",
+     "question": "从正面观察一个圆锥，看到的平面图形是什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆"
+      },
+      {
+       "label": "B",
+       "text": "三角形"
+      },
+      {
+       "label": "C",
+       "text": "长方形"
+      },
+      {
+       "label": "D",
+       "text": "梯形"
+      }
+     ],
+     "answer": "B",
+     "explanation": "圆锥从正面看，看到的是它的轮廓，两侧的母线向上交于顶点，底面成为一条水平的线段，所以看到的是等腰三角形。从上往下看才看到圆。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p493_q2",
+     "topicId": "mbj_p493",
+     "prompt": "从上面观察一个正方体，看到的平面图形是什么？",
+     "question": "从上面观察一个正方体，看到的平面图形是什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "正方形"
+      },
+      {
+       "label": "B",
+       "text": "长方形"
+      },
+      {
+       "label": "C",
+       "text": "三角形"
+      },
+      {
+       "label": "D",
+       "text": "圆"
+      }
+     ],
+     "answer": "A",
+     "explanation": "正方体的六个面都是正方形且大小相同，从上面正对着看，看到的就是一个正方形，它的边长等于正方体的棱长。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p493_q3",
+     "topicId": "mbj_p493",
+     "prompt": "一个几何体的三视图都是圆，这个几何体是什么？",
+     "question": "一个几何体的三视图都是圆，这个几何体是什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆柱"
+      },
+      {
+       "label": "B",
+       "text": "球"
+      },
+      {
+       "label": "C",
+       "text": "圆锥"
+      },
+      {
+       "label": "D",
+       "text": "正方体"
+      }
+     ],
+     "answer": "B",
+     "explanation": "球从任何方向看都是大小相同的圆，所以三个视图都是圆。圆柱从正面看是长方形，圆锥从正面看是三角形，它们的三个视图不可能都是圆。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p493_q4",
+     "topicId": "mbj_p493",
+     "prompt": "一个几何体的主视图和左视图都是长方形，俯视图是圆，这个几何体是什么？",
+     "question": "一个几何体的主视图和左视图都是长方形，俯视图是圆，这个几何体是什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆锥"
+      },
+      {
+       "label": "B",
+       "text": "球"
+      },
+      {
+       "label": "C",
+       "text": "棱柱"
+      },
+      {
+       "label": "D",
+       "text": "圆柱"
+      }
+     ],
+     "answer": "D",
+     "explanation": "俯视图是圆，说明底面是圆；主视图和左视图都是长方形，说明侧面是竖直的曲面而不是锥面。两个条件合起来只能是圆柱，圆锥的正面视图会是三角形。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p493_q5",
+     "topicId": "mbj_p493",
+     "prompt": "一个长方体长 4 厘米、宽 3 厘米、高 2 厘米，它的俯视图的面积是多少平方厘米？",
+     "question": "一个长方体长 4 厘米、宽 3 厘米、高 2 厘米，它的俯视图的面积是多少平方厘米？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "12",
+     "verify": "4*3",
+     "explanation": "俯视图是从上往下看到的图形，看到的是物体的长与宽所围成的长方形，面积等于长乘宽，即 4×3=12 平方厘米，与高无关。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p493_q6",
+     "topicId": "mbj_p493",
+     "prompt": "一个圆柱的底面直径是 6 厘米、高是 5 厘米，它的主视图是长方形，这个长方形的周长是多少厘米？",
+     "question": "一个圆柱的底面直径是 6 厘米、高是 5 厘米，它的主视图是长方形，这个长方形的周长是多少厘米？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "22",
+     "verify": "2*(6+5)",
+     "explanation": "圆柱的主视图是一个长方形，它的长等于底面直径 6 厘米，宽等于圆柱的高 5 厘米。周长是（长+宽）×2=（6+5）×2=22 厘米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p493_q7",
+     "topicId": "mbj_p493",
+     "prompt": "请说明为什么“三视图相同”不能直接断定这个几何体就是正方体，并举一个反例。",
+     "question": "请说明为什么“三视图相同”不能直接断定这个几何体就是正方体，并举一个反例。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为三视图相同只能说明三个方向看到的轮廓一样，不能唯一确定几何体。例如球的三视图都是大小相同的圆，圆柱如果底面直径等于高，它的主视图、左视图、俯视图也可以都是相同的正方形，但球和圆柱都不是正方体。",
+     "explanation": "三视图是正投影得到的轮廓，丢失了曲面与平面的区别以及内部结构信息，所以不同几何体可能有相同的三视图，判断时要结合面的曲直再作结论。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p493_q8",
+     "topicId": "mbj_p493",
+     "prompt": "从正面方向观察物体所得到的视图，通常叫做什么视图？",
+     "question": "从正面方向观察物体所得到的视图，通常叫做什么视图？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "主",
+     "explanation": "从正面看到的视图叫主视图，从左面看到的叫左视图，从上面看到的叫俯视图。三个视图合起来叫三视图，观察方向不同，得到的形状可能不同。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p494",
+   "description": "认识点、线、面、体是几何的基本元素。理解点动成线、线动成面、面动成体，知道面与面相交成线、线与线相交成点，会数几何体的面、棱、顶点，并用这些认识解释生活现象。",
+   "mastery_criteria": [
+    "能说出点、线、面、体的相互关系",
+    "能举例说明点动成线、面动成体",
+    "能数出几何体的面数、棱数、顶点数"
+   ],
+   "misconceptions": [
+    "认为球面上也存在棱",
+    "把棱柱的顶点数当作棱数",
+    "认为所有几何体的面都是平面"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.50",
+    "quote": "通过实物和模型，了解从物体抽象出来的几何体、平面、直线和点等概念"
+   },
+   "questions": [
+    {
+     "id": "mbj_p494_q1",
+     "topicId": "mbj_p494",
+     "prompt": "下列现象中，能说明“点动成线”的是哪一个？",
+     "question": "下列现象中，能说明“点动成线”的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "汽车雨刷来回摆动"
+      },
+      {
+       "label": "B",
+       "text": "笔尖在纸上移动留下一道痕迹"
+      },
+      {
+       "label": "C",
+       "text": "长方形绕一边旋转"
+      },
+      {
+       "label": "D",
+       "text": "电风扇叶片快速转动"
+      }
+     ],
+     "answer": "B",
+     "explanation": "笔尖可以看成一个点，点移动的轨迹是一条线，正是点动成线。雨刷摆动是线动成面，长方形旋转和风扇叶片转动是面动成体。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p494_q2",
+     "topicId": "mbj_p494",
+     "prompt": "一个长方体一共有多少个顶点？",
+     "question": "一个长方体一共有多少个顶点？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "6 个"
+      },
+      {
+       "label": "B",
+       "text": "12 个"
+      },
+      {
+       "label": "C",
+       "text": "8 个"
+      },
+      {
+       "label": "D",
+       "text": "4 个"
+      }
+     ],
+     "answer": "C",
+     "explanation": "长方体的顶点是三条棱的公共端点，上底面 4 个、下底面 4 个，共 8 个。12 是它的棱数，6 是它的面数，不要互相混淆。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p494_q3",
+     "topicId": "mbj_p494",
+     "prompt": "在几何体中，面与面相交得到的是什么？",
+     "question": "在几何体中，面与面相交得到的是什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "点"
+      },
+      {
+       "label": "B",
+       "text": "线"
+      },
+      {
+       "label": "C",
+       "text": "面"
+      },
+      {
+       "label": "D",
+       "text": "体"
+      }
+     ],
+     "answer": "B",
+     "explanation": "长方体相邻两个面相交得到一条棱，棱就是线；线与线相交得到顶点，即点。所以面与面相交成线，线与线相交成点，这是几何体的基本结构关系。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p494_q4",
+     "topicId": "mbj_p494",
+     "prompt": "一个五棱柱一共有多少个面？",
+     "question": "一个五棱柱一共有多少个面？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "7",
+     "verify": "5+2",
+     "explanation": "五棱柱有 5 个侧面，上、下两个底面，共 5+2=7 个面。棱柱的面数等于底面边数加 2，这个关系对任意棱柱都成立。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p494_q5",
+     "topicId": "mbj_p494",
+     "prompt": "一个棱柱共有 8 个面，它是几棱柱？",
+     "question": "一个棱柱共有 8 个面，它是几棱柱？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "6",
+     "verify": "8-2",
+     "explanation": "棱柱的面数等于底面边数加 2，所以底面边数是 8-2=6，它是六棱柱。六棱柱还有 12 个顶点和 18 条棱。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p494_q6",
+     "topicId": "mbj_p494",
+     "prompt": "关于常见几何体的面、棱、顶点，下列说法正确的是哪一个？",
+     "question": "关于常见几何体的面、棱、顶点，下列说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "球面是一个平面"
+      },
+      {
+       "label": "B",
+       "text": "圆柱有 4 个顶点"
+      },
+      {
+       "label": "C",
+       "text": "正方体有 8 个面"
+      },
+      {
+       "label": "D",
+       "text": "圆锥有一个顶点"
+      }
+     ],
+     "answer": "D",
+     "explanation": "圆锥的侧面收拢到最高处那一点，只有一个顶点。球面是曲面；圆柱的曲面与底面相交成圆，没有顶点；正方体是 6 个面、8 个顶点。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p494_q7",
+     "topicId": "mbj_p494",
+     "prompt": "请举两个例子说明“面动成体”，并指出是哪个面怎样运动。",
+     "question": "请举两个例子说明“面动成体”，并指出是哪个面怎样运动。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "第一例：长方形绕它的一条边旋转一周，扫过的部分形成一个圆柱。第二例：直角三角形绕它的一条直角边旋转一周，形成一个圆锥。两例都是平面图形绕着一条直线转动，运动的结果是立体图形。",
+     "explanation": "面动成体要讲清三件事：运动的是哪个平面图形、绕着什么运动、形成什么几何体。只说“转一圈就成立体”无法说明面与体的对应关系。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p494_q8",
+     "topicId": "mbj_p494",
+     "prompt": "线与线相交的地方在几何中叫做什么？",
+     "question": "线与线相交的地方在几何中叫做什么？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "点",
+     "explanation": "线与线相交得到点，长方体的顶点就是三条棱的公共端点。几何中常说点动成线、线动成面、面动成体，反过来面与面相交成线，线与线相交成点。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p495",
+   "description": "掌握直线、射线、线段的概念、画法与表示方法。知道两点确定一条直线、两点之间线段最短，会比较线段的长短，理解线段的和、差与中点，能进行简单的线段长度计算。",
+   "mastery_criteria": [
+    "能画直线、射线、线段并用字母表示",
+    "能比较两条线段的长短",
+    "能用中点关系求线段长度"
+   ],
+   "misconceptions": [
+    "认为射线有两个端点",
+    "把“延长线段”说成“延长直线”",
+    "认为两点之间直线最短"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.51",
+    "quote": "会比较线段的长短，理解线段的和、差，以及线段中点的"
+   },
+   "questions": [
+    {
+     "id": "mbj_p495_q1",
+     "topicId": "mbj_p495",
+     "prompt": "关于直线、射线、线段的端点，下列说法正确的是哪一个？",
+     "question": "关于直线、射线、线段的端点，下列说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "直线有两个端点"
+      },
+      {
+       "label": "B",
+       "text": "线段没有端点"
+      },
+      {
+       "label": "C",
+       "text": "射线有两个端点"
+      },
+      {
+       "label": "D",
+       "text": "射线有一个端点"
+      }
+     ],
+     "answer": "D",
+     "explanation": "直线没有端点，向两方无限延伸；射线只有一个端点，向一方无限延伸；线段有两个端点，长度可以度量。三者端点个数分别是 0、1、2。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p495_q2",
+     "topicId": "mbj_p495",
+     "prompt": "下列图形中，长度可以度量的是哪一个？",
+     "question": "下列图形中，长度可以度量的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "直线"
+      },
+      {
+       "label": "B",
+       "text": "射线"
+      },
+      {
+       "label": "C",
+       "text": "线段"
+      },
+      {
+       "label": "D",
+       "text": "平面"
+      }
+     ],
+     "answer": "C",
+     "explanation": "线段有两个端点，两端都封住，所以长度可以量出来。直线和射线都向一方或两方无限延伸，没有确定的长度；平面是无限大的面，更谈不上长度。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p495_q3",
+     "topicId": "mbj_p495",
+     "prompt": "点 C 在线段 AB 上，AB=10 厘米，AC=4 厘米，BC 是多少厘米？",
+     "question": "点 C 在线段 AB 上，AB=10 厘米，AC=4 厘米，BC 是多少厘米？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "6",
+     "verify": "10-4",
+     "explanation": "点 C 在 A、B 之间，把线段 AB 分成 AC 和 BC 两段，所以 BC=AB-AC=10-4=6 厘米。线段的和差关系是线段计算的基本依据。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p495_q4",
+     "topicId": "mbj_p495",
+     "prompt": "线段 AB 长 12 厘米，点 M 是 AB 的中点，AM 是多少厘米？",
+     "question": "线段 AB 长 12 厘米，点 M 是 AB 的中点，AM 是多少厘米？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "6",
+     "verify": "12/2",
+     "explanation": "中点把线段分成相等的两段，所以 AM=BM=AB÷2=12÷2=6 厘米。反过来若已知 AM，也可以用 AM×2 求 AB。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p495_q5",
+     "topicId": "mbj_p495",
+     "prompt": "下列关于直线和线段的说法，正确的是哪一个？",
+     "question": "下列关于直线和线段的说法，正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "两点之间直线最短"
+      },
+      {
+       "label": "B",
+       "text": "过一点只能画一条直线"
+      },
+      {
+       "label": "C",
+       "text": "三点一定在同一条直线上"
+      },
+      {
+       "label": "D",
+       "text": "两点之间线段最短"
+      }
+     ],
+     "answer": "D",
+     "explanation": "连接两点的所有连线中，线段最短，这是基本事实。直线本身没有长度，说“直线最短”没有意义；过一点可以画无数条直线；三个点不一定共线。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p495_q6",
+     "topicId": "mbj_p495",
+     "prompt": "线段 AB 长 18 厘米，点 C 在 AB 上，AC 与 CB 的长度之比是 2 比 1，AC 是多少厘米？",
+     "question": "线段 AB 长 18 厘米，点 C 在 AB 上，AC 与 CB 的长度之比是 2 比 1，AC 是多少厘米？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "12",
+     "verify": "18*2/3",
+     "explanation": "AC 与 CB 的比是 2 比 1，说明把 AB 平均分成 3 份，AC 占其中 2 份。AB 的每份是 18÷3=6 厘米，所以 AC=6×2=12 厘米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p495_q7",
+     "topicId": "mbj_p495",
+     "prompt": "请说明“两点确定一条直线”和“两点之间线段最短”分别讲的是什么。",
+     "question": "请说明“两点确定一条直线”和“两点之间线段最短”分别讲的是什么。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "前者讲的是确定直线的条件：经过两点有一条直线，而且只有一条直线，说明两点能唯一确定直线的位置。后者讲的是长短比较：在所有连接两点的线中，线段最短，说明线段是两点间最短的路径，两者一个讲存在与唯一，一个讲最短。",
+     "explanation": "这两条都是基本事实，但内容不同：一条说直线的确定，一条说线段的最短性。混淆它们会既说不清作图的依据，也算不出两点间的距离。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p495_q8",
+     "topicId": "mbj_p495",
+     "prompt": "把一条线段分成两条相等线段的那个点，叫做这条线段的什么？",
+     "question": "把一条线段分成两条相等线段的那个点，叫做这条线段的什么？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "中点",
+     "explanation": "线段的中点到两端点的距离相等，即 AM=BM。中点只有一个，且一定落在这条线段上，它是线段计算中最常用的等分点。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p496",
+   "description": "理解角是由两条有公共端点的射线组成的图形，认识角的顶点和两边。会按大小把角分为锐角、直角、钝角、平角、周角，能比较角的大小并估计角的度数范围。",
+   "mastery_criteria": [
+    "能指出角的顶点和两条边",
+    "能按度数范围判断角的类别",
+    "能比较角的大小并说出依据"
+   ],
+   "misconceptions": [
+    "认为平角就是一条直线",
+    "以为角的边画得越长角就越大",
+    "把周角当成两条不重合的射线"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p496_q1",
+     "topicId": "mbj_p496",
+     "prompt": "角是由两条有公共端点的什么图形组成的？",
+     "question": "角是由两条有公共端点的什么图形组成的？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "线段"
+      },
+      {
+       "label": "B",
+       "text": "射线"
+      },
+      {
+       "label": "C",
+       "text": "直线"
+      },
+      {
+       "label": "D",
+       "text": "曲线"
+      }
+     ],
+     "answer": "B",
+     "explanation": "角的两边都从同一个端点出发向外延伸，符合射线的特征，这个公共端点就是角的顶点。若用线段，两边就有长度限制，与角的定义不符。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p496_q2",
+     "topicId": "mbj_p496",
+     "prompt": "下列各类角中，度数最大的是哪一种？",
+     "question": "下列各类角中，度数最大的是哪一种？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "锐角"
+      },
+      {
+       "label": "B",
+       "text": "直角"
+      },
+      {
+       "label": "C",
+       "text": "钝角"
+      },
+      {
+       "label": "D",
+       "text": "平角"
+      }
+     ],
+     "answer": "D",
+     "explanation": "锐角小于 90 度，直角等于 90 度，钝角大于 90 度而小于 180 度，平角等于 180 度，所以平角最大。周角 360 度更大，但不在选项之内。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p496_q3",
+     "topicId": "mbj_p496",
+     "prompt": "钟表上 3 点整时，时针与分针的夹角是多少度？",
+     "question": "钟表上 3 点整时，时针与分针的夹角是多少度？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "30 度"
+      },
+      {
+       "label": "B",
+       "text": "60 度"
+      },
+      {
+       "label": "C",
+       "text": "90 度"
+      },
+      {
+       "label": "D",
+       "text": "120 度"
+      }
+     ],
+     "answer": "C",
+     "explanation": "钟面被平均分成 12 大格，每格是 360÷12=30 度。3 点整时时针指向 3、分针指向 12，中间隔 3 大格，夹角是 3×30=90 度。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p496_q4",
+     "topicId": "mbj_p496",
+     "prompt": "一个平角等于多少度？只填数字即可。",
+     "question": "一个平角等于多少度？只填数字即可。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "180",
+     "verify": "90*2",
+     "explanation": "平角的两边成一条直线，正好是两个直角，所以平角等于 90×2=180 度。周角则是两个平角，等于 360 度。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p496_q5",
+     "topicId": "mbj_p496",
+     "prompt": "度数等于 90 度的角叫做什么角？",
+     "question": "度数等于 90 度的角叫做什么角？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "直角",
+     "explanation": "按度数分类：小于 90 度的角是锐角，等于 90 度的是直角，大于 90 度而小于 180 度的是钝角。直角是判断锐角与钝角的分界。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p496_q6",
+     "topicId": "mbj_p496",
+     "prompt": "钟表上 4 点整时，时针与分针的夹角是多少度？",
+     "question": "钟表上 4 点整时，时针与分针的夹角是多少度？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "100 度"
+      },
+      {
+       "label": "B",
+       "text": "150 度"
+      },
+      {
+       "label": "C",
+       "text": "90 度"
+      },
+      {
+       "label": "D",
+       "text": "120 度"
+      }
+     ],
+     "answer": "D",
+     "explanation": "4 点整时分针指向 12、时针指向 4，中间隔 4 大格，每格 30 度，夹角是 4×30=120 度。数格时要看清时针指向的数字与 12 之间隔着几格。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p496_q7",
+     "topicId": "mbj_p496",
+     "prompt": "一个角的度数等于它的一半再加 30 度，这个角是多少度？",
+     "question": "一个角的度数等于它的一半再加 30 度，这个角是多少度？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "60",
+     "verify": "30*2",
+     "explanation": "设这个角是 x 度，则 x=x÷2+30。两边同乘 2 得 2x=x+60，解得 x=60。代回检验：60 的一半是 30，30+30=60，符合条件。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p496_q8",
+     "topicId": "mbj_p496",
+     "prompt": "一个角的度数是 35 度，它属于哪一类角？",
+     "question": "一个角的度数是 35 度，它属于哪一类角？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "锐角",
+     "explanation": "35 度小于 90 度，所以是锐角。判断角的类别只看度数范围，与角的两边画得多长没有关系，角的边是射线，长度并不固定。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p497",
+   "description": "认识度、分、秒是角的度量单位，掌握 1 度等于 60 分、1 分等于 60 秒。会进行度与分、分与秒之间的换算，能按六十进制做角的加减运算，包括进位与借位。",
+   "mastery_criteria": [
+    "能进行度、分、秒之间的换算",
+    "能做度分秒的加法并正确进位",
+    "能做度分秒的减法并正确借位"
+   ],
+   "misconceptions": [
+    "按十进制把 1 度当成 100 分",
+    "做减法时忘记按 60 借位",
+    "把 0.5 度写成 5 分"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.05",
+    "quote": "认识度、分、秘等角的度量单位，能进行简单的单位换算，会计算角的和、差"
+   },
+   "questions": [
+    {
+     "id": "mbj_p497_q1",
+     "topicId": "mbj_p497",
+     "prompt": "1 度等于多少分？请填一个整数。",
+     "question": "1 度等于多少分？请填一个整数。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "60",
+     "verify": "60*1",
+     "explanation": "度、分、秒之间是六十进制：1 度等于 60 分，1 分等于 60 秒。它与长度、质量常用的十进制不同，换算时要按 60 进位或借位。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p497_q2",
+     "topicId": "mbj_p497",
+     "prompt": "1 分等于多少秒？请填一个整数。",
+     "question": "1 分等于多少秒？请填一个整数。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "60",
+     "explanation": "角的度量单位分与秒之间同样是六十进制，1 分等于 60 秒。所以 1 度等于 60 分，也等于 3600 秒，换算时逐级乘 60。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p497_q3",
+     "topicId": "mbj_p497",
+     "prompt": "0.5 度等于多少分？请填一个数。",
+     "question": "0.5 度等于多少分？请填一个数。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "30",
+     "verify": "60*0.5",
+     "explanation": "1 度是 60 分，0.5 度就是 60×0.5=30 分。把度化成分要用乘法乘 60，把分化成度要用除法除以 60，方向不能搞反。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p497_q4",
+     "topicId": "mbj_p497",
+     "prompt": "32 度 30 分合起来等于多少度？",
+     "question": "32 度 30 分合起来等于多少度？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "32.5",
+     "verify": "32+30/60",
+     "explanation": "先把 30 分化成度：30÷60=0.5 度，再与 32 度相加，得 32.5 度。这里不能按十进制把 30 分当成 0.3 度，因为分与度是六十进制。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p497_q5",
+     "topicId": "mbj_p497",
+     "prompt": "45 度 30 分加上 30 度 40 分，结果是多少？",
+     "question": "45 度 30 分加上 30 度 40 分，结果是多少？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "75 度 70 分"
+      },
+      {
+       "label": "B",
+       "text": "76 度 10 分"
+      },
+      {
+       "label": "C",
+       "text": "75 度 10 分"
+      },
+      {
+       "label": "D",
+       "text": "76 度 70 分"
+      }
+     ],
+     "answer": "B",
+     "explanation": "度与度相加得 75 度，分与分相加得 70 分。70 分超过 60 分，要进位成 1 度 10 分，所以结果是 76 度 10 分，答案不能停在 75 度 70 分。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p497_q6",
+     "topicId": "mbj_p497",
+     "prompt": "1.2 度等于多少分？请填一个整数。",
+     "question": "1.2 度等于多少分？请填一个整数。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "72",
+     "verify": "1.2*60",
+     "explanation": "把度化成分要乘 60，1.2×60=72 分。可以拆成 1 度 12 分来想，结果同样是 72 分，说明六十进制换算与小数乘法是一致的。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p497_q7",
+     "topicId": "mbj_p497",
+     "prompt": "用 90 度减去 36 度 25 分，结果写成“度分”的形式是什么？",
+     "question": "用 90 度减去 36 度 25 分，结果写成“度分”的形式是什么？",
+     "type": "fill",
+     "difficulty": "hard",
+     "answer": "53度35分",
+     "explanation": "90 度不够直接减 25 分，先把 90 度拆成 89 度 60 分。89 度减 36 度得 53 度，60 分减 25 分得 35 分，所以结果是 53 度 35 分。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p497_q8",
+     "topicId": "mbj_p497",
+     "prompt": "下列角的单位换算中，正确的是哪一个？",
+     "question": "下列角的单位换算中，正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 度等于 100 分"
+      },
+      {
+       "label": "B",
+       "text": "1 度等于 60 秒"
+      },
+      {
+       "label": "C",
+       "text": "1 分等于 100 秒"
+      },
+      {
+       "label": "D",
+       "text": "1 分等于 60 秒"
+      }
+     ],
+     "answer": "D",
+     "explanation": "度、分、秒是六十进制：1 度等于 60 分，1 分等于 60 秒，1 度等于 3600 秒。把 100 当成进率是套用了十进制，是常见错误。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p498",
+   "description": "理解角平分线的概念：从角的顶点出发，把角分成两个相等的角的射线。会用角平分线进行角的计算，能判断一条射线是不是某个角的平分线，会处理与角平分线相关的简单图形问题。",
+   "mastery_criteria": [
+    "能叙述角平分线的定义",
+    "能用角平分线关系求角的度数",
+    "能判断射线是否为角的平分线"
+   ],
+   "misconceptions": [
+    "认为角平分线把角分成任意两部分",
+    "求角时把两个相等角相加而不取一半",
+    "把角平分线当成一条线段"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.31",
+    "quote": "理解角平分线的概念，探索并证明角平分线的性质定理"
+   },
+   "questions": [
+    {
+     "id": "mbj_p498_q1",
+     "topicId": "mbj_p498",
+     "prompt": "从角的顶点出发，把这个角分成两个相等的角的射线叫做什么？",
+     "question": "从角的顶点出发，把这个角分成两个相等的角的射线叫做什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "角的中线"
+      },
+      {
+       "label": "B",
+       "text": "角的垂线"
+      },
+      {
+       "label": "C",
+       "text": "角的高"
+      },
+      {
+       "label": "D",
+       "text": "角平分线"
+      }
+     ],
+     "answer": "D",
+     "explanation": "角平分线的定义要点有三：从顶点出发、是射线、把原角分成两个相等的角。它的作用是把一个角等分，从而建立两角相等的关系。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p498_q2",
+     "topicId": "mbj_p498",
+     "prompt": "角 AOB 等于 80 度，射线 OC 平分角 AOB，角 AOC 是多少度？",
+     "question": "角 AOB 等于 80 度，射线 OC 平分角 AOB，角 AOC 是多少度？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "40",
+     "verify": "80/2",
+     "explanation": "OC 平分角 AOB，就把 80 度平均分成两个相等的角，所以角 AOC 等于 80÷2=40 度，角 BOC 也是 40 度，两者加起来正好是 80 度。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p498_q3",
+     "topicId": "mbj_p498",
+     "prompt": "角 AOB 等于 120 度，OC 平分角 AOB，OD 又平分角 AOC，角 AOD 是多少度？",
+     "question": "角 AOB 等于 120 度，OC 平分角 AOB，OD 又平分角 AOC，角 AOD 是多少度？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "30",
+     "verify": "120/2/2",
+     "explanation": "OC 平分 120 度得到角 AOC=60 度，OD 再平分角 AOC 得 60÷2=30 度。连续平分就是把原角依次除以 2，两次平分即除以 4。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p498_q4",
+     "topicId": "mbj_p498",
+     "prompt": "射线 OC 在角 AOB 的内部，且角 AOC 等于角 BOC，下列结论一定成立的是哪一个？",
+     "question": "射线 OC 在角 AOB 的内部，且角 AOC 等于角 BOC，下列结论一定成立的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "OC 是角 AOB 的平分线"
+      },
+      {
+       "label": "B",
+       "text": "角 AOB 等于 90 度"
+      },
+      {
+       "label": "C",
+       "text": "OC 与 OA 垂直"
+      },
+      {
+       "label": "D",
+       "text": "角 AOC 等于 45 度"
+      }
+     ],
+     "answer": "A",
+     "explanation": "OC 在角 AOB 内部且把角分成两个相等的角，正好符合角平分线的定义。角 AOB 的大小并没有给定，所以 90 度、45 度这些结论都推不出来。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p498_q5",
+     "topicId": "mbj_p498",
+     "prompt": "角 AOB 等于 66 度，OC 平分角 AOB，角 BOC 是多少度？",
+     "question": "角 AOB 等于 66 度，OC 平分角 AOB，角 BOC 是多少度？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "33",
+     "explanation": "OC 平分角 AOB，两半相等，所以角 BOC 等于 66÷2=33 度，角 AOC 也是 33 度，两者之和 66 度与原角相等。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p498_q6",
+     "topicId": "mbj_p498",
+     "prompt": "角 AOB 等于 90 度，OC 平分角 AOB，角 COD 等于 30 度且 OD 在角 AOC 内部，角 BOD 是多少度？",
+     "question": "角 AOB 等于 90 度，OC 平分角 AOB，角 COD 等于 30 度且 OD 在角 AOC 内部，角 BOD 是多少度？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "60 度"
+      },
+      {
+       "label": "B",
+       "text": "90 度"
+      },
+      {
+       "label": "C",
+       "text": "75 度"
+      },
+      {
+       "label": "D",
+       "text": "45 度"
+      }
+     ],
+     "answer": "C",
+     "explanation": "OC 平分 90 度得角 AOC=45 度。OD 在角 AOC 内部且角 COD=30 度，所以角 AOD=45-30=15 度。角 BOD 等于整个角 AOB 减去角 AOD，即 90-15=75 度。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p498_q7",
+     "topicId": "mbj_p498",
+     "prompt": "角 AOB 等于 100 度，OC 平分角 AOB，OD 在角 BOC 内部且角 BOD 等于 20 度，角 COD 是多少度？",
+     "question": "角 AOB 等于 100 度，OC 平分角 AOB，OD 在角 BOC 内部且角 BOD 等于 20 度，角 COD 是多少度？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "30",
+     "verify": "100/2-20",
+     "explanation": "OC 平分 100 度得角 BOC=50 度。OD 在角 BOC 内部，把角 BOC 分成角 BOD 和角 COD，所以角 COD=50-20=30 度。画图分清角的和差是关键。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p498_q8",
+     "topicId": "mbj_p498",
+     "prompt": "若 OC 是角 AOB 的平分线，那么角 AOC 与哪个角相等？",
+     "question": "若 OC 是角 AOB 的平分线，那么角 AOC 与哪个角相等？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "BOC",
+     "explanation": "角平分线把原角分成两个相等的角，所以角 AOC 等于角 BOC，两者之和等于角 AOB。写结论时要注意用的是同一顶点 O 的两个角。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p499",
+   "description": "认识同一平面内两条直线的两种位置关系：相交与平行。知道两条直线相交只有一个交点，平行线没有公共点；理解垂线与垂线段最短，会过一点画已知直线的垂线，知道点到直线的距离。",
+   "mastery_criteria": [
+    "能判断两直线相交还是平行",
+    "能用垂线段最短求点到直线的距离",
+    "能用三角板过一点画已知直线的垂线"
+   ],
+   "misconceptions": [
+    "认为不相交的两条直线一定平行，忽略同一平面前提",
+    "把斜线段的长当成点到直线的距离",
+    "认为过一点能画两条不同的垂线"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p499_q1",
+     "topicId": "mbj_p499",
+     "prompt": "同一平面内，两条直线的位置关系有哪几种？",
+     "question": "同一平面内，两条直线的位置关系有哪几种？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "只有相交一种"
+      },
+      {
+       "label": "B",
+       "text": "只有平行一种"
+      },
+      {
+       "label": "C",
+       "text": "相交和平行两种"
+      },
+      {
+       "label": "D",
+       "text": "相交、平行和垂直三种"
+      }
+     ],
+     "answer": "C",
+     "explanation": "同一平面内两条直线要么有一个公共点即相交，要么没有公共点即平行。垂直只是相交中夹角为 90 度的特殊情形，不能与相交并列成第三种。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p499_q2",
+     "topicId": "mbj_p499",
+     "prompt": "两条直线相交，它们的交点个数是多少？",
+     "question": "两条直线相交，它们的交点个数是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "0 个"
+      },
+      {
+       "label": "B",
+       "text": "2 个"
+      },
+      {
+       "label": "C",
+       "text": "无数个"
+      },
+      {
+       "label": "D",
+       "text": "1 个"
+      }
+     ],
+     "answer": "D",
+     "explanation": "两条直线相交只有一个公共点，这是直线的基本性质。若有 0 个公共点就是平行，两条不同的直线不可能有两个或无数个公共点。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p499_q3",
+     "topicId": "mbj_p499",
+     "prompt": "关于同一平面内两条直线的位置关系，下列说法正确的是哪一个？",
+     "question": "关于同一平面内两条直线的位置关系，下列说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "不相交的两条直线一定平行"
+      },
+      {
+       "label": "B",
+       "text": "两条平行线可能有一个公共点"
+      },
+      {
+       "label": "C",
+       "text": "两条直线一定相交"
+      },
+      {
+       "label": "D",
+       "text": "两条平行直线一定没有公共点"
+      }
+     ],
+     "answer": "D",
+     "explanation": "只有在同一平面内，不相交的两条直线才一定平行，所以第一项缺了前提。平行线没有公共点；两条直线也可能平行，不一定相交。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p499_q4",
+     "topicId": "mbj_p499",
+     "prompt": "点 P 到直线 l 的垂线段长 5 厘米，那么从 P 到 l 上各点所连的线段中，最短的是多少厘米？",
+     "question": "点 P 到直线 l 的垂线段长 5 厘米，那么从 P 到 l 上各点所连的线段中，最短的是多少厘米？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "5",
+     "verify": "5*1",
+     "explanation": "直线外一点到直线上各点的所有线段中，垂线段最短。所以最短的线段就是这条垂线段，长度 5 厘米，这个长度也就是点 P 到直线 l 的距离。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p499_q5",
+     "topicId": "mbj_p499",
+     "prompt": "两条直线相交所成的四个角中，如果有一个角是 90 度，那么这两条直线互相什么？",
+     "question": "两条直线相交所成的四个角中，如果有一个角是 90 度，那么这两条直线互相什么？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "垂直",
+     "explanation": "两条直线相交所成的四个角中有一个是直角，那么四个角都是直角，此时称这两条直线互相垂直，交点叫做垂足。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p499_q6",
+     "topicId": "mbj_p499",
+     "prompt": "在同一平面内，直线 a 平行于直线 b，直线 b 平行于直线 c，那么 a 与 c 是什么关系？",
+     "question": "在同一平面内，直线 a 平行于直线 b，直线 b 平行于直线 c，那么 a 与 c 是什么关系？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "相交"
+      },
+      {
+       "label": "B",
+       "text": "垂直"
+      },
+      {
+       "label": "C",
+       "text": "无法确定"
+      },
+      {
+       "label": "D",
+       "text": "平行"
+      }
+     ],
+     "answer": "D",
+     "explanation": "平行于同一条直线的两条直线互相平行，这叫做平行线的传递性。因为 a、b、c 都在同一平面内，a 与 c 不可能相交，只能平行。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p499_q7",
+     "topicId": "mbj_p499",
+     "prompt": "为什么点到直线的距离要用垂线段的长度来度量？请说明理由。",
+     "question": "为什么点到直线的距离要用垂线段的长度来度量？请说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为从直线外一点到这条直线上各点的所有线段中，垂线段最短。若用其他斜线段的长度来度量，同样的点换一条线段就会得到不同的数值，这个距离就不唯一了。取最短的垂线段，才能让距离有确定的大小。",
+     "explanation": "距离的定义要求唯一确定。垂线段最短保证了它比其他连线段都短且长度固定，从而可以作为一个点到直线距离的唯一度量标准。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p499_q8",
+     "topicId": "mbj_p499",
+     "prompt": "经过已知直线外的一点，能画出多少条直线与这条已知直线垂直？",
+     "question": "经过已知直线外的一点，能画出多少条直线与这条已知直线垂直？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "1",
+     "explanation": "在同一平面内，过直线外一点有且只有一条直线与已知直线垂直，这条直线唯一，垂足也唯一。这一点是作图时用量角器或三角板的依据。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p500",
+   "description": "认识两条直线被第三条直线所截形成的同位角、内错角、同旁内角，会在图形中辨认这些角。探索并掌握平行线的性质与判定，能用它们进行简单的说理和角度计算。",
+   "mastery_criteria": [
+    "能在图中指出同位角、内错角、同旁内角",
+    "能用平行线性质求角的度数",
+    "能根据角的关系判定两直线平行"
+   ],
+   "misconceptions": [
+    "把内错角当成同旁内角",
+    "认为两直线平行时同旁内角也相等",
+    "用平行线性质时忽略两直线平行的前提"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p500_q1",
+     "topicId": "mbj_p500",
+     "prompt": "两条直线被第三条直线所截，在截线同旁、被截两直线同侧的一对角叫做什么？",
+     "question": "两条直线被第三条直线所截，在截线同旁、被截两直线同侧的一对角叫做什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "内错角"
+      },
+      {
+       "label": "B",
+       "text": "同旁内角"
+      },
+      {
+       "label": "C",
+       "text": "对顶角"
+      },
+      {
+       "label": "D",
+       "text": "同位角"
+      }
+     ],
+     "answer": "D",
+     "explanation": "同位角的位置特征是“同旁、同侧”，即在截线的同一边，又在两条被截直线的同一侧。内错角在截线两旁且在两直线之间，同旁内角在截线同旁且在两直线之间。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p500_q2",
+     "topicId": "mbj_p500",
+     "prompt": "两条平行直线被第三条直线所截，同位角之间是什么关系？",
+     "question": "两条平行直线被第三条直线所截，同位角之间是什么关系？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "互补"
+      },
+      {
+       "label": "B",
+       "text": "相等"
+      },
+      {
+       "label": "C",
+       "text": "互余"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "B",
+     "explanation": "两直线平行，同位角相等，这是平行线的重要性质。注意前提是两条被截直线平行，若不平行，同位角就不一定相等。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p500_q3",
+     "topicId": "mbj_p500",
+     "prompt": "两条平行直线被第三条直线所截，一个同位角是 65 度，与它相邻的内错角是多少度？",
+     "question": "两条平行直线被第三条直线所截，一个同位角是 65 度，与它相邻的内错角是多少度？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "65",
+     "verify": "65*1",
+     "explanation": "两直线平行时，同位角相等，内错角也相等。这个内错角与同位角在位置上互为对顶角的关系，度数同样是 65 度，不需要再做 180 度减。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p500_q4",
+     "topicId": "mbj_p500",
+     "prompt": "两条平行直线被第三条直线所截，一对同旁内角中有一个是 110 度，另一个是多少度？",
+     "question": "两条平行直线被第三条直线所截，一对同旁内角中有一个是 110 度，另一个是多少度？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "70",
+     "verify": "180-110",
+     "explanation": "两直线平行，同旁内角互补，即两角之和等于 180 度。所以另一个角是 180-110=70 度，而不是与 110 度相等。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p500_q5",
+     "topicId": "mbj_p500",
+     "prompt": "两条直线被第三条直线所截，如果同旁内角互补，那么这两条直线是什么关系？",
+     "question": "两条直线被第三条直线所截，如果同旁内角互补，那么这两条直线是什么关系？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行"
+      },
+      {
+       "label": "B",
+       "text": "垂直"
+      },
+      {
+       "label": "C",
+       "text": "相交但不垂直"
+      },
+      {
+       "label": "D",
+       "text": "无法判断"
+      }
+     ],
+     "answer": "A",
+     "explanation": "同旁内角互补是平行线的判定方法之一：同旁内角互补，两直线平行。判定是由角的关系推出直线的位置关系，与性质的推理方向正好相反。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p500_q6",
+     "topicId": "mbj_p500",
+     "prompt": "两条平行直线被第三条直线所截，一对同旁内角中，一个角是另一个角的 3 倍，较小的角是多少度？",
+     "question": "两条平行直线被第三条直线所截，一对同旁内角中，一个角是另一个角的 3 倍，较小的角是多少度？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "30 度"
+      },
+      {
+       "label": "B",
+       "text": "60 度"
+      },
+      {
+       "label": "C",
+       "text": "135 度"
+      },
+      {
+       "label": "D",
+       "text": "45 度"
+      }
+     ],
+     "answer": "D",
+     "explanation": "两直线平行时同旁内角互补，设较小的角是 x 度，则较大的角是 3x 度，x+3x=180，解得 x=45。较大角是 135 度，两角之和正好 180 度。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p500_q7",
+     "topicId": "mbj_p500",
+     "prompt": "两条平行直线被第三条直线所截，一对同旁内角中，一个角比另一个角大 40 度，较大的角是多少度？",
+     "question": "两条平行直线被第三条直线所截，一对同旁内角中，一个角比另一个角大 40 度，较大的角是多少度？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "110",
+     "verify": "(180+40)/2",
+     "explanation": "设较小的角是 x 度，较大的角是 x+40 度，由同旁内角互补得 x+x+40=180，解得 x=70，较大角是 70+40=110 度。两角之和 70+110=180，检验通过。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p500_q8",
+     "topicId": "mbj_p500",
+     "prompt": "两条直线被第三条直线所截，如果同位角相等，那么这两条直线是什么关系？",
+     "question": "两条直线被第三条直线所截，如果同位角相等，那么这两条直线是什么关系？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "平行",
+     "explanation": "同位角相等，两直线平行，这是判定两直线平行最常用的方法。使用时要先找准哪两条是被截直线、哪一条是截线，否则会把角的关系对应错。",
+     "subject": "math-bj"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,3077 @@
+{
+ "shard": "S27",
+ "subject": "math-bj",
+ "book": "七下",
+ "seg": "初中",
+ "grade": 7,
+ "semester": "下",
+ "points": [
+  {
+   "topicId": "mbj_p501",
+   "description": "本单元学习不等式的意义与基本性质，会解一元一次不等式并把解集表示在数轴上，会用数轴确定一元一次不等式组的解集，并能列不等式解决简单的实际问题。",
+   "mastery_criteria": [
+    "准确判断一个式子是不是一元一次不等式",
+    "解一元一次不等式，并在数轴上表示解集",
+    "求一元一次不等式组的解集"
+   ],
+   "misconceptions": [
+    "把 x≥3 与 x>3 当成一回事，数轴上实心、空心不分",
+    "两边同乘负数时忘记改变不等号方向",
+    "组内两个不等式分别解完后不做取交集"
+   ],
+   "std": null,
+   "grade": 7,
+   "stage": 4,
+   "questions": [
+    {
+     "id": "mbj_p501_q1",
+     "topicId": "mbj_p501",
+     "prompt": "下列各式中，属于一元一次不等式的是哪一个？",
+     "question": "下列各式中，属于一元一次不等式的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "一元一次不等式要求只含一个未知数、未知数的次数是 1、用不等号连接，并且两边都是整式。四个条件同时满足的只有 2x+1>5。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x+1>5"
+      },
+      {
+       "label": "B",
+       "text": "x的平方<4"
+      },
+      {
+       "label": "C",
+       "text": "x分之1>2"
+      },
+      {
+       "label": "D",
+       "text": "2x+3y>6"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p501_q2",
+     "topicId": "mbj_p501",
+     "prompt": "解不等式 3x-6>0，它最小的整数解是多少？",
+     "question": "解不等式 3x-6>0，它最小的整数解是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "3",
+     "explanation": "移项得 3x>6，两边同除以 3 得 x>2。大于 2 的整数中最小的是 3，注意 2 本身不满足严格大于。",
+     "subject": "math-bj",
+     "verify": "6/3+1"
+    },
+    {
+     "id": "mbj_p501_q3",
+     "topicId": "mbj_p501",
+     "prompt": "不等式组 x>1 与 x≤4 的整数解共有几个？",
+     "question": "不等式组 x>1 与 x≤4 的整数解共有几个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "两个不等式解集的公共部分是 1<x≤4，其中的整数是 2、3、4，共 3 个。1 不在范围内，4 可以取到。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "2个"
+      },
+      {
+       "label": "B",
+       "text": "3个"
+      },
+      {
+       "label": "C",
+       "text": "4个"
+      },
+      {
+       "label": "D",
+       "text": "5个"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p501_q4",
+     "topicId": "mbj_p501",
+     "prompt": "一个数的 2 倍减去 3 不小于 7，这个数的最小整数值是多少？",
+     "question": "一个数的 2 倍减去 3 不小于 7，这个数的最小整数值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "5",
+     "explanation": "「不小于」就是大于或等于，列式 2x-3≥7，解得 x≥5。因为可以取等号，所以最小整数值是 5 而不是 6。",
+     "subject": "math-bj",
+     "verify": "(7+3)/2"
+    },
+    {
+     "id": "mbj_p501_q5",
+     "topicId": "mbj_p501",
+     "prompt": "解一元一次不等式组的一般步骤是什么？请写出确定解集的口诀及每句口诀的意思。",
+     "question": "解一元一次不等式组的一般步骤是什么？请写出确定解集的口诀及每句口诀的意思。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "先分别解出组中每个不等式，再把各解集画在同一条数轴上，取公共部分。口诀：同大取大，两个都是大于号时取较大的数；同小取小，两个都是小于号时取较小的数；大小小大取中间，一个大于小数、一个小于大数时取中间部分；大大小小无解，大于大数又小于小数时没有公共部分。",
+     "explanation": "不等式组的解集是各个不等式解集的公共部分，所以必须先各自求解再取交集。口诀只是取交集的快捷记法，画数轴才是最可靠的检验方式。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p502",
+   "description": "结合具体情境了解不等式的意义，会用小于、大于、不大于、不小于等符号表示数量之间的不等关系，并能根据文字叙述或实际问题列出不等式。",
+   "mastery_criteria": [
+    "说出不等式与等式的区别",
+    "把「不大于」「不少于」等词写成正确的不等号",
+    "根据实际情境列出不等式"
+   ],
+   "misconceptions": [
+    "把「不少于」写成大于号，漏掉取等号",
+    "列不等式时把「多」「少」的方向弄反",
+    "认为含不等号的式子一定是实际问题才有意义"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.33",
+    "quote": "能根据具体问题中的数量关系，列出一元一次不等式"
+   },
+   "grade": 7,
+   "stage": 4,
+   "questions": [
+    {
+     "id": "mbj_p502_q1",
+     "topicId": "mbj_p502",
+     "prompt": "下列各式中，是不等式的是哪一个？",
+     "question": "下列各式中，是不等式的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "C",
+     "explanation": "不等式是用不等号连接的式子。3+4=7 用的是等号，2x-1 和 5y 只是代数式，没有连接符号，只有 a+2<5 含小于号。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "3+4=7"
+      },
+      {
+       "label": "B",
+       "text": "2x-1"
+      },
+      {
+       "label": "C",
+       "text": "a+2<5"
+      },
+      {
+       "label": "D",
+       "text": "5y"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p502_q2",
+     "topicId": "mbj_p502",
+     "prompt": "用不等式表示：a 与 3 的和不大于 7。",
+     "question": "用不等式表示：a 与 3 的和不大于 7。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "a+3≤7",
+     "explanation": "「不大于」表示小于或等于，所以要用小于等于号。「a 与 3 的和」先写成 a+3，再与 7 用不等号连接。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p502_q3",
+     "topicId": "mbj_p502",
+     "prompt": "x 的 2 倍与 1 的差大于 5，这样的 x 中最小的整数是多少？",
+     "question": "x 的 2 倍与 1 的差大于 5，这样的 x 中最小的整数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4",
+     "explanation": "按叙述列式 2x-1>5，移项得 2x>6，两边同除以 2 得 x>3。大于 3 的最小整数是 4，3 本身不满足。",
+     "subject": "math-bj",
+     "verify": "6/2+1"
+    },
+    {
+     "id": "mbj_p502_q4",
+     "topicId": "mbj_p502",
+     "prompt": "某班人数 x 不少于 45 人，用不等式表示是哪一个？",
+     "question": "某班人数 x 不少于 45 人，用不等式表示是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "C",
+     "explanation": "「不少于」就是大于或等于，人数可以达到 45，所以写 x≥45。写成 x>45 会把正好 45 人的情况排除掉。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "x>45"
+      },
+      {
+       "label": "B",
+       "text": "x<45"
+      },
+      {
+       "label": "C",
+       "text": "x≥45"
+      },
+      {
+       "label": "D",
+       "text": "x≤45"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p502_q5",
+     "topicId": "mbj_p502",
+     "prompt": "一件商品原价 120 元，打折后售价不高于 90 元，最多可以打几折？",
+     "question": "一件商品原价 120 元，打折后售价不高于 90 元，最多可以打几折？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "7.5",
+     "explanation": "设打 x 折，则售价为 120 乘 x 除以 10。由 120x/10≤90 得 12x≤90，x≤7.5，所以最多打 7.5 折，折扣数越小越便宜。",
+     "subject": "math-bj",
+     "verify": "90/120*10"
+    },
+    {
+     "id": "mbj_p502_q6",
+     "topicId": "mbj_p502",
+     "prompt": "「不大于」与「小于」有什么区别？请各举一个生活实例说明。",
+     "question": "「不大于」与「小于」有什么区别？请各举一个生活实例说明。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "「不大于」包含相等的情况，对应小于等于号；「小于」不包含相等，对应小于号。例如电梯限重 1000 千克，载重不大于 1000 千克，正好 1000 千克仍可乘；而未满 12 周岁指年龄小于 12 周岁，正好 12 周岁就不符合。",
+     "explanation": "区别的关键在于能否取等号，很多实际问题允许取到边界值，写成小于号就会把边界情形漏掉，答案随之出错。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p502_q7",
+     "topicId": "mbj_p502",
+     "prompt": "用不等式表示「两数的平方和不小于这两数积的 2 倍」，正确的是哪一个？",
+     "question": "用不等式表示「两数的平方和不小于这两数积的 2 倍」，正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "B",
+     "explanation": "「平方和」是 x的平方加 y的平方，「不小于」是大于或等于，「积的 2 倍」是 2xy。合起来就是 x的平方+y的平方≥2xy，取等号的情形在两数相等时出现。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "x的平方+y的平方>2xy"
+      },
+      {
+       "label": "B",
+       "text": "x的平方+y的平方≥2xy"
+      },
+      {
+       "label": "C",
+       "text": "x的平方+y的平方≤2xy"
+      },
+      {
+       "label": "D",
+       "text": "x的平方+y的平方<2xy"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p502_q8",
+     "topicId": "mbj_p502",
+     "prompt": "苹果每千克 8 元，小明带了 50 元，买了 x 千克后钱还没有花完。请列出关于 x 的不等式，并求出 x 能取的最大整数值。",
+     "question": "苹果每千克 8 元，小明带了 50 元，买了 x 千克后钱还没有花完。请列出关于 x 的不等式，并求出 x 能取的最大整数值。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "花了 8x 元，钱没有花完说明花费小于 50 元，列式 8x<50，解得 x<6.25。因为 x 是整千克数，所以 x 可以取 1、2、3、4、5、6，最大整数值是 6。若写成 8x≤50，就会错把 6.25 千克也算进去。",
+     "explanation": "「没有花完」是严格小于，不能把正好用完的情况算在内；再结合千克数取整数的实际限制，才能定出最大整数取值。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p503",
+   "description": "探索并掌握不等式的基本性质：两边加或减同一个数，不等号方向不变；两边乘或除以同一个正数，方向不变；乘或除以同一个负数，方向必须改变。",
+   "mastery_criteria": [
+    "叙述不等式的三条基本性质",
+    "用性质对不等式进行变形",
+    "判断乘除负数后不等号方向是否改变"
+   ],
+   "misconceptions": [
+    "两边乘负数时照抄原不等号方向",
+    "认为两边乘 0 后不等号仍然成立",
+    "把性质 2 和性质 3 的条件记混"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.06",
+    "quote": "结合具体问题，了解不等式的意义，探索不等式的基本性质"
+   },
+   "grade": 7,
+   "stage": 4,
+   "questions": [
+    {
+     "id": "mbj_p503_q1",
+     "topicId": "mbj_p503",
+     "prompt": "若 a<b，则下列变形正确的是哪一个？",
+     "question": "若 a<b，则下列变形正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "不等式两边加同一个数，不等号方向不变，所以 a+3<b+3 成立；a-3>b-3 把方向反了；-a<-b 相当于两边乘 -1，方向应改成大于。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "a+3>b+3"
+      },
+      {
+       "label": "B",
+       "text": "a+3<b+3"
+      },
+      {
+       "label": "C",
+       "text": "a-3>b-3"
+      },
+      {
+       "label": "D",
+       "text": "-a<-b"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p503_q2",
+     "topicId": "mbj_p503",
+     "prompt": "若 a<b，且 c<0，那么 ac 与 bc 的大小关系是什么？",
+     "question": "若 a<b，且 c<0，那么 ac 与 bc 的大小关系是什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "不等式两边同乘一个负数，不等号方向要改变，所以由 a<b 得 ac>bc。c 为负是关键条件，若 c 为正则仍是 ac<bc。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "ac>bc"
+      },
+      {
+       "label": "B",
+       "text": "ac<bc"
+      },
+      {
+       "label": "C",
+       "text": "ac=bc"
+      },
+      {
+       "label": "D",
+       "text": "无法比较大小"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p503_q3",
+     "topicId": "mbj_p503",
+     "prompt": "已知 x-5<3，那么 x 能取到的最大整数值是多少？",
+     "question": "已知 x-5<3，那么 x 能取到的最大整数值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "7",
+     "explanation": "两边同加 5，不等号方向不变，得 x<8。小于 8 的整数中最大的是 7，8 本身不满足严格小于。",
+     "subject": "math-bj",
+     "verify": "3+5-1"
+    },
+    {
+     "id": "mbj_p503_q4",
+     "topicId": "mbj_p503",
+     "prompt": "解不等式 -2x>6，两边同除以 -2 后得到 x<（　），请在括号里填上合适的数。",
+     "question": "解不等式 -2x>6，两边同除以 -2 后得到 x<（　），请在括号里填上合适的数。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "-3",
+     "explanation": "两边同除以 -2，因为除数是负数，不等号由大于改成小于，同时 6 除以 -2 得 -3，所以解集是 x<-3。填数时要连同方向一起改。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p503_q5",
+     "topicId": "mbj_p503",
+     "prompt": "若 a<b，则下列各式一定成立的是哪一个？",
+     "question": "若 a<b，则下列各式一定成立的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "C",
+     "explanation": "两边同减 3，方向不变，a-3<b-3 一定成立。a的平方与 b的平方的大小取决于正负号，c 的正负未知时 ac 与 bc 无法确定，c 还可能为 0。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "a的平方<b的平方"
+      },
+      {
+       "label": "B",
+       "text": "ac<bc"
+      },
+      {
+       "label": "C",
+       "text": "a-3<b-3"
+      },
+      {
+       "label": "D",
+       "text": "a除以c<b除以c"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p503_q6",
+     "topicId": "mbj_p503",
+     "prompt": "已知 a<b，且 a=4，b 是整数，那么 b 的最小值是多少？",
+     "question": "已知 a<b，且 a=4，b 是整数，那么 b 的最小值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "5",
+     "explanation": "由 a<b 且 a=4 得 b>4，b 是整数，所以 b 最小取 5。4 不满足严格大于，不能取。",
+     "subject": "math-bj",
+     "verify": "4+1"
+    },
+    {
+     "id": "mbj_p503_q7",
+     "topicId": "mbj_p503",
+     "prompt": "若 a>b，则下列不等式一定成立的是哪一个？",
+     "question": "若 a>b，则下列不等式一定成立的是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "D",
+     "explanation": "两边同减 2，方向不变，a-2>b-2 一定成立。c 的正负未知时 ac>bc 不成立；平方的大小与正负有关；-a>-b 相当于乘 -1，方向应改变。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "ac>bc"
+      },
+      {
+       "label": "B",
+       "text": "a的平方>b的平方"
+      },
+      {
+       "label": "C",
+       "text": "-a>-b"
+      },
+      {
+       "label": "D",
+       "text": "a-2>b-2"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p503_q8",
+     "topicId": "mbj_p503",
+     "prompt": "不等式两边都乘同一个负数时，为什么必须改变不等号的方向？请结合 2<3 说明理由。",
+     "question": "不等式两边都乘同一个负数时，为什么必须改变不等号的方向？请结合 2<3 说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为乘以负数相当于在数轴上把两个数关于原点对称，原来的大小顺序被颠倒。2<3，两边同乘 -1 得到 -2 与 -3，在数轴上 -3 在 -2 的左边，所以 -2>-3，不等号由小于变成大于。若不改变方向，得出的结论与数轴上的实际位置矛盾。",
+     "explanation": "性质的根源是负数乘法把数轴上的点左右翻转，大小关系随之反向；只要把握住符号翻转这一点，就不容易漏改不等号。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p504",
+   "description": "理解不等式的解与解集的区别，会把解集表示在数轴上，也会根据数轴上的表示写出解集，并能按要求求出解集中的整数解，体会解集表示的是一个取值范围。",
+   "mastery_criteria": [
+    "说出不等式的解与解集的区别",
+    "在数轴上正确表示解集，实心与空心分明",
+    "由解集求整数解或由整数解定字母范围"
+   ],
+   "misconceptions": [
+    "把某一个解当成整个解集",
+    "数轴上该用空心点时用了实心点",
+    "写解集时把端点是否包含弄错"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.07",
+    "quote": "能解数字系数的一元一次不等式，并能在数轴上表示出解集"
+   },
+   "grade": 7,
+   "stage": 4,
+   "questions": [
+    {
+     "id": "mbj_p504_q1",
+     "topicId": "mbj_p504",
+     "prompt": "下列各数中，是不等式 x+1>3 的解的是哪一个？",
+     "question": "下列各数中，是不等式 x+1>3 的解的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "C",
+     "explanation": "把各数代入检验：3+1=4 大于 3，成立；2+1=3 只是等于 3，不满足大于；-1 与 1 代入后都小于 3，不成立。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "-1"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p504_q2",
+     "topicId": "mbj_p504",
+     "prompt": "不等式 x<5 的正整数解共有多少个？",
+     "question": "不等式 x<5 的正整数解共有多少个？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4",
+     "explanation": "小于 5 的正整数是 1、2、3、4，共 4 个。0 不是正整数，5 不满足严格小于，都不能算进去。",
+     "subject": "math-bj",
+     "verify": "5-1"
+    },
+    {
+     "id": "mbj_p504_q3",
+     "topicId": "mbj_p504",
+     "prompt": "在数轴上表示 x≥-1 时，-1 对应的点应画成（　）圆点，请填「实心」或「空心」。",
+     "question": "在数轴上表示 x≥-1 时，-1 对应的点应画成（　）圆点，请填「实心」或「空心」。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "实心",
+     "explanation": "解集中包含 -1，所以端点要画实心圆点表示取到；若解集是 x>-1，则端点 -1 不包含，要画空心圆点。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p504_q4",
+     "topicId": "mbj_p504",
+     "prompt": "不等式 -2<x≤3 的整数解共有几个？",
+     "question": "不等式 -2<x≤3 的整数解共有几个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "D",
+     "explanation": "满足条件的整数是 -1、0、1、2、3。-2 不包含，因为左边是严格小于；3 包含，因为右边有等号。共 5 个。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "4个"
+      },
+      {
+       "label": "B",
+       "text": "6个"
+      },
+      {
+       "label": "C",
+       "text": "7个"
+      },
+      {
+       "label": "D",
+       "text": "5个"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p504_q5",
+     "topicId": "mbj_p504",
+     "prompt": "若关于 x 的不等式 x-2a>0 的解集是 x>4，则 a 的值是多少？",
+     "question": "若关于 x 的不等式 x-2a>0 的解集是 x>4，则 a 的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "2",
+     "explanation": "移项得 x>2a，题目给出的解集是 x>4，两个解集表示同一个范围，所以 2a=4，a=2。",
+     "subject": "math-bj",
+     "verify": "4/2"
+    },
+    {
+     "id": "mbj_p504_q6",
+     "topicId": "mbj_p504",
+     "prompt": "不等式的「解」与「解集」有什么区别？请举例说明。",
+     "question": "不等式的「解」与「解集」有什么区别？请举例说明。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "不等式的解是能使不等式成立的一个具体的值，而解集是能使不等式成立的所有值组成的集合。例如 x+1>3，x=3 是它的一个解，而全部解组成解集 x>2。写答案时通常要写解集，不能只写一个数。",
+     "explanation": "「解」是单个取值，「解集」是全体取值；一元一次不等式一般有无穷多个解，所以必须用解集来表示结果。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p504_q7",
+     "topicId": "mbj_p504",
+     "prompt": "若不等式 2x-a<0 的正整数解恰好是 1、2、3，则 a 的取值范围是哪一个？",
+     "question": "若不等式 2x-a<0 的正整数解恰好是 1、2、3，则 a 的取值范围是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "A",
+     "explanation": "解得 x<a/2。正整数解恰好到 3 为止，说明 3 满足而 4 不满足，即 3<a/2≤4，两边同乘 2 得 6<a≤8。左端不能取等号，否则 3 也会被排除。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "6<a≤8"
+      },
+      {
+       "label": "B",
+       "text": "a≤8"
+      },
+      {
+       "label": "C",
+       "text": "6≤a<8"
+      },
+      {
+       "label": "D",
+       "text": "a>6"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p504_q8",
+     "topicId": "mbj_p504",
+     "prompt": "不等式 3x-1≤8 的所有正整数解的和是多少？",
+     "question": "不等式 3x-1≤8 的所有正整数解的和是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "6",
+     "explanation": "移项得 3x≤9，两边同除以 3 得 x≤3。正整数解是 1、2、3，它们的和是 1+2+3=6。",
+     "subject": "math-bj",
+     "verify": "1+2+3"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p505",
+   "description": "掌握解一元一次不等式的五个步骤：去分母、去括号、移项、合并同类项、系数化为 1，并特别注意系数化为 1 时不等号方向是否改变。",
+   "mastery_criteria": [
+    "按五个步骤解一元一次不等式",
+    "去分母时各项都乘最简公分母",
+    "系数化为 1 时判断是否变号"
+   ],
+   "misconceptions": [
+    "去分母时漏乘不含分母的项",
+    "系数化为 1 时除以负数不改方向",
+    "把解集写成等式 x=3 的形式"
+   ],
+   "std": null,
+   "grade": 7,
+   "stage": 4,
+   "questions": [
+    {
+     "id": "mbj_p505_q1",
+     "topicId": "mbj_p505",
+     "prompt": "下列不等式中，是一元一次不等式的是哪一个？",
+     "question": "下列不等式中，是一元一次不等式的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "一元一次不等式只含一个未知数且次数为 1，两边都是整式。x的平方>1 次数为 2，x分之1≤3 分母含未知数，x+y>2 含两个未知数。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x-1<0"
+      },
+      {
+       "label": "B",
+       "text": "x的平方>1"
+      },
+      {
+       "label": "C",
+       "text": "x分之1≤3"
+      },
+      {
+       "label": "D",
+       "text": "x+y>2"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p505_q2",
+     "topicId": "mbj_p505",
+     "prompt": "解不等式 2x+3>7，x 的最小整数值是多少？",
+     "question": "解不等式 2x+3>7，x 的最小整数值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "3",
+     "explanation": "移项得 2x>4，两边同除以 2 得 x>2。大于 2 的最小整数是 3，2 本身不满足严格大于。",
+     "subject": "math-bj",
+     "verify": "4/2+1"
+    },
+    {
+     "id": "mbj_p505_q3",
+     "topicId": "mbj_p505",
+     "prompt": "不等式 3x-1≤8 的解集是（　），请写出解集。",
+     "question": "不等式 3x-1≤8 的解集是（　），请写出解集。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "x≤3",
+     "explanation": "移项得 3x≤9，两边同除以 3，因为除数是正数，不等号方向不变，得 x≤3。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p505_q4",
+     "topicId": "mbj_p505",
+     "prompt": "解不等式 -3x+1≥10，x 的最大整数值是多少？",
+     "question": "解不等式 -3x+1≥10，x 的最大整数值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "-3",
+     "explanation": "移项得 -3x≥9，两边同除以 -3，除数是负数要变号，得 x≤-3。满足条件的最大整数正好是 -3，因为可以取等号。",
+     "subject": "math-bj",
+     "verify": "-9/3"
+    },
+    {
+     "id": "mbj_p505_q5",
+     "topicId": "mbj_p505",
+     "prompt": "解不等式 (x-1)/2-1<x/3 时，两边同乘 6 去分母，得到哪一个式子？",
+     "question": "解不等式 (x-1)/2-1<x/3 时，两边同乘 6 去分母，得到哪一个式子？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "两边同乘 6，三项都要乘：第一项乘 6 得 3(x-1)，第二项 1 乘 6 得 6，右边乘 6 得 2x。漏乘常数项 1 是最常见的错误。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "3(x-1)-1<2x"
+      },
+      {
+       "label": "B",
+       "text": "3(x-1)-6<2x"
+      },
+      {
+       "label": "C",
+       "text": "2(x-1)-6<3x"
+      },
+      {
+       "label": "D",
+       "text": "3(x-1)-6>2x"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p505_q6",
+     "topicId": "mbj_p505",
+     "prompt": "解一元一次不等式一般要经过哪几个步骤？其中哪一步最容易出错，为什么？",
+     "question": "解一元一次不等式一般要经过哪几个步骤？其中哪一步最容易出错，为什么？",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "步骤是去分母、去括号、移项、合并同类项、系数化为 1。最容易出错的是系数化为 1 和去分母。系数化为 1 时如果两边除以负数，不等号方向必须改变；去分母时最简公分母要乘遍每一项，常数项漏乘会导致整个解集偏移。",
+     "explanation": "这两步都涉及「对每一项同时施加同一运算」，只要漏掉一项或漏改方向，解集就会整体出错，所以解完最好代一个数回原不等式检验。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p505_q7",
+     "topicId": "mbj_p505",
+     "prompt": "若不等式 2x-3≤a 的正整数解恰好是 1、2、3，则整数 a 的最小值是多少？",
+     "question": "若不等式 2x-3≤a 的正整数解恰好是 1、2、3，则整数 a 的最小值是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "3",
+     "explanation": "解得 x≤(a+3)/2。正整数解到 3 为止，说明 3≤(a+3)/2<4，乘 2 得 6≤a+3<8，即 3≤a<5。a 取整数，最小值是 3。",
+     "subject": "math-bj",
+     "verify": "2*3-3"
+    },
+    {
+     "id": "mbj_p505_q8",
+     "topicId": "mbj_p505",
+     "prompt": "关于 x 的不等式 (m-2)x>m-2 的解集是 x<1，则 m 的取值范围是哪一个？",
+     "question": "关于 x 的不等式 (m-2)x>m-2 的解集是 x<1，则 m 的取值范围是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "B",
+     "explanation": "解集由 x>1 变成 x<1，说明两边同除以 m-2 时不等号变了方向，所以 m-2<0，即 m<2。若 m-2>0 则解集应为 x>1。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "m>2"
+      },
+      {
+       "label": "B",
+       "text": "m<2"
+      },
+      {
+       "label": "C",
+       "text": "m=2"
+      },
+      {
+       "label": "D",
+       "text": "m不等于2"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p506",
+   "description": "理解一元一次不等式组的解集是各个不等式解集的公共部分，会用数轴确定解集，并记住同大取大、同小取小、大小小大取中间、大大小小无解的口诀。",
+   "mastery_criteria": [
+    "把组内每个不等式分别求解",
+    "用数轴求出解集的公共部分",
+    "判断不等式组是否有解"
+   ],
+   "misconceptions": [
+    "把两个解集直接合并相连而不取公共部分",
+    "同大取小时误取较小的数",
+    "把无解的情况硬写成 x>3 且 x<1"
+   ],
+   "std": null,
+   "grade": 7,
+   "stage": 4,
+   "questions": [
+    {
+     "id": "mbj_p506_q1",
+     "topicId": "mbj_p506",
+     "prompt": "不等式组 x>2 与 x>5 的解集是哪一个？",
+     "question": "不等式组 x>2 与 x>5 的解集是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "两个条件都要满足，既大于 2 又大于 5，只有大于 5 才同时成立，符合同大取大。取 x>2 会把 3、4 这类不满足第二个不等式的数算进来。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "x>2"
+      },
+      {
+       "label": "B",
+       "text": "x>5"
+      },
+      {
+       "label": "C",
+       "text": "2<x<5"
+      },
+      {
+       "label": "D",
+       "text": "无解"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p506_q2",
+     "topicId": "mbj_p506",
+     "prompt": "不等式组 x≥-1 与 x<3 的整数解共有多少个？",
+     "question": "不等式组 x≥-1 与 x<3 的整数解共有多少个？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4",
+     "explanation": "公共部分是 -1≤x<3，其中的整数是 -1、0、1、2，共 4 个。3 不满足小于 3，不能算进去。",
+     "subject": "math-bj",
+     "verify": "3-(-1)"
+    },
+    {
+     "id": "mbj_p506_q3",
+     "topicId": "mbj_p506",
+     "prompt": "不等式组 x<1 与 x>-3 的解集是（　），请写出解集。",
+     "question": "不等式组 x<1 与 x>-3 的解集是（　），请写出解集。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "-3<x<1",
+     "explanation": "公共部分是大于 -3 且小于 1 的部分，写成 -3<x<1。这种一小一大的情形按「大小小大取中间」处理。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p506_q4",
+     "topicId": "mbj_p506",
+     "prompt": "不等式组 2x-1≥3 与 x-2≤1 的整数解共有多少个？",
+     "question": "不等式组 2x-1≥3 与 x-2≤1 的整数解共有多少个？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "2",
+     "explanation": "第一个解得 x≥2，第二个解得 x≤3，公共部分是 2≤x≤3，整数解是 2 和 3，共 2 个。",
+     "subject": "math-bj",
+     "verify": "3-2+1"
+    },
+    {
+     "id": "mbj_p506_q5",
+     "topicId": "mbj_p506",
+     "prompt": "下列不等式组中，无解的是哪一个？",
+     "question": "下列不等式组中，无解的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "C",
+     "explanation": "x>3 与 x<1 要求一个数既大于 3 又小于 1，任何数都做不到，属于大大小小无解。其余三组都能在数轴上找到公共部分。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "x>3 与 x>1"
+      },
+      {
+       "label": "B",
+       "text": "x<3 与 x>1"
+      },
+      {
+       "label": "C",
+       "text": "x>3 与 x<1"
+      },
+      {
+       "label": "D",
+       "text": "x<3 与 x<1"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p506_q6",
+     "topicId": "mbj_p506",
+     "prompt": "用数轴求不等式组解集的步骤是什么？请结合一个具体例子说明。",
+     "question": "用数轴求不等式组解集的步骤是什么？请结合一个具体例子说明。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "先分别解出每个不等式，再把每个解集画在同一条数轴上：含端点的画实心点，不含的画空心点，然后用向右或向左的箭头表示范围，最后找出几条射线重叠的部分即为解集。例如 x>1 与 x≤4，数轴上重叠部分是 1<x≤4。",
+     "explanation": "把解集画在同一条数轴上，重叠部分一目了然，可以避免只凭口诀取错端点，也能立刻发现无解的情况。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p506_q7",
+     "topicId": "mbj_p506",
+     "prompt": "解不等式组 3x-2<7 与 2x+1≥-3，它的整数解共有多少个？",
+     "question": "解不等式组 3x-2<7 与 2x+1≥-3，它的整数解共有多少个？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "5",
+     "explanation": "第一个解得 x<3，第二个解得 x≥-2，公共部分是 -2≤x<3，整数解是 -2、-1、0、1、2，共 5 个。",
+     "subject": "math-bj",
+     "verify": "3-(-2)"
+    },
+    {
+     "id": "mbj_p506_q8",
+     "topicId": "mbj_p506",
+     "prompt": "「同大取大、同小取小、大小小大取中间、大大小小无解」这四句口诀分别是什么意思？请各举一例。",
+     "question": "「同大取大、同小取小、大小小大取中间、大大小小无解」这四句口诀分别是什么意思？请各举一例。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "同大取大：两个都是大于号时取较大的数，如 x>2 与 x>5 得 x>5；同小取小：两个都是小于号时取较小的数，如 x<2 与 x<5 得 x<2；大小小大取中间：一个大于小数、一个小于大数时取中间，如 x>1 与 x<4 得 1<x<4；大大小小无解：大于大数又小于小数时没有公共部分，如 x>3 与 x<1。",
+     "explanation": "口诀实质是把两个解集在数轴上取交集，记住四种位置关系就能快速判断；画数轴验证是最稳妥的办法。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p507",
+   "description": "认识二元一次方程、二元一次方程组及其解，理解消元思想，会用代入消元法和加减消元法解方程组，并能列方程组解决简单的实际问题。",
+   "mastery_criteria": [
+    "判断一个方程组是不是二元一次方程组",
+    "用代入法或加减法求出方程组的解",
+    "列方程组解决和差倍分等实际问题"
+   ],
+   "misconceptions": [
+    "把含 xy 项的方程当成二元一次方程",
+    "只满足其中一个方程就当作方程组的解",
+    "消元后忘记把求得的未知数回代"
+   ],
+   "std": null,
+   "grade": 7,
+   "stage": 4,
+   "questions": [
+    {
+     "id": "mbj_p507_q1",
+     "topicId": "mbj_p507",
+     "prompt": "下列方程组中，是二元一次方程组的是哪一个？",
+     "question": "下列方程组中，是二元一次方程组的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "二元一次方程组要求每个方程都含两个未知数且次数为 1，并且都是整式方程。含 xy 项的次数是 2，含 x的平方 次数是 2，含 x分之1 不是整式。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "x+y=3 与 xy=2"
+      },
+      {
+       "label": "B",
+       "text": "x+y=3 与 x-y=1"
+      },
+      {
+       "label": "C",
+       "text": "x的平方+y=3 与 x-y=1"
+      },
+      {
+       "label": "D",
+       "text": "x分之1+y=3 与 x-y=1"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p507_q2",
+     "topicId": "mbj_p507",
+     "prompt": "解方程组 x+y=5 与 x-y=1，x 的值是多少？",
+     "question": "解方程组 x+y=5 与 x-y=1，x 的值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "3",
+     "explanation": "两式相加消去 y，得 2x=6，所以 x=3。代回第一式得 y=2，检验 3-2=1 符合第二式。",
+     "subject": "math-bj",
+     "verify": "(5+1)/2"
+    },
+    {
+     "id": "mbj_p507_q3",
+     "topicId": "mbj_p507",
+     "prompt": "二元一次方程 2x+y=7 的正整数解共有几组？",
+     "question": "二元一次方程 2x+y=7 的正整数解共有几组？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "D",
+     "explanation": "由 2x+y=7 得 y=7-2x。x 取 1、2、3 时 y 分别是 5、3、1，都是正整数；x 取 4 时 y=-1 不是正整数。共 3 组。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "2组"
+      },
+      {
+       "label": "B",
+       "text": "4组"
+      },
+      {
+       "label": "C",
+       "text": "5组"
+      },
+      {
+       "label": "D",
+       "text": "3组"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p507_q4",
+     "topicId": "mbj_p507",
+     "prompt": "若 x=2、y=-1 是方程 ax+y=3 的解，则 a 的值是多少？",
+     "question": "若 x=2、y=-1 是方程 ax+y=3 的解，则 a 的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "2",
+     "explanation": "把 x=2、y=-1 代入得 2a-1=3，移项得 2a=4，解得 a=2。代入时要注意 y 是负数，减负一相当于加 1。",
+     "subject": "math-bj",
+     "verify": "(3+1)/2"
+    },
+    {
+     "id": "mbj_p507_q5",
+     "topicId": "mbj_p507",
+     "prompt": "代入消元法和加减消元法有什么共同点？它们各自适合什么形式的方程组？",
+     "question": "代入消元法和加减消元法有什么共同点？它们各自适合什么形式的方程组？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "共同点都是消元：通过消去一个未知数，把二元一次方程组转化为一元一次方程，再回代求出另一个未知数。代入法适合某个未知数的系数是 1 或 -1、容易用一个字母表示另一个的情形；加减法适合同一个未知数的系数相同或互为相反数的情形。",
+     "explanation": "两种方法的目标完全一致，只是消元手段不同。选择哪一种，取决于哪个未知数更容易被消掉，选得合适计算量会小很多。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p508",
+   "description": "理解二元一次方程的定义，知道它的解是一对有序数对，会用含一个未知数的式子表示另一个未知数，会检验一组数是否为方程的解并求出整数解。",
+   "mastery_criteria": [
+    "判断一个方程是不是二元一次方程",
+    "用含 x 的式子表示 y",
+    "检验并求出方程的正整数解"
+   ],
+   "misconceptions": [
+    "认为二元一次方程只有一个解",
+    "把 x 与 y 的值对调后仍当作同一组解",
+    "求整数解时漏掉边界上的 0"
+   ],
+   "std": {
+    "id": "mat-2022:4.TS.01",
+    "quote": "经历对现实问题中量的分析，借助用字母表达的未知数"
+   },
+   "grade": 7,
+   "stage": 4,
+   "questions": [
+    {
+     "id": "mbj_p508_q1",
+     "topicId": "mbj_p508",
+     "prompt": "下列方程中，是二元一次方程的是哪一个？",
+     "question": "下列方程中，是二元一次方程的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "二元一次方程含两个未知数、未知数次数都是 1、两边都是整式。x的平方+y=1 次数为 2，2x+3=0 只有一个未知数，xy=6 中 xy 的次数是 2。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "3x-y=5"
+      },
+      {
+       "label": "B",
+       "text": "x的平方+y=1"
+      },
+      {
+       "label": "C",
+       "text": "2x+3=0"
+      },
+      {
+       "label": "D",
+       "text": "xy=6"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p508_q2",
+     "topicId": "mbj_p508",
+     "prompt": "把方程 x+2y=6 用含 x 的式子表示 y，得 y=（　）。",
+     "question": "把方程 x+2y=6 用含 x 的式子表示 y，得 y=（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "(6-x)/2",
+     "explanation": "先移项得 2y=6-x，再两边同除以 2 得 y=(6-x)/2。也可以写成 3 减去 x 的一半，两种写法等价。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p508_q3",
+     "topicId": "mbj_p508",
+     "prompt": "二元一次方程 x+y=4 的正整数解共有多少组？",
+     "question": "二元一次方程 x+y=4 的正整数解共有多少组？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "3",
+     "explanation": "x 取正整数 1、2、3 时 y 分别是 3、2、1，都是正整数；x 取 4 时 y=0 不是正整数。共 3 组。",
+     "subject": "math-bj",
+     "verify": "4-1"
+    },
+    {
+     "id": "mbj_p508_q4",
+     "topicId": "mbj_p508",
+     "prompt": "下列各组数中，是方程 2x-y=3 的解的是哪一组？",
+     "question": "下列各组数中，是方程 2x-y=3 的解的是哪一组？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "逐组代入左边计算：x=1、y=1 得 1，x=2、y=1 得 3，x=0、y=3 得 -3，x=3、y=2 得 4。只有第二组的结果等于右边 3，所以它是方程的解。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "x=1，y=1"
+      },
+      {
+       "label": "B",
+       "text": "x=2，y=1"
+      },
+      {
+       "label": "C",
+       "text": "x=0，y=3"
+      },
+      {
+       "label": "D",
+       "text": "x=3，y=2"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p508_q5",
+     "topicId": "mbj_p508",
+     "prompt": "若 x=1、y=2 是方程 3x+my=7 的解，则 m 的值是多少？",
+     "question": "若 x=1、y=2 是方程 3x+my=7 的解，则 m 的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "2",
+     "explanation": "代入得 3 加 2m 等于 7，移项得 2m=4，所以 m=2。检验：3 乘 1 加 2 乘 2 等于 7，成立。",
+     "subject": "math-bj",
+     "verify": "(7-3)/2"
+    },
+    {
+     "id": "mbj_p508_q6",
+     "topicId": "mbj_p508",
+     "prompt": "二元一次方程的解与一元一次方程的解有什么不同？请结合 x+y=4 说明。",
+     "question": "二元一次方程的解与一元一次方程的解有什么不同？请结合 x+y=4 说明。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "一元一次方程一般只有一个解，是一个数；二元一次方程含两个未知数，它的解是一对有序数对，通常有无穷多组。例如 x+y=4，x=1、y=3 是一组解，x=2、y=2 又是一组解，把它们写成有序数对时顺序不能颠倒。",
+     "explanation": "两个未知数之间互相制约但只有一个方程，所以取值不唯一；写成有序数对是为了保证一组解的两个数一一对应。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p508_q7",
+     "topicId": "mbj_p508",
+     "prompt": "二元一次方程 2x+3y=12 的非负整数解共有多少组？",
+     "question": "二元一次方程 2x+3y=12 的非负整数解共有多少组？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "3",
+     "explanation": "由 2x+3y=12 得 y=(12-2x)/3＝4-2x/3。x 取 0、3、6 时 y 分别是 4、2、0，都是非负整数；x 取其他值时 y 不是整数或为负。共 3 组。",
+     "subject": "math-bj",
+     "verify": "12/4"
+    },
+    {
+     "id": "mbj_p508_q8",
+     "topicId": "mbj_p508",
+     "prompt": "若 x、y 都是正整数，且 2x+3y=18，则这样的解共有几组？",
+     "question": "若 x、y 都是正整数，且 2x+3y=18，则这样的解共有几组？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "B",
+     "explanation": "由 2x=18-3y 知 y 必须是偶数。y=2 时 x=6，y=4 时 x=3，y=6 时 x=0 不是正整数。所以符合条件的解有 2 组。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "1组"
+      },
+      {
+       "label": "B",
+       "text": "2组"
+      },
+      {
+       "label": "C",
+       "text": "3组"
+      },
+      {
+       "label": "D",
+       "text": "4组"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p509",
+   "description": "理解二元一次方程组的解是两个方程解的公共部分，会用代入检验法判断一组数是否为方程组的解，并能根据已知解反求方程中的字母系数。",
+   "mastery_criteria": [
+    "用代入法检验一组数是否为方程组的解",
+    "由已知解反求字母系数",
+    "区分方程的解与方程组的解"
+   ],
+   "misconceptions": [
+    "只代一个方程就判定是方程组的解",
+    "反求系数时代入后解错一元一次方程",
+    "把方程组无解当成有唯一解"
+   ],
+   "std": null,
+   "grade": 7,
+   "stage": 4,
+   "questions": [
+    {
+     "id": "mbj_p509_q1",
+     "topicId": "mbj_p509",
+     "prompt": "方程组 x+y=5 与 x-y=1 的解是哪一组？",
+     "question": "方程组 x+y=5 与 x-y=1 的解是哪一组？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "把 x=3、y=2 代入：3 加 2 等于 5，3 减 2 等于 1，两个方程同时成立。x=2、y=3 虽然满足第一式，但 2 减 3 不等于 1。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "x=2，y=3"
+      },
+      {
+       "label": "B",
+       "text": "x=3，y=2"
+      },
+      {
+       "label": "C",
+       "text": "x=4，y=1"
+      },
+      {
+       "label": "D",
+       "text": "x=1，y=4"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p509_q2",
+     "topicId": "mbj_p509",
+     "prompt": "方程组 x+y=6 与 x-y=2 中，x 的值是多少？",
+     "question": "方程组 x+y=6 与 x-y=2 中，x 的值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4",
+     "explanation": "两式相加消去 y 得 2x=8，所以 x=4，代回得 y=2。检验 4 加 2 等于 6，4 减 2 等于 2，均成立。",
+     "subject": "math-bj",
+     "verify": "(6+2)/2"
+    },
+    {
+     "id": "mbj_p509_q3",
+     "topicId": "mbj_p509",
+     "prompt": "方程组 y=2x 与 x+y=6 的解中，x 的值是（　）。",
+     "question": "方程组 y=2x 与 x+y=6 的解中，x 的值是（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "2",
+     "explanation": "把 y=2x 代入 x+y=6 得 x+2x=6，即 3x=6，所以 x=2，y=4。检验 2 加 4 等于 6，成立。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p509_q4",
+     "topicId": "mbj_p509",
+     "prompt": "方程组 x+y=3 与 2x-y=0 的解中，x 乘 y 的值是多少？",
+     "question": "方程组 x+y=3 与 2x-y=0 的解中，x 乘 y 的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "2",
+     "explanation": "由第二个方程得 y=2x，代入第一个得 x+2x=3，x=1，于是 y=2。所以 x 乘 y 等于 1 乘 2 等于 2。",
+     "subject": "math-bj",
+     "verify": "1*2"
+    },
+    {
+     "id": "mbj_p509_q5",
+     "topicId": "mbj_p509",
+     "prompt": "关于二元一次方程组的解，下列说法正确的是哪一个？",
+     "question": "关于二元一次方程组的解，下列说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "D",
+     "explanation": "方程组的解必须同时满足组内每一个方程，缺一不可。只满足其中一个方程的数对只是那个方程的解，不是方程组的解。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "只满足第一个方程即可"
+      },
+      {
+       "label": "B",
+       "text": "只满足第二个方程即可"
+      },
+      {
+       "label": "C",
+       "text": "满足其中任意一个方程即可"
+      },
+      {
+       "label": "D",
+       "text": "必须同时满足两个方程"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p509_q6",
+     "topicId": "mbj_p509",
+     "prompt": "怎样检验一组数是不是某个二元一次方程组的解？请写出检验过程。",
+     "question": "怎样检验一组数是不是某个二元一次方程组的解？请写出检验过程。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "把这一组数分别代入方程组中的每一个方程，左右两边分别计算：如果每个方程的左边都等于右边，那么它就是方程组的解；只要有一个方程不成立，就不是。例如检验 x=3、y=2 是否为 x+y=5 与 x-y=1 的解，代入后两式都成立，才能下结论。",
+     "explanation": "方程组的解是公共解，检验必须逐个方程代一遍，只代一个方程会漏掉不满足另一个方程的情况。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p509_q7",
+     "topicId": "mbj_p509",
+     "prompt": "若方程组 x+2y=5 与 3x+ky=1 的解中 x=1，则 k 的值是多少？",
+     "question": "若方程组 x+2y=5 与 3x+ky=1 的解中 x=1，则 k 的值是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "-1",
+     "explanation": "把 x=1 代入第一个方程得 1+2y=5，y=2。再把 x=1、y=2 代入第二个方程得 3+2k=1，解得 2k=-2，k=-1。",
+     "subject": "math-bj",
+     "verify": "(1-3)/2"
+    },
+    {
+     "id": "mbj_p509_q8",
+     "topicId": "mbj_p509",
+     "prompt": "若方程组 2x+y=5 与 x+2y=7 的解为 x、y，则 x-y 的值是多少？",
+     "question": "若方程组 2x+y=5 与 x+2y=7 的解为 x、y，则 x-y 的值是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "A",
+     "explanation": "把两个方程相减：左边是 2x+y 减 x 减 2y 等于 x-y，右边是 5 减 7 等于 -2，所以 x-y=-2。不必先求出 x、y 的具体值。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "-2"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "-1"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p510",
+   "description": "会用代入消元法解二元一次方程组：把一个方程变形为用一个未知数表示另一个未知数，代入另一方程消去一个未知数，解出一元一次方程后再回代求另一个未知数。",
+   "mastery_criteria": [
+    "选择便于变形的方程进行代入",
+    "代入后正确解出一元一次方程",
+    "把求得的值回代求出另一个未知数"
+   ],
+   "misconceptions": [
+    "代入时括号里的每一项没有全部替换",
+    "代入后仍保留两个未知数",
+    "求出 x 后忘记回代求 y"
+   ],
+   "std": {
+    "id": "mat-2022:4.XY.01",
+    "quote": "选择代入消元法或加诚消元法解二元一次方程组"
+   },
+   "grade": 7,
+   "stage": 4,
+   "questions": [
+    {
+     "id": "mbj_p510_q1",
+     "topicId": "mbj_p510",
+     "prompt": "用代入法解方程组 y=2x 与 x+y=9，x 的值是多少？",
+     "question": "用代入法解方程组 y=2x 与 x+y=9，x 的值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "3",
+     "explanation": "把 y=2x 代入第二式得 x+2x=9，即 3x=9，所以 x=3，y=6。检验 3 加 6 等于 9，成立。",
+     "subject": "math-bj",
+     "verify": "9/3"
+    },
+    {
+     "id": "mbj_p510_q2",
+     "topicId": "mbj_p510",
+     "prompt": "用代入法解方程组 x+y=5 与 2x-y=1 时，由第一个方程得 y=5-x 代入第二个方程，整理后得到哪一个式子？",
+     "question": "用代入法解方程组 x+y=5 与 2x-y=1 时，由第一个方程得 y=5-x 代入第二个方程，整理后得到哪一个式子？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "把 y=5-x 代入 2x-y=1 得 2x-(5-x)=1，去括号得 2x-5+x=1，即 3x=6。代入时 5-x 作为一个整体要加括号。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x-(5-x)=1，即 3x=6"
+      },
+      {
+       "label": "B",
+       "text": "2x-(5+x)=1，即 x=6"
+      },
+      {
+       "label": "C",
+       "text": "2x-5-x=1，即 x=6"
+      },
+      {
+       "label": "D",
+       "text": "2x+(5-x)=1，即 x=-4"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p510_q3",
+     "topicId": "mbj_p510",
+     "prompt": "方程组 x=3y 与 x+y=8 的解中，y 的值是（　）。",
+     "question": "方程组 x=3y 与 x+y=8 的解中，y 的值是（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "2",
+     "explanation": "把 x=3y 代入 x+y=8 得 3y+y=8，即 4y=8，所以 y=2，x=6。检验 6 加 2 等于 8，成立。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p510_q4",
+     "topicId": "mbj_p510",
+     "prompt": "方程组 2x+3y=12 与 x=y+1 的解中，x 加 y 的值是多少？",
+     "question": "方程组 2x+3y=12 与 x=y+1 的解中，x 加 y 的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "5",
+     "explanation": "把 x=y+1 代入第一式得 2(y+1)+3y=12，即 5y+2=12，y=2，于是 x=3。x 加 y 等于 5。",
+     "subject": "math-bj",
+     "verify": "3+2"
+    },
+    {
+     "id": "mbj_p510_q5",
+     "topicId": "mbj_p510",
+     "prompt": "用代入法解方程组 3x-2y=5 与 y=x-1 时，下列做法最简便的是哪一个？",
+     "question": "用代入法解方程组 3x-2y=5 与 y=x-1 时，下列做法最简便的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "第二个方程已经写成 y 等于 x 减 1 的形式，直接把 y=x-1 代入第一个方程即可得到只含 x 的一元一次方程，省去再变形的一步。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "由第一个方程得 x=(5+2y)/3 再代入第二个方程"
+      },
+      {
+       "label": "B",
+       "text": "把 y=x-1 直接代入第一个方程"
+      },
+      {
+       "label": "C",
+       "text": "两式相加消去 y"
+      },
+      {
+       "label": "D",
+       "text": "两式相减消去 x"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p510_q6",
+     "topicId": "mbj_p510",
+     "prompt": "用代入消元法解方程组的一般步骤是什么？变形时通常选择哪个方程？",
+     "question": "用代入消元法解方程组的一般步骤是什么？变形时通常选择哪个方程？",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "步骤是：从某个方程中用一个未知数的式子表示另一个未知数，把得到的式子代入另一个方程消去一个未知数，解出剩下的一元一次方程，再回代求出另一个未知数，最后写成有序数对。变形时通常选择系数为 1 或 -1 的方程，因为这样变形后不出现分数，计算更简便。",
+     "explanation": "选择系数为 1 或 -1 的方程变形，可以避免分数运算，是减少计算错误的关键一步。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p510_q7",
+     "topicId": "mbj_p510",
+     "prompt": "方程组 (x+y)/2=3 与 x-y=2 的解中，x 乘 y 的值是多少？",
+     "question": "方程组 (x+y)/2=3 与 x-y=2 的解中，x 乘 y 的值是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "8",
+     "explanation": "由第一个方程两边乘 2 得 x+y=6，与 x-y=2 联立：两式相加得 2x=8，x=4，y=2。所以 x 乘 y 等于 8。",
+     "subject": "math-bj",
+     "verify": "4*2"
+    },
+    {
+     "id": "mbj_p510_q8",
+     "topicId": "mbj_p510",
+     "prompt": "若 m、n 满足 m+n=7 且 m-n=3，则 m 的值是多少？",
+     "question": "若 m、n 满足 m+n=7 且 m-n=3，则 m 的值是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "C",
+     "explanation": "两式相加消去 n，得 2m=10，所以 m=5，n=2。也可以把 m=n+3 代入第一式，得 2n+3=7，n=2，同样得到 m=5。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "7"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p511",
+   "description": "会用加减消元法解二元一次方程组：当同一未知数的系数相同或互为相反数时直接相减或相加，系数不同时先用等式性质把它们化为相同或相反，再消元求解。",
+   "mastery_criteria": [
+    "判断相加减能消去哪个未知数",
+    "系数不同时正确乘以适当的数",
+    "用加减法求出方程组的解"
+   ],
+   "misconceptions": [
+    "两式相减时右边漏减",
+    "系数不同时只给一个方程乘数",
+    "相减时把常数项的符号弄错"
+   ],
+   "std": {
+    "id": "mat-2022:4.XY.01",
+    "quote": "选择代入消元法或加诚消元法解二元一次方程组"
+   },
+   "grade": 7,
+   "stage": 4,
+   "questions": [
+    {
+     "id": "mbj_p511_q1",
+     "topicId": "mbj_p511",
+     "prompt": "方程组 2x+y=7 与 x-y=2 相加后得 3x=9，则 x 的值是多少？",
+     "question": "方程组 2x+y=7 与 x-y=2 相加后得 3x=9，则 x 的值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "3",
+     "explanation": "y 与 -y 相加得 0，两式相加左边是 3x，右边是 7 加 2 等于 9，所以 3x=9，x=3。代回可求得 y=1。",
+     "subject": "math-bj",
+     "verify": "(7+2)/3"
+    },
+    {
+     "id": "mbj_p511_q2",
+     "topicId": "mbj_p511",
+     "prompt": "用加减法解方程组 2x+3y=8 与 2x-y=0 时，最简便的做法是哪一个？",
+     "question": "用加减法解方程组 2x+3y=8 与 2x-y=0 时，最简便的做法是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "两个方程中 x 的系数都是 2，系数相同，把两式相减就能消去 x，得到 4y=8，y=2。若相加只会得到 4x+2y=8，消不掉任何未知数。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "两式相加消去 x"
+      },
+      {
+       "label": "B",
+       "text": "两式相减消去 x"
+      },
+      {
+       "label": "C",
+       "text": "两式相减消去 y"
+      },
+      {
+       "label": "D",
+       "text": "先把第一个方程乘 2"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p511_q3",
+     "topicId": "mbj_p511",
+     "prompt": "方程组 3x+y=10 与 x+y=6 两式相减得 2x=4，则 x 的值是（　）。",
+     "question": "方程组 3x+y=10 与 x+y=6 两式相减得 2x=4，则 x 的值是（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "2",
+     "explanation": "两式相减消去 y，得 2x=4，所以 x=2，代回 x+y=6 得 y=4。检验 3 乘 2 加 4 等于 10，成立。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p511_q4",
+     "topicId": "mbj_p511",
+     "prompt": "解方程组 3x+2y=13 与 3x-2y=5，x 减 y 的值是多少？",
+     "question": "解方程组 3x+2y=13 与 3x-2y=5，x 减 y 的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "1",
+     "explanation": "两式相加得 6x=18，x=3；两式相减得 4y=8，y=2。所以 x 减 y 等于 3 减 2 等于 1。",
+     "subject": "math-bj",
+     "verify": "3-2"
+    },
+    {
+     "id": "mbj_p511_q5",
+     "topicId": "mbj_p511",
+     "prompt": "用加减法解方程组 2x+3y=5 与 3x+2y=7 时，为了使 x 的系数相同，可以怎样做？",
+     "question": "用加减法解方程组 2x+3y=5 与 3x+2y=7 时，为了使 x 的系数相同，可以怎样做？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "A",
+     "explanation": "把第一个方程两边乘 3 得 6x+9y=15，第二个方程两边乘 2 得 6x+4y=14，两式相减即可消去 x。若把两式直接相加或相减，x 的系数分别是 5 和 -1，消不掉。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "第一个方程乘 3，第二个方程乘 2"
+      },
+      {
+       "label": "B",
+       "text": "第一个方程乘 2，第二个方程乘 3"
+      },
+      {
+       "label": "C",
+       "text": "两式直接相加"
+      },
+      {
+       "label": "D",
+       "text": "两式直接相减"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p511_q6",
+     "topicId": "mbj_p511",
+     "prompt": "加减消元法适合什么样的方程组？当同一未知数的系数不同时怎样处理？",
+     "question": "加减消元法适合什么样的方程组？当同一未知数的系数不同时怎样处理？",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "加减消元法适合同一个未知数的系数相同或互为相反数的方程组，系数相同时两式相减，系数互为相反数时两式相加，可以直接消去这个未知数。系数不同时，先找出两个系数的最小公倍数，用等式性质把两个方程分别乘适当的数，使某个未知数的系数相同或相反，再相加减。",
+     "explanation": "关键是把「系数不同」转化为「系数相同或相反」，这一步用到的是等式两边同乘一个数等式仍成立的性质。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p511_q7",
+     "topicId": "mbj_p511",
+     "prompt": "解方程组 4x+3y=25 与 3x+4y=24，x 加 y 的值是多少？",
+     "question": "解方程组 4x+3y=25 与 3x+4y=24，x 加 y 的值是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "7",
+     "explanation": "两式相加得 7x+7y=49，两边同除以 7 得 x+y=7。不必分别求出 x、y 的具体值，整体相加更简便。",
+     "subject": "math-bj",
+     "verify": "49/7"
+    },
+    {
+     "id": "mbj_p511_q8",
+     "topicId": "mbj_p511",
+     "prompt": "若方程组 ax+by=5 与 bx+ay=7 的解是 x=1、y=2，则 a+b 的值是多少？",
+     "question": "若方程组 ax+by=5 与 bx+ay=7 的解是 x=1、y=2，则 a+b 的值是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "B",
+     "explanation": "代入得 a+2b=5 与 b+2a=7，两式相加得 3a+3b=12，两边同除以 3 得 a+b=4。整体相加避免了解二元方程组。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p512",
+   "description": "认识三元一次方程组，理解通过代入或加减先消去一个未知数，把它化为二元一次方程组，再逐步化为一元一次方程求解，体会消元思想的一般性。",
+   "mastery_criteria": [
+    "判断三元一次方程组并说出解的形式",
+    "消去一个未知数化为二元方程组",
+    "由对称的方程组整体求值"
+   ],
+   "misconceptions": [
+    "把三个方程直接相加当作最终答案",
+    "只消去一个未知数就停止计算",
+    "认为三元一次方程只有一个解"
+   ],
+   "std": null,
+   "grade": 7,
+   "stage": 4,
+   "questions": [
+    {
+     "id": "mbj_p512_q1",
+     "topicId": "mbj_p512",
+     "prompt": "下列方程组中，是三元一次方程组的是哪一个？",
+     "question": "下列方程组中，是三元一次方程组的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "三元一次方程组含三个未知数，每个方程中未知数的次数都是 1，并且都是整式方程。含 xy 项或 x的平方 项的次数不是 1，只含两个未知数的不是三元。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "x+y=3 与 x-y=1"
+      },
+      {
+       "label": "B",
+       "text": "xy+z=3 与 x+y=4 与 z=2"
+      },
+      {
+       "label": "C",
+       "text": "x的平方+y+z=3 与 y=4 与 z=2"
+      },
+      {
+       "label": "D",
+       "text": "x+y+z=6 与 x+y=4 与 z=2"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p512_q2",
+     "topicId": "mbj_p512",
+     "prompt": "方程组 x+y+z=6 与 x+y=4 中，z 的值是多少？",
+     "question": "方程组 x+y+z=6 与 x+y=4 中，z 的值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "2",
+     "explanation": "把 x+y=4 整体代入第一个方程得 4+z=6，所以 z=2。这里把 x+y 看成一个整体，是消元思想的具体运用。",
+     "subject": "math-bj",
+     "verify": "6-4"
+    },
+    {
+     "id": "mbj_p512_q3",
+     "topicId": "mbj_p512",
+     "prompt": "在方程 x+y+z=10 中，若 x=1、y=2，则 z 的值是（　）。",
+     "question": "在方程 x+y+z=10 中，若 x=1、y=2，则 z 的值是（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "7",
+     "explanation": "把 x=1、y=2 代入得 1 加 2 加 z 等于 10，即 3+z=10，所以 z=7。含三个未知数的方程需要另外两个未知数的值才能确定第三个。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p512_q4",
+     "topicId": "mbj_p512",
+     "prompt": "已知 x+y=5，y+z=7，x+z=6，则 x+y+z 的值是多少？",
+     "question": "已知 x+y=5，y+z=7，x+z=6，则 x+y+z 的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "9",
+     "explanation": "三个方程相加，左边每个未知数都出现两次，得 2(x+y+z)=5+7+6=18，两边同除以 2 得 x+y+z=9。",
+     "subject": "math-bj",
+     "verify": "(5+7+6)/2"
+    },
+    {
+     "id": "mbj_p512_q5",
+     "topicId": "mbj_p512",
+     "prompt": "解三元一次方程组的基本思路是哪一个？",
+     "question": "解三元一次方程组的基本思路是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "先把三元化为二元，再把二元化为一元，逐层消元是解多元方程组的一般策略。直接由三个方程分别解出三个未知数是不现实的，因为方程之间相互制约。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "直接由一个方程解出三个未知数"
+      },
+      {
+       "label": "B",
+       "text": "先消去一个未知数化为二元方程组，再化为一元方程"
+      },
+      {
+       "label": "C",
+       "text": "把三个方程相加即可得到答案"
+      },
+      {
+       "label": "D",
+       "text": "用数轴表示解集"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p512_q6",
+     "topicId": "mbj_p512",
+     "prompt": "解三元一次方程组时，怎样选择先消去的未知数？请说明理由。",
+     "question": "解三元一次方程组时，怎样选择先消去的未知数？请说明理由。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "通常选择在某个方程中系数为 1 或 -1、或者在某两个方程中系数相同或互为相反数的未知数先消去。这样做变形简单，不必引入分数，得到的二元方程组也更容易求解。选定后要对另外两个方程同样消去这个未知数，保证消元对象一致。",
+     "explanation": "消元顺序要看系数是否便于运算，选对了可以少做乘法；三个方程必须消去同一个未知数，否则得不到二元方程组。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p512_q7",
+     "topicId": "mbj_p512",
+     "prompt": "三个数的和是 12，第二个数比第一个数大 2，第三个数是第一个数的一半，第一个数是多少？",
+     "question": "三个数的和是 12，第二个数比第一个数大 2，第三个数是第一个数的一半，第一个数是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "4",
+     "explanation": "设第一个数为 x，则第二个数是 x+2，第三个数是 x/2。由 x+(x+2)+x/2=12 得 2.5x=10，所以 x=4，三个数依次是 4、6、2，和恰好为 12。",
+     "subject": "math-bj",
+     "verify": "10/2.5"
+    },
+    {
+     "id": "mbj_p512_q8",
+     "topicId": "mbj_p512",
+     "prompt": "若 x+y=6，x+z=8，y+z=10，则 x+y+z 的值是多少？",
+     "question": "若 x+y=6，x+z=8，y+z=10，则 x+y+z 的值是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "C",
+     "explanation": "三个方程相加得 2(x+y+z)=24，所以 x+y+z=12。也可以先求出 z=12-6=6、x=12-10=2、y=12-8=4，结果一致。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "10"
+      },
+      {
+       "label": "B",
+       "text": "14"
+      },
+      {
+       "label": "C",
+       "text": "12"
+      },
+      {
+       "label": "D",
+       "text": "24"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p513",
+   "description": "会从实际问题中找出两个相等关系，设两个未知数列出二元一次方程组，解出后检验结果是否符合实际意义，再写出答语，体会方程组是刻画现实数量关系的模型。",
+   "mastery_criteria": [
+    "从实际问题中找出两个相等关系",
+    "设两个未知数并列出方程组",
+    "检验解是否符合实际意义"
+   ],
+   "misconceptions": [
+    "只找到一个相等关系就列方程",
+    "设元后单位不统一导致数据对不上",
+    "求出负数解不作取舍"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.03",
+    "quote": "能根据现实情境理解方程的意义，能针对具体问题列出方程"
+   },
+   "grade": 7,
+   "stage": 4,
+   "questions": [
+    {
+     "id": "mbj_p513_q1",
+     "topicId": "mbj_p513",
+     "prompt": "甲、乙两数的和是 20，差是 4，其中较大的数是多少？",
+     "question": "甲、乙两数的和是 20，差是 4，其中较大的数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "12",
+     "explanation": "设较大的数为 x、较小的数为 y，则 x+y=20，x-y=4。两式相加得 2x=24，x=12，y=8。也可以直接用和加差的一半来算。",
+     "subject": "math-bj",
+     "verify": "(20+4)/2"
+    },
+    {
+     "id": "mbj_p513_q2",
+     "topicId": "mbj_p513",
+     "prompt": "某班共 40 人，男生比女生少 4 人。设男生 x 人、女生 y 人，所列方程组是哪一个？",
+     "question": "某班共 40 人，男生比女生少 4 人。设男生 x 人、女生 y 人，所列方程组是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "总人数给出 x+y=40；男生比女生少 4 人，说明女生人数减男生人数等于 4，即 y-x=4。两个关系各列一个方程。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "x+y=40 与 y-x=4"
+      },
+      {
+       "label": "B",
+       "text": "x+y=40 与 x-y=4"
+      },
+      {
+       "label": "C",
+       "text": "x-y=40 与 x+y=4"
+      },
+      {
+       "label": "D",
+       "text": "x+y=4 与 y-x=40"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p513_q3",
+     "topicId": "mbj_p513",
+     "prompt": "鸡兔同笼，共有 8 个头、22 条腿，其中兔有（　）只。",
+     "question": "鸡兔同笼，共有 8 个头、22 条腿，其中兔有（　）只。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "3",
+     "explanation": "设鸡 x 只、兔 y 只，由 x+y=8 与 2x+4y=22 解得 y=3，x=5。检验 5 只鸡 10 条腿，3 只兔 12 条腿，共 22 条腿。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p513_q4",
+     "topicId": "mbj_p513",
+     "prompt": "笔记本每本 6 元，钢笔每支 9 元，买的笔记本比钢笔多 4 件，共花 84 元，笔记本买了几件？",
+     "question": "笔记本每本 6 元，钢笔每支 9 元，买的笔记本比钢笔多 4 件，共花 84 元，笔记本买了几件？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "8",
+     "explanation": "设钢笔 y 支、笔记本 x 本，则 x=y+4，6x+9y=84。代入得 6(y+4)+9y=84，即 15y+24=84，y=4，于是 x=8。检验 8 乘 6 加 4 乘 9 等于 84。",
+     "subject": "math-bj",
+     "verify": "12-4"
+    },
+    {
+     "id": "mbj_p513_q5",
+     "topicId": "mbj_p513",
+     "prompt": "甲、乙两人从相距 30 千米的两地同时出发相向而行，2 小时后相遇。设甲每小时行 x 千米、乙每小时行 y 千米，可列方程是哪一个？",
+     "question": "甲、乙两人从相距 30 千米的两地同时出发相向而行，2 小时后相遇。设甲每小时行 x 千米、乙每小时行 y 千米，可列方程是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "A",
+     "explanation": "相向而行时两人合起来走完全程，2 小时合走 2 乘 (x+y) 千米，等于 30 千米，即 2x+2y=30。写成 x+y=30 会丢掉时间这个条件。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x+2y=30"
+      },
+      {
+       "label": "B",
+       "text": "2x-2y=30"
+      },
+      {
+       "label": "C",
+       "text": "x+y=30"
+      },
+      {
+       "label": "D",
+       "text": "2(x-y)=30"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p513_q6",
+     "topicId": "mbj_p513",
+     "prompt": "列二元一次方程组解应用题一般分哪几步？检验时要注意什么？",
+     "question": "列二元一次方程组解应用题一般分哪几步？检验时要注意什么？",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "步骤是：读懂题意找出两个相等关系，设两个未知数并用字母表示相关量，按相等关系列出方程组，解方程组，最后写答语。检验时既要代回方程组看是否成立，也要看结果是否符合实际，例如人数必须是正整数，长度、价格不能为负数。",
+     "explanation": "两个相等关系是列出方程组的前提，少一个就列不出方程组；而实际意义的检验往往能发现数据理解错误。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p513_q7",
+     "topicId": "mbj_p513",
+     "prompt": "一个两位数，十位数字与个位数字之和是 9，把两个数字对调后所得的新数比原数大 27，原数是多少？",
+     "question": "一个两位数，十位数字与个位数字之和是 9，把两个数字对调后所得的新数比原数大 27，原数是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "36",
+     "explanation": "设十位数字为 a、个位数字为 b，则 a+b=9，新数减原数等于 9(b-a)=27，所以 b-a=3。联立得 a=3、b=6，原数是 36，新数是 63，相差 27。",
+     "subject": "math-bj",
+     "verify": "10*3+6"
+    },
+    {
+     "id": "mbj_p513_q8",
+     "topicId": "mbj_p513",
+     "prompt": "把一些书分给同学，若每人分 3 本则多 8 本，若每人分 5 本则少 6 本。同学有多少人？",
+     "question": "把一些书分给同学，若每人分 3 本则多 8 本，若每人分 5 本则少 6 本。同学有多少人？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "C",
+     "explanation": "设同学 x 人、书 y 本，则 y=3x+8 且 y=5x-6。两式相等得 3x+8=5x-6，即 2x=14，x=7，书有 29 本。检验每人 5 本需 35 本，正好少 6 本。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "7"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p514",
+   "description": "本单元学习整式的加减、幂的运算、整式的乘法与除法以及乘法公式，理解每一步运算的依据，能按法则熟练进行整式的加、减、乘、除运算。",
+   "mastery_criteria": [
+    "说出幂的运算性质并进行计算",
+    "按法则进行整式的乘除运算",
+    "用乘法公式简化计算"
+   ],
+   "misconceptions": [
+    "把同底数幂相乘的指数相加记成相乘",
+    "多项式乘法时漏乘某些项",
+    "把 (a+b) 的平方写成 a 的平方加 b 的平方"
+   ],
+   "std": null,
+   "grade": 7,
+   "stage": 4,
+   "questions": [
+    {
+     "id": "mbj_p514_q1",
+     "topicId": "mbj_p514",
+     "prompt": "下列运算正确的是哪一个？",
+     "question": "下列运算正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "同底数幂相乘，底数不变、指数相加，所以 a的平方乘a的立方等于a的五次方。合并同类项只适用于同类项，a的平方与 a的立方不是同类项，不能相加成 a的五次方；同底数幂相除指数应相减。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "a的平方乘a的立方等于a的六次方"
+      },
+      {
+       "label": "B",
+       "text": "a的平方乘a的立方等于a的五次方"
+      },
+      {
+       "label": "C",
+       "text": "a的平方加a的立方等于a的五次方"
+      },
+      {
+       "label": "D",
+       "text": "a的六次方除以a的平方等于a的三次方"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p514_q2",
+     "topicId": "mbj_p514",
+     "prompt": "当 x=2 时，2x+3x 的值是多少？",
+     "question": "当 x=2 时，2x+3x 的值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "10",
+     "explanation": "2x 与 3x 是同类项，合并得 5x。把 x=2 代入得 5 乘 2 等于 10。先合并再代值比分别代入更简便。",
+     "subject": "math-bj",
+     "verify": "5*2"
+    },
+    {
+     "id": "mbj_p514_q3",
+     "topicId": "mbj_p514",
+     "prompt": "(x+2)(x-3) 展开后的结果是哪一个？",
+     "question": "(x+2)(x-3) 展开后的结果是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "A",
+     "explanation": "用多项式乘法法则逐项相乘再合并：x 乘 x 得 x的平方，x 乘 -3 得 -3x，2 乘 x 得 2x，2 乘 -3 得 -6，合并一次项得 -x，结果是 x的平方减 x 减 6。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "x的平方-x-6"
+      },
+      {
+       "label": "B",
+       "text": "x的平方+x-6"
+      },
+      {
+       "label": "C",
+       "text": "x的平方-6"
+      },
+      {
+       "label": "D",
+       "text": "x的平方-x+6"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p514_q4",
+     "topicId": "mbj_p514",
+     "prompt": "当 x=2 时，x的平方乘x的立方的值是多少？",
+     "question": "当 x=2 时，x的平方乘x的立方的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "32",
+     "explanation": "同底数幂相乘，指数相加，x的平方乘x的立方等于x的五次方。把 x=2 代入得 2 的 5 次方等于 32。",
+     "subject": "math-bj",
+     "verify": "2**5"
+    },
+    {
+     "id": "mbj_p514_q5",
+     "topicId": "mbj_p514",
+     "prompt": "整式的加减与整式的乘法在运算依据上有什么不同？请各举一例说明。",
+     "question": "整式的加减与整式的乘法在运算依据上有什么不同？请各举一例说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "整式的加减依据是合并同类项和去括号法则，本质是同类项的系数相加减，字母部分保持不变，例如 2x+3x 得 5x。整式的乘法依据是乘法分配律和幂的运算性质，每个项都要与另一个多项式的每一项相乘再合并，例如 (x+2)(x-3) 得 x的平方减 x 减 6。",
+     "explanation": "加减只在同类项之间合并，乘法则要逐项相乘，两者的对象和依据都不同，混淆会导致漏项或错并。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p515",
+   "description": "理解同类项、合并同类项和去括号法则，能熟练进行整式的加减运算，并会先化简再代值求整式的值，避免直接代入带来的繁琐计算与符号错误。",
+   "mastery_criteria": [
+    "识别同类项并合并",
+    "按去括号法则去掉括号",
+    "先化简再代值求整式的值"
+   ],
+   "misconceptions": [
+    "把字母相同但指数不同的项当成同类项",
+    "括号前是负号时只改第一项的符号",
+    "合并同类项时把指数也相加"
+   ],
+   "std": null,
+   "grade": 7,
+   "stage": 4,
+   "questions": [
+    {
+     "id": "mbj_p515_q1",
+     "topicId": "mbj_p515",
+     "prompt": "合并同类项后，3x+5x 化简为 8x，当 x=2 时它的值是多少？",
+     "question": "合并同类项后，3x+5x 化简为 8x，当 x=2 时它的值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "16",
+     "explanation": "3x 与 5x 是同类项，系数相加得 8x。把 x=2 代入得 8 乘 2 等于 16。合并同类项时字母和指数都不变，只加系数。",
+     "subject": "math-bj",
+     "verify": "8*2"
+    },
+    {
+     "id": "mbj_p515_q2",
+     "topicId": "mbj_p515",
+     "prompt": "去括号 a-(b-c) 的结果是哪一个？",
+     "question": "去括号 a-(b-c) 的结果是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "括号前是负号，去括号时括号里每一项都要变号：b 变成 -b，-c 变成 +c，所以结果是 a-b+c。只给第一项变号是常见错误。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "a-b-c"
+      },
+      {
+       "label": "B",
+       "text": "a-b+c"
+      },
+      {
+       "label": "C",
+       "text": "a+b-c"
+      },
+      {
+       "label": "D",
+       "text": "a+b+c"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p515_q3",
+     "topicId": "mbj_p515",
+     "prompt": "合并同类项：2a-3a=（　）。",
+     "question": "合并同类项：2a-3a=（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "-a",
+     "explanation": "2a 与 -3a 是同类项，系数 2 与 -3 相加得 -1，所以结果是 -a。系数为 1 或 -1 时通常省略不写。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p515_q4",
+     "topicId": "mbj_p515",
+     "prompt": "化简 3(x-2)-2(x+1)，当 x=10 时它的值是多少？",
+     "question": "化简 3(x-2)-2(x+1)，当 x=10 时它的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "2",
+     "explanation": "去括号得 3x-6-2x-2，合并同类项得 x-8。把 x=10 代入得 2。注意第二个括号前是负号，括号内两项都要变号。",
+     "subject": "math-bj",
+     "verify": "10-8"
+    },
+    {
+     "id": "mbj_p515_q5",
+     "topicId": "mbj_p515",
+     "prompt": "下列各组中，是同类项的是哪一组？",
+     "question": "下列各组中，是同类项的是哪一组？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "A",
+     "explanation": "同类项要求所含字母相同，并且相同字母的指数也相同。2x的平方y 与 -3yx的平方 只是系数和字母顺序不同，字母与指数完全一致，是同类项；2xy的平方 与它指数不同，3ab 与 3a 字母不同，x的平方 与 2x 指数不同。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x的平方y 与 -3yx的平方"
+      },
+      {
+       "label": "B",
+       "text": "2x的平方y 与 2xy的平方"
+      },
+      {
+       "label": "C",
+       "text": "3ab 与 3a"
+      },
+      {
+       "label": "D",
+       "text": "x的平方 与 2x"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p515_q6",
+     "topicId": "mbj_p515",
+     "prompt": "去括号时，如果括号前是负号，应该怎样处理？请举一个例子说明。",
+     "question": "去括号时，如果括号前是负号，应该怎样处理？请举一个例子说明。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "括号前是负号时，把括号和它前面的负号去掉，括号里每一项都要改变符号。例如 a-(b-c) 去括号后是 a-b+c，其中 -c 变成 +c。如果括号前有系数，先用分配律把系数乘进括号里的每一项，再按符号法则去括号。",
+     "explanation": "负号相当于把括号内每一项都乘 -1，所以不能只改第一项的符号，否则后面的项会整体出错。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p515_q7",
+     "topicId": "mbj_p515",
+     "prompt": "已知 A=3x-1，B=2-5x，当 x=1 时 A-B 的值是多少？",
+     "question": "已知 A=3x-1，B=2-5x，当 x=1 时 A-B 的值是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "5",
+     "explanation": "A-B=(3x-1)-(2-5x)=3x-1-2+5x=8x-3。把 x=1 代入得 8-3=5。也可以先算出 A=2、B=-3，再相减得 5。",
+     "subject": "math-bj",
+     "verify": "8*1-3"
+    },
+    {
+     "id": "mbj_p515_q8",
+     "topicId": "mbj_p515",
+     "prompt": "若多项式 x的平方+ax-2 与 2x的平方-3x+b 的和中不含 x 的一次项，则 a 的值是多少？",
+     "question": "若多项式 x的平方+ax-2 与 2x的平方-3x+b 的和中不含 x 的一次项，则 a 的值是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "A",
+     "explanation": "两式相加得 3x的平方+(a-3)x+(b-2)。不含一次项，说明一次项系数为 0，即 a-3=0，所以 a=3。常数项 b-2 与一次项无关。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "-3"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "-2"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p516",
+   "description": "掌握同底数幂的乘法、幂的乘方、积的乘方、同底数幂的除法以及零指数幂和负整数指数幂的意义与性质，能运用这些性质进行相关计算与化简。",
+   "mastery_criteria": [
+    "叙述幂的四条运算性质",
+    "进行幂的乘方与积的乘方运算",
+    "计算零指数幂与负整数指数幂"
+   ],
+   "misconceptions": [
+    "把幂的乘方与同底数幂相乘混淆",
+    "计算积的乘方时只给一个因式乘方",
+    "认为 3 的 0 次方等于 0"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.17",
+    "quote": "了解整数指数需的意义和基本性质"
+   },
+   "grade": 7,
+   "stage": 4,
+   "questions": [
+    {
+     "id": "mbj_p516_q1",
+     "topicId": "mbj_p516",
+     "prompt": "2 的 3 次方乘 2 的 2 次方的结果是多少？",
+     "question": "2 的 3 次方乘 2 的 2 次方的结果是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "32",
+     "explanation": "同底数幂相乘，底数不变、指数相加，得 2 的 5 次方。2 的 5 次方等于 2 乘 2 乘 2 乘 2 乘 2，等于 32。",
+     "subject": "math-bj",
+     "verify": "2**5"
+    },
+    {
+     "id": "mbj_p516_q2",
+     "topicId": "mbj_p516",
+     "prompt": "下列计算中，正确的是哪一个？",
+     "question": "下列计算中，正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "同底数幂相乘指数相加，a的3次方乘a的4次方等于a的7次方。把指数相乘是幂的乘方的法则，用错位置；加法不能把指数相加；幂的乘方指数应相乘而不是相加。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "a的3次方乘a的4次方等于a的12次方"
+      },
+      {
+       "label": "B",
+       "text": "a的3次方加a的4次方等于a的7次方"
+      },
+      {
+       "label": "C",
+       "text": "a的3次方的4次方等于a的7次方"
+      },
+      {
+       "label": "D",
+       "text": "a的3次方乘a的4次方等于a的7次方"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p516_q3",
+     "topicId": "mbj_p516",
+     "prompt": "a 的 5 次方除以 a 的 2 次方等于（　）。",
+     "question": "a 的 5 次方除以 a 的 2 次方等于（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "a的3次方",
+     "explanation": "同底数幂相除，底数不变、指数相减，5 减 2 得 3，所以结果是 a 的 3 次方。这里要求 a 不等于 0。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p516_q4",
+     "topicId": "mbj_p516",
+     "prompt": "2 的 3 次方的 2 次方的结果是多少？",
+     "question": "2 的 3 次方的 2 次方的结果是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "64",
+     "explanation": "幂的乘方，底数不变、指数相乘，3 乘 2 得 6，所以结果是 2 的 6 次方，等于 64。不要把指数相加得 2 的 5 次方。",
+     "subject": "math-bj",
+     "verify": "2**6"
+    },
+    {
+     "id": "mbj_p516_q5",
+     "topicId": "mbj_p516",
+     "prompt": "3 的 0 次方加 2 的 -2 次方的结果是多少？",
+     "question": "3 的 0 次方加 2 的 -2 次方的结果是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "1.25",
+     "explanation": "任何不等于 0 的数的 0 次方都等于 1；2 的 -2 次方等于 2 的 2 次方的倒数，即四分之一。所以结果是 1 加 0.25 等于 1.25。",
+     "subject": "math-bj",
+     "verify": "1+2**-2"
+    },
+    {
+     "id": "mbj_p516_q6",
+     "topicId": "mbj_p516",
+     "prompt": "(-a) 的 3 次方与 -a 的 3 次方的关系是什么？",
+     "question": "(-a) 的 3 次方与 -a 的 3 次方的关系是什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "(-a) 的 3 次方表示三个 -a 相乘，负因数有奇数个，结果为负，等于 -a 的 3 次方。若指数是偶数，两者才互为相反数的关系不成立，因为负负得正。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "互为相反数"
+      },
+      {
+       "label": "B",
+       "text": "相等"
+      },
+      {
+       "label": "C",
+       "text": "互为倒数"
+      },
+      {
+       "label": "D",
+       "text": "无法比较"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p516_q7",
+     "topicId": "mbj_p516",
+     "prompt": "若 2 的 x 次方等于 8，2 的 y 次方等于 4，则 2 的 (x+y) 次方的值是多少？",
+     "question": "若 2 的 x 次方等于 8，2 的 y 次方等于 4，则 2 的 (x+y) 次方的值是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "32",
+     "explanation": "同底数幂相乘指数相加，2 的 (x+y) 次方等于 2 的 x 次方乘 2 的 y 次方，等于 8 乘 4 等于 32。也可以先得 x=3、y=2，再算 2 的 5 次方。",
+     "subject": "math-bj",
+     "verify": "8*4"
+    },
+    {
+     "id": "mbj_p516_q8",
+     "topicId": "mbj_p516",
+     "prompt": "为什么同底数幂相乘时指数相加？请结合 2 的 3 次方乘 2 的 2 次方说明理由。",
+     "question": "为什么同底数幂相乘时指数相加？请结合 2 的 3 次方乘 2 的 2 次方说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "同底数幂相乘就是把相同底数的因式连乘。2 的 3 次方是三个 2 相乘，2 的 2 次方是两个 2 相乘，乘在一起共有五个 2 相乘，即 2 的 5 次方，指数 3 加 2 等于 5。所以同底数幂相乘时底数不变、指数相加，而不是指数相乘。",
+     "explanation": "法则来自乘方的意义，把幂还原成连乘形式数一数因数个数，就能看出指数是相加而不是相乘。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p517",
+   "description": "掌握单项式乘单项式、单项式乘多项式、多项式乘多项式的法则，能按法则进行整式的乘法运算，并会用幂的运算性质处理系数与字母部分。",
+   "mastery_criteria": [
+    "按法则进行单项式与单项式相乘",
+    "用分配律计算单项式乘多项式",
+    "逐项相乘计算多项式乘多项式"
+   ],
+   "misconceptions": [
+    "多项式相乘时漏乘部分项",
+    "单项式相乘时把系数相加而不是相乘",
+    "合并同类项时把项数算错"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.18",
+    "quote": "能进行简单的整式乘法运算"
+   },
+   "grade": 7,
+   "stage": 4,
+   "questions": [
+    {
+     "id": "mbj_p517_q1",
+     "topicId": "mbj_p517",
+     "prompt": "当 x=2 时，3x 乘 2x 的值是多少？",
+     "question": "当 x=2 时，3x 乘 2x 的值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "24",
+     "explanation": "单项式乘单项式，系数相乘得 6，同底数幂相乘得 x的平方，所以积是 6x的平方。把 x=2 代入得 6 乘 4 等于 24。",
+     "subject": "math-bj",
+     "verify": "6*2**2"
+    },
+    {
+     "id": "mbj_p517_q2",
+     "topicId": "mbj_p517",
+     "prompt": "计算 2a 乘 3a 的结果是哪一个？",
+     "question": "计算 2a 乘 3a 的结果是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "系数 2 与 3 相乘得 6，a 与 a 相乘得 a 的平方，所以结果是 6a 的平方。把系数相加得 5a 的平方是常见错误，那是合并同类项的做法。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "5a的平方"
+      },
+      {
+       "label": "B",
+       "text": "6a的平方"
+      },
+      {
+       "label": "C",
+       "text": "6a"
+      },
+      {
+       "label": "D",
+       "text": "5a"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p517_q3",
+     "topicId": "mbj_p517",
+     "prompt": "2a(3a-1) 展开后的结果是（　）。",
+     "question": "2a(3a-1) 展开后的结果是（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "6a的平方-2a",
+     "explanation": "用分配律把 2a 分别乘括号里的每一项：2a 乘 3a 得 6a 的平方，2a 乘 -1 得 -2a，所以结果是 6a 的平方减 2a。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p517_q4",
+     "topicId": "mbj_p517",
+     "prompt": "当 x=1 时，(x+2)(x+3) 的值是多少？",
+     "question": "当 x=1 时，(x+2)(x+3) 的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "12",
+     "explanation": "逐项相乘得 x的平方 加 3x 加 2x 加 6，合并得 x的平方 加 5x 加 6。把 x=1 代入得 1 加 5 加 6 等于 12，也可以直接算 3 乘 4。",
+     "subject": "math-bj",
+     "verify": "1+5+6"
+    },
+    {
+     "id": "mbj_p517_q5",
+     "topicId": "mbj_p517",
+     "prompt": "(2x-1)(x+3) 展开后的结果是哪一个？",
+     "question": "(2x-1)(x+3) 展开后的结果是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "A",
+     "explanation": "逐项相乘：2x 乘 x 得 2x的平方，2x 乘 3 得 6x，-1 乘 x 得 -x，-1 乘 3 得 -3，合并一次项得 5x，结果是 2x的平方 加 5x 减 3。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x的平方+5x-3"
+      },
+      {
+       "label": "B",
+       "text": "2x的平方-5x-3"
+      },
+      {
+       "label": "C",
+       "text": "2x的平方+5x+3"
+      },
+      {
+       "label": "D",
+       "text": "2x的平方+x-3"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p517_q6",
+     "topicId": "mbj_p517",
+     "prompt": "多项式乘多项式的法则是什么？计算时最容易漏掉哪一类项？",
+     "question": "多项式乘多项式的法则是什么？计算时最容易漏掉哪一类项？",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "用一个多项式的每一项分别乘另一个多项式的每一项，再把所得的积相加。计算时最容易漏项，尤其是只乘了部分项，或者两个常数项相乘得到的常数项被漏掉；另外符号也容易出错，负项相乘要按符号法则确定正负。算完后应检查项数是否为两个多项式项数的乘积。",
+     "explanation": "按顺序逐项相乘并检查总项数，是防止漏项最有效的办法，乘积的项数在合并前应等于两式项数之积。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p517_q7",
+     "topicId": "mbj_p517",
+     "prompt": "若 (x+a)(x-2)=x的平方+bx-6 对任意 x 成立，则 a 加 b 的值是多少？",
+     "question": "若 (x+a)(x-2)=x的平方+bx-6 对任意 x 成立，则 a 加 b 的值是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "4",
+     "explanation": "左边展开得 x的平方 加 (a-2)x 减 2a，与右边比较：-2a=-6 得 a=3；a-2=b 得 b=1。所以 a 加 b 等于 4。",
+     "subject": "math-bj",
+     "verify": "3+1"
+    },
+    {
+     "id": "mbj_p517_q8",
+     "topicId": "mbj_p517",
+     "prompt": "已知 x+y=5，xy=6，则 x的平方+y的平方 的值是多少？",
+     "question": "已知 x+y=5，xy=6，则 x的平方+y的平方 的值是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "D",
+     "explanation": "把 x+y 平方得 x的平方 加 2xy 加 y的平方，所以 x的平方 加 y的平方 等于 (x+y) 的平方 减 2xy，等于 25 减 12 等于 13。不必求出 x、y 的具体值。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "11"
+      },
+      {
+       "label": "B",
+       "text": "19"
+      },
+      {
+       "label": "C",
+       "text": "25"
+      },
+      {
+       "label": "D",
+       "text": "13"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p518",
+   "description": "掌握平方差公式与完全平方公式，了解它们的几何背景，能正用、逆用公式简化运算，并会用公式求相关代数式的值，体会公式在简便计算中的作用。",
+   "mastery_criteria": [
+    "说出平方差公式与完全平方公式",
+    "用公式简化数值计算",
+    "逆用公式求代数式的值"
+   ],
+   "misconceptions": [
+    "把完全平方写成两项平方之和",
+    "完全平方公式中间项漏掉 2 倍",
+    "逆用公式时符号判断错误"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.19",
+    "quote": "了解公式的几何背景，能利用公式进行简单的计算和推理"
+   },
+   "grade": 7,
+   "stage": 4,
+   "questions": [
+    {
+     "id": "mbj_p518_q1",
+     "topicId": "mbj_p518",
+     "prompt": "当 x=2 时，(x+3) 的平方的值是多少？",
+     "question": "当 x=2 时，(x+3) 的平方的值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "25",
+     "explanation": "把 x=2 代入括号得 5，5 的平方等于 25。也可以用完全平方公式展开成 x的平方 加 6x 加 9，代入后得 4 加 12 加 9 等于 25。",
+     "subject": "math-bj",
+     "verify": "(2+3)**2"
+    },
+    {
+     "id": "mbj_p518_q2",
+     "topicId": "mbj_p518",
+     "prompt": "平方差公式的表达式是下面哪一个？",
+     "question": "平方差公式的表达式是下面哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "平方差公式是两个数的和乘这两个数的差，等于这两个数的平方差，即 (a+b)(a-b)=a的平方-b的平方。把结果写成平方和或漏掉中间项，都是把平方差与完全平方混淆了。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "(a+b)(a-b)=a的平方+b的平方"
+      },
+      {
+       "label": "B",
+       "text": "(a+b)(a-b)=a的平方-b的平方"
+      },
+      {
+       "label": "C",
+       "text": "(a+b)的平方=a的平方+b的平方"
+      },
+      {
+       "label": "D",
+       "text": "(a-b)的平方=a的平方-b的平方"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p518_q3",
+     "topicId": "mbj_p518",
+     "prompt": "(x+1)(x-1)=（　）。",
+     "question": "(x+1)(x-1)=（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "x的平方-1",
+     "explanation": "这是平方差公式的形式，两个数的和乘这两个数的差，结果等于 x 的平方减 1 的平方，即 x的平方 减 1。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p518_q4",
+     "topicId": "mbj_p518",
+     "prompt": "利用平方差公式计算 99 乘 101 的结果是多少？",
+     "question": "利用平方差公式计算 99 乘 101 的结果是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "9999",
+     "explanation": "把 99 写成 100 减 1，101 写成 100 加 1，则积等于 100 的平方减 1 的平方，即 10000 减 1 等于 9999。",
+     "subject": "math-bj",
+     "verify": "99*101"
+    },
+    {
+     "id": "mbj_p518_q5",
+     "topicId": "mbj_p518",
+     "prompt": "若 x 减去 x 分之 1 等于 3，则 x 的平方加 x 的平方分之 1 的值是多少？",
+     "question": "若 x 减去 x 分之 1 等于 3，则 x 的平方加 x 的平方分之 1 的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "11",
+     "explanation": "把 x 减 x 分之 1 平方，得 x 的平方 减 2 加 x 的平方分之 1 等于 9，所以 x 的平方 加 x 的平方分之 1 等于 9 加 2 等于 11。中间项是减去 2 倍乘积，乘积正好为 1。",
+     "subject": "math-bj",
+     "verify": "3**2+2"
+    },
+    {
+     "id": "mbj_p518_q6",
+     "topicId": "mbj_p518",
+     "prompt": "(2x-3) 的平方展开后的结果是哪一个？",
+     "question": "(2x-3) 的平方展开后的结果是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "A",
+     "explanation": "完全平方公式展开为 4x的平方 减 2 乘 2x 乘 3 加 9，中间项是 -12x，结果是 4x的平方 减 12x 加 9。漏掉 2 倍或把中间项符号弄错是最常见的错误。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "4x的平方-12x+9"
+      },
+      {
+       "label": "B",
+       "text": "4x的平方+12x+9"
+      },
+      {
+       "label": "C",
+       "text": "4x的平方-9"
+      },
+      {
+       "label": "D",
+       "text": "4x的平方-6x+9"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p518_q7",
+     "topicId": "mbj_p518",
+     "prompt": "若 a+b=7，ab=10，则 a的平方+b的平方 的值是多少？",
+     "question": "若 a+b=7，ab=10，则 a的平方+b的平方 的值是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "29",
+     "explanation": "由 (a+b) 的平方 等于 a的平方 加 2ab 加 b的平方，得 a的平方 加 b的平方 等于 49 减 2 乘 10 等于 29。",
+     "subject": "math-bj",
+     "verify": "7**2-2*10"
+    },
+    {
+     "id": "mbj_p518_q8",
+     "topicId": "mbj_p518",
+     "prompt": "请用图形面积说明平方差公式的几何意义，并指出图中两部分面积的关系。",
+     "question": "请用图形面积说明平方差公式的几何意义，并指出图中两部分面积的关系。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "画一个边长为 a 的大正方形，在其中剪去一个边长为 b 的小正方形，剩下图形的面积是 a 的平方减 b 的平方。把剩下的图形沿一条线剪开拼成一个长为 a+b、宽为 a-b 的长方形，面积是 (a+b)(a-b)。两种算法算的是同一块图形，所以 (a+b)(a-b)=a的平方减b的平方。",
+     "explanation": "拼图前后面积不变，是公式成立的直观依据；这也说明代数公式背后有具体的图形含义。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p519",
+   "description": "掌握同底数幂的除法、单项式除以单项式、多项式除以单项式的法则，理解除法与乘法的互逆关系，会用乘法检验除法的结果，并注意除式不能为零。",
+   "mastery_criteria": [
+    "按法则计算单项式除以单项式",
+    "逐项相除计算多项式除以单项式",
+    "用乘法检验除法结果"
+   ],
+   "misconceptions": [
+    "多项式除以单项式时只除第一项",
+    "同底数幂相除时指数相加",
+    "忽略除式不能为零的条件"
+   ],
+   "std": null,
+   "grade": 7,
+   "stage": 4,
+   "questions": [
+    {
+     "id": "mbj_p519_q1",
+     "topicId": "mbj_p519",
+     "prompt": "当 x=2 时，6x 的 3 次方除以 2x 的值是多少？",
+     "question": "当 x=2 时，6x 的 3 次方除以 2x 的值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "12",
+     "explanation": "单项式相除：系数 6 除以 2 得 3，x 的 3 次方除以 x 得 x 的平方，所以商是 3x的平方。把 x=2 代入得 3 乘 4 等于 12。",
+     "subject": "math-bj",
+     "verify": "3*2**2"
+    },
+    {
+     "id": "mbj_p519_q2",
+     "topicId": "mbj_p519",
+     "prompt": "计算 a 的 6 次方除以 a 的 2 次方的结果是哪一个？",
+     "question": "计算 a 的 6 次方除以 a 的 2 次方的结果是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "同底数幂相除，底数不变、指数相减，6 减 2 得 4，结果是 a 的 4 次方。把指数相加得 a 的 8 次方是乘法法则，用错了运算。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "a的3次方"
+      },
+      {
+       "label": "B",
+       "text": "a的8次方"
+      },
+      {
+       "label": "C",
+       "text": "a的12次方"
+      },
+      {
+       "label": "D",
+       "text": "a的4次方"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p519_q3",
+     "topicId": "mbj_p519",
+     "prompt": "8a 的平方除以 2a 的结果是（　）。",
+     "question": "8a 的平方除以 2a 的结果是（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "4a",
+     "explanation": "系数 8 除以 2 得 4，a 的平方除以 a 得 a，所以商是 4a。可以用乘法检验：4a 乘 2a 等于 8a 的平方。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p519_q4",
+     "topicId": "mbj_p519",
+     "prompt": "化简 (12x 的 3 次方 y 减 6x 的平方 y 的平方) 除以 3xy，当 x=2、y=1 时它的值是多少？",
+     "question": "化简 (12x 的 3 次方 y 减 6x 的平方 y 的平方) 除以 3xy，当 x=2、y=1 时它的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "12",
+     "explanation": "多项式除以单项式要逐项相除：12x的3次方y 除以 3xy 得 4x的平方，-6x的平方y的平方 除以 3xy 得 -2xy，所以商是 4x的平方 减 2xy。代入 x=2、y=1 得 16 减 4 等于 12。",
+     "subject": "math-bj",
+     "verify": "4*2**2-2*2*1"
+    },
+    {
+     "id": "mbj_p519_q5",
+     "topicId": "mbj_p519",
+     "prompt": "多项式除以单项式时，正确的做法是哪一个？",
+     "question": "多项式除以单项式时，正确的做法是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "多项式除以单项式，先把多项式的每一项分别除以这个单项式，再把所得的商相加，依据是除法对加法的分配律。只除第一项会漏掉其余各项。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "只把第一项除以单项式"
+      },
+      {
+       "label": "B",
+       "text": "把多项式的每一项分别除以单项式，再把商相加"
+      },
+      {
+       "label": "C",
+       "text": "把单项式除以多项式的每一项"
+      },
+      {
+       "label": "D",
+       "text": "先把多项式因式分解再相除"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p519_q6",
+     "topicId": "mbj_p519",
+     "prompt": "怎样检验整式除法的结果是否正确？请结合一个具体算式说明。",
+     "question": "怎样检验整式除法的结果是否正确？请结合一个具体算式说明。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "用商乘除式，看积是否等于被除式。例如 (12x的3次方y) 除以 3xy 得 4x的平方，再用 4x的平方乘 3xy，得 12x的3次方y，与被除式相同，说明结果正确。如果积少了一项，说明多项式除以单项式时漏除了某一项。",
+     "explanation": "除法与乘法互逆，用乘法回代检验既简单又能发现漏项或系数算错的问题。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p519_q7",
+     "topicId": "mbj_p519",
+     "prompt": "当 x=4 时，(x 的平方加 3x) 除以 x 的值是多少？",
+     "question": "当 x=4 时，(x 的平方加 3x) 除以 x 的值是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "7",
+     "explanation": "逐项相除得 x 加 3。把 x=4 代入得 7。也可以先算被除式 16 加 12 等于 28，再除以 4 得 7，两种做法结果一致。",
+     "subject": "math-bj",
+     "verify": "4+3"
+    },
+    {
+     "id": "mbj_p519_q8",
+     "topicId": "mbj_p519",
+     "prompt": "若一个整式乘 3x 得 9x 的 3 次方减 6x 的平方，则这个整式是哪一个？",
+     "question": "若一个整式乘 3x 得 9x 的 3 次方减 6x 的平方，则这个整式是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "A",
+     "explanation": "用积除以 3x：9x的3次方 除以 3x 得 3x的平方，-6x的平方 除以 3x 得 -2x，所以这个整式是 3x的平方 减 2x。检验：(3x的平方-2x) 乘 3x 等于 9x的3次方 减 6x的平方。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "3x的平方-2x"
+      },
+      {
+       "label": "B",
+       "text": "3x的平方+2x"
+      },
+      {
+       "label": "C",
+       "text": "3x的平方-6x"
+      },
+      {
+       "label": "D",
+       "text": "3x-2"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p520",
+   "description": "了解定义、命题、定理、推论的意义，会区分命题的条件和结论，能判断简单命题的真假并说出理由，初步体会证明的必要性和反例的作用。",
+   "mastery_criteria": [
+    "判断一个语句是不是命题",
+    "指出命题的条件和结论",
+    "举反例说明命题是假命题"
+   ],
+   "misconceptions": [
+    "把疑问句、作图语句当成命题",
+    "交换条件与结论时忽略命题真假会改变",
+    "认为举一个正面例子就能证明命题为真"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.15",
+    "quote": "通过具体实例，了解定义、命题、定理、推论的意义"
+   },
+   "grade": 7,
+   "stage": 4,
+   "questions": [
+    {
+     "id": "mbj_p520_q1",
+     "topicId": "mbj_p520",
+     "prompt": "下列语句中，是命题的是哪一个？",
+     "question": "下列语句中，是命题的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "命题是判断一件事情的语句，必须有明确的真假。「对顶角相等」对事情作出了判断；作图语句是要求，疑问句是提问，x 大于 3 含未知数、真假不确定，都不算命题。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "对顶角相等"
+      },
+      {
+       "label": "B",
+       "text": "作直线 AB 的垂线"
+      },
+      {
+       "label": "C",
+       "text": "你完成作业了吗"
+      },
+      {
+       "label": "D",
+       "text": "x 大于 3"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p520_q2",
+     "topicId": "mbj_p520",
+     "prompt": "命题「两直线平行，同位角相等」的条件是（　）。",
+     "question": "命题「两直线平行，同位角相等」的条件是（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "两直线平行",
+     "explanation": "命题常写成「如果……那么……」的形式，如果后面是条件，那么后面是结论。这里的条件是两条直线平行，结论是同位角相等。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p520_q3",
+     "topicId": "mbj_p520",
+     "prompt": "命题「若 a=b，则 a 的平方等于 b 的平方」的逆命题是哪一个？",
+     "question": "命题「若 a=b，则 a 的平方等于 b 的平方」的逆命题是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "A",
+     "explanation": "把原命题的条件和结论交换就得到逆命题：条件是 a 的平方等于 b 的平方，结论是 a=b。这个逆命题是假命题，例如 a=2、b=-2 时平方相等但 a 不等于 b。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "若 a 的平方等于 b 的平方，则 a=b"
+      },
+      {
+       "label": "B",
+       "text": "若 a 不等于 b，则 a 的平方不等于 b 的平方"
+      },
+      {
+       "label": "C",
+       "text": "若 a=b，则 a 的平方不等于 b 的平方"
+      },
+      {
+       "label": "D",
+       "text": "若 a 的平方不等于 b 的平方，则 a 不等于 b"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p520_q4",
+     "topicId": "mbj_p520",
+     "prompt": "定义、命题、定理、推论之间有什么区别和联系？请简要说明。",
+     "question": "定义、命题、定理、推论之间有什么区别和联系？请简要说明。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "定义是对名称和术语含义的规定，本身不是命题；命题是判断一件事情的语句，有真假之分；定理是经过证明为真的命题，可以作为推理的依据；推论是由定理直接推出的真命题。它们的联系是：定理和推论都是真命题，推理时又要依据定义明确概念的含义。",
+     "explanation": "四者层次不同：定义规定含义，命题判断真假，定理与推论则必须是经过证明为真的命题。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p520_q5",
+     "topicId": "mbj_p520",
+     "prompt": "判断命题「相等的角是对顶角」的真假，并说明理由（可举反例）。",
+     "question": "判断命题「相等的角是对顶角」的真假，并说明理由（可举反例）。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "这是假命题。两个角相等，只说明它们的大小相同，并不一定由两条直线相交形成。例如等腰三角形的两个底角相等，但它们不是对顶角。对顶角的定义要求两个角有公共顶点，并且两边互为反向延长线，所以相等的角不一定是对顶角。",
+     "explanation": "判断一个命题是假命题，只要举出一个满足条件但不满足结论的例子，这种例子叫做反例，它足以推翻整个命题。",
+     "subject": "math-bj"
+    }
+   ]
+  }
+ ]
+}

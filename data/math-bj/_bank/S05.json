@@ -1,0 +1,2968 @@
+{
+ "shard": "S05",
+ "subject": "math-bj",
+ "book": "一下",
+ "grade": 1,
+ "points": [
+  {
+   "topicId": "mbj_p076",
+   "description": "在整理书包、分餐具等真实情境中，先确定分类标准，再按同一标准把同一批物品分完并数出每类各有多少，能用简单图示或表格记录结果，体会标准不同分法也不同。",
+   "mastery_criteria": [
+    "说出自己分类时用的一条标准",
+    "按给定标准把同一批物品分完并数出每类个数",
+    "用图示或表格记录分类结果"
+   ],
+   "misconceptions": [
+    "同一堆物品按两种标准分，把两次结果相加当成一类",
+    "分到一半换了标准，导致有的物品被重复或漏掉"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.14",
+    "quote": "会对物体、图形或数据进行分类，初步了解分类与分类标准的关系，形成初步的数据意识"
+   },
+   "questions": [
+    {
+     "id": "mbj_p076_q1",
+     "topicId": "mbj_p076",
+     "prompt": "把一堆扣子先按颜色分成三堆，再按大小分成两堆，两次分出的堆数不一样。下面说法正确的是哪一句？",
+     "question": "把一堆扣子先按颜色分成三堆，再按大小分成两堆，两次分出的堆数不一样。下面说法正确的是哪一句？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "按颜色分是看颜色这一个特征，按大小分是看大小这一个特征，标准换了，分出的堆数和每堆的成员都会变，所以两次结果不同是正常的。",
+     "options": [
+      {
+       "label": "A",
+       "text": "分类标准不同，分出的结果就可能不同"
+      },
+      {
+       "label": "B",
+       "text": "分类标准不同，分出的结果一定相同"
+      },
+      {
+       "label": "C",
+       "text": "第二次分错了，因为扣子只能按颜色分"
+      },
+      {
+       "label": "D",
+       "text": "必须先把颜色和大小合起来当一条标准"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p076_q2",
+     "topicId": "mbj_p076",
+     "prompt": "桌上有一堆图形：红色三角形3个、蓝色三角形2个、红色正方形4个。按颜色分类，红色的图形一共有几个？",
+     "question": "桌上有一堆图形：红色三角形3个、蓝色三角形2个、红色正方形4个。按颜色分类，红色的图形一共有几个？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "按颜色分只看颜色，不管形状，所以红色三角形3个和红色正方形4个要合在一起，3+4=7，蓝色的2个不算在这一类里。",
+     "answer": "7",
+     "verify": "3+4"
+    },
+    {
+     "id": "mbj_p076_q3",
+     "topicId": "mbj_p076",
+     "prompt": "小朋友把12块积木按形状分成两类，其中长方体7块，正方体有多少块？",
+     "question": "小朋友把12块积木按形状分成两类，其中长方体7块，正方体有多少块？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "12块积木按形状分成了两类，两类合起来是12块。已知长方体7块，正方体就是12-7=5块，用总数减去已知的一类。",
+     "answer": "5"
+    },
+    {
+     "id": "mbj_p076_q4",
+     "topicId": "mbj_p076",
+     "prompt": "分类时，下面哪一种做法是不对的？",
+     "question": "分类时，下面哪一种做法是不对的？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "一次分类只能用一条标准，分完就结束了。中途换标准会把同一次分类的结果搅乱，两批结果相加得到的类数也没有意义，所以这种做法的错在标准不统一。",
+     "options": [
+      {
+       "label": "A",
+       "text": "先想好按什么标准分，再动手一堆一堆分"
+      },
+      {
+       "label": "B",
+       "text": "按颜色分好以后，又把每堆按形状拆开，最后把两批结果加起来说一共几类"
+      },
+      {
+       "label": "C",
+       "text": "把同一批物品全部分完，一个也不剩下"
+      },
+      {
+       "label": "D",
+       "text": "分完以后数一数每类各有几个，并记下来"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p076_q5",
+     "topicId": "mbj_p076",
+     "prompt": "把15个杯子按有没有把儿分类，有把儿的9个，没有把儿的应该有几个？",
+     "question": "把15个杯子按有没有把儿分类，有把儿的9个，没有把儿的应该有几个？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "15个杯子按一个标准分成两类，两类合起来正好是15个。有把儿的9个是其中一类，另一类就是15-9=6个，两类个数相加应回到15。",
+     "answer": "6",
+     "verify": "15-9"
+    },
+    {
+     "id": "mbj_p076_q6",
+     "topicId": "mbj_p076",
+     "prompt": "要把全班同学的文具分成几类摆放在柜子里，请你说一说你会先做什么、再做什么，分类标准怎么定。",
+     "question": "要把全班同学的文具分成几类摆放在柜子里，请你说一说你会先做什么、再做什么，分类标准怎么定。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "分类要先看特征再定标准，标准定了就要一直用到底，最后还要数出每类个数，这样摆放和取用才方便。",
+     "answer": "先看一看这些文具都有哪些不同，比如种类、颜色、大小；再从中选一条最清楚的当标准，例如按种类分成笔、本子、尺子；然后按这条标准把每件文具放进对应的那一类；最后数一数每类各有多少，贴上标签。标准定好后不能中途改变。"
+    },
+    {
+     "id": "mbj_p076_q7",
+     "topicId": "mbj_p076",
+     "prompt": "同样的12名同学，按男生女生分是7人和5人，按戴眼镜和不戴眼镜分是3人和9人。下面说法正确的是？",
+     "question": "同样的12名同学，按男生女生分是7人和5人，按戴眼镜和不戴眼镜分是3人和9人。下面说法正确的是？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "两次数的是同一批12人，7+5=12、3+9=12都没有数错。分类标准不同，分出的类就不同，两种结果都成立，不能把两种分法的类数相加。",
+     "options": [
+      {
+       "label": "A",
+       "text": "两次人数对不上，说明一定有一次数错了"
+      },
+      {
+       "label": "B",
+       "text": "只能按男生女生分，别的标准不能用"
+      },
+      {
+       "label": "C",
+       "text": "两种分法都对，因为分类的标准不一样"
+      },
+      {
+       "label": "D",
+       "text": "应该把两种分法的类数加起来，一共分成4类"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p076_q8",
+     "topicId": "mbj_p076",
+     "prompt": "盒子里有红、黄、蓝三种颜色的珠子共20颗，其中红色8颗，黄色7颗。蓝色珠子有几颗？",
+     "question": "盒子里有红、黄、蓝三种颜色的珠子共20颗，其中红色8颗，黄色7颗。蓝色珠子有几颗？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "按颜色分成三类，三类合起来是20颗。先去掉红的8颗，20-8=12；再去掉黄的7颗，12-7=5，剩下的就是蓝色珠子。",
+     "answer": "5",
+     "verify": "20-8-7"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p077",
+   "description": "在购物、借书等情境中学习口算100以内两位数加一位数、加整十数和相应的减法，理解相同数位上的数才能相加减，能正确口算不进位、进位、不退位、退位的题目。",
+   "mastery_criteria": [
+    "口算两位数加一位数与加整十数",
+    "口算两位数减一位数与减整十数",
+    "说出某一步为什么这样算"
+   ],
+   "misconceptions": [
+    "把45+3算成75，把3加到了十位上",
+    "把45+30算成48，把30当成3来加"
+   ],
+   "std": {
+    "id": "mat-2022:1.XY.03",
+    "quote": "能口算简单的百以内数的加减法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p077_q1",
+     "topicId": "mbj_p077",
+     "prompt": "下面哪一道题的得数比50大？",
+     "question": "下面哪一道题的得数比50大？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "34+20=54，比50大；45+4=49，62-20=42，38+10=48，这三道都不到50。算完要拿得数和50比一比。",
+     "options": [
+      {
+       "label": "A",
+       "text": "45+4"
+      },
+      {
+       "label": "B",
+       "text": "62-20"
+      },
+      {
+       "label": "C",
+       "text": "38+10"
+      },
+      {
+       "label": "D",
+       "text": "34+20"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p077_q2",
+     "topicId": "mbj_p077",
+     "prompt": "口算 56+30，得数是多少？",
+     "question": "口算 56+30，得数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "30是3个十，56里有5个十和6个一。5个十加3个十是8个十，个位6不变，所以56+30=86。",
+     "answer": "86",
+     "verify": "56+30"
+    },
+    {
+     "id": "mbj_p077_q3",
+     "topicId": "mbj_p077",
+     "prompt": "计算 45+3 时，为什么3要和个位上的5相加，而不和十位上的4相加？",
+     "question": "计算 45+3 时，为什么3要和个位上的5相加，而不和十位上的4相加？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "加法的前提是相同数位上的数相加：3个一只能和几个一相加。个位上的5就是5个一，所以3加在个位上；十位上的4是4个十，不能和3个一相加。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3表示3个一，只有和个位上的5（5个一）才能相加"
+      },
+      {
+       "label": "B",
+       "text": "因为3比4小，只能加在小的那一位上"
+      },
+      {
+       "label": "C",
+       "text": "因为习惯上从右边开始写，加哪一位都一样"
+      },
+      {
+       "label": "D",
+       "text": "因为3写在个位后面，所以随便加"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p077_q4",
+     "topicId": "mbj_p077",
+     "prompt": "请你说一说，口算 67-40 时你是怎么想的，每一步算的是什么。",
+     "question": "请你说一说，口算 67-40 时你是怎么想的，每一步算的是什么。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "减整十数就是把几十从十位里减掉，个位上的数不参与计算，所以个位照抄、十位相减。",
+     "answer": "67里有6个十和7个一，40是4个十。先从6个十里减去4个十，剩下2个十；个位上的7不变。所以67-40=27。减整十数只减十位，个位不动。"
+    },
+    {
+     "id": "mbj_p077_q5",
+     "topicId": "mbj_p077",
+     "prompt": "小明有48张卡片，送给同学20张，又买来5张，现在有多少张？",
+     "question": "小明有48张卡片，送给同学20张，又买来5张，现在有多少张？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "先算送出后剩下多少：48-20=28；再加上又买来的5张：28+5=33。两步要按事情发生的顺序算，先减后加。",
+     "answer": "33",
+     "verify": "48-20+5"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p078",
+   "description": "学习两位数加一位数（不进位）的口算，把一位数看成几个一，与两位数的个位相加，十位上的数保持不变，能借助小棒或计数器说明自己的算法。",
+   "mastery_criteria": [
+    "口算两位数加一位数（不进位）",
+    "说出十位不变的理由",
+    "用小棒摆出相加的过程"
+   ],
+   "misconceptions": [
+    "36+2算成56，把2加到了十位上",
+    "认为得数的十位也要加1"
+   ],
+   "std": {
+    "id": "mat-2022:1.TS.04",
+    "quote": "数的运算教学应让学生感知数的加诚运算要在相同数位上进行"
+   },
+   "questions": [
+    {
+     "id": "mbj_p078_q1",
+     "topicId": "mbj_p078",
+     "prompt": "口算 23+5，得数是多少？",
+     "question": "口算 23+5，得数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "23是2个十和3个一，5是5个一。个位3+5=8，不满十，十位上的2不变，所以得28。",
+     "answer": "28",
+     "verify": "23+5"
+    },
+    {
+     "id": "mbj_p078_q2",
+     "topicId": "mbj_p078",
+     "prompt": "计算 42+6 时，得数十位上的数是几？",
+     "question": "计算 42+6 时，得数十位上的数是几？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "42加6只加个位：2+6=8，没有满十，不用进位，十位上的4保持不变，得数是48。",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p078_q3",
+     "topicId": "mbj_p078",
+     "prompt": "口算 51+7，得数是多少？",
+     "question": "口算 51+7，得数是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "51是5个十和1个一，加上7个一，个位1+7=8，没有满十，十位仍是5，所以得58。",
+     "answer": "58"
+    },
+    {
+     "id": "mbj_p078_q4",
+     "topicId": "mbj_p078",
+     "prompt": "下面这几种算法中，哪一种算法是错的？",
+     "question": "下面这几种算法中，哪一种算法是错的？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "2是2个一，只能和个位上的6相加。把它加到十位上就变成加2个十，得数会多出18，所以36+2=56是错的，正确得数是38。",
+     "options": [
+      {
+       "label": "A",
+       "text": "36+2=38，先算6+2=8，十位3不变"
+      },
+      {
+       "label": "B",
+       "text": "24+3=27，个位4+3=7"
+      },
+      {
+       "label": "C",
+       "text": "36+2=56，把2加在了十位上的3上"
+      },
+      {
+       "label": "D",
+       "text": "45+4=49，十位保持4不变"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p078_q5",
+     "topicId": "mbj_p078",
+     "prompt": "一盒彩笔有35支，又放进4支，现在一共有多少支？",
+     "question": "一盒彩笔有35支，又放进4支，现在一共有多少支？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "求现在一共多少支，把原来的35支和放进来的4支合起来，用加法：35+4=39，个位5+4=9没有满十。",
+     "answer": "39",
+     "verify": "35+4"
+    },
+    {
+     "id": "mbj_p078_q6",
+     "topicId": "mbj_p078",
+     "prompt": "请用摆小棒的方法说一说，32+6 是怎样算出38的。",
+     "question": "请用摆小棒的方法说一说，32+6 是怎样算出38的。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "用小棒摆一摆就能看清：只有单根和单根合在一起，整捆的十没有变化，所以十位不变。",
+     "answer": "先摆3捆小棒和2根单根，表示32；再添上6根单根。单根的2根加6根是8根，还不到10根，不用捆成一捆；3捆没有动。所以十位还是3，个位是8，得38。"
+    },
+    {
+     "id": "mbj_p078_q7",
+     "topicId": "mbj_p078",
+     "prompt": "小红第一次跳绳28下，第二次比第一次多跳6下。两次一共跳了多少下？",
+     "question": "小红第一次跳绳28下，第二次比第一次多跳6下。两次一共跳了多少下？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "先求第二次：28+6=34下；再求两次一共：28+34=62下。题目问的是两次的总数，不能只算第二次。",
+     "answer": "62",
+     "verify": "28+6+28"
+    },
+    {
+     "id": "mbj_p078_q8",
+     "topicId": "mbj_p078",
+     "prompt": "计算两位数加一位数时，下面哪一句话是正确的？",
+     "question": "计算两位数加一位数时，下面哪一句话是正确的？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "一位数是几个一，只和个位相加；个位相加不满十就不用进位，十位自然不变。只有加整十数才动十位。",
+     "options": [
+      {
+       "label": "A",
+       "text": "两位数加一位数，十位和个位都要加"
+      },
+      {
+       "label": "B",
+       "text": "两位数加一位数，得数一定比原来大10"
+      },
+      {
+       "label": "C",
+       "text": "加一位数就是先加10再减9"
+      },
+      {
+       "label": "D",
+       "text": "两位数加一位数，不进位时十位上的数不变"
+      }
+     ],
+     "answer": "D"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p079",
+   "description": "学习两位数加整十数的口算，把整十数看成几个十，与两位数的十位相加，个位上的数保持不变，能结合小棒捆扎说明算理，并解决简单的实际问题。",
+   "mastery_criteria": [
+    "口算两位数加整十数",
+    "说出个位不变的理由",
+    "解决简单的求和问题"
+   ],
+   "misconceptions": [
+    "45+30算成48，把30当成3来加",
+    "62+30算成92，个位也跟着加了3"
+   ],
+   "std": {
+    "id": "mat-2022:1.TS.01",
+    "quote": "可以用对应的方法，借助小方块、圆片和小棒等表示相等的数量"
+   },
+   "questions": [
+    {
+     "id": "mbj_p079_q1",
+     "topicId": "mbj_p079",
+     "prompt": "口算 34+20，得数是多少？",
+     "question": "口算 34+20，得数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "20是2个十，34里有3个十和4个一。3个十加2个十是5个十，个位4不变，所以34+20=54。",
+     "answer": "54",
+     "verify": "34+20"
+    },
+    {
+     "id": "mbj_p079_q2",
+     "topicId": "mbj_p079",
+     "prompt": "45+30 的得数是多少？",
+     "question": "45+30 的得数是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "30是3个十，与45十位上的4个十相加得7个十，个位上的5不变，所以得75。得48是把30当成3来加了。",
+     "options": [
+      {
+       "label": "A",
+       "text": "75"
+      },
+      {
+       "label": "B",
+       "text": "48"
+      },
+      {
+       "label": "C",
+       "text": "72"
+      },
+      {
+       "label": "D",
+       "text": "85"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p079_q3",
+     "topicId": "mbj_p079",
+     "prompt": "口算 26+40，得数是多少？",
+     "question": "口算 26+40，得数是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "40是4个十，26十位上的2个十加4个十得6个十，个位上的6不变，所以26+40=66。",
+     "answer": "66"
+    },
+    {
+     "id": "mbj_p079_q4",
+     "topicId": "mbj_p079",
+     "prompt": "计算 53+40 时，下面哪种说法是对的？",
+     "question": "计算 53+40 时，下面哪种说法是对的？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "40是4个十，只能和十位上的5个十相加。个位上的3是3个一，没有同类相加，保持不变，所以得93。",
+     "options": [
+      {
+       "label": "A",
+       "text": "4和3相加得7，十位上的5不变"
+      },
+      {
+       "label": "B",
+       "text": "4个十和5个十相加得9个十，个位上的3不变"
+      },
+      {
+       "label": "C",
+       "text": "把40看成4，53+4=57"
+      },
+      {
+       "label": "D",
+       "text": "十位和个位都要加上40"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p079_q5",
+     "topicId": "mbj_p079",
+     "prompt": "图书角原来有42本书，又借来30本，现在一共有多少本？",
+     "question": "图书角原来有42本书，又借来30本，现在一共有多少本？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "求现在一共多少本，把42本和30本合起来：十位4+3=7，个位2不变，42+30=72本。",
+     "answer": "72",
+     "verify": "42+30"
+    },
+    {
+     "id": "mbj_p079_q6",
+     "topicId": "mbj_p079",
+     "prompt": "为什么 62+30 的个位还是2？请说明理由。",
+     "question": "为什么 62+30 的个位还是2？请说明理由。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "加整十数只改变十位，个位上的几个一原封不动，所以个位照抄。",
+     "answer": "62是6个十和2个一，30是3个十。相加时是6个十加3个十得9个十，也就是90；个位上的2个一没有和任何数相加，所以个位仍然是2，得92。"
+    },
+    {
+     "id": "mbj_p079_q7",
+     "topicId": "mbj_p079",
+     "prompt": "下面哪一组两个算式的结果相等？",
+     "question": "下面哪一组两个算式的结果相等？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "24+30=54，30+24=54，交换两个加数的位置和不变。24+3=27，25+30=55，24+40=64，24+13=37，都不相等。",
+     "options": [
+      {
+       "label": "A",
+       "text": "24+30 和 24+3"
+      },
+      {
+       "label": "B",
+       "text": "25+30 和 24+40"
+      },
+      {
+       "label": "C",
+       "text": "24+30 和 30+24"
+      },
+      {
+       "label": "D",
+       "text": "24+30 和 24+13"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p079_q8",
+     "topicId": "mbj_p079",
+     "prompt": "一年级有35人，二年级比一年级多20人。两个年级一共有多少人？",
+     "question": "一年级有35人，二年级比一年级多20人。两个年级一共有多少人？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "先求二年级人数：35+20=55人；再求两个年级总数：35+55=90人。问的是一共，最后一步要把两个年级相加。",
+     "answer": "90",
+     "verify": "35+20+35"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p080",
+   "description": "学习两位数加一位数的进位加法，个位相加满十时向十位进1，能借助小棒凑十说明计算过程，正确口算出得数，并解决生活中的简单求和问题。",
+   "mastery_criteria": [
+    "口算两位数加一位数的进位加法",
+    "说出个位满十向十位进1",
+    "用凑十法说明计算过程"
+   ],
+   "misconceptions": [
+    "27+5算成22，只用7-5",
+    "个位满十后忘记把进位的1加到十位"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.06",
+    "quote": "在解决生活情境问题的过程中，体会数和运算的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p080_q1",
+     "topicId": "mbj_p080",
+     "prompt": "口算 27+5，得数是多少？",
+     "question": "口算 27+5，得数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "个位7+5=12，满十了，个位写2，向十位进1；十位2加进位的1得3。所以27+5=32。",
+     "answer": "32",
+     "verify": "27+5"
+    },
+    {
+     "id": "mbj_p080_q2",
+     "topicId": "mbj_p080",
+     "prompt": "口算 38+4，得数是多少？",
+     "question": "口算 38+4，得数是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "个位8+4=12，个位写2，向十位进1；十位3加1得4。所以38+4=42，注意进位的1不能丢。",
+     "answer": "42"
+    },
+    {
+     "id": "mbj_p080_q3",
+     "topicId": "mbj_p080",
+     "prompt": "46+7 的得数十位上的数是几？",
+     "question": "46+7 的得数十位上的数是几？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "个位6+7=13，满十向十位进1；十位原本是4，加上进位的1得5，所以得数的十位是5，得53。",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "7"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p080_q4",
+     "topicId": "mbj_p080",
+     "prompt": "下面哪种做法能正确算出 35+8？",
+     "question": "下面哪种做法能正确算出 35+8？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "把8拆成5和3，35先凑成整十40，再加3得43，这是凑十法。8-5=3只用减法，把加法做成了减法，是错的。",
+     "options": [
+      {
+       "label": "A",
+       "text": "先算35+5=40，再算40+3=43"
+      },
+      {
+       "label": "B",
+       "text": "35+8=33，因为8-5=3"
+      },
+      {
+       "label": "C",
+       "text": "先算5+8=13，把13直接写在个位和十位上"
+      },
+      {
+       "label": "D",
+       "text": "35+8=313，个位满十就往个位后面添一个3"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p080_q5",
+     "topicId": "mbj_p080",
+     "prompt": "树上有29只小鸟，又飞来6只，现在树上一共有多少只？",
+     "question": "树上有29只小鸟，又飞来6只，现在树上一共有多少只？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "求一共多少只用加法：29+6，个位9+6=15，个位写5向十位进1，十位2+1=3，得35只。",
+     "answer": "35",
+     "verify": "29+6"
+    },
+    {
+     "id": "mbj_p080_q6",
+     "topicId": "mbj_p080",
+     "prompt": "请你说一说 48+6 的思考过程，个位相加满十时该怎么办。",
+     "question": "请你说一说 48+6 的思考过程，个位相加满十时该怎么办。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "个位相加满十时，把10个一换成1个十送到十位上，个位只留剩下的几，这样十位就多1。",
+     "answer": "48加6，先把6分成2和4，48+2=50，凑成整十；再算50+4=54。也可以直接算8+6=14，个位写4，满十向十位进1，十位4加1得5，结果是54。"
+    },
+    {
+     "id": "mbj_p080_q7",
+     "topicId": "mbj_p080",
+     "prompt": "小红有37张贴纸，小明比小红多9张。小明有多少张贴纸？",
+     "question": "小红有37张贴纸，小明比小红多9张。小明有多少张贴纸？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "比37多9，就是在37的基础上再加9：个位7+9=16，个位写6向十位进1，十位3+1=4，所以小明有46张。",
+     "answer": "46",
+     "verify": "37+9"
+    },
+    {
+     "id": "mbj_p080_q8",
+     "topicId": "mbj_p080",
+     "prompt": "口算两位数加一位数的进位加法时，下面哪一句话是正确的？",
+     "question": "口算两位数加一位数的进位加法时，下面哪一句话是正确的？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "10个一就是1个十，个位满十必须把这一捆送到十位，所以十位要加1。丢掉进位，得数就会少10。",
+     "options": [
+      {
+       "label": "A",
+       "text": "个位满十就把十位上的数减去1"
+      },
+      {
+       "label": "B",
+       "text": "两位数加一位数，个位满十要向十位进1"
+      },
+      {
+       "label": "C",
+       "text": "个位满十时把十去掉，只写个位上的数"
+      },
+      {
+       "label": "D",
+       "text": "进位以后十位上的数一定不变"
+      }
+     ],
+     "answer": "B"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p081",
+   "description": "学习两位数减一位数（不退位）的口算，用个位上的数减去这个一位数，十位上的数保持不变，能不借位直接口算，并解决简单的求剩余问题。",
+   "mastery_criteria": [
+    "口算两位数减一位数（不退位）",
+    "说出十位不变的理由",
+    "解决求剩余的简单问题"
+   ],
+   "misconceptions": [
+    "47-3算成17，把3从十位4里减去",
+    "48-5算成33，用5-8再倒着写"
+   ],
+   "std": {
+    "id": "mat-2022:1.TS.02",
+    "quote": "这个位置叫十位，十位上的1表示 1 个十"
+   },
+   "questions": [
+    {
+     "id": "mbj_p081_q1",
+     "topicId": "mbj_p081",
+     "prompt": "口算 48-5，得数是多少？",
+     "question": "口算 48-5，得数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "48是4个十和8个一，减去5个一：个位8-5=3，够减不用退位，十位4不变，所以得43。",
+     "answer": "43",
+     "verify": "48-5"
+    },
+    {
+     "id": "mbj_p081_q2",
+     "topicId": "mbj_p081",
+     "prompt": "76-4 的得数是多少？",
+     "question": "76-4 的得数是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "个位6-4=2，十位7不变，得72。得36是把4从十位减掉了，得80是把减法做成了加法。",
+     "options": [
+      {
+       "label": "A",
+       "text": "36"
+      },
+      {
+       "label": "B",
+       "text": "80"
+      },
+      {
+       "label": "C",
+       "text": "72"
+      },
+      {
+       "label": "D",
+       "text": "73"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p081_q3",
+     "topicId": "mbj_p081",
+     "prompt": "口算 59-7，得数是多少？",
+     "question": "口算 59-7，得数是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "个位9-7=2，够减，不用向十位借；十位5不变，所以59-7=52。",
+     "answer": "52"
+    },
+    {
+     "id": "mbj_p081_q4",
+     "topicId": "mbj_p081",
+     "prompt": "下面这四道计算中，哪一道计算是错的？",
+     "question": "下面这四道计算中，哪一道计算是错的？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "3是3个一，只能从个位的7里减去，十位上的4不能动。从十位减就变成减3个十，得17是错的，正确得数是44。",
+     "options": [
+      {
+       "label": "A",
+       "text": "56-4=52，个位6-4=2，十位不变"
+      },
+      {
+       "label": "B",
+       "text": "79-5=74，个位9-5=4"
+      },
+      {
+       "label": "C",
+       "text": "63-2=61，个位3-2=1"
+      },
+      {
+       "label": "D",
+       "text": "47-3=17，因为4-3=1，所以十位是1"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p081_q5",
+     "topicId": "mbj_p081",
+     "prompt": "一辆车上有64个座位，已经坐了3个人，还空着多少个座位？",
+     "question": "一辆车上有64个座位，已经坐了3个人，还空着多少个座位？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "求还空着多少，用总座位数减已坐人数：64-3，个位4-3=1，十位6不变，得61个空座位。",
+     "answer": "61",
+     "verify": "64-3"
+    },
+    {
+     "id": "mbj_p081_q6",
+     "topicId": "mbj_p081",
+     "prompt": "为什么 79-6 的十位还是7？请说一说你的想法。",
+     "question": "为什么 79-6 的十位还是7？请说一说你的想法。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "只有个位不够减时才动十位，这里个位9减6够减，十位自然不变。",
+     "answer": "79是7个十和9个一，减去6个一。个位上9-6=3，够减，不用向十位借；7个十没有动，所以十位仍然是7，结果是73。"
+    },
+    {
+     "id": "mbj_p081_q7",
+     "topicId": "mbj_p081",
+     "prompt": "篮子里有58个鸡蛋，早上用去6个，中午又用去5个，还剩多少个？",
+     "question": "篮子里有58个鸡蛋，早上用去6个，中午又用去5个，还剩多少个？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "先算早上用去后剩多少：58-6=52；再算中午用去后剩多少：52-5=47。两次都是去掉，用连减。",
+     "answer": "47",
+     "verify": "58-6-5"
+    },
+    {
+     "id": "mbj_p081_q8",
+     "topicId": "mbj_p081",
+     "prompt": "下面哪一道题的得数最小？",
+     "question": "下面哪一道题的得数最小？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "被减数都是68，减得越多剩得越少。8最大，所以68-8=60最小；68-4=64最大。",
+     "options": [
+      {
+       "label": "A",
+       "text": "68-8"
+      },
+      {
+       "label": "B",
+       "text": "68-6"
+      },
+      {
+       "label": "C",
+       "text": "68-4"
+      },
+      {
+       "label": "D",
+       "text": "68-5"
+      }
+     ],
+     "answer": "A"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p082",
+   "description": "学习两位数减整十数的口算，把整十数看成几个十，从十位上的数里减去，个位上的数保持不变，能说明算理，并解决简单的求剩余问题。",
+   "mastery_criteria": [
+    "口算两位数减整十数",
+    "说明减整十数个位不变",
+    "解决求剩余的简单问题"
+   ],
+   "misconceptions": [
+    "85-50算成80，把50当成5来减",
+    "76-40算成72，个位也跟着减4"
+   ],
+   "std": {
+    "id": "mat-2022:1.KC.03",
+    "quote": "能口算简单的百以内数的加减法;能计算两位数和三位数的加减法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p082_q1",
+     "topicId": "mbj_p082",
+     "prompt": "口算 76-40，得数是多少？",
+     "question": "口算 76-40，得数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "40是4个十，76十位上的7个十减4个十得3个十，个位6不变，所以76-40=36。",
+     "answer": "36",
+     "verify": "76-40"
+    },
+    {
+     "id": "mbj_p082_q2",
+     "topicId": "mbj_p082",
+     "prompt": "口算 85-50，得数是多少？",
+     "question": "口算 85-50，得数是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "50是5个十，85十位上的8个十减5个十得3个十，个位5不变，所以85-50=35。",
+     "answer": "35"
+    },
+    {
+     "id": "mbj_p082_q3",
+     "topicId": "mbj_p082",
+     "prompt": "63-20 的得数是多少？",
+     "question": "63-20 的得数是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "20是2个十，十位6-2=4，个位3不变，得43。得61是把20当成2来减了，得83是把减法做成了加法。",
+     "options": [
+      {
+       "label": "A",
+       "text": "61"
+      },
+      {
+       "label": "B",
+       "text": "43"
+      },
+      {
+       "label": "C",
+       "text": "83"
+      },
+      {
+       "label": "D",
+       "text": "41"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p082_q4",
+     "topicId": "mbj_p082",
+     "prompt": "计算 58-30 时，下面说法正确的是？",
+     "question": "计算 58-30 时，下面说法正确的是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "30是3个十，只能和十位上的5个十相减，得2个十；个位8是8个一，没有同类相减，保持不变，所以得28。",
+     "options": [
+      {
+       "label": "A",
+       "text": "8-3=5，十位不变，得55"
+      },
+      {
+       "label": "B",
+       "text": "把30看成3，58-3=55"
+      },
+      {
+       "label": "C",
+       "text": "5个十减去3个十得2个十，个位上的8不变"
+      },
+      {
+       "label": "D",
+       "text": "十位和个位都要减去3"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p082_q5",
+     "topicId": "mbj_p082",
+     "prompt": "停车场有47辆车，开走了30辆，还剩多少辆？",
+     "question": "停车场有47辆车，开走了30辆，还剩多少辆？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "求还剩多少，用原来的47辆减去开走的30辆：十位4-3=1，个位7不变，47-30=17辆。",
+     "answer": "17",
+     "verify": "47-30"
+    },
+    {
+     "id": "mbj_p082_q6",
+     "topicId": "mbj_p082",
+     "prompt": "口算 92-60 时你是怎么想的？请把过程说清楚。",
+     "question": "口算 92-60 时你是怎么想的？请把过程说清楚。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "整十数只含十，所以相减时只动十位，个位照抄，得数一定是个位不变的。",
+     "answer": "92里有9个十和2个一，60是6个十。从9个十里减去6个十，剩3个十，也就是30；个位上的2不变。所以92-60=32。减整十数只减十位。"
+    },
+    {
+     "id": "mbj_p082_q7",
+     "topicId": "mbj_p082",
+     "prompt": "妈妈买了35个苹果，吃了10个，后来又买了20个，现在有多少个？",
+     "question": "妈妈买了35个苹果，吃了10个，后来又买了20个，现在有多少个？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "先算吃掉后剩多少：35-10=25；再加上又买的20个：25+20=45。先减后加，顺序不能乱。",
+     "answer": "45",
+     "verify": "35-10+20"
+    },
+    {
+     "id": "mbj_p082_q8",
+     "topicId": "mbj_p082",
+     "prompt": "下面哪两个算式的结果相等？",
+     "question": "下面哪两个算式的结果相等？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "54-20=34，44-10=34，两个得数相等。54-2=52，34-20=14，54-30=24，都与34不同。",
+     "options": [
+      {
+       "label": "A",
+       "text": "54-20 和 54-2"
+      },
+      {
+       "label": "B",
+       "text": "54-20 和 34-20"
+      },
+      {
+       "label": "C",
+       "text": "54-20 和 54-30"
+      },
+      {
+       "label": "D",
+       "text": "54-20 和 44-10"
+      }
+     ],
+     "answer": "D"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p083",
+   "description": "学习两位数减一位数的退位减法，个位不够减时从十位退1个十，用十几减几算出个位，十位上的数相应减少1，能说明退位过程并解决实际问题。",
+   "mastery_criteria": [
+    "口算两位数减一位数的退位减法",
+    "说出从十位退1的过程",
+    "解决求剩余的简单问题"
+   ],
+   "misconceptions": [
+    "42-7算成45，用7-2=5再倒着写",
+    "退位后十位没有减1，得数多10"
+   ],
+   "std": {
+    "id": "mat-2022:1.XY.02",
+    "quote": "能郊练口算 20 以内数的加诚法和表内乘除法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p083_q1",
+     "topicId": "mbj_p083",
+     "prompt": "口算 32-7，得数是多少？",
+     "question": "口算 32-7，得数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "个位2减7不够减，从十位退1个十，12-7=5，十位剩2，所以32-7=25。",
+     "answer": "25",
+     "verify": "32-7"
+    },
+    {
+     "id": "mbj_p083_q2",
+     "topicId": "mbj_p083",
+     "prompt": "口算 43-6，得数是多少？",
+     "question": "口算 43-6，得数是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "个位3减6不够减，从十位退1个十，13-6=7，十位4退1剩3，所以43-6=37。",
+     "answer": "37"
+    },
+    {
+     "id": "mbj_p083_q3",
+     "topicId": "mbj_p083",
+     "prompt": "51-4 的得数是多少？",
+     "question": "51-4 的得数是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "个位1减4不够减，从十位退1个十，11-4=7，十位5退1剩4，得47。得55是把减法做成了加法，得48是忘了退位。",
+     "options": [
+      {
+       "label": "A",
+       "text": "47"
+      },
+      {
+       "label": "B",
+       "text": "55"
+      },
+      {
+       "label": "C",
+       "text": "48"
+      },
+      {
+       "label": "D",
+       "text": "15"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p083_q4",
+     "topicId": "mbj_p083",
+     "prompt": "计算 62-8 时，正确的做法是哪一种？",
+     "question": "计算 62-8 时，正确的做法是哪一种？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "个位2减8不够减，只能从十位借1个十变成12再减：12-8=4；十位被借走1个十，6变5，所以得54。用8-2是倒着减，是错的。",
+     "options": [
+      {
+       "label": "A",
+       "text": "8-2=6，十位6不变，得66"
+      },
+      {
+       "label": "B",
+       "text": "从十位退1个十，12-8=4，十位剩5，得54"
+      },
+      {
+       "label": "C",
+       "text": "把8看成3，62-3=59"
+      },
+      {
+       "label": "D",
+       "text": "2减8不够减，就用8减2得6，写在个位上"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p083_q5",
+     "topicId": "mbj_p083",
+     "prompt": "有43块糖，吃掉了7块，还剩多少块？",
+     "question": "有43块糖，吃掉了7块，还剩多少块？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "求还剩多少用减法：43-7，个位3减7不够减，退1个十，13-7=6，十位4退1剩3，得36块。",
+     "answer": "36",
+     "verify": "43-7"
+    },
+    {
+     "id": "mbj_p083_q6",
+     "topicId": "mbj_p083",
+     "prompt": "为什么 62-8 的十位从6变成了5？请说明理由。",
+     "question": "为什么 62-8 的十位从6变成了5？请说明理由。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "退位就是从十位借1个十化10个一，十位少了1个十，所以十位上的数要减1。",
+     "answer": "62的个位是2，2减8不够减，要从十位退1个十，把退来的10和2合起来是12，12-8=4；十位被退走1个十，6个十变成5个十。所以十位是5，得54。"
+    },
+    {
+     "id": "mbj_p083_q7",
+     "topicId": "mbj_p083",
+     "prompt": "停车场原有63辆车，先开走8辆，又开走20辆，还剩多少辆？",
+     "question": "停车场原有63辆车，先开走8辆，又开走20辆，还剩多少辆？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "先算开走8辆后剩多少：63-8=55（退位）；再减去20辆：55-20=35。两步都是开走，用连减。",
+     "answer": "35",
+     "verify": "63-8-20"
+    },
+    {
+     "id": "mbj_p083_q8",
+     "topicId": "mbj_p083",
+     "prompt": "口算两位数减一位数的退位减法时，下面哪一句话是正确的？",
+     "question": "口算两位数减一位数的退位减法时，下面哪一句话是正确的？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "个位不够减时，只有把十位上的1个十换成10个一才够减；用了这1个十，十位就必须减1。倒着减会得到错误答案。",
+     "options": [
+      {
+       "label": "A",
+       "text": "个位不够减时，用减数的个位减被减数的个位"
+      },
+      {
+       "label": "B",
+       "text": "退位以后十位上的数不变"
+      },
+      {
+       "label": "C",
+       "text": "个位不够减时，要从十位退1个十"
+      },
+      {
+       "label": "D",
+       "text": "两位数减一位数一定不用退位"
+      }
+     ],
+     "answer": "C"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p084",
+   "description": "综合运用100以内加减法（一）的口算，在同一情境中判断该用加法还是减法，能按顺序完成两步计算，并对计算结果做简单检验与说明。",
+   "mastery_criteria": [
+    "在同一情境中判断用加还是用减",
+    "按顺序完成两步计算",
+    "用估算或逆运算检验结果"
+   ],
+   "misconceptions": [
+    "看到“还剩”仍用加法列式",
+    "两步计算只算了第一步就写答案"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.07",
+    "quote": "在简单的生活情境中，运用数和数的运算解决问题，能解释结果的实际意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p084_q1",
+     "topicId": "mbj_p084",
+     "prompt": "口算 34+5，得数是多少？",
+     "question": "口算 34+5，得数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "34是3个十和4个一，加5个一：个位4+5=9，不满十，十位3不变，得39。",
+     "answer": "39",
+     "verify": "34+5"
+    },
+    {
+     "id": "mbj_p084_q2",
+     "topicId": "mbj_p084",
+     "prompt": "口算 72-8，得数是多少？",
+     "question": "口算 72-8，得数是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "个位2减8不够减，从十位退1个十，12-8=4，十位7退1剩6，所以72-8=64。",
+     "answer": "64"
+    },
+    {
+     "id": "mbj_p084_q3",
+     "topicId": "mbj_p084",
+     "prompt": "下面哪一道题的得数是50？",
+     "question": "下面哪一道题的得数是50？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "45+5=50，个位满十进1，十位4+1=5。45+4=49，56-5=51，60-8=52，都不是50。",
+     "options": [
+      {
+       "label": "A",
+       "text": "45+4"
+      },
+      {
+       "label": "B",
+       "text": "56-5"
+      },
+      {
+       "label": "C",
+       "text": "60-8"
+      },
+      {
+       "label": "D",
+       "text": "45+5"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p084_q4",
+     "topicId": "mbj_p084",
+     "prompt": "图书角有32本故事书，又买来8本。要求现在有多少本，应该怎样列式？",
+     "question": "图书角有32本故事书，又买来8本。要求现在有多少本，应该怎样列式？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "又买来是增加，求现在有多少本要把原来的32本和新买的8本合起来，用加法，列式32+8=40。减法是去掉，与题意不符。",
+     "options": [
+      {
+       "label": "A",
+       "text": "32+8"
+      },
+      {
+       "label": "B",
+       "text": "32-8"
+      },
+      {
+       "label": "C",
+       "text": "32+80"
+      },
+      {
+       "label": "D",
+       "text": "8-32"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p084_q5",
+     "topicId": "mbj_p084",
+     "prompt": "小华有26元，买笔用去9元，买本子用去5元，还剩多少元？",
+     "question": "小华有26元，买笔用去9元，买本子用去5元，还剩多少元？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "两次都是用去，要连续减：26-9=17，17-5=12，所以还剩12元。也可以先算共用去14元，再算26-14=12。",
+     "answer": "12",
+     "verify": "26-9-5"
+    },
+    {
+     "id": "mbj_p084_q6",
+     "topicId": "mbj_p084",
+     "prompt": "请你说一说，什么样的问题用加法算，什么样的问题用减法算，各举一个例子。",
+     "question": "请你说一说，什么样的问题用加法算，什么样的问题用减法算，各举一个例子。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "判断算法要看数量是合并还是去掉：合并变多用加，去掉或分出一部分用减。",
+     "answer": "把两个部分合起来、求一共多少，用加法，例如红笔12支、蓝笔9支，一共多少支列式12+9。已知总数和一部分求另一部分，或者从总数里去掉一些求还剩多少，用减法，例如21支笔里红笔12支，蓝笔多少支列式21-12。"
+    },
+    {
+     "id": "mbj_p084_q7",
+     "topicId": "mbj_p084",
+     "prompt": "一班有28人，二班有30人，三班的人数比一班多5人。三个班一共有多少人？",
+     "question": "一班有28人，二班有30人，三班的人数比一班多5人。三个班一共有多少人？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "先求三班人数：28+5=33人；再把三个班合起来：28+30=58，58+33=91人。三步数据要对应好，别把三班当成35人。",
+     "answer": "91",
+     "verify": "28+30+28+5"
+    },
+    {
+     "id": "mbj_p084_q8",
+     "topicId": "mbj_p084",
+     "prompt": "小明算 52-7，写出的得数是45。下面说法正确的是？",
+     "question": "小明算 52-7，写出的得数是45。下面说法正确的是？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "52-7：个位2减7不够减，退1个十得12-7=5；十位5退1剩4。所以得45，小明的答案正确。可以用45+7=52来检验。",
+     "options": [
+      {
+       "label": "A",
+       "text": "错，应该是55，减7要加回10"
+      },
+      {
+       "label": "B",
+       "text": "对，52-7=45，个位退1后12-7=5，十位剩4"
+      },
+      {
+       "label": "C",
+       "text": "错，应该是35，十位再减7"
+      },
+      {
+       "label": "D",
+       "text": "错，应该是44，个位还要再减1"
+      }
+     ],
+     "answer": "B"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p085",
+   "description": "整理本单元学过的四类口算：不进位加、进位加、不退位减、退位减，比较它们的相同与不同，找出自己容易出错的地方，形成检查与反思的习惯。",
+   "mastery_criteria": [
+    "把本单元口算按四类分开并举例",
+    "说出进位与退位的判断方法",
+    "找出并改正自己的错题"
+   ],
+   "misconceptions": [
+    "把“45+3”和“45+30”当成同一类算法",
+    "认为只要得数变了就是算错了，不去检查数位"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.16",
+    "quote": "能在熟悉的生活情境中运用数和数的运算，合理表达简单的数量关系，解决简单的问题。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p085_q1",
+     "topicId": "mbj_p085",
+     "prompt": "本单元的口算里，下面哪一组题个位相加都要满十向十位进1？",
+     "question": "本单元的口算里，下面哪一组题个位相加都要满十向十位进1？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "27+5的个位7+5=12，46+7的个位6+7=13，都满十要进位。23+5、42+6个位不满十；后两组是减法。",
+     "options": [
+      {
+       "label": "A",
+       "text": "23+5、42+6"
+      },
+      {
+       "label": "B",
+       "text": "76-40、85-50"
+      },
+      {
+       "label": "C",
+       "text": "27+5、46+7"
+      },
+      {
+       "label": "D",
+       "text": "48-5、59-7"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p085_q2",
+     "topicId": "mbj_p085",
+     "prompt": "口算 54+6，得数是多少？",
+     "question": "口算 54+6，得数是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "个位4+6=10，满十向十位进1，个位写0；十位5+1=6，所以54+6=60，个位正好凑成整十。",
+     "answer": "60"
+    },
+    {
+     "id": "mbj_p085_q3",
+     "topicId": "mbj_p085",
+     "prompt": "口算 90-7，得数是多少？",
+     "question": "口算 90-7，得数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "个位0减7不够减，从十位退1个十，10-7=3，十位9退1剩8，所以90-7=83。",
+     "answer": "83",
+     "verify": "90-7"
+    },
+    {
+     "id": "mbj_p085_q4",
+     "topicId": "mbj_p085",
+     "prompt": "计算 45+3 和 45+30，下面说法正确的是？",
+     "question": "计算 45+3 和 45+30，下面说法正确的是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "45+3把3加在个位，得48；45+30把3个十加在十位，得75。两题只差一个0，算法和得数完全不同。",
+     "options": [
+      {
+       "label": "A",
+       "text": "两道题的得数都是48"
+      },
+      {
+       "label": "B",
+       "text": "45+30 得48，因为0不用算"
+      },
+      {
+       "label": "C",
+       "text": "两道题都要向十位进1"
+      },
+      {
+       "label": "D",
+       "text": "45+3 是加3个一，45+30 是加3个十"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p085_q5",
+     "topicId": "mbj_p085",
+     "prompt": "小明两天一共看了34页书，第一天看了7页，第二天看了多少页？",
+     "question": "小明两天一共看了34页书，第一天看了7页，第二天看了多少页？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "已知两天总数34页和第一天7页，求第二天，用总数减去第一天：34-7，退位后14-7=7，十位2，得27页。",
+     "answer": "27",
+     "verify": "34-7"
+    },
+    {
+     "id": "mbj_p085_q6",
+     "topicId": "mbj_p085",
+     "prompt": "请把本单元的口算按“不进位加、进位加、不退位减、退位减”分成四类，每类各举一个例子。",
+     "question": "请把本单元的口算按“不进位加、进位加、不退位减、退位减”分成四类，每类各举一个例子。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "分类的目的是先看个位够不够，再决定要不要进、退，这样口算时就不会漏掉进位的1或退位的1。",
+     "answer": "不进位加：个位相加不满十，如23+5=28；进位加：个位相加满十，如27+5=32；不退位减：个位够减，如48-5=43；退位减：个位不够减要从十位退1，如32-7=25。分好类就知道每次要不要进、要不要退。"
+    },
+    {
+     "id": "mbj_p085_q7",
+     "topicId": "mbj_p085",
+     "prompt": "在方框里填数：58 减多少等于50？请写出这个数。",
+     "question": "在方框里填数：58 减多少等于50？请写出这个数。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "58减去一个数得50，这个数就是58和50的差：58-50=8。填完可以验算58-8=50。",
+     "answer": "8",
+     "verify": "58-50"
+    },
+    {
+     "id": "mbj_p085_q8",
+     "topicId": "mbj_p085",
+     "prompt": "同学们做 36+8，出现了下面几种答案，哪一个是对的？",
+     "question": "同学们做 36+8，出现了下面几种答案，哪一个是对的？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "个位6+8=14，个位写4，向十位进1；十位3+1=4，所以得44。34是漏了进位，314是把14整个写在个位后面。",
+     "options": [
+      {
+       "label": "A",
+       "text": "44"
+      },
+      {
+       "label": "B",
+       "text": "34"
+      },
+      {
+       "label": "C",
+       "text": "314"
+      },
+      {
+       "label": "D",
+       "text": "42"
+      }
+     ],
+     "answer": "A"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p086",
+   "description": "在分东西、比多少等生活情境中初步认识四类数量关系：求总数、求部分数、求比一个数多几的数、求比一个数少几的数，会用加减法解决问题并说明理由。",
+   "mastery_criteria": [
+    "判断一个问题属于哪一类数量关系",
+    "为每类问题选择合适的算法",
+    "说出列式中每个数的意思"
+   ],
+   "misconceptions": [
+    "只凭“多”“少”两个字选算法，不看求的是谁",
+    "把总数和部分数混在一起，列式时用错数"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.15",
+    "quote": "在简单的生活情境中，运用数和数的运算解决问题，能解释结果的实际意义，形成初步的应用意识。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p086_q1",
+     "topicId": "mbj_p086",
+     "prompt": "求两个部分合起来是多少，应该用哪种方法计算？",
+     "question": "求两个部分合起来是多少，应该用哪种方法计算？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "两个部分合起来是一个整体，数量变多，所以用加法。求合并、求一共都是把部分相加。",
+     "options": [
+      {
+       "label": "A",
+       "text": "减法"
+      },
+      {
+       "label": "B",
+       "text": "加法"
+      },
+      {
+       "label": "C",
+       "text": "乘法"
+      },
+      {
+       "label": "D",
+       "text": "先减后加"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p086_q2",
+     "topicId": "mbj_p086",
+     "prompt": "一班有24人，二班有20人。两个班一共有多少人？",
+     "question": "一班有24人，二班有20人。两个班一共有多少人？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "求两个班一共多少人，把24人和20人合起来：十位2+2=4，个位4不变，得44人。",
+     "answer": "44",
+     "verify": "24+20"
+    },
+    {
+     "id": "mbj_p086_q3",
+     "topicId": "mbj_p086",
+     "prompt": "已经知道总数和其中一部分，要求另一部分，应该怎样算？",
+     "question": "已经知道总数和其中一部分，要求另一部分，应该怎样算？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "总数由两部分合成，从总数里去掉已知的一部分，剩下的就是另一部分，所以用总数减已知部分。相加会得到比总数还大的数。",
+     "options": [
+      {
+       "label": "A",
+       "text": "把两部分相加"
+      },
+      {
+       "label": "B",
+       "text": "用总数加上已知的那一部分"
+      },
+      {
+       "label": "C",
+       "text": "用总数减去已知的那一部分"
+      },
+      {
+       "label": "D",
+       "text": "用已知的那一部分减总数"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p086_q4",
+     "topicId": "mbj_p086",
+     "prompt": "请你说一说“求总数”和“求部分数”这两类问题有什么区别，并各举一个例子。",
+     "question": "请你说一说“求总数”和“求部分数”这两类问题有什么区别，并各举一个例子。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "两类问题的条件和问题正好相反：求总数知道两个部分，求部分数知道总数和一个部分。",
+     "answer": "求总数是把两个部分合起来，已知两部分求一共，用加法，如一班24人、二班20人，一共多少人列式24+20。求部分数是已知总数和一部分，求另一部分，用减法，如两个班共44人，一班24人，二班多少人列式44-24。"
+    },
+    {
+     "id": "mbj_p086_q5",
+     "topicId": "mbj_p086",
+     "prompt": "书架上有故事书和科技书共45本，其中故事书20本。科技书比故事书少多少本？",
+     "question": "书架上有故事书和科技书共45本，其中故事书20本。科技书比故事书少多少本？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "先求科技书：45-20=25本；再求科技书比故事书少多少：25-20=5本。第二步是比较，不能直接把两本数的差当成答案提前得出。",
+     "answer": "5",
+     "verify": "45-20-20"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p087",
+   "description": "学习求总数的实际问题，把两个部分合起来用加法算，能读懂“一共”“合起来”等词语的意思，正确列式并说出每个数在题中表示什么。",
+   "mastery_criteria": [
+    "识别求总数的问题",
+    "用加法列式并口算",
+    "说出算式中每个数的意思"
+   ],
+   "misconceptions": [
+    "求总数时用大数减小数",
+    "把“又来了”当成要去掉，用减法"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.03",
+    "quote": "在具体情境中，了解四则运算的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p087_q1",
+     "topicId": "mbj_p087",
+     "prompt": "红气球18个，蓝气球20个。一共有多少个气球？",
+     "question": "红气球18个，蓝气球20个。一共有多少个气球？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "求一共多少个，把红气球和蓝气球合起来：18+20，十位1+2=3，个位8不变，得38个。",
+     "answer": "38",
+     "verify": "18+20"
+    },
+    {
+     "id": "mbj_p087_q2",
+     "topicId": "mbj_p087",
+     "prompt": "要求“一共有多少人”，需要先知道什么？",
+     "question": "要求“一共有多少人”，需要先知道什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "求总数要把两个部分相加，所以必须知道两个部分各有多少。相差多少是比大小，不能用来求和。",
+     "options": [
+      {
+       "label": "A",
+       "text": "两个部分相差多少人"
+      },
+      {
+       "label": "B",
+       "text": "哪一个部分人更多"
+      },
+      {
+       "label": "C",
+       "text": "总人数是多少"
+      },
+      {
+       "label": "D",
+       "text": "两个部分各有多少人"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p087_q3",
+     "topicId": "mbj_p087",
+     "prompt": "篮子里有25个苹果，又放进13个，一共有多少个？",
+     "question": "篮子里有25个苹果，又放进13个，一共有多少个？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "又放进是增加，求一共要把25个和13个合起来：个位5+3=8，十位2+1=3，得38个。",
+     "answer": "38"
+    },
+    {
+     "id": "mbj_p087_q4",
+     "topicId": "mbj_p087",
+     "prompt": "一年级有男生19人，女生18人。求一共有多少人，列式应该是哪一个？",
+     "question": "一年级有男生19人，女生18人。求一共有多少人，列式应该是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "男生和女生是全体同学的两个部分，求一共要把两部分相加，列式19+18=37人。减法求的是相差多少，与题意不符。",
+     "options": [
+      {
+       "label": "A",
+       "text": "19+18"
+      },
+      {
+       "label": "B",
+       "text": "19-18"
+      },
+      {
+       "label": "C",
+       "text": "18-19"
+      },
+      {
+       "label": "D",
+       "text": "19+19"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p087_q5",
+     "topicId": "mbj_p087",
+     "prompt": "树上原来有27只鸟，又飞来8只。现在树上一共有多少只鸟？",
+     "question": "树上原来有27只鸟，又飞来8只。现在树上一共有多少只鸟？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "飞来是增加，求现在一共多少只用加法：27+8，个位7+8=15，个位写5向十位进1，十位2+1=3，得35只。",
+     "answer": "35",
+     "verify": "27+8"
+    },
+    {
+     "id": "mbj_p087_q6",
+     "topicId": "mbj_p087",
+     "prompt": "为什么求总数要用加法？“一共”这个词给了你什么提示？",
+     "question": "为什么求总数要用加法？“一共”这个词给了你什么提示？",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "“一共”“合起来”“总共”都指向合并，合并就要把两部分加起来。",
+     "answer": "求总数是把两个部分合在一起，数变多，所以用加法。“一共”表示把两部分合并成一个整体，看到它就想到两部分相加。列式时两个部分都要用上，不能相减。"
+    },
+    {
+     "id": "mbj_p087_q7",
+     "topicId": "mbj_p087",
+     "prompt": "小明有15张邮票，小红的邮票比小明多7张。两人一共有多少张邮票？",
+     "question": "小明有15张邮票，小红的邮票比小明多7张。两人一共有多少张邮票？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "先求小红有多少张：15+7=22张；再把两人合起来：15+22=37张。题目问两人一共，不能只停在22。",
+     "answer": "37",
+     "verify": "15+15+7"
+    },
+    {
+     "id": "mbj_p087_q8",
+     "topicId": "mbj_p087",
+     "prompt": "下面哪一道题是求总数的问题？",
+     "question": "下面哪一道题是求总数的问题？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "求总数必须已知两个部分、问合并后是多少。第二题已知总数求一部分，是求部分数；后两题问相差多少，是比较问题。",
+     "options": [
+      {
+       "label": "A",
+       "text": "盒子里有21支笔，红笔12支，蓝笔有多少支"
+      },
+      {
+       "label": "B",
+       "text": "盒子里有12支红笔和9支蓝笔，一共有多少支笔"
+      },
+      {
+       "label": "C",
+       "text": "红笔比蓝笔多几支"
+      },
+      {
+       "label": "D",
+       "text": "蓝笔比红笔少几支"
+      }
+     ],
+     "answer": "B"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p088",
+   "description": "学习求部分数的实际问题，已知总数和其中一部分，用总数减去这一部分求另一部分，能结合图示说明为什么用减法，并检查结果是否合理。",
+   "mastery_criteria": [
+    "识别求部分数的问题",
+    "用减法列式并口算",
+    "说明为什么用减法"
+   ],
+   "misconceptions": [
+    "求部分数时把两部分相加",
+    "用已知部分减总数，出现小数减大数"
+   ],
+   "std": {
+    "id": "mat-2022:1.TS.05",
+    "quote": "利用对应的方法理解加法的意义，感悟减法是加法的逆运算"
+   },
+   "questions": [
+    {
+     "id": "mbj_p088_q1",
+     "topicId": "mbj_p088",
+     "prompt": "一共有30人做游戏，其中男生17人。女生有多少人？",
+     "question": "一共有30人做游戏，其中男生17人。女生有多少人？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "总人数30是男生和女生合起来的，去掉男生17人，剩下就是女生：30-17，个位退位后10-7=3，十位2-1=1，得13人。",
+     "answer": "13",
+     "verify": "30-17"
+    },
+    {
+     "id": "mbj_p088_q2",
+     "topicId": "mbj_p088",
+     "prompt": "已知总数和一部分，求另一部分，应该用什么方法？",
+     "question": "已知总数和一部分，求另一部分，应该用什么方法？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "总数去掉已知的一部分就是另一部分，去掉用减法。用加法会得到比总数还大的结果，明显不合理。",
+     "options": [
+      {
+       "label": "A",
+       "text": "加法"
+      },
+      {
+       "label": "B",
+       "text": "乘法"
+      },
+      {
+       "label": "C",
+       "text": "减法"
+      },
+      {
+       "label": "D",
+       "text": "加法和减法都可以，结果一样"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p088_q3",
+     "topicId": "mbj_p088",
+     "prompt": "一共有42个座位，已经坐了25人，还空着多少个座位？",
+     "question": "一共有42个座位，已经坐了25人，还空着多少个座位？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "座位总数42去掉已坐的25人，就是空座位：42-25，个位退位后12-5=7，十位3-2=1，得17个。",
+     "answer": "17"
+    },
+    {
+     "id": "mbj_p088_q4",
+     "topicId": "mbj_p088",
+     "prompt": "书架上一共56本书，其中故事书30本，其余是科技书。求科技书有多少本，列式是？",
+     "question": "书架上一共56本书，其中故事书30本，其余是科技书。求科技书有多少本，列式是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "56本是总数，30本是其中一部分，其余的就是另一部分，用总数减这一部分：56-30=26本。用加法会超过总数。",
+     "options": [
+      {
+       "label": "A",
+       "text": "56+30"
+      },
+      {
+       "label": "B",
+       "text": "30+56"
+      },
+      {
+       "label": "C",
+       "text": "56-26"
+      },
+      {
+       "label": "D",
+       "text": "56-30"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p088_q5",
+     "topicId": "mbj_p088",
+     "prompt": "小华有40元，买了一本18元的书，还剩多少元？",
+     "question": "小华有40元，买了一本18元的书，还剩多少元？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "求还剩多少，用原来的钱减去花掉的钱：40-18，个位0减8退位，10-8=2，十位3-1=2，得22元。",
+     "answer": "22",
+     "verify": "40-18"
+    },
+    {
+     "id": "mbj_p088_q6",
+     "topicId": "mbj_p088",
+     "prompt": "为什么“已知总数和一部分，求另一部分”要用减法？请说明理由。",
+     "question": "为什么“已知总数和一部分，求另一部分”要用减法？请说明理由。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "加法是把两部分合起来，减法正好相反，从整体里分出一部分，所以求部分数用减法。",
+     "answer": "总数是由两部分合起来的，要求其中一部分，就要从总数里把已知的那一部分去掉，去掉就是减。也可以想成“几加已知部分等于总数”，用减法求这个几，所以用总数减已知部分。"
+    },
+    {
+     "id": "mbj_p088_q7",
+     "topicId": "mbj_p088",
+     "prompt": "一班和二班共有48人，其中一班25人。二班比一班少多少人？",
+     "question": "一班和二班共有48人，其中一班25人。二班比一班少多少人？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "先求二班人数：48-25=23人；再比较：25-23=2人，二班比一班少2人。问的是相差多少，要再减一次。",
+     "answer": "2",
+     "verify": "25-(48-25)"
+    },
+    {
+     "id": "mbj_p088_q8",
+     "topicId": "mbj_p088",
+     "prompt": "关于总数和部分数的关系，下面说法正确的是？",
+     "question": "关于总数和部分数的关系，下面说法正确的是？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "整体等于两部分之和，所以从整体里减去一部分，剩下的必然是另一部分。加上一部分只会超过总数，是错的。",
+     "options": [
+      {
+       "label": "A",
+       "text": "总数减去一部分，就得到另一部分"
+      },
+      {
+       "label": "B",
+       "text": "总数加上一部分，就得到另一部分"
+      },
+      {
+       "label": "C",
+       "text": "两部分相加等于其中一部分"
+      },
+      {
+       "label": "D",
+       "text": "求部分数要用加法算"
+      }
+     ],
+     "answer": "A"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p089",
+   "description": "学习求比一个数多几的数，先找出与谁比、多几，再用这个数加上多的部分，能借助画线段或摆圆片说明为什么用加法，并正确算出结果。",
+   "mastery_criteria": [
+    "找出比较的两个量和多的部分",
+    "用加法求比一个数多几的数",
+    "画图说明数量关系"
+   ],
+   "misconceptions": [
+    "求比一个数多几的数时用减法",
+    "把“多几”的那个几当成得数"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.06",
+    "quote": "在解决生活情境问题的过程中，体会数和运算的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p089_q1",
+     "topicId": "mbj_p089",
+     "prompt": "小明有12张卡片，小红比小明多5张。小红有多少张卡片？",
+     "question": "小明有12张卡片，小红比小明多5张。小红有多少张卡片？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "小红比小明多5张，就是在小明的12张上再加5张：12+5=17张。多几是在原来的基础上添上几。",
+     "answer": "17",
+     "verify": "12+5"
+    },
+    {
+     "id": "mbj_p089_q2",
+     "topicId": "mbj_p089",
+     "prompt": "求比一个数多几的数，应该怎样算？",
+     "question": "求比一个数多几的数，应该怎样算？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "比一个数多几，说明这个量是在原数基础上又添了几，数量变多，所以用加法。减法是比一个数少几时才用。",
+     "options": [
+      {
+       "label": "A",
+       "text": "用这个数减去多的几"
+      },
+      {
+       "label": "B",
+       "text": "用这个数加上多的几"
+      },
+      {
+       "label": "C",
+       "text": "用多的几减去这个数"
+      },
+      {
+       "label": "D",
+       "text": "用这个数乘几"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p089_q3",
+     "topicId": "mbj_p089",
+     "prompt": "第一棵树上有23个苹果，第二棵树比它多6个，第二棵树上有多少个？",
+     "question": "第一棵树上有23个苹果，第二棵树比它多6个，第二棵树上有多少个？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "第二棵树比23多6，就在23的基础上加6：个位3+6=9，十位2不变，得29个。",
+     "answer": "29"
+    },
+    {
+     "id": "mbj_p089_q4",
+     "topicId": "mbj_p089",
+     "prompt": "小丽折了16只纸鹤，小芳比小丽多折7只。求小芳折了多少只，列式是？",
+     "question": "小丽折了16只纸鹤，小芳比小丽多折7只。求小芳折了多少只，列式是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "以小丽的16只为标准，小芳比这个数多7只，所以用小丽的数加7：16+7=23只。16-7求出的是比小丽少7只的数。",
+     "options": [
+      {
+       "label": "A",
+       "text": "16-7"
+      },
+      {
+       "label": "B",
+       "text": "7-16"
+      },
+      {
+       "label": "C",
+       "text": "16+7"
+      },
+      {
+       "label": "D",
+       "text": "16+16"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p089_q5",
+     "topicId": "mbj_p089",
+     "prompt": "二年级有34人参加合唱，三年级比二年级多9人。三年级有多少人参加？",
+     "question": "二年级有34人参加合唱，三年级比二年级多9人。三年级有多少人参加？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "三年级比34多9，用34加9：个位4+9=13，个位写3向十位进1，十位3+1=4，得43人。",
+     "answer": "43",
+     "verify": "34+9"
+    },
+    {
+     "id": "mbj_p089_q6",
+     "topicId": "mbj_p089",
+     "prompt": "为什么“比一个数多几”要用加法算？请结合一个例子说明。",
+     "question": "为什么“比一个数多几”要用加法算？请结合一个例子说明。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "先找准“比”后面那个标准量，再在它上面添加多的部分，添加就是加。",
+     "answer": "比一个数多几，就是在原来这个数的基础上再添上几，数变多了，所以用加法。例如小明12张，小红比小明多5张，小红就是12张再加5张，列式12+5=17。"
+    },
+    {
+     "id": "mbj_p089_q7",
+     "topicId": "mbj_p089",
+     "prompt": "小明有20元，小红的钱比小明多8元。两人一共有多少元？",
+     "question": "小明有20元，小红的钱比小明多8元。两人一共有多少元？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "先求小红有多少：20+8=28元；再把两人合起来：20+28=48元。问的是一共，两步都要做完。",
+     "answer": "48",
+     "verify": "20+20+8"
+    },
+    {
+     "id": "mbj_p089_q8",
+     "topicId": "mbj_p089",
+     "prompt": "小明有15本书，小红比小明多4本。下面说法正确的是？",
+     "question": "小明有15本书，小红比小明多4本。下面说法正确的是？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "比15多4就是15+4=19本，19确实比15多4本。11本是15-4，那是比小明少4本，方向错了。",
+     "options": [
+      {
+       "label": "A",
+       "text": "小红有11本，比小明少4本"
+      },
+      {
+       "label": "B",
+       "text": "小红有19本，但比小明少"
+      },
+      {
+       "label": "C",
+       "text": "小红只有4本"
+      },
+      {
+       "label": "D",
+       "text": "小红有19本，比小明多4本"
+      }
+     ],
+     "answer": "D"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p090",
+   "description": "学习求比一个数少几的数，先找出与谁比、少几，再用这个数减去少的部分，能借助图示说明为什么用减法，避免把两个数倒过来相减。",
+   "mastery_criteria": [
+    "找出比较的两个量和少的部分",
+    "用减法求比一个数少几的数",
+    "画图说明数量关系"
+   ],
+   "misconceptions": [
+    "求比一个数少几的数时用加法",
+    "用少的几减去这个数，出现小数减大数"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.16",
+    "quote": "能在熟悉的生活情境中运用数和数的运算，合理表达简单的数量关系，解决简单的问题。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p090_q1",
+     "topicId": "mbj_p090",
+     "prompt": "小刚有18支铅笔，小强比小刚少5支。小强有多少支铅笔？",
+     "question": "小刚有18支铅笔，小强比小刚少5支。小强有多少支铅笔？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "小强比18少5，就从18里去掉5：18-5，个位8-5=3，十位1不变，得13支。",
+     "answer": "13",
+     "verify": "18-5"
+    },
+    {
+     "id": "mbj_p090_q2",
+     "topicId": "mbj_p090",
+     "prompt": "求比一个数少几的数，应该怎样算？",
+     "question": "求比一个数少几的数，应该怎样算？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "比一个数少几，说明这个量是从原数里去掉几得到的，数量变少，所以用减法。用加法会得到比原数还大的结果。",
+     "options": [
+      {
+       "label": "A",
+       "text": "用这个数减去少的几"
+      },
+      {
+       "label": "B",
+       "text": "用这个数加上少的几"
+      },
+      {
+       "label": "C",
+       "text": "用少的几减去这个数"
+      },
+      {
+       "label": "D",
+       "text": "把这个数分成两半"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p090_q3",
+     "topicId": "mbj_p090",
+     "prompt": "树上有32只鸟，地上的鸟比树上少7只，地上有多少只鸟？",
+     "question": "树上有32只鸟，地上的鸟比树上少7只，地上有多少只鸟？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "地上比32少7，从32里去掉7：个位2减7不够减，退1个十，12-7=5，十位剩2，得25只。",
+     "answer": "25"
+    },
+    {
+     "id": "mbj_p090_q4",
+     "topicId": "mbj_p090",
+     "prompt": "小华跳了45下，小丽比小华少跳8下。求小丽跳了多少下，列式是？",
+     "question": "小华跳了45下，小丽比小华少跳8下。求小丽跳了多少下，列式是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "以小华的45下为标准，小丽比这个数少8下，所以用45减8：45-8=37下。8-45是小减大，算不出来的。",
+     "options": [
+      {
+       "label": "A",
+       "text": "45+8"
+      },
+      {
+       "label": "B",
+       "text": "45-8"
+      },
+      {
+       "label": "C",
+       "text": "8-45"
+      },
+      {
+       "label": "D",
+       "text": "45-8+8"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p090_q5",
+     "topicId": "mbj_p090",
+     "prompt": "一班有40人，二班比一班少6人。二班有多少人？",
+     "question": "一班有40人，二班比一班少6人。二班有多少人？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "二班比40少6，用40减6：个位0减6不够减，退1个十，10-6=4，十位剩3，得34人。",
+     "answer": "34",
+     "verify": "40-6"
+    },
+    {
+     "id": "mbj_p090_q6",
+     "topicId": "mbj_p090",
+     "prompt": "说说“比一个数少几”为什么用减法，计算时最容易错在哪里。",
+     "question": "说说“比一个数少几”为什么用减法，计算时最容易错在哪里。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "先用“比”后面的标准量当被减数，再去掉少的部分，方向就不会反。",
+     "answer": "比一个数少几，就是从这个数里去掉几，数变少了，所以用减法。最容易错的是把两个数倒过来减，写成8-45；也容易看到“少”就以为要加。列式时要用“比”字后面那个较大的数做被减数。"
+    },
+    {
+     "id": "mbj_p090_q7",
+     "topicId": "mbj_p090",
+     "prompt": "小明有25元，小红的钱比小明少9元。两人一共有多少元？",
+     "question": "小明有25元，小红的钱比小明少9元。两人一共有多少元？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "先求小红有多少：25-9=16元；再把两人合起来：25+16=41元。第一步用减、第二步用加，不能混。",
+     "answer": "41",
+     "verify": "25+(25-9)"
+    },
+    {
+     "id": "mbj_p090_q8",
+     "topicId": "mbj_p090",
+     "prompt": "小华有30张贴纸，小丽比小华少12张。下面说法正确的是？",
+     "question": "小华有30张贴纸，小丽比小华少12张。下面说法正确的是？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "比30少12就是30-12=18张。42张是把少当成加算出来的，12张是把少的部分当成了结果。",
+     "options": [
+      {
+       "label": "A",
+       "text": "小丽有42张"
+      },
+      {
+       "label": "B",
+       "text": "小丽有12张"
+      },
+      {
+       "label": "C",
+       "text": "小丽有18张"
+      },
+      {
+       "label": "D",
+       "text": "小丽比小华多12张"
+      }
+     ],
+     "answer": "C"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p091",
+   "description": "回顾第五单元四类数量关系，比较加法与减法分别解决什么问题，能根据问题中的关键语句选择算法，把解决问题的过程说清楚并检查结果。",
+   "mastery_criteria": [
+    "按关键语句判断该用加还是用减",
+    "说出四类问题的区别",
+    "检验结果是否符合题意"
+   ],
+   "misconceptions": [
+    "只凭“多”“少”两个字选算法，不看求的是谁",
+    "算出结果后不检查，答案比总数还大也不管"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.15",
+    "quote": "在简单的生活情境中，运用数和数的运算解决问题，能解释结果的实际意义，形成初步的应用意识。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p091_q1",
+     "topicId": "mbj_p091",
+     "prompt": "下面哪种问法要用加法算？",
+     "question": "下面哪种问法要用加法算？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "只有把两个部分合并、求一共才用加法。求另一部分、求比一个数少几、求相差多少，都是从一个整体里去掉或比较，用减法。",
+     "options": [
+      {
+       "label": "A",
+       "text": "已知总数和一部分，求另一部分"
+      },
+      {
+       "label": "B",
+       "text": "求比一个数少几的数"
+      },
+      {
+       "label": "C",
+       "text": "求两部分相差多少"
+      },
+      {
+       "label": "D",
+       "text": "两个部分合起来一共有多少"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p091_q2",
+     "topicId": "mbj_p091",
+     "prompt": "一班有26人，二班比一班多4人，二班有多少人？",
+     "question": "一班有26人，二班比一班多4人，二班有多少人？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "二班比26多4，用加法：个位6+4=10，个位写0向十位进1，十位2+1=3，得30人。",
+     "answer": "30"
+    },
+    {
+     "id": "mbj_p091_q3",
+     "topicId": "mbj_p091",
+     "prompt": "一共有35个座位，已经坐了18人，还空着多少个座位？",
+     "question": "一共有35个座位，已经坐了18人，还空着多少个座位？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "座位总数35去掉已坐的18人就是空座位：35-18，个位退位后15-8=7，十位2-1=1，得17个。",
+     "answer": "17",
+     "verify": "35-18"
+    },
+    {
+     "id": "mbj_p091_q4",
+     "topicId": "mbj_p091",
+     "prompt": "“小华有20元，比小明多5元。”小明有多少元？",
+     "question": "“小华有20元，比小明多5元。”小明有多少元？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "小华比小明多5元，说明小明比小华少5元，小明是20-5=15元。看到“多”就想加，是这类题最典型的错法。",
+     "options": [
+      {
+       "label": "A",
+       "text": "15元"
+      },
+      {
+       "label": "B",
+       "text": "25元"
+      },
+      {
+       "label": "C",
+       "text": "5元"
+      },
+      {
+       "label": "D",
+       "text": "20元"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p091_q5",
+     "topicId": "mbj_p091",
+     "prompt": "小明有20元，比小红多5元。两人一共有多少元？",
+     "question": "小明有20元，比小红多5元。两人一共有多少元？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "先求小红有多少：小明比小红多5，所以小红是20-5=15元；再求一共：20+15=35元。",
+     "answer": "35",
+     "verify": "20+(20-5)"
+    },
+    {
+     "id": "mbj_p091_q6",
+     "topicId": "mbj_p091",
+     "prompt": "请用一句话分别说清“求总数、求部分数、求比一个数多几、求比一个数少几”这四类问题怎么算。",
+     "question": "请用一句话分别说清“求总数、求部分数、求比一个数多几、求比一个数少几”这四类问题怎么算。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "四类问题的区别在于已知什么、求什么：先判断求的是整体还是某一部分，算法随之确定。",
+     "answer": "求总数把两部分相加；求部分数用总数减去已知部分；求比一个数多几的数用这个数加上多的部分；求比一个数少几的数用这个数减去少的部分。关键是先看清题目求的是哪一个量，再决定加还是减。"
+    },
+    {
+     "id": "mbj_p091_q7",
+     "topicId": "mbj_p091",
+     "prompt": "图书角有故事书和科技书共60本，其中故事书35本。科技书比故事书少多少本？",
+     "question": "图书角有故事书和科技书共60本，其中故事书35本。科技书比故事书少多少本？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "先求科技书：60-35=25本；再比多少：35-25=10本。问的是两种书的差，不能停在科技书的本数。",
+     "answer": "10",
+     "verify": "35-(60-35)"
+    },
+    {
+     "id": "mbj_p091_q8",
+     "topicId": "mbj_p091",
+     "prompt": "关于加法和减法分别解决什么问题，下面哪一句话是错的？",
+     "question": "关于加法和减法分别解决什么问题，下面哪一句话是错的？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "比一个数多几用加法，但比一个数少几要用减法，两者方向相反，说成都用加法是错的。其余三句都符合加、减法的意义。",
+     "options": [
+      {
+       "label": "A",
+       "text": "求总数用加法算"
+      },
+      {
+       "label": "B",
+       "text": "“比一个数多几”和“比一个数少几”都用加法算"
+      },
+      {
+       "label": "C",
+       "text": "已知总数和一部分求另一部分用减法"
+      },
+      {
+       "label": "D",
+       "text": "“比一个数少几”用这个数减去少的部分"
+      }
+     ],
+     "answer": "B"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p092",
+   "description": "学习100以内两位数加两位数、减两位数的笔算，理解相同数位对齐、从个位算起，个位满十向十位进1，个位不够减从十位退1，能正确书写竖式。",
+   "mastery_criteria": [
+    "按相同数位对齐写出竖式",
+    "笔算两位数加、减两位数",
+    "说出进位与退位的处理办法"
+   ],
+   "misconceptions": [
+    "竖式写的时候把个位和十位错开对不齐",
+    "个位满十忘记进位，得数少10"
+   ],
+   "std": {
+    "id": "mat-2022:1.KC.03",
+    "quote": "能口算简单的百以内数的加减法;能计算两位数和三位数的加减法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p092_q1",
+     "topicId": "mbj_p092",
+     "prompt": "用竖式计算 34+25，得数是多少？",
+     "question": "用竖式计算 34+25，得数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "竖式个位对个位、十位对十位：个位4+5=9，不满十；十位3+2=5，所以34+25=59。",
+     "answer": "59",
+     "verify": "34+25"
+    },
+    {
+     "id": "mbj_p092_q2",
+     "topicId": "mbj_p092",
+     "prompt": "笔算两位数加两位数时，应该从哪一位算起？",
+     "question": "笔算两位数加两位数时，应该从哪一位算起？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "笔算要从个位算起，因为个位相加满十要进1到十位，先算十位就不知道要不要加这个1，结果容易错。",
+     "options": [
+      {
+       "label": "A",
+       "text": "从十位算起，再算个位"
+      },
+      {
+       "label": "B",
+       "text": "从哪一位开始都可以"
+      },
+      {
+       "label": "C",
+       "text": "从个位算起，再算十位"
+      },
+      {
+       "label": "D",
+       "text": "只算十位，个位不用算"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p092_q3",
+     "topicId": "mbj_p092",
+     "prompt": "下面哪一道题在笔算时个位相加要向十位进1？",
+     "question": "下面哪一道题在笔算时个位相加要向十位进1？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "看个位：8+7=15、3+5=8、4+5=9、2+6=8，只有38+47的个位相加满十，要进1。判断进位只需看个位。",
+     "options": [
+      {
+       "label": "A",
+       "text": "23+45"
+      },
+      {
+       "label": "B",
+       "text": "34+25"
+      },
+      {
+       "label": "C",
+       "text": "52+36"
+      },
+      {
+       "label": "D",
+       "text": "38+47"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p092_q4",
+     "topicId": "mbj_p092",
+     "prompt": "笔算 46+38 时，竖式怎样对齐？个位相加满十怎么办？请说明过程。",
+     "question": "笔算 46+38 时，竖式怎样对齐？个位相加满十怎么办？请说明过程。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "相同数位对齐才能保证几个一和几个一相加、几个十和几个十相加；个位满十进1，十位要多加1。",
+     "answer": "把46和38上下写，个位6和8对齐，十位4和3对齐，相同数位对齐。先算个位6+8=14，个位写4，向十位进1；再算十位4+3+1=8。所以46+38=84。"
+    },
+    {
+     "id": "mbj_p092_q5",
+     "topicId": "mbj_p092",
+     "prompt": "一年级有男生27人，女生25人。每人发一本练习本，50本够不够？还差多少本？",
+     "question": "一年级有男生27人，女生25人。每人发一本练习本，50本够不够？还差多少本？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "先求一共多少人：27+25=52人，需要52本；50本比52本少2本，所以不够，还差2本。",
+     "answer": "2",
+     "verify": "27+25-50"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p093",
+   "description": "学习两位数加两位数的笔算，写竖式时相同数位对齐，从个位加起，个位满十向十位进1，能正确计算含进位的题目并解决生活中的求和问题。",
+   "mastery_criteria": [
+    "写竖式时相同数位对齐",
+    "笔算两位数加两位数（含进位）",
+    "用笔算解决求和问题"
+   ],
+   "misconceptions": [
+    "个位相加满十不进位，得数少10",
+    "把个位相加的十几整个写在个位上"
+   ],
+   "std": {
+    "id": "mat-2022:1.TS.04",
+    "quote": "数的运算教学应让学生感知数的加诚运算要在相同数位上进行"
+   },
+   "questions": [
+    {
+     "id": "mbj_p093_q1",
+     "topicId": "mbj_p093",
+     "prompt": "用竖式计算 42+35，得数是多少？",
+     "question": "用竖式计算 42+35，得数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "个位2+5=7，不满十不用进位；十位4+3=7，所以42+35=77。",
+     "answer": "77",
+     "verify": "42+35"
+    },
+    {
+     "id": "mbj_p093_q2",
+     "topicId": "mbj_p093",
+     "prompt": "用竖式计算 56+23，得数是多少？",
+     "question": "用竖式计算 56+23，得数是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "个位6+3=9，十位5+2=7，个位不满十不用进位，所以56+23=79。",
+     "answer": "79"
+    },
+    {
+     "id": "mbj_p093_q3",
+     "topicId": "mbj_p093",
+     "prompt": "27+36 的得数是多少？",
+     "question": "27+36 的得数是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "个位7+6=13，个位写3向十位进1；十位2+3+1=6，得63。53是漏了进位，513是把13整个写在个位后面。",
+     "options": [
+      {
+       "label": "A",
+       "text": "63"
+      },
+      {
+       "label": "B",
+       "text": "53"
+      },
+      {
+       "label": "C",
+       "text": "93"
+      },
+      {
+       "label": "D",
+       "text": "513"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p093_q4",
+     "topicId": "mbj_p093",
+     "prompt": "用竖式计算 34+28，个位 4+8=12，接下来应该怎么写？",
+     "question": "用竖式计算 34+28，个位 4+8=12，接下来应该怎么写？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "个位满十要把10个一换成1个十进到十位，个位只写2；十位把3+2再加上进位的1，得6，结果62。",
+     "options": [
+      {
+       "label": "A",
+       "text": "个位写12，十位算3+2=5"
+      },
+      {
+       "label": "B",
+       "text": "个位写2，向十位进1，十位算3+2+1=6"
+      },
+      {
+       "label": "C",
+       "text": "个位写2，十位算3+2=5，不进位"
+      },
+      {
+       "label": "D",
+       "text": "个位写1，十位写2"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p093_q5",
+     "topicId": "mbj_p093",
+     "prompt": "一班有28人，二班有34人。两个班一共有多少人？",
+     "question": "一班有28人，二班有34人。两个班一共有多少人？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "个位8+4=12，个位写2向十位进1；十位2+3+1=6，所以两个班一共62人。",
+     "answer": "62",
+     "verify": "28+34"
+    },
+    {
+     "id": "mbj_p093_q6",
+     "topicId": "mbj_p093",
+     "prompt": "笔算两位数加两位数时，为什么要把相同数位对齐？",
+     "question": "笔算两位数加两位数时，为什么要把相同数位对齐？",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "相同数位对齐是笔算的前提，对齐错了，位值就乱了，后面的进位也会跟着错。",
+     "answer": "因为只有相同数位上的数才能相加：个位上的几个一和几个一相加，十位上的几个十和几个十相加。如果对齐错了，就会把3个十当成3个一来加，得数就错了。所以个位对个位、十位对十位。"
+    },
+    {
+     "id": "mbj_p093_q7",
+     "topicId": "mbj_p093",
+     "prompt": "小明第一天看书26页，第二天比第一天多看18页。两天一共看了多少页？",
+     "question": "小明第一天看书26页，第二天比第一天多看18页。两天一共看了多少页？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "先求第二天：26+18=44页；再求两天一共：26+44=70页。第一步是求比26多18的数，第二步才是求和。",
+     "answer": "70",
+     "verify": "26+(26+18)"
+    },
+    {
+     "id": "mbj_p093_q8",
+     "topicId": "mbj_p093",
+     "prompt": "小明算 45+37，先算 5+7=12，再算 4+3=7，写成712。他错在哪里？",
+     "question": "小明算 45+37，先算 5+7=12，再算 4+3=7，写成712。他错在哪里？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "5+7=12确实是12，个位写2并进1；但十位应算4+3+1=8，他漏了进位的1，所以正确结果是82而不是712。",
+     "options": [
+      {
+       "label": "A",
+       "text": "个位相加算错了，应该是11"
+      },
+      {
+       "label": "B",
+       "text": "应该先算十位再算个位"
+      },
+      {
+       "label": "C",
+       "text": "忘记把个位进上来的1加到十位上"
+      },
+      {
+       "label": "D",
+       "text": "这道题根本不用进位"
+      }
+     ],
+     "answer": "C"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p094",
+   "description": "学习两位数减两位数的笔算，写竖式时相同数位对齐，从个位减起，个位不够减从十位退1，能正确计算含退位的题目并解决求剩余的问题。",
+   "mastery_criteria": [
+    "写竖式时相同数位对齐",
+    "笔算两位数减两位数（含退位）",
+    "用笔算解决求剩余问题"
+   ],
+   "misconceptions": [
+    "个位不够减时用减数减被减数，得数倒过来",
+    "退位后十位忘记减1，得数多10"
+   ],
+   "std": {
+    "id": "mat-2022:1.KC.03",
+    "quote": "能口算简单的百以内数的加减法;能计算两位数和三位数的加减法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p094_q1",
+     "topicId": "mbj_p094",
+     "prompt": "用竖式计算 76-34，得数是多少？",
+     "question": "用竖式计算 76-34，得数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "个位6-4=2，够减；十位7-3=4，所以76-34=42，不用退位。",
+     "answer": "42",
+     "verify": "76-34"
+    },
+    {
+     "id": "mbj_p094_q2",
+     "topicId": "mbj_p094",
+     "prompt": "用竖式计算 85-42，得数是多少？",
+     "question": "用竖式计算 85-42，得数是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "个位5-2=3，十位8-4=4，个位够减不用退位，所以85-42=43。",
+     "answer": "43"
+    },
+    {
+     "id": "mbj_p094_q3",
+     "topicId": "mbj_p094",
+     "prompt": "63-28 的得数是多少？",
+     "question": "63-28 的得数是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "个位3减8不够减，从十位退1个十，13-8=5；十位6退1剩5，再减2得3，所以得35。45是用8减3倒着算出来的，是真实错法。",
+     "options": [
+      {
+       "label": "A",
+       "text": "45"
+      },
+      {
+       "label": "B",
+       "text": "41"
+      },
+      {
+       "label": "C",
+       "text": "31"
+      },
+      {
+       "label": "D",
+       "text": "35"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p094_q4",
+     "topicId": "mbj_p094",
+     "prompt": "计算 52-27 时，个位2减7不够减，应该怎么办？",
+     "question": "计算 52-27 时，个位2减7不够减，应该怎么办？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "个位不够减要从十位退1个十，2变成12，12-7=5；十位5退1剩4，4-2=2，结果25。倒着减或直接写0都不符合退位规则。",
+     "options": [
+      {
+       "label": "A",
+       "text": "从十位退1个十，12-7=5，十位剩4，4-2=2，得25"
+      },
+      {
+       "label": "B",
+       "text": "用7-2=5，十位5-2=3，得35"
+      },
+      {
+       "label": "C",
+       "text": "把52看成42，42-27=15"
+      },
+      {
+       "label": "D",
+       "text": "个位写0，十位5-2=3，得30"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p094_q5",
+     "topicId": "mbj_p094",
+     "prompt": "书架上有64本书，借走了29本，还剩多少本？",
+     "question": "书架上有64本书，借走了29本，还剩多少本？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "个位4减9不够减，退1个十，14-9=5；十位6退1剩5，5-2=3，所以还剩35本。",
+     "answer": "35",
+     "verify": "64-29"
+    },
+    {
+     "id": "mbj_p094_q6",
+     "topicId": "mbj_p094",
+     "prompt": "笔算 70-36 时，个位0减6不够减，怎么办？请把过程说清楚。",
+     "question": "笔算 70-36 时，个位0减6不够减，怎么办？请把过程说清楚。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "个位是0时同样要退位，退来的1个十就是10个一，够减；十位退1后必须减掉这1。",
+     "answer": "个位0减6不够减，从十位退1个十，退来的10减6得4，个位写4；十位7被退走1个十，剩6，6-3=3。所以70-36=34。退位后十位一定要记得少1。"
+    },
+    {
+     "id": "mbj_p094_q7",
+     "topicId": "mbj_p094",
+     "prompt": "小明有80元，买书包用去45元，又买文具用去18元，还剩多少元？",
+     "question": "小明有80元，买书包用去45元，又买文具用去18元，还剩多少元？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "先算买书包后剩多少：80-45=35元；再减文具钱：35-18=17元。两次都是用去，用连减，两步都要退位。",
+     "answer": "17",
+     "verify": "80-45-18"
+    },
+    {
+     "id": "mbj_p094_q8",
+     "topicId": "mbj_p094",
+     "prompt": "笔算两位数减两位数时，下面哪一句话是正确的？",
+     "question": "笔算两位数减两位数时，下面哪一句话是正确的？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "退位是从十位借1个十化成10个一，十位少了1个十，所以十位上的数必须减1。倒着减会得到错的答案，两位数相减也经常需要退位。",
+     "options": [
+      {
+       "label": "A",
+       "text": "个位不够减时用减数的个位减被减数的个位"
+      },
+      {
+       "label": "B",
+       "text": "个位不够减时从十位退1，十位上的数就少1"
+      },
+      {
+       "label": "C",
+       "text": "退位以后十位上的数不变"
+      },
+      {
+       "label": "D",
+       "text": "两位数减两位数一定不用退位"
+      }
+     ],
+     "answer": "B"
+    }
+   ]
+  }
+ ]
+}

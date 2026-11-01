@@ -1,0 +1,2771 @@
+{
+ "shard": "S06",
+ "subject": "math-bj",
+ "book": "一下",
+ "grade": 1,
+ "semester": "下",
+ "seg": "小学",
+ "points": [
+  {
+   "topicId": "mbj_p095",
+   "description": "在两位数加一位数进位的基础上学习两位数加两位数的进位加法：个位相加满十向十位进一，十位相加时要加上进上来的那一。会用竖式规范书写，并把算法用到求一共有多少的实际问题中。",
+   "mastery_criteria": [
+    "能正确计算两位数加两位数的进位加法，得数不出错",
+    "能用竖式书写，做到相同数位对齐、个位满十进一",
+    "能在实际问题中列式求一共有多少"
+   ],
+   "misconceptions": [
+    "个位相加满十后忘记向十位进一，得数少十",
+    "把个位相加得到的 13 整个写在个位上",
+    "十位相加时忘了再加上进上来的 1"
+   ],
+   "std": {
+    "id": "mat-2022:1.KC.03",
+    "quote": "能口算简单的百以内数的加减法;能计算两位数和三位数的加减法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p095_q1",
+     "topicId": "mbj_p095",
+     "prompt": "算一算：38 加 27 等于多少？",
+     "question": "算一算：38 加 27 等于多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "65",
+     "verify": "38+27",
+     "explanation": "个位 8 加 7 得 15，个位写 5，向十位进 1；十位 3 加 2 得 5，再加进上来的 1 得 6，所以得数是 65。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p095_q2",
+     "topicId": "mbj_p095",
+     "prompt": "用竖式计算 46 加 35 时，个位 6 加 5 得 11，接下来该怎样写？",
+     "question": "用竖式计算 46 加 35 时，个位 6 加 5 得 11，接下来该怎样写？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "个位写 11，十位不进位"
+      },
+      {
+       "label": "B",
+       "text": "个位写 1，向十位进 11"
+      },
+      {
+       "label": "C",
+       "text": "个位写 0，向十位进 1"
+      },
+      {
+       "label": "D",
+       "text": "个位写 1，向十位进 1"
+      }
+     ],
+     "answer": "D",
+     "explanation": "个位满十要向十位进 1，个位只写 11 里的个位数字 1，进上来的 1 表示 1 个十，十位相加时要把它加上。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p095_q3",
+     "topicId": "mbj_p095",
+     "prompt": "一班有 27 人，二班有 35 人，两个班一共有多少人？",
+     "question": "一班有 27 人，二班有 35 人，两个班一共有多少人？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "62",
+     "verify": "27+35",
+     "explanation": "求一共有多少用加法，个位 7 加 5 得 12，写 2 进 1；十位 2 加 3 得 5，加进位的 1 得 6，共有 62 人。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p095_q4",
+     "topicId": "mbj_p095",
+     "prompt": "计算 57 加 26 时，个位满十向十位进 1，和的十位上是（ ）。",
+     "question": "计算 57 加 26 时，个位满十向十位进 1，和的十位上是（ ）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "8",
+     "explanation": "个位 7 加 6 得 13，个位写 3 进 1；十位 5 加 2 得 7，再加上进位的 1 得 8，所以十位上是 8。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p095_q5",
+     "topicId": "mbj_p095",
+     "prompt": "下面哪个算式在用竖式计算时，个位需要向十位进 1？",
+     "question": "下面哪个算式在用竖式计算时，个位需要向十位进 1？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "23 加 45"
+      },
+      {
+       "label": "B",
+       "text": "34 加 52"
+      },
+      {
+       "label": "C",
+       "text": "47 加 38"
+      },
+      {
+       "label": "D",
+       "text": "21 加 16"
+      }
+     ],
+     "answer": "C",
+     "explanation": "47 加 38 的个位 7 加 8 得 15，满十要进 1；其余三个算式的个位相加分别是 8、6、7，都不满十，不用进位。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p095_q6",
+     "topicId": "mbj_p095",
+     "prompt": "一个加数是 47，另一个加数比它少 9，这两个数的和是多少？",
+     "question": "一个加数是 47，另一个加数比它少 9，这两个数的和是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "85",
+     "verify": "(47-9)+47",
+     "explanation": "另一个加数是 47 减 9 得 38。再算 47 加 38：个位 7 加 8 得 15，写 5 进 1；十位 4 加 3 加 1 得 8，和是 85。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p095_q7",
+     "topicId": "mbj_p095",
+     "prompt": "下面四个算式中，得数最大的是哪一个？",
+     "question": "下面四个算式中，得数最大的是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "36 加 27"
+      },
+      {
+       "label": "B",
+       "text": "45 加 18"
+      },
+      {
+       "label": "C",
+       "text": "29 加 35"
+      },
+      {
+       "label": "D",
+       "text": "52 加 19"
+      }
+     ],
+     "answer": "D",
+     "explanation": "四个算式分别算得 63、63、64、71，比一比可知 52 加 19 的得数 71 最大。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p095_q8",
+     "topicId": "mbj_p095",
+     "prompt": "用竖式计算两位数加两位数的进位加法时，要按什么顺序算？进位要注意什么？",
+     "question": "用竖式计算两位数加两位数的进位加法时，要按什么顺序算？进位要注意什么？",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "先把相同数位对齐，从个位算起。个位相加满十时，个位只写相加所得数的个位数字，同时向十位进 1；十位相加时要把进上来的 1 一起加进去，最后把得数写在横线下面。",
+     "explanation": "从个位算起才能及时处理进位，进上来的 1 表示 1 个十，如果十位相加时漏掉它，得数就会少十。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p096",
+   "description": "学习两位数减两位数的退位减法：个位不够减时从十位退一当十，与个位上的数合起来再减，十位相减时要减去退走的一。用竖式书写，并解决求还剩多少的实际问题。",
+   "mastery_criteria": [
+    "能正确计算两位数减两位数的退位减法",
+    "能在个位不够减时从十位退一当十再减",
+    "能用减法解决求还剩多少的实际问题"
+   ],
+   "misconceptions": [
+    "个位不够减就用大数减小数，把 3 减 7 算成 7 减 3",
+    "从十位退了 1，却把个位当成 10 而不是十几",
+    "十位相减时忘记减去退走的 1"
+   ],
+   "std": {
+    "id": "mat-2022:1.XY.03",
+    "quote": "能口算简单的百以内数的加减法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p096_q1",
+     "topicId": "mbj_p096",
+     "prompt": "算一算：52 减 38 等于多少？",
+     "question": "算一算：52 减 38 等于多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "14",
+     "verify": "52-38",
+     "explanation": "个位 2 减 8 不够减，从十位退 1 得 12，12 减 8 得 4；十位 5 退走 1 剩 4，4 减 3 得 1，所以得数是 14。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p096_q2",
+     "topicId": "mbj_p096",
+     "prompt": "用竖式计算 63 减 27 时，个位 3 减 7 不够减，应该怎么办？",
+     "question": "用竖式计算 63 减 27 时，个位 3 减 7 不够减，应该怎么办？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "用 7 减 3 得 4 写在个位"
+      },
+      {
+       "label": "B",
+       "text": "从十位退 1，个位当 10 再减"
+      },
+      {
+       "label": "C",
+       "text": "把 63 看成 60 再减 27"
+      },
+      {
+       "label": "D",
+       "text": "从十位退 1，个位当 13 再减"
+      }
+     ],
+     "answer": "D",
+     "explanation": "从十位退下来的 1 是一个十，和个位原来的 3 合起来是 13，用 13 减 7 得 6，这样个位才够减。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p096_q3",
+     "topicId": "mbj_p096",
+     "prompt": "图书角原来有 70 本书，借走 26 本，还剩多少本？",
+     "question": "图书角原来有 70 本书，借走 26 本，还剩多少本？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "44",
+     "verify": "70-26",
+     "explanation": "求还剩多少用减法。个位 0 减 6 不够减，从十位退 1 得 10，10 减 6 得 4；十位 7 退走 1 剩 6，6 减 2 得 4，还剩 44 本。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p096_q4",
+     "topicId": "mbj_p096",
+     "prompt": "计算 81 减 45 时，个位 1 减 5 不够减，从十位退 1 后，个位上是（ ）减 5。",
+     "question": "计算 81 减 45 时，个位 1 减 5 不够减，从十位退 1 后，个位上是（ ）减 5。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "11",
+     "explanation": "退下来的 1 个十是 10，和个位原来的 1 合起来是 11，所以个位上是 11 减 5 得 6，结果是 36。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p096_q5",
+     "topicId": "mbj_p096",
+     "prompt": "下面哪个算式在计算时，个位需要向十位退 1？",
+     "question": "下面哪个算式在计算时，个位需要向十位退 1？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "78 减 23"
+      },
+      {
+       "label": "B",
+       "text": "65 减 32"
+      },
+      {
+       "label": "C",
+       "text": "54 减 27"
+      },
+      {
+       "label": "D",
+       "text": "96 减 51"
+      }
+     ],
+     "answer": "C",
+     "explanation": "54 减 27 的个位 4 减 7 不够减，要从十位退 1；其余三个算式个位分别是 8 减 3、5 减 2、6 减 1，都够减，不用退位。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p096_q6",
+     "topicId": "mbj_p096",
+     "prompt": "被减数是 92，差是 47，减数是多少？",
+     "question": "被减数是 92，差是 47，减数是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "45",
+     "verify": "92-47",
+     "explanation": "减数等于被减数减差，用 92 减 47：个位 2 减 7 不够减，退 1 得 12，12 减 7 得 5；十位 9 退 1 剩 8，8 减 4 得 4，减数是 45。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p096_q7",
+     "topicId": "mbj_p096",
+     "prompt": "比较 63 减 28 与 63 减 38 的结果，哪一个更大？",
+     "question": "比较 63 减 28 与 63 减 38 的结果，哪一个更大？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "63 减 38 的结果大"
+      },
+      {
+       "label": "B",
+       "text": "两个结果一样大"
+      },
+      {
+       "label": "C",
+       "text": "不能比较大小"
+      },
+      {
+       "label": "D",
+       "text": "63 减 28 的结果大"
+      }
+     ],
+     "answer": "D",
+     "explanation": "63 减 28 得 35，63 减 38 得 25。被减数相同时，减数越小，剩下的就越多，所以 63 减 28 的结果大。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p096_q8",
+     "topicId": "mbj_p096",
+     "prompt": "用竖式计算 54 减 27 时，个位不够减该怎么办？请把过程说清楚。",
+     "question": "用竖式计算 54 减 27 时，个位不够减该怎么办？请把过程说清楚。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "个位 4 减 7 不够减，就从十位退 1，十位上的 5 变成 4；退下来的 1 个十和个位的 4 合起来是 14，14 减 7 得 7，写在个位上；十位 4 减 2 得 2，结果是 27。",
+     "explanation": "退位的关键是把退下来的 1 个十换成 10 个一，与个位原有的数合起来再减，同时十位要少 1，否则得数会多十。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p097",
+   "description": "在加、减计算的基础上练习竖式的规范写法：相同数位对齐、从个位算起、进位与退位的处理，并学会用加减法的关系检验得数，把竖式用到实际问题中，养成检查的习惯。",
+   "mastery_criteria": [
+    "能按规范写出加法和减法的竖式",
+    "能用减法检验加法、用加法检验减法",
+    "能找出竖式中数位没对齐、漏进位等错误"
+   ],
+   "misconceptions": [
+    "把两个数的首位对齐，数位错位后相加",
+    "从十位开始算，进位时来不及处理",
+    "检验时用同一种运算再算一遍，没有换方法"
+   ],
+   "std": {
+    "id": "mat-2022:1.TS.04",
+    "quote": "数的运算教学应让学生感知数的加诚运算要在相同数位上进行"
+   },
+   "questions": [
+    {
+     "id": "mbj_p097_q1",
+     "topicId": "mbj_p097",
+     "prompt": "用竖式计算加法时，两个加数应该怎样对齐？",
+     "question": "用竖式计算加法时，两个加数应该怎样对齐？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "第一个数的个位对齐第二个数的十位"
+      },
+      {
+       "label": "B",
+       "text": "两个数的首位对齐就行"
+      },
+      {
+       "label": "C",
+       "text": "从左端对齐，右端不管"
+      },
+      {
+       "label": "D",
+       "text": "个位与个位对齐，十位与十位对齐"
+      }
+     ],
+     "answer": "D",
+     "explanation": "竖式要把相同数位对齐，个位对个位、十位对十位，这样相同数位上的数才能直接相加减，得数才不会错位。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p097_q2",
+     "topicId": "mbj_p097",
+     "prompt": "用竖式计算加法和减法，一般从哪一位开始算？",
+     "question": "用竖式计算加法和减法，一般从哪一位开始算？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "从个位开始算"
+      },
+      {
+       "label": "B",
+       "text": "从十位开始算"
+      },
+      {
+       "label": "C",
+       "text": "从得数的最高位开始算"
+      },
+      {
+       "label": "D",
+       "text": "先算要进位的那一位"
+      }
+     ],
+     "answer": "A",
+     "explanation": "从个位算起，个位满十才能及时向十位进 1，个位不够减才能及时从十位退 1，算十位时再把进位或退位算进去。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p097_q3",
+     "topicId": "mbj_p097",
+     "prompt": "用竖式计算 45 加 38，结果是多少？",
+     "question": "用竖式计算 45 加 38，结果是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "83",
+     "verify": "45+38",
+     "explanation": "个位 5 加 8 得 13，个位写 3 向十位进 1；十位 4 加 3 得 7，再加进位的 1 得 8，结果是 83。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p097_q4",
+     "topicId": "mbj_p097",
+     "prompt": "用竖式计算 72 减 35，十位上的 7 退走 1 后还剩（ ）。",
+     "question": "用竖式计算 72 减 35，十位上的 7 退走 1 后还剩（ ）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "6",
+     "explanation": "个位 2 减 5 不够减，从十位退 1，十位的 7 就少 1 变成 6，再用 6 减 3 得 3，结果是 37。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p097_q5",
+     "topicId": "mbj_p097",
+     "prompt": "要检验 47 加 25 等于 72 算得对不对，下面哪种方法合适？",
+     "question": "要检验 47 加 25 等于 72 算得对不对，下面哪种方法合适？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "再用 72 加 25 算一遍"
+      },
+      {
+       "label": "B",
+       "text": "用 47 减 25，看得不得 72"
+      },
+      {
+       "label": "C",
+       "text": "把 47 和 25 相乘看得不得 72"
+      },
+      {
+       "label": "D",
+       "text": "用 72 减 25，看得不得 47"
+      }
+     ],
+     "answer": "D",
+     "explanation": "加法和减法互为逆运算，和减去一个加数应该得另一个加数，所以用 72 减 25 检验最合适。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p097_q6",
+     "topicId": "mbj_p097",
+     "prompt": "小华在竖式中把十位上的 3 看成了 8，算出的得数是 95，正确的得数是多少？",
+     "question": "小华在竖式中把十位上的 3 看成了 8，算出的得数是 95，正确的得数是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "45",
+     "verify": "95-50",
+     "explanation": "十位上的 3 看成 8，多算了 5 个十也就是 50，所以正确得数是 95 减 50 得 45。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p097_q7",
+     "topicId": "mbj_p097",
+     "prompt": "计算 36 加 47 时，个位 6 加 7 得 13，只在个位写了 3，十位写成 7，得 73。错在哪里？",
+     "question": "计算 36 加 47 时，个位 6 加 7 得 13，只在个位写了 3，十位写成 7，得 73。错在哪里？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "个位相加的得数算错了"
+      },
+      {
+       "label": "B",
+       "text": "十位忘记加上进位的 1"
+      },
+      {
+       "label": "C",
+       "text": "两个数没有对齐数位"
+      },
+      {
+       "label": "D",
+       "text": "把加号看成了减号"
+      }
+     ],
+     "answer": "B",
+     "explanation": "个位 6 加 7 得 13，要写 3 进 1，十位 3 加 4 得 7 后还要加进位的 1 得 8，正确结果是 83，不是 73。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p097_q8",
+     "topicId": "mbj_p097",
+     "prompt": "写竖式计算时要注意哪些地方？请至少说出三点。",
+     "question": "写竖式计算时要注意哪些地方？请至少说出三点。",
+     "type": "short-answer",
+     "difficulty": "basic",
+     "answer": "相同数位要对齐，个位对个位、十位对十位；要从个位算起；个位相加满十要向十位进 1，个位不够减要从十位退 1；得数要写在横线下面，算完还要检查一遍。",
+     "explanation": "竖式的每一步都对应数位和进位、退位的处理，哪一步松了都会让得数出错，所以对齐、顺序、进退位和检查缺一不可。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p098",
+   "description": "学习三个数的连加和连减：按从左到右的顺序一步一步算，把前两个数算出的得数记准，再和第三个数计算，并把连加连减用到需要两步才能求出结果的实际问题中。",
+   "mastery_criteria": [
+    "能按从左到右的顺序计算连加、连减式题",
+    "能说出连加连减中每一步求的是什么",
+    "能用连加连减解决两步计算的实际问题"
+   ],
+   "misconceptions": [
+    "连减时先算后面两个数的差，再用第一个数去减",
+    "把三个数任意调换顺序相加，得数忽大忽小",
+    "应用题漏掉中间一步，只算了其中一个数"
+   ],
+   "std": {
+    "id": "mat-2022:1.KC.03",
+    "quote": "能口算简单的百以内数的加减法;能计算两位数和三位数的加减法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p098_q1",
+     "topicId": "mbj_p098",
+     "prompt": "算一算：28 加 15 再加 9 等于多少？",
+     "question": "算一算：28 加 15 再加 9 等于多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "52",
+     "verify": "28+15+9",
+     "explanation": "先算 28 加 15 得 43，再把 43 加 9：个位 3 加 9 得 12，写 2 进 1；十位 4 加 1 得 5，结果是 52。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p098_q2",
+     "topicId": "mbj_p098",
+     "prompt": "计算连加式题时，应该按什么顺序算？",
+     "question": "计算连加式题时，应该按什么顺序算？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "从左往右依次计算"
+      },
+      {
+       "label": "B",
+       "text": "先把后两个数相加"
+      },
+      {
+       "label": "C",
+       "text": "先把大的两个数相加"
+      },
+      {
+       "label": "D",
+       "text": "从右往左依次计算"
+      }
+     ],
+     "answer": "A",
+     "explanation": "连加式题要从左往右依次计算，先用前两个数算出得数，再用这个得数和第三个数相加，顺序不能随意改。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p098_q3",
+     "topicId": "mbj_p098",
+     "prompt": "停车场有 45 辆车，先开走 18 辆，又开走 9 辆，现在还有多少辆？",
+     "question": "停车场有 45 辆车，先开走 18 辆，又开走 9 辆，现在还有多少辆？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "18",
+     "verify": "45-18-9",
+     "explanation": "先算 45 减 18 得 27，算的是第一次开走后剩下的辆数；再算 27 减 9 得 18，就是现在还有 18 辆车。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p098_q4",
+     "topicId": "mbj_p098",
+     "prompt": "计算 63 减 27 再减 15 时，先算 63 减 27 得（ ），再减 15。",
+     "question": "计算 63 减 27 再减 15 时，先算 63 减 27 得（ ），再减 15。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "36",
+     "explanation": "63 减 27：个位 3 减 7 不够减，退 1 得 13，13 减 7 得 6；十位 6 退 1 剩 5，5 减 2 得 3，所以第一步得 36。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p098_q5",
+     "topicId": "mbj_p098",
+     "prompt": "计算 72 减 35 再减 18，第一步应该先算哪两个数？",
+     "question": "计算 72 减 35 再减 18，第一步应该先算哪两个数？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "35 减 18"
+      },
+      {
+       "label": "B",
+       "text": "72 减 18"
+      },
+      {
+       "label": "C",
+       "text": "72 加 35"
+      },
+      {
+       "label": "D",
+       "text": "72 减 35"
+      }
+     ],
+     "answer": "D",
+     "explanation": "连减要从左往右算，先用被减数 72 减去第一个减数 35 得 37，再用 37 减去 18 得 19。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p098_q6",
+     "topicId": "mbj_p098",
+     "prompt": "树上原来有一些桃子，猴子先摘走 16 个，又摘走 9 个，还剩 25 个。树上原来有多少个桃子？",
+     "question": "树上原来有一些桃子，猴子先摘走 16 个，又摘走 9 个，还剩 25 个。树上原来有多少个桃子？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "50",
+     "verify": "16+9+25",
+     "explanation": "摘走的加上剩下的就是原来的个数：先算 16 加 9 得 25，再算 25 加 25 得 50，所以原来有 50 个桃子。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p098_q7",
+     "topicId": "mbj_p098",
+     "prompt": "小明算 80 减 26 再减 34，先得 54 再得 20；小红先算 26 加 34 得 60，再算 80 减 60 也得 20。两人的结果怎样？",
+     "question": "小明算 80 减 26 再减 34，先得 54 再得 20；小红先算 26 加 34 得 60，再算 80 减 60 也得 20。两人的结果怎样？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "只有小明的算法对"
+      },
+      {
+       "label": "B",
+       "text": "只有小红的算法对"
+      },
+      {
+       "label": "C",
+       "text": "两人结果相同，算法都对"
+      },
+      {
+       "label": "D",
+       "text": "两人都算错了"
+      }
+     ],
+     "answer": "C",
+     "explanation": "连续减去两个数，等于减去这两个数的和：26 加 34 得 60，80 减 60 得 20，和小明一步一步算的结果一样。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p098_q8",
+     "topicId": "mbj_p098",
+     "prompt": "商店有 90 个面包，上午卖出 35 个，下午卖出 28 个。请列连减算式求还剩多少个，并说明每一步算的是什么。",
+     "question": "商店有 90 个面包，上午卖出 35 个，下午卖出 28 个。请列连减算式求还剩多少个，并说明每一步算的是什么。",
+     "type": "short-answer",
+     "difficulty": "basic",
+     "answer": "列式是 90 减 35 再减 28。第一步 90 减 35 得 55，算的是上午卖出后还剩多少个；第二步 55 减 28 得 27，算的是下午又卖出后还剩 27 个面包。",
+     "explanation": "连减的每一步都要说清它表示的中间结果，第一步是卖出一次后剩下的，第二步才是最后的答案，不能跳步。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p099",
+   "description": "学习加法和减法混在一起的式题：按从左到右的顺序一步一步算，先算的一步的结果要记准，还要能根据又来了、开走了这样的情境判断该加还是该减，正确列出加减混合算式。",
+   "mastery_criteria": [
+    "能按从左到右的顺序计算加减混合式题",
+    "能根据情境判断先加还是先减并列出算式",
+    "能说出混合算式中每一步表示的意思"
+   ],
+   "misconceptions": [
+    "加减混合时先算后面的减法，把顺序颠倒",
+    "看到又来了就用加法，不注意前面还有减法",
+    "把两步算式的得数写错一位，整题跟着错"
+   ],
+   "std": {
+    "id": "mat-2022:1.KC.08",
+    "quote": "混合运算〈以两步为主，不超过三步)，正确运用小括号和中括号"
+   },
+   "questions": [
+    {
+     "id": "mbj_p099_q1",
+     "topicId": "mbj_p099",
+     "prompt": "算一算：45 减 18 再加 27 等于多少？",
+     "question": "算一算：45 减 18 再加 27 等于多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "54",
+     "verify": "45-18+27",
+     "explanation": "先算 45 减 18 得 27，再把 27 加 27：个位 7 加 7 得 14，写 4 进 1；十位 2 加 2 加 1 得 5，结果是 54。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p099_q2",
+     "topicId": "mbj_p099",
+     "prompt": "计算 60 加 25 减 38 时，第一步应该算什么？",
+     "question": "计算 60 加 25 减 38 时，第一步应该算什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "25 减 38"
+      },
+      {
+       "label": "B",
+       "text": "60 减 38"
+      },
+      {
+       "label": "C",
+       "text": "60 加 38"
+      },
+      {
+       "label": "D",
+       "text": "60 加 25"
+      }
+     ],
+     "answer": "D",
+     "explanation": "加减混合式题从左往右算，先算 60 加 25 得 85，再用 85 减 38 得 47。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p099_q3",
+     "topicId": "mbj_p099",
+     "prompt": "车上原来有 32 人，到站下去 15 人，又上来 9 人，现在车上有多少人？",
+     "question": "车上原来有 32 人，到站下去 15 人，又上来 9 人，现在车上有多少人？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "26",
+     "verify": "32-15+9",
+     "explanation": "下去要减，上来要加：先算 32 减 15 得 17，再算 17 加 9 得 26，现在车上有 26 人。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p099_q4",
+     "topicId": "mbj_p099",
+     "prompt": "计算 74 减 39 加 26，先算 74 减 39 得（ ），再加上 26。",
+     "question": "计算 74 减 39 加 26，先算 74 减 39 得（ ），再加上 26。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "35",
+     "explanation": "74 减 39：个位 4 减 9 不够减，退 1 得 14，14 减 9 得 5；十位 7 退 1 剩 6，6 减 3 得 3，第一步得 35。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p099_q5",
+     "topicId": "mbj_p099",
+     "prompt": "小明有 25 张卡片，妈妈又给他 18 张，他送给同学 12 张。求现在有多少张，算式是什么？",
+     "question": "小明有 25 张卡片，妈妈又给他 18 张，他送给同学 12 张。求现在有多少张，算式是什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "25 减 18 再加 12"
+      },
+      {
+       "label": "B",
+       "text": "25 加 18 再加 12"
+      },
+      {
+       "label": "C",
+       "text": "25 减 18 再减 12"
+      },
+      {
+       "label": "D",
+       "text": "25 加 18 再减 12"
+      }
+     ],
+     "answer": "D",
+     "explanation": "妈妈又给 18 张要加，送给同学 12 张要减，所以先算 25 加 18 得 43，再算 43 减 12 得 31 张。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p099_q6",
+     "topicId": "mbj_p099",
+     "prompt": "图书角有 64 本书，借出 27 本，后来又买来 15 本，现在图书角有多少本书？",
+     "question": "图书角有 64 本书，借出 27 本，后来又买来 15 本，现在图书角有多少本书？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "52",
+     "verify": "64-27+15",
+     "explanation": "先算借出后剩下多少：64 减 27 得 37；再算买来以后的册数：37 加 15 得 52，所以现在有 52 本书。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p099_q7",
+     "topicId": "mbj_p099",
+     "prompt": "小华算 80 减 45 加 18，先算 80 减 45 得 35，再算 35 加 18 得 53。如果先算 45 加 18 得 63，再算 80 减 63 得 17，哪个结果对？",
+     "question": "小华算 80 减 45 加 18，先算 80 减 45 得 35，再算 35 加 18 得 53。如果先算 45 加 18 得 63，再算 80 减 63 得 17，哪个结果对？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "53 对，加减混合要从左往右算"
+      },
+      {
+       "label": "B",
+       "text": "17 对，先算后面的加法更简便"
+      },
+      {
+       "label": "C",
+       "text": "两个结果都对"
+      },
+      {
+       "label": "D",
+       "text": "两个结果都错"
+      }
+     ],
+     "answer": "A",
+     "explanation": "没有括号的加减混合式题要从左往右依次计算，先算出的 53 才符合运算顺序，17 是把运算顺序改了才得到的。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p099_q8",
+     "topicId": "mbj_p099",
+     "prompt": "请说说怎样计算 82 减 47 加 26，并写出每一步的得数。",
+     "question": "请说说怎样计算 82 减 47 加 26，并写出每一步的得数。",
+     "type": "short-answer",
+     "difficulty": "basic",
+     "answer": "加减混合式题按从左往右的顺序算。先算 82 减 47：个位 2 减 7 不够减，从十位退 1，12 减 7 得 5；十位 7 减 4 得 3，第一步得 35。再算 35 加 26 得 61，结果是 61。",
+     "explanation": "先说清运算顺序，再说清退位的过程，就能看出每一步的得数是怎么来的，其中 35 是中间结果，61 才是最后的答案。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p100",
+   "description": "整理本单元学过的 100 以内加法和减法：口算与竖式的联系、进位与退位的判断、得数的估算与检验，通过比较和反思找出自己容易出错的地方，逐步养成检查得数的习惯。",
+   "mastery_criteria": [
+    "能说出进位加法和退位减法的算法要点",
+    "能用估算或验算判断得数是否合理",
+    "能找出自己计算中的错误并改正"
+   ],
+   "misconceptions": [
+    "估算 47 加 38 时只看十位，得数差得很多",
+    "只检查算得对不对，不看题目要求加还是减",
+    "认为进位退位只和十位有关，个位不用管"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.06",
+    "quote": "在解决生活情境问题的过程中，体会数和运算的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p100_q1",
+     "topicId": "mbj_p100",
+     "prompt": "下面哪一句话的说法是正确的？",
+     "question": "下面哪一句话的说法是正确的？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "两位数加两位数，个位满十要向十位进 1"
+      },
+      {
+       "label": "B",
+       "text": "两位数加两位数，十位满十要向个位进 1"
+      },
+      {
+       "label": "C",
+       "text": "减法个位不够减时向个位借 1"
+      },
+      {
+       "label": "D",
+       "text": "竖式计算从十位开始算更方便"
+      }
+     ],
+     "answer": "A",
+     "explanation": "加法里满十进的是十位，因为 10 个一就是 1 个十；减法里个位不够减要向十位借，而且必须从个位开始算。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p100_q2",
+     "topicId": "mbj_p100",
+     "prompt": "算一算：56 加 24 等于多少？",
+     "question": "算一算：56 加 24 等于多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "80",
+     "verify": "56+24",
+     "explanation": "个位 6 加 4 得 10，个位写 0 向十位进 1；十位 5 加 2 得 7，加进位的 1 得 8，所以得数是 80。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p100_q3",
+     "topicId": "mbj_p100",
+     "prompt": "估算 47 加 38 的得数，下面哪种说法比较合理？",
+     "question": "估算 47 加 38 的得数，下面哪种说法比较合理？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "得数一定比 100 大"
+      },
+      {
+       "label": "B",
+       "text": "得数在 50 左右"
+      },
+      {
+       "label": "C",
+       "text": "得数比 70 大一些，接近 90"
+      },
+      {
+       "label": "D",
+       "text": "得数一定是 75"
+      }
+     ],
+     "answer": "C",
+     "explanation": "把 47 看成 50、38 看成 40，和大约是 90；实际算得 85，确实比 70 大一些、接近 90，估算能帮我们判断得数是否合理。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p100_q4",
+     "topicId": "mbj_p100",
+     "prompt": "63 减 28 的正确得数是多少？",
+     "question": "63 减 28 的正确得数是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "35",
+     "verify": "63-28",
+     "explanation": "个位 3 减 8 不够减，从十位退 1 得 13，13 减 8 得 5；十位 6 退 1 剩 5，5 减 2 得 3，得数是 35。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p100_q5",
+     "topicId": "mbj_p100",
+     "prompt": "在进位加法中，个位相加得到 14 时，个位写（ ），同时向十位进 1。",
+     "question": "在进位加法中，个位相加得到 14 时，个位写（ ），同时向十位进 1。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "4",
+     "explanation": "14 是 1 个十和 4 个一，个位只写 4 个一，那 1 个十要进到十位上去，这样数位才对得上。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p100_q6",
+     "topicId": "mbj_p100",
+     "prompt": "不计算，判断下面哪个算式的得数一定比 60 小？",
+     "question": "不计算，判断下面哪个算式的得数一定比 60 小？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "48 加 15"
+      },
+      {
+       "label": "B",
+       "text": "72 减 18"
+      },
+      {
+       "label": "C",
+       "text": "39 加 24"
+      },
+      {
+       "label": "D",
+       "text": "85 减 20"
+      }
+     ],
+     "answer": "B",
+     "explanation": "72 减 18：72 减 20 才得 52，减 18 比减 20 多一点，得 54，比 60 小；另外三个算式的得数分别是 63、63、65。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p100_q7",
+     "topicId": "mbj_p100",
+     "prompt": "小明算 74 减 36 时，把 36 看成了 63，他算出的得数比正确的得数少多少？",
+     "question": "小明算 74 减 36 时，把 36 看成了 63，他算出的得数比正确的得数少多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "27",
+     "verify": "63-36",
+     "explanation": "把减数 36 看成 63，减数变大了 27，减得越多剩得越少，所以得数就比正确的少 27（正确得数 38，错算得 11）。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p100_q8",
+     "topicId": "mbj_p100",
+     "prompt": "做完一道 100 以内的加减法题，可以怎样检查自己的得数？请说出两种办法。",
+     "question": "做完一道 100 以内的加减法题，可以怎样检查自己的得数？请说出两种办法。",
+     "type": "short-answer",
+     "difficulty": "basic",
+     "answer": "可以用竖式再算一遍，看两次得数是否一样；也可以用加减法的关系验算，加法用和减去一个加数看是否等于另一个加数，减法用差加上减数看是否等于被减数。",
+     "explanation": "重算能发现算错的地方，用逆运算验算能发现进位、退位上的问题，两种办法一起用，检查才更可靠。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p101",
+   "description": "认识长方形、正方形、三角形和圆这几种常见的平面图形：能从身边的物体面上找到它们，能按边的条数和形状特点说出它们的名字，初步体会平面图形与立体图形的联系。",
+   "mastery_criteria": [
+    "能认读并说出长方形、正方形、三角形、圆的名称",
+    "能按边的条数和角的个数说出平面图形的特点",
+    "能从物体表面或组合图形中指出平面图形"
+   ],
+   "misconceptions": [
+    "把正方形和长方形当成同一种图形，不看边的长短",
+    "认为圆也有角，把弯的边数成一条边一个角",
+    "把立体图形和它的一个面混为一谈"
+   ],
+   "std": {
+    "id": "mat-2022:1.XY.09",
+    "quote": "能直观描述这些平面图形的特征"
+   },
+   "questions": [
+    {
+     "id": "mbj_p101_q1",
+     "topicId": "mbj_p101",
+     "prompt": "下面哪种图形有四条边，并且四条边一样长？",
+     "question": "下面哪种图形有四条边，并且四条边一样长？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "长方形"
+      },
+      {
+       "label": "B",
+       "text": "正方形"
+      },
+      {
+       "label": "C",
+       "text": "三角形"
+      },
+      {
+       "label": "D",
+       "text": "圆"
+      }
+     ],
+     "answer": "B",
+     "explanation": "长方形也是四条边，但只有对着的两条边一样长；正方形四条边都一样长，四个角也一样大。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p101_q2",
+     "topicId": "mbj_p101",
+     "prompt": "数一数：一个三角形一共有几条边？",
+     "question": "数一数：一个三角形一共有几条边？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "3",
+     "verify": "2+1",
+     "explanation": "三角形由三条线段围成，所以有 3 条边，也正好有 3 个角，边和角的个数一样多。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p101_q3",
+     "topicId": "mbj_p101",
+     "prompt": "用手指沿着圆的边摸一圈，会发现什么？",
+     "question": "用手指沿着圆的边摸一圈，会发现什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "边是直的，有三条边"
+      },
+      {
+       "label": "B",
+       "text": "有三个角"
+      },
+      {
+       "label": "C",
+       "text": "边是直的，有四个角"
+      },
+      {
+       "label": "D",
+       "text": "边是弯的，没有角"
+      }
+     ],
+     "answer": "D",
+     "explanation": "圆的边是一条弯的曲线，围成一圈没有棱角，所以圆没有角，也摸不到直直的边和尖尖的角。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p101_q4",
+     "topicId": "mbj_p101",
+     "prompt": "长方形有（ ）条边，对着的两条边一样长。",
+     "question": "长方形有（ ）条边，对着的两条边一样长。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "4",
+     "explanation": "长方形上下两条边一样长、左右两条边一样长，一共四条边，所以填 4。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p101_q5",
+     "topicId": "mbj_p101",
+     "prompt": "请说出长方形和正方形有什么相同的地方，又有什么不同的地方。",
+     "question": "请说出长方形和正方形有什么相同的地方，又有什么不同的地方。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "相同的地方是都有四条边、四个角，对着的两条边一样长，四个角都一样大；不同的地方是长方形只有对着的两条边一样长，正方形四条边都一样长，所以正方形是特殊的长方形。",
+     "explanation": "把两种图形放在一起比一比边和角，就能发现正方形比长方形多了四条边都相等这个条件，这样才不会把两者混成一种。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p102",
+   "description": "进一步认识长方形、正方形、三角形和圆：数一数各有几条边、几个角，用折一折、比一比的方法区分长方形和正方形，并从长方体、正方体等立体图形的面上找出这些平面图形。",
+   "mastery_criteria": [
+    "能数出各平面图形的边数和角的个数",
+    "能用折一折、比一比的方法比较图形",
+    "能说出立体图形某个面上的平面图形名称"
+   ],
+   "misconceptions": [
+    "数正方形的边时多数或漏数，把四条边数成五条",
+    "把长方体所有的面都说成正方形",
+    "认为三角形的三条边必须一样长"
+   ],
+   "std": {
+    "id": "mat-2022:1.XY.09",
+    "quote": "能直观描述这些平面图形的特征"
+   },
+   "questions": [
+    {
+     "id": "mbj_p102_q1",
+     "topicId": "mbj_p102",
+     "prompt": "数一数：一个正方形一共有几条边？",
+     "question": "数一数：一个正方形一共有几条边？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4",
+     "verify": "2+2",
+     "explanation": "正方形有四条边，而且四条边一样长，数的时候可以按上、下、左、右一条一条数，避免多数或漏数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p102_q2",
+     "topicId": "mbj_p102",
+     "prompt": "数一数：一个三角形一共有几个角？",
+     "question": "数一数：一个三角形一共有几个角？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "3 个"
+      },
+      {
+       "label": "B",
+       "text": "4 个"
+      },
+      {
+       "label": "C",
+       "text": "2 个"
+      },
+      {
+       "label": "D",
+       "text": "1 个"
+      }
+     ],
+     "answer": "A",
+     "explanation": "三角形有三条边围起来，每两条边相交就形成一个角，一共是 3 个角。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p102_q3",
+     "topicId": "mbj_p102",
+     "prompt": "把一张正方形纸沿着一条对角线对折，可以得到两个什么图形？",
+     "question": "把一张正方形纸沿着一条对角线对折，可以得到两个什么图形？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "两个正方形"
+      },
+      {
+       "label": "B",
+       "text": "两个长方形"
+      },
+      {
+       "label": "C",
+       "text": "两个三角形"
+      },
+      {
+       "label": "D",
+       "text": "两个圆"
+      }
+     ],
+     "answer": "C",
+     "explanation": "沿对角线折，折出来的每一块都有三条边、三个角，是三角形；如果沿着对边中点折，才会得到两个长方形。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p102_q4",
+     "topicId": "mbj_p102",
+     "prompt": "用 3 根同样长的小棒首尾相接，可以摆成一个（ ）形。",
+     "question": "用 3 根同样长的小棒首尾相接，可以摆成一个（ ）形。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "三角形",
+     "explanation": "3 根小棒围成三条边，首尾相接就得到三条边、三个角的图形，也就是三角形。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p102_q5",
+     "topicId": "mbj_p102",
+     "prompt": "下面这四种图形中，哪一种是没有角的？",
+     "question": "下面这四种图形中，哪一种是没有角的？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "长方形"
+      },
+      {
+       "label": "B",
+       "text": "三角形"
+      },
+      {
+       "label": "C",
+       "text": "正方形"
+      },
+      {
+       "label": "D",
+       "text": "圆"
+      }
+     ],
+     "answer": "D",
+     "explanation": "圆的边是一条弯的曲线，一直转下去也不会出现尖角，所以圆没有角；长方形、正方形、三角形都有尖尖的角。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p102_q6",
+     "topicId": "mbj_p102",
+     "prompt": "看一个正方体的任意一个面，看到的是什么图形？",
+     "question": "看一个正方体的任意一个面，看到的是什么图形？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆"
+      },
+      {
+       "label": "B",
+       "text": "三角形"
+      },
+      {
+       "label": "C",
+       "text": "正方形"
+      },
+      {
+       "label": "D",
+       "text": "长方形"
+      }
+     ],
+     "answer": "C",
+     "explanation": "正方体的六个面都是一样大的正方形，所以从正方体的一个面上看到的是正方形，不是长方形。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p102_q7",
+     "topicId": "mbj_p102",
+     "prompt": "用同样长的小棒摆 2 个互不相连的三角形，一共需要多少根小棒？",
+     "question": "用同样长的小棒摆 2 个互不相连的三角形，一共需要多少根小棒？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "6",
+     "verify": "3*2",
+     "explanation": "一个三角形要 3 根小棒，两个分开摆、不共用边，就需要 2 个 3 根，也就是 6 根小棒。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p102_q8",
+     "topicId": "mbj_p102",
+     "prompt": "请数一数长方形有几条边、几个角，并说说它的边有什么特点。",
+     "question": "请数一数长方形有几条边、几个角，并说说它的边有什么特点。",
+     "type": "short-answer",
+     "difficulty": "basic",
+     "answer": "长方形有四条边、四个角。它的四条边都是直的，上下两条边一样长，左右两条边一样长，也就是对着的两条边相等，相邻的两条边一般不一样长。",
+     "explanation": "一边数边和角，一边用手比一比边的长短，就能把长方形和四条边都相等的正方形区分开。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p103",
+   "description": "用长方形、正方形、三角形和圆拼出各种图案：在同一幅图上数出各种图形各用了几个，体会几个小图形可以拼成一个大图形，也能把一个大图形分成几个小图形。",
+   "mastery_criteria": [
+    "能用平面图形拼出指定图案",
+    "能在组合图形中数出各组成部分的个数",
+    "能说出一个图形可以分成哪几个小图形"
+   ],
+   "misconceptions": [
+    "数组合图形中的三角形时漏数拼成的大三角形",
+    "只看拼好的整体，说不出由哪些小图形组成",
+    "以为拼图可以重叠摆放，块数越多数得越多"
+   ],
+   "std": {
+    "id": "mat-2022:1.XY.12",
+    "quote": "会用简单的图形拼图，能在组合图形中说出各组成部分图形的名称"
+   },
+   "questions": [
+    {
+     "id": "mbj_p103_q1",
+     "topicId": "mbj_p103",
+     "prompt": "把两个完全一样的正方形并排拼在一起，拼成的是什么图形？",
+     "question": "把两个完全一样的正方形并排拼在一起，拼成的是什么图形？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "长方形"
+      },
+      {
+       "label": "B",
+       "text": "正方形"
+      },
+      {
+       "label": "C",
+       "text": "三角形"
+      },
+      {
+       "label": "D",
+       "text": "圆"
+      }
+     ],
+     "answer": "A",
+     "explanation": "两个一样的正方形并排接起来，长变成原来的两倍、宽不变，四条边不再相等，就成了长方形。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p103_q2",
+     "topicId": "mbj_p103",
+     "prompt": "拼一条小鱼用了 3 个三角形，拼一条大鱼用了 5 个三角形，一共用了多少个三角形？",
+     "question": "拼一条小鱼用了 3 个三角形，拼一条大鱼用了 5 个三角形，一共用了多少个三角形？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "8",
+     "verify": "3+5",
+     "explanation": "求一共用多少个，就把两次用的个数加起来：3 加 5 得 8，一共用了 8 个三角形。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p103_q3",
+     "topicId": "mbj_p103",
+     "prompt": "一幅拼图用了 4 个正方形和 3 个三角形，后来被拿走 1 个三角形，现在还剩几个图形？",
+     "question": "一幅拼图用了 4 个正方形和 3 个三角形，后来被拿走 1 个三角形，现在还剩几个图形？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "6 个"
+      },
+      {
+       "label": "B",
+       "text": "7 个"
+      },
+      {
+       "label": "C",
+       "text": "5 个"
+      },
+      {
+       "label": "D",
+       "text": "4 个"
+      }
+     ],
+     "answer": "A",
+     "explanation": "先算一共有 4 加 3 得 7 个图形，拿走 1 个后剩 7 减 1 得 6 个，所以还剩 6 个图形。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p103_q4",
+     "topicId": "mbj_p103",
+     "prompt": "用 4 个同样大的小正方形可以拼成一个大正方形，这个大正方形每条边上有（ ）个小正方形。",
+     "question": "用 4 个同样大的小正方形可以拼成一个大正方形，这个大正方形每条边上有（ ）个小正方形。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "2",
+     "explanation": "4 个小正方形排成两行两列才成正方形，所以每条边上都是 2 个小正方形，不能排成一行三个或四个。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p103_q5",
+     "topicId": "mbj_p103",
+     "prompt": "小丽用 2 个三角形和 1 个正方形拼成了一座小房子，她一共用了几个图形？",
+     "question": "小丽用 2 个三角形和 1 个正方形拼成了一座小房子，她一共用了几个图形？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 个"
+      },
+      {
+       "label": "B",
+       "text": "2 个"
+      },
+      {
+       "label": "C",
+       "text": "3 个"
+      },
+      {
+       "label": "D",
+       "text": "4 个"
+      }
+     ],
+     "answer": "C",
+     "explanation": "2 个三角形加上 1 个正方形，一共是 2 加 1 得 3 个图形，拼出来的房子由这 3 块组成。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p103_q6",
+     "topicId": "mbj_p103",
+     "prompt": "七巧板共 7 块，拼一只小鸟用了 2 个三角形、1 个正方形和 1 个平行四边形，还剩几块板？",
+     "question": "七巧板共 7 块，拼一只小鸟用了 2 个三角形、1 个正方形和 1 个平行四边形，还剩几块板？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "3",
+     "verify": "7-2-1-1",
+     "explanation": "先算用掉的块数：2 加 1 加 1 得 4 块；再用 7 减 4 得 3，所以还剩 3 块板没有用上。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p103_q7",
+     "topicId": "mbj_p103",
+     "prompt": "用 4 个完全一样的小三角形拼成一个大三角形，这个图案里一共有多少个三角形？",
+     "question": "用 4 个完全一样的小三角形拼成一个大三角形，这个图案里一共有多少个三角形？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "4 个"
+      },
+      {
+       "label": "B",
+       "text": "5 个"
+      },
+      {
+       "label": "C",
+       "text": "6 个"
+      },
+      {
+       "label": "D",
+       "text": "3 个"
+      }
+     ],
+     "answer": "B",
+     "explanation": "4 个小三角形之外，它们合起来还围成 1 个大三角形，所以一共是 4 加 1 得 5 个三角形，只看小图形就会漏数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p103_q8",
+     "topicId": "mbj_p103",
+     "prompt": "用几块小图形拼成一个图案时，怎样数才能不漏掉图形？请说说你的办法。",
+     "question": "用几块小图形拼成一个图案时，怎样数才能不漏掉图形？请说说你的办法。",
+     "type": "short-answer",
+     "difficulty": "basic",
+     "answer": "可以按种类一个一个数：先数三角形有几个，再数正方形、长方形、圆各几个，边数边做记号；也可以按从上到下、从左到右的顺序数，数过的做上标记，最后把各类个数加起来和总块数核对。",
+     "explanation": "按种类或有顺序地数、数过做记号，才不会重复也不会漏，最后用总数核对一遍还能发现数错的地方。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p104",
+   "description": "对一年级下册学过的内容做整体回顾：100 以内加减法的计算与解决问题、认识的平面图形与拼图、数据的分类整理，把学过的知识连起来，找出还需要再练的地方。",
+   "mastery_criteria": [
+    "能正确计算 100 以内的加法和减法",
+    "能认读并说出常见平面图形的特点",
+    "能按标准对事物分类并整理结果"
+   ],
+   "misconceptions": [
+    "复习时只闷头做题，同一类错误反复出现",
+    "把进位加法的做法套到退位减法上",
+    "分类标准中途改变，同一物体被放进两类"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p104_q1",
+     "topicId": "mbj_p104",
+     "prompt": "算一算：36 加 47 等于多少？",
+     "question": "算一算：36 加 47 等于多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "83",
+     "verify": "36+47",
+     "explanation": "个位 6 加 7 得 13，写 3 进 1；十位 3 加 4 得 7，加进位的 1 得 8，所以得数是 83。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p104_q2",
+     "topicId": "mbj_p104",
+     "prompt": "下面哪种图形有四条边、四个角，并且四条边都一样长？",
+     "question": "下面哪种图形有四条边、四个角，并且四条边都一样长？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "三角形"
+      },
+      {
+       "label": "B",
+       "text": "圆"
+      },
+      {
+       "label": "C",
+       "text": "正方形"
+      },
+      {
+       "label": "D",
+       "text": "长方形"
+      }
+     ],
+     "answer": "C",
+     "explanation": "三角形只有三条边，圆没有角，长方形四条边不是都一样长，只有正方形四条边都相等、四个角都一样大。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p104_q3",
+     "topicId": "mbj_p104",
+     "prompt": "妈妈买了 25 个苹果和 18 个梨，一共买了多少个水果？",
+     "question": "妈妈买了 25 个苹果和 18 个梨，一共买了多少个水果？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "43",
+     "verify": "25+18",
+     "explanation": "求一共用加法，个位 5 加 8 得 13，写 3 进 1；十位 2 加 1 得 3，加进位的 1 得 4，一共 43 个水果。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p104_q4",
+     "topicId": "mbj_p104",
+     "prompt": "把全班的 8 个同学按男生、女生分成两组，这是按什么标准分类的？",
+     "question": "把全班的 8 个同学按男生、女生分成两组，这是按什么标准分类的？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "按年龄分"
+      },
+      {
+       "label": "B",
+       "text": "按身高分"
+      },
+      {
+       "label": "C",
+       "text": "按性别分"
+      },
+      {
+       "label": "D",
+       "text": "按喜欢的颜色分"
+      }
+     ],
+     "answer": "C",
+     "explanation": "男生和女生的区别在于性别，所以这个分类标准是性别；分类时要先说清标准，同一批事物才能分得不重不漏。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p104_q5",
+     "topicId": "mbj_p104",
+     "prompt": "请说说计算进位加法和退位减法时，各要注意什么。",
+     "question": "请说说计算进位加法和退位减法时，各要注意什么。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "进位加法要注意个位相加满十要向十位进 1，十位相加时别忘了加上这个 1；退位减法要注意个位不够减时从十位退 1 当十，和个位合起来再减，十位相减时要减去退走的 1。",
+     "explanation": "两种算法的关键都在十位上那 1 个十有没有处理好：加法要多加 1 个十，减法要少 1 个十，弄反了得数就会差十。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p105",
+   "description": "复习 100 以内数的认识与加减计算：数的组成与大小比较、口算与竖式、进位与退位、连加连减和加减混合，通过对比练习提高计算的正确率和速度。",
+   "mastery_criteria": [
+    "能正确口算和竖式计算 100 以内的加减法",
+    "能比较 100 以内两个数的大小",
+    "能按顺序计算连加连减和加减混合式题"
+   ],
+   "misconceptions": [
+    "把 5 个十和 7 个一组成的数写成 75",
+    "比较 89 和 90 时认为 89 大，因为 8 比 9 大",
+    "连加连减时先算后面的两个数"
+   ],
+   "std": {
+    "id": "mat-2022:1.KC.03",
+    "quote": "能口算简单的百以内数的加减法;能计算两位数和三位数的加减法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p105_q1",
+     "topicId": "mbj_p105",
+     "prompt": "由 5 个十和 7 个一组成的数是多少？",
+     "question": "由 5 个十和 7 个一组成的数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "57",
+     "verify": "50+7",
+     "explanation": "5 个十是 50，7 个一是 7，合起来是 57；十位上的 5 表示 5 个十，个位上的 7 表示 7 个一。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p105_q2",
+     "topicId": "mbj_p105",
+     "prompt": "下面哪个数最接近 100？",
+     "question": "下面哪个数最接近 100？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "98"
+      },
+      {
+       "label": "B",
+       "text": "89"
+      },
+      {
+       "label": "C",
+       "text": "79"
+      },
+      {
+       "label": "D",
+       "text": "90"
+      }
+     ],
+     "answer": "A",
+     "explanation": "98 再加上 2 就到 100，和 100 只差 2，是最接近 100 的数；89 差 11，90 差 10，79 差 21。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p105_q3",
+     "topicId": "mbj_p105",
+     "prompt": "算一算：84 减 59 等于多少？",
+     "question": "算一算：84 减 59 等于多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "25",
+     "verify": "84-59",
+     "explanation": "个位 4 减 9 不够减，从十位退 1 得 14，14 减 9 得 5；十位 8 退 1 剩 7，7 减 5 得 2，得数是 25。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p105_q4",
+     "topicId": "mbj_p105",
+     "prompt": "下面哪个算式的结果比 50 小？",
+     "question": "下面哪个算式的结果比 50 小？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "28 加 25"
+      },
+      {
+       "label": "B",
+       "text": "72 减 26"
+      },
+      {
+       "label": "C",
+       "text": "39 加 22"
+      },
+      {
+       "label": "D",
+       "text": "90 减 32"
+      }
+     ],
+     "answer": "B",
+     "explanation": "四个算式分别得 53、46、61、58，只有 72 减 26 得 46，结果比 50 小。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p105_q5",
+     "topicId": "mbj_p105",
+     "prompt": "和 59 相邻的两个数中，较大的那个数是（ ）。",
+     "question": "和 59 相邻的两个数中，较大的那个数是（ ）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "60",
+     "explanation": "和 59 相邻的数是 58 和 60，其中较大的一个是 60；59 再添 1 就得 60。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p105_q6",
+     "topicId": "mbj_p105",
+     "prompt": "一个数比 46 多 27，这个数是多少？",
+     "question": "一个数比 46 多 27，这个数是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "73",
+     "verify": "46+27",
+     "explanation": "比 46 多 27 就是在 46 上再加 27：个位 6 加 7 得 13，写 3 进 1；十位 4 加 2 得 6，加进位得 7，这个数是 73。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p105_q7",
+     "topicId": "mbj_p105",
+     "prompt": "小明算的三道题是：47 加 35 得 82，63 减 28 得 45，56 加 29 得 85。哪一道算错了？",
+     "question": "小明算的三道题是：47 加 35 得 82，63 减 28 得 45，56 加 29 得 85。哪一道算错了？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "47 加 35 得 82"
+      },
+      {
+       "label": "B",
+       "text": "63 减 28 得 45"
+      },
+      {
+       "label": "C",
+       "text": "56 加 29 得 85"
+      },
+      {
+       "label": "D",
+       "text": "三道都算对了"
+      }
+     ],
+     "answer": "B",
+     "explanation": "63 减 28 个位 3 减 8 不够减，退 1 得 13，13 减 8 得 5；十位 5 减 2 得 3，正确得数是 35，写成 45 是把十位退位忘了。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p105_q8",
+     "topicId": "mbj_p105",
+     "prompt": "比较两个 100 以内的数的大小时，可以怎样想？请举例说明。",
+     "question": "比较两个 100 以内的数的大小时，可以怎样想？请举例说明。",
+     "type": "short-answer",
+     "difficulty": "basic",
+     "answer": "先看十位上的数，十位上大的那个数就大，比如 78 和 65，7 个十比 6 个十多，所以 78 大；如果十位相同，再看个位，个位大的数就大，比如 63 和 68，十位都是 6，8 比 3 大，所以 68 大。",
+     "explanation": "数的大小先由十位决定，十位相同才比个位，按这个顺序比较就不会被个位数字的大小带偏。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p106",
+   "description": "学习按给定的标准给物体或图形分类，用画对勾、写数等方法把分类结果记录下来，再从记录中看出哪一种最多、哪一种最少，并用这些数据回答简单的问题。",
+   "mastery_criteria": [
+    "能按同一标准给物体分类，做到不重不漏",
+    "能用画记或写数的方式记录分类结果",
+    "能从记录中比较多少并回答简单问题"
+   ],
+   "misconceptions": [
+    "分类时把同一物体放进两类，重复计数",
+    "记录出的个数与实物个数不一致，漏记",
+    "换了标准后仍用原来的分类结果回答问题"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.14",
+    "quote": "会对物体、图形或数据进行分类，初步了解分类与分类标准的关系，形成初步的数据意识"
+   },
+   "questions": [
+    {
+     "id": "mbj_p106_q1",
+     "topicId": "mbj_p106",
+     "prompt": "把铅笔、橡皮、尺子和苹果放在一起，按是不是学习用品分类，苹果应该放在哪一类？",
+     "question": "把铅笔、橡皮、尺子和苹果放在一起，按是不是学习用品分类，苹果应该放在哪一类？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "学习用品这一类"
+      },
+      {
+       "label": "B",
+       "text": "两类都可以放"
+      },
+      {
+       "label": "C",
+       "text": "不能参加分类"
+      },
+      {
+       "label": "D",
+       "text": "不是学习用品这一类"
+      }
+     ],
+     "answer": "D",
+     "explanation": "铅笔、橡皮、尺子是用来学习的，苹果是吃的水果，不属于学习用品，只能放进不是学习用品这一类。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p106_q2",
+     "topicId": "mbj_p106",
+     "prompt": "一堆图形中有 6 个圆、4 个三角形，圆比三角形多几个？",
+     "question": "一堆图形中有 6 个圆、4 个三角形，圆比三角形多几个？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "2",
+     "verify": "6-4",
+     "explanation": "求多几个用减法，6 减 4 得 2，圆比三角形多 2 个，也就是三角形比圆少 2 个。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p106_q3",
+     "topicId": "mbj_p106",
+     "prompt": "分类时把同一个图形先放进三角形一类，又放进正方形一类，会出现什么问题？",
+     "question": "分类时把同一个图形先放进三角形一类，又放进正方形一类，会出现什么问题？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "会重复计数，总数变多"
+      },
+      {
+       "label": "B",
+       "text": "总数会变少"
+      },
+      {
+       "label": "C",
+       "text": "对结果没有影响"
+      },
+      {
+       "label": "D",
+       "text": "会漏掉其他图形"
+      }
+     ],
+     "answer": "A",
+     "explanation": "同一个图形只能属于一类，放进两类就把一个当成两个数，各类个数加起来会比实际总数多。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p106_q4",
+     "topicId": "mbj_p106",
+     "prompt": "用画对勾的方法记录：一组图形共有 7 个，已经画了 5 个对勾，还要再画（ ）个。",
+     "question": "用画对勾的方法记录：一组图形共有 7 个，已经画了 5 个对勾，还要再画（ ）个。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "2",
+     "explanation": "对勾的个数要和图形个数一样，7 个图形已经画了 5 个，还差 7 减 5 得 2 个对勾。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p106_q5",
+     "topicId": "mbj_p106",
+     "prompt": "小华统计班里同学喜欢的水果：苹果 12 人，香蕉 8 人，橘子 9 人。喜欢哪种水果的人最多？",
+     "question": "小华统计班里同学喜欢的水果：苹果 12 人，香蕉 8 人，橘子 9 人。喜欢哪种水果的人最多？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "香蕉"
+      },
+      {
+       "label": "B",
+       "text": "橘子"
+      },
+      {
+       "label": "C",
+       "text": "苹果"
+      },
+      {
+       "label": "D",
+       "text": "三种一样多"
+      }
+     ],
+     "answer": "C",
+     "explanation": "比较三个数据：12 比 8 大、比 9 也大，所以喜欢苹果的人最多，比喜欢橘子的多 3 人。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p106_q6",
+     "topicId": "mbj_p106",
+     "prompt": "统计结果是：跳绳的有 15 人，踢球的有 8 人，打乒乓球的有 7 人。参加这三项活动的一共有多少人？",
+     "question": "统计结果是：跳绳的有 15 人，踢球的有 8 人，打乒乓球的有 7 人。参加这三项活动的一共有多少人？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "30",
+     "verify": "15+8+7",
+     "explanation": "求一共多少人，把三项的人数加起来：先算 15 加 8 得 23，再算 23 加 7 得 30，一共 30 人。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p106_q7",
+     "topicId": "mbj_p106",
+     "prompt": "同样的 12 个图形，按颜色分是红色 5 个、蓝色 7 个；按形状分是三角形 4 个、圆 5 个、正方形 3 个。下面说法正确的是哪一个？",
+     "question": "同样的 12 个图形，按颜色分是红色 5 个、蓝色 7 个；按形状分是三角形 4 个、圆 5 个、正方形 3 个。下面说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "两种分法的总数不一样"
+      },
+      {
+       "label": "B",
+       "text": "两种分法的总数都是 12 个"
+      },
+      {
+       "label": "C",
+       "text": "按颜色分只有两类，所以总数是 2"
+      },
+      {
+       "label": "D",
+       "text": "按形状分的总数比按颜色分多"
+      }
+     ],
+     "answer": "B",
+     "explanation": "5 加 7 得 12，4 加 5 加 3 也得 12，同一批图形换个标准分类，分的类数不同，但总数不变。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p106_q8",
+     "topicId": "mbj_p106",
+     "prompt": "要把一堆积木分类，可以怎样做？请说出你的分类标准和一个记录办法。",
+     "question": "要把一堆积木分类，可以怎样做？请说出你的分类标准和一个记录办法。",
+     "type": "short-answer",
+     "difficulty": "basic",
+     "answer": "可以先定一个标准，比如按形状分成长方体、正方体、圆柱、球，也可以按颜色分。分的时候把同一类的放在一起，数一数各有几个，用画对勾或写数的方法记下来，最后检查总数和原来的块数一样。",
+     "explanation": "先定标准再动手，分类才不重不漏；记录后再核对总数，能发现自己漏分或者重复分的地方。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p107",
+   "description": "复习长方形、正方形、三角形和圆：认一认、数一数边和角，说一说各自的特点，在组合图形和物体表面上找出这些图形，进一步分清平面图形与立体图形。",
+   "mastery_criteria": [
+    "能说出四种平面图形的名称和特点",
+    "能在组合图形中找出指定的平面图形",
+    "能区分平面图形与立体图形"
+   ],
+   "misconceptions": [
+    "把长方体说成一个长方形",
+    "认为所有三角形的三条边都一样长",
+    "数组合图形时只看小图形，忽略拼成的大图形"
+   ],
+   "std": {
+    "id": "mat-2022:1.XY.09",
+    "quote": "能直观描述这些平面图形的特征"
+   },
+   "questions": [
+    {
+     "id": "mbj_p107_q1",
+     "topicId": "mbj_p107",
+     "prompt": "下面哪一个属于立体图形？",
+     "question": "下面哪一个属于立体图形？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "正方体"
+      },
+      {
+       "label": "B",
+       "text": "长方形"
+      },
+      {
+       "label": "C",
+       "text": "三角形"
+      },
+      {
+       "label": "D",
+       "text": "圆"
+      }
+     ],
+     "answer": "A",
+     "explanation": "长方形、三角形、圆都只有平平的一个面，是平面图形；正方体有长、宽、高，能立在桌上，是立体图形。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p107_q2",
+     "topicId": "mbj_p107",
+     "prompt": "一个长方形一共有几个角？",
+     "question": "一个长方形一共有几个角？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4",
+     "verify": "2+2",
+     "explanation": "长方形有四条边，相邻两条边相交形成一个角，四个顶点就对应 4 个角，四个角都一样大。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p107_q3",
+     "topicId": "mbj_p107",
+     "prompt": "用一个长方体盒子的一个面描着画下来，画出的图形可能是什么？",
+     "question": "用一个长方体盒子的一个面描着画下来，画出的图形可能是什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆"
+      },
+      {
+       "label": "B",
+       "text": "长方形"
+      },
+      {
+       "label": "C",
+       "text": "三角形"
+      },
+      {
+       "label": "D",
+       "text": "球"
+      }
+     ],
+     "answer": "B",
+     "explanation": "长方体每个面都是长方形的，沿着面的边描一圈就得到一个长方形；球和圆浑圆的形状描不出这样的边。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p107_q4",
+     "topicId": "mbj_p107",
+     "prompt": "三角形有（ ）条边，有 3 个角。",
+     "question": "三角形有（ ）条边，有 3 个角。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "3",
+     "explanation": "三角形的边数和角的个数一样多，都是 3，所以括号里填 3。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p107_q5",
+     "topicId": "mbj_p107",
+     "prompt": "下面哪种图形不管怎样放，看起来都一样，边上也没有角？",
+     "question": "下面哪种图形不管怎样放，看起来都一样，边上也没有角？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "正方形"
+      },
+      {
+       "label": "B",
+       "text": "三角形"
+      },
+      {
+       "label": "C",
+       "text": "圆"
+      },
+      {
+       "label": "D",
+       "text": "长方形"
+      }
+     ],
+     "answer": "C",
+     "explanation": "正方形和长方形转动后会像菱形或竖着的长方形，三角形转动后样子也变，只有圆转到哪个方向都还是圆，并且没有角。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p107_q6",
+     "topicId": "mbj_p107",
+     "prompt": "用 6 根同样长的小棒摆一个长方形，每条长边用几根小棒？",
+     "question": "用 6 根同样长的小棒摆一个长方形，每条长边用几根小棒？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "2",
+     "verify": "6-2-2",
+     "explanation": "长方形有两条长边、两条短边，两条短边各用 1 根，共用去 2 根；剩下 6 减 2 得 4 根分给两条长边，每条长边 2 根。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p107_q7",
+     "topicId": "mbj_p107",
+     "prompt": "下面说法正确的是哪一个？",
+     "question": "下面说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "正方形是四条边都相等的长方形"
+      },
+      {
+       "label": "B",
+       "text": "长方形是四条边都相等的正方形"
+      },
+      {
+       "label": "C",
+       "text": "圆有一条直直的边"
+      },
+      {
+       "label": "D",
+       "text": "三角形有四个角"
+      }
+     ],
+     "answer": "A",
+     "explanation": "长方形只要对着的边相等就行，正方形把这个条件加强了，四条边都相等，所以正方形是特殊的长方形，反过来不成立。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p107_q8",
+     "topicId": "mbj_p107",
+     "prompt": "请说出长方形、正方形、三角形和圆各有什么特点。",
+     "question": "请说出长方形、正方形、三角形和圆各有什么特点。",
+     "type": "short-answer",
+     "difficulty": "basic",
+     "answer": "长方形有四条边、四个角，对着的两条边一样长；正方形有四条边、四个角，四条边都一样长；三角形有三条边、三个角；圆没有角，边是一条弯的线，围成一圈。",
+     "explanation": "按边和角两个方面逐个数一数、比一比，四种图形就分得清清楚楚，不会互相混淆。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p108",
+   "description": "在生活情境中解决问题：读懂题目里的条件和问题，判断哪些条件用不上，选择加法或减法列式，算出结果后回到情境中解释得数的意思，并试着提出新的问题。",
+   "mastery_criteria": [
+    "能找出题目中的条件和问题，说出要求什么",
+    "能根据情境选择加法或减法列式解答",
+    "能解释得数在情境中表示的意思"
+   ],
+   "misconceptions": [
+    "看到数字就相加，不判断该用加法还是减法",
+    "把所有条件都用上，多余的条件也拿来算",
+    "算出得数就结束，不说明得数表示什么"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.16",
+    "quote": "能在熟悉的生活情境中运用数和数的运算，合理表达简单的数量关系，解决简单的问题。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p108_q1",
+     "topicId": "mbj_p108",
+     "prompt": "树上有 15 只小鸟，飞走 7 只。求还剩几只，应该用什么方法算？",
+     "question": "树上有 15 只小鸟，飞走 7 只。求还剩几只，应该用什么方法算？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "用加法算"
+      },
+      {
+       "label": "B",
+       "text": "用减法算"
+      },
+      {
+       "label": "C",
+       "text": "用乘法算"
+      },
+      {
+       "label": "D",
+       "text": "先加再减"
+      }
+     ],
+     "answer": "B",
+     "explanation": "从原来的 15 只里去掉飞走的 7 只求剩下多少，用减法，15 减 7 得 8 只。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p108_q2",
+     "topicId": "mbj_p108",
+     "prompt": "教室里有 28 张桌子，又搬来 14 张，现在一共有多少张桌子？",
+     "question": "教室里有 28 张桌子，又搬来 14 张，现在一共有多少张桌子？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "42",
+     "verify": "28+14",
+     "explanation": "原来的加上又搬来的就是现在的总数，个位 8 加 4 得 12，写 2 进 1；十位 2 加 1 加 1 得 4，一共 42 张。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p108_q3",
+     "topicId": "mbj_p108",
+     "prompt": "小明有 20 元，买笔记本用了 8 元，买笔用了 5 元。求还剩多少元，下面哪个算式对？",
+     "question": "小明有 20 元，买笔记本用了 8 元，买笔用了 5 元。求还剩多少元，下面哪个算式对？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "20 减 8 再加 5"
+      },
+      {
+       "label": "B",
+       "text": "20 减 8 再减 5"
+      },
+      {
+       "label": "C",
+       "text": "20 加 8 再加 5"
+      },
+      {
+       "label": "D",
+       "text": "20 加 8 再减 5"
+      }
+     ],
+     "answer": "B",
+     "explanation": "买笔记本和买笔都是把钱花掉，两次都要减，所以是 20 减 8 得 12，再 12 减 5 得 7 元。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p108_q4",
+     "topicId": "mbj_p108",
+     "prompt": "小云有 30 张画片，送给弟弟 12 张，还剩（ ）张。",
+     "question": "小云有 30 张画片，送给弟弟 12 张，还剩（ ）张。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "18",
+     "explanation": "送给弟弟就是去掉 12 张，用 30 减 12：个位 0 减 2 不够减，退 1 得 10，10 减 2 得 8；十位剩 2，2 减 1 得 1，还剩 18 张。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p108_q5",
+     "topicId": "mbj_p108",
+     "prompt": "花坛里有 24 朵红花、15 朵黄花，还有 6 只蝴蝶。求红花比黄花多几朵，哪个条件用不上？",
+     "question": "花坛里有 24 朵红花、15 朵黄花，还有 6 只蝴蝶。求红花比黄花多几朵，哪个条件用不上？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "24 朵红花"
+      },
+      {
+       "label": "B",
+       "text": "15 朵黄花"
+      },
+      {
+       "label": "C",
+       "text": "6 只蝴蝶"
+      },
+      {
+       "label": "D",
+       "text": "三个条件都用得上"
+      }
+     ],
+     "answer": "C",
+     "explanation": "求红花比黄花多几朵，只要两种花的朵数相减，24 减 15 得 9，蝴蝶的只数和花的朵数没有关系，用不上。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p108_q6",
+     "topicId": "mbj_p108",
+     "prompt": "一年级有 35 人参加合唱，二年级参加的人数比一年级多 14 人。两个年级一共有多少人参加？",
+     "question": "一年级有 35 人参加合唱，二年级参加的人数比一年级多 14 人。两个年级一共有多少人参加？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "84",
+     "verify": "(35+14)+35",
+     "explanation": "先求二年级的人数：35 加 14 得 49 人；再求两个年级的总数：49 加 35 得 84 人。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p108_q7",
+     "topicId": "mbj_p108",
+     "prompt": "小刚有 62 张卡片，比小明多 15 张。求小明有多少张，应该怎样算？",
+     "question": "小刚有 62 张卡片，比小明多 15 张。求小明有多少张，应该怎样算？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "用 62 加 15"
+      },
+      {
+       "label": "B",
+       "text": "用 62 减 15"
+      },
+      {
+       "label": "C",
+       "text": "用 62 乘 15"
+      },
+      {
+       "label": "D",
+       "text": "条件不够，不能求"
+      }
+     ],
+     "answer": "B",
+     "explanation": "小刚比小明多 15 张，说明小明的卡片比 62 张少 15 张，所以用 62 减 15 得 47 张。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p108_q8",
+     "topicId": "mbj_p108",
+     "prompt": "解决问题时，算出得数以后还要做什么？请结合还剩多少元的例子说一说。",
+     "question": "解决问题时，算出得数以后还要做什么？请结合还剩多少元的例子说一说。",
+     "type": "short-answer",
+     "difficulty": "basic",
+     "answer": "算出得数以后要回到题目里想一想这个数表示什么，检查算式是否符合题意。比如 20 元买 8 元的笔记本和 5 元的笔，算得 7，要说明是还剩 7 元，还要看单位写没写对，最后口答。",
+     "explanation": "得数只是算式的结果，还要说清它在情境中的意思、带上单位，才能算真正解决了问题。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p109",
+   "description": "在数学百花园里动手又动脑：用七巧板拼出各种图案，观察数和图形的排列规律并接着填下去，在游戏和操作中体会数学的趣味，积累发现规律、动手拼摆的经验。",
+   "mastery_criteria": [
+    "能用七巧板或平面图形拼出简单图案",
+    "能发现并接着填出简单的规律",
+    "能说出自己拼图或找规律的方法"
+   ],
+   "misconceptions": [
+    "找规律时只看最后两个数，不注意整列数的变化",
+    "拼图时把板子叠在一起，数出的块数偏少",
+    "认为规律只有一种，换个方向就看不出"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p109_q1",
+     "topicId": "mbj_p109",
+     "prompt": "按规律填数：2、4、6、8、（ ）。括号里应填多少？",
+     "question": "按规律填数：2、4、6、8、（ ）。括号里应填多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "10",
+     "verify": "8+2",
+     "explanation": "这列数每次多 2：2 到 4 多 2，4 到 6 多 2，8 再添 2 就是 10，所以填 10。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p109_q2",
+     "topicId": "mbj_p109",
+     "prompt": "用七巧板拼图，七巧板一共有多少块？",
+     "question": "用七巧板拼图，七巧板一共有多少块？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "5 块"
+      },
+      {
+       "label": "B",
+       "text": "6 块"
+      },
+      {
+       "label": "C",
+       "text": "7 块"
+      },
+      {
+       "label": "D",
+       "text": "8 块"
+      }
+     ],
+     "answer": "C",
+     "explanation": "七巧板的名字里就带着 7，它由 7 块板组成，拼图前先数清块数才不会少用或多用。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p109_q3",
+     "topicId": "mbj_p109",
+     "prompt": "按规律填数：90、80、70、（ ）、50。括号里应填多少？",
+     "question": "按规律填数：90、80、70、（ ）、50。括号里应填多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "60",
+     "verify": "50+10",
+     "explanation": "这列数每次少 10：90、80、70 依次少 10，70 再少 10 得 60，60 再少 10 正好是 50，所以填 60。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p109_q4",
+     "topicId": "mbj_p109",
+     "prompt": "图形按红、黄、红、黄这样的顺序一直排下去，第 5 个是什么颜色？",
+     "question": "图形按红、黄、红、黄这样的顺序一直排下去，第 5 个是什么颜色？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "黄色"
+      },
+      {
+       "label": "B",
+       "text": "蓝色"
+      },
+      {
+       "label": "C",
+       "text": "红色"
+      },
+      {
+       "label": "D",
+       "text": "不能确定"
+      }
+     ],
+     "answer": "C",
+     "explanation": "红、黄两个一组的规律在重复，第 1、3、5 个都是红色，第 2、4 个是黄色，所以第 5 个是红色。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p109_q5",
+     "topicId": "mbj_p109",
+     "prompt": "请说说你是怎样找出一列数的规律的，并举一个例子。",
+     "question": "请说说你是怎样找出一列数的规律的，并举一个例子。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "先看相邻两个数是怎么变的：如果每次都多几，就是依次加几；如果每次都少几，就是依次减几。比如 5、10、15、20，每次都多 5，后面接着填 25；再如 48、46、44，每次都少 2，后面填 42。",
+     "explanation": "规律的实质是相邻两项之间固定的变化，看准这个变化就能往后推，也才能判断自己填的数是否合适。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p110",
+   "description": "认识七巧板的七块板子：5 个三角形、1 个正方形、1 个平行四边形，用它们拼出正方形、三角形和各种有趣的图案，在拼摆中体会图形之间的转换和组合。",
+   "mastery_criteria": [
+    "能说出七巧板由哪几种图形组成、各有几块",
+    "能用七巧板拼出指定的图形",
+    "能在拼出的图案中说出用了几块什么形状的板"
+   ],
+   "misconceptions": [
+    "把七巧板说成 7 个三角形",
+    "拼图时板子重叠或中间留出空隙",
+    "认为七巧板只有一种拼法"
+   ],
+   "std": {
+    "id": "mat-2022:1.XY.12",
+    "quote": "会用简单的图形拼图，能在组合图形中说出各组成部分图形的名称"
+   },
+   "questions": [
+    {
+     "id": "mbj_p110_q1",
+     "topicId": "mbj_p110",
+     "prompt": "七巧板中三角形的块数是多少？",
+     "question": "七巧板中三角形的块数是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "3 块"
+      },
+      {
+       "label": "B",
+       "text": "4 块"
+      },
+      {
+       "label": "C",
+       "text": "5 块"
+      },
+      {
+       "label": "D",
+       "text": "7 块"
+      }
+     ],
+     "answer": "C",
+     "explanation": "七巧板里三角形最多，有 5 块，另外还有 1 块正方形和 1 块平行四边形，加起来正好 7 块。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p110_q2",
+     "topicId": "mbj_p110",
+     "prompt": "七巧板中有 5 个三角形、1 个正方形和 1 个平行四边形，一共有多少块？",
+     "question": "七巧板中有 5 个三角形、1 个正方形和 1 个平行四边形，一共有多少块？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "7",
+     "verify": "5+1+1",
+     "explanation": "把三种图形的块数加起来：5 加 1 得 6，6 再加 1 得 7，一共 7 块。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p110_q3",
+     "topicId": "mbj_p110",
+     "prompt": "用七巧板中两块完全一样的三角形，可以拼成下面哪种图形？",
+     "question": "用七巧板中两块完全一样的三角形，可以拼成下面哪种图形？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "正方形"
+      },
+      {
+       "label": "B",
+       "text": "圆"
+      },
+      {
+       "label": "C",
+       "text": "五边形"
+      },
+      {
+       "label": "D",
+       "text": "球"
+      }
+     ],
+     "answer": "A",
+     "explanation": "两块完全一样的三角形把斜边对在一起，四条边就一样长了，能拼成一个正方形；圆和球是弯边的图形，用直边的板拼不出来。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p110_q4",
+     "topicId": "mbj_p110",
+     "prompt": "七巧板中有 1 个正方形，还有（ ）个平行四边形。",
+     "question": "七巧板中有 1 个正方形，还有（ ）个平行四边形。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "1",
+     "explanation": "七巧板由 5 个三角形、1 个正方形和 1 个平行四边形组成，所以平行四边形只有 1 个。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p110_q5",
+     "topicId": "mbj_p110",
+     "prompt": "拼图时，两块板之间应该怎样摆放才合适？",
+     "question": "拼图时，两块板之间应该怎样摆放才合适？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "可以叠在一起放"
+      },
+      {
+       "label": "B",
+       "text": "要紧挨着，不重叠也不留空隙"
+      },
+      {
+       "label": "C",
+       "text": "中间留出空隙更好看"
+      },
+      {
+       "label": "D",
+       "text": "怎么放都无所谓"
+      }
+     ],
+     "answer": "B",
+     "explanation": "拼图要板与板紧挨着，边缘对齐，既不重叠也不留缝，拼出的图形才完整，数块数时也不会多算或少算。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p110_q6",
+     "topicId": "mbj_p110",
+     "prompt": "七巧板共 7 块，拼一只小船用了 3 个三角形和 1 个正方形，还剩几块板？",
+     "question": "七巧板共 7 块，拼一只小船用了 3 个三角形和 1 个正方形，还剩几块板？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "3",
+     "verify": "7-3-1",
+     "explanation": "用掉的板是 3 加 1 得 4 块，7 减 4 得 3，还剩 3 块板没用上。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p110_q7",
+     "topicId": "mbj_p110",
+     "prompt": "小明说：我用七巧板中的 2 块板就拼出了一个大三角形。下面哪种说法是对的？",
+     "question": "小明说：我用七巧板中的 2 块板就拼出了一个大三角形。下面哪种说法是对的？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "不可能，至少要 3 块才能拼三角形"
+      },
+      {
+       "label": "B",
+       "text": "可能，两块完全一样的三角形就能拼成一个大三角形"
+      },
+      {
+       "label": "C",
+       "text": "可能，但必须把 7 块都用上"
+      },
+      {
+       "label": "D",
+       "text": "只有用正方形那块板才能拼"
+      }
+     ],
+     "answer": "B",
+     "explanation": "两块完全一样的三角形把相等的边对在一起，就能拼成一个更大的三角形，所以 2 块板也能拼出三角形。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p110_q8",
+     "topicId": "mbj_p110",
+     "prompt": "请介绍七巧板：它由哪几块组成？用它可以做什么？",
+     "question": "请介绍七巧板：它由哪几块组成？用它可以做什么？",
+     "type": "short-answer",
+     "difficulty": "basic",
+     "answer": "七巧板由 7 块板组成，其中有 5 个三角形、1 个正方形和 1 个平行四边形。用它可以拼出正方形、三角形、长方形，还能拼出小船、小鸟、小房子等各种有趣的图案。",
+     "explanation": "先说清组成再讲用途，就能看出七巧板是用少数几块基本图形变化出许多图案的玩具，也能帮助我们认识图形之间的关系。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p111",
+   "description": "在数和图形的排列中寻找规律：观察相邻两项怎样变化，说出是每次加几还是每次减几，按规律接着填数或接着画图形，并尝试自己创造有规律的排列。",
+   "mastery_criteria": [
+    "能发现数列中每次加几或减几的规律",
+    "能按规律接着填数或接着画图形",
+    "能自己设计一组有规律的排列"
+   ],
+   "misconceptions": [
+    "找规律只看最后两个数，不看整列数的变化",
+    "规律是每次减几时仍按加几往下填",
+    "图形规律中把一组重复里的第几个数错"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.08",
+    "quote": "探索用数或符号表达简单情境中的变化规律"
+   },
+   "questions": [
+    {
+     "id": "mbj_p111_q1",
+     "topicId": "mbj_p111",
+     "prompt": "按规律填数：3、6、9、12、（ ）。括号里应填多少？",
+     "question": "按规律填数：3、6、9、12、（ ）。括号里应填多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "15",
+     "verify": "12+3",
+     "explanation": "这列数每次多 3：3、6、9、12 依次加 3，12 再添 3 就是 15，所以填 15。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p111_q2",
+     "topicId": "mbj_p111",
+     "prompt": "一列数 20、18、16、14，接着往下应该填什么？",
+     "question": "一列数 20、18、16、14，接着往下应该填什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "13"
+      },
+      {
+       "label": "B",
+       "text": "12"
+      },
+      {
+       "label": "C",
+       "text": "16"
+      },
+      {
+       "label": "D",
+       "text": "10"
+      }
+     ],
+     "answer": "B",
+     "explanation": "这列数每次少 2：20 到 18 少 2，18 到 16 少 2，14 再少 2 就是 12。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p111_q3",
+     "topicId": "mbj_p111",
+     "prompt": "按规律填数：5、10、15、20、25、（ ）。括号里应填多少？",
+     "question": "按规律填数：5、10、15、20、25、（ ）。括号里应填多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "30",
+     "verify": "25+5",
+     "explanation": "这列数都是 5 个 5 个地数，每次多 5，25 再添 5 得 30，所以括号里填 30。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p111_q4",
+     "topicId": "mbj_p111",
+     "prompt": "图形按两个圆、一个三角形的顺序重复排列，第 8 个图形是什么？",
+     "question": "图形按两个圆、一个三角形的顺序重复排列，第 8 个图形是什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆"
+      },
+      {
+       "label": "B",
+       "text": "三角形"
+      },
+      {
+       "label": "C",
+       "text": "正方形"
+      },
+      {
+       "label": "D",
+       "text": "不能确定"
+      }
+     ],
+     "answer": "A",
+     "explanation": "每 3 个图形一组，依次是圆、圆、三角形。8 里面有两个完整的组共 6 个，第 8 个是第三组的第 2 个，也就是圆。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p111_q5",
+     "topicId": "mbj_p111",
+     "prompt": "按规律填数：100、90、80、（ ）、60。",
+     "question": "按规律填数：100、90、80、（ ）、60。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "70",
+     "explanation": "这列数每次少 10，80 再少 10 得 70，70 再少 10 正好是 60，所以填 70。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p111_q6",
+     "topicId": "mbj_p111",
+     "prompt": "按规律填数：1、3、6、10、（ ）。括号里应填多少？",
+     "question": "按规律填数：1、3、6、10、（ ）。括号里应填多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "15",
+     "verify": "10+5",
+     "explanation": "相邻两数的差在变大：1 到 3 多 2，3 到 6 多 3，6 到 10 多 4，所以下一步要再多 5，10 加 5 得 15。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p111_q7",
+     "topicId": "mbj_p111",
+     "prompt": "下面哪一列数是按每次加 4 的规律排列的？",
+     "question": "下面哪一列数是按每次加 4 的规律排列的？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "4、8、12、16"
+      },
+      {
+       "label": "B",
+       "text": "4、7、10、13"
+      },
+      {
+       "label": "C",
+       "text": "8、12、16、22"
+      },
+      {
+       "label": "D",
+       "text": "2、6、10、12"
+      }
+     ],
+     "answer": "A",
+     "explanation": "只有 4、8、12、16 每次都多 4；4、7、10、13 每次多 3，8、12、16、22 只在前面多 4，2、6、10、12 最后一步只多 2。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p111_q8",
+     "topicId": "mbj_p111",
+     "prompt": "观察一列数找规律时，你会先看什么？请举例说明怎样接着填。",
+     "question": "观察一列数找规律时，你会先看什么？请举例说明怎样接着填。",
+     "type": "short-answer",
+     "difficulty": "basic",
+     "answer": "先看相邻两个数相差多少，再看这个差是不是每次都一样。比如 7、14、21、28，每次都多 7，后面接着填 35；如果是 64、56、48，每次都少 8，后面就填 40，填完还要回头检查一遍。",
+     "explanation": "把相邻两项的差算出来，规律的加几或减几就现出来了，用同样的变化往后推，再回头验一遍就不会填错。",
+     "subject": "math-bj"
+    }
+   ]
+  }
+ ]
+}

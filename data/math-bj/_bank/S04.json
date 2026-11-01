@@ -1,0 +1,3004 @@
+{
+ "shard": "S04",
+ "subject": "math-bj",
+ "book": "一下",
+ "grade": 1,
+ "semester": "下",
+ "points": [
+  {
+   "topicId": "mbj_p057",
+   "name": "20以内的退位减法",
+   "level": "unit",
+   "description": "本单元学习20以内退位减法，包括十几减9、十几减8、7、6和十几减5、4、3、2。要求借助小棒、圆片操作理解算理，会用破十法和想加算减口算，并解决「还剩多少」的实际问题。",
+   "mastery_criteria": [
+    "能说出破十法和想加算减两种口算方法",
+    "能一分钟内正确口算10道20以内退位减法",
+    "会用减法解答「还剩多少」的简单问题"
+   ],
+   "misconceptions": [
+    "个位不够减就倒过来用减数减个位，如15减8算成8减5",
+    "破十后忘记加上剩下的几，如13减9只算10减9",
+    "想加算减时连错加法算式，如13减9想成9加3"
+   ],
+   "std": {
+    "id": "mat-2022:1.XY.02",
+    "quote": "能郊练口算 20 以内数的加诚法和表内乘除法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p057_q1",
+     "topicId": "mbj_p057",
+     "prompt": "计算 15 减 8 的得数，正确的一项是多少？",
+     "question": "计算 15 减 8 的得数，正确的一项是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把15分成10和5，10减8得2，2再加5得7，所以15减8等于7。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "7"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p057_q2",
+     "topicId": "mbj_p057",
+     "prompt": "计算 11 减 4，把得数填出来。",
+     "question": "计算 11 减 4，把得数填出来。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "把11分成10和1，10减4得6，6加1得7，所以得数是7。",
+     "subject": "math-bj",
+     "answer": "7",
+     "verify": "11-4"
+    },
+    {
+     "id": "mbj_p057_q3",
+     "topicId": "mbj_p057",
+     "prompt": "小明用破十法算 13 减 9：把 13 分成 10 和 3，10 减 9 得 1，接下来怎样算出得数？",
+     "question": "小明用破十法算 13 减 9：把 13 分成 10 和 3，10 减 9 得 1，接下来怎样算出得数？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "破十法只是第一步，还要把10减9剩下的1与被减数个位上的3合起来，1加3得4才是最后的得数。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "9 减 3，得 6"
+      },
+      {
+       "label": "B",
+       "text": "1 再加 3，得 4"
+      },
+      {
+       "label": "C",
+       "text": "1 再加 13，得 14"
+      },
+      {
+       "label": "D",
+       "text": "10 加 3，得 13"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p057_q4",
+     "topicId": "mbj_p057",
+     "prompt": "小刚想用加法算 16 减 7，他要先想 7 加几等于 16。这个数是几？只填这个数。",
+     "question": "小刚想用加法算 16 减 7，他要先想 7 加几等于 16。这个数是几？只填这个数。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "减法是加法的逆运算，7加9得16，所以16减7得9，先想的这个数就是9。",
+     "subject": "math-bj",
+     "answer": "9",
+     "verify": "16-7"
+    },
+    {
+     "id": "mbj_p057_q5",
+     "topicId": "mbj_p057",
+     "prompt": "小马虎说：15 减 8，因为 5 不够减 8，就用 8 减 5 得 3，答案是 3。他错在哪里？请写出正确的算法和得数。",
+     "question": "小马虎说：15 减 8，因为 5 不够减 8，就用 8 减 5 得 3，答案是 3。他错在哪里？请写出正确的算法和得数。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "参考要点：被减数不够减时不能交换两个数，要退十再减；把15分成10和5，10减8得2，2加5得7。",
+     "subject": "math-bj",
+     "answer": "他错在把被减数和减数交换了位置。个位5不够减8时，要把15分成10和5，先用10减8得2，再用2加5得7，所以15减8等于7，不是3。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p058",
+   "name": "十几减9",
+   "level": "lesson",
+   "description": "本课学习十几减9的口算。借助小棒和圆片，把十几分成10和几，用10减9后再加上剩下的几，或想9加几得十几来算得数，达到能直接说出结果的程度。",
+   "mastery_criteria": [
+    "能把十几分成10和几，用破十法算出十几减9",
+    "能由9加几得十几直接说出十几减9的差",
+    "能说出十几减9的得数比被减数个位多1"
+   ],
+   "misconceptions": [
+    "先算10减9后忘记加个位上的数，得数写成1",
+    "把13减9算成13减3，得数写成10",
+    "9加几的口诀记错，如9加5想成13"
+   ],
+   "std": {
+    "id": "mat-2022:1.TS.05",
+    "quote": "利用对应的方法理解加法的意义，感悟减法是加法的逆运算"
+   },
+   "questions": [
+    {
+     "id": "mbj_p058_q1",
+     "topicId": "mbj_p058",
+     "prompt": "计算 11 减 9 的得数，正确的一项是多少？",
+     "question": "计算 11 减 9 的得数，正确的一项是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把11分成10和1，10减9得1，1加1得2，也可以想9加2得11，所以得数是2。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "9"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p058_q2",
+     "topicId": "mbj_p058",
+     "prompt": "计算 16 减 9，把差填出来。",
+     "question": "计算 16 减 9，把差填出来。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "把16分成10和6，10减9得1，1加6得7，也可以想9加7得16，所以差是7。",
+     "subject": "math-bj",
+     "answer": "7",
+     "verify": "16-9"
+    },
+    {
+     "id": "mbj_p058_q3",
+     "topicId": "mbj_p058",
+     "prompt": "9 加 4 等于 13，那么 13 减 9 等于几？请填出得数。",
+     "question": "9 加 4 等于 13，那么 13 减 9 等于几？请填出得数。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "减法是加法的逆运算，9加4得13，反过来13减9就等于4。",
+     "subject": "math-bj",
+     "answer": "4"
+    },
+    {
+     "id": "mbj_p058_q4",
+     "topicId": "mbj_p058",
+     "prompt": "用破十法计算 12 减 9，下面哪种做法是正确的？",
+     "question": "用破十法计算 12 减 9，下面哪种做法是正确的？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "破十法把被减数分成10和个位上的数，先用10减9，再把得到的结果与个位上的数相加。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "把12分成10和2，10减9得1，1加12得13"
+      },
+      {
+       "label": "B",
+       "text": "用9减2得7，所以12减9得7"
+      },
+      {
+       "label": "C",
+       "text": "把12分成6和6，9减6得3，12减3得9"
+      },
+      {
+       "label": "D",
+       "text": "把12分成10和2，10减9得1，1加2得3"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p058_q5",
+     "topicId": "mbj_p058",
+     "prompt": "小华有 15 张画片，送给同学 9 张，还剩多少张？只填得数。",
+     "question": "小华有 15 张画片，送给同学 9 张，还剩多少张？只填得数。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "求还剩多少用减法，15减9，把15分成10和5，10减9得1，1加5得6，还剩6张。",
+     "subject": "math-bj",
+     "answer": "6",
+     "verify": "15-9"
+    },
+    {
+     "id": "mbj_p058_q6",
+     "topicId": "mbj_p058",
+     "prompt": "找规律：11减9得2，12减9得3，13减9得4，那么 17 减 9 等于几？请填出得数。",
+     "question": "找规律：11减9得2，12减9得3，13减9得4，那么 17 减 9 等于几？请填出得数。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "被减数每次多1，减数不变，得数也每次多1。13减9得4，往后数4次得8，所以17减9等于8。",
+     "subject": "math-bj",
+     "answer": "8"
+    },
+    {
+     "id": "mbj_p058_q7",
+     "topicId": "mbj_p058",
+     "prompt": "一个数减 9 得 7，这个数减 7 得多少？",
+     "question": "一个数减 9 得 7，这个数减 7 得多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先由减9得7求出这个数：9加7得16。再算16减7，把16分成10和6，10减7得3，3加6得9。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "9"
+      },
+      {
+       "label": "B",
+       "text": "7"
+      },
+      {
+       "label": "C",
+       "text": "16"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p058_q8",
+     "topicId": "mbj_p058",
+     "prompt": "为什么十几减 9 的得数总比被减数个位上的数多 1？请用 17 减 9 说明。",
+     "question": "为什么十几减 9 的得数总比被减数个位上的数多 1？请用 17 减 9 说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "参考要点：10减9剩下1，这个1与个位上的数合起来，等于个位加1。",
+     "subject": "math-bj",
+     "answer": "因为把17分成10和7，10减9还剩1，再用1加7得8，也就是7加1。所以十几减9的得数总比个位上的数多1，17减9等于8。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p059",
+   "name": "十几减8、7、6",
+   "level": "lesson",
+   "description": "本课学习十几减8、7、6的口算。能沿用破十法和想加算减的思路，先想8、7、6加几得十几，再直接说出得数，并在分物品的情境中用它解决简单问题。",
+   "mastery_criteria": [
+    "能用破十法算出十几减8、7、6的得数",
+    "能由8、7、6加几直接说出相应的减法得数",
+    "能在「拿走一些」的情境中列减法算式求结果"
+   ],
+   "misconceptions": [
+    "13减8算成13减3，把减数当成个位上的数",
+    "16减7想加算减时想成7加8得16，得数写成8",
+    "算出的差比正确结果大1，退十后多加了1"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.03",
+    "quote": "在具体情境中，了解四则运算的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p059_q1",
+     "topicId": "mbj_p059",
+     "prompt": "计算 13 减 8 的得数，正确的一项是多少？",
+     "question": "计算 13 减 8 的得数，正确的一项是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把13分成10和3，10减8得2，2加3得5，也可以想8加5得13，得数是5。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p059_q2",
+     "topicId": "mbj_p059",
+     "prompt": "计算 15 减 7，把差填出来。",
+     "question": "计算 15 减 7，把差填出来。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "把15分成10和7，10减7得3，3加5得8，也可以想7加8得15，所以差是8。",
+     "subject": "math-bj",
+     "answer": "8",
+     "verify": "15-7"
+    },
+    {
+     "id": "mbj_p059_q3",
+     "topicId": "mbj_p059",
+     "prompt": "12 减 6 等于几？请填出得数。",
+     "question": "12 减 6 等于几？请填出得数。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "把12分成10和2，10减6得4，4加2得6；也可以想6加6得12，所以12减6等于6。",
+     "subject": "math-bj",
+     "answer": "6"
+    },
+    {
+     "id": "mbj_p059_q4",
+     "topicId": "mbj_p059",
+     "prompt": "用想加算减计算 14 减 8，要先想哪一道加法算式？",
+     "question": "用想加算减计算 14 减 8，要先想哪一道加法算式？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "想加算减就是先找减数加几等于被减数，这里要找8加几得14，因为8加6得14，所以14减8得6。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "8 加 8 等于 16"
+      },
+      {
+       "label": "B",
+       "text": "14 加 8 等于 22"
+      },
+      {
+       "label": "C",
+       "text": "8 加 6 等于 14"
+      },
+      {
+       "label": "D",
+       "text": "8 加 4 等于 12"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p059_q5",
+     "topicId": "mbj_p059",
+     "prompt": "树上有 16 个苹果，摘走 8 个，还剩多少个？只填得数。",
+     "question": "树上有 16 个苹果，摘走 8 个，还剩多少个？只填得数。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "求剩下多少用减法，16减8，把16分成10和6，10减8得2，2加6得8，还剩8个。",
+     "subject": "math-bj",
+     "answer": "8",
+     "verify": "16-8"
+    },
+    {
+     "id": "mbj_p059_q6",
+     "topicId": "mbj_p059",
+     "prompt": "一个数减 8 等于 5，这个数是多少？请填出这个数。",
+     "question": "一个数减 8 等于 5，这个数是多少？请填出这个数。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "减法是加法的逆运算，这个数等于8加5，8加5得13，所以这个数是13。",
+     "subject": "math-bj",
+     "answer": "13"
+    },
+    {
+     "id": "mbj_p059_q7",
+     "topicId": "mbj_p059",
+     "prompt": "妈妈买了 14 个鸡蛋，做菜用了 7 个，剩下的比用掉的少几个？",
+     "question": "妈妈买了 14 个鸡蛋，做菜用了 7 个，剩下的比用掉的少几个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先求剩下：14减7得7个。剩下的7个与用掉的7个同样多，所以少0个。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "7"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "14"
+      },
+      {
+       "label": "D",
+       "text": "0"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p059_q8",
+     "topicId": "mbj_p059",
+     "prompt": "13 减 8 和 13 减 6，哪一个得数大？大多少？请说出你的想法。",
+     "question": "13 减 8 和 13 减 6，哪一个得数大？大多少？请说出你的想法。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "参考要点：分别算出两个差，或由「减得越少剩得越多」判断，再相减求差几。",
+     "subject": "math-bj",
+     "answer": "13减8得5，13减6得7。被减数相同，减数小的得数大，所以13减6的得数大；7减5得2，大2。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p060",
+   "name": "十几减5、4、3、2",
+   "level": "lesson",
+   "description": "本课学习十几减5、4、3、2的口算。减数变小后，仍用破十法或想加算减求差，并发现「被减数不变，减数越小得数越大」的规律，能熟练直接说出得数。",
+   "mastery_criteria": [
+    "能直接说出十几减5、4、3、2的得数",
+    "能用破十法或想加算减说明自己的算法",
+    "能说出被减数不变时减数变小得数变大的规律"
+   ],
+   "misconceptions": [
+    "减数变小后仍按减9多1的办法算，得数偏小1",
+    "13减5算成13减3得10，把减数看错",
+    "被减数个位比减数大时不会退位思考，直接相减算错"
+   ],
+   "std": {
+    "id": "mat-2022:1.XY.03",
+    "quote": "能口算简单的百以内数的加减法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p060_q1",
+     "topicId": "mbj_p060",
+     "prompt": "计算 12 减 5 的得数，正确的一项是多少？",
+     "question": "计算 12 减 5 的得数，正确的一项是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把12分成10和2，10减5得5，5加2得7，也可以想5加7得12，得数是7。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "7"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p060_q2",
+     "topicId": "mbj_p060",
+     "prompt": "计算 11 减 3，把差填出来。",
+     "question": "计算 11 减 3，把差填出来。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "把11分成10和1，10减3得7，7加1得8，也可以想3加8得11，所以差是8。",
+     "subject": "math-bj",
+     "answer": "8",
+     "verify": "11-3"
+    },
+    {
+     "id": "mbj_p060_q3",
+     "topicId": "mbj_p060",
+     "prompt": "13 减 4 等于几？请填出得数。",
+     "question": "13 减 4 等于几？请填出得数。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "把13分成10和3，10减4得6，6加3得9，所以13减4等于9。",
+     "subject": "math-bj",
+     "answer": "9"
+    },
+    {
+     "id": "mbj_p060_q4",
+     "topicId": "mbj_p060",
+     "prompt": "计算 13 减 5 时，下面哪种想法是正确的？",
+     "question": "计算 13 减 5 时，下面哪种想法是正确的？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "个位3不够减5，要用破十法：把13分成10和3，先算10减5得5，再把5与3相加得8。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "把5分成3和2，13减3得10，10加2得12"
+      },
+      {
+       "label": "B",
+       "text": "把13分成10和3，10减5得5，5加3得8"
+      },
+      {
+       "label": "C",
+       "text": "用5减3得2，所以13减5得2"
+      },
+      {
+       "label": "D",
+       "text": "13减3得10，10减5得5，所以得5"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p060_q5",
+     "topicId": "mbj_p060",
+     "prompt": "图书角有 14 本书，借出 5 本，还剩多少本？只填得数。",
+     "question": "图书角有 14 本书，借出 5 本，还剩多少本？只填得数。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "求还剩多少用减法，14减5，把14分成10和4，10减5得5，5加4得9，还剩9本。",
+     "subject": "math-bj",
+     "answer": "9",
+     "verify": "14-5"
+    },
+    {
+     "id": "mbj_p060_q6",
+     "topicId": "mbj_p060",
+     "prompt": "12 减多少等于 8？请填出这个数。",
+     "question": "12 减多少等于 8？请填出这个数。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "想加算减：8加几得12，8加4得12，所以12减4等于8，这个数是4。",
+     "subject": "math-bj",
+     "answer": "4"
+    },
+    {
+     "id": "mbj_p060_q7",
+     "topicId": "mbj_p060",
+     "prompt": "在多少减 5 等于 7 的算式中，如果把这个减数 5 改成 3，得数会变成多少？",
+     "question": "在多少减 5 等于 7 的算式中，如果把这个减数 5 改成 3，得数会变成多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先由减5得7求出被减数：5加7得12。再把减数换成3，12减3得9。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "9"
+      },
+      {
+       "label": "D",
+       "text": "7"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p060_q8",
+     "topicId": "mbj_p060",
+     "prompt": "把 13 减 5 和 13 减 4 比一比：减数小 1，得数会怎样变化？请说出规律并举一个例子。",
+     "question": "把 13 减 5 和 13 减 4 比一比：减数小 1，得数会怎样变化？请说出规律并举一个例子。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "参考要点：被减数不变时，减数少1，得数就多1；用两道算式的差对照说明。",
+     "subject": "math-bj",
+     "answer": "被减数不变时，减数小1，得数就大1。比如13减5得8，13减4得9：减数从5变成4少了1，得数从8变成9多了1。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p061",
+   "name": "回顾与反思",
+   "level": "lesson",
+   "description": "本课是第一单元的回顾与反思。要求整理十几减9、8、7、6、5、4、3、2的算法，比较破十法与想加算减的联系，检查口算中的常见错误，并用减法解决简单实际问题。",
+   "mastery_criteria": [
+    "能说出退位减法的两种算法并举例",
+    "能用加法验算一道减法算式的得数",
+    "能找出自己口算中的错题并改正"
+   ],
+   "misconceptions": [
+    "认为加法不能用来检查减法，只重算一遍",
+    "把所有十几减几都当成退位减法，如15减5也退位",
+    "整理算式时只看答案，不看用的方法"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.06",
+    "quote": "在解决生活情境问题的过程中，体会数和运算的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p061_q1",
+     "topicId": "mbj_p061",
+     "prompt": "下面哪一道算式计算时需要退位？",
+     "question": "下面哪一道算式计算时需要退位？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "15减7时个位5不够减7，要从十位退1当10再减，是退位减法；9减4、16减6、7减2个位都够减。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "9 减 4"
+      },
+      {
+       "label": "B",
+       "text": "16 减 6"
+      },
+      {
+       "label": "C",
+       "text": "7 减 2"
+      },
+      {
+       "label": "D",
+       "text": "15 减 7"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p061_q2",
+     "topicId": "mbj_p061",
+     "prompt": "计算 14 减 9，把得数填出来。",
+     "question": "计算 14 减 9，把得数填出来。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "把14分成10和4，10减9得1，1加4得5，也可以想9加5得14，所以得数是5。",
+     "subject": "math-bj",
+     "answer": "5",
+     "verify": "14-9"
+    },
+    {
+     "id": "mbj_p061_q3",
+     "topicId": "mbj_p061",
+     "prompt": "17 减 8 等于几？请填出得数。",
+     "question": "17 减 8 等于几？请填出得数。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "把17分成10和7，10减8得2，2加7得9，也可以想8加9得17，所以17减8等于9。",
+     "subject": "math-bj",
+     "answer": "9"
+    },
+    {
+     "id": "mbj_p061_q4",
+     "topicId": "mbj_p061",
+     "prompt": "用破十法计算 15 减 6，第一步应该做什么？",
+     "question": "用破十法计算 15 减 6，第一步应该做什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "破十法先处理个位不够减的问题：把15分成10和5，用10减6，再把结果与5相加。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "把15分成10和5，用10减6得4"
+      },
+      {
+       "label": "B",
+       "text": "先算6减5得1，再用15减1得14"
+      },
+      {
+       "label": "C",
+       "text": "先算15减5得10，再用10加6得16"
+      },
+      {
+       "label": "D",
+       "text": "把15和6的个位都去掉，用10减0得10"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p061_q5",
+     "topicId": "mbj_p061",
+     "prompt": "小明折了 13 只纸鹤，送给妹妹 6 只，还剩多少只？只填得数。",
+     "question": "小明折了 13 只纸鹤，送给妹妹 6 只，还剩多少只？只填得数。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "求还剩多少用减法，13减6，把13分成10和3，10减6得4，4加3得7，还剩7只。",
+     "subject": "math-bj",
+     "answer": "7",
+     "verify": "13-6"
+    },
+    {
+     "id": "mbj_p061_q6",
+     "topicId": "mbj_p061",
+     "prompt": "在 12 减 8、12 减 7、12 减 6 三道算式中，得数最大的差是几？请填出这个数。",
+     "question": "在 12 减 8、12 减 7、12 减 6 三道算式中，得数最大的差是几？请填出这个数。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "被减数都是12，减数越小得数越大。12减8得4，12减7得5，12减6得6，最大的差是6。",
+     "subject": "math-bj",
+     "answer": "6"
+    },
+    {
+     "id": "mbj_p061_q7",
+     "topicId": "mbj_p061",
+     "prompt": "算出 13 减 7 得 6 以后，用 6 加 7 正好得 13。这说明什么？",
+     "question": "算出 13 减 7 得 6 以后，用 6 加 7 正好得 13。这说明什么？",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "减法可以用加法验算，因为减法是加法的逆运算：差加减数等于被减数，说明得数算对了。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "得数应该是 5，加法算错了"
+      },
+      {
+       "label": "B",
+       "text": "可以用加法验算减法，得数是对的"
+      },
+      {
+       "label": "C",
+       "text": "加法不能检查减法，这只是巧合"
+      },
+      {
+       "label": "D",
+       "text": "得数应该是 20"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p061_q8",
+     "topicId": "mbj_p061",
+     "prompt": "请写出计算 15 减 8 的两种不同方法，并说出它们的得数。",
+     "question": "请写出计算 15 减 8 的两种不同方法，并说出它们的得数。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "参考要点：一种破十法，一种想加算减，两种方法结果相同。",
+     "subject": "math-bj",
+     "answer": "第一种用破十法：把15分成10和5，10减8得2，2加5得7。第二种用想加算减：想8加几得15，8加7得15，所以15减8得7。两种方法都得7。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p062",
+   "name": "练习与应用",
+   "level": "lesson",
+   "description": "本课是第一单元的练习与应用。在买东西、分物品、比多少等情境中，选择合适的减法算式求「还剩多少」「少了多少」，要求会列式、会口算、会说清每个数表示的意思。",
+   "mastery_criteria": [
+    "能从情境中找出被减数和减数列出算式",
+    "能口算20以内退位减法并写出单位",
+    "能说清减法算式中每个数在情境中的意思"
+   ],
+   "misconceptions": [
+    "见「一共」就用加法，见「还剩」才用减法但列错数",
+    "把「比…少多少」算成加法",
+    "得数后面漏写单位，或单位写错成「元」「个」混用"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.07",
+    "quote": "在简单的生活情境中，运用数和数的运算解决问题，能解释结果的实际意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p062_q1",
+     "topicId": "mbj_p062",
+     "prompt": "篮子里有 12 个橘子，吃了 5 个，还剩多少个？",
+     "question": "篮子里有 12 个橘子，吃了 5 个，还剩多少个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "从12个里去掉吃掉的5个，用减法：12减5，把12分成10和2，10减5得5，5加2得7。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "8 个"
+      },
+      {
+       "label": "B",
+       "text": "17 个"
+      },
+      {
+       "label": "C",
+       "text": "7 个"
+      },
+      {
+       "label": "D",
+       "text": "6 个"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p062_q2",
+     "topicId": "mbj_p062",
+     "prompt": "停车场有 14 辆车，开走 6 辆，还剩多少辆？只填得数。",
+     "question": "停车场有 14 辆车，开走 6 辆，还剩多少辆？只填得数。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "求剩下多少用减法，14减6，把14分成10和4，10减6得4，4加4得8，还剩8辆。",
+     "subject": "math-bj",
+     "answer": "8",
+     "verify": "14-6"
+    },
+    {
+     "id": "mbj_p062_q3",
+     "topicId": "mbj_p062",
+     "prompt": "小林有 11 支铅笔，送给同学 2 支，还剩几支？请填出得数。",
+     "question": "小林有 11 支铅笔，送给同学 2 支，还剩几支？请填出得数。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "从11支里去掉送出的2支，11减2得9，因为个位1不够减2，把11分成10和1，10减2得8，8加1得9。",
+     "subject": "math-bj",
+     "answer": "9"
+    },
+    {
+     "id": "mbj_p062_q4",
+     "topicId": "mbj_p062",
+     "prompt": "一盒巧克力有 15 块，妹妹吃了 8 块，哥哥比妹妹少吃 3 块。哥哥吃了多少块？",
+     "question": "一盒巧克力有 15 块，妹妹吃了 8 块，哥哥比妹妹少吃 3 块。哥哥吃了多少块？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先找与哥哥有关的条件：哥哥比妹妹少吃3块，用妹妹的8块减3块得5块，盒子里一共有15块这个条件用不上。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "8 块"
+      },
+      {
+       "label": "B",
+       "text": "7 块"
+      },
+      {
+       "label": "C",
+       "text": "3 块"
+      },
+      {
+       "label": "D",
+       "text": "5 块"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p062_q5",
+     "topicId": "mbj_p062",
+     "prompt": "教室里有 17 把椅子，搬走 9 把，还剩多少把？只填得数。",
+     "question": "教室里有 17 把椅子，搬走 9 把，还剩多少把？只填得数。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "求还剩多少用减法，17减9，把17分成10和7，10减9得1，1加7得8，还剩8把。",
+     "subject": "math-bj",
+     "answer": "8",
+     "verify": "17-9"
+    },
+    {
+     "id": "mbj_p062_q6",
+     "topicId": "mbj_p062",
+     "prompt": "树上原来有 13 只鸟，飞走一些后还剩 5 只，飞走了几只？请填出得数。",
+     "question": "树上原来有 13 只鸟，飞走一些后还剩 5 只，飞走了几只？请填出得数。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "求飞走几只，用原来的只数减剩下的只数：13减5，13分成10和3，10减5得5，5加3得8。",
+     "subject": "math-bj",
+     "answer": "8"
+    },
+    {
+     "id": "mbj_p062_q7",
+     "topicId": "mbj_p062",
+     "prompt": "跳绳比赛，小云跳了 16 下，小刚比小云少跳 8 下，小丽比小刚多跳 4 下。小丽跳了多少下？",
+     "question": "跳绳比赛，小云跳了 16 下，小刚比小云少跳 8 下，小丽比小刚多跳 4 下。小丽跳了多少下？",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先求小刚：16减8得8下；再求小丽：8加4得12下。两步都要按「比谁多、比谁少」找对算法。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "12 下"
+      },
+      {
+       "label": "B",
+       "text": "8 下"
+      },
+      {
+       "label": "C",
+       "text": "16 下"
+      },
+      {
+       "label": "D",
+       "text": "4 下"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p062_q8",
+     "topicId": "mbj_p062",
+     "prompt": "妈妈买了 18 个鸡蛋，第一天吃了 9 个，第二天吃了 4 个。还剩多少个？请写出算式和得数。",
+     "question": "妈妈买了 18 个鸡蛋，第一天吃了 9 个，第二天吃了 4 个。还剩多少个？请写出算式和得数。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "参考要点：可以连减两次，也可以先求一共吃了多少再减；算式与得数要对得上。",
+     "subject": "math-bj",
+     "answer": "先算第一天吃完后还剩：18减9得9个；再减第二天吃的：9减4得5个。所以还剩5个鸡蛋。也可以先算一共吃了9加4得13个，再算18减13得5个。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p063",
+   "name": "100以内数的认识",
+   "level": "unit",
+   "description": "本单元学习100以内数的认识。要求会一个一个、十个十个地数数，理解个位、十位、百位的含义，会读写100以内的数，会比较大小，并会口算整十数加减及整十数加一位数。",
+   "mastery_criteria": [
+    "能说出100以内数中每个数字所在的数位",
+    "能由「几个十几个一」写出对应的数",
+    "能比较两个两位数的大小并说明理由"
+   ],
+   "misconceptions": [
+    "把35说成5个十3个一，数位顺序颠倒",
+    "认为90的十位是9、个位也是9",
+    "写数时把「五十」写成「5」或「500」"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.01",
+    "quote": "在实际情境中感悟并理解万以内数的意义，理解数位的含义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p063_q1",
+     "topicId": "mbj_p063",
+     "prompt": "10 个十合起来是多少？",
+     "question": "10 个十合起来是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "10个十就是一百，十位上满10个十要向百位进1，所以10个十是100。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "110"
+      },
+      {
+       "label": "B",
+       "text": "100"
+      },
+      {
+       "label": "C",
+       "text": "20"
+      },
+      {
+       "label": "D",
+       "text": "10"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p063_q2",
+     "topicId": "mbj_p063",
+     "prompt": "4 个十和 7 个一合起来是多少？只填这个数。",
+     "question": "4 个十和 7 个一合起来是多少？只填这个数。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "4个十是40，7个一是7，40加7得47，所以这个数是47。",
+     "subject": "math-bj",
+     "answer": "47",
+     "verify": "4*10+7"
+    },
+    {
+     "id": "mbj_p063_q3",
+     "topicId": "mbj_p063",
+     "prompt": "在 86 这个数中，数字 8 表示什么？",
+     "question": "在 86 这个数中，数字 8 表示什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "86的十位上是8，表示8个十；个位上是6，表示6个一。同一个数字在不同数位上表示的大小不同。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "80 个十"
+      },
+      {
+       "label": "B",
+       "text": "8 个百"
+      },
+      {
+       "label": "C",
+       "text": "8 个十"
+      },
+      {
+       "label": "D",
+       "text": "8 个一"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p063_q4",
+     "topicId": "mbj_p063",
+     "prompt": "一个两位数，十位上是 5，个位上是 0，这个数是多少？只填这个数。",
+     "question": "一个两位数，十位上是 5，个位上是 0，这个数是多少？只填这个数。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "十位上是5表示5个十，就是50；个位上是0表示一个一也没有，要用0占位。",
+     "subject": "math-bj",
+     "answer": "50",
+     "verify": "5*10"
+    },
+    {
+     "id": "mbj_p063_q5",
+     "topicId": "mbj_p063",
+     "prompt": "为什么 100 里面正好有 10 个十？请用数位说明理由。",
+     "question": "为什么 100 里面正好有 10 个十？请用数位说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "参考要点：十位满10个十要向百位进1；百位上的1就是10个十。",
+     "subject": "math-bj",
+     "answer": "因为100的百位上是1，1个百就是10个十；数的时候十位上满10个十，就要向百位进1，所以100里面正好有10个十。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p064",
+   "name": "数数",
+   "level": "lesson",
+   "description": "本课学习数数。能一个一个地数、两个两个地数、五个五个地数、十个十个地数，数到一百，重点掌握「拐弯数」，如59后面是60、99后面是100。",
+   "mastery_criteria": [
+    "能一个一个地数出100以内的数，拐弯处不卡壳",
+    "能十个十个地从20数到100",
+    "能说出某个数后面第几个数是几"
+   ],
+   "misconceptions": [
+    "数到59以后接着数50，忘了十位要进1",
+    "十个十个数时从20跳到40，漏掉30",
+    "数「后面第3个数」时把本身也算进去"
+   ],
+   "std": {
+    "id": "mat-2022:1.TS.03",
+    "quote": "同理认识百以内数、万以内数"
+   },
+   "questions": [
+    {
+     "id": "mbj_p064_q1",
+     "topicId": "mbj_p064",
+     "prompt": "从 38 往后一个一个地数 3 个数，最后数到的是哪一个？",
+     "question": "从 38 往后一个一个地数 3 个数，最后数到的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "往后数3个数依次是39、40、41，注意39后面十位要进1变成40，最后数到41。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "39"
+      },
+      {
+       "label": "B",
+       "text": "40"
+      },
+      {
+       "label": "C",
+       "text": "42"
+      },
+      {
+       "label": "D",
+       "text": "41"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p064_q2",
+     "topicId": "mbj_p064",
+     "prompt": "从 56 开始一个一个地往后数，第 4 个数是多少？只填这个数。",
+     "question": "从 56 开始一个一个地往后数，第 4 个数是多少？只填这个数。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "从56往后数：57是第1个，58是第2个，59是第3个，60是第4个，所以第4个数是60。",
+     "subject": "math-bj",
+     "answer": "60",
+     "verify": "56+4"
+    },
+    {
+     "id": "mbj_p064_q3",
+     "topicId": "mbj_p064",
+     "prompt": "和 49 相邻的两个数中，比 49 小的那个数是多少？请填出来。",
+     "question": "和 49 相邻的两个数中，比 49 小的那个数是多少？请填出来。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "与49相邻的是48和50；比49小的是前一个数，49减1得48。",
+     "subject": "math-bj",
+     "answer": "48"
+    },
+    {
+     "id": "mbj_p064_q4",
+     "topicId": "mbj_p064",
+     "prompt": "数到 59 以后，再数 1 个数是多少？",
+     "question": "数到 59 以后，再数 1 个数是多少？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "59的个位添1满10，要向十位进1，十位5加1得6，个位写0，所以是60。这是拐弯数最容易错的地方。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "60"
+      },
+      {
+       "label": "B",
+       "text": "50"
+      },
+      {
+       "label": "C",
+       "text": "61"
+      },
+      {
+       "label": "D",
+       "text": "510"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p064_q5",
+     "topicId": "mbj_p064",
+     "prompt": "十个十个地数，从 20 数起，第 5 个数是多少？只填这个数。",
+     "question": "十个十个地数，从 20 数起，第 5 个数是多少？只填这个数。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "从20起十个十个数：20、30、40、50、60，20是第1个，60是第5个。",
+     "subject": "math-bj",
+     "answer": "60",
+     "verify": "20+10*4"
+    },
+    {
+     "id": "mbj_p064_q6",
+     "topicId": "mbj_p064",
+     "prompt": "从 87 开始十个十个地往后数，下一个数是多少？请填出来。",
+     "question": "从 87 开始十个十个地往后数，下一个数是多少？请填出来。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "十个十个数，十位加1、个位不变：87的十位8加1得9，个位还是7，所以下一个数是97。",
+     "subject": "math-bj",
+     "answer": "97"
+    },
+    {
+     "id": "mbj_p064_q7",
+     "topicId": "mbj_p064",
+     "prompt": "一个一个地数，从 68 数到 72，一共数了几个数？",
+     "question": "一个一个地数，从 68 数到 72，一共数了几个数？",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "把数一个个列出来：68、69、70、71、72，两头都要数进去，一共5个数。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "3 个"
+      },
+      {
+       "label": "B",
+       "text": "5 个"
+      },
+      {
+       "label": "C",
+       "text": "4 个"
+      },
+      {
+       "label": "D",
+       "text": "6 个"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p064_q8",
+     "topicId": "mbj_p064",
+     "prompt": "数到 99 以后再添 1 是多少？请说清理由。",
+     "question": "数到 99 以后再添 1 是多少？请说清理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "参考要点：个位满十向十位进1，十位又满十向百位进1，结果是100。",
+     "subject": "math-bj",
+     "answer": "是100。因为99的个位添1满10，要向十位进1；十位上9加1又满10，再向百位进1；百位上写1，十位和个位写0，就是100。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p065",
+   "name": "数的组成",
+   "level": "lesson",
+   "description": "本课学习数的组成。知道两位数由几个十和几个一组成，能由「几个十几个一」说出这个数，也能把一个两位数拆成几个十和几个一，为读写数和计算打基础。",
+   "mastery_criteria": [
+    "能说出一个两位数由几个十和几个一组成",
+    "能由几个十和几个一写出这个两位数",
+    "能说出整十数里面有几个十"
+   ],
+   "misconceptions": [
+    "35说成3个一和5个十，把十与一颠倒",
+    "60说成6个一，忽略个位上的0",
+    "把「9个十」写成9，漏写后面的0"
+   ],
+   "std": {
+    "id": "mat-2022:1.TS.02",
+    "quote": "这个位置叫十位，十位上的1表示 1 个十"
+   },
+   "questions": [
+    {
+     "id": "mbj_p065_q1",
+     "topicId": "mbj_p065",
+     "prompt": "35 是由几个十和几个一组成的？",
+     "question": "35 是由几个十和几个一组成的？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "35的十位上是3，表示3个十；个位上是5，表示5个一，所以35由3个十和5个一组成。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "3 个十和 5 个十"
+      },
+      {
+       "label": "B",
+       "text": "35 个十"
+      },
+      {
+       "label": "C",
+       "text": "3 个十和 5 个一"
+      },
+      {
+       "label": "D",
+       "text": "5 个十和 3 个一"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p065_q2",
+     "topicId": "mbj_p065",
+     "prompt": "6 个十和 8 个一组成的数是多少？只填这个数。",
+     "question": "6 个十和 8 个一组成的数是多少？只填这个数。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "6个十是60，8个一是8，60加8得68，所以这个数是68。",
+     "subject": "math-bj",
+     "answer": "68",
+     "verify": "6*10+8"
+    },
+    {
+     "id": "mbj_p065_q3",
+     "topicId": "mbj_p065",
+     "prompt": "72 里面有 7 个十和几个一？请填出这个数。",
+     "question": "72 里面有 7 个十和几个一？请填出这个数。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "72的十位是7，个位是2，个位上的2表示2个一，所以有2个一。",
+     "subject": "math-bj",
+     "answer": "2"
+    },
+    {
+     "id": "mbj_p065_q4",
+     "topicId": "mbj_p065",
+     "prompt": "60 这个数里面一共有几个十？请选出正确答案。",
+     "question": "60 这个数里面一共有几个十？请选出正确答案。",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "60的十位上是6，表示6个十，个位上是0表示没有一，所以60里面有6个十。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "60 个十"
+      },
+      {
+       "label": "B",
+       "text": "0 个十"
+      },
+      {
+       "label": "C",
+       "text": "6 个一"
+      },
+      {
+       "label": "D",
+       "text": "6 个十"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p065_q5",
+     "topicId": "mbj_p065",
+     "prompt": "把 4 个十和 9 个一合起来，再添上 1 个一，得到多少？只填这个数。",
+     "question": "把 4 个十和 9 个一合起来，再添上 1 个一，得到多少？只填这个数。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "4个十和9个一是49，再添1个一，个位9加1满10，向十位进1，得到50。",
+     "subject": "math-bj",
+     "answer": "50",
+     "verify": "4*10+9+1"
+    },
+    {
+     "id": "mbj_p065_q6",
+     "topicId": "mbj_p065",
+     "prompt": "一个数由 9 个十和 0 个一组成，这个数是多少？请填出来。",
+     "question": "一个数由 9 个十和 0 个一组成，这个数是多少？请填出来。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "9个十是90，0个一就是一个也没有，个位上写0占位，所以这个数是90。",
+     "subject": "math-bj",
+     "answer": "90"
+    },
+    {
+     "id": "mbj_p065_q7",
+     "topicId": "mbj_p065",
+     "prompt": "一个两位数，十位上的数比个位上的数大 2，个位上是 4，这个数是多少？",
+     "question": "一个两位数，十位上的数比个位上的数大 2，个位上是 4，这个数是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "个位是4，十位比个位大2，十位是6，所以这个数是64；46是把十位和个位弄反的结果。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "64"
+      },
+      {
+       "label": "B",
+       "text": "46"
+      },
+      {
+       "label": "C",
+       "text": "42"
+      },
+      {
+       "label": "D",
+       "text": "24"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p065_q8",
+     "topicId": "mbj_p065",
+     "prompt": "为什么数字 7 写在十位上和写在个位上表示的意思不同？请举例说明。",
+     "question": "为什么数字 7 写在十位上和写在个位上表示的意思不同？请举例说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "参考要点：数位决定计数单位，十位上的7表示7个十，个位上的7表示7个一。",
+     "subject": "math-bj",
+     "answer": "因为数位不同，表示的大小就不同。7写在十位上表示7个十，就是70；7写在个位上表示7个一，就是7。所以同样是7，写在不同数位上意思完全不一样。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p066",
+   "name": "认识100",
+   "level": "lesson",
+   "description": "本课认识100。通过10个十是一百的操作，理解百位的含义，知道99添1是100，会读写100，并明白十位、个位上一个单位也没有时要用0占位。",
+   "mastery_criteria": [
+    "能说出10个十是100、100里面有10个十",
+    "能说出99添1得100的进位过程",
+    "能正确读写100，知道0不能省略"
+   ],
+   "misconceptions": [
+    "把100写成10，认为0可以省掉",
+    "99添1后写成91，只改了个位",
+    "认为100的十位上是1、个位上是0"
+   ],
+   "std": {
+    "id": "mat-2022:1.TS.03",
+    "quote": "同理认识百以内数、万以内数"
+   },
+   "questions": [
+    {
+     "id": "mbj_p066_q1",
+     "topicId": "mbj_p066",
+     "prompt": "9 个十再添上 1 个十是多少？",
+     "question": "9 个十再添上 1 个十是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "9个十是90，再添1个十就是10个十，10个十是一百，也就是100。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "10"
+      },
+      {
+       "label": "B",
+       "text": "100"
+      },
+      {
+       "label": "C",
+       "text": "91"
+      },
+      {
+       "label": "D",
+       "text": "99"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p066_q2",
+     "topicId": "mbj_p066",
+     "prompt": "99 添上 1 是多少？只填这个数。",
+     "question": "99 添上 1 是多少？只填这个数。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "99的个位添1满10，向十位进1；十位9加1又满10，向百位进1，得到100。",
+     "subject": "math-bj",
+     "answer": "100",
+     "verify": "99+1"
+    },
+    {
+     "id": "mbj_p066_q3",
+     "topicId": "mbj_p066",
+     "prompt": "100 里面有几个十？请填出这个数。",
+     "question": "100 里面有几个十？请填出这个数。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "10个十是一百，所以100里面有10个十；也可以十个十个地数，数10次到100。",
+     "subject": "math-bj",
+     "answer": "10"
+    },
+    {
+     "id": "mbj_p066_q4",
+     "topicId": "mbj_p066",
+     "prompt": "100 的百位上是 1，十位和个位上都是 0，这个数读作什么？",
+     "question": "100 的百位上是 1，十位和个位上都是 0，这个数读作什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "100的百位是1读作一百，十位和个位都是0不读出来，所以读作一百。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "十"
+      },
+      {
+       "label": "B",
+       "text": "一千"
+      },
+      {
+       "label": "C",
+       "text": "一百"
+      },
+      {
+       "label": "D",
+       "text": "一十"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p066_q5",
+     "topicId": "mbj_p066",
+     "prompt": "一箱牛奶有 10 盒，10 箱一共有多少盒？只填得数。",
+     "question": "一箱牛奶有 10 盒，10 箱一共有多少盒？只填得数。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "10箱就是10个10盒，10个十是100，所以一共有100盒。",
+     "subject": "math-bj",
+     "answer": "100",
+     "verify": "10*10"
+    },
+    {
+     "id": "mbj_p066_q6",
+     "topicId": "mbj_p066",
+     "prompt": "比 100 小 1 的数是多少？请填出来。",
+     "question": "比 100 小 1 的数是多少？请填出来。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "100减1，个位0不够减，从十位退1，十位也没有再向百位退1，最后得99。",
+     "subject": "math-bj",
+     "answer": "99"
+    },
+    {
+     "id": "mbj_p066_q7",
+     "topicId": "mbj_p066",
+     "prompt": "把 100 个棋子十个十个地装盒，能装满几盒？",
+     "question": "把 100 个棋子十个十个地装盒，能装满几盒？",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "每盒10个，100里面有10个十，所以要装10盒；装1盒只有10个，装20盒需要200个。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "100 盒"
+      },
+      {
+       "label": "B",
+       "text": "1 盒"
+      },
+      {
+       "label": "C",
+       "text": "20 盒"
+      },
+      {
+       "label": "D",
+       "text": "10 盒"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p066_q8",
+     "topicId": "mbj_p066",
+     "prompt": "一个数由 1 个百、0 个十和 0 个一组成，它是多少？为什么十位和个位上都要写 0？",
+     "question": "一个数由 1 个百、0 个十和 0 个一组成，它是多少？为什么十位和个位上都要写 0？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "参考要点：十位、个位没有计数单位也要用0占位，否则数的大小就变了。",
+     "subject": "math-bj",
+     "answer": "这个数是100。因为十位和个位上一个计数单位也没有，要用0占位；如果只写1就成了1，数的大小完全变了，所以这两个0都不能省略。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p067",
+   "name": "数的顺序",
+   "level": "lesson",
+   "description": "本课学习数的顺序。借助百数表发现横行、竖列中数的排列规律，能说出一个数的前面、后面、上面、下面的数，会按从小到大或从大到小给几个数排序。",
+   "mastery_criteria": [
+    "能说出一个数前面和后面相邻的数",
+    "能在百数表中找出某数上下左右的数",
+    "能把四个100以内的数按顺序排列"
+   ],
+   "misconceptions": [
+    "把「前一个数」理解成数值小1以外的数，如79前面说成78",
+    "百数表中往下找数时个位也加1",
+    "排序时只比个位，不管十位"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p067_q1",
+     "topicId": "mbj_p067",
+     "prompt": "按顺序数数，45 后面的一个数是多少？",
+     "question": "按顺序数数，45 后面的一个数是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "数数时后面的一个数就是多1，45加1得46；44是前面的一个数。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "46"
+      },
+      {
+       "label": "B",
+       "text": "44"
+      },
+      {
+       "label": "C",
+       "text": "55"
+      },
+      {
+       "label": "D",
+       "text": "54"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p067_q2",
+     "topicId": "mbj_p067",
+     "prompt": "在 60、61、62、63 中，62 后面的一个数是多少？只填这个数。",
+     "question": "在 60、61、62、63 中，62 后面的一个数是多少？只填这个数。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "后面的一个数比62多1，62加1得63，也就是这一列里的最后一个数。",
+     "subject": "math-bj",
+     "answer": "63",
+     "verify": "62+1"
+    },
+    {
+     "id": "mbj_p067_q3",
+     "topicId": "mbj_p067",
+     "prompt": "和 79 相邻的两个数中，比 79 大的那个数是多少？请填出来。",
+     "question": "和 79 相邻的两个数中，比 79 大的那个数是多少？请填出来。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "与79相邻的是78和80；比79大的是后一个数，79加1得80，十位要进1。",
+     "subject": "math-bj",
+     "answer": "80"
+    },
+    {
+     "id": "mbj_p067_q4",
+     "topicId": "mbj_p067",
+     "prompt": "在百数表中，与 34 同一行、紧挨在 34 右边的数是哪个？",
+     "question": "在百数表中，与 34 同一行、紧挨在 34 右边的数是哪个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "百数表每一行从左到右依次多1，34右边一格就是35；44在下一行，33在左边。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "24"
+      },
+      {
+       "label": "B",
+       "text": "35"
+      },
+      {
+       "label": "C",
+       "text": "44"
+      },
+      {
+       "label": "D",
+       "text": "33"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p067_q5",
+     "topicId": "mbj_p067",
+     "prompt": "在百数表中，25 正下方一格的数是几？只填这个数。",
+     "question": "在百数表中，25 正下方一格的数是几？只填这个数。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "百数表每一行排10个数，往下一格就是加10：25的十位2加1得3，个位不变，是35。",
+     "subject": "math-bj",
+     "answer": "35",
+     "verify": "25+10"
+    },
+    {
+     "id": "mbj_p067_q6",
+     "topicId": "mbj_p067",
+     "prompt": "把 88、79、90、81 按从小到大的顺序排好，排在第二个的数是多少？请填出来。",
+     "question": "把 88、79、90、81 按从小到大的顺序排好，排在第二个的数是多少？请填出来。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "从小到大排：79、81、88、90，排在第二个的数是81。比较时先看十位，十位相同再比个位。",
+     "subject": "math-bj",
+     "answer": "81"
+    },
+    {
+     "id": "mbj_p067_q7",
+     "topicId": "mbj_p067",
+     "prompt": "在百数表中，一个数在 46 的上边一格、左边一格的交叉位置上，这个数是多少？",
+     "question": "在百数表中，一个数在 46 的上边一格、左边一格的交叉位置上，这个数是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "46上边一格是36，36左边一格是35；所以这个数是35，45是46左边，47是右边。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "36"
+      },
+      {
+       "label": "B",
+       "text": "47"
+      },
+      {
+       "label": "C",
+       "text": "35"
+      },
+      {
+       "label": "D",
+       "text": "45"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p067_q8",
+     "topicId": "mbj_p067",
+     "prompt": "在百数表中，为什么同一个竖列里的数，个位上的数字都一样？请举一个例子说明。",
+     "question": "在百数表中，为什么同一个竖列里的数，个位上的数字都一样？请举一个例子说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "参考要点：一行10个数，往下一格就是加10，十位变、个位不变。",
+     "subject": "math-bj",
+     "answer": "因为百数表每一行正好放10个数，往下一格就相当于加10，只有十位增加1，个位不变。比如25下面依次是35、45、55，个位上的数字都是5。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p068",
+   "name": "大小比较",
+   "level": "lesson",
+   "description": "本课学习100以内数的大小比较。先比十位，十位大的数就大；十位相同再比个位。能用大于、小于、等于描述两个数的关系，并把几个数按顺序排列。",
+   "mastery_criteria": [
+    "能按「先比十位、再比个位」比较两个两位数",
+    "能用大于、小于、等于说清两个数的关系",
+    "能把三个以上的数按大小排好"
+   ],
+   "misconceptions": [
+    "只比个位，认为47比74大",
+    "认为位数多的数一定小，100小于99",
+    "十位相同时不再比个位，直接说两数相等"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p068_q1",
+     "topicId": "mbj_p068",
+     "prompt": "比较 47 和 74 的大小，正确的是哪一项？",
+     "question": "比较 47 和 74 的大小，正确的是哪一项？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "先比十位：47的十位是4，74的十位是7，4个十比7个十少，所以47小于74，不能只看个位。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "47 大于 74"
+      },
+      {
+       "label": "B",
+       "text": "47 等于 74"
+      },
+      {
+       "label": "C",
+       "text": "两个数不能比较"
+      },
+      {
+       "label": "D",
+       "text": "47 小于 74"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p068_q2",
+     "topicId": "mbj_p068",
+     "prompt": "58 和 61 中，较大的数比较小的数大多少？只填这个数。",
+     "question": "58 和 61 中，较大的数比较小的数大多少？只填这个数。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "61的十位是6，58的十位是5，所以61较大；61减58得3。",
+     "subject": "math-bj",
+     "answer": "3",
+     "verify": "61-58"
+    },
+    {
+     "id": "mbj_p068_q3",
+     "topicId": "mbj_p068",
+     "prompt": "比 39 大 1 的数是几？请填出来。",
+     "question": "比 39 大 1 的数是几？请填出来。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "比39大1就是39加1，个位9加1满10向十位进1，得40。",
+     "subject": "math-bj",
+     "answer": "40"
+    },
+    {
+     "id": "mbj_p068_q4",
+     "topicId": "mbj_p068",
+     "prompt": "比较 100 和 99 的大小，正确的一项是？",
+     "question": "比较 100 和 99 的大小，正确的一项是？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "100是三位数，百位上是1，表示1个百，也就是10个十；99只有9个十，所以100大于99。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "100 大于 99"
+      },
+      {
+       "label": "B",
+       "text": "100 小于 99"
+      },
+      {
+       "label": "C",
+       "text": "100 等于 99"
+      },
+      {
+       "label": "D",
+       "text": "99 大于 100"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p068_q5",
+     "topicId": "mbj_p068",
+     "prompt": "在 30、53、35、50 四个数中，最大的数比最小的数大多少？只填这个数。",
+     "question": "在 30、53、35、50 四个数中，最大的数比最小的数大多少？只填这个数。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "先比十位定出最大和最小：53最大（5个十且个位3），30最小（3个十）；53减30得23。",
+     "subject": "math-bj",
+     "answer": "23",
+     "verify": "53-30"
+    },
+    {
+     "id": "mbj_p068_q6",
+     "topicId": "mbj_p068",
+     "prompt": "在 76、67、70、77 中，最小的数是几？请填出来。",
+     "question": "在 76、67、70、77 中，最小的数是几？请填出来。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "76、77的十位是7，70的十位是7，67的十位是6；6个十最少，所以最小的数是67。",
+     "subject": "math-bj",
+     "answer": "67"
+    },
+    {
+     "id": "mbj_p068_q7",
+     "topicId": "mbj_p068",
+     "prompt": "一个两位数，十位上是 6，个位上的数比十位上的数小，这个数最大是多少？",
+     "question": "一个两位数，十位上是 6，个位上的数比十位上的数小，这个数最大是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "十位固定是6，要使数最大，个位要尽量大，又必须比6小，所以个位取5，这个数是65；69的个位比十位大，不符合条件。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "60"
+      },
+      {
+       "label": "B",
+       "text": "65"
+      },
+      {
+       "label": "C",
+       "text": "69"
+      },
+      {
+       "label": "D",
+       "text": "56"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p068_q8",
+     "topicId": "mbj_p068",
+     "prompt": "比较两个两位数的大小时，为什么要先看十位？请举例说明。",
+     "question": "比较两个两位数的大小时，为什么要先看十位？请举例说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "参考要点：十位上的数表示几个十，一个十远大于一个一，所以十位定大小。",
+     "subject": "math-bj",
+     "answer": "因为十位上的数表示几个十，一个十比一个一大得多。比如52和48，5个十比4个十多，所以52大，十位一比出来就不用再看个位了。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p069",
+   "name": "多一些、少一些",
+   "level": "lesson",
+   "description": "本课学习用「多一些、少一些、多得多、少得多」描述两个数的相差程度。能根据具体数量判断相差大小，选择合适的说法，而不是只算出差是多少。",
+   "mastery_criteria": [
+    "能根据相差大小选用多一些或少一些",
+    "能在相差很大时选用多得多或少得多",
+    "能算出两个数相差几并说清关系"
+   ],
+   "misconceptions": [
+    "相差2也说「多得多」，把程度说重了",
+    "把「少一些」说成「少得多」，方向对程度错",
+    "只算出差就完事，不说谁多谁少"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.16",
+    "quote": "能在熟悉的生活情境中运用数和数的运算，合理表达简单的数量关系，解决简单的问题。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p069_q1",
+     "topicId": "mbj_p069",
+     "prompt": "小明有 42 张卡片，小红有 45 张。谁的多一些？",
+     "question": "小明有 42 张卡片，小红有 45 张。谁的多一些？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "45比42多3，相差很小，可以说小红的多一些；42比45少，不能说小明的多。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "两人一样多"
+      },
+      {
+       "label": "B",
+       "text": "无法判断谁多"
+      },
+      {
+       "label": "C",
+       "text": "小红的多一些"
+      },
+      {
+       "label": "D",
+       "text": "小明的多一些"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p069_q2",
+     "topicId": "mbj_p069",
+     "prompt": "小刚跳了 30 下，小强跳了 32 下。小强比小刚多跳几下？只填这个数。",
+     "question": "小刚跳了 30 下，小强跳了 32 下。小强比小刚多跳几下？只填这个数。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "求多几下用减法，32减30得2，所以小强比小刚多跳2下。",
+     "subject": "math-bj",
+     "answer": "2",
+     "verify": "32-30"
+    },
+    {
+     "id": "mbj_p069_q3",
+     "topicId": "mbj_p069",
+     "prompt": "48 比 50 少几？请填出这个数。",
+     "question": "48 比 50 少几？请填出这个数。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "求少几用减法，50减48得2，所以48比50少2。",
+     "subject": "math-bj",
+     "answer": "2"
+    },
+    {
+     "id": "mbj_p069_q4",
+     "topicId": "mbj_p069",
+     "prompt": "一班有 46 人，二班有 44 人。用哪个说法最合适？",
+     "question": "一班有 46 人，二班有 44 人。用哪个说法最合适？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "46比44多2人，相差很小，用「多一些」最合适；「多得多」表示相差很大，不符合这里的数量。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "一班比二班多得多"
+      },
+      {
+       "label": "B",
+       "text": "一班比二班少一些"
+      },
+      {
+       "label": "C",
+       "text": "两班人数一样多"
+      },
+      {
+       "label": "D",
+       "text": "一班比二班多一些"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p069_q5",
+     "topicId": "mbj_p069",
+     "prompt": "苹果有 25 个，梨有 20 个，橘子有 60 个。橘子的个数比苹果多得多，多多少个？只填这个数。",
+     "question": "苹果有 25 个，梨有 20 个，橘子有 60 个。橘子的个数比苹果多得多，多多少个？只填这个数。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "求多多少个用减法，60减25，把60分成50和10，50减25得25，25加10得35，所以多35个。",
+     "subject": "math-bj",
+     "answer": "35",
+     "verify": "60-25"
+    },
+    {
+     "id": "mbj_p069_q6",
+     "topicId": "mbj_p069",
+     "prompt": "小红有 38 本书，小兰有 40 本书。小兰比小红多几本？请填出这个数。",
+     "question": "小红有 38 本书，小兰有 40 本书。小兰比小红多几本？请填出这个数。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "求多几本用减法，40减38得2，所以小兰比小红多2本，可以说「多一些」。",
+     "subject": "math-bj",
+     "answer": "2"
+    },
+    {
+     "id": "mbj_p069_q7",
+     "topicId": "mbj_p069",
+     "prompt": "小云有 62 颗糖，小林比小云少得多，小林可能有多少颗？",
+     "question": "小云有 62 颗糖，小林比小云少得多，小林可能有多少颗？",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "「少得多」表示比62少很多。60、61只少一点点，70比62还多，只有15比62少得多。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "15 颗"
+      },
+      {
+       "label": "B",
+       "text": "60 颗"
+      },
+      {
+       "label": "C",
+       "text": "61 颗"
+      },
+      {
+       "label": "D",
+       "text": "70 颗"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p069_q8",
+     "topicId": "mbj_p069",
+     "prompt": "「多一些」和「多得多」有什么不同？请各举一个例子说明。",
+     "question": "「多一些」和「多得多」有什么不同？请各举一个例子说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "参考要点：两者都表示多，区别在相差的程度；要给出两个相差小、相差大的具体例子。",
+     "subject": "math-bj",
+     "answer": "多一些表示两个数相差不大，多得多表示相差很大。比如45和48只相差3，可以说48比45多一些；45和90相差45，就说90比45多得多。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p070",
+   "name": "整十数加减整十数",
+   "level": "lesson",
+   "description": "本课学习整十数加减整十数。把整十数看成几个十，用几个十加减几个十算出得数，如4个十加5个十得9个十，就是90，并能用它解决成十成十计算的实际问题。",
+   "mastery_criteria": [
+    "能把整十数看成几个十再相加减",
+    "能口算100以内整十数加减整十数",
+    "能说明「先算十位再添0」的道理"
+   ],
+   "misconceptions": [
+    "50加30算成8，忘了得数后面要添0",
+    "50加30算成53，把两个数的数字直接拼起来",
+    "80减50算成30以外的数，如40（退位出错）"
+   ],
+   "std": {
+    "id": "mat-2022:1.XY.03",
+    "quote": "能口算简单的百以内数的加减法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p070_q1",
+     "topicId": "mbj_p070",
+     "prompt": "计算 30 加 40，得数是多少？",
+     "question": "计算 30 加 40，得数是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "30是3个十，40是4个十，3个十加4个十得7个十，就是70。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "43"
+      },
+      {
+       "label": "B",
+       "text": "70"
+      },
+      {
+       "label": "C",
+       "text": "7"
+      },
+      {
+       "label": "D",
+       "text": "34"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p070_q2",
+     "topicId": "mbj_p070",
+     "prompt": "计算 80 减 50，把差填出来。",
+     "question": "计算 80 减 50，把差填出来。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "80是8个十，50是5个十，8个十减5个十得3个十，就是30。",
+     "subject": "math-bj",
+     "answer": "30",
+     "verify": "80-50"
+    },
+    {
+     "id": "mbj_p070_q3",
+     "topicId": "mbj_p070",
+     "prompt": "20 加 60 等于多少？请填出得数。",
+     "question": "20 加 60 等于多少？请填出得数。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "2个十加6个十得8个十，8个十就是80，所以20加60等于80。",
+     "subject": "math-bj",
+     "answer": "80"
+    },
+    {
+     "id": "mbj_p070_q4",
+     "topicId": "mbj_p070",
+     "prompt": "计算 50 加 30 时，下面哪种想法是正确的？",
+     "question": "计算 50 加 30 时，下面哪种想法是正确的？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "整十数加减要按「几个十」来想：5个十加3个十是8个十，所以得80，后面要添一个0。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "把 5 和 3 直接拼起来，得 53"
+      },
+      {
+       "label": "B",
+       "text": "5 加 3 得 8，再添两个 0，得 800"
+      },
+      {
+       "label": "C",
+       "text": "5 个十加 3 个十得 8 个十，就是 80"
+      },
+      {
+       "label": "D",
+       "text": "5 加 3 得 8，所以得数是 8"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p070_q5",
+     "topicId": "mbj_p070",
+     "prompt": "每箱苹果有 20 个，3 箱一共有多少个？只填得数。",
+     "question": "每箱苹果有 20 个，3 箱一共有多少个？只填得数。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "3箱就是3个20相加：20加20得40，40加20得60；也可以想2个十加2个十加2个十得6个十。",
+     "subject": "math-bj",
+     "answer": "60",
+     "verify": "20+20+20"
+    },
+    {
+     "id": "mbj_p070_q6",
+     "topicId": "mbj_p070",
+     "prompt": "90 减 40 等于多少？请填出得数。",
+     "question": "90 减 40 等于多少？请填出得数。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "90是9个十，40是4个十，9个十减4个十得5个十，就是50。",
+     "subject": "math-bj",
+     "answer": "50"
+    },
+    {
+     "id": "mbj_p070_q7",
+     "topicId": "mbj_p070",
+     "prompt": "在 20 加 30、60 减 10、40 加 20 这三道算式中，得数最大的是哪一道？",
+     "question": "在 20 加 30、60 减 10、40 加 20 这三道算式中，得数最大的是哪一道？",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "20加30得50，60减10得50，40加20得60；比较三个得数，60最大，它来自40加20。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "20 加 30 的得数"
+      },
+      {
+       "label": "B",
+       "text": "60 减 10 的得数"
+      },
+      {
+       "label": "C",
+       "text": "三道算式的得数一样大"
+      },
+      {
+       "label": "D",
+       "text": "40 加 20 的得数"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p070_q8",
+     "topicId": "mbj_p070",
+     "prompt": "计算整十数加法时，为什么可以先算十位上的数，再在后面添一个 0？请用 40 加 50 说明。",
+     "question": "计算整十数加法时，为什么可以先算十位上的数，再在后面添一个 0？请用 40 加 50 说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "参考要点：整十数由几个十组成，先算几个十加减几个十，得数就是几个十。",
+     "subject": "math-bj",
+     "answer": "40是4个十，50是5个十，4个十加5个十得9个十，9个十就是90。所以可以先算4加5得9，再在9后面添一个0，得到90。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p071",
+   "name": "整十数加一位数及相应减法",
+   "level": "lesson",
+   "description": "本课学习整十数加一位数及相应的减法。如30加5得35，35减5得30，35减30得5，理解加的是几个一还是几个十，能看图说清算式每个数的意思。",
+   "mastery_criteria": [
+    "能口算整十数加一位数及相应的两道减法",
+    "能说清减5和减30分别去掉的是几个几",
+    "能由图意或情境列出相应算式"
+   ],
+   "misconceptions": [
+    "35减30算成5以外的数，如32（只减个位）",
+    "30加5算成8，把十位和个位混起来",
+    "58减8时十位也跟着减1，得数写成40"
+   ],
+   "std": {
+    "id": "mat-2022:1.KC.03",
+    "quote": "能口算简单的百以内数的加减法;能计算两位数和三位数的加减法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p071_q1",
+     "topicId": "mbj_p071",
+     "prompt": "计算 30 加 5，得数是多少？",
+     "question": "计算 30 加 5，得数是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "30是3个十，5是5个一，3个十和5个一合起来是35，所以30加5等于35。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "35"
+      },
+      {
+       "label": "B",
+       "text": "8"
+      },
+      {
+       "label": "C",
+       "text": "53"
+      },
+      {
+       "label": "D",
+       "text": "305"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p071_q2",
+     "topicId": "mbj_p071",
+     "prompt": "计算 47 减 7，把差填出来。",
+     "question": "计算 47 减 7，把差填出来。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "47是4个十和7个一，减去7个一，剩下4个十，就是40，个位写0。",
+     "subject": "math-bj",
+     "answer": "40",
+     "verify": "47-7"
+    },
+    {
+     "id": "mbj_p071_q3",
+     "topicId": "mbj_p071",
+     "prompt": "6 加 50 等于多少？请填出得数。",
+     "question": "6 加 50 等于多少？请填出得数。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "6是6个一，50是5个十，合起来是56；几十加几，个位就是几。",
+     "subject": "math-bj",
+     "answer": "56"
+    },
+    {
+     "id": "mbj_p071_q4",
+     "topicId": "mbj_p071",
+     "prompt": "计算 35 减 30，得数是多少？",
+     "question": "计算 35 减 30，得数是多少？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "35是3个十和5个一，减去30就是减去3个十，只剩下5个一，所以得5。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "65"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "30"
+      },
+      {
+       "label": "D",
+       "text": "32"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p071_q5",
+     "topicId": "mbj_p071",
+     "prompt": "小华有 20 元，妈妈又给他 8 元，他现在有多少元？只填得数。",
+     "question": "小华有 20 元，妈妈又给他 8 元，他现在有多少元？只填得数。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "求一共多少用加法，20加8，2个十和8个一合起来是28，他现在有28元。",
+     "subject": "math-bj",
+     "answer": "28",
+     "verify": "20+8"
+    },
+    {
+     "id": "mbj_p071_q6",
+     "topicId": "mbj_p071",
+     "prompt": "58 减 8 等于多少？请填出得数。",
+     "question": "58 减 8 等于多少？请填出得数。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "58是5个十和8个一，减去8个一，剩下5个十，就是50。",
+     "subject": "math-bj",
+     "answer": "50"
+    },
+    {
+     "id": "mbj_p071_q7",
+     "topicId": "mbj_p071",
+     "prompt": "一个数加上 6 等于 46，这个数是多少？",
+     "question": "一个数加上 6 等于 46，这个数是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由加法想减法：这个数等于46减6，46减6得40；40加6正好是46。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "46"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "40"
+      },
+      {
+       "label": "D",
+       "text": "52"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p071_q8",
+     "topicId": "mbj_p071",
+     "prompt": "计算 36 减 6 和 36 减 30，结果有什么不同？为什么？",
+     "question": "计算 36 减 6 和 36 减 30，结果有什么不同？为什么？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "参考要点：两道题去掉的数位不同，一个去掉几个一，一个去掉几个十。",
+     "subject": "math-bj",
+     "answer": "36减6得30，因为去掉的是个位上的6个一；36减30得6，因为去掉的是十位上的3个十。减去的数位不同，剩下的数就不同。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p072",
+   "name": "回顾与反思",
+   "level": "lesson",
+   "description": "本课是第二单元的回顾与反思。要求整理数数、数的组成、数的顺序、大小比较和整十数加减的内容，找出自己的易错处，并说出数的不同表示方法之间的联系。",
+   "mastery_criteria": [
+    "能说出同一个数的两种不同表示方法",
+    "能找出本单元自己最常错的地方",
+    "能把几个数按顺序排好并说明比较的方法"
+   ],
+   "misconceptions": [
+    "整理时只背结论，说不出为什么",
+    "把数的组成与写法当成两件不相干的事",
+    "认为整十数加减与数的组成没有关系"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.06",
+    "quote": "在解决生活情境问题的过程中，体会数和运算的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p072_q1",
+     "topicId": "mbj_p072",
+     "prompt": "下面哪个数最接近 50？",
+     "question": "下面哪个数最接近 50？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "49与50只相差1，40和60都相差10，30相差20，所以49最接近50。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "40"
+      },
+      {
+       "label": "B",
+       "text": "60"
+      },
+      {
+       "label": "C",
+       "text": "30"
+      },
+      {
+       "label": "D",
+       "text": "49"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p072_q2",
+     "topicId": "mbj_p072",
+     "prompt": "7 个十和 3 个一组成的数是多少？只填这个数。",
+     "question": "7 个十和 3 个一组成的数是多少？只填这个数。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "7个十是70，3个一是3，70加3得73，所以这个数是73。",
+     "subject": "math-bj",
+     "answer": "73",
+     "verify": "7*10+3"
+    },
+    {
+     "id": "mbj_p072_q3",
+     "topicId": "mbj_p072",
+     "prompt": "80 减 30 等于多少？请填出得数。",
+     "question": "80 减 30 等于多少？请填出得数。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "80是8个十，30是3个十，8个十减3个十得5个十，就是50。",
+     "subject": "math-bj",
+     "answer": "50"
+    },
+    {
+     "id": "mbj_p072_q4",
+     "topicId": "mbj_p072",
+     "prompt": "在 63 这个数里，数字 3 表示什么？",
+     "question": "在 63 这个数里，数字 3 表示什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "63的十位是6表示6个十，个位是3表示3个一，所以3表示3个一，不是3个十。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "3 个一"
+      },
+      {
+       "label": "B",
+       "text": "3 个十"
+      },
+      {
+       "label": "C",
+       "text": "30 个一"
+      },
+      {
+       "label": "D",
+       "text": "3 个百"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p072_q5",
+     "topicId": "mbj_p072",
+     "prompt": "一个两位数，个位是 0，十位是 8，这个数是多少？只填这个数。",
+     "question": "一个两位数，个位是 0，十位是 8，这个数是多少？只填这个数。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "十位上是8表示8个十，个位是0表示没有一，个位要用0占位，所以是80。",
+     "subject": "math-bj",
+     "answer": "80",
+     "verify": "8*10"
+    },
+    {
+     "id": "mbj_p072_q6",
+     "topicId": "mbj_p072",
+     "prompt": "把 45、54、40、50 从小到大排列，排在第一位的数是几？请填出来。",
+     "question": "把 45、54、40、50 从小到大排列，排在第一位的数是几？请填出来。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "先比十位：40、45的十位是4，50、54的十位是5；40和45再比个位，40个位是0最小，所以第一位是40。",
+     "subject": "math-bj",
+     "answer": "40"
+    },
+    {
+     "id": "mbj_p072_q7",
+     "topicId": "mbj_p072",
+     "prompt": "一个两位数，十位上的数比个位上的数小 3，个位上是 7，这个数是多少？",
+     "question": "一个两位数，十位上的数比个位上的数小 3，个位上是 7，这个数是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "个位是7，十位比个位小3，十位是4，所以这个数是47；74是把十位个位颠倒的结果。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "43"
+      },
+      {
+       "label": "B",
+       "text": "47"
+      },
+      {
+       "label": "C",
+       "text": "74"
+      },
+      {
+       "label": "D",
+       "text": "37"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p072_q8",
+     "topicId": "mbj_p072",
+     "prompt": "用 56 这个数，说出两条你在本单元学到的知识。",
+     "question": "用 56 这个数，说出两条你在本单元学到的知识。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "参考要点：可从组成、大小、数序、整十数加一位数等角度各说一条。",
+     "subject": "math-bj",
+     "answer": "56由5个十和6个一组成；它比60少一些、比50多一些；在百数表里56的上面是46、下面是66；还可以写成50加6。任说两条即可。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p073",
+   "name": "练习与应用",
+   "level": "lesson",
+   "description": "本课是第二单元的练习与应用。在分小棒、数人数、买东西等情境中，运用100以内数的认识和整十数加减解决问题，要求会列式、会口算并会说明理由。",
+   "mastery_criteria": [
+    "能读清情境中的条件并列出正确算式",
+    "能口算整十数加减及整十数加一位数",
+    "能说出得数在情境中表示的意思"
+   ],
+   "misconceptions": [
+    "看到「一共」就用减法，或者用错数据",
+    "把整十数加减的得数漏掉0",
+    "求出得数后不写单位、不回答问题"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.15",
+    "quote": "在简单的生活情境中，运用数和数的运算解决问题，能解释结果的实际意义，形成初步的应用意识。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p073_q1",
+     "topicId": "mbj_p073",
+     "prompt": "一捆小棒有 10 根，3 捆一共有多少根？",
+     "question": "一捆小棒有 10 根，3 捆一共有多少根？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "3捆就是3个10根，10加10得20，20再加10得30，所以一共有30根。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "3 根"
+      },
+      {
+       "label": "B",
+       "text": "100 根"
+      },
+      {
+       "label": "C",
+       "text": "30 根"
+      },
+      {
+       "label": "D",
+       "text": "13 根"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p073_q2",
+     "topicId": "mbj_p073",
+     "prompt": "树上有 25 个桃子，小猴摘了 5 个，还剩多少个？只填得数。",
+     "question": "树上有 25 个桃子，小猴摘了 5 个，还剩多少个？只填得数。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "从25个里去掉5个，25减5，减去的是个位上的5个一，剩下2个十，就是20。",
+     "subject": "math-bj",
+     "answer": "20",
+     "verify": "25-5"
+    },
+    {
+     "id": "mbj_p073_q3",
+     "topicId": "mbj_p073",
+     "prompt": "教室里有 40 张桌子，又搬来 6 张，一共有多少张？请填出得数。",
+     "question": "教室里有 40 张桌子，又搬来 6 张，一共有多少张？请填出得数。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "40是4个十，6是6个一，合起来是46；求一共用加法，40加6得46。",
+     "subject": "math-bj",
+     "answer": "46"
+    },
+    {
+     "id": "mbj_p073_q4",
+     "topicId": "mbj_p073",
+     "prompt": "小红有 32 张邮票，小兰有 30 张。小红比小兰多几张？",
+     "question": "小红有 32 张邮票，小兰有 30 张。小红比小兰多几张？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "求多几张用减法，32减30，减去3个十，剩下个位上的2，所以多2张。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "62 张"
+      },
+      {
+       "label": "B",
+       "text": "30 张"
+      },
+      {
+       "label": "C",
+       "text": "32 张"
+      },
+      {
+       "label": "D",
+       "text": "2 张"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p073_q5",
+     "topicId": "mbj_p073",
+     "prompt": "一年级有 48 人参加合唱，其中男生 8 人，女生有多少人？只填得数。",
+     "question": "一年级有 48 人参加合唱，其中男生 8 人，女生有多少人？只填得数。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "总人数去掉男生人数就是女生人数：48减8，减去8个一，剩下4个十，得40。",
+     "subject": "math-bj",
+     "answer": "40",
+     "verify": "48-8"
+    },
+    {
+     "id": "mbj_p073_q6",
+     "topicId": "mbj_p073",
+     "prompt": "商店有 50 个气球，卖出 20 个，还剩多少个？请填出得数。",
+     "question": "商店有 50 个气球，卖出 20 个，还剩多少个？请填出得数。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "求还剩多少用减法，50减20，5个十减2个十得3个十，就是30。",
+     "subject": "math-bj",
+     "answer": "30"
+    },
+    {
+     "id": "mbj_p073_q7",
+     "topicId": "mbj_p073",
+     "prompt": "小明有 20 元，买笔记本用了 8 元，买笔用了 2 元，还剩多少元？",
+     "question": "小明有 20 元，买笔记本用了 8 元，买笔用了 2 元，还剩多少元？",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先算买笔记本后剩：20减8得12元；再算买笔后剩：12减2得10元。要连减两次，不能只减一次。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "10 元"
+      },
+      {
+       "label": "B",
+       "text": "12 元"
+      },
+      {
+       "label": "C",
+       "text": "30 元"
+      },
+      {
+       "label": "D",
+       "text": "28 元"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p073_q8",
+     "topicId": "mbj_p073",
+     "prompt": "妈妈买了 30 个鸡蛋，第一天吃了 8 个，第二天吃了 6 个。还剩多少个？请写出算式和得数。",
+     "question": "妈妈买了 30 个鸡蛋，第一天吃了 8 个，第二天吃了 6 个。还剩多少个？请写出算式和得数。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "参考要点：两种算法，一是连减，二是先求一共吃了多少再减，得数一致。",
+     "subject": "math-bj",
+     "answer": "先算30减8得22个，再算22减6得16个，所以还剩16个鸡蛋。也可以先算一共吃了8加6得14个，再算30减14得16个。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p074",
+   "name": "数据分类",
+   "level": "unit",
+   "description": "本单元学习数据分类。要求按给定的标准把物体或数据分成几类，数出每类的个数，比较各类的多少，初步体会分类能让杂乱的信息变得清楚。",
+   "mastery_criteria": [
+    "能按给定标准把物体分成两类或三类",
+    "能数出并记录每类物体的个数",
+    "能比较各类的多少并说出结论"
+   ],
+   "misconceptions": [
+    "分类时同一个物体被数了两次或漏数",
+    "按标准分完后把各类个数加错",
+    "只分类不数个数，说不出各类有多少"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.14",
+    "quote": "会对物体、图形或数据进行分类，初步了解分类与分类标准的关系，形成初步的数据意识"
+   },
+   "questions": [
+    {
+     "id": "mbj_p074_q1",
+     "topicId": "mbj_p074",
+     "prompt": "把 5 个红气球和 3 个黄气球按颜色分类，一共分成几类？",
+     "question": "把 5 个红气球和 3 个黄气球按颜色分类，一共分成几类？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "按颜色分，只有红色和黄色两种颜色，所以分成2类，与气球的个数无关。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "8 类"
+      },
+      {
+       "label": "B",
+       "text": "2 类"
+      },
+      {
+       "label": "C",
+       "text": "1 类"
+      },
+      {
+       "label": "D",
+       "text": "3 类"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p074_q2",
+     "topicId": "mbj_p074",
+     "prompt": "统计结果：小红有 4 支红笔、6 支蓝笔。红笔和蓝笔一共有多少支？只填得数。",
+     "question": "统计结果：小红有 4 支红笔、6 支蓝笔。红笔和蓝笔一共有多少支？只填得数。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "把两类的个数合起来就是总数，4加6得10，一共有10支笔。",
+     "subject": "math-bj",
+     "answer": "10",
+     "verify": "4+6"
+    },
+    {
+     "id": "mbj_p074_q3",
+     "topicId": "mbj_p074",
+     "prompt": "把 12 个图形按形状分成三角形和圆形两类，三角形有 7 个，圆形有几个？",
+     "question": "把 12 个图形按形状分成三角形和圆形两类，三角形有 7 个，圆形有几个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "总数去掉三角形就是圆形：12减7得5；7加5正好是12，说明没数错也没漏数。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "19 个"
+      },
+      {
+       "label": "B",
+       "text": "12 个"
+      },
+      {
+       "label": "C",
+       "text": "5 个"
+      },
+      {
+       "label": "D",
+       "text": "7 个"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p074_q4",
+     "topicId": "mbj_p074",
+     "prompt": "统计同学喜欢的水果：苹果 9 人、香蕉 6 人、橘子 5 人。喜欢香蕉的比喜欢橘子的多几人？只填得数。",
+     "question": "统计同学喜欢的水果：苹果 9 人、香蕉 6 人、橘子 5 人。喜欢香蕉的比喜欢橘子的多几人？只填得数。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "求多几人用减法，6减5得1，所以喜欢香蕉的比喜欢橘子的多1人。",
+     "subject": "math-bj",
+     "answer": "1",
+     "verify": "6-5"
+    },
+    {
+     "id": "mbj_p074_q5",
+     "topicId": "mbj_p074",
+     "prompt": "同样的一堆积木，可以按颜色分类，也可以按形状分类，分类的结果一样吗？请说明理由。",
+     "question": "同样的一堆积木，可以按颜色分类，也可以按形状分类，分类的结果一样吗？请说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "参考要点：标准不同，类数和各类的个数都可能不同；同一堆物体可以有多种分法。",
+     "subject": "math-bj",
+     "answer": "不一样。分类的标准不同，分出的结果就不同：按颜色分，分成红、黄、蓝几堆；按形状分，分成正方体、长方体、圆柱几堆。同一堆东西可以有不同的分法。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p075",
+   "name": "分类的标准",
+   "level": "lesson",
+   "description": "本课学习分类的标准。知道分类前要先确定一个标准，标准不同分出的结果就不同；能自己发现事物的特征并制订标准，按标准把同一堆物品分成不同的类。",
+   "mastery_criteria": [
+    "能说出自己是按什么标准分类的",
+    "能按同一个标准把物品分完，不重不漏",
+    "能对同一堆物品提出两种不同的分类标准"
+   ],
+   "misconceptions": [
+    "一会儿按颜色、一会儿按形状，标准混着用",
+    "分完后有物品既不属于这一类也不属于那一类",
+    "把分类标准和分类结果说混，只说分成几堆"
+   ],
+   "std": {
+    "id": "mat-2022:1.XY.13",
+    "quote": "能发现事物的特征并制订分类标准，依据标准对事物分类"
+   },
+   "questions": [
+    {
+     "id": "mbj_p075_q1",
+     "topicId": "mbj_p075",
+     "prompt": "把扣子分成红色一堆、黄色一堆，这是按什么标准分类？",
+     "question": "把扣子分成红色一堆、黄色一堆，这是按什么标准分类？",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "分堆的依据是颜色，红和黄都是颜色，所以这是按颜色分类，与大小、形状无关。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "按大小分类"
+      },
+      {
+       "label": "B",
+       "text": "按形状分类"
+      },
+      {
+       "label": "C",
+       "text": "按个数分类"
+      },
+      {
+       "label": "D",
+       "text": "按颜色分类"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p075_q2",
+     "topicId": "mbj_p075",
+     "prompt": "把 7 个红扣子和 5 个黄扣子分类后，红扣子比黄扣子多几个？只填这个数。",
+     "question": "把 7 个红扣子和 5 个黄扣子分类后，红扣子比黄扣子多几个？只填这个数。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "求多几个用减法，7减5得2，所以红扣子比黄扣子多2个。",
+     "subject": "math-bj",
+     "answer": "2",
+     "verify": "7-5"
+    },
+    {
+     "id": "mbj_p075_q3",
+     "topicId": "mbj_p075",
+     "prompt": "把一堆图形按形状分成三角形、正方形、圆形三堆，一共分成了几类？请填出这个数。",
+     "question": "把一堆图形按形状分成三角形、正方形、圆形三堆，一共分成了几类？请填出这个数。",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "按形状分，出现三角形、正方形、圆形三种形状，所以分成3类。",
+     "subject": "math-bj",
+     "answer": "3"
+    },
+    {
+     "id": "mbj_p075_q4",
+     "topicId": "mbj_p075",
+     "prompt": "把 10 个图形按大小分成大、小两类，大图形有 4 个，小图形有几个？",
+     "question": "把 10 个图形按大小分成大、小两类，大图形有 4 个，小图形有几个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "总数去掉大图形就是小图形：10减4得6，4加6正好是10，没有漏数。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "6 个"
+      },
+      {
+       "label": "B",
+       "text": "4 个"
+      },
+      {
+       "label": "C",
+       "text": "14 个"
+      },
+      {
+       "label": "D",
+       "text": "10 个"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p075_q5",
+     "topicId": "mbj_p075",
+     "prompt": "同学们按性别分类，男生 20 人，女生 18 人，全班一共多少人？只填得数。",
+     "question": "同学们按性别分类，男生 20 人，女生 18 人，全班一共多少人？只填得数。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "把两类的数合起来就是总数，20加18，2个十加1个十得3个十，再加8个一，得38。",
+     "subject": "math-bj",
+     "answer": "38",
+     "verify": "20+18"
+    },
+    {
+     "id": "mbj_p075_q6",
+     "topicId": "mbj_p075",
+     "prompt": "把 12 支笔按颜色分类，红色 5 支、蓝色 4 支，其余是黑色。黑色有几支？请填出这个数。",
+     "question": "把 12 支笔按颜色分类，红色 5 支、蓝色 4 支，其余是黑色。黑色有几支？请填出这个数。",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "先算红色和蓝色一共5加4得9支，再用12减9得3支，所以黑色有3支。",
+     "subject": "math-bj",
+     "answer": "3"
+    },
+    {
+     "id": "mbj_p075_q7",
+     "topicId": "mbj_p075",
+     "prompt": "一堆学具既可以按颜色分成 2 类，也可以按形状分成 3 类。这说明什么？",
+     "question": "一堆学具既可以按颜色分成 2 类，也可以按形状分成 3 类。这说明什么？",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "同一堆物体按不同标准分类，分出的类数和各类个数都可能不同，这正是分类标准的作用。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "两种分法得到的类数必须一样"
+      },
+      {
+       "label": "B",
+       "text": "分类的标准不同，分出的类数和结果就可能不同"
+      },
+      {
+       "label": "C",
+       "text": "这堆学具一定有 5 个"
+      },
+      {
+       "label": "D",
+       "text": "按颜色分类是错的"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p075_q8",
+     "topicId": "mbj_p075",
+     "prompt": "为什么要先定好分类的标准，再去分类？请结合分扣子的例子说明。",
+     "question": "为什么要先定好分类的标准，再去分类？请结合分扣子的例子说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "参考要点：标准不同结果不同，中途换标准会分乱、数不清。",
+     "subject": "math-bj",
+     "answer": "因为标准不同，分出的结果就不同。比如分扣子，先定按颜色分，就只出现红、黄、蓝几堆；如果一会儿按颜色、一会儿按大小，就会分乱，最后说不清每堆到底有几个。"
+    }
+   ]
+  }
+ ]
+}

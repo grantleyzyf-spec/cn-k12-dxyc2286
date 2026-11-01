@@ -1,0 +1,3389 @@
+{
+ "shard": "S10",
+ "subject": "math-bj",
+ "book": "二下",
+ "points": [
+  {
+   "topicId": "mbj_p166",
+   "description": "本单元学习把物体平均分后还有剩余的情况：认识余数和有余数的除法算式，会用竖式计算除数是一位数的有余数除法，会用余数解决分物、装袋、租船和按规律排列的实际问题。",
+   "mastery_criteria": [
+    "说出有余数除法算式中各部分的名称",
+    "正确计算除数是一位数的有余数除法",
+    "用有余数的除法解决分物和租船问题"
+   ],
+   "misconceptions": [
+    "把余数写得比除数还大，仍认为算式正确",
+    "求装几袋、租几条船时只写商，把余下的丢掉"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.05",
+    "quote": "探索乘法和除法的算理与算法，会简单的整数乘除法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p166_q1",
+     "topicId": "mbj_p166",
+     "prompt": "把17个苹果平均放进5个盘子，每盘放3个，还剩2个。下面哪个算式表示这件事？",
+     "question": "把17个苹果平均放进5个盘子，每盘放3个，还剩2个。下面哪个算式表示这件事？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "17÷5=3（个）……2（个）"
+      },
+      {
+       "label": "B",
+       "text": "17÷3=5（个）……2（个）"
+      },
+      {
+       "label": "C",
+       "text": "17÷5=2（个）……3（个）"
+      },
+      {
+       "label": "D",
+       "text": "5×3=15（个）……2（个）"
+      }
+     ],
+     "answer": "A",
+     "explanation": "17个是总数，5个盘子是份数，每盘3个是商，剩下2个是余数；被除数和除数的位置不能交换，所以写成17÷5=3……2。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p166_q2",
+     "topicId": "mbj_p166",
+     "prompt": "有23块糖，每5块装一袋，最多能装满几袋？只填袋数。",
+     "question": "有23块糖，每5块装一袋，最多能装满几袋？只填袋数。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4",
+     "verify": "23//5",
+     "explanation": "23÷5=4余3，装满4袋用去20块，还剩3块不够装一袋，所以最多装满4袋。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p166_q3",
+     "topicId": "mbj_p166",
+     "prompt": "一个数除以6，余数最大是几？",
+     "question": "一个数除以6，余数最大是几？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "7"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "B",
+     "explanation": "余数必须比除数小，除数是6，余数只能是1到5，其中最大的是5。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p166_q4",
+     "topicId": "mbj_p166",
+     "prompt": "29÷4=7……1。用7×4+1算得（　），正好等于被除数，说明计算正确。",
+     "question": "29÷4=7……1。用7×4+1算得（　），正好等于被除数，说明计算正确。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "29",
+     "explanation": "商乘除数再加余数就等于被除数，7×4=28，28+1=29，与被除数29相同，所以计算正确。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p166_q5",
+     "topicId": "mbj_p166",
+     "prompt": "有38名同学去划船，每条船最多坐6人，至少要租几条船？请写出你的想法。",
+     "question": "有38名同学去划船，每条船最多坐6人，至少要租几条船？请写出你的想法。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "38÷6=6（条）……2（人），6条船只能坐36人，剩下的2人也必须坐船，所以至少要租7条船。",
+     "explanation": "先算38里面有几个6，商6余2；余下的2人不能再挤进已经坐满的船，只能再加一条，所以用商加1。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p167",
+   "description": "通过在分物活动中把物体一份一份地分到不能再分为止，认识剩下的、不够再分一份的数叫余数，知道有余数除法算式中各部分的名称，会读算式并说出余数表示的实际意思。",
+   "mastery_criteria": [
+    "说出余数在分物中表示剩下不够一份的数",
+    "读有余数除法算式并指出商和余数"
+   ],
+   "misconceptions": [
+    "认为剩下的数还能再分成一份",
+    "把商当成余数，读算式时位置读反"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p167_q1",
+     "topicId": "mbj_p167",
+     "prompt": "把9个桃子平均分给2只小猴，每只分4个，还剩1个。这里的“1”叫什么？",
+     "question": "把9个桃子平均分给2只小猴，每只分4个，还剩1个。这里的“1”叫什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "商"
+      },
+      {
+       "label": "B",
+       "text": "除数"
+      },
+      {
+       "label": "C",
+       "text": "余数"
+      },
+      {
+       "label": "D",
+       "text": "被除数"
+      }
+     ],
+     "answer": "C",
+     "explanation": "分到不能再分时剩下的、不够再分一份的数叫余数；9÷2=4……1，其中的1就是余数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p167_q2",
+     "topicId": "mbj_p167",
+     "prompt": "18÷5=3……3，这个算式中的余数是（　）。",
+     "question": "18÷5=3……3，这个算式中的余数是（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "3",
+     "explanation": "算式最后的“3”表示分完后剩下的数，就是余数；前面的3是商，5是除数，18是被除数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p167_q3",
+     "topicId": "mbj_p167",
+     "prompt": "有11支铅笔，每人分2支，可以分给5人，还剩几支？",
+     "question": "有11支铅笔，每人分2支，可以分给5人，还剩几支？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "1",
+     "verify": "11-2*5",
+     "explanation": "5人一共分走2×5=10支，11−10=1，所以还剩1支，这个1就是余数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p167_q4",
+     "topicId": "mbj_p167",
+     "prompt": "把20个橘子每6个装一盒，20÷6=3……2。算式中的“3”表示什么？",
+     "question": "把20个橘子每6个装一盒，20÷6=3……2。算式中的“3”表示什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "还剩3个"
+      },
+      {
+       "label": "B",
+       "text": "一共有3盒"
+      },
+      {
+       "label": "C",
+       "text": "每盒装3个"
+      },
+      {
+       "label": "D",
+       "text": "能装满3盒"
+      }
+     ],
+     "answer": "D",
+     "explanation": "被除数20是橘子总数，除数6是每盒的个数，商3表示能装满3盒，余数2表示还剩2个。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p167_q5",
+     "topicId": "mbj_p167",
+     "prompt": "用19根小棒摆正方形，每个正方形用4根。能摆（　）个正方形，还剩3根。",
+     "question": "用19根小棒摆正方形，每个正方形用4根。能摆（　）个正方形，还剩3根。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "4",
+     "explanation": "19÷4=4……3，4个正方形用去4×4=16根，19−16=3，所以能摆4个，还剩3根。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p167_q6",
+     "topicId": "mbj_p167",
+     "prompt": "算式17÷5=3……2，下面哪种读法是正确的？",
+     "question": "算式17÷5=3……2，下面哪种读法是正确的？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "17除以5商3余2"
+      },
+      {
+       "label": "B",
+       "text": "17除5商2余3"
+      },
+      {
+       "label": "C",
+       "text": "17除以3商5余2"
+      },
+      {
+       "label": "D",
+       "text": "5除以17商3余2"
+      }
+     ],
+     "answer": "A",
+     "explanation": "读有余数除法算式时按“被除数除以除数商几余几”的顺序读，17是被除数，5是除数，商3，余2。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p167_q7",
+     "topicId": "mbj_p167",
+     "prompt": "小明说：“把10个苹果平均分给3人，每人3个，剩下1个，这个1还可以再分。”他说得对吗？为什么？",
+     "question": "小明说：“把10个苹果平均分给3人，每人3个，剩下1个，这个1还可以再分。”他说得对吗？为什么？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "不对。剩下的1个不够每人再分1个，只能留下来作为余数，所以10÷3=3……1，余数是1。",
+     "explanation": "判断余数的关键是“不够再分一份”：分给3人每人要1个得3个，而只剩1个，不够，所以不能再分。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p167_q8",
+     "topicId": "mbj_p167",
+     "prompt": "一些糖，每7块装一袋，装了4袋后还剩5块。这些糖一共有多少块？",
+     "question": "一些糖，每7块装一袋，装了4袋后还剩5块。这些糖一共有多少块？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "28块"
+      },
+      {
+       "label": "B",
+       "text": "33块"
+      },
+      {
+       "label": "C",
+       "text": "35块"
+      },
+      {
+       "label": "D",
+       "text": "23块"
+      }
+     ],
+     "answer": "B",
+     "explanation": "装进袋里的糖是7×4=28块，再加上剩下的5块，28+5=33块，所以一共有33块。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p168",
+   "description": "通过用小棒摆图形、分物品等活动发现余数总是比除数小，会用“余数必须小于除数”判断算式对错，也能根据除数说出余数可能是哪些数、最大是几。",
+   "mastery_criteria": [
+    "说出余数一定比除数小的道理",
+    "根据除数写出余数可能取的值"
+   ],
+   "misconceptions": [
+    "认为余数可以等于除数，只要不再分就行",
+    "算出余数比除数大也不检查，直接写答案"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.05",
+    "quote": "探索乘法和除法的算理与算法，会简单的整数乘除法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p168_q1",
+     "topicId": "mbj_p168",
+     "prompt": "一个数除以8，余数最大是几？",
+     "question": "一个数除以8，余数最大是几？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "8"
+      },
+      {
+       "label": "B",
+       "text": "9"
+      },
+      {
+       "label": "C",
+       "text": "7"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "C",
+     "explanation": "余数要比除数8小，只能是1到7，所以余数最大是7；如果余数是8，就还能再分一份。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p168_q2",
+     "topicId": "mbj_p168",
+     "prompt": "把41个球每5个装一盒，最多能装满几盒？",
+     "question": "把41个球每5个装一盒，最多能装满几盒？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "8",
+     "verify": "41//5",
+     "explanation": "41÷5=8余1，装满8盒用去40个，剩下1个不够装一盒，所以最多装满8盒。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p168_q3",
+     "topicId": "mbj_p168",
+     "prompt": "□÷6=7……△，△最大是（　）。",
+     "question": "□÷6=7……△，△最大是（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "5",
+     "explanation": "除数是6，余数必须比6小，最大只能是5；余数是6就说明还能再分成一份，商应该变成8。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p168_q4",
+     "topicId": "mbj_p168",
+     "prompt": "下面哪个算式一定是错的？",
+     "question": "下面哪个算式一定是错的？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "31÷5=6……1"
+      },
+      {
+       "label": "B",
+       "text": "32÷6=5……2"
+      },
+      {
+       "label": "C",
+       "text": "30÷4=7……2"
+      },
+      {
+       "label": "D",
+       "text": "31÷5=5……6"
+      }
+     ],
+     "answer": "D",
+     "explanation": "31÷5=5……6中余数6比除数5大，说明还能再分一份，应改成31÷5=6……1，所以这个算式错。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p168_q5",
+     "topicId": "mbj_p168",
+     "prompt": "27÷5=5……2。如果把被除数改成28，除数和商不变，余数是（　）。",
+     "question": "27÷5=5……2。如果把被除数改成28，除数和商不变，余数是（　）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "3",
+     "explanation": "被除数增加1，余数也增加1，28÷5=5……3，余数从2变成3，仍然比除数5小。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p168_q6",
+     "topicId": "mbj_p168",
+     "prompt": "用19根小棒摆三角形，每个三角形用3根，最多摆几个、还剩几根？",
+     "question": "用19根小棒摆三角形，每个三角形用3根，最多摆几个、还剩几根？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "6个，剩1根"
+      },
+      {
+       "label": "B",
+       "text": "5个，剩4根"
+      },
+      {
+       "label": "C",
+       "text": "6个，剩2根"
+      },
+      {
+       "label": "D",
+       "text": "7个，剩0根"
+      }
+     ],
+     "answer": "A",
+     "explanation": "19÷3=6……1，摆6个用去18根，还剩1根；余数1比除数3小，不能再摆一个，所以是6个剩1根。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p168_q7",
+     "topicId": "mbj_p168",
+     "prompt": "一个除法算式的除数是6，商是4，被除数可能是多少？请写出3个，并说明理由。",
+     "question": "一个除法算式的除数是6，商是4，被除数可能是多少？请写出3个，并说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "被除数=6×4+余数，余数可以是0、1、2、3、4、5，所以被除数可能是24、25、26、27、28、29，写出其中任意3个都可以。",
+     "explanation": "被除数由商乘除数再加上余数得到；余数必须比除数6小，所以余数最多取到5，被除数就有6种可能。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p168_q8",
+     "topicId": "mbj_p168",
+     "prompt": "一个数除以7，商是5，余数是能取的最大的数。这个数是多少？",
+     "question": "一个数除以7，商是5，余数是能取的最大的数。这个数是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "36"
+      },
+      {
+       "label": "B",
+       "text": "41"
+      },
+      {
+       "label": "C",
+       "text": "35"
+      },
+      {
+       "label": "D",
+       "text": "40"
+      }
+     ],
+     "answer": "B",
+     "explanation": "余数要比7小，最大是6；被除数=5×7+6=35+6=41。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p169",
+   "description": "学习用竖式计算除数是一位数的有余数除法：先试商，把商写在个位上，用商乘除数写在被除数下面再相减，得到的差就是余数，会用“商×除数+余数=被除数”检验。",
+   "mastery_criteria": [
+    "按步骤正确写出有余数除法的竖式",
+    "用商乘除数加余数检验竖式结果"
+   ],
+   "misconceptions": [
+    "商写错位置，和个位对不齐",
+    "相减时用被除数减去除数，而不是减去商乘除数的积"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p169_q1",
+     "topicId": "mbj_p169",
+     "prompt": "用竖式计算38÷6，商是几？",
+     "question": "用竖式计算38÷6，商是几？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "6",
+     "verify": "38//6",
+     "explanation": "6×6=36最接近38又不超过38，所以商6，38−36=2，余数是2。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p169_q2",
+     "topicId": "mbj_p169",
+     "prompt": "用竖式计算43÷5，商是8，余数是（　）。",
+     "question": "用竖式计算43÷5，商是8，余数是（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "3",
+     "explanation": "8×5=40，43−40=3，余数3比除数5小，所以43÷5=8……3。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p169_q3",
+     "topicId": "mbj_p169",
+     "prompt": "用竖式计算27÷4，商是6。竖式中的“24”是怎样算出来的？",
+     "question": "用竖式计算27÷4，商是6。竖式中的“24”是怎样算出来的？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "27−3=24，是被除数减余数算出来的"
+      },
+      {
+       "label": "B",
+       "text": "7×4=28，是试商7乘除数4算出来的"
+      },
+      {
+       "label": "C",
+       "text": "4×6=24，是商6乘除数4算出来的"
+      },
+      {
+       "label": "D",
+       "text": "27−4=23，是被除数减除数算出来的"
+      }
+     ],
+     "answer": "C",
+     "explanation": "竖式里商下面的数就是商乘除数的积，商6乘除数4得24，再用27减24得余数3。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p169_q4",
+     "topicId": "mbj_p169",
+     "prompt": "52÷7=7……3。用“商×除数+余数”检验，7×7+3=（　）。",
+     "question": "52÷7=7……3。用“商×除数+余数”检验，7×7+3=（　）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "52",
+     "explanation": "7×7=49，49+3=52，正好等于被除数，说明商7余3算对了。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p169_q5",
+     "topicId": "mbj_p169",
+     "prompt": "小明用竖式计算56÷8，商写6，余数写8。他的竖式错在哪里？",
+     "question": "小明用竖式计算56÷8，商写6，余数写8。他的竖式错在哪里？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "商写错了位置，应该写在十位上"
+      },
+      {
+       "label": "B",
+       "text": "被除数抄错了，应该是48"
+      },
+      {
+       "label": "C",
+       "text": "余数应该写成0"
+      },
+      {
+       "label": "D",
+       "text": "余数8和除数8相等，商应该改成7"
+      }
+     ],
+     "answer": "D",
+     "explanation": "余数必须比除数小，余数8等于除数8，说明商取小了，要用商加1，56÷8=7。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p169_q6",
+     "topicId": "mbj_p169",
+     "prompt": "用竖式计算65÷9，余数是几？",
+     "question": "用竖式计算65÷9，余数是几？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "2",
+     "verify": "65-9*7",
+     "explanation": "9×7=63最接近65又不超过65，商7，65−63=2，余数是2，比除数9小。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p169_q7",
+     "topicId": "mbj_p169",
+     "prompt": "小红用竖式计算47÷6，得到商7余5。请你检验她算得对不对，并说说是怎样检验的。",
+     "question": "小红用竖式计算47÷6，得到商7余5。请你检验她算得对不对，并说说是怎样检验的。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "算对了。用商乘除数再加余数检验：7×6+5=47，正好等于被除数；而且余数5比除数6小，所以计算正确。",
+     "explanation": "检验有余数的除法要做两件事：一是商乘除数加余数是否等于被除数，二是余数是否比除数小，两条都满足才算对。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p169_q8",
+     "topicId": "mbj_p169",
+     "prompt": "在竖式□÷8=7……□中，余数取最大的数，这时被除数是多少？",
+     "question": "在竖式□÷8=7……□中，余数取最大的数，这时被除数是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "63"
+      },
+      {
+       "label": "B",
+       "text": "56"
+      },
+      {
+       "label": "C",
+       "text": "62"
+      },
+      {
+       "label": "D",
+       "text": "64"
+      }
+     ],
+     "answer": "A",
+     "explanation": "余数要比8小，最大取7；被除数=7×8+7=56+7=63。余数取8就还能再分一份，所以不能是64。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p170",
+   "description": "在分物、装袋、租船、坐车等实际问题中用有余数的除法求出商和余数，再根据问题决定是“商加1”还是“只取商”，并能说清商和余数在题目里各表示什么。",
+   "mastery_criteria": [
+    "根据问题判断取商还是商加1",
+    "说出余数在具体问题中的实际含义"
+   ],
+   "misconceptions": [
+    "租船、坐车的问题只写商，把剩下的人也丢掉",
+    "把所有有余数的问题都商加1"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.06",
+    "quote": "在解决生活情境问题的过程中，体会数和运算的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p170_q1",
+     "topicId": "mbj_p170",
+     "prompt": "有20个桃子，每盘放6个，最多能放满几盘？",
+     "question": "有20个桃子，每盘放6个，最多能放满几盘？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "3",
+     "verify": "20//6",
+     "explanation": "20÷6=3余2，放满3盘用去18个，还剩2个不够放满一盘，所以最多放满3盘。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p170_q2",
+     "topicId": "mbj_p170",
+     "prompt": "25名同学去划船，每条船最多坐4人，至少需要几条船？",
+     "question": "25名同学去划船，每条船最多坐4人，至少需要几条船？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "6条"
+      },
+      {
+       "label": "B",
+       "text": "7条"
+      },
+      {
+       "label": "C",
+       "text": "5条"
+      },
+      {
+       "label": "D",
+       "text": "8条"
+      }
+     ],
+     "answer": "B",
+     "explanation": "25÷4=6余1，6条船坐24人，还剩1人也要坐船，所以要再加1条，共7条。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p170_q3",
+     "topicId": "mbj_p170",
+     "prompt": "30个鸡蛋，每盒装8个，装满3盒后还剩（　）个。",
+     "question": "30个鸡蛋，每盒装8个，装满3盒后还剩（　）个。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "6",
+     "explanation": "3盒装了8×3=24个，30−24=6，还剩6个，6比8小，装不满一盒。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p170_q4",
+     "topicId": "mbj_p170",
+     "prompt": "做一件上衣要用3米布，20米布最多能做几件上衣？",
+     "question": "做一件上衣要用3米布，20米布最多能做几件上衣？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "7件"
+      },
+      {
+       "label": "B",
+       "text": "5件"
+      },
+      {
+       "label": "C",
+       "text": "6件"
+      },
+      {
+       "label": "D",
+       "text": "8件"
+      }
+     ],
+     "answer": "C",
+     "explanation": "20÷3=6余2，做6件用去18米，剩下2米不够做一件，所以最多做6件，这里只取商不加1。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p170_q5",
+     "topicId": "mbj_p170",
+     "prompt": "每辆车坐5人，38人最少需要（　）辆车。",
+     "question": "每辆车坐5人，38人最少需要（　）辆车。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "8",
+     "explanation": "38÷5=7余3，7辆车坐35人，还剩3人也要坐车，所以商要加1，需要8辆车。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p170_q6",
+     "topicId": "mbj_p170",
+     "prompt": "把17根小棒每4根捆成一捆，能捆几捆、还剩几根？",
+     "question": "把17根小棒每4根捆成一捆，能捆几捆、还剩几根？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "3捆，剩5根"
+      },
+      {
+       "label": "B",
+       "text": "4捆，剩2根"
+      },
+      {
+       "label": "C",
+       "text": "5捆，剩0根"
+      },
+      {
+       "label": "D",
+       "text": "4捆，剩1根"
+      }
+     ],
+     "answer": "D",
+     "explanation": "17÷4=4余1，捆4捆用去16根，还剩1根；余数1比4小，不能再捆一捆。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p170_q7",
+     "topicId": "mbj_p170",
+     "prompt": "有45个苹果，每6个装一袋，至少需要几个袋子？为什么不能直接写7个？",
+     "question": "有45个苹果，每6个装一袋，至少需要几个袋子？为什么不能直接写7个？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "45÷6=7（袋）……3（个），7个袋子只装了42个，还剩3个苹果没有袋子装，所以还要再加1个，至少需要8个袋子。",
+     "explanation": "装袋问题要求把苹果全部装完，余下的3个也必须占一个袋子，所以要用商加1，不能只写商7。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p170_q8",
+     "topicId": "mbj_p170",
+     "prompt": "一箱牛奶有24盒，每5盒装一袋，最多能装满几袋？还剩几盒？请只填剩下的盒数。",
+     "question": "一箱牛奶有24盒，每5盒装一袋，最多能装满几袋？还剩几盒？请只填剩下的盒数。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "4",
+     "verify": "24-5*4",
+     "explanation": "24÷5=4余4，装满4袋用去20盒，24−20=4，还剩4盒，4比5小，装不满一袋。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p171",
+   "description": "用有余数的除法解决按规律排列的问题：先把重复出现的几个看作一组，再用总数除以每组的个数，根据余数确定第几个是什么，没有余数就是每组的最后一个，并学会回顾检查。",
+   "mastery_criteria": [
+    "找出循环排列中每组的个数",
+    "用余数确定排列中某个位置是什么"
+   ],
+   "misconceptions": [
+    "用商去判断第几个是什么，把余数丢掉",
+    "余数是0时还往后多数一个"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.08",
+    "quote": "探索用数或符号表达简单情境中的变化规律"
+   },
+   "questions": [
+    {
+     "id": "mbj_p171_q1",
+     "topicId": "mbj_p171",
+     "prompt": "彩灯按“红、黄、蓝”三个一组重复排列，第10盏灯是什么颜色？",
+     "question": "彩灯按“红、黄、蓝”三个一组重复排列，第10盏灯是什么颜色？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "红色"
+      },
+      {
+       "label": "B",
+       "text": "黄色"
+      },
+      {
+       "label": "C",
+       "text": "蓝色"
+      },
+      {
+       "label": "D",
+       "text": "不能确定"
+      }
+     ],
+     "answer": "A",
+     "explanation": "3个一组，10÷3=3余1，余1表示是第4组的第1个，每组第1个是红色。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p171_q2",
+     "topicId": "mbj_p171",
+     "prompt": "图形按“○、△、□”三个一组重复排列，第9个图形是（　）。",
+     "question": "图形按“○、△、□”三个一组重复排列，第9个图形是（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "□",
+     "explanation": "9÷3=3，没有余数，说明正好排完3组，第9个就是每组的最后一个，也就是□。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p171_q3",
+     "topicId": "mbj_p171",
+     "prompt": "数按1、2、3、4四个一组重复排列，第13个数是几？",
+     "question": "数按1、2、3、4四个一组重复排列，第13个数是几？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "1",
+     "verify": "13%4",
+     "explanation": "13÷4=3余1，余1表示是第4组的第1个数，每组第1个数是1。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p171_q4",
+     "topicId": "mbj_p171",
+     "prompt": "球按“两个红球、一个白球”的顺序重复摆，第17个球是什么颜色？",
+     "question": "球按“两个红球、一个白球”的顺序重复摆，第17个球是什么颜色？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "白色"
+      },
+      {
+       "label": "B",
+       "text": "红色"
+      },
+      {
+       "label": "C",
+       "text": "黄色"
+      },
+      {
+       "label": "D",
+       "text": "不能确定"
+      }
+     ],
+     "answer": "B",
+     "explanation": "3个一组，17÷3=5余2，余2表示是第6组的第2个，每组前两个都是红球。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p171_q5",
+     "topicId": "mbj_p171",
+     "prompt": "季节按“春、夏、秋、冬”循环，第30个月是什么季节？",
+     "question": "季节按“春、夏、秋、冬”循环，第30个月是什么季节？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "春季"
+      },
+      {
+       "label": "B",
+       "text": "秋季"
+      },
+      {
+       "label": "C",
+       "text": "夏季"
+      },
+      {
+       "label": "D",
+       "text": "冬季"
+      }
+     ],
+     "answer": "C",
+     "explanation": "4个一循环，30÷4=7余2，余2表示是第8组的第2个，每组第2个是夏季。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p171_q6",
+     "topicId": "mbj_p171",
+     "prompt": "做完这类按规律排列的题目，你会怎样检查答案对不对？写出你的检查办法。",
+     "question": "做完这类按规律排列的题目，你会怎样检查答案对不对？写出你的检查办法。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "先检查自己找的“几个一组”对不对，再用总数除以每组的个数看余数；有余数就从每组的第一个数到余数那一个，没有余数就是每组的最后一个，最后回到原题数一数核对。",
+     "explanation": "回顾检查要抓住两点：分组是否正确、余数与位置的对应是否正确；把结果放回原题数一遍，是发现错误最可靠的办法。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p171_q7",
+     "topicId": "mbj_p171",
+     "prompt": "一串珠子按“3颗红、2颗黄”重复排列，第38颗珠子是什么颜色？请写出你的想法。",
+     "question": "一串珠子按“3颗红、2颗黄”重复排列，第38颗珠子是什么颜色？请写出你的想法。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "每组5颗，38÷5=7余3，说明第38颗是第8组的第3颗；每组前3颗都是红色，所以第38颗是红色。",
+     "explanation": "先确定一组有几个（3+2=5），再用38除以5，商7表示排满7组，余3表示落在下一组的第3个位置。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p171_q8",
+     "topicId": "mbj_p171",
+     "prompt": "字母按A、B、C、D、E五个一组重复排列，第47个字母在这一组中排第几位？",
+     "question": "字母按A、B、C、D、E五个一组重复排列，第47个字母在这一组中排第几位？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "2",
+     "verify": "47%5",
+     "explanation": "47÷5=9余2，商9表示排满9组，余2表示第47个字母是下一组的第2位。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p172",
+   "description": "在乘除法的基础上认识每份数、份数和总数之间的关系：会用乘法求几个几是多少，用除法求份数或每份数，并初步认识“一个数是另一个数的几倍”，用这些关系解决生活中的简单问题。",
+   "mastery_criteria": [
+    "说出每份数、份数与总数的关系",
+    "用乘除法求总数、份数或每份数"
+   ],
+   "misconceptions": [
+    "求每份数和求份数时把被除数和除数写反",
+    "把“多几”和“是几倍”当成一回事"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.16",
+    "quote": "能在熟悉的生活情境中运用数和数的运算，合理表达简单的数量关系，解决简单的问题。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p172_q1",
+     "topicId": "mbj_p172",
+     "prompt": "每盒有6支笔，4盒一共有多少支笔？用哪个算式？",
+     "question": "每盒有6支笔，4盒一共有多少支笔？用哪个算式？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "6+4=10（支）"
+      },
+      {
+       "label": "B",
+       "text": "6÷4=1（支）……2（支）"
+      },
+      {
+       "label": "C",
+       "text": "24÷4=6（支）"
+      },
+      {
+       "label": "D",
+       "text": "6×4=24（支）"
+      }
+     ],
+     "answer": "D",
+     "explanation": "求4个6是多少，就是求总数，用乘法；每份数6乘份数4等于总数24。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p172_q2",
+     "topicId": "mbj_p172",
+     "prompt": "把24个气球平均分给6人，每人分几个？",
+     "question": "把24个气球平均分给6人，每人分几个？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4",
+     "verify": "24/6",
+     "explanation": "求每份数用除法：24÷6=4，把总数平均分成6份，每份4个。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p172_q3",
+     "topicId": "mbj_p172",
+     "prompt": "每支铅笔5角，买7支一共要（　）角。",
+     "question": "每支铅笔5角，买7支一共要（　）角。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "35",
+     "explanation": "求7个5角是多少，用乘法：5×7=35角，也就是3元5角。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p172_q4",
+     "topicId": "mbj_p172",
+     "prompt": "20个苹果，每5个装一盘，这道题求的是什么？",
+     "question": "20个苹果，每5个装一盘，这道题求的是什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "求份数，用20÷5计算"
+      },
+      {
+       "label": "B",
+       "text": "求总数，用5×4计算"
+      },
+      {
+       "label": "C",
+       "text": "求每份数，用20÷4计算"
+      },
+      {
+       "label": "D",
+       "text": "求相差多少，用20−5计算"
+      }
+     ],
+     "answer": "A",
+     "explanation": "已知总数20和每份数5，求能分成几份，就是求份数，用总数除以每份数，20÷5=4盘。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p172_q5",
+     "topicId": "mbj_p172",
+     "prompt": "有30颗糖，平均分给5人，每人分到几颗？如果每人再多分1颗，一共需要多少颗糖？写出两步想法。",
+     "question": "有30颗糖，平均分给5人，每人分到几颗？如果每人再多分1颗，一共需要多少颗糖？写出两步想法。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "30÷5=6（颗），每人分到6颗；每人再多1颗就是7颗，5人需要5×7=35（颗）。",
+     "explanation": "第一步用除法求每份数，第二步把新的每份数乘份数求总数，两次用的运算不同，要想清每一步求什么。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p173",
+   "description": "学会从题目中找出已知的每份数和份数，判断该用乘法还是除法：求总数用乘法，求份数或每份数用除法，并给结果写上正确的单位名称和答语。",
+   "mastery_criteria": [
+    "根据问题选择乘法或除法计算",
+    "给结果写正确的单位名称和答语"
+   ],
+   "misconceptions": [
+    "看到“平均”就一律用乘法",
+    "不管题目问什么，单位名称都写“个”"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.07",
+    "quote": "在简单的生活情境中，运用数和数的运算解决问题，能解释结果的实际意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p173_q1",
+     "topicId": "mbj_p173",
+     "prompt": "每排坐8人，5排一共坐多少人？",
+     "question": "每排坐8人，5排一共坐多少人？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "40",
+     "verify": "8*5",
+     "explanation": "求5个8是多少，用乘法：8×5=40人。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p173_q2",
+     "topicId": "mbj_p173",
+     "prompt": "36本书，每6本摞成一摞，可以摞成几摞？",
+     "question": "36本书，每6本摞成一摞，可以摞成几摞？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "7摞"
+      },
+      {
+       "label": "B",
+       "text": "6摞"
+      },
+      {
+       "label": "C",
+       "text": "30摞"
+      },
+      {
+       "label": "D",
+       "text": "42摞"
+      }
+     ],
+     "answer": "B",
+     "explanation": "已知总数36和每份数6，求份数用除法：36÷6=6，可以摞成6摞。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p173_q3",
+     "topicId": "mbj_p173",
+     "prompt": "有42名同学，每7人一组，可以分成（　）组。",
+     "question": "有42名同学，每7人一组，可以分成（　）组。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "6",
+     "explanation": "42÷7=6，把42人每7人分成一份，正好分成6组。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p173_q4",
+     "topicId": "mbj_p173",
+     "prompt": "一箱饮料有4层，每层放9瓶。这箱一共有多少瓶？哪个算式对？",
+     "question": "一箱饮料有4层，每层放9瓶。这箱一共有多少瓶？哪个算式对？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "9+4=13（瓶）"
+      },
+      {
+       "label": "B",
+       "text": "9÷4=2（瓶）……1（瓶）"
+      },
+      {
+       "label": "C",
+       "text": "9×4=36（瓶）"
+      },
+      {
+       "label": "D",
+       "text": "36÷4=9（瓶）"
+      }
+     ],
+     "answer": "C",
+     "explanation": "每层9瓶是每份数，4层是份数，求总数用乘法，9×4=36瓶；36÷4算的是每层的瓶数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p173_q5",
+     "topicId": "mbj_p173",
+     "prompt": "一共有54个乒乓球，装成9盒，平均每盒装（　）个。",
+     "question": "一共有54个乒乓球，装成9盒，平均每盒装（　）个。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "6",
+     "explanation": "求每份数用除法：54÷9=6，每盒装6个。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p173_q6",
+     "topicId": "mbj_p173",
+     "prompt": "下面哪道题要用除法计算？",
+     "question": "下面哪道题要用除法计算？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "每筐放4个梨，7筐一共多少个"
+      },
+      {
+       "label": "B",
+       "text": "3盘苹果，每盘6个，一共多少个"
+      },
+      {
+       "label": "C",
+       "text": "一班25人，二班比一班多3人，二班有多少人"
+      },
+      {
+       "label": "D",
+       "text": "把28个梨平均放进7个筐，每筐放几个"
+      }
+     ],
+     "answer": "D",
+     "explanation": "求每份数或份数用除法，求总数用乘法，求多几用加法；只有平均分的问题用除法。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p173_q7",
+     "topicId": "mbj_p173",
+     "prompt": "妈妈买了3袋苹果，每袋8个；又买了6个梨。苹果比梨多多少个？写出算式和答语。",
+     "question": "妈妈买了3袋苹果，每袋8个；又买了6个梨。苹果比梨多多少个？写出算式和答语。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "先求苹果：8×3=24（个）；再求多多少：24−6=18（个）。答：苹果比梨多18个。",
+     "explanation": "两步问题要分两步想：先用乘法求出苹果的总数，再用减法比较苹果和梨的个数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p173_q8",
+     "topicId": "mbj_p173",
+     "prompt": "小明每天读9页书，一周7天能读多少页？如果要读72页，需要几天？请只填需要的天数。",
+     "question": "小明每天读9页书，一周7天能读多少页？如果要读72页，需要几天？请只填需要的天数。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "8",
+     "verify": "72/9",
+     "explanation": "求72页里有几个9页，用除法：72÷9=8，需要8天。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p174",
+   "description": "结合摆一摆、画一画认识“一个数是另一个数的几倍”：把另一个数看作一份，看这个数里有这样的几份，就用除法求倍数；也会用乘法求一个数的几倍是多少。",
+   "mastery_criteria": [
+    "用除法求一个数是另一个数的几倍",
+    "用乘法求一个数的几倍是多少"
+   ],
+   "misconceptions": [
+    "求倍数时用乘法，把“是几倍”当成“多几”",
+    "求一个数的几倍时用除法，把两种问题弄反"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.15",
+    "quote": "在简单的生活情境中，运用数和数的运算解决问题，能解释结果的实际意义，形成初步的应用意识。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p174_q1",
+     "topicId": "mbj_p174",
+     "prompt": "第一行摆3个圆片，第二行摆9个圆片。第二行的个数是第一行的几倍？",
+     "question": "第一行摆3个圆片，第二行摆9个圆片。第二行的个数是第一行的几倍？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "3倍"
+      },
+      {
+       "label": "B",
+       "text": "6倍"
+      },
+      {
+       "label": "C",
+       "text": "12倍"
+      },
+      {
+       "label": "D",
+       "text": "9倍"
+      }
+     ],
+     "answer": "A",
+     "explanation": "把3个看作一份，9里面有3个3，9÷3=3，所以第二行是第一行的3倍；6是相差的个数，不是倍数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p174_q2",
+     "topicId": "mbj_p174",
+     "prompt": "红花有4朵，黄花有12朵，黄花的朵数是红花的几倍？",
+     "question": "红花有4朵，黄花有12朵，黄花的朵数是红花的几倍？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "3",
+     "verify": "12/4",
+     "explanation": "把4朵看作一份，12÷4=3，12里面有3个4，所以黄花的朵数是红花的3倍。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p174_q3",
+     "topicId": "mbj_p174",
+     "prompt": "一支笔3元，一个书包的价钱是它的6倍，一个书包（　）元。",
+     "question": "一支笔3元，一个书包的价钱是它的6倍，一个书包（　）元。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "18",
+     "explanation": "求3元的6倍是多少，用乘法：3×6=18元。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p174_q4",
+     "topicId": "mbj_p174",
+     "prompt": "小丽有5张邮票，小刚的张数是小丽的4倍。小刚有多少张邮票？",
+     "question": "小丽有5张邮票，小刚的张数是小丽的4倍。小刚有多少张邮票？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "9张"
+      },
+      {
+       "label": "B",
+       "text": "20张"
+      },
+      {
+       "label": "C",
+       "text": "1张"
+      },
+      {
+       "label": "D",
+       "text": "25张"
+      }
+     ],
+     "answer": "B",
+     "explanation": "已知一份是5张，求它的4倍是多少，用乘法5×4=20张；9是两个数相加的结果。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p174_q5",
+     "topicId": "mbj_p174",
+     "prompt": "白兔有6只，黑兔有18只，黑兔的只数是白兔的（　）倍。",
+     "question": "白兔有6只，黑兔有18只，黑兔的只数是白兔的（　）倍。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "3",
+     "explanation": "把6只看作一份，18÷6=3，18里面有3个6，所以黑兔是白兔的3倍。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p174_q6",
+     "topicId": "mbj_p174",
+     "prompt": "“小明的身高是小华的2倍”这句话是什么意思？",
+     "question": "“小明的身高是小华的2倍”这句话是什么意思？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "小明比小华高2厘米"
+      },
+      {
+       "label": "B",
+       "text": "小华比小明高2厘米"
+      },
+      {
+       "label": "C",
+       "text": "小明的身高有2个小华那么高"
+      },
+      {
+       "label": "D",
+       "text": "两人的身高一共是2厘米"
+      }
+     ],
+     "answer": "C",
+     "explanation": "“是2倍”表示把小华的身高看作一份，小明有这样的2份，不是相差2厘米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p174_q7",
+     "topicId": "mbj_p174",
+     "prompt": "果园里有桃树8棵，梨树的棵数是桃树的3倍。梨树有多少棵？梨树比桃树多多少棵？",
+     "question": "果园里有桃树8棵，梨树的棵数是桃树的3倍。梨树有多少棵？梨树比桃树多多少棵？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "梨树：8×3=24（棵）；梨树比桃树多：24−8=16（棵）。答：梨树有24棵，比桃树多16棵。",
+     "explanation": "先按“求一个数的几倍”用乘法求出梨树棵数，再和桃树棵数相减，求出多出来的部分。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p174_q8",
+     "topicId": "mbj_p174",
+     "prompt": "红气球有7个，黄气球的个数是红气球的5倍。黄气球比红气球多几个？",
+     "question": "红气球有7个，黄气球的个数是红气球的5倍。黄气球比红气球多几个？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "28",
+     "verify": "7*5-7",
+     "explanation": "先求黄气球：7×5=35个；再求多几个：35−7=28个。倍数问题求“多几个”还要再减一次。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p175",
+   "description": "学习两步计算的混合运算：在没有括号的算式里先算乘除、后算加减，有小括号的先算括号里面的；会用两步计算解决需要先求出一个中间量的问题。",
+   "mastery_criteria": [
+    "说出混合运算的运算顺序",
+    "按正确顺序计算两步混合运算式题"
+   ],
+   "misconceptions": [
+    "一律从左往右算，先算加法后算乘法",
+    "有括号时仍然先算括号外面的乘除"
+   ],
+   "std": {
+    "id": "mat-2022:1.KC.08",
+    "quote": "混合运算〈以两步为主，不超过三步)，正确运用小括号和中括号"
+   },
+   "questions": [
+    {
+     "id": "mbj_p175_q1",
+     "topicId": "mbj_p175",
+     "prompt": "计算6+3×4时，应该先算什么？",
+     "question": "计算6+3×4时，应该先算什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "先算6+3"
+      },
+      {
+       "label": "B",
+       "text": "从左往右依次算"
+      },
+      {
+       "label": "C",
+       "text": "先算6×4"
+      },
+      {
+       "label": "D",
+       "text": "先算3×4"
+      }
+     ],
+     "answer": "D",
+     "explanation": "算式里既有加法又有乘法，要先算乘法再算加法，所以先算3×4=12，再算6+12=18。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p175_q2",
+     "topicId": "mbj_p175",
+     "prompt": "计算5×6−8，结果是多少？",
+     "question": "计算5×6−8，结果是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "22",
+     "verify": "5*6-8",
+     "explanation": "先算乘法5×6=30，再算减法30−8=22；如果先算6−8就错了。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p175_q3",
+     "topicId": "mbj_p175",
+     "prompt": "计算36−24÷4，结果是（　）。",
+     "question": "计算36−24÷4，结果是（　）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "30",
+     "explanation": "先算除法24÷4=6，再算减法36−6=30，不能先算36−24。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p175_q4",
+     "topicId": "mbj_p175",
+     "prompt": "(12+5)×3与12+5×3相比，得数的情况是怎样的？",
+     "question": "(12+5)×3与12+5×3相比，得数的情况是怎样的？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "(12+5)×3的得数大"
+      },
+      {
+       "label": "B",
+       "text": "12+5×3的得数大"
+      },
+      {
+       "label": "C",
+       "text": "两个算式的得数一样大"
+      },
+      {
+       "label": "D",
+       "text": "两个算式的得数不能比较"
+      }
+     ],
+     "answer": "A",
+     "explanation": "有括号先算括号：(12+5)×3=17×3=51；没有括号先算乘法：12+5×3=12+15=27。所以带括号的得数大。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p175_q5",
+     "topicId": "mbj_p175",
+     "prompt": "小明说：“6+2×5和(6+2)×5的得数一样。”他说的对吗？请分别算出两个算式的得数说明理由。",
+     "question": "小明说：“6+2×5和(6+2)×5的得数一样。”他说的对吗？请分别算出两个算式的得数说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "不对。6+2×5=6+10=16；(6+2)×5=8×5=40。有括号要先算括号里面的，两个算式的得数不相同。",
+     "explanation": "比较两个算式要按各自的运算顺序分别计算：不带括号先算乘法，带括号先算括号，顺序不同结果不同。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p176",
+   "description": "学习乘加、乘减两步式题：算式里既有乘法又有加法或减法时，不管乘法写在前面还是后面，都要先算乘法再算加减法，并会看图列出乘加、乘减算式。",
+   "mastery_criteria": [
+    "先算乘法，再算加法和减法",
+    "看图列出乘加或乘减算式"
+   ],
+   "misconceptions": [
+    "按从左往右的顺序先算加法",
+    "乘减时用减数去减积，把被减数和减数弄反"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.03",
+    "quote": "在具体情境中，了解四则运算的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p176_q1",
+     "topicId": "mbj_p176",
+     "prompt": "计算7×4+6，结果是多少？",
+     "question": "计算7×4+6，结果是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "34",
+     "verify": "7*4+6",
+     "explanation": "先算乘法7×4=28，再算加法28+6=34。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p176_q2",
+     "topicId": "mbj_p176",
+     "prompt": "计算20−3×5时，先算哪一步？",
+     "question": "计算20−3×5时，先算哪一步？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "先算20−3"
+      },
+      {
+       "label": "B",
+       "text": "先算3×5"
+      },
+      {
+       "label": "C",
+       "text": "先算20×5"
+      },
+      {
+       "label": "D",
+       "text": "先算20−5"
+      }
+     ],
+     "answer": "B",
+     "explanation": "减法和乘法在一起要先算乘法，3×5=15，再算20−15=5。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p176_q3",
+     "topicId": "mbj_p176",
+     "prompt": "计算8×6−15，结果是（　）。",
+     "question": "计算8×6−15，结果是（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "33",
+     "explanation": "先算乘法8×6=48，再算减法48−15=33。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p176_q4",
+     "topicId": "mbj_p176",
+     "prompt": "每盘有5个苹果，摆了3盘，又另外放了4个。一共有多少个？正确算式是哪个？",
+     "question": "每盘有5个苹果，摆了3盘，又另外放了4个。一共有多少个？正确算式是哪个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "5+3+4=12（个）"
+      },
+      {
+       "label": "B",
+       "text": "5×3−4=11（个）"
+      },
+      {
+       "label": "C",
+       "text": "5×3+4=19（个）"
+      },
+      {
+       "label": "D",
+       "text": "(5+3)×4=32（个）"
+      }
+     ],
+     "answer": "C",
+     "explanation": "3盘每盘5个是5×3=15个，再加上另外的4个，所以用乘加，5×3+4=19个。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p176_q5",
+     "topicId": "mbj_p176",
+     "prompt": "每盒6支笔，买了4盒，用去9支，还剩（　）支。",
+     "question": "每盒6支笔，买了4盒，用去9支，还剩（　）支。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "15",
+     "explanation": "先求一共多少支：6×4=24支；再求还剩：24−9=15支。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p176_q6",
+     "topicId": "mbj_p176",
+     "prompt": "下面哪道题的算式是3×4+2？",
+     "question": "下面哪道题的算式是3×4+2？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "每排3人站4排，走了2人，还剩多少人"
+      },
+      {
+       "label": "B",
+       "text": "3人和4人各一排，再来2人，一共多少人"
+      },
+      {
+       "label": "C",
+       "text": "3个4相加，再减去2，得多少"
+      },
+      {
+       "label": "D",
+       "text": "每排4人站3排，又来了2人，一共多少人"
+      }
+     ],
+     "answer": "D",
+     "explanation": "3×4+2表示先求3个4是多少，再加上2；走来、走掉要用减法，所以另外几道都不符合。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p176_q7",
+     "topicId": "mbj_p176",
+     "prompt": "商店有5箱牛奶，每箱12盒，卖出38盒后还剩多少盒？写出算式和答语。",
+     "question": "商店有5箱牛奶，每箱12盒，卖出38盒后还剩多少盒？写出算式和答语。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "先求一共：12×5=60（盒）；再求剩下：60−38=22（盒）。答：还剩22盒。",
+     "explanation": "这是乘减的两步问题：用乘法求出总数，再用减法减去卖出的部分，先乘后减。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p176_q8",
+     "topicId": "mbj_p176",
+     "prompt": "一盒彩笔9元，买4盒付了100元，应找回多少元？",
+     "question": "一盒彩笔9元，买4盒付了100元，应找回多少元？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "64",
+     "verify": "100-9*4",
+     "explanation": "先求4盒多少元：9×4=36元；再求找回：100−36=64元。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p177",
+   "description": "认识小括号的作用：算式里有小括号时先算括号里面的，再算括号外面的；当需要先算加减再算乘除时，就用小括号把这一部分括起来，并会按括号的要求列式。",
+   "mastery_criteria": [
+    "说出小括号的作用并先算括号里的",
+    "给需要先算的部分加上小括号"
+   ],
+   "misconceptions": [
+    "有小括号时仍先算括号外面的乘除",
+    "括号里算完就停手，忘记再算括号外的部分"
+   ],
+   "std": {
+    "id": "mat-2022:1.KC.08",
+    "quote": "混合运算〈以两步为主，不超过三步)，正确运用小括号和中括号"
+   },
+   "questions": [
+    {
+     "id": "mbj_p177_q1",
+     "topicId": "mbj_p177",
+     "prompt": "计算8×(4+3)时，应该先算什么？",
+     "question": "计算8×(4+3)时，应该先算什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "先算4+3"
+      },
+      {
+       "label": "B",
+       "text": "先算8×4"
+      },
+      {
+       "label": "C",
+       "text": "先算8×3"
+      },
+      {
+       "label": "D",
+       "text": "从左往右依次算"
+      }
+     ],
+     "answer": "A",
+     "explanation": "有小括号要先算括号里面的：4+3=7，再算8×7=56。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p177_q2",
+     "topicId": "mbj_p177",
+     "prompt": "计算(15−7)×2，结果是（　）。",
+     "question": "计算(15−7)×2，结果是（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "16",
+     "explanation": "先算括号里15−7=8，再算8×2=16。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p177_q3",
+     "topicId": "mbj_p177",
+     "prompt": "计算24÷(2+4)，结果是多少？",
+     "question": "计算24÷(2+4)，结果是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4",
+     "verify": "24/6",
+     "explanation": "先算括号里2+4=6，再算24÷6=4。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p177_q4",
+     "topicId": "mbj_p177",
+     "prompt": "计算36÷(9−3)+7，结果是（　）。",
+     "question": "计算36÷(9−3)+7，结果是（　）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "13",
+     "explanation": "先算括号里9−3=6，再算36÷6=6，最后算6+7=13。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p177_q5",
+     "topicId": "mbj_p177",
+     "prompt": "“18加上6，再除以3”，写成算式是哪个？",
+     "question": "“18加上6，再除以3”，写成算式是哪个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "18+6÷3"
+      },
+      {
+       "label": "B",
+       "text": "(18+6)÷3"
+      },
+      {
+       "label": "C",
+       "text": "18÷3+6"
+      },
+      {
+       "label": "D",
+       "text": "(18−6)÷3"
+      }
+     ],
+     "answer": "B",
+     "explanation": "要先算加法再算除法，必须用括号把18+6括起来；不加括号就会先算除法。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p177_q6",
+     "topicId": "mbj_p177",
+     "prompt": "45−(12+8)与45−12+8的得数，说法正确的是哪个？",
+     "question": "45−(12+8)与45−12+8的得数，说法正确的是哪个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "两个算式的得数一样大"
+      },
+      {
+       "label": "B",
+       "text": "45−12+8的得数小"
+      },
+      {
+       "label": "C",
+       "text": "45−(12+8)的得数小"
+      },
+      {
+       "label": "D",
+       "text": "两个算式的得数不能比较"
+      }
+     ],
+     "answer": "C",
+     "explanation": "45−(12+8)=45−20=25；45−12+8=33+8=41。所以带括号的那个算式得数小。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p177_q7",
+     "topicId": "mbj_p177",
+     "prompt": "32−(8+4)和32−8+4，哪个得数大？大多少？请算出结果并说明理由。",
+     "question": "32−(8+4)和32−8+4，哪个得数大？大多少？请算出结果并说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "32−(8+4)=32−12=20；32−8+4=24+4=28。第二个算式得数大，大28−20=8。",
+     "explanation": "两个算式只差一个括号：有括号先把8+4算完再减，没有括号从左往右算，所以结果相差8。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p177_q8",
+     "topicId": "mbj_p177",
+     "prompt": "一箱苹果有8袋，每袋5千克，卖出12千克后还剩多少千克？",
+     "question": "一箱苹果有8袋，每袋5千克，卖出12千克后还剩多少千克？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "28",
+     "verify": "8*5-12",
+     "explanation": "先求一共：5×8=40千克；再求剩下：40−12=28千克。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p178",
+   "description": "通过判断对错和改错，进一步掌握混合运算的顺序：先算括号里的，再算乘除，最后算加减；会检查别人的计算过程，找出错在哪一步并改正过来。",
+   "mastery_criteria": [
+    "指出错误算式错在哪一步",
+    "按正确顺序把错题改正"
+   ],
+   "misconceptions": [
+    "只看最后结果，过程错了也算对",
+    "改错时只改结果，不改计算过程"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.06",
+    "quote": "在解决生活情境问题的过程中，体会数和运算的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p178_q1",
+     "topicId": "mbj_p178",
+     "prompt": "小明算12+8÷4，写成了(12+8)÷4=5。他错在哪里？",
+     "question": "小明算12+8÷4，写成了(12+8)÷4=5。他错在哪里？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "结果算错了，12+8应该得19"
+      },
+      {
+       "label": "B",
+       "text": "符号抄错了，应写成乘号"
+      },
+      {
+       "label": "C",
+       "text": "最后没有写单位名称"
+      },
+      {
+       "label": "D",
+       "text": "运算顺序错了，应该先算8÷4"
+      }
+     ],
+     "answer": "D",
+     "explanation": "算式里没有括号时先算除法：8÷4=2，再算12+2=14。小明先算了加法，所以错了。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p178_q2",
+     "topicId": "mbj_p178",
+     "prompt": "算式7+9×2的得数是（　）。",
+     "question": "算式7+9×2的得数是（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "25",
+     "explanation": "先算乘法9×2=18，再算7+18=25。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p178_q3",
+     "topicId": "mbj_p178",
+     "prompt": "算式(30−6)÷4的得数是多少？",
+     "question": "算式(30−6)÷4的得数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "6",
+     "verify": "24/4",
+     "explanation": "先算括号里30−6=24，再算24÷4=6。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p178_q4",
+     "topicId": "mbj_p178",
+     "prompt": "下面哪个算式的计算过程是正确的？",
+     "question": "下面哪个算式的计算过程是正确的？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "16−3×4=16−12=4"
+      },
+      {
+       "label": "B",
+       "text": "16−3×4=13×4=52"
+      },
+      {
+       "label": "C",
+       "text": "16−3×4=16−7=9"
+      },
+      {
+       "label": "D",
+       "text": "16−3×4=16−12=28"
+      }
+     ],
+     "answer": "A",
+     "explanation": "先算乘法3×4=12，再算16−12=4。先算减法或把结果算成都错在运算顺序上。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p178_q5",
+     "topicId": "mbj_p178",
+     "prompt": "把5×(6+3)错算成5×6+3=33，正确的结果应该是（　）。",
+     "question": "把5×(6+3)错算成5×6+3=33，正确的结果应该是（　）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "45",
+     "explanation": "有小括号要先算6+3=9，再算5×9=45；漏掉括号会少算5×3=15。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p178_q6",
+     "topicId": "mbj_p178",
+     "prompt": "有人把40−20÷5算成“40−20=20，20÷5=4”。正确的得数是多少？",
+     "question": "有人把40−20÷5算成“40−20=20，20÷5=4”。正确的得数是多少？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "36"
+      },
+      {
+       "label": "C",
+       "text": "25"
+      },
+      {
+       "label": "D",
+       "text": "44"
+      }
+     ],
+     "answer": "B",
+     "explanation": "要先算除法20÷5=4，再算40−4=36；先减后除就违反了运算顺序。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p178_q7",
+     "topicId": "mbj_p178",
+     "prompt": "下面是小刚的计算：36÷6+3=36÷9=4。请指出错误，并写出正确的计算过程和结果。",
+     "question": "下面是小刚的计算：36÷6+3=36÷9=4。请指出错误，并写出正确的计算过程和结果。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "错在运算顺序：他先算了加法。应该先算除法再算加法，36÷6=6，6+3=9，正确结果是9。",
+     "explanation": "除法和加法在一起时先算除法；小刚把6+3先算了，相当于偷偷加了括号，所以结果错。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p178_q8",
+     "topicId": "mbj_p178",
+     "prompt": "一个算式要求先算9−2，再用8去乘这个差，得数是多少？",
+     "question": "一个算式要求先算9−2，再用8去乘这个差，得数是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "56",
+     "verify": "8*(9-2)",
+     "explanation": "先算括号里的9−2=7，再算8×7=56；不先算差就会得到8×9−2=70。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p179",
+   "description": "用两步混合运算解决实际问题：先想清楚先求什么、再求什么，把两步合成一个综合算式，并能说出综合算式中每一步求的是什么，学会给结果写答语。",
+   "mastery_criteria": [
+    "说出综合算式中每一步求的是什么",
+    "列综合算式解决两步问题"
+   ],
+   "misconceptions": [
+    "分步算对了，写综合算式时漏掉小括号",
+    "把两步问题当成一步，漏用一个已知条件"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.16",
+    "quote": "能在熟悉的生活情境中运用数和数的运算，合理表达简单的数量关系，解决简单的问题。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p179_q1",
+     "topicId": "mbj_p179",
+     "prompt": "每盒有9块巧克力，买了3盒，吃掉7块，还剩多少块？",
+     "question": "每盒有9块巧克力，买了3盒，吃掉7块，还剩多少块？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "20",
+     "verify": "9*3-7",
+     "explanation": "先求一共：9×3=27块；再求剩下：27−7=20块。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p179_q2",
+     "topicId": "mbj_p179",
+     "prompt": "一箱矿泉水有24瓶，分给5个小组，每组分4瓶，还剩多少瓶？",
+     "question": "一箱矿泉水有24瓶，分给5个小组，每组分4瓶，还剩多少瓶？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "19瓶"
+      },
+      {
+       "label": "B",
+       "text": "6瓶"
+      },
+      {
+       "label": "C",
+       "text": "4瓶"
+      },
+      {
+       "label": "D",
+       "text": "20瓶"
+      }
+     ],
+     "answer": "C",
+     "explanation": "5个小组分去4×5=20瓶，24−20=4，还剩4瓶；20瓶是分走的数量，不是剩下的。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p179_q3",
+     "topicId": "mbj_p179",
+     "prompt": "二年级有4个班，每班40人，其中男生86人，女生有（　）人。",
+     "question": "二年级有4个班，每班40人，其中男生86人，女生有（　）人。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "74",
+     "explanation": "先求总人数：40×4=160人；再求女生：160−86=74人。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p179_q4",
+     "topicId": "mbj_p179",
+     "prompt": "小明买3支笔，每支6元，付了20元，应找回多少元？正确算式是哪个？",
+     "question": "小明买3支笔，每支6元，付了20元，应找回多少元？正确算式是哪个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "20−6−3=11（元）"
+      },
+      {
+       "label": "B",
+       "text": "(20−6)×3=42（元）"
+      },
+      {
+       "label": "C",
+       "text": "20+6×3=38（元）"
+      },
+      {
+       "label": "D",
+       "text": "20−6×3=2（元）"
+      }
+     ],
+     "answer": "D",
+     "explanation": "先求3支笔多少元：6×3=18元；再求找回：20−18=2元，综合算式是20−6×3。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p179_q5",
+     "topicId": "mbj_p179",
+     "prompt": "一辆车每次运8箱，运了5次后还剩12箱，一共有（　）箱。",
+     "question": "一辆车每次运8箱，运了5次后还剩12箱，一共有（　）箱。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "52",
+     "explanation": "先求运走多少：8×5=40箱；再加上剩下的12箱，40+12=52箱。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p179_q6",
+     "topicId": "mbj_p179",
+     "prompt": "“每排9人，站了4排，其中女生15人，男生有多少人？”解决这个问题要先算出什么？",
+     "question": "“每排9人，站了4排，其中女生15人，男生有多少人？”解决这个问题要先算出什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "一共有多少人"
+      },
+      {
+       "label": "B",
+       "text": "每排有几个男生"
+      },
+      {
+       "label": "C",
+       "text": "女生站了几排"
+      },
+      {
+       "label": "D",
+       "text": "男生比女生多几人"
+      }
+     ],
+     "answer": "A",
+     "explanation": "要求男生人数，必须先用9×4求出总人数，再用总人数减去女生15人，所以先求总人数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p179_q7",
+     "topicId": "mbj_p179",
+     "prompt": "妈妈带了100元，买了2袋大米，每袋35元，还剩多少元？请列综合算式并说明先算什么。",
+     "question": "妈妈带了100元，买了2袋大米，每袋35元，还剩多少元？请列综合算式并说明先算什么。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "综合算式：100−35×2=100−70=30（元）。先算2袋大米一共多少钱，再从100元里减去，答：还剩30元。",
+     "explanation": "这是乘减问题：先算买米花掉的钱（35×2=70），再用带的钱减去花掉的钱，得到剩下的钱。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p179_q8",
+     "topicId": "mbj_p179",
+     "prompt": "一个书架有3层，每层放18本书，借走25本后还剩多少本？",
+     "question": "一个书架有3层，每层放18本书，借走25本后还剩多少本？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "29",
+     "verify": "3*18-25",
+     "explanation": "先求一共：18×3=54本；再求剩下：54−25=29本。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p180",
+   "description": "综合运用有余数的除法、乘除法数量关系和混合运算解决较复杂的生活问题，并通过回顾反思梳理运算顺序和检查方法，养成先想清顺序再动笔的习惯。",
+   "mastery_criteria": [
+    "综合运用三种运算解决两步问题",
+    "用检查运算顺序的方法核对答案"
+   ],
+   "misconceptions": [
+    "题目稍长就凭感觉凑数，不列算式",
+    "检查时只看答案眼熟，不肯复算一遍过程"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.15",
+    "quote": "在简单的生活情境中，运用数和数的运算解决问题，能解释结果的实际意义，形成初步的应用意识。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p180_q1",
+     "topicId": "mbj_p180",
+     "prompt": "计算6×7−19，结果是多少？",
+     "question": "计算6×7−19，结果是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "23",
+     "verify": "6*7-19",
+     "explanation": "先算乘法6×7=42，再算减法42−19=23。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p180_q2",
+     "topicId": "mbj_p180",
+     "prompt": "45个鸡蛋，每盒装6个，最多能装满几盒？",
+     "question": "45个鸡蛋，每盒装6个，最多能装满几盒？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "8盒"
+      },
+      {
+       "label": "B",
+       "text": "7盒"
+      },
+      {
+       "label": "C",
+       "text": "6盒"
+      },
+      {
+       "label": "D",
+       "text": "9盒"
+      }
+     ],
+     "answer": "B",
+     "explanation": "45÷6=7余3，装满7盒用去42个，还剩3个不够装一盒，所以最多装满7盒。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p180_q3",
+     "topicId": "mbj_p180",
+     "prompt": "计算(48−16)÷8，结果是（　）。",
+     "question": "计算(48−16)÷8，结果是（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "4",
+     "explanation": "先算括号里48−16=32，再算32÷8=4。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p180_q4",
+     "topicId": "mbj_p180",
+     "prompt": "做一道两步计算题时，下面哪种做法最好？",
+     "question": "做一道两步计算题时，下面哪种做法最好？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "不管顺序，从左边往右边一个个算"
+      },
+      {
+       "label": "B",
+       "text": "先看答案选项，再倒着凑数"
+      },
+      {
+       "label": "C",
+       "text": "先想清楚先求什么、再求什么，然后列式"
+      },
+      {
+       "label": "D",
+       "text": "把题里的两个数直接相加就行"
+      }
+     ],
+     "answer": "C",
+     "explanation": "两步问题先理清两个量的关系（先求中间量），顺序对了算式才写得对；靠凑数和乱算容易出错。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p180_q5",
+     "topicId": "mbj_p180",
+     "prompt": "每盒装8个鸡蛋，5盒一共（　）个。",
+     "question": "每盒装8个鸡蛋，5盒一共（　）个。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "40",
+     "explanation": "求5个8是多少，用乘法：8×5=40个。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p180_q6",
+     "topicId": "mbj_p180",
+     "prompt": "算式60−7×6的得数是多少？",
+     "question": "算式60−7×6的得数是多少？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "318"
+      },
+      {
+       "label": "B",
+       "text": "53"
+      },
+      {
+       "label": "C",
+       "text": "420"
+      },
+      {
+       "label": "D",
+       "text": "18"
+      }
+     ],
+     "answer": "D",
+     "explanation": "先算乘法7×6=42，再算60−42=18；先算60−7再乘6就会得到318。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p180_q7",
+     "topicId": "mbj_p180",
+     "prompt": "检查这两道题：①8+4×5=60；②(8+4)×5=60。哪一道算错了？错在哪里？正确的得数是多少？",
+     "question": "检查这两道题：①8+4×5=60；②(8+4)×5=60。哪一道算错了？错在哪里？正确的得数是多少？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "第①道错，它先算了加法，应先算乘法：8+4×5=8+20=28。第②道对，有小括号先算8+4=12，12×5=60。",
+     "explanation": "两个算式只差一个小括号；没有括号时先算乘法，有括号时先算括号，所以第①道的正确得数是28。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p180_q8",
+     "topicId": "mbj_p180",
+     "prompt": "同学们做操，每排12人，站了4排，其中女生29人，男生有多少人？",
+     "question": "同学们做操，每排12人，站了4排，其中女生29人，男生有多少人？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "19",
+     "verify": "12*4-29",
+     "explanation": "先求总人数：12×4=48人；再求男生：48−29=19人。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p181",
+   "description": "本单元认识万以内的数：会数、会读、会写，知道个位、十位、百位、千位、万位的顺序和每个数位上数字表示的意思，会比较数的大小，还会用算盘表示数。",
+   "mastery_criteria": [
+    "正确读写万以内的数",
+    "说出各数位上数字表示的意思"
+   ],
+   "misconceptions": [
+    "读数时把中间的0漏掉不读",
+    "写数时数位没对齐，少写或多写0"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.01",
+    "quote": "在实际情境中感悟并理解万以内数的意义，理解数位的含义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p181_q1",
+     "topicId": "mbj_p181",
+     "prompt": "一个数由3个千、5个百和2个一组成，这个数是多少？",
+     "question": "一个数由3个千、5个百和2个一组成，这个数是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "3502"
+      },
+      {
+       "label": "B",
+       "text": "352"
+      },
+      {
+       "label": "C",
+       "text": "3052"
+      },
+      {
+       "label": "D",
+       "text": "35002"
+      }
+     ],
+     "answer": "A",
+     "explanation": "3个千写3，5个百写5，十位上一个单位也没有要写0占位，2个一写2，所以是3502。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p181_q2",
+     "topicId": "mbj_p181",
+     "prompt": "10个一百合起来是多少？请填出这个数。",
+     "question": "10个一百合起来是多少？请填出这个数。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "1000",
+     "verify": "10*100",
+     "explanation": "一百一百地数，10个一百就是一千，所以是1000。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p181_q3",
+     "topicId": "mbj_p181",
+     "prompt": "5806中的“8”在（　）位上。",
+     "question": "5806中的“8”在（　）位上。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "百",
+     "explanation": "从右边起依次是个位、十位、百位、千位，5806中的8在百位上，表示8个百。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p181_q4",
+     "topicId": "mbj_p181",
+     "prompt": "下面各数中，比1000大又最接近1000的是哪个？",
+     "question": "下面各数中，比1000大又最接近1000的是哪个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "998"
+      },
+      {
+       "label": "B",
+       "text": "1001"
+      },
+      {
+       "label": "C",
+       "text": "999"
+      },
+      {
+       "label": "D",
+       "text": "1010"
+      }
+     ],
+     "answer": "B",
+     "explanation": "比1000大的数有1001和1010，1001比1000多1，1010多10，所以1001最接近；998和999都比1000小。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p181_q5",
+     "topicId": "mbj_p181",
+     "prompt": "用3、0、7、5四张数字卡片摆一个四位数，最大的和最小的各是多少？请写出来并说明理由。",
+     "question": "用3、0、7、5四张数字卡片摆一个四位数，最大的和最小的各是多少？请写出来并说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "最大是7530，把数字从大到小依次放在千位、百位、十位、个位；最小是3057，千位放除0以外最小的3，其余数字从小到大排在百位、十位、个位。",
+     "explanation": "四位数比较大小先看千位，千位越大数越大；最小数的千位不能是0，否则就变成三位数。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p182",
+   "description": "通过数小方块和数数认识1000以内的数，知道10个一百是一千，会一个一个、十个十个、一百一百地数数，会读写1000以内的数，并说出数的组成。",
+   "mastery_criteria": [
+    "一百一百地数到一千",
+    "读写1000以内的数并说出组成"
+   ],
+   "misconceptions": [
+    "数到699后拐弯时数错，接成6100",
+    "把“三百零五”写成305以外的数，如35或350"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.01",
+    "quote": "在实际情境中感悟并理解万以内数的意义，理解数位的含义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p182_q1",
+     "topicId": "mbj_p182",
+     "prompt": "10个十合起来是多少？请写出这个数。",
+     "question": "10个十合起来是多少？请写出这个数。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "100",
+     "verify": "10*10",
+     "explanation": "十个十个地数，10个十就是一百，所以是100。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p182_q2",
+     "topicId": "mbj_p182",
+     "prompt": "一百一百地数，10个一百是（　）。",
+     "question": "一百一百地数，10个一百是（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "1000",
+     "explanation": "一百一百地数：一百、二百……十个一百是一千。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p182_q3",
+     "topicId": "mbj_p182",
+     "prompt": "与699相邻的两个数是多少？",
+     "question": "与699相邻的两个数是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "698和699"
+      },
+      {
+       "label": "B",
+       "text": "700和701"
+      },
+      {
+       "label": "C",
+       "text": "698和700"
+      },
+      {
+       "label": "D",
+       "text": "690和700"
+      }
+     ],
+     "answer": "C",
+     "explanation": "699前面的数是698，后面的数满十进一，699+1=700，所以相邻的两个数是698和700。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p182_q4",
+     "topicId": "mbj_p182",
+     "prompt": "“四百零八”写作哪个数？",
+     "question": "“四百零八”写作哪个数？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "480"
+      },
+      {
+       "label": "B",
+       "text": "4008"
+      },
+      {
+       "label": "C",
+       "text": "48"
+      },
+      {
+       "label": "D",
+       "text": "408"
+      }
+     ],
+     "answer": "D",
+     "explanation": "四百写4在百位，十位上一个单位也没有写0，八个写8在个位，所以是408。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p182_q5",
+     "topicId": "mbj_p182",
+     "prompt": "由7个百和6个一组成的数是（　）。",
+     "question": "由7个百和6个一组成的数是（　）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "706",
+     "explanation": "7个百是700，6个一是6，十位没有要写0占位，合起来是706。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p182_q6",
+     "topicId": "mbj_p182",
+     "prompt": "下面哪个数中的“5”表示5个十？",
+     "question": "下面哪个数中的“5”表示5个十？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "752"
+      },
+      {
+       "label": "B",
+       "text": "527"
+      },
+      {
+       "label": "C",
+       "text": "275"
+      },
+      {
+       "label": "D",
+       "text": "572"
+      }
+     ],
+     "answer": "A",
+     "explanation": "752中的5在十位上，表示5个十；其余各数中的5分别在百位或个位上。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p182_q7",
+     "topicId": "mbj_p182",
+     "prompt": "一个三位数，百位上是4，十位上的数比百位上的数大3，个位上是0。这个数是多少？请写出想法。",
+     "question": "一个三位数，百位上是4，十位上的数比百位上的数大3，个位上是0。这个数是多少？请写出想法。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "十位是4+3=7，百位是4，个位是0，所以这个数是470，读作四百七十。",
+     "explanation": "先按条件算出每一位上的数字，再按百位、十位、个位的顺序写数，个位没有要写0占位。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p182_q8",
+     "topicId": "mbj_p182",
+     "prompt": "一个数比500大、比600小，十位上是9，个位上是3，这个数是多少？",
+     "question": "一个数比500大、比600小，十位上是9，个位上是3，这个数是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "593",
+     "verify": "500+90+3",
+     "explanation": "比500大比600小说明百位是5，十位是9，个位是3，所以是593。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p183",
+   "description": "把1000以内数的认识扩展到一万：认识千位和万位，会一千一千地数到一万，知道相邻两个计数单位之间的进率是十，会读写中间或末尾有0的四位数。",
+   "mastery_criteria": [
+    "一千一千地数，说出几千几百几十几",
+    "读写中间或末尾有0的四位数"
+   ],
+   "misconceptions": [
+    "把1005读成“一千五”，漏读中间的零",
+    "写“二千零六十”时写成206，少写一个0"
+   ],
+   "std": {
+    "id": "mat-2022:1.XY.01",
+    "quote": "能认、读、写万以内的数;能说出不同数位上的数表示的数值"
+   },
+   "questions": [
+    {
+     "id": "mbj_p183_q1",
+     "topicId": "mbj_p183",
+     "prompt": "10个一千合起来是多少？请写出这个数。",
+     "question": "10个一千合起来是多少？请写出这个数。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "10000",
+     "verify": "10*1000",
+     "explanation": "一千一千地数，10个一千就是一万，写作10000。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p183_q2",
+     "topicId": "mbj_p183",
+     "prompt": "9个千和9个一组成的数是（　）。",
+     "question": "9个千和9个一组成的数是（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "9009",
+     "explanation": "9个千写9在千位，百位和十位没有都写0占位，9个一写9在个位，所以是9009。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p183_q3",
+     "topicId": "mbj_p183",
+     "prompt": "一千一千地数，六千后面一个数是多少？",
+     "question": "一千一千地数，六千后面一个数是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "六千零一"
+      },
+      {
+       "label": "B",
+       "text": "七千"
+      },
+      {
+       "label": "C",
+       "text": "一万"
+      },
+      {
+       "label": "D",
+       "text": "六千一百"
+      }
+     ],
+     "answer": "B",
+     "explanation": "一千一千地数，每数一次千位加1：六千、七千、八千……所以六千后面是七千。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p183_q4",
+     "topicId": "mbj_p183",
+     "prompt": "“三千零四十”写作哪个数？",
+     "question": "“三千零四十”写作哪个数？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "3400"
+      },
+      {
+       "label": "B",
+       "text": "3004"
+      },
+      {
+       "label": "C",
+       "text": "3040"
+      },
+      {
+       "label": "D",
+       "text": "340"
+      }
+     ],
+     "answer": "C",
+     "explanation": "三千写3在千位，百位没有写0，四十写4在十位，个位写0，所以是3040。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p183_q5",
+     "topicId": "mbj_p183",
+     "prompt": "4508这个数读作（　）。",
+     "question": "4508这个数读作（　）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "四千五百零八",
+     "explanation": "4508千位4、百位5、十位0、个位8，读作四千五百零八，中间的0要读一个“零”。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p183_q6",
+     "topicId": "mbj_p183",
+     "prompt": "下面哪个数读作“二千零六”？",
+     "question": "下面哪个数读作“二千零六”？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "2060"
+      },
+      {
+       "label": "B",
+       "text": "2600"
+      },
+      {
+       "label": "C",
+       "text": "206"
+      },
+      {
+       "label": "D",
+       "text": "2006"
+      }
+     ],
+     "answer": "D",
+     "explanation": "二千零六是2个千和6个一组成，百位、十位都要写0占位，所以是2006。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p183_q7",
+     "topicId": "mbj_p183",
+     "prompt": "用2、0、0、7组成四位数，一个零也不读出来的数有哪些？请写出来并说明理由。",
+     "question": "用2、0、0、7组成四位数，一个零也不读出来的数有哪些？请写出来并说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "2700和7200。0在末尾时不读出来，所以把两个0都放在十位和个位上：2700读作二千七百，7200读作七千二百。",
+     "explanation": "读数规则是末尾的0不读，中间的0要读；要让两个0都不读，只能把它们都放在数的末尾。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p183_q8",
+     "topicId": "mbj_p183",
+     "prompt": "一个四位数，千位是5，百位是0，十位是8，个位是3，这个数是多少？",
+     "question": "一个四位数，千位是5，百位是0，十位是8，个位是3，这个数是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "5083",
+     "verify": "5000+80+3",
+     "explanation": "千位5表示5000，百位0，十位8表示80，个位3，合起来是5083。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p184",
+   "description": "认识计数单位“万”，知道10个一千是一万，感受一万有多大；会在计数器上表示一万，会读写10000，并体会一万与一千、一百之间的关系。",
+   "mastery_criteria": [
+    "说出10个一千是一万",
+    "读写10000并说出它的组成"
+   ],
+   "misconceptions": [
+    "认为10000是最大的数，后面没有数了",
+    "把一万写成1000，少写一个0"
+   ],
+   "std": {
+    "id": "mat-2022:1.TS.03",
+    "quote": "同理认识百以内数、万以内数"
+   },
+   "questions": [
+    {
+     "id": "mbj_p184_q1",
+     "topicId": "mbj_p184",
+     "prompt": "一万里面有几个一千？请填出个数。",
+     "question": "一万里面有几个一千？请填出个数。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "10",
+     "verify": "10000/1000",
+     "explanation": "10个一千是一万，所以一万里面有10个一千。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p184_q2",
+     "topicId": "mbj_p184",
+     "prompt": "一千一千地数，10个一千是（　）。",
+     "question": "一千一千地数，10个一千是（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "10000",
+     "explanation": "一千一千地数，数到第10个一千就是一万，写作10000。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p184_q3",
+     "topicId": "mbj_p184",
+     "prompt": "9999后面一个数是多少？",
+     "question": "9999后面一个数是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "10000"
+      },
+      {
+       "label": "B",
+       "text": "9998"
+      },
+      {
+       "label": "C",
+       "text": "10001"
+      },
+      {
+       "label": "D",
+       "text": "一万零一"
+      }
+     ],
+     "answer": "A",
+     "explanation": "9999再添1，个位满十进一，一直进到万位，就是10000。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p184_q4",
+     "topicId": "mbj_p184",
+     "prompt": "10000里面有几个一百？",
+     "question": "10000里面有几个一百？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "10"
+      },
+      {
+       "label": "B",
+       "text": "100"
+      },
+      {
+       "label": "C",
+       "text": "1000"
+      },
+      {
+       "label": "D",
+       "text": "10000"
+      }
+     ],
+     "answer": "B",
+     "explanation": "10个一百是一千，10个一千是一万，所以一万里面有10×10=100个一百。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p184_q5",
+     "topicId": "mbj_p184",
+     "prompt": "8个千、5个百、0个十、0个一组成的数是（　）。",
+     "question": "8个千、5个百、0个十、0个一组成的数是（　）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "8500",
+     "explanation": "8个千是8000，5个百是500，十位和个位都没有写0占位，合起来是8500。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p184_q6",
+     "topicId": "mbj_p184",
+     "prompt": "与10000相邻的两个数是多少？",
+     "question": "与10000相邻的两个数是多少？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "9998和10001"
+      },
+      {
+       "label": "B",
+       "text": "9999和9998"
+      },
+      {
+       "label": "C",
+       "text": "9999和10001"
+      },
+      {
+       "label": "D",
+       "text": "1000和100000"
+      }
+     ],
+     "answer": "C",
+     "explanation": "10000前面的数是9999，后面的数是10001，相邻就是比它少1和多1的两个数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p184_q7",
+     "topicId": "mbj_p184",
+     "prompt": "一本故事书有100页，多少本这样的书合起来大约有一万页？请写出想法。",
+     "question": "一本故事书有100页，多少本这样的书合起来大约有一万页？请写出想法。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "10000÷100=100（本）。因为10个一百是一千，100个一百就是一万，所以100本这样的书合起来大约有一万页。",
+     "explanation": "求一万里面有几个一百，用除法；也可以想100个一百是一万，所以需要100本。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p184_q8",
+     "topicId": "mbj_p184",
+     "prompt": "一个数由6个千和30个十组成，这个数是多少？",
+     "question": "一个数由6个千和30个十组成，这个数是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "6300",
+     "verify": "6000+30*10",
+     "explanation": "6个千是6000，30个十是300，6000+300=6300。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p185",
+   "description": "通过读写练习掌握万以内数的读法和写法：从高位起读，中间有一个0或两个0都只读一个“零”，末尾的0不读；写数时哪一位上一个单位也没有就写0占位。",
+   "mastery_criteria": [
+    "按“中间有0读一个零”的规则读数",
+    "写数时用0占位，不漏写数位"
+   ],
+   "misconceptions": [
+    "末尾的0也读出来，把2400读成“二千四百零零”",
+    "写数时看错数位，中间少写一个0"
+   ],
+   "std": {
+    "id": "mat-2022:1.XY.01",
+    "quote": "能认、读、写万以内的数;能说出不同数位上的数表示的数值"
+   },
+   "questions": [
+    {
+     "id": "mbj_p185_q1",
+     "topicId": "mbj_p185",
+     "prompt": "7020这个数读作什么？请选一选。",
+     "question": "7020这个数读作什么？请选一选。",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "七千二十"
+      },
+      {
+       "label": "B",
+       "text": "七千零二百"
+      },
+      {
+       "label": "C",
+       "text": "七百零二十"
+      },
+      {
+       "label": "D",
+       "text": "七千零二十"
+      }
+     ],
+     "answer": "D",
+     "explanation": "7020千位7、百位0、十位2、个位0，中间的0读一个“零”，末尾的0不读，所以读作七千零二十。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p185_q2",
+     "topicId": "mbj_p185",
+     "prompt": "8005这个数读作（　）。",
+     "question": "8005这个数读作（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "八千零五",
+     "explanation": "8005是8个千和5个一组成，百位、十位都是0，中间只读一个“零”，读作八千零五。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p185_q3",
+     "topicId": "mbj_p185",
+     "prompt": "“五千零六”这个数写作多少？",
+     "question": "“五千零六”这个数写作多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "5006",
+     "verify": "5000+6",
+     "explanation": "五千写5在千位，百位和十位写0占位，六个写6在个位，所以是5006。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p185_q4",
+     "topicId": "mbj_p185",
+     "prompt": "下面四个数中，3040的哪种读法是正确的？",
+     "question": "下面四个数中，3040的哪种读法是正确的？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "3040读作三千零四十"
+      },
+      {
+       "label": "B",
+       "text": "3040读作三千四十"
+      },
+      {
+       "label": "C",
+       "text": "3040读作三千零四百"
+      },
+      {
+       "label": "D",
+       "text": "3040读作三百零四十"
+      }
+     ],
+     "answer": "A",
+     "explanation": "3040百位是0，十位是4，中间的0读一个“零”，末尾的0不读，所以是三千零四十。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p185_q5",
+     "topicId": "mbj_p185",
+     "prompt": "由4个千、6个百、0个十、9个一组成的数写作（　）。",
+     "question": "由4个千、6个百、0个十、9个一组成的数写作（　）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "4609",
+     "explanation": "4个千写4，6个百写6，十位没有写0占位，9个一写9，所以写作4609。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p185_q6",
+     "topicId": "mbj_p185",
+     "prompt": "用3个千和8个十组成的数是哪个？",
+     "question": "用3个千和8个十组成的数是哪个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "380"
+      },
+      {
+       "label": "B",
+       "text": "3080"
+      },
+      {
+       "label": "C",
+       "text": "3800"
+      },
+      {
+       "label": "D",
+       "text": "3008"
+      }
+     ],
+     "answer": "B",
+     "explanation": "3个千是3000，8个十是80，百位和个位都要写0占位，所以是3080。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p185_q7",
+     "topicId": "mbj_p185",
+     "prompt": "读出下面的数：4005、4500、4050。它们中间和末尾的0各是怎样读的？",
+     "question": "读出下面的数：4005、4500、4050。它们中间和末尾的0各是怎样读的？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "4005读作四千零五，中间的0读一个“零”；4500读作四千五百，末尾的0不读；4050读作四千零五十，中间的0读一个“零”，末尾的0不读。",
+     "explanation": "读数规则：从高位读起，中间有一个0或连续两个0都只读一个“零”，末尾不管有几个0都不读。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p185_q8",
+     "topicId": "mbj_p185",
+     "prompt": "一个四位数，千位是7，百位和十位都是0，个位是2。这个数写作多少？",
+     "question": "一个四位数，千位是7，百位和十位都是0，个位是2。这个数写作多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "7002",
+     "verify": "7000+2",
+     "explanation": "千位7是7000，百位、十位都写0占位，个位2，所以写作7002，读作七千零二。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p186",
+   "description": "借助小方块和计数器理解数的组成：把万以内的数拆成几个千、几个百、几个十和几个一，也能根据各部分重新合成一个数，明白每个数位上数字表示的意思。",
+   "mastery_criteria": [
+    "把数拆成几个千、百、十、一",
+    "根据各部分合成一个数"
+   ],
+   "misconceptions": [
+    "把“5个百”当成5，忽略计数单位",
+    "分解数时把数位的顺序弄反"
+   ],
+   "std": {
+    "id": "mat-2022:1.TS.01",
+    "quote": "可以用对应的方法，借助小方块、圆片和小棒等表示相等的数量"
+   },
+   "questions": [
+    {
+     "id": "mbj_p186_q1",
+     "topicId": "mbj_p186",
+     "prompt": "3600里面有几个百？请填出个数。",
+     "question": "3600里面有几个百？请填出个数。",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "360"
+      },
+      {
+       "label": "C",
+       "text": "36"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ],
+     "answer": "C",
+     "explanation": "3600是3个千和6个百，3个千就是30个百，30+6=36个百。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p186_q2",
+     "topicId": "mbj_p186",
+     "prompt": "5400是由5个千和4个（　）组成的。",
+     "question": "5400是由5个千和4个（　）组成的。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "百",
+     "explanation": "5400千位是5，百位是4，所以是5个千和4个百组成的。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p186_q3",
+     "topicId": "mbj_p186",
+     "prompt": "4个千和7个十组成的数是多少？",
+     "question": "4个千和7个十组成的数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4070",
+     "verify": "4000+70",
+     "explanation": "4个千是4000，7个十是70，百位和个位写0占位，合起来是4070。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p186_q4",
+     "topicId": "mbj_p186",
+     "prompt": "2805中的“8”表示什么？",
+     "question": "2805中的“8”表示什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "8个十"
+      },
+      {
+       "label": "B",
+       "text": "8个千"
+      },
+      {
+       "label": "C",
+       "text": "8个一"
+      },
+      {
+       "label": "D",
+       "text": "8个百"
+      }
+     ],
+     "answer": "D",
+     "explanation": "2805中的8在百位上，表示8个百，也就是800。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p186_q5",
+     "topicId": "mbj_p186",
+     "prompt": "一个数由9个千、0个百、6个十、0个一组成，这个数是（　）。",
+     "question": "一个数由9个千、0个百、6个十、0个一组成，这个数是（　）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "9060",
+     "explanation": "9个千是9000，6个十是60，百位和个位写0占位，合起来是9060。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p186_q6",
+     "topicId": "mbj_p186",
+     "prompt": "下面哪个数与“2个千和3个十”表示的数相同？",
+     "question": "下面哪个数与“2个千和3个十”表示的数相同？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "2030"
+      },
+      {
+       "label": "B",
+       "text": "230"
+      },
+      {
+       "label": "C",
+       "text": "2300"
+      },
+      {
+       "label": "D",
+       "text": "2003"
+      }
+     ],
+     "answer": "A",
+     "explanation": "2个千是2000，3个十是30，百位和个位写0占位，所以是2030。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p186_q7",
+     "topicId": "mbj_p186",
+     "prompt": "用0、4、6、8组成的四位数中，最大的一个是多少？它是由几个千、几个百、几个十和几个一组成的？",
+     "question": "用0、4、6、8组成的四位数中，最大的一个是多少？它是由几个千、几个百、几个十和几个一组成的？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "最大是8640。把4、6、8从大到小依次排在千位、百位、十位，它由8个千、6个百、4个十和0个一组成。",
+     "explanation": "要摆最大的四位数，把数字从大到小依次放在千位、百位、十位、个位；再按数位说出各部分的个数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p186_q8",
+     "topicId": "mbj_p186",
+     "prompt": "一个数由12个百和5个一组成，这个数是多少？",
+     "question": "一个数由12个百和5个一组成，这个数是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "1205",
+     "verify": "12*100+5",
+     "explanation": "12个百是1200，5个一是5，1200+5=1205。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p187",
+   "description": "认识算盘：一档中间有一根横梁，梁上一颗珠表示5，梁下一颗珠表示1；会先定好数位，再在算盘上拨出万以内的数，也能读出算盘上各档珠子表示的数。",
+   "mastery_criteria": [
+    "说出梁上一颗珠、梁下一颗珠各表示几",
+    "在算盘上拨出指定的数"
+   ],
+   "misconceptions": [
+    "把梁上一颗珠当成1，梁下一颗珠当成5",
+    "拨数时不看档位，珠子和数位对不上"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p187_q1",
+     "topicId": "mbj_p187",
+     "prompt": "算盘上，梁上的一颗珠表示几？",
+     "question": "算盘上，梁上的一颗珠表示几？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "10"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "B",
+     "explanation": "算盘一颗上珠表示5，一颗下珠表示1，所以梁上一颗珠表示5。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p187_q2",
+     "topicId": "mbj_p187",
+     "prompt": "算盘上，梁下的一颗珠表示（　）。",
+     "question": "算盘上，梁下的一颗珠表示（　）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "1",
+     "explanation": "算盘的计数规则是上珠一颗当5，下珠一颗当1。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p187_q3",
+     "topicId": "mbj_p187",
+     "prompt": "算盘某一档上，梁上有1颗珠靠梁，梁下有3颗珠靠梁，这一档表示几？",
+     "question": "算盘某一档上，梁上有1颗珠靠梁，梁下有3颗珠靠梁，这一档表示几？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "8",
+     "verify": "5+3",
+     "explanation": "梁上1颗珠表示5，梁下3颗珠表示3，5+3=8，所以这一档表示8。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p187_q4",
+     "topicId": "mbj_p187",
+     "prompt": "要在算盘上拨出“6”，应该怎样拨珠？",
+     "question": "要在算盘上拨出“6”，应该怎样拨珠？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "拨梁下6颗珠"
+      },
+      {
+       "label": "B",
+       "text": "拨梁上6颗珠"
+      },
+      {
+       "label": "C",
+       "text": "拨梁上1颗珠和梁下1颗珠"
+      },
+      {
+       "label": "D",
+       "text": "拨梁上2颗珠"
+      }
+     ],
+     "answer": "C",
+     "explanation": "6=5+1，梁上1颗珠表示5，梁下1颗珠表示1，合起来就是6；一档梁下最多只有4颗珠。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p187_q5",
+     "topicId": "mbj_p187",
+     "prompt": "算盘上千位档梁下2颗，百位档梁上1颗，十位档梁下4颗，个位没有珠。这个数是（　）。",
+     "question": "算盘上千位档梁下2颗，百位档梁上1颗，十位档梁下4颗，个位没有珠。这个数是（　）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "2540",
+     "explanation": "千位2、百位5、十位4、个位0，合起来是2540。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p187_q6",
+     "topicId": "mbj_p187",
+     "prompt": "在算盘上拨出305，需要在哪些档上怎样拨珠？",
+     "question": "在算盘上拨出305，需要在哪些档上怎样拨珠？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "百位档拨3颗，十位档拨5颗"
+      },
+      {
+       "label": "B",
+       "text": "百位档拨梁上1颗和梁下3颗"
+      },
+      {
+       "label": "C",
+       "text": "十位档拨3颗，个位档拨5颗"
+      },
+      {
+       "label": "D",
+       "text": "百位档拨梁下3颗，十位档不拨，个位档拨梁上1颗"
+      }
+     ],
+     "answer": "D",
+     "explanation": "305的百位是3、十位是0、个位是5；十位没有珠就不拨，个位5用梁上1颗珠表示。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p187_q7",
+     "topicId": "mbj_p187",
+     "prompt": "要在算盘上拨出6800，各档应该怎样拨珠？请写清楚。",
+     "question": "要在算盘上拨出6800，各档应该怎样拨珠？请写清楚。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "千位档拨梁上1颗、梁下1颗表示6；百位档拨梁上1颗、梁下3颗表示8；十位档和个位档都不拨珠，合起来就是6800。",
+     "explanation": "6=5+1，8=5+3，都是用一颗上珠加下珠表示；后面的数位是0，就不拨珠，用空档表示。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p187_q8",
+     "topicId": "mbj_p187",
+     "prompt": "一个数在算盘上千位档拨梁上1颗、梁下2颗，百位档拨梁上1颗、梁下1颗，十位和个位不拨珠。这个数是多少？",
+     "question": "一个数在算盘上千位档拨梁上1颗、梁下2颗，百位档拨梁上1颗、梁下1颗，十位和个位不拨珠。这个数是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "7600",
+     "verify": "7000+600",
+     "explanation": "千位5+2=7，百位5+1=6，十位、个位是0，所以这个数是7600。",
+     "subject": "math-bj"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2265 @@
+{
+ "shard": "S31",
+ "subject": "math-bj",
+ "book": "八下",
+ "grade": 8,
+ "points": [
+  {
+   "topicId": "mbj_p570",
+   "description": "本章从区分变量与常量入手，认识函数的概念和三种表示方法，学会列表、描点、连线画函数图象；在此基础上学习一次函数 y=kx+b 的解析式、图象与性质，并用它解决行程、收费等实际问题。",
+   "mastery_criteria": [
+    "能说出变量、常量、函数、一次函数的定义要点",
+    "能由已知条件求出一次函数的解析式并画出图象",
+    "能用一次函数模型解决简单的实际问题"
+   ],
+   "misconceptions": [
+    "认为形如 y=kx+b 的式子都是一次函数，忽略 k 不能为 0",
+    "把 y 随 x 增大而减小的条件记成 k 大于 0",
+    "只代一个点就求解析式，把 b 的符号写错"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p570_q1",
+     "topicId": "mbj_p570",
+     "prompt": "下列各式中，y 是 x 的一次函数的是（　）",
+     "question": "下列各式中，y 是 x 的一次函数的是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "一次函数必须能化成 y=kx+b 且 k 不为 0，自变量的次数是 1，也不能出现在分母或根号下。B 中 y=3x-2 符合这一形式，其余三项分别含平方项、自变量在分母、自变量在根号下。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = x 的平方 + 1"
+      },
+      {
+       "label": "B",
+       "text": "y = 3x - 2"
+      },
+      {
+       "label": "C",
+       "text": "y = 1 除以 x"
+      },
+      {
+       "label": "D",
+       "text": "y = 根号 x"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p570_q2",
+     "topicId": "mbj_p570",
+     "prompt": "已知一次函数 y = kx + 3 的图象经过点（2，7），求 k 的值。",
+     "question": "已知一次函数 y = kx + 3 的图象经过点（2，7），求 k 的值。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "2",
+     "explanation": "点在图象上，坐标就满足解析式，把 x=2、y=7 代入得 7=2k+3，解得 2k=4，k=2。代错点的顺序是本题最常见的失分点。",
+     "subject": "math-bj",
+     "verify": "(7-3)/2"
+    },
+    {
+     "id": "mbj_p570_q3",
+     "topicId": "mbj_p570",
+     "prompt": "一次函数 y = -2x + 5 中，k 与 b 的值分别是（　）",
+     "question": "一次函数 y = -2x + 5 中，k 与 b 的值分别是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "对照 y=kx+b，x 的系数就是 k，常数项就是 b，所以 k=-2、b=5。负号属于 k，不能丢。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "k = -2，b = 5"
+      },
+      {
+       "label": "B",
+       "text": "k = 2，b = 5"
+      },
+      {
+       "label": "C",
+       "text": "k = -2，b = -5"
+      },
+      {
+       "label": "D",
+       "text": "k = 5，b = -2"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p570_q4",
+     "topicId": "mbj_p570",
+     "prompt": "若函数 y = (m - 2)x + 3 是一次函数，并且 y 随 x 的增大而减小，则 m 的取值范围是____。",
+     "question": "若函数 y = (m - 2)x + 3 是一次函数，并且 y 随 x 的增大而减小，则 m 的取值范围是____。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "m<2",
+     "explanation": "一次函数要求 x 的系数不为 0，即 m-2 不等于 0；又 y 随 x 增大而减小，需要 m-2 小于 0。两个条件合起来就是 m 小于 2。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p570_q5",
+     "topicId": "mbj_p570",
+     "prompt": "请举一个生活中的一次函数实例，写出它的解析式，并说明 k 与 b 在这个情境中的实际意义。",
+     "question": "请举一个生活中的一次函数实例，写出它的解析式，并说明 k 与 b 在这个情境中的实际意义。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "例如：某共享单车每小时收费 2 元，另付押金性质的开锁费 1 元，骑行 t 小时花费 y 元，则 y=2t+1。这里 k=2 表示每多骑 1 小时多付 2 元，反映费用随时间的增长快慢；b=1 表示骑行时间为 0 时也要付的固定费用，即图象与 y 轴交点的纵坐标。举其他情境时，只要能说出解析式并逐项解释 k、b 的含义即可。",
+     "explanation": "本题要考的是能否把实际问题抽象成一次函数。作答必须同时给出情境、解析式和对 k、b 两个系数的实际解释：k 反映变化的快慢，b 反映初始的固定量，只说「y 随 x 变化」而不解释系数含义就不完整。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p571",
+   "description": "认识在一个变化过程中可以取不同数值的量叫做变量，数值保持不变的量叫做常量；能在行程、购物、几何图形等具体情境中区分变量与常量，并用字母表示它们之间的关系。",
+   "mastery_criteria": [
+    "能在给定情境中准确指出变量和常量",
+    "能用字母写出变量之间的关系式"
+   ],
+   "misconceptions": [
+    "认为用字母表示的量一定是变量，把圆周率也当成变量",
+    "同一个情境中把变量与常量的角色看反，如把单价当成变量",
+    "以为一个变化过程里常量只能有一个"
+   ],
+   "std": {
+    "id": "mat-2022:4.TS.01",
+    "quote": "经历对现实问题中量的分析，借助用字母表达的未知数"
+   },
+   "questions": [
+    {
+     "id": "mbj_p571_q1",
+     "topicId": "mbj_p571",
+     "prompt": "在圆的周长公式 C = 2πr 中，变量是（　）",
+     "question": "在圆的周长公式 C = 2πr 中，变量是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "半径 r 可以取不同的值，周长 C 随之改变，所以 C 和 r 都是变量；2 与圆周率 π 是固定不变的数，属于常量。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "2 和 π"
+      },
+      {
+       "label": "B",
+       "text": "只有 C"
+      },
+      {
+       "label": "C",
+       "text": "π 和 r"
+      },
+      {
+       "label": "D",
+       "text": "C 和 r"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p571_q2",
+     "topicId": "mbj_p571",
+     "prompt": "汽车以 60 千米/时的速度匀速行驶，行驶时间 t（时）与路程 s（千米）满足 s = 60t，其中的常量是（　）",
+     "question": "汽车以 60 千米/时的速度匀速行驶，行驶时间 t（时）与路程 s（千米）满足 s = 60t，其中的常量是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "C",
+     "explanation": "速度 60 在行驶过程中保持不变，是常量；时间 t 和路程 s 都可以取不同的值，都是变量。判断常量要看它在整个过程中是否改变。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "s"
+      },
+      {
+       "label": "B",
+       "text": "t"
+      },
+      {
+       "label": "C",
+       "text": "60"
+      },
+      {
+       "label": "D",
+       "text": "s 和 t"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p571_q3",
+     "topicId": "mbj_p571",
+     "prompt": "某种笔记本每本 5 元，买 x 本共付 y 元，y 与 x 的关系式是 y = 5x。当 x = 12 时，应付多少元？",
+     "question": "某种笔记本每本 5 元，买 x 本共付 y 元，y 与 x 的关系式是 y = 5x。当 x = 12 时，应付多少元？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "60",
+     "explanation": "单价 5 元是常量，本数变化时总价随之变化。把 x=12 代入 y=5x，得 y=5 乘 12=60，即应付 60 元。",
+     "subject": "math-bj",
+     "verify": "5*12"
+    },
+    {
+     "id": "mbj_p571_q4",
+     "topicId": "mbj_p571",
+     "prompt": "用一根长 20 米的绳子围成一个长方形，长记为 a 米，宽记为 b 米，则 a + b 是一个常量，这个常量等于____米。",
+     "question": "用一根长 20 米的绳子围成一个长方形，长记为 a 米，宽记为 b 米，则 a + b 是一个常量，这个常量等于____米。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "10",
+     "explanation": "绳长 20 米是常量，长方形周长等于 2(a+b)，所以 a+b=10。a 与 b 可以变化，但它们的和不变，这个 10 就是过程中的常量。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p571_q5",
+     "topicId": "mbj_p571",
+     "prompt": "下列关于变量与常量的说法中，正确的是（　）",
+     "question": "下列关于变量与常量的说法中，正确的是（　）",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "D",
+     "explanation": "变量与常量是按「在同一个变化过程中取值是否改变」来区分的，与是否为字母、是否为正数无关，一个过程中常量也可以有多个。所以只有「变量的取值可以改变」这一说法正确。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "常量的值一定是正数"
+      },
+      {
+       "label": "B",
+       "text": "一个变化过程中常量只能有一个"
+      },
+      {
+       "label": "C",
+       "text": "用字母表示的量一定是变量"
+      },
+      {
+       "label": "D",
+       "text": "在同一变化过程中，变量的取值可以改变"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p571_q6",
+     "topicId": "mbj_p571",
+     "prompt": "在公式 S = πr 的平方中，下列说法正确的是（　）",
+     "question": "在公式 S = πr 的平方中，下列说法正确的是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "圆面积随半径变化，所以 S 与 r 是变量；π 是固定的常数，不随 r 改变，是常量。判断时要盯住「谁在变」。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "π、r 都是变量"
+      },
+      {
+       "label": "B",
+       "text": "S、r 是变量，π 是常量"
+      },
+      {
+       "label": "C",
+       "text": "S 是常量，r 是变量"
+      },
+      {
+       "label": "D",
+       "text": "S、π、r 都是常量"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p571_q7",
+     "topicId": "mbj_p571",
+     "prompt": "请举一个含有两个变量和一个常量的实际情境，写出关系式，并指出其中哪个量是常量、哪些量是变量。",
+     "question": "请举一个含有两个变量和一个常量的实际情境，写出关系式，并指出其中哪个量是常量、哪些量是变量。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "例如：一辆汽车油箱中有汽油 40 升，每小时耗油 5 升，行驶 t 小时后余油 Q 升，关系式为 Q=40-5t。其中 40 和 5 是常量，分别表示初始油量和每小时的耗油量；t 与 Q 是变量，t 变化时余油量随之变化。只要情境真实、关系式正确、常量与变量指认清楚即可。",
+     "explanation": "判断变量与常量，关键看在整个变化过程中数值是否改变，与是否用字母表示无关。作答时要先交代情境和固定量，再写关系式，最后逐一指认常量与变量，指认不全会失分。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p571_q8",
+     "topicId": "mbj_p571",
+     "prompt": "三角形的底边长为 8 厘米，高为 h 厘米，面积 S = 4h。当 h = 6 厘米时，面积是多少平方厘米？",
+     "question": "三角形的底边长为 8 厘米，高为 h 厘米，面积 S = 4h。当 h = 6 厘米时，面积是多少平方厘米？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "24",
+     "explanation": "底边 8 厘米固定，面积公式中 4 就是常量（8 的一半）。把 h=6 代入 S=4h，得 S=4 乘 6=24 平方厘米。",
+     "subject": "math-bj",
+     "verify": "4*6"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p572",
+   "description": "理解函数的概念：在某个变化过程中有两个变量 x 与 y，如果对于 x 的每一个确定的值，y 都有唯一确定的值与之对应，就说 y 是 x 的函数；能判断给定的对应关系是否为函数，会求自变量的取值范围和函数值。",
+   "mastery_criteria": [
+    "能判断两个变量之间的关系是否构成函数",
+    "能求含分母或根号时自变量的取值范围",
+    "能由解析式求出指定自变量对应的函数值"
+   ],
+   "misconceptions": [
+    "认为一个 x 对应两个 y 也仍是函数关系",
+    "求取值范围时只考虑根号，漏掉分母不能为零",
+    "求函数值时把 x 与 y 代反，把自变量当成结果"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p572_q1",
+     "topicId": "mbj_p572",
+     "prompt": "下列各关系中，y 是 x 的函数的是（　）",
+     "question": "下列各关系中，y 是 x 的函数的是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "函数的本质是「x 每取一个确定的值，y 只有一个值与之对应」。B 中每给一个 x，y=2x+1 只算出一个值；A、C 中同一个 x 会对应两个 y，D 中的圆方程同样不满足唯一性。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "y 的平方 = x（x 大于 0）"
+      },
+      {
+       "label": "B",
+       "text": "y = 2x + 1"
+      },
+      {
+       "label": "C",
+       "text": "y 的绝对值 = x"
+      },
+      {
+       "label": "D",
+       "text": "x 的平方 + y 的平方 = 4"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p572_q2",
+     "topicId": "mbj_p572",
+     "prompt": "已知函数 y = 3x - 5，当 x = 4 时，函数 y 的值是多少？",
+     "question": "已知函数 y = 3x - 5，当 x = 4 时，函数 y 的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "7",
+     "explanation": "求函数值就是把自变量的值代入解析式。把 x=4 代入得 y=3 乘 4-5=12-5=7，所以函数值是 7。",
+     "subject": "math-bj",
+     "verify": "3*4-5"
+    },
+    {
+     "id": "mbj_p572_q3",
+     "topicId": "mbj_p572",
+     "prompt": "在函数 y = 1 除以（x - 2）中，自变量 x 的取值范围是____。",
+     "question": "在函数 y = 1 除以（x - 2）中，自变量 x 的取值范围是____。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "x≠2",
+     "explanation": "自变量出现在分母中，必须保证分母不为零，即 x-2 不等于 0，所以 x 不等于 2。这是求取值范围时最容易被漏掉的一类限制。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p572_q4",
+     "topicId": "mbj_p572",
+     "prompt": "下列关于函数的说法中，正确的是（　）",
+     "question": "下列关于函数的说法中，正确的是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "函数的定义强调「唯一确定」：x 每取一个值，y 只能有一个值与它对应。有两个变量并不一定构成函数，函数也不只有解析式一种表示方法。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 每取一个值，y 都有唯一确定的值与它对应，才说 y 是 x 的函数"
+      },
+      {
+       "label": "B",
+       "text": "只要有两个变量，它们之间就是函数关系"
+      },
+      {
+       "label": "C",
+       "text": "一个 x 对应两个不同的 y，仍然是函数关系"
+      },
+      {
+       "label": "D",
+       "text": "函数关系只能用解析式来表示"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p572_q5",
+     "topicId": "mbj_p572",
+     "prompt": "函数 y = 根号（x - 3）中，自变量 x 的取值范围是（　）",
+     "question": "函数 y = 根号（x - 3）中，自变量 x 的取值范围是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "二次根式有意义要求被开方数不小于零，即 x-3 大于或等于 0，所以 x 大于或等于 3。若写成 x 大于 3，就把 x=3 这个能使根号等于 0 的值漏掉了。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 大于 3"
+      },
+      {
+       "label": "B",
+       "text": "x 大于或等于 3"
+      },
+      {
+       "label": "C",
+       "text": "x 小于或等于 3"
+      },
+      {
+       "label": "D",
+       "text": "x 不等于 3"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p572_q6",
+     "topicId": "mbj_p572",
+     "prompt": "已知函数 y = 2x + b，当 x = 3 时 y = 11。求当 x = 5 时 y 的值。",
+     "question": "已知函数 y = 2x + b，当 x = 3 时 y = 11。求当 x = 5 时 y 的值。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "15",
+     "explanation": "先由一对对应值确定 b：把 x=3、y=11 代入得 11=6+b，所以 b=5，解析式为 y=2x+5。再把 x=5 代入得 y=10+5=15。",
+     "subject": "math-bj",
+     "verify": "2*5+(11-2*3)"
+    },
+    {
+     "id": "mbj_p572_q7",
+     "topicId": "mbj_p572",
+     "prompt": "请说明「y 是 x 的函数」中「唯一确定」的含义，并举一个不是函数的例子加以说明。",
+     "question": "请说明「y 是 x 的函数」中「唯一确定」的含义，并举一个不是函数的例子加以说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "「唯一确定」是指：只要 x 的值定了，y 的值就被完全确定，不能出现一个 x 对应两个或更多 y 的情况。例如 y 的平方等于 x（x 大于 0），当 x=4 时 y 可以取 2，也可以取 -2，对应值不唯一，所以 y 不是 x 的函数。判断是否为函数，关键看同一个 x 是否只对应一个 y。",
+     "explanation": "函数概念的核心是「唯一确定」，理解错这一点的学生常把多值对应也当函数。作答要先用一句话解释唯一性，再举出同一个 x 对应两个 y 的反例并算出两个值，二者缺一不可。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p572_q8",
+     "topicId": "mbj_p572",
+     "prompt": "正方形的边长为 a 厘米，面积为 S 平方厘米，S 与 a 的关系式是 S = a 的平方。当 a = 5 厘米时，面积是多少平方厘米？",
+     "question": "正方形的边长为 a 厘米，面积为 S 平方厘米，S 与 a 的关系式是 S = a 的平方。当 a = 5 厘米时，面积是多少平方厘米？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "25",
+     "explanation": "边长确定后面积就唯一确定，所以 S 是 a 的函数。把 a=5 代入 S=a 的平方，得 S=5 乘 5=25 平方厘米。",
+     "subject": "math-bj",
+     "verify": "5*5"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p573",
+   "description": "认识函数的三种表示方法：解析式法、列表法、图象法，知道它们各自的优点与局限，能根据问题特点选择合适的方式表示函数，并在表格、解析式与图象之间进行转换。",
+   "mastery_criteria": [
+    "能说出函数三种表示方法及各自的优点",
+    "能由表格或图象读出对应的函数值",
+    "能把解析式与列表、图象对应起来"
+   ],
+   "misconceptions": [
+    "认为三种表示方法彼此独立，不能互相转化",
+    "从图象读函数值时把横、纵坐标的顺序看反",
+    "认为列表法只列出有限个对应值就不算表示函数"
+   ],
+   "std": {
+    "id": "mat-2022:4.XY.24",
+    "quote": "在具体情境中，探索用字母表示事物的关系、性质和规律的方法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p573_q1",
+     "topicId": "mbj_p573",
+     "prompt": "函数的三种表示方法是（　）",
+     "question": "函数的三种表示方法是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "教材把函数的表示方法归纳为解析式法、列表法、图象法三种：解析式法用式子表示对应规律，列表法用表格列对应值，图象法用图形表示变化情况。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "解析式法、列表法、图象法"
+      },
+      {
+       "label": "B",
+       "text": "代入法、消元法、加减法"
+      },
+      {
+       "label": "C",
+       "text": "描点法、连线法、取值法"
+      },
+      {
+       "label": "D",
+       "text": "公式法、因式分解法、配方法"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p573_q2",
+     "topicId": "mbj_p573",
+     "prompt": "某商店笔记本每本 4 元，购买 x 本需付 y 元，它们的关系式是 y = 4x。当 x = 7 时，需付多少元？",
+     "question": "某商店笔记本每本 4 元，购买 x 本需付 y 元，它们的关系式是 y = 4x。当 x = 7 时，需付多少元？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "28",
+     "explanation": "解析式法直接反映对应规律，求值只需代入。把 x=7 代入 y=4x，得 y=4 乘 7=28 元。",
+     "subject": "math-bj",
+     "verify": "4*7"
+    },
+    {
+     "id": "mbj_p573_q3",
+     "topicId": "mbj_p573",
+     "prompt": "用图象法表示函数，最主要的优点是（　）",
+     "question": "用图象法表示函数，最主要的优点是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "A",
+     "explanation": "图象把无数个对应值画成一条线，能一眼看出变量之间是增大还是减小、变化得快还是慢，这是图象法的长处；要精确算出某个函数值，还是解析式法或列表法更方便。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "能直观看出变量之间的变化趋势"
+      },
+      {
+       "label": "B",
+       "text": "便于精确计算任意一个函数值"
+      },
+      {
+       "label": "C",
+       "text": "不需要知道自变量的取值范围"
+      },
+      {
+       "label": "D",
+       "text": "只能用来表示一次函数"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p573_q4",
+     "topicId": "mbj_p573",
+     "prompt": "把自变量与对应的函数值一一列成表格来表示函数的方法，叫做____法。",
+     "question": "把自变量与对应的函数值一一列成表格来表示函数的方法，叫做____法。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "列表",
+     "explanation": "列表法把若干组对应值排成表格，读一个 x 就能找到相应的 y，优点是取值一目了然；缺点是只能列出有限个对应值，看不出整体的变化趋势。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p573_q5",
+     "topicId": "mbj_p573",
+     "prompt": "某人匀速行走，路程 s（米）与时间 t（分）的图象是一条过原点的直线，从图象上看出走 5 分钟的路程是 300 米，那么他的速度是（　）",
+     "question": "某人匀速行走，路程 s（米）与时间 t（分）的图象是一条过原点的直线，从图象上看出走 5 分钟的路程是 300 米，那么他的速度是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "图象上点的横坐标是时间、纵坐标是路程，5 分钟对应 300 米，速度等于路程除以时间，即 300 除以 5=60 米/分。把坐标读反就会算出 5 除以 300 这种荒谬结果。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "50 米/分"
+      },
+      {
+       "label": "B",
+       "text": "60 米/分"
+      },
+      {
+       "label": "C",
+       "text": "300 米/分"
+      },
+      {
+       "label": "D",
+       "text": "1500 米/分"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p573_q6",
+     "topicId": "mbj_p573",
+     "prompt": "弹簧原长 12 厘米，每挂 1 千克物体伸长 0.5 厘米，挂 x 千克时弹簧长度 y = 12 + 0.5x（厘米）。当弹簧长 15 厘米时，挂了多少千克？",
+     "question": "弹簧原长 12 厘米，每挂 1 千克物体伸长 0.5 厘米，挂 x 千克时弹簧长度 y = 12 + 0.5x（厘米）。当弹簧长 15 厘米时，挂了多少千克？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "6",
+     "explanation": "用解析式法把「长度」翻译成方程：由 12+0.5x=15 得 0.5x=3，所以 x=6 千克。也可从图象上找纵坐标 15 对应的横坐标，结果一致。",
+     "subject": "math-bj",
+     "verify": "(15-12)/0.5"
+    },
+    {
+     "id": "mbj_p573_q7",
+     "topicId": "mbj_p573",
+     "prompt": "请说明解析式法与图象法各自的优点，并举一个例子说明什么时候用图象法更合适。",
+     "question": "请说明解析式法与图象法各自的优点，并举一个例子说明什么时候用图象法更合适。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "解析式法的优点是把对应规律写成式子，便于代入计算、便于求某个自变量的函数值，也便于用字母讨论一般情况；图象法的优点是把变化过程画出来，能直观看出增减趋势、变化快慢和特殊位置。例如比较两种收费方案时，把两个函数的图象画在同一坐标系里，交点一眼可见，比逐个代入计算更容易看出在哪个范围内哪种方案更省钱。",
+     "explanation": "本题考查三种表示法的适用场合，而不是背定义。作答应分别说明解析式法便于计算、图象法便于观察趋势，并举出需要比较大小的实例，只罗列名称不结合情境就达不到要求。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p573_q8",
+     "topicId": "mbj_p573",
+     "prompt": "下列关于函数表示方法的说法中，错误的是（　）",
+     "question": "下列关于函数表示方法的说法中，错误的是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "三种表示方法描述的是同一个函数的不同侧面，可以互相转化：由解析式列表、描点可画图象，由图象、表格也可求出解析式。因此「一个函数只能用一种方法表示」的说法是错误的。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "三种表示方法之间可以互相转化"
+      },
+      {
+       "label": "B",
+       "text": "列表法能直接读出对应的函数值"
+      },
+      {
+       "label": "C",
+       "text": "图象法能反映函数的变化趋势"
+      },
+      {
+       "label": "D",
+       "text": "一个函数只能用一种方法表示"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p574",
+   "description": "掌握画函数图象的三个步骤：列表、描点、连线；能按自变量的取值范围选取适当的点，画出一次函数及简单函数的图象，会判断某个点是否在图象上，并检查所画图象是否完整、正确。",
+   "mastery_criteria": [
+    "能按列表、描点、连线三步作出函数图象",
+    "能选取合适的自变量取值使图象完整",
+    "能判断一个点是否在函数图象上"
+   ],
+   "misconceptions": [
+    "描点时把横坐标与纵坐标的位置写反",
+    "只描两个点就连线，图象不完整或形状画错",
+    "把该用平滑曲线的地方连成折线，或把直线画成曲线"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p574_q1",
+     "topicId": "mbj_p574",
+     "prompt": "画函数图象的一般步骤是（　）",
+     "question": "画函数图象的一般步骤是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "教材给出的作图步骤是：先列表取若干组对应值，再在坐标系中描出这些点，最后按变化趋势用平滑曲线或直线连接起来。三步的顺序不能颠倒。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "列表、描点、连线"
+      },
+      {
+       "label": "B",
+       "text": "计算、代入、检验"
+      },
+      {
+       "label": "C",
+       "text": "移项、合并、系数化为 1"
+      },
+      {
+       "label": "D",
+       "text": "作图、测量、证明"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p574_q2",
+     "topicId": "mbj_p574",
+     "prompt": "画函数图象时，把自变量 x 的取值作为点的（　）",
+     "question": "画函数图象时，把自变量 x 的取值作为点的（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "平面直角坐标系中，点的坐标写成（横坐标，纵坐标），横坐标对应自变量 x，纵坐标对应函数值 y。顺序写反，图象就会整体错位。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "纵坐标"
+      },
+      {
+       "label": "B",
+       "text": "象限符号"
+      },
+      {
+       "label": "C",
+       "text": "原点"
+      },
+      {
+       "label": "D",
+       "text": "横坐标"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p574_q3",
+     "topicId": "mbj_p574",
+     "prompt": "画一次函数 y = 2x - 1 的图象时，取 x = 3，对应点的纵坐标是多少？",
+     "question": "画一次函数 y = 2x - 1 的图象时，取 x = 3，对应点的纵坐标是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "5",
+     "explanation": "描点前要先算出函数值。把 x=3 代入 y=2x-1，得 y=6-1=5，所以应描出点（3，5）。",
+     "subject": "math-bj",
+     "verify": "2*3-1"
+    },
+    {
+     "id": "mbj_p574_q4",
+     "topicId": "mbj_p574",
+     "prompt": "画函数图象时，在坐标系中按对应值描出各点后，再用平滑曲线或直线依次连接各点，这一步通常叫做____。",
+     "question": "画函数图象时，在坐标系中按对应值描出各点后，再用平滑曲线或直线依次连接各点，这一步通常叫做____。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "连线",
+     "explanation": "列表、描点、连线三步中，连线决定了图象的形状。一次函数的图象是直线，用直尺连接；曲线型函数要按趋势平滑连接，不能连成折线。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p574_q5",
+     "topicId": "mbj_p574",
+     "prompt": "画一次函数 y = -x + 4 的图象，下列各点中不在图象上的是（　）",
+     "question": "画一次函数 y = -x + 4 的图象，下列各点中不在图象上的是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "D",
+     "explanation": "判断点是否在图象上，就是把横坐标代入解析式，看算出的函数值是否等于纵坐标。把 x=2 代入得 y=2，而选项中给出的是 3，所以（2，3）不在图象上；其余三点代入都成立。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "（0，4）"
+      },
+      {
+       "label": "B",
+       "text": "（4，0）"
+      },
+      {
+       "label": "C",
+       "text": "（1，3）"
+      },
+      {
+       "label": "D",
+       "text": "（2，3）"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p574_q6",
+     "topicId": "mbj_p574",
+     "prompt": "小明画 y = x 的平方的图象时，只取了 x = 1、2、3 三个点，并用线段把它们连了起来。这个图象存在的主要问题是（　）",
+     "question": "小明画 y = x 的平方的图象时，只取了 x = 1、2、3 三个点，并用线段把它们连了起来。这个图象存在的主要问题是（　）",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "A",
+     "explanation": "函数图象应反映自变量取值范围内的整体变化。只取三个正数点，既漏掉了 x=0 和负数部分的对称情况，又把曲线画成了折线，图象的开口和对称性都没有体现出来。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "取点太少，还把曲线画成了折线，不能体现对称性"
+      },
+      {
+       "label": "B",
+       "text": "坐标轴的箭头方向画反了"
+      },
+      {
+       "label": "C",
+       "text": "应该用一条封闭的曲线把三个点连起来"
+      },
+      {
+       "label": "D",
+       "text": "自变量不能取正数，取点范围本身就是错的"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p574_q7",
+     "topicId": "mbj_p574",
+     "prompt": "请说明画函数图象时为什么要在自变量取值范围内多取几个点，并指出只取两个点可能带来什么后果。",
+     "question": "请说明画函数图象时为什么要在自变量取值范围内多取几个点，并指出只取两个点可能带来什么后果。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "多取点是为了让图象更接近真实形状：点越多，连出的线与实际的对应关系越吻合，也越容易看出增减、弯曲和对称等情况。如果只取两个点，就只能确定一条直线，遇到曲线型函数时会把曲线画成直线，遇到一次函数时也可能因两点算错而画出错误的直线，而且无法发现取值范围端点附近的变化。",
+     "explanation": "作图取点的多少直接影响图象是否真实。作答要从「点多则形状准」和「两点只能定直线」两方面说明，并指出取点太少会掩盖弯曲、对称等信息，只说「多取点更准确」过于笼统。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p574_q8",
+     "topicId": "mbj_p574",
+     "prompt": "画一次函数 y = 3x + 2 的图象时，取 x = -1，对应的函数值是多少？",
+     "question": "画一次函数 y = 3x + 2 的图象时，取 x = -1，对应的函数值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "-1",
+     "explanation": "把 x=-1 代入解析式，得 y=3 乘（-1）+2=-3+2=-1，所以对应的点是（-1，-1）。负数代入时要注意乘法符号。",
+     "subject": "math-bj",
+     "verify": "3*(-1)+2"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p575",
+   "description": "认识一次函数的意义：形如 y=kx+b（k、b 是常数，k 不等于 0）的函数叫做一次函数，当 b=0 时它就是正比例函数；能根据实际问题的数量关系列出一次函数解析式，并确定 k 与 b。",
+   "mastery_criteria": [
+    "能识别一次函数并指出 k、b 的值",
+    "能由两对对应值求出一次函数的解析式",
+    "能说明正比例函数与一次函数的关系"
+   ],
+   "misconceptions": [
+    "认为 y=kx+b 中 k 可以等于 0，把常函数当成一次函数",
+    "把 y 等于 x 分之 1 这类式子当成一次函数",
+    "由两点求解析式时把 k、b 的位置代错，算出相反结果"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p575_q1",
+     "topicId": "mbj_p575",
+     "prompt": "下列函数中，y 是 x 的正比例函数的是（　）",
+     "question": "下列函数中，y 是 x 的正比例函数的是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "正比例函数是一次函数中 b=0 的特殊情形，形式为 y=kx。B 中 y=-3x 符合；A 的常数项为 1，C 的自变量在分母上，D 含平方项。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = 2x + 1"
+      },
+      {
+       "label": "B",
+       "text": "y = -3x"
+      },
+      {
+       "label": "C",
+       "text": "y = 3 除以 x"
+      },
+      {
+       "label": "D",
+       "text": "y = x 的平方"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p575_q2",
+     "topicId": "mbj_p575",
+     "prompt": "一次函数 y = 5 - 2x 中，k 的值是（　）",
+     "question": "一次函数 y = 5 - 2x 中，k 的值是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "C",
+     "explanation": "把式子按 y=kx+b 的顺序整理成 y=-2x+5，x 的系数是 -2，所以 k=-2，b=5。直接看常数 5 会把 k 与 b 弄错。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "-2"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p575_q3",
+     "topicId": "mbj_p575",
+     "prompt": "已知一次函数 y = kx + b 的图象经过点（0，3）和（2，7），求 k 的值。",
+     "question": "已知一次函数 y = kx + b 的图象经过点（0，3）和（2，7），求 k 的值。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "2",
+     "explanation": "把两点坐标分别代入解析式：由（0，3）得 b=3；再由（2，7）得 7=2k+3，解得 k=2。也可直接用 k 等于纵坐标之差除以横坐标之差，即（7-3）除以（2-0）=2。",
+     "subject": "math-bj",
+     "verify": "(7-3)/(2-0)"
+    },
+    {
+     "id": "mbj_p575_q4",
+     "topicId": "mbj_p575",
+     "prompt": "若函数 y = （k - 1）x + 2 是一次函数，则 k 的取值范围是____。",
+     "question": "若函数 y = （k - 1）x + 2 是一次函数，则 k 的取值范围是____。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "k≠1",
+     "explanation": "一次函数的定义要求一次项系数不为零。这里一次项系数是 k-1，令 k-1 不等于 0，得 k 不等于 1；若 k=1，式子变成 y=2，是常函数而不是一次函数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p575_q5",
+     "topicId": "mbj_p575",
+     "prompt": "一次函数 y = kx + b 中，当 x 每增加 1 个单位时，y 的变化量是（　）",
+     "question": "一次函数 y = kx + b 中，当 x 每增加 1 个单位时，y 的变化量是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "A",
+     "explanation": "设 x 由 x1 增加到 x1+1，相应的函数值之差为 k(x1+1)+b 减去（kx1+b），等于 k。所以 x 每增加 1，y 就增加 k，这就是 k 表示变化快慢的原因；b 只决定图象与 y 轴的交点。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "k"
+      },
+      {
+       "label": "B",
+       "text": "b"
+      },
+      {
+       "label": "C",
+       "text": "k 与 b 的积"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p575_q6",
+     "topicId": "mbj_p575",
+     "prompt": "某商品原价 80 元，按原价的 8 折出售。购买 x 件需付 y 元，求当 x = 6 时应付多少元？",
+     "question": "某商品原价 80 元，按原价的 8 折出售。购买 x 件需付 y 元，求当 x = 6 时应付多少元？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "384",
+     "explanation": "先列出解析式：每件售价为 80 乘 0.8=64 元，所以 y=64x，这是一次函数（也是正比例函数）。把 x=6 代入得 y=64 乘 6=384 元。",
+     "subject": "math-bj",
+     "verify": "0.8*80*6"
+    },
+    {
+     "id": "mbj_p575_q7",
+     "topicId": "mbj_p575",
+     "prompt": "请说明一次函数 y = kx + b 中为什么必须规定 k 不等于 0，如果 k = 0 会出现什么情况。",
+     "question": "请说明一次函数 y = kx + b 中为什么必须规定 k 不等于 0，如果 k = 0 会出现什么情况。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为 k 表示 x 每增加 1 个单位时 y 的变化量。若 k=0，则无论 x 取什么值，y 都等于 b，图象是一条与 x 轴平行的直线，不存在「一次」的变化关系，也就不能由 y 反过来确定 x。所以规定 k 不等于 0，是为了保证函数值与自变量之间存在一一对应的线性变化，这也是把 y=b 称为常函数而不叫一次函数的原因。",
+     "explanation": "k 是变化率，k=0 时函数退化为常函数，这是规定 k 不等于 0 的根本原因。作答要从「x 每增加 1 时 y 的变化量」入手，再说明 k=0 时 y 恒等于 b、无法由 y 反求 x，逻辑才完整。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p575_q8",
+     "topicId": "mbj_p575",
+     "prompt": "已知正比例函数 y = kx 的图象经过点（3，12），求 k 的值。",
+     "question": "已知正比例函数 y = kx 的图象经过点（3，12），求 k 的值。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4",
+     "explanation": "点在图象上，坐标满足解析式。把 x=3、y=12 代入 y=kx，得 12=3k，所以 k=4，解析式为 y=4x。",
+     "subject": "math-bj",
+     "verify": "12/3"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p576",
+   "description": "知道一次函数 y=kx+b（k 不等于 0）的图象是一条直线，会用两点法迅速画出图象；理解 k 决定直线的倾斜方向与陡缓、b 决定直线与 y 轴的交点位置，能由图象判断 k、b 的符号并求与坐标轴的交点。",
+   "mastery_criteria": [
+    "能用两点法画出一条一次函数的图象",
+    "能由图象所在的象限判断 k、b 的符号",
+    "能求出图象与 x 轴、y 轴的交点坐标"
+   ],
+   "misconceptions": [
+    "认为 b 决定直线的倾斜程度，把 k 与 b 的作用弄反",
+    "由图象经过第一、二、四象限时把 k 的符号判成大于 0",
+    "把与 y 轴的交点坐标写成（b，0）"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p576_q1",
+     "topicId": "mbj_p576",
+     "prompt": "一次函数 y = kx + b（k 不等于 0）的图象是（　）",
+     "question": "一次函数 y = kx + b（k 不等于 0）的图象是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "一次函数的解析式是关于 x 的一次整式，其图象是一条直线；因为两点确定一条直线，所以只要描出两个点就能把它画出来。抛物线、双曲线、射线都不是一次函数的图象。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "一条直线"
+      },
+      {
+       "label": "B",
+       "text": "一条抛物线"
+      },
+      {
+       "label": "C",
+       "text": "双曲线"
+      },
+      {
+       "label": "D",
+       "text": "一条射线"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p576_q2",
+     "topicId": "mbj_p576",
+     "prompt": "直线 y = 2x - 6 与 x 轴交点的横坐标是多少？",
+     "question": "直线 y = 2x - 6 与 x 轴交点的横坐标是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "3",
+     "explanation": "与 x 轴相交时纵坐标为 0，令 2x-6=0，解得 x=3，所以交点是（3，0）。与 y 轴的交点则令 x=0，得 y=-6。",
+     "subject": "math-bj",
+     "verify": "6/2"
+    },
+    {
+     "id": "mbj_p576_q3",
+     "topicId": "mbj_p576",
+     "prompt": "直线 y = -3x + 4 与 y 轴的交点坐标是____。",
+     "question": "直线 y = -3x + 4 与 y 轴的交点坐标是____。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "（0，4）",
+     "explanation": "直线与 y 轴相交时横坐标为 0，把 x=0 代入得 y=4，所以交点是（0，4）。这个纵坐标就是解析式中的 b，与 y 轴交点的纵坐标恒等于 b。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p576_q4",
+     "topicId": "mbj_p576",
+     "prompt": "一次函数 y = kx + b 的图象经过第一、二、四象限，则 k、b 的符号是（　）",
+     "question": "一次函数 y = kx + b 的图象经过第一、二、四象限，则 k、b 的符号是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "C",
+     "explanation": "图象从左上方向右下方倾斜，说明 y 随 x 增大而减小，k 小于 0；又与 y 轴交于正半轴，说明 b 大于 0。两条信息合起来就是 k 小于 0、b 大于 0。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "k 大于 0，b 大于 0"
+      },
+      {
+       "label": "B",
+       "text": "k 大于 0，b 小于 0"
+      },
+      {
+       "label": "C",
+       "text": "k 小于 0，b 大于 0"
+      },
+      {
+       "label": "D",
+       "text": "k 小于 0，b 小于 0"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p576_q5",
+     "topicId": "mbj_p576",
+     "prompt": "请说明直线 y = 3x 与直线 y = 3x - 2 的位置关系，并解释理由。",
+     "question": "请说明直线 y = 3x 与直线 y = 3x - 2 的位置关系，并解释理由。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "这两条直线互相平行。因为两条直线的 k 都等于 3，倾斜方向和陡缓完全相同；而 b 分别为 0 和 -2，与 y 轴的交点不同，一条过原点、一条过点（0，-2）。k 相同而 b 不同时，两直线平行且不重合；若 k、b 都相同则两直线重合，若 k 不同则两直线相交。",
+     "explanation": "两直线位置关系由 k、b 的取值共同决定：k 相同则平行或重合，b 再区分是否重合。作答要写出两个 k 都等于 3、两个 b 分别为 0 和 -2，并由此得出平行且不重合，只说结论不给依据不得分。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p576_q6",
+     "topicId": "mbj_p576",
+     "prompt": "已知一次函数 y = kx + b 的图象与 y 轴交于负半轴，且 y 随 x 的增大而减小，则它的图象不经过（　）",
+     "question": "已知一次函数 y = kx + b 的图象与 y 轴交于负半轴，且 y 随 x 的增大而减小，则它的图象不经过（　）",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "A",
+     "explanation": "y 随 x 增大而减小说明 k 小于 0，直线从左上斜向右下；与 y 轴交于负半轴说明 b 小于 0。这样的直线经过第二、三、四象限，唯一不经过的是第一象限。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "第一象限"
+      },
+      {
+       "label": "B",
+       "text": "第二象限"
+      },
+      {
+       "label": "C",
+       "text": "第三象限"
+      },
+      {
+       "label": "D",
+       "text": "第四象限"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p576_q7",
+     "topicId": "mbj_p576",
+     "prompt": "直线 y = -2x + 8 与 x 轴、y 轴分别交于 A、B 两点，三角形 AOB 的面积是多少（O 为坐标原点）？",
+     "question": "直线 y = -2x + 8 与 x 轴、y 轴分别交于 A、B 两点，三角形 AOB 的面积是多少（O 为坐标原点）？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "16",
+     "explanation": "令 y=0 得 x=4，所以 A（4，0）；令 x=0 得 y=8，所以 B（0，8）。直角三角形 AOB 的两条直角边分别是 4 和 8，面积等于 4 乘 8 除以 2，即 16。",
+     "subject": "math-bj",
+     "verify": "4*8/2"
+    },
+    {
+     "id": "mbj_p576_q8",
+     "topicId": "mbj_p576",
+     "prompt": "用两点法画 y = x + 1 的图象时，通常选取的两个点是（　）",
+     "question": "用两点法画 y = x + 1 的图象时，通常选取的两个点是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "取 x=0 得 y=1，取 x=-1 得 y=0，所以（0，1）、（-1，0）在图象上，且分别落在 y 轴和 x 轴上，作图最方便。A 两点都不满足解析式，D 中的（1，3）代入得 2，也不在图象上。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "（0，0）和（1，1）"
+      },
+      {
+       "label": "B",
+       "text": "（0，1）和（-1，0）"
+      },
+      {
+       "label": "C",
+       "text": "（1，0）和（0，-1）"
+      },
+      {
+       "label": "D",
+       "text": "（0，1）和（1，3）"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p577",
+   "description": "掌握一次函数 y=kx+b 的性质：k 大于 0 时 y 随 x 的增大而增大，图象从左到右上升；k 小于 0 时 y 随 x 的增大而减小，图象从左到右下降。能利用增减性比较函数值大小、确定字母系数的取值范围。",
+   "mastery_criteria": [
+    "能判断一次函数随自变量增大是增还是减",
+    "能利用增减性比较同一函数图象上两点的函数值",
+    "能由增减性列出关于字母系数的不等式"
+   ],
+   "misconceptions": [
+    "把 k 小于 0 的情形说成 y 随 x 增大而增大",
+    "比较大小时只按横坐标大小下结论，忽略 k 的符号",
+    "认为一次函数在闭区间上一定有最大值和最小值却不会单独说明"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p577_q1",
+     "topicId": "mbj_p577",
+     "prompt": "一次函数 y = -4x + 1 中，y 随 x 的增大而（　）",
+     "question": "一次函数 y = -4x + 1 中，y 随 x 的增大而（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "判断增减性只看 k 的符号。这里 k=-4 小于 0，所以 y 随 x 的增大而减小，图象从左到右下降；b=1 只影响与 y 轴的交点，不影响增减性。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "增大"
+      },
+      {
+       "label": "B",
+       "text": "减小"
+      },
+      {
+       "label": "C",
+       "text": "不变"
+      },
+      {
+       "label": "D",
+       "text": "先增大后减小"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p577_q2",
+     "topicId": "mbj_p577",
+     "prompt": "下列一次函数中，y 随 x 的增大而增大的是（　）",
+     "question": "下列一次函数中，y 随 x 的增大而增大的是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "C",
+     "explanation": "y 随 x 增大而增大要求 k 大于 0。四个选项中只有 y=0.5x-1 的 k 是正数，其余三个的 k 分别为 -1、-2、-5，函数值都随 x 增大而减小。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = -x + 3"
+      },
+      {
+       "label": "B",
+       "text": "y = -2x"
+      },
+      {
+       "label": "C",
+       "text": "y = 0.5x - 1"
+      },
+      {
+       "label": "D",
+       "text": "y = -5x + 2"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p577_q3",
+     "topicId": "mbj_p577",
+     "prompt": "一次函数 y = kx - 3 中 y 随 x 的增大而减小，且图象经过点（2，-7），求 k 的值。",
+     "question": "一次函数 y = kx - 3 中 y 随 x 的增大而减小，且图象经过点（2，-7），求 k 的值。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "-2",
+     "explanation": "把点代入得 -7=2k-3，所以 2k=-4，k=-2。检验：k=-2 小于 0，确实使 y 随 x 增大而减小，与题设相符，答案合理。",
+     "subject": "math-bj",
+     "verify": "(-7+3)/2"
+    },
+    {
+     "id": "mbj_p577_q4",
+     "topicId": "mbj_p577",
+     "prompt": "若一次函数 y = （2m - 1）x + 5 中 y 随 x 的增大而减小，则 m 的取值范围是____。",
+     "question": "若一次函数 y = （2m - 1）x + 5 中 y 随 x 的增大而减小，则 m 的取值范围是____。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "m<1/2",
+     "explanation": "y 随 x 增大而减小要求一次项系数小于 0，即 2m-1 小于 0，解得 m 小于 1/2。注意这里只要求系数为负，同时它自然满足不等于 0，符合一次函数的定义。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p577_q5",
+     "topicId": "mbj_p577",
+     "prompt": "点 A（-2，y1）、B（1，y2）都在一次函数 y = 3x - 1 的图象上，则（　）",
+     "question": "点 A（-2，y1）、B（1，y2）都在一次函数 y = 3x - 1 的图象上，则（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "k=3 大于 0，函数值随 x 增大而增大。因为 -2 小于 1，所以 y1 小于 y2；具体算得 y1=-7、y2=2，也验证了这一结论。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "y1 大于 y2"
+      },
+      {
+       "label": "B",
+       "text": "y1 小于 y2"
+      },
+      {
+       "label": "C",
+       "text": "y1 等于 y2"
+      },
+      {
+       "label": "D",
+       "text": "无法比较大小"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p577_q6",
+     "topicId": "mbj_p577",
+     "prompt": "请说明为什么 k 大于 0 时一次函数 y = kx + b 的函数值随 x 的增大而增大，可用取两点作差的方法说明。",
+     "question": "请说明为什么 k 大于 0 时一次函数 y = kx + b 的函数值随 x 的增大而增大，可用取两点作差的方法说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "设 x1 小于 x2，对应的函数值之差为（kx2+b）减去（kx1+b），等于 k（x2-x1）。因为 x2-x1 大于 0，当 k 大于 0 时这个差也大于 0，即 x 变大时 y 也变大，所以 y 随 x 的增大而增大；当 k 小于 0 时差为负，函数值就随 x 增大而减小。b 在作差时被消掉，因此它不影响增减性。",
+     "explanation": "作差法是比较函数值大小、判断增减性的通用方法。作答要设 x1 小于 x2、算出函数值之差为 k 乘（x2-x1），再由 k 的符号定出差的符号，同时指出 b 在作差时被消去，因此不影响增减性。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p577_q7",
+     "topicId": "mbj_p577",
+     "prompt": "一次函数 y = kx + b 中，当 x 从 1 增加到 3 时，y 的值从 5 减小到 -1，求 k 的值。",
+     "question": "一次函数 y = kx + b 中，当 x 从 1 增加到 3 时，y 的值从 5 减小到 -1，求 k 的值。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "-3",
+     "explanation": "k 就是函数值的变化量与自变量变化量之比：（-1-5）除以（3-1），等于 -6 除以 2，即 -3。k 为负说明函数值随 x 增大而减小，与题中「减小」一致。",
+     "subject": "math-bj",
+     "verify": "(-1-5)/(3-1)"
+    },
+    {
+     "id": "mbj_p577_q8",
+     "topicId": "mbj_p577",
+     "prompt": "一次函数 y = -x + 6，当 x = 2 时函数值是多少？",
+     "question": "一次函数 y = -x + 6，当 x = 2 时函数值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4",
+     "explanation": "把 x=2 代入解析式，得 y=-2+6=4。也可以由 k=-1 小于 0 判断：x 从 0 增加到 2，函数值从 6 减少 2，得 4。",
+     "subject": "math-bj",
+     "verify": "-2+6"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p578",
+   "description": "能建立一次函数模型解决实际问题：从行程、购物、收费、几何图形等情境中找出数量关系，写出解析式并注明自变量的取值范围，利用解析式或图象求值、作判断、比较方案，最后检验结果是否符合实际。",
+   "mastery_criteria": [
+    "能把实际问题中的数量关系写成一次函数解析式",
+    "能用解析式或图象求出实际问题的答案",
+    "能比较两种方案并说明选择的理由"
+   ],
+   "misconceptions": [
+    "写出解析式后不写自变量的取值范围，得出不合实际的答案",
+    "比较方案时只算一个数值就下结论，没有找分界点",
+    "把图象交点的坐标直接当答案，不说明它的实际意义"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p578_q1",
+     "topicId": "mbj_p578",
+     "prompt": "某市出租车起步价为 10 元（含 3 千米），超过 3 千米的部分每千米收费 2 元。乘车行驶 8 千米应付多少元？",
+     "question": "某市出租车起步价为 10 元（含 3 千米），超过 3 千米的部分每千米收费 2 元。乘车行驶 8 千米应付多少元？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "20",
+     "explanation": "费用分两段：3 千米以内 10 元，超过的 8-3=5 千米按每千米 2 元计，共 10+2 乘 5=20 元。这类分段收费问题要先判断里程落在哪一段。",
+     "subject": "math-bj",
+     "verify": "10+2*(8-3)"
+    },
+    {
+     "id": "mbj_p578_q2",
+     "topicId": "mbj_p578",
+     "prompt": "某水池已有水 20 吨，每小时注入 5 吨。注入 t 小时后水池中有水 W 吨，则 W 与 t 的关系式是（　）",
+     "question": "某水池已有水 20 吨，每小时注入 5 吨。注入 t 小时后水池中有水 W 吨，则 W 与 t 的关系式是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "水量等于原有水量加上新注入的水量，原有 20 吨是常量 b，每小时 5 吨是 k，所以 W=5t+20。写成 20t+5 就把「每小时注入量」与「原有水量」的位置弄反了。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "W = 20t + 5"
+      },
+      {
+       "label": "B",
+       "text": "W = 5t - 20"
+      },
+      {
+       "label": "C",
+       "text": "W = 20 - 5t"
+      },
+      {
+       "label": "D",
+       "text": "W = 5t + 20"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p578_q3",
+     "topicId": "mbj_p578",
+     "prompt": "甲、乙两地相距 120 千米，汽车以 60 千米/时的速度从甲地驶向乙地。行驶 t 小时后，汽车距乙地 s 千米，则（　）",
+     "question": "甲、乙两地相距 120 千米，汽车以 60 千米/时的速度从甲地驶向乙地。行驶 t 小时后，汽车距乙地 s 千米，则（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "D",
+     "explanation": "距乙地的路程等于总路程减去已行驶的路程，已行驶 60t 千米，所以 s=120-60t，且 0 小于或等于 t 小于或等于 2。选项 A 求的是已行驶路程，方向弄反就会误选。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "s = 60t"
+      },
+      {
+       "label": "B",
+       "text": "s = 120 + 60t"
+      },
+      {
+       "label": "C",
+       "text": "s = 60t - 120"
+      },
+      {
+       "label": "D",
+       "text": "s = 120 - 60t"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p578_q4",
+     "topicId": "mbj_p578",
+     "prompt": "某种电话卡月租 18 元，通话费每分钟 0.1 元。一个月通话 x 分钟，费用共 y 元，则 y 与 x 的关系式是____。",
+     "question": "某种电话卡月租 18 元，通话费每分钟 0.1 元。一个月通话 x 分钟，费用共 y 元，则 y 与 x 的关系式是____。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "y=18+0.1x",
+     "explanation": "总费用等于固定月租加上按分钟计的通话费，月租 18 元是常量 b，每分钟 0.1 元是 k，所以 y=18+0.1x，其中 x 应取非负整数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p578_q5",
+     "topicId": "mbj_p578",
+     "prompt": "某商场促销：购物金额不超过 100 元不打折，超过 100 元的部分打 8 折。购买原价 150 元的商品，实付多少元？",
+     "question": "某商场促销：购物金额不超过 100 元不打折，超过 100 元的部分打 8 折。购买原价 150 元的商品，实付多少元？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "140",
+     "explanation": "不超过 100 元的部分按原价付，超过的 150-100=50 元打 8 折，即 50 乘 0.8=40 元，合计 100+40=140 元。若把 150 元整体打 8 折会得到 120 元，那是不符合规则的错解。",
+     "subject": "math-bj",
+     "verify": "100+(150-100)*0.8"
+    },
+    {
+     "id": "mbj_p578_q6",
+     "topicId": "mbj_p578",
+     "prompt": "某通信公司推出两种方案：甲方案月租 30 元，通话每分钟 0.2 元；乙方案无月租，通话每分钟 0.3 元。一个月通话多少分钟时，两种方案的费用相同？",
+     "question": "某通信公司推出两种方案：甲方案月租 30 元，通话每分钟 0.2 元；乙方案无月租，通话每分钟 0.3 元。一个月通话多少分钟时，两种方案的费用相同？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "300",
+     "explanation": "设通话 x 分钟，甲方案费用为 30+0.2x，乙方案为 0.3x。令两者相等：30+0.2x=0.3x，得 30=0.1x，所以 x=300 分钟。这正是两图象交点的横坐标，交点纵坐标 90 元就是此时的费用。",
+     "subject": "math-bj",
+     "verify": "30/(0.3-0.2)"
+    },
+    {
+     "id": "mbj_p578_q7",
+     "topicId": "mbj_p578",
+     "prompt": "用一次函数解决实际问题时，为什么必须写出自变量的取值范围？请结合一个例子说明。",
+     "question": "用一次函数解决实际问题时，为什么必须写出自变量的取值范围？请结合一个例子说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为实际情境对变量有现实限制，解析式本身允许的取值不一定都符合题意。例如汽车距乙地的路程 s=120-60t，若不加限制，t=3 时 s=-60，这显然不可能；实际上 t 只能取 0 到 2 之间的值。写出取值范围既能排除不合实际的解，也决定了图象应画成线段而不是整条直线。",
+     "explanation": "实际问题的解必须符合现实限制，取值范围正是这一限制的数学表达。作答要举出具体解析式，算出一个越界后明显不合理的值，并说明它如何决定图象只取一条线段，缺了实例就成了空谈。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p578_q8",
+     "topicId": "mbj_p578",
+     "prompt": "汽车油箱中有汽油 50 升，每小时耗油 8 升。行驶 t 小时后余油 Q 升，则 t 的取值范围是（　）",
+     "question": "汽车油箱中有汽油 50 升，每小时耗油 8 升。行驶 t 小时后余油 Q 升，则 t 的取值范围是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "余油不能为负，由 50-8t 大于或等于 0 得 t 小于或等于 6.25；同时时间不能为负，所以 0 小于或等于 t 小于或等于 6.25。只写 t 大于或等于 0 会忽略油量用完这一现实限制。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "0 小于或等于 t 小于或等于 8"
+      },
+      {
+       "label": "B",
+       "text": "t 大于或等于 0"
+      },
+      {
+       "label": "C",
+       "text": "t 小于或等于 6.25"
+      },
+      {
+       "label": "D",
+       "text": "0 小于或等于 t 小于或等于 6.25"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p579",
+   "description": "本章先研究多边形的内角和与外角和，再学习平行四边形、矩形、菱形、正方形的概念、性质与判定，用三角形全等等知识进行推理证明，并解决与四边形有关的边长、角度、面积计算问题。",
+   "mastery_criteria": [
+    "能说出平行四边形与矩形、菱形、正方形的包含关系",
+    "能用性质定理与判定定理进行推理和计算",
+    "能运用多边形内角和、外角和公式求值"
+   ],
+   "misconceptions": [
+    "认为矩形与菱形是并列关系，正方形不属于矩形",
+    "把平行四边形的对角线性质误记成对角线相等",
+    "判定时只看图形像不像就下结论，不写出依据"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p579_q1",
+     "topicId": "mbj_p579",
+     "prompt": "下列四边形中，一定是平行四边形的是（　）",
+     "question": "下列四边形中，一定是平行四边形的是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "平行四边形的定义是两组对边分别平行的四边形。只有一组对边平行、只有一组对边相等或对角线互相垂直，都不足以保证是平行四边形，例如等腰梯形就有一组对边平行而另一组相等。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "只有一组对边平行的四边形"
+      },
+      {
+       "label": "B",
+       "text": "对角线互相垂直的四边形"
+      },
+      {
+       "label": "C",
+       "text": "只有一组对边相等的四边形"
+      },
+      {
+       "label": "D",
+       "text": "两组对边分别平行的四边形"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p579_q2",
+     "topicId": "mbj_p579",
+     "prompt": "正方形与矩形、菱形的关系是（　）",
+     "question": "正方形与矩形、菱形的关系是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "正方形既有矩形的特征（四个角都是直角、对角线相等），又有菱形的特征（四条边相等、对角线互相垂直），所以它既是特殊的矩形，又是特殊的菱形。反过来矩形、菱形都不是正方形。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "正方形是特殊的矩形，也是特殊的菱形"
+      },
+      {
+       "label": "B",
+       "text": "正方形与矩形、菱形没有关系"
+      },
+      {
+       "label": "C",
+       "text": "矩形是特殊的正方形"
+      },
+      {
+       "label": "D",
+       "text": "菱形是特殊的正方形"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p579_q3",
+     "topicId": "mbj_p579",
+     "prompt": "一个多边形的内角和是 1080 度，这个多边形有多少条边？",
+     "question": "一个多边形的内角和是 1080 度，这个多边形有多少条边？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "8",
+     "explanation": "设边数为 n，由内角和公式得（n-2）乘 180=1080，所以 n-2=6，n=8。也可用 1080 除以 180 再加 2 直接得到，注意不要忘记加 2。",
+     "subject": "math-bj",
+     "verify": "1080/180+2"
+    },
+    {
+     "id": "mbj_p579_q4",
+     "topicId": "mbj_p579",
+     "prompt": "两组对边分别____的四边形是平行四边形。",
+     "question": "两组对边分别____的四边形是平行四边形。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "平行",
+     "explanation": "这是平行四边形的定义，也是最基本的判定方法。学习中常用的其他判定还有两组对边分别相等、一组对边平行且相等、对角线互相平分，它们都可以由定义配合三角形全等推出来。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p579_q5",
+     "topicId": "mbj_p579",
+     "prompt": "请说明平行四边形、矩形、菱形、正方形之间的包含关系，并各举一条判定方法。",
+     "question": "请说明平行四边形、矩形、菱形、正方形之间的包含关系，并各举一条判定方法。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "平行四边形是两组对边分别平行的四边形；矩形是有一个角是直角的平行四边形，菱形是有一组邻边相等的平行四边形，正方形是有一个角是直角且有一组邻边相等的平行四边形。因此矩形、菱形都是特殊的平行四边形，正方形同时是特殊的矩形和特殊的菱形。判定方法举例：两组对边分别相等可判定平行四边形；对角线相等的平行四边形是矩形；对角线互相垂直的平行四边形是菱形；既是矩形又是菱形的四边形是正方形。",
+     "explanation": "本题考查四类四边形之间的逻辑关系，属于概念辨析而非记忆。作答要按「平行四边形加什么条件得到矩形、菱形，再加什么得到正方形」的顺序说明包含关系，并给每一类配一条判定，条理不清会失分。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p580",
+   "description": "理解多边形的边、顶点、内角、外角和对角线等概念，探索并掌握 n 边形的内角和等于（n-2）乘 180 度、任意多边形的外角和都等于 360 度，能运用这两个公式求边数、求角度、求对角线条数。",
+   "mastery_criteria": [
+    "能用内角和公式求多边形的边数或未知角",
+    "能说明多边形外角和恒为 360 度",
+    "能求从一个顶点出发的对角线条数"
+   ],
+   "misconceptions": [
+    "把内角和公式误记成 n 乘 180 度，多算了一个三角形",
+    "认为边数越多，外角和就越大",
+    "求对角线总条数时漏掉除以 2，把每条线数了两遍"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.19",
+    "quote": "了解公式的几何背景，能利用公式进行简单的计算和推理"
+   },
+   "questions": [
+    {
+     "id": "mbj_p580_q1",
+     "topicId": "mbj_p580",
+     "prompt": "四边形四个内角的度数之和是多少（　）",
+     "question": "四边形四个内角的度数之和是多少（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "C",
+     "explanation": "把四边形沿一条对角线分成两个三角形，每个三角形内角和是 180 度，所以四边形内角和是 2 乘 180=360 度。这正是公式（n-2）乘 180 在 n=4 时的结果。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "180 度"
+      },
+      {
+       "label": "B",
+       "text": "270 度"
+      },
+      {
+       "label": "C",
+       "text": "360 度"
+      },
+      {
+       "label": "D",
+       "text": "540 度"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p580_q2",
+     "topicId": "mbj_p580",
+     "prompt": "五边形的内角和是多少度？",
+     "question": "五边形的内角和是多少度？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "540",
+     "explanation": "由内角和公式，（5-2）乘 180=3 乘 180=540 度。也可以从五边形的一个顶点引对角线，把它分成 3 个三角形来理解。",
+     "subject": "math-bj",
+     "verify": "(5-2)*180"
+    },
+    {
+     "id": "mbj_p580_q3",
+     "topicId": "mbj_p580",
+     "prompt": "一个多边形的每个内角都等于 144 度，这个多边形有多少条边？",
+     "question": "一个多边形的每个内角都等于 144 度，这个多边形有多少条边？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "10",
+     "explanation": "每个内角是 144 度，则每个外角是 180-144=36 度。多边形的外角和恒为 360 度，所以边数为 360 除以 36=10。用外角和求边数比用内角和公式更简便。",
+     "subject": "math-bj",
+     "verify": "360/(180-144)"
+    },
+    {
+     "id": "mbj_p580_q4",
+     "topicId": "mbj_p580",
+     "prompt": "十边形的内角和是____度。",
+     "question": "十边形的内角和是____度。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "1440",
+     "explanation": "代入内角和公式，（10-2）乘 180=8 乘 180=1440 度。计算时先算括号里的 n-2，再乘 180，可以避免少乘一个 180。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p580_q5",
+     "topicId": "mbj_p580",
+     "prompt": "下列关于多边形内角和与外角和的说法中，正确的是（　）",
+     "question": "下列关于多边形内角和与外角和的说法中，正确的是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "多边形的外角和与边数无关，任何多边形的外角和都等于 360 度；内角和才随边数增加而增大。三角形的外角和同样是 360 度，而五边形内角和是 540 度，可见选项中的其他说法都错。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "多边形的外角和随边数的增加而增大"
+      },
+      {
+       "label": "B",
+       "text": "任意多边形的外角和都等于 360 度"
+      },
+      {
+       "label": "C",
+       "text": "三角形的外角和是 180 度"
+      },
+      {
+       "label": "D",
+       "text": "五边形的内角和是 720 度"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p580_q6",
+     "topicId": "mbj_p580",
+     "prompt": "一个多边形的内角和等于它的外角和的 3 倍，这个多边形有多少条边？",
+     "question": "一个多边形的内角和等于它的外角和的 3 倍，这个多边形有多少条边？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "8",
+     "explanation": "外角和恒为 360 度，所以内角和为 3 乘 360=1080 度。由（n-2）乘 180=1080 得 n-2=6，n=8。关键是记住外角和与边数无关，始终是 360 度。",
+     "subject": "math-bj",
+     "verify": "3*360/180+2"
+    },
+    {
+     "id": "mbj_p580_q7",
+     "topicId": "mbj_p580",
+     "prompt": "请说明多边形内角和公式（n-2）乘 180 度是怎样得出的，并解释其中的 n-2 表示什么。",
+     "question": "请说明多边形内角和公式（n-2）乘 180 度是怎样得出的，并解释其中的 n-2 表示什么。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "推导方法是从 n 边形的一个顶点出发，向与它不相邻的各个顶点引对角线。n 边形共有 n 个顶点，去掉这个顶点本身和与它相邻的两个顶点，还能连出 n-3 条对角线，把多边形分成 n-2 个三角形。每个三角形的内角和为 180 度，这些三角形的内角恰好拼成多边形的全部内角，所以内角和等于（n-2）乘 180 度。",
+     "explanation": "公式的几何背景是本题的重点，只会背公式不算掌握。作答必须写出从一个顶点引对角线、分成 n-2 个三角形这一步，并说明 n-2 的来历（n 个顶点去掉自身和两个相邻顶点），再乘 180 度得出结论。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p580_q8",
+     "topicId": "mbj_p580",
+     "prompt": "从 n 边形的一个顶点出发，可以画出的对角线共有（　）",
+     "question": "从 n 边形的一个顶点出发，可以画出的对角线共有（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "C",
+     "explanation": "从这个顶点出发，不能连向它自己和与它相邻的两个顶点，其余 n-3 个顶点都能连成对角线，所以是 n-3 条。求全部对角线的总条数时，还要用 n 乘（n-3）再除以 2。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "n 条"
+      },
+      {
+       "label": "B",
+       "text": "n-2 条"
+      },
+      {
+       "label": "C",
+       "text": "n-3 条"
+      },
+      {
+       "label": "D",
+       "text": "n 乘（n-3）条"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p581",
+   "description": "认识平行四边形的定义：两组对边分别平行的四边形；理解矩形、菱形、正方形都是特殊的平行四边形，学会从边、角、对角线三个方面区分这四类图形，明确它们之间的包含关系。",
+   "mastery_criteria": [
+    "能按边、角、对角线三方面说出四类图形的特征",
+    "能说出矩形、菱形、正方形的定义条件",
+    "能判断某个图形属于哪一类四边形"
+   ],
+   "misconceptions": [
+    "认为对角线相等的四边形就是矩形",
+    "把菱形说成「平行四边形加上四个角相等」",
+    "把「一组邻边相等」当成矩形的判定条件"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p581_q1",
+     "topicId": "mbj_p581",
+     "prompt": "下列说法中，属于菱形定义的是（　）",
+     "question": "下列说法中，属于菱形定义的是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "菱形是有一组邻边相等的平行四边形。定义必须建立在平行四边形的基础上：先保证是平行四边形，再加上邻边相等这一条件；若只说四条边相等，则要用判定定理去证，不属于定义。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "有一组邻边相等的平行四边形"
+      },
+      {
+       "label": "B",
+       "text": "有一个角是直角的平行四边形"
+      },
+      {
+       "label": "C",
+       "text": "对角线相等的平行四边形"
+      },
+      {
+       "label": "D",
+       "text": "对角线互相垂直的四边形"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p581_q2",
+     "topicId": "mbj_p581",
+     "prompt": "矩形具有而一般平行四边形不一定具有的性质是（　）",
+     "question": "矩形具有而一般平行四边形不一定具有的性质是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "对边平行、对角相等、对角线互相平分这三条，一般平行四边形都有；矩形的特殊之处在于四个角都是直角、对角线相等。所以「对角线相等」才是矩形独有的性质。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "对边平行"
+      },
+      {
+       "label": "B",
+       "text": "对角线互相平分"
+      },
+      {
+       "label": "C",
+       "text": "对角线相等"
+      },
+      {
+       "label": "D",
+       "text": "对角相等"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p581_q3",
+     "topicId": "mbj_p581",
+     "prompt": "下列说法中，正确的是（　）",
+     "question": "下列说法中，正确的是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "判定菱形要在平行四边形的前提下加上「对角线互相垂直」或「一组邻边相等」，所以 B 正确。有一个角是直角的四边形、对角线相等的四边形都不一定是矩形（等腰梯形对角线就相等）；四条边相等的四边形是菱形，不一定是正方形。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "有一个角是直角的四边形是矩形"
+      },
+      {
+       "label": "B",
+       "text": "对角线互相垂直的平行四边形是菱形"
+      },
+      {
+       "label": "C",
+       "text": "对角线相等的四边形是矩形"
+      },
+      {
+       "label": "D",
+       "text": "四条边都相等的四边形是正方形"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p581_q4",
+     "topicId": "mbj_p581",
+     "prompt": "正方形既是____，又是菱形。",
+     "question": "正方形既是____，又是菱形。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "矩形",
+     "explanation": "正方形同时满足矩形和菱形的条件：四个角都是直角，所以是矩形；四条边都相等，所以是菱形。填空处写「矩形」才与后面的「又是菱形」对应完整。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p581_q5",
+     "topicId": "mbj_p581",
+     "prompt": "菱形的边长为 5，一条对角线长为 6，则另一条对角线长是多少？",
+     "question": "菱形的边长为 5，一条对角线长为 6，则另一条对角线长是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "8",
+     "explanation": "菱形的对角线互相垂直平分，把菱形分成四个全等的直角三角形。每个三角形的斜边是 5，一条直角边是 6 的一半即 3，另一条直角边为 4，所以另一条对角线是 2 乘 4=8。",
+     "subject": "math-bj",
+     "verify": "2*(5**2-3**2)**0.5"
+    },
+    {
+     "id": "mbj_p581_q6",
+     "topicId": "mbj_p581",
+     "prompt": "请说明正方形为什么既是矩形又是菱形，并指出正方形具有而菱形不一定具有的一条性质。",
+     "question": "请说明正方形为什么既是矩形又是菱形，并指出正方形具有而菱形不一定具有的一条性质。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "正方形的定义是有一组邻边相等并且有一个角是直角的平行四边形。因为它有一个角是直角，满足矩形的条件，所以是矩形；因为它有一组邻边相等（进而四条边都相等），满足菱形的条件，所以是菱形。正方形具有而菱形不一定具有的性质是四个角都是直角、两条对角线相等；反过来，菱形具有的四条边相等、对角线互相垂直，正方形也都具备。",
+     "explanation": "本题要求说清「特殊」二字落在哪个条件上。作答应先由定义分别验证矩形条件（一个直角）与菱形条件（一组邻边相等），再举出菱形没有而正方形有的性质，只答「因为它是特殊的平行四边形」不算说明。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p581_q7",
+     "topicId": "mbj_p581",
+     "prompt": "矩形 ABCD 中，AB = 6，BC = 8，则对角线 AC 的长是多少？",
+     "question": "矩形 ABCD 中，AB = 6，BC = 8，则对角线 AC 的长是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "10",
+     "explanation": "矩形的四个角都是直角，所以在直角三角形 ABC 中，两条直角边为 6 和 8，由勾股定理得 AC 的平方等于 36 加 64 等于 100，所以 AC=10。矩形的两条对角线相等，BD 也等于 10。",
+     "subject": "math-bj",
+     "verify": "(6**2+8**2)**0.5"
+    },
+    {
+     "id": "mbj_p581_q8",
+     "topicId": "mbj_p581",
+     "prompt": "平行四边形是____对称图形，它的对称中心是对角线的交点。",
+     "question": "平行四边形是____对称图形，它的对称中心是对角线的交点。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "中心",
+     "explanation": "把平行四边形绕对角线的交点旋转 180 度后能与自身重合，所以它是中心对称图形，对称中心就是两条对角线的交点。注意这与轴对称不同：一般的平行四边形没有对称轴。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p582",
+   "description": "掌握平行四边形的性质：对边平行且相等，对角相等、邻角互补，对角线互相平分；掌握判定方法：两组对边分别平行或分别相等、一组对边平行且相等、对角线互相平分的四边形是平行四边形，并能进行证明与计算。",
+   "mastery_criteria": [
+    "能用平行四边形的性质求边长、角度和对角线长",
+    "能选择合适的判定方法证明一个四边形是平行四边形",
+    "能区分性质与判定在使用方向上的不同"
+   ],
+   "misconceptions": [
+    "把「一组对边平行」直接当成判定平行四边形的条件",
+    "认为平行四边形的两条对角线相等",
+    "证明时把要证的结论当作已知条件使用"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.15",
+    "quote": "通过具体实例，了解定义、命题、定理、推论的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p582_q1",
+     "topicId": "mbj_p582",
+     "prompt": "在平行四边形中，一组对角的大小关系是（　）",
+     "question": "在平行四边形中，一组对角的大小关系是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "平行四边形的两组对边分别平行，利用两直线平行、同旁内角互补可以推出相邻两角互补，进而得出对角相等。所以平行四边形的对角相等，邻角互补。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "互补"
+      },
+      {
+       "label": "B",
+       "text": "相等"
+      },
+      {
+       "label": "C",
+       "text": "互余"
+      },
+      {
+       "label": "D",
+       "text": "大小不确定"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p582_q2",
+     "topicId": "mbj_p582",
+     "prompt": "平行四边形 ABCD 中，角 A 等于 70 度，则角 B 等于多少度？",
+     "question": "平行四边形 ABCD 中，角 A 等于 70 度，则角 B 等于多少度？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "110",
+     "explanation": "在平行四边形中，相邻的两个内角互为补角，即角 A 加角 B 等于 180 度。所以角 B 等于 180-70=110 度；与角 A 相对的角 C 则等于 70 度。",
+     "subject": "math-bj",
+     "verify": "180-70"
+    },
+    {
+     "id": "mbj_p582_q3",
+     "topicId": "mbj_p582",
+     "prompt": "下列条件中，能判定四边形 ABCD 是平行四边形的是（　）",
+     "question": "下列条件中，能判定四边形 ABCD 是平行四边形的是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "两组对边分别相等是平行四边形的判定定理，B 正确。A、C 都是一组对边平行而另一组对边相等的情形，等腰梯形就可能满足，不能判定；D 中的条件推不出对边平行。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "AB 平行于 CD，AD = BC"
+      },
+      {
+       "label": "B",
+       "text": "AB = CD，AD = BC"
+      },
+      {
+       "label": "C",
+       "text": "AB = CD，AD 平行于 BC"
+      },
+      {
+       "label": "D",
+       "text": "角 A 等于角 B，角 C 等于角 D"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p582_q4",
+     "topicId": "mbj_p582",
+     "prompt": "平行四边形的两条对角线互相____。",
+     "question": "平行四边形的两条对角线互相____。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "平分",
+     "explanation": "平行四边形的对角线互相平分，即两条对角线的交点把每条对角线分成相等的两段。注意不能说成「对角线相等」，相等是矩形才具有的性质。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p582_q5",
+     "topicId": "mbj_p582",
+     "prompt": "平行四边形 ABCD 的周长是 40，AB = 12，则 BC 的长是多少？",
+     "question": "平行四边形 ABCD 的周长是 40，AB = 12，则 BC 的长是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "8",
+     "explanation": "平行四边形的对边相等，周长等于邻边之和的 2 倍。由 2 乘（AB+BC）=40 得 AB+BC=20，所以 BC=20-12=8。",
+     "subject": "math-bj",
+     "verify": "(40-2*12)/2"
+    },
+    {
+     "id": "mbj_p582_q6",
+     "topicId": "mbj_p582",
+     "prompt": "平行四边形 ABCD 的对角线 AC、BD 相交于点 O，AC = 10，BD = 16，则 AO 与 BO 的长度之和是多少？",
+     "question": "平行四边形 ABCD 的对角线 AC、BD 相交于点 O，AC = 10，BD = 16，则 AO 与 BO 的长度之和是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "13",
+     "explanation": "平行四边形的对角线互相平分，所以 AO 是 AC 的一半，等于 5；BO 是 BD 的一半，等于 8。因此 AO+BO=5+8=13。若忘记「平分」而把整条对角线相加，就会得到错误结果。",
+     "subject": "math-bj",
+     "verify": "10/2+16/2"
+    },
+    {
+     "id": "mbj_p582_q7",
+     "topicId": "mbj_p582",
+     "prompt": "请写出平行四边形对角线的性质，并说明「对角线互相平分的四边形是平行四边形」这一判定的推理思路。",
+     "question": "请写出平行四边形对角线的性质，并说明「对角线互相平分的四边形是平行四边形」这一判定的推理思路。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "平行四边形的两条对角线互相平分，即交点把每条对角线分成相等的两段。反过来，若四边形 ABCD 的对角线 AC、BD 交于点 O，且 AO=CO、BO=DO，则可利用对顶角相等，证得三角形 AOB 与三角形 COD 全等，从而 AB=CD、AB 平行于 CD；同理可得 AD 平行于 BC、AD=BC。由两组对边分别相等（或分别平行），即可判定这个四边形是平行四边形。",
+     "explanation": "性质是由图形推结论，判定是由条件推图形，方向相反。作答要先写性质，再用对顶角相等证三角形全等，由对应边相等或平行得出判定，跳过全等这一步就缺少推理依据。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p582_q8",
+     "topicId": "mbj_p582",
+     "prompt": "平行四边形 ABCD 中，角 A 与角 B 的度数之比为 1 比 2，则角 A 的度数是（　）",
+     "question": "平行四边形 ABCD 中，角 A 与角 B 的度数之比为 1 比 2，则角 A 的度数是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "C",
+     "explanation": "平行四边形的邻角互补，设角 A 为 x 度，则角 B 为 2x 度，由 x+2x=180 得 x=60。所以角 A 等于 60 度，角 B 等于 120 度，对角相等可推出角 C 也是 60 度。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "30 度"
+      },
+      {
+       "label": "B",
+       "text": "45 度"
+      },
+      {
+       "label": "C",
+       "text": "60 度"
+      },
+      {
+       "label": "D",
+       "text": "120 度"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p583",
+   "description": "掌握矩形、菱形、正方形的性质与判定：矩形的四个角是直角、对角线相等；菱形的四条边相等、对角线互相垂直且每条对角线平分一组对角；正方形兼具两者性质。能按已知条件选择合适的判定方法完成计算与证明。",
+   "mastery_criteria": [
+    "能用矩形、菱形的性质求边长、角度和对角线",
+    "能选择合适的判定方法证明矩形、菱形或正方形",
+    "能说明正方形与矩形、菱形之间的条件关系"
+   ],
+   "misconceptions": [
+    "认为对角线互相垂直的四边形就是菱形，忽略平行四边形前提",
+    "认为矩形的对角线互相垂直，把两类图形的性质混淆",
+    "证明正方形时只证出是矩形就结束，漏掉邻边相等"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p583_q1",
+     "topicId": "mbj_p583",
+     "prompt": "关于菱形四条边的长度，下列说法正确的是（　）",
+     "question": "关于菱形四条边的长度，下列说法正确的是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "菱形是有一组邻边相等的平行四边形，由对边相等可推出四条边全都相等。四条边相等也常被用作判定菱形的依据。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "都相等"
+      },
+      {
+       "label": "B",
+       "text": "只有对边相等"
+      },
+      {
+       "label": "C",
+       "text": "都不相等"
+      },
+      {
+       "label": "D",
+       "text": "只有一组邻边相等"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p583_q2",
+     "topicId": "mbj_p583",
+     "prompt": "矩形 ABCD 的两条对角线相交于点 O，AC = 10，则 BD 的长是多少？",
+     "question": "矩形 ABCD 的两条对角线相交于点 O，AC = 10，则 BD 的长是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "10",
+     "explanation": "矩形的两条对角线相等，所以 BD=AC=10。矩形被对角线分成四个等腰三角形，交点 O 到四个顶点的距离都是 5，这一性质在计算中经常用到。",
+     "subject": "math-bj",
+     "verify": "10"
+    },
+    {
+     "id": "mbj_p583_q3",
+     "topicId": "mbj_p583",
+     "prompt": "菱形的两条对角线长分别为 6 和 8，则菱形的边长是多少？",
+     "question": "菱形的两条对角线长分别为 6 和 8，则菱形的边长是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "5",
+     "explanation": "菱形的对角线互相垂直平分，把菱形分成四个全等的直角三角形，两条直角边分别是 3 和 4，由勾股定理得边长为 5。菱形的面积还可用两条对角线乘积的一半，即 6 乘 8 除以 2=24。",
+     "subject": "math-bj",
+     "verify": "(3**2+4**2)**0.5"
+    },
+    {
+     "id": "mbj_p583_q4",
+     "topicId": "mbj_p583",
+     "prompt": "矩形的四个角都是____。",
+     "question": "矩形的四个角都是____。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "直角",
+     "explanation": "矩形是有一个角是直角的平行四边形，由平行线的性质和邻角互补可推出其余三个角也都是直角。四个角都是直角是矩形区别于一般平行四边形的最基本特征。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p583_q5",
+     "topicId": "mbj_p583",
+     "prompt": "在平行四边形 ABCD 中，添加下列条件后能判定它是矩形的是（　）",
+     "question": "在平行四边形 ABCD 中，添加下列条件后能判定它是矩形的是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "C",
+     "explanation": "「对角线相等的平行四边形是矩形」是矩形的判定定理，C 正确。AC 垂直于 BD 或 AB=BC 判定的是菱形，角 A 等于角 C 是平行四边形本来就有的性质，推不出矩形。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "AC 垂直于 BD"
+      },
+      {
+       "label": "B",
+       "text": "AB = BC"
+      },
+      {
+       "label": "C",
+       "text": "AC = BD"
+      },
+      {
+       "label": "D",
+       "text": "角 A 等于角 C"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p583_q6",
+     "topicId": "mbj_p583",
+     "prompt": "下列命题中，正确的是（　）",
+     "question": "下列命题中，正确的是（　）",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "B",
+     "explanation": "矩形的判定定理由平行四边形加「对角线相等」或「有一个角是直角」构成，所以 B 正确。对角线互相垂直的四边形不一定是菱形（需先是平行四边形），对角线互相平分的四边形只是平行四边形，有一个角是直角的平行四边形是矩形而不是菱形。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "对角线互相垂直的四边形是菱形"
+      },
+      {
+       "label": "B",
+       "text": "对角线相等的平行四边形是矩形"
+      },
+      {
+       "label": "C",
+       "text": "对角线互相平分的四边形是正方形"
+      },
+      {
+       "label": "D",
+       "text": "有一个角是直角的平行四边形是菱形"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p583_q7",
+     "topicId": "mbj_p583",
+     "prompt": "请说明判定一个平行四边形是正方形需要哪两类条件，并写出推理步骤。",
+     "question": "请说明判定一个平行四边形是正方形需要哪两类条件，并写出推理步骤。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "需要在平行四边形的基础上同时得到「是矩形」和「是菱形」两类条件：一类保证角，例如有一个角是直角或对角线相等；另一类保证边，例如有一组邻边相等或对角线互相垂直。推理时先由角的或对角线的条件证得它是矩形，再由边的或对角线的条件证得它是菱形，最后指出既是矩形又是菱形的四边形就是正方形。若只证出是矩形就停下，条件不足，结论不成立。",
+     "explanation": "正方形需要同时具备矩形和菱形两类条件，只满足一类只能得到矩形或菱形。作答要分「角的条件」与「边的条件」两组说明，并写出先证矩形、再证菱形、最后合并的步骤，漏掉任一类都会降为矩形或菱形。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p583_q8",
+     "topicId": "mbj_p583",
+     "prompt": "菱形具有而矩形不一定具有的性质是（　）",
+     "question": "菱形具有而矩形不一定具有的性质是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "C",
+     "explanation": "菱形特有的性质是四条边相等、对角线互相垂直，且每条对角线平分一组对角；矩形特有的性质是四个角都是直角、对角线相等。对角线互相平分和对边平行且相等是两类图形共有的性质。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "对角线互相平分"
+      },
+      {
+       "label": "B",
+       "text": "对边平行且相等"
+      },
+      {
+       "label": "C",
+       "text": "对角线互相垂直"
+      },
+      {
+       "label": "D",
+       "text": "四个角都是直角"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

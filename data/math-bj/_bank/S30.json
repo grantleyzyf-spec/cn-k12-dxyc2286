@@ -1,0 +1,2666 @@
+{
+ "shard": "S30",
+ "subject": "math-bj",
+ "book": "八上",
+ "seg": "初中",
+ "grade": 8,
+ "semester": "上",
+ "points": [
+  {
+   "topicId": "mbj_p555",
+   "description": "学习三角形内角和定理、外角与内角的关系以及三边关系定理，会用它们求三角形中未知角的度数、比较角的大小、判断三条线段能否组成三角形，并能说明两边之和大于第三边的道理。",
+   "mastery_criteria": [
+    "说出三角形内角和是180度并据此求未知内角",
+    "用外角等于不相邻两内角之和计算外角",
+    "用三边关系判断三条线段能否组成三角形"
+   ],
+   "misconceptions": [
+    "认为三角形越大内角和越大",
+    "用两边之和等于第三边也去围三角形",
+    "把外角当成与它相邻内角的补角来求不相邻内角"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.25",
+    "quote": "证明三角形的任意两边之和大于第三边"
+   },
+   "questions": [
+    {
+     "id": "mbj_p555_q1",
+     "topicId": "mbj_p555",
+     "prompt": "在一个三角形中，已知两个内角分别是50度和60度，第三个内角的度数是多少？",
+     "question": "在一个三角形中，已知两个内角分别是50度和60度，第三个内角的度数是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "三角形三个内角的和是180度，所以第三个角等于180减50减60，得70度。",
+     "options": [
+      {
+       "label": "A",
+       "text": "70度"
+      },
+      {
+       "label": "B",
+       "text": "60度"
+      },
+      {
+       "label": "C",
+       "text": "80度"
+      },
+      {
+       "label": "D",
+       "text": "130度"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p555_q2",
+     "topicId": "mbj_p555",
+     "prompt": "一个等腰三角形的两条边长分别是3和7，它的周长是多少？",
+     "question": "一个等腰三角形的两条边长分别是3和7，它的周长是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "如果腰是3，则3加3等于6小于7，两边之和不大于第三边，围不成三角形；所以腰只能是7，周长是7加7加3等于17。",
+     "answer": "17",
+     "verify": "7*2+3"
+    },
+    {
+     "id": "mbj_p555_q3",
+     "topicId": "mbj_p555",
+     "prompt": "三角形的两条边长分别是5和9，第三条边长x的取值范围是什么？",
+     "question": "三角形的两条边长分别是5和9，第三条边长x的取值范围是什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "第三边要同时满足大于两边之差、小于两边之和，即大于9减5得4，小于9加5得14。",
+     "options": [
+      {
+       "label": "A",
+       "text": "5<x<9"
+      },
+      {
+       "label": "B",
+       "text": "4<x<14"
+      },
+      {
+       "label": "C",
+       "text": "x>4"
+      },
+      {
+       "label": "D",
+       "text": "0<x<14"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p555_q4",
+     "topicId": "mbj_p555",
+     "prompt": "三角形ABC中，角A等于45度，角B等于65度，角C的外角是多少度？",
+     "question": "三角形ABC中，角A等于45度，角B等于65度，角C的外角是多少度？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "三角形的外角等于与它不相邻的两个内角之和，所以角C的外角是45加65等于110度。",
+     "answer": "110",
+     "verify": "45+65"
+    },
+    {
+     "id": "mbj_p555_q5",
+     "topicId": "mbj_p555",
+     "prompt": "三角形ABC中，角B与角C的平分线交于点P，若角A等于80度，角BPC的度数是多少？",
+     "question": "三角形ABC中，角B与角C的平分线交于点P，若角A等于80度，角BPC的度数是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "角B与角C的和是180减80得100度，它们在点P处各被平分，所以角PBC与角PCB的和是50度，角BPC等于180减50得130度。",
+     "options": [
+      {
+       "label": "A",
+       "text": "100度"
+      },
+      {
+       "label": "B",
+       "text": "115度"
+      },
+      {
+       "label": "C",
+       "text": "130度"
+      },
+      {
+       "label": "D",
+       "text": "160度"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p555_q6",
+     "topicId": "mbj_p555",
+     "prompt": "三角形ABC中，角A等于40度，角B等于角C，角B的度数是多少？",
+     "question": "三角形ABC中，角A等于40度，角B等于角C，角B的度数是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "两个底角相等，用180减去40再除以2，得70度。",
+     "answer": "70"
+    },
+    {
+     "id": "mbj_p555_q7",
+     "topicId": "mbj_p555",
+     "prompt": "请说明为什么三角形的任意两边之和一定大于第三边。",
+     "question": "请说明为什么三角形的任意两边之和一定大于第三边。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "把三角形的两边看成一条折线，第三边看成连接同样两点的线段，由两点之间线段最短即可说明折线长大于线段长，这正是三边关系的本质。",
+     "answer": "以三角形ABC为例，从顶点A到顶点B，沿边AB走是线段，沿边AC再沿CB走是折线。两点之间线段最短，所以AC加CB大于AB。同理可得另外两组关系，因此任意两边之和大于第三边。"
+    },
+    {
+     "id": "mbj_p555_q8",
+     "topicId": "mbj_p555",
+     "prompt": "一个三角形的两边长是3和5，第三边的长是整数，第三边最长可以取多少？",
+     "question": "一个三角形的两边长是3和5，第三边的长是整数，第三边最长可以取多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "第三边必须小于3加5等于8，所以整数最大只能是7。若取8，则3加5等于8，两边之和等于第三边，三条线段不能围成三角形。",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "8"
+      },
+      {
+       "label": "C",
+       "text": "9"
+      },
+      {
+       "label": "D",
+       "text": "7"
+      }
+     ],
+     "answer": "D"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p556",
+   "description": "认识三角形的中线、高和角平分线，能准确画出并辨认这三类线段，知道三条中线、三条高所在直线、三条角平分线的位置关系，会用中线平分面积、用高求三角形面积。",
+   "mastery_criteria": [
+    "准确画出三角形的高、中线、角平分线",
+    "指出三条中线的交点及高所在直线的交点",
+    "用中线平分三角形面积求面积"
+   ],
+   "misconceptions": [
+    "把三角形的高画成射线或直线",
+    "认为钝角三角形没有高或只有一条高",
+    "把中线和角平分线混为同一条线段"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.23",
+    "quote": "角平分线等概念，了解三角形的稳定性"
+   },
+   "questions": [
+    {
+     "id": "mbj_p556_q1",
+     "topicId": "mbj_p556",
+     "prompt": "三角形的三条中线相交于一点，这个点叫做三角形的什么心？",
+     "question": "三角形的三条中线相交于一点，这个点叫做三角形的什么心？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "三条中线的交点是重心；三条高所在直线的交点是垂心，三条角平分线的交点是内心。",
+     "options": [
+      {
+       "label": "A",
+       "text": "重心"
+      },
+      {
+       "label": "B",
+       "text": "垂心"
+      },
+      {
+       "label": "C",
+       "text": "内心"
+      },
+      {
+       "label": "D",
+       "text": "外心"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p556_q2",
+     "topicId": "mbj_p556",
+     "prompt": "从三角形的一个顶点向它的对边所在直线作垂线，顶点和垂足之间的线段叫做三角形的什么？",
+     "question": "从三角形的一个顶点向它的对边所在直线作垂线，顶点和垂足之间的线段叫做三角形的什么？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "这条线段与对边垂直，叫做三角形的高，它是线段而不是射线或直线。",
+     "answer": "高"
+    },
+    {
+     "id": "mbj_p556_q3",
+     "topicId": "mbj_p556",
+     "prompt": "在三角形ABC中，AD是BC边上的中线，三角形ABC的面积是24，三角形ABD的面积是多少？",
+     "question": "在三角形ABC中，AD是BC边上的中线，三角形ABC的面积是24，三角形ABD的面积是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "中线把底边分成相等的两段，两个三角形的高相同，所以面积相等，三角形ABD的面积是24的一半，即12。",
+     "answer": "12",
+     "verify": "24/2"
+    },
+    {
+     "id": "mbj_p556_q4",
+     "topicId": "mbj_p556",
+     "prompt": "下列关于三角形中主要线段的说法，正确的是哪一个？",
+     "question": "下列关于三角形中主要线段的说法，正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "角平分线是线段不是射线；钝角三角形有两条高落在形外；任何三角形都有三条高；中线是线段且三条中线交于形内一点。",
+     "options": [
+      {
+       "label": "A",
+       "text": "三角形的角平分线是一条射线"
+      },
+      {
+       "label": "B",
+       "text": "三角形的中线是线段，三条中线交于三角形内一点"
+      },
+      {
+       "label": "C",
+       "text": "钝角三角形的高都在三角形内部"
+      },
+      {
+       "label": "D",
+       "text": "直角三角形只有一条高"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p556_q5",
+     "topicId": "mbj_p556",
+     "prompt": "三角形ABC中，AD是BC边上的中线，AB等于8，AC等于6，三角形ABD与三角形ACD的周长之差是多少？",
+     "question": "三角形ABC中，AD是BC边上的中线，AB等于8，AC等于6，三角形ABD与三角形ACD的周长之差是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "两个三角形的周长都含公共边AD和相等的中线两段BD与DC，所以周长之差就等于AB与AC之差，即8减6等于2。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "14"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p556_q6",
+     "topicId": "mbj_p556",
+     "prompt": "下列图形中，具有稳定性的是哪一个？",
+     "question": "下列图形中，具有稳定性的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "三角形三边确定后形状和大小就唯一确定，具有稳定性；边数更多的多边形受到外力容易变形。",
+     "options": [
+      {
+       "label": "A",
+       "text": "四边形"
+      },
+      {
+       "label": "B",
+       "text": "五边形"
+      },
+      {
+       "label": "C",
+       "text": "六边形"
+      },
+      {
+       "label": "D",
+       "text": "三角形"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p556_q7",
+     "topicId": "mbj_p556",
+     "prompt": "钝角三角形的三条高分别在什么位置？请说明钝角三角形高的分布特点。",
+     "question": "钝角三角形的三条高分别在什么位置？请说明钝角三角形高的分布特点。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "判断高的位置要看垂足落在对边上还是对边的延长线上，钝角三角形恰有两条高的垂足在形外，这是与锐角三角形最重要的区别。",
+     "answer": "钝角所在顶点向对边所作的高，垂足在对边上，这条高在三角形内部；两个锐角顶点向对边作高时，垂足落在对边的延长线上，所以这两条高在三角形外部。三条高所在的直线仍然交于三角形外一点。"
+    },
+    {
+     "id": "mbj_p556_q8",
+     "topicId": "mbj_p556",
+     "prompt": "等腰三角形ABC中，AB等于AC等于10，BC等于12，底边BC上的中线长是多少？",
+     "question": "等腰三角形ABC中，AB等于AC等于10，BC等于12，底边BC上的中线长是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "底边上的中线也是底边上的高，它把三角形分成两个直角三角形，直角边分别是6和所求的中线，由勾股定理得中线长为10的平方减6的平方再开平方，等于8。",
+     "answer": "8",
+     "verify": "(10*10-6*6)**0.5"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p557",
+   "description": "理解全等三角形的概念，知道全等三角形能够完全重合，能按字母顺序找出对应边和对应角，会用对应边相等、对应角相等求未知的边和角，知道全等三角形的周长、面积相等。",
+   "mastery_criteria": [
+    "按对应顶点顺序写出全等三角形并找出对应边角",
+    "用对应角相等求未知角",
+    "用对应边相等求三角形的周长或边长"
+   ],
+   "misconceptions": [
+    "认为全等三角形面积相等就一定全等",
+    "写全等符号时字母顺序随意，导致对应边找错",
+    "把相邻的边角误当成对应边对应角"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.26",
+    "quote": "理解全等三角形的概念，能识别全等三角形中的对应边、对应角"
+   },
+   "questions": [
+    {
+     "id": "mbj_p557_q1",
+     "topicId": "mbj_p557",
+     "prompt": "两个三角形全等时，它们的对应边和对应角分别有什么关系？",
+     "question": "两个三角形全等时，它们的对应边和对应角分别有什么关系？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "全等意味着两个三角形能够完全重合，所以对应边相等、对应角相等，周长和面积也都相等。",
+     "options": [
+      {
+       "label": "A",
+       "text": "对应边相等，对应角相等"
+      },
+      {
+       "label": "B",
+       "text": "对应边相等，对应角不一定相等"
+      },
+      {
+       "label": "C",
+       "text": "对应角相等，对应边成比例"
+      },
+      {
+       "label": "D",
+       "text": "周长相等，但面积不一定相等"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p557_q2",
+     "topicId": "mbj_p557",
+     "prompt": "若三角形ABC全等于三角形DEF，那么边AB的对应边是哪一条？",
+     "question": "若三角形ABC全等于三角形DEF，那么边AB的对应边是哪一条？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "全等符号两侧的字母按对应顶点书写，A对应D、B对应E，所以AB的对应边是DE。",
+     "answer": "DE"
+    },
+    {
+     "id": "mbj_p557_q3",
+     "topicId": "mbj_p557",
+     "prompt": "已知三角形ABC全等于三角形DEF，角A等于50度，角B等于60度，角F等于多少度？",
+     "question": "已知三角形ABC全等于三角形DEF，角A等于50度，角B等于60度，角F等于多少度？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "先由内角和求出角C等于180减50减60，得70度；角F与角C是对应角，所以角F也是70度。",
+     "options": [
+      {
+       "label": "A",
+       "text": "50度"
+      },
+      {
+       "label": "B",
+       "text": "70度"
+      },
+      {
+       "label": "C",
+       "text": "60度"
+      },
+      {
+       "label": "D",
+       "text": "120度"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p557_q4",
+     "topicId": "mbj_p557",
+     "prompt": "三角形ABC全等于三角形DEF，AB等于5，BC等于7，AC等于8，三角形DEF的周长是多少？",
+     "question": "三角形ABC全等于三角形DEF，AB等于5，BC等于7，AC等于8，三角形DEF的周长是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "全等三角形的三组对应边分别相等，所以周长也相等，原三角形的周长是5加7加8等于20。",
+     "answer": "20",
+     "verify": "5+7+8"
+    },
+    {
+     "id": "mbj_p557_q5",
+     "topicId": "mbj_p557",
+     "prompt": "两个三角形全等，下列说法中错误的是哪一个？",
+     "question": "两个三角形全等，下列说法中错误的是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "全等三角形中对应角所对的边就是对应边，必然相等，所以第四种说法错误；前三种说法都能由全等推出。",
+     "options": [
+      {
+       "label": "A",
+       "text": "它们的周长相等"
+      },
+      {
+       "label": "B",
+       "text": "它们的面积相等"
+      },
+      {
+       "label": "C",
+       "text": "对应角所对的边不一定相等"
+      },
+      {
+       "label": "D",
+       "text": "对应边上的中线相等"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p557_q6",
+     "topicId": "mbj_p557",
+     "prompt": "把一个三角形沿一条直线翻折后得到的新三角形，与原三角形是什么关系？",
+     "question": "把一个三角形沿一条直线翻折后得到的新三角形，与原三角形是什么关系？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "翻折是轴对称变换，只改变图形的位置，不改变形状和大小，所以得到的三角形与原三角形全等。",
+     "options": [
+      {
+       "label": "A",
+       "text": "相似但不全等"
+      },
+      {
+       "label": "B",
+       "text": "面积相等但不全等"
+      },
+      {
+       "label": "C",
+       "text": "形状相同、大小不同"
+      },
+      {
+       "label": "D",
+       "text": "全等"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p557_q7",
+     "topicId": "mbj_p557",
+     "prompt": "用符号表示三角形ABC全等于三角形DEF时，字母的书写顺序有什么要求？为什么？",
+     "question": "用符号表示三角形ABC全等于三角形DEF时，字母的书写顺序有什么要求？为什么？",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "全等符号不只是记号，它把对应关系编码在字母顺序里，书写规范是正确找对应边、对应角的前提。",
+     "answer": "字母必须按对应顶点依次书写，即A对应D、B对应E、C对应F。因为全等符号两侧的字母顺序就表示对应关系，顺序写错会把对应边和对应角全部弄错，后面的推理就会用错条件。"
+    },
+    {
+     "id": "mbj_p557_q8",
+     "topicId": "mbj_p557",
+     "prompt": "三角形ABC全等于三角形DEF，三角形ABC的周长是24，DE等于8，EF等于9，DF的长是多少？",
+     "question": "三角形ABC全等于三角形DEF，三角形ABC的周长是24，DE等于8，EF等于9，DF的长是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "DE对应AB，EF对应BC，DF对应AC。AC等于周长减去另外两边之和，即24减8减9等于7，所以DF等于7。",
+     "answer": "7",
+     "verify": "24-8-9"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p558",
+   "description": "掌握边边边、边角边、角边角、角角边四种判定三角形全等的方法，能根据已知条件选择合适的方法，会补充缺少的条件完成证明，并能用全等解决测量距离等实际问题。",
+   "mastery_criteria": [
+    "说出四种全等判定方法及各自需要的条件",
+    "根据已知边角补出能用某方法判定的条件",
+    "用全等三角形的性质求线段长度"
+   ],
+   "misconceptions": [
+    "认为三个角分别相等就能判定全等",
+    "把两边及其中一边的对角当成边角边使用",
+    "证明时把对应关系写乱，边角不对应"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.29",
+    "quote": "三边分别相等的两个三角形全等"
+   },
+   "questions": [
+    {
+     "id": "mbj_p558_q1",
+     "topicId": "mbj_p558",
+     "prompt": "下列各组条件中，能判定两个三角形全等的是哪一组？",
+     "question": "下列各组条件中，能判定两个三角形全等的是哪一组？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "两边及其夹角分别相等可以用边角边判定全等；只有角相等或只有边相等都无法确定三角形的大小和形状。",
+     "options": [
+      {
+       "label": "A",
+       "text": "两边及其夹角分别相等"
+      },
+      {
+       "label": "B",
+       "text": "三个角分别相等"
+      },
+      {
+       "label": "C",
+       "text": "一条边和一个角分别相等"
+      },
+      {
+       "label": "D",
+       "text": "两条边分别相等"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p558_q2",
+     "topicId": "mbj_p558",
+     "prompt": "三边分别相等的两个三角形全等，这个判定方法简写成什么？",
+     "question": "三边分别相等的两个三角形全等，这个判定方法简写成什么？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "三边分别相等的判定方法简写为SSS，也读作边边边，是最基本的全等判定方法。",
+     "answer": "SSS"
+    },
+    {
+     "id": "mbj_p558_q3",
+     "topicId": "mbj_p558",
+     "prompt": "已知AB等于DE，BC等于EF，要按边角边判定两个三角形全等，还需要补充哪个条件？",
+     "question": "已知AB等于DE，BC等于EF，要按边角边判定两个三角形全等，还需要补充哪个条件？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "AB与BC的夹角是角B，DE与EF的夹角是角E，只有补上角B等于角E，这两组边才构成两边及其夹角。",
+     "options": [
+      {
+       "label": "A",
+       "text": "角A等于角D"
+      },
+      {
+       "label": "B",
+       "text": "角B等于角E"
+      },
+      {
+       "label": "C",
+       "text": "角C等于角F"
+      },
+      {
+       "label": "D",
+       "text": "AC等于DF"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p558_q4",
+     "topicId": "mbj_p558",
+     "prompt": "三角形ABC的三边分别是6、8、10，三角形DEF的三边也是6、8、10，三角形DEF的周长是多少？",
+     "question": "三角形ABC的三边分别是6、8、10，三角形DEF的三边也是6、8、10，三角形DEF的周长是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "两个三角形三边分别相等，由边边边可知它们全等，周长等于6加8加10等于24。",
+     "answer": "24",
+     "verify": "6+8+10"
+    },
+    {
+     "id": "mbj_p558_q5",
+     "topicId": "mbj_p558",
+     "prompt": "池塘两端A、B两点不能直接到达，在池塘外取点O，使AO等于CO，BO等于DO，测得CD等于18米，AB的长是多少米？",
+     "question": "池塘两端A、B两点不能直接到达，在池塘外取点O，使AO等于CO，BO等于DO，测得CD等于18米，AB的长是多少米？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "角AOB与角COD是对顶角，必然相等；再加上AO等于CO、BO等于DO，可用边角边判定两个三角形全等，所以AB等于CD等于18米。",
+     "options": [
+      {
+       "label": "A",
+       "text": "9米"
+      },
+      {
+       "label": "B",
+       "text": "36米"
+      },
+      {
+       "label": "C",
+       "text": "18米"
+      },
+      {
+       "label": "D",
+       "text": "不能确定"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p558_q6",
+     "topicId": "mbj_p558",
+     "prompt": "用直尺和圆规作一个角等于已知角，作图的依据是哪种全等判定？",
+     "question": "用直尺和圆规作一个角等于已知角，作图的依据是哪种全等判定？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "作图时两条边上的截取长度分别相等，两弧的半径也相等，得到的两个三角形三边分别相等，依据是边边边。",
+     "options": [
+      {
+       "label": "A",
+       "text": "SAS"
+      },
+      {
+       "label": "B",
+       "text": "ASA"
+      },
+      {
+       "label": "C",
+       "text": "AAS"
+      },
+      {
+       "label": "D",
+       "text": "SSS"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p558_q7",
+     "topicId": "mbj_p558",
+     "prompt": "判定两个三角形全等的方法主要有哪些？每一种分别需要几个条件？",
+     "question": "判定两个三角形全等的方法主要有哪些？每一种分别需要几个条件？",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "四种判定方法都是三个条件，关键区别在于边角的位置关系，只有角没有边时无法确定三角形大小。",
+     "answer": "常用的有四种：边边边，需要三边分别相等；边角边，需要两边及其夹角分别相等；角边角，需要两角及其夹边分别相等；角角边，需要两角及其中一角的对边分别相等。每种都是三个条件，并且至少要有一组边相等。"
+    },
+    {
+     "id": "mbj_p558_q8",
+     "topicId": "mbj_p558",
+     "prompt": "三角形ABC中，AD是BC边上的中线，延长AD到点E，使DE等于AD，连结BE，若AC等于6，BE的长是多少？",
+     "question": "三角形ABC中，AD是BC边上的中线，延长AD到点E，使DE等于AD，连结BE，若AC等于6，BE的长是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "AD等于DE，角ADC与角EDB是对顶角，BD等于DC，由边角边可得两个三角形全等，所以BE等于AC等于6。",
+     "answer": "6",
+     "verify": "3+3"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p559",
+   "description": "理解等腰三角形和等边三角形的概念，掌握等边对等角、三线合一等性质以及等角对等边的判定，会根据已知角或已知边求等腰三角形的角与边长，并能判断三条线段能否构成等腰三角形。",
+   "mastery_criteria": [
+    "用等边对等角求等腰三角形的底角或顶角",
+    "用三线合一求底边上的高或中线",
+    "判断已知三边能否构成等腰三角形"
+   ],
+   "misconceptions": [
+    "认为等腰三角形任意一个角都可以当底角",
+    "已知两边求周长时忽略三边关系，两种情形都算",
+    "把等腰三角形的对称轴说成底边上的中线这条线段"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.62",
+    "quote": "理解轴对称图形的概念，探索等腰三角形"
+   },
+   "questions": [
+    {
+     "id": "mbj_p559_q1",
+     "topicId": "mbj_p559",
+     "prompt": "等腰三角形中，两条腰相等，那么两个底角之间是什么关系？",
+     "question": "等腰三角形中，两条腰相等，那么两个底角之间是什么关系？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "由等边对等角，两条相等的腰所对的角就是两个底角，所以它们相等。",
+     "options": [
+      {
+       "label": "A",
+       "text": "相等"
+      },
+      {
+       "label": "B",
+       "text": "互余"
+      },
+      {
+       "label": "C",
+       "text": "互补"
+      },
+      {
+       "label": "D",
+       "text": "没有确定关系"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p559_q2",
+     "topicId": "mbj_p559",
+     "prompt": "等腰三角形的顶角是80度，它的一个底角是多少度？",
+     "question": "等腰三角形的顶角是80度，它的一个底角是多少度？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "两个底角相等，用180度减去顶角80度再除以2，得50度。",
+     "answer": "50",
+     "verify": "(180-80)/2"
+    },
+    {
+     "id": "mbj_p559_q3",
+     "topicId": "mbj_p559",
+     "prompt": "等腰三角形的一个内角是100度，它的一个底角是多少度？",
+     "question": "等腰三角形的一个内角是100度，它的一个底角是多少度？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "如果100度是底角，两个底角之和已是200度，超过内角和，不可能；所以100度只能是顶角，底角是180减100再除以2，等于40度。",
+     "options": [
+      {
+       "label": "A",
+       "text": "100度"
+      },
+      {
+       "label": "B",
+       "text": "40度"
+      },
+      {
+       "label": "C",
+       "text": "50度"
+      },
+      {
+       "label": "D",
+       "text": "80度"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p559_q4",
+     "topicId": "mbj_p559",
+     "prompt": "等腰三角形的周长是20，底边长6，一条腰长是多少？",
+     "question": "等腰三角形的周长是20，底边长6，一条腰长是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "两条腰相等，腰长是20减6再除以2等于7；7、7、6满足三边关系，能组成三角形。",
+     "answer": "7",
+     "verify": "(20-6)/2"
+    },
+    {
+     "id": "mbj_p559_q5",
+     "topicId": "mbj_p559",
+     "prompt": "三角形ABC中，AB等于AC，角A等于36度，BD平分角ABC交AC于D，图中等腰三角形共有几个？",
+     "question": "三角形ABC中，AB等于AC，角A等于36度，BD平分角ABC交AC于D，图中等腰三角形共有几个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "两个底角都是72度，BD平分后角ABD与角DBC都是36度。于是三角形ABC、三角形ABD、三角形BCD都是等腰三角形，共3个。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1个"
+      },
+      {
+       "label": "B",
+       "text": "2个"
+      },
+      {
+       "label": "C",
+       "text": "3个"
+      },
+      {
+       "label": "D",
+       "text": "4个"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p559_q6",
+     "topicId": "mbj_p559",
+     "prompt": "等边三角形的每一个内角是多少度？",
+     "question": "等边三角形的每一个内角是多少度？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "等边三角形三个内角相等，它们的和是180度，所以每个内角是180除以3等于60度。",
+     "options": [
+      {
+       "label": "A",
+       "text": "45度"
+      },
+      {
+       "label": "B",
+       "text": "90度"
+      },
+      {
+       "label": "C",
+       "text": "30度"
+      },
+      {
+       "label": "D",
+       "text": "60度"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p559_q7",
+     "topicId": "mbj_p559",
+     "prompt": "等腰三角形的三线合一指的是什么？请具体说明。",
+     "question": "等腰三角形的三线合一指的是什么？请具体说明。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "三线合一把三个不同角度的性质集中到一条线段上，是等腰三角形计算和证明中最常用的工具。",
+     "answer": "等腰三角形底边上的中线、底边上的高和顶角的平分线互相重合，即同一条线段同时具备三种身份：它平分底边、垂直于底边、并且平分顶角。反过来，若一条线段同时满足其中两个身份，也可判定这个三角形是等腰三角形。"
+    },
+    {
+     "id": "mbj_p559_q8",
+     "topicId": "mbj_p559",
+     "prompt": "等腰三角形的一个底角是50度，它顶角的外角是多少度？",
+     "question": "等腰三角形的一个底角是50度，它顶角的外角是多少度？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "顶角等于180减50减50，得80度；顶角的外角与它互补，是180减80等于100度，正好等于两个底角之和。",
+     "answer": "100",
+     "verify": "50*2"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p560",
+   "description": "理解直角三角形的概念，掌握两锐角互余、斜边上的中线等于斜边一半等性质，会用斜边直角边定理判定两个直角三角形全等，并能结合30度角所对直角边的性质进行计算。",
+   "mastery_criteria": [
+    "用两锐角互余求直角三角形中的未知锐角",
+    "用斜边上的中线等于斜边一半求线段长",
+    "用斜边直角边定理判定直角三角形全等"
+   ],
+   "misconceptions": [
+    "认为两个直角三角形有一锐角相等就全等",
+    "把斜边上的中线等于斜边的一半记成等于斜边",
+    "判定全等时把直角边和斜边配错位置"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.36",
+    "quote": "探索并掌握判定直角三角形全等的“斜边、直角边”定理"
+   },
+   "questions": [
+    {
+     "id": "mbj_p560_q1",
+     "topicId": "mbj_p560",
+     "prompt": "直角三角形中，一个锐角是35度，另一个锐角是多少度？",
+     "question": "直角三角形中，一个锐角是35度，另一个锐角是多少度？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "直角三角形两个锐角互余，另一个锐角是90减35等于55度。",
+     "options": [
+      {
+       "label": "A",
+       "text": "55度"
+      },
+      {
+       "label": "B",
+       "text": "35度"
+      },
+      {
+       "label": "C",
+       "text": "65度"
+      },
+      {
+       "label": "D",
+       "text": "145度"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p560_q2",
+     "topicId": "mbj_p560",
+     "prompt": "判定两个直角三角形全等时，斜边、直角边定理可以简写成什么？",
+     "question": "判定两个直角三角形全等时，斜边、直角边定理可以简写成什么？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "斜边和一条直角边分别相等的两个直角三角形全等，简写为HL，它是直角三角形特有的判定方法。",
+     "answer": "HL"
+    },
+    {
+     "id": "mbj_p560_q3",
+     "topicId": "mbj_p560",
+     "prompt": "下列条件中，不能判定两个直角三角形全等的是哪一个？",
+     "question": "下列条件中，不能判定两个直角三角形全等的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "两个锐角分别相等只说明形状相同，大小可以不同，所以不能判定全等；其余三种都能确定三角形的大小。",
+     "options": [
+      {
+       "label": "A",
+       "text": "两条直角边分别相等"
+      },
+      {
+       "label": "B",
+       "text": "两个锐角分别相等"
+      },
+      {
+       "label": "C",
+       "text": "斜边和一条直角边分别相等"
+      },
+      {
+       "label": "D",
+       "text": "一个锐角和斜边分别相等"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p560_q4",
+     "topicId": "mbj_p560",
+     "prompt": "直角三角形斜边上的中线长是5，斜边长为多少？",
+     "question": "直角三角形斜边上的中线长是5，斜边长为多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "直角三角形斜边上的中线等于斜边的一半，反过来斜边就是中线长的2倍，即10。",
+     "answer": "10",
+     "verify": "5*2"
+    },
+    {
+     "id": "mbj_p560_q5",
+     "topicId": "mbj_p560",
+     "prompt": "直角三角形ABC中，角C等于90度，角A等于30度，斜边上的中线CM等于4，边BC的长是多少？",
+     "question": "直角三角形ABC中，角C等于90度，角A等于30度，斜边上的中线CM等于4，边BC的长是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "斜边等于斜边上中线的2倍，即8；30度角所对的直角边等于斜边的一半，所以BC等于4。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "8"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p560_q6",
+     "topicId": "mbj_p560",
+     "prompt": "下列三角形中，一定是直角三角形的是哪一个？",
+     "question": "下列三角形中，一定是直角三角形的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "两角互余说明这两角之和是90度，第三个角必为90度，所以是直角三角形；三个角相等的三角形是等边三角形。",
+     "options": [
+      {
+       "label": "A",
+       "text": "三个角都相等的三角形"
+      },
+      {
+       "label": "B",
+       "text": "有一个角是60度的等腰三角形"
+      },
+      {
+       "label": "C",
+       "text": "有两条边相等的三角形"
+      },
+      {
+       "label": "D",
+       "text": "有两个角互余的三角形"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p560_q7",
+     "topicId": "mbj_p560",
+     "prompt": "请说明直角三角形的两个锐角为什么互余。",
+     "question": "请说明直角三角形的两个锐角为什么互余。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "这条性质是内角和定理在直角三角形中的直接推论，也是直角三角形计算中最常用的一步。",
+     "answer": "三角形内角和是180度，直角三角形中有一个角是90度，剩下两个锐角之和是180减90等于90度。两角之和为90度就是互为余角，所以直角三角形的两个锐角互余。"
+    },
+    {
+     "id": "mbj_p560_q8",
+     "topicId": "mbj_p560",
+     "prompt": "直角三角形的两条直角边分别是6和8，斜边上的中线长是多少？",
+     "question": "直角三角形的两条直角边分别是6和8，斜边上的中线长是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "由勾股定理，斜边是6的平方加8的平方再开平方，等于10；斜边上的中线等于斜边的一半，所以中线长是5。",
+     "answer": "5",
+     "verify": "(6*6+8*8)**0.5/2"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p561",
+   "description": "会用圆规和没有刻度的直尺完成基本作图：作一条线段等于已知线段、作一个角等于已知角、作角的平分线、作线段的垂直平分线，并能说明每种作图的依据和作用。",
+   "mastery_criteria": [
+    "用尺规作一条线段等于已知线段",
+    "用尺规作角的平分线和线段的垂直平分线",
+    "说明作一个角等于已知角的依据"
+   ],
+   "misconceptions": [
+    "作图时用直尺去量长度",
+    "作垂直平分线时半径取小于线段一半的长",
+    "只保留作图痕迹却写不出作图依据"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p561_q1",
+     "topicId": "mbj_p561",
+     "prompt": "尺规作图通常使用的工具是什么？",
+     "question": "尺规作图通常使用的工具是什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "尺规作图只允许使用圆规和没有刻度的直尺，不能靠刻度去度量长度，这是尺规作图的基本要求。",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆规和没有刻度的直尺"
+      },
+      {
+       "label": "B",
+       "text": "圆规和量角器"
+      },
+      {
+       "label": "C",
+       "text": "刻度尺和三角板"
+      },
+      {
+       "label": "D",
+       "text": "圆规和有刻度的直尺"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p561_q2",
+     "topicId": "mbj_p561",
+     "prompt": "用尺规作一条线段等于已知线段时，圆规的作用是把已知线段的什么搬到射线上？",
+     "question": "用尺规作一条线段等于已知线段时，圆规的作用是把已知线段的什么搬到射线上？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "圆规两脚张开的距离就是已知线段的长度，作图时把这个距离截取到射线上，就得到等长的线段。",
+     "answer": "长度"
+    },
+    {
+     "id": "mbj_p561_q3",
+     "topicId": "mbj_p561",
+     "prompt": "用尺规作一个角等于已知角，作图时两弧相交得到的三角形与原图中的三角形满足哪种关系？",
+     "question": "用尺规作一个角等于已知角，作图时两弧相交得到的三角形与原图中的三角形满足哪种关系？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "作图时两腰的半径分别等于原三角形两边的长，第三边是同一段弧的弦，两个三角形三边分别相等，所以由边边边判定全等。",
+     "options": [
+      {
+       "label": "A",
+       "text": "相似，依据是两角分别相等"
+      },
+      {
+       "label": "B",
+       "text": "全等，依据是三边分别相等"
+      },
+      {
+       "label": "C",
+       "text": "全等，依据是两边及其夹角分别相等"
+      },
+      {
+       "label": "D",
+       "text": "面积相等，但形状不一定相同"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p561_q4",
+     "topicId": "mbj_p561",
+     "prompt": "用尺规作角AOB的平分线OC，若角AOB等于76度，角AOC等于多少度？",
+     "question": "用尺规作角AOB的平分线OC，若角AOB等于76度，角AOC等于多少度？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "角平分线把角分成两个相等的角，所以角AOC是76度的一半，等于38度。",
+     "answer": "38",
+     "verify": "76/2"
+    },
+    {
+     "id": "mbj_p561_q5",
+     "topicId": "mbj_p561",
+     "prompt": "用尺规作线段AB的垂直平分线时，为什么要以A、B为圆心、大于AB一半的长为半径画弧？",
+     "question": "用尺规作线段AB的垂直平分线时，为什么要以A、B为圆心、大于AB一半的长为半径画弧？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "两弧上的点分别到A、B的距离都等于同一半径，因此到两端距离相等，必在垂直平分线上；半径必须大于AB的一半，两弧才会在AB两侧各交于一点。",
+     "options": [
+      {
+       "label": "A",
+       "text": "半径取得越小作图越准确"
+      },
+      {
+       "label": "B",
+       "text": "这样画弧可以顺便作出45度角"
+      },
+      {
+       "label": "C",
+       "text": "半径相等才能得到到两端距离相等的点，半径大于一半两弧才有交点"
+      },
+      {
+       "label": "D",
+       "text": "这样画弧可以得到直角三角形的斜边"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p561_q6",
+     "topicId": "mbj_p561",
+     "prompt": "下列作图任务中，不能只用圆规和没有刻度的直尺完成的是哪一个？",
+     "question": "下列作图任务中，不能只用圆规和没有刻度的直尺完成的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "量出角的度数必须借助量角器，尺规作图不允许使用度量工具；其余三种都是基本尺规作图能完成的任务。",
+     "options": [
+      {
+       "label": "A",
+       "text": "作一条线段等于已知线段"
+      },
+      {
+       "label": "B",
+       "text": "作一个角等于已知角"
+      },
+      {
+       "label": "C",
+       "text": "作已知角的平分线"
+      },
+      {
+       "label": "D",
+       "text": "量出一个已知角的度数"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p561_q7",
+     "topicId": "mbj_p561",
+     "prompt": "请写出用尺规作角AOB的平分线的主要步骤。",
+     "question": "请写出用尺规作角AOB的平分线的主要步骤。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "两步画弧的目的是得到两个到角两边距离相等的点，从而保证OC把角分成两个相等的角。",
+     "answer": "第一步，以点O为圆心、适当长为半径画弧，分别交OA、OB于点M、N；第二步，分别以M、N为圆心、大于MN一半的长为半径画弧，两弧在角的内部交于点C；第三步，作射线OC，射线OC就是角AOB的平分线。"
+    },
+    {
+     "id": "mbj_p561_q8",
+     "topicId": "mbj_p561",
+     "prompt": "三角形ABC中，用尺规作BC的垂直平分线交BC于D，若BC等于14，AD垂直BC且AD等于9，三角形ABC的面积是多少？",
+     "question": "三角形ABC中，用尺规作BC的垂直平分线交BC于D，若BC等于14，AD垂直BC且AD等于9，三角形ABC的面积是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "D是BC的中点，AD垂直BC，所以AD是底边BC上的高。面积等于底乘高除以2，即14乘9除以2等于63。",
+     "answer": "63",
+     "verify": "14*9/2"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p562",
+   "description": "知道命题由条件和结论两部分组成，能把一个命题的条件与结论交换得到它的逆命题，会判断原命题与逆命题的真假，理解逆定理的含义，并能用逆定理解决判定问题。",
+   "mastery_criteria": [
+    "区分命题的条件和结论",
+    "写出一个命题的逆命题并判断真假",
+    "说明互为逆定理的两个命题的关系"
+   ],
+   "misconceptions": [
+    "写逆命题时只换结论不换条件",
+    "认为原命题真逆命题就一定真",
+    "把真命题都当成定理或逆定理"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.15",
+    "quote": "通过具体实例，了解定义、命题、定理、推论的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p562_q1",
+     "topicId": "mbj_p562",
+     "prompt": "命题两直线平行、内错角相等的条件是什么？",
+     "question": "命题两直线平行、内错角相等的条件是什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "这句话中两直线平行是已知的前提，是条件；内错角相等是由条件推出的结论，两部分不能颠倒。",
+     "options": [
+      {
+       "label": "A",
+       "text": "两直线平行"
+      },
+      {
+       "label": "B",
+       "text": "内错角相等"
+      },
+      {
+       "label": "C",
+       "text": "两条直线被第三条直线所截"
+      },
+      {
+       "label": "D",
+       "text": "内错角不相等"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p562_q2",
+     "topicId": "mbj_p562",
+     "prompt": "把命题如果两个角是对顶角、那么这两个角相等的条件和结论交换后，得到的新命题是什么？",
+     "question": "把命题如果两个角是对顶角、那么这两个角相等的条件和结论交换后，得到的新命题是什么？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "交换条件和结论就得到逆命题：条件是两个角相等，结论是它们是对顶角。这个逆命题是假命题，相等的角不一定是同一点处的对顶角。",
+     "answer": "如果两个角相等，那么这两个角是对顶角"
+    },
+    {
+     "id": "mbj_p562_q3",
+     "topicId": "mbj_p562",
+     "prompt": "下列命题中，逆命题是真命题的是哪一个？",
+     "question": "下列命题中，逆命题是真命题的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "它的逆命题是同位角相等则两直线平行，是真命题；对顶角相等的逆命题、全等与面积相等的逆命题都不成立，第三项的逆命题是若ab等于0则a等于0，也不成立。",
+     "options": [
+      {
+       "label": "A",
+       "text": "对顶角相等"
+      },
+      {
+       "label": "B",
+       "text": "两直线平行，同位角相等"
+      },
+      {
+       "label": "C",
+       "text": "若a等于0，则ab等于0"
+      },
+      {
+       "label": "D",
+       "text": "全等三角形的面积相等"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p562_q4",
+     "topicId": "mbj_p562",
+     "prompt": "命题若一个三角形是等边三角形、则它的三个内角都是60度的逆命题是：若一个三角形的三个内角都是60度，则它是等边三角形。这个逆命题是真命题还是假命题？",
+     "question": "命题若一个三角形是等边三角形、则它的三个内角都是60度的逆命题是：若一个三角形的三个内角都是60度，则它是等边三角形。这个逆命题是真命题还是假命题？",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "三个内角都等于60度的三角形三个角相等，由等角对等边可得三边相等，所以它确实是等边三角形，逆命题为真。",
+     "answer": "真命题"
+    },
+    {
+     "id": "mbj_p562_q5",
+     "topicId": "mbj_p562",
+     "prompt": "关于原命题与它的逆命题的真假关系，下列说法正确的是哪一个？",
+     "question": "关于原命题与它的逆命题的真假关系，下列说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "对顶角相等的逆命题是假命题，而两直线平行同位角相等的逆命题是真命题，可见两者真假互不决定；任何命题都有逆命题。",
+     "options": [
+      {
+       "label": "A",
+       "text": "原命题为真时逆命题一定为真"
+      },
+      {
+       "label": "B",
+       "text": "原命题为假时逆命题一定为假"
+      },
+      {
+       "label": "C",
+       "text": "原命题与逆命题的真假没有必然联系"
+      },
+      {
+       "label": "D",
+       "text": "只有真命题才有逆命题"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p562_q6",
+     "topicId": "mbj_p562",
+     "prompt": "下列语句中，属于命题的是哪一个？",
+     "question": "下列语句中，属于命题的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "命题是能够判断真假的陈述句。画图是操作要求，问句和祈使句都不能判断真假，所以只有第一句是命题。",
+     "options": [
+      {
+       "label": "A",
+       "text": "画一条直线AB"
+      },
+      {
+       "label": "B",
+       "text": "你昨天读书了吗"
+      },
+      {
+       "label": "C",
+       "text": "请保持安静"
+      },
+      {
+       "label": "D",
+       "text": "三角形有三个角"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p562_q7",
+     "topicId": "mbj_p562",
+     "prompt": "什么是逆定理？请举出一个原命题与逆命题都为真、从而构成逆定理的例子。",
+     "question": "什么是逆定理？请举出一个原命题与逆命题都为真、从而构成逆定理的例子。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "逆定理的价值在于提供双向的推理通道，判定与性质可以互相转化。",
+     "answer": "如果一个定理的逆命题经过证明也是真命题，那么这两个定理互为逆定理。例如两直线平行、内错角相等与内错角相等、两直线平行都是真命题，它们就组成一对逆定理，前一个用于由平行得角相等，后一个用于由角相等得平行。"
+    },
+    {
+     "id": "mbj_p562_q8",
+     "topicId": "mbj_p562",
+     "prompt": "三角形三边分别是5、12、13，由勾股定理的逆定理可知它是直角三角形，那么它最大的内角是多少度？",
+     "question": "三角形三边分别是5、12、13，由勾股定理的逆定理可知它是直角三角形，那么它最大的内角是多少度？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "5的平方与12的平方之和是169，正好等于13的平方，所以最长边所对的角是直角，最大内角为90度。",
+     "answer": "90",
+     "verify": "45*2"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p563",
+   "description": "通过具体实例理解轴对称图形和两个图形成轴对称的含义，掌握对应点连线被对称轴垂直平分这一性质，能判断常见图形是否为轴对称图形并找出对称轴，会作已知图形的对称图形。",
+   "mastery_criteria": [
+    "判断常见图形是否为轴对称图形并数出对称轴条数",
+    "用对应点连线被对称轴垂直平分求线段长",
+    "区分轴对称图形与两个图形成轴对称"
+   ],
+   "misconceptions": [
+    "把对称轴说成线段或射线",
+    "认为平行四边形是轴对称图形",
+    "把成轴对称与全等混为一谈，忽略位置关系"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.60",
+    "quote": "通过具体实例理解轴对称的概念，探索它的基本性质"
+   },
+   "questions": [
+    {
+     "id": "mbj_p563_q1",
+     "topicId": "mbj_p563",
+     "prompt": "下列图形中，不是轴对称图形的是哪一个？",
+     "question": "下列图形中，不是轴对称图形的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "一般平行四边形沿任何一条直线对折后两部分都不能完全重合，没有对称轴；其余三个都是轴对称图形。",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行四边形"
+      },
+      {
+       "label": "B",
+       "text": "等腰三角形"
+      },
+      {
+       "label": "C",
+       "text": "长方形"
+      },
+      {
+       "label": "D",
+       "text": "圆"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p563_q2",
+     "topicId": "mbj_p563",
+     "prompt": "轴对称图形的对称轴是一条什么线？",
+     "question": "轴对称图形的对称轴是一条什么线？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "对称轴是直线，作图时通常画成虚线，不能说成线段或射线，这也是等腰三角形对称轴容易说错的地方。",
+     "answer": "直线"
+    },
+    {
+     "id": "mbj_p563_q3",
+     "topicId": "mbj_p563",
+     "prompt": "关于某条直线成轴对称的两个图形，它们的对应点连线段与对称轴是什么关系？",
+     "question": "关于某条直线成轴对称的两个图形，它们的对应点连线段与对称轴是什么关系？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "对应点的连线段与对称轴垂直，并且被对称轴分成相等的两段，即被对称轴垂直平分。",
+     "options": [
+      {
+       "label": "A",
+       "text": "与对称轴平行"
+      },
+      {
+       "label": "B",
+       "text": "被对称轴垂直平分"
+      },
+      {
+       "label": "C",
+       "text": "与对称轴重合"
+      },
+      {
+       "label": "D",
+       "text": "长度等于对称轴长度的一半"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p563_q4",
+     "topicId": "mbj_p563",
+     "prompt": "点A与它的对称点到对称轴的距离都是3厘米，这两点之间的距离是多少厘米？",
+     "question": "点A与它的对称点到对称轴的距离都是3厘米，这两点之间的距离是多少厘米？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "对称轴垂直平分这两点的连线段，所以两点间的距离等于到对称轴距离的2倍，即3乘2等于6厘米。",
+     "answer": "6",
+     "verify": "3*2"
+    },
+    {
+     "id": "mbj_p563_q5",
+     "topicId": "mbj_p563",
+     "prompt": "等腰三角形是轴对称图形，它的对称轴是什么？",
+     "question": "等腰三角形是轴对称图形，它的对称轴是什么？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "对称轴必须是直线，底边上的中线和高都是线段，不能作对称轴；等腰三角形底边上的中线、高与顶角平分线重合，它们所在的直线才是对称轴。",
+     "options": [
+      {
+       "label": "A",
+       "text": "底边上的中线"
+      },
+      {
+       "label": "B",
+       "text": "底边上的高"
+      },
+      {
+       "label": "C",
+       "text": "顶角平分线所在的直线"
+      },
+      {
+       "label": "D",
+       "text": "一条腰上的中线"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p563_q6",
+     "topicId": "mbj_p563",
+     "prompt": "关于轴对称图形与两个图形成轴对称，下列说法正确的是哪一个？",
+     "question": "关于轴对称图形与两个图形成轴对称，下列说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "轴对称图形说的是一个图形沿一条直线对折后自身重合；两个图形成轴对称说的是两个图形的位置关系，且这两个图形一定全等，对应点连线垂直于对称轴。",
+     "options": [
+      {
+       "label": "A",
+       "text": "轴对称图形一定是两个图形"
+      },
+      {
+       "label": "B",
+       "text": "两个图形成轴对称时它们不一定全等"
+      },
+      {
+       "label": "C",
+       "text": "成轴对称的两个图形的对应点连线与对称轴平行"
+      },
+      {
+       "label": "D",
+       "text": "轴对称图形是一个图形自身的对称性"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p563_q7",
+     "topicId": "mbj_p563",
+     "prompt": "轴对称图形与两个图形成轴对称有什么区别和联系？",
+     "question": "轴对称图形与两个图形成轴对称有什么区别和联系？",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "把握好一个是自身性质、一个是位置关系，就能避免把两个概念混用，也能把两者互相转化。",
+     "answer": "区别在于：轴对称图形是一个图形自身具有的性质，指它沿某条直线对折后两部分完全重合；两个图形成轴对称是指两个图形关于一条直线的位置关系。联系是：把成轴对称的两个图形看成一个整体，它就是轴对称图形；两者的对应点连线都被对称轴垂直平分。"
+    },
+    {
+     "id": "mbj_p563_q8",
+     "topicId": "mbj_p563",
+     "prompt": "等腰三角形ABC中，AB等于AC等于5，BC等于6，它关于直线BC的对称图形是三角形A一撇BC，线段AA一撇的长是多少？",
+     "question": "等腰三角形ABC中，AB等于AC等于5，BC等于6，它关于直线BC的对称图形是三角形A一撇BC，线段AA一撇的长是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "作AD垂直BC于D，D是BC中点，BD等于3，由勾股定理得AD等于4。点A与它的对称点在BC两侧，且到BC距离相等，所以AA一撇等于2乘4等于8。",
+     "answer": "8",
+     "verify": "(5*5-3*3)**0.5*2"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p564",
+   "description": "探索并掌握勾股定理，知道直角三角形两直角边的平方和等于斜边的平方，会用它求直角三角形的边长，能用面积法说明定理的成立，并能解决梯子靠墙、测距等简单实际问题。",
+   "mastery_criteria": [
+    "用勾股定理求直角三角形的斜边或直角边",
+    "用面积法说明勾股定理成立",
+    "用勾股定理解决简单的实际问题"
+   ],
+   "misconceptions": [
+    "把勾股定理用在非直角三角形上",
+    "求直角边时用斜边平方加直角边平方",
+    "开平方时丢掉算术平方根的负值问题或算错平方"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.13",
+    "quote": "探索义股定理及其逆定理，并能运用"
+   },
+   "questions": [
+    {
+     "id": "mbj_p564_q1",
+     "topicId": "mbj_p564",
+     "prompt": "直角三角形的两条直角边分别是3和4，斜边长是多少？",
+     "question": "直角三角形的两条直角边分别是3和4，斜边长是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "由勾股定理，斜边的平方等于3的平方加4的平方等于25，25的算术平方根是5。",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "7"
+      },
+      {
+       "label": "C",
+       "text": "25"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p564_q2",
+     "topicId": "mbj_p564",
+     "prompt": "直角三角形的两条直角边分别是5和12，斜边长是多少？",
+     "question": "直角三角形的两条直角边分别是5和12，斜边长是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "斜边的平方等于25加144等于169，169的算术平方根是13，所以斜边长为13。",
+     "answer": "13",
+     "verify": "(5*5+12*12)**0.5"
+    },
+    {
+     "id": "mbj_p564_q3",
+     "topicId": "mbj_p564",
+     "prompt": "直角三角形的斜边是10，一条直角边是6，另一条直角边是多少？",
+     "question": "直角三角形的斜边是10，一条直角边是6，另一条直角边是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "另一条直角边的平方等于100减36等于64，64的算术平方根是8。注意这里要用斜边平方减去已知直角边的平方。",
+     "answer": "8",
+     "verify": "(10*10-6*6)**0.5"
+    },
+    {
+     "id": "mbj_p564_q4",
+     "topicId": "mbj_p564",
+     "prompt": "勾股定理的内容是什么？请选出正确的表述。",
+     "question": "勾股定理的内容是什么？请选出正确的表述。",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "勾股定理只适用于直角三角形，说的是两条直角边的平方和等于斜边的平方，不是边长之和的关系。",
+     "options": [
+      {
+       "label": "A",
+       "text": "直角三角形两直角边的和等于斜边"
+      },
+      {
+       "label": "B",
+       "text": "直角三角形两直角边的平方和等于斜边的平方"
+      },
+      {
+       "label": "C",
+       "text": "任意三角形两边的平方和等于第三边的平方"
+      },
+      {
+       "label": "D",
+       "text": "直角三角形斜边的平方等于两直角边的平方差"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p564_q5",
+     "topicId": "mbj_p564",
+     "prompt": "直角三角形ABC中，角C等于90度，两条直角边的和是7，斜边是5，这个三角形的面积是多少？",
+     "question": "直角三角形ABC中，角C等于90度，两条直角边的和是7，斜边是5，这个三角形的面积是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "设两直角边为a、b，则a加b等于7、a方加b方等于25。由a加b的平方等于49得2ab等于49减25等于24，所以ab等于12，面积是ab的一半等于6。",
+     "options": [
+      {
+       "label": "A",
+       "text": "12"
+      },
+      {
+       "label": "B",
+       "text": "12.5"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "24"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p564_q6",
+     "topicId": "mbj_p564",
+     "prompt": "勾股定理中，直角三角形两条直角边的平方和等于哪条边的平方？",
+     "question": "勾股定理中，直角三角形两条直角边的平方和等于哪条边的平方？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "两条直角边的平方和等于斜边的平方，这就是勾股定理的核心内容，使用时必须认准直角所对的边。",
+     "answer": "斜边"
+    },
+    {
+     "id": "mbj_p564_q7",
+     "topicId": "mbj_p564",
+     "prompt": "请用面积的方法说明直角三角形三边满足的勾股关系。",
+     "question": "请用面积的方法说明直角三角形三边满足的勾股关系。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "面积法把代数恒等式与图形拼合联系起来，是验证勾股定理最直观的方法，也说明定理并非只靠测量得出。",
+     "answer": "用四个全等的直角三角形拼成一个大正方形，中间留下一个边长为斜边c的正方形。大正方形的面积可以写成边长a加b的平方，也可以写成四个三角形的面积之和加上中间小正方形的面积，两种算法相等，化简后得到a方加b方等于c方。"
+    },
+    {
+     "id": "mbj_p564_q8",
+     "topicId": "mbj_p564",
+     "prompt": "直角三角形的两条直角边分别是9和12，斜边上的高是多少？",
+     "question": "直角三角形的两条直角边分别是9和12，斜边上的高是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "斜边是15。用面积法：两条直角边乘积的一半等于斜边乘斜边上的高的一半，所以高等于9乘12再除以15，等于7.2。",
+     "answer": "7.2",
+     "verify": "9*12/(9*9+12*12)**0.5"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p565",
+   "description": "掌握勾股定理的逆定理，能根据三角形三边的平方关系判断它是不是直角三角形，会识别常见的勾股数，并能用逆定理解决判断三角形形状、求面积等实际问题。",
+   "mastery_criteria": [
+    "用三边平方关系判断三角形是否为直角三角形",
+    "指出直角三角形中最长边所对的角是直角",
+    "用逆定理求直角三角形的面积"
+   ],
+   "misconceptions": [
+    "认为三边满足平方关系时直角是最短边所对的角",
+    "把任意三边都直接代入逆定理而不先找最长边",
+    "认为满足平方关系的是等腰直角三角形"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p565_q1",
+     "topicId": "mbj_p565",
+     "prompt": "如果三角形的三边满足两条较短边的平方和等于最长边的平方，那么这个三角形是什么三角形？",
+     "question": "如果三角形的三边满足两条较短边的平方和等于最长边的平方，那么这个三角形是什么三角形？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "这正是勾股定理的逆定理：满足平方关系时，最长边所对的角是直角，三角形是直角三角形。",
+     "options": [
+      {
+       "label": "A",
+       "text": "锐角三角形"
+      },
+      {
+       "label": "B",
+       "text": "钝角三角形"
+      },
+      {
+       "label": "C",
+       "text": "等边三角形"
+      },
+      {
+       "label": "D",
+       "text": "直角三角形"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p565_q2",
+     "topicId": "mbj_p565",
+     "prompt": "三边长分别为3、4、5的三角形是什么三角形？",
+     "question": "三边长分别为3、4、5的三角形是什么三角形？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "3的平方加4的平方等于25，正好等于5的平方，由逆定理可知它是直角三角形。",
+     "answer": "直角"
+    },
+    {
+     "id": "mbj_p565_q3",
+     "topicId": "mbj_p565",
+     "prompt": "下列各组线段中，能组成直角三角形的是哪一组？",
+     "question": "下列各组线段中，能组成直角三角形的是哪一组？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "5的平方加12的平方等于169，等于13的平方，满足逆定理；2、3、4与4、5、6的平方和都不等于最长边的平方，1、1、2本身还不能组成三角形。",
+     "options": [
+      {
+       "label": "A",
+       "text": "5、12、13"
+      },
+      {
+       "label": "B",
+       "text": "2、3、4"
+      },
+      {
+       "label": "C",
+       "text": "4、5、6"
+      },
+      {
+       "label": "D",
+       "text": "1、1、2"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p565_q4",
+     "topicId": "mbj_p565",
+     "prompt": "三角形三边分别是8、15、17，它最长边所对的角是多少度？",
+     "question": "三角形三边分别是8、15、17，它最长边所对的角是多少度？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "8的平方加15的平方等于289，17的平方也是289，由逆定理可知它是直角三角形，最长边所对的角是90度。",
+     "answer": "90",
+     "verify": "45*2"
+    },
+    {
+     "id": "mbj_p565_q5",
+     "topicId": "mbj_p565",
+     "prompt": "三角形三边长分别是2n、n的平方减1、n的平方加1，其中n大于1，这个三角形是什么三角形？",
+     "question": "三角形三边长分别是2n、n的平方减1、n的平方加1，其中n大于1，这个三角形是什么三角形？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "把最短两边平方相加：(2n)的平方加(n方减1)的平方，化简得n的4次方加2n方加1，正好等于(n方加1)的平方，满足逆定理，所以是直角三角形。",
+     "options": [
+      {
+       "label": "A",
+       "text": "锐角三角形"
+      },
+      {
+       "label": "B",
+       "text": "直角三角形"
+      },
+      {
+       "label": "C",
+       "text": "钝角三角形"
+      },
+      {
+       "label": "D",
+       "text": "不能确定"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p565_q6",
+     "topicId": "mbj_p565",
+     "prompt": "三角形ABC中，角A、角B、角C的对边分别是a、b、c，若a的平方加c的平方等于b的平方，那么哪个角是直角？",
+     "question": "三角形ABC中，角A、角B、角C的对边分别是a、b、c，若a的平方加c的平方等于b的平方，那么哪个角是直角？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "等式左边是两条较短边的平方和，右边是b的平方，所以b是最长边，它所对的角B就是直角。",
+     "options": [
+      {
+       "label": "A",
+       "text": "角A"
+      },
+      {
+       "label": "B",
+       "text": "角C"
+      },
+      {
+       "label": "C",
+       "text": "角B"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p565_q7",
+     "topicId": "mbj_p565",
+     "prompt": "用勾股定理的逆定理判断一个三角形是不是直角三角形，需要哪些步骤？",
+     "question": "用勾股定理的逆定理判断一个三角形是不是直角三角形，需要哪些步骤？",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "关键是不能随手取两条边平方相加，必须先确定最长边，否则比较的对象错了就会误判。",
+     "answer": "第一步找出三角形的最长边；第二步分别计算两条较短边的平方和与最长边的平方；第三步比较这两个值，相等就是直角三角形，最长边所对的角为直角，不相等就不是直角三角形。"
+    },
+    {
+     "id": "mbj_p565_q8",
+     "topicId": "mbj_p565",
+     "prompt": "一块三角形地的三边分别是20米、21米、29米，这块地的面积是多少平方米？",
+     "question": "一块三角形地的三边分别是20米、21米、29米，这块地的面积是多少平方米？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "20的平方加21的平方等于841，等于29的平方，所以这块地是直角三角形，两条直角边是20米和21米，面积是20乘21除以2等于210平方米。",
+     "answer": "210",
+     "verify": "20*21/2"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p566",
+   "description": "本章学习事件的分类与可能性的大小：能区分必然事件、不可能事件和随机事件，会用0到1之间的数刻画事件发生的可能性，会比较简单事件可能性的大小，并通过试验体会频率与可能性的关系。",
+   "mastery_criteria": [
+    "把给定事件正确归入必然、不可能或随机事件",
+    "用等可能结果个数之比表示可能性大小",
+    "比较两个简单事件发生的可能性"
+   ],
+   "misconceptions": [
+    "把可能性很小的事件当成不可能事件",
+    "认为随机事件发生的可能性一定是一半",
+    "用试验次数直接代替可能性大小"
+   ],
+   "std": {
+    "id": "mat-2022:4.TS.11",
+    "quote": "理解概率是对随机事件发生可能性大小的度量"
+   },
+   "questions": [
+    {
+     "id": "mbj_p566_q1",
+     "topicId": "mbj_p566",
+     "prompt": "太阳从东方升起这个事件属于哪一类事件？",
+     "question": "太阳从东方升起这个事件属于哪一类事件？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "在一定条件下必然发生的事件叫必然事件。太阳每天从东方升起，这个事件每次都发生，属于必然事件。",
+     "options": [
+      {
+       "label": "A",
+       "text": "不可能事件"
+      },
+      {
+       "label": "B",
+       "text": "随机事件"
+      },
+      {
+       "label": "C",
+       "text": "无法判断的事件"
+      },
+      {
+       "label": "D",
+       "text": "必然事件"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p566_q2",
+     "topicId": "mbj_p566",
+     "prompt": "下列事件中，属于不可能事件的是哪一个？",
+     "question": "下列事件中，属于不可能事件的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "袋中只有红球，摸出白球根本不会发生，是不可能事件；掷硬币和下雨是随机事件，篮球下落是必然事件。",
+     "options": [
+      {
+       "label": "A",
+       "text": "从一个只装有红球的袋中摸出白球"
+      },
+      {
+       "label": "B",
+       "text": "掷一枚硬币正面朝上"
+      },
+      {
+       "label": "C",
+       "text": "明天会下雨"
+      },
+      {
+       "label": "D",
+       "text": "抛出的篮球会下落"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p566_q3",
+     "topicId": "mbj_p566",
+     "prompt": "袋中有3个红球和2个白球，每个球除颜色外都相同，任意摸出一个球，摸到红球的可能性是多少？",
+     "question": "袋中有3个红球和2个白球，每个球除颜色外都相同，任意摸出一个球，摸到红球的可能性是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "袋中一共有5个球，其中红球3个，每个球被摸到的机会相同，所以摸到红球的可能性是3除以5等于0.6。",
+     "answer": "0.6",
+     "verify": "3/5"
+    },
+    {
+     "id": "mbj_p566_q4",
+     "topicId": "mbj_p566",
+     "prompt": "请分别举出一个必然事件、一个不可能事件和一个随机事件，并说明理由。",
+     "question": "请分别举出一个必然事件、一个不可能事件和一个随机事件，并说明理由。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "判断事件类别要看在一定条件下它是否一定发生、一定不发生，还是两种可能都有。",
+     "answer": "必然事件：掷一枚骰子出现的点数不超过6，因为骰子最大点数就是6，一定发生。不可能事件：从只装白球的袋中摸出红球，因为袋中根本没有红球。随机事件：明天有雨，可能发生也可能不发生。"
+    },
+    {
+     "id": "mbj_p566_q5",
+     "topicId": "mbj_p566",
+     "prompt": "关于事件发生的可能性，下列说法正确的是哪一个？",
+     "question": "关于事件发生的可能性，下列说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "必然事件一定发生、不可能事件一定不发生，分别对应可能性1和0；可能性小只是不易发生，试验次数少时结果也不一定刚好平均。",
+     "options": [
+      {
+       "label": "A",
+       "text": "随机事件发生的可能性一定小于0.5"
+      },
+      {
+       "label": "B",
+       "text": "必然事件发生的可能性是1，不可能事件发生的可能性是0"
+      },
+      {
+       "label": "C",
+       "text": "可能性很小的事件一定不会发生"
+      },
+      {
+       "label": "D",
+       "text": "抛一枚硬币10次一定有5次正面朝上"
+      }
+     ],
+     "answer": "B"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p567",
+   "description": "理解必然事件、不可能事件和随机事件的概念，能根据事件在一定条件下是否一定发生对事件进行分类，会判断生活中常见事件的类型，并知道确定事件与随机事件的区别。",
+   "mastery_criteria": [
+    "按一定条件下是否发生给事件分类",
+    "说出随机事件的定义",
+    "判断生活中的事件属于哪一类"
+   ],
+   "misconceptions": [
+    "把发生机会很大的事件说成必然事件",
+    "认为随机事件就是没有规律的事件",
+    "把确定事件等同于必然事件"
+   ],
+   "std": {
+    "id": "mat-2022:4.XY.12",
+    "quote": "能描述简单随机事件的特征〈可能结果的个数有限，每一个可能结果出现的概率相等)"
+   },
+   "questions": [
+    {
+     "id": "mbj_p567_q1",
+     "topicId": "mbj_p567",
+     "prompt": "掷一枚质地均匀的骰子，出现的点数不超过6是什么事件？",
+     "question": "掷一枚质地均匀的骰子，出现的点数不超过6是什么事件？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "骰子的点数只可能是1到6中的某一个，不超过6一定发生，所以是必然事件。",
+     "options": [
+      {
+       "label": "A",
+       "text": "随机事件"
+      },
+      {
+       "label": "B",
+       "text": "不可能事件"
+      },
+      {
+       "label": "C",
+       "text": "必然事件"
+      },
+      {
+       "label": "D",
+       "text": "不确定属于哪一类"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p567_q2",
+     "topicId": "mbj_p567",
+     "prompt": "在一定条件下，可能发生也可能不发生的事件叫做什么事件？",
+     "question": "在一定条件下，可能发生也可能不发生的事件叫做什么事件？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "这是随机事件的定义。事件分为确定事件和随机事件，确定事件又分为必然事件和不可能事件。",
+     "answer": "随机"
+    },
+    {
+     "id": "mbj_p567_q3",
+     "topicId": "mbj_p567",
+     "prompt": "下列事件中，属于随机事件的是哪一个？",
+     "question": "下列事件中，属于随机事件的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "打开电视可能正在播广告也可能不是，符合随机事件的特征；第二、四项是必然事件，第三项是不可能事件。",
+     "options": [
+      {
+       "label": "A",
+       "text": "三角形的内角和是180度"
+      },
+      {
+       "label": "B",
+       "text": "负数大于正数"
+      },
+      {
+       "label": "C",
+       "text": "在标准大气压下，水加热到100度沸腾"
+      },
+      {
+       "label": "D",
+       "text": "打开电视，正在播放广告"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p567_q4",
+     "topicId": "mbj_p567",
+     "prompt": "袋中有8个球，其中3个是红球，每个球除颜色外都相同，任意摸出一个球，摸到红球的可能性是多少？",
+     "question": "袋中有8个球，其中3个是红球，每个球除颜色外都相同，任意摸出一个球，摸到红球的可能性是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "所有等可能的结果有8个，其中摸到红球的结果有3个，所以可能性是3除以8等于0.375。",
+     "answer": "0.375",
+     "verify": "3/8"
+    },
+    {
+     "id": "mbj_p567_q5",
+     "topicId": "mbj_p567",
+     "prompt": "关于事件，下列说法正确的是哪一个？",
+     "question": "关于事件，下列说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "必然事件一定发生，可能性是100%；随机事件的可能性可以很小也可以很大；不可能事件绝不会发生；事件的可能性是可以比较大小的。",
+     "options": [
+      {
+       "label": "A",
+       "text": "必然事件发生的可能性是100%"
+      },
+      {
+       "label": "B",
+       "text": "随机事件发生的可能性一定大于50%"
+      },
+      {
+       "label": "C",
+       "text": "不可能事件在特殊情况下也可能发生"
+      },
+      {
+       "label": "D",
+       "text": "不同事件发生的可能性不能比较大小"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p567_q6",
+     "topicId": "mbj_p567",
+     "prompt": "事件按发生与否可以分成哪两大类？",
+     "question": "事件按发生与否可以分成哪两大类？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "事件先分成确定事件与随机事件两类，确定事件再细分为必然事件和不可能事件，这是本章的分类框架。",
+     "options": [
+      {
+       "label": "A",
+       "text": "必然事件和不可能事件"
+      },
+      {
+       "label": "B",
+       "text": "确定事件和随机事件"
+      },
+      {
+       "label": "C",
+       "text": "简单事件和复杂事件"
+      },
+      {
+       "label": "D",
+       "text": "独立事件和相关事件"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p567_q7",
+     "topicId": "mbj_p567",
+     "prompt": "随机事件与必然事件、不可能事件有什么区别？请各举一例说明。",
+     "question": "随机事件与必然事件、不可能事件有什么区别？请各举一例说明。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "三者按发生与否的确定性划分，随机事件不是没有规律，而是结果不确定但可能性有大小。",
+     "answer": "必然事件在一定条件下一定发生，例如三角形的内角和是180度；不可能事件在一定条件下一定不发生，例如掷一枚普通骰子出现点数7；随机事件可能发生也可能不发生，例如明天有雨。区别就在于发生与否是否确定。"
+    },
+    {
+     "id": "mbj_p567_q8",
+     "topicId": "mbj_p567",
+     "prompt": "从一副去掉大小王的52张扑克牌中任意抽一张，抽到红桃的可能性是多少？",
+     "question": "从一副去掉大小王的52张扑克牌中任意抽一张，抽到红桃的可能性是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "去掉大小王后四种花色张数相同，红桃有13张，抽到红桃的可能性是13除以52等于0.25。",
+     "answer": "0.25",
+     "verify": "1/4"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p568",
+   "description": "会比较随机事件发生可能性的大小，会用0到1之间的数或分数、小数表示简单事件发生的可能性，知道可能性大小与结果个数有关，并体会用大量重复试验的频率估计可能性。",
+   "mastery_criteria": [
+    "比较两个随机事件可能性的大小",
+    "用分数或小数表示简单事件的可能性",
+    "用频率估计事件发生的可能性"
+   ],
+   "misconceptions": [
+    "认为可能性大小与结果个数无关",
+    "把频率估计值当成精确值",
+    "认为试验次数少时频率就能稳定"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.12",
+    "quote": "知道通过大量重复试验，可以用频率估计概率"
+   },
+   "questions": [
+    {
+     "id": "mbj_p568_q1",
+     "topicId": "mbj_p568",
+     "prompt": "袋中有5个红球和1个白球，每个球除颜色外都相同，任意摸出一个球，摸到哪种颜色的球可能性大？",
+     "question": "袋中有5个红球和1个白球，每个球除颜色外都相同，任意摸出一个球，摸到哪种颜色的球可能性大？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "所有球除颜色外都相同，被摸到的机会相同，红球个数多于白球，所以摸到红球的可能性更大。",
+     "options": [
+      {
+       "label": "A",
+       "text": "白球"
+      },
+      {
+       "label": "B",
+       "text": "两种一样大"
+      },
+      {
+       "label": "C",
+       "text": "红球"
+      },
+      {
+       "label": "D",
+       "text": "无法比较"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p568_q2",
+     "topicId": "mbj_p568",
+     "prompt": "事件发生的可能性可以用0到1之间的数表示，必然事件发生的可能性是多少？",
+     "question": "事件发生的可能性可以用0到1之间的数表示，必然事件发生的可能性是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "必然事件一定发生，可能性是1；不可能事件一定不发生，可能性是0；随机事件的可能性在0和1之间。",
+     "answer": "1"
+    },
+    {
+     "id": "mbj_p568_q3",
+     "topicId": "mbj_p568",
+     "prompt": "掷一枚质地均匀的骰子，出现奇数点与出现6点相比，哪个可能性大？",
+     "question": "掷一枚质地均匀的骰子，出现奇数点与出现6点相比，哪个可能性大？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "出现奇数点有1、3、5三种结果，可能性是六分之三；出现6点只有一种结果，可能性是六分之一，所以奇数点的可能性大。",
+     "options": [
+      {
+       "label": "A",
+       "text": "出现6点的可能性大"
+      },
+      {
+       "label": "B",
+       "text": "两者一样大"
+      },
+      {
+       "label": "C",
+       "text": "无法比较"
+      },
+      {
+       "label": "D",
+       "text": "出现奇数点的可能性大"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p568_q4",
+     "topicId": "mbj_p568",
+     "prompt": "一个转盘被平均分成10个扇形，其中4个涂红色，自由转动转盘，指针落在红色区域的可能性是多少？",
+     "question": "一个转盘被平均分成10个扇形，其中4个涂红色，自由转动转盘，指针落在红色区域的可能性是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "10个扇形大小相同，指针落在每个扇形上的机会相同，红色占4份，所以可能性是4除以10等于0.4。",
+     "answer": "0.4",
+     "verify": "4/10"
+    },
+    {
+     "id": "mbj_p568_q5",
+     "topicId": "mbj_p568",
+     "prompt": "一个不透明的袋中有若干白球和20个黑球，每次摸出一个记下颜色后放回摇匀，多次试验后摸到黑球的频率稳定在0.4，袋中白球大约有多少个？",
+     "question": "一个不透明的袋中有若干白球和20个黑球，每次摸出一个记下颜色后放回摇匀，多次试验后摸到黑球的频率稳定在0.4，袋中白球大约有多少个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "黑球占全部球的0.4，所以球的总数约为20除以0.4等于50个，白球约为50减20等于30个。",
+     "options": [
+      {
+       "label": "A",
+       "text": "30个"
+      },
+      {
+       "label": "B",
+       "text": "20个"
+      },
+      {
+       "label": "C",
+       "text": "50个"
+      },
+      {
+       "label": "D",
+       "text": "80个"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p568_q6",
+     "topicId": "mbj_p568",
+     "prompt": "掷一枚质地均匀的硬币，正面朝上的可能性是多少？",
+     "question": "掷一枚质地均匀的硬币，正面朝上的可能性是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "硬币只有正反两面且出现机会相同，所以正面朝上的可能性是二分之一，也就是0.5。",
+     "options": [
+      {
+       "label": "A",
+       "text": "0"
+      },
+      {
+       "label": "B",
+       "text": "0.5"
+      },
+      {
+       "label": "C",
+       "text": "1"
+      },
+      {
+       "label": "D",
+       "text": "0.25"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p568_q7",
+     "topicId": "mbj_p568",
+     "prompt": "为什么可以用大量重复试验中事件发生的频率来估计它发生的可能性？",
+     "question": "为什么可以用大量重复试验中事件发生的频率来估计它发生的可能性？",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "频率是试验的结果，会波动；可能性是事件的固有属性，频率稳定到的那个常数就是它的近似刻画。",
+     "answer": "在相同条件下进行大量重复试验时，事件发生的频率会在某个常数附近摆动并逐渐稳定，这个稳定值反映了该事件发生的可能性大小，所以可以用试验得到的频率作为可能性的估计值。试验次数越多，估计通常越可靠。"
+    },
+    {
+     "id": "mbj_p568_q8",
+     "topicId": "mbj_p568",
+     "prompt": "某批种子的发芽频率稳定在0.92，若播种1000粒这样的种子，估计能发芽多少粒？",
+     "question": "某批种子的发芽频率稳定在0.92，若播种1000粒这样的种子，估计能发芽多少粒？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "用频率估计可能性，这批种子发芽的可能性约为0.92，播种1000粒时发芽粒数约为0.92乘1000等于920粒。",
+     "answer": "920",
+     "verify": "0.92*1000"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p569",
+   "description": "会用列举法求简单随机事件发生的可能性，能先列出所有等可能的结果，再数出事件包含的结果个数，用两者的比表示可能性，并注意列举时不重不漏、结果必须等可能。",
+   "mastery_criteria": [
+    "列举出简单随机试验的所有等可能结果",
+    "用结果个数之比求事件发生的可能性",
+    "判断列举的结果是否等可能、不重不漏"
+   ],
+   "misconceptions": [
+    "用事件个数除以事件个数计算可能性",
+    "列举时把不同结果算成同一种而漏算",
+    "对不等可能的结果直接用个数相比"
+   ],
+   "std": {
+    "id": "mat-2022:4.XY.11",
+    "quote": "能用列表、画树状图等方法求出简单随机事件所有可能的结果"
+   },
+   "questions": [
+    {
+     "id": "mbj_p569_q1",
+     "topicId": "mbj_p569",
+     "prompt": "掷一枚质地均匀的骰子，出现点数为3的可能性是多少？",
+     "question": "掷一枚质地均匀的骰子，出现点数为3的可能性是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "骰子有6种等可能的结果，点数为3只是其中1种，所以可能性是六分之一。",
+     "options": [
+      {
+       "label": "A",
+       "text": "三分之一"
+      },
+      {
+       "label": "B",
+       "text": "二分之一"
+      },
+      {
+       "label": "C",
+       "text": "六分之一"
+      },
+      {
+       "label": "D",
+       "text": "六分之五"
+      }
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "mbj_p569_q2",
+     "topicId": "mbj_p569",
+     "prompt": "袋中有2个红球和3个白球，每个球除颜色外都相同，任意摸出一个球，摸到红球的可能性是多少？",
+     "question": "袋中有2个红球和3个白球，每个球除颜色外都相同，任意摸出一个球，摸到红球的可能性是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "袋中共有5个球，其中红球2个，每个球被摸到的机会相同，所以可能性是2除以5等于0.4。",
+     "answer": "0.4",
+     "verify": "2/5"
+    },
+    {
+     "id": "mbj_p569_q3",
+     "topicId": "mbj_p569",
+     "prompt": "从分别写有1、2、3、4的四张卡片中任意抽取一张，抽到写着偶数的卡片的可能性是多少？",
+     "question": "从分别写有1、2、3、4的四张卡片中任意抽取一张，抽到写着偶数的卡片的可能性是多少？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "4种等可能结果中偶数有2和4两种，所以可能性是四分之二，约成二分之一。",
+     "options": [
+      {
+       "label": "A",
+       "text": "四分之一"
+      },
+      {
+       "label": "B",
+       "text": "四分之三"
+      },
+      {
+       "label": "C",
+       "text": "三分之一"
+      },
+      {
+       "label": "D",
+       "text": "二分之一"
+      }
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "mbj_p569_q4",
+     "topicId": "mbj_p569",
+     "prompt": "同时抛掷两枚质地均匀的硬币，两枚都正面朝上的可能性是多少？",
+     "question": "同时抛掷两枚质地均匀的硬币，两枚都正面朝上的可能性是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "所有等可能结果有正正、正反、反正、反反四种，两枚都正面朝上只占一种，可能性是四分之一。",
+     "answer": "0.25",
+     "verify": "1/4"
+    },
+    {
+     "id": "mbj_p569_q5",
+     "topicId": "mbj_p569",
+     "prompt": "同时掷两枚质地均匀的骰子，两枚骰子点数之和为7的可能性是多少？",
+     "question": "同时掷两枚质地均匀的骰子，两枚骰子点数之和为7的可能性是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "两枚骰子共有36种等可能结果，和为7的有1加6、2加5、3加4、4加3、5加2、6加1共6种，可能性是36分之6，约成六分之一。",
+     "options": [
+      {
+       "label": "A",
+       "text": "六分之一"
+      },
+      {
+       "label": "B",
+       "text": "十二分之一"
+      },
+      {
+       "label": "C",
+       "text": "九分之一"
+      },
+      {
+       "label": "D",
+       "text": "三十六分之五"
+      }
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "mbj_p569_q6",
+     "topicId": "mbj_p569",
+     "prompt": "求一个简单随机事件发生的可能性时，通常用什么方法计算？",
+     "question": "求一个简单随机事件发生的可能性时，通常用什么方法计算？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "explanation": "在结果等可能的条件下，可能性等于事件包含的结果数除以所有等可能结果的总数，分子不能大于分母。",
+     "options": [
+      {
+       "label": "A",
+       "text": "事件包含的结果数乘以结果总数"
+      },
+      {
+       "label": "B",
+       "text": "事件包含的结果数除以所有等可能结果的总数"
+      },
+      {
+       "label": "C",
+       "text": "结果总数除以事件包含的结果数"
+      },
+      {
+       "label": "D",
+       "text": "事件发生的次数除以参加试验的人数"
+      }
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "mbj_p569_q7",
+     "topicId": "mbj_p569",
+     "prompt": "用列举法求事件发生的可能性时，需要注意哪些问题？",
+     "question": "用列举法求事件发生的可能性时，需要注意哪些问题？",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "explanation": "列举的完整性决定结果是否准确，等可能性决定方法是否成立，两点缺一不可。",
+     "answer": "首先要保证列举的所有结果都是等可能的，否则不能直接用个数相比；其次要做到不重复、不遗漏，可以按顺序列表或画树状图；最后要准确数出该事件包含的结果个数，再用它除以结果总数得到可能性。"
+    },
+    {
+     "id": "mbj_p569_q8",
+     "topicId": "mbj_p569",
+     "prompt": "袋中有2个红球和3个白球，从中一次摸出两个球，摸到的两个球都是白球的可能性是多少？",
+     "question": "袋中有2个红球和3个白球，从中一次摸出两个球，摸到的两个球都是白球的可能性是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "explanation": "从5个球中取2个共有10种等可能的组合，都是白球的组合只有3种，所以可能性是3除以10等于0.3。",
+     "answer": "0.3",
+     "verify": "6/20"
+    }
+   ]
+  }
+ ]
+}

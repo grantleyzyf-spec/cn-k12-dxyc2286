@@ -1,0 +1,3267 @@
+{
+ "shard": "S15",
+ "subject": "math-bj",
+ "book": "三下",
+ "grade": 3,
+ "segment": 2,
+ "points": [
+  {
+   "topicId": "mbj_p265",
+   "description": "学习两位数乘两位数的口算、笔算和估算，理解先用个位上的数乘、再用十位上的数乘、最后把两次积相加的算理，能解决每份数与份数的实际问题，并会判断计算结果是否合理。",
+   "mastery_criteria": [
+    "能说出两位数乘两位数的计算步骤并正确笔算",
+    "能用估算判断计算结果是否合理",
+    "能列式解决每份数乘份数的实际问题"
+   ],
+   "misconceptions": [
+    "第二层积不空位，把十位上的积写在个位下面",
+    "把两次乘得的积相减而不是相加",
+    "认为乘数末尾的0不必补回"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p265_q1",
+     "topicId": "mbj_p265",
+     "prompt": "笔算 23×14 时，用十位上的1乘23得到23，这个23的末位要和哪一位对齐？",
+     "question": "笔算 23×14 时，用十位上的1乘23得到23，这个23的末位要和哪一位对齐？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "十位"
+      },
+      {
+       "label": "B",
+       "text": "个位"
+      },
+      {
+       "label": "C",
+       "text": "百位"
+      },
+      {
+       "label": "D",
+       "text": "随便对齐哪一位都行"
+      }
+     ],
+     "answer": "A",
+     "explanation": "十位上的1表示1个十，乘得的23表示23个十，所以末位要与十位对齐，这样才不多不少地算出14个23。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p265_q2",
+     "topicId": "mbj_p265",
+     "prompt": "一盒彩笔有12支，13盒一共有多少支彩笔？",
+     "question": "一盒彩笔有12支，13盒一共有多少支彩笔？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "156",
+     "verify": "12*13",
+     "explanation": "求13个12是多少，用乘法12×13=156，先算12×3=36，再算12×10=120，36加120得156。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p265_q3",
+     "topicId": "mbj_p265",
+     "prompt": "学校礼堂每排坐34人，25排一共可以坐多少人？",
+     "question": "学校礼堂每排坐34人，25排一共可以坐多少人？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "850",
+     "verify": "34*25",
+     "explanation": "求25个34是多少，34×25=850：34×5=170，34×20=680，170加680得850，说明礼堂能坐850人。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p265_q4",
+     "topicId": "mbj_p265",
+     "prompt": "估算 39×21 的积，最接近下面哪一个数？",
+     "question": "估算 39×21 的积，最接近下面哪一个数？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "600"
+      },
+      {
+       "label": "B",
+       "text": "800"
+      },
+      {
+       "label": "C",
+       "text": "1000"
+      },
+      {
+       "label": "D",
+       "text": "400"
+      }
+     ],
+     "answer": "B",
+     "explanation": "把39看成40、21看成20，40×20=800，与准确积819很接近，所以800最合适。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p265_q5",
+     "topicId": "mbj_p265",
+     "prompt": "小明算 45×12 时写成 45×10＋45×2，结果对吗？请说明这样算的道理。",
+     "question": "小明算 45×12 时写成 45×10＋45×2，结果对吗？请说明这样算的道理。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "对。45×12表示12个45，把12拆成10和2，10个45是450，2个45是90，450加90得540，与45×12的结果相同，这就是把新问题转化成已经会算的乘法。",
+     "explanation": "对。45×12表示12个45，把12拆成10和2，10个45是450，2个45是90，450加90得540，与直接计算的结果一样。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p266",
+   "description": "学习整十、整百数相乘与两位数乘整十数的口算，能借助先算0前面的数、再在积的末尾添上相应个数0的方法快速求积，并能说明积末尾0的个数是怎样确定的。",
+   "mastery_criteria": [
+    "能口算整十、整百数相乘并说清添0的道理",
+    "能口算两位数乘整十数",
+    "能判断积末尾0的个数"
+   ],
+   "misconceptions": [
+    "20×30算成60，只添了一个0",
+    "积末尾0的个数比两个乘数0的个数之和还多",
+    "两位数乘整十数时把末尾的0丢掉"
+   ],
+   "std": {
+    "id": "mat-2022:2.TS.02",
+    "quote": "数的运算教学应利用整数的乘法运算"
+   },
+   "questions": [
+    {
+     "id": "mbj_p266_q1",
+     "topicId": "mbj_p266",
+     "prompt": "口算 20×30，正确的结果是多少？",
+     "question": "口算 20×30，正确的结果是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "60"
+      },
+      {
+       "label": "B",
+       "text": "6000"
+      },
+      {
+       "label": "C",
+       "text": "600"
+      },
+      {
+       "label": "D",
+       "text": "50"
+      }
+     ],
+     "answer": "C",
+     "explanation": "先算2×3=6，两个乘数末尾一共有2个0，在6后面添2个0得600。只添1个0得60，就少算了10倍。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p266_q2",
+     "topicId": "mbj_p266",
+     "prompt": "口算 40×50 的积是多少？",
+     "question": "口算 40×50 的积是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "2000",
+     "verify": "40*50",
+     "explanation": "先算4×5=20，两个乘数末尾一共有2个0，在20后面添2个0，得到2000。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p266_q3",
+     "topicId": "mbj_p266",
+     "prompt": "口算 12×30，积是（ ）。",
+     "question": "口算 12×30，积是（ ）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "360",
+     "explanation": "先算12×3=36，因为乘数30末尾有1个0，所以在36后面添1个0，得360。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p266_q4",
+     "topicId": "mbj_p266",
+     "prompt": "每箱牛奶有20袋，15箱一共有多少袋？",
+     "question": "每箱牛奶有20袋，15箱一共有多少袋？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "300",
+     "verify": "20*15",
+     "explanation": "求15个20是多少，20×15=300：先算2×15=30，再添1个0，共300袋。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p266_q5",
+     "topicId": "mbj_p266",
+     "prompt": "下面算式中，积的末尾正好有3个0的是哪一个？",
+     "question": "下面算式中，积的末尾正好有3个0的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "30×40"
+      },
+      {
+       "label": "B",
+       "text": "40×40"
+      },
+      {
+       "label": "C",
+       "text": "60×70"
+      },
+      {
+       "label": "D",
+       "text": "20×50"
+      }
+     ],
+     "answer": "D",
+     "explanation": "20×50=1000，末尾3个0；30×40=1200、40×40=1600、60×70=4200，末尾都只有2个0。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p266_q6",
+     "topicId": "mbj_p266",
+     "prompt": "一台电风扇130元，学校买30台，一共要付多少元？",
+     "question": "一台电风扇130元，学校买30台，一共要付多少元？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "3900",
+     "verify": "130*30",
+     "explanation": "130×30先算13×3=39，两个乘数末尾一共有2个0，添上后得3900元。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p266_q7",
+     "topicId": "mbj_p266",
+     "prompt": "计算 25×40，积的末尾有几个0？",
+     "question": "计算 25×40，积的末尾有几个0？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "3个"
+      },
+      {
+       "label": "B",
+       "text": "1个"
+      },
+      {
+       "label": "C",
+       "text": "2个"
+      },
+      {
+       "label": "D",
+       "text": "4个"
+      }
+     ],
+     "answer": "A",
+     "explanation": "25×4=100本身就带2个0，再添上乘数末尾的1个0，积是1000，末尾有3个0，不能只数乘数末尾的0。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p266_q8",
+     "topicId": "mbj_p266",
+     "prompt": "为什么 30×40 等于 1200 而不是 120？请说明理由。",
+     "question": "为什么 30×40 等于 1200 而不是 120？请说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为3×4=12，两个乘数末尾一共有2个0，要在12后面添上2个0才得到1200。如果只添1个0得120，就把积缩小了10倍。",
+     "explanation": "因为3×4=12，30和40末尾一共有2个0，要在12后面添2个0，得到1200；只添1个0得到120，比正确结果小10倍。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p267",
+   "description": "学习两位数乘两位数不进位的竖式笔算，掌握先用个位上的数乘、再用十位上的数乘、最后把两层积相加的书写顺序，知道第二层积的末位要与十位对齐。",
+   "mastery_criteria": [
+    "能按顺序完成不进位的两位数乘两位数竖式",
+    "能说出第二层积的末位与十位对齐的道理",
+    "能用再算一遍的方法检验笔算结果"
+   ],
+   "misconceptions": [
+    "第二层积的末位与个位对齐，导致积变小",
+    "先乘十位后乘个位，两层积顺序颠倒",
+    "把两层积相加时忘记其中一层"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p267_q1",
+     "topicId": "mbj_p267",
+     "prompt": "笔算两位数乘两位数时，应该先用哪一个数位上的数去乘？",
+     "question": "笔算两位数乘两位数时，应该先用哪一个数位上的数去乘？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "十位"
+      },
+      {
+       "label": "B",
+       "text": "个位"
+      },
+      {
+       "label": "C",
+       "text": "百位"
+      },
+      {
+       "label": "D",
+       "text": "从高位到低位随意选"
+      }
+     ],
+     "answer": "B",
+     "explanation": "笔算时先用个位上的数去乘，再用十位上的数去乘，按从低到高的顺序书写，第二层积才不会数位错乱。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p267_q2",
+     "topicId": "mbj_p267",
+     "prompt": "用竖式计算 21×13 的积。",
+     "question": "用竖式计算 21×13 的积。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "273",
+     "verify": "21*13",
+     "explanation": "21×3=63，21×10=210，63加210得273，两层积相加时第二层的末位要对齐十位。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p267_q3",
+     "topicId": "mbj_p267",
+     "prompt": "笔算 12×12，积是（ ）。",
+     "question": "笔算 12×12，积是（ ）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "144",
+     "explanation": "12×2=24，12×10=120，24加120得144，正好是一个边长12的正方形里小方格的个数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p267_q4",
+     "topicId": "mbj_p267",
+     "prompt": "每套桌椅32元，买13套一共要多少元？",
+     "question": "每套桌椅32元，买13套一共要多少元？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "416",
+     "verify": "32*13",
+     "explanation": "32×13先算32×3=96，再算32×10=320，96加320得416元。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p267_q5",
+     "topicId": "mbj_p267",
+     "prompt": "计算 43×12，正确的结果是哪一个？",
+     "question": "计算 43×12，正确的结果是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "86"
+      },
+      {
+       "label": "B",
+       "text": "129"
+      },
+      {
+       "label": "C",
+       "text": "516"
+      },
+      {
+       "label": "D",
+       "text": "559"
+      }
+     ],
+     "answer": "C",
+     "explanation": "43×2=86，43×10=430，86加430得516；漏写第二层积只得86，两层积都按个位对齐相加只得129。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p267_q6",
+     "topicId": "mbj_p267",
+     "prompt": "笔算 32×23，积的百位上的数字是（ ）。",
+     "question": "笔算 32×23，积的百位上的数字是（ ）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "7",
+     "explanation": "32×3=96，32×20=640，96加640得736，百位上的数字是7。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p267_q7",
+     "topicId": "mbj_p267",
+     "prompt": "一本书每页有24行，每行有21个字，这一页一共有多少个字？",
+     "question": "一本书每页有24行，每行有21个字，这一页一共有多少个字？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "504",
+     "verify": "24*21",
+     "explanation": "每行21个字、共24行，21×24=504：21×4=84，21×20=420，84加420得504个字。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p267_q8",
+     "topicId": "mbj_p267",
+     "prompt": "小明笔算 34×21 时，把第二层积68写在了个位下面，加起来得到102。他错在哪里？正确结果是多少？",
+     "question": "小明笔算 34×21 时，把第二层积68写在了个位下面，加起来得到102。他错在哪里？正确结果是多少？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "不对。34×21 应先算34×1=34，再算34×20=680，两层相加得714；把68写在个位下面是把十位上的2当成2来乘，相当于只算了34加68，所以错。正确结果是714。",
+     "explanation": "不对。正确结果是714。十位上的2表示2个十，乘34得680，末位要与十位对齐；他把第二层积68对齐个位，等于只算了34加68。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p268",
+   "description": "学习两位数乘两位数中含进位的笔算，能在每次相乘后正确加上进位的数，处理连续进位的情况，并用估算检验积的位数和大小是否合理。",
+   "mastery_criteria": [
+    "能在笔算中正确加上进位的数",
+    "能完成连续进位的两位数乘两位数",
+    "能用估算检验进位结果是否合理"
+   ],
+   "misconceptions": [
+    "忘记加上个位相乘时进位的数",
+    "把进位记在下一行而不是前一位上",
+    "连续进位时只进一次"
+   ],
+   "std": {
+    "id": "mat-2022:2.TS.02",
+    "quote": "数的运算教学应利用整数的乘法运算"
+   },
+   "questions": [
+    {
+     "id": "mbj_p268_q1",
+     "topicId": "mbj_p268",
+     "prompt": "用竖式计算 24×13 的积。",
+     "question": "用竖式计算 24×13 的积。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "312",
+     "verify": "24*13",
+     "explanation": "24×3=72，个位写2向十位进7；24×1=24再加进位7得31，所以积是312。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p268_q2",
+     "topicId": "mbj_p268",
+     "prompt": "笔算 36×12 时，个位2乘36得72，个位写2，应向十位进（ ）。",
+     "question": "笔算 36×12 时，个位2乘36得72，个位写2，应向十位进（ ）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "7",
+     "explanation": "72里的7个十要进到十位，个位只留下2，所以向十位进7。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p268_q3",
+     "topicId": "mbj_p268",
+     "prompt": "笔算 27×14 时，27×4=108，个位写8以后应向十位进多少？",
+     "question": "笔算 27×14 时，27×4=108，个位写8以后应向十位进多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "8"
+      },
+      {
+       "label": "C",
+       "text": "0"
+      },
+      {
+       "label": "D",
+       "text": "10"
+      }
+     ],
+     "answer": "D",
+     "explanation": "108里的10个十要进到十位，所以进10；只进1就把进位的数算小了。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p268_q4",
+     "topicId": "mbj_p268",
+     "prompt": "每箱苹果重18千克，25箱一共重多少千克？",
+     "question": "每箱苹果重18千克，25箱一共重多少千克？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "450",
+     "verify": "18*25",
+     "explanation": "18×25=450：18×5=90，18×20=360，90加360得450千克。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p268_q5",
+     "topicId": "mbj_p268",
+     "prompt": "计算 46×35，正确的结果是哪一个？",
+     "question": "计算 46×35，正确的结果是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "1610"
+      },
+      {
+       "label": "B",
+       "text": "368"
+      },
+      {
+       "label": "C",
+       "text": "1660"
+      },
+      {
+       "label": "D",
+       "text": "16100"
+      }
+     ],
+     "answer": "A",
+     "explanation": "46×35=1610：46×5=230，46×3=138（表示1380），230加1380得1610。1660是漏加进位，368是第二层积错位相加。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p268_q6",
+     "topicId": "mbj_p268",
+     "prompt": "笔算 58×24，积是（ ）。",
+     "question": "笔算 58×24，积是（ ）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "1392",
+     "explanation": "58×4=232，个位写2向十位进23；58×2=116再加23得139，所以积是1392。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p268_q7",
+     "topicId": "mbj_p268",
+     "prompt": "学校买了16箱图书，每箱有45本，一共买了多少本？",
+     "question": "学校买了16箱图书，每箱有45本，一共买了多少本？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "720",
+     "verify": "16*45",
+     "explanation": "45×16=720：45×6=270，45×10=450，270加450得720本。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p268_q8",
+     "topicId": "mbj_p268",
+     "prompt": "小明笔算 37×26 时漏加了个位乘得的进位，只算出十位积74，得到762。正确结果是多少？错在哪里？",
+     "question": "小明笔算 37×26 时漏加了个位乘得的进位，只算出十位积74，得到762。正确结果是多少？错在哪里？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "正确结果是962。个位6乘37得222，个位写2、向十位进22；十位2乘37得74，还要加上22得96，所以积为962。他漏加了进位22，结果少了200。",
+     "explanation": "正确结果是962。6×37=222，个位写2并向十位进22；2×37=74再加22得96，即962。他漏加进位22，少了200。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p269",
+   "description": "学习一个乘数末尾有0的乘法笔算，先把0前面的数相乘，再在积的末尾补上相同个数的0，并会处理补0后积的末尾又产生新的0的情况。",
+   "mastery_criteria": [
+    "能把末尾有0的乘法转化成先算0前面的数",
+    "能正确判断积末尾要补几个0",
+    "能解决末尾有0的实际乘法问题"
+   ],
+   "misconceptions": [
+    "补0时多补或少补一个0",
+    "把末尾的0也逐位参与相乘，数位错乱",
+    "认为积末尾0的个数一定等于两乘数0的个数之和"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p269_q1",
+     "topicId": "mbj_p269",
+     "prompt": "口算 24×30 的积是多少？",
+     "question": "口算 24×30 的积是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "720",
+     "verify": "24*30",
+     "explanation": "先算24×3=72，乘数30末尾有1个0，在72后面添1个0，得720。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p269_q2",
+     "topicId": "mbj_p269",
+     "prompt": "计算 45×20，下面哪种算法正确？",
+     "question": "计算 45×20，下面哪种算法正确？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "先算45×2=90，直接得90"
+      },
+      {
+       "label": "B",
+       "text": "先算45×2=90，再在90后面添1个0得900"
+      },
+      {
+       "label": "C",
+       "text": "先算45×2=90，再在90后面添2个0得9000"
+      },
+      {
+       "label": "D",
+       "text": "先算45×200=9000，结果就是9000"
+      }
+     ],
+     "answer": "B",
+     "explanation": "45×20可以先算45×2=90，因为乘数末尾有1个0，再在90后面添1个0得900；添2个0就变成9000，扩大了10倍。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p269_q3",
+     "topicId": "mbj_p269",
+     "prompt": "口算 130×20，积是（ ）。",
+     "question": "口算 130×20，积是（ ）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "2600",
+     "explanation": "先算13×2=26，两个乘数末尾一共有2个0，在26后面添2个0得2600。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p269_q4",
+     "topicId": "mbj_p269",
+     "prompt": "每箱矿泉水有32瓶，30箱共有多少瓶？",
+     "question": "每箱矿泉水有32瓶，30箱共有多少瓶？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "960",
+     "verify": "32*30",
+     "explanation": "32×30先算32×3=96，再添1个0，得960瓶。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p269_q5",
+     "topicId": "mbj_p269",
+     "prompt": "笔算 150×24，积是（ ）。",
+     "question": "笔算 150×24，积是（ ）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "3600",
+     "explanation": "先算15×24=360，乘数150末尾有1个0，在360后面添1个0，得3600。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p269_q6",
+     "topicId": "mbj_p269",
+     "prompt": "下面算式中，结果与 250×4 相等的是哪一个？",
+     "question": "下面算式中，结果与 250×4 相等的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "25×4"
+      },
+      {
+       "label": "B",
+       "text": "2500×4"
+      },
+      {
+       "label": "C",
+       "text": "25×40"
+      },
+      {
+       "label": "D",
+       "text": "250×40"
+      }
+     ],
+     "answer": "C",
+     "explanation": "250×4=1000，25×40也是1000：一个乘数缩小10倍、另一个扩大10倍，积不变。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p269_q7",
+     "topicId": "mbj_p269",
+     "prompt": "一台洗衣机售价1080元，学校买了20台，一共要付多少元？",
+     "question": "一台洗衣机售价1080元，学校买了20台，一共要付多少元？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "21600",
+     "verify": "1080*20",
+     "explanation": "1080×20先算108×2=216，两个乘数末尾一共有2个0，添上后得21600元。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p269_q8",
+     "topicId": "mbj_p269",
+     "prompt": "有人说：两个乘数末尾一共有2个0，积的末尾就一定只有2个0。这种说法对吗？请举例说明。",
+     "question": "有人说：两个乘数末尾一共有2个0，积的末尾就一定只有2个0。这种说法对吗？请举例说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "不对。例如25×40，两个乘数末尾一共只有1个0，可是25×4=100本身带2个0，补上1个0后积是1000，末尾有3个0。0前面的数相乘也可能产生新的0。",
+     "explanation": "不对。例如25×40=1000，两个乘数末尾只有1个0，积的末尾却有3个0，因为25×4=100本身已产生新的0。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p270",
+   "description": "学习两位数乘两位数的估算，把乘数看成接近的整十数或整百数求近似积，能判断估算结果比实际大还是小，并会用估算解决够不够、大约多少的问题。",
+   "mastery_criteria": [
+    "能把乘数看成接近的整十数进行估算",
+    "能判断估算结果比实际积大还是小",
+    "能用估算判断带的钱够不够"
+   ],
+   "misconceptions": [
+    "把估算结果当成准确结果来回答",
+    "估算时两个乘数都往小看却不说明结论",
+    "把39看成40后说不出估算偏大还是偏小"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p270_q1",
+     "topicId": "mbj_p270",
+     "prompt": "估算 49×32 时，把49看成50、32看成30，积大约是（ ）。",
+     "question": "估算 49×32 时，把49看成50、32看成30，积大约是（ ）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "1500",
+     "explanation": "50×30=1500，所以49×32的积大约是1500，比准确积1568少一些。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p270_q2",
+     "topicId": "mbj_p270",
+     "prompt": "每张门票39元，21名同学去参观，把39看成40、21看成20，大约需要多少元？",
+     "question": "每张门票39元，21名同学去参观，把39看成40、21看成20，大约需要多少元？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "800",
+     "verify": "40*20",
+     "explanation": "40×20=800，带的钱要比800元多一些才保险，因为实际是39×21=819元。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p270_q3",
+     "topicId": "mbj_p270",
+     "prompt": "估算 62×18 时，下面哪种做法最合理？",
+     "question": "估算 62×18 时，下面哪种做法最合理？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "70×20"
+      },
+      {
+       "label": "B",
+       "text": "60×10"
+      },
+      {
+       "label": "C",
+       "text": "100×20"
+      },
+      {
+       "label": "D",
+       "text": "60×20"
+      }
+     ],
+     "answer": "D",
+     "explanation": "把62看成60、18看成20，60×20=1200，两个乘数都接近整十数，估算最快也最接近准确积1116。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p270_q4",
+     "topicId": "mbj_p270",
+     "prompt": "每个足球48元，买23个。把48看成50、23看成20，估算大约需要多少元？",
+     "question": "每个足球48元，买23个。把48看成50、23看成20，估算大约需要多少元？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "1000",
+     "verify": "50*20",
+     "explanation": "50×20=1000，所以大约需要1000元；准确值是1104元，说明1000元不够。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p270_q5",
+     "topicId": "mbj_p270",
+     "prompt": "估算 39×21 得到800，这个估算结果与实际积相比（ ）。",
+     "question": "估算 39×21 得到800，这个估算结果与实际积相比（ ）。",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "比实际积小"
+      },
+      {
+       "label": "B",
+       "text": "比实际积大"
+      },
+      {
+       "label": "C",
+       "text": "与实际积相等"
+      },
+      {
+       "label": "D",
+       "text": "无法判断大小"
+      }
+     ],
+     "answer": "A",
+     "explanation": "把39看成40是估大、把21看成20是估小，实际39×21=819，比800大19，所以估算结果偏小。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p270_q6",
+     "topicId": "mbj_p270",
+     "prompt": "估算 78×51 时，把78看成80、51看成50，积大约是（ ）。",
+     "question": "估算 78×51 时，把78看成80、51看成50，积大约是（ ）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "4000",
+     "explanation": "80×50=4000，所以78×51的积大约是4000，准确值是3978。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p270_q7",
+     "topicId": "mbj_p270",
+     "prompt": "估算 49×49 时把两个乘数都看成50，得到2500。这个乘法实际的积是多少？",
+     "question": "估算 49×49 时把两个乘数都看成50，得到2500。这个乘法实际的积是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "2401",
+     "verify": "49*49",
+     "explanation": "49×49=2401：49×50=2450，再减去1个49，得2401。估算值2500比实际积大99。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p270_q8",
+     "topicId": "mbj_p270",
+     "prompt": "估算 41×19，把41看成40、19看成20，得到800。这个估算结果比实际积大还是小？请说明理由。",
+     "question": "估算 41×19，把41看成40、19看成20，得到800。这个估算结果比实际积大还是小？请说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "比实际积大。41×19=779。把41看成40少算了1个19，把19看成20多算了1个41，多算的比少算的多22，所以估算结果比实际积大21。",
+     "explanation": "比实际积大，41×19=779。把41看成40少算19，把19看成20多算41，多算的比少算的多22，所以估算值800偏大。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p271",
+   "description": "学习三位数乘两位数的笔算，会用个位和十位上的数分别去乘三位数，把两层积按数位对齐相加，能处理计算中的进位，并会解决乘车、购物等相应的实际问题。",
+   "mastery_criteria": [
+    "能正确笔算三位数乘两位数",
+    "能说出每一层积的数位对齐规则",
+    "能用乘法解决相关的实际问题"
+   ],
+   "misconceptions": [
+    "只用百位和十位上的数去乘，漏掉个位上的数",
+    "第二层积的末位与个位对齐",
+    "以为三位数乘两位数的积一定是四位数"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p271_q1",
+     "topicId": "mbj_p271",
+     "prompt": "用竖式计算 123×12 的积。",
+     "question": "用竖式计算 123×12 的积。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "1476",
+     "verify": "123*12",
+     "explanation": "123×2=246，123×10=1230，246加1230得1476。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p271_q2",
+     "topicId": "mbj_p271",
+     "prompt": "笔算 234×21 时，用十位上的2乘234得到的积，末位要和哪一位对齐？",
+     "question": "笔算 234×21 时，用十位上的2乘234得到的积，末位要和哪一位对齐？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "个位"
+      },
+      {
+       "label": "B",
+       "text": "十位"
+      },
+      {
+       "label": "C",
+       "text": "百位"
+      },
+      {
+       "label": "D",
+       "text": "千位"
+      }
+     ],
+     "answer": "B",
+     "explanation": "十位上的2表示2个十，乘得468个十，末位必须与十位对齐，这样相加才不多不少。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p271_q3",
+     "topicId": "mbj_p271",
+     "prompt": "笔算 112×13，积是（ ）。",
+     "question": "笔算 112×13，积是（ ）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "1456",
+     "explanation": "112×3=336，112×10=1120，336加1120得1456。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p271_q4",
+     "topicId": "mbj_p271",
+     "prompt": "每套校服128元，学校买了24套，一共要付多少元？",
+     "question": "每套校服128元，学校买了24套，一共要付多少元？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "3072",
+     "verify": "128*24",
+     "explanation": "128×24=3072：128×4=512，128×20=2560，512加2560得3072元。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p271_q5",
+     "topicId": "mbj_p271",
+     "prompt": "计算 305×24，正确的结果是哪一个？",
+     "question": "计算 305×24，正确的结果是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "1220"
+      },
+      {
+       "label": "B",
+       "text": "732"
+      },
+      {
+       "label": "C",
+       "text": "7320"
+      },
+      {
+       "label": "D",
+       "text": "73200"
+      }
+     ],
+     "answer": "C",
+     "explanation": "305×24=7320：305×4=1220，305×20=6100，1220加6100得7320。1220只算了乘个位的一层。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p271_q6",
+     "topicId": "mbj_p271",
+     "prompt": "笔算 246×15，积的千位上的数字是（ ）。",
+     "question": "笔算 246×15，积的千位上的数字是（ ）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "3",
+     "explanation": "246×5=1230，246×10=2460，1230加2460得3690，千位上的数字是3。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p271_q7",
+     "topicId": "mbj_p271",
+     "prompt": "一列火车每小时行156千米，行驶18小时，一共行多少千米？",
+     "question": "一列火车每小时行156千米，行驶18小时，一共行多少千米？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "2808",
+     "verify": "156*18",
+     "explanation": "156×18=2808：156×8=1248，156×10=1560，1248加1560得2808千米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p271_q8",
+     "topicId": "mbj_p271",
+     "prompt": "小明笔算 214×32 得到1070，他的错误可能在哪里？请写出正确结果。",
+     "question": "小明笔算 214×32 得到1070，他的错误可能在哪里？请写出正确结果。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "他把十位上的3当成3来乘，只算了214×5=1070。正确应先算214×2=428，再算214×30=6420，两层相加得6848。",
+     "explanation": "他把十位上的3当成3，只算了214×5=1070。正确结果应为214×2=428，214×30=6420，相加得6848。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p272",
+   "description": "复习两位数乘两位数的口算、笔算与估算方法，整理计算中常见的错位、漏进位、少补0等问题，能根据题目特点选择合适算法并解决两步的乘法实际问题。",
+   "mastery_criteria": [
+    "能根据需要选择口算、笔算或估算",
+    "能检查并改正乘法计算中的错误",
+    "能解决两步计算的乘法实际问题"
+   ],
+   "misconceptions": [
+    "所有题都硬笔算，不会用估算快速判断范围",
+    "把估算得到的近似值当作准确答案",
+    "检查时只看积的末尾，不核对每一层积"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p272_q1",
+     "topicId": "mbj_p272",
+     "prompt": "计算 15×60，最简便的做法是哪一种？",
+     "question": "计算 15×60，最简便的做法是哪一种？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "先算15×6=90，直接得90"
+      },
+      {
+       "label": "B",
+       "text": "先算15×6=90，再在90后面添2个0"
+      },
+      {
+       "label": "C",
+       "text": "先算15×6=90，再把90除以10"
+      },
+      {
+       "label": "D",
+       "text": "先算15×6=90，再在90后面添1个0得900"
+      }
+     ],
+     "answer": "D",
+     "explanation": "先算15×6=90，因为60末尾有1个0，再在90后面添1个0得900，比列竖式逐位相乘快得多。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p272_q2",
+     "topicId": "mbj_p272",
+     "prompt": "口算 32×20 的积是多少？",
+     "question": "口算 32×20 的积是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "640",
+     "verify": "32*20",
+     "explanation": "先算32×2=64，乘数20末尾有1个0，在64后面添1个0，得640。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p272_q3",
+     "topicId": "mbj_p272",
+     "prompt": "估算 58×32 时，把58看成60、32看成30，积大约是（ ）。",
+     "question": "估算 58×32 时，把58看成60、32看成30，积大约是（ ）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "1800",
+     "explanation": "60×30=1800，所以58×32的积大约是1800，准确值是1856。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p272_q4",
+     "topicId": "mbj_p272",
+     "prompt": "三年级有4个班，每班45人，每人交12元活动费，一共交多少元？",
+     "question": "三年级有4个班，每班45人，每人交12元活动费，一共交多少元？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "2160",
+     "verify": "4*45*12",
+     "explanation": "先求总人数4×45=180人，再求总钱数180×12=2160元。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p272_q5",
+     "topicId": "mbj_p272",
+     "prompt": "下面各题中，计算结果正确的是哪一个？",
+     "question": "下面各题中，计算结果正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "36×25=900"
+      },
+      {
+       "label": "B",
+       "text": "36×25=800"
+      },
+      {
+       "label": "C",
+       "text": "36×25=90"
+      },
+      {
+       "label": "D",
+       "text": "36×25=9000"
+      }
+     ],
+     "answer": "A",
+     "explanation": "36×25=900：36×5=180，36×20=720，180加720得900。800是漏加进位，90是只算了个位一层。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p272_q6",
+     "topicId": "mbj_p272",
+     "prompt": "笔算 47×36，积是（ ）。",
+     "question": "笔算 47×36，积是（ ）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "1692",
+     "explanation": "47×6=282，47×30=1410，282加1410得1692。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p272_q7",
+     "topicId": "mbj_p272",
+     "prompt": "礼堂每排有22个座位，共18排。三年级360人参加活动，座位够坐，还空多少个座位？",
+     "question": "礼堂每排有22个座位，共18排。三年级360人参加活动，座位够坐，还空多少个座位？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "36",
+     "verify": "22*18-360",
+     "explanation": "座位总数22×18=396个，396减360得36，还空36个座位。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p272_q8",
+     "topicId": "mbj_p272",
+     "prompt": "小明算 45×32 时，把 45×3=135 和 45×2=90 加起来得到225。这样算对吗？为什么？",
+     "question": "小明算 45×32 时，把 45×3=135 和 45×2=90 加起来得到225。这样算对吗？为什么？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "不对。45×32表示32个45，十位上的3表示3个十，45×3=135表示135个十，也就是1350，90加1350应得1440。把135直接和90相加，等于把十位上的3当成了3。",
+     "explanation": "不对。十位上的3表示3个十，45×3=135实际是1350，与90相加得1440；把135直接加90就把3当成3来算了。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p273",
+   "description": "结合生活实例认识线段、射线和直线，知道线段有两个端点、长度有限，射线有一个端点、一端无限延长，直线没有端点、两端无限延长，并能辨认和画出这三种线。",
+   "mastery_criteria": [
+    "能说出线段、射线、直线各自的端点个数",
+    "能判断每种线的长度是否有限",
+    "能画出三种线并用字母表示"
+   ],
+   "misconceptions": [
+    "认为射线有两个端点、可以量出长度",
+    "把直线说成能量出长度",
+    "以为把线段一端延长后还是线段"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.05",
+    "quote": "认识三角形和四边形，会根据图形特征对三角形和四边形进行分类"
+   },
+   "questions": [
+    {
+     "id": "mbj_p273_q1",
+     "topicId": "mbj_p273",
+     "prompt": "下面哪一种线有两个端点，可以量出它的长度？",
+     "question": "下面哪一种线有两个端点，可以量出它的长度？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "射线"
+      },
+      {
+       "label": "B",
+       "text": "线段"
+      },
+      {
+       "label": "C",
+       "text": "直线"
+      },
+      {
+       "label": "D",
+       "text": "圆"
+      }
+     ],
+     "answer": "B",
+     "explanation": "线段有两个端点，两端都封住了，所以长度有限、可以测量；射线和直线都朝着一端或两端无限延长，量不出长度。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p273_q2",
+     "topicId": "mbj_p273",
+     "prompt": "一条射线有（ ）个端点。",
+     "question": "一条射线有（ ）个端点。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "1",
+     "explanation": "射线只有一个端点，从端点出发向一方无限延长，所以量不出长度。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p273_q3",
+     "topicId": "mbj_p273",
+     "prompt": "下面说法正确的是哪一个？",
+     "question": "下面说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "射线有两个端点，长度有限"
+      },
+      {
+       "label": "B",
+       "text": "线段可以向两端无限延长"
+      },
+      {
+       "label": "C",
+       "text": "直线没有端点，两端都可以无限延长"
+      },
+      {
+       "label": "D",
+       "text": "射线可以量出它的长度"
+      }
+     ],
+     "answer": "C",
+     "explanation": "直线没有端点，两端都可以无限延长；射线有一个端点，线段有两个端点且长度有限。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p273_q4",
+     "topicId": "mbj_p273",
+     "prompt": "经过一个点可以画（ ）条直线。",
+     "question": "经过一个点可以画（ ）条直线。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "无数",
+     "explanation": "经过一个点可以向四面八方画出许多条直线，数量多得数不完，所以说可以画无数条。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p273_q5",
+     "topicId": "mbj_p273",
+     "prompt": "线段、射线和直线有什么相同点，又有什么不同点？请分别说明。",
+     "question": "线段、射线和直线有什么相同点，又有什么不同点？请分别说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "相同点：三种线都是直的。不同点：线段有两个端点，长度有限；射线只有一个端点，一端无限延长；直线没有端点，两端都无限延长，所以射线和直线都量不出长度。",
+     "explanation": "相同点是都是直的；不同点在于端点个数和能否延长：线段两个端点、长度有限，射线一个端点、一端无限延长，直线没有端点、两端都无限延长。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p274",
+   "description": "结合图形进一步辨认线段、射线和直线，会用字母读出并记作「线段AB」「射线AB」「直线AB」，能在图中数出线段的条数，体会端点决定线的种类。",
+   "mastery_criteria": [
+    "能用字母正确读、记三种线",
+    "能在图中不重不漏地数出线段条数",
+    "能根据端点个数判断线的种类"
+   ],
+   "misconceptions": [
+    "把「射线AB」与「射线BA」当成同一条",
+    "数线段时把同一条线段数了两次",
+    "以为一条直线上的两点间能画出多条线段"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.04",
+    "quote": "能说出线段、射线和直线的共性与区别"
+   },
+   "questions": [
+    {
+     "id": "mbj_p274_q1",
+     "topicId": "mbj_p274",
+     "prompt": "一条线段有两个端点A和B，这条线段可以记作（ ）。",
+     "question": "一条线段有两个端点A和B，这条线段可以记作（ ）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "线段AB",
+     "explanation": "线段的记法是把两个端点字母写出来，前面写「线段」，所以记作线段AB，也可以写成线段BA。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p274_q2",
+     "topicId": "mbj_p274",
+     "prompt": "射线AB的端点是哪一个点？",
+     "question": "射线AB的端点是哪一个点？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "点B"
+      },
+      {
+       "label": "B",
+       "text": "点A和点B"
+      },
+      {
+       "label": "C",
+       "text": "没有端点"
+      },
+      {
+       "label": "D",
+       "text": "点A"
+      }
+     ],
+     "answer": "D",
+     "explanation": "射线AB的写法中，前面的字母A就是端点，射线从A出发经过B向一方无限延长。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p274_q3",
+     "topicId": "mbj_p274",
+     "prompt": "下面哪一种线可以向两端无限延长？",
+     "question": "下面哪一种线可以向两端无限延长？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "直线"
+      },
+      {
+       "label": "B",
+       "text": "线段"
+      },
+      {
+       "label": "C",
+       "text": "射线"
+      },
+      {
+       "label": "D",
+       "text": "三种线都可以"
+      }
+     ],
+     "answer": "A",
+     "explanation": "只有直线没有端点，可以朝两端一直延长；射线只能朝一端延长，线段两端都被端点封住。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p274_q4",
+     "topicId": "mbj_p274",
+     "prompt": "一条直线上有A、B、C三个点，图中共有（ ）条线段。",
+     "question": "一条直线上有A、B、C三个点，图中共有（ ）条线段。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "3",
+     "explanation": "以A为左端点的有AB、AC两条，以B为左端点的有BC一条，一共3条，这样数不重不漏。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p274_q5",
+     "topicId": "mbj_p274",
+     "prompt": "一条直线上有A、B、C、D四个点，一共可以数出多少条线段？",
+     "question": "一条直线上有A、B、C、D四个点，一共可以数出多少条线段？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "6",
+     "verify": "4*3/2",
+     "explanation": "以A为左端点3条，以B为左端点2条，以C为左端点1条，3加2加1等于6条。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p274_q6",
+     "topicId": "mbj_p274",
+     "prompt": "关于射线AB和射线BA，下面说法正确的是哪一个？",
+     "question": "关于射线AB和射线BA，下面说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "它们是同一条射线"
+      },
+      {
+       "label": "B",
+       "text": "它们是两条不同的射线"
+      },
+      {
+       "label": "C",
+       "text": "它们其实都是直线"
+      },
+      {
+       "label": "D",
+       "text": "它们的端点都是点B"
+      }
+     ],
+     "answer": "B",
+     "explanation": "射线AB的端点是A、方向由A经过B；射线BA的端点是B、方向由B经过A。端点不同、方向不同，是两条不同的射线。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p274_q7",
+     "topicId": "mbj_p274",
+     "prompt": "一条直线上有A、B、C、D、E五个点，一共可以数出（ ）条线段。",
+     "question": "一条直线上有A、B、C、D、E五个点，一共可以数出（ ）条线段。",
+     "type": "fill",
+     "difficulty": "hard",
+     "answer": "10",
+     "explanation": "按左端点分类：以A为左端点4条，以B为左端点3条，以C为左端点2条，以D为左端点1条，4加3加2加1等于10条。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p274_q8",
+     "topicId": "mbj_p274",
+     "prompt": "数一条直线上5个点组成的线段时，用4＋3＋2＋1＝10的方法为什么不会重复也不会遗漏？",
+     "question": "数一条直线上5个点组成的线段时，用4＋3＋2＋1＝10的方法为什么不会重复也不会遗漏？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "按左端点分类数：以A为左端点的线段有4条，以B为左端点的有3条，以C为左端点的有2条，以D为左端点的有1条，以E为左端点的一条也没有。每条线段只属于一个左端点，所以既不重复也不遗漏。",
+     "explanation": "因为按左端点分类，每条线段都有唯一的左端点，只被数一次：以A为左端点4条、B为3条、C为2条、D为1条，合计10条，不重不漏。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p275",
+   "description": "学习用圆规和无刻度直尺作一条与已知线段等长的线段，体会圆规量取长度的作用，知道作图时圆规两脚张开的大小要保持不变，并会用尺规比较两条线段的长短。",
+   "mastery_criteria": [
+    "能用圆规量取已知线段的长度",
+    "能按步骤作出一条与已知线段等长的线段",
+    "能用尺规比较两条线段的长短"
+   ],
+   "misconceptions": [
+    "先用直尺量出厘米数再画，以为这就是尺规作图",
+    "移动圆规时两脚张开的大小变了",
+    "作图后不标端点，也说不清作图步骤"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p275_q1",
+     "topicId": "mbj_p275",
+     "prompt": "用尺规作等长线段时，用来量取已知线段长度的工具是哪一个？",
+     "question": "用尺规作等长线段时，用来量取已知线段长度的工具是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "三角尺"
+      },
+      {
+       "label": "B",
+       "text": "量角器"
+      },
+      {
+       "label": "C",
+       "text": "圆规"
+      },
+      {
+       "label": "D",
+       "text": "直尺上的刻度"
+      }
+     ],
+     "answer": "C",
+     "explanation": "圆规两脚之间的开口可以「搬动」长度，用它对准线段的两个端点就把长度量了下来；直尺只用来画线。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p275_q2",
+     "topicId": "mbj_p275",
+     "prompt": "用圆规量取线段AB的长度时，一个针尖对准点A，另一个针尖要对准点（ ）。",
+     "question": "用圆规量取线段AB的长度时，一个针尖对准点A，另一个针尖要对准点（ ）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "线段的长度就是两个端点之间的距离，所以圆规两脚要分别对准A、B两点，开口大小才等于线段AB的长。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p275_q3",
+     "topicId": "mbj_p275",
+     "prompt": "尺规作图中，直尺的作用是什么？",
+     "question": "尺规作图中，直尺的作用是什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "量出线段有几厘米"
+      },
+      {
+       "label": "B",
+       "text": "量出一个角有多少度"
+      },
+      {
+       "label": "C",
+       "text": "量出圆的半径是几厘米"
+      },
+      {
+       "label": "D",
+       "text": "把两点连接起来画线"
+      }
+     ],
+     "answer": "D",
+     "explanation": "尺规作图只用无刻度直尺和圆规：圆规量长度、画弧，直尺只负责把点连成线，不能拿刻度去量长度。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p275_q4",
+     "topicId": "mbj_p275",
+     "prompt": "用圆规量好线段AB的长度后，把针尖放在新线段的一个端点上画弧，圆规两脚张开的大小要（ ）。",
+     "question": "用圆规量好线段AB的长度后，把针尖放在新线段的一个端点上画弧，圆规两脚张开的大小要（ ）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "不变",
+     "explanation": "只有保持圆规张开的大小不变，画出的弧到端点的距离才等于AB的长，作出的线段才与AB等长。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p275_q5",
+     "topicId": "mbj_p275",
+     "prompt": "说一说用尺规作一条与线段AB等长的线段的步骤。",
+     "question": "说一说用尺规作一条与线段AB等长的线段的步骤。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "先画一条射线，以射线的端点为一个端点；用圆规两脚分别对准A、B两点，量出AB的长；保持圆规张开大小不变，把针尖放在射线端点上画弧，弧与射线的交点就是另一个端点，得到的线段与AB等长。",
+     "explanation": "先画一条射线，用圆规对准A、B两点量出AB的长；保持开口不变，把针尖放在射线端点上画弧，弧与射线的交点作为另一个端点，连出的线段就与AB等长。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p275_q6",
+     "topicId": "mbj_p275",
+     "prompt": "移动圆规时如果不小心让两脚张开变小了，画出的线段会怎样？",
+     "question": "移动圆规时如果不小心让两脚张开变小了，画出的线段会怎样？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "比原线段短"
+      },
+      {
+       "label": "B",
+       "text": "比原线段长"
+      },
+      {
+       "label": "C",
+       "text": "与原线段等长"
+      },
+      {
+       "label": "D",
+       "text": "画不出任何线段"
+      }
+     ],
+     "answer": "A",
+     "explanation": "圆规张开的距离就是画出的线段长度，开口变小，弧到端点的距离就变小，画出的线段比原线段短。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p275_q7",
+     "topicId": "mbj_p275",
+     "prompt": "要判断线段AB和线段CD谁更长，用尺规比较时最合适的做法是哪一个？",
+     "question": "要判断线段AB和线段CD谁更长，用尺规比较时最合适的做法是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "用眼睛直接目测两条线段的长短"
+      },
+      {
+       "label": "B",
+       "text": "用圆规量取AB，以C为端点画弧，看D落在弧内还是弧外"
+      },
+      {
+       "label": "C",
+       "text": "只看哪条线段画得粗一些"
+      },
+      {
+       "label": "D",
+       "text": "把两条线段都画在纸上比谁的端点大"
+      }
+     ],
+     "answer": "B",
+     "explanation": "用圆规把AB的长度搬到CD上：以C为端点画弧，如果D落在弧内说明AB更长，D落在弧外说明CD更长，这样不用量刻度就能比较。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p275_q8",
+     "topicId": "mbj_p275",
+     "prompt": "明明说：我先用直尺量出线段AB长5厘米，再在新位置画一条5厘米的线段，这也是尺规作图。他的说法对吗？请说明理由。",
+     "question": "明明说：我先用直尺量出线段AB长5厘米，再在新位置画一条5厘米的线段，这也是尺规作图。他的说法对吗？请说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "不对。尺规作图只允许使用圆规和无刻度直尺，不能用直尺上的刻度去量长度。正确做法是用圆规两脚分别对准A、B两点量取长度，再在新的射线上截取，得到的才是尺规作出的等长线段。",
+     "explanation": "不对。尺规作图只能用圆规和无刻度直尺，不能借助直尺刻度量厘米数；应当用圆规对准A、B两点量取长度，再在射线上截取。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p276",
+   "description": "认识周长和面积的含义，知道周长是一周边线的长度、面积是表面的大小，会计算长方形与正方形的周长和面积，并能区分长度单位与面积单位。",
+   "mastery_criteria": [
+    "能说出周长与面积分别指什么",
+    "能正确计算长方形、正方形的周长和面积",
+    "能区分周长单位与面积单位"
+   ],
+   "misconceptions": [
+    "把周长公式和面积公式用混",
+    "面积的结果写成厘米而不是平方厘米",
+    "认为周长大的图形面积一定大"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.07",
+    "quote": "探索并掌握长方形、正方形的周长和面积的计算公式"
+   },
+   "questions": [
+    {
+     "id": "mbj_p276_q1",
+     "topicId": "mbj_p276",
+     "prompt": "封闭图形一周的长度，叫作它的什么？",
+     "question": "封闭图形一周的长度，叫作它的什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "面积"
+      },
+      {
+       "label": "B",
+       "text": "边长"
+      },
+      {
+       "label": "C",
+       "text": "周长"
+      },
+      {
+       "label": "D",
+       "text": "体积"
+      }
+     ],
+     "answer": "C",
+     "explanation": "围成图形所有边线的总长度叫周长，它描述的是一周边线的长短，不是表面的大小。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p276_q2",
+     "topicId": "mbj_p276",
+     "prompt": "长方形长8厘米、宽5厘米，它的周长是多少厘米？",
+     "question": "长方形长8厘米、宽5厘米，它的周长是多少厘米？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "26",
+     "verify": "(8+5)*2",
+     "explanation": "长方形有两组相等的边，8加5得13，13乘2得26厘米，就是四条边的总长度。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p276_q3",
+     "topicId": "mbj_p276",
+     "prompt": "长方形长9米、宽6米，它的面积是多少平方米？",
+     "question": "长方形长9米、宽6米，它的面积是多少平方米？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "54",
+     "verify": "9*6",
+     "explanation": "长方形的面积是长乘宽，9乘6得54平方米，表示里面能铺54个1平方米的正方形。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p276_q4",
+     "topicId": "mbj_p276",
+     "prompt": "边长7分米的正方形，面积是（ ）平方分米。",
+     "question": "边长7分米的正方形，面积是（ ）平方分米。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "49",
+     "explanation": "正方形的面积是边长乘边长，7乘7得49，所以面积是49平方分米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p276_q5",
+     "topicId": "mbj_p276",
+     "prompt": "周长相等的两个长方形，面积一定相等吗？请举例说明。",
+     "question": "周长相等的两个长方形，面积一定相等吗？请举例说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "不一定。比如周长都是20厘米的两个长方形：长6厘米、宽4厘米的面积是24平方厘米；长8厘米、宽2厘米的面积是16平方厘米。周长相同，形状不同，面积就不同。",
+     "explanation": "不一定相等。周长都是20厘米时，长6宽4的面积24平方厘米，长8宽2的面积只有16平方厘米，可见周长相等面积可以不等。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p277",
+   "description": "认识周长的含义，能沿着图形的边线描出一周、说出周长是几条边长度的和，会用直尺测量并计算三角形、四边形和长方形的周长，能把它与面积区分开。",
+   "mastery_criteria": [
+    "能描出图形的一周并说明什么是周长",
+    "能测量并计算多边形的周长",
+    "能区分周长与面积的不同"
+   ],
+   "misconceptions": [
+    "只算了几条边中的一部分，漏掉一条边",
+    "把图形里面的面积算进周长",
+    "求长方形周长时只算长加宽，忘记乘2"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.04",
+    "quote": "认识长度单位干米，知道分米、毫米"
+   },
+   "questions": [
+    {
+     "id": "mbj_p277_q1",
+     "topicId": "mbj_p277",
+     "prompt": "三角形的周长指的是什么？",
+     "question": "三角形的周长指的是什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "三条边围成的面的大小"
+      },
+      {
+       "label": "B",
+       "text": "最长那条边的长度"
+      },
+      {
+       "label": "C",
+       "text": "三条边长度的平均数"
+      },
+      {
+       "label": "D",
+       "text": "三条边长度的和"
+      }
+     ],
+     "answer": "D",
+     "explanation": "三角形一周由三条边围成，把三条边的长度加起来就是它的周长。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p277_q2",
+     "topicId": "mbj_p277",
+     "prompt": "三角形三条边分别长3厘米、4厘米、5厘米，它的周长是多少厘米？",
+     "question": "三角形三条边分别长3厘米、4厘米、5厘米，它的周长是多少厘米？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "12",
+     "verify": "3+4+5",
+     "explanation": "周长是三条边长度的和，3加4加5得12厘米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p277_q3",
+     "topicId": "mbj_p277",
+     "prompt": "正方形边长6厘米，它的周长是（ ）厘米。",
+     "question": "正方形边长6厘米，它的周长是（ ）厘米。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "24",
+     "explanation": "正方形四条边一样长，周长就是4个6厘米相加，6乘4得24厘米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p277_q4",
+     "topicId": "mbj_p277",
+     "prompt": "长方形花坛长12米、宽8米，沿花坛边围一圈栅栏，需要多少米栅栏？",
+     "question": "长方形花坛长12米、宽8米，沿花坛边围一圈栅栏，需要多少米栅栏？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "40",
+     "verify": "(12+8)*2",
+     "explanation": "栅栏的长度就是花坛的周长，12加8得20，20乘2得40米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p277_q5",
+     "topicId": "mbj_p277",
+     "prompt": "计算长方形的周长，正确的算式是哪一个？",
+     "question": "计算长方形的周长，正确的算式是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "（长＋宽）×2"
+      },
+      {
+       "label": "B",
+       "text": "长×宽"
+      },
+      {
+       "label": "C",
+       "text": "长＋宽"
+      },
+      {
+       "label": "D",
+       "text": "长×宽×2"
+      }
+     ],
+     "answer": "A",
+     "explanation": "长方形有两条长、两条宽，所以周长是长与宽的和乘2；长乘宽算的是面积。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p277_q6",
+     "topicId": "mbj_p277",
+     "prompt": "一个四边形四条边分别长5厘米、6厘米、7厘米、8厘米，它的周长是多少厘米？",
+     "question": "一个四边形四条边分别长5厘米、6厘米、7厘米、8厘米，它的周长是多少厘米？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "26",
+     "verify": "5+6+7+8",
+     "explanation": "四边形的周长是四条边长度的和，5加6加7加8得26厘米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p277_q7",
+     "topicId": "mbj_p277",
+     "prompt": "用一根24厘米长的铁丝正好围成一个正方形，这个正方形的边长是多少厘米？",
+     "question": "用一根24厘米长的铁丝正好围成一个正方形，这个正方形的边长是多少厘米？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "6",
+     "verify": "24/4",
+     "explanation": "铁丝长就是正方形的周长，四条边一样长，24除以4得6厘米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p277_q8",
+     "topicId": "mbj_p277",
+     "prompt": "为什么求长方形的周长要把长与宽的和乘2，而不是用长乘宽？",
+     "question": "为什么求长方形的周长要把长与宽的和乘2，而不是用长乘宽？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "长方形有两组相等的边，一组是一条长和一条宽，它们的和乘2就是四条边的总长度，也就是周长。长乘宽算的是一行能摆几个小正方形、能摆几行，得到的是面积，不是一周边线的长度。",
+     "explanation": "因为长方形两条长两条宽，长加宽的和乘2正好是四条边的总长，即周长；长乘宽得到的是里面小正方形的个数，是面积。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p278",
+   "description": "认识面积的含义，知道面积是物体表面或封闭图形的大小，会用观察、重叠、数方格等方法比较两个图形面积的大小，并能说清面积与周长的区别。",
+   "mastery_criteria": [
+    "能说出面积指的是什么",
+    "能用数方格的方法比较面积大小",
+    "能从量和单位两方面区分面积与周长"
+   ],
+   "misconceptions": [
+    "把图形边线的长度当成图形的面积",
+    "数方格时把不满一格的直接算成一格",
+    "认为形状不同的图形面积一定不同"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.04",
+    "quote": "认识长度单位干米，知道分米、毫米"
+   },
+   "questions": [
+    {
+     "id": "mbj_p278_q1",
+     "topicId": "mbj_p278",
+     "prompt": "物体表面或封闭图形的大小，叫作它们的什么？",
+     "question": "物体表面或封闭图形的大小，叫作它们的什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "周长"
+      },
+      {
+       "label": "B",
+       "text": "面积"
+      },
+      {
+       "label": "C",
+       "text": "边长"
+      },
+      {
+       "label": "D",
+       "text": "高"
+      }
+     ],
+     "answer": "B",
+     "explanation": "面积描述的是表面有多大，比如桌面的大小、课本封面的大小。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p278_q2",
+     "topicId": "mbj_p278",
+     "prompt": "一个图形里正好铺了9个同样大的小正方形，这个图形的面积就是（ ）个小正方形的面积。",
+     "question": "一个图形里正好铺了9个同样大的小正方形，这个图形的面积就是（ ）个小正方形的面积。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "9",
+     "explanation": "数方格比较面积时，铺满图形的小正方形有几个，面积就是几个小正方形的面积。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p278_q3",
+     "topicId": "mbj_p278",
+     "prompt": "一个长方形里正好摆12个边长1厘米的小正方形，这个长方形的面积是多少平方厘米？",
+     "question": "一个长方形里正好摆12个边长1厘米的小正方形，这个长方形的面积是多少平方厘米？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "12",
+     "verify": "12*1",
+     "explanation": "每个小正方形的面积是1平方厘米，摆了12个正好铺满，所以面积是12平方厘米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p278_q4",
+     "topicId": "mbj_p278",
+     "prompt": "要比较两个图形面积的大小，下面哪种方法最可靠？",
+     "question": "要比较两个图形面积的大小，下面哪种方法最可靠？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "看哪个图形的边线更长"
+      },
+      {
+       "label": "B",
+       "text": "看哪个图形边的条数更多"
+      },
+      {
+       "label": "C",
+       "text": "用同样大的小方格分别铺满再数格数"
+      },
+      {
+       "label": "D",
+       "text": "看哪个图形画得更好看"
+      }
+     ],
+     "answer": "C",
+     "explanation": "用同样大的小方格分别铺满两个图形再数格数，格数多的面积大，这样比较有统一的标准。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p278_q5",
+     "topicId": "mbj_p278",
+     "prompt": "一个正方形里正好铺满16个边长1分米的小正方形，这个正方形的面积是多少平方分米？",
+     "question": "一个正方形里正好铺满16个边长1分米的小正方形，这个正方形的面积是多少平方分米？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "16",
+     "verify": "4*4",
+     "explanation": "每个小正方形的面积是1平方分米，16个正好铺满，所以面积是16平方分米，它的边长是4分米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p278_q6",
+     "topicId": "mbj_p278",
+     "prompt": "把两个完全一样的三角形拼成一个正方形，这个正方形的面积是一个三角形面积的（ ）倍。",
+     "question": "把两个完全一样的三角形拼成一个正方形，这个正方形的面积是一个三角形面积的（ ）倍。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "2",
+     "explanation": "拼成的正方形正好由这两个三角形组成，没有多也没有少，所以它的面积是一个三角形面积的2倍。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p278_q7",
+     "topicId": "mbj_p278",
+     "prompt": "两个图形的周长相等，它们的面积会怎样？",
+     "question": "两个图形的周长相等，它们的面积会怎样？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "一定相等"
+      },
+      {
+       "label": "B",
+       "text": "一定不相等"
+      },
+      {
+       "label": "C",
+       "text": "一定相差2倍"
+      },
+      {
+       "label": "D",
+       "text": "可能不相等"
+      }
+     ],
+     "answer": "D",
+     "explanation": "周长相等只说明一周边线一样长，图形的形状可能不同，面积就可能不相等，例如长6宽4和长8宽2的长方形周长都是20。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p278_q8",
+     "topicId": "mbj_p278",
+     "prompt": "周长和面积有什么不同？请从「量什么」和「用什么单位」两方面说明。",
+     "question": "周长和面积有什么不同？请从「量什么」和「用什么单位」两方面说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "周长量的是图形一周边线的长度，用厘米、分米、米这样的长度单位；面积量的是图形表面的大小，用平方厘米、平方分米、平方米这样的面积单位。两者量的对象不同，单位也不同。",
+     "explanation": "周长量一周边线的长短，用长度单位如厘米、米；面积量表面的大小，用面积单位如平方厘米、平方米。量的对象和单位都不同。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p279",
+   "description": "认识平方厘米、平方分米、平方米等面积单位，知道1平方厘米、1平方分米、1平方米的实际大小，能根据物体大小选择合适的面积单位并进行简单的单位换算。",
+   "mastery_criteria": [
+    "能说出常用面积单位的名称与写法",
+    "能根据物体大小选择合适的面积单位",
+    "会进行相邻面积单位之间的换算"
+   ],
+   "misconceptions": [
+    "把平方分米写成「分米」，单位混淆",
+    "以为1平方米等于100平方厘米",
+    "给教室地面的面积填「平方厘米」"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.03",
+    "quote": "认识面积单位厘米”、分米`、米;能进行简单的单位换算"
+   },
+   "questions": [
+    {
+     "id": "mbj_p279_q1",
+     "topicId": "mbj_p279",
+     "prompt": "边长1厘米的正方形，面积是多少？",
+     "question": "边长1厘米的正方形，面积是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "1平方厘米"
+      },
+      {
+       "label": "B",
+       "text": "1厘米"
+      },
+      {
+       "label": "C",
+       "text": "1平方分米"
+      },
+      {
+       "label": "D",
+       "text": "1平方米"
+      }
+     ],
+     "answer": "A",
+     "explanation": "边长1厘米的正方形面积规定为1平方厘米，平方厘米是面积单位，厘米是长度单位。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p279_q2",
+     "topicId": "mbj_p279",
+     "prompt": "一本数学书封面的面积大约是3（ ）。",
+     "question": "一本数学书封面的面积大约是3（ ）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "平方分米",
+     "explanation": "课本封面比手掌大一些但不到1平方米，用平方分米计量合适，大约3平方分米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p279_q3",
+     "topicId": "mbj_p279",
+     "prompt": "1平方分米等于多少平方厘米？",
+     "question": "1平方分米等于多少平方厘米？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "100",
+     "verify": "10*10",
+     "explanation": "1分米等于10厘米，边长10厘米的正方形面积是10乘10等于100平方厘米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p279_q4",
+     "topicId": "mbj_p279",
+     "prompt": "3平方米等于多少平方分米？",
+     "question": "3平方米等于多少平方分米？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "300",
+     "verify": "3*100",
+     "explanation": "1平方米等于100平方分米，3平方米就是3个100，得300平方分米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p279_q5",
+     "topicId": "mbj_p279",
+     "prompt": "教室地面的面积大约是48（ ）。",
+     "question": "教室地面的面积大约是48（ ）。",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "平方分米"
+      },
+      {
+       "label": "B",
+       "text": "平方米"
+      },
+      {
+       "label": "C",
+       "text": "平方厘米"
+      },
+      {
+       "label": "D",
+       "text": "米"
+      }
+     ],
+     "answer": "B",
+     "explanation": "教室地面比一张课桌大得多，用平方米计量合适，48平方米大约是一间普通教室的大小。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p279_q6",
+     "topicId": "mbj_p279",
+     "prompt": "500平方厘米＝（ ）平方分米。",
+     "question": "500平方厘米＝（ ）平方分米。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "5",
+     "explanation": "100平方厘米是1平方分米，500平方厘米里有5个100，所以等于5平方分米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p279_q7",
+     "topicId": "mbj_p279",
+     "prompt": "2平方米等于多少平方厘米？",
+     "question": "2平方米等于多少平方厘米？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "20000",
+     "verify": "2*10000",
+     "explanation": "1平方米等于10000平方厘米，2平方米就是2个10000，得20000平方厘米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p279_q8",
+     "topicId": "mbj_p279",
+     "prompt": "为什么1平方米等于10000平方厘米，而不是100平方厘米？请说明理由。",
+     "question": "为什么1平方米等于10000平方厘米，而不是100平方厘米？请说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为1米等于100厘米，边长1米的正方形也就是边长100厘米的正方形，它的面积是100乘100等于10000平方厘米。米与厘米的进率是100，面积单位的进率要把100再平方一次，所以是10000。",
+     "explanation": "边长1米就是100厘米，100乘100得10000平方厘米。长度单位进率100，面积单位进率要再平方，所以1平方米是10000平方厘米。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p280",
+   "description": "结合分东西的情境初步认识分数，知道把一个整体平均分成若干份，其中的一份或几份可以用几分之一、几分之几表示，会读写分数并比较简单分数的大小。",
+   "mastery_criteria": [
+    "能说出分数中分子、分母各表示什么",
+    "能用分数表示平均分后的一份或几份",
+    "能比较同分母或同分子分数的大小"
+   ],
+   "misconceptions": [
+    "没有平均分也用分数表示",
+    "把分子和分母的位置说反",
+    "认为分母越大，这个分数就越大"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.02",
+    "quote": "结合具体情境，初步认识小数和分数，感悟分数单位"
+   },
+   "questions": [
+    {
+     "id": "mbj_p280_q1",
+     "topicId": "mbj_p280",
+     "prompt": "把一个饼平均分成4份，其中1份是这个饼的几分之几？",
+     "question": "把一个饼平均分成4份，其中1份是这个饼的几分之几？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "四分之三"
+      },
+      {
+       "label": "B",
+       "text": "二分之一"
+      },
+      {
+       "label": "C",
+       "text": "四分之一"
+      },
+      {
+       "label": "D",
+       "text": "四分之二"
+      }
+     ],
+     "answer": "C",
+     "explanation": "平均分成4份，每份就是四分之一；分母表示平均分的份数，分子表示取的份数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p280_q2",
+     "topicId": "mbj_p280",
+     "prompt": "分数三分之二中，分母是（ ）。",
+     "question": "分数三分之二中，分母是（ ）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "3",
+     "explanation": "分数线下面的数叫分母，表示平均分成的份数；三分之二的分母是3，分子是2。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p280_q3",
+     "topicId": "mbj_p280",
+     "prompt": "把一个蛋糕平均分成8份，吃了其中的3份，吃了几分之几？",
+     "question": "把一个蛋糕平均分成8份，吃了其中的3份，吃了几分之几？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "八分之三",
+     "explanation": "平均分成8份作分母，吃了3份作分子，所以是八分之三。如果写成三分之八就把分子分母说反了。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p280_q4",
+     "topicId": "mbj_p280",
+     "prompt": "下面几个分数中，最大的是哪一个？",
+     "question": "下面几个分数中，最大的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "三分之一"
+      },
+      {
+       "label": "B",
+       "text": "四分之一"
+      },
+      {
+       "label": "C",
+       "text": "五分之一"
+      },
+      {
+       "label": "D",
+       "text": "二分之一"
+      }
+     ],
+     "answer": "D",
+     "explanation": "分子都是1时，平均分的份数越少，每一份越大，所以二分之一大于三分之一、四分之一、五分之一。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p280_q5",
+     "topicId": "mbj_p280",
+     "prompt": "为什么五分之一比三分之一小？请结合「平均分的份数」说明理由。",
+     "question": "为什么五分之一比三分之一小？请结合「平均分的份数」说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "把同样大的一个整体平均分的份数越多，每一份就越小。平均分成5份时每份比平均分成3份时每份小，所以五分之一小于三分之一。",
+     "explanation": "因为同样大的整体平均分成5份，每份比平均分成3份时更小，分的份数越多每份越小，所以五分之一小于三分之一。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p281",
+   "description": "认识几分之一和几分之几，理解分数是把一个整体平均分后表示其中一份或几份的数，会读写分数、说出各部分名称，能用分数表示图形中的涂色部分并比较同分母分数的大小。",
+   "mastery_criteria": [
+    "能正确读写分数并说出各部分名称",
+    "能用分数表示图形中的涂色部分或空白部分",
+    "能比较同分母分数的大小"
+   ],
+   "misconceptions": [
+    "把分母写成涂色份数、分子写成总份数",
+    "看图时把未涂色部分当成分子",
+    "认为同分母分数中分子小的分数反而大"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.02",
+    "quote": "能直观描述小数和分数，能比较简单的小数的大小和分数的大小"
+   },
+   "questions": [
+    {
+     "id": "mbj_p281_q1",
+     "topicId": "mbj_p281",
+     "prompt": "一个分数中，横线下面的数叫作（ ）。",
+     "question": "一个分数中，横线下面的数叫作（ ）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "分母",
+     "explanation": "分数线下面的数叫分母，表示把整体平均分成的份数；上面的数叫分子，表示取的份数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p281_q2",
+     "topicId": "mbj_p281",
+     "prompt": "把一个圆平均分成6份，涂色3份，涂色部分是这个圆的几分之几？",
+     "question": "把一个圆平均分成6份，涂色3份，涂色部分是这个圆的几分之几？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "六分之三"
+      },
+      {
+       "label": "B",
+       "text": "三分之六"
+      },
+      {
+       "label": "C",
+       "text": "六分之一"
+      },
+      {
+       "label": "D",
+       "text": "六分之五"
+      }
+     ],
+     "answer": "A",
+     "explanation": "平均分成6份，分母是6；涂了3份，分子是3，所以涂色部分是六分之三。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p281_q3",
+     "topicId": "mbj_p281",
+     "prompt": "把一个整体平均分成9份，取其中的4份，用分数表示是（ ）。",
+     "question": "把一个整体平均分成9份，取其中的4份，用分数表示是（ ）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "九分之四",
+     "explanation": "平均分成的9份作分母，取的4份作分子，写作九分之四。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p281_q4",
+     "topicId": "mbj_p281",
+     "prompt": "一个正方形平均分成8份，涂色5份，空白部分是整个正方形的（ ）。",
+     "question": "一个正方形平均分成8份，涂色5份，空白部分是整个正方形的（ ）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "八分之三",
+     "explanation": "平均分成的8份作分母；涂了5份，空白还剩8减5等于3份，所以空白部分是八分之三。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p281_q5",
+     "topicId": "mbj_p281",
+     "prompt": "比较七分之三和七分之五的大小，正确的是哪一个？",
+     "question": "比较七分之三和七分之五的大小，正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "七分之三大于七分之五"
+      },
+      {
+       "label": "B",
+       "text": "七分之三小于七分之五"
+      },
+      {
+       "label": "C",
+       "text": "两个分数一样大"
+      },
+      {
+       "label": "D",
+       "text": "两个分数无法比较"
+      }
+     ],
+     "answer": "B",
+     "explanation": "分母相同说明每份一样大，七分之三有3个七分之一，七分之五有5个七分之一，份数多的分数大。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p281_q6",
+     "topicId": "mbj_p281",
+     "prompt": "五分之四里面有（ ）个五分之一。",
+     "question": "五分之四里面有（ ）个五分之一。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "4",
+     "explanation": "五分之四表示把整体平均分成5份取4份，所以里面有4个五分之一。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p281_q7",
+     "topicId": "mbj_p281",
+     "prompt": "下面说法正确的是哪一个？",
+     "question": "下面说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "把一个物体分成5份，每份就是它的五分之一"
+      },
+      {
+       "label": "B",
+       "text": "五分之二表示把一个物体分成2份"
+      },
+      {
+       "label": "C",
+       "text": "把一个物体平均分成5份，每份是它的五分之一"
+      },
+      {
+       "label": "D",
+       "text": "分母是分数横线上面的那个数"
+      }
+     ],
+     "answer": "C",
+     "explanation": "只有平均分才能用分数表示每一份；随意分成5份，每份大小不一定相同，就不能说是五分之一。分母是横线下面的数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p281_q8",
+     "topicId": "mbj_p281",
+     "prompt": "用一根绳子表示四分之一，可以怎样做？请写出操作过程并说明理由。",
+     "question": "用一根绳子表示四分之一，可以怎样做？请写出操作过程并说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "把绳子对折一次得到2段一样长的部分，再对折一次就得到4段一样长的部分，每一段就是整根绳子的四分之一。因为是平均分成4份、取其中1份，所以用四分之一表示。",
+     "explanation": "把绳子连续对折两次，得到4段一样长的部分，每段就是整根绳子的四分之一；因为平均分成4份取1份，所以是四分之一。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p282",
+   "description": "学习同分母分数的加法和减法，理解分母不变、只把分子相加或相减的道理，会计算1减几分之几，并能解决简单的分数加减实际问题。",
+   "mastery_criteria": [
+    "能计算同分母分数的加法和减法",
+    "能说清同分母分数加减时分母不变的理由",
+    "能解决简单的分数加减实际问题"
+   ],
+   "misconceptions": [
+    "把分母也相加，得出八分之四这样的结果",
+    "分子分母分别相加后不知道结果是多少",
+    "算1减几分之几时不会把1看成同分母分数"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p282_q1",
+     "topicId": "mbj_p282",
+     "prompt": "五分之二加五分之一等于（ ）。",
+     "question": "五分之二加五分之一等于（ ）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "五分之三",
+     "explanation": "分母相同，每份一样大，2份加1份是3份，分母还是5，所以结果是五分之三。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p282_q2",
+     "topicId": "mbj_p282",
+     "prompt": "计算七分之三加七分之二，正确的结果是哪一个？",
+     "question": "计算七分之三加七分之二，正确的结果是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "十四分之五"
+      },
+      {
+       "label": "B",
+       "text": "七分之六"
+      },
+      {
+       "label": "C",
+       "text": "四十九分之六"
+      },
+      {
+       "label": "D",
+       "text": "七分之五"
+      }
+     ],
+     "answer": "D",
+     "explanation": "分母不变，分子3加2得5，结果是七分之五；把分母也相加得到十四分之五就错了。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p282_q3",
+     "topicId": "mbj_p282",
+     "prompt": "一块蛋糕平均分成9份，哥哥吃了九分之二，妹妹吃了九分之三，两人一共吃了九分之几？",
+     "question": "一块蛋糕平均分成9份，哥哥吃了九分之二，妹妹吃了九分之三，两人一共吃了九分之几？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "5",
+     "verify": "2+3",
+     "explanation": "分母都是9，份数相加即可：2加3得5，所以一共吃了九分之五。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p282_q4",
+     "topicId": "mbj_p282",
+     "prompt": "1减四分之一等于（ ）。",
+     "question": "1减四分之一等于（ ）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "四分之三",
+     "explanation": "把1看成四分之四，四分之四减四分之一，分母不变，分子4减1得3，结果是四分之三。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p282_q5",
+     "topicId": "mbj_p282",
+     "prompt": "同分母分数相加时，下面说法正确的是哪一个？",
+     "question": "同分母分数相加时，下面说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "分母不变，分子相加"
+      },
+      {
+       "label": "B",
+       "text": "分子和分母都要相加"
+      },
+      {
+       "label": "C",
+       "text": "分子不变，分母相加"
+      },
+      {
+       "label": "D",
+       "text": "先通分，再把分子分母都相加"
+      }
+     ],
+     "answer": "A",
+     "explanation": "分母表示平均分的份数，份数没有变，所以分母不变；变的只是取的份数，也就是分子相加。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p282_q6",
+     "topicId": "mbj_p282",
+     "prompt": "一根绳子用去它的八分之三，还剩它的八分之几？",
+     "question": "一根绳子用去它的八分之三，还剩它的八分之几？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "5",
+     "verify": "8-3",
+     "explanation": "整根绳子是八分之八，用去3份还剩8减3等于5份，所以还剩八分之五。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p282_q7",
+     "topicId": "mbj_p282",
+     "prompt": "一杯果汁，先喝了它的六分之一，又喝了它的六分之三，还剩这杯果汁的（ ）。",
+     "question": "一杯果汁，先喝了它的六分之一，又喝了它的六分之三，还剩这杯果汁的（ ）。",
+     "type": "fill",
+     "difficulty": "hard",
+     "answer": "六分之二",
+     "explanation": "整杯是六分之六，一共喝了1加3等于4份，6减4等于2，还剩六分之二。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p282_q8",
+     "topicId": "mbj_p282",
+     "prompt": "为什么五分之二加五分之一等于五分之三，而不是十分之三？请说明理由。",
+     "question": "为什么五分之二加五分之一等于五分之三，而不是十分之三？请说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为五分之二和五分之一的分母相同，都是把同一个整体平均分成5份，每份大小一样，2份加1份正好3份。份数没变，所以分母还是5，只有分子2加1得3，结果是五分之三。",
+     "explanation": "两个分数分母相同，都是把同一整体平均分成5份，每份一样大，2份加1份是3份，份数不变，所以分母仍为5，分子相加得五分之三。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p283",
+   "description": "用乘法和除法表示实际问题中的数量关系，认识每份数、份数与总数的乘法模型，能分析连乘、连除、归一和不变量等问题的解题思路，并说明每一步算出的是什么。",
+   "mastery_criteria": [
+    "能找出实际问题中的每份数和份数",
+    "能用乘法模型列出算式并说明含义",
+    "能说出连乘、连除问题的解题思路"
+   ],
+   "misconceptions": [
+    "把每份数与份数弄反，算式意义说不清",
+    "连乘问题只算一步就作答",
+    "归一问题不先求一份数就直接乘"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.24",
+    "quote": "建立加法模型和乘法模型，知道模型中数量的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p283_q1",
+     "topicId": "mbj_p283",
+     "prompt": "每盒装6支笔，8盒一共多少支？这道题中的「每份数」是哪一个？",
+     "question": "每盒装6支笔，8盒一共多少支？这道题中的「每份数」是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "8盒"
+      },
+      {
+       "label": "B",
+       "text": "6支"
+      },
+      {
+       "label": "C",
+       "text": "48支"
+      },
+      {
+       "label": "D",
+       "text": "6盒"
+      }
+     ],
+     "answer": "B",
+     "explanation": "每份数是一份有多少，这里是每盒6支；8盒是份数，48支是总数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p283_q2",
+     "topicId": "mbj_p283",
+     "prompt": "每排摆8盆花，摆了6排，一共有多少盆花？",
+     "question": "每排摆8盆花，摆了6排，一共有多少盆花？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "48",
+     "verify": "8*6",
+     "explanation": "每份数8盆、份数6排，求总数用乘法，8乘6得48盆。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p283_q3",
+     "topicId": "mbj_p283",
+     "prompt": "一辆汽车每小时行60千米，4小时行多少千米？",
+     "question": "一辆汽车每小时行60千米，4小时行多少千米？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "240",
+     "verify": "60*4",
+     "explanation": "每小时行的60千米是每份数，4小时是份数，60乘4得240千米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p283_q4",
+     "topicId": "mbj_p283",
+     "prompt": "每箱有12瓶饮料，5箱一共有（ ）瓶。",
+     "question": "每箱有12瓶饮料，5箱一共有（ ）瓶。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "60",
+     "explanation": "每份数12瓶、份数5箱，12乘5得60瓶。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p283_q5",
+     "topicId": "mbj_p283",
+     "prompt": "在「每份数乘份数等于总数」这个关系中，已知总数和份数可以求出什么？请举例说明。",
+     "question": "在「每份数乘份数等于总数」这个关系中，已知总数和份数可以求出什么？请举例说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "可以求出每份数，用总数除以份数。例如5箱饮料共60瓶，60除以5得12，说明每箱有12瓶。同理已知总数和每份数，用总数除以每份数可以求出份数。",
+     "explanation": "可以求出每份数，用总数除以份数，例如60瓶装5箱，60除以5得12瓶。已知总数和每份数时，用总数除以每份数可求份数。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p284",
+   "description": "解决需要用两步乘法计算的连乘问题，能说清每一步求出的是什么，体会先求什么、再求什么的思考顺序，并会检验结果是否符合实际。",
+   "mastery_criteria": [
+    "能分步说清连乘问题每一步求的是什么",
+    "能正确列出连乘算式并计算",
+    "能检验结果是否符合实际"
+   ],
+   "misconceptions": [
+    "只算一步就把中间结果当答案",
+    "两步都用了除法",
+    "算式列对但说不清每一步表示什么"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.24",
+    "quote": "建立加法模型和乘法模型，知道模型中数量的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p284_q1",
+     "topicId": "mbj_p284",
+     "prompt": "每盒有4排酸奶，每排有6瓶，8盒一共有多少瓶？",
+     "question": "每盒有4排酸奶，每排有6瓶，8盒一共有多少瓶？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "192",
+     "verify": "4*6*8",
+     "explanation": "先求一盒有多少瓶：4乘6得24瓶；再求8盒：24乘8得192瓶。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p284_q2",
+     "topicId": "mbj_p284",
+     "prompt": "解决连乘问题时，如果第一步算的是「每盒有多少瓶」，第二步应该算什么？",
+     "question": "解决连乘问题时，如果第一步算的是「每盒有多少瓶」，第二步应该算什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "每排有多少瓶"
+      },
+      {
+       "label": "B",
+       "text": "一共有多少盒"
+      },
+      {
+       "label": "C",
+       "text": "几盒一共有多少瓶"
+      },
+      {
+       "label": "D",
+       "text": "每瓶要多少元"
+      }
+     ],
+     "answer": "C",
+     "explanation": "第一步求出每盒的数量，第二步要用它乘盒数，求出所有盒一共的数量，也就是总数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p284_q3",
+     "topicId": "mbj_p284",
+     "prompt": "每箱装12袋牛奶，每袋5元，买3箱一共（ ）元。",
+     "question": "每箱装12袋牛奶，每袋5元，买3箱一共（ ）元。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "180",
+     "explanation": "先求一箱多少元：12乘5得60元；再求3箱：60乘3得180元。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p284_q4",
+     "topicId": "mbj_p284",
+     "prompt": "学校有6个年级，每个年级4个班，每班有35人，全校一共有多少人？",
+     "question": "学校有6个年级，每个年级4个班，每班有35人，全校一共有多少人？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "840",
+     "verify": "6*4*35",
+     "explanation": "先求一共有几个班：6乘4得24个班；再求总人数：24乘35得840人。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p284_q5",
+     "topicId": "mbj_p284",
+     "prompt": "每排有15个座位，每场有8排，一天放3场。求一天共有多少个座位，正确的算式是哪一个？",
+     "question": "每排有15个座位，每场有8排，一天放3场。求一天共有多少个座位，正确的算式是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "15×8＋3"
+      },
+      {
+       "label": "B",
+       "text": "15＋8×3"
+      },
+      {
+       "label": "C",
+       "text": "15×3－8"
+      },
+      {
+       "label": "D",
+       "text": "15×8×3"
+      }
+     ],
+     "answer": "D",
+     "explanation": "先求一场有多少个座位15乘8，再乘场数3，列式15×8×3，求出一天的总座位数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p284_q6",
+     "topicId": "mbj_p284",
+     "prompt": "一个方阵每行9人，有9行，4个这样的方阵一共有（ ）人。",
+     "question": "一个方阵每行9人，有9行，4个这样的方阵一共有（ ）人。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "324",
+     "explanation": "先求一个方阵的人数：9乘9得81人；再求4个方阵：81乘4得324人。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p284_q7",
+     "topicId": "mbj_p284",
+     "prompt": "一箱饮料有24瓶，每瓶3元。学校买了15箱，一共要付多少元？",
+     "question": "一箱饮料有24瓶，每瓶3元。学校买了15箱，一共要付多少元？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "1080",
+     "verify": "24*3*15",
+     "explanation": "先求一箱多少钱：24乘3得72元；再求15箱：72乘15得1080元。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p284_q8",
+     "topicId": "mbj_p284",
+     "prompt": "解决「每盒6支笔，每支2元，买5盒」这个问题，先求什么、再求什么？请写出两种不同的解法。",
+     "question": "解决「每盒6支笔，每支2元，买5盒」这个问题，先求什么、再求什么？请写出两种不同的解法。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "第一种：先求一盒多少元，6乘2得12元，再求5盒共12乘5得60元。第二种：先求一共有多少支，6乘5得30支，再求总钱数30乘2得60元。两种解法结果相同，都是60元。",
+     "explanation": "解法一：先求一盒的价钱6×2=12元，再求5盒共12×5=60元。解法二：先求总支数6×5=30支，再求30×2=60元，结果都是60元。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p285",
+   "description": "解决需要用两步除法计算的连除问题，能说明每一步求的是什么，理解连除与「除以两数之积」结果相同的道理，并会检验答案是否合理。",
+   "mastery_criteria": [
+    "能分步说清连除问题每一步求的是什么",
+    "能正确列式并计算连除问题",
+    "能说明连除与除以两个数的积结果相同"
+   ],
+   "misconceptions": [
+    "两步都用乘法，结果越算越大",
+    "被除数和除数的位置颠倒",
+    "认为连除不能改写成除以两个数的积"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.24",
+    "quote": "建立加法模型和乘法模型，知道模型中数量的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p285_q1",
+     "topicId": "mbj_p285",
+     "prompt": "48个苹果平均分给4个小组，每个小组再平均分给3人，每人分到多少个？",
+     "question": "48个苹果平均分给4个小组，每个小组再平均分给3人，每人分到多少个？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4",
+     "verify": "48/4/3",
+     "explanation": "先求每组多少个：48除以4得12个；再求每人多少：12除以3得4个。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p285_q2",
+     "topicId": "mbj_p285",
+     "prompt": "「96本书平均放在2个书架上，每个书架有4层」，第一步96÷2求的是什么？",
+     "question": "「96本书平均放在2个书架上，每个书架有4层」，第一步96÷2求的是什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "一个书架放多少本"
+      },
+      {
+       "label": "B",
+       "text": "每层放多少本"
+      },
+      {
+       "label": "C",
+       "text": "一共有多少层"
+      },
+      {
+       "label": "D",
+       "text": "一共有几个书架"
+      }
+     ],
+     "answer": "A",
+     "explanation": "96本书平均放在2个书架上，除得的是一个书架放多少本；再除以层数才得到每层放多少本。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p285_q3",
+     "topicId": "mbj_p285",
+     "prompt": "120块糖平均装进3个盒子，每个盒子装（ ）块。",
+     "question": "120块糖平均装进3个盒子，每个盒子装（ ）块。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "40",
+     "explanation": "求每盒多少块就是把120平均分成3份，120除以3得40块。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p285_q4",
+     "topicId": "mbj_p285",
+     "prompt": "学校买来360本练习本，平均分给6个年级，每个年级有4个班，每班分到多少本？",
+     "question": "学校买来360本练习本，平均分给6个年级，每个年级有4个班，每班分到多少本？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "15",
+     "verify": "360/6/4",
+     "explanation": "先求每个年级多少本：360除以6得60本；再求每班多少本：60除以4得15本。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p285_q5",
+     "topicId": "mbj_p285",
+     "prompt": "360÷6÷4的结果与下面哪个算式相同？",
+     "question": "360÷6÷4的结果与下面哪个算式相同？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "360÷6×4"
+      },
+      {
+       "label": "B",
+       "text": "360÷（6×4）"
+      },
+      {
+       "label": "C",
+       "text": "360×6÷4"
+      },
+      {
+       "label": "D",
+       "text": "360÷（6÷4）"
+      }
+     ],
+     "answer": "B",
+     "explanation": "连除两个数等于除以这两个数的积：6乘4得24，360除以24得15，与依次相除的结果一样。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p285_q6",
+     "topicId": "mbj_p285",
+     "prompt": "720÷8÷9＝（ ）。",
+     "question": "720÷8÷9＝（ ）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "10",
+     "explanation": "先算720除以8得90，再算90除以9得10；也可以先算8乘9得72，720除以72得10。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p285_q7",
+     "topicId": "mbj_p285",
+     "prompt": "一批图书共960本，平均分给4个年级，每个年级有5个班，每班分到多少本？",
+     "question": "一批图书共960本，平均分给4个年级，每个年级有5个班，每班分到多少本？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "48",
+     "verify": "960/4/5",
+     "explanation": "先求每个年级多少本：960除以4得240本；再求每班多少本：240除以5得48本。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p285_q8",
+     "topicId": "mbj_p285",
+     "prompt": "为什么240÷4÷6和240÷（4×6）的结果一样？请结合具体情境说明。",
+     "question": "为什么240÷4÷6和240÷（4×6）的结果一样？请结合具体情境说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "240本书先平均分给4个组，每组60本，再每组平均分给6人，每人10本；而4乘6等于24，表示一共有24份，240除以24也得到10本。两种算法都是把总数平均分成24等份，所以结果相同。",
+     "explanation": "240先分给4组每组60本，再每组6人每人10本；4×6=24表示一共分成24份，240÷24也得10本，都是把总数平均分成24份，故结果相等。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p286",
+   "description": "解决归一问题，先求出「一份是多少」，再根据一份数求出几份或总数量是多少，体会先归一、再求总数的思考顺序，并会检验答案是否符合题意。",
+   "mastery_criteria": [
+    "能先求出一份数再求总数",
+    "能正确选择除法与乘法分步解答",
+    "能检验答案是否符合题意"
+   ],
+   "misconceptions": [
+    "不先求一份数，直接用倍数相乘",
+    "把求一份数的除法错写成乘法",
+    "归一之后忘记乘题目要求的份数"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.24",
+    "quote": "建立加法模型和乘法模型，知道模型中数量的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p286_q1",
+     "topicId": "mbj_p286",
+     "prompt": "3个同样的杯子一共装水600毫升，1个杯子装水多少毫升？",
+     "question": "3个同样的杯子一共装水600毫升，1个杯子装水多少毫升？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "200",
+     "verify": "600/3",
+     "explanation": "求一份是多少就用总数除以份数，600除以3得200毫升。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p286_q2",
+     "topicId": "mbj_p286",
+     "prompt": "解决归一问题，第一步一般要做什么？",
+     "question": "解决归一问题，第一步一般要做什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "先求出一共有几份"
+      },
+      {
+       "label": "B",
+       "text": "先求两个数的和"
+      },
+      {
+       "label": "C",
+       "text": "先求出一份是多少"
+      },
+      {
+       "label": "D",
+       "text": "先求两个数的差"
+      }
+     ],
+     "answer": "C",
+     "explanation": "归一问题的关键是先求出「一份是多少」，再用一份数求题目要问的总数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p286_q3",
+     "topicId": "mbj_p286",
+     "prompt": "4支同样的钢笔一共36元，1支钢笔（ ）元。",
+     "question": "4支同样的钢笔一共36元，1支钢笔（ ）元。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "9",
+     "explanation": "求一支的价钱就是把36元平均分成4份，36除以4得9元。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p286_q4",
+     "topicId": "mbj_p286",
+     "prompt": "5箱苹果共重75千克，照这样计算，8箱重多少千克？",
+     "question": "5箱苹果共重75千克，照这样计算，8箱重多少千克？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "120",
+     "verify": "75/5*8",
+     "explanation": "先求一箱多少千克：75除以5得15千克；再求8箱：15乘8得120千克。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p286_q5",
+     "topicId": "mbj_p286",
+     "prompt": "「3个书架放450本书，7个这样的书架能放多少本」，正确的算式是哪一个？",
+     "question": "「3个书架放450本书，7个这样的书架能放多少本」，正确的算式是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "450÷3÷7"
+      },
+      {
+       "label": "B",
+       "text": "450×3÷7"
+      },
+      {
+       "label": "C",
+       "text": "450÷（3×7）"
+      },
+      {
+       "label": "D",
+       "text": "450÷3×7"
+      }
+     ],
+     "answer": "D",
+     "explanation": "先求一个书架放多少本，用450除以3；再求7个书架的本书，乘7，所以列式450÷3×7。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p286_q6",
+     "topicId": "mbj_p286",
+     "prompt": "6辆同样的卡车一次运30吨货物，9辆这样的卡车一次运（ ）吨。",
+     "question": "6辆同样的卡车一次运30吨货物，9辆这样的卡车一次运（ ）吨。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "45",
+     "explanation": "先求一辆运多少吨：30除以6得5吨；再求9辆：5乘9得45吨。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p286_q7",
+     "topicId": "mbj_p286",
+     "prompt": "小明读一本书，4天读了48页，照这样的速度，读完一本156页的书需要多少天？",
+     "question": "小明读一本书，4天读了48页，照这样的速度，读完一本156页的书需要多少天？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "13",
+     "verify": "156/(48/4)",
+     "explanation": "先求每天读多少页：48除以4得12页；再求156页需要几天：156除以12得13天。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p286_q8",
+     "topicId": "mbj_p286",
+     "prompt": "「3只青蛙2天吃害虫600只」，要算1只青蛙1天吃多少只，可以先算什么、再算什么？",
+     "question": "「3只青蛙2天吃害虫600只」，要算1只青蛙1天吃多少只，可以先算什么、再算什么？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "可以先算3只青蛙1天吃多少只：600除以2得300只；再算1只青蛙1天吃多少只：300除以3得100只。也可以先算1只青蛙2天吃多少只：600除以3得200只，再除以2得100只。",
+     "explanation": "解法一：先算3只1天吃600÷2=300只，再算1只1天300÷3=100只。解法二：先算1只2天吃600÷3=200只，再除以2得100只。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p287",
+   "description": "解决数量在变化中保持不变的简单问题，能在「给来给去」「增减变化」的情境中找出总数不变、差不变、某一部分不变等量，并借助不变的量推算变化后的结果。",
+   "mastery_criteria": [
+    "能在变化情境中找出不变的量",
+    "能借助不变量推算变化后的结果",
+    "能说明答案为什么合理"
+   ],
+   "misconceptions": [
+    "认为两人互相给东西后总数也变了",
+    "把「差不变」当成「和不变」",
+    "只算变化的一方，忘记另一方也在变"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.24",
+    "quote": "建立加法模型和乘法模型，知道模型中数量的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p287_q1",
+     "topicId": "mbj_p287",
+     "prompt": "哥哥给弟弟5张卡片后，两人的卡片总数会怎样？",
+     "question": "哥哥给弟弟5张卡片后，两人的卡片总数会怎样？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "不变"
+      },
+      {
+       "label": "B",
+       "text": "增加5张"
+      },
+      {
+       "label": "C",
+       "text": "减少5张"
+      },
+      {
+       "label": "D",
+       "text": "增加10张"
+      }
+     ],
+     "answer": "A",
+     "explanation": "哥哥少了5张，弟弟多了5张，一少一多正好相抵，所以两人的卡片总数没有变。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p287_q2",
+     "topicId": "mbj_p287",
+     "prompt": "书架上下两层共有60本书，从上层拿8本放到下层，现在两层一共有多少本书？",
+     "question": "书架上下两层共有60本书，从上层拿8本放到下层，现在两层一共有多少本书？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "60",
+     "verify": "60",
+     "explanation": "只是把书从上层搬到下层，书没有增加也没有减少，所以总数仍然是60本。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p287_q3",
+     "topicId": "mbj_p287",
+     "prompt": "哥哥比弟弟大4岁，5年以后哥哥比弟弟大（ ）岁。",
+     "question": "哥哥比弟弟大4岁，5年以后哥哥比弟弟大（ ）岁。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "4",
+     "explanation": "两人年龄同时增加5岁，差不变，所以5年后哥哥仍比弟弟大4岁。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p287_q4",
+     "topicId": "mbj_p287",
+     "prompt": "两人一共有80元，甲给乙10元后两人的钱数相同，原来甲有多少元？",
+     "question": "两人一共有80元，甲给乙10元后两人的钱数相同，原来甲有多少元？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "50",
+     "verify": "80/2+10",
+     "explanation": "给完后两人相同，各是80除以2等于40元；甲给出了10元，原来有40加10等于50元。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p287_q5",
+     "topicId": "mbj_p287",
+     "prompt": "两个数的和是100，其中一个数增加20，另一个数减少20，这时两个数的和是多少？",
+     "question": "两个数的和是100，其中一个数增加20，另一个数减少20，这时两个数的和是多少？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "120"
+      },
+      {
+       "label": "B",
+       "text": "100"
+      },
+      {
+       "label": "C",
+       "text": "80"
+      },
+      {
+       "label": "D",
+       "text": "140"
+      }
+     ],
+     "answer": "B",
+     "explanation": "一个数增加20、另一个数减少20，一增一减互相抵消，总和不变，仍是100。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p287_q6",
+     "topicId": "mbj_p287",
+     "prompt": "一杯盐水重200克，蒸发掉50克水以后，盐的质量（ ）。",
+     "question": "一杯盐水重200克，蒸发掉50克水以后，盐的质量（ ）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "不变",
+     "explanation": "蒸发掉的只是水，盐没有跟着跑掉，所以盐水变轻了而盐的质量不变。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p287_q7",
+     "topicId": "mbj_p287",
+     "prompt": "甲桶有油48千克，乙桶有油24千克，从甲桶倒多少千克到乙桶后两桶油一样多？",
+     "question": "甲桶有油48千克，乙桶有油24千克，从甲桶倒多少千克到乙桶后两桶油一样多？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "12",
+     "verify": "(48-24)/2",
+     "explanation": "两桶油的总数不变，是72千克；倒完后各36千克，甲桶原有48千克，48减36得12千克。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p287_q8",
+     "topicId": "mbj_p287",
+     "prompt": "有两堆棋子，第一堆比第二堆多12个。从第一堆拿几个放到第二堆，两堆就一样多？请说明你的想法。",
+     "question": "有两堆棋子，第一堆比第二堆多12个。从第一堆拿几个放到第二堆，两堆就一样多？请说明你的想法。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "拿6个。第一堆比第二堆多12个，要使两堆相同，就要把多出的12个平均分成两份：自己留6个、给对方6个，差变成12减6减6等于0，两堆就一样多了。",
+     "explanation": "拿6个。把多出的12个平均分成两份，给对方6个、自己留6个，差就变成12-6-6=0，两堆同样多。",
+     "subject": "math-bj"
+    }
+   ]
+  }
+ ]
+}

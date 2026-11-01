@@ -1,0 +1,2362 @@
+{
+ "shard": "S29",
+ "subject": "math-bj",
+ "book": "八上",
+ "grade": 8,
+ "points": [
+  {
+   "topicId": "mbj_p540",
+   "name": "分式",
+   "grade": 8,
+   "description": "认识分式的意义：形如 A 除以 B、且分母 B 中含有字母的式子叫分式。会判断一个式子是不是分式，会由分母不为零求出分式有意义的字母取值，会由分子为零且分母不为零求分式值为零的条件。",
+   "mastery_criteria": [
+    "能说出分式的定义并判断给出的式子是否为分式",
+    "能由分母不为零求出分式有意义的字母取值范围",
+    "能由分子为零且分母不为零求分式值为零的条件"
+   ],
+   "misconceptions": [
+    "把分母是数的分数也当成分式",
+    "求分式值为零时只让分子为零，漏掉分母不为零"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.21",
+    "quote": "了解分式和最简分式的概念"
+   },
+   "questions": [
+    {
+     "id": "mbj_p540_q1",
+     "topicId": "mbj_p540",
+     "prompt": "下列各式中，属于分式的是哪一个？",
+     "question": "下列各式中，属于分式的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "5/3"
+      },
+      {
+       "label": "B",
+       "text": "(a+b)/2"
+      },
+      {
+       "label": "C",
+       "text": "2/(x-1)"
+      },
+      {
+       "label": "D",
+       "text": "(x+1)/3"
+      }
+     ],
+     "answer": "C",
+     "explanation": "分式要求分母中含有字母。5/3、(a+b)/2、(x+1)/3 的分母都是具体的数，只有 2/(x-1) 的分母含字母 x，所以它是分式。"
+    },
+    {
+     "id": "mbj_p540_q2",
+     "topicId": "mbj_p540",
+     "prompt": "当 x 等于 3 时，分式 6/(x-1) 的值是多少？",
+     "question": "当 x 等于 3 时，分式 6/(x-1) 的值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "3",
+     "verify": "6/(3-1)",
+     "explanation": "把 x=3 代入，分母 3-1=2，分子是 6，6 除以 2 得 3。代入前要先看分母是否为 0，这里分母是 2，分式有意义。"
+    },
+    {
+     "id": "mbj_p540_q3",
+     "topicId": "mbj_p540",
+     "prompt": "分式 (x+2)/(x-5) 有意义的条件是下列哪一项？",
+     "question": "分式 (x+2)/(x-5) 有意义的条件是下列哪一项？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 不等于 5"
+      },
+      {
+       "label": "B",
+       "text": "x 不等于 -2"
+      },
+      {
+       "label": "C",
+       "text": "x 不等于 0"
+      },
+      {
+       "label": "D",
+       "text": "x 等于 5"
+      }
+     ],
+     "answer": "A",
+     "explanation": "分式有意义的条件是分母不为零，即 x-5 不等于 0，解得 x 不等于 5。分子是 x 加 2，它取什么值与分式本身有没有意义没有关系。"
+    },
+    {
+     "id": "mbj_p540_q4",
+     "topicId": "mbj_p540",
+     "prompt": "若分式 (x-3)/(x+4) 的值为 0，则 x 的值是多少？",
+     "question": "若分式 (x-3)/(x+4) 的值为 0，则 x 的值是多少？",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "3",
+     "explanation": "分式的值为零要同时满足分子为零、分母不为零。由 x-3=0 得 x=3，此时分母 3+4=7 不为零，所以 x=3 符合要求。"
+    },
+    {
+     "id": "mbj_p540_q5",
+     "topicId": "mbj_p540",
+     "prompt": "一项工程，甲单独做要 a 天完成，乙单独做要 b 天完成。请用含 a、b 的式子表示两人合作一天完成的工作量，并说明这个式子为什么是分式。",
+     "question": "一项工程，甲单独做要 a 天完成，乙单独做要 b 天完成。请用含 a、b 的式子表示两人合作一天完成的工作量，并说明这个式子为什么是分式。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "把总工作量看作 1，甲一天完成 a 分之 1，乙一天完成 b 分之 1，合作一天完成 1/a 加 1/b，通分后是 (a+b)/(ab)。这个式子的分母中含有字母 a、b，所以是分式；又因为分式的分母不能为零，所以 a、b 都不能等于 0。",
+     "explanation": "工程问题把总工作量记作 1，工作效率等于工作量除以时间。判断是不是分式只看分母是否含字母，列式后还要写清字母不能取的值。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p541",
+   "name": "分式",
+   "grade": 8,
+   "description": "在具体式子中辨认分式：只有分母里含有字母的式子才是分式。会求分式有意义、没有意义时字母的取值，会求分式值为零的条件，能用分式表示简单的数量关系。",
+   "mastery_criteria": [
+    "能判断给出的式子是不是分式并说出理由",
+    "能求出使分式有意义或没有意义的字母取值",
+    "能列分式表示实际问题中的数量关系"
+   ],
+   "misconceptions": [
+    "认为含字母的式子都是分式，只看有没有字母不看分母",
+    "把分式没有意义错说成分子等于零"
+   ],
+   "std": {
+    "id": "mat-2022:4.XY.21",
+    "quote": "知道分式的分母不能为零，能利用分式的基本性质"
+   },
+   "questions": [
+    {
+     "id": "mbj_p541_q1",
+     "topicId": "mbj_p541",
+     "prompt": "下列各式中，不是分式的是哪一个？",
+     "question": "下列各式中，不是分式的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "3/x"
+      },
+      {
+       "label": "B",
+       "text": "(x+y)/5"
+      },
+      {
+       "label": "C",
+       "text": "(a-b)/(a+b)"
+      },
+      {
+       "label": "D",
+       "text": "1/(2x)"
+      }
+     ],
+     "answer": "B",
+     "explanation": "(x+y)/5 的分母是数字 5，不含字母，它是整式；3/x、(a-b)/(a+b)、1/(2x) 的分母都含字母，都是分式。"
+    },
+    {
+     "id": "mbj_p541_q2",
+     "topicId": "mbj_p541",
+     "prompt": "当 x 等于 2 时，分式 5/(x+3) 的值是多少？",
+     "question": "当 x 等于 2 时，分式 5/(x+3) 的值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "1",
+     "verify": "5/(2+3)",
+     "explanation": "把 x=2 代入分母得 2+3=5，分子也是 5，5 除以 5 等于 1。此时分母不为零，计算有意义。"
+    },
+    {
+     "id": "mbj_p541_q3",
+     "topicId": "mbj_p541",
+     "prompt": "要使分式 1/(x-7) 有意义，x 不能取的那个数是多少？",
+     "question": "要使分式 1/(x-7) 有意义，x 不能取的那个数是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "7",
+     "explanation": "分式有意义要求分母不为零，即 x-7 不等于 0，所以 x 不能等于 7；取其它任何数时分母都不为零。"
+    },
+    {
+     "id": "mbj_p541_q4",
+     "topicId": "mbj_p541",
+     "prompt": "分式 (x-1)/(x+1) 没有意义的条件是哪一个？",
+     "question": "分式 (x-1)/(x+1) 没有意义的条件是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 等于 1"
+      },
+      {
+       "label": "B",
+       "text": "x 等于 -1"
+      },
+      {
+       "label": "C",
+       "text": "x 等于 0"
+      },
+      {
+       "label": "D",
+       "text": "x 为任意实数"
+      }
+     ],
+     "answer": "B",
+     "explanation": "分式没有意义就是分母等于零，由 x+1=0 得 x=-1。分子 x-1 等于零时这个分式的值是 0，但分式本身仍有意义。"
+    },
+    {
+     "id": "mbj_p541_q5",
+     "topicId": "mbj_p541",
+     "prompt": "若分式 (x-2)/(x+3) 的值为 0，则 x 的值是多少？",
+     "question": "若分式 (x-2)/(x+3) 的值为 0，则 x 的值是多少？",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "2",
+     "explanation": "分子为零得 x=2，代回分母 2+3=5 不为零，符合分式值为零的两个条件，所以 x=2。"
+    },
+    {
+     "id": "mbj_p541_q6",
+     "topicId": "mbj_p541",
+     "prompt": "当 x 等于 4 时，分式 3x/(x-1) 的值是多少？",
+     "question": "当 x 等于 4 时，分式 3x/(x-1) 的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "4",
+     "verify": "3*4/(4-1)",
+     "explanation": "分子 3 乘 4 得 12，分母 4 减 1 得 3，12 除以 3 等于 4。代入时先算分母，确认不为零再求值。"
+    },
+    {
+     "id": "mbj_p541_q7",
+     "topicId": "mbj_p541",
+     "prompt": "无论 x 取什么实数，下列分式中一定有意义的哪一个？",
+     "question": "无论 x 取什么实数，下列分式中一定有意义的哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "1/(x+1)"
+      },
+      {
+       "label": "B",
+       "text": "1/x"
+      },
+      {
+       "label": "C",
+       "text": "1/(x的平方+1)"
+      },
+      {
+       "label": "D",
+       "text": "1/(x的平方-1)"
+      }
+     ],
+     "answer": "C",
+     "explanation": "x 的平方总不小于 0，所以 x的平方+1 一定大于 0，分母永不为零；而 x=-1、x=0、x=1 时另外三个分式的分母分别等于零，都会失去意义。"
+    },
+    {
+     "id": "mbj_p541_q8",
+     "topicId": "mbj_p541",
+     "prompt": "判断 5/π 和 (m+n)/(m-n) 是不是分式，并说明理由。",
+     "question": "判断 5/π 和 (m+n)/(m-n) 是不是分式，并说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "5/π 不是分式，因为 π 是一个确定的数，它的分母里没有字母，属于整式；而 (m+n)/(m-n) 是分式，它的分母 m-n 中含有字母，并且在 m 不等于 n 时才有意义。判断的关键是看分母中有没有字母。",
+     "explanation": "π 虽然写成字母形状，但它表示一个固定的数，不能当作字母变量看待。分式的分母里必须含有真正可以取不同值的字母。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p542",
+   "name": "分式的基本性质",
+   "grade": 8,
+   "description": "掌握分式的基本性质：分子与分母同乘或同除以一个不等于零的整式，分式的值不变。会依据这条性质进行约分和通分，会把分式化成最简分式，并会确定几个分式的最简公分母。",
+   "mastery_criteria": [
+    "能说出分式的基本性质并写出成立的限制条件",
+    "能通过约分把分式化成最简分式",
+    "能确定最简公分母并完成通分"
+   ],
+   "misconceptions": [
+    "分子分母同加同一个数，认为分式的值不变",
+    "把 (x+2)/(x+4) 中的 x 直接约掉写成 2/4"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.22",
+    "quote": "能利用分式的基本性质进行约分和通分"
+   },
+   "questions": [
+    {
+     "id": "mbj_p542_q1",
+     "topicId": "mbj_p542",
+     "prompt": "把分式 2x/(4y) 约分，结果是哪一个？",
+     "question": "把分式 2x/(4y) 约分，结果是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "1/(2y)"
+      },
+      {
+       "label": "B",
+       "text": "x/y"
+      },
+      {
+       "label": "C",
+       "text": "2x/y"
+      },
+      {
+       "label": "D",
+       "text": "x/(2y)"
+      }
+     ],
+     "answer": "D",
+     "explanation": "分子分母都含有因式 2，同除以 2 得 x/(2y)。约分约去的是公因式，分子分母各自除以 2，不是只除以其中一个。"
+    },
+    {
+     "id": "mbj_p542_q2",
+     "topicId": "mbj_p542",
+     "prompt": "把分式 6/(9x) 化成最简分式后，分子是多少？",
+     "question": "把分式 6/(9x) 化成最简分式后，分子是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "2",
+     "explanation": "分子分母的最大公因式是 3，同除以 3 得 2/(3x)，所以分子是 2；此时分子分母已没有公因式，是最简分式。"
+    },
+    {
+     "id": "mbj_p542_q3",
+     "topicId": "mbj_p542",
+     "prompt": "根据分式的基本性质，下列变形正确的是哪一个？",
+     "question": "根据分式的基本性质，下列变形正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "(a+1)/(b+1) 等于 a/b"
+      },
+      {
+       "label": "B",
+       "text": "(ac)/(bc) 等于 a/b（c 不等于 0）"
+      },
+      {
+       "label": "C",
+       "text": "(a的平方)/(b的平方) 等于 a/b"
+      },
+      {
+       "label": "D",
+       "text": "(a-1)/(b-1) 等于 a/b"
+      }
+     ],
+     "answer": "B",
+     "explanation": "只有分子分母同乘或同除以同一个不等于零的整式，分式的值才不变。(ac)/(bc) 是分子分母同除以 c，成立；(a+1)/(b+1) 是加不是乘，变形不保值。"
+    },
+    {
+     "id": "mbj_p542_q4",
+     "topicId": "mbj_p542",
+     "prompt": "分式 1/(2x) 与 1/(3x的平方) 的最简公分母是哪一个？",
+     "question": "分式 1/(2x) 与 1/(3x的平方) 的最简公分母是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "6x"
+      },
+      {
+       "label": "B",
+       "text": "6x的平方"
+      },
+      {
+       "label": "C",
+       "text": "3x的平方"
+      },
+      {
+       "label": "D",
+       "text": "6x的立方"
+      }
+     ],
+     "answer": "B",
+     "explanation": "最简公分母取各分母系数的最小公倍数 6，字母取次数最高的 x的平方，合起来是 6x的平方；取 6x的立方会多出不必要的因式。"
+    },
+    {
+     "id": "mbj_p542_q5",
+     "topicId": "mbj_p542",
+     "prompt": "约分 (8x的平方y)/(12xy的平方)，结果是多少？",
+     "question": "约分 (8x的平方y)/(12xy的平方)，结果是多少？",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "2x/(3y)",
+     "explanation": "系数 8 与 12 约去 4 得 2 与 3，字母 x的平方 与 x 约去一个 x，y 与 y的平方 约去一个 y，结果为 2x/(3y)。"
+    },
+    {
+     "id": "mbj_p542_q6",
+     "topicId": "mbj_p542",
+     "prompt": "把分式 (3a)/(4b) 的分子和分母都乘以 2b（b 不等于 0），得到的新分式是哪一个？",
+     "question": "把分式 (3a)/(4b) 的分子和分母都乘以 2b（b 不等于 0），得到的新分式是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "(6ab)/(8b的平方)"
+      },
+      {
+       "label": "B",
+       "text": "(6a)/(8b)"
+      },
+      {
+       "label": "C",
+       "text": "(3a)/(8b的平方)"
+      },
+      {
+       "label": "D",
+       "text": "(6ab)/(4b)"
+      }
+     ],
+     "answer": "A",
+     "explanation": "分子 3a 乘 2b 得 6ab，分母 4b 乘 2b 得 8b的平方，所以新分式是 (6ab)/(8b的平方)。同乘同一个整式，分式的值不变。"
+    },
+    {
+     "id": "mbj_p542_q7",
+     "topicId": "mbj_p542",
+     "prompt": "约分 (x的平方-4)/(x的平方+4x+4)，结果是哪一个？",
+     "question": "约分 (x的平方-4)/(x的平方+4x+4)，结果是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "(x-2)/(x+2)"
+      },
+      {
+       "label": "B",
+       "text": "(x+2)/(x-2)"
+      },
+      {
+       "label": "C",
+       "text": "(x-2)/(x+4)"
+      },
+      {
+       "label": "D",
+       "text": "(x-4)/(x+2)"
+      }
+     ],
+     "answer": "A",
+     "explanation": "分子用平方差公式分解成 (x-2)(x+2)，分母是完全平方式 (x+2) 的平方，约去一个 (x+2) 得 (x-2)/(x+2)，约分前必须先分解因式。"
+    },
+    {
+     "id": "mbj_p542_q8",
+     "topicId": "mbj_p542",
+     "prompt": "分式 (x-1)/(x的平方-1) 能约分成 1/(x+1) 吗？请说明依据和必须写明的条件。",
+     "question": "分式 (x-1)/(x的平方-1) 能约分成 1/(x+1) 吗？请说明依据和必须写明的条件。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "能约分。因为 x的平方-1 等于 (x+1)(x-1)，分子分母同除以 x-1 就得到 1/(x+1)，依据是分式的基本性质。但原分式有意义的条件是 x 不等于 1 且 x 不等于 -1，所以约分后仍要注明 x 不等于 1 这个限制。",
+     "explanation": "约分依据分式的基本性质，除以的整式必须不为零。x=1 时 x-1 等于零，这一步不能做，所以约分后不能把定义域悄悄扩大。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p543",
+   "name": "分式的乘除法",
+   "grade": 8,
+   "description": "掌握分式乘除的法则：分式乘分式，分子乘分子、分母乘分母；分式除以分式，把除式的分子分母颠倒后相乘。会先分解因式、约分，再把结果化成最简分式，并会用它解决简单的实际问题。",
+   "mastery_criteria": [
+    "能按法则计算两个分式的乘法与除法",
+    "能先分解因式、约分再写出最简结果",
+    "能列分式乘除的式子解决简单实际问题"
+   ],
+   "misconceptions": [
+    "做除法时忘记把除式颠倒相乘，直接分子除分子",
+    "约分只约数字，漏掉分子分母中的字母因式"
+   ],
+   "std": {
+    "id": "mat-2022:4.XY.23",
+    "quote": "减、乘、除运算并将运算结果化为最简分式"
+   },
+   "questions": [
+    {
+     "id": "mbj_p543_q1",
+     "topicId": "mbj_p543",
+     "prompt": "分式 a/b 与 c/d 相乘，结果是哪一个？",
+     "question": "分式 a/b 与 c/d 相乘，结果是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "(ab)/(cd)"
+      },
+      {
+       "label": "B",
+       "text": "(ad)/(bc)"
+      },
+      {
+       "label": "C",
+       "text": "(a+c)/(b+d)"
+      },
+      {
+       "label": "D",
+       "text": "(ac)/(bd)"
+      }
+     ],
+     "answer": "D",
+     "explanation": "分式乘法是分子与分子相乘、分母与分母相乘，所以得 (ac)/(bd)；把分子分母分别相加是分式加减里通分后的形式，不能混用。"
+    },
+    {
+     "id": "mbj_p543_q2",
+     "topicId": "mbj_p543",
+     "prompt": "计算 2/3 乘 9/4，结果是多少？",
+     "question": "计算 2/3 乘 9/4，结果是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "1.5",
+     "verify": "2/3*9/4",
+     "explanation": "分子 2 乘 9 得 18，分母 3 乘 4 得 12，18 除以 12 化简得 3/2，也就是 1.5。先约分再相乘也能得到同样结果。"
+    },
+    {
+     "id": "mbj_p543_q3",
+     "topicId": "mbj_p543",
+     "prompt": "计算 (x/y) 除以 (x/(2y))，结果是多少？",
+     "question": "计算 (x/y) 除以 (x/(2y))，结果是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "2",
+     "explanation": "除以一个分式等于乘它的倒数，即 (x/y) 乘 (2y/x)，约去 x 和 y 后得 2，结果是一个整式。"
+    },
+    {
+     "id": "mbj_p543_q4",
+     "topicId": "mbj_p543",
+     "prompt": "化简 (4x)/(9y) 乘 (3y)/(2x的平方)，结果是哪一个？",
+     "question": "化简 (4x)/(9y) 乘 (3y)/(2x的平方)，结果是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "6/x"
+      },
+      {
+       "label": "B",
+       "text": "3/(2x)"
+      },
+      {
+       "label": "C",
+       "text": "2x/3"
+      },
+      {
+       "label": "D",
+       "text": "2/(3x)"
+      }
+     ],
+     "answer": "D",
+     "explanation": "分子分母相乘得 (12xy)/(18x的平方y)，约去公因式 6xy 得 2/(3x)。先把数字与字母分别约分更不容易出错。"
+    },
+    {
+     "id": "mbj_p543_q5",
+     "topicId": "mbj_p543",
+     "prompt": "计算 (x的平方)/y 除以 x/(y的平方)，结果是多少？",
+     "question": "计算 (x的平方)/y 除以 x/(y的平方)，结果是多少？",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "xy",
+     "explanation": "把除式颠倒相乘：(x的平方)/y 乘 (y的平方)/x，分子得 x的平方y的平方，分母得 xy，约分后等于 xy。"
+    },
+    {
+     "id": "mbj_p543_q6",
+     "topicId": "mbj_p543",
+     "prompt": "当 a 等于 2、b 等于 3 时，a/b 乘 (b的平方)/(a的平方) 的值是多少？",
+     "question": "当 a 等于 2、b 等于 3 时，a/b 乘 (b的平方)/(a的平方) 的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "1.5",
+     "verify": "2/3*(3*3)/(2*2)",
+     "explanation": "先化简：a/b 乘 b的平方/a的平方 等于 b/a，再代入 a=2、b=3 得 3 除以 2 等于 1.5。先化简后代入比直接算数字简单。"
+    },
+    {
+     "id": "mbj_p543_q7",
+     "topicId": "mbj_p543",
+     "prompt": "化简 (x-1)/(x+2) 乘 (x的平方-4)/(x的平方-2x+1)，结果是哪一个？",
+     "question": "化简 (x-1)/(x+2) 乘 (x的平方-4)/(x的平方-2x+1)，结果是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "1/(x-1)"
+      },
+      {
+       "label": "B",
+       "text": "(x-1)/(x-2)"
+      },
+      {
+       "label": "C",
+       "text": "(x+2)/(x-1)"
+      },
+      {
+       "label": "D",
+       "text": "(x-2)/(x-1)"
+      }
+     ],
+     "answer": "D",
+     "explanation": "把 x的平方-4 分解成 (x-2)(x+2)，把 x的平方-2x+1 分解成 (x-1) 的平方，约去 (x+2) 和一个 (x-1)，得 (x-2)/(x-1)。"
+    },
+    {
+     "id": "mbj_p543_q8",
+     "topicId": "mbj_p543",
+     "prompt": "计算分式的乘除时，为什么强调先分解因式再约分？请结合一个具体例子说明步骤。",
+     "question": "计算分式的乘除时，为什么强调先分解因式再约分？请结合一个具体例子说明步骤。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "因为只有把分子分母都写成积的形式，才能看出公因式，约分才不会漏项或约错。例如计算 (x的平方-1)/x 乘 x/(x+1)：先把 x的平方-1 分解成 (x+1)(x-1)，再与原式相乘，约去 (x+1) 和 x，结果是 x-1；若直接乘开再约，既麻烦又容易出错。",
+     "explanation": "分式乘除的本质是约去公因式，而公因式只有在因式分解后才能显现。结果还要求化成最简分式或整式。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p544",
+   "name": "分式的加减法",
+   "grade": 8,
+   "description": "掌握同分母分式相加减的法则：分母不变、分子相加减；掌握异分母分式先通分再加减的方法，会确定最简公分母，会把结果化成最简分式，并注意字母取值不能使分母为零。",
+   "mastery_criteria": [
+    "能按同分母法则直接计算分子的和差",
+    "能通分后计算异分母分式的加减",
+    "能把结果化成最简分式并注明限制条件"
+   ],
+   "misconceptions": [
+    "异分母直接分子分母分别相加，写成 1/a 加 1/b 等于 2/(a+b)",
+    "算出结果后不约分，留着非最简分式"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p544_q1",
+     "topicId": "mbj_p544",
+     "prompt": "计算 1/a 加 2/a，结果是哪一个？",
+     "question": "计算 1/a 加 2/a，结果是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "3/a"
+      },
+      {
+       "label": "B",
+       "text": "3/(2a)"
+      },
+      {
+       "label": "C",
+       "text": "2/a"
+      },
+      {
+       "label": "D",
+       "text": "3a"
+      }
+     ],
+     "answer": "A",
+     "explanation": "同分母分式相加，分母不变、分子相加，1 加 2 得 3，所以结果是 3/a。分母保持不变，不能把两个分母也相加。"
+    },
+    {
+     "id": "mbj_p544_q2",
+     "topicId": "mbj_p544",
+     "prompt": "当 x 等于 1 时，分式 5/x 减 2/x 的值是多少？",
+     "question": "当 x 等于 1 时，分式 5/x 减 2/x 的值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "3",
+     "verify": "5/1-2/1",
+     "explanation": "同分母相减，分子 5 减 2 得 3，分母仍是 x，即 3/x；代入 x=1 得 3。减法的顺序不能颠倒，否则符号会错。"
+    },
+    {
+     "id": "mbj_p544_q3",
+     "topicId": "mbj_p544",
+     "prompt": "计算 3/(2x) 加 5/(2x)，结果是多少？",
+     "question": "计算 3/(2x) 加 5/(2x)，结果是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "4/x",
+     "explanation": "分子相加得 8，分母仍是 2x，8/(2x) 约分后是 4/x。最后一步约分不能漏，否则不是最简结果。"
+    },
+    {
+     "id": "mbj_p544_q4",
+     "topicId": "mbj_p544",
+     "prompt": "计算 1/(x-1) 加 1/(x+1)，结果是哪一个？",
+     "question": "计算 1/(x-1) 加 1/(x+1)，结果是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "1/(2x)"
+      },
+      {
+       "label": "B",
+       "text": "2/(x的平方-1)"
+      },
+      {
+       "label": "C",
+       "text": "(2x)/(x的平方+1)"
+      },
+      {
+       "label": "D",
+       "text": "(2x)/(x的平方-1)"
+      }
+     ],
+     "answer": "D",
+     "explanation": "最简公分母是 (x-1)(x+1)，通分后分子是 (x+1) 加 (x-1) 得 2x，分母是 x的平方-1，所以结果是 (2x)/(x的平方-1)。"
+    },
+    {
+     "id": "mbj_p544_q5",
+     "topicId": "mbj_p544",
+     "prompt": "计算 1/(2a) 减 1/(3a)，结果是多少？",
+     "question": "计算 1/(2a) 减 1/(3a)，结果是多少？",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "1/(6a)",
+     "explanation": "最简公分母是 6a，通分后是 3/(6a) 减 2/(6a)，分子 3 减 2 得 1，结果是 1/(6a)。"
+    },
+    {
+     "id": "mbj_p544_q6",
+     "topicId": "mbj_p544",
+     "prompt": "计算 x/(x的平方-1) 减 1/(x的平方-1)，结果是哪一个？",
+     "question": "计算 x/(x的平方-1) 减 1/(x的平方-1)，结果是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "1/(x-1)"
+      },
+      {
+       "label": "B",
+       "text": "1/(x+1)"
+      },
+      {
+       "label": "C",
+       "text": "x-1"
+      },
+      {
+       "label": "D",
+       "text": "1/(x的平方-1)"
+      }
+     ],
+     "answer": "B",
+     "explanation": "同分母，分子 x 减 1 得 x-1，得到 (x-1)/(x的平方-1)；分母分解为 (x-1)(x+1)，约去 x-1 后是 1/(x+1)。"
+    },
+    {
+     "id": "mbj_p544_q7",
+     "topicId": "mbj_p544",
+     "prompt": "计算 1/(x-1) 减 1/(x的平方-1)，结果是哪一个？",
+     "question": "计算 1/(x-1) 减 1/(x的平方-1)，结果是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "x/(x的平方-1)"
+      },
+      {
+       "label": "B",
+       "text": "1/(x的平方-1)"
+      },
+      {
+       "label": "C",
+       "text": "(x-1)/(x的平方-1)"
+      },
+      {
+       "label": "D",
+       "text": "1/(x-1)"
+      }
+     ],
+     "answer": "A",
+     "explanation": "分母 x的平方-1 分解为 (x-1)(x+1)，第一个分式分子分母同乘 (x+1) 得 (x+1)/(x的平方-1)，减去 1/(x的平方-1) 后分子为 x，结果是 x/(x的平方-1)。"
+    },
+    {
+     "id": "mbj_p544_q8",
+     "topicId": "mbj_p544",
+     "prompt": "计算 x/(x-2) 减 2/(x-2)，并说明计算过程中要注意什么。",
+     "question": "计算 x/(x-2) 减 2/(x-2)，并说明计算过程中要注意什么。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "两式同分母，分母不变，分子相减得 x-2，所以原式等于 (x-2)/(x-2)，约分后等于 1。要注意这个结果只在 x 不等于 2 时成立，因为 x=2 时原分式的分母为零，分式本身没有意义，不能约去为零的因式。",
+     "explanation": "同分母减法先算分子差，结果若不是最简形式还要约分；约分前必须确认约去的因式不为零，这是分式运算的隐含条件。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p545",
+   "name": "实数和二次根式",
+   "grade": 8,
+   "description": "认识无理数，知道实数由有理数和无理数组成；理解平方根、算术平方根、立方根的意义，会用计算器求方根的近似值；了解二次根式的概念与性质，会进行二次根式的简单四则运算并把结果化简。",
+   "mastery_criteria": [
+    "能判断一个数是有理数还是无理数",
+    "会用平方根、立方根的意义求方根",
+    "能进行二次根式的简单四则运算并化简结果"
+   ],
+   "misconceptions": [
+    "把带根号的数都当成无理数，如认为 根号9 是无理数",
+    "化简时把 根号下 a 加 b 拆成 根号a 加 根号b"
+   ],
+   "std": {
+    "id": "mat-2022:4.KC.01",
+    "quote": "认识负数、无理数，学习它们的四则运算"
+   },
+   "questions": [
+    {
+     "id": "mbj_p545_q1",
+     "topicId": "mbj_p545",
+     "prompt": "下列各数中，属于无理数的是哪一个？",
+     "question": "下列各数中，属于无理数的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.5"
+      },
+      {
+       "label": "B",
+       "text": "22/7"
+      },
+      {
+       "label": "C",
+       "text": "根号2"
+      },
+      {
+       "label": "D",
+       "text": "根号9"
+      }
+     ],
+     "answer": "C",
+     "explanation": "0.5 是有限小数，22/7 是分数，根号9 等于 3，它们都是有理数；根号2 开方开不尽，是无限不循环小数，属于无理数。"
+    },
+    {
+     "id": "mbj_p545_q2",
+     "topicId": "mbj_p545",
+     "prompt": "计算 根号81 减 立方根8，结果是多少？",
+     "question": "计算 根号81 减 立方根8，结果是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "7",
+     "verify": "9-2",
+     "explanation": "根号81 表示 81 的算术平方根，等于 9；立方根8 等于 2；9 减 2 得 7。开方结果取非负的算术平方根。"
+    },
+    {
+     "id": "mbj_p545_q3",
+     "topicId": "mbj_p545",
+     "prompt": "化简 根号12，结果是哪一个？",
+     "question": "化简 根号12，结果是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "3根号2"
+      },
+      {
+       "label": "C",
+       "text": "4根号3"
+      },
+      {
+       "label": "D",
+       "text": "2根号3"
+      }
+     ],
+     "answer": "D",
+     "explanation": "12 等于 4 乘 3，根号12 等于 根号4 乘 根号3，即 2 根号3。把能开得尽方的因数移到根号外，才叫化简。"
+    },
+    {
+     "id": "mbj_p545_q4",
+     "topicId": "mbj_p545",
+     "prompt": "计算 根号49 减 立方根27，结果是多少？",
+     "question": "计算 根号49 减 立方根27，结果是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "4",
+     "verify": "7-3",
+     "explanation": "根号49 等于 7，立方根27 等于 3，7 减 3 得 4。平方根取算术平方根，立方根可以直接对完全立方数开方。"
+    },
+    {
+     "id": "mbj_p545_q5",
+     "topicId": "mbj_p545",
+     "prompt": "估计 根号15 的值在哪两个连续整数之间，并说明比较的方法。",
+     "question": "估计 根号15 的值在哪两个连续整数之间，并说明比较的方法。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "根号15 在 3 和 4 之间。因为 3 的平方等于 9，4 的平方等于 16，而 15 大于 9 且小于 16，被开方数越大算术平方根越大，所以 根号15 一定在 3 和 4 之间，约为 3.87。",
+     "explanation": "估算无理数常用夹逼的办法：找出与被开方数相邻的两个完全平方数，再比较它们的算术平方根，就能确定整数范围。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p546",
+   "name": "平方根",
+   "grade": 8,
+   "description": "理解平方根与算术平方根的意义：一个正数有两个平方根，它们互为相反数，零的平方根是零，负数没有平方根。会求完全平方数的平方根和算术平方根，会由算术平方根求原数，会判断根号下 a 有意义的条件。",
+   "mastery_criteria": [
+    "能写出一个正数的两个平方根并标出正负号",
+    "能区分平方根与算术平方根的表示与结果",
+    "能由被开方数非负求字母的取值范围"
+   ],
+   "misconceptions": [
+    "认为 4 的平方根就是 2，漏掉负二",
+    "把 根号16 算成正负 4 两个值"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p546_q1",
+     "topicId": "mbj_p546",
+     "prompt": "16 的平方根是哪一个？",
+     "question": "16 的平方根是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "-4"
+      },
+      {
+       "label": "C",
+       "text": "正负4"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ],
+     "answer": "C",
+     "explanation": "4 的平方是 16，负 4 的平方也是 16，所以 16 的平方根有两个，写作正负4。只写 4 是把算术平方根当成了平方根。"
+    },
+    {
+     "id": "mbj_p546_q2",
+     "topicId": "mbj_p546",
+     "prompt": "25 的算术平方根是多少？",
+     "question": "25 的算术平方根是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "5",
+     "verify": "5*1",
+     "explanation": "算术平方根指非负的那个平方根，5 的平方是 25 且 5 非负，所以 25 的算术平方根是 5，不写负 5。"
+    },
+    {
+     "id": "mbj_p546_q3",
+     "topicId": "mbj_p546",
+     "prompt": "平方根等于它本身的数是哪一个？",
+     "question": "平方根等于它本身的数是哪一个？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "0",
+     "explanation": "正数的两个平方根互为相反数，不可能等于它本身；负数的平方仍是正数，也不等于本身；只有 0 的平方根是 0，等于它本身。"
+    },
+    {
+     "id": "mbj_p546_q4",
+     "topicId": "mbj_p546",
+     "prompt": "根号81 的值是哪一个？",
+     "question": "根号81 的值是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "正负9"
+      },
+      {
+       "label": "C",
+       "text": "81"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ],
+     "answer": "D",
+     "explanation": "根号81 表示 81 的算术平方根，只取非负值，等于 9。若问 81 的平方根，答案才是正负9，两者表示不同。"
+    },
+    {
+     "id": "mbj_p546_q5",
+     "topicId": "mbj_p546",
+     "prompt": "一个正数的算术平方根是 6，这个正数是多少？",
+     "question": "一个正数的算术平方根是 6，这个正数是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "36",
+     "verify": "6*6",
+     "explanation": "算术平方根是 6，说明这个数是 6 的平方，即 36。求原数要把算术平方根再平方回去，注意原数一定是正数。"
+    },
+    {
+     "id": "mbj_p546_q6",
+     "topicId": "mbj_p546",
+     "prompt": "计算 根号下 (-5)的平方，结果是多少？",
+     "question": "计算 根号下 (-5)的平方，结果是多少？",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "5",
+     "explanation": "(-5) 的平方等于 25，再取算术平方根得 5。先算被开方数再开方，结果取非负值，不能直接写成负 5。"
+    },
+    {
+     "id": "mbj_p546_q7",
+     "topicId": "mbj_p546",
+     "prompt": "若 根号下 (2x-6) 有意义，则 x 的取值范围是哪一个？",
+     "question": "若 根号下 (2x-6) 有意义，则 x 的取值范围是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 小于或等于 3"
+      },
+      {
+       "label": "B",
+       "text": "x 大于 3"
+      },
+      {
+       "label": "C",
+       "text": "x 大于或等于 3"
+      },
+      {
+       "label": "D",
+       "text": "x 不等于 3"
+      }
+     ],
+     "answer": "C",
+     "explanation": "二次根式有意义的条件是被开方数非负，即 2x-6 大于或等于 0，解得 x 大于或等于 3。取等号时被开方数为 0，根号0 等于 0，仍然有意义。"
+    },
+    {
+     "id": "mbj_p546_q8",
+     "topicId": "mbj_p546",
+     "prompt": "小明说 4 的平方根是 2，这句话错在哪里？请改正并说明理由。",
+     "question": "小明说 4 的平方根是 2，这句话错在哪里？请改正并说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "这句话漏掉了负的平方根。因为 2 的平方是 4，负 2 的平方也是 4，所以 4 的平方根有两个，应写作正负2；其中 2 只是 4 的算术平方根。正数有两个互为相反数的平方根，这一点与算术平方根只有一个非负值不同。",
+     "explanation": "平方根的定义是平方后等于原数的数，正负两种情况都要算进去；算术平方根只是其中非负的那一个，两个概念不能混用。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p547",
+   "name": "立方根",
+   "grade": 8,
+   "description": "理解立方根的意义：一个数的立方等于 a，这个数就是 a 的立方根。会求完全立方数的立方根，知道正数的立方根是正数、负数的立方根是负数、零的立方根是零，会用立方运算检验结果。",
+   "mastery_criteria": [
+    "能说出立方根的定义并求出给定数的立方根",
+    "能判断立方根的正负与被开方数的关系",
+    "能由立方根反求原数"
+   ],
+   "misconceptions": [
+    "认为负数没有立方根，与平方根混淆",
+    "把 8 的立方根写成正负2"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p547_q1",
+     "topicId": "mbj_p547",
+     "prompt": "8 的立方根等于下面哪一个数？",
+     "question": "8 的立方根等于下面哪一个数？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "-2"
+      },
+      {
+       "label": "C",
+       "text": "正负2"
+      },
+      {
+       "label": "D",
+       "text": "512"
+      }
+     ],
+     "answer": "A",
+     "explanation": "2 的立方等于 8，所以 8 的立方根是 2。任何数只有一个立方根，不存在正负两个，这与平方根不同。"
+    },
+    {
+     "id": "mbj_p547_q2",
+     "topicId": "mbj_p547",
+     "prompt": "求 27 的立方根，结果是多少？",
+     "question": "求 27 的立方根，结果是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "3",
+     "verify": "3*1",
+     "explanation": "3 的立方是 27，所以 27 的立方根是 3。可以反向用 3 乘 3 乘 3 检验结果是否正确。"
+    },
+    {
+     "id": "mbj_p547_q3",
+     "topicId": "mbj_p547",
+     "prompt": "-64 的立方根是多少？",
+     "question": "-64 的立方根是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "-4",
+     "explanation": "负 4 的立方等于负 64，所以负 64 的立方根是负 4。负数有立方根，而且立方根也是负数。"
+    },
+    {
+     "id": "mbj_p547_q4",
+     "topicId": "mbj_p547",
+     "prompt": "立方根等于它本身的数共有几个？",
+     "question": "立方根等于它本身的数共有几个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 个"
+      },
+      {
+       "label": "B",
+       "text": "2 个"
+      },
+      {
+       "label": "C",
+       "text": "3 个"
+      },
+      {
+       "label": "D",
+       "text": "0 个"
+      }
+     ],
+     "answer": "C",
+     "explanation": "0 的立方根是 0，1 的立方根是 1，负 1 的立方根是负 1，共 3 个。其它数的立方都不会等于它本身。"
+    },
+    {
+     "id": "mbj_p547_q5",
+     "topicId": "mbj_p547",
+     "prompt": "若 x 的立方等于 -125，则 x 是多少？",
+     "question": "若 x 的立方等于 -125，则 x 是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "-5",
+     "verify": "-5*1",
+     "explanation": "负 5 的立方是负 125，所以 x 等于负 5。求立方根时符号跟着被开方数走，不必也不该写出正负两个值。"
+    },
+    {
+     "id": "mbj_p547_q6",
+     "topicId": "mbj_p547",
+     "prompt": "计算 立方根1000，结果是多少？",
+     "question": "计算 立方根1000，结果是多少？",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "10",
+     "explanation": "10 的立方等于 1000，所以 1000 的立方根是 10。判断时可以用 10 乘 10 乘 10 反算验证。"
+    },
+    {
+     "id": "mbj_p547_q7",
+     "topicId": "mbj_p547",
+     "prompt": "一个数的立方根是 -3，这个数是哪一个？",
+     "question": "一个数的立方根是 -3，这个数是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "27"
+      },
+      {
+       "label": "B",
+       "text": "-27"
+      },
+      {
+       "label": "C",
+       "text": "9"
+      },
+      {
+       "label": "D",
+       "text": "-9"
+      }
+     ],
+     "answer": "B",
+     "explanation": "立方根是负 3，说明这个数等于负 3 的立方，负 3 乘负 3 乘负 3 得负 27。开立方与立方互为逆运算，反向要立方而不是平方。"
+    },
+    {
+     "id": "mbj_p547_q8",
+     "topicId": "mbj_p547",
+     "prompt": "比较平方根与立方根：正数、负数、零各有几个平方根、几个立方根？",
+     "question": "比较平方根与立方根：正数、负数、零各有几个平方根、几个立方根？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "正数有两个平方根，它们互为相反数，只有一个算术平方根；零的平方根是零；负数没有平方根。而任何数都有且只有一个立方根：正数的立方根是正数，负数的立方根是负数，零的立方根是零。",
+     "explanation": "平方运算会把负数变成正数，所以负数开平方没有结果；立方运算保持符号，所以负数也能开立方，这正是两者的根本差别。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p548",
+   "name": "用计算器开方",
+   "grade": 8,
+   "description": "会用计算器求平方根和立方根，会按要求取近似值，会用计算器估算无理数的大致范围，能分清准确值与近似值，知道近似数用约等号书写，不把计算器显示的多位小数当成准确值。",
+   "mastery_criteria": [
+    "会用计算器求方根并按指定精度取近似值",
+    "能用计算器估算无理数所在的整数范围",
+    "能区分准确值与近似值并正确使用约等号"
+   ],
+   "misconceptions": [
+    "取近似值时数位看错，把精确到百分位的结果写成一位小数",
+    "把计算器显示的多位小数当成准确值，写成等号"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p548_q1",
+     "topicId": "mbj_p548",
+     "prompt": "用计算器求 根号2，精确到百分位的结果是哪一个？",
+     "question": "用计算器求 根号2，精确到百分位的结果是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "1.41"
+      },
+      {
+       "label": "B",
+       "text": "1.42"
+      },
+      {
+       "label": "C",
+       "text": "1.4"
+      },
+      {
+       "label": "D",
+       "text": "1.5"
+      }
+     ],
+     "answer": "A",
+     "explanation": "计算器显示 根号2 约为 1.414213…，精确到百分位要看千分位上的 4，四舍五入后得 1.41。1.4 只精确到十分位，1.42 是把千分位 4 进位的错误结果。"
+    },
+    {
+     "id": "mbj_p548_q2",
+     "topicId": "mbj_p548",
+     "prompt": "用计算器求 根号5，精确到十分位约等于多少？",
+     "question": "用计算器求 根号5，精确到十分位约等于多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "2.2",
+     "verify": "22/10",
+     "explanation": "计算器显示 2.236067…，精确到十分位要看百分位上的 3，舍去后得 2.2。精确到哪一位就看它后面那一位。"
+    },
+    {
+     "id": "mbj_p548_q3",
+     "topicId": "mbj_p548",
+     "prompt": "用计算器求 立方根100，精确到百分位约等于多少？",
+     "question": "用计算器求 立方根100，精确到百分位约等于多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "4.64",
+     "explanation": "计算器显示 立方根100 约为 4.641589…，精确到百分位要看千分位上的 1，舍去后得 4.64。立方根按键与平方根不同，要核对按键。"
+    },
+    {
+     "id": "mbj_p548_q4",
+     "topicId": "mbj_p548",
+     "prompt": "估计 根号30 在哪两个连续整数之间？",
+     "question": "估计 根号30 在哪两个连续整数之间？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "4 和 5"
+      },
+      {
+       "label": "B",
+       "text": "5 和 6"
+      },
+      {
+       "label": "C",
+       "text": "6 和 7"
+      },
+      {
+       "label": "D",
+       "text": "3 和 4"
+      }
+     ],
+     "answer": "B",
+     "explanation": "5 的平方是 25，6 的平方是 36，30 在 25 和 36 之间，所以 根号30 在 5 和 6 之间。用计算器也可以验证约为 5.48。"
+    },
+    {
+     "id": "mbj_p548_q5",
+     "topicId": "mbj_p548",
+     "prompt": "用计算器计算 根号下 0.64，结果是多少？",
+     "question": "用计算器计算 根号下 0.64，结果是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "0.8",
+     "verify": "8/10",
+     "explanation": "0.8 的平方是 0.64，所以 根号下 0.64 等于 0.8。被开方数是小数时结果仍取非负值，注意小数点位置不要数错。"
+    },
+    {
+     "id": "mbj_p548_q6",
+     "topicId": "mbj_p548",
+     "prompt": "一个正方形的面积是 55 平方厘米，用计算器求它的边长，精确到 0.1 厘米约是多少厘米？",
+     "question": "一个正方形的面积是 55 平方厘米，用计算器求它的边长，精确到 0.1 厘米约是多少厘米？",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "7.4",
+     "explanation": "边长等于 根号55，计算器显示约 7.416198…，精确到 0.1 厘米看百分位上的 1，舍去得 7.4 厘米。开方后还要按题目要求取近似值。"
+    },
+    {
+     "id": "mbj_p548_q7",
+     "topicId": "mbj_p548",
+     "prompt": "用计算器求 根号2 乘 根号3，结果精确到 0.01 是哪一个？",
+     "question": "用计算器求 根号2 乘 根号3，结果精确到 0.01 是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "2.45"
+      },
+      {
+       "label": "B",
+       "text": "2.24"
+      },
+      {
+       "label": "C",
+       "text": "2.83"
+      },
+      {
+       "label": "D",
+       "text": "3.46"
+      }
+     ],
+     "answer": "A",
+     "explanation": "根号2 乘 根号3 等于 根号6，约为 2.449，精确到 0.01 得 2.45。2.24 是 根号5，2.83 是 2 根号2，都是把运算当成加法或看错数造成的错误。"
+    },
+    {
+     "id": "mbj_p548_q8",
+     "topicId": "mbj_p548",
+     "prompt": "用计算器得到 根号2 约等于 1.414，为什么不能写成 根号2 等于 1.414？",
+     "question": "用计算器得到 根号2 约等于 1.414，为什么不能写成 根号2 等于 1.414？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "因为 1.414 是四舍五入得到的近似值，它的平方是 1.999396，并不等于 2；而 根号2 是无限不循环小数，小数位数写不完。所以书写时必须用约等号，表示这个结果只是在指定精度下的近似值，不是准确值。",
+     "explanation": "近似数的误差来自舍入，平方后能看出它与原数的差距。数学表达里等号要求完全相等，近似关系只能用约等号。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p549",
+   "name": "无理数与实数",
+   "grade": 8,
+   "description": "了解无理数：无限不循环小数叫做无理数。知道实数由有理数和无理数组成，会给实数分类，知道实数与数轴上的点一一对应，会用有理数估计一个无理数的大致范围并比较大小。",
+   "mastery_criteria": [
+    "能举出无理数的例子并判断给定数是否为无理数",
+    "能按有理数和无理数给实数分类",
+    "能用有理数估计无理数的整数范围"
+   ],
+   "misconceptions": [
+    "把所有小数都当有理数，忽略无限不循环小数",
+    "认为带根号的数一定是无理数，如把 根号16 也算作无理数"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p549_q1",
+     "topicId": "mbj_p549",
+     "prompt": "下列各数中，属于无理数的是哪一个？",
+     "question": "下列各数中，属于无理数的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "-3.14"
+      },
+      {
+       "label": "B",
+       "text": "0.1010010001…（相邻两个 1 之间 0 的个数逐次加 1）"
+      },
+      {
+       "label": "C",
+       "text": "22/7"
+      },
+      {
+       "label": "D",
+       "text": "根号9"
+      }
+     ],
+     "answer": "B",
+     "explanation": "负 3.14 是有限小数，22/7 是分数，根号9 等于 3，三者都是有理数；括号里的数无限且不循环，是无理数。"
+    },
+    {
+     "id": "mbj_p549_q2",
+     "topicId": "mbj_p549",
+     "prompt": "根号16 的相反数是多少？",
+     "question": "根号16 的相反数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "-4",
+     "verify": "-4*1",
+     "explanation": "根号16 等于 4，它的相反数是负 4。注意根号16 本身是有理数，只有开方开不尽的数才是无理数。"
+    },
+    {
+     "id": "mbj_p549_q3",
+     "topicId": "mbj_p549",
+     "prompt": "实数可以分为有理数和另一类数，这一类数叫什么？",
+     "question": "实数可以分为有理数和另一类数，这一类数叫什么？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "无理数",
+     "explanation": "实数按定义分成有理数和无理数两类，有理数包括整数和分数，无理数是无限不循环小数，两者合起来构成全体实数。"
+    },
+    {
+     "id": "mbj_p549_q4",
+     "topicId": "mbj_p549",
+     "prompt": "与 根号2 最接近的整数是哪一个？",
+     "question": "与 根号2 最接近的整数是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "0"
+      }
+     ],
+     "answer": "A",
+     "explanation": "根号2 约为 1.414，它到 1 的距离约为 0.414，到 2 的距离约为 0.586，所以最接近的整数是 1。比较时要看与两个相邻整数的距离。"
+    },
+    {
+     "id": "mbj_p549_q5",
+     "topicId": "mbj_p549",
+     "prompt": "根号10 的整数部分是多少？",
+     "question": "根号10 的整数部分是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "3",
+     "verify": "3*1",
+     "explanation": "3 的平方是 9，4 的平方是 16，10 在 9 和 16 之间，所以 根号10 约为 3.16，整数部分是 3。"
+    },
+    {
+     "id": "mbj_p549_q6",
+     "topicId": "mbj_p549",
+     "prompt": "若 a 是 根号7 的整数部分，则 a 的值是多少？",
+     "question": "若 a 是 根号7 的整数部分，则 a 的值是多少？",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "2",
+     "explanation": "2 的平方是 4，3 的平方是 9，7 在 4 和 9 之间，所以 根号7 约为 2.65，整数部分 a 等于 2。"
+    },
+    {
+     "id": "mbj_p549_q7",
+     "topicId": "mbj_p549",
+     "prompt": "若 a 是 根号13 的整数部分，b 是它的小数部分，则 a 加 b 等于哪一个？",
+     "question": "若 a 是 根号13 的整数部分，b 是它的小数部分，则 a 加 b 等于哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "根号13"
+      },
+      {
+       "label": "D",
+       "text": "0.6"
+      }
+     ],
+     "answer": "C",
+     "explanation": "根号13 约为 3.6，整数部分 a 等于 3，小数部分 b 等于 根号13 减 3，所以 a 加 b 就是 根号13 本身。这是把整数部分与小数部分相加的恒等关系。"
+    },
+    {
+     "id": "mbj_p549_q8",
+     "topicId": "mbj_p549",
+     "prompt": "有人说「所有带根号的数都是无理数」，这句话对吗？请举例说明。",
+     "question": "有人说「所有带根号的数都是无理数」，这句话对吗？请举例说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "不对。根号9 等于 3，根号16 等于 4，根号下 0.25 等于 0.5，这些数虽然带根号，但开方开得尽，结果是有理数。只有开方开不尽的数，如 根号2、根号3、根号5，才是无理数。判断的关键是看开方结果是不是无限不循环小数。",
+     "explanation": "根号只是一种符号，能否开得尽方决定结果是有理数还是无理数。用化简后的结果判断比看符号可靠。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p550",
+   "name": "二次根式及其性质",
+   "grade": 8,
+   "description": "了解二次根式的意义：形如 根号a 且 a 大于或等于 0 的式子叫二次根式。掌握 根号下 a 的平方 等于 a 的绝对值、根号a 乘 根号a 等于 a 等性质，会由被开方数非负求字母取值范围，会化简简单的二次根式。",
+   "mastery_criteria": [
+    "能判断给出的式子是不是二次根式",
+    "能由被开方数非负求字母的取值范围",
+    "能利用性质化简含根号的式子"
+   ],
+   "misconceptions": [
+    "忽略被开方数必须非负，对负数也直接开平方",
+    "把 根号下 a 的平方 直接写成 a，不考虑 a 的正负"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p550_q1",
+     "topicId": "mbj_p550",
+     "prompt": "下列各式中，是二次根式的是哪一个？",
+     "question": "下列各式中，是二次根式的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "根号下 -3"
+      },
+      {
+       "label": "B",
+       "text": "根号下 x（x 为任意实数）"
+      },
+      {
+       "label": "C",
+       "text": "根号5"
+      },
+      {
+       "label": "D",
+       "text": "立方根8"
+      }
+     ],
+     "answer": "C",
+     "explanation": "二次根式要求被开方数非负。根号下负 3 没有意义，根号下 x 在 x 为负时没有意义，立方根8 是三次根式；只有 根号5 符合二次根式的形式。"
+    },
+    {
+     "id": "mbj_p550_q2",
+     "topicId": "mbj_p550",
+     "prompt": "计算 根号下 7 的平方，结果是多少？",
+     "question": "计算 根号下 7 的平方，结果是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "7",
+     "verify": "7*1",
+     "explanation": "根号下 7 的平方 表示 7 的平方的算术平方根，先算得 49 再开平方，结果是 7。正数的平方再开算术平方根仍得它本身。"
+    },
+    {
+     "id": "mbj_p550_q3",
+     "topicId": "mbj_p550",
+     "prompt": "要使 根号下 (x-2) 有意义，x 应满足 x 大于或等于多少？",
+     "question": "要使 根号下 (x-2) 有意义，x 应满足 x 大于或等于多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "2",
+     "explanation": "二次根式有意义的条件是被开方数非负，即 x-2 大于或等于 0，解得 x 大于或等于 2，所以最小的取值是 2。"
+    },
+    {
+     "id": "mbj_p550_q4",
+     "topicId": "mbj_p550",
+     "prompt": "计算 根号下 (-6)的平方，结果是哪一个？",
+     "question": "计算 根号下 (-6)的平方，结果是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "36"
+      },
+      {
+       "label": "B",
+       "text": "-6"
+      },
+      {
+       "label": "C",
+       "text": "正负6"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "answer": "D",
+     "explanation": "先算被开方数，负 6 的平方是 36，再取算术平方根得 6。结果必为非负，所以不是负 6，也不是只把平方与开方对消直接写负 6。"
+    },
+    {
+     "id": "mbj_p550_q5",
+     "topicId": "mbj_p550",
+     "prompt": "化简 根号12，结果是多少？",
+     "question": "化简 根号12，结果是多少？",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "2根号3",
+     "explanation": "12 等于 4 乘 3，根号12 等于 根号4 乘 根号3 等于 2 根号3。化简要把完全平方因数移到根号外，根号内不再含平方因数。"
+    },
+    {
+     "id": "mbj_p550_q6",
+     "topicId": "mbj_p550",
+     "prompt": "要使 根号下 (x-3) 有意义，x 能取到的最小整数值是多少？",
+     "question": "要使 根号下 (x-3) 有意义，x 能取到的最小整数值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "3",
+     "verify": "3*1",
+     "explanation": "被开方数非负，x-3 大于或等于 0，得 x 大于或等于 3，最小整数值就是 3。此时被开方数为 0，根号0 等于 0，仍然有意义。"
+    },
+    {
+     "id": "mbj_p550_q7",
+     "topicId": "mbj_p550",
+     "prompt": "当 a 小于 2 时，化简 根号下 (a-2)的平方 的结果是哪一个？",
+     "question": "当 a 小于 2 时，化简 根号下 (a-2)的平方 的结果是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "a-2"
+      },
+      {
+       "label": "B",
+       "text": "2-a"
+      },
+      {
+       "label": "C",
+       "text": "a+2"
+      },
+      {
+       "label": "D",
+       "text": "2a"
+      }
+     ],
+     "answer": "B",
+     "explanation": "根号下某式的平方 等于这个式子的绝对值，即 a-2 的绝对值。因为 a 小于 2，所以 a-2 是负数，它的绝对值等于 2-a。直接写成 a-2 会得到负数，与算术平方根非负矛盾。"
+    },
+    {
+     "id": "mbj_p550_q8",
+     "topicId": "mbj_p550",
+     "prompt": "说明 根号下 a 的平方 与 (根号a) 的平方 有什么不同，各自在什么条件下有意义。",
+     "question": "说明 根号下 a 的平方 与 (根号a) 的平方 有什么不同，各自在什么条件下有意义。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "(根号a) 的平方 要求 a 大于或等于 0，先开方再平方，结果就是 a 本身。而 根号下 a 的平方 是先平方再开方，对任意实数 a 都有意义，结果等于 a 的绝对值：a 非负时等于 a，a 为负时等于负 a。两者只有在 a 大于或等于 0 时结果相同。",
+     "explanation": "两个式子的运算顺序相反，定义域也就不同。先平方再开方会把负号消掉，所以必须用绝对值来保证结果非负。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p551",
+   "name": "二次根式的乘除法",
+   "grade": 8,
+   "description": "掌握二次根式的乘除法则：根号a 乘 根号b 等于 根号下 ab，根号a 除以 根号b 等于 根号下 a 除以 b（被开方数非负、除数不为零）。会把结果化成最简二次根式，会说明法则成立的前提条件。",
+   "mastery_criteria": [
+    "能用法则计算二次根式的乘法与除法",
+    "能把结果化成最简二次根式",
+    "能说出法则成立时被开方数必须满足的条件"
+   ],
+   "misconceptions": [
+    "把 根号a 乘 根号b 写成 根号下 a 加 b",
+    "结果不化简，如把 根号8 留着不写成 2根号2"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.14",
+    "quote": "了解二次根式〈根号下仅限于数) 加、减、乘、除运算法则"
+   },
+   "questions": [
+    {
+     "id": "mbj_p551_q1",
+     "topicId": "mbj_p551",
+     "prompt": "计算 根号2 乘 根号3，结果是哪一个？",
+     "question": "计算 根号2 乘 根号3，结果是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "根号6"
+      },
+      {
+       "label": "B",
+       "text": "根号5"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "2根号3"
+      }
+     ],
+     "answer": "A",
+     "explanation": "二次根式相乘，把被开方数相乘：根号2 乘 根号3 等于 根号下 2 乘 3，即 根号6。写成 根号5 是把乘当成加的错误做法。"
+    },
+    {
+     "id": "mbj_p551_q2",
+     "topicId": "mbj_p551",
+     "prompt": "计算 根号3 乘 根号12，结果是多少？",
+     "question": "计算 根号3 乘 根号12，结果是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "6",
+     "verify": "6*1",
+     "explanation": "被开方数相乘得 36，所以 根号3 乘 根号12 等于 根号下 36 等于 6。两个根式相乘的结果可能是一个整数，要开得尽就写整数。"
+    },
+    {
+     "id": "mbj_p551_q3",
+     "topicId": "mbj_p551",
+     "prompt": "计算 根号18 除以 根号2，结果是多少？",
+     "question": "计算 根号18 除以 根号2，结果是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "3",
+     "explanation": "二次根式相除，商等于被开方数的商再开方，18 除以 2 得 9，根号9 等于 3。除法先把被开方数相除再开方更简便。"
+    },
+    {
+     "id": "mbj_p551_q4",
+     "topicId": "mbj_p551",
+     "prompt": "计算 根号24 除以 根号3，结果是哪一个？",
+     "question": "计算 根号24 除以 根号3，结果是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "根号21"
+      },
+      {
+       "label": "B",
+       "text": "4根号2"
+      },
+      {
+       "label": "C",
+       "text": "2根号3"
+      },
+      {
+       "label": "D",
+       "text": "2根号2"
+      }
+     ],
+     "answer": "D",
+     "explanation": "被开方数相除得 8，根号8 化简为 2 根号2。结果要求写成最简二次根式，不能停在 根号8 这样的形式上。"
+    },
+    {
+     "id": "mbj_p551_q5",
+     "topicId": "mbj_p551",
+     "prompt": "计算 根号50 乘 根号2，结果是多少？",
+     "question": "计算 根号50 乘 根号2，结果是多少？",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "10",
+     "explanation": "被开方数相乘得 100，根号100 等于 10。50 乘 2 恰好是完全平方数，直接开方即可得到整数结果。"
+    },
+    {
+     "id": "mbj_p551_q6",
+     "topicId": "mbj_p551",
+     "prompt": "计算 根号下 0.25 乘 根号下 16，结果是多少？",
+     "question": "计算 根号下 0.25 乘 根号下 16，结果是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "2",
+     "verify": "0.5*4",
+     "explanation": "根号下 0.25 等于 0.5，根号下 16 等于 4，0.5 乘 4 得 2。也可以先化成 根号下 4 再开方，同样得 2。"
+    },
+    {
+     "id": "mbj_p551_q7",
+     "topicId": "mbj_p551",
+     "prompt": "若 根号下 (x-1)(2-x) 等于 根号下(x-1) 乘 根号下(2-x) 成立，则 x 的取值范围是哪一个？",
+     "question": "若 根号下 (x-1)(2-x) 等于 根号下(x-1) 乘 根号下(2-x) 成立，则 x 的取值范围是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 小于或等于 2"
+      },
+      {
+       "label": "B",
+       "text": "x 大于或等于 1"
+      },
+      {
+       "label": "C",
+       "text": "1 小于或等于 x 小于或等于 2"
+      },
+      {
+       "label": "D",
+       "text": "x 为任意实数"
+      }
+     ],
+     "answer": "C",
+     "explanation": "等式右边两个二次根式都要有意义，所以 x-1 大于或等于 0 且 2-x 大于或等于 0，同时满足得 1 小于或等于 x 小于或等于 2。只写一个不等式只是一半条件。"
+    },
+    {
+     "id": "mbj_p551_q8",
+     "topicId": "mbj_p551",
+     "prompt": "二次根式相乘、相除时，为什么要先确定被开方数非负，并把结果化成最简二次根式？请举例说明。",
+     "question": "二次根式相乘、相除时，为什么要先确定被开方数非负，并把结果化成最简二次根式？请举例说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "因为 根号a 与 根号b 只有在 a、b 都非负时才有意义，法则 根号a 乘 根号b 等于 根号下 ab 才成立；否则会用到没有意义的式子。结果化成最简二次根式，才能看出它的大小、判断是否同类，便于后面的加减。例如 根号8 乘 根号2 得 根号16 等于 4，也可先化成 2根号2 再乘 根号2 得 4。",
+     "explanation": "法则成立的前提是各根式都有意义，这是二次根式运算与整式运算最大的不同。化简的目的在于统一形式，便于比较和合并。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p552",
+   "name": "二次根式的加减法",
+   "grade": 8,
+   "description": "会把二次根式化成最简形式，识别同类二次根式，像合并同类项那样合并；掌握先化简、再判断是否同类、最后合并的步骤，会按先乘除后加减的顺序进行二次根式的简单混合运算。",
+   "mastery_criteria": [
+    "能把二次根式化成最简形式再判断是否同类",
+    "能合并同类二次根式得到最简结果",
+    "能按运算顺序处理二次根式的混合运算"
+   ],
+   "misconceptions": [
+    "把 根号2 加 根号3 直接写成 根号5",
+    "合并时只看根号外的系数，不先把各根式化简"
+   ],
+   "std": {
+    "id": "mat-2022:4.XY.13",
+    "quote": "会用二次根式(根号下仅限于数) 的加、减、乘、除运算法则进行简单的四则运算"
+   },
+   "questions": [
+    {
+     "id": "mbj_p552_q1",
+     "topicId": "mbj_p552",
+     "prompt": "下列二次根式中，与 根号3 是同类二次根式的是哪一个？",
+     "question": "下列二次根式中，与 根号3 是同类二次根式的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "根号6"
+      },
+      {
+       "label": "B",
+       "text": "根号18"
+      },
+      {
+       "label": "C",
+       "text": "根号8"
+      },
+      {
+       "label": "D",
+       "text": "根号12"
+      }
+     ],
+     "answer": "D",
+     "explanation": "根号12 化简为 2 根号3，被开方数化简后是 3，与 根号3 同类。根号18 化简为 3 根号2，根号8 化简为 2 根号2，根号6 不能化简，都不是同类。"
+    },
+    {
+     "id": "mbj_p552_q2",
+     "topicId": "mbj_p552",
+     "prompt": "计算 根号9 加 根号16，结果是多少？",
+     "question": "计算 根号9 加 根号16，结果是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "7",
+     "verify": "3+4",
+     "explanation": "根号9 等于 3，根号16 等于 4，相加得 7。开得尽的根式先算出数值再相加，不要写成 根号25。"
+    },
+    {
+     "id": "mbj_p552_q3",
+     "topicId": "mbj_p552",
+     "prompt": "计算 根号12 减 根号3，结果是多少？",
+     "question": "计算 根号12 减 根号3，结果是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "根号3",
+     "explanation": "根号12 化简为 2 根号3，2 根号3 减 1 个 根号3 得 根号3。先化成最简形式，再按同类二次根式合并。"
+    },
+    {
+     "id": "mbj_p552_q4",
+     "topicId": "mbj_p552",
+     "prompt": "计算 根号8 加 根号18，结果是哪一个？",
+     "question": "计算 根号8 加 根号18，结果是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "5根号6"
+      },
+      {
+       "label": "B",
+       "text": "根号26"
+      },
+      {
+       "label": "C",
+       "text": "2根号5"
+      },
+      {
+       "label": "D",
+       "text": "5根号2"
+      }
+     ],
+     "answer": "D",
+     "explanation": "根号8 等于 2 根号2，根号18 等于 3 根号2，合并同类二次根式得 5 根号2。把被开方数直接相加得到 根号26 是典型错误。"
+    },
+    {
+     "id": "mbj_p552_q5",
+     "topicId": "mbj_p552",
+     "prompt": "计算 根号50 减 根号32，结果是多少？",
+     "question": "计算 根号50 减 根号32，结果是多少？",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "根号2",
+     "explanation": "根号50 等于 5 根号2，根号32 等于 4 根号2，相减得 根号2。化简是前提，不化简就看不出两者是同类二次根式。"
+    },
+    {
+     "id": "mbj_p552_q6",
+     "topicId": "mbj_p552",
+     "prompt": "计算 根号48 除以 根号3 加 根号2 乘 根号8，结果是多少？",
+     "question": "计算 根号48 除以 根号3 加 根号2 乘 根号8，结果是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "8",
+     "verify": "4+4",
+     "explanation": "先算乘除：根号48 除以 根号3 等于 根号16 等于 4，根号2 乘 根号8 等于 根号16 等于 4；再算加法得 8。混合运算要先乘除后加减。"
+    },
+    {
+     "id": "mbj_p552_q7",
+     "topicId": "mbj_p552",
+     "prompt": "计算 (根号3 加 1)(根号3 减 1)，结果是哪一个？",
+     "question": "计算 (根号3 加 1)(根号3 减 1)，结果是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "根号3"
+      }
+     ],
+     "answer": "A",
+     "explanation": "这是平方差的形式，根号3 的平方减 1 的平方，即 3 减 1 等于 2。根号3 乘 根号3 得 3，这一点最容易算错成 根号3。"
+    },
+    {
+     "id": "mbj_p552_q8",
+     "topicId": "mbj_p552",
+     "prompt": "计算 根号下 0.5 加 根号18，写出化简步骤和最后结果。",
+     "question": "计算 根号下 0.5 加 根号18，写出化简步骤和最后结果。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "先分别化简：0.5 等于二分之一，根号下 0.5 等于 根号2 除以 2，即二分之根号2；根号18 等于 3 根号2。两者是同类二次根式，合并得二分之根号2 加 3 根号2，即二分之七根号2。",
+     "explanation": "二次根式加减的关键是化成最简形式后判断是否同类，再按同类项的规则合并系数，被开方数保持不变。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p553",
+   "name": "三角形",
+   "grade": 8,
+   "description": "认识三角形的边、角、顶点和主要线段；掌握三角形任意两边之和大于第三边、三个内角的和等于 180 度、外角等于与它不相邻的两个内角的和；会用这些性质判断三条线段能否组成三角形并求角的度数。",
+   "mastery_criteria": [
+    "能用三边关系判断三条线段能否组成三角形",
+    "能由三角形内角和求未知角的度数",
+    "能用外角性质计算与三角形有关的角"
+   ],
+   "misconceptions": [
+    "只比较两条短边，不与最长边比较就判断能组成三角形",
+    "把外角说成等于与它相邻的内角"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.25",
+    "quote": "证明三角形的任意两边之和大于第三边"
+   },
+   "questions": [
+    {
+     "id": "mbj_p553_q1",
+     "topicId": "mbj_p553",
+     "prompt": "下列各组线段中，能组成三角形的是哪一组？",
+     "question": "下列各组线段中，能组成三角形的是哪一组？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "1，2，3"
+      },
+      {
+       "label": "B",
+       "text": "2，3，6"
+      },
+      {
+       "label": "C",
+       "text": "3，4，5"
+      },
+      {
+       "label": "D",
+       "text": "1，1，3"
+      }
+     ],
+     "answer": "C",
+     "explanation": "3 加 4 大于 5，3 加 5 大于 4，4 加 5 大于 3，三条线段能组成三角形。1 加 2 等于 3、1 加 1 小于 3、2 加 3 小于 6，其余三组都不满足两边之和大于第三边。"
+    },
+    {
+     "id": "mbj_p553_q2",
+     "topicId": "mbj_p553",
+     "prompt": "三角形的两个内角分别是 50 度和 60 度，第三个内角是多少度？",
+     "question": "三角形的两个内角分别是 50 度和 60 度，第三个内角是多少度？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "70",
+     "verify": "180-50-60",
+     "explanation": "三角形内角和是 180 度，用 180 度减去已知的两个角，180 减 50 减 60 得 70 度。求第三个角只需用内角和做减法。"
+    },
+    {
+     "id": "mbj_p553_q3",
+     "topicId": "mbj_p553",
+     "prompt": "三角形的一个外角是 120 度，与它不相邻的一个内角是 40 度，另一个不相邻的内角是多少度？",
+     "question": "三角形的一个外角是 120 度，与它不相邻的一个内角是 40 度，另一个不相邻的内角是多少度？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "60 度"
+      },
+      {
+       "label": "B",
+       "text": "80 度"
+      },
+      {
+       "label": "C",
+       "text": "40 度"
+      },
+      {
+       "label": "D",
+       "text": "20 度"
+      }
+     ],
+     "answer": "B",
+     "explanation": "三角形的外角等于与它不相邻的两个内角的和，所以另一个内角等于 120 度减 40 度，得 80 度。外角不与相邻内角相加，这是最常见的错法。"
+    },
+    {
+     "id": "mbj_p553_q4",
+     "topicId": "mbj_p553",
+     "prompt": "一个三角形的周长是 24，其中两条边长分别是 7 和 9，第三条边长是多少？",
+     "question": "一个三角形的周长是 24，其中两条边长分别是 7 和 9，第三条边长是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "8",
+     "verify": "24-7-9",
+     "explanation": "周长是三条边的和，第三条边等于 24 减 7 减 9，得 8。还要用三边关系检验：7 加 8 大于 9，这样的三角形确实存在。"
+    },
+    {
+     "id": "mbj_p553_q5",
+     "topicId": "mbj_p553",
+     "prompt": "三条线段长分别为 1、2、3，它们能组成三角形吗？请用三边关系说明理由。",
+     "question": "三条线段长分别为 1、2、3，它们能组成三角形吗？请用三边关系说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "不能组成三角形。因为三角形任意两边之和必须大于第三边，而这里 1 加 2 恰好等于 3，两条较短的线段首尾相接后正好落在第三条线段上，三个端点共线，围不出三角形，所以不能组成三角形。",
+     "explanation": "三边关系要求严格大于，等于的情况会退化成一条线段。判断时要用两条较短边之和与最长边比较。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p554",
+   "name": "三角形",
+   "grade": 8,
+   "description": "认识三角形的定义、顶点、边和内角，会按角或按边给三角形分类，知道三角形具有稳定性；会用内角和与三边关系解决问题，会在等腰三角形给出两组边长时先检验能否组成三角形再求周长。",
+   "mastery_criteria": [
+    "能按角和按边给三角形正确分类",
+    "能用三角形内角和求角的度数",
+    "能用三边关系排除不合法的边长组合"
+   ],
+   "misconceptions": [
+    "分类时把等腰三角形与等边三角形并列，忽略等边是特殊的等腰",
+    "等腰三角形给两组边时直接算出两个周长，不检验能否组成三角形"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.23",
+    "quote": "角平分线等概念，了解三角形的稳定性"
+   },
+   "questions": [
+    {
+     "id": "mbj_p554_q1",
+     "topicId": "mbj_p554",
+     "prompt": "三角形按角的大小分类，可以分为哪三类？",
+     "question": "三角形按角的大小分类，可以分为哪三类？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "大三角形、中三角形、小三角形"
+      },
+      {
+       "label": "B",
+       "text": "等腰三角形、等边三角形、不等边三角形"
+      },
+      {
+       "label": "C",
+       "text": "锐角三角形、直角三角形、钝角三角形"
+      },
+      {
+       "label": "D",
+       "text": "正三角形、斜三角形、直角三角形"
+      }
+     ],
+     "answer": "C",
+     "explanation": "按角分类看最大内角是锐角、直角还是钝角，分为锐角、直角、钝角三角形。等腰、等边、不等边是按边分类的结果，两套分类不能混在一起。"
+    },
+    {
+     "id": "mbj_p554_q2",
+     "topicId": "mbj_p554",
+     "prompt": "一个三角形的三个内角度数之比是 1 比 2 比 3，最大的内角是多少度？",
+     "question": "一个三角形的三个内角度数之比是 1 比 2 比 3，最大的内角是多少度？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "90",
+     "verify": "180*3/6",
+     "explanation": "三份共 6 份，内角和 180 度，一份是 30 度，最大角占 3 份即 90 度。按比分配要先求出总份数再乘。"
+    },
+    {
+     "id": "mbj_p554_q3",
+     "topicId": "mbj_p554",
+     "prompt": "三条边都相等的三角形叫做什么三角形？",
+     "question": "三条边都相等的三角形叫做什么三角形？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "等边三角形",
+     "explanation": "三条边都相等的三角形叫等边三角形，也叫正三角形。它的三个内角都等于 60 度，是等腰三角形的特殊情况。"
+    },
+    {
+     "id": "mbj_p554_q4",
+     "topicId": "mbj_p554",
+     "prompt": "下列图形中具有稳定性的是哪一个？",
+     "question": "下列图形中具有稳定性的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "三角形"
+      },
+      {
+       "label": "B",
+       "text": "四边形"
+      },
+      {
+       "label": "C",
+       "text": "五边形"
+      },
+      {
+       "label": "D",
+       "text": "六边形"
+      }
+     ],
+     "answer": "A",
+     "explanation": "三角形的三条边确定后形状和大小就唯一确定，具有稳定性；四边形等多边形只要边确定还能变形，没有稳定性，所以门框常用斜撑构成三角形。"
+    },
+    {
+     "id": "mbj_p554_q5",
+     "topicId": "mbj_p554",
+     "prompt": "三角形的两条边长分别是 6 和 10，第三条边长取整数时最大值是多少？",
+     "question": "三角形的两条边长分别是 6 和 10，第三条边长取整数时最大值是多少？",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "15",
+     "explanation": "第三边要大于 10 减 6 且小于 10 加 6，即大于 4 且小于 16，所以整数最大取 15。取 16 时 6 加 10 等于 16，三条线段共线，组不成三角形。"
+    },
+    {
+     "id": "mbj_p554_q6",
+     "topicId": "mbj_p554",
+     "prompt": "直角三角形中两个锐角的度数之和是多少度？",
+     "question": "直角三角形中两个锐角的度数之和是多少度？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "90",
+     "verify": "180-90",
+     "explanation": "三角形内角和 180 度，直角占 90 度，剩下两个锐角之和就是 90 度，两角互为余角。这个结论在解直角三角形时经常用到。"
+    },
+    {
+     "id": "mbj_p554_q7",
+     "topicId": "mbj_p554",
+     "prompt": "一个等腰三角形的两条边长分别是 4 和 9，它的周长是多少？",
+     "question": "一个等腰三角形的两条边长分别是 4 和 9，它的周长是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "17"
+      },
+      {
+       "label": "B",
+       "text": "22"
+      },
+      {
+       "label": "C",
+       "text": "17 或 22"
+      },
+      {
+       "label": "D",
+       "text": "26"
+      }
+     ],
+     "answer": "B",
+     "explanation": "若腰长为 4，三边是 4、4、9，4 加 4 小于 9，组不成三角形，这种情况要被排除；只能以 9 为腰，三边为 9、9、4，周长 22。题目给出两组边长时必须先用三边关系检验。"
+    },
+    {
+     "id": "mbj_p554_q8",
+     "topicId": "mbj_p554",
+     "prompt": "等腰三角形的两条边长分别是 4 和 9，为什么周长不能是 17？请用三边关系说明。",
+     "question": "等腰三角形的两条边长分别是 4 和 9，为什么周长不能是 17？请用三边关系说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "若周长是 17，说明腰长取 4，三条边就是 4、4、9。而 4 加 4 等于 8，小于 9，不满足三角形任意两边之和大于第三边，这样的三条线段围不成三角形，所以这种情况不存在。正确的做法是取腰长 9，三边为 9、9、4，周长是 22。",
+     "explanation": "等腰三角形给出两条边长时有两种可能的腰，但并非两种都成立，必须逐一用三边关系检验，排除退化的情况后才有唯一答案。"
+    }
+   ]
+  }
+ ]
+}

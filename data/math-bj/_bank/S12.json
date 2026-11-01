@@ -1,0 +1,2754 @@
+{
+ "shard": "S12",
+ "subject": "math-bj",
+ "book": "三上",
+ "points": [
+  {
+   "topicId": "mbj_p210",
+   "description": "本单元学习多位数乘一位数的口算、估算和笔算。要求理解乘法的意义，用一位数依次去乘多位数的每一位，满十向前一位进一，并能在购物、装盒等情境中列式解决求几个几的实际问题。",
+   "mastery_criteria": [
+    "能正确笔算三位数乘一位数，包括进位和因数中间、末尾有0的情况",
+    "能用估算判断乘法结果的大致范围",
+    "能列乘法算式解决求几个几的实际问题"
+   ],
+   "misconceptions": [
+    "笔算时忘记加上进位的数，结果偏小",
+    "因数中间有0时跳过不乘，积少一位",
+    "把乘法当加法，逐位相加"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p210_q1",
+     "topicId": "mbj_p210",
+     "prompt": "计算 213 乘 3 的积是多少？",
+     "question": "计算 213 乘 3 的积是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "619"
+      },
+      {
+       "label": "B",
+       "text": "639"
+      },
+      {
+       "label": "C",
+       "text": "693"
+      },
+      {
+       "label": "D",
+       "text": "549"
+      }
+     ],
+     "answer": "B",
+     "explanation": "用 3 分别乘个位 3 得 9、十位 1 得 3、百位 2 得 6，积是 639；得 619 的是十位算成了 1，得 693 的是把数字顺序颠倒了。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p210_q2",
+     "topicId": "mbj_p210",
+     "prompt": "学校每排种 42 棵树，种了 3 排，一共种了多少棵树？",
+     "question": "学校每排种 42 棵树，种了 3 排，一共种了多少棵树？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "126",
+     "verify": "42*3",
+     "explanation": "求 3 个 42 是多少，用乘法：42 乘 3 得 126。十位 4 乘 3 得 12 个十，也要把进位的 1 算进百位。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p210_q3",
+     "topicId": "mbj_p210",
+     "prompt": "用竖式计算 407 乘 6，积是多少？",
+     "question": "用竖式计算 407 乘 6，积是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "2442",
+     "verify": "407*6",
+     "explanation": "个位 7 乘 6 得 42，写 2 进 4；十位 0 乘 6 得 0，加上进位的 4 写 4；百位 4 乘 6 得 24，写 4 进 2，积是 2442。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p210_q4",
+     "topicId": "mbj_p210",
+     "prompt": "估算 198 乘 5 的积，下面哪个结果最接近准确值？",
+     "question": "估算 198 乘 5 的积，下面哪个结果最接近准确值？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "900"
+      },
+      {
+       "label": "B",
+       "text": "1200"
+      },
+      {
+       "label": "C",
+       "text": "1000"
+      },
+      {
+       "label": "D",
+       "text": "800"
+      }
+     ],
+     "answer": "C",
+     "explanation": "把 198 看成 200，200 乘 5 得 1000，与准确的 990 只差 10，最接近；看成 200 以下或以上的整百数误差都更大。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p210_q5",
+     "topicId": "mbj_p210",
+     "prompt": "一位数乘三位数，积可能是几位数？请举例说明你的判断。",
+     "question": "一位数乘三位数，积可能是几位数？请举例说明你的判断。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "积可能是三位数，也可能是四位数。例如 123 乘 2 得 246，是三位数；987 乘 3 得 2961，是四位数。当三位数最高位上的数与一位数相乘满十时，积就变成四位数。",
+     "explanation": "要看百位上的数与一位数相乘是否满十：不满十，积仍是三位数；满十要向千位进一，积就是四位数。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p211",
+   "description": "学习整十、整百数乘一位数和简单的两位数乘一位数的口算。方法是先用一位数乘 0 前面的数，再看因数末尾有几个 0，就在积的末尾添上几个 0，要求口算又对又快并能说出算理。",
+   "mastery_criteria": [
+    "能口算整十、整百数乘一位数，并在积的末尾添对齐的0",
+    "能口算不进位的两位数乘一位数",
+    "能说出先算前面数、再添0的道理"
+   ],
+   "misconceptions": [
+    "20乘3得60，却写成6，末尾的0漏写",
+    "300乘4得1200，写成120，少添一个0",
+    "把20乘3算成20加3"
+   ],
+   "std": {
+    "id": "mat-2022:2.TS.02",
+    "quote": "数的运算教学应利用整数的乘法运算"
+   },
+   "questions": [
+    {
+     "id": "mbj_p211_q1",
+     "topicId": "mbj_p211",
+     "prompt": "口算 30 乘 4，积是多少？",
+     "question": "口算 30 乘 4，积是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "120",
+     "explanation": "30 是 3 个十，3 个十乘 4 得 12 个十，也就是 120，所以积的末尾要添一个 0。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p211_q2",
+     "topicId": "mbj_p211",
+     "prompt": "口算 500 乘 6，积是多少？",
+     "question": "口算 500 乘 6，积是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "3000",
+     "verify": "500*6",
+     "explanation": "先算 5 乘 6 得 30，500 的末尾有两个 0，就在 30 后面添两个 0，得 3000。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p211_q3",
+     "topicId": "mbj_p211",
+     "prompt": "口算 40 乘 7 时，先算 4 乘 7 得 28，再在 28 后面添几个 0？",
+     "question": "口算 40 乘 7 时，先算 4 乘 7 得 28，再在 28 后面添几个 0？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "2个"
+      },
+      {
+       "label": "B",
+       "text": "3个"
+      },
+      {
+       "label": "C",
+       "text": "不添0"
+      },
+      {
+       "label": "D",
+       "text": "1个"
+      }
+     ],
+     "answer": "D",
+     "explanation": "40 的末尾只有一个 0，所以先算出 28 后只添一个 0，得 280。添 0 的个数由因数末尾 0 的个数决定。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p211_q4",
+     "topicId": "mbj_p211",
+     "prompt": "口算 23 乘 3，积是多少？",
+     "question": "口算 23 乘 3，积是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "69",
+     "verify": "23*3",
+     "explanation": "把 23 分成 20 和 3：20 乘 3 得 60，3 乘 3 得 9，60 加 9 得 69，口算时先分后合不容易错。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p211_q5",
+     "topicId": "mbj_p211",
+     "prompt": "每盒铅笔有 20 支，买 8 盒一共有多少支？",
+     "question": "每盒铅笔有 20 支，买 8 盒一共有多少支？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "16支"
+      },
+      {
+       "label": "B",
+       "text": "160支"
+      },
+      {
+       "label": "C",
+       "text": "100支"
+      },
+      {
+       "label": "D",
+       "text": "28支"
+      }
+     ],
+     "answer": "B",
+     "explanation": "求 8 个 20 是多少，用 20 乘 8：先算 2 乘 8 得 16，再添一个 0，得 160 支；得 16 的是把末尾的 0 丢了。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p211_q6",
+     "topicId": "mbj_p211",
+     "prompt": "口算 12 乘 4 与 40 乘 3，把两个积相加，结果是多少？",
+     "question": "口算 12 乘 4 与 40 乘 3，把两个积相加，结果是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "168",
+     "verify": "12*4+40*3",
+     "explanation": "12 乘 4 得 48，40 乘 3 得 120，48 加 120 得 168。两步都要先算准，再相加。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p211_q7",
+     "topicId": "mbj_p211",
+     "prompt": "一个整十数乘 7，积是 420，这个整十数是多少？",
+     "question": "一个整十数乘 7，积是 420，这个整十数是多少？",
+     "type": "fill",
+     "difficulty": "hard",
+     "answer": "60",
+     "explanation": "先不看末尾的 0：6 乘 7 得 42，添上一个 0 正好是 420，所以这个整十数是 60。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p211_q8",
+     "topicId": "mbj_p211",
+     "prompt": "比较 300 乘 4 和 30 乘 4 的积，说一说为什么它们末尾 0 的个数不同。",
+     "question": "比较 300 乘 4 和 30 乘 4 的积，说一说为什么它们末尾 0 的个数不同。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "300 乘 4 得 1200，30 乘 4 得 120。因为 300 末尾有两个 0，先算 3 乘 4 得 12 后要添两个 0；30 末尾只有一个 0，只添一个 0，所以两个积末尾 0 的个数不同。",
+     "explanation": "口算时添 0 的个数取决于因数末尾 0 的个数，因数末尾有几个 0，积的末尾就添几个 0。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p212",
+   "description": "学习把多位数看成与它接近的整十、整百数，再与一位数相乘求近似积。要求能说明把哪个数看成多少、估大还是估小，并用估算判断带的钱够不够、座位够不够。",
+   "mastery_criteria": [
+    "能把三位数看成接近的整百数或整十数求近似积",
+    "能判断估算结果是估大还是估小",
+    "能用估算解决够不够的实际问题"
+   ],
+   "misconceptions": [
+    "把298看成200估算，误差太大还用结论",
+    "认为估算结果就是准确值，写成等号",
+    "估大后说不够、估小后说够，方向弄反"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p212_q1",
+     "topicId": "mbj_p212",
+     "prompt": "估算 298 乘 3 时，把 298 看作多少最合适？",
+     "question": "估算 298 乘 3 时，把 298 看作多少最合适？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "200"
+      },
+      {
+       "label": "B",
+       "text": "290"
+      },
+      {
+       "label": "C",
+       "text": "300"
+      },
+      {
+       "label": "D",
+       "text": "400"
+      }
+     ],
+     "answer": "C",
+     "explanation": "298 最接近整百数 300，把它看成 300 估算，300 乘 3 得 900，与准确值只差 6，误差最小。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p212_q2",
+     "topicId": "mbj_p212",
+     "prompt": "把 198 看作 200，200 乘 4 得多少？",
+     "question": "把 198 看作 200，200 乘 4 得多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "800",
+     "verify": "200*4",
+     "explanation": "200 乘 4：先算 2 乘 4 得 8，再添两个 0，得 800。这是估算 198 乘 4 时的近似积。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p212_q3",
+     "topicId": "mbj_p212",
+     "prompt": "估算 39 乘 5 时，把 39 看作 40，40 乘 5 得多少？",
+     "question": "估算 39 乘 5 时，把 39 看作 40，40 乘 5 得多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "200",
+     "explanation": "40 乘 5：4 乘 5 得 20，再添一个 0，得 200。所以 39 乘 5 的积大约是 200。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p212_q4",
+     "topicId": "mbj_p212",
+     "prompt": "每张门票 48 元，买 6 张大约需要多少元？请把 48 看作 50 来估算。",
+     "question": "每张门票 48 元，买 6 张大约需要多少元？请把 48 看作 50 来估算。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "300",
+     "verify": "50*6",
+     "explanation": "把 48 看成 50，50 乘 6 得 300，所以买 6 张门票大约需要 300 元，实际要 288 元。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p212_q5",
+     "topicId": "mbj_p212",
+     "prompt": "一支笔 3 元，带 100 元买 32 支够不够？下面哪种估算方法合适？",
+     "question": "一支笔 3 元，带 100 元买 32 支够不够？下面哪种估算方法合适？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "把32看作30，30乘3得90，90小于100，够"
+      },
+      {
+       "label": "B",
+       "text": "把32看作40，40乘3得120，120大于100，不够"
+      },
+      {
+       "label": "C",
+       "text": "把3看作5，32乘5得160，160大于100，不够"
+      },
+      {
+       "label": "D",
+       "text": "把32看作30，30乘3得90，90大于100，够"
+      }
+     ],
+     "answer": "A",
+     "explanation": "判断够不够要把价钱估大才保险，但这里 32 的近似整十数是 30，30 乘 3 得 90，90 比 100 小，还差 10 元，所以 100 元够买。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p212_q6",
+     "topicId": "mbj_p212",
+     "prompt": "估算 497 乘 2 时，把 497 看作 500，估算的积是多少？",
+     "question": "估算 497 乘 2 时，把 497 看作 500，估算的积是多少？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "1000",
+     "explanation": "500 乘 2：5 乘 2 得 10，再添两个 0，得 1000。准确积是 994，与估算结果只差 6。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p212_q7",
+     "topicId": "mbj_p212",
+     "prompt": "每箱饮料 29 瓶，4 箱大约有多少瓶？请把 29 看作 30 来估算。",
+     "question": "每箱饮料 29 瓶，4 箱大约有多少瓶？请把 29 看作 30 来估算。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "120",
+     "verify": "30*4",
+     "explanation": "29 接近 30，30 乘 4 得 120，所以 4 箱大约有 120 瓶，实际有 116 瓶。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p212_q8",
+     "topicId": "mbj_p212",
+     "prompt": "把 198 看成 200 来估算 198 乘 5，得到的积和实际的积相比，是大了还是小了？为什么？",
+     "question": "把 198 看成 200 来估算 198 乘 5，得到的积和实际的积相比，是大了还是小了？为什么？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "估算的积大了。因为把 198 看成 200，每个因数多了 2，5 个 2 就是 10，所以估算的 1000 比实际的 990 多 10。因数估大，积就估大。",
+     "explanation": "估算结果与实际结果的差，来自把因数看大或看小了多少，再乘上另一个因数。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p213",
+   "description": "学习多位数乘一位数的竖式笔算，先从不进位的情况入手。要求用一位数依次与多位数的个位、十位、百位相乘，把每一次乘得的积写在对应的数位上，竖式书写规范、数位对齐。",
+   "mastery_criteria": [
+    "能按从个位起的顺序笔算不进位的多位数乘一位数",
+    "能把每一位乘得的积写在对应的数位上",
+    "能检查竖式是否数位对齐、有无漏乘"
+   ],
+   "misconceptions": [
+    "从最高位开始乘，积写错位置",
+    "一位数只与个位相乘，漏乘十位百位",
+    "十位的积写到百位上，数位没对齐"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p213_q1",
+     "topicId": "mbj_p213",
+     "prompt": "用竖式计算 123 乘 3，积是多少？",
+     "question": "用竖式计算 123 乘 3，积是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "369",
+     "verify": "123*3",
+     "explanation": "个位 3 乘 3 得 9 写在个位，十位 2 乘 3 得 6 写在十位，百位 1 乘 3 得 3 写在百位，积是 369。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p213_q2",
+     "topicId": "mbj_p213",
+     "prompt": "计算 214 乘 2，积是多少？",
+     "question": "计算 214 乘 2，积是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "428",
+     "explanation": "个位 4 乘 2 得 8，十位 1 乘 2 得 2，百位 2 乘 2 得 4，每一位都不进位，积是 428。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p213_q3",
+     "topicId": "mbj_p213",
+     "prompt": "用竖式计算 213 乘 3 时，十位上的 1 与 3 相乘得到的 3 应该写在哪一位上？",
+     "question": "用竖式计算 213 乘 3 时，十位上的 1 与 3 相乘得到的 3 应该写在哪一位上？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "百位"
+      },
+      {
+       "label": "B",
+       "text": "个位"
+      },
+      {
+       "label": "C",
+       "text": "千位"
+      },
+      {
+       "label": "D",
+       "text": "十位"
+      }
+     ],
+     "answer": "D",
+     "explanation": "十位上的 1 表示 1 个十，1 个十乘 3 得 3 个十，所以积 3 要写在十位上，数位对齐才不会算错。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p213_q4",
+     "topicId": "mbj_p213",
+     "prompt": "用竖式计算 312 乘 3，积是多少？",
+     "question": "用竖式计算 312 乘 3，积是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "936",
+     "verify": "312*3",
+     "explanation": "个位 2 乘 3 得 6，十位 1 乘 3 得 3，百位 3 乘 3 得 9，积是 936；三步都不进位，只要对齐数位即可。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p213_q5",
+     "topicId": "mbj_p213",
+     "prompt": "用竖式计算 231 乘 3，正确的积是哪一个？",
+     "question": "用竖式计算 231 乘 3，正确的积是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "693"
+      },
+      {
+       "label": "B",
+       "text": "639"
+      },
+      {
+       "label": "C",
+       "text": "663"
+      },
+      {
+       "label": "D",
+       "text": "594"
+      }
+     ],
+     "answer": "A",
+     "explanation": "个位 1 乘 3 得 3，十位 3 乘 3 得 9，百位 2 乘 3 得 6，积是 693；得 639 的是把百位和十位的积写反了。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p213_q6",
+     "topicId": "mbj_p213",
+     "prompt": "每箱装 121 瓶水，3 箱一共装多少瓶？",
+     "question": "每箱装 121 瓶水，3 箱一共装多少瓶？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "363",
+     "verify": "121*3",
+     "explanation": "求 3 个 121 是多少，121 乘 3：个位 1 乘 3 得 3，十位 2 乘 3 得 6，百位 1 乘 3 得 3，共 363 瓶。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p213_q7",
+     "topicId": "mbj_p213",
+     "prompt": "一个三位数乘 2，积是 864，这个三位数是多少？",
+     "question": "一个三位数乘 2，积是 864，这个三位数是多少？",
+     "type": "fill",
+     "difficulty": "hard",
+     "answer": "432",
+     "explanation": "用积除以 2 就能求出这个三位数：864 除以 2 得 432。也可以用竖式反推每一位乘 2 的结果。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p213_q8",
+     "topicId": "mbj_p213",
+     "prompt": "用竖式计算 213 乘 3 时，为什么要把一位数分别与个位、十位、百位相乘？",
+     "question": "用竖式计算 213 乘 3 时，为什么要把一位数分别与个位、十位、百位相乘？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为 213 是由 2 个百、1 个十和 3 个一组成的，乘 3 就是分别算出 9 个一、3 个十和 6 个百，再合起来得 639。每一位都要乘，积写在对应数位上，结果才正确。",
+     "explanation": "笔算乘法就是把每一位上的计数单位分别乘，再把结果合并，所以每一位都不能漏乘。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p214",
+   "description": "学习多位数乘一位数中有进位的笔算。要求哪一位上的积满几十就向前一位进几，进位的数要记牢并在下一步加上，能正确计算含连续进位的乘法，并会检查漏加进位造成的错误。",
+   "mastery_criteria": [
+    "能正确笔算有进位、含连续进位的多位数乘一位数",
+    "能把满十进上的数记下，并在下一步加上",
+    "能检查结果是否因漏加进位而偏小"
+   ],
+   "misconceptions": [
+    "个位乘得满十不进位，把几十直接写在个位",
+    "进位的数忘记加到前一位的积里",
+    "连续进位时只加一次，后一位漏加"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p214_q1",
+     "topicId": "mbj_p214",
+     "prompt": "用竖式计算 28 乘 3，积是多少？",
+     "question": "用竖式计算 28 乘 3，积是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "84",
+     "verify": "28*3",
+     "explanation": "个位 8 乘 3 得 24，写 4 进 2；十位 2 乘 3 得 6，加上进位的 2 得 8，积是 84。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p214_q2",
+     "topicId": "mbj_p214",
+     "prompt": "计算 46 乘 4 时，个位 6 乘 4 得 24，要向十位进几？",
+     "question": "计算 46 乘 4 时，个位 6 乘 4 得 24，要向十位进几？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "2",
+     "explanation": "个位 6 乘 4 得 24，满二十，个位写 4，向十位进 2。进位的数要记在十位上方，下一步加上。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p214_q3",
+     "topicId": "mbj_p214",
+     "prompt": "用竖式计算 37 乘 2，正确的积是多少？",
+     "question": "用竖式计算 37 乘 2，正确的积是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "614"
+      },
+      {
+       "label": "B",
+       "text": "64"
+      },
+      {
+       "label": "C",
+       "text": "74"
+      },
+      {
+       "label": "D",
+       "text": "68"
+      }
+     ],
+     "answer": "C",
+     "explanation": "个位 7 乘 2 得 14，写 4 进 1；十位 3 乘 2 得 6，加进位的 1 得 7，积是 74；得 614 的是把进位的 1 直接写在了前面。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p214_q4",
+     "topicId": "mbj_p214",
+     "prompt": "用竖式计算 138 乘 6，积是多少？",
+     "question": "用竖式计算 138 乘 6，积是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "828",
+     "verify": "138*6",
+     "explanation": "个位 8 乘 6 得 48，写 8 进 4；十位 3 乘 6 得 18，加 4 得 22，写 2 进 2；百位 1 乘 6 得 6，加 2 得 8，积是 828。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p214_q5",
+     "topicId": "mbj_p214",
+     "prompt": "用竖式计算 256 乘 4 时，十位上 5 乘 4 得 20，加上个位进上来的 2 得 22，应该怎么写？",
+     "question": "用竖式计算 256 乘 4 时，十位上 5 乘 4 得 20，加上个位进上来的 2 得 22，应该怎么写？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "十位写0，向百位进2"
+      },
+      {
+       "label": "B",
+       "text": "十位写2，向百位进2"
+      },
+      {
+       "label": "C",
+       "text": "十位写22，向百位进0"
+      },
+      {
+       "label": "D",
+       "text": "十位写2，向百位进1"
+      }
+     ],
+     "answer": "B",
+     "explanation": "22 个十就是 2 个百和 2 个十，所以十位写 2，向百位进 2。积是 1024，写 22 或只进 1 都会算错。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p214_q6",
+     "topicId": "mbj_p214",
+     "prompt": "每箱苹果重 148 千克，5 箱共重多少千克？",
+     "question": "每箱苹果重 148 千克，5 箱共重多少千克？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "740",
+     "verify": "148*5",
+     "explanation": "148 乘 5：个位 8 乘 5 得 40，写 0 进 4；十位 4 乘 5 得 20，加 4 得 24，写 4 进 2；百位 1 乘 5 得 5，加 2 得 7，共 740 千克。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p214_q7",
+     "topicId": "mbj_p214",
+     "prompt": "用竖式计算 476 乘 8，积是多少？",
+     "question": "用竖式计算 476 乘 8，积是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "3808",
+     "verify": "476*8",
+     "explanation": "个位 6 乘 8 得 48，写 8 进 4；十位 7 乘 8 得 56，加 4 得 60，写 0 进 6；百位 4 乘 8 得 32，加 6 得 38，积是 3808。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p214_q8",
+     "topicId": "mbj_p214",
+     "prompt": "小红计算 45 乘 6 得 240，她可能错在哪里？正确的积是多少？",
+     "question": "小红计算 45 乘 6 得 240，她可能错在哪里？正确的积是多少？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "她只算了十位上的 4 乘 6 得 24 个十，忘了算个位 5 乘 6 得的 30。正确算法是个位写 0 进 3，十位 4 乘 6 得 24 加 3 得 27，积应是 270。",
+     "explanation": "笔算时每一位都要乘，个位的积还要进位加到十位上，漏算个位就会少 30。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p215",
+   "description": "认识 0 与任何数相乘都得 0 的规律，并从「几个 0 相加」和「0 个几」两方面说明道理。要求能直接算出含 0 的乘法结果，并能区分乘 0 与加 0 的不同。",
+   "mastery_criteria": [
+    "能说出0与任何数相乘都得0，并举例说明道理",
+    "能直接算出含0的乘法算式的结果",
+    "能区分乘0与加0、减0所得结果的不同"
+   ],
+   "misconceptions": [
+    "认为0乘任何数都得那个数本身",
+    "把0乘5算成5，与5加0混为一谈",
+    "认为0乘0没有意义，不敢写0"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p215_q1",
+     "topicId": "mbj_p215",
+     "prompt": "0 乘 8 的得数是多少？请直接写出结果。",
+     "question": "0 乘 8 的得数是多少？请直接写出结果。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "0",
+     "explanation": "0 乘 8 表示 8 个 0 相加，0 加 0 一直加到 8 个还是 0，所以 0 乘 8 得 0。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p215_q2",
+     "topicId": "mbj_p215",
+     "prompt": "下面哪个算式的得数是 0？",
+     "question": "下面哪个算式的得数是 0？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "9加0"
+      },
+      {
+       "label": "B",
+       "text": "0乘9"
+      },
+      {
+       "label": "C",
+       "text": "9减0"
+      },
+      {
+       "label": "D",
+       "text": "9乘1"
+      }
+     ],
+     "answer": "B",
+     "explanation": "0 乘 9 表示 9 个 0 相加，得 0；9 加 0、9 减 0 都得原来的 9，9 乘 1 也得 9，只有乘 0 才得 0。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p215_q3",
+     "topicId": "mbj_p215",
+     "prompt": "125 乘 0 再加 7，结果是多少？",
+     "question": "125 乘 0 再加 7，结果是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "7",
+     "verify": "125*0+7",
+     "explanation": "先算 125 乘 0 得 0，再加 7 得 7。乘 0 得 0，但后面加 7 要照加，不能把整个结果都当 0。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p215_q4",
+     "topicId": "mbj_p215",
+     "prompt": "5 加 0 与 5 乘 0 的结果分别是多少？",
+     "question": "5 加 0 与 5 乘 0 的结果分别是多少？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "5和0"
+      },
+      {
+       "label": "B",
+       "text": "0和5"
+      },
+      {
+       "label": "C",
+       "text": "5和5"
+      },
+      {
+       "label": "D",
+       "text": "0和0"
+      }
+     ],
+     "answer": "A",
+     "explanation": "5 加 0 表示在 5 上不增加，得 5；5 乘 0 表示 0 个 5，一个也没有，得 0。加 0 不变，乘 0 得 0。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p215_q5",
+     "topicId": "mbj_p215",
+     "prompt": "一排有 6 个座位，0 排一共有多少个座位？",
+     "question": "一排有 6 个座位，0 排一共有多少个座位？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "0",
+     "explanation": "0 排就是没有排，每排 6 个座位也没有，用 6 乘 0 得 0，所以一共有 0 个座位。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p215_q6",
+     "topicId": "mbj_p215",
+     "prompt": "0 乘 3 再乘 100，结果是多少？",
+     "question": "0 乘 3 再乘 100，结果是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "0",
+     "verify": "0*3*100",
+     "explanation": "0 乘 3 得 0，0 再乘 100 仍得 0。只要有一个因数是 0，积就是 0，与另一个因数多大无关。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p215_q7",
+     "topicId": "mbj_p215",
+     "prompt": "为什么 0 乘任何数都得 0？请用「几个几相加」的道理说明。",
+     "question": "为什么 0 乘任何数都得 0？请用「几个几相加」的道理说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "0 乘 5 表示 5 个 0 相加，0 加 0 加 0 加 0 加 0 还是 0；5 乘 0 表示 0 个 5，一个也没有，也是 0。所以 0 与任何数相乘都得 0。",
+     "explanation": "乘法表示几个相同加数的和，0 作加数时和是 0，0 个加数时和也是 0，两种理解都得到 0。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p215_q8",
+     "topicId": "mbj_p215",
+     "prompt": "下面各式中，得数最大的是哪一个？",
+     "question": "下面各式中，得数最大的是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "0乘100"
+      },
+      {
+       "label": "B",
+       "text": "1乘0"
+      },
+      {
+       "label": "C",
+       "text": "0乘0"
+      },
+      {
+       "label": "D",
+       "text": "0加100"
+      }
+     ],
+     "answer": "D",
+     "explanation": "0 加 100 得 100，是最大的；0 乘 100、1 乘 0、0 乘 0 都含有 0 作因数，得数全是 0。乘 0 与加 0 结果完全不同。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p216",
+   "description": "学习因数中间有 0 的多位数乘一位数笔算。要求中间位上的 0 也要与一位数相乘，乘得的 0 写在相应数位上占位；若后一位有进位，还要把进上来的数加上。",
+   "mastery_criteria": [
+    "能笔算因数中间有0的三位数乘一位数",
+    "能说出中间0也要乘、积要占位的道理",
+    "能处理中间0乘后再加上进位的情况"
+   ],
+   "misconceptions": [
+    "中间有0就跳过不乘，积少一位",
+    "0乘一位数得0后，把后一位的进位漏加",
+    "中间0的积空着不写，数位错乱"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p216_q1",
+     "topicId": "mbj_p216",
+     "prompt": "用竖式计算 203 乘 3，积是多少？",
+     "question": "用竖式计算 203 乘 3，积是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "609",
+     "verify": "203*3",
+     "explanation": "个位 3 乘 3 得 9，十位 0 乘 3 得 0 要写在十位上占位，百位 2 乘 3 得 6，积是 609。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p216_q2",
+     "topicId": "mbj_p216",
+     "prompt": "计算 405 乘 2 时，十位上的 0 与 2 相乘得多少？",
+     "question": "计算 405 乘 2 时，十位上的 0 与 2 相乘得多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "0",
+     "explanation": "0 与任何数相乘都得 0，所以十位上的 0 乘 2 得 0，这个 0 要写在十位上，不能空着。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p216_q3",
+     "topicId": "mbj_p216",
+     "prompt": "用竖式计算 306 乘 2 时，十位上的 0 与 2 相乘，积 0 应该写在哪里？",
+     "question": "用竖式计算 306 乘 2 时，十位上的 0 与 2 相乘，积 0 应该写在哪里？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "个位"
+      },
+      {
+       "label": "B",
+       "text": "十位"
+      },
+      {
+       "label": "C",
+       "text": "百位"
+      },
+      {
+       "label": "D",
+       "text": "不用写"
+      }
+     ],
+     "answer": "B",
+     "explanation": "0 乘 2 得 0，这个 0 要写在十位上占住十位，否则百位的 6 会跑到十位上，积就成了 72。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p216_q4",
+     "topicId": "mbj_p216",
+     "prompt": "用竖式计算 507 乘 4，积是多少？",
+     "question": "用竖式计算 507 乘 4，积是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "2028",
+     "verify": "507*4",
+     "explanation": "个位 7 乘 4 得 28，写 8 进 2；十位 0 乘 4 得 0，加 2 得 2；百位 5 乘 4 得 20，写 0 进 2，积是 2028。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p216_q5",
+     "topicId": "mbj_p216",
+     "prompt": "计算 208 乘 4，个位 8 乘 4 得 32，写 2 进 3，十位 0 乘 4 加 3 得多少？",
+     "question": "计算 208 乘 4，个位 8 乘 4 得 32，写 2 进 3，十位 0 乘 4 加 3 得多少？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "0"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "30"
+      },
+      {
+       "label": "D",
+       "text": "12"
+      }
+     ],
+     "answer": "B",
+     "explanation": "0 乘 4 得 0，再加上个位进上来的 3，得 3，写在十位上。中间是 0 也不能把进位丢掉。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p216_q6",
+     "topicId": "mbj_p216",
+     "prompt": "每盒装 306 个零件，3 盒一共装多少个？",
+     "question": "每盒装 306 个零件，3 盒一共装多少个？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "918",
+     "verify": "306*3",
+     "explanation": "306 乘 3：个位 6 乘 3 得 18，写 8 进 1；十位 0 乘 3 得 0，加 1 得 1；百位 3 乘 3 得 9，共 918 个。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p216_q7",
+     "topicId": "mbj_p216",
+     "prompt": "用竖式计算 609 乘 7，积是多少？",
+     "question": "用竖式计算 609 乘 7，积是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "4263",
+     "verify": "609*7",
+     "explanation": "个位 9 乘 7 得 63，写 3 进 6；十位 0 乘 7 得 0，加 6 得 6；百位 6 乘 7 得 42，积是 4263。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p216_q8",
+     "topicId": "mbj_p216",
+     "prompt": "计算 405 乘 7 得 2835，请说一说十位上的 0 乘 7 后为什么还要加上个位进上来的 3。",
+     "question": "计算 405 乘 7 得 2835，请说一说十位上的 0 乘 7 后为什么还要加上个位进上来的 3。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "个位 5 乘 7 得 35，写 5 向十位进 3；十位 0 乘 7 得 0，但这 3 个十要并到十位上，所以十位写 3；百位 4 乘 7 得 28，合起来是 2835。不加进位，十位就会少 3。",
+     "explanation": "进位的数表示进到前一位的计数单位，中间位即使是 0 也要把这个进位加上并写出来。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p217",
+   "description": "学习因数末尾有 0 的多位数乘一位数。可以先把末尾的 0 不看，用前面的数相乘，再数一数因数末尾一共有几个 0，就在积的末尾添上几个 0，使计算更简便。",
+   "mastery_criteria": [
+    "能用简便方法笔算末尾有0的多位数乘一位数",
+    "能数清因数末尾0的个数，在积末尾添齐",
+    "能说明简便算法与普通竖式结果相同"
+   ],
+   "misconceptions": [
+    "末尾的0漏添，积少写一个0",
+    "把因数中间的0也当成末尾0一起略去",
+    "添0的个数按一位数里的0来数，数错"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p217_q1",
+     "topicId": "mbj_p217",
+     "prompt": "用简便方法计算 320 乘 3，积是多少？",
+     "question": "用简便方法计算 320 乘 3，积是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "960",
+     "verify": "320*3",
+     "explanation": "先算 32 乘 3 得 96，320 的末尾有一个 0，在 96 后面添一个 0，得 960。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p217_q2",
+     "topicId": "mbj_p217",
+     "prompt": "计算 240 乘 2 时，先算 24 乘 2 得 48，再在 48 后面添几个 0？",
+     "question": "计算 240 乘 2 时，先算 24 乘 2 得 48，再在 48 后面添几个 0？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "1",
+     "explanation": "240 的末尾只有一个 0，所以先算出 48 后只添一个 0，得 480。添 0 的个数看因数末尾0的个数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p217_q3",
+     "topicId": "mbj_p217",
+     "prompt": "计算 500 乘 6，积的末尾一共有几个 0？",
+     "question": "计算 500 乘 6，积的末尾一共有几个 0？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "2个"
+      },
+      {
+       "label": "B",
+       "text": "3个"
+      },
+      {
+       "label": "C",
+       "text": "1个"
+      },
+      {
+       "label": "D",
+       "text": "4个"
+      }
+     ],
+     "answer": "B",
+     "explanation": "先算 5 乘 6 得 30，500 末尾有两个 0，在 30 后面添两个 0 得 3000，积的末尾一共 3 个 0。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p217_q4",
+     "topicId": "mbj_p217",
+     "prompt": "用简便方法计算 1300 乘 4，积是多少？",
+     "question": "用简便方法计算 1300 乘 4，积是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "5200",
+     "verify": "1300*4",
+     "explanation": "先算 13 乘 4 得 52，1300 的末尾有两个 0，在 52 后面添两个 0，得 5200。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p217_q5",
+     "topicId": "mbj_p217",
+     "prompt": "计算 280 乘 5，正确的积是多少？",
+     "question": "计算 280 乘 5，正确的积是多少？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "140"
+      },
+      {
+       "label": "B",
+       "text": "14000"
+      },
+      {
+       "label": "C",
+       "text": "1400"
+      },
+      {
+       "label": "D",
+       "text": "1040"
+      }
+     ],
+     "answer": "C",
+     "explanation": "先算 28 乘 5 得 140，280 的末尾有一个 0，在 140 后面添一个 0，得 1400；得 140 的是漏添了末尾的 0。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p217_q6",
+     "topicId": "mbj_p217",
+     "prompt": "每箱牛奶 250 元，买 4 箱一共多少元？",
+     "question": "每箱牛奶 250 元，买 4 箱一共多少元？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "1000",
+     "verify": "250*4",
+     "explanation": "先算 25 乘 4 得 100，250 末尾有一个 0，在 100 后面添一个 0，得 1000 元；也可想成 4 个 250 是 10 个百。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p217_q7",
+     "topicId": "mbj_p217",
+     "prompt": "用简便方法计算 4500 乘 6，积是多少？",
+     "question": "用简便方法计算 4500 乘 6，积是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "27000",
+     "verify": "4500*6",
+     "explanation": "先算 45 乘 6 得 270，4500 的末尾有两个 0，在 270 后面添两个 0，得 27000。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p217_q8",
+     "topicId": "mbj_p217",
+     "prompt": "计算 260 乘 5 时，为什么可以先算 26 乘 5 得 130，再添一个 0 得 1300？",
+     "question": "计算 260 乘 5 时，为什么可以先算 26 乘 5 得 130，再添一个 0 得 1300？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "260 是 26 个十，26 个十乘 5 得 130 个十，也就是 1300。所以先把 26 与 5 相乘，再在积的末尾添一个 0，结果不变。因数末尾有几个 0，积的末尾就添几个 0。",
+     "explanation": "末尾的 0 表示计数单位是十、百，先按前面的数相乘，再补上计数单位的 0，积的大小不变。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p218",
+   "description": "对本单元多位数乘一位数的口算、估算、笔算进行整理，梳理进位以及因数中间、末尾有 0 等易错点，能用乘法解决求几个几的实际问题，并会选择合适的方法检查结果。",
+   "mastery_criteria": [
+    "能整理出本单元口算、估算和笔算的方法要点",
+    "能针对进位与含0情况选用正确的笔算方法",
+    "能用乘法解决实际问题并检验结果"
+   ],
+   "misconceptions": [
+    "把估算结果当准确结果，写成等号",
+    "含0的乘法硬套普通竖式，容易漏位",
+    "解决问题时把求几个几写成加法算式"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p218_q1",
+     "topicId": "mbj_p218",
+     "prompt": "口算 60 乘 8，积是多少？",
+     "question": "口算 60 乘 8，积是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "480",
+     "verify": "60*8",
+     "explanation": "先算 6 乘 8 得 48，60 末尾有一个 0，在 48 后面添一个 0，得 480。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p218_q2",
+     "topicId": "mbj_p218",
+     "prompt": "用竖式计算 214 乘 3，积是多少？",
+     "question": "用竖式计算 214 乘 3，积是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "642",
+     "explanation": "个位 4 乘 3 得 12，写 2 进 1；十位 1 乘 3 得 3，加 1 得 4；百位 2 乘 3 得 6，积是 642。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p218_q3",
+     "topicId": "mbj_p218",
+     "prompt": "估算 398 乘 4 时，把 398 看作多少最合适？",
+     "question": "估算 398 乘 4 时，把 398 看作多少最合适？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "400"
+      },
+      {
+       "label": "B",
+       "text": "300"
+      },
+      {
+       "label": "C",
+       "text": "390"
+      },
+      {
+       "label": "D",
+       "text": "500"
+      }
+     ],
+     "answer": "A",
+     "explanation": "398 最接近整百数 400，400 乘 4 得 1600，与准确值 1592 只差 8，估算最准。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p218_q4",
+     "topicId": "mbj_p218",
+     "prompt": "用竖式计算 708 乘 5，积是多少？",
+     "question": "用竖式计算 708 乘 5，积是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "3540",
+     "verify": "708*5",
+     "explanation": "个位 8 乘 5 得 40，写 0 进 4；十位 0 乘 5 得 0，加 4 得 4；百位 7 乘 5 得 35，积是 3540。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p218_q5",
+     "topicId": "mbj_p218",
+     "prompt": "下面算式中，积最大的是哪一个？",
+     "question": "下面算式中，积最大的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "320乘3"
+      },
+      {
+       "label": "B",
+       "text": "230乘4"
+      },
+      {
+       "label": "C",
+       "text": "203乘5"
+      },
+      {
+       "label": "D",
+       "text": "302乘2"
+      }
+     ],
+     "answer": "C",
+     "explanation": "320 乘 3 得 960，230 乘 4 得 920，203 乘 5 得 1015，302 乘 2 得 604，所以 203 乘 5 的积最大。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p218_q6",
+     "topicId": "mbj_p218",
+     "prompt": "学校买 6 箱书，每箱 125 本，一共多少本？",
+     "question": "学校买 6 箱书，每箱 125 本，一共多少本？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "750",
+     "verify": "125*6",
+     "explanation": "125 乘 6：个位 5 乘 6 得 30，写 0 进 3；十位 2 乘 6 得 12，加 3 得 15，写 5 进 1；百位 1 乘 6 得 6，加 1 得 7，共 750 本。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p218_q7",
+     "topicId": "mbj_p218",
+     "prompt": "一个数乘 7 得 2100，这个数是多少？",
+     "question": "一个数乘 7 得 2100，这个数是多少？",
+     "type": "fill",
+     "difficulty": "hard",
+     "answer": "300",
+     "explanation": "用积除以 7：2100 除以 7 得 300。可以想成 3 个百乘 7 得 21 个百，也就是 2100。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p218_q8",
+     "topicId": "mbj_p218",
+     "prompt": "计算 407 乘 6 和 470 乘 6，结果相同吗？请说明它们的不同之处。",
+     "question": "计算 407 乘 6 和 470 乘 6，结果相同吗？请说明它们的不同之处。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "结果不同。407 乘 6 得 2442，0 在中间，0 也要乘并占位；470 乘 6 得 2820，0 在末尾，可以先算 47 乘 6 得 282 再添一个 0。中间 0 和末尾 0 的处理方法不一样。",
+     "explanation": "中间的 0 要参与计算占住数位，末尾的 0 可以先略去、最后补上，两种情况的算法不同。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p219",
+   "description": "本单元学习从前面、侧面和上面观察简单的物体和立体图形，体会同一个物体从不同方向观察看到的形状可能不同，能根据看到的图形判断观察的方向，并会描述看到的形状。",
+   "mastery_criteria": [
+    "能从前面、侧面、上面观察物体并说出看到的形状",
+    "能根据给出的图形判断是从哪个方向看到的",
+    "能体会不同方向看到的形状可能不同"
+   ],
+   "misconceptions": [
+    "认为从任何方向看到的形状都一样",
+    "把从上面看到的图形当成从前面看到的",
+    "只看一个面就判断整个物体的形状"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.16",
+    "quote": "能根据具体事物、照片或直观图辨认从不同角度观察到的简单物体"
+   },
+   "questions": [
+    {
+     "id": "mbj_p219_q1",
+     "topicId": "mbj_p219",
+     "prompt": "观察一个正方体，从上面看到的图形是什么形状？",
+     "question": "观察一个正方体，从上面看到的图形是什么形状？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "长方形"
+      },
+      {
+       "label": "B",
+       "text": "三角形"
+      },
+      {
+       "label": "C",
+       "text": "正方形"
+      },
+      {
+       "label": "D",
+       "text": "圆"
+      }
+     ],
+     "answer": "C",
+     "explanation": "正方体的六个面都是完全相同的正方形，从上面看到的就是它的一个面，所以是正方形。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p219_q2",
+     "topicId": "mbj_p219",
+     "prompt": "一个球放在桌上，从任何一个方向看，看到的都是什么形状？",
+     "question": "一个球放在桌上，从任何一个方向看，看到的都是什么形状？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "圆",
+     "explanation": "球的表面处处弯曲，从任何方向看过去，轮廓都是圆，所以看到的都是圆。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p219_q3",
+     "topicId": "mbj_p219",
+     "prompt": "一个长方体纸盒长 20 厘米、宽 10 厘米、高 5 厘米，从上面看到的长方形的两条边分别是多少厘米？",
+     "question": "一个长方体纸盒长 20 厘米、宽 10 厘米、高 5 厘米，从上面看到的长方形的两条边分别是多少厘米？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "20和5"
+      },
+      {
+       "label": "B",
+       "text": "10和5"
+      },
+      {
+       "label": "C",
+       "text": "5和5"
+      },
+      {
+       "label": "D",
+       "text": "20和10"
+      }
+     ],
+     "answer": "D",
+     "explanation": "从上面看，看到的是纸盒的顶面，长和宽分别是 20 厘米和 10 厘米；高是要从前面或侧面才看得到的。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p219_q4",
+     "topicId": "mbj_p219",
+     "prompt": "从前面和从上面观察一个竖放在桌上的圆柱形水杯，看到的图形有什么不同？",
+     "question": "从前面和从上面观察一个竖放在桌上的圆柱形水杯，看到的图形有什么不同？",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "从前面看到的是长方形，从上面看到的是圆。因为从上往下看，看到的是圆形的杯口；从前面平着看过去，看到的是杯身侧面的轮廓，是长方形。方向不同，看到的图形就不同。",
+     "explanation": "观察方向改变了，看到的是物体不同的面或轮廓，所以图形会不一样。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p219_q5",
+     "topicId": "mbj_p219",
+     "prompt": "小红从一个方向观察一个物体，看到的图形是正方形，下面哪种物体最可能是她观察的那个？",
+     "question": "小红从一个方向观察一个物体，看到的图形是正方形，下面哪种物体最可能是她观察的那个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "球"
+      },
+      {
+       "label": "B",
+       "text": "圆柱"
+      },
+      {
+       "label": "C",
+       "text": "竖放的圆柱"
+      },
+      {
+       "label": "D",
+       "text": "正方体"
+      }
+     ],
+     "answer": "D",
+     "explanation": "正方体的每个面都是正方形，从任何方向看都是正方形；球看到的是圆，圆柱从前面看是长方形，都不符合。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p220",
+   "description": "具体练习从前、后、左、右、上等方向观察同一件物品，把看到的样子说清楚。要求按「从哪个方向看、看到什么形状」的顺序描述，并能根据看到的图形找出观察者站的位置。",
+   "mastery_criteria": [
+    "能按方向说出从某方向观察物体看到的形状",
+    "能根据看到的图形判断观察者站在哪一面",
+    "能比较两个方向看到图形的相同与不同"
+   ],
+   "misconceptions": [
+    "把从左面看到的图形说成从右面看到的",
+    "描述时只说长方形，不说明看到几个面",
+    "认为看得见几个面与站的方向没有关系"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.16",
+    "quote": "能根据具体事物、照片或直观图辨认从不同角度观察到的简单物体"
+   },
+   "questions": [
+    {
+     "id": "mbj_p220_q1",
+     "topicId": "mbj_p220",
+     "prompt": "把一个正方体平放在桌上，站在它的正前方平视，能看到几个面？",
+     "question": "把一个正方体平放在桌上，站在它的正前方平视，能看到几个面？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "2个"
+      },
+      {
+       "label": "B",
+       "text": "3个"
+      },
+      {
+       "label": "C",
+       "text": "1个"
+      },
+      {
+       "label": "D",
+       "text": "6个"
+      }
+     ],
+     "answer": "C",
+     "explanation": "正前方平视只能看到正对着自己的那一个面，其他的面都被挡住了，所以只能看到 1 个面。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p220_q2",
+     "topicId": "mbj_p220",
+     "prompt": "从上面观察一个竖放在桌上的圆柱，看到的是什么形状？",
+     "question": "从上面观察一个竖放在桌上的圆柱，看到的是什么形状？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "圆",
+     "explanation": "从上往下看，看到的是圆柱上底的圆形表面，所以是圆。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p220_q3",
+     "topicId": "mbj_p220",
+     "prompt": "四位同学分别站在正方体的前面、后面、左面、右面观察，他们看到的图形都是什么形状？",
+     "question": "四位同学分别站在正方体的前面、后面、左面、右面观察，他们看到的图形都是什么形状？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "长方形"
+      },
+      {
+       "label": "B",
+       "text": "正方形"
+      },
+      {
+       "label": "C",
+       "text": "三角形"
+      },
+      {
+       "label": "D",
+       "text": "圆"
+      }
+     ],
+     "answer": "B",
+     "explanation": "正方体的六个面都是正方形，站在这四个方向看到的都是它的一个面，所以都是正方形。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p220_q4",
+     "topicId": "mbj_p220",
+     "prompt": "把一个圆柱横放在桌上，从上面观察，看到的图形是什么形状？",
+     "question": "把一个圆柱横放在桌上，从上面观察，看到的图形是什么形状？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆"
+      },
+      {
+       "label": "B",
+       "text": "长方形"
+      },
+      {
+       "label": "C",
+       "text": "三角形"
+      },
+      {
+       "label": "D",
+       "text": "正方形"
+      }
+     ],
+     "answer": "B",
+     "explanation": "圆柱横放时，从上往下看到的是它侧面的轮廓，是一条长方形，不再是圆形的底面。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p220_q5",
+     "topicId": "mbj_p220",
+     "prompt": "从侧面观察一个球，看到的是什么形状？",
+     "question": "从侧面观察一个球，看到的是什么形状？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "圆",
+     "explanation": "球从任何方向看轮廓都是圆，从侧面看到的同样是圆，不会变成其他形状。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p220_q6",
+     "topicId": "mbj_p220",
+     "prompt": "小丽看到一个物体的正面是圆，侧面也是圆，这个物体最可能是什么？",
+     "question": "小丽看到一个物体的正面是圆，侧面也是圆，这个物体最可能是什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆柱"
+      },
+      {
+       "label": "B",
+       "text": "球"
+      },
+      {
+       "label": "C",
+       "text": "正方体"
+      },
+      {
+       "label": "D",
+       "text": "长方体"
+      }
+     ],
+     "answer": "B",
+     "explanation": "球从各个方向看都是圆；圆柱从前面看到的是长方形，只有从上面看才是圆，所以不可能是圆柱。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p220_q7",
+     "topicId": "mbj_p220",
+     "prompt": "斜着从一个角的方向观察一个正方体，最多能同时看到几个面？",
+     "question": "斜着从一个角的方向观察一个正方体，最多能同时看到几个面？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "3个"
+      },
+      {
+       "label": "B",
+       "text": "1个"
+      },
+      {
+       "label": "C",
+       "text": "2个"
+      },
+      {
+       "label": "D",
+       "text": "6个"
+      }
+     ],
+     "answer": "A",
+     "explanation": "从斜上方看一个正方体，可以看到上面、前面、右面三个面；再斜也看不到第四个面，所以最多 3 个。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p220_q8",
+     "topicId": "mbj_p220",
+     "prompt": "为什么同一个物体从不同方向观察，看到的图形可能不一样？请举一个例子说明。",
+     "question": "为什么同一个物体从不同方向观察，看到的图形可能不一样？请举一个例子说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为物体各个面的形状不同，站在不同方向只能看到朝向自己的那一面。例如一个长方体纸盒，从前面看到的是长方形，从上面看到的可能是另一个长方形，从侧面看到的又是不同的长方形，所以看到的图形会不一样。",
+     "explanation": "观察的结果取决于观察方向与物体各个面的朝向，方向变了，看到的面就变了。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p221",
+   "description": "把观察物体的方法用到正方体、长方体、圆柱和球上，通过搭一搭、看一看、想一想，归纳每种立体图形从不同方向看到的图形，并能由看到的图形推断立体图形的名称。",
+   "mastery_criteria": [
+    "能说出正方体、长方体、圆柱、球从不同方向看到的图形",
+    "能由看到的图形推断立体图形的名称",
+    "能用观察结果解决搭积木一类的问题"
+   ],
+   "misconceptions": [
+    "认为圆柱从上面看是长方形",
+    "把球和圆柱混为一谈，认为圆柱各方向都是圆",
+    "只凭一个方向看到的图形就断定是正方体"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.16",
+    "quote": "能根据具体事物、照片或直观图辨认从不同角度观察到的简单物体"
+   },
+   "questions": [
+    {
+     "id": "mbj_p221_q1",
+     "topicId": "mbj_p221",
+     "prompt": "从一个方向观察一个竖放的圆柱，看到的是圆，这是从哪个方向看到的？",
+     "question": "从一个方向观察一个竖放的圆柱，看到的是圆，这是从哪个方向看到的？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "上面",
+     "explanation": "圆柱竖放时，只有从上往下看才看到圆形的底面；从前面或侧面看到的都是长方形。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p221_q2",
+     "topicId": "mbj_p221",
+     "prompt": "下面哪种立体图形，从任何方向看到的都是圆？",
+     "question": "下面哪种立体图形，从任何方向看到的都是圆？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆柱"
+      },
+      {
+       "label": "B",
+       "text": "正方体"
+      },
+      {
+       "label": "C",
+       "text": "球"
+      },
+      {
+       "label": "D",
+       "text": "长方体"
+      }
+     ],
+     "answer": "C",
+     "explanation": "球的表面处处是曲面，无论从哪个方向看轮廓都是圆；圆柱从前面看是长方形，正方体和长方体看到的是正方形或长方形。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p221_q3",
+     "topicId": "mbj_p221",
+     "prompt": "把一个长方体纸盒放在桌上，从上面看到的是长方形，这个长方形的两条边分别是纸盒的什么？",
+     "question": "把一个长方体纸盒放在桌上，从上面看到的是长方形，这个长方形的两条边分别是纸盒的什么？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "长和宽",
+     "explanation": "从上面看到的是纸盒的顶面，顶面的两条边就是纸盒的长和宽，高要从前面或侧面才看得到。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p221_q4",
+     "topicId": "mbj_p221",
+     "prompt": "用 4 个同样的小正方体紧挨着摆成一排，从前面看到 4 个正方形横着连在一起，从上面看到的是什么样子？",
+     "question": "用 4 个同样的小正方体紧挨着摆成一排，从前面看到 4 个正方形横着连在一起，从上面看到的是什么样子？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "1个正方形"
+      },
+      {
+       "label": "B",
+       "text": "2个正方形"
+      },
+      {
+       "label": "C",
+       "text": "4个正方形横着连在一起"
+      },
+      {
+       "label": "D",
+       "text": "4个正方形竖着连在一起"
+      }
+     ],
+     "answer": "C",
+     "explanation": "只摆一排、没有前后重叠，从上面看每一块都能看到，而且从左到右排成一列，所以是 4 个正方形横着连在一起。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p221_q5",
+     "topicId": "mbj_p221",
+     "prompt": "从一个物体的上面看到圆，从前面看到长方形，这个物体最可能是哪种立体图形？",
+     "question": "从一个物体的上面看到圆，从前面看到长方形，这个物体最可能是哪种立体图形？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆柱"
+      },
+      {
+       "label": "B",
+       "text": "球"
+      },
+      {
+       "label": "C",
+       "text": "正方体"
+      },
+      {
+       "label": "D",
+       "text": "长方体"
+      }
+     ],
+     "answer": "A",
+     "explanation": "圆柱竖放时，上面看是圆、前面看是长方形；球从前面看是圆，正方体和长方体都看不到圆。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p221_q6",
+     "topicId": "mbj_p221",
+     "prompt": "一个正方体的棱长是 3 厘米，从前面看到的正方形的边长是多少厘米？",
+     "question": "一个正方体的棱长是 3 厘米，从前面看到的正方形的边长是多少厘米？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "3",
+     "explanation": "正方体的每个面都是与棱长相同的正方形，所以从前面看到的正方形边长就是棱长 3 厘米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p221_q7",
+     "topicId": "mbj_p221",
+     "prompt": "用几个小正方体搭成一个物体，从前面看到 2 个正方形，从上面看到 3 个正方形。能确定这个物体用了几个小正方体吗？说明理由。",
+     "question": "用几个小正方体搭成一个物体，从前面看到 2 个正方形，从上面看到 3 个正方形。能确定这个物体用了几个小正方体吗？说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "不能确定。从前面看到 2 个正方形，只说明这个物体有两层高或两列宽；从上面看到 3 个正方形，只说明它占了 3 个位置。每个位置上叠了几个小正方体，从这两个方向看不出来，还要看从左面或右面看到的图形才能确定。",
+     "explanation": "两个方向的视图只能确定物体的宽和高，前后方向的层数信息缺失，所以个数不能确定。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p221_q8",
+     "topicId": "mbj_p221",
+     "prompt": "把一个圆柱横放在桌上，从上面看到长方形；如果把同样的圆柱竖放，从上面看到的是什么形状？",
+     "question": "把一个圆柱横放在桌上，从上面看到长方形；如果把同样的圆柱竖放，从上面看到的是什么形状？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆"
+      },
+      {
+       "label": "B",
+       "text": "长方形"
+      },
+      {
+       "label": "C",
+       "text": "正方形"
+      },
+      {
+       "label": "D",
+       "text": "三角形"
+      }
+     ],
+     "answer": "A",
+     "explanation": "竖放的圆柱，从上往下正对着圆形底面，看到的是圆；横放时看到的是侧面的长方形，放法不同看到的图形就不同。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p222",
+   "description": "本单元认识千米、分米和毫米三个长度单位，知道 1 千米等于 1000 米、1 分米等于 10 厘米、1 厘米等于 10 毫米，能根据物体的长短选择合适的单位并进行简单换算。",
+   "mastery_criteria": [
+    "能说出千米、分米、毫米与米、厘米之间的关系",
+    "能根据物体长短选择合适的长度单位",
+    "能进行简单的长度单位换算"
+   ],
+   "misconceptions": [
+    "认为1千米等于100米，少写一个0",
+    "把分米当成比厘米小的单位",
+    "给课桌高填毫米，单位选择脱离实际"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.04",
+    "quote": "认识长度单位干米，知道分米、毫米"
+   },
+   "questions": [
+    {
+     "id": "mbj_p222_q1",
+     "topicId": "mbj_p222",
+     "prompt": "1 千米等于多少米？请把单位之间的进率写出来。",
+     "question": "1 千米等于多少米？请把单位之间的进率写出来。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "1000",
+     "explanation": "千米和米之间的进率是 1000，1 千米就是 1000 米，走 1000 米的路程就是 1 千米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p222_q2",
+     "topicId": "mbj_p222",
+     "prompt": "1 分米等于多少厘米？请选出正确的进率。",
+     "question": "1 分米等于多少厘米？请选出正确的进率。",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "100"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "1000"
+      },
+      {
+       "label": "D",
+       "text": "10"
+      }
+     ],
+     "answer": "D",
+     "explanation": "分米和厘米之间的进率是 10，1 分米等于 10 厘米；1 米才等于 10 分米、100 厘米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p222_q3",
+     "topicId": "mbj_p222",
+     "prompt": "测量一枚硬币的厚度，用哪个长度单位比较合适？",
+     "question": "测量一枚硬币的厚度，用哪个长度单位比较合适？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "厘米"
+      },
+      {
+       "label": "B",
+       "text": "分米"
+      },
+      {
+       "label": "C",
+       "text": "千米"
+      },
+      {
+       "label": "D",
+       "text": "毫米"
+      }
+     ],
+     "answer": "D",
+     "explanation": "硬币很薄，厚度只有 2 毫米左右，用毫米作单位最合适；用厘米、分米、千米都太大，量不出准确结果。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p222_q4",
+     "topicId": "mbj_p222",
+     "prompt": "3 厘米等于多少毫米？请写出换算的结果。",
+     "question": "3 厘米等于多少毫米？请写出换算的结果。",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "30",
+     "explanation": "1 厘米等于 10 毫米，3 厘米就是 3 个 10 毫米，即 30 毫米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p222_q5",
+     "topicId": "mbj_p222",
+     "prompt": "把 2 千米、500 米、30 分米按从长到短排序，并说明理由。",
+     "question": "把 2 千米、500 米、30 分米按从长到短排序，并说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "从长到短是 2 千米、500 米、30 分米。因为 2 千米是 2000 米，比 500 米长；30 分米只有 3 米，比 500 米短得多。比较长短要先换成相同的单位再比。",
+     "explanation": "单位不同时不能直接比数字，要统一换算成米以后再比较大小。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p223",
+   "description": "认识长度单位千米，知道 1 千米等于 1000 米，感受 1 千米大约有多长，会用千米表示较长的路程，并能把千米与米互相换算，能在实际情境中选用千米作单位。",
+   "mastery_criteria": [
+    "能说出1千米等于1000米，并举实例说明1千米有多长",
+    "能把千米换算成米、米换算成千米",
+    "能用千米表示路程等较长的距离"
+   ],
+   "misconceptions": [
+    "把1千米当成100米，认为千米比米小",
+    "4000米写成400千米，多去掉一个0",
+    "用千米测量教室的长"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.04",
+    "quote": "认识长度单位干米，知道分米、毫米"
+   },
+   "questions": [
+    {
+     "id": "mbj_p223_q1",
+     "topicId": "mbj_p223",
+     "prompt": "5 千米等于多少米？请写出换算的结果。",
+     "question": "5 千米等于多少米？请写出换算的结果。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "5000",
+     "explanation": "1 千米等于 1000 米，5 千米就是 5 个 1000 米，即 5000 米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p223_q2",
+     "topicId": "mbj_p223",
+     "prompt": "从家到学校的路程大约 1 千米，1 千米和 1 米相比怎样？",
+     "question": "从家到学校的路程大约 1 千米，1 千米和 1 米相比怎样？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "一样长"
+      },
+      {
+       "label": "B",
+       "text": "1米长得多"
+      },
+      {
+       "label": "C",
+       "text": "无法比较"
+      },
+      {
+       "label": "D",
+       "text": "1千米长得多"
+      }
+     ],
+     "answer": "D",
+     "explanation": "1 千米等于 1000 米，是 1 米的 1000 倍，所以 1 千米比 1 米长得多，千米是用来量较长路程的单位。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p223_q3",
+     "topicId": "mbj_p223",
+     "prompt": "2 千米加 500 米，合起来是多少米？",
+     "question": "2 千米加 500 米，合起来是多少米？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "2500",
+     "verify": "2000+500",
+     "explanation": "2 千米等于 2000 米，再加 500 米得 2500 米。单位不同要先统一成米再相加。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p223_q4",
+     "topicId": "mbj_p223",
+     "prompt": "8000 米等于多少千米？",
+     "question": "8000 米等于多少千米？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "8",
+     "explanation": "1000 米是 1 千米，8000 米里面有 8 个 1000 米，所以是 8 千米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p223_q5",
+     "topicId": "mbj_p223",
+     "prompt": "下面哪种距离适合用千米作单位？",
+     "question": "下面哪种距离适合用千米作单位？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "教室的长"
+      },
+      {
+       "label": "B",
+       "text": "铅笔的长"
+      },
+      {
+       "label": "C",
+       "text": "课本的厚度"
+      },
+      {
+       "label": "D",
+       "text": "北京到天津的路程"
+      }
+     ],
+     "answer": "D",
+     "explanation": "北京到天津的路程有一百多千米，用千米作单位最合适；教室的长用米、铅笔的长用厘米、课本的厚度用毫米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p223_q6",
+     "topicId": "mbj_p223",
+     "prompt": "一辆汽车每小时行 60 千米，2 小时行多少千米？",
+     "question": "一辆汽车每小时行 60 千米，2 小时行多少千米？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "120",
+     "verify": "60*2",
+     "explanation": "每小时行 60 千米，2 小时就行 2 个 60 千米，60 乘 2 得 120 千米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p223_q7",
+     "topicId": "mbj_p223",
+     "prompt": "一条公路长 3500 米，合多少千米多少米？",
+     "question": "一条公路长 3500 米，合多少千米多少米？",
+     "type": "fill",
+     "difficulty": "hard",
+     "answer": "3千米500米",
+     "explanation": "3500 米里面有 3 个 1000 米，还剩 500 米，所以是 3 千米 500 米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p223_q8",
+     "topicId": "mbj_p223",
+     "prompt": "小明说：操场一圈 400 米，跑两圈半就是 1 千米。他说得对吗？请算一算说明。",
+     "question": "小明说：操场一圈 400 米，跑两圈半就是 1 千米。他说得对吗？请算一算说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "说得对。400 米乘 2 是 800 米，半圈是 200 米，800 米加 200 米等于 1000 米，也就是 1 千米。所以跑两圈半正好是 1 千米。",
+     "explanation": "把两圈半拆成两圈加半圈，分别算出米数再相加，正好是 1000 米即 1 千米。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p224",
+   "description": "认识分米和毫米两个长度单位：1 分米等于 10 厘米，1 厘米等于 10 毫米，1 米等于 10 分米。要求能比划出 1 分米、1 毫米的大致长度，会用它们测量较短或很短的物体。",
+   "mastery_criteria": [
+    "能说出1分米等于10厘米、1厘米等于10毫米",
+    "能量出物体的长度并用分米或毫米表示",
+    "能在米、分米、厘米、毫米之间换算"
+   ],
+   "misconceptions": [
+    "认为1分米等于100厘米",
+    "把毫米和厘米的顺序弄反，认为毫米更长",
+    "把5毫米写成5厘米，单位用法混乱"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.04",
+    "quote": "认识长度单位干米，知道分米、毫米"
+   },
+   "questions": [
+    {
+     "id": "mbj_p224_q1",
+     "topicId": "mbj_p224",
+     "prompt": "1 分米等于多少毫米？请写出换算的结果。",
+     "question": "1 分米等于多少毫米？请写出换算的结果。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "100",
+     "explanation": "1 分米等于 10 厘米，1 厘米等于 10 毫米，10 个 10 毫米就是 100 毫米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p224_q2",
+     "topicId": "mbj_p224",
+     "prompt": "1 米等于多少分米？请选出正确的进率。",
+     "question": "1 米等于多少分米？请选出正确的进率。",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "100"
+      },
+      {
+       "label": "B",
+       "text": "10"
+      },
+      {
+       "label": "C",
+       "text": "1000"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "B",
+     "explanation": "米和分米之间的进率是 10，1 米等于 10 分米；1 米等于 100 厘米、1000 毫米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p224_q3",
+     "topicId": "mbj_p224",
+     "prompt": "4 分米等于多少厘米？请算出换算的结果。",
+     "question": "4 分米等于多少厘米？请算出换算的结果。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "40",
+     "verify": "4*10",
+     "explanation": "1 分米等于 10 厘米，4 分米就是 4 个 10 厘米，即 40 厘米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p224_q4",
+     "topicId": "mbj_p224",
+     "prompt": "一根绳子长 25 厘米，也就是多少分米多少厘米？",
+     "question": "一根绳子长 25 厘米，也就是多少分米多少厘米？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "25分米"
+      },
+      {
+       "label": "B",
+       "text": "5分米2厘米"
+      },
+      {
+       "label": "C",
+       "text": "2分米5厘米"
+      },
+      {
+       "label": "D",
+       "text": "2分米50厘米"
+      }
+     ],
+     "answer": "C",
+     "explanation": "10 厘米是 1 分米，25 厘米里面有 2 个 10 厘米，还剩 5 厘米，所以是 2 分米 5 厘米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p224_q5",
+     "topicId": "mbj_p224",
+     "prompt": "7 厘米 5 毫米等于多少毫米？",
+     "question": "7 厘米 5 毫米等于多少毫米？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "75",
+     "explanation": "7 厘米等于 70 毫米，再加 5 毫米，一共 75 毫米。厘米换毫米要乘 10。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p224_q6",
+     "topicId": "mbj_p224",
+     "prompt": "一支铅笔长 18 厘米，用掉 8 厘米后，还剩多少毫米？",
+     "question": "一支铅笔长 18 厘米，用掉 8 厘米后，还剩多少毫米？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "100",
+     "verify": "(18-8)*10",
+     "explanation": "18 厘米减 8 厘米还剩 10 厘米，1 厘米等于 10 毫米，10 厘米就是 100 毫米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p224_q7",
+     "topicId": "mbj_p224",
+     "prompt": "把 1 米 2 分米改写成用厘米作单位，是多少厘米？",
+     "question": "把 1 米 2 分米改写成用厘米作单位，是多少厘米？",
+     "type": "fill",
+     "difficulty": "hard",
+     "answer": "120",
+     "explanation": "1 米等于 100 厘米，2 分米等于 20 厘米，合起来是 120 厘米。要先把米和分米都换成厘米再相加。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p224_q8",
+     "topicId": "mbj_p224",
+     "prompt": "用尺子量一块橡皮，一端对着 0 刻度，另一端对着 3 厘米 4 毫米。这块橡皮长多少毫米？请说明读法。",
+     "question": "用尺子量一块橡皮，一端对着 0 刻度，另一端对着 3 厘米 4 毫米。这块橡皮长多少毫米？请说明读法。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "橡皮长 34 毫米。因为 3 厘米是 30 毫米，再加上后面的 4 毫米，一共 34 毫米。读尺子时先读整厘米数，再数后面的小格，每一小格是 1 毫米。",
+     "explanation": "把整厘米换成毫米再数小格，是把厘米和毫米合起来读的标准方法。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p225",
+   "description": "本单元学习多位数除以一位数的口算、估算和笔算。要求理解除法是乘法的逆运算，掌握从高位除起、余数要比除数小的计算规则，并能用除法解决平均分和包含的实际问题。",
+   "mastery_criteria": [
+    "能正确笔算多位数除以一位数并会验算",
+    "能说出余数必须比除数小的道理",
+    "能用除法解决平均分和包含的实际问题"
+   ],
+   "misconceptions": [
+    "试商偏大，余数比除数还大却不再调整",
+    "笔算时商的数位没对齐，少写一个0",
+    "把平均分成几份的问题做成乘法"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p225_q1",
+     "topicId": "mbj_p225",
+     "prompt": "计算 84 除以 4，商是多少？",
+     "question": "计算 84 除以 4，商是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "21",
+     "verify": "84/4",
+     "explanation": "8 个十除以 4 得 2 个十，4 个一除以 4 得 1 个一，商是 21。也可以想 4 乘 21 得 84。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p225_q2",
+     "topicId": "mbj_p225",
+     "prompt": "计算 96 除以 3，商是多少？",
+     "question": "计算 96 除以 3，商是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "32",
+     "explanation": "十位 9 除以 3 商 3，个位 6 除以 3 商 2，商是 32；验算 32 乘 3 正好得 96。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p225_q3",
+     "topicId": "mbj_p225",
+     "prompt": "在有余数的除法里，余数和除数比较，下面说法正确的是哪一个？",
+     "question": "在有余数的除法里，余数和除数比较，下面说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "余数一定比除数大"
+      },
+      {
+       "label": "B",
+       "text": "余数可以等于除数"
+      },
+      {
+       "label": "C",
+       "text": "余数一定比除数小"
+      },
+      {
+       "label": "D",
+       "text": "余数与除数没有关系"
+      }
+     ],
+     "answer": "C",
+     "explanation": "如果余数等于或大于除数，说明还可以再商 1，商就偏小了。所以余数必须比除数小，这是有余数除法的基本规则。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p225_q4",
+     "topicId": "mbj_p225",
+     "prompt": "把 78 个苹果平均放进 6 个篮子，每个篮子放多少个？",
+     "question": "把 78 个苹果平均放进 6 个篮子，每个篮子放多少个？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "13",
+     "verify": "78/6",
+     "explanation": "求 78 里面有几个 6，用 78 除以 6：7 个十除以 6 商 1 余 1，余下的 1 个十与 8 合成 18，18 除以 6 商 3，得 13 个。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p225_q5",
+     "topicId": "mbj_p225",
+     "prompt": "计算 65 除以 7 得到商 9 余 2，怎样检查算得对不对？请写出检查过程。",
+     "question": "计算 65 除以 7 得到商 9 余 2，怎样检查算得对不对？请写出检查过程。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "用商乘除数再加余数，看结果是否等于被除数：9 乘 7 得 63，63 加 2 得 65，等于被除数，说明商 9 余 2 正确；同时余数 2 比除数 7 小，也符合要求。",
+     "explanation": "除法验算用「商乘除数加余数等于被除数」，再检查余数是否比除数小，两条都满足才算对。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p226",
+   "description": "学习整十、整百数除以一位数和简单的两位数除以一位数的口算。方法是把被除数看成几个十或几个百，用口诀求商，再在商的末尾添上相应个数的 0。",
+   "mastery_criteria": [
+    "能口算整十、整百数除以一位数",
+    "能口算不进位的两位数除以一位数",
+    "能说出把被除数看成几个十再除的道理"
+   ],
+   "misconceptions": [
+    "600除以3得2，商的0漏写",
+    "把80除以4算成20除以4",
+    "口算时商的0多添一个，得2000"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p226_q1",
+     "topicId": "mbj_p226",
+     "prompt": "口算 80 除以 4，商是多少？",
+     "question": "口算 80 除以 4，商是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "20",
+     "verify": "80/4",
+     "explanation": "80 是 8 个十，8 个十除以 4 得 2 个十，也就是 20，所以商的末尾要有一个 0。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p226_q2",
+     "topicId": "mbj_p226",
+     "prompt": "口算 600 除以 3，商是多少？",
+     "question": "口算 600 除以 3，商是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "200",
+     "explanation": "600 是 6 个百，6 个百除以 3 得 2 个百，也就是 200；商的末尾要有两个 0。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p226_q3",
+     "topicId": "mbj_p226",
+     "prompt": "口算 90 除以 3 时，先算 9 除以 3 得 3，再在 3 后面添几个 0？",
+     "question": "口算 90 除以 3 时，先算 9 除以 3 得 3，再在 3 后面添几个 0？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "1个"
+      },
+      {
+       "label": "B",
+       "text": "2个"
+      },
+      {
+       "label": "C",
+       "text": "3个"
+      },
+      {
+       "label": "D",
+       "text": "不添0"
+      }
+     ],
+     "answer": "A",
+     "explanation": "90 的末尾只有一个 0，所以先算出 3 后只添一个 0，得 30。添 0 的个数与被除数末尾 0 的个数一致。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p226_q4",
+     "topicId": "mbj_p226",
+     "prompt": "口算 69 除以 3，商是多少？",
+     "question": "口算 69 除以 3，商是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "23",
+     "verify": "69/3",
+     "explanation": "把 69 分成 60 和 9：60 除以 3 得 20，9 除以 3 得 3，20 加 3 得 23。先分后合是两位数口算除法的常用方法。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p226_q5",
+     "topicId": "mbj_p226",
+     "prompt": "每盒装 40 个鸡蛋，240 个鸡蛋能装几盒？",
+     "question": "每盒装 40 个鸡蛋，240 个鸡蛋能装几盒？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "6盒"
+      },
+      {
+       "label": "B",
+       "text": "60盒"
+      },
+      {
+       "label": "C",
+       "text": "8盒"
+      },
+      {
+       "label": "D",
+       "text": "20盒"
+      }
+     ],
+     "answer": "A",
+     "explanation": "求 240 里面有几个 40，用 240 除以 40：24 个十里有 6 个 4 个十，所以能装 6 盒。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p226_q6",
+     "topicId": "mbj_p226",
+     "prompt": "口算 48 除以 4 与 200 除以 2，把两个商相加，结果是多少？",
+     "question": "口算 48 除以 4 与 200 除以 2，把两个商相加，结果是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "112",
+     "verify": "48/4+200/2",
+     "explanation": "48 除以 4 得 12，200 除以 2 得 100，12 加 100 得 112。两步都要先算准再相加。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p226_q7",
+     "topicId": "mbj_p226",
+     "prompt": "一个整十数除以 5，商是 16，这个整十数是多少？",
+     "question": "一个整十数除以 5，商是 16，这个整十数是多少？",
+     "type": "fill",
+     "difficulty": "hard",
+     "answer": "80",
+     "explanation": "用商乘除数：16 乘 5 得 80，正好是整十数，所以这个整十数是 80。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p226_q8",
+     "topicId": "mbj_p226",
+     "prompt": "口算 800 除以 4 和 80 除以 4，商分别是多少？为什么商的末尾 0 的个数不同？",
+     "question": "口算 800 除以 4 和 80 除以 4，商分别是多少？为什么商的末尾 0 的个数不同？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "800 除以 4 得 200，80 除以 4 得 20。因为 800 是 8 个百，8 个百除以 4 得 2 个百，要添两个 0；80 是 8 个十，得 2 个十，只添一个 0。",
+     "explanation": "商的末尾 0 的个数由被除数的计数单位决定，被除数末尾有几个 0，商就添几个 0。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p227",
+   "description": "学习把被除数看成与它接近的整十、整百数，再除以一位数求商的近似值。要求能说明把被除数看成多少、商是估大还是估小，并用估算判断够不够装、能不能分完。",
+   "mastery_criteria": [
+    "能把被除数看成接近的整十整百数求近似商",
+    "能判断估算的商比实际商大还是小",
+    "能用估算解决够不够装、能不能分完的问题"
+   ],
+   "misconceptions": [
+    "把178看成100估算，误差太大还用结论",
+    "估算结果用等号连接，写成准确值",
+    "被除数估大后说商变小，方向弄反"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p227_q1",
+     "topicId": "mbj_p227",
+     "prompt": "估算 178 除以 6 时，把 178 看作多少最合适？",
+     "question": "估算 178 除以 6 时，把 178 看作多少最合适？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "180"
+      },
+      {
+       "label": "B",
+       "text": "100"
+      },
+      {
+       "label": "C",
+       "text": "200"
+      },
+      {
+       "label": "D",
+       "text": "150"
+      }
+     ],
+     "answer": "A",
+     "explanation": "178 最接近 6 的倍数 180，180 除以 6 得 30，与准确商 29 余 4 很接近，估算最准。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p227_q2",
+     "topicId": "mbj_p227",
+     "prompt": "把 238 看作 240，240 除以 6 得多少？",
+     "question": "把 238 看作 240，240 除以 6 得多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "40",
+     "verify": "240/6",
+     "explanation": "24 个十除以 6 得 4 个十，也就是 40。这是估算 238 除以 6 时的近似商。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p227_q3",
+     "topicId": "mbj_p227",
+     "prompt": "估算 358 除以 4 时，把 358 看作 360，360 除以 4 得多少？",
+     "question": "估算 358 除以 4 时，把 358 看作 360，360 除以 4 得多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "90",
+     "explanation": "36 个十除以 4 得 9 个十，即 90。所以 358 除以 4 的商大约是 90。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p227_q4",
+     "topicId": "mbj_p227",
+     "prompt": "有 158 个苹果，每袋装 8 个，大约能装多少袋？请把 158 看作 160 来估算。",
+     "question": "有 158 个苹果，每袋装 8 个，大约能装多少袋？请把 158 看作 160 来估算。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "20",
+     "verify": "160/8",
+     "explanation": "把 158 看成 160，160 除以 8 得 20，所以大约能装 20 袋，实际能装 19 袋还余 6 个。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p227_q5",
+     "topicId": "mbj_p227",
+     "prompt": "197 名同学去参观，每辆车坐 5 人，40 辆车够不够？下面估算合适的是哪一个？",
+     "question": "197 名同学去参观，每辆车坐 5 人，40 辆车够不够？下面估算合适的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "把197看作100，100除以5得20，需要20辆，够"
+      },
+      {
+       "label": "B",
+       "text": "把197看作200，200除以5得40，40比40小，不够"
+      },
+      {
+       "label": "C",
+       "text": "197除以5得39，39比40大，不够"
+      },
+      {
+       "label": "D",
+       "text": "把197看作200，200除以5得40，需要40辆，够"
+      }
+     ],
+     "answer": "D",
+     "explanation": "把 197 看成 200，200 除以 5 得 40，正好需要 40 辆车；197 人实际需要 40 辆，所以 40 辆够。把被除数估小会漏算人数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p227_q6",
+     "topicId": "mbj_p227",
+     "prompt": "估算 419 除以 7 时，把 419 看作 420，420 除以 7 得多少？",
+     "question": "估算 419 除以 7 时，把 419 看作 420，420 除以 7 得多少？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "60",
+     "explanation": "42 个十除以 7 得 6 个十，即 60。419 除以 7 的实际商是 59 余 6，估算结果很接近。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p227_q7",
+     "topicId": "mbj_p227",
+     "prompt": "学校有 723 本图书，平均分给 8 个班，大约每班分到多少本？请把 723 看作 720 来估算。",
+     "question": "学校有 723 本图书，平均分给 8 个班，大约每班分到多少本？请把 723 看作 720 来估算。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "90",
+     "verify": "720/8",
+     "explanation": "把 723 看成 720，72 个十除以 8 得 9 个十，即 90，所以每班大约分到 90 本。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p227_q8",
+     "topicId": "mbj_p227",
+     "prompt": "把 358 看作 360 来估算 358 除以 4，得到的商和实际的商相比，是大了还是小了？为什么？",
+     "question": "把 358 看作 360 来估算 358 除以 4，得到的商和实际的商相比，是大了还是小了？为什么？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "估算的商大了一些。因为把 358 看成 360，被除数多了 2，除数不变，商就会大一点。360 除以 4 得 90，而 358 除以 4 商 89 余 2，所以估算的商比实际商大 1。",
+     "explanation": "被除数估大而除数不变，商就会估大；估大估小的方向要看被除数是看大还是看小。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p228",
+   "description": "学习两位数除以一位数的笔算，从十位除起，十位除完有余数要和个位上的数合起来继续除。要求商写在对应的数位上，余数比除数小，并能用乘法验算结果。",
+   "mastery_criteria": [
+    "能正确笔算两位数除以一位数，包括十位有余数的情况",
+    "能把十位余下的数与个位合并后再除",
+    "能用商乘除数加余数的方法验算"
+   ],
+   "misconceptions": [
+    "十位除完的余数丢掉，只用个位去除",
+    "商的位置写错，把十位的商写到个位上",
+    "余数比除数大时不再调商"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p228_q1",
+     "topicId": "mbj_p228",
+     "prompt": "用竖式计算 68 除以 2，商是多少？",
+     "question": "用竖式计算 68 除以 2，商是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "34",
+     "verify": "68/2",
+     "explanation": "十位 6 除以 2 商 3，写在十位上；个位 8 除以 2 商 4，写在个位上，商是 34。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p228_q2",
+     "topicId": "mbj_p228",
+     "prompt": "计算 96 除以 4，商是多少？",
+     "question": "计算 96 除以 4，商是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "24",
+     "explanation": "十位 9 除以 4 商 2 余 1，余下的 1 个十与个位 6 合成 16，16 除以 4 商 4，商是 24。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p228_q3",
+     "topicId": "mbj_p228",
+     "prompt": "用竖式计算 72 除以 3 时，十位 7 除以 3 商 2 余 1，余下的 1 表示什么？",
+     "question": "用竖式计算 72 除以 3 时，十位 7 除以 3 商 2 余 1，余下的 1 表示什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "1个一"
+      },
+      {
+       "label": "B",
+       "text": "1个百"
+      },
+      {
+       "label": "C",
+       "text": "10个十"
+      },
+      {
+       "label": "D",
+       "text": "1个十"
+      }
+     ],
+     "answer": "D",
+     "explanation": "7 在十位上，表示 7 个十，7 个十除以 3 商 2 个十、余 1 个十。这 1 个十要和个位的 2 合成 12 再除。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p228_q4",
+     "topicId": "mbj_p228",
+     "prompt": "用竖式计算 85 除以 4，商是多少？",
+     "question": "用竖式计算 85 除以 4，商是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "21",
+     "verify": "85//4",
+     "explanation": "十位 8 除以 4 商 2 正好除尽，个位 5 除以 4 商 1 余 1，商是 21，余数是 1，余数比除数小。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p228_q5",
+     "topicId": "mbj_p228",
+     "prompt": "用竖式计算 84 除以 6，正确的商是多少？",
+     "question": "用竖式计算 84 除以 6，正确的商是多少？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "14"
+      },
+      {
+       "label": "B",
+       "text": "13"
+      },
+      {
+       "label": "C",
+       "text": "24"
+      },
+      {
+       "label": "D",
+       "text": "40"
+      }
+     ],
+     "answer": "A",
+     "explanation": "十位 8 除以 6 商 1 余 2，余下的 2 个十与 4 合成 24，24 除以 6 商 4，商是 14；得 13 的余数等于除数，还要再商 1。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p228_q6",
+     "topicId": "mbj_p228",
+     "prompt": "把 78 支铅笔平均分给 3 个同学，每人分多少支？",
+     "question": "把 78 支铅笔平均分给 3 个同学，每人分多少支？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "26",
+     "verify": "78/3",
+     "explanation": "78 除以 3：十位 7 除以 3 商 2 余 1，1 个十与 8 合成 18，18 除以 3 商 6，每人分 26 支。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p228_q7",
+     "topicId": "mbj_p228",
+     "prompt": "用竖式计算 96 除以 7，商是多少？",
+     "question": "用竖式计算 96 除以 7，商是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "13",
+     "verify": "96//7",
+     "explanation": "十位 9 除以 7 商 1 余 2，余下的 2 个十与 6 合成 26，26 除以 7 商 3 余 5，商是 13，余数 5 比除数 7 小。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p228_q8",
+     "topicId": "mbj_p228",
+     "prompt": "计算 56 除以 4 时，十位 5 除以 4 商 1 余 1，接下来应该怎样算？请说出完整过程。",
+     "question": "计算 56 除以 4 时，十位 5 除以 4 商 1 余 1，接下来应该怎样算？请说出完整过程。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "余下的 1 表示 1 个十，把它与个位上的 6 合起来是 16。用 16 除以 4 得 4，写在个位上。所以 56 除以 4 商 14，正好除尽。",
+     "explanation": "十位除后有余数，要把余下的数与下一位合起来继续除，商写在下一位上。",
+     "subject": "math-bj"
+    }
+   ]
+  }
+ ]
+}

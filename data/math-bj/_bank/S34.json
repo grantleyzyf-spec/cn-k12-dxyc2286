@@ -1,0 +1,2391 @@
+{
+ "shard": "S34",
+ "subject": "math-bj",
+ "points": [
+  {
+   "topicId": "mbj_p612",
+   "description": "本课学习反比例函数 y 等于 x 分之 k（k 不等于 0）的图象与性质：会根据 k 的符号判断图象所在象限和增减性，会用待定系数法求解析式，并用它解决面积、路程等实际问题。",
+   "mastery_criteria": [
+    "能画出反比例函数的图象并说出所在象限",
+    "能由 k 的符号判断每一支上的增减性",
+    "会用待定系数法求反比例函数解析式"
+   ],
+   "misconceptions": [
+    "认为 k 小于 0 时整个图象上 y 随 x 增大而增大",
+    "把 k 的几何意义记成 2 倍 k 而不是 k 的绝对值",
+    "代入点的坐标求 k 时漏掉负号"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p612_q1",
+     "topicId": "mbj_p612",
+     "prompt": "反比例函数 y = 6/x 的图象位于哪些象限？",
+     "question": "反比例函数 y = 6/x 的图象位于哪些象限？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "第一、三象限"
+      },
+      {
+       "label": "B",
+       "text": "第二、四象限"
+      },
+      {
+       "label": "C",
+       "text": "只在第一象限内"
+      },
+      {
+       "label": "D",
+       "text": "第二、三象限"
+      }
+     ],
+     "answer": "A",
+     "explanation": "因为 k = 6 大于 0，x 与 y 同号，所以双曲线的两支分别落在第一、三象限。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p612_q2",
+     "topicId": "mbj_p612",
+     "prompt": "已知反比例函数 y = 12/x，当 x = 3 时，y 的值是多少？",
+     "question": "已知反比例函数 y = 12/x，当 x = 3 时，y 的值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4",
+     "explanation": "把 x = 3 代入 y = 12/x，得 y 等于 12 除以 3 等于 4，注意分母不能为 0。",
+     "verify": "12/3",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p612_q3",
+     "topicId": "mbj_p612",
+     "prompt": "反比例函数 y = k/x 的图象经过点（2，-3），则 k 的值是多少？",
+     "question": "反比例函数 y = k/x 的图象经过点（2，-3），则 k 的值是多少？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "-6"
+      },
+      {
+       "label": "C",
+       "text": "-1.5"
+      },
+      {
+       "label": "D",
+       "text": "1.5"
+      }
+     ],
+     "answer": "B",
+     "explanation": "把点的坐标代入得 k 等于 x 乘 y 等于 2 乘（-3）等于 -6；常见错误是漏掉负号或错用 x 除以 y。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p612_q4",
+     "topicId": "mbj_p612",
+     "prompt": "对于反比例函数 y = -8/x，说出它的图象在哪两个象限，并说明在每一个分支上 y 随 x 增大而怎样变化。",
+     "question": "对于反比例函数 y = -8/x，说出它的图象在哪两个象限，并说明在每一个分支上 y 随 x 增大而怎样变化。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "因为 k = -8 小于 0，图象的两支分别在第二、四象限；在每一个分支上，y 随 x 的增大而增大。注意不能说整个图象上 y 随 x 增大而增大，因为两支不连续。",
+     "explanation": "k 的符号决定象限和增减性：k 小于 0 时 x 与 y 异号，落在第二、四象限，每一支上都是上升的。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p612_q5",
+     "topicId": "mbj_p612",
+     "prompt": "点 P 在反比例函数 y = k/x（k 大于 0）的图象上，过 P 分别作 x 轴、y 轴的垂线，两条垂线与坐标轴围成的矩形面积是 9，则 k 是多少？",
+     "question": "点 P 在反比例函数 y = k/x（k 大于 0）的图象上，过 P 分别作 x 轴、y 轴的垂线，两条垂线与坐标轴围成的矩形面积是 9，则 k 是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "9",
+     "explanation": "设 P（a，b）在图象上，则 ab 等于 k；矩形的两边长为 a 与 b 的绝对值，面积等于 |k|，所以 k 等于 9。",
+     "verify": "3*3",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p612_q6",
+     "topicId": "mbj_p612",
+     "prompt": "下列函数中，y 是 x 的反比例函数的是哪一个？",
+     "question": "下列函数中，y 是 x 的反比例函数的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = 5x"
+      },
+      {
+       "label": "B",
+       "text": "y = x/5"
+      },
+      {
+       "label": "C",
+       "text": "y = 5/x"
+      },
+      {
+       "label": "D",
+       "text": "y = 5/x²"
+      }
+     ],
+     "answer": "C",
+     "explanation": "反比例函数要写成 y = k/x（k 不等于 0）的形式；y = 5x 与 y = x/5 都是正比例函数，y = 5/x² 中 x 的次数是 -2。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p612_q7",
+     "topicId": "mbj_p612",
+     "prompt": "反比例函数 y = k/x 的图象经过点 A（-2，3），若点 B（m，-1）也在这个图象上，则 m 的值是多少？",
+     "question": "反比例函数 y = k/x 的图象经过点 A（-2，3），若点 B（m，-1）也在这个图象上，则 m 的值是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "-6"
+      },
+      {
+       "label": "B",
+       "text": "1.5"
+      },
+      {
+       "label": "C",
+       "text": "-1.5"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "answer": "D",
+     "explanation": "先由 A 点求 k 等于 -2 乘 3 等于 -6，再把 B 点坐标代入得 -1 等于 -6 除以 m，解得 m 等于 6。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p612_q8",
+     "topicId": "mbj_p612",
+     "prompt": "汽车行驶的路程固定为 180 千米。若速度是 60 千米每时，需要几小时？把时间 t 看作速度 v 的函数，t 与 v 成什么关系？",
+     "question": "汽车行驶的路程固定为 180 千米。若速度是 60 千米每时，需要几小时？把时间 t 看作速度 v 的函数，t 与 v 成什么关系？",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "由 t 等于 s 除以 v 得 t 等于 180 除以 60 等于 3 小时。路程固定时 t = 180/v，t 与 v 成反比例关系，速度越大所用时间越少。",
+     "explanation": "路程一定时，时间与速度的乘积保持不变，正好符合 t = 180/v 的反比例形式。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p613",
+   "description": "本章学习直角三角形的边角关系，认识正弦、余弦、正切，会用特殊角的三角函数值和解直角三角形的方法求未知的边和角，并把仰角、俯角、坡度等测量问题转化为解直角三角形问题。",
+   "mastery_criteria": [
+    "能说出解直角三角形需要的已知条件",
+    "会选择正弦、余弦、正切求未知边角",
+    "能把测量问题转化为直角三角形求解"
+   ],
+   "misconceptions": [
+    "求边长时把正弦与余弦用反",
+    "以为已知两个锐角就能求出各边",
+    "算仰角问题时忘记加上观测者的高度"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.09",
+    "quote": "能用锐角三角函数解直角三角形，能用相关知识解决一些简单的实际问题"
+   },
+   "questions": [
+    {
+     "id": "mbj_p613_q1",
+     "topicId": "mbj_p613",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，AB = 10，角 A = 30 度，则 BC 的长是多少？",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，AB = 10，角 A = 30 度，则 BC 的长是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "5 根号3"
+      },
+      {
+       "label": "C",
+       "text": "10 根号3"
+      },
+      {
+       "label": "D",
+       "text": "2.5"
+      }
+     ],
+     "answer": "A",
+     "explanation": "sin30 度等于 BC 比 AB，所以 BC 等于 10 乘 0.5 等于 5；5 根号3 是 AC 的长，不是 BC。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p613_q2",
+     "topicId": "mbj_p613",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，角 A = 45 度，AC = 6，则 BC 的长是多少？",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，角 A = 45 度，AC = 6，则 BC 的长是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "6",
+     "explanation": "角 A 等于 45 度时另一个锐角也是 45 度，三角形是等腰直角三角形，两直角边相等，所以 BC 等于 AC 等于 6。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p613_q3",
+     "topicId": "mbj_p613",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，AC = 3，BC = 4，则 sinA 的值是多少？",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，AC = 3，BC = 4，则 sinA 的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "0.8",
+     "explanation": "先由勾股定理得 AB 等于 5，sinA 等于角 A 的对边 BC 比斜边 AB，即 4 比 5 等于 0.8。",
+     "verify": "4/5",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p613_q4",
+     "topicId": "mbj_p613",
+     "prompt": "某人在距旗杆底部 20 米的 A 处，测得旗杆顶端的仰角为 45 度，他的眼睛离地面 1.6 米，求旗杆的高度。",
+     "question": "某人在距旗杆底部 20 米的 A 处，测得旗杆顶端的仰角为 45 度，他的眼睛离地面 1.6 米，求旗杆的高度。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "旗杆高等于 20 乘 tan45 度 加 1.6 等于 20 加 1.6 等于 21.6 米。要点是水平距离 20 米与仰角 45 度确定眼睛以上那一段的高度为 20 米，再加上眼睛到地面的 1.6 米。",
+     "explanation": "仰角是视线与水平线的夹角，tan45 度等于 1，说明上部高度正好等于水平距离；旗杆高还要加上观测者的眼睛高度。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p613_q5",
+     "topicId": "mbj_p613",
+     "prompt": "下列各组条件中，能够解直角三角形的是哪一组？",
+     "question": "下列各组条件中，能够解直角三角形的是哪一组？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "已知两个锐角的度数"
+      },
+      {
+       "label": "B",
+       "text": "已知一条直角边和斜边"
+      },
+      {
+       "label": "C",
+       "text": "已知一个锐角的度数"
+      },
+      {
+       "label": "D",
+       "text": "已知直角三角形一条中线的长"
+      }
+     ],
+     "answer": "B",
+     "explanation": "解直角三角形至少需要已知一条边；只知道角只能确定三角形的形状，不能确定大小，所以求不出边长。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p614",
+   "description": "本课学习锐角三角函数的定义：在直角三角形中，锐角的正弦等于对边与斜边的比，余弦等于邻边与斜边的比，正切等于对边与邻边的比，并理解这些比值只由角的大小决定。",
+   "mastery_criteria": [
+    "能写出锐角的正弦、余弦、正切的比",
+    "会在直角三角形中辨认对边、邻边、斜边",
+    "能由两边的比求出锐角的三角函数值"
+   ],
+   "misconceptions": [
+    "把邻边与斜边搞错，正弦余弦互换",
+    "认为三角形画得大，正弦值就变大",
+    "以为锐角的正弦值可以等于 1"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p614_q1",
+     "topicId": "mbj_p614",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，AB = 13，BC = 5，AC = 12，则 sinA 的值是多少？",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，AB = 13，BC = 5，AC = 12，则 sinA 的值是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "12/13"
+      },
+      {
+       "label": "B",
+       "text": "5/12"
+      },
+      {
+       "label": "C",
+       "text": "5/13"
+      },
+      {
+       "label": "D",
+       "text": "12/5"
+      }
+     ],
+     "answer": "C",
+     "explanation": "sinA 等于角 A 的对边 BC 比斜边 AB，即 5 比 13；12/13 是 cosA，5/12 是 tanA。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p614_q2",
+     "topicId": "mbj_p614",
+     "prompt": "若角 A 是锐角，则 sinA 的取值范围是什么？",
+     "question": "若角 A 是锐角，则 sinA 的取值范围是什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "大于 0 且小于或等于 1"
+      },
+      {
+       "label": "B",
+       "text": "大于 1"
+      },
+      {
+       "label": "C",
+       "text": "大于等于 0 且小于 1"
+      },
+      {
+       "label": "D",
+       "text": "大于 0 且小于 1"
+      }
+     ],
+     "answer": "D",
+     "explanation": "直角三角形中斜边最长，对边小于斜边，所以 sinA 大于 0 且严格小于 1，锐角时取不到 1。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p614_q3",
+     "topicId": "mbj_p614",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，tanA = 3/4，AC = 8，则 BC 的长是多少？",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，tanA = 3/4，AC = 8，则 BC 的长是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "6",
+     "explanation": "tanA 等于对边比邻边，即 BC 比 AC 等于 3 比 4，所以 BC 等于 8 乘 3/4 等于 6。",
+     "verify": "8*3/4",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p614_q4",
+     "topicId": "mbj_p614",
+     "prompt": "在直角三角形 ABC 和直角三角形 DEF 中，角 C 与角 F 都是 90 度，角 A 等于角 D，那么 sinA 与 sinD 的大小关系是什么？（填相等或不等）",
+     "question": "在直角三角形 ABC 和直角三角形 DEF 中，角 C 与角 F 都是 90 度，角 A 等于角 D，那么 sinA 与 sinD 的大小关系是什么？（填相等或不等）",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "相等",
+     "explanation": "两个三角形有两个角相等，所以相似；相等的锐角在相似三角形中对应边的比相同，因此它们的正弦值相等。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p614_q5",
+     "topicId": "mbj_p614",
+     "prompt": "当锐角 A 的度数逐渐增大时，sinA、cosA、tanA 分别怎样变化？",
+     "question": "当锐角 A 的度数逐渐增大时，sinA、cosA、tanA 分别怎样变化？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "sinA 和 tanA 增大，cosA 减小"
+      },
+      {
+       "label": "B",
+       "text": "三个值都增大"
+      },
+      {
+       "label": "C",
+       "text": "三个值都减小"
+      },
+      {
+       "label": "D",
+       "text": "sinA 减小，cosA 增大，tanA 不变"
+      }
+     ],
+     "answer": "A",
+     "explanation": "锐角增大时对边相对变长、邻边相对变短，所以正弦和正切增大、余弦减小；可用 30 度、45 度、60 度的值验证。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p614_q6",
+     "topicId": "mbj_p614",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，AC = 6，BC = 8，则 cosA 的值是多少？",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，AC = 6，BC = 8，则 cosA 的值是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "0.6",
+     "explanation": "由勾股定理得 AB 等于 10，cosA 等于邻边 AC 比斜边 AB，即 6 比 10 等于 0.6。",
+     "verify": "6/10",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p614_q7",
+     "topicId": "mbj_p614",
+     "prompt": "为什么说锐角 A 的三角函数值只由角 A 的大小决定，跟所画直角三角形的大小没有关系？请说明理由。",
+     "question": "为什么说锐角 A 的三角函数值只由角 A 的大小决定，跟所画直角三角形的大小没有关系？请说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为当角 A 的大小确定时，所有含这个锐角的直角三角形都相似，对应边的比相等；正弦、余弦、正切都是两边之比，所以比值不变。也就是说三角函数值随角的大小变化，三角形画大画小都不影响。",
+     "explanation": "相似三角形对应边成比例，比值只取决于锐角的大小，这正是用边的比定义锐角三角函数的依据。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p614_q8",
+     "topicId": "mbj_p614",
+     "prompt": "已知锐角 A 满足 sinA = 3/5，则 tanA 的值是多少？",
+     "question": "已知锐角 A 满足 sinA = 3/5，则 tanA 的值是多少？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "3/4",
+     "explanation": "把角 A 放在直角三角形中，对边取 3、斜边取 5，由勾股定理得邻边为 4，所以 tanA 等于 3/4。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p615",
+   "description": "本课记住 30 度、45 度、60 度角的三角函数值，会由特殊角的三角函数值反求角的度数，并用特殊角三角形的三边比（1 比 2 比 根号3、1 比 1 比 根号2）进行简单计算。",
+   "mastery_criteria": [
+    "能默写三个特殊角的正弦、余弦、正切值",
+    "能由特殊角的函数值反求角的度数",
+    "能用特殊角三角形的三边比求边长"
+   ],
+   "misconceptions": [
+    "把 sin30 度与 sin60 度的值记反",
+    "认为 tan45 度等于 根号2 除以 2",
+    "由函数值求角时把正弦值对应成互余的角"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.08",
+    "quote": "知道 30\"，45\"，60\"角的三角函数值"
+   },
+   "questions": [
+    {
+     "id": "mbj_p615_q1",
+     "topicId": "mbj_p615",
+     "prompt": "计算 2 sin30 度的值是多少？",
+     "question": "计算 2 sin30 度的值是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "0.5"
+      },
+      {
+       "label": "D",
+       "text": "根号3"
+      }
+     ],
+     "answer": "B",
+     "explanation": "sin30 度等于 0.5，所以 2 乘 0.5 等于 1；把 sin30 度误当成 1 就会得到 2。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p615_q2",
+     "topicId": "mbj_p615",
+     "prompt": "计算 cos60 度 加 tan45 度的值是多少？",
+     "question": "计算 cos60 度 加 tan45 度的值是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "1.5",
+     "explanation": "cos60 度等于 0.5，tan45 度等于 1，相加得 1.5。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p615_q3",
+     "topicId": "mbj_p615",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，角 A = 30 度，AB = 8，则 BC 的长是多少？",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，角 A = 30 度，AB = 8，则 BC 的长是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4",
+     "explanation": "BC 是角 A 的对边，sin30 度等于 BC 比 AB，所以 BC 等于 8 乘 0.5 等于 4。",
+     "verify": "8*0.5",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p615_q4",
+     "topicId": "mbj_p615",
+     "prompt": "已知锐角 A 满足 tanA = 根号3，则角 A 是多少度？",
+     "question": "已知锐角 A 满足 tanA = 根号3，则角 A 是多少度？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "30 度"
+      },
+      {
+       "label": "B",
+       "text": "45 度"
+      },
+      {
+       "label": "C",
+       "text": "60 度"
+      },
+      {
+       "label": "D",
+       "text": "55 度"
+      }
+     ],
+     "answer": "C",
+     "explanation": "tan60 度等于 根号3，而 tan30 度等于 根号3 除以 3，tan45 度等于 1，所以角 A 等于 60 度。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p615_q5",
+     "topicId": "mbj_p615",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，角 A = 60 度，BC = 6 倍根号3，则 AB 的长是多少？",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，角 A = 60 度，BC = 6 倍根号3，则 AB 的长是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "12",
+     "explanation": "sin60 度等于 BC 比 AB 等于 根号3 除以 2，所以 AB 等于 6 倍根号3 除以（根号3 除以 2）等于 12。",
+     "verify": "6*2",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p615_q6",
+     "topicId": "mbj_p615",
+     "prompt": "计算 sin45 度 乘 cos45 度的值是多少？",
+     "question": "计算 sin45 度 乘 cos45 度的值是多少？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "0.5",
+     "explanation": "sin45 度与 cos45 度都等于 根号2 除以 2，相乘得 2 除以 4 等于 0.5。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p615_q7",
+     "topicId": "mbj_p615",
+     "prompt": "等腰直角三角形的斜边长是 4 倍根号2，求两条直角边的长，并说明这个三角形三边之比。",
+     "question": "等腰直角三角形的斜边长是 4 倍根号2，求两条直角边的长，并说明这个三角形三边之比。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "设直角边为 a，由勾股定理得 a 的平方加 a 的平方等于（4 倍根号2）的平方等于 32，即 2a 的平方等于 32，解得 a 等于 4；三边之比为 1 比 1 比 根号2。",
+     "explanation": "45 度、45 度、90 度的三角形两直角边相等，斜边是直角边的 根号2 倍，反过来用除法也能由斜边求直角边。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p615_q8",
+     "topicId": "mbj_p615",
+     "prompt": "计算 4 sin30 度 减去 根号2 乘 cos45 度 的值是多少？",
+     "question": "计算 4 sin30 度 减去 根号2 乘 cos45 度 的值是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "1",
+     "explanation": "4 sin30 度等于 2，根号2 乘 cos45 度等于 根号2 乘 根号2 除以 2 等于 1，所以结果是 1。",
+     "verify": "4*0.5-2*0.5",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p616",
+   "description": "本课学会用计算器求任意锐角的三角函数值（按题目要求精确到指定小数位），以及由三角函数值用反三角函数键求相应的锐角，并注意把角度单位设置为度、结果取近似值。",
+   "mastery_criteria": [
+    "会按顺序操作计算器求锐角的三角函数值",
+    "会由三角函数值求锐角并取近似值",
+    "能判断按键出现错误提示的原因"
+   ],
+   "misconceptions": [
+    "角度单位设成弧度，结果差很多倍",
+    "把求值结果四舍五入到位数不够",
+    "认为锐角的正弦值可以大于 1"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p616_q1",
+     "topicId": "mbj_p616",
+     "prompt": "用计算器求 sin50 度的值（精确到 0.0001），结果是多少？",
+     "question": "用计算器求 sin50 度的值（精确到 0.0001），结果是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.6428"
+      },
+      {
+       "label": "B",
+       "text": "1.1918"
+      },
+      {
+       "label": "C",
+       "text": "0.5878"
+      },
+      {
+       "label": "D",
+       "text": "0.7660"
+      }
+     ],
+     "answer": "D",
+     "explanation": "在角度单位设置为度的状态下按 sin 键再输入 50，得 0.7660；0.6428 是 cos50 度，1.1918 是 tan50 度。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p616_q2",
+     "topicId": "mbj_p616",
+     "prompt": "用计算器求 tan25 度的值（精确到 0.0001），结果是多少？",
+     "question": "用计算器求 tan25 度的值（精确到 0.0001），结果是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "0.4663",
+     "explanation": "先按 tan 键再输入 25，角度单位要设为度，读得 0.4663。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p616_q3",
+     "topicId": "mbj_p616",
+     "prompt": "用计算器求得 sin28 度约等于 0.4695，则 12 sin28 度的值（精确到 0.001）是多少？",
+     "question": "用计算器求得 sin28 度约等于 0.4695，则 12 sin28 度的值（精确到 0.001）是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "5.634",
+     "explanation": "把 sin28 度取作 0.4695，再乘 12 得 5.634；不取中间近似直接计算再四舍五入，结果相同。",
+     "verify": "12*0.4695",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p616_q4",
+     "topicId": "mbj_p616",
+     "prompt": "已知锐角 A 满足 sinA = 0.4540，用计算器求角 A 约为多少度？",
+     "question": "已知锐角 A 满足 sinA = 0.4540，用计算器求角 A 约为多少度？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "27 度"
+      },
+      {
+       "label": "B",
+       "text": "63 度"
+      },
+      {
+       "label": "C",
+       "text": "24 度"
+      },
+      {
+       "label": "D",
+       "text": "0.454 度"
+      }
+     ],
+     "answer": "A",
+     "explanation": "用反正弦键求得角 A 约为 27 度；63 度是把 0.4540 当成余弦值算出的互余角。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p616_q5",
+     "topicId": "mbj_p616",
+     "prompt": "用计算器求 tan55 度的值（精确到 0.0001），结果是多少？",
+     "question": "用计算器求 tan55 度的值（精确到 0.0001），结果是多少？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "1.4281",
+     "explanation": "tan55 度约为 1.4281，大于 1 说明 55 度大于 45 度，可与 tan45 度等于 1 对照检查。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p616_q6",
+     "topicId": "mbj_p616",
+     "prompt": "一架长 4 米的梯子斜靠在墙上，梯子与地面成 65 度角，梯顶离地面的高度约为多少米？（sin65 度取 0.9063）",
+     "question": "一架长 4 米的梯子斜靠在墙上，梯子与地面成 65 度角，梯顶离地面的高度约为多少米？（sin65 度取 0.9063）",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "3.6252",
+     "explanation": "高度是斜边 4 米乘 sin65 度，等于 3.6252 米，按题目要求取近似值约为 3.63 米。",
+     "verify": "4*0.9063",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p616_q7",
+     "topicId": "mbj_p616",
+     "prompt": "用计算器由三角函数值求锐角时，按键和精度上要注意什么？请写出具体做法。",
+     "question": "用计算器由三角函数值求锐角时，按键和精度上要注意什么？请写出具体做法。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "先把角度单位设为度，再按反三角函数键（或先按第二功能键）输入函数值，读出角度；结果按题目要求取近似值，并可用正弦或余弦值回代检验，注意正弦值必须在 0 与 1 之间。",
+     "explanation": "反三角函数求角与正向求值互为逆过程；单位设置错了会得到弧度值，回代检验能发现按键或取值的错误。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p616_q8",
+     "topicId": "mbj_p616",
+     "prompt": "用计算器求 tan90 度时出现错误提示，原因是什么？",
+     "question": "用计算器求 tan90 度时出现错误提示，原因是什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "计算器坏了，需要重新启动"
+      },
+      {
+       "label": "B",
+       "text": "90 度角的邻边为 0，正切值不存在"
+      },
+      {
+       "label": "C",
+       "text": "tan90 度等于 0，是按键顺序错了"
+      },
+      {
+       "label": "D",
+       "text": "90 度是特殊角，应先按 cos 键"
+      }
+     ],
+     "answer": "B",
+     "explanation": "正切等于对边比邻边，90 度时邻边退化为 0，比值没有意义，所以正切值不存在。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p617",
+   "description": "本课学习解直角三角形：由已知的两个元素（其中至少有一条边）求出其余的元素，会根据条件选择合适的正弦、余弦、正切，遇到等腰三角形或斜三角形时先作高转化为直角三角形。",
+   "mastery_criteria": [
+    "能判断解直角三角形的条件是两边还是一边一角",
+    "能选对关系式求出未知的边和角",
+    "会作高把斜三角形化为直角三角形"
+   ],
+   "misconceptions": [
+    "已知两边却直接用正弦求角度",
+    "求边时把 cosA 写成 sinA",
+    "作高后把底边全长当成一半来用"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.09",
+    "quote": "能用锐角三角函数解直角三角形，能用相关知识解决一些简单的实际问题"
+   },
+   "questions": [
+    {
+     "id": "mbj_p617_q1",
+     "topicId": "mbj_p617",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，已知角 A 和斜边 c，求对边 a 应使用哪个关系式？",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，已知角 A 和斜边 c，求对边 a 应使用哪个关系式？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 等于 c 乘 cosA"
+      },
+      {
+       "label": "B",
+       "text": "a 等于 c 乘 tanA"
+      },
+      {
+       "label": "C",
+       "text": "a 等于 c 乘 sinA"
+      },
+      {
+       "label": "D",
+       "text": "a 等于 c 除以 sinA"
+      }
+     ],
+     "answer": "C",
+     "explanation": "a 是角 A 的对边、c 是斜边，正弦等于对边比斜边，所以 a 等于 c 乘 sinA。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p617_q2",
+     "topicId": "mbj_p617",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，角 B = 60 度，BC = 2，则 AB 的长是多少？",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，角 B = 60 度，BC = 2，则 AB 的长是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "4",
+     "explanation": "BC 是角 B 的邻边、AB 是斜边，cos60 度等于 BC 比 AB 等于 0.5，所以 AB 等于 2 除以 0.5 等于 4。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p617_q3",
+     "topicId": "mbj_p617",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，直角边 a = 5，斜边 c = 13，则另一直角边 b 的长是多少？",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，直角边 a = 5，斜边 c = 13，则另一直角边 b 的长是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "12",
+     "explanation": "由勾股定理，b 的平方等于 13 的平方减 5 的平方等于 144，所以 b 等于 12。",
+     "verify": "((13**2-5**2))**0.5",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p617_q4",
+     "topicId": "mbj_p617",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，角 A = 60 度，AC = 4，则斜边 AB 的长是多少？",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，角 A = 60 度，AC = 4，则斜边 AB 的长是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "8",
+     "explanation": "AC 是角 A 的邻边，cos60 度等于 AC 比 AB，所以 AB 等于 4 除以 0.5 等于 8。",
+     "verify": "4/0.5",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p617_q5",
+     "topicId": "mbj_p617",
+     "prompt": "下列条件中，不能解直角三角形的是哪一个？",
+     "question": "下列条件中，不能解直角三角形的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "已知两条直角边"
+      },
+      {
+       "label": "B",
+       "text": "已知一条直角边和斜边"
+      },
+      {
+       "label": "C",
+       "text": "已知一个锐角和斜边"
+      },
+      {
+       "label": "D",
+       "text": "已知两个锐角的度数"
+      }
+     ],
+     "answer": "D",
+     "explanation": "只知道两个锐角只能确定三角形的形状，边的大小不确定，求不出各边长；其余三组条件都含有一条边。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p617_q6",
+     "topicId": "mbj_p617",
+     "prompt": "在三角形 ABC 中，AB = AC = 10，BC = 12，则 sinB 的值是多少？",
+     "question": "在三角形 ABC 中，AB = AC = 10，BC = 12，则 sinB 的值是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "0.8",
+     "explanation": "作 AD 垂直 BC 于 D，由等腰三角形三线合一得 BD 等于 6，再由勾股定理得 AD 等于 8，sinB 等于 AD 比 AB 等于 0.8。",
+     "verify": "8/10",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p617_q7",
+     "topicId": "mbj_p617",
+     "prompt": "解直角三角形的一般步骤是什么？请按先后顺序说明。",
+     "question": "解直角三角形的一般步骤是什么？请按先后顺序说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "先画图并标出已知的边和角，判断属于已知两边还是已知一边一角；再选择合适的关系式，用正弦、余弦、正切或勾股定理求未知的边和角；最后用两锐角互余和勾股关系检验结果是否合理。",
+     "explanation": "先定类型再选公式可以避免把正弦和余弦用反，算完用互余关系与勾股定理检验能及时发现错误。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p617_q8",
+     "topicId": "mbj_p617",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，sinA = 0.5，则角 A 是多少度？",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，sinA = 0.5，则角 A 是多少度？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "30",
+     "explanation": "sin30 度等于 0.5，而锐角的正弦值随角增大而增大，所以角 A 等于 30 度。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p618",
+   "description": "本课学习测量中的计算：认识仰角、俯角、坡度和坡角，会利用解直角三角形求建筑物的高度、河宽、斜坡长度等不能直接测量的量，并按题目要求精确到相应的数位。",
+   "mastery_criteria": [
+    "能指出仰角、俯角、坡度、坡角各指什么",
+    "会把测量情境画成直角三角形并标出数据",
+    "能按精确度要求写出近似结果"
+   ],
+   "misconceptions": [
+    "把坡度 1 比 2 当成坡角 30 度",
+    "算建筑高度时漏加观测者的眼睛高度",
+    "把俯角与仰角当成互补的两个角"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.09",
+    "quote": "能用锐角三角函数解直角三角形，能用相关知识解决一些简单的实际问题"
+   },
+   "questions": [
+    {
+     "id": "mbj_p618_q1",
+     "topicId": "mbj_p618",
+     "prompt": "斜坡的坡度 i = 1 比 2 表示什么？",
+     "question": "斜坡的坡度 i = 1 比 2 表示什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "铅直高度与水平宽度的比是 1 比 2"
+      },
+      {
+       "label": "B",
+       "text": "坡角是 30 度"
+      },
+      {
+       "label": "C",
+       "text": "水平宽度与铅直高度的比是 1 比 2"
+      },
+      {
+       "label": "D",
+       "text": "斜坡的长度与高度之比是 1 比 2"
+      }
+     ],
+     "answer": "A",
+     "explanation": "坡度是铅直高度与水平宽度的比，也等于坡角的正切；1 比 2 的正切对应的角不是 30 度。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p618_q2",
+     "topicId": "mbj_p618",
+     "prompt": "某斜坡的铅直高度是 3 米，水平宽度是 3 倍根号3 米，则坡角是多少度？",
+     "question": "某斜坡的铅直高度是 3 米，水平宽度是 3 倍根号3 米，则坡角是多少度？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "30",
+     "explanation": "tan 坡角等于 3 除以 3 倍根号3 等于 根号3 除以 3，所以坡角是 30 度。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p618_q3",
+     "topicId": "mbj_p618",
+     "prompt": "在距楼底 30 米的 A 处测得楼顶的仰角为 60 度，楼的高度是多少米？（tan60 度取 1.732，结果精确到 0.01）",
+     "question": "在距楼底 30 米的 A 处测得楼顶的仰角为 60 度，楼的高度是多少米？（tan60 度取 1.732，结果精确到 0.01）",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "51.96",
+     "explanation": "楼高等于水平距离乘 tan60 度，即 30 乘 1.732 等于 51.96 米。",
+     "verify": "30*1.732",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p618_q4",
+     "topicId": "mbj_p618",
+     "prompt": "从飞机上测得地面某点的俯角是 30 度，那么从该点看飞机的仰角是多少度？",
+     "question": "从飞机上测得地面某点的俯角是 30 度，那么从该点看飞机的仰角是多少度？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "60 度"
+      },
+      {
+       "label": "B",
+       "text": "30 度"
+      },
+      {
+       "label": "C",
+       "text": "150 度"
+      },
+      {
+       "label": "D",
+       "text": "45 度"
+      }
+     ],
+     "answer": "B",
+     "explanation": "俯角与仰角是两条视线与水平线夹出的内错角，两者相等，所以仰角也是 30 度。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p618_q5",
+     "topicId": "mbj_p618",
+     "prompt": "一段斜坡的坡度 i = 1 比 2.5，铅直高度是 4 米，则水平宽度是多少米？",
+     "question": "一段斜坡的坡度 i = 1 比 2.5，铅直高度是 4 米，则水平宽度是多少米？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "10",
+     "explanation": "由坡度等于铅直高度比水平宽度，得水平宽度等于 4 乘 2.5 等于 10 米。",
+     "verify": "4*2.5",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p618_q6",
+     "topicId": "mbj_p618",
+     "prompt": "要测量一座底部不能到达的塔高，先在 A 处测得塔顶仰角 45 度，再朝塔走 20 米到 B 处测得仰角 60 度，请写出求塔高的思路。",
+     "question": "要测量一座底部不能到达的塔高，先在 A 处测得塔顶仰角 45 度，再朝塔走 20 米到 B 处测得仰角 60 度，请写出求塔高的思路。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "设塔高为 h，由 45 度仰角得 A 到塔底的水平距离等于 h；由 60 度仰角得 B 到塔底的水平距离等于 h 除以 tan60 度；再由两段水平距离之差是 20 米列出方程，解出 h 后检验。",
+     "explanation": "两次观测得到两个直角三角形，用同一个塔高与两段水平距离的差建立方程，是测量不可到达高度问题的通用思路。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p618_q7",
+     "topicId": "mbj_p618",
+     "prompt": "一艘船从 A 处沿北偏东 60 度方向航行 20 海里到达 B 处，则 B 处在 A 处的正东方向偏离多少海里？（sin60 度取 0.866，结果精确到 0.01）",
+     "question": "一艘船从 A 处沿北偏东 60 度方向航行 20 海里到达 B 处，则 B 处在 A 处的正东方向偏离多少海里？（sin60 度取 0.866，结果精确到 0.01）",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "17.32",
+     "explanation": "北偏东 60 度方向与正东方向的夹角是 30 度，向东偏离的距离等于 20 乘 cos30 度，也就是 20 乘 sin60 度，即 17.32 海里。",
+     "verify": "20*0.866",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p618_q8",
+     "topicId": "mbj_p618",
+     "prompt": "测量底部可以直接到达的建筑物高度时，除测量工具外，主要需要测出的量是什么？",
+     "question": "测量底部可以直接到达的建筑物高度时，除测量工具外，主要需要测出的量是什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "建筑物的宽度和俯角"
+      },
+      {
+       "label": "B",
+       "text": "两点的水平距离和坡角"
+      },
+      {
+       "label": "C",
+       "text": "观测点到建筑物底部的水平距离和仰角"
+      },
+      {
+       "label": "D",
+       "text": "仰角与俯角的和"
+      }
+     ],
+     "answer": "C",
+     "explanation": "在直角三角形中已知水平距离和仰角，用正切就能求出建筑物的高度，所以这两个量是关键。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p619",
+   "description": "本章学习圆的概念与性质：弦、弧、圆心角、圆周角，圆的对称性与垂径定理，圆周角定理，点与圆、直线与圆的位置关系，切线的判定与性质，以及正多边形与圆的有关计算。",
+   "mastery_criteria": [
+    "能说出圆的主要概念与垂径定理的内容",
+    "能用圆周角定理和切线性质求角与线段",
+    "能判断点、直线与圆的位置关系"
+   ],
+   "misconceptions": [
+    "把弦与直径混为一谈，认为弦都能过圆心",
+    "圆周角与圆心角的关系记成倍数记反",
+    "认为切线垂直于圆内的任意一条直线"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p619_q1",
+     "topicId": "mbj_p619",
+     "prompt": "圆的半径是 5，点 P 到圆心的距离也是 5，则点 P 与圆的位置关系是什么？",
+     "question": "圆的半径是 5，点 P 到圆心的距离也是 5，则点 P 与圆的位置关系是什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "点在圆内"
+      },
+      {
+       "label": "B",
+       "text": "点在圆外"
+      },
+      {
+       "label": "C",
+       "text": "无法确定"
+      },
+      {
+       "label": "D",
+       "text": "点在圆上"
+      }
+     ],
+     "answer": "D",
+     "explanation": "点到圆心的距离等于半径时，这个点正好落在圆上。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p619_q2",
+     "topicId": "mbj_p619",
+     "prompt": "圆 O 的半径是 3，则圆 O 中最长的弦长是多少？",
+     "question": "圆 O 的半径是 3，则圆 O 中最长的弦长是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "6",
+     "explanation": "圆中最长的弦是直径，直径等于半径的 2 倍，所以最长弦长为 6。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p619_q3",
+     "topicId": "mbj_p619",
+     "prompt": "圆 O 的半径是 5，弦 AB 的长是 8，则圆心到弦 AB 的距离是多少？",
+     "question": "圆 O 的半径是 5，弦 AB 的长是 8，则圆心到弦 AB 的距离是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "3",
+     "explanation": "由垂径定理，圆心到弦的垂线段平分这条弦，得半弦长为 4，再由勾股定理得距离为 3。",
+     "verify": "((5**2-4**2))**0.5",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p619_q4",
+     "topicId": "mbj_p619",
+     "prompt": "同一条弧所对的圆周角与圆心角有什么关系？",
+     "question": "同一条弧所对的圆周角与圆心角有什么关系？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆周角等于圆心角的一半"
+      },
+      {
+       "label": "B",
+       "text": "圆周角等于圆心角的两倍"
+      },
+      {
+       "label": "C",
+       "text": "同弧所对的圆周角彼此不相等"
+      },
+      {
+       "label": "D",
+       "text": "圆周角与圆心角相等"
+      }
+     ],
+     "answer": "A",
+     "explanation": "由圆周角定理，同弧所对的圆周角等于该弧所对圆心角的一半，所以半圆所对的圆周角是 90 度。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p619_q5",
+     "topicId": "mbj_p619",
+     "prompt": "圆 O 的半径是 6，PA 切圆 O 于点 A，PO = 10，求 PA 的长，并说明依据。",
+     "question": "圆 O 的半径是 6，PA 切圆 O 于点 A，PO = 10，求 PA 的长，并说明依据。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为 PA 是切线、A 是切点，所以 OA 垂直于 PA；在直角三角形 PAO 中，PA 的平方等于 PO 的平方减 OA 的平方，即 100 减 36 等于 64，所以 PA 等于 8。",
+     "explanation": "切线的性质给出直角，再用勾股定理求切线长，这是切线长计算的基本模型。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p620",
+   "description": "本课学习圆的定义与有关概念：弦、直径、弧、半圆、优弧与劣弧、等弧、圆心角，并掌握点与圆的位置关系由点到圆心的距离与半径的大小关系来判定。",
+   "mastery_criteria": [
+    "能说出弦、直径、弧、半圆、圆心角的含义",
+    "能区分等圆、等弧与同心圆",
+    "会用 d 与 r 的大小判断点与圆的位置关系"
+   ],
+   "misconceptions": [
+    "认为长度相等的两条弧就是等弧",
+    "把过圆心的线段都当成直径",
+    "求点到圆上点的最短距离时用 d 加 r"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p620_q1",
+     "topicId": "mbj_p620",
+     "prompt": "下列关于圆的语句中，正确的是哪一句？",
+     "question": "下列关于圆的语句中，正确的是哪一句？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "弦就是直径"
+      },
+      {
+       "label": "B",
+       "text": "直径是圆中最长的弦"
+      },
+      {
+       "label": "C",
+       "text": "过圆心的线段叫做直径"
+      },
+      {
+       "label": "D",
+       "text": "圆上任意两点间的线段叫做弧"
+      }
+     ],
+     "answer": "B",
+     "explanation": "直径是过圆心的弦，长度等于半径的 2 倍，是圆中最长的弦；弧是圆上两点间的部分，不是线段。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p620_q2",
+     "topicId": "mbj_p620",
+     "prompt": "圆 O 的半径是 4，点 A 到圆心 O 的距离是 3，则点 A 在圆的什么位置？（填内、上或外）",
+     "question": "圆 O 的半径是 4，点 A 到圆心 O 的距离是 3，则点 A 在圆的什么位置？（填内、上或外）",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "内",
+     "explanation": "点到圆心的距离 3 小于半径 4，所以点 A 在圆内。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p620_q3",
+     "topicId": "mbj_p620",
+     "prompt": "下列语句中正确的是哪一句？",
+     "question": "下列语句中正确的是哪一句？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "长度相等的两条弧叫做等弧"
+      },
+      {
+       "label": "B",
+       "text": "圆上两点间的部分叫做弦"
+      },
+      {
+       "label": "C",
+       "text": "半径相等的两个圆是等圆"
+      },
+      {
+       "label": "D",
+       "text": "圆心相同的两个圆是等圆"
+      }
+     ],
+     "answer": "C",
+     "explanation": "等弧要求能够完全重合，长度相等的弧不一定重合；圆心相同的两个圆是同心圆，不是等圆。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p620_q4",
+     "topicId": "mbj_p620",
+     "prompt": "圆 O 的半径是 5，OP = 8，则点 P 与圆 O 上各点的最短距离是多少？",
+     "question": "圆 O 的半径是 5，OP = 8，则点 P 与圆 O 上各点的最短距离是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "3",
+     "explanation": "点 P 在圆外，最短距离等于 OP 减半径，即 8 减 5 等于 3。",
+     "verify": "8-5",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p620_q5",
+     "topicId": "mbj_p620",
+     "prompt": "圆 O 的半径是 5，OP = 2，则点 P 与圆 O 上各点的最远距离是多少？",
+     "question": "圆 O 的半径是 5，OP = 2，则点 P 与圆 O 上各点的最远距离是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "7",
+     "explanation": "点 P 在圆内，最远距离等于半径加 OP，即 5 加 2 等于 7。",
+     "verify": "5+2",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p620_q6",
+     "topicId": "mbj_p620",
+     "prompt": "在半径是 5 的圆中，下列哪条线段不可能是这个圆的弦？",
+     "question": "在半径是 5 的圆中，下列哪条线段不可能是这个圆的弦？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "长为 10 的线段"
+      },
+      {
+       "label": "B",
+       "text": "长为 8 的线段"
+      },
+      {
+       "label": "C",
+       "text": "长为 6 的线段"
+      },
+      {
+       "label": "D",
+       "text": "长为 12 的线段"
+      }
+     ],
+     "answer": "D",
+     "explanation": "弦长不超过直径 10，所以长 12 的线段不可能是半径 5 的圆的弦；长 10 的线段正好是直径。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p620_q7",
+     "topicId": "mbj_p620",
+     "prompt": "怎样用点到圆心的距离 d 与半径 r 的大小关系判断点与圆的位置关系？请分别说明。",
+     "question": "怎样用点到圆心的距离 d 与半径 r 的大小关系判断点与圆的位置关系？请分别说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "若 d 小于 r，点在圆内；若 d 等于 r，点在圆上；若 d 大于 r，点在圆外。反过来，由点的位置也能得出 d 与 r 的大小关系，这是判定点与圆位置关系的基本方法。",
+     "explanation": "圆的定义是到定点距离等于定长的点的集合，所以距离与半径的比较直接决定位置关系。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p620_q8",
+     "topicId": "mbj_p620",
+     "prompt": "点 A 在圆 O 内，OA = 3，圆 O 的半径是 5，则过点 A 的所有弦中最短的一条长是多少？",
+     "question": "点 A 在圆 O 内，OA = 3，圆 O 的半径是 5，则过点 A 的所有弦中最短的一条长是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "8"
+      },
+      {
+       "label": "B",
+       "text": "10"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "A",
+     "explanation": "过圆内一点最短的弦是垂直于 OA 的弦，由垂径定理和勾股定理得半弦长为 4，所以弦长为 8；过 A 的直径 10 是最长的弦。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p621",
+   "description": "本课学习确定圆的条件：不在同一直线上的三点确定一个圆，由此认识三角形的外接圆和外心，会作三角形的外接圆，并判断外心在三角形内部、边上还是外部。",
+   "mastery_criteria": [
+    "会作不在同一直线上三点的外接圆",
+    "能说出外心是三边垂直平分线的交点",
+    "能由三角形形状判断外心的位置"
+   ],
+   "misconceptions": [
+    "认为任意三点都能确定一个圆",
+    "把外心与三条中线的交点混为一谈",
+    "求外接圆半径时把半径当成斜边"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.32",
+    "quote": "理解线段垂直平分线的概念，探索并证明线段垂直平分线的性质定理"
+   },
+   "questions": [
+    {
+     "id": "mbj_p621_q1",
+     "topicId": "mbj_p621",
+     "prompt": "下列条件中，能确定一个圆的是哪一组？",
+     "question": "下列条件中，能确定一个圆的是哪一组？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "同一直线上的三个点"
+      },
+      {
+       "label": "B",
+       "text": "不在同一直线上的三个点"
+      },
+      {
+       "label": "C",
+       "text": "任意两个点"
+      },
+      {
+       "label": "D",
+       "text": "任意三个点"
+      }
+     ],
+     "answer": "B",
+     "explanation": "不在同一直线上的三点确定一个圆；三点共线时找不到到三点距离相等的点，作不出圆。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p621_q2",
+     "topicId": "mbj_p621",
+     "prompt": "直角三角形的外心在它的什么位置？（填内部、外部或斜边的中点）",
+     "question": "直角三角形的外心在它的什么位置？（填内部、外部或斜边的中点）",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "斜边的中点",
+     "explanation": "直角三角形的外接圆以斜边为直径，所以外心是斜边的中点。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p621_q3",
+     "topicId": "mbj_p621",
+     "prompt": "三角形的外心是哪三条线的交点？",
+     "question": "三角形的外心是哪三条线的交点？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "三条角平分线"
+      },
+      {
+       "label": "B",
+       "text": "三条中线"
+      },
+      {
+       "label": "C",
+       "text": "三条边的垂直平分线"
+      },
+      {
+       "label": "D",
+       "text": "三条高"
+      }
+     ],
+     "answer": "C",
+     "explanation": "外心到三个顶点的距离相等，所以它是三边垂直平分线的交点；三条角平分线的交点是内心。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p621_q4",
+     "topicId": "mbj_p621",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，AC = 6，BC = 8，则它的外接圆半径是多少？",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，AC = 6，BC = 8，则它的外接圆半径是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "5",
+     "explanation": "斜边 AB 等于 10，外接圆的直径就是斜边，所以半径等于 10 除以 2 等于 5。",
+     "verify": "10/2",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p621_q5",
+     "topicId": "mbj_p621",
+     "prompt": "钝角三角形的外心位于什么位置？",
+     "question": "钝角三角形的外心位于什么位置？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "三角形内部"
+      },
+      {
+       "label": "B",
+       "text": "三角形的一条边上"
+      },
+      {
+       "label": "C",
+       "text": "三角形的一个顶点上"
+      },
+      {
+       "label": "D",
+       "text": "三角形外部"
+      }
+     ],
+     "answer": "D",
+     "explanation": "钝角三角形的外心在三角形外部；锐角三角形的外心在内部，直角三角形的外心在斜边中点。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p621_q6",
+     "topicId": "mbj_p621",
+     "prompt": "等边三角形的边长是 6，则它的外接圆半径是多少？（结果保留根号）",
+     "question": "等边三角形的边长是 6，则它的外接圆半径是多少？（结果保留根号）",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "2根号3",
+     "explanation": "等边三角形的外接圆半径等于边长的 根号3 除以 3 倍，即 6 乘 根号3 除以 3 等于 2 倍根号3。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p621_q7",
+     "topicId": "mbj_p621",
+     "prompt": "为什么不在同一直线上的三个点能确定一个圆？请说明作法和理由。",
+     "question": "为什么不在同一直线上的三个点能确定一个圆？请说明作法和理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "分别作 AB、BC 的垂直平分线，两线相交于一点 O；因为垂直平分线上的点到线段两端距离相等，所以 OA 等于 OB 等于 OC，以 O 为圆心、OA 为半径的圆经过三点。三点不共线时两条垂直平分线不平行，交点唯一，所以圆唯一。",
+     "explanation": "两条垂直平分线不平行才有唯一交点，这正是三点不共线所保证的，由此也得到三角形外接圆的作法。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p621_q8",
+     "topicId": "mbj_p621",
+     "prompt": "在三角形 ABC 中，AB = AC = 5，BC = 6，则它的外接圆半径是多少？",
+     "question": "在三角形 ABC 中，AB = AC = 5，BC = 6，则它的外接圆半径是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "3.125",
+     "explanation": "作高 AD，得 BD 等于 3、AD 等于 4；设外心在 AD 上、半径为 r，则（4 减 r）的平方加 3 的平方等于 r 的平方，解得 r 等于 25 除以 8 等于 3.125。",
+     "verify": "25/8",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p622",
+   "description": "本课学习圆的对称性：圆既是轴对称图形又是中心对称图形，由此得到垂径定理及其推论，并掌握在同圆或等圆中圆心角、弦、弧之间的相等关系。",
+   "mastery_criteria": [
+    "能用垂径定理求弦长、弦心距或半径",
+    "能说出垂径定理推论中「不是直径」的条件",
+    "能用圆的旋转对称性说明弦弧相等"
+   ],
+   "misconceptions": [
+    "忘记「弦不是直径」这个条件而误判垂直",
+    "求拱高与半径时把半弦长当成弦长",
+    "把两平行弦的距离只算成一种情况"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p622_q1",
+     "topicId": "mbj_p622",
+     "prompt": "一个圆一共有多少条对称轴？",
+     "question": "一个圆一共有多少条对称轴？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "无数条"
+      },
+      {
+       "label": "B",
+       "text": "1 条"
+      },
+      {
+       "label": "C",
+       "text": "2 条"
+      },
+      {
+       "label": "D",
+       "text": "4 条"
+      }
+     ],
+     "answer": "A",
+     "explanation": "圆的每一条直径所在的直线都是对称轴，而直径有无数条，所以对称轴有无数条。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p622_q2",
+     "topicId": "mbj_p622",
+     "prompt": "圆 O 的半径是 5，弦 AB 的长是 8，M 是 AB 的中点，则 AM 的长是多少？",
+     "question": "圆 O 的半径是 5，弦 AB 的长是 8，M 是 AB 的中点，则 AM 的长是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4",
+     "explanation": "M 是弦 AB 的中点，所以 AM 等于 AB 的一半，即 4；此时 OM 垂直于 AB。",
+     "verify": "8/2",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p622_q3",
+     "topicId": "mbj_p622",
+     "prompt": "圆 O 的半径是 10，圆心到弦 AB 的距离是 6，则弦 AB 的长是多少？",
+     "question": "圆 O 的半径是 10，圆心到弦 AB 的距离是 6，则弦 AB 的长是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "16",
+     "explanation": "由垂径定理和勾股定理，半弦长等于 10 的平方减 6 的平方的算术平方根，即 8，所以弦长为 16。",
+     "verify": "2*((100-36)**0.5)",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p622_q4",
+     "topicId": "mbj_p622",
+     "prompt": "下列关于垂径定理的说法中，正确的是哪一句？",
+     "question": "下列关于垂径定理的说法中，正确的是哪一句？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "平分弦的直径一定垂直于这条弦"
+      },
+      {
+       "label": "B",
+       "text": "平分弦（不是直径）的直径垂直于这条弦"
+      },
+      {
+       "label": "C",
+       "text": "垂直于弦的直线一定平分这条弦"
+      },
+      {
+       "label": "D",
+       "text": "弦的垂直平分线不一定经过圆心"
+      }
+     ],
+     "answer": "B",
+     "explanation": "当被平分的弦本身是直径时，另一条直径不一定与它垂直，所以要注明「不是直径」；弦的垂直平分线一定经过圆心。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p622_q5",
+     "topicId": "mbj_p622",
+     "prompt": "圆 O 中弦 AB 的长是 24，圆心到 AB 的距离是 5，则圆 O 的半径是多少？",
+     "question": "圆 O 中弦 AB 的长是 24，圆心到 AB 的距离是 5，则圆 O 的半径是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "13",
+     "explanation": "由垂径定理得半弦长为 12，半径等于 12 的平方加 5 的平方的算术平方根，即 13。",
+     "verify": "((12**2+5**2))**0.5",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p622_q6",
+     "topicId": "mbj_p622",
+     "prompt": "在同圆中，如果两条弧所对的圆心角相等，那么它们所对的弦和弧有什么关系？请说明理由。",
+     "question": "在同圆中，如果两条弧所对的圆心角相等，那么它们所对的弦和弧有什么关系？请说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "在同圆或等圆中，相等的圆心角所对的弦相等，所对的弧也相等。理由是把两个角所在的扇形绕圆心旋转，圆心角相等时两条半径能重合，从而所对的弦和弧都能完全重合。",
+     "explanation": "圆的旋转对称性保证圆心角相等时对应的弦和弧能重合，这正是圆心角、弦、弧关系定理的来源。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p622_q7",
+     "topicId": "mbj_p622",
+     "prompt": "在圆 O 中，弦 AB 平行于弦 CD，AB = 8，CD = 6，圆的半径是 5，则两条平行弦之间的距离是多少？",
+     "question": "在圆 O 中，弦 AB 平行于弦 CD，AB = 8，CD = 6，圆的半径是 5，则两条平行弦之间的距离是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "7"
+      },
+      {
+       "label": "C",
+       "text": "1 或 7"
+      },
+      {
+       "label": "D",
+       "text": "1 或 5"
+      }
+     ],
+     "answer": "C",
+     "explanation": "圆心到 AB 的距离为 3，到 CD 的距离为 4；两弦在圆心同侧时距离为 4 减 3 等于 1，在圆心异侧时为 4 加 3 等于 7。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p622_q8",
+     "topicId": "mbj_p622",
+     "prompt": "圆是中心对称图形，它的对称中心是什么？",
+     "question": "圆是中心对称图形，它的对称中心是什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆上任意一点"
+      },
+      {
+       "label": "B",
+       "text": "直径的端点"
+      },
+      {
+       "label": "C",
+       "text": "圆没有对称中心"
+      },
+      {
+       "label": "D",
+       "text": "圆心"
+      }
+     ],
+     "answer": "D",
+     "explanation": "把圆绕圆心旋转 180 度后与自身重合，所以圆心就是它的对称中心。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p623",
+   "description": "本课学习圆周角：顶点在圆上、两边都与圆相交的角，掌握圆周角等于同弧所对圆心角的一半，会推出同弧所对圆周角相等、直径所对的圆周角是直角，以及圆内接四边形对角互补。",
+   "mastery_criteria": [
+    "能辨认圆周角并写出它与圆心角的关系",
+    "会用直径所对的圆周角是直角求角",
+    "能用圆内接四边形对角互补求角"
+   ],
+   "misconceptions": [
+    "把圆心角当成圆周角的两倍关系用反",
+    "忽略圆心在弦另一侧的情形，只算出一个解",
+    "认为同弧所对的圆周角大小与点的位置有关"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p623_q1",
+     "topicId": "mbj_p623",
+     "prompt": "下列角中，是圆周角的是哪一个？",
+     "question": "下列角中，是圆周角的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "顶点在圆上，两边都与圆相交的角"
+      },
+      {
+       "label": "B",
+       "text": "顶点在圆心的角"
+      },
+      {
+       "label": "C",
+       "text": "顶点在圆上、一边过圆心的角"
+      },
+      {
+       "label": "D",
+       "text": "两边都与圆相交、顶点在圆外的角"
+      }
+     ],
+     "answer": "A",
+     "explanation": "圆周角必须顶点在圆上且两边都与圆相交；顶点在圆心的角叫做圆心角。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p623_q2",
+     "topicId": "mbj_p623",
+     "prompt": "一条弧所对的圆心角是 100 度，则这条弧所对的圆周角是多少度？",
+     "question": "一条弧所对的圆心角是 100 度，则这条弧所对的圆周角是多少度？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "50",
+     "explanation": "圆周角等于同弧所对圆心角的一半，100 度的一半是 50 度。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p623_q3",
+     "topicId": "mbj_p623",
+     "prompt": "半圆（即以直径为弧的弧）所对的圆周角是多少度？",
+     "question": "半圆（即以直径为弧的弧）所对的圆周角是多少度？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "45 度"
+      },
+      {
+       "label": "B",
+       "text": "90 度"
+      },
+      {
+       "label": "C",
+       "text": "60 度"
+      },
+      {
+       "label": "D",
+       "text": "180 度"
+      }
+     ],
+     "answer": "B",
+     "explanation": "半圆所对的圆心角是 180 度，由圆周角定理得它所对的圆周角是 90 度。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p623_q4",
+     "topicId": "mbj_p623",
+     "prompt": "在圆 O 中，圆心角 角BOC 等于 120 度，点 A 在优弧 BC 上，则圆周角 角BAC 是多少度？",
+     "question": "在圆 O 中，圆心角 角BOC 等于 120 度，点 A 在优弧 BC 上，则圆周角 角BAC 是多少度？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "60",
+     "explanation": "角 BAC 与角 BOC 对同一条弧 BC，圆周角等于圆心角的一半，所以角 BAC 等于 60 度。",
+     "verify": "120/2",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p623_q5",
+     "topicId": "mbj_p623",
+     "prompt": "圆内接四边形 ABCD 中，角 A = 80 度，则角 C 是多少度？",
+     "question": "圆内接四边形 ABCD 中，角 A = 80 度，则角 C 是多少度？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "80 度"
+      },
+      {
+       "label": "B",
+       "text": "90 度"
+      },
+      {
+       "label": "C",
+       "text": "100 度"
+      },
+      {
+       "label": "D",
+       "text": "160 度"
+      }
+     ],
+     "answer": "C",
+     "explanation": "圆内接四边形对角互补，所以角 C 等于 180 度减 80 度等于 100 度。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p623_q6",
+     "topicId": "mbj_p623",
+     "prompt": "AB 是圆 O 的直径，点 C 在圆上，角 ABC = 40 度，则角 BAC 是多少度？",
+     "question": "AB 是圆 O 的直径，点 C 在圆上，角 ABC = 40 度，则角 BAC 是多少度？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "50",
+     "explanation": "直径所对的圆周角 角ACB 是 90 度，再由三角形内角和得 角BAC 等于 90 度减 40 度等于 50 度。",
+     "verify": "90-40",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p623_q7",
+     "topicId": "mbj_p623",
+     "prompt": "请说明为什么直径所对的圆周角是直角。",
+     "question": "请说明为什么直径所对的圆周角是直角。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "直径所对的圆心角是 180 度，因为两条半径正好成一条直线；由圆周角等于同弧所对圆心角的一半，得这个圆周角等于 90 度，所以直径所对的圆周角是直角。",
+     "explanation": "把直径看成 180 度的圆心角，用圆周角定理可直接得直角；反过来，90 度的圆周角所对的弦也是直径。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p623_q8",
+     "topicId": "mbj_p623",
+     "prompt": "在圆 O 中，弦 AB 所对的一个圆周角 角ACB = 50 度（点 C 在优弧 AB 上），点 D 在劣弧 AB 上，则 角ADB 是多少度？",
+     "question": "在圆 O 中，弦 AB 所对的一个圆周角 角ACB = 50 度（点 C 在优弧 AB 上），点 D 在劣弧 AB 上，则 角ADB 是多少度？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "50 度"
+      },
+      {
+       "label": "B",
+       "text": "100 度"
+      },
+      {
+       "label": "C",
+       "text": "25 度"
+      },
+      {
+       "label": "D",
+       "text": "130 度"
+      }
+     ],
+     "answer": "D",
+     "explanation": "点 C 与点 D 在弦 AB 的两侧，四边形 ADBC 是圆内接四边形，对角互补，所以 角ADB 等于 180 度减 50 度等于 130 度。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p624",
+   "description": "本课学习直线与圆的位置关系：按公共点个数分为相离、相切、相交，会用圆心到直线的距离 d 与半径 r 的大小关系进行判定，并会求直线被圆截得的弦长。",
+   "mastery_criteria": [
+    "能由 d 与 r 的大小判断三种位置关系",
+    "能说出每种位置关系对应的公共点个数",
+    "会用垂径定理求直线被圆截得的弦长"
+   ],
+   "misconceptions": [
+    "把 d 小于 r 当成相离，方向记反",
+    "认为相切时有两个公共点",
+    "求弦长时忘记半弦长要乘 2"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p624_q1",
+     "topicId": "mbj_p624",
+     "prompt": "圆 O 的半径是 3，圆心到直线 l 的距离是 5，则直线 l 与圆 O 的位置关系是什么？",
+     "question": "圆 O 的半径是 3，圆心到直线 l 的距离是 5，则直线 l 与圆 O 的位置关系是什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "相离"
+      },
+      {
+       "label": "B",
+       "text": "相切"
+      },
+      {
+       "label": "C",
+       "text": "相交"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "A",
+     "explanation": "d 等于 5 大于 r 等于 3，直线与圆没有公共点，所以相离。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p624_q2",
+     "topicId": "mbj_p624",
+     "prompt": "圆 O 的半径是 4，圆心到直线的距离也是 4，则这条直线与圆有几个公共点？",
+     "question": "圆 O 的半径是 4，圆心到直线的距离也是 4，则这条直线与圆有几个公共点？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "1",
+     "explanation": "圆心到直线的距离等于半径时直线与圆相切，只有一个公共点，就是切点。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p624_q3",
+     "topicId": "mbj_p624",
+     "prompt": "直线与圆相交时，它们的公共点有几个？",
+     "question": "直线与圆相交时，它们的公共点有几个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "0 个"
+      },
+      {
+       "label": "B",
+       "text": "2 个"
+      },
+      {
+       "label": "C",
+       "text": "1 个"
+      },
+      {
+       "label": "D",
+       "text": "3 个"
+      }
+     ],
+     "answer": "B",
+     "explanation": "直线与圆相交时有两个公共点，相切时 1 个，相离时 0 个。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p624_q4",
+     "topicId": "mbj_p624",
+     "prompt": "圆 O 的半径是 5，圆心到直线 l 的距离是 3，则直线 l 被圆 O 截得的弦长是多少？",
+     "question": "圆 O 的半径是 5，圆心到直线 l 的距离是 3，则直线 l 被圆 O 截得的弦长是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "8",
+     "explanation": "由垂径定理，半弦长等于半径平方减距离平方的算术平方根，即 4，所以弦长为 8。",
+     "verify": "2*((25-9))**0.5",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p624_q5",
+     "topicId": "mbj_p624",
+     "prompt": "下列语句中正确的是哪一句？",
+     "question": "下列语句中正确的是哪一句？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "若圆心到直线的距离等于半径，则直线与圆相交"
+      },
+      {
+       "label": "B",
+       "text": "直线与圆相离时有两个公共点"
+      },
+      {
+       "label": "C",
+       "text": "若直线与圆只有一个公共点，则这条直线是圆的切线"
+      },
+      {
+       "label": "D",
+       "text": "圆心到直线的距离大于半径时直线与圆相切"
+      }
+     ],
+     "answer": "C",
+     "explanation": "只有一个公共点是切线的定义，此时 d 等于 r；距离大于半径是相离，公共点为 0 个。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p624_q6",
+     "topicId": "mbj_p624",
+     "prompt": "怎样用圆心到直线的距离 d 与半径 r 的关系判断直线与圆的位置关系？请分别说明并各举一个数值例子。",
+     "question": "怎样用圆心到直线的距离 d 与半径 r 的关系判断直线与圆的位置关系？请分别说明并各举一个数值例子。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "d 大于 r 时相离，如 r 等于 3、d 等于 5；d 等于 r 时相切，如 r 等于 4、d 等于 4；d 小于 r 时相交，如 r 等于 5、d 等于 2。判断时先算出 d，再与 r 比较大小。",
+     "explanation": "三种位置关系与 d、r 的大小关系一一对应，用数值例子对照可以避免把相切和相交的条件记混。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p624_q7",
+     "topicId": "mbj_p624",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，AC = 3，BC = 4，以点 C 为圆心作圆与斜边 AB 相切，则这个圆的半径是多少？",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，AC = 3，BC = 4，以点 C 为圆心作圆与斜边 AB 相切，则这个圆的半径是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "2.4",
+     "explanation": "斜边 AB 等于 5，圆心 C 到 AB 的距离就是斜边上的高，等于 3 乘 4 除以 5 等于 2.4，相切时半径等于这个距离。",
+     "verify": "3*4/5",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p624_q8",
+     "topicId": "mbj_p624",
+     "prompt": "太阳从地平线上升起的过程中，把地平线看作直线、太阳看作圆，两者的位置关系依次怎样变化？",
+     "question": "太阳从地平线上升起的过程中，把地平线看作直线、太阳看作圆，两者的位置关系依次怎样变化？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "相切、相交、相离"
+      },
+      {
+       "label": "B",
+       "text": "相离、相切、相交"
+      },
+      {
+       "label": "C",
+       "text": "相交、相离、相切"
+      },
+      {
+       "label": "D",
+       "text": "相交、相切、相离"
+      }
+     ],
+     "answer": "D",
+     "explanation": "太阳刚露出时与地平线有两个公共点即相交，完全露出前的一刻只有一个公共点即相切，升高后没有公共点即相离。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p625",
+   "description": "本课学习圆的切线：切线的判定（经过半径外端且垂直于这条半径的直线是切线）与性质（切线垂直于过切点的半径），以及切线长定理和三角形内切圆、内心的概念。",
+   "mastery_criteria": [
+    "能用切线的判定定理证明一条直线是切线",
+    "会用切线垂直于过切点的半径求线段",
+    "会用切线长定理和内切圆半径公式计算"
+   ],
+   "misconceptions": [
+    "只证垂直不证过半径外端就下结论",
+    "把内心与三边垂直平分线的交点混淆",
+    "求内切圆半径时把公式记成直角边之和加斜边"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p625_q1",
+     "topicId": "mbj_p625",
+     "prompt": "圆的切线垂直于哪一条线段？",
+     "question": "圆的切线垂直于哪一条线段？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆的切线垂直于经过切点的半径"
+      },
+      {
+       "label": "B",
+       "text": "切线垂直于过圆心的任意一条直线"
+      },
+      {
+       "label": "C",
+       "text": "切线平行于经过切点的半径"
+      },
+      {
+       "label": "D",
+       "text": "圆心到切线的距离大于半径"
+      }
+     ],
+     "answer": "A",
+     "explanation": "切线垂直于过切点的半径，这是切线的性质定理；相切时圆心到切线的距离正好等于半径。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p625_q2",
+     "topicId": "mbj_p625",
+     "prompt": "从圆外一点引圆的两条切线，这两条切线的长度有什么关系？（填相等或不等）",
+     "question": "从圆外一点引圆的两条切线，这两条切线的长度有什么关系？（填相等或不等）",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "相等",
+     "explanation": "由切线长定理，从圆外一点引圆的两条切线，切线长相等，并且这点与圆心的连线平分两条切线的夹角。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p625_q3",
+     "topicId": "mbj_p625",
+     "prompt": "PA 切圆 O 于点 A，圆 O 的半径是 3，PO = 5，则 PA 的长是多少？",
+     "question": "PA 切圆 O 于点 A，圆 O 的半径是 3，PO = 5，则 PA 的长是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4",
+     "explanation": "切线垂直于过切点的半径，在直角三角形 PAO 中由勾股定理得 PA 等于 5 的平方减 3 的平方的算术平方根，即 4。",
+     "verify": "((5**2-3**2))**0.5",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p625_q4",
+     "topicId": "mbj_p625",
+     "prompt": "判定一条直线是圆的切线，需要满足的条件是什么？",
+     "question": "判定一条直线是圆的切线，需要满足的条件是什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "垂直于半径的任意一条直线"
+      },
+      {
+       "label": "B",
+       "text": "经过半径的外端并且垂直于这条半径"
+      },
+      {
+       "label": "C",
+       "text": "经过半径端点的任意一条直线"
+      },
+      {
+       "label": "D",
+       "text": "与圆有两个公共点的直线"
+      }
+     ],
+     "answer": "B",
+     "explanation": "切线的判定定理要求直线经过半径的外端且垂直于这条半径；只说垂直或只说经过端点都不够。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p625_q5",
+     "topicId": "mbj_p625",
+     "prompt": "PA、PB 分别切圆 O 于 A、B 两点，角 APB = 60 度，PA = 4，则三角形 PAB 的周长是多少？",
+     "question": "PA、PB 分别切圆 O 于 A、B 两点，角 APB = 60 度，PA = 4，则三角形 PAB 的周长是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "12",
+     "explanation": "由切线长定理得 PA 等于 PB 等于 4，又夹角是 60 度，所以三角形 PAB 是等边三角形，AB 等于 4，周长为 12。",
+     "verify": "4*3",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p625_q6",
+     "topicId": "mbj_p625",
+     "prompt": "三角形的内心是哪三条线的交点？",
+     "question": "三角形的内心是哪三条线的交点？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "三条边的垂直平分线"
+      },
+      {
+       "label": "B",
+       "text": "三条中线"
+      },
+      {
+       "label": "C",
+       "text": "三条角平分线"
+      },
+      {
+       "label": "D",
+       "text": "三条高"
+      }
+     ],
+     "answer": "C",
+     "explanation": "内心是内切圆的圆心，到三边距离相等，所以是三条角平分线的交点；三边垂直平分线的交点是外心。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p625_q7",
+     "topicId": "mbj_p625",
+     "prompt": "在直角三角形 ABC 中，角 C 等于 90 度，AC = 3，BC = 4，则它的内切圆半径是多少？",
+     "question": "在直角三角形 ABC 中，角 C 等于 90 度，AC = 3，BC = 4，则它的内切圆半径是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "1",
+     "explanation": "斜边为 5，直角三角形内切圆半径等于两条直角边之和减去斜边再除以 2，即（3 加 4 减 5）除以 2 等于 1。",
+     "verify": "(3+4-5)/2",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p625_q8",
+     "topicId": "mbj_p625",
+     "prompt": "判定一条直线是圆的切线有哪两种常用思路？请分别说明。",
+     "question": "判定一条直线是圆的切线有哪两种常用思路？请分别说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "一是定义法：直线与圆只有一个公共点；二是判定定理：直线经过半径的外端并且垂直于这条半径。实际解题时常先求圆心到直线的距离 d，若 d 等于半径，则这条直线是圆的切线。",
+     "explanation": "定义法在图上明显相切时使用，判定定理要先连半径再证垂直，距离法适合能算出 d 的题目。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p626",
+   "description": "本课学习正多边形与圆的关系：正多边形的中心、半径、边心距和中心角，会由边数求中心角与内角，并借助半径、边心距、边长构成的直角三角形求周长和面积。",
+   "mastery_criteria": [
+    "能由边数求中心角与内角",
+    "能用半径、边心距、边长的一半构成的直角三角形计算",
+    "会求正多边形的面积"
+   ],
+   "misconceptions": [
+    "把中心角与内角当成同一个角",
+    "求边心距时把半径当成斜边的两倍",
+    "求面积时漏乘分成的小三角形个数"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p626_q1",
+     "topicId": "mbj_p626",
+     "prompt": "正六边形的中心角是多少度？",
+     "question": "正六边形的中心角是多少度？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "60",
+     "explanation": "正 n 边形的中心角等于 360 度除以 n，正六边形为 360 度除以 6 等于 60 度。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p626_q2",
+     "topicId": "mbj_p626",
+     "prompt": "正五边形的每一个内角是多少度？",
+     "question": "正五边形的每一个内角是多少度？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "72 度"
+      },
+      {
+       "label": "B",
+       "text": "120 度"
+      },
+      {
+       "label": "C",
+       "text": "100 度"
+      },
+      {
+       "label": "D",
+       "text": "108 度"
+      }
+     ],
+     "answer": "D",
+     "explanation": "正五边形内角和为（5 减 2）乘 180 度等于 540 度，每个内角等于 540 度除以 5 等于 108 度；72 度是它的中心角。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p626_q3",
+     "topicId": "mbj_p626",
+     "prompt": "正十二边形的中心角是多少度？",
+     "question": "正十二边形的中心角是多少度？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "30",
+     "explanation": "中心角等于 360 度除以边数，360 度除以 12 等于 30 度。",
+     "verify": "360/12",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p626_q4",
+     "topicId": "mbj_p626",
+     "prompt": "正三角形的边长是 6，则它的边心距是多少？（结果保留根号）",
+     "question": "正三角形的边长是 6，则它的边心距是多少？（结果保留根号）",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "根号3",
+     "explanation": "正三角形的外接圆半径等于边长的 根号3 除以 3 倍，即 2 倍根号3；边心距是半径的一半，等于 根号3。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p626_q5",
+     "topicId": "mbj_p626",
+     "prompt": "一个正多边形的每个外角都是 45 度，则它的边数是多少？",
+     "question": "一个正多边形的每个外角都是 45 度，则它的边数是多少？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "8"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "10"
+      },
+      {
+       "label": "D",
+       "text": "12"
+      }
+     ],
+     "answer": "A",
+     "explanation": "正多边形的外角和是 360 度，每个外角 45 度，所以边数等于 360 度除以 45 度等于 8。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p626_q6",
+     "topicId": "mbj_p626",
+     "prompt": "正六边形的边心距是 3 倍根号3，则它的边长是多少？",
+     "question": "正六边形的边心距是 3 倍根号3，则它的边长是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "6",
+     "explanation": "正六边形的边心距等于边长乘 根号3 除以 2，所以边长等于 3 倍根号3 除以（根号3 除以 2）等于 6。",
+     "verify": "3*2",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p626_q7",
+     "topicId": "mbj_p626",
+     "prompt": "正 n 边形的中心角、内角、边心距与它的外接圆半径之间有什么关系？请说明。",
+     "question": "正 n 边形的中心角、内角、边心距与它的外接圆半径之间有什么关系？请说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "中心角等于 360 度除以 n；内角等于（n 减 2）乘 180 度除以 n，中心角与内角互补；把相邻两条半径和一条边组成等腰三角形，边心距是这条边上的高，它与半径、边长的一半构成直角三角形。",
+     "explanation": "正多边形被半径分成 n 个全等的等腰三角形，中心角、边长、边心距的计算都落在这个三角形里。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p626_q8",
+     "topicId": "mbj_p626",
+     "prompt": "正六边形的边长是 2，则它的面积是多少？",
+     "question": "正六边形的边长是 2，则它的面积是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "24 倍根号3"
+      },
+      {
+       "label": "B",
+       "text": "6 倍根号3"
+      },
+      {
+       "label": "C",
+       "text": "12 倍根号3"
+      },
+      {
+       "label": "D",
+       "text": "8 倍根号3"
+      }
+     ],
+     "answer": "B",
+     "explanation": "正六边形可分成 6 个边长为 2 的正三角形，每个面积等于 4 分之 根号3 乘 4 等于 根号3，所以总面积是 6 倍根号3。",
+     "subject": "math-bj"
+    }
+   ]
+  }
+ ]
+}

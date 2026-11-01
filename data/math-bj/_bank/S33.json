@@ -1,0 +1,2298 @@
+{
+ "shard": "S33",
+ "subject": "math-bj",
+ "book": "九上",
+ "seg": "初中",
+ "grade": 9,
+ "semester": "上",
+ "points": [
+  {
+   "topicId": "mbj_p597",
+   "name": "相似形",
+   "level": "unit",
+   "description": "本章从生活中形状相同的图形出发，学习线段的比、成比例线段与黄金分割，认识相似多边形，掌握相似三角形的判定和性质，并运用相似与位似解决测量、放缩等实际问题。",
+   "mastery_criteria": [
+    "能说出相似多边形对应角相等、对应边成比例的含义",
+    "能用两角分别相等判定两个三角形相似并写出对应边比例式",
+    "能求出相似三角形的周长比、对应线段之比与面积比"
+   ],
+   "misconceptions": [
+    "把形状相同当成大小也相同，认为相似就得全等",
+    "求面积比时直接写成相似比，漏掉平方",
+    "列比例式时对应边找错，用不相邻的两条边相比"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.02",
+    "quote": "通过具体实例认识图形的相似。了解相似多边形和相似比"
+   },
+   "questions": [
+    {
+     "prompt": "下列各组图形中，一定相似的是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "两个等边三角形"
+      },
+      {
+       "label": "B",
+       "text": "两个直角三角形"
+      },
+      {
+       "label": "C",
+       "text": "两个等腰三角形"
+      },
+      {
+       "label": "D",
+       "text": "两个矩形"
+      }
+     ],
+     "answer": "A",
+     "explanation": "等边三角形的三个角都是六十度，任意两个等边三角形都有两组角分别相等，所以一定相似；直角三角形只有一个直角相等，等腰三角形的顶角可以不同，矩形的长与宽之比可以不同，因此都不一定相似。",
+     "id": "mbj_p597_q1",
+     "topicId": "mbj_p597",
+     "subject": "math-bj",
+     "question": "下列各组图形中，一定相似的是（　）"
+    },
+    {
+     "prompt": "两个相似多边形的相似比是 2 比 5，它们的周长比是多少？请写成 a:b 的形式",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "2:5",
+     "explanation": "相似多边形周长的比等于相似比，所以周长比就是 2 比 5。周长是长度的一次量，不需要平方，只有面积的比才要写成相似比的平方。",
+     "id": "mbj_p597_q2",
+     "topicId": "mbj_p597",
+     "subject": "math-bj",
+     "question": "两个相似多边形的相似比是 2 比 5，它们的周长比是多少？请写成 a:b 的形式"
+    },
+    {
+     "prompt": "相似比为 2 比 3 的两个相似三角形，它们的面积比是多少？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "2:3"
+      },
+      {
+       "label": "B",
+       "text": "4:9"
+      },
+      {
+       "label": "C",
+       "text": "3:2"
+      },
+      {
+       "label": "D",
+       "text": "8:27"
+      }
+     ],
+     "answer": "B",
+     "explanation": "相似三角形面积比等于相似比的平方。相似比是 2 比 3，平方后就是 4 比 9；直接写 2 比 3 是漏了平方，写 8 比 27 是把相似比立方了，都不对。",
+     "id": "mbj_p597_q3",
+     "topicId": "mbj_p597",
+     "subject": "math-bj",
+     "question": "相似比为 2 比 3 的两个相似三角形，它们的面积比是多少？"
+    },
+    {
+     "prompt": "两个相似三角形的对应边之比为 3 比 5，小三角形的周长是 12，大三角形的周长是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "20",
+     "verify": "12*5/3",
+     "explanation": "相似三角形周长的比等于相似比。设大三角形周长为 C，则 C 比 12 等于 5 比 3，所以 C 等于 12 乘 5 除以 3，等于 20。",
+     "id": "mbj_p597_q4",
+     "topicId": "mbj_p597",
+     "subject": "math-bj",
+     "question": "两个相似三角形的对应边之比为 3 比 5，小三角形的周长是 12，大三角形的周长是多少？"
+    },
+    {
+     "prompt": "请说明相似图形与全等图形的联系和区别，并举例说明为什么面积之比不能直接写成相似比。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "全等图形是相似比等于 1 的特殊相似图形，相似只要求形状相同，大小可以不同。例如相似比为 2 比 1 的两个三角形，对应边都放大到 2 倍，但底和高同时放大 2 倍，面积要放大 2 乘 2 等于 4 倍，所以面积比是相似比的平方，不能写成 2 比 1。",
+     "explanation": "回答要抓住两点：全等是相似比为 1 的特例；面积由两个长度量相乘得到，两个长度都按相似比变化，所以面积按相似比的平方变化。只说结论不说理由不算完整。",
+     "id": "mbj_p597_q5",
+     "topicId": "mbj_p597",
+     "subject": "math-bj",
+     "question": "请说明相似图形与全等图形的联系和区别，并举例说明为什么面积之比不能直接写成相似比。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p598",
+   "name": "比例线段",
+   "level": "lesson",
+   "description": "学习两条线段的比、成比例线段和比例的基本性质，会用内项积等于外项积、等比性质进行变形与求值，为用比例研究相似图形做准备。",
+   "mastery_criteria": [
+    "能说出成比例线段的含义并判断四条线段是否成比例",
+    "能用内项积等于外项积解出比例中的未知量",
+    "能用设 k 法求连比条件下的代数式的值"
+   ],
+   "misconceptions": [
+    "把比例式交叉相乘时写成 a 乘 b 等于 c 乘 d",
+    "求比例中项时只算到乘积，忘记开平方取正值",
+    "连比问题直接代入数字猜值，不设 k 统一份数"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "prompt": "已知 a 比 b 等于 c 比 d，下列等式一定成立的是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 乘 b 等于 c 乘 d"
+      },
+      {
+       "label": "B",
+       "text": "a 乘 c 等于 b 乘 d"
+      },
+      {
+       "label": "C",
+       "text": "a 乘 d 等于 b 乘 c"
+      },
+      {
+       "label": "D",
+       "text": "a 加 c 等于 b 加 d"
+      }
+     ],
+     "answer": "C",
+     "explanation": "比例的基本性质是两个外项的积等于两个内项的积。在 a 比 b 等于 c 比 d 中，a 与 d 是外项，b 与 c 是内项，所以 a 乘 d 等于 b 乘 c，其余写法都是把内项外项配错了。",
+     "id": "mbj_p598_q1",
+     "topicId": "mbj_p598",
+     "subject": "math-bj",
+     "question": "已知 a 比 b 等于 c 比 d，下列等式一定成立的是（　）"
+    },
+    {
+     "prompt": "若 3 比 x 等于 2 比 6，则 x 等于多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "9",
+     "explanation": "由比例的基本性质，内项积等于外项积，得 2 乘 x 等于 3 乘 6，即 2x 等于 18，所以 x 等于 9。",
+     "id": "mbj_p598_q2",
+     "topicId": "mbj_p598",
+     "subject": "math-bj",
+     "question": "若 3 比 x 等于 2 比 6，则 x 等于多少？"
+    },
+    {
+     "prompt": "已知 x 比 y 等于 3 比 5，且 y 等于 15，求 x 的值。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "9",
+     "verify": "3/5*15",
+     "explanation": "由 x 比 y 等于 3 比 5 得 x 等于 y 乘 5 分之 3，把 y 等于 15 代入，x 等于 15 乘 5 分之 3，等于 9。",
+     "id": "mbj_p598_q3",
+     "topicId": "mbj_p598",
+     "subject": "math-bj",
+     "question": "已知 x 比 y 等于 3 比 5，且 y 等于 15，求 x 的值。"
+    },
+    {
+     "prompt": "若 a 比 b 等于 2 比 3，求 b 分之 a 加 b 的值，请写成分数形式",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "5/3",
+     "explanation": "用设 k 法：设 a 等于 2k，b 等于 3k，则 b 分之 a 加 b 等于 3k 分之 2k 加 3k，等于 3k 分之 5k，约去 k 得 3 分之 5。直接拿 2 加 3 除以 2 是错的。",
+     "id": "mbj_p598_q4",
+     "topicId": "mbj_p598",
+     "subject": "math-bj",
+     "question": "若 a 比 b 等于 2 比 3，求 b 分之 a 加 b 的值，请写成分数形式"
+    },
+    {
+     "prompt": "已知线段 a 等于 4，线段 c 等于 9，线段 b 是 a 和 c 的比例中项，则 b 等于（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "36"
+      },
+      {
+       "label": "B",
+       "text": "6.5"
+      },
+      {
+       "label": "C",
+       "text": "13"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "answer": "D",
+     "explanation": "比例中项满足 b 的平方等于 a 乘 c 等于 36，线段长度取正值，所以 b 等于 6。写成 36 是只算乘积没有开方，6.5 是把两数求平均，13 是把两数相加，都不是比例中项的意义。",
+     "id": "mbj_p598_q5",
+     "topicId": "mbj_p598",
+     "subject": "math-bj",
+     "question": "已知线段 a 等于 4，线段 c 等于 9，线段 b 是 a 和 c 的比例中项，则 b 等于（　）"
+    },
+    {
+     "prompt": "已知 x 比 y 比 z 等于 2 比 3 比 4，且 x 加 y 加 z 等于 45，求 z 的值。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "20",
+     "verify": "45*4/9",
+     "explanation": "设 x 等于 2k，y 等于 3k，z 等于 4k，则 2k 加 3k 加 4k 等于 9k 等于 45，得 k 等于 5，所以 z 等于 4 乘 5 等于 20。",
+     "id": "mbj_p598_q6",
+     "topicId": "mbj_p598",
+     "subject": "math-bj",
+     "question": "已知 x 比 y 比 z 等于 2 比 3 比 4，且 x 加 y 加 z 等于 45，求 z 的值。"
+    },
+    {
+     "prompt": "若 b 分之 a 等于 d 分之 c 等于 f 分之 e 等于 3，且 b 加 d 加 f 不等于零，则 b 加 d 加 f 分之 a 加 c 加 e 等于（　）",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "9"
+      },
+      {
+       "label": "C",
+       "text": "3 分之 1"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "A",
+     "explanation": "这是等比性质。由条件得 a 等于 3b，c 等于 3d，e 等于 3f，所以分子等于 3 倍的 b 加 d 加 f，与分母约分后等于 3。写成 9 是把比值又平方了一次，写成 3 分之 1 是把比倒过来了。",
+     "id": "mbj_p598_q7",
+     "topicId": "mbj_p598",
+     "subject": "math-bj",
+     "question": "若 b 分之 a 等于 d 分之 c 等于 f 分之 e 等于 3，且 b 加 d 加 f 不等于零，则 b 加 d 加 f 分之 a 加 c 加 e 等于（　）"
+    },
+    {
+     "prompt": "解决连比问题时常用设 k 法。请以 x 比 y 比 z 等于 1 比 2 比 3 为例，写出求 z 分之 x 加 y 的过程和结果。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "设 x 等于 k，y 等于 2k，z 等于 3k，其中 k 不等于零。则 z 分之 x 加 y 等于 3k 分之 k 加 2k，等于 3k 分之 3k，约分后等于 1。设 k 法的要点是把连比中的每一份都用同一个字母表示，再代入所求式子约分，这样比直接猜数值更可靠。",
+     "explanation": "设 k 法的价值在于把比例关系转化为含一个字母的代数式，使各项之间有统一的度量，代入后字母自然约去。答题时要写出设的过程、代入过程和约分结果三步。",
+     "id": "mbj_p598_q8",
+     "topicId": "mbj_p598",
+     "subject": "math-bj",
+     "question": "解决连比问题时常用设 k 法。请以 x 比 y 比 z 等于 1 比 2 比 3 为例，写出求 z 分之 x 加 y 的过程和结果。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p599",
+   "name": "黄金分割",
+   "level": "lesson",
+   "description": "认识黄金分割与黄金比，知道黄金比约为 0.618，会在一条线段上找出黄金分割点并求较长线段、较短线段的长，理解黄金分割的判定关系式。",
+   "mastery_criteria": [
+    "能说出黄金分割的定义并写出对应的比例式",
+    "能在已知整条线段长时求出黄金分割所得两段的长",
+    "能用 AC 的平方等于 AB 乘 BC 判断黄金分割点"
+   ],
+   "misconceptions": [
+    "把黄金比写成 1.618，与它的倒数混为一谈",
+    "分不清哪一段是较长线段，比例式左右写反",
+    "认为线段上只有一个点能把线段黄金分割"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "prompt": "黄金比是一个固定的比值，它的近似值是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.5"
+      },
+      {
+       "label": "B",
+       "text": "0.618"
+      },
+      {
+       "label": "C",
+       "text": "0.866"
+      },
+      {
+       "label": "D",
+       "text": "1.618"
+      }
+     ],
+     "answer": "B",
+     "explanation": "黄金比等于 2 分之根号 5 减 1，约等于 0.618。0.5 是把线段平均分，0.866 是六十度角的正弦值，1.618 是黄金比的倒数，三者都不是黄金比。",
+     "id": "mbj_p599_q1",
+     "topicId": "mbj_p599",
+     "subject": "math-bj",
+     "question": "黄金比是一个固定的比值，它的近似值是多少？"
+    },
+    {
+     "prompt": "点 C 是线段 AB 的黄金分割点，AB 等于 10，且 AC 大于 BC，取黄金比为 0.618，则 AC 约等于多少（精确到 0.1）？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "6.2",
+     "explanation": "AC 是较长线段，它占整条线段的 0.618，所以 AC 约等于 10 乘 0.618 等于 6.18，精确到 0.1 是 6.2。若算成 3.8 就是取了较短的一段。",
+     "id": "mbj_p599_q2",
+     "topicId": "mbj_p599",
+     "subject": "math-bj",
+     "question": "点 C 是线段 AB 的黄金分割点，AB 等于 10，且 AC 大于 BC，取黄金比为 0.618，则 AC 约等于多少（精确到 0.1）？"
+    },
+    {
+     "prompt": "点 C 把线段 AB 分成 AC 和 BC 两段，下列关系式符合黄金分割定义的是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "AC 分之 AB 等于 BC 分之 AC"
+      },
+      {
+       "label": "B",
+       "text": "AB 分之 AC 等于 BC 分之 AB"
+      },
+      {
+       "label": "C",
+       "text": "AB 分之 AC 等于 AC 分之 BC"
+      },
+      {
+       "label": "D",
+       "text": "AC 乘 AB 等于 BC 的平方"
+      }
+     ],
+     "answer": "C",
+     "explanation": "黄金分割的定义是较长线段与整条线段的比，等于较短线段与较长线段的比，即 AC 比 AB 等于 BC 比 AC。其余写法把分子分母配错，等式两边比的不是同一对线段。",
+     "id": "mbj_p599_q3",
+     "topicId": "mbj_p599",
+     "subject": "math-bj",
+     "question": "点 C 把线段 AB 分成 AC 和 BC 两段，下列关系式符合黄金分割定义的是（　）"
+    },
+    {
+     "prompt": "已知线段 AB 的长为 20，点 C 是 AB 的黄金分割点，且 AC 大于 BC，取黄金比为 0.618，求 AC 的长。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "12.36",
+     "verify": "20*0.618",
+     "explanation": "AC 是较长线段，长度等于整条线段乘黄金比，即 20 乘 0.618 等于 12.36。注意不要用 20 除以 0.618，那是把黄金比当成了 1.618。",
+     "id": "mbj_p599_q4",
+     "topicId": "mbj_p599",
+     "subject": "math-bj",
+     "question": "已知线段 AB 的长为 20，点 C 是 AB 的黄金分割点，且 AC 大于 BC，取黄金比为 0.618，求 AC 的长。"
+    },
+    {
+     "prompt": "已知点 C 是线段 AB 的黄金分割点，AB 等于 10，AC 大于 BC，取黄金比为 0.618，则 BC 约等于多少（精确到 0.1）？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "3.8",
+     "explanation": "AC 约等于 10 乘 0.618 等于 6.18，所以 BC 等于 10 减 6.18 等于 3.82，精确到 0.1 是 3.8。也可以直接用 10 乘 0.382 得到同一结果。",
+     "id": "mbj_p599_q5",
+     "topicId": "mbj_p599",
+     "subject": "math-bj",
+     "question": "已知点 C 是线段 AB 的黄金分割点，AB 等于 10，AC 大于 BC，取黄金比为 0.618，则 BC 约等于多少（精确到 0.1）？"
+    },
+    {
+     "prompt": "点 C 在线段 AB 上，且 AC 的平方等于 AB 乘 BC，下列结论正确的是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "点 C 是 AB 的黄金分割点，且 AC 小于 BC"
+      },
+      {
+       "label": "B",
+       "text": "点 C 是 AB 的中点"
+      },
+      {
+       "label": "C",
+       "text": "AC 等于 2 倍的 BC"
+      },
+      {
+       "label": "D",
+       "text": "点 C 是 AB 的黄金分割点，且 AC 大于 BC"
+      }
+     ],
+     "answer": "D",
+     "explanation": "把 AC 的平方等于 AB 乘 BC 改写成 AC 比 AB 等于 BC 比 AC，这正是黄金分割的比例式。比例式成立时 AC 是较长线段，所以 AC 大于 BC；若 AC 小于 BC，对应的比例式应是 BC 的平方等于 AB 乘 AC。",
+     "id": "mbj_p599_q6",
+     "topicId": "mbj_p599",
+     "subject": "math-bj",
+     "question": "点 C 在线段 AB 上，且 AC 的平方等于 AB 乘 BC，下列结论正确的是（　）"
+    },
+    {
+     "prompt": "人们常把黄金比称为最美的比。请说明黄金比美在哪里，并举出两个运用黄金分割的例子。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "黄金比约为 0.618，把线段按这个比分成两段后，较长段与整条线段的比等于较短段与较长段的比，继续分割时比例保持不变，这种自我重复的比例让图形显得和谐稳定。例如帕特农神庙正立面的高与宽之比、许多书本和名片的宽与长之比都接近黄金比。",
+     "explanation": "要答出两层意思：比例自身的重复性带来视觉上的稳定与协调；再用建筑、绘画、书本、人体等实例佐证。只写它好看而不说明原因是不完整的。",
+     "id": "mbj_p599_q7",
+     "topicId": "mbj_p599",
+     "subject": "math-bj",
+     "question": "人们常把黄金比称为最美的比。请说明黄金比美在哪里，并举出两个运用黄金分割的例子。"
+    },
+    {
+     "prompt": "一个矩形的宽与长之比为黄金比 0.618，长为 8，求它的宽。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "4.944",
+     "verify": "8*0.618",
+     "explanation": "宽等于长乘黄金比，即 8 乘 0.618 等于 4.944。这里直接用 0.618 计算，不需要再开方，也不要用 8 除以 0.618，否则得到的是把宽当成了较长边。",
+     "id": "mbj_p599_q8",
+     "topicId": "mbj_p599",
+     "subject": "math-bj",
+     "question": "一个矩形的宽与长之比为黄金比 0.618，长为 8，求它的宽。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p600",
+   "name": "“黄金分割”之美",
+   "level": "lesson",
+   "description": "通过建筑、绘画、五角星和自然界中的实例感受黄金分割的和谐之美，认识黄金矩形与黄金螺旋，了解用尺规作黄金分割点的基本思路。",
+   "mastery_criteria": [
+    "能举出两个以上体现黄金分割的实例",
+    "能说出黄金矩形的特征及剪去正方形后的变化",
+    "能说明三分法构图与黄金分割的联系"
+   ],
+   "misconceptions": [
+    "认为只要看起来好看就一定是按黄金比设计的",
+    "把黄金矩形与正方形混淆，以为四边相等",
+    "把三分法的分点当成线段的中点"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "prompt": "下列实例中常被认为运用了黄金分割的是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "帕特农神庙正立面的高与宽之比"
+      },
+      {
+       "label": "B",
+       "text": "正方体的棱长与体积之比"
+      },
+      {
+       "label": "C",
+       "text": "等边三角形的边长与周长之比"
+      },
+      {
+       "label": "D",
+       "text": "圆的直径与周长之比"
+      }
+     ],
+     "answer": "A",
+     "explanation": "黄金分割是同一类量之间的比，即两条线段的比约为 0.618。棱长与体积、边长与周长、直径与周长相比，比的双方不是同一类量，比值也远不是 0.618，所以只有高与宽之比符合。",
+     "id": "mbj_p600_q1",
+     "topicId": "mbj_p600",
+     "subject": "math-bj",
+     "question": "下列实例中常被认为运用了黄金分割的是（　）"
+    },
+    {
+     "prompt": "黄金矩形是一种特殊的矩形，它指的是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "四条边都相等的矩形"
+      },
+      {
+       "label": "B",
+       "text": "宽与长的比约为 0.618 的矩形"
+      },
+      {
+       "label": "C",
+       "text": "对角线长度等于长的矩形"
+      },
+      {
+       "label": "D",
+       "text": "面积等于 1 的矩形"
+      }
+     ],
+     "answer": "B",
+     "explanation": "黄金矩形的特征是宽与长之比接近黄金比 0.618，它看起来匀称耐看。四边相等的矩形是正方形，对角线等于长的矩形并不存在，面积为 1 只限制大小不限制形状。",
+     "id": "mbj_p600_q2",
+     "topicId": "mbj_p600",
+     "subject": "math-bj",
+     "question": "黄金矩形是一种特殊的矩形，它指的是（　）"
+    },
+    {
+     "prompt": "把黄金矩形剪去一个以宽为边长的正方形后，剩下的小矩形与原矩形相似，这个小矩形仍然是哪一种特殊矩形？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "黄金矩形",
+     "explanation": "剪去正方形后剩下的小矩形，其宽与原矩形的宽之比仍等于黄金比，所以它与原矩形相似，仍然是黄金矩形。正因为可以无限重复这个过程，才形成了黄金螺旋。",
+     "id": "mbj_p600_q3",
+     "topicId": "mbj_p600",
+     "subject": "math-bj",
+     "question": "把黄金矩形剪去一个以宽为边长的正方形后，剩下的小矩形与原矩形相似，这个小矩形仍然是哪一种特殊矩形？"
+    },
+    {
+     "prompt": "某人身高 170 厘米，头顶到肚脐的高度与身高之比接近黄金比 0.618，求头顶到肚脐的高度约为多少厘米。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "105.06",
+     "verify": "170*0.618",
+     "explanation": "头顶到肚脐的高度等于身高乘黄金比，即 170 乘 0.618 等于 105.06 厘米。这里所求的是较长的一段，所以乘 0.618，而不是乘 0.382。",
+     "id": "mbj_p600_q4",
+     "topicId": "mbj_p600",
+     "subject": "math-bj",
+     "question": "某人身高 170 厘米，头顶到肚脐的高度与身高之比接近黄金比 0.618，求头顶到肚脐的高度约为多少厘米。"
+    },
+    {
+     "prompt": "关于黄金分割在生活中的应用，下列说法正确的是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "黄金分割只能用在几何证明中"
+      },
+      {
+       "label": "B",
+       "text": "黄金比的值恰好等于 1"
+      },
+      {
+       "label": "C",
+       "text": "许多植物叶片的排列和贝壳的螺旋常被认为接近黄金分割"
+      },
+      {
+       "label": "D",
+       "text": "黄金分割只适用于绘画构图"
+      }
+     ],
+     "answer": "C",
+     "explanation": "黄金分割既是几何结论，也广泛出现在建筑、绘画、摄影和自然界中，叶片排列、贝壳螺旋都常被描述为接近黄金分割。黄金比约等于 0.618 而不是 1，应用范围也不限于某一领域。",
+     "id": "mbj_p600_q5",
+     "topicId": "mbj_p600",
+     "subject": "math-bj",
+     "question": "关于黄金分割在生活中的应用，下列说法正确的是（　）"
+    },
+    {
+     "prompt": "正五角星中，一条对角线被另一条对角线分成的两段，较长段与整条对角线之比约等于多少（取三位小数）？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "0.618",
+     "explanation": "五角星中多处出现黄金比，对角线被交点分成的两段满足较长段比整条对角线约等于 0.618，这也是五角星被认为对称美观的原因之一。",
+     "id": "mbj_p600_q6",
+     "topicId": "mbj_p600",
+     "subject": "math-bj",
+     "question": "正五角星中，一条对角线被另一条对角线分成的两段，较长段与整条对角线之比约等于多少（取三位小数）？"
+    },
+    {
+     "prompt": "摄影构图常讲三分法，它与黄金分割有什么关系？请结合具体例子说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "三分法用两条横线和两条竖线把画面分成九宫格，把主体放在交点附近。这些交点大约位于画面的 0.38 与 0.62 处，与黄金分割点 0.618 很接近。所以三分法可以看作黄金分割在构图上的简化：既让画面重心稳定，又避免把主体放在正中显得呆板。",
+     "explanation": "要说明两件事：三分法的交点位置数值上接近 0.618；这种安排带来视觉上的稳定与生动。若只说三分法好看而不与黄金分割对照，就没有答到关系上。",
+     "id": "mbj_p600_q7",
+     "topicId": "mbj_p600",
+     "subject": "math-bj",
+     "question": "摄影构图常讲三分法，它与黄金分割有什么关系？请结合具体例子说明。"
+    },
+    {
+     "prompt": "用尺规作线段 AB 的黄金分割点，可行的思路是（　）",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "直接取 AB 的中点作为黄金分割点"
+      },
+      {
+       "label": "B",
+       "text": "把 AB 三等分，取靠近 B 的那个分点"
+      },
+      {
+       "label": "C",
+       "text": "以 AB 为直径作圆，圆与 AB 的交点即为黄金分割点"
+      },
+      {
+       "label": "D",
+       "text": "过 B 作 AB 的垂线，取 BD 等于 AB 的一半，连 AD，在 AD 上截取 DE 等于 DB，再在 AB 上截取 AC 等于 AE"
+      }
+     ],
+     "answer": "D",
+     "explanation": "这个作图先用勾股定理得到 AD 等于 2 分之根号 5 倍的 AB，再由 AE 等于 AD 减 DB 得到 2 分之根号 5 减 1 倍的 AB，恰好是黄金比对应的长段。取中点或三等分得到的是 0.5 与 3 分之 2，都不是 0.618。",
+     "id": "mbj_p600_q8",
+     "topicId": "mbj_p600",
+     "subject": "math-bj",
+     "question": "用尺规作线段 AB 的黄金分割点，可行的思路是（　）"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p601",
+   "name": "相似多边形",
+   "level": "lesson",
+   "description": "认识相似多边形，掌握对应角相等、对应边成比例这两个条件和相似比的含义，会求相似多边形的周长比与面积比，能判断常见的多边形是否相似。",
+   "mastery_criteria": [
+    "能写出相似多边形的两个条件并指出对应边、对应角",
+    "能由相似比求相似多边形的周长与面积",
+    "能举反例说明对应边成比例不能单独判定相似"
+   ],
+   "misconceptions": [
+    "认为对应边成比例就能说明两个多边形相似",
+    "把相似多边形的面积比写成相似比本身",
+    "把相似比与对应边的具体长度混为一谈"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.02",
+    "quote": "通过具体实例认识图形的相似。了解相似多边形和相似比"
+   },
+   "questions": [
+    {
+     "prompt": "判定两个多边形相似，必须同时满足的条件是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "对应角相等，对应边成比例"
+      },
+      {
+       "label": "B",
+       "text": "只有对应角相等"
+      },
+      {
+       "label": "C",
+       "text": "只有对应边成比例"
+      },
+      {
+       "label": "D",
+       "text": "面积相等且周长相等"
+      }
+     ],
+     "answer": "A",
+     "explanation": "相似多边形的定义要求对应角相等、对应边成比例，两个条件缺一不可。只有角相等边可以不成比例，只有边成比例角可以不同；面积和周长相等与形状相同没有必然联系。",
+     "id": "mbj_p601_q1",
+     "topicId": "mbj_p601",
+     "subject": "math-bj",
+     "question": "判定两个多边形相似，必须同时满足的条件是（　）"
+    },
+    {
+     "prompt": "两个相似多边形的相似比是 3 比 4，它们的周长比是多少？请写成 a:b 的形式",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "3:4",
+     "explanation": "相似多边形周长的比等于相似比，所以周长比是 3 比 4。周长是一次的长度量，只有一个长度因子，不需要像面积那样平方。",
+     "id": "mbj_p601_q2",
+     "topicId": "mbj_p601",
+     "subject": "math-bj",
+     "question": "两个相似多边形的相似比是 3 比 4，它们的周长比是多少？请写成 a:b 的形式"
+    },
+    {
+     "prompt": "关于两个矩形，下列说法正确的是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "任意两个矩形都相似"
+      },
+      {
+       "label": "B",
+       "text": "长与宽的比相同时它们相似，比不同时不相似"
+      },
+      {
+       "label": "C",
+       "text": "周长相等的两个矩形一定相似"
+      },
+      {
+       "label": "D",
+       "text": "面积相等的两个矩形一定相似"
+      }
+     ],
+     "answer": "B",
+     "explanation": "矩形的四个角都是直角，对应角总能相等，能否相似就看对应边是否成比例，也就是长宽比是否相同。长宽比不同的矩形、周长或面积相等但长宽比不同的矩形都不相似。",
+     "id": "mbj_p601_q3",
+     "topicId": "mbj_p601",
+     "subject": "math-bj",
+     "question": "关于两个矩形，下列说法正确的是（　）"
+    },
+    {
+     "prompt": "两个相似五边形的相似比为 2 比 5，小五边形的周长是 16，大五边形的周长是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "40",
+     "verify": "16*5/2",
+     "explanation": "相似多边形周长的比等于相似比。设大五边形周长为 C，则 C 比 16 等于 5 比 2，所以 C 等于 16 乘 5 除以 2，等于 40。",
+     "id": "mbj_p601_q4",
+     "topicId": "mbj_p601",
+     "subject": "math-bj",
+     "question": "两个相似五边形的相似比为 2 比 5，小五边形的周长是 16，大五边形的周长是多少？"
+    },
+    {
+     "prompt": "两个相似多边形的相似比为 1 比 2，小多边形的面积是 7，大多边形的面积是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "28",
+     "verify": "7*4",
+     "explanation": "面积比等于相似比的平方，相似比 1 比 2 对应面积比 1 比 4。所以大多边形的面积等于 7 乘 4 等于 28，而不是 7 乘 2。",
+     "id": "mbj_p601_q5",
+     "topicId": "mbj_p601",
+     "subject": "math-bj",
+     "question": "两个相似多边形的相似比为 1 比 2，小多边形的面积是 7，大多边形的面积是多少？"
+    },
+    {
+     "prompt": "两个相似多边形的面积比是 9 比 25，它们的相似比是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "9:25"
+      },
+      {
+       "label": "B",
+       "text": "81:625"
+      },
+      {
+       "label": "C",
+       "text": "3:5"
+      },
+      {
+       "label": "D",
+       "text": "5:3"
+      }
+     ],
+     "answer": "C",
+     "explanation": "面积比等于相似比的平方，把 9 比 25 开方就得到相似比 3 比 5。写 9 比 25 是漏了开方，写 81 比 625 是又平方了一次，写 5 比 3 是把两个数倒过来了。",
+     "id": "mbj_p601_q6",
+     "topicId": "mbj_p601",
+     "subject": "math-bj",
+     "question": "两个相似多边形的面积比是 9 比 25，它们的相似比是（　）"
+    },
+    {
+     "prompt": "有同学说：只要两个多边形的对应边成比例，它们就相似。请判断这种说法并举例说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "这种说法不对。对应边成比例只是相似的条件之一，还必须对应角相等。比如一个正方形和一个菱形，四条边都相等，对应边的比都是 1 比 1，确实成比例；但菱形的内角一般不是直角，对应角不相等，所以这两个图形并不相似。可见两个条件缺一不可。",
+     "explanation": "要用反例说话：找一个满足对应边成比例但对应角不相等的例子，正方形与菱形是最典型的。结论要明确说两个条件必须同时成立，不能只列结论不举例。",
+     "id": "mbj_p601_q7",
+     "topicId": "mbj_p601",
+     "subject": "math-bj",
+     "question": "有同学说：只要两个多边形的对应边成比例，它们就相似。请判断这种说法并举例说明。"
+    },
+    {
+     "prompt": "两个相似四边形的相似比为 k，若它们的周长比是 3 比 1，那么面积比是多少？请写成 a:b 的形式",
+     "type": "fill",
+     "difficulty": "hard",
+     "answer": "9:1",
+     "explanation": "由周长比等于相似比可知 k 等于 3，面积比等于相似比的平方，即 3 的平方比 1 的平方，等于 9 比 1。这里容易误把面积比写成 3 比 1，忽略了平方。",
+     "id": "mbj_p601_q8",
+     "topicId": "mbj_p601",
+     "subject": "math-bj",
+     "question": "两个相似四边形的相似比为 k，若它们的周长比是 3 比 1，那么面积比是多少？请写成 a:b 的形式"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p602",
+   "name": "相似三角形的判定",
+   "level": "lesson",
+   "description": "学习相似三角形的判定方法：平行于三角形一边的直线所截得的三角形与原三角形相似，两角分别相等、两边成比例且夹角相等、三边成比例都能判定相似。",
+   "mastery_criteria": [
+    "能说出三种判定相似三角形的方法并写出对应条件",
+    "能根据已知边角条件选择恰当的判定方法",
+    "能用平行线分线段成比例推出两三角形相似"
+   ],
+   "misconceptions": [
+    "误以为两边成比例再加任意一角相等就能判定相似",
+    "判定时混用全等的条件，如两边相等就认为相似",
+    "列对应边时把不相邻的边配成对应边"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "prompt": "下列条件中能判定两个三角形相似的是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "两条边分别相等"
+      },
+      {
+       "label": "B",
+       "text": "两个三角形的面积相等"
+      },
+      {
+       "label": "C",
+       "text": "两个三角形的周长相等"
+      },
+      {
+       "label": "D",
+       "text": "两个角分别相等"
+      }
+     ],
+     "answer": "D",
+     "explanation": "两角分别相等的两个三角形相似，这是最常用的判定方法。边相等得到的是全等，面积相等或周长相等只说明大小关系，形状完全可以不同，不能判定相似。",
+     "id": "mbj_p602_q1",
+     "topicId": "mbj_p602",
+     "subject": "math-bj",
+     "question": "下列条件中能判定两个三角形相似的是（　）"
+    },
+    {
+     "prompt": "平行于三角形一边的直线截其他两边（或两边的延长线），所得的三角形与原三角形具有什么关系？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "相似",
+     "explanation": "这是相似三角形的预备定理：截得的三角形与原三角形有两组同位角分别相等，所以相似。它的价值在于把平行条件直接转化为相似关系，进而得到成比例的线段。",
+     "id": "mbj_p602_q2",
+     "topicId": "mbj_p602",
+     "subject": "math-bj",
+     "question": "平行于三角形一边的直线截其他两边（或两边的延长线），所得的三角形与原三角形具有什么关系？"
+    },
+    {
+     "prompt": "已知三角形 ABC 相似于三角形 DEF，AB 等于 4，DE 等于 6，BC 等于 6，求 EF 的长。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "9",
+     "verify": "6*6/4",
+     "explanation": "相似三角形对应边成比例，AB 对应 DE，BC 对应 EF，所以 EF 比 BC 等于 DE 比 AB，即 EF 比 6 等于 6 比 4，解得 EF 等于 9。",
+     "id": "mbj_p602_q3",
+     "topicId": "mbj_p602",
+     "subject": "math-bj",
+     "question": "已知三角形 ABC 相似于三角形 DEF，AB 等于 4，DE 等于 6，BC 等于 6，求 EF 的长。"
+    },
+    {
+     "prompt": "已知两个三角形有两边成比例，要判定它们相似，还需要补充的条件是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "这两边的夹角相等"
+      },
+      {
+       "label": "B",
+       "text": "任意一个角相等"
+      },
+      {
+       "label": "C",
+       "text": "第三边也相等"
+      },
+      {
+       "label": "D",
+       "text": "周长相等"
+      }
+     ],
+     "answer": "A",
+     "explanation": "两边成比例且夹角相等的两个三角形相似，这里的角必须是那两条成比例边的夹角。任意一个角相等可能对着不成比例的边，不能保证形状相同；第三边相等或周长相等也推不出相似。",
+     "id": "mbj_p602_q4",
+     "topicId": "mbj_p602",
+     "subject": "math-bj",
+     "question": "已知两个三角形有两边成比例，要判定它们相似，还需要补充的条件是（　）"
+    },
+    {
+     "prompt": "一个三角形的三边长是 3、4、5，另一个三角形的两边长是 6、8，要使两个三角形相似，第三边长应是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "10",
+     "verify": "5*2",
+     "explanation": "第一个三角形三边从小到大的比是 3 比 4 比 5。第二个三角形已有 6 和 8，恰好是 3 和 4 的 2 倍，要使三边成比例，第三边应是 5 的 2 倍，即 10。用三边成比例可以判定两个三角形相似。",
+     "id": "mbj_p602_q5",
+     "topicId": "mbj_p602",
+     "subject": "math-bj",
+     "question": "一个三角形的三边长是 3、4、5，另一个三角形的两边长是 6、8，要使两个三角形相似，第三边长应是多少？"
+    },
+    {
+     "prompt": "在三角形 ABC 中，点 D 在 AB 上，点 E 在 AC 上，下列条件中能判定 DE 平行于 BC 的是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "AD 比 AB 等于 AE 比 EC"
+      },
+      {
+       "label": "B",
+       "text": "AD 比 DB 等于 AE 比 EC"
+      },
+      {
+       "label": "C",
+       "text": "AD 比 DB 等于 EC 比 AE"
+      },
+      {
+       "label": "D",
+       "text": "AD 乘 DB 等于 AE 乘 EC"
+      }
+     ],
+     "answer": "B",
+     "explanation": "由平行线分线段成比例定理的推论，当 AD 比 DB 等于 AE 比 EC 时 DE 平行于 BC。第二种写法一边用整条边、一边用部分边，两条线段的对应关系不对称；第三种把比写成了积。",
+     "id": "mbj_p602_q6",
+     "topicId": "mbj_p602",
+     "subject": "math-bj",
+     "question": "在三角形 ABC 中，点 D 在 AB 上，点 E 在 AC 上，下列条件中能判定 DE 平行于 BC 的是（　）"
+    },
+    {
+     "prompt": "在三角形 ABC 中，DE 平行于 BC，D 在 AB 上，E 在 AC 上。请说明三角形 ADE 与三角形 ABC 相似的理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为 DE 平行于 BC，所以角 ADE 与角 ABC 是同位角，相等；角 AED 与角 ACB 也是同位角，相等。两个三角形有两组角分别相等，再加上角 A 是公共角，根据两角分别相等的两个三角形相似，可得三角形 ADE 相似于三角形 ABC，且 AD 比 AB 等于 AE 比 AC 等于 DE 比 BC。",
+     "explanation": "证明的关键是把平行条件翻译成同位角相等，凑够两组相等的角。书写时要指明对应关系并写出对应边成比例，只写相似符号而不说明依据是不完整的。",
+     "id": "mbj_p602_q7",
+     "topicId": "mbj_p602",
+     "subject": "math-bj",
+     "question": "在三角形 ABC 中，DE 平行于 BC，D 在 AB 上，E 在 AC 上。请说明三角形 ADE 与三角形 ABC 相似的理由。"
+    },
+    {
+     "prompt": "在三角形 ABC 中，点 D 在 AB 上，点 E 在 AC 上，DE 平行于 BC，AD 等于 2，DB 等于 4，AE 等于 3，求 EC 的长。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "6",
+     "verify": "3*4/2",
+     "explanation": "由平行线分线段成比例得 AD 比 DB 等于 AE 比 EC，即 2 比 4 等于 3 比 EC，解得 EC 等于 6。这里容易错用 AD 比 AB 与 AE 比 EC 相比，那样算出的结果会偏小一半。",
+     "id": "mbj_p602_q8",
+     "topicId": "mbj_p602",
+     "subject": "math-bj",
+     "question": "在三角形 ABC 中，点 D 在 AB 上，点 E 在 AC 上，DE 平行于 BC，AD 等于 2，DB 等于 4，AE 等于 3，求 EC 的长。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p603",
+   "name": "相似三角形的性质",
+   "level": "lesson",
+   "description": "掌握相似三角形的性质：对应角相等、对应边成比例，对应高、中线、角平分线之比等于相似比，周长比等于相似比，面积比等于相似比的平方。",
+   "mastery_criteria": [
+    "能写出相似三角形对应线段之比、周长比与相似比的关系",
+    "能由相似比求出面积比，或由面积比反求相似比",
+    "能说明面积比是相似比平方的理由"
+   ],
+   "misconceptions": [
+    "把面积比与相似比混为一谈，忘记平方",
+    "由面积比求相似比时忘记开方",
+    "以为对应中线、对应高之比也等于相似比的平方"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "prompt": "两个相似三角形对应高的比（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "等于相似比的平方"
+      },
+      {
+       "label": "B",
+       "text": "总等于 1"
+      },
+      {
+       "label": "C",
+       "text": "等于相似比"
+      },
+      {
+       "label": "D",
+       "text": "等于相似比的倒数"
+      }
+     ],
+     "answer": "C",
+     "explanation": "对应高是长度量，与对应边一样只按相似比放大或缩小，所以对应高之比等于相似比。只有面积是二次量，比才要平方；说总等于 1 就把相似与全等混淆了。",
+     "id": "mbj_p603_q1",
+     "topicId": "mbj_p603",
+     "subject": "math-bj",
+     "question": "两个相似三角形对应高的比（　）"
+    },
+    {
+     "prompt": "两个相似三角形的相似比是 2 比 3，它们的面积比是多少？请写成 a:b 的形式",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "4:9",
+     "explanation": "面积比等于相似比的平方，2 的平方比 3 的平方等于 4 比 9。写 2 比 3 是把面积当成一次量，写 8 比 27 是把相似比立方了。",
+     "id": "mbj_p603_q2",
+     "topicId": "mbj_p603",
+     "subject": "math-bj",
+     "question": "两个相似三角形的相似比是 2 比 3，它们的面积比是多少？请写成 a:b 的形式"
+    },
+    {
+     "prompt": "两个相似三角形的相似比是 3 比 5，小三角形的面积是 18，大三角形的面积是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "50",
+     "verify": "18*25/9",
+     "explanation": "面积比等于相似比的平方，即 9 比 25。设大三角形面积为 S，则 S 比 18 等于 25 比 9，所以 S 等于 18 乘 25 除以 9，等于 50。",
+     "id": "mbj_p603_q3",
+     "topicId": "mbj_p603",
+     "subject": "math-bj",
+     "question": "两个相似三角形的相似比是 3 比 5，小三角形的面积是 18，大三角形的面积是多少？"
+    },
+    {
+     "prompt": "两个相似三角形对应中线的比是 2 比 5，大三角形的周长是 30，小三角形的周长是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "12",
+     "verify": "30*2/5",
+     "explanation": "对应中线之比等于相似比，所以相似比是 2 比 5；周长比也等于相似比。设小三角形周长为 C，则 C 比 30 等于 2 比 5，解得 C 等于 12。",
+     "id": "mbj_p603_q4",
+     "topicId": "mbj_p603",
+     "subject": "math-bj",
+     "question": "两个相似三角形对应中线的比是 2 比 5，大三角形的周长是 30，小三角形的周长是多少？"
+    },
+    {
+     "prompt": "两个相似三角形的面积比是 4 比 9，它们对应边的比是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "4:9"
+      },
+      {
+       "label": "B",
+       "text": "16:81"
+      },
+      {
+       "label": "C",
+       "text": "3:2"
+      },
+      {
+       "label": "D",
+       "text": "2:3"
+      }
+     ],
+     "answer": "D",
+     "explanation": "面积比是相似比的平方，把 4 比 9 开方得到对应边之比 2 比 3。写 4 比 9 是没有开方，写 16 比 81 是又平方了一次，写 3 比 2 是颠倒了两数的次序。",
+     "id": "mbj_p603_q5",
+     "topicId": "mbj_p603",
+     "subject": "math-bj",
+     "question": "两个相似三角形的面积比是 4 比 9，它们对应边的比是（　）"
+    },
+    {
+     "prompt": "两个相似三角形对应角平分线的比是 5 比 7，它们的面积比是多少？请写成 a:b 的形式",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "25:49",
+     "explanation": "对应角平分线是长度量，它之比等于相似比，所以相似比是 5 比 7。面积比等于相似比的平方，即 25 比 49，不能直接写成 5 比 7。",
+     "id": "mbj_p603_q6",
+     "topicId": "mbj_p603",
+     "subject": "math-bj",
+     "question": "两个相似三角形对应角平分线的比是 5 比 7，它们的面积比是多少？请写成 a:b 的形式"
+    },
+    {
+     "prompt": "请说明为什么相似三角形的面积比等于相似比的平方。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "设两个相似三角形的相似比为 k，则对应边之比为 k，对应边上的高之比也等于 k。面积等于底乘高的一半，底放大 k 倍、对应高也放大 k 倍，面积就放大 k 乘 k 即 k 的平方倍。所以相似三角形的面积比等于相似比的平方，而不是相似比本身。",
+     "explanation": "说明的落点是把面积拆成两个长度因子的乘积，分别按相似比变化，因此总面积按平方变化。只说结论而不交代高的比也是 k，就没有讲清理由。",
+     "id": "mbj_p603_q7",
+     "topicId": "mbj_p603",
+     "subject": "math-bj",
+     "question": "请说明为什么相似三角形的面积比等于相似比的平方。"
+    },
+    {
+     "prompt": "两个相似三角形的对应边分别是 6 和 9，小三角形的面积是 24，大三角形的面积是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "54",
+     "verify": "24*9/4",
+     "explanation": "对应边之比 6 比 9 化简为 2 比 3，所以相似比是 2 比 3，面积比是 4 比 9。设大三角形面积为 S，则 S 比 24 等于 9 比 4，解得 S 等于 54。",
+     "id": "mbj_p603_q8",
+     "topicId": "mbj_p603",
+     "subject": "math-bj",
+     "question": "两个相似三角形的对应边分别是 6 和 9，小三角形的面积是 24，大三角形的面积是多少？"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p604",
+   "name": "应用举例",
+   "level": "lesson",
+   "description": "运用相似三角形解决测量高度、测量距离和图纸缩放等实际问题：会用同一时刻物高与影长成比例、用镜面反射和标杆构相似三角形，并能处理比例尺问题。",
+   "mastery_criteria": [
+    "能识别实际情境中的两个相似三角形并写出对应边",
+    "能用影长、标杆或镜面反射求不可直接测量的高度",
+    "能按比例尺把图上距离、图上面积换算成实际量"
+   ],
+   "misconceptions": [
+    "把图上面积按一次比例尺换算，忽略面积要平方",
+    "找对应边时把人与镜子的距离去对应楼高",
+    "忘记同一时刻影长成比例的前提是光线平行"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "prompt": "同一时刻阳光下，物体的高度与影长成比例，这一结论的依据是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "相似三角形的对应边成比例"
+      },
+      {
+       "label": "B",
+       "text": "全等三角形的对应边相等"
+      },
+      {
+       "label": "C",
+       "text": "勾股定理"
+      },
+      {
+       "label": "D",
+       "text": "三角形内角和定理"
+      }
+     ],
+     "answer": "A",
+     "explanation": "太阳光线可看作平行光，物体与影子、光线构成的两个直角三角形有两组角相等，因而相似，对应边成比例，才有物高比影长等于物高比影长。全等、勾股定理和内角和定理都给不出这个比例关系。",
+     "id": "mbj_p604_q1",
+     "topicId": "mbj_p604",
+     "subject": "math-bj",
+     "question": "同一时刻阳光下，物体的高度与影长成比例，这一结论的依据是（　）"
+    },
+    {
+     "prompt": "一根 2 米高的标杆直立在地面上，影长是 3 米。同一时刻测得一棵树的影长是 12 米，这棵树高多少米？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "8",
+     "verify": "2*12/3",
+     "explanation": "同一时刻物高与影长成比例，所以树高比 12 等于 2 比 3，树高等于 12 乘 2 除以 3，等于 8 米。注意比例中物高与影长要一一对应。",
+     "id": "mbj_p604_q2",
+     "topicId": "mbj_p604",
+     "subject": "math-bj",
+     "question": "一根 2 米高的标杆直立在地面上，影长是 3 米。同一时刻测得一棵树的影长是 12 米，这棵树高多少米？"
+    },
+    {
+     "prompt": "一幅地图的比例尺是 1 比 50000，图上 3 厘米表示实际距离多少千米？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "1.5",
+     "explanation": "实际距离等于图上距离乘比例尺的分母，即 3 乘 50000 等于 150000 厘米。把厘米化成千米要除以 100000，得 1.5 千米。忘记换算单位就会答成 150000 千米。",
+     "id": "mbj_p604_q3",
+     "topicId": "mbj_p604",
+     "subject": "math-bj",
+     "question": "一幅地图的比例尺是 1 比 50000，图上 3 厘米表示实际距离多少千米？"
+    },
+    {
+     "prompt": "小明在离他 2 米处放一面镜子，眼睛距地面 1.6 米，他在镜中看到身后 20 米处大楼的顶端。求大楼的高度。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "16",
+     "verify": "1.6*20/2",
+     "explanation": "入射角等于反射角，人与镜子、镜子与大楼构成的两个直角三角形相似。设楼高为 h，则 h 比 1.6 等于 20 比 2，解得 h 等于 16 米。关键是距离要分别取人到镜子、镜子到楼。",
+     "id": "mbj_p604_q4",
+     "topicId": "mbj_p604",
+     "subject": "math-bj",
+     "question": "小明在离他 2 米处放一面镜子，眼睛距地面 1.6 米，他在镜中看到身后 20 米处大楼的顶端。求大楼的高度。"
+    },
+    {
+     "prompt": "要测河宽 AB，在河的一岸取点 C，使 AC 与 AB 垂直，测得 BC 等于 20 米，CD 等于 15 米，DE 等于 9 米，且 DE 平行于 AB，求河宽 AB。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "12",
+     "verify": "9*20/15",
+     "explanation": "因为 DE 平行于 AB，两个三角形相似，对应边成比例。由 AB 比 DE 等于 BC 比 CD，得 AB 比 9 等于 20 比 15，解得 AB 等于 12 米。比例中要把同一条直线上的对应线段配对。",
+     "id": "mbj_p604_q5",
+     "topicId": "mbj_p604",
+     "subject": "math-bj",
+     "question": "要测河宽 AB，在河的一岸取点 C，使 AC 与 AB 垂直，测得 BC 等于 20 米，CD 等于 15 米，DE 等于 9 米，且 DE 平行于 AB，求河宽 AB。"
+    },
+    {
+     "prompt": "一个三角形按 1 比 200 的比缩小后画在图纸上，图上面积是 5 平方厘米，实际面积是多少平方米？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "0.1 平方米"
+      },
+      {
+       "label": "B",
+       "text": "20 平方米"
+      },
+      {
+       "label": "C",
+       "text": "1 平方米"
+      },
+      {
+       "label": "D",
+       "text": "200 平方米"
+      }
+     ],
+     "answer": "B",
+     "explanation": "长度缩小到 200 分之 1，面积就缩小到 200 的平方分之一，即面积比是 1 比 40000。实际面积等于 5 乘 40000 等于 200000 平方厘米，换算成平方米是 20 平方米。只乘一次 200 会得到 0.1 平方米。",
+     "id": "mbj_p604_q6",
+     "topicId": "mbj_p604",
+     "subject": "math-bj",
+     "question": "一个三角形按 1 比 200 的比缩小后画在图纸上，图上面积是 5 平方厘米，实际面积是多少平方米？"
+    },
+    {
+     "prompt": "请设计一个用相似三角形测量学校旗杆高度的方案，写出需要的工具、测量步骤和计算式。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "工具：皮尺、一根已知长度的标杆。步骤：在阳光下把标杆竖直立在地面上，量出标杆高 a 和它的影长 b；同时量出旗杆的影长 c。因为同一时刻光线平行，标杆与影子、旗杆与影子构成的两个直角三角形相似，所以旗杆高 h 比 a 等于 c 比 b，得 h 等于 a 乘 c 除以 b。若影长不便测量，也可用镜子反射法，由眼睛高度、人到镜子的距离和镜子到旗杆的距离按对应边成比例求高。",
+     "explanation": "方案要包含工具、可操作的测量步骤和明确的计算式，并说明相似的理由，即同一时刻光线平行使两个直角三角形有两组角相等。只说用相似而不写对应关系就无法计算出结果。",
+     "id": "mbj_p604_q7",
+     "topicId": "mbj_p604",
+     "subject": "math-bj",
+     "question": "请设计一个用相似三角形测量学校旗杆高度的方案，写出需要的工具、测量步骤和计算式。"
+    },
+    {
+     "prompt": "已知 AB 平行于 CD，AC 与 BD 交于点 O，AB 等于 6，CD 等于 9，点 O 到 AB 的距离是 4，求点 O 到 CD 的距离。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "6",
+     "verify": "4*3/2",
+     "explanation": "由 AB 平行于 CD 得两个三角形相似，相似比等于 AB 比 CD 等于 2 比 3。对应高之比也等于相似比，设点 O 到 CD 的距离为 h，则 h 比 4 等于 3 比 2，解得 h 等于 6。若误用 4 乘 3 分之 2，就把相似比用反了。",
+     "id": "mbj_p604_q8",
+     "topicId": "mbj_p604",
+     "subject": "math-bj",
+     "question": "已知 AB 平行于 CD，AC 与 BD 交于点 O，AB 等于 6，CD 等于 9，点 O 到 AB 的距离是 4，求点 O 到 CD 的距离。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p605",
+   "name": "图形的位似",
+   "level": "lesson",
+   "description": "认识位似图形与位似中心，知道位似图形一定是相似图形、对应点连线经过位似中心，会用位似比把一个图形放大或缩小，并会在坐标系中按位似比求对应点的坐标。",
+   "mastery_criteria": [
+    "能说出位似图形的特征并指出位似中心",
+    "能按给定的位似比求出对应点的坐标",
+    "能说明位似比与面积比的关系"
+   ],
+   "misconceptions": [
+    "认为相似图形一定位似，忽略对应点连线要交于一点",
+    "用位似比求面积比时忘记平方",
+    "位似比为负数时把对应点画在同侧"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "prompt": "位似图形与相似图形关系密切，位似图形一定是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "全等图形"
+      },
+      {
+       "label": "B",
+       "text": "面积相等的图形"
+      },
+      {
+       "label": "C",
+       "text": "相似图形"
+      },
+      {
+       "label": "D",
+       "text": "周长相等的图形"
+      }
+     ],
+     "answer": "C",
+     "explanation": "位似是对应点连线都经过位似中心、对应边平行的相似图形，所以位似图形首先一定相似。位似比为 1 时才全等，位似比不为 1 时面积和周长都随位似比改变。",
+     "id": "mbj_p605_q1",
+     "topicId": "mbj_p605",
+     "subject": "math-bj",
+     "question": "位似图形与相似图形关系密切，位似图形一定是（　）"
+    },
+    {
+     "prompt": "位似图形中，对应点所在的直线都经过同一个点，这个点叫做什么？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "位似中心",
+     "explanation": "位似中心是位似图形对应点连线的交点，它决定了放大或缩小的位置。作位似图形时先确定位似中心，再按位似比在射线上截取对应点。",
+     "id": "mbj_p605_q2",
+     "topicId": "mbj_p605",
+     "subject": "math-bj",
+     "question": "位似图形中，对应点所在的直线都经过同一个点，这个点叫做什么？"
+    },
+    {
+     "prompt": "以原点为位似中心，位似比为 3，把点 A（1，2）放大，点 A 的对应点的横坐标是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "3",
+     "verify": "1*3",
+     "explanation": "以原点为位似中心、位似比为 k 时，对应点的坐标等于原坐标乘 k。横坐标 1 乘 3 等于 3，纵坐标 2 乘 3 等于 6，所以对应点是（3，6）。",
+     "id": "mbj_p605_q3",
+     "topicId": "mbj_p605",
+     "subject": "math-bj",
+     "question": "以原点为位似中心，位似比为 3，把点 A（1，2）放大，点 A 的对应点的横坐标是多少？"
+    },
+    {
+     "prompt": "位似比为 2 的两个位似图形，它们的面积比是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "2:1"
+      },
+      {
+       "label": "B",
+       "text": "1:2"
+      },
+      {
+       "label": "C",
+       "text": "8:1"
+      },
+      {
+       "label": "D",
+       "text": "4:1"
+      }
+     ],
+     "answer": "D",
+     "explanation": "位似图形是相似图形，相似比等于位似比，而面积比等于相似比的平方。位似比为 2 时面积比是 4 比 1；写 2 比 1 是漏了平方，写 1 比 2 是把两个图形的大小顺序弄反了。",
+     "id": "mbj_p605_q4",
+     "topicId": "mbj_p605",
+     "subject": "math-bj",
+     "question": "位似比为 2 的两个位似图形，它们的面积比是（　）"
+    },
+    {
+     "prompt": "以原点为位似中心，位似比为负 2，点 P（1，3）的对应点是 P 撇，求 P 撇的横坐标与纵坐标之和。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "-8",
+     "verify": "(-2)+(-6)",
+     "explanation": "位似比为负 2 表示对应点在位似中心的两侧，坐标要同时乘负 2。P 撇的坐标是（负 2，负 6），横纵坐标之和等于负 8。漏掉负号就会得到正数，图形会画在同侧。",
+     "id": "mbj_p605_q5",
+     "topicId": "mbj_p605",
+     "subject": "math-bj",
+     "question": "以原点为位似中心，位似比为负 2，点 P（1，3）的对应点是 P 撇，求 P 撇的横坐标与纵坐标之和。"
+    },
+    {
+     "prompt": "关于位似图形与相似图形的关系，下列说法正确的是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "位似图形一定相似，相似图形不一定位似"
+      },
+      {
+       "label": "B",
+       "text": "相似图形一定位似"
+      },
+      {
+       "label": "C",
+       "text": "位似图形一定全等"
+      },
+      {
+       "label": "D",
+       "text": "位似比一定等于 1"
+      }
+     ],
+     "answer": "A",
+     "explanation": "位似的定义在相似之外还要求对应点连线交于一点、对应边平行，所以位似图形一定相似；反过来把两个相似图形随意摆放，对应点连线未必交于一点，就不成位似。位似比为 1 时才是全等。",
+     "id": "mbj_p605_q6",
+     "topicId": "mbj_p605",
+     "subject": "math-bj",
+     "question": "关于位似图形与相似图形的关系，下列说法正确的是（　）"
+    },
+    {
+     "prompt": "请说明以点 O 为位似中心，把一个三角形 ABC 放大为原来的 2 倍（位似比 2）的作图步骤。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "第一步，在点 O 与顶点 A 的连线上，从点 O 出发沿 OA 方向截取 OA 撇等于 2 倍的 OA，得到 A 撇；第二步，用同样的方法作出 B 撇、C 撇，使 OB 撇等于 2 倍的 OB，OC 撇等于 2 倍的 OC；第三步，顺次连接 A 撇、B 撇、C 撇，所得三角形就是所求图形。三角形 A 撇 B 撇 C 撇与原三角形位似，位似中心是点 O，位似比为 2，对应边互相平行。",
+     "explanation": "作图的关键是先在每条射线上按位似比确定对应顶点，再连线成图。步骤中必须写明位似中心、位似比和对应边平行，否则无法说明所得图形确实与原图形位似。",
+     "id": "mbj_p605_q7",
+     "topicId": "mbj_p605",
+     "subject": "math-bj",
+     "question": "请说明以点 O 为位似中心，把一个三角形 ABC 放大为原来的 2 倍（位似比 2）的作图步骤。"
+    },
+    {
+     "prompt": "一个图形按位似比 1 比 2 缩小后，得到的图形面积是 12，原图形的面积是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "48",
+     "verify": "12*4",
+     "explanation": "位似比 1 比 2 时面积比是 1 比 4，新图形面积是原图形的 4 分之 1。原图形面积等于 12 乘 4 等于 48。直接用 12 乘 2 是只把面积当一次量处理，会得到错误结果。",
+     "id": "mbj_p605_q8",
+     "topicId": "mbj_p605",
+     "subject": "math-bj",
+     "question": "一个图形按位似比 1 比 2 缩小后，得到的图形面积是 12，原图形的面积是多少？"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p606",
+   "name": "二次函数和反比例函数",
+   "level": "unit",
+   "description": "认识二次函数和反比例函数这两种基本函数，了解它们的一般形式与图象特征，会用配方求二次函数顶点、用描点法画反比例函数图象，并用它们刻画变化规律和解决简单实际问题。",
+   "mastery_criteria": [
+    "能写出二次函数和反比例函数的一般形式并指出限制条件",
+    "能说出抛物线与双曲线的形状特点",
+    "能用顶点坐标求二次函数的最值"
+   ],
+   "misconceptions": [
+    "把 a 等于零时的 y 等于 b 乘 x 加 c 当成二次函数",
+    "认为反比例函数的图象是一条直线",
+    "把顶点坐标的横纵坐标写反"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "prompt": "下列函数中，是二次函数的是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "y 等于 x 分之 2"
+      },
+      {
+       "label": "B",
+       "text": "y 等于 x 的平方 减 3"
+      },
+      {
+       "label": "C",
+       "text": "y 等于 2x 加 1"
+      },
+      {
+       "label": "D",
+       "text": "y 等于 x 的三次方"
+      }
+     ],
+     "answer": "B",
+     "explanation": "二次函数是形如 y 等于 a 乘 x 的平方 加 b 乘 x 加 c、且 a 不等于零的函数，自变量的最高次数是 2。第二项是反比例函数，第三项是一次函数，第四项为三次，都不符合。",
+     "id": "mbj_p606_q1",
+     "topicId": "mbj_p606",
+     "subject": "math-bj",
+     "question": "下列函数中，是二次函数的是（　）"
+    },
+    {
+     "prompt": "形如 y 等于 a 乘 x 的平方 加 b 乘 x 加 c（a、b、c 是常数，且 a 不等于零）的函数，叫做什么函数？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "二次",
+     "explanation": "这是二次函数的一般式，条件是 a 不等于零，否则二次项消失就退化为一次函数。这也是判断一个函数是不是二次函数时首先要检查的地方。",
+     "id": "mbj_p606_q2",
+     "topicId": "mbj_p606",
+     "subject": "math-bj",
+     "question": "形如 y 等于 a 乘 x 的平方 加 b 乘 x 加 c（a、b、c 是常数，且 a 不等于零）的函数，叫做什么函数？"
+    },
+    {
+     "prompt": "反比例函数 y 等于 x 分之 k（k 不等于零）的图象是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "一条直线"
+      },
+      {
+       "label": "B",
+       "text": "抛物线"
+      },
+      {
+       "label": "C",
+       "text": "双曲线"
+      },
+      {
+       "label": "D",
+       "text": "一个圆"
+      }
+     ],
+     "answer": "C",
+     "explanation": "反比例函数的图象是两支分开的曲线，称为双曲线。k 大于零时两支分别在第一、三象限，k 小于零时两支分别在第二、四象限。一次函数的图象才是直线，二次函数的图象是抛物线。",
+     "id": "mbj_p606_q3",
+     "topicId": "mbj_p606",
+     "subject": "math-bj",
+     "question": "反比例函数 y 等于 x 分之 k（k 不等于零）的图象是（　）"
+    },
+    {
+     "prompt": "抛物线 y 等于 x 的平方 减 4x 加 5 配方后为 y 等于 (x 减 2) 的平方 加 1，它的顶点的纵坐标是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "1",
+     "verify": "5-4",
+     "explanation": "配方后括号外那个常数就是顶点的纵坐标，等于 1；括号内取零时的 x 值 2 是顶点的横坐标。所以顶点坐标是（2，1），抛物线开口向上，最小值为 1。",
+     "id": "mbj_p606_q4",
+     "topicId": "mbj_p606",
+     "subject": "math-bj",
+     "question": "抛物线 y 等于 x 的平方 减 4x 加 5 配方后为 y 等于 (x 减 2) 的平方 加 1，它的顶点的纵坐标是多少？"
+    },
+    {
+     "prompt": "二次函数和反比例函数的变化有什么不同？请结合图象说明，并各举一个实际例子。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "二次函数的图象是抛物线，y 随 x 的变化先减后增或先增后减，存在最大值或最小值，变化有顶点这个转折。反比例函数的图象是双曲线，在 k 大于零时每个象限内 y 随 x 增大而减小，并无限接近坐标轴但不相交。例如用二次函数求最大面积，用反比例函数表示面积一定时矩形的长与宽的关系。",
+     "explanation": "比较要落到图象形状、增减性和是否有最值三方面，并各配一个实际问题。只说一个函数有最值而不说明另一个没有，就体现不出两者变化规律的区别。",
+     "id": "mbj_p606_q5",
+     "topicId": "mbj_p606",
+     "subject": "math-bj",
+     "question": "二次函数和反比例函数的变化有什么不同？请结合图象说明，并各举一个实际例子。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p607",
+   "name": "二次函数",
+   "level": "lesson",
+   "description": "理解二次函数的概念，会从实际问题中列出二次函数关系式，能写出一般式并指出二次项系数、一次项系数和常数项，会根据 a 不等于零的条件确定字母的取值范围。",
+   "mastery_criteria": [
+    "能判断一个函数式是否为二次函数",
+    "能从面积、增长率等情境中列出二次函数关系式",
+    "能由 a 不等于零求字母参数不能取的值"
+   ],
+   "misconceptions": [
+    "列式时忘记把自变量写成同一个字母，出现两个变量",
+    "增长率问题里把两次变化写成 1 减 2x",
+    "忽略 a 不等于零这一限制，把参数取成使二次项为零的值"
+   ],
+   "std": {
+    "id": "mat-2022:4.NR.04",
+    "quote": "通过对实际问题的分析，体会二次函数的意义"
+   },
+   "questions": [
+    {
+     "prompt": "下列函数中是二次函数的是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "y 等于 3x 减 1"
+      },
+      {
+       "label": "B",
+       "text": "y 等于 x 分之 3"
+      },
+      {
+       "label": "C",
+       "text": "y 等于 x 的平方 分之 1"
+      },
+      {
+       "label": "D",
+       "text": "y 等于 3 乘 x 的平方 减 1"
+      }
+     ],
+     "answer": "D",
+     "explanation": "二次函数要求化简后自变量的最高次数为 2，且二次项系数不为零。第一项符合；第二项是一次函数；第三、四项含分式，不是整式函数，也就不是二次函数。",
+     "id": "mbj_p607_q1",
+     "topicId": "mbj_p607",
+     "subject": "math-bj",
+     "question": "下列函数中是二次函数的是（　）"
+    },
+    {
+     "prompt": "二次函数 y 等于 2 乘 x 的平方 减 3x 加 1 中，二次项系数是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "2",
+     "explanation": "在一般式 y 等于 a 乘 x 的平方 加 b 乘 x 加 c 中，a 是二次项系数，对应这里的 2；负 3 是一次项系数，1 是常数项。取系数时要连同它前面的符号一起看。",
+     "id": "mbj_p607_q2",
+     "topicId": "mbj_p607",
+     "subject": "math-bj",
+     "question": "二次函数 y 等于 2 乘 x 的平方 减 3x 加 1 中，二次项系数是多少？"
+    },
+    {
+     "prompt": "若函数 y 等于 (m 减 1) 乘 x 的平方 加 x 是二次函数，则 m 不能取的值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "1",
+     "verify": "2-1",
+     "explanation": "二次函数要求二次项系数不为零，即 m 减 1 不等于零，所以 m 不等于 1。当 m 等于 1 时二次项消失，函数变成 y 等于 x 的一次函数，不再是二次函数。",
+     "id": "mbj_p607_q3",
+     "topicId": "mbj_p607",
+     "subject": "math-bj",
+     "question": "若函数 y 等于 (m 减 1) 乘 x 的平方 加 x 是二次函数，则 m 不能取的值是多少？"
+    },
+    {
+     "prompt": "用长 20 米的篱笆围成一个矩形，一边长为 x 米，面积为 S 平方米，S 等于 x 乘 (10 减 x)。当 x 等于 3 时，S 是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "21",
+     "verify": "3*(10-3)",
+     "explanation": "把 x 等于 3 代入关系式，S 等于 3 乘 (10 减 3) 等于 3 乘 7 等于 21，单位是平方米。这里 10 是周长的一半，代表相邻两边长度之和，不能把 20 直接代入。",
+     "id": "mbj_p607_q4",
+     "topicId": "mbj_p607",
+     "subject": "math-bj",
+     "question": "用长 20 米的篱笆围成一个矩形，一边长为 x 米，面积为 S 平方米，S 等于 x 乘 (10 减 x)。当 x 等于 3 时，S 是多少？"
+    },
+    {
+     "prompt": "某商品原价 100 元，连续两次降价，每次降价的百分率都是 x，则现价 y 与 x 的关系式是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "y 等于 100 乘 (1 减 x) 的平方"
+      },
+      {
+       "label": "B",
+       "text": "y 等于 100 乘 (1 减 2x)"
+      },
+      {
+       "label": "C",
+       "text": "y 等于 100 减 2x"
+      },
+      {
+       "label": "D",
+       "text": "y 等于 100 乘 (1 加 x) 的平方"
+      }
+     ],
+     "answer": "A",
+     "explanation": "第一次降价后是 100 乘 (1 减 x)，第二次在这个结果上再乘 (1 减 x)，所以现价是 100 乘 (1 减 x) 的平方。写成 1 减 2x 是把两次百分率直接相加，忽略了降价是在降价后的价格上进行的。",
+     "id": "mbj_p607_q5",
+     "topicId": "mbj_p607",
+     "subject": "math-bj",
+     "question": "某商品原价 100 元，连续两次降价，每次降价的百分率都是 x，则现价 y 与 x 的关系式是（　）"
+    },
+    {
+     "prompt": "若函数 y 等于 (a 减 2) 乘 x 的平方 加 3x 减 1 是二次函数，则 a 应满足的条件是什么？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "a 不等于 2",
+     "explanation": "由二次函数的定义，二次项系数 a 减 2 不等于零，解得 a 不等于 2。当 a 等于 2 时二次项被消掉，函数变成一次函数，这与题设的二次函数矛盾。",
+     "id": "mbj_p607_q6",
+     "topicId": "mbj_p607",
+     "subject": "math-bj",
+     "question": "若函数 y 等于 (a 减 2) 乘 x 的平方 加 3x 减 1 是二次函数，则 a 应满足的条件是什么？"
+    },
+    {
+     "prompt": "用 40 米长的篱笆靠墙围一个矩形菜地，墙作为矩形的一边。设垂直于墙的边长为 x 米，请写出面积 S 与 x 的关系式，并说明 x 的取值范围。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "平行于墙的那条边长为 40 减 2x 米，所以面积 S 等于 x 乘 (40 减 2x)，整理得 S 等于 负 2 乘 x 的平方 加 40x。边长必须为正数，故 x 大于 0；同时 40 减 2x 也要大于 0，解得 x 小于 20，所以 x 的取值范围是大于 0 且小于 20。当 x 等于 10 时面积最大，最大值为 200 平方米。",
+     "explanation": "靠墙围矩形时只有三条边用篱笆，所以平行于墙的边是 40 减 2x，这是最容易出错的地方。取值范围的依据是两条边长都必须为正，两个不等式同时成立取交集。",
+     "id": "mbj_p607_q7",
+     "topicId": "mbj_p607",
+     "subject": "math-bj",
+     "question": "用 40 米长的篱笆靠墙围一个矩形菜地，墙作为矩形的一边。设垂直于墙的边长为 x 米，请写出面积 S 与 x 的关系式，并说明 x 的取值范围。"
+    },
+    {
+     "prompt": "某工厂产量两年内从 50 万件增长到 72 万件，若年平均增长率相同，求这个增长率。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "0.2",
+     "verify": "1.2-1",
+     "explanation": "设年平均增长率为 x，则 50 乘 (1 加 x) 的平方等于 72，得 (1 加 x) 的平方等于 1.44，所以 1 加 x 等于 1.2，x 等于 0.2，即年平均增长率为百分之二十。增长率的式子必须写成 (1 加 x) 的平方，写成 1 加 2x 会算错。",
+     "id": "mbj_p607_q8",
+     "topicId": "mbj_p607",
+     "subject": "math-bj",
+     "question": "某工厂产量两年内从 50 万件增长到 72 万件，若年平均增长率相同，求这个增长率。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p608",
+   "name": "二次函数 y",
+   "level": "lesson",
+   "description": "研究二次函数 y 等于 a 乘 x 的平方 的图象和性质：图象是顶点在原点的抛物线，a 大于零开口向上、a 小于零开口向下，对称轴是 y 轴，a 的绝对值越大开口越窄。",
+   "mastery_criteria": [
+    "能说出抛物线 y 等于 a 乘 x 的平方 的顶点与对称轴",
+    "能由 a 的符号判断开口方向、由绝对值判断开口大小",
+    "能由图象上一点的坐标求出 a 的值"
+   ],
+   "misconceptions": [
+    "把开口方向与 a 的绝对值大小联系起来",
+    "认为 a 的绝对值越大开口越宽",
+    "由点求 a 时把横纵坐标的位置代反"
+   ],
+   "std": {
+    "id": "mat-2022:4.XY.02",
+    "quote": "能由此得出二次函数图象的顶点坐标，说出图象的开口方向，画出图象的对称轴"
+   },
+   "questions": [
+    {
+     "prompt": "抛物线 y 等于 3 乘 x 的平方 的开口方向是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "向下"
+      },
+      {
+       "label": "B",
+       "text": "向上"
+      },
+      {
+       "label": "C",
+       "text": "向左"
+      },
+      {
+       "label": "D",
+       "text": "向右"
+      }
+     ],
+     "answer": "B",
+     "explanation": "抛物线 y 等于 a 乘 x 的平方 的开口方向只由 a 的符号决定，a 大于零开口向上，a 小于零开口向下。这里 a 等于 3 是正数，所以开口向上。抛物线不会向左或向右开口。",
+     "id": "mbj_p608_q1",
+     "topicId": "mbj_p608",
+     "subject": "math-bj",
+     "question": "抛物线 y 等于 3 乘 x 的平方 的开口方向是（　）"
+    },
+    {
+     "prompt": "抛物线 y 等于 负 2 乘 x 的平方 的顶点坐标是什么？请写成（横坐标，纵坐标）的形式",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "(0,0)",
+     "explanation": "y 等于 a 乘 x 的平方 型的抛物线顶点都在原点，对称轴是 y 轴，与 a 的正负无关，a 只影响开口方向和开口大小。所以顶点坐标是（0，0）。",
+     "id": "mbj_p608_q2",
+     "topicId": "mbj_p608",
+     "subject": "math-bj",
+     "question": "抛物线 y 等于 负 2 乘 x 的平方 的顶点坐标是什么？请写成（横坐标，纵坐标）的形式"
+    },
+    {
+     "prompt": "已知抛物线 y 等于 x 的平方，当 x 等于 3 时，y 的值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "9",
+     "verify": "3*3",
+     "explanation": "把 x 等于 3 代入 y 等于 x 的平方，得 y 等于 3 乘 3 等于 9。点（3，9）在抛物线上，与（负 3，9）关于 y 轴对称，这正是抛物线对称性的体现。",
+     "id": "mbj_p608_q3",
+     "topicId": "mbj_p608",
+     "subject": "math-bj",
+     "question": "已知抛物线 y 等于 x 的平方，当 x 等于 3 时，y 的值是多少？"
+    },
+    {
+     "prompt": "在抛物线 y 等于 a 乘 x 的平方 中，a 的绝对值越大，抛物线的开口（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "越宽"
+      },
+      {
+       "label": "B",
+       "text": "保持不变"
+      },
+      {
+       "label": "C",
+       "text": "越窄"
+      },
+      {
+       "label": "D",
+       "text": "方向发生改变"
+      }
+     ],
+     "answer": "C",
+     "explanation": "a 的绝对值越大，同样的 x 对应的 y 的绝对值越大，图象上升或下降得越快，开口就越窄；a 的绝对值越小，开口越宽。开口方向只由 a 的正负决定，与绝对值大小无关。",
+     "id": "mbj_p608_q4",
+     "topicId": "mbj_p608",
+     "subject": "math-bj",
+     "question": "在抛物线 y 等于 a 乘 x 的平方 中，a 的绝对值越大，抛物线的开口（　）"
+    },
+    {
+     "prompt": "抛物线 y 等于 x 的平方 与 y 等于 负 x 的平方 的图象（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "关于 y 轴对称"
+      },
+      {
+       "label": "B",
+       "text": "完全重合"
+      },
+      {
+       "label": "C",
+       "text": "关于直线 y 等于 x 对称"
+      },
+      {
+       "label": "D",
+       "text": "关于 x 轴对称"
+      }
+     ],
+     "answer": "D",
+     "explanation": "对同一个 x，两个函数值互为相反数，即点（x，y）与（x，负 y）同时在两条抛物线上，所以两条抛物线关于 x 轴对称。它们开口方向相反，不可能重合，也不是关于 y 轴对称。",
+     "id": "mbj_p608_q5",
+     "topicId": "mbj_p608",
+     "subject": "math-bj",
+     "question": "抛物线 y 等于 x 的平方 与 y 等于 负 x 的平方 的图象（　）"
+    },
+    {
+     "prompt": "抛物线 y 等于 2 乘 x 的平方 的对称轴是什么？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "y 轴",
+     "explanation": "y 等于 a 乘 x 的平方 型的抛物线顶点在原点，对称轴就是 y 轴，也叫直线 x 等于 0。检验的方法是取 x 与负 x，函数值相等，说明图象关于 y 轴对称。",
+     "id": "mbj_p608_q6",
+     "topicId": "mbj_p608",
+     "subject": "math-bj",
+     "question": "抛物线 y 等于 2 乘 x 的平方 的对称轴是什么？"
+    },
+    {
+     "prompt": "比较抛物线 y 等于 3 乘 x 的平方 与 y 等于 3 分之 1 乘 x 的平方 的图象，说明开口大小与系数 a 的关系，并写出这两条抛物线的增减性。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "两条抛物线都开口向上，顶点都在原点，对称轴都是 y 轴。y 等于 3 乘 x 的平方 的二次项系数绝对值较大，图象更陡、开口更窄；y 等于 3 分之 1 乘 x 的平方 的系数绝对值较小，图象更平缓、开口更宽。所以 a 的绝对值越大开口越窄。两条抛物线在 y 轴左侧都是 y 随 x 增大而减小，在 y 轴右侧都是 y 随 x 增大而增大。",
+     "explanation": "比较要从开口方向、开口宽窄和增减性三方面展开，并把宽窄与 a 的绝对值挂钩。只说一条陡一条平而不给出规律，就没有答到点上。",
+     "id": "mbj_p608_q7",
+     "topicId": "mbj_p608",
+     "subject": "math-bj",
+     "question": "比较抛物线 y 等于 3 乘 x 的平方 与 y 等于 3 分之 1 乘 x 的平方 的图象，说明开口大小与系数 a 的关系，并写出这两条抛物线的增减性。"
+    },
+    {
+     "prompt": "已知抛物线 y 等于 a 乘 x 的平方 经过点（2，负 8），求 a 的值。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "-2",
+     "verify": "-8/4",
+     "explanation": "把点（2，负 8）代入 y 等于 a 乘 x 的平方，得负 8 等于 a 乘 2 的平方，即负 8 等于 4a，所以 a 等于负 2。代点时横坐标平方后乘 a，把 2 和负 8 的位置代反就会得到错误结果。",
+     "id": "mbj_p608_q8",
+     "topicId": "mbj_p608",
+     "subject": "math-bj",
+     "question": "已知抛物线 y 等于 a 乘 x 的平方 经过点（2，负 8），求 a 的值。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p609",
+   "name": "二次函数的性质",
+   "level": "lesson",
+   "description": "掌握二次函数 y 等于 a 乘 (x 减 h) 的平方 加 k 的性质：顶点为（h，k）、对称轴为直线 x 等于 h，会用配方法把一般式化成顶点式，并据此求最值和判断增减性。",
+   "mastery_criteria": [
+    "能由顶点式直接写出顶点坐标与对称轴",
+    "能用配方法把二次函数化成顶点式并求最值",
+    "能根据对称轴判断函数的增减区间"
+   ],
+   "misconceptions": [
+    "把顶点式中的 h 的符号照抄，写成 x 等于负 h",
+    "求最值时忘记 a 的正负决定是最大值还是最小值",
+    "配方时漏掉常数项的调整，直接抄原常数项"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "prompt": "抛物线 y 等于 (x 减 3) 的平方 加 2 的对称轴是（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "直线 x 等于 3"
+      },
+      {
+       "label": "B",
+       "text": "直线 x 等于 负 3"
+      },
+      {
+       "label": "C",
+       "text": "直线 x 等于 2"
+      },
+      {
+       "label": "D",
+       "text": "y 轴"
+      }
+     ],
+     "answer": "A",
+     "explanation": "顶点式中括号内取零时的 x 值就是对称轴，由 x 减 3 等于 0 得 x 等于 3。写成 x 等于负 3 是把括号里的减号当成了加号，写成 x 等于 2 是把纵坐标当成了横坐标。",
+     "id": "mbj_p609_q1",
+     "topicId": "mbj_p609",
+     "subject": "math-bj",
+     "question": "抛物线 y 等于 (x 减 3) 的平方 加 2 的对称轴是（　）"
+    },
+    {
+     "prompt": "抛物线 y 等于 2 乘 (x 加 1) 的平方 减 5 的顶点坐标是什么？请写成（横坐标，纵坐标）的形式",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "(-1,-5)",
+     "explanation": "顶点式 y 等于 a 乘 (x 减 h) 的平方 加 k 的顶点是（h，k）。这里括号内是 x 加 1，即 x 减负 1，所以 h 等于负 1；括号外是减 5，所以 k 等于负 5，顶点为（负 1，负 5）。",
+     "id": "mbj_p609_q2",
+     "topicId": "mbj_p609",
+     "subject": "math-bj",
+     "question": "抛物线 y 等于 2 乘 (x 加 1) 的平方 减 5 的顶点坐标是什么？请写成（横坐标，纵坐标）的形式"
+    },
+    {
+     "prompt": "二次函数 y 等于 x 的平方 减 6x 加 5 的最小值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "-4",
+     "verify": "5-9",
+     "explanation": "配方得 y 等于 (x 减 3) 的平方 减 4，因为 a 等于 1 大于零，抛物线开口向上，顶点处取得最小值，最小值为负 4。若开口向下，顶点处对应的就是最大值。",
+     "id": "mbj_p609_q3",
+     "topicId": "mbj_p609",
+     "subject": "math-bj",
+     "question": "二次函数 y 等于 x 的平方 减 6x 加 5 的最小值是多少？"
+    },
+    {
+     "prompt": "二次函数 y 等于 负 x 的平方 加 4x 的最大值是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "负 4"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "0"
+      }
+     ],
+     "answer": "B",
+     "explanation": "配方得 y 等于 负 (x 减 2) 的平方 加 4。因为 a 等于负 1 小于零，抛物线开口向下，顶点（2，4）处取得最大值 4。写成负 4 是把纵坐标的符号弄错，写成 2 是错取了横坐标。",
+     "id": "mbj_p609_q4",
+     "topicId": "mbj_p609",
+     "subject": "math-bj",
+     "question": "二次函数 y 等于 负 x 的平方 加 4x 的最大值是（　）"
+    },
+    {
+     "prompt": "抛物线 y 等于 x 的平方 减 2x 减 3 的顶点的横坐标是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "1",
+     "verify": "2/2",
+     "explanation": "用配方法得 y 等于 (x 减 1) 的平方 减 4，所以顶点横坐标是 1。也可以直接用顶点横坐标公式：负 2a 分之 b，等于负 2 分之负 2，等于 1。",
+     "id": "mbj_p609_q5",
+     "topicId": "mbj_p609",
+     "subject": "math-bj",
+     "question": "抛物线 y 等于 x 的平方 减 2x 减 3 的顶点的横坐标是多少？"
+    },
+    {
+     "prompt": "二次函数 y 等于 3 乘 (x 减 2) 的平方 加 1，当 x 满足什么条件时，y 随 x 的增大而增大？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "x 大于 2",
+     "explanation": "抛物线开口向上，对称轴是直线 x 等于 2，在对称轴右侧 y 随 x 增大而增大，所以当 x 大于 2 时 y 随 x 增大而增大。在对称轴左侧则是 y 随 x 增大而减小，两侧不能用同一个结论。",
+     "id": "mbj_p609_q6",
+     "topicId": "mbj_p609",
+     "subject": "math-bj",
+     "question": "二次函数 y 等于 3 乘 (x 减 2) 的平方 加 1，当 x 满足什么条件时，y 随 x 的增大而增大？"
+    },
+    {
+     "prompt": "已知抛物线经过点（0，3）、（1，0）、（3，0），求它的解析式，并写出顶点坐标。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为（1，0）与（3，0）是与 x 轴的交点，设 y 等于 a 乘 (x 减 1)(x 减 3)。代入点（0，3）得 3 等于 a 乘 (0 减 1)(0 减 3) 等于 3a，所以 a 等于 1，解析式为 y 等于 x 的平方 减 4x 加 3。配方得 y 等于 (x 减 2) 的平方 减 1，顶点坐标是（2，负 1）。",
+     "explanation": "已知与 x 轴的两个交点时用交点式设解析式最简便，再代入第三个点定出 a。最后必须配方或代公式求出顶点，只写出解析式而没有顶点坐标就不完整。",
+     "id": "mbj_p609_q7",
+     "topicId": "mbj_p609",
+     "subject": "math-bj",
+     "question": "已知抛物线经过点（0，3）、（1，0）、（3，0），求它的解析式，并写出顶点坐标。"
+    },
+    {
+     "prompt": "二次函数 y 等于 x 的平方 加 bx 加 c 的图象顶点是（2，1），求 c 的值。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "5",
+     "verify": "1+4",
+     "explanation": "顶点为（2，1）说明 h 等于 2、k 等于 1，解析式可写成 y 等于 (x 减 2) 的平方 加 1，展开得 y 等于 x 的平方 减 4x 加 5，所以 c 等于 5。也可以由对称轴负 2 分之 b 等于 2 得 b 等于负 4，再把点（2，1）代入求 c。",
+     "id": "mbj_p609_q8",
+     "topicId": "mbj_p609",
+     "subject": "math-bj",
+     "question": "二次函数 y 等于 x 的平方 加 bx 加 c 的图象顶点是（2，1），求 c 的值。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p610",
+   "name": "二次函数的应用",
+   "level": "lesson",
+   "description": "运用二次函数解决最大面积、最大利润等实际问题：会设自变量、建立函数关系式、确定自变量的取值范围，再用顶点求最值并检验结果是否符合实际意义。",
+   "mastery_criteria": [
+    "能把面积或利润表示为关于自变量的二次函数",
+    "能由顶点求出实际问题中的最大值并写出对应自变量",
+    "能根据实际意义确定自变量的取值范围"
+   ],
+   "misconceptions": [
+    "只求顶点而不检查自变量是否在取值范围内",
+    "建立利润式时把销量与单价的关系写反",
+    "把周长的数值直接当成一条边长的两倍用错"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "prompt": "用二次函数解决最大面积、最大利润问题时，通常先建立函数关系式，再利用（　）求最值",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "图象与 y 轴的交点"
+      },
+      {
+       "label": "B",
+       "text": "图象与 x 轴的交点"
+      },
+      {
+       "label": "C",
+       "text": "顶点的纵坐标"
+      },
+      {
+       "label": "D",
+       "text": "二次项系数"
+      }
+     ],
+     "answer": "C",
+     "explanation": "二次函数在顶点处取得最大值或最小值，所以最值就是顶点的纵坐标，对应的自变量是顶点的横坐标。与坐标轴的交点只能说明取值为零的位置，二次项系数只决定开口方向和宽窄，都不是最值。",
+     "id": "mbj_p610_q1",
+     "topicId": "mbj_p610",
+     "subject": "math-bj",
+     "question": "用二次函数解决最大面积、最大利润问题时，通常先建立函数关系式，再利用（　）求最值"
+    },
+    {
+     "prompt": "用 20 米长的绳子围成一个矩形，一边长为 x 米，面积 S 等于 x 乘 (10 减 x) 平方米。S 的最大值是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "25",
+     "verify": "5*5",
+     "explanation": "S 等于 x 乘 (10 减 x) 等于 负 x 的平方 加 10x，配方得 S 等于 负 (x 减 5) 的平方 加 25。当 x 等于 5 时 S 取最大值 25，此时矩形是边长 5 米的正方形，符合周长 20 米的条件。",
+     "id": "mbj_p610_q2",
+     "topicId": "mbj_p610",
+     "subject": "math-bj",
+     "question": "用 20 米长的绳子围成一个矩形，一边长为 x 米，面积 S 等于 x 乘 (10 减 x) 平方米。S 的最大值是多少？"
+    },
+    {
+     "prompt": "二次函数 y 等于 负 (x 减 4) 的平方 加 16 的最大值是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "16",
+     "explanation": "因为 a 等于负 1 小于零，抛物线开口向下，顶点处取得最大值。顶点是（4，16），所以最大值是 16，在 x 等于 4 时取得。若不看 a 的符号，容易误把顶点纵坐标当成最小值。",
+     "id": "mbj_p610_q3",
+     "topicId": "mbj_p610",
+     "subject": "math-bj",
+     "question": "二次函数 y 等于 负 (x 减 4) 的平方 加 16 的最大值是多少？"
+    },
+    {
+     "prompt": "某商品进价每件 40 元，售价每件 50 元时每天卖出 100 件。每涨价 1 元，每天少卖 5 件。设售价为 x 元，则每天利润为 (x 减 40)(350 减 5x) 元。当 x 等于 55 时，每天的利润是多少元？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "1125",
+     "verify": "15*75",
+     "explanation": "把 x 等于 55 代入，每件利润是 55 减 40 等于 15 元，销量是 350 减 5 乘 55 等于 350 减 275 等于 75 件，所以每天利润是 15 乘 75 等于 1125 元。销量式中的 350 来自原售价 50 元时的 100 件再加上 50 乘 5。",
+     "id": "mbj_p610_q4",
+     "topicId": "mbj_p610",
+     "subject": "math-bj",
+     "question": "某商品进价每件 40 元，售价每件 50 元时每天卖出 100 件。每涨价 1 元，每天少卖 5 件。设售价为 x 元，则每天利润为 (x 减 40)(350 减 5x) 元。当 x 等于 55 时，每天的利润是多少元？"
+    },
+    {
+     "prompt": "用 30 米长的篱笆围成一个矩形，这个矩形的最大面积是多少平方米？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "50"
+      },
+      {
+       "label": "B",
+       "text": "112.5"
+      },
+      {
+       "label": "C",
+       "text": "225"
+      },
+      {
+       "label": "D",
+       "text": "56.25"
+      }
+     ],
+     "answer": "D",
+     "explanation": "周长 30 米时相邻两边之和是 15 米，设一边为 x，面积为 x 乘 (15 减 x)，配方得负 (x 减 7.5) 的平方 加 56.25，所以最大面积是 56.25 平方米，此时是边长 7.5 米的正方形。答 225 是把半周长当成了整周长。",
+     "id": "mbj_p610_q5",
+     "topicId": "mbj_p610",
+     "subject": "math-bj",
+     "question": "用 30 米长的篱笆围成一个矩形，这个矩形的最大面积是多少平方米？"
+    },
+    {
+     "prompt": "二次函数 y 等于 x 的平方 减 4x 加 7 的最小值是多少？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "3",
+     "explanation": "配方得 y 等于 (x 减 2) 的平方 加 3。因为 a 等于 1 大于零，抛物线开口向上，顶点（2，3）处取得最小值 3。直接把常数项 7 当成最值是忽略了配方时要减去 4。",
+     "id": "mbj_p610_q6",
+     "topicId": "mbj_p610",
+     "subject": "math-bj",
+     "question": "二次函数 y 等于 x 的平方 减 4x 加 7 的最小值是多少？"
+    },
+    {
+     "prompt": "某商品每件成本 40 元，售价 60 元时每天卖出 100 件，每降价 1 元每天多卖 10 件。请写出每天利润 W 与降价 x 元的关系式，并求最大利润。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "降价 x 元后，每件利润为 20 减 x 元，每天销量为 100 加 10x 件，所以 W 等于 (20 减 x)(100 加 10x)，展开得 W 等于 负 10 乘 x 的平方 加 100x 加 2000。配方得 W 等于 负 10 乘 (x 减 5) 的平方 加 2250，因为开口向下，当 x 等于 5 时 W 取得最大值 2250 元，此时售价为 55 元、每天卖出 150 件。",
+     "explanation": "建立利润式的关键是抓住每件利润与销量的乘积，且两者都随降价变化，一增一减。求最值后用顶点横坐标回代检验是否符合实际，如降价不能超过成本允许的范围。",
+     "id": "mbj_p610_q7",
+     "topicId": "mbj_p610",
+     "subject": "math-bj",
+     "question": "某商品每件成本 40 元，售价 60 元时每天卖出 100 件，每降价 1 元每天多卖 10 件。请写出每天利润 W 与降价 x 元的关系式，并求最大利润。"
+    },
+    {
+     "prompt": "一座抛物线形拱桥的跨度是 8 米，拱顶距水面 4 米。以拱顶所在竖线为 y 轴建立坐标系，抛物线为 y 等于 负 4 分之 1 乘 x 的平方 加 4。求距拱顶所在竖线 2 米处，桥拱距水面的高度。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "3",
+     "verify": "4-2*2/4",
+     "explanation": "把 x 等于 2 代入解析式，y 等于 负 4 分之 1 乘 4 加 4 等于 负 1 加 4 等于 3，所以此处桥拱距水面 3 米。代值时注意先算 x 的平方再乘系数，符号也要保留。",
+     "id": "mbj_p610_q8",
+     "topicId": "mbj_p610",
+     "subject": "math-bj",
+     "question": "一座抛物线形拱桥的跨度是 8 米，拱顶距水面 4 米。以拱顶所在竖线为 y 轴建立坐标系，抛物线为 y 等于 负 4 分之 1 乘 x 的平方 加 4。求距拱顶所在竖线 2 米处，桥拱距水面的高度。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p611",
+   "name": "反比例函数",
+   "level": "lesson",
+   "description": "理解反比例函数的概念与一般形式，会用描点法画它的图象，掌握 k 大于零、k 小于零时图象所在象限和增减性，理解 k 的几何意义并用它解决简单实际问题。",
+   "mastery_criteria": [
+    "能写出反比例函数的一般形式并写出给定点的函数值",
+    "能由 k 的符号判断图象所在象限与增减性",
+    "能由图象上一点的坐标求出 k 的值"
+   ],
+   "misconceptions": [
+    "认为 k 可以等于零，或把 y 等于 x 分之 k 写成一次函数",
+    "把增减性说成在整个定义域内成立，忽略分象限",
+    "由点求 k 时把横纵坐标相乘写成相除"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "prompt": "反比例函数 y 等于 x 分之 k 中，常数 k 应满足（　）",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "k 不等于零"
+      },
+      {
+       "label": "B",
+       "text": "k 大于零"
+      },
+      {
+       "label": "C",
+       "text": "k 小于零"
+      },
+      {
+       "label": "D",
+       "text": "k 等于零"
+      }
+     ],
+     "answer": "A",
+     "explanation": "反比例函数要求 k 不等于零。若 k 等于零，函数变成 y 等于 0，图象是 x 轴，就不再是反比例函数。k 的正负不限，只决定图象所在的象限和增减性。",
+     "id": "mbj_p611_q1",
+     "topicId": "mbj_p611",
+     "subject": "math-bj",
+     "question": "反比例函数 y 等于 x 分之 k 中，常数 k 应满足（　）"
+    },
+    {
+     "prompt": "已知反比例函数 y 等于 x 分之 6，当 x 等于 3 时，y 等于多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "2",
+     "explanation": "把 x 等于 3 代入得 y 等于 3 分之 6 等于 2，所以点（3，2）在图象上。注意分母不能为零，x 等于零时函数没有意义。",
+     "id": "mbj_p611_q2",
+     "topicId": "mbj_p611",
+     "subject": "math-bj",
+     "question": "已知反比例函数 y 等于 x 分之 6，当 x 等于 3 时，y 等于多少？"
+    },
+    {
+     "prompt": "反比例函数 y 等于 x 分之 负 8 的图象位于哪两个象限？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "第二、四象限",
+     "explanation": "k 等于负 8 小于零，图象的两支分别位于第二象限和第四象限。k 小于零时 x 与 y 异号，异号的点只能在第二、四象限，所以不会出现在第一、三象限。",
+     "id": "mbj_p611_q3",
+     "topicId": "mbj_p611",
+     "subject": "math-bj",
+     "question": "反比例函数 y 等于 x 分之 负 8 的图象位于哪两个象限？"
+    },
+    {
+     "prompt": "若点（2，3）在反比例函数 y 等于 x 分之 k 的图象上，则 k 的值是（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "6"
+      },
+      {
+       "label": "C",
+       "text": "1.5"
+      },
+      {
+       "label": "D",
+       "text": "负 6"
+      }
+     ],
+     "answer": "B",
+     "explanation": "点在图象上就要满足解析式，把 x 等于 2、y 等于 3 代入得 3 等于 2 分之 k，所以 k 等于 6。写 5 是把坐标相加，写 1.5 是把 3 除以 2，写负 6 是符号搞错。",
+     "id": "mbj_p611_q4",
+     "topicId": "mbj_p611",
+     "subject": "math-bj",
+     "question": "若点（2，3）在反比例函数 y 等于 x 分之 k 的图象上，则 k 的值是（　）"
+    },
+    {
+     "prompt": "已知反比例函数 y 等于 x 分之 12 的图象经过点（4，m），求 m 的值。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "3",
+     "verify": "12/4",
+     "explanation": "点在图象上，代入得 m 等于 4 分之 12 等于 3。也可以先用 k 等于横坐标乘纵坐标验证：k 等于 12 时，纵坐标等于 k 除以横坐标，即 3。",
+     "id": "mbj_p611_q5",
+     "topicId": "mbj_p611",
+     "subject": "math-bj",
+     "question": "已知反比例函数 y 等于 x 分之 12 的图象经过点（4，m），求 m 的值。"
+    },
+    {
+     "prompt": "反比例函数 y 等于 x 分之 3，在每一个象限内，y 随 x 的增大而（　）",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "增大"
+      },
+      {
+       "label": "B",
+       "text": "保持不变"
+      },
+      {
+       "label": "C",
+       "text": "减小"
+      },
+      {
+       "label": "D",
+       "text": "先增大后减小"
+      }
+     ],
+     "answer": "C",
+     "explanation": "k 等于 3 大于零，图象位于第一、三象限，在每一个象限内 y 随 x 的增大而减小。要注意这个结论必须限定在同一个象限内，跨越两支比较时不能直接套用。",
+     "id": "mbj_p611_q6",
+     "topicId": "mbj_p611",
+     "subject": "math-bj",
+     "question": "反比例函数 y 等于 x 分之 3，在每一个象限内，y 随 x 的增大而（　）"
+    },
+    {
+     "prompt": "请说明反比例函数 y 等于 x 分之 k 中 k 的几何意义，并解释 k 小于零时为什么要加绝对值。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "过图象上任意一点 P 分别向 x 轴、y 轴作垂线，两条垂线与坐标轴围成一个矩形，这个矩形的面积等于点 P 横坐标与纵坐标绝对值的乘积，也就是 k 的绝对值。因为 k 小于零时图象在第二、四象限，点的横纵坐标异号，乘积是负数，而面积不能为负，所以要取绝对值，矩形面积始终等于 k 的绝对值。",
+     "explanation": "要讲清两件事：矩形面积由横纵坐标的乘积得到，即 k；k 为负时乘积为负而面积非负，因此统一写成 k 的绝对值。只说面积等于 k 而不讨论符号就不完整。",
+     "id": "mbj_p611_q7",
+     "topicId": "mbj_p611",
+     "subject": "math-bj",
+     "question": "请说明反比例函数 y 等于 x 分之 k 中 k 的几何意义，并解释 k 小于零时为什么要加绝对值。"
+    },
+    {
+     "prompt": "反比例函数 y 等于 x 分之 k 的图象经过点 P（3，负 4），求 k 的值。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "-12",
+     "verify": "3*(-4)",
+     "explanation": "由 y 等于 x 分之 k 得 k 等于 x 乘 y，把点 P 的坐标代入，k 等于 3 乘负 4 等于负 12。k 等于负 12 说明图象在第二、四象限，与点的位置一致，可以据此检验结果。",
+     "id": "mbj_p611_q8",
+     "topicId": "mbj_p611",
+     "subject": "math-bj",
+     "question": "反比例函数 y 等于 x 分之 k 的图象经过点 P（3，负 4），求 k 的值。"
+    }
+   ]
+  }
+ ]
+}

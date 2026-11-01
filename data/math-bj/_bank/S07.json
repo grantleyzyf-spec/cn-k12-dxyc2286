@@ -1,0 +1,2739 @@
+{
+ "shard": "S07",
+ "subject": "math-bj",
+ "book": "二上",
+ "grade": 2,
+ "points": [
+  {
+   "topicId": "mbj_p112",
+   "name": "认识厘米和米",
+   "level": "unit",
+   "description": "本单元认识长度单位厘米和米，知道米和厘米之间的关系；学会用尺子量出物体或线段的长度，并能结合生活经验估测物体的长短，为后面学习长度的计算打基础。",
+   "mastery_criteria": [
+    "能说出 1 米等于 100 厘米，并会换算",
+    "能用尺子量出物体或线段的长度",
+    "能根据物体长短选择合适的长度单位"
+   ],
+   "misconceptions": [
+    "把 1 米当成 10 厘米，换算时少写一个 0",
+    "量长度时把物体一端对准尺子顶端，不对准 0 刻度",
+    "认为量课桌的长用厘米比用米更合适"
+   ],
+   "std": {
+    "id": "mat-2022:1.KC.00",
+    "quote": "单位米、厘米。能估测一些物体的长度，并进行测量"
+   },
+   "questions": [
+    {
+     "id": "mbj_p112_q1",
+     "topicId": "mbj_p112",
+     "prompt": "1 米等于多少厘米？只填数字。",
+     "question": "1 米等于多少厘米？只填数字。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "100",
+     "verify": "1*100",
+     "explanation": "1 米里面有 100 个 1 厘米，米尺上把 1 米平均分成 100 个小格，所以 1 米＝100 厘米，进率是 100。"
+    },
+    {
+     "id": "mbj_p112_q2",
+     "topicId": "mbj_p112",
+     "prompt": "量一支铅笔的长度，用下面哪个单位最合适？",
+     "question": "量一支铅笔的长度，用下面哪个单位最合适？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "米"
+      },
+      {
+       "label": "B",
+       "text": "厘米"
+      },
+      {
+       "label": "C",
+       "text": "千克"
+      },
+      {
+       "label": "D",
+       "text": "小时"
+      }
+     ],
+     "answer": "B",
+     "explanation": "铅笔大约十几厘米长，用厘米作单位数字小、量起来方便；米这个单位太大，千克是质量单位，小时是时间单位。"
+    },
+    {
+     "id": "mbj_p112_q3",
+     "topicId": "mbj_p112",
+     "prompt": "教室的长大约是 8（ ），括号里应填哪个单位？",
+     "question": "教室的长大约是 8（ ），括号里应填哪个单位？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "厘米"
+      },
+      {
+       "label": "B",
+       "text": "分"
+      },
+      {
+       "label": "C",
+       "text": "克"
+      },
+      {
+       "label": "D",
+       "text": "米"
+      }
+     ],
+     "answer": "D",
+     "explanation": "教室的长有好几米，8 米差不多是一间教室的长度；8 厘米只有一根手指那么宽，显然太短。"
+    },
+    {
+     "id": "mbj_p112_q4",
+     "topicId": "mbj_p112",
+     "prompt": "一根小棒左端对着尺子的 3 刻度，右端对着 10 刻度，这根小棒长（ ）厘米。",
+     "question": "一根小棒左端对着尺子的 3 刻度，右端对着 10 刻度，这根小棒长（ ）厘米。",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "7",
+     "explanation": "量长度时两端对着的刻度相减就是长度，10－3＝7，所以小棒长 7 厘米。"
+    },
+    {
+     "id": "mbj_p112_q5",
+     "topicId": "mbj_p112",
+     "prompt": "小明说“我的铅笔长 18 米”。他错在哪里？请你改正并说明理由。",
+     "question": "小明说“我的铅笔长 18 米”。他错在哪里？请你改正并说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "错在单位用大了。铅笔只有十几厘米长，不可能有 18 米长，应该改成“我的铅笔长 18 厘米”。米和厘米相差 100 倍，18 米比三层楼还长。",
+     "explanation": "判断长度的说法对不对，要看物体实际长短和单位是否匹配；18 米相当于三层楼高，铅笔只能用厘米来量。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p113",
+   "name": "认识厘米",
+   "level": "lesson",
+   "description": "认识长度单位厘米，知道量比较短的物体用厘米作单位；认识尺子上的刻度，学会把物体一端对准 0 刻度读出长度，也能从任意刻度开始量，还会画指定厘米数的线段。",
+   "mastery_criteria": [
+    "能在尺子上指出 1 厘米的长度",
+    "会把物体一端对准 0 刻度读出厘米数",
+    "能用尺子画出指定长度的线段"
+   ],
+   "misconceptions": [
+    "从尺子最左端开始量，不对准 0 刻度",
+    "把 3 刻度到 8 刻度读成 8 厘米",
+    "画线段时从 1 刻度画起，结果少了 1 厘米"
+   ],
+   "std": {
+    "id": "mat-2022:1.KC.01",
+    "quote": "感悟统一单位的重要性，能恰当地选择长度单位米、厘米"
+   },
+   "questions": [
+    {
+     "id": "mbj_p113_q1",
+     "topicId": "mbj_p113",
+     "prompt": "下面哪个物体的长度大约是 1 厘米？",
+     "question": "下面哪个物体的长度大约是 1 厘米？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "图钉的长"
+      },
+      {
+       "label": "B",
+       "text": "课桌的长"
+      },
+      {
+       "label": "C",
+       "text": "教室门的高"
+      },
+      {
+       "label": "D",
+       "text": "数学书的宽"
+      }
+     ],
+     "answer": "A",
+     "explanation": "1 厘米很短，大约是一个指甲盖的宽度；课桌、门、数学书都明显比 1 厘米长得多。"
+    },
+    {
+     "id": "mbj_p113_q2",
+     "topicId": "mbj_p113",
+     "prompt": "量橡皮、小棒这样比较短的物体，通常用（ ）作单位。",
+     "question": "量橡皮、小棒这样比较短的物体，通常用（ ）作单位。",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "厘米",
+     "explanation": "厘米是比较小的长度单位，量橡皮、小棒这类短物体时用厘米；量教室、操场才用米。"
+    },
+    {
+     "id": "mbj_p113_q3",
+     "topicId": "mbj_p113",
+     "prompt": "尺子上从 0 刻度到 6 刻度，一共是几厘米？只填数字。",
+     "question": "尺子上从 0 刻度到 6 刻度，一共是几厘米？只填数字。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "6",
+     "verify": "6",
+     "explanation": "从 0 刻度开始量，右端对着几，长度就是几厘米，所以从 0 到 6 刻度是 6 厘米。"
+    },
+    {
+     "id": "mbj_p113_q4",
+     "topicId": "mbj_p113",
+     "prompt": "一根纸条左端对着 2 刻度，右端对着 9 刻度，纸条长多少厘米？只填数字。",
+     "question": "一根纸条左端对着 2 刻度，右端对着 9 刻度，纸条长多少厘米？只填数字。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "7",
+     "verify": "9-2",
+     "explanation": "不从 0 刻度开始时，用大刻度减小刻度，9－2＝7，纸条长 7 厘米。"
+    },
+    {
+     "id": "mbj_p113_q5",
+     "topicId": "mbj_p113",
+     "prompt": "用尺子量小棒，下面哪种做法是对的？",
+     "question": "用尺子量小棒，下面哪种做法是对的？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "小棒一端对准尺子最左边"
+      },
+      {
+       "label": "B",
+       "text": "尺子斜着放，让刻度对着小棒"
+      },
+      {
+       "label": "C",
+       "text": "小棒一端对准 0 刻度，再看另一端"
+      },
+      {
+       "label": "D",
+       "text": "只看小棒中间对着的刻度"
+      }
+     ],
+     "answer": "C",
+     "explanation": "量长度要把物体一端对准 0 刻度，尺子和小棒要贴紧放平，再看另一端对着的刻度读数。"
+    },
+    {
+     "id": "mbj_p113_q6",
+     "topicId": "mbj_p113",
+     "prompt": "要画一条 4 厘米长的线段，笔尖应该从 0 刻度画到几刻度？",
+     "question": "要画一条 4 厘米长的线段，笔尖应该从 0 刻度画到几刻度？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "3 刻度"
+      },
+      {
+       "label": "B",
+       "text": "5 刻度"
+      },
+      {
+       "label": "C",
+       "text": "4 刻度"
+      },
+      {
+       "label": "D",
+       "text": "40 刻度"
+      }
+     ],
+     "answer": "C",
+     "explanation": "画 4 厘米的线段时，笔尖从 0 刻度画到 4 刻度，两点之间正好是 4 个大格，也就是 4 厘米。"
+    },
+    {
+     "id": "mbj_p113_q7",
+     "topicId": "mbj_p113",
+     "prompt": "一根绳子长 20 厘米，剪去 8 厘米，还剩（ ）厘米。",
+     "question": "一根绳子长 20 厘米，剪去 8 厘米，还剩（ ）厘米。",
+     "type": "fill",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "12",
+     "explanation": "求剩下的长度用减法，20－8＝12，剩下的绳子长 12 厘米。"
+    },
+    {
+     "id": "mbj_p113_q8",
+     "topicId": "mbj_p113",
+     "prompt": "尺子上的 0 刻度磨掉了，怎样用它量出一根 4 厘米长的小棒？写出你的办法。",
+     "question": "尺子上的 0 刻度磨掉了，怎样用它量出一根 4 厘米长的小棒？写出你的办法。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "把小棒的一端对准尺子上任意一个看得清的整刻度，比如 3 刻度，然后数出 4 个大格，另一端正好对着 7 刻度，7－3＝4，小棒就是 4 厘米。",
+     "explanation": "刻度之差就是长度，0 刻度坏了不影响测量，只要起点和终点的刻度都看得清，就能算出差。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p114",
+   "name": "认识米",
+   "level": "lesson",
+   "description": "认识长度单位米，知道米是比厘米大的长度单位，通过比一比建立 1 米的长度观念；掌握米和厘米之间的进率，会进行简单的换算，能量出较长物体的长度。",
+   "mastery_criteria": [
+    "能用手比划出 1 米大约有多长",
+    "会进行米和厘米之间的换算",
+    "能量出较长物体的长度并选对单位"
+   ],
+   "misconceptions": [
+    "把 1 米记成 10 厘米",
+    "认为量教室的长用厘米更方便",
+    "把 3 米写成 30 厘米"
+   ],
+   "std": {
+    "id": "mat-2022:1.KC.02",
+    "quote": "能估测一些物体的长度，并进行测量"
+   },
+   "questions": [
+    {
+     "id": "mbj_p114_q1",
+     "topicId": "mbj_p114",
+     "prompt": "量教室的长，用下面哪个单位最合适？",
+     "question": "量教室的长，用下面哪个单位最合适？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "米"
+      },
+      {
+       "label": "B",
+       "text": "厘米"
+      },
+      {
+       "label": "C",
+       "text": "克"
+      },
+      {
+       "label": "D",
+       "text": "分"
+      }
+     ],
+     "answer": "A",
+     "explanation": "教室的长有八九米，用米作单位数字小、读写方便；用厘米数字太大，克和分不是长度单位。"
+    },
+    {
+     "id": "mbj_p114_q2",
+     "topicId": "mbj_p114",
+     "prompt": "一条彩带长 1 米，也就是多少厘米？只填数字。",
+     "question": "一条彩带长 1 米，也就是多少厘米？只填数字。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "100",
+     "verify": "1*100",
+     "explanation": "米尺上把 1 米平均分成 100 个小格，每格 1 厘米，所以 1 米＝100 厘米。"
+    },
+    {
+     "id": "mbj_p114_q3",
+     "topicId": "mbj_p114",
+     "prompt": "一条彩带长 3 米，合多少厘米？填在括号里：3 米＝（ ）厘米。",
+     "question": "一条彩带长 3 米，合多少厘米？填在括号里：3 米＝（ ）厘米。",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "300",
+     "explanation": "1 米是 100 厘米，3 米就是 3 个 100 厘米相加，100＋100＋100＝300，所以是 300 厘米。"
+    },
+    {
+     "id": "mbj_p114_q4",
+     "topicId": "mbj_p114",
+     "prompt": "200 厘米等于多少米？只填数字。",
+     "question": "200 厘米等于多少米？只填数字。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "2",
+     "verify": "200/100",
+     "explanation": "100 厘米是 1 米，200 厘米里面有 2 个 100 厘米，所以 200 厘米＝2 米。"
+    },
+    {
+     "id": "mbj_p114_q5",
+     "topicId": "mbj_p114",
+     "prompt": "一张课桌高约 70（ ），括号里应填什么单位？",
+     "question": "一张课桌高约 70（ ），括号里应填什么单位？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "米"
+      },
+      {
+       "label": "B",
+       "text": "分"
+      },
+      {
+       "label": "C",
+       "text": "克"
+      },
+      {
+       "label": "D",
+       "text": "厘米"
+      }
+     ],
+     "answer": "D",
+     "explanation": "课桌高七十厘米左右，比 1 米矮一些；如果填米就是 70 米，比教学楼还高，不可能。"
+    },
+    {
+     "id": "mbj_p114_q6",
+     "topicId": "mbj_p114",
+     "prompt": "1 米 20 厘米＝（ ）厘米。",
+     "question": "1 米 20 厘米＝（ ）厘米。",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "120",
+     "explanation": "1 米是 100 厘米，再加上 20 厘米，100＋20＝120，所以是 120 厘米。"
+    },
+    {
+     "id": "mbj_p114_q7",
+     "topicId": "mbj_p114",
+     "prompt": "一条绳子长 5 米，做跳绳用去 200 厘米，还剩（ ）米。",
+     "question": "一条绳子长 5 米，做跳绳用去 200 厘米，还剩（ ）米。",
+     "type": "fill",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "3",
+     "explanation": "先把 200 厘米换成 2 米，单位相同才能相减，5－2＝3，剩下的绳子长 3 米。"
+    },
+    {
+     "id": "mbj_p114_q8",
+     "topicId": "mbj_p114",
+     "prompt": "量教室的长为什么用米尺，而不用同学们的学习尺？请说明理由。",
+     "question": "量教室的长为什么用米尺，而不用同学们的学习尺？请说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "学习尺只有 20 厘米左右，量教室的长要量很多次，又慢又容易数错；米尺长 1 米，量几次就能量完，结果也更准确，所以量较长的物体要用米尺。",
+     "explanation": "选测量工具要看物体的长短，工具比物体短太多，量的次数就多，误差和数错的机会也跟着变大。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p115",
+   "name": "身体上的尺子",
+   "level": "lesson",
+   "description": "认识身上的“尺子”——一拃、一步、一庹大约有多长，会用它们估测课桌、走廊等物体的长度，体会估测结果与实测结果的差别，感受统一长度单位的必要性。",
+   "mastery_criteria": [
+    "能用手指张开比出一拃的长度",
+    "会用身体尺估测物体的大约长度",
+    "能说出估测结果与实测结果不同的原因"
+   ],
+   "misconceptions": [
+    "认为每个人的一拃一样长，估测结果应该相同",
+    "把估测结果当成准确长度写进答案",
+    "用拃量长距离，只量一次就报出结果"
+   ],
+   "std": {
+    "id": "mat-2022:1.KC.02",
+    "quote": "能估测一些物体的长度，并进行测量"
+   },
+   "questions": [
+    {
+     "id": "mbj_p115_q1",
+     "topicId": "mbj_p115",
+     "prompt": "同学们量课桌的长，用“拃”量比较方便。一拃大约有多长？",
+     "question": "同学们量课桌的长，用“拃”量比较方便。一拃大约有多长？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "10 米左右"
+      },
+      {
+       "label": "B",
+       "text": "10 厘米左右"
+      },
+      {
+       "label": "C",
+       "text": "1 米左右"
+      },
+      {
+       "label": "D",
+       "text": "1 厘米左右"
+      }
+     ],
+     "answer": "B",
+     "explanation": "一拃是张开手指后拇指到中指的距离，大约十几厘米，和 10 厘米最接近。"
+    },
+    {
+     "id": "mbj_p115_q2",
+     "topicId": "mbj_p115",
+     "prompt": "两臂侧平举，两个中指指尖之间的距离，我们叫它一（ ）。",
+     "question": "两臂侧平举，两个中指指尖之间的距离，我们叫它一（ ）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "庹",
+     "explanation": "一庹是两臂平伸时两个指尖之间的距离，大约和自己的身高差不多，量绳长、量墙宽时很好用。"
+    },
+    {
+     "id": "mbj_p115_q3",
+     "topicId": "mbj_p115",
+     "prompt": "用脚步量走廊的长，一步大约有多长？",
+     "question": "用脚步量走廊的长，一步大约有多长？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "40 米左右"
+      },
+      {
+       "label": "B",
+       "text": "40 厘米左右"
+      },
+      {
+       "label": "C",
+       "text": "4 米左右"
+      },
+      {
+       "label": "D",
+       "text": "4 厘米左右"
+      }
+     ],
+     "answer": "B",
+     "explanation": "二年级同学一步大约四十厘米，四步差不多一米半，所以用步量长距离比较方便。"
+    },
+    {
+     "id": "mbj_p115_q4",
+     "topicId": "mbj_p115",
+     "prompt": "用拃量课桌，量了 5 拃，每拃大约 12 厘米，课桌大约长多少厘米？只填数字。",
+     "question": "用拃量课桌，量了 5 拃，每拃大约 12 厘米，课桌大约长多少厘米？只填数字。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "60",
+     "verify": "5*12",
+     "explanation": "5 拃就是 5 个 12 厘米，12＋12＋12＋12＋12＝60，课桌大约长 60 厘米。"
+    },
+    {
+     "id": "mbj_p115_q5",
+     "topicId": "mbj_p115",
+     "prompt": "两个同学用拃量同一张桌子，一个量出 5 拃，一个量出 6 拃，为什么不一样？",
+     "question": "两个同学用拃量同一张桌子，一个量出 5 拃，一个量出 6 拃，为什么不一样？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "桌子一会儿变长了"
+      },
+      {
+       "label": "B",
+       "text": "其中一个人数错了"
+      },
+      {
+       "label": "C",
+       "text": "拃不能用来量长度"
+      },
+      {
+       "label": "D",
+       "text": "两人的拃长不同"
+      }
+     ],
+     "answer": "D",
+     "explanation": "手大的同学一拃长，量出的拃数就少；手小的同学一拃短，拃数就多，所以要统一长度单位。"
+    },
+    {
+     "id": "mbj_p115_q6",
+     "topicId": "mbj_p115",
+     "prompt": "沿着操场边走 10 步，每步大约 40 厘米，大约走了多少厘米？只填数字。",
+     "question": "沿着操场边走 10 步，每步大约 40 厘米，大约走了多少厘米？只填数字。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "400",
+     "verify": "10*40",
+     "explanation": "10 步就是 10 个 40 厘米，40 连加 10 次得 400，所以大约走了 400 厘米，也就是 4 米。"
+    },
+    {
+     "id": "mbj_p115_q7",
+     "topicId": "mbj_p115",
+     "prompt": "小红用拃量一根竹竿，量了 3 拃正好量完，一共 36 厘米。她的一拃大约长（ ）厘米。",
+     "question": "小红用拃量一根竹竿，量了 3 拃正好量完，一共 36 厘米。她的一拃大约长（ ）厘米。",
+     "type": "fill",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "12",
+     "explanation": "3 个同样长的一拃合起来是 36 厘米，因为 3 个 12 是 36，所以一拃大约长 12 厘米。"
+    },
+    {
+     "id": "mbj_p115_q8",
+     "topicId": "mbj_p115",
+     "prompt": "要用步测的方法估测学校走廊有多长，你打算怎么做？写出步骤。",
+     "question": "要用步测的方法估测学校走廊有多长，你打算怎么做？写出步骤。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "先量出自己一步大约多长，比如 40 厘米；再从走廊一头走到另一头，数出一共走了多少步；最后用每步的长度乘步数，就能估出走廊大约有多长。",
+     "explanation": "步测的关键是先把“一步”这个身体尺定下来，再用步数去累加，结果要说明是“大约”，不能当准确值。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p116",
+   "name": "表内乘法（一）",
+   "level": "unit",
+   "description": "本单元在相同加数连加的基础上认识乘法，理解乘法是求几个相同加数和的简便运算；学习 2、3、4、5 的乘法口诀，会用口诀口算表内乘法，并解决简单的实际问题。",
+   "mastery_criteria": [
+    "能把相同加数的连加改写成乘法算式",
+    "能熟记 2、3、4、5 的乘法口诀并口算",
+    "能用乘法解决求几个几的实际问题"
+   ],
+   "misconceptions": [
+    "把加数不同的连加也改写成乘法",
+    "认为 4×3 和 4＋3 的意思一样",
+    "口诀背错，把“三四十二”说成“三四十五”"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.05",
+    "quote": "探索乘法和除法的算理与算法，会简单的整数乘除法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p116_q1",
+     "topicId": "mbj_p116",
+     "prompt": "4＋4＋4 写成乘法算式，应该是下面哪一个？",
+     "question": "4＋4＋4 写成乘法算式，应该是下面哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "4×3"
+      },
+      {
+       "label": "B",
+       "text": "4＋3"
+      },
+      {
+       "label": "C",
+       "text": "4－3"
+      },
+      {
+       "label": "D",
+       "text": "3＋3＋3"
+      }
+     ],
+     "answer": "A",
+     "explanation": "3 个 4 相加，可以写成 4×3，也可以写成 3×4，乘法就是求几个相同加数的和。"
+    },
+    {
+     "id": "mbj_p116_q2",
+     "topicId": "mbj_p116",
+     "prompt": "5×3 的积是多少？只填数字。",
+     "question": "5×3 的积是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "15",
+     "verify": "5*3",
+     "explanation": "用口诀三五十五，5×3＝15，它表示 3 个 5 相加。"
+    },
+    {
+     "id": "mbj_p116_q3",
+     "topicId": "mbj_p116",
+     "prompt": "乘法算式 3×4 表示的意思是什么？",
+     "question": "乘法算式 3×4 表示的意思是什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "3 和 4 相加"
+      },
+      {
+       "label": "B",
+       "text": "4 个 3 相乘"
+      },
+      {
+       "label": "C",
+       "text": "4 个 3 相加"
+      },
+      {
+       "label": "D",
+       "text": "3 比 4 多几"
+      }
+     ],
+     "answer": "C",
+     "explanation": "乘法表示几个相同加数的和，3×4 表示 4 个 3 相加，也可以说成 3 个 4 相加。"
+    },
+    {
+     "id": "mbj_p116_q4",
+     "topicId": "mbj_p116",
+     "prompt": "6 个 5 相加，和是多少？只填数字。",
+     "question": "6 个 5 相加，和是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "30",
+     "verify": "6*5",
+     "explanation": "6 个 5 相加就是 5×6，用口诀五六三十，和是 30。"
+    },
+    {
+     "id": "mbj_p116_q5",
+     "topicId": "mbj_p116",
+     "prompt": "乘法与加法有什么关系？请举例说明。",
+     "question": "乘法与加法有什么关系？请举例说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "乘法是求几个相同加数和的简便运算。比如 5＋5＋5＝15，3 个 5 相加可以写成 5×3＝15，写起来更简便；加数不同时就不能写成乘法。",
+     "explanation": "把连加改写成乘法的前提是加数完全相同，这也是判断一个问题能不能用乘法的关键。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p117",
+   "name": "乘法的初步认识",
+   "level": "lesson",
+   "description": "结合数一数、摆一摆的活动认识“几个几”，知道求几个相同加数的和可以用乘法计算，会把相同加数的连加改写成乘法算式，初步体会乘法比连加简便。",
+   "mastery_criteria": [
+    "能数出图中物体是几个几",
+    "能把相同加数的连加改写成乘法",
+    "能判断哪些连加算式可以写成乘法"
+   ],
+   "misconceptions": [
+    "把 7＋5 这样的算式也改写成乘法",
+    "把 2＋2＋2 改写成 2×2",
+    "数“几个几”时把份数和每份数说反"
+   ],
+   "std": {
+    "id": "mat-2022:1.TS.06",
+    "quote": "启发学生理解乘法是加法的简便运算，感悟除法是乘法的逆运算"
+   },
+   "questions": [
+    {
+     "id": "mbj_p117_q1",
+     "topicId": "mbj_p117",
+     "prompt": "2＋2＋2＋2 可以写成哪个乘法算式？",
+     "question": "2＋2＋2＋2 可以写成哪个乘法算式？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "2＋4"
+      },
+      {
+       "label": "B",
+       "text": "4×4"
+      },
+      {
+       "label": "C",
+       "text": "2×4"
+      },
+      {
+       "label": "D",
+       "text": "2×2"
+      }
+     ],
+     "answer": "C",
+     "explanation": "2＋2＋2＋2 是 4 个 2 相加，写成乘法是 2×4，也可以写成 4×2，积都是 8。"
+    },
+    {
+     "id": "mbj_p117_q2",
+     "topicId": "mbj_p117",
+     "prompt": "3 个 4 相加，和是多少？只填数字。",
+     "question": "3 个 4 相加，和是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "12",
+     "verify": "3*4",
+     "explanation": "3 个 4 相加是 4＋4＋4＝12，也可以直接用乘法 4×3＝12 算出来。"
+    },
+    {
+     "id": "mbj_p117_q3",
+     "topicId": "mbj_p117",
+     "prompt": "把 6＋6＋6 写成乘法算式是 6×（ ）。",
+     "question": "把 6＋6＋6 写成乘法算式是 6×（ ）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "3",
+     "explanation": "6＋6＋6 是 3 个 6 相加，所以写成 6×3，括号里填 3。"
+    },
+    {
+     "id": "mbj_p117_q4",
+     "topicId": "mbj_p117",
+     "prompt": "下面哪个加法算式能改写成乘法算式？",
+     "question": "下面哪个加法算式能改写成乘法算式？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "7＋7＋7"
+      },
+      {
+       "label": "B",
+       "text": "7＋5"
+      },
+      {
+       "label": "C",
+       "text": "7－7"
+      },
+      {
+       "label": "D",
+       "text": "7＋7＋5"
+      }
+     ],
+     "answer": "A",
+     "explanation": "只有加数完全相同的连加才能写成乘法，7＋7＋7 是 3 个 7 相加，其余几个算式的加数不同。"
+    },
+    {
+     "id": "mbj_p117_q5",
+     "topicId": "mbj_p117",
+     "prompt": "每盒装 4 个鸡蛋，3 盒一共装多少个？只填数字。",
+     "question": "每盒装 4 个鸡蛋，3 盒一共装多少个？只填数字。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "12",
+     "verify": "4*3",
+     "explanation": "3 盒就是 3 个 4，求几个几用乘法，4×3＝12，一共装 12 个。"
+    },
+    {
+     "id": "mbj_p117_q6",
+     "topicId": "mbj_p117",
+     "prompt": "乘法算式 3×4 应该怎样读？",
+     "question": "乘法算式 3×4 应该怎样读？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "3 加 4"
+      },
+      {
+       "label": "B",
+       "text": "3 除 4"
+      },
+      {
+       "label": "C",
+       "text": "4 乘 3"
+      },
+      {
+       "label": "D",
+       "text": "3 乘 4"
+      }
+     ],
+     "answer": "D",
+     "explanation": "乘法算式按从左到右的顺序读，“×”读作“乘”，所以 3×4 读作 3 乘 4。"
+    },
+    {
+     "id": "mbj_p117_q7",
+     "topicId": "mbj_p117",
+     "prompt": "8＋8＋8＋8＋8 改写成乘法算式，下面哪个是对的？",
+     "question": "8＋8＋8＋8＋8 改写成乘法算式，下面哪个是对的？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "8＋5"
+      },
+      {
+       "label": "B",
+       "text": "8×5"
+      },
+      {
+       "label": "C",
+       "text": "8×8"
+      },
+      {
+       "label": "D",
+       "text": "5×5"
+      }
+     ],
+     "answer": "B",
+     "explanation": "数一数有 5 个 8 相加，写成乘法是 8×5，积是 40；8＋5 只是两个数相加，不是乘法。"
+    },
+    {
+     "id": "mbj_p117_q8",
+     "topicId": "mbj_p117",
+     "prompt": "什么样的加法算式才能改写成乘法算式？请举例说明。",
+     "question": "什么样的加法算式才能改写成乘法算式？请举例说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "只有加数完全相同的连加才能改写成乘法。比如 5＋5＋5 是 3 个 5 相加，可以写成 5×3；而 5＋5＋3 的加数不相同，就只能用加法算。",
+     "explanation": "乘法的意义是求几个相同加数的和，加数不同就没有“几个几”，自然写不成乘法。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p118",
+   "name": "认识乘法算式",
+   "level": "lesson",
+   "description": "认识乘法算式的写法和读法，知道乘号两边的数叫因数、乘得的结果叫积；会规范书写乘法算式，能根据“几个几”写出算式，并说出算式中各部分的名称。",
+   "mastery_criteria": [
+    "能正确读写乘法算式",
+    "能说出算式中因数和积的名称",
+    "能根据几个几写出乘法算式并求积"
+   ],
+   "misconceptions": [
+    "把积说成和，把因数说成加数",
+    "读算式时把 4×3 读成 4 加 3",
+    "写算式时把乘号写成加号"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.03",
+    "quote": "在具体情境中，了解四则运算的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p118_q1",
+     "topicId": "mbj_p118",
+     "prompt": "在 4×3＝12 中，12 叫什么？",
+     "question": "在 4×3＝12 中，12 叫什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "和"
+      },
+      {
+       "label": "B",
+       "text": "积"
+      },
+      {
+       "label": "C",
+       "text": "差"
+      },
+      {
+       "label": "D",
+       "text": "商"
+      }
+     ],
+     "answer": "B",
+     "explanation": "乘法算式中乘得的结果叫积，4 和 3 叫因数，所以 12 是积。"
+    },
+    {
+     "id": "mbj_p118_q2",
+     "topicId": "mbj_p118",
+     "prompt": "在 2×6＝12 中，2 和 6 都叫（ ）。",
+     "question": "在 2×6＝12 中，2 和 6 都叫（ ）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "因数",
+     "explanation": "乘号两边的数叫做因数，2 和 6 是因数，乘出来的 12 是积。"
+    },
+    {
+     "id": "mbj_p118_q3",
+     "topicId": "mbj_p118",
+     "prompt": "8×2 的积是多少？只填数字。",
+     "question": "8×2 的积是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "16",
+     "verify": "8*2",
+     "explanation": "用口诀二八十六，8×2＝16，它表示 2 个 8 相加。"
+    },
+    {
+     "id": "mbj_p118_q4",
+     "topicId": "mbj_p118",
+     "prompt": "乘法算式 5×2 应该怎样读？",
+     "question": "乘法算式 5×2 应该怎样读？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "5 加 2"
+      },
+      {
+       "label": "B",
+       "text": "2 乘 5"
+      },
+      {
+       "label": "C",
+       "text": "5 减 2"
+      },
+      {
+       "label": "D",
+       "text": "5 乘 2"
+      }
+     ],
+     "answer": "D",
+     "explanation": "读乘法算式要按从左到右的顺序，“×”读作乘，所以 5×2 读作 5 乘 2。"
+    },
+    {
+     "id": "mbj_p118_q5",
+     "topicId": "mbj_p118",
+     "prompt": "一个因数是 9，另一个因数是 2，积是多少？只填数字。",
+     "question": "一个因数是 9，另一个因数是 2，积是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "18",
+     "verify": "9*2",
+     "explanation": "求积就是把两个因数相乘，9×2 用口诀二九十八，积是 18。"
+    },
+    {
+     "id": "mbj_p118_q6",
+     "topicId": "mbj_p118",
+     "prompt": "3×5 和 5×3 这两个算式，它们的什么相同？",
+     "question": "3×5 和 5×3 这两个算式，它们的什么相同？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "积相同"
+      },
+      {
+       "label": "B",
+       "text": "两个因数相同"
+      },
+      {
+       "label": "C",
+       "text": "读法相同"
+      },
+      {
+       "label": "D",
+       "text": "意思完全一样"
+      }
+     ],
+     "answer": "A",
+     "explanation": "交换两个因数的位置积不变，3×5 和 5×3 都等于 15；但它们的读法和表示的意思不完全一样。"
+    },
+    {
+     "id": "mbj_p118_q7",
+     "topicId": "mbj_p118",
+     "prompt": "一个乘法算式的积是 24，一个因数是 4，另一个因数是（ ）。",
+     "question": "一个乘法算式的积是 24，一个因数是 4，另一个因数是（ ）。",
+     "type": "fill",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "6",
+     "explanation": "想 4 乘几得 24，口诀四六二十四，所以另一个因数是 6。"
+    },
+    {
+     "id": "mbj_p118_q8",
+     "topicId": "mbj_p118",
+     "prompt": "请写出一个乘法算式，并说出算式中各部分的名称。",
+     "question": "请写出一个乘法算式，并说出算式中各部分的名称。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "例如 6×3＝18，其中 6 和 3 叫做因数，乘号表示把相同的加数合起来，18 叫做积，这个算式读作 6 乘 3 等于 18。",
+     "explanation": "能说清因数、积和读法，才算真正认识乘法算式；写算式时乘号不能写成加号。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p119",
+   "name": "乘法意义的理解",
+   "level": "lesson",
+   "description": "在具体情境中理解乘法的意义：乘法表示几个相同加数的和；能看图说出“几个几”并列出算式，能解释算式中每个数的实际含义，感受乘法与加法的联系和区别。",
+   "mastery_criteria": [
+    "能看图说出几个几并列出乘法算式",
+    "能解释乘法算式中每个数表示什么",
+    "能判断生活中哪些问题用乘法解决"
+   ],
+   "misconceptions": [
+    "看到数字就相乘，不管加数是否相同",
+    "把 4×5 只理解成 4 加 5",
+    "算图意时把每份数和份数弄反后算错"
+   ],
+   "std": {
+    "id": "mat-2022:1.TS.06",
+    "quote": "启发学生理解乘法是加法的简便运算，感悟除法是乘法的逆运算"
+   },
+   "questions": [
+    {
+     "id": "mbj_p119_q1",
+     "topicId": "mbj_p119",
+     "prompt": "求 3 个 4 相加的和，用哪个算式？",
+     "question": "求 3 个 4 相加的和，用哪个算式？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "4＋3"
+      },
+      {
+       "label": "B",
+       "text": "4－3"
+      },
+      {
+       "label": "C",
+       "text": "4×3"
+      },
+      {
+       "label": "D",
+       "text": "3＋3＋3"
+      }
+     ],
+     "answer": "C",
+     "explanation": "3 个 4 相加写成乘法是 4×3（也可以写成 3×4），表示相同的加数 4 加了 3 次。"
+    },
+    {
+     "id": "mbj_p119_q2",
+     "topicId": "mbj_p119",
+     "prompt": "5×2 表示 2 个 5 相加，和是多少？只填数字。",
+     "question": "5×2 表示 2 个 5 相加，和是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "10",
+     "verify": "5*2",
+     "explanation": "2 个 5 相加是 5＋5＝10，用口诀二五一十，5×2＝10。"
+    },
+    {
+     "id": "mbj_p119_q3",
+     "topicId": "mbj_p119",
+     "prompt": "有 3 盘苹果，每盘 2 个，一共有几个？下面哪个算式对？",
+     "question": "有 3 盘苹果，每盘 2 个，一共有几个？下面哪个算式对？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "2＋3"
+      },
+      {
+       "label": "B",
+       "text": "3－2"
+      },
+      {
+       "label": "C",
+       "text": "2×3"
+      },
+      {
+       "label": "D",
+       "text": "2＋2＋2＋2"
+      }
+     ],
+     "answer": "C",
+     "explanation": "3 盘每盘 2 个，就是 3 个 2，用乘法 2×3＝6；2＋3 只算了两个数，2＋2＋2＋2 多算了一盘。"
+    },
+    {
+     "id": "mbj_p119_q4",
+     "topicId": "mbj_p119",
+     "prompt": "关于算式 4×5 的意义，下面说法正确的是哪一句？",
+     "question": "关于算式 4×5 的意义，下面说法正确的是哪一句？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "4×5 可以表示 5 个 4 相加"
+      },
+      {
+       "label": "B",
+       "text": "4×5 只能表示 4 个 5 相加"
+      },
+      {
+       "label": "C",
+       "text": "4×5 表示 4 和 5 相加"
+      },
+      {
+       "label": "D",
+       "text": "4×5 表示 5 比 4 多 1"
+      }
+     ],
+     "answer": "A",
+     "explanation": "乘法表示几个相同加数的和，4×5 既可以看成 5 个 4，也可以看成 4 个 5，说“可以表示”是对的。"
+    },
+    {
+     "id": "mbj_p119_q5",
+     "topicId": "mbj_p119",
+     "prompt": "6＋6＋6＋6 是（ ）个 6 相加。",
+     "question": "6＋6＋6＋6 是（ ）个 6 相加。",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "4",
+     "explanation": "数一数有几个 6 相加：6、6、6、6，一共 4 个，写成乘法是 6×4。"
+    },
+    {
+     "id": "mbj_p119_q6",
+     "topicId": "mbj_p119",
+     "prompt": "每盘放 5 个苹果，4 盘一共放多少个？只填数字。",
+     "question": "每盘放 5 个苹果，4 盘一共放多少个？只填数字。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "20",
+     "verify": "5*4",
+     "explanation": "4 盘每盘 5 个，就是 4 个 5，5×4＝20，一共放 20 个苹果。"
+    },
+    {
+     "id": "mbj_p119_q7",
+     "topicId": "mbj_p119",
+     "prompt": "下面哪个问题不能用 5×3 解决？",
+     "question": "下面哪个问题不能用 5×3 解决？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "3 个 5 相加是多少"
+      },
+      {
+       "label": "B",
+       "text": "5 个 3 相加是多少"
+      },
+      {
+       "label": "C",
+       "text": "每盒 5 个，3 盒一共几个"
+      },
+      {
+       "label": "D",
+       "text": "有 5 个，又买来 3 个，一共几个"
+      }
+     ],
+     "answer": "D",
+     "explanation": "5×3 求的是几个相同加数的和，而“有 5 个又买来 3 个”是两个不同的数相加，只能用 5＋3。"
+    },
+    {
+     "id": "mbj_p119_q8",
+     "topicId": "mbj_p119",
+     "prompt": "3×4 和 4＋4＋4 的意思一样吗？请说明你的想法。",
+     "question": "3×4 和 4＋4＋4 的意思一样吗？请说明你的想法。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "意思一样。4＋4＋4 是 3 个 4 相加，3×4 也表示 3 个 4 相加，结果都是 12，只是乘法写起来更简便、算得更快。",
+     "explanation": "乘法就是把相同加数的连加缩写，所以两者表示的数量关系相同，只是形式不同。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p120",
+   "name": "2的乘法口诀",
+   "level": "lesson",
+   "description": "根据 2 个 2、3 个 2……的连加结果编出 2 的乘法口诀，理解每句口诀的意思，能熟记并运用口诀口算与 2 有关的乘法，发现积每次多 2 的规律。",
+   "mastery_criteria": [
+    "能按顺序背出 2 的乘法口诀",
+    "能用 2 的口诀口算乘法",
+    "能说出相邻两句口诀的积相差 2"
+   ],
+   "misconceptions": [
+    "把“二二得四”说成“二二得二”",
+    "口诀与算式对不上，用二七十四算 2×8",
+    "认为 2×6 和 2＋6 的结果一样"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.05",
+    "quote": "探索乘法和除法的算理与算法，会简单的整数乘除法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p120_q1",
+     "topicId": "mbj_p120",
+     "prompt": "口诀“一二得（ ）”，括号里应填什么？",
+     "question": "口诀“一二得（ ）”，括号里应填什么？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "二",
+     "explanation": "1 个 2 是 2，口诀是一二得二，两个数相乘的积写在“得”的后面。"
+    },
+    {
+     "id": "mbj_p120_q2",
+     "topicId": "mbj_p120",
+     "prompt": "2×7 的积是多少？只填数字。",
+     "question": "2×7 的积是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "14",
+     "verify": "2*7",
+     "explanation": "用口诀二七十四，2×7＝14，它表示 7 个 2 相加。"
+    },
+    {
+     "id": "mbj_p120_q3",
+     "topicId": "mbj_p120",
+     "prompt": "口诀“二五一十”可以用来计算哪个算式？",
+     "question": "口诀“二五一十”可以用来计算哪个算式？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "2＋5"
+      },
+      {
+       "label": "B",
+       "text": "2×5"
+      },
+      {
+       "label": "C",
+       "text": "5－2"
+      },
+      {
+       "label": "D",
+       "text": "2×2"
+      }
+     ],
+     "answer": "B",
+     "explanation": "口诀二五一十表示 2 和 5 相乘得 10，所以能算 2×5＝10，也能算 5×2＝10。"
+    },
+    {
+     "id": "mbj_p120_q4",
+     "topicId": "mbj_p120",
+     "prompt": "2×9 的积是多少？只填数字。",
+     "question": "2×9 的积是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "18",
+     "verify": "2*9",
+     "explanation": "用口诀二九十八，2×9＝18，9 个 2 相加就是 18。"
+    },
+    {
+     "id": "mbj_p120_q5",
+     "topicId": "mbj_p120",
+     "prompt": "计算 2×6，应该用哪句口诀？",
+     "question": "计算 2×6，应该用哪句口诀？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "二六十三"
+      },
+      {
+       "label": "B",
+       "text": "二六十二"
+      },
+      {
+       "label": "C",
+       "text": "三六十八"
+      },
+      {
+       "label": "D",
+       "text": "二五一十"
+      }
+     ],
+     "answer": "B",
+     "explanation": "2 和 6 相乘用二六十二，积是 12；三六十八算的是 3×6，二五一十算的是 2×5。"
+    },
+    {
+     "id": "mbj_p120_q6",
+     "topicId": "mbj_p120",
+     "prompt": "2×（ ）＝16，括号里填几？",
+     "question": "2×（ ）＝16，括号里填几？",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "8",
+     "explanation": "想 2 乘几得 16，口诀二八十六，所以括号里填 8。"
+    },
+    {
+     "id": "mbj_p120_q7",
+     "topicId": "mbj_p120",
+     "prompt": "一个数的 2 倍是 14，这个数是多少？只填数字。",
+     "question": "一个数的 2 倍是 14，这个数是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "7",
+     "verify": "14/2",
+     "explanation": "2 倍就是 2 个这个数，2 个几是 14，因为 2×7＝14，所以这个数是 7。"
+    },
+    {
+     "id": "mbj_p120_q8",
+     "topicId": "mbj_p120",
+     "prompt": "2 的乘法口诀有什么规律？说一说你的发现。",
+     "question": "2 的乘法口诀有什么规律？说一说你的发现。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "2 的口诀从一二得二开始，每往后一句就多一个 2，积也每次多 2，所以积都是双数：2、4、6、8、10…… 记住这一条就不容易背错。",
+     "explanation": "口诀的排列顺序对应 1 个 2、2 个 2……，理解“每次多 2”比死记硬背更牢。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p121",
+   "name": "5的乘法口诀",
+   "level": "lesson",
+   "description": "通过数手指、数五角星等活动编出 5 的乘法口诀，理解口诀的含义，能熟练口算与 5 有关的乘法，并发现积的末位是 0 或 5 的规律。",
+   "mastery_criteria": [
+    "能按顺序说出 5 的乘法口诀",
+    "能用 5 的口诀口算得数",
+    "能说出积的末位是 0 或 5 的规律"
+   ],
+   "misconceptions": [
+    "把“五七三十五”说成“五七三十”",
+    "算 5×8 用错口诀得 45",
+    "认为 5×6 的积末位一定是 0"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.05",
+    "quote": "探索乘法和除法的算理与算法，会简单的整数乘除法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p121_q1",
+     "topicId": "mbj_p121",
+     "prompt": "口诀“三五（ ）”，括号里填什么？",
+     "question": "口诀“三五（ ）”，括号里填什么？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "十五",
+     "explanation": "3 个 5 相加是 5＋5＋5＝15，口诀是三五十五。"
+    },
+    {
+     "id": "mbj_p121_q2",
+     "topicId": "mbj_p121",
+     "prompt": "5×6 的积是多少？只填数字。",
+     "question": "5×6 的积是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "30",
+     "verify": "5*6",
+     "explanation": "用口诀五六三十，5×6＝30，它表示 6 个 5 相加。"
+    },
+    {
+     "id": "mbj_p121_q3",
+     "topicId": "mbj_p121",
+     "prompt": "口诀“五七三十五”表示哪个算式？",
+     "question": "口诀“五七三十五”表示哪个算式？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "5＋7＝12"
+      },
+      {
+       "label": "B",
+       "text": "7－5＝2"
+      },
+      {
+       "label": "C",
+       "text": "5×5＝25"
+      },
+      {
+       "label": "D",
+       "text": "5×7＝35"
+      }
+     ],
+     "answer": "D",
+     "explanation": "口诀的前两个数是因数，后面是积，五七三十五就是 5×7＝35。"
+    },
+    {
+     "id": "mbj_p121_q4",
+     "topicId": "mbj_p121",
+     "prompt": "5×8 的积是多少？只填数字。",
+     "question": "5×8 的积是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "40",
+     "verify": "5*8",
+     "explanation": "用口诀五八四十，5×8＝40，8 个 5 相加是 40。"
+    },
+    {
+     "id": "mbj_p121_q5",
+     "topicId": "mbj_p121",
+     "prompt": "计算 5×9 要用哪句口诀？",
+     "question": "计算 5×9 要用哪句口诀？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "五九四十五"
+      },
+      {
+       "label": "B",
+       "text": "五九四十"
+      },
+      {
+       "label": "C",
+       "text": "六九五十四"
+      },
+      {
+       "label": "D",
+       "text": "五八四十"
+      }
+     ],
+     "answer": "A",
+     "explanation": "5 和 9 相乘用五九四十五，积是 45；六九五十四算的是 6×9，五八四十算的是 5×8。"
+    },
+    {
+     "id": "mbj_p121_q6",
+     "topicId": "mbj_p121",
+     "prompt": "5×（ ）＝45，括号里填几？",
+     "question": "5×（ ）＝45，括号里填几？",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "9",
+     "explanation": "想 5 乘几得 45，口诀五九四十五，所以括号里填 9。"
+    },
+    {
+     "id": "mbj_p121_q7",
+     "topicId": "mbj_p121",
+     "prompt": "每张桌子坐 5 人，7 张桌子一共坐多少人？只填数字。",
+     "question": "每张桌子坐 5 人，7 张桌子一共坐多少人？只填数字。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "35",
+     "verify": "5*7",
+     "explanation": "7 张桌子每张 5 人，就是 7 个 5，5×7＝35，一共坐 35 人。"
+    },
+    {
+     "id": "mbj_p121_q8",
+     "topicId": "mbj_p121",
+     "prompt": "5 的乘法口诀中，积的末位数字有什么规律？为什么会有这个规律？",
+     "question": "5 的乘法口诀中，积的末位数字有什么规律？为什么会有这个规律？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "5 的口诀积的末位总是 0 或 5：5 乘单数末位是 5，5 乘双数末位是 0。因为每多一个 5，末位就在 0 和 5 之间轮换。",
+     "explanation": "利用末位规律可以快速检查算得对不对，也能帮助记住口诀，避免把五八四十记成四十五。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p122",
+   "name": "用2和5的口诀解决问题",
+   "level": "lesson",
+   "description": "在生活情境中运用 2 和 5 的乘法口诀解决“求几个几”的实际问题，学会找出每份数和份数，会列乘法算式并写出答语，体会乘法在生活中的用处。",
+   "mastery_criteria": [
+    "能从情境中找出每份数和份数",
+    "会列乘法算式解决简单实际问题",
+    "能写出完整的答语并检查结果"
+   ],
+   "misconceptions": [
+    "把每份数和份数弄反后算错积",
+    "看到“一共”就用加法，不判断加数是否相同",
+    "算完结果忘记写答语和单位"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.07",
+    "quote": "在简单的生活情境中，运用数和数的运算解决问题，能解释结果的实际意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p122_q1",
+     "topicId": "mbj_p122",
+     "prompt": "每盒装 2 支笔，5 盒一共装多少支？",
+     "question": "每盒装 2 支笔，5 盒一共装多少支？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "7 支"
+      },
+      {
+       "label": "B",
+       "text": "3 支"
+      },
+      {
+       "label": "C",
+       "text": "10 支"
+      },
+      {
+       "label": "D",
+       "text": "12 支"
+      }
+     ],
+     "answer": "C",
+     "explanation": "5 盒每盒 2 支，就是 5 个 2，2×5＝10，一共 10 支。"
+    },
+    {
+     "id": "mbj_p122_q2",
+     "topicId": "mbj_p122",
+     "prompt": "每排站 5 人，3 排一共站多少人？只填数字。",
+     "question": "每排站 5 人，3 排一共站多少人？只填数字。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "15",
+     "verify": "5*3",
+     "explanation": "3 排每排 5 人，是 3 个 5，5×3＝15，一共站 15 人。"
+    },
+    {
+     "id": "mbj_p122_q3",
+     "topicId": "mbj_p122",
+     "prompt": "2 个 5 相加，和是多少？填在括号里：2 个 5 相加是（ ）。",
+     "question": "2 个 5 相加，和是多少？填在括号里：2 个 5 相加是（ ）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "10",
+     "explanation": "2 个 5 就是 5＋5＝10，也可以用口诀二五一十直接算出 10。"
+    },
+    {
+     "id": "mbj_p122_q4",
+     "topicId": "mbj_p122",
+     "prompt": "一枝花 5 元，买 4 枝要多少元？只填数字。",
+     "question": "一枝花 5 元，买 4 枝要多少元？只填数字。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "20",
+     "verify": "5*4",
+     "explanation": "4 枝每枝 5 元，就是 4 个 5，5×4＝20，一共要 20 元。"
+    },
+    {
+     "id": "mbj_p122_q5",
+     "topicId": "mbj_p122",
+     "prompt": "有 2 盘桃子，每盘 5 个，求一共有几个，应该怎样列式？",
+     "question": "有 2 盘桃子，每盘 5 个，求一共有几个，应该怎样列式？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "5＋2"
+      },
+      {
+       "label": "B",
+       "text": "5－2"
+      },
+      {
+       "label": "C",
+       "text": "5×2"
+      },
+      {
+       "label": "D",
+       "text": "5＋5＋5"
+      }
+     ],
+     "answer": "C",
+     "explanation": "2 盘每盘 5 个，是 2 个 5，用乘法 5×2＝10；5＋5＋5 算的是 3 盘。"
+    },
+    {
+     "id": "mbj_p122_q6",
+     "topicId": "mbj_p122",
+     "prompt": "每天读 2 页课外书，7 天一共读多少页？只填数字。",
+     "question": "每天读 2 页课外书，7 天一共读多少页？只填数字。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "14",
+     "verify": "2*7",
+     "explanation": "7 天每天 2 页，是 7 个 2，2×7＝14，一共读 14 页。"
+    },
+    {
+     "id": "mbj_p122_q7",
+     "topicId": "mbj_p122",
+     "prompt": "一根绳子对折后长 5 厘米，这根绳子原来长多少厘米？",
+     "question": "一根绳子对折后长 5 厘米，这根绳子原来长多少厘米？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "10 厘米"
+      },
+      {
+       "label": "B",
+       "text": "5 厘米"
+      },
+      {
+       "label": "C",
+       "text": "7 厘米"
+      },
+      {
+       "label": "D",
+       "text": "15 厘米"
+      }
+     ],
+     "answer": "A",
+     "explanation": "对折后是原来的一半，说明原来有 2 个 5 厘米，5×2＝10，原来长 10 厘米。"
+    },
+    {
+     "id": "mbj_p122_q8",
+     "topicId": "mbj_p122",
+     "prompt": "请你举一个生活中用 2 或 5 的乘法口诀解决的实际问题，并列出算式。",
+     "question": "请你举一个生活中用 2 或 5 的乘法口诀解决的实际问题，并列出算式。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "例如：一副手套有 2 只，买 5 副一共有多少只？这是 5 个 2，列式 2×5＝10（只），答：一共有 10 只手套。",
+     "explanation": "编题要说清每份是多少、有几份，再用乘法算总数，最后别忘写单位和答语。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p123",
+   "name": "3的乘法口诀",
+   "level": "lesson",
+   "description": "借助摆小棒、数三角形等活动编出 3 的乘法口诀，理解“几个 3”与乘法算式的对应关系，能熟记口诀口算，并用它解决简单的实际问题。",
+   "mastery_criteria": [
+    "能按顺序说出 3 的乘法口诀",
+    "能用 3 的口诀口算乘法",
+    "能用 3 的口诀解决求几个 3 的问题"
+   ],
+   "misconceptions": [
+    "把“三四十二”说成“三四十五”",
+    "算 3×7 时拿出三七二十的口诀",
+    "3 个 3 相加算成 6"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.05",
+    "quote": "探索乘法和除法的算理与算法，会简单的整数乘除法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p123_q1",
+     "topicId": "mbj_p123",
+     "prompt": "口诀“三三得（ ）”，括号里填什么？",
+     "question": "口诀“三三得（ ）”，括号里填什么？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "九",
+     "explanation": "3 个 3 相加是 3＋3＋3＝9，口诀是三三得九。"
+    },
+    {
+     "id": "mbj_p123_q2",
+     "topicId": "mbj_p123",
+     "prompt": "3×4 的积是多少？只填数字。",
+     "question": "3×4 的积是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "12",
+     "verify": "3*4",
+     "explanation": "用口诀三四十二，3×4＝12，它表示 4 个 3 相加。"
+    },
+    {
+     "id": "mbj_p123_q3",
+     "topicId": "mbj_p123",
+     "prompt": "口诀“三五十五”可以计算哪个算式？",
+     "question": "口诀“三五十五”可以计算哪个算式？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "3＋5"
+      },
+      {
+       "label": "B",
+       "text": "5－3"
+      },
+      {
+       "label": "C",
+       "text": "3×3"
+      },
+      {
+       "label": "D",
+       "text": "3×5"
+      }
+     ],
+     "answer": "D",
+     "explanation": "三五十五表示 3 和 5 相乘得 15，所以能算 3×5＝15，也能算 5×3＝15。"
+    },
+    {
+     "id": "mbj_p123_q4",
+     "topicId": "mbj_p123",
+     "prompt": "3×7 的积是多少？只填数字。",
+     "question": "3×7 的积是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "21",
+     "verify": "3*7",
+     "explanation": "用口诀三七二十一，3×7＝21，7 个 3 相加是 21。"
+    },
+    {
+     "id": "mbj_p123_q5",
+     "topicId": "mbj_p123",
+     "prompt": "根据一句口诀“三四十二”，能写出几道乘法算式？",
+     "question": "根据一句口诀“三四十二”，能写出几道乘法算式？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "一道"
+      },
+      {
+       "label": "B",
+       "text": "两道"
+      },
+      {
+       "label": "C",
+       "text": "三道"
+      },
+      {
+       "label": "D",
+       "text": "四道"
+      }
+     ],
+     "answer": "B",
+     "explanation": "两个因数不同的口诀能写两道乘法算式：3×4 和 4×3；两个因数相同的口诀（如三三得九）只能写一道。"
+    },
+    {
+     "id": "mbj_p123_q6",
+     "topicId": "mbj_p123",
+     "prompt": "3×（ ）＝27，括号里填几？",
+     "question": "3×（ ）＝27，括号里填几？",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "9",
+     "explanation": "想 3 乘几得 27，口诀三九二十七，所以括号里填 9。"
+    },
+    {
+     "id": "mbj_p123_q7",
+     "topicId": "mbj_p123",
+     "prompt": "3×8 比 3×7 多多少？只填数字。",
+     "question": "3×8 比 3×7 多多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "3",
+     "verify": "3*8-3*7",
+     "explanation": "3×8 是 8 个 3，3×7 是 7 个 3，8 个 3 比 7 个 3 多 1 个 3，所以多 3。"
+    },
+    {
+     "id": "mbj_p123_q8",
+     "topicId": "mbj_p123",
+     "prompt": "3 的乘法口诀中，积是怎样变化的？说说你的发现。",
+     "question": "3 的乘法口诀中，积是怎样变化的？说说你的发现。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "从一三得三开始，每多一个 3，积就多 3：3、6、9、12、15…… 所以按顺序背时，后一句的积总比前一句多 3，用这个规律能推出下一句。",
+     "explanation": "口诀的顺序对应几个 3，找到“每次多 3”的规律，背错时就能自己查出来。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p124",
+   "name": "4的乘法口诀",
+   "level": "lesson",
+   "description": "通过数正方形、摆小棒等活动编出 4 的乘法口诀，理解每句口诀的意思，能熟练口算与 4 有关的乘法，并会用口诀解决简单的实际问题。",
+   "mastery_criteria": [
+    "能按顺序背诵 4 的乘法口诀",
+    "能用 4 的口诀口算乘法",
+    "能用 4 的口诀解决实际问题"
+   ],
+   "misconceptions": [
+    "把“四四十六”说成“四四十二”",
+    "算 4×6 时误用四七二十八",
+    "认为 4 的口诀积都是单数"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.05",
+    "quote": "探索乘法和除法的算理与算法，会简单的整数乘除法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p124_q1",
+     "topicId": "mbj_p124",
+     "prompt": "口诀“四四（ ）”，括号里填什么？",
+     "question": "口诀“四四（ ）”，括号里填什么？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "十六",
+     "explanation": "4 个 4 相加是 4＋4＋4＋4＝16，口诀是四四十六。"
+    },
+    {
+     "id": "mbj_p124_q2",
+     "topicId": "mbj_p124",
+     "prompt": "4×5 的积是多少？只填数字。",
+     "question": "4×5 的积是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "20",
+     "verify": "4*5",
+     "explanation": "用口诀四五二十，4×5＝20，它表示 5 个 4 相加。"
+    },
+    {
+     "id": "mbj_p124_q3",
+     "topicId": "mbj_p124",
+     "prompt": "口诀“四七二十八”表示哪个算式？",
+     "question": "口诀“四七二十八”表示哪个算式？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "4＋7＝11"
+      },
+      {
+       "label": "B",
+       "text": "4×7＝28"
+      },
+      {
+       "label": "C",
+       "text": "7－4＝3"
+      },
+      {
+       "label": "D",
+       "text": "4×4＝16"
+      }
+     ],
+     "answer": "B",
+     "explanation": "四七二十八就是 4 和 7 相乘得 28，写作 4×7＝28。"
+    },
+    {
+     "id": "mbj_p124_q4",
+     "topicId": "mbj_p124",
+     "prompt": "4×9 的积是多少？只填数字。",
+     "question": "4×9 的积是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "36",
+     "verify": "4*9",
+     "explanation": "用口诀四九三十六，4×9＝36，9 个 4 相加是 36。"
+    },
+    {
+     "id": "mbj_p124_q5",
+     "topicId": "mbj_p124",
+     "prompt": "计算 4×6 要用哪句口诀？",
+     "question": "计算 4×6 要用哪句口诀？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "四六二十"
+      },
+      {
+       "label": "B",
+       "text": "六六三十六"
+      },
+      {
+       "label": "C",
+       "text": "四五二十"
+      },
+      {
+       "label": "D",
+       "text": "四六二十四"
+      }
+     ],
+     "answer": "D",
+     "explanation": "4 和 6 相乘用四六二十四，积是 24；六六三十六算的是 6×6，四五二十算的是 4×5。"
+    },
+    {
+     "id": "mbj_p124_q6",
+     "topicId": "mbj_p124",
+     "prompt": "4×（ ）＝32，括号里填几？",
+     "question": "4×（ ）＝32，括号里填几？",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "8",
+     "explanation": "想 4 乘几得 32，口诀四八三十二，所以括号里填 8。"
+    },
+    {
+     "id": "mbj_p124_q7",
+     "topicId": "mbj_p124",
+     "prompt": "4×7 的积与 7×4 的积相加，和是多少？只填数字。",
+     "question": "4×7 的积与 7×4 的积相加，和是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "56",
+     "verify": "4*7+7*4",
+     "explanation": "4×7＝28，7×4 的积也是 28，两个积相加 28＋28＝56，交换因数位置积不变。"
+    },
+    {
+     "id": "mbj_p124_q8",
+     "topicId": "mbj_p124",
+     "prompt": "4 的乘法口诀的积有什么特点？请举例说明。",
+     "question": "4 的乘法口诀的积有什么特点？请举例说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "4 的口诀积都是双数，比如四四十六、四五二十、四六二十四；而且后一句的积比前一句多 4，按顺序背很容易记住。",
+     "explanation": "积都是双数，因为 4 本身是双数，每次再加 4 仍然是双数，这条特点能帮助检查得数。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p125",
+   "name": "口诀练习与游戏",
+   "level": "lesson",
+   "description": "通过对口令、开火车、找规律等游戏形式练习 2、3、4、5 的乘法口诀，提高口算的熟练程度和正确率，能在游戏中发现并改正自己背错的口诀。",
+   "mastery_criteria": [
+    "能在一分钟内正确口算一组表内乘法",
+    "能发现并改正错误的口诀",
+    "能用规律帮助记忆和检查得数"
+   ],
+   "misconceptions": [
+    "口诀背得顺，但和算式对不上",
+    "把“二七十四”和“二六十二”混淆",
+    "只求快不求对，算完不检查"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.05",
+    "quote": "探索乘法和除法的算理与算法，会简单的整数乘除法"
+   },
+   "questions": [
+    {
+     "id": "mbj_p125_q1",
+     "topicId": "mbj_p125",
+     "prompt": "2×8 的积是多少？只填数字。",
+     "question": "2×8 的积是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "16",
+     "verify": "2*8",
+     "explanation": "用口诀二八十六，2×8＝16，8 个 2 相加是 16。"
+    },
+    {
+     "id": "mbj_p125_q2",
+     "topicId": "mbj_p125",
+     "prompt": "口诀“四五（ ）”，括号里填什么？",
+     "question": "口诀“四五（ ）”，括号里填什么？",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "二十",
+     "explanation": "4 个 5 相加是 5＋5＋5＋5＝20，口诀是四五二十。"
+    },
+    {
+     "id": "mbj_p125_q3",
+     "topicId": "mbj_p125",
+     "prompt": "下面四句乘法口诀中，哪一句写错了？",
+     "question": "下面四句乘法口诀中，哪一句写错了？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "三五十六"
+      },
+      {
+       "label": "B",
+       "text": "三四十二"
+      },
+      {
+       "label": "C",
+       "text": "四五二十"
+      },
+      {
+       "label": "D",
+       "text": "二七十四"
+      }
+     ],
+     "answer": "A",
+     "explanation": "3 个 5 相加是 15，正确口诀是三五十五；三五十六既数错了，也不符合 5 的口诀末位规律。"
+    },
+    {
+     "id": "mbj_p125_q4",
+     "topicId": "mbj_p125",
+     "prompt": "4×4＋4 的结果是多少？只填数字。",
+     "question": "4×4＋4 的结果是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "20",
+     "verify": "4*4+4",
+     "explanation": "先算 4×4＝16，再加上 4，16＋4＝20；也可以把它看成 5 个 4 相加。"
+    },
+    {
+     "id": "mbj_p125_q5",
+     "topicId": "mbj_p125",
+     "prompt": "口诀“六六三十六”能计算哪个算式？",
+     "question": "口诀“六六三十六”能计算哪个算式？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "6＋6"
+      },
+      {
+       "label": "B",
+       "text": "6×3"
+      },
+      {
+       "label": "C",
+       "text": "6×6"
+      },
+      {
+       "label": "D",
+       "text": "3×6"
+      }
+     ],
+     "answer": "C",
+     "explanation": "六六三十六表示两个 6 相乘得 36，所以算的是 6×6＝36，其余算式都不是 6 乘 6。"
+    },
+    {
+     "id": "mbj_p125_q6",
+     "topicId": "mbj_p125",
+     "prompt": "算一算：5×8 的积是多少？填在括号里。",
+     "question": "算一算：5×8 的积是多少？填在括号里。",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "40",
+     "explanation": "用口诀五八四十，5×8＝40，8 个 5 相加是 40。"
+    },
+    {
+     "id": "mbj_p125_q7",
+     "topicId": "mbj_p125",
+     "prompt": "在 3×□＝24 中，□表示多少？只填数字。",
+     "question": "在 3×□＝24 中，□表示多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "8",
+     "verify": "24/3",
+     "explanation": "想 3 乘几得 24，口诀三八二十四，所以□表示 8。"
+    },
+    {
+     "id": "mbj_p125_q8",
+     "topicId": "mbj_p125",
+     "prompt": "怎样练习才能又快又准地记住乘法口诀？写出两条你的办法。",
+     "question": "怎样练习才能又快又准地记住乘法口诀？写出两条你的办法。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "第一，按顺序背，边背边想每句多几，比如 5 的口诀每次多 5；第二，把口诀和算式对起来练，同桌互相抽问，背错就立刻查是哪一句记错了。",
+     "explanation": "理解规律加反复对练，比单纯重复念更容易记牢，也便于自己发现和改正错误。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p126",
+   "name": "用乘法解决问题",
+   "level": "lesson",
+   "description": "学习用乘法解决求几个几的实际问题：会从图和文字中找出每份数和份数，会列式、计算并写答语，能说明算式表示的意思，初步形成应用意识。",
+   "mastery_criteria": [
+    "能找出题目中的每份数和份数",
+    "会列乘法算式并正确计算",
+    "能完整写出答语并说明算式的意思"
+   ],
+   "misconceptions": [
+    "把每份数和份数的位置弄反，说反了意思",
+    "遇到“一共”就一律用加法",
+    "列式正确但答语写错单位"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.07",
+    "quote": "在简单的生活情境中，运用数和数的运算解决问题，能解释结果的实际意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p126_q1",
+     "topicId": "mbj_p126",
+     "prompt": "每盒装 6 个鸡蛋，3 盒一共有多少个？",
+     "question": "每盒装 6 个鸡蛋，3 盒一共有多少个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "9 个"
+      },
+      {
+       "label": "B",
+       "text": "3 个"
+      },
+      {
+       "label": "C",
+       "text": "18 个"
+      },
+      {
+       "label": "D",
+       "text": "15 个"
+      }
+     ],
+     "answer": "C",
+     "explanation": "3 盒每盒 6 个，是 3 个 6，6×3＝18，一共有 18 个。"
+    },
+    {
+     "id": "mbj_p126_q2",
+     "topicId": "mbj_p126",
+     "prompt": "做操时每行站 4 人，5 行一共站多少人？只填数字。",
+     "question": "做操时每行站 4 人，5 行一共站多少人？只填数字。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "20",
+     "verify": "4*5",
+     "explanation": "5 行每行 4 人，是 5 个 4，4×5＝20，一共站 20 人。"
+    },
+    {
+     "id": "mbj_p126_q3",
+     "topicId": "mbj_p126",
+     "prompt": "一个书包 5 元，买 4 个一共要（ ）元。",
+     "question": "一个书包 5 元，买 4 个一共要（ ）元。",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "20",
+     "explanation": "4 个书包每个 5 元，是 4 个 5，5×4＝20，一共要 20 元。"
+    },
+    {
+     "id": "mbj_p126_q4",
+     "topicId": "mbj_p126",
+     "prompt": "每张桌子有 4 条腿，6 张桌子一共有多少条腿？只填数字。",
+     "question": "每张桌子有 4 条腿，6 张桌子一共有多少条腿？只填数字。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "24",
+     "verify": "4*6",
+     "explanation": "6 张桌子每张 4 条腿，是 6 个 4，4×6＝24，一共 24 条腿。"
+    },
+    {
+     "id": "mbj_p126_q5",
+     "topicId": "mbj_p126",
+     "prompt": "求“3 个 5 是多少”，应该用哪个算式？",
+     "question": "求“3 个 5 是多少”，应该用哪个算式？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "5×3"
+      },
+      {
+       "label": "B",
+       "text": "5＋3"
+      },
+      {
+       "label": "C",
+       "text": "5－3"
+      },
+      {
+       "label": "D",
+       "text": "3＋3＋3"
+      }
+     ],
+     "answer": "A",
+     "explanation": "3 个 5 相加就是 5×3，得 15；3＋3＋3 是 3 个 3，不是 3 个 5。"
+    },
+    {
+     "id": "mbj_p126_q6",
+     "topicId": "mbj_p126",
+     "prompt": "一本故事书 7 元，买 4 本一共要多少元？只填数字。",
+     "question": "一本故事书 7 元，买 4 本一共要多少元？只填数字。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "28",
+     "verify": "7*4",
+     "explanation": "4 本每本 7 元，是 4 个 7，7×4＝28，一共要 28 元。"
+    },
+    {
+     "id": "mbj_p126_q7",
+     "topicId": "mbj_p126",
+     "prompt": "每袋糖有 5 块，妈妈买了 4 袋，又另外买了 2 块。一共有多少块糖？",
+     "question": "每袋糖有 5 块，妈妈买了 4 袋，又另外买了 2 块。一共有多少块糖？",
+     "type": "choice",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "20 块"
+      },
+      {
+       "label": "B",
+       "text": "11 块"
+      },
+      {
+       "label": "C",
+       "text": "25 块"
+      },
+      {
+       "label": "D",
+       "text": "22 块"
+      }
+     ],
+     "answer": "D",
+     "explanation": "先算 4 袋有多少：5×4＝20 块，再加上另外的 2 块，20＋2＝22，一共 22 块。"
+    },
+    {
+     "id": "mbj_p126_q8",
+     "topicId": "mbj_p126",
+     "prompt": "请你用算式 4×6 编一道生活中的数学问题，并说出算式中每个数表示什么。",
+     "question": "请你用算式 4×6 编一道生活中的数学问题，并说出算式中每个数表示什么。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "例如：每排摆 4 盆花，摆了 6 排，一共有多少盆花？列式 4×6＝24（盆），答：一共有 24 盆。其中 4 表示每排的盆数，6 表示排数。",
+     "explanation": "编题时要说清每份数和份数，算式的两个因数正好对应这两个数量，答语还要带单位。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p127",
+   "name": "综合练习",
+   "level": "lesson",
+   "description": "综合运用长度单位厘米和米、表内乘法口诀和乘法解决问题，通过混合练习巩固单位换算、口诀口算和两步计算，提高分析问题和检查结果的能力。",
+   "mastery_criteria": [
+    "能正确进行米与厘米之间的换算",
+    "能熟练口算表内乘法",
+    "能解决含乘法和加减法的简单实际问题"
+   ],
+   "misconceptions": [
+    "把 1 米－30 厘米算成 70 米",
+    "混合运算顺序错，先算加减再算乘法",
+    "单位不统一就直接相减"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.15",
+    "quote": "在简单的生活情境中，运用数和数的运算解决问题，能解释结果的实际意义，形成初步的应用意识。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p127_q1",
+     "topicId": "mbj_p127",
+     "prompt": "算一算：3×5 的积是多少？把结果填在括号里。",
+     "question": "算一算：3×5 的积是多少？把结果填在括号里。",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "15",
+     "explanation": "用口诀三五十五，3×5＝15，它表示 5 个 3 相加。"
+    },
+    {
+     "id": "mbj_p127_q2",
+     "topicId": "mbj_p127",
+     "prompt": "4＋4＋4＋4 写成乘法算式后，积是多少？只填数字。",
+     "question": "4＋4＋4＋4 写成乘法算式后，积是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "16",
+     "verify": "4*4",
+     "explanation": "4 个 4 相加写成 4×4，用口诀四四十六，积是 16。"
+    },
+    {
+     "id": "mbj_p127_q3",
+     "topicId": "mbj_p127",
+     "prompt": "下面算式中，积是 24 的是哪一个？",
+     "question": "下面算式中，积是 24 的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "4＋6"
+      },
+      {
+       "label": "B",
+       "text": "4×6"
+      },
+      {
+       "label": "C",
+       "text": "6×6"
+      },
+      {
+       "label": "D",
+       "text": "5×4"
+      }
+     ],
+     "answer": "B",
+     "explanation": "4×6 用口诀四六二十四得 24；4＋6＝10，6×6＝36，5×4＝20，都不是 24。"
+    },
+    {
+     "id": "mbj_p127_q4",
+     "topicId": "mbj_p127",
+     "prompt": "5×7－5 的结果是多少？只填数字。",
+     "question": "5×7－5 的结果是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "30",
+     "verify": "5*7-5",
+     "explanation": "先算 5×7＝35，再减去 5，35－5＝30；也可以把它看成 6 个 5 相加。"
+    },
+    {
+     "id": "mbj_p127_q5",
+     "topicId": "mbj_p127",
+     "prompt": "一根绳子长 100 厘米，也就是多长？",
+     "question": "一根绳子长 100 厘米，也就是多长？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "10 米"
+      },
+      {
+       "label": "B",
+       "text": "1 米"
+      },
+      {
+       "label": "C",
+       "text": "100 米"
+      },
+      {
+       "label": "D",
+       "text": "10 厘米"
+      }
+     ],
+     "answer": "B",
+     "explanation": "100 厘米里面有 100 个 1 厘米，正好是 1 米，所以 100 厘米＝1 米。"
+    },
+    {
+     "id": "mbj_p127_q6",
+     "topicId": "mbj_p127",
+     "prompt": "1 米－30 厘米＝（ ）厘米。",
+     "question": "1 米－30 厘米＝（ ）厘米。",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "70",
+     "explanation": "先把 1 米换成 100 厘米，单位相同才能相减，100－30＝70，所以是 70 厘米。"
+    },
+    {
+     "id": "mbj_p127_q7",
+     "topicId": "mbj_p127",
+     "prompt": "3×6 的积与 6×3 的积相加，和是多少？只填数字。",
+     "question": "3×6 的积与 6×3 的积相加，和是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "36",
+     "verify": "3*6+6*3",
+     "explanation": "3×6＝18，6×3 的积也是 18，18＋18＝36，交换因数位置积不变。"
+    },
+    {
+     "id": "mbj_p127_q8",
+     "topicId": "mbj_p127",
+     "prompt": "这一单元你学到了哪些本领？请从长度单位、乘法口诀、解决问题三方面各说一句。",
+     "question": "这一单元你学到了哪些本领？请从长度单位、乘法口诀、解决问题三方面各说一句。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "长度单位方面，我认识了厘米和米，知道 1 米＝100 厘米；乘法方面，我会背 2、3、4、5 的口诀并口算；解决问题方面，我会找每份数和份数，列乘法算式并写答语。",
+     "explanation": "按“学了什么—会做什么—能解决什么问题”三方面整理，零散的知识就能连成一片。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p128",
+   "name": "回顾与反思",
+   "level": "lesson",
+   "description": "回顾本单元的学习过程，整理乘法的意义、口诀的编排规律和用乘法解决问题的步骤，反思自己容易出错的地方，学会用检查和举例的方法改进学习。",
+   "mastery_criteria": [
+    "能用自己的话说出乘法的意义",
+    "能整理出乘法口诀的排列规律",
+    "能说出自己的易错处并找到改正办法"
+   ],
+   "misconceptions": [
+    "复习时只念口诀，不联系算式和情境",
+    "认为口诀背完就学会了，不做应用题",
+    "错题只改答案，不想错在哪里"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p128_q1",
+     "topicId": "mbj_p128",
+     "prompt": "求几个相同加数的和，用下面哪种方法计算比较简便？",
+     "question": "求几个相同加数的和，用下面哪种方法计算比较简便？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "加法"
+      },
+      {
+       "label": "B",
+       "text": "减法"
+      },
+      {
+       "label": "C",
+       "text": "一个一个地数"
+      },
+      {
+       "label": "D",
+       "text": "乘法"
+      }
+     ],
+     "answer": "D",
+     "explanation": "几个相同加数相加时，用乘法只要一句口诀就能算出结果，比连加快得多。"
+    },
+    {
+     "id": "mbj_p128_q2",
+     "topicId": "mbj_p128",
+     "prompt": "5＋5＋5 写成乘法算式是 5×（ ）。",
+     "question": "5＋5＋5 写成乘法算式是 5×（ ）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "3",
+     "explanation": "5＋5＋5 是 3 个 5 相加，所以写成 5×3，括号里填 3。"
+    },
+    {
+     "id": "mbj_p128_q3",
+     "topicId": "mbj_p128",
+     "prompt": "6×6 的积是多少？只填数字。",
+     "question": "6×6 的积是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "36",
+     "verify": "6*6",
+     "explanation": "用口诀六六三十六，6×6＝36，6 个 6 相加是 36。"
+    },
+    {
+     "id": "mbj_p128_q4",
+     "topicId": "mbj_p128",
+     "prompt": "回顾乘法的意义，下面哪句话是错的？",
+     "question": "回顾乘法的意义，下面哪句话是错的？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "乘法就是加法"
+      },
+      {
+       "label": "B",
+       "text": "乘法是求几个相同加数和的简便运算"
+      },
+      {
+       "label": "C",
+       "text": "交换两个因数的位置，积不变"
+      },
+      {
+       "label": "D",
+       "text": "用口诀算乘法又快又准"
+      }
+     ],
+     "answer": "A",
+     "explanation": "乘法是加法的简便运算，但不能说乘法就是加法，因为乘法只适用于加数相同的情况。"
+    },
+    {
+     "id": "mbj_p128_q5",
+     "topicId": "mbj_p128",
+     "prompt": "6×5 的积是多少？只填数字。",
+     "question": "6×5 的积是多少？只填数字。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "30",
+     "verify": "6*5",
+     "explanation": "用口诀五六三十，6×5＝30，5 个 6 相加是 30。"
+    },
+    {
+     "id": "mbj_p128_q6",
+     "topicId": "mbj_p128",
+     "prompt": "一句口诀“四五二十”能写出两道乘法算式：4×5 和（ ）。",
+     "question": "一句口诀“四五二十”能写出两道乘法算式：4×5 和（ ）。",
+     "type": "fill",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "5×4",
+     "explanation": "两个因数不同的口诀可以交换因数位置写两道算式，4×5 和 5×4 的积都是 20。"
+    },
+    {
+     "id": "mbj_p128_q7",
+     "topicId": "mbj_p128",
+     "prompt": "有 4 个盘子，每盘放 5 个苹果，吃掉 3 个后还剩多少个？只填数字。",
+     "question": "有 4 个盘子，每盘放 5 个苹果，吃掉 3 个后还剩多少个？只填数字。",
+     "type": "numeric",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "17",
+     "verify": "4*5-3",
+     "explanation": "先算一共有 5×4＝20 个，再减去吃掉的 3 个，20－3＝17，还剩 17 个。"
+    },
+    {
+     "id": "mbj_p128_q8",
+     "topicId": "mbj_p128",
+     "prompt": "复习乘法时，你觉得自己最容易错在哪里？打算怎样避免？",
+     "question": "复习乘法时，你觉得自己最容易错在哪里？打算怎样避免？",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "我容易把口诀和算式对错，比如把四五二十记成四五二十四。以后背口诀时要把对应的算式一起说，做完题再把答案用口诀验一遍。",
+     "explanation": "找出具体的错点再配一个能操作的办法，比笼统地说“要细心”有用得多。"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p129",
+   "name": "调查与分类",
+   "level": "unit",
+   "description": "经历收集数据、分类整理的过程，认识按一定标准分类的方法，会用画勾、写数等方式记录调查结果，能根据整理的数据回答简单问题，初步形成数据意识。",
+   "mastery_criteria": [
+    "能按一个标准把物体或数据分类",
+    "会用画勾、写数等方法记录调查结果",
+    "能根据整理的结果回答简单问题"
+   ],
+   "misconceptions": [
+    "分类时标准不统一，同一类里混进别的东西",
+    "记录时漏数或重复数同一个对象",
+    "认为换一个标准分类，结果一定相同"
+   ],
+   "std": {
+    "id": "mat-2022:1.NR.12",
+    "quote": "会对物体、图形或数据进行分类，初步了解分类与分类标准的关系"
+   },
+   "questions": [
+    {
+     "id": "mbj_p129_q1",
+     "topicId": "mbj_p129",
+     "prompt": "要调查全班同学最喜欢的水果，第一步应该做什么？",
+     "question": "要调查全班同学最喜欢的水果，第一步应该做什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "直接猜一个结果填上"
+      },
+      {
+       "label": "B",
+       "text": "先算全班一共有多少人"
+      },
+      {
+       "label": "C",
+       "text": "逐个调查并记录每人喜欢的水果"
+      },
+      {
+       "label": "D",
+       "text": "先画好表格随便填数字"
+      }
+     ],
+     "answer": "C",
+     "explanation": "统计要先收集真实的数据，挨个问清并记录下来，才能整理出可靠的结果，猜出来的数不能用。"
+    },
+    {
+     "id": "mbj_p129_q2",
+     "topicId": "mbj_p129",
+     "prompt": "把特征相同的东西放在一起，这样的做法叫（ ）。",
+     "question": "把特征相同的东西放在一起，这样的做法叫（ ）。",
+     "type": "fill",
+     "difficulty": "basic",
+     "subject": "math-bj",
+     "answer": "分类",
+     "explanation": "分类就是按一定的标准把特征相同的事物归在一起，标准不同，分出的结果也可能不同。"
+    },
+    {
+     "id": "mbj_p129_q3",
+     "topicId": "mbj_p129",
+     "prompt": "同样一堆扣子，按颜色分类和按形状分类，分出的结果会怎样？",
+     "question": "同样一堆扣子，按颜色分类和按形状分类，分出的结果会怎样？",
+     "type": "choice",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "一定相同"
+      },
+      {
+       "label": "B",
+       "text": "一定都分成两堆"
+      },
+      {
+       "label": "C",
+       "text": "可能不同"
+      },
+      {
+       "label": "D",
+       "text": "无法分类"
+      }
+     ],
+     "answer": "C",
+     "explanation": "分类标准不同，每一类里的成员就会不同，所以结果可能不一样，但都能把扣子分完。"
+    },
+    {
+     "id": "mbj_p129_q4",
+     "topicId": "mbj_p129",
+     "prompt": "调查结果：喜欢跳绳的有 8 人，喜欢踢球的有 6 人，喜欢拍球的有 5 人。一共调查了多少人？只填数字。",
+     "question": "调查结果：喜欢跳绳的有 8 人，喜欢踢球的有 6 人，喜欢拍球的有 5 人。一共调查了多少人？只填数字。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "subject": "math-bj",
+     "answer": "19",
+     "verify": "8+6+5",
+     "explanation": "把三类人数合起来就是总人数，8＋6＋5＝19，一共调查了 19 人。"
+    },
+    {
+     "id": "mbj_p129_q5",
+     "topicId": "mbj_p129",
+     "prompt": "分类前为什么要先确定标准？请举例说明。",
+     "question": "分类前为什么要先确定标准？请举例说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "subject": "math-bj",
+     "answer": "如果没有标准，同一堆东西可能被分得很乱，有人按颜色放，有人按大小放，结果说不清。比如整理书包按学科分类，语文书和语文本放一起，找起来又快又清楚。",
+     "explanation": "标准决定分类的结果和用途，先定标准才能保证分类一致，分完的结果才好用。"
+    }
+   ]
+  }
+ ]
+}

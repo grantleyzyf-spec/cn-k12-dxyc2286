@@ -1,0 +1,4191 @@
+{
+ "shard": "S17",
+ "subject": "math-bj",
+ "book": "四上",
+ "seg": "小学",
+ "grade": 4,
+ "semester": "上",
+ "points": [
+  {
+   "topicId": "mbj_p311",
+   "description": "认识万、十万、百万、千万、亿等计数单位，理解相邻两个计数单位之间的十进关系，能借助数位顺序表读写亿以内的数，会把整万、整亿的数改写并用四舍五入法求近似数。",
+   "mastery_criteria": [
+    "说出亿以内各数位的名称与顺序",
+    "正确读写亿以内的多位数",
+    "把整万数改写成用万作单位的数"
+   ],
+   "misconceptions": [
+    "把中间的 0 漏读，3005000 读成三百零五万",
+    "改写时数错 0，4800000 写成 48 万",
+    "求近似数只看最高位，忽略保留位的下一位"
+   ],
+   "std": {
+    "id": "mat-2022:2.TS.01",
+    "quote": "知道大数的意义和四位一级的表示方法，建立数感"
+   },
+   "questions": [
+    {
+     "id": "mbj_p311_q1",
+     "topicId": "mbj_p311",
+     "prompt": "一个数的最高位是千万位，这个数是几位数？",
+     "question": "一个数的最高位是千万位，这个数是几位数？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "数位从右往左依次是个位、十位、百位、千位、万位、十万位、百万位、千万位，千万位排在第 8 位，所以这个数是八位数。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "六位数"
+      },
+      {
+       "label": "B",
+       "text": "八位数"
+      },
+      {
+       "label": "C",
+       "text": "七位数"
+      },
+      {
+       "label": "D",
+       "text": "九位数"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p311_q2",
+     "topicId": "mbj_p311",
+     "prompt": "某城市去年共接待游客 3600000 人次，把 3600000 改写成用「万」作单位的数，去掉「万」字后的数是多少？",
+     "question": "某城市去年共接待游客 3600000 人次，把 3600000 改写成用「万」作单位的数，去掉「万」字后的数是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "360",
+     "explanation": "改写成用万作单位，就是看这个数里面有多少个一万。3600000 里面有 360 个一万，所以去掉万字后是 360。",
+     "subject": "math-bj",
+     "verify": "3600000/10000"
+    },
+    {
+     "id": "mbj_p311_q3",
+     "topicId": "mbj_p311",
+     "prompt": "下面各数中，读作「三千零五万」的数是哪一个？",
+     "question": "下面各数中，读作「三千零五万」的数是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "A",
+     "explanation": "30050000 分级后万级是 3005，读作三千零五万，个级四个 0 都不读，只有 A 与题目一致。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "30050000"
+      },
+      {
+       "label": "B",
+       "text": "30500000"
+      },
+      {
+       "label": "C",
+       "text": "35000000"
+      },
+      {
+       "label": "D",
+       "text": "30005000"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p311_q4",
+     "topicId": "mbj_p311",
+     "prompt": "用 5、0、0、8、0、0、0、0 这八个数字组成最大的八位数，比最小八位数大多少？",
+     "question": "用 5、0、0、8、0、0、0、0 这八个数字组成最大的八位数，比最小八位数大多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "34999992",
+     "explanation": "最大的八位数把数字从大到小排：85000000；最小的八位数最高位取最小的非零数字 5，其余从小到大排：50000008。两者相差 34999992。",
+     "subject": "math-bj",
+     "verify": "85000000-50000008"
+    },
+    {
+     "id": "mbj_p311_q5",
+     "topicId": "mbj_p311",
+     "prompt": "说一说「四位一级」的分级方法，并举一个例子说明分级对读写大数有什么帮助。",
+     "question": "说一说「四位一级」的分级方法，并举一个例子说明分级对读写大数有什么帮助。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "从个位起每四位分一级，依次是个级、万级、亿级。例如 123456789 分级为 1|2345|6789，读数时先读亿级再读万级、个级，每级末尾的 0 不读，这样不容易漏位、错位。",
+     "explanation": "分级把长长的数位切成小组，每一组内部按个级的方法读写，再在后面加「万」「亿」，读数写数都有章可循，也不容易把数位对错。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p312",
+   "description": "结合人口、面积、路程等生活情境认识万、十万、百万、千万、亿等计数单位，知道每相邻两个计数单位之间的进率是十，能说出一个大数里含有多少个这样的计数单位。",
+   "mastery_criteria": [
+    "说出万级各计数单位的名称",
+    "指出相邻计数单位间的进率是十",
+    "数出亿以内一个数含有几个计数单位"
+   ],
+   "misconceptions": [
+    "认为十万和百万之间的进率是一百",
+    "把 10 个一万说成 100 万",
+    "把数位当计数单位，说「万位是一个计数单位」"
+   ],
+   "std": {
+    "id": "mat-2022:2.TS.01",
+    "quote": "知道大数的意义和四位一级的表示方法，建立数感"
+   },
+   "questions": [
+    {
+     "id": "mbj_p312_q1",
+     "topicId": "mbj_p312",
+     "prompt": "10 个一万合起来是多少？",
+     "question": "10 个一万合起来是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "一万的 10 倍就是十万，相邻两个计数单位之间的进率是十，所以 10 个一万是十万。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "十万"
+      },
+      {
+       "label": "B",
+       "text": "一百万"
+      },
+      {
+       "label": "C",
+       "text": "一千万"
+      },
+      {
+       "label": "D",
+       "text": "一亿"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p312_q2",
+     "topicId": "mbj_p312",
+     "prompt": "一个数由 3 个千万、6 个十万和 5 个一组成，这个数是多少？",
+     "question": "一个数由 3 个千万、6 个十万和 5 个一组成，这个数是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "3 个千万是 30000000，6 个十万是 600000，合起来是 30600000，再加上 5 得 30600005。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "36000005"
+      },
+      {
+       "label": "B",
+       "text": "30600005"
+      },
+      {
+       "label": "C",
+       "text": "30600050"
+      },
+      {
+       "label": "D",
+       "text": "30060005"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p312_q3",
+     "topicId": "mbj_p312",
+     "prompt": "一箱口罩有 10000 只，100 箱一共有多少万只口罩？",
+     "question": "一箱口罩有 10000 只，100 箱一共有多少万只口罩？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "100",
+     "explanation": "100 箱共 10000 乘 100 等于 1000000 只，1000000 里面有 100 个一万，所以是 100 万只。",
+     "subject": "math-bj",
+     "verify": "10000*100/10000"
+    },
+    {
+     "id": "mbj_p312_q4",
+     "topicId": "mbj_p312",
+     "prompt": "下面说法中，正确的是哪一个？",
+     "question": "下面说法中，正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "C",
+     "explanation": "万位是数位不是计数单位；一亿里面有 1000 个十万；10 个百万是一千万；只有相邻两个计数单位之间的进率是十这一说法正确。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "「万位」是一个计数单位"
+      },
+      {
+       "label": "B",
+       "text": "一亿里面有 100 个十万"
+      },
+      {
+       "label": "C",
+       "text": "相邻两个计数单位之间的进率是十"
+      },
+      {
+       "label": "D",
+       "text": "10 个百万是一亿"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p312_q5",
+     "topicId": "mbj_p312",
+     "prompt": "48000000 里面有多少个百万？",
+     "question": "48000000 里面有多少个百万？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "48",
+     "explanation": "一百万是 1000000，48000000 除以 1000000 得 48，所以有 48 个百万。",
+     "subject": "math-bj",
+     "verify": "48000000/1000000"
+    },
+    {
+     "id": "mbj_p312_q6",
+     "topicId": "mbj_p312",
+     "prompt": "为什么说相邻两个计数单位之间的进率是十？请用一万和十万的关系说明。",
+     "question": "为什么说相邻两个计数单位之间的进率是十？请用一万和十万的关系说明。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "因为 10 个一万就是十万，反过来十万里面正好有 10 个一万，所以一万和十万这两个相邻计数单位之间的进率是十。十万与百万、百万与千万、千万与亿之间也都是十。",
+     "explanation": "十进制计数法的核心就是满十进一，每十个较小的计数单位就组成一个较大的计数单位，因此相邻单位之间的进率恒为十。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p312_q7",
+     "topicId": "mbj_p312",
+     "prompt": "一个八位数，最高位上的数字是 7，万位上的数字是 4，其余各位都是 0，这个数里面有多少个万？",
+     "question": "一个八位数，最高位上的数字是 7，万位上的数字是 4，其余各位都是 0，这个数里面有多少个万？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "B",
+     "explanation": "这个数写作 70400000，把它改写成用万作单位就是 7040 万，所以含有 7040 个万。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "704"
+      },
+      {
+       "label": "B",
+       "text": "7040"
+      },
+      {
+       "label": "C",
+       "text": "70400"
+      },
+      {
+       "label": "D",
+       "text": "74"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p312_q8",
+     "topicId": "mbj_p312",
+     "prompt": "用 3 个千万、5 个百万、2 个万和 8 个十组成的数是多少？",
+     "question": "用 3 个千万、5 个百万、2 个万和 8 个十组成的数是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "35020080",
+     "explanation": "3 个千万是 30000000，5 个百万是 5000000，2 个万是 20000，8 个十是 80，相加得 35020080。",
+     "subject": "math-bj",
+     "verify": "30000000+5000000+20000+80"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p313",
+   "description": "理解十进制计数法：每相邻两个计数单位之间的进率都是十；认识数位顺序表，能按数级说出亿以内各数位的名称与顺序，会用数位顺序表分析一个数中每个数字表示的意义。",
+   "mastery_criteria": [
+    "说出数位顺序表中亿以内各数位的名称",
+    "按个级、万级、亿级把数位分级",
+    "说明同一数字在不同数位上的意义"
+   ],
+   "misconceptions": [
+    "把数位和计数单位混着说，方向说反",
+    "认为数位顺序表只有个级和万级",
+    "认为 10 个十万就是一亿"
+   ],
+   "std": {
+    "id": "mat-2022:2.TS.01",
+    "quote": "知道大数的意义和四位一级的表示方法，建立数感"
+   },
+   "questions": [
+    {
+     "id": "mbj_p313_q1",
+     "topicId": "mbj_p313",
+     "prompt": "从个位起，第几位是亿位？",
+     "question": "从个位起，第几位是亿位？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "按个、十、百、千、万、十万、百万、千万、亿的顺序数下去，亿位排在第九位，所以从个位起第九位是亿位。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "第九位"
+      },
+      {
+       "label": "B",
+       "text": "第八位"
+      },
+      {
+       "label": "C",
+       "text": "第十位"
+      },
+      {
+       "label": "D",
+       "text": "第七位"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p313_q2",
+     "topicId": "mbj_p313",
+     "prompt": "在数位顺序表中，与万位相邻的两个数位是哪两个？",
+     "question": "在数位顺序表中，与万位相邻的两个数位是哪两个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "C",
+     "explanation": "数位顺序中万位的前一位是千位，后一位是十万位，与万位相邻的正是千位和十万位。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "百位和千位"
+      },
+      {
+       "label": "B",
+       "text": "十万位和百万位"
+      },
+      {
+       "label": "C",
+       "text": "千位和十万位"
+      },
+      {
+       "label": "D",
+       "text": "万位和十万位"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p313_q3",
+     "topicId": "mbj_p313",
+     "prompt": "一个数的百万位上是 6，表示 6 个多少？",
+     "question": "一个数的百万位上是 6，表示 6 个多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "百万",
+     "explanation": "百万位上的数字表示几个百万，所以百万位上的 6 表示 6 个百万。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "每"
+      },
+      {
+       "label": "B",
+       "text": "个"
+      },
+      {
+       "label": "C",
+       "text": "数"
+      },
+      {
+       "label": "D",
+       "text": "位"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p313_q4",
+     "topicId": "mbj_p313",
+     "prompt": "在 50703200 中，数字 5 表示什么？",
+     "question": "在 50703200 中，数字 5 表示什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "50703200 分级为 5070|3200，5 在千万位上，千万位的计数单位是千万，所以表示 5 个千万。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "5 个万"
+      },
+      {
+       "label": "B",
+       "text": "5 个千万"
+      },
+      {
+       "label": "C",
+       "text": "5 个十万"
+      },
+      {
+       "label": "D",
+       "text": "5 个百万"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p313_q5",
+     "topicId": "mbj_p313",
+     "prompt": "一个数由 8 个亿、4 个千万和 6 个百组成，这个数是多少？",
+     "question": "一个数由 8 个亿、4 个千万和 6 个百组成，这个数是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "840000600",
+     "explanation": "8 个亿是 800000000，4 个千万是 40000000，6 个百是 600，相加得 840000600。",
+     "subject": "math-bj",
+     "verify": "8*100000000+4*10000000+6*100"
+    },
+    {
+     "id": "mbj_p313_q6",
+     "topicId": "mbj_p313",
+     "prompt": "为什么说十进制计数法是「满十进一」？请结合 999 加 1 的过程说明。",
+     "question": "为什么说十进制计数法是「满十进一」？请结合 999 加 1 的过程说明。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "999 的个位 9 再加 1 就满十，向十位进一，个位写 0；十位也满十，再向百位进一；百位同样满十，向千位进一，结果得 1000。每一步都是满十进一。",
+     "explanation": "满十进一是十进制计数法的进位规则，一个数位上的数达到十就换成前一位的一个单位，所以 999 加 1 会连续进位得到 1000。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p313_q7",
+     "topicId": "mbj_p313",
+     "prompt": "用 3、0、5、0、7、0 这六个数字组成的最大六位数，它的十万位和百位上的数字分别是多少？",
+     "question": "用 3、0、5、0、7、0 这六个数字组成的最大六位数，它的十万位和百位上的数字分别是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "D",
+     "explanation": "从大到小排数字得 753000，十万位是 7，百位是 0，所以分别是 7 和 0。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "7 和 5"
+      },
+      {
+       "label": "B",
+       "text": "5 和 3"
+      },
+      {
+       "label": "C",
+       "text": "7 和 3"
+      },
+      {
+       "label": "D",
+       "text": "7 和 0"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p313_q8",
+     "topicId": "mbj_p313",
+     "prompt": "千万位左边一位是亿位，亿位的计数单位相当于多少个万？",
+     "question": "千万位左边一位是亿位，亿位的计数单位相当于多少个万？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "10000",
+     "explanation": "一亿是 100000000，一万是 10000，100000000 除以 10000 得 10000，所以一亿相当于 10000 个万。",
+     "subject": "math-bj",
+     "verify": "100000000/10000"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p314",
+   "description": "掌握亿以内数的读法：从高位读起，先读万级再读个级，每级末尾的 0 都不读，其他数位上有一个 0 或连续几个 0 都只读一个零，能正确读出生活中的大数。",
+   "mastery_criteria": [
+    "按级顺序正确读出亿以内的数",
+    "说出每级末尾的 0 不读的规则",
+    "把中间连续的几个 0 只读一个零"
+   ],
+   "misconceptions": [
+    "中间的 0 多读，1005000 读成一百万零五千",
+    "每级末尾的 0 也读出来，如 3200000 读成三千二百万零",
+    "漏读中间一个零，30050000 读成三千五百万"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p314_q1",
+     "topicId": "mbj_p314",
+     "prompt": "8000000 读作什么？",
+     "question": "8000000 读作什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "8000000 的万级是 800，读作八百万，个级四个 0 都不读，所以读作八百万。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "八十万"
+      },
+      {
+       "label": "B",
+       "text": "八千万"
+      },
+      {
+       "label": "C",
+       "text": "八千"
+      },
+      {
+       "label": "D",
+       "text": "八百万"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p314_q2",
+     "topicId": "mbj_p314",
+     "prompt": "40050000 读作什么？",
+     "question": "40050000 读作什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "40050000 分级为 4005|0000，万级 4005 读作四千零五，个级全是 0 不读，所以读作四千零五万。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "四千零五万"
+      },
+      {
+       "label": "B",
+       "text": "四千零零五万"
+      },
+      {
+       "label": "C",
+       "text": "四千五百万"
+      },
+      {
+       "label": "D",
+       "text": "四千零五十万"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p314_q3",
+     "topicId": "mbj_p314",
+     "prompt": "600000 读作什么？请用汉字写出读法。",
+     "question": "600000 读作什么？请用汉字写出读法。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "六十万",
+     "explanation": "600000 的万级是 60，读作六十万，个级的四个 0 都不读，所以读作六十万。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "读"
+      },
+      {
+       "label": "B",
+       "text": "数"
+      },
+      {
+       "label": "C",
+       "text": "时"
+      },
+      {
+       "label": "D",
+       "text": "先"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p314_q4",
+     "topicId": "mbj_p314",
+     "prompt": "下面各数中，读作「五千零六万零七十」的是哪一个？",
+     "question": "下面各数中，读作「五千零六万零七十」的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "五千零六万零七十写作 50060070，万级是 5006，个级是 0070，对应数字正是 50060070。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "50600070"
+      },
+      {
+       "label": "B",
+       "text": "50060070"
+      },
+      {
+       "label": "C",
+       "text": "50006070"
+      },
+      {
+       "label": "D",
+       "text": "50600700"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p314_q5",
+     "topicId": "mbj_p314",
+     "prompt": "在 30050800 中，读出来的「零」有几个？",
+     "question": "在 30050800 中，读出来的「零」有几个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "C",
+     "explanation": "30050800 读作三千零五万零八百，万级中间的 0 读一个零，个级千位上的 0 读一个零，一共两个零。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "一个"
+      },
+      {
+       "label": "B",
+       "text": "三个"
+      },
+      {
+       "label": "C",
+       "text": "两个"
+      },
+      {
+       "label": "D",
+       "text": "四个"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p314_q6",
+     "topicId": "mbj_p314",
+     "prompt": "把「二千零四十万零五」写成数字是多少？",
+     "question": "把「二千零四十万零五」写成数字是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "20400005",
+     "explanation": "二千零四十万是 20400000，再加个级的 5 得 20400005，万级与个级之间空着的数位用 0 补齐。",
+     "subject": "math-bj",
+     "verify": "2040*10000+5"
+    },
+    {
+     "id": "mbj_p314_q7",
+     "topicId": "mbj_p314",
+     "prompt": "读多位数时，什么情况下要读「零」，什么情况下不读？请各举一例说明。",
+     "question": "读多位数时，什么情况下要读「零」，什么情况下不读？请各举一例说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "每级末尾的 0 都不读，例如 3200000 读作三百二十万；其他数位上有一个 0 或连续几个 0，都只读一个零，例如 30050000 读作三千零五万。",
+     "explanation": "读数的关键是先分级，再逐级读，末尾的 0 表示这一级没有更小的单位，不用读出声，中间的 0 表示数位断开了，必须读一个零。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p314_q8",
+     "topicId": "mbj_p314",
+     "prompt": "用 4 个 0 和 2 个 5 组成的六位数中，只读一个零且最大的数是哪一个？",
+     "question": "用 4 个 0 和 2 个 5 组成的六位数中，只读一个零且最大的数是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "A",
+     "explanation": "要让读法里出现一个零，0 必须落在级的中间或个级中间。试排得 500500 读作五十万零五百，只有一个零，且比 500050 大。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "500500"
+      },
+      {
+       "label": "B",
+       "text": "505000"
+      },
+      {
+       "label": "C",
+       "text": "550000"
+      },
+      {
+       "label": "D",
+       "text": "500050"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p315",
+   "description": "掌握亿以内数的写法：从高位写起，先写万级再写个级，哪个数位上一个单位也没有就写 0 占位，能根据读法或数位的描述正确写出多位数。",
+   "mastery_criteria": [
+    "按级对应写出万级和个级的数",
+    "用 0 占位补齐空着的数位",
+    "根据汉字读法写出正确的多位数"
+   ],
+   "misconceptions": [
+    "把三千零五万写成 3050000，少写一个 0",
+    "级与级之间空位不补 0，30000500 写成 3000500",
+    "把「十万」写到万位上，整体错位"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p315_q1",
+     "topicId": "mbj_p315",
+     "prompt": "「六千零四十万」写成数字是多少？",
+     "question": "「六千零四十万」写成数字是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "60400000",
+     "explanation": "六千零四十万的万级是 6040，个级四个数位都空着，用 0 补齐，所以写作 60400000。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "写"
+      },
+      {
+       "label": "B",
+       "text": "数"
+      },
+      {
+       "label": "C",
+       "text": "时"
+      },
+      {
+       "label": "D",
+       "text": "先"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p315_q2",
+     "topicId": "mbj_p315",
+     "prompt": "「九百万零六十」写成数字是哪一个？",
+     "question": "「九百万零六十」写成数字是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "九百万的万级是 900，个级是 0060，合起来写作 9000060，千位、百位空着都用 0 占位。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "9000060"
+      },
+      {
+       "label": "B",
+       "text": "900060"
+      },
+      {
+       "label": "C",
+       "text": "9000600"
+      },
+      {
+       "label": "D",
+       "text": "9060000"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p315_q3",
+     "topicId": "mbj_p315",
+     "prompt": "一个数的万位上是 8，其余各位都是 0，这个数写作多少？",
+     "question": "一个数的万位上是 8，其余各位都是 0，这个数写作多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "万位上是 8 表示 8 个万，即 80000，前面四位和后面四位都没有数，都用 0 补齐后仍是 80000。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "8000"
+      },
+      {
+       "label": "B",
+       "text": "80000"
+      },
+      {
+       "label": "C",
+       "text": "800000"
+      },
+      {
+       "label": "D",
+       "text": "8000000"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p315_q4",
+     "topicId": "mbj_p315",
+     "prompt": "一个数由 5 个百万、2 个十万和 7 个千组成，这个数写作多少？",
+     "question": "一个数由 5 个百万、2 个十万和 7 个千组成，这个数写作多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "5207000",
+     "explanation": "5 个百万是 5000000，2 个十万是 200000，7 个千是 7000，相加得 5207000，空着的数位写 0。",
+     "subject": "math-bj",
+     "verify": "5*1000000+2*100000+7*1000"
+    },
+    {
+     "id": "mbj_p315_q5",
+     "topicId": "mbj_p315",
+     "prompt": "「四千零五十万零六」写作哪一个？",
+     "question": "「四千零五十万零六」写作哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "C",
+     "explanation": "四千零五十万的万级是 4050，个级只有个位是 6，其余三位写 0，得 0006，合起来是 40500006。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "4050006"
+      },
+      {
+       "label": "B",
+       "text": "40500060"
+      },
+      {
+       "label": "C",
+       "text": "40500006"
+      },
+      {
+       "label": "D",
+       "text": "45000006"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p315_q6",
+     "topicId": "mbj_p315",
+     "prompt": "「七亿零八百万」写成数字是多少？",
+     "question": "「七亿零八百万」写成数字是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "708000000",
+     "explanation": "七亿是 700000000，八百万是 8000000，相加得 708000000，千万位空着写 0。",
+     "subject": "math-bj",
+     "verify": "7*100000000+8*1000000"
+    },
+    {
+     "id": "mbj_p315_q7",
+     "topicId": "mbj_p315",
+     "prompt": "写多位数时为什么要用 0 占位？请以「三千万零五百」为例说明。",
+     "question": "写多位数时为什么要用 0 占位？请以「三千万零五百」为例说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为每个数位上的数字表示几个相应的计数单位，空着的数位不写 0，后面的数字就会整体错位。「三千万零五百」写作 30000500，千位、百位、十位都用 0 占住，5 才落在百位上。",
+     "explanation": "数位是固定位置的，缺一位就少一级，数字会掉到别的数位上，所以空位必须用 0 顶上。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p315_q8",
+     "topicId": "mbj_p315",
+     "prompt": "用 2、4、6 和 3 个 0 组成的六位数中，只读一个零的最小数是哪一个？",
+     "question": "用 2、4、6 和 3 个 0 组成的六位数中，只读一个零的最小数是哪一个？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "D",
+     "explanation": "最小的六位数最高位取 2，再让 0 尽量靠前使数值小，得 200046，读作二十万零四十六，正好只读一个零。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "204006"
+      },
+      {
+       "label": "B",
+       "text": "200460"
+      },
+      {
+       "label": "C",
+       "text": "246000"
+      },
+      {
+       "label": "D",
+       "text": "200046"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p316",
+   "description": "会比较亿以内数的大小：位数不同时位数多的数大，位数相同时从最高位起逐位比较，直到比出大小为止，能用符号和语言说明比较的过程与结果。",
+   "mastery_criteria": [
+    "先看位数判断两个数的大小",
+    "位数相同时从高位起逐位比较",
+    "用大于号、小于号表示比较结果"
+   ],
+   "misconceptions": [
+    "只看最高位数字，忽略位数多少",
+    "位数相同就比个位，忘了从高位比起",
+    "认为 9999999 比 10000000 大"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p316_q1",
+     "topicId": "mbj_p316",
+     "prompt": "下面四个数中最大的是哪一个？",
+     "question": "下面四个数中最大的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "四个数依次是六位、七位、七位、八位数，位数最多的 99999999 最大，位数多的数一定大于位数少的数。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "999999"
+      },
+      {
+       "label": "B",
+       "text": "1000000"
+      },
+      {
+       "label": "C",
+       "text": "9999999"
+      },
+      {
+       "label": "D",
+       "text": "99999999"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p316_q2",
+     "topicId": "mbj_p316",
+     "prompt": "比较 4560000 和 4650000 的大小，结果正确的是哪一个？",
+     "question": "比较 4560000 和 4650000 的大小，结果正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "两个数都是七位数，百万位都是 4，比到十万位时 5 小于 6，所以 4560000 小于 4650000，后面各位不必再比。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "4560000 > 4650000"
+      },
+      {
+       "label": "B",
+       "text": "4560000 < 4650000"
+      },
+      {
+       "label": "C",
+       "text": "4560000 = 4650000"
+      },
+      {
+       "label": "D",
+       "text": "两个数不能比较"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p316_q3",
+     "topicId": "mbj_p316",
+     "prompt": "在括号里填上合适的符号：780000（ ）807000。",
+     "question": "在括号里填上合适的符号：780000（ ）807000。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "<",
+     "explanation": "两个数都是六位数，最高位十万位上 7 小于 8，所以 780000 小于 807000，括号里应填小于号。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "位"
+      },
+      {
+       "label": "B",
+       "text": "数"
+      },
+      {
+       "label": "C",
+       "text": "相"
+      },
+      {
+       "label": "D",
+       "text": "同"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p316_q4",
+     "topicId": "mbj_p316",
+     "prompt": "用 3、8、0、0、5 组成的最小五位数与最大五位数相差多少？",
+     "question": "用 3、8、0、0、5 组成的最小五位数与最大五位数相差多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "55242",
+     "explanation": "最小五位数最高位取 3，得 30058；最大五位数从大到小排得 85300。85300 减 30058 等于 55242。",
+     "subject": "math-bj",
+     "verify": "85300-30058"
+    },
+    {
+     "id": "mbj_p316_q5",
+     "topicId": "mbj_p316",
+     "prompt": "在 5□0000 中，方框里填哪个数字时，这个数比 560000 大？",
+     "question": "在 5□0000 中，方框里填哪个数字时，这个数比 560000 大？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "C",
+     "explanation": "两个数都是六位数，十万位、万位都是 5，要看千位。填 8 得 580000，千位 8 大于 6，所以比 560000 大。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p316_q6",
+     "topicId": "mbj_p316",
+     "prompt": "比较 6050000 与 6005000，大数减小数等于多少？",
+     "question": "比较 6050000 与 6005000，大数减小数等于多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "45000",
+     "explanation": "两个数都是七位数，百万位都是 6，十万位都是 0，比到万位 5 大于 0，所以 6050000 大，相差 45000。",
+     "subject": "math-bj",
+     "verify": "6050000-6005000"
+    },
+    {
+     "id": "mbj_p316_q7",
+     "topicId": "mbj_p316",
+     "prompt": "比较 9876543 和 10000000 的大小时，为什么不能只看最高位？请说明理由。",
+     "question": "比较 9876543 和 10000000 的大小时，为什么不能只看最高位？请说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为两个数的位数不同。9876543 是七位数，最高位是百万位；10000000 是八位数，最高位是千万位。位数多的数一定大，所以 10000000 更大，只比最高位上的 9 和 1 会得出错误结论。",
+     "explanation": "比较大小要先数位数，位数多的那个数就大；位数相同才从最高位逐位比较，两套规则不能混用。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p316_q8",
+     "topicId": "mbj_p316",
+     "prompt": "一个七位数，它的最高位是 4；另一个六位数的最高位是 9。这两个数相比的结果是什么？",
+     "question": "一个七位数，它的最高位是 4；另一个六位数的最高位是 9。这两个数相比的结果是什么？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "D",
+     "explanation": "七位数一定大于六位数，位数多的数更大，所以即使六位数的最高位数字是 9，也比不过七位数。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "六位数大"
+      },
+      {
+       "label": "B",
+       "text": "两个数一样大"
+      },
+      {
+       "label": "C",
+       "text": "无法确定大小"
+      },
+      {
+       "label": "D",
+       "text": "七位数大"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p317",
+   "description": "会把整万、整亿的数改写成用「万」或「亿」作单位的数，会按四舍五入法省略某一位后面的尾数求近似数，能根据实际需要选择合适的精确程度表示大数。",
+   "mastery_criteria": [
+    "把整万数改写成用万作单位的数",
+    "用四舍五入法省略万位后面的尾数",
+    "说出改写与求近似数的区别"
+   ],
+   "misconceptions": [
+    "改写后数值变了却仍用等号连接",
+    "四舍五入时看错数位，把 5 舍去",
+    "把 199999 省略万位后面的尾数写成 19 万"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p317_q1",
+     "topicId": "mbj_p317",
+     "prompt": "把 720000 改写成用「万」作单位的数，结果是多少？",
+     "question": "把 720000 改写成用「万」作单位的数，结果是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "72万",
+     "explanation": "720000 里面有 72 个一万，改写后数值不变，写成 72 万，改写用等号连接。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "改"
+      },
+      {
+       "label": "B",
+       "text": "写"
+      },
+      {
+       "label": "C",
+       "text": "只"
+      },
+      {
+       "label": "D",
+       "text": "是"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p317_q2",
+     "topicId": "mbj_p317",
+     "prompt": "把 8500000 改写成用「万」作单位的数是哪一个？",
+     "question": "把 8500000 改写成用「万」作单位的数是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "8500000 里面含有 850 个一万，所以改写成 850 万，末尾的 0 不能多写也不能少写。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "85万"
+      },
+      {
+       "label": "B",
+       "text": "850万"
+      },
+      {
+       "label": "C",
+       "text": "8500万"
+      },
+      {
+       "label": "D",
+       "text": "8.5万"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p317_q3",
+     "topicId": "mbj_p317",
+     "prompt": "把 600000000 改写成用「亿」作单位的数是哪一个？",
+     "question": "把 600000000 改写成用「亿」作单位的数是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "600000000 里面有 6 个一亿，所以改写成 6 亿，改写前后数值相等。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "6亿"
+      },
+      {
+       "label": "B",
+       "text": "60亿"
+      },
+      {
+       "label": "C",
+       "text": "600亿"
+      },
+      {
+       "label": "D",
+       "text": "0.6亿"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p317_q4",
+     "topicId": "mbj_p317",
+     "prompt": "把 396000 省略万位后面的尾数，结果是多少万？",
+     "question": "把 396000 省略万位后面的尾数，结果是多少万？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "40",
+     "explanation": "省略万位后面的尾数要看千位，千位上是 6，满五要向万位进一，39 加 1 得 40，所以约是 40 万。",
+     "subject": "math-bj",
+     "verify": "39+1"
+    },
+    {
+     "id": "mbj_p317_q5",
+     "topicId": "mbj_p317",
+     "prompt": "下面各数中，省略万位后面的尾数约是 7 万的是哪一个？",
+     "question": "下面各数中，省略万位后面的尾数约是 7 万的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "C",
+     "explanation": "69400 的千位是 9，满五进一，6 加 1 得 7，约是 7 万；64800 和 60500 的千位都小于 5，约是 6 万；75200 约是 8 万。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "64800"
+      },
+      {
+       "label": "B",
+       "text": "75200"
+      },
+      {
+       "label": "C",
+       "text": "69400"
+      },
+      {
+       "label": "D",
+       "text": "60500"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p317_q6",
+     "topicId": "mbj_p317",
+     "prompt": "把 4030000 改写成用「万」作单位的数，再去掉「万」字，这个数是多少？",
+     "question": "把 4030000 改写成用「万」作单位的数，再去掉「万」字，这个数是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "403",
+     "explanation": "4030000 里面有 403 个一万，改写成 403 万，去掉万字就是 403。",
+     "subject": "math-bj",
+     "verify": "4030000/10000"
+    },
+    {
+     "id": "mbj_p317_q7",
+     "topicId": "mbj_p317",
+     "prompt": "改写和求近似数有什么不同？请结合 480000 与 485000 说明。",
+     "question": "改写和求近似数有什么不同？请结合 480000 与 485000 说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "改写不改变数的大小，只是换单位，480000 等于 48 万，用等号连接；求近似数会改变数的大小，是按需要省略尾数，485000 省略万位后面的尾数约是 49 万，要用约等号。",
+     "explanation": "改写是整万、整亿数的等价写法，求近似数是按四舍五入取接近的数，两者的符号和结果都不一样。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p317_q8",
+     "topicId": "mbj_p317",
+     "prompt": "一个数省略万位后面的尾数约是 30 万，这个数最大是多少？",
+     "question": "一个数省略万位后面的尾数约是 30 万，这个数最大是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "304999",
+     "explanation": "要使这个数最大又约等于 30 万，万位以后要尽量大但不能进一，所以千位取 4，百位、十位、个位都取 9，得 304999。",
+     "subject": "math-bj",
+     "verify": "304000+999"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p318",
+   "description": "复习巩固大数的计数单位、数位顺序、读写方法、大小比较与改写求近似数，能把这些知识整理成有条理的网络，并解决人口、购物等情境中的大数问题。",
+   "mastery_criteria": [
+    "按数位顺序正确读写大数",
+    "比较大小时说明依据",
+    "按要求改写并求近似数"
+   ],
+   "misconceptions": [
+    "只记结论不会说理，遇到连续 0 就读错",
+    "近似数用等号连接",
+    "比较大小时只看最高位数字"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p318_q1",
+     "topicId": "mbj_p318",
+     "prompt": "下面各数中，读作「二亿零三十万」的是哪一个？",
+     "question": "下面各数中，读作「二亿零三十万」的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "二亿零三十万写作 200300000，亿级是 2，万级是 0030，个级是 0000，对应数字正是 200300000。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "20030000"
+      },
+      {
+       "label": "B",
+       "text": "200300000"
+      },
+      {
+       "label": "C",
+       "text": "203000000"
+      },
+      {
+       "label": "D",
+       "text": "20300000"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p318_q2",
+     "topicId": "mbj_p318",
+     "prompt": "「五千零六十万」写作数字是多少？",
+     "question": "「五千零六十万」写作数字是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "50600000",
+     "explanation": "五千零六十万的万级是 5060，个级四个数位都空着写 0，所以写作 50600000。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "写"
+      },
+      {
+       "label": "B",
+       "text": "数"
+      },
+      {
+       "label": "C",
+       "text": "先"
+      },
+      {
+       "label": "D",
+       "text": "定"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p318_q3",
+     "topicId": "mbj_p318",
+     "prompt": "把 9080000 改写成用「万」作单位的数是多少万？",
+     "question": "把 9080000 改写成用「万」作单位的数是多少万？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "908",
+     "explanation": "9080000 里面有 908 个一万，改写成 908 万，去掉万字后是 908。",
+     "subject": "math-bj",
+     "verify": "9080000/10000"
+    },
+    {
+     "id": "mbj_p318_q4",
+     "topicId": "mbj_p318",
+     "prompt": "一个数的千万位和万位上都是 6，其余各位都是 0，这个数读作什么？",
+     "question": "一个数的千万位和万位上都是 6，其余各位都是 0，这个数读作什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "A",
+     "explanation": "这个数写作 60060000，分级为 6006|0000，读作六千零六万，个级末尾的 0 不读。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "六千零六万"
+      },
+      {
+       "label": "B",
+       "text": "六千六百万"
+      },
+      {
+       "label": "C",
+       "text": "六千零六十万"
+      },
+      {
+       "label": "D",
+       "text": "六千万零六万"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p318_q5",
+     "topicId": "mbj_p318",
+     "prompt": "下面四个数中，最接近 50 万的是哪一个？",
+     "question": "下面四个数中，最接近 50 万的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "D",
+     "explanation": "499998 与 50 万相差 2，501000 相差 1000，490000 相差 10000，500001 只相差 1，所以最接近的是 500001。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "499998"
+      },
+      {
+       "label": "B",
+       "text": "501000"
+      },
+      {
+       "label": "C",
+       "text": "490000"
+      },
+      {
+       "label": "D",
+       "text": "500001"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p318_q6",
+     "topicId": "mbj_p318",
+     "prompt": "一台电脑 4800 元，学校买 100 台共需多少元？把总价改写成用「万」作单位的数是多少万？",
+     "question": "一台电脑 4800 元，学校买 100 台共需多少元？把总价改写成用「万」作单位的数是多少万？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "48",
+     "explanation": "4800 乘 100 等于 480000 元，480000 里面有 48 个一万，所以是 48 万元。",
+     "subject": "math-bj",
+     "verify": "4800*100/10000"
+    },
+    {
+     "id": "mbj_p318_q7",
+     "topicId": "mbj_p318",
+     "prompt": "请说清「数位」和「计数单位」的区别，并各举一个例子。",
+     "question": "请说清「数位」和「计数单位」的区别，并各举一个例子。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "数位是数字所站的位置，如万位、十万位、千万位；计数单位是每个数位上计数的单位，如万、十万、千万。同一个数字放在不同数位上，表示的几个计数单位就不同，例如 5 在万位表示 5 个万。",
+     "explanation": "数位说的是位置，计数单位说的是单位，两者一一对应但含义不同，回答问题时要分清是在说位置还是在说单位。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p318_q8",
+     "topicId": "mbj_p318",
+     "prompt": "一个六位数，四舍五入到万位后是 20 万，这个六位数最大是多少？",
+     "question": "一个六位数，四舍五入到万位后是 20 万，这个六位数最大是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "A",
+     "explanation": "要最大又约等于 20 万，万位是 0（即 20 万），千位最大只能取 4，其余各位取 9，得 204999。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "204999"
+      },
+      {
+       "label": "B",
+       "text": "200000"
+      },
+      {
+       "label": "C",
+       "text": "199999"
+      },
+      {
+       "label": "D",
+       "text": "205000"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p319",
+   "description": "通过测量 100 张、1000 张纸的厚度推算 1 亿张纸摞起来的高度，经历由部分推算整体的过程，体会用数、单位换算和估算来描述大数的意义。",
+   "mastery_criteria": [
+    "测量并记录 100 张纸的厚度",
+    "按倍数关系由小样本推算 1 亿",
+    "把推算结果换算成米并作合理估计"
+   ],
+   "misconceptions": [
+    "推算时单位没统一，厘米和米混用",
+    "要求推算结果精确到毫米，不理解估算的意义",
+    "把 1 亿张纸的高度估成一层楼高，缺少数量级估计"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.10",
+    "quote": "形成初步的模型意识和应用意识"
+   },
+   "questions": [
+    {
+     "id": "mbj_p319_q1",
+     "topicId": "mbj_p319",
+     "prompt": "100 张纸摞起来大约厚 1 厘米，1000 张纸摞起来大约厚多少厘米？",
+     "question": "100 张纸摞起来大约厚 1 厘米，1000 张纸摞起来大约厚多少厘米？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "1000 张里面有 10 个 100 张，每 100 张厚约 1 厘米，10 个 1 厘米就是 10 厘米。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "10 厘米"
+      },
+      {
+       "label": "B",
+       "text": "100 厘米"
+      },
+      {
+       "label": "C",
+       "text": "1 厘米"
+      },
+      {
+       "label": "D",
+       "text": "1000 厘米"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p319_q2",
+     "topicId": "mbj_p319",
+     "prompt": "1 亿张纸里面有多少个 100 张？",
+     "question": "1 亿张纸里面有多少个 100 张？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "1000000",
+     "explanation": "1 亿是 100000000，除以 100 得 1000000，所以 1 亿张里面有 100 万个 100 张。",
+     "subject": "math-bj",
+     "verify": "100000000/100"
+    },
+    {
+     "id": "mbj_p319_q3",
+     "topicId": "mbj_p319",
+     "prompt": "把 10000 厘米换算成米是多少米？",
+     "question": "把 10000 厘米换算成米是多少米？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "100",
+     "explanation": "1 米等于 100 厘米，10000 厘米里面有多少个 100 厘米就有多少米，10000 除以 100 等于 100 米。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "厘"
+      },
+      {
+       "label": "B",
+       "text": "米"
+      },
+      {
+       "label": "C",
+       "text": "换"
+      },
+      {
+       "label": "D",
+       "text": "米"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p319_q4",
+     "topicId": "mbj_p319",
+     "prompt": "100 张纸约厚 1 厘米，照这样推算，1 亿张纸摞起来约厚多少米？",
+     "question": "100 张纸约厚 1 厘米，照这样推算，1 亿张纸摞起来约厚多少米？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "10000",
+     "explanation": "1 亿张是 100 万个 100 张，叠起来约厚 100 万厘米，再除以 100 换成米，得 10000 米。",
+     "subject": "math-bj",
+     "verify": "100000000/100/100"
+    },
+    {
+     "id": "mbj_p319_q5",
+     "topicId": "mbj_p319",
+     "prompt": "1 亿张纸摞起来约高 10000 米，这个高度大约相当于多少座 500 米高的山叠起来？",
+     "question": "1 亿张纸摞起来约高 10000 米，这个高度大约相当于多少座 500 米高的山叠起来？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "求 10000 米里面有几个 500 米，用 10000 除以 500 得 20，相当于把 20 座 500 米高的山叠起来。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "2 座"
+      },
+      {
+       "label": "B",
+       "text": "20 座"
+      },
+      {
+       "label": "C",
+       "text": "200 座"
+      },
+      {
+       "label": "D",
+       "text": "2000 座"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p319_q6",
+     "topicId": "mbj_p319",
+     "prompt": "推算 1 亿张纸的高度时，先量 100 张纸的厚度，这样做的好处是什么？",
+     "question": "推算 1 亿张纸的高度时，先量 100 张纸的厚度，这样做的好处是什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "C",
+     "explanation": "1 亿张纸无法直接测量，先量出 100 张的厚度，再按倍数推算，就把无法测量的大数变成了可以测量的小数。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "可以少用一些纸"
+      },
+      {
+       "label": "B",
+       "text": "推算结果一定更精确"
+      },
+      {
+       "label": "C",
+       "text": "把大数转化成可以测量的小数，便于推算"
+      },
+      {
+       "label": "D",
+       "text": "可以完全不用计算"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p319_q7",
+     "topicId": "mbj_p319",
+     "prompt": "如果每层楼高 3 米，1 亿张纸摞起来的高度大约相当于多少层楼高？请写出推算过程。",
+     "question": "如果每层楼高 3 米，1 亿张纸摞起来的高度大约相当于多少层楼高？请写出推算过程。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "100 张纸约厚 1 厘米，1 亿张是 100 万个 100 张，厚约 100 万厘米即 10000 米。10000 除以 3 约等于 3333，所以大约相当于 3333 层楼高。",
+     "explanation": "先由小样本推算总高度，再把高度与熟悉的事物比较，就能感受到 1 亿这个数有多大。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p319_q8",
+     "topicId": "mbj_p319",
+     "prompt": "如果 1000 张纸约厚 9 厘米，1 亿张纸摞起来约厚多少米？",
+     "question": "如果 1000 张纸约厚 9 厘米，1 亿张纸摞起来约厚多少米？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "9000",
+     "explanation": "1 亿里面有 10 万个 1000，10 万个 9 厘米是 90 万厘米，除以 100 换成米得 9000 米。",
+     "subject": "math-bj",
+     "verify": "100000000/1000*9/100"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p320",
+   "description": "探索并理解加法交换律、加法结合律、乘法交换律、乘法结合律和乘法分配律，会用字母表示这些运算律，能根据算式中数的特点选择定律使计算简便。",
+   "mastery_criteria": [
+    "用字母写出五条运算律",
+    "判断一道算式用了哪条运算律",
+    "选择合适定律使计算简便"
+   ],
+   "misconceptions": [
+    "把乘法结合律当分配律，25×32 说成用分配律",
+    "认为减法和除法也有交换律",
+    "用字母表示分配律时漏乘，写成 a×(b+c)=a×b+c"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p320_q1",
+     "topicId": "mbj_p320",
+     "prompt": "a + b = b + a 表示的是哪一条运算律？",
+     "question": "a + b = b + a 表示的是哪一条运算律？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "等号两边只是交换了两个加数的位置，和不变，这正是加法交换律的字母表示。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "加法结合律"
+      },
+      {
+       "label": "B",
+       "text": "乘法交换律"
+      },
+      {
+       "label": "C",
+       "text": "乘法分配律"
+      },
+      {
+       "label": "D",
+       "text": "加法交换律"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p320_q2",
+     "topicId": "mbj_p320",
+     "prompt": "(25 × 4) × 8 = 25 × (4 × 8) 中，运用了哪一条运算律？",
+     "question": "(25 × 4) × 8 = 25 × (4 × 8) 中，运用了哪一条运算律？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "三个因数位置没变，只是把先算的两个数由 25 和 4 换成 4 和 8，改变的是运算顺序，属于乘法结合律。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "乘法结合律"
+      },
+      {
+       "label": "B",
+       "text": "乘法交换律"
+      },
+      {
+       "label": "C",
+       "text": "乘法分配律"
+      },
+      {
+       "label": "D",
+       "text": "加法结合律"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p320_q3",
+     "topicId": "mbj_p320",
+     "prompt": "用简便方法计算 25 × 4 × 7，结果是多少？",
+     "question": "用简便方法计算 25 × 4 × 7，结果是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "700",
+     "explanation": "25 乘 4 正好得 100，再用 100 乘 7 得 700，比从左往右一步一步乘简便。",
+     "subject": "math-bj",
+     "verify": "25*4*7"
+    },
+    {
+     "id": "mbj_p320_q4",
+     "topicId": "mbj_p320",
+     "prompt": "计算 102 × 45 时，下面的变形中正确的是哪一个？",
+     "question": "计算 102 × 45 时，下面的变形中正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "把 102 看成 100 加 2，根据乘法分配律，100 和 2 都要乘 45，所以等于 100×45 加 2×45。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "100 × 45 + 2"
+      },
+      {
+       "label": "B",
+       "text": "100 × 45 + 2 × 45"
+      },
+      {
+       "label": "C",
+       "text": "102 × 40 + 5"
+      },
+      {
+       "label": "D",
+       "text": "100 × 45 × 2"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p320_q5",
+     "topicId": "mbj_p320",
+     "prompt": "请用字母写出加法交换律、加法结合律和乘法分配律，并各说明它们的作用。",
+     "question": "请用字母写出加法交换律、加法结合律和乘法分配律，并各说明它们的作用。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "加法交换律 a+b=b+a，加法结合律 (a+b)+c=a+(b+c)，乘法分配律 (a+b)×c=a×c+b×c。它们能把数凑成整十整百，使计算简便，也是列式变形和验算的依据。",
+     "explanation": "运算律是把数的运算规律用字母固定下来，用字母表示后可以脱离具体数字使用，简算时按定律变形，结果不变而计算更快。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p321",
+   "description": "通过计算和实例发现加法交换律与加法结合律，会用字母表示，能根据数的特点把能凑成整十整百的数先加起来，使连加计算变得简便。",
+   "mastery_criteria": [
+    "说出加法交换律、结合律的含义",
+    "用字母表示两条加法运算律",
+    "把能凑整的数先加使计算简便"
+   ],
+   "misconceptions": [
+    "把结合律说成改变了加数的位置",
+    "算 168+75+25 时从左往右硬算，不先算 75+25",
+    "用字母写结合律时漏掉括号，写成 a+b+c"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p321_q1",
+     "topicId": "mbj_p321",
+     "prompt": "45 + 87 = 87 + 45，这里运用了什么运算律？",
+     "question": "45 + 87 = 87 + 45，这里运用了什么运算律？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "C",
+     "explanation": "两个加数只是交换了位置，和没有变化，这是加法交换律。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "加法结合律"
+      },
+      {
+       "label": "B",
+       "text": "乘法交换律"
+      },
+      {
+       "label": "C",
+       "text": "加法交换律"
+      },
+      {
+       "label": "D",
+       "text": "乘法分配律"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p321_q2",
+     "topicId": "mbj_p321",
+     "prompt": "(36 + 64) + 125 = 36 + (64 + 125) 中运用了什么运算律？",
+     "question": "(36 + 64) + 125 = 36 + (64 + 125) 中运用了什么运算律？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "三个加数的位置没变，只是先加的两个数由 36 和 64 换成 64 和 125，改变的是运算顺序，属于加法结合律。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "加法交换律"
+      },
+      {
+       "label": "B",
+       "text": "乘法结合律"
+      },
+      {
+       "label": "C",
+       "text": "乘法分配律"
+      },
+      {
+       "label": "D",
+       "text": "加法结合律"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p321_q3",
+     "topicId": "mbj_p321",
+     "prompt": "168 + 75 + 25 = 168 + （75 + 25），这一步运用了加法的什么运算律？",
+     "question": "168 + 75 + 25 = 168 + （75 + 25），这一步运用了加法的什么运算律？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "结合律",
+     "explanation": "75 加 25 正好得 100，把这两个数先加起来，加数位置没变，只是改变了运算顺序，用的是加法结合律。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "先"
+      },
+      {
+       "label": "B",
+       "text": "算"
+      },
+      {
+       "label": "C",
+       "text": "哪"
+      },
+      {
+       "label": "D",
+       "text": "两"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p321_q4",
+     "topicId": "mbj_p321",
+     "prompt": "用简便方法计算 375 + 128 + 72，结果是多少？",
+     "question": "用简便方法计算 375 + 128 + 72，结果是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "575",
+     "explanation": "128 加 72 正好得 200，375 加 200 得 575，比从左往右依次加更简便。",
+     "subject": "math-bj",
+     "verify": "375+128+72"
+    },
+    {
+     "id": "mbj_p321_q5",
+     "topicId": "mbj_p321",
+     "prompt": "计算 99 + 136 时，下面的想法中合理的是哪一个？",
+     "question": "计算 99 + 136 时，下面的想法中合理的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "A",
+     "explanation": "把 99 看成 100 加多了 1，用 100 加 136 得 236，再减去多加的 1 得 235，结果与 99 加 136 相同。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "99 + 136 = 100 + 136 - 1"
+      },
+      {
+       "label": "B",
+       "text": "99 + 136 = 100 + 136 + 1"
+      },
+      {
+       "label": "C",
+       "text": "99 + 136 = 99 + 130 + 60"
+      },
+      {
+       "label": "D",
+       "text": "99 + 136 = 100 + 36 - 1"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p321_q6",
+     "topicId": "mbj_p321",
+     "prompt": "简算 128 + 365 + 72 + 35，结果是多少？",
+     "question": "简算 128 + 365 + 72 + 35，结果是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "600",
+     "explanation": "128 和 72 凑成 200，365 和 35 凑成 400，200 加 400 得 600，用了交换律和结合律。",
+     "subject": "math-bj",
+     "verify": "128+365+72+35"
+    },
+    {
+     "id": "mbj_p321_q7",
+     "topicId": "mbj_p321",
+     "prompt": "小华说「加法结合律改变了加数的位置」，这句话对吗？请说明理由并举例。",
+     "question": "小华说「加法结合律改变了加数的位置」，这句话对吗？请说明理由并举例。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "不对。加法结合律只改变运算顺序，即先加哪两个数，加数的位置和先后都不变，如 (12+18)+20=12+(18+20)。改变加数位置的是加法交换律。",
+     "explanation": "两条加法运算律作用不同：交换律换位置，结合律换顺序，简算时经常先用交换律把能凑整的数挪到一起再用结合律先加。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p321_q8",
+     "topicId": "mbj_p321",
+     "prompt": "在 1+2+3+…+99+100 中，把首尾两个数相加（1+100、2+99……），一共可以配成多少对？",
+     "question": "在 1+2+3+…+99+100 中，把首尾两个数相加（1+100、2+99……），一共可以配成多少对？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "B",
+     "explanation": "1 到 100 共 100 个数，首尾两两配对，每对的和都是 101，一共能配成 50 对，总和是 5050。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "25 对"
+      },
+      {
+       "label": "B",
+       "text": "50 对"
+      },
+      {
+       "label": "C",
+       "text": "99 对"
+      },
+      {
+       "label": "D",
+       "text": "100 对"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p322",
+   "description": "通过具体算式发现乘法交换律和乘法结合律，会用字母表示，能利用 25 乘 4 得 100、125 乘 8 得 1000 等凑整关系，把连乘算式变形后简算。",
+   "mastery_criteria": [
+    "说出乘法交换律、结合律的含义",
+    "用字母表示两条乘法运算律",
+    "找出能凑成整百整千的因数先乘"
+   ],
+   "misconceptions": [
+    "把乘法结合律当作乘法分配律使用",
+    "算 25×7×4 时先算 25×7，看不出凑整",
+    "认为 125×8 与 8×125 的结果不同"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p322_q1",
+     "topicId": "mbj_p322",
+     "prompt": "25 × 4 = 4 × 25 运用了什么运算律？",
+     "question": "25 × 4 = 4 × 25 运用了什么运算律？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "两个因数只是交换了位置，积不变，这是乘法交换律。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "乘法交换律"
+      },
+      {
+       "label": "B",
+       "text": "乘法结合律"
+      },
+      {
+       "label": "C",
+       "text": "乘法分配律"
+      },
+      {
+       "label": "D",
+       "text": "加法交换律"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p322_q2",
+     "topicId": "mbj_p322",
+     "prompt": "(15 × 4) × 25 = 15 × (4 × 25) 运用了乘法的什么运算律？",
+     "question": "(15 × 4) × 25 = 15 × (4 × 25) 运用了乘法的什么运算律？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "结合律",
+     "explanation": "三个因数位置没变，只是先乘的两个数由 15 和 4 换成 4 和 25，改变的是运算顺序，属于乘法结合律。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "因"
+      },
+      {
+       "label": "B",
+       "text": "数"
+      },
+      {
+       "label": "C",
+       "text": "位"
+      },
+      {
+       "label": "D",
+       "text": "置"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p322_q3",
+     "topicId": "mbj_p322",
+     "prompt": "125 × 8 的积是多少？",
+     "question": "125 × 8 的积是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "1000",
+     "explanation": "125 乘 8 等于 1000，这个凑整结果是乘法简算里最常用的一组。",
+     "subject": "math-bj",
+     "verify": "125*8"
+    },
+    {
+     "id": "mbj_p322_q4",
+     "topicId": "mbj_p322",
+     "prompt": "用简便方法计算 25 × 7 × 4，结果是多少？",
+     "question": "用简便方法计算 25 × 7 × 4，结果是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "700",
+     "explanation": "先用乘法交换律把 7 和 4 换位，25 乘 4 得 100，100 乘 7 得 700。",
+     "subject": "math-bj",
+     "verify": "25*7*4"
+    },
+    {
+     "id": "mbj_p322_q5",
+     "topicId": "mbj_p322",
+     "prompt": "计算 125 × 24 时，下面的变形中正确的是哪一个？",
+     "question": "计算 125 × 24 时，下面的变形中正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "24 可以拆成 8 乘 3，125 乘 8 正好得 1000，再乘 3 得 3000，用的是乘法结合律。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "125 × 20 + 4"
+      },
+      {
+       "label": "B",
+       "text": "125 × 8 × 3"
+      },
+      {
+       "label": "C",
+       "text": "125 × 20 × 4"
+      },
+      {
+       "label": "D",
+       "text": "125 × 8 + 3"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p322_q6",
+     "topicId": "mbj_p322",
+     "prompt": "简算 8 × 37 × 125，结果是多少？",
+     "question": "简算 8 × 37 × 125，结果是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "37000",
+     "explanation": "8 乘 125 得 1000，再乘 37 得 37000，交换律和结合律一起用。",
+     "subject": "math-bj",
+     "verify": "8*37*125"
+    },
+    {
+     "id": "mbj_p322_q7",
+     "topicId": "mbj_p322",
+     "prompt": "乘法交换律和乘法结合律有什么区别？请各举一个算式说明。",
+     "question": "乘法交换律和乘法结合律有什么区别？请各举一个算式说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "乘法交换律交换两个因数的位置，积不变，如 12×5=5×12；乘法结合律不交换因数位置，只改变先乘哪两个数，如 (12×5)×8=12×(5×8)。简算时两条常常一起用。",
+     "explanation": "交换律动的是位置，结合律动的是顺序，判断时先看因数位置有没有变，再看先乘的两个数有没有变。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p322_q8",
+     "topicId": "mbj_p322",
+     "prompt": "一个数先乘 25，再乘 4，结果相当于这个数乘多少？",
+     "question": "一个数先乘 25，再乘 4，结果相当于这个数乘多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "B",
+     "explanation": "先乘 25 再乘 4 等于这个数乘 25 乘 4 的积，25 乘 4 得 100，所以相当于乘 100。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "29"
+      },
+      {
+       "label": "B",
+       "text": "100"
+      },
+      {
+       "label": "C",
+       "text": "50"
+      },
+      {
+       "label": "D",
+       "text": "400"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p323",
+   "description": "结合具体情境理解乘法分配律：两个数的和与一个数相乘，可以先把它们分别与这个数相乘再相加；能用字母表示，也能逆用分配律提取相同的因数使计算简便。",
+   "mastery_criteria": [
+    "说出乘法分配律的含义",
+    "用字母表示乘法分配律",
+    "正用或逆用分配律使计算简便"
+   ],
+   "misconceptions": [
+    "25×(4+8) 算成 25×4+8，只乘了第一个加数",
+    "36×99+36 逆用时把 36 丢了，只算 36×99",
+    "把分配律套在连乘上，如 25×(4×8)"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p323_q1",
+     "topicId": "mbj_p323",
+     "prompt": "(20 + 4) × 25 = 20 × 25 + 4 × 25 运用了什么运算律？",
+     "question": "(20 + 4) × 25 = 20 × 25 + 4 × 25 运用了什么运算律？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "C",
+     "explanation": "括号里的两个加数分别与 25 相乘再相加，这正是乘法分配律的用法。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "乘法交换律"
+      },
+      {
+       "label": "B",
+       "text": "乘法结合律"
+      },
+      {
+       "label": "C",
+       "text": "乘法分配律"
+      },
+      {
+       "label": "D",
+       "text": "加法结合律"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p323_q2",
+     "topicId": "mbj_p323",
+     "prompt": "用字母表示乘法分配律：a × (b + c) 等于什么？",
+     "question": "用字母表示乘法分配律：a × (b + c) 等于什么？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "a×b+a×c",
+     "explanation": "乘法分配律是把括号外的因数分别乘括号里的每个加数，再相加，所以等于 a 乘 b 加 a 乘 c。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "分"
+      },
+      {
+       "label": "B",
+       "text": "配"
+      },
+      {
+       "label": "C",
+       "text": "律"
+      },
+      {
+       "label": "D",
+       "text": "的"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p323_q3",
+     "topicId": "mbj_p323",
+     "prompt": "计算 25 × (4 + 8)，结果是多少？",
+     "question": "计算 25 × (4 + 8)，结果是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "300",
+     "explanation": "4 加 8 得 12，25 乘 12 得 300；按分配律算是 100 加 200 也得 300，两种算法结果相同。",
+     "subject": "math-bj",
+     "verify": "25*(4+8)"
+    },
+    {
+     "id": "mbj_p323_q4",
+     "topicId": "mbj_p323",
+     "prompt": "用简便方法计算 36 × 99 + 36，结果是多少？",
+     "question": "用简便方法计算 36 × 99 + 36，结果是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "3600",
+     "explanation": "把后面的 36 看成 36 乘 1，逆用分配律提取 36，得 36 乘 100 等于 3600。",
+     "subject": "math-bj",
+     "verify": "36*100"
+    },
+    {
+     "id": "mbj_p323_q5",
+     "topicId": "mbj_p323",
+     "prompt": "下面算式中，与 45 × 99 + 45 相等的是哪一个？",
+     "question": "下面算式中，与 45 × 99 + 45 相等的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "45 乘 99 表示 99 个 45，再加上 1 个 45，一共 100 个 45，所以等于 45 乘 100。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "45 × 99"
+      },
+      {
+       "label": "B",
+       "text": "45 × 100"
+      },
+      {
+       "label": "C",
+       "text": "46 × 99"
+      },
+      {
+       "label": "D",
+       "text": "45 × 99 + 99"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p323_q6",
+     "topicId": "mbj_p323",
+     "prompt": "简算 125 × 88（把 88 看成 80 加 8），结果是多少？",
+     "question": "简算 125 × 88（把 88 看成 80 加 8），结果是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "11000",
+     "explanation": "125 乘 80 得 10000，125 乘 8 得 1000，相加得 11000，这就是分配律的用法。",
+     "subject": "math-bj",
+     "verify": "125*(80+8)"
+    },
+    {
+     "id": "mbj_p323_q7",
+     "topicId": "mbj_p323",
+     "prompt": "为什么 25 × (4 + 8) 不能算成 25 × 4 + 8？请说明乘法分配律的道理。",
+     "question": "为什么 25 × (4 + 8) 不能算成 25 × 4 + 8？请说明乘法分配律的道理。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为括号里表示 4 个 25 与 8 个 25 合起来，共 4 加 8 个 25，8 也必须乘 25。25×(4+8)=100+200=300，而 25×4+8=108，后者的 8 漏乘了 25。",
+     "explanation": "分配律要「分别乘」，括号里的每个加数都要与括号外的因数相乘，漏乘一项结果就会变小。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p323_q8",
+     "topicId": "mbj_p323",
+     "prompt": "在 36 × 15 + 36 × 85 中，用分配律简算时应先做什么？",
+     "question": "在 36 × 15 + 36 × 85 中，用分配律简算时应先做什么？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "D",
+     "explanation": "两个积里都有因数 36，逆用分配律把 36 提出来，先算 15 加 85 得 100，再乘 36 得 3600。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "先算 36 × 15 得积"
+      },
+      {
+       "label": "B",
+       "text": "先算 36 × 85 得积"
+      },
+      {
+       "label": "C",
+       "text": "先用交换律把 36 和 15 换位"
+      },
+      {
+       "label": "D",
+       "text": "先算 15 + 85，再用和乘 36"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p324",
+   "description": "系统整理五条运算律的名称、字母表达式和简算作用，能判断一道简算题用了哪条定律，能根据数的特点选择合适的算法，并说清简算的道理。",
+   "mastery_criteria": [
+    "列表整理五条运算律的字母式",
+    "判断简算过程用了哪条运算律",
+    "选择合适定律完成简算并说理"
+   ],
+   "misconceptions": [
+    "25×32 拆成 25×4×8 却说成用分配律",
+    "遇到 25×44 不知拆成 25×4×11 或 25×(40+4)",
+    "只背字母式，不能用具体数字说明"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p324_q1",
+     "topicId": "mbj_p324",
+     "prompt": "(a + b) × c = a × c + b × c 表示的是哪一条运算律？",
+     "question": "(a + b) × c = a × c + b × c 表示的是哪一条运算律？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "括号里的和与 c 相乘，变成两个积相加，这是乘法分配律的字母表示。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "乘法分配律"
+      },
+      {
+       "label": "B",
+       "text": "乘法交换律"
+      },
+      {
+       "label": "C",
+       "text": "乘法结合律"
+      },
+      {
+       "label": "D",
+       "text": "加法结合律"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p324_q2",
+     "topicId": "mbj_p324",
+     "prompt": "125 × 32 简算时写成 125 × 8 × 4，运用的是哪一条运算律？",
+     "question": "125 × 32 简算时写成 125 × 8 × 4，运用的是哪一条运算律？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "C",
+     "explanation": "把 32 拆成 8 乘 4，三个因数连乘时先算 125 乘 8，改变的是运算顺序，属于乘法结合律。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "乘法分配律"
+      },
+      {
+       "label": "B",
+       "text": "乘法交换律"
+      },
+      {
+       "label": "C",
+       "text": "乘法结合律"
+      },
+      {
+       "label": "D",
+       "text": "加法交换律"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p324_q3",
+     "topicId": "mbj_p324",
+     "prompt": "加法交换律用字母表示是 a + b 等于什么？",
+     "question": "加法交换律用字母表示是 a + b 等于什么？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "b+a",
+     "explanation": "加法交换律是两个加数交换位置和不变，所以 a 加 b 等于 b 加 a。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "交"
+      },
+      {
+       "label": "B",
+       "text": "换"
+      },
+      {
+       "label": "C",
+       "text": "律"
+      },
+      {
+       "label": "D",
+       "text": "只"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p324_q4",
+     "topicId": "mbj_p324",
+     "prompt": "简算 78 + 46 + 22，结果是多少？",
+     "question": "简算 78 + 46 + 22，结果是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "146",
+     "explanation": "78 和 22 能凑成 100，先算它们得 100，再加 46 得 146。",
+     "subject": "math-bj",
+     "verify": "78+46+22"
+    },
+    {
+     "id": "mbj_p324_q5",
+     "topicId": "mbj_p324",
+     "prompt": "下面的简算过程中，错误的是哪一个？",
+     "question": "下面的简算过程中，错误的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "C",
+     "explanation": "25 乘括号里 40 加 4 的和，40 和 4 都要乘 25，正确结果是 1000 加 100，写成 25×40+4 就漏乘了。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "25 × 16 = 25 × 4 × 4"
+      },
+      {
+       "label": "B",
+       "text": "36 × 99 + 36 = 36 × 100"
+      },
+      {
+       "label": "C",
+       "text": "25 × (40 + 4) = 25 × 40 + 4"
+      },
+      {
+       "label": "D",
+       "text": "480 + 165 + 20 = 480 + 20 + 165"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p324_q6",
+     "topicId": "mbj_p324",
+     "prompt": "简算 12 × 25 × 4，结果是多少？",
+     "question": "简算 12 × 25 × 4，结果是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "1200",
+     "explanation": "25 乘 4 得 100，12 乘 100 得 1200，用的是乘法结合律。",
+     "subject": "math-bj",
+     "verify": "12*25*4"
+    },
+    {
+     "id": "mbj_p324_q7",
+     "topicId": "mbj_p324",
+     "prompt": "把 25 × 44 用两种不同的方法简算，并说出各用了哪条运算律。",
+     "question": "把 25 × 44 用两种不同的方法简算，并说出各用了哪条运算律。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "方法一：25×44=25×(40+4)=1000+100=1100，用乘法分配律；方法二：25×44=25×4×11=100×11=1100，用乘法结合律。两种方法结果相同。",
+     "explanation": "同一道题常常可以从拆分加数或拆分因数两条路走，先看哪个数能凑整，再决定用分配律还是结合律。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p324_q8",
+     "topicId": "mbj_p324",
+     "prompt": "计算 999 × 8 + 8 时，用分配律简算的结果是多少？",
+     "question": "计算 999 × 8 + 8 时，用分配律简算的结果是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "A",
+     "explanation": "999 个 8 再加 1 个 8，一共 1000 个 8，等于 8000，逆用分配律把 8 提出来即可。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "8000"
+      },
+      {
+       "label": "B",
+       "text": "7992"
+      },
+      {
+       "label": "C",
+       "text": "8008"
+      },
+      {
+       "label": "D",
+       "text": "7200"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p325",
+   "description": "认识线段、直线、射线和角，会用量角器量出角的度数，认识直角、锐角、钝角、平角和周角并能说出它们之间的大小关系，会按指定度数画角。",
+   "mastery_criteria": [
+    "用量角器正确量出角的度数",
+    "按度数判断角属于哪一类",
+    "按指定度数画角并标出度数"
+   ],
+   "misconceptions": [
+    "中心点没对准顶点就开始读数",
+    "内外圈看反，120 度读成 60 度",
+    "认为角的两边画得越长角越大"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.06",
+    "quote": "结合生活情境认识角，知道角的大小关系; 会用量角器量角"
+   },
+   "questions": [
+    {
+     "id": "mbj_p325_q1",
+     "topicId": "mbj_p325",
+     "prompt": "用量角器量一个直角，结果是多少度？",
+     "question": "用量角器量一个直角，结果是多少度？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "直角的两条边互相垂直，量出来是 90 度，这是判断锐角、钝角的标准。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "45 度"
+      },
+      {
+       "label": "B",
+       "text": "90 度"
+      },
+      {
+       "label": "C",
+       "text": "180 度"
+      },
+      {
+       "label": "D",
+       "text": "360 度"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p325_q2",
+     "topicId": "mbj_p325",
+     "prompt": "一个平角减去一个直角，还剩下多少度？",
+     "question": "一个平角减去一个直角，还剩下多少度？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "90",
+     "explanation": "平角是 180 度，直角是 90 度，180 减 90 得 90 度，剩下的正好是一个直角。",
+     "subject": "math-bj",
+     "verify": "180-90"
+    },
+    {
+     "id": "mbj_p325_q3",
+     "topicId": "mbj_p325",
+     "prompt": "一个角是 125 度，它是哪一类角？",
+     "question": "一个角是 125 度，它是哪一类角？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "D",
+     "explanation": "125 度大于 90 度而小于 180 度，符合钝角的范围，所以是钝角。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "锐角"
+      },
+      {
+       "label": "B",
+       "text": "直角"
+      },
+      {
+       "label": "C",
+       "text": "平角"
+      },
+      {
+       "label": "D",
+       "text": "钝角"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p325_q4",
+     "topicId": "mbj_p325",
+     "prompt": "一个角比直角大 25 度，与它拼成平角的角是多少度？",
+     "question": "一个角比直角大 25 度，与它拼成平角的角是多少度？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "65",
+     "explanation": "这个角是 90 加 25 等于 115 度，平角 180 度减去 115 度得 65 度。",
+     "subject": "math-bj",
+     "verify": "180-90-25"
+    },
+    {
+     "id": "mbj_p325_q5",
+     "topicId": "mbj_p325",
+     "prompt": "用量角器量角时，怎样做才能量得准确？请写出三个关键步骤。",
+     "question": "用量角器量角时，怎样做才能量得准确？请写出三个关键步骤。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "第一步把量角器的中心与角的顶点重合；第二步把零刻度线与角的一条边重合；第三步看另一条边落在同圈上的刻度并读数，注意分清内圈和外圈。",
+     "explanation": "量角的关键是「两个重合」加「同圈读数」，中心对顶点、零线对一边，读数时看与零刻度同一圈的刻度才不会读反。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p326",
+   "description": "认识线段、射线和直线，能说出它们的端点个数以及能否量出长短的区别；初步认识角，知道角的各部分名称，会用角的符号表示一个角。",
+   "mastery_criteria": [
+    "说出线段、射线、直线的端点个数",
+    "判断三种图形能否量出长度",
+    "指出角的顶点和两条边"
+   ],
+   "misconceptions": [
+    "认为射线有两个端点",
+    "认为直线可以量出长度",
+    "认为角的大小与两边画出的长短有关"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.04",
+    "quote": "能说出线段、射线和直线的共性与区别"
+   },
+   "questions": [
+    {
+     "id": "mbj_p326_q1",
+     "topicId": "mbj_p326",
+     "prompt": "下面三种图形中，有两个端点的是哪一个？",
+     "question": "下面三种图形中，有两个端点的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "线段有两个端点，射线只有一个端点，直线没有端点，所以有两个端点的是线段。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "线段"
+      },
+      {
+       "label": "B",
+       "text": "射线"
+      },
+      {
+       "label": "C",
+       "text": "直线"
+      },
+      {
+       "label": "D",
+       "text": "角"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p326_q2",
+     "topicId": "mbj_p326",
+     "prompt": "线段、射线和直线中，可以量出长度的是哪一个？",
+     "question": "线段、射线和直线中，可以量出长度的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "C",
+     "explanation": "只有线段两端都有端点，长度是确定的，可以量出来；射线和直线都向一端或两端无限延长，量不出长度。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "只有射线"
+      },
+      {
+       "label": "B",
+       "text": "只有直线"
+      },
+      {
+       "label": "C",
+       "text": "只有线段"
+      },
+      {
+       "label": "D",
+       "text": "三种都可以"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p326_q3",
+     "topicId": "mbj_p326",
+     "prompt": "一个角是由从一点引出的两条什么线组成的？",
+     "question": "一个角是由从一点引出的两条什么线组成的？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "射线",
+     "explanation": "从一点引出两条射线，就组成一个角，这个点叫角的顶点，两条射线叫角的边。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "角"
+      },
+      {
+       "label": "B",
+       "text": "的"
+      },
+      {
+       "label": "C",
+       "text": "两"
+      },
+      {
+       "label": "D",
+       "text": "条"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p326_q4",
+     "topicId": "mbj_p326",
+     "prompt": "关于线段、射线和直线，下面说法正确的是哪一个？",
+     "question": "关于线段、射线和直线，下面说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "D",
+     "explanation": "直线和射线都无限长不能比较长短，也不能说出具体长度；线段有两个端点，长度确定，可以量出长度。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "直线比射线长"
+      },
+      {
+       "label": "B",
+       "text": "射线比线段长"
+      },
+      {
+       "label": "C",
+       "text": "一条直线长 5 厘米"
+      },
+      {
+       "label": "D",
+       "text": "线段有两个端点，可以量出长度"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p326_q5",
+     "topicId": "mbj_p326",
+     "prompt": "一条线段中间有 2 个点，加上两端共 3 个点，以这些点为端点的线段一共有多少条？",
+     "question": "一条线段中间有 2 个点，加上两端共 3 个点，以这些点为端点的线段一共有多少条？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "3",
+     "explanation": "三个点中任取两个作端点都能确定一条线段，共 3 种取法，所以一共有 3 条线段。",
+     "subject": "math-bj",
+     "verify": "3*2/2"
+    },
+    {
+     "id": "mbj_p326_q6",
+     "topicId": "mbj_p326",
+     "prompt": "角的大小与什么有关系？请说明理由。",
+     "question": "角的大小与什么有关系？请说明理由。",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "A",
+     "explanation": "角的大小取决于两条边张开的程度，张得越开角越大，与边画得长短、顶点位置都没有关系。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "与两边张开的程度有关"
+      },
+      {
+       "label": "B",
+       "text": "与两边画出的长短有关"
+      },
+      {
+       "label": "C",
+       "text": "与顶点在纸上的位置有关"
+      },
+      {
+       "label": "D",
+       "text": "与所用纸的大小有关"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p326_q7",
+     "topicId": "mbj_p326",
+     "prompt": "请说出线段、射线、直线的共同点和不同点。",
+     "question": "请说出线段、射线、直线的共同点和不同点。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "共同点是三条线都是直的。不同点：线段有两个端点，可以量出长度；射线只有一个端点，向一端无限延长，量不出长度；直线没有端点，向两端无限延长，也量不出长度。",
+     "explanation": "判断三种线只要抓住端点的个数，端点决定能不能延长、能不能量出长度，这是它们最本质的区别。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p326_q8",
+     "topicId": "mbj_p326",
+     "prompt": "把一条线段向一端无限延长，得到的图形是什么？",
+     "question": "把一条线段向一端无限延长，得到的图形是什么？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "C",
+     "explanation": "线段向一端无限延长后只剩下一个端点，另一端没有尽头，这样的图形就是射线。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "线段"
+      },
+      {
+       "label": "B",
+       "text": "直线"
+      },
+      {
+       "label": "C",
+       "text": "射线"
+      },
+      {
+       "label": "D",
+       "text": "角"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p327",
+   "description": "认识量角器，知道 1 度角的规定和量角器上各部分的名称，会把中心与顶点重合、零刻度线与一边重合，正确读出角的度数，并用量角器画出指定度数的角。",
+   "mastery_criteria": [
+    "说出量角器中心、零刻度线和内外圈刻度的作用",
+    "正确读出一个角的度数",
+    "用量角器画出指定度数的角"
+   ],
+   "misconceptions": [
+    "内外圈读反，120 度读成 60 度",
+    "中心点没对准顶点就直接读数",
+    "画角时先画边后对刻度，度数画不准"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.06",
+    "quote": "结合生活情境认识角，知道角的大小关系; 会用量角器量角"
+   },
+   "questions": [
+    {
+     "id": "mbj_p327_q1",
+     "topicId": "mbj_p327",
+     "prompt": "把半圆分成 180 等份，每一份所对的角是多少度？",
+     "question": "把半圆分成 180 等份，每一份所对的角是多少度？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "1",
+     "explanation": "把半圆平均分成 180 份，每一份所对的角就是 1 度，度是量角的单位，用符号表示。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": " "
+      },
+      {
+       "label": "C",
+       "text": "度"
+      },
+      {
+       "label": "D",
+       "text": "角"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p327_q2",
+     "topicId": "mbj_p327",
+     "prompt": "量角时，量角器的中心应对准角的什么？",
+     "question": "量角时，量角器的中心应对准角的什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "量角器的中心必须与角的顶点重合，零刻度线与一条边重合，才能保证读出的刻度就是这个角的度数。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "一条边的端点"
+      },
+      {
+       "label": "B",
+       "text": "边的中点"
+      },
+      {
+       "label": "C",
+       "text": "任意位置"
+      },
+      {
+       "label": "D",
+       "text": "角的顶点"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p327_q3",
+     "topicId": "mbj_p327",
+     "prompt": "一个角的两条边分别对着量角器内圈 0 度和 75 度的刻度，这个角是多少度？",
+     "question": "一个角的两条边分别对着量角器内圈 0 度和 75 度的刻度，这个角是多少度？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "从 0 度刻度到 75 度刻度，中间跨了 75 个小格，每个小格 1 度，所以这个角是 75 度。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "75 度"
+      },
+      {
+       "label": "B",
+       "text": "105 度"
+      },
+      {
+       "label": "C",
+       "text": "15 度"
+      },
+      {
+       "label": "D",
+       "text": "165 度"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p327_q4",
+     "topicId": "mbj_p327",
+     "prompt": "一个角的两条边对着量角器外圈 0 度和 130 度的刻度，它的度数是多少？",
+     "question": "一个角的两条边对着量角器外圈 0 度和 130 度的刻度，它的度数是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "130",
+     "explanation": "一边与 0 度刻度重合，另一边落在同圈 130 度刻度上，中间跨 130 个小格，所以是 130 度。",
+     "subject": "math-bj",
+     "verify": "135-5"
+    },
+    {
+     "id": "mbj_p327_q5",
+     "topicId": "mbj_p327",
+     "prompt": "量一个 40 度的角时，有的同学读成了 140 度，最可能的原因是什么？",
+     "question": "量一个 40 度的角时，有的同学读成了 140 度，最可能的原因是什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "C",
+     "explanation": "量角器内外两圈的刻度合起来正好是 180 度，40 度和 140 度在同一位置，读错圈就会把 40 度读成 140 度。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "量角器中心没有对准顶点"
+      },
+      {
+       "label": "B",
+       "text": "角的两条边画得太短"
+      },
+      {
+       "label": "C",
+       "text": "读错了内圈和外圈的刻度"
+      },
+      {
+       "label": "D",
+       "text": "量角器没有放在桌面上"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p327_q6",
+     "topicId": "mbj_p327",
+     "prompt": "一个角的两条边落在量角器同圈的 30 度和 110 度刻度上，这个角是多少度？",
+     "question": "一个角的两条边落在量角器同圈的 30 度和 110 度刻度上，这个角是多少度？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "80",
+     "explanation": "两条边相差 110 减 30 等于 80 个小格，每格 1 度，所以这个角是 80 度。",
+     "subject": "math-bj",
+     "verify": "110-30"
+    },
+    {
+     "id": "mbj_p327_q7",
+     "topicId": "mbj_p327",
+     "prompt": "请写出用量角器画一个 65 度角的步骤。",
+     "question": "请写出用量角器画一个 65 度角的步骤。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "先画一条射线，把量角器中心与射线端点重合、零刻度线与射线重合，在 65 度刻度处点一个点，移走量角器，从端点过这个点画一条射线，标上 65 度。",
+     "explanation": "画角与量角是相反的过程，量角是读刻度，画角是先定刻度再连边，两个重合的要求完全一样。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p327_q8",
+     "topicId": "mbj_p327",
+     "prompt": "两个角拼在一起正好是一个平角，其中一个角是 55 度，另一个角是多少度？",
+     "question": "两个角拼在一起正好是一个平角，其中一个角是 55 度，另一个角是多少度？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "125",
+     "explanation": "平角是 180 度，180 减 55 得 125 度，所以另一个角是 125 度。",
+     "subject": "math-bj",
+     "verify": "180-55"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p328",
+   "description": "认识锐角、直角、钝角、平角和周角，知道它们之间的大小关系和倍数关系，会按给定度数用量角器画角，并能判断角在变化过程中的类别。",
+   "mastery_criteria": [
+    "按度数范围判断角的类别",
+    "说出平角、周角与直角的倍数关系",
+    "按指定度数准确画出角"
+   ],
+   "misconceptions": [
+    "认为钝角可以大于 180 度",
+    "把 180 度的平角说成周角",
+    "画角时内外圈用错，60 度画成 120 度"
+   ],
+   "std": {
+    "id": "mat-2022:2.TS.03",
+    "quote": "让学生观察角的大小变化，认识直角、锐角、钝角、平角和周角"
+   },
+   "questions": [
+    {
+     "id": "mbj_p328_q1",
+     "topicId": "mbj_p328",
+     "prompt": "一条射线绕它的端点旋转一周所成的角是多少度？",
+     "question": "一条射线绕它的端点旋转一周所成的角是多少度？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "一条射线绕它的端点旋转一周所成的角是周角，正好是 360 度。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "90 度"
+      },
+      {
+       "label": "B",
+       "text": "180 度"
+      },
+      {
+       "label": "C",
+       "text": "270 度"
+      },
+      {
+       "label": "D",
+       "text": "360 度"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p328_q2",
+     "topicId": "mbj_p328",
+     "prompt": "下面四个角中，是钝角的是哪一个？",
+     "question": "下面四个角中，是钝角的是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "C",
+     "explanation": "钝角要大于 90 度且小于 180 度，91 度符合；89 度是锐角，90 度是直角，180 度是平角。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "89 度"
+      },
+      {
+       "label": "B",
+       "text": "90 度"
+      },
+      {
+       "label": "C",
+       "text": "91 度"
+      },
+      {
+       "label": "D",
+       "text": "180 度"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p328_q3",
+     "topicId": "mbj_p328",
+     "prompt": "1 个平角等于几个直角？",
+     "question": "1 个平角等于几个直角？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "2",
+     "explanation": "平角是 180 度，直角是 90 度，180 里面有 2 个 90，所以 1 个平角等于 2 个直角。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "平"
+      },
+      {
+       "label": "B",
+       "text": "角"
+      },
+      {
+       "label": "C",
+       "text": "和"
+      },
+      {
+       "label": "D",
+       "text": "直"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p328_q4",
+     "topicId": "mbj_p328",
+     "prompt": "一个锐角是 42 度，与它拼成直角的角是多少度？",
+     "question": "一个锐角是 42 度，与它拼成直角的角是多少度？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "48",
+     "explanation": "拼成直角说明两个角的和是 90 度，90 减 42 得 48 度。",
+     "subject": "math-bj",
+     "verify": "90-42"
+    },
+    {
+     "id": "mbj_p328_q5",
+     "topicId": "mbj_p328",
+     "prompt": "把两个直角拼在一起，得到的角是多少度？",
+     "question": "把两个直角拼在一起，得到的角是多少度？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "180",
+     "explanation": "一个直角 90 度，两个直角是 90 乘 2 等于 180 度，这个角是平角。",
+     "subject": "math-bj",
+     "verify": "90*2"
+    },
+    {
+     "id": "mbj_p328_q6",
+     "topicId": "mbj_p328",
+     "prompt": "关于各类角的度数关系，下面说法正确的是哪一个？",
+     "question": "关于各类角的度数关系，下面说法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "大于 90 度的角还可能是平角、周角，所以不能都叫钝角；平角有两条边，不是一条直线；一个周角 360 度正好是 4 个直角。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "大于 90 度的角都是钝角"
+      },
+      {
+       "label": "B",
+       "text": "1 个周角等于 4 个直角"
+      },
+      {
+       "label": "C",
+       "text": "平角就是一条直线"
+      },
+      {
+       "label": "D",
+       "text": "钝角都小于 90 度"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p328_q7",
+     "topicId": "mbj_p328",
+     "prompt": "请按从小到大的顺序写出锐角、直角、钝角、平角、周角，并说明它们与 90 度的关系。",
+     "question": "请按从小到大的顺序写出锐角、直角、钝角、平角、周角，并说明它们与 90 度的关系。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "从小到大依次是锐角、直角、钝角、平角、周角。锐角小于 90 度，直角等于 90 度，钝角大于 90 度而小于 180 度，平角是 180 度即 2 个直角，周角是 360 度即 4 个直角。",
+     "explanation": "五类角按度数排成一条线，抓住 90 度、180 度、360 度这三个关键刻度，就能判断任何一个角属于哪一类。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p328_q8",
+     "topicId": "mbj_p328",
+     "prompt": "把一个平角分成两个角，其中一个角是 35 度，另一个角是什么角？",
+     "question": "把一个平角分成两个角，其中一个角是 35 度，另一个角是什么角？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "D",
+     "explanation": "平角 180 度减去 35 度得 145 度，145 度大于 90 度而小于 180 度，所以是钝角。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "锐角"
+      },
+      {
+       "label": "B",
+       "text": "直角"
+      },
+      {
+       "label": "C",
+       "text": "平角"
+      },
+      {
+       "label": "D",
+       "text": "钝角"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p329",
+   "description": "理解除数是两位数的除法的算理，掌握口算、笔算和试商调商的方法，会用四舍五入法把除数看作整十数试商，能解决路程、单价等实际问题并验算结果。",
+   "mastery_criteria": [
+    "口算整十数除多位数",
+    "用四舍五入法试商并调商",
+    "用商乘除数加余数验算"
+   ],
+   "misconceptions": [
+    "试商后不检查余数是否比除数大",
+    "商中间或末尾的 0 漏写",
+    "把除数四舍五入后得到的初商直接当结果"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p329_q1",
+     "topicId": "mbj_p329",
+     "prompt": "估算 358 ÷ 42 时，把 42 看作多少来试商比较方便？",
+     "question": "估算 358 ÷ 42 时，把 42 看作多少来试商比较方便？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "42 的个位是 2，舍去尾数后接近 40，把除数看作整十数 40 试商最方便。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "30"
+      },
+      {
+       "label": "B",
+       "text": "40"
+      },
+      {
+       "label": "C",
+       "text": "50"
+      },
+      {
+       "label": "D",
+       "text": "60"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p329_q2",
+     "topicId": "mbj_p329",
+     "prompt": "240 ÷ 40 的商是多少？",
+     "question": "240 ÷ 40 的商是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "6",
+     "explanation": "因为 40 乘 6 等于 240，所以 240 除以 40 的商是 6。",
+     "subject": "math-bj",
+     "verify": "240/40"
+    },
+    {
+     "id": "mbj_p329_q3",
+     "topicId": "mbj_p329",
+     "prompt": "计算 912 ÷ 38 时，商是几位数？",
+     "question": "计算 912 ÷ 38 时，商是几位数？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "D",
+     "explanation": "被除数的前两位 91 比除数 38 大，所以商的最高位在十位上，商是两位数，商为 24。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "一位数"
+      },
+      {
+       "label": "B",
+       "text": "三位数"
+      },
+      {
+       "label": "C",
+       "text": "四位数"
+      },
+      {
+       "label": "D",
+       "text": "两位数"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p329_q4",
+     "topicId": "mbj_p329",
+     "prompt": "768 ÷ 24 的商是多少？",
+     "question": "768 ÷ 24 的商是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "32",
+     "explanation": "把 24 看作 20 试商，76 里面有 3 个 20，3 乘 24 得 72，余 4 落下 8 得 48，48 里面有 2 个 24，商是 32。",
+     "subject": "math-bj",
+     "verify": "768/24"
+    },
+    {
+     "id": "mbj_p329_q5",
+     "topicId": "mbj_p329",
+     "prompt": "笔算 936 ÷ 26 时，怎样试商？请说明过程并写出验算方法。",
+     "question": "笔算 936 ÷ 26 时，怎样试商？请说明过程并写出验算方法。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "把 26 看作 30 试商，93 里面约 3 个 30，试商 3，3×26=78，93-78=15，落下 6 得 156，156 里约 5 个 30，试商 5 余 26 不合，改商 6，6×26=156，正好除尽，商 36；验算 36×26=936。",
+     "explanation": "试商就是把除数看成整十数估商，再用商乘除数检验，余数大于或等于除数就说明商小了，要往上调。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p330",
+   "description": "会口算整十数、整百数除以整十数，以及几百几十除以整十数，能借助乘除关系和表内除法说明口算的道理，并用口算解决简单的实际问题。",
+   "mastery_criteria": [
+    "口算整十数除以整十数",
+    "用乘法想除法说明口算依据",
+    "口算几百几十除以整十数"
+   ],
+   "misconceptions": [
+    "560÷70 的商多写一个 0",
+    "360÷40 算成 90",
+    "只去掉被除数的 0，除数没同时缩小"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p330_q1",
+     "topicId": "mbj_p330",
+     "prompt": "80 ÷ 20 的商是多少？",
+     "question": "80 ÷ 20 的商是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4",
+     "explanation": "因为 20 乘 4 等于 80，所以 80 除以 20 的商是 4，也可以看成 8 除以 2。",
+     "subject": "math-bj",
+     "verify": "80/20"
+    },
+    {
+     "id": "mbj_p330_q2",
+     "topicId": "mbj_p330",
+     "prompt": "630 ÷ 70 的商是多少？",
+     "question": "630 ÷ 70 的商是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "9",
+     "explanation": "被除数和除数同时去掉一个 0，变成 63 除以 7，得 9，所以商是 9。",
+     "subject": "math-bj",
+     "verify": "630/70"
+    },
+    {
+     "id": "mbj_p330_q3",
+     "topicId": "mbj_p330",
+     "prompt": "口算 480 ÷ 60 时，可以怎样想？",
+     "question": "口算 480 ÷ 60 时，可以怎样想？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "C",
+     "explanation": "想乘法算除法，60 乘 8 正好等于 480，所以商是 8，这样想最快也最可靠。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "想 48 ÷ 6 = 8，所以商是 80"
+      },
+      {
+       "label": "B",
+       "text": "想 480 ÷ 6 = 80，商是 80"
+      },
+      {
+       "label": "C",
+       "text": "想 60 × 8 = 480，所以商是 8"
+      },
+      {
+       "label": "D",
+       "text": "想 60 × 80 = 4800，商是 80"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p330_q4",
+     "topicId": "mbj_p330",
+     "prompt": "1200 ÷ 300 的商是多少？",
+     "question": "1200 ÷ 300 的商是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "4",
+     "explanation": "被除数和除数同时去掉两个 0，变成 12 除以 3，得 4，所以商是 4。",
+     "subject": "math-bj",
+     "verify": "1200/300"
+    },
+    {
+     "id": "mbj_p330_q5",
+     "topicId": "mbj_p330",
+     "prompt": "口算 720 ÷ 90 时，下面的想法正确的是哪一个？",
+     "question": "口算 720 ÷ 90 时，下面的想法正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "D",
+     "explanation": "被除数和除数同时缩小到原来的十分之一，商不变，所以把末尾的 0 同时去掉一个，用 72 除以 9 得 8。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "只把 720 去掉 0，变成 72 ÷ 90"
+      },
+      {
+       "label": "B",
+       "text": "72 ÷ 9 = 8，所以商是 80"
+      },
+      {
+       "label": "C",
+       "text": "720 ÷ 9 = 80，商是 80"
+      },
+      {
+       "label": "D",
+       "text": "把 720 和 90 同时去掉一个 0，变成 72 ÷ 9 = 8"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p330_q6",
+     "topicId": "mbj_p330",
+     "prompt": "每盒装 30 个鸡蛋，840 个鸡蛋可以装多少盒？",
+     "question": "每盒装 30 个鸡蛋，840 个鸡蛋可以装多少盒？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "28",
+     "explanation": "求 840 里面有几个 30，用 840 除以 30，去掉末尾的一个 0 得 84 除以 3 等于 28，可以装 28 盒。",
+     "subject": "math-bj",
+     "verify": "840/30"
+    },
+    {
+     "id": "mbj_p330_q7",
+     "topicId": "mbj_p330",
+     "prompt": "为什么 560 ÷ 70 可以看成 56 ÷ 7 来口算？请说明理由。",
+     "question": "为什么 560 ÷ 70 可以看成 56 ÷ 7 来口算？请说明理由。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为被除数和除数同时缩小到原来的十分之一，商不变：560÷70 等于 56÷7，所以把两个数末尾的 0 同时去掉一个，商仍然是 8。",
+     "explanation": "商不变的规律是口算除法的依据，被除数和除数必须同时缩小相同的倍数，商才不变，只动一个数就会算错。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p330_q8",
+     "topicId": "mbj_p330",
+     "prompt": "一个数除以 40 的商是 25，这个数是多少？",
+     "question": "一个数除以 40 的商是 25，这个数是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "1000",
+     "explanation": "被除数等于商乘除数，40 乘 25 等于 1000，所以这个数是 1000。",
+     "subject": "math-bj",
+     "verify": "40*25"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p331",
+   "description": "掌握除数是两位数、商是一位数或两位数的笔算方法，会按试商、相乘、相减、比余数的顺序书写竖式，商中间或末尾有 0 时能正确处理，并用验算检查结果。",
+   "mastery_criteria": [
+    "按四步完整写出两位数除法的竖式",
+    "商中间或末尾有 0 时不漏写",
+    "用商乘除数加余数验算"
+   ],
+   "misconceptions": [
+    "余数比除数大却不改商",
+    "商末尾的 0 漏写，840÷42 只写商 2",
+    "落数时漏落一位，商的位数算错"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p331_q1",
+     "topicId": "mbj_p331",
+     "prompt": "96 ÷ 32 的商是多少？",
+     "question": "96 ÷ 32 的商是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "3",
+     "explanation": "32 乘 3 等于 96，正好除尽，所以商是 3。",
+     "subject": "math-bj",
+     "verify": "96/32"
+    },
+    {
+     "id": "mbj_p331_q2",
+     "topicId": "mbj_p331",
+     "prompt": "525 ÷ 25 的商是多少？",
+     "question": "525 ÷ 25 的商是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "21",
+     "explanation": "25 乘 21 等于 525，所以商是 21，商的最高位在十位上。",
+     "subject": "math-bj",
+     "verify": "525/25"
+    },
+    {
+     "id": "mbj_p331_q3",
+     "topicId": "mbj_p331",
+     "prompt": "计算 840 ÷ 42 时，商的个位上应该写什么？",
+     "question": "计算 840 ÷ 42 时，商的个位上应该写什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "A",
+     "explanation": "840 除以 42 得 20，十位上商 2，个位落下的 0 除以 42 不够商 1，要用 0 占位，所以个位写 0。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "0"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "个位上不写数"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p331_q4",
+     "topicId": "mbj_p331",
+     "prompt": "805 ÷ 23 的商是多少？",
+     "question": "805 ÷ 23 的商是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "35",
+     "explanation": "把 23 看作 20 试商，80 里面约 4 个 20，试商 4 时 4×23=92 超过 80，改商 3，3×23=69，80-69=11，落下 5 得 115，115 里面有 5 个 23，商是 35。",
+     "subject": "math-bj",
+     "verify": "805/23"
+    },
+    {
+     "id": "mbj_p331_q5",
+     "topicId": "mbj_p331",
+     "prompt": "笔算 468 ÷ 21 时，先商 2 余下 4，落下 8 得 48，48 里面有几个 21？",
+     "question": "笔算 468 ÷ 21 时，先商 2 余下 4，落下 8 得 48，48 里面有几个 21？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "21 乘 2 等于 42，48 减 42 余 6，6 小于 21，所以 48 里面有 2 个 21，商的个位写 2，整个商是 22。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 个"
+      },
+      {
+       "label": "B",
+       "text": "2 个"
+      },
+      {
+       "label": "C",
+       "text": "3 个"
+      },
+      {
+       "label": "D",
+       "text": "4 个"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p331_q6",
+     "topicId": "mbj_p331",
+     "prompt": "一个数的 15 倍是 675，这个数是多少？",
+     "question": "一个数的 15 倍是 675，这个数是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "45",
+     "explanation": "求这个数用除法，675 除以 15，把 15 看作 20 试商 4，4×15=60，67-60=7，落下 5 得 75，75 里有 5 个 15，商是 45。",
+     "subject": "math-bj",
+     "verify": "675/15"
+    },
+    {
+     "id": "mbj_p331_q7",
+     "topicId": "mbj_p331",
+     "prompt": "笔算 612 ÷ 34 时，先试商 2 发现 2×34=68 大于 61，接下来应该怎么办？请写出完整过程。",
+     "question": "笔算 612 ÷ 34 时，先试商 2 发现 2×34=68 大于 61，接下来应该怎么办？请写出完整过程。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "商 2 偏大，改商 1，1×34=34，61-34=27，落下 2 得 272，272 里面有 8 个 34，8×34=272 正好除尽，商是 18。验算 18×34=612。",
+     "explanation": "试商后先用商乘除数与被除数比较，积大于被除数说明商大了要调小，每一步减完都要检查余数是否小于除数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p331_q8",
+     "topicId": "mbj_p331",
+     "prompt": "一个数除以 27，商是 15，余数是 4，这个数是多少？",
+     "question": "一个数除以 27，商是 15，余数是 4，这个数是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "409",
+     "explanation": "被除数等于商乘除数加余数，27 乘 15 得 405，再加 4 得 409。",
+     "subject": "math-bj",
+     "verify": "27*15+4"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p332",
+   "description": "会把除数用四舍五入法看作与它接近的整十数来试商：除数个位是 1 到 4 时舍去尾数，看作小一些的整十数；个位是 5 到 9 时进一，看作大一些的整十数，并能判断初商偏大还是偏小。",
+   "mastery_criteria": [
+    "把两位数除数看作整十数试商",
+    "说明四舍五入后初商偏大偏小的原因",
+    "写出完整的试商竖式"
+   ],
+   "misconceptions": [
+    "把 46 看作 40 试商，初商偏大却不调整",
+    "把 24 看作 30 试商，初商偏小却不会调大",
+    "四舍五入后直接写商，不检验余数"
+   ],
+   "std": {
+    "id": "mat-2022:2.TS.02",
+    "quote": "数的运算教学应利用整数的乘法运算"
+   },
+   "questions": [
+    {
+     "id": "mbj_p332_q1",
+     "topicId": "mbj_p332",
+     "prompt": "计算 371 ÷ 53 时，把 53 看作多少来试商比较合适？",
+     "question": "计算 371 ÷ 53 时，把 53 看作多少来试商比较合适？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "B",
+     "explanation": "53 的个位是 3，舍去尾数后接近 50，把除数看作整十数 50 试商最方便。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "40"
+      },
+      {
+       "label": "B",
+       "text": "50"
+      },
+      {
+       "label": "C",
+       "text": "60"
+      },
+      {
+       "label": "D",
+       "text": "70"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p332_q2",
+     "topicId": "mbj_p332",
+     "prompt": "用四舍五入法把除数 38 看作整十数试商，应看作多少？",
+     "question": "用四舍五入法把除数 38 看作整十数试商，应看作多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "40",
+     "explanation": "38 的个位是 8，五入后接近 40，所以把 38 看作 40 来试商。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "四"
+      },
+      {
+       "label": "B",
+       "text": "舍"
+      },
+      {
+       "label": "C",
+       "text": "五"
+      },
+      {
+       "label": "D",
+       "text": "入"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p332_q3",
+     "topicId": "mbj_p332",
+     "prompt": "估算 283 ÷ 69 时，把 69 看作 70，商大约是多少？",
+     "question": "估算 283 ÷ 69 时，把 69 看作 70，商大约是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "4",
+     "explanation": "把 283 看作 280、69 看作 70，280 除以 70 得 4，所以商大约是 4，实际商也是 4。",
+     "subject": "math-bj",
+     "verify": "280/70"
+    },
+    {
+     "id": "mbj_p332_q4",
+     "topicId": "mbj_p332",
+     "prompt": "把除数 56 看作 60 试商，得到的初商通常会怎样？",
+     "question": "把除数 56 看作 60 试商，得到的初商通常会怎样？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "C",
+     "explanation": "五入把除数看大了，除数越大商越小，所以用 60 试出的初商往往比真正的商小，需要往大调。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "偏大"
+      },
+      {
+       "label": "B",
+       "text": "正好相等"
+      },
+      {
+       "label": "C",
+       "text": "偏小"
+      },
+      {
+       "label": "D",
+       "text": "不能判断"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p332_q5",
+     "topicId": "mbj_p332",
+     "prompt": "438 ÷ 62，把 62 看作 60 试商，正确的商是多少？",
+     "question": "438 ÷ 62，把 62 看作 60 试商，正确的商是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "7",
+     "explanation": "把 62 看作 60，43 里约 7 个 60，试商 7，7 乘 62 得 434，余 4 小于 62，所以商是 7。",
+     "subject": "math-bj",
+     "verify": "434/62"
+    },
+    {
+     "id": "mbj_p332_q6",
+     "topicId": "mbj_p332",
+     "prompt": "计算 245 ÷ 48 时把 48 看作 50 试商，初商 4 是否合适？",
+     "question": "计算 245 ÷ 48 时把 48 看作 50 试商，初商 4 是否合适？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "D",
+     "explanation": "4 乘 48 得 192，245 减 192 余 53，53 大于除数 48，说明初商偏小，应该改商 5，5 乘 48 得 240，余 5。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "合适，商就是 4"
+      },
+      {
+       "label": "B",
+       "text": "偏大，应改商 3"
+      },
+      {
+       "label": "C",
+       "text": "偏小，应改商 6"
+      },
+      {
+       "label": "D",
+       "text": "偏小，应改商 5"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p332_q7",
+     "topicId": "mbj_p332",
+     "prompt": "为什么把除数「四舍」后试商，初商容易偏大？请举例说明。",
+     "question": "为什么把除数「四舍」后试商，初商容易偏大？请举例说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "四舍把除数看小了，除数越小商越大。例如 246÷42 把 42 看作 40 试商 6，6×42=252 比 246 大，说明初商偏大，要调小成 5；而 246÷41 试商 6 正好除尽。",
+     "explanation": "试商时除数被看成整十数，看成大数商就偏小，看成小数商就偏大，所以要按偏大调小、偏小调大的方向调整。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p332_q8",
+     "topicId": "mbj_p332",
+     "prompt": "一个数除以 29，把 29 看作 30 试商得到初商 5，实际余数是 8，这个被除数是多少？",
+     "question": "一个数除以 29，把 29 看作 30 试商得到初商 5，实际余数是 8，这个被除数是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "153",
+     "explanation": "被除数等于商乘除数加余数，29 乘 5 得 145，再加 8 得 153，验算 153 除以 29 商 5 余 8。",
+     "subject": "math-bj",
+     "verify": "29*5+8"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p333",
+   "description": "掌握试商之后调商的方法：初商偏大时把商调小 1 再试，余数大于或等于除数时把商调大，能连续调商直到余数小于除数，并把调商过程完整写进竖式。",
+   "mastery_criteria": [
+    "判断初商偏大还是偏小",
+    "把初商调小或调大后重新相乘相减",
+    "检查最后的余数小于除数"
+   ],
+   "misconceptions": [
+    "初商偏大时反而把商调大，方向搞反",
+    "调商后不重新相乘就直接写答案",
+    "余数正好等于除数时仍当作合格结果"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p333_q1",
+     "topicId": "mbj_p333",
+     "prompt": "试商后如果余数比除数大，说明初商怎样？",
+     "question": "试商后如果余数比除数大，说明初商怎样？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "C",
+     "explanation": "余数比除数大，说明还能再除一次，商取得太小了，要把商往大调。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "偏大"
+      },
+      {
+       "label": "B",
+       "text": "正好合适"
+      },
+      {
+       "label": "C",
+       "text": "偏小"
+      },
+      {
+       "label": "D",
+       "text": "无法判断"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p333_q2",
+     "topicId": "mbj_p333",
+     "prompt": "初商偏大时，应该把商怎样调整？",
+     "question": "初商偏大时，应该把商怎样调整？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "初商偏大说明商乘除数超过了被除数，把商减去 1 再乘一次，积就会落到被除数以内。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "调大 1"
+      },
+      {
+       "label": "B",
+       "text": "调大 10"
+      },
+      {
+       "label": "C",
+       "text": "保持不变"
+      },
+      {
+       "label": "D",
+       "text": "调小 1"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p333_q3",
+     "topicId": "mbj_p333",
+     "prompt": "192 ÷ 24，如果初商 9 后 9×24=216 超过 192，正确的商是多少？",
+     "question": "192 ÷ 24，如果初商 9 后 9×24=216 超过 192，正确的商是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "8",
+     "explanation": "商 9 偏大，调小成 8，8 乘 24 得 192，正好除尽，所以商是 8。",
+     "subject": "math-bj",
+     "verify": "192/24"
+    },
+    {
+     "id": "mbj_p333_q4",
+     "topicId": "mbj_p333",
+     "prompt": "286 ÷ 37，初商 7 后 7×37=259，余 27 小于除数，商是多少？",
+     "question": "286 ÷ 37，初商 7 后 7×37=259，余 27 小于除数，商是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "7",
+     "explanation": "余数 27 小于除数 37，说明商 7 合适，不必再调，所以商是 7，余 27。",
+     "subject": "math-bj",
+     "verify": "259/37"
+    },
+    {
+     "id": "mbj_p333_q5",
+     "topicId": "mbj_p333",
+     "prompt": "计算 316 ÷ 39 时把 39 看作 40 试商 7，7×39=273，余 43，这说明什么？",
+     "question": "计算 316 ÷ 39 时把 39 看作 40 试商 7，7×39=273，余 43，这说明什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "C",
+     "explanation": "余数 43 大于除数 39，说明商 7 偏小，改商 8，8 乘 39 得 312，余 4 小于 39，商是 8。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "商 7 已经正确"
+      },
+      {
+       "label": "B",
+       "text": "商 7 偏大，应改商 6"
+      },
+      {
+       "label": "C",
+       "text": "商 7 偏小，应改商 8"
+      },
+      {
+       "label": "D",
+       "text": "余数可以保留不管"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p333_q6",
+     "topicId": "mbj_p333",
+     "prompt": "406 ÷ 52，初商 8 后 8×52=416 超过 406，正确的商是多少？",
+     "question": "406 ÷ 52，初商 8 后 8×52=416 超过 406，正确的商是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "7",
+     "explanation": "初商 8 偏大，调小成 7，7 乘 52 得 364，406 减 364 余 42 小于 52，所以商是 7。",
+     "subject": "math-bj",
+     "verify": "364/52"
+    },
+    {
+     "id": "mbj_p333_q7",
+     "topicId": "mbj_p333",
+     "prompt": "调商时怎样判断初商是偏大还是偏小？请分别说明判断依据。",
+     "question": "调商时怎样判断初商是偏大还是偏小？请分别说明判断依据。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "用初商乘除数，如果积大于被除数、减不下来，说明初商偏大，要把商调小 1；如果减完余数大于或等于除数，说明初商偏小，要把商调大 1。每次调整后都要重新相乘再减。",
+     "explanation": "调商看两个信号：乘出的积超过被除数就往小调，余数不小于除数就往大调，直到余数小于除数为止。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p333_q8",
+     "topicId": "mbj_p333",
+     "prompt": "一个数除以 43，试商时初商 6 偏大，改商 5 后余 12，这个数是多少？",
+     "question": "一个数除以 43，试商时初商 6 偏大，改商 5 后余 12，这个数是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "227",
+     "explanation": "被除数等于商乘除数加余数，43 乘 5 得 215，再加 12 得 227，验算 227 除以 43 商 5 余 12。",
+     "subject": "math-bj",
+     "verify": "43*5+12"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p334",
+   "description": "综合运用两位数除多位数的笔算方法解决实际问题，能根据题意确定商和余数的单位，会处理商中间、末尾有 0 的情况，并通过验算检查计算结果是否合理。",
+   "mastery_criteria": [
+    "正确列出除法竖式并求出商和余数",
+    "根据实际情境取舍商与余数的单位",
+    "用乘法验算除法结果"
+   ],
+   "misconceptions": [
+    "应用题只写商，余数不带单位或漏答",
+    "被除数中间有 0 时商漏写 0",
+    "「至少需要几辆车」按四舍五入少答一辆"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p334_q1",
+     "topicId": "mbj_p334",
+     "prompt": "56 ÷ 28 的商是多少？",
+     "question": "56 ÷ 28 的商是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "2",
+     "explanation": "28 乘 2 等于 56，正好除尽，所以商是 2。",
+     "subject": "math-bj",
+     "verify": "56/28"
+    },
+    {
+     "id": "mbj_p334_q2",
+     "topicId": "mbj_p334",
+     "prompt": "780 ÷ 26 的商是多少？",
+     "question": "780 ÷ 26 的商是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "30",
+     "explanation": "78 除以 26 得 3，被除数末尾的 0 落下来不够商 1，用 0 占位，所以商是 30。",
+     "subject": "math-bj",
+     "verify": "780/26"
+    },
+    {
+     "id": "mbj_p334_q3",
+     "topicId": "mbj_p334",
+     "prompt": "计算 624 ÷ 24 时，商的最高位应该写在什么位上？",
+     "question": "计算 624 ÷ 24 时，商的最高位应该写在什么位上？",
+     "type": "choice",
+     "difficulty": "basic",
+     "answer": "D",
+     "explanation": "被除数前两位 62 比除数 24 大，够除，所以商的最高位写在十位上，商是两位数 26。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "百位"
+      },
+      {
+       "label": "B",
+       "text": "个位"
+      },
+      {
+       "label": "C",
+       "text": "千位"
+      },
+      {
+       "label": "D",
+       "text": "十位"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p334_q4",
+     "topicId": "mbj_p334",
+     "prompt": "学校买来 504 本图书，平均分给 21 个班，每班分到多少本？",
+     "question": "学校买来 504 本图书，平均分给 21 个班，每班分到多少本？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "24",
+     "explanation": "求每班分到多少本，用 504 除以 21，把 21 看作 20 试商 2，42 余 8 落 4 得 84，84 里 4 个 21，商是 24。",
+     "subject": "math-bj",
+     "verify": "504/21"
+    },
+    {
+     "id": "mbj_p334_q5",
+     "topicId": "mbj_p334",
+     "prompt": "有 250 名同学去参观，每辆车限乘 45 人，至少需要几辆车？",
+     "question": "有 250 名同学去参观，每辆车限乘 45 人，至少需要几辆车？",
+     "type": "choice",
+     "difficulty": "standard",
+     "answer": "B",
+     "explanation": "250 除以 45 商 5 余 25，5 辆车只能坐 225 人，剩下的 25 人还要一辆车，所以至少需要 6 辆。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "4 辆"
+      },
+      {
+       "label": "B",
+       "text": "5 辆"
+      },
+      {
+       "label": "C",
+       "text": "6 辆"
+      },
+      {
+       "label": "D",
+       "text": "7 辆"
+      }
+     ]
+    },
+    {
+     "id": "mbj_p334_q6",
+     "topicId": "mbj_p334",
+     "prompt": "一个数除以 36，商是 14，余数是 9，这个数是多少？",
+     "question": "一个数除以 36，商是 14，余数是 9，这个数是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "513",
+     "explanation": "被除数等于商乘除数加余数，36 乘 14 得 504，再加 9 得 513。",
+     "subject": "math-bj",
+     "verify": "36*14+9"
+    },
+    {
+     "id": "mbj_p334_q7",
+     "topicId": "mbj_p334",
+     "prompt": "为什么「至少需要几辆车」这类问题不能直接用四舍五入取近似值？请举例说明。",
+     "question": "为什么「至少需要几辆车」这类问题不能直接用四舍五入取近似值？请举例说明。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为余下的人也必须有车坐。例如 250 除以 45 商 5 余 25，四舍五入会看成大约 5 辆，而剩下的 25 人还要再加 1 辆，所以要用进一法，答 6 辆。",
+     "explanation": "进一法的道理是「余下的也要算一份」，凡是装完、运完、坐完这类问题，只要有余数就要在商上加 1。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p334_q8",
+     "topicId": "mbj_p334",
+     "prompt": "900 ÷ 45 的商比 450 ÷ 45 的商大多少？",
+     "question": "900 ÷ 45 的商比 450 ÷ 45 的商大多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "answer": "A",
+     "explanation": "900 除以 45 得 20，450 除以 45 得 10，两者相差 10。",
+     "subject": "math-bj",
+     "options": [
+      {
+       "label": "A",
+       "text": "10"
+      },
+      {
+       "label": "B",
+       "text": "15"
+      },
+      {
+       "label": "C",
+       "text": "20"
+      },
+      {
+       "label": "D",
+       "text": "45"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

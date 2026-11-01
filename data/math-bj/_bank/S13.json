@@ -1,0 +1,3084 @@
+{
+ "shard": "S13",
+ "subject": "math-bj",
+ "book": "三上",
+ "points": [
+  {
+   "topicId": "mbj_p229",
+   "description": "从被除数的最高位除起，如果最高位上的数除以一位数有余数，就把余下的数与下一位上的数合起来继续除。学习目标是把竖式每一步说清楚，商的数位对整齐，能熟练计算首位有余数的三位数除以一位数。",
+   "mastery_criteria": [
+    "能正确用竖式计算首位有余数的三位数除以一位数",
+    "能说出最高位余下的数要与下一位合并再除的道理",
+    "能判断商的最高位在哪一位并说明理由"
+   ],
+   "misconceptions": [
+    "最高位除完后把余数丢掉，只落下一位数字接着除",
+    "商写错数位，把百位上的商写在十位上",
+    "余下的数比除数大时不再调整商"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p229_q1",
+     "topicId": "mbj_p229",
+     "prompt": "计算 736 除以 4 时，百位上 7 除以 4 商 1 余 3，余下的 3 表示什么？",
+     "question": "计算 736 除以 4 时，百位上 7 除以 4 商 1 余 3，余下的 3 表示什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "3 个百"
+      },
+      {
+       "label": "B",
+       "text": "3 个十"
+      },
+      {
+       "label": "C",
+       "text": "3 个一"
+      },
+      {
+       "label": "D",
+       "text": "30 个百"
+      }
+     ],
+     "answer": "A",
+     "explanation": "7 个百除以 4 商 1 个百，余下 3 个百。这 3 个百要和十位上的 3 合成 33 个十再接着除，所以余下的 3 表示 3 个百。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p229_q2",
+     "topicId": "mbj_p229",
+     "prompt": "用竖式计算 736 除以 4，商是多少？",
+     "question": "用竖式计算 736 除以 4，商是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "184",
+     "verify": "736/4",
+     "explanation": "百位 7 除以 4 商 1 余 3，与十位的 3 合成 33，33 除以 4 商 8 余 1；再与个位 6 合成 16，16 除以 4 商 4，所以商是 184。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p229_q3",
+     "topicId": "mbj_p229",
+     "prompt": "计算 528 除以 3 时，百位 5 除以 3 商 1 余 2，接下来正确的做法是什么？",
+     "question": "计算 528 除以 3 时，百位 5 除以 3 商 1 余 2，接下来正确的做法是什么？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "直接把十位上的 2 落下来当作 2 个十去除"
+      },
+      {
+       "label": "B",
+       "text": "把余下的 2 写在商的十位上"
+      },
+      {
+       "label": "C",
+       "text": "把余下的 2 个百与十位上的 2 合成 22 个十再除"
+      },
+      {
+       "label": "D",
+       "text": "把百位上的商 1 改成 2 再除"
+      }
+     ],
+     "answer": "C",
+     "explanation": "余下的 2 表示 2 个百，也就是 20 个十，加上十位上的 2 个十，一共 22 个十。用 22 个十除以 3 才符合除的顺序。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p229_q4",
+     "topicId": "mbj_p229",
+     "prompt": "用竖式计算 861 除以 7，商是多少？",
+     "question": "用竖式计算 861 除以 7，商是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "123",
+     "verify": "861/7",
+     "explanation": "8 除以 7 商 1 余 1，与十位 6 合成 16，16 除以 7 商 2 余 2；再与个位 1 合成 21，21 除以 7 商 3。三步都除尽，商是 123。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p229_q5",
+     "topicId": "mbj_p229",
+     "prompt": "一个三位数除以 4，被除数最高位上的数字是 9，它的商是几位数？",
+     "question": "一个三位数除以 4，被除数最高位上的数字是 9，它的商是几位数？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "两位数"
+      },
+      {
+       "label": "B",
+       "text": "三位数"
+      },
+      {
+       "label": "C",
+       "text": "四位数"
+      },
+      {
+       "label": "D",
+       "text": "一位数"
+      }
+     ],
+     "answer": "B",
+     "explanation": "9 个百除以 4 商 2 个百，还余 1 个百。商的最高位仍然落在百位上，所以商是三位数，不会因为有余数而少一位。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p229_q6",
+     "topicId": "mbj_p229",
+     "prompt": "一个数除以 5，商是 132，余数是 3，这个数是多少？",
+     "question": "一个数除以 5，商是 132，余数是 3，这个数是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "663",
+     "explanation": "用商乘除数再加余数还原被除数：132 乘 5 得 660，再加 3 得 663。这也是检验除法算得对不对的方法。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p229_q7",
+     "topicId": "mbj_p229",
+     "prompt": "请说一说为什么首位有余数时，商的位数不会减少。",
+     "question": "请说一说为什么首位有余数时，商的位数不会减少。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "因为最高位上的数虽然除后有余数，但仍能商出 1 个或几个最高位单位，商的第一位就写在最高位上。余下的数只是这一位没除完的部分，它要与下一位合起来继续除，不会让商少一位。只有当最高位上的数比除数小、一个最高位单位也商不出来时，商才会少一位。",
+     "explanation": "判断商的位数看的是最高位上能不能商出数来。有余数说明这一位商过数了，商的最高位已经确定；首位不够商 1 才是商少一位的原因，两者不要混。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p229_q8",
+     "topicId": "mbj_p229",
+     "prompt": "用竖式计算 894 除以 6，商是多少？",
+     "question": "用竖式计算 894 除以 6，商是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "149",
+     "verify": "894/6",
+     "explanation": "8 除以 6 商 1 余 2，与十位 9 合成 29，29 除以 6 商 4 余 5；再与个位 4 合成 54，54 除以 6 商 9。三次试商都要把余数带上，结果是 149。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p230",
+   "description": "在会算两位数除以一位数的基础上，学习三位数除以一位数的笔算：从百位除起，逐位试商。商是三位数还是两位数，由最高位上的数能不能商出 1 来决定。还要学会用商乘除数检验结果。",
+   "mastery_criteria": [
+    "能按从高位到低位的顺序笔算三位数除以一位数",
+    "能根据最高位判断商是几位数",
+    "能用商乘除数的方法检验计算结果"
+   ],
+   "misconceptions": [
+    "不看最高位，凭感觉猜商是几位数",
+    "把商的第一位写在错误的数位上",
+    "检验时用被除数乘除数去算"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p230_q1",
+     "topicId": "mbj_p230",
+     "prompt": "三位数除以一位数，商可能是几位数？",
+     "question": "三位数除以一位数，商可能是几位数？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "一定是三位数"
+      },
+      {
+       "label": "B",
+       "text": "一定是两位数"
+      },
+      {
+       "label": "C",
+       "text": "可能是一位数或四位数"
+      },
+      {
+       "label": "D",
+       "text": "两位数或三位数"
+      }
+     ],
+     "answer": "D",
+     "explanation": "最高位够商 1 时，商是三位数；最高位比除数小、不够商 1 时，要用前两位去除，商是两位数。一位数和四位数都不可能。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p230_q2",
+     "topicId": "mbj_p230",
+     "prompt": "用竖式计算 672 除以 4，商是多少？",
+     "question": "用竖式计算 672 除以 4，商是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "168",
+     "verify": "672/4",
+     "explanation": "6 除以 4 商 1 余 2，与十位 7 合成 27，27 除以 4 商 6 余 3；再与个位 2 合成 32，32 除以 4 商 8，所以商是 168。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p230_q3",
+     "topicId": "mbj_p230",
+     "prompt": "一个三位数除以 7，商是两位数，这个三位数最高位上的数字最大是几？",
+     "question": "一个三位数除以 7，商是两位数，这个三位数最高位上的数字最大是几？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "7"
+      },
+      {
+       "label": "C",
+       "text": "8"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ],
+     "answer": "A",
+     "explanation": "商是两位数，说明最高位不够商 1，也就是最高位上的数比除数 7 小。比 7 小的一位数中最大的是 6，填 7 时商就变成三位数了。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p230_q4",
+     "topicId": "mbj_p230",
+     "prompt": "一个三位数除以一位数，商是两位数，那么被除数的最高位一定比除数怎么样？",
+     "question": "一个三位数除以一位数，商是两位数，那么被除数的最高位一定比除数怎么样？",
+     "type": "fill",
+     "difficulty": "standard",
+     "answer": "小",
+     "explanation": "商是两位数，说明最高位上的数除以除数不够商 1，一个百也分不到，所以最高位上的数比除数小，只能用前两位去除。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p230_q5",
+     "topicId": "mbj_p230",
+     "prompt": "用竖式计算 585 除以 5，商是多少？",
+     "question": "用竖式计算 585 除以 5，商是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "117",
+     "verify": "585/5",
+     "explanation": "5 除以 5 商 1；十位 8 除以 5 商 1 余 3，余下的 3 与个位 5 合成 35，35 除以 5 商 7。商是 117，商的位数和验算都能对上。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p230_q6",
+     "topicId": "mbj_p230",
+     "prompt": "要检验 468 除以 4 等于 117 算得对不对，应该怎样验算？",
+     "question": "要检验 468 除以 4 等于 117 算得对不对，应该怎样验算？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "用 117 除以 4，看结果是不是 468"
+      },
+      {
+       "label": "B",
+       "text": "用 468 乘 4，看结果是不是 117"
+      },
+      {
+       "label": "C",
+       "text": "用 117 乘 4，看结果是不是 468"
+      },
+      {
+       "label": "D",
+       "text": "用 468 除以 117，看结果是不是 4 余 0"
+      }
+     ],
+     "answer": "C",
+     "explanation": "除法是乘法的逆运算，商乘除数应该等于被除数。117 乘 4 得 468，说明计算正确。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p230_q7",
+     "topicId": "mbj_p230",
+     "prompt": "请说明为什么三位数除以一位数，商有时是两位数、有时是三位数。",
+     "question": "请说明为什么三位数除以一位数，商有时是两位数、有时是三位数。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "商的位数由最高位能不能商出 1 决定。如果百位上的数大于或等于除数，就能商出 1 个百或几个百，商的第一位写在百位上，商是三位数；如果百位上的数比除数小，一个百也分不到，就要把百位和十位合起来除，商的第一位写在十位上，商是两位数。",
+     "explanation": "回答时要抓住最高位与除数的大小比较，而不是看被除数的大小。位数判断清楚了，竖式中商的位置才不会写错。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p230_q8",
+     "topicId": "mbj_p230",
+     "prompt": "一个三位数除以 8，商是 112，余数是 5，这个三位数是多少？",
+     "question": "一个三位数除以 8，商是 112，余数是 5，这个三位数是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "901",
+     "verify": "112*8+5",
+     "explanation": "被除数等于商乘除数再加余数。112 乘 8 得 896，896 加 5 得 901，901 除以 8 的商确实是 112 余 5。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p231",
+   "description": "在除法竖式中认识余数：除到某一位不够商 1 时，把这一位上的数留下来与后面的数合起来继续除，最后的余数必须比除数小。学习用商乘除数再加余数的方法检验，并用有余数的除法解决简单的实际问题。",
+   "mastery_criteria": [
+    "能正确计算有余数的除法并写出余数",
+    "能说出余数一定比除数小的道理",
+    "能用商乘除数加余数检验计算"
+   ],
+   "misconceptions": [
+    "写出余数等于或大于除数的结果",
+    "余数写错位，把十位余下的数写成个位余数",
+    "解决装盒问题时把剩下的也凑成一盒"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p231_q1",
+     "topicId": "mbj_p231",
+     "prompt": "在 425 除以 6 得 70 余 5 这个算式中，余数 5 与除数 6 的关系说明什么？",
+     "question": "在 425 除以 6 得 70 余 5 这个算式中，余数 5 与除数 6 的关系说明什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "计算错误，因为余数应该等于除数"
+      },
+      {
+       "label": "B",
+       "text": "计算正确，因为余数 5 比除数 6 小"
+      },
+      {
+       "label": "C",
+       "text": "计算错误，因为商应该是 71"
+      },
+      {
+       "label": "D",
+       "text": "不能确定，还要看被除数的大小"
+      }
+     ],
+     "answer": "B",
+     "explanation": "余数是分到最后不够再分一份剩下的数，只要还剩 6 个就能再商 1，所以余数一定比除数小。这里 5 比 6 小，说明已经除完。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p231_q2",
+     "topicId": "mbj_p231",
+     "prompt": "327 除以 5 的商是 65，余数是多少？",
+     "question": "327 除以 5 的商是 65，余数是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "2",
+     "explanation": "65 乘 5 得 325，327 减 325 得 2。余数 2 比除数 5 小，符合有余数除法的规定。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p231_q3",
+     "topicId": "mbj_p231",
+     "prompt": "一个数除以 7，商是 84，余数是 6，这个数是多少？",
+     "question": "一个数除以 7，商是 84，余数是 6，这个数是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "594",
+     "verify": "84*7+6",
+     "explanation": "被除数等于商乘除数再加余数。84 乘 7 得 588，588 加 6 得 594；594 除以 7 正好商 84 余 6。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p231_q4",
+     "topicId": "mbj_p231",
+     "prompt": "有 85 个鸡蛋，每盒装 8 个，最多能装满几盒，还剩几个？",
+     "question": "有 85 个鸡蛋，每盒装 8 个，最多能装满几盒，还剩几个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "11 盒，还剩 5 个"
+      },
+      {
+       "label": "B",
+       "text": "10 盒，还剩 4 个"
+      },
+      {
+       "label": "C",
+       "text": "9 盒，还剩 13 个"
+      },
+      {
+       "label": "D",
+       "text": "10 盒，还剩 5 个"
+      }
+     ],
+     "answer": "D",
+     "explanation": "85 除以 8 商 10 余 5，装满了 10 盒，剩下 5 个不够再装一盒。余数 13 比除数 8 大，说明还能再装一盒，是错误结果。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p231_q5",
+     "topicId": "mbj_p231",
+     "prompt": "请说明为什么有余数的除法中，余数一定要比除数小。",
+     "question": "请说明为什么有余数的除法中，余数一定要比除数小。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "因为每除一次，都是把数按除数一份一份地分。如果剩下的数还够除数那么多，就说明还能再分出一份，商就应该再大 1。所以剩下的数必须比分一份的数少，也就是余数比除数小。余数等于或大于除数时，说明商还没有除到底。",
+     "explanation": "这条规定是有余数除法的检验标准：算出余数后先和除数比一比，余数不比除数小就要继续调商。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p231_q6",
+     "topicId": "mbj_p231",
+     "prompt": "在一个除法算式中，除数是 9，余数最大是多少？",
+     "question": "在一个除法算式中，除数是 9，余数最大是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "8",
+     "explanation": "余数必须比除数小，除数是 9，余数只能是 0 到 8，其中最大的是 8。余数取 9 就还能再商 1。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p231_q7",
+     "topicId": "mbj_p231",
+     "prompt": "小明算 638 除以 7 得 90 余 8，他的计算是否正确？",
+     "question": "小明算 638 除以 7 得 90 余 8，他的计算是否正确？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "不正确，余数 8 比除数 7 大，商应改为 91，余 1"
+      },
+      {
+       "label": "B",
+       "text": "正确，90 乘 7 加 8 正好是 638"
+      },
+      {
+       "label": "C",
+       "text": "不正确，商应改为 91，余 7"
+      },
+      {
+       "label": "D",
+       "text": "不正确，商应改为 80，余 78"
+      }
+     ],
+     "answer": "A",
+     "explanation": "90 乘 7 得 630，638 减 630 得 8，余数 8 比除数 7 大，说明还能再商 1。把商改成 91 后余数是 1，才符合余数比除数小。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p231_q8",
+     "topicId": "mbj_p231",
+     "prompt": "有 200 本练习本，每人发 6 本，最多可以发给多少人，最后还剩几本？",
+     "question": "有 200 本练习本，每人发 6 本，最多可以发给多少人，最后还剩几本？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "2",
+     "verify": "200-6*33",
+     "explanation": "200 除以 6 商 33 余 2，最多发给 33 人，还剩 2 本。剩下的 2 本不够再发给一个人，所以只能用 33 乘 6 得 198，200 减 198 得 2。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p232",
+   "description": "当被除数某一位上的数除以除数不够商 1，或者这一位上是 0 时，要在商的那一位上写 0 占位，再与下一位合起来接着除。少了这一步，商就会少一位，计算结果随之变小。",
+   "mastery_criteria": [
+    "能在商中间正确写 0 占位并完成计算",
+    "能说出商中间为什么要写 0",
+    "能检查出商中间漏写 0 的错误"
+   ],
+   "misconceptions": [
+    "十位不够商 1 时直接跳过，商少写一位",
+    "把不够除的那一位干脆不写，商变成两位数",
+    "把 0 写在商的末尾而不是中间"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p232_q1",
+     "topicId": "mbj_p232",
+     "prompt": "计算 624 除以 6 时，十位上的 2 除以 6 不够商 1，应该怎么办？",
+     "question": "计算 624 除以 6 时，十位上的 2 除以 6 不够商 1，应该怎么办？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "把 2 直接写在商的十位上"
+      },
+      {
+       "label": "B",
+       "text": "跳过十位，用 24 除以 6 得 4，商写 14"
+      },
+      {
+       "label": "C",
+       "text": "在商的十位上写 0 占位，再与个位合起来除"
+      },
+      {
+       "label": "D",
+       "text": "在商的个位上写 0 占位"
+      }
+     ],
+     "answer": "C",
+     "explanation": "十位上的 2 不够商 1，但十位这个数位是存在的，必须用 0 占住位置，否则商的数位就乱了。624 除以 6 的商是 104，不是 14。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p232_q2",
+     "topicId": "mbj_p232",
+     "prompt": "用竖式计算 624 除以 6，商是多少？",
+     "question": "用竖式计算 624 除以 6，商是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "104",
+     "verify": "624/6",
+     "explanation": "6 除以 6 商 1；十位 2 除以 6 不够商 1，商中间写 0；再把 2 与个位 4 合成 24，24 除以 6 商 4。商是 104。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p232_q3",
+     "topicId": "mbj_p232",
+     "prompt": "下面哪个算式的商中间有 0？",
+     "question": "下面哪个算式的商中间有 0？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "672 除以 6"
+      },
+      {
+       "label": "B",
+       "text": "648 除以 6"
+      },
+      {
+       "label": "C",
+       "text": "624 除以 8"
+      },
+      {
+       "label": "D",
+       "text": "516 除以 4"
+      }
+     ],
+     "answer": "B",
+     "explanation": "648 除以 6，十位上 4 除以 6 不够商 1，商的十位写 0，商是 108。672 除以 6 商 112，624 除以 8 商 78，516 除以 4 商 129，中间都没有 0。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p232_q4",
+     "topicId": "mbj_p232",
+     "prompt": "用竖式计算 909 除以 9，商是多少？",
+     "question": "用竖式计算 909 除以 9，商是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "101",
+     "verify": "909/9",
+     "explanation": "百位 9 除以 9 商 1；十位是 0，0 除以 9 得 0，商的十位写 0；个位 9 除以 9 商 1。商的中间有 0 不能省，结果是 101。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p232_q5",
+     "topicId": "mbj_p232",
+     "prompt": "606 除以 6 的商是多少？",
+     "question": "606 除以 6 的商是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "101",
+     "explanation": "6 除以 6 商 1，十位 0 除以 6 得 0，商的十位写 0 占位，个位 6 除以 6 商 1，所以商是 101，不是 11。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p232_q6",
+     "topicId": "mbj_p232",
+     "prompt": "请说明商中间为什么一定要写 0，不能空着不写。",
+     "question": "请说明商中间为什么一定要写 0，不能空着不写。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "因为数的每一位都表示不同的计数单位。十位上不够商 1，说明商的十位上一个十也没有，就要写 0 表示这一位是零。如果空着不写，后面的数字就会往前挪一位，104 会被写成 14，商就从一百多变成十几，结果完全错了。",
+     "explanation": "商中间写 0 是位值制的需要，不是可有可无的记号。写完商以后可以数一数位数，看是否和被除数的位数对得上。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p232_q7",
+     "topicId": "mbj_p232",
+     "prompt": "一个三位数除以 8，商是 106，没有余数，这个三位数是多少？",
+     "question": "一个三位数除以 8，商是 106，没有余数，这个三位数是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "848",
+     "verify": "106*8",
+     "explanation": "被除数等于商乘除数，106 乘 8 得 848。848 除以 8 时十位 4 不够商 1，商中间正好是 0，与题目说的情况一致。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p232_q8",
+     "topicId": "mbj_p232",
+     "prompt": "小红算 618 除以 6 得 13，她错在哪里？",
+     "question": "小红算 618 除以 6 得 13，她错在哪里？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "商应该是 130"
+      },
+      {
+       "label": "B",
+       "text": "商应该是 103，还余 6"
+      },
+      {
+       "label": "C",
+       "text": "没有错，商就是 13"
+      },
+      {
+       "label": "D",
+       "text": "十位上 1 除以 6 不够商 1，应在十位写 0 占位，商是 103"
+      }
+     ],
+     "answer": "D",
+     "explanation": "百位 6 除以 6 商 1，十位 1 不够商 1 必须写 0，再把 1 与个位 8 合成 18，18 除以 6 商 3。漏写中间的 0，商就从 103 变成 13。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p233",
+   "description": "当被除数的个位除以除数不够商 1，或者个位上是 0 且前面正好除尽时，商的个位要写 0。学习分清商末尾有 0 时有没有余数，并会用商乘除数再加余数进行验算。",
+   "mastery_criteria": [
+    "能正确计算商末尾有 0 的除法",
+    "能分清商末尾是 0 还是 0 余几",
+    "能用验算检查商末尾漏写 0 的错误"
+   ],
+   "misconceptions": [
+    "个位不够除就把末尾的 0 丢掉",
+    "商末尾有 0 时把 0 写到商的前面去",
+    "商的末尾是 0 却写成有余数的样子"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p233_q1",
+     "topicId": "mbj_p233",
+     "prompt": "用竖式计算 840 除以 4，商是多少？",
+     "question": "用竖式计算 840 除以 4，商是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "210",
+     "verify": "840/4",
+     "explanation": "8 除以 4 商 2，十位 4 除以 4 商 1，个位 0 除以 4 得 0，商的个位要写 0 占位。商是 210，末尾的 0 不能丢。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p233_q2",
+     "topicId": "mbj_p233",
+     "prompt": "计算 720 除以 3 时，个位上的 0 除以 3 得 0，商的个位应该怎样处理？",
+     "question": "计算 720 除以 3 时，个位上的 0 除以 3 得 0，商的个位应该怎样处理？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "写 0 占位，商是 240"
+      },
+      {
+       "label": "B",
+       "text": "省略不写，商是 24"
+      },
+      {
+       "label": "C",
+       "text": "写 1，商是 241"
+      },
+      {
+       "label": "D",
+       "text": "把 0 写到商的十位上"
+      }
+     ],
+     "answer": "A",
+     "explanation": "个位 0 除以 3 得 0，商的个位要有 0 占住位置，否则 240 会变成 24。数位少了，结果就缩小到原来的十分之一。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p233_q3",
+     "topicId": "mbj_p233",
+     "prompt": "下面哪个算式的商末尾有 0？",
+     "question": "下面哪个算式的商末尾有 0？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "684 除以 4"
+      },
+      {
+       "label": "B",
+       "text": "680 除以 5"
+      },
+      {
+       "label": "C",
+       "text": "680 除以 4"
+      },
+      {
+       "label": "D",
+       "text": "456 除以 4"
+      }
+     ],
+     "answer": "C",
+     "explanation": "680 除以 4 商 170，末尾有 0。684 除以 4 商 171，末尾不是 0；680 除以 5 商 136；456 除以 4 商 114，末尾都不同。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p233_q4",
+     "topicId": "mbj_p233",
+     "prompt": "931 除以 3 的商是多少？",
+     "question": "931 除以 3 的商是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "310",
+     "verify": "(931-1)/3",
+     "explanation": "931 除以 3 商 310 余 1。商的个位是 0，同时还有余数 1，末尾的 0 和余数都要写清楚，写成 31 余 1 就错了。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p233_q5",
+     "topicId": "mbj_p233",
+     "prompt": "630 除以 3 的商是多少？",
+     "question": "630 除以 3 的商是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "210",
+     "explanation": "6 除以 3 商 2，十位 3 除以 3 商 1，个位 0 除以 3 得 0，商的个位写 0。商是 210。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p233_q6",
+     "topicId": "mbj_p233",
+     "prompt": "请说明商末尾有 0 和商末尾有余数这两种情况，在写法上有什么不同。",
+     "question": "请说明商末尾有 0 和商末尾有余数这两种情况，在写法上有什么不同。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "商的末尾是 0，说明个位上的数除以除数得 0 而且没有剩余，商的个位写 0，余数不写。如果个位上的数除以除数不够商 1 但有剩余，商的个位同样写 0，还要在横式上写出余数，例如 310 余 1。两种情况的商末尾都是 0，区别在于有没有余数。",
+     "explanation": "判断的根据是个位能不能再分出一份：一点也分不出就是余 0，分不出但还有剩下的就要写余数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p233_q7",
+     "topicId": "mbj_p233",
+     "prompt": "一个数除以 4，商是 210，余数是 3，这个数是多少？",
+     "question": "一个数除以 4，商是 210，余数是 3，这个数是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "843",
+     "verify": "210*4+3",
+     "explanation": "被除数等于商乘除数再加余数。210 乘 4 得 840，840 加 3 得 843。843 除以 4 确实商 210 余 3。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p233_q8",
+     "topicId": "mbj_p233",
+     "prompt": "计算 641 除以 2，正确的结果是什么？",
+     "question": "计算 641 除以 2，正确的结果是什么？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "32 余 1"
+      },
+      {
+       "label": "B",
+       "text": "320 余 1"
+      },
+      {
+       "label": "C",
+       "text": "321"
+      },
+      {
+       "label": "D",
+       "text": "320 余 2"
+      }
+     ],
+     "answer": "B",
+     "explanation": "百位 6 除以 2 商 3，十位 4 除以 2 商 2，个位 1 除以 2 不够商 1，商的个位写 0，余下 1。漏写末尾的 0 就变成 32 余 1，余数写 2 又错在余数不能等于除数。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p234",
+   "description": "把三位数除以一位数的各种情况放在一起练习：首位有余数、商中间有 0、商末尾有 0、有余数。通过混合练习提高计算的准确率和速度，并能用除法解决一步或两步的实际问题。",
+   "mastery_criteria": [
+    "能根据不同情况选择正确的试商方法",
+    "能估算商的大致范围并检验结果",
+    "能用除法解决简单的实际问题"
+   ],
+   "misconceptions": [
+    "各种情况混在一起时凭感觉写商，漏写 0",
+    "算完不检查商的位数是否合理",
+    "应用题只写算式不写单位和答语"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p234_q1",
+     "topicId": "mbj_p234",
+     "prompt": "用竖式计算 972 除以 9，商是多少？",
+     "question": "用竖式计算 972 除以 9，商是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "108",
+     "verify": "972/9",
+     "explanation": "9 除以 9 商 1；十位 7 除以 9 不够商 1，商的十位写 0；7 与个位 2 合成 72，72 除以 9 商 8。商是 108。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p234_q2",
+     "topicId": "mbj_p234",
+     "prompt": "估算 617 除以 6 的商，结果大约是多少？",
+     "question": "估算 617 除以 6 的商，结果大约是多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "10 左右"
+      },
+      {
+       "label": "B",
+       "text": "1000 左右"
+      },
+      {
+       "label": "C",
+       "text": "600 左右"
+      },
+      {
+       "label": "D",
+       "text": "100 左右"
+      }
+     ],
+     "answer": "D",
+     "explanation": "把 617 看成 600，600 除以 6 得 100，所以商在 100 左右。也可以从位数判断：百位 6 够商 1，商一定是三位数，不可能只有 10 左右。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p234_q3",
+     "topicId": "mbj_p234",
+     "prompt": "下面哪个算式的商是两位数？",
+     "question": "下面哪个算式的商是两位数？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "348 除以 4"
+      },
+      {
+       "label": "B",
+       "text": "348 除以 3"
+      },
+      {
+       "label": "C",
+       "text": "512 除以 5"
+      },
+      {
+       "label": "D",
+       "text": "736 除以 7"
+      }
+     ],
+     "answer": "A",
+     "explanation": "348 除以 4，最高位 3 比除数 4 小，不够商 1，商是两位数 87。其余三题最高位都不比除数小，商都是三位数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p234_q4",
+     "topicId": "mbj_p234",
+     "prompt": "学校为 6 个班买跳绳共用 732 元，平均每个班花多少元？",
+     "question": "学校为 6 个班买跳绳共用 732 元，平均每个班花多少元？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "122",
+     "verify": "732/6",
+     "explanation": "把 732 元平均分成 6 份，用除法计算：732 除以 6 商 122。答：平均每个班花 122 元。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p234_q5",
+     "topicId": "mbj_p234",
+     "prompt": "852 除以 4 的商是多少？",
+     "question": "852 除以 4 的商是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "213",
+     "explanation": "8 除以 4 商 2，十位 5 除以 4 商 1 余 1，与个位 2 合成 12，12 除以 4 商 3，商是 213。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p234_q6",
+     "topicId": "mbj_p234",
+     "prompt": "请说出三位数除以一位数笔算的主要步骤，并指出最容易出错的地方。",
+     "question": "请说出三位数除以一位数笔算的主要步骤，并指出最容易出错的地方。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "先看百位，百位够除就从百位商起，不够除就用前两位除，商写在十位上。然后一位一位往下除，每一步余下的数要和下一位合起来再除。最容易错的是某一位不够商 1 时忘记写 0 占位，以及算完后没有检查商的位数和验算结果。",
+     "explanation": "把步骤说清楚，再养成算完看位数、用乘法验算的习惯，比反复重算更有效。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p234_q7",
+     "topicId": "mbj_p234",
+     "prompt": "小明把 864 除以 8 算成了 18，正确的结果应该是多少？",
+     "question": "小明把 864 除以 8 算成了 18，正确的结果应该是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "108",
+     "verify": "864/8",
+     "explanation": "8 除以 8 商 1，十位 6 除以 8 不够商 1，必须写 0 占位，6 与 4 合成 64，64 除以 8 商 8。小明漏了商中间的 0，正确答案是 108。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p234_q8",
+     "topicId": "mbj_p234",
+     "prompt": "在有余数的除法中，商是 46，除数是 7，余数是 5，被除数是多少？",
+     "question": "在有余数的除法中，商是 46，除数是 7，余数是 5，被除数是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "322"
+      },
+      {
+       "label": "B",
+       "text": "332"
+      },
+      {
+       "label": "C",
+       "text": "327"
+      },
+      {
+       "label": "D",
+       "text": "46 乘 7 乘 5"
+      }
+     ],
+     "answer": "C",
+     "explanation": "被除数等于商乘除数再加余数：46 乘 7 得 322，再加 5 得 327。只算 322 是忘了加余数，332 是加错了数。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p235",
+   "description": "在熟练计算多位数除以一位数的基础上，把计算放进生活情境：平均分、求单价、求每份数。要求先想数量关系，再列式计算，最后写清单位名称和答语。",
+   "mastery_criteria": [
+    "能找出题目中的数量关系再列式",
+    "能正确计算并写出单位和答语",
+    "能用两步计算解决稍复杂的问题"
+   ],
+   "misconceptions": [
+    "见数就除，不先想是平均分还是包含除",
+    "算出结果忘记写单位和答语",
+    "两步问题只算一步就作答"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.10",
+    "quote": "形成初步的模型意识和应用意识"
+   },
+   "questions": [
+    {
+     "id": "mbj_p235_q1",
+     "topicId": "mbj_p235",
+     "prompt": "5 天修路 615 米，平均每天修多少米？",
+     "question": "5 天修路 615 米，平均每天修多少米？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "123",
+     "verify": "615/5",
+     "explanation": "把 615 米平均分成 5 份，用除法：615 除以 5 商 123。答：平均每天修 123 米。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p235_q2",
+     "topicId": "mbj_p235",
+     "prompt": "买 6 个同样的书包共用 408 元，要求每个书包多少元，应该用什么方法计算？",
+     "question": "买 6 个同样的书包共用 408 元，要求每个书包多少元，应该用什么方法计算？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "用总价乘数量"
+      },
+      {
+       "label": "B",
+       "text": "用总价除以数量"
+      },
+      {
+       "label": "C",
+       "text": "用总价加数量"
+      },
+      {
+       "label": "D",
+       "text": "用数量除以总价"
+      }
+     ],
+     "answer": "B",
+     "explanation": "6 个书包花的钱是总价，6 个是数量，求一个书包的钱就是求单价。单价等于总价除以数量，408 除以 6 得 68 元。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p235_q3",
+     "topicId": "mbj_p235",
+     "prompt": "一本故事书有 128 页，小明 4 天看完，平均每天看多少页？",
+     "question": "一本故事书有 128 页，小明 4 天看完，平均每天看多少页？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "32",
+     "verify": "128/4",
+     "explanation": "把 128 页平均分成 4 份，128 除以 4 商 32。答：平均每天看 32 页。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p235_q4",
+     "topicId": "mbj_p235",
+     "prompt": "每箱牛奶有 6 瓶，每瓶 4 元，买 3 箱需要多少钱？",
+     "question": "每箱牛奶有 6 瓶，每瓶 4 元，买 3 箱需要多少钱？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "18 元"
+      },
+      {
+       "label": "B",
+       "text": "24 元"
+      },
+      {
+       "label": "C",
+       "text": "12 元"
+      },
+      {
+       "label": "D",
+       "text": "72 元"
+      }
+     ],
+     "answer": "D",
+     "explanation": "先求一箱的钱：4 乘 6 得 24 元；再求 3 箱的钱：24 乘 3 得 72 元。18 元只算了瓶数，24 元只算了一箱，都是只完成了一步。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p235_q5",
+     "topicId": "mbj_p235",
+     "prompt": "963 除以 3 的商是多少？",
+     "question": "963 除以 3 的商是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "321",
+     "explanation": "9 除以 3 商 3，十位 6 除以 3 商 2，个位 3 除以 3 商 1，商是 321。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p235_q6",
+     "topicId": "mbj_p235",
+     "prompt": "请说出用除法解决实际问题的一般步骤。",
+     "question": "请说出用除法解决实际问题的一般步骤。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "先读题找出已知条件和问题，判断是平均分还是求一个数里包含几个另一个数；再想数量关系，确定用除法；然后列竖式算出结果；最后看余数能不能再分，写上单位名称和答语，并用乘法和加法验算。",
+     "explanation": "步骤清楚才不会出现算式对、答语错的情况，单位名称也是答案的一部分。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p235_q7",
+     "topicId": "mbj_p235",
+     "prompt": "一个数除以 7，商是 105，余数是 6，这个数除以 8 的商是多少？",
+     "question": "一个数除以 7，商是 105，余数是 6，这个数除以 8 的商是多少？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "92",
+     "verify": "741//8",
+     "explanation": "先还原这个数：105 乘 7 得 735，加 6 得 741。再算 741 除以 8，商 92 余 5，所以商是 92。两步都要算准，不能直接用 105 去除。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p235_q8",
+     "topicId": "mbj_p235",
+     "prompt": "654 除以 6 的商与 564 除以 6 的商相差多少？",
+     "question": "654 除以 6 的商与 564 除以 6 的商相差多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "15"
+      },
+      {
+       "label": "B",
+       "text": "25"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "115"
+      }
+     ],
+     "answer": "A",
+     "explanation": "654 除以 6 商 109，564 除以 6 商 94，109 减 94 得 15。两道题的商都是三位数或两位数，商的位数不同不要紧，比的是数值。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p236",
+   "description": "把多位数除以一位数的知识整理成条理：除的顺序、商的定位、余数的规定、验算的方法。通过比较首位够除与不够除、商中间和末尾有 0 的各种情况，形成完整的计算程序。",
+   "mastery_criteria": [
+    "能按顺序说出除法笔算的完整步骤",
+    "能归纳余数与除数的关系",
+    "能对错题说出错因并改正"
+   ],
+   "misconceptions": [
+    "只记结果不记步骤，遇到新题就乱",
+    "认为商中间或末尾的 0 可以省略",
+    "验算时把商和除数相加"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.01",
+    "quote": "能计算两位数乘除三位数。"
+   },
+   "questions": [
+    {
+     "id": "mbj_p236_q1",
+     "topicId": "mbj_p236",
+     "prompt": "把 96 平均分成 4 份，求每份是多少，应该用什么方法计算？",
+     "question": "把 96 平均分成 4 份，求每份是多少，应该用什么方法计算？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "用乘法，96 乘 4"
+      },
+      {
+       "label": "B",
+       "text": "用减法，96 减 4"
+      },
+      {
+       "label": "C",
+       "text": "用除法，96 除以 4"
+      },
+      {
+       "label": "D",
+       "text": "用加法，96 加 4"
+      }
+     ],
+     "answer": "C",
+     "explanation": "把一个数平均分成几份求一份，是平均分的问题，要用除法。96 除以 4 得 24，每份是 24。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p236_q2",
+     "topicId": "mbj_p236",
+     "prompt": "用竖式计算 608 除以 4，商是多少？",
+     "question": "用竖式计算 608 除以 4，商是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "152",
+     "verify": "608/4",
+     "explanation": "6 除以 4 商 1 余 2，与十位 0 合成 20，20 除以 4 商 5；个位 8 除以 4 商 2。商是 152，十位上的 0 要和余数合起来除。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p236_q3",
+     "topicId": "mbj_p236",
+     "prompt": "下面各题中，商末尾是 0 的是哪一个？",
+     "question": "下面各题中，商末尾是 0 的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "972 除以 9"
+      },
+      {
+       "label": "B",
+       "text": "960 除以 8"
+      },
+      {
+       "label": "C",
+       "text": "684 除以 6"
+      },
+      {
+       "label": "D",
+       "text": "735 除以 7"
+      }
+     ],
+     "answer": "B",
+     "explanation": "960 除以 8 商 120，末尾是 0。972 除以 9 商 108，0 在中间；684 除以 6 商 114；735 除以 7 商 105，0 也在中间。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p236_q4",
+     "topicId": "mbj_p236",
+     "prompt": "一个数除以 6，商是 108，余数是 4，这个数是多少？",
+     "question": "一个数除以 6，商是 108，余数是 4，这个数是多少？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "652",
+     "verify": "108*6+4",
+     "explanation": "被除数等于商乘除数再加余数。108 乘 6 得 648，648 加 4 得 652。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p236_q5",
+     "topicId": "mbj_p236",
+     "prompt": "在除法里，余数一定比除数怎么样？",
+     "question": "在除法里，余数一定比除数怎么样？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "小",
+     "explanation": "余数是分到最后不够再分一份剩下的数。如果剩下的数还够除数那么多，就能再分出一份，所以余数一定比除数小。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p236_q6",
+     "topicId": "mbj_p236",
+     "prompt": "请把三位数除以一位数的笔算步骤整理成一段话。",
+     "question": "请把三位数除以一位数的笔算步骤整理成一段话。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "先从最高位除起，用除数试除被除数的前一位或前两位，除到哪一位，商就写在那一位的上面。每一步除得的余数要和下一位上的数合起来继续除，某一位不够商 1 就写 0 占位。最后余数必须比除数小，再用商乘除数加余数检验。",
+     "explanation": "整理时抓住三点：从高位除起、商写在对齐的数位上、余数比除数小。这是所有除法题通用的程序。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p236_q7",
+     "topicId": "mbj_p236",
+     "prompt": "要使方框 32 除以 4 的商是两位数，方框里最大能填几？",
+     "question": "要使方框 32 除以 4 的商是两位数，方框里最大能填几？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "3",
+     "verify": "4-1",
+     "explanation": "商是两位数，说明最高位不够商 1，方框里的数必须比除数 4 小。比 4 小的一位数有 3、2、1，最大是 3。填 4 时 432 除以 4 得 108，商就变成三位数了。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p236_q8",
+     "topicId": "mbj_p236",
+     "prompt": "在 7 方框 5 除以 7 中，要使商中间有 0，方框里可以填哪些数？",
+     "question": "在 7 方框 5 除以 7 中，要使商中间有 0，方框里可以填哪些数？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "只能填 0"
+      },
+      {
+       "label": "B",
+       "text": "只能填 7"
+      },
+      {
+       "label": "C",
+       "text": "8 或 9"
+      },
+      {
+       "label": "D",
+       "text": "0 到 6 中的任意一个数"
+      }
+     ],
+     "answer": "D",
+     "explanation": "百位 7 除以 7 商 1，正好除尽。要让商的十位是 0，十位上的数必须比除数 7 小，所以 0 到 6 都可以。填 7 或更大的数时十位就能商 1，商的中间就不是 0 了。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p237",
+   "description": "复习用除法解决实际问题：平均分、求一个数里有几个另一个数、单价与总价，以及用估算判断结果是否合理。重点在于分析题意、选择算法、检查答案是否符合实际情况。",
+   "mastery_criteria": [
+    "能根据问题情境判断用除法还是用乘法",
+    "能用估算检验商的合理性",
+    "能处理有余数时取整的实际问题"
+   ],
+   "misconceptions": [
+    "遇到除法应用题一律把余数也进一",
+    "估算时把数取得太远，结论失真",
+    "算完不结合情境检查答案是否合理"
+   ],
+   "std": null,
+   "questions": [
+    {
+     "id": "mbj_p237_q1",
+     "topicId": "mbj_p237",
+     "prompt": "估算 398 除以 4 的商，结果最接近多少？",
+     "question": "估算 398 除以 4 的商，结果最接近多少？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "100"
+      },
+      {
+       "label": "B",
+       "text": "10"
+      },
+      {
+       "label": "C",
+       "text": "1000"
+      },
+      {
+       "label": "D",
+       "text": "40"
+      }
+     ],
+     "answer": "A",
+     "explanation": "把 398 看成 400，400 除以 4 得 100，所以商接近 100。从位数看，百位 3 比 4 小但前两位 39 够除，商是两位数，与 100 相差不远。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p237_q2",
+     "topicId": "mbj_p237",
+     "prompt": "用竖式计算 725 除以 5，商是多少？",
+     "question": "用竖式计算 725 除以 5，商是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "145",
+     "verify": "725/5",
+     "explanation": "7 除以 5 商 1 余 2，与十位 2 合成 22，22 除以 5 商 4 余 2；与个位 5 合成 25，25 除以 5 商 5。商是 145。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p237_q3",
+     "topicId": "mbj_p237",
+     "prompt": "下面哪个算式的结果与 612 除以 6 的结果相同？",
+     "question": "下面哪个算式的结果与 612 除以 6 的结果相同？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "612 除以 2"
+      },
+      {
+       "label": "B",
+       "text": "612 乘 6"
+      },
+      {
+       "label": "C",
+       "text": "306 除以 3"
+      },
+      {
+       "label": "D",
+       "text": "720 除以 6"
+      }
+     ],
+     "answer": "C",
+     "explanation": "612 除以 6 商 102，306 除以 3 也得 102，被除数和除数同时缩小到原来的一半，商不变。其余三题结果分别是 306、3672 和 120。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p237_q4",
+     "topicId": "mbj_p237",
+     "prompt": "有 850 瓶饮料，每箱装 8 瓶，最多能装满多少箱？",
+     "question": "有 850 瓶饮料，每箱装 8 瓶，最多能装满多少箱？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "106",
+     "verify": "850//8",
+     "explanation": "850 除以 8 商 106 余 2，装满 106 箱以后还剩 2 瓶，不够再装一箱。所以最多能装满 106 箱，这里不能把商进一。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p237_q5",
+     "topicId": "mbj_p237",
+     "prompt": "318 除以 3 的商是多少？",
+     "question": "318 除以 3 的商是多少？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "106",
+     "explanation": "3 除以 3 商 1，十位 1 除以 3 不够商 1，商的十位写 0；1 与个位 8 合成 18，18 除以 3 商 6。商是 106。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p237_q6",
+     "topicId": "mbj_p237",
+     "prompt": "请说一说除法计算中容易出错的地方，以及怎样避免。",
+     "question": "请说一说除法计算中容易出错的地方，以及怎样避免。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "常见错误有三个：某一位不够商 1 时忘记写 0 占位，导致商少一位；余数比除数大还在往下写；商的数位没有对齐。避免的办法是算完先看商的位数是否合理，再看每一步的余数是否比除数小，最后用商乘除数加余数验算。",
+     "explanation": "错误集中在这几处，是因为它们都跟数位和余数有关。把检查变成固定动作，正确率就能提上来。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p237_q7",
+     "topicId": "mbj_p237",
+     "prompt": "图书馆有 972 本书，平均放在 9 个书架上，每个书架放多少本？",
+     "question": "图书馆有 972 本书，平均放在 9 个书架上，每个书架放多少本？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "108",
+     "verify": "972/9",
+     "explanation": "把 972 本平均分成 9 份，用除法。972 除以 9 商 108，商的中间有 0 也要写。答：每个书架放 108 本。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p237_q8",
+     "topicId": "mbj_p237",
+     "prompt": "一个数除以 9 有余数，商是 87，这个数最大是多少？",
+     "question": "一个数除以 9 有余数，商是 87，这个数最大是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "783"
+      },
+      {
+       "label": "B",
+       "text": "791"
+      },
+      {
+       "label": "C",
+       "text": "792"
+      },
+      {
+       "label": "D",
+       "text": "790"
+      }
+     ],
+     "answer": "B",
+     "explanation": "余数必须比除数 9 小，最大是 8。被除数等于 87 乘 9 再加 8，得 791。783 没有余数，792 的余数是 9，不符合余数比除数小的规定。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p238",
+   "description": "本单元从生活中的运动现象入手，认识平移、旋转和轴对称。能在方格纸上数出图形平移的方向和格数，能找出轴对称图形的对称轴，并运用这些变换欣赏和设计图案。",
+   "mastery_criteria": [
+    "能辨认生活中的平移、旋转和轴对称现象",
+    "能在方格纸上数出图形平移的方向和格数",
+    "能找出轴对称图形的对称轴并说出条数"
+   ],
+   "misconceptions": [
+    "把平移和旋转混为一谈",
+    "数平移格数时数图形之间的空格而不是对应点",
+    "认为所有图形都有对称轴"
+   ],
+   "std": {
+    "id": "mat-2022:2.TS.04",
+    "quote": "帮助学生认识平移、旋转和轴对称的现象，感知特征，增强空间观念"
+   },
+   "questions": [
+    {
+     "id": "mbj_p238_q1",
+     "topicId": "mbj_p238",
+     "prompt": "电梯上下运行时，电梯的运动属于什么现象？",
+     "question": "电梯上下运行时，电梯的运动属于什么现象？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "旋转"
+      },
+      {
+       "label": "B",
+       "text": "轴对称"
+      },
+      {
+       "label": "C",
+       "text": "既不是平移也不是旋转"
+      },
+      {
+       "label": "D",
+       "text": "平移"
+      }
+     ],
+     "answer": "D",
+     "explanation": "电梯沿竖直方向直线移动，方向不变、形状大小不变，符合平移的特征。旋转要绕着一个点或一条线转动。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p238_q2",
+     "topicId": "mbj_p238",
+     "prompt": "把一张纸对折后剪出一个图案，展开后折痕两边的图形会怎样？",
+     "question": "把一张纸对折后剪出一个图案，展开后折痕两边的图形会怎样？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "完全重合，是轴对称图形"
+      },
+      {
+       "label": "B",
+       "text": "大小不同，形状相似"
+      },
+      {
+       "label": "C",
+       "text": "方向相同但不能重合"
+      },
+      {
+       "label": "D",
+       "text": "旋转以后才能重合"
+      }
+     ],
+     "answer": "A",
+     "explanation": "沿折痕对折后两边能完全重合，这样的图形就是轴对称图形，折痕所在的直线就是它的对称轴。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p238_q3",
+     "topicId": "mbj_p238",
+     "prompt": "下面几种运动中，哪一种属于旋转现象？",
+     "question": "下面几种运动中，哪一种属于旋转现象？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "推拉窗左右滑动"
+      },
+      {
+       "label": "B",
+       "text": "电梯竖直上升"
+      },
+      {
+       "label": "C",
+       "text": "风车的叶片转动"
+      },
+      {
+       "label": "D",
+       "text": "火车沿直轨行驶"
+      }
+     ],
+     "answer": "C",
+     "explanation": "风车叶片是绕中心轴转动的，方向不断改变，属于旋转。推拉窗、电梯和火车都是沿直线移动，属于平移。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p238_q4",
+     "topicId": "mbj_p238",
+     "prompt": "请说一说平移和旋转有什么不同。",
+     "question": "请说一说平移和旋转有什么不同。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "平移是物体沿着一条直线移动，移动过程中方向不变，图形上每个点都朝同一方向移动同样的距离。旋转是物体绕着一个点或一条线转动，物体的方向会改变，但形状和大小都不变。判断时看运动是不是绕着一个固定中心转。",
+     "explanation": "区别的关键在于运动路线是直线还是绕中心转，以及方向有没有改变，而不是物体移动得快还是慢。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p238_q5",
+     "topicId": "mbj_p238",
+     "prompt": "一个图形先向右平移 5 格，再向左平移 3 格，现在它离原来的位置有多少格？",
+     "question": "一个图形先向右平移 5 格，再向左平移 3 格，现在它离原来的位置有多少格？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "2",
+     "verify": "5-3",
+     "explanation": "向右移 5 格又向左移 3 格，两次移动方向相反，要相互抵消一部分。最后相当于向右平移 2 格，离原来的位置有 2 格。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p239",
+   "description": "结合电梯、风车、钟面指针等现象，认识平移与旋转：平移是沿直线移动，方向不变；旋转是绕一个点或一条线转动。能在方格纸上判断平移的方向和距离，数准对应点之间的格数。",
+   "mastery_criteria": [
+    "能判断一个运动是平移还是旋转",
+    "能在方格纸上数出图形平移的格数",
+    "能说出平移和旋转后图形的形状大小不变"
+   ],
+   "misconceptions": [
+    "把平移格数数成两个图形之间空出的格子数",
+    "认为平移后图形的形状会改变",
+    "把绕点转动当成平移"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.05",
+    "quote": "能在实际情境中，辨认出生活中的平移、旋转和轴对称现象"
+   },
+   "questions": [
+    {
+     "id": "mbj_p239_q1",
+     "topicId": "mbj_p239",
+     "prompt": "一个图形平移以后，它的形状和大小会怎样？",
+     "question": "一个图形平移以后，它的形状和大小会怎样？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "形状和大小都改变"
+      },
+      {
+       "label": "B",
+       "text": "形状和大小都不改变"
+      },
+      {
+       "label": "C",
+       "text": "形状改变、大小不变"
+      },
+      {
+       "label": "D",
+       "text": "大小改变、形状不变"
+      }
+     ],
+     "answer": "B",
+     "explanation": "平移只是把图形整体沿直线挪动，每个点移动的方向和距离都相同，图形本身没有被拉伸或压缩，所以形状和大小都不变。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p239_q2",
+     "topicId": "mbj_p239",
+     "prompt": "小船先向右平移 6 格，再向右平移 4 格，一共向右平移了多少格？",
+     "question": "小船先向右平移 6 格，再向右平移 4 格，一共向右平移了多少格？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "10",
+     "verify": "6+4",
+     "explanation": "两次平移方向相同，移动的格数要合起来算：6 加 4 得 10 格。可以选小船上的同一个点，看它一共向右移动了几格来验证。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p239_q3",
+     "topicId": "mbj_p239",
+     "prompt": "下面的运动中，属于平移的是哪一个？",
+     "question": "下面的运动中，属于平移的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "钟面上的指针走动"
+      },
+      {
+       "label": "B",
+       "text": "风车的叶片转动"
+      },
+      {
+       "label": "C",
+       "text": "旋转木马绕圈转动"
+      },
+      {
+       "label": "D",
+       "text": "缆车沿直线上升"
+      }
+     ],
+     "answer": "D",
+     "explanation": "缆车沿直线斜着上升时，车厢方向不变，每个点移动的方向和距离相同，是平移。指针、风车叶片和旋转木马都是绕中心转动。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p239_q4",
+     "topicId": "mbj_p239",
+     "prompt": "方格纸上，一个图形上的点原来在第 3 列，平移后到了第 11 列，它向右平移了几格？",
+     "question": "方格纸上，一个图形上的点原来在第 3 列，平移后到了第 11 列，它向右平移了几格？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "8",
+     "verify": "11-3",
+     "explanation": "数平移的格数要用对应点来数：11 减 3 得 8，这个点向右移动了 8 格。不能数两个图形之间空出的格子数，那样会少算 1 格。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p239_q5",
+     "topicId": "mbj_p239",
+     "prompt": "旋转是物体绕着一个固定的什么在转动？",
+     "question": "旋转是物体绕着一个固定的什么在转动？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "点",
+     "explanation": "旋转时物体绕着一个固定的点或一条固定的线转动，这个点叫旋转中心。钟面上的指针就是绕中心的点转动。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p239_q6",
+     "topicId": "mbj_p239",
+     "prompt": "图形平移以后，各对应点之间的连线会怎样？",
+     "question": "图形平移以后，各对应点之间的连线会怎样？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "互相平行，长度也相等"
+      },
+      {
+       "label": "B",
+       "text": "长度不相等"
+      },
+      {
+       "label": "C",
+       "text": "互相垂直"
+      },
+      {
+       "label": "D",
+       "text": "方向各不相同"
+      }
+     ],
+     "answer": "A",
+     "explanation": "平移时每个点都朝同一方向移动同样的距离，所以对应点之间的连线方向相同、长度相等，也就是互相平行且相等。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p239_q7",
+     "topicId": "mbj_p239",
+     "prompt": "一个图形先向右平移 7 格，再向左平移 3 格，最后相当于向哪个方向平移了几格？",
+     "question": "一个图形先向右平移 7 格，再向左平移 3 格，最后相当于向哪个方向平移了几格？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "4",
+     "verify": "7-3",
+     "explanation": "两次移动方向相反，要相互抵消：7 减 3 得 4，最后相当于向右平移 4 格。方向相反时不能把格数相加。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p239_q8",
+     "topicId": "mbj_p239",
+     "prompt": "请说明在方格纸上怎样准确数出一个图形平移了几格。",
+     "question": "请说明在方格纸上怎样准确数出一个图形平移了几格。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "先找出原图形和平移后图形上的一对对应点，比如同一个顶点；再从原图形的这个点出发，一格一格数到平移后图形的对应点，数了几格就是平移了几格。也可以用两个对应点所在的列数或行数相减。不能数两个图形之间空出的格子数。",
+     "explanation": "用对应点数格是最可靠的方法，因为图形上所有点移动的距离都一样，选哪个点结果都相同。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p240",
+   "description": "把图形沿一条直线对折，两边能完全重合的图形叫轴对称图形，这条直线就是它的对称轴。学习用对折的方法找出对称轴，知道长方形、正方形、圆等常见图形各有几条对称轴。",
+   "mastery_criteria": [
+    "能用对折判断一个图形是不是轴对称图形",
+    "能找出并画出轴对称图形的对称轴",
+    "能说出常见图形对称轴的条数"
+   ],
+   "misconceptions": [
+    "把不是轴对称的图形说成有对称轴",
+    "认为平行四边形也是轴对称图形",
+    "把对称轴画成图形的边"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.08",
+    "quote": "结合实例，感受平移、旋转、轴对称现象"
+   },
+   "questions": [
+    {
+     "id": "mbj_p240_q1",
+     "topicId": "mbj_p240",
+     "prompt": "把一个图形沿一条直线对折，两边的图形能完全重合，这个图形叫什么？",
+     "question": "把一个图形沿一条直线对折，两边的图形能完全重合，这个图形叫什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "平移图形"
+      },
+      {
+       "label": "B",
+       "text": "旋转图形"
+      },
+      {
+       "label": "C",
+       "text": "轴对称图形"
+      },
+      {
+       "label": "D",
+       "text": "相似图形"
+      }
+     ],
+     "answer": "C",
+     "explanation": "沿直线对折后两边完全重合，是轴对称图形的定义，这条折痕所在的直线就是对称轴。平移和旋转是运动方式，不是图形的名称。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p240_q2",
+     "topicId": "mbj_p240",
+     "prompt": "一个长方形一共有几条对称轴？请选出来。",
+     "question": "一个长方形一共有几条对称轴？请选出来。",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "4 条"
+      },
+      {
+       "label": "B",
+       "text": "2 条"
+      },
+      {
+       "label": "C",
+       "text": "1 条"
+      },
+      {
+       "label": "D",
+       "text": "无数条"
+      }
+     ],
+     "answer": "B",
+     "explanation": "长方形沿两条对边中点的连线对折都能重合，所以有 2 条对称轴。对角线对折时两边不能完全重合，不算对称轴。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p240_q3",
+     "topicId": "mbj_p240",
+     "prompt": "一个正方形一共有几条对称轴？请选出来。",
+     "question": "一个正方形一共有几条对称轴？请选出来。",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "4",
+     "verify": "2*2",
+     "explanation": "正方形沿两条对边中点的连线和两条对角线对折都能完全重合，一共 4 条对称轴。只数对边的 2 条是常见错误。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p240_q4",
+     "topicId": "mbj_p240",
+     "prompt": "下面图形中，对称轴条数最多的是哪一个？",
+     "question": "下面图形中，对称轴条数最多的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "正方形"
+      },
+      {
+       "label": "B",
+       "text": "长方形"
+      },
+      {
+       "label": "C",
+       "text": "等边三角形"
+      },
+      {
+       "label": "D",
+       "text": "圆"
+      }
+     ],
+     "answer": "D",
+     "explanation": "圆沿任意一条直径对折都能重合，有无数条对称轴，是最多的。正方形 4 条，长方形 2 条，等边三角形 3 条。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p240_q5",
+     "topicId": "mbj_p240",
+     "prompt": "平行四边形是轴对称图形吗？（填是或不是）",
+     "question": "平行四边形是轴对称图形吗？（填是或不是）",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "不是",
+     "explanation": "平行四边形沿任何一条直线对折，两边都不能完全重合，所以它不是轴对称图形。它可以通过平移或旋转得到，但没有对称轴。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p240_q6",
+     "topicId": "mbj_p240",
+     "prompt": "请说一说怎样判断一个图形是不是轴对称图形。",
+     "question": "请说一说怎样判断一个图形是不是轴对称图形。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "先在这个图形上试着找一条直线，沿着这条直线把图形对折，看折痕两边的部分能不能完全重合。能完全重合的就是轴对称图形，这条直线就是对称轴；无论怎样折都不能完全重合的，就不是轴对称图形。用纸剪出图形来对折验证最直接。",
+     "explanation": "判断的依据是折后完全重合，不是两边面积差不多或者看起来很像。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p240_q7",
+     "topicId": "mbj_p240",
+     "prompt": "一个五角星有几条对称轴？",
+     "question": "一个五角星有几条对称轴？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "5",
+     "verify": "2+3",
+     "explanation": "五角星从一个角尖到对边凹点的直线对折都能重合，五个角对应 5 条对称轴，所以一共 5 条。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p240_q8",
+     "topicId": "mbj_p240",
+     "prompt": "一个等腰三角形（不是等边三角形）有几条对称轴？",
+     "question": "一个等腰三角形（不是等边三角形）有几条对称轴？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 条"
+      },
+      {
+       "label": "B",
+       "text": "2 条"
+      },
+      {
+       "label": "C",
+       "text": "3 条"
+      },
+      {
+       "label": "D",
+       "text": "0 条"
+      }
+     ],
+     "answer": "A",
+     "explanation": "等腰三角形只有底边上的高所在的直线能把两边对折重合，所以只有 1 条对称轴。等边三角形三边都相等，才有 3 条。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p241",
+   "description": "运用平移、旋转和轴对称的知识欣赏生活中的图案，找出图案里用到的变换，并用基本图形经过平移、旋转或对折剪拼，设计出有规律的图案和花边。",
+   "mastery_criteria": [
+    "能说出图案中用到的变换方式",
+    "能用平移的方法排列出有规律的图案",
+    "能设计一幅用上轴对称或旋转的图案"
+   ],
+   "misconceptions": [
+    "只看到图案好看，说不出用了什么变换",
+    "设计的图案间距不匀，规律断了",
+    "认为剪出的花边只用了平移"
+   ],
+   "std": {
+    "id": "mat-2022:2.TS.04",
+    "quote": "帮助学生认识平移、旋转和轴对称的现象，感知特征，增强空间观念"
+   },
+   "questions": [
+    {
+     "id": "mbj_p241_q1",
+     "topicId": "mbj_p241",
+     "prompt": "用平移的方法复制一个图案，得到的图案与原图案相比会怎样？",
+     "question": "用平移的方法复制一个图案，得到的图案与原图案相比会怎样？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "形状相同、大小不同"
+      },
+      {
+       "label": "B",
+       "text": "形状不同、大小相同"
+      },
+      {
+       "label": "C",
+       "text": "形状和大小都相同"
+      },
+      {
+       "label": "D",
+       "text": "形状和大小都不同"
+      }
+     ],
+     "answer": "C",
+     "explanation": "平移不改变图形的形状和大小，只是位置变了，所以复制出来的图案和原图案完全一样，只是挪了位置。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p241_q2",
+     "topicId": "mbj_p241",
+     "prompt": "一个图案每次向右平移 3 格，连续平移 4 次，最后一个图案离原来的图案有多少格？",
+     "question": "一个图案每次向右平移 3 格，连续平移 4 次，最后一个图案离原来的图案有多少格？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "12",
+     "verify": "3*4",
+     "explanation": "每平移一次移动 3 格，连续 4 次一共移动 3 乘 4 得 12 格。连续多次平移，格数要累加，不能只看最后一次。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p241_q3",
+     "topicId": "mbj_p241",
+     "prompt": "把一张正方形纸对折两次后剪出一个图案，展开后得到的图案是什么图形？",
+     "question": "把一张正方形纸对折两次后剪出一个图案，展开后得到的图案是什么图形？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "平移图形"
+      },
+      {
+       "label": "B",
+       "text": "轴对称图形"
+      },
+      {
+       "label": "C",
+       "text": "旋转图形"
+      },
+      {
+       "label": "D",
+       "text": "不规则图形"
+      }
+     ],
+     "answer": "B",
+     "explanation": "对折后剪出的图案，展开时折痕两边完全重合，所以是轴对称图形。折了几次就有几条对称轴，图案会重复出现。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p241_q4",
+     "topicId": "mbj_p241",
+     "prompt": "请说一说设计图案时，怎样运用平移、旋转和轴对称。",
+     "question": "请说一说设计图案时，怎样运用平移、旋转和轴对称。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "先画好一个基本图形，再把它沿一个方向依次平移，就得到有规律的花边；把基本图形绕一个点转动一定角度再画一次，可以得到旋转的图案；把纸对折后剪出图形再展开，能得到轴对称的图案。设计时要注意间距均匀、方向一致，规律才明显。",
+     "explanation": "三种变换各有用途：平移做重复排列，旋转做环绕图案，轴对称做对称图形，组合起来图案更丰富。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p241_q5",
+     "topicId": "mbj_p241",
+     "prompt": "钟面上时针的运动是平移还是旋转？",
+     "question": "钟面上时针的运动是平移还是旋转？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "旋转",
+     "explanation": "时针是绕钟面的中心点转动，方向一直在改变，所以是旋转。它在钟面上走一圈，每个位置的角度都不同。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p241_q6",
+     "topicId": "mbj_p241",
+     "prompt": "下面关于图形变换的说法，哪一句是正确的？",
+     "question": "下面关于图形变换的说法，哪一句是正确的？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "旋转后的图形方向不会改变"
+      },
+      {
+       "label": "B",
+       "text": "轴对称图形的两部分形状不一样"
+      },
+      {
+       "label": "C",
+       "text": "平移会改变图形的大小"
+      },
+      {
+       "label": "D",
+       "text": "平移后的图形与原图形完全一样，能完全重合"
+      }
+     ],
+     "answer": "D",
+     "explanation": "平移只改变位置，形状、大小、方向都不变，所以能和原图形完全重合。旋转会改变方向，轴对称图形的两部分完全一样，平移不改变大小。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p241_q7",
+     "topicId": "mbj_p241",
+     "prompt": "一个图形连续平移 5 次，每次都留下一个图形，加上原来的图形，一共有多少个这样的图形？",
+     "question": "一个图形连续平移 5 次，每次都留下一个图形，加上原来的图形，一共有多少个这样的图形？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "6",
+     "verify": "5+1",
+     "explanation": "原来的图形 1 个，每平移一次多 1 个，平移 5 次就有 5 个新的，一共 5 加 1 得 6 个。数个数时不要漏掉原来的那一个。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p241_q8",
+     "topicId": "mbj_p241",
+     "prompt": "请设计一条花边，并说明你用了哪些图形变换。",
+     "question": "请设计一条花边，并说明你用了哪些图形变换。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "可以先用一个三角形作基本图形，把它向右每次平移 4 格，连续排 6 个，得到一条方向一致的重复花边；再把这条花边沿一条水平直线对折，展开后上下对称，就成了一条上下对称的花边。也可以把三角形绕顶点转 180 度再排一次，做出旋转效果。",
+     "explanation": "说明时要指出哪些地方用了平移、哪些地方用了轴对称或旋转，并说清方向、格数或折痕的位置。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p242",
+   "description": "本单元在具体情境中认识常见的数量关系：总量与分量、单价数量总价，以及倍的关系。学会用加法、减法、乘法和估算解决求总量、求分量、求一个数的几倍是多少的问题，初步建立模型意识。",
+   "mastery_criteria": [
+    "能说出总量与分量、单价数量总价的关系",
+    "能根据问题选择加法、减法或乘法",
+    "能用估算判断结果是否合理"
+   ],
+   "misconceptions": [
+    "把单价与总价混为一谈",
+    "求几倍是多少时用除法计算",
+    "总量与分量的关系弄反，用加法求分量"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.24",
+    "quote": "建立加法模型和乘法模型，知道模型中数量的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p242_q1",
+     "topicId": "mbj_p242",
+     "prompt": "每支笔 3 元，买 5 支一共多少元？这里的 3 元表示什么？",
+     "question": "每支笔 3 元，买 5 支一共多少元？这里的 3 元表示什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "单价"
+      },
+      {
+       "label": "B",
+       "text": "数量"
+      },
+      {
+       "label": "C",
+       "text": "总价"
+      },
+      {
+       "label": "D",
+       "text": "总重"
+      }
+     ],
+     "answer": "A",
+     "explanation": "3 元是一支笔的价钱，也就是单价；5 支是数量；一共多少元是总价。单价乘数量等于总价。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p242_q2",
+     "topicId": "mbj_p242",
+     "prompt": "总价、单价和数量之间的关系式是哪一个？",
+     "question": "总价、单价和数量之间的关系式是哪一个？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "总价乘数量等于单价"
+      },
+      {
+       "label": "B",
+       "text": "单价除以数量等于总价"
+      },
+      {
+       "label": "C",
+       "text": "单价乘数量等于总价"
+      },
+      {
+       "label": "D",
+       "text": "总价加单价等于数量"
+      }
+     ],
+     "answer": "C",
+     "explanation": "买几件东西花的钱，等于每件的价钱乘件数，所以单价乘数量等于总价。由这个关系还能推出总价除以数量等于单价、总价除以单价等于数量。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p242_q3",
+     "topicId": "mbj_p242",
+     "prompt": "每本练习本 2 元，买 12 本一共要花多少元？",
+     "question": "每本练习本 2 元，买 12 本一共要花多少元？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "24",
+     "verify": "2*12",
+     "explanation": "已知单价 2 元和数量 12 本，求总价用乘法：2 乘 12 得 24 元。答：一共要花 24 元。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p242_q4",
+     "topicId": "mbj_p242",
+     "prompt": "请说一说总量与分量的关系。",
+     "question": "请说一说总量与分量的关系。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "把几个部分合起来得到的总数叫总量，其中的每一个部分都叫分量。总量等于各个分量相加的和；已知总量和其中几个分量，用总量减去已知的分量，就能求出剩下的那个分量。总量一定不小于其中任何一个分量。",
+     "explanation": "抓住总量等于各分量之和这一条，求总量用加法，求分量用减法，判断题目要什么就不会错。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p242_q5",
+     "topicId": "mbj_p242",
+     "prompt": "妈妈买 3 千克苹果花了 24 元，求每千克多少元，用到的是哪个关系？",
+     "question": "妈妈买 3 千克苹果花了 24 元，求每千克多少元，用到的是哪个关系？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "单价乘数量等于总价"
+      },
+      {
+       "label": "B",
+       "text": "总价除以数量等于单价"
+      },
+      {
+       "label": "C",
+       "text": "总价除以单价等于数量"
+      },
+      {
+       "label": "D",
+       "text": "总价乘数量等于单价"
+      }
+     ],
+     "answer": "B",
+     "explanation": "24 元是总价，3 千克是数量，求每千克的价钱就是求单价，用总价除以数量：24 除以 3 得 8 元。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p243",
+   "description": "把几个部分合起来得到总数，这个总数叫总量，其中的每一部分叫分量。学习在具体情境中分辨哪是总量、哪是分量，知道总量等于各分量之和，也能由总量和已知分量求出另一个分量。",
+   "mastery_criteria": [
+    "能在情境中指出总量和分量",
+    "能用加法求总量、用减法求分量",
+    "能检查求出的分量与总量是否相符"
+   ],
+   "misconceptions": [
+    "把分量当成总量，求总量时反而用减法",
+    "求分量时用加法，越算越大",
+    "两道减法中弄错被减数"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.06",
+    "quote": "理解现实问题中的加法模型是表示总量等于各分量之和"
+   },
+   "questions": [
+    {
+     "id": "mbj_p243_q1",
+     "topicId": "mbj_p243",
+     "prompt": "把 3 个小组的人数合起来求全班人数，全班人数在这里是什么？",
+     "question": "把 3 个小组的人数合起来求全班人数，全班人数在这里是什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "分量"
+      },
+      {
+       "label": "B",
+       "text": "平均数"
+      },
+      {
+       "label": "C",
+       "text": "倍数"
+      },
+      {
+       "label": "D",
+       "text": "总量"
+      }
+     ],
+     "answer": "D",
+     "explanation": "3 个小组的人数是三个部分，合起来得到的全班人数是总数，也就是总量。每个小组的人数都是它的一个分量。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p243_q2",
+     "topicId": "mbj_p243",
+     "prompt": "一班有 46 人，其中男生 24 人，女生有多少人？",
+     "question": "一班有 46 人，其中男生 24 人，女生有多少人？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "22",
+     "verify": "46-24",
+     "explanation": "全班 46 人是总量，男生 24 人是其中一个分量，求女生人数用总量减去已知分量：46 减 24 得 22 人。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p243_q3",
+     "topicId": "mbj_p243",
+     "prompt": "总量与分量之间的关系是怎样的？",
+     "question": "总量与分量之间的关系是怎样的？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "总量等于各个分量相加的和"
+      },
+      {
+       "label": "B",
+       "text": "分量等于总量加其余分量"
+      },
+      {
+       "label": "C",
+       "text": "总量等于分量乘份数"
+      },
+      {
+       "label": "D",
+       "text": "总量与分量之间没有关系"
+      }
+     ],
+     "answer": "A",
+     "explanation": "总量是由各个分量合起来的，所以总量等于各个分量之和。反过来，总量减去已知分量就等于另一个分量。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p243_q4",
+     "topicId": "mbj_p243",
+     "prompt": "水果店运来 320 千克水果，上午卖出 120 千克，下午卖出 95 千克，还剩多少千克？",
+     "question": "水果店运来 320 千克水果，上午卖出 120 千克，下午卖出 95 千克，还剩多少千克？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "105",
+     "verify": "320-120-95",
+     "explanation": "320 千克是总量，卖出的 120 千克和 95 千克是两个分量，剩下的也是分量。用总量依次减去两个分量：320 减 120 得 200，200 减 95 得 105 千克。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p243_q5",
+     "topicId": "mbj_p243",
+     "prompt": "总量减去一个分量，得到的是什么？",
+     "question": "总量减去一个分量，得到的是什么？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "分量",
+     "explanation": "总量由各分量合起来，去掉其中一个分量，剩下的仍然是总量的一部分，也就是另一个分量。所以已知总量和一个分量，求另一个分量用减法。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p243_q6",
+     "topicId": "mbj_p243",
+     "prompt": "小明说总量不会比它的任何一个分量小，这个说法正确吗？",
+     "question": "小明说总量不会比它的任何一个分量小，这个说法正确吗？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "错误，总量可能比分量小"
+      },
+      {
+       "label": "B",
+       "text": "错误，总量一定等于分量"
+      },
+      {
+       "label": "C",
+       "text": "正确，分量是总量的一部分"
+      },
+      {
+       "label": "D",
+       "text": "无法判断，要看具体情境"
+      }
+     ],
+     "answer": "C",
+     "explanation": "总量由各个分量合起来，其中任何一个分量都只是总量的一部分，所以总量不会比它的分量小。当只有一个分量时，两者相等。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p243_q7",
+     "topicId": "mbj_p243",
+     "prompt": "一根绳子长 100 厘米，第一次剪去 28 厘米，第二次剪去 35 厘米，剩下的比第一次剪去的多多少厘米？",
+     "question": "一根绳子长 100 厘米，第一次剪去 28 厘米，第二次剪去 35 厘米，剩下的比第一次剪去的多多少厘米？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "9",
+     "verify": "(100-28-35)-28",
+     "explanation": "先求剩下的：100 减 28 得 72，72 减 35 得 37 厘米。再用剩下的减去第一次剪去的：37 减 28 得 9 厘米。两次减法要分清被减数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p243_q8",
+     "topicId": "mbj_p243",
+     "prompt": "请举一个生活中的例子，说明总量和分量，并说出它们之间的关系。",
+     "question": "请举一个生活中的例子，说明总量和分量，并说出它们之间的关系。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "answer": "例如妈妈买了一袋 50 个苹果，送给奶奶 18 个，自己家留 32 个。这袋苹果的 50 个是总量，送出的 18 个和留下的 32 个都是分量。三个数的关系是 18 加 32 等于 50，也就是各分量之和等于总量；用 50 减 18 得 32，说明总量减去一个分量等于另一个分量。",
+     "explanation": "举例子时要指清哪是整体、哪是部分，再用加法或减法把三个数之间的关系写出来。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p244",
+   "description": "已知几个部分求一共多少，或已知每份数和份数求总数，都用求总量的方法。学习先找数量关系，再选择加法或乘法列式，并注意单位名称与答语的完整。",
+   "mastery_criteria": [
+    "能判断题目是求总量的问题",
+    "能用加法或乘法求总量并说清理由",
+    "能完整写出算式、单位和答语"
+   ],
+   "misconceptions": [
+    "各部分求总量时错用减法",
+    "每份数乘份数时把两个数加了起来",
+    "算出总量后单位名称写错"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.06",
+    "quote": "理解现实问题中的加法模型是表示总量等于各分量之和"
+   },
+   "questions": [
+    {
+     "id": "mbj_p244_q1",
+     "topicId": "mbj_p244",
+     "prompt": "求总量时，如果已知的是几个不同的部分，应该用什么方法把各部分合起来？",
+     "question": "求总量时，如果已知的是几个不同的部分，应该用什么方法把各部分合起来？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "用减法"
+      },
+      {
+       "label": "B",
+       "text": "用加法"
+      },
+      {
+       "label": "C",
+       "text": "用除法"
+      },
+      {
+       "label": "D",
+       "text": "用乘法"
+      }
+     ],
+     "answer": "B",
+     "explanation": "几个不同部分合起来求总数，就是求几个数的和，用加法。如果是若干个相同的部分，也就是每份数相同，就用乘法。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p244_q2",
+     "topicId": "mbj_p244",
+     "prompt": "小明有 12 张邮票，小红有 15 张邮票，两人一共有多少张？",
+     "question": "小明有 12 张邮票，小红有 15 张邮票，两人一共有多少张？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "27",
+     "verify": "12+15",
+     "explanation": "两人的邮票是两个部分，合起来求总数用加法：12 加 15 得 27 张。答：两人一共有 27 张。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p244_q3",
+     "topicId": "mbj_p244",
+     "prompt": "每盒有 18 块糖，5 盒一共有多少块？",
+     "question": "每盒有 18 块糖，5 盒一共有多少块？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "90",
+     "verify": "18*5",
+     "explanation": "每盒 18 块是每份数，5 盒是份数，求总数用乘法：18 乘 5 得 90 块。相同部分相加可以用乘法简便计算。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p244_q4",
+     "topicId": "mbj_p244",
+     "prompt": "已知每支笔 4 元，买了 7 支，求一共花多少钱。下面列式正确的是哪一个？",
+     "question": "已知每支笔 4 元，买了 7 支，求一共花多少钱。下面列式正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "4 加 7"
+      },
+      {
+       "label": "B",
+       "text": "7 除以 4"
+      },
+      {
+       "label": "C",
+       "text": "4 除以 7"
+      },
+      {
+       "label": "D",
+       "text": "4 乘 7"
+      }
+     ],
+     "answer": "D",
+     "explanation": "4 元是单价，7 支是数量，求总价用单价乘数量，也就是 4 乘 7 得 28 元。加法和除法都不符合单价乘数量的关系。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p244_q5",
+     "topicId": "mbj_p244",
+     "prompt": "三袋大米分别重 25 千克、30 千克、28 千克，一共重多少千克？",
+     "question": "三袋大米分别重 25 千克、30 千克、28 千克，一共重多少千克？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "83",
+     "explanation": "三袋的重量是三个不同的部分，求一共有多少用加法：25 加 30 得 55，55 加 28 得 83 千克。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p244_q6",
+     "topicId": "mbj_p244",
+     "prompt": "请说一说解决求总量问题的思路。",
+     "question": "请说一说解决求总量问题的思路。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "先看题目给了哪些条件，弄清要求的是不是总数。如果各个部分不相同，就把各部分相加；如果每个部分都相同，也就是知道每份数和份数，就用乘法算更快。列式后要算出结果，写上单位名称和答语，最后想一想结果和题目中的数据是否相称。",
+     "explanation": "关键在于先分清是几个不同的部分还是几个相同的部分，再决定用加法还是乘法。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p244_q7",
+     "topicId": "mbj_p244",
+     "prompt": "一辆汽车每小时行 60 千米，从甲地到乙地行了 4 小时，返回时每小时行 80 千米，返回用了多少小时？",
+     "question": "一辆汽车每小时行 60 千米，从甲地到乙地行了 4 小时，返回时每小时行 80 千米，返回用了多少小时？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "3",
+     "verify": "60*4/(60+20)",
+     "explanation": "先求甲乙两地的路程：60 乘 4 得 240 千米。返回时每小时行 80 千米，240 除以 80 得 3 小时。路程不变，速度变了，时间就跟着变。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p244_q8",
+     "topicId": "mbj_p244",
+     "prompt": "甲数是 24，乙数是甲数的 3 倍，甲乙两数的和是多少？",
+     "question": "甲数是 24，乙数是甲数的 3 倍，甲乙两数的和是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "96"
+      },
+      {
+       "label": "B",
+       "text": "72"
+      },
+      {
+       "label": "C",
+       "text": "27"
+      },
+      {
+       "label": "D",
+       "text": "48"
+      }
+     ],
+     "answer": "A",
+     "explanation": "先求乙数：24 乘 3 得 72。再求两数之和：24 加 72 得 96。只算到 72 是先求了乙数却忘了题目要的是和。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p245",
+   "description": "在不需要精确结果时，把数看成接近的整十、整百数再计算，能快速判断够不够、大约是多少。学习根据问题选择合理的近似值，并说明估算结果是否符合实际。",
+   "mastery_criteria": [
+    "能把数看成接近的整十整百数进行估算",
+    "能用估算判断钱够不够、座位够不够",
+    "能说明估算结果是否合理"
+   ],
+   "misconceptions": [
+    "把数取得太远，估得的商差很多",
+    "估算后把近似结果当成准确答案写",
+    "判断够不够时只看估算不看实际情况"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.10",
+    "quote": "形成初步的模型意识和应用意识"
+   },
+   "questions": [
+    {
+     "id": "mbj_p245_q1",
+     "topicId": "mbj_p245",
+     "prompt": "估算 198 除以 5 时，把 198 看成 200 比较合适，原因是什么？",
+     "question": "估算 198 除以 5 时，把 198 看成 200 比较合适，原因是什么？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "200 比 198 大很多，容易算"
+      },
+      {
+       "label": "B",
+       "text": "200 是偶数，除法一定除得尽"
+      },
+      {
+       "label": "C",
+       "text": "200 是整百数，好算而且接近 198"
+      },
+      {
+       "label": "D",
+       "text": "198 太小不能估算"
+      }
+     ],
+     "answer": "C",
+     "explanation": "估算要把数看成接近它又好算的数。200 和 198 只差 2，又能直接口算，是不错的近似值。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p245_q2",
+     "topicId": "mbj_p245",
+     "prompt": "估算 598 除以 6 的商，结果大约是多少？",
+     "question": "估算 598 除以 6 的商，结果大约是多少？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "100",
+     "verify": "600/6",
+     "explanation": "把 598 看成 600，600 除以 6 得 100，所以商大约是 100。因为 598 比 600 略小，实际商比 100 稍小一些。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p245_q3",
+     "topicId": "mbj_p245",
+     "prompt": "每张桌子坐 4 人，有 118 人参加活动，大约需要多少张桌子？",
+     "question": "每张桌子坐 4 人，有 118 人参加活动，大约需要多少张桌子？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "3 张"
+      },
+      {
+       "label": "B",
+       "text": "30 张"
+      },
+      {
+       "label": "C",
+       "text": "300 张"
+      },
+      {
+       "label": "D",
+       "text": "40 张"
+      }
+     ],
+     "answer": "B",
+     "explanation": "把 118 看成 120，120 除以 4 得 30，所以大约需要 30 张桌子。实际计算 118 除以 4 商 29 余 2，还要多加 1 张才够坐。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p245_q4",
+     "topicId": "mbj_p245",
+     "prompt": "学校要买 6 个足球，每个 98 元，大约需要多少元？",
+     "question": "学校要买 6 个足球，每个 98 元，大约需要多少元？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "600",
+     "verify": "100*6",
+     "explanation": "把 98 看成 100，100 乘 6 得 600 元，所以大约需要 600 元。因为每个只要 98 元，实际钱数比 600 元少一些。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p245_q5",
+     "topicId": "mbj_p245",
+     "prompt": "估算 396 除以 4 时，可以把 396 看成多少来算？",
+     "question": "估算 396 除以 4 时，可以把 396 看成多少来算？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "400",
+     "explanation": "396 接近整百数 400，而且 400 除以 4 能直接口算得 100，所以看成 400 最方便。估计的商是 100，实际商比 100 略小。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p245_q6",
+     "topicId": "mbj_p245",
+     "prompt": "请说一说估算有什么用处，估算时要注意什么。",
+     "question": "请说一说估算有什么用处，估算时要注意什么。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "估算能在不要求精确结果时快速得到接近的答案，常用来判断带的钱够不够、座位够不够、结果是否合理。估算时要把数看成接近它又好算的整十或整百数，取的近似值不能离原数太远；还要说明估得的结果比实际大还是小，不能把估算结果当成准确答案。",
+     "explanation": "估算的价值在于快和合理，所以要选好近似值，并结合情境判断结论是否站得住。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p245_q7",
+     "topicId": "mbj_p245",
+     "prompt": "小明有 300 元，想买 7 个每个 42 元的书包，他的钱够吗？",
+     "question": "小明有 300 元，想买 7 个每个 42 元的书包，他的钱够吗？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "不够，42 乘 7 得 294，294 大于 300"
+      },
+      {
+       "label": "B",
+       "text": "够，因为 42 比 300 小"
+      },
+      {
+       "label": "C",
+       "text": "不够，40 乘 7 得 280"
+      },
+      {
+       "label": "D",
+       "text": "够，42 乘 7 得 294，294 小于 300"
+      }
+     ],
+     "answer": "D",
+     "explanation": "要判断够不够，得算出一共花多少钱再和 300 元比。42 乘 7 得 294 元，294 比 300 小，所以钱够，还剩 6 元。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p245_q8",
+     "topicId": "mbj_p245",
+     "prompt": "一本书 8 元，250 元最多可以买多少本？",
+     "question": "一本书 8 元，250 元最多可以买多少本？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "31",
+     "verify": "250//8",
+     "explanation": "250 除以 8 商 31 余 2，买 31 本要用 248 元，还剩 2 元不够再买一本，所以最多买 31 本。这里不能用进一法。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p246",
+   "description": "已知总量和其中一部分，求另一部分；或把总量平均分成几份，求一份是多少。学习从总量里去掉已知分量，或用除法求每份数，并用分量加回去等于总量来检查。",
+   "mastery_criteria": [
+    "能用减法求出未知的分量",
+    "能用除法把总量平均分求每份数",
+    "能把求出的分量加回去检查"
+   ],
+   "misconceptions": [
+    "求分量时用加法，结果比总量还大",
+    "连续减去几个分量时漏减一段",
+    "平均分时把总量除以份数错写成乘"
+   ],
+   "std": {
+    "id": "mat-2022:2.XY.06",
+    "quote": "理解现实问题中的加法模型是表示总量等于各分量之和"
+   },
+   "questions": [
+    {
+     "id": "mbj_p246_q1",
+     "topicId": "mbj_p246",
+     "prompt": "已知总量和其中的一部分，求另一部分，应该用什么方法计算？",
+     "question": "已知总量和其中的一部分，求另一部分，应该用什么方法计算？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "用减法"
+      },
+      {
+       "label": "B",
+       "text": "用加法"
+      },
+      {
+       "label": "C",
+       "text": "用乘法"
+      },
+      {
+       "label": "D",
+       "text": "用除法"
+      }
+     ],
+     "answer": "A",
+     "explanation": "总量等于各分量之和，去掉已知的一个分量，剩下的就是另一个分量，所以用总量减去已知分量。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p246_q2",
+     "topicId": "mbj_p246",
+     "prompt": "一共有 85 只鸡，其中公鸡 37 只，母鸡有多少只？",
+     "question": "一共有 85 只鸡，其中公鸡 37 只，母鸡有多少只？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "48",
+     "verify": "85-37",
+     "explanation": "85 只是总量，公鸡 37 只是其中一个分量，求母鸡用 85 减 37 得 48 只。可以验算：48 加 37 正好是 85。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p246_q3",
+     "topicId": "mbj_p246",
+     "prompt": "学校共有 480 名学生，其中男生 245 名，女生有多少名？",
+     "question": "学校共有 480 名学生，其中男生 245 名，女生有多少名？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "235",
+     "verify": "480-245",
+     "explanation": "480 名是总量，男生 245 名是分量，女生人数用 480 减 245 得 235 名。验算：245 加 235 得 480。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p246_q4",
+     "topicId": "mbj_p246",
+     "prompt": "一桶油重 50 千克，第一次用去 18 千克，第二次用去 15 千克，还剩多少千克？下面列式正确的是哪一个？",
+     "question": "一桶油重 50 千克，第一次用去 18 千克，第二次用去 15 千克，还剩多少千克？下面列式正确的是哪一个？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "50 减 18 再加 15"
+      },
+      {
+       "label": "B",
+       "text": "50 加 18 再减 15"
+      },
+      {
+       "label": "C",
+       "text": "50 减 18 再减 15"
+      },
+      {
+       "label": "D",
+       "text": "50 减 18 与 15 的差"
+      }
+     ],
+     "answer": "C",
+     "explanation": "50 千克是总量，用去的 18 千克和 15 千克都是分量，求剩下的分量要把两个分量都从总量里去掉，所以连续减两次。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p246_q5",
+     "topicId": "mbj_p246",
+     "prompt": "一根绳子长 9 米，用去 4 米，还剩多少米？",
+     "question": "一根绳子长 9 米，用去 4 米，还剩多少米？",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "5",
+     "explanation": "9 米是总量，用去的 4 米是分量，剩下的分量用 9 减 4 得 5 米。验算：4 加 5 得 9。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p246_q6",
+     "topicId": "mbj_p246",
+     "prompt": "请说一说求分量的问题可以怎样想、怎样检查。",
+     "question": "请说一说求分量的问题可以怎样想、怎样检查。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "先找出总量是哪个数，再找出已知的分量。如果总量和其余分量都已知，用总量减去这些分量就得到要求的那个分量；如果总量要平均分成几份，就用总量除以份数求一份。算完把求出的分量和已知分量相加，看是否等于总量，相等就说明算对了。",
+     "explanation": "求分量与求总量是一对互逆的过程，用加回去的办法检查最方便。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p246_q7",
+     "topicId": "mbj_p246",
+     "prompt": "图书角有 3 层书架，一共 264 本书，第一层 98 本，第二层 76 本，第三层有多少本？",
+     "question": "图书角有 3 层书架，一共 264 本书，第一层 98 本，第二层 76 本，第三层有多少本？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "90",
+     "verify": "264-98-76",
+     "explanation": "264 本是总量，三层的书是三个分量。先 264 减 98 得 166，再 166 减 76 得 90 本。验算：98 加 76 得 174，174 加 90 正好是 264。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p246_q8",
+     "topicId": "mbj_p246",
+     "prompt": "小明有 60 元，买书用去 23 元，买笔用去 15 元，剩下的钱比买书的钱少多少元？",
+     "question": "小明有 60 元，买书用去 23 元，买笔用去 15 元，剩下的钱比买书的钱少多少元？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "22 元"
+      },
+      {
+       "label": "B",
+       "text": "1 元"
+      },
+      {
+       "label": "C",
+       "text": "38 元"
+      },
+      {
+       "label": "D",
+       "text": "6 元"
+      }
+     ],
+     "answer": "B",
+     "explanation": "先求剩下的钱：60 减 23 得 37，37 减 15 得 22 元。再比一比：23 减 22 得 1 元，剩下的钱比买书的钱少 1 元。只算到 22 元是没有回答比较的问题。",
+     "subject": "math-bj"
+    }
+   ]
+  },
+  {
+   "topicId": "mbj_p247",
+   "description": "倍表示两个数量之间的比较关系：把一个数看作一份，另一个数里有这样的几份，就是它的几倍。求一个数的几倍是多少用乘法计算，还要分清是几倍与多几的不同。",
+   "mastery_criteria": [
+    "能说出一个数是另一个数的几倍的含义",
+    "能用乘法求一个数的几倍是多少",
+    "能区分是几倍与多几的问法"
+   ],
+   "misconceptions": [
+    "看到倍就用除法，把求几倍与求一倍数搞反",
+    "把 3 倍理解成多 3 个",
+    "求几倍是多少时用加法计算"
+   ],
+   "std": {
+    "id": "mat-2022:2.NR.24",
+    "quote": "建立加法模型和乘法模型，知道模型中数量的意义"
+   },
+   "questions": [
+    {
+     "id": "mbj_p247_q1",
+     "topicId": "mbj_p247",
+     "prompt": "苹果有 6 个，梨的个数是苹果的 3 倍，求梨的个数应该怎样列式？",
+     "question": "苹果有 6 个，梨的个数是苹果的 3 倍，求梨的个数应该怎样列式？",
+     "type": "choice",
+     "difficulty": "basic",
+     "options": [
+      {
+       "label": "A",
+       "text": "6 除以 3"
+      },
+      {
+       "label": "B",
+       "text": "6 加 3"
+      },
+      {
+       "label": "C",
+       "text": "6 减 3"
+      },
+      {
+       "label": "D",
+       "text": "6 乘 3"
+      }
+     ],
+     "answer": "D",
+     "explanation": "把苹果的 6 个看作一份，梨有这样的 3 份，求 3 个 6 是多少用乘法：6 乘 3 得 18 个。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p247_q2",
+     "topicId": "mbj_p247",
+     "prompt": "小红有 4 支铅笔，小明的铅笔数是小红的 5 倍，小明有多少支铅笔？",
+     "question": "小红有 4 支铅笔，小明的铅笔数是小红的 5 倍，小明有多少支铅笔？",
+     "type": "numeric",
+     "difficulty": "basic",
+     "answer": "20",
+     "verify": "4*5",
+     "explanation": "把小红的 4 支看作一份，小明有 5 份，4 乘 5 得 20 支。答：小明有 20 支铅笔。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p247_q3",
+     "topicId": "mbj_p247",
+     "prompt": "三年级有 32 人参加合唱，四年级参加的人数是三年级的 2 倍，四年级有多少人参加？",
+     "question": "三年级有 32 人参加合唱，四年级参加的人数是三年级的 2 倍，四年级有多少人参加？",
+     "type": "numeric",
+     "difficulty": "standard",
+     "answer": "64",
+     "verify": "32*2",
+     "explanation": "三年级的 32 人是一份，四年级有 2 份，32 乘 2 得 64 人。求一个数的几倍是多少，用这个数乘倍数。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p247_q4",
+     "topicId": "mbj_p247",
+     "prompt": "甲数是 8，乙数是甲数的 4 倍，乙数比甲数多多少？",
+     "question": "甲数是 8，乙数是甲数的 4 倍，乙数比甲数多多少？",
+     "type": "choice",
+     "difficulty": "standard",
+     "options": [
+      {
+       "label": "A",
+       "text": "24"
+      },
+      {
+       "label": "B",
+       "text": "32"
+      },
+      {
+       "label": "C",
+       "text": "4"
+      },
+      {
+       "label": "D",
+       "text": "40"
+      }
+     ],
+     "answer": "A",
+     "explanation": "先求乙数：8 乘 4 得 32。再求多多少：32 减 8 得 24。32 是乙数，题目问的是比甲数多多少，还要再减一次。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p247_q5",
+     "topicId": "mbj_p247",
+     "prompt": "7 的 6 倍是多少？请算出来。",
+     "question": "7 的 6 倍是多少？请算出来。",
+     "type": "fill",
+     "difficulty": "basic",
+     "answer": "42",
+     "explanation": "7 的 6 倍就是 6 个 7 相加，用乘法算最简便：7 乘 6 得 42。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p247_q6",
+     "topicId": "mbj_p247",
+     "prompt": "请说一说倍表示什么意思，求一个数的几倍是多少为什么用乘法。",
+     "question": "请说一说倍表示什么意思，求一个数的几倍是多少为什么用乘法。",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "answer": "倍表示两个数量之间的比较关系：把其中一个数看作一份，另一个数里有这样的几份，就说另一个数是这个数的几倍。求一个数的几倍是多少，就是求几个这样的数相加的和，用乘法计算最简便，用这个数乘倍数就得到结果。",
+     "explanation": "要分清是几倍和求一倍数：求几倍是多少用乘法，已知几倍的结果求一份才用除法。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p247_q7",
+     "topicId": "mbj_p247",
+     "prompt": "小明今年 9 岁，爸爸的年龄是小明的 4 倍，3 年后爸爸多少岁？",
+     "question": "小明今年 9 岁，爸爸的年龄是小明的 4 倍，3 年后爸爸多少岁？",
+     "type": "numeric",
+     "difficulty": "hard",
+     "answer": "39",
+     "verify": "9*4+3",
+     "explanation": "先求爸爸今年的年龄：9 乘 4 得 36 岁。再过 3 年，36 加 3 得 39 岁。注意倍数是今年的关系，加年龄时只给爸爸加 3 岁。",
+     "subject": "math-bj"
+    },
+    {
+     "id": "mbj_p247_q8",
+     "topicId": "mbj_p247",
+     "prompt": "一个数的 5 倍是 45，这个数的 8 倍是多少？",
+     "question": "一个数的 5 倍是 45，这个数的 8 倍是多少？",
+     "type": "choice",
+     "difficulty": "hard",
+     "options": [
+      {
+       "label": "A",
+       "text": "45"
+      },
+      {
+       "label": "B",
+       "text": "360"
+      },
+      {
+       "label": "C",
+       "text": "72"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ],
+     "answer": "C",
+     "explanation": "先求这个数：45 除以 5 得 9。再求它的 8 倍：9 乘 8 得 72。只算出 9 是求到了一倍数，没有回答最后的问题。",
+     "subject": "math-bj"
+    }
+   ]
+  }
+ ]
+}
