@@ -124,6 +124,19 @@
     return out.join('\n');
   }
 
+  // 初中/高中教材按「章」，小学按「单元」：标题跟着教材走
+  function unitWord(bookName) {
+    var b = getBook(bookName);
+    var papers = (b && b.papers) || [];
+    for (var i = 0; i < papers.length; i++) {
+      if (papers[i].kind === 'unit' && /章/.test(papers[i].paper || '')) return '章';
+    }
+    return '单元';
+  }
+  function kindLabels() {
+    var w = unitWord((BOOK && BOOK.book) || (selBook && selBook.value));
+    return { unit: w + '测试卷', mid: '期中测试卷', fin: '期末测试卷' };
+  }
   var KIND_LABEL = { unit: '单元卷', mid: '期中', fin: '期末' };
 
   function getBook(name) {
@@ -197,12 +210,18 @@
 
   function renderList() {
     if (!BOOK) { listEl.innerHTML = '<p class="empty">请选择册次</p>'; return; }
+    // 下拉里的「单元/章」也跟着教材走
+    var w0 = unitWord(BOOK.book);
+    var oUnit = document.querySelector('#sel-kind option[value="unit"]');
+    if (oUnit) oUnit.textContent = w0 + '测试卷';
+    var oAll = document.querySelector('#sel-kind option[value=""]');
+    if (oAll) oAll.textContent = '全部（' + w0 + ' / 期中 / 期末）';
     var kind = selKind.value;
     var html = [], lastKind = '';
     BOOK.papers.forEach(function (p) {
       if (kind && p.kind !== kind) return;
       if (p.kind !== lastKind) {
-        html.push('<div class="unit">' + esc(KIND_LABEL[p.kind] || '试卷') + '</div>');
+        html.push('<div class="unit">' + esc(kindLabels()[p.kind] || '试卷') + '</div>');
         lastKind = p.kind;
       }
       html.push('<button class="lesson' + (p.examId === cur ? ' active' : '') + '" data-id="'

@@ -147,7 +147,7 @@
   }
 
   function cnNum(s) {
-    const m = String(s).match(/第([一二三四五六七八九十百]+)单元/);
+    const m = String(s).match(/第([一二三四五六七八九十百]+)(?:单元|章)/);   // 小学=单元，初中/高中=章
     if (!m) return 99;
     const map = { 一: 1, 二: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9, 十: 10 };
     const t = m[1];
@@ -170,7 +170,7 @@
     const arr = [...m.values()];
     arr.sort((a, b) => a.grade - b.grade || String(a.book).localeCompare(String(b.book), 'zh'));
     arr.forEach(x => x.papers.sort((p, q) => {
-      const order = { unit: 0, midterm: 1, final: 2 };
+      const order = { unit: 0, mid: 1, midterm: 1, fin: 2, final: 2 };
       const ko = (order[p.kind] - order[q.kind]);
       if (ko) return ko;
       const kn = cnNum(p.paper) - cnNum(q.paper);
@@ -181,7 +181,8 @@
   }
 
   function paperLabel(e) {
-    const kind = { unit: '单元卷', midterm: '期中', final: '期末' }[e.kind] || '卷';
+    const unitWord = /章/.test(e.paper || '') ? '章' : '单元';
+    const kind = { unit: unitWord + '卷', mid: '期中', midterm: '期中', fin: '期末', final: '期末' }[e.kind] || '卷';
     return `[${kind}] ${e.paper} · ${e.itemCount} 题 / ${e.fullScore} 分 / ${e.duration} 分钟`;
   }
 

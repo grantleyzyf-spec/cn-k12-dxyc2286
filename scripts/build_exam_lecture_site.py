@@ -37,7 +37,11 @@ def cn_number(text):
 
 def paper_rank(p):
     """卷序：单元卷按单元号升序（第1→第2→…），期中 A/B、期末 A/B 排在单元卷之后。"""
-    kind = {"unit": 0, "mid": 1, "fin": 2}.get(p.get("kind"), 3)
+    # ⚠️ 数据里 kind 有 unit/mid/midterm/fin/final 多种写法，排序一律以卷名判定为准
+    k = p.get("kind")
+    if k not in ("unit", "mid", "fin"):
+        k = kind_of(p.get("paper") or "")
+    kind = {"unit": 0, "mid": 1, "fin": 2}.get(k, 3)
     tail = 0
     if kind in (1, 2):
         tail = {"A": 0, "B": 1}.get((p.get("paper") or "")[-1], 0)
@@ -111,6 +115,7 @@ def main():
                 "paper": e["paper"],
                 "kind": e["kind"],
                 "examId": e["examId"],
+                "words": e.get("words") or han(lec.get("markdown", "")),
                 "markdown": lec.get("markdown", ""),
             })
         json.dump(payload, open(f"{OUT}/{b['path']}", "w", encoding="utf-8"),
