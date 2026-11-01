@@ -25,13 +25,24 @@
 
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-  // 根式：√3 / 2√6 / √(x+1) → 带横线的规范根号（与印刷体一致）
+  // 被开方数内部：a^2 → a²，9/2 → 叠排分数（都画在根号横线之内）
+  const innerMath = (rad) => esc(rad)
+    .replace(/([0-9A-Za-z\u4e00-\u9fa5π²³])\^(-?\d{1,2})/g,
+      (m, b, e) => b + '<sup>' + e.replace('-', '−') + '</sup>')
+    .replace(/(^|[^\d\/])((?:\d+(?:\.\d+)?[²³]?|π|[a-zA-Z]))\s*\/\s*((?:\d+(?:\.\d+)?[²³]?|π|[a-zA-Z]))(?![\d\/])/g,
+      (m, pre, a, b) => {
+        if (!/^[\dπ]/.test(a) && !/^[\dπ]/.test(b)) return m;
+        if (/^[a-zA-Z]$/.test(a) && /^[a-zA-Z]$/.test(b)) return m;
+        return pre + '<span class="frac"><span class="num">' + a + '</span><span class="den">' + b + '</span></span>';
+      });
+  // 根式：√3 / 2√6 / √(x+1) / √a^2 → 带横线的规范根号（与印刷体一致，横线盖住整个被开方数）
   const radify = (s) => String(s == null ? '' : s).replace(
-    /√\s*(?:[\(（]([^()（）]{1,30})[\)）]|([0-9A-Za-z\u4e00-\u9fa5π·×°′″²³\/．.]{1,8}))/g,
-    (m, g1, g2) => '<span class="rad"><span class="sq">√</span><span class="rd">' + esc((g1 || g2 || '').trim()) + '</span></span>');
+    RAD_RE,
+    (m, g1, g2, g3) => '<span class="rad"><span class="sq">√</span><span class="rd">'
+      + innerMath((g1 || ((g2 || '') + (g3 || '')) || '').trim()) + '</span></span>');
   const rich = (s) => radify(s);
   // 渲染后统一把文本节点里的根式换成带横线的规范根号（不改 29 处 esc 调用点，也不误改属性）
-  const RAD_RE = /√\s*(?:[\(（]([^()（）]{1,30})[\)）]|([0-9A-Za-z\u4e00-\u9fa5π·×°′″²³\/．.]{1,8}))/g;
+  const RAD_RE = /√\s*(?:[\(（]([^()（）]{1,30})[\)）]|([0-9A-Za-z\u4e00-\u9fa5π·×°′″²³\/．.]{1,8})(\^[-]?\d{1,2})?)/g;
   const FRAC_RE = /(^|[^\d\/√])((?:\d+(?:\.\d+)?[²³]?|π|[a-zA-Z]|\([^()（）]{1,14}\)))\s*\/\s*((?:\d+(?:\.\d+)?[²³]?|π|[a-zA-Z]|\([^()（）]{1,14}\)))(?![\d\/])/g;
   function radifyDom(root) {
     if (!root) return;
@@ -43,8 +54,8 @@
     while (walker.nextNode()) nodes.push(walker.currentNode);
     nodes.forEach((node) => {
       let html = node.nodeValue;
-      html = html.replace(RAD_RE, (m, g1, g2) => '<span class="rad"><span class="sq">√</span><span class="rd">'
-        + (g1 || g2 || '').trim() + '</span></span>');
+      html = html.replace(RAD_RE, (m, g1, g2, g3) => '<span class="rad"><span class="sq">√</span><span class="rd">'
+        + innerMath((g1 || ((g2 || '') + (g3 || '')) || '').trim()) + '</span></span>');
       html = html.replace(/(向量)\s*([A-Za-z][A-Za-z0-9]{0,3})/g,
         (m, cn, lt) => cn + '<span class="vec">' + lt + '</span>');
       html = html.replace(FRAC_RE, (m, pre, a, b) => {

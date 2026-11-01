@@ -26,12 +26,26 @@
    * # / ## / ### 标题；> 引用（❌✅ 转为对照块）；- [ ] 自查；- 列表；**粗体**；段落 */
   function md2html(md) {
     var lines = md.split('\n'), out = [], i = 0;
-    // 根式：√3、2√6、√(x+1) → 规范根号（横线盖住被开方数，与印刷体一致）
+    // 被开方数内部：a^2 → a²，9/2 → 叠排分数（都画在根号横线之内）
+    function innerMath(rad) {
+      var out = esc(rad);
+      out = out.replace(/([0-9A-Za-z\u4e00-\u9fa5π²³])\^(-?\d{1,2})/g, function (m, b, e) {
+        return b + '<sup>' + e.replace('-', '−') + '</sup>';
+      });
+      out = out.replace(/(^|[^\d\/])((?:\d+(?:\.\d+)?[²³]?|π|[a-zA-Z]))\s*\/\s*((?:\d+(?:\.\d+)?[²³]?|π|[a-zA-Z]))(?![\d\/])/g,
+        function (m, pre, a, b) {
+          if (!/^[\dπ]/.test(a) && !/^[\dπ]/.test(b)) return m;
+          if (/^[a-zA-Z]$/.test(a) && /^[a-zA-Z]$/.test(b)) return m;
+          return pre + '<span class="frac"><span class="num">' + a + '</span><span class="den">' + b + '</span></span>';
+        });
+      return out;
+    }
+    // 根式：√3、2√6、√(x+1)、√a^2 → 规范根号（横线盖住整个被开方数，含幂与分数）
     function radify(t) {
-      return t.replace(/√\s*(?:[\(（]([^()（）]{1,30})[\)）]|([0-9A-Za-z\u4e00-\u9fa5π·×°′″²³\/．.]{1,8}))/g,
-        function (m, g1, g2) {
-          var rad = (g1 || g2 || '').trim();
-          return '<span class="rad"><span class="sq">√</span><span class="rd">' + esc(rad) + '</span></span>';
+      return t.replace(/√\s*(?:[\(（]([^()（）]{1,30})[\)）]|([0-9A-Za-z\u4e00-\u9fa5π·×°′″²³\/．.]{1,8})(\^[-]?\d{1,2})?)/g,
+        function (m, g1, g2, g3) {
+          var rad = (g1 || ((g2 || '') + (g3 || '')) || '').trim();
+          return '<span class="rad"><span class="sq">√</span><span class="rd">' + innerMath(rad) + '</span></span>';
         });
     }
     // 分数：3/8、π/2、x/3、(a+b)/2 → 上下叠排 + 分数线（纯字母比 a/b、单位 km/h 不转）

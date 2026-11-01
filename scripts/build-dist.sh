@@ -9,7 +9,7 @@ rm -rf "$OUT"; mkdir -p "$OUT/data"
 
 cp "$ROOT/index.html" "$ROOT/sw.js" "$ROOT/manifest.webmanifest" "$OUT/"
 for f in robots.txt sitemap.xml; do [ -f "$ROOT/$f" ] && cp "$ROOT/$f" "$OUT/"; done
-cp -a "$ROOT/assets" "$ROOT/explore" "$ROOT/diagnose" "$ROOT/learn" "$ROOT/children" "$ROOT/contact" "$OUT/"
+cp -a "$ROOT/assets" "$ROOT/explore" "$ROOT/diagnose" "$ROOT/learn" "$ROOT/lectures" "$ROOT/children" "$ROOT/contact" "$OUT/"
 
 cp "$ROOT/data/stats.json" "$ROOT/data/cn-curriculum-standards.json" "$OUT/data/"
 [ -f "$ROOT/data/site-config.json" ] && cp "$ROOT/data/site-config.json" "$OUT/data/"

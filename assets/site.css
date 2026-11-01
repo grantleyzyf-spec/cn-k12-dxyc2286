@@ -246,3 +246,8 @@ details.faq p { margin: 8px 0 0; font-size: 14px; color: var(--ink-2); }
   border-top: .12em solid transparent;
   border-bottom: .12em solid transparent;
 }
+
+/* 根号内部的幂与分数（横线之内），字号缩一档避免顶穿根号横线 */
+.rad .rd sup { font-size: .72em; vertical-align: .38em; line-height: 0; }
+.rad .rd .frac { font-size: .78em; vertical-align: middle; margin: 0 .02em; }
+.rad .rd .frac .num, .rad .rd .frac .den { font-size: inherit; }

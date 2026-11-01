@@ -231,7 +231,10 @@ def segments(text, subject="math"):
         toks.append(("text", m.group(1), False, m.start(), m.start(2)))
         toks.append(("vec", m.group(2), False, m.start(2), m.end(2)))
     for m in math_typo.RAD_RE.finditer(text):
-        toks.append(("rad", (m.group(1) or m.group(2) or "").strip(), False, m.start(), m.end()))
+        rad = (m.group(1) or m.group(2) or "").strip()
+        if m.group(3):
+            rad += m.group(3)
+        toks.append(("rad", rad, False, m.start(), m.end()))
     for m in math_typo.FRAC_RE.finditer(text):
         if math_typo._frac_ok(m.group(1), m.group(2)):
             toks.append(("frac", (m.group(1), m.group(2)), False, m.start(), m.end()))
@@ -322,8 +325,17 @@ def html_inline(text, esc, subject="math"):
         if kind == "text":
             buf.append(esc(val))
         elif kind == "rad":
+            inner = ""
+            for k, v in math_typo.radicand_parts(val):
+                if k == "t":
+                    inner += esc(v)
+                elif k == "tsup":
+                    inner += f"{esc(v[0])}<sup>{esc(v[1])}</sup>"
+                else:
+                    inner += ('<span class="frac"><span class="num">' + esc(v[0])
+                              + '</span><span class="den">' + esc(v[1]) + '</span></span>')
             buf.append('<span class="rad"><span class="sq">√</span>'
-                       f'<span class="rd">{esc(val)}</span></span>')
+                       f'<span class="rd">{inner}</span></span>')
         elif kind == "frac":
             buf.append('<span class="frac"><span class="num">' + esc(val[0]) + '</span>'
                        '<span class="den">' + esc(val[1]) + '</span></span>')

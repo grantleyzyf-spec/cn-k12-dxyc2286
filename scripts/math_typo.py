@@ -15,7 +15,7 @@ import re
 
 # √ 后可跟括号组（中文括号也算），或一段 1–8 位的紧凑被开方数
 RAD_RE = re.compile(
-    r"√\s*(?:[\(（]([^()（）]{1,30})[\)）]|([0-9A-Za-z\u4e00-\u9fa5ππ·×°′″²³⁻⁺/．.]{1,8}))"
+    r"√\s*(?:[\(（]([^()（）]{1,30})[\)）]|([0-9A-Za-z\u4e00-\u9fa5ππ·×°′″²³⁻⁺/．.]{1,8})(\^[0-9]{1,2})?)"
 )
 
 _NUM = r"(?:\d+(?:\.\d+)?[²³]?|π|[a-zA-Z]|\([^()（）]{1,14}\)|[²³])"
@@ -53,7 +53,10 @@ def segments(text):
         toks.append(("text", m.start(), m.start(2), m.group(1)))
         toks.append(("vec", m.start(2), m.end(2), m.group(2)))
     for m in RAD_RE.finditer(text):
-        toks.append(("rad", m.start(), m.end(), (m.group(1) or m.group(2) or "").strip()))
+        rad = (m.group(1) or m.group(2) or "").strip()
+        if m.group(3):                      # √a^2 里的 ^2 属于被开方数，不能留在根号外
+            rad += m.group(3)
+        toks.append(("rad", m.start(), m.end(), rad))
     for m in FRAC_RE.finditer(text):
         if _frac_ok(m.group(1), m.group(2)):
             toks.append(("frac", m.start(), m.end(), (m.group(1), m.group(2))))
@@ -71,13 +74,68 @@ def segments(text):
     return out or [("text", text)]
 
 
-def omml_rad(radicand):
-    """OMML 根号（根指数省略，横线盖住被开方数）。"""
-    from xml.sax.saxutils import escape
+SUP_IN = re.compile(r"\^(-?\d{1,2})")
 
+
+def radicand_parts(radicand):
+    """被开方数内部再拆：a^2 → [('t','a'),('sup','2')]；9/2 → [('frac',('9','2'))]。
+    根号划线必须完整盖住整个被开方数，里面还带幂/分数时也必须画在根号里面。"""
+    out = []
+    for seg in re.split(r"(\^\-?\d{1,2})", radicand or ""):
+        if not seg:
+            continue
+        if seg.startswith("^"):
+            out.append(("sup", seg[1:]))
+            continue
+        m = FRAC_RE.search(seg)
+        if m and _frac_ok(m.group(1), m.group(2)):
+            if seg[:m.start()]:
+                out.append(("t", seg[:m.start()]))
+            out.append(("frac", (m.group(1), m.group(2))))
+            if seg[m.end():]:
+                out.append(("t", seg[m.end():]))
+        else:
+            out.append(("t", seg))
+    # 幂次必须挂在**前一个字符**上：OMML 里空基座的 sSup 会被渲染成空白方框
+    merged = []
+    for kind, val in out:
+        if kind == "sup" and merged and merged[-1][0] == "t" and merged[-1][1]:
+            prev = merged[-1][1]
+            merged[-1] = ("t", prev[:-1])
+            if not prev[:-1]:
+                merged.pop()
+            merged.append(("tsup", (prev[-1], val)))
+        else:
+            merged.append((kind, val))
+    return merged or [("t", radicand or "")]
+
+
+def _omml_runs(parts):
+    from xml.sax.saxutils import escape
+    xml = []
+    for kind, val in parts:
+        if kind == "t":
+            xml.append(f'<m:r><m:t xml:space="preserve">{escape(val)}</m:t></m:r>')
+        elif kind == "tsup":
+            base, exp = val
+            xml.append(
+                f'<m:sSup><m:sSupPr/><m:e><m:r><m:t>{escape(base)}</m:t></m:r></m:e>'
+                f'<m:sup><m:r><m:t>{escape(exp)}</m:t></m:r></m:sup></m:sSup>'
+            )
+        else:
+            xml.append(
+                f'<m:f><m:fPr><m:type m:val="bar"/></m:fPr>'
+                f'<m:num><m:r><m:t>{escape(val[0])}</m:t></m:r></m:num>'
+                f'<m:den><m:r><m:t>{escape(val[1])}</m:t></m:r></m:den></m:f>'
+            )
+    return "".join(xml)
+
+
+def omml_rad(radicand):
+    """OMML 根号（根指数省略，横线盖住整个被开方数）。"""
     return (
-        f"<m:oMath {M_NS}><m:rad><m:radPr><m:degHide m:val=\"1\"/></m:radPr><m:deg/>"
-        f"<m:e><m:r><m:t xml:space=\"preserve\">{escape(radicand)}</m:t></m:r></m:e>"
+        f'<m:oMath {M_NS}><m:rad><m:radPr><m:degHide m:val="1"/></m:radPr><m:deg/>'
+        f"<m:e>{_omml_runs(radicand_parts(radicand))}</m:e>"
         f"</m:rad></m:oMath>"
     )
 
