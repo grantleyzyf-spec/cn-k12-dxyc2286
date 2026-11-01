@@ -132,7 +132,7 @@ ck("题干 ≥12 汉字", all(han(q.get("prompt")) >= 12 for q in qs),
 ck("解析 ≥15 汉字", all(han(q.get("explanation")) >= 15 for q in qs),
    [q["id"] for q in qs if han(q.get("explanation")) < 15][:3])
 ck("prompt 与 question 同值", all(q.get("question") == q.get("prompt") for q in qs))
-PLACE = re.compile(r"与本题无关|与.{0,6}无关|不知道|仅在(?:大学|初中|高中)|不属于|以上都(?:不是|对)|\.\.\.|…")
+PLACE = re.compile(r"与本题无关|与所学内容无关|不知道|仅在(?:大学|初中|高中)|不属于(?:本课程|该学科|本学科)|以上都(?:不是|对)|\.\.\.|…")
 ck("选项无占位项/省略号", not [q["id"] for q in qs for o in q.get("options") or [] if PLACE.search(o.get("text") or "")],
    [q["id"] for q in qs for o in q.get("options") or [] if PLACE.search(o.get("text") or "")][:3])
 dist = Counter(q.get("answer") for q in qs if q.get("type") == "choice")
