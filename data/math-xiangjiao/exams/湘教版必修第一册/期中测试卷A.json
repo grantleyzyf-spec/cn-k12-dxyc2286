@@ -1,0 +1,680 @@
+{
+  "book": "湘教版必修第一册",
+  "kind": "mid",
+  "paper": "期中测试卷A",
+  "stage": "高中",
+  "grade": 10,
+  "duration": 120,
+  "fullScore": 150,
+  "scope": [
+    "湘教版必修第一册 第1章 集合与逻辑",
+    "湘教版必修第一册 第2章 一元二次函数、方程和不等式",
+    "湘教版必修第一册 第3章 函数的概念与性质"
+  ],
+  "examId": "mxj_exam_b1_mid_a",
+  "sections": [
+    {
+      "title": "一、单选题（本大题共 8 小题，每小题 5 分，共 40 分）",
+      "items": [
+        {
+          "no": 1,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mxj_h001",
+            "mxj_h1001"
+          ],
+          "stem": "已知集合 A = {x∈Z | -2 < x ≤ 2}，B = {x | x² - 3x = 0}，则 A∩B =（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "{3}"
+            },
+            {
+              "label": "B",
+              "text": "{0, 3}"
+            },
+            {
+              "label": "C",
+              "text": "{0}"
+            },
+            {
+              "label": "D",
+              "text": "{1, 2}"
+            }
+          ],
+          "answer": "C",
+          "analysis": "集合 A 中的整数为 -1、0、1、2；方程 x² - 3x = 0 的根为 0 和 3，故 B = {0, 3}。两个集合的公共元素只有 0，所以 A∩B = {0}。",
+          "itemId": "mxj_exam_b1_mid_a_q01"
+        },
+        {
+          "no": 2,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mxj_h001",
+            "mxj_h1002"
+          ],
+          "stem": "命题 p：∀x∈R，x² + x + 1 > 0，则命题 p 的否定是（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "∃x∈R，x² + x + 1 ≤ 0"
+            },
+            {
+              "label": "B",
+              "text": "∀x∈R，x² + x + 1 ≤ 0"
+            },
+            {
+              "label": "C",
+              "text": "∃x∈R，x² + x + 1 < 0"
+            },
+            {
+              "label": "D",
+              "text": "∀x∈R，x² + x + 1 < 0"
+            }
+          ],
+          "answer": "A",
+          "analysis": "全称量词命题的否定是存在量词命题，且要把结论换成它的否定，即把「大于 0」改为「小于或等于 0」，量词由「任意」改为「存在」，故选 A。",
+          "itemId": "mxj_exam_b1_mid_a_q02"
+        },
+        {
+          "no": 3,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mxj_h1002"
+          ],
+          "stem": "「x > 2」是「x² > 4」的（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "必要不充分条件"
+            },
+            {
+              "label": "B",
+              "text": "充要条件"
+            },
+            {
+              "label": "C",
+              "text": "既不充分也不必要条件"
+            },
+            {
+              "label": "D",
+              "text": "充分不必要条件"
+            }
+          ],
+          "answer": "D",
+          "analysis": "由 x > 2 可以推出 x² > 4，充分性成立；但 x² > 4 的解为 x > 2 或 x < -2，例如 x = -3 时不满足 x > 2，必要性不成立，所以是充分不必要条件。",
+          "itemId": "mxj_exam_b1_mid_a_q03"
+        },
+        {
+          "no": 4,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "topicIds": [
+            "mxj_h002",
+            "mxj_h1003"
+          ],
+          "stem": "已知 a > 0，b > 0，且 a + b = 4，则 ab 的最大值为（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "2"
+            },
+            {
+              "label": "B",
+              "text": "4"
+            },
+            {
+              "label": "C",
+              "text": "8"
+            },
+            {
+              "label": "D",
+              "text": "16"
+            }
+          ],
+          "answer": "B",
+          "analysis": "由基本不等式，a + b ≥ 2√(ab)，即 4 ≥ 2√(ab)，所以 √(ab) ≤ 2，ab ≤ 4。当且仅当 a = b = 2 时取等号，故最大值是 4。",
+          "itemId": "mxj_exam_b1_mid_a_q04"
+        },
+        {
+          "no": 5,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "topicIds": [
+            "mxj_h002",
+            "mxj_h1005"
+          ],
+          "stem": "不等式 -x² + 4x - 3 > 0 的解集是（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "(-∞, 1)∪(3, +∞)"
+            },
+            {
+              "label": "B",
+              "text": "(1, 3)"
+            },
+            {
+              "label": "C",
+              "text": "(1, +∞)"
+            },
+            {
+              "label": "D",
+              "text": "(-3, -1)"
+            }
+          ],
+          "answer": "B",
+          "analysis": "两边同乘 -1 并改变不等号方向，得 x² - 4x + 3 < 0，即 (x - 1)(x - 3) < 0，解得 1 < x < 3，所以解集是区间 (1, 3)。",
+          "itemId": "mxj_exam_b1_mid_a_q05"
+        },
+        {
+          "no": 6,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "topicIds": [
+            "mxj_h003",
+            "mxj_h1006"
+          ],
+          "stem": "函数 f(x) = √(x - 1) + 1/(x - 3) 的定义域是（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "[1, +∞)"
+            },
+            {
+              "label": "B",
+              "text": "(1, 3)∪(3, +∞)"
+            },
+            {
+              "label": "C",
+              "text": "(3, +∞)"
+            },
+            {
+              "label": "D",
+              "text": "[1, 3)∪(3, +∞)"
+            }
+          ],
+          "answer": "D",
+          "analysis": "被开方数非负，得 x - 1 ≥ 0，即 x ≥ 1；分母不为零，得 x ≠ 3。两个条件同时满足，定义域为 [1, 3)∪(3, +∞)。",
+          "itemId": "mxj_exam_b1_mid_a_q06"
+        },
+        {
+          "no": 7,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "topicIds": [
+            "mxj_h003",
+            "mxj_h1007"
+          ],
+          "stem": "已知 f(x) 是定义在 R 上的奇函数，当 x > 0 时 f(x) = x² - 2x，则 f(-1) =（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "-1"
+            },
+            {
+              "label": "B",
+              "text": "1"
+            },
+            {
+              "label": "C",
+              "text": "3"
+            },
+            {
+              "label": "D",
+              "text": "-3"
+            }
+          ],
+          "answer": "B",
+          "analysis": "先求正数处的函数值：f(1) = 1 - 2 = -1。因为 f(x) 是奇函数，所以 f(-1) = -f(1) = 1。",
+          "itemId": "mxj_exam_b1_mid_a_q07"
+        },
+        {
+          "no": 8,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "topicIds": [
+            "mxj_h1006"
+          ],
+          "stem": "已知函数 f(x) = { x + 1（x ≤ 0）；x²（x > 0）}，则 f(f(-2)) 的值为（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "0"
+            },
+            {
+              "label": "B",
+              "text": "1"
+            },
+            {
+              "label": "C",
+              "text": "4"
+            },
+            {
+              "label": "D",
+              "text": "-1"
+            }
+          ],
+          "answer": "A",
+          "analysis": "内层 -2 ≤ 0，用第一段解析式，f(-2) = -2 + 1 = -1。再代入外层，-1 ≤ 0，f(-1) = -1 + 1 = 0，所以 f(f(-2)) = 0。",
+          "itemId": "mxj_exam_b1_mid_a_q08"
+        }
+      ]
+    },
+    {
+      "title": "二、多选题（本大题共 4 小题，每小题 5 分，共 20 分；全部选对得 5 分，部分选对得 2 分）",
+      "items": [
+        {
+          "no": 9,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "standard",
+          "topicIds": [
+            "mxj_h001",
+            "mxj_h1001"
+          ],
+          "stem": "设全集 U = R，A = {x | x < 2}，B = {x | x ≥ -1}，则下列结论正确的是（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "A∪B = R"
+            },
+            {
+              "label": "B",
+              "text": "A∩B = {x | -1 ≤ x < 2}"
+            },
+            {
+              "label": "C",
+              "text": "∁U A = {x | x ≥ 2}"
+            },
+            {
+              "label": "D",
+              "text": "A∩B = ∅"
+            }
+          ],
+          "answer": "ABC",
+          "analysis": "A 与 B 合起来覆盖了整个数轴，A 正确；公共部分是 -1 ≤ x < 2，B 正确而 D 错误；A 的补集是不小于 2 的实数，C 正确。",
+          "itemId": "mxj_exam_b1_mid_a_q09"
+        },
+        {
+          "no": 10,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "standard",
+          "topicIds": [
+            "mxj_h002",
+            "mxj_h1003"
+          ],
+          "stem": "设实数 a，b 满足 a < b < 0，则下列不等式恒成立的是（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "a² > b²"
+            },
+            {
+              "label": "B",
+              "text": "1/a > 1/b"
+            },
+            {
+              "label": "C",
+              "text": "ac² < bc²"
+            },
+            {
+              "label": "D",
+              "text": "|a| > |b|"
+            }
+          ],
+          "answer": "ABD",
+          "analysis": "两个负数中绝对值大的反而小，故 a² > b²、|a| > |b| 都成立；同号取倒数要变号，1/a > 1/b 成立；C 中当 c = 0 时两边相等，不一定成立。",
+          "itemId": "mxj_exam_b1_mid_a_q10"
+        },
+        {
+          "no": 11,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "standard",
+          "topicIds": [
+            "mxj_h003",
+            "mxj_h1007"
+          ],
+          "stem": "下列函数中，既是偶函数又在区间 (0, +∞) 上单调递增的是（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "y = x²"
+            },
+            {
+              "label": "B",
+              "text": "y = |x| + 1"
+            },
+            {
+              "label": "C",
+              "text": "y = 1/x²"
+            },
+            {
+              "label": "D",
+              "text": "y = x³"
+            }
+          ],
+          "answer": "AB",
+          "analysis": "y = x² 与 y = |x| + 1 的图象都关于 y 轴对称，且在 y 轴右侧上升，符合要求；y = 1/x² 在 (0, +∞) 上递减；y = x³ 是奇函数。",
+          "itemId": "mxj_exam_b1_mid_a_q11"
+        },
+        {
+          "no": 12,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "hard",
+          "topicIds": [
+            "mxj_h003",
+            "mxj_h1007"
+          ],
+          "stem": "已知函数 f(x) = x² - 2ax + 3 在区间 [1, +∞) 上单调递增，则实数 a 的值可以是（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "-1"
+            },
+            {
+              "label": "B",
+              "text": "0"
+            },
+            {
+              "label": "C",
+              "text": "2"
+            },
+            {
+              "label": "D",
+              "text": "1"
+            }
+          ],
+          "answer": "ABD",
+          "analysis": "抛物线开口向上，对称轴为 x = a。要在 [1, +∞) 上递增，只需对称轴不在区间内部，即 a ≤ 1。四个选项中 -1、0、1 都不大于 1，2 不满足。",
+          "itemId": "mxj_exam_b1_mid_a_q12"
+        }
+      ]
+    },
+    {
+      "title": "三、填空题（本大题共 4 小题，每小题 5 分，共 20 分）",
+      "items": [
+        {
+          "no": 13,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "topicIds": [
+            "mxj_h001",
+            "mxj_h1001"
+          ],
+          "stem": "已知集合 A = {1, 2}，B = {1, a}，若 A = B，则实数 a = ____。",
+          "answer": "2",
+          "analysis": "两个集合相等，则它们的元素完全相同。A 中已有 1，还缺 2，所以 B 中的 a 必须等于 2，此时 B = {1, 2} = A。",
+          "itemId": "mxj_exam_b1_mid_a_q13"
+        },
+        {
+          "no": 14,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "topicIds": [
+            "mxj_h002",
+            "mxj_h1005"
+          ],
+          "stem": "不等式 x² - 5x + 6 ≤ 0 的解集为 ____。",
+          "answer": "[2, 3]",
+          "analysis": "因式分解得 (x - 2)(x - 3) ≤ 0，对应的二次函数开口向上，函数值不大于零的部分在两根之间，故解集为闭区间 [2, 3]。",
+          "itemId": "mxj_exam_b1_mid_a_q14"
+        },
+        {
+          "no": 15,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "standard",
+          "topicIds": [
+            "mxj_h003",
+            "mxj_h1007"
+          ],
+          "stem": "函数 f(x) = x² + 2x 在区间 [-1, 2] 上的最小值为 ____。",
+          "answer": "-1",
+          "analysis": "配方得 f(x) = (x + 1)² - 1，对称轴 x = -1 正好是区间左端点。函数在 [-1, 2] 上递增，所以最小值在 x = -1 处取得，为 -1。",
+          "itemId": "mxj_exam_b1_mid_a_q15"
+        },
+        {
+          "no": 16,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "standard",
+          "topicIds": [
+            "mxj_h1002"
+          ],
+          "stem": "「x > 1」是「x² > x」的 ____ 条件（填「充分不必要」「必要不充分」「充要」或「既不充分也不必要」）。",
+          "answer": "充分不必要",
+          "analysis": "由 x > 1 得 x(x - 1) > 0，即 x² > x，充分性成立；而 x² > x 的解为 x < 0 或 x > 1，取 x = -1 不满足 x > 1，必要性不成立。",
+          "itemId": "mxj_exam_b1_mid_a_q16"
+        }
+      ]
+    },
+    {
+      "title": "四、解答题（本大题共 6 小题，共 70 分，解答应写出文字说明、证明过程或演算步骤）",
+      "items": [
+        {
+          "no": 17,
+          "score": 10,
+          "type": "solve",
+          "difficulty": "standard",
+          "topicIds": [
+            "mxj_h001",
+            "mxj_h1001",
+            "mxj_h1005"
+          ],
+          "stem": "已知集合 A = {x | -1 ≤ x ≤ 3}，B = {x | x² - 5x + 4 < 0}。\n(1) 求 A∩B 与 A∪B；\n(2) 若 C = {x | x < a}，且 A ⊆ C，求实数 a 的取值范围。",
+          "answer": "(1) A∩B = (1, 3]，A∪B = [-1, 4)；(2) a > 3",
+          "analysis": "先解不等式把 B 化成区间 (1, 4)，再在数轴上取公共部分与并集；A 是闭区间，要整个落在 x < a 内，必须让右端点 3 严格小于 a。",
+          "scoreRule": [
+            {
+              "step": "解 x² - 5x + 4 < 0 得 1 < x < 4，即 B = (1, 4)",
+              "score": 3
+            },
+            {
+              "step": "在数轴上取交、并，得 A∩B = (1, 3]，A∪B = [-1, 4)",
+              "score": 3
+            },
+            {
+              "step": "A ⊆ C 要求 A 的最大元素 3 满足 3 < a",
+              "score": 2
+            },
+            {
+              "step": "故 a 的取值范围是 a > 3",
+              "score": 2
+            }
+          ],
+          "itemId": "mxj_exam_b1_mid_a_q17"
+        },
+        {
+          "no": 18,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "standard",
+          "topicIds": [
+            "mxj_h002",
+            "mxj_h1004",
+            "mxj_h1007"
+          ],
+          "stem": "已知函数 f(x) = x² - 2x + 3。\n(1) 求 f(x) 在区间 [0, 3] 上的最大值与最小值；\n(2) 若 f(x) 在区间 [a, a + 1] 上单调递减，求实数 a 的取值范围。",
+          "answer": "(1) 最小值 2，最大值 6；(2) a ≤ 0",
+          "analysis": "配方得 f(x) = (x - 1)² + 2，对称轴 x = 1 落在 [0, 3] 内，顶点处取最小值；再比较两个端点处的函数值确定最大值。单调递减要求整个区间都在对称轴左侧。",
+          "scoreRule": [
+            {
+              "step": "配方得 f(x) = (x - 1)² + 2，对称轴为 x = 1",
+              "score": 2
+            },
+            {
+              "step": "x = 1 在 [0, 3] 内，最小值为 f(1) = 2",
+              "score": 3
+            },
+            {
+              "step": "端点值 f(0) = 3，f(3) = 6，故最大值为 6",
+              "score": 3
+            },
+            {
+              "step": "在 [a, a + 1] 上递减，需 a + 1 ≤ 1",
+              "score": 2
+            },
+            {
+              "step": "解得 a ≤ 0",
+              "score": 2
+            }
+          ],
+          "itemId": "mxj_exam_b1_mid_a_q18"
+        },
+        {
+          "no": 19,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "standard",
+          "topicIds": [
+            "mxj_h002",
+            "mxj_h1003",
+            "mxj_h1005"
+          ],
+          "stem": "用长为 40 m 的篱笆围成一个一边靠墙的矩形菜地，墙足够长，设与墙垂直的一边长为 x m。\n(1) 写出菜地面积 S（单位：m²）关于 x 的函数关系式，并写出 x 的取值范围；\n(2) 当 x 为何值时菜地面积最大？最大面积是多少？",
+          "answer": "(1) S = -2x² + 40x（0 < x < 20）；(2) x = 10 时面积最大，最大面积为 200 m²",
+          "analysis": "与墙垂直的两边各用 x m，与墙平行的一边用 (40 - 2x) m，其长度必须为正。面积是开口向下的二次函数，在顶点处取得最大值。",
+          "scoreRule": [
+            {
+              "step": "与墙平行的一边长为 40 - 2x，且 40 - 2x > 0",
+              "score": 3
+            },
+            {
+              "step": "S = x(40 - 2x) = -2x² + 40x，定义域为 0 < x < 20",
+              "score": 3
+            },
+            {
+              "step": "配方得 S = -2(x - 10)² + 200",
+              "score": 3
+            },
+            {
+              "step": "x = 10 在定义域内，此时 S 取最大值 200",
+              "score": 3
+            }
+          ],
+          "itemId": "mxj_exam_b1_mid_a_q19"
+        },
+        {
+          "no": 20,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "standard",
+          "topicIds": [
+            "mxj_h003",
+            "mxj_h1006",
+            "mxj_h1007"
+          ],
+          "stem": "已知函数 f(x) = x + 4/x。\n(1) 判断 f(x) 的奇偶性，并说明理由；\n(2) 用定义证明 f(x) 在区间 (2, +∞) 上单调递增。",
+          "answer": "(1) 奇函数；(2) 证明见解析",
+          "analysis": "定义域关于原点对称，且 f(-x) = -f(x)，所以是奇函数。证明单调性时作差，通分后判断符号：2 < x1 < x2 时 x1 - x2 < 0，x1x2 > 4，差的符号为正，故函数递增。",
+          "scoreRule": [
+            {
+              "step": "定义域为 {x | x ≠ 0}，关于原点对称",
+              "score": 2
+            },
+            {
+              "step": "f(-x) = -x - 4/x = -(x + 4/x) = -f(x)，故为奇函数",
+              "score": 4
+            },
+            {
+              "step": "设 2 < x1 < x2，则 f(x1) - f(x2) = (x1 - x2)(x1x2 - 4)/(x1x2)",
+              "score": 3
+            },
+            {
+              "step": "由 x1 - x2 < 0，x1x2 > 4 得 f(x1) - f(x2) < 0，故在 (2, +∞) 上递增",
+              "score": 3
+            }
+          ],
+          "itemId": "mxj_exam_b1_mid_a_q20"
+        },
+        {
+          "no": 21,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "hard",
+          "topicIds": [
+            "mxj_h002",
+            "mxj_h1005",
+            "mxj_h1007"
+          ],
+          "stem": "已知不等式 x² - 2ax + 4 > 0。\n(1) 若该不等式对任意实数 x 恒成立，求实数 a 的取值范围；\n(2) 若该不等式对任意 x∈[1, 3] 恒成立，求实数 a 的取值范围。",
+          "answer": "(1) -2 < a < 2；(2) a < 2",
+          "analysis": "在全体实数上恒成立，只需判别式小于零；在闭区间上恒成立，可以分离参数，把问题化为 a 小于 x/2 + 2/x 在 [1, 3] 上的最小值，再用基本不等式求最小值。",
+          "scoreRule": [
+            {
+              "step": "(1) 开口向上，需判别式 4a² - 16 < 0",
+              "score": 3
+            },
+            {
+              "step": "解得 -2 < a < 2",
+              "score": 2
+            },
+            {
+              "step": "(2) 由 x > 0，原不等式等价于 2a < x + 4/x",
+              "score": 2
+            },
+            {
+              "step": "x ∈ [1, 3] 时 x + 4/x ≥ 2√4 = 4，当 x = 2 时取等号",
+              "score": 3
+            },
+            {
+              "step": "故 2a < 4，即 a < 2",
+              "score": 2
+            }
+          ],
+          "itemId": "mxj_exam_b1_mid_a_q21"
+        },
+        {
+          "no": 22,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "hard",
+          "topicIds": [
+            "mxj_h003",
+            "mxj_h1006",
+            "mxj_h1007"
+          ],
+          "stem": "已知函数 f(x) = x/(1 + x²)。\n(1) 判断 f(x) 的奇偶性；\n(2) 判断 f(x) 在区间 [1, +∞) 上的单调性，并用定义证明；\n(3) 求 f(x) 在区间 [1, 2] 上的值域。",
+          "answer": "(1) 奇函数；(2) 在 [1, +∞) 上单调递减；(3) [2/5, 1/2]",
+          "analysis": "分子分母的幂次决定了 f(-x) = -f(x)，是奇函数。作差通分后分子含因式 (1 - x1x2)，当两个自变量都不小于 1 时该因式为负，从而函数递减；由单调性可直接写出值域。",
+          "scoreRule": [
+            {
+              "step": "定义域为 R，f(-x) = -x/(1 + x²) = -f(x)，故为奇函数",
+              "score": 3
+            },
+            {
+              "step": "设 1 ≤ x1 < x2，作差得 f(x1) - f(x2) = (x1 - x2)(1 - x1x2)/((1 + x1²)(1 + x2²))",
+              "score": 3
+            },
+            {
+              "step": "由 x1 - x2 < 0，1 - x1x2 < 0 知差为正，故函数递减",
+              "score": 3
+            },
+            {
+              "step": "f(1) = 1/2，f(2) = 2/5，结合递减得值域为 [2/5, 1/2]",
+              "score": 3
+            }
+          ],
+          "itemId": "mxj_exam_b1_mid_a_q22"
+        }
+      ]
+    }
+  ]
+}
