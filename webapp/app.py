@@ -28,6 +28,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(ROOT)
+_CN = {"一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "八": 8, "九": 9}
 D = os.path.join(REPO, "data", "math")
 STATIC = os.path.join(ROOT, "static")
 DB = os.path.join(D, "attempts.db")
@@ -68,7 +69,30 @@ def papers():
                         "stage": ex["stage"], "scope": ex.get("scope") or [],
                         "itemCount": sum(len(s["items"]) for s in ex["sections"])})
     order = {"unit": 0, "midterm": 1, "final": 2}
-    out.sort(key=lambda x: (x["book"], order.get(x["kind"], 9), x["paper"]))
+    # ⚠️ 中文卷名不能按字符排：'一'<'三'<'二'<'五'<'四'（按码点），
+    #    必须把「第X单元/第X章」解析成数字；册次也要按年级册序而不是字符串。
+    book_order = {b: i for i, b in enumerate([
+        "一年级上册", "一年级下册", "二年级上册", "二年级下册",
+        "三年级上册", "三年级下册", "四年级上册", "五年级上册", "六年级上册",
+        "七年级上册", "七年级下册", "八年级上册", "八年级下册", "九年级上册",
+        "必修第一册", "必修第二册",
+        "选择性必修第一册", "选择性必修第二册", "选择性必修第三册"])}
+
+    def cn_number(text):
+        m = re.search(r"第([一二三四五六七八九十]+)", text or "")
+        if not m:
+            return 99
+        t = m.group(1)
+        if "十" not in t:
+            return _CN.get(t, 99)
+        head, _, tail = t.partition("十")
+        return (_CN.get(head, 1) if head else 1) * 10 + (_CN.get(tail, 0) if tail else 0)
+
+    def tail_rank(x):
+        return {"A": 0, "B": 1}.get((x.get("paper") or "")[-1], 0) if order.get(x["kind"], 9) else 0
+
+    out.sort(key=lambda x: (book_order.get(x["book"], 99), order.get(x["kind"], 9),
+                            cn_number(x["paper"]), tail_rank(x), x["paper"]))
     return out
 
 
