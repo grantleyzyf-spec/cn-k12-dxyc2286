@@ -9,11 +9,13 @@ on:
   push:
     paths:
       - 'data/mental-health/**/*.json'
+      - 'data/mental-health/**/*.py'
       - 'scripts/test_mental_health.py'
       - '.github/workflows/validate-mental-health.yml'
   pull_request:
     paths:
       - 'data/mental-health/**/*.json'
+      - 'data/mental-health/**/*.py'
       - 'scripts/test_mental_health.py'
       - '.github/workflows/validate-mental-health.yml'
   workflow_dispatch:
