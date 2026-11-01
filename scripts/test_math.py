@@ -138,8 +138,11 @@ ck("numeric 题都有 verify", all(q.get("verify") for q in qs if q.get("type") 
 import collections, difflib
 
 types_cnt = collections.Counter(q["type"] for q in qs)
-ck("每点恰好 5 题", all(len(v) == 5 for v in by_topic_cnt.values()),
-   [k for k, v in by_topic_cnt.items() if len(v) != 5][:5])
+ck("每点 ≥5 题", all(len(v) >= 5 for v in by_topic_cnt.values()),
+   [k for k, v in by_topic_cnt.items() if len(v) < 5][:5])
+ck("课时点 ≥8 题（题库加深后）",
+   all(len(v) >= 8 for k, v in by_topic_cnt.items() if " · " in T[k].get("chapter", "")),
+   [k for k, v in by_topic_cnt.items() if " · " in T[k].get("chapter", "") and len(v) < 8][:5])
 ck("题型四类齐备", set(types_cnt) == {"choice", "fill", "numeric", "short-answer"}, dict(types_cnt))
 ck("每点至少 3 种题型", all(len({q["type"] for q in v}) >= 3 for v in by_topic_cnt.values()),
    [k for k, v in by_topic_cnt.items() if len({q["type"] for q in v}) < 3][:5])
