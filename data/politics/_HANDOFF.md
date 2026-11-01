@@ -6,8 +6,8 @@
 
 | 产物 | 说明 |
 | --- | --- |
-| `data/politics/_inventory.json` | 21 册 / 教材单元 78（义教 57 ＋ 高中 21）/ 高中课 58 / 高中框 135 / 综合探究 21（不建点） |
-| `data/politics/topics.json` | **435 点**（unit 115 ＝ 义教 57 单元 ＋ 高中 58 课；lesson 320 ＝ 义教 185 课 ＋ 高中 135 框），id `pol_p001…pol_p435`；已挂课标引文 **489 条** |
+| `data/politics/_inventory.json` | 21 册 / 教材单元 78（义教 57 ＋ 高中 21）/ 高中课 58 / 高中框 135 / 综合探究 20（不建点） |
+| `data/politics/topics.json` | **435 点**（领域：道德 132 ／ 政治认同 128 ／ 法治 94 ／ 哲学 63 ／ 经济 18）（unit 115 ＝ 义教 57 单元 ＋ 高中 58 课；lesson 320 ＝ 义教 185 课 ＋ 高中 135 框），id `pol_p001…pol_p435`；已挂课标引文 **489 条** |
 | `data/politics/dependencies.json` | **646 边**（hard 576 ／ soft 70）：课/单元→框 hard、框内顺次 hard、课顺次 hard、单元衔接 soft |
 | `data/politics/questions.json` | **3135 题**（全 choice，435 点每点 8/5，答案位 A794·B804·C779·D758） |
 | `data/politics/_standards_src/` | 课标快照（义教 134 条 / 高中 65 条）＋ `unit_map.json`（115 个单元点人工定标） |
@@ -17,6 +17,7 @@
 | `scripts/ddfz_hs_rebuild.py` | 高中 7 册结构重建（`--show` 看结构 / `--write` 落盘），读 PDF 目录页 |
 | `scripts/ddfz_standards.py` | 课标回表（`--rebuild-src` / `--write`），含逐字回表校验 |
 | `scripts/ddfz_audit.py` | 结构体检（目录点／框号／占位字段） |
+| `scripts/ddfz_domain_fix.py` | 义教 domain 重挂（幂等，`--write` 落盘） |
 | `scripts/ddfz_make_shards.py` | 切分片 + 派单（57 片 / 3135 题） |
 | `scripts/ddfz_merge_bank.py` | 合并分片 + 回写 diagnostic_question + schema 校验 |
 | `scripts/test_politics.py` | 39 项不变量自检（结构/课标/题库） |
@@ -46,7 +47,7 @@
 
 - 教材缺 4 册：四下、五下、六下、九下（无 PDF，不造点）
 - 字段占位：435 点的 `description`＝`name`，`mastery_criteria`/`diagnostic_question` 全为同一模板 ⇒ 第 2–4 步逐点重写
-- 高中 `综合探究`（21 个）不建点，只留在盘点表
+- 高中 `综合探究`（20 个）不建点，只留在盘点表
 - 引文语义精度分层：`partial` 是同主题块词面择优（抽样约 8–9 成贴题），`inferred` 是继承单元上位条目；逐句精确须人工逐条审定 320 个课时点
 - 高中按「课＝单元点、框＝课时点」入图；若改按课诊断，只动 `level` 一处
 
