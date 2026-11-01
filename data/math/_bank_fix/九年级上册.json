@@ -1,0 +1,620 @@
+[
+ {
+  "id": "mat_p1274_q7",
+  "topicId": "mat_p1274",
+  "prompt": "若 A(1,a)、B(2,b)、C(-4,c) 三点都在双曲线 y=-8/x 上，则 a、b、c 从小到大的排列顺序是（　　）",
+  "question": "若 A(1,a)、B(2,b)、C(-4,c) 三点都在双曲线 y=-8/x 上，则 a、b、c 从小到大的排列顺序是（　　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "a<b<c"
+   },
+   {
+    "label": "B",
+    "text": "c<b<a"
+   },
+   {
+    "label": "C",
+    "text": "b<a<c"
+   },
+   {
+    "label": "D",
+    "text": "a<c<b"
+   }
+  ],
+  "choices": [
+   {
+    "label": "A",
+    "text": "a<b<c"
+   },
+   {
+    "label": "B",
+    "text": "c<b<a"
+   },
+   {
+    "label": "C",
+    "text": "b<a<c"
+   },
+   {
+    "label": "D",
+    "text": "a<c<b"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "把三个横坐标分别代入：a=-8/1=-8，b=-8/2=-4，c=-8/(-4)=2。三点中 A、B 落在第四象限的那一支，函数值随 x 增大而增大，故 -8<-4；C 在第二象限，函数值为正，最大。所以 a<b<c，选 A。不能只凭横坐标大小直接比较，因为三个点并不在同一支上。",
+  "subject": "math",
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1267_q8",
+  "topicId": "mat_p1267",
+  "prompt": "若一元二次方程 x²+4x+c=0 的判别式等于零，则 c 的取值是（　）",
+  "question": "若一元二次方程 x²+4x+c=0 的判别式等于零，则 c 的取值是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "4"
+   },
+   {
+    "label": "B",
+    "text": "-4"
+   },
+   {
+    "label": "C",
+    "text": "2"
+   },
+   {
+    "label": "D",
+    "text": "16"
+   }
+  ],
+  "choices": [
+   {
+    "label": "A",
+    "text": "4"
+   },
+   {
+    "label": "B",
+    "text": "-4"
+   },
+   {
+    "label": "C",
+    "text": "2"
+   },
+   {
+    "label": "D",
+    "text": "16"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "判别式 Δ=b²-4ac=4²-4×1×c=16-4c。由 Δ=0 得 16-4c=0，解得 c=4。此时原方程为 x²+4x+4=0，即 (x+2)²=0，根为 x₁=x₂=-2，确为两个相等的实数根，检验通过。若误取 c=-4，则 Δ=32>0，方程有两个不相等的实根。",
+  "subject": "math",
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1273_q8",
+  "topicId": "mat_p1273",
+  "prompt": "已知 y=k/x²，当 x=1 时 y=8，那么 x=2 时对应的 y 值是____。",
+  "question": "已知 y=k/x²，当 x=1 时 y=8，那么 x=2 时对应的 y 值是____。",
+  "options": [],
+  "choices": [],
+  "answer": "2",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "由 x=1 时 y=8 得 8=k/1²，所以 k=8，关系式为 y=8/x²。当 x=2 时 y=8/4=2。也可从变化趋势直接看：x 由 1 增大到 2 时，x² 由 1 增大到 4，是原来的 4 倍，反比例关系下 y 就变为原来的四分之一，即 8÷4=2。切不要因为 x 只翻了一倍就认为 y 也减半。",
+  "subject": "math",
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1282_q8",
+  "topicId": "mat_p1282",
+  "prompt": "一个等边三角形的内切圆半径为 2，则这个三角形的边长是（　）",
+  "question": "一个等边三角形的内切圆半径为 2，则这个三角形的边长是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "2√3"
+   },
+   {
+    "label": "B",
+    "text": "4"
+   },
+   {
+    "label": "C",
+    "text": "4√3"
+   },
+   {
+    "label": "D",
+    "text": "6"
+   }
+  ],
+  "choices": [
+   {
+    "label": "A",
+    "text": "2√3"
+   },
+   {
+    "label": "B",
+    "text": "4"
+   },
+   {
+    "label": "C",
+    "text": "4√3"
+   },
+   {
+    "label": "D",
+    "text": "6"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "等边三角形的内切圆半径是边长的 √3/6 倍，即 r=a√3/6，反过来 a=6r/√3=2√3·r。代入 r=2 得 a=4√3。也可由高 h=a√3/2 与内心分高为 1∶2 说明 r=h/3，故 h=6 与 a=4√3 一致。若直接取 r×2 得 4，是把半径当成了高的三分之一以外的量。",
+  "subject": "math",
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1281_q6",
+  "topicId": "mat_p1281",
+  "prompt": "⊙O 的直径是 10，圆心 O 到直线 m 的距离为 5，则直线 m 与 ⊙O 的位置关系是（　）",
+  "question": "⊙O 的直径是 10，圆心 O 到直线 m 的距离为 5，则直线 m 与 ⊙O 的位置关系是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "相离"
+   },
+   {
+    "label": "B",
+    "text": "相切"
+   },
+   {
+    "label": "C",
+    "text": "相交"
+   },
+   {
+    "label": "D",
+    "text": "相离或相切"
+   }
+  ],
+  "choices": [
+   {
+    "label": "A",
+    "text": "相离"
+   },
+   {
+    "label": "B",
+    "text": "相切"
+   },
+   {
+    "label": "C",
+    "text": "相交"
+   },
+   {
+    "label": "D",
+    "text": "相离或相切"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "先由直径 10 求出半径 r=5。圆心到直线的距离 d=5 与半径相等，即 d=r，此时直线与圆只有一个公共点，位置关系是相切。若忘记把直径化为半径，会误以为 d<r 而答成相交。判断的关键始终是比较 d 与 r 的大小关系。",
+  "subject": "math",
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1268_q8",
+  "topicId": "mat_p1268",
+  "prompt": "某商品经过连续两次幅度相同的降价后，售价比原价降低了 19%，则每次降价的百分率是____。",
+  "question": "某商品经过连续两次幅度相同的降价后，售价比原价降低了 19%，则每次降价的百分率是____。",
+  "options": [],
+  "choices": [],
+  "answer": "10%",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "设每次降价的百分率为 x，则连续两次降价后售价是原价的 (1-x)²。售价比原价降低 19%，说明售价是原价的 81%，所以 (1-x)²=0.81。因为 1-x>0，取 1-x=0.9，得 x=0.1，即每次降价 10%。若直接把 19% 平均分成两次各 9.5%，是忽略了第二次降价是在已降价基础上进行的。",
+  "subject": "math",
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_q813",
+  "topicId": "mat_p907",
+  "prompt": "在 y=5x-2、y=3x²+1/x、y=(x+1)(x-3)、y=x³-2x 这四个式子中，属于二次函数的是（　）",
+  "question": "在 y=5x-2、y=3x²+1/x、y=(x+1)(x-3)、y=x³-2x 这四个式子中，属于二次函数的是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "y=5x-2"
+   },
+   {
+    "label": "B",
+    "text": "y=3x²+1/x"
+   },
+   {
+    "label": "C",
+    "text": "y=(x+1)(x-3)"
+   },
+   {
+    "label": "D",
+    "text": "y=x³-2x"
+   }
+  ],
+  "choices": [
+   {
+    "label": "A",
+    "text": "y=5x-2"
+   },
+   {
+    "label": "B",
+    "text": "y=3x²+1/x"
+   },
+   {
+    "label": "C",
+    "text": "y=(x+1)(x-3)"
+   },
+   {
+    "label": "D",
+    "text": "y=x³-2x"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "二次函数必须能整理成 y=ax²+bx+c 且 a≠0 的形式。y=5x-2 是一次函数；y=3x²+1/x 含自变量在分母上的项，不是整式函数；y=x³-2x 中自变量的最高次数是 3，是三次函数；只有 y=(x+1)(x-3)=x²-2x-3 化简后二次项系数为 1，符合定义，故选 C。",
+  "subject": "math",
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1267_q1",
+  "topicId": "mat_p1267",
+  "prompt": "一元二次方程 x²-10x+21=0 经过配方后可变形为（　）",
+  "question": "一元二次方程 x²-10x+21=0 经过配方后可变形为（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "(x-5)²=4"
+   },
+   {
+    "label": "B",
+    "text": "(x-5)²=25"
+   },
+   {
+    "label": "C",
+    "text": "(x+5)²=4"
+   },
+   {
+    "label": "D",
+    "text": "(x-10)²=79"
+   }
+  ],
+  "choices": [
+   {
+    "label": "A",
+    "text": "(x-5)²=4"
+   },
+   {
+    "label": "B",
+    "text": "(x-5)²=25"
+   },
+   {
+    "label": "C",
+    "text": "(x+5)²=4"
+   },
+   {
+    "label": "D",
+    "text": "(x-10)²=79"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "把常数项移到右边得 x²-10x=-21，两边同时加上一次项系数一半的平方 5²=25，得 x²-10x+25=4，左边配成完全平方式即 (x-5)²=4。若只在右边加 25 而不把 21 移项，会错写成 (x-5)²=25 一类的式子，因此移项与补项的顺序必须走完整。",
+  "subject": "math",
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1280_q1",
+  "topicId": "mat_p1280",
+  "prompt": "一条弧所在圆的半径为 3，它所对的圆心角为 240°，则这条弧的长是（　）",
+  "question": "一条弧所在圆的半径为 3，它所对的圆心角为 240°，则这条弧的长是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "3π"
+   },
+   {
+    "label": "B",
+    "text": "4π"
+   },
+   {
+    "label": "C",
+    "text": "6π"
+   },
+   {
+    "label": "D",
+    "text": "8π"
+   }
+  ],
+  "choices": [
+   {
+    "label": "A",
+    "text": "3π"
+   },
+   {
+    "label": "B",
+    "text": "4π"
+   },
+   {
+    "label": "C",
+    "text": "6π"
+   },
+   {
+    "label": "D",
+    "text": "8π"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "由弧长公式 l=nπR/180 得 l=240π×3/180=4π。也可用比例理解：240° 是整个圆周的 240/360=2/3，而圆周长 2πR=6π，所以弧长为 6π×2/3=4π。两个算法结果一致，选 B；误用 R=3 当直径或把 240° 当成 90° 等都会得到别的选项。",
+  "subject": "math",
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1273_q1",
+  "topicId": "mat_p1273",
+  "prompt": "在 xy=-5、x+y=5、y=5x、y=5x² 这四个式子中，两个变量成反比例关系的是（　　）",
+  "question": "在 xy=-5、x+y=5、y=5x、y=5x² 这四个式子中，两个变量成反比例关系的是（　　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "xy=-5"
+   },
+   {
+    "label": "B",
+    "text": "x+y=5"
+   },
+   {
+    "label": "C",
+    "text": "y=5x"
+   },
+   {
+    "label": "D",
+    "text": "y=5x²"
+   }
+  ],
+  "choices": [
+   {
+    "label": "A",
+    "text": "xy=-5"
+   },
+   {
+    "label": "B",
+    "text": "x+y=5"
+   },
+   {
+    "label": "C",
+    "text": "y=5x"
+   },
+   {
+    "label": "D",
+    "text": "y=5x²"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "反比例关系等价于两个变量的乘积是固定的非零常数，即 xy=k（k≠0）。xy=-5 中乘积恒为 -5，符合；x+y=5 是和为常数；y=5x 中 y 与 x 的比值恒为 5，属于正比例关系；y=5x² 中 y 与 x² 成正比例。逐个检验乘积是否恒定，就能确定只有 A 正确。",
+  "subject": "math",
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1274_q1",
+  "topicId": "mat_p1274",
+  "prompt": "已知双曲线 y=k/x 上有一点 (2,-3)，则它的两支分别位于（　　）",
+  "question": "已知双曲线 y=k/x 上有一点 (2,-3)，则它的两支分别位于（　　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "第一、三象限"
+   },
+   {
+    "label": "B",
+    "text": "第二、四象限"
+   },
+   {
+    "label": "C",
+    "text": "第一、二象限"
+   },
+   {
+    "label": "D",
+    "text": "第三、四象限"
+   }
+  ],
+  "choices": [
+   {
+    "label": "A",
+    "text": "第一、三象限"
+   },
+   {
+    "label": "B",
+    "text": "第二、四象限"
+   },
+   {
+    "label": "C",
+    "text": "第一、二象限"
+   },
+   {
+    "label": "D",
+    "text": "第三、四象限"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "点在图象上，坐标满足解析式，故 -3=k/2，得 k=-6，函数为 y=-6/x。k<0 时 x 与 y 异号：x>0 时 y<0，对应第四象限；x<0 时 y>0，对应第二象限，所以两支位于第二、四象限，选 B。求 k 时用 k=xy=2×(-3) 最稳妥，写成 k=x/y 会得到错误的符号。",
+  "subject": "math",
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p919_q2",
+  "topicId": "mat_p919",
+  "prompt": "⊙O 中弦 AB 所对的圆心角 ∠AOB=90°，点 C 在优弧 AB 上，则 ∠ACB 的度数是（　）",
+  "question": "⊙O 中弦 AB 所对的圆心角 ∠AOB=90°，点 C 在优弧 AB 上，则 ∠ACB 的度数是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "30°"
+   },
+   {
+    "label": "B",
+    "text": "45°"
+   },
+   {
+    "label": "C",
+    "text": "60°"
+   },
+   {
+    "label": "D",
+    "text": "90°"
+   }
+  ],
+  "choices": [
+   {
+    "label": "A",
+    "text": "30°"
+   },
+   {
+    "label": "B",
+    "text": "45°"
+   },
+   {
+    "label": "C",
+    "text": "60°"
+   },
+   {
+    "label": "D",
+    "text": "90°"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "∠ACB 是弧 AB 所对的圆周角，∠AOB 是同一条弧所对的圆心角，由圆周角定理得 ∠ACB=∠AOB/2=90°/2=45°。只有当 AB 是直径（圆心角为 180°）时圆周角才等于 90°，本题圆心角只有 90°，所以不能答 90°。",
+  "subject": "math",
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_q809",
+  "topicId": "mat_p903",
+  "prompt": "一元二次方程 x²-3x=0 的两个根是（　）",
+  "question": "一元二次方程 x²-3x=0 的两个根是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "x=3"
+   },
+   {
+    "label": "B",
+    "text": "x=0"
+   },
+   {
+    "label": "C",
+    "text": "x=±3"
+   },
+   {
+    "label": "D",
+    "text": "x₁=0，x₂=3"
+   }
+  ],
+  "choices": [
+   {
+    "label": "A",
+    "text": "x=3"
+   },
+   {
+    "label": "B",
+    "text": "x=0"
+   },
+   {
+    "label": "C",
+    "text": "x=±3"
+   },
+   {
+    "label": "D",
+    "text": "x₁=0，x₂=3"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "方程左边提公因式：x(x-3)=0，由两个因式的积为零可知 x=0 或 x-3=0，所以 x₁=0，x₂=3。一元二次方程有两个根，只写 x=3 或只写 x=0 都漏解；也不能像开平方那样写成 x=±3，因为这里移项后是 x²=3x 而非 x²=9。",
+  "subject": "math",
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1270_q2",
+  "topicId": "mat_p1270",
+  "prompt": "抛物线 y=-2x²+8x-5 的对称轴是直线（　　）",
+  "question": "抛物线 y=-2x²+8x-5 的对称轴是直线（　　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "直线 x=-2"
+   },
+   {
+    "label": "B",
+    "text": "直线 x=4"
+   },
+   {
+    "label": "C",
+    "text": "直线 x=-4"
+   },
+   {
+    "label": "D",
+    "text": "直线 x=2"
+   }
+  ],
+  "choices": [
+   {
+    "label": "A",
+    "text": "直线 x=-2"
+   },
+   {
+    "label": "B",
+    "text": "直线 x=4"
+   },
+   {
+    "label": "C",
+    "text": "直线 x=-4"
+   },
+   {
+    "label": "D",
+    "text": "直线 x=2"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "抛物线 y=ax²+bx+c 的对称轴为 x=-b/(2a)。这里 a=-2，b=8，所以 x=-8/(2×(-2))=-8/(-4)=2。也可配方验证：y=-2(x²-4x)-5=-2(x-2)²+3，顶点为 (2,3)，对称轴是直线 x=2，故选 D。计算时漏掉分母里的负号会得到 -2。",
+  "subject": "math",
+  "verify": "",
+  "keypoints": []
+ }
+]

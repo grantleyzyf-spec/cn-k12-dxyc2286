@@ -1,0 +1,884 @@
+[
+ {
+  "id": "mat_p1020_q6",
+  "topicId": "mat_p1020",
+  "prompt": "计算8+7时，先把8和2凑成10，从7里拿走2以后，7还剩的数是多少（　）",
+  "question": "计算8+7时，先把8和2凑成10，从7里拿走2以后，7还剩的数是多少（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "5"
+   },
+   {
+    "label": "B",
+    "text": "4"
+   },
+   {
+    "label": "C",
+    "text": "6"
+   },
+   {
+    "label": "D",
+    "text": "3"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "凑十法要先用第二个加数里的一部分把8补成10，8只差2，所以把7分成2和5，拿走2以后剩下的就是5，再算10+5得15。选4是把7减2的差算错了；选6、3都是没有按“拿走2”来分7，属于把拆分的结果记混。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "5"
+   },
+   {
+    "label": "B",
+    "text": "4"
+   },
+   {
+    "label": "C",
+    "text": "6"
+   },
+   {
+    "label": "D",
+    "text": "3"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1020_q7",
+  "topicId": "mat_p1020",
+  "prompt": "计算7+8时，把8分成3和5，7先加3凑成10，10再加5，结果是____。",
+  "question": "计算7+8时，把8分成3和5，7先加3凑成10，10再加5，结果是____。",
+  "options": [],
+  "answer": "15",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "7加3正好凑成10，8被分成3和5，先算7+3=10，再算10+5=15，所以7+8=15。把8分成3和5这一步是关键：3是7凑十所需要的数，剩下的5要在第二步加上，漏加它就会错写成10。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1020_q8",
+  "topicId": "mat_p1020",
+  "prompt": "树上原来有8只小鸟，后来飞来6只，接着又飞走了3只，现在树上有多少只小鸟？",
+  "question": "树上原来有8只小鸟，后来飞来6只，接着又飞走了3只，现在树上有多少只小鸟？",
+  "options": [],
+  "answer": "11",
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "飞来的要加上，飞走的要减去，先算8+6=14，再算14-3=11，所以现在树上有11只。只算到8+6=14就停下，是两步问题最常丢的一步；把飞走的也当成加上，则会错得17只。",
+  "subject": "math",
+  "choices": [],
+  "verify": "8+6-3",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1021_q6",
+  "topicId": "mat_p1021",
+  "prompt": "计算3+8时，先交换加数的位置算8+3，把3分成2和1，8和2凑成10，最后得（　）",
+  "question": "计算3+8时，先交换加数的位置算8+3，把3分成2和1，8和2凑成10，最后得（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "10"
+   },
+   {
+    "label": "B",
+    "text": "11"
+   },
+   {
+    "label": "C",
+    "text": "12"
+   },
+   {
+    "label": "D",
+    "text": "13"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "交换加数的位置和不变，8+3与3+8得数相同。把3分成2和1，8+2=10，10+1=11，所以3+8=11。选10是只算到凑十就停了，忘了加剩下的1；选12、13是把剩下的1重复加了两次。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "10"
+   },
+   {
+    "label": "B",
+    "text": "11"
+   },
+   {
+    "label": "C",
+    "text": "12"
+   },
+   {
+    "label": "D",
+    "text": "13"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1021_q7",
+  "topicId": "mat_p1021",
+  "prompt": "计算5+7时，可以用凑十法。请写出你的计算过程和最后的得数。",
+  "question": "计算5+7时，可以用凑十法。请写出你的计算过程和最后的得数。",
+  "options": [],
+  "answer": "5+7=12",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "两个加数中5离10差5，所以从7里拿出5与它凑十，7就分成5和2；先算5+5=10，再算10+2=12。把7拆成别的数（如4和3）就凑不成10，凑十法能省力的原因就在于先补满整十。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "把7分成5和2，5和5凑成10",
+   "再算10+2=12，所以5+7=12"
+  ]
+ },
+ {
+  "id": "mat_p1021_q8",
+  "topicId": "mat_p1021",
+  "prompt": "要使 5+□ 的得数大于12，□里最小应填（　）",
+  "question": "要使 5+□ 的得数大于12，□里最小应填（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "5"
+   },
+   {
+    "label": "B",
+    "text": "6"
+   },
+   {
+    "label": "C",
+    "text": "8"
+   },
+   {
+    "label": "D",
+    "text": "9"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "逐个试算：5+5=10，5+6=11，5+7=12，都不大于12；5+8=13才大于12，所以最小填8。填7的算式得数正好是12，“大于12”不含等于，所以7不行；填5、6得数还不到12，方向上就差得更多。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "5"
+   },
+   {
+    "label": "B",
+    "text": "6"
+   },
+   {
+    "label": "C",
+    "text": "8"
+   },
+   {
+    "label": "D",
+    "text": "9"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1022_q6",
+  "topicId": "mat_p1022",
+  "prompt": "如果规定向东走为正，那么小明向西走12 m应记作____m。",
+  "question": "如果规定向东走为正，那么小明向西走12 m应记作____m。",
+  "options": [],
+  "answer": "-12",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "正负数用来表示一对具有相反意义的量：向东记为正，向西就与它意义相反，要记为负，所以向西走12 m记作-12 m。写成12 m等于把方向说反了，负号在这里不能省略，它正是“向西”这个方向的标记。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1022_q7",
+  "topicId": "mat_p1022",
+  "prompt": "某地某天最高气温是零上6℃，最低气温是零下4℃。若把零上记为正、零下记为负，这两个气温所记的数相加，结果是多少？",
+  "question": "某地某天最高气温是零上6℃，最低气温是零下4℃。若把零上记为正、零下记为负，这两个气温所记的数相加，结果是多少？",
+  "options": [],
+  "answer": "2",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "零上6℃记作+6，零下4℃记作-4，两数相加为6+(-4)=2。异号两数相加取绝对值较大的数的符号，6的绝对值大，所以结果为正的2；把-4当成+4就会错得10，符号是这类题最容易丢分的地方。",
+  "subject": "math",
+  "choices": [],
+  "verify": "6+(-4)",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1022_q8",
+  "topicId": "mat_p1022",
+  "prompt": "下列各组量中，不是一对具有相反意义的量的是（　）",
+  "question": "下列各组量中，不是一对具有相反意义的量的是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "向东走5 m与向西走5 m"
+   },
+   {
+    "label": "B",
+    "text": "收入300元与支出300元"
+   },
+   {
+    "label": "C",
+    "text": "水位上升2 cm与水位下降2 cm"
+   },
+   {
+    "label": "D",
+    "text": "气温升高3℃与气温是3℃"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "相反意义的量要求两个量在方向上正好相对：东与西、收入与支出、上升与下降都成对相反。第四个选项里“升高3℃”讲的是变化，“气温是3℃”讲的是某一时刻的温度本身，一个是变化量一个是状态，构不成相反意义，所以选它。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "向东走5 m与向西走5 m"
+   },
+   {
+    "label": "B",
+    "text": "收入300元与支出300元"
+   },
+   {
+    "label": "C",
+    "text": "水位上升2 cm与水位下降2 cm"
+   },
+   {
+    "label": "D",
+    "text": "气温升高3℃与气温是3℃"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1023_q6",
+  "topicId": "mat_p1023",
+  "prompt": "在 -5、0、3.6、-2/7、7 这五个数中，哪些是负有理数？请写出来，并说明0属于什么数。",
+  "question": "在 -5、0、3.6、-2/7、7 这五个数中，哪些是负有理数？请写出来，并说明0属于什么数。",
+  "options": [],
+  "answer": "-5 和 -2/7 是负有理数，0既不是正数也不是负数",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "负有理数是小于0的有理数，五个数中-5和-2/7前面带负号且小于0，是负有理数；3.6和7大于0，是正有理数。0比较特殊，它既不是正数也不是负数，是正数与负数的分界，把它当成正数或负数都是常见错误。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "负有理数是 -5 和 -2/7",
+   "3.6 和 7 是正有理数",
+   "0 既不是正数也不是负数，是正数与负数的分界"
+  ]
+ },
+ {
+  "id": "mat_p1023_q7",
+  "topicId": "mat_p1023",
+  "prompt": "下列各数中，最小的数是（　）",
+  "question": "下列各数中，最小的数是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "-3"
+   },
+   {
+    "label": "B",
+    "text": "-1/2"
+   },
+   {
+    "label": "C",
+    "text": "0"
+   },
+   {
+    "label": "D",
+    "text": "2"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "负数都小于0和正数，所以最小的数在两个负数里选。两个负数比较大小，绝对值大的反而小：|-3|=3，|-1/2|=1/2，3大于1/2，所以-3比-1/2小，最小的数是-3。凭“3比1/2大”就选-1/2，是把负数比较的法则用反了。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "-3"
+   },
+   {
+    "label": "B",
+    "text": "-1/2"
+   },
+   {
+    "label": "C",
+    "text": "0"
+   },
+   {
+    "label": "D",
+    "text": "2"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1023_q8",
+  "topicId": "mat_p1023",
+  "prompt": "绝对值小于3的整数一共有-2、-1、0、1、2，其中最大的一个是____。",
+  "question": "绝对值小于3的整数一共有-2、-1、0、1、2，其中最大的一个是____。",
+  "options": [],
+  "answer": "2",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "绝对值小于3，就是到原点的距离比3小，符合条件的整数是-2、-1、0、1、2，共5个。在数轴上越靠右的数越大，这5个数里最靠右的是2，所以最大的一个是2。只想到正整数1、2而漏掉负整数，会把个数数错成2个。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1024_q6",
+  "topicId": "mat_p1024",
+  "prompt": "计算 14+(-20) 的值是多少？",
+  "question": "计算 14+(-20) 的值是多少？",
+  "options": [],
+  "answer": "-6",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "异号两数相加，先定符号再算绝对值：|14|=14，|-20|=20，20比14大，所以和取负号，绝对值用20-14=6，结果是-6。直接把绝对值相加得34，或让14减20时忘了写负号，都是同号异号法则没分清。",
+  "subject": "math",
+  "choices": [],
+  "verify": "14+(-20)",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1024_q7",
+  "topicId": "mat_p1024",
+  "prompt": "计算 5-9 的结果是（　）",
+  "question": "计算 5-9 的结果是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "4"
+   },
+   {
+    "label": "B",
+    "text": "-4"
+   },
+   {
+    "label": "C",
+    "text": "14"
+   },
+   {
+    "label": "D",
+    "text": "-14"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "5减9不够减，差是负数：5-9=-(9-5)=-4。也可以化成加法5+(-9)，异号相加取绝对值大的数的符号，得-4。选4是习惯上总用大数减小数、把符号漏了；选14是把减法当成了加法。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "4"
+   },
+   {
+    "label": "B",
+    "text": "-4"
+   },
+   {
+    "label": "C",
+    "text": "14"
+   },
+   {
+    "label": "D",
+    "text": "-14"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1024_q8",
+  "topicId": "mat_p1024",
+  "prompt": "计算 -3+8-(-5)-6，并说明把减法转化成加法后算式变成了什么。",
+  "question": "计算 -3+8-(-5)-6，并说明把减法转化成加法后算式变成了什么。",
+  "options": [],
+  "answer": "4",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "减去一个数等于加上这个数的相反数，所以-(-5)写成+5，原式化为-3+8+5-6。按从左到右依次计算：-3+8=5，5+5=10，10-6=4。把-(-5)直接写成-5是本题最典型的错误，两个负号相遇要变加。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "把 -(-5) 写成 +5，原式化为 -3+8+5-6",
+   "-3+8=5，5+5=10，10-6=4",
+   "结果是4"
+  ]
+ },
+ {
+  "id": "mat_p1025_q6",
+  "topicId": "mat_p1025",
+  "prompt": "计算 (-5)×4 的结果是（　）",
+  "question": "计算 (-5)×4 的结果是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "20"
+   },
+   {
+    "label": "B",
+    "text": "9"
+   },
+   {
+    "label": "C",
+    "text": "-20"
+   },
+   {
+    "label": "D",
+    "text": "-9"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "两数相乘，异号得负，积的绝对值等于两数绝对值的积：|-5|×|4|=20，符号取负，所以结果是-20。选20是只算了绝对值忘了定符号；选9、-9是把乘法当成了加法。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "20"
+   },
+   {
+    "label": "B",
+    "text": "9"
+   },
+   {
+    "label": "C",
+    "text": "-20"
+   },
+   {
+    "label": "D",
+    "text": "-9"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1025_q7",
+  "topicId": "mat_p1025",
+  "prompt": "计算：(-36)÷4=____。",
+  "question": "计算：(-36)÷4=____。",
+  "options": [],
+  "answer": "-9",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "两数相除，异号得负，商的绝对值等于两数绝对值的商：36÷4=9，符号取负，所以结果是-9。写成9是把符号丢了；写成-32是把除法当减法，除法和减法在这里不能混。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1025_q8",
+  "topicId": "mat_p1025",
+  "prompt": "计算 (-2)×(-3)×(-4) 的值是多少？",
+  "question": "计算 (-2)×(-3)×(-4) 的值是多少？",
+  "options": [],
+  "answer": "-24",
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "先看负因数的个数：三个负因数，个数是奇数，积的符号为负。再算绝对值2×3×4=24，所以结果是-24。只把前两个负数相乘得正6就以为结果为正，忘了第三个负号还会再翻一次符号。",
+  "subject": "math",
+  "choices": [],
+  "verify": "(-2)*(-3)*(-4)",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1026_q6",
+  "topicId": "mat_p1026",
+  "prompt": "在乘方算式 (-4)^5 中，底数是（　）",
+  "question": "在乘方算式 (-4)^5 中，底数是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "4"
+   },
+   {
+    "label": "B",
+    "text": "5"
+   },
+   {
+    "label": "C",
+    "text": "-5"
+   },
+   {
+    "label": "D",
+    "text": "-4"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "乘方 a^n 中，a 叫底数，n 叫指数，表示 n 个 a 相乘。(-4)^5 里的括号把负号和4一起括住，相乘的是5个-4，所以底数是-4、指数是5。去掉括号写成-4^5 时底数才是4，结果是-1024，两者的意义和结果都不同。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "4"
+   },
+   {
+    "label": "B",
+    "text": "5"
+   },
+   {
+    "label": "C",
+    "text": "-5"
+   },
+   {
+    "label": "D",
+    "text": "-4"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1026_q7",
+  "topicId": "mat_p1026",
+  "prompt": "把 5×5×5×5 写成乘方的形式，并指出底数和指数分别是多少。",
+  "question": "把 5×5×5×5 写成乘方的形式，并指出底数和指数分别是多少。",
+  "options": [],
+  "answer": "5^4，底数是5，指数是4",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "乘方是求几个相同因数的积的运算，5×5×5×5 里有4个相同的因数5，写成5^4，其中5是底数、4是指数。把指数和底数写反成4^5，就变成了5个4相乘，结果完全不同，这是书写乘方时最常见的错位。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "写成 5^4",
+   "底数是5",
+   "指数是4，结果是625"
+  ]
+ },
+ {
+  "id": "mat_p1026_q8",
+  "topicId": "mat_p1026",
+  "prompt": "计算 (-1)^3+(-1)^4 的结果是（　）",
+  "question": "计算 (-1)^3+(-1)^4 的结果是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "0"
+   },
+   {
+    "label": "B",
+    "text": "2"
+   },
+   {
+    "label": "C",
+    "text": "-2"
+   },
+   {
+    "label": "D",
+    "text": "1"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "负数的奇次幂为负、偶次幂为正，所以(-1)^3=-1，(-1)^4=1，两数相加为-1+1=0。选2是把两个幂都当成了1，选-2是把两个幂都当成了-1，都是没按指数的奇偶判断符号。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "0"
+   },
+   {
+    "label": "B",
+    "text": "2"
+   },
+   {
+    "label": "C",
+    "text": "-2"
+   },
+   {
+    "label": "D",
+    "text": "1"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1027_q6",
+  "topicId": "mat_p1027",
+  "prompt": "用代数式表示“x的2倍与y的差”是____。",
+  "question": "用代数式表示“x的2倍与y的差”是____。",
+  "options": [],
+  "answer": "2x-y",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "“x的2倍”写作2x，“与y的差”表示从2x里减去y，所以代数式是2x-y。写成2(x-y)是把“2倍”错当成整个差的2倍，读题时要分清乘法作用在哪个量上。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1027_q7",
+  "topicId": "mat_p1027",
+  "prompt": "一个长方形的长是 a cm，宽是 (a-3) cm。当 a=10 时，这个长方形的周长是多少厘米？",
+  "question": "一个长方形的长是 a cm，宽是 (a-3) cm。当 a=10 时，这个长方形的周长是多少厘米？",
+  "options": [],
+  "answer": "34",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "长方形周长等于长与宽的和的2倍，先算宽：a-3=10-3=7 cm，再算(10+7)×2=34，所以周长是34 cm。只算10+7=17就停，是把周长公式里的“2倍”漏掉了，得到的是一组长与宽的和。",
+  "subject": "math",
+  "choices": [],
+  "verify": "2*(10+(10-3))",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1027_q8",
+  "topicId": "mat_p1027",
+  "prompt": "某商品原价 m 元，先提价10%，又按提价后的价格降价10%，现价用代数式表示是（　）",
+  "question": "某商品原价 m 元，先提价10%，又按提价后的价格降价10%，现价用代数式表示是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "m"
+   },
+   {
+    "label": "B",
+    "text": "0.99m"
+   },
+   {
+    "label": "C",
+    "text": "1.1m"
+   },
+   {
+    "label": "D",
+    "text": "0.9m"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "提价10%后的价格是 m(1+10%)=1.1m，再在这个价格上降价10%，现价是1.1m×(1-10%)=1.1m×0.9=0.99m。选m是误以为先提后降能相互抵消，但两次的10%所依据的价格不同，基数变了，现价比原价少0.01m。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "m"
+   },
+   {
+    "label": "B",
+    "text": "0.99m"
+   },
+   {
+    "label": "C",
+    "text": "1.1m"
+   },
+   {
+    "label": "D",
+    "text": "0.9m"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1028_q6",
+  "topicId": "mat_p1028",
+  "prompt": "当 a=4，b=-1 时，求代数式 3a+b 的值，并写出代入计算的过程。",
+  "question": "当 a=4，b=-1 时，求代数式 3a+b 的值，并写出代入计算的过程。",
+  "options": [],
+  "answer": "11",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "求代数式的值就是用以数值代替代数式里的字母，再按运算顺序计算。把a=4、b=-1代入得3×4+(-1)，先算乘法12，再加-1得11。代入负数要加括号，写成3×4-1虽然结果一样，但漏括号在平方、乘方时会直接算错符号。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "把 a=4，b=-1 代入，得 3×4+(-1)",
+   "3×4=12，12+(-1)=11",
+   "结果是11"
+  ]
+ },
+ {
+  "id": "mat_p1028_q7",
+  "topicId": "mat_p1028",
+  "prompt": "当 x=2 时，代数式 x^2-4 的值是（　）",
+  "question": "当 x=2 时，代数式 x^2-4 的值是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "4"
+   },
+   {
+    "label": "B",
+    "text": "8"
+   },
+   {
+    "label": "C",
+    "text": "0"
+   },
+   {
+    "label": "D",
+    "text": "-4"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "把x=2代入，先算乘方2^2=4，再算4-4=0，所以值是0。选4是漏算了后面的“减4”，只算了x^2；选8是把x^2当成2×2后再加4，把减号看成了加号。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "4"
+   },
+   {
+    "label": "B",
+    "text": "8"
+   },
+   {
+    "label": "C",
+    "text": "0"
+   },
+   {
+    "label": "D",
+    "text": "-4"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1028_q8",
+  "topicId": "mat_p1028",
+  "prompt": "当 m=3，n=-2 时，代数式 (m-n)^2 的值是____。",
+  "question": "当 m=3，n=-2 时，代数式 (m-n)^2 的值是____。",
+  "options": [],
+  "answer": "25",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "先把字母换成数：m-n=3-(-2)=3+2=5，再算平方5^2=25，所以代数式的值是25。写成3-2=1再平方得1，是把减负数当成了减正数，括号里的符号一变，结果就差得很远。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1029_q6",
+  "topicId": "mat_p1029",
+  "prompt": "单项式 -4a^2b 的次数是多少？",
+  "question": "单项式 -4a^2b 的次数是多少？",
+  "options": [],
+  "answer": "3",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "单项式的次数是所有字母的指数之和：a的指数是2，b的指数是1（省略不写也按1算），2+1=3，所以次数是3。把系数-4的绝对值或4也算进次数，是混淆了系数与次数这两个不同的概念。",
+  "subject": "math",
+  "choices": [],
+  "verify": "2+1",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1029_q7",
+  "topicId": "mat_p1029",
+  "prompt": "下列式子中，属于多项式的是（　）",
+  "question": "下列式子中，属于多项式的是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "4x"
+   },
+   {
+    "label": "B",
+    "text": "-7"
+   },
+   {
+    "label": "C",
+    "text": "3/x"
+   },
+   {
+    "label": "D",
+    "text": "x^2-2x+1"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "几个单项式的和叫多项式。4x和-7都是单独的单项式；3/x 的分母里含字母，不是整式；只有 x^2-2x+1 是三个单项式x^2、-2x、1的和，符合多项式的定义，所以选它。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "4x"
+   },
+   {
+    "label": "B",
+    "text": "-7"
+   },
+   {
+    "label": "C",
+    "text": "3/x"
+   },
+   {
+    "label": "D",
+    "text": "x^2-2x+1"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1029_q8",
+  "topicId": "mat_p1029",
+  "prompt": "指出多项式 -x^3+2x^2-5x+7 的次数、项数和常数项，并说出它的二次项。",
+  "question": "指出多项式 -x^3+2x^2-5x+7 的次数、项数和常数项，并说出它的二次项。",
+  "options": [],
+  "answer": "次数是3，共4项，常数项是7，二次项是2x^2",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "多项式的次数取各项中最高的次数，-x^3的次数是3，最高，所以整个多项式是三次。四项分别是-x^3、2x^2、-5x、7，不含字母的7是常数项；含x^2的那一项2x^2就是二次项，注意项要连同它前面的符号一起看。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "次数是3",
+   "共有4项",
+   "常数项是7",
+   "二次项是 2x^2"
+  ]
+ }
+]

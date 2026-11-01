@@ -1,0 +1,596 @@
+[
+ {
+  "id": "mat_p1030_q6",
+  "topicId": "mat_p1030",
+  "prompt": "下列每组中的两个单项式，属于同类项的是（　）",
+  "question": "下列每组中的两个单项式，属于同类项的是（　）",
+  "options": [
+   {"label": "A", "text": "3x^2y 与 -5xy^2"},
+   {"label": "B", "text": "2ab 与 2abc"},
+   {"label": "C", "text": "4m^2n 与 -1/2 nm^2"},
+   {"label": "D", "text": "5x^3 与 5x^2"}
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "同类项要求所含字母相同，并且相同字母的指数也相同。C 中 -1/2 nm^2 就是 -1/2 m^2n，与 4m^2n 的字母和指数完全一致，只是系数不同，所以是同类项；A 中 x、y 的指数互相换了位置，B 中字母个数不同，D 中 x 的指数一个是 3 一个是 2，都不能合并。",
+  "subject": "math",
+  "choices": [
+   {"label": "A", "text": "3x^2y 与 -5xy^2"},
+   {"label": "B", "text": "2ab 与 2abc"},
+   {"label": "C", "text": "4m^2n 与 -1/2 nm^2"},
+   {"label": "D", "text": "5x^3 与 5x^2"}
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1030_q7",
+  "topicId": "mat_p1030",
+  "prompt": "去括号并合并同类项：3(2a-b)-2(a-3b)=____。",
+  "question": "去括号并合并同类项：3(2a-b)-2(a-3b)=____。",
+  "options": [],
+  "answer": "4a+3b",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "先用乘法分配律去括号，得 6a-3b-2a+6b。括号前是负号时括号里每一项都要变号，所以 -2(a-3b) 变成 -2a+6b，这一步最容易错写成 -2a-6b。再合并同类项：6a-2a=4a，-3b+6b=3b，结果是 4a+3b。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1030_q8",
+  "topicId": "mat_p1030",
+  "prompt": "先化简，再求值：3(x^2-2x+1)-2(x^2-3x+1)，其中 x=-2，求这个式子的值。",
+  "question": "先化简，再求值：3(x^2-2x+1)-2(x^2-3x+1)，其中 x=-2，求这个式子的值。",
+  "options": [],
+  "answer": "5",
+  "type": "numeric",
+  "difficulty": "hard",
+  "explanation": "去括号得 3x^2-6x+3-2x^2+6x-2，合并同类项时一次项 -6x+6x 相消，二次项 3x^2-2x^2=x^2，常数项 3-2=1，所以原式化简为 x^2+1。把 x=-2 代入，x^2=4，原式的值是 4+1=5。不先化简直接代入，容易在负数的平方和符号上出错。",
+  "subject": "math",
+  "choices": [],
+  "verify": "3*((-2)**2-2*(-2)+1)-2*((-2)**2-3*(-2)+1)",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1031_q6",
+  "topicId": "mat_p1031",
+  "prompt": "下列各式中，是一元一次方程的是（　）",
+  "question": "下列各式中，是一元一次方程的是（　）",
+  "options": [
+   {"label": "A", "text": "3x+2y=5"},
+   {"label": "B", "text": "x^2-2x=0"},
+   {"label": "C", "text": "5x-3=2x"},
+   {"label": "D", "text": "2/x+1=3"}
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "一元一次方程要同时满足三个条件：是等式、只含一个未知数、未知数的次数是 1 且系数不为 0。C 只含 x 且 x 的次数为 1，符合要求；A 含两个未知数，B 中 x 的次数是 2，D 中未知数出现在分母上，都不是整式方程，因此也不是一元一次方程。",
+  "subject": "math",
+  "choices": [
+   {"label": "A", "text": "3x+2y=5"},
+   {"label": "B", "text": "x^2-2x=0"},
+   {"label": "C", "text": "5x-3=2x"},
+   {"label": "D", "text": "2/x+1=3"}
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1031_q7",
+  "topicId": "mat_p1031",
+  "prompt": "已知 x=-4 是关于 x 的方程 2x+a=x-3 的解，求 a 的值，并说明“方程的解”的含义。",
+  "question": "已知 x=-4 是关于 x 的方程 2x+a=x-3 的解，求 a 的值，并说明“方程的解”的含义。",
+  "options": [],
+  "answer": "a=1。把 x=-4 代入原方程，左边是 2×(-4)+a=a-8，右边是 -4-3=-7，由 a-8=-7 解得 a=1；把 a=1 代回检验两边都等于 -7。方程的解就是使方程左右两边相等的未知数的值。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "因为 x=-4 是方程的解，所以代入后左右两边的值相等：左边为 2×(-4)+a=a-8，右边为 -4-3=-7，于是得到关于 a 的一元一次方程 a-8=-7，解得 a=1。把 a=1 代回原方程检验，两边都等于 -7，说明结果正确。这也说明方程的解就是能使等式成立的未知数的值，判断一个数是不是解，代入检验最可靠。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "把 x=-4 代入原方程，得到关于 a 的方程 a-8=-7",
+   "解方程得 a=1，并代回检验两边都等于 -7",
+   "方程的解是使方程左右两边相等的未知数的值"
+  ]
+ },
+ {
+  "id": "mat_p1031_q8",
+  "topicId": "mat_p1031",
+  "prompt": "若关于 x 的方程 (|m|-1)x^2+(m-1)x+3=0 是一元一次方程，则 m 的值是（　）",
+  "question": "若关于 x 的方程 (|m|-1)x^2+(m-1)x+3=0 是一元一次方程，则 m 的值是（　）",
+  "options": [
+   {"label": "A", "text": "1"},
+   {"label": "B", "text": "-1"},
+   {"label": "C", "text": "1 或 -1"},
+   {"label": "D", "text": "0"}
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "一元一次方程要求未知数的最高次数是 1，所以二次项必须不存在，即系数 |m|-1=0，得 m=1 或 m=-1。同时一次项系数不能为 0，即 m-1≠0，得 m≠1。两个条件同时满足，只有 m=-1，此时方程化为 -2x+3=0，确实是一元一次方程。选 C 的错在没有排除使一次项消失的 m=1。",
+  "subject": "math",
+  "choices": [
+   {"label": "A", "text": "1"},
+   {"label": "B", "text": "-1"},
+   {"label": "C", "text": "1 或 -1"},
+   {"label": "D", "text": "0"}
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1032_q6",
+  "topicId": "mat_p1032",
+  "prompt": "解方程 7x-5=2x+10：移项得 7x-2x=10+5，合并同类项得 5x=15，所以 x=____。",
+  "question": "解方程 7x-5=2x+10：移项得 7x-2x=10+5，合并同类项得 5x=15，所以 x=____。",
+  "options": [],
+  "answer": "3",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "移项的依据是等式的基本性质，移项时必须改变符号：-5 从左边移到右边写成 +5，2x 从右边移到左边写成 -2x，所以得 7x-2x=10+5。合并同类项得 5x=15，两边同除以 5，系数化为 1，解得 x=3。把 x=3 代入原方程，左右两边都是 16。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1032_q7",
+  "topicId": "mat_p1032",
+  "prompt": "解方程 (2x-1)/3-(x+2)/2=1，则 x 的值是多少？",
+  "question": "解方程 (2x-1)/3-(x+2)/2=1，则 x 的值是多少？",
+  "options": [],
+  "answer": "14",
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "先去分母，方程两边同乘各分母的最小公倍数 6，右边的 1 也要乘 6，得 2(2x-1)-3(x+2)=6。去括号得 4x-2-3x-6=6，合并同类项得 x-8=6，所以 x=14。最常见的错误是右边的 1 忘记乘 6，或者去括号时把 -3(x+2) 写成 -3x+6 而没有变号。",
+  "subject": "math",
+  "choices": [],
+  "verify": "6+8",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1032_q8",
+  "topicId": "mat_p1032",
+  "prompt": "若关于 x 的方程 (a-2)x=6 的解是正整数，则整数 a 的值的个数是（　）",
+  "question": "若关于 x 的方程 (a-2)x=6 的解是正整数，则整数 a 的值的个数是（　）",
+  "options": [
+   {"label": "A", "text": "2"},
+   {"label": "B", "text": "3"},
+   {"label": "C", "text": "4"},
+   {"label": "D", "text": "5"}
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "由 (a-2)x=6 且解为正整数，得 x=6/(a-2)，所以 a-2 必须是 6 的正因数，即 a-2 取 1、2、3、6，对应 a=3、4、5、8，共 4 个。漏掉 a=8 或把负因数也算进去都会数错，负因数会使 x 为负数，不符合“正整数”这一条件。",
+  "subject": "math",
+  "choices": [
+   {"label": "A", "text": "2"},
+   {"label": "B", "text": "3"},
+   {"label": "C", "text": "4"},
+   {"label": "D", "text": "5"}
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1033_q6",
+  "topicId": "mat_p1033",
+  "prompt": "一件商品的进价是 80 元，按标价的九折出售仍可获利 10 元。设这件商品的标价为 x 元，请列出方程并求出标价。",
+  "question": "一件商品的进价是 80 元，按标价的九折出售仍可获利 10 元。设这件商品的标价为 x 元，请列出方程并求出标价。",
+  "options": [],
+  "answer": "方程为 0.9x-80=10（也可写成 0.9x=80+10），解得 x=100，标价是 100 元。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "设标价为 x 元，按标价的九折出售，售价就是 0.9x 元。利润等于售价减进价，所以相等关系是 0.9x-80=10。移项得 0.9x=90，两边同除以 0.9 得 x=100。检验：0.9×100=90 元，90-80=10 元，与题意相符。列方程的关键是先把售价用标价表示出来，再抓住利润这层相等关系。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "设标价为 x 元，九折出售的售价是 0.9x 元",
+   "相等关系是 售价-进价=利润，即 0.9x-80=10",
+   "解得 x=100，检验 0.9×100-80=10 元，符合题意"
+  ]
+ },
+ {
+  "id": "mat_p1033_q7",
+  "topicId": "mat_p1033",
+  "prompt": "某试卷共有 25 道题，答对一道得 4 分，答错或不答一道扣 1 分。某同学共得 70 分，设他答对了 x 道题，则所列方程正确的是（　）",
+  "question": "某试卷共有 25 道题，答对一道得 4 分，答错或不答一道扣 1 分。某同学共得 70 分，设他答对了 x 道题，则所列方程正确的是（　）",
+  "options": [
+   {"label": "A", "text": "4x-(25-x)=70"},
+   {"label": "B", "text": "4x+(25-x)=70"},
+   {"label": "C", "text": "4x-25-x=70"},
+   {"label": "D", "text": "4x-(25+x)=70"}
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "答对 x 道得 4x 分，答错或不答的有 25-x 道，每道扣 1 分，共扣 (25-x) 分，所以总分是 4x-(25-x)=70。解这个方程得 4x-25+x=70，5x=95，x=19，代回检验 4×19-6=70，符合题意。B 把扣分写成加分，C 丢掉了括号，D 的括号内符号写反，都是常见的列式错误。",
+  "subject": "math",
+  "choices": [
+   {"label": "A", "text": "4x-(25-x)=70"},
+   {"label": "B", "text": "4x+(25-x)=70"},
+   {"label": "C", "text": "4x-25-x=70"},
+   {"label": "D", "text": "4x-(25+x)=70"}
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1033_q8",
+  "topicId": "mat_p1033",
+  "prompt": "一项工作甲单独做需 12 小时完成，乙单独做需 18 小时完成。两人合作 4 小时后，剩下的工作由乙单独完成，则乙还需要____小时。",
+  "question": "一项工作甲单独做需 12 小时完成，乙单独做需 18 小时完成。两人合作 4 小时后，剩下的工作由乙单独完成，则乙还需要____小时。",
+  "options": [],
+  "answer": "8",
+  "type": "fill",
+  "difficulty": "hard",
+  "explanation": "把总工作量看作 1，甲每小时完成 1/12，乙每小时完成 1/18，两人合作每小时完成 1/12+1/18=5/36。合作 4 小时完成 4×5/36=5/9，剩下 1-5/9=4/9。乙单独做还剩的这部分，需要 4/9÷1/18=4/9×18=8 小时。解题时一定要把剩下的工作量除以乙一人的效率，不能除以两人的效率和。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1034_q6",
+  "topicId": "mat_p1034",
+  "prompt": "一个棱柱共有 18 条棱，则这个棱柱的顶点个数是多少个？",
+  "question": "一个棱柱共有 18 条棱，则这个棱柱的顶点个数是多少个？",
+  "options": [],
+  "answer": "12",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "n 棱柱有 3n 条棱、2n 个顶点、n+2 个面。由 3n=18 得 n=6，所以这是一个六棱柱，顶点数是 2n=2×6=12 个。常见的错误是把棱数直接除以 2，或者用 18 减 6，那都是把棱、面、顶点的公式记混了。",
+  "subject": "math",
+  "choices": [],
+  "verify": "2*(18/3)",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1034_q7",
+  "topicId": "mat_p1034",
+  "prompt": "下列立体图形中，把它的侧面沿一条直线剪开展平后能得到扇形的是（　）",
+  "question": "下列立体图形中，把它的侧面沿一条直线剪开展平后能得到扇形的是（　）",
+  "options": [
+   {"label": "A", "text": "圆柱"},
+   {"label": "B", "text": "圆锥"},
+   {"label": "C", "text": "三棱柱"},
+   {"label": "D", "text": "正方体"}
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "圆锥的侧面是一个曲面，沿一条母线剪开展平后得到扇形，扇形的半径等于母线长，弧长等于底面圆的周长。圆柱的侧面展开图是长方形，三棱柱的侧面展开图由三个长方形拼成，正方体的表面展开图由六个正方形组成，都不是扇形。",
+  "subject": "math",
+  "choices": [
+   {"label": "A", "text": "圆柱"},
+   {"label": "B", "text": "圆锥"},
+   {"label": "C", "text": "三棱柱"},
+   {"label": "D", "text": "正方体"}
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1034_q8",
+  "topicId": "mat_p1034",
+  "prompt": "一个正方体的六个面都涂上颜色后，锯成 27 个大小相同的小正方体。三面涂色、两面涂色、一面涂色的小正方体各有多少个？请说明理由。",
+  "question": "一个正方体的六个面都涂上颜色后，锯成 27 个大小相同的小正方体。三面涂色、两面涂色、一面涂色的小正方体各有多少个？请说明理由。",
+  "options": [],
+  "answer": "三面涂色的有 8 个，两面涂色的有 12 个，一面涂色的有 6 个，另外还有 1 个各面都不涂色。",
+  "type": "short-answer",
+  "difficulty": "hard",
+  "explanation": "27=3×3×3，说明每条棱被平均分成 3 份。三面涂色的小正方体只能在大正方体的顶点处，正方体有 8 个顶点，所以是 8 个；两面涂色的在每条棱上除两端以外的位置，每条棱有 3-2=1 个，12 条棱共 12 个；一面涂色的在每个面的内部，每个面有 (3-2)^2=1 个，6 个面共 6 个；剩下的 1 个藏在中心，各面都不涂色。合计 8+12+6+1=27 个，与小正方体总数一致。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "三面涂色的小正方体在大正方体的 8 个顶点处，共 8 个",
+   "两面涂色的在 12 条棱的中间位置，每条棱 1 个，共 12 个",
+   "一面涂色的在 6 个面的中心，每个面 1 个，共 6 个，另有 1 个在内部不涂色"
+  ]
+ },
+ {
+  "id": "mat_p1035_q6",
+  "topicId": "mat_p1035",
+  "prompt": "下列关于直线、射线、线段的说法中，正确的是（　）",
+  "question": "下列关于直线、射线、线段的说法中，正确的是（　）",
+  "options": [
+   {"label": "A", "text": "射线 AB 与射线 BA 是同一条射线"},
+   {"label": "B", "text": "直线 AB 与直线 BA 不是同一条直线"},
+   {"label": "C", "text": "线段 AB 与线段 BA 是不同的线段"},
+   {"label": "D", "text": "经过两点有且只有一条直线"}
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "两点确定一条直线，这是本章的基本事实，所以 D 正确。射线 AB 的端点是 A、方向由 A 指向 B，射线 BA 的端点是 B、方向相反，两者不同，A 错；直线 AB 与直线 BA 是同一条直线，B 错；线段 AB 与线段 BA 的端点相同、长度相同，是同一条线段，C 错。",
+  "subject": "math",
+  "choices": [
+   {"label": "A", "text": "射线 AB 与射线 BA 是同一条射线"},
+   {"label": "B", "text": "直线 AB 与直线 BA 不是同一条直线"},
+   {"label": "C", "text": "线段 AB 与线段 BA 是不同的线段"},
+   {"label": "D", "text": "经过两点有且只有一条直线"}
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1035_q7",
+  "topicId": "mat_p1035",
+  "prompt": "已知线段 AB=20 cm，点 C 在线段 AB 上，且 AC=3/5 AB，点 D 是线段 AC 的中点，则 BD=____ cm。",
+  "question": "已知线段 AB=20 cm，点 C 在线段 AB 上，且 AC=3/5 AB，点 D 是线段 AC 的中点，则 BD=____ cm。",
+  "options": [],
+  "answer": "14",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "先求 AC：AC=3/5×20=12 cm。因为 D 是 AC 的中点，所以 AD=12÷2=6 cm。点 C 在 AB 上、D 在 AC 上，各点的顺序是 A、D、C、B，所以 BD=AB-AD=20-6=14 cm。也可以先求 CB=20-12=8 cm，再用 BD=BC+CD=8+6=14 cm 检验。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1035_q8",
+  "topicId": "mat_p1035",
+  "prompt": "已知线段 AB=18 cm，延长线段 AB 到点 C，使 BC=1/3 AB，点 D 是线段 AC 的中点，则 CD 的长是多少厘米？",
+  "question": "已知线段 AB=18 cm，延长线段 AB 到点 C，使 BC=1/3 AB，点 D 是线段 AC 的中点，则 CD 的长是多少厘米？",
+  "options": [],
+  "answer": "12",
+  "type": "numeric",
+  "difficulty": "hard",
+  "explanation": "“延长线段 AB 到点 C”说明 A、B、C 依次在同一条直线上，且 C 在 B 的外侧，所以 AC=AB+BC=18+18/3=18+6=24 cm。D 是 AC 的中点，中点把线段平分成相等的两份，因此 CD=AC÷2=24÷2=12 cm。常见的错误是把 BC 从 AC 中减去，或者认为 AC=AB-BC，把点的位置关系弄反。",
+  "subject": "math",
+  "choices": [],
+  "verify": "(18+18/3)/2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1036_q6",
+  "topicId": "mat_p1036",
+  "prompt": "下列各角中，与 62° 的角互为余角的是（　）",
+  "question": "下列各角中，与 62° 的角互为余角的是（　）",
+  "options": [
+   {"label": "A", "text": "28°"},
+   {"label": "B", "text": "38°"},
+   {"label": "C", "text": "118°"},
+   {"label": "D", "text": "128°"}
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "两个角的和等于 90° 时互为余角，所以所求的角是 90°-62°=28°。118° 是与 62° 和为 180° 的角，那是补角不是余角；38° 是用 100 减 62 算错的，128° 没有任何依据，都是常见错误。",
+  "subject": "math",
+  "choices": [
+   {"label": "A", "text": "28°"},
+   {"label": "B", "text": "38°"},
+   {"label": "C", "text": "118°"},
+   {"label": "D", "text": "128°"}
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1036_q7",
+  "topicId": "mat_p1036",
+  "prompt": "一个角的补角比它的余角的 2 倍多 20°，求这个角的度数。",
+  "question": "一个角的补角比它的余角的 2 倍多 20°，求这个角的度数。",
+  "options": [],
+  "answer": "这个角是 20°。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "设这个角为 x°，则它的补角是 (180-x)°，余角是 (90-x)°。由“补角比余角的 2 倍多 20°”得 180-x=2(90-x)+20，去括号得 180-x=200-2x，移项合并同类项得 x=20，所以这个角是 20°。检验：补角是 160°，余角是 70°，2×70+20=160，与题意相符。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "设这个角为 x°，则补角为 180-x，余角为 90-x",
+   "根据题意列方程 180-x=2(90-x)+20",
+   "解得 x=20，检验补角 160° 正好比余角 70° 的 2 倍多 20°"
+  ]
+ },
+ {
+  "id": "mat_p1036_q8",
+  "topicId": "mat_p1036",
+  "prompt": "钟表上 3 点 30 分时，时针与分针所夹的角（取小于平角的角）的度数是（　）",
+  "question": "钟表上 3 点 30 分时，时针与分针所夹的角（取小于平角的角）的度数是（　）",
+  "options": [
+   {"label": "A", "text": "85°"},
+   {"label": "B", "text": "90°"},
+   {"label": "C", "text": "60°"},
+   {"label": "D", "text": "75°"}
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "3 点 30 分时，分针指向 6，与 12 的夹角是 30×6°=180°。时针从 3 的位置又走了 30 分钟，每分钟走 0.5°，共走 15°，所以时针与 12 的夹角是 3×30°+15°=105°。两针的夹角为 180°-105°=75°。只算 3×30°=90° 的错法忽略了时针在半小时里也在转动。",
+  "subject": "math",
+  "choices": [
+   {"label": "A", "text": "85°"},
+   {"label": "B", "text": "90°"},
+   {"label": "C", "text": "60°"},
+   {"label": "D", "text": "75°"}
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h300_q6",
+  "topicId": "mat_h300",
+  "prompt": "用列举法表示集合 A={x∈N | x^2<10}，则 A=____。",
+  "question": "用列举法表示集合 A={x∈N | x^2<10}，则 A=____。",
+  "options": [],
+  "answer": "{0,1,2,3}",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "N 表示自然数集，其中包含 0。逐个检验：0^2=0、1^2=1、2^2=4、3^2=9 都小于 10，而 4^2=16 已经不满足条件，所以满足条件的自然数只有 0、1、2、3，用列举法写成 {0,1,2,3}。最常见的错误是漏掉 0，或者把负整数也写进去。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h300_q7",
+  "topicId": "mat_h300",
+  "prompt": "已知集合 A={x∈Z | 12/x∈Z}，则集合 A 中元素的个数是多少？",
+  "question": "已知集合 A={x∈Z | 12/x∈Z}，则集合 A 中元素的个数是多少？",
+  "options": [],
+  "answer": "12",
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "由 12/x 是整数且 x 是整数可知，x 必须是 12 的整数因数。正因数有 1、2、3、4、6、12 共 6 个，负因数有 -1、-2、-3、-4、-6、-12 共 6 个，合计 12 个，所以集合 A 中有 12 个元素。题目给的是 Z 而不是 N*，因此负因数不能漏掉，这是本题的主要失分点。",
+  "subject": "math",
+  "choices": [],
+  "verify": "2*6",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h300_q8",
+  "topicId": "mat_h300",
+  "prompt": "已知集合 A={x | ax^2+2x+1=0} 中只有一个元素，则实数 a 的取值是（　）",
+  "question": "已知集合 A={x | ax^2+2x+1=0} 中只有一个元素，则实数 a 的取值是（　）",
+  "options": [
+   {"label": "A", "text": "1"},
+   {"label": "B", "text": "0"},
+   {"label": "C", "text": "0 或 1"},
+   {"label": "D", "text": "0 或 -1"}
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "集合中只有一个元素，说明方程 ax^2+2x+1=0 只有一个实数根，要按 a 是否为 0 分类讨论。当 a=0 时方程变成一次方程 2x+1=0，只有一个根 x=-1/2；当 a≠0 时是二次方程，有两个相等实根须判别式 4-4a=0，得 a=1。两种情况都符合，所以 a=0 或 a=1。漏掉 a=0 是本题最典型的错误。",
+  "subject": "math",
+  "choices": [
+   {"label": "A", "text": "1"},
+   {"label": "B", "text": "0"},
+   {"label": "C", "text": "0 或 1"},
+   {"label": "D", "text": "0 或 -1"}
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h301_q6",
+  "topicId": "mat_h301",
+  "prompt": "写出集合 M={1,2,3} 的所有子集，并指出其中真子集有几个。",
+  "question": "写出集合 M={1,2,3} 的所有子集，并指出其中真子集有几个。",
+  "options": [],
+  "answer": "子集共 8 个：∅、{1}、{2}、{3}、{1,2}、{1,3}、{2,3}、{1,2,3}；其中真子集有 7 个。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "含 3 个元素的集合，子集个数是 2^3=8 个。按元素个数分类枚举：不含元素的是空集 1 个，含 1 个元素的有 {1}、{2}、{3} 共 3 个，含 2 个元素的有 {1,2}、{1,3}、{2,3} 共 3 个，含 3 个元素的是 {1,2,3} 本身 1 个，合计 8 个。真子集要求与原集合不相等，所以要去掉 {1,2,3} 这一个，共 7 个。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "按元素个数分类枚举：0 个、1 个、2 个、3 个元素的子集",
+   "空集是任何集合的子集，写子集时不能漏掉",
+   "集合本身不是自己的真子集，所以真子集比子集少 1 个，共 7 个"
+  ]
+ },
+ {
+  "id": "mat_h301_q7",
+  "topicId": "mat_h301",
+  "prompt": "已知集合 A={1,2,3,4}，B={2,4}，则满足 B⊆C⊆A 的集合 C 的个数是（　）",
+  "question": "已知集合 A={1,2,3,4}，B={2,4}，则满足 B⊆C⊆A 的集合 C 的个数是（　）",
+  "options": [
+   {"label": "A", "text": "2"},
+   {"label": "B", "text": "4"},
+   {"label": "C", "text": "6"},
+   {"label": "D", "text": "8"}
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "C 必须包含 B 的全部元素 2 和 4，又不能超出 A 的范围，所以 C 只能由 B 再加上 {1,3} 的某一部分组成。{1,3} 共有 2^2=4 个子集，分别是 ∅、{1}、{3}、{1,3}，与 B 合并后得到 {2,4}、{1,2,4}、{2,3,4}、{1,2,3,4}，各不相同，所以满足条件的 C 有 4 个。",
+  "subject": "math",
+  "choices": [
+   {"label": "A", "text": "2"},
+   {"label": "B", "text": "4"},
+   {"label": "C", "text": "6"},
+   {"label": "D", "text": "8"}
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h301_q8",
+  "topicId": "mat_h301",
+  "prompt": "已知集合 A={x | x^2-3x+2=0}，B={x | ax-1=0}，若 B⊆A，则实数 a 的所有取值组成的集合是____。",
+  "question": "已知集合 A={x | x^2-3x+2=0}，B={x | ax-1=0}，若 B⊆A，则实数 a 的所有取值组成的集合是____。",
+  "options": [],
+  "answer": "{0, 1/2, 1}",
+  "type": "fill",
+  "difficulty": "hard",
+  "explanation": "先解 x^2-3x+2=0，得 x=1 或 x=2，所以 A={1,2}。当 a=0 时，方程 ax-1=0 即 -1=0 无解，B 是空集，而空集是任何集合的子集，符合要求；当 a≠0 时，B={1/a}，要 B⊆A 须 1/a=1 或 1/a=2，得 a=1 或 a=1/2。综上 a 的取值为 0、1/2、1。只算出 a=1、1/2 而漏掉空集的情形，是本题最常见的错误。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h302_q6",
+  "topicId": "mat_h302",
+  "prompt": "已知集合 M={0,1,2}，N={2,3}，则 M∪N 中所有元素的和是多少？",
+  "question": "已知集合 M={0,1,2}，N={2,3}，则 M∪N 中所有元素的和是多少？",
+  "options": [],
+  "answer": "6",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "M∪N 是由属于 M 或属于 N 的所有元素组成的集合，公共元素 2 由于集合元素的互异性只能写一次，所以 M∪N={0,1,2,3}。这些元素的和是 0+1+2+3=6。若把公共元素 2 重复算一次得到 8，就是忽略了集合中元素不能重复这一性质。",
+  "subject": "math",
+  "choices": [],
+  "verify": "0+1+2+3",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h302_q7",
+  "topicId": "mat_h302",
+  "prompt": "已知集合 A={x | 1<x<4}，B={x | x≤a}，若 A⊆B，则实数 a 的取值范围是（　）",
+  "question": "已知集合 A={x | 1<x<4}，B={x | x≤a}，若 A⊆B，则实数 a 的取值范围是（　）",
+  "options": [
+   {"label": "A", "text": "a<4"},
+   {"label": "B", "text": "a≤1"},
+   {"label": "C", "text": "a>1"},
+   {"label": "D", "text": "a≥4"}
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "A⊆B 表示 A 中每一个元素都在 B 中，即所有满足 1<x<4 的 x 都要满足 x≤a，因此 a 不能小于 A 中的任何一个数，必须 a≥4。若 a<4，取 A 中满足 a<x<4 的数（如 x=(a+4)/2），它就不属于 B，包含关系不成立。画数轴可以直观看出 B 要盖住整个区间 (1,4)。",
+  "subject": "math",
+  "choices": [
+   {"label": "A", "text": "a<4"},
+   {"label": "B", "text": "a≤1"},
+   {"label": "C", "text": "a>1"},
+   {"label": "D", "text": "a≥4"}
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h302_q8",
+  "topicId": "mat_h302",
+  "prompt": "某班共有 45 名学生，其中参加数学兴趣小组的有 25 人，参加物理兴趣小组的有 20 人，两个小组都参加的有 10 人。求至少参加一个小组的人数和两个小组都没有参加的人数。",
+  "question": "某班共有 45 名学生，其中参加数学兴趣小组的有 25 人，参加物理兴趣小组的有 20 人，两个小组都参加的有 10 人。求至少参加一个小组的人数和两个小组都没有参加的人数。",
+  "options": [],
+  "answer": "至少参加一个小组的有 35 人，两个小组都没有参加的有 10 人。",
+  "type": "short-answer",
+  "difficulty": "hard",
+  "explanation": "设参加数学小组的学生组成集合 A，参加物理小组的组成集合 B，则 card(A)=25，card(B)=20，card(A∩B)=10。根据容斥关系 card(A∪B)=card(A)+card(B)-card(A∩B)=25+20-10=35，即至少参加一个小组的有 35 人。全班共 45 人，所以两个小组都没有参加的有 45-35=10 人。这 10 名同学在两个小组中都被数了一次，因此要减去。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "用容斥关系 card(A∪B)=card(A)+card(B)-card(A∩B)",
+   "25+20-10=35 人，即至少参加一个小组的人数",
+   "全班 45 人减去 35 人，得两个小组都没参加的 10 人"
+  ]
+ }
+]

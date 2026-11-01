@@ -1,0 +1,884 @@
+[
+ {
+  "id": "mat_h369_q6",
+  "topicId": "mat_h369",
+  "prompt": "两个大小分别为 6 N 和 8 N 的共点力互相垂直，它们的合力大小等于（　）",
+  "question": "两个大小分别为 6 N 和 8 N 的共点力互相垂直，它们的合力大小等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "2 N"
+   },
+   {
+    "label": "B",
+    "text": "10 N"
+   },
+   {
+    "label": "C",
+    "text": "14 N"
+   },
+   {
+    "label": "D",
+    "text": "48 N"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "两个互相垂直的力作用在同一点，合力与它们构成直角三角形，由勾股定理得合力大小为 √(6²+8²)=10 N。错选 14 N 是把两个力直接相加，那只在两力同向时成立；错选 2 N 是把两力相减，对应反向情形。合力的大小随夹角增大而减小，90° 时既不是和也不是差。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "2 N"
+   },
+   {
+    "label": "B",
+    "text": "10 N"
+   },
+   {
+    "label": "C",
+    "text": "14 N"
+   },
+   {
+    "label": "D",
+    "text": "48 N"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h369_q7",
+  "topicId": "mat_h369",
+  "prompt": "一个大小为 20 N 的力与水平方向成 60° 角，物体沿水平方向移动了 5 m，这个力对物体做的功是____J。",
+  "question": "一个大小为 20 N 的力与水平方向成 60° 角，物体沿水平方向移动了 5 m，这个力对物体做的功是____J。",
+  "options": [],
+  "answer": "50",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "功等于力与位移的数量积，即 W=|F||s|cosθ。这里 |F|=20 N，|s|=5 m，夹角 θ=60°，所以 W=20×5×cos60°=20×5×0.5=50 J。常见错误是漏掉 cosθ 直接算成 100 J，那等于假设力与位移同向，而实际只有沿位移方向的分力 10 N 在做功。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h369_q8",
+  "topicId": "mat_h369",
+  "prompt": "一物体在水平地面上沿直线移动了 6 m，运动中受到水平向前的拉力 15 N 和竖直向上的支持力 40 N，则这两个力对物体做的总功是多少焦耳？",
+  "question": "一物体在水平地面上沿直线移动了 6 m，运动中受到水平向前的拉力 15 N 和竖直向上的支持力 40 N，则这两个力对物体做的总功是多少焦耳？",
+  "options": [],
+  "answer": "90",
+  "type": "numeric",
+  "difficulty": "hard",
+  "explanation": "支持力竖直向上而位移沿水平方向，二者夹角为 90°，cos90°=0，所以支持力做功为零。拉力与位移同向，做功 15×6=90 J。总功等于各力做功的代数和，即 90+0=90 J。把支持力也乘上位移算出 240 J 是本题最典型的错误，判断一个力是否做功要先看力与位移的夹角。",
+  "subject": "math",
+  "choices": [],
+  "verify": "15*6+40*0",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h370_q6",
+  "topicId": "mat_h370",
+  "prompt": "在△ABC 中，已知 a=8，b=6，A=60°，则 sinB 等于（　）",
+  "question": "在△ABC 中，已知 a=8，b=6，A=60°，则 sinB 等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "√3/2"
+   },
+   {
+    "label": "B",
+    "text": "3/8"
+   },
+   {
+    "label": "C",
+    "text": "3√3/8"
+   },
+   {
+    "label": "D",
+    "text": "4√3/3"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "由正弦定理 a/sinA=b/sinB 得 sinB=b·sinA/a=6×(√3/2)÷8=3√3/8。由于 a>b，所以 A>B，B 是锐角，这个值小于 1 也符合实际。错选 √3/2 是把 sinA 直接当作 sinB，错选 3/8 是漏乘了 sinA。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "√3/2"
+   },
+   {
+    "label": "B",
+    "text": "3/8"
+   },
+   {
+    "label": "C",
+    "text": "3√3/8"
+   },
+   {
+    "label": "D",
+    "text": "4√3/3"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h370_q7",
+  "topicId": "mat_h370",
+  "prompt": "在△ABC 中，b=3，c=5，A=120°，求边 a 的长，并求△ABC 的面积。",
+  "question": "在△ABC 中，b=3，c=5，A=120°，求边 a 的长，并求△ABC 的面积。",
+  "options": [],
+  "answer": "由余弦定理 a²=b²+c²-2bc·cosA=9+25-2×3×5×(-1/2)=49，故 a=7；面积 S=(1/2)bc·sinA=(1/2)×3×5×(√3/2)=15√3/4。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "已知两边及其夹角，第三边用余弦定理求：a²=b²+c²-2bc·cosA。A=120° 时 cosA=-1/2，所以 -2bc·cosA=+15，得 a²=34+15=49，a=7。求面积要用两边及其夹角的正弦，S=(1/2)bc·sinA=(1/2)×3×5×sin120°=15√3/4。若把 cos120° 误取 1/2，会得到 a²=19 的错误结果。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "用余弦定理 a²=b²+c²-2bc·cosA 求第三边，注意 cos120°=-1/2 使减项变加项",
+   "算出 a²=49，边长取正值 a=7",
+   "用面积公式 S=(1/2)bc·sinA 得 15√3/4"
+  ]
+ },
+ {
+  "id": "mat_h370_q8",
+  "topicId": "mat_h370",
+  "prompt": "在△ABC 中，a=6，b=8，A=30°，则满足条件的三角形解的个数是（　）",
+  "question": "在△ABC 中，a=6，b=8，A=30°，则满足条件的三角形解的个数是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "两个解"
+   },
+   {
+    "label": "B",
+    "text": "唯一解"
+   },
+   {
+    "label": "C",
+    "text": "无解"
+   },
+   {
+    "label": "D",
+    "text": "三个解"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "先求 b 边上的高 h=b·sinA=8×0.5=4。因为 A 为锐角，且 h<a<b，即 4<6<8，所以以 A 为顶点、a=6 为半径画弧会与另一边交于两点，三角形有两个解。若 a<h 则无解，若 a=b 或 a≥b 则唯一，若 a=h 则恰有一个直角三角形解，这类判断必须比较 a 与 b·sinA、b 的大小关系而不能只看角度。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "两个解"
+   },
+   {
+    "label": "B",
+    "text": "唯一解"
+   },
+   {
+    "label": "C",
+    "text": "无解"
+   },
+   {
+    "label": "D",
+    "text": "三个解"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h371_q6",
+  "topicId": "mat_h371",
+  "prompt": "若复数 z=(m+1)+(m-1)i（m 为实数）是实数，则 m 的值为____。",
+  "question": "若复数 z=(m+1)+(m-1)i（m 为实数）是实数，则 m 的值为____。",
+  "options": [],
+  "answer": "1",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "复数为实数的充要条件是虚部等于零，即 m-1=0，解得 m=1。此时 z=2，确实是实数。要注意只令虚部为零，不能同时要求实部为零，否则会错误地得到纯虚数的条件；实部 m+1=2 并不影响它是实数。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h371_q7",
+  "topicId": "mat_h371",
+  "prompt": "已知 a、b 为实数，且 a+(b-3)i=4+2i，求 ab 的值。",
+  "question": "已知 a、b 为实数，且 a+(b-3)i=4+2i，求 ab 的值。",
+  "options": [],
+  "answer": "20",
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "两个复数相等的充要条件是实部与虚部分别相等，于是 a=4，b-3=2，得 b=5，所以 ab=4×5=20。这类题的关键是把等式两边的实部、虚部一一对应，不能把复数当成实数整体比较大小，也不能只比较实部。",
+  "subject": "math",
+  "choices": [],
+  "verify": "4*5",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h371_q8",
+  "topicId": "mat_h371",
+  "prompt": "若复数 z=(a²-4)+(a-2)i（a 为实数）是纯虚数，则 a 的值是（　）",
+  "question": "若复数 z=(a²-4)+(a-2)i（a 为实数）是纯虚数，则 a 的值是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "2"
+   },
+   {
+    "label": "B",
+    "text": "0"
+   },
+   {
+    "label": "C",
+    "text": "±2"
+   },
+   {
+    "label": "D",
+    "text": "-2"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "纯虚数要求实部为零且虚部不为零。由 a²-4=0 得 a=2 或 a=-2；当 a=2 时虚部 a-2=0，此时 z=0 是实数而不是纯虚数，必须舍去；当 a=-2 时虚部为 -4≠0，符合要求。所以 a=-2。只解实部为零而忘记检验虚部非零，就会误选 ±2，这是本题设置的陷阱。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "2"
+   },
+   {
+    "label": "B",
+    "text": "0"
+   },
+   {
+    "label": "C",
+    "text": "±2"
+   },
+   {
+    "label": "D",
+    "text": "-2"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h372_q6",
+  "topicId": "mat_h372",
+  "prompt": "说明为什么方程 x²+4=0 在实数集内没有解，而引入虚数单位 i 后它有解，并写出它的解。",
+  "question": "说明为什么方程 x²+4=0 在实数集内没有解，而引入虚数单位 i 后它有解，并写出它的解。",
+  "options": [],
+  "answer": "在实数集内任何实数的平方都非负，而 x²=-4 要求平方为负数，故无解；引入满足 i²=-1 的虚数单位后，x²=-4 可写成 x²=(2i)²，解得 x=±2i。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "数系扩充的动因就是旧数集里做不下去的运算。实数平方非负，所以 x²+4=0 无实数解。引入虚数单位 i 并规定 i²=-1 后，x²=-4 化为 x²=(2i)²，开方得 x=±2i。这两个数不是实数，但代回原方程有 (2i)²+4=-4+4=0，说明扩充后方程确实有解。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "实数集内平方非负，x²=-4 不可能成立",
+   "规定 i²=-1 后负数可以开平方，-4=(2i)²",
+   "方程的解为 x=2i 与 x=-2i"
+  ]
+ },
+ {
+  "id": "mat_h372_q7",
+  "topicId": "mat_h372",
+  "prompt": "设 i 为虚数单位，则 i^2027 的值是（　）",
+  "question": "设 i 为虚数单位，则 i^2027 的值是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "i"
+   },
+   {
+    "label": "B",
+    "text": "-i"
+   },
+   {
+    "label": "C",
+    "text": "1"
+   },
+   {
+    "label": "D",
+    "text": "-1"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "i 的正整数次幂以 4 为周期循环：i¹=i，i²=-1，i³=-i，i⁴=1。因为 2027=4×506+3，所以 i^2027=i³=-i。计算时只要把指数除以 4 看余数，余 0 得 1、余 1 得 i、余 2 得 -1、余 3 得 -i；直接把 2027 当作 2027 次相乘或误用余数 2 都会出错。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "i"
+   },
+   {
+    "label": "B",
+    "text": "-i"
+   },
+   {
+    "label": "C",
+    "text": "1"
+   },
+   {
+    "label": "D",
+    "text": "-1"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h372_q8",
+  "topicId": "mat_h372",
+  "prompt": "设 i 为虚数单位，则 (1+i)^4+i^100 的值是____。",
+  "question": "设 i 为虚数单位，则 (1+i)^4+i^100 的值是____。",
+  "options": [],
+  "answer": "-3",
+  "type": "fill",
+  "difficulty": "hard",
+  "explanation": "先算 (1+i)²=1+2i+i²=2i，所以 (1+i)^4=(2i)²=4i²=-4；又 100=4×25，故 i^100=1。两者相加得 -4+1=-3。本题既要连续两次使用 i²=-1 化简乘方，又要用 i 的幂的周期性处理 i^100，把 (1+i)^4 直接展开成 1+4i+… 容易在中间项上算错。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h373_q6",
+  "topicId": "mat_h373",
+  "prompt": "复数 z=8+15i 在复平面内对应的点到原点的距离是多少？",
+  "question": "复数 z=8+15i 在复平面内对应的点到原点的距离是多少？",
+  "options": [],
+  "answer": "17",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "复数 z=a+bi 在复平面内对应点 Z(a,b)，它到原点的距离就是复数的模 |z|=√(a²+b²)。这里 a=8，b=15，所以 |z|=√(64+225)=√289=17。把 8 与 15 直接相加得到 23 是常见错误，模不是实部与虚部的和。",
+  "subject": "math",
+  "choices": [],
+  "verify": "(8*8+15*15)**0.5",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h373_q7",
+  "topicId": "mat_h373",
+  "prompt": "若复数 z=(2-m)+(m-1)i（m 为实数）在复平面内对应的点位于第二象限，则 m 的取值范围是（　）",
+  "question": "若复数 z=(2-m)+(m-1)i（m 为实数）在复平面内对应的点位于第二象限，则 m 的取值范围是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "m>2"
+   },
+   {
+    "label": "B",
+    "text": "1<m<2"
+   },
+   {
+    "label": "C",
+    "text": "m<1"
+   },
+   {
+    "label": "D",
+    "text": "m>1"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "第二象限的点横坐标为负、纵坐标为正，即实部 2-m<0 且虚部 m-1>0，解得 m>2 且 m>1，取交集得 m>2。错选 1<m<2 是把第二象限误记为一负一正却解反了方向，错选 m>1 是只用了虚部为正这一个条件。判断象限必须先明确实部对应横坐标、虚部对应纵坐标。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "m>2"
+   },
+   {
+    "label": "B",
+    "text": "1<m<2"
+   },
+   {
+    "label": "C",
+    "text": "m<1"
+   },
+   {
+    "label": "D",
+    "text": "m>1"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h373_q8",
+  "topicId": "mat_h373",
+  "prompt": "已知复数 z 在复平面内对应的点在以原点为圆心、2 为半径的圆上，求 |z-3+4i| 的最大值与最小值，并说明理由。",
+  "question": "已知复数 z 在复平面内对应的点在以原点为圆心、2 为半径的圆上，求 |z-3+4i| 的最大值与最小值，并说明理由。",
+  "options": [],
+  "answer": "最大值为 7，最小值为 3。因为 |z|=2，而 |z-3+4i|=|z-(3-4i)| 表示点 Z 与点 P(3,-4) 的距离，|OP|=5，所以最大距离为 5+2=7，最小距离为 5-2=3。",
+  "type": "short-answer",
+  "difficulty": "hard",
+  "explanation": "把 |z-3+4i| 改写成 |z-(3-4i)|，它就表示点 Z 到定点 P(3,-4) 的距离。点 P 到圆心的距离 |OP|=√(9+16)=5，圆半径为 2，由于原点在圆外，直线 OP 与圆的两个交点分别给出距离的最大值 5+2=7 与最小值 5-2=3。把两个模直接相减或相加而不判断点与圆的位置关系，是这类最值题最常见的失误。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "|z|=2 说明 z 对应点在以原点为圆心、2 为半径的圆上",
+   "|z-3+4i| 表示圆上点到定点 P(3,-4) 的距离，|OP|=5",
+   "由圆的几何性质得最大值 5+2=7、最小值 5-2=3"
+  ]
+ },
+ {
+  "id": "mat_h374_q6",
+  "topicId": "mat_h374",
+  "prompt": "计算 (3+2i)(1-i) 的结果是（　）",
+  "question": "计算 (3+2i)(1-i) 的结果是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "5+i"
+   },
+   {
+    "label": "B",
+    "text": "1-i"
+   },
+   {
+    "label": "C",
+    "text": "5-i"
+   },
+   {
+    "label": "D",
+    "text": "1+i"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "按多项式乘法展开得 (3+2i)(1-i)=3-3i+2i-2i²。因为 i²=-1，最后一项 -2i²=+2，合并实部 3+2=5、虚部 -3+2=-1，结果为 5-i。错选 1-i 是把 i² 当成 +1 使实部变成 3-2；错选 5+i 是虚部符号处理反了。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "5+i"
+   },
+   {
+    "label": "B",
+    "text": "1-i"
+   },
+   {
+    "label": "C",
+    "text": "5-i"
+   },
+   {
+    "label": "D",
+    "text": "1+i"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h374_q7",
+  "topicId": "mat_h374",
+  "prompt": "复数 (4+2i)/(1-i) 化简的结果是____。",
+  "question": "复数 (4+2i)/(1-i) 化简的结果是____。",
+  "options": [],
+  "answer": "1+3i",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "复数除法的做法是分子、分母同乘分母的共轭复数 1+i，使分母变为实数：(4+2i)/(1-i)=(4+2i)(1+i)/[(1-i)(1+i)]=(4+4i+2i+2i²)/2=(2+6i)/2=1+3i。关键是分母 (1-i)(1+i)=1-i²=2 为实数，若漏掉这一步或把 i² 当作 +1，结果就会偏离。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h374_q8",
+  "topicId": "mat_h374",
+  "prompt": "设 i 为虚数单位，求复数 z=(1+2i)(2+i) 的模。",
+  "question": "设 i 为虚数单位，求复数 z=(1+2i)(2+i) 的模。",
+  "options": [],
+  "answer": "5",
+  "type": "numeric",
+  "difficulty": "hard",
+  "explanation": "先化简：z=(1+2i)(2+i)=2+i+4i+2i²=2+5i-2=5i，所以 |z|=5。也可以利用模的性质 |z1z2|=|z1||z2|=√5×√5=5，两条路殊途同归。只算出 z=5i 就停笔、误把模当成 5i 的虚部 5 以外的量，是常见疏漏。",
+  "subject": "math",
+  "choices": [],
+  "verify": "((1*1+2*2)*(2*2+1*1))**0.5",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h375_q6",
+  "topicId": "mat_h375",
+  "prompt": "已知 z1=-1+3i，z2=2-i，则 z1+z2 等于（　）",
+  "question": "已知 z1=-1+3i，z2=2-i，则 z1+z2 等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "3+2i"
+   },
+   {
+    "label": "B",
+    "text": "1+4i"
+   },
+   {
+    "label": "C",
+    "text": "-3+2i"
+   },
+   {
+    "label": "D",
+    "text": "1+2i"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "复数相加时实部与实部相加、虚部与虚部相加：实部 -1+2=1，虚部 3+(-1)=2，所以 z1+z2=1+2i。错选 3+2i 是把实部算成 2-(-1)；错选 1+4i 是把虚部算成 3+1 时符号看反。应牢记加减法只在同类项之间进行，虚数单位 i 始终保持不变。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "3+2i"
+   },
+   {
+    "label": "B",
+    "text": "1+4i"
+   },
+   {
+    "label": "C",
+    "text": "-3+2i"
+   },
+   {
+    "label": "D",
+    "text": "1+2i"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h375_q7",
+  "topicId": "mat_h375",
+  "prompt": "已知复数 z1=1+i，z2=3-2i，求 |z1-z2| 的值，并说明这个值在复平面内的几何意义。",
+  "question": "已知复数 z1=1+i，z2=3-2i，求 |z1-z2| 的值，并说明这个值在复平面内的几何意义。",
+  "options": [],
+  "answer": "z1-z2=(1-3)+(1+2)i=-2+3i，|z1-z2|=√(4+9)=√13；它表示复平面内 z1、z2 对应两点之间的距离为 √13。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "复数的减法按实部、虚部分别相减：z1-z2=(1-3)+(1-(-2))i=-2+3i。其模 |z1-z2|=√(4+9)=√13。由减法的几何意义，z1-z2 对应向量 Z2Z1，所以它的模就是两点间的距离，本题中两点距离为 √13。把虚部写成 1-2=-1 是这里最容易犯的符号错误。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "先作减法：z1-z2=-2+3i",
+   "由模的定义 |z1-z2|=√((-2)²+3²)=√13",
+   "|z1-z2| 的几何意义是两点 Z1、Z2 之间的距离"
+  ]
+ },
+ {
+  "id": "mat_h375_q8",
+  "topicId": "mat_h375",
+  "prompt": "若复数 z 满足 |z-1|=2，则 |z| 的最大值是（　）",
+  "question": "若复数 z 满足 |z-1|=2，则 |z| 的最大值是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "4"
+   },
+   {
+    "label": "B",
+    "text": "1"
+   },
+   {
+    "label": "C",
+    "text": "2"
+   },
+   {
+    "label": "D",
+    "text": "3"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "|z-1|=2 表示 z 对应的点在以 (1,0) 为圆心、2 为半径的圆上。|z| 是该点到原点的距离，圆心到原点距离为 1，故最大值为 1+2=3，在 z=3 时取到。也可用三角不等式 |z|=|(z-1)+1|≤|z-1|+|1|=3。误选 2 是只看到半径而漏掉圆心到原点的偏移量。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "4"
+   },
+   {
+    "label": "B",
+    "text": "1"
+   },
+   {
+    "label": "C",
+    "text": "2"
+   },
+   {
+    "label": "D",
+    "text": "3"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h376_q6",
+  "topicId": "mat_h376",
+  "prompt": "设 i 为虚数单位，则 i(3-4i) 化简的结果是____。",
+  "question": "设 i 为虚数单位，则 i(3-4i) 化简的结果是____。",
+  "options": [],
+  "answer": "4+3i",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "按分配律展开：i(3-4i)=3i-4i²。因为 i²=-1，所以 -4i²=+4，化简得 4+3i。这里的关键是把 i² 换成 -1 后改变符号，若直接保留 i² 或误认为 i²=1，就会得到 3i-4 或 3i+4 的错误结果。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h376_q7",
+  "topicId": "mat_h376",
+  "prompt": "已知复数 z 满足 (1+i)z=3-i（i 为虚数单位），求 z 的实部。",
+  "question": "已知复数 z 满足 (1+i)z=3-i（i 为虚数单位），求 z 的实部。",
+  "options": [],
+  "answer": "1",
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "设 z=a+bi，则 (1+i)(a+bi)=(a-b)+(a+b)i=3-i，由复数相等得 a-b=3，a+b=-1，两式相加得 2a=2，即 a=1（同时可得 b=-2，z=1-2i）。也可以直接做除法 z=(3-i)/(1+i)=(3-i)(1-i)/2=1-2i，两种方法结果一致。只比较实部而忽略虚部方程，是解不出的。",
+  "subject": "math",
+  "choices": [],
+  "verify": "(3+(-1))/2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h376_q8",
+  "topicId": "mat_h376",
+  "prompt": "已知复数 z 满足 (1+i)z=2i（i 为虚数单位），则 |z| 等于（　）",
+  "question": "已知复数 z 满足 (1+i)z=2i（i 为虚数单位），则 |z| 等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "√2"
+   },
+   {
+    "label": "B",
+    "text": "2"
+   },
+   {
+    "label": "C",
+    "text": "1"
+   },
+   {
+    "label": "D",
+    "text": "√5"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "由 z=2i/(1+i)，分子分母同乘 1-i 得 z=2i(1-i)/2=i(1-i)=i-i²=1+i，所以 |z|=√(1+1)=√2。也可先取模：|1+i||z|=|2i|，即 √2|z|=2，得 |z|=√2。错选 1 是没有开方直接取实部或虚部，错选 2 是漏除了 √2。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "√2"
+   },
+   {
+    "label": "B",
+    "text": "2"
+   },
+   {
+    "label": "C",
+    "text": "1"
+   },
+   {
+    "label": "D",
+    "text": "√5"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h377_q6",
+  "topicId": "mat_h377",
+  "prompt": "指出下列几何体各属于多面体还是旋转体：①三棱柱　②圆锥　③球　④正方体。",
+  "question": "指出下列几何体各属于多面体还是旋转体：①三棱柱　②圆锥　③球　④正方体。",
+  "options": [],
+  "answer": "①三棱柱是多面体；②圆锥是旋转体；③球是旋转体；④正方体是多面体。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "多面体是由平面多边形围成的封闭几何体，三棱柱和正方体的所有面都是平面多边形，属于多面体。旋转体是由平面图形绕一条定直线旋转一周形成的，圆锥由直角三角形绕直角边旋转得到、球由半圆绕直径旋转得到，它们的侧面或表面含有曲面，属于旋转体。只看外形是否“圆”并不够，判断标准是面是否为平面。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "多面体由若干个平面多边形围成，三棱柱、正方体的面都是平面多边形",
+   "旋转体由平面图形绕一条直线旋转形成，圆锥、球的面含曲面",
+   "判断依据是围成几何体的面中有没有曲面"
+  ]
+ },
+ {
+  "id": "mat_h377_q7",
+  "topicId": "mat_h377",
+  "prompt": "下列几何体中，不能由平面图形绕一条直线旋转一周得到的是（　）",
+  "question": "下列几何体中，不能由平面图形绕一条直线旋转一周得到的是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "圆柱"
+   },
+   {
+    "label": "B",
+    "text": "圆锥"
+   },
+   {
+    "label": "C",
+    "text": "球"
+   },
+   {
+    "label": "D",
+    "text": "三棱柱"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "圆柱可由矩形绕一边旋转得到，圆锥可由直角三角形绕一条直角边旋转得到，球可由半圆绕直径所在直线旋转得到，它们都是旋转体。三棱柱的侧面是平面矩形，旋转得到的曲面不可能是平面多边形，所以三棱柱不是旋转体，不能这样生成。把“底面是三角形”误当作可以旋转，是常见的判断错误。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "圆柱"
+   },
+   {
+    "label": "B",
+    "text": "圆锥"
+   },
+   {
+    "label": "C",
+    "text": "球"
+   },
+   {
+    "label": "D",
+    "text": "三棱柱"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h377_q8",
+  "topicId": "mat_h377",
+  "prompt": "若一个多面体的每个面都是三角形，且它共有 8 个面，则这个多面体的棱数为____。",
+  "question": "若一个多面体的每个面都是三角形，且它共有 8 个面，则这个多面体的棱数为____。",
+  "options": [],
+  "answer": "12",
+  "type": "fill",
+  "difficulty": "hard",
+  "explanation": "每个面都是三角形，8 个面一共提供 8×3=24 条“面边”，而每条棱恰被两个面共用，所以棱数为 24÷2=12。也可以先由欧拉公式配合面数、顶点数验证。直接把 24 当作棱数是忘记每条棱被重复计算了一次，这是本题的核心易错点。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h378_q6",
+  "topicId": "mat_h378",
+  "prompt": "一个棱柱共有 15 条棱，则它的底面是几边形？",
+  "question": "一个棱柱共有 15 条棱，则它的底面是几边形？",
+  "options": [],
+  "answer": "5",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "n 棱柱有 3n 条棱：两个底面各有 n 条棱，另有 n 条侧棱。由 3n=15 得 n=5，所以底面是五边形，这个棱柱是五棱柱。误用 2n 求棱数（只数底面棱）会得到 7.5 这样的小数，说明记错了棱柱的棱数公式。",
+  "subject": "math",
+  "choices": [],
+  "verify": "15/3",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h378_q7",
+  "topicId": "mat_h378",
+  "prompt": "一个棱台的上、下底面分别是边长为 2 和 4 的正方形，则它每个侧面的形状一定是（　）",
+  "question": "一个棱台的上、下底面分别是边长为 2 和 4 的正方形，则它每个侧面的形状一定是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "平行四边形"
+   },
+   {
+    "label": "B",
+    "text": "矩形"
+   },
+   {
+    "label": "C",
+    "text": "梯形"
+   },
+   {
+    "label": "D",
+    "text": "三角形"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "棱台是用平行于底面的平面截棱锥得到的，上、下底面互相平行且相似，侧面由截得的小棱锥侧面被平行于底边的线段截出，两条底边平行且长度不等，所以每个侧面都是梯形。若上、下底边长相等，棱台退化为棱柱，侧面才成为平行四边形，因此“一定是梯形”而非平行四边形。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "平行四边形"
+   },
+   {
+    "label": "B",
+    "text": "矩形"
+   },
+   {
+    "label": "C",
+    "text": "梯形"
+   },
+   {
+    "label": "D",
+    "text": "三角形"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h378_q8",
+  "topicId": "mat_h378",
+  "prompt": "一个正四棱台的上、下底面分别是边长为 4 和 8 的正方形，高为 3，求它的一条侧棱的长。",
+  "question": "一个正四棱台的上、下底面分别是边长为 4 和 8 的正方形，高为 3，求它的一条侧棱的长。",
+  "options": [],
+  "answer": "上、下底面对角线长分别为 4√2 与 8√2，其一半为 2√2 与 4√2，两者之差为 2√2；由侧棱、高与该水平差构成的直角三角形得 侧棱²=3²+(2√2)²=9+8=17，故侧棱长为 √17。",
+  "type": "short-answer",
+  "difficulty": "hard",
+  "explanation": "正四棱台的侧棱、高以及上、下底面中心到对应顶点的水平距离之差构成直角三角形。下底面对角线为 8√2、上底面对角线为 4√2，它们的一半分别为 4√2 与 2√2，差为 2√2，这就是水平方向的直角边；高为 3，于是侧棱²=3²+(2√2)²=9+8=17，侧棱长为 √17。直接用边长之差 4 当直角边、或把对角线长当作水平距离，都会算错。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "把侧棱放到以上、下底面中心与对应顶点构成的直角三角形中",
+   "上、下底面对角线的一半分别为 2√2、4√2，水平直角边长为 2√2",
+   "侧棱²=高²+水平直角边²=9+8=17，侧棱长为 √17"
+  ]
+ }
+]

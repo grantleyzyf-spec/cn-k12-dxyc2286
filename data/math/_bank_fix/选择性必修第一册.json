@@ -1,0 +1,96 @@
+[
+ {
+  "id": "mat_h448_q7",
+  "topicId": "mat_h448",
+  "type": "choice",
+  "difficulty": "basic",
+  "subject": "math",
+  "prompt": "若抛物线的准线方程是 x=3，焦点落在 x 轴负半轴上，则它的标准方程为（　）",
+  "question": "若抛物线的准线方程是 x=3，焦点落在 x 轴负半轴上，则它的标准方程为（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "y²=−12x"
+   },
+   {
+    "label": "B",
+    "text": "y²=12x"
+   },
+   {
+    "label": "C",
+    "text": "x²=−12y"
+   },
+   {
+    "label": "D",
+    "text": "y²=−6x"
+   }
+  ],
+  "choices": [
+   {
+    "label": "A",
+    "text": "y²=−12x"
+   },
+   {
+    "label": "B",
+    "text": "y²=12x"
+   },
+   {
+    "label": "C",
+    "text": "x²=−12y"
+   },
+   {
+    "label": "D",
+    "text": "y²=−6x"
+   }
+  ],
+  "answer": "A",
+  "explanation": "准线为 x=3 且焦点在 x 轴负半轴，说明抛物线开口向左、对称轴为 x 轴。设标准方程为 y²=−2px（p>0），其准线是 x=p/2，由 p/2=3 得 p=6，故方程为 y²=−12x，焦点为 (−3, 0)。若误写成 y²=12x，开口方向与焦点位置都会相反；若误写成 y²=−6x，则是把 2p 与 p 混淆，准线会变成 x=1.5。",
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h431_q4",
+  "topicId": "mat_h431",
+  "type": "numeric",
+  "difficulty": "standard",
+  "subject": "math",
+  "prompt": "求两条平行直线 5x−12y+7=0 与 5x−12y−6=0 之间的最短距离。",
+  "question": "求两条平行直线 5x−12y+7=0 与 5x−12y−6=0 之间的最短距离。",
+  "options": [],
+  "choices": [],
+  "answer": "1",
+  "explanation": "两条直线中 x、y 的系数完全一致，可直接用平行线距离公式 d=|C₁−C₂|/√(A²+B²)。此处 A=5、B=−12、C₁=7、C₂=−6，于是 |7−(−6)|=13，分母 √(25+144)=13，最短距离为 1。也可在第一条直线上取点，再求该点到第二条直线的距离，两种算法结果一致。",
+  "verify": "13/((5**2+(-12)**2)**0.5)",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h444_q3",
+  "topicId": "mat_h444",
+  "type": "fill",
+  "difficulty": "basic",
+  "subject": "math",
+  "prompt": "已知椭圆的方程为 x²/16+y²/7=1，则它的焦距等于____。",
+  "question": "已知椭圆的方程为 x²/16+y²/7=1，则它的焦距等于____。",
+  "options": [],
+  "choices": [],
+  "answer": "6",
+  "explanation": "由标准方程读出 a²=16、b²=7，焦点在 x 轴上，故 c²=a²−b²=16−7=9，c=3。焦距指的是两个焦点之间的距离，等于 2c=6；若把 c=3 直接当答案，就把半焦距与焦距混为一谈了。",
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h418_q4",
+  "topicId": "mat_h418",
+  "type": "numeric",
+  "difficulty": "basic",
+  "subject": "math",
+  "prompt": "已知空间向量 m=(−3，0，4)，求 |m| 的值。",
+  "question": "已知空间向量 m=(−3，0，4)，求 |m| 的值。",
+  "options": [],
+  "choices": [],
+  "answer": "5",
+  "explanation": "空间向量的模等于各分量平方和的算术平方根，即 |m|=√((−3)²+0²+4²)=√(9+0+16)=√25=5。分量取负号经平方后不影响结果，中间分量为 0 也要照常代入，不能跳过。",
+  "verify": "((-3)**2+0**2+4**2)**0.5",
+  "keypoints": []
+ }
+]

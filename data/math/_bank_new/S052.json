@@ -1,0 +1,892 @@
+[
+ {
+  "id": "mat_h489_q6",
+  "topicId": "mat_h489",
+  "prompt": "等比数列 {a_n} 中 a_1=3，公比 q=−2，则它的前 5 项和 S_5 等于（　）",
+  "question": "等比数列 {a_n} 中 a_1=3，公比 q=−2，则它的前 5 项和 S_5 等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "−33"
+   },
+   {
+    "label": "B",
+    "text": "33"
+   },
+   {
+    "label": "C",
+    "text": "93"
+   },
+   {
+    "label": "D",
+    "text": "15"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "公比 q=−2≠1，代入求和公式 S_5=3×[1−(−2)^5]/[1−(−2)]=3×(1+32)/3=33。也可逐项相加 3−6+12−24+48=33 核对。选 −33 是把公式分母的符号弄错，选 93 是漏掉了公比的负号。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "−33"
+   },
+   {
+    "label": "B",
+    "text": "33"
+   },
+   {
+    "label": "C",
+    "text": "93"
+   },
+   {
+    "label": "D",
+    "text": "15"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h489_q7",
+  "topicId": "mat_h489",
+  "prompt": "等比数列 {a_n} 的各项均为正数，且 a_2=6，a_4=24，则它的前 5 项和 S_5 = ____。",
+  "question": "等比数列 {a_n} 的各项均为正数，且 a_2=6，a_4=24，则它的前 5 项和 S_5 = ____。",
+  "options": [],
+  "answer": "93",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "由 a_4=a_2·q^2 得 q^2=4，又各项均为正数，故 q=2，再由 a_1·q=6 得 a_1=3。于是 S_5=3×(2^5−1)/(2−1)=3×31=93。若忽略“各项为正”这一条件而取 q=−2，会得到另一个错误结果，这是本题的易错点。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h489_q8",
+  "topicId": "mat_h489",
+  "prompt": "等比数列 {a_n} 的前 n 项和为 S_n，若 S_3=7，S_6=63，且公比 q 不等于 1，求 S_9 的值。",
+  "question": "等比数列 {a_n} 的前 n 项和为 S_n，若 S_3=7，S_6=63，且公比 q 不等于 1，求 S_9 的值。",
+  "options": [],
+  "answer": "511",
+  "type": "numeric",
+  "difficulty": "hard",
+  "explanation": "由 S_6=S_3+q^3·S_3 得 63=7(1+q^3)，所以 q^3=8，即 q=2。同理 S_9=S_3(1+q^3+q^6)=7×(1+8+64)=511。这里不必先求首项，利用“每 3 项一组仍成等比”的整体结构最省力，直接套 S_9=S_6+q^6·S_3 也可得到同一结果。",
+  "subject": "math",
+  "choices": [],
+  "verify": "7*(1+8+64)",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h490_q6",
+  "topicId": "mat_h490",
+  "prompt": "用数学归纳法证明 1+2+2^2+…+2^(n−1)=2^n−1（n 为正整数）时，第一步应验证的等式是（　）",
+  "question": "用数学归纳法证明 1+2+2^2+…+2^(n−1)=2^n−1（n 为正整数）时，第一步应验证的等式是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "当 n=1 时，左边=1，右边=2^1−1=1，等式成立"
+   },
+   {
+    "label": "B",
+    "text": "当 n=2 时，左边=3，右边=3，等式成立"
+   },
+   {
+    "label": "C",
+    "text": "当 n=0 时，左边=0，右边=0，等式成立"
+   },
+   {
+    "label": "D",
+    "text": "当 n=k 时，左边=1+2+…+2^(k−1)，右边=2^k−1，等式成立"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "命题中的 n 是正整数，第一步要验证的是使命题有意义的最小正整数 n=1 时的情形：左边只有首项 1，右边 2^1−1=1，两边相等。验证 n=2 或 n=0 都不符合“最小正整数”的要求，而验证 n=k 属于第二步的归纳假设，不是第一步。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "当 n=1 时，左边=1，右边=2^1−1=1，等式成立"
+   },
+   {
+    "label": "B",
+    "text": "当 n=2 时，左边=3，右边=3，等式成立"
+   },
+   {
+    "label": "C",
+    "text": "当 n=0 时，左边=0，右边=0，等式成立"
+   },
+   {
+    "label": "D",
+    "text": "当 n=k 时，左边=1+2+…+2^(k−1)，右边=2^k−1，等式成立"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h490_q7",
+  "topicId": "mat_h490",
+  "prompt": "用数学归纳法证明 1^2+2^2+…+n^2=n(n+1)(2n+1)/6（n 为正整数），请写出第二步中由 n=k 到 n=k+1 的推理要点。",
+  "question": "用数学归纳法证明 1^2+2^2+…+n^2=n(n+1)(2n+1)/6（n 为正整数），请写出第二步中由 n=k 到 n=k+1 的推理要点。",
+  "options": [],
+  "answer": "假设 n=k 时等式成立，再证明 n=k+1 时等式也成立，从而对一切正整数 n 成立。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "第二步的关键是把 n=k+1 时的和拆成“n=k 时的和”再加新增项 (k+1)^2，然后整体代入归纳假设。整理时要盯住目标式 (k+1)(k+2)(2k+3)/6 去凑因式，先提公因式 (k+1) 最省力。只写“代入假设化简即可”而不交代新增项与目标式，属于推理不完整。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "先写出归纳假设：1^2+2^2+…+k^2=k(k+1)(2k+1)/6",
+   "当 n=k+1 时，左边比假设多了 (k+1)^2 这一项",
+   "把 (k+1)^2 并入归纳假设的右边，得 [k(k+1)(2k+1)+6(k+1)^2]/6",
+   "提取公因式 (k+1) 并整理为 (k+1)(k+2)(2k+3)/6，恰是 n=k+1 时的右边",
+   "由第一步验证与第二步递推，命题对一切正整数 n 成立"
+  ]
+ },
+ {
+  "id": "mat_h490_q8",
+  "topicId": "mat_h490",
+  "prompt": "用数学归纳法证明 1/(1×2)+1/(2×3)+…+1/[n(n+1)]=n/(n+1)，从 n=k 到 n=k+1 时，等式左边需要增加的项是（　）",
+  "question": "用数学归纳法证明 1/(1×2)+1/(2×3)+…+1/[n(n+1)]=n/(n+1)，从 n=k 到 n=k+1 时，等式左边需要增加的项是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "1/[k(k+1)]"
+   },
+   {
+    "label": "B",
+    "text": "1/[(k+1)(k+2)]"
+   },
+   {
+    "label": "C",
+    "text": "1/(k+1)^2"
+   },
+   {
+    "label": "D",
+    "text": "1/(k+2)"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "n=k 时左边最后一项是 1/[k(k+1)]，n=k+1 时左边最后一项是 1/[(k+1)(k+2)]，两者相减后新增的正是 1/[(k+1)(k+2)]。通项由 1/[n(n+1)] 在 n=k+1 处取值决定，把 n 直接换成 k+1 即可，误选 1/[k(k+1)] 是把新项写成了旧项。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "1/[k(k+1)]"
+   },
+   {
+    "label": "B",
+    "text": "1/[(k+1)(k+2)]"
+   },
+   {
+    "label": "C",
+    "text": "1/(k+1)^2"
+   },
+   {
+    "label": "D",
+    "text": "1/(k+2)"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h491_q6",
+  "topicId": "mat_h491",
+  "prompt": "函数 f(x)=3x^2 在区间 [1,2] 上的平均变化率为 ____。",
+  "question": "函数 f(x)=3x^2 在区间 [1,2] 上的平均变化率为 ____。",
+  "options": [],
+  "answer": "9",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "平均变化率等于函数值增量除以自变量增量：[f(2)−f(1)]/(2−1)=(12−3)/1=9。它表示在区间 [1,2] 上函数值平均每增大 1 个单位自变量就增加 9 个单位，与区间内每一点的瞬时变化率并不相同。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h491_q7",
+  "topicId": "mat_h491",
+  "prompt": "某物体做直线运动，位移 s(t)=2t^2+t（单位：米，t 的单位：秒），求 t 从 2 秒到 4 秒这段时间内的平均速度（米/秒）。",
+  "question": "某物体做直线运动，位移 s(t)=2t^2+t（单位：米，t 的单位：秒），求 t 从 2 秒到 4 秒这段时间内的平均速度（米/秒）。",
+  "options": [],
+  "answer": "13",
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "平均速度等于位移增量除以时间增量。s(4)=2×16+4=36，s(2)=2×4+2=10，故平均速度为 (36−10)/(4−2)=13 米/秒。注意平均速度不是两端瞬时速度的平均值，必须先用位移差再除以时间差。",
+  "subject": "math",
+  "choices": [],
+  "verify": "(36-10)/2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h491_q8",
+  "topicId": "mat_h491",
+  "prompt": "关于函数 f(x)=x^2 在 x=1 处的瞬时变化率，下列理解正确的是（　）",
+  "question": "关于函数 f(x)=x^2 在 x=1 处的瞬时变化率，下列理解正确的是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "它就等于 f(1)=1"
+   },
+   {
+    "label": "B",
+    "text": "它等于区间 [1,2] 上的平均变化率 3"
+   },
+   {
+    "label": "C",
+    "text": "它是 Δx 无限趋近于 0 时 (f(1+Δx)−f(1))/Δx 趋近的常数 2"
+   },
+   {
+    "label": "D",
+    "text": "它是 Δx 取某个很小的正数时算出的平均变化率，与 Δx 的取值无关"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "瞬时变化率是平均变化率的极限：(f(1+Δx)−f(1))/Δx=(2Δx+Δx^2)/Δx=2+Δx，令 Δx 趋近于 0 得常数 2。f(1)=1 是函数值而非变化率；[1,2] 上的平均变化率 3 只是一段区间上的平均效果；平均变化率随 Δx 变化而变化，所以第四个说法自相矛盾。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "它就等于 f(1)=1"
+   },
+   {
+    "label": "B",
+    "text": "它等于区间 [1,2] 上的平均变化率 3"
+   },
+   {
+    "label": "C",
+    "text": "它是 Δx 无限趋近于 0 时 (f(1+Δx)−f(1))/Δx 趋近的常数 2"
+   },
+   {
+    "label": "D",
+    "text": "它是 Δx 取某个很小的正数时算出的平均变化率，与 Δx 的取值无关"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h492_q6",
+  "topicId": "mat_h492",
+  "prompt": "在跳水运动员的问题中，设重心高度 h(t)=5t^2（单位：米）。请说明为什么用区间 [2,2+Δt] 上的平均速度不能准确刻画 t=2 秒时的速度。",
+  "question": "在跳水运动员的问题中，设重心高度 h(t)=5t^2（单位：米）。请说明为什么用区间 [2,2+Δt] 上的平均速度不能准确刻画 t=2 秒时的速度。",
+  "options": [],
+  "answer": "平均速度只反映一段区间上的整体效果，区间内速度不断变化，必须让 Δt 趋近于 0 才能得到 t=2 秒的瞬时速度。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "平均速度只能回答“这段时间平均多快”，不能回答“这一瞬间多快”。由于 h(t)=5t^2 中速度在不断增加，区间 [2,2+Δt] 上各点速度都大于 t=2 秒的速度，因此平均速度会偏大，且 Δt 越大偏得越多。只有取 Δt 趋近于 0 的极限，才能把这个偏差消掉，得到瞬时速度。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "平均速度是位移增量与时间增量的比值，刻画的是整段时间内的平均效果",
+   "物体下落过程中速度随时间不断增大，区间内各时刻的速度并不相同",
+   "Δt 取得越大，平均速度与 t=2 秒的真实速度偏差越大；Δt 越小越接近",
+   "让 Δt 无限趋近于 0，平均速度趋近的常数 20 米/秒才是 t=2 秒的瞬时速度"
+  ]
+ },
+ {
+  "id": "mat_h492_q7",
+  "topicId": "mat_h492",
+  "prompt": "函数 f(x)=x^2+1 在区间 [1,1+Δx] 上的平均变化率等于（　）",
+  "question": "函数 f(x)=x^2+1 在区间 [1,1+Δx] 上的平均变化率等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "2+Δx"
+   },
+   {
+    "label": "B",
+    "text": "2"
+   },
+   {
+    "label": "C",
+    "text": "2Δx+(Δx)^2"
+   },
+   {
+    "label": "D",
+    "text": "1+Δx"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "先算函数值增量：f(1+Δx)−f(1)=[(1+Δx)^2+1]−2=2Δx+(Δx)^2，再除以自变量增量 Δx 得 2+Δx。选 2Δx+(Δx)^2 是忘了除以 Δx，选 2 则是把 Δx 趋近于 0 后的极限值当成了平均变化率本身。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "2+Δx"
+   },
+   {
+    "label": "B",
+    "text": "2"
+   },
+   {
+    "label": "C",
+    "text": "2Δx+(Δx)^2"
+   },
+   {
+    "label": "D",
+    "text": "1+Δx"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h492_q8",
+  "topicId": "mat_h492",
+  "prompt": "物体做自由落体运动，位移 h(t)=5t^2（单位：米），则 t=3 秒时的瞬时速度为 ____ 米/秒。",
+  "question": "物体做自由落体运动，位移 h(t)=5t^2（单位：米），则 t=3 秒时的瞬时速度为 ____ 米/秒。",
+  "options": [],
+  "answer": "30",
+  "type": "fill",
+  "difficulty": "hard",
+  "explanation": "先求区间 [3,3+Δt] 上的平均速度：[5(3+Δt)^2−45]/Δt=(30Δt+5(Δt)^2)/Δt=30+5Δt。再令 Δt 无限趋近于 0，平均速度趋近于 30，所以 t=3 秒时的瞬时速度为 30 米/秒。若直接代入 t=3 求高度 45 米，那是位移而不是速度。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h493_q6",
+  "topicId": "mat_h493",
+  "prompt": "已知函数 f(x)=3x^2−x，求 f′(2) 的值。",
+  "question": "已知函数 f(x)=3x^2−x，求 f′(2) 的值。",
+  "options": [],
+  "answer": "11",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "由导数定义或求导公式得 f′(x)=6x−1，把 x=2 代入得 f′(2)=12−1=11。也可以按定义计算 [f(2+Δx)−f(2)]/Δx=11+3Δx，令 Δx 趋近于 0 同样得到 11，两种做法可以互相核对。",
+  "subject": "math",
+  "choices": [],
+  "verify": "6*2-1",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h493_q7",
+  "topicId": "mat_h493",
+  "prompt": "曲线 y=x^2−2x 在点 (3,3) 处切线的斜率为（　）",
+  "question": "曲线 y=x^2−2x 在点 (3,3) 处切线的斜率为（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "2"
+   },
+   {
+    "label": "B",
+    "text": "3"
+   },
+   {
+    "label": "C",
+    "text": "6"
+   },
+   {
+    "label": "D",
+    "text": "4"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "曲线在一点处切线的斜率就是函数在该点的导数。y′=2x−2，代入 x=3 得斜率为 4。选 6 是漏减了常数项 2，选 3 是误把切点的纵坐标当成斜率，选 2 则是把 x=2 代入了导数式。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "2"
+   },
+   {
+    "label": "B",
+    "text": "3"
+   },
+   {
+    "label": "C",
+    "text": "6"
+   },
+   {
+    "label": "D",
+    "text": "4"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h493_q8",
+  "topicId": "mat_h493",
+  "prompt": "已知曲线 y=x^2 上一点 P(1,1)，请说明怎样利用导数的几何意义求该点处切线的方程，并写出结果。",
+  "question": "已知曲线 y=x^2 上一点 P(1,1)，请说明怎样利用导数的几何意义求该点处切线的方程，并写出结果。",
+  "options": [],
+  "answer": "切线斜率为 f′(1)=2，由点斜式得 y−1=2(x−1)，即 y=2x−1。",
+  "type": "short-answer",
+  "difficulty": "hard",
+  "explanation": "求切线方程需要两个要素：切点与斜率。切点由题设给出，斜率靠导数提供，这正是导数几何意义的用处。得到斜率后只能写点斜式，不能把点 (1,1) 直接当成截距，否则会错写成 y=2x+1。最后整理成一般式或斜截式均可，但要保证过点 (1,1)。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "导数的几何意义是曲线在该点处切线的斜率",
+   "对 y=x^2 求导得 y′=2x，故 P 处切线斜率为 2",
+   "切点坐标已知为 (1,1)，用点斜式 y−1=2(x−1)",
+   "化简得切线方程 y=2x−1"
+  ]
+ },
+ {
+  "id": "mat_h494_q6",
+  "topicId": "mat_h494",
+  "prompt": "对函数 y=5x^3 求导，所得结果是（　）",
+  "question": "对函数 y=5x^3 求导，所得结果是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "5x^2"
+   },
+   {
+    "label": "B",
+    "text": "15x^3"
+   },
+   {
+    "label": "C",
+    "text": "15x^2"
+   },
+   {
+    "label": "D",
+    "text": "3x^2"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "由幂函数求导公式 (x^3)′=3x^2，再乘常数系数 5 得 y′=15x^2。选 5x^2 是漏乘了指数 3，选 15x^3 是忘记把指数减 1，选 3x^2 则是把系数 5 丢掉了，三种错误都出在公式的记忆上。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "5x^2"
+   },
+   {
+    "label": "B",
+    "text": "15x^3"
+   },
+   {
+    "label": "C",
+    "text": "15x^2"
+   },
+   {
+    "label": "D",
+    "text": "3x^2"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h494_q7",
+  "topicId": "mat_h494",
+  "prompt": "函数 y=x^3−3x^2+1 的导数为 ____。",
+  "question": "函数 y=x^3−3x^2+1 的导数为 ____。",
+  "options": [],
+  "answer": "3x^2−6x",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "按和差法则逐项求导：(x^3)′=3x^2，(−3x^2)′=−6x，常数 1 的导数为 0，所以 y′=3x^2−6x。常见错误是把常数项 1 也求导成 1，或者把 −3x^2 的导数写成 −3x，都是对“指数减一、系数乘指数”这条规则用得不准。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h494_q8",
+  "topicId": "mat_h494",
+  "prompt": "已知函数 f(x)=x^3−2x^2+x，求 f′(2) 的值。",
+  "question": "已知函数 f(x)=x^3−2x^2+x，求 f′(2) 的值。",
+  "options": [],
+  "answer": "5",
+  "type": "numeric",
+  "difficulty": "hard",
+  "explanation": "先用和差法则求导：f′(x)=3x^2−4x+1，再把 x=2 代入得 12−8+1=5。这里既要用到幂函数公式，又要注意逐项符号与常数项归零；若先代值再求导，得到的 f(2)=2 与导数值毫无关系，是典型错误。",
+  "subject": "math",
+  "choices": [],
+  "verify": "3*2**2-4*2+1",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h495_q6",
+  "topicId": "mat_h495",
+  "prompt": "函数 y=cos x 的导数等于（　）",
+  "question": "函数 y=cos x 的导数等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "sin x"
+   },
+   {
+    "label": "B",
+    "text": "cos x"
+   },
+   {
+    "label": "C",
+    "text": "−cos x"
+   },
+   {
+    "label": "D",
+    "text": "−sin x"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "由基本初等函数的导数公式，(cos x)′=−sin x，负号来自余弦函数图象在 x=0 附近是下降的。选 sin x 是漏掉负号，选 cos x 是把原函数当成导数，混淆了正弦与余弦两条公式的方向。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "sin x"
+   },
+   {
+    "label": "B",
+    "text": "cos x"
+   },
+   {
+    "label": "C",
+    "text": "−cos x"
+   },
+   {
+    "label": "D",
+    "text": "−sin x"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h495_q7",
+  "topicId": "mat_h495",
+  "prompt": "请写出下列三个函数的导数：(1) y=x^6；(2) y=√x（x>0）；(3) y=1/x^2（x≠0）。",
+  "question": "请写出下列三个函数的导数：(1) y=x^6；(2) y=√x（x>0）；(3) y=1/x^2（x≠0）。",
+  "options": [],
+  "answer": "(1) y′=6x^5；(2) y′=1/(2√x)；(3) y′=−2/x^3。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "根式与分式求导的统一办法是先化成负指数或分数指数的幂，再套用幂函数公式，这样不必另记公式。三个小问的关键分别是：指数减一、指数为 1/2 时结果是 1/(2√x)、指数为 −2 时系数为负且指数再减一。把 √x 的导数写成 1/√x 或把 1/x^2 的导数写成 2/x^3，都是漏了系数。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "三个函数都可化为幂函数 y=x^n 的形式，再用公式 (x^n)′=nx^(n−1)",
+   "(1) 中 n=6，得 y′=6x^5",
+   "(2) 中 √x=x^(1/2)，得 y′=(1/2)x^(−1/2)=1/(2√x)",
+   "(3) 中 1/x^2=x^(−2)，得 y′=−2x^(−3)=−2/x^3，注意负指数的符号"
+  ]
+ },
+ {
+  "id": "mat_h495_q8",
+  "topicId": "mat_h495",
+  "prompt": "已知 f(x)=√x+1/x（x>0），则 f′(1) 等于（　）",
+  "question": "已知 f(x)=√x+1/x（x>0），则 f′(1) 等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "−1/2"
+   },
+   {
+    "label": "B",
+    "text": "1/2"
+   },
+   {
+    "label": "C",
+    "text": "3/2"
+   },
+   {
+    "label": "D",
+    "text": "−3/2"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "把两项分别化为幂：f(x)=x^(1/2)+x^(−1)，求导得 f′(x)=(1/2)x^(−1/2)−x^(−2)=1/(2√x)−1/x^2。代入 x=1 得 1/2−1=−1/2。选 1/2 是漏掉了第二项的导数，选 −3/2 是把第二项的系数算成了 2，都是分式求导时系数处理不当。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "−1/2"
+   },
+   {
+    "label": "B",
+    "text": "1/2"
+   },
+   {
+    "label": "C",
+    "text": "3/2"
+   },
+   {
+    "label": "D",
+    "text": "−3/2"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h496_q6",
+  "topicId": "mat_h496",
+  "prompt": "函数 y=4x^3−2x 的导数为 ____。",
+  "question": "函数 y=4x^3−2x 的导数为 ____。",
+  "options": [],
+  "answer": "12x^2−2",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "由和差法则逐项求导：(4x^3)′=12x^2，(−2x)′=−2，所以 y′=12x^2−2。这里 −2x 是一次项，其导数就是系数 −2，写成 −2x 或 −2x^0 都是把“一次项求导后降为常数”这一条漏掉了。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h496_q7",
+  "topicId": "mat_h496",
+  "prompt": "已知 f(x)=(x^2+1)(x−1)，求 f′(2) 的值。",
+  "question": "已知 f(x)=(x^2+1)(x−1)，求 f′(2) 的值。",
+  "options": [],
+  "answer": "9",
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "先展开得 f(x)=x^3−x^2+x−1，再逐项求导得 f′(x)=3x^2−2x+1，代入 x=2 得 12−4+1=9。也可用乘法法则：f′(x)=2x(x−1)+(x^2+1)，代入同样得 4+5=9。切忌把导数写成 2x·1=2x，那是把积的导数当成了导数的积。",
+  "subject": "math",
+  "choices": [],
+  "verify": "3*2**2-2*2+1",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h496_q8",
+  "topicId": "mat_h496",
+  "prompt": "已知 f(x)=x/(x+1)（x≠−1），则 f′(x) 等于（　）",
+  "question": "已知 f(x)=x/(x+1)（x≠−1），则 f′(x) 等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "1/(x+1)^2"
+   },
+   {
+    "label": "B",
+    "text": "x/(x+1)^2"
+   },
+   {
+    "label": "C",
+    "text": "1/(x+1)"
+   },
+   {
+    "label": "D",
+    "text": "−1/(x+1)^2"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "用商的求导法则：f′(x)=[1·(x+1)−x·1]/(x+1)^2=(x+1−x)/(x+1)^2=1/(x+1)^2。选 x/(x+1)^2 是分子算成了 x，选 −1/(x+1)^2 是把分子的减号方向弄反，选 1/(x+1) 则是漏掉了分母的平方。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "1/(x+1)^2"
+   },
+   {
+    "label": "B",
+    "text": "x/(x+1)^2"
+   },
+   {
+    "label": "C",
+    "text": "1/(x+1)"
+   },
+   {
+    "label": "D",
+    "text": "−1/(x+1)^2"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h497_q6",
+  "topicId": "mat_h497",
+  "prompt": "设 y=(2x+3)^2，请指出把它看成复合函数时的内层函数与外层函数，并求出 y′。",
+  "question": "设 y=(2x+3)^2，请指出把它看成复合函数时的内层函数与外层函数，并求出 y′。",
+  "options": [],
+  "answer": "内层 u=2x+3，外层 y=u^2，y′=2u·2=4(2x+3)=8x+12。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "复合函数求导的关键是先认结构、再分层求导、最后相乘并代回。把 y=(2x+3)^2 拆成 y=u^2 与 u=2x+3 之后，外层导数 2u 与内层导数 2 相乘得 4u。常见错误是只对外层求导写成 2(2x+3)，漏乘内层导数 2，结果与正确答案相差一倍。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "把 (2x+3)^2 拆成内层 u=2x+3 与外层 y=u^2",
+   "外层对 u 求导得 2u，内层对 x 求导得 2",
+   "按复合函数求导法则相乘：y′=2u·2=4u",
+   "把 u=2x+3 代回得 y′=8x+12，与先展开再求导的结果一致"
+  ]
+ },
+ {
+  "id": "mat_h497_q7",
+  "topicId": "mat_h497",
+  "prompt": "函数 y=cos 3x 的导数等于（　）",
+  "question": "函数 y=cos 3x 的导数等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "−3sin 3x"
+   },
+   {
+    "label": "B",
+    "text": "3sin 3x"
+   },
+   {
+    "label": "C",
+    "text": "−sin 3x"
+   },
+   {
+    "label": "D",
+    "text": "−3cos 3x"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "把 3x 看作内层函数 u=3x，外层为 cos u，则 y′=−sin u·u′=−3sin 3x。选 −sin 3x 是漏乘内层导数 3，选 3sin 3x 是漏掉余弦求导产生的负号，选 −3cos 3x 则是把余弦的导数记成了自身。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "−3sin 3x"
+   },
+   {
+    "label": "B",
+    "text": "3sin 3x"
+   },
+   {
+    "label": "C",
+    "text": "−sin 3x"
+   },
+   {
+    "label": "D",
+    "text": "−3cos 3x"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h497_q8",
+  "topicId": "mat_h497",
+  "prompt": "函数 y=(1−2x)^4 的导数为 ____。",
+  "question": "函数 y=(1−2x)^4 的导数为 ____。",
+  "options": [],
+  "answer": "−8(1−2x)^3",
+  "type": "fill",
+  "difficulty": "hard",
+  "explanation": "把 1−2x 看作内层 u，外层为 u^4，则 y′=4u^3·u′=4(1−2x)^3·(−2)=−8(1−2x)^3。两处易错：一是漏乘内层导数 −2，二是虽然乘了 2 却丢了负号，写成 8(1−2x)^3；内层导数为负时，结果的符号必须跟着变。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h498_q6",
+  "topicId": "mat_h498",
+  "prompt": "已知函数 f(x)=x^2+ax 在 x=2 处取得极小值，求实数 a 的值。",
+  "question": "已知函数 f(x)=x^2+ax 在 x=2 处取得极小值，求实数 a 的值。",
+  "options": [],
+  "answer": "-4",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "可导函数在极值点处导数为零。f′(x)=2x+a，由 f′(2)=4+a=0 得 a=−4，此时 f′(x)=2x−4，在 x=2 左侧为负、右侧为正，确实是极小值点。求出 a 后要回代检验导数符号变化，否则只能说明它是驻点。",
+  "subject": "math",
+  "choices": [],
+  "verify": "0-2*2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h498_q7",
+  "topicId": "mat_h498",
+  "prompt": "函数 f(x)=x^3−3x 的单调递增区间是（　）",
+  "question": "函数 f(x)=x^3−3x 的单调递增区间是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "(−1,1)"
+   },
+   {
+    "label": "B",
+    "text": "(−∞,−1) 与 (1,+∞)"
+   },
+   {
+    "label": "C",
+    "text": "(−∞,1)"
+   },
+   {
+    "label": "D",
+    "text": "(1,+∞)"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "求导得 f′(x)=3x^2−3=3(x−1)(x+1)，令 f′(x)>0 得 x<−1 或 x>1，故递增区间为 (−∞,−1) 与 (1,+∞)。区间 (−1,1) 上导数为负，函数递减；只写 (1,+∞) 漏掉了左支，是把二次不等式的解集只取了一半。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "(−1,1)"
+   },
+   {
+    "label": "B",
+    "text": "(−∞,−1) 与 (1,+∞)"
+   },
+   {
+    "label": "C",
+    "text": "(−∞,1)"
+   },
+   {
+    "label": "D",
+    "text": "(1,+∞)"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h498_q8",
+  "topicId": "mat_h498",
+  "prompt": "已知函数 f(x)=x^3−3x^2+2，请用导数求它的单调区间与极值。",
+  "question": "已知函数 f(x)=x^3−3x^2+2，请用导数求它的单调区间与极值。",
+  "options": [],
+  "answer": "递增区间 (−∞,0) 与 (2,+∞)，递减区间 (0,2)；极大值 f(0)=2，极小值 f(2)=−2。",
+  "type": "short-answer",
+  "difficulty": "hard",
+  "explanation": "用导数研究单调性与极值的固定路线是：求导、解 f′(x)=0 得驻点、按驻点分段判符号、由符号变化定极值类型。本题 f′(x)=3x(x−2) 的两个零点是 0 和 2，把定义域分成三段后符号依次为正、负、正，因此先增后减再增，x=0 处极大、x=2 处极小。算出极值后必须代回原函数求函数值，不能把驻点横坐标当成极值。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "求导并因式分解：f′(x)=3x^2−6x=3x(x−2)",
+   "令 f′(x)>0 得 x<0 或 x>2，函数在这两个区间上递增",
+   "令 f′(x)<0 得 0<x<2，函数在该区间上递减",
+   "x=0 处导数由正变负，取极大值 f(0)=2",
+   "x=2 处导数由负变正，取极小值 f(2)=8−12+2=−2"
+  ]
+ }
+]

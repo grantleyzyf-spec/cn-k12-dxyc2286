@@ -1,0 +1,884 @@
+[
+  {
+    "id": "mat_p1215_q6",
+    "topicId": "mat_p1215",
+    "prompt": "一个十一位数的最高位是什么位？",
+    "question": "一个十一位数的最高位是什么位？",
+    "options": [
+      {
+        "label": "A",
+        "text": "百亿位"
+      },
+      {
+        "label": "B",
+        "text": "十亿位"
+      },
+      {
+        "label": "C",
+        "text": "千亿位"
+      },
+      {
+        "label": "D",
+        "text": "亿位"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "从右往左依次是个位、十位、百位、千位、万位、十万位、百万位、千万位、亿位、十亿位、百亿位，第十一位落在百亿位上，所以最高位是百亿位。",
+    "subject": "math",
+    "choices": [
+      {
+        "label": "A",
+        "text": "百亿位"
+      },
+      {
+        "label": "B",
+        "text": "十亿位"
+      },
+      {
+        "label": "C",
+        "text": "千亿位"
+      },
+      {
+        "label": "D",
+        "text": "亿位"
+      }
+    ],
+    "verify": "",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1215_q7",
+    "topicId": "mat_p1215",
+    "prompt": "由 8 个亿、6 个千万和 5 个百组成的数写作____。",
+    "question": "由 8 个亿、6 个千万和 5 个百组成的数写作____。",
+    "options": [],
+    "answer": "860000500",
+    "type": "fill",
+    "difficulty": "standard",
+    "explanation": "8 个亿写在亿位上是 800000000，6 个千万写在千万位上是 60000000，5 个百写在百位上是 500，三部分相加得 860000500，中间空着的数位都要补 0。",
+    "subject": "math",
+    "choices": [],
+    "verify": "",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1215_q8",
+    "topicId": "mat_p1215",
+    "prompt": "用 3 个亿、7 个百万和 4 个十组成的数，比 3 亿多多少？",
+    "question": "用 3 个亿、7 个百万和 4 个十组成的数，比 3 亿多多少？",
+    "options": [],
+    "answer": "7000040",
+    "type": "numeric",
+    "difficulty": "hard",
+    "explanation": "先按数位写数：亿位写 3、百万位写 7、十位写 4，其余数位补 0，得到 307000040；再算 307000040－300000000＝7000040，所以它比 3 亿多 7000040。",
+    "subject": "math",
+    "choices": [],
+    "verify": "307000040-300000000",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1216_q6",
+    "topicId": "mat_p1216",
+    "prompt": "在 3864100 和 3864200 这两个数中，较大的数是哪一个？",
+    "question": "在 3864100 和 3864200 这两个数中，较大的数是哪一个？",
+    "options": [
+      {
+        "label": "A",
+        "text": "3864100"
+      },
+      {
+        "label": "B",
+        "text": "3864200"
+      },
+      {
+        "label": "C",
+        "text": "两数一样大"
+      },
+      {
+        "label": "D",
+        "text": "3864000"
+      }
+    ],
+    "answer": "B",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "两个数都是七位数，位数相同就从最高位起逐位比较；前四位 3、8、6、4 完全相同，比到百位时 2 大于 1，所以 3864200 较大。",
+    "subject": "math",
+    "choices": [
+      {
+        "label": "A",
+        "text": "3864100"
+      },
+      {
+        "label": "B",
+        "text": "3864200"
+      },
+      {
+        "label": "C",
+        "text": "两数一样大"
+      },
+      {
+        "label": "D",
+        "text": "3864000"
+      }
+    ],
+    "verify": "",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1216_q7",
+    "topicId": "mat_p1216",
+    "prompt": "两个位数相同的大数比较大小时，为什么不能只看最高位？请说出完整的比较过程。",
+    "question": "两个位数相同的大数比较大小时，为什么不能只看最高位？请说出完整的比较过程。",
+    "options": [],
+    "answer": "位数相同的两个数，最高位上的数可能相同，也可能只有一个数最高位大；要从最高位起逐位往下比，哪一位上的数大，那个数就大；所有数位都比完仍相同，两个数才相等。",
+    "type": "short-answer",
+    "difficulty": "standard",
+    "explanation": "例如 3864100 和 3864200 同为七位数，最高位都是 3，只看最高位分不出大小，必须比到百位才能判断；只有当最高位上的数不同时，才能直接由最高位定大小。",
+    "subject": "math",
+    "choices": [],
+    "verify": "",
+    "keypoints": [
+      "位数相同的两个数，最高位上的数可能也相同",
+      "从最高位起逐位比较，哪一位上的数大那个数就大",
+      "所有数位都相同，两个数才相等"
+    ]
+  },
+  {
+    "id": "mat_p1216_q8",
+    "topicId": "mat_p1216",
+    "prompt": "用 3、5、8、0 四个数字各一次组成四位数，其中最大的数与最小的数相差多少？",
+    "question": "用 3、5、8、0 四个数字各一次组成四位数，其中最大的数与最小的数相差多少？",
+    "options": [
+      {
+        "label": "A",
+        "text": "5328"
+      },
+      {
+        "label": "B",
+        "text": "5490"
+      },
+      {
+        "label": "C",
+        "text": "5472"
+      },
+      {
+        "label": "D",
+        "text": "5445"
+      }
+    ],
+    "answer": "C",
+    "type": "choice",
+    "difficulty": "hard",
+    "explanation": "数字从大到小排得最大四位数 8530；最小四位数要让最小的非零数字占最高位、其余从小到大排，得 3058；8530－3058＝5472，所以相差 5472。",
+    "subject": "math",
+    "choices": [
+      {
+        "label": "A",
+        "text": "5328"
+      },
+      {
+        "label": "B",
+        "text": "5490"
+      },
+      {
+        "label": "C",
+        "text": "5472"
+      },
+      {
+        "label": "D",
+        "text": "5445"
+      }
+    ],
+    "verify": "",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1217_q6",
+    "topicId": "mat_p1217",
+    "prompt": "把 680000 改写成用“万”作单位的数是____万。",
+    "question": "把 680000 改写成用“万”作单位的数是____万。",
+    "options": [],
+    "answer": "68",
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "680000 的万位是 8，去掉末尾四个 0 就是 68 个万，所以 680000＝68 万；改写只改变计数单位，数的大小不变，要用等号连接。",
+    "subject": "math",
+    "choices": [],
+    "verify": "",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1217_q7",
+    "topicId": "mat_p1217",
+    "prompt": "用四舍五入法把 3496500 省略万位后面的尾数，约是多少万？（只填数字）",
+    "question": "用四舍五入法把 3496500 省略万位后面的尾数，约是多少万？（只填数字）",
+    "options": [],
+    "answer": "350",
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "省略万位后面的尾数要看千位上的数：3496500 的千位是 6，满 5 要向万位进一，349 万进一得 350 万，所以 3496500 约是 350 万。",
+    "subject": "math",
+    "choices": [],
+    "verify": "350",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1217_q8",
+    "topicId": "mat_p1217",
+    "prompt": "一个数省略万位后面的尾数约是 70 万，这个数最大是多少？",
+    "question": "一个数省略万位后面的尾数约是 70 万，这个数最大是多少？",
+    "options": [
+      {
+        "label": "A",
+        "text": "705000"
+      },
+      {
+        "label": "B",
+        "text": "699999"
+      },
+      {
+        "label": "C",
+        "text": "694999"
+      },
+      {
+        "label": "D",
+        "text": "704999"
+      }
+    ],
+    "answer": "D",
+    "type": "choice",
+    "difficulty": "hard",
+    "explanation": "约等于 70 万的数在 695000 到 704999 之间：千位是 0 至 4 时舍去尾数得 70 万，千位是 5 至 9 时进一得 71 万；所以符合要求的最大数是 704999。",
+    "subject": "math",
+    "choices": [
+      {
+        "label": "A",
+        "text": "705000"
+      },
+      {
+        "label": "B",
+        "text": "699999"
+      },
+      {
+        "label": "C",
+        "text": "694999"
+      },
+      {
+        "label": "D",
+        "text": "704999"
+      }
+    ],
+    "verify": "",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1218_q6",
+    "topicId": "mat_p1218",
+    "prompt": "准确数和近似数有什么区别？请各举一个例子说明。",
+    "question": "准确数和近似数有什么区别？请各举一个例子说明。",
+    "options": [],
+    "answer": "准确数与实际数量完全相符，没有误差；近似数只是接近实际数量，通常带“约”“大约”等词；例如全班 45 人是准确数，身高约 140 cm 中的 140 是近似数。",
+    "type": "short-answer",
+    "difficulty": "basic",
+    "explanation": "数一数、点清楚得到的个数一般是准确数；用尺子量、用秤称得到的数受工具限制，只能接近真实值，所以是近似数，书写时要用约等号。",
+    "subject": "math",
+    "choices": [],
+    "verify": "",
+    "keypoints": [
+      "准确数与实际数量完全相符，没有误差",
+      "近似数只是接近实际数量，常带“约”“大约”等词",
+      "例如班级 45 人是准确数，身高约 140 cm 是近似数"
+    ]
+  },
+  {
+    "id": "mat_p1218_q7",
+    "topicId": "mat_p1218",
+    "prompt": "下面的数中，省略亿位后面的尾数约是 3 亿的是哪一个？",
+    "question": "下面的数中，省略亿位后面的尾数约是 3 亿的是哪一个？",
+    "options": [
+      {
+        "label": "A",
+        "text": "349999999"
+      },
+      {
+        "label": "B",
+        "text": "350000000"
+      },
+      {
+        "label": "C",
+        "text": "240000000"
+      },
+      {
+        "label": "D",
+        "text": "400000000"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "standard",
+    "explanation": "省略亿位后面的尾数要看千万位：349999999 的千万位是 4，舍去尾数得 3 亿；350000000 的千万位是 5，进一得 4 亿；240000000 约 2 亿；400000000 本身就是 4 亿。",
+    "subject": "math",
+    "choices": [
+      {
+        "label": "A",
+        "text": "349999999"
+      },
+      {
+        "label": "B",
+        "text": "350000000"
+      },
+      {
+        "label": "C",
+        "text": "240000000"
+      },
+      {
+        "label": "D",
+        "text": "400000000"
+      }
+    ],
+    "verify": "",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1218_q8",
+    "topicId": "mat_p1218",
+    "prompt": "把一个周角平均分成 9 份，每份是____°。",
+    "question": "把一个周角平均分成 9 份，每份是____°。",
+    "options": [],
+    "answer": "40",
+    "type": "fill",
+    "difficulty": "hard",
+    "explanation": "周角是 360°，平均分成 9 份，每份是 360°÷9＝40°；40° 小于 90°，所以每一份都是一个锐角。",
+    "subject": "math",
+    "choices": [],
+    "verify": "",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1219_q6",
+    "topicId": "mat_p1219",
+    "prompt": "一个数的千万位上是 6，万位上是 4，其余各数位都是 0，这个数是多少？",
+    "question": "一个数的千万位上是 6，万位上是 4，其余各数位都是 0，这个数是多少？",
+    "options": [],
+    "answer": "60040000",
+    "type": "numeric",
+    "difficulty": "basic",
+    "explanation": "千万位上的 6 表示 60000000，万位上的 4 表示 40000，其余数位都是 0，合起来是 60040000，它是一个八位数。",
+    "subject": "math",
+    "choices": [],
+    "verify": "60000000+40000",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1219_q7",
+    "topicId": "mat_p1219",
+    "prompt": "由 9 个亿、9 个千万和 9 个万组成的数是多少？",
+    "question": "由 9 个亿、9 个千万和 9 个万组成的数是多少？",
+    "options": [
+      {
+        "label": "A",
+        "text": "990900000"
+      },
+      {
+        "label": "B",
+        "text": "990090000"
+      },
+      {
+        "label": "C",
+        "text": "999000000"
+      },
+      {
+        "label": "D",
+        "text": "990009000"
+      }
+    ],
+    "answer": "B",
+    "type": "choice",
+    "difficulty": "standard",
+    "explanation": "9 个亿是 900000000，9 个千万是 90000000，9 个万是 90000，三部分相加得 990090000；注意万级只有一个 9，百万位和十万位都要写 0。",
+    "subject": "math",
+    "choices": [
+      {
+        "label": "A",
+        "text": "990900000"
+      },
+      {
+        "label": "B",
+        "text": "990090000"
+      },
+      {
+        "label": "C",
+        "text": "999000000"
+      },
+      {
+        "label": "D",
+        "text": "990009000"
+      }
+    ],
+    "verify": "",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1219_q8",
+    "topicId": "mat_p1219",
+    "prompt": "用 0、0、5、6、7、8 六张数字卡片摆出最大的六位数和最小的六位数，两数相差多少？请写出过程。",
+    "question": "用 0、0、5、6、7、8 六张数字卡片摆出最大的六位数和最小的六位数，两数相差多少？请写出过程。",
+    "options": [],
+    "answer": "最大的六位数把数字从大到小排，是 876500；最小的六位数最高位不能是 0，要取最小的非零数字 5，其余从小到大排，是 500678；876500－500678＝375822。",
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "摆最大数要让高位的数字尽量大，8、7、6、5 依次排在前面；摆最小数要让高位尽量小，但最高位不能是 0，只能放 5，剩下的 0、0、6、7、8 从小到大排在后面。",
+    "subject": "math",
+    "choices": [],
+    "verify": "",
+    "keypoints": [
+      "最大六位数是 876500，数字从大到小排",
+      "最小六位数是 500678，最高位不能是 0",
+      "两数相差 375822"
+    ]
+  },
+  {
+    "id": "mat_p1220_q6",
+    "topicId": "mat_p1220",
+    "prompt": "一条射线绕它的端点旋转四分之一周，形成的角是什么角？",
+    "question": "一条射线绕它的端点旋转四分之一周，形成的角是什么角？",
+    "options": [
+      {
+        "label": "A",
+        "text": "平角"
+      },
+      {
+        "label": "B",
+        "text": "钝角"
+      },
+      {
+        "label": "C",
+        "text": "直角"
+      },
+      {
+        "label": "D",
+        "text": "周角"
+      }
+    ],
+    "answer": "C",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "一条射线旋转一周是 360°，四分之一周就是 360°÷4＝90°，而 90° 的角是直角。",
+    "subject": "math",
+    "choices": [
+      {
+        "label": "A",
+        "text": "平角"
+      },
+      {
+        "label": "B",
+        "text": "钝角"
+      },
+      {
+        "label": "C",
+        "text": "直角"
+      },
+      {
+        "label": "D",
+        "text": "周角"
+      }
+    ],
+    "verify": "",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1220_q7",
+    "topicId": "mat_p1220",
+    "prompt": "一个角是 120°，它比平角小____°。",
+    "question": "一个角是 120°，它比平角小____°。",
+    "options": [],
+    "answer": "60",
+    "type": "fill",
+    "difficulty": "standard",
+    "explanation": "平角是 180°，用 180°－120°＝60°，所以这个角比平角小 60°；120° 大于 90° 而小于 180°，它本身是一个钝角。",
+    "subject": "math",
+    "choices": [],
+    "verify": "",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1220_q8",
+    "topicId": "mat_p1220",
+    "prompt": "一条射线绕端点先旋转 90°，接着又旋转 150°，最后得到的角比周角小多少度？",
+    "question": "一条射线绕端点先旋转 90°，接着又旋转 150°，最后得到的角比周角小多少度？",
+    "options": [],
+    "answer": "120",
+    "type": "numeric",
+    "difficulty": "hard",
+    "explanation": "两次旋转合起来是 90°＋150°＝240°，周角是 360°，360°－240°＝120°，所以这个角比周角小 120°。",
+    "subject": "math",
+    "choices": [],
+    "verify": "360-(90+150)",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1221_q6",
+    "topicId": "mat_p1221",
+    "prompt": "用放大 10 倍的放大镜看一个 30° 的角，看到的角是多少度？",
+    "question": "用放大 10 倍的放大镜看一个 30° 的角，看到的角是多少度？",
+    "options": [
+      {
+        "label": "A",
+        "text": "300°"
+      },
+      {
+        "label": "B",
+        "text": "3°"
+      },
+      {
+        "label": "C",
+        "text": "40°"
+      },
+      {
+        "label": "D",
+        "text": "30°"
+      }
+    ],
+    "answer": "D",
+    "type": "choice",
+    "difficulty": "basic",
+    "explanation": "放大镜把角的两条边放大变长，但两条边张开的程度没有改变，而角的大小只与张开的程度有关，所以看到的角仍然是 30°。",
+    "subject": "math",
+    "choices": [
+      {
+        "label": "A",
+        "text": "300°"
+      },
+      {
+        "label": "B",
+        "text": "3°"
+      },
+      {
+        "label": "C",
+        "text": "40°"
+      },
+      {
+        "label": "D",
+        "text": "30°"
+      }
+    ],
+    "verify": "",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1221_q7",
+    "topicId": "mat_p1221",
+    "prompt": "用量角器画一个 75° 的角，请按顺序说出画角的步骤。",
+    "question": "用量角器画一个 75° 的角，请按顺序说出画角的步骤。",
+    "options": [],
+    "answer": "先画一条射线，把量角器的中心与射线的端点重合、0 刻度线与射线重合；再在量角器 75° 刻度线的地方点一个点；最后以射线的端点为端点，经过这个点画一条射线。",
+    "type": "short-answer",
+    "difficulty": "standard",
+    "explanation": "画角与量角的操作正好相反：量角是读出已有的度数，画角是先按度数在刻度线上定点再连线；0 刻度线必须与射线重合，否则画出的角会偏大或偏小。",
+    "subject": "math",
+    "choices": [],
+    "verify": "",
+    "keypoints": [
+      "先画一条射线，量角器中心与射线端点重合、0 刻度线与射线重合",
+      "在量角器 75° 刻度线处点一个点",
+      "以射线端点为端点，经过这个点再画一条射线"
+    ]
+  },
+  {
+    "id": "mat_p1221_q8",
+    "topicId": "mat_p1221",
+    "prompt": "用一副三角尺可以拼出很多度数的角，下面哪个度数拼不出来？",
+    "question": "用一副三角尺可以拼出很多度数的角，下面哪个度数拼不出来？",
+    "options": [
+      {
+        "label": "A",
+        "text": "100°"
+      },
+      {
+        "label": "B",
+        "text": "75°"
+      },
+      {
+        "label": "C",
+        "text": "105°"
+      },
+      {
+        "label": "D",
+        "text": "135°"
+      }
+    ],
+    "answer": "A",
+    "type": "choice",
+    "difficulty": "hard",
+    "explanation": "30°＋45°＝75°，45°＋60°＝105°，90°＋45°＝135°，这三个度数都能用三角尺上的两个角拼出来；100° 无论两角相加还是相减都得不到，所以拼不出来。",
+    "subject": "math",
+    "choices": [
+      {
+        "label": "A",
+        "text": "100°"
+      },
+      {
+        "label": "B",
+        "text": "75°"
+      },
+      {
+        "label": "C",
+        "text": "105°"
+      },
+      {
+        "label": "D",
+        "text": "135°"
+      }
+    ],
+    "verify": "",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1222_q6",
+    "topicId": "mat_p1222",
+    "prompt": "把一个直角平均分成 3 份，每份是____°。",
+    "question": "把一个直角平均分成 3 份，每份是____°。",
+    "options": [],
+    "answer": "30",
+    "type": "fill",
+    "difficulty": "basic",
+    "explanation": "直角是 90°，把它平均分成 3 份，每份是 90°÷3＝30°，所以每份是 30°，它是一个锐角。",
+    "subject": "math",
+    "choices": [],
+    "verify": "",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1222_q7",
+    "topicId": "mat_p1222",
+    "prompt": "用三角尺的 60° 角和 45° 角拼成一个角，这个角比直角大多少度？",
+    "question": "用三角尺的 60° 角和 45° 角拼成一个角，这个角比直角大多少度？",
+    "options": [],
+    "answer": "15",
+    "type": "numeric",
+    "difficulty": "standard",
+    "explanation": "两个角拼在一起是 60°＋45°＝105°，直角是 90°，105°－90°＝15°，所以拼成的角比直角大 15°。",
+    "subject": "math",
+    "choices": [],
+    "verify": "105-90",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1222_q8",
+    "topicId": "mat_p1222",
+    "prompt": "把一个平角分成三个角，其中两个角分别是 45° 和 60°，第三个角是多少度？",
+    "question": "把一个平角分成三个角，其中两个角分别是 45° 和 60°，第三个角是多少度？",
+    "options": [
+      {
+        "label": "A",
+        "text": "70°"
+      },
+      {
+        "label": "B",
+        "text": "75°"
+      },
+      {
+        "label": "C",
+        "text": "85°"
+      },
+      {
+        "label": "D",
+        "text": "105°"
+      }
+    ],
+    "answer": "B",
+    "type": "choice",
+    "difficulty": "hard",
+    "explanation": "平角是 180°，三个角合起来正好是一个平角，180°－45°－60°＝75°，所以第三个角是 75°，它是一个锐角。",
+    "subject": "math",
+    "choices": [
+      {
+        "label": "A",
+        "text": "70°"
+      },
+      {
+        "label": "B",
+        "text": "75°"
+      },
+      {
+        "label": "C",
+        "text": "85°"
+      },
+      {
+        "label": "D",
+        "text": "105°"
+      }
+    ],
+    "verify": "",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1223_q6",
+    "topicId": "mat_p1223",
+    "prompt": "角的大小与角的两条边画得长短有关系吗？请说明理由。",
+    "question": "角的大小与角的两条边画得长短有关系吗？请说明理由。",
+    "options": [],
+    "answer": "没有关系；角的大小只与两条边张开的大小有关；把边画得再长或再短，张开的程度不变，角的大小也不变。",
+    "type": "short-answer",
+    "difficulty": "basic",
+    "explanation": "角的两条边是射线，可以无限延长；延长边只改变边的长短，不改变张开的程度，所以度数不会变化，这也是放大镜不能放大角的原因。",
+    "subject": "math",
+    "choices": [],
+    "verify": "",
+    "keypoints": [
+      "角的大小与两边画得长短没有关系",
+      "角的大小只与两边张开的大小有关",
+      "把边画长或画短，角的大小都不变"
+    ]
+  },
+  {
+    "id": "mat_p1223_q7",
+    "topicId": "mat_p1223",
+    "prompt": "把一个周角平均分成 4 份，每一份是什么角？",
+    "question": "把一个周角平均分成 4 份，每一份是什么角？",
+    "options": [
+      {
+        "label": "A",
+        "text": "锐角"
+      },
+      {
+        "label": "B",
+        "text": "平角"
+      },
+      {
+        "label": "C",
+        "text": "直角"
+      },
+      {
+        "label": "D",
+        "text": "钝角"
+      }
+    ],
+    "answer": "C",
+    "type": "choice",
+    "difficulty": "standard",
+    "explanation": "周角是 360°，平均分成 4 份，每份是 360°÷4＝90°，90° 的角是直角，所以每一份都是直角。",
+    "subject": "math",
+    "choices": [
+      {
+        "label": "A",
+        "text": "锐角"
+      },
+      {
+        "label": "B",
+        "text": "平角"
+      },
+      {
+        "label": "C",
+        "text": "直角"
+      },
+      {
+        "label": "D",
+        "text": "钝角"
+      }
+    ],
+    "verify": "",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1223_q8",
+    "topicId": "mat_p1223",
+    "prompt": "钟面上 3 时整，时针与分针所夹的角是____°；6 时整所夹的角是____°。",
+    "question": "钟面上 3 时整，时针与分针所夹的角是____°；6 时整所夹的角是____°。",
+    "options": [],
+    "answer": "90；180",
+    "type": "fill",
+    "difficulty": "hard",
+    "explanation": "钟面一圈 360°，平均分成 12 个大格，每个大格是 30°；3 时整时针指向 3、分针指向 12，中间隔着 3 个大格，3×30°＝90°；6 时整隔着 6 个大格，6×30°＝180°。",
+    "subject": "math",
+    "choices": [],
+    "verify": "",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1224_q6",
+    "topicId": "mat_p1224",
+    "prompt": "每箱牛奶有 24 盒，30 箱一共有多少盒牛奶？",
+    "question": "每箱牛奶有 24 盒，30 箱一共有多少盒牛奶？",
+    "options": [],
+    "answer": "720",
+    "type": "numeric",
+    "difficulty": "basic",
+    "explanation": "求 30 个 24 是多少，用乘法算 24×30；先算 24×3＝72，再在积的末尾添一个 0，得 720，所以一共有 720 盒。",
+    "subject": "math",
+    "choices": [],
+    "verify": "24*30",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1224_q7",
+    "topicId": "mat_p1224",
+    "prompt": "口算 500×40 的积是多少？",
+    "question": "口算 500×40 的积是多少？",
+    "options": [
+      {
+        "label": "A",
+        "text": "200"
+      },
+      {
+        "label": "B",
+        "text": "2000"
+      },
+      {
+        "label": "C",
+        "text": "200000"
+      },
+      {
+        "label": "D",
+        "text": "20000"
+      }
+    ],
+    "answer": "D",
+    "type": "choice",
+    "difficulty": "standard",
+    "explanation": "先算 5×4＝20，再看两个因数末尾一共有 3 个 0（500 末尾两个、40 末尾一个），在 20 的末尾添 3 个 0，得 20000。",
+    "subject": "math",
+    "choices": [
+      {
+        "label": "A",
+        "text": "200"
+      },
+      {
+        "label": "B",
+        "text": "2000"
+      },
+      {
+        "label": "C",
+        "text": "200000"
+      },
+      {
+        "label": "D",
+        "text": "20000"
+      }
+    ],
+    "verify": "",
+    "keypoints": []
+  },
+  {
+    "id": "mat_p1224_q8",
+    "topicId": "mat_p1224",
+    "prompt": "口算 25×40 时可以先算 25×4＝100，再在末尾添一个 0 得 1000。请用同样的方法口算 125×80，并写出过程。",
+    "question": "口算 25×40 时可以先算 25×4＝100，再在末尾添一个 0 得 1000。请用同样的方法口算 125×80，并写出过程。",
+    "options": [],
+    "answer": "先算 125×8＝1000；因为 80 比 8 末尾多一个 0，所以在 1000 的末尾添一个 0，得 10000；所以 125×80＝10000。",
+    "type": "short-answer",
+    "difficulty": "hard",
+    "explanation": "把 80 看成 8 个十，先算 125×8，再把积扩大到原来的 10 倍：125×8＝1000，添一个 0 就是 10000，这样把一个两位数乘三位数变成了三位数乘一位数。",
+    "subject": "math",
+    "choices": [],
+    "verify": "",
+    "keypoints": [
+      "先算 125×8＝1000",
+      "再在 1000 的末尾添一个 0",
+      "125×80＝10000"
+    ]
+  }
+]

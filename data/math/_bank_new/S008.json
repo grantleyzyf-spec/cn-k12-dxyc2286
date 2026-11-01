@@ -1,0 +1,884 @@
+[
+ {
+  "id": "mat_h333_q6",
+  "topicId": "mat_h333",
+  "prompt": "对数函数 y=log_a x（a>0，且 a≠1）的图象一定经过的定点是（　）",
+  "question": "对数函数 y=log_a x（a>0，且 a≠1）的图象一定经过的定点是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "(1,0)"
+   },
+   {
+    "label": "B",
+    "text": "(0,1)"
+   },
+   {
+    "label": "C",
+    "text": "(1,1)"
+   },
+   {
+    "label": "D",
+    "text": "(a,1)"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "因为 log_a 1=0 对任何满足 a>0 且 a≠1 的底数都成立，所以当 x=1 时必有 y=0，图象恒过点 (1,0)。(0,1) 是把指数函数 y=a^x 的定点记混了；(a,1) 只在个别特殊底数时成立，不能作为定点。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "(1,0)"
+   },
+   {
+    "label": "B",
+    "text": "(0,1)"
+   },
+   {
+    "label": "C",
+    "text": "(1,1)"
+   },
+   {
+    "label": "D",
+    "text": "(a,1)"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h333_q7",
+  "topicId": "mat_h333",
+  "prompt": "要使式子 log₃(x−2) 有意义，实数 x 的取值范围是 ____。",
+  "question": "要使式子 log₃(x−2) 有意义，实数 x 的取值范围是 ____。",
+  "options": [],
+  "answer": "x>2",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "对数的真数必须大于零，所以要求 x−2>0，解得 x>2，取值范围写成 (2,+∞)。常见错误是只写 x≠2，那是把分母不为零的条件硬套到真数上，真数等于零同样没有对数。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h333_q8",
+  "topicId": "mat_h333",
+  "prompt": "已知 log₂(x+3)=3，则 x 的值是（　）。",
+  "question": "已知 log₂(x+3)=3，则 x 的值是（　）。",
+  "options": [],
+  "answer": 5,
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "由对数的定义，log₂(x+3)=3 等价于真数 x+3 等于 2³=8，解得 x=5。把 x=5 代回检验得 log₂8=3，说明答案正确；误写 x=8 是把「2 的 3 次幂」直接当成了 x。",
+  "subject": "math",
+  "choices": [],
+  "verify": "2**3-3",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h334_q6",
+  "topicId": "mat_h334",
+  "prompt": "在区间 (0,+∞) 上，下列函数中当 x 充分大时函数值增长最慢的是（　）",
+  "question": "在区间 (0,+∞) 上，下列函数中当 x 充分大时函数值增长最慢的是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "y=x^3"
+   },
+   {
+    "label": "B",
+    "text": "y=2^x"
+   },
+   {
+    "label": "C",
+    "text": "y=log₂x"
+   },
+   {
+    "label": "D",
+    "text": "y=100x"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "三类函数的增长速度比较是：指数函数最快，幂函数次之，对数函数最慢。x 充分大时 log₂x 虽然一直增大，但增大的幅度远小于 2^x、x^3 与 100x，所以对数增长最缓慢。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "y=x^3"
+   },
+   {
+    "label": "B",
+    "text": "y=2^x"
+   },
+   {
+    "label": "C",
+    "text": "y=log₂x"
+   },
+   {
+    "label": "D",
+    "text": "y=100x"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h334_q7",
+  "topicId": "mat_h334",
+  "prompt": "取 x=1、2、4、6，分别计算 y=2^x 与 y=x² 的函数值，并说明随着 x 增大两者的大小关系怎样变化。",
+  "question": "取 x=1、2、4、6，分别计算 y=2^x 与 y=x² 的函数值，并说明随着 x 增大两者的大小关系怎样变化。",
+  "options": [],
+  "answer": "x=1 时 2^x=2、x²=1；x=2 时都是 4；x=4 时都是 16；x=6 时 2^x=64、x²=36。可见 x 在 2 到 4 之间 2^x<x²，x>4 以后 2^x>x² 且差距迅速拉大。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "逐点算值可以看清大小关系并非一开始就固定：x=1 时指数函数已领先，x=2、4 两点恰好相等，中间一段幂函数领先，x>4 之后指数函数反超并越拉越开，这正是「指数爆炸」的含义。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "x=1、2、4、6 时 2^x 依次为 2、4、16、64，x² 依次为 1、4、16、36",
+   "x=2 与 x=4 时两函数值相等，两者之间的一段 2^x 反而小于 x²",
+   "x>4 后 2^x 明显大于 x² 且差距迅速扩大，说明指数增长最终超过幂增长"
+  ]
+ },
+ {
+  "id": "mat_h334_q8",
+  "topicId": "mat_h334",
+  "prompt": "某公司第一年的利润为 10 万元，此后每年的利润都翻一番，则第四年的利润是（　）",
+  "question": "某公司第一年的利润为 10 万元，此后每年的利润都翻一番，则第四年的利润是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "40 万元"
+   },
+   {
+    "label": "B",
+    "text": "60 万元"
+   },
+   {
+    "label": "C",
+    "text": "70 万元"
+   },
+   {
+    "label": "D",
+    "text": "80 万元"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "每年翻一番就是每年利润是上一年的 2 倍：第一年 10 万元，第二年 20 万元，第三年 40 万元，第四年 80 万元，也就是 10×2^3=80 万元。误算成 10×2^4=160 万元，是把「第四年」错当成了已经翻过四次。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "40 万元"
+   },
+   {
+    "label": "B",
+    "text": "60 万元"
+   },
+   {
+    "label": "C",
+    "text": "70 万元"
+   },
+   {
+    "label": "D",
+    "text": "80 万元"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h335_q6",
+  "topicId": "mat_h335",
+  "prompt": "函数 f(x)=x²−5x+6 的两个零点之和是 ____。",
+  "question": "函数 f(x)=x²−5x+6 的两个零点之和是 ____。",
+  "options": [],
+  "answer": "5",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "令 x²−5x+6=0，因式分解得 (x−2)(x−3)=0，两个零点是 2 和 3，它们的和是 5。也可用韦达定理：两根之和等于一次项系数的相反数，即 5，两种算法互相印证。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h335_q7",
+  "topicId": "mat_h335",
+  "prompt": "某同学用二分法求 f(x)=x³−3 的零点，取区间 (1,2) 的中点 x=1.5 代入，则 f(1.5) 的值是（　）。",
+  "question": "某同学用二分法求 f(x)=x³−3 的零点，取区间 (1,2) 的中点 x=1.5 代入，则 f(1.5) 的值是（　）。",
+  "options": [],
+  "answer": 0.375,
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "把 x=1.5 代入 f(x)=x³−3，先算 1.5³=3.375，再减 3 得 0.375。又 f(1)=−2<0 而 f(1.5)>0，两端函数值异号，所以下一步应保留区间 (1,1.5) 继续二分。",
+  "subject": "math",
+  "choices": [],
+  "verify": "1.5**3-3",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h335_q8",
+  "topicId": "mat_h335",
+  "prompt": "方程 x³−2x−5=0 的实数解所在的区间是（　）",
+  "question": "方程 x³−2x−5=0 的实数解所在的区间是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "(0,1)"
+   },
+   {
+    "label": "B",
+    "text": "(1,2)"
+   },
+   {
+    "label": "C",
+    "text": "(2,3)"
+   },
+   {
+    "label": "D",
+    "text": "(3,4)"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "设 f(x)=x³−2x−5，则 f(2)=8−4−5=−1<0，f(3)=27−6−5=16>0，图象连续且两端异号，由零点存在定理知解在 (2,3) 内。检验 (1,2)：f(1)=−6<0 与 f(2)<0 同号，不能断定该区间内有解。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "(0,1)"
+   },
+   {
+    "label": "B",
+    "text": "(1,2)"
+   },
+   {
+    "label": "C",
+    "text": "(2,3)"
+   },
+   {
+    "label": "D",
+    "text": "(3,4)"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h336_q6",
+  "topicId": "mat_h336",
+  "prompt": "求函数 f(x)=x²−2x−3 的零点，并说明函数的零点与对应方程的解之间是什么关系。",
+  "question": "求函数 f(x)=x²−2x−3 的零点，并说明函数的零点与对应方程的解之间是什么关系。",
+  "options": [],
+  "answer": "令 x²−2x−3=0，因式分解得 (x−3)(x+1)=0，解得 x=3 或 x=−1，所以零点是 −1 和 3；它们正是方程 x²−2x−3=0 的两个实数解。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "求零点就是解方程 f(x)=0，两者是同一种运算的两种说法。因式分解得到两个一元一次因式，分别令其为零即可，最后把答案代回原函数检验函数值是否为零，能避免分解出错。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "因式分解得 (x−3)(x+1)=0，零点为 −1 与 3",
+   "零点就是方程 f(x)=0 的实数解，也是图象与 x 轴交点的横坐标",
+   "把 −1、3 代回原式，函数值都为 0，可用来检验结果"
+  ]
+ },
+ {
+  "id": "mat_h336_q7",
+  "topicId": "mat_h336",
+  "prompt": "函数 f(x)=x³+2x 的零点的个数是（　）",
+  "question": "函数 f(x)=x³+2x 的零点的个数是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "0 个"
+   },
+   {
+    "label": "B",
+    "text": "1 个"
+   },
+   {
+    "label": "C",
+    "text": "2 个"
+   },
+   {
+    "label": "D",
+    "text": "3 个"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "提取公因式得 f(x)=x(x²+2)。因为 x²+2≥2>0 对任意实数恒成立，所以只有 x=0 时函数值为零，零点只有 1 个。误选 3 个是把「三次函数必有三零点」当成结论，忽略了 x²+2 不可能为零。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "0 个"
+   },
+   {
+    "label": "B",
+    "text": "1 个"
+   },
+   {
+    "label": "C",
+    "text": "2 个"
+   },
+   {
+    "label": "D",
+    "text": "3 个"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h336_q8",
+  "topicId": "mat_h336",
+  "prompt": "若函数 f(x)=2x+m 的零点是 3，则实数 m 的值是 ____。",
+  "question": "若函数 f(x)=2x+m 的零点是 3，则实数 m 的值是 ____。",
+  "options": [],
+  "answer": "-6",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "零点是 3 的意思是 f(3)=0，代入得 2×3+m=0，即 6+m=0，解得 m=−6。常见错误是把零点当成函数值，写成 f(0)=3 去求 m，自变量与函数值搞反，结果会得到 m=3。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h337_q6",
+  "topicId": "mat_h337",
+  "prompt": "用二分法求函数零点时初始区间取 [0,4]，第一次取该区间的中点，这个中点的值是（　）。",
+  "question": "用二分法求函数零点时初始区间取 [0,4]，第一次取该区间的中点，这个中点的值是（　）。",
+  "options": [],
+  "answer": 2,
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "二分法每一步都取当前区间的中点，[0,4] 的中点坐标是 (0+4)÷2=2。取到中点后比较它与两个端点的函数值符号，保留使两端异号的那一半区间，区间长度减半。",
+  "subject": "math",
+  "choices": [],
+  "verify": "4/2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h337_q7",
+  "topicId": "mat_h337",
+  "prompt": "用二分法求 f(x)=0 在 (1,2) 内的近似解，已算得 f(1)<0、f(1.5)>0，则下一步应在哪个区间内继续二分（　）",
+  "question": "用二分法求 f(x)=0 在 (1,2) 内的近似解，已算得 f(1)<0、f(1.5)>0，则下一步应在哪个区间内继续二分（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "(1,1.5)"
+   },
+   {
+    "label": "B",
+    "text": "(1.5,2)"
+   },
+   {
+    "label": "C",
+    "text": "(2,3)"
+   },
+   {
+    "label": "D",
+    "text": "(1,2)"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "因为 f(1) 与 f(1.5) 异号，零点必在 (1,1.5) 内，所以保留 (1,1.5) 继续二分。f(1.5) 与 f(2) 同号，若保留 (1.5,2) 就把真正含零点的区间丢掉了；直接沿用 (1,2) 等于没有二分。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "(1,1.5)"
+   },
+   {
+    "label": "B",
+    "text": "(1.5,2)"
+   },
+   {
+    "label": "C",
+    "text": "(2,3)"
+   },
+   {
+    "label": "D",
+    "text": "(1,2)"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h337_q8",
+  "topicId": "mat_h337",
+  "prompt": "初始区间长度为 1，要求精确度达到 0.01，说明用二分法至少需要二分多少次，并写出判断方法。",
+  "question": "初始区间长度为 1，要求精确度达到 0.01，说明用二分法至少需要二分多少次，并写出判断方法。",
+  "options": [],
+  "answer": "第 n 次二分后区间长度为 1/2^n，要求 1/2^n<0.01，即 2^n>100。因为 2^6=64<100，2^7=128>100，所以至少要二分 7 次。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "二分法每操作一次区间长度减半，n 次后长度为初始长度除以 2^n。把「小于精确度」写成不等式，再用 2 的幂逐次比较即可定出最小次数，注意是取满足条件的最小整数，不能用四舍五入。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "设二分 n 次，则区间长度变为 1/2^n",
+   "令 1/2^n<0.01 得 2^n>100，把精确度要求转化为指数不等式",
+   "2^6=64 不够、2^7=128 已超过 100，故 n 至少取 7"
+  ]
+ },
+ {
+  "id": "mat_h338_q6",
+  "topicId": "mat_h338",
+  "prompt": "某种细胞每 30 分钟分裂一次，由一个细胞繁殖到 8 个细胞需要经过的时间是（　）",
+  "question": "某种细胞每 30 分钟分裂一次，由一个细胞繁殖到 8 个细胞需要经过的时间是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "60 分钟"
+   },
+   {
+    "label": "B",
+    "text": "90 分钟"
+   },
+   {
+    "label": "C",
+    "text": "120 分钟"
+   },
+   {
+    "label": "D",
+    "text": "240 分钟"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "每次分裂细胞数变为原来的 2 倍，依次得到 2 个、4 个、8 个，共分裂 3 次。每次间隔 30 分钟，所以需要 3×30=90 分钟。误选 120 分钟是把目标个数 8 当成了分裂次数。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "60 分钟"
+   },
+   {
+    "label": "B",
+    "text": "90 分钟"
+   },
+   {
+    "label": "C",
+    "text": "120 分钟"
+   },
+   {
+    "label": "D",
+    "text": "240 分钟"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h338_q7",
+  "topicId": "mat_h338",
+  "prompt": "某商品原价 100 元，连续两次降价，每次都在前一次价格的基础上降低 10%，则现价是 ____ 元。",
+  "question": "某商品原价 100 元，连续两次降价，每次都在前一次价格的基础上降低 10%，则现价是 ____ 元。",
+  "options": [],
+  "answer": "81",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "每次降价 10% 就是价格乘 0.9，两次共乘 0.9×0.9=0.81，现价为 100×0.81=81 元。常见错误是把两次共降 20% 直接算成 80 元，忽略了第二次的 10% 是按降价后的价格计算的。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h338_q8",
+  "topicId": "mat_h338",
+  "prompt": "某地今年人口为 50000 人，若人口按每年 2% 的比例增长，则 2 年后该地人口约为（　）人。",
+  "question": "某地今年人口为 50000 人，若人口按每年 2% 的比例增长，则 2 年后该地人口约为（　）人。",
+  "options": [],
+  "answer": 52020,
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "按每年 2% 的比例增长，模型为 y=50000×1.02^x，取 x=2 得 50000×1.02²=50000×1.0404=52020 人。若只算第一年的增加量再翻倍，等于把增长当成等差，会少算第二年新增人口本身带来的增长。",
+  "subject": "math",
+  "choices": [],
+  "verify": "50000*1.02**2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h339_q6",
+  "topicId": "mat_h339",
+  "prompt": "与 −300° 角终边相同的最小正角是（　）",
+  "question": "与 −300° 角终边相同的最小正角是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "60°"
+   },
+   {
+    "label": "B",
+    "text": "30°"
+   },
+   {
+    "label": "C",
+    "text": "120°"
+   },
+   {
+    "label": "D",
+    "text": "300°"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "终边相同的角相差 360° 的整数倍，−300°+360°=60°，60° 是正角且小于 360°，所以最小正角是 60°。误选 300° 是把 −300° 的符号直接去掉，那只是关于 x 轴对称的角，终边并不相同。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "60°"
+   },
+   {
+    "label": "B",
+    "text": "30°"
+   },
+   {
+    "label": "C",
+    "text": "120°"
+   },
+   {
+    "label": "D",
+    "text": "300°"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h339_q7",
+  "topicId": "mat_h339",
+  "prompt": "分别判断 480° 角和 −120° 角是第几象限角，并说明判断方法。",
+  "question": "分别判断 480° 角和 −120° 角是第几象限角，并说明判断方法。",
+  "options": [],
+  "answer": "480°=1×360°+120°，去掉整周后与 120° 终边相同，是第二象限角；−120°+360°=240°，240° 的终边在第三象限，所以 −120° 是第三象限角。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "判断象限角的关键是先化到 0°～360° 之间：正的大角减去 360° 的整数倍，负角加上 360° 的整数倍，终边位置不变。化完再看 α 落在哪个象限，不能只看原数的符号或绝对值。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "480°=1×360°+120°，与 120° 终边相同，属第二象限角",
+   "−120°+360°=240°，240° 落在第三象限，故 −120° 属第三象限角",
+   "判断方法：把角化成 k·360°+α 的形式，使 0°≤α<360°，再看 α 所在象限"
+  ]
+ },
+ {
+  "id": "mat_h339_q8",
+  "topicId": "mat_h339",
+  "prompt": "若角 α 的终边落在 y 轴的负半轴上，则 α 的取值集合是（　）",
+  "question": "若角 α 的终边落在 y 轴的负半轴上，则 α 的取值集合是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "{α|α=k·180°+90°, k∈Z}"
+   },
+   {
+    "label": "B",
+    "text": "{α|α=k·360°+180°, k∈Z}"
+   },
+   {
+    "label": "C",
+    "text": "{α|α=k·180°+270°, k∈Z}"
+   },
+   {
+    "label": "D",
+    "text": "{α|α=k·360°+270°, k∈Z}"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "终边在 y 轴负半轴上的最小正角是 270°，与它终边相同的角相差 360° 的整数倍，所以集合是 {α|α=k·360°+270°, k∈Z}。含 k·180° 的写法会在 270° 与 90° 之间跳动，把 y 轴正半轴也算进来。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "{α|α=k·180°+90°, k∈Z}"
+   },
+   {
+    "label": "B",
+    "text": "{α|α=k·360°+180°, k∈Z}"
+   },
+   {
+    "label": "C",
+    "text": "{α|α=k·180°+270°, k∈Z}"
+   },
+   {
+    "label": "D",
+    "text": "{α|α=k·360°+270°, k∈Z}"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h340_q6",
+  "topicId": "mat_h340",
+  "prompt": "1200° 角是第 ____ 象限角。",
+  "question": "1200° 角是第 ____ 象限角。",
+  "options": [],
+  "answer": "二",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "1200 除以 360，商 3 余 120，即 1200°=3×360°+120°，与 120° 终边相同。120° 大于 90° 小于 180°，终边在第二象限，所以 1200° 是第二象限角。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h340_q7",
+  "topicId": "mat_h340",
+  "prompt": "把 −330° 化成 0°～360° 范围内的角，结果是（　）度。",
+  "question": "把 −330° 化成 0°～360° 范围内的角，结果是（　）度。",
+  "options": [],
+  "answer": 30,
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "与 −330° 终边相同的角可写成 −330°+k·360°。取 k=1 得 30°，它落在 0°～360° 范围内；取 k=0 得到 −330°，不符合范围要求，所以答案是 30。",
+  "subject": "math",
+  "choices": [],
+  "verify": "360-330",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h340_q8",
+  "topicId": "mat_h340",
+  "prompt": "若 α 是第二象限角，则 α/2 的终边可能落在（　）",
+  "question": "若 α 是第二象限角，则 α/2 的终边可能落在（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "只有第一象限"
+   },
+   {
+    "label": "B",
+    "text": "只有第二象限"
+   },
+   {
+    "label": "C",
+    "text": "第一象限或第三象限"
+   },
+   {
+    "label": "D",
+    "text": "第三象限或第四象限"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "设 α=k·360°+θ，其中 90°<θ<180°，两边除以 2 得 α/2=k·180°+θ/2，而 45°<θ/2<90°。k 取偶数时 θ/2 本身在第一象限；k 取奇数时再加 180°，落到第三象限。所以是第一或第三象限角。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "只有第一象限"
+   },
+   {
+    "label": "B",
+    "text": "只有第二象限"
+   },
+   {
+    "label": "C",
+    "text": "第一象限或第三象限"
+   },
+   {
+    "label": "D",
+    "text": "第三象限或第四象限"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h341_q6",
+  "topicId": "mat_h341",
+  "prompt": "把 −135° 化为弧度，并说明角度化为弧度所用的换算方法。",
+  "question": "把 −135° 化为弧度，并说明角度化为弧度所用的换算方法。",
+  "options": [],
+  "answer": "−135°=−135×π/180=−3π/4。角度化弧度时用度数乘 π/180，依据是 180°=π rad。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "角度制与弧度制通过 180°=π rad 建立一一对应：把度数乘 π/180 就得到弧度，约去公因数后写成最简分数形式。负角保留负号，−135° 与 135° 的弧度互为相反数，可用这一点自查。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "−135° 化为弧度是 −3π/4",
+   "换算依据是 180°=π rad，角度化弧度乘 π/180",
+   "反过来弧度化角度要乘 180/π，例如 π/3 化为 60°"
+  ]
+ },
+ {
+  "id": "mat_h341_q7",
+  "topicId": "mat_h341",
+  "prompt": "将角 13π/6 用角度制表示，结果是（　）",
+  "question": "将角 13π/6 用角度制表示，结果是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "330°"
+   },
+   {
+    "label": "B",
+    "text": "390°"
+   },
+   {
+    "label": "C",
+    "text": "420°"
+   },
+   {
+    "label": "D",
+    "text": "660°"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "弧度化角度用「弧度数×180/π」，所以 13π/6=13×180°÷6=390°。误选 330° 是把 11π/6 的结果记成了本题；误选 420° 则是在除法时把分母当成 13 算错。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "330°"
+   },
+   {
+    "label": "B",
+    "text": "390°"
+   },
+   {
+    "label": "C",
+    "text": "420°"
+   },
+   {
+    "label": "D",
+    "text": "660°"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h341_q8",
+  "topicId": "mat_h341",
+  "prompt": "一个扇形的半径为 3，圆心角为 2 rad，它的面积是 ____。",
+  "question": "一个扇形的半径为 3，圆心角为 2 rad，它的面积是 ____。",
+  "options": [],
+  "answer": "9",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "扇形面积公式为 S=(1/2)|α|r²，代入 |α|=2、r=3 得 S=(1/2)×2×9=9。也可先求弧长 l=|α|r=6，再用 S=(1/2)lr=0.5×6×3 检验，结果同样是 9。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h342_q6",
+  "topicId": "mat_h342",
+  "prompt": "已知点 (−3,4) 在角 α 的终边上，则 cosα 的值是（　）。",
+  "question": "已知点 (−3,4) 在角 α 的终边上，则 cosα 的值是（　）。",
+  "options": [],
+  "answer": -0.6,
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "点到原点的距离 r=√((−3)²+4²)=5，按定义 cosα=x/r=−3/5=−0.6。如果把横坐标的负号丢掉，就会得到一个第二象限角余弦为正的错误结论，符号要由横坐标决定。",
+  "subject": "math",
+  "choices": [],
+  "verify": "-3/5",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h342_q7",
+  "topicId": "mat_h342",
+  "prompt": "若 sinα<0 且 cosα>0，则角 α 的终边落在（　）",
+  "question": "若 sinα<0 且 cosα>0，则角 α 的终边落在（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "第一象限"
+   },
+   {
+    "label": "B",
+    "text": "第二象限"
+   },
+   {
+    "label": "C",
+    "text": "第三象限"
+   },
+   {
+    "label": "D",
+    "text": "第四象限"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "sinα<0 说明终边在第三或第四象限，cosα>0 说明终边在第一或第四象限，两个条件同时满足只剩第四象限。只看其中一个符号就会留下两个候选项，必须取交集。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "第一象限"
+   },
+   {
+    "label": "B",
+    "text": "第二象限"
+   },
+   {
+    "label": "C",
+    "text": "第三象限"
+   },
+   {
+    "label": "D",
+    "text": "第四象限"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h342_q8",
+  "topicId": "mat_h342",
+  "prompt": "已知角 α 的终边经过点 P(−5,12)，求 sinα、cosα、tanα 的值，并写出求解过程。",
+  "question": "已知角 α 的终边经过点 P(−5,12)，求 sinα、cosα、tanα 的值，并写出求解过程。",
+  "options": [],
+  "answer": "r=√((−5)²+12²)=13，所以 sinα=12/13，cosα=−5/13，tanα=12/(−5)=−12/5。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "定义法求三角函数值分两步：先算 r=√(x²+y²)，再分别用 y/r、x/r、y/x 求正弦、余弦、正切。本题横坐标为负，所以余弦与正切都是负数，只有正弦为正，这个符号组合与第二象限角的规律一致。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "先由 r=√(x²+y²)=√(25+144)=13 求出点到原点的距离",
+   "sinα=y/r=12/13，cosα=x/r=−5/13，分母都是 r 而不是 x 或 y",
+   "tanα=y/x=12/(−5)=−12/5，也可由 tanα=sinα÷cosα 得到同一结果"
+  ]
+ }
+]

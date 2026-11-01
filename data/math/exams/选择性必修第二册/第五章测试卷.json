@@ -130,27 +130,27 @@
       "mat_h494",
       "mat_h495"
      ],
-     "stem": "下列求导运算正确的是（　　）",
+     "stem": "函数 f(x) = √x + 1/x（x > 0）在 x = 1 处的导数为（　　）",
      "options": [
       {
        "label": "A",
-       "text": "(3ˣ)′ = 3ˣ"
+       "text": "-3/2"
       },
       {
        "label": "B",
-       "text": "(sin x)′ = -cos x"
+       "text": "-1/2"
       },
       {
        "label": "C",
-       "text": "(x⁻²)′ = -2x⁻³"
+       "text": "1/2"
       },
       {
        "label": "D",
-       "text": "(log₂x)′ = 1/x"
+       "text": "3/2"
       }
      ],
-     "answer": "C",
-     "analysis": "(3ˣ)′ = 3ˣln 3，A 漏掉了因子 ln 3；(sin x)′ = cos x，B 符号错误；(x⁻²)′ = -2x⁻³ 由幂函数求导公式 (xᵅ)′ = αxᵅ⁻¹ 得，C 正确；(log₂x)′ = 1/(x ln 2)，D 漏掉了 ln 2。",
+     "answer": "B",
+     "analysis": "(√x)′ = 1/(2√x)，(1/x)′ = (x⁻¹)′ = -x⁻²，故 f′(x) = 1/(2√x) - 1/x²。代入 x = 1 得 f′(1) = 1/2 - 1 = -1/2，故选 B。注意 1/x 的导数是 -1/x² 而非 1/x²，若漏掉负号就会误选 C。",
      "itemId": "mat_exam_xx2_u5_q03",
      "prereq": [
       "mat_h493",

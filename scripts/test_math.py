@@ -37,7 +37,7 @@ T = {t["id"]: t for t in topics}
 ck("知识点 ≥ 515 条（课时级扩建只增不减）", len(topics) >= 515, len(topics))
 ck("id 唯一", len(T) == len(topics))
 ck("全部 subject=math", all(t.get("subject") == "math" for t in topics))
-ck("诊断题 5 题/点", len(qs) == len(topics) * 5, f"{len(qs)} vs {len(topics)*5}")
+ck("诊断题 ≥5 题/点（课时点已加深到 8 题）", len(qs) >= len(topics) * 5, f"{len(qs)} vs {len(topics)*5}")
 ck("题 id 唯一", len({q["id"] for q in qs}) == len(qs))
 
 # 1b 领域口径：只用课标四领域（细分放 tags）

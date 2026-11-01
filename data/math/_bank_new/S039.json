@@ -1,0 +1,880 @@
+[
+ {
+  "id": "mat_h359_q6",
+  "topicId": "mat_h359",
+  "prompt": "化简 3(2a-b)-2(a-3b) 的结果是（　）",
+  "question": "化简 3(2a-b)-2(a-3b) 的结果是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "4a+3b"
+   },
+   {
+    "label": "B",
+    "text": "4a-3b"
+   },
+   {
+    "label": "C",
+    "text": "8a+3b"
+   },
+   {
+    "label": "D",
+    "text": "4a+9b"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "按数乘对向量加减的分配律分别展开：3(2a-b)=6a-3b，-2(a-3b)=-2a+6b，再把 a 与 b 的系数各自合并，得 6a-2a=4a，-3b+6b=3b，所以结果是 4a+3b。此处最容易错的是第二项括号前带负号，-2 乘 -3b 应得 +6b，错算成 -3b 就会选到 4a-3b。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "4a+3b"
+   },
+   {
+    "label": "B",
+    "text": "4a-3b"
+   },
+   {
+    "label": "C",
+    "text": "8a+3b"
+   },
+   {
+    "label": "D",
+    "text": "4a+9b"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h359_q7",
+  "topicId": "mat_h359",
+  "prompt": "已知非零向量 a 的模为 6，实数 λ=-2，则 |λa| 的值是____。",
+  "question": "已知非零向量 a 的模为 6，实数 λ=-2，则 |λa| 的值是____。",
+  "options": [],
+  "answer": "12",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "数乘向量的模等于实数绝对值与向量模的乘积，即 |λa|=|λ||a|。这里 |λ|=|-2|=2，|a|=6，所以 |λa|=2×6=12。注意模是非负数，直接把 λ=-2 与 6 相乘得 -12 是错的，负号只决定 λa 与 a 方向相反，不影响模的大小。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h359_q8",
+  "topicId": "mat_h359",
+  "prompt": "已知非零向量 a、b 满足 b=-3a，且 |a|=4，则 |2a+3b| 的值是____。",
+  "question": "已知非零向量 a、b 满足 b=-3a，且 |a|=4，则 |2a+3b| 的值是____。",
+  "options": [],
+  "answer": "28",
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "先把 b=-3a 代入线性式消去 b：2a+3b=2a+3(-3a)=2a-9a=-7a。再由 |λa|=|λ||a| 得 |-7a|=7×4=28。若把 3(-3a) 算成 -9a 之后仍按 2a-9a=7a 取绝对值，符号虽对，但若误写成 2a-9a=-11a 就会得到 44，关键是系数要逐项算准。",
+  "subject": "math",
+  "choices": [],
+  "verify": "7*4",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h360_q6",
+  "topicId": "mat_h360",
+  "prompt": "已知 |a|=6，|b|=2，且 a 与 b 的夹角为 60°，则 a·b 等于（　）",
+  "question": "已知 |a|=6，|b|=2，且 a 与 b 的夹角为 60°，则 a·b 等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "12"
+   },
+   {
+    "label": "B",
+    "text": "6"
+   },
+   {
+    "label": "C",
+    "text": "6√3"
+   },
+   {
+    "label": "D",
+    "text": "-6"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "由数量积定义 a·b=|a||b|cosθ，代入得 6×2×cos60°=12×1/2=6。容易错的地方有两处：漏乘 cos60° 会得到 12，把 cos60° 记成 sin60° 会得到 6√3；另外夹角为锐角时数量积必为正，所以 -6 也不对。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "12"
+   },
+   {
+    "label": "B",
+    "text": "6"
+   },
+   {
+    "label": "C",
+    "text": "6√3"
+   },
+   {
+    "label": "D",
+    "text": "-6"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h360_q7",
+  "topicId": "mat_h360",
+  "prompt": "已知 |a|=2，|b|=3，且 a·b=-3，求 a 与 b 夹角的余弦值，并指出这个角是锐角还是钝角。",
+  "question": "已知 |a|=2，|b|=3，且 a·b=-3，求 a 与 b 夹角的余弦值，并指出这个角是锐角还是钝角。",
+  "options": [],
+  "answer": "cosθ=-1/2，夹角为 120°，是钝角。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "数量积与夹角的关系是 a·b=|a||b|cosθ，两边同时除以 |a||b|=6，得到 cosθ=-3/6=-1/2。余弦值为负说明夹角是钝角，再由 cos120°=-1/2 确定夹角为 120°。判断锐角钝角只需看数量积的符号：正为锐角，零为直角，负为钝角。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "由 a·b=|a||b|cosθ 得 cosθ=(-3)/(2×3)=-1/2",
+   "cosθ<0 对应夹角为钝角，由 cosθ=-1/2 得夹角 120°，属于钝角"
+  ]
+ },
+ {
+  "id": "mat_h360_q8",
+  "topicId": "mat_h360",
+  "prompt": "已知 |a|=3，|b|=4，a·b=-6，则 |a+b| 等于（　）",
+  "question": "已知 |a|=3，|b|=4，a·b=-6，则 |a+b| 等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "13"
+   },
+   {
+    "label": "B",
+    "text": "√37"
+   },
+   {
+    "label": "C",
+    "text": "√13"
+   },
+   {
+    "label": "D",
+    "text": "5"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "先求模的平方：|a+b|²=|a|²+2a·b+|b|²=9-12+16=13，所以 |a+b|=√13。这里把 a·b=-6 代入时必须带上负号，写成 9+12+16=37 会误选 √37；另外把模的平方 13 直接当成模，就会误选 13。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "13"
+   },
+   {
+    "label": "B",
+    "text": "√37"
+   },
+   {
+    "label": "C",
+    "text": "√13"
+   },
+   {
+    "label": "D",
+    "text": "5"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h361_q6",
+  "topicId": "mat_h361",
+  "prompt": "已知 e1、e2 不共线，a=2e1-5e2，b=-e1+3e2，则 2a+b 中 e2 的系数是____。",
+  "question": "已知 e1、e2 不共线，a=2e1-5e2，b=-e1+3e2，则 2a+b 中 e2 的系数是____。",
+  "options": [],
+  "answer": "-7",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "先按数乘运算律求 2a=4e1-10e2，再与 b=-e1+3e2 相加，e2 的系数为 -10+3=-7（e1 的系数为 4-1=3）。合并时只把同一个基向量的系数相加减，e1 与 e2 不能互相合并，因为基底不共线，两个方向无法互相表示。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h361_q7",
+  "topicId": "mat_h361",
+  "prompt": "设 e1、e2 是平面内的一组基底，a=e1+4e2，b=3e1-2e2，则 2a-b 的两个系数之和是____。",
+  "question": "设 e1、e2 是平面内的一组基底，a=e1+4e2，b=3e1-2e2，则 2a-b 的两个系数之和是____。",
+  "options": [],
+  "answer": "9",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "先算 2a=2e1+8e2，再减去 b 得 2a-b=2e1+8e2-3e1+2e2=-e1+10e2，其中 e1 的系数是 -1，e2 的系数是 10，两系数之和为 -1+10=9。减号后面的每一项都要变号，-(-2e2) 得 +2e2，漏掉这一步会算成 -e1+6e2。",
+  "subject": "math",
+  "choices": [],
+  "verify": "10-1",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h361_q8",
+  "topicId": "mat_h361",
+  "prompt": "设 e1、e2 为平面内一组基底，向量AB=2e1+3e2，向量CB=e1-2e2，则向量AC 等于（　）",
+  "question": "设 e1、e2 为平面内一组基底，向量AB=2e1+3e2，向量CB=e1-2e2，则向量AC 等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "3e1+e2"
+   },
+   {
+    "label": "B",
+    "text": "e1-5e2"
+   },
+   {
+    "label": "C",
+    "text": "-e1+5e2"
+   },
+   {
+    "label": "D",
+    "text": "e1+5e2"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "由向量减法的三角形法则，向量AC=向量AB+向量BC，而向量BC=-向量CB=-e1+2e2。代入得向量AC=2e1+3e2-e1+2e2=e1+5e2。这里的关键是把 CB 换成 BC 时整体变号，若漏掉 BC 中 e2 前面的正号而写成 e1-5e2，说明只对 e1 的系数取了相反数，两个坐标分量必须同时变号。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "3e1+e2"
+   },
+   {
+    "label": "B",
+    "text": "e1-5e2"
+   },
+   {
+    "label": "C",
+    "text": "-e1+5e2"
+   },
+   {
+    "label": "D",
+    "text": "e1+5e2"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h362_q6",
+  "topicId": "mat_h362",
+  "prompt": "在平行四边形 ABCD 中，以向量AB、向量AD 为基底，表示向量AC 与向量BD，并说明所用的向量加法法则。",
+  "question": "在平行四边形 ABCD 中，以向量AB、向量AD 为基底，表示向量AC 与向量BD，并说明所用的向量加法法则。",
+  "options": [],
+  "answer": "向量AC=向量AB+向量AD，向量BD=向量AD-向量AB。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "平行四边形中 AB 与 DC 平行且相等，所以向量AC 可以看成从 A 先走 AB 再走 BC=AD，由三角形法则得向量AC=向量AB+向量AD。而向量BD 的起点是 B，按向量减法向量BD=向量AD-向量AB。两个结果都以 AB、AD 为基底，系数唯一，这是基本定理存在性与唯一性的直接体现。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "向量AC 是以 A 为起点、C 为终点的对角线，等于相邻两边向量AB 与向量AD 的和",
+   "向量BD 从 B 指向 D，等于终点向量AD 减起点向量AB，即向量BD=向量AD-向量AB"
+  ]
+ },
+ {
+  "id": "mat_h362_q7",
+  "topicId": "mat_h362",
+  "prompt": "已知 e1、e2 不共线，若 (x-1)e1+(y+2)e2=2e1-3e2，则 x、y 的值分别是（　）",
+  "question": "已知 e1、e2 不共线，若 (x-1)e1+(y+2)e2=2e1-3e2，则 x、y 的值分别是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "x=3，y=-5"
+   },
+   {
+    "label": "B",
+    "text": "x=3，y=1"
+   },
+   {
+    "label": "C",
+    "text": "x=-1，y=-5"
+   },
+   {
+    "label": "D",
+    "text": "x=1，y=-3"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "因为 e1、e2 不共线，同一个向量用这组基底表示是唯一的，所以对应系数必须相等：x-1=2，y+2=-3。解得 x=3，y=-5。常见错误是解 y+2=-3 时移项符号弄错，得 y=1；或者忘记右边是 -3 而不是 3，从而算错。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "x=3，y=-5"
+   },
+   {
+    "label": "B",
+    "text": "x=3，y=1"
+   },
+   {
+    "label": "C",
+    "text": "x=-1，y=-5"
+   },
+   {
+    "label": "D",
+    "text": "x=1，y=-3"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h362_q8",
+  "topicId": "mat_h362",
+  "prompt": "在△ABC 中，D 是 AB 的中点，E 是 AC 上一点，且 AE=2EC。若向量DE=x 向量AB+y 向量AC，则 x+y=____。",
+  "question": "在△ABC 中，D 是 AB 的中点，E 是 AC 上一点，且 AE=2EC。若向量DE=x 向量AB+y 向量AC，则 x+y=____。",
+  "options": [],
+  "answer": "1/6",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "先求两个关键向量：D 为 AB 中点，所以向量AD=(1/2)向量AB；AE=2EC 说明 E 把 AC 分成 2:1，故向量AE=(2/3)向量AC。于是向量DE=向量AE-向量AD=(2/3)向量AC-(1/2)向量AB，即 x=-1/2，y=2/3。两系数相加得 -3/6+4/6=1/6。若把 AE=2EC 误当作 AE=(1/2)AC 的分法，就会整题走偏。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h363_q6",
+  "topicId": "mat_h363",
+  "prompt": "已知向量 a=6i+8j，其中 i、j 分别是 x 轴、y 轴正方向上的单位向量，则 |a| 的值是____。",
+  "question": "已知向量 a=6i+8j，其中 i、j 分别是 x 轴、y 轴正方向上的单位向量，则 |a| 的值是____。",
+  "options": [],
+  "answer": "10",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "向量写成 xi+yj 后，它的坐标就是 (6,8)，模按公式 |a|=√(x^2+y^2) 计算：√(36+64)=√100=10。这里不要去求什么方向角，正交分解的意义就在于用两组坐标直接算模。若把模的平方 100 直接写成答案，就忘了最后要开方。",
+  "subject": "math",
+  "choices": [],
+  "verify": "100**0.5",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h363_q7",
+  "topicId": "mat_h363",
+  "prompt": "把向量 a=-2i+5j 用坐标表示，结果是（　）",
+  "question": "把向量 a=-2i+5j 用坐标表示，结果是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "(2,5)"
+   },
+   {
+    "label": "B",
+    "text": "(-2,5)"
+   },
+   {
+    "label": "C",
+    "text": "(-2,-5)"
+   },
+   {
+    "label": "D",
+    "text": "(5,-2)"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "向量写成 xi+yj 时，x 是 i 的系数，y 是 j 的系数，分别对应横、纵坐标，所以 a=-2i+5j 的坐标是 (-2,5)。容易出错的地方是把 -2i 的负号丢掉写成 (2,5)，或者把两个坐标的顺序颠倒写成 (5,-2)，坐标是有序实数对，顺序不能换。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "(2,5)"
+   },
+   {
+    "label": "B",
+    "text": "(-2,5)"
+   },
+   {
+    "label": "C",
+    "text": "(-2,-5)"
+   },
+   {
+    "label": "D",
+    "text": "(5,-2)"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h363_q8",
+  "topicId": "mat_h363",
+  "prompt": "已知向量 a=(x,3) 的模等于 5，求实数 x 的所有可能取值。",
+  "question": "已知向量 a=(x,3) 的模等于 5，求实数 x 的所有可能取值。",
+  "options": [],
+  "answer": "x=4 或 x=-4。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "模的计算只用到坐标的平方，所以 |a|²=x²+9=25，移项得 x²=16。开方时要注意 x 可以正也可以负，x=4 与 x=-4 对应的向量 (4,3) 和 (-4,3) 关于 y 轴对称，模都是 5。只写 x=4 会漏解，这是本题最常见的失分点。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "由模的坐标公式得 x^2+3^2=25，即 x^2=16",
+   "解 x^2=16 得 x=4 或 x=-4，两个值都使 |a|=5，不能只保留正值"
+  ]
+ },
+ {
+  "id": "mat_h364_q6",
+  "topicId": "mat_h364",
+  "prompt": "已知 a=(-2,5)，b=(3,-1)，则 a-b 的坐标是（　）",
+  "question": "已知 a=(-2,5)，b=(3,-1)，则 a-b 的坐标是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "(-5,6)"
+   },
+   {
+    "label": "B",
+    "text": "(5,-6)"
+   },
+   {
+    "label": "C",
+    "text": "(-5,4)"
+   },
+   {
+    "label": "D",
+    "text": "(1,4)"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "向量减法的坐标法则是横坐标、纵坐标分别相减：(-2-3,5-(-1))=(-5,6)。两个易错点：一是把减法做成加法得 (1,4)；二是第二个坐标只写 5-1=4，漏掉 b 的纵坐标是 -1，减负数要变加。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "(-5,6)"
+   },
+   {
+    "label": "B",
+    "text": "(5,-6)"
+   },
+   {
+    "label": "C",
+    "text": "(-5,4)"
+   },
+   {
+    "label": "D",
+    "text": "(1,4)"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h364_q7",
+  "topicId": "mat_h364",
+  "prompt": "已知点 A(-2,1)、B(3,-4)，则向量AB 的坐标是____。",
+  "question": "已知点 A(-2,1)、B(3,-4)，则向量AB 的坐标是____。",
+  "options": [],
+  "answer": "(5,-5)",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "有向线段的坐标等于终点坐标减起点坐标，即向量AB=(3-(-2),-4-1)=(5,-5)。注意顺序必须是终点减起点，反过来写成 (-5,5) 得到的是向量BA。这也是由坐标求线段长度的基础，长度再按 √(25+25) 计算。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h364_q8",
+  "topicId": "mat_h364",
+  "prompt": "已知 a=(2,1)，b=(1,-2)，则 |2a-b| 的值是____。",
+  "question": "已知 a=(2,1)，b=(1,-2)，则 |2a-b| 的值是____。",
+  "options": [],
+  "answer": "5",
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "先按数乘与减法的坐标法则算出 2a=(4,2)，再逐坐标相减得 2a-b=(4-1,2-(-2))=(3,4)。最后用模的公式 √(9+16)=√25=5。这里若把 2-(-2) 算成 0，会得到 (3,0)，长度 3，错误就出在减负数这一点上。",
+  "subject": "math",
+  "choices": [],
+  "verify": "25**0.5",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h365_q6",
+  "topicId": "mat_h365",
+  "prompt": "已知 a=(2,-4)，则 (1/2)a 的坐标是（　）",
+  "question": "已知 a=(2,-4)，则 (1/2)a 的坐标是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "(1,-2)"
+   },
+   {
+    "label": "B",
+    "text": "(1,-8)"
+   },
+   {
+    "label": "C",
+    "text": "(4,-8)"
+   },
+   {
+    "label": "D",
+    "text": "(-1,2)"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "数乘向量的坐标法则是 λa=(λx,λy)，横纵坐标各自乘 λ。取 λ=1/2 得 (2×1/2, -4×1/2)=(1,-2)。若只把横坐标乘 1/2 而给纵坐标乘 2，就得到 (1,-8)；λ 的符号对两个坐标同时生效，所以 (-1,2) 也不对。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "(1,-2)"
+   },
+   {
+    "label": "B",
+    "text": "(1,-8)"
+   },
+   {
+    "label": "C",
+    "text": "(4,-8)"
+   },
+   {
+    "label": "D",
+    "text": "(-1,2)"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h365_q7",
+  "topicId": "mat_h365",
+  "prompt": "已知 a=(4,6)，b=(-6,-9)，判断 a 与 b 是否共线，并说明理由。",
+  "question": "已知 a=(4,6)，b=(-6,-9)，判断 a 与 b 是否共线，并说明理由。",
+  "options": [],
+  "answer": "共线，因为 4×(-9)-6×(-6)=-36+36=0，且 b=-(3/2)a。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "两向量共线的坐标条件是 x1y2-x2y1=0，代入得 4×(-9)-6×(-6)=-36+36=0，条件成立，所以 a 与 b 共线。进一步看 b=-6/4 a=-(3/2)a，负系数说明两者方向相反。若误用 x1x2+y1y2=0 去检验，那是垂直的条件，会得出不共线的错误结论。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "用共线的坐标条件 x1y2-x2y1=0 检验：4×(-9)-6×(-6)=-36+36=0",
+   "系数关系 b=-(3/2)a 说明两向量方向相反、长度成比例，故两向量共线"
+  ]
+ },
+ {
+  "id": "mat_h365_q8",
+  "topicId": "mat_h365",
+  "prompt": "已知 A(1,-2)、B(3,4)、C(x,10) 三点共线，则 x 等于（　）",
+  "question": "已知 A(1,-2)、B(3,4)、C(x,10) 三点共线，则 x 等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "4"
+   },
+   {
+    "label": "B",
+    "text": "5"
+   },
+   {
+    "label": "C",
+    "text": "6"
+   },
+   {
+    "label": "D",
+    "text": "7"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "三点共线等价于向量AB 与向量AC 共线。向量AB=(2,6)，向量AC=(x-1,12)，由坐标条件 2×12-6(x-1)=0 得 24=6x-6，解得 x=5。代入验证：x=5 时向量AC=(4,12)=2 向量AB，确实共线。只比较横坐标的差而忽略纵坐标的比例，就会得不到正确方程。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "4"
+   },
+   {
+    "label": "B",
+    "text": "5"
+   },
+   {
+    "label": "C",
+    "text": "6"
+   },
+   {
+    "label": "D",
+    "text": "7"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h366_q6",
+  "topicId": "mat_h366",
+  "prompt": "已知 a=(2,-3)，b=(-4,1)，则 a·b 的值是____。",
+  "question": "已知 a=(2,-3)，b=(-4,1)，则 a·b 的值是____。",
+  "options": [],
+  "answer": "-11",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "数量积的坐标公式是两个向量对应坐标乘积之和：a·b=2×(-4)+(-3)×1=-8-3=-11。计算时必须保留每个坐标的符号，两个坐标乘积都带负号，硬相加成 8-3=5 或 -8+3=-5 都是符号错误。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h366_q7",
+  "topicId": "mat_h366",
+  "prompt": "已知 a=(3,-1)，b=(2,5)，则 (2a)·b 的值是____。",
+  "question": "已知 a=(3,-1)，b=(2,5)，则 (2a)·b 的值是____。",
+  "options": [],
+  "answer": "2",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "按数乘的坐标法则先求 2a=(6,-2)，再用坐标公式算数量积：(6,-2)·(2,5)=12-10=2。也可以先用数乘对数量积的分配性质：2a·b=2(a·b)，而 a·b=6-5=1，同样得 2。两种顺序结果一致，这正说明数量积满足与数乘的结合律。",
+  "subject": "math",
+  "choices": [],
+  "verify": "2*(3*2-1*5)",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h366_q8",
+  "topicId": "mat_h366",
+  "prompt": "已知 a=(1,2)，b=(m,1)，若 a 与 b 的夹角为钝角，则 m 的取值范围是（　）",
+  "question": "已知 a=(1,2)，b=(m,1)，若 a 与 b 的夹角为钝角，则 m 的取值范围是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "m>-2"
+   },
+   {
+    "label": "B",
+    "text": "m<-2 且 m≠1/2"
+   },
+   {
+    "label": "C",
+    "text": "m<-2"
+   },
+   {
+    "label": "D",
+    "text": "m<-1"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "夹角为钝角要求数量积为负且两向量不反向。由 a·b=m+2<0 得 m<-2；再看反向的情形，a 与 b 反向需共线，由 1×1-2m=0 得 m=1/2，而 1/2 并不落在 m<-2 之内，所以无需额外排除，答案就是 m<-2。若忘记「不反向」这一条而硬把 m≠1/2 写进条件，会多出一个与本题范围毫无交集的限制，属于机械套模板。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "m>-2"
+   },
+   {
+    "label": "B",
+    "text": "m<-2 且 m≠1/2"
+   },
+   {
+    "label": "C",
+    "text": "m<-2"
+   },
+   {
+    "label": "D",
+    "text": "m<-1"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h367_q6",
+  "topicId": "mat_h367",
+  "prompt": "用向量方法解决平面几何问题一般分三步，请写出这三步，并以证明「平行四边形的对角线互相平分」为例说明每一步做什么。",
+  "question": "用向量方法解决平面几何问题一般分三步，请写出这三步，并以证明「平行四边形的对角线互相平分」为例说明每一步做什么。",
+  "options": [],
+  "answer": "三步是：选基底（或建系）表示向量、把几何条件翻译成向量运算、把运算结果翻译回几何结论。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "向量方法的核心是三步翻译：先选基底或建坐标系，把几何元素变成向量；再把要证的位置关系翻译成向量的相等、共线或数量积为零；最后把向量运算的结果还原为几何结论。以平行四边形为例，设 M、N 分别是两条对角线的中点，用基底表示向量AM 与向量AN，若两者相等则中点重合，对角线互相平分。三步缺一不可，尤其第二步的翻译决定了运算是否能对上。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "第一步取向量AB、向量AD 为基底，把对角线写成向量AC=向量AB+向量AD 与向量BD=向量AD-向量AB",
+   "第二步把「对角线互相平分」翻译为两条对角线的中点重合，即向量AM=向量MC 或 AM=(1/2)AC",
+   "第三步由向量等式推出中点重合，再把向量结论翻译回几何结论，完成证明"
+  ]
+ },
+ {
+  "id": "mat_h367_q7",
+  "topicId": "mat_h367",
+  "prompt": "两个力 F1=(3,-1)、F2=(-1,4)（单位：N）同时作用于同一物体，则这两个力的合力的大小是（　）",
+  "question": "两个力 F1=(3,-1)、F2=(-1,4)（单位：N）同时作用于同一物体，则这两个力的合力的大小是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "√13 N"
+   },
+   {
+    "label": "B",
+    "text": "13 N"
+   },
+   {
+    "label": "C",
+    "text": "√5 N"
+   },
+   {
+    "label": "D",
+    "text": "5 N"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "力是向量，合力等于两个力向量的和：F1+F2=(3-1,-1+4)=(2,3)。再由模的坐标公式得 √(4+9)=√13 N。把模的平方 13 当作合力大小会误选 13；只把两个力的模相加 3+4=7 的做法更是忽略了方向，向量合成不能直接加模。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "√13 N"
+   },
+   {
+    "label": "B",
+    "text": "13 N"
+   },
+   {
+    "label": "C",
+    "text": "√5 N"
+   },
+   {
+    "label": "D",
+    "text": "5 N"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h367_q8",
+  "topicId": "mat_h367",
+  "prompt": "一物体在力 F=(6,-2)（单位：N）的作用下，沿 x 轴正方向移动了 3 m，则这个力对物体做的功是____J。",
+  "question": "一物体在力 F=(6,-2)（单位：N）的作用下，沿 x 轴正方向移动了 3 m，则这个力对物体做的功是____J。",
+  "options": [],
+  "answer": "18",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "功等于力与位移的数量积。位移沿 x 轴正方向、大小为 3 m，所以位移向量 s=(3,0)。由坐标公式 W=F·s=6×3+(-2)×0=18 J。这里力的纵分量与位移垂直，不做功，只有水平分量 6 N 参与做功，6×3=18 与此一致。若把位移写成 (0,3) 就会得到 -6 J，位移方向的判断是关键。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h368_q6",
+  "topicId": "mat_h368",
+  "prompt": "在矩形 ABCD 中，AB=5，AD=3，则向量AC·向量BD 的值是____。",
+  "question": "在矩形 ABCD 中，AB=5，AD=3，则向量AC·向量BD 的值是____。",
+  "options": [],
+  "answer": "-16",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "取 A 为原点、AB 方向为 x 轴建系，则向量AC=(5,3)，向量BD=向量AD-向量AB=(-5,3)。数量积为 5×(-5)+3×3=-25+9=-16。负号来自两条对角线方向一正一斜、横坐标相反；若把向量BD 写成 (5,3) 就会得到正数 34，说明向量方向没弄清楚。",
+  "subject": "math",
+  "choices": [],
+  "verify": "-25+9",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h368_q7",
+  "topicId": "mat_h368",
+  "prompt": "在△ABC 中，D 是边 BC 的中点，则向量AB+向量AC 等于（　）",
+  "question": "在△ABC 中，D 是边 BC 的中点，则向量AB+向量AC 等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "向量AD"
+   },
+   {
+    "label": "B",
+    "text": "2 向量AD"
+   },
+   {
+    "label": "C",
+    "text": "1/2 向量AD"
+   },
+   {
+    "label": "D",
+    "text": "-2 向量AD"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "由向量加法的平行四边形法则，以 AB、AC 为邻边的平行四边形中，对角线向量AE=向量AB+向量AC，而 BC 的中点 D 正是这条对角线的中点 E，所以向量AB+向量AC=2 向量AD。这也说明中线向量的两倍等于两邻边向量之和，系数 2 常被漏掉，选成向量AD 就错了。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "向量AD"
+   },
+   {
+    "label": "B",
+    "text": "2 向量AD"
+   },
+   {
+    "label": "C",
+    "text": "1/2 向量AD"
+   },
+   {
+    "label": "D",
+    "text": "-2 向量AD"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h368_q8",
+  "topicId": "mat_h368",
+  "prompt": "已知 |a|=|b|=1，且 |a+b|=√3，求 |a-b| 的值，并求 a 与 b 的夹角。",
+  "question": "已知 |a|=|b|=1，且 |a+b|=√3，求 |a-b| 的值，并求 a 与 b 的夹角。",
+  "options": [],
+  "answer": "|a-b|=1，a 与 b 的夹角为 60°。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "两个模的等式都要先平方再处理。由 |a+b|²=|a|²+2a·b+|b|²=3 得 2+2a·b=3，所以 a·b=1/2；再由 |a-b|²=2-2a·b=2-1=1 得 |a-b|=1。夹角由 cosθ=1/2 确定为 60°。这组结果也说明：当 |a+b| 与 |a-b| 都为 1 时两向量垂直，而这里前者为 √3，故夹角是锐角 60°。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "把 |a+b|=√3 平方得 1+1+2a·b=3，解得 a·b=1/2",
+   "由 a·b=|a||b|cosθ 得 cosθ=1/2，所以夹角 θ=60°",
+   "再由 |a-b|²=1+1-2a·b=2-1=1，得 |a-b|=1"
+  ]
+ }
+]

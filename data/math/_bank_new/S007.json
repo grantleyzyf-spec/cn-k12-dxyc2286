@@ -1,0 +1,884 @@
+[
+ {
+  "id": "mat_h323_q6",
+  "topicId": "mat_h323",
+  "prompt": "下列各式中，对任意实数 a 都一定成立的是（　）",
+  "question": "下列各式中，对任意实数 a 都一定成立的是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "√(a^2) = a"
+   },
+   {
+    "label": "B",
+    "text": "∛(a^3) = a"
+   },
+   {
+    "label": "C",
+    "text": "√[4](a^4) = a"
+   },
+   {
+    "label": "D",
+    "text": "√(a^2) = −a"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "当 n 为奇数时，ⁿ√(a^n) 对任意实数 a 都等于 a，所以 ∛(a^3)=a 是无条件成立的。当 n 为偶数时 ⁿ√(a^n)=|a|，它与 a 只在 a≥0 时相等，与 −a 只在 a≤0 时相等，所以 √(a^2)=a 只在非负时成立，√[4](a^4)=a 同样只在 a≥0 时成立，其余三式都不能对任意实数 a 成立。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "√(a^2) = a"
+   },
+   {
+    "label": "B",
+    "text": "∛(a^3) = a"
+   },
+   {
+    "label": "C",
+    "text": "√[4](a^4) = a"
+   },
+   {
+    "label": "D",
+    "text": "√(a^2) = −a"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h323_q7",
+  "topicId": "mat_h323",
+  "prompt": "设 a>0，把 √[3]{a}·√[4]{a} 化简为 a^(m/n)（m、n 为互质的正整数），则 m+n = ____。",
+  "question": "设 a>0，把 √[3]{a}·√[4]{a} 化简为 a^(m/n)（m、n 为互质的正整数），则 m+n = ____。",
+  "options": [],
+  "answer": "19",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "先化成分数指数幂：√[3]{a}=a^(1/3)，√[4]{a}=a^(1/4)。同底数幂相乘，指数相加，得 a^(1/3+1/4)=a^(7/12)，所以 m=7、n=12，m+n=19。易错点是没有先化成同底数幂就直接相乘，或把指数相加误算成 a^(1/12)。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h323_q8",
+  "topicId": "mat_h323",
+  "prompt": "计算 (1/8)^(−1/3) + 16^(3/4) − 0.25^(−1/2) 的值是（　）。",
+  "question": "计算 (1/8)^(−1/3) + 16^(3/4) − 0.25^(−1/2) 的值是（　）。",
+  "options": [],
+  "answer": "8",
+  "type": "numeric",
+  "difficulty": "hard",
+  "explanation": "(1/8)^(−1/3) 先取倒数化为 8^(1/3)=2；16^(3/4) 先开四次方 16^(1/4)=2，再三次方得 2^3=8；0.25^(−1/2)=(1/4)^(−1/2)=4^(1/2)=2。所以原式=2+8−2=8。负指数要先变倒数、分数指数要按先开方后乘方处理，顺序错就会算成 1/2 之类的错误结果。",
+  "subject": "math",
+  "choices": [],
+  "verify": "1/8**(-1/3)+16**(3/4)-0.25**(-1/2)",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h324_q6",
+  "topicId": "mat_h324",
+  "prompt": "若 a>0，则 (a^(√2))^(√2) 的值是（　）",
+  "question": "若 a>0，则 (a^(√2))^(√2) 的值是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "a^2"
+   },
+   {
+    "label": "B",
+    "text": "a"
+   },
+   {
+    "label": "C",
+    "text": "a^(2√2)"
+   },
+   {
+    "label": "D",
+    "text": "2a"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "底数大于零时，幂的乘方性质对实数指数仍然成立：(a^r)^s=a^(rs)。这里 r=s=√2，指数相乘 √2·√2=2，所以结果为 a^2。写成 a^(2√2) 是把指数相乘错当成相加，写成 2a 是把幂当成了乘法，都不符合幂的乘方性质。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "a^2"
+   },
+   {
+    "label": "B",
+    "text": "a"
+   },
+   {
+    "label": "C",
+    "text": "a^(2√2)"
+   },
+   {
+    "label": "D",
+    "text": "2a"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h324_q7",
+  "topicId": "mat_h324",
+  "prompt": "把 √2 的不足近似值 1.4、1.41、1.414 依次代入 3^x，说明 3^(√2) 的含义，并写出这种规定保留了哪些运算性质。",
+  "question": "把 √2 的不足近似值 1.4、1.41、1.414 依次代入 3^x，说明 3^(√2) 的含义，并写出这种规定保留了哪些运算性质。",
+  "options": [],
+  "answer": "3^(√2) 是一个确定的实数，它是 3^1.4、3^1.41、3^1.414、… 这列有理数指数幂所逼近的极限值；由于指数取实数后同底数幂相乘除、幂的乘方等整数指数幂的运算性质仍成立，指数范围才可以从有理数扩充到实数。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "有理数指数幂已有定义，而无理数无法写成两个整数的商，只能借助不足近似值序列去逼近。当 1.4、1.41、1.414… 越来越接近 √2 时，3 的这些幂值也越来越接近同一个数，我们就把这个数规定为 3^(√2)。这样扩充后，整数指数幂的五条运算性质全部保留，指数的取值范围才真正扩展到全体实数，这也是后面对数函数能与指数函数配套研究的基础。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "3^(√2) 是 3^1.4、3^1.41、3^1.414… 这列值所逼近的一个确定的实数",
+   "近似值精度越高，3^x 的值越稳定，说明无理数指数幂有唯一确定的意义",
+   "规定之后同底数幂的乘、除与幂的乘方等运算性质对实数指数仍然成立"
+  ]
+ },
+ {
+  "id": "mat_h324_q8",
+  "topicId": "mat_h324",
+  "prompt": "设 a>0，则 [a^(3/2)·a^(−1/2)]^(2/3) ÷ a^(1/3) 化简的结果是（　）",
+  "question": "设 a>0，则 [a^(3/2)·a^(−1/2)]^(2/3) ÷ a^(1/3) 化简的结果是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "a"
+   },
+   {
+    "label": "B",
+    "text": "a^(2/3)"
+   },
+   {
+    "label": "C",
+    "text": "a^(1/2)"
+   },
+   {
+    "label": "D",
+    "text": "a^(1/3)"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "先算括号内：同底数幂相乘指数相加，a^(3/2)·a^(−1/2)=a^(3/2−1/2)=a^1=a。再做幂的乘方，指数相乘，a^(1·2/3)=a^(2/3)。最后做同底数幂相除，指数相减，a^(2/3−1/3)=a^(1/3)。三步依次用到的性质互不相同，漏掉其中一步或把指数加减弄反，就会得到 a 或 a^(1/2) 之类的错误答案。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "a"
+   },
+   {
+    "label": "B",
+    "text": "a^(2/3)"
+   },
+   {
+    "label": "C",
+    "text": "a^(1/2)"
+   },
+   {
+    "label": "D",
+    "text": "a^(1/3)"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h325_q6",
+  "topicId": "mat_h325",
+  "prompt": "指数函数 y=a^x（a>0 且 a≠1）的图象与 y 轴的交点坐标是 ____。",
+  "question": "指数函数 y=a^x（a>0 且 a≠1）的图象与 y 轴的交点坐标是 ____。",
+  "options": [],
+  "answer": "(0,1)",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "图象与 y 轴的交点就是令 x=0 求函数值。因为 a^0=1 对一切满足 a>0 且 a≠1 的底数都成立，所以交点恒为 (0,1)，它与底数取多少无关。这个定点正说明所有指数函数的图象都经过同一个点，也说明指数函数的值域恒为正，图象始终在 x 轴上方。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h325_q7",
+  "topicId": "mat_h325",
+  "prompt": "设 f(x)=4^x，则 f(2)+f(−1)+f(0) 的值是（　）。",
+  "question": "设 f(x)=4^x，则 f(2)+f(−1)+f(0) 的值是（　）。",
+  "options": [],
+  "answer": "17.25",
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "分别代入：f(2)=4^2=16，f(−1)=4^(−1)=1/4=0.25，f(0)=4^0=1。三式相加得 16+0.25+1=17.25。负指数幂要取倒数，f(−1) 不是 −4，也不是 −1/4；另外 a^0=1 与 a 的取值无关，不要漏掉 f(0) 这一项。",
+  "subject": "math",
+  "choices": [],
+  "verify": "4**2+4**(-1)+4**0",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h325_q8",
+  "topicId": "mat_h325",
+  "prompt": "若函数 y=(a^2−4)^x 在 R 上是减函数，则实数 a 的取值范围是（　）",
+  "question": "若函数 y=(a^2−4)^x 在 R 上是减函数，则实数 a 的取值范围是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "(−2, 2)"
+   },
+   {
+    "label": "B",
+    "text": "(2, √5)"
+   },
+   {
+    "label": "C",
+    "text": "(−√5, −2)∪(2, √5)"
+   },
+   {
+    "label": "D",
+    "text": "(−∞, −2)∪(2, +∞)"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "形如 y=b^x 的函数在 R 上单调递减，等价于底数满足 0<b<1。这里 b=a^2−4，故需 0<a^2−4<1，即 4<a^2<5，两边开方得 −√5<a<−2 或 2<a<√5。只解出 a^2>4 会误选 (−∞,−2)∪(2,+∞)，漏掉上界 a^2<5 就会把减函数错判成增函数。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "(−2, 2)"
+   },
+   {
+    "label": "B",
+    "text": "(2, √5)"
+   },
+   {
+    "label": "C",
+    "text": "(−√5, −2)∪(2, √5)"
+   },
+   {
+    "label": "D",
+    "text": "(−∞, −2)∪(2, +∞)"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h326_q6",
+  "topicId": "mat_h326",
+  "prompt": "判断 y=−3^x 与 y=3^(x+1) 是否是指数函数，并说明指数函数对系数和指数的要求。",
+  "question": "判断 y=−3^x 与 y=3^(x+1) 是否是指数函数，并说明指数函数对系数和指数的要求。",
+  "options": [],
+  "answer": "两者都不是指数函数。指数函数必须形如 y=a^x，即 x 前面的系数为 1、指数就是 x 本身；−3^x 的系数是 −1，而 3^(x+1)=3·3^x 的系数是 3，都不满足系数为 1 的要求。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "判断一个函数是不是指数函数，要抓两点：一是形式必须严格为 y=a^x，二是底数满足 a>0 且 a≠1。y=−3^x 前面多了一个负号，值域变成负实数，图象在 x 轴下方，与指数函数完全不同；y=3^(x+1) 用同底数幂的乘法性质可拆成 3·3^x，只是把 y=3^x 的图象向左平移一个单位，系数变成 3，属于指数型函数而不是指数函数。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "指数函数的标准形式是 y=a^x（a>0 且 a≠1），要求 x 的系数为 1",
+   "y=−3^x 的系数是 −1，不是指数函数",
+   "y=3^(x+1) 可化为 3·3^x，系数为 3，也不是指数函数"
+  ]
+ },
+ {
+  "id": "mat_h326_q7",
+  "topicId": "mat_h326",
+  "prompt": "某商品原价 100 元，每年按上一年价格的 10% 降价，设经过 x 年后价格为 y 元，则 y 关于 x 的函数关系是（　）",
+  "question": "某商品原价 100 元，每年按上一年价格的 10% 降价，设经过 x 年后价格为 y 元，则 y 关于 x 的函数关系是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "y=100·0.9^x"
+   },
+   {
+    "label": "B",
+    "text": "y=100(1−0.1x)"
+   },
+   {
+    "label": "C",
+    "text": "y=100·0.1^x"
+   },
+   {
+    "label": "D",
+    "text": "y=100·1.1^x"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "每年在上一年价格的基础上减少 10%，也就是每年保留上一年的 90%，所以每过一年价格乘 0.9。经过 x 年就是连续乘 x 次 0.9，得 y=100·0.9^x。y=100(1−0.1x) 是每年减少原价的 10%，属一次函数；y=100·0.1^x 把保留比例误写成 0.1；y=100·1.1^x 则把降价当成了涨价。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "y=100·0.9^x"
+   },
+   {
+    "label": "B",
+    "text": "y=100(1−0.1x)"
+   },
+   {
+    "label": "C",
+    "text": "y=100·0.1^x"
+   },
+   {
+    "label": "D",
+    "text": "y=100·1.1^x"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h326_q8",
+  "topicId": "mat_h326",
+  "prompt": "某种细菌每 20 min 分裂一次，1 个细菌每次分裂成 2 个，则经过 2 h 后细菌的个数是 ____ 个。",
+  "question": "某种细菌每 20 min 分裂一次，1 个细菌每次分裂成 2 个，则经过 2 h 后细菌的个数是 ____ 个。",
+  "options": [],
+  "answer": "64",
+  "type": "fill",
+  "difficulty": "hard",
+  "explanation": "关键是先把时间统一成分裂次数：2 h=120 min，每 20 min 分裂一次，共分裂 120÷20=6 次。每次分裂个数翻倍，1 个细菌经 n 次分裂后为 2^n 个，所以 2^6=64 个。直接用 120 次或把 6 次当成分裂 6 次的倍数都会算错，单位不统一是本题最常见的失分点。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h327_q6",
+  "topicId": "mat_h327",
+  "prompt": "函数 y=2^(x−1) 的图象恒过定点 (x0, y0)，则 x0+y0 的值是（　）。",
+  "question": "函数 y=2^(x−1) 的图象恒过定点 (x0, y0)，则 x0+y0 的值是（　）。",
+  "options": [],
+  "answer": "2",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "指数函数 y=a^x 的图象恒过 (0,1)，要让指数部分为 0，只需 x−1=0，即 x0=1。此时 y0=2^0=1。所以定点为 (1,1)，x0+y0=1+1=2。若误把定点当成 (0,1) 直接写 1，就忽略了图象整体向右平移了一个单位。",
+  "subject": "math",
+  "choices": [],
+  "verify": "1+1",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h327_q7",
+  "topicId": "mat_h327",
+  "prompt": "若 a^(2/3) > a^(1/3)，其中 a>0 且 a≠1，则实数 a 的取值范围是（　）",
+  "question": "若 a^(2/3) > a^(1/3)，其中 a>0 且 a≠1，则实数 a 的取值范围是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "0<a<1"
+   },
+   {
+    "label": "B",
+    "text": "a>1"
+   },
+   {
+    "label": "C",
+    "text": "0<a<2"
+   },
+   {
+    "label": "D",
+    "text": "a>0 且 a≠1"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "比较同底数幂的大小要看底数：当 a>1 时指数函数递增，指数大的幂值大，2/3>1/3 与已知一致；当 0<a<1 时指数函数递减，应有 a^(2/3)<a^(1/3)，与已知矛盾。所以只能是 a>1。选 0<a<1 是把单调性的方向记反了，选 a>0 且 a≠1 则没有利用不等号的方向信息。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "0<a<1"
+   },
+   {
+    "label": "B",
+    "text": "a>1"
+   },
+   {
+    "label": "C",
+    "text": "0<a<2"
+   },
+   {
+    "label": "D",
+    "text": "a>0 且 a≠1"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h327_q8",
+  "topicId": "mat_h327",
+  "prompt": "已知 f(x)=(1/3)^x，求 f(−1)、f(0)、f(2) 的值，比较它们的大小，并说明 f(x) 在 R 上的单调性。",
+  "question": "已知 f(x)=(1/3)^x，求 f(−1)、f(0)、f(2) 的值，比较它们的大小，并说明 f(x) 在 R 上的单调性。",
+  "options": [],
+  "answer": "f(−1)=3，f(0)=1，f(2)=1/9，所以 f(−1)>f(0)>f(2)；由于底数 1/3 满足 0<1/3<1，f(x) 在 R 上单调递减。",
+  "type": "short-answer",
+  "difficulty": "hard",
+  "explanation": "先用负指数幂和零指数幂算出具体值：(1/3)^(−1) 等于 3，f(0)=1，f(2)=1/9，再比较得 3>1>1/9。自变量的增大对应函数值的减小，正好符合底数小于 1 时指数函数递减的结论，因此 f(x) 在 R 上单调递减。若把 (1/3)^(−1) 算成 −3，大小关系就会整体反过来，这是负指数幂最常见的错误。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "f(−1)=(1/3)^(−1)=3，f(0)=1，f(2)=1/9",
+   "三者大小关系为 f(−1)>f(0)>f(2)",
+   "底数 0<1/3<1，故 f(x) 在 R 上单调递减"
+  ]
+ },
+ {
+  "id": "mat_h328_q6",
+  "topicId": "mat_h328",
+  "prompt": "若 log_a 8 = 3（a>0 且 a≠1），则 a 的值是（　）",
+  "question": "若 log_a 8 = 3（a>0 且 a≠1），则 a 的值是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "2"
+   },
+   {
+    "label": "B",
+    "text": "3"
+   },
+   {
+    "label": "C",
+    "text": "4"
+   },
+   {
+    "label": "D",
+    "text": "8"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "由对数的定义，log_a 8=3 等价于 a^3=8。因为底数要求 a>0，正数的立方根只有一个，所以 a=2。选 3 是把「对数等于 3」误当成了「底数为 3」；选 4 是错把 a^3 看成 a\\cdot3；选 8 则把真数当成了底数。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "2"
+   },
+   {
+    "label": "B",
+    "text": "3"
+   },
+   {
+    "label": "C",
+    "text": "4"
+   },
+   {
+    "label": "D",
+    "text": "8"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h328_q7",
+  "topicId": "mat_h328",
+  "prompt": "计算 log₂6 − log₂(3/4) 的值是 ____。",
+  "question": "计算 log₂6 − log₂(3/4) 的值是 ____。",
+  "options": [],
+  "answer": "3",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "两个同底对数相减，用商的对数性质合并：log₂6 − log₂(3/4)=log₂[6÷(3/4)]=log₂(6×4/3)=log₂8。又因为 8=2^3，所以 log₂8=3。若没有先合并就分别估算 log₂6 和 log₂(3/4) 的近似值，既算不准也容易在分数除法上出错。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h328_q8",
+  "topicId": "mat_h328",
+  "prompt": "计算 2^(log₂3) + 3^(log₃2) 的值是（　）。",
+  "question": "计算 2^(log₂3) + 3^(log₃2) 的值是（　）。",
+  "options": [],
+  "answer": "5",
+  "type": "numeric",
+  "difficulty": "hard",
+  "explanation": "用恒等式 a^(log_a N)=N（a>0 且 a≠1，N>0）：2^(log₂3)=3，3^(log₃2)=2，所以原式=3+2=5。这里不能用对数运算性质把两个指数相加，因为两式的底数不同，必须先各自化为真数再相加；把 2^(log₂3) 误算成 2·3=6 是另一个常见错误。",
+  "subject": "math",
+  "choices": [],
+  "verify": "3+2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h329_q6",
+  "topicId": "mat_h329",
+  "prompt": "下列对数式中，没有意义的是（　）",
+  "question": "下列对数式中，没有意义的是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "log₂4"
+   },
+   {
+    "label": "B",
+    "text": "log₃1"
+   },
+   {
+    "label": "C",
+    "text": "log_(−2) 8"
+   },
+   {
+    "label": "D",
+    "text": "log₅(1/5)"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "对数 log_a N 有意义的条件是底数 a>0 且 a≠1、真数 N>0。log_(−2)8 的底数是负数，不满足底数大于零的要求，所以无意义。其余三式的底数都满足条件，真数也都是正数：log₂4=2，log₃1=0，log₅(1/5)=−1，都有确定的值。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "log₂4"
+   },
+   {
+    "label": "B",
+    "text": "log₃1"
+   },
+   {
+    "label": "C",
+    "text": "log_(−2) 8"
+   },
+   {
+    "label": "D",
+    "text": "log₅(1/5)"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h329_q7",
+  "topicId": "mat_h329",
+  "prompt": "已知 log_a 2 = m（a>0 且 a≠1），用 m 表示 log_a 8 与 log_a(1/4)，并说明所用的运算性质。",
+  "question": "已知 log_a 2 = m（a>0 且 a≠1），用 m 表示 log_a 8 与 log_a(1/4)，并说明所用的运算性质。",
+  "options": [],
+  "answer": "log_a 8=3m，log_a(1/4)=−2m；用的是幂的对数性质 log_a M^n=n·log_a M，以及 8=2^3、1/4=2^(−2) 这两个改写。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "已知 log_a2=m，要求的是真数为 2 的幂的对数，所以关键是把 8 和 1/4 都化成以 2 为底的幂：8=2^3，1/4=2^(−2)。再用幂的对数性质把指数提到前面作系数，得到 log_a8=3m 与 log_a(1/4)=−2m。不能把 log_a8 写成 8m，因为真数本身不是 2，只有真数是底数的幂时指数才能提到前面。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "把 8 写成 2^3，由 log_a M^n=n·log_a M 得 log_a 8=3m",
+   "把 1/4 写成 2^(−2)，得 log_a(1/4)=−2m",
+   "核心依据是幂的对数性质：真数的指数可以提到对数前面作系数"
+  ]
+ },
+ {
+  "id": "mat_h329_q8",
+  "topicId": "mat_h329",
+  "prompt": "若 log₂[log₃(log₄ x)] = 0，则 x 的值是（　）",
+  "question": "若 log₂[log₃(log₄ x)] = 0，则 x 的值是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "16"
+   },
+   {
+    "label": "B",
+    "text": "81"
+   },
+   {
+    "label": "C",
+    "text": "4"
+   },
+   {
+    "label": "D",
+    "text": "64"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "由外层开始逐层去对数：log₂[log₃(log₄x)]=0 说明括号内的真数为 1，即 log₃(log₄x)=1；再由 log₃(log₄x)=1 得 log₄x=3；最后由 log₄x=3 得 x=4^3=64。若把最外层等式直接写成 log₃(log₄x)=0 就会得到 x=4，把第二层算成 log₄x=1 则会得到 x=4 或 16 之类的错误答案，逐层都要按定义还原。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "16"
+   },
+   {
+    "label": "B",
+    "text": "81"
+   },
+   {
+    "label": "C",
+    "text": "4"
+   },
+   {
+    "label": "D",
+    "text": "64"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h330_q6",
+  "topicId": "mat_h330",
+  "prompt": "计算 log₆2 + log₆3 的值是 ____。",
+  "question": "计算 log₆2 + log₆3 的值是 ____。",
+  "options": [],
+  "answer": "1",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "同底的两个对数相加，用积的对数性质合并：log₆2+log₆3=log₆(2×3)=log₆6。再由 log_a a=1 得结果为 1。这里底数与真数相同是关键，若把 log₆2+log₆3 误算成 log₆5 或 6，说明还没有掌握积的对数等于对数的和这一性质。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h330_q7",
+  "topicId": "mat_h330",
+  "prompt": "计算 log₃18 − log₃2 + log₂(1/8) 的值是（　）。",
+  "question": "计算 log₃18 − log₃2 + log₂(1/8) 的值是（　）。",
+  "options": [],
+  "answer": "-1",
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "前两项同底相减，由商的对数性质合并：log₃18−log₃2=log₃(18÷2)=log₃9=2。第三项 log₂(1/8)=log₂2^(−3)=−3。所以原式=2+(−3)=−1。易错点有两个：一是把 log₂(1/8) 算成 3（漏掉负号），二是把不同底的对数也合并，底数不同时不能直接用运算性质。",
+  "subject": "math",
+  "choices": [],
+  "verify": "2-3",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h330_q8",
+  "topicId": "mat_h330",
+  "prompt": "若 lg2 = a，lg3 = b，则 lg12 用 a、b 表示的结果是（　）",
+  "question": "若 lg2 = a，lg3 = b，则 lg12 用 a、b 表示的结果是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "a+2b"
+   },
+   {
+    "label": "B",
+    "text": "2a+b"
+   },
+   {
+    "label": "C",
+    "text": "2ab"
+   },
+   {
+    "label": "D",
+    "text": "a^2+b"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "先把 12 分解成 4×3，再写成 2 的幂：12=2^2×3。由积的对数等于对数的和、幂的对数等于指数乘对数，lg12=lg(2^2×3)=2lg2+lg3=2a+b。写成 a+2b 是把 2 的指数错用到 3 上；写成 2ab 是把对数的和误当成乘积；写成 a^2+b 则把系数 2 错当成平方。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "a+2b"
+   },
+   {
+    "label": "B",
+    "text": "2a+b"
+   },
+   {
+    "label": "C",
+    "text": "2ab"
+   },
+   {
+    "label": "D",
+    "text": "a^2+b"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h331_q6",
+  "topicId": "mat_h331",
+  "prompt": "判断 y=log₂(x+1) 与 y=2log₃x 是否是对数函数，并说明对数函数的形式要求。",
+  "question": "判断 y=log₂(x+1) 与 y=2log₃x 是否是对数函数，并说明对数函数的形式要求。",
+  "options": [],
+  "answer": "两者都不是对数函数。对数函数必须形如 y=log_a x（a>0 且 a≠1），真数只能是 x 本身、系数只能是 1；y=log₂(x+1) 的真数是 x+1，y=2log₃x 的系数是 2，都不符合。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "判断对数函数同样要抓形式：真数必须恰好是 x，系数必须为 1。y=log₂(x+1) 相当于把 y=log₂x 的图象向左平移一个单位，它与指数函数 y=2^x 并不互为反函数；y=2log₃x 可看成把 y=log₃x 的图象纵向拉伸为原来的两倍，图象形状已经改变。两者都由对数函数派生而来，但本身不满足定义。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "对数函数的标准形式是 y=log_a x，底数满足 a>0 且 a≠1",
+   "y=log₂(x+1) 的真数是 x+1 而不是 x，不是对数函数",
+   "y=2log₃x 的系数为 2，是对数型函数但不是对数函数"
+  ]
+ },
+ {
+  "id": "mat_h331_q7",
+  "topicId": "mat_h331",
+  "prompt": "若 log_a 3 < log_a 2（a>0 且 a≠1），则实数 a 的取值范围是（　）",
+  "question": "若 log_a 3 < log_a 2（a>0 且 a≠1），则实数 a 的取值范围是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "a>1"
+   },
+   {
+    "label": "B",
+    "text": "0<a<2"
+   },
+   {
+    "label": "C",
+    "text": "0<a<1"
+   },
+   {
+    "label": "D",
+    "text": "a>3"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "真数 3>2，而对数值却是 log_a3 更小，说明底数对应的对数函数是递减的，因此 0<a<1。若 a>1，对数函数递增，则应有 log_a3>log_a2，与已知矛盾。选 a>3 或 0<a<2 是把真数的大小关系与底数的取值范围混为一谈，没有抓住「不等号方向反映单调性」这一要害。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "a>1"
+   },
+   {
+    "label": "B",
+    "text": "0<a<2"
+   },
+   {
+    "label": "C",
+    "text": "0<a<1"
+   },
+   {
+    "label": "D",
+    "text": "a>3"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h331_q8",
+  "topicId": "mat_h331",
+  "prompt": "函数 f(x)=log₂(x^2−3x+2) 的定义域是 ____。",
+  "question": "函数 f(x)=log₂(x^2−3x+2) 的定义域是 ____。",
+  "options": [],
+  "answer": "(−∞,1)∪(2,+∞)",
+  "type": "fill",
+  "difficulty": "hard",
+  "explanation": "对数要求真数为正，所以需 x^2−3x+2>0。因式分解得 (x−1)(x−2)>0，对应方程的两根为 1 和 2，二次项系数为正，故不等式在两根之外成立，即 x<1 或 x>2。写成 1<x<2 是把大于零错解成小于零，写成 x≠1 且 x≠2 则是把真数不能为零错当成定义域的全部条件。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h332_q6",
+  "topicId": "mat_h332",
+  "prompt": "已知 f(x)=log₃x，则 f(9)+f(1/3) 的值是（　）。",
+  "question": "已知 f(x)=log₃x，则 f(9)+f(1/3) 的值是（　）。",
+  "options": [],
+  "answer": "1",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "由对数的定义，log₃9=2，因为 3^2=9；log₃(1/3)=log₃3^(−1)=−1。两式相加得 2+(−1)=1。注意 1/3 是真数而不是底数，它对应的对数值为负，若漏掉负号就会得到 3，这是本题最常见的失分点。",
+  "subject": "math",
+  "choices": [],
+  "verify": "2-1",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h332_q7",
+  "topicId": "mat_h332",
+  "prompt": "使函数 y=log₂(3−x) 有意义的 x 的取值范围是（　）",
+  "question": "使函数 y=log₂(3−x) 有意义的 x 的取值范围是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "x>3"
+   },
+   {
+    "label": "B",
+    "text": "x≠3"
+   },
+   {
+    "label": "C",
+    "text": "x≤3"
+   },
+   {
+    "label": "D",
+    "text": "x<3"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "对数函数的真数必须大于零，故需 3−x>0，解得 x<3。写成 x>3 是把不等号方向弄反；写成 x≠3 只排除了真数等于零的情形，却允许真数为负数；写成 x≤3 则把真数可以等于零也算进去，而 log₂0 是没有意义的。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "x>3"
+   },
+   {
+    "label": "B",
+    "text": "x≠3"
+   },
+   {
+    "label": "C",
+    "text": "x≤3"
+   },
+   {
+    "label": "D",
+    "text": "x<3"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h332_q8",
+  "topicId": "mat_h332",
+  "prompt": "已知函数 f(x)=log_a(x+2)（a>0 且 a≠1）的图象经过点 (1,1)，求 a 的值，并判断 f(x) 在其定义域上的单调性。",
+  "question": "已知函数 f(x)=log_a(x+2)（a>0 且 a≠1）的图象经过点 (1,1)，求 a 的值，并判断 f(x) 在其定义域上的单调性。",
+  "options": [],
+  "answer": "把 x=1、y=1 代入得 log_a 3=1，由对数定义得 a=3；又因 a=3>1，f(x)=log₃(x+2) 在定义域 (−2,+∞) 上单调递增。",
+  "type": "short-answer",
+  "difficulty": "hard",
+  "explanation": "图象过点就是把坐标代入解析式：1=log_a(1+2)=log_a3，由对数的定义化为 a^1=3，所以 a=3，同时验证了 a>0 且 a≠1 的条件。求单调性时先要把定义域说清：真数 x+2>0 得 x>−2，这是单调区间的载体；再比较底数 3 与 1 的大小，底数大于 1，函数递增。若忽略定义域直接说在 R 上递增，就会把 x≤−2 这段无意义的区间也包含进去。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "代入点 (1,1) 得 log_a 3=1，从而 a^1=3，即 a=3",
+   "真数 x+2>0，定义域为 (−2,+∞)",
+   "底数 3>1，故 f(x) 在 (−2,+∞) 上单调递增"
+  ]
+ }
+]

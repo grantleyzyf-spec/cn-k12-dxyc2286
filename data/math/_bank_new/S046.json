@@ -1,0 +1,884 @@
+[
+ {
+  "id": "mat_h429_q6",
+  "topicId": "mat_h429",
+  "prompt": "经过点 A(3，−2)、B(1，4) 的直线的两点式方程是（　）",
+  "question": "经过点 A(3，−2)、B(1，4) 的直线的两点式方程是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "(y+2)/6=(x−3)/(−2)"
+   },
+   {
+    "label": "B",
+    "text": "(y−2)/6=(x−3)/(−2)"
+   },
+   {
+    "label": "C",
+    "text": "(y+2)/6=(x−3)/2"
+   },
+   {
+    "label": "D",
+    "text": "(y−2)/6=(x+3)/2"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "两点式方程写成 (y−y₁)/(y₂−y₁)=(x−x₁)/(x₂−x₁)，把 A(3，−2) 作为第一点、B(1，4) 作为第二点代入：y−y₁=y+2，y₂−y₁=4−(−2)=6，x₂−x₁=1−3=−2，所以方程是 (y+2)/6=(x−3)/(−2)。选 B 是把 y−y₁ 写成了 y−2，选 C 漏掉了 x₂−x₁ 中的负号，选 D 把 x₁ 的符号也弄反了。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "(y+2)/6=(x−3)/(−2)"
+   },
+   {
+    "label": "B",
+    "text": "(y−2)/6=(x−3)/(−2)"
+   },
+   {
+    "label": "C",
+    "text": "(y+2)/6=(x−3)/2"
+   },
+   {
+    "label": "D",
+    "text": "(y−2)/6=(x+3)/2"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h429_q7",
+  "topicId": "mat_h429",
+  "prompt": "经过点 M(−4，3)、N(2，−5) 的直线，其两点式方程可写成 (y−3)/(−8)=(x+4)/m，则 m 的值为____。",
+  "question": "经过点 M(−4，3)、N(2，−5) 的直线，其两点式方程可写成 (y−3)/(−8)=(x+4)/m，则 m 的值为____。",
+  "options": [],
+  "answer": "6",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "两点式中与 x 有关的分母是 x₂−x₁，这里 x₁=−4、x₂=2，所以 x₂−x₁=2−(−4)=6，即 m=6。纵坐标方向的分母 y₂−y₁=−5−3=−8，与题中已给的分母一致，说明所取的第一点确实是 M。若先把 N 当作第一点再反推，就会得到 m=−6，可见分子分母必须来自同一组对应关系。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h429_q8",
+  "topicId": "mat_h429",
+  "prompt": "直线 l 经过点 P(1，2)，且与 x 轴、y 轴的正半轴围成的三角形的面积为 4，则 l 的斜率为多少？",
+  "question": "直线 l 经过点 P(1，2)，且与 x 轴、y 轴的正半轴围成的三角形的面积为 4，则 l 的斜率为多少？",
+  "options": [],
+  "answer": -2,
+  "type": "numeric",
+  "difficulty": "hard",
+  "explanation": "设 l 在两轴上的截距分别为 a、b（a>0，b>0），则 l 的方程为 x/a+y/b=1，面积条件给出 ab/2=4，即 ab=8。把 P(1，2) 代入得 1/a+2/b=1，用 b=8/a 代入得 1/a+a/4=1，两边乘 4a 得 4+a²=4a，即 (a−2)²=0，所以 a=2，b=4。于是 l 过 (2，0) 与 (0，4)，斜率 k=(0−4)/(2−0)=−2。若只用面积条件而不把点 P 的坐标代入，就会以为截距有无数多组。",
+  "subject": "math",
+  "choices": [],
+  "verify": "(0-4)/(2-0)",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h430_q6",
+  "topicId": "mat_h430",
+  "prompt": "直线 2x−3y+6=0 的斜率与在 y 轴上的截距分别是（　）",
+  "question": "直线 2x−3y+6=0 的斜率与在 y 轴上的截距分别是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "−2/3，2"
+   },
+   {
+    "label": "B",
+    "text": "2/3，2"
+   },
+   {
+    "label": "C",
+    "text": "2/3，−2"
+   },
+   {
+    "label": "D",
+    "text": "3/2，2"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "把 2x−3y+6=0 化成斜截式：3y=2x+6，y=(2/3)x+2，所以斜率 k=2/3，纵截距 b=2。纵截距就是 x=0 时的 y 值，直接把 x=0 代入也得 y=2。移项时把 −3y 写成 3y 会得到 k=−2/3（选项 A），把常数项移错符号则得到 b=−2（选项 C），而 3/2 是斜率的倒数。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "−2/3，2"
+   },
+   {
+    "label": "B",
+    "text": "2/3，2"
+   },
+   {
+    "label": "C",
+    "text": "2/3，−2"
+   },
+   {
+    "label": "D",
+    "text": "3/2，2"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h430_q7",
+  "topicId": "mat_h430",
+  "prompt": "已知直线 l 经过点 A(2，−3)，且在两坐标轴上的截距相等（均不为 0），求 l 的一般式方程，并写出它的斜率与纵截距。",
+  "question": "已知直线 l 经过点 A(2，−3)，且在两坐标轴上的截距相等（均不为 0），求 l 的一般式方程，并写出它的斜率与纵截距。",
+  "options": [],
+  "answer": "l 的一般式方程为 x+y+1=0，斜率 k=−1，纵截距 b=−1",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "截距相等且都不为 0，说明直线在两轴上的截距是同一个数 a，方程可写成 x/a+y/a=1，即 x+y=a。把 A(2，−3) 代入得 a=−1，所以直线为 x+y=−1，化为一般式是 x+y+1=0。再化成斜截式 y=−x−1，读出斜率 k=−1、纵截距 b=−1。若漏掉「均不为 0」这一条件，还会多出截距都为 0、即过原点的直线 y=−(3/2)x，此时答案不唯一。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "设截距式 x/a+y/b=1，由截距相等且不为 0 得 a=b，即 x+y=a",
+   "把 A(2，−3) 代入 x+y=a，得 a=2+(−3)=−1",
+   "整理为一般式 x+y+1=0，即 y=−x−1，斜率 k=−1，纵截距 b=−1"
+  ]
+ },
+ {
+  "id": "mat_h430_q8",
+  "topicId": "mat_h430",
+  "prompt": "无论 m 取何值，直线 (m−1)x+(2m+1)y−3m=0 都经过同一个定点，这个定点的坐标是（　）",
+  "question": "无论 m 取何值，直线 (m−1)x+(2m+1)y−3m=0 都经过同一个定点，这个定点的坐标是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "(3，0)"
+   },
+   {
+    "label": "B",
+    "text": "(1，−1)"
+   },
+   {
+    "label": "C",
+    "text": "(1，1)"
+   },
+   {
+    "label": "D",
+    "text": "(0，3)"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "把方程按 m 整理：m(x+2y−3)+(−x+y)=0。要让它对任意 m 都成立，只需 x+2y−3=0 且 −x+y=0，联立解得 x=y=1，所以定点为 (1，1)。验证：把 (1，1) 代入原式得 (m−1)+(2m+1)−3m=0，恒成立。只盯着 m 的系数而忽略不含 m 的常数部分，就得不到这个定点。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "(3，0)"
+   },
+   {
+    "label": "B",
+    "text": "(1，−1)"
+   },
+   {
+    "label": "C",
+    "text": "(1，1)"
+   },
+   {
+    "label": "D",
+    "text": "(0，3)"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h431_q6",
+  "topicId": "mat_h431",
+  "prompt": "直线 x+2y−5=0 与 2x−y=0 的交点到 y 轴的距离是____。",
+  "question": "直线 x+2y−5=0 与 2x−y=0 的交点到 y 轴的距离是____。",
+  "options": [],
+  "answer": "1",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "联立两方程：由 2x−y=0 得 y=2x，代入 x+2y−5=0 得 x+4x−5=0，x=1，y=2，交点为 (1，2)。点到 y 轴的距离等于横坐标的绝对值，所以距离是 1。若把「到 y 轴的距离」当成纵坐标或到 x 轴的距离，就会错填 2。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h431_q7",
+  "topicId": "mat_h431",
+  "prompt": "三角形 ABC 的三个顶点分别为 A(1，1)、B(5，4)、C(1，5)，求点 C 到 AB 所在直线的距离。",
+  "question": "三角形 ABC 的三个顶点分别为 A(1，1)、B(5，4)、C(1，5)，求点 C 到 AB 所在直线的距离。",
+  "options": [],
+  "answer": 3.2,
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "先求 AB 所在直线的方程：斜率 k=(4−1)/(5−1)=3/4，取点 A(1，1) 得 y−1=(3/4)(x−1)，整理为 3x−4y+1=0，代回 A、B 两点都成立。再代入点到直线的距离公式：d=|3×1−4×5+1|/√(9+16)=|−16|/5=16/5=3.2。若不先把直线化成一般式就直接代入公式，容易把系数与点的坐标错配。",
+  "subject": "math",
+  "choices": [],
+  "verify": "16/5",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h431_q8",
+  "topicId": "mat_h431",
+  "prompt": "过点 P(1，2) 且与点 A(2，3)、B(4，−5) 距离相等的直线 l 的方程是（　）",
+  "question": "过点 P(1，2) 且与点 A(2，3)、B(4，−5) 距离相等的直线 l 的方程是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "4x+y−6=0"
+   },
+   {
+    "label": "B",
+    "text": "3x+2y−7=0"
+   },
+   {
+    "label": "C",
+    "text": "4x+y−6=0 或 3x+2y−7=0"
+   },
+   {
+    "label": "D",
+    "text": "x+4y−9=0"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "分两种情形讨论。情形一：l 与 AB 平行，k_AB=(−5−3)/(4−2)=−4，由点斜式得 y−2=−4(x−1)，即 4x+y−6=0。情形二：l 经过 AB 的中点 M(3，−1)，k=(−1−2)/(3−1)=−3/2，得 3x+2y−7=0。A、B 在 l 同侧且到 l 距离相等，正对应平行这一情形；A、B 在 l 两侧且距离相等，对应过中点这一情形。两种都可能，只写一条就漏解。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "4x+y−6=0"
+   },
+   {
+    "label": "B",
+    "text": "3x+2y−7=0"
+   },
+   {
+    "label": "C",
+    "text": "4x+y−6=0 或 3x+2y−7=0"
+   },
+   {
+    "label": "D",
+    "text": "x+4y−9=0"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h432_q6",
+  "topicId": "mat_h432",
+  "prompt": "求直线 2x−y+3=0 与 x+y−3=0 的交点坐标，并说明两条直线公共点的个数与方程组解的关系。",
+  "question": "求直线 2x−y+3=0 与 x+y−3=0 的交点坐标，并说明两条直线公共点的个数与方程组解的关系。",
+  "options": [],
+  "answer": "交点坐标为 (0，3)；两条直线只有一个公共点，对应方程组有唯一解",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "联立 2x−y+3=0 与 x+y−3=0，两式相加得 3x=0，x=0，再代回第二个方程得 y=3，所以交点为 (0，3)。交点坐标就是方程组的解，因此公共点个数与解的个数一一对应：唯一解对应相交于一点，无解对应平行，无穷多解对应两直线重合。解完要把坐标代回原方程检验，避免只消元不回代。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "联立方程组 2x−y+3=0 与 x+y−3=0",
+   "两式相加消去 y，得 3x=0，即 x=0，代回 x+y=3 得 y=3，交点为 (0，3)",
+   "方程组有唯一解，两条直线就只有一个公共点；若无解则两直线平行，若有无穷多解则两直线重合"
+  ]
+ },
+ {
+  "id": "mat_h432_q7",
+  "topicId": "mat_h432",
+  "prompt": "直线 l₁: 4x−6y+3=0 与 l₂: 2x−3y−1=0 的位置关系是（　）",
+  "question": "直线 l₁: 4x−6y+3=0 与 l₂: 2x−3y−1=0 的位置关系是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "相交但不垂直"
+   },
+   {
+    "label": "B",
+    "text": "平行"
+   },
+   {
+    "label": "C",
+    "text": "重合"
+   },
+   {
+    "label": "D",
+    "text": "垂直"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "把 l₁ 的方程两边除以 2，化成 2x−3y+3/2=0，与 l₂: 2x−3y−1=0 的 x、y 系数完全相同，说明两直线平行或重合。再看常数项：3/2≠−1，两条直线在 y 轴上的截距不同，所以它们平行但不重合，方程组无解。若只看到系数成比例就判重合，或忽略系数是否已统一就下结论，都会判断失误。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "相交但不垂直"
+   },
+   {
+    "label": "B",
+    "text": "平行"
+   },
+   {
+    "label": "C",
+    "text": "重合"
+   },
+   {
+    "label": "D",
+    "text": "垂直"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h432_q8",
+  "topicId": "mat_h432",
+  "prompt": "若直线 (a+1)x+y−2=0 与直线 2x+ay+1=0 没有公共点，则实数 a 的值为____。",
+  "question": "若直线 (a+1)x+y−2=0 与直线 2x+ay+1=0 没有公共点，则实数 a 的值为____。",
+  "options": [],
+  "answer": "1 或 −2",
+  "type": "fill",
+  "difficulty": "hard",
+  "explanation": "没有公共点就是两直线平行且不重合，需 (a+1)/2=1/a≠−2/1。由 (a+1)/2=1/a 得 a(a+1)=2，即 a²+a−2=0，解得 a=1 或 a=−2。检验：a=1 时两直线为 2x+y−2=0 与 2x+y+1=0，平行不重合；a=−2 时两直线为 −x+y−2=0 与 2x−2y+1=0，也平行不重合。两个值都符合题意，只写一个就漏解。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h433_q6",
+  "topicId": "mat_h433",
+  "prompt": "已知点 A(−2，1)、B(2，4)，则 |AB|² 的值是多少？",
+  "question": "已知点 A(−2，1)、B(2，4)，则 |AB|² 的值是多少？",
+  "options": [],
+  "answer": 25,
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "两点间距离公式的平方形式是 |AB|²=(x₂−x₁)²+(y₂−y₁)²，代入得 (2−(−2))²+(4−1)²=4²+3²=16+9=25，所以 |AB|=5。若只算了一个方向的差并平方，会得到 16 或 9 这样的半成品；本题问的是平方值，不要多开一次方。",
+  "subject": "math",
+  "choices": [],
+  "verify": "(2-(-2))**2+(4-1)**2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h433_q7",
+  "topicId": "mat_h433",
+  "prompt": "已知点 A(3，1)、B(−1，5)，若点 P 在 y 轴上且 |PA|=|PB|，则点 P 的坐标是（　）",
+  "question": "已知点 A(3，1)、B(−1，5)，若点 P 在 y 轴上且 |PA|=|PB|，则点 P 的坐标是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "(0，−2)"
+   },
+   {
+    "label": "B",
+    "text": "(2，0)"
+   },
+   {
+    "label": "C",
+    "text": "(0，4)"
+   },
+   {
+    "label": "D",
+    "text": "(0，2)"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "点 P 在 y 轴上，设 P(0，y)。由 |PA|=|PB| 得 |PA|²=|PB|²，即 9+(y−1)²=1+(y−5)²，展开为 9+y²−2y+1=1+y²−10y+25，整理得 8y=16，y=2，所以 P(0，2)。这里只用平方比较，避开了根号。若把 P 设在 x 轴上，或只列 |PA|=|PB| 却不代入 y 轴上的坐标形式，就解不出正确答案。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "(0，−2)"
+   },
+   {
+    "label": "B",
+    "text": "(2，0)"
+   },
+   {
+    "label": "C",
+    "text": "(0，4)"
+   },
+   {
+    "label": "D",
+    "text": "(0，2)"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h433_q8",
+  "topicId": "mat_h433",
+  "prompt": "已知三角形 ABC 的顶点为 A(1，1)、B(4，1)、C(4，5)，判断这个三角形的形状，并求它的面积。",
+  "question": "已知三角形 ABC 的顶点为 A(1，1)、B(4，1)、C(4，5)，判断这个三角形的形状，并求它的面积。",
+  "options": [],
+  "answer": "△ABC 是直角三角形（∠B=90°），面积为 6",
+  "type": "short-answer",
+  "difficulty": "hard",
+  "explanation": "先算三边：|AB|=3，|BC|=4，|AC|=√(3²+4²)=5。三边满足 3²+4²=5²，由勾股定理的逆定理可知 ∠B 是直角，直角边为 AB 与 BC，斜边为 AC，所以三角形是直角三角形。面积 S=1/2×|AB|×|BC|=1/2×3×4=6。若只看图形大致位置而不算边长，容易把直角误判在 A 或 C 处，面积也会算错。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "|AB|=√((4−1)²+0²)=3，|BC|=√(0²+(5−1)²)=4",
+   "|AC|=√((4−1)²+(5−1)²)=√(9+16)=5，满足 3²+4²=5²",
+   "由勾股定理的逆定理得 ∠B=90°，是直角三角形；面积 S=1/2×3×4=6"
+  ]
+ },
+ {
+  "id": "mat_h434_q6",
+  "topicId": "mat_h434",
+  "prompt": "直线 4x+3y−2=0 上一点到点 Q(−1，3) 的最短距离是（　）",
+  "question": "直线 4x+3y−2=0 上一点到点 Q(−1，3) 的最短距离是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "3/5"
+   },
+   {
+    "label": "B",
+    "text": "3"
+   },
+   {
+    "label": "C",
+    "text": "9/5"
+   },
+   {
+    "label": "D",
+    "text": "1"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "直线上的点到定点 Q 的最短距离，就是 Q 到这条直线的垂线段长度，用点到直线的距离公式：d=|4×(−1)+3×3−2|/√(16+9)=|−4+9−2|/5=3/5。分母 √(A²+B²)=5 不能省，省掉就得到 3；把 x=−1 代入时漏掉负号则会得到 9/5。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "3/5"
+   },
+   {
+    "label": "B",
+    "text": "3"
+   },
+   {
+    "label": "C",
+    "text": "9/5"
+   },
+   {
+    "label": "D",
+    "text": "1"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h434_q7",
+  "topicId": "mat_h434",
+  "prompt": "点 A(2，1) 关于直线 y=x 的对称点为 B，则点 B 到直线 3x+4y−5=0 的距离是____。",
+  "question": "点 A(2，1) 关于直线 y=x 的对称点为 B，则点 B 到直线 3x+4y−5=0 的距离是____。",
+  "options": [],
+  "answer": "6/5",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "关于直线 y=x 对称时，点的横、纵坐标互换，所以 B(1，2)。再代入点到直线的距离公式：d=|3×1+4×2−5|/√(9+16)=|6|/5=6/5。若把对称点误写成 (−2，−1)，代入得 |−6−4−5|/5=3；若写成 (1，−2)，则得 3/5。这两种错误都来自把「关于 y=x 对称」当成了关于坐标轴对称。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h434_q8",
+  "topicId": "mat_h434",
+  "prompt": "已知点 P(−1，2) 到直线 3x−4y+m=0 的距离为 4，则 m 的所有可能值之和是多少？",
+  "question": "已知点 P(−1，2) 到直线 3x−4y+m=0 的距离为 4，则 m 的所有可能值之和是多少？",
+  "options": [],
+  "answer": 22,
+  "type": "numeric",
+  "difficulty": "hard",
+  "explanation": "由距离公式得 |3×(−1)−4×2+m|/√(9+16)=4，即 |m−11|/5=4，|m−11|=20，所以 m−11=20 或 m−11=−20，解得 m=31 或 m=−9。这两个值对应的直线分别位于点 P 的两侧，到 P 的距离都是 4，都符合题意，因此所有可能值之和为 31+(−9)=22。只解绝对值方程的一支，就会漏掉另一个值。",
+  "subject": "math",
+  "choices": [],
+  "verify": "31+(-9)",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h435_q6",
+  "topicId": "mat_h435",
+  "prompt": "两条平行直线 5x−12y+3=0 与 10x−24y−7=0 之间的距离是（　）",
+  "question": "两条平行直线 5x−12y+3=0 与 10x−24y−7=0 之间的距离是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "1/2"
+   },
+   {
+    "label": "B",
+    "text": "1"
+   },
+   {
+    "label": "C",
+    "text": "5/13"
+   },
+   {
+    "label": "D",
+    "text": "13/2"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "两条直线的 x、y 系数成比例，先把第二条除以 2，化为 5x−12y−7/2=0，使系数与第一条一致。再用 d=|C₁−C₂|/√(A²+B²)=|3−(−7/2)|/√(25+144)=(13/2)/13=1/2。分母是 √(5²+12²)=13，直接用未统一系数的常数项相减，会得到 5/13 或 1 这样的错误结果。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "1/2"
+   },
+   {
+    "label": "B",
+    "text": "1"
+   },
+   {
+    "label": "C",
+    "text": "5/13"
+   },
+   {
+    "label": "D",
+    "text": "13/2"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h435_q7",
+  "topicId": "mat_h435",
+  "prompt": "求两条平行直线 l₁: x−2y+1=0 与 l₂: 2x−4y−6=0 之间的距离。",
+  "question": "求两条平行直线 l₁: x−2y+1=0 与 l₂: 2x−4y−6=0 之间的距离。",
+  "options": [],
+  "answer": "两条平行直线之间的距离为 4√5/5",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "l₁ 与 l₂ 平行，但 l₂ 的系数是 l₁ 的 2 倍，必须先把 l₂ 化成 x−2y−3=0，让 A、B 与 l₁ 对应相同，才能直接代入 d=|C₁−C₂|/√(A²+B²)。化好后 d=|1−(−3)|/√5=4/√5=4√5/5。若不做统一就把常数项相减得 |1−(−6)|/√5，答案会偏大，这是平行线距离最常见的错误。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "l₂ 两边同除以 2，化为 x−2y−3=0，使 A、B 与 l₁ 对应相同",
+   "代入 d=|C₁−C₂|/√(A²+B²)=|1−(−3)|/√(1+4)=4/√5",
+   "分母有理化得 d=4√5/5"
+  ]
+ },
+ {
+  "id": "mat_h435_q8",
+  "topicId": "mat_h435",
+  "prompt": "已知直线 l₁: x+2y−5=0 与 l₂: 2x+4y+m=0 之间的距离为 √5，则 m 的值是（　）",
+  "question": "已知直线 l₁: x+2y−5=0 与 l₂: 2x+4y+m=0 之间的距离为 √5，则 m 的值是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "−20"
+   },
+   {
+    "label": "B",
+    "text": "0"
+   },
+   {
+    "label": "C",
+    "text": "−20 或 0"
+   },
+   {
+    "label": "D",
+    "text": "20"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "l₂ 两边除以 2 得 x+2y+m/2=0，与 l₁ 的系数一致，于是 d=|−5−m/2|/√5=√5，即 |5+m/2|=5，所以 m/2=0 或 m/2=−10，解得 m=0 或 m=−20。检验：m=0 时 l₂ 为 x+2y=0，与 l₁ 的距离为 5/√5=√5；m=−20 时 l₂ 为 x+2y−10=0，距离同样为 √5。绝对值方程有两支，只写一个值就漏解。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "−20"
+   },
+   {
+    "label": "B",
+    "text": "0"
+   },
+   {
+    "label": "C",
+    "text": "−20 或 0"
+   },
+   {
+    "label": "D",
+    "text": "20"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h436_q6",
+  "topicId": "mat_h436",
+  "prompt": "圆 (x+3)²+(y−2)²=16 的圆心坐标是____。",
+  "question": "圆 (x+3)²+(y−2)²=16 的圆心坐标是____。",
+  "options": [],
+  "answer": "(−3，2)",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "圆的标准方程是 (x−a)²+(y−b)²=r²，圆心为 (a，b)、半径为 r。这里的 x+3 应看成 x−(−3)，y−2 应看成 y−2，所以 a=−3，b=2，圆心为 (−3，2)，半径 r=4。把 x+3 直接读成 a=3 是符号上最常见的错误；写成坐标时要用括号并加逗号。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h436_q7",
+  "topicId": "mat_h436",
+  "prompt": "一个圆的一般方程为 x²+y²−2x−4y−4=0，则这个圆的直径是多少？",
+  "question": "一个圆的一般方程为 x²+y²−2x−4y−4=0，则这个圆的直径是多少？",
+  "options": [],
+  "answer": 6,
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "配方：x²−2x=(x−1)²−1，y²−4y=(y−2)²−4，代入得 (x−1)²+(y−2)²=9，圆心 (1，2)，半径 r=3，所以直径是 2r=6。也可用公式：D=−2，E=−4，F=−4，r=1/2·√(D²+E²−4F)=1/2·√(4+16+16)=1/2×6=3。题目问直径，只算出半径 3 就作答会少乘 2。",
+  "subject": "math",
+  "choices": [],
+  "verify": "2*(1+4+4)**0.5",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h436_q8",
+  "topicId": "mat_h436",
+  "prompt": "若点 P(1，2) 在圆 x²+y²−2x+4y+m=0 的内部，则 m 的取值范围是（　）",
+  "question": "若点 P(1，2) 在圆 x²+y²−2x+4y+m=0 的内部，则 m 的取值范围是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "m<11"
+   },
+   {
+    "label": "B",
+    "text": "m>−11"
+   },
+   {
+    "label": "C",
+    "text": "m<−5"
+   },
+   {
+    "label": "D",
+    "text": "m<−11"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "方程表示圆需要 D²+E²−4F>0，即 4+16−4m>0，m<5；点在圆内则把 P 的坐标代入方程左边小于 0：1+4−2+8+m<0，即 11+m<0，m<−11。两个条件取交集，仍是 m<−11（因为它已经满足 m<5）。若把「点在圆内」写成代值大于 0，会得到 m>−11 这样的相反结论。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "m<11"
+   },
+   {
+    "label": "B",
+    "text": "m>−11"
+   },
+   {
+    "label": "C",
+    "text": "m<−5"
+   },
+   {
+    "label": "D",
+    "text": "m<−11"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h437_q6",
+  "topicId": "mat_h437",
+  "prompt": "已知圆心为 C(2，−1)，且圆经过点 A(5，3)，求这个圆的标准方程。",
+  "question": "已知圆心为 C(2，−1)，且圆经过点 A(5，3)，求这个圆的标准方程。",
+  "options": [],
+  "answer": "圆的标准方程为 (x−2)²+(y+1)²=25",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "圆心已给，只需求半径：r=|CA|=√((5−2)²+(3+1)²)=√25=5。把 a=2，b=−1，r=5 代入 (x−a)²+(y−b)²=r²，得 (x−2)²+(y+1)²=25。常见错误是把右边写成 5（那是半径，不是半径的平方），或者把 y−(−1) 写成 y−1。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "半径 r=|CA|=√((5−2)²+(3−(−1))²)=√(9+16)=5",
+   "圆心 (2，−1)、半径 5，代入标准方程得 (x−2)²+(y+1)²=25",
+   "右边是半径的平方 25，不是半径 5；y−(−1) 要写成 y+1"
+  ]
+ },
+ {
+  "id": "mat_h437_q7",
+  "topicId": "mat_h437",
+  "prompt": "圆心在 x 轴上，且经过点 A(−2，0) 与 B(2，4) 的圆的标准方程是（　）",
+  "question": "圆心在 x 轴上，且经过点 A(−2，0) 与 B(2，4) 的圆的标准方程是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "(x+2)²+y²=16"
+   },
+   {
+    "label": "B",
+    "text": "(x−2)²+y²=16"
+   },
+   {
+    "label": "C",
+    "text": "(x−2)²+y²=4"
+   },
+   {
+    "label": "D",
+    "text": "(x−1)²+y²=9"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "圆心在 x 轴上，设圆心为 (c，0)。由 |CA|=|CB| 得 (c+2)²=(c−2)²+16，展开整理得 8c=16，c=2，圆心为 (2，0)，半径 r=|2−(−2)|=4，所以方程为 (x−2)²+y²=16。若直接取 A、B 的中点 (0，2) 当圆心，就丢掉了「圆心在 x 轴上」这一条件；选 C 则是把半径的平方错写成 4。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "(x+2)²+y²=16"
+   },
+   {
+    "label": "B",
+    "text": "(x−2)²+y²=16"
+   },
+   {
+    "label": "C",
+    "text": "(x−2)²+y²=4"
+   },
+   {
+    "label": "D",
+    "text": "(x−1)²+y²=9"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h437_q8",
+  "topicId": "mat_h437",
+  "prompt": "已知圆 C 的圆心在直线 y=2x 上，且圆经过点 A(1，0)、B(3，0)，则圆 C 的标准方程是____。",
+  "question": "已知圆 C 的圆心在直线 y=2x 上，且圆经过点 A(1，0)、B(3，0)，则圆 C 的标准方程是____。",
+  "options": [],
+  "answer": "(x−2)²+(y−4)²=17",
+  "type": "fill",
+  "difficulty": "hard",
+  "explanation": "设圆心为 (c，2c)，由 |CA|=|CB| 得 (c−1)²+4c²=(c−3)²+4c²，两边约去 4c² 后 (c−1)²=(c−3)²，解得 c=2，圆心为 (2，4)。半径 r²=(2−1)²+(4−0)²=1+16=17，所以标准方程为 (x−2)²+(y−4)²=17。若把圆心设成 (c，c) 或干脆忽略「圆心在 y=2x 上」，就少了横纵坐标之间的关系，解不出唯一答案。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h438_q6",
+  "topicId": "mat_h438",
+  "prompt": "已知圆的一般方程是 x²+y²+8x−2y−8=0，则这个圆的半径等于多少？",
+  "question": "已知圆的一般方程是 x²+y²+8x−2y−8=0，则这个圆的半径等于多少？",
+  "options": [],
+  "answer": 5,
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "用公式求半径：D=8，E=−2，F=−8，r=1/2·√(D²+E²−4F)=1/2·√(64+4+32)=1/2×10=5。也可配方验证：x²+8x=(x+4)²−16，y²−2y=(y−1)²−1，代入得 (x+4)²+(y−1)²=25，圆心 (−4，1)，半径 5。−4F=−4×(−8)=+32，把这一项写成减 32 就会算出错误的半径。",
+  "subject": "math",
+  "choices": [],
+  "verify": "(16+1+8)**0.5",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h438_q7",
+  "topicId": "mat_h438",
+  "prompt": "若方程 x²+y²+mx+2y+1=0 表示圆，则实数 m 的取值范围是（　）",
+  "question": "若方程 x²+y²+mx+2y+1=0 表示圆，则实数 m 的取值范围是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "m>0"
+   },
+   {
+    "label": "B",
+    "text": "m<0"
+   },
+   {
+    "label": "C",
+    "text": "m≠0"
+   },
+   {
+    "label": "D",
+    "text": "任意实数"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "方程表示圆的条件是 D²+E²−4F>0。这里 D=m，E=2，F=1，所以 m²+4−4>0，即 m²>0，解得 m≠0。当 m=0 时方程变为 x²+y²+2y+1=0，配方得 x²+(y+1)²=0，只表示一个点 (0，−1)，不是圆。认为平方恒非负就选「任意实数」，恰恰漏掉了 m=0 这个退化情形。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "m>0"
+   },
+   {
+    "label": "B",
+    "text": "m<0"
+   },
+   {
+    "label": "C",
+    "text": "m≠0"
+   },
+   {
+    "label": "D",
+    "text": "任意实数"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h438_q8",
+  "topicId": "mat_h438",
+  "prompt": "已知圆 C: x²+y²−2x+4y−4=0，求圆心坐标与半径，并判断点 P(3，−2) 与圆 C 的位置关系。",
+  "question": "已知圆 C: x²+y²−2x+4y−4=0，求圆心坐标与半径，并判断点 P(3，−2) 与圆 C 的位置关系。",
+  "options": [],
+  "answer": "圆心为 (1，−2)，半径为 3，点 P 在圆内",
+  "type": "short-answer",
+  "difficulty": "hard",
+  "explanation": "先配方：x²−2x=(x−1)²−1，y²+4y=(y+2)²−4，代入原方程并整理得 (x−1)²+(y+2)²=9，所以圆心 C(1，−2)，半径 r=3。再算 |PC|=√((3−1)²+(−2−(−2))²)=√4=2，与半径比较：2<3，所以点 P 在圆内。若把右边 9 当成半径，比较时就会得出 |PC|<9 而误判，实际上要与 r=3 比。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "配方：x²−2x=(x−1)²−1，y²+4y=(y+2)²−4，得 (x−1)²+(y+2)²=9",
+   "圆心 C(1，−2)，半径 r=3",
+   "|PC|=√((3−1)²+(−2+2)²)=2<3，所以点 P 在圆内"
+  ]
+ }
+]

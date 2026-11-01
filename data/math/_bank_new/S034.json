@@ -1,0 +1,884 @@
+[
+ {
+  "id": "mat_p1275_q6",
+  "topicId": "mat_p1275",
+  "prompt": "用 96 元去买同一种笔记本，若每本的价钱为 x 元，能买 y 本，则 y 与 x 之间的函数关系是（　）",
+  "question": "用 96 元去买同一种笔记本，若每本的价钱为 x 元，能买 y 本，则 y 与 x 之间的函数关系是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "y=96x"
+   },
+   {
+    "label": "B",
+    "text": "y=96/x"
+   },
+   {
+    "label": "C",
+    "text": "y=x/96"
+   },
+   {
+    "label": "D",
+    "text": "y=96−x"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "总价固定为 96 元时，本数乘单价等于总价，即 xy=96，所以 y=96/x，是反比例函数。写成 y=96x 说明把“乘积一定”错当成了“比值一定”，这是最常见的混淆；y=96−x 则把乘法关系误作加减关系。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "y=96x"
+   },
+   {
+    "label": "B",
+    "text": "y=96/x"
+   },
+   {
+    "label": "C",
+    "text": "y=x/96"
+   },
+   {
+    "label": "D",
+    "text": "y=96−x"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1275_q7",
+  "topicId": "mat_p1275",
+  "prompt": "某工程队要铺设一条长 1800 m 的管道，每天铺设 x m，铺完全部管道需要 y 天，则 y 关于 x 的解析式为 y=1800/x。若要求在 12 天内完工，每天至少要铺设____m。",
+  "question": "某工程队要铺设一条长 1800 m 的管道，每天铺设 x m，铺完全部管道需要 y 天，则 y 关于 x 的解析式为 y=1800/x。若要求在 12 天内完工，每天至少要铺设____m。",
+  "options": [],
+  "answer": "150",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "由 y=1800/x 知，工作量一定时每天铺得越多用的天数越少；要求 y≤12，则 x≥1800÷12=150，所以每天至少要铺 150 m。若把 1800 与 12 相乘，天数越少每天反而铺得越多，与实际相反。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1275_q8",
+  "topicId": "mat_p1275",
+  "prompt": "一个水池的容积为 480 m³，原计划每小时注水 x m³ 恰好注满。实际每小时比原计划多注 20 m³，结果比原计划少用 4 h 注满。原计划每小时注水多少立方米？",
+  "question": "一个水池的容积为 480 m³，原计划每小时注水 x m³ 恰好注满。实际每小时比原计划多注 20 m³，结果比原计划少用 4 h 注满。原计划每小时注水多少立方米？",
+  "options": [],
+  "answer": "40",
+  "type": "numeric",
+  "difficulty": "hard",
+  "explanation": "设原计划每小时注水 x m³，则 480/x−480/(x+20)=4，两边乘 x(x+20) 得 9600=4x²+80x，即 x²+20x−2400=0，解得 x=40 或 x=−60，速度不能为负，故取 40。检验：480÷40=12 h，480÷60=8 h，正好少用 4 h。",
+  "subject": "math",
+  "choices": [],
+  "verify": "(-20+(400+9600)**0.5)/2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1276_q6",
+  "topicId": "mat_p1276",
+  "prompt": "把一个三角形绕平面内的一点旋转得到另一个三角形，下列条件中能够唯一确定旋转后图形位置的是（　）",
+  "question": "把一个三角形绕平面内的一点旋转得到另一个三角形，下列条件中能够唯一确定旋转后图形位置的是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "只需知道旋转中心"
+   },
+   {
+    "label": "B",
+    "text": "只需知道旋转角"
+   },
+   {
+    "label": "C",
+    "text": "需要知道旋转中心、旋转方向和旋转角"
+   },
+   {
+    "label": "D",
+    "text": "只需知道原三角形的面积"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "旋转由旋转中心、旋转方向和旋转角三个要素共同确定，缺一不可：只给中心，图形可能停在任何一个角度；只给角度，绕不同的点转出来的位置完全不同。面积只由原图形决定，与旋转后图形的位置无关。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "只需知道旋转中心"
+   },
+   {
+    "label": "B",
+    "text": "只需知道旋转角"
+   },
+   {
+    "label": "C",
+    "text": "需要知道旋转中心、旋转方向和旋转角"
+   },
+   {
+    "label": "D",
+    "text": "只需知道原三角形的面积"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1276_q7",
+  "topicId": "mat_p1276",
+  "prompt": "在 △ABC 中，∠ACB=50°，把 △ABC 绕点 C 按顺时针方向旋转 30° 得到 △A′B′C，此时射线 CA′ 落在 ∠ACB 的内部。求 ∠ACA′ 与 ∠A′CB 的度数，并写出旋转过程中相等的线段。",
+  "question": "在 △ABC 中，∠ACB=50°，把 △ABC 绕点 C 按顺时针方向旋转 30° 得到 △A′B′C，此时射线 CA′ 落在 ∠ACB 的内部。求 ∠ACA′ 与 ∠A′CB 的度数，并写出旋转过程中相等的线段。",
+  "options": [],
+  "answer": "∠ACA′=30°，∠A′CB=20°；CA=CA′，CB=CB′，AB=A′B′。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "旋转角就是对应点与旋转中心连线的夹角，A 与 A′ 是对应点，所以 ∠ACA′ 等于 30°。射线 CA′ 落在 ∠ACB 内部，故 ∠A′CB=∠ACB−∠ACA′=50°−30°=20°。旋转不改变图形的大小和形状，因此对应线段都相等。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "旋转角等于对应点与旋转中心连线的夹角，故 ∠ACA′=30°",
+   "射线 CA′ 在 ∠ACB 内部，∠A′CB=∠ACB−∠ACA′=50°−30°=20°",
+   "对应点到旋转中心的距离相等，CA=CA′、CB=CB′；对应线段相等，AB=A′B′"
+  ]
+ },
+ {
+  "id": "mat_p1276_q8",
+  "topicId": "mat_p1276",
+  "prompt": "在平面直角坐标系中，把点 A(2,1) 绕原点 O 逆时针旋转 90° 得到点 A′，则点 A′ 的坐标是（　）",
+  "question": "在平面直角坐标系中，把点 A(2,1) 绕原点 O 逆时针旋转 90° 得到点 A′，则点 A′ 的坐标是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "(-1,2)"
+   },
+   {
+    "label": "B",
+    "text": "(-2,-1)"
+   },
+   {
+    "label": "C",
+    "text": "(1,-2)"
+   },
+   {
+    "label": "D",
+    "text": "(2,1)"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "逆时针旋转 90° 时，点 (x,y) 变为 (−y,x)，把 (2,1) 代入得 A′(−1,2)。干扰项 (−2,−1) 是点 A 关于原点对称的结果，相当于旋转 180°；而 (1,−2) 是顺时针旋转 90° 的结果，方向弄反就会出现这一项。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "(-1,2)"
+   },
+   {
+    "label": "B",
+    "text": "(-2,-1)"
+   },
+   {
+    "label": "C",
+    "text": "(1,-2)"
+   },
+   {
+    "label": "D",
+    "text": "(2,1)"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1277_q6",
+  "topicId": "mat_p1277",
+  "prompt": "点 P(5,-7) 关于原点 O 对称的点 P′ 在第____象限。",
+  "question": "点 P(5,-7) 关于原点 O 对称的点 P′ 在第____象限。",
+  "options": [],
+  "answer": "二",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "关于原点对称的两个点，横坐标、纵坐标都互为相反数，所以 P′ 的坐标是 (−5,7)。横坐标为负、纵坐标为正的点在第二象限，因此 P′ 在第二象限。只改变纵坐标的符号会把点判到第三象限。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1277_q7",
+  "topicId": "mat_p1277",
+  "prompt": "在平行四边形、等边三角形、圆、正五边形、线段、角这六个图形中，中心对称图形的个数是多少？",
+  "question": "在平行四边形、等边三角形、圆、正五边形、线段、角这六个图形中，中心对称图形的个数是多少？",
+  "options": [],
+  "answer": "3",
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "中心对称图形绕自身的对称中心旋转 180° 后能与原图形重合。平行四边形、圆、线段都满足这一条件，共 3 个。等边三角形和正五边形旋转 180° 后尖端指向相反方向，角的两条边也不会重合，它们只是轴对称图形。",
+  "subject": "math",
+  "choices": [],
+  "verify": "3",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1277_q8",
+  "topicId": "mat_p1277",
+  "prompt": "在平面直角坐标系中，点 A(-1,2) 关于原点对称的点为 B，点 B 关于 x 轴对称的点为 C，则点 C 的坐标是（　）",
+  "question": "在平面直角坐标系中，点 A(-1,2) 关于原点对称的点为 B，点 B 关于 x 轴对称的点为 C，则点 C 的坐标是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "(-1,2)"
+   },
+   {
+    "label": "B",
+    "text": "(1,-2)"
+   },
+   {
+    "label": "C",
+    "text": "(1,2)"
+   },
+   {
+    "label": "D",
+    "text": "(-1,-2)"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "点 A(−1,2) 关于原点对称，横纵坐标都取相反数，得 B(1,−2)；点 B 关于 x 轴对称时横坐标不变、纵坐标取相反数，得 C(1,2)。若把关于原点对称与关于 x 轴对称的规律混用，就会得到 (−1,−2) 这一类错误结果。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "(-1,2)"
+   },
+   {
+    "label": "B",
+    "text": "(1,-2)"
+   },
+   {
+    "label": "C",
+    "text": "(1,2)"
+   },
+   {
+    "label": "D",
+    "text": "(-1,-2)"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1278_q6",
+  "topicId": "mat_p1278",
+  "prompt": "什么是弦？什么是直径？两者在数量上有什么关系？请分别说明。",
+  "question": "什么是弦？什么是直径？两者在数量上有什么关系？请分别说明。",
+  "options": [],
+  "answer": "连接圆上任意两点的线段叫做弦；经过圆心的弦叫做直径。直径是同圆中最长的弦，且直径等于半径的 2 倍（d=2r）。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "弦只要求两个端点都在圆上，不一定要经过圆心，所以圆中弦有无数条；直径是特殊的弦，它必须经过圆心，同一个圆中直径只有无数条中最长的那一类，长度为 2r。判断时要抓住“是否经过圆心”这一区别。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "连接圆上任意两点的线段叫弦，弦的两个端点都在圆上",
+   "经过圆心的弦叫直径，直径是同圆中最长的弦",
+   "直径与半径的关系是 d=2r，即半径等于直径的一半"
+  ]
+ },
+ {
+  "id": "mat_p1278_q7",
+  "topicId": "mat_p1278",
+  "prompt": "已知 ⊙O 的半径为 4 cm，点 A 到圆心 O 的距离为 4.5 cm，点 B 到圆心 O 的距离为 4 cm，则点 A、B 与 ⊙O 的位置关系是（　）",
+  "question": "已知 ⊙O 的半径为 4 cm，点 A 到圆心 O 的距离为 4.5 cm，点 B 到圆心 O 的距离为 4 cm，则点 A、B 与 ⊙O 的位置关系是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "点 A 在圆外，点 B 在圆上"
+   },
+   {
+    "label": "B",
+    "text": "点 A 在圆上，点 B 在圆外"
+   },
+   {
+    "label": "C",
+    "text": "点 A 在圆内，点 B 在圆上"
+   },
+   {
+    "label": "D",
+    "text": "点 A 在圆外，点 B 在圆内"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "判断点与圆的位置关系，要比点到圆心的距离 d 与半径 r 的大小：4.5>4，点 A 在圆外；4=4，点 B 在圆上。若把“距离大于半径”误判成圆内，就会选出与正确答案完全相反的一项。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "点 A 在圆外，点 B 在圆上"
+   },
+   {
+    "label": "B",
+    "text": "点 A 在圆上，点 B 在圆外"
+   },
+   {
+    "label": "C",
+    "text": "点 A 在圆内，点 B 在圆上"
+   },
+   {
+    "label": "D",
+    "text": "点 A 在圆外，点 B 在圆内"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1278_q8",
+  "topicId": "mat_p1278",
+  "prompt": "⊙O 的直径为 12 cm，点 P 到圆心 O 的距离 OP=7 cm，点 Q 是 ⊙O 上任意一点，则线段 PQ 长度的取值范围是____cm。",
+  "question": "⊙O 的直径为 12 cm，点 P 到圆心 O 的距离 OP=7 cm，点 Q 是 ⊙O 上任意一点，则线段 PQ 长度的取值范围是____cm。",
+  "options": [],
+  "answer": "1 ≤ PQ ≤ 13",
+  "type": "fill",
+  "difficulty": "hard",
+  "explanation": "由直径为 12 cm 得半径 r=6 cm，OP=7>6，点 P 在圆外。PQ 最短时 Q 是圆上离 P 最近的点，即 OP−r=1 cm；PQ 最长时 Q 在 OP 的延长线与圆的交点处，即 OP+r=13 cm，所以 1≤PQ≤13。只算 OP−r 会漏掉最长的情形。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1279_q6",
+  "topicId": "mat_p1279",
+  "prompt": "在 ⊙O 中，一条弧所对的圆周角是 35°，则这条弧所对的圆心角是多少度？",
+  "question": "在 ⊙O 中，一条弧所对的圆周角是 35°，则这条弧所对的圆心角是多少度？",
+  "options": [],
+  "answer": "70",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "同一条弧所对的圆心角等于它所对圆周角的 2 倍，所以圆心角为 35°×2=70°。把方向弄反、用圆周角去乘 1/2，就会错答成 17.5°，这是本题最常见的错误。",
+  "subject": "math",
+  "choices": [],
+  "verify": "35*2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1279_q7",
+  "topicId": "mat_p1279",
+  "prompt": "在 ⊙O 中，弦 AB=24，圆心 O 到弦 AB 的距离为 5，则 ⊙O 的半径是（　）",
+  "question": "在 ⊙O 中，弦 AB=24，圆心 O 到弦 AB 的距离为 5，则 ⊙O 的半径是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "12"
+   },
+   {
+    "label": "B",
+    "text": "13"
+   },
+   {
+    "label": "C",
+    "text": "17"
+   },
+   {
+    "label": "D",
+    "text": "7"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "过 O 作 OC⊥AB 于 C，由垂径定理得 AC=AB÷2=12。在 Rt△OAC 中，OA=√(12²+5²)=√169=13，即半径为 13。选 12 是把半弦长直接当成了半径，选 17 则是把半弦长与弦心距相加，忽略了它们是同一个直角三角形的两条直角边。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "12"
+   },
+   {
+    "label": "B",
+    "text": "13"
+   },
+   {
+    "label": "C",
+    "text": "17"
+   },
+   {
+    "label": "D",
+    "text": "7"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1279_q8",
+  "topicId": "mat_p1279",
+  "prompt": "AB 是 ⊙O 的直径，点 C 在 ⊙O 上且不与 A、B 重合，已知 ∠ABC=35°。（1）求 ∠ACB 的度数；（2）求 ∠BAC 的度数，并说明每一步的依据。",
+  "question": "AB 是 ⊙O 的直径，点 C 在 ⊙O 上且不与 A、B 重合，已知 ∠ABC=35°。（1）求 ∠ACB 的度数；（2）求 ∠BAC 的度数，并说明每一步的依据。",
+  "options": [],
+  "answer": "（1）∠ACB=90°；（2）∠BAC=55°。",
+  "type": "short-answer",
+  "difficulty": "hard",
+  "explanation": "AB 是直径，直径所对的圆周角是直角，所以 ∠ACB=90°，依据是“半圆所对的圆周角等于 90°”。再在 △ABC 中用三角形内角和为 180°，得 ∠BAC=180°−90°−35°=55°。若误以为 ∠ACB 与 ∠ABC 相等，说明没有抓住直径这一关键条件。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "AB 是直径，直径（半圆）所对的圆周角是直角，故 ∠ACB=90°",
+   "三角形内角和为 180°，∠BAC=180°−90°−35°=55°",
+   "也可由同弧所对的圆心角是圆周角的 2 倍对结果进行检验"
+  ]
+ },
+ {
+  "id": "mat_p1280_q6",
+  "topicId": "mat_p1280",
+  "prompt": "钟表的分针长 5 cm，从 12 时整走到 12 时 15 分，分针针尖所走过的路程是（　）",
+  "question": "钟表的分针长 5 cm，从 12 时整走到 12 时 15 分，分针针尖所走过的路程是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "5π cm"
+   },
+   {
+    "label": "B",
+    "text": "10π cm"
+   },
+   {
+    "label": "C",
+    "text": "2.5π cm"
+   },
+   {
+    "label": "D",
+    "text": "1.25π cm"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "15 分钟里分针转过 90°，针尖走过的路程是半径 5 cm、圆心角 90° 的弧长，l=90π×5÷180=2.5π cm。选 5π 是把 180° 的弧长当成了答案，选 10π 则把 15 分钟当成了整整一圈。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "5π cm"
+   },
+   {
+    "label": "B",
+    "text": "10π cm"
+   },
+   {
+    "label": "C",
+    "text": "2.5π cm"
+   },
+   {
+    "label": "D",
+    "text": "1.25π cm"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1280_q7",
+  "topicId": "mat_p1280",
+  "prompt": "一个扇形的面积是 12π cm²，半径是 6 cm，则这个扇形的弧长是____cm。",
+  "question": "一个扇形的面积是 12π cm²，半径是 6 cm，则这个扇形的弧长是____cm。",
+  "options": [],
+  "answer": "4π",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "由扇形面积公式 S=lR/2 得 l=2S÷R=2×12π÷6=4π cm。也可以先用 S=nπR²/360 求出圆心角为 120°，再代入弧长公式得到同样结果。直接把面积除以半径会少乘一个 2，错得 2π。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1280_q8",
+  "topicId": "mat_p1280",
+  "prompt": "一个扇形的周长是 20 cm，半径是 6 cm，则这个扇形的面积是多少平方厘米？",
+  "question": "一个扇形的周长是 20 cm，半径是 6 cm，则这个扇形的面积是多少平方厘米？",
+  "options": [],
+  "answer": "24",
+  "type": "numeric",
+  "difficulty": "hard",
+  "explanation": "扇形周长由两条半径和一段弧组成，弧长 l=20−2×6=8 cm；再由 S=lR/2 得 S=8×6÷2=24 cm²。若把 20 直接当作弧长，就会算成 60 cm²，忽略了周长里还包含两条半径。",
+  "subject": "math",
+  "choices": [],
+  "verify": "(20-2*6)*6/2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1281_q6",
+  "topicId": "mat_p1281",
+  "prompt": "⊙O 的半径为 4，圆心 O 到直线 l 的距离为 5，则直线 l 与 ⊙O 的公共点个数是（　）",
+  "question": "⊙O 的半径为 4，圆心 O 到直线 l 的距离为 5，则直线 l 与 ⊙O 的公共点个数是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "0 个"
+   },
+   {
+    "label": "B",
+    "text": "1 个"
+   },
+   {
+    "label": "C",
+    "text": "2 个"
+   },
+   {
+    "label": "D",
+    "text": "3 个"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "圆心到直线的距离 5 大于半径 4，直线与圆相离，没有公共点。距离等于半径时才有 1 个公共点（相切），距离小于半径时才有 2 个公共点（相交），把 5 与 4 的大小关系看反就会答成 2 个。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "0 个"
+   },
+   {
+    "label": "B",
+    "text": "1 个"
+   },
+   {
+    "label": "C",
+    "text": "2 个"
+   },
+   {
+    "label": "D",
+    "text": "3 个"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1281_q7",
+  "topicId": "mat_p1281",
+  "prompt": "点 P 是 ⊙O 外一点，PA、PB 分别与 ⊙O 相切于点 A、B，已知 PA=6，∠APB=60°，求 ⊙O 的半径。",
+  "question": "点 P 是 ⊙O 外一点，PA、PB 分别与 ⊙O 相切于点 A、B，已知 PA=6，∠APB=60°，求 ⊙O 的半径。",
+  "options": [],
+  "answer": "⊙O 的半径是 2√3。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "由切线长定理得 PA=PB，且 OP 平分 ∠APB，所以 ∠APO=30°。连接 OA，切线垂直于过切点的半径，故 ∠OAP=90°。在 Rt△OAP 中，OA=PA·tan30°=6×√3/3=2√3，即半径为 2√3。若把 30° 误放在 ∠AOP 上，就会错用成正弦或余弦，算出 3√3 之类的结果。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "切线长定理给出 PA=PB，且 OP 平分 ∠APB，故 ∠APO=30°",
+   "连接 OA，由切线的性质得 OA⊥PA，∠OAP=90°",
+   "在 Rt△OAP 中 OA=PA·tan30°=6×√3/3=2√3，半径为 2√3"
+  ]
+ },
+ {
+  "id": "mat_p1281_q8",
+  "topicId": "mat_p1281",
+  "prompt": "已知 ⊙O 的半径为 5，点 P 是直线 l 上一点，且 OP=5，则直线 l 与 ⊙O 的位置关系是（　）",
+  "question": "已知 ⊙O 的半径为 5，点 P 是直线 l 上一点，且 OP=5，则直线 l 与 ⊙O 的位置关系是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "一定相切"
+   },
+   {
+    "label": "B",
+    "text": "一定相交"
+   },
+   {
+    "label": "C",
+    "text": "一定相离"
+   },
+   {
+    "label": "D",
+    "text": "相切或相交"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "点 P 到圆心的距离等于半径，说明 P 在圆上，直线 l 经过圆上一点。此时圆心到直线的距离 d 不超过 OP=5：d=5 时相切，d<5 时直线穿过圆而相交，两种都可能。认为“一定相切”是把 OP 误当成了圆心到直线的距离。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "一定相切"
+   },
+   {
+    "label": "B",
+    "text": "一定相交"
+   },
+   {
+    "label": "C",
+    "text": "一定相离"
+   },
+   {
+    "label": "D",
+    "text": "相切或相交"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1282_q6",
+  "topicId": "mat_p1282",
+  "prompt": "一个直角三角形的两条直角边长分别为 8 cm 和 15 cm，则它的内切圆半径是____cm。",
+  "question": "一个直角三角形的两条直角边长分别为 8 cm 和 15 cm，则它的内切圆半径是____cm。",
+  "options": [],
+  "answer": "3",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "由勾股定理得斜边为 √(8²+15²)=17 cm。直角三角形内切圆半径 r=(a+b−c)/2=(8+15−17)÷2=3 cm。若把三边和的一半 (8+15+17)÷2 当作半径，就会把半周长与内切圆半径混淆。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1282_q7",
+  "topicId": "mat_p1282",
+  "prompt": "一个三角形的周长是 40，面积是 100，则它的内切圆半径是多少？",
+  "question": "一个三角形的周长是 40，面积是 100，则它的内切圆半径是多少？",
+  "options": [],
+  "answer": "5",
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "设内切圆半径为 r，把三角形分成以内心为公共顶点、三边为底边的三个小三角形，它们的面积和等于原三角形面积，即 S=½·r·(a+b+c)。代入得 100=½×r×40，解得 r=5。若漏掉公式里的 ½，会算成 r=2.5，这是最常见的错误。",
+  "subject": "math",
+  "choices": [],
+  "verify": "2*100/40",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1282_q8",
+  "topicId": "mat_p1282",
+  "prompt": "等边三角形的边长为 6，则它的内切圆半径是（　）",
+  "question": "等边三角形的边长为 6，则它的内切圆半径是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "2√3"
+   },
+   {
+    "label": "B",
+    "text": "√3"
+   },
+   {
+    "label": "C",
+    "text": "3"
+   },
+   {
+    "label": "D",
+    "text": "3√3"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "hard",
+  "explanation": "等边三角形的高为 6×√3÷2=3√3，内心与重心重合，把这条高按 1∶2 分成两段，较短的一段就是内切圆半径，为高的三分之一，即 √3。选 2√3 是把外接圆半径当成了内切圆半径，选 3√3 则是把整条高直接当作半径。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "2√3"
+   },
+   {
+    "label": "B",
+    "text": "√3"
+   },
+   {
+    "label": "C",
+    "text": "3"
+   },
+   {
+    "label": "D",
+    "text": "3√3"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1283_q6",
+  "topicId": "mat_p1283",
+  "prompt": "正十二边形的每个中心角是多少度？每个内角是多少度？请说明计算依据。",
+  "question": "正十二边形的每个中心角是多少度？每个内角是多少度？请说明计算依据。",
+  "options": [],
+  "answer": "中心角是 30°，内角是 150°。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "把圆周十二等分后顺次连接各分点就得到正十二边形，每一份圆心角就是它的中心角，所以中心角为 360°÷12=30°。正多边形的中心角与每个内角互补，故内角为 180°−30°=150°，用内角和 (12−2)×180°÷12 也能得到同一结果。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "正 n 边形的中心角等于 360°/n，正十二边形的中心角为 360°÷12=30°",
+   "正多边形的中心角与每个内角互补，内角为 180°−30°=150°",
+   "用内角和公式 (12−2)×180°÷12=150° 可以验证结果"
+  ]
+ },
+ {
+  "id": "mat_p1283_q7",
+  "topicId": "mat_p1283",
+  "prompt": "半径为 4 的圆内接正三角形的边心距是（　）",
+  "question": "半径为 4 的圆内接正三角形的边心距是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "4"
+   },
+   {
+    "label": "B",
+    "text": "2√3"
+   },
+   {
+    "label": "C",
+    "text": "2"
+   },
+   {
+    "label": "D",
+    "text": "√3"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "正三角形的中心把它的高分成 1∶2 的两段，边心距是较短的一段，等于外接圆半径的一半，即 4÷2=2。选 2√3 是算了边长的一半（边长为 4√3），选 4 则是把半径直接当成了边心距。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "4"
+   },
+   {
+    "label": "B",
+    "text": "2√3"
+   },
+   {
+    "label": "C",
+    "text": "2"
+   },
+   {
+    "label": "D",
+    "text": "√3"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1283_q8",
+  "topicId": "mat_p1283",
+  "prompt": "半径为 6 的圆内接正六边形的面积是____。",
+  "question": "半径为 6 的圆内接正六边形的面积是____。",
+  "options": [],
+  "answer": "54√3",
+  "type": "fill",
+  "difficulty": "hard",
+  "explanation": "圆内接正六边形的边长等于半径 6，连接中心和六个顶点可把它分成 6 个边长 6 的等边三角形。边长 6 的等边三角形面积为 √3/4×6²=9√3，六块合计 54√3。漏乘 6 只得到 9√3，把边心距错当成 6 也会使结果偏大。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1284_q6",
+  "topicId": "mat_p1284",
+  "prompt": "在 △ABC 的边 AB 上取两个不同的点 D、E（都不与 A、B 重合），分别连接 CD、CE，图中一共可以数出多少个三角形？",
+  "question": "在 △ABC 的边 AB 上取两个不同的点 D、E（都不与 A、B 重合），分别连接 CD、CE，图中一共可以数出多少个三角形？",
+  "options": [],
+  "answer": "6",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "图中的每个三角形都以 C 为一个顶点，另外两个顶点都取自直线 AB 上的 A、D、E、B 四个点，从 4 个点中任取 2 个共 4×3÷2=6 种，所以共有 6 个三角形。只数 △ACD、△DCE、△ECB 这类相邻组合，会漏掉 △ACE、△ACB 这样的组合。",
+  "subject": "math",
+  "choices": [],
+  "verify": "4*3/2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1284_q7",
+  "topicId": "mat_p1284",
+  "prompt": "一个三角形的三条边长分别为 3、3、4，则这个三角形是（　）",
+  "question": "一个三角形的三条边长分别为 3、3、4，则这个三角形是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "三边都不相等的三角形"
+   },
+   {
+    "label": "B",
+    "text": "等腰三角形"
+   },
+   {
+    "label": "C",
+    "text": "等边三角形"
+   },
+   {
+    "label": "D",
+    "text": "不能构成三角形"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "三条边中有两条边相等（3=3），第三条边与它们不等，由定义这样的三角形是等腰三角形。它不是等边三角形，因为等边三角形要求三边都相等；同时 3+3>4，说明这三条线段确实能构成三角形。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "三边都不相等的三角形"
+   },
+   {
+    "label": "B",
+    "text": "等腰三角形"
+   },
+   {
+    "label": "C",
+    "text": "等边三角形"
+   },
+   {
+    "label": "D",
+    "text": "不能构成三角形"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_p1284_q8",
+  "topicId": "mat_p1284",
+  "prompt": "△ABC 的三边长分别为 a、b、c，且满足 (a−b)²+(b−c)²=0。判断 △ABC 的形状并说明理由；若 △ABC 的周长为 18，求它的边长。",
+  "question": "△ABC 的三边长分别为 a、b、c，且满足 (a−b)²+(b−c)²=0。判断 △ABC 的形状并说明理由；若 △ABC 的周长为 18，求它的边长。",
+  "options": [],
+  "answer": "△ABC 是等边三角形，边长为 6。",
+  "type": "short-answer",
+  "difficulty": "hard",
+  "explanation": "平方数总是非负的，(a−b)² 与 (b−c)² 的和为 0，只能两项同时为 0，所以 a=b 且 b=c，从而三边都相等，△ABC 是等边三角形，而等边三角形是特殊的等腰三角形。周长 18 且三边相等，每边长 18÷3=6，三边为 6、6、6，满足任意两边之和大于第三边。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "(a−b)² 与 (b−c)² 都是非负数，和为 0 只能各自为 0，故 a=b 且 b=c",
+   "三边都相等，所以 △ABC 是等边三角形，等边三角形是特殊的等腰三角形",
+   "周长为 18 且三边相等，每边长为 18÷3=6，三边为 6、6、6"
+  ]
+ }
+]

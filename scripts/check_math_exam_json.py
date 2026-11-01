@@ -123,6 +123,12 @@ def main():
 
     # 题库题干（原创性）
     bank = [norm(q.get("prompt")) for q in json.load(open(f"{D}/questions.json", encoding="utf-8"))]
+    # 3-gram 倒排索引：先把候选压到「与该题干共享 ≥50% 三元组」的题库题，再跑 difflib。
+    # 短题干（<12 字）不做预筛，逐条比对（本身很便宜），避免漏判。
+    _idx = {}
+    for _i, _b in enumerate(bank):
+        for _k in range(max(1, len(_b) - 2)):
+            _idx.setdefault(_b[_k:_k + 3], []).append(_i)
 
     used = Counter()
     for s in secs:
@@ -181,8 +187,27 @@ def main():
                     # 后面任何 ex.get(...) 都会抛 UnboundLocalError（写手已被这个坑误导过一次）
                     E(f"第 {no} 题 verify 不可求值：{_err}")
             ns = norm(stem)
-            for b in bank:
-                if b and difflib.SequenceMatcher(None, ns, b).ratio() > 0.85:
+            # 长度上界预筛：SequenceMatcher 的相似度上界是 2*min/(len1+len2)，
+            # 上界都 ≤0.85 的不可能超标，直接跳过（判据等价，题库 6807 条时快一个数量级）
+            n = len(ns)
+            if n >= 12:
+                grams = {ns[_k:_k + 3] for _k in range(max(1, n - 2))}
+                cnt = {}
+                for g in grams:
+                    for i2 in _idx.get(g, ()):
+                        cnt[i2] = cnt.get(i2, 0) + 1
+                need = 0.5 * len(grams)
+                cand = [i2 for i2, c in cnt.items() if c >= need]
+            else:
+                cand = range(len(bank))
+            for i2 in cand:
+                b = bank[i2]
+                if not b:
+                    continue
+                lb = len(b)
+                if 2.0 * min(n, lb) / (n + lb) <= 0.85:
+                    continue
+                if difflib.SequenceMatcher(None, ns, b).ratio() > 0.85:
                     E(f"第 {no} 题与题库题干相似度过高（>0.85）")
                     break
 

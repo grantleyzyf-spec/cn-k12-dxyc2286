@@ -1,0 +1,884 @@
+[
+ {
+  "id": "mat_h303_q6",
+  "topicId": "mat_h303",
+  "prompt": "已知集合 M={−3,−1,2,4}，N={−1,0,2,5}，则 M∩N 等于（　）",
+  "question": "已知集合 M={−3,−1,2,4}，N={−1,0,2,5}，则 M∩N 等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "{−3,−1,0,2,4,5}"
+   },
+   {
+    "label": "B",
+    "text": "{−1,2}"
+   },
+   {
+    "label": "C",
+    "text": "{0,4}"
+   },
+   {
+    "label": "D",
+    "text": "{−1,0,2}"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "交集由同时属于 M 和 N 的元素组成。逐个比对：−3 只在 M 中，0 和 5 只在 N 中，公共元素只有 −1 和 2，所以 M∩N={−1,2}。选项 A 把两个集合的元素全部合并，那是并集而不是交集，是本题最常见的混淆。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "{−3,−1,0,2,4,5}"
+   },
+   {
+    "label": "B",
+    "text": "{−1,2}"
+   },
+   {
+    "label": "C",
+    "text": "{0,4}"
+   },
+   {
+    "label": "D",
+    "text": "{−1,0,2}"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h303_q7",
+  "topicId": "mat_h303",
+  "prompt": "已知集合 A={1,3,5}，B={2,3,6}，则 A∪B= ____。",
+  "question": "已知集合 A={1,3,5}，B={2,3,6}，则 A∪B= ____。",
+  "options": [],
+  "answer": "{1,2,3,5,6}",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "并集是把属于 A 或属于 B 的元素全部收进来，重复的元素只写一次。3 在两个集合中都出现但只记一个，所以 A∪B={1,2,3,5,6}。把 3 写两遍是违背集合元素互异性，漏掉某个只出现一次的元素则说明没有逐项检查。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h303_q8",
+  "topicId": "mat_h303",
+  "prompt": "已知集合 A={x∈Z | −2≤x<3}，B={x∈Z | 0<x≤4}，则 A∪B 中元素的个数是 ____。",
+  "question": "已知集合 A={x∈Z | −2≤x<3}，B={x∈Z | 0<x≤4}，则 A∪B 中元素的个数是 ____。",
+  "options": [],
+  "answer": 7,
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "先用列举法写出两个集合：A={−2,−1,0,1,2}，B={1,2,3,4}，公共元素是 1 和 2 共 2 个。按 |A∪B|=|A|+|B|−|A∩B| 计算得 5+4−2=7，直接列举 {−2,−1,0,1,2,3,4} 也是 7 个，两种方法互相印证。",
+  "subject": "math",
+  "choices": [],
+  "verify": "5+4-2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h304_q6",
+  "topicId": "mat_h304",
+  "prompt": "设全集 U={x∈N | x≤6}，A={1,3,5}，则 ∁UA 等于（　）",
+  "question": "设全集 U={x∈N | x≤6}，A={1,3,5}，则 ∁UA 等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "{2,4,6}"
+   },
+   {
+    "label": "B",
+    "text": "{0,2,4}"
+   },
+   {
+    "label": "C",
+    "text": "{0,1,2,4,6}"
+   },
+   {
+    "label": "D",
+    "text": "{0,2,4,6}"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "补集是全集 U 中所有不属于 A 的元素。U 是从 0 到 6 的七个自然数，从中去掉 1、3、5 后剩下 0、2、4、6，所以 ∁UA={0,2,4,6}。最易错的是漏掉 0：0 是自然数、确实在 U 中，且不属于 A，必须保留。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "{2,4,6}"
+   },
+   {
+    "label": "B",
+    "text": "{0,2,4}"
+   },
+   {
+    "label": "C",
+    "text": "{0,1,2,4,6}"
+   },
+   {
+    "label": "D",
+    "text": "{0,2,4,6}"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h304_q7",
+  "topicId": "mat_h304",
+  "prompt": "设全集 U={1,2,3,4,5}，A={1,3,5}，B={2,3,5}，写出 ∁U(A∩B)，并判断它与 (∁UA)∪(∁UB) 是否相等。",
+  "question": "设全集 U={1,2,3,4,5}，A={1,3,5}，B={2,3,5}，写出 ∁U(A∩B)，并判断它与 (∁UA)∪(∁UB) 是否相等。",
+  "options": [],
+  "answer": "∁U(A∩B)={1,2,4}，它与 (∁UA)∪(∁UB) 相等。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "A∩B 是同时属于 A、B 的元素 3 和 5，从全集 U 中去掉这两个数剩下 1、2、4，故 ∁U(A∩B)={1,2,4}；另一方面 ∁UA={2,4}，∁UB={1,4}，取并集仍为 {1,2,4}。两者相等，正说明「交的补等于补的并」，在 Venn 图上就是两块补集阴影拼成同一块区域。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "先求 A∩B={3,5}，再从 U={1,2,3,4,5} 中排除 3、5，得 ∁U(A∩B)={1,2,4}",
+   "∁UA={2,4}，∁UB={1,4}，二者取并集得 (∁UA)∪(∁UB)={1,2,4}",
+   "两个结果相同，符合「A∩B 的补集等于两补集的并集」这一规律"
+  ]
+ },
+ {
+  "id": "mat_h304_q8",
+  "topicId": "mat_h304",
+  "prompt": "设全集 U={1,2,3,4,5,6,7,8,9}，A={1,2,3,4}，B={3,4,5,6}，则 ∁U(A∪B) 等于（　）",
+  "question": "设全集 U={1,2,3,4,5,6,7,8,9}，A={1,2,3,4}，B={3,4,5,6}，则 ∁U(A∪B) 等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "{1,2,5,6}"
+   },
+   {
+    "label": "B",
+    "text": "{7,8}"
+   },
+   {
+    "label": "C",
+    "text": "{7,8,9}"
+   },
+   {
+    "label": "D",
+    "text": "{5,6,7,8,9}"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "先求并集 A∪B={1,2,3,4,5,6}，再从 U 中去掉这六个元素，剩下 {7,8,9}。选项 A 只把两边各自独有的元素拼起来，位置判断错了；选项 B 漏掉 9，说明没有把全集中的每个元素都检查一遍。也可用「并的补等于补的交」即 ∁UA∩∁UB={7,8,9}∩{1,2,7,8,9} 复算，结果一致。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "{1,2,5,6}"
+   },
+   {
+    "label": "B",
+    "text": "{7,8}"
+   },
+   {
+    "label": "C",
+    "text": "{7,8,9}"
+   },
+   {
+    "label": "D",
+    "text": "{5,6,7,8,9}"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h305_q6",
+  "topicId": "mat_h305",
+  "prompt": "在实数范围内，“a>1 且 b>1”是“ab>1”的 ____ 条件（填“充分不必要”“必要不充分”“充要”或“既不充分也不必要”）。",
+  "question": "在实数范围内，“a>1 且 b>1”是“ab>1”的 ____ 条件（填“充分不必要”“必要不充分”“充要”或“既不充分也不必要”）。",
+  "options": [],
+  "answer": "充分不必要",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "当 a>1、b>1 时两个大于 1 的数相乘必大于 1，所以充分性成立；反过来 ab>1 推不出 a、b 都大于 1，例如 a=b=−2 时 ab=4>1，但两个数都是负数，必要性不成立。因此是充分不必要条件，关键在于检验反向时不能只试正数。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h305_q7",
+  "topicId": "mat_h305",
+  "prompt": "已知集合 C={x | x>m}，D={x | x>3}，若“x∈C”是“x∈D”的必要条件，则实数 m 的最大值为 ____。",
+  "question": "已知集合 C={x | x>m}，D={x | x>3}，若“x∈C”是“x∈D”的必要条件，则实数 m 的最大值为 ____。",
+  "options": [],
+  "answer": 3,
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "“x∈C 是 x∈D 的必要条件”意味着由 x∈D 可推出 x∈C，即 D⊆C。区间 (3,+∞) 要整体落在 (m,+∞) 内，必须满足 m≤3，所以 m 的最大值是 3。若取 m=4，则 x=3.5 属于 D 却不属于 C，必要条件立刻被推翻。",
+  "subject": "math",
+  "choices": [],
+  "verify": "6/2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h305_q8",
+  "topicId": "mat_h305",
+  "prompt": "设 a、b 为实数，则“ab>0”是“a>0 且 b>0”的（　）",
+  "question": "设 a、b 为实数，则“ab>0”是“a>0 且 b>0”的（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "充分不必要条件"
+   },
+   {
+    "label": "B",
+    "text": "必要不充分条件"
+   },
+   {
+    "label": "C",
+    "text": "充要条件"
+   },
+   {
+    "label": "D",
+    "text": "既不充分也不必要条件"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "由 a>0 且 b>0 一定能得到 ab>0，所以 ab>0 是必要条件；但 ab>0 只说明 a、b 同号，取 a=b=−1 得 ab=1>0 而两者都是负数，“a>0 且 b>0”不成立，充分性被反例否定。故为必要不充分条件。把同负的情形漏掉，就会误判成充要条件。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "充分不必要条件"
+   },
+   {
+    "label": "B",
+    "text": "必要不充分条件"
+   },
+   {
+    "label": "C",
+    "text": "充要条件"
+   },
+   {
+    "label": "D",
+    "text": "既不充分也不必要条件"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h306_q6",
+  "topicId": "mat_h306",
+  "prompt": "判断“x>1”是“x²>1”的什么条件，并写出一个反例说明你的判断。",
+  "question": "判断“x>1”是“x²>1”的什么条件，并写出一个反例说明你的判断。",
+  "options": [],
+  "answer": "“x>1”是“x²>1”的充分不必要条件，反例取 x=−2。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "由 x>1 可推出 x²>1，充分性成立；反过来 x²>1 只说明 |x|>1，x 还可能在 −1 的左侧，取 x=−2 时 x²=4>1 却不满足 x>1，反例否定了必要性。所以是充分不必要条件。这与举反例否定推出关系的通用做法一致：只要找到一个满足前件而不满足后件的对象，该推出关系就不成立。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "x>1 时两边平方得 x²>1，充分性成立",
+   "取 x=−2，此时 x²=4>1 但 x>1 不成立，必要性不成立",
+   "结论：“x>1”是“x²>1”的充分不必要条件"
+  ]
+ },
+ {
+  "id": "mat_h306_q7",
+  "topicId": "mat_h306",
+  "prompt": "在四边形中，“四边形 ABCD 是正方形”是“四边形 ABCD 是矩形”的（　）",
+  "question": "在四边形中，“四边形 ABCD 是正方形”是“四边形 ABCD 是矩形”的（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "充分不必要条件"
+   },
+   {
+    "label": "B",
+    "text": "必要不充分条件"
+   },
+   {
+    "label": "C",
+    "text": "充要条件"
+   },
+   {
+    "label": "D",
+    "text": "既不充分也不必要条件"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "正方形是四个角都是直角的特殊矩形，所以“是正方形”必然推出“是矩形”，充分性成立；反过来矩形不一定是正方形，例如长 3、宽 2 的矩形四角是直角但邻边不等，必要性不成立。因此是充分不必要条件。把正方形与矩形当成等价关系，是忽略了邻边相等这一附加条件。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "充分不必要条件"
+   },
+   {
+    "label": "B",
+    "text": "必要不充分条件"
+   },
+   {
+    "label": "C",
+    "text": "充要条件"
+   },
+   {
+    "label": "D",
+    "text": "既不充分也不必要条件"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h306_q8",
+  "topicId": "mat_h306",
+  "prompt": "已知 p：x>0，q：x>1。要说明“p 是 q 的充分条件”不成立，只需举出一个满足 p 而不满足 q 的实数，例如 x= ____（写出一个即可）。",
+  "question": "已知 p：x>0，q：x>1。要说明“p 是 q 的充分条件”不成立，只需举出一个满足 p 而不满足 q 的实数，例如 x= ____（写出一个即可）。",
+  "options": [],
+  "answer": "1/2",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "“p 是 q 的充分条件”要求所有满足 p 的 x 都满足 q，否定它只需一个反例：取满足 0<x≤1 的任意实数，如 x=1/2，它满足 x>0 却不满足 x>1，充分性即被推翻。注意反方向“q 是 p 的充分条件”是成立的，因为 x>1 必有 x>0，两个方向不能混为一谈。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h307_q6",
+  "topicId": "mat_h307",
+  "prompt": "若“a=1 且 b=2”是“a+b=m 且 ab=n”的充要条件，则 m+n 的值为 ____。",
+  "question": "若“a=1 且 b=2”是“a+b=m 且 ab=n”的充要条件，则 m+n 的值为 ____。",
+  "options": [],
+  "answer": 5,
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "充要条件意味着两个命题可以互推：由 a=1、b=2 必须能推出 a+b=m 且 ab=n，于是 m=1+2=3、n=1×2=2；反过来这两组值也能推出 a=1、b=2。所以 m+n=3+2=5。若把 m 取成 2 之类的数，则 a=1、b=2 时 a+b=3≠2，互推关系立即破坏。",
+  "subject": "math",
+  "choices": [],
+  "verify": "3+2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h307_q7",
+  "topicId": "mat_h307",
+  "prompt": "设 a≠0，则“关于 x 的方程 ax²+bx+c=0 有两个不相等的实根”是“b²−4ac>0”的（　）",
+  "question": "设 a≠0，则“关于 x 的方程 ax²+bx+c=0 有两个不相等的实根”是“b²−4ac>0”的（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "充分不必要条件"
+   },
+   {
+    "label": "B",
+    "text": "必要不充分条件"
+   },
+   {
+    "label": "C",
+    "text": "充要条件"
+   },
+   {
+    "label": "D",
+    "text": "既不充分也不必要条件"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "二次方程实根的个数完全由判别式决定：b²−4ac>0 时方程有两个不相等的实根，反过来有两个不相等实根时判别式必然大于 0，两个方向的推出都成立，所以互为充要条件。前提 a≠0 不能省略，否则方程不是二次方程，判别式也就不再刻画根的个数。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "充分不必要条件"
+   },
+   {
+    "label": "B",
+    "text": "必要不充分条件"
+   },
+   {
+    "label": "C",
+    "text": "充要条件"
+   },
+   {
+    "label": "D",
+    "text": "既不充分也不必要条件"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h307_q8",
+  "topicId": "mat_h307",
+  "prompt": "证明：“四边形 ABCD 的对角线互相垂直平分”的充要条件是“四边形 ABCD 是菱形”。",
+  "question": "证明：“四边形 ABCD 的对角线互相垂直平分”的充要条件是“四边形 ABCD 是菱形”。",
+  "options": [],
+  "answer": "必要性、充分性两个方向都成立，故二者互为充要条件。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "证明充要条件必须分两个方向书写。必要性：菱形是特殊的平行四边形，其对角线互相平分，且由四边相等可证两条对角线互相垂直。充分性：对角线互相平分说明四边形是平行四边形，再加上对角线垂直，用勾股定理可推出两组邻边相等，于是这个平行四边形是菱形。两个方向都成立，命题得证。只证一个方向就下结论是本题的典型失分点。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "必要性：菱形是平行四边形，对角线互相平分；由四边相等可证对角线互相垂直",
+   "充分性：对角线互相平分得平行四边形，再由对角线垂直用勾股定理推出邻边相等，即为菱形",
+   "两个方向的推出关系都成立，所以“对角线互相垂直平分”是“四边形是菱形”的充要条件"
+  ]
+ },
+ {
+  "id": "mat_h308_q6",
+  "topicId": "mat_h308",
+  "prompt": "下列命题中，不是全称量词命题的是（　）",
+  "question": "下列命题中，不是全称量词命题的是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "所有的正方形都是矩形"
+   },
+   {
+    "label": "B",
+    "text": "每一个有理数都能写成分数"
+   },
+   {
+    "label": "C",
+    "text": "对任意实数 x，都有 x²+1>0"
+   },
+   {
+    "label": "D",
+    "text": "存在一个整数 x，使 x²=2"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "全称量词命题要对全部对象下判断，标志词是“所有”“每一个”“任意”。A、B、C 分别用“所有的”“每一个”“任意”，都是全称量词命题；D 用“存在一个”，只断言有对象满足，属于存在量词命题，因此选 D。判断类型只看量词，不必先辨真假。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "所有的正方形都是矩形"
+   },
+   {
+    "label": "B",
+    "text": "每一个有理数都能写成分数"
+   },
+   {
+    "label": "C",
+    "text": "对任意实数 x，都有 x²+1>0"
+   },
+   {
+    "label": "D",
+    "text": "存在一个整数 x，使 x²=2"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h308_q7",
+  "topicId": "mat_h308",
+  "prompt": "把“每一个有理数的平方都是非负数”写成含全称量词符号的命题：____。",
+  "question": "把“每一个有理数的平方都是非负数”写成含全称量词符号的命题：____。",
+  "options": [],
+  "answer": "∀x∈Q，x²≥0",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "“每一个”对应全称量词符号 ∀，对象范围是有理数集 Q，结论是平方非负即 x²≥0，所以写成 ∀x∈Q，x²≥0。漏写范围 ∈Q 会丢掉限定，把 ∀ 写成 ∃ 则含义变成“存在”，与原命题不再等价，两种都是常见错误。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h308_q8",
+  "topicId": "mat_h308",
+  "prompt": "已知命题“∀x∈{−1,0,1,2}，x²−2x+m>0”是真命题，则整数 m 的最小值为 ____。",
+  "question": "已知命题“∀x∈{−1,0,1,2}，x²−2x+m>0”是真命题，则整数 m 的最小值为 ____。",
+  "options": [],
+  "answer": 2,
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "全称量词命题为真，意味着 m 要大于 x²−2x 在集合中取得的每一个值。分别代入 x=−1、0、1、2，x²−2x 的值为 3、0、−1、0，最小的是 −1。于是需 −1+m>0，即 m>1，整数 m 的最小值为 2。若取 m=1，则 x=1 时 x²−2x+m=0，不满足严格大于 0。",
+  "subject": "math",
+  "choices": [],
+  "verify": "4/2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h309_q6",
+  "topicId": "mat_h309",
+  "prompt": "下列命题中，使用了全称量词的是（　）",
+  "question": "下列命题中，使用了全称量词的是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "存在实数 x，使 x²=x"
+   },
+   {
+    "label": "B",
+    "text": "有些自然数是质数"
+   },
+   {
+    "label": "C",
+    "text": "任意一个偶数的平方都是 4 的倍数"
+   },
+   {
+    "label": "D",
+    "text": "至少有一个整数比它的倒数小"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "全称量词的常用表述是“任意”“所有”“每一个”，C 中的“任意一个”正是全称量词，它对全部偶数作判断。A 的“存在”、B 的“有些”、D 的“至少有一个”都表示存在量词。判断时要抓住这些标志词，再看它是否对全部对象下判断。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "存在实数 x，使 x²=x"
+   },
+   {
+    "label": "B",
+    "text": "有些自然数是质数"
+   },
+   {
+    "label": "C",
+    "text": "任意一个偶数的平方都是 4 的倍数"
+   },
+   {
+    "label": "D",
+    "text": "至少有一个整数比它的倒数小"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h309_q7",
+  "topicId": "mat_h309",
+  "prompt": "判断命题“∃x∈R，x²+2x+3=0”的真假，并说明判断理由。",
+  "question": "判断命题“∃x∈R，x²+2x+3=0”的真假，并说明判断理由。",
+  "options": [],
+  "answer": "假命题，不存在这样的实数 x。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "把左边配方得 x²+2x+3=(x+1)²+2，由于 (x+1)²≥0，整个式子恒大于等于 2，不可能等于 0，所以找不到满足条件的实数 x，命题为假。也可以用判别式 Δ=2²−4×3=−8<0 说明方程无实根，两种方法结论一致，相互印证。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "配方得 x²+2x+3=(x+1)²+2，对任意实数都大于 0",
+   "或由判别式 Δ=4−12=−8<0，方程无实根",
+   "所以不存在这样的实数 x，该存在量词命题为假"
+  ]
+ },
+ {
+  "id": "mat_h309_q8",
+  "topicId": "mat_h309",
+  "prompt": "若命题“∃x∈{1,2,3}，x²−ax+2<0”是真命题，则实数 a 的取值范围是（　）",
+  "question": "若命题“∃x∈{1,2,3}，x²−ax+2<0”是真命题，则实数 a 的取值范围是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "a>3"
+   },
+   {
+    "label": "B",
+    "text": "a≥3"
+   },
+   {
+    "label": "C",
+    "text": "a<3"
+   },
+   {
+    "label": "D",
+    "text": "a≤3"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "存在量词命题为真，只要集合中有一个 x 使不等式成立即可。分别代入：x=1 得 3−a<0 即 a>3；x=2 得 6−2a<0 即 a>3；x=3 得 11−3a<0 即 a>11/3。三者取并集仍是 a>3，且 a>3 时取 x=1 就能成立；而 a≤3 时三个 x 算出的值分别为 3−a、6−2a、11−3a，全都不小于 0，命题为假。所以 a>3。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "a>3"
+   },
+   {
+    "label": "B",
+    "text": "a≥3"
+   },
+   {
+    "label": "C",
+    "text": "a<3"
+   },
+   {
+    "label": "D",
+    "text": "a≤3"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h310_q6",
+  "topicId": "mat_h310",
+  "prompt": "命题“∀x∈R，2x+1>0”的否定是 ____。",
+  "question": "命题“∀x∈R，2x+1>0”的否定是 ____。",
+  "options": [],
+  "answer": "∃x∈R，2x+1≤0",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "全称量词命题的否定按“改量词、否结论”操作：把 ∀ 改成 ∃，把结论 2x+1>0 换成它的否定 2x+1≤0，范围 x∈R 保持不变，所以否定是 ∃x∈R，2x+1≤0。只改量词而不否结论，或把 ≤ 写成 <，都是常见错误。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h310_q7",
+  "topicId": "mat_h310",
+  "prompt": "命题 p：“∀x∈R，x²+1>0”，则使 p 的否定成立的实数 x 的个数是 ____。",
+  "question": "命题 p：“∀x∈R，x²+1>0”，则使 p 的否定成立的实数 x 的个数是 ____。",
+  "options": [],
+  "answer": 0,
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "p 的否定是“∃x∈R，x²+1≤0”。因为 x²≥0，所以 x²+1≥1>0 恒成立，任何实数都不能使 x²+1≤0，故这样的 x 有 0 个。这也说明原命题 p 为真、其否定为假，正好符合“原命题与其否定真假相反”。",
+  "subject": "math",
+  "choices": [],
+  "verify": "1-1",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h310_q8",
+  "topicId": "mat_h310",
+  "prompt": "命题 p：“∃x∈{0,1,2,3}，x²−3x+2<0”的否定记为 q，则下列说法正确的是（　）",
+  "question": "命题 p：“∃x∈{0,1,2,3}，x²−3x+2<0”的否定记为 q，则下列说法正确的是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "q 是“∀x∈{0,1,2,3}，x²−3x+2≥0”，且 q 为真命题"
+   },
+   {
+    "label": "B",
+    "text": "q 是“∃x∈{0,1,2,3}，x²−3x+2≥0”，且 q 为真命题"
+   },
+   {
+    "label": "C",
+    "text": "q 是“∀x∈{0,1,2,3}，x²−3x+2≥0”，且 q 为假命题"
+   },
+   {
+    "label": "D",
+    "text": "q 是“∀x∈{0,1,2,3}，x²−3x+2<0”，且 q 为真命题"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "存在量词命题的否定要“改量词、否结论”：把 ∃ 改为 ∀，把 <0 改为 ≥0，得 q 是“∀x∈{0,1,2,3}，x²−3x+2≥0”。把 x=0、1、2、3 分别代入，式子值为 2、0、0、2，都不小于 0，所以 q 是真命题。原命题 p 因为找不到使式子小于 0 的 x 而本来就假，其否定为真，与真假相反一致。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "q 是“∀x∈{0,1,2,3}，x²−3x+2≥0”，且 q 为真命题"
+   },
+   {
+    "label": "B",
+    "text": "q 是“∃x∈{0,1,2,3}，x²−3x+2≥0”，且 q 为真命题"
+   },
+   {
+    "label": "C",
+    "text": "q 是“∀x∈{0,1,2,3}，x²−3x+2≥0”，且 q 为假命题"
+   },
+   {
+    "label": "D",
+    "text": "q 是“∀x∈{0,1,2,3}，x²−3x+2<0”，且 q 为真命题"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h311_q6",
+  "topicId": "mat_h311",
+  "prompt": "判断“若 a>b，则 1/a<1/b”是否正确，若不正确请举出反例。",
+  "question": "判断“若 a>b，则 1/a<1/b”是否正确，若不正确请举出反例。",
+  "options": [],
+  "answer": "不正确，反例取 a=1、b=−1。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "不等式两边同时取倒数要求 a、b 同号，否则不等号方向会因符号不同而改变。取 a=1、b=−1，满足 a>b，而 1/a=1、1/b=−1，得到 1>−1，与原结论相反，所以该命题不正确。只有当 a>b>0 或 0>a>b 时才有 1/a<1/b，使用性质前必须先核对条件。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "取倒数比较大小需要 a、b 同号，题干没有给出这个前提",
+   "取 a=1、b=−1，满足 a>b，但 1/a=1 大于 1/b=−1",
+   "结论：命题不正确；当 a>b>0 或 0>a>b 时才成立"
+  ]
+ },
+ {
+  "id": "mat_h311_q7",
+  "topicId": "mat_h311",
+  "prompt": "若 a<b<0，则下列不等式一定成立的是（　）",
+  "question": "若 a<b<0，则下列不等式一定成立的是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "1/a<1/b"
+   },
+   {
+    "label": "B",
+    "text": "a²<b²"
+   },
+   {
+    "label": "C",
+    "text": "a+b<2b"
+   },
+   {
+    "label": "D",
+    "text": "ab<0"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "由 a<b 两边同加 b 得 a+b<2b，所以 C 恒成立。A 中同号取倒数后不等号要反向，正确结论是 1/a>1/b；B 中两边平方后不等号也要反向，应为 a²>b²；D 中两个负数相乘得正数，ab>0。取 a=−2、b=−1 逐一检验，A、B、D 都立刻不成立。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "1/a<1/b"
+   },
+   {
+    "label": "B",
+    "text": "a²<b²"
+   },
+   {
+    "label": "C",
+    "text": "a+b<2b"
+   },
+   {
+    "label": "D",
+    "text": "ab<0"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h311_q8",
+  "topicId": "mat_h311",
+  "prompt": "已知 −2<a<3，1<b<4，则 a−b 的取值范围是 ____。",
+  "question": "已知 −2<a<3，1<b<4，则 a−b 的取值范围是 ____。",
+  "options": [],
+  "answer": "−6<a−b<2",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "把 a−b 看成 a+(−b)。由 1<b<4 两边同乘 −1（不等号反向）得 −4<−b<−1，再与 −2<a<3 同向相加：−2+(−4)<a−b<3+(−1)，即 −6<a−b<2。两个端点都取不到，因为 a、b 各自都取不到端点值，写成闭区间是典型错误。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h312_q6",
+  "topicId": "mat_h312",
+  "prompt": "若 a>0，b>0，且 ab=9，则 a+b 的最小值为 ____。",
+  "question": "若 a>0，b>0，且 ab=9，则 a+b 的最小值为 ____。",
+  "options": [],
+  "answer": 6,
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "由基本不等式 a+b≥2√(ab)=2√9=6，当且仅当 a=b=3 时取等号，所以最小值是 6。这里积为定值、和取最小值，符合“一正、二定、三相等”的使用条件；若不等号方向记反，会错算成没有最小值。",
+  "subject": "math",
+  "choices": [],
+  "verify": "2*3",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h312_q7",
+  "topicId": "mat_h312",
+  "prompt": "用基本不等式求 y=x(6−x)（0<x<6）的最大值时，等号成立的条件是（　）",
+  "question": "用基本不等式求 y=x(6−x)（0<x<6）的最大值时，等号成立的条件是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "x=0"
+   },
+   {
+    "label": "B",
+    "text": "x=3"
+   },
+   {
+    "label": "C",
+    "text": "x=6"
+   },
+   {
+    "label": "D",
+    "text": "x=2"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "x 与 6−x 都是正数且和为定值 6，由 xy≤((x+y)/2)² 得 y≤9，当且仅当 x=6−x 即 x=3 时取等号，此时最大值为 9。取 x=0 或 x=6 时乘积为 0，那是端点值也不是最大点，更不满足“两项相等”的取等条件；x=2 时两项是 2 与 4，不相等。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "x=0"
+   },
+   {
+    "label": "B",
+    "text": "x=3"
+   },
+   {
+    "label": "C",
+    "text": "x=6"
+   },
+   {
+    "label": "D",
+    "text": "x=2"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h312_q8",
+  "topicId": "mat_h312",
+  "prompt": "已知 a>0，b>0，用基本不等式证明 (a+b)(1/a+1/b)≥4，并指出等号成立的条件。",
+  "question": "已知 a>0，b>0，用基本不等式证明 (a+b)(1/a+1/b)≥4，并指出等号成立的条件。",
+  "options": [],
+  "answer": "证明成立，当且仅当 a=b 时取等号。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "把括号展开：(a+b)(1/a+1/b)=1+a/b+b/a+1=2+a/b+b/a。因为 a>0、b>0，所以 a/b 与 b/a 都是正数且乘积为 1，由基本不等式 a/b+b/a≥2√((a/b)(b/a))=2。于是原式≥2+2=4。取等条件是 a/b=b/a，即 a=b，此时两项都等于 1，说明 4 确实能取到，最小值就是 4。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "展开得 (a+b)(1/a+1/b)=2+a/b+b/a",
+   "由基本不等式 a/b+b/a≥2√((a/b)(b/a))=2（a、b 为正数）",
+   "所以原式≥4，当且仅当 a/b=b/a 即 a=b 时取等号"
+  ]
+ }
+]

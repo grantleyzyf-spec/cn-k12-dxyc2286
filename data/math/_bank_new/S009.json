@@ -1,0 +1,884 @@
+[
+ {
+  "id": "mat_h343_q6",
+  "topicId": "mat_h343",
+  "prompt": "若角 α 的终边经过点 P(5,−12)，则 cosα 的值为（　）",
+  "question": "若角 α 的终边经过点 P(5,−12)，则 cosα 的值为（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "5/13"
+   },
+   {
+    "label": "B",
+    "text": "−5/13"
+   },
+   {
+    "label": "C",
+    "text": "12/13"
+   },
+   {
+    "label": "D",
+    "text": "−12/13"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "由定义 cosα=x/r，先求 r=√(5²+(−12)²)=√169=13，所以 cosα=5/13。点 P 的横坐标为正，余弦值应为正，取 −5/13 是把 x 与 y 的位置看反了再把符号带错；12/13 是把 y 直接当成了横坐标。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "5/13"
+   },
+   {
+    "label": "B",
+    "text": "−5/13"
+   },
+   {
+    "label": "C",
+    "text": "12/13"
+   },
+   {
+    "label": "D",
+    "text": "−12/13"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h343_q7",
+  "topicId": "mat_h343",
+  "prompt": "若角 α 的终边与单位圆交于点 (−1/2, √3/2)，则 tanα = ____。",
+  "question": "若角 α 的终边与单位圆交于点 (−1/2, √3/2)，则 tanα = ____。",
+  "options": [],
+  "answer": "−√3",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "单位圆上 r=1，故 tanα=y/x=(√3/2)÷(−1/2)=−√3。此处横坐标为负、纵坐标为正，角在第二象限，正切应为负数；只把两个坐标相除却漏掉负号，就会得到 √3 这个错误结果。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h343_q8",
+  "topicId": "mat_h343",
+  "prompt": "若角 α 的终边经过点 (−3,−4)，则 sinα − cosα 的值是多少？",
+  "question": "若角 α 的终边经过点 (−3,−4)，则 sinα − cosα 的值是多少？",
+  "options": [],
+  "answer": "-0.2",
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "先算 r=√((−3)²+(−4)²)=√25=5，再用定义得 sinα=−4/5，cosα=−3/5。两式相减：−4/5−(−3/5)=−1/5=−0.2。第三象限的正弦、余弦同为负，若把 cosα 写成 3/5，就会得到 −7/5 的错误结果。",
+  "subject": "math",
+  "choices": [],
+  "verify": "-4/5-(-3/5)",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h344_q6",
+  "topicId": "mat_h344",
+  "prompt": "若 cosα = −4/5，且 α 是第三象限角，则 sinα 的值为（　）",
+  "question": "若 cosα = −4/5，且 α 是第三象限角，则 sinα 的值为（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "3/5"
+   },
+   {
+    "label": "B",
+    "text": "−3/5"
+   },
+   {
+    "label": "C",
+    "text": "4/5"
+   },
+   {
+    "label": "D",
+    "text": "−4/5"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "由 sin²α+cos²α=1 得 sin²α=1−16/25=9/25，所以 sinα=±3/5。α 是第三象限角，正弦为负，故 sinα=−3/5。只算出 3/5 是漏掉了象限对符号的约束，选 −4/5 则是把正弦与余弦混为一谈。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "3/5"
+   },
+   {
+    "label": "B",
+    "text": "−3/5"
+   },
+   {
+    "label": "C",
+    "text": "4/5"
+   },
+   {
+    "label": "D",
+    "text": "−4/5"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h344_q7",
+  "topicId": "mat_h344",
+  "prompt": "已知 tanα = −3/4，且 α 是第二象限角，求 sinα 与 cosα 的值。",
+  "question": "已知 tanα = −3/4，且 α 是第二象限角，求 sinα 与 cosα 的值。",
+  "options": [],
+  "answer": "sinα=3/5，cosα=−4/5。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "由 tanα=sinα/cosα=−3/4，可设 sinα=3k，cosα=−4k（k≠0）。代入 sin²α+cos²α=1 得 9k²+16k²=1，即 25k²=1，k=1/5（取正，因为第二象限正弦为正、余弦为负，k 取负会使符号全反）。于是 sinα=3/5，cosα=−4/5。易错点是不按象限设符号，直接写 sinα=3/5、cosα=4/5。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "设 sinα=3k、cosα=−4k，代入平方关系得 25k²=1，k=1/5",
+   "由第二象限正弦为正、余弦为负，得 sinα=3/5、cosα=−4/5",
+   "也可先由 1+tan²α=1/cos²α 求 cos²α=16/25，再按象限定符号"
+  ]
+ },
+ {
+  "id": "mat_h344_q8",
+  "topicId": "mat_h344",
+  "prompt": "已知 sinα + cosα = 1/2，则 sinα·cosα 的值为（　）",
+  "question": "已知 sinα + cosα = 1/2，则 sinα·cosα 的值为（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "3/8"
+   },
+   {
+    "label": "B",
+    "text": "−1/8"
+   },
+   {
+    "label": "C",
+    "text": "−3/8"
+   },
+   {
+    "label": "D",
+    "text": "1/4"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "把 sinα+cosα=1/2 两边平方，得 sin²α+2sinαcosα+cos²α=1/4。由平方关系 sin²α+cos²α=1，得 1+2sinαcosα=1/4，所以 2sinαcosα=−3/4，sinαcosα=−3/8。平方后忘记减去常数 1，就会误得 1/4 或 3/8 这类漏项结果。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "3/8"
+   },
+   {
+    "label": "B",
+    "text": "−1/8"
+   },
+   {
+    "label": "C",
+    "text": "−3/8"
+   },
+   {
+    "label": "D",
+    "text": "1/4"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h345_q6",
+  "topicId": "mat_h345",
+  "prompt": "计算 sin(−π/3) 的值：sin(−π/3) = ____。",
+  "question": "计算 sin(−π/3) 的值：sin(−π/3) = ____。",
+  "options": [],
+  "answer": "−√3/2",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "由诱导公式 sin(−α)=−sinα 得 sin(−π/3)=−sin(π/3)=−√3/2。正弦是奇函数，负角要把负号提到最外层；若误用偶函数的性质直接写成 √3/2，符号就错了。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h345_q7",
+  "topicId": "mat_h345",
+  "prompt": "计算 tan(−π/4) + sin(π/6) 的值是多少？",
+  "question": "计算 tan(−π/4) + sin(π/6) 的值是多少？",
+  "options": [],
+  "answer": "-0.5",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "由 tan(−α)=−tanα 得 tan(−π/4)=−tan(π/4)=−1；又 sin(π/6)=1/2。所以原式=−1+1/2=−0.5。常见错误是把 tan(−π/4) 写成 1，忽略了正切为奇函数这一符号来源。",
+  "subject": "math",
+  "choices": [],
+  "verify": "-1+1/2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h345_q8",
+  "topicId": "mat_h345",
+  "prompt": "已知 sinα = 3/5，且 α ∈ (π/2, π)，则 sin(π/2 + α) 的值为（　）",
+  "question": "已知 sinα = 3/5，且 α ∈ (π/2, π)，则 sin(π/2 + α) 的值为（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "4/5"
+   },
+   {
+    "label": "B",
+    "text": "3/5"
+   },
+   {
+    "label": "C",
+    "text": "−3/5"
+   },
+   {
+    "label": "D",
+    "text": "−4/5"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "由诱导公式 sin(π/2+α)=cosα，问题转化为求 cosα。由平方关系得 cos²α=1−9/25=16/25，α 在第二象限，余弦为负，故 cosα=−4/5。若只记「函数名不变」而漏掉象限符号，会误选 4/5。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "4/5"
+   },
+   {
+    "label": "B",
+    "text": "3/5"
+   },
+   {
+    "label": "C",
+    "text": "−3/5"
+   },
+   {
+    "label": "D",
+    "text": "−4/5"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h346_q6",
+  "topicId": "mat_h346",
+  "prompt": "已知函数 y = cos x，写出它的值域与最小正周期，并求 x = 0 时的函数值。",
+  "question": "已知函数 y = cos x，写出它的值域与最小正周期，并求 x = 0 时的函数值。",
+  "options": [],
+  "answer": "值域为 [−1,1]，最小正周期为 2π，x=0 时 y=1。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "余弦函数在单位圆上的横坐标取值总在 −1 与 1 之间，故值域为 [−1,1]；它的图象每隔 2π 重复一次，所以最小正周期为 2π；x=0 时终边落在单位圆上的点 (1,0)，横坐标即余弦值，故 y=1。把周期写成 π 是把它与正切函数混同了。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "值域为 [−1,1]，因为单位圆上点的横坐标介于 −1 与 1 之间",
+   "最小正周期为 2π，图象每隔 2π 重复出现",
+   "x=0 时余弦值为 1，即图象的最高点 (0,1)"
+  ]
+ },
+ {
+  "id": "mat_h346_q7",
+  "topicId": "mat_h346",
+  "prompt": "函数 y = −cos x 的最大值是（　）",
+  "question": "函数 y = −cos x 的最大值是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "−1"
+   },
+   {
+    "label": "B",
+    "text": "0"
+   },
+   {
+    "label": "C",
+    "text": "1"
+   },
+   {
+    "label": "D",
+    "text": "2"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "cos x 的取值范围是 [−1,1]，乘以 −1 后取值范围仍为 [−1,1]，只是端点互换。当 cos x=−1 时，y=−(−1)=1 取得最大值。误选 −1 是把最大值与最小值记反，以为负号让整个函数只能取负值；选 2 则是把振幅与常数项重复叠加了。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "−1"
+   },
+   {
+    "label": "B",
+    "text": "0"
+   },
+   {
+    "label": "C",
+    "text": "1"
+   },
+   {
+    "label": "D",
+    "text": "2"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h346_q8",
+  "topicId": "mat_h346",
+  "prompt": "若函数 y = a·sin x + b（a>0）的最大值为 5，最小值为 1，则 a = ____。",
+  "question": "若函数 y = a·sin x + b（a>0）的最大值为 5，最小值为 1，则 a = ____。",
+  "options": [],
+  "answer": "2",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "sin x 的最大值为 1、最小值为 −1，故函数最大值为 a+b=5，最小值为 −a+b=1。两式相减得 2a=4，即 a=2（同时 b=3）。若把最值直接当成振幅，会漏掉 b 的影响；若用相加消元，则会先解出 b 而非 a。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h347_q6",
+  "topicId": "mat_h347",
+  "prompt": "函数 y = sin x（x∈[0,2π]）的图象与直线 y = 1/2 共有几个交点？",
+  "question": "函数 y = sin x（x∈[0,2π]）的图象与直线 y = 1/2 共有几个交点？",
+  "options": [],
+  "answer": "2",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "在一个周期 [0,2π] 内，sin x=1/2 的解为 x=π/6 与 x=5π/6，都在区间内，故有 2 个交点。画图可见直线 y=1/2 在图象的上半部分被「穿过」两次；若只写 π/6 一个解，是漏掉了第二象限的解。",
+  "subject": "math",
+  "choices": [],
+  "verify": "2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h347_q7",
+  "topicId": "mat_h347",
+  "prompt": "用五点法作 y = cos x 在 [0,2π] 上的简图时，图象最低点对应的 x 值是（　）",
+  "question": "用五点法作 y = cos x 在 [0,2π] 上的简图时，图象最低点对应的 x 值是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "π"
+   },
+   {
+    "label": "B",
+    "text": "π/2"
+   },
+   {
+    "label": "C",
+    "text": "3π/2"
+   },
+   {
+    "label": "D",
+    "text": "2π"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "在 [0,2π] 内 cos x 的最小值为 −1，此时 x=π，对应五点中的第三点 (π,−1)，是图象的最低点。x=π/2 与 x=3π/2 是零点（五点中的第二、第四点），图象在这两处穿过 x 轴；x=2π 处函数值为 1，是区间的右端点最高点，不是最低点。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "π"
+   },
+   {
+    "label": "B",
+    "text": "π/2"
+   },
+   {
+    "label": "C",
+    "text": "3π/2"
+   },
+   {
+    "label": "D",
+    "text": "2π"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h347_q8",
+  "topicId": "mat_h347",
+  "prompt": "用五点法列表作出 y = 2sin x 在 [0,2π] 上的简图，写出五个关键点的坐标，并说明图象与 y = sin x 图象的关系。",
+  "question": "用五点法列表作出 y = 2sin x 在 [0,2π] 上的简图，写出五个关键点的坐标，并说明图象与 y = sin x 图象的关系。",
+  "options": [],
+  "answer": "五个关键点为 (0,0)、(π/2,2)、(π,0)、(3π/2,−2)、(2π,0)；图象由 y=sin x 的图象上各点纵坐标伸长到原来的 2 倍得到。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "五点法取的横坐标是 0、π/2、π、3π/2、2π，它们把区间四等分，对应正弦值的 0、1、0、−1、0。把每个正弦值乘以 2，得纵坐标为 0、2、0、−2、0，连线即得简图。与 y=sin x 相比，零点位置完全不变，最大最小值由 ±1 变为 ±2，因此是纵向伸长 2 倍，而不是左右平移。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "五个关键点的横坐标依次为 0、π/2、π、3π/2、2π",
+   "对应纵坐标为 0、2、0、−2、0，即 (0,0)、(π/2,2)、(π,0)、(3π/2,−2)、(2π,0)",
+   "图象是 y=sin x 的图象上各点纵坐标伸长为原来的 2 倍，零点与周期不变"
+  ]
+ },
+ {
+  "id": "mat_h348_q6",
+  "topicId": "mat_h348",
+  "prompt": "函数 y = sin 2x 的最小正周期是（　）",
+  "question": "函数 y = sin 2x 的最小正周期是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "2π"
+   },
+   {
+    "label": "B",
+    "text": "π"
+   },
+   {
+    "label": "C",
+    "text": "π/2"
+   },
+   {
+    "label": "D",
+    "text": "4π"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "由周期公式 T=2π/|ω|，此处 ω=2，故 T=2π/2=π。图象被「压缩」了一半，周期也随之为 π；写成 2π 是忽略了 ω 的作用，写成 π/2 是把除法做反。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "2π"
+   },
+   {
+    "label": "B",
+    "text": "π"
+   },
+   {
+    "label": "C",
+    "text": "π/2"
+   },
+   {
+    "label": "D",
+    "text": "4π"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h348_q7",
+  "topicId": "mat_h348",
+  "prompt": "函数 y = 3cos 2x + 1 的最大值是 ____。",
+  "question": "函数 y = 3cos 2x + 1 的最大值是 ____。",
+  "options": [],
+  "answer": "4",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "cos 2x 的取值范围是 [−1,1]，故 3cos 2x 的取值范围是 [−3,3]，加上常数 1 后为 [−2,4]，最大值为 4（在 cos 2x=1 时取得）。只答 3 是把振幅当成了最大值，漏掉了纵向平移 1。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h348_q8",
+  "topicId": "mat_h348",
+  "prompt": "函数 y = 4sin(πx/3) 的最小正周期是多少？",
+  "question": "函数 y = 4sin(πx/3) 的最小正周期是多少？",
+  "options": [],
+  "answer": "6",
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "先把函数写成 y=Asin(ωx) 的形式，此时 ω=π/3。由 T=2π/|ω| 得 T=2π÷(π/3)=2π·3/π=6。若把 ω 误认作 1/3 或 3，就会得到 6π 或 2π/3；关键是先把系数里的 π 与分母一并代入公式。",
+  "subject": "math",
+  "choices": [],
+  "verify": "2*3",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h349_q6",
+  "topicId": "mat_h349",
+  "prompt": "函数 y = tan 2x 的最小正周期是（　）",
+  "question": "函数 y = tan 2x 的最小正周期是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "π/2"
+   },
+   {
+    "label": "B",
+    "text": "π"
+   },
+   {
+    "label": "C",
+    "text": "2π"
+   },
+   {
+    "label": "D",
+    "text": "π/4"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "正切函数的最小正周期公式为 T=π/|ω|，此处 ω=2，故 T=π/2。容易直接套用正弦的 2π/ω 得到 π，那是把正切的周期当成了 2π；正切图象每隔 π 就重复一次，压缩后为 π/2。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "π/2"
+   },
+   {
+    "label": "B",
+    "text": "π"
+   },
+   {
+    "label": "C",
+    "text": "2π"
+   },
+   {
+    "label": "D",
+    "text": "π/4"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h349_q7",
+  "topicId": "mat_h349",
+  "prompt": "求 tan(−π/3) 的值，并写出所用的诱导公式。",
+  "question": "求 tan(−π/3) 的值，并写出所用的诱导公式。",
+  "options": [],
+  "answer": "tan(−π/3) = −√3，所用公式为 tan(−α) = −tan α。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "正切函数是奇函数，对任意在其定义域内的角都有 tan(−α)=−tanα。因为 −π/3 在定义域内，所以 tan(−π/3)=−tan(π/3)=−√3。若忽略负号会写成 √3；同时要注意 tan(π/2) 这类角本身无定义，公式不能对它使用。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "tan(−α)=−tanα，正切函数是奇函数",
+   "tan(π/3)=√3，故 tan(−π/3)=−√3",
+   "使用前要先确认 −π/3 在正切函数的定义域内"
+  ]
+ },
+ {
+  "id": "mat_h349_q8",
+  "topicId": "mat_h349",
+  "prompt": "已知 tanα = 2，且 α 是第三象限角，则 sinα + cosα 的值为（　）",
+  "question": "已知 tanα = 2，且 α 是第三象限角，则 sinα + cosα 的值为（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "−3√5/5"
+   },
+   {
+    "label": "B",
+    "text": "3√5/5"
+   },
+   {
+    "label": "C",
+    "text": "−√5/5"
+   },
+   {
+    "label": "D",
+    "text": "√5"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "由 1+tan²α=1/cos²α 得 cos²α=1/(1+4)=1/5，故 cosα=±√5/5。α 在第三象限，正弦余弦同为负，取 cosα=−√5/5，sinα=tanα·cosα=2×(−√5/5)=−2√5/5。相加得 −3√5/5。若不判象限而取正号，就会得到 3√5/5。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "−3√5/5"
+   },
+   {
+    "label": "B",
+    "text": "3√5/5"
+   },
+   {
+    "label": "C",
+    "text": "−√5/5"
+   },
+   {
+    "label": "D",
+    "text": "√5"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h350_q6",
+  "topicId": "mat_h350",
+  "prompt": "计算 cos 75° 的值：cos 75° = ____。",
+  "question": "计算 cos 75° 的值：cos 75° = ____。",
+  "options": [],
+  "answer": "(√6−√2)/4",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "把 75° 拆成 45°+30°，用两角和的余弦公式：cos75°=cos45°cos30°−sin45°sin30°=(√2/2)(√3/2)−(√2/2)(1/2)=(√6−√2)/4。常见错误是把中间的减号写成加号而得到 (√6+√2)/4，那是 cos15° 的值。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h350_q7",
+  "topicId": "mat_h350",
+  "prompt": "计算 sin 15°cos 45° − cos 15°sin 45° 的值是多少？",
+  "question": "计算 sin 15°cos 45° − cos 15°sin 45° 的值是多少？",
+  "options": [],
+  "answer": "-0.5",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "式子正好是两角差的正弦公式 sin(α−β)=sinαcosβ−cosαsinβ 的形式，取 α=15°、β=45°，得原式=sin(15°−45°)=sin(−30°)=−0.5。若把差角写成 45°−15°=30°，就会误得 0.5，符号正好相反。",
+  "subject": "math",
+  "choices": [],
+  "verify": "-1/2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h350_q8",
+  "topicId": "mat_h350",
+  "prompt": "已知 sinα = 3/5，且 α ∈ (π/2, π)，则 sin(α + π/4) 的值为（　）",
+  "question": "已知 sinα = 3/5，且 α ∈ (π/2, π)，则 sin(α + π/4) 的值为（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "√2/10"
+   },
+   {
+    "label": "B",
+    "text": "−√2/10"
+   },
+   {
+    "label": "C",
+    "text": "−7√2/10"
+   },
+   {
+    "label": "D",
+    "text": "7√2/10"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "先由平方关系与象限得 cosα=−4/5。展开 sin(α+π/4)=sinα·cos(π/4)+cosα·sin(π/4)=(3/5)(√2/2)+(−4/5)(√2/2)=−√2/10。若把 cosα 取成 4/5，会得到 7√2/10，这是忽略第二象限余弦为负的典型错误。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "√2/10"
+   },
+   {
+    "label": "B",
+    "text": "−√2/10"
+   },
+   {
+    "label": "C",
+    "text": "−7√2/10"
+   },
+   {
+    "label": "D",
+    "text": "7√2/10"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h351_q6",
+  "topicId": "mat_h351",
+  "prompt": "用两角和的正弦公式计算 sin 105° 的值，写出拆角过程。",
+  "question": "用两角和的正弦公式计算 sin 105° 的值，写出拆角过程。",
+  "options": [],
+  "answer": "sin105° = sin(60°+45°) = (√6+√2)/4。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "105° 不是特殊角，但可拆成 60°+45°。由 sin(α+β)=sinαcosβ+cosαsinβ 得 sin105°=(√3/2)(√2/2)+(1/2)(√2/2)=(√6+√2)/4≈0.966。检验：105° 接近 90°，正弦应接近 1，结果合理；若得到 (√6−√2)/4≈0.259，说明把加号写成了减号。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "把 105° 拆成 60°+45° 两个特殊角之和",
+   "套用 sin(α+β)=sinαcosβ+cosαsinβ",
+   "计算得 (√3/2)(√2/2)+(1/2)(√2/2)=(√6+√2)/4"
+  ]
+ },
+ {
+  "id": "mat_h351_q7",
+  "topicId": "mat_h351",
+  "prompt": "计算 cos 70°cos 10° + sin 70°sin 10° 的值是（　）",
+  "question": "计算 cos 70°cos 10° + sin 70°sin 10° 的值是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "√3/2"
+   },
+   {
+    "label": "B",
+    "text": "−1/2"
+   },
+   {
+    "label": "C",
+    "text": "1/2"
+   },
+   {
+    "label": "D",
+    "text": "√2/2"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "该式符合两角差的余弦公式 cos(α−β)=cosαcosβ+sinαsinβ，取 α=70°、β=10°，原式=cos(70°−10°)=cos60°=1/2。若把中间的加号当成两角和的公式，会算成 cos80°，虽然数值接近 0.17，但选项中没有；误选 −1/2 则是既用错公式方向又弄错符号。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "√3/2"
+   },
+   {
+    "label": "B",
+    "text": "−1/2"
+   },
+   {
+    "label": "C",
+    "text": "1/2"
+   },
+   {
+    "label": "D",
+    "text": "√2/2"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h351_q8",
+  "topicId": "mat_h351",
+  "prompt": "已知 tanα = 1/2，tanβ = 1/3，且 α、β 均为锐角，则 α + β = ____。",
+  "question": "已知 tanα = 1/2，tanβ = 1/3，且 α、β 均为锐角，则 α + β = ____。",
+  "options": [],
+  "answer": "π/4",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "由两角和的正切公式 tan(α+β)=(tanα+tanβ)/(1−tanαtanβ)=(1/2+1/3)/(1−1/6)=(5/6)/(5/6)=1。因为 α、β 都是锐角且正切为正，α+β∈(0,π)，在这个范围内正切值为 1 的角只有 π/4。若忽略范围，可能误取 5π/4，那就超出了两个锐角之和的可能取值。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h352_q6",
+  "topicId": "mat_h352",
+  "prompt": "计算 1 − 2sin²30° 的值是多少？",
+  "question": "计算 1 − 2sin²30° 的值是多少？",
+  "options": [],
+  "answer": "0.5",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "由二倍角余弦公式的变形 cos2α=1−2sin²α，取 α=30°，得 1−2sin²30°=cos60°=0.5。也可直接算：sin30°=1/2，1−2×(1/4)=0.5，两种路径一致。若把公式记成 1−sin²α，会算得 3/4。",
+  "subject": "math",
+  "choices": [],
+  "verify": "1-2*(1/4)",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h352_q7",
+  "topicId": "mat_h352",
+  "prompt": "已知 cosα = 1/3，则 cos 2α 的值为（　）",
+  "question": "已知 cosα = 1/3，则 cos 2α 的值为（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "7/9"
+   },
+   {
+    "label": "B",
+    "text": "−1/9"
+   },
+   {
+    "label": "C",
+    "text": "2/3"
+   },
+   {
+    "label": "D",
+    "text": "−7/9"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "选用只含余弦的二倍角公式 cos2α=2cos²α−1，代入 cosα=1/3 得 cos2α=2×(1/9)−1=2/9−1=−7/9。也可用 1−2sin²α 先求 sin²α=8/9，结果相同。误选 2/3 是把 2cosα 当成了 cos2α，误选 7/9 则是漏掉了负号。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "7/9"
+   },
+   {
+    "label": "B",
+    "text": "−1/9"
+   },
+   {
+    "label": "C",
+    "text": "2/3"
+   },
+   {
+    "label": "D",
+    "text": "−7/9"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h352_q8",
+  "topicId": "mat_h352",
+  "prompt": "已知 tanα = 2，求 tan 2α 与 (1 − cos 2α)/sin 2α 的值。",
+  "question": "已知 tanα = 2，求 tan 2α 与 (1 − cos 2α)/sin 2α 的值。",
+  "options": [],
+  "answer": "tan2α = −4/3，(1 − cos 2α)/sin 2α = 2。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "先求 tan2α=2tanα/(1−tan²α)=2×2/(1−4)=−4/3。再化简第二个式子：由二倍角公式 1−cos2α=2sin²α，sin2α=2sinαcosα，故 (1−cos2α)/sin2α=2sin²α/(2sinαcosα)=sinα/cosα=tanα=2。这里要求 sin2α≠0，即 α≠kπ/2。易错点是把 1−cos2α 误记为 2cos²α，从而算成 1/tanα。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "tan2α = 2tanα/(1−tan²α) = 4/(1−4) = −4/3",
+   "1−cos2α = 2sin²α，sin2α = 2sinαcosα，代入后约去 2sinα",
+   "化简结果等于 tanα，故值为 2（需 α≠kπ/2 保证分母不为零）"
+  ]
+ }
+]

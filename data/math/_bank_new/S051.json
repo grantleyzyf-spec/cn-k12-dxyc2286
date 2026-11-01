@@ -1,0 +1,881 @@
+[
+ {
+  "id": "mat_h479_q6",
+  "topicId": "mat_h479",
+  "prompt": "某校抽查 200 名学生的睡眠情况并作独立性检验，算得 χ²=5.62，则下列判断正确的是（　）",
+  "question": "某校抽查 200 名学生的睡眠情况并作独立性检验，算得 χ²=5.62，则下列判断正确的是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "在 α=0.05 下应拒绝零假设，认为两个变量有关"
+   },
+   {
+    "label": "B",
+    "text": "在 α=0.01 下应拒绝零假设，认为两个变量有关"
+   },
+   {
+    "label": "C",
+    "text": "在 α=0.05 下应接受零假设，认为两个变量无关"
+   },
+   {
+    "label": "D",
+    "text": "χ²=5.62 说明两个变量的取值完全相同"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "χ²=5.62 大于 α=0.05 对应的临界值 3.841，小于 α=0.01 对应的临界值 6.635，所以只能在 0.05 这一档拒绝零假设，认为两变量有关；按 99% 的把握下结论就超出了数据支持的范围。比较时要把算得的 χ² 与各 α 的临界值逐一对号，而不是笼统地说有关或无关。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "在 α=0.05 下应拒绝零假设，认为两个变量有关"
+   },
+   {
+    "label": "B",
+    "text": "在 α=0.01 下应拒绝零假设，认为两个变量有关"
+   },
+   {
+    "label": "C",
+    "text": "在 α=0.05 下应接受零假设，认为两个变量无关"
+   },
+   {
+    "label": "D",
+    "text": "χ²=5.62 说明两个变量的取值完全相同"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h479_q7",
+  "topicId": "mat_h479",
+  "prompt": "某医院随机调查 80 名患者，服药组 50 人中有 35 人症状缓解，对照组 30 人中有 15 人缓解，按独立性检验的公式计算，χ² 的值为 ____（填小数）。",
+  "question": "某医院随机调查 80 名患者，服药组 50 人中有 35 人症状缓解，对照组 30 人中有 15 人缓解，按独立性检验的公式计算，χ² 的值为 ____（填小数）。",
+  "options": [],
+  "answer": "3.2",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "把数据排成 2×2 列联表得 a=35，b=15，c=15，d=15，样本容量 n=80，且 a+b=50，c+d=30，a+c=50，b+d=30。代入 χ²=n(ad−bc)²/[(a+b)(c+d)(a+c)(b+d)] 得 χ²=80×300²/(50×30×50×30)=7200000/2250000=3.2。括号里是 ad−bc 的整体平方，四个合计一个都不能漏。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h479_q8",
+  "topicId": "mat_h479",
+  "prompt": "某工厂抽查 60 名工人，甲组 40 人中有 32 人完成定额，乙组 20 人中有 8 人完成定额。判断两组完成定额的情况是否有关，请算出 χ² 的值。只填数字。",
+  "question": "某工厂抽查 60 名工人，甲组 40 人中有 32 人完成定额，乙组 20 人中有 8 人完成定额。判断两组完成定额的情况是否有关，请算出 χ² 的值。只填数字。",
+  "options": [],
+  "answer": "9.6",
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "列联表中 a=32，b=8，c=8，d=12，a+b=40，c+d=20，a+c=40，b+d=20，ad−bc=32×12−8×8=320。代入公式得 χ²=60×320²/(40×20×40×20)=6144000/640000=9.6。因为 9.6 大于 α=0.005 对应的 7.879，可以在这一水平下拒绝零假设，认为两组完成定额的情况存在显著差异。",
+  "subject": "math",
+  "choices": [],
+  "verify": "60*(32*12-8*8)**2/((32+8)*(8+12)*(32+8)*(8+12))",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h480_q6",
+  "topicId": "mat_h480",
+  "prompt": "关于有穷数列与无穷数列，下列判断正确的是（　）",
+  "question": "关于有穷数列与无穷数列，下列判断正确的是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "数列 1，2，3，…，100 是无穷数列"
+   },
+   {
+    "label": "B",
+    "text": "每一项都是正数的数列一定是无穷数列"
+   },
+   {
+    "label": "C",
+    "text": "项数有限的数列也可能没有最后一项"
+   },
+   {
+    "label": "D",
+    "text": "数列 2，4，6，8，… 按相邻两项差为 2 的规律无限延续，是无穷数列"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "数列的项数由规律决定：1，2，3，…，100 在 100 处结束，只有 100 项，是有穷数列；2，4，6，8，… 按差为 2 的规律一直写下去，没有最后一项，才是无穷数列。项的正负与项数多少无关，有穷数列必定有最后一项，所以另外三种说法都站不住。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "数列 1，2，3，…，100 是无穷数列"
+   },
+   {
+    "label": "B",
+    "text": "每一项都是正数的数列一定是无穷数列"
+   },
+   {
+    "label": "C",
+    "text": "项数有限的数列也可能没有最后一项"
+   },
+   {
+    "label": "D",
+    "text": "数列 2，4，6，8，… 按相邻两项差为 2 的规律无限延续，是无穷数列"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h480_q7",
+  "topicId": "mat_h480",
+  "prompt": "数列 5，10，15，20，25 共有几项？第 3 项是多少？请写出它的首项与末项，并说明它是有穷数列还是无穷数列。",
+  "question": "数列 5，10，15，20，25 共有几项？第 3 项是多少？请写出它的首项与末项，并说明它是有穷数列还是无穷数列。",
+  "options": [],
+  "answer": "第 3 项是 15；首项是 5，末项是 25，共 5 项；项数有限，所以它是有穷数列。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "按顺序数项，序号 1，2，3 依次对应 5，10，15，所以第 3 项是 15；首项是 5，最后一个数 25 的序号是 5，共 5 项。项数有限就停止，符合有穷数列的定义；若规律能无限延续才是无穷数列。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "第 3 项是 15",
+   "首项 5、末项 25，共有 5 项",
+   "项数有限，属于有穷数列"
+  ]
+ },
+ {
+  "id": "mat_h480_q8",
+  "topicId": "mat_h480",
+  "prompt": "已知数列 {a_n} 的通项公式为 a_n=2n−1（n∈N*），则 99 是这个数列的第几项（　）",
+  "question": "已知数列 {a_n} 的通项公式为 a_n=2n−1（n∈N*），则 99 是这个数列的第几项（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "48"
+   },
+   {
+    "label": "B",
+    "text": "49"
+   },
+   {
+    "label": "C",
+    "text": "50"
+   },
+   {
+    "label": "D",
+    "text": "51"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "由 2n−1=99 得 2n=100，n=50，所以 99 是第 50 项。通项 2n−1 恰好一列奇数，第 n 个奇数是 2n−1，把 99 代进去解方程即可。注意解方程时先把 1 移项再除以 2，误写成 49 或 51 都是漏算或多算了一步。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "48"
+   },
+   {
+    "label": "B",
+    "text": "49"
+   },
+   {
+    "label": "C",
+    "text": "50"
+   },
+   {
+    "label": "D",
+    "text": "51"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h481_q6",
+  "topicId": "mat_h481",
+  "prompt": "已知数列 {a_n} 的通项公式为 a_n=n²+n，则它的第 6 项 a_6 = ____。",
+  "question": "已知数列 {a_n} 的通项公式为 a_n=n²+n，则它的第 6 项 a_6 = ____。",
+  "options": [],
+  "answer": "42",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "求指定项就是把序号代入通项：n=6 时 a_6=6²+6=36+6=42。这里 n 是序号，只替换 n，不能把 a_6 当成 6² 就交卷，也不要漏加后面那一项 n。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h481_q7",
+  "topicId": "mat_h481",
+  "prompt": "已知数列 {a_n} 的通项公式为 a_n=3n−5（n∈N*），则 a_10 的值是多少？只填数字。",
+  "question": "已知数列 {a_n} 的通项公式为 a_n=3n−5（n∈N*），则 a_10 的值是多少？只填数字。",
+  "options": [],
+  "answer": "25",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "把 n=10 代入 a_n=3n−5 得 a_10=3×10−5=25。代入时只把 n 换成 10，常数 −5 要原样保留；漏掉 −5 会得到 30，把减号看成加号会得到 35。",
+  "subject": "math",
+  "choices": [],
+  "verify": "3*10-5",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h481_q8",
+  "topicId": "mat_h481",
+  "prompt": "数列 {a_n} 的通项公式为 a_n=n/(n+2)，则这个数列的单调性是（　）",
+  "question": "数列 {a_n} 的通项公式为 a_n=n/(n+2)，则这个数列的单调性是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "递增数列"
+   },
+   {
+    "label": "B",
+    "text": "递减数列"
+   },
+   {
+    "label": "C",
+    "text": "常数列"
+   },
+   {
+    "label": "D",
+    "text": "先递增后递减的数列"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "作差比较相邻两项：a_(n+1)−a_n=(n+1)/(n+3)−n/(n+2)=2/[(n+2)(n+3)]，因为 n 为正整数，这个差恒大于 0，所以后一项总大于前一项，数列递增。判断单调性用相邻两项作差并通分，比只代几项看数值更严格，也避免因前几项接近而误判。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "递增数列"
+   },
+   {
+    "label": "B",
+    "text": "递减数列"
+   },
+   {
+    "label": "C",
+    "text": "常数列"
+   },
+   {
+    "label": "D",
+    "text": "先递增后递减的数列"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h482_q6",
+  "topicId": "mat_h482",
+  "prompt": "已知数列 {a_n} 满足 a_1=2，a_(n+1)=a_n+4（n∈N*），请写出它的前 5 项，并说明它是一个什么数列。",
+  "question": "已知数列 {a_n} 满足 a_1=2，a_(n+1)=a_n+4（n∈N*），请写出它的前 5 项，并说明它是一个什么数列。",
+  "options": [],
+  "answer": "前 5 项为 2，6，10，14，18；相邻两项之差恒为 4，所以它是首项为 2、公差为 4 的等差数列。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "递推公式要一项一项往后推：由 a_1=2 得 a_2=2+4=6，a_3=6+4=10，a_4=14，a_5=18。每一步用的都是刚算出的前一项，正因为每次都加同一个 4，所得数列满足相邻两项之差为常数，符合等差数列的定义。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "前 5 项依次是 2，6，10，14，18",
+   "相邻两项之差恒为 4，是首项 2、公差 4 的等差数列"
+  ]
+ },
+ {
+  "id": "mat_h482_q7",
+  "topicId": "mat_h482",
+  "prompt": "数列 {a_n} 满足 a_1=3，a_(n+1)=2a_n−1（n∈N*），则 a_3 等于（　）",
+  "question": "数列 {a_n} 满足 a_1=3，a_(n+1)=2a_n−1（n∈N*），则 a_3 等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "5"
+   },
+   {
+    "label": "B",
+    "text": "7"
+   },
+   {
+    "label": "C",
+    "text": "9"
+   },
+   {
+    "label": "D",
+    "text": "17"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "由 a_1=3 得 a_2=2×3−1=5，再由 a_3=2×5−1=9。递推式中带常数项时必须逐项代入，不能把 a_1 连乘两次就完事；漏掉每次减 1 会误得 12，直接用 a_1 乘 4 还会得到 17。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "5"
+   },
+   {
+    "label": "B",
+    "text": "7"
+   },
+   {
+    "label": "C",
+    "text": "9"
+   },
+   {
+    "label": "D",
+    "text": "17"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h482_q8",
+  "topicId": "mat_h482",
+  "prompt": "数列 {a_n} 中 a_1=1，且 a_(n+1)=a_n/(1+2a_n)（n∈N*），则 a_4 = ____。",
+  "question": "数列 {a_n} 中 a_1=1，且 a_(n+1)=a_n/(1+2a_n)（n∈N*），则 a_4 = ____。",
+  "options": [],
+  "answer": "1/7",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "逐项代入得 a_2=1/(1+2)=1/3，a_3=(1/3)/(1+2×1/3)=1/5，a_4=(1/5)/(1+2/5)=1/7。也可以取倒数看出规律：1/a_(n+1)=1/a_n+2，于是 1/a_n=2n−1，n=4 时是 7，故 a_4=1/7。两种方法互相验证，可避免分式运算中约分出错。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h483_q6",
+  "topicId": "mat_h483",
+  "prompt": "已知数列 {a_n} 的前 n 项和 S_n=n²+2n（n∈N*），则 a_3 的值是多少？只填数字。",
+  "question": "已知数列 {a_n} 的前 n 项和 S_n=n²+2n（n∈N*），则 a_3 的值是多少？只填数字。",
+  "options": [],
+  "answer": "7",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "由 a_n=S_n−S_(n−1) 得 a_3=S_3−S_2=(9+6)−(4+4)=15−8=7。求第几项就用前几项和减去前几减一项和，不能把 S_3 直接当成 a_3，那是把累计和与单项混为一谈。本题 3≥2，作差公式适用。",
+  "subject": "math",
+  "choices": [],
+  "verify": "3**2+2*3-(2**2+2*2)",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h483_q7",
+  "topicId": "mat_h483",
+  "prompt": "已知数列 {a_n} 的前 n 项和 S_n=3n+1，则它的首项 a_1 等于（　）",
+  "question": "已知数列 {a_n} 的前 n 项和 S_n=3n+1，则它的首项 a_1 等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "1"
+   },
+   {
+    "label": "B",
+    "text": "4"
+   },
+   {
+    "label": "C",
+    "text": "3"
+   },
+   {
+    "label": "D",
+    "text": "7"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "首项就是一列数的第 1 项，而 S_1 恰好只含第 1 项，所以 a_1=S_1=3×1+1=4。千万不要套用作差公式写成 a_1=S_1−S_0，因为 S_0 没有定义；把 a_1 当成公差或系数 3 也是常见错误。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "1"
+   },
+   {
+    "label": "B",
+    "text": "4"
+   },
+   {
+    "label": "C",
+    "text": "3"
+   },
+   {
+    "label": "D",
+    "text": "7"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h483_q8",
+  "topicId": "mat_h483",
+  "prompt": "已知数列 {a_n} 的前 n 项和 S_n=n²−2n（n∈N*），求它的通项公式，并指出它是什么数列。",
+  "question": "已知数列 {a_n} 的前 n 项和 S_n=n²−2n（n∈N*），求它的通项公式，并指出它是什么数列。",
+  "options": [],
+  "answer": "a_1=S_1=−1；n≥2 时 a_n=S_n−S_(n−1)=2n−3，且 n=1 时该式也等于 −1，所以 a_n=2n−3，它是首项为 −1、公差为 2 的等差数列。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "作差得 S_n−S_(n−1)=(n²−2n)−[(n−1)²−2(n−1)]=2n−3，但这一步只在 n≥2 时才成立，因为 S_0 不存在。必须单独算出 a_1=S_1=−1，再检查 n=1 时 2n−3 也等于 −1，两段才能合并成一个通项；首项与公差由此一并读出差为 2。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "n=1 时 a_1=S_1=−1",
+   "n≥2 时 a_n=S_n−S_(n−1)=2n−3",
+   "n=1 时公式同样成立，故 a_n=2n−3，是首项 −1、公差 2 的等差数列"
+  ]
+ },
+ {
+  "id": "mat_h484_q6",
+  "topicId": "mat_h484",
+  "prompt": "下列各组数按给出的顺序构成的数列中，不是等差数列的是（　）",
+  "question": "下列各组数按给出的顺序构成的数列中，不是等差数列的是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "3，3，3，3"
+   },
+   {
+    "label": "B",
+    "text": "0，−2，−4，−6"
+   },
+   {
+    "label": "C",
+    "text": "1，3，9，27"
+   },
+   {
+    "label": "D",
+    "text": "7，4，1，−2"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "等差数列要求相邻两项之差是同一个常数。3，3，3，3 的差恒为 0，0，−2，−4，−6 的差恒为 −2，7，4，1，−2 的差恒为 −3，三者都符合定义。只有 1，3，9，27 的差依次是 2，6，18，前后不相等，它的相邻两项之比才是常数，属于等比数列。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "3，3，3，3"
+   },
+   {
+    "label": "B",
+    "text": "0，−2，−4，−6"
+   },
+   {
+    "label": "C",
+    "text": "1，3，9，27"
+   },
+   {
+    "label": "D",
+    "text": "7，4，1，−2"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h484_q7",
+  "topicId": "mat_h484",
+  "prompt": "等差数列 100，97，94，91，… 的公差是 ____。",
+  "question": "等差数列 100，97，94，91，… 的公差是 ____。",
+  "options": [],
+  "answer": "−3",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "公差等于后一项减前一项：97−100=−3，再用 94−97=−3 复核一致，所以 d=−3。公差可以是负数，这个数列逐项变小正说明它在递减；把公差写成 3 是漏掉了减法的顺序。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h484_q8",
+  "topicId": "mat_h484",
+  "prompt": "某剧场第一排有 20 个座位，以后每一排都比前一排多 2 个座位，则第 12 排有多少个座位？只填数字。",
+  "question": "某剧场第一排有 20 个座位，以后每一排都比前一排多 2 个座位，则第 12 排有多少个座位？只填数字。",
+  "options": [],
+  "answer": "42",
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "各排座位数构成首项 20、公差 2 的等差数列，第 12 排的座位数是 a_12=20+(12−1)×2=42。通项里乘的是 n−1 而不是 n，因为从第 1 排到第 12 排只增加了 11 次；写成 20+12×2 会多算 2 个座位。",
+  "subject": "math",
+  "choices": [],
+  "verify": "20+11*2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h485_q6",
+  "topicId": "mat_h485",
+  "prompt": "已知等差数列 {a_n} 中 a_1=4，公差 d=−2，则 a_6 等于（　）",
+  "question": "已知等差数列 {a_n} 中 a_1=4，公差 d=−2，则 a_6 等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "−6"
+   },
+   {
+    "label": "B",
+    "text": "−4"
+   },
+   {
+    "label": "C",
+    "text": "6"
+   },
+   {
+    "label": "D",
+    "text": "−8"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "由通项公式 a_6=a_1+(6−1)d=4+5×(−2)=4−10=−6。d 的系数是序号减 1，取 n=6 时为 5；公差为负数时要连括号一起乘，把 4+10=14 写成答案就是符号出错。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "−6"
+   },
+   {
+    "label": "B",
+    "text": "−4"
+   },
+   {
+    "label": "C",
+    "text": "6"
+   },
+   {
+    "label": "D",
+    "text": "−8"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h485_q7",
+  "topicId": "mat_h485",
+  "prompt": "在 7 与 19 之间插入一个数 A，使 7，A，19 成等差数列，求 A 的值，并写出这个数列的第 6 项。",
+  "question": "在 7 与 19 之间插入一个数 A，使 7，A，19 成等差数列，求 A 的值，并写出这个数列的第 6 项。",
+  "options": [],
+  "answer": "由等差中项 2A=7+19=26 得 A=13；公差 d=13−7=6，所以第 6 项 a_6=7+5×6=37。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "三个数成等差数列时，中间数的两倍等于两端之和，即 A 是 7 与 19 的算术平均数 13。求出公差 d=A−7=6 后，第 6 项要加 5 个公差而不是 6 个，这是通项公式中最容易数错的地方。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "等差中项 2A=7+19，解得 A=13",
+   "公差 d=6，故 a_6=7+5×6=37"
+  ]
+ },
+ {
+  "id": "mat_h485_q8",
+  "topicId": "mat_h485",
+  "prompt": "已知等差数列 {a_n} 中 a_3=7，a_7=19，则该数列的公差 d 等于（　）",
+  "question": "已知等差数列 {a_n} 中 a_3=7，a_7=19，则该数列的公差 d 等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "2"
+   },
+   {
+    "label": "B",
+    "text": "4"
+   },
+   {
+    "label": "C",
+    "text": "6"
+   },
+   {
+    "label": "D",
+    "text": "3"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "由 a_7−a_3=(7−3)d=4d，代入得 19−7=12=4d，所以 d=3。也可先求 a_1=7−2×3=1，再验证 a_7=1+6×3=19。两项之间相差的是序号之差个公差，本题跨 4 步，写成 7d 或 3d 都会算错。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "2"
+   },
+   {
+    "label": "B",
+    "text": "4"
+   },
+   {
+    "label": "C",
+    "text": "6"
+   },
+   {
+    "label": "D",
+    "text": "3"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h486_q6",
+  "topicId": "mat_h486",
+  "prompt": "已知等差数列中 a_1=4，a_10=40，则它的前 10 项和 S_10 = ____。",
+  "question": "已知等差数列中 a_1=4，a_10=40，则它的前 10 项和 S_10 = ____。",
+  "options": [],
+  "answer": "220",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "已知首项与末项时用 S_n=n(a_1+a_n)/2 最省力，S_10=10×(4+40)/2=10×22=220。注意公式里必须除以 2，漏掉除以 2 会得到 440；也不用先求公差，因为首末两项已经给全。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h486_q7",
+  "topicId": "mat_h486",
+  "prompt": "等差数列 {a_n} 中 a_1=1，公差 d=2，则它的前 20 项和 S_20 是多少？只填数字。",
+  "question": "等差数列 {a_n} 中 a_1=1，公差 d=2，则它的前 20 项和 S_20 是多少？只填数字。",
+  "options": [],
+  "answer": "400",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "代入 S_n=na_1+n(n−1)d/2 得 S_20=20×1+20×19/2×2=20+380=400。也可先求 a_20=1+19×2=39，再用 S_20=20×(1+39)/2=400，两个公式结果应当一致，可用来自查。",
+  "subject": "math",
+  "choices": [],
+  "verify": "20*1+20*19/2*2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h486_q8",
+  "topicId": "mat_h486",
+  "prompt": "已知等差数列 {a_n} 的前 n 项和 S_n=n²+3n，则该数列的公差 d 等于（　）",
+  "question": "已知等差数列 {a_n} 的前 n 项和 S_n=n²+3n，则该数列的公差 d 等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "1"
+   },
+   {
+    "label": "B",
+    "text": "2"
+   },
+   {
+    "label": "C",
+    "text": "3"
+   },
+   {
+    "label": "D",
+    "text": "4"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "先求前两项：a_1=S_1=1+3=4，S_2=4+6=10，故 a_2=S_2−S_1=6，于是 d=a_2−a_1=2。也可由 a_n=S_n−S_(n−1)=2n+2 看出公差就是 n 的系数 2，或用二次项系数等于 d/2 判断。三条路都以 a_1=S_1 为起点，不能用 S_0。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "1"
+   },
+   {
+    "label": "B",
+    "text": "2"
+   },
+   {
+    "label": "C",
+    "text": "3"
+   },
+   {
+    "label": "D",
+    "text": "4"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h487_q6",
+  "topicId": "mat_h487",
+  "prompt": "数列 3，6，12，24，… 是否为等比数列？请说明理由，并写出它的首项与公比。",
+  "question": "数列 3，6，12，24，… 是否为等比数列？请说明理由，并写出它的首项与公比。",
+  "options": [],
+  "answer": "是等比数列。因为后一项与前一项之比 6/3=12/6=24/12=2 恒为同一个常数，所以首项 a_1=3，公比 q=2。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "判断等比数列要做除法：6÷3=2，12÷6=2，24÷12=2，比值恒为 2，满足定义。若只看 3、6、12、24 的差 3、6、12 在变化就断言不是等比，是把等差与等比的判据混用了；首项是第 1 项 3，公比就是这个恒定的比值 2。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "相邻两项之比恒为 2，符合等比数列定义",
+   "首项 a_1=3，公比 q=2"
+  ]
+ },
+ {
+  "id": "mat_h487_q7",
+  "topicId": "mat_h487",
+  "prompt": "下列数列中，公比为 −2 的等比数列是（　）",
+  "question": "下列数列中，公比为 −2 的等比数列是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "2，4，8，16"
+   },
+   {
+    "label": "B",
+    "text": "−2，−4，−8，−16"
+   },
+   {
+    "label": "C",
+    "text": "4，2，1，1/2"
+   },
+   {
+    "label": "D",
+    "text": "2，−4，8，−16"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "公比是后一项除以前一项。2，4，8，16 与 −2，−4，−8，−16 的比值都是 2；4，2，1，1/2 的比值是 1/2；只有 2，−4，8，−16 的比值依次为 −2，−2，−2。符号逐项变号的等比数列公比为负，必须逐项相除才能确认，不能只看首项或只看绝对值。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "2，4，8，16"
+   },
+   {
+    "label": "B",
+    "text": "−2，−4，−8，−16"
+   },
+   {
+    "label": "C",
+    "text": "4，2，1，1/2"
+   },
+   {
+    "label": "D",
+    "text": "2，−4，8，−16"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h487_q8",
+  "topicId": "mat_h487",
+  "prompt": "等比数列 {a_n} 中 a_2=6，a_4=24，且各项均为正数，则 a_6 = ____。",
+  "question": "等比数列 {a_n} 中 a_2=6，a_4=24，且各项均为正数，则 a_6 = ____。",
+  "options": [],
+  "answer": "96",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "由 a_4/a_2=q²=24/6=4 得 q=2 或 q=−2，但题设各项均为正数，q=−2 会使偶数项为负，故取 q=2。于是 a_6=a_4·q²=24×4=96。跳过符号条件的检验会留下两个候选公比，这是本题最易丢分的一步。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h488_q6",
+  "topicId": "mat_h488",
+  "prompt": "已知等比数列 {a_n} 中 a_1=2，公比 q=3，则 a_5 的值是多少？只填数字。",
+  "question": "已知等比数列 {a_n} 中 a_1=2，公比 q=3，则 a_5 的值是多少？只填数字。",
+  "options": [],
+  "answer": "162",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "由通项 a_n=a_1q^(n−1) 得 a_5=2×3^4=2×81=162。求第 5 项时 q 的指数是 5−1=4，误用 3 次方会得到 54；这里的 2 是首项而不是公比，也不能当成 2 的幂来算。",
+  "subject": "math",
+  "choices": [],
+  "verify": "2*3**4",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h488_q7",
+  "topicId": "mat_h488",
+  "prompt": "若 G 是 9 与 25 的等比中项，则 G 等于（　）",
+  "question": "若 G 是 9 与 25 的等比中项，则 G 等于（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "15"
+   },
+   {
+    "label": "B",
+    "text": "±15"
+   },
+   {
+    "label": "C",
+    "text": "−15"
+   },
+   {
+    "label": "D",
+    "text": "17"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "等比中项满足 G²=9×25=225，开方得 G=15 或 G=−15，即 G=±15。这两个数都能与 9、25 成等比数列，公比分别为 5/3 与 −5/3。只有题目另外限定 G 为正时才取 15；17 是 9 与 25 的算术平均数，属于把等差中项与等比中项混淆的干扰项。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "15"
+   },
+   {
+    "label": "B",
+    "text": "±15"
+   },
+   {
+    "label": "C",
+    "text": "−15"
+   },
+   {
+    "label": "D",
+    "text": "17"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h488_q8",
+  "topicId": "mat_h488",
+  "prompt": "等比数列 {a_n} 中 a_1=3，公比 q=−2，求 a_4 与 a_5 的值，并说明这个数列各项符号的变化规律。",
+  "question": "等比数列 {a_n} 中 a_1=3，公比 q=−2，求 a_4 与 a_5 的值，并说明这个数列各项符号的变化规律。",
+  "options": [],
+  "answer": "a_4=a_1q³=3×(−8)=−24，a_5=a_1q⁴=3×16=48；因为公比为负，每乘一次 q 符号就改变一次，所以奇数项为正、偶数项为负，正负交替出现。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "通项 a_n=a_1q^(n−1) 中负号随指数的奇偶而变：n=4 时指数为 3，结果是负的 −24；n=5 时指数为 4，结果为 48。公比为负意味着每往后一项就反一次号，所以整个数列正负交替，这也是与正公比数列最直观的区别。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "a_4=3×(−2)³=−24",
+   "a_5=3×(−2)⁴=48",
+   "公比为负，奇数项为正、偶数项为负，符号正负交替"
+  ]
+ }
+]

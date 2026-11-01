@@ -1,0 +1,884 @@
+[
+ {
+  "id": "mat_h313_q6",
+  "topicId": "mat_h313",
+  "prompt": "不等式 x^2+x-6<0 的解集是（　）",
+  "question": "不等式 x^2+x-6<0 的解集是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "{x | -3<x<2}"
+   },
+   {
+    "label": "B",
+    "text": "{x | x<-3 或 x>2}"
+   },
+   {
+    "label": "C",
+    "text": "{x | -2<x<3}"
+   },
+   {
+    "label": "D",
+    "text": "{x | x<-2 或 x>3}"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "先解方程 x^2+x-6=0，因式分解得 (x+3)(x-2)=0，两根为 -3 和 2。二次项系数 1 大于 0，抛物线开口向上，不等式取「小于 0」，对应图象在 x 轴下方的部分，即两根之间，所以解集是 -3<x<2。若选 B 是把「小于 0」错当成取两根外侧，这是解二次不等式最常见的方向性错误。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "{x | -3<x<2}"
+   },
+   {
+    "label": "B",
+    "text": "{x | x<-3 或 x>2}"
+   },
+   {
+    "label": "C",
+    "text": "{x | -2<x<3}"
+   },
+   {
+    "label": "D",
+    "text": "{x | x<-2 或 x>3}"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h313_q7",
+  "topicId": "mat_h313",
+  "prompt": "不等式 x^2-2x-8≤0 的解集是 ____（用区间表示）。",
+  "question": "不等式 x^2-2x-8≤0 的解集是 ____（用区间表示）。",
+  "options": [],
+  "answer": "[-2,4]",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "方程 x^2-2x-8=0 分解为 (x-4)(x+2)=0，两根为 -2 和 4。开口向上，取「小于等于 0」，解集为两根之间并包含端点，即 -2≤x≤4，用区间写成 [-2,4]。端点能否取到由不等号决定，本题带等号所以两端都用闭区间；若把端点写成开区间，或写成两根外侧，都是漏看开口方向与符号造成的。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h313_q8",
+  "topicId": "mat_h313",
+  "prompt": "若关于 x 的不等式 x^2+ax+b<0 的解集是 {x | 1<x<3}，则 a+b 的值是 ____。",
+  "question": "若关于 x 的不等式 x^2+ax+b<0 的解集是 {x | 1<x<3}，则 a+b 的值是 ____。",
+  "options": [],
+  "answer": "-1",
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "解集是两根之间的区间，说明 1 与 3 恰是方程 x^2+ax+b=0 的两根。由根与系数的关系，1+3=-a，1×3=b，所以 a=-4、b=3，a+b=-1。也可直接由 (x-1)(x-3)=x^2-4x+3 与 x^2+ax+b 比对系数，注意一次项系数是两根之和的相反数，漏掉这个负号会得出 a=4 的错误结果。",
+  "subject": "math",
+  "choices": [],
+  "verify": "-(1+3)+1*3",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h314_q6",
+  "topicId": "mat_h314",
+  "prompt": "已知函数 f(x)=x^2+2x，则 f(-3) 的值是（　）",
+  "question": "已知函数 f(x)=x^2+2x，则 f(-3) 的值是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "9"
+   },
+   {
+    "label": "B",
+    "text": "15"
+   },
+   {
+    "label": "C",
+    "text": "-3"
+   },
+   {
+    "label": "D",
+    "text": "3"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "求函数值就是把自变量的取值代入解析式：f(-3)=(-3)^2+2×(-3)=9-6=3。常见错误一是把 (-3)^2 算成 -9，二是漏掉 2×(-3) 的负号而得到 15。代入时先算乘方、再算乘法、最后作和，运算顺序决定了结果的符号。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "9"
+   },
+   {
+    "label": "B",
+    "text": "15"
+   },
+   {
+    "label": "C",
+    "text": "-3"
+   },
+   {
+    "label": "D",
+    "text": "3"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h314_q7",
+  "topicId": "mat_h314",
+  "prompt": "求函数 f(x)=√(x+2)+1/(x-1) 的定义域，并说明每一部分对 x 的限制是什么。",
+  "question": "求函数 f(x)=√(x+2)+1/(x-1) 的定义域，并说明每一部分对 x 的限制是什么。",
+  "options": [],
+  "answer": "定义域为 {x | x≥-2 且 x≠1}，即 [-2,1)∪(1,+∞)。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "定义域是使解析式有意义的自变量取值集合。根式部分要求被开方数非负，所以 x+2≥0，得 x≥-2；分式部分要求分母不为 0，所以 x-1≠0，得 x≠1。两个限制必须同时满足，取交集并把 x=1 这一点挖掉，写成区间就是[-2,1)∪(1,+∞)。易错处是只写 x≥-2 而漏掉挖点，或者把两个条件写成「或」的关系。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "根式 √(x+2) 要求被开方数非负，即 x+2≥0，得 x≥-2",
+   "分式 1/(x-1) 要求分母不为 0，即 x-1≠0，得 x≠1",
+   "两个条件同时成立，定义域为 {x | x≥-2 且 x≠1}，写成区间是 [-2,1)∪(1,+∞)"
+  ]
+ },
+ {
+  "id": "mat_h314_q8",
+  "topicId": "mat_h314",
+  "prompt": "若函数 f(x)=x^2-2x+3 的定义域为 {0,1,2,3}，则它的值域是（　）",
+  "question": "若函数 f(x)=x^2-2x+3 的定义域为 {0,1,2,3}，则它的值域是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "{2,3}"
+   },
+   {
+    "label": "B",
+    "text": "{3,6}"
+   },
+   {
+    "label": "C",
+    "text": "{2,3,6}"
+   },
+   {
+    "label": "D",
+    "text": "{2,6}"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "定义域只有四个元素，逐个代入即可：f(0)=3，f(1)=1-2+3=2，f(2)=4-4+3=3，f(3)=9-6+3=6。值域是函数值组成的集合，相同的值只写一次，所以值域是 {2,3,6}。误选 {2,3} 是漏算 x=3 对应的 6；把区间上的最值当成值域，则会丢掉中间的取值。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "{2,3}"
+   },
+   {
+    "label": "B",
+    "text": "{3,6}"
+   },
+   {
+    "label": "C",
+    "text": "{2,3,6}"
+   },
+   {
+    "label": "D",
+    "text": "{2,6}"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h315_q6",
+  "topicId": "mat_h315",
+  "prompt": "函数 y=√(x-3)+1/(x-5) 中，自变量 x 的取值范围是 ____。",
+  "question": "函数 y=√(x-3)+1/(x-5) 中，自变量 x 的取值范围是 ____。",
+  "options": [],
+  "answer": "{x | x≥3 且 x≠5}",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "根式要有意义，被开方数必须非负，即 x-3≥0，得 x≥3；分式要有意义，分母不能为 0，即 x-5≠0，得 x≠5。两个条件同时满足，所以 x≥3 且 x≠5，用集合写成 {x | x≥3 且 x≠5}。只写 x≥3 会漏掉排除 5 这一点，是本题最常见的失分原因。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h315_q7",
+  "topicId": "mat_h315",
+  "prompt": "已知 f(x)=2x^2-1，则 f(-2) 的值是 ____。",
+  "question": "已知 f(x)=2x^2-1，则 f(-2) 的值是 ____。",
+  "options": [],
+  "answer": "7",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "把 x=-2 代入解析式：f(-2)=2×(-2)^2-1=2×4-1=8-1=7。关键是先算 (-2)^2=4，平方把负号消掉；若误写成 -(2^2) 当作 (-2)^2，或者先算 2×(-2)=-4 再平方，就会得到 -9 或 15 之类的错误结果。",
+  "subject": "math",
+  "choices": [],
+  "verify": "2*(-2)**2-1",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h315_q8",
+  "topicId": "mat_h315",
+  "prompt": "若函数 y=f(x) 的定义域为 [-1,2]，则函数 g(x)=f(x+1) 的定义域是（　）",
+  "question": "若函数 y=f(x) 的定义域为 [-1,2]，则函数 g(x)=f(x+1) 的定义域是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "[-1,2]"
+   },
+   {
+    "label": "B",
+    "text": "[-2,1]"
+   },
+   {
+    "label": "C",
+    "text": "[0,3]"
+   },
+   {
+    "label": "D",
+    "text": "[-2,2]"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "g(x)=f(x+1) 有意义的条件是括号里的 x+1 落在 f 的定义域内，即 -1≤x+1≤2。不等式各边同减 1，得-2≤x≤1，所以 g(x) 的定义域是 [-2,1]。误选 [-1,2] 是直接把 f 的定义域照搬，忽略了自变量被替换成x+1 之后，整个图象向左平移了 1 个单位。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "[-1,2]"
+   },
+   {
+    "label": "B",
+    "text": "[-2,1]"
+   },
+   {
+    "label": "C",
+    "text": "[0,3]"
+   },
+   {
+    "label": "D",
+    "text": "[-2,2]"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h316_q6",
+  "topicId": "mat_h316",
+  "prompt": "已知一次函数 y=f(x) 的图象经过点 (1,3) 与 (2,5)，求 f(x) 的解析式，并求 f(4) 的值。",
+  "question": "已知一次函数 y=f(x) 的图象经过点 (1,3) 与 (2,5)，求 f(x) 的解析式，并求 f(4) 的值。",
+  "options": [],
+  "answer": "f(x)=2x+1，f(4)=9。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "用待定系数法：设 f(x)=kx+b，把 (1,3)、(2,5) 代入得 k+b=3 与 2k+b=5，两式相减得 k=2，回代得 b=1，所以解析式为 f(x)=2x+1；再把 x=4 代入得 f(4)=9。也可先用斜率公式 k=(5-3)/(2-1)=2，再取一点用点斜式写出。注意点的横纵坐标不能对调，否则斜率会算成 1/2。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "设 f(x)=kx+b，代入两点得 k+b=3 与 2k+b=5",
+   "两式相减得 k=2，回代得 b=1，解析式为 f(x)=2x+1",
+   "把 x=4 代入，f(4)=2×4+1=9"
+  ]
+ },
+ {
+  "id": "mat_h316_q7",
+  "topicId": "mat_h316",
+  "prompt": "已知分段函数 f(x)=2x (x<1)，f(x)=x+3 (x≥1)，则 f(1) 的值是（　）",
+  "question": "已知分段函数 f(x)=2x (x<1)，f(x)=x+3 (x≥1)，则 f(1) 的值是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "2"
+   },
+   {
+    "label": "B",
+    "text": "4"
+   },
+   {
+    "label": "C",
+    "text": "5"
+   },
+   {
+    "label": "D",
+    "text": "1"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "分段函数求值必须先判断自变量落在哪一段：x=1 满足 x≥1，应使用第二段的解析式 f(x)=x+3，得f(1)=1+3=4。若误用第一段 2x，会得到 2。分段函数最常见的错误就是不看清分界点属于哪一段就直接代入，尤其是分界点本身往往写在带等号的那一段。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "2"
+   },
+   {
+    "label": "B",
+    "text": "4"
+   },
+   {
+    "label": "C",
+    "text": "5"
+   },
+   {
+    "label": "D",
+    "text": "1"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h316_q8",
+  "topicId": "mat_h316",
+  "prompt": "某快递站规定：寄件不超过 1 kg 收费 8 元，超过 1 kg 的部分每千克加收 3 元。寄 x kg（x>1，x 为整数）的邮费 y = ____ 元。",
+  "question": "某快递站规定：寄件不超过 1 kg 收费 8 元，超过 1 kg 的部分每千克加收 3 元。寄 x kg（x>1，x 为整数）的邮费 y = ____ 元。",
+  "options": [],
+  "answer": "3x+5",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "超出首重的部分是 (x-1) kg，按每千克 3 元加收 3(x-1) 元，总邮费 y=8+3(x-1)=3x+5。写解析式的关键是把「超过 1 kg 的部分」正确地减掉首重，若直接写成 8+3x 就多算了 1 kg 的钱；同时实际问题要写清 x>1 的限制，x 只能取整数千克。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h317_q6",
+  "topicId": "mat_h317",
+  "prompt": "若 f(x) 是定义在 R 上的偶函数，且 f(3)=-2，则 f(-3)+f(3) 的值是 ____。",
+  "question": "若 f(x) 是定义在 R 上的偶函数，且 f(3)=-2，则 f(-3)+f(3) 的值是 ____。",
+  "options": [],
+  "answer": "-4",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "偶函数满足 f(-x)=f(x) 对任意 x 成立，所以 f(-3)=f(3)=-2，两个值相加得 -4。若把偶函数误当成奇函数，会得到 f(-3)=2、结果为 0。判断奇偶性只需比较 f(-x) 与 f(x) 是相等还是相反，相等对应偶函数。",
+  "subject": "math",
+  "choices": [],
+  "verify": "-2+(-2)",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h317_q7",
+  "topicId": "mat_h317",
+  "prompt": "下列函数中，在区间 (0,+∞) 上单调递减的是（　）",
+  "question": "下列函数中，在区间 (0,+∞) 上单调递减的是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "y=x^2"
+   },
+   {
+    "label": "B",
+    "text": "y=2x+3"
+   },
+   {
+    "label": "C",
+    "text": "y=x^3"
+   },
+   {
+    "label": "D",
+    "text": "y=-x+1"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "在 (0,+∞) 上，y=x^2、y=x^3 都随 x 增大而增大，y=2x+3 是一次函数且斜率 2 大于 0，也是增函数；y=-x+1 的斜率是 -1，小于 0，x 增大时函数值减小，所以在 (0,+∞) 上单调递减。判断单调性要看「x 增大时 y 是升还是降」，不能只凭图象大致的弯曲方向。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "y=x^2"
+   },
+   {
+    "label": "B",
+    "text": "y=2x+3"
+   },
+   {
+    "label": "C",
+    "text": "y=x^3"
+   },
+   {
+    "label": "D",
+    "text": "y=-x+1"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h317_q8",
+  "topicId": "mat_h317",
+  "prompt": "已知函数 f(x)=x^2-2ax+3 在区间 [1,+∞) 上是增函数，求实数 a 的取值范围，并说明理由。",
+  "question": "已知函数 f(x)=x^2-2ax+3 在区间 [1,+∞) 上是增函数，求实数 a 的取值范围，并说明理由。",
+  "options": [],
+  "answer": "a≤1，即 a 的取值范围是 (-∞,1]。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "配方得 f(x)=(x-a)^2+3-a^2，图象是开口向上的抛物线，对称轴为 x=a，递增区间为 [a,+∞)。题设要求f(x) 在 [1,+∞) 上递增，只要 [1,+∞) 是 [a,+∞) 的子集即可，故 a≤1。常见错误是把包含关系搞反写成a≥1，那实际上是要求 [a,+∞) 含于 [1,+∞)，与题设正好相反。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "配方得 f(x)=(x-a)^2+3-a^2，开口向上，对称轴为直线 x=a",
+   "开口向上的抛物线在对称轴右侧递增，递增区间为 [a,+∞)",
+   "由 [1,+∞) 含于 [a,+∞) 得 a≤1，即 a 的取值范围是 (-∞,1]"
+  ]
+ },
+ {
+  "id": "mat_h318_q6",
+  "topicId": "mat_h318",
+  "prompt": "函数 f(x)=-x^2+6x-2 的单调递增区间是（　）",
+  "question": "函数 f(x)=-x^2+6x-2 的单调递增区间是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "(-∞,3]"
+   },
+   {
+    "label": "B",
+    "text": "[3,+∞)"
+   },
+   {
+    "label": "C",
+    "text": "(-∞,6]"
+   },
+   {
+    "label": "D",
+    "text": "[6,+∞)"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "配方得 f(x)=-(x-3)^2+7，二次项系数 -1 小于 0，抛物线开口向下，对称轴为 x=3。开口向下时图象在对称轴左侧上升、右侧下降，所以单调递增区间是 (-∞,3]。选 [3,+∞) 是把开口方向看反；选含 6 的选项是把一次项系数 6 当成了对称轴的位置，忘记对称轴是 x=-b/(2a)=3。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "(-∞,3]"
+   },
+   {
+    "label": "B",
+    "text": "[3,+∞)"
+   },
+   {
+    "label": "C",
+    "text": "(-∞,6]"
+   },
+   {
+    "label": "D",
+    "text": "[6,+∞)"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h318_q7",
+  "topicId": "mat_h318",
+  "prompt": "函数 y=2x^2-8x+5 的最小值是 ____。",
+  "question": "函数 y=2x^2-8x+5 的最小值是 ____。",
+  "options": [],
+  "answer": "-3",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "配方得 y=2(x^2-4x)+5=2(x-2)^2-8+5=2(x-2)^2-3。因为 (x-2)^2≥0 且二次项系数 2 大于 0，当 x=2 时取到最小值 -3。也可用顶点横坐标 x=-b/(2a)=8/4=2 再代入求值。易错点是配方时漏掉括号外乘 2 产生的 -8，把最小值算成 5。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h318_q8",
+  "topicId": "mat_h318",
+  "prompt": "函数 f(x)=x^2-2x-3 在区间 [-1,2] 上的最大值与最小值的和是 ____。",
+  "question": "函数 f(x)=x^2-2x-3 在区间 [-1,2] 上的最大值与最小值的和是 ____。",
+  "options": [],
+  "answer": "-4",
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "对称轴 x=1 落在区间 [-1,2] 内，开口向上，所以最小值在顶点处取得：f(1)=1-2-3=-4。最大值在离对称轴较远的端点取得：f(-1)=1+2-3=0，f(2)=4-4-3=-3，比较得最大值为 0。两者之和为 0+(-4)=-4。易错点是只比较两端点的函数值当作最值，漏掉了区间内顶点处的最小值。",
+  "subject": "math",
+  "choices": [],
+  "verify": "(-1)**2-2*(-1)-3+((1)**2-2*1-3)",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h319_q6",
+  "topicId": "mat_h319",
+  "prompt": "下列函数中，既是奇函数又在区间 (0,+∞) 上单调递增的是（　）",
+  "question": "下列函数中，既是奇函数又在区间 (0,+∞) 上单调递增的是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "y=x^2"
+   },
+   {
+    "label": "B",
+    "text": "y=1/x"
+   },
+   {
+    "label": "C",
+    "text": "y=-x"
+   },
+   {
+    "label": "D",
+    "text": "y=x^3"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "y=x^3 满足 f(-x)=(-x)^3=-x^3=-f(x)，是奇函数，且在 (0,+∞) 上随 x 增大而增大。y=x^2 是偶函数，不满足奇函数这一条；y=1/x 虽是奇函数，但在 (0,+∞) 上递减；y=-x 是奇函数却递减。两个条件必须同时成立，只满足其中一个都不能选。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "y=x^2"
+   },
+   {
+    "label": "B",
+    "text": "y=1/x"
+   },
+   {
+    "label": "C",
+    "text": "y=-x"
+   },
+   {
+    "label": "D",
+    "text": "y=x^3"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h319_q7",
+  "topicId": "mat_h319",
+  "prompt": "判断函数 f(x)=x^3-x 的奇偶性，并写出判断过程。",
+  "question": "判断函数 f(x)=x^3-x 的奇偶性，并写出判断过程。",
+  "options": [],
+  "answer": "f(x)=x^3-x 是奇函数。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "判断奇偶性第一步看定义域：f(x)=x^3-x 的定义域是 R，关于原点对称，满足前提。第二步计算 f(-x)：f(-x)=(-x)^3-(-x)=-x^3+x，而 -f(x)=-(x^3-x)=-x^3+x，两者相等，即 f(-x)=-f(x)，所以 f(x) 是奇函数。常见错误是漏写定义域这一步，或者把 (-x)^3 写成 x^3，从而误判成偶函数。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "先看定义域：f(x)=x^3-x 的定义域为 R，关于原点对称",
+   "计算 f(-x)=(-x)^3-(-x)=-x^3+x",
+   "又 -f(x)=-x^3+x，故 f(-x)=-f(x)，f(x) 是奇函数"
+  ]
+ },
+ {
+  "id": "mat_h319_q8",
+  "topicId": "mat_h319",
+  "prompt": "已知 f(x) 是定义在 R 上的奇函数，当 x>0 时 f(x)=x^2-2x，则 f(-1) 的值是（　）",
+  "question": "已知 f(x) 是定义在 R 上的奇函数，当 x>0 时 f(x)=x^2-2x，则 f(-1) 的值是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "-1"
+   },
+   {
+    "label": "B",
+    "text": "1"
+   },
+   {
+    "label": "C",
+    "text": "3"
+   },
+   {
+    "label": "D",
+    "text": "-3"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "先求正数处的函数值：x=1 满足 x>0，用已知解析式得 f(1)=1-2=-1。再由奇函数满足 f(-x)=-f(x)，得 f(-1)=-f(1)=1。若直接把 x=-1 代进 x^2-2x 得 3，那就用错了范围——给定的解析式只在 x>0 时成立，负半轴的值必须靠奇偶性转化。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "-1"
+   },
+   {
+    "label": "B",
+    "text": "1"
+   },
+   {
+    "label": "C",
+    "text": "3"
+   },
+   {
+    "label": "D",
+    "text": "-3"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h320_q6",
+  "topicId": "mat_h320",
+  "prompt": "已知幂函数 f(x)=x^a 的图象经过点 (9,3)，则 a 的值是 ____。",
+  "question": "已知幂函数 f(x)=x^a 的图象经过点 (9,3)，则 a 的值是 ____。",
+  "options": [],
+  "answer": "1/2",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "图象经过点 (9,3) 说明 f(9)=3，即 9^a=3。把 9 写成 3^2，左边变为 3^(2a)，与 3^1 比较得 2a=1，所以a=1/2。也可由 a=log_9 3=1/2 直接得出。易错点是把 9^a=3 用错运算规律，或者把点 (9,3) 的横纵坐标对调代成 3^a=9，从而得出 a=2 的错误结果。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h320_q7",
+  "topicId": "mat_h320",
+  "prompt": "幂函数 y=x^3 在 x=3 时的函数值是 ____。",
+  "question": "幂函数 y=x^3 在 x=3 时的函数值是 ____。",
+  "options": [],
+  "answer": "27",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "把 x=3 代入 y=x^3，得 y=3^3=3×3×3=27。幂函数 y=x^a 的自变量在底数位置、指数是常数，要与指数函数y=a^x 区分开，两者在 x=3 处的值恰好都为 27 纯属数字巧合，概念上不能混。代入时注意 3^3 是三个 3 相乘，不是 3×3=9。",
+  "subject": "math",
+  "choices": [],
+  "verify": "3**3",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h320_q8",
+  "topicId": "mat_h320",
+  "prompt": "设 a=1.2^(1/2)，b=1.3^(1/2)，c=1.2^(-1/2)，则 a、b、c 的大小关系是（　）",
+  "question": "设 a=1.2^(1/2)，b=1.3^(1/2)，c=1.2^(-1/2)，则 a、b、c 的大小关系是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "a>b>c"
+   },
+   {
+    "label": "B",
+    "text": "b>c>a"
+   },
+   {
+    "label": "C",
+    "text": "b>a>c"
+   },
+   {
+    "label": "D",
+    "text": "c>b>a"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "考察幂函数 y=x^(1/2)，它在 (0,+∞) 上单调递增，又 1.3>1.2，所以 b=1.3^(1/2) 大于 a=1.2^(1/2)。再看 c=1.2^(-1/2)=1/1.2^(1/2)，因为 1.2^(1/2) 大于 1，所以 c 小于 1，而 a 大于 1，故 c 最小。合起来 b>a>c。错在把负指数理解成使数值变大，或者把 1.2 与 1.3 的底数大小关系用反。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "a>b>c"
+   },
+   {
+    "label": "B",
+    "text": "b>c>a"
+   },
+   {
+    "label": "C",
+    "text": "b>a>c"
+   },
+   {
+    "label": "D",
+    "text": "c>b>a"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h321_q6",
+  "topicId": "mat_h321",
+  "prompt": "某商品每件进价 40 元，售价 50 元时每天可卖出 200 件；售价每提高 1 元，每天少卖 10 件。设售价提高 x 元（x 为非负整数），求每天利润 y（元）关于 x 的函数解析式，并写出 x 的取值范围。",
+  "question": "某商品每件进价 40 元，售价 50 元时每天可卖出 200 件；售价每提高 1 元，每天少卖 10 件。设售价提高 x 元（x 为非负整数），求每天利润 y（元）关于 x 的函数解析式，并写出 x 的取值范围。",
+  "options": [],
+  "answer": "y=(10+x)(200-10x)=-10x^2+100x+2000，其中 0≤x<20 且 x 为整数。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "利润等于每件利润乘销量。提价 x 元后每件利润为 50-40+x=10+x 元，日销量减少 10x 件变为 200-10x 件，两者相乘并展开得 y=-10x^2+100x+2000。取值范围由销量必须为正决定：200-10x>0，得 x<20，再结合x≥0 得 0≤x<20。忽略这个定义域，就会把「少卖件数超过总销量」的不合理情形也算进函数。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "提价 x 元后每件利润为 10+x 元，日销量为 200-10x 件",
+   "利润=每件利润×销量，得 y=(10+x)(200-10x)=-10x^2+100x+2000",
+   "由销量为正得 200-10x>0，即 0≤x<20 且 x 为整数"
+  ]
+ },
+ {
+  "id": "mat_h321_q7",
+  "topicId": "mat_h321",
+  "prompt": "某工厂生产 x 件产品的总成本为 C=3x+200（元），每件售价 7 元。要使利润不低于 200 元，则 x 应满足（　）",
+  "question": "某工厂生产 x 件产品的总成本为 C=3x+200（元），每件售价 7 元。要使利润不低于 200 元，则 x 应满足（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "x≥50"
+   },
+   {
+    "label": "B",
+    "text": "x≥100"
+   },
+   {
+    "label": "C",
+    "text": "x≤100"
+   },
+   {
+    "label": "D",
+    "text": "x>100"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "利润等于销售收入减总成本：W=7x-(3x+200)=4x-200。要求利润不低于 200 元，即 4x-200≥200，解得4x≥400，x≥100。选 x>100 是错把「不低于」当成严格大于，漏掉了 x=100 时利润恰好等于 200 元、同样符合要求的情形；选 x≤50 则把不等号方向解反了。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "x≥50"
+   },
+   {
+    "label": "B",
+    "text": "x≥100"
+   },
+   {
+    "label": "C",
+    "text": "x≤100"
+   },
+   {
+    "label": "D",
+    "text": "x>100"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h321_q8",
+  "topicId": "mat_h321",
+  "prompt": "用长 24 m 的篱笆靠墙围成一个矩形菜园，墙足够长并作为矩形的一边，篱笆只围另外三边，则菜园面积的最大值是 ____ 平方米。",
+  "question": "用长 24 m 的篱笆靠墙围成一个矩形菜园，墙足够长并作为矩形的一边，篱笆只围另外三边，则菜园面积的最大值是 ____ 平方米。",
+  "options": [],
+  "answer": "72",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "设垂直于墙的边长为 x m，则平行于墙的边长为 (24-2x) m，面积 S=x(24-2x)=-2x^2+24x=-2(x-6)^2+72。因为二次项系数 -2 小于 0，当 x=6 时面积取最大值 72，此时另一边长 24-12=12 m。易错点是按四边都用篱笆去算，得边长 6 m、面积 36 平方米，忽略了靠墙的那一边不消耗篱笆。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h322_q6",
+  "topicId": "mat_h322",
+  "prompt": "计算 16^(3/4) 的值是 ____。",
+  "question": "计算 16^(3/4) 的值是 ____。",
+  "options": [],
+  "answer": "8",
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "把 16 写成 2^4，则 16^(3/4)=(2^4)^(3/4)=2^(4×3/4)=2^3=8。也可先算 16^(1/4)=2，再把结果立方得 8。易错点是把分数指数幂的分子分母用反，算成 16^(4/3)，或者把 16^(3/4) 误当成 16×3/4=12。",
+  "subject": "math",
+  "choices": [],
+  "verify": "16**(3/4)",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h322_q7",
+  "topicId": "mat_h322",
+  "prompt": "把 ∛(a^5)（a>0）写成分数指数幂的形式，结果是（　）",
+  "question": "把 ∛(a^5)（a>0）写成分数指数幂的形式，结果是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "a^(3/5)"
+   },
+   {
+    "label": "B",
+    "text": "a^(8/3)"
+   },
+   {
+    "label": "C",
+    "text": "a^(15)"
+   },
+   {
+    "label": "D",
+    "text": "a^(5/3)"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "由 a^(m/n)=ⁿ√(a^m)（a>0）可知，根式的根指数 n 是分数指数的分母，被开方数的指数 m 是分子，所以∛(a^5)=a^(5/3)。写成 a^(3/5) 是把分子分母颠倒，这是根式与分数指数幂互化时最普遍的失误；写成a^(15) 则是把根指数与被开方数指数直接相乘。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "a^(3/5)"
+   },
+   {
+    "label": "B",
+    "text": "a^(8/3)"
+   },
+   {
+    "label": "C",
+    "text": "a^(15)"
+   },
+   {
+    "label": "D",
+    "text": "a^(5/3)"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h322_q8",
+  "topicId": "mat_h322",
+  "prompt": "已知 a>0，且 a^(1/2)+a^(-1/2)=3，求 a+a^(-1) 的值，并说明所用的运算性质。",
+  "question": "已知 a>0，且 a^(1/2)+a^(-1/2)=3，求 a+a^(-1) 的值，并说明所用的运算性质。",
+  "options": [],
+  "answer": "a+a^(-1)=7。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "处理「和」与「平方和」的关系，常用手段是把已知等式两边平方：左边平方为 a+2·a^(1/2)·a^(-1/2)+a^(-1)，右边平方为 9。由同底数幂相乘、指数相加得 a^(1/2)·a^(-1/2)=a^0=1，所以中间项等于 2，即a+a^(-1)+2=9，从而 a+a^(-1)=7。易错处是漏掉中间项 2，直接写成 a+a^(-1)=9。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "把 a^(1/2)+a^(-1/2)=3 两边平方，右边为 9",
+   "左边平方展开为 a+2·a^(1/2)·a^(-1/2)+a^(-1)，由 a^(1/2)·a^(-1/2)=a^0=1 得中间项为 2",
+   "所以 a+a^(-1)+2=9，即 a+a^(-1)=7"
+  ]
+ }
+]

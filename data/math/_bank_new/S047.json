@@ -1,0 +1,884 @@
+[
+ {
+  "id": "mat_h439_q6",
+  "topicId": "mat_h439",
+  "prompt": "直线 4x−3y+10=0 与圆 (x+2)²+(y−3)²=9 的位置关系是（　）",
+  "question": "直线 4x−3y+10=0 与圆 (x+2)²+(y−3)²=9 的位置关系是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "相离"
+   },
+   {
+    "label": "B",
+    "text": "相切"
+   },
+   {
+    "label": "C",
+    "text": "相交且直线不过圆心"
+   },
+   {
+    "label": "D",
+    "text": "相交且直线过圆心"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "圆 (x+2)²+(y−3)²=9 的圆心为 (−2, 3)，半径 r=3。圆心到直线的距离 d=|4×(−2)−3×3+10|/√(4²+3²)=|−7|/5=1.4。因为 d<r，所以直线与圆相交；再把圆心代入直线左边得 −8−9+10=−7≠0，说明直线不经过圆心，故相交且不过圆心。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "相离"
+   },
+   {
+    "label": "B",
+    "text": "相切"
+   },
+   {
+    "label": "C",
+    "text": "相交且直线不过圆心"
+   },
+   {
+    "label": "D",
+    "text": "相交且直线过圆心"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h439_q7",
+  "topicId": "mat_h439",
+  "prompt": "两圆 x²+y²=16 与 (x−5)²+y²=9 的位置关系是____。",
+  "question": "两圆 x²+y²=16 与 (x−5)²+y²=9 的位置关系是____。",
+  "options": [],
+  "answer": "相交",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "两圆圆心分别为 (0, 0) 与 (5, 0)，半径分别为 r₁=4、r₂=3，圆心距 d=5。因为 |r₁−r₂|=1<d=5<r₁+r₂=7，所以两圆相交，公共点恰有两个。若只看 d 是否大于半径和，会漏掉内切的一端，判断两圆关系必须同时比较和与差。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h439_q8",
+  "topicId": "mat_h439",
+  "prompt": "圆 x²+y²=25 与圆 (x−8)²+y²=25 的公共弦长是多少？",
+  "question": "圆 x²+y²=25 与圆 (x−8)²+y²=25 的公共弦长是多少？",
+  "options": [],
+  "answer": 6,
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "两圆半径都是 5，圆心分别为 (0, 0) 与 (8, 0)，圆心距 d=8。连心线垂直于公共弦并把它平分，圆心到公共弦的距离为 d/2=4，由勾股关系得半弦长为 √(5²−4²)=3，所以公共弦长为 2×3=6。易错点是把 d 当成弦心距却仍用 r²−d² 计算。",
+  "subject": "math",
+  "choices": [],
+  "verify": "2*(25-4**2)**0.5",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h440_q6",
+  "topicId": "mat_h440",
+  "prompt": "判断直线 2x+y−5=0 与圆 x²+y²−4x+2y=0 的位置关系，结果是（　）",
+  "question": "判断直线 2x+y−5=0 与圆 x²+y²−4x+2y=0 的位置关系，结果是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "相离"
+   },
+   {
+    "label": "B",
+    "text": "相切"
+   },
+   {
+    "label": "C",
+    "text": "相交"
+   },
+   {
+    "label": "D",
+    "text": "直线经过圆心"
+   }
+  ],
+  "answer": "C",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "把圆的方程配方得 (x−2)²+(y+1)²=5，圆心为 (2, −1)，半径 r=√5≈2.24。圆心到直线 2x+y−5=0 的距离 d=|2×2+(−1)−5|/√5=2/√5≈0.89。因为 d<r，所以直线与圆相交。若配方时把圆心误读成 (2, 1)，代出的距离会算成 0，从而误判为直线经过圆心，所以先正确配方定圆心是本题第一步。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "相离"
+   },
+   {
+    "label": "B",
+    "text": "相切"
+   },
+   {
+    "label": "C",
+    "text": "相交"
+   },
+   {
+    "label": "D",
+    "text": "直线经过圆心"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h440_q7",
+  "topicId": "mat_h440",
+  "prompt": "圆 x²+y²=2x 的圆心坐标和半径分别是多少？直线 y=x+1 与这个圆有几个公共点？",
+  "question": "圆 x²+y²=2x 的圆心坐标和半径分别是多少？直线 y=x+1 与这个圆有几个公共点？",
+  "options": [],
+  "answer": "圆心为 (1, 0)，半径为 1；直线与圆相离，公共点个数为 0。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "圆 x²+y²=2x 配方后为 (x−1)²+y²=1，圆心 (1, 0)，半径 r=1。把直线写成 x−y+1=0，圆心到直线的距离 d=|1−0+1|/√2=√2≈1.41>1，d>r 说明直线与圆没有公共点，是相离关系。判断公共点个数只须比较 d 与 r，不必解方程组。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "把 x²+y²=2x 配方得 (x−1)²+y²=1，圆心 (1, 0)、半径 1",
+   "圆心到直线 x−y+1=0 的距离 d=2/√2=√2",
+   "因为 √2>1，即 d>r，所以直线与圆相离，公共点个数为 0"
+  ]
+ },
+ {
+  "id": "mat_h440_q8",
+  "topicId": "mat_h440",
+  "prompt": "直线 4x−3y−25=0 被圆 (x−1)²+(y+2)²=25 截得的弦长是（　）",
+  "question": "直线 4x−3y−25=0 被圆 (x−1)²+(y+2)²=25 截得的弦长是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "6"
+   },
+   {
+    "label": "B",
+    "text": "8"
+   },
+   {
+    "label": "C",
+    "text": "10"
+   },
+   {
+    "label": "D",
+    "text": "12"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "圆心为 (1, −2)，半径 r=5。圆心到直线的距离 d=|4×1−3×(−2)−25|/√(4²+(−3)²)=|4+6−25|/5=3。由半弦长 √(r²−d²)=√(25−9)=4 得弦长 2×4=8。常见错误是直接把 d=3 当半弦长，或用 r−d=2 作半弦长。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "6"
+   },
+   {
+    "label": "B",
+    "text": "8"
+   },
+   {
+    "label": "C",
+    "text": "10"
+   },
+   {
+    "label": "D",
+    "text": "12"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h441_q6",
+  "topicId": "mat_h441",
+  "prompt": "两圆 x²+y²−4x=0 与 x²+y²−4y+3=0 的位置关系是____。",
+  "question": "两圆 x²+y²−4x=0 与 x²+y²−4y+3=0 的位置关系是____。",
+  "options": [],
+  "answer": "相交",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "第一个圆配方为 (x−2)²+y²=4，圆心 (2, 0)、半径 2；第二个圆配方为 x²+(y−2)²=1，圆心 (0, 2)、半径 1。圆心距 d=√(2²+2²)=2√2≈2.83，而 |2−1|=1<2.83<3=2+1，故两圆相交。判断时先配方读出圆心与半径是关键一步。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h441_q7",
+  "topicId": "mat_h441",
+  "prompt": "两圆 (x+1)²+(y−1)²=4 与 (x−2)²+(y−1)²=9 的圆心距是多少？",
+  "question": "两圆 (x+1)²+(y−1)²=4 与 (x−2)²+(y−1)²=9 的圆心距是多少？",
+  "options": [],
+  "answer": 3,
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "两圆圆心分别为 (−1, 1) 与 (2, 1)，纵坐标相同，所以圆心距等于横坐标之差的绝对值 |2−(−1)|=3。两圆半径为 2 与 3，因 |3−2|=1<3<5=3+2，两圆相交。用两点间距离公式 √((2+1)²+(1−1)²)=3 结果相同。",
+  "subject": "math",
+  "choices": [],
+  "verify": "3",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h441_q8",
+  "topicId": "mat_h441",
+  "prompt": "圆 x²+y²=4 与圆 x²+y²−2x+4y−4=0 的公共弦所在直线的方程是（　）",
+  "question": "圆 x²+y²=4 与圆 x²+y²−2x+4y−4=0 的公共弦所在直线的方程是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "x−2y=0"
+   },
+   {
+    "label": "B",
+    "text": "x+2y=0"
+   },
+   {
+    "label": "C",
+    "text": "2x−y=0"
+   },
+   {
+    "label": "D",
+    "text": "x−2y−4=0"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "两圆都相交时，把两方程相减可消去二次项：x²+y²−2x+4y−4−(x²+y²−4)=0，即 −2x+4y=0，化简得 x−2y=0，这就是公共弦所在直线的方程。第二个圆配方为 (x−1)²+(y+2)²=9，圆心距 √5 介于 1 与 5 之间，两圆确实相交，公共弦存在。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "x−2y=0"
+   },
+   {
+    "label": "B",
+    "text": "x+2y=0"
+   },
+   {
+    "label": "C",
+    "text": "2x−y=0"
+   },
+   {
+    "label": "D",
+    "text": "x−2y−4=0"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h442_q6",
+  "topicId": "mat_h442",
+  "prompt": "已知两定点 F₁(−4, 0)、F₂(4, 0)，动点 P 满足 |PF₁|+|PF₂|=10，求 a、c、b 的值，并说明 P 的轨迹是什么图形。",
+  "question": "已知两定点 F₁(−4, 0)、F₂(4, 0)，动点 P 满足 |PF₁|+|PF₂|=10，求 a、c、b 的值，并说明 P 的轨迹是什么图形。",
+  "options": [],
+  "answer": "a=5，c=4，b=3；轨迹是以 F₁、F₂ 为焦点、焦点在 x 轴上的椭圆 x²/25+y²/9=1。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "到两定点距离之和为常数 2a=10，故 a=5；两定点距离 2c=8，故 c=4，由 b²=a²−c² 得 b²=9，b=3。因为 10>8，即常数大于焦距，轨迹才是椭圆；若常数恰等于 8 轨迹退化为线段，小于 8 则不存在。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "由 2a=10 得 a=5，由焦距 2c=8 得 c=4",
+   "由 b²=a²−c²=25−16=9 得 b=3",
+   "因为 10>|F₁F₂|=8，轨迹是焦点在 x 轴上的椭圆 x²/25+y²/9=1"
+  ]
+ },
+ {
+  "id": "mat_h442_q7",
+  "topicId": "mat_h442",
+  "prompt": "椭圆 x²/36+y²/11=1 上一点到两个焦点的距离之和是（　）",
+  "question": "椭圆 x²/36+y²/11=1 上一点到两个焦点的距离之和是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "12"
+   },
+   {
+    "label": "B",
+    "text": "5"
+   },
+   {
+    "label": "C",
+    "text": "6"
+   },
+   {
+    "label": "D",
+    "text": "25"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "椭圆 x²/36+y²/11=1 中 a²=36，a=6，b²=11，c²=36−11=25，c=5。由椭圆的定义，椭圆上任一点到两个焦点的距离之和等于 2a=12。干扰项 5 是半焦距，6 只是 a，25 是 c²，都没有用到定义中的 2a。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "12"
+   },
+   {
+    "label": "B",
+    "text": "5"
+   },
+   {
+    "label": "C",
+    "text": "6"
+   },
+   {
+    "label": "D",
+    "text": "25"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h442_q8",
+  "topicId": "mat_h442",
+  "prompt": "椭圆 x²/100+y²/64=1 上一点 P 到左焦点的距离为 12，则 P 到右焦点的距离为____。",
+  "question": "椭圆 x²/100+y²/64=1 上一点 P 到左焦点的距离为 12，则 P 到右焦点的距离为____。",
+  "options": [],
+  "answer": "8",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "椭圆中 a²=100，a=10，所以椭圆上任一点到两焦点距离之和为 2a=20。已知到左焦点的距离为 12，则到右焦点的距离为 20−12=8。这里不必求焦点坐标，直接用定义作和差即可；注意不能用 b=8 去凑答案。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h443_q6",
+  "topicId": "mat_h443",
+  "prompt": "若椭圆 x²/m+y²/9=1 的焦距为 8，且焦点在 x 轴上，则 m 的值是多少？",
+  "question": "若椭圆 x²/m+y²/9=1 的焦距为 8，且焦点在 x 轴上，则 m 的值是多少？",
+  "options": [],
+  "answer": 25,
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "焦点在 x 轴上时 a²=m，b²=9，且 m>9。焦距为 8，即 2c=8，c=4，由 c²=a²−b² 得 16=m−9，所以 m=25，满足 m>9，椭圆为 x²/25+y²/9=1。若把 m 与 9 的位置弄反，会解出 m=−7 这样的错误结果。",
+  "subject": "math",
+  "choices": [],
+  "verify": "9+4**2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h443_q7",
+  "topicId": "mat_h443",
+  "prompt": "焦点在 x 轴上，且经过点 (2, 0) 与 (0, 1) 的椭圆的标准方程是（　）",
+  "question": "焦点在 x 轴上，且经过点 (2, 0) 与 (0, 1) 的椭圆的标准方程是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "x²/2+y²=1"
+   },
+   {
+    "label": "B",
+    "text": "x²/4+y²/2=1"
+   },
+   {
+    "label": "C",
+    "text": "y²/4+x²=1"
+   },
+   {
+    "label": "D",
+    "text": "x²/4+y²=1"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "椭圆过 (2, 0)，说明长轴端点在 x 轴上，a=2，a²=4；椭圆过 (0, 1)，说明短轴端点纵坐标为 1，b=1。所以标准方程为 x²/4+y²=1。检验 B：把 (0, 1) 代入得 1/2≠1，不成立；C 的焦点在 y 轴上，与题设矛盾。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "x²/2+y²=1"
+   },
+   {
+    "label": "B",
+    "text": "x²/4+y²/2=1"
+   },
+   {
+    "label": "C",
+    "text": "y²/4+x²=1"
+   },
+   {
+    "label": "D",
+    "text": "x²/4+y²=1"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h443_q8",
+  "topicId": "mat_h443",
+  "prompt": "已知椭圆的两个焦点为 (−2, 0)、(2, 0)，且经过点 (0, 3)，求它的标准方程和离心率。",
+  "question": "已知椭圆的两个焦点为 (−2, 0)、(2, 0)，且经过点 (0, 3)，求它的标准方程和离心率。",
+  "options": [],
+  "answer": "标准方程为 x²/13+y²/9=1，离心率 e=2√13/13。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "焦点在 x 轴上得 c=2。点 (0, 3) 在 y 轴上且是椭圆上的点，说明它是短轴端点，b=3。由 a²=b²+c²=9+4=13，标准方程为 x²/13+y²/9=1。离心率 e=c/a=2/√13，分母有理化后为 2√13/13，约等于 0.55。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "由焦点得 c=2、a²=b²+c²",
+   "点 (0, 3) 是短轴端点，故 b=3，b²=9",
+   "a²=9+4=13，方程为 x²/13+y²/9=1，离心率 e=c/a=2/√13=2√13/13"
+  ]
+ },
+ {
+  "id": "mat_h444_q6",
+  "topicId": "mat_h444",
+  "prompt": "椭圆 x²/169+y²/25=1 的短轴长是（　）",
+  "question": "椭圆 x²/169+y²/25=1 的短轴长是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "5"
+   },
+   {
+    "label": "B",
+    "text": "10"
+   },
+   {
+    "label": "C",
+    "text": "13"
+   },
+   {
+    "label": "D",
+    "text": "26"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "由方程得 a²=169，a=13；b²=25，b=5。短轴长是 2b=10，长轴长才是 2a=26。选项 5 只是半短轴 b，13 是半长轴，26 是长轴长，区分「半轴」与「轴长」是本题的关键。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "5"
+   },
+   {
+    "label": "B",
+    "text": "10"
+   },
+   {
+    "label": "C",
+    "text": "13"
+   },
+   {
+    "label": "D",
+    "text": "26"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h444_q7",
+  "topicId": "mat_h444",
+  "prompt": "若椭圆 x²/8+y²/b²=1（b>0）的离心率为 1/2，则 b²=____。",
+  "question": "若椭圆 x²/8+y²/b²=1（b>0）的离心率为 1/2，则 b²=____。",
+  "options": [],
+  "answer": "6",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "该椭圆 a²=8，c²=a²−b²=8−b²，离心率 e=c/a，两边平方得 e²=(8−b²)/8=1/4。解方程 8−b²=2 得 b²=6，此时 b=√6<√8=a，符合椭圆的要求。若直接把 e 当成 c 与 a 的一次关系而不平方，容易算错。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h444_q8",
+  "topicId": "mat_h444",
+  "prompt": "椭圆 x²/49+y²/24=1 上一点到两个焦点距离之积的最大值是多少？",
+  "question": "椭圆 x²/49+y²/24=1 上一点到两个焦点距离之积的最大值是多少？",
+  "options": [],
+  "answer": 49,
+  "type": "numeric",
+  "difficulty": "standard",
+  "explanation": "由 a²=49 得 a=7，所以椭圆上任一点到两焦点的距离之和恒为 2a=14。两段距离之和固定为 14 时，它们的积在两者相等时取最大值，即 (14/2)²=49，此时该点位于短轴端点。也可用 4a² 减去差的平方来说明。",
+  "subject": "math",
+  "choices": [],
+  "verify": "(14/2)**2",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h445_q6",
+  "topicId": "mat_h445",
+  "prompt": "平面内到 F₁(−5, 0)、F₂(5, 0) 的距离之差的绝对值等于 6 的点的轨迹是（　）",
+  "question": "平面内到 F₁(−5, 0)、F₂(5, 0) 的距离之差的绝对值等于 6 的点的轨迹是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "以 F₁、F₂ 为焦点，实轴长为 6 的双曲线"
+   },
+   {
+    "label": "B",
+    "text": "以 F₁、F₂ 为焦点，实轴长为 12 的双曲线"
+   },
+   {
+    "label": "C",
+    "text": "以 F₁、F₂ 为焦点，焦距为 6 的椭圆"
+   },
+   {
+    "label": "D",
+    "text": "线段 F₁F₂"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "到两定点距离之差的绝对值为常数 2a=6，且 0<6<|F₁F₂|=10，符合双曲线的定义，故轨迹是以 F₁、F₂ 为焦点的双曲线，实轴长 2a=6。实轴长写成 12 是把 2a 当成 a；差的绝对值不是和，所以不是椭圆；常数大于焦距时轨迹才不存在。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "以 F₁、F₂ 为焦点，实轴长为 6 的双曲线"
+   },
+   {
+    "label": "B",
+    "text": "以 F₁、F₂ 为焦点，实轴长为 12 的双曲线"
+   },
+   {
+    "label": "C",
+    "text": "以 F₁、F₂ 为焦点，焦距为 6 的椭圆"
+   },
+   {
+    "label": "D",
+    "text": "线段 F₁F₂"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h445_q7",
+  "topicId": "mat_h445",
+  "prompt": "已知双曲线 y²/25−x²/144=1，写出它的 a、b、c，并求焦距与渐近线方程。",
+  "question": "已知双曲线 y²/25−x²/144=1，写出它的 a、b、c，并求焦距与渐近线方程。",
+  "options": [],
+  "answer": "a=5，b=12，c=13，焦距为 26，渐近线方程为 y=±(5/12)x。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "方程 y²/25−x²/144=1 的 a²=25、b²=144，故 a=5、b=12，双曲线焦点在 y 轴上。由 c²=a²+b²=169 得 c=13，焦距为 2c=26。焦点在 y 轴时渐近线是 y=±(a/b)x，即 y=±(5/12)x，与焦点在 x 轴时的 b/a 恰好互为倒数。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "由 y²/25−x²/144=1 得 a=5、b=12，焦点在 y 轴上",
+   "由 c²=a²+b²=25+144=169 得 c=13，焦距 2c=26",
+   "焦点在 y 轴上的渐近线为 y=±(a/b)x=±(5/12)x"
+  ]
+ },
+ {
+  "id": "mat_h445_q8",
+  "topicId": "mat_h445",
+  "prompt": "若双曲线 x²/m−y²/9=1（m>0）的一条渐近线方程为 y=(3/2)x，则 m 的值是（　）",
+  "question": "若双曲线 x²/m−y²/9=1（m>0）的一条渐近线方程为 y=(3/2)x，则 m 的值是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "2"
+   },
+   {
+    "label": "B",
+    "text": "4"
+   },
+   {
+    "label": "C",
+    "text": "9/4"
+   },
+   {
+    "label": "D",
+    "text": "16"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "焦点在 x 轴的双曲线 x²/m−y²/9=1 的渐近线为 y=±(3/√m)x。已知一条为 y=(3/2)x，故 3/√m=3/2，解得 √m=2，即 m=4。选项 9/4 是把斜率平方后直接倒过来，16 是把 √m 当成了 m，都是没有回到 m 的常见错误。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "2"
+   },
+   {
+    "label": "B",
+    "text": "4"
+   },
+   {
+    "label": "C",
+    "text": "9/4"
+   },
+   {
+    "label": "D",
+    "text": "16"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h446_q6",
+  "topicId": "mat_h446",
+  "prompt": "焦点在 x 轴上，且 a=6、b=8 的双曲线的标准方程是____。",
+  "question": "焦点在 x 轴上，且 a=6、b=8 的双曲线的标准方程是____。",
+  "options": [],
+  "answer": "x²/36−y²/64=1",
+  "type": "fill",
+  "difficulty": "basic",
+  "explanation": "焦点在 x 轴上时标准方程形如 x²/a²−y²/b²=1。已知 a=6、b=8，故 a²=36、b²=64，方程为 x²/36−y²/64=1。若把 a、b 写反成 y²/36−x²/64=1，焦点就跑到了 y 轴上，与题设「焦点在 x 轴上」矛盾。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h446_q7",
+  "topicId": "mat_h446",
+  "prompt": "双曲线 x²/25−y²/144=1 的两个焦点之间的距离是多少？",
+  "question": "双曲线 x²/25−y²/144=1 的两个焦点之间的距离是多少？",
+  "options": [],
+  "answer": 26,
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "由方程得 a²=25、b²=144，由 c²=a²+b²=169 得 c=13，两个焦点之间的距离就是焦距 2c=26。双曲线用加法算 c，与椭圆的 c²=a²−b² 相反；另外两个焦点之间的距离是 2c，不是 c。",
+  "subject": "math",
+  "choices": [],
+  "verify": "2*(25+144)**0.5",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h446_q8",
+  "topicId": "mat_h446",
+  "prompt": "与双曲线 x²/9−y²/16=1 有相同的渐近线，且经过点 (6, 4) 的双曲线的标准方程是（　）",
+  "question": "与双曲线 x²/9−y²/16=1 有相同的渐近线，且经过点 (6, 4) 的双曲线的标准方程是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "x²/48−y²/27=1"
+   },
+   {
+    "label": "B",
+    "text": "x²/18−y²/32=1"
+   },
+   {
+    "label": "C",
+    "text": "x²/36−y²/64=1"
+   },
+   {
+    "label": "D",
+    "text": "x²/27−y²/48=1"
+   }
+  ],
+  "answer": "D",
+  "type": "choice",
+  "difficulty": "standard",
+  "explanation": "与该双曲线共渐近线的双曲线可设为 x²/9−y²/16=λ（λ≠0）。代入点 (6, 4) 得 36/9−16/16=4−1=3，即 λ=3，所以方程为 x²/27−y²/48=1。把 λ 直接当分母相加、或把 4 与 1 相减算错，都会落到干扰项上。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "x²/48−y²/27=1"
+   },
+   {
+    "label": "B",
+    "text": "x²/18−y²/32=1"
+   },
+   {
+    "label": "C",
+    "text": "x²/36−y²/64=1"
+   },
+   {
+    "label": "D",
+    "text": "x²/27−y²/48=1"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h447_q6",
+  "topicId": "mat_h447",
+  "prompt": "已知双曲线 y²/9−x²/16=1，写出它的实轴长、虚轴长和离心率。",
+  "question": "已知双曲线 y²/9−x²/16=1，写出它的实轴长、虚轴长和离心率。",
+  "options": [],
+  "answer": "实轴长为 6，虚轴长为 8，离心率 e=5/3。",
+  "type": "short-answer",
+  "difficulty": "basic",
+  "explanation": "方程中 a²=9、b²=16，故 a=3、b=4，实轴长 2a=6，虚轴长 2b=8。双曲线 c²=a²+b²=25，c=5，所以离心率 e=c/a=5/3≈1.67。注意虚轴长是 2b 而非 b，且双曲线的 c 比 a 大，e 必然大于 1。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "由 y²/9−x²/16=1 得 a=3、b=4，实轴长 2a=6，虚轴长 2b=8",
+   "由 c²=a²+b²=25 得 c=5",
+   "离心率 e=c/a=5/3"
+  ]
+ },
+ {
+  "id": "mat_h447_q7",
+  "topicId": "mat_h447",
+  "prompt": "双曲线 4x²−y²=4 的顶点坐标是（　）",
+  "question": "双曲线 4x²−y²=4 的顶点坐标是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "(±1, 0)"
+   },
+   {
+    "label": "B",
+    "text": "(0, ±2)"
+   },
+   {
+    "label": "C",
+    "text": "(±2, 0)"
+   },
+   {
+    "label": "D",
+    "text": "(0, ±1)"
+   }
+  ],
+  "answer": "A",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "把 4x²−y²=4 两边除以 4 得 x²−y²/4=1，即 a²=1、b²=4，焦点与实轴都在 x 轴上，顶点为 (±a, 0)，即 (±1, 0)。选项 (0, ±2) 把虚轴端点当成了顶点，(±2, 0) 则是把 b 当作 a 的结果。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "(±1, 0)"
+   },
+   {
+    "label": "B",
+    "text": "(0, ±2)"
+   },
+   {
+    "label": "C",
+    "text": "(±2, 0)"
+   },
+   {
+    "label": "D",
+    "text": "(0, ±1)"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h447_q8",
+  "topicId": "mat_h447",
+  "prompt": "若双曲线 x²/a²−y²/b²=1 的渐近线方程为 y=±(1/2)x，则它的离心率是____。",
+  "question": "若双曲线 x²/a²−y²/b²=1 的渐近线方程为 y=±(1/2)x，则它的离心率是____。",
+  "options": [],
+  "answer": "√5/2",
+  "type": "fill",
+  "difficulty": "standard",
+  "explanation": "焦点在 x 轴的双曲线渐近线为 y=±(b/a)x，已知斜率为 1/2，故 b/a=1/2，即 b²=a²/4。由 c²=a²+b²=5a²/4 得 e=c/a=√5/2。也可用 e²=1+(b/a)²=1+1/4=5/4 直接开方，结果一致且更快。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h448_q6",
+  "topicId": "mat_h448",
+  "prompt": "抛物线 x²=12y 的焦点坐标中的纵坐标是多少？",
+  "question": "抛物线 x²=12y 的焦点坐标中的纵坐标是多少？",
+  "options": [],
+  "answer": 3,
+  "type": "numeric",
+  "difficulty": "basic",
+  "explanation": "抛物线 x²=2py 中 2p=12，p=6，开口向上，焦点为 (0, p/2)=(0, 3)，所以纵坐标是 3。常见错误是把 p 直接当成焦点到顶点的距离，写成 6，实际上焦点到顶点的距离是 p/2。",
+  "subject": "math",
+  "choices": [],
+  "verify": "12/4",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h448_q7",
+  "topicId": "mat_h448",
+  "prompt": "关于抛物线 y²=−6x，下列说法正确的是（　）",
+  "question": "关于抛物线 y²=−6x，下列说法正确的是（　）",
+  "options": [
+   {
+    "label": "A",
+    "text": "开口向右，焦点为 (3/2, 0)"
+   },
+   {
+    "label": "B",
+    "text": "开口向左，焦点为 (−3/2, 0)"
+   },
+   {
+    "label": "C",
+    "text": "开口向左，准线为 x=−3/2"
+   },
+   {
+    "label": "D",
+    "text": "开口向下，焦点为 (0, −3/2)"
+   }
+  ],
+  "answer": "B",
+  "type": "choice",
+  "difficulty": "basic",
+  "explanation": "y²=2px 中 2p=−6，p=−3<0，抛物线开口向左，焦点为 (p/2, 0)=(−3/2, 0)，准线为 x=−p/2=3/2。所以只有「开口向左，焦点为 (−3/2, 0)」正确。准线应为 x=3/2 而不是 x=−3/2，开口方向由 p 的符号决定。",
+  "subject": "math",
+  "choices": [
+   {
+    "label": "A",
+    "text": "开口向右，焦点为 (3/2, 0)"
+   },
+   {
+    "label": "B",
+    "text": "开口向左，焦点为 (−3/2, 0)"
+   },
+   {
+    "label": "C",
+    "text": "开口向左，准线为 x=−3/2"
+   },
+   {
+    "label": "D",
+    "text": "开口向下，焦点为 (0, −3/2)"
+   }
+  ],
+  "verify": "",
+  "keypoints": []
+ },
+ {
+  "id": "mat_h448_q8",
+  "topicId": "mat_h448",
+  "prompt": "已知抛物线的焦点为 F(2, 0)，求它的标准方程与准线方程，并求抛物线上到焦点距离为 5 的点的坐标。",
+  "question": "已知抛物线的焦点为 F(2, 0)，求它的标准方程与准线方程，并求抛物线上到焦点距离为 5 的点的坐标。",
+  "options": [],
+  "answer": "标准方程为 y²=8x，准线为 x=−2，所求点为 (3, 2√6) 与 (3, −2√6)。",
+  "type": "short-answer",
+  "difficulty": "standard",
+  "explanation": "焦点在 x 轴正半轴上，设方程为 y²=2px（p>0），焦点 (p/2, 0)=(2, 0)，故 p=4，标准方程为 y²=8x，准线为 x=−2。由定义，抛物线上点到焦点的距离等于它到准线的距离，于是 x+2=5，x=3，代入得 y²=24，y=±2√6，所以有两个点。",
+  "subject": "math",
+  "choices": [],
+  "verify": "",
+  "keypoints": [
+   "焦点在 x 轴正半轴，设 y²=2px，由 p/2=2 得 p=4，方程为 y²=8x",
+   "准线方程为 x=−p/2，即 x=−2",
+   "由抛物线定义，到焦点距离等于到准线距离，x+2=5 得 x=3，代回得 y²=24，y=±2√6"
+  ]
+ }
+]
