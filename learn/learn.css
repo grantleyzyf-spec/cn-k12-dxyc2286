@@ -126,3 +126,13 @@ main.learn { max-width: 1180px; margin: 0 auto; padding: 24px 18px 72px; }
 .rad .rd sup { font-size: .72em; vertical-align: .38em; line-height: 0; }
 .rad .rd .frac { font-size: .78em; vertical-align: middle; margin: 0 .02em; }
 .rad .rd .frac .num, .rad .rd .frac .den { font-size: inherit; }
+
+/* 讲解目录的二级 tab：诊断讲解 / 试卷讲解 */
+.subnav { display: flex; gap: 10px; margin: 0 0 16px; flex-wrap: wrap; }
+.subnav .sub-link { display: flex; flex-direction: column; gap: 2px; padding: 10px 16px;
+  border: 1px solid #d8e2e0; border-radius: 10px; background: #fff; color: #1d3b38;
+  font-weight: 600; text-decoration: none; line-height: 1.25; }
+.subnav .sub-link span { font-weight: 400; font-size: 12px; color: #6b7a88; }
+.subnav .sub-link:hover { border-color: #0f6e62; }
+.subnav .sub-link.active { background: #0f6e62; border-color: #0f6e62; color: #fff; }
+.subnav .sub-link.active span { color: #d5ece8; }

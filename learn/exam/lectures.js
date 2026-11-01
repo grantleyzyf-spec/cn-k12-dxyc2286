@@ -1,6 +1,6 @@
 /* 试卷讲解页：点卷名 → 看整卷讲解。
- * 数据：lectures/index.json（册→卷清单）+ lectures/data/<册>.json（正文 Markdown）
- * 深链：lectures/?book=八年级下册#mat_exam_g8b_u19
+ * 数据：learn/exam/index.json（册→卷清单）+ learn/exam/data/<册>.json（正文 Markdown）
+ * 深链：learn/exam/?book=八年级下册#mat_exam_g8b_u19
  */
 (function () {
   'use strict';
@@ -187,7 +187,7 @@
       + (meta.fullScore ? ' · 满分 ' + meta.fullScore + ' 分' : '')
       + (meta.duration ? ' · ' + meta.duration + ' 分钟' : '')
       + (meta.items ? ' · ' + meta.items + ' 题' : '')
-      + ' · ' + (p.words || 0) + ' 字 · <a href="../diagnose/">去整卷测试</a></p>';
+      + ' · ' + (p.words || 0) + ' 字 · <a href="../../diagnose/?mode=exam">去整卷测试</a></p>';
     reader.innerHTML = html + nav;
     ['btn-prev', 'btn-next'].forEach(function (id) {
       var b = document.getElementById(id);
@@ -208,7 +208,7 @@
   function loadBook(name, then) {
     var b = getBook(name);
     if (!b) return;
-    fetch(b.path + '?v=1').then(function (r) {
+    fetch(b.path + '?v=2').then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
     }).then(function (data) {
@@ -241,7 +241,7 @@
       if (!book || !getBook(book)) {
         book = idx.books.length ? idx.books[0].book : '';
       }
-      if (!book) { hint.textContent = '讲解数据还没生成（lectures/index.json 为空）。'; return; }
+      if (!book) { hint.textContent = '讲解数据还没生成（learn/exam/index.json 为空）。'; return; }
       selBook.value = book;
       loadBook(book, function () {
         var target = hash || ((getBook(book).papers[0] || {}).examId);

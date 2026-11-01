@@ -2,8 +2,8 @@
 """试卷讲解站点数据：卷 → 讲解。
 
 产出：
-    lectures/index.json          册列表 + 每册的卷清单（不含正文）
-    lectures/data/<册>.json      正文（按卷名索引）
+    learn/exam/index.json          册列表 + 每册的卷清单（不含正文）
+    learn/exam/data/<册>.json      正文（按卷名索引）
 """
 import glob
 import json
@@ -13,7 +13,7 @@ import re
 REPO = os.path.expanduser("~/Desktop/cn-k12-dxyc2286")
 LEC = f"{REPO}/data/math/exam_lectures"
 EXAMS = f"{REPO}/data/math/exams"
-OUT = f"{REPO}/lectures"
+OUT = f"{REPO}/learn/exam"
 
 
 # 中文章序 → 数值（⚠️ 绝不能按字符比：'七'<'五'、'六' 都在 二三四五 之前）
