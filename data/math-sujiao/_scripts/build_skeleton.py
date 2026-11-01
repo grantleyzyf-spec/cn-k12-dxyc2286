@@ -234,12 +234,15 @@ def main():
             for s in secs:
                 lesson_counters[series] += 1
                 lid = f'{pfx}_{series}1{lesson_counters[series]-1000:03d}'
+                sec = (s.get('sec_name') or '').strip()
+                if lid in LESSON_NAME_FIX:          # 教材实证校订（见 LESSON_NAME_FIX）
+                    sec = LESSON_NAME_FIX[lid][0]
                 lessons.append({
                     'id': lid,
                     'sec_no': str(s.get('sec_no', '')).strip(),
-                    'sec_name': s.get('sec_name', '').strip(),
+                    'sec_name': sec,
                     'page': s.get('page'),
-                    'chapter': f'{uchapter} · {s.get("sec_name", "").strip()}',
+                    'chapter': f'{uchapter} · {sec}',
                 })
                 if prev_lesson_id:
                     deps.append({'from': prev_lesson_id, 'to': lid, 'type': 'hard',
