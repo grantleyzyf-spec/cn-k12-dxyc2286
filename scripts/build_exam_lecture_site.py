@@ -15,6 +15,34 @@ LEC = f"{REPO}/data/math/exam_lectures"
 EXAMS = f"{REPO}/data/math/exams"
 OUT = f"{REPO}/lectures"
 
+
+# 中文章序 → 数值（⚠️ 绝不能按字符比：'七'<'五'、'六' 都在 二三四五 之前）
+_CN_DIGIT = {"一": 1, "二": 2, "三": 3, "四": 4, "五": 5,
+             "六": 6, "七": 7, "八": 8, "九": 9}
+
+
+def cn_number(text):
+    """从「第X单元」「第X章」「第X课」里取出 X 的数值；「十一」「二十三」这类也认。"""
+    m = re.search(r"第([一二三四五六七八九十]+)", text or "")
+    if not m:
+        return 99
+    t = m.group(1)
+    if "十" not in t:
+        return _CN_DIGIT.get(t, 99)
+    head, _, tail = t.partition("十")
+    tens = _CN_DIGIT.get(head, 1) if head else 1
+    ones = _CN_DIGIT.get(tail, 0) if tail else 0
+    return tens * 10 + ones
+
+
+def paper_rank(p):
+    """卷序：单元卷按单元号升序（第1→第2→…），期中 A/B、期末 A/B 排在单元卷之后。"""
+    kind = {"unit": 0, "mid": 1, "fin": 2}.get(p.get("kind"), 3)
+    tail = 0
+    if kind in (1, 2):
+        tail = {"A": 0, "B": 1}.get((p.get("paper") or "")[-1], 0)
+    return (kind, cn_number(p.get("paper")), tail, p.get("paper") or "")
+
 STAGE_ORDER = ["小学", "初中", "高中"]
 BOOK_ORDER = [
     "一年级上册", "一年级下册", "二年级上册", "二年级下册",
@@ -69,6 +97,10 @@ def main():
         b["papers"].append(entry)
         total += 1
 
+    # 排序要在落盘之前：页面渲染读的是 data/<册>.json 的数组顺序
+    for b in books:
+        b["papers"].sort(key=paper_rank)
+
     # 每册正文单独落盘
     for b in books:
         payload = {"book": b["book"], "papers": []}
@@ -83,13 +115,11 @@ def main():
         json.dump(payload, open(f"{OUT}/{b['path']}", "w", encoding="utf-8"),
                   ensure_ascii=False, indent=1)
 
-    # 排序：学段 → 册 → 卷类型（单元在前，期中、期末在后）
+    # 册序：学段（小学→初中→高中）→ 册
     def book_rank(name):
         return BOOK_ORDER.index(name) if name in BOOK_ORDER else 99
 
-    kind_rank = {"unit": 0, "mid": 1, "fin": 2}
     for b in books:
-        b["papers"].sort(key=lambda p: (kind_rank.get(p["kind"], 3), p["paper"]))
         b["paperCount"] = len(b["papers"])
         b["stage"] = "小学" if "年级" in b["book"] and b["book"][0] in "一二三四五六" else (
             "初中" if "年级" in b["book"] else "高中")

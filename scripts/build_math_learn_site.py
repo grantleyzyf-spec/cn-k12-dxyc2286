@@ -33,8 +33,26 @@ def stage_of(book):
     return "高中", {"必修第一册": 10, "必修第二册": 11}.get(book, 12)
 
 
+
+# ⚠️ 绝不能用字符序排中文单元号：'七'<'五'、'六' 也在 二三四五 之前
+_CN = {"一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "八": 8, "九": 9}
+
+
+def cn_number(text):
+    m = re.search(r"第([一二三四五六七八九十]+)", text or "")
+    if not m:
+        return 99
+    t = m.group(1)
+    if "十" not in t:
+        return _CN.get(t, 99)
+    head, _, tail = t.partition("十")
+    return (_CN.get(head, 1) if head else 1) * 10 + (_CN.get(tail, 0) if tail else 0)
+
+
 def main():
-    topics = {t["id"]: t for t in json.load(open(f"{D}/topics.json", encoding="utf-8"))}
+    tlist = json.load(open(f"{D}/topics.json", encoding="utf-8"))
+    topics = {t["id"]: t for t in tlist}
+    torder = {t["id"]: i for i, t in enumerate(tlist)}   # topics.json 的原始次序＝教材次序
     books = []
     for f in sorted(glob.glob(f"{D}/learn/*.json")):
         if os.path.basename(f).startswith("_"):    # _ocr_waivers.json 等台账不是册数据
@@ -51,6 +69,8 @@ def main():
                 unit = unit[len(book) + 1:]
             lessons.append({"topicId": L["topicId"], "title": L["title"],
                             "chapter": unit, "words": L.get("words") or 0})
+        # 单元按中文数字升序，单元内按 topics.json 的教材次序
+        lessons.sort(key=lambda L: (cn_number(L["chapter"]), torder.get(L["topicId"], 10 ** 9)))
         books.append({"book": book, "stage": stage, "grade": grade, "edition": "人教版",
                       "lessonCount": len(lessons),
                       "path": f"data/math/learn/{book}.json", "lessons": lessons})
