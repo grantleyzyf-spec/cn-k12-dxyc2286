@@ -150,6 +150,55 @@ ck("诊断题答案非裸字母",
    all((t.get("diagnostic_question") or {}).get("answer", "").strip() not in list("ABCD")
        for t in topics))
 
+# ---- 学层精讲（learn/）----
+LEARN = os.path.join(D, SUBJECT, "learn")
+EXAMS = os.path.join(D, SUBJECT, "exams")
+TITLES = ["## 一、先说生活里的一件事", "## 二、课标和课本怎么说", "## 三、用大白话讲清楚",
+          "## 四、两个情境演练", "## 五、容易踩的坑", "## 六、五步学习法",
+          "## 七、方法锚与自查"]
+FIVE = ["每天锻炼一个小时", "扎实掌握第一个知识点", "能积微者速成",
+        "运用对标思维突破学习困境", "运用杠铃法则缓解学习疲劳"]
+lesson_ids = {t["id"] for t in topics if t.get("level") == "lesson"}
+if os.path.exists(os.path.join(LEARN, "index.json")):
+    li = json.load(open(os.path.join(LEARN, "index.json"), encoding="utf-8"))
+    lids, bad = [], []
+    for f in os.listdir(LEARN):
+        if f == "index.json" or not f.endswith(".json"):
+            continue
+        for it in json.load(open(os.path.join(LEARN, f), encoding="utf-8")).get("items", []):
+            lids.append(it["topicId"])
+            md = it.get("md", "")
+            n = len(re.findall(r"[\u4e00-\u9fa5]", md))
+            if not (1200 <= n <= 2600) or not all(x in md for x in TITLES) \
+               or not all(x in md for x in FIVE) or md.count("❌") < 2 \
+               or md.count("✅") < 2 or md.count("- [ ]") < 3:
+                bad.append((it["topicId"], n))
+    ck("学层覆盖全部课时点", set(lids) >= lesson_ids,
+       sorted(lesson_ids - set(lids))[:3])
+    ck("学层无重复篇", len(lids) == len(set(lids)), len(lids) - len(set(lids)))
+    ck("学层每篇结构合规（七段/五步/❌✅/自查/1200–2600 汉字）", not bad, bad[:3])
+    ck("学层 index 篇数与实际一致", li.get("items") == len(lids), (li.get("items"), len(lids)))
+else:
+    checks.append(("学层（暂无 learn/，跳过）", True, None))
+
+if os.path.exists(os.path.join(EXAMS, "index.json")):
+    ei = json.load(open(os.path.join(EXAMS, "index.json"), encoding="utf-8"))
+    ck("测评卷 18 卷", ei.get("papers") == 18, ei.get("papers"))
+    ck("测评卷题量 360", ei.get("questions") == 360, ei.get("questions"))
+    badp = []
+    for f in os.listdir(EXAMS):
+        if f == "index.json" or not f.endswith(".json"):
+            continue
+        e = json.load(open(os.path.join(EXAMS, f), encoding="utf-8"))
+        items = [it for s in e.get("sections", []) for it in s.get("items", [])]
+        tot = sum(it.get("score", 0) for it in items)
+        if len(items) != 20 or tot != 100 or e.get("duration") != 40 \
+           or any(it.get("topicId") not in T for it in items):
+            badp.append((f, len(items), tot))
+    ck("每卷 20 题/100 分/40 分钟且题点可解析", not badp, badp[:3])
+else:
+    checks.append(("测评卷（暂无 exams/，跳过）", True, None))
+
 for name, ok, detail in checks:
     print(("  ✅ " if ok else "  ❌ ") + name + (f"  [{detail}]" if detail and not ok else ""))
 print(f"\n{len(checks) - len(fails)}/{len(checks)} 项通过")

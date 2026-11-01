@@ -1,0 +1,54 @@
+name: Validate Mental Health Subject Data
+
+# 心理健康（mental-health）学科专用工作流。
+# 单独成文件的原因：validate.yml 由并行会话维护（physics/biology/chemistry 等学科同时改动），
+# 避免多人同时改同一 workflow 互相卷进提交；口径与其中 math/physics 的
+# 「Subject invariants · <subject>」步骤完全一致。
+
+on:
+  push:
+    paths:
+      - 'data/mental-health/**/*.json'
+      - 'scripts/test_mental_health.py'
+      - '.github/workflows/validate-mental-health.yml'
+  pull_request:
+    paths:
+      - 'data/mental-health/**/*.json'
+      - 'scripts/test_mental_health.py'
+      - '.github/workflows/validate-mental-health.yml'
+  workflow_dispatch:
+
+jobs:
+  mental-health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate structure & references (all subjects)
+        run: python3 scripts/validate.py --all
+
+      - name: Subject invariants · mental-health
+        run: python3 scripts/test_mental_health.py
+
+      - name: Shard gates (bank / learn / exam, one sample each)
+        run: |
+          python3 data/mental-health/_shards/check_bank.py S01
+          python3 data/mental-health/learn/_shards/check_learn.py L001
+          python3 data/mental-health/exams/_shards/check_exam.py E01
+
+      - name: Standards index freshness (regenerate & diff)
+        run: |
+          cp data/cn-curriculum-standards.json /tmp/std.before.json
+          python3 scripts/build_standards_index.py >/dev/null
+          diff -q /tmp/std.before.json data/cn-curriculum-standards.json || { echo "::error::cn-curriculum-standards.json 已过期，请本地跑 scripts/build_standards_index.py 并提交"; exit 1; }
+
+      - name: Stats freshness (regenerate & diff)
+        run: |
+          cp data/stats.json /tmp/stats.before.json
+          python3 scripts/build_stats.py --write >/dev/null
+          diff -q /tmp/stats.before.json data/stats.json || { echo "::error::data/stats.json 已过期，请本地跑 scripts/build_stats.py --write 并提交"; exit 1; }
