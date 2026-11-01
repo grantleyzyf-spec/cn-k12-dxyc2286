@@ -479,7 +479,7 @@
         .attr('stroke', isNow ? '#a9d2c9' : '#cfe0e3').attr('stroke-width', isNow ? 2 : 1.2);
       var hasAgg = arr.some(function (d) { return d.role === 'agg'; });
       var label = isNow ? '当前'
-        : (lv < 0 ? (hasAgg ? '先修（已按年级收起）' : '先修第 ' + (-lv) + ' 层') : '下游 1 层');
+        : (lv < 0 ? (hasAgg ? '先修·按年级收起' : '先修第 ' + (-lv) + ' 层') : '下游 1 层');
       var pillText = label + '（' + arr.length + '）';
       var pillW = pillText.length * 13.5 + 26;
       var pill = band.append('g').attr('class', 'layer-pill');
