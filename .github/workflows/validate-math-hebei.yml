@@ -1,0 +1,67 @@
+name: Validate Math Hebei Subject Data
+
+# 冀教版数学（math-hebei）学科专用工作流。
+# 单独成文件的原因：validate.yml 由并行会话维护（physics/ biology/ chemistry/ 其他数学版本同时改动），
+# 避免多人同改一份 workflow 互相卷进提交。口径与 validate.yml 里 math / math-bj 的步骤一致。
+
+on:
+  push:
+    paths:
+      - 'data/math-hebei/**/*.json'
+      - 'scripts/test_math_hebei.py'
+      - 'scripts/fix_exam_itemid.py'
+      - '.github/workflows/validate-math-hebei.yml'
+  pull_request:
+    paths:
+      - 'data/math-hebei/**/*.json'
+      - 'scripts/test_math_hebei.py'
+      - 'scripts/fix_exam_itemid.py'
+      - '.github/workflows/validate-math-hebei.yml'
+  workflow_dispatch:
+
+jobs:
+  math-hebei:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate structure & references (all subjects)
+        run: python3 scripts/validate.py --all
+
+      - name: Subject invariants · math-hebei
+        run: python3 scripts/test_math_hebei.py
+
+      - name: Every exam item carries itemId（整卷测试作答依赖）
+        run: |
+          python3 - <<'PY'
+          import glob, json, sys
+          bad = []
+          for p in glob.glob('data/math-hebei/exams/**/*.json', recursive=True):
+              d = json.load(open(p, encoding='utf-8'))
+              for s in d.get('sections') or []:
+                  for it in s.get('items') or []:
+                      if not it.get('itemId'):
+                          bad.append((p, it.get('no')))
+          if bad:
+              print('::error::%d 道题缺 itemId，例如 %s' % (len(bad), bad[:3]))
+              sys.exit(1)
+          print('全部卷面题都带 itemId')
+          PY
+
+      - name: Exam index covers this bucket（整卷测试登记）
+        run: |
+          python3 scripts/build_exam_index.py >/dev/null
+          python3 - <<'PY'
+          import json, sys
+          idx = json.load(open('diagnose/exam-index.json', encoding='utf-8'))
+          n = (idx.get('subjects') or {}).get('math-hebei', {}).get('count', 0)
+          if n < 147:
+              print('::error::exam-index 只登记了 %d 卷（应 147），请本地跑 scripts/build_exam_index.py 并提交' % n)
+              sys.exit(1)
+          print('整卷测试已登记 %d 卷' % n)
+          PY

@@ -27,11 +27,21 @@ import subprocess
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "diagnose", "exam-index.json")
 DEFAULT_EDITION = "人教版"
+# 同一学科的多版本桶：卷里没写 edition 时按桶取默认版本名（否则会全部显示成「人教版」）
+SUBJECT_EDITION = {
+    "math-bj": "北京版", "math-bsd": "北师大版", "math-ejiao": "鄂教版",
+    "math-hebei": "冀教版", "math-hujiao": "沪教版", "math-qd": "青岛版",
+    "math-sujiao": "苏教版", "math-suke": "苏科版", "math-xiangjiao": "湘教版",
+    "mental-health": "北师大版", "chinese": "统编版", "history": "统编版",
+}
 
 SUBJECTS = [
     "math", "chinese", "english", "physics", "chemistry", "biology", "history", "geography",
     "science", "information-technology", "japanese", "russian", "german", "french", "spanish",
     "music", "art", "mental-health",
+    # 数学各版本桶（同科异版各自一个桶；出卷后重跑本脚本即进「整卷测试」）
+    "math-bj", "math-bsd", "math-ejiao", "math-hebei", "math-hujiao",
+    "math-qd", "math-sujiao", "math-suke", "math-xiangjiao",
 ]
 
 
@@ -79,7 +89,7 @@ def main():
         if not eid:
             print(f"跳过（无 examId）{rel}")
             continue
-        edition = d.get("edition") or DEFAULT_EDITION
+        edition = d.get("edition") or SUBJECT_EDITION.get(sub, DEFAULT_EDITION)
         exams[eid] = {
             "examId": eid,
             "subject": sub,

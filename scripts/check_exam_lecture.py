@@ -13,6 +13,8 @@ import re
 import sys
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# 学科桶（默认数学人教；换版本传 --subject math-hebei 之类）
+SUBJECT = "math"
 
 BANDS = {  # stage -> (下限, 上限) 汉字（上限必须给五步学习法留足 300–700 的余量）
     "小学": (3500, 7200),
@@ -53,7 +55,7 @@ def han_count(text):
 
 def load_exam(lecture):
     return json.load(open(
-        f"{REPO}/data/math/exams/{lecture['book']}/{lecture['paper']}.json", encoding="utf-8"))
+        f"{REPO}/data/{SUBJECT}/exams/{lecture['book']}/{lecture['paper']}.json", encoding="utf-8"))
 
 
 def check_one(path, verbose=True):
@@ -142,14 +144,17 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("path", nargs="?")
     ap.add_argument("--book")
+    ap.add_argument("--subject", default="math", help="数据桶，如 math-bj / math-hebei（默认 math）")
     a = ap.parse_args()
+    global SUBJECT
+    SUBJECT = a.subject          # load_exam 按此桶读卷
     files = []
     if a.path:
         files = [a.path]
     elif a.book:
-        files = sorted(glob.glob(f"{REPO}/data/math/exam_lectures/{a.book}/*.json"))
+        files = sorted(glob.glob(f"{REPO}/data/{a.subject}/exam_lectures/{a.book}/*.json"))
     else:
-        files = sorted(glob.glob(f"{REPO}/data/math/exam_lectures/*/*.json"))
+        files = sorted(glob.glob(f"{REPO}/data/{a.subject}/exam_lectures/*/*.json"))
     files = [f for f in files if not os.path.basename(f).startswith("_")]
     if not files:
         print("没有可检查的讲解文件")
