@@ -33,8 +33,19 @@ def cn_number(text):
     return (_CN.get(head, 1) if head else 1) * 10 + (_CN.get(tail, 0) if tail else 0)
 
 
+_EDITIONS_STRIP = ("苏教版", "苏科版", "人教版", "北师大版", "沪教版", "湘教版", "青岛版", "冀教版", "北京版")
+
+
+def strip_edition(book):
+    """册名去掉版本前缀（站点数据里苏教/苏科等版本的 book 带前缀，其余不带）。"""
+    for _pre in _EDITIONS_STRIP:
+        if book.startswith(_pre) and len(book) > len(_pre):
+            return book[len(_pre):]
+    return book
+
 def book_rank(book):
     """册次排序键：学段(1小学/2初中/3高中) + 年级/册序 + 上下册。"""
+    book = strip_edition(book)
     m = re.match(r"^([一二三四五六]年级)(上|下)册$", book)
     if m:
         return (1, _CN[m.group(1)[0]], 1 if m.group(2) == "上" else 2)
@@ -94,8 +105,14 @@ def build():
             continue
         d = json.load(open(f, encoding="utf-8"))
         book = d.get("book")
-        if not book or not (d.get("lessons") or []):
+        # 兼容两种册级 schema：标准 lessons[{topicId,title,markdown,words}]
+        # 与心理健康等桶的 items[{topicId,title,han,md}]（同一份内容，键名不同）
+        raw = d.get("lessons") or d.get("items") or []
+        if not book or not raw:
             continue
+        raw = [{"topicId": L.get("topicId"), "title": L.get("title"),
+                "words": L.get("words") or L.get("han") or 0} for L in raw]
+        d["lessons"] = raw
         dir_id = os.path.basename(os.path.dirname(os.path.dirname(f)))
         subj, sname, edition = dir2info.get(dir_id, (dir_id, dir_id, "人教版"))
         topics = json.load(open(os.path.join(DATA, dir_id, "topics.json"), encoding="utf-8"))
