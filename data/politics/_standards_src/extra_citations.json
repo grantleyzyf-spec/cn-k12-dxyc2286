@@ -1,0 +1,47 @@
+{
+  "_note": "义教课标里原先「无点引用」的条目，逐条人工补挂到教材里真正讲授它的知识点。confidence：partial＝该点主题直接对应；inferred＝该点只覆盖条目的一部分（如条目讲党旗，点讲少先队）⇒ 语义覆盖弱。改这里必须重跑 scripts/ddfz_extra_citations.py --write。",
+  "map": {
+    "ddf-2022:1.DD.01": ["pol_p015", "partial"],
+    "ddf-2022:1.DD.03": ["pol_p024", "partial"],
+    "ddf-2022:1.DD.05": ["pol_p075", "partial"],
+    "ddf-2022:1.DD.10": ["pol_p060", "inferred"],
+    "ddf-2022:1.SM.01": ["pol_p005", "partial"],
+    "ddf-2022:1.SM.03": ["pol_p005", "partial"],
+    "ddf-2022:1.FZ.02": ["pol_p073", "partial"],
+    "ddf-2022:1.FZ.03": ["pol_p003", "partial"],
+    "ddf-2022:1.CT.07": ["pol_p038", "inferred"],
+    "ddf-2022:2.DD.06": ["pol_p108", "inferred"],
+    "ddf-2022:2.DD.10": ["pol_p094", "inferred"],
+    "ddf-2022:2.DD.12": ["pol_p115", "inferred"],
+    "ddf-2022:2.FZ.02": ["pol_p097", "partial"],
+    "ddf-2022:2.CT.03": ["pol_p108", "partial"],
+    "ddf-2022:3.FZ.04": ["pol_p153", "inferred"],
+    "ddf-2022:3.FZ.08": ["pol_p151", "inferred"],
+    "ddf-2022:3.GQ.02": ["pol_p152", "inferred"],
+    "ddf-2022:4.FZ.05": ["pol_p242", "inferred"],
+    "ddf-2022:4.FZ.07": ["pol_p217", "partial"],
+    "ddf-2022:4.FZ.08": ["pol_p217", "partial"],
+    "ddf-2022:4.FZ.13": ["pol_p197", "partial"],
+    "ddf-2022:4.FZ.14": ["pol_p201", "inferred"],
+    "ddf-2022:4.CT.04": ["pol_p187", "partial"],
+    "ddf-2022:4.CT.06": ["pol_p236", "inferred"],
+    "ddf-2022:4.GC.02": ["pol_p230", "partial"],
+    "ddf-2022:4.GC.03": ["pol_p230", "partial"],
+    "ddf-2022:4.GC.04": ["pol_p230", "partial"],
+    "ddf-2022:4.GQ.02": ["pol_p235", "inferred"]
+  },
+  "uncovered": {
+    "_note": "课标有条目、教材在本学段没有对应点，且不属于「补挂到别的点」能说清的：缺册直接导致（五下／六下／九下本机无 PDF）或该学段教材未编入。留空不编造。",
+    "缺册": [
+      "ddf-2022:3.DD.01", "ddf-2022:3.DD.02", "ddf-2022:3.DD.03", "ddf-2022:3.DD.04",
+      "ddf-2022:3.DD.05", "ddf-2022:3.DD.06", "ddf-2022:3.DD.07",
+      "ddf-2022:3.SM.01", "ddf-2022:3.SM.03", "ddf-2022:3.SM.04",
+      "ddf-2022:3.CT.01", "ddf-2022:3.CT.02", "ddf-2022:3.CT.03", "ddf-2022:3.GQ.05",
+      "ddf-2022:4.FZ.16"
+    ],
+    "该学段教材未编入": [
+      "ddf-2022:2.FZ.04", "ddf-2022:2.CT.04", "ddf-2022:2.CT.05", "ddf-2022:2.CT.06",
+      "ddf-2022:2.GQ.01", "ddf-2022:2.GQ.02", "ddf-2022:2.GQ.04"
+    ]
+  }
+}

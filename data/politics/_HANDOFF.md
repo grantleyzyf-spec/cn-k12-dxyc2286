@@ -7,7 +7,7 @@
 | 产物 | 说明 |
 | --- | --- |
 | `data/politics/_inventory.json` | 21 册 / 教材单元 78（义教 57 ＋ 高中 21）/ 高中课 58 / 高中框 135 / 综合探究 20（不建点） |
-| `data/politics/topics.json` | **435 点**（领域：道德 132 ／ 政治认同 128 ／ 法治 94 ／ 哲学 63 ／ 经济 18）（unit 115 ＝ 义教 57 单元 ＋ 高中 58 课；lesson 320 ＝ 义教 185 课 ＋ 高中 135 框），id `pol_p001…pol_p435`；已挂课标引文 **489 条** |
+| `data/politics/topics.json` | **435 点**（领域：道德 132 ／ 政治认同 128 ／ 法治 94 ／ 哲学 63 ／ 经济 18）（unit 115 ＝ 义教 57 单元 ＋ 高中 58 课；lesson 320 ＝ 义教 185 课 ＋ 高中 135 框），id `pol_p001…pol_p435`；已挂课标引文 **517 条**（义教 112/134 条被引用、高中 65/65） |
 | `data/politics/dependencies.json` | **646 边**（hard 576 ／ soft 70）：课/单元→框 hard、框内顺次 hard、课顺次 hard、单元衔接 soft |
 | `data/politics/questions.json` | **3135 题**（全 choice，435 点每点 8/5，答案位 A794·B804·C779·D758） |
 | `data/politics/_standards_src/` | 课标快照（义教 134 条 / 高中 65 条）＋ `unit_map.json`（115 个单元点人工定标） |
@@ -18,6 +18,7 @@
 | `scripts/ddfz_standards.py` | 课标回表（`--rebuild-src` / `--write`），含逐字回表校验 |
 | `scripts/ddfz_audit.py` | 结构体检（目录点／框号／占位字段） |
 | `scripts/ddfz_domain_fix.py` | 义教 domain 重挂（幂等，`--write` 落盘） |
+| `scripts/ddfz_extra_citations.py` | 补挂义教未引用课标条目（幂等；定标表 `_standards_src/extra_citations.json`） |
 | `scripts/ddfz_make_shards.py` | 切分片 + 派单（57 片 / 3135 题） |
 | `scripts/ddfz_merge_bank.py` | 合并分片 + 回写 diagnostic_question + schema 校验 |
 | `scripts/test_politics.py` | 39 项不变量自检（结构/课标/题库） |
