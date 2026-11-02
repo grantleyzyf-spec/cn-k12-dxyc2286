@@ -230,7 +230,7 @@ cd cn-k12-dxyc2286
 python3 scripts/normalize_to_ref_schema.py --check   # 体检：结构完整度 / 缺口
 python3 scripts/normalize_to_ref_schema.py --write   # 规范化 + 重建三份汇总
 python3 scripts/build_standards_index.py             # 重建课标条目索引 + 册次地图
-python3 scripts/validate.py --all                    # 17 学科结构 / 引用（CI 同款）
+python3 scripts/validate.py --all                    # 18 学科结构 / 引用（CI 同款）
 python3 scripts/validate_mappings.py                 # 版本映射
 python3 scripts/build_stats.py --write               # 现算统计（README / 首页数字来源）
 ```

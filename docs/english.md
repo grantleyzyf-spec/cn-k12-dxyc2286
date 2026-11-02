@@ -100,7 +100,7 @@
 cd cn-k12-dxyc2286
 python3 scripts/test_english.py            # 25 项不变量（规模/唯一/册次/课标/回表/边/根节点/题）
 python3 scripts/validate.py english        # 单学科结构校验
-python3 scripts/validate.py --all          # 17 学科全量（CI 同款）
+python3 scripts/validate.py --all          # 18 学科全量（CI 同款）
 python3 scripts/build_standards_index.py   # 改数据后必跑：重建课标索引
 python3 scripts/build_stats.py --write     # 刷新 data/stats.json（首页数字）
 ```
