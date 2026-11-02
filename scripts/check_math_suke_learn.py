@@ -8,7 +8,7 @@
 """
 import difflib, json, os, re, sys
 
-REPO = os.path.expanduser("~/Desktop/cn-k12-dxyc2286")
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = f"{REPO}/data/math-suke"
 TXT = {"苏科版七年级上册": "k7a", "苏科版七年级下册": "k7b", "苏科版八年级上册": "k8a",
        "苏科版八年级下册": "k8b", "苏科版九年级上册": "k9a"}

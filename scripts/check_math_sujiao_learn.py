@@ -8,7 +8,7 @@
 """
 import difflib, json, os, re, sys
 
-REPO = os.path.expanduser("~/Desktop/cn-k12-dxyc2286")
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = f"{REPO}/data/math-sujiao"
 TXT = {"苏教版一年级上册": "s1a", "苏教版一年级下册": "s1b", "苏教版二年级上册": "s2a", "苏教版二年级下册": "s2b", "苏教版三年级上册": "s3a", "苏教版三年级下册": "s3b", "苏教版四年级上册": "s4a", "苏教版五年级上册": "s5a", "苏教版六年级上册": "s6a", "苏教版必修第一册": "h1", "苏教版必修第二册": "h2", "苏教版选择性必修第一册": "h3", "苏教版选择性必修第二册": "h4"}
 SEC = ["开场", "课本原文", "费曼翻译", "例题", "易错", "五步学习法", "自查"]
