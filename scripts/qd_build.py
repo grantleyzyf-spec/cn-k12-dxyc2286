@@ -185,6 +185,17 @@ def _topic(tid, name, b, dom, chapter, desc, level):
 def main():
     write = "--write" in sys.argv
     inv, topics, deps, unmatched = build()
+    # 目录页误抽的脏点：显式 id 清单，重建时同样剔除（否则每次 rebuild 都会把它们带回来，
+    # 实测 qd_fix_names.py 清掉后，谁重跑一次本脚本 topics 又回到 372 点）。
+    # ⛔ 不许按「名称不含汉字」批量删：会误删「角」「圆」这类单字正名。
+    JUNK = {"qdm_p245", "qdm_p253", "qdm_p258", "qdm_p323", "qdm_p342", "qdm_p343",
+            "qdm_p344", "qdm_p345", "qdm_p346", "qdm_p359", "qdm_p360"}
+    drop = [t["id"] for t in topics if t["id"] in JUNK]
+    if drop:
+        topics = [t for t in topics if t["id"] not in JUNK]
+        keep = {t["id"] for t in topics}
+        deps = [d for d in deps if d.get("from") in keep and d.get("to") in keep]
+        print(f"剔除目录页脏点 {len(drop)} 个：{drop}")
     print("知识点:", len(topics), "| unit:", sum(1 for t in topics if t["level"] == "unit"),
           "| lesson:", sum(1 for t in topics if t["level"] == "lesson"))
     print("先修边:", len(deps), Counter(d["type"] for d in deps))
