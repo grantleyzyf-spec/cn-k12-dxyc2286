@@ -1,0 +1,25 @@
+# math-bj 重负载队列（只在波谷跑）
+
+> 波峰 09:00–12:00、14:00–18:00 不启本队列；波谷 12:00–14:00、18:00–次日 09:00 放量。
+> 闸门自检：`python3 ~/.hermes/profiles/agent8/scripts/peak_gate.py --gate`（波谷 exit 0 / 波峰 exit 3）
+
+## Q1 · 交付件（阶段 8，重：批量渲染）
+- [x] 学层 14 册 → docx：**528 篇**（`MATH_BUCKET=math-bj MATH_EDITION=北京版 python3 scripts/build_math_learn_docx.py`）
+- [x] 试卷 136 卷 → docx：**272 份**（每卷 `_试卷` + `_参考答案与评分标准`）
+- [x] 讲解 136 份 → docx：**136 份**
+- [x] 合订本：学层 14 本 + 试卷 14 本 + 参考答案 14 本 + 讲解 14 本 = **56 本**（均封面＋目　录＋页脚连续页码）
+- 核验（2026-11-02 波谷段实测，全绿）：
+  - `scripts/verify_math_docx.py`（MATH_BUCKET=math-bj）：学层 14 册 528/528 合格（A1 份数·A2 字数·A3 七段·A4 首字符）；试卷 14 册 136 卷「逐题全命中」
+  - 讲解：136/136 六段标题齐全且 ≥1500 汉字，0 不合格
+  - 学层合订本：14/14 目录条目＝源篇数、正文大标题＝源篇数
+  - 试卷/答案合订本：14 册 × 2 本，单卷 docx **完整并入率 100%**（字数覆盖逐册 100%，如 一上 14332/14332）
+- 新增构建脚本（须入库）：`scripts/build_exam_lecture_booklet.py`、`scripts/build_math_exam_booklet.py`
+
+## Q2 · 课标原文条目化重编 id（独立批次，重：重解析+全库回填）
+- [ ] 从 `中小学教材/2025修订课程标准TXT /义务教育/3.《义务教育数学课程标准…》.txt` 重切「学段×领域×内容要求」条目
+- [ ] 生成新 id 体系（不改已挂点：旧 id 保留为 alias）
+- [ ] 回填 65 个空缺点里可对上的部分（目标挂标率 ≥95%）
+- [ ] 重建 `data/cn-curriculum-standards.json` + `test_math_bj` 全绿
+
+## Q3 · 站点增量
+- [ ] 学层/讲解页显示挂标条数（topics.json 已带 standards，页面文案待加）
