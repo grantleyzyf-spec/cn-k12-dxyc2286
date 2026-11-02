@@ -16,7 +16,7 @@ import re
 import sys
 from docx import Document
 
-REPO = os.path.expanduser("~/Desktop/cn-k12-dxyc2286")
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # 仓库根：CI 上 ~ 不是 /Users/<用户>
 ROOT = os.path.expanduser("~/Desktop/学科图谱相关资料")
 ED = "沪教版"
 PLACEHOLDER = re.compile(r"TODO|XXX|待补|占位|\{\{|\}\}|undefined|NaN")

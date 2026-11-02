@@ -8,7 +8,7 @@
 """
 import difflib, json, os, re, sys
 
-REPO = os.path.expanduser("~/Desktop/cn-k12-dxyc2286")
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # 仓库根：CI 上 ~ 不是 /Users/<用户>
 D = f"{REPO}/data/math-hujiao"
 TXT = {"沪教版必修第一册": "h1", "沪教版必修第二册": "h2", "沪教版必修第三册": "h3",
        "沪教版选择性必修第一册": "x1", "沪教版选择性必修第二册": "x2"}
