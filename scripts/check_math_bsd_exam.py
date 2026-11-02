@@ -15,7 +15,7 @@
 import difflib, json, os, re, sys
 from collections import Counter
 
-REPO = os.path.expanduser("~/Desktop/cn-k12-dxyc2286")
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # 按脚本位置定位仓库，本地与 CI 通用（别写死 ~/Desktop 绝对路径）
 D = f"{REPO}/data/math-bsd"
 STAGE = {1: ("小学1-2", 40, 100), 2: ("小学1-2", 40, 100), 3: ("小学3-6", 60, 100), 4: ("小学3-6", 60, 100),
          5: ("小学3-6", 60, 100), 6: ("小学3-6", 60, 100), 7: ("初中", 90, 120), 8: ("初中", 90, 120), 9: ("初中", 90, 120),

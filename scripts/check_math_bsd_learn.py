@@ -8,7 +8,7 @@
 """
 import difflib, json, os, re, sys
 
-REPO = os.path.expanduser("~/Desktop/cn-k12-dxyc2286")
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # 按脚本位置定位仓库，本地与 CI 通用（别写死 ~/Desktop 绝对路径）
 D = f"{REPO}/data/math-bsd"
 TXT = {"一年级上册": "mbsd1a", "一年级下册": "mbsd1b", "二年级上册": "mbsd2a", "二年级下册": "mbsd2b", "三年级上册": "mbsd3a", "三年级下册": "mbsd3b", "四年级上册": "mbsd4a", "四年级下册": "mbsd4b", "五年级上册": "mbsd5a", "五年级下册": "mbsd5b", "六年级上册": "mbsd6a", "六年级下册": "mbsd6b", "七年级上册": "mbsd7a", "七年级下册": "mbsd7b", "八年级上册": "mbsd8a", "八年级下册": "mbsd8b", "九年级上册": "mbsd9a",
        "必修第一册": "mbsdbx1", "必修第二册": "mbsdbx2", "选择性必修第一册": "mbsdxb1", "选择性必修第二册": "mbsdxb2"}
