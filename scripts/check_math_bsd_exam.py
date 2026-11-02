@@ -35,13 +35,18 @@ def norm(s): return re.sub(r"\s+", "", s or "")
 
 
 def main():
+    # --no-dup：跳过「逐题 × 全库 1 万题」的原创性比对（219 卷要跑几十分钟）。
+    # CI 里用 --no-dup 逐卷查结构，再用 scripts/scan_bsd_exam_dupes.py 一次扫全库原创性。
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    nodup = "--no-dup" in sys.argv
+    sys.argv = [sys.argv[0]] + args
     if len(sys.argv) < 2 or not os.path.exists(sys.argv[1]):
         print("用法：python3 scripts/check_math_bsd_exam.py <卷.json>"); sys.exit(1)
     p = sys.argv[1]
     ex = json.load(open(p, encoding="utf-8"))
     topics = json.load(open(f"{D}/topics.json", encoding="utf-8"))
     T = {t["id"]: t for t in topics}
-    bank = json.load(open(f"{D}/questions.json", encoding="utf-8"))
+    bank = [] if nodup else json.load(open(f"{D}/questions.json", encoding="utf-8"))
     book = ex.get("book")
     for k in ("book", "kind", "paper", "stage", "grade", "duration", "fullScore", "scope", "sections", "examId"):
         if not ex.get(k): E(f"缺字段 {k}")
@@ -89,7 +94,7 @@ def main():
             for tid in tids:
                 if tid not in T: E(f"第{no}题 topicId {tid} 不存在"); continue
                 if not T[tid]["chapter"].startswith(book): E(f"第{no}题 topicId {tid} 不属本册")
-            # 原创性
+            # 原创性（--no-dup 时留空，由 scan_bsd_exam_dupes.py 统一扫）
             for q in bank:
                 r = difflib.SequenceMatcher(None, norm(stem), norm(q.get("prompt"))).ratio()
                 if r >= 0.85:

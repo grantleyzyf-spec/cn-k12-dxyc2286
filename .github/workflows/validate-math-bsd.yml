@@ -55,14 +55,23 @@ jobs:
           sys.exit(1 if bad else 0)
           PY
 
-      - name: Exam gate · math-bsd（逐卷跑卷面检查）
+      - name: Exam gate · math-bsd（逐卷跑卷面结构检查，跳过逐题撞库）
         run: |
           n=0
           for p in data/math-bsd/exams/*/*.json; do
-            python3 scripts/check_math_bsd_exam.py "$p" > /tmp/e.log 2>&1 || { echo "FAIL $p"; tail -8 /tmp/e.log; exit 1; }
+            python3 scripts/check_math_bsd_exam.py --no-dup "$p" > /tmp/e.log 2>&1 || { echo "FAIL $p"; tail -8 /tmp/e.log; exit 1; }
             n=$((n+1))
           done
           echo "PASS $n 卷"
+
+      - name: Originality gate · math-bsd（一次载入题库扫全库，等价于逐卷撞库但快两个数量级）
+        run: |
+          python3 scripts/scan_bsd_exam_dupes.py --min 0.85 | tee /tmp/dup.log
+          if grep -q "相似度 ≥0.85 的题 0 处" /tmp/dup.log; then
+            echo "PASS 撞库 0 处"
+          else
+            echo "FAIL 存在 ≥0.85 撞库题"; exit 1
+          fi
 
       - name: Learn gate · math-bsd（成篇学层逐册跑）
         run: |
