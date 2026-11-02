@@ -61,4 +61,4 @@ python3 -m http.server 8000
 1. 统计数字**不要写死**在 HTML 里：跑 `python3 scripts/build_stats.py --write` 生成 `data/stats.json`，页面自己读；
 2. 新增页面要接同一套 `site-header` / `site-footer`，否则字号与配色会跳；
 3. 首页学科卡的学段标签写在 `assets/home.js` 的 `SUBJECT_LABEL` 里，增删学科时同步改；
-4. 截图放 `screenshots/`，README 直接引用（`screenshots/01-home.png` 等），改版后重截。
+4. 截图放 `screenshots/`，README 直接引用（`screenshots/01-home.png` 等），改版或数据更新后用 `scripts/shoot_screenshots.py` 重拍、`scripts/make_og_image.py` 重生成分享图。
