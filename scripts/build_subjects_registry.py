@@ -29,6 +29,26 @@ EDITIONS = {
     "math-sujiao": "苏教版",
     "math-suke": "苏科版",
     "math-xiangjiao": "湘教版",
+    "math-hujiao": "沪教版",
+    "math-ejiao": "鄂教版",
+    # 单版本学科：教材出版社/版本名（不写会在站点「版本」下拉里显示成空白）
+    "chinese": "统编版",
+    "history": "统编版",
+    "english": "人教版",
+    "physics": "人教版",
+    "chemistry": "人教版",
+    "biology": "人教版",
+    "geography": "人教版",
+    "information-technology": "人教版",
+    "japanese": "人教版",
+    "russian": "人教版",
+    "german": "外研社版",
+    "french": "外研社版",
+    "spanish": "外研社版",
+    "music": "人教版",
+    "art": "人教版",
+    "science": "教科版",
+    "mental-health": "北师大版",
 }
 
 # 学科显示名（不写就沿用 stats.json 里的名字，去掉「（XX版）」后缀）
@@ -42,7 +62,7 @@ SUBJECT_LABEL = {
     "biology": "高", "history": "初·高", "german": "高", "russian": "小·初·高", "geography": "初·高",
     "chemistry": "初·高", "information-technology": "小·初", "french": "高", "japanese": "高",
     "spanish": "小·初·高", "art": "小·初·高", "music": "小·初·高", "science": "小",
-    "mental-health": "小·初·高", "politics": "小·初·高",
+    "mental-health": "小·初·高",
 }
 
 
