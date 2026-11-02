@@ -44,7 +44,16 @@ d.rectangle([80, 96, 88, 300], fill=ACC)
 d.text((116, 96), "学科图谱", font=font(96, True), fill=FG)
 d.text((118, 226), "找到真正没学会的那一步", font=font(52), fill=ACC)
 
-line = "17 学科 · 1924 知识点 · 2199 条先修关系 · 自适应诊断"
+# 数字现算：学科数按首页学科卡口径（subject-groups），知识点/先修边读 data/stats.json
+import json as _json
+_D = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+try:
+    _st = _json.load(open(os.path.join(_D, "stats.json"), encoding="utf-8"))
+    _grp = _json.load(open(os.path.join(_D, "subject-groups.json"), encoding="utf-8"))
+    line = "%d 学科 · %s 知识点 · %s 条先修关系 · 自适应诊断" % (
+        len(_grp.get("subjects", [])), format(_st["topics"], ","), format(_st["dependencies"], ","))
+except Exception:
+    line = "学科图谱 · 全学科知识点 · 先修关系 · 自适应诊断"
 d.text((118, 330), line, font=font(34), fill=(236, 250, 247))
 
 # 三个标签

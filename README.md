@@ -1,6 +1,6 @@
 # 中国 K-12 全学科知识图谱（cn-k12-dxyc2286）
 
-**18 个学科 · 7,300 个知识点 · 9,142 条先修边 · 41,831 道诊断题 · 2,974 条课标条目**，覆盖小学到高中。每个知识点带**可观察的掌握标准**、**节点级诊断题**、**课标条目与置信度**；先修边分 hard / soft 两档，可直接驱动前置诊断与学习路径推荐。
+**18 个学科 · 7,300 个知识点 · 9,142 条先修边 · 43,796 道诊断题 · 2,974 条课标条目**，覆盖小学到高中。每个知识点带**可观察的掌握标准**、**节点级诊断题**、**课标条目与置信度**；先修边分 hard / soft 两档，可直接驱动前置诊断与学习路径推荐。
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgreen.svg)](https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans)
 [![知识点](https://img.shields.io/badge/%E7%9F%A5%E8%AF%86%E7%82%B9-7300-2ea44f)](data/topics.json)
@@ -16,7 +16,7 @@
 
 ![知识图谱：当前知识点附近的先修关系（向上 2 层，向下 1 层）](screenshots/02-explore.png)
 
-![诊断结果：薄弱根因、按学习顺序排好的路径与逐题记录](screenshots/03-diagnose.png)
+![诊断结果：沿先修关系回溯出的待补知识点，按学习顺序排好](screenshots/03-diagnose.png)
 
 | 学段 | 知识点 | 诊断题 | 说明 |
 | --- | ---: | ---: | --- |
