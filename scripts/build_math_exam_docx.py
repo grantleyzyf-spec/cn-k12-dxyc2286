@@ -29,8 +29,9 @@ REPO = os.path.expanduser("~/Desktop/cn-k12-dxyc2286")
 # 桶与输出目录可用环境变量覆盖（版本桶：MATH_BUCKET=math-xiangjiao MATH_EDITION=湘教版）
 BUCKET = os.environ.get("MATH_BUCKET", "math")
 EDITION = os.environ.get("MATH_EDITION", "人教版")
+SUBJECT_NAME = os.environ.get("SUBJECT_NAME", "数学")   # 学科名（语文/物理…），影响输出目录与卷头
 EXAM = f"{REPO}/data/{BUCKET}/exams"
-OUT_ROOT = os.path.expanduser(f"~/Desktop/学科图谱相关资料/学科图谱原创试卷/数学/{EDITION}")
+OUT_ROOT = os.path.expanduser(f"~/Desktop/学科图谱相关资料/学科图谱原创试卷/{SUBJECT_NAME}/{EDITION}")
 
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -124,7 +125,7 @@ def new_doc():
 
 
 def head(doc, ex, answer=False):
-    title = f"数学（{EDITION}）{ex['book']}　{ex['paper']}"
+    title = f"{SUBJECT_NAME}（{EDITION}）{ex['book']}　{ex['paper']}"
     if answer:
         title += "　参考答案与评分标准"
     para(doc, title, size=16, bold=True, align="center", cn="黑体", space_after=4)

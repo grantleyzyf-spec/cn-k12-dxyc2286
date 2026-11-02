@@ -86,13 +86,14 @@ def main():
             papers.append(d)
         if not papers:
             continue
-        papers.sort(key=lambda d: (KIND_RANK.get(d.get("kind"), 9), cn_number(d.get("paper"))))
+        papers.sort(key=lambda d: (KIND_RANK.get(d.get("kind"), 9), cn_number(d.get("paper")), d.get("paper") or ""))
         exams = {}
         for f in glob.glob(os.path.expanduser(f"{L.REPO}/data/{os.environ.get('MATH_BUCKET', 'math')}/exams/{book}/*.json")):
             e = json.load(open(f, encoding="utf-8"))
             exams[e["paper"]] = e
         subject, version, stage = L.book_info(book)
-        subj_key = {"数学": "math", "物理": "physics", "化学": "chemistry", "生物": "biology"}.get(subject, "math")
+        subj_key = {"数学": "math", "物理": "physics", "化学": "chemistry", "生物": "biology", "语文": "chinese"}.get(
+            subject, os.environ.get("MATH_BUCKET", "math"))
         doc = L.new_doc()
         L.add_para(doc, f"{subject}（{version}）{book}", subject=subj_key, size=20, bold=True, cn="黑体",
                    align="center", after=6)

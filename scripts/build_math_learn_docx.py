@@ -28,8 +28,9 @@ import math_typo  # noqa: E402
 REPO = os.path.expanduser("~/Desktop/cn-k12-dxyc2286")
 BUCKET = os.environ.get("MATH_BUCKET", "math")
 EDITION = os.environ.get("MATH_EDITION", "人教版")
+SUBJECT_NAME = os.environ.get("SUBJECT_NAME", "数学")   # 学科名（语文等），影响输出目录与卷头
 LEARN = f"{REPO}/data/{BUCKET}/learn"
-OUT_ROOT = os.path.expanduser(f"~/Desktop/学科图谱相关资料/学层精讲/数学/{EDITION}")
+OUT_ROOT = os.path.expanduser(f"~/Desktop/学科图谱相关资料/学层精讲/{SUBJECT_NAME}/{EDITION}")
 
 
 def set_font(run, cn="宋体", size=10.5, bold=False, en="Times New Roman"):
@@ -115,7 +116,7 @@ def new_doc():
 
 def render(md, book, title, path):
     doc = new_doc()
-    add_para(doc, f"数学（{EDITION}）{book}　{title}", size=16, bold=True, cn="黑体",
+    add_para(doc, f"{SUBJECT_NAME}（{EDITION}）{book}　{title}", size=16, bold=True, cn="黑体",
              align="center", after=2)
     add_para(doc, "学生版精讲 · 先读课本原文，再用大白话拆开，最后自查", size=9,
              align="center", after=10, color="666666")

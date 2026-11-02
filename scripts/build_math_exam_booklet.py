@@ -92,7 +92,7 @@ def main():
                 continue
             master = E.new_doc()
             out = os.path.join(out_dir, f"{book}_{tag}.docx")
-            build(master, pairs, f"数学（{E.EDITION}）{book}", f"{kind_cn}合订本 · 共 {len(pairs)} 卷 · 学生打印版", out)
+            build(master, pairs, f"{E.SUBJECT_NAME}（{E.EDITION}）{book}", f"{kind_cn}合订本 · 共 {len(pairs)} 卷 · 学生打印版", out)
             if suffix.startswith("_试卷"):
                 n_paper += len(pairs)
             else:

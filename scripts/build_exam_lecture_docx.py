@@ -26,6 +26,7 @@ import subject_typo  # noqa: E402
 REPO = os.path.expanduser("~/Desktop/cn-k12-dxyc2286")
 BUCKET = os.environ.get("MATH_BUCKET", "math")
 EDITION = os.environ.get("MATH_EDITION", "人教版")
+SUBJECT_NAME = os.environ.get("SUBJECT_NAME", "数学")   # 学科名（语文等）；非数学时绕过 BOOK_INFO 用通用学段判定
 LEC = f"{REPO}/data/{BUCKET}/exam_lectures"
 # 根目录到「试卷讲解」，学科/版本由 book_info() 拼接（避免与 EDITION 重复嵌套）
 OUT_ROOT = os.path.expanduser("~/Desktop/学科图谱相关资料/试卷讲解")
@@ -47,7 +48,16 @@ BOOK_INFO = {
 }
 
 
+def _stage_of(book):
+    m = re.match(r"([一二三四五六七八九])年级", book or "")
+    if m:
+        return "小学" if m.group(1) in "一二三四五六" else "初中"
+    return "高中"
+
+
 def book_info(book):
+    if SUBJECT_NAME != "数学":          # 语文等非数学学科：统一学科名 + 通用学段
+        return (SUBJECT_NAME, EDITION, _stage_of(book))
     # 版本取环境变量 EDITION（版本桶：MATH_BUCKET/MATH_EDITION），不以表内「人教版」为准
     if book in BOOK_INFO:
         subj, _ver, stage = BOOK_INFO[book]
@@ -129,7 +139,8 @@ def subject_of(book):
 
 def render(md, lec, exam, path):
     subject, version, stage = book_info(lec["book"])
-    subj_key = {"数学": "math", "物理": "physics", "化学": "chemistry", "生物": "biology"}[subject]
+    subj_key = {"数学": "math", "物理": "physics", "化学": "chemistry", "生物": "biology",
+                "语文": "chinese"}.get(subject) or os.environ.get("MATH_BUCKET", "math")
     doc = new_doc()
     add_para(doc, f"{subject}（{version}）{lec['book']}　{lec['paper']} · 讲解", subject=subj_key,
              size=16, bold=True, cn="黑体", align="center", after=2)
