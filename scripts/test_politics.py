@@ -139,7 +139,26 @@ ck("高中课时点首前置是本课",
 # ---------------- 字段级
 need = ["name", "domain", "grade", "semester", "chapter", "type", "description", "mastery_criteria"]
 ck("核心字段齐全", all(all(t.get(k) for k in need) for t in topics))
-ck("掌握标准 1–3 条", all(1 <= len(t.get("mastery_criteria") or []) <= 3 for t in topics))
+def han(x):
+    return len(re.findall(r"[\u4e00-\u9fff]", x or ""))
+
+
+ck("掌握标准 2–3 条且每条 15–50 字",
+   all(2 <= len(t.get("mastery_criteria") or []) <= 3
+       and all(15 <= han(m) <= 50 for m in t["mastery_criteria"]) for t in topics),
+   [t["id"] for t in topics if not (2 <= len(t.get("mastery_criteria") or []) <= 3)
+    or any(not (15 <= han(m) <= 50) for m in t.get("mastery_criteria") or [])][:3])
+ck("description 40–90 字且非占位",
+   all(40 <= han(t.get("description")) <= 90 and t["description"] != t["name"]
+       and "核心观点并联系生活实例说明" not in t["description"] for t in topics),
+   [t["id"] for t in topics if han(t.get("description")) < 40 or t["description"] == t["name"]][:3])
+ck("掌握标准以行为动词开头",
+   all(any(m.startswith(v) for v in ("能", "会", "懂得", "知道", "理解", "辨别", "举例",
+                                    "说明", "运用", "说出", "区分", "认识", "体会", "感受",
+                                    "认同", "掌握", "分析", "判断", "解释", "列举", "做到"))
+       for t in topics for m in t.get("mastery_criteria") or []),
+   [t["id"] for t in topics for m in t.get("mastery_criteria") or []
+    if not any(m.startswith(v) for v in ("能", "会", "懂得", "知道", "理解", "辨别"))][:3])
 
 # ---------------- 题库级
 if NO_BANK or not qs:
@@ -163,6 +182,25 @@ else:
        [q["id"] for q in qs if len(q.get("prompt", "")) < 12][:3])
     ck("解析 ≥15 字", all(len(q.get("explanation", "")) >= 15 for q in qs),
        [q["id"] for q in qs if len(q.get("explanation", "")) < 15][:3])
+    # 题型构成：课时点 6 choice + 1 fill + 1 short；单元/课点 5 choice
+    mix_bad = []
+    for t in topics:
+        ts = Counter(x["type"] for x in qs if x["topicId"] == t["id"])
+        if t["level"] == "lesson":
+            if ts != Counter({"choice": 6, "fill": 1, "short-answer": 1}):
+                mix_bad.append((t["id"], dict(ts)))
+        elif ts != Counter({"choice": 5}):
+            mix_bad.append((t["id"], dict(ts)))
+    ck("题型构成 6/1/1 与 5/0/0", not mix_bad, mix_bad[:3])
+    fill_bad = [q["id"] for q in qs if q.get("type") == "fill"
+                and ((q.get("options") or []) != [] or not isinstance(q.get("answer"), str))]
+    ck("填空题无选项且答案非空", not fill_bad, fill_bad[:3])
+    short_bad = [q["id"] for q in qs if q.get("type") == "short-answer"
+                 and not (2 <= len(q.get("keypoints") or []) <= 4)]
+    ck("简答题 keypoints 2–4 条", not short_bad, short_bad[:3])
+    kp_bad = [q["id"] for q in qs if q.get("type") == "short-answer"
+              for k in q.get("keypoints") or [] if han(k) < 4]
+    ck("简答要点每条 ≥4 字", not kp_bad, kp_bad[:3])
     ch = [q for q in qs if q.get("type") == "choice"]
     dist = Counter(q["answer"] for q in ch)
     ck("答案位 ≥3 档且单档 ≤50%", len(dist) >= 3 and max(dist.values()) <= 0.5 * len(ch), dict(dist))
