@@ -1,0 +1,568 @@
+{
+  "units": [
+    {
+      "unit": {
+        "id": "mbs_u127",
+        "name": "三角恒等变换",
+        "subject": "math-bsd",
+        "domain": "数与代数",
+        "grade": 11,
+        "semester": "上",
+        "chapter": "必修第二册 第四单元 三角恒等变换",
+        "level": "unit",
+        "type": "conceptual",
+        "description": "本单元围绕「三角恒等变换」展开，包含同角三角函数的基本关系、由三角函数值求其他三角函数值、两角和与差的余弦公式、两角和与差的正弦 等 9 个课时，重在理清本单元的知识线索与前后联系，把零散的课时串成一条完整的思路。",
+        "mastery_criteria": [
+          "能说清「三角恒等变换」这一单元的核心方法与适用条件",
+          "能在本单元的典型题里独立完成至少八道并自查对错"
+        ],
+        "diagnostic_question": {
+          "question": "下列各题中，属于「三角恒等变换」这一单元核心方法的题目是（　）。",
+          "answer": "A"
+        },
+        "external": false,
+        "standards": [
+          {
+            "id": "mbs-2017:H.SD.08",
+            "confidence": "partial",
+            "quote": "理解同角三角函数的基本关系式",
+            "sourceLine": 712
+          }
+        ],
+        "tags": [
+          "单元上位点",
+          "数与代数"
+        ],
+        "prerequisites": [],
+        "root_reason": "单元上位点，不设先修课时",
+        "verified": false,
+        "curriculumRef": "mbs-2017:H.SD.08"
+      },
+      "questions": [
+        {
+          "id": "mbs_q991291",
+          "topicId": "mbs_u127",
+          "prompt": "已知 sinα = 3/5，且 α 是第二象限角，则 cosα 的值是（　）。",
+          "question": "已知 sinα = 3/5，且 α 是第二象限角，则 cosα 的值是（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "-4/5"
+            },
+            {
+              "label": "B",
+              "text": "4/5"
+            },
+            {
+              "label": "C",
+              "text": "-3/4"
+            },
+            {
+              "label": "D",
+              "text": "3/4"
+            }
+          ],
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "由同角三角函数的基本关系 sin²α + cos²α = 1 得 cos²α = 1 - 9/25 = 16/25，开方得 cosα = ±4/5。平方关系只给出绝对值，符号要靠象限决定：α 在第二象限，余弦取负，所以 cosα = -4/5。只写 4/5 就是漏了定号这一步，写成 -3/4 则是把关系式记成了 tanα 的形式。",
+          "choices": [
+            {
+              "label": "A",
+              "text": "-4/5"
+            },
+            {
+              "label": "B",
+              "text": "4/5"
+            },
+            {
+              "label": "C",
+              "text": "-3/4"
+            },
+            {
+              "label": "D",
+              "text": "3/4"
+            }
+          ],
+          "topicIds": [
+            "mbs_u127"
+          ]
+        },
+        {
+          "id": "mbs_q991292",
+          "topicId": "mbs_u127",
+          "prompt": "cos75° 的值等于（　）。",
+          "question": "cos75° 的值等于（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "(√6 - √2)/4"
+            },
+            {
+              "label": "B",
+              "text": "(√6 + √2)/4"
+            },
+            {
+              "label": "C",
+              "text": "(√2 - √6)/4"
+            },
+            {
+              "label": "D",
+              "text": "(√3 - 1)/2"
+            }
+          ],
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "把 75° 拆成 45° + 30°，用两角和的余弦公式 cos(α + β) = cosαcosβ - sinαsinβ，代入得 (√2/2)(√3/2) - (√2/2)(1/2) = (√6 - √2)/4。中间若写成加号就得到 (√6 + √2)/4，那是 cos15° 的值；符号抄反则得 (√2 - √6)/4，而余弦在第一象限为正，可直接排除。",
+          "choices": [
+            {
+              "label": "A",
+              "text": "(√6 - √2)/4"
+            },
+            {
+              "label": "B",
+              "text": "(√6 + √2)/4"
+            },
+            {
+              "label": "C",
+              "text": "(√2 - √6)/4"
+            },
+            {
+              "label": "D",
+              "text": "(√3 - 1)/2"
+            }
+          ],
+          "topicIds": [
+            "mbs_u127"
+          ]
+        },
+        {
+          "id": "mbs_q991293",
+          "topicId": "mbs_u127",
+          "prompt": "已知 sinα = 1/3，则 cos2α 的值是＿＿＿＿。",
+          "question": "已知 sinα = 1/3，则 cos2α 的值是＿＿＿＿。",
+          "answer": "7/9",
+          "type": "fill",
+          "difficulty": "standard",
+          "explanation": "由二倍角公式的只含正弦的形式 cos2α = 1 - 2sin²α，代入得 1 - 2 × (1/3)² = 1 - 2/9 = 7/9。这一步不需要先求 cosα，所以 α 的象限未知也不影响结果；若改写成 2cos²α - 1，就必须先讨论象限定号。",
+          "choices": [],
+          "topicIds": [
+            "mbs_u127"
+          ]
+        },
+        {
+          "id": "mbs_q991294",
+          "topicId": "mbs_u127",
+          "prompt": "函数 y = 3sinx + 4cosx 的最大值等于＿＿＿＿。",
+          "question": "函数 y = 3sinx + 4cosx 的最大值等于＿＿＿＿。",
+          "answer": "5",
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "把 3sinx + 4cosx 叠加成 √(3² + 4²) 倍的正弦，即 5sin(x + φ)，其中 φ 由 cosφ = 3/5、sinφ = 4/5 确定。正弦的最大值是 1，所以原函数的最大值就是 5，在 sin(x + φ) = 1 时取到；最小值则是 -5。",
+          "verify": "int((3*3+4*4)**0.5)",
+          "choices": [],
+          "topicIds": [
+            "mbs_u127"
+          ]
+        },
+        {
+          "id": "mbs_q991295",
+          "topicId": "mbs_u127",
+          "prompt": "已知 sinα + cosα = 1/5，且 0 < α < π，求 sinα - cosα 的值，并写出推理过程。",
+          "question": "已知 sinα + cosα = 1/5，且 0 < α < π，求 sinα - cosα 的值，并写出推理过程。",
+          "answer": "sinα - cosα = 7/5",
+          "type": "short-answer",
+          "difficulty": "hard",
+          "explanation": "把 sinα + cosα = 1/5 两边平方，得 1 + 2sinαcosα = 1/25，所以 sinαcosα = -12/25。于是 (sinα - cosα)² = 1 - 2sinαcosα = 1 + 24/25 = 49/25，开方得 sinα - cosα = ±7/5。由 sinαcosα < 0 且 0 < α < π 时 sinα > 0，得 cosα < 0，从而 sinα - cosα > 0，取 7/5。本题的关键是先平方再开方，并用积的符号把两个候选值筛成一个。",
+          "keypoints": [
+            "把已知等式两边平方，先求出 sinαcosα = -12/25",
+            "利用 (sinα - cosα)² = 1 - 2sinαcosα 算出平方为 49/25",
+            "开方得到 ±7/5 两个候选值",
+            "由 sinαcosα < 0 与 0 < α < π 判断 sinα - cosα > 0，舍去负值"
+          ],
+          "choices": [],
+          "topicIds": [
+            "mbs_u127"
+          ]
+        }
+      ]
+    },
+    {
+      "unit": {
+        "id": "mbs_u128",
+        "name": "复数",
+        "subject": "math-bsd",
+        "domain": "数与代数",
+        "grade": 11,
+        "semester": "上",
+        "chapter": "必修第二册 第五单元 复数",
+        "level": "unit",
+        "type": "conceptual",
+        "description": "本单元围绕「复数」展开，包含复数的概念、复数的分类与复数相等、复数的几何意义、复数的模与共轭复数 等 10 个课时，重在理清本单元的知识线索与前后联系，把零散的课时串成一条完整的思路。",
+        "mastery_criteria": [
+          "能说清「复数」这一单元的核心方法与适用条件",
+          "能在本单元的典型题里独立完成至少八道并自查对错"
+        ],
+        "diagnostic_question": {
+          "question": "下列各题中，属于「复数」这一单元核心方法的题目是（　）。",
+          "answer": "A"
+        },
+        "external": false,
+        "standards": [
+          {
+            "id": "mbs-2017:H.SD.13",
+            "confidence": "partial",
+            "quote": "理解复数的代数表示及其几何意义，理解两个复数相等的含义",
+            "sourceLine": 877
+          }
+        ],
+        "tags": [
+          "单元上位点",
+          "数与代数"
+        ],
+        "prerequisites": [],
+        "root_reason": "单元上位点，不设先修课时",
+        "verified": false,
+        "curriculumRef": "mbs-2017:H.SD.13"
+      },
+      "questions": [
+        {
+          "id": "mbs_q991296",
+          "topicId": "mbs_u128",
+          "prompt": "复数 z = 2 + 3i 的虚部是（　）。",
+          "question": "复数 z = 2 + 3i 的虚部是（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "3"
+            },
+            {
+              "label": "B",
+              "text": "3i"
+            },
+            {
+              "label": "C",
+              "text": "2"
+            },
+            {
+              "label": "D",
+              "text": "-3"
+            }
+          ],
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "复数写成 z = a + bi（a、b 为实数）时，a 是实部，b 是虚部，虚部本身是一个实数。所以 2 + 3i 的实部是 2，虚部是 3。把 3i 整个当作虚部是最常见的错法，虚部不含 i。",
+          "choices": [
+            {
+              "label": "A",
+              "text": "3"
+            },
+            {
+              "label": "B",
+              "text": "3i"
+            },
+            {
+              "label": "C",
+              "text": "2"
+            },
+            {
+              "label": "D",
+              "text": "-3"
+            }
+          ],
+          "topicIds": [
+            "mbs_u128"
+          ]
+        },
+        {
+          "id": "mbs_q991297",
+          "topicId": "mbs_u128",
+          "prompt": "计算 (2 + i)(1 - 2i) 的结果是（　）。",
+          "question": "计算 (2 + i)(1 - 2i) 的结果是（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "4 - 3i"
+            },
+            {
+              "label": "B",
+              "text": "4 + 3i"
+            },
+            {
+              "label": "C",
+              "text": "-3i"
+            },
+            {
+              "label": "D",
+              "text": "2 - 3i"
+            }
+          ],
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "按多项式乘法展开得 2 - 4i + i - 2i²，再把 i² 换成 -1，-2i² 变成 2，实部为 2 + 2 = 4，虚部为 -4 + 1 = -3，结果是 4 - 3i。漏掉 i² = -1 这一步会得到虚部为 -3 而实部为 0 的 -3i，符号算错则得到 4 + 3i。",
+          "choices": [
+            {
+              "label": "A",
+              "text": "4 - 3i"
+            },
+            {
+              "label": "B",
+              "text": "4 + 3i"
+            },
+            {
+              "label": "C",
+              "text": "-3i"
+            },
+            {
+              "label": "D",
+              "text": "2 - 3i"
+            }
+          ],
+          "topicIds": [
+            "mbs_u128"
+          ]
+        },
+        {
+          "id": "mbs_q991298",
+          "topicId": "mbs_u128",
+          "prompt": "复数 z = 2 - 5i 的共轭复数是＿＿＿＿。",
+          "question": "复数 z = 2 - 5i 的共轭复数是＿＿＿＿。",
+          "answer": "2 + 5i",
+          "type": "fill",
+          "difficulty": "standard",
+          "explanation": "共轭复数只把虚部的符号取反，实部保持不变，所以 2 - 5i 的共轭复数是 2 + 5i。常见错误是把实部也一起变号写成 -2 + 5i，或者连虚部符号都不改，两者都不符合定义。",
+          "choices": [],
+          "topicIds": [
+            "mbs_u128"
+          ]
+        },
+        {
+          "id": "mbs_q991299",
+          "topicId": "mbs_u128",
+          "prompt": "设 z = 4 + 3i，则 z 与它的共轭复数的乘积等于＿＿＿＿。",
+          "question": "设 z = 4 + 3i，则 z 与它的共轭复数的乘积等于＿＿＿＿。",
+          "answer": "25",
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "把共轭复数写成 4 - 3i 直接相乘，得 16 - 12i + 12i - 9i² = 16 + 9 = 25，虚部抵消后是实数。更快的算法是用 z 与共轭复数之积等于模的平方，即 4² + 3² = 25，两种算法结果一致。",
+          "verify": "(4*4+3*3)",
+          "choices": [],
+          "topicIds": [
+            "mbs_u128"
+          ]
+        },
+        {
+          "id": "mbs_q991300",
+          "topicId": "mbs_u128",
+          "prompt": "已知实系数一元二次方程 x² - 2x + 5 = 0，求它的根，并说明两根之间的关系。",
+          "question": "已知实系数一元二次方程 x² - 2x + 5 = 0，求它的根，并说明两根之间的关系。",
+          "answer": "两根为 1 + 2i 与 1 - 2i，它们互为共轭复数",
+          "type": "short-answer",
+          "difficulty": "hard",
+          "explanation": "先算判别式 Δ = (-2)² - 4 × 1 × 5 = -16，小于 0，所以方程没有实根，而有一对共轭虚根。由求根公式 x = (2 ± √(-16))/2 = (2 ± 4i)/2，得 x = 1 + 2i 或 x = 1 - 2i，实部相同、虚部互为相反数。用韦达定理核对：两根之和为 2，等于 -b/a；两根之积为 (1)² + (2)² = 5，等于 c/a，结果自洽。",
+          "keypoints": [
+            "先由判别式 -16 < 0 判定方程无实根、有一对共轭虚根",
+            "把 √(-16) 写成 4i，代入求根公式得到 x = 1 ± 2i",
+            "说明两根实部相同、虚部互为相反数，即互为共轭复数",
+            "用韦达定理核对两根之和为 2、之积为 5，确认结果无误"
+          ],
+          "choices": [],
+          "topicIds": [
+            "mbs_u128"
+          ]
+        }
+      ]
+    },
+    {
+      "unit": {
+        "id": "mbs_u129",
+        "name": "立体几何初步",
+        "subject": "math-bsd",
+        "domain": "图形与几何",
+        "grade": 11,
+        "semester": "上",
+        "chapter": "必修第二册 第六单元 立体几何初步",
+        "level": "unit",
+        "type": "conceptual",
+        "description": "本单元围绕「立体几何初步」展开，包含构成空间几何体的基本元素与多面体、简单旋转体、直观图、空间点 等 10 个课时，重在理清本单元的知识线索与前后联系，把零散的课时串成一条完整的思路。",
+        "mastery_criteria": [
+          "能说清「立体几何初步」这一单元的核心方法与适用条件",
+          "能在本单元的典型题里独立完成至少八道并自查对错"
+        ],
+        "diagnostic_question": {
+          "question": "下列各题中，属于「立体几何初步」这一单元核心方法的题目是（　）。",
+          "answer": "A"
+        },
+        "external": false,
+        "standards": [
+          {
+            "id": "mbs-2017:H.TX.04",
+            "confidence": "partial",
+            "quote": "利用实物、计算机软件等观察空间图形，掌握柱、锥、台、球及简单组合体的结构特征",
+            "sourceLine": 901
+          }
+        ],
+        "tags": [
+          "单元上位点",
+          "图形与几何"
+        ],
+        "prerequisites": [],
+        "root_reason": "单元上位点，不设先修课时",
+        "verified": false,
+        "curriculumRef": "mbs-2017:H.TX.04"
+      },
+      "questions": [
+        {
+          "id": "mbs_q991301",
+          "topicId": "mbs_u129",
+          "prompt": "下列关于棱柱的说法中，正确的是（　）。",
+          "question": "下列关于棱柱的说法中，正确的是（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "棱柱的侧棱都相等且互相平行"
+            },
+            {
+              "label": "B",
+              "text": "棱柱的两个底面可以一个是三角形、一个是四边形"
+            },
+            {
+              "label": "C",
+              "text": "棱柱的侧面可以是梯形"
+            },
+            {
+              "label": "D",
+              "text": "棱柱的侧棱一定与底面垂直"
+            }
+          ],
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "棱柱由两个平行且全等的多边形底面与若干平行四边形侧面围成，侧棱是相邻侧面的公共边，因此各侧棱互相平行且长度相等。两底面必须全等，不可能一个是三角形一个是四边形；侧面只能是平行四边形，梯形不是平行四边形；侧棱与底面垂直的只是直棱柱，斜棱柱不垂直。",
+          "choices": [
+            {
+              "label": "A",
+              "text": "棱柱的侧棱都相等且互相平行"
+            },
+            {
+              "label": "B",
+              "text": "棱柱的两个底面可以一个是三角形、一个是四边形"
+            },
+            {
+              "label": "C",
+              "text": "棱柱的侧面可以是梯形"
+            },
+            {
+              "label": "D",
+              "text": "棱柱的侧棱一定与底面垂直"
+            }
+          ],
+          "topicIds": [
+            "mbs_u129"
+          ]
+        },
+        {
+          "id": "mbs_q991302",
+          "topicId": "mbs_u129",
+          "prompt": "设 a 是直线，α 是平面，下列条件中能推出 a 平行于 α 的是（　）。",
+          "question": "设 a 是直线，α 是平面，下列条件中能推出 a 平行于 α 的是（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "a 与 α 内的一条直线平行，且 a 不在 α 内"
+            },
+            {
+              "label": "B",
+              "text": "a 与 α 内的一条直线平行"
+            },
+            {
+              "label": "C",
+              "text": "a 与 α 内的无数条直线平行"
+            },
+            {
+              "label": "D",
+              "text": "a 上两个不同的点到 α 的距离相等"
+            }
+          ],
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "线面平行的判定定理要求两个条件同时成立：平面外一条直线与平面内的一条直线平行。选项 B 少了「a 不在 α 内」，此时 a 可能整个落在 α 内；选项 C 中 α 内的无数条直线可以互相平行，a 仍可能落在 α 内；选项 D 只说明 a 与 α 平行或在 α 内，同样不能唯一确定。",
+          "choices": [
+            {
+              "label": "A",
+              "text": "a 与 α 内的一条直线平行，且 a 不在 α 内"
+            },
+            {
+              "label": "B",
+              "text": "a 与 α 内的一条直线平行"
+            },
+            {
+              "label": "C",
+              "text": "a 与 α 内的无数条直线平行"
+            },
+            {
+              "label": "D",
+              "text": "a 上两个不同的点到 α 的距离相等"
+            }
+          ],
+          "topicIds": [
+            "mbs_u129"
+          ]
+        },
+        {
+          "id": "mbs_q991303",
+          "topicId": "mbs_u129",
+          "prompt": "底面半径为 2、母线长为 5 的圆锥，它的侧面积等于＿＿＿＿。",
+          "question": "底面半径为 2、母线长为 5 的圆锥，它的侧面积等于＿＿＿＿。",
+          "answer": "10π",
+          "type": "fill",
+          "difficulty": "standard",
+          "explanation": "圆锥侧面展开后是扇形，扇形半径等于母线长 5，弧长等于底面周长 2π × 2 = 4π。侧面积等于二分之一乘弧长乘母线，即 0.5 × 4π × 5 = 10π。若误用底面积公式会得到 4π，若把底面积一并算进去则得到表面积 14π，两者都不合题意。",
+          "choices": [],
+          "topicIds": [
+            "mbs_u129"
+          ]
+        },
+        {
+          "id": "mbs_q991304",
+          "topicId": "mbs_u129",
+          "prompt": "一个正方体的表面积为 24，则它的体积等于＿＿＿＿。",
+          "question": "一个正方体的表面积为 24，则它的体积等于＿＿＿＿。",
+          "answer": "8",
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "正方体有 6 个全等的正方形面，设棱长为 a，则 6a² = 24，得 a² = 4，a = 2。再用体积公式 V = a³ = 8。这里必须先用表面积反求棱长，直接把 24 当棱长或当体积都是典型错法。",
+          "verify": "2**3",
+          "choices": [],
+          "topicIds": [
+            "mbs_u129"
+          ]
+        },
+        {
+          "id": "mbs_q991305",
+          "topicId": "mbs_u129",
+          "prompt": "圆锥的高为 4，底面半径为 3，求它的侧面展开图（扇形）的圆心角，并写出推理过程。",
+          "question": "圆锥的高为 4，底面半径为 3，求它的侧面展开图（扇形）的圆心角，并写出推理过程。",
+          "answer": "圆心角为 6π/5 弧度，即 216°",
+          "type": "short-answer",
+          "difficulty": "hard",
+          "explanation": "先求母线：由高 4 与底面半径 3 得 l = √(3² + 4²) = 5。侧面展开的扇形半径等于母线 5，弧长等于底面周长 2π × 3 = 6π。由弧长等于半径乘圆心角，得圆心角 θ = 6π/5 弧度，换算成角度为 6π/5 × 180°/π = 216°。也可用 θ = 2πr/l = 6π/5 直接得到同一结果。",
+          "keypoints": [
+            "用勾股定理由高 4 和底面半径 3 求出母线长 5",
+            "确定展开扇形的弧长等于底面周长 6π，半径为母线 5",
+            "由弧长等于半径乘圆心角解出 θ = 6π/5 弧度",
+            "把弧度换算为 216°，并用 θ = 2πr/l 复核结果"
+          ],
+          "choices": [],
+          "topicIds": [
+            "mbs_u129"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,663 @@
+{
+  "book": "必修第二册",
+  "kind": "unit",
+  "term": "上册",
+  "grade": 11,
+  "stage": "高中",
+  "subject": "math-bsd",
+  "paper": "必修第二册 第四单元 三角恒等变换 测试卷",
+  "duration": 120,
+  "fullScore": 150,
+  "scope": [
+    "必修第二册 第四单元 三角恒等变换"
+  ],
+  "topicIds": [
+    "mbs_u127"
+  ],
+  "examId": "mbs_exam_b2_u04",
+  "sections": [
+    {
+      "title": "一、单选题",
+      "rule": "每小题 5 分，共 40 分",
+      "items": [
+        {
+          "no": 1,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h111"
+          ],
+          "stem": "计算 sin 20°cos 25° + cos 20°sin 25° 的值，结果是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "1/2"
+            },
+            {
+              "label": "B",
+              "text": "√2/2"
+            },
+            {
+              "label": "C",
+              "text": "√3/2"
+            },
+            {
+              "label": "D",
+              "text": "1"
+            }
+          ],
+          "answer": "B",
+          "analysis": "式子正好是两角和正弦公式的右端：sin A cos B + cos A sin B = sin(A + B)。取 A = 20°、B = 25° 得原式 = sin 45° = √2/2。若错用差角公式，会算成 sin 5° 而错选。",
+          "itemId": "mbs_exam_b2_u04_q01"
+        },
+        {
+          "no": 2,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h108"
+          ],
+          "stem": "已知 sin α = −5/13，且角 α 的终边在第三象限，则 tan α 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "−5/12"
+            },
+            {
+              "label": "B",
+              "text": "5/13"
+            },
+            {
+              "label": "C",
+              "text": "5/12"
+            },
+            {
+              "label": "D",
+              "text": "−12/5"
+            }
+          ],
+          "answer": "C",
+          "analysis": "由平方关系 cos²α = 1 − 25/169 = 144/169。第三象限余弦为负，故 cos α = −12/13。于是 tan α = sin α / cos α = (−5/13) ÷ (−12/13) = 5/12，两个负数相除为正，与第三象限正切为正相符。",
+          "itemId": "mbs_exam_b2_u04_q02"
+        },
+        {
+          "no": 3,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h114"
+          ],
+          "stem": "已知 sin α = 4/5，且 α ∈ (0, π/2)，则 sin 2α 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "24/25"
+            },
+            {
+              "label": "B",
+              "text": "12/25"
+            },
+            {
+              "label": "C",
+              "text": "7/25"
+            },
+            {
+              "label": "D",
+              "text": "−24/25"
+            }
+          ],
+          "answer": "A",
+          "analysis": "由 α 在第一象限得 cos α = 3/5。用二倍角的正弦公式 sin 2α = 2sin α cos α = 2×(4/5)×(3/5) = 24/25。7/25 是 cos 2α = cos²α − sin²α 的值，别混淆两个二倍角公式。",
+          "itemId": "mbs_exam_b2_u04_q03"
+        },
+        {
+          "no": 4,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h114"
+          ],
+          "stem": "cos²15° − sin²15° 的值等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "1/2"
+            },
+            {
+              "label": "B",
+              "text": "√2/2"
+            },
+            {
+              "label": "C",
+              "text": "√3/2"
+            },
+            {
+              "label": "D",
+              "text": "1"
+            }
+          ],
+          "answer": "C",
+          "analysis": "这正是二倍角余弦公式的左端：cos²θ − sin²θ = cos 2θ。取 θ = 15° 得 cos 30° = √3/2。这类题不必分别算出 cos15° 与 sin15°，直接用公式最快。",
+          "itemId": "mbs_exam_b2_u04_q04"
+        },
+        {
+          "no": 5,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h112"
+          ],
+          "stem": "函数 f(x) = √3 sin x + cos x 可以化为（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "2sin(x − π/6)"
+            },
+            {
+              "label": "B",
+              "text": "2sin(x + π/3)"
+            },
+            {
+              "label": "C",
+              "text": "sin(x + π/6)"
+            },
+            {
+              "label": "D",
+              "text": "2sin(x + π/6)"
+            }
+          ],
+          "answer": "D",
+          "analysis": "把系数 1 与 √3 看成某个角的正余弦的倍数：提取 2 得 2((√3/2)sin x + (1/2)cos x)。因为 cos(π/6) = √3/2，sin(π/6) = 1/2，由两角和的正弦公式得 f(x) = 2sin(x + π/6)。检验：x = 0 时左端为 1，右端 2sin(π/6) = 1，一致。",
+          "itemId": "mbs_exam_b2_u04_q05"
+        },
+        {
+          "no": 6,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h115"
+          ],
+          "stem": "已知 cos α = 3/5，且 α ∈ (0, π/2)，则 tan(α/2) 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "1/3"
+            },
+            {
+              "label": "B",
+              "text": "1/2"
+            },
+            {
+              "label": "C",
+              "text": "2"
+            },
+            {
+              "label": "D",
+              "text": "3/4"
+            }
+          ],
+          "answer": "B",
+          "analysis": "由 α 在第一象限得 sin α = 4/5。半角正切可用不带根号的形式：tan(α/2) = sin α /(1 + cos α) = (4/5)/(1 + 3/5) = (4/5)/(8/5) = 1/2。也可用 (1 − cos α)/sin α 计算，得 (2/5)/(4/5) = 1/2，两式一致。",
+          "itemId": "mbs_exam_b2_u04_q06"
+        },
+        {
+          "no": 7,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h113"
+          ],
+          "stem": "sin 75° + sin 15° 的值等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "√6/2"
+            },
+            {
+              "label": "B",
+              "text": "√3/2"
+            },
+            {
+              "label": "C",
+              "text": "√2"
+            },
+            {
+              "label": "D",
+              "text": "√6"
+            }
+          ],
+          "answer": "A",
+          "analysis": "用和差化积公式 sin A + sin B = 2sin((A + B)/2)·cos((A − B)/2)：两角和的一半为 45°，两角差的一半为 30°，故原式 = 2sin45°cos30° = 2×(√2/2)×(√3/2) = √6/2。若不记得公式，也可把 75° 写成 45° + 30° 展开后合并。",
+          "itemId": "mbs_exam_b2_u04_q07"
+        },
+        {
+          "no": 8,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h109"
+          ],
+          "stem": "已知 tan α = 3，则 sin²α + sin α·cos α 的值为（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "2/5"
+            },
+            {
+              "label": "B",
+              "text": "1"
+            },
+            {
+              "label": "C",
+              "text": "3/5"
+            },
+            {
+              "label": "D",
+              "text": "6/5"
+            }
+          ],
+          "answer": "D",
+          "analysis": "把待求式看成齐次分式，除以 sin²α + cos²α（其值为 1）不改变结果：原式 = (tan²α + tan α)/(tan²α + 1)。代入 tan α = 3 得 (9 + 3)/(9 + 1) = 12/10 = 6/5。也可由 sin α = 3cos α 代入 sin²α + cos²α = 1 求出 cos²α = 1/10 再算。",
+          "itemId": "mbs_exam_b2_u04_q08"
+        }
+      ]
+    },
+    {
+      "title": "二、多选题",
+      "rule": "每小题 5 分，共 20 分；全部选对得 5 分，部分选对得 2 分，有错选得 0 分",
+      "items": [
+        {
+          "no": 9,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h114"
+          ],
+          "stem": "下列各式的值等于 1/2 的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "2sin 15°cos 15°"
+            },
+            {
+              "label": "B",
+              "text": "cos²(π/8) − sin²(π/8)"
+            },
+            {
+              "label": "C",
+              "text": "1/2 + (1/2)cos(π/3)"
+            },
+            {
+              "label": "D",
+              "text": "tan 22.5° 除以 (1 − tan²22.5°)"
+            }
+          ],
+          "answer": "AD",
+          "analysis": "2sin15°cos15° = sin30° = 1/2，A 符合；cos²(π/8) − sin²(π/8) = cos(π/4) = √2/2，B 不符合；1/2 + (1/2)×(1/2) = 3/4，C 不符合；由二倍角正切公式 tan2θ = 2tanθ/(1 − tan²θ) 得 tan22.5°/(1 − tan²22.5°) = (1/2)tan45° = 1/2，D 符合。选 AD。",
+          "itemId": "mbs_exam_b2_u04_q09"
+        },
+        {
+          "no": 10,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h114"
+          ],
+          "stem": "关于 cos 2α，下列表示正确的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "2cos²α − 1"
+            },
+            {
+              "label": "B",
+              "text": "1 − 2sin²α"
+            },
+            {
+              "label": "C",
+              "text": "cos²α − sin²α"
+            },
+            {
+              "label": "D",
+              "text": "2sin²α − 1"
+            }
+          ],
+          "answer": "ABC",
+          "analysis": "二倍角余弦有三个等价形式：cos 2α = cos²α − sin²α = 2cos²α − 1 = 1 − 2sin²α，前三项都正确。D 写成 2sin²α − 1，实际等于 −(1 − 2sin²α) = −cos 2α，符号相反，故错。选 ABC。",
+          "itemId": "mbs_exam_b2_u04_q10"
+        },
+        {
+          "no": 11,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h108",
+            "mbs_h114"
+          ],
+          "stem": "已知 cos α = 1/3，且 α ∈ (0, π/2)，则下列结论正确的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "sin α = 2√2/3"
+            },
+            {
+              "label": "B",
+              "text": "cos 2α = −7/9"
+            },
+            {
+              "label": "C",
+              "text": "sin 2α = 4√2/9"
+            },
+            {
+              "label": "D",
+              "text": "tan 2α = 4√2/7"
+            }
+          ],
+          "answer": "ABC",
+          "analysis": "由平方关系 sin α = √(1 − 1/9) = 2√2/3，A 正确。cos 2α = 2cos²α − 1 = 2/9 − 1 = −7/9，B 正确。sin 2α = 2sin α cos α = 2×(2√2/3)×(1/3) = 4√2/9，C 正确。tan 2α = sin2α/cos2α = (4√2/9) ÷ (−7/9) = −4√2/7，D 漏掉负号，错。选 ABC。",
+          "itemId": "mbs_exam_b2_u04_q11"
+        },
+        {
+          "no": 12,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "hard",
+          "topicIds": [
+            "mbs_h112",
+            "mbs_h116"
+          ],
+          "stem": "已知函数 f(x) = sin 2x − √3cos 2x，下列结论正确的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "最小正周期为 π"
+            },
+            {
+              "label": "B",
+              "text": "图象关于直线 x = 5π/12 对称"
+            },
+            {
+              "label": "C",
+              "text": "在区间 [0, π/3] 上单调递增"
+            },
+            {
+              "label": "D",
+              "text": "最大值为 1"
+            }
+          ],
+          "answer": "ABC",
+          "analysis": "先化简：f(x) = 2sin(2x − π/3)。ω = 2，周期 T = π，A 正确。对称轴处相位为 π/2 + kπ，令 2x − π/3 = π/2 得 x = 5π/12，此时取到最大值 2，B 正确。x ∈ [0, π/3] 时相位从 −π/3 增到 π/3，落在正弦的递增段内，C 正确。最大值为 2 而非 1，D 错。选 ABC。",
+          "itemId": "mbs_exam_b2_u04_q12"
+        }
+      ]
+    },
+    {
+      "title": "三、填空题",
+      "rule": "每小题 5 分，共 20 分",
+      "items": [
+        {
+          "no": 13,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h114"
+          ],
+          "stem": "若 tan α = 3，则 tan 2α 的值为＿＿＿＿。",
+          "answer": "−3/4",
+          "analysis": "由二倍角正切公式 tan 2α = 2tan α/(1 − tan²α) = 6/(1 − 9) = −3/4。分母为负说明 2α 落在第二或第四象限，正切取负值，与结果一致。",
+          "itemId": "mbs_exam_b2_u04_q13"
+        },
+        {
+          "no": 14,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h110"
+          ],
+          "stem": "tan 15° 的值为＿＿＿＿。",
+          "answer": "2 − √3",
+          "analysis": "tan15° = tan(45° − 30°) = (tan45° − tan30°)/(1 + tan45°·tan30°) = (1 − √3/3)/(1 + √3/3)。分子分母同乘 3 得 (3 − √3)/(3 + √3)，分母有理化后等于 2 − √3，约为 0.268，与 15° 是锐角且很小相符。",
+          "itemId": "mbs_exam_b2_u04_q14"
+        },
+        {
+          "no": 15,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h114"
+          ],
+          "stem": "已知 sin α = 2/3，且角 α 的终边在第二象限，则 sin 2α 的值为＿＿＿＿。",
+          "answer": "−4√5/9",
+          "analysis": "第二象限余弦为负，cos α = −√(1 − 4/9) = −√5/3。于是 sin 2α = 2sin α·cos α = 2×(2/3)×(−√5/3) = −4√5/9。二倍角的正弦为负，说明 2α 落在第三或第四象限。",
+          "itemId": "mbs_exam_b2_u04_q15"
+        },
+        {
+          "no": 16,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "hard",
+          "topicIds": [
+            "mbs_h113"
+          ],
+          "stem": "sin 50°(1 + √3 tan 10°) 的值为＿＿＿＿。",
+          "answer": "1",
+          "analysis": "把括号内通分：1 + √3 tan10° = (cos10° + √3 sin10°)/cos10°，而 cos10° + √3sin10° = 2sin(10° + 30°) = 2sin40°。原式化为 2sin50°sin40°/cos10°，由 sin50° = cos40° 得分子为 2cos40°sin40° = sin80° = cos10°，故原式等于 1。",
+          "itemId": "mbs_exam_b2_u04_q16"
+        }
+      ]
+    },
+    {
+      "title": "四、解答题",
+      "rule": "共 6 小题，满分 70 分（10 + 12 + 12 + 12 + 12 + 12）",
+      "items": [
+        {
+          "no": 17,
+          "score": 10,
+          "type": "solve",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h108",
+            "mbs_h109"
+          ],
+          "stem": "已知 cos α = −4/5，且 α ∈ (π/2, π)。（1）求 sin α 与 tan α 的值；（2）求 sin 2α 与 cos 2α 的值。",
+          "answer": "（1）sin α = 3/5，tan α = −3/4；（2）sin 2α = −24/25，cos 2α = 7/25",
+          "analysis": "（1）α 在第二象限，正弦为正：sin α = √(1 − 16/25) = 3/5；tan α = sin α/cos α = (3/5) ÷ (−4/5) = −3/4。（2）sin 2α = 2sin α cos α = 2×(3/5)×(−4/5) = −24/25；cos 2α = 2cos²α − 1 = 2×(16/25) − 1 = 7/25。用平方和检验：(−24/25)² + (7/25)² = (576 + 49)/625 = 1，结果自洽。",
+          "scoreRule": [
+            {
+              "desc": "由平方关系求出 sin α = 3/5",
+              "score": 3
+            },
+            {
+              "desc": "求出 tan α = −3/4",
+              "score": 2
+            },
+            {
+              "desc": "用二倍角公式求出 sin 2α",
+              "score": 3
+            },
+            {
+              "desc": "求出 cos 2α 并检验",
+              "score": 2
+            }
+          ],
+          "itemId": "mbs_exam_b2_u04_q17"
+        },
+        {
+          "no": 18,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h110",
+            "mbs_h111"
+          ],
+          "stem": "已知 tan α、tan β 是一元二次方程 x² − 5x + 6 = 0 的两个根。（1）求 tan(α + β) 的值；（2）若 α、β 都是锐角，求 α + β 的值。",
+          "answer": "（1）tan(α + β) = −1；（2）α + β = 3π/4",
+          "analysis": "（1）由韦达定理 tan α + tan β = 5，tan α·tan β = 6。代入两角和的正切公式得 tan(α + β) = (5)/(1 − 6) = −1。（2）α、β 都是锐角，故 α + β ∈ (0, π)。在这个范围内正切为 −1 的角只有 3π/4，所以 α + β = 3π/4。若丢掉角的范围限定，会误答 −π/4 或 7π/4。",
+          "scoreRule": [
+            {
+              "desc": "由韦达定理写出两根之和与两根之积",
+              "score": 4
+            },
+            {
+              "desc": "代入公式求出 tan(α + β) = −1",
+              "score": 4
+            },
+            {
+              "desc": "由 α、β 为锐角确定 α + β 的范围",
+              "score": 2
+            },
+            {
+              "desc": "得出 α + β = 3π/4",
+              "score": 2
+            }
+          ],
+          "itemId": "mbs_exam_b2_u04_q18"
+        },
+        {
+          "no": 19,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h116",
+            "mbs_h115"
+          ],
+          "stem": "化简 (1 + sin α + cos α)(sin(α/2) − cos(α/2)) 除以 √(2 + 2cos α)，其中 α ∈ (0, π)，并求 α = π/3 时该式的值。",
+          "answer": "化简结果为 −cos α；当 α = π/3 时值为 −1/2",
+          "analysis": "先化简根号：2 + 2cos α = 4cos²(α/2)，当 α ∈ (0, π) 时 α/2 ∈ (0, π/2)，cos(α/2) > 0，故根号为 2cos(α/2)。再看 1 + sin α + cos α = (1 + cos α) + sin α = 2cos²(α/2) + 2sin(α/2)cos(α/2) = 2cos(α/2)(cos(α/2) + sin(α/2))。与后面的 (sin(α/2) − cos(α/2)) 相乘得 2cos(α/2)(sin²(α/2) − cos²(α/2)) = −2cos(α/2)cos α。除以 2cos(α/2) 得 −cos α。代入 α = π/3 得 −1/2。",
+          "scoreRule": [
+            {
+              "desc": "把根号化为 2cos(α/2) 并说明符号",
+              "score": 4
+            },
+            {
+              "desc": "把 1 + sin α + cos α 分解为 2cos(α/2)(cos(α/2) + sin(α/2))",
+              "score": 4
+            },
+            {
+              "desc": "约分得 −cos α",
+              "score": 2
+            },
+            {
+              "desc": "代入 α = π/3 求出 −1/2",
+              "score": 2
+            }
+          ],
+          "itemId": "mbs_exam_b2_u04_q19"
+        },
+        {
+          "no": 20,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h112",
+            "mbs_h116"
+          ],
+          "stem": "已知函数 f(x) = 2sin x·cos x + 2√3cos²x − √3。（1）化简 f(x) 并求它的最小正周期；（2）求 f(x) 在区间 [0, π/2] 上的值域。",
+          "answer": "（1）f(x) = 2sin(2x + π/3)，最小正周期为 π；（2）值域为 [−√3, 2]",
+          "analysis": "（1）2sin x·cos x = sin 2x，而 2cos²x − 1 = cos 2x，故 2√3cos²x − √3 = √3cos 2x。于是 f(x) = sin 2x + √3cos 2x = 2sin(2x + π/3)，周期 T = 2π/2 = π。（2）x ∈ [0, π/2] 时相位 2x + π/3 ∈ [π/3, 4π/3]。相位为 π/2（即 x = π/12）时取最大值 2；相位为 4π/3 时正弦取 −√3/2，对应最小值 −√3。故值域为 [−√3, 2]。",
+          "scoreRule": [
+            {
+              "desc": "用二倍角公式把 f(x) 化为 sin2x + √3cos2x",
+              "score": 4
+            },
+            {
+              "desc": "合并为 2sin(2x + π/3) 并写出周期 π",
+              "score": 3
+            },
+            {
+              "desc": "求出区间上的最大值 2",
+              "score": 3
+            },
+            {
+              "desc": "求出最小值 −√3 并写出值域",
+              "score": 2
+            }
+          ],
+          "itemId": "mbs_exam_b2_u04_q20"
+        },
+        {
+          "no": 21,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h111",
+            "mbs_h116"
+          ],
+          "stem": "在 △ABC 中，三个内角 A、B、C 满足 tan A + tan B + √3 = √3·tan A·tan B。（1）求角 C 的大小；（2）若 a = 2，b = 4，求边 c 与 △ABC 的面积。",
+          "answer": "（1）C = 60°；（2）c = 2√3，面积为 2√3",
+          "analysis": "（1）把条件变形得 tan A + tan B = √3(tan A·tan B − 1)，于是 tan(A + B) = (tan A + tan B)/(1 − tan A·tan B) = −√3。因为 A + B ∈ (0, π)，故 A + B = 120°，从而 C = 180° − 120° = 60°。（2）由余弦定理 c² = 4 + 16 − 2×2×4×(1/2) = 20 − 8 = 12，c = 2√3；面积 S = (1/2)ab·sin C = (1/2)×2×4×(√3/2) = 2√3。",
+          "scoreRule": [
+            {
+              "desc": "把条件变形为 tan A + tan B 与 tan A·tan B 的关系",
+              "score": 4
+            },
+            {
+              "desc": "求得 tan(A + B) = −√3 与 A + B = 120°",
+              "score": 3
+            },
+            {
+              "desc": "用余弦定理求出 c = 2√3",
+              "score": 3
+            },
+            {
+              "desc": "求面积 2√3",
+              "score": 2
+            }
+          ],
+          "itemId": "mbs_exam_b2_u04_q21"
+        },
+        {
+          "no": 22,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "hard",
+          "topicIds": [
+            "mbs_h109",
+            "mbs_h111",
+            "mbs_u127"
+          ],
+          "stem": "已知 α、β 都是锐角，且 sin α = √5/5，sin β = √10/10。（1）求 cos(α + β) 的值；（2）求 α + β 的值，并求 sin(α + β) 以验证结果。",
+          "answer": "（1）cos(α + β) = √2/2；（2）α + β = π/4，且 sin(α + β) = √2/2",
+          "analysis": "由 α、β 为锐角得 cos α = √(1 − 1/5) = 2√5/5，cos β = √(1 − 1/10) = 3√10/10。（1）cos(α + β) = cos α cos β − sin α sin β = (2√5/5)(3√10/10) − (√5/5)(√10/10) = 6√50/50 − √50/50 = 5√50/50 = 1/√2 = √2/2。（2）α、β 都是锐角，α + β ∈ (0, π)，余弦为 √2/2 的角为 π/4。验证：sin(α + β) = (√5/5)(3√10/10) + (2√5/5)(√10/10) = 5√50/50 = √2/2，与 π/4 的正弦一致。",
+          "scoreRule": [
+            {
+              "desc": "由平方关系求出 cos α 与 cos β",
+              "score": 4
+            },
+            {
+              "desc": "用两角和的余弦公式求出 √2/2",
+              "score": 4
+            },
+            {
+              "desc": "由角的范围确定 α + β = π/4",
+              "score": 2
+            },
+            {
+              "desc": "用两角和的正弦公式验证结果",
+              "score": 2
+            }
+          ],
+          "itemId": "mbs_exam_b2_u04_q22"
+        }
+      ]
+    }
+  ]
+}

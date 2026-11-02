@@ -6,8 +6,12 @@
 
 ```bash
 cd ~/Desktop/cn-k12-dxyc2286
-python3 scripts/check_math_bsd_lecture.py data/math-bsd/exam_lectures/<册>/<paper>.json
+python3 scripts/check_math_bsd_lecture.py | tail -60
 ```
+
+⛔ 这个 checker 是**全量跑**（无路径参数），它会把 `exam_lectures/` 下所有讲解一起过一遍。
+判据＝输出里**不得出现你负责的卷名带错**，且末尾「共 N 份 · 不合格 0」。
+（想只看自己那几份：把输出重定向到文件后 `grep` 自己的卷名，确认没有带错的条目。）
 
 ⛔ 只写派单里那几份讲解；不改题库、卷面、学层、别人的分片。
 
@@ -38,7 +42,8 @@ python3 scripts/check_math_bsd_lecture.py data/math-bsd/exam_lectures/<册>/<pap
 6. `## 六、自查清单` — `- [ ]` ≥6 条，可勾可验
 
 ## 硬性规则
-- 北师大本批 12 册全属小学：**3500–7200 汉字**。
+- 字数带：**初中卷 4000–7800 汉字；高中卷 4500–8800 汉字**（小学卷才用 3500–7200）。
+- `book` 只写册名（`七年级上册` / `必修第一册`），不带「北师大版」。
 - ❌ LaTeX（`$`、`\frac`、`\sqrt`、`\times`）、HTML 标签、Markdown 表格、`分五段/五个部分` 之类旧口径说法。
 - 数字与单位之间空一格（写 `3 m`，不写 `3m`）。
 - 公式用纯文本：`x^2`、`√2`、`x²`、`log_2 8`、`sin 30°`。

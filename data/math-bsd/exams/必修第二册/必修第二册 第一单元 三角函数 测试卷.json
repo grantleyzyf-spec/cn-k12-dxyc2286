@@ -1,0 +1,655 @@
+{
+  "book": "必修第二册",
+  "kind": "unit",
+  "term": "上册",
+  "grade": 11,
+  "stage": "高中",
+  "subject": "math-bsd",
+  "paper": "必修第二册 第一单元 三角函数 测试卷",
+  "duration": 120,
+  "fullScore": 150,
+  "scope": [
+    "必修第二册 第一单元 三角函数"
+  ],
+  "topicIds": [
+    "mbs_u124"
+  ],
+  "examId": "mbs_exam_b2_u01",
+  "sections": [
+    {
+      "title": "一、单选题",
+      "rule": "每小题 5 分，共 40 分",
+      "items": [
+        {
+          "no": 1,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h078"
+          ],
+          "stem": "在 0° 到 360° 的范围内，与 −1125° 终边相同的角是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "315°"
+            },
+            {
+              "label": "B",
+              "text": "45°"
+            },
+            {
+              "label": "C",
+              "text": "135°"
+            },
+            {
+              "label": "D",
+              "text": "225°"
+            }
+          ],
+          "answer": "A",
+          "analysis": "与 −1125° 终边相同的角可写成 −1125° + k·360°（k 为整数）。取 k = 4 得 −1125° + 1440° = 315°，它落在 0° 到 360° 之间。再取 k = 3 得 45°，已小于 0°，所以范围内符合条件的角只有 315°。",
+          "itemId": "mbs_exam_b2_u01_q01"
+        },
+        {
+          "no": 2,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h079"
+          ],
+          "stem": "一个扇形的半径为 3，圆心角为 2 弧度，则它的面积等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "3"
+            },
+            {
+              "label": "B",
+              "text": "6"
+            },
+            {
+              "label": "C",
+              "text": "9"
+            },
+            {
+              "label": "D",
+              "text": "18"
+            }
+          ],
+          "answer": "C",
+          "analysis": "扇形面积公式为 S = (1/2)r²θ。代入 r = 3、θ = 2 得 S = (1/2)×9×2 = 9。也可先求弧长 l = rθ = 6，再用 S = (1/2)lr = (1/2)×6×3 = 9，两种算法一致。",
+          "itemId": "mbs_exam_b2_u01_q02"
+        },
+        {
+          "no": 3,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h080"
+          ],
+          "stem": "角 α 的终边经过点 (−4, 3)，则 cos α 的值是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "3/5"
+            },
+            {
+              "label": "B",
+              "text": "−3/5"
+            },
+            {
+              "label": "C",
+              "text": "4/5"
+            },
+            {
+              "label": "D",
+              "text": "−4/5"
+            }
+          ],
+          "answer": "D",
+          "analysis": "点到原点的距离为 r = √(16 + 9) = 5。由余弦的定义 cos α = x/r，此处横坐标为 −4，故 cos α = −4/5。注意纵向坐标 3 给出的是 sin α = 3/5，两者不要混。",
+          "itemId": "mbs_exam_b2_u01_q03"
+        },
+        {
+          "no": 4,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h082"
+          ],
+          "stem": "cos(−31π/6) 的值等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "√3/2"
+            },
+            {
+              "label": "B",
+              "text": "−√3/2"
+            },
+            {
+              "label": "C",
+              "text": "1/2"
+            },
+            {
+              "label": "D",
+              "text": "−1/2"
+            }
+          ],
+          "answer": "B",
+          "analysis": "先用周期性化简：−31π/6 + 6π = −31π/6 + 36π/6 = 5π/6，余弦以 2π 为周期，所以 cos(−31π/6) = cos(5π/6)。5π/6 是第二象限角，余弦为负，cos(5π/6) = −cos(π/6) = −√3/2。",
+          "itemId": "mbs_exam_b2_u01_q04"
+        },
+        {
+          "no": 5,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h085"
+          ],
+          "stem": "函数 y = 2sin(3x + π/4) 的最小正周期是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "2π/3"
+            },
+            {
+              "label": "B",
+              "text": "3π/2"
+            },
+            {
+              "label": "C",
+              "text": "2π"
+            },
+            {
+              "label": "D",
+              "text": "π/3"
+            }
+          ],
+          "answer": "A",
+          "analysis": "形如 y = Asin(ωx + φ) 的函数，最小正周期为 2π 除以 ω 的绝对值。本题 ω = 3，故 T = 2π/3。系数 2 与初相 π/4 只影响振幅和位置，不影响周期。",
+          "itemId": "mbs_exam_b2_u01_q05"
+        },
+        {
+          "no": 6,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "hard",
+          "topicIds": [
+            "mbs_h084"
+          ],
+          "stem": "设 a = tan 1，b = tan 2，c = tan 3，则 a、b、c 的大小关系是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "a > b > c"
+            },
+            {
+              "label": "B",
+              "text": "c > b > a"
+            },
+            {
+              "label": "C",
+              "text": "a > c > b"
+            },
+            {
+              "label": "D",
+              "text": "b > c > a"
+            }
+          ],
+          "answer": "C",
+          "analysis": "1 弧度约 57.3°，在第一象限，tan 1 为正且大于 1；2 弧度约 114.6°，在第二象限，tan 2 为负值，其绝对值很大，约 2.2；3 弧度约 171.9°，仍在第二象限接近 π，tan 3 是绝对值很小的负数，约 −0.14。所以 tan 1 > tan 3 > tan 2，即 a > c > b。",
+          "itemId": "mbs_exam_b2_u01_q06"
+        },
+        {
+          "no": 7,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h085"
+          ],
+          "stem": "把 y = sin x 的图象上所有点的横坐标缩短到原来的 1/2（纵坐标不变），再把所得图象向左平移 π/6 个单位，得到的函数是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "y = sin(2x + π/6)"
+            },
+            {
+              "label": "B",
+              "text": "y = sin(2x + π/3)"
+            },
+            {
+              "label": "C",
+              "text": "y = sin(2x − π/3)"
+            },
+            {
+              "label": "D",
+              "text": "y = sin(x/2 + π/6)"
+            }
+          ],
+          "answer": "B",
+          "analysis": "横坐标缩短到原来的 1/2，相当于把 x 换成 2x，得 y = sin 2x。再向左平移 π/6 个单位，要把 x 换成 x + π/6，得 y = sin 2(x + π/6) = sin(2x + π/3)。平移发生在伸缩之后，必须整体替换 x，写成 sin(2x + π/6) 就漏掉了系数 2。",
+          "itemId": "mbs_exam_b2_u01_q07"
+        },
+        {
+          "no": 8,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h081",
+            "mbs_h080"
+          ],
+          "stem": "角 α 的终边与单位圆交于点 P(3/5, −4/5)，则 sin α − cos α 的值是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "7/5"
+            },
+            {
+              "label": "B",
+              "text": "−1/5"
+            },
+            {
+              "label": "C",
+              "text": "1/5"
+            },
+            {
+              "label": "D",
+              "text": "−7/5"
+            }
+          ],
+          "answer": "D",
+          "analysis": "单位圆上点的坐标就是该角的余弦与正弦，故 sin α = −4/5，cos α = 3/5。于是 sin α − cos α = −4/5 − 3/5 = −7/5。若误把两点坐标的顺序颠倒，会得到 7/5。",
+          "itemId": "mbs_exam_b2_u01_q08"
+        }
+      ]
+    },
+    {
+      "title": "二、多选题",
+      "rule": "每小题 5 分，共 20 分；全部选对得 5 分，部分选对得 2 分，有错选得 0 分",
+      "items": [
+        {
+          "no": 9,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h084"
+          ],
+          "stem": "对于函数 y = tan x，下列四个判断中正确的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "定义域是满足 x ≠ π/2 + kπ（k ∈ Z）的一切实数"
+            },
+            {
+              "label": "B",
+              "text": "在每一个区间 (kπ − π/2，kπ + π/2)（k ∈ Z）内单调递增"
+            },
+            {
+              "label": "C",
+              "text": "图象关于直线 x = π/2 对称"
+            },
+            {
+              "label": "D",
+              "text": "是奇函数，且最小正周期为 π"
+            }
+          ],
+          "answer": "ABD",
+          "analysis": "正切在 x = π/2 + kπ 处无定义，定义域写成排除这些点是对的；在每个连续的区间 (kπ − π/2，kπ + π/2) 内 tan x 单调递增，B 正确。x = π/2 处函数无定义，图象在两侧分别趋向正负无穷，不存在对称轴，C 错。tan(−x) = −tan x 且周期为 π，D 正确。因此选 ABD。",
+          "itemId": "mbs_exam_b2_u01_q09"
+        },
+        {
+          "no": 10,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h083"
+          ],
+          "stem": "关于函数 y = sin x，下列叙述正确的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "在区间 [π/2, 3π/2] 上单调递减"
+            },
+            {
+              "label": "B",
+              "text": "图象关于直线 x = π/2 对称"
+            },
+            {
+              "label": "C",
+              "text": "当 x = −π/2 + 2kπ（k ∈ Z）时取得最小值 −1"
+            },
+            {
+              "label": "D",
+              "text": "图象关于点 (π/2, 0) 对称"
+            }
+          ],
+          "answer": "ABC",
+          "analysis": "正弦曲线从 x = π/2 到 x = 3π/2 由 1 单调降到 −1，A 正确；x = π/2 处取得最大值，故直线 x = π/2 是图象的对称轴，B 正确；最小值 −1 在各周期的 x = −π/2 + 2kπ 处取得，C 正确。点 (π/2, 0) 并不在图象上，函数值此处为 1，所以它不是对称中心，D 错。选 ABC。",
+          "itemId": "mbs_exam_b2_u01_q10"
+        },
+        {
+          "no": 11,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h082"
+          ],
+          "stem": "下列三角函数式的化简结果正确的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "sin(π + α) = −sin α"
+            },
+            {
+              "label": "B",
+              "text": "cos(−α) = −cos α"
+            },
+            {
+              "label": "C",
+              "text": "sin(3π/2 + α) = −cos α"
+            },
+            {
+              "label": "D",
+              "text": "tan(π − α) = −tan α"
+            }
+          ],
+          "answer": "ACD",
+          "analysis": "π + α 的终边与 α 关于原点对称，正弦变号，A 正确；余弦是偶函数，cos(−α) = cos α，B 错；3π/2 + α 相当于把 α 的终边再转 270°，正弦变为 −cos α，C 正确；π − α 与 α 关于 y 轴对称，正切变号，D 正确。故选 ACD。",
+          "itemId": "mbs_exam_b2_u01_q11"
+        },
+        {
+          "no": 12,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "hard",
+          "topicIds": [
+            "mbs_h085"
+          ],
+          "stem": "设 f(x) = 2sin(2x + π/6)，则下列四个结论中正确的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "最小正周期为 π"
+            },
+            {
+              "label": "B",
+              "text": "f(0) = 1"
+            },
+            {
+              "label": "C",
+              "text": "图象关于直线 x = π/12 对称"
+            },
+            {
+              "label": "D",
+              "text": "在区间 [0, π/6] 上单调递增"
+            }
+          ],
+          "answer": "ABD",
+          "analysis": "ω = 2，周期 T = 2π/2 = π，A 正确；f(0) = 2sin(π/6) = 2×(1/2) = 1，B 正确。对称轴要求相位取到 π/2 + kπ，即 2x + π/6 = π/2 + kπ 得 x = π/6 + kπ/2，而 x = π/12 时相位为 π/3，函数值 √3 并非最值，C 错。x 从 0 到 π/6 时相位从 π/6 增到 π/2，正弦单调递增，D 正确。选 ABD。",
+          "itemId": "mbs_exam_b2_u01_q12"
+        }
+      ]
+    },
+    {
+      "title": "三、填空题",
+      "rule": "每小题 5 分，共 20 分",
+      "items": [
+        {
+          "no": 13,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h080"
+          ],
+          "stem": "已知角 α 的终边经过点 (1, −√3)，则 sin α 的值是＿＿＿＿。",
+          "answer": "−√3/2",
+          "analysis": "点到原点的距离 r = √(1 + 3) = 2，故 sin α = y/r = −√3/2。该点在第四象限，正弦为负，与结果一致。",
+          "itemId": "mbs_exam_b2_u01_q13"
+        },
+        {
+          "no": 14,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h079"
+          ],
+          "stem": "一个扇形的周长为 8，半径为 2，则它的圆心角（用弧度表示）为＿＿＿＿。",
+          "answer": "2",
+          "analysis": "扇形周长由两条半径和一段弧组成，弧长 l = 8 − 2×2 = 4。由 l = rθ 得 θ = l/r = 4/2 = 2 弧度。",
+          "itemId": "mbs_exam_b2_u01_q14"
+        },
+        {
+          "no": 15,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h083"
+          ],
+          "stem": "函数 y = 1 − 2sin x 的值域是＿＿＿＿。",
+          "answer": "[−1, 3]",
+          "analysis": "sin x 的取值在 −1 到 1 之间。当 sin x = 1 时 y = 1 − 2 = −1；当 sin x = −1 时 y = 1 + 2 = 3。系数为负，最大值对应 sin x 取 −1，故值域为 [−1, 3]。",
+          "itemId": "mbs_exam_b2_u01_q15"
+        },
+        {
+          "no": 16,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h082"
+          ],
+          "stem": "若 sin(π/6 − α) = 1/3，则 cos(π/3 + α) 的值是＿＿＿＿。",
+          "answer": "1/3",
+          "analysis": "注意到 (π/3 + α) + (π/6 − α) = π/2，两个角互余，故 cos(π/3 + α) = sin(π/6 − α) = 1/3。也可用诱导公式 cos(π/3 + α) = sin(π/2 − π/3 − α) 得到同一结果。",
+          "itemId": "mbs_exam_b2_u01_q16"
+        }
+      ]
+    },
+    {
+      "title": "四、解答题",
+      "rule": "共 6 小题，满分 70 分（10 + 12 + 12 + 12 + 12 + 12）",
+      "items": [
+        {
+          "no": 17,
+          "score": 10,
+          "type": "solve",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h080",
+            "mbs_h082"
+          ],
+          "stem": "已知角 α 的终边经过点 P(3, −4)。（1）求 sin α、cos α 与 tan α 的值；（2）求 sin(π − α)·cos(π + α) 的值。",
+          "answer": "（1）sin α = −4/5，cos α = 3/5，tan α = −4/3；（2）12/25",
+          "analysis": "先求 P 到原点的距离 r = √(9 + 16) = 5，由定义得 sin α = −4/5，cos α = 3/5，tan α = y/x = −4/3。第（2）问先用诱导公式化简：sin(π − α) = sin α = −4/5，cos(π + α) = −cos α = −3/5，两式相乘得 12/25，结果为正。",
+          "scoreRule": [
+            {
+              "desc": "求出 r = 5 并写出 sin α、cos α 的值",
+              "score": 4
+            },
+            {
+              "desc": "写出 tan α 的值",
+              "score": 2
+            },
+            {
+              "desc": "用诱导公式化简 sin(π − α) 与 cos(π + α)",
+              "score": 2
+            },
+            {
+              "desc": "算出乘积 12/25",
+              "score": 2
+            }
+          ],
+          "itemId": "mbs_exam_b2_u01_q17"
+        },
+        {
+          "no": 18,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h085"
+          ],
+          "stem": "已知函数 f(x) = 2sin(2x − π/6)。（1）求 f(x) 的最小正周期和单调递增区间；（2）求 f(x) 在区间 [0, π/2] 上的最大值与最小值。",
+          "answer": "（1）最小正周期 π，单调递增区间为 [−π/6 + kπ，π/3 + kπ]（k ∈ Z）；（2）最大值 2，最小值 −1",
+          "analysis": "ω = 2，故周期 T = 2π/2 = π。函数单调递增时相位 2x − π/6 落在 [−π/2 + 2kπ，π/2 + 2kπ]，解得 x ∈ [−π/6 + kπ，π/3 + kπ]。第（2）问中 x ∈ [0, π/2]，相位 2x − π/6 ∈ [−π/6, 5π/6]；相位为 π/2（即 x = π/3）时取最大值 2，相位为 −π/6（即 x = 0）时取最小值 2×(−1/2) = −1。",
+          "scoreRule": [
+            {
+              "desc": "由 ω = 2 写出最小正周期 π",
+              "score": 3
+            },
+            {
+              "desc": "解不等式得单调递增区间",
+              "score": 5
+            },
+            {
+              "desc": "求出区间 [0, π/2] 上的最大值 2",
+              "score": 2
+            },
+            {
+              "desc": "求出最小值 −1 并指出取到时的 x",
+              "score": 2
+            }
+          ],
+          "itemId": "mbs_exam_b2_u01_q18"
+        },
+        {
+          "no": 19,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h082",
+            "mbs_u124"
+          ],
+          "stem": "化简 f(α) = sin(π + α)cos(π − α)tan(2π − α) 除以 sin(3π/2 + α)cos(−α)，并求 α = π/4 时 f(α) 的值。",
+          "answer": "f(α) = tan²α，当 α = π/4 时 f(α) = 1",
+          "analysis": "分子逐项化简：sin(π + α) = −sin α，cos(π − α) = −cos α，tan(2π − α) = −tan α，三个负号相乘仍为负，得 −sin α·cos α·tan α = −sin²α。分母：sin(3π/2 + α) = −cos α，cos(−α) = cos α，相乘得 −cos²α。两式相除得 sin²α/cos²α = tan²α。代入 α = π/4 得 tan(π/4) = 1，故 f(α) = 1。",
+          "scoreRule": [
+            {
+              "desc": "化简分子得 −sin²α",
+              "score": 4
+            },
+            {
+              "desc": "化简分母得 −cos²α",
+              "score": 4
+            },
+            {
+              "desc": "约分得 tan²α 并代入求值得 1",
+              "score": 4
+            }
+          ],
+          "itemId": "mbs_exam_b2_u01_q19"
+        },
+        {
+          "no": 20,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h086"
+          ],
+          "stem": "某海滨城市一天的气温 T（单位：℃）与时刻 t（单位：时，0 ≤ t < 24）近似满足 T = 20 + 10sin(π(t − 6)/12)。（1）求这一天该市的最高气温、最低气温及出现的时刻；（2）求气温不低于 25 ℃ 的时段。",
+          "answer": "（1）最高气温 30 ℃，出现在 t = 12 时；最低气温 10 ℃，出现在 t = 0 时；（2）8 ≤ t ≤ 16，即上午 8 时到下午 4 时",
+          "analysis": "正弦部分的最大值为 1、最小值为 −1，故最高气温 20 + 10 = 30 ℃，最低气温 20 − 10 = 10 ℃。令 π(t − 6)/12 = π/2 得 t = 12；令其等于 −π/2 得 t = 0。第（2）问解 20 + 10sin(π(t − 6)/12) ≥ 25，即 sin(π(t − 6)/12) ≥ 1/2，相位落在 [π/6, 5π/6] 内，得 t − 6 ∈ [2, 10]，即 8 ≤ t ≤ 16，时长 8 小时。",
+          "scoreRule": [
+            {
+              "desc": "由正弦的最大值、最小值求最高与最低气温",
+              "score": 4
+            },
+            {
+              "desc": "求出最高、最低气温对应的时刻",
+              "score": 3
+            },
+            {
+              "desc": "把气温不低于 25 ℃ 转化为正弦不等式",
+              "score": 3
+            },
+            {
+              "desc": "解出时段 8 ≤ t ≤ 16 并说明时长",
+              "score": 2
+            }
+          ],
+          "itemId": "mbs_exam_b2_u01_q20"
+        },
+        {
+          "no": 21,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h085",
+            "mbs_h087"
+          ],
+          "stem": "已知函数 f(x) = sin(2x + π/6)。（1）求 f(x) 的最小正周期与图象的对称轴方程；（2）求 f(x) 在区间 [0, π] 上的单调递减区间；（3）求方程 f(x) = 1/2 在区间 [0, π] 上的所有解。",
+          "answer": "（1）周期 π，对称轴 x = π/6 + kπ/2（k ∈ Z）；（2）递减区间为 [π/6, 2π/3]；（3）x = 0，π/3，π",
+          "analysis": "（1）ω = 2，周期 T = π；对称轴处相位取 π/2 + kπ，即 2x + π/6 = π/2 + kπ，解得 x = π/6 + kπ/2。（2）递减要求相位在 [π/2 + 2kπ, 3π/2 + 2kπ]，解得 x ∈ [π/6 + kπ, 2π/3 + kπ]，与 [0, π] 求交得 [π/6, 2π/3]。（3）相位 2x + π/6 在 [π/6, 13π/6] 上取值 1/2 时等于 π/6、5π/6 或 13π/6，对应 x = 0、π/3、π，共三个解。",
+          "scoreRule": [
+            {
+              "desc": "求出最小正周期 π",
+              "score": 3
+            },
+            {
+              "desc": "求出对称轴方程 x = π/6 + kπ/2",
+              "score": 3
+            },
+            {
+              "desc": "求出 [0, π] 上的单调递减区间",
+              "score": 3
+            },
+            {
+              "desc": "求出方程在 [0, π] 上的三个解",
+              "score": 3
+            }
+          ],
+          "itemId": "mbs_exam_b2_u01_q21"
+        },
+        {
+          "no": 22,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "hard",
+          "topicIds": [
+            "mbs_h085",
+            "mbs_h087"
+          ],
+          "stem": "已知函数 f(x) = 2sin(ωx + φ)，其中 ω > 0 且 φ 的绝对值小于 π/2，其图象上相邻两条对称轴之间的距离为 π/2，且 f(0) = 1。（1）求 ω、φ 的值并写出解析式；（2）求 f(x) 在区间 [0, π/2] 上的最大值及相应 x 的值。",
+          "answer": "（1）ω = 2，φ = π/6，f(x) = 2sin(2x + π/6)；（2）最大值 2，此时 x = π/6",
+          "analysis": "相邻两条对称轴之间的距离等于半个周期，故 T/2 = π/2，T = π，由 T = 2π/ω 得 ω = 2。再由 f(0) = 2sin φ = 1 得 sin φ = 1/2，结合 φ 的绝对值小于 π/2 得 φ = π/6。第（2）问 x ∈ [0, π/2] 时相位 2x + π/6 ∈ [π/6, 7π/6]，正弦的最大值 1 在相位 π/2 处取到，此时 x = π/6，f(x) = 2。",
+          "scoreRule": [
+            {
+              "desc": "由对称轴间距得 T = π，进而 ω = 2",
+              "score": 4
+            },
+            {
+              "desc": "由 f(0) = 1 结合 φ 的范围求得 φ = π/6",
+              "score": 3
+            },
+            {
+              "desc": "写出解析式 f(x) = 2sin(2x + π/6)",
+              "score": 2
+            },
+            {
+              "desc": "求出最大值 2 及对应的 x = π/6",
+              "score": 3
+            }
+          ],
+          "itemId": "mbs_exam_b2_u01_q22"
+        }
+      ]
+    }
+  ]
+}

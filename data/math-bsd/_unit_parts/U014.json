@@ -1,0 +1,565 @@
+{
+  "units": [
+    {
+      "unit": {
+        "id": "mbs_u124",
+        "name": "三角函数",
+        "subject": "math-bsd",
+        "domain": "数与代数",
+        "grade": 11,
+        "semester": "上",
+        "chapter": "必修第二册 第一单元 三角函数",
+        "level": "unit",
+        "type": "conceptual",
+        "description": "本单元围绕「三角函数」展开，包含周期变化与任意角、弧度制及其应用、任意角的正弦函数和余弦函数定义、单位圆与正弦 等 10 个课时，重在理清本单元的知识线索与前后联系，把零散的课时串成一条完整的思路。",
+        "mastery_criteria": [
+          "能说清「三角函数」这一单元的核心方法与适用条件",
+          "能在本单元的典型题里独立完成至少八道并自查对错"
+        ],
+        "diagnostic_question": {
+          "question": "下列各题中，属于「三角函数」这一单元核心方法的题目是（　）。",
+          "answer": "A"
+        },
+        "external": false,
+        "standards": [
+          {
+            "id": "mbs-2017:H.SD.07",
+            "confidence": "partial",
+            "quote": "借助单位圆理解三角函数（正弦函数、余弦函数、正切函数）的定义",
+            "sourceLine": 702
+          }
+        ],
+        "tags": [
+          "单元上位点",
+          "数与代数"
+        ],
+        "prerequisites": [],
+        "root_reason": "单元上位点，不设先修课时",
+        "verified": false,
+        "curriculumRef": "mbs-2017:H.SD.07"
+      },
+      "questions": [
+        {
+          "id": "mbs_q991276",
+          "topicId": "mbs_u124",
+          "topicIds": [
+            "mbs_u124"
+          ],
+          "prompt": "把角 225° 化成弧度，所得结果是（　）。",
+          "question": "把角 225° 化成弧度，所得结果是（　）。",
+          "answer": "C",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "按 180° 对应 π 弧度换算，225 乘 π 再除以 180 得 5π/4；225° 落在第三象限，5π/4 也在第三象限，两边位置一致，说明换算没有错。",
+          "options": [
+            {
+              "label": "A",
+              "text": "3π/4"
+            },
+            {
+              "label": "B",
+              "text": "4π/5"
+            },
+            {
+              "label": "C",
+              "text": "5π/4"
+            },
+            {
+              "label": "D",
+              "text": "7π/4"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "3π/4"
+            },
+            {
+              "label": "B",
+              "text": "4π/5"
+            },
+            {
+              "label": "C",
+              "text": "5π/4"
+            },
+            {
+              "label": "D",
+              "text": "7π/4"
+            }
+          ]
+        },
+        {
+          "id": "mbs_q991277",
+          "topicId": "mbs_u124",
+          "topicIds": [
+            "mbs_u124"
+          ],
+          "prompt": "已知 sin α = 3/5，且 α 是第二象限角，则 cos α 的值是（　）。",
+          "question": "已知 sin α = 3/5，且 α 是第二象限角，则 cos α 的值是（　）。",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "由 sin²α + cos²α = 1 得 cos²α = 1 − 9/25 = 16/25，所以余弦为 ±4/5；第二象限角的余弦取负值，故答案为 −4/5，漏判象限就会错选 4/5。",
+          "options": [
+            {
+              "label": "A",
+              "text": "4/5"
+            },
+            {
+              "label": "B",
+              "text": "−4/5"
+            },
+            {
+              "label": "C",
+              "text": "−3/4"
+            },
+            {
+              "label": "D",
+              "text": "3/4"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "4/5"
+            },
+            {
+              "label": "B",
+              "text": "−4/5"
+            },
+            {
+              "label": "C",
+              "text": "−3/4"
+            },
+            {
+              "label": "D",
+              "text": "3/4"
+            }
+          ]
+        },
+        {
+          "id": "mbs_q991278",
+          "topicId": "mbs_u124",
+          "topicIds": [
+            "mbs_u124"
+          ],
+          "prompt": "计算 sin(π/6) + cos(π/3) + tan(π/4) 的值，结果为（　）。",
+          "question": "计算 sin(π/6) + cos(π/3) + tan(π/4) 的值，结果为（　）。",
+          "answer": "2",
+          "type": "fill",
+          "difficulty": "standard",
+          "explanation": "先把弧度化为特殊角：sin(π/6) = 1/2，cos(π/3) = 1/2，tan(π/4) = 1，三项相加得 2。弧度制下不必再换成角度，直接对特殊角取函数值即可。",
+          "choices": []
+        },
+        {
+          "id": "mbs_q991279",
+          "topicId": "mbs_u124",
+          "topicIds": [
+            "mbs_u124"
+          ],
+          "prompt": "函数 y = 3sin(2x) + 1 的最大值等于（　）。",
+          "question": "函数 y = 3sin(2x) + 1 的最大值等于（　）。",
+          "answer": "4",
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "sin(2x) 的最大值为 1，此时 y 取到 3 乘 1 再加 1 等于 4。振幅 3 决定摆动幅度，常数项 1 把整条曲线向上平移，所以最值要整体抬高 1。",
+          "choices": [],
+          "verify": "3*1+1"
+        },
+        {
+          "id": "mbs_q991280",
+          "topicId": "mbs_u124",
+          "topicIds": [
+            "mbs_u124"
+          ],
+          "prompt": "说明正弦曲线 y = sin x 与余弦曲线 y = cos x 的图象关系，并写出由其中一条得到另一条的具体平移方式。",
+          "question": "说明正弦曲线 y = sin x 与余弦曲线 y = cos x 的图象关系，并写出由其中一条得到另一条的具体平移方式。",
+          "answer": "两条曲线形状、周期与振幅完全相同，把 y = sin x 的图象向左平移 π/2 个单位就得到 y = cos x 的图象。",
+          "type": "short-answer",
+          "difficulty": "hard",
+          "explanation": "因为 cos x = sin(x + π/2)，对正弦曲线上每个点把横坐标减去 π/2，曲线就与余弦曲线重合，可见二者只差一个相位；把差别说成振幅不同或周期不同都是错的。",
+          "choices": [],
+          "keypoints": [
+            "两条曲线的形状、周期与振幅都相同，只是起始位置不同",
+            "由 cos x = sin(x + π/2) 可知向左平移 π/2 个单位即可",
+            "向右平移 3π/2 个单位同样能与余弦曲线重合"
+          ]
+        }
+      ]
+    },
+    {
+      "unit": {
+        "id": "mbs_u125",
+        "name": "平面向量及其应用",
+        "subject": "math-bsd",
+        "domain": "图形与几何",
+        "grade": 11,
+        "semester": "上",
+        "chapter": "必修第二册 第二单元 平面向量及其应用",
+        "level": "unit",
+        "type": "conceptual",
+        "description": "本单元围绕「平面向量及其应用」展开，包含向量的概念与表示、向量的加法、向量的减法、向量的数乘运算 等 10 个课时，重在理清本单元的知识线索与前后联系，把零散的课时串成一条完整的思路。",
+        "mastery_criteria": [
+          "能说清「平面向量及其应用」这一单元的核心方法与适用条件",
+          "能在本单元的典型题里独立完成至少八道并自查对错"
+        ],
+        "diagnostic_question": {
+          "question": "下列各题中，属于「平面向量及其应用」这一单元核心方法的题目是（　）。",
+          "answer": "A"
+        },
+        "external": false,
+        "standards": [
+          {
+            "id": "mbs-2017:H.TX.01",
+            "confidence": "partial",
+            "quote": "通过对力、速度、位移等的分析，了解平面向量的实际背景",
+            "sourceLine": 837
+          }
+        ],
+        "tags": [
+          "单元上位点",
+          "图形与几何"
+        ],
+        "prerequisites": [],
+        "root_reason": "单元上位点，不设先修课时",
+        "verified": false,
+        "curriculumRef": "mbs-2017:H.TX.01"
+      },
+      "questions": [
+        {
+          "id": "mbs_q991281",
+          "topicId": "mbs_u125",
+          "topicIds": [
+            "mbs_u125"
+          ],
+          "prompt": "已知向量 a = (1, 2)，b = (3, −1)，则 a + b 等于（　）。",
+          "question": "已知向量 a = (1, 2)，b = (3, −1)，则 a + b 等于（　）。",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "坐标形式下向量相加就是把对应分量分别相加：横坐标 1 加 3 得 4，纵坐标 2 加 −1 得 1，所以和向量是 (4, 1)；把纵坐标相减是减法运算，别混用。",
+          "options": [
+            {
+              "label": "A",
+              "text": "(4, 1)"
+            },
+            {
+              "label": "B",
+              "text": "(2, 3)"
+            },
+            {
+              "label": "C",
+              "text": "(4, −1)"
+            },
+            {
+              "label": "D",
+              "text": "(−2, 3)"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "(4, 1)"
+            },
+            {
+              "label": "B",
+              "text": "(2, 3)"
+            },
+            {
+              "label": "C",
+              "text": "(4, −1)"
+            },
+            {
+              "label": "D",
+              "text": "(−2, 3)"
+            }
+          ]
+        },
+        {
+          "id": "mbs_q991282",
+          "topicId": "mbs_u125",
+          "topicIds": [
+            "mbs_u125"
+          ],
+          "prompt": "已知向量 a = (1, 2)，b = (2, −1)，则 a 与 b 的位置关系是（　）。",
+          "question": "已知向量 a = (1, 2)，b = (2, −1)，则 a 与 b 的位置关系是（　）。",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "用坐标算数量积：1 乘 2 加 2 乘 −1 等于 0。两个非零向量的数量积为零就说明它们垂直；若是平行，对应分量应成同一比例，而 1 比 2 与 2 比 −1 并不相等。",
+          "options": [
+            {
+              "label": "A",
+              "text": "平行"
+            },
+            {
+              "label": "B",
+              "text": "垂直"
+            },
+            {
+              "label": "C",
+              "text": "夹角为 45°"
+            },
+            {
+              "label": "D",
+              "text": "夹角为 60°"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "平行"
+            },
+            {
+              "label": "B",
+              "text": "垂直"
+            },
+            {
+              "label": "C",
+              "text": "夹角为 45°"
+            },
+            {
+              "label": "D",
+              "text": "夹角为 60°"
+            }
+          ]
+        },
+        {
+          "id": "mbs_q991283",
+          "topicId": "mbs_u125",
+          "topicIds": [
+            "mbs_u125"
+          ],
+          "prompt": "已知向量 a 的模为 3，向量 b 的模为 4，a·b = 6，则 a 与 b 的夹角为（　）。",
+          "question": "已知向量 a 的模为 3，向量 b 的模为 4，a·b = 6，则 a 与 b 的夹角为（　）。",
+          "answer": "60°",
+          "type": "fill",
+          "difficulty": "standard",
+          "explanation": "由数量积公式，a·b 等于两向量模长之积再乘夹角的余弦，于是 cos θ = 6 ÷ 12 = 1/2。夹角取值范围是 0° 到 180°，余弦为 1/2 的角只有 60°。",
+          "choices": []
+        },
+        {
+          "id": "mbs_q991284",
+          "topicId": "mbs_u125",
+          "topicIds": [
+            "mbs_u125"
+          ],
+          "prompt": "在三角形 ABC 中，b = 2，c = 3，角 A = 60°，则边 a 的平方等于（　）。",
+          "question": "在三角形 ABC 中，b = 2，c = 3，角 A = 60°，则边 a 的平方等于（　）。",
+          "answer": "7",
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "由余弦定理 a² = b² + c² − 2bc·cos A，代入得 4 + 9 − 2×2×3×0.5 = 13 − 6 = 7。注意公式里减的是两边与夹角余弦之积的两倍，夹角必须是这两边的夹角。",
+          "choices": [],
+          "verify": "4+9-6"
+        },
+        {
+          "id": "mbs_q991285",
+          "topicId": "mbs_u125",
+          "topicIds": [
+            "mbs_u125"
+          ],
+          "prompt": "用向量方法说明：三角形两边中点的连线平行于第三边，且长度等于第三边的一半。请写出关键步骤。",
+          "question": "用向量方法说明：三角形两边中点的连线平行于第三边，且长度等于第三边的一半。请写出关键步骤。",
+          "answer": "把三角形两边的向量记作 a 与 b，则第三边向量为 b − a，中点连线向量为 b 的一半减 a 的一半，它等于第三边向量的一半，故平行且长度为第三边的一半。",
+          "type": "short-answer",
+          "difficulty": "hard",
+          "explanation": "向量法的好处是把平行与长度一次解决：只要算出连线向量是第三边向量的常数倍，倍数为非零实数就说明共线即平行，倍数的绝对值直接给出长度之比，无需再添辅助线证相似。",
+          "choices": [],
+          "keypoints": [
+            "用两边向量 a 与 b 表示第三边向量为 b − a",
+            "由中点写出连线向量并化简，得它是第三边向量的一半",
+            "连线向量与第三边向量共线，故平行，模长之比为 1 比 2"
+          ]
+        }
+      ]
+    },
+    {
+      "unit": {
+        "id": "mbs_u126",
+        "name": "数学建模活动（二）",
+        "subject": "math-bsd",
+        "domain": "综合与实践",
+        "grade": 11,
+        "semester": "上",
+        "chapter": "必修第二册 第三单元 数学建模活动（二）",
+        "level": "unit",
+        "type": "conceptual",
+        "description": "本单元围绕「数学建模活动（二）」展开，包含回顾数学建模活动的过程（第三章 数学建模活动（二））、回顾数学建模活动的过程（第三章 数学建模活动（二））、测量建筑物的高度（第三章 数学建模活动（二））、测量建筑物的高度（第三章 数学建模活动（二）） 等 10 个课时，重在理清本单元的知识线索与前后联系，把零散的课时串成一条完整的思路。",
+        "mastery_criteria": [
+          "能说清「数学建模活动（二）」这一单元的核心方法与适用条件",
+          "能在本单元的典型题里独立完成至少八道并自查对错"
+        ],
+        "diagnostic_question": {
+          "question": "下列各题中，属于「数学建模活动（二）」这一单元核心方法的题目是（　）。",
+          "answer": "A"
+        },
+        "external": false,
+        "standards": [
+          {
+            "id": "mbs-2017:H.ZH.01",
+            "confidence": "partial",
+            "quote": "数学建模活动与数学探究活动以课题研究的形式开展",
+            "sourceLine": 322
+          }
+        ],
+        "tags": [
+          "单元上位点",
+          "综合与实践"
+        ],
+        "prerequisites": [],
+        "root_reason": "单元上位点，不设先修课时",
+        "verified": false,
+        "curriculumRef": "mbs-2017:H.ZH.01"
+      },
+      "questions": [
+        {
+          "id": "mbs_q991286",
+          "topicId": "mbs_u126",
+          "topicIds": [
+            "mbs_u126"
+          ],
+          "prompt": "在离楼底水平距离 20 米的点测得楼顶仰角为 45°，测角仪高 1.5 米，则楼高约为（　）。",
+          "question": "在离楼底水平距离 20 米的点测得楼顶仰角为 45°，测角仪高 1.5 米，则楼高约为（　）。",
+          "answer": "B",
+          "type": "choice",
+          "difficulty": "basic",
+          "explanation": "仰角 45° 时正切值为 1，楼顶高出观测视线的那一段等于水平距离 20 米，再加上仪器离地 1.5 米，楼高为 21.5 米；只算 20 米是漏掉了仪器高。",
+          "options": [
+            {
+              "label": "A",
+              "text": "20 米"
+            },
+            {
+              "label": "B",
+              "text": "21.5 米"
+            },
+            {
+              "label": "C",
+              "text": "18.5 米"
+            },
+            {
+              "label": "D",
+              "text": "23 米"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "20 米"
+            },
+            {
+              "label": "B",
+              "text": "21.5 米"
+            },
+            {
+              "label": "C",
+              "text": "18.5 米"
+            },
+            {
+              "label": "D",
+              "text": "23 米"
+            }
+          ]
+        },
+        {
+          "id": "mbs_q991287",
+          "topicId": "mbs_u126",
+          "topicIds": [
+            "mbs_u126"
+          ],
+          "prompt": "在 A 处测得楼顶仰角 30°，沿直线向楼走近 20 米到 B 处，测得仰角 60°，不计仪器高，楼高为（　）。",
+          "question": "在 A 处测得楼顶仰角 30°，沿直线向楼走近 20 米到 B 处，测得仰角 60°，不计仪器高，楼高为（　）。",
+          "answer": "A",
+          "type": "choice",
+          "difficulty": "standard",
+          "explanation": "设楼高为 h，则两次观测的水平距离分别是 h 除以 tan 30° 与 h 除以 tan 60°，两者之差等于 20 米，即 h 乘 (√3 − √3/3) 等于 20，解得 h = 10√3 米。",
+          "options": [
+            {
+              "label": "A",
+              "text": "10√3 米"
+            },
+            {
+              "label": "B",
+              "text": "20√3 米"
+            },
+            {
+              "label": "C",
+              "text": "20 米"
+            },
+            {
+              "label": "D",
+              "text": "10 米"
+            }
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "10√3 米"
+            },
+            {
+              "label": "B",
+              "text": "20√3 米"
+            },
+            {
+              "label": "C",
+              "text": "20 米"
+            },
+            {
+              "label": "D",
+              "text": "10 米"
+            }
+          ]
+        },
+        {
+          "id": "mbs_q991288",
+          "topicId": "mbs_u126",
+          "topicIds": [
+            "mbs_u126"
+          ],
+          "prompt": "某次测量中把仰角 32° 误记为 23°，水平距离不变，按误记数据算出的楼高会比真实值偏大还是偏小？答（　）。",
+          "question": "某次测量中把仰角 32° 误记为 23°，水平距离不变，按误记数据算出的楼高会比真实值偏大还是偏小？答（　）。",
+          "answer": "偏小",
+          "type": "fill",
+          "difficulty": "standard",
+          "explanation": "仰角变小而水平距离没变时，正切值随角度减小而减小，算出的竖直高度也随之变小，所以结果偏小。这属于记录环节引入的系统性偏差，多测几次取平均也纠正不了。",
+          "choices": []
+        },
+        {
+          "id": "mbs_q991289",
+          "topicId": "mbs_u126",
+          "topicIds": [
+            "mbs_u126"
+          ],
+          "prompt": "同一高度测得五个数据 20.1、19.9、20.0、20.2、19.8（单位：米），取平均值作为测量结果，平均值等于（　）米。",
+          "question": "同一高度测得五个数据 20.1、19.9、20.0、20.2、19.8（单位：米），取平均值作为测量结果，平均值等于（　）米。",
+          "answer": "20.0",
+          "type": "numeric",
+          "difficulty": "standard",
+          "explanation": "五个数据相加得 100.0，再除以 5 得 20.0 米。多次测量取平均能削弱随机误差的起伏，但对仪器零点偏移这类系统误差没有作用。",
+          "choices": [],
+          "verify": "(20.1+19.9+20.0+20.2+19.8)/5"
+        },
+        {
+          "id": "mbs_q991290",
+          "topicId": "mbs_u126",
+          "topicIds": [
+            "mbs_u126"
+          ],
+          "prompt": "用两次观测仰角的方法测量不可到达的建筑物高度时，为什么要求两次观测点与楼底在同一条直线上？若偏离这条直线会带来什么后果？",
+          "question": "用两次观测仰角的方法测量不可到达的建筑物高度时，为什么要求两次观测点与楼底在同一条直线上？若偏离这条直线会带来什么后果？",
+          "answer": "只有三点共线，两段水平距离之差才等于两个观测点之间的距离，据此列出的方程才成立；偏离这条直线后这个差值不再等于两点间距离，算出的高度会偏大或偏小。",
+          "type": "short-answer",
+          "difficulty": "hard",
+          "explanation": "建模的每一步都要对得上假设：共线才能把斜距投影成可以直接相减的水平距离。若观测点偏出这条直线，两点间距离要按斜线算，而水平距离之差反而变小，代回原方程就会高估或低估楼高。",
+          "choices": [],
+          "keypoints": [
+            "推导所用方程建立在两次观测点与楼底共线的前提上",
+            "不共线时两段水平距离之差不再等于两点间的距离，方程失真",
+            "由此产生的偏差属于模型假设不成立引起的系统误差"
+          ]
+        }
+      ]
+    }
+  ]
+}

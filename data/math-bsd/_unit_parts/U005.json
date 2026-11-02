@@ -1,0 +1,568 @@
+{
+ "units": [
+  {
+   "unit": {
+    "id": "mbs_u097",
+    "name": "特殊平行四边形",
+    "subject": "math-bsd",
+    "domain": "图形与几何",
+    "grade": 9,
+    "semester": "上",
+    "chapter": "九年级上册 第一单元 特殊平行四边形",
+    "level": "unit",
+    "type": "conceptual",
+    "description": "本单元围绕「特殊平行四边形」展开，包含认识特殊平行四边形、菱形的性质与判定（一）、菱形的性质与判定（二）、矩形的性质与判定（一） 等 8 个课时，重在理清本单元的知识线索与前后联系，把零散的课时串成一条完整的思路。",
+    "mastery_criteria": [
+     "能说清「特殊平行四边形」这一单元的核心方法与适用条件",
+     "能在本单元的典型题里独立完成至少八道并自查对错"
+    ],
+    "diagnostic_question": {
+     "question": "下列各题中，属于「特殊平行四边形」这一单元核心方法的题目是（　）。",
+     "answer": "A"
+    },
+    "external": false,
+    "standards": [
+     {
+      "id": "mbs-2022:4.TX.07",
+      "confidence": "partial",
+      "quote": "理解平行四边形、矩形、菱形、正方形、梯形的概念，以及它们之间的关系",
+      "sourceLine": 823
+     }
+    ],
+    "tags": [
+     "单元上位点",
+     "图形与几何"
+    ],
+    "prerequisites": [],
+    "root_reason": "单元上位点，不设先修课时",
+    "verified": false,
+    "curriculumRef": "mbs-2022:4.TX.07"
+   },
+   "questions": [
+    {
+     "id": "mbs_q991141",
+     "topicId": "mbs_u097",
+     "topicIds": [
+      "mbs_u097"
+     ],
+     "prompt": "下列条件中，能判定平行四边形 ABCD 是菱形的是（　）。",
+     "question": "下列条件中，能判定平行四边形 ABCD 是菱形的是（　）。",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "菱形是邻边相等的平行四边形。平行四边形的两条对角线若互相垂直，则可推出邻边相等，从而判定为菱形；对角线相等得到的是矩形，有一个内角是直角得到的也是矩形，而对角线互相平分本就是平行四边形的性质，无法进一步限定形状。",
+     "options": [
+      {
+       "label": "A",
+       "text": "对角线 AC 与 BD 相等"
+      },
+      {
+       "label": "B",
+       "text": "对角线 AC 与 BD 互相垂直"
+      },
+      {
+       "label": "C",
+       "text": "有一个内角是 90 度"
+      },
+      {
+       "label": "D",
+       "text": "对角线 AC 与 BD 互相平分"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "对角线 AC 与 BD 相等"
+      },
+      {
+       "label": "B",
+       "text": "对角线 AC 与 BD 互相垂直"
+      },
+      {
+       "label": "C",
+       "text": "有一个内角是 90 度"
+      },
+      {
+       "label": "D",
+       "text": "对角线 AC 与 BD 互相平分"
+      }
+     ]
+    },
+    {
+     "id": "mbs_q991142",
+     "topicId": "mbs_u097",
+     "topicIds": [
+      "mbs_u097"
+     ],
+     "prompt": "下列关于特殊平行四边形性质的命题中，正确的是（　）。",
+     "question": "下列关于特殊平行四边形性质的命题中，正确的是（　）。",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "对角线相等的平行四边形是矩形的判定定理，条件里平行四边形这个前提不能丢。对角线互相垂直的四边形未必是平行四边形，故不一定是菱形；四个角相等的四边形只能确定为矩形，还缺邻边相等；一组邻边相等的平行四边形是菱形而不是矩形。",
+     "options": [
+      {
+       "label": "A",
+       "text": "对角线互相垂直的四边形一定是菱形"
+      },
+      {
+       "label": "B",
+       "text": "对角线相等的平行四边形一定是矩形"
+      },
+      {
+       "label": "C",
+       "text": "四个角都相等的四边形一定是正方形"
+      },
+      {
+       "label": "D",
+       "text": "一组邻边相等的平行四边形一定是矩形"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "对角线互相垂直的四边形一定是菱形"
+      },
+      {
+       "label": "B",
+       "text": "对角线相等的平行四边形一定是矩形"
+      },
+      {
+       "label": "C",
+       "text": "四个角都相等的四边形一定是正方形"
+      },
+      {
+       "label": "D",
+       "text": "一组邻边相等的平行四边形一定是矩形"
+      }
+     ]
+    },
+    {
+     "id": "mbs_q991143",
+     "topicId": "mbs_u097",
+     "topicIds": [
+      "mbs_u097"
+     ],
+     "prompt": "菱形 ABCD 的两条对角线长分别为 6 和 8，则这个菱形的周长是（　）。",
+     "question": "菱形 ABCD 的两条对角线长分别为 6 和 8，则这个菱形的周长是（　）。",
+     "answer": "20",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "菱形的两条对角线互相垂直平分，四个小直角三角形全等。两对角线的一半分别为 3 与 4，由勾股定理得菱形边长为 5，四条边相等，所以周长为 4 乘 5 等于 20。",
+     "choices": []
+    },
+    {
+     "id": "mbs_q991144",
+     "topicId": "mbs_u097",
+     "topicIds": [
+      "mbs_u097"
+     ],
+     "prompt": "菱形 ABCD 的边长为 5，其中一条对角线 AC 的长为 8，则另一条对角线 BD 的长为（　）。",
+     "question": "菱形 ABCD 的边长为 5，其中一条对角线 AC 的长为 8，则另一条对角线 BD 的长为（　）。",
+     "answer": "6",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "菱形的对角线互相垂直平分，设交点为 O，则 AO 等于 4，AB 等于 5。在直角三角形 AOB 中，BO 等于根号下 25 减 16 等于 3，而 O 是 BD 的中点，所以 BD 等于 2 乘 3 等于 6。",
+     "choices": [],
+     "verify": "2*int((5**2-4**2)**0.5)"
+    },
+    {
+     "id": "mbs_q991145",
+     "topicId": "mbs_u097",
+     "topicIds": [
+      "mbs_u097"
+     ],
+     "prompt": "四边形 ABCD 的两条对角线互相垂直平分，且这两条对角线相等。请判断四边形 ABCD 的形状，并说明每一步的判断依据。",
+     "question": "四边形 ABCD 的两条对角线互相垂直平分，且这两条对角线相等。请判断四边形 ABCD 的形状，并说明每一步的判断依据。",
+     "answer": "四边形 ABCD 是正方形",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "对角线互相平分的四边形先可判定为平行四边形，在平行四边形中再加上对角线互相垂直，可推出邻边相等，于是它是菱形；又对角线相等，可推出它是矩形。既是菱形又是矩形，所以四边形 ABCD 是正方形，两步判定缺一不可。",
+     "choices": [],
+     "keypoints": [
+      "由对角线互相平分先判定四边形是平行四边形",
+      "平行四边形中加对角线互相垂直，判定为菱形",
+      "平行四边形中加对角线相等，判定为矩形",
+      "既符合菱形又符合矩形，结论为正方形"
+     ]
+    }
+   ]
+  },
+  {
+   "unit": {
+    "id": "mbs_u098",
+    "name": "一元二次方程",
+    "subject": "math-bsd",
+    "domain": "数与代数",
+    "grade": 9,
+    "semester": "上",
+    "chapter": "九年级上册 第二单元 一元二次方程",
+    "level": "unit",
+    "type": "conceptual",
+    "description": "本单元围绕「一元二次方程」展开，包含认识一元二次方程（一）、认识一元二次方程（二）、一元二次方程的解法（一）配方法、一元二次方程的解法（二）公式法 等 8 个课时，重在理清本单元的知识线索与前后联系，把零散的课时串成一条完整的思路。",
+    "mastery_criteria": [
+     "能说清「一元二次方程」这一单元的核心方法与适用条件",
+     "能在本单元的典型题里独立完成至少八道并自查对错"
+    ],
+    "diagnostic_question": {
+     "question": "下列各题中，属于「一元二次方程」这一单元核心方法的题目是（　）。",
+     "answer": "A"
+    },
+    "external": false,
+    "standards": [
+     {
+      "id": "mbs-2022:4.SD.09",
+      "confidence": "partial",
+      "quote": "理解配方法，能用配方法、公式法、因式分解法解数字系数的一元二次方程",
+      "sourceLine": 682
+     }
+    ],
+    "tags": [
+     "单元上位点",
+     "数与代数"
+    ],
+    "prerequisites": [],
+    "root_reason": "单元上位点，不设先修课时",
+    "verified": false,
+    "curriculumRef": "mbs-2022:4.SD.09"
+   },
+   "questions": [
+    {
+     "id": "mbs_q991146",
+     "topicId": "mbs_u098",
+     "topicIds": [
+      "mbs_u098"
+     ],
+     "prompt": "下列方程中，属于一元二次方程的是（　）。",
+     "question": "下列方程中，属于一元二次方程的是（　）。",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "一元二次方程要求只含一个未知数、是整式方程、且化简后未知数的最高次数为 2。第一个方程两边的 x² 相消后变成一次方程；第二个含有 x 与 y 两个未知数；第四个未知数出现在分母上，不是整式方程。只有第三个同时满足三条要求。",
+     "options": [
+      {
+       "label": "A",
+       "text": "x² + 2x = x² − 1"
+      },
+      {
+       "label": "B",
+       "text": "x² + 3x = 2y − 1"
+      },
+      {
+       "label": "C",
+       "text": "3x² − 2x + 1 = 0"
+      },
+      {
+       "label": "D",
+       "text": "1/x² + x − 2 = 0"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "x² + 2x = x² − 1"
+      },
+      {
+       "label": "B",
+       "text": "x² + 3x = 2y − 1"
+      },
+      {
+       "label": "C",
+       "text": "3x² − 2x + 1 = 0"
+      },
+      {
+       "label": "D",
+       "text": "1/x² + x − 2 = 0"
+      }
+     ]
+    },
+    {
+     "id": "mbs_q991147",
+     "topicId": "mbs_u098",
+     "topicIds": [
+      "mbs_u098"
+     ],
+     "prompt": "关于 x 的一元二次方程 x² − 4x + 5 = 0 的实数根的情况是（　）。",
+     "question": "关于 x 的一元二次方程 x² − 4x + 5 = 0 的实数根的情况是（　）。",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "用根的判别式判断：Δ 等于 b² 减 4ac，代入得 16 减 20 等于 −4，小于 0，所以方程没有实数根。这与配方的结果一致：(x − 2)² 加 1 恒大于 0，左边不可能等于 0。",
+     "options": [
+      {
+       "label": "A",
+       "text": "有两个不相等的实数根"
+      },
+      {
+       "label": "B",
+       "text": "有两个相等的实数根"
+      },
+      {
+       "label": "C",
+       "text": "没有实数根"
+      },
+      {
+       "label": "D",
+       "text": "无法确定根的情况"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "有两个不相等的实数根"
+      },
+      {
+       "label": "B",
+       "text": "有两个相等的实数根"
+      },
+      {
+       "label": "C",
+       "text": "没有实数根"
+      },
+      {
+       "label": "D",
+       "text": "无法确定根的情况"
+      }
+     ]
+    },
+    {
+     "id": "mbs_q991148",
+     "topicId": "mbs_u098",
+     "topicIds": [
+      "mbs_u098"
+     ],
+     "prompt": "用因式分解法解方程 (x − 3)(x + 2) = 0，得到的解是 x =（　）。",
+     "question": "用因式分解法解方程 (x − 3)(x + 2) = 0，得到的解是 x =（　）。",
+     "answer": "3 或 −2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "两个因式的积为 0，则至少有一个因式等于 0。于是 x 减 3 等于 0 或 x 加 2 等于 0，分别解得 x 等于 3 与 x 等于 −2。两个根都要写出来，只写其中一个会漏解。",
+     "choices": []
+    },
+    {
+     "id": "mbs_q991149",
+     "topicId": "mbs_u098",
+     "topicIds": [
+      "mbs_u098"
+     ],
+     "prompt": "一个直角三角形的斜边长为 13，一条直角边比另一条直角边长 7，则较短的直角边长为（　）。",
+     "question": "一个直角三角形的斜边长为 13，一条直角边比另一条直角边长 7，则较短的直角边长为（　）。",
+     "answer": "5",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "设较短的直角边为 x，则另一条为 x 加 7。由勾股定理得 x² 加 (x 加 7)² 等于 169，展开整理为 x² 加 7x 减 60 等于 0，用公式法求得 x 等于 5 或 x 等于 −12，长度不能为负，故较短的直角边长为 5。",
+     "choices": [],
+     "verify": "(-7+int((49+240)**0.5))//2"
+    },
+    {
+     "id": "mbs_q991150",
+     "topicId": "mbs_u098",
+     "topicIds": [
+      "mbs_u098"
+     ],
+     "prompt": "若关于 x 的一元二次方程 (k − 1)x² − 2x + 1 = 0 有两个不相等的实数根，求 k 的取值范围。",
+     "question": "若关于 x 的一元二次方程 (k − 1)x² − 2x + 1 = 0 有两个不相等的实数根，求 k 的取值范围。",
+     "answer": "k < 2 且 k ≠ 1",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "方程是一元二次方程，二次项系数 k 减 1 不能为 0，得 k 不等于 1；要有两个不相等的实数根，判别式 Δ 等于 4 减 4(k − 1) 必须大于 0，解得 k 小于 2。两个条件同时成立，所以 k 小于 2 且 k 不等于 1。漏掉二次项系数不为零是本题最常见的错法。",
+     "choices": [],
+     "keypoints": [
+      "由二次项系数 k − 1 ≠ 0 得 k ≠ 1",
+      "由两个不相等实根得判别式 Δ > 0",
+      "解 4 − 4(k − 1) > 0 得 k < 2",
+      "两条件同时满足，取 k < 2 且 k ≠ 1"
+     ]
+    }
+   ]
+  },
+  {
+   "unit": {
+    "id": "mbs_u099",
+    "name": "图形的相似",
+    "subject": "math-bsd",
+    "domain": "图形与几何",
+    "grade": 9,
+    "semester": "上",
+    "chapter": "九年级上册 第三单元 图形的相似",
+    "level": "unit",
+    "type": "conceptual",
+    "description": "本单元围绕「图形的相似」展开，包含相似多边形（一）、相似多边形（二）、探索三角形相似的条件（一）、探索三角形相似的条件（二） 等 12 个课时，重在理清本单元的知识线索与前后联系，把零散的课时串成一条完整的思路。",
+    "mastery_criteria": [
+     "能说清「图形的相似」这一单元的核心方法与适用条件",
+     "能在本单元的典型题里独立完成至少八道并自查对错"
+    ],
+    "diagnostic_question": {
+     "question": "下列各题中，属于「图形的相似」这一单元核心方法的题目是（　）。",
+     "answer": "A"
+    },
+    "external": false,
+    "standards": [
+     {
+      "id": "mbs-2022:4.TX.15",
+      "confidence": "partial",
+      "quote": "通过具体实例认识图形的相似",
+      "sourceLine": 867
+     }
+    ],
+    "tags": [
+     "单元上位点",
+     "图形与几何"
+    ],
+    "prerequisites": [],
+    "root_reason": "单元上位点，不设先修课时",
+    "verified": false,
+    "curriculumRef": "mbs-2022:4.TX.15"
+   },
+   "questions": [
+    {
+     "id": "mbs_q991151",
+     "topicId": "mbs_u099",
+     "topicIds": [
+      "mbs_u099"
+     ],
+     "prompt": "下列各组图形中，一定相似的是（　）。",
+     "question": "下列各组图形中，一定相似的是（　）。",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "正方形四个角都是直角、四条边都相等，任意两个正方形对应角相等、对应边成比例，所以一定相似。两个矩形的长与宽之比可能不同，两个菱形的内角可能不同，两个等腰三角形的顶角可能不同，这些情况都会破坏相似。",
+     "options": [
+      {
+       "label": "A",
+       "text": "两个矩形"
+      },
+      {
+       "label": "B",
+       "text": "两个菱形"
+      },
+      {
+       "label": "C",
+       "text": "两个正方形"
+      },
+      {
+       "label": "D",
+       "text": "两个等腰三角形"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "两个矩形"
+      },
+      {
+       "label": "B",
+       "text": "两个菱形"
+      },
+      {
+       "label": "C",
+       "text": "两个正方形"
+      },
+      {
+       "label": "D",
+       "text": "两个等腰三角形"
+      }
+     ]
+    },
+    {
+     "id": "mbs_q991152",
+     "topicId": "mbs_u099",
+     "topicIds": [
+      "mbs_u099"
+     ],
+     "prompt": "若三角形 ABC 与三角形 DEF 相似，且相似比为 2 比 3，则这两个三角形的面积比为（　）。",
+     "question": "若三角形 ABC 与三角形 DEF 相似，且相似比为 2 比 3，则这两个三角形的面积比为（　）。",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "相似三角形的面积比等于相似比的平方。相似比为 2 比 3，平方后得 4 比 9。选项中的 2 比 3 是对应边之比，也是周长之比，但不是面积之比。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2 比 3"
+      },
+      {
+       "label": "B",
+       "text": "3 比 2"
+      },
+      {
+       "label": "C",
+       "text": "4 比 9"
+      },
+      {
+       "label": "D",
+       "text": "9 比 4"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "2 比 3"
+      },
+      {
+       "label": "B",
+       "text": "3 比 2"
+      },
+      {
+       "label": "C",
+       "text": "4 比 9"
+      },
+      {
+       "label": "D",
+       "text": "9 比 4"
+      }
+     ]
+    },
+    {
+     "id": "mbs_q991153",
+     "topicId": "mbs_u099",
+     "topicIds": [
+      "mbs_u099"
+     ],
+     "prompt": "已知 a 与 b 的比为 3 比 2，则 (a + b) 与 b 的比值是（　）。",
+     "question": "已知 a 与 b 的比为 3 比 2，则 (a + b) 与 b 的比值是（　）。",
+     "answer": "5/2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由 a 比 b 等于 3 比 2，可设 a 等于 3k、b 等于 2k，其中 k 不为 0。则 a 加 b 等于 5k，所以 (a 加 b) 比 b 等于 5k 比 2k 等于 5 比 2，化简为 5/2。用设比例系数的方法把比值问题转化为整式运算。",
+     "choices": []
+    },
+    {
+     "id": "mbs_q991154",
+     "topicId": "mbs_u099",
+     "topicIds": [
+      "mbs_u099"
+     ],
+     "prompt": "同一时刻，身高 1.6 米的小明在阳光下的影长为 2 米，旗杆的影长为 15 米，则旗杆的高度为（　） 米。",
+     "question": "同一时刻，身高 1.6 米的小明在阳光下的影长为 2 米，旗杆的影长为 15 米，则旗杆的高度为（　） 米。",
+     "answer": "12",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "同一时刻太阳光线平行，人与旗杆都竖直站立，与地面垂直，因此人与影、旗杆与影构成的两个直角三角形相似。对应边成比例：1.6 比 2 等于旗杆高比 15，解得旗杆高为 1.6 乘 15 除以 2 等于 12 米。",
+     "choices": [],
+     "verify": "16*15//20"
+    },
+    {
+     "id": "mbs_q991155",
+     "topicId": "mbs_u099",
+     "topicIds": [
+      "mbs_u099"
+     ],
+     "prompt": "在三角形 ABC 中，点 D 在边 AB 上，且角 ACD 等于角 ABC，AD = 2，AC = 4，求 AB 的长，并写出推理过程。",
+     "question": "在三角形 ABC 中，点 D 在边 AB 上，且角 ACD 等于角 ABC，AD = 2，AC = 4，求 AB 的长，并写出推理过程。",
+     "answer": "AB = 8",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "角 ACD 等于角 ABC，又角 A 是公共角，所以三角形 ACD 与三角形 ABC 有两组角对应相等，由 AA 判定二者相似。对应边成比例：AC 比 AB 等于 AD 比 AC。代入 AD 等于 2、AC 等于 4，得 4 比 AB 等于 2 比 4，解得 AB 等于 8。关键是先借用公共角凑成两组角相等，再按对应顶点写比例式。",
+     "choices": [],
+     "keypoints": [
+      "公共角角 A 等于角 A，与角 ACD 等于角 ABC 构成两组角相等",
+      "由两角对应相等判定三角形 ACD 相似于三角形 ABC",
+      "由相似写出对应边比例式 AC 比 AB 等于 AD 比 AC",
+      "代入 AD = 2、AC = 4，解得 AB = 8"
+     ]
+    }
+   ]
+  }
+ ]
+}

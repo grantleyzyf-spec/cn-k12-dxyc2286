@@ -1,0 +1,639 @@
+{
+ "book": "选择性必修第一册",
+ "kind": "unit",
+ "term": "上册",
+ "grade": 11,
+ "stage": "高中",
+ "subject": "math-bsd",
+ "paper": "选择性必修第一册 第三单元 空间向量与立体几何 测试卷",
+ "duration": 120,
+ "fullScore": 150,
+ "scope": [
+  "选择性必修第一册 第三单元 空间向量与立体几何"
+ ],
+ "topicIds": [
+  "mbs_u132"
+ ],
+ "examId": "mbs_exam_x1_u03",
+ "sections": [
+  {
+   "title": "一、单选题",
+   "rule": "每小题 5 分，共 40 分",
+   "items": [
+    {
+     "no": 1,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mbs_h155"
+     ],
+     "stem": "在空间直角坐标系中，点 P(2, -1, 3) 关于 xOy 平面对称的点的坐标是",
+     "options": [
+      {
+       "label": "A",
+       "text": "(2, -1, -3)"
+      },
+      {
+       "label": "B",
+       "text": "(-2, -1, 3)"
+      },
+      {
+       "label": "C",
+       "text": "(2, 1, 3)"
+      },
+      {
+       "label": "D",
+       "text": "(-2, 1, -3)"
+      }
+     ],
+     "answer": "A",
+     "analysis": "关于坐标平面对称时，只改变垂直于该平面的那条坐标轴上的坐标。xOy 平面上的点竖坐标为 0，故只需把 z 坐标变为相反数，得 (2, -1, -3)。",
+     "itemId": "mbs_exam_x1_u03_q01"
+    },
+    {
+     "no": 2,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mbs_h156"
+     ],
+     "stem": "已知点 A(1, 2, 3) 与点 B(2, -1, 1)，则线段 AB 的长为",
+     "options": [
+      {
+       "label": "A",
+       "text": "√6"
+      },
+      {
+       "label": "B",
+       "text": "√14"
+      },
+      {
+       "label": "C",
+       "text": "14"
+      },
+      {
+       "label": "D",
+       "text": "2√5"
+      }
+     ],
+     "answer": "B",
+     "analysis": "由空间两点间距离公式得 |AB| = √((2-1)² + (-1-2)² + (1-3)²) = √(1 + 9 + 4) = √14。三个坐标差的平方都要相加，漏掉任何一项都会得到错误的根式。",
+     "itemId": "mbs_exam_x1_u03_q02"
+    },
+    {
+     "no": 3,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mbs_h158"
+     ],
+     "stem": "已知向量 a = (1, 2, -1)，b = (-2, 1, 3)，则 2a - b 等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "(0, 3, 2)"
+      },
+      {
+       "label": "B",
+       "text": "(4, 5, -7)"
+      },
+      {
+       "label": "C",
+       "text": "(4, 3, -5)"
+      },
+      {
+       "label": "D",
+       "text": "(-4, -3, 5)"
+      }
+     ],
+     "answer": "C",
+     "analysis": "2a = (2, 4, -2)，再逐分量减去 b：2a - b = (2 - (-2), 4 - 1, -2 - 3) = (4, 3, -5)。减去负分量时要变号，这是本题最容易出错的地方。",
+     "itemId": "mbs_exam_x1_u03_q03"
+    },
+    {
+     "no": 4,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mbs_h159"
+     ],
+     "stem": "已知向量 a = (2, -1, 3)，b = (-1, 2, 1)，则 a·b 的值为",
+     "options": [
+      {
+       "label": "A",
+       "text": "-7"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "7"
+      },
+      {
+       "label": "D",
+       "text": "-1"
+      }
+     ],
+     "answer": "D",
+     "analysis": "空间向量的数量积等于对应坐标乘积之和：2×(-1) + (-1)×2 + 3×1 = -2 - 2 + 3 = -1。数量积是一个实数，不是向量。",
+     "itemId": "mbs_exam_x1_u03_q04"
+    },
+    {
+     "no": 5,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mbs_h161"
+     ],
+     "stem": "若向量 a = (1, 2, 3) 与 b = (2, 4, m) 平行，则实数 m 的值为",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ],
+     "answer": "C",
+     "analysis": "两向量平行时对应坐标成比例，由 2/1 = 4/2 = m/3 得 m = 6。也可由 b = 2a 直接读出第三个分量是 3 的 2 倍。",
+     "itemId": "mbs_exam_x1_u03_q05"
+    },
+    {
+     "no": 6,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mbs_h162"
+     ],
+     "stem": "已知直线 l 的方向向量 s = (1, -1, 2)，平面 α 的法向量 n = (x, 1, 1)。若 l ∥ α 且 l 不在 α 内，则 x 的值为",
+     "options": [
+      {
+       "label": "A",
+       "text": "-1"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "-3"
+      }
+     ],
+     "answer": "A",
+     "analysis": "直线与平面平行时，其方向向量与平面法向量垂直，故 s·n = x - 1 + 2 = 0，解得 x = -1。若误把平行当成方向向量与法向量平行，就会得出错误结论。",
+     "itemId": "mbs_exam_x1_u03_q06"
+    },
+    {
+     "no": 7,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "hard",
+     "topicIds": [
+      "mbs_h163"
+     ],
+     "stem": "在棱长为 1 的正方体 ABCD-A1B1C1D1 中，异面直线 A1B 与 AD1 所成角的大小为",
+     "options": [
+      {
+       "label": "A",
+       "text": "30°"
+      },
+      {
+       "label": "B",
+       "text": "60°"
+      },
+      {
+       "label": "C",
+       "text": "45°"
+      },
+      {
+       "label": "D",
+       "text": "90°"
+      }
+     ],
+     "answer": "B",
+     "analysis": "以 A 为原点建系，A1(0, 0, 1)、B(1, 0, 0)、D1(0, 1, 1)，则 A1B = (1, 0, -1)，AD1 = (0, 1, 1)。两向量数量积为 -1，模都是 √2，故夹角余弦为 -1/2，对应 120°。异面直线所成角取锐角或直角，所以是 60°。",
+     "itemId": "mbs_exam_x1_u03_q07"
+    },
+    {
+     "no": 8,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "hard",
+     "topicIds": [
+      "mbs_h164"
+     ],
+     "stem": "已知平面 α 经过点 A(1, 1, 1)，且以 n = (2, -1, 2) 为法向量，则点 P(3, 0, 1) 到平面 α 的距离为",
+     "options": [
+      {
+       "label": "A",
+       "text": "1/3"
+      },
+      {
+       "label": "B",
+       "text": "3/5"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "5/3"
+      }
+     ],
+     "answer": "D",
+     "analysis": "向量 AP = (2, -1, 0)，点 P 到平面的距离等于 AP 在法向量方向上投影的绝对值，即 |AP·n|/|n| = |4 + 1 + 0|/√(4 + 1 + 4) = 5/3。分母必须是法向量的模，不是分量的简单相加。",
+     "itemId": "mbs_exam_x1_u03_q08"
+    }
+   ]
+  },
+  {
+   "title": "二、多选题",
+   "rule": "每小题 5 分，共 20 分（全部选对得 5 分，部分选对得 2 分）",
+   "items": [
+    {
+     "no": 9,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "basic",
+     "topicIds": [
+      "mbs_h155",
+      "mbs_h156"
+     ],
+     "stem": "关于空间直角坐标系中的点 P(1, 2, 3)，下列说法正确的有",
+     "options": [
+      {
+       "label": "A",
+       "text": "它关于原点对称的点是 (-1, -2, -3)"
+      },
+      {
+       "label": "B",
+       "text": "它关于 z 轴对称的点是 (-1, -2, 3)"
+      },
+      {
+       "label": "C",
+       "text": "它到原点 O 的距离为 √14"
+      },
+      {
+       "label": "D",
+       "text": "它关于 xOy 平面对称的点是 (-1, -2, 3)"
+      }
+     ],
+     "answer": "ABC",
+     "analysis": "关于原点对称时三个坐标都变号，A 正确；关于 z 轴对称时只保留 z 坐标、x 与 y 变号，B 正确；由距离公式得 √(1 + 4 + 9) = √14，C 正确；关于 xOy 平面对称只需 z 坐标变号，应为 (1, 2, -3)，D 错误。",
+     "itemId": "mbs_exam_x1_u03_q09"
+    },
+    {
+     "no": 10,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mbs_h158",
+      "mbs_h159"
+     ],
+     "stem": "已知 |a| = 2，|b| = 3，a·b = 3，则下列结论正确的有",
+     "options": [
+      {
+       "label": "A",
+       "text": "cos<a, b> = 1/2"
+      },
+      {
+       "label": "B",
+       "text": "|a + b| = √19"
+      },
+      {
+       "label": "C",
+       "text": "a 与 b 垂直"
+      },
+      {
+       "label": "D",
+       "text": "|a - b| = √7"
+      }
+     ],
+     "answer": "ABD",
+     "analysis": "由 cos<a, b> = (a·b)/(|a||b|) = 3/6 = 1/2 知 A 正确，夹角为 60°，并不垂直，C 错误。|a + b|² = 4 + 9 + 6 = 19，|a - b|² = 4 + 9 - 6 = 7，故 B、D 正确。",
+     "itemId": "mbs_exam_x1_u03_q10"
+    },
+    {
+     "no": 11,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mbs_h160"
+     ],
+     "stem": "关于空间向量基本定理，下列说法正确的有",
+     "options": [
+      {
+       "label": "A",
+       "text": "若 a、b、c 三个向量不共面，则空间任一向量 p 都能唯一表示为 xa + yb + zc"
+      },
+      {
+       "label": "B",
+       "text": "空间中任意三个向量都可以作为空间的一个基底"
+      },
+      {
+       "label": "C",
+       "text": "{i, j, k} 是空间的一个单位正交基底，可以表示空间中的任一向量"
+      },
+      {
+       "label": "D",
+       "text": "两个不共线的向量也能表示空间中的任一向量"
+      }
+     ],
+     "answer": "AC",
+     "analysis": "空间向量基本定理要求三个向量不共面，此时表示唯一，A 正确；若三个向量共面，则不能构成基底，B 错误；单位正交基底 {i, j, k} 满足定理条件，任意向量都可表示为 xi + yj + zk，C 正确；两个不共线向量的线性组合只能表示与它们共面的向量，D 错误。",
+     "itemId": "mbs_exam_x1_u03_q11"
+    },
+    {
+     "no": 12,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "hard",
+     "topicIds": [
+      "mbs_h162",
+      "mbs_h163"
+     ],
+     "stem": "用向量方法判断空间位置关系时，下列说法正确的有",
+     "options": [
+      {
+       "label": "A",
+       "text": "若直线 l 的方向向量与平面 α 的法向量垂直，则 l ∥ α 或 l 在 α 内"
+      },
+      {
+       "label": "B",
+       "text": "若两个平面的法向量互相平行，则这两个平面平行或重合"
+      },
+      {
+       "label": "C",
+       "text": "若一条直线的方向向量与一个平面的法向量平行，则这条直线与该平面平行"
+      },
+      {
+       "label": "D",
+       "text": "若两个平面的法向量互相垂直，则这两个平面互相垂直"
+      }
+     ],
+     "answer": "ABD",
+     "analysis": "方向向量与法向量垂直时直线与平面平行或在平面内，需要另行判断直线是否在平面内来区分，A 正确；法向量平行说明两平面方向相同，可能重合，B 正确；方向向量与法向量平行时直线垂直于平面而不是平行，C 错误；法向量垂直时两平面垂直，D 正确。",
+     "itemId": "mbs_exam_x1_u03_q12"
+    }
+   ]
+  },
+  {
+   "title": "三、填空题",
+   "rule": "每小题 5 分，共 20 分",
+   "items": [
+    {
+     "no": 13,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mbs_h156"
+     ],
+     "stem": "点 A(2, -1, 3) 与点 B(4, 1, 2) 之间的距离等于 ____。",
+     "answer": "3",
+     "analysis": "由距离公式得 √((4-2)² + (1+1)² + (2-3)²) = √(4 + 4 + 1) = 3。注意第二个坐标差是 1 - (-1) = 2，符号处理不当会算成 √8。",
+     "itemId": "mbs_exam_x1_u03_q13"
+    },
+    {
+     "no": 14,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mbs_h161"
+     ],
+     "stem": "已知 a = (1, -2, 0)，b = (2, 1, -2)，则 |2a - b| 等于 ____。",
+     "answer": "√29",
+     "analysis": "先由坐标运算得 2a = (2, -4, 0)，再逐分量相减得 2a - b = (0, -5, 2)，其模为 √(0 + 25 + 4) = √29。求模之前必须先把向量化到最简形式，不能对各分量分别取绝对值相加。",
+     "itemId": "mbs_exam_x1_u03_q14"
+    },
+    {
+     "no": 15,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mbs_h162"
+     ],
+     "stem": "已知平面 α 经过点 O(0, 0, 0)、A(1, 0, 1)、B(0, 1, 1)，则平面 α 的一个法向量是 ____。",
+     "answer": "(1, 1, -1)",
+     "analysis": "平面内两个不共线向量 OA = (1, 0, 1)，OB = (0, 1, 1)。设法向量 n = (x, y, z)，由 n·OA = x + z = 0 与 n·OB = y + z = 0 取 z = -1 得 x = y = 1，即 n = (1, 1, -1)。法向量不唯一，与它平行的非零向量都可以。",
+     "itemId": "mbs_exam_x1_u03_q15"
+    },
+    {
+     "no": 16,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "hard",
+     "topicIds": [
+      "mbs_h164"
+     ],
+     "stem": "点 P(1, 2, -1) 到平面 2x - y + 2z + 3 = 0 的距离等于 ____。",
+     "answer": "1/3",
+     "analysis": "由点到平面的距离公式得 |2×1 - 2 + 2×(-1) + 3|/√(4 + 1 + 4) = |1|/3 = 1/3。分子要把点的三个坐标依次代入，分母是法向量 (2, -1, 2) 的模。",
+     "itemId": "mbs_exam_x1_u03_q16"
+    }
+   ]
+  },
+  {
+   "title": "四、解答题",
+   "rule": "共 70 分，解答应写出文字说明、证明过程或演算步骤",
+   "items": [
+    {
+     "no": 17,
+     "score": 10,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mbs_h157",
+      "mbs_h158",
+      "mbs_h161"
+     ],
+     "stem": "已知向量 a = (1, 2, -1)，b = (-2, 1, 3)。(1) 求 a·b 与 |a|；(2) 若 (ka + b) 与 (a - b) 互相垂直，求实数 k 的值。",
+     "answer": "(1) a·b = -3，|a| = √6；(2) k = 17/9。",
+     "analysis": "a·b = 1×(-2) + 2×1 + (-1)×3 = -3，|a| = √(1 + 4 + 1) = √6。由垂直得 (ka + b)·(a - b) = 0，即 ka·a - ka·b + a·b - b·b = 0。代入 a·a = 6，a·b = -3，b·b = 14，得 6k + 3k - 3 - 14 = 0，解得 k = 17/9。",
+     "scoreRule": [
+      {
+       "desc": "求出 a·b = -3 与 |a| = √6",
+       "score": 3
+      },
+      {
+       "desc": "写出 a·a = 6、b·b = 14 等基本量",
+       "score": 2
+      },
+      {
+       "desc": "由垂直条件列方程 9k - 17 = 0 并解得 k = 17/9",
+       "score": 5
+      }
+     ],
+     "itemId": "mbs_exam_x1_u03_q17"
+    },
+    {
+     "no": 18,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mbs_h155",
+      "mbs_h156",
+      "mbs_h160"
+     ],
+     "stem": "在长方体 ABCD-A1B1C1D1 中，AB = 2，AD = 1，AA1 = 3。以 A 为原点，AB、AD、AA1 所在直线分别为 x 轴、y 轴、z 轴建立空间直角坐标系。(1) 写出点 A 与点 C1 的坐标；(2) 求 |AC1|；(3) 求直线 AC1 与平面 ABCD 所成角的正弦值。",
+     "answer": "(1) A(0, 0, 0)，C1(2, 1, 3)；(2) √14；(3) 3√14/14。",
+     "analysis": "点 C1 在三条棱方向上的投影长分别为 AB = 2、AD = 1、AA1 = 3，故 C1(2, 1, 3)，A 为原点。|AC1| = √(4 + 1 + 9) = √14。平面 ABCD 即 xOy 平面，其法向量为 (0, 0, 1)，直线 AC1 的方向向量为 (2, 1, 3)，则所成角的正弦等于 |3|/√14 = 3√14/14。",
+     "scoreRule": [
+      {
+       "desc": "写出 A、C1 的坐标",
+       "score": 3
+      },
+      {
+       "desc": "用距离公式求出 |AC1| = √14",
+       "score": 4
+      },
+      {
+       "desc": "取平面法向量 (0, 0, 1) 并求出线面角的正弦值",
+       "score": 5
+      }
+     ],
+     "itemId": "mbs_exam_x1_u03_q18"
+    },
+    {
+     "no": 19,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mbs_h162",
+      "mbs_h163"
+     ],
+     "stem": "在棱长为 2 的正方体 ABCD-A1B1C1D1 中，用向量的方法证明：直线 B1D1 与平面 C1BD 平行。",
+     "answer": "证明：以 A 为原点建系，B(2, 0, 0)、D(0, 2, 0)、C1(2, 2, 2)、B1(2, 0, 2)、D1(0, 2, 2)。平面 C1BD 的法向量可取 n = (1, 1, -1)，而 B1D1 = (-2, 2, 0)，n·B1D1 = -2 + 2 + 0 = 0，故 B1D1 的方向向量与平面法向量垂直。又点 B1 满足 x + y - z = 0 ≠ 2，不在平面 C1BD 内，所以直线 B1D1 ∥ 平面 C1BD。",
+     "analysis": "建系后先求平面 C1BD 的法向量：BD = (-2, 2, 0)，BC1 = (0, 2, 2)，设法向量 n = (x, y, z)，由 -2x + 2y = 0 与 2y + 2z = 0 取 x = 1 得 n = (1, 1, -1)。再写出 B1D1 = (-2, 2, 0)，数量积为 0，说明方向向量与法向量垂直，即直线与平面平行或直线在平面内。最后必须检验 B1 不在平面内，才能断定是平行而不是在平面内，这一步不能省。",
+     "scoreRule": [
+      {
+       "desc": "建立空间直角坐标系并写出相关点的坐标",
+       "score": 4
+      },
+      {
+       "desc": "求出平面 C1BD 的一个法向量 n = (1, 1, -1)",
+       "score": 4
+      },
+      {
+       "desc": "由 n·B1D1 = 0 说明方向与法向量垂直，并检验 B1 不在平面内，得证",
+       "score": 4
+      }
+     ],
+     "itemId": "mbs_exam_x1_u03_q19"
+    },
+    {
+     "no": 20,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mbs_h163"
+     ],
+     "stem": "在棱长为 1 的正方体 ABCD-A1B1C1D1 中：(1) 求异面直线 A1B 与 AD1 所成角的大小；(2) 求直线 A1B 与平面 BB1D1D 所成角的大小。",
+     "answer": "(1) 60°；(2) 30°。",
+     "analysis": "以 A 为原点，AB、AD、AA1 为 x、y、z 轴建系，A1(0, 0, 1)、B(1, 0, 0)、D1(0, 1, 1)。A1B = (1, 0, -1)，AD1 = (0, 1, 1)，数量积为 -1，模都为 √2，夹角余弦 -1/2，取锐角得所成角 60°。平面 BB1D1D 的法向量可取 n = (1, 1, 0)，直线 A1B 的方向向量与它的夹角正弦为 1/2，故线面角为 30°。",
+     "scoreRule": [
+      {
+       "desc": "建立坐标系并写出 A1、B、D1 的坐标与两个方向向量",
+       "score": 4
+      },
+      {
+       "desc": "求异面直线所成角为 60°",
+       "score": 4
+      },
+      {
+       "desc": "求平面 BB1D1D 的法向量并得线面角 30°",
+       "score": 4
+      }
+     ],
+     "itemId": "mbs_exam_x1_u03_q20"
+    },
+    {
+     "no": 21,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mbs_h164"
+     ],
+     "stem": "在棱长为 1 的正方体 ABCD-A1B1C1D1 中，求二面角 A1-BD-C1 的余弦值。",
+     "answer": "二面角 A1-BD-C1 的余弦值为 1/3。",
+     "analysis": "以 A 为原点建系，B(1, 0, 0)、D(0, 1, 0)、A1(0, 0, 1)、C1(1, 1, 1)。平面 A1BD 内 BD = (-1, 1, 0)，BA1 = (-1, 0, 1)，法向量取 n1 = (1, 1, 1)；平面 C1BD 内 BD = (-1, 1, 0)，BC1 = (0, 1, 1)，法向量取 n2 = (1, 1, -1)。两法向量夹角余弦为 (1 + 1 - 1)/(3) = 1/3。由图形可知该二面角为锐角，故余弦值为 1/3。",
+     "scoreRule": [
+      {
+       "desc": "建立坐标系并写出各顶点坐标",
+       "score": 4
+      },
+      {
+       "desc": "分别求出两个半平面的法向量 n1 = (1, 1, 1)、n2 = (1, 1, -1)",
+       "score": 4
+      },
+      {
+       "desc": "由二面角为锐角确定余弦值为 1/3",
+       "score": 4
+      }
+     ],
+     "itemId": "mbs_exam_x1_u03_q21"
+    },
+    {
+     "no": 22,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mbs_u132",
+      "mbs_h164"
+     ],
+     "stem": "在直三棱柱 ABC-A1B1C1 中，∠ACB = 90°，AC = BC = CC1 = 2。(1) 求直线 A1C 与平面 ABC 所成角的大小；(2) 求二面角 A1-BC-A 的余弦值。",
+     "answer": "(1) 45°；(2) √2/2。",
+     "analysis": "以 C 为原点，CA、CB、CC1 所在直线分别为 x、y、z 轴建系，则 A(2, 0, 0)、B(0, 2, 0)、A1(2, 0, 2)。(1) A1C = (-2, 0, -2)，平面 ABC 的法向量为 (0, 0, 1)，线面角的正弦为 |−2|/(2√2 × 1) = √2/2，故所成角为 45°，这与 A1C 在底面上的投影为 CA、且 CC1 = CA 的几何事实一致。(2) 平面 A1BC 的法向量可取 n = (1, 0, -1)，平面 ABC 的法向量为 (0, 0, 1)，两法向量夹角余弦为 1/√2，由图形知该二面角为锐角，余弦值为 √2/2。",
+     "scoreRule": [
+      {
+       "desc": "建立空间直角坐标系并写出 A、B、A1 的坐标",
+       "score": 3
+      },
+      {
+       "desc": "求 A1C 与平面 ABC 所成角为 45°",
+       "score": 4
+      },
+      {
+       "desc": "求两个半平面法向量并得二面角余弦值 √2/2",
+       "score": 5
+      }
+     ],
+     "itemId": "mbs_exam_x1_u03_q22"
+    }
+   ]
+  }
+ ]
+}

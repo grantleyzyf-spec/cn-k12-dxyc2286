@@ -1,0 +1,186 @@
+{
+ "units": [
+  {
+   "unit": {
+    "id": "mbs_u115",
+    "name": "平行四边形",
+    "subject": "math-bsd",
+    "domain": "图形与几何",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第六单元 平行四边形",
+    "level": "unit",
+    "type": "conceptual",
+    "description": "本单元围绕「平行四边形」展开，包含认识平行四边形、对边相等与对角相等、性质的应用、对角线互相平分 等 12 个课时，重在理清本单元的知识线索与前后联系，把零散的课时串成一条完整的思路。",
+    "mastery_criteria": [
+     "能说清「平行四边形」这一单元的核心方法与适用条件",
+     "能在本单元的典型题里独立完成至少八道并自查对错"
+    ],
+    "diagnostic_question": {
+     "question": "下列各题中，属于「平行四边形」这一单元核心方法的题目是（　）。",
+     "answer": "A"
+    },
+    "external": false,
+    "standards": [
+     {
+      "id": "mbs-2022:4.TX.07",
+      "confidence": "partial",
+      "quote": "理解平行四边形、矩形、菱形、正方形、梯形的概念，以及它们之间的关系",
+      "sourceLine": 823
+     }
+    ],
+    "tags": [
+     "单元上位点",
+     "图形与几何"
+    ],
+    "prerequisites": [],
+    "root_reason": "单元上位点，不设先修课时",
+    "verified": false,
+    "curriculumRef": "mbs-2022:4.TX.07"
+   },
+   "questions": [
+    {
+     "id": "mbs_q991231",
+     "type": "choice",
+     "difficulty": "basic",
+     "prompt": "关于平行四边形的性质，下列叙述正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行四边形的对角线相等且互相垂直"
+      },
+      {
+       "label": "B",
+       "text": "平行四边形的对边分别平行且相等"
+      },
+      {
+       "label": "C",
+       "text": "平行四边形的四个内角都是直角"
+      },
+      {
+       "label": "D",
+       "text": "平行四边形的对角线互相平分且相等"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "平行四边形的对角线相等且互相垂直"
+      },
+      {
+       "label": "B",
+       "text": "平行四边形的对边分别平行且相等"
+      },
+      {
+       "label": "C",
+       "text": "平行四边形的四个内角都是直角"
+      },
+      {
+       "label": "D",
+       "text": "平行四边形的对角线互相平分且相等"
+      }
+     ],
+     "answer": "B",
+     "explanation": "平行四边形的定义就要求两组对边分别平行，由平行可推出这两组对边分别相等，所以对边平行且相等是本单元最基本的性质。对角线相等、四角为直角属于矩形的特征，对角线垂直属于菱形的特征，都不是一般平行四边形必然具备的。",
+     "topicId": "mbs_u115",
+     "topicIds": [
+      "mbs_u115"
+     ]
+    },
+    {
+     "id": "mbs_q991232",
+     "type": "choice",
+     "difficulty": "standard",
+     "prompt": "在四边形 ABCD 中，已知 AB 平行于 CD，再补充下列哪一个条件后，仍然不能判定它是平行四边形（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "AB = CD"
+      },
+      {
+       "label": "B",
+       "text": "AD 平行于 BC"
+      },
+      {
+       "label": "C",
+       "text": "AD = BC"
+      },
+      {
+       "label": "D",
+       "text": "AB = CD 且 AD = BC"
+      }
+     ],
+     "choices": [
+      {
+       "label": "A",
+       "text": "AB = CD"
+      },
+      {
+       "label": "B",
+       "text": "AD 平行于 BC"
+      },
+      {
+       "label": "C",
+       "text": "AD = BC"
+      },
+      {
+       "label": "D",
+       "text": "AB = CD 且 AD = BC"
+      }
+     ],
+     "answer": "C",
+     "explanation": "已有一组对边平行，若再加这组对边相等，或另一组对边平行，或两组对边分别相等，都能判定为平行四边形。只添另一组对边相等时，等腰梯形就满足 AB 平行于 CD 且 AD = BC，却只有一组对边平行，所以这个条件推不出平行四边形。",
+     "topicId": "mbs_u115",
+     "topicIds": [
+      "mbs_u115"
+     ]
+    },
+    {
+     "id": "mbs_q991233",
+     "type": "fill",
+     "difficulty": "standard",
+     "prompt": "在平行四边形 ABCD 中，角 A 的度数比角 B 的 2 倍少 30 度，则角 C 的度数是多少度？填数字。",
+     "choices": [],
+     "answer": "110",
+     "explanation": "平行四边形相邻两角互补，所以角 A 加角 B 等于 180 度。设角 B 为 x 度，则角 A 为 2x 减 30 度，代入得 3x 减 30 等于 180，解得 x 为 70，角 A 为 110 度。平行四边形对角相等，故角 C 等于角 A，也是 110 度。",
+     "topicId": "mbs_u115",
+     "topicIds": [
+      "mbs_u115"
+     ]
+    },
+    {
+     "id": "mbs_q991234",
+     "type": "numeric",
+     "difficulty": "standard",
+     "prompt": "在平行四边形 ABCD 中，对角线 AC 与 BD 相交于点 O，点 E 是边 AD 的中点，若 AB = 10，则线段 OE 的长是多少？",
+     "choices": [],
+     "answer": "5",
+     "verify": "10//2",
+     "explanation": "平行四边形的对角线互相平分，所以点 O 是 BD 的中点。又已知点 E 是 AD 的中点，于是在三角形 ABD 中，OE 连接两边的中点，是中位线，长度等于第三边 AB 的一半，即 10 除以 2 得 5。",
+     "topicId": "mbs_u115",
+     "topicIds": [
+      "mbs_u115"
+     ]
+    },
+    {
+     "id": "mbs_q991235",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "prompt": "在平行四边形 ABCD 中，点 E 在边 BC 上，点 F 在边 AD 上，且 BE = DF。判断四边形 AECF 的形状，并说明理由。",
+     "choices": [],
+     "answer": "四边形 AECF 是平行四边形，因为 AF 与 CE 平行且相等。",
+     "explanation": "平行四边形对边相等且平行，故 AD 等于 BC 且 AD 平行于 BC，也就是 AF 与 CE 落在两条平行线上。由 BE 等于 DF 可得 AF 等于 AD 减 DF，CE 等于 BC 减 BE，两式相减的差相等，所以 AF 等于 CE。一组对边平行且相等，四边形 AECF 就是平行四边形。",
+     "keypoints": [
+      "由平行四边形 ABCD 得 AD 等于 BC 且 AD 平行于 BC，即 AF 与 CE 平行",
+      "用 BE = DF 把 AF = AD − DF 与 CE = BC − BE 化为 AF = CE",
+      "对边平行且相等，判定 AECF 为平行四边形"
+     ],
+     "topicId": "mbs_u115",
+     "topicIds": [
+      "mbs_u115"
+     ]
+    }
+   ]
+  }
+ ]
+}

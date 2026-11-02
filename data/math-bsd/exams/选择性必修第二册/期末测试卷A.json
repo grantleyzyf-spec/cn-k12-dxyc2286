@@ -1,0 +1,648 @@
+{
+  "book": "选择性必修第二册",
+  "kind": "fin",
+  "term": "上册",
+  "grade": 12,
+  "stage": "高中",
+  "subject": "math-bsd",
+  "paper": "期末测试卷A",
+  "duration": 120,
+  "fullScore": 150,
+  "scope": [
+    "选择性必修第二册 第一章 数列",
+    "选择性必修第二册 第二章 导数及其应用"
+  ],
+  "topicIds": [
+    "mbs_u137",
+    "mbs_u138"
+  ],
+  "examId": "mbs_exam_x2_fin_a",
+  "sections": [
+    {
+      "title": "一、单选题（本题共 8 小题，每小题 5 分，共 40 分）",
+      "rule": "每小题 5 分，共 40 分",
+      "items": [
+        {
+          "no": 1,
+          "type": "choice",
+          "score": 5,
+          "difficulty": "basic",
+          "stem": "某物体做直线运动，其位移 s（单位：m）与时间 t（单位：s）满足 s = t² + 3t，则它在 t = 2 s 时的瞬时速度为",
+          "options": [
+            {
+              "label": "A",
+              "text": "4 m/s"
+            },
+            {
+              "label": "B",
+              "text": "7 m/s"
+            },
+            {
+              "label": "C",
+              "text": "9 m/s"
+            },
+            {
+              "label": "D",
+              "text": "10 m/s"
+            }
+          ],
+          "answer": "B",
+          "analysis": "瞬时速度是位移对时间的导数在 t = 2 处的值：s′ = 2t + 3，代入得 2×2 + 3 = 7，即 7 m/s，所以选 B。",
+          "topicIds": [
+            "mbs_h212",
+            "mbs_h213"
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q01"
+        },
+        {
+          "no": 2,
+          "type": "choice",
+          "score": 5,
+          "difficulty": "standard",
+          "stem": "已知数列 {aₙ} 的前 n 项和 Sₙ = 2n² + n，则该数列的第 10 项 a₁₀ 等于",
+          "options": [
+            {
+              "label": "A",
+              "text": "38"
+            },
+            {
+              "label": "B",
+              "text": "39"
+            },
+            {
+              "label": "C",
+              "text": "40"
+            },
+            {
+              "label": "D",
+              "text": "41"
+            }
+          ],
+          "answer": "B",
+          "analysis": "n ≥ 2 时 aₙ = Sₙ - Sₙ₋₁ = 2n² + n - [2(n - 1)² + (n - 1)] = 4n - 1，n = 1 时 a₁ = S₁ = 3 也符合，故 aₙ = 4n - 1，a₁₀ = 39，选 B。",
+          "topicIds": [
+            "mbs_h202",
+            "mbs_h205"
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q02"
+        },
+        {
+          "no": 3,
+          "type": "choice",
+          "score": 5,
+          "difficulty": "standard",
+          "stem": "曲线 y = x³ 在点 (1,1) 处的切线方程是",
+          "options": [
+            {
+              "label": "A",
+              "text": "2x - y - 1 = 0"
+            },
+            {
+              "label": "B",
+              "text": "3x + y - 4 = 0"
+            },
+            {
+              "label": "C",
+              "text": "3x - y - 2 = 0"
+            },
+            {
+              "label": "D",
+              "text": "x + 3y - 4 = 0"
+            }
+          ],
+          "answer": "C",
+          "analysis": "由 y′ = 3x² 得切线斜率 k = 3；由点斜式 y - 1 = 3(x - 1) 化简得 3x - y - 2 = 0，所以选 C。",
+          "topicIds": [
+            "mbs_h214"
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q03"
+        },
+        {
+          "no": 4,
+          "type": "choice",
+          "score": 5,
+          "difficulty": "standard",
+          "stem": "在各项均为正数的等比数列 {aₙ} 中，a₂ = 2，a₈ = 32，则 a₅ 等于",
+          "options": [
+            {
+              "label": "A",
+              "text": "4"
+            },
+            {
+              "label": "B",
+              "text": "6"
+            },
+            {
+              "label": "C",
+              "text": "10"
+            },
+            {
+              "label": "D",
+              "text": "8"
+            }
+          ],
+          "answer": "D",
+          "analysis": "a₅ 是 a₂ 与 a₈ 的等比中项，a₅² = a₂a₈ = 64，又各项为正，故 a₅ = 8，选 D。",
+          "topicIds": [
+            "mbs_h209"
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q04"
+        },
+        {
+          "no": 5,
+          "type": "choice",
+          "score": 5,
+          "difficulty": "standard",
+          "stem": "函数 f(x) = x³ - 12x 的单调递减区间是",
+          "options": [
+            {
+              "label": "A",
+              "text": "(-2,2)"
+            },
+            {
+              "label": "B",
+              "text": "(2,+∞)"
+            },
+            {
+              "label": "C",
+              "text": "(-∞,-2)"
+            },
+            {
+              "label": "D",
+              "text": "(-∞,-2) 与 (2,+∞)"
+            }
+          ],
+          "answer": "A",
+          "analysis": "f′(x) = 3x² - 12 = 3(x + 2)(x - 2)，当 -2 < x < 2 时 f′(x) < 0，故递减区间是 (-2,2)，选 A。",
+          "topicIds": [
+            "mbs_h218"
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q05"
+        },
+        {
+          "no": 6,
+          "type": "choice",
+          "score": 5,
+          "difficulty": "standard",
+          "stem": "1/(1×3) + 1/(3×5) + … + 1/(19×21) 的值为",
+          "options": [
+            {
+              "label": "A",
+              "text": "9/21"
+            },
+            {
+              "label": "B",
+              "text": "10/21"
+            },
+            {
+              "label": "C",
+              "text": "20/21"
+            },
+            {
+              "label": "D",
+              "text": "11/21"
+            }
+          ],
+          "answer": "B",
+          "analysis": "通项 1/((2k-1)(2k+1)) = (1/2)(1/(2k-1) - 1/(2k+1))，前 10 项相消得 (1/2)(1 - 1/21) = 10/21，选 B。",
+          "topicIds": [
+            "mbs_h205",
+            "mbs_h206"
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q06"
+        },
+        {
+          "no": 7,
+          "type": "choice",
+          "score": 5,
+          "difficulty": "standard",
+          "stem": "函数 f(x) = x³ - 6x² + 9x - 4 的极大值为",
+          "options": [
+            {
+              "label": "A",
+              "text": "-4"
+            },
+            {
+              "label": "B",
+              "text": "-1"
+            },
+            {
+              "label": "C",
+              "text": "0"
+            },
+            {
+              "label": "D",
+              "text": "4"
+            }
+          ],
+          "answer": "C",
+          "analysis": "f′(x) = 3x² - 12x + 9 = 3(x - 1)(x - 3)，x = 1 时导数由正变负，取极大值 f(1) = 1 - 6 + 9 - 4 = 0，选 C。",
+          "topicIds": [
+            "mbs_h219"
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q07"
+        },
+        {
+          "no": 8,
+          "type": "choice",
+          "score": 5,
+          "difficulty": "standard",
+          "stem": "用长为 20 m 的篱笆围成一个矩形菜园，则该菜园的最大面积为",
+          "options": [
+            {
+              "label": "A",
+              "text": "16 m²"
+            },
+            {
+              "label": "B",
+              "text": "20 m²"
+            },
+            {
+              "label": "C",
+              "text": "24 m²"
+            },
+            {
+              "label": "D",
+              "text": "25 m²"
+            }
+          ],
+          "answer": "D",
+          "analysis": "设矩形一边为 x m，则另一边为 (10 - x) m，面积 S = x(10 - x) = -(x - 5)² + 25，x = 5 时取最大值 25 m²，选 D。",
+          "topicIds": [
+            "mbs_h221"
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q08"
+        }
+      ]
+    },
+    {
+      "title": "二、多选题（本题共 4 小题，每小题 5 分，共 20 分）",
+      "rule": "每题 5 分，全部选对得 5 分，部分选对得 3 分，共 20 分",
+      "items": [
+        {
+          "no": 9,
+          "type": "multi",
+          "score": 5,
+          "difficulty": "standard",
+          "stem": "下列各函数的求导运算中，正确的是",
+          "options": [
+            {
+              "label": "A",
+              "text": "(x³ - 2x)′ = 3x² - 2"
+            },
+            {
+              "label": "B",
+              "text": "(1/x)′ = -1/x²"
+            },
+            {
+              "label": "C",
+              "text": "((2x + 1)³)′ = 6(2x + 1)²"
+            },
+            {
+              "label": "D",
+              "text": "(√x)′ = 2√x"
+            }
+          ],
+          "answer": "ABC",
+          "analysis": "A 用和差法则逐项求导正确；B 由幂函数公式 (x 的 -1 次方)′ = -x 的 -2 次方 = -1/x²，正确；C 是复合函数，外层导数为 3(2x + 1)²，内层导数为 2，故结果为 6(2x + 1)²，正确；D 中 (√x)′ = 1/(2√x)，漏掉了分母，错误。答案 ABC。",
+          "topicIds": [
+            "mbs_h215",
+            "mbs_h216",
+            "mbs_h217"
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q09"
+        },
+        {
+          "no": 10,
+          "type": "multi",
+          "score": 5,
+          "difficulty": "standard",
+          "stem": "等差数列 {aₙ} 中，下列结论正确的是",
+          "options": [
+            {
+              "label": "A",
+              "text": "a₁ + a₉ = a₃ + a₇"
+            },
+            {
+              "label": "B",
+              "text": "若 a₁ = 1，d = 2，则 S₅ = 25"
+            },
+            {
+              "label": "C",
+              "text": "若前 n 项和 Sₙ 存在最小值，则该数列的公差 d > 0"
+            },
+            {
+              "label": "D",
+              "text": "若前 n 项和 Sₙ = n²，则 a₅ = 25"
+            }
+          ],
+          "answer": "ABD",
+          "analysis": "A 由等差中项，两项下标和相等则两项和相等，正确；B 中 S₅ = 5×1 + 10×2 = 25，正确；C 中 Sₙ 是 n 的二次函数，开口向上（d > 0）才有最小值，正确；D 中 a₅ = S₅ - S₄ = 25 - 16 = 9，不是 25，错误。答案 ABD。",
+          "topicIds": [
+            "mbs_h204",
+            "mbs_h205",
+            "mbs_h206"
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q10"
+        },
+        {
+          "no": 11,
+          "type": "multi",
+          "score": 5,
+          "difficulty": "standard",
+          "stem": "已知函数 f(x) = x³ - 3x²，则下列结论正确的是",
+          "options": [
+            {
+              "label": "A",
+              "text": "f(x) 的极大值为 f(0) = 0"
+            },
+            {
+              "label": "B",
+              "text": "f(x) 的极小值为 f(2) = -2"
+            },
+            {
+              "label": "C",
+              "text": "f(x) 在区间 (0,2) 上单调递减"
+            },
+            {
+              "label": "D",
+              "text": "当 x > 2 时 f′(x) > 0，函数在此范围内递增"
+            }
+          ],
+          "answer": "ACD",
+          "analysis": "f′(x) = 3x² - 6x = 3x(x - 2)，x < 0 与 x > 2 时导数为正，0 < x < 2 时导数为负。故 x = 0 处取极大值 f(0) = 0，x = 2 处取极小值 f(2) = 8 - 12 = -4，(0,2) 上递减，x > 2 时导数为正、函数递增。所以 A、C、D 正确，B 中的极小值 -2 算错（应为 -4）。答案 ACD。",
+          "topicIds": [
+            "mbs_h218",
+            "mbs_h219"
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q11"
+        },
+        {
+          "no": 12,
+          "type": "multi",
+          "score": 5,
+          "difficulty": "standard",
+          "stem": "关于数列与导数在实际问题中的应用，下列说法正确的是",
+          "options": [
+            {
+              "label": "A",
+              "text": "用篱笆围矩形菜园时，篱笆越短，围成的面积一定越大"
+            },
+            {
+              "label": "B",
+              "text": "用长为 12 m 的篱笆靠墙围矩形菜园（只围三边），垂直于墙的边长为 3 m 时面积最大"
+            },
+            {
+              "label": "C",
+              "text": "按复利计息时，若本金与年利率不变，各年年末的本利和构成等比数列"
+            },
+            {
+              "label": "D",
+              "text": "按单利计息时，若本金与年利率不变，各年年末的本利和构成等差数列"
+            }
+          ],
+          "answer": "BCD",
+          "analysis": "A 中面积由边长决定，篱笆过短面积反而小，说法错误；B 中设垂直于墙的边为 x，则 S = x(12 - 2x) = -2(x - 3)² + 18，x = 3 时最大为 18 m²，正确；C 中复利本利和逐次乘以 (1 + 利率)，是等比数列，正确；D 中单利各年本利和逐次增加同一个利息额，是等差数列，正确。答案 BCD。",
+          "topicIds": [
+            "mbs_h221",
+            "mbs_h210"
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q12"
+        }
+      ]
+    },
+    {
+      "title": "三、填空题（本题共 4 小题，每小题 5 分，共 20 分）",
+      "rule": "每小题 5 分，共 20 分",
+      "items": [
+        {
+          "no": 13,
+          "type": "fill",
+          "score": 5,
+          "difficulty": "basic",
+          "stem": "曲线 y = x³ + x 在点 (1,2) 处的切线方程为 ____",
+          "answer": "y = 4x - 2",
+          "analysis": "y′ = 3x² + 1，在 x = 1 处切线斜率 k = 4；由点斜式 y - 2 = 4(x - 1) 化简得 y = 4x - 2。",
+          "topicIds": [
+            "mbs_h214"
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q13"
+        },
+        {
+          "no": 14,
+          "type": "fill",
+          "score": 5,
+          "difficulty": "standard",
+          "stem": "各项均为正数的等比数列 {aₙ} 中，a₁ = 1，a₁ + a₂ + a₃ = 7，则 a₄ = ____",
+          "answer": "8",
+          "analysis": "由 1 + q + q² = 7 得 q² + q - 6 = 0，q = 2 或 q = -3；各项为正故 q = 2，于是 a₄ = 1×2³ = 8。",
+          "topicIds": [
+            "mbs_h208",
+            "mbs_h207"
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q14"
+        },
+        {
+          "no": 15,
+          "type": "fill",
+          "score": 5,
+          "difficulty": "hard",
+          "stem": "当 x 在区间 [0,3] 上取值时，函数 f(x) = x³ - 3x + 2 取到最大值，此时 x 的值为 ____",
+          "answer": "3",
+          "analysis": "f′(x) = 3x² - 3，令其为 0 得 x = 1 或 x = -1，其中只有 x = 1 落在区间内；比较 f(0) = 2，f(1) = 0，f(3) = 20，最大值为 20，在右端点 x = 3 处取到。",
+          "topicIds": [
+            "mbs_h220"
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q15"
+        },
+        {
+          "no": 16,
+          "type": "fill",
+          "score": 5,
+          "difficulty": "standard",
+          "stem": "等差数列 {aₙ} 中，a₁ = 20，公差 d = -3，则其前 n 项和 Sₙ 的最大值为 ____",
+          "answer": "77",
+          "analysis": "由 aₙ = 20 - 3(n - 1) = 23 - 3n 知 n ≤ 7 时 aₙ > 0，n ≥ 8 时 aₙ < 0，故 Sₙ 在 n = 7 时最大，S₇ = 7(20 + 2)/2 = 77。",
+          "topicIds": [
+            "mbs_h205",
+            "mbs_h203"
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q16"
+        }
+      ]
+    },
+    {
+      "title": "四、解答题（本题共 6 小题，共 70 分）",
+      "rule": "第 17 题 10 分，第 18 至 22 题每题 12 分，共 70 分",
+      "items": [
+        {
+          "no": 17,
+          "type": "solve",
+          "score": 10,
+          "difficulty": "basic",
+          "stem": "已知函数 f(x) = x³ - 2x² + 1。（1）求 f′(x)；（2）求曲线 y = f(x) 在 x = 1 处的切线方程。",
+          "answer": "（1）f′(x) = 3x² - 4x；（2）y = -x + 1。",
+          "analysis": "（1）逐项求导得 f′(x) = 3x² - 4x。（2）f(1) = 1 - 2 + 1 = 0，f′(1) = 3 - 4 = -1，由点斜式 y - 0 = -1(x - 1)，化简得切线方程 y = -x + 1。",
+          "topicIds": [
+            "mbs_h215",
+            "mbs_h214"
+          ],
+          "scoreRule": [
+            {
+              "desc": "正确求出 f′(x) = 3x² - 4x",
+              "score": 4
+            },
+            {
+              "desc": "算出切点纵坐标 f(1) = 0 与切线斜率 f′(1) = -1",
+              "score": 3
+            },
+            {
+              "desc": "用点斜式写出并化简切线方程 y = -x + 1",
+              "score": 3
+            }
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q17"
+        },
+        {
+          "no": 18,
+          "type": "solve",
+          "score": 12,
+          "difficulty": "standard",
+          "stem": "已知等差数列 {aₙ} 的首项 a₁ = 1，公差 d = 2，令 bₙ = 2 的 aₙ 次方。（1）求 aₙ；（2）求数列 {bₙ} 的前 n 项和 Tₙ。",
+          "answer": "（1）aₙ = 2n - 1；（2）Tₙ = (2/3)(4ⁿ - 1)。",
+          "analysis": "（1）aₙ = 1 + 2(n - 1) = 2n - 1。（2）bₙ = 2 的 (2n - 1) 次方 = 2×4 的 n-1 次方，它是首项为 2、公比为 4 的等比数列，故 Tₙ = 2(4ⁿ - 1)/(4 - 1) = (2/3)(4ⁿ - 1)。",
+          "topicIds": [
+            "mbs_h204",
+            "mbs_h207"
+          ],
+          "scoreRule": [
+            {
+              "desc": "写出 aₙ = 2n - 1",
+              "score": 3
+            },
+            {
+              "desc": "把 bₙ 化为 2×4 的 n-1 次方，指出它是公比为 4 的等比数列",
+              "score": 5
+            },
+            {
+              "desc": "用求和公式得 Tₙ = (2/3)(4ⁿ - 1)",
+              "score": 4
+            }
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q18"
+        },
+        {
+          "no": 19,
+          "type": "solve",
+          "score": 12,
+          "difficulty": "standard",
+          "stem": "已知函数 f(x) = x³ - 3x² + 1。（1）求 f(x) 的单调区间；（2）求 f(x) 的极值。",
+          "answer": "（1）单调递增区间为 (-∞,0) 和 (2,+∞)，单调递减区间为 (0,2)；（2）极大值 f(0) = 1，极小值 f(2) = -3。",
+          "analysis": "（1）f′(x) = 3x² - 6x = 3x(x - 2)，令其为 0 得 x = 0 或 x = 2。当 x < 0 或 x > 2 时 f′(x) > 0，当 0 < x < 2 时 f′(x) < 0，故递增区间为 (-∞,0) 与 (2,+∞)，递减区间为 (0,2)。（2）由单调性知 x = 0 处取极大值 f(0) = 1，x = 2 处取极小值 f(2) = 8 - 12 + 1 = -3。",
+          "topicIds": [
+            "mbs_h218",
+            "mbs_h219"
+          ],
+          "scoreRule": [
+            {
+              "desc": "求导并解 f′(x) = 0 得 x = 0 与 x = 2",
+              "score": 4
+            },
+            {
+              "desc": "由导数符号写出递增区间 (-∞,0)、(2,+∞) 与递减区间 (0,2)",
+              "score": 4
+            },
+            {
+              "desc": "求出极大值 1 与极小值 -3 并指明极值点",
+              "score": 4
+            }
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q19"
+        },
+        {
+          "no": 20,
+          "type": "solve",
+          "score": 12,
+          "difficulty": "hard",
+          "stem": "已知数列 {aₙ} 的通项公式为 aₙ = n×2ⁿ。（1）写出 a₁ 与 a₂ 的值；（2）用错位相减法求它的前 n 项和 Sₙ。",
+          "answer": "（1）a₁ = 2，a₂ = 8；（2）Sₙ = (n - 1)2ⁿ⁺¹ + 2。",
+          "analysis": "（1）a₁ = 1×2 = 2，a₂ = 2×4 = 8。（2）Sₙ = 1×2 + 2×2² + … + n×2ⁿ，两边乘以 2 得 2Sₙ = 1×2² + 2×2³ + … + n×2ⁿ⁺¹，两式相减得 -Sₙ = 2 + 2² + … + 2ⁿ - n×2ⁿ⁺¹ = 2ⁿ⁺¹ - 2 - n×2ⁿ⁺¹，所以 Sₙ = (n - 1)2ⁿ⁺¹ + 2。（检验 n = 1 时 S₁ = 2，与 a₁ 一致。）",
+          "topicIds": [
+            "mbs_h208",
+            "mbs_h206"
+          ],
+          "scoreRule": [
+            {
+              "desc": "正确写出 a₁ = 2 与 a₂ = 8",
+              "score": 3
+            },
+            {
+              "desc": "写出 Sₙ 与 2Sₙ 的表达式并作差",
+              "score": 5
+            },
+            {
+              "desc": "化简得 Sₙ = (n - 1)2ⁿ⁺¹ + 2 并检验",
+              "score": 4
+            }
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q20"
+        },
+        {
+          "no": 21,
+          "type": "solve",
+          "score": 12,
+          "difficulty": "standard",
+          "stem": "用长为 12 m 的篱笆靠一面足够长的墙围成一个矩形菜园（篱笆只围另外三边）。（1）设垂直于墙的一边长为 x m，写出菜园面积 S 关于 x 的表达式及定义域；（2）求 x 为何值时面积最大，最大面积是多少。",
+          "answer": "（1）S = x(12 - 2x)，定义域为 0 < x < 6；（2）x = 3 m 时面积最大，最大面积为 18 m²。",
+          "analysis": "（1）垂直于墙的两边各长 x m，平行于墙的一边长为 (12 - 2x) m，故 S = x(12 - 2x)，由 x > 0 且 12 - 2x > 0 得 0 < x < 6。（2）S = -2x² + 12x = -2(x - 3)² + 18，当 x = 3 时 S 取最大值 18，且 x = 3 在定义域内，故垂直于墙的边长为 3 m 时面积最大，最大面积 18 m²。",
+          "topicIds": [
+            "mbs_h221"
+          ],
+          "scoreRule": [
+            {
+              "desc": "写出 S = x(12 - 2x) 及定义域 0 < x < 6",
+              "score": 4
+            },
+            {
+              "desc": "配方或求导得到 S 在 x = 3 处取得最大值",
+              "score": 5
+            },
+            {
+              "desc": "算出最大面积 18 m² 并说明取值在定义域内",
+              "score": 3
+            }
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q21"
+        },
+        {
+          "no": 22,
+          "type": "solve",
+          "score": 12,
+          "difficulty": "hard",
+          "stem": "已知函数 f(x) = x³ - 3x。（1）求 f(x) 的极大值与极小值；（2）若关于 x 的方程 f(x) = a 有三个不同的实根，求实数 a 的取值范围。",
+          "answer": "（1）极大值 f(-1) = 2，极小值 f(1) = -2；（2）-2 < a < 2。",
+          "analysis": "（1）f′(x) = 3x² - 3 = 3(x + 1)(x - 1)，令其为 0 得 x = ±1。x < -1 或 x > 1 时导数为正，-1 < x < 1 时导数为负，故 x = -1 处取极大值 f(-1) = -1 + 3 = 2，x = 1 处取极小值 f(1) = 1 - 3 = -2。（2）由图象形状，直线 y = a 与曲线 y = f(x) 有三个交点，当且仅当 a 介于极小值与极大值之间，即 -2 < a < 2。",
+          "topicIds": [
+            "mbs_h219",
+            "mbs_h220"
+          ],
+          "scoreRule": [
+            {
+              "desc": "求导并求出驻点 x = -1 与 x = 1",
+              "score": 4
+            },
+            {
+              "desc": "用导数符号判断并算出极大值 2、极小值 -2",
+              "score": 4
+            },
+            {
+              "desc": "由极值确定 a 的范围 -2 < a < 2",
+              "score": 4
+            }
+          ],
+          "itemId": "mbs_exam_x2_fin_a_q22"
+        }
+      ]
+    }
+  ]
+}

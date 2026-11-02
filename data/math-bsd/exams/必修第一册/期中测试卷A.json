@@ -1,0 +1,676 @@
+{
+ "book": "必修第一册",
+ "kind": "mid",
+ "term": "上册",
+ "grade": 10,
+ "stage": "高中",
+ "subject": "math-bsd",
+ "paper": "期中测试卷A",
+ "duration": 120,
+ "fullScore": 150,
+ "scope": [
+  "必修第一册 第三单元 指数运算与指数函数",
+  "必修第一册 第四单元 对数运算与对数函数"
+ ],
+ "topicIds": [
+  "mbs_u118",
+  "mbs_u119"
+ ],
+ "examId": "mbs_exam_b1_mid_a",
+ "sections": [
+  {
+   "title": "一、单选题（每小题 5 分，共 40 分）",
+   "rule": "每小题 5 分，共 40 分",
+   "items": [
+    {
+     "no": 1,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "stem": "计算 27^(1/3) × 4^(1/2) − 5^0 的值是",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ],
+     "answer": "C",
+     "analysis": "27^(1/3)=3，4^(1/2)=2，5^0=1，因此原式=3×2−1=5，故选 C。",
+     "topicIds": [
+      "mbs_h021",
+      "mbs_h022"
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q01"
+    },
+    {
+     "no": 2,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "stem": "化简 (a^2·b^(−1))^(−2) ÷ (a^(−1)·b^3) 的结果是（其中 a>0，b>0）",
+     "options": [
+      {
+       "label": "A",
+       "text": "a^3·b"
+      },
+      {
+       "label": "B",
+       "text": "a^3·b^(−1)"
+      },
+      {
+       "label": "C",
+       "text": "a^(−3)·b"
+      },
+      {
+       "label": "D",
+       "text": "a^(−3)·b^(−1)"
+      }
+     ],
+     "answer": "D",
+     "analysis": "(a^2·b^(−1))^(−2)=a^(−4)·b^2，再除以 a^(−1)·b^3 得 a^(−4+1)·b^(2−3)=a^(−3)·b^(−1)，故选 D。",
+     "topicIds": [
+      "mbs_h022",
+      "mbs_h023"
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q02"
+    },
+    {
+     "no": 3,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "stem": "形如 y = a^x（a>0 且 a≠1）的函数叫做指数函数。在下面四个函数中，哪一个是指数函数",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = (1/2)^x"
+      },
+      {
+       "label": "B",
+       "text": "y = x^2"
+      },
+      {
+       "label": "C",
+       "text": "y = 2·3^x"
+      },
+      {
+       "label": "D",
+       "text": "y = 2^(x+1)"
+      }
+     ],
+     "answer": "A",
+     "analysis": "指数函数必须形如 y=a^x（a>0 且 a≠1），系数为 1 且指数恰为 x。y=x^2 是幂函数，y=2·3^x 与 y=2^(x+1)=2·2^x 的系数都不是 1，只有 y=(1/2)^x 符合定义，故选 A。",
+     "topicIds": [
+      "mbs_h024"
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q03"
+    },
+    {
+     "no": 4,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "stem": "函数 y = 3^(x−1) + 2 的图象恒过定点",
+     "options": [
+      {
+       "label": "A",
+       "text": "(0, 3)"
+      },
+      {
+       "label": "B",
+       "text": "(1, 3)"
+      },
+      {
+       "label": "C",
+       "text": "(1, 2)"
+      },
+      {
+       "label": "D",
+       "text": "(0, 2)"
+      }
+     ],
+     "answer": "B",
+     "analysis": "令 x−1=0 得 x=1，此时 3^0=1，y=1+2=3，所以图象恒过定点 (1,3)，故选 B。",
+     "topicIds": [
+      "mbs_h025"
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q04"
+    },
+    {
+     "no": 5,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "stem": "已知 a = 0.8^(−0.1)，b = 1.2^(−0.1)，c = 1，则 a、b、c 的大小关系是",
+     "options": [
+      {
+       "label": "A",
+       "text": "a > c > b"
+      },
+      {
+       "label": "B",
+       "text": "a > b > c"
+      },
+      {
+       "label": "C",
+       "text": "c > a > b"
+      },
+      {
+       "label": "D",
+       "text": "b > c > a"
+      }
+     ],
+     "answer": "A",
+     "analysis": "因为 0<0.8<1，所以 0.8^0.1<1，其倒数 0.8^(−0.1)>1；又 1.2^0.1>1，其倒数 1.2^(−0.1)<1。于是 a>1=c>b，即 a>c>b，选 A。",
+     "topicIds": [
+      "mbs_h028"
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q05"
+    },
+    {
+     "no": 6,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "stem": "计算 log₂8 + log₃(1/9) 的值是",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "−5"
+      },
+      {
+       "label": "C",
+       "text": "1"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "C",
+     "analysis": "log₂8=log₂2^3=3，log₃(1/9)=log₃3^(−2)=−2，两式相加得 3+(−2)=1，故选 C。",
+     "topicIds": [
+      "mbs_h029",
+      "mbs_h030"
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q06"
+    },
+    {
+     "no": 7,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "stem": "计算 lg5·lg20 + (lg2)^2 的值是",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "0"
+      },
+      {
+       "label": "C",
+       "text": "lg2+1"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ],
+     "answer": "D",
+     "analysis": "lg20=lg2+1，lg5=1−lg2，于是原式=(1−lg2)(1+lg2)+(lg2)^2=1−(lg2)^2+(lg2)^2=1，故选 D。",
+     "topicIds": [
+      "mbs_h031",
+      "mbs_h032"
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q07"
+    },
+    {
+     "no": 8,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "stem": "函数 f(x) = log₃(2x − 4) 的定义域是",
+     "options": [
+      {
+       "label": "A",
+       "text": "[2, +∞)"
+      },
+      {
+       "label": "B",
+       "text": "(2, +∞)"
+      },
+      {
+       "label": "C",
+       "text": "(−∞, 2)"
+      },
+      {
+       "label": "D",
+       "text": "(−2, +∞)"
+      }
+     ],
+     "answer": "B",
+     "analysis": "对数的真数必须大于零，即 2x−4>0，解得 x>2，所以定义域为 (2,+∞)，故选 B。",
+     "topicIds": [
+      "mbs_h033"
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q08"
+    }
+   ]
+  },
+  {
+   "title": "二、多选题（每小题 5 分，共 20 分）",
+   "rule": "每小题 5 分，共 20 分；全部选对得 5 分，有选错的得 0 分",
+   "items": [
+    {
+     "no": 9,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "stem": "已知函数 f(x) = a^x（a>0 且 a≠1），则下列说法正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "若 a>1，则 f(x) 在 R 上单调递增"
+      },
+      {
+       "label": "B",
+       "text": "若 0<a<1，则 f(x) 的值域为 (0, +∞)"
+      },
+      {
+       "label": "C",
+       "text": "f(x) 的图象与 x 轴有交点"
+      },
+      {
+       "label": "D",
+       "text": "f(0) = 1"
+      }
+     ],
+     "answer": "ABD",
+     "analysis": "a>1 时 a^x 随 x 增大而增大，函数递增；0<a<1 时 a^x 恒大于 0，值域为 (0,+∞)；由 a^0=1 知图象过点 (0,1)，而 a^x>0 恒成立，图象与 x 轴没有交点。所以 A、B、D 正确，C 错误。",
+     "topicIds": [
+      "mbs_h024",
+      "mbs_h025",
+      "mbs_h026"
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q09"
+    },
+    {
+     "no": 10,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "stem": "下列各式中，一定成立的是（其中 a>0，b>0）",
+     "options": [
+      {
+       "label": "A",
+       "text": "a^m·a^n = a^(mn)"
+      },
+      {
+       "label": "B",
+       "text": "(a^m)^n = a^(mn)"
+      },
+      {
+       "label": "C",
+       "text": "a^m ÷ a^n = a^(m−n)"
+      },
+      {
+       "label": "D",
+       "text": "(ab)^n = a^n·b^n"
+      }
+     ],
+     "answer": "BCD",
+     "analysis": "同底数幂相乘指数相加，故 a^m·a^n=a^(m+n) 而不是 a^(mn)，A 错；幂的乘方指数相乘、同底数幂相除指数相减、积的乘方等于各因式乘方之积，B、C、D 都成立。",
+     "topicIds": [
+      "mbs_h022",
+      "mbs_h023"
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q10"
+    },
+    {
+     "no": 11,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "stem": "下列关于对数的说法正确的是（a>0 且 a≠1，M>0，N>0）",
+     "options": [
+      {
+       "label": "A",
+       "text": "log_a 1 = 0"
+      },
+      {
+       "label": "B",
+       "text": "log_a a = 1"
+      },
+      {
+       "label": "C",
+       "text": "log_a(MN) = log_a M + log_a N"
+      },
+      {
+       "label": "D",
+       "text": "log_a(M+N) = log_a M + log_a N"
+      }
+     ],
+     "answer": "ABC",
+     "analysis": "由 a^0=1 得 log_a1=0，由 a^1=a 得 log_a a=1；积的对数等于对数的和，所以 C 正确。对数没有「和的对数等于对数的和」这条性质，例如 lg(2+8)=1 而 lg2+lg8≠1，D 错。",
+     "topicIds": [
+      "mbs_h029",
+      "mbs_h030",
+      "mbs_h031"
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q11"
+    },
+    {
+     "no": 12,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "stem": "关于函数 f(x) = log₂x，下列说法正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "定义域为 (0, +∞)"
+      },
+      {
+       "label": "B",
+       "text": "值域为 R"
+      },
+      {
+       "label": "C",
+       "text": "在 (0, +∞) 上单调递减"
+      },
+      {
+       "label": "D",
+       "text": "若 f(m) = f(n)，则 m = n"
+      }
+     ],
+     "answer": "ABD",
+     "analysis": "真数需为正，定义域是 (0,+∞)；x 取遍 (0,+∞) 时 log₂x 取遍全体实数，值域为 R；底数 2>1，函数在 (0,+∞) 上单调递增而非递减，且单调函数一一对应，故 f(m)=f(n) 必有 m=n。所以 A、B、D 正确。",
+     "topicIds": [
+      "mbs_h034",
+      "mbs_h035"
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q12"
+    }
+   ]
+  },
+  {
+   "title": "三、填空题（每小题 5 分，共 20 分）",
+   "rule": "每小题 5 分，共 20 分",
+   "items": [
+    {
+     "no": 13,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "stem": "计算 (9/4)^(1/2) + (0.001)^(−1/3) 的值是",
+     "answer": "23/2",
+     "analysis": "(9/4)^(1/2)=3/2；又 0.001=10^(−3)，故 (0.001)^(−1/3)=10，所以原式=3/2+10=23/2。",
+     "topicIds": [
+      "mbs_h021",
+      "mbs_h022"
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q13"
+    },
+    {
+     "no": 14,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "stem": "已知 2^a = 3，2^b = 5，则 2^(2a−b) 的值是",
+     "answer": "9/5",
+     "analysis": "2^(2a−b)=(2^a)^2 ÷ 2^b=3^2÷5=9/5。",
+     "topicIds": [
+      "mbs_h022",
+      "mbs_h023"
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q14"
+    },
+    {
+     "no": 15,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "stem": "已知 log₂3 = a，则 log₂12 = ______（结果用 a 表示）",
+     "answer": "a+2",
+     "analysis": "log₂12=log₂(4×3)=log₂4+log₂3=2+a。",
+     "topicIds": [
+      "mbs_h031",
+      "mbs_h032"
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q15"
+    },
+    {
+     "no": 16,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "hard",
+     "stem": "函数 f(x) = log₂(x^2 − 2x − 3) 的单调递增区间是",
+     "answer": "(3, +∞)",
+     "analysis": "先由真数为正得 x^2−2x−3>0，解得 x<−1 或 x>3。内层 u=x^2−2x−3 在 (1,+∞) 上递增，外层 log₂u 也递增，两者复合后递增区间为 (3,+∞)。",
+     "topicIds": [
+      "mbs_h034",
+      "mbs_h035"
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q16"
+    }
+   ]
+  },
+  {
+   "title": "四、解答题（共 70 分）",
+   "rule": "第 17 题 10 分，第 18～22 题各 12 分，共 70 分",
+   "items": [
+    {
+     "no": 17,
+     "score": 10,
+     "type": "solve",
+     "difficulty": "standard",
+     "stem": "计算下列各式的值：（1）(0.064)^(−1/3) − (−7/8)^0 + 16^(3/4)；（2）(lg5)^2 + lg2·lg50。",
+     "answer": "（1）19/2；（2）1。",
+     "analysis": "(1) 因为 0.064=(0.4)^3，所以 (0.064)^(−1/3)=0.4^(−1)=5/2；16^(3/4)=(2^4)^(3/4)=2^3=8；非零数的零次幂为 1。故原式=5/2−1+8=19/2。(2) lg50=lg5+1，原式=(lg5)^2+lg2·lg5+lg2=lg5(lg5+lg2)+lg2=lg5+lg2=1。",
+     "topicIds": [
+      "mbs_h021",
+      "mbs_h022",
+      "mbs_h031"
+     ],
+     "scoreRule": [
+      {
+       "desc": "借助 0.064=(0.4)^3 求出 (0.064)^(−1/3)=5/2",
+       "score": 3
+      },
+      {
+       "desc": "算出 16^(3/4)=8，并得第（1）问结果 19/2",
+       "score": 3
+      },
+      {
+       "desc": "把 (lg5)^2+lg2·lg50 化为 lg5+lg2",
+       "score": 2
+      },
+      {
+       "desc": "利用 lg5+lg2=1 得第（2）问结果",
+       "score": 2
+      }
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q17"
+    },
+    {
+     "no": 18,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "stem": "已知函数 f(x) = (2^x − 1)/(2^x + 1)。（1）判断 f(x) 的奇偶性，并说明理由；（2）判断 f(x) 在 R 上的单调性，并用定义证明。",
+     "answer": "（1）f(x) 是奇函数；（2）f(x) 在 R 上单调递增。",
+     "analysis": "定义域为 R，关于原点对称。f(−x)=(2^(−x)−1)/(2^(−x)+1)=(1−2^x)/(1+2^x)=−f(x)，故 f(x) 为奇函数。又 f(x)=1−2/(2^x+1)，任取 x1<x2，则 2^x1<2^x2，得 2/(2^x1+1)>2/(2^x2+1)，于是 f(x1)<f(x2)，所以 f(x) 在 R 上单调递增。",
+     "topicIds": [
+      "mbs_h025",
+      "mbs_h026",
+      "mbs_h028"
+     ],
+     "scoreRule": [
+      {
+       "desc": "求出 f(−x) 并化简为 −f(x)",
+       "score": 4
+      },
+      {
+       "desc": "由定义域对称得出 f(x) 为奇函数",
+       "score": 2
+      },
+      {
+       "desc": "用定义作差（或化为 1−2/(2^x+1)）比较 f(x1) 与 f(x2)",
+       "score": 4
+      },
+      {
+       "desc": "得出 f(x) 在 R 上单调递增的结论",
+       "score": 2
+      }
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q18"
+    },
+    {
+     "no": 19,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "stem": "已知 log_a2 = m，log_a3 = n（a>0 且 a≠1）。（1）用 m、n 表示 log_a12；（2）若 m + n = 2，求 a 的值。",
+     "answer": "（1）2m+n；（2）a=√6。",
+     "analysis": "(1) log_a12=log_a(4×3)=log_a2^2+log_a3=2log_a2+log_a3=2m+n。(2) m+n=log_a2+log_a3=log_a6，由 log_a6=2 得 a^2=6，又 a>0，所以 a=√6。",
+     "topicIds": [
+      "mbs_h030",
+      "mbs_h031"
+     ],
+     "scoreRule": [
+      {
+       "desc": "把 log_a12 拆成 log_a4 与 log_a3 的和",
+       "score": 5
+      },
+      {
+       "desc": "化为 2m+n",
+       "score": 2
+      },
+      {
+       "desc": "由 m+n=2 得 log_a6=2，即 a^2=6",
+       "score": 3
+      },
+      {
+       "desc": "结合 a>0 得 a=√6",
+       "score": 2
+      }
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q19"
+    },
+    {
+     "no": 20,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "stem": "已知函数 f(x) = log_a(x + 1) − log_a(1 − x)（a>0 且 a≠1）。（1）求 f(x) 的定义域；（2）判断 f(x) 的奇偶性；（3）若 a>1，解不等式 f(x) > 0。",
+     "answer": "（1）(−1, 1)；（2）奇函数；（3）0 < x < 1。",
+     "analysis": "由 x+1>0 且 1−x>0 得 −1<x<1，即定义域为 (−1,1)，它关于原点对称。f(−x)=log_a(1−x)−log_a(1+x)=−f(x)，故 f(x) 为奇函数。当 a>1 时 f(x)>0 等价于 (x+1)/(1−x)>1，即 x+1>1−x，解得 x>0，与定义域取交集得 0<x<1。",
+     "topicIds": [
+      "mbs_h033",
+      "mbs_h034",
+      "mbs_h036"
+     ],
+     "scoreRule": [
+      {
+       "desc": "列真数大于零的两个不等式并求出定义域 (−1,1)",
+       "score": 3
+      },
+      {
+       "desc": "验证定义域关于原点对称",
+       "score": 1
+      },
+      {
+       "desc": "计算 f(−x)=−f(x)，判定为奇函数",
+       "score": 2
+      },
+      {
+       "desc": "a>1 时把 f(x)>0 化为 (x+1)/(1−x)>1 并解出 0<x<1",
+       "score": 6
+      }
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q20"
+    },
+    {
+     "no": 21,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "stem": "某工厂今年的产量为 a 万件，计划从明年起每年的产量都比上一年增长 20%。设经过 x 年后产量为 y 万件。（1）写出 y 关于 x 的函数关系式；（2）至少经过多少年产量可以翻一番？（参考数据：lg2≈0.301，lg1.2≈0.079）",
+     "answer": "（1）y = a·1.2^x（x∈N*）；（2）至少经过 4 年。",
+     "analysis": "每一年的产量都是上一年的 1.2 倍，故 y=a·1.2^x（x 为正整数）。产量翻一番即 y=2a，于是 1.2^x=2，两边取常用对数得 x=lg2/lg1.2≈0.301/0.079≈3.81。由于 x 取正整数，至少经过 4 年产量才能翻一番。",
+     "topicIds": [
+      "mbs_h028",
+      "mbs_h028"
+     ],
+     "scoreRule": [
+      {
+       "desc": "由逐年增长 20% 写出 y=a·1.2^x，并注明 x 取正整数",
+       "score": 5
+      },
+      {
+       "desc": "由 1.2^x=2 取对数得 x=lg2/lg1.2",
+       "score": 3
+      },
+      {
+       "desc": "代入数据估算 x≈3.81 并得出至少 4 年的结论",
+       "score": 4
+      }
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q21"
+    },
+    {
+     "no": 22,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "stem": "已知函数 f(x) = 2^x，g(x) = log₂x。（1）求 f(g(8)) 与 g(f(3)) 的值；（2）若 g(x) + g(x−2) = 3，求 x 的值；（3）写出 f(g(x))（x>0）的表达式，并说明它与 x 的关系。",
+     "answer": "（1）8 与 3；（2）x=4；（3）f(g(x))=x（x>0）。",
+     "analysis": "(1) g(8)=log₂8=3，故 f(g(8))=2^3=8；f(3)=2^3=8，故 g(f(3))=log₂8=3。(2) 由对数运算得 log₂[x(x−2)]=3，即 x(x−2)=8，整理得 x^2−2x−8=0，解得 x=4 或 x=−2；又需 x−2>0，故 x=4。(3) 由对数定义 a^(log_a x)=x，所以 f(g(x))=2^(log₂x)=x，即两函数互为反函数，复合后得到恒等。",
+     "topicIds": [
+      "mbs_h031",
+      "mbs_h032",
+      "mbs_h037"
+     ],
+     "scoreRule": [
+      {
+       "desc": "算得 g(8)=3、f(3)=8，进而得 f(g(8))=8 与 g(f(3))=3",
+       "score": 4
+      },
+      {
+       "desc": "把方程化为 x(x−2)=8 并解出 x=4 或 x=−2",
+       "score": 3
+      },
+      {
+       "desc": "舍去 x=−2 得 x=4",
+       "score": 2
+      },
+      {
+       "desc": "由定义说明 f(g(x))=x（x>0）",
+       "score": 3
+      }
+     ],
+     "itemId": "mbs_exam_b1_mid_a_q22"
+    }
+   ]
+  }
+ ]
+}

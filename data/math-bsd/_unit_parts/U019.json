@@ -1,0 +1,1144 @@
+{
+ "units": [
+  {
+   "unit": {
+    "id": "mbs_u110",
+    "name": "三角形的证明及其应用",
+    "subject": "math-bsd",
+    "domain": "图形与几何",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第一单元 三角形的证明及其应用",
+    "level": "unit",
+    "type": "conceptual",
+    "description": "本单元围绕「三角形的证明及其应用」展开，包含三角形内角和定理的证明、内角和定理的其他证法、全等三角形的判定AAS、三角形的外角及其推论 等 23 个课时，重在理清本单元的知识线索与前后联系，把零散的课时串成一条完整的思路。",
+    "mastery_criteria": [
+     "能说清「三角形的证明及其应用」这一单元的核心方法与适用条件",
+     "能在本单元的典型题里独立完成至少八道并自查对错"
+    ],
+    "diagnostic_question": {
+     "question": "下列各题中，属于「三角形的证明及其应用」这一单元核心方法的题目是（　）。",
+     "answer": "A"
+    },
+    "external": false,
+    "standards": [
+     {
+      "id": "mbs-2022:4.TX.11",
+      "confidence": "partial",
+      "quote": "知道证明的意义和证明的必要性",
+      "sourceLine": 846
+     }
+    ],
+    "tags": [
+     "单元上位点",
+     "图形与几何"
+    ],
+    "prerequisites": [],
+    "root_reason": "单元上位点，不设先修课时",
+    "verified": false,
+    "curriculumRef": "mbs-2022:4.TX.11"
+   },
+   "questions": [
+    {
+     "id": "mbs_q991206",
+     "topicId": "mbs_u110",
+     "topicIds": [
+      "mbs_u110"
+     ],
+     "prompt": "一个多边形的内角和等于 1080°，则这个多边形的边数是（　）。",
+     "question": "一个多边形的内角和等于 1080°，则这个多边形的边数是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "六"
+      },
+      {
+       "label": "B",
+       "text": "七"
+      },
+      {
+       "label": "C",
+       "text": "八"
+      },
+      {
+       "label": "D",
+       "text": "九"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "n 边形的内角和是 (n-2) 乘 180°，令 (n-2) 乘 180° 等于 1080°，得 n-2 等于 6，所以 n 等于 8。有人直接拿 1080 除以 180 得 6 就当成边数，漏掉了减 2 这一步。",
+     "choices": [
+      {
+       "label": "A",
+       "text": "六"
+      },
+      {
+       "label": "B",
+       "text": "七"
+      },
+      {
+       "label": "C",
+       "text": "八"
+      },
+      {
+       "label": "D",
+       "text": "九"
+      }
+     ]
+    },
+    {
+     "id": "mbs_q991207",
+     "topicId": "mbs_u110",
+     "topicIds": [
+      "mbs_u110"
+     ],
+     "prompt": "等腰三角形的两条边长分别是 4 和 9，那么这个三角形的周长是（　）。",
+     "question": "等腰三角形的两条边长分别是 4 和 9，那么这个三角形的周长是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "17"
+      },
+      {
+       "label": "B",
+       "text": "22"
+      },
+      {
+       "label": "C",
+       "text": "17 或 22"
+      },
+      {
+       "label": "D",
+       "text": "13"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "若腰为 4，则三边是 4、4、9，而 4 加 4 小于 9，围不成三角形，这种情形要舍去；若腰为 9，则三边是 9、9、4，周长 9 加 9 加 4 等于 22。本题的坑就在于必须先检验三边关系再相加。",
+     "choices": [
+      {
+       "label": "A",
+       "text": "17"
+      },
+      {
+       "label": "B",
+       "text": "22"
+      },
+      {
+       "label": "C",
+       "text": "17 或 22"
+      },
+      {
+       "label": "D",
+       "text": "13"
+      }
+     ]
+    },
+    {
+     "id": "mbs_q991208",
+     "topicId": "mbs_u110",
+     "topicIds": [
+      "mbs_u110"
+     ],
+     "prompt": "一个多边形的每一个外角都等于 24°，则这个多边形的边数是（　）。",
+     "question": "一个多边形的每一个外角都等于 24°，则这个多边形的边数是（　）。",
+     "options": [],
+     "answer": "15",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "任意多边形的外角和恒等于 360°，与边数无关。每个外角都是 24°，用 360 除以 24 得 15，所以这是十五边形。若误用内角和公式去算，会得到完全不同的错误结果。",
+     "choices": []
+    },
+    {
+     "id": "mbs_q991209",
+     "topicId": "mbs_u110",
+     "topicIds": [
+      "mbs_u110"
+     ],
+     "prompt": "在三角形 ABC 中，边 AB 的垂直平分线交 AB 于点 D、交边 BC 于点 E，已知 AC 等于 5，BC 等于 8，则三角形 AEC 的周长是多少？只填数字。",
+     "question": "在三角形 ABC 中，边 AB 的垂直平分线交 AB 于点 D、交边 BC 于点 E，已知 AC 等于 5，BC 等于 8，则三角形 AEC 的周长是多少？只填数字。",
+     "options": [],
+     "answer": "13",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "点 E 在 AB 的垂直平分线上，所以 EA 等于 EB。三角形 AEC 的周长是 AC 加 CE 加 AE，把 AE 换成 BE，就变成 AC 加 CE 加 BE，而 CE 加 BE 恰好是整条边 BC。于是周长等于 5 加 8 等于 13。",
+     "choices": [],
+     "verify": "5+8"
+    },
+    {
+     "id": "mbs_q991210",
+     "topicId": "mbs_u110",
+     "topicIds": [
+      "mbs_u110"
+     ],
+     "prompt": "请用反证法说明：一个三角形中不可能出现两个直角。写出第一步要假设什么，以及推出矛盾的关键一步。",
+     "question": "请用反证法说明：一个三角形中不可能出现两个直角。写出第一步要假设什么，以及推出矛盾的关键一步。",
+     "options": [],
+     "answer": "假设三角形中有两个角都是 90°，则这两角之和已是 180°，第三个角只能是 0°，与三角形内角和 180° 矛盾。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "反证法的套路是先否定结论、再推出与已知定理冲突的结论。结论的反面是「有两个直角」，把它当成条件使用，两角相加 180°，内角和已用尽，剩下的角无法为正，这既违反内角和定理也违反三角形的定义。",
+     "choices": [],
+     "keypoints": [
+      "先假设结论的反面成立，即有两个角都等于 90°",
+      "两个 90° 之和已达 180°，第三角只能为 0°",
+      "与三角形内角和为 180° 及三角形各角为正矛盾，故原结论成立"
+     ]
+    }
+   ]
+  },
+  {
+   "unit": {
+    "id": "mbs_u111",
+    "name": "不等式与不等式组",
+    "subject": "math-bsd",
+    "domain": "数与代数",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第二单元 不等式与不等式组",
+    "level": "unit",
+    "type": "conceptual",
+    "description": "本单元围绕「不等式与不等式组」展开，包含认识不等式、用不等式表示数量关系、不等式的解与解集、不等式的基本性质 等 14 个课时，重在理清本单元的知识线索与前后联系，把零散的课时串成一条完整的思路。",
+    "mastery_criteria": [
+     "能说清「不等式与不等式组」这一单元的核心方法与适用条件",
+     "能在本单元的典型题里独立完成至少八道并自查对错"
+    ],
+    "diagnostic_question": {
+     "question": "下列各题中，属于「不等式与不等式组」这一单元核心方法的题目是（　）。",
+     "answer": "A"
+    },
+    "external": false,
+    "standards": [
+     {
+      "id": "mbs-2022:4.SD.10",
+      "confidence": "partial",
+      "quote": "能解数字系数的一元一次不等式，并能在数轴上表示出解集",
+      "sourceLine": 688
+     }
+    ],
+    "tags": [
+     "单元上位点",
+     "数与代数"
+    ],
+    "prerequisites": [],
+    "root_reason": "单元上位点，不设先修课时",
+    "verified": false,
+    "curriculumRef": "mbs-2022:4.SD.10"
+   },
+   "questions": [
+    {
+     "id": "mbs_q991211",
+     "topicId": "mbs_u111",
+     "topicIds": [
+      "mbs_u111"
+     ],
+     "prompt": "已知 a 大于 b，则下列不等式一定成立的是（　）。",
+     "question": "已知 a 大于 b，则下列不等式一定成立的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 减 3 大于 b 减 3"
+      },
+      {
+       "label": "B",
+       "text": "负 2a 大于 负 2b"
+      },
+      {
+       "label": "C",
+       "text": "a 的平方大于 b 的平方"
+      },
+      {
+       "label": "D",
+       "text": "a 除以 c 大于 b 除以 c"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "不等式两边同加或同减同一个数，不等号方向不变，所以 A 恒成立。B 用负数相乘要变号，结论反了；C 在 a、b 一正一负时可能不成立；D 中 c 可能为零或负数，无法确定。",
+     "choices": [
+      {
+       "label": "A",
+       "text": "a 减 3 大于 b 减 3"
+      },
+      {
+       "label": "B",
+       "text": "负 2a 大于 负 2b"
+      },
+      {
+       "label": "C",
+       "text": "a 的平方大于 b 的平方"
+      },
+      {
+       "label": "D",
+       "text": "a 除以 c 大于 b 除以 c"
+      }
+     ]
+    },
+    {
+     "id": "mbs_q991212",
+     "topicId": "mbs_u111",
+     "topicIds": [
+      "mbs_u111"
+     ],
+     "prompt": "不等式 负 3x 加 1 大于 7 的解集是（　）。",
+     "question": "不等式 负 3x 加 1 大于 7 的解集是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 小于 负 2"
+      },
+      {
+       "label": "B",
+       "text": "x 大于 负 2"
+      },
+      {
+       "label": "C",
+       "text": "x 小于 2"
+      },
+      {
+       "label": "D",
+       "text": "x 大于 2"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先移项得负 3x 大于 6，两边同除以负 3 时不等号方向必须改变，得到 x 小于负 2。最常见的错误是只算数字忘记变号，得到 x 大于负 2 这个相反的解集。",
+     "choices": [
+      {
+       "label": "A",
+       "text": "x 小于 负 2"
+      },
+      {
+       "label": "B",
+       "text": "x 大于 负 2"
+      },
+      {
+       "label": "C",
+       "text": "x 小于 2"
+      },
+      {
+       "label": "D",
+       "text": "x 大于 2"
+      }
+     ]
+    },
+    {
+     "id": "mbs_q991213",
+     "topicId": "mbs_u111",
+     "topicIds": [
+      "mbs_u111"
+     ],
+     "prompt": "不等式 2x 减 5 小于 1 的正整数解中，最大的一个是（　）。",
+     "question": "不等式 2x 减 5 小于 1 的正整数解中，最大的一个是（　）。",
+     "options": [],
+     "answer": "2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "移项得 2x 小于 6，两边同除以正数 2，不等号不变，得 x 小于 3。小于 3 的正整数只有 1 和 2，所以最大的正整数解是 2；把 0 或负数也算进来就会答错。",
+     "choices": []
+    },
+    {
+     "id": "mbs_q991214",
+     "topicId": "mbs_u111",
+     "topicIds": [
+      "mbs_u111"
+     ],
+     "prompt": "某商品每件进价 120 元，标价 180 元。商店按标价打折出售，要求每件的利润率不低于 20%，那么最低可以打几折？只填数字，例如 8 表示八折。",
+     "question": "某商品每件进价 120 元，标价 180 元。商店按标价打折出售，要求每件的利润率不低于 20%，那么最低可以打几折？只填数字，例如 8 表示八折。",
+     "options": [],
+     "answer": "8",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "利润率不低于 20%，即售价不低于 120 乘 (1 加 0.2) 等于 144 元。设打 x 折，售价是 180 乘 x 除以 10，令它不小于 144，解得 x 不小于 8，所以最低打八折。用进价而不是标价做基准，是不等式应用的关键。",
+     "choices": [],
+     "verify": "120*12//180"
+    },
+    {
+     "id": "mbs_q991215",
+     "topicId": "mbs_u111",
+     "topicIds": [
+      "mbs_u111"
+     ],
+     "prompt": "购买标价合计 400 元的商品，甲店全场八折，乙店满 200 元后超出 200 元的部分打七折。去哪家更省钱？请写出两家的实际付款并说明比较的依据。",
+     "question": "购买标价合计 400 元的商品，甲店全场八折，乙店满 200 元后超出 200 元的部分打七折。去哪家更省钱？请写出两家的实际付款并说明比较的依据。",
+     "options": [],
+     "answer": "甲店付 320 元，乙店付 340 元，去甲店更省钱。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "甲店直接按八成计价，400 乘 0.8 等于 320。乙店要分段计算：前 200 元不打折，超出部分 200 元打七折为 140 元，合计 340 元。两数比较 320 小于 340，故甲店省 20 元。",
+     "choices": [],
+     "keypoints": [
+      "甲店：400 乘 0.8 等于 320 元",
+      "乙店：200 加 200 乘 0.7 等于 340 元",
+      "分段优惠不能整单打折，比较后甲店少付 20 元"
+     ]
+    }
+   ]
+  },
+  {
+   "unit": {
+    "id": "mbs_u116",
+    "name": "预备知识",
+    "subject": "math-bsd",
+    "domain": "数与代数",
+    "grade": 10,
+    "semester": "上",
+    "chapter": "必修第一册 第一单元 预备知识",
+    "level": "unit",
+    "type": "conceptual",
+    "description": "本单元围绕「预备知识」展开，包含集合的概念与表示（第一章 预备知识）、集合的概念与表示（第一章 预备知识）、集合的基本关系、集合的基本运算（第一章 预备知识） 等 10 个课时，重在理清本单元的知识线索与前后联系，把零散的课时串成一条完整的思路。",
+    "mastery_criteria": [
+     "能说清「预备知识」这一单元的核心方法与适用条件",
+     "能在本单元的典型题里独立完成至少八道并自查对错"
+    ],
+    "diagnostic_question": {
+     "question": "下列各题中，属于「预备知识」这一单元核心方法的题目是（　）。",
+     "answer": "A"
+    },
+    "external": false,
+    "standards": [
+     {
+      "id": "mbs-2017:H.SD.01",
+      "confidence": "partial",
+      "quote": "通过实例，了解集合的含义，理解元素与集合的属于关系",
+      "sourceLine": 501
+     }
+    ],
+    "tags": [
+     "单元上位点",
+     "数与代数"
+    ],
+    "prerequisites": [],
+    "root_reason": "单元上位点，不设先修课时",
+    "verified": false,
+    "curriculumRef": "mbs-2017:H.SD.01"
+   },
+   "questions": [
+    {
+     "id": "mbs_q991236",
+     "topicId": "mbs_u116",
+     "topicIds": [
+      "mbs_u116"
+     ],
+     "prompt": "已知集合 A 由 1、2、3 组成，集合 B 由 2、3、4 组成，则 A 与 B 的交集是（　）。",
+     "question": "已知集合 A 由 1、2、3 组成，集合 B 由 2、3、4 组成，则 A 与 B 的交集是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "由 2、3 组成的集合"
+      },
+      {
+       "label": "B",
+       "text": "由 1、4 组成的集合"
+      },
+      {
+       "label": "C",
+       "text": "由 1、2、3、4 组成的集合"
+      },
+      {
+       "label": "D",
+       "text": "空集"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "交集是同时属于两个集合的元素组成的集合，只有 2 和 3 同时出现在 A、B 中。把两个集合的元素全收进来得到的是并集，这是集合运算里最容易混的一处。",
+     "choices": [
+      {
+       "label": "A",
+       "text": "由 2、3 组成的集合"
+      },
+      {
+       "label": "B",
+       "text": "由 1、4 组成的集合"
+      },
+      {
+       "label": "C",
+       "text": "由 1、2、3、4 组成的集合"
+      },
+      {
+       "label": "D",
+       "text": "空集"
+      }
+     ]
+    },
+    {
+     "id": "mbs_q991237",
+     "topicId": "mbs_u116",
+     "topicIds": [
+      "mbs_u116"
+     ],
+     "prompt": "在实数范围内，条件 p 是 x 大于 1，条件 q 是 x 的平方大于 1，则 p 是 q 的（　）。",
+     "question": "在实数范围内，条件 p 是 x 大于 1，条件 q 是 x 的平方大于 1，则 p 是 q 的（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "充分不必要条件"
+      },
+      {
+       "label": "B",
+       "text": "必要不充分条件"
+      },
+      {
+       "label": "C",
+       "text": "充要条件"
+      },
+      {
+       "label": "D",
+       "text": "既不充分也不必要条件"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由 x 大于 1 一定推出 x 的平方大于 1，所以 p 能推出 q，是充分的。反过来由 x 的平方大于 1 只能得到 x 大于 1 或 x 小于负 1，推不出 x 大于 1，所以不必要。判断时要正反两个方向都试。",
+     "choices": [
+      {
+       "label": "A",
+       "text": "充分不必要条件"
+      },
+      {
+       "label": "B",
+       "text": "必要不充分条件"
+      },
+      {
+       "label": "C",
+       "text": "充要条件"
+      },
+      {
+       "label": "D",
+       "text": "既不充分也不必要条件"
+      }
+     ]
+    },
+    {
+     "id": "mbs_q991238",
+     "topicId": "mbs_u116",
+     "topicIds": [
+      "mbs_u116"
+     ],
+     "prompt": "不等式 x 的平方减 5x 加 6 小于 0 的解集是（　）。",
+     "question": "不等式 x 的平方减 5x 加 6 小于 0 的解集是（　）。",
+     "options": [],
+     "answer": "2 < x < 3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "左边分解为 (x 减 2)(x 减 3)，两根为 2 和 3，二次项系数为正，抛物线开口向上，小于 0 的部分夹在两根之间，所以解集是 2 小于 x 小于 3。写成 x 小于 2 或 x 大于 3 是把大于零的解集当成了答案。",
+     "choices": []
+    },
+    {
+     "id": "mbs_q991239",
+     "topicId": "mbs_u116",
+     "topicIds": [
+      "mbs_u116"
+     ],
+     "prompt": "已知 a 大于 0，b 大于 0，且 a 加 b 等于 6，则 a 与 b 的乘积的最大值是多少？只填数字。",
+     "question": "已知 a 大于 0，b 大于 0，且 a 加 b 等于 6，则 a 与 b 的乘积的最大值是多少？只填数字。",
+     "options": [],
+     "answer": "9",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由基本不等式，两正数的乘积不超过它们和的一半的平方，即 ab 不大于 (6 除以 2) 的平方等于 9，当且仅当 a 等于 b 等于 3 时取到。使用前必须先确认两项为正、和为定值，这两个条件缺一不可。",
+     "choices": [],
+     "verify": "6*6//4"
+    },
+    {
+     "id": "mbs_q991240",
+     "topicId": "mbs_u116",
+     "topicIds": [
+      "mbs_u116"
+     ],
+     "prompt": "判断命题「对任意正数 x，x 加 x 分之一大于等于 2」的真假，并写出等号成立的条件。",
+     "question": "判断命题「对任意正数 x，x 加 x 分之一大于等于 2」的真假，并写出等号成立的条件。",
+     "options": [],
+     "answer": "命题为真，当且仅当 x 等于 1 时等号成立。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "把 x 与 x 分之一看作两个正数，由基本不等式，它们的和大于等于二倍根号下二者之积，而积为 1，故和大于等于 2。等号成立要求两项相等，即 x 等于 x 分之一，结合 x 为正得 x 等于 1。",
+     "choices": [],
+     "keypoints": [
+      "两项 x 与 x 分之一都为正，满足基本不等式使用条件",
+      "乘积为定值 1，故和大于等于 2",
+      "取等条件为两项相等，解得 x 等于 1"
+     ]
+    }
+   ]
+  },
+  {
+   "unit": {
+    "id": "mbs_u117",
+    "name": "函数",
+    "subject": "math-bsd",
+    "domain": "数与代数",
+    "grade": 10,
+    "semester": "上",
+    "chapter": "必修第一册 第二单元 函数",
+    "level": "unit",
+    "type": "conceptual",
+    "description": "本单元围绕「函数」展开，包含生活中的变量关系、函数概念、函数的定义域与值域、函数的表示法（第二章 函数） 等 9 个课时，重在理清本单元的知识线索与前后联系，把零散的课时串成一条完整的思路。",
+    "mastery_criteria": [
+     "能说清「函数」这一单元的核心方法与适用条件",
+     "能在本单元的典型题里独立完成至少八道并自查对错"
+    ],
+    "diagnostic_question": {
+     "question": "下列各题中，属于「函数」这一单元核心方法的题目是（　）。",
+     "answer": "A"
+    },
+    "external": false,
+    "standards": [
+     {
+      "id": "mbs-2017:H.SD.04",
+      "confidence": "partial",
+      "quote": "用集合语言和对应关系刻画函数，建立完整的函数概念",
+      "sourceLine": 0
+     }
+    ],
+    "tags": [
+     "单元上位点",
+     "数与代数"
+    ],
+    "prerequisites": [],
+    "root_reason": "单元上位点，不设先修课时",
+    "verified": false,
+    "curriculumRef": "mbs-2017:H.SD.04"
+   },
+   "questions": [
+    {
+     "id": "mbs_q991241",
+     "topicId": "mbs_u117",
+     "topicIds": [
+      "mbs_u117"
+     ],
+     "prompt": "函数 f(x) 等于根号下 x 减 2 的定义域是（　）。",
+     "question": "函数 f(x) 等于根号下 x 减 2 的定义域是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "x 大于等于 2"
+      },
+      {
+       "label": "B",
+       "text": "x 大于 2"
+      },
+      {
+       "label": "C",
+       "text": "x 小于等于 2"
+      },
+      {
+       "label": "D",
+       "text": "全体实数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "偶次根号下的式子必须非负，所以 x 减 2 大于等于 0，得 x 大于等于 2。端点 2 能使根号内为 0，属于定义域，因此不能把等号丢掉写成 x 大于 2。",
+     "choices": [
+      {
+       "label": "A",
+       "text": "x 大于等于 2"
+      },
+      {
+       "label": "B",
+       "text": "x 大于 2"
+      },
+      {
+       "label": "C",
+       "text": "x 小于等于 2"
+      },
+      {
+       "label": "D",
+       "text": "全体实数"
+      }
+     ]
+    },
+    {
+     "id": "mbs_q991242",
+     "topicId": "mbs_u117",
+     "topicIds": [
+      "mbs_u117"
+     ],
+     "prompt": "下列函数中，既是奇函数又在区间 0 到正无穷上单调递减的是（　）。",
+     "question": "下列函数中，既是奇函数又在区间 0 到正无穷上单调递减的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "f(x) 等于 x 的立方"
+      },
+      {
+       "label": "B",
+       "text": "f(x) 等于 x 分之一"
+      },
+      {
+       "label": "C",
+       "text": "f(x) 等于 x 的平方"
+      },
+      {
+       "label": "D",
+       "text": "f(x) 等于负 x 的平方"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "x 分之一满足 f(负 x) 等于负 f(x)，是奇函数，且在正半轴上随 x 增大而减小。x 的立方是奇函数但递增；x 的平方与负 x 的平方都是偶函数，不满足奇函数这一条。",
+     "choices": [
+      {
+       "label": "A",
+       "text": "f(x) 等于 x 的立方"
+      },
+      {
+       "label": "B",
+       "text": "f(x) 等于 x 分之一"
+      },
+      {
+       "label": "C",
+       "text": "f(x) 等于 x 的平方"
+      },
+      {
+       "label": "D",
+       "text": "f(x) 等于负 x 的平方"
+      }
+     ]
+    },
+    {
+     "id": "mbs_q991243",
+     "topicId": "mbs_u117",
+     "topicIds": [
+      "mbs_u117"
+     ],
+     "prompt": "已知 f(x) 等于 2x 加 1，则 f(f(1)) 的值是（　）。",
+     "question": "已知 f(x) 等于 2x 加 1，则 f(f(1)) 的值是（　）。",
+     "options": [],
+     "answer": "7",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "先算内层 f(1) 等于 2 乘 1 加 1 等于 3，再把 3 代回 f 得 f(3) 等于 2 乘 3 加 1 等于 7。复合函数要由内向外逐层代入，直接把 1 代两次会得到 3 这个错误答案。",
+     "choices": []
+    },
+    {
+     "id": "mbs_q991244",
+     "topicId": "mbs_u117",
+     "topicIds": [
+      "mbs_u117"
+     ],
+     "prompt": "某商品每件售价为 x 元时，每天可卖出 60 减 x 件。若每天销售额为 y 元，则 y 的最大值是多少元？只填数字。",
+     "question": "某商品每件售价为 x 元时，每天可卖出 60 减 x 件。若每天销售额为 y 元，则 y 的最大值是多少元？只填数字。",
+     "options": [],
+     "answer": "900",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "销售额等于单价乘件数，即 y 等于 x 乘 (60 减 x)，这是开口向下的二次函数，在 x 等于 30 时取最大值，最大值为 30 乘 30 等于 900 元。注意定义域要取 0 到 60 之间，最值点必须落在定义域内。",
+     "choices": [],
+     "verify": "30*30"
+    },
+    {
+     "id": "mbs_q991245",
+     "topicId": "mbs_u117",
+     "topicIds": [
+      "mbs_u117"
+     ],
+     "prompt": "请说明如何用定义判断函数 f(x) 等于 x 加 x 分之一在区间 0 到 1 上的单调性，写出关键步骤与结论。",
+     "question": "请说明如何用定义判断函数 f(x) 等于 x 加 x 分之一在区间 0 到 1 上的单调性，写出关键步骤与结论。",
+     "options": [],
+     "answer": "在 0 到 1 上任取 x1 小于 x2，作差化简后符号为负，故函数在该区间上单调递减。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "定义法分四步：取值、作差、变形、定号。作差得 f(x2) 减 f(x1) 等于 (x2 减 x1) 乘 (x1x2 减 1) 除以 (x1x2)。因 0 小于 x1 小于 x2 小于 1，有 x1x2 小于 1，第二个因式为负，第一个因式为正，差为负，故递减。",
+     "choices": [],
+     "keypoints": [
+      "按取值、作差、变形、定号四步走",
+      "作差后因式分解为 (x2 减 x1)(x1x2 减 1) 除以 x1x2",
+      "由 x1x2 小于 1 判定差为负，得出单调递减"
+     ]
+    }
+   ]
+  },
+  {
+   "unit": {
+    "id": "mbs_u137",
+    "name": "数列",
+    "subject": "math-bsd",
+    "domain": "数与代数",
+    "grade": 13,
+    "semester": "上",
+    "chapter": "选择性必修第二册 第一单元 数列",
+    "level": "unit",
+    "type": "conceptual",
+    "description": "本单元围绕「数列」展开，包含数列的概念、数列的函数特性、等差数列的概念及其通项公式、等差数列的前n项和 等 10 个课时，重在理清本单元的知识线索与前后联系，把零散的课时串成一条完整的思路。",
+    "mastery_criteria": [
+     "能说清「数列」这一单元的核心方法与适用条件",
+     "能在本单元的典型题里独立完成至少八道并自查对错"
+    ],
+    "diagnostic_question": {
+     "question": "下列各题中，属于「数列」这一单元核心方法的题目是（　）。",
+     "answer": "A"
+    },
+    "external": false,
+    "standards": [
+     {
+      "id": "mbs-2017:H.SD.11",
+      "confidence": "partial",
+      "quote": "通过日常生活和数学中的实例，了解数列的概念和表示方法",
+      "sourceLine": 1243
+     }
+    ],
+    "tags": [
+     "单元上位点",
+     "数与代数"
+    ],
+    "prerequisites": [],
+    "root_reason": "单元上位点，不设先修课时",
+    "verified": false,
+    "curriculumRef": "mbs-2017:H.SD.11"
+   },
+   "questions": [
+    {
+     "id": "mbs_q991341",
+     "topicId": "mbs_u137",
+     "topicIds": [
+      "mbs_u137"
+     ],
+     "prompt": "等差数列的首项为 2，公差为 3，则它的第 10 项是（　）。",
+     "question": "等差数列的首项为 2，公差为 3，则它的第 10 项是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "27"
+      },
+      {
+       "label": "B",
+       "text": "29"
+      },
+      {
+       "label": "C",
+       "text": "32"
+      },
+      {
+       "label": "D",
+       "text": "35"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "通项公式为 a(n) 等于 a1 加 (n 减 1)d，代入得 2 加 9 乘 3 等于 29。若把项数当成 10 乘公差直接相加，会得到 32 这个错误结果，问题出在没有减 1。",
+     "choices": [
+      {
+       "label": "A",
+       "text": "27"
+      },
+      {
+       "label": "B",
+       "text": "29"
+      },
+      {
+       "label": "C",
+       "text": "32"
+      },
+      {
+       "label": "D",
+       "text": "35"
+      }
+     ]
+    },
+    {
+     "id": "mbs_q991342",
+     "topicId": "mbs_u137",
+     "topicIds": [
+      "mbs_u137"
+     ],
+     "prompt": "等比数列的首项为 3，公比为 2，则它的前 5 项和等于（　）。",
+     "question": "等比数列的首项为 3，公比为 2，则它的前 5 项和等于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "45"
+      },
+      {
+       "label": "B",
+       "text": "48"
+      },
+      {
+       "label": "C",
+       "text": "93"
+      },
+      {
+       "label": "D",
+       "text": "96"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "公比不等于 1 时，前 n 项和等于首项乘 (q 的 n 次方减 1) 除以 (q 减 1)，代入得 3 乘 31 等于 93。写成 3 乘 32 等于 96 的错误在于把 q 的 n 次方直接减 0，漏了减 1。",
+     "choices": [
+      {
+       "label": "A",
+       "text": "45"
+      },
+      {
+       "label": "B",
+       "text": "48"
+      },
+      {
+       "label": "C",
+       "text": "93"
+      },
+      {
+       "label": "D",
+       "text": "96"
+      }
+     ]
+    },
+    {
+     "id": "mbs_q991343",
+     "topicId": "mbs_u137",
+     "topicIds": [
+      "mbs_u137"
+     ],
+     "prompt": "在等差数列中，第 3 项等于 7，第 7 项等于 15，则第 5 项等于（　）。",
+     "question": "在等差数列中，第 3 项等于 7，第 7 项等于 15，则第 5 项等于（　）。",
+     "options": [],
+     "answer": "11",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "第 3 项与第 7 项相差 4 个公差，公差等于 (15 减 7) 除以 4 等于 2。第 5 项等于第 3 项加 2 个公差，即 7 加 4 等于 11。等差中项性质也给出同样结果：两端项的平均数就是中间项。",
+     "choices": []
+    },
+    {
+     "id": "mbs_q991344",
+     "topicId": "mbs_u137",
+     "topicIds": [
+      "mbs_u137"
+     ],
+     "prompt": "等差数列的首项为 3，公差为 4，若它的前 n 项和恰好等于 210，则 n 等于多少？只填数字。",
+     "question": "等差数列的首项为 3，公差为 4，若它的前 n 项和恰好等于 210，则 n 等于多少？只填数字。",
+     "options": [],
+     "answer": "10",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "前 n 项和等于 n 乘首项加二分之 n(n 减 1) 乘公差，代入得 n(3 加 2(n 减 1)) 等于 210，整理为 2n 的平方加 n 减 210 等于 0，解得 n 等于 10 或负的 10.5，项数须为正整数，故 n 等于 10。",
+     "choices": [],
+     "verify": "(-1+41)//4"
+    },
+    {
+     "id": "mbs_q991345",
+     "topicId": "mbs_u137",
+     "topicIds": [
+      "mbs_u137"
+     ],
+     "prompt": "已知数列满足第一项为 1，且每一项的后一项等于该项的 2 倍加 1。写出它的前四项，并说明通项公式是怎样由递推式推出来的。",
+     "question": "已知数列满足第一项为 1，且每一项的后一项等于该项的 2 倍加 1。写出它的前四项，并说明通项公式是怎样由递推式推出来的。",
+     "options": [],
+     "answer": "前四项是 1、3、7、15，通项公式为 a(n) 等于 2 的 n 次方减 1。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "由递推式依次得 1、3、7、15。观察每项加 1 后成为 2、4、8、16，即新数列是首项 2、公比 2 的等比数列。于是 a(n) 加 1 等于 2 的 n 次方，反解得 a(n) 等于 2 的 n 次方减 1。",
+     "choices": [],
+     "keypoints": [
+      "逐项代入得前四项 1、3、7、15",
+      "构造 a(n) 加 1，得到首项 2、公比 2 的等比数列",
+      "由 a(n) 加 1 等于 2 的 n 次方反解出通项"
+     ]
+    }
+   ]
+  },
+  {
+   "unit": {
+    "id": "mbs_u138",
+    "name": "导数及其应用",
+    "subject": "math-bsd",
+    "domain": "数与代数",
+    "grade": 13,
+    "semester": "上",
+    "chapter": "选择性必修第二册 第二单元 导数及其应用",
+    "level": "unit",
+    "type": "conceptual",
+    "description": "本单元围绕「导数及其应用」展开，包含平均变化率与瞬时变化率、导数的概念、导数的几何意义、导数的计算与导数公式表 等 10 个课时，重在理清本单元的知识线索与前后联系，把零散的课时串成一条完整的思路。",
+    "mastery_criteria": [
+     "能说清「导数及其应用」这一单元的核心方法与适用条件",
+     "能在本单元的典型题里独立完成至少八道并自查对错"
+    ],
+    "diagnostic_question": {
+     "question": "下列各题中，属于「导数及其应用」这一单元核心方法的题目是（　）。",
+     "answer": "A"
+    },
+    "external": false,
+    "standards": [
+     {
+      "id": "mbs-2017:H.SD.12",
+      "confidence": "partial",
+      "quote": "通过实例分析，经历由平均变化率过渡到瞬时变化率的过程",
+      "sourceLine": 1276
+     }
+    ],
+    "tags": [
+     "单元上位点",
+     "数与代数"
+    ],
+    "prerequisites": [],
+    "root_reason": "单元上位点，不设先修课时",
+    "verified": false,
+    "curriculumRef": "mbs-2017:H.SD.12"
+   },
+   "questions": [
+    {
+     "id": "mbs_q991346",
+     "topicId": "mbs_u138",
+     "topicIds": [
+      "mbs_u138"
+     ],
+     "prompt": "函数 f(x) 等于 x 的立方在 x 等于 1 处的导数值是（　）。",
+     "question": "函数 f(x) 等于 x 的立方在 x 等于 1 处的导数值是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由幂函数求导公式，x 的立方的导数是 3 倍 x 的平方，代入 x 等于 1 得 3。注意导数值是切线的斜率，不是函数值 1，两者不能混为一谈。",
+     "choices": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ]
+    },
+    {
+     "id": "mbs_q991347",
+     "topicId": "mbs_u138",
+     "topicIds": [
+      "mbs_u138"
+     ],
+     "prompt": "函数 f(x) 等于 x 的立方减 3x 的单调递增区间是（　）。",
+     "question": "函数 f(x) 等于 x 的立方减 3x 的单调递增区间是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "负 1 到 1"
+      },
+      {
+       "label": "B",
+       "text": "负无穷到负 1 以及 1 到正无穷"
+      },
+      {
+       "label": "C",
+       "text": "负无穷到负 1"
+      },
+      {
+       "label": "D",
+       "text": "1 到正无穷"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "求导得 3 倍 x 的平方减 3，令它大于 0 得 x 小于负 1 或 x 大于 1，这些区间上函数递增；在两个驻点之间导数为负，函数递减。只看一个区间会漏掉另一半。",
+     "choices": [
+      {
+       "label": "A",
+       "text": "负 1 到 1"
+      },
+      {
+       "label": "B",
+       "text": "负无穷到负 1 以及 1 到正无穷"
+      },
+      {
+       "label": "C",
+       "text": "负无穷到负 1"
+      },
+      {
+       "label": "D",
+       "text": "1 到正无穷"
+      }
+     ]
+    },
+    {
+     "id": "mbs_q991348",
+     "topicId": "mbs_u138",
+     "topicIds": [
+      "mbs_u138"
+     ],
+     "prompt": "曲线 y 等于 x 的平方在点 (1,1) 处的切线方程是（　）。",
+     "question": "曲线 y 等于 x 的平方在点 (1,1) 处的切线方程是（　）。",
+     "options": [],
+     "answer": "y = 2x - 1",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "导数 2x 在 x 等于 1 处为 2，即切线斜率为 2。用点斜式写出 y 减 1 等于 2 乘 (x 减 1)，整理得 y 等于 2x 减 1。只写斜率而漏掉经过的点，就会把切线当成过原点的直线。",
+     "choices": []
+    },
+    {
+     "id": "mbs_q991349",
+     "topicId": "mbs_u138",
+     "topicIds": [
+      "mbs_u138"
+     ],
+     "prompt": "函数 f(x) 等于 x 的立方减 3x 在闭区间 0 到 2 上的最大值是多少？只填数字。",
+     "question": "函数 f(x) 等于 x 的立方减 3x 在闭区间 0 到 2 上的最大值是多少？只填数字。",
+     "options": [],
+     "answer": "2",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "先求驻点 x 等于正负 1，区间内只有 x 等于 1，函数值为负 2。再算两个端点：f(0) 等于 0，f(2) 等于 8 减 6 等于 2。比较三者，最大值为 2。闭区间上求最值必须把端点值一起比较，只看极值会漏掉最大值。",
+     "choices": [],
+     "verify": "2**3-3*2"
+    },
+    {
+     "id": "mbs_q991350",
+     "topicId": "mbs_u138",
+     "topicIds": [
+      "mbs_u138"
+     ],
+     "prompt": "求函数 f(x) 等于 x 的立方减 3x 的极值，并说明为什么令导数为零的点还要看两侧导数的符号才能定极值。",
+     "question": "求函数 f(x) 等于 x 的立方减 3x 的极值，并说明为什么令导数为零的点还要看两侧导数的符号才能定极值。",
+     "options": [],
+     "answer": "x 等于负 1 处取极大值 2，x 等于 1 处取极小值负 2。",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "导数为 3 倍 x 的平方减 3，零点为正负 1。在负 1 左侧导数为正、右侧为负，函数先增后减，故为极大值，函数值 2；在 1 处左侧为负、右侧为正，先减后增，故为极小值，函数值负 2。导数为零只是候选，符号变化才决定极值类型。",
+     "choices": [],
+     "keypoints": [
+      "先求导并解出驻点 x 等于 1 与 x 等于负 1",
+      "驻点两侧导数由正变负取极大值 2，由负变正取极小值负 2",
+      "导数为零的点未必是极值点，必须检验两侧符号是否变化"
+     ]
+    }
+   ]
+  }
+ ]
+}

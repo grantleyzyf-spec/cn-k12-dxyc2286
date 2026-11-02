@@ -1,0 +1,700 @@
+{
+  "book": "必修第一册",
+  "kind": "unit",
+  "term": "上册",
+  "grade": 10,
+  "stage": "高中",
+  "subject": "math-bsd",
+  "paper": "必修第一册 第四单元 对数运算与对数函数 测试卷",
+  "duration": 120,
+  "fullScore": 150,
+  "scope": [
+    "必修第一册 第四单元 对数运算与对数函数"
+  ],
+  "topicIds": [
+    "mbs_u119"
+  ],
+  "examId": "mbs_exam_b1_u04",
+  "sections": [
+    {
+      "title": "一、单选题（本大题共 8 小题，每小题 5 分，共 40 分）",
+      "rule": "每小题 5 分，共 40 分",
+      "items": [
+        {
+          "no": 1,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "stem": "计算 log₂8＋log₃(1/9) 的结果是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "1"
+            },
+            {
+              "label": "B",
+              "text": "−1"
+            },
+            {
+              "label": "C",
+              "text": "5"
+            },
+            {
+              "label": "D",
+              "text": "−5"
+            }
+          ],
+          "answer": "A",
+          "analysis": "log₂8＝3；又 1/9＝3^(−2)，所以 log₃(1/9)＝−2。两式相加得 3−2＝1。选 A。",
+          "topicIds": [
+            "mbs_h030",
+            "mbs_h031"
+          ],
+          "itemId": "mbs_exam_b1_u04_q01"
+        },
+        {
+          "no": 2,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "stem": "把指数式 3^4＝81 改写成对数式，正确的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "log₈₁3＝4"
+            },
+            {
+              "label": "B",
+              "text": "log₃81＝4"
+            },
+            {
+              "label": "C",
+              "text": "log₄81＝3"
+            },
+            {
+              "label": "D",
+              "text": "log₃4＝81"
+            }
+          ],
+          "answer": "B",
+          "analysis": "指数式 a^b＝N 与对数式 log_a N＝b 等价，其中 a＝3、b＝4、N＝81，故写成 log₃81＝4。选 B。",
+          "topicIds": [
+            "mbs_h029"
+          ],
+          "itemId": "mbs_exam_b1_u04_q02"
+        },
+        {
+          "no": 3,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "stem": "函数 y＝log₂(x²−3x＋2) 的定义域是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "(1,2)"
+            },
+            {
+              "label": "B",
+              "text": "(−∞,1]"
+            },
+            {
+              "label": "C",
+              "text": "(−∞,1)∪(2,+∞)"
+            },
+            {
+              "label": "D",
+              "text": "(2,+∞)"
+            }
+          ],
+          "answer": "C",
+          "analysis": "真数必须为正，即 x²−3x＋2＞0，分解得 (x−1)(x−2)＞0，解得 x＜1 或 x＞2，定义域为 (−∞,1)∪(2,+∞)。选 C。",
+          "topicIds": [
+            "mbs_h033",
+            "mbs_h035"
+          ],
+          "itemId": "mbs_exam_b1_u04_q03"
+        },
+        {
+          "no": 4,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "stem": "设 a＝log₂3，b＝log₃2，c＝log₂(1/2)，则 a、b、c 的大小关系是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "a＞c＞b"
+            },
+            {
+              "label": "B",
+              "text": "b＞a＞c"
+            },
+            {
+              "label": "C",
+              "text": "c＞a＞b"
+            },
+            {
+              "label": "D",
+              "text": "a＞b＞c"
+            }
+          ],
+          "answer": "D",
+          "analysis": "c＝log₂(1/2)＝−1＜0；log₂3 介于 log₂2＝1 与 log₂4＝2 之间，故 a＞1；而 b＝log₃2 介于 log₃1＝0 与 log₃3＝1 之间，故 0＜b＜1。所以 a＞b＞c。选 D。",
+          "topicIds": [
+            "mbs_h035",
+            "mbs_h036"
+          ],
+          "itemId": "mbs_exam_b1_u04_q04"
+        },
+        {
+          "no": 5,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "stem": "已知 log₂3＝a，则 log₆8 用 a 表示为（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "3a/(1＋a)"
+            },
+            {
+              "label": "B",
+              "text": "(1＋a)/3"
+            },
+            {
+              "label": "C",
+              "text": "a/(1＋a)"
+            },
+            {
+              "label": "D",
+              "text": "3/(1＋a)"
+            }
+          ],
+          "answer": "D",
+          "analysis": "由换底公式，log₆8＝log₂8÷log₂6＝3÷(log₂2＋log₂3)＝3/(1＋a)。选 D。",
+          "topicIds": [
+            "mbs_h032",
+            "mbs_h031"
+          ],
+          "itemId": "mbs_exam_b1_u04_q05"
+        },
+        {
+          "no": 6,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "stem": "已知对数函数 f(x)＝log_a x（a＞0，a≠1）的图象经过点 (1/9,−2)，则 f(√3) 的值为（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "1/2"
+            },
+            {
+              "label": "B",
+              "text": "−1/2"
+            },
+            {
+              "label": "C",
+              "text": "2"
+            },
+            {
+              "label": "D",
+              "text": "3"
+            }
+          ],
+          "answer": "A",
+          "analysis": "由 log_a(1/9)＝−2 得 a^(−2)＝1/9，即 a²＝9，结合 a＞0 得 a＝3，所以 f(x)＝log₃x，f(√3)＝log₃3^(1/2)＝1/2。选 A。",
+          "topicIds": [
+            "mbs_h033",
+            "mbs_h034"
+          ],
+          "itemId": "mbs_exam_b1_u04_q06"
+        },
+        {
+          "no": 7,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "stem": "不等式 log₂(2x−1)＜log₂(x＋1) 的解集是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "(1/2,＋∞)"
+            },
+            {
+              "label": "B",
+              "text": "(1/2,2)"
+            },
+            {
+              "label": "C",
+              "text": "(1,2)"
+            },
+            {
+              "label": "D",
+              "text": "(−∞,2)"
+            }
+          ],
+          "answer": "B",
+          "analysis": "y＝log₂t 在 (0,+∞) 上递增，所以原不等式等价于 2x−1＜x＋1 且 2x−1＞0，解得 1/2＜x＜2，解集为 (1/2,2)。选 B。",
+          "topicIds": [
+            "mbs_h036",
+            "mbs_h035"
+          ],
+          "itemId": "mbs_exam_b1_u04_q07"
+        },
+        {
+          "no": 8,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "hard",
+          "stem": "设 a＝2^0.5，b＝log₂3，c＝log₃0.5，则 a、b、c 的大小关系是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "a＞b＞c"
+            },
+            {
+              "label": "B",
+              "text": "c＞b＞a"
+            },
+            {
+              "label": "C",
+              "text": "b＞a＞c"
+            },
+            {
+              "label": "D",
+              "text": "a＞c＞b"
+            }
+          ],
+          "answer": "C",
+          "analysis": "a＝√2≈1.414；因 2^1.5＝2√2≈2.828＜3，故 log₂3≈1.585＞a；c＝log₃0.5＜log₃1＝0。所以 b＞a＞c。选 C。",
+          "topicIds": [
+            "mbs_h035",
+            "mbs_h037"
+          ],
+          "itemId": "mbs_exam_b1_u04_q08"
+        }
+      ]
+    },
+    {
+      "title": "二、多选题（本大题共 4 小题，每小题 5 分，共 20 分）",
+      "rule": "每小题 5 分，共 20 分；少选得部分分，错选不得分",
+      "items": [
+        {
+          "no": 9,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "basic",
+          "stem": "下列对数运算中，结果正确的有（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "lg2＋lg5＝1"
+            },
+            {
+              "label": "B",
+              "text": "log₂6−log₂3＝1"
+            },
+            {
+              "label": "C",
+              "text": "log₃9＝2"
+            },
+            {
+              "label": "D",
+              "text": "log₂(3＋5)＝log₂3＋log₂5"
+            }
+          ],
+          "answer": "ABC",
+          "analysis": "A：lg2＋lg5＝lg10＝1，正确。B：log₂6−log₂3＝log₂2＝1，正确。C：log₃9＝log₃3²＝2，正确。D：对数没有「真数相加拆成对数相加」的性质，log₂8＝3，而 log₂3＋log₂5 显然不等于 3，D 错误。",
+          "topicIds": [
+            "mbs_h030",
+            "mbs_h031"
+          ],
+          "itemId": "mbs_exam_b1_u04_q09"
+        },
+        {
+          "no": 10,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "standard",
+          "stem": "关于函数 f(x)＝lg((1−x)/(1＋x))，下列说法正确的有（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "定义域为 (−1,1)"
+            },
+            {
+              "label": "B",
+              "text": "f(x) 是奇函数"
+            },
+            {
+              "label": "C",
+              "text": "f(x) 在 (−1,1) 上单调递增"
+            },
+            {
+              "label": "D",
+              "text": "f(0)＝0"
+            }
+          ],
+          "answer": "ABD",
+          "analysis": "真数为正要求 (1−x)/(1＋x)＞0，解得 −1＜x＜1，A 正确；f(−x)＝lg((1＋x)/(1−x))＝−lg((1−x)/(1＋x))＝−f(x)，为奇函数，B 正确；(1−x)/(1＋x)＝−1＋2/(1＋x) 在 (−1,1) 上递减，lg 递增，故 f 递减，C 错误；f(0)＝lg1＝0，D 正确。",
+          "topicIds": [
+            "mbs_h033",
+            "mbs_h036"
+          ],
+          "itemId": "mbs_exam_b1_u04_q10"
+        },
+        {
+          "no": 11,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "basic",
+          "stem": "关于函数 y＝log₂(x−1)，下列结论正确的有（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "定义域为 (1,＋∞)"
+            },
+            {
+              "label": "B",
+              "text": "值域为 R"
+            },
+            {
+              "label": "C",
+              "text": "图象经过点 (2,0)"
+            },
+            {
+              "label": "D",
+              "text": "在 (1,＋∞) 上单调递减"
+            }
+          ],
+          "answer": "ABC",
+          "analysis": "真数 x−1＞0，定义域为 (1,＋∞)，A 正确；对数函数的值域为 R，B 正确；x＝2 时 y＝log₂1＝0，图象过点 (2,0)，C 正确；底数 2＞1，函数在 (1,＋∞) 上递增，D 错误。",
+          "topicIds": [
+            "mbs_h033",
+            "mbs_h034",
+            "mbs_h035"
+          ],
+          "itemId": "mbs_exam_b1_u04_q11"
+        },
+        {
+          "no": 12,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "basic",
+          "stem": "下列函数中，在区间 (0,＋∞) 上为增函数的有（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "y＝log₂x"
+            },
+            {
+              "label": "B",
+              "text": "y＝log_(1/2)x"
+            },
+            {
+              "label": "C",
+              "text": "y＝2^x"
+            },
+            {
+              "label": "D",
+              "text": "y＝x²"
+            }
+          ],
+          "answer": "ACD",
+          "analysis": "y＝log₂x 底数 2＞1，在 (0,＋∞) 上递增，A 正确；y＝log_(1/2)x 底数小于 1，递减，B 错误；y＝2^x 递增，C 正确；y＝x² 在 (0,＋∞) 上递增，D 正确。",
+          "topicIds": [
+            "mbs_h035",
+            "mbs_h037"
+          ],
+          "itemId": "mbs_exam_b1_u04_q12"
+        }
+      ]
+    },
+    {
+      "title": "三、填空题（本大题共 4 小题，每小题 5 分，共 20 分）",
+      "rule": "每小题 5 分，共 20 分",
+      "items": [
+        {
+          "no": 13,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "stem": "计算 lg25＋lg4＋2^(log₂3) 的值为（　）。",
+          "answer": "5",
+          "analysis": "lg25＋lg4＝lg(25×4)＝lg100＝2；由对数恒等式 a^(log_a N)＝N 得 2^(log₂3)＝3。两部分相加得 2＋3＝5。",
+          "topicIds": [
+            "mbs_h030",
+            "mbs_h031"
+          ],
+          "itemId": "mbs_exam_b1_u04_q13"
+        },
+        {
+          "no": 14,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "standard",
+          "stem": "已知 log₃2＝a，log₃5＝b，则 log₃(12/25) 用 a、b 表示为（　）。",
+          "answer": "2a＋1−2b",
+          "analysis": "log₃(12/25)＝log₃12−log₃25＝log₃(4×3)−log₃5²＝(2log₃2＋1)−2log₃5＝2a＋1−2b。",
+          "topicIds": [
+            "mbs_h030",
+            "mbs_h032"
+          ],
+          "itemId": "mbs_exam_b1_u04_q14"
+        },
+        {
+          "no": 15,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "standard",
+          "stem": "函数 y＝log_(1/2)(x²−4x＋5) 的值域是（　）。",
+          "answer": "(−∞,0]",
+          "analysis": "真数 t＝x²−4x＋5＝(x−2)²＋1≥1，且能取到任意不小于 1 的值；y＝log_(1/2)t 关于 t 递减，t≥1 时 y≤log_(1/2)1＝0，故值域为 (−∞,0]。",
+          "topicIds": [
+            "mbs_h035",
+            "mbs_h036"
+          ],
+          "itemId": "mbs_exam_b1_u04_q15"
+        },
+        {
+          "no": 16,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "standard",
+          "stem": "方程 log₂x＋log₂(x−3)＝2 的解是 x＝（　）。",
+          "answer": "4",
+          "analysis": "先要求 x＞3。由对数运算性质得 log₂[x(x−3)]＝2，即 x(x−3)＝4，整理为 x²−3x−4＝0，解得 x＝4 或 x＝−1，舍去 −1，故 x＝4。",
+          "topicIds": [
+            "mbs_h030",
+            "mbs_h036"
+          ],
+          "itemId": "mbs_exam_b1_u04_q16"
+        }
+      ]
+    },
+    {
+      "title": "四、解答题（本大题共 6 小题，共 70 分）",
+      "rule": "共 70 分，解答应写出文字说明、证明过程或演算步骤",
+      "items": [
+        {
+          "no": 17,
+          "score": 10,
+          "type": "solve",
+          "difficulty": "standard",
+          "stem": "计算下列各式的值：\n（1）log₂(1/8)＋log_(1/3)9＋lg(1/100)；\n（2）3^(log₃7)＋2^(log₂5)。",
+          "answer": "（1）−7；（2）12。",
+          "analysis": "第（1）问把三个真数都写成底数的幂：1/8＝2^(−3)，9＝(1/3)^(−2)，1/100＝10^(−2)，于是三项分别为 −3、−2、−2，和为 −7。第（2）问用对数恒等式 a^(log_a N)＝N，两项分别为 7 和 5，和为 12。",
+          "topicIds": [
+            "mbs_h030",
+            "mbs_h031"
+          ],
+          "scoreRule": [
+            {
+              "desc": "log₂(1/8)＝−3，log_(1/3)9＝−2",
+              "score": 3
+            },
+            {
+              "desc": "lg(1/100)＝−2，三项和为 −7",
+              "score": 2
+            },
+            {
+              "desc": "由 a^(log_a N)＝N 得 3^(log₃7)＝7",
+              "score": 2
+            },
+            {
+              "desc": "2^(log₂5)＝5，和为 12",
+              "score": 3
+            }
+          ],
+          "itemId": "mbs_exam_b1_u04_q17"
+        },
+        {
+          "no": 18,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "standard",
+          "stem": "已知函数 f(x)＝log_a(x＋1)（a＞0，a≠1）的图象经过点 (3,2)。\n（1）求 a 的值；\n（2）求 f(x) 在区间 [1,7] 上的值域；\n（3）解不等式 f(x)＞f(2x−1)。",
+          "answer": "（1）a＝2；（2）[1,3]；（3）解集为 (1/2,2)。",
+          "analysis": "由 log_a4＝2 得 a²＝4，结合 a＞0 且 a≠1 取 a＝2，即 f(x)＝log₂(x＋1)。x∈[1,7] 时 x＋1∈[2,8]，log₂ 递增，故值域为 [1,3]。log₂ 递增，故 f(x)＞f(2x−1) 等价于 x＋1＞2x−1，得 x＜2；再结合真数为正 x＋1＞0、2x−1＞0，得 1/2＜x＜2。",
+          "topicIds": [
+            "mbs_h033",
+            "mbs_h036"
+          ],
+          "scoreRule": [
+            {
+              "desc": "由 log_a4＝2 得 a²＝4，取 a＝2",
+              "score": 3
+            },
+            {
+              "desc": "x∈[1,7] 时 x＋1∈[2,8]",
+              "score": 2
+            },
+            {
+              "desc": "由 log₂ 递增得值域 [1,3]",
+              "score": 2
+            },
+            {
+              "desc": "由递增性把不等式化为 x＋1＞2x−1，得 x＜2",
+              "score": 3
+            },
+            {
+              "desc": "结合真数为正得 1/2＜x＜2，解集 (1/2,2)",
+              "score": 2
+            }
+          ],
+          "itemId": "mbs_exam_b1_u04_q18"
+        },
+        {
+          "no": 19,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "standard",
+          "stem": "已知函数 f(x)＝log₂(x²−4x＋5)。\n（1）求 f(x) 的定义域；\n（2）求 f(x) 的值域；\n（3）写出 f(x) 的单调区间。",
+          "answer": "（1）R；（2）[0,＋∞)；（3）递减区间 (−∞,2]，递增区间 [2,＋∞)。",
+          "analysis": "真数 x²−4x＋5＝(x−2)²＋1＞0 对一切实数成立，故定义域为 R。真数最小值 1（x＝2 时取到），且可取任意大于 1 的值，log₂ 递增，故 f(x)≥log₂1＝0，值域为 [0,＋∞)。复合函数中 log₂ 递增，因此 f 的增减性与真数一致：真数在 (−∞,2] 递减、在 [2,＋∞) 递增。",
+          "topicIds": [
+            "mbs_h034",
+            "mbs_h035"
+          ],
+          "scoreRule": [
+            {
+              "desc": "配方得 x²−4x＋5＝(x−2)²＋1＞0，定义域为 R",
+              "score": 3
+            },
+            {
+              "desc": "真数最小值 1，且能取遍 (1,＋∞)",
+              "score": 3
+            },
+            {
+              "desc": "由 log₂ 递增得 f(x)≥0，值域 [0,＋∞)",
+              "score": 2
+            },
+            {
+              "desc": "真数在 (−∞,2] 递减，f 的递减区间为 (−∞,2]",
+              "score": 2
+            },
+            {
+              "desc": "真数在 [2,＋∞) 递增，f 的递增区间为 [2,＋∞)",
+              "score": 2
+            }
+          ],
+          "itemId": "mbs_exam_b1_u04_q19"
+        },
+        {
+          "no": 20,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "hard",
+          "stem": "（1）用换底公式证明：对任意正数 a、b、c 且均不等于 1，有 log_a b·log_b c·log_c a＝1；\n（2）已知 log₂3＝a，log₃7＝b，用 a、b 表示 log₂21 与 log₂42。",
+          "answer": "（1）证明见解析；（2）log₂21＝a＋ab，log₂42＝1＋a＋ab。",
+          "analysis": "（1）取自然对数换底：log_a b＝ln b/ln a，log_b c＝ln c/ln b，log_c a＝ln a/ln c，三式相乘，分子分母的 ln a、ln b、ln c 依次约去，乘积为 1。\n（2）先由换底得 log₂7＝log₂3·log₃7＝ab，再用积的对数性质：log₂21＝log₂(3×7)＝a＋ab；log₂42＝log₂(2×3×7)＝1＋a＋ab。",
+          "topicIds": [
+            "mbs_h031",
+            "mbs_h032"
+          ],
+          "scoreRule": [
+            {
+              "desc": "用换底公式把三个对数都化为自然对数之比",
+              "score": 3
+            },
+            {
+              "desc": "相乘后约去 ln a、ln b、ln c，得乘积为 1",
+              "score": 2
+            },
+            {
+              "desc": "由换底得 log₂7＝ab",
+              "score": 3
+            },
+            {
+              "desc": "log₂21＝log₂3＋log₂7＝a＋ab",
+              "score": 2
+            },
+            {
+              "desc": "log₂42＝1＋log₂3＋log₂7＝1＋a＋ab",
+              "score": 2
+            }
+          ],
+          "itemId": "mbs_exam_b1_u04_q20"
+        },
+        {
+          "no": 21,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "standard",
+          "stem": "声音的声强级 L（单位：dB）与声强 I（单位：W/m²）满足 L＝10·lg(I/I₀)，其中基准声强 I₀＝10^(−12) W/m²。\n（1）求声强 I＝10^(−5) W/m² 时的声强级；\n（2）若某处声强级为 60 dB，求该处的声强；\n（3）声强增大到原来的 2 倍时，声强级约增加多少分贝（lg2≈0.301，结果保留一位小数）？",
+          "answer": "（1）70 dB；（2）10^(−6) W/m²；（3）约增加 3.0 dB。",
+          "analysis": "（1）I/I₀＝10^(−5)/10^(−12)＝10^7，L＝10·lg10^7＝70。（2）由 10·lg(I/I₀)＝60 得 lg(I/I₀)＝6，故 I＝10^6·I₀＝10^(−6)。（3）声强为 2I 时 L′＝10·lg(2I/I₀)＝L＋10·lg2≈L＋3.01，即约增加 3.0 dB。",
+          "topicIds": [
+            "mbs_h031",
+            "mbs_u119"
+          ],
+          "scoreRule": [
+            {
+              "desc": "计算 I/I₀＝10^7",
+              "score": 2
+            },
+            {
+              "desc": "L＝10×7＝70，单位 dB",
+              "score": 2
+            },
+            {
+              "desc": "由 10lg(I/I₀)＝60 得 lg(I/I₀)＝6",
+              "score": 3
+            },
+            {
+              "desc": "解得 I＝10^(−6) W/m²",
+              "score": 2
+            },
+            {
+              "desc": "写出 L′＝L＋10lg2，代入 lg2≈0.301 得约增加 3.0 dB",
+              "score": 3
+            }
+          ],
+          "itemId": "mbs_exam_b1_u04_q21"
+        },
+        {
+          "no": 22,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "hard",
+          "stem": "已知函数 f(x)＝log₂(x²−2ax＋3)。\n（1）若 f(x) 的定义域为 R，求实数 a 的取值范围；\n（2）若 a＝1，求 f(x) 的单调递增区间；\n（3）若 f(x) 的值域为 R，求实数 a 的取值范围。",
+          "answer": "（1）−√3＜a＜√3；（2）[1,＋∞)；（3）a≤−√3 或 a≥√3。",
+          "analysis": "（1）定义域为 R 即真数恒正，二次项系数大于 0，只需判别式小于 0：4a²−12＜0，得 −√3＜a＜√3。（2）a＝1 时真数为 x²−2x＋3，其判别式小于 0，恒正；它在 [1,＋∞) 上递增，而 log₂ 递增，故 f 的递增区间为 [1,＋∞)。（3）值域为 R 要求真数取遍一切正数，对开口向上的二次式必须判别式不小于 0：4a²−12≥0，得 a≤−√3 或 a≥√3。",
+          "topicIds": [
+            "mbs_h036",
+            "mbs_u119"
+          ],
+          "scoreRule": [
+            {
+              "desc": "定义域为 R 等价于真数恒正，判别式 4a²−12＜0",
+              "score": 4
+            },
+            {
+              "desc": "解得 −√3＜a＜√3",
+              "score": 2
+            },
+            {
+              "desc": "a＝1 时真数为 x²−2x＋3，对称轴 x＝1",
+              "score": 2
+            },
+            {
+              "desc": "由复合单调性得递增区间 [1,＋∞)",
+              "score": 1
+            },
+            {
+              "desc": "值域为 R 需真数取遍正数，判别式 4a²−12≥0",
+              "score": 2
+            },
+            {
+              "desc": "解得 a≤−√3 或 a≥√3",
+              "score": 1
+            }
+          ],
+          "itemId": "mbs_exam_b1_u04_q22"
+        }
+      ]
+    }
+  ]
+}

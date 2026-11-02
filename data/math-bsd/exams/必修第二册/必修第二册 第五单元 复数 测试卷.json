@@ -1,0 +1,660 @@
+{
+  "book": "必修第二册",
+  "kind": "unit",
+  "term": "上册",
+  "grade": 11,
+  "stage": "高中",
+  "subject": "math-bsd",
+  "paper": "必修第二册 第五单元 复数 测试卷",
+  "duration": 120,
+  "fullScore": 150,
+  "scope": [
+    "必修第二册 第五单元 复数"
+  ],
+  "topicIds": [
+    "mbs_u128"
+  ],
+  "examId": "mbs_exam_b2_u05",
+  "sections": [
+    {
+      "title": "一、单选题",
+      "rule": "每小题 5 分，共 40 分",
+      "items": [
+        {
+          "no": 1,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h118"
+          ],
+          "stem": "若复数 z = (m² − 1) + (m + 1)i 是纯虚数，则实数 m 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "−1"
+            },
+            {
+              "label": "B",
+              "text": "0"
+            },
+            {
+              "label": "C",
+              "text": "1"
+            },
+            {
+              "label": "D",
+              "text": "±1"
+            }
+          ],
+          "answer": "C",
+          "analysis": "纯虚数要求实部为 0 且虚部不为 0。由 m² − 1 = 0 得 m = 1 或 m = −1；再由 m + 1 ≠ 0 排除 m = −1 的可能。所以 m = 1。若只解实部为零而不检查虚部，就会误选 ±1。",
+          "itemId": "mbs_exam_b2_u05_q01"
+        },
+        {
+          "no": 2,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h120"
+          ],
+          "stem": "复数 z = 5 − 12i 的模等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "13"
+            },
+            {
+              "label": "B",
+              "text": "√119"
+            },
+            {
+              "label": "C",
+              "text": "17"
+            },
+            {
+              "label": "D",
+              "text": "7"
+            }
+          ],
+          "answer": "A",
+          "analysis": "复数的模等于实部与虚部的平方和的算术平方根：z 的模 = √(25 + 144) = √169 = 13。注意虚部是 −12，取平方后符号消失，不要把它与实部直接相减。",
+          "itemId": "mbs_exam_b2_u05_q02"
+        },
+        {
+          "no": 3,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h123"
+          ],
+          "stem": "复数 (1 + 2i) ÷ (1 − i) 的结果是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "−1/2 − 3/2 i"
+            },
+            {
+              "label": "B",
+              "text": "−1/2 + 3/2 i"
+            },
+            {
+              "label": "C",
+              "text": "1/2 + 3/2 i"
+            },
+            {
+              "label": "D",
+              "text": "−3/2 + 1/2 i"
+            }
+          ],
+          "answer": "B",
+          "analysis": "分子分母同乘分母的共轭 1 + i：分子为 (1 + 2i)(1 + i) = 1 + 3i + 2i² = −1 + 3i，分母为 (1 − i)(1 + i) = 1 + 1 = 2。故结果为 −1/2 + 3/2 i。除法的一般做法就是分母实数化。",
+          "itemId": "mbs_exam_b2_u05_q03"
+        },
+        {
+          "no": 4,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h119"
+          ],
+          "stem": "复数 z = 1 − 2i 在复平面内对应的点位于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "第一象限"
+            },
+            {
+              "label": "B",
+              "text": "第二象限"
+            },
+            {
+              "label": "C",
+              "text": "第三象限"
+            },
+            {
+              "label": "D",
+              "text": "第四象限"
+            }
+          ],
+          "answer": "D",
+          "analysis": "复数 z = a + bi 对应点 (a, b)，本题对应点 (1, −2)。横坐标为正、纵坐标为负，落在第四象限。若把点看成 (−2, 1) 就会错判到第二象限。",
+          "itemId": "mbs_exam_b2_u05_q04"
+        },
+        {
+          "no": 5,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h124"
+          ],
+          "stem": "若 1 + 2i 是关于 x 的方程 x² + px + q = 0（p、q 为实数）的一个根，则 p 与 q 的值分别是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "p = −2，q = 5"
+            },
+            {
+              "label": "B",
+              "text": "p = 2，q = 5"
+            },
+            {
+              "label": "C",
+              "text": "p = −2，q = −5"
+            },
+            {
+              "label": "D",
+              "text": "p = 2，q = −3"
+            }
+          ],
+          "answer": "A",
+          "analysis": "实系数一元二次方程的虚根成对出现，另一根为 1 − 2i。由韦达定理，两根之和为 −p，即 2 = −p，故 p = −2；两根之积为 q，即 (1 + 2i)(1 − 2i) = 1 + 4 = 5，故 q = 5。也可直接把根代入方程比较实部、虚部。",
+          "itemId": "mbs_exam_b2_u05_q05"
+        },
+        {
+          "no": 6,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h126"
+          ],
+          "stem": "复数 1 + i 乘以 i 后得到 −1 + i，则这次运算相当于把 1 + i 对应的向量（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "顺时针旋转 90°"
+            },
+            {
+              "label": "B",
+              "text": "逆时针旋转 180°"
+            },
+            {
+              "label": "C",
+              "text": "逆时针旋转 90°"
+            },
+            {
+              "label": "D",
+              "text": "长度变为原来的 2 倍"
+            }
+          ],
+          "answer": "C",
+          "analysis": "一个复数乘以 i，其模不变，辐角增加 π/2，几何上就是把对应向量绕原点逆时针旋转 90°。验证：1 + i 的模为 √2，−1 + i 的模也是 √2，而 (−1, 1) 正是 (1, 1) 逆时针转 90° 的结果。",
+          "itemId": "mbs_exam_b2_u05_q06"
+        },
+        {
+          "no": 7,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h122"
+          ],
+          "stem": "复数 (1 + i)(2 − i) 等于（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "1 + 3i"
+            },
+            {
+              "label": "B",
+              "text": "3 + i"
+            },
+            {
+              "label": "C",
+              "text": "3 − i"
+            },
+            {
+              "label": "D",
+              "text": "1 + i"
+            }
+          ],
+          "answer": "B",
+          "analysis": "按多项式乘法展开：(1 + i)(2 − i) = 2 − i + 2i − i² = 2 + i + 1 = 3 + i。关键是用 i² = −1 把最后的 −i² 变成 +1，漏掉这一步就会得到 1 + 3i。",
+          "itemId": "mbs_exam_b2_u05_q07"
+        },
+        {
+          "no": 8,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h125"
+          ],
+          "stem": "复数 z = 1 + √3 i 的三角形式是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "2(cos π/6 + i sin π/6)"
+            },
+            {
+              "label": "B",
+              "text": "4(cos π/3 + i sin π/3)"
+            },
+            {
+              "label": "C",
+              "text": "2(cos π/3 − i sin π/3)"
+            },
+            {
+              "label": "D",
+              "text": "2(cos π/3 + i sin π/3)"
+            }
+          ],
+          "answer": "D",
+          "analysis": "先求模：√(1 + 3) = 2；再由 cos θ = 1/2、sin θ = √3/2 且点在第一象限得 θ = π/3。故三角形式为 2(cos π/3 + i sin π/3)。展开验证：2cos π/3 = 1，2sin π/3 = √3，与 z 一致。",
+          "itemId": "mbs_exam_b2_u05_q08"
+        }
+      ]
+    },
+    {
+      "title": "二、多选题",
+      "rule": "每小题 5 分，共 20 分；全部选对得 5 分，部分选对得 2 分，有错选得 0 分",
+      "items": [
+        {
+          "no": 9,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h117",
+            "mbs_h118"
+          ],
+          "stem": "关于复数，下列说法正确的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "若 z1、z2 都是虚数，则 z1 + z2 一定是虚数"
+            },
+            {
+              "label": "B",
+              "text": "若 z 是纯虚数，则 z² 是负实数"
+            },
+            {
+              "label": "C",
+              "text": "若 z·z̄ = 0，则 z = 0"
+            },
+            {
+              "label": "D",
+              "text": "若 z1 的模等于 z2 的模，则 z1 = z2 或 z1 = −z2"
+            }
+          ],
+          "answer": "BC",
+          "analysis": "取 z1 = 1 + i、z2 = 1 − i，两者都是虚数，和为 2 是实数，A 错。设 z = bi（b ≠ 0，b 为实数），则 z² = −b² 是负实数，B 正确。z·z̄ 等于 z 的模的平方，模为 0 只有 z = 0，C 正确。1 与 i 的模都等于 1，但两者既不相同也不互为相反数，D 错。选 BC。",
+          "itemId": "mbs_exam_b2_u05_q09"
+        },
+        {
+          "no": 10,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h120",
+            "mbs_h119"
+          ],
+          "stem": "关于复数 z = 1 − i，下列结论正确的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "z 的模为 √2"
+            },
+            {
+              "label": "B",
+              "text": "z² = −2i"
+            },
+            {
+              "label": "C",
+              "text": "z + z̄ = 2"
+            },
+            {
+              "label": "D",
+              "text": "z 与 z̄ 在复平面内对应的点关于虚轴对称"
+            }
+          ],
+          "answer": "ABC",
+          "analysis": "z 的模为 √(1 + 1) = √2，A 正确；z² = (1 − i)² = 1 − 2i + i² = −2i，B 正确；z̄ = 1 + i，相加得 2，C 正确。z 与 z̄ 对应的点为 (1, −1) 与 (1, 1)，两者横坐标相同、纵坐标相反，关于实轴对称而非虚轴，D 错。选 ABC。",
+          "itemId": "mbs_exam_b2_u05_q10"
+        },
+        {
+          "no": 11,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h122",
+            "mbs_h123"
+          ],
+          "stem": "下列复数运算正确的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "i⁴ = 1"
+            },
+            {
+              "label": "B",
+              "text": "(1 + i)² = 2i"
+            },
+            {
+              "label": "C",
+              "text": "(1 + i) ÷ (1 − i) = i"
+            },
+            {
+              "label": "D",
+              "text": "i²⁰²⁶ = 1"
+            }
+          ],
+          "answer": "ABC",
+          "analysis": "i 的幂以 4 为周期，i⁴ = 1，A 正确；(1 + i)² = 1 + 2i + i² = 2i，B 正确；(1 + i)/(1 − i) 分子分母同乘 1 + i 得 2i/2 = i，C 正确。2026 除以 4 余 2，故 i²⁰²⁶ = i² = −1，D 错。选 ABC。",
+          "itemId": "mbs_exam_b2_u05_q11"
+        },
+        {
+          "no": 12,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "hard",
+          "topicIds": [
+            "mbs_h119",
+            "mbs_h126"
+          ],
+          "stem": "复数 z = √3 + i 在复平面内对应的点记为 P，下列结论正确的是（　）",
+          "options": [
+            {
+              "label": "A",
+              "text": "点 P 在第一象限"
+            },
+            {
+              "label": "B",
+              "text": "z 的模为 4"
+            },
+            {
+              "label": "C",
+              "text": "向量 OP 与实轴正方向的夹角为 π/6"
+            },
+            {
+              "label": "D",
+              "text": "z² 对应的点在第一象限"
+            }
+          ],
+          "answer": "ACD",
+          "analysis": "实部、虚部都为正，P 在第一象限，A 正确。z 的模为 √(3 + 1) = 2，B 错。由 cos θ = √3/2、sin θ = 1/2 得向量与实轴正方向的夹角为 π/6，C 正确。z² = 3 + 2√3 i + i² = 2 + 2√3 i，实部、虚部均为正，在第一象限，D 正确。选 ACD。",
+          "itemId": "mbs_exam_b2_u05_q12"
+        }
+      ]
+    },
+    {
+      "title": "三、填空题",
+      "rule": "每小题 5 分，共 20 分",
+      "items": [
+        {
+          "no": 13,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h123"
+          ],
+          "stem": "复数 (3 − i) 除以 (1 + i) 的结果是＿＿＿＿。",
+          "answer": "1 − 2i",
+          "analysis": "分子分母同乘 1 − i：分子 (3 − i)(1 − i) = 3 − 3i − i + i² = 2 − 4i，分母 (1 + i)(1 − i) = 2，故结果为 1 − 2i。可用乘法检验：(1 − 2i)(1 + i) = 1 + i − 2i − 2i² = 3 − i，与原式一致。",
+          "itemId": "mbs_exam_b2_u05_q13"
+        },
+        {
+          "no": 14,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h122"
+          ],
+          "stem": "i²⁰²⁵ + i²⁰²⁶ 的值为＿＿＿＿。",
+          "answer": "−1 + i",
+          "analysis": "i 的幂以 4 为周期。2025 = 4×506 + 1，故 i²⁰²⁵ = i；2026 = 4×506 + 2，故 i²⁰²⁶ = i² = −1。相加得 i − 1，即 −1 + i。",
+          "itemId": "mbs_exam_b2_u05_q14"
+        },
+        {
+          "no": 15,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h120"
+          ],
+          "stem": "若复数 z = a + i（a 为实数）的模为 2，则 a 的值为＿＿＿＿。",
+          "answer": "±√3",
+          "analysis": "由模的定义得 a² + 1 = 4，即 a² = 3，故 a = √3 或 a = −√3。两个值都使模为 2，不要只写正根；对应的两个点关于虚轴对称。",
+          "itemId": "mbs_exam_b2_u05_q15"
+        },
+        {
+          "no": 16,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h121"
+          ],
+          "stem": "若复数 z 满足 z(1 + i) = 2i，则 z 等于＿＿＿＿。",
+          "answer": "1 + i",
+          "analysis": "两边同除以 1 + i，得 z = 2i/(1 + i)。分子分母同乘 1 − i：2i(1 − i)/2 = i(1 − i) = i − i² = 1 + i。检验：(1 + i)(1 + i) = 2i，与条件相符。",
+          "itemId": "mbs_exam_b2_u05_q16"
+        }
+      ]
+    },
+    {
+      "title": "四、解答题",
+      "rule": "共 6 小题，满分 70 分（10 + 12 + 12 + 12 + 12 + 12）",
+      "items": [
+        {
+          "no": 17,
+          "score": 10,
+          "type": "solve",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h117",
+            "mbs_h118"
+          ],
+          "stem": "已知复数 z = (m² − 3m + 2) + (m² − 1)i，其中 m 为实数。（1）若 z 是实数，求 m 的值；（2）若 z 是纯虚数，求 m 的值；（3）若 z 在复平面内对应的点在第二象限，求 m 的取值范围。",
+          "answer": "（1）m = 1 或 m = −1；（2）m = 2；（3）1 < m < 2",
+          "analysis": "（1）z 为实数只需虚部为零，即 m² − 1 = 0，得 m = ±1。（2）z 为纯虚数需实部为零且虚部不为零：m² − 3m + 2 = 0 得 m = 1 或 m = 2，再排除使 m² − 1 = 0 的 m = 1，故 m = 2。（3）第二象限要求实部为负、虚部为正：(m − 1)(m − 2) < 0 得 1 < m < 2；m² − 1 > 0 得 m > 1 或 m < −1。两者取交集得 1 < m < 2。",
+          "scoreRule": [
+            {
+              "desc": "由虚部为零得 m = ±1",
+              "score": 3
+            },
+            {
+              "desc": "由实部为零且虚部不为零得 m = 2",
+              "score": 3
+            },
+            {
+              "desc": "列出席第二象限的实部、虚部不等式",
+              "score": 2
+            },
+            {
+              "desc": "取交集得 1 < m < 2",
+              "score": 2
+            }
+          ],
+          "itemId": "mbs_exam_b2_u05_q17"
+        },
+        {
+          "no": 18,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "basic",
+          "topicIds": [
+            "mbs_h123",
+            "mbs_h120"
+          ],
+          "stem": "已知复数 z 满足 (1 + i)z = 1 − 3i。（1）求 z；（2）求 z 的模与共轭复数；（3）求 z 除以 z̄ 的结果。",
+          "answer": "（1）z = −1 − 2i；（2）模为 √5，z̄ = −1 + 2i；（3）−3/5 + 4/5 i",
+          "analysis": "（1）z = (1 − 3i)/(1 + i)，分子分母同乘 1 − i：分子 (1 − 3i)(1 − i) = 1 − i − 3i + 3i² = −2 − 4i，分母为 2，故 z = −1 − 2i。（2）模为 √(1 + 4) = √5，共轭复数为 −1 + 2i。（3）z/z̄ = z²/(z·z̄) = (−1 − 2i)²/5 = (1 + 4i + 4i²)/5 = (−3 + 4i)/5 = −3/5 + 4/5 i。",
+          "scoreRule": [
+            {
+              "desc": "分母实数化求出 z = −1 − 2i",
+              "score": 4
+            },
+            {
+              "desc": "求出模 √5",
+              "score": 2
+            },
+            {
+              "desc": "写出共轭复数 −1 + 2i",
+              "score": 2
+            },
+            {
+              "desc": "用 z·z̄ 化简求出比值",
+              "score": 4
+            }
+          ],
+          "itemId": "mbs_exam_b2_u05_q18"
+        },
+        {
+          "no": 19,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h124"
+          ],
+          "stem": "已知 1 + √3 i 是关于 x 的方程 x² + px + q = 0（p、q 为实数）的一个根。（1）求 p 与 q 的值；（2）写出方程的另一个根并求出方程的全部根。",
+          "answer": "（1）p = −2，q = 4；（2）另一个根为 1 − √3 i，方程的两根为 1 ± √3 i",
+          "analysis": "实系数一元二次方程若有一个虚根，则其共轭复数也是根，故另一根为 1 − √3 i。由韦达定理，两根之和等于 −p：(1 + √3 i) + (1 − √3 i) = 2，故 p = −2；两根之积等于 q：(1 + √3 i)(1 − √3 i) = 1 + 3 = 4，故 q = 4。方程即 x² − 2x + 4 = 0，判别式 4 − 16 = −12 < 0，与有两个虚根一致。",
+          "scoreRule": [
+            {
+              "desc": "指出另一根为共轭复数 1 − √3 i",
+              "score": 3
+            },
+            {
+              "desc": "由两根之和求 p = −2",
+              "score": 3
+            },
+            {
+              "desc": "由两根之积求 q = 4",
+              "score": 3
+            },
+            {
+              "desc": "写出方程的全部根并用判别式检验",
+              "score": 3
+            }
+          ],
+          "itemId": "mbs_exam_b2_u05_q19"
+        },
+        {
+          "no": 20,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h119",
+            "mbs_h121"
+          ],
+          "stem": "已知复数 z1 = 1 + 2i，z2 = 3 − i，它们在复平面内对应的点分别为 A、B。（1）求 A、B 两点间的距离；（2）求线段 AB 中点对应的复数；（3）求向量 AB 对应的复数。",
+          "answer": "（1）√13；（2）2 + 1/2 i；（3）2 − 3i",
+          "analysis": "（1）两点间的距离等于两复数之差的模：z1 − z2 = −2 + 3i，其模为 √(4 + 9) = √13。（2）中点对应两复数的平均值：(z1 + z2)/2 = (4 + i)/2 = 2 + 1/2 i。（3）向量 AB 由 A 指向 B，对应 z2 − z1 = (3 − i) − (1 + 2i) = 2 − 3i，方向不能反。",
+          "scoreRule": [
+            {
+              "desc": "用 z1 − z2 的模求两点距离 √13",
+              "score": 4
+            },
+            {
+              "desc": "用两复数的平均值求中点 2 + 1/2 i",
+              "score": 4
+            },
+            {
+              "desc": "写出向量 AB 对应的复数 2 − 3i",
+              "score": 4
+            }
+          ],
+          "itemId": "mbs_exam_b2_u05_q20"
+        },
+        {
+          "no": 21,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "standard",
+          "topicIds": [
+            "mbs_h122",
+            "mbs_h126"
+          ],
+          "stem": "已知复数 z = 1 + i。（1）分别求 z²、z³、z⁴ 的值；（2）求 (z̄ ÷ z) 的 100 次方。",
+          "answer": "（1）z² = 2i，z³ = −2 + 2i，z⁴ = −4；（2）结果为 1",
+          "analysis": "（1）z² = (1 + i)² = 2i；z³ = z²·z = 2i(1 + i) = 2i + 2i² = −2 + 2i；z⁴ = (z²)² = (2i)² = −4。可以看出 z 的幂每四次循环，z⁴ 为实数 −4。（2）z̄ = 1 − i，z̄/z = (1 − i)/(1 + i)，分子分母同乘 1 − i 得 (1 − 2i + i²)/2 = −i。于是 (−i)¹⁰⁰ = ((−i)²)⁵⁰ = (−1)⁵⁰ = 1。",
+          "scoreRule": [
+            {
+              "desc": "求出 z² = 2i",
+              "score": 3
+            },
+            {
+              "desc": "求出 z³ = −2 + 2i 与 z⁴ = −4",
+              "score": 3
+            },
+            {
+              "desc": "化简 z̄/z 得 −i",
+              "score": 4
+            },
+            {
+              "desc": "计算 (−i)¹⁰⁰ = 1",
+              "score": 2
+            }
+          ],
+          "itemId": "mbs_exam_b2_u05_q21"
+        },
+        {
+          "no": 22,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "hard",
+          "topicIds": [
+            "mbs_h125",
+            "mbs_h126",
+            "mbs_u128"
+          ],
+          "stem": "已知复数 z = √3 + i。（1）求 z 的模和辐角的主值（用弧度表示）；（2）把 z 写成三角形式，并用乘方公式求 z⁶。",
+          "answer": "（1）模为 2，辐角主值为 π/6；（2）z = 2(cos π/6 + i sin π/6)，z⁶ = −64",
+          "analysis": "（1）模为 √(3 + 1) = 2；由 cos θ = √3/2、sin θ = 1/2 且点在第一象限，辐角的主值为 π/6。（2）三角形式为 2(cos π/6 + i sin π/6)。复数乘方时模取 n 次方、辐角乘以 n：z⁶ 的模为 2⁶ = 64，辐角为 6×π/6 = π，故 z⁶ = 64(cos π + i sin π) = −64。也可用 (z²)³ 逐次计算验证：z² = 2 + 2√3 i，立方后为 −64。",
+          "scoreRule": [
+            {
+              "desc": "求出模 2 与辐角主值 π/6",
+              "score": 4
+            },
+            {
+              "desc": "写出三角形式",
+              "score": 3
+            },
+            {
+              "desc": "用乘方公式得模 64、辐角 π",
+              "score": 3
+            },
+            {
+              "desc": "得出 z⁶ = −64",
+              "score": 2
+            }
+          ],
+          "itemId": "mbs_exam_b2_u05_q22"
+        }
+      ]
+    }
+  ]
+}

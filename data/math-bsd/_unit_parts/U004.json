@@ -1,0 +1,550 @@
+{
+  "units": [
+    {
+      "unit": {
+        "id": "mbs_u094",
+        "name": "三角形",
+        "subject": "math-bsd",
+        "domain": "图形与几何",
+        "grade": 7,
+        "semester": "下",
+        "chapter": "七年级下册 第四单元 三角形",
+        "level": "unit",
+        "type": "conceptual",
+        "description": "本单元围绕「三角形」展开，包含认识三角形、三角形的内角和、按角分类与直角三角形的性质、等腰三角形与等边三角形 等 21 个课时，重在理清本单元的知识线索与前后联系，把零散的课时串成一条完整的思路。",
+        "mastery_criteria": [
+          "能说清「三角形」这一单元的核心方法与适用条件",
+          "能在本单元的典型题里独立完成至少八道并自查对错"
+        ],
+        "diagnostic_question": {
+          "question": "下列各题中，属于「三角形」这一单元核心方法的题目是（　）。",
+          "answer": "A"
+        },
+        "external": false,
+        "standards": [
+          {
+            "id": "mbs-2022:4.TX.04",
+            "confidence": "partial",
+            "quote": "理解三角形及其内角、外角、中线、高线、角平分线等概念，了解三角形的稳定性",
+            "sourceLine": 799
+          }
+        ],
+        "tags": [
+          "单元上位点",
+          "图形与几何"
+        ],
+        "prerequisites": [],
+        "root_reason": "单元上位点，不设先修课时",
+        "verified": false,
+        "curriculumRef": "mbs-2022:4.TX.04"
+      },
+      "questions": [
+        {
+          "id": "mbs_q991126",
+          "type": "choice",
+          "difficulty": "basic",
+          "prompt": "下列各组长度的三条线段，能首尾相接组成一个三角形的是（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "2、3、6"
+            },
+            {
+              "label": "B",
+              "text": "5、5、10"
+            },
+            {
+              "label": "C",
+              "text": "4、5、6"
+            },
+            {
+              "label": "D",
+              "text": "1、2、4"
+            }
+          ],
+          "answer": "C",
+          "explanation": "判断三条线段能否组成三角形，只需看两条较短线段的和是否大于最长线段。A 中 2+3=5 小于 6，B 中 5+5=10 恰好等于 10，D 中 1+2=3 小于 4，都不满足三边关系；C 中 4+5=9 大于 6，可以组成三角形。",
+          "topicId": "mbs_u094",
+          "topicIds": [
+            "mbs_u094"
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "2、3、6"
+            },
+            {
+              "label": "B",
+              "text": "5、5、10"
+            },
+            {
+              "label": "C",
+              "text": "4、5、6"
+            },
+            {
+              "label": "D",
+              "text": "1、2、4"
+            }
+          ]
+        },
+        {
+          "id": "mbs_q991127",
+          "type": "choice",
+          "difficulty": "standard",
+          "prompt": "在△ABC 和△DEF 中，已知 AB=DE，∠B=∠E，若要用「角边角」判定△ABC 与△DEF 全等，还需要添加的条件是（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "∠A=∠D"
+            },
+            {
+              "label": "B",
+              "text": "∠C=∠F"
+            },
+            {
+              "label": "C",
+              "text": "AC=DF"
+            },
+            {
+              "label": "D",
+              "text": "BC=EF"
+            }
+          ],
+          "answer": "A",
+          "explanation": "角边角要求两个角以及它们的夹边对应相等。已知相等的边是 AB 与 DE，这条边的两个端点处的角是 ∠A 与 ∠B，所以补上 ∠A=∠D 后，正好构成 ∠A=∠D、AB=DE、∠B=∠E 的角边角结构。补 ∠C=∠F 得到的是角角边；补 BC=EF 时边与 ∠B 成夹角，属于边角边；补 AC=DF 时 AC 与 ∠B 并不相邻，属于边边角，不能判定全等。",
+          "topicId": "mbs_u094",
+          "topicIds": [
+            "mbs_u094"
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "∠A=∠D"
+            },
+            {
+              "label": "B",
+              "text": "∠C=∠F"
+            },
+            {
+              "label": "C",
+              "text": "AC=DF"
+            },
+            {
+              "label": "D",
+              "text": "BC=EF"
+            }
+          ]
+        },
+        {
+          "id": "mbs_q991128",
+          "type": "fill",
+          "difficulty": "standard",
+          "prompt": "一个三角形的三个内角度数之比是 1:2:3，那么这个三角形中最大的内角是多少度？",
+          "choices": [],
+          "answer": "90",
+          "explanation": "三角形的内角和是 180 度，按 1:2:3 共分成 1+2+3=6 份，每份是 180÷6=30 度，最大的内角占 3 份，即 30×3=90 度，所以这个三角形是直角三角形。",
+          "topicId": "mbs_u094",
+          "topicIds": [
+            "mbs_u094"
+          ]
+        },
+        {
+          "id": "mbs_q991129",
+          "type": "numeric",
+          "difficulty": "standard",
+          "prompt": "一个三角形的两条边长分别是 5 和 9，若第三条边的长是整数，那么第三条边最大可以取多少？",
+          "choices": [],
+          "answer": "13",
+          "verify": "5+9-1",
+          "explanation": "设第三条边长为 x，由三角形三边关系得 9-5 小于 x 小于 9+5，即 4 小于 x 小于 14。x 取整数时最大值是 13，此时两条较短边 5 与 9 的和 14 大于 13，确实能组成三角形。",
+          "topicId": "mbs_u094",
+          "topicIds": [
+            "mbs_u094"
+          ]
+        },
+        {
+          "id": "mbs_q991130",
+          "type": "short-answer",
+          "difficulty": "hard",
+          "prompt": "有同学说：两个三角形的两边和其中一边的对角分别对应相等，这两个三角形就一定全等。请判断这种说法是否正确，并说明理由。",
+          "choices": [],
+          "answer": "这种说法不正确，两边和其中一边的对角对应相等不能判定两个三角形全等。",
+          "keypoints": [
+            "两边及其中一边的对角相等时，条件没有锁住这两条边的夹角，第三边的长度会出现两种可能",
+            "可以画出两个都满足条件却形状不同的三角形，说明这时全等关系并不唯一",
+            "判定全等要使用边边边、边角边、角边角、角角边这些成立的条件，不能凭三个条件随意搭配"
+          ],
+          "explanation": "全等判定依赖的是两边及其夹角这类能固定图形形状的条件。只给出两边和其中一边的对角，夹角的大小仍可变动，第三边会出现两种长度，因此能构造出满足条件但形状不同的两个三角形，说法不成立。",
+          "topicId": "mbs_u094",
+          "topicIds": [
+            "mbs_u094"
+          ]
+        }
+      ]
+    },
+    {
+      "unit": {
+        "id": "mbs_u095",
+        "name": "图形的轴对称",
+        "subject": "math-bsd",
+        "domain": "图形与几何",
+        "grade": 7,
+        "semester": "下",
+        "chapter": "七年级下册 第五单元 图形的轴对称",
+        "level": "unit",
+        "type": "conceptual",
+        "description": "本单元围绕「图形的轴对称」展开，包含轴对称图形与对称轴、成轴对称的两个图形、轴对称的性质、画轴对称图形的另一半 等 12 个课时，重在理清本单元的知识线索与前后联系，把零散的课时串成一条完整的思路。",
+        "mastery_criteria": [
+          "能说清「图形的轴对称」这一单元的核心方法与适用条件",
+          "能在本单元的典型题里独立完成至少八道并自查对错"
+        ],
+        "diagnostic_question": {
+          "question": "下列各题中，属于「图形的轴对称」这一单元核心方法的题目是（　）。",
+          "answer": "A"
+        },
+        "external": false,
+        "standards": [
+          {
+            "id": "mbs-2022:4.TX.12",
+            "confidence": "partial",
+            "quote": "通过具体实例理解轴对称的概念",
+            "sourceLine": 851
+          }
+        ],
+        "tags": [
+          "单元上位点",
+          "图形与几何"
+        ],
+        "prerequisites": [],
+        "root_reason": "单元上位点，不设先修课时",
+        "verified": false,
+        "curriculumRef": "mbs-2022:4.TX.12"
+      },
+      "questions": [
+        {
+          "id": "mbs_q991131",
+          "type": "choice",
+          "difficulty": "basic",
+          "prompt": "下列图形中，不是轴对称图形的是（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "圆"
+            },
+            {
+              "label": "B",
+              "text": "等腰三角形"
+            },
+            {
+              "label": "C",
+              "text": "平行四边形"
+            },
+            {
+              "label": "D",
+              "text": "正五边形"
+            }
+          ],
+          "answer": "C",
+          "explanation": "轴对称图形沿某条直线对折后，直线两旁的部分能完全重合。圆有无数条对称轴，等腰三角形有一条对称轴，正五边形有五条对称轴；一般的平行四边形沿任何一条直线对折都不能使两部分重合，所以它不是轴对称图形。",
+          "topicId": "mbs_u095",
+          "topicIds": [
+            "mbs_u095"
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "圆"
+            },
+            {
+              "label": "B",
+              "text": "等腰三角形"
+            },
+            {
+              "label": "C",
+              "text": "平行四边形"
+            },
+            {
+              "label": "D",
+              "text": "正五边形"
+            }
+          ]
+        },
+        {
+          "id": "mbs_q991132",
+          "type": "choice",
+          "difficulty": "standard",
+          "prompt": "一个等腰三角形中有一个内角是 100°，则它的一个底角是（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "40°"
+            },
+            {
+              "label": "B",
+              "text": "50°"
+            },
+            {
+              "label": "C",
+              "text": "80°"
+            },
+            {
+              "label": "D",
+              "text": "100°"
+            }
+          ],
+          "answer": "A",
+          "explanation": "100° 不可能是底角，因为等腰三角形两个底角相等，若底角为 100° 则两个底角的和已经超过 180°，与内角和矛盾。所以 100° 只能是顶角，两个底角相等，各为 (180-100)÷2=40°。",
+          "topicId": "mbs_u095",
+          "topicIds": [
+            "mbs_u095"
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "40°"
+            },
+            {
+              "label": "B",
+              "text": "50°"
+            },
+            {
+              "label": "C",
+              "text": "80°"
+            },
+            {
+              "label": "D",
+              "text": "100°"
+            }
+          ]
+        },
+        {
+          "id": "mbs_q991133",
+          "type": "fill",
+          "difficulty": "standard",
+          "prompt": "角是轴对称图形，那么一个角的对称轴是它的什么？请用文字写出来。",
+          "choices": [],
+          "answer": "角平分线所在的直线",
+          "explanation": "把一个角沿它的角平分线对折，角的两条边能够完全重合，所以角平分线所在的直线就是这个角的对称轴。要注意对称轴是一条直线，不能只说成角平分线这条射线。",
+          "topicId": "mbs_u095",
+          "topicIds": [
+            "mbs_u095"
+          ]
+        },
+        {
+          "id": "mbs_q991134",
+          "type": "numeric",
+          "difficulty": "standard",
+          "prompt": "在△ABC 中，边 AB 的垂直平分线交 BC 于点 D。已知 AC=7，BC=12，则△ACD 的周长是多少？",
+          "choices": [],
+          "answer": "19",
+          "verify": "7+12",
+          "explanation": "点 D 在 AB 的垂直平分线上，由线段垂直平分线的性质得 DA=DB。于是△ACD 的周长 AD+DC+CA=BD+DC+CA=BC+AC=12+7=19。",
+          "topicId": "mbs_u095",
+          "topicIds": [
+            "mbs_u095"
+          ]
+        },
+        {
+          "id": "mbs_q991135",
+          "type": "short-answer",
+          "difficulty": "hard",
+          "prompt": "一条笔直的公路同侧有两个村庄 A、B，要在公路上建一个车站，使车站到两村的距离之和最小。请说明怎样确定车站的位置，并解释其中的道理。",
+          "choices": [],
+          "answer": "作点 A 关于公路所在直线的对称点 A′，连接 A′B 与公路的交点就是车站的位置，因为轴对称保持距离不变，两点之间线段最短。",
+          "keypoints": [
+            "先沿公路所在直线把一个村庄的位置翻折，得到它的对称点，把折线路径转化成直线路径",
+            "连接对称点与另一个村庄，连线与公路的交点就是所求的车站位置",
+            "道理是轴对称使对应线段相等，加上两点之间线段最短，此时距离之和等于 A′B 的长"
+          ],
+          "explanation": "车站到两村的距离之和是一条折线。直接用两点之间线段最短无法比较折线长短，把 A 翻折到 A′ 后，车站到 A 的距离等于到 A′ 的距离，折线之和变成 A′ 到 P 再到 B 的和，只有当 A′、P、B 三点共线时才最短。",
+          "topicId": "mbs_u095",
+          "topicIds": [
+            "mbs_u095"
+          ]
+        }
+      ]
+    },
+    {
+      "unit": {
+        "id": "mbs_u096",
+        "name": "变量之间的关系",
+        "subject": "math-bsd",
+        "domain": "数与代数",
+        "grade": 7,
+        "semester": "下",
+        "chapter": "七年级下册 第六单元 变量之间的关系",
+        "level": "unit",
+        "type": "conceptual",
+        "description": "本单元围绕「变量之间的关系」展开，包含认识变量、自变量与因变量、变量与常量、反应时间实验 等 10 个课时，重在理清本单元的知识线索与前后联系，把零散的课时串成一条完整的思路。",
+        "mastery_criteria": [
+          "能说清「变量之间的关系」这一单元的核心方法与适用条件",
+          "能在本单元的典型题里独立完成至少八道并自查对错"
+        ],
+        "diagnostic_question": {
+          "question": "下列各题中，属于「变量之间的关系」这一单元核心方法的题目是（　）。",
+          "answer": "A"
+        },
+        "external": false,
+        "standards": [
+          {
+            "id": "mbs-2022:4.SD.11",
+            "confidence": "partial",
+            "quote": "了解函数的概念和表示法，能举出函数的实例",
+            "sourceLine": 692
+          }
+        ],
+        "tags": [
+          "单元上位点",
+          "数与代数"
+        ],
+        "prerequisites": [],
+        "root_reason": "单元上位点，不设先修课时",
+        "verified": false,
+        "curriculumRef": "mbs-2022:4.SD.11"
+      },
+      "questions": [
+        {
+          "id": "mbs_q991136",
+          "type": "choice",
+          "difficulty": "basic",
+          "prompt": "一辆汽车以每小时 60 千米的速度匀速行驶，行驶路程 s（千米）与时间 t（时）之间的关系式是 s=60t。在这个关系式中，常量是（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "s"
+            },
+            {
+              "label": "B",
+              "text": "t"
+            },
+            {
+              "label": "C",
+              "text": "60"
+            },
+            {
+              "label": "D",
+              "text": "60t"
+            }
+          ],
+          "answer": "C",
+          "explanation": "在变化过程中数值保持不变的量叫常量，数值会变化的量叫变量。s 随 t 改变，t 也可以取不同的值，二者都是变量；60 是汽车的速度，在整个行驶过程中不变，所以是常量；60t 随 t 变化，仍是变量。",
+          "topicId": "mbs_u096",
+          "topicIds": [
+            "mbs_u096"
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "s"
+            },
+            {
+              "label": "B",
+              "text": "t"
+            },
+            {
+              "label": "C",
+              "text": "60"
+            },
+            {
+              "label": "D",
+              "text": "60t"
+            }
+          ]
+        },
+        {
+          "id": "mbs_q991137",
+          "type": "choice",
+          "difficulty": "standard",
+          "prompt": "某人从家出发匀速步行 5 分钟到达离家 300 米的公园，在公园停留 3 分钟后沿原路匀速返回，用 4 分钟回到家。下列说法正确的是（　）。",
+          "options": [
+            {
+              "label": "A",
+              "text": "第 5 到第 8 分钟内他继续向公园方向前进"
+            },
+            {
+              "label": "B",
+              "text": "他在公园停留期间的速度是每分钟 100 米"
+            },
+            {
+              "label": "C",
+              "text": "他返回时的速度是每分钟 75 米"
+            },
+            {
+              "label": "D",
+              "text": "他这一趟的平均速度是每分钟 60 米"
+            }
+          ],
+          "answer": "C",
+          "explanation": "返程路程 300 米，用时 4 分钟，速度为 300÷4=75 米每分，C 正确。公园停留的 3 分钟里路程保持 300 米不变，速度为 0，B 错；第 5 到第 8 分钟正是停留时间，并没有前进，A 错；全程共走 300+300=600 米，用时 12 分钟，平均速度为 300+300 除以 12 等于 50 米每分，D 错。",
+          "topicId": "mbs_u096",
+          "topicIds": [
+            "mbs_u096"
+          ],
+          "choices": [
+            {
+              "label": "A",
+              "text": "第 5 到第 8 分钟内他继续向公园方向前进"
+            },
+            {
+              "label": "B",
+              "text": "他在公园停留期间的速度是每分钟 100 米"
+            },
+            {
+              "label": "C",
+              "text": "他返回时的速度是每分钟 75 米"
+            },
+            {
+              "label": "D",
+              "text": "他这一趟的平均速度是每分钟 60 米"
+            }
+          ]
+        },
+        {
+          "id": "mbs_q991138",
+          "type": "fill",
+          "difficulty": "standard",
+          "prompt": "一根弹簧不挂重物时长 10 厘米，每挂 1 千克重物就伸长 0.5 厘米。设所挂重物为 x 千克（在弹性限度内），写出弹簧长度 y（厘米）与 x 的关系式。",
+          "choices": [],
+          "answer": "y=10+0.5x",
+          "explanation": "弹簧的长度由原长和伸长的部分相加得到。原长是 10 厘米，挂 x 千克时伸长为 0.5x 厘米，所以关系式是 y=10+0.5x，其中 x 是自变量，y 随 x 的变化而变化，是因变量。",
+          "topicId": "mbs_u096",
+          "topicIds": [
+            "mbs_u096"
+          ]
+        },
+        {
+          "id": "mbs_q991139",
+          "type": "numeric",
+          "difficulty": "standard",
+          "prompt": "某市出租车的起步价是 8 元，包含 3 千米路程；超过 3 千米的部分每千米收费 2 元。某人乘车行驶了 9 千米，应付车费多少元？",
+          "choices": [],
+          "answer": "20",
+          "verify": "8+2*6",
+          "explanation": "9 千米中前 3 千米按起步价 8 元计算，超出的部分是 9-3=6 千米，每千米 2 元，加收 6×2=12 元，所以总车费为 8+12=20 元。",
+          "topicId": "mbs_u096",
+          "topicIds": [
+            "mbs_u096"
+          ]
+        },
+        {
+          "id": "mbs_q991140",
+          "type": "short-answer",
+          "difficulty": "hard",
+          "prompt": "表示变量之间的关系可以用表格、关系式和图象三种方法。请说明这三种方法各自的优点，并解释解决实际问题时为什么常把它们结合起来使用。",
+          "choices": [],
+          "answer": "表格便于直接查对应数值，关系式便于计算和推理，图象便于看出整体变化趋势，三者结合才能既看清趋势又算准数值。",
+          "keypoints": [
+            "表格把成对的数值按顺序列出，查某一组对应值最方便，但不易看出整体的变化趋势",
+            "关系式用算式表示两个变量的依赖关系，代入即可计算，也便于判断增减规律，但不够直观",
+            "图象把变化过程画成曲线，趋势一目了然，但读数的精度有限，需要表格或关系式补充"
+          ],
+          "explanation": "三种表示法各有所长：表格胜在具体，关系式胜在精确，图象胜在直观。同一个实际问题往往先用图象看清整体趋势，再用关系式或表格算出需要的确切数值，所以常常要把三种方法配合使用。",
+          "topicId": "mbs_u096",
+          "topicIds": [
+            "mbs_u096"
+          ]
+        }
+      ]
+    }
+  ]
+}

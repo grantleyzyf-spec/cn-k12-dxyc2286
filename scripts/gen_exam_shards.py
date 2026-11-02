@@ -61,18 +61,26 @@ def main():
     ap.add_argument("bucket")
     ap.add_argument("--prefix", required=True, help="examId 前缀，如 msj / msk / mxj / mqd / mhb")
     ap.add_argument("--per-shard", type=int, default=6)
+    ap.add_argument("--books", nargs="*", default=[], help="只出这些册（留空=全桶）")
+    ap.add_argument("--skip-match", default="数学建模活动|综合与实践|总复习|主题活动",
+                    help="chapter 命中此正则的单元不出卷")
     ap.add_argument("--dry", action="store_true")
     a = ap.parse_args()
 
     base = os.path.join(ROOT, "data", a.bucket)
     topics = json.load(open(os.path.join(base, "topics.json"), encoding="utf-8"))
+    skip_re = re.compile(a.skip_match) if a.skip_match else None
     by_book = {}
     for t in topics:
         ch = t.get("chapter") or ""
         book = ch.split(" ")[0]
+        if a.books and book not in set(a.books):
+            continue
         by_book.setdefault(book, {"units": [], "all": []})
         by_book[book]["all"].append(t)
         if " · " not in ch and t.get("level") != "lesson":
+            if skip_re and skip_re.search(ch):
+                continue
             by_book[book]["units"].append(t)
 
     def points_of(unit):
@@ -119,7 +127,11 @@ def main():
         return
     out_dir = os.path.join(base, "_exam_shards")
     os.makedirs(out_dir, exist_ok=True)
-    for i, group in enumerate(shards, 1):
+    used = [int(m.group(1)) for f in os.listdir(out_dir)
+            if (m := re.match(r"E(\d+)\.json$", f))]
+    start = (max(used) + 1) if used else 1
+    for k, group in enumerate(shards):
+        i = start + k
         books = {g["shard_book"] for g in group}
         if len(books) > 1:
             raise SystemExit(f"E{i:02d} 跨册（{books}）——分片必须单册")
