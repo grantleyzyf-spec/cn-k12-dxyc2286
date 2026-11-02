@@ -19,8 +19,8 @@
     "properties": {
       "id": {
         "type": "string",
-        "pattern": "^[a-z]{2,6}_[ph]\\d{2,4}$",
-        "description": "知识点唯一ID，格式: {学科前缀}_{p小学|h高中}{2–4 位序号}"
+        "pattern": "^[a-z]{2,6}_[phuj]\\d{2,4}$",
+        "description": "知识点唯一ID，格式: {学科前缀}_{p小学|h高中|u单元|j节}{2–4 位序号}"
       },
       "name": {
         "type": "string",
