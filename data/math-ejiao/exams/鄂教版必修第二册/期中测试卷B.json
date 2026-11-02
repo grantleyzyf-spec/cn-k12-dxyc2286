@@ -1,0 +1,650 @@
+{
+ "book": "鄂教版必修第二册",
+ "kind": "mid",
+ "paper": "期中测试卷B",
+ "stage": "高中",
+ "grade": 11,
+ "duration": 120,
+ "fullScore": 150,
+ "scope": [
+  "鄂教版必修第二册 第1章 函数的概念与性质",
+  "鄂教版必修第二册 第2章 幂函数、指数函数、对数函数"
+ ],
+ "examId": "mej_exam_b2_mid_b",
+ "sections": [
+  {
+   "title": "一、单选题（本大题共 8 小题，每小题 5 分，共 40 分）",
+   "items": [
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1029"
+     ],
+     "stem": "函数 f(x) = √(x+3)/(2-x) 的定义域是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "[-3, 2)∪(2, +∞)"
+      },
+      {
+       "label": "B",
+       "text": "(-3, 2)"
+      },
+      {
+       "label": "C",
+       "text": "[-3, +∞)"
+      },
+      {
+       "label": "D",
+       "text": "(-3, 2)∪(2, +∞)"
+      }
+     ],
+     "answer": "A",
+     "analysis": "被开方式要求 x + 3 ≥ 0 即 x ≥ -3；分母要求 2 - x ≠ 0 即 x ≠ 2。取交集得 [-3, 2)∪(2, +∞)。端点 -3 可以取到，而 2 必须挖去，这是本题的两个关键细节。",
+     "no": 1,
+     "itemId": "mej_exam_b2_mid_b_q01"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1042"
+     ],
+     "stem": "若 log₃ x = -2，则 x 的值为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "-9"
+      },
+      {
+       "label": "B",
+       "text": "1/9"
+      },
+      {
+       "label": "C",
+       "text": "1/6"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ],
+     "answer": "B",
+     "analysis": "由对数与指数的互化得 x = 3^(-2) = 1/9。负指数意味着取倒数，答案必须是正数，因为真数恒大于零。误写成 -9 是把负指数当成了相反数。",
+     "no": 2,
+     "itemId": "mej_exam_b2_mid_b_q02"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1041",
+      "mej_h1035"
+     ],
+     "stem": "函数 y = 3^x 与 y = (1/3)^x 的图象之间的对称关系是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "关于 x 轴对称"
+      },
+      {
+       "label": "B",
+       "text": "关于原点对称"
+      },
+      {
+       "label": "C",
+       "text": "关于直线 y = x 对称"
+      },
+      {
+       "label": "D",
+       "text": "关于 y 轴对称"
+      }
+     ],
+     "answer": "D",
+     "analysis": "因为 (1/3)^x = 3^(-x)，两函数在自变量互为相反数时函数值相等，故图象关于 y 轴对称。若把底数取倒数与函数值取相反数混淆，就会误答关于 x 轴对称。",
+     "no": 3,
+     "itemId": "mej_exam_b2_mid_b_q03"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1033"
+     ],
+     "stem": "函数 f(x) = -x² + 2x + 3 的最大值是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "-4"
+      }
+     ],
+     "answer": "B",
+     "analysis": "配方得 f(x) = -(x-1)² + 4，开口向下，当 x = 1 时取得最大值 4。求二次函数最值先配方定顶点，开口方向决定顶点是最大值还是最小值。",
+     "no": 4,
+     "itemId": "mej_exam_b2_mid_b_q04"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1030"
+     ],
+     "stem": "已知一次函数 f(x) 满足 f(f(x)) = 4x + 3，则 f(x) 的解析式为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x - 1"
+      },
+      {
+       "label": "B",
+       "text": "4x + 3"
+      },
+      {
+       "label": "C",
+       "text": "2x + 1"
+      },
+      {
+       "label": "D",
+       "text": "x + 3"
+      }
+     ],
+     "answer": "C",
+     "analysis": "设 f(x) = kx + b，则 f(f(x)) = k(kx+b) + b = k²x + kb + b。与 4x + 3 比较得 k² = 4 且 kb + b = 3。由 f 是一次函数可检验 k = 2、b = 1，故 f(x) = 2x + 1。用待定系数法要把复合后的系数与常数项都对照。",
+     "no": 5,
+     "itemId": "mej_exam_b2_mid_b_q05"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1043"
+     ],
+     "stem": "计算 log₂ 3 · log₃ 4 的值为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "log₂ 3"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "D",
+     "analysis": "由换底公式 log₃4 = log₂4 / log₂3，与 log₂3 相乘得 log₂4 = 2。换底后约去 log₂3 是这类题的通用手法，注意不要把乘积当成 log₂12。",
+     "no": 6,
+     "itemId": "mej_exam_b2_mid_b_q06"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1044"
+     ],
+     "stem": "函数 y = log_(1/2)(x - 2) 在区间 [3, 6] 上的值域是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "[-2, 0]"
+      },
+      {
+       "label": "B",
+       "text": "[0, 2]"
+      },
+      {
+       "label": "C",
+       "text": "[-1, 0]"
+      },
+      {
+       "label": "D",
+       "text": "(-∞, 0]"
+      }
+     ],
+     "answer": "A",
+     "analysis": "底数 1/2 满足 0 < 1/2 < 1，函数在 (2, +∞) 上单调递减。x = 3 时 y = log_(1/2)1 = 0，x = 6 时 y = log_(1/2)4 = -2，故值域为 [-2, 0]。单调递减时端点代入的顺序不能颠倒。",
+     "no": 7,
+     "itemId": "mej_exam_b2_mid_b_q07"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1031"
+     ],
+     "stem": "设 f(x) = { 2x + 1, x < 1 ; x² - 2, x ≥ 1 }，则 f(f(0)) 的值为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "-1"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "0"
+      }
+     ],
+     "answer": "B",
+     "analysis": "内层 0 < 1，用第一段得 f(0) = 1；外层 1 ≥ 1，用第二段得 f(1) = 1 - 2 = -1。注意内层结果恰好落在分界点上，此时取的是含等号的那一段。",
+     "no": 8,
+     "itemId": "mej_exam_b2_mid_b_q08"
+    }
+   ]
+  },
+  {
+   "title": "二、多选题（本大题共 4 小题，每小题 5 分，共 20 分；全部选对得 5 分，部分选对得 2 分）",
+   "items": [
+    {
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1034"
+     ],
+     "stem": "下列函数中，图象关于 y 轴对称的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = x² + 2"
+      },
+      {
+       "label": "B",
+       "text": "y = x³"
+      },
+      {
+       "label": "C",
+       "text": "y = |x| + 1"
+      },
+      {
+       "label": "D",
+       "text": "y = x²/x"
+      }
+     ],
+     "answer": "AC",
+     "analysis": "y = x² + 2 与 y = |x| + 1 都满足 f(-x) = f(x)，是偶函数；y = x³ 是奇函数；y = x²/x 化简后为 y = x（x ≠ 0），是奇函数。判断前要先化简并确认定义域关于原点对称。",
+     "no": 9,
+     "itemId": "mej_exam_b2_mid_b_q09"
+    },
+    {
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1037",
+      "mej_h1043"
+     ],
+     "stem": "设 a > 0，对下列各式进行化简，结果正确的有（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "a^(3/2) ÷ a^(1/2) = a²"
+      },
+      {
+       "label": "B",
+       "text": "(a²)^(1/2) = a"
+      },
+      {
+       "label": "C",
+       "text": "log₂ 8 = 3"
+      },
+      {
+       "label": "D",
+       "text": "lg 100 = 2"
+      }
+     ],
+     "answer": "BCD",
+     "analysis": "同底数幂相除，指数相减：a^(3/2) ÷ a^(1/2) = a¹ = a，A 写成 a² 是错把减法当加法；幂的乘方指数相乘，(a²)^(1/2) = a，B 正确；log₂8 = 3，C 正确；lg 100 = 2，D 正确。",
+     "no": 10,
+     "itemId": "mej_exam_b2_mid_b_q10"
+    },
+    {
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1032",
+      "mej_h1045"
+     ],
+     "stem": "设四个函数都在 (0, +∞) 上有定义，其中在该区间上单调递减的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = log_(1/3) x"
+      },
+      {
+       "label": "B",
+       "text": "y = (1/4)^x"
+      },
+      {
+       "label": "C",
+       "text": "y = -log₂ x"
+      },
+      {
+       "label": "D",
+       "text": "y = x^(1/3)"
+      }
+     ],
+     "answer": "ABC",
+     "analysis": "y = log_(1/3)x 的底数小于 1，递减；y = (1/4)^x 的底数小于 1，递减；y = -log₂x 是 log₂x 的相反数，也递减；y = x^(1/3) 的指数为正，在 (0, +∞) 上递增。",
+     "no": 11,
+     "itemId": "mej_exam_b2_mid_b_q11"
+    },
+    {
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1046"
+     ],
+     "stem": "某商品的价格 y（元）与月份 x 满足 y = 100·(0.9)^x，则下列说法正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "该商品的价格每月下降 10%"
+      },
+      {
+       "label": "B",
+       "text": "x = 0 时价格为 100 元"
+      },
+      {
+       "label": "C",
+       "text": "x = 2 时价格约为 90 元"
+      },
+      {
+       "label": "D",
+       "text": "价格随月份增大而增大"
+      }
+     ],
+     "answer": "ABD",
+     "analysis": "底数 0.9 表示每月价格是上月的 0.9 倍，即每月下降 10%，A 正确；x = 0 时 y = 100，B 正确；x = 2 时 y = 100×0.81 = 81（元），C 错误；底数小于 1，函数递减，D 错误。",
+     "no": 12,
+     "itemId": "mej_exam_b2_mid_b_q12"
+    }
+   ]
+  },
+  {
+   "title": "三、填空题（本大题共 4 小题，每小题 5 分，共 20 分）",
+   "items": [
+    {
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1037"
+     ],
+     "stem": "计算 (1/3)^(-1) + 16^(1/4) - lg 100 的值为 ____。",
+     "answer": "3",
+     "analysis": "(1/3)^(-1) = 3，16^(1/4) = 2，lg 100 = 2。三式相加减得 3。分数指数幂与常用对数的值要分别算准后再合并。",
+     "verify": {
+      "type": "num",
+      "value": 3
+     },
+     "no": 13,
+     "itemId": "mej_exam_b2_mid_b_q13"
+    },
+    {
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1029"
+     ],
+     "stem": "已知 f(x) = 2x + 1，g(x) = x² - 1，则 g(f(1)) 的值为 ____。",
+     "answer": "8",
+     "analysis": "先算内层 f(1) = 2×1 + 1 = 3，再代入 g 得 g(3) = 9 - 1 = 8。复合函数求值必须由内向外，顺序颠倒会得到完全不同的结果。",
+     "verify": {
+      "type": "num",
+      "value": 8
+     },
+     "no": 14,
+     "itemId": "mej_exam_b2_mid_b_q14"
+    },
+    {
+     "score": 5,
+     "type": "fill",
+     "difficulty": "hard",
+     "topicIds": [
+      "mej_h1038",
+      "mej_h1039"
+     ],
+     "stem": "已知幂函数 f(x) = (m² - m - 1)·x^m 是奇函数，且在 (0, +∞) 上单调递减，则 m = ____。",
+     "answer": "-1",
+     "analysis": "幂函数的系数必须为 1，故 m² - m - 1 = 1，解得 m = 2 或 m = -1。m = 2 时 f(x) = x² 为偶函数，不符合；m = -1 时 f(x) = x^(-1)，是奇函数且在 (0, +∞) 上递减，符合题意，故 m = -1。",
+     "verify": {
+      "type": "num",
+      "value": -1
+     },
+     "no": 15,
+     "itemId": "mej_exam_b2_mid_b_q15"
+    },
+    {
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1042"
+     ],
+     "stem": "若 a = log₃ 2，则 a 满足 k < a < k + 1，其中 k 为整数，则 k = ____。",
+     "answer": "0",
+     "analysis": "因为 3⁰ = 1 < 2 < 3 = 3¹，由对数函数的单调性得 log₃1 < log₃2 < log₃3，即 0 < a < 1，故 k = 0。用相邻整数幂夹逼是估计对数值的常用方法。",
+     "verify": {
+      "type": "num",
+      "value": 0
+     },
+     "no": 16,
+     "itemId": "mej_exam_b2_mid_b_q16"
+    }
+   ]
+  },
+  {
+   "title": "四、解答题（本大题共 6 小题，共 70 分，解答应写出文字说明、证明过程或演算步骤）",
+   "items": [
+    {
+     "score": 10,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1034",
+      "mej_h1035"
+     ],
+     "stem": "已知偶函数 f(x) 的定义域为 R，当 x ≥ 0 时 f(x) = x² - 2x。\n(1) 求 f(-1) 与 f(2)；\n(2) 求 x < 0 时 f(x) 的解析式；\n(3) 写出 f(x) 在 R 上的单调递减区间。",
+     "answer": "(1) f(-1) = -1，f(2) = 0；(2) 当 x < 0 时 f(x) = x² + 2x；(3) 单调递减区间为 [-1, 1]",
+     "analysis": "利用偶性把负自变量的函数值转化到已知区间。求 x < 0 的解析式时设 x < 0，则 -x > 0，代入后由 f(x) = f(-x) 还原。单调性要分段分析：x ≤ 0 与 x ≥ 0 分别对应两条抛物线的升降规律。",
+     "scoreRule": [
+      {
+       "step": "f(-1) = f(1) = 1 - 2 = -1，f(2) = 4 - 4 = 0",
+       "score": 3
+      },
+      {
+       "step": "设 x < 0，则 -x > 0，f(x) = f(-x) = x² + 2x",
+       "score": 4
+      },
+      {
+       "step": "x ≥ 0 时 f(x) = (x-1)² - 1 在 [0,1] 递减；x < 0 时 f(x) = (x+1)² - 1 在 [-1,0] 递减，故递减区间为 [-1, 1]",
+       "score": 3
+      }
+     ],
+     "no": 17,
+     "itemId": "mej_exam_b2_mid_b_q17"
+    },
+    {
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mej_h1032",
+      "mej_h1033"
+     ],
+     "stem": "已知函数 f(x) = x² - 2mx + 3。\n(1) 若 f(x) 在区间 (-∞, 2] 上单调递减，求 m 的取值范围；\n(2) 若 f(x) 在区间 [0, 3] 上的最小值为 2，求 m 的值。",
+     "answer": "(1) m ≥ 2；(2) m = 1",
+     "analysis": "抛物线的对称轴为 x = m，开口向上，故递减区间是 (-∞, m]，第 (1) 问由区间包含关系得 m ≥ 2。第 (2) 问要按对称轴与 [0, 3] 的位置关系分三类讨论，逐一检验所求的 m 是否落在该情形的范围内。",
+     "scoreRule": [
+      {
+       "step": "f(x) = (x-m)² + 3 - m²，对称轴 x = m，递减区间为 (-∞, m]，由 (-∞, 2] ⊆ (-∞, m] 得 m ≥ 2",
+       "score": 4
+      },
+      {
+       "step": "当 0 ≤ m ≤ 3 时，最小值为 f(m) = 3 - m² = 2，得 m = 1 或 m = -1，只有 m = 1 符合",
+       "score": 4
+      },
+      {
+       "step": "当 m > 3 时最小值为 f(3) = 12 - 6m = 2，得 m = 5/3，与 m > 3 矛盾；当 m < 0 时最小值为 f(0) = 3 ≠ 2，故 m = 1",
+       "score": 4
+      }
+     ],
+     "no": 18,
+     "itemId": "mej_exam_b2_mid_b_q18"
+    },
+    {
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1040",
+      "mej_h1041",
+      "mej_h1034"
+     ],
+     "stem": "已知函数 f(x) = (2^x + 1)/(2^x - 1)。\n(1) 求 f(x) 的定义域；\n(2) 判断 f(x) 的奇偶性并证明；\n(3) 判断 f(x) 在 (0, +∞) 上的单调性。",
+     "answer": "(1) 定义域为 {x | x ≠ 0}；(2) f(x) 是奇函数；(3) f(x) 在 (0, +∞) 上单调递减",
+     "analysis": "分母 2^x - 1 ≠ 0 给出定义域。判断奇偶性时把 f(-x) 的分子分母同乘 2^x 化简，可得 f(-x) = -f(x)。判断单调性可把 f(x) 分离常数写成 1 + 2/(2^x - 1)，借助 2^x 的单调性说明分式的变化趋势。",
+     "scoreRule": [
+      {
+       "step": "由 2^x - 1 ≠ 0 得 x ≠ 0，定义域为 (-∞, 0)∪(0, +∞)",
+       "score": 4
+      },
+      {
+       "step": "定义域关于原点对称，且 f(-x) = (1 + 2^x)/(1 - 2^x) = -f(x)，故 f(x) 为奇函数",
+       "score": 4
+      },
+      {
+       "step": "f(x) = 1 + 2/(2^x - 1)，x > 0 时 2^x - 1 递增且为正，故 2/(2^x-1) 递减，f(x) 在 (0, +∞) 上单调递减",
+       "score": 4
+      }
+     ],
+     "no": 19,
+     "itemId": "mej_exam_b2_mid_b_q19"
+    },
+    {
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1046",
+      "mej_h1033"
+     ],
+     "stem": "某企业生产某种产品，年固定成本为 10 万元，每生产 1 万件需另投入 20 万元。年销售收入 R(x) = 40x - x²（万元），其中 x 为年产量（万件，0 < x ≤ 20）。\n(1) 写出年利润 L(x) 的表达式；\n(2) 年产量为多少万件时年利润最大？最大年利润是多少万元？",
+     "answer": "(1) L(x) = -x² + 20x - 10（0 < x ≤ 20）；(2) 年产量 10 万件时利润最大，最大年利润为 90 万元",
+     "analysis": "年利润等于销售收入减去总成本，总成本由固定成本与可变成本两部分组成，即可变成本 20x 与固定成本 10。整理后是关于 x 的二次函数，配方求顶点，并检验顶点横坐标是否落在 0 < x ≤ 20 的范围内。",
+     "scoreRule": [
+      {
+       "step": "总成本为 20x + 10，故 L(x) = (40x - x²) - (20x + 10) = -x² + 20x - 10",
+       "score": 5
+      },
+      {
+       "step": "配方得 L(x) = -(x - 10)² + 90",
+       "score": 4
+      },
+      {
+       "step": "x = 10 落在 0 < x ≤ 20 内，故最大年利润为 90 万元",
+       "score": 3
+      }
+     ],
+     "no": 20,
+     "itemId": "mej_exam_b2_mid_b_q20"
+    },
+    {
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mej_h1044",
+      "mej_h1045",
+      "mej_h1043"
+     ],
+     "stem": "已知函数 f(x) = log_a(x + 1)（a > 0 且 a ≠ 1）的图象经过点 (1, 1)。\n(1) 求 a 的值；\n(2) 求不等式 f(x) < 1 的解集；\n(3) 若 f(x) 在区间 [0, 3] 上的最大值与最小值之差为 2，求 a 的值。",
+     "answer": "(1) a = 2；(2) {x | -1 < x < 1}；(3) a = 2 或 a = 1/2",
+     "analysis": "由 f(1) = log_a 2 = 1 得 a = 2。解不等式时把 1 写成 log₂2，注意真数必须大于零这一隐含条件。第 (3) 问要按底数大于 1 与小于 1 两种情形分别写出最值之差，再解方程。",
+     "scoreRule": [
+      {
+       "step": "由 log_a 2 = 1 得 a = 2",
+       "score": 3
+      },
+      {
+       "step": "f(x) < 1 即 0 < x + 1 < 2，解得 -1 < x < 1",
+       "score": 4
+      },
+      {
+       "step": "当 a > 1 时最大值为 f(3) = log_a4、最小值为 f(0) = 0，由 log_a4 = 2 得 a = 2；当 0 < a < 1 时最小值为 log_a4，由 -log_a4 = 2 得 a = 1/2",
+       "score": 5
+      }
+     ],
+     "no": 21,
+     "itemId": "mej_exam_b2_mid_b_q21"
+    },
+    {
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1033",
+      "mej_h1032"
+     ],
+     "stem": "已知函数 f(x) = x² - 4x + 3。\n(1) 解方程 f(x) = 0；\n(2) 若 f(x) 在区间 [a, a+1] 上的最小值为 -1，求实数 a 的取值范围。",
+     "answer": "(1) x = 1 或 x = 3；(2) 1 ≤ a ≤ 2",
+     "analysis": "第 (1) 问把方程左边因式分解即可求出两根。第 (2) 问先配方得顶点 (2, -1)，最小值取到 -1 的充要条件是顶点横坐标 2 落在区间 [a, a+1] 内，由此列不等式组求解。",
+     "scoreRule": [
+      {
+       "step": "由 x² - 4x + 3 = 0 得 (x-1)(x-3) = 0，故 x = 1 或 x = 3",
+       "score": 4
+      },
+      {
+       "step": "f(x) = (x-2)² - 1，在 x = 2 处取得最小值 -1，也是 f(x) 在 R 上的最小值",
+       "score": 4
+      },
+      {
+       "step": "要使其在 [a, a+1] 上的最小值为 -1，须 2 ∈ [a, a+1]，即 a ≤ 2 且 a + 1 ≥ 2，故 1 ≤ a ≤ 2",
+       "score": 4
+      }
+     ],
+     "no": 22,
+     "itemId": "mej_exam_b2_mid_b_q22"
+    }
+   ]
+  }
+ ]
+}

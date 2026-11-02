@@ -1,0 +1,651 @@
+{
+ "book": "鄂教版必修第二册",
+ "kind": "fin",
+ "paper": "期末测试卷B",
+ "stage": "高中",
+ "grade": 11,
+ "duration": 120,
+ "fullScore": 150,
+ "scope": [
+  "鄂教版必修第二册 第1章 函数的概念与性质",
+  "鄂教版必修第二册 第2章 幂函数、指数函数、对数函数",
+  "鄂教版必修第二册 第3章 三角函数",
+  "鄂教版必修第二册 第4章 函数的应用"
+ ],
+ "examId": "mej_exam_b2_fin_b",
+ "sections": [
+  {
+   "title": "一、单选题（本大题共 8 小题，每小题 5 分，共 40 分）",
+   "items": [
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1031"
+     ],
+     "stem": "设 f(x) = { x + 2, x ≤ -1 ; x², -1 < x < 1 ; 2x, x ≥ 1 }，则 f(f(-3/2)) 的值为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1/4"
+      },
+      {
+       "label": "B",
+       "text": "1/2"
+      },
+      {
+       "label": "C",
+       "text": "1"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "A",
+     "analysis": "内层 -3/2 ≤ -1，用第一段得 f(-3/2) = -3/2 + 2 = 1/2；外层 1/2 满足 -1 < 1/2 < 1，用第二段得 (1/2)² = 1/4。分段函数嵌套求值的关键是每层都重新判断所在区间。",
+     "no": 1,
+     "itemId": "mej_exam_b2_fin_b_q01"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1042",
+      "mej_h1043"
+     ],
+     "stem": "计算 log_(√2) 8 的值为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ],
+     "answer": "C",
+     "analysis": "设 log_(√2)8 = t，则 (√2)^t = 8。因为 √2 = 2^(1/2)，左边为 2^(t/2)，而 8 = 2³，故 t/2 = 3，t = 6。换底计算时要注意底数也是幂的形式。",
+     "no": 2,
+     "itemId": "mej_exam_b2_fin_b_q02"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1050"
+     ],
+     "stem": "已知 α 是第四象限角，且 cos α = 3/5，则 tan α 的值为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "4/3"
+      },
+      {
+       "label": "B",
+       "text": "3/4"
+      },
+      {
+       "label": "C",
+       "text": "-4/3"
+      },
+      {
+       "label": "D",
+       "text": "-3/4"
+      }
+     ],
+     "answer": "C",
+     "analysis": "由 sin²α + cos²α = 1 得 sin²α = 16/25，α 在第四象限故 sin α = -4/5，于是 tan α = -4/3。象限决定符号，绝对值由同角关系确定。",
+     "no": 3,
+     "itemId": "mej_exam_b2_fin_b_q03"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1060"
+     ],
+     "stem": "方程 2x³ + x - 5 = 0 的实根一定落在下列哪个区间内（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "(0, 1)"
+      },
+      {
+       "label": "B",
+       "text": "(1, 2)"
+      },
+      {
+       "label": "C",
+       "text": "(2, 3)"
+      },
+      {
+       "label": "D",
+       "text": "(3, 4)"
+      }
+     ],
+     "answer": "B",
+     "analysis": "记 g(x) = 2x³ + x - 5，则 g(1) = 2 + 1 - 5 = -2 < 0，g(2) = 16 + 2 - 5 = 13 > 0。g(x) 在 R 上连续且单调递增，由零点存在性定理知实根在 (1, 2) 内。选区间时需保证两端函数值异号。",
+     "no": 4,
+     "itemId": "mej_exam_b2_fin_b_q04"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1044",
+      "mej_h1035"
+     ],
+     "stem": "要得到函数 y = log₂(x + 3) 的图象，只需把 y = log₂ x 的图象（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "向右平移 3 个单位"
+      },
+      {
+       "label": "B",
+       "text": "向上平移 3 个单位"
+      },
+      {
+       "label": "C",
+       "text": "向下平移 3 个单位"
+      },
+      {
+       "label": "D",
+       "text": "向左平移 3 个单位"
+      }
+     ],
+     "answer": "D",
+     "analysis": "把 x 换成 x + 3 对应图象向左平移 3 个单位（左加右减）。平移只改变自变量，不改变纵向位置，故不是上、下平移。",
+     "no": 5,
+     "itemId": "mej_exam_b2_fin_b_q05"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "hard",
+     "topicIds": [
+      "mej_h1054"
+     ],
+     "stem": "把函数 y = sin x 图象上所有点的横坐标缩短到原来的 1/2（纵坐标不变），再向左平移 π/4 个单位长度，所得图象对应的函数是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = sin(2x + π/4)"
+      },
+      {
+       "label": "B",
+       "text": "y = sin(2x + π/2)"
+      },
+      {
+       "label": "C",
+       "text": "y = sin(x/2 + π/4)"
+      },
+      {
+       "label": "D",
+       "text": "y = sin(2x - π/2)"
+      }
+     ],
+     "answer": "B",
+     "analysis": "横坐标缩短到 1/2 相当于把 x 换成 2x，得 y = sin 2x；再向左平移 π/4 个单位，把 x 换成 x + π/4，得 y = sin(2x + π/2)。注意平移量要作用在整体 2x 上，写成 sin(2x + π/4) 是漏乘了 2。",
+     "no": 6,
+     "itemId": "mej_exam_b2_fin_b_q06"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1033",
+      "mej_h1035"
+     ],
+     "stem": "函数 f(x) = |x - 1| + |x + 2| 的最小值为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "C",
+     "analysis": "由绝对值的几何意义，f(x) 表示数轴上点 x 到 1 与到 -2 的距离之和，当 x 落在 [-2, 1] 内时取到最小值，等于两点间距离 1 - (-2) = 3。也可分段去掉绝对值后逐段求最小值。",
+     "no": 7,
+     "itemId": "mej_exam_b2_fin_b_q07"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1052"
+     ],
+     "stem": "函数 y = 3cos(2x + π/3) 的单调递减区间是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "[-π/6 + kπ, π/3 + kπ], k∈Z"
+      },
+      {
+       "label": "B",
+       "text": "[π/3 + kπ, 5π/6 + kπ], k∈Z"
+      },
+      {
+       "label": "C",
+       "text": "[-π/3 + kπ, π/6 + kπ], k∈Z"
+      },
+      {
+       "label": "D",
+       "text": "[π/6 + kπ, 2π/3 + kπ], k∈Z"
+      }
+     ],
+     "answer": "A",
+     "analysis": "余弦函数在 [2kπ, π + 2kπ] 上递减，故需 2kπ ≤ 2x + π/3 ≤ π + 2kπ，解得 -π/6 + kπ ≤ x ≤ π/3 + kπ。解这类不等式时要把整体相位放进标准区间。",
+     "no": 8,
+     "itemId": "mej_exam_b2_fin_b_q08"
+    }
+   ]
+  },
+  {
+   "title": "二、多选题（本大题共 4 小题，每小题 5 分，共 20 分；全部选对得 5 分，部分选对得 2 分）",
+   "items": [
+    {
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1047",
+      "mej_h1049"
+     ],
+     "stem": "已知角 α 的终边与单位圆交于点 P(-3/5, 4/5)，则下列结论正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "sin α = 4/5"
+      },
+      {
+       "label": "B",
+       "text": "cos α = -3/5"
+      },
+      {
+       "label": "C",
+       "text": "tan α = -4/3"
+      },
+      {
+       "label": "D",
+       "text": "α 是第三象限角"
+      }
+     ],
+     "answer": "ABC",
+     "analysis": "单位圆上点的坐标就是 (cos α, sin α)，故 sin α = 4/5，cos α = -3/5，于是 tan α = -4/3。横坐标为负、纵坐标为正，α 是第二象限角，而不是第三象限角。",
+     "no": 9,
+     "itemId": "mej_exam_b2_fin_b_q09"
+    },
+    {
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1039",
+      "mej_h1041",
+      "mej_h1045"
+     ],
+     "stem": "下列结论正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "函数 y = a^x（a > 0，a ≠ 1）的值域为 (0, +∞)"
+      },
+      {
+       "label": "B",
+       "text": "函数 y = log_a x（a > 0，a ≠ 1）的值域为 R"
+      },
+      {
+       "label": "C",
+       "text": "log₂ 3 < log₂ 2"
+      },
+      {
+       "label": "D",
+       "text": "0.8^(0.5) < 0.8^(0.3)"
+      }
+     ],
+     "answer": "ABD",
+     "analysis": "指数函数 y = a^x（a > 0，a ≠ 1）的值域为 (0, +∞)，A 正确；对数函数的值域为 R，B 正确；y = log₂x 在 (0, +∞) 上递增，故 log₂3 > log₂2，C 错误；y = 0.8^x 底数小于 1，递减，故 0.8^0.5 < 0.8^0.3，D 正确。",
+     "no": 10,
+     "itemId": "mej_exam_b2_fin_b_q10"
+    },
+    {
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1062",
+      "mej_h1063",
+      "mej_h1066"
+     ],
+     "stem": "关于函数模型的选择，下列说法正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "一次函数可以描述任何实际问题"
+      },
+      {
+       "label": "B",
+       "text": "指数函数 y = a^x（a > 1）的增长速度越来越快"
+      },
+      {
+       "label": "C",
+       "text": "对数函数 y = log_a x（a > 1）的增长速度越来越慢"
+      },
+      {
+       "label": "D",
+       "text": "同一个实际问题可以建立不同的模型，通过比较与检验择优使用"
+      }
+     ],
+     "answer": "BCD",
+     "analysis": "一次函数只能刻画匀速变化，无法描述加速增长或衰减的实际问题，A 错误；指数函数（底数大于 1）的增长速度越来越快，对数函数的增长速度越来越慢，B、C 正确；同一实际问题可以建立多个模型，需要通过比较与检验择优，D 正确。",
+     "no": 11,
+     "itemId": "mej_exam_b2_fin_b_q11"
+    },
+    {
+     "score": 5,
+     "type": "multi",
+     "difficulty": "hard",
+     "topicIds": [
+      "mej_h1059",
+      "mej_h1060",
+      "mej_h1061"
+     ],
+     "stem": "下列关于函数零点与二分法的判断，正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "若 f(x) 在 [a, b] 上连续且 f(a)·f(b) > 0，则 f(x) 在 (a, b) 内没有零点"
+      },
+      {
+       "label": "B",
+       "text": "用二分法求近似解时，若要求精确到 0.01，需使区间长度小于 0.01"
+      },
+      {
+       "label": "C",
+       "text": "函数 y = x² - 2x + 1 只有一个零点"
+      },
+      {
+       "label": "D",
+       "text": "若区间两端点的函数值异号，则该区间内恰有一个零点"
+      }
+     ],
+     "answer": "BC",
+     "analysis": "两端函数值同号时区间内也可能有零点（如 f(x) = x² 在 [-1, 1] 上），故 A 错误；二分法的精度就是最终区间的长度，要求精确到 0.01 就需使区间长度小于 0.01，B 正确；x² - 2x + 1 = (x-1)² 只有一个零点 1，C 正确；端点异号只能保证至少有一个零点，不能保证恰有一个，D 错误。",
+     "no": 12,
+     "itemId": "mej_exam_b2_fin_b_q12"
+    }
+   ]
+  },
+  {
+   "title": "三、填空题（本大题共 4 小题，每小题 5 分，共 20 分）",
+   "items": [
+    {
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1043",
+      "mej_h1037"
+     ],
+     "stem": "计算 log₂ 12 - log₂ 3 + 3^(log₃ 5) 的值为 ____。",
+     "answer": "7",
+     "analysis": "log₂12 - log₂3 = log₂4 = 2；由对数恒等式 3^(log₃5) = 5。两式相加得 7。对数减法对应真数相除，恒等式 a^(log_a N) = N 要记牢。",
+     "verify": {
+      "type": "num",
+      "value": 7
+     },
+     "no": 13,
+     "itemId": "mej_exam_b2_fin_b_q13"
+    },
+    {
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1056"
+     ],
+     "stem": "cos 75° 的值为 ____。",
+     "answer": "(√6 - √2)/4",
+     "analysis": "75° = 45° + 30°，由两角和的余弦公式 cos(α+β) = cos α cos β - sin α sin β 得 cos 75° = (√2/2)(√3/2) - (√2/2)(1/2) = (√6 - √2)/4。符号为减，因为 75° 的余弦小于 cos 45°。",
+     "no": 14,
+     "itemId": "mej_exam_b2_fin_b_q14"
+    },
+    {
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1057"
+     ],
+     "stem": "已知 tan α = 2，则 tan 2α 的值为 ____。",
+     "answer": "-4/3",
+     "analysis": "由二倍角的正切公式 tan 2α = 2tan α/(1 - tan²α) = 4/(1 - 4) = -4/3。分母 1 - tan²α 为负，说明 2α 是第二或第四象限角，结果取负值。",
+     "verify": {
+      "type": "num",
+      "value": -1.3333333333333333
+     },
+     "no": 15,
+     "itemId": "mej_exam_b2_fin_b_q15"
+    },
+    {
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1064",
+      "mej_h1065"
+     ],
+     "stem": "某商品原价 200 元，先降价 10%，再提价 10%，则现价为 ____ 元。",
+     "answer": "198",
+     "analysis": "两次调价都以当时的价格为基准：200×0.9 = 180（元），180×1.1 = 198（元）。先降后升的百分比相同，最终价格低于原价，因为提价时以较低的 180 元为基准。",
+     "verify": {
+      "type": "num",
+      "value": 198
+     },
+     "no": 16,
+     "itemId": "mej_exam_b2_fin_b_q16"
+    }
+   ]
+  },
+  {
+   "title": "四、解答题（本大题共 6 小题，共 70 分，解答应写出文字说明、证明过程或演算步骤）",
+   "items": [
+    {
+     "score": 10,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1037",
+      "mej_h1043"
+     ],
+     "stem": "计算下列各式的值：\n(1) 0.25^(-1/2) + (1/2)^(-2) - 3^(log₃ 8)；\n(2) log₄ 9 · log₃ 8。",
+     "answer": "(1) -2；(2) 3",
+     "analysis": "第 (1) 问逐项计算：0.25^(-1/2) = (1/4)^(-1/2) = 2，(1/2)^(-2) = 4，3^(log₃8) = 8。第 (2) 问用换底公式把两个对数统一为以 10 为底或化为同底，再约分。",
+     "scoreRule": [
+      {
+       "step": "0.25^(-1/2) = 2，(1/2)^(-2) = 4，3^(log₃8) = 8，故原式 = 2 + 4 - 8 = -2",
+       "score": 5
+      },
+      {
+       "step": "log₄9 = log₂3，log₃8 = 3log₃2 = 3/log₂3，故乘积为 log₂3 × 3/log₂3 = 3",
+       "score": 5
+      }
+     ],
+     "no": 17,
+     "itemId": "mej_exam_b2_fin_b_q17"
+    },
+    {
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1054",
+      "mej_h1052"
+     ],
+     "stem": "已知函数 f(x) = √3 sin(2x + π/6) - 1。\n(1) 求它的振幅与最小正周期；\n(2) 求 f(x) 在区间 [0, π/2] 上的值域；\n(3) 求 f(x) 图象的对称中心坐标。",
+     "answer": "(1) 振幅为 √3，最小正周期为 π；(2) 值域为 [-√3/2 - 1, √3 - 1]；(3) 对称中心为 (-π/12 + kπ/2, -1)，k∈Z",
+     "analysis": "由解析式直接读出振幅 √3 与周期 π。求值域要先算出整体相位在给定区间内的范围，再由正弦的取值确定。对称中心满足相位等于 kπ，此时函数值等于常数项 -1。",
+     "scoreRule": [
+      {
+       "step": "振幅 A = √3，周期 T = 2π/2 = π",
+       "score": 4
+      },
+      {
+       "step": "x∈[0, π/2] 时 2x + π/6 ∈ [π/6, 7π/6]，sin 的最大值为 1（x = π/6）、最小值为 -1/2（x = π/2），故值域为 [-√3/2 - 1, √3 - 1]",
+       "score": 5
+      },
+      {
+       "step": "令 2x + π/6 = kπ 得 x = -π/12 + kπ/2，对称中心为 (-π/12 + kπ/2, -1)",
+       "score": 3
+      }
+     ],
+     "no": 18,
+     "itemId": "mej_exam_b2_fin_b_q18"
+    },
+    {
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1064",
+      "mej_h1063"
+     ],
+     "stem": "某商场销售一种商品，每件进价 60 元，售价 80 元时每天可卖出 200 件。市场调查表明，售价每降低 1 元，日销量就增加 20 件。设售价降低 x 元（0 ≤ x ≤ 20）。\n(1) 写出日利润 y（元）关于 x 的函数关系式；\n(2) 售价定为多少元时日利润最大？最大日利润是多少元？\n(3) 若要求日利润不低于 4000 元，降价范围应如何控制？",
+     "answer": "(1) y = -20x² + 200x + 4000（0 ≤ x ≤ 20）；(2) 售价 75 元时利润最大，最大日利润 4500 元；(3) 0 ≤ x ≤ 10，即售价不低于 70 元且不高于 80 元",
+     "analysis": "每件利润为 20 - x 元，日销量为 200 + 20x 件，相乘得二次函数。配方求顶点得最大值。第 (3) 问把不低于 4000 元写成二次不等式，解出 x 的范围后再换算回售价区间。",
+     "scoreRule": [
+      {
+       "step": "每件利润 20 - x 元，日销量 200 + 20x 件，故 y = (20-x)(200+20x) = -20x² + 200x + 4000",
+       "score": 4
+      },
+      {
+       "step": "配方得 y = -20(x-5)² + 4500，x = 5 时取最大值 4500 元，此时售价 75 元",
+       "score": 4
+      },
+      {
+       "step": "由 -20x² + 200x + 4000 ≥ 4000 得 x² - 10x ≤ 0，即 0 ≤ x ≤ 10，售价在 [70, 80] 元内",
+       "score": 4
+      }
+     ],
+     "no": 19,
+     "itemId": "mej_exam_b2_fin_b_q19"
+    },
+    {
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1050",
+      "mej_h1058"
+     ],
+     "stem": "已知 tan α = 2。\n(1) 求 sin α cos α 的值；\n(2) 求 (sin α - cos α)/(sin α + cos α) 的值；\n(3) 求 sin²α - 3sin α cos α + 2cos²α 的值。",
+     "answer": "(1) 2/5；(2) 1/3；(3) 0",
+     "analysis": "三个小问都可用弦化切：把式子表示成只含 tan α 的形式。核心恒等式是 sin α cos α = sin α cos α/(sin²α + cos²α) = tan α/(1 + tan²α) 以及 sin²α + cos²α = 1 的变形。",
+     "scoreRule": [
+      {
+       "step": "sin α cos α = tan α/(1 + tan²α) = 2/5",
+       "score": 4
+      },
+      {
+       "step": "分子分母同除以 cos α 得 (tan α - 1)/(tan α + 1) = 1/3",
+       "score": 4
+      },
+      {
+       "step": "原式 = cos²α(tan²α - 3tan α + 2) = (1/5)×(4 - 6 + 2) = 0",
+       "score": 4
+      }
+     ],
+     "no": 20,
+     "itemId": "mej_exam_b2_fin_b_q20"
+    },
+    {
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mej_h1056",
+      "mej_h1057"
+     ],
+     "stem": "已知 cos(α - β) = 3/5，sin β = -5/13，且 α ∈ (0, π/2)，β ∈ (-π/2, 0)。求 cos α 的值。",
+     "answer": "cos α = 56/65",
+     "analysis": "把 α 拆成 (α - β) + β 是解题的关键。先由角的范围确定 α - β ∈ (0, π)，从而 sin(α - β) = 4/5；再由 β 的范围确定 cos β = 12/13，最后用两角和的余弦公式展开计算。",
+     "scoreRule": [
+      {
+       "step": "由 α ∈ (0, π/2)、β ∈ (-π/2, 0) 得 α - β ∈ (0, π)，故 sin(α - β) = 4/5",
+       "score": 5
+      },
+      {
+       "step": "由 β ∈ (-π/2, 0) 且 sin β = -5/13 得 cos β = 12/13",
+       "score": 3
+      },
+      {
+       "step": "cos α = cos[(α-β)+β] = (3/5)(12/13) - (4/5)(-5/13) = 36/65 + 20/65 = 56/65",
+       "score": 4
+      }
+     ],
+     "no": 21,
+     "itemId": "mej_exam_b2_fin_b_q21"
+    },
+    {
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mej_h1034",
+      "mej_h1033",
+      "mej_h1059"
+     ],
+     "stem": "已知函数 f(x) = x² - 2|x| - 3。\n(1) 判断 f(x) 的奇偶性；\n(2) 求 f(x) 的零点；\n(3) 求 f(x) 的最小值。",
+     "answer": "(1) 偶函数；(2) 零点为 3 与 -3；(3) 最小值为 -4",
+     "analysis": "因为解析式只含 |x|，故 f(-x) = f(x)，函数是偶函数。求零点时令 |x| = t (t ≥ 0)，解关于 t 的二次方程后舍去负值。求最小值可换元 t = |x|，把问题化为 t ≥ 0 时二次函数的最值。",
+     "scoreRule": [
+      {
+       "step": "f(-x) = (-x)² - 2|-x| - 3 = x² - 2|x| - 3 = f(x)，定义域为 R 关于原点对称，故为偶函数",
+       "score": 3
+      },
+      {
+       "step": "令 t = |x| ≥ 0，由 t² - 2t - 3 = 0 得 t = 3 或 t = -1（舍），故 |x| = 3，零点为 3 和 -3",
+       "score": 5
+      },
+      {
+       "step": "换元后 f = (t-1)² - 4，t ≥ 0，当 t = 1（即 x = ±1）时取最小值 -4",
+       "score": 4
+      }
+     ],
+     "no": 22,
+     "itemId": "mej_exam_b2_fin_b_q22"
+    }
+   ]
+  }
+ ]
+}

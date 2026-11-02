@@ -1,0 +1,660 @@
+{
+ "book": "鄂教版必修第二册",
+ "kind": "unit",
+ "paper": "第1章 单元测试卷",
+ "stage": "高中",
+ "grade": 11,
+ "duration": 120,
+ "fullScore": 150,
+ "scope": [
+  "鄂教版必修第二册 第1章 函数的概念与性质"
+ ],
+ "examId": "mej_exam_b2_u01",
+ "sections": [
+  {
+   "title": "一、单选题（本大题共 8 小题，每小题 5 分，共 40 分）",
+   "items": [
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1029"
+     ],
+     "stem": "函数 f(x) = √(x-1)/(x-3) 的定义域是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "[1, 3)∪(3, +∞)"
+      },
+      {
+       "label": "B",
+       "text": "(1, 3)∪(3, +∞)"
+      },
+      {
+       "label": "C",
+       "text": "[1, +∞)"
+      },
+      {
+       "label": "D",
+       "text": "(1, +∞)"
+      }
+     ],
+     "answer": "A",
+     "analysis": "被开方式满足 x-1 ≥ 0，得 x ≥ 1；分式的分母不能为零，得 x ≠ 3。两个条件同时成立，取交集为 [1,3)∪(3,+∞)。把端点 1 挖去或忘记排除 3 都是常见错误。",
+     "no": 1,
+     "itemId": "mej_exam_b2_u01_q01"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1029",
+      "mej_h1030"
+     ],
+     "stem": "已知 f(x) = x² + 2x，则 f(x+1) 的表达式为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "x² + 2x + 1"
+      },
+      {
+       "label": "B",
+       "text": "x² + 4x + 3"
+      },
+      {
+       "label": "C",
+       "text": "x² + 4x + 1"
+      },
+      {
+       "label": "D",
+       "text": "x² + 3x + 2"
+      }
+     ],
+     "answer": "B",
+     "analysis": "把 x+1 整体代入解析式：f(x+1) = (x+1)² + 2(x+1) = x² + 2x + 1 + 2x + 2 = x² + 4x + 3。只把一次项里的 x 换掉而漏掉平方项也要代换，会误选含有 x² + 2x + 1 的选项。",
+     "no": 2,
+     "itemId": "mej_exam_b2_u01_q02"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1034",
+      "mej_h1030"
+     ],
+     "stem": "已知奇函数 f(x) 的图象经过点 (1, -2)，则 f(-1) 的值为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "-2"
+      },
+      {
+       "label": "C",
+       "text": "0"
+      },
+      {
+       "label": "D",
+       "text": "无法确定"
+      }
+     ],
+     "answer": "A",
+     "analysis": "奇函数对定义域内任意 x 都满足 f(-x) = -f(x)。由 f(1) = -2 得 f(-1) = -f(1) = 2。若误把奇函数当成偶函数，就会错选 -2。",
+     "no": 3,
+     "itemId": "mej_exam_b2_u01_q03"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1031"
+     ],
+     "stem": "设 f(x) = { x + 1, x < 0 ; x², x ≥ 0 }，则 f(f(-2)) 的值为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "-1"
+      },
+      {
+       "label": "B",
+       "text": "0"
+      },
+      {
+       "label": "C",
+       "text": "1"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "B",
+     "analysis": "先算内层：因为 -2 < 0，用第一段得 f(-2) = -2 + 1 = -1；再算外层：因为 -1 < 0，仍用第一段得 f(-1) = 0。求复合函数值必须由内向外，每算一层都要重新判断自变量落在哪一段。",
+     "no": 4,
+     "itemId": "mej_exam_b2_u01_q04"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1032"
+     ],
+     "stem": "函数 f(x) = -x² + 4x - 1 的单调递增区间是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "(-∞, 2]"
+      },
+      {
+       "label": "B",
+       "text": "[2, +∞)"
+      },
+      {
+       "label": "C",
+       "text": "(-∞, -2]"
+      },
+      {
+       "label": "D",
+       "text": "[-2, +∞)"
+      }
+     ],
+     "answer": "A",
+     "analysis": "配方得 f(x) = -(x-2)² + 3，图象是开口向下的抛物线，对称轴为 x = 2。开口向下时，对称轴左侧单调递增、右侧单调递减，故递增区间为 (-∞, 2]。",
+     "no": 5,
+     "itemId": "mej_exam_b2_u01_q05"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1033"
+     ],
+     "stem": "函数 f(x) = x + 4/x 在区间 [1, 3] 上的最小值为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "13/3"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ],
+     "answer": "A",
+     "analysis": "由基本不等式，x > 0 时 x + 4/x ≥ 2√(x·4/x) = 4，等号在 x = 4/x 即 x = 2 时成立，而 2∈[1,3]，所以最小值为 4。只比较两端点的函数值 5 与 13/3 会漏掉区间内部取得的最小值。",
+     "no": 6,
+     "itemId": "mej_exam_b2_u01_q06"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1034",
+      "mej_h1032"
+     ],
+     "stem": "下列函数中，既是偶函数又在区间 (0, +∞) 上单调递减的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = x²"
+      },
+      {
+       "label": "B",
+       "text": "y = -x² + 1"
+      },
+      {
+       "label": "C",
+       "text": "y = |x|"
+      },
+      {
+       "label": "D",
+       "text": "y = x³"
+      }
+     ],
+     "answer": "B",
+     "analysis": "y = -x² + 1 满足 f(-x) = f(x)，是偶函数；其图象开口向下，在 (0, +∞) 上递减。y = x² 与 y = |x| 在 (0, +∞) 上递增，y = x³ 是奇函数，都不满足两个条件。",
+     "no": 7,
+     "itemId": "mej_exam_b2_u01_q07"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1035"
+     ],
+     "stem": "将函数 y = √x 的图象先向右平移 1 个单位长度，再向上平移 2 个单位长度，所得图象对应的函数解析式为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = √(x-1) + 2"
+      },
+      {
+       "label": "B",
+       "text": "y = √(x+1) + 2"
+      },
+      {
+       "label": "C",
+       "text": "y = √(x-1) - 2"
+      },
+      {
+       "label": "D",
+       "text": "y = √(x-2) + 1"
+      }
+     ],
+     "answer": "A",
+     "analysis": "图象平移遵循「左加右减、上加下减」：向右平移 1 个单位要把自变量 x 换成 x-1，向上平移 2 个单位是在整个函数值上加 2，故所得函数为 y = √(x-1) + 2。",
+     "no": 8,
+     "itemId": "mej_exam_b2_u01_q08"
+    }
+   ]
+  },
+  {
+   "title": "二、多选题（本大题共 4 小题，每小题 5 分，共 20 分；全部选对得 5 分，部分选对得 2 分）",
+   "items": [
+    {
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1029",
+      "mej_h1030"
+     ],
+     "stem": "设 f、g 都是函数，在下列给出的四组函数中，能表示同一个函数的有（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "f(x) = x，g(x) = √(x²)"
+      },
+      {
+       "label": "B",
+       "text": "f(x) = |x|，g(x) = √(x²)"
+      },
+      {
+       "label": "C",
+       "text": "f(x) = x，g(x) = x²/x"
+      },
+      {
+       "label": "D",
+       "text": "f(x) = x²，g(t) = t²"
+      }
+     ],
+     "answer": "BD",
+     "analysis": "判断两个函数是否相同，要看定义域与对应关系是否都一致。A 中 g(x) = √(x²) = |x|，与 f(x) = x 的对应关系不同；C 中 g(x) 的定义域不含 0，与 f(x) 的定义域不同；B 中两函数化简后都是 |x| 且定义域都是 R；D 中只是自变量字母不同，定义域与对应关系完全一致。",
+     "no": 9,
+     "itemId": "mej_exam_b2_u01_q09"
+    },
+    {
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1032"
+     ],
+     "stem": "已知函数 f(x) 在 R 上单调递增，则下列结论一定正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "f(0) < f(1)"
+      },
+      {
+       "label": "B",
+       "text": "f(-1) > f(1)"
+      },
+      {
+       "label": "C",
+       "text": "若 f(a) > f(b)，则 a > b"
+      },
+      {
+       "label": "D",
+       "text": "若 a < b，则 f(a) < f(b)"
+      }
+     ],
+     "answer": "ACD",
+     "analysis": "单调递增的含义是自变量越大，函数值越大。因为 0 < 1，所以 f(0) < f(1)，A 正确；因为 -1 < 1，应有 f(-1) < f(1)，B 错误；C 是增函数性质的逆用，函数值大则自变量一定大；D 正是增函数的定义。",
+     "no": 10,
+     "itemId": "mej_exam_b2_u01_q10"
+    },
+    {
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1036"
+     ],
+     "stem": "下列函数中，在区间 (0, +∞) 上单调递增的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = x^(1/2)"
+      },
+      {
+       "label": "B",
+       "text": "y = x^(-1)"
+      },
+      {
+       "label": "C",
+       "text": "y = x³"
+      },
+      {
+       "label": "D",
+       "text": "y = (1/2)^x"
+      }
+     ],
+     "answer": "AC",
+     "analysis": "幂函数 y = x^α 在 (0, +∞) 上，α > 0 时递增，α < 0 时递减，所以 x^(1/2) 与 x³ 递增，x^(-1) 递减；y = (1/2)^x 是底数小于 1 的指数函数，在 R 上单调递减。",
+     "no": 11,
+     "itemId": "mej_exam_b2_u01_q11"
+    },
+    {
+     "score": 5,
+     "type": "multi",
+     "difficulty": "hard",
+     "topicIds": [
+      "mej_h1034",
+      "mej_h1029"
+     ],
+     "stem": "已知 f(x) 是定义在 R 上的奇函数，且当 x > 0 时 f(x) = x² - 2x，则下列结论正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "f(0) = 0"
+      },
+      {
+       "label": "B",
+       "text": "f(-1) = -1"
+      },
+      {
+       "label": "C",
+       "text": "当 x < 0 时，f(x) = -x² - 2x"
+      },
+      {
+       "label": "D",
+       "text": "f(x) 在 (0, +∞) 上单调递增"
+      }
+     ],
+     "answer": "AC",
+     "analysis": "奇函数在原点有定义时必有 f(0) = 0，A 正确。f(1) = 1 - 2 = -1，故 f(-1) = -f(1) = 1，B 错误。当 x < 0 时 -x > 0，f(x) = -f(-x) = -[(-x)² - 2(-x)] = -x² - 2x，C 正确。x² - 2x 在 (0,1) 上递减，故 D 错误。",
+     "no": 12,
+     "itemId": "mej_exam_b2_u01_q12"
+    }
+   ]
+  },
+  {
+   "title": "三、填空题（本大题共 4 小题，每小题 5 分，共 20 分）",
+   "items": [
+    {
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1029"
+     ],
+     "stem": "已知 f(x) = (x+1)/(x-1)，则 f(2) + f(3) 的值为 ____。",
+     "answer": "5",
+     "analysis": "分别代入计算：f(2) = 3/1 = 3，f(3) = 4/2 = 2，所以 f(2) + f(3) = 5。代入时分子分母要同时算完，注意分母不为零这一前提。",
+     "verify": {
+      "type": "num",
+      "value": 5
+     },
+     "no": 13,
+     "itemId": "mej_exam_b2_u01_q13"
+    },
+    {
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1034"
+     ],
+     "stem": "已知 f(x) 是偶函数，且当 x ≥ 0 时 f(x) = x² - 3x，则 f(-2) = ____。",
+     "answer": "-2",
+     "analysis": "偶函数满足 f(-x) = f(x)，所以 f(-2) = f(2)。把 2 代入 x ≥ 0 时的表达式得 4 - 6 = -2，负号不能丢。",
+     "verify": {
+      "type": "num",
+      "value": -2
+     },
+     "no": 14,
+     "itemId": "mej_exam_b2_u01_q14"
+    },
+    {
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1031"
+     ],
+     "stem": "设 f(x) = { 2x, x ≤ 1 ; x + 1, x > 1 }，若 f(a) = 4，则实数 a 的值为 ____。",
+     "answer": "3",
+     "analysis": "分段函数由函数值反求自变量要按段讨论并回代检验。若 a ≤ 1，由 2a = 4 得 a = 2，与 a ≤ 1 矛盾，舍去；若 a > 1，由 a + 1 = 4 得 a = 3，符合该段范围，故 a = 3。",
+     "verify": {
+      "type": "num",
+      "value": 3
+     },
+     "no": 15,
+     "itemId": "mej_exam_b2_u01_q15"
+    },
+    {
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1036"
+     ],
+     "stem": "已知幂函数 f(x) = x^α 的图象经过点 (4, 2)，则 α = ____。",
+     "answer": "1/2",
+     "analysis": "把点 (4, 2) 代入得 4^α = 2，即 2^(2α) = 2^1，所以 2α = 1，α = 1/2。也可由 √4 = 2 直接看出指数为 1/2。",
+     "verify": {
+      "type": "op",
+      "op": "div",
+      "values": [
+       {
+        "type": "num",
+        "value": 1
+       },
+       {
+        "type": "num",
+        "value": 2
+       }
+      ]
+     },
+     "no": 16,
+     "itemId": "mej_exam_b2_u01_q16"
+    }
+   ]
+  },
+  {
+   "title": "四、解答题（本大题共 6 小题，共 70 分，解答应写出文字说明、证明过程或演算步骤）",
+   "items": [
+    {
+     "score": 10,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1029",
+      "mej_h1030",
+      "mej_h1033"
+     ],
+     "stem": "已知函数 f(x) = x² - 4x + 3。\n(1) 求 f(x) 在区间 [0, 3] 上的最大值与最小值；\n(2) 若 f(x) 在区间 [a, a+2] 上单调递减，求实数 a 的取值范围。",
+     "answer": "(1) 最大值为 3，最小值为 -1；(2) a ≤ 0",
+     "analysis": "先配方确定开口方向与对称轴：f(x) = (x-2)² - 1，开口向上，对称轴 x = 2。闭区间上求最值要比较顶点与两端点，本题顶点 2 落在区间内，最小值在顶点取得。单调性由对称轴划分，要让整个区间落在递减区间内，必须使区间右端点不超过 2。",
+     "scoreRule": [
+      {
+       "step": "配方得 f(x) = (x-2)² - 1，对称轴为 x = 2，且 2∈[0,3]",
+       "score": 3
+      },
+      {
+       "step": "最小值 f(2) = -1；端点值 f(0) = 3、f(3) = 0，故最大值为 3",
+       "score": 4
+      },
+      {
+       "step": "f(x) 的单调递减区间为 (-∞, 2]，由 [a, a+2] ⊆ (-∞, 2] 得 a + 2 ≤ 2，即 a ≤ 0",
+       "score": 3
+      }
+     ],
+     "no": 17,
+     "itemId": "mej_exam_b2_u01_q17"
+    },
+    {
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1031",
+      "mej_h1034"
+     ],
+     "stem": "已知 f(x) 是定义在 R 上的奇函数，当 x > 0 时 f(x) = x² - 2x。\n(1) 求 f(0)；\n(2) 求 x < 0 时 f(x) 的解析式；\n(3) 写出 f(x) 的单调递增区间。",
+     "answer": "(1) f(0) = 0；(2) 当 x < 0 时 f(x) = -x² - 2x；(3) 单调递增区间为 (-∞, -1] 与 [1, +∞)",
+     "analysis": "奇函数在 R 上有定义，故 f(0) = 0。求 x < 0 的解析式要用「-x > 0」把自变量转化到已知区间，再由 f(x) = -f(-x) 得到。单调性要分段观察：x > 0 时是开口向上的抛物线，x < 0 时是开口向下的抛物线。",
+     "scoreRule": [
+      {
+       "step": "由奇函数在 x = 0 处有定义得 f(0) = 0",
+       "score": 3
+      },
+      {
+       "step": "设 x < 0，则 -x > 0，f(-x) = x² + 2x，故 f(x) = -f(-x) = -x² - 2x",
+       "score": 5
+      },
+      {
+       "step": "x > 0 时 f(x) = (x-1)² - 1 在 [1, +∞) 递增；x < 0 时 f(x) = -(x+1)² + 1 在 (-∞, -1] 递增",
+       "score": 4
+      }
+     ],
+     "no": 18,
+     "itemId": "mej_exam_b2_u01_q18"
+    },
+    {
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1032",
+      "mej_h1033"
+     ],
+     "stem": "已知函数 f(x) = x + 1/x。\n(1) 用单调性的定义证明 f(x) 在区间 (1, +∞) 上单调递增；\n(2) 求 f(x) 在区间 [2, 4] 上的最大值与最小值。",
+     "answer": "(1) 证明见解析；(2) 最大值为 17/4，最小值为 5/2",
+     "analysis": "用定义证明单调性要按「取值—作差—变形—定号—结论」五步书写，作差后通分并把差式分解成 (x₁-x₂)(x₁x₂-1)/(x₁x₂) 的形式，再借已知区间判断各因式的符号。第 (2) 问利用已证单调性，把最值转化为端点处的函数值。",
+     "scoreRule": [
+      {
+       "step": "设 1 < x₁ < x₂，则 f(x₁) - f(x₂) = (x₁ - x₂)(x₁x₂ - 1)/(x₁x₂)",
+       "score": 6
+      },
+      {
+       "step": "由 1 < x₁ < x₂ 得 x₁ - x₂ < 0，x₁x₂ - 1 > 0，x₁x₂ > 0，故 f(x₁) - f(x₂) < 0，即 f(x) 在 (1, +∞) 上单调递增",
+       "score": 3
+      },
+      {
+       "step": "由单调性知最小值为 f(2) = 5/2，最大值为 f(4) = 17/4",
+       "score": 3
+      }
+     ],
+     "no": 19,
+     "itemId": "mej_exam_b2_u01_q19"
+    },
+    {
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mej_h1033",
+      "mej_h1035"
+     ],
+     "stem": "已知函数 f(x) = x² - 2ax + 3 在区间 [1, 3] 上的最小值为 g(a)，求 g(a) 的解析式。",
+     "answer": "g(a) = { 4 - 2a, a < 1 ; 3 - a², 1 ≤ a ≤ 3 ; 12 - 6a, a > 3 }",
+     "analysis": "二次函数在闭区间上的最值取决于对称轴与区间的相对位置，需要按轴在区间左侧、区间内、区间右侧三种情形分类讨论：轴在左侧时最小值在左端点取得，轴在区间内时最小值在顶点取得，轴在右侧时最小值在右端点取得。",
+     "scoreRule": [
+      {
+       "step": "f(x) = (x-a)² + 3 - a²，对称轴为 x = a，开口向上",
+       "score": 4
+      },
+      {
+       "step": "当 a < 1 时，f(x) 在 [1,3] 上递增，g(a) = f(1) = 4 - 2a",
+       "score": 4
+      },
+      {
+       "step": "当 1 ≤ a ≤ 3 时，g(a) = f(a) = 3 - a²；当 a > 3 时，f(x) 在 [1,3] 上递减，g(a) = f(3) = 12 - 6a",
+       "score": 4
+      }
+     ],
+     "no": 20,
+     "itemId": "mej_exam_b2_u01_q20"
+    },
+    {
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1036",
+      "mej_h004"
+     ],
+     "stem": "某工厂生产某种产品的年产量 y（万件）与年投入 x（万元）之间满足幂函数模型 y = k·x^(1/2)。已知年投入 4 万元时年产量为 6 万件。\n(1) 求 k 的值与函数的解析式；\n(2) 若年投入 36 万元，求年产量；\n(3) 要使年产量不低于 15 万件，年投入至少应为多少万元？",
+     "answer": "(1) k = 3，y = 3√x（x ≥ 0）；(2) 18 万件；(3) 至少 25 万元",
+     "analysis": "先用一组对应数据确定待定系数：把 x = 4、y = 6 代入得 6 = k·2，所以 k = 3，解析式为 y = 3√x。求函数值时代入即可；解不等式时两边平方前要注意 x ≥ 0 这一实际条件，从而取到正确的区间端点。",
+     "scoreRule": [
+      {
+       "step": "由 6 = k·√4 = 2k 得 k = 3，故 y = 3√x",
+       "score": 4
+      },
+      {
+       "step": "当 x = 36 时，y = 3×6 = 18（万件）",
+       "score": 4
+      },
+      {
+       "step": "由 3√x ≥ 15 得 √x ≥ 5，即 x ≥ 25，故年投入至少 25 万元",
+       "score": 4
+      }
+     ],
+     "no": 21,
+     "itemId": "mej_exam_b2_u01_q21"
+    },
+    {
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mej_h004",
+      "mej_h1032",
+      "mej_h1034"
+     ],
+     "stem": "已知函数 f(x) = (ax + b)/(x² + 1) 是定义在 R 上的奇函数，且 f(1) = 1/2。\n(1) 求 a、b 的值；\n(2) 判断 f(x) 在区间 (-1, 1) 上的单调性，并用定义证明。",
+     "answer": "(1) a = 1，b = 0，即 f(x) = x/(x²+1)；(2) f(x) 在 (-1, 1) 上单调递增",
+     "analysis": "奇函数在 R 上有定义，故 f(0) = 0，由此先定出 b；再由 f(1) = 1/2 定出 a。判断单调性需按定义作差，把差式化为 (x₁ - x₂)(1 - x₁x₂)/((1+x₁²)(1+x₂²))，利用 -1 < x₁ < x₂ < 1 判断每个因式的符号。",
+     "scoreRule": [
+      {
+       "step": "由 f(0) = 0 得 b = 0，此时 f(x) = ax/(x²+1)",
+       "score": 4
+      },
+      {
+       "step": "由 f(1) = a/2 = 1/2 得 a = 1",
+       "score": 2
+      },
+      {
+       "step": "设 -1 < x₁ < x₂ < 1，则 f(x₁) - f(x₂) = (x₁ - x₂)(1 - x₁x₂)/((1+x₁²)(1+x₂²))，其中 x₁ - x₂ < 0，1 - x₁x₂ > 0，故 f(x₁) < f(x₂)，f(x) 在 (-1, 1) 上单调递增",
+       "score": 6
+      }
+     ],
+     "no": 22,
+     "itemId": "mej_exam_b2_u01_q22"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,624 @@
+{
+  "book": "鄂教版必修第一册",
+  "kind": "mid",
+  "paper": "期中测试卷B",
+  "stage": "高中",
+  "grade": 10,
+  "duration": 120,
+  "fullScore": 150,
+  "scope": [
+    "鄂教版必修第一册 第1章"
+  ],
+  "examId": "mej_exam_b1_mid_b",
+  "sections": [
+    {
+      "title": "一、单选题（本大题共 8 小题，每小题 5 分，共 40 分）",
+      "items": [
+        {
+          "no": 1,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "topicIds": [
+            "mej_h1001"
+          ],
+          "stem": "集合 A = {0, 1, x} 中的实数 x 使得 x² 仍是 A 中的元素，则 x 的取值只能是（　）。",
+          "answer": "A",
+          "analysis": "由 x²∈{0, 1, x} 分三种情形讨论：若 x² = 0 则 x = 0，此时 A 中两个元素都是 0，违反互异性；若 x² = 1 则 x = 1 或 -1，其中 x = 1 仍使元素重复，只有 x = -1 可行，此时 A = {0, 1, -1}；若 x² = x 则 x = 0 或 1，都被排除。故 x = -1。",
+          "options": [
+            {
+              "label": "A",
+              "text": "-1"
+            },
+            {
+              "label": "B",
+              "text": "1"
+            },
+            {
+              "label": "C",
+              "text": "0"
+            },
+            {
+              "label": "D",
+              "text": "±1"
+            }
+          ],
+          "itemId": "mej_exam_b1_mid_b_q01"
+        },
+        {
+          "no": 2,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mej_h1002"
+          ],
+          "stem": "所有被 3 除余 1 的整数组成的集合，用描述法表示为（　）。",
+          "answer": "A",
+          "analysis": "被 3 除余 1 的整数包括 ……、-5、-2、1、4、7、……，写成 3n + 1 时 n 必须取遍全体整数（n = 0 给出 1，n = -1 给出 -2）。B 的表达式形式不符，C、D 只取了非负或正整数，漏掉了负数。",
+          "options": [
+            {
+              "label": "A",
+              "text": "{x | x = 3n + 1, n∈Z}"
+            },
+            {
+              "label": "B",
+              "text": "{x | x = 3n - 1, n∈N}"
+            },
+            {
+              "label": "C",
+              "text": "{x | x = 3n + 1, n∈N}"
+            },
+            {
+              "label": "D",
+              "text": "{x | x = 3n + 1, n∈Z 且 n > 0}"
+            }
+          ],
+          "itemId": "mej_exam_b1_mid_b_q02"
+        },
+        {
+          "no": 3,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mej_h1004"
+          ],
+          "stem": "集合 {x∈N | 1 ≤ x ≤ 4} 的子集共有（　）个。",
+          "answer": "C",
+          "analysis": "该集合为 {1, 2, 3, 4}，含 4 个元素，子集个数为 2⁴ = 16。注意问的是子集（含自身与空集），不是真子集。",
+          "options": [
+            {
+              "label": "A",
+              "text": "8"
+            },
+            {
+              "label": "B",
+              "text": "15"
+            },
+            {
+              "label": "C",
+              "text": "16"
+            },
+            {
+              "label": "D",
+              "text": "32"
+            }
+          ],
+          "verify": "2**4",
+          "itemId": "mej_exam_b1_mid_b_q03"
+        },
+        {
+          "no": 4,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mej_h1005"
+          ],
+          "stem": "下列关系或写法中，正确的是（　）。",
+          "answer": "C",
+          "analysis": "空集是任何集合的子集，而 {∅} 是含有一个元素（空集）的集合，所以 ∅⊆{∅} 成立。A 把集合误作元素；空集中没有元素，B 错；{0} 含元素 0，与空集不同，D 错。",
+          "options": [
+            {
+              "label": "A",
+              "text": "∅∈{0}"
+            },
+            {
+              "label": "B",
+              "text": "0∈∅"
+            },
+            {
+              "label": "C",
+              "text": "∅⊆{∅}"
+            },
+            {
+              "label": "D",
+              "text": "{0} = ∅"
+            }
+          ],
+          "itemId": "mej_exam_b1_mid_b_q04"
+        },
+        {
+          "no": 5,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "basic",
+          "topicIds": [
+            "mej_h1007"
+          ],
+          "stem": "已知集合 A = {1, 3, 5}，B = {5, 7, 9}，则 A∪B =（　）。",
+          "answer": "B",
+          "analysis": "并集把两个集合的元素合并，重复的元素只写一次：1、3、5 与 5、7、9 合并后得 {1, 3, 5, 7, 9}。选项 D 把 5 写了两次，不符合集合元素的互异性。",
+          "options": [
+            {
+              "label": "A",
+              "text": "{5}"
+            },
+            {
+              "label": "B",
+              "text": "{1, 3, 5, 7, 9}"
+            },
+            {
+              "label": "C",
+              "text": "{1, 3, 7, 9}"
+            },
+            {
+              "label": "D",
+              "text": "{1, 3, 5, 5, 7, 9}"
+            }
+          ],
+          "itemId": "mej_exam_b1_mid_b_q05"
+        },
+        {
+          "no": 6,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "topicIds": [
+            "mej_h1006",
+            "mej_h1008"
+          ],
+          "stem": "设全集 U = {1, 2, 3, 4, 5}，A = {1, 2}，B = {2, 3}，则 ∁U(A∩B) =（　）。",
+          "answer": "A",
+          "analysis": "先求交集 A∩B = {2}，再从 U 中去掉 2，得 {1, 3, 4, 5}。",
+          "options": [
+            {
+              "label": "A",
+              "text": "{1, 3, 4, 5}"
+            },
+            {
+              "label": "B",
+              "text": "{2, 4, 5}"
+            },
+            {
+              "label": "C",
+              "text": "{4, 5}"
+            },
+            {
+              "label": "D",
+              "text": "{1, 2, 3, 4, 5}"
+            }
+          ],
+          "itemId": "mej_exam_b1_mid_b_q06"
+        },
+        {
+          "no": 7,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "standard",
+          "topicIds": [
+            "mej_h1009"
+          ],
+          "stem": "已知集合 A = {x∈Z | x² ≤ 2}，B = {x∈Z | 0 < x < 4}，则 A∪B =（　）。",
+          "answer": "A",
+          "analysis": "x² ≤ 2 的整数解为 -1、0、1，即 A = {-1, 0, 1}；0 < x < 4 的整数解为 1、2、3，即 B = {1, 2, 3}。合并去重得 {-1, 0, 1, 2, 3}。",
+          "options": [
+            {
+              "label": "A",
+              "text": "{-1, 0, 1, 2, 3}"
+            },
+            {
+              "label": "B",
+              "text": "{0, 1, 2, 3}"
+            },
+            {
+              "label": "C",
+              "text": "{1, 2, 3}"
+            },
+            {
+              "label": "D",
+              "text": "{-1, 1, 2, 3}"
+            }
+          ],
+          "itemId": "mej_exam_b1_mid_b_q07"
+        },
+        {
+          "no": 8,
+          "score": 5,
+          "type": "choice",
+          "difficulty": "hard",
+          "topicIds": [
+            "mej_h1007",
+            "mej_h1010"
+          ],
+          "stem": "设有限集合 A、B 满足 A 有 10 个元素，B 有 8 个元素，A∪B 有 15 个元素，则 A∩B 中元素的个数是（　）。",
+          "answer": "B",
+          "analysis": "在 A∪B 中，公共元素被 A、B 各算了一次，故 |A∪B| = |A| + |B| - |A∩B|，即 15 = 10 + 8 - |A∩B|，解得 |A∩B| = 3。",
+          "options": [
+            {
+              "label": "A",
+              "text": "2"
+            },
+            {
+              "label": "B",
+              "text": "3"
+            },
+            {
+              "label": "C",
+              "text": "4"
+            },
+            {
+              "label": "D",
+              "text": "5"
+            }
+          ],
+          "verify": "10+8-15",
+          "itemId": "mej_exam_b1_mid_b_q08"
+        }
+      ]
+    },
+    {
+      "title": "二、多选题（本大题共 4 小题，每小题 5 分，共 20 分）",
+      "items": [
+        {
+          "no": 9,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "standard",
+          "topicIds": [
+            "mej_h1004",
+            "mej_h1005"
+          ],
+          "stem": "关于集合与子集，下列说法正确的是（　）。",
+          "answer": "ACD",
+          "analysis": "空集是任何集合的子集，A 对；空集只有一个子集（它自己），所以「至少两个」不成立，B 错；含 3 个元素的集合有 8 个子集，去掉空集与自身得 6 个非空真子集，C 对；互相包含的两个集合相等，D 对。",
+          "options": [
+            {
+              "label": "A",
+              "text": "空集是任何集合的子集"
+            },
+            {
+              "label": "B",
+              "text": "任何集合都至少有两个子集"
+            },
+            {
+              "label": "C",
+              "text": "集合 {1, 2, 3} 的非空真子集共有 6 个"
+            },
+            {
+              "label": "D",
+              "text": "若 A⊆B 且 B⊆A，则 A = B"
+            }
+          ],
+          "itemId": "mej_exam_b1_mid_b_q09"
+        },
+        {
+          "no": 10,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "standard",
+          "topicIds": [
+            "mej_h1006",
+            "mej_h1007"
+          ],
+          "stem": "已知 A = {1, 2, 3, 4, 5}，B = {1, 3, 5}，则（　）。",
+          "answer": "ABD",
+          "analysis": "公共元素就是 B 的全部元素，故 A∩B = {1, 3, 5}，A 对；B 是 A 的一部分，并集仍为 A，B 对；B 的每个元素都在 A 中，所以 B 是 A 的子集，C 错；A 含 5 个元素，D 对。",
+          "options": [
+            {
+              "label": "A",
+              "text": "A∩B = {1, 3, 5}"
+            },
+            {
+              "label": "B",
+              "text": "A∪B = {1, 2, 3, 4, 5}"
+            },
+            {
+              "label": "C",
+              "text": "B 不是 A 的子集"
+            },
+            {
+              "label": "D",
+              "text": "A 中含有 5 个元素"
+            }
+          ],
+          "itemId": "mej_exam_b1_mid_b_q10"
+        },
+        {
+          "no": 11,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "standard",
+          "topicIds": [
+            "mej_h1009",
+            "mej_h1003"
+          ],
+          "stem": "已知集合 A = {x∈Z | -1 ≤ x ≤ 2}，则下列说法正确的是（　）。",
+          "answer": "ABC",
+          "analysis": "A = {-1, 0, 1, 2}，含 4 个元素，0 在其中，A 对；子集个数 2⁴ = 16，B 对；非空真子集为 16 - 2 = 14 个，C 对；-2 不满足 -1 ≤ x，D 错。",
+          "options": [
+            {
+              "label": "A",
+              "text": "0 是 A 的元素"
+            },
+            {
+              "label": "B",
+              "text": "A 的子集共有 16 个"
+            },
+            {
+              "label": "C",
+              "text": "A 的非空真子集共有 14 个"
+            },
+            {
+              "label": "D",
+              "text": "-2 是 A 的元素"
+            }
+          ],
+          "itemId": "mej_exam_b1_mid_b_q11"
+        },
+        {
+          "no": 12,
+          "score": 5,
+          "type": "multi",
+          "difficulty": "standard",
+          "topicIds": [
+            "mej_h1009",
+            "mej_h1010"
+          ],
+          "stem": "已知集合 A = {1, 2, 3}，B = {x | x∈A 且 x > 1}，则（　）。",
+          "answer": "BCD",
+          "analysis": "A 中大于 1 的元素是 2 和 3，故 B = {2, 3}，A 错；B 的元素都在 A 中且 B 与 A 不相等，故 B 是 A 的真子集，B、C 对；B 含 2 个元素，D 对。",
+          "options": [
+            {
+              "label": "A",
+              "text": "B = {1, 2}"
+            },
+            {
+              "label": "B",
+              "text": "B 是 A 的真子集"
+            },
+            {
+              "label": "C",
+              "text": "B ⊆ A"
+            },
+            {
+              "label": "D",
+              "text": "B 中含有 2 个元素"
+            }
+          ],
+          "itemId": "mej_exam_b1_mid_b_q12"
+        }
+      ]
+    },
+    {
+      "title": "三、填空题（本大题共 4 小题，每小题 5 分，共 20 分）",
+      "items": [
+        {
+          "no": 13,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "topicIds": [
+            "mej_h1003"
+          ],
+          "stem": "6 的全部正因数组成的集合用列举法表示为 ____。",
+          "answer": "{1, 2, 3, 6}",
+          "analysis": "6 的正因数是能整除 6 的正整数：1、2、3、6，用列举法写成 {1, 2, 3, 6}。",
+          "itemId": "mej_exam_b1_mid_b_q13"
+        },
+        {
+          "no": 14,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "standard",
+          "topicIds": [
+            "mej_h1004"
+          ],
+          "stem": "满足 {1} ⊆ M ⊊ {1, 2, 3} 的集合 M 共有 ____ 个。",
+          "answer": "3",
+          "analysis": "M 必须含 1，且 M 是 {1, 2, 3} 的真子集（不能等于 {1, 2, 3}）。逐个列出：{1}、{1, 2}、{1, 3}，共 3 个。",
+          "itemId": "mej_exam_b1_mid_b_q14"
+        },
+        {
+          "no": 15,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "basic",
+          "topicIds": [
+            "mej_h1008"
+          ],
+          "stem": "设全集 U = {1, 2, 3, 4, 5}，A = {1, 2, 3}，则 ∁U A = ____。",
+          "answer": "{4, 5}",
+          "analysis": "U 中去掉 A 的元素 1、2、3，剩下 4 和 5，故 ∁U A = {4, 5}。",
+          "itemId": "mej_exam_b1_mid_b_q15"
+        },
+        {
+          "no": 16,
+          "score": 5,
+          "type": "fill",
+          "difficulty": "standard",
+          "topicIds": [
+            "mej_h1010"
+          ],
+          "stem": "某班 45 名学生中，参加书法组的有 20 人，参加绘画组的有 18 人，两组都参加的有 8 人，则两组都不参加的有 ____ 人。",
+          "answer": "15",
+          "analysis": "至少参加一组的有 20 + 18 - 8 = 30 人，全班 45 人减去这 30 人，得两组都不参加的 15 人。",
+          "verify": "45-(20+18-8)",
+          "itemId": "mej_exam_b1_mid_b_q16"
+        }
+      ]
+    },
+    {
+      "title": "四、解答题（本大题共 6 小题，共 70 分，解答应写出文字说明、证明过程或演算步骤）",
+      "items": [
+        {
+          "no": 17,
+          "score": 10,
+          "type": "solve",
+          "difficulty": "standard",
+          "topicIds": [
+            "mej_h1002",
+            "mej_h1003",
+            "mej_h1006"
+          ],
+          "stem": "已知集合 A = {x∈Z | -3 < x ≤ 2}，B = {x∈N | x < 4}。\n(1) 用列举法表示 A 与 B；\n(2) 求 A∩B；\n(3) 求 A∩B 的子集个数。",
+          "answer": "A = {-2, -1, 0, 1, 2}，B = {0, 1, 2, 3}；A∩B = {0, 1, 2}；A∩B 的子集共 8 个",
+          "analysis": "-3 < x ≤ 2 的整数为 -2、-1、0、1、2；小于 4 的自然数为 0、1、2、3。公共元素是 0、1、2，含 3 个元素，故子集个数为 2³ = 8。",
+          "scoreRule": [
+            {
+              "step": "由 -3 < x ≤ 2 得 A = {-2, -1, 0, 1, 2}，由 x∈N 且 x < 4 得 B = {0, 1, 2, 3}",
+              "score": 3
+            },
+            {
+              "step": "A∩B = {0, 1, 2}",
+              "score": 4
+            },
+            {
+              "step": "A∩B 含 3 个元素，子集个数 2³ = 8",
+              "score": 3
+            }
+          ],
+          "itemId": "mej_exam_b1_mid_b_q17"
+        },
+        {
+          "no": 18,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "standard",
+          "topicIds": [
+            "mej_h1005",
+            "mej_h1008",
+            "mej_h1009"
+          ],
+          "stem": "设全集 U = {1, 2, 3, 4, 5}，集合 A = {x | x² - 5x + m = 0}，且 ∁U A = {1, 4, 5}。\n(1) 求 m 的值与集合 A；\n(2) 写出集合 A 的所有子集。",
+          "answer": "(1) A = {2, 3}，m = 6；(2) 子集为 ∅、{2}、{3}、{2, 3}",
+          "analysis": "由补集可知 A 中的元素是 U 中除去 1、4、5 的那两个数，即 A = {2, 3}。两根之积等于常数项，故 m = 2 × 3 = 6（也可由 2x 与 3x 代入方程验证）。含 2 个元素的集合的 4 个子集可以按元素个数逐一写出。",
+          "scoreRule": [
+            {
+              "step": "由 ∁U A = {1, 4, 5} 得 A = {2, 3}",
+              "score": 6
+            },
+            {
+              "step": "由两根之积 m = 2 × 3 = 6，并逐一写出 4 个子集 ∅、{2}、{3}、{2, 3}",
+              "score": 6
+            }
+          ],
+          "verify": "2*3",
+          "itemId": "mej_exam_b1_mid_b_q18"
+        },
+        {
+          "no": 19,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "hard",
+          "topicIds": [
+            "mej_h1004",
+            "mej_h1005",
+            "mej_h1009"
+          ],
+          "stem": "已知集合 A = {1, 2, 3}，B = {x | x² - ax + a - 1 = 0}。若 B ⊆ A，求实数 a 的所有可能取值。",
+          "answer": "a = 2 或 a = 3 或 a = 4",
+          "analysis": "方程左边可分解为 (x - 1)(x - a + 1)，故 B = {1, a - 1}。要使 B ⊆ A = {1, 2, 3}，只需 a - 1 取 1、2、3，即 a = 2、3、4。当 a = 2 时 B = {1}（两根相同），仍满足 B ⊆ A，所以三种取值都要保留。",
+          "scoreRule": [
+            {
+              "step": "因式分解得 (x - 1)(x - a + 1)，故 B = {1, a - 1}",
+              "score": 5
+            },
+            {
+              "step": "由 B ⊆ A 得 a - 1 ∈ {1, 2, 3}，解出 a = 2、3、4",
+              "score": 7
+            }
+          ],
+          "itemId": "mej_exam_b1_mid_b_q19"
+        },
+        {
+          "no": 20,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "hard",
+          "topicIds": [
+            "mej_h1010"
+          ],
+          "stem": "某校随机调查 100 名学生，其中喜欢数学的有 60 人，喜欢物理的有 50 人，喜欢化学的有 40 人；数学、物理都喜欢的有 30 人，数学、化学都喜欢的有 25 人，物理、化学都喜欢的有 20 人，三科都喜欢的有 15 人。\n(1) 求至少喜欢一科的人数；\n(2) 求三科都不喜欢的人数。",
+          "answer": "(1) 90 人；(2) 10 人",
+          "analysis": "用容斥原理：只算一次的各科人数之和，减去被重复计算的两两公共部分，再加上被多减的三科公共部分，即 60 + 50 + 40 - 30 - 25 - 20 + 15 = 90，这就是至少喜欢一科的人数。总人数 100 减去 90，得三科都不喜欢的 10 人。",
+          "scoreRule": [
+            {
+              "step": "写出容斥式 60 + 50 + 40 - 30 - 25 - 20 + 15 并算出 90",
+              "score": 8
+            },
+            {
+              "step": "用 100 - 90 = 10 得三科都不喜欢的人数",
+              "score": 4
+            }
+          ],
+          "verify": "60+50+40-30-25-20+15",
+          "itemId": "mej_exam_b1_mid_b_q20"
+        },
+        {
+          "no": 21,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "standard",
+          "topicIds": [
+            "mej_h1010",
+            "mej_h1009"
+          ],
+          "stem": "规定 A⊕B = {x | x∈A∪B 且 x∉A∩B}。已知 A = {1, 2, 3, 4}，B = {3, 4, 5}。\n(1) 求 A⊕B；\n(2) 求 (A⊕B)∩A；\n(3) 求 (A⊕B)∪B。",
+          "answer": "(1) A⊕B = {1, 2, 5}；(2) (A⊕B)∩A = {1, 2}；(3) (A⊕B)∪B = {1, 2, 3, 4, 5}",
+          "analysis": "A∪B = {1, 2, 3, 4, 5}，A∩B = {3, 4}，从并集中去掉公共的 3、4，得 A⊕B = {1, 2, 5}。它与 A 的公共元素是 1、2；与 B 合并后得 {1, 2, 3, 4, 5}。",
+          "scoreRule": [
+            {
+              "step": "A∪B = {1, 2, 3, 4, 5}，A∩B = {3, 4}，故 A⊕B = {1, 2, 5}",
+              "score": 4
+            },
+            {
+              "step": "(A⊕B)∩A = {1, 2}",
+              "score": 4
+            },
+            {
+              "step": "(A⊕B)∪B = {1, 2, 3, 4, 5}",
+              "score": 4
+            }
+          ],
+          "itemId": "mej_exam_b1_mid_b_q21"
+        },
+        {
+          "no": 22,
+          "score": 12,
+          "type": "solve",
+          "difficulty": "standard",
+          "topicIds": [
+            "mej_h1004",
+            "mej_h1009"
+          ],
+          "stem": "已知集合 A = {x∈Z | 0 ≤ x ≤ 4}。\n(1) 求 A 的含元素 0 且不含元素 1 的子集个数；\n(2) 求 A 的非空真子集个数。",
+          "answer": "(1) 8 个；(2) 30 个",
+          "analysis": "先写出 A = {0, 1, 2, 3, 4}，含 5 个元素。(1) 0 必取、1 必不取，剩下的 2、3、4 各自可取可不取，共 2³ = 8 个。(2) 全部子集有 2⁵ = 32 个，去掉空集与自身，非空真子集为 30 个。",
+          "scoreRule": [
+            {
+              "step": "写出 A = {0, 1, 2, 3, 4}；(1) 0 取、1 舍，2、3、4 自由取舍，得 2³ = 8 个",
+              "score": 6
+            },
+            {
+              "step": "(2) 子集共 2⁵ = 32 个，非空真子集为 32 - 2 = 30 个",
+              "score": 6
+            }
+          ],
+          "itemId": "mej_exam_b1_mid_b_q22"
+        }
+      ]
+    }
+  ]
+}

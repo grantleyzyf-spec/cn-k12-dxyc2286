@@ -1,0 +1,683 @@
+{
+ "book": "鄂教版选择性必修第二册",
+ "kind": "mid",
+ "paper": "期中测试卷A",
+ "stage": "高中",
+ "grade": 15,
+ "duration": 120,
+ "fullScore": 150,
+ "scope": [
+  "鄂教版选择性必修第二册 第1章 数列"
+ ],
+ "examId": "mej_exam_x2_mid_a",
+ "sections": [
+  {
+   "title": "一、单选题（本大题共 8 小题，每小题 5 分，共 40 分）",
+   "items": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1159"
+     ],
+     "stem": "数列 -1，1/2，-1/3，1/4，… 的一个通项公式是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "a_n = (-1)ⁿ/n"
+      },
+      {
+       "label": "B",
+       "text": "a_n = (-1)ⁿ⁺¹/n"
+      },
+      {
+       "label": "C",
+       "text": "a_n = (-1)ⁿ/n²"
+      },
+      {
+       "label": "D",
+       "text": "a_n = 1/n"
+      }
+     ],
+     "answer": "A",
+     "analysis": "观察符号每隔一项变号，且分母依次为 1、2、3、4，故通项含 (-1)ⁿ 与 1/n 两个部分，n = 1 时恰为 -1。",
+     "no": 1,
+     "itemId": "mej_exam_x2_mid_a_q01",
+     "score": 5
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1160"
+     ],
+     "stem": "已知数列 {a_n} 的前 n 项和 S_n = n² + n，则 a₃ 等于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "12"
+      },
+      {
+       "label": "D",
+       "text": "3"
+      }
+     ],
+     "answer": "A",
+     "analysis": "由 a_n = S_n - S_{n-1} 得 a₃ = S₃ - S₂ = (9 + 3) - (4 + 2) = 12 - 6 = 6。",
+     "verify": "12-6",
+     "no": 2,
+     "itemId": "mej_exam_x2_mid_a_q02",
+     "score": 5
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1161"
+     ],
+     "stem": "在等差数列 {a_n} 中，a₅ = 11，公差 d = 2，则 a₁₅ 等于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "31"
+      },
+      {
+       "label": "B",
+       "text": "29"
+      },
+      {
+       "label": "C",
+       "text": "33"
+      },
+      {
+       "label": "D",
+       "text": "27"
+      }
+     ],
+     "answer": "A",
+     "analysis": "a₁₅ = a₅ + 10d = 11 + 10×2 = 31。",
+     "verify": "11+20",
+     "no": 3,
+     "itemId": "mej_exam_x2_mid_a_q03",
+     "score": 5
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1162"
+     ],
+     "stem": "在等差数列 {a_n} 中，若 a₂ + a₅ + a₈ = 15，则前 9 项和 S₉ 等于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "45"
+      },
+      {
+       "label": "B",
+       "text": "30"
+      },
+      {
+       "label": "C",
+       "text": "15"
+      },
+      {
+       "label": "D",
+       "text": "60"
+      }
+     ],
+     "answer": "A",
+     "analysis": "由等差中项，a₂ + a₈ = 2a₅，故 3a₅ = 15，a₅ = 5；又 S₉ = 9a₅ = 45。",
+     "verify": "9*5",
+     "no": 4,
+     "itemId": "mej_exam_x2_mid_a_q04",
+     "score": 5
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1163"
+     ],
+     "stem": "已知等差数列 {a_n} 的前 n 项和 S_n = n² - 2n，则 a₃ 等于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "A",
+     "analysis": "a₃ = S₃ - S₂ = (9 - 6) - (4 - 4) = 3 - 0 = 3。",
+     "no": 5,
+     "itemId": "mej_exam_x2_mid_a_q05",
+     "score": 5
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1165"
+     ],
+     "stem": "在等比数列 {a_n} 中，a₁ = 1/2，a₄ = 4，则公比 q 等于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "-2"
+      },
+      {
+       "label": "C",
+       "text": "1/2"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "A",
+     "analysis": "由 a₄ = a₁q³ 得 (1/2)q³ = 4，即 q³ = 8，故 q = 2。",
+     "no": 6,
+     "itemId": "mej_exam_x2_mid_a_q06",
+     "score": 5
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1167"
+     ],
+     "stem": "等比数列 {a_n} 中，a₁ = 3，公比 q = -2，则前 5 项和 S₅ 等于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "33"
+      },
+      {
+       "label": "B",
+       "text": "-33"
+      },
+      {
+       "label": "C",
+       "text": "99"
+      },
+      {
+       "label": "D",
+       "text": "39"
+      }
+     ],
+     "answer": "A",
+     "analysis": "由求和公式 S₅ = 3×[1 - (-2)⁵]/[1 - (-2)] = 3×33/3 = 33。",
+     "verify": "3*(1-(-2)**5)/(1-(-2))",
+     "no": 7,
+     "itemId": "mej_exam_x2_mid_a_q07",
+     "score": 5
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1166"
+     ],
+     "stem": "在各项均为正数的等比数列 {a_n} 中，a₃ = 2，a₇ = 8，则 a₅ 等于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "16"
+      },
+      {
+       "label": "D",
+       "text": "±4"
+      }
+     ],
+     "answer": "A",
+     "analysis": "由等比中项关系 a₅² = a₃a₇ = 16，且各项为正，故 a₅ = 4。",
+     "no": 8,
+     "itemId": "mej_exam_x2_mid_a_q08",
+     "score": 5
+    }
+   ]
+  },
+  {
+   "title": "二、多选题（本大题共 4 小题，每小题 5 分，共 20 分；全部选对得 5 分，部分选对得 2 分）",
+   "items": [
+    {
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1169"
+     ],
+     "stem": "已知数列 {a_n} 的通项为 a_n = 2n + 2ⁿ⁻¹，前 n 项和为 S_n，则下列结论正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "S_n = n(n + 1) + 2ⁿ - 1"
+      },
+      {
+       "label": "B",
+       "text": "S₃ = 19"
+      },
+      {
+       "label": "C",
+       "text": "数列 {a_n} 是等差数列"
+      },
+      {
+       "label": "D",
+       "text": "数列 {a_n} 的每一项都是正数"
+      }
+     ],
+     "answer": "ABD",
+     "analysis": "把 a_n 拆成等差部分 2n 与等比部分 2ⁿ⁻¹ 分别求和：n(n+1) + (2ⁿ - 1)；n = 3 时和为 12 + 7 = 19；由于含指数项，相邻两项之差不是常数，故不是等差数列；每项都由正数相加而成，恒为正。",
+     "no": 9,
+     "itemId": "mej_exam_x2_mid_a_q09",
+     "score": 5
+    },
+    {
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1170"
+     ],
+     "stem": "用数学归纳法证明 1 + 3 + 5 + … + (2n - 1) = n² 时，下列理解正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "起点验证 n = 1 时两边都等于 1"
+      },
+      {
+       "label": "B",
+       "text": "从 n = k 到 n = k + 1，等式左边要增加 2k + 1"
+      },
+      {
+       "label": "C",
+       "text": "归纳递推的关键是用 k² + (2k + 1) = (k + 1)²"
+      },
+      {
+       "label": "D",
+       "text": "验证了 n = 5 时成立就能推出对一切正整数成立"
+      }
+     ],
+     "answer": "ABC",
+     "analysis": "归纳奠基取 n = 1，此时左、右两边都是 1；从 k 到 k + 1 左边多出第 k + 1 个奇数 2k + 1；递推时正好配成完全平方；只验证某一个具体值不能代替归纳递推，故末项错误。",
+     "no": 10,
+     "itemId": "mej_exam_x2_mid_a_q10",
+     "score": 5
+    },
+    {
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1164"
+     ],
+     "stem": "某产品堆成梯形垛，最上层有 3 件，往下每一层都比上一层多 2 件，最下层有 21 件，则下列结论正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "共有 10 层"
+      },
+      {
+       "label": "B",
+       "text": "该垛共有 120 件产品"
+      },
+      {
+       "label": "C",
+       "text": "共有 12 层"
+      },
+      {
+       "label": "D",
+       "text": "自上往下第 5 层有 11 件"
+      }
+     ],
+     "answer": "ABD",
+     "analysis": "各层件数构成首项 3、公差 2 的等差数列，由 21 = 3 + (n - 1)×2 得 n = 10；总数为 S₁₀ = 10×(3 + 21)/2 = 120；第 5 层为 3 + 4×2 = 11 件，故第三项错误。",
+     "no": 11,
+     "itemId": "mej_exam_x2_mid_a_q11",
+     "score": 5
+    },
+    {
+     "type": "multi",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1168"
+     ],
+     "stem": "某种细胞每 30 分钟分裂一次，每次 1 个细胞分裂成 2 个。若开始时有 1 个细胞，则下列结论正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "分裂 n 次后的细胞个数为 2ⁿ"
+      },
+      {
+       "label": "B",
+       "text": "经过 3 小时后细胞个数为 64"
+      },
+      {
+       "label": "C",
+       "text": "细胞个数构成公比为 2 的等比数列"
+      },
+      {
+       "label": "D",
+       "text": "经过 3 小时后细胞个数为 32"
+      }
+     ],
+     "answer": "ABC",
+     "analysis": "细胞个数依次为 1、2、4、8、…，是首项 1、公比 2 的等比数列，第 n 次分裂后为 2ⁿ 个；3 小时共有 6 个 30 分钟，即分裂 6 次，个数为 64，故末项错误。",
+     "no": 12,
+     "itemId": "mej_exam_x2_mid_a_q12",
+     "score": 5
+    }
+   ]
+  },
+  {
+   "title": "三、填空题（本大题共 4 小题，每小题 5 分，共 20 分）",
+   "items": [
+    {
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1161"
+     ],
+     "stem": "等差数列 {a_n} 中，a₁ = 5，公差 d = -2，则 a₁₀ = ____。",
+     "answer": "-13",
+     "analysis": "由通项公式 a₁₀ = a₁ + 9d = 5 - 18 = -13。",
+     "verify": "5-18",
+     "no": 13,
+     "itemId": "mej_exam_x2_mid_a_q13",
+     "score": 5
+    },
+    {
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1162"
+     ],
+     "stem": "在等差数列 {a_n} 中，若 a₁ + a₅ = 10，则 a₃ = ____。",
+     "answer": "5",
+     "analysis": "由等差中项，a₃ 是 a₁ 与 a₅ 的等差中项，故 a₃ = (a₁ + a₅)/2 = 5。",
+     "verify": "10/2",
+     "no": 14,
+     "itemId": "mej_exam_x2_mid_a_q14",
+     "score": 5
+    },
+    {
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1167"
+     ],
+     "stem": "在等比数列 {a_n} 中，a₁ = 2，公比 q = 3，则前 4 项和 S₄ = ____。",
+     "answer": "80",
+     "analysis": "S₄ = 2(3⁴ - 1)/(3 - 1) = 2×80/2 = 80。",
+     "verify": "2*(3**4-1)/2",
+     "no": 15,
+     "itemId": "mej_exam_x2_mid_a_q15",
+     "score": 5
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1160"
+     ],
+     "stem": "已知数列 {a_n} 满足 a₁ = 2，a_{n+1} = a_n + 2n（n ≥ 1），则 a₄ = ____。",
+     "answer": "14",
+     "analysis": "逐项递推：a₂ = 2 + 2 = 4，a₃ = 4 + 4 = 8，a₄ = 8 + 6 = 14。",
+     "verify": "2+2+4+6",
+     "no": 16,
+     "itemId": "mej_exam_x2_mid_a_q16",
+     "score": 5
+    }
+   ]
+  },
+  {
+   "title": "四、解答题（本大题共 6 小题，共 70 分，解答应写出文字说明、证明过程或演算步骤）",
+   "items": [
+    {
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1161",
+      "mej_h1163"
+     ],
+     "stem": "已知等差数列 {a_n} 中，a₄ = 9，a₉ = 24。\n(1) 求首项 a₁ 与公差 d；\n(2) 求前 n 项和 S_n，并求使 S_n > 100 成立的最小正整数 n。",
+     "answer": "(1) a₁ = 0，d = 3；(2) S_n = 3n(n - 1)/2，最小的 n 为 9",
+     "analysis": "先用通项公式列方程组求 a₁、d，再写出求和公式并解关于 n 的二次不等式，注意 n 取正整数。",
+     "score": 10,
+     "scoreRule": [
+      {
+       "step": "由 a₉ - a₄ = 5d 得 15 = 5d，d = 3",
+       "score": 3
+      },
+      {
+       "step": "代回 a₁ + 3d = 9 得 a₁ = 0",
+       "score": 2
+      },
+      {
+       "step": "S_n = 0 + n(n-1)×3/2 = 3n(n-1)/2",
+       "score": 3
+      },
+      {
+       "step": "由 3n(n-1)/2 > 100 得 n(n-1) > 66.7，n = 8 时不成立，n = 9 时成立",
+       "score": 2
+      }
+     ],
+     "no": 17,
+     "itemId": "mej_exam_x2_mid_a_q17"
+    },
+    {
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1165",
+      "mej_h1167"
+     ],
+     "stem": "已知等比数列 {a_n} 中，a₂ = 6，a₅ = 48。\n(1) 求公比 q 与通项公式；\n(2) 求前 6 项和 S₆。",
+     "answer": "(1) q = 2，a_n = 3×2ⁿ⁻¹；(2) S₆ = 189",
+     "analysis": "两式相除消去首项得到 q³，再求首项并写出通项；求和时用等比数列前 n 项和公式。",
+     "score": 12,
+     "scoreRule": [
+      {
+       "step": "a₅/a₂ = q³ = 8，故 q = 2",
+       "score": 3
+      },
+      {
+       "step": "由 a₂ = a₁q = 6 得 a₁ = 3，通项 a_n = 3×2ⁿ⁻¹",
+       "score": 3
+      },
+      {
+       "step": "S₆ = 3(2⁶ - 1)/(2 - 1)",
+       "score": 3
+      },
+      {
+       "step": "S₆ = 3×63 = 189",
+       "score": 3
+      }
+     ],
+     "no": 18,
+     "itemId": "mej_exam_x2_mid_a_q18"
+    },
+    {
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1163",
+      "mej_h1169"
+     ],
+     "stem": "已知数列 {a_n} 的前 n 项和为 S_n = n² + 2n。\n(1) 求数列 {a_n} 的通项公式；\n(2) 设 b_n = 1/(a_n·a_{n+1})，求数列 {b_n} 的前 n 项和 T_n。",
+     "answer": "(1) a_n = 2n + 1；(2) T_n = n/(6n + 9)",
+     "analysis": "用 a_n = S_n - S_{n-1}（n ≥ 2）求通项并单独检验 n = 1；第二问用裂项相消求和。",
+     "score": 12,
+     "scoreRule": [
+      {
+       "step": "n ≥ 2 时 a_n = S_n - S_{n-1} = 2n + 1，n = 1 时 a₁ = 3 也符合",
+       "score": 3
+      },
+      {
+       "step": "故 a_n = 2n + 1",
+       "score": 1
+      },
+      {
+       "step": "b_n = 1/[(2n+1)(2n+3)] = 1/2[1/(2n+1) - 1/(2n+3)]",
+       "score": 4
+      },
+      {
+       "step": "T_n = 1/2[1/3 - 1/(2n+3)] = n/(3(2n+3)) = n/(6n+9)",
+       "score": 4
+      }
+     ],
+     "no": 19,
+     "itemId": "mej_exam_x2_mid_a_q19"
+    },
+    {
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1166",
+      "mej_h1168"
+     ],
+     "stem": "某商品原价为 100 元，商场连续两次降价，每次降价的百分率相同，两次降价后售价为 81 元。\n(1) 求每次降价的百分率；\n(2) 若继续按此百分率降价，至少再降价几次，售价才会低于 60 元？",
+     "answer": "(1) 10%；(2) 至少再降价 5 次",
+     "analysis": "连续同比例降价构成等比数列，用 100(1 - x)² = 81 求百分率；第二问解指数不等式，可依次取值估算。",
+     "score": 12,
+     "scoreRule": [
+      {
+       "step": "设每次降价的百分率为 x，则 100(1 - x)² = 81",
+       "score": 3
+      },
+      {
+       "step": "解得 1 - x = 0.9，x = 0.1，即每次降价 10%",
+       "score": 3
+      },
+      {
+       "step": "再降价 n 次后售价为 100×0.9ⁿ 元，需 100×0.9ⁿ < 60",
+       "score": 3
+      },
+      {
+       "step": "因 0.9⁴ = 0.6561 > 0.6，0.9⁵ = 0.59049 < 0.6，故至少 5 次",
+       "score": 3
+      }
+     ],
+     "no": 20,
+     "itemId": "mej_exam_x2_mid_a_q20"
+    },
+    {
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1169"
+     ],
+     "stem": "已知数列 {a_n} 的通项为 a_n = n·2ⁿ，求其前 n 项和 S_n。",
+     "answer": "S_n = (n - 1)·2ⁿ⁺¹ + 2",
+     "analysis": "这是典型的差比型数列，用错位相减法：写出 S_n 与 2S_n 后相减，中间出现等比数列求和。",
+     "score": 12,
+     "scoreRule": [
+      {
+       "step": "写出 S_n = 1×2 + 2×2² + … + n×2ⁿ",
+       "score": 2
+      },
+      {
+       "step": "两边乘 2 得 2S_n = 1×2² + … + (n-1)×2ⁿ + n×2ⁿ⁺¹",
+       "score": 3
+      },
+      {
+       "step": "两式相减得 -S_n = 2 + 2² + … + 2ⁿ - n×2ⁿ⁺¹",
+       "score": 3
+      },
+      {
+       "step": "-S_n = 2ⁿ⁺¹ - 2 - n×2ⁿ⁺¹，整理得 S_n = (n - 1)·2ⁿ⁺¹ + 2",
+       "score": 4
+      }
+     ],
+     "no": 21,
+     "itemId": "mej_exam_x2_mid_a_q21"
+    },
+    {
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1170"
+     ],
+     "stem": "用数学归纳法证明：对一切正整数 n，都有 1/(1×3) + 1/(3×5) + … + 1/[(2n - 1)(2n + 1)] = n/(2n + 1)。",
+     "answer": "证明见解析，归纳奠基与归纳递推两步成立",
+     "analysis": "第一步验证 n = 1；第二步假设 n = k 时成立，两边加上第 k + 1 项后通分化简，得到 n = k + 1 时的右端形式。",
+     "score": 12,
+     "scoreRule": [
+      {
+       "step": "当 n = 1 时，左边 = 1/3，右边 = 1/3，等式成立",
+       "score": 3
+      },
+      {
+       "step": "假设 n = k 时等式成立，即和为 k/(2k + 1)",
+       "score": 3
+      },
+      {
+       "step": "n = k + 1 时需再加 1/[(2k+1)(2k+3)]",
+       "score": 2
+      },
+      {
+       "step": "通分得 [k(2k+3) + 1]/[(2k+1)(2k+3)] = (2k+1)(k+1)/[(2k+1)(2k+3)]",
+       "score": 2
+      },
+      {
+       "step": "约分得 (k+1)/(2k+3)，即 n = k + 1 时的右端，故命题对一切正整数成立",
+       "score": 2
+      }
+     ],
+     "no": 22,
+     "itemId": "mej_exam_x2_mid_a_q22"
+    }
+   ]
+  }
+ ]
+}

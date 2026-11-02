@@ -1,0 +1,642 @@
+{
+ "book": "鄂教版必修第二册",
+ "kind": "mid",
+ "paper": "期中测试卷A",
+ "stage": "高中",
+ "grade": 11,
+ "duration": 120,
+ "fullScore": 150,
+ "scope": [
+  "鄂教版必修第二册 第1章 函数的概念与性质",
+  "鄂教版必修第二册 第2章 幂函数、指数函数、对数函数"
+ ],
+ "examId": "mej_exam_b2_mid_a",
+ "sections": [
+  {
+   "title": "一、单选题（本大题共 8 小题，每小题 5 分，共 40 分）",
+   "items": [
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1029"
+     ],
+     "stem": "函数 f(x) = √(2-x) + 1/(x+1) 的定义域是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "(-∞, -1)∪(-1, 2]"
+      },
+      {
+       "label": "B",
+       "text": "[-1, 2]"
+      },
+      {
+       "label": "C",
+       "text": "(-∞, 2]"
+      },
+      {
+       "label": "D",
+       "text": "(-1, 2]"
+      }
+     ],
+     "answer": "A",
+     "analysis": "两个限制同时成立：被开方式 2 - x ≥ 0 得 x ≤ 2；分母 x + 1 ≠ 0 得 x ≠ -1。取交集为 (-∞, -1)∪(-1, 2]。把两个条件分别求解后再取交集，是求定义域的基本流程。",
+     "no": 1,
+     "itemId": "mej_exam_b2_mid_a_q01"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1041"
+     ],
+     "stem": "函数 y = (1/2)^(x-1) 的图象恒过定点（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "(0, 1)"
+      },
+      {
+       "label": "B",
+       "text": "(1, 1)"
+      },
+      {
+       "label": "C",
+       "text": "(1, 0)"
+      },
+      {
+       "label": "D",
+       "text": "(-1, 1)"
+      }
+     ],
+     "answer": "B",
+     "analysis": "指数函数 y = a^x 恒过点 (0, 1)。令 x - 1 = 0 得 x = 1，此时 y = (1/2)^0 = 1，故图象恒过点 (1, 1)。把定点直接套成 (0,1) 是忽略相位平移的典型错误。",
+     "no": 2,
+     "itemId": "mej_exam_b2_mid_a_q02"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1043"
+     ],
+     "stem": "计算 (lg 5)² + lg 2·lg 50 的值是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "0"
+      },
+      {
+       "label": "B",
+       "text": "lg 5"
+      },
+      {
+       "label": "C",
+       "text": "1"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "C",
+     "analysis": "由 lg 50 = lg 5 + lg 2 = 1 + lg 2，原式 = (lg5)² + lg2(1 + lg2) = (lg5)² + 2lg5lg2 + (lg2)² = (lg5 + lg2)² = 1。关键是把 lg 50 拆成 1 + lg 2 后凑成完全平方。",
+     "no": 3,
+     "itemId": "mej_exam_b2_mid_a_q03"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1034"
+     ],
+     "stem": "下列函数中，在定义域内为奇函数的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = x² + 1"
+      },
+      {
+       "label": "B",
+       "text": "y = x³ + x"
+      },
+      {
+       "label": "C",
+       "text": "y = |x|"
+      },
+      {
+       "label": "D",
+       "text": "y = 2^x"
+      }
+     ],
+     "answer": "B",
+     "analysis": "y = x³ + x 满足 f(-x) = -x³ - x = -f(x)，是奇函数。y = x² + 1 与 y = |x| 都是偶函数，y = 2^x 既不是奇函数也不是偶函数。判断奇偶性先看定义域是否关于原点对称。",
+     "no": 4,
+     "itemId": "mej_exam_b2_mid_a_q04"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "hard",
+     "topicIds": [
+      "mej_h1032"
+     ],
+     "stem": "函数 f(x) = log₂(x² - 2x - 3) 的单调递增区间是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "(-∞, -1)"
+      },
+      {
+       "label": "B",
+       "text": "(3, +∞)"
+      },
+      {
+       "label": "C",
+       "text": "(1, +∞)"
+      },
+      {
+       "label": "D",
+       "text": "(-1, 3)"
+      }
+     ],
+     "answer": "B",
+     "analysis": "先求定义域：x² - 2x - 3 > 0，得 x < -1 或 x > 3。内层二次函数在 (1, +∞) 上递增，而外层 y = log₂t 递增，故复合函数在 (3, +∞) 上递增。忘记先求定义域会误答 (1, +∞)。",
+     "no": 5,
+     "itemId": "mej_exam_b2_mid_a_q05"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1045"
+     ],
+     "stem": "已知函数 f(x) = log_a x 在 (0, +∞) 上是减函数，且 f(2) = -1，则 a 的值为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "-1/2"
+      },
+      {
+       "label": "C",
+       "text": "√2"
+      },
+      {
+       "label": "D",
+       "text": "1/2"
+      }
+     ],
+     "answer": "D",
+     "analysis": "由对数定义 log_a 2 = -1 得 a^(-1) = 2，即 a = 1/2。再由「在 (0, +∞) 上递减」检验，底数 1/2 满足 0 < a < 1，符合题意。底数必须为正且不等于 1。",
+     "no": 6,
+     "itemId": "mej_exam_b2_mid_a_q06"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1033"
+     ],
+     "stem": "函数 f(x) = x² - 2x + 3 在区间 [0, 3] 上的值域是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "[3, 6]"
+      },
+      {
+       "label": "B",
+       "text": "[2, 3]"
+      },
+      {
+       "label": "C",
+       "text": "[2, 6]"
+      },
+      {
+       "label": "D",
+       "text": "[1, 6]"
+      }
+     ],
+     "answer": "C",
+     "analysis": "配方得 f(x) = (x-1)² + 2，对称轴 x = 1 落在区间内，最小值 f(1) = 2；端点值 f(0) = 3、f(3) = 6，故最大值为 6，值域为 [2, 6]。只比较两个端点会漏掉顶点处的最小值。",
+     "no": 7,
+     "itemId": "mej_exam_b2_mid_a_q07"
+    },
+    {
+     "score": 5,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1031"
+     ],
+     "stem": "设 f(x) = { 2^x, x ≤ 0 ; log₂ x, x > 0 }，则 f(f(1/8)) 的值为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "-3"
+      },
+      {
+       "label": "B",
+       "text": "8"
+      },
+      {
+       "label": "C",
+       "text": "1/8"
+      },
+      {
+       "label": "D",
+       "text": "1/3"
+      }
+     ],
+     "answer": "C",
+     "analysis": "内层 1/8 > 0，用第二段得 f(1/8) = log₂(1/8) = -3；外层 -3 ≤ 0，用第一段得 f(-3) = 2^(-3) = 1/8。分段函数求复合值时每一层都要重新判断所在区间。",
+     "no": 8,
+     "itemId": "mej_exam_b2_mid_a_q08"
+    }
+   ]
+  },
+  {
+   "title": "二、多选题（本大题共 4 小题，每小题 5 分，共 20 分；全部选对得 5 分，部分选对得 2 分）",
+   "items": [
+    {
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1038",
+      "mej_h1039"
+     ],
+     "stem": "关于幂函数 f(x) = x^(2/3)，下列结论正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "定义域为 (0, +∞)"
+      },
+      {
+       "label": "B",
+       "text": "f(x) 是偶函数"
+      },
+      {
+       "label": "C",
+       "text": "f(x) 在 (0, +∞) 上单调递增"
+      },
+      {
+       "label": "D",
+       "text": "f(x) 的图象关于 y 轴对称"
+      }
+     ],
+     "answer": "BCD",
+     "analysis": "x^(2/3) = ∛(x²)，对任意实数都有意义，故定义域为 R，A 错误；f(-x) = f(x)，是偶函数，图象关于 y 轴对称，B、D 正确；在 (0, +∞) 上指数 2/3 > 0，函数单调递增，C 正确。",
+     "no": 9,
+     "itemId": "mej_exam_b2_mid_a_q09"
+    },
+    {
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1035",
+      "mej_h1045"
+     ],
+     "stem": "在同一坐标系中，下列关于函数图象对称关系的说法正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = 2^x 与 y = log₂ x 的图象关于 y 轴对称"
+      },
+      {
+       "label": "B",
+       "text": "y = 2^x 与 y = (1/2)^x 的图象关于 y 轴对称"
+      },
+      {
+       "label": "C",
+       "text": "y = log₂ x 与 y = log_(1/2) x 的图象关于 x 轴对称"
+      },
+      {
+       "label": "D",
+       "text": "y = 2^x 的图象关于 x 轴对称后得到 y = -2^x 的图象"
+      }
+     ],
+     "answer": "BC",
+     "analysis": "y = 2^x 与 y = (1/2)^x = 2^(-x) 的自变量互为相反数，图象关于 y 轴对称，B 正确；y = log_(1/2)x = -log₂x，与 y = log₂x 的函数值互为相反数，图象关于 x 轴对称，C 正确；y = 2^x 的图象关于 x 轴对称后得到 y = -2^x，D 正确；y = 2^x 与 y = log₂x 才是关于 y = x 对称的，A 错误。",
+     "no": 10,
+     "itemId": "mej_exam_b2_mid_a_q10"
+    },
+    {
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1040",
+      "mej_h1041"
+     ],
+     "stem": "设 a > 0 且 a ≠ 1，关于函数 f(x) = a^x，下列说法正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "图象恒过点 (0, 1)"
+      },
+      {
+       "label": "B",
+       "text": "当 a > 1 时，f(x) 在 R 上单调递增"
+      },
+      {
+       "label": "C",
+       "text": "f(x) 的值域为 (0, +∞)"
+      },
+      {
+       "label": "D",
+       "text": "当 0 < a < 1 时，若 x > 0，则 f(x) > 1"
+      }
+     ],
+     "answer": "ABC",
+     "analysis": "指数函数恒过点 (0, 1)，值域为 (0, +∞)，A、C 正确；a > 1 时在 R 上单调递增，B 正确；0 < a < 1 时函数递减，x > 0 时 f(x) < f(0) = 1，故 D 错误。",
+     "no": 11,
+     "itemId": "mej_exam_b2_mid_a_q11"
+    },
+    {
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1042",
+      "mej_h1043"
+     ],
+     "stem": "下列指数式与对数式的互化正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2⁵ = 32 ⟺ log₂ 32 = 5"
+      },
+      {
+       "label": "B",
+       "text": "3^(-2) = 1/9 ⟺ log₃(1/9) = -2"
+      },
+      {
+       "label": "C",
+       "text": "10⁰ = 1 ⟺ lg 1 = 0"
+      },
+      {
+       "label": "D",
+       "text": "5² = 25 ⟺ log₂ 25 = 5"
+      }
+     ],
+     "answer": "ABC",
+     "analysis": "由 a^b = N ⟺ log_a N = b：2⁵ = 32 ⟺ log₂32 = 5，A 正确；3^(-2) = 1/9 ⟺ log₃(1/9) = -2，B 正确；10⁰ = 1 ⟺ lg 1 = 0，C 正确；5² = 25 应对应 log₅25 = 2，D 把底数写成了 2，错误。",
+     "no": 12,
+     "itemId": "mej_exam_b2_mid_a_q12"
+    }
+   ]
+  },
+  {
+   "title": "三、填空题（本大题共 4 小题，每小题 5 分，共 20 分）",
+   "items": [
+    {
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1037"
+     ],
+     "stem": "计算 27^(2/3) - (1/16)^(-1/2) 的值为 ____。",
+     "answer": "5",
+     "analysis": "27^(2/3) = (3³)^(2/3) = 3² = 9；(1/16)^(-1/2) = 16^(1/2) = 4。两式相减得 5。负指数先取倒数再开方，两步都不能省。",
+     "verify": {
+      "type": "num",
+      "value": 5
+     },
+     "no": 13,
+     "itemId": "mej_exam_b2_mid_a_q13"
+    },
+    {
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1044"
+     ],
+     "stem": "函数 y = log₃(2x - 1) 的定义域是 ____。",
+     "answer": "(1/2, +∞)",
+     "analysis": "对数的真数必须大于零，即 2x - 1 > 0，解得 x > 1/2，定义域为 (1/2, +∞)。端点不能取到，因为真数为零时对数无意义。",
+     "no": 14,
+     "itemId": "mej_exam_b2_mid_a_q14"
+    },
+    {
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1036"
+     ],
+     "stem": "已知幂函数 f(x) = x^α 的图象经过点 (2, 1/4)，则 f(3) = ____。",
+     "answer": "1/9",
+     "analysis": "由 2^α = 1/4 = 2^(-2) 得 α = -2，故 f(x) = x^(-2) = 1/x²。代入 x = 3 得 f(3) = 1/9。负数指数对应取倒数再平方的运算顺序。",
+     "verify": {
+      "type": "num",
+      "value": 0.1111111111111111
+     },
+     "no": 15,
+     "itemId": "mej_exam_b2_mid_a_q15"
+    },
+    {
+     "score": 5,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1033"
+     ],
+     "stem": "函数 f(x) = x + 1/(x-1)（x > 1）的最小值为 ____。",
+     "answer": "3",
+     "analysis": "把 x 写成 (x-1) + 1，则 f(x) = (x-1) + 1/(x-1) + 1。由基本不等式，(x-1) + 1/(x-1) ≥ 2，等号在 x-1 = 1 即 x = 2 时成立，故最小值为 3。使用基本不等式前必须凑出「积为定值」的结构。",
+     "verify": {
+      "type": "num",
+      "value": 3
+     },
+     "no": 16,
+     "itemId": "mej_exam_b2_mid_a_q16"
+    }
+   ]
+  },
+  {
+   "title": "四、解答题（本大题共 6 小题，共 70 分，解答应写出文字说明、证明过程或演算步骤）",
+   "items": [
+    {
+     "score": 10,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1043",
+      "mej_h1037"
+     ],
+     "stem": "计算下列各式的值：\n(1) lg 4 + lg 25 - log₂ 8；\n(2) (8/27)^(-2/3) + log₃(1/9)。",
+     "answer": "(1) -1；(2) 1/4",
+     "analysis": "第 (1) 问先用对数加法合并 lg 4 + lg 25 = lg 100 = 2，再减去 log₂8 = 3。第 (2) 问把负指数化为正指数的倒数，(8/27)^(-2/3) = (27/8)^(2/3) = (3/2)² = 9/4；log₃(1/9) = log₃3^(-2) = -2。",
+     "scoreRule": [
+      {
+       "step": "lg 4 + lg 25 = lg 100 = 2，log₂ 8 = 3，故原式 = 2 - 3 = -1",
+       "score": 5
+      },
+      {
+       "step": "(8/27)^(-2/3) = (27/8)^(2/3) = 9/4，log₃(1/9) = -2，故原式 = 9/4 - 2 = 1/4",
+       "score": 5
+      }
+     ],
+     "no": 17,
+     "itemId": "mej_exam_b2_mid_a_q17"
+    },
+    {
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1032",
+      "mej_h1033"
+     ],
+     "stem": "已知函数 f(x) = (x² + 1)/x（x > 0）。\n(1) 判断 f(x) 在区间 (0, 1] 上的单调性，并用定义证明；\n(2) 求 f(x) 在区间 [1/2, 3] 上的值域。",
+     "answer": "(1) f(x) 在 (0, 1] 上单调递减；(2) 值域为 [2, 10/3]",
+     "analysis": "把 f(x) 拆成 x + 1/x，作差后得到 (x₁-x₂)(x₁x₂-1)/(x₁x₂)，在 (0,1] 上 x₁x₂ < 1，故差为正，函数递减。第 (2) 问借助 (0,1] 递减、[1,+∞) 递增的分段单调性，比较端点与顶点处的函数值。",
+     "scoreRule": [
+      {
+       "step": "f(x₁) - f(x₂) = (x₁ - x₂)(x₁x₂ - 1)/(x₁x₂)，由 0 < x₁ < x₂ ≤ 1 得 x₁x₂ < 1，故差为正，f(x) 在 (0, 1] 上递减",
+       "score": 6
+      },
+      {
+       "step": "由单调性知 f(x) 在 [1/2, 1] 上递减、在 [1, 3] 上递增，最小值 f(1) = 2",
+       "score": 3
+      },
+      {
+       "step": "端点值 f(1/2) = 5/2、f(3) = 10/3，故最大值为 10/3，值域为 [2, 10/3]",
+       "score": 3
+      }
+     ],
+     "no": 18,
+     "itemId": "mej_exam_b2_mid_a_q18"
+    },
+    {
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mej_h1044",
+      "mej_h1045",
+      "mej_h1034"
+     ],
+     "stem": "已知函数 f(x) = log_a(1 + x) - log_a(1 - x)（a > 0 且 a ≠ 1）。\n(1) 求 f(x) 的定义域；\n(2) 判断 f(x) 的奇偶性并证明；\n(3) 若 f(x) > 0，求 x 的取值范围（按 a > 1 与 0 < a < 1 分类讨论）。",
+     "answer": "(1) (-1, 1)；(2) 奇函数；(3) 当 a > 1 时 0 < x < 1；当 0 < a < 1 时 -1 < x < 0",
+     "analysis": "定义域由两个真数同时大于零确定。判断奇偶性要把 f(-x) 写成两个对数之差再合并，发现与 f(x) 互为相反数。第 (3) 问先合并成 log_a((1+x)/(1-x)) > 0，再按底数大于 1 与小于 1 两种情况脱去对数符号。",
+     "scoreRule": [
+      {
+       "step": "由 1 + x > 0 且 1 - x > 0 得定义域 (-1, 1)",
+       "score": 4
+      },
+      {
+       "step": "f(-x) = log_a(1-x) - log_a(1+x) = -f(x)，故 f(x) 是奇函数",
+       "score": 4
+      },
+      {
+       "step": "f(x) > 0 即 log_a((1+x)/(1-x)) > 0：a > 1 时需 (1+x)/(1-x) > 1，得 0 < x < 1；0 < a < 1 时需 0 < (1+x)/(1-x) < 1，得 -1 < x < 0",
+       "score": 4
+      }
+     ],
+     "no": 19,
+     "itemId": "mej_exam_b2_mid_a_q19"
+    },
+    {
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1046",
+      "mej_h1041"
+     ],
+     "stem": "某工厂今年 1 月生产某种产品 1 万件，计划以后每月比上月增产 10%。设 x 个月后月产量为 y 万件。\n(1) 写出 y 关于 x 的函数关系式；\n(2) 求 6 个月后的月产量（精确到 0.01 万件）；\n(3) 月产量首次超过 2 万件需要经过多少个月？（参考数据：lg 1.1 ≈ 0.0414，lg 2 ≈ 0.3010）",
+     "answer": "(1) y = 1.1^x（x ∈ N）；(2) 约 1.77 万件；(3) 8 个月",
+     "analysis": "每月按固定百分比增长，属指数增长模型，底数为 1 + 10% = 1.1。求值直接代入；解不等式时两边取常用对数，把指数化为系数，再向上取整得到月份数。",
+     "scoreRule": [
+      {
+       "step": "每月增产 10%，故 y = 1.1^x",
+       "score": 4
+      },
+      {
+       "step": "x = 6 时 y = 1.1⁶ ≈ 1.77（万件）",
+       "score": 4
+      },
+      {
+       "step": "由 1.1^x > 2 得 x > lg2 ÷ lg1.1 ≈ 7.27，取整得至少 8 个月",
+       "score": 4
+      }
+     ],
+     "no": 20,
+     "itemId": "mej_exam_b2_mid_a_q20"
+    },
+    {
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mej_h1035",
+      "mej_h1034",
+      "mej_h1029"
+     ],
+     "stem": "已知函数 f(x) 是定义在 R 上的偶函数，当 x ≥ 0 时 f(x) = 2^x - 1。\n(1) 求 f(-1) 及 x < 0 时 f(x) 的解析式；\n(2) 若 f(a) > 3，求实数 a 的取值范围；\n(3) 写出 f(x) 的单调区间。",
+     "answer": "(1) f(-1) = 1，x < 0 时 f(x) = 2^(-x) - 1；(2) a < -2 或 a > 2；(3) 在 (-∞, 0] 上递减，在 [0, +∞) 上递增",
+     "analysis": "偶函数满足 f(-x) = f(x)，故 f(-1) = f(1) = 2 - 1 = 1。求 x < 0 的解析式要把 -x > 0 代入已知表达式，再利用偶性还原。解不等式时借助偶性把条件转化为对 |a| 的要求，再结合单调性求解。",
+     "scoreRule": [
+      {
+       "step": "由偶性得 f(-1) = f(1) = 2 - 1 = 1；设 x < 0，则 -x > 0，f(x) = f(-x) = 2^(-x) - 1",
+       "score": 4
+      },
+      {
+       "step": "f(a) > 3 等价于 f(|a|) > 3，即 2^(|a|) - 1 > 3，得 2^(|a|) > 4，|a| > 2，故 a < -2 或 a > 2",
+       "score": 4
+      },
+      {
+       "step": "x ≥ 0 时 2^x - 1 递增，由偶性知 (-∞, 0] 上递减，故递增区间为 [0, +∞)，递减区间为 (-∞, 0]",
+       "score": 4
+      }
+     ],
+     "no": 21,
+     "itemId": "mej_exam_b2_mid_a_q21"
+    },
+    {
+     "score": 12,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "mej_h1041",
+      "mej_h1033"
+     ],
+     "stem": "已知函数 f(x) = 4^x - 2^(x+1) + 3。\n(1) 设 t = 2^x，把 f(x) 表示为 t 的函数；\n(2) 若 x ∈ [-1, 2]，求 t 的取值范围；\n(3) 求 f(x) 在 [-1, 2] 上的最小值与最大值。",
+     "answer": "(1) y = t² - 2t + 3（t > 0）；(2) t ∈ [1/2, 4]；(3) 最小值为 2，最大值为 11",
+     "analysis": "把 4^x 写成 (2^x)²、2^(x+1) 写成 2·2^x，即可用换元法把问题化为二次函数在给定区间上的最值。换元后必须同步求出新变量的取值范围，再结合抛物线的对称轴判断最值位置。",
+     "scoreRule": [
+      {
+       "step": "f(x) = (2^x)² - 2·2^x + 3，令 t = 2^x 得 y = t² - 2t + 3",
+       "score": 4
+      },
+      {
+       "step": "x ∈ [-1, 2] 时 t = 2^x ∈ [1/2, 4]",
+       "score": 4
+      },
+      {
+       "step": "y = (t-1)² + 2，当 t = 1（x = 0）时取最小值 2；当 t = 4（x = 2）时取最大值 11",
+       "score": 4
+      }
+     ],
+     "no": 22,
+     "itemId": "mej_exam_b2_mid_a_q22"
+    }
+   ]
+  }
+ ]
+}

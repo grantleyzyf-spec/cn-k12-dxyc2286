@@ -1,0 +1,688 @@
+{
+ "book": "鄂教版选择性必修第二册",
+ "kind": "fin",
+ "paper": "期末测试卷A",
+ "stage": "高中",
+ "grade": 15,
+ "duration": 120,
+ "fullScore": 150,
+ "scope": [
+  "mej_h016",
+  "鄂教版选择性必修第二册 第2章 一元函数导数及其应用"
+ ],
+ "examId": "mej_exam_x2_fin_a",
+ "sections": [
+  {
+   "title": "一、单选题（本大题共 8 小题，每小题 5 分，共 40 分）",
+   "items": [
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1159"
+     ],
+     "stem": "数列 3, 6, 11, 18, … 的一个通项公式是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "a_n = n² + 2"
+      },
+      {
+       "label": "B",
+       "text": "a_n = n² + 1"
+      },
+      {
+       "label": "C",
+       "text": "a_n = 3n"
+      },
+      {
+       "label": "D",
+       "text": "a_n = 2n + 1"
+      }
+     ],
+     "answer": "A",
+     "analysis": "把每一项与平方数比较：3 = 1 + 2，6 = 4 + 2，11 = 9 + 2，18 = 16 + 2，故通项为 n² + 2。",
+     "no": 1,
+     "itemId": "mej_exam_x2_fin_a_q01",
+     "score": 5
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1161"
+     ],
+     "stem": "在等差数列 {a_n} 中，a₄ = 10，a₁₀ = 28，则 a₇ 等于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "19"
+      },
+      {
+       "label": "B",
+       "text": "18"
+      },
+      {
+       "label": "C",
+       "text": "20"
+      },
+      {
+       "label": "D",
+       "text": "22"
+      }
+     ],
+     "answer": "A",
+     "analysis": "a₇ 是 a₄ 与 a₁₀ 的等差中项，故 a₇ = (10 + 28)/2 = 19；也可先求 d = 3 再逐项推算。",
+     "verify": "(10+28)/2",
+     "no": 2,
+     "itemId": "mej_exam_x2_fin_a_q02",
+     "score": 5
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1167"
+     ],
+     "stem": "等比数列 {a_n} 中，a₁ = 1/2，公比 q = 2，则前 5 项和 S₅ 等于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "31/2"
+      },
+      {
+       "label": "B",
+       "text": "31"
+      },
+      {
+       "label": "C",
+       "text": "15"
+      },
+      {
+       "label": "D",
+       "text": "63/2"
+      }
+     ],
+     "answer": "A",
+     "analysis": "由求和公式 S₅ = (1/2)(2⁵ - 1)/(2 - 1) = (1/2)×31 = 31/2。",
+     "verify": "0.5*(2**5-1)",
+     "no": 3,
+     "itemId": "mej_exam_x2_fin_a_q03",
+     "score": 5
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h017",
+      "mej_h1172"
+     ],
+     "stem": "已知 lim(Δx→0)[f(2 + Δx) - f(2)]/Δx = 3，则 f′(2) 等于（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "-3"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "0"
+      }
+     ],
+     "answer": "A",
+     "analysis": "该极限就是函数在 x = 2 处的导数定义式，故 f′(2) = 3。",
+     "no": 4,
+     "itemId": "mej_exam_x2_fin_a_q04",
+     "score": 5
+    },
+    {
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h017",
+      "mej_h1174"
+     ],
+     "stem": "函数 f(x) = x⁴ - 2x² 的导数为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "4x³ - 4x"
+      },
+      {
+       "label": "B",
+       "text": "4x³ - 2x"
+      },
+      {
+       "label": "C",
+       "text": "x³ - 4x"
+      },
+      {
+       "label": "D",
+       "text": "4x³ - 4"
+      }
+     ],
+     "answer": "A",
+     "analysis": "逐项求导：x⁴ → 4x³，-2x² → -4x，故 f′(x) = 4x³ - 4x。",
+     "no": 5,
+     "itemId": "mej_exam_x2_fin_a_q05",
+     "score": 5
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h017",
+      "mej_h1173"
+     ],
+     "stem": "曲线 y = x² - 3x + 1 在点 (2, -1) 处的切线方程是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = x - 3"
+      },
+      {
+       "label": "B",
+       "text": "y = x + 1"
+      },
+      {
+       "label": "C",
+       "text": "y = 2x - 5"
+      },
+      {
+       "label": "D",
+       "text": "y = -x + 1"
+      }
+     ],
+     "answer": "A",
+     "analysis": "y′ = 2x - 3，在 x = 2 处切线斜率为 1，由点斜式得 y + 1 = x - 2，即 y = x - 3。",
+     "no": 6,
+     "itemId": "mej_exam_x2_fin_a_q06",
+     "score": 5
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h017",
+      "mej_h1177"
+     ],
+     "stem": "函数 f(x) = x³ - 6x 的单调递减区间是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "(-√2, √2)"
+      },
+      {
+       "label": "B",
+       "text": "(-2, 2)"
+      },
+      {
+       "label": "C",
+       "text": "(0, 2)"
+      },
+      {
+       "label": "D",
+       "text": "(-∞, √2)"
+      }
+     ],
+     "answer": "A",
+     "analysis": "f′(x) = 3x² - 6，令其小于零得 x² < 2，即 -√2 < x < √2，故单调递减区间为 (-√2, √2)。",
+     "no": 7,
+     "itemId": "mej_exam_x2_fin_a_q07",
+     "score": 5
+    },
+    {
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h017",
+      "mej_h1178"
+     ],
+     "stem": "函数 f(x) = x³ - 3x² + 1 的极小值是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "-3"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "0"
+      },
+      {
+       "label": "D",
+       "text": "-1"
+      }
+     ],
+     "answer": "A",
+     "analysis": "f′(x) = 3x² - 6x = 3x(x - 2)，x = 0 处取极大值，x = 2 处取极小值，f(2) = 8 - 12 + 1 = -3。",
+     "no": 8,
+     "itemId": "mej_exam_x2_fin_a_q08",
+     "score": 5
+    }
+   ]
+  },
+  {
+   "title": "二、多选题（本大题共 4 小题，每小题 5 分，共 20 分；全部选对得 5 分，部分选对得 2 分）",
+   "items": [
+    {
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1169"
+     ],
+     "stem": "已知数列 {a_n} 的通项为 a_n = n + 2ⁿ，前 n 项和为 S_n，则下列结论正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "S_n = n(n + 1)/2 + 2ⁿ⁺¹ - 2"
+      },
+      {
+       "label": "B",
+       "text": "a₃ = 11"
+      },
+      {
+       "label": "C",
+       "text": "数列 {a_n} 是等差数列"
+      },
+      {
+       "label": "D",
+       "text": "S₂ = 9"
+      }
+     ],
+     "answer": "ABD",
+     "analysis": "把通项拆成 n 与 2ⁿ 两部分分别求和，得 n(n+1)/2 + (2ⁿ⁺¹ - 2)；a₃ = 3 + 8 = 11；S₂ = 3 + 6 = 9；由于含指数项，相邻两项之差不恒定，不是等差数列。",
+     "no": 9,
+     "itemId": "mej_exam_x2_fin_a_q09",
+     "score": 5
+    },
+    {
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h017",
+      "mej_h1175"
+     ],
+     "stem": "下列求导结果正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "(x²ln x)′ = 2xln x + x"
+      },
+      {
+       "label": "B",
+       "text": "((3x - 1)⁴)′ = 4(3x - 1)³"
+      },
+      {
+       "label": "C",
+       "text": "(cos x)′ = -sin x"
+      },
+      {
+       "label": "D",
+       "text": "(√x)′ = 1/(2√x)"
+      }
+     ],
+     "answer": "ACD",
+     "analysis": "第一项用乘积法则：2x·ln x + x²·(1/x) = 2xln x + x；第二项漏掉内层导数 3，正确结果应为 12(3x - 1)³；cos x 的导数是 -sin x；√x 的导数是 1/(2√x)。",
+     "no": 10,
+     "itemId": "mej_exam_x2_fin_a_q10",
+     "score": 5
+    },
+    {
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h017",
+      "mej_h1179"
+     ],
+     "stem": "函数 f(x) = x³ - 12x 在区间 [0, 3] 上，下列结论正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "最大值为 0"
+      },
+      {
+       "label": "B",
+       "text": "最小值为 -16"
+      },
+      {
+       "label": "C",
+       "text": "最大值在 x = 3 处取得"
+      },
+      {
+       "label": "D",
+       "text": "最小值在 x = 2 处取得"
+      }
+     ],
+     "answer": "ABD",
+     "analysis": "f′(x) = 3x² - 12，驻点 x = 2 在区间内，f(2) = 8 - 24 = -16；端点值 f(0) = 0，f(3) = 27 - 36 = -9。比较得最大值 0 在 x = 0 处取得，故第三项错误。",
+     "no": 11,
+     "itemId": "mej_exam_x2_fin_a_q11",
+     "score": 5
+    },
+    {
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h017",
+      "mej_h1180"
+     ],
+     "stem": "用长为 20 m 的篱笆靠墙围成一个矩形菜园（墙足够长，墙这一侧不围篱笆），则下列结论正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "菜园面积的最大值为 50 m²"
+      },
+      {
+       "label": "B",
+       "text": "面积最大时垂直于墙的边长为 5 m"
+      },
+      {
+       "label": "C",
+       "text": "面积最大时平行于墙的边长为 10 m"
+      },
+      {
+       "label": "D",
+       "text": "面积最大时菜园是正方形"
+      }
+     ],
+     "answer": "ABC",
+     "analysis": "设垂直于墙的边为 x，则平行于墙的边为 20 - 2x，面积 S = x(20 - 2x) = -2x² + 20x，当 x = 5 时取最大值 50，此时另一边为 10 m。长宽不等，不是正方形，故末项错误。",
+     "no": 12,
+     "itemId": "mej_exam_x2_fin_a_q12",
+     "score": 5
+    }
+   ]
+  },
+  {
+   "title": "三、填空题（本大题共 4 小题，每小题 5 分，共 20 分）",
+   "items": [
+    {
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1163"
+     ],
+     "stem": "在等差数列 {a_n} 中，a₁ = 1，公差 d = 2，则前 10 项和 S₁₀ = ____。",
+     "answer": "100",
+     "analysis": "S₁₀ = 10×1 + (10×9/2)×2 = 10 + 90 = 100。",
+     "verify": "10*1+45*2",
+     "no": 13,
+     "itemId": "mej_exam_x2_fin_a_q13",
+     "score": 5
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1165"
+     ],
+     "stem": "在等比数列 {a_n} 中，a₂ = 4，公比 q = -2，则 a₅ = ____。",
+     "answer": "-32",
+     "analysis": "由 a₂ = a₁q 得 a₁ = 4/(-2) = -2，故 a₅ = a₁q⁴ = -2×16 = -32。",
+     "verify": "-2*(-2)**4",
+     "no": 14,
+     "itemId": "mej_exam_x2_fin_a_q14",
+     "score": 5
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h017",
+      "mej_h1171"
+     ],
+     "stem": "某物体做直线运动，位移 s（单位：m）与时间 t（单位：s）满足 s = 3t² - 2t，则该物体在 t = 1 s 时的瞬时速度为 ____ m/s。",
+     "answer": "4",
+     "analysis": "瞬时速度 v = s′(t) = 6t - 2，把 t = 1 代入得 v = 4 m/s。",
+     "verify": "6*1-2",
+     "no": 15,
+     "itemId": "mej_exam_x2_fin_a_q15",
+     "score": 5
+    },
+    {
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h017",
+      "mej_h1175"
+     ],
+     "stem": "已知函数 f(x) = x³ - ax 满足 f′(1) = 2，则实数 a = ____。",
+     "answer": "1",
+     "analysis": "f′(x) = 3x² - a，故 f′(1) = 3 - a = 2，解得 a = 1。",
+     "verify": "3-2",
+     "no": 16,
+     "itemId": "mej_exam_x2_fin_a_q16",
+     "score": 5
+    }
+   ]
+  },
+  {
+   "title": "四、解答题（本大题共 6 小题，共 70 分，解答应写出文字说明、证明过程或演算步骤）",
+   "items": [
+    {
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h017",
+      "mej_h1171",
+      "mej_h1172"
+     ],
+     "stem": "已知函数 f(x) = x² + 2x。\n(1) 求 f(x) 在区间 [1, 2] 上的平均变化率；\n(2) 用导数的定义求 f′(1)。",
+     "answer": "(1) 5；(2) f′(1) = 4",
+     "analysis": "平均变化率等于函数值增量比自变量增量；用定义求导时先展开分子，约去 Δx 后取极限。",
+     "score": 10,
+     "scoreRule": [
+      {
+       "step": "平均变化率为 (f(2) - f(1))/(2 - 1) = (8 - 3)/1 = 5",
+       "score": 5
+      },
+      {
+       "step": "Δy = f(1 + Δx) - f(1) = (1 + Δx)² + 2(1 + Δx) - 3 = 4Δx + (Δx)²",
+       "score": 2
+      },
+      {
+       "step": "Δy/Δx = 4 + Δx",
+       "score": 2
+      },
+      {
+       "step": "令 Δx→0 得 f′(1) = 4",
+       "score": 1
+      }
+     ],
+     "no": 17,
+     "itemId": "mej_exam_x2_fin_a_q17"
+    },
+    {
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h017",
+      "mej_h1175",
+      "mej_h1177",
+      "mej_h1178"
+     ],
+     "stem": "已知函数 f(x) = 2x³ - 3x² - 12x + 5。\n(1) 求 f′(x)；\n(2) 求 f(x) 的单调区间；\n(3) 求 f(x) 的极大值与极小值。",
+     "answer": "(1) f′(x) = 6x² - 6x - 12；(2) 增区间 (-∞, -1) 与 (2, +∞)，减区间 (-1, 2)；(3) 极大值 12，极小值 -15",
+     "analysis": "求导后因式分解找驻点，用导数在各区间的符号判断单调性，再按极值的判定规则读出极大值与极小值。",
+     "score": 12,
+     "scoreRule": [
+      {
+       "step": "f′(x) = 6x² - 6x - 12 = 6(x - 2)(x + 1)",
+       "score": 3
+      },
+      {
+       "step": "令 f′(x) = 0 得 x = -1 或 x = 2",
+       "score": 2
+      },
+      {
+       "step": "x < -1 或 x > 2 时导数大于零，-1 < x < 2 时导数小于零",
+       "score": 3
+      },
+      {
+       "step": "故极大值 f(-1) = -2 - 3 + 12 + 5 = 12",
+       "score": 2
+      },
+      {
+       "step": "极小值 f(2) = 16 - 12 - 24 + 5 = -15",
+       "score": 2
+      }
+     ],
+     "no": 18,
+     "itemId": "mej_exam_x2_fin_a_q18"
+    },
+    {
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1165",
+      "mej_h1167"
+     ],
+     "stem": "已知等比数列 {a_n} 的各项均为正数，a₁ = 2，且 a₂ + a₃ = 12。\n(1) 求公比 q 与通项公式；\n(2) 求使前 n 项和 S_n > 200 成立的最小正整数 n。",
+     "answer": "(1) q = 2，a_n = 2ⁿ；(2) 最小的 n 为 7",
+     "analysis": "由 a₂ + a₃ 列关于 q 的方程，结合各项为正舍去负根；再写出求和公式解指数不等式。",
+     "score": 12,
+     "scoreRule": [
+      {
+       "step": "由 2q + 2q² = 12 得 q² + q - 6 = 0，q = 2 或 q = -3",
+       "score": 4
+      },
+      {
+       "step": "各项为正，故 q = 2，通项 a_n = 2×2ⁿ⁻¹ = 2ⁿ",
+       "score": 2
+      },
+      {
+       "step": "S_n = 2(2ⁿ - 1)/(2 - 1) = 2ⁿ⁺¹ - 2",
+       "score": 3
+      },
+      {
+       "step": "由 2ⁿ⁺¹ - 2 > 200 得 2ⁿ⁺¹ > 202，n = 6 时不成立，n = 7 时成立",
+       "score": 3
+      }
+     ],
+     "no": 19,
+     "itemId": "mej_exam_x2_fin_a_q19"
+    },
+    {
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h017",
+      "mej_h1173",
+      "mej_h1179"
+     ],
+     "stem": "已知函数 f(x) = x³ - 3x + 2。\n(1) 求曲线 y = f(x) 在 x = 1 处的切线方程；\n(2) 求 f(x) 在区间 [-2, 2] 上的最大值与最小值。",
+     "answer": "(1) y = 0；(2) 最大值为 4，最小值为 0",
+     "analysis": "切线斜率等于该点导数值，本题导数为零说明切线水平；求最值时比较驻点与端点处的函数值。",
+     "score": 12,
+     "scoreRule": [
+      {
+       "step": "f′(x) = 3x² - 3，f′(1) = 0，f(1) = 0",
+       "score": 3
+      },
+      {
+       "step": "切线过点 (1, 0) 且斜率为 0，方程为 y = 0",
+       "score": 3
+      },
+      {
+       "step": "驻点 x = ±1 都在区间内，f(-1) = 4，f(1) = 0",
+       "score": 3
+      },
+      {
+       "step": "端点值 f(-2) = 0，f(2) = 4，故最大值 4，最小值 0",
+       "score": 3
+      }
+     ],
+     "no": 20,
+     "itemId": "mej_exam_x2_fin_a_q20"
+    },
+    {
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1164",
+      "mej_h1168"
+     ],
+     "stem": "某企业 2022 年的利润为 300 万元，现有两种增长方案：方案甲为每年比上一年增加 40 万元；方案乙为每年比上一年增长 10%。\n(1) 分别求 2026 年两种方案下的利润；\n(2) 从哪一年开始，方案乙的年利润超过方案甲？",
+     "answer": "(1) 甲 460 万元，乙约 439.23 万元；(2) 从 2029 年开始",
+     "analysis": "方案甲对应等差数列，方案乙对应等比数列，分别写出通项后列表比较相邻年份的大小。",
+     "score": 12,
+     "scoreRule": [
+      {
+       "step": "方案甲：a_n = 300 + 40(n - 1)，2026 年为第 5 年，得 460 万元",
+       "score": 3
+      },
+      {
+       "step": "方案乙：b_n = 300×1.1ⁿ⁻¹，第 5 年为 300×1.1⁴ ≈ 439.23 万元",
+       "score": 3
+      },
+      {
+       "step": "比较第 7 年：甲 540 万元，乙 300×1.1⁶ ≈ 531.47 万元，甲仍大",
+       "score": 2
+      },
+      {
+       "step": "第 8 年：乙 300×1.1⁷ ≈ 584.62 万元，超过甲的 580 万元，故从 2029 年开始",
+       "score": 4
+      }
+     ],
+     "no": 21,
+     "itemId": "mej_exam_x2_fin_a_q21"
+    },
+    {
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h016",
+      "mej_h1170"
+     ],
+     "stem": "用数学归纳法证明：对一切正整数 n，都有 1×2 + 2×3 + … + n(n + 1) = n(n + 1)(n + 2)/3。",
+     "answer": "证明见解析，归纳奠基与归纳递推两步成立",
+     "analysis": "第一步验证 n = 1；第二步假设 n = k 成立，两边加上 (k+1)(k+2) 后提取公因式，化为 n = k+1 时的右端。",
+     "score": 12,
+     "scoreRule": [
+      {
+       "step": "当 n = 1 时，左边 = 2，右边 = 1×2×3/3 = 2，等式成立",
+       "score": 3
+      },
+      {
+       "step": "假设 n = k 时等式成立，即和为 k(k+1)(k+2)/3",
+       "score": 3
+      },
+      {
+       "step": "n = k + 1 时再加 (k+1)(k+2)，得 (k+1)(k+2)(k/3 + 1)",
+       "score": 2
+      },
+      {
+       "step": "即 (k+1)(k+2)(k+3)/3，正是 n = k + 1 时的右端",
+       "score": 2
+      },
+      {
+       "step": "由数学归纳法知等式对一切正整数 n 成立",
+       "score": 2
+      }
+     ],
+     "no": 22,
+     "itemId": "mej_exam_x2_fin_a_q22"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,675 @@
+{
+ "book": "鄂教版选择性必修第一册",
+ "kind": "unit",
+ "paper": "第2章 单元测试卷",
+ "grade": 14,
+ "scope": [
+  "鄂教版选择性必修第一册 第2章 平面解析几何初步"
+ ],
+ "examId": "mej_exam_x1_u02",
+ "stage": "高中",
+ "duration": 120,
+ "fullScore": 150,
+ "sections": [
+  {
+   "title": "一、单选题（本大题共 8 小题，每小题 5 分，共 40 分）",
+   "items": [
+    {
+     "no": 1,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h014",
+      "mej_h1137"
+     ],
+     "stem": "已知直线经过点 A(-1, 2) 与 B(3, 10)，则该直线的斜率为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1/2"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "-2"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ],
+     "answer": "B",
+     "analysis": "由斜率公式 k = (y₂ - y₁)/(x₂ - x₁) = (10 - 2)/(3 - (-1)) = 8/4 = 2。计算时要注意分母是横坐标之差。",
+     "itemId": "mej_exam_x1_u02_q01"
+    },
+    {
+     "no": 2,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1138",
+      "mej_h1137"
+     ],
+     "stem": "若直线 l 的斜率为 -1，则 l 的倾斜角为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "45°"
+      },
+      {
+       "label": "B",
+       "text": "90°"
+      },
+      {
+       "label": "C",
+       "text": "135°"
+      },
+      {
+       "label": "D",
+       "text": "150°"
+      }
+     ],
+     "answer": "C",
+     "analysis": "倾斜角 α ∈ [0°, 180°)，且 k = tanα。tan135° = -1，故倾斜角为 135°。负斜率对应的倾斜角是钝角。",
+     "itemId": "mej_exam_x1_u02_q02"
+    },
+    {
+     "no": 3,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1139",
+      "mej_h1140"
+     ],
+     "stem": "经过点 (2, -1) 且斜率为 3 的直线方程是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y - 1 = 3(x + 2)"
+      },
+      {
+       "label": "B",
+       "text": "y + 1 = 3(x - 2)"
+      },
+      {
+       "label": "C",
+       "text": "y - 1 = 3(x - 2)"
+      },
+      {
+       "label": "D",
+       "text": "y + 1 = 3(x + 2)"
+      }
+     ],
+     "answer": "B",
+     "analysis": "由点斜式 y - y₀ = k(x - x₀)，代入 x₀ = 2、y₀ = -1、k = 3 得 y + 1 = 3(x - 2)。代点时符号最容易出错，可回代 (2, -1) 检验。",
+     "itemId": "mej_exam_x1_u02_q03"
+    },
+    {
+     "no": 4,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1140",
+      "mej_h1139"
+     ],
+     "stem": "经过点 A(1, 2) 与 B(3, 6) 的直线的一般式方程是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x - y = 0"
+      },
+      {
+       "label": "B",
+       "text": "2x + y - 4 = 0"
+      },
+      {
+       "label": "C",
+       "text": "x - 2y + 3 = 0"
+      },
+      {
+       "label": "D",
+       "text": "2x - y + 1 = 0"
+      }
+     ],
+     "answer": "A",
+     "analysis": "先求斜率 (6-2)/(3-1) = 2，由点斜式得 y - 2 = 2(x - 1)，整理为 2x - y = 0。回代 A、B 两点均成立。",
+     "itemId": "mej_exam_x1_u02_q04"
+    },
+    {
+     "no": 5,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1141",
+      "mej_h014"
+     ],
+     "stem": "已知直线 l₁: 2x + y - 1 = 0 与 l₂: x - 2y + 3 = 0，则 l₁ 与 l₂ 的位置关系是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行"
+      },
+      {
+       "label": "B",
+       "text": "垂直"
+      },
+      {
+       "label": "C",
+       "text": "重合"
+      },
+      {
+       "label": "D",
+       "text": "相交但不垂直"
+      }
+     ],
+     "answer": "B",
+     "analysis": "两直线垂直的判定可用斜率或系数：2×1 + 1×(-2) = 0，故 l₁ ⊥ l₂。也可求出斜率分别为 -2 与 1/2，乘积为 -1。",
+     "itemId": "mej_exam_x1_u02_q05"
+    },
+    {
+     "no": 6,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1142",
+      "mej_h1141"
+     ],
+     "stem": "直线 x + y - 3 = 0 与 x - y - 1 = 0 的交点坐标是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "(1, 2)"
+      },
+      {
+       "label": "B",
+       "text": "(2, 1)"
+      },
+      {
+       "label": "C",
+       "text": "(1, -2)"
+      },
+      {
+       "label": "D",
+       "text": "(-1, 2)"
+      }
+     ],
+     "answer": "B",
+     "analysis": "联立两方程相加得 2x = 4，即 x = 2，再代回得 y = 1，故交点为 (2, 1)。也可用两式相减先消去 x。",
+     "itemId": "mej_exam_x1_u02_q06"
+    },
+    {
+     "no": 7,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1143",
+      "mej_h1142"
+     ],
+     "stem": "已知直线 l 的方程为 3x + 4y - 2 = 0，则点 P(1, 1) 到 l 的距离为（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "1/5"
+      }
+     ],
+     "answer": "A",
+     "analysis": "由点到直线的距离公式 d = |Ax₀ + By₀ + C|/√(A²+B²) = |3+4-2|/5 = 5/5 = 1。分母是系数的平方和再开方，不能漏掉。",
+     "itemId": "mej_exam_x1_u02_q07"
+    },
+    {
+     "no": 8,
+     "score": 5,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1144",
+      "mej_h014"
+     ],
+     "stem": "以点 (2, -1) 为圆心、3 为半径的圆的标准方程是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "(x - 2)² + (y + 1)² = 3"
+      },
+      {
+       "label": "B",
+       "text": "(x + 2)² + (y - 1)² = 9"
+      },
+      {
+       "label": "C",
+       "text": "(x - 2)² + (y + 1)² = 9"
+      },
+      {
+       "label": "D",
+       "text": "(x - 2)² + (y - 1)² = 9"
+      }
+     ],
+     "answer": "C",
+     "analysis": "圆的标准方程为 (x - a)² + (y - b)² = r²，其中 (a, b) 为圆心、r 为半径。代入得 (x - 2)² + (y + 1)² = 9，注意右端是半径的平方。",
+     "itemId": "mej_exam_x1_u02_q08"
+    }
+   ]
+  },
+  {
+   "title": "二、多选题（本大题共 4 小题，每小题 5 分，共 20 分；全部选对得 5 分，部分选对得 2 分）",
+   "items": [
+    {
+     "no": 9,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1137",
+      "mej_h1138"
+     ],
+     "stem": "设 α 是直线 l 的倾斜角，k 是 l 的斜率，则下列判断中正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "α 越大，k 一定越大"
+      },
+      {
+       "label": "B",
+       "text": "α = 90° 时 k 不存在"
+      },
+      {
+       "label": "C",
+       "text": "k = 0 时 α = 0°"
+      },
+      {
+       "label": "D",
+       "text": "直线 x = 1 的倾斜角 α = 90°"
+      }
+     ],
+     "answer": "BCD",
+     "analysis": "倾斜角从 0° 增大到 90° 时斜率递增到正无穷，而超过 90° 后斜率为负且随角度增大而增大（从负无穷到 0），故不能说「倾斜角越大斜率越大」，A 错误。垂直于 x 轴的直线没有斜率，B 正确；水平直线斜率为 0、倾斜角为 0°，C 正确；x = 1 是竖直线，倾斜角为 90°，D 正确。",
+     "itemId": "mej_exam_x1_u02_q09"
+    },
+    {
+     "no": 10,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1141",
+      "mej_h1142",
+      "mej_h1140"
+     ],
+     "stem": "已知直线 l₁: x + 2y - 3 = 0，l₂: 2x + my + 1 = 0，则下列结论正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "当 m = 4 时，l₁ ∥ l₂"
+      },
+      {
+       "label": "B",
+       "text": "当 m = -1 时，l₁ ⊥ l₂"
+      },
+      {
+       "label": "C",
+       "text": "当 m = 1 时，两直线相交"
+      },
+      {
+       "label": "D",
+       "text": "当 m = 4 时，两直线重合"
+      }
+     ],
+     "answer": "ABC",
+     "analysis": "平行要求系数成比例而常数项不成比例：m = 4 时 l₂ 化为 x + 2y + 1/2 = 0，与 l₁ 平行但不重合，A 正确、D 错误；垂直要求 1×2 + 2×m = 0，即 m = -1，B 正确；m = 1 时两直线斜率分别为 -1/2 与 -2，不平行，故相交，C 正确。",
+     "itemId": "mej_exam_x1_u02_q10"
+    },
+    {
+     "no": 11,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1143",
+      "mej_h1142"
+     ],
+     "stem": "关于距离公式，下列计算结果正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "原点 (0, 0) 到直线 3x + 4y - 5 = 0 的距离为 1"
+      },
+      {
+       "label": "B",
+       "text": "点 (1, 2) 到直线 x = 3 的距离为 2"
+      },
+      {
+       "label": "C",
+       "text": "两平行线 2x + 3y - 1 = 0 与 2x + 3y + 5 = 0 的距离为 6/√13"
+      },
+      {
+       "label": "D",
+       "text": "点 (1, 1) 到直线 y = x 的距离为 1"
+      }
+     ],
+     "answer": "ABC",
+     "analysis": "原点到该直线的距离为 5/5 = 1，A 正确；到竖直线 x = 3 的距离为横坐标之差 |1 - 3| = 2，B 正确；平行线间距离为 |-1 - 5|/√13 = 6/√13，C 正确；点 (1,1) 就在直线 y = x 上，距离为 0，D 错误。",
+     "itemId": "mej_exam_x1_u02_q11"
+    },
+    {
+     "no": 12,
+     "score": 5,
+     "type": "multi",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1145",
+      "mej_h1146",
+      "mej_h1144"
+     ],
+     "stem": "已知圆 C: x² + y² - 4x = 0，则下列结论正确的是（　）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆心为 (2, 0)"
+      },
+      {
+       "label": "B",
+       "text": "半径为 2"
+      },
+      {
+       "label": "C",
+       "text": "原点在圆 C 上"
+      },
+      {
+       "label": "D",
+       "text": "直线 y = x 与圆 C 相离"
+      }
+     ],
+     "answer": "ABC",
+     "analysis": "配方得 (x - 2)² + y² = 4，圆心 (2,0)，半径 2，A、B 正确；把 (0,0) 代入原方程得 0 = 0，成立，故原点在圆上，C 正确；圆心到直线 x - y = 0 的距离为 2/√2 = √2 < 2，直线与圆相交，D 错误。",
+     "itemId": "mej_exam_x1_u02_q12"
+    }
+   ]
+  },
+  {
+   "title": "三、填空题（本大题共 4 小题，每小题 5 分，共 20 分）",
+   "items": [
+    {
+     "no": 13,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1138",
+      "mej_h1137"
+     ],
+     "stem": "经过 A(0, 1) 与 B(√3, 2) 两点的直线的倾斜角为 ____。",
+     "answer": "30°",
+     "analysis": "斜率 k = (2-1)/(√3-0) = 1/√3 = √3/3，由 tanα = √3/3 且 α ∈ [0°, 180°) 得倾斜角为 30°。",
+     "itemId": "mej_exam_x1_u02_q13"
+    },
+    {
+     "no": 14,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1143",
+      "mej_h1142"
+     ],
+     "stem": "点 (2, -1) 到直线 4x - 3y + 5 = 0 的距离为 ____。",
+     "answer": "16/5",
+     "analysis": "代入距离公式 d = |4×2 - 3×(-1) + 5|/√(16+9) = |8+3+5|/5 = 16/5。",
+     "itemId": "mej_exam_x1_u02_q14"
+    },
+    {
+     "no": 15,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1144",
+      "mej_h014"
+     ],
+     "stem": "以 (-1, 2) 为圆心、√5 为半径的圆的标准方程为 ____。",
+     "answer": "(x + 1)² + (y - 2)² = 5",
+     "analysis": "圆的标准方程为 (x - a)² + (y - b)² = r²，代入圆心 (-1, 2) 与 r² = 5 得 (x + 1)² + (y - 2)² = 5。",
+     "itemId": "mej_exam_x1_u02_q15"
+    },
+    {
+     "no": 16,
+     "score": 5,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "mej_h1146",
+      "mej_h1145"
+     ],
+     "stem": "两圆 x² + y² - 2x = 0 与 x² + y² - 4y + 3 = 0 的位置关系是 ____。",
+     "answer": "外离",
+     "analysis": "第一个圆配方得 (x - 1)² + y² = 1，圆心 (1,0)、半径 1；第二个圆配方得 x² + (y - 2)² = 1，圆心 (0,2)、半径 1。圆心距为 √(1 + 4) = √5，大于半径之和 2，故两圆外离。",
+     "itemId": "mej_exam_x1_u02_q16"
+    }
+   ]
+  },
+  {
+   "title": "四、解答题（本大题共 6 小题，共 70 分，解答应写出文字说明、证明过程或演算步骤）",
+   "items": [
+    {
+     "no": 17,
+     "score": 10,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1139",
+      "mej_h1140",
+      "mej_h1138"
+     ],
+     "stem": "已知直线 l 经过点 P(2, 3)。\n(1) 若 l 的斜率为 -2，求 l 的方程；\n(2) 若 l 经过点 Q(-1, 0)，求 l 的斜率和方程（写成一般式）。",
+     "answer": "(1) 2x + y - 7 = 0；(2) 斜率为 1，方程为 x - y + 1 = 0",
+     "analysis": "(1) 由点斜式得 y - 3 = -2(x - 2)，整理为 2x + y - 7 = 0。(2) 斜率 k = (3 - 0)/(2 - (-1)) = 1，由点斜式得 y - 0 = 1·(x + 1)，即 x - y + 1 = 0。",
+     "scoreRule": [
+      {
+       "step": "写出点斜式 y - 3 = -2(x - 2)",
+       "score": 3
+      },
+      {
+       "step": "整理得 2x + y - 7 = 0",
+       "score": 2
+      },
+      {
+       "step": "求出斜率 k = 1",
+       "score": 3
+      },
+      {
+       "step": "写出一般式 x - y + 1 = 0",
+       "score": 2
+      }
+     ],
+     "itemId": "mej_exam_x1_u02_q17"
+    },
+    {
+     "no": 18,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1141",
+      "mej_h1143",
+      "mej_h1142"
+     ],
+     "stem": "已知直线 l: 3x + 4y - 12 = 0。\n(1) 求 l 与 x 轴、y 轴交点的坐标；\n(2) 求原点 O 到 l 的距离；\n(3) 求与 l 平行且经过点 (1, 1) 的直线方程。",
+     "answer": "(1) (4, 0) 与 (0, 3)；(2) 12/5；(3) 3x + 4y - 7 = 0",
+     "analysis": "令 y = 0 得 x = 4，令 x = 0 得 y = 3，交点为 (4,0)、(0,3)。原点到 l 的距离为 |0+0-12|/√(9+16) = 12/5。与 l 平行的直线可设为 3x + 4y + m = 0，代入 (1,1) 得 3 + 4 + m = 0，m = -7，故方程为 3x + 4y - 7 = 0。",
+     "scoreRule": [
+      {
+       "step": "求得两交点 (4,0)、(0,3)",
+       "score": 3
+      },
+      {
+       "step": "用距离公式得 12/5",
+       "score": 4
+      },
+      {
+       "step": "设平行直线 3x + 4y + m = 0",
+       "score": 3
+      },
+      {
+       "step": "代点求得 m = -7，得 3x + 4y - 7 = 0",
+       "score": 2
+      }
+     ],
+     "itemId": "mej_exam_x1_u02_q18"
+    },
+    {
+     "no": 19,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1144",
+      "mej_h1145",
+      "mej_h1143"
+     ],
+     "stem": "已知圆 C 的圆心为 (1, 2)，且经过点 M(4, 6)。\n(1) 求圆 C 的标准方程；\n(2) 判断直线 3x + 4y - 1 = 0 与圆 C 的位置关系；\n(3) 若该直线与圆 C 相交，求弦长。",
+     "answer": "(1) (x - 1)² + (y - 2)² = 25；(2) 相交；(3) 弦长为 2√21",
+     "analysis": "半径的平方为 (4-1)² + (6-2)² = 9 + 16 = 25，故圆为 (x - 1)² + (y - 2)² = 25。圆心到直线的距离为 |3 + 8 - 1|/5 = 2 < 5，所以直线与圆相交。弦长为 2√(r² - d²) = 2√(25 - 4) = 2√21。",
+     "scoreRule": [
+      {
+       "step": "由两点距离求得 r² = 25",
+       "score": 3
+      },
+      {
+       "step": "写出标准方程",
+       "score": 2
+      },
+      {
+       "step": "算得圆心到直线距离 2，判断相交",
+       "score": 4
+      },
+      {
+       "step": "用 2√(r²-d²) 得弦长 2√21",
+       "score": 3
+      }
+     ],
+     "itemId": "mej_exam_x1_u02_q19"
+    },
+    {
+     "no": 20,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1145",
+      "mej_h1144",
+      "mej_h1143"
+     ],
+     "stem": "已知圆 O: x² + y² = 4 与直线 l: y = x + b。\n(1) 当 b 为何值时，l 与圆 O 相切？\n(2) 当 b = 1 时，判断 l 与圆 O 的位置关系；\n(3) 在 (2) 的条件下求 l 被圆 O 截得的弦长。",
+     "answer": "(1) b = ±2√2；(2) 相交；(3) 弦长为 √14",
+     "analysis": "圆心 (0,0) 到直线 x - y + b = 0 的距离为 |b|/√2。相切要求 |b|/√2 = 2，故 b = ±2√2。当 b = 1 时距离为 1/√2 = √2/2 < 2，直线与圆相交。弦长为 2√(4 - 1/2) = 2√(7/2) = √14。",
+     "scoreRule": [
+      {
+       "step": "写出圆心到直线的距离 |b|/√2",
+       "score": 3
+      },
+      {
+       "step": "由距离等于半径得 b = ±2√2",
+       "score": 3
+      },
+      {
+       "step": "b = 1 时距离 √2/2 < 2，相交",
+       "score": 3
+      },
+      {
+       "step": "弦长 2√(4 - 1/2) = √14",
+       "score": 3
+      }
+     ],
+     "itemId": "mej_exam_x1_u02_q20"
+    },
+    {
+     "no": 21,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1146",
+      "mej_h1145",
+      "mej_h1142"
+     ],
+     "stem": "已知圆 C₁: x² + y² = 4，圆 C₂: x² + y² - 4x + 2y - 4 = 0。\n(1) 求 C₂ 的圆心与半径，并判断两圆的位置关系；\n(2) 求两圆公共弦所在直线的方程；\n(3) 求公共弦的长度。",
+     "answer": "(1) C₂ 的圆心 (2, -1)、半径 3，两圆相交；(2) 2x - y = 0；(3) 4",
+     "analysis": "C₂ 配方得 (x - 2)² + (y + 1)² = 9，圆心 (2,-1)，半径 3。圆心距 √5，而 |3 - 2| = 1 < √5 < 5 = 3 + 2，故两圆相交。两圆方程相减得 -4x + 2y = 0，即公共弦所在直线 2x - y = 0。原点（C₁ 的圆心）到该直线的距离为 0，说明公共弦是 C₁ 的直径，故长度为 4。",
+     "scoreRule": [
+      {
+       "step": "配方得 C₂ 的圆心与半径",
+       "score": 3
+      },
+      {
+       "step": "由圆心距 √5 与半径关系判定相交",
+       "score": 3
+      },
+      {
+       "step": "两式相减得公共弦方程 2x - y = 0",
+       "score": 3
+      },
+      {
+       "step": "判断公共弦过 C₁ 圆心，长度 4",
+       "score": 3
+      }
+     ],
+     "itemId": "mej_exam_x1_u02_q21"
+    },
+    {
+     "no": 22,
+     "score": 12,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "mej_h1140",
+      "mej_h1141",
+      "mej_h1143"
+     ],
+     "stem": "已知 △ABC 的三个顶点为 A(1, 1)、B(5, 3)、C(3, 7)。\n(1) 求 BC 边所在直线的方程；\n(2) 求 BC 边上的高所在直线的方程；\n(3) 求 △ABC 的面积。",
+     "answer": "(1) 2x + y - 13 = 0；(2) x - 2y + 1 = 0；(3) 10",
+     "analysis": "BC 的斜率为 (7-3)/(3-5) = -2，由点斜式得 y - 3 = -2(x - 5)，即 2x + y - 13 = 0。高的斜率与 BC 垂直，为 1/2，过 A(1,1) 得 y - 1 = (1/2)(x - 1)，即 x - 2y + 1 = 0。BC 的长为 √(4+16) = 2√5，点 A 到 BC 的距离为 |2+1-13|/√5 = 10/√5 = 2√5，故面积为 (1/2)×2√5×2√5 = 10。",
+     "scoreRule": [
+      {
+       "step": "求 BC 斜率并写出方程 2x + y - 13 = 0",
+       "score": 3
+      },
+      {
+       "step": "由垂直关系得高的斜率 1/2，方程 x - 2y + 1 = 0",
+       "score": 3
+      },
+      {
+       "step": "求 BC = 2√5 与点 A 到 BC 的距离 2√5",
+       "score": 4
+      },
+      {
+       "step": "面积 = (1/2)×2√5×2√5 = 10",
+       "score": 2
+      }
+     ],
+     "itemId": "mej_exam_x1_u02_q22"
+    }
+   ]
+  }
+ ]
+}
