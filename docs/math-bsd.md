@@ -102,3 +102,18 @@ MATH_BUCKET=math-bsd MATH_EDITION=北师大版 python3 scripts/build_math_learn_
 - 学科下拉「📐 数学」，版本为其二级分支（`data/subject-groups.json` 里 `math` 组下的「北师大版」）；
   册次下拉从 `chapter` 派生。
 - 深链：`explore/?subject=math-bsd&book=一年级上册#mbs_p001`。
+
+## 验收状态（2026-11）
+
+| 闸门 | 判据 | 现状 |
+|---|---|---|
+| 库不变式 | `python3 scripts/test_math_bsd.py` | 48/48 通过 |
+| 卷面结构 | `check_math_bsd_exam.py --no-dup <卷>`（219 卷） | 全部 PASS |
+| 原创性 | `scan_bsd_exam_dupes.py --min 0.85` | 219 卷命中 **0 处**（曾 10 处，已改写） |
+| 学层 | `check_math_bsd_learn.py <册>`（21 册） | 1179 篇全 PASS |
+| 讲解 | `check_math_bsd_lecture.py`（全量） | 219 份 · 不合格 0 |
+| CI | `.github/workflows/validate-math-bsd.yml` | 六步全绿 |
+
+**已交付成品**：学层精讲 1179 篇 ＋ 21 册合订本；原创试卷 219 卷 × 2（试卷·参考答案与评分标准）＋ 21 册两份合订本；试卷讲解 219 份 ＋ 21 册合订本。位置见文首目录约定。
+
+**唯一库级缺口**：九年级下册 —— 教材 PDF、分课时设计、大单元设计三样源件均无，无法开工（不是漏做）。
