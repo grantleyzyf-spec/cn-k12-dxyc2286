@@ -1,0 +1,3107 @@
+{
+ "tag": "h2",
+ "book": "沪教版必修第二册",
+ "unit_points": [
+  {
+   "id": "mhj_h006",
+   "description": "把角的概念推广到任意角并引入弧度制，用终边上点的坐标定义正弦、余弦、正切与余切，借助诱导公式与和差倍半公式进行三角恒等变换，再用正弦定理与余弦定理解斜三角形。",
+   "mastery_criteria": [
+    "能判断任意角所在的象限，并进行角度与弧度的互化",
+    "能用诱导公式与和差倍半公式求值、化简并证明三角恒等式",
+    "能用正弦定理、余弦定理与面积公式求解斜三角形"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h006_q1",
+     "topicId": "mhj_h006",
+     "prompt": "下列各角中，与 -240° 的终边重合的角是",
+     "question": "下列各角中，与 -240° 的终边重合的角是",
+     "options": [
+      {
+       "label": "A",
+       "text": "60°"
+      },
+      {
+       "label": "B",
+       "text": "120°"
+      },
+      {
+       "label": "C",
+       "text": "240°"
+      },
+      {
+       "label": "D",
+       "text": "-120°"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "与 -240° 终边重合的角都可以表示为 k·360°-240°（k 为整数），取 k 等于 1 就得到 120°；而 60°、240°、-120° 这三个角与 -240° 的差都不是 360° 的整数倍，终边不与它重合。"
+    },
+    {
+     "id": "mhj_h006_q2",
+     "topicId": "mhj_h006",
+     "prompt": "若角 α 满足 sin α 小于 0 且 tan α 大于 0，则角 α 的终边位于",
+     "question": "若角 α 满足 sin α 小于 0 且 tan α 大于 0，则角 α 的终边位于",
+     "options": [
+      {
+       "label": "A",
+       "text": "第一象限"
+      },
+      {
+       "label": "B",
+       "text": "第二象限"
+      },
+      {
+       "label": "C",
+       "text": "第四象限"
+      },
+      {
+       "label": "D",
+       "text": "第三象限"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "sin α 小于 0 说明终边在第三象限、第四象限或 y 轴负半轴上；tan α 大于 0 说明正弦与余弦同号，终边在第一象限或第三象限。两个条件同时满足时，角 α 只能是第三象限的角。"
+    },
+    {
+     "id": "mhj_h006_q3",
+     "topicId": "mhj_h006",
+     "prompt": "计算 cos 60° 与 sin 30° 的和，所得结果是",
+     "question": "计算 cos 60° 与 sin 30° 的和，所得结果是",
+     "answer": 1,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 1}",
+     "explanation": "由特殊角的三角函数值可知，cos 60° 等于 1/2，sin 30° 也等于 1/2，两个值相加得 1/2 + 1/2 = 1。"
+    },
+    {
+     "id": "mhj_h006_q4",
+     "topicId": "mhj_h006",
+     "prompt": "把 sin α - cos α 化为 A sin(α + φ) 的形式，其中 A 大于 0，所得结果是",
+     "question": "把 sin α - cos α 化为 A sin(α + φ) 的形式，其中 A 大于 0，所得结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "√2 sin(α - π/4)"
+      },
+      {
+       "label": "B",
+       "text": "√2 sin(α + π/4)"
+      },
+      {
+       "label": "C",
+       "text": "2 sin(α - π/4)"
+      },
+      {
+       "label": "D",
+       "text": "√2 cos(α - π/4)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先提取公因数 √2，得 √2(√2/2 sin α - √2/2 cos α)；注意 √2/2 既是 cos π/4 也是 sin π/4，逆用两角差的正弦公式，结果化为 √2 sin(α - π/4)，振幅 A 为 √2。"
+    },
+    {
+     "id": "mhj_h006_q5",
+     "topicId": "mhj_h006",
+     "prompt": "在△ABC 中，已知边长 a = 2，A = 30°，B = 45°，则边长 b 等于",
+     "question": "在△ABC 中，已知边长 a = 2，A = 30°，B = 45°，则边长 b 等于",
+     "answer": "2√2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "根据正弦定理，三角形各边与它所对角的正弦之比相等，即 a/sin A = b/sin B，于是 b = a sin B 除以 sin A = 2×(√2/2)÷(1/2) = 2√2。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h007",
+   "description": "掌握正弦、余弦、正切三类基本三角函数的图像形状、最小正周期、值域、奇偶性与单调性，并能用正弦型函数刻画现实中的周期现象",
+   "mastery_criteria": [
+    "能画出三类基本三角函数的简图，并说出各自的定义域、最小正周期与值域",
+    "能由函数表达式读出振幅、周期、频率与初始相位，解决简单的周期现象问题"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h007_q1",
+     "topicId": "mhj_h007",
+     "prompt": "正弦函数 y=sin x 的最小正周期是多少",
+     "question": "正弦函数 y=sin x 的最小正周期是多少",
+     "options": [
+      {
+       "label": "A",
+       "text": "π/2"
+      },
+      {
+       "label": "B",
+       "text": "π"
+      },
+      {
+       "label": "C",
+       "text": "2π"
+      },
+      {
+       "label": "D",
+       "text": "4π"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "因为对任意实数 x 都有 sin(x+2π)=sin x，而小于 2π 的正数都不是它的周期，所以最小正周期是 2π。"
+    },
+    {
+     "id": "mhj_h007_q2",
+     "topicId": "mhj_h007",
+     "prompt": "余弦函数 y=cos x 是哪种函数，它的图像关于什么对称",
+     "question": "余弦函数 y=cos x 是哪种函数，它的图像关于什么对称",
+     "options": [
+      {
+       "label": "A",
+       "text": "奇函数，图像关于坐标原点对称"
+      },
+      {
+       "label": "B",
+       "text": "偶函数，图像关于 y 轴对称"
+      },
+      {
+       "label": "C",
+       "text": "奇函数，图像关于 y 轴对称"
+      },
+      {
+       "label": "D",
+       "text": "非奇非偶函数，图像没有对称性"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由诱导公式 cos(−x)=cos x 可知余弦函数是偶函数，而偶函数的图像关于 y 轴对称。"
+    },
+    {
+     "id": "mhj_h007_q3",
+     "topicId": "mhj_h007",
+     "prompt": "正切函数 y=tan x 的定义域是实数集中除去哪些点得到的集合",
+     "question": "正切函数 y=tan x 的定义域是实数集中除去哪些点得到的集合",
+     "options": [
+      {
+       "label": "A",
+       "text": "全体实数，不需要除去任何点"
+      },
+      {
+       "label": "B",
+       "text": "除去 x=kπ 的点，k 为整数"
+      },
+      {
+       "label": "C",
+       "text": "除去 x=2kπ 的点，k 为整数"
+      },
+      {
+       "label": "D",
+       "text": "除去 x=kπ+π/2 的点，k 为整数"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "当角为 kπ+π/2 时其余弦值为零，正切值不存在，所以正切函数的定义域是除去这族点的实数集。"
+    },
+    {
+     "id": "mhj_h007_q4",
+     "topicId": "mhj_h007",
+     "prompt": "要得到余弦曲线，可以把正弦曲线作怎样的平移",
+     "question": "要得到余弦曲线，可以把正弦曲线作怎样的平移",
+     "options": [
+      {
+       "label": "A",
+       "text": "向左平移 π/2 个单位"
+      },
+      {
+       "label": "B",
+       "text": "向右平移 π/2 个单位"
+      },
+      {
+       "label": "C",
+       "text": "向上平移 π/2 个单位"
+      },
+      {
+       "label": "D",
+       "text": "向左平移 2π 个单位"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "因为 cos x=sin(x+π/2)，把正弦曲线上每一点都向左平移 π/2 个单位，就得到余弦函数的图像。"
+    },
+    {
+     "id": "mhj_h007_q5",
+     "topicId": "mhj_h007",
+     "prompt": "某简谐运动的位移与时间的关系为 y=5sin(100πt+π/3)，则该运动每秒往复振动的次数是多少",
+     "question": "某简谐运动的位移与时间的关系为 y=5sin(100πt+π/3)，则该运动每秒往复振动的次数是多少",
+     "answer": "50",
+     "type": "numeric",
+     "difficulty": "hard",
+     "verify": "{\"type\":\"num\",\"value\":50}",
+     "explanation": "圆频率 ω=100π，最小正周期 T=2π/ω=0.02 秒，频率 f=1/T=50，即每秒往复振动 50 次。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h008",
+   "description": "以向量的线性运算、数量积与坐标表示为三件工具，把平面上的几何关系转化为可计算的代数关系，并用向量方法处理几何与实际问题。",
+   "mastery_criteria": [
+    "能熟练进行向量的加法、减法、数乘与数量积运算，并说明所用运算律",
+    "能用坐标计算向量的模、数量积与夹角，并判断两个向量平行或垂直",
+    "能用向量方法表达并解决平面几何中的共线、垂直与求点坐标问题"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h008_q1",
+     "topicId": "mhj_h008",
+     "prompt": "下列各量中，既有大小又有方向、可以用向量表示的是",
+     "question": "下列各量中，既有大小又有方向、可以用向量表示的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "物体的位移"
+      },
+      {
+       "label": "B",
+       "text": "物体的质量"
+      },
+      {
+       "label": "C",
+       "text": "物体的温度"
+      },
+      {
+       "label": "D",
+       "text": "物体运动的时间"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "位移既有大小又有方向，符合教材对向量的刻画；质量、温度和时间都只有大小而没有方向，属于数量，不能用向量表示。"
+    },
+    {
+     "id": "mhj_h008_q2",
+     "topicId": "mhj_h008",
+     "prompt": "已知向量 a 的模等于 3，向量 b 的模等于 4，且 a 与 b 互相垂直，则 a 与 b 的和向量的模等于多少",
+     "question": "已知向量 a 的模等于 3，向量 b 的模等于 4，且 a 与 b 互相垂直，则 a 与 b 的和向量的模等于多少",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 5}",
+     "explanation": "两个向量垂直时，和向量的模的平方等于两个模的平方之和，即 9 加 16 等于 25，所以和向量的模等于 5。"
+    },
+    {
+     "id": "mhj_h008_q3",
+     "topicId": "mhj_h008",
+     "prompt": "已知向量 a 的坐标是 (4, -1)，向量 b 的坐标是 (5, 2)，则向量 2a 加 3b 的坐标是",
+     "question": "已知向量 a 的坐标是 (4, -1)，向量 b 的坐标是 (5, 2)，则向量 2a 加 3b 的坐标是",
+     "options": [
+      {
+       "label": "A",
+       "text": "(13, 0)"
+      },
+      {
+       "label": "B",
+       "text": "(18, 3)"
+      },
+      {
+       "label": "C",
+       "text": "(23, 4)"
+      },
+      {
+       "label": "D",
+       "text": "(23, 1)"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "数乘向量时把坐标分别乘以实数，2a 等于 (8, -2)，3b 等于 (15, 6)，再对应坐标相加得 (23, 4)。"
+    },
+    {
+     "id": "mhj_h008_q4",
+     "topicId": "mhj_h008",
+     "prompt": "已知向量 a 的坐标是 (1, 2)，向量 b 的坐标是 (m, 1)，若 a 加 b 与 a 减 b 互相垂直，则实数 m 的值为",
+     "question": "已知向量 a 的坐标是 (1, 2)，向量 b 的坐标是 (m, 1)，若 a 加 b 与 a 减 b 互相垂直，则实数 m 的值为",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "2 或 -2"
+      },
+      {
+       "label": "C",
+       "text": "-2"
+      },
+      {
+       "label": "D",
+       "text": "0"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "和向量与差向量垂直说明它们的数量积为零，而两者的数量积等于 a 的模的平方减 b 的模的平方，即 5 减 (m 的平方加 1) 等于零，解得 m 的平方等于 4，所以 m 等于 2 或负 2。"
+    },
+    {
+     "id": "mhj_h008_q5",
+     "topicId": "mhj_h008",
+     "prompt": "已知向量 a 的模等于 2，向量 b 的模等于 3，a 与 b 的夹角等于 120 度，则 a 与 b 的数量积等于多少",
+     "question": "已知向量 a 的模等于 2，向量 b 的模等于 3，a 与 b 的夹角等于 120 度，则 a 与 b 的数量积等于多少",
+     "answer": "-3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "数量积等于两个向量的模与夹角余弦的乘积，120 度的余弦等于负二分之一，所以 2 乘 3 再乘负二分之一等于负 3。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h009",
+   "description": "复数以 a+bi 的代数形式统一了实数与虚数，可在其中自由进行四则运算；它又能与复平面上的点、向量一一对应，并由此讨论实系数一元二次方程的虚根与复数的三角形式。",
+   "mastery_criteria": [
+    "能说出复数的实部、虚部、纯虚数与共轭复数的含义并正确判断",
+    "能熟练进行复数的加、减、乘、除运算，并用 i 的幂的周期规律化简",
+    "能把复数与复平面上的点或向量对应起来，用模与辐角刻画复数的位置"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h009_q1",
+     "topicId": "mhj_h009",
+     "prompt": "复数 3 减 4i 的实部与虚部分别是",
+     "question": "复数 3 减 4i 的实部与虚部分别是",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "复数写成 a+bi 的形式后，实数 a 是实部，实数 b 是虚部，虚部不带虚数单位 i。所以 3 减 4i 的实部是 3，虚部是 -4。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3 与 -4"
+      },
+      {
+       "label": "B",
+       "text": "3 与 4"
+      },
+      {
+       "label": "C",
+       "text": "-3 与 4"
+      },
+      {
+       "label": "D",
+       "text": "3 与 4i"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h009_q2",
+     "topicId": "mhj_h009",
+     "prompt": "计算 1 加 2i 与 3 减 i 的乘积，结果是",
+     "question": "计算 1 加 2i 与 3 减 i 的乘积，结果是",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "按多项式相乘展开得 3 减 i 加 6i 减 2 倍的 i 的平方，即 3 加 5i 加 2，所以乘积为 5 加 5i。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 加 7i"
+      },
+      {
+       "label": "B",
+       "text": "5 加 5i"
+      },
+      {
+       "label": "C",
+       "text": "5 加 7i"
+      },
+      {
+       "label": "D",
+       "text": "1 加 5i"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h009_q3",
+     "topicId": "mhj_h009",
+     "prompt": "复数 2 加 3i 与它的共轭复数在复平面上所对应的两个点关于",
+     "question": "复数 2 加 3i 与它的共轭复数在复平面上所对应的两个点关于",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "共轭复数是 2 减 3i，两点坐标分别为（2，3）与（2，-3），横坐标相同、纵坐标互为相反数，因此关于实轴对称。",
+     "options": [
+      {
+       "label": "A",
+       "text": "虚轴对称"
+      },
+      {
+       "label": "B",
+       "text": "原点对称"
+      },
+      {
+       "label": "C",
+       "text": "实轴对称"
+      },
+      {
+       "label": "D",
+       "text": "直线 y 等于 x 对称"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h009_q4",
+     "topicId": "mhj_h009",
+     "prompt": "计算 1 加 i 与 1 减 i 的乘积，所得结果是实数几",
+     "question": "计算 1 加 i 与 1 减 i 的乘积，所得结果是实数几",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "1 加 i 与 1 减 i 互为共轭复数，而一对共轭复数的积等于模的平方，即 1 的平方加 1 的平方等于 2。",
+     "verify": "{\"type\": \"num\", \"value\": 2}"
+    },
+    {
+     "id": "mhj_h009_q5",
+     "topicId": "mhj_h009",
+     "prompt": "利用 i 的幂的周期规律，计算 1 加 i 的六次方，结果写成代数形式",
+     "question": "利用 i 的幂的周期规律，计算 1 加 i 的六次方，结果写成代数形式",
+     "answer": "-8i",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "先算 1 加 i 的平方等于 2i，再算 2i 的三次方等于 8 倍的 i 的三次方，而 i 的三次方等于 -i，所以结果是 -8i。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "mhj_h1015",
+   "page": 10,
+   "description": "把角推广为任意角并区分正角、负角与零角，掌握角度制与弧度制的互化及扇形弧长面积公式，用终边上点的坐标定义四种三角函数，再借助同角关系与诱导公式求值和化简。",
+   "mastery_criteria": [
+    "能判断任意角所在象限并写出与它终边重合的角的集合",
+    "能进行角度与弧度的互化，并用弧度制计算扇形弧长与面积",
+    "能用终边上点的坐标求四种三角函数值，并用诱导公式化简"
+   ],
+   "misconceptions": [
+    "认为终边重合的两个角一定相等，忽略它们相差 360° 的整数倍",
+    "把锐角与第一象限的角当成同一类角，忘记负角与超过 360° 的角",
+    "在弧度制与角度制之间换算时把角的弧度数与度数直接相加",
+    "求正切与余切时忽略分母不为零的条件，对终边在坐标轴上的角也照套公式"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1015_q1",
+     "topicId": "mhj_h1015",
+     "prompt": "角 -240° 的终边落在哪个象限",
+     "question": "角 -240° 的终边落在哪个象限",
+     "options": [
+      {
+       "label": "A",
+       "text": "第一象限"
+      },
+      {
+       "label": "B",
+       "text": "第二象限"
+      },
+      {
+       "label": "C",
+       "text": "第三象限"
+      },
+      {
+       "label": "D",
+       "text": "第四象限"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "因为 -240° 等于 -360° 加 120°，它与 120° 的终边重合，而 120° 的终边落在第二象限，所以 -240° 是第二象限的角。"
+    },
+    {
+     "id": "mhj_h1015_q2",
+     "topicId": "mhj_h1015",
+     "prompt": "将 75° 换算成弧度，结果是",
+     "question": "将 75° 换算成弧度，结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "π/5"
+      },
+      {
+       "label": "B",
+       "text": "3π/8"
+      },
+      {
+       "label": "C",
+       "text": "5π/12"
+      },
+      {
+       "label": "D",
+       "text": "7π/12"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "角度化弧度时用一度等于 π/180 弧度这个换算关系，于是 75° 等于 75 乘 π/180，约分后得到 5π/12 弧度。"
+    },
+    {
+     "id": "mhj_h1015_q3",
+     "topicId": "mhj_h1015",
+     "prompt": "一个扇形的半径为 3，圆心角为 2 弧度，则这个扇形的面积是",
+     "question": "一个扇形的半径为 3，圆心角为 2 弧度，则这个扇形的面积是",
+     "answer": 9,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"op\", \"op\": \"pow\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 2}]}]}, {\"type\": \"num\", \"value\": 2}]}",
+     "explanation": "弧度制下扇形的面积公式是二分之一的圆心角乘以半径的平方，代入圆心角 2、半径 3，得 1/2×2×9 = 9。"
+    },
+    {
+     "id": "mhj_h1015_q4",
+     "topicId": "mhj_h1015",
+     "prompt": "已知角 α 的终边经过点 (-2, 0)，则下列三角函数值中不存在的是",
+     "question": "已知角 α 的终边经过点 (-2, 0)，则下列三角函数值中不存在的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "cot α"
+      },
+      {
+       "label": "B",
+       "text": "sin α"
+      },
+      {
+       "label": "C",
+       "text": "cos α"
+      },
+      {
+       "label": "D",
+       "text": "tan α"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "点 (-2, 0) 的纵坐标为 0，而余切等于横坐标除以纵坐标，要求纵坐标不为 0，所以 cot α 不存在；此时 sin α 等于 0，cos α 等于 -1，tan α 等于 0，都存在。"
+    },
+    {
+     "id": "mhj_h1015_q5",
+     "topicId": "mhj_h1015",
+     "prompt": "已知 sin α = 3/5，且 α 是第二象限的角，则 tan α 等于",
+     "question": "已知 sin α = 3/5，且 α 是第二象限的角，则 tan α 等于",
+     "answer": -0.75,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": -3}, {\"type\": \"num\", \"value\": 4}]}",
+     "explanation": "由平方关系得 cos α 的绝对值为 4/5，因为 α 在第二象限，余弦取负值即 -4/5，所以 tan α 等于正弦除以余弦，结果为 -3/4。"
+    },
+    {
+     "id": "mhj_h1015_q6",
+     "topicId": "mhj_h1015",
+     "prompt": "已知 α 是第二象限的角，则 α/2 是",
+     "question": "已知 α 是第二象限的角，则 α/2 是",
+     "options": [
+      {
+       "label": "A",
+       "text": "第一象限的角"
+      },
+      {
+       "label": "B",
+       "text": "第二象限的角"
+      },
+      {
+       "label": "C",
+       "text": "第三象限的角"
+      },
+      {
+       "label": "D",
+       "text": "第一象限或第三象限的角"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由 α 是第二象限的角得 2kπ + π/2 小于 α 且 α 小于 2kπ + π，两边除以 2 得 kπ + π/4 小于 α/2 且 α/2 小于 kπ + π/2。k 为偶数时 α/2 在第一象限，k 为奇数时 α/2 在第三象限，所以两种情况都可能。"
+    },
+    {
+     "id": "mhj_h1015_q7",
+     "topicId": "mhj_h1015",
+     "prompt": "利用诱导公式求值，cos(-7π/6) 的值是",
+     "question": "利用诱导公式求值，cos(-7π/6) 的值是",
+     "answer": "-√3/2",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "先用诱导公式把负角化成正角，因为余弦是偶函数，cos(-7π/6) 等于 cos(7π/6)；再把 7π/6 写成 π 加 π/6，由 cos(π + α) = -cos α 得 cos(7π/6) = -cos(π/6)，其值为 -√3/2。"
+    },
+    {
+     "id": "mhj_h1015_q8",
+     "topicId": "mhj_h1015",
+     "prompt": "已知 sin α 与 cos α 的和等于 1/5，求这两个量的乘积 sin α cos α 的值。",
+     "question": "已知 sin α 与 cos α 的和等于 1/5，求这两个量的乘积 sin α cos α 的值。",
+     "answer": "-12/25",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "把已知等式两边平方，左边展开为 sin²α + 2sin α cos α + cos²α，右边为 1/25；再用平方关系把前两项之和化为 1，得 1 + 2sin α cos α = 1/25，所以 sin α cos α = -12/25。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1016",
+   "page": 34,
+   "description": "掌握两角和与差的正弦、余弦、正切公式，并由它推出二倍角与半角公式以及积化和差、和差化积公式，能把一个角的正弦与余弦的线性组合化为一个正弦式并用于化简与求值。",
+   "mastery_criteria": [
+    "能用两角和与差公式求非特殊角的三角函数值并化简表达式",
+    "能用二倍角与半角公式由单角值求倍角、半角的值",
+    "能把正弦与余弦的线性组合化为 A sin(α + φ) 的形式"
+   ],
+   "misconceptions": [
+    "把两角和的正弦直接拆成两个正弦之和，忽略公式中的乘积结构",
+    "用二倍角公式时由正弦求余弦忘记按象限定符号",
+    "在两角和的正切公式中把分母写成 1 加两正切之积，与差角公式混淆",
+    "把线性组合的振幅写成系数之和，而不是根号下两个系数的平方和"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1016_q1",
+     "topicId": "mhj_h1016",
+     "prompt": "利用两角和的余弦公式，cos 75° 的值是",
+     "question": "利用两角和的余弦公式，cos 75° 的值是",
+     "options": [
+      {
+       "label": "A",
+       "text": "(√6 + √2)/4"
+      },
+      {
+       "label": "B",
+       "text": "(√6 - √2)/4"
+      },
+      {
+       "label": "C",
+       "text": "(√2 - √6)/4"
+      },
+      {
+       "label": "D",
+       "text": "(√6 + √2)/2"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把 75° 拆成 45° 与 30° 的和，用两角和的余弦公式展开，得 cos 45°cos 30° 减去 sin 45°sin 30°，即 √2/2×√3/2 - √2/2×1/2，整理后是 (√6 - √2)/4。"
+    },
+    {
+     "id": "mhj_h1016_q2",
+     "topicId": "mhj_h1016",
+     "prompt": "已知 sin α = 3/5，α 在 π/2 到 π 之间，cos β = 5/13，β 在 3π/2 到 2π 之间，则 cos(α - β) 等于",
+     "question": "已知 sin α = 3/5，α 在 π/2 到 π 之间，cos β = 5/13，β 在 3π/2 到 2π 之间，则 cos(α - β) 等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "-56/65"
+      },
+      {
+       "label": "B",
+       "text": "56/65"
+      },
+      {
+       "label": "C",
+       "text": "-16/65"
+      },
+      {
+       "label": "D",
+       "text": "16/65"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由 sin α 等于 3/5 且 α 在第二象限，得 cos α 等于 -4/5；由 cos β 等于 5/13 且 β 在第四象限，得 sin β 等于 -12/13。代入两角差的余弦公式得 -20/65 减 36/65，结果为 -56/65。"
+    },
+    {
+     "id": "mhj_h1016_q3",
+     "topicId": "mhj_h1016",
+     "prompt": "已知 sin α = 4/5，且 α 在 π/2 到 π 之间，则 sin 2α 等于",
+     "question": "已知 sin α = 4/5，且 α 在 π/2 到 π 之间，则 sin 2α 等于",
+     "answer": -0.96,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": -3}]}]}, {\"type\": \"num\", \"value\": 25}]}",
+     "explanation": "由 sin α 等于 4/5 且 α 在第二象限，得 cos α 等于 -3/5，用二倍角公式 sin 2α = 2sin α cos α，代入后乘得 -24/25。"
+    },
+    {
+     "id": "mhj_h1016_q4",
+     "topicId": "mhj_h1016",
+     "prompt": "化简表达式 cos(α + β)cos β + sin(α + β)sin β，所得结果是",
+     "question": "化简表达式 cos(α + β)cos β + sin(α + β)sin β，所得结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "sin α"
+      },
+      {
+       "label": "B",
+       "text": "cos β"
+      },
+      {
+       "label": "C",
+       "text": "cos α"
+      },
+      {
+       "label": "D",
+       "text": "sin β"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "把 cos(α + β) 与 sin(α + β) 看作两角差的余弦公式中的两个量，逆用公式把表达式化成一个余弦，即 cos 的括号内为 (α + β) 减 β，结果为 cos α。"
+    },
+    {
+     "id": "mhj_h1016_q5",
+     "topicId": "mhj_h1016",
+     "prompt": "已知两个角的正切值分别为 tan α = 1/3 与 tan β = -2，则 tan(α + β) 的值是",
+     "question": "已知两个角的正切值分别为 tan α = 1/3 与 tan β = -2，则 tan(α + β) 的值是",
+     "answer": -1,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": -5}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 5}, {\"type\": \"num\", \"value\": 3}]}]}",
+     "explanation": "由两角和的正切公式，分子是两个正切之和，即 1/3 减 2 得 -5/3；分母是 1 减去两个正切之积，即 1 加 2/3 得 5/3；两者相除结果为 -1。"
+    },
+    {
+     "id": "mhj_h1016_q6",
+     "topicId": "mhj_h1016",
+     "prompt": "把 √3 sin α + cos α 化为 A sin(α + φ) 的形式，其中 A 大于 0，结果是",
+     "question": "把 √3 sin α + cos α 化为 A sin(α + φ) 的形式，其中 A 大于 0，结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "2 sin(α - π/6)"
+      },
+      {
+       "label": "B",
+       "text": "2 sin(α + π/3)"
+      },
+      {
+       "label": "C",
+       "text": "sin(α + π/6)"
+      },
+      {
+       "label": "D",
+       "text": "2 sin(α + π/6)"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先从两项中提取公因数 2，得 2(√3/2 sin α + 1/2 cos α)；注意 √3/2 就是 cos π/6，1/2 就是 sin π/6，逆用两角和的正弦公式，结果化为 2 sin(α + π/6)。"
+    },
+    {
+     "id": "mhj_h1016_q7",
+     "topicId": "mhj_h1016",
+     "prompt": "已知 tan α 的值为 2，则 tan 2α 的值是",
+     "question": "已知 tan α 的值为 2，则 tan 2α 的值是",
+     "answer": "-4/3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由二倍角的正切公式，分子是两倍的正切值即 4，分母是 1 减去正切值的平方即 1 减 4 等于 -3，所以结果为 -4/3。"
+    },
+    {
+     "id": "mhj_h1016_q8",
+     "topicId": "mhj_h1016",
+     "prompt": "已知角 α 的余弦值等于 -1/3，且角 α 的终边在第三象限，求 sin 2α 与 cos 2α 的值。",
+     "question": "已知角 α 的余弦值等于 -1/3，且角 α 的终边在第三象限，求 sin 2α 与 cos 2α 的值。",
+     "answer": "sin 2α = 4√2/9，cos 2α = -7/9",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "因为角 α 的终边在第三象限，正弦取负值，由平方关系得 sin α 等于 -2√2/3。用二倍角公式算得 sin 2α = 2sin α cos α = 4√2/9，而 cos 2α = 2cos²α - 1 = 2/9 - 1 = -7/9。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1017",
+   "page": 50,
+   "description": "掌握正弦定理、余弦定理与三角形面积公式，理解外接圆半径与边角之间的关系，能按已知元素求解斜三角形，并解决测量中的距离与高度等实际问题。",
+   "mastery_criteria": [
+    "能用正弦定理处理已知两角一边或两边及一边对角的情形并判断解的个数",
+    "能用余弦定理由三边求角或由两边及夹角求第三边并求面积",
+    "能建立三角形模型解决测量中的实际距离与高度问题"
+   ],
+   "misconceptions": [
+    "由正弦定理求出正弦值后只写锐角解，漏掉 180° 减该角这一可能",
+    "把余弦定理写成第三边平方等于两边平方和加上两倍乘积乘余弦，符号出错",
+    "已知三边求角时把最大角对应的边弄错，代错公式中的边长",
+    "实际问题中把方位角直接当成三角形内角，没有先换算成两边的夹角"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1017_q1",
+     "topicId": "mhj_h1017",
+     "prompt": "在△ABC 中，已知两边长 a = 3，b = 4 及其夹角 C = 60°，则第三边 c 等于",
+     "question": "在△ABC 中，已知两边长 a = 3，b = 4 及其夹角 C = 60°，则第三边 c 等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "√13"
+      },
+      {
+       "label": "B",
+       "text": "13"
+      },
+      {
+       "label": "C",
+       "text": "√37"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "用余弦定理，第三边的平方等于另外两边的平方和减去这两边与夹角余弦值乘积的两倍，即 9 加 16 减 2×3×4×1/2 等于 13，所以 c 等于 √13。"
+    },
+    {
+     "id": "mhj_h1017_q2",
+     "topicId": "mhj_h1017",
+     "prompt": "在△ABC 中，三边长分别为 a = 4，b = 5，c = 6，则 cos A 等于",
+     "question": "在△ABC 中，三边长分别为 a = 4，b = 5，c = 6，则 cos A 等于",
+     "answer": 0.75,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 45}, {\"type\": \"num\", \"value\": 60}]}",
+     "explanation": "用余弦定理的变形，夹角 A 的余弦等于另外两边的平方和减去它的对边平方，再除以这两边乘积的两倍，即 (25 + 36 - 16)/(2×5×6) = 45/60，结果为 3/4。"
+    },
+    {
+     "id": "mhj_h1017_q3",
+     "topicId": "mhj_h1017",
+     "prompt": "在△ABC 中，已知两边长 a = √6，b = √3 + 1 及其夹角 C = 45°，则第三边 c 等于",
+     "question": "在△ABC 中，已知两边长 a = √6，b = √3 + 1 及其夹角 C = 45°，则第三边 c 等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "√3"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "√5"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由余弦定理算第三边：b 的平方为 (√3 + 1)² 即 4 + 2√3，而两倍乘积乘夹角余弦为 2√6(√3 + 1)×√2/2 即 6 + 2√3，代入得 c² 等于 6 加 4 加 2√3 减 6 减 2√3 等于 4，所以 c 等于 2。"
+    },
+    {
+     "id": "mhj_h1017_q4",
+     "topicId": "mhj_h1017",
+     "prompt": "在△ABC 中，已知 a = 2，b = 2√3，A = 30°，则满足条件的 c 的所有可能值之和是",
+     "question": "在△ABC 中，已知 a = 2，b = 2√3，A = 30°，则满足条件的 c 的所有可能值之和是",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "hard",
+     "verify": "{\"type\": \"num\", \"value\": 6}",
+     "explanation": "由余弦定理得 4 等于 12 加 c² 减 6c，整理成 c² 减 6c 加 8 等于 0，解得 c 等于 2 或 c 等于 4，这两个可能值之和为 6。"
+    },
+    {
+     "id": "mhj_h1017_q5",
+     "topicId": "mhj_h1017",
+     "prompt": "在△ABC 中，若 sin²A + sin²B = sin²C，则这个三角形是",
+     "question": "在△ABC 中，若 sin²A + sin²B = sin²C，则这个三角形是",
+     "options": [
+      {
+       "label": "A",
+       "text": "锐角三角形"
+      },
+      {
+       "label": "B",
+       "text": "直角三角形"
+      },
+      {
+       "label": "C",
+       "text": "钝角三角形"
+      },
+      {
+       "label": "D",
+       "text": "等边三角形"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由正弦定理知各边等于外接圆直径乘所对角的正弦，把条件两边同乘外接圆直径的平方，得 a² + b² = c²，由勾股定理的逆定理知角 C 为直角，所以这个三角形是直角三角形。"
+    },
+    {
+     "id": "mhj_h1017_q6",
+     "topicId": "mhj_h1017",
+     "prompt": "在△ABC 中，三边长之比为 2 比 3 比 4，则最大角的余弦值等于",
+     "question": "在△ABC 中，三边长之比为 2 比 3 比 4，则最大角的余弦值等于",
+     "answer": "-1/4",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "设三边分别为 2k、3k、4k，最大角是边 4k 所对的角，用余弦定理求其余弦值，分子为 4k² 加 9k² 减 16k² 得 -3k²，分母为 12k²，结果为 -1/4。"
+    },
+    {
+     "id": "mhj_h1017_q7",
+     "topicId": "mhj_h1017",
+     "prompt": "在△ABC 中，三边长分别为 a = 6，b = 8，c = 10，则这个三角形外接圆的半径是",
+     "question": "在△ABC 中，三边长分别为 a = 6，b = 8，c = 10，则这个三角形外接圆的半径是",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 5}",
+     "explanation": "因为 6 的平方加 8 的平方等于 10 的平方，所以这个三角形是以 c 为斜边的直角三角形，其外接圆的直径等于斜边长 10，故外接圆半径为 5。"
+    },
+    {
+     "id": "mhj_h1017_q8",
+     "topicId": "mhj_h1017",
+     "prompt": "甲船在港口 A 南偏西 20° 方向 24 海里处的 C 停留，乙船在港口 A 南偏东 40° 方向的 B 处，两船相距 31 海里。乙船行驶 20 海里到达 D 处时，求此时甲、乙两船之间的距离。",
+     "question": "甲船在港口 A 南偏西 20° 方向 24 海里处的 C 停留，乙船在港口 A 南偏东 40° 方向的 B 处，两船相距 31 海里。乙船行驶 20 海里到达 D 处时，求此时甲、乙两船之间的距离。",
+     "answer": "21 海里",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "由题意两边的夹角为 20° 加 40° 等于 60°。在三角形 ABC 中由正弦定理得角 ABC 的正弦为 24 sin 60° 除以 31 即 12√3/31，因为 AC 小于 BC 所以该角为锐角，其余弦为 23/31。再在三角形 BCD 中用余弦定理得 CD 的平方为 31² 加 20² 减 2×31×20×23/31 等于 441，所以 CD 等于 21 海里。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1018",
+   "page": 70,
+   "description": "理解正弦曲线的五点法作图，掌握正弦函数的周期性、值域、奇偶性与单调性，会求正弦型函数的最小正周期与最值",
+   "mastery_criteria": [
+    "能用五个关键点画出正弦函数在一个周期上的大致图像",
+    "能利用正弦函数的单调性比较同名三角函数值的大小",
+    "会求形如 y=A sin(ωx+φ) 的函数的最小正周期与最大值最小值"
+   ],
+   "misconceptions": [
+    "把五点法中的五个关键点当成横坐标任意均匀分布的点，忽略了它们是一个周期内的零点与最值点",
+    "把正弦函数说成在定义域上的增函数，忽略了它只是分段单调"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1018_q1",
+     "topicId": "mhj_h1018",
+     "prompt": "用五点法作正弦曲线时，一个周期内纵坐标为 −1 的关键点，其横坐标是多少",
+     "question": "用五点法作正弦曲线时，一个周期内纵坐标为 −1 的关键点，其横坐标是多少",
+     "options": [
+      {
+       "label": "A",
+       "text": "π/2"
+      },
+      {
+       "label": "B",
+       "text": "π"
+      },
+      {
+       "label": "C",
+       "text": "3π/2"
+      },
+      {
+       "label": "D",
+       "text": "2π"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "正弦曲线在 0 到 2π 上的五个关键点依次是零点、最高点、零点、最低点、零点，其中最低点出现在横坐标为 3π/2 处。"
+    },
+    {
+     "id": "mhj_h1018_q2",
+     "topicId": "mhj_h1018",
+     "prompt": "函数 y=−3sin x+1 的最小正周期是多少",
+     "question": "函数 y=−3sin x+1 的最小正周期是多少",
+     "options": [
+      {
+       "label": "A",
+       "text": "π/2"
+      },
+      {
+       "label": "B",
+       "text": "π"
+      },
+      {
+       "label": "C",
+       "text": "4π"
+      },
+      {
+       "label": "D",
+       "text": "2π"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "常数倍与上下平移都不改变周期，y=−3sin x+1 与 y=sin x 的周期相同，因此最小正周期是 2π。"
+    },
+    {
+     "id": "mhj_h1018_q3",
+     "topicId": "mhj_h1018",
+     "prompt": "函数 y=2sin(3x+π/6) 的最小正周期是多少",
+     "question": "函数 y=2sin(3x+π/6) 的最小正周期是多少",
+     "options": [
+      {
+       "label": "A",
+       "text": "2π/3"
+      },
+      {
+       "label": "B",
+       "text": "3π"
+      },
+      {
+       "label": "C",
+       "text": "π/3"
+      },
+      {
+       "label": "D",
+       "text": "6π"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "对函数 y=A sin(ωx+φ)，当 ω 大于零时最小正周期 T=2π/ω，这里 ω=3，所以 T=2π/3。"
+    },
+    {
+     "id": "mhj_h1018_q4",
+     "topicId": "mhj_h1018",
+     "prompt": "利用正弦函数的单调性比较 sin(6π/5) 与 sin(7π/6) 的大小，结论是哪一个",
+     "question": "利用正弦函数的单调性比较 sin(6π/5) 与 sin(7π/6) 的大小，结论是哪一个",
+     "options": [
+      {
+       "label": "A",
+       "text": "sin(6π/5) 大于 sin(7π/6)"
+      },
+      {
+       "label": "B",
+       "text": "sin(6π/5) 小于 sin(7π/6)"
+      },
+      {
+       "label": "C",
+       "text": "两个值相等"
+      },
+      {
+       "label": "D",
+       "text": "仅由已知条件无法比较"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由 π/2 小于 7π/6 小于 6π/5 小于 3π/2，而正弦函数在该区间上是严格减函数，所以 sin(6π/5) 小于 sin(7π/6)。"
+    },
+    {
+     "id": "mhj_h1018_q5",
+     "topicId": "mhj_h1018",
+     "prompt": "函数 y 等于 sin x 的平方再减去 sin x，它的最大值是多少",
+     "question": "函数 y 等于 sin x 的平方再减去 sin x，它的最大值是多少",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "−1/4"
+      },
+      {
+       "label": "D",
+       "text": "9/4"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "令 t=sin x，则 t 在 −1 到 1 之间，函数化为 t 减 1/2 的平方再减 1/4，当 t=−1 时取得最大值 2。"
+    },
+    {
+     "id": "mhj_h1018_q6",
+     "topicId": "mhj_h1018",
+     "prompt": "函数 y=3sin(2x+π/4) 的最大值是多少，请写出数值",
+     "question": "函数 y=3sin(2x+π/4) 的最大值是多少，请写出数值",
+     "answer": "3",
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\":\"num\",\"value\":3}",
+     "explanation": "因为正弦式的值不超过 1，当 2x+π/4=2kπ+π/2 时取到 1，所以整个函数的最大值就是 3。"
+    },
+    {
+     "id": "mhj_h1018_q7",
+     "topicId": "mhj_h1018",
+     "prompt": "函数 y=1−sin x 在 0 到 2π 的开区间内取得最小值时，x 的值是多少",
+     "question": "函数 y=1−sin x 在 0 到 2π 的开区间内取得最小值时，x 的值是多少",
+     "answer": "π/2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "当 x=π/2 时 sin x 取得最大值 1，此时 1−sin x 取得最小值 0，因此在所给区间内最小值在 x=π/2 处取到。"
+    },
+    {
+     "id": "mhj_h1018_q8",
+     "topicId": "mhj_h1018",
+     "prompt": "在半径为 r 的半圆形铁板中截取矩形，使其一边落在直径上、另两个顶点在圆弧上，怎样截取面积最大，最大面积是多少",
+     "question": "在半径为 r 的半圆形铁板中截取矩形，使其一边落在直径上、另两个顶点在圆弧上，怎样截取面积最大，最大面积是多少",
+     "answer": "当矩形的对角线与直径的夹角为 π/4 时面积最大，最大面积为 r 的平方，此时矩形在直径上的边长为 √2 r，另一边长为 (√2/2) r",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "设夹角为 x，则矩形面积 y=r 的平方乘 sin 2x，x 在 0 到 π/2 之间，当 2x=π/2 即 x=π/4 时 sin 2x 取到 1，面积达到最大值 r 的平方。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1019",
+   "page": 86,
+   "description": "借助 cos x=sin(x+π/2) 由正弦曲线得到余弦曲线，掌握余弦函数的周期、值域、奇偶性与单调性，并会求相关的最值与单调区间",
+   "mastery_criteria": [
+    "能说出余弦曲线与正弦曲线之间的平移关系，并写出一个周期内的五个关键点",
+    "会求形如 y=A cos(ωx+φ) 的函数的最小正周期与单调区间"
+   ],
+   "misconceptions": [
+    "把余弦曲线最高点的横坐标误写成 π/2，与正弦曲线的关键点混淆",
+    "求余弦型函数的单调区间时，没有先看清 ω 的符号就直接套用基本余弦函数的单调区间"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1019_q1",
+     "topicId": "mhj_h1019",
+     "prompt": "余弦曲线在一个周期内纵坐标为 −1 的关键点，其横坐标是多少",
+     "question": "余弦曲线在一个周期内纵坐标为 −1 的关键点，其横坐标是多少",
+     "options": [
+      {
+       "label": "A",
+       "text": "π/4"
+      },
+      {
+       "label": "B",
+       "text": "π/2"
+      },
+      {
+       "label": "C",
+       "text": "π"
+      },
+      {
+       "label": "D",
+       "text": "3π/2"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "余弦曲线在 0 到 2π 上的五个关键点横坐标依次是 0、π/2、π、3π/2、2π，其中横坐标为 π 的点纵坐标是 −1。"
+    },
+    {
+     "id": "mhj_h1019_q2",
+     "topicId": "mhj_h1019",
+     "prompt": "函数 y=3cos 2x 的最小值是多少，请写出数值",
+     "question": "函数 y=3cos 2x 的最小值是多少，请写出数值",
+     "answer": "-3",
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\":\"num\",\"value\":-3}",
+     "explanation": "因为余弦式的值不小于 −1，即 cos 2x 的最小值为 −1，把它乘以 3 后，函数 y=3cos 2x 的最小值就是 −3。"
+    },
+    {
+     "id": "mhj_h1019_q3",
+     "topicId": "mhj_h1019",
+     "prompt": "余弦函数是偶函数，它的图像关于什么对称",
+     "question": "余弦函数是偶函数，它的图像关于什么对称",
+     "options": [
+      {
+       "label": "A",
+       "text": "坐标原点"
+      },
+      {
+       "label": "B",
+       "text": "y 轴"
+      },
+      {
+       "label": "C",
+       "text": "直线 x=π/2"
+      },
+      {
+       "label": "D",
+       "text": "直线 x=π"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由 cos(−x)=cos x 可知余弦函数是偶函数，而偶函数的图像关于 y 轴对称，不是关于原点对称。"
+    },
+    {
+     "id": "mhj_h1019_q4",
+     "topicId": "mhj_h1019",
+     "prompt": "函数 y=2cos(2x−π/3) 的最小正周期是多少",
+     "question": "函数 y=2cos(2x−π/3) 的最小正周期是多少",
+     "options": [
+      {
+       "label": "A",
+       "text": "π"
+      },
+      {
+       "label": "B",
+       "text": "2π"
+      },
+      {
+       "label": "C",
+       "text": "π/2"
+      },
+      {
+       "label": "D",
+       "text": "4π"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "这里 ω=2，由余弦型函数的最小正周期 T=2π/ω 得 T=π，也可以先把它化成 2sin(2x+π/6) 再读周期。"
+    },
+    {
+     "id": "mhj_h1019_q5",
+     "topicId": "mhj_h1019",
+     "prompt": "余弦函数的严格单调递减区间是下列哪一个",
+     "question": "余弦函数的严格单调递减区间是下列哪一个",
+     "options": [
+      {
+       "label": "A",
+       "text": "从 2kπ−π 到 2kπ，k 为整数"
+      },
+      {
+       "label": "B",
+       "text": "从 2kπ+π/2 到 2kπ+3π/2，k 为整数"
+      },
+      {
+       "label": "C",
+       "text": "从 2kπ−π/2 到 2kπ+π/2，k 为整数"
+      },
+      {
+       "label": "D",
+       "text": "从 2kπ 到 2kπ+π，k 为整数"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "余弦函数在 2kπ 到 2kπ+π 上由 1 严格减小到 −1，所以这是它的严格单调递减区间，其余几项对应区间并不递减。"
+    },
+    {
+     "id": "mhj_h1019_q6",
+     "topicId": "mhj_h1019",
+     "prompt": "余弦函数取得最小值时，自变量 x 的取值集合是什么",
+     "question": "余弦函数取得最小值时，自变量 x 的取值集合是什么",
+     "answer": "x=2kπ+π，k 为整数",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "当且仅当 x=2kπ+π 时 cos x 等于 −1，此时余弦函数取得最小值 −1，因此所求集合是所有形如 2kπ+π 的实数。"
+    },
+    {
+     "id": "mhj_h1019_q7",
+     "topicId": "mhj_h1019",
+     "prompt": "求函数 y 等于 cos x 的平方减去 4cos x 再加 1 的最大值与最小值，并写出取得最大值时 x 的取值",
+     "question": "求函数 y 等于 cos x 的平方减去 4cos x 再加 1 的最大值与最小值，并写出取得最大值时 x 的取值",
+     "answer": "最大值为 6，此时 x=2kπ+π，k 为整数；最小值为 −2，此时 x=2kπ，k 为整数",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "令 t=cos x，则 t 在 −1 到 1 之间，函数化为 t 减 2 的平方再减 3，t=−1 时取最大值 6，t=1 时取最小值 −2。"
+    },
+    {
+     "id": "mhj_h1019_q8",
+     "topicId": "mhj_h1019",
+     "prompt": "函数 y 等于 1 减去 2 倍的 sin(x−π/4) 的平方，它的最小正周期与奇偶性是哪一项",
+     "question": "函数 y 等于 1 减去 2 倍的 sin(x−π/4) 的平方，它的最小正周期与奇偶性是哪一项",
+     "options": [
+      {
+       "label": "A",
+       "text": "最小正周期为 π 的奇函数"
+      },
+      {
+       "label": "B",
+       "text": "最小正周期为 π 的偶函数"
+      },
+      {
+       "label": "C",
+       "text": "最小正周期为 π/2 的奇函数"
+      },
+      {
+       "label": "D",
+       "text": "最小正周期为 π/2 的偶函数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由二倍角公式，1 减 2 倍 sin(x−π/4) 的平方等于 cos(2x−π/2)，即 sin 2x，它是奇函数且最小正周期为 π。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1020",
+   "page": 90,
+   "description": "理解 y=A sin(ωx+φ) 中振幅、最小正周期、频率、相位与初始相位的含义，会用五点法作出它在一个周期上的图像",
+   "mastery_criteria": [
+    "能由函数表达式直接读出振幅、最小正周期、频率与初始相位",
+    "能用五点法作出正弦型函数在一个周期上的大致图像，并由图像反求表达式中的参数"
+   ],
+   "misconceptions": [
+    "把圆频率 ω 与频率 f 混为一谈，忘记了频率等于 ω 除以 2π",
+    "认为表达式中的 φ 增大时图像向右平移，实际上图像是向左平移"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1020_q1",
+     "topicId": "mhj_h1020",
+     "prompt": "函数 y=5sin(3x+π/4) 的振幅是多少",
+     "question": "函数 y=5sin(3x+π/4) 的振幅是多少",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "π/4"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "3π"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "在 y=A sin(ωx+φ) 中，A 的绝对值就是振幅，这里正弦前面的系数是 5，所以振幅为 5，值域是 −5 到 5。"
+    },
+    {
+     "id": "mhj_h1020_q2",
+     "topicId": "mhj_h1020",
+     "prompt": "函数 y=3sin(2x+π/4) 的最小正周期是多少",
+     "question": "函数 y=3sin(2x+π/4) 的最小正周期是多少",
+     "options": [
+      {
+       "label": "A",
+       "text": "π/2"
+      },
+      {
+       "label": "B",
+       "text": "π"
+      },
+      {
+       "label": "C",
+       "text": "2π"
+      },
+      {
+       "label": "D",
+       "text": "4π"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由 ω=2 得最小正周期 T=2π/ω=π，也就是说当 2x+π/4 从 0 变到 2π 时，x 只从 −π/8 变到 7π/8。"
+    },
+    {
+     "id": "mhj_h1020_q3",
+     "topicId": "mhj_h1020",
+     "prompt": "函数 y=3sin(2x+π/4) 的初始相位是多少",
+     "question": "函数 y=3sin(2x+π/4) 的初始相位是多少",
+     "answer": "π/4",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "这个函数的相位是 2x+π/4，所谓初始相位就是当 x=0 时的相位值，因此初始相位是 π/4。"
+    },
+    {
+     "id": "mhj_h1020_q4",
+     "topicId": "mhj_h1020",
+     "prompt": "下列函数中，与函数 y=5sin(3x+π/4) 的图像形状相同的是哪一个",
+     "question": "下列函数中，与函数 y=5sin(3x+π/4) 的图像形状相同的是哪一个",
+     "options": [
+      {
+       "label": "A",
+       "text": "y=8sin(3x+π/4)"
+      },
+      {
+       "label": "B",
+       "text": "y=3sin(5x+π/4)"
+      },
+      {
+       "label": "C",
+       "text": "y=5sin(2x+π/4)"
+      },
+      {
+       "label": "D",
+       "text": "y=5sin(3x+3π/4)"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "图像形状相同要求振幅与圆频率都相同。这里 y=5sin(3x+3π/4) 的振幅是 5、ω 是 3，只是初始相位不同，因此与已知函数形状相同。"
+    },
+    {
+     "id": "mhj_h1020_q5",
+     "topicId": "mhj_h1020",
+     "prompt": "交流电的电流强度与时间的关系为 I=10sin(100πt)，它的频率是多少赫兹",
+     "question": "交流电的电流强度与时间的关系为 I=10sin(100πt)，它的频率是多少赫兹",
+     "answer": "50",
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\":\"num\",\"value\":50}",
+     "explanation": "圆频率 ω=100π，由频率 f=ω/(2π) 得 f=50，也就是说最小正周期为 0.02 秒，每秒变化 50 次。"
+    },
+    {
+     "id": "mhj_h1020_q6",
+     "topicId": "mhj_h1020",
+     "prompt": "弹簧上小球离开平衡位置的位移为 h=2sin(πt+π/4)，当 t=0 时小球与平衡位置的距离是多少厘米",
+     "question": "弹簧上小球离开平衡位置的位移为 h=2sin(πt+π/4)，当 t=0 时小球与平衡位置的距离是多少厘米",
+     "options": [
+      {
+       "label": "A",
+       "text": "√2"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "0"
+      },
+      {
+       "label": "D",
+       "text": "π/4"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把 t=0 代入表达式，得 h=2sin(π/4)=√2，即小球开始振动时离开平衡位置 √2 厘米，而不是 0 或 2 厘米。"
+    },
+    {
+     "id": "mhj_h1020_q7",
+     "topicId": "mhj_h1020",
+     "prompt": "已知交流电的电流强度 I=I0 sin(ωt+φ)，其中 I0 大于零、ω 大于零、φ 在 0 与 2π 之间，它的周期为 0.02 秒，电流最大值为 10 安，且 t=0.005 秒时电流达到最大值，求 I0、ω 与 φ",
+     "question": "已知交流电的电流强度 I=I0 sin(ωt+φ)，其中 I0 大于零、ω 大于零、φ 在 0 与 2π 之间，它的周期为 0.02 秒，电流最大值为 10 安，且 t=0.005 秒时电流达到最大值，求 I0、ω 与 φ",
+     "answer": "I0=10，ω=100π，φ=0",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "电流最大值就是振幅，故 I0=10；由周期 0.02 秒得 ω=2π/T=100π；把 t=0.005 代入得 sin(π/2+φ)=1，结合 φ 的范围得 φ=0。"
+    },
+    {
+     "id": "mhj_h1020_q8",
+     "topicId": "mhj_h1020",
+     "prompt": "在 y=A sin(ωx+φ) 中，当 ω 增大而其他量不变时，函数图像会怎样变化",
+     "question": "在 y=A sin(ωx+φ) 中，当 ω 增大而其他量不变时，函数图像会怎样变化",
+     "options": [
+      {
+       "label": "A",
+       "text": "振幅增大"
+      },
+      {
+       "label": "B",
+       "text": "最小正周期减小"
+      },
+      {
+       "label": "C",
+       "text": "图像整体向左平移"
+      },
+      {
+       "label": "D",
+       "text": "值域变成全体实数"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "最小正周期 T=2π/ω 与 ω 成反比，所以 ω 增大时周期减小，图像在水平方向被压缩，而振幅与值域都不改变。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1021",
+   "page": 96,
+   "description": "掌握正切函数的定义域与图像由无穷多支曲线组成的特点，以及它的最小正周期、值域、奇偶性与单调区间",
+   "mastery_criteria": [
+    "能写出正切函数的定义域，并说明它的图像被哪些竖直直线隔开",
+    "会求形如 y=tan(ωx+φ) 的函数的定义域、最小正周期与单调增区间"
+   ],
+   "misconceptions": [
+    "说正切函数在整个定义域上都是增函数，忽略了图像在相邻两支之间断开",
+    "求正切型函数的定义域时漏掉 kπ+π/2 这一族点，只写了部分限制条件"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1021_q1",
+     "topicId": "mhj_h1021",
+     "prompt": "正切函数 y=tan x 的最小正周期是多少",
+     "question": "正切函数 y=tan x 的最小正周期是多少",
+     "options": [
+      {
+       "label": "A",
+       "text": "π/2"
+      },
+      {
+       "label": "B",
+       "text": "π"
+      },
+      {
+       "label": "C",
+       "text": "2π"
+      },
+      {
+       "label": "D",
+       "text": "4π"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由诱导公式 tan(x+π)=tan x 知 π 是它的一个周期，而小于 π 的正数都不满足，所以最小正周期是 π，比正弦的周期小一半。"
+    },
+    {
+     "id": "mhj_h1021_q2",
+     "topicId": "mhj_h1021",
+     "prompt": "正切函数的定义域是实数集中除去哪些点的集合",
+     "question": "正切函数的定义域是实数集中除去哪些点的集合",
+     "options": [
+      {
+       "label": "A",
+       "text": "除去 x=kπ+π/2 的点，k 为整数"
+      },
+      {
+       "label": "B",
+       "text": "除去 x=kπ 的点，k 为整数"
+      },
+      {
+       "label": "C",
+       "text": "除去 x=2kπ 的点，k 为整数"
+      },
+      {
+       "label": "D",
+       "text": "全体实数，不需要除去任何点"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "当角为 kπ+π/2 时其余弦值为零，正切值不存在，所以定义域要除去这族点，图像正是被这些直线隔成无穷多支。"
+    },
+    {
+     "id": "mhj_h1021_q3",
+     "topicId": "mhj_h1021",
+     "prompt": "正切函数的值域是什么，请用文字说明",
+     "question": "正切函数的值域是什么，请用文字说明",
+     "answer": "全体实数，既没有最大值也没有最小值",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "当 x 从左侧趋近 π/2 时正切值无限增大，从右侧趋近 −π/2 时无限减小，所以值域是全体实数，没有最大值也没有最小值。"
+    },
+    {
+     "id": "mhj_h1021_q4",
+     "topicId": "mhj_h1021",
+     "prompt": "函数 y=tan(2x+π/6) 的最小正周期是多少",
+     "question": "函数 y=tan(2x+π/6) 的最小正周期是多少",
+     "options": [
+      {
+       "label": "A",
+       "text": "π"
+      },
+      {
+       "label": "B",
+       "text": "2π"
+      },
+      {
+       "label": "C",
+       "text": "π/2"
+      },
+      {
+       "label": "D",
+       "text": "π/4"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "正切型函数 y=tan(ωx+φ) 的最小正周期为 π 除以 ω，这里 ω=2，所以最小正周期是 π/2，而不是 π。"
+    },
+    {
+     "id": "mhj_h1021_q5",
+     "topicId": "mhj_h1021",
+     "prompt": "函数 y=tan(πx/6+π/3) 的定义域中，x 不能取的最小正数是多少",
+     "question": "函数 y=tan(πx/6+π/3) 的定义域中，x 不能取的最小正数是多少",
+     "answer": "1",
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\":\"num\",\"value\":1}",
+     "explanation": "由 πx/6+π/3=kπ+π/2 解得 x=6k+1，k 取 0 时得 x=1，这就是定义域中被除去的点里最小的正数。"
+    },
+    {
+     "id": "mhj_h1021_q6",
+     "topicId": "mhj_h1021",
+     "prompt": "函数 y=tan(πx/6+π/3) 的单调增区间可以写成 6k 减 5 到 6k 加 1，当 k 取零时这个区间是什么",
+     "question": "函数 y=tan(πx/6+π/3) 的单调增区间可以写成 6k 减 5 到 6k 加 1，当 k 取零时这个区间是什么",
+     "answer": "开区间 −5 到 1",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由 kπ−π/2 小于 πx/6+π/3 小于 kπ+π/2 解得 6k−5 小于 x 小于 6k+1，当 k=0 时就是 −5 到 1 这个开区间。"
+    },
+    {
+     "id": "mhj_h1021_q7",
+     "topicId": "mhj_h1021",
+     "prompt": "求函数 y=tan(3x+π/4) 的定义域与单调增区间",
+     "question": "求函数 y=tan(3x+π/4) 的定义域与单调增区间",
+     "answer": "定义域为 x 不等于 kπ/3+π/12，k 为整数；单调增区间为每个开区间 kπ/3−π/4 到 kπ/3+π/12，k 为整数",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "由 3x+π/4 不等于 kπ+π/2 得定义域；再由 kπ−π/2 小于 3x+π/4 小于 kπ+π/2 解得 kπ/3−π/4 小于 x 小于 kπ/3+π/12，即增区间。"
+    },
+    {
+     "id": "mhj_h1021_q8",
+     "topicId": "mhj_h1021",
+     "prompt": "关于正切函数 y=tan x，下列说法正确的是哪一个",
+     "question": "关于正切函数 y=tan x，下列说法正确的是哪一个",
+     "options": [
+      {
+       "label": "A",
+       "text": "它在整个定义域上是严格增函数"
+      },
+      {
+       "label": "B",
+       "text": "它有最大值但没有最小值"
+      },
+      {
+       "label": "C",
+       "text": "它的最小正周期是 2π"
+      },
+      {
+       "label": "D",
+       "text": "它的图像关于坐标原点对称"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由 tan(−x)=−tan x 知正切函数是奇函数，图像关于坐标原点对称；它只在每个开区间上递增，没有最值，最小正周期是 π。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1022",
+   "page": 106,
+   "description": "从大小和方向两个方面认识向量，理解模、零向量、单位向量、平行与相等，并掌握加法、减法与实数乘向量这三类线性运算及其运算律。",
+   "mastery_criteria": [
+    "能判断两个向量是否相等、平行或互为负向量",
+    "能用三角形法则与平行四边形法则作出两个向量的和与差",
+    "能化简含向量加减与数乘的式子，并用已知向量表示其他向量"
+   ],
+   "misconceptions": [
+    "认为模相等的两个向量一定相等，忽略方向必须相同",
+    "认为零向量没有方向，或认为零向量与任何向量都不平行",
+    "化简向量式时把 AB 与 BA 当成同一个向量，随意改变起点和终点"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mhj_h1022_q1",
+     "topicId": "mhj_h1022",
+     "prompt": "下列关于向量的说法中，正确的是",
+     "question": "下列关于向量的说法中，正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "模为 1 的向量叫做单位向量"
+      },
+      {
+       "label": "B",
+       "text": "零向量没有方向，所以不能与任何向量比较"
+      },
+      {
+       "label": "C",
+       "text": "两个向量的模相等，则这两个向量一定相等"
+      },
+      {
+       "label": "D",
+       "text": "两个向量平行，则它们所在的直线一定重合"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材规定模为 1 的向量叫做单位向量；零向量具有任意方向，与任意向量平行；模相等的两个向量方向不一定相同；两个向量平行时它们所在的直线可能平行也可能重合。"
+    },
+    {
+     "id": "mhj_h1022_q2",
+     "topicId": "mhj_h1022",
+     "prompt": "已知向量 a 的模等于 6，实数 λ 等于负 2，则向量 λa 的模等于多少",
+     "question": "已知向量 a 的模等于 6，实数 λ 等于负 2，则向量 λa 的模等于多少",
+     "answer": 12,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 6}]}",
+     "explanation": "实数与向量相乘时，所得向量的模等于这个实数的绝对值与原来向量模的乘积，即 2 乘 6 等于 12，方向与 a 相反。"
+    },
+    {
+     "id": "mhj_h1022_q3",
+     "topicId": "mhj_h1022",
+     "prompt": "在平面上依次给定四个点 A、B、C、D，化简向量 AB 加向量 BC 加向量 CD 加向量 DA 的结果是什么",
+     "question": "在平面上依次给定四个点 A、B、C、D，化简向量 AB 加向量 BC 加向量 CD 加向量 DA 的结果是什么",
+     "answer": "零向量",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "按首尾规则，AB 加 BC 等于 AC，AC 加 CD 等于 AD，再加上 DA 就得到起点与终点相同的向量，即零向量。"
+    },
+    {
+     "id": "mhj_h1022_q4",
+     "topicId": "mhj_h1022",
+     "prompt": "化简向量式：向量 AB 加上向量 MB，再加上向量 BD，再加上向量 DM，所得结果是",
+     "question": "化简向量式：向量 AB 加上向量 MB，再加上向量 BD，再加上向量 DM，所得结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "向量 AD"
+      },
+      {
+       "label": "B",
+       "text": "向量 MB"
+      },
+      {
+       "label": "C",
+       "text": "向量 AB"
+      },
+      {
+       "label": "D",
+       "text": "零向量"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先把 MB 与 BD 相加得 MD，再与 DM 相加，两个互为负向量，和为向量零，于是整个式子等于 AB 加零向量，结果仍是向量 AB。"
+    },
+    {
+     "id": "mhj_h1022_q5",
+     "topicId": "mhj_h1022",
+     "prompt": "已知向量 a 与 b，则 2 倍的 a 减 b 加上 3 倍的 a 加 b 化简后的结果是",
+     "question": "已知向量 a 与 b，则 2 倍的 a 减 b 加上 3 倍的 a 加 b 化简后的结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "5a 加 5b"
+      },
+      {
+       "label": "B",
+       "text": "5a 减 b"
+      },
+      {
+       "label": "C",
+       "text": "a 加 5b"
+      },
+      {
+       "label": "D",
+       "text": "5a 加 b"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先去括号得 2a 减 2b 加 3a 加 3b，再合并同类项，a 的系数是 2 加 3 等于 5，b 的系数是负 2 加 3 等于 1，所以结果是 5a 加 b。"
+    },
+    {
+     "id": "mhj_h1022_q6",
+     "topicId": "mhj_h1022",
+     "prompt": "在三角形 ABC 中，点 D 是边 BC 的中点，点 G 是三角形的重心，若中线 AD 的长等于 6，则线段 AG 的长等于多少",
+     "question": "在三角形 ABC 中，点 D 是边 BC 的中点，点 G 是三角形的重心，若中线 AD 的长等于 6，则线段 AG 的长等于多少",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"num\", \"value\": 6}]}",
+     "explanation": "重心把三角形的每条中线分成两段，顶点到重心的距离等于这条中线上顶点到对边中点距离的三分之二，所以 AG 等于三分之二乘以 6，结果为 4。"
+    },
+    {
+     "id": "mhj_h1022_q7",
+     "topicId": "mhj_h1022",
+     "prompt": "设 e1 与 e2 是两个不平行的向量，已知向量 AB 等于 3 倍 e1 减 2 倍 e2，向量 BC 等于负 2 倍 e1 加 4 倍 e2，向量 CD 等于负 2 倍 e1 减 4 倍 e2，则下列结论正确的是",
+     "question": "设 e1 与 e2 是两个不平行的向量，已知向量 AB 等于 3 倍 e1 减 2 倍 e2，向量 BC 等于负 2 倍 e1 加 4 倍 e2，向量 CD 等于负 2 倍 e1 减 4 倍 e2，则下列结论正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "A、B、D 三点共线"
+      },
+      {
+       "label": "B",
+       "text": "A、C、D 三点共线"
+      },
+      {
+       "label": "C",
+       "text": "B、C、D 三点共线"
+      },
+      {
+       "label": "D",
+       "text": "这四点中任意三点都不共线"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先求 AC 等于 AB 加 BC 等于 e1 加 2 倍 e2，再与 CD 比较，CD 等于负 2 倍 e1 减 4 倍 e2，即负 2 倍的 AC，两向量平行且有公共点 C，所以 A、C、D 三点共线。"
+    },
+    {
+     "id": "mhj_h1022_q8",
+     "topicId": "mhj_h1022",
+     "prompt": "已知向量 a、b、c 满足二分之一倍的 a 减 3c 加上 2 倍的 2a 减 3b 等于零向量，试用 a 与 b 表示向量 c",
+     "question": "已知向量 a、b、c 满足二分之一倍的 a 减 3c 加上 2 倍的 2a 减 3b 等于零向量，试用 a 与 b 表示向量 c",
+     "answer": "c = 3a - 4b",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "展开得二分之一倍的 a 减二分之三倍的 c 加 4a 减 6b 等于零向量，移项得二分之三倍的 c 等于二分之九倍的 a 减 6b，两边同乘三分之二，得 c 等于 3a 减 4b。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1023",
+   "page": 118,
+   "description": "用向量在另一个向量方向上的投影理解数量积的来源，掌握数量积的定义与三条运算律，并用它计算模、判断垂直与求两向量的夹角。",
+   "mastery_criteria": [
+    "能求一个向量在另一个向量方向上的投影与数量投影",
+    "能运用数量积的交换律、对数乘的结合律与分配律化简式子",
+    "能用数量积求向量的模与夹角，并判断两个向量是否垂直"
+   ],
+   "misconceptions": [
+    "把数量积当成向量，认为两个向量相乘的结果仍带方向",
+    "认为数量积等于零时两个向量中必有一个是零向量，漏掉垂直的情形",
+    "把向量夹角的取值范围当成开区间，或在三角形中把内角与向量夹角混为一谈"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mhj_h1023_q1",
+     "topicId": "mhj_h1023",
+     "prompt": "设 a 与 b 是两个非零向量，则它们的数量积 a 与 b 的结果是一个",
+     "question": "设 a 与 b 是两个非零向量，则它们的数量积 a 与 b 的结果是一个",
+     "options": [
+      {
+       "label": "A",
+       "text": "与 a 同方向的向量"
+      },
+      {
+       "label": "B",
+       "text": "模为 1 的向量"
+      },
+      {
+       "label": "C",
+       "text": "与 a 加 b 同方向的向量"
+      },
+      {
+       "label": "D",
+       "text": "数量"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "数量积等于两个向量的模与夹角余弦的乘积，三个因数都是数量，所以结果是一个数量而不是向量，这正是数量积与向量加减、数乘的区别。"
+    },
+    {
+     "id": "mhj_h1023_q2",
+     "topicId": "mhj_h1023",
+     "prompt": "已知等边三角形 ABC 的边长等于 6，则向量 AB 与向量 AC 的数量积等于多少",
+     "question": "已知等边三角形 ABC 的边长等于 6，则向量 AB 与向量 AC 的数量积等于多少",
+     "answer": 18,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 18}",
+     "explanation": "两个向量都以 A 为起点，夹角就是三角形的内角 60 度，所以数量积等于 6 乘 6 再乘 60 度的余弦二分之一，结果为 18。"
+    },
+    {
+     "id": "mhj_h1023_q3",
+     "topicId": "mhj_h1023",
+     "prompt": "已知向量 a 的模等于 5，向量 b 的模等于 6，且 a 加 b 与 b 的数量积等于 21，则 a 与 b 的夹角等于多少",
+     "question": "已知向量 a 的模等于 5，向量 b 的模等于 6，且 a 加 b 与 b 的数量积等于 21，则 a 与 b 的夹角等于多少",
+     "answer": "2π/3，即 120 度",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由分配律，a 加 b 与 b 的数量积等于 a 与 b 的数量积加上 b 的模的平方，所以 a 与 b 的数量积等于 21 减 36 等于负 15，余弦等于负 15 除以 30 得负二分之一，夹角为三分之二派。"
+    },
+    {
+     "id": "mhj_h1023_q4",
+     "topicId": "mhj_h1023",
+     "prompt": "已知向量 a 的模等于 2，向量 b 的模等于 3，a 与 b 的夹角等于 60 度，则 3a 减 2b 的模等于",
+     "question": "已知向量 a 的模等于 2，向量 b 的模等于 3，a 与 b 的夹角等于 60 度，则 3a 减 2b 的模等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "6"
+      },
+      {
+       "label": "B",
+       "text": "12"
+      },
+      {
+       "label": "C",
+       "text": "36"
+      },
+      {
+       "label": "D",
+       "text": "根号 6"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先求模的平方，等于 9 倍的 a 的模的平方减 12 倍的两向量数量积加 4 倍的 b 的模的平方，即 36 减 36 加 36 等于 36，所以模等于 6。"
+    },
+    {
+     "id": "mhj_h1023_q5",
+     "topicId": "mhj_h1023",
+     "prompt": "在三角形 ABC 中，若向量 AB 与向量 BC 的数量积等于零，则三角形 ABC 是",
+     "question": "在三角形 ABC 中，若向量 AB 与向量 BC 的数量积等于零，则三角形 ABC 是",
+     "options": [
+      {
+       "label": "A",
+       "text": "锐角三角形"
+      },
+      {
+       "label": "B",
+       "text": "直角三角形"
+      },
+      {
+       "label": "C",
+       "text": "钝角三角形"
+      },
+      {
+       "label": "D",
+       "text": "等边三角形"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个向量的数量积为零说明它们互相垂直，即 AB 与 BC 所在的直线垂直，所以角 B 是直角，三角形 ABC 是直角三角形。"
+    },
+    {
+     "id": "mhj_h1023_q6",
+     "topicId": "mhj_h1023",
+     "prompt": "已知向量 a 的模等于 4，向量 b 的模等于 5，a 加 b 的模等于根号 21，则 a 与 b 的数量积等于多少",
+     "question": "已知向量 a 的模等于 4，向量 b 的模等于 5，a 加 b 的模等于根号 21，则 a 与 b 的数量积等于多少",
+     "answer": -10,
+     "type": "numeric",
+     "difficulty": "hard",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 21}, {\"type\": \"num\", \"value\": 41}]}, {\"type\": \"num\", \"value\": 2}]}",
+     "explanation": "把 a 加 b 的模的平方展开，等于 16 加 25 加 2 倍的数量积，令它等于 21，得 2 倍的数量积等于负 20，所以数量积等于负 10。"
+    },
+    {
+     "id": "mhj_h1023_q7",
+     "topicId": "mhj_h1023",
+     "prompt": "已知 a 与 b 都是非零向量，a 加 3b 与 7a 减 5b 垂直，a 减 4b 与 7a 减 2b 垂直，则 a 与 b 的夹角等于",
+     "question": "已知 a 与 b 都是非零向量，a 加 3b 与 7a 减 5b 垂直，a 减 4b 与 7a 减 2b 垂直，则 a 与 b 的夹角等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "π/6"
+      },
+      {
+       "label": "B",
+       "text": "π/4"
+      },
+      {
+       "label": "C",
+       "text": "π/3"
+      },
+      {
+       "label": "D",
+       "text": "2π/3"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "把两个垂直条件展开，分别得到 7 倍的 a 的模的平方加 16 倍的数量积减 15 倍的 b 的模的平方等于零，以及 7 倍的 a 的模的平方减 30 倍的数量积加 8 倍的 b 的模的平方等于零，两式相减得 b 的模的平方等于 2 倍的数量积，回代得 a 的模的平方也等于 2 倍的数量积，于是余弦等于二分之一，夹角为三分之派。"
+    },
+    {
+     "id": "mhj_h1023_q8",
+     "topicId": "mhj_h1023",
+     "prompt": "已知向量 a 的模等于 1，且 a 加 b 与 a 减 b 的数量积等于二分之一，求向量 b 的模",
+     "question": "已知向量 a 的模等于 1，且 a 加 b 与 a 减 b 的数量积等于二分之一，求向量 b 的模",
+     "answer": "根号 2 除以 2",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "由平方差公式，a 加 b 与 a 减 b 的数量积等于 a 的模的平方减去 b 的模的平方，即 1 减 b 的模的平方等于二分之一，所以 b 的模的平方等于二分之一，b 的模等于二分之根号二。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1024",
+   "page": 124,
+   "description": "由向量基本定理引入平面向量的基与坐标，把向量的线性运算、模、数量积与夹角都转化为坐标运算，从而用代数方法判断平行与垂直。",
+   "mastery_criteria": [
+    "能把向量写成两个不平行向量的线性组合，并求出向量的坐标",
+    "能用坐标进行向量的加减与数乘运算，求模与单位向量",
+    "能用坐标形式的数量积判断平行、垂直并求夹角"
+   ],
+   "misconceptions": [
+    "把点的坐标与向量的坐标混为一谈，直接把起点坐标当成向量坐标",
+    "把两向量平行的条件写成横坐标之比等于纵坐标之比，忽略分母为零的情形",
+    "记错数量积的坐标公式，把对应坐标相乘后相加写成相乘后相减"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mhj_h1024_q1",
+     "topicId": "mhj_h1024",
+     "prompt": "已知向量 a 的坐标是 (1, 2)，向量 b 的坐标是 (3, -1)，则 a 与 b 的数量积等于",
+     "question": "已知向量 a 的坐标是 (1, 2)，向量 b 的坐标是 (3, -1)，则 a 与 b 的数量积等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "-1"
+      },
+      {
+       "label": "D",
+       "text": "7"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两个向量的数量积等于对应坐标乘积的和，即 1 乘 3 加 2 乘负 1，等于 3 减 2，结果为 1。"
+    },
+    {
+     "id": "mhj_h1024_q2",
+     "topicId": "mhj_h1024",
+     "prompt": "已知向量 a 的坐标是 (3, -4)，则向量 a 的模等于多少",
+     "question": "已知向量 a 的坐标是 (3, -4)，则向量 a 的模等于多少",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 5}",
+     "explanation": "向量的模等于横坐标与纵坐标平方和的算术平方根，3 的平方加负 4 的平方等于 25，所以模等于 5。"
+    },
+    {
+     "id": "mhj_h1024_q3",
+     "topicId": "mhj_h1024",
+     "prompt": "已知向量 a 的坐标是 (2, 3)，向量 b 的坐标是 (-2, 4)，向量 c 的坐标是 (-1, -2)，则向量 c 与向量 a 减 b 的数量积等于多少",
+     "question": "已知向量 a 的坐标是 (2, 3)，向量 b 的坐标是 (-2, 4)，向量 c 的坐标是 (-1, -2)，则向量 c 与向量 a 减 b 的数量积等于多少",
+     "answer": -2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": -2}",
+     "explanation": "先求 a 减 b 的坐标，等于 (4, -1)，再与 c 的坐标对应相乘后相加，得负 1 乘 4 加负 2 乘负 1，即负 4 加 2，结果为负 2。"
+    },
+    {
+     "id": "mhj_h1024_q4",
+     "topicId": "mhj_h1024",
+     "prompt": "已知向量 a 的坐标是 (1, 2)，向量 b 的坐标是 (2, -2)，则 a 与 b 的夹角是",
+     "question": "已知向量 a 的坐标是 (1, 2)，向量 b 的坐标是 (2, -2)，则 a 与 b 的夹角是",
+     "options": [
+      {
+       "label": "A",
+       "text": "零角"
+      },
+      {
+       "label": "B",
+       "text": "直角"
+      },
+      {
+       "label": "C",
+       "text": "锐角"
+      },
+      {
+       "label": "D",
+       "text": "钝角"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先算数量积，等于 1 乘 2 加 2 乘负 2 得负 2，小于零，而两个向量的模都是正数，所以夹角余弦为负，夹角是钝角。"
+    },
+    {
+     "id": "mhj_h1024_q5",
+     "topicId": "mhj_h1024",
+     "prompt": "已知向量 a 的坐标是 (5, 3)，向量 b 的坐标是 (x, 1)，且 a 与 b 平行，则实数 x 的值是",
+     "question": "已知向量 a 的坐标是 (5, 3)，向量 b 的坐标是 (x, 1)，且 a 与 b 平行，则实数 x 的值是",
+     "options": [
+      {
+       "label": "A",
+       "text": "3/5"
+      },
+      {
+       "label": "B",
+       "text": "5/3"
+      },
+      {
+       "label": "C",
+       "text": "-5/3"
+      },
+      {
+       "label": "D",
+       "text": "15"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个向量平行的充要条件是横纵坐标交叉相乘相等，即 5 乘 1 等于 3 乘 x，解得 x 等于三分之五。"
+    },
+    {
+     "id": "mhj_h1024_q6",
+     "topicId": "mhj_h1024",
+     "prompt": "已知向量 a 的坐标是 (2, 4)，请写出一个与 a 垂直的单位向量的坐标",
+     "question": "已知向量 a 的坐标是 (2, 4)，请写出一个与 a 垂直的单位向量的坐标",
+     "answer": "(2√5/5, -√5/5) 或 (-2√5/5, √5/5)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "与 a 垂直的向量可以取 (4, -2)，它的模等于 2 倍根号 5，用它除以模就得到单位向量，即 (2√5/5, -√5/5)，取它的相反向量也满足要求。"
+    },
+    {
+     "id": "mhj_h1024_q7",
+     "topicId": "mhj_h1024",
+     "prompt": "已知向量 a 的坐标是 (3 减 m, 3m)，向量 b 的坐标是 (m 加 2, -2)，且 a 与 b 垂直，则实数 m 的值是",
+     "question": "已知向量 a 的坐标是 (3 减 m, 3m)，向量 b 的坐标是 (m 加 2, -2)，且 a 与 b 垂直，则实数 m 的值是",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "-6"
+      },
+      {
+       "label": "C",
+       "text": "1 或 -6"
+      },
+      {
+       "label": "D",
+       "text": "0"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "垂直的充要条件是数量积为零，展开得 3 减 m 与 m 加 2 的积减去 6m 等于零，整理得 m 的平方加 5m 减 6 等于零，解得 m 等于 1 或 m 等于负 6。"
+    },
+    {
+     "id": "mhj_h1024_q8",
+     "topicId": "mhj_h1024",
+     "prompt": "已知向量 a 的坐标是 (3, -1)，向量 b 的坐标是 (1, -2)，求 a 与 b 的数量积以及它们的夹角",
+     "question": "已知向量 a 的坐标是 (3, -1)，向量 b 的坐标是 (1, -2)，求 a 与 b 的数量积以及它们的夹角",
+     "answer": "a 与 b 的数量积等于 5，夹角为 π/4",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "数量积等于 3 乘 1 加负 1 乘负 2，等于 5；a 的模是根号 10，b 的模是根号 5，夹角的余弦等于 5 除以 5 倍根号 2，等于二分之根号二，所以夹角是四分之派。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1025",
+   "page": 134,
+   "description": "把向量作为工具用于几何问题，用定比分点公式与中点公式由分点的比值求点的坐标，并用坐标关系判断三点共线与求重心位置。",
+   "mastery_criteria": [
+    "能用定比分点公式由分点比求点 P 的坐标",
+    "能用线段中点公式求线段中点的坐标",
+    "能用向量方法把几何条件转化为坐标关系并求解"
+   ],
+   "misconceptions": [
+    "把定比分点公式中的比值当成线段长度之比，忽略分点在延长线上的情形",
+    "把中点公式写成两个端点坐标之差的一半，或把横纵坐标的对应关系弄反",
+    "用坐标法判断三点共线时只比较横坐标，忘记交叉相乘检验"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "mhj_h1025_q1",
+     "topicId": "mhj_h1025",
+     "prompt": "已知点 P1 的坐标是 (1, 2)，点 P2 的坐标是 (5, 6)，则线段 P1P2 的中点的坐标是",
+     "question": "已知点 P1 的坐标是 (1, 2)，点 P2 的坐标是 (5, 6)，则线段 P1P2 的中点的坐标是",
+     "options": [
+      {
+       "label": "A",
+       "text": "(2, 3)"
+      },
+      {
+       "label": "B",
+       "text": "(3, 4)"
+      },
+      {
+       "label": "C",
+       "text": "(4, 5)"
+      },
+      {
+       "label": "D",
+       "text": "(6, 8)"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由线段中点公式，中点坐标等于两个端点对应坐标之和的一半，横坐标为 1 加 5 再除以 2 得 3，纵坐标为 2 加 6 再除以 2 得 4。"
+    },
+    {
+     "id": "mhj_h1025_q2",
+     "topicId": "mhj_h1025",
+     "prompt": "已知点 P1 的坐标是 (1, 2)，点 P2 的坐标是 (4, 8)，点 P 在直线 P1P2 上且满足向量 P1P 等于 2 倍的向量 PP2，则点 P 的横坐标等于多少",
+     "question": "已知点 P1 的坐标是 (1, 2)，点 P2 的坐标是 (4, 8)，点 P 在直线 P1P2 上且满足向量 P1P 等于 2 倍的向量 PP2，则点 P 的横坐标等于多少",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 1}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 4}]}]}, {\"type\": \"num\", \"value\": 3}]}",
+     "explanation": "由定比分点公式，横坐标等于 1 加 2 乘 4 再除以 1 加 2，即 9 除以 3，等于 3。"
+    },
+    {
+     "id": "mhj_h1025_q3",
+     "topicId": "mhj_h1025",
+     "prompt": "已知点 A 的坐标是 (-2, 3)，点 B 的坐标是 (4, -3)，点 P 在直线 AB 上且满足向量 AP 等于二分之一倍的向量 PB，则点 P 的坐标是",
+     "question": "已知点 A 的坐标是 (-2, 3)，点 B 的坐标是 (4, -3)，点 P 在直线 AB 上且满足向量 AP 等于二分之一倍的向量 PB，则点 P 的坐标是",
+     "options": [
+      {
+       "label": "A",
+       "text": "(0, 1)"
+      },
+      {
+       "label": "B",
+       "text": "(1, 0)"
+      },
+      {
+       "label": "C",
+       "text": "(0, -1)"
+      },
+      {
+       "label": "D",
+       "text": "(2, 0)"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由定比分点公式，横坐标等于负 2 加二分之一乘 4 再除以 1 加二分之一，得 0；纵坐标等于 3 加二分之一乘负 3 再除以 1 加二分之一，得 1。"
+    },
+    {
+     "id": "mhj_h1025_q4",
+     "topicId": "mhj_h1025",
+     "prompt": "在三角形 ABC 中，点 G 是重心，点 D 是边 AB 的中点，点 C、G、D 三点共线，若线段 CG 的长等于 4，则线段 GD 的长等于多少",
+     "question": "在三角形 ABC 中，点 G 是重心，点 D 是边 AB 的中点，点 C、G、D 三点共线，若线段 CG 的长等于 4，则线段 GD 的长等于多少",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 2}]}",
+     "explanation": "教材指出重心 G 满足向量 CG 等于 2 倍的向量 GD，即重心到顶点的距离是它到对边中点距离的 2 倍，所以 GD 等于 4 除以 2，等于 2。"
+    },
+    {
+     "id": "mhj_h1025_q5",
+     "topicId": "mhj_h1025",
+     "prompt": "已知三角形 ABC 三个顶点的坐标分别是 (1, 2)、(3, -4)、(5, 6)，则这个三角形的重心 G 的坐标是",
+     "question": "已知三角形 ABC 三个顶点的坐标分别是 (1, 2)、(3, -4)、(5, 6)，则这个三角形的重心 G 的坐标是",
+     "options": [
+      {
+       "label": "A",
+       "text": "(3, 4)"
+      },
+      {
+       "label": "B",
+       "text": "(9/2, 4/3)"
+      },
+      {
+       "label": "C",
+       "text": "(3, 4/3)"
+      },
+      {
+       "label": "D",
+       "text": "(3, 8/3)"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先求前两点所连边的中点 D 为 (2, -1)，重心 G 满足向量 CG 等于 2 倍的向量 GD，由定比分点公式取比值为 2，得横坐标 3，纵坐标三分之四。"
+    },
+    {
+     "id": "mhj_h1025_q6",
+     "topicId": "mhj_h1025",
+     "prompt": "已知点 A 的坐标是 (2, 3)，点 B 的坐标是 (6, 11)，点 P 在线段 AB 上且 AP 等于 AB 的四分之三，求点 P 的坐标",
+     "question": "已知点 A 的坐标是 (2, 3)，点 B 的坐标是 (6, 11)，点 P 在线段 AB 上且 AP 等于 AB 的四分之三，求点 P 的坐标",
+     "answer": "(5, 9)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "先求向量 AB 的坐标为 (4, 8)，它的四分之三等于 (3, 6)，再加上起点 A 的坐标，得到点 P 的坐标 (5, 9)。"
+    },
+    {
+     "id": "mhj_h1025_q7",
+     "topicId": "mhj_h1025",
+     "prompt": "已知点 A(1, 1)、B(3, 5)、C(5, k) 三点共线，则实数 k 的值为",
+     "question": "已知点 A(1, 1)、B(3, 5)、C(5, k) 三点共线，则实数 k 的值为",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "7"
+      },
+      {
+       "label": "D",
+       "text": "9"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "先写出向量 AB 为 (2, 4)，向量 AC 为 (4, k 减 1)，三点共线说明这两个向量平行，由交叉相乘相等得 2 乘 (k 减 1) 等于 4 乘 4，解得 k 等于 9。"
+    },
+    {
+     "id": "mhj_h1025_q8",
+     "topicId": "mhj_h1025",
+     "prompt": "已知点 A(1, -2)、B(3, 4)，点 P 在直线 AB 上且满足向量 AP 等于 λ 倍的向量 PB，若点 P 的横坐标等于 5，求实数 λ 的值",
+     "question": "已知点 A(1, -2)、B(3, 4)，点 P 在直线 AB 上且满足向量 AP 等于 λ 倍的向量 PB，若点 P 的横坐标等于 5，求实数 λ 的值",
+     "answer": "λ = -2",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "由定比分点公式，点 P 的横坐标等于 1 加 3λ 再除以 1 加 λ，令它等于 5，去分母得 1 加 3λ 等于 5 加 5λ，解得 λ 等于负 2，此时分点落在 AB 的延长线上。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1026",
+   "page": 148,
+   "description": "在复数范围内进行加、减、乘、除四则运算，理解实部、虚部、纯虚数与共轭复数的含义，会用 i 的幂的周期规律和共轭性质化简计算。",
+   "mastery_criteria": [
+    "能按多项式运算法则完成复数的加、减、乘运算",
+    "能把分子分母同乘分母的共轭复数，将商化为代数形式",
+    "能由实部、虚部的条件求出实数参数的取值或取值范围"
+   ],
+   "misconceptions": [
+    "把虚部误认为带虚数单位 i 的整体，例如认为 3 减 4i 的虚部是 负 4i",
+    "两复数相等时只比较实部，忘记虚部也必须相等",
+    "认为纯虚数只需实部为零，忽略虚部不能为零这一条件",
+    "计算 i 的幂时忘记取模 4 的周期，把 i 的四次方写成 -1"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1026_q1",
+     "topicId": "mhj_h1026",
+     "prompt": "计算 i 的 2023 次方，结果是",
+     "question": "计算 i 的 2023 次方，结果是",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "对任意整数 n 都有 i 的四 n 次方等于 1，而 2023 除以 4 余 3，所以 i 的 2023 次方等于 i 的 4n 加 3 次方，其值为 -i。",
+     "options": [
+      {
+       "label": "A",
+       "text": "i"
+      },
+      {
+       "label": "B",
+       "text": "-1"
+      },
+      {
+       "label": "C",
+       "text": "-i"
+      },
+      {
+       "label": "D",
+       "text": "1"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1026_q2",
+     "topicId": "mhj_h1026",
+     "prompt": "计算 1 加 3i 与 -4 加 2i 的和，结果是",
+     "question": "计算 1 加 3i 与 -4 加 2i 的和，结果是",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两个复数相加时实部与实部分别相加、虚部与虚部分别相加，即 1 减 4 得 -3，3 加 2 得 5，所以和是 -3 加 5i。",
+     "options": [
+      {
+       "label": "A",
+       "text": "-3 加 5i"
+      },
+      {
+       "label": "B",
+       "text": "-3 加 i"
+      },
+      {
+       "label": "C",
+       "text": "5 减 3i"
+      },
+      {
+       "label": "D",
+       "text": "-3 加 5"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1026_q3",
+     "topicId": "mhj_h1026",
+     "prompt": "计算 2 减 3i 与 4 加 2i 的乘积，结果是",
+     "question": "计算 2 减 3i 与 4 加 2i 的乘积，结果是",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "按多项式相乘展开得 8 加 4i 减 12i 减 6 倍的 i 的平方，把 i 的平方换成 -1 得 8 减 8i 加 6，所以乘积是 14 减 8i。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2 减 8i"
+      },
+      {
+       "label": "B",
+       "text": "14 减 8i"
+      },
+      {
+       "label": "C",
+       "text": "14 加 8i"
+      },
+      {
+       "label": "D",
+       "text": "2 加 8i"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1026_q4",
+     "topicId": "mhj_h1026",
+     "prompt": "计算 3 加 i 除以 2 减 i 的商，结果是",
+     "question": "计算 3 加 i 除以 2 减 i 的商，结果是",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "分子分母同乘分母的共轭复数 2 加 i，分母化为 2 的平方加 1 的平方等于 5，分子化为 6 减 1 加（3 加 2）i 等于 5 加 5i，所以商是 1 加 i。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 减 i"
+      },
+      {
+       "label": "B",
+       "text": "5 加 5i"
+      },
+      {
+       "label": "C",
+       "text": "3"
+      },
+      {
+       "label": "D",
+       "text": "1 加 i"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1026_q5",
+     "topicId": "mhj_h1026",
+     "prompt": "计算 1 加 i 的四次方，所得结果是",
+     "question": "计算 1 加 i 的四次方，所得结果是",
+     "answer": -4,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "先算 1 加 i 的平方等于 2i，再平方得 2i 的平方，即 4 倍的 i 的平方，而 i 的平方等于 -1，所以结果是 -4。",
+     "verify": "{\"type\": \"num\", \"value\": -4}"
+    },
+    {
+     "id": "mhj_h1026_q6",
+     "topicId": "mhj_h1026",
+     "prompt": "已知复数 m 的平方减 1 加（m 加 1）i 是纯虚数，则实数 m 的值是",
+     "question": "已知复数 m 的平方减 1 加（m 加 1）i 是纯虚数，则实数 m 的值是",
+     "answer": 1,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "纯虚数要求实部为零且虚部不为零，由实部为零得 m 等于 1 或 -1，再由虚部 m 加 1 不为零排除 m 等于 -1，故 m 等于 1。",
+     "verify": "{\"type\": \"num\", \"value\": 1}"
+    },
+    {
+     "id": "mhj_h1026_q7",
+     "topicId": "mhj_h1026",
+     "prompt": "已知复数 z 等于 1 加 2i，则 z 的共轭复数写成代数形式是",
+     "question": "已知复数 z 等于 1 加 2i，则 z 的共轭复数写成代数形式是",
+     "answer": "1-2i",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "共轭复数只把虚部改变符号，实部保持不变，所以 1 加 2i 的共轭复数是 1 减 2i。"
+    },
+    {
+     "id": "mhj_h1026_q8",
+     "topicId": "mhj_h1026",
+     "prompt": "计算 1 加 2i、3 加 4i、-2 加 i 三个复数的连乘积，结果写成代数形式",
+     "question": "计算 1 加 2i、3 加 4i、-2 加 i 三个复数的连乘积，结果写成代数形式",
+     "answer": "-25i",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "先算前两个的积得 -5 加 10i，再与 -2 加 i 相乘，展开得 10 减 5i 减 20i 加 10 倍的 i 的平方，即 10 减 25i 减 10，结果是 -25i。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1027",
+   "page": 158,
+   "description": "把复数看作复平面上的点或向量，理解复数加减法与向量加减法的一致性，并会用两复数之差的模表示复平面上两点间的距离。",
+   "mastery_criteria": [
+    "能由复数写出对应点的坐标，并判断点所在的象限或坐标轴",
+    "能用终点与起点对应的复数之差表示向量的对应复数",
+    "能用模的运算性质与两点距离公式计算长度"
+   ],
+   "misconceptions": [
+    "把虚轴上的点都当成纯虚数，忽略坐标原点表示实数零",
+    "认为向量 AB 对应的复数是 zA 减 zB，把起点与终点的顺序弄反",
+    "把复数的模当成实部的绝对值，忽略虚部也要计入",
+    "误以为两复数模的和等于模的和，丢掉三角不等式的方向"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1027_q1",
+     "topicId": "mhj_h1027",
+     "prompt": "复平面上点 3 与 -2 对应的复数是",
+     "question": "复平面上点 3 与 -2 对应的复数是",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "点（a，b）对应的复数是 a 加 bi，横坐标给出实部，纵坐标给出虚部，所以点（3，-2）对应 3 减 2i。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3 减 2i"
+      },
+      {
+       "label": "B",
+       "text": "3 加 2i"
+      },
+      {
+       "label": "C",
+       "text": "-2 加 3i"
+      },
+      {
+       "label": "D",
+       "text": "-3 加 2i"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1027_q2",
+     "topicId": "mhj_h1027",
+     "prompt": "复数 2 加 3i 与它的共轭复数在复平面上对应的两点关于",
+     "question": "复数 2 加 3i 与它的共轭复数在复平面上对应的两点关于",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "共轭复数 2 减 3i 对应点（2，-3），与点（2，3）横坐标相同、纵坐标互为相反数，所以两点关于实轴对称。",
+     "options": [
+      {
+       "label": "A",
+       "text": "虚轴对称"
+      },
+      {
+       "label": "B",
+       "text": "实轴对称"
+      },
+      {
+       "label": "C",
+       "text": "原点对称"
+      },
+      {
+       "label": "D",
+       "text": "直线 y 等于 x 对称"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1027_q3",
+     "topicId": "mhj_h1027",
+     "prompt": "点 A 与点 B 对应的复数分别是 2 减 3i 与 4 加 5i，则向量 AB 对应的复数是",
+     "question": "点 A 与点 B 对应的复数分别是 2 减 3i 与 4 加 5i，则向量 AB 对应的复数是",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "向量 AB 对应的复数是终点对应的复数减去起点对应的复数，即（4 加 5i）减（2 减 3i），实部得 2，虚部得 8，所以是 2 加 8i。",
+     "options": [
+      {
+       "label": "A",
+       "text": "6 加 2i"
+      },
+      {
+       "label": "B",
+       "text": "-2 减 8i"
+      },
+      {
+       "label": "C",
+       "text": "2 加 8i"
+      },
+      {
+       "label": "D",
+       "text": "6 减 8i"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1027_q4",
+     "topicId": "mhj_h1027",
+     "prompt": "已知复数 z 的模为 2，复数 w 的模为 3，则 z 与 w 乘积的模等于",
+     "question": "已知复数 z 的模为 2，复数 w 的模为 3，则 z 与 w 乘积的模等于",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "积的模等于模的积，所以 z 乘 w 的模等于 2 乘 3 等于 6，这一点由模的乘法性质直接得到。",
+     "options": [
+      {
+       "label": "A",
+       "text": "5"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "9"
+      },
+      {
+       "label": "D",
+       "text": "6"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1027_q5",
+     "topicId": "mhj_h1027",
+     "prompt": "复平面上点 1 与 0 和点 4 与 4 对应的两点之间的距离是",
+     "question": "复平面上点 1 与 0 和点 4 与 4 对应的两点之间的距离是",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "两点距离等于对应复数之差的模，差的实部为 3、虚部为 4，模是 3 的平方加 4 的平方再开方，等于 5。",
+     "verify": "{\"type\": \"num\", \"value\": 5}"
+    },
+    {
+     "id": "mhj_h1027_q6",
+     "topicId": "mhj_h1027",
+     "prompt": "在复平面上给定平行四边形 OABC，点 A 与点 C 对应的复数分别是 -1 加 i 与 3 加 2i，则点 B 所对应复数的实部是",
+     "question": "在复平面上给定平行四边形 OABC，点 A 与点 C 对应的复数分别是 -1 加 i 与 3 加 2i，则点 B 所对应复数的实部是",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由复数加法的平行四边形法则，点 B 对应的复数是这两个复数之和，即 2 加 3i，所以它的实部等于 2。",
+     "verify": "{\"type\": \"num\", \"value\": 2}"
+    },
+    {
+     "id": "mhj_h1027_q7",
+     "topicId": "mhj_h1027",
+     "prompt": "已知复数 z 等于 3 减 4i，则 z 与它的共轭复数的乘积等于",
+     "question": "已知复数 z 等于 3 减 4i，则 z 与它的共轭复数的乘积等于",
+     "answer": 25,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "一对共轭复数的积等于模的平方，而 3 减 4i 的模是 3 的平方加 4 的平方再开方等于 5，所以乘积等于 25。",
+     "verify": "{\"type\": \"num\", \"value\": 25}"
+    },
+    {
+     "id": "mhj_h1027_q8",
+     "topicId": "mhj_h1027",
+     "prompt": "若复数 z 满足它与 2 的差的模等于 2，且它与 2i 的差的模也等于 2，求复数 z",
+     "question": "若复数 z 满足它与 2 的差的模等于 2，且它与 2i 的差的模也等于 2，求复数 z",
+     "answer": "0 或 2+2i",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "设 z 等于 x 加 yi，两个条件分别给出 x 的平方加 y 的平方等于 4x，以及 x 的平方加 y 的平方等于 4y，两式比较得 x 等于 y，代回得 x 等于 0 或 2，所以 z 等于 0 或 2 加 2i。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1028",
+   "page": 166,
+   "description": "讨论实系数一元二次方程在复数范围内的根，掌握判别式小于零时的一对共轭虚根，并用根与系数的关系求系数、分解因式。",
+   "mastery_criteria": [
+    "能求出负实数在复数范围内的平方根",
+    "能按判别式的三种情形写出实系数一元二次方程的根",
+    "能用根与系数的关系求待定系数，并在复数范围内分解二次三项式"
+   ],
+   "misconceptions": [
+    "认为判别式小于零时方程无解，忽略复数范围内有一对共轭虚根",
+    "求负实数的平方根时漏掉负号，把 -25 的平方根写成 5i 而不是正负 5i",
+    "用根与系数的关系时忘记两根之和等于负的 a 分之 b，符号弄反",
+    "分解因式时漏掉二次项系数，写成两个一次因式之积而没乘上前面的系数"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1028_q1",
+     "topicId": "mhj_h1028",
+     "prompt": "在复数范围内，-9 的平方根是",
+     "question": "在复数范围内，-9 的平方根是",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "负实数 c 在复数范围内的平方根是两个共轭的纯虚数，即正负根号下负 c 再乘 i，所以 -9 的平方根是正负 3i。",
+     "options": [
+      {
+       "label": "A",
+       "text": "正负 3i"
+      },
+      {
+       "label": "B",
+       "text": "3i"
+      },
+      {
+       "label": "C",
+       "text": "正负 3"
+      },
+      {
+       "label": "D",
+       "text": "9i"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1028_q2",
+     "topicId": "mhj_h1028",
+     "prompt": "方程 x 的平方加 2 等于 0 在复数范围内的根是",
+     "question": "方程 x 的平方加 2 等于 0 在复数范围内的根是",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由方程得 x 的平方等于 -2，负实数的平方根是正负根号 2 乘 i，所以方程的两个根是正负根号 2 乘 i。",
+     "options": [
+      {
+       "label": "A",
+       "text": "正负根号 2"
+      },
+      {
+       "label": "B",
+       "text": "正负 2i"
+      },
+      {
+       "label": "C",
+       "text": "正负根号 2 乘 i"
+      },
+      {
+       "label": "D",
+       "text": "没有根"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1028_q3",
+     "topicId": "mhj_h1028",
+     "prompt": "方程 2 倍的 x 的平方减 4x 加 5 等于 0 在复数范围内的根是",
+     "question": "方程 2 倍的 x 的平方减 4x 加 5 等于 0 在复数范围内的根是",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "判别式等于 16 减 40 等于 -24 小于零，故有一对共轭虚根，由求根公式得 4 加减 2 倍根号 6 乘 i 再除以 4，即 1 加减 2 分之根号 6 乘 i。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 加减根号 6 乘 i"
+      },
+      {
+       "label": "B",
+       "text": "1 加减 2 分之根号 6 乘 i"
+      },
+      {
+       "label": "C",
+       "text": "2 分之 1 加减根号 6 乘 i"
+      },
+      {
+       "label": "D",
+       "text": "2 加减根号 6 乘 i"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1028_q4",
+     "topicId": "mhj_h1028",
+     "prompt": "已知 2 加 3i 是实系数一元二次方程 x 的平方加 bx 加 c 等于 0 的一个根，则 b 与 c 的值分别是",
+     "question": "已知 2 加 3i 是实系数一元二次方程 x 的平方加 bx 加 c 等于 0 的一个根，则 b 与 c 的值分别是",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "实系数方程的虚根成对出现，另一根是 2 减 3i，两根之和为 4 等于负 b，两根之积为 4 加 9 等于 13 即 c，所以 b 等于 -4，c 等于 13。",
+     "options": [
+      {
+       "label": "A",
+       "text": "b 等于 4，c 等于 13"
+      },
+      {
+       "label": "B",
+       "text": "b 等于 -4，c 等于 -13"
+      },
+      {
+       "label": "C",
+       "text": "b 等于 4，c 等于 -13"
+      },
+      {
+       "label": "D",
+       "text": "b 等于 -4，c 等于 13"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1028_q5",
+     "topicId": "mhj_h1028",
+     "prompt": "方程 4 倍的 x 的平方加 25 等于 0 在复数范围内的根的虚部的绝对值是",
+     "question": "方程 4 倍的 x 的平方加 25 等于 0 在复数范围内的根的虚部的绝对值是",
+     "answer": 2.5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "由方程得 x 的平方等于负 4 分之 25，其平方根为正负 2 分之 5 乘 i，所以虚部的绝对值是 2 分之 5，即 2.5。",
+     "verify": "{\"type\": \"num\", \"value\": 2.5}"
+    },
+    {
+     "id": "mhj_h1028_q6",
+     "topicId": "mhj_h1028",
+     "prompt": "若 x1 与 x2 是方程 2 倍的 x 的平方加 x 加 3 等于 0 的两个根，则 x1 与 x2 的积等于",
+     "question": "若 x1 与 x2 是方程 2 倍的 x 的平方加 x 加 3 等于 0 的两个根，则 x1 与 x2 的积等于",
+     "answer": 1.5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由根与系数的关系，两根之积等于常数项除以二次项系数，即 3 除以 2，等于 1.5，这一关系在虚根时同样成立。",
+     "verify": "{\"type\": \"num\", \"value\": 1.5}"
+    },
+    {
+     "id": "mhj_h1028_q7",
+     "topicId": "mhj_h1028",
+     "prompt": "已知 k 是实常数，且关于 x 的方程 x 的平方减 2kx 减 k 等于 0 有两个虚根，则 k 的取值范围是",
+     "question": "已知 k 是实常数，且关于 x 的方程 x 的平方减 2kx 减 k 等于 0 有两个虚根，则 k 的取值范围是",
+     "answer": "(-1,0)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "方程有两个虚根等价于判别式小于零，判别式为 4 倍的 k 的平方加 4k，由 4k 乘（k 加 1）小于零解得 k 大于 -1 且小于 0。"
+    },
+    {
+     "id": "mhj_h1028_q8",
+     "topicId": "mhj_h1028",
+     "prompt": "在复数范围内把 2 倍的 x 的平方减 6x 加 5 分解因式",
+     "question": "在复数范围内把 2 倍的 x 的平方减 6x 加 5 分解因式",
+     "answer": "2(x-3/2-i/2)(x-3/2+i/2)",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "先解对应方程，判别式等于 36 减 40 等于 -4，根为 4 分之 6 加减 2i，即 2 分之 3 加减 2 分之 1 乘 i，所以原式等于 2 乘两个一次因式之积。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1029",
+   "page": 169,
+   "description": "理解复数辐角与辐角主值的含义，知道非零复数的辐角有无数个且彼此相差 2π 的整数倍，并会用模与辐角表示复数的实部与虚部。",
+   "mastery_criteria": [
+    "能说出辐角与辐角主值的定义，并指出辐角主值的取值范围",
+    "能由复数在复平面上的位置求出它的一个辐角与辐角主值",
+    "能用模与辐角通过余弦、正弦写出复数的实部与虚部"
+   ],
+   "misconceptions": [
+    "认为一个非零复数的辐角只有一个，忽略相差 2π 整数倍的那些角",
+    "求辐角主值时把范围写成负 π 到 π，与教材规定的 0 到 2π 混淆",
+    "把第二象限复数 -根号 3 加 i 的辐角主值算成 6 分之 π",
+    "忘记复数 0 的辐角是任意的，硬给它指定一个主值"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1029_q1",
+     "topicId": "mhj_h1029",
+     "prompt": "复数 1 加 i 的一个辐角是",
+     "question": "复数 1 加 i 的一个辐角是",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "辐角是以 x 轴正半轴为始边、射线 OZ 为终边的角，点（1，1）在第一象限且在两轴夹角的平分线上，所以一个辐角是 4 分之 π。",
+     "options": [
+      {
+       "label": "A",
+       "text": "4 分之 π"
+      },
+      {
+       "label": "B",
+       "text": "2 分之 π"
+      },
+      {
+       "label": "C",
+       "text": "4 分之 3π"
+      },
+      {
+       "label": "D",
+       "text": "负 4 分之 π"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1029_q2",
+     "topicId": "mhj_h1029",
+     "prompt": "复数 -1 的辐角主值是",
+     "question": "复数 -1 的辐角主值是",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "复数 -1 对应点（-1，0），射线在 x 轴负半轴上，按逆时针从正半轴转到该位置得 π，它满足不小于 0 且小于 2π，所以辐角主值是 π。",
+     "options": [
+      {
+       "label": "A",
+       "text": "0"
+      },
+      {
+       "label": "B",
+       "text": "2 分之 π"
+      },
+      {
+       "label": "C",
+       "text": "π"
+      },
+      {
+       "label": "D",
+       "text": "2 分之 3π"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1029_q3",
+     "topicId": "mhj_h1029",
+     "prompt": "虚数单位 i 的辐角可以表示为",
+     "question": "虚数单位 i 的辐角可以表示为",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "i 对应点（0，1），射线在 y 轴正半轴上，一个辐角是 2 分之 π，加上 2π 的整数倍仍是它的辐角，所以辐角是 2 分之 π 加 2kπ。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2kπ，k 为整数"
+      },
+      {
+       "label": "B",
+       "text": "2 分之 π 加 2kπ，k 为整数"
+      },
+      {
+       "label": "C",
+       "text": "π 加 2kπ，k 为整数"
+      },
+      {
+       "label": "D",
+       "text": "负 2 分之 π 加 2kπ，k 为整数"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1029_q4",
+     "topicId": "mhj_h1029",
+     "prompt": "复数 -根号 3 加 i 的辐角主值是",
+     "question": "复数 -根号 3 加 i 的辐角主值是",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "该复数对应点在第二象限，模为 2，由实部等于模乘余弦得余弦值为负 2 分之根号 3，正弦值为 2 分之 1，故辐角主值是 6 分之 5π。",
+     "options": [
+      {
+       "label": "A",
+       "text": "6 分之 π"
+      },
+      {
+       "label": "B",
+       "text": "6 分之 7π"
+      },
+      {
+       "label": "C",
+       "text": "6 分之 11π"
+      },
+      {
+       "label": "D",
+       "text": "6 分之 5π"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1029_q5",
+     "topicId": "mhj_h1029",
+     "prompt": "复数 -根号 3 加 i 的模等于",
+     "question": "复数 -根号 3 加 i 的模等于",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "复数的模等于实部的平方加虚部的平方再开方，即 3 加 1 再开方，等于 2，它也是对应向量 OZ 的模。",
+     "verify": "{\"type\": \"num\", \"value\": 2}"
+    },
+    {
+     "id": "mhj_h1029_q6",
+     "topicId": "mhj_h1029",
+     "prompt": "已知非零复数 z 的模为 6，辐角为 3 分之 π，则 z 的实部等于",
+     "question": "已知非零复数 z 的模为 6，辐角为 3 分之 π，则 z 的实部等于",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "实部等于模乘这个辐角的余弦，6 乘 2 分之 1 等于 3，虚部则等于 6 乘正弦值，即 3 倍根号 3。",
+     "verify": "{\"type\": \"num\", \"value\": 3}"
+    },
+    {
+     "id": "mhj_h1029_q7",
+     "topicId": "mhj_h1029",
+     "prompt": "复数 -2i 的辐角主值是",
+     "question": "复数 -2i 的辐角主值是",
+     "answer": "3π/2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "该复数对应点（0，-2），射线在 y 轴负半轴上，从 x 轴正半轴逆时针转到该位置得 2 分之 3π，它在 0 到 2π 之间且唯一，故为辐角主值。"
+    },
+    {
+     "id": "mhj_h1029_q8",
+     "topicId": "mhj_h1029",
+     "prompt": "已知非零复数 z 的模为 2 倍根号 2，辐角主值为 4 分之 π，求 z 的代数形式",
+     "question": "已知非零复数 z 的模为 2 倍根号 2，辐角主值为 4 分之 π，求 z 的代数形式",
+     "answer": "2+2i",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "实部等于 2 倍根号 2 乘余弦 4 分之 π，即 2 倍根号 2 乘 2 分之根号 2 等于 2；虚部同理也等于 2，所以 z 等于 2 加 2i。"
+    }
+   ]
+  }
+ ]
+}

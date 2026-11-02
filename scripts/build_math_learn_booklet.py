@@ -14,8 +14,10 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import build_math_learn_docx as B
 
 REPO = os.path.expanduser("~/Desktop/cn-k12-dxyc2286")
-LEARN = f"{REPO}/data/math/learn"
-OUT_ROOT = os.path.expanduser("~/Desktop/学科图谱相关资料/学层精讲/数学/人教版")
+BUCKET = os.environ.get("MATH_BUCKET", "math")
+EDITION = os.environ.get("MATH_EDITION", "人教版")
+LEARN = f"{REPO}/data/{BUCKET}/learn"
+OUT_ROOT = os.path.expanduser(f"~/Desktop/学科图谱相关资料/学层精讲/数学/{EDITION}")
 
 
 def main():
@@ -31,7 +33,7 @@ def main():
             continue
         doc = B.new_doc()
         B.add_para(doc, f"{book} 学层精讲合订本", size=18, bold=True, cn="黑体", align="center", after=4)
-        B.add_para(doc, f"数学（人教版）· 共 {len(lessons)} 个课时 · 学生版", size=10, align="center", after=12, color="666666")
+        B.add_para(doc, f"数学（{EDITION}）· 共 {len(lessons)} 个课时 · 学生版", size=10, align="center", after=12, color="666666")
         B.add_para(doc, "目　录", size=13, bold=True, cn="黑体", align="center", after=6)
         for i, L in enumerate(lessons, 1):
             B.add_para(doc, f"{i}. {L['title']}", size=10.5, left=0.8, after=2)

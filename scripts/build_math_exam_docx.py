@@ -26,8 +26,11 @@ from docx.oxml.ns import qn
 from docx.shared import Cm, Pt
 
 REPO = os.path.expanduser("~/Desktop/cn-k12-dxyc2286")
-EXAM = f"{REPO}/data/math/exams"
-OUT_ROOT = os.path.expanduser("~/Desktop/学科图谱相关资料/学科图谱原创试卷/数学/人教版")
+# 桶与输出目录可用环境变量覆盖（版本桶：MATH_BUCKET=math-xiangjiao MATH_EDITION=湘教版）
+BUCKET = os.environ.get("MATH_BUCKET", "math")
+EDITION = os.environ.get("MATH_EDITION", "人教版")
+EXAM = f"{REPO}/data/{BUCKET}/exams"
+OUT_ROOT = os.path.expanduser(f"~/Desktop/学科图谱相关资料/学科图谱原创试卷/数学/{EDITION}")
 
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -121,7 +124,7 @@ def new_doc():
 
 
 def head(doc, ex, answer=False):
-    title = f"数学（人教版）{ex['book']}　{ex['paper']}"
+    title = f"数学（{EDITION}）{ex['book']}　{ex['paper']}"
     if answer:
         title += "　参考答案与评分标准"
     para(doc, title, size=16, bold=True, align="center", cn="黑体", space_after=4)
@@ -139,11 +142,15 @@ def render_paper(ex, path):
     doc = new_doc()
     head(doc, ex)
     for sec in ex["sections"]:
-        rule = sec["rule"]
-        # rule 形如「每小题 5 分，共 20 分（全部选对…）」时，两段要并进同一对括号，
-        # 否则要么套成双层括号，要么标题与说明之间没有分隔符
-        m = re.match(r"^(.*?)（(.+)）$", rule)
-        head_txt = f"{sec['title']}（{m.group(1)}；{m.group(2)}）" if m else f"{sec['title']}（{rule}）"
+        rule = sec.get("rule")
+        # 有的版本（沪教版）把分值说明直接写在节标题里、不给 rule 字段 → 标题原样输出
+        if not rule:
+            head_txt = sec["title"]
+        else:
+            # rule 形如「每小题 5 分，共 20 分（全部选对…）」时，两段要并进同一对括号，
+            # 否则要么套成双层括号，要么标题与说明之间没有分隔符
+            m = re.match(r"^(.*?)（(.+)）$", rule)
+            head_txt = f"{sec['title']}（{m.group(1)}；{m.group(2)}）" if m else f"{sec['title']}（{rule}）"
         para(doc, head_txt, size=12, bold=True, cn="黑体",
              space_before=8, space_after=4, hanging=True, keep_next=True)
         items = sec["items"]
@@ -211,7 +218,9 @@ def render_answer(ex, path):
             line = f"{it['no']}．{ans}" if it["type"] != "solve" else f"{it['no']}．参考答案：{ans}"
             para(doc, line, size=10.5, bold=True, space_after=1, line=1.35)
             para(doc, f"解析：{it['analysis']}", size=10.5, space_after=1, line=1.35, indent_first=True)
-            sr = it.get("scoreRule") or []
+            sr = [s if isinstance(s, str)
+                  else f"{s.get('step', '')}（{s.get('score', '')} 分）".replace("（ 分）", "")
+                  for s in (it.get("scoreRule") or [])]
             if sr:
                 para(doc, "评分标准：" + "；".join(sr), size=10.5, space_after=4, line=1.35)
     add_page_number_footer(doc)
@@ -231,7 +240,7 @@ def main():
         ex = json.load(open(f, encoding="utf-8"))
         d = os.path.join(OUT_ROOT, ex["book"])
         os.makedirs(d, exist_ok=True)
-        cap = os.path.abspath(f).split("/data/math/exams/")[-1]
+        cap = os.path.abspath(f).split(f"/data/{BUCKET}/exams/")[-1]
         if ex["paper"] not in os.path.basename(f):
             print(f"⚠️ 文件名与 paper 不一致：{cap} → {ex['paper']}")
         p1 = os.path.join(d, f"{ex['paper']}_试卷.docx")

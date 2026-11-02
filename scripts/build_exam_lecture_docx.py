@@ -24,7 +24,10 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import subject_typo  # noqa: E402
 
 REPO = os.path.expanduser("~/Desktop/cn-k12-dxyc2286")
-LEC = f"{REPO}/data/math/exam_lectures"
+BUCKET = os.environ.get("MATH_BUCKET", "math")
+EDITION = os.environ.get("MATH_EDITION", "人教版")
+LEC = f"{REPO}/data/{BUCKET}/exam_lectures"
+# 根目录到「试卷讲解」，学科/版本由 book_info() 拼接（避免与 EDITION 重复嵌套）
 OUT_ROOT = os.path.expanduser("~/Desktop/学科图谱相关资料/试卷讲解")
 
 # 册名 → (学科, 版本, 学段)
@@ -45,12 +48,15 @@ BOOK_INFO = {
 
 
 def book_info(book):
+    # 版本取环境变量 EDITION（版本桶：MATH_BUCKET/MATH_EDITION），不以表内「人教版」为准
     if book in BOOK_INFO:
-        return BOOK_INFO[book]
+        subj, _ver, stage = BOOK_INFO[book]
+        return (subj, EDITION, stage)
     for k, v in BOOK_INFO.items():
         if k in book or book in k:
-            return v
-    return ("数学", "人教版", "小学")
+            subj, _ver, stage = v
+            return (subj, EDITION, stage)
+    return ("数学", EDITION, "小学")
 
 
 def set_font(run, cn="宋体", size=10.5, bold=False, en="Times New Roman"):
@@ -169,7 +175,7 @@ def render(md, lec, exam, path):
 def main():
     only = sys.argv[1] if len(sys.argv) > 1 else None
     files = sorted(glob.glob(f"{LEC}/*/*.json"))
-    files = [f for f in files if not os.path.basename(f).startswith("_")]
+    files = [f for f in files if not os.path.basename(f).startswith("_") and "/_stale/" not in f]
     if only:
         files = [f for f in files if f"/{only}/" in f]
     if not files:
@@ -178,8 +184,15 @@ def main():
     n = 0
     for f in files:
         lec = json.load(open(f, encoding="utf-8"))
-        exam = json.load(open(
-            f"{REPO}/data/math/exams/{lec['book']}/{lec['paper']}.json", encoding="utf-8"))
+        # exams/ 目录名可能不带版本前缀，讲解 book 带前缀：逐个候选路径找
+        _cands = [lec["book"]]
+        for _pre in ("苏教版", "苏科版", "人教版", "北师大版", "沪教版", "湘教版", "青岛版", "冀教版"):
+            if str(lec["book"]).startswith(_pre):
+                _cands.append(str(lec["book"])[len(_pre):])
+        _path = next((p_ for p_ in (f"{REPO}/data/{BUCKET}/exams/{c}/{lec['paper']}.json" for c in _cands)
+                      if os.path.exists(p_)),
+                     f"{REPO}/data/{BUCKET}/exams/{lec['book']}/{lec['paper']}.json")
+        exam = json.load(open(_path, encoding="utf-8"))
         subject, version, stage = book_info(lec["book"])
         d = os.path.join(OUT_ROOT, subject, version, lec["book"])
         os.makedirs(d, exist_ok=True)

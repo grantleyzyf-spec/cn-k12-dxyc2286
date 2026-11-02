@@ -6,13 +6,18 @@
   lessons[]：topicId / name / chapter / page / misconceptions / 教材 TXT 路径（若提供 --txt-root）
   out：本片落盘路径（learn/_parts/<LID>.json）
 
+为什么不用手写：单册口径是硬约束（checker 与合并器都按 book 归属），一本册的课时点
+跨片就会整片不合格；按册切、按页给 TXT 路径，工人不需要自己去数页码。
+
 用法：
   python3 scripts/gen_learn_shards.py math-hujiao --per-shard 4 \
       --booktag 沪教版必修第一册=h1 沪教版必修第二册=h2 沪教版必修第三册=h3 \
                 沪教版选择性必修第一册=x1 沪教版选择性必修第二册=x2 --txt-root /tmp/mhj
+
+注意：`--txt-root` 指向「逐页 TXT 目录」（<root>/<tag>/pNNN.txt）。教材是单一整册 TXT 时
+不要传它，让写手自己按 book 找；两种形态下 check_<桶>_learn.py 的回表源不同。
 """
 import argparse
-import glob
 import json
 import os
 
@@ -32,13 +37,10 @@ def main():
     topics = json.load(open(os.path.join(base, "topics.json"), encoding="utf-8"))
     tag_of = dict(x.split("=", 1) for x in a.booktag)
 
-    # 课时点判定：优先 level；没有 level 字段的桶按 chapter 的「 · 」或 page 判定（苏教/苏科/湘教就是这种）
-    has_level = any("level" in t for t in topics)
-    if has_level:
-        lessons = [t for t in topics if t.get("level") == "lesson"]
-    else:
-        lessons = [t for t in topics
-                   if " · " in (t.get("chapter") or "") or t.get("page") is not None]
+    # 只取课时点（level==lesson）；没有 level 的桶先用 page / chapter 里的「 · 」兜底
+    lessons = [t for t in topics if t.get("level") == "lesson"]
+    if not lessons:
+        lessons = [t for t in topics if t.get("page") is not None]
     lessons.sort(key=lambda t: (t["chapter"].split(" ")[0], t.get("page") or 0, t["id"]))
     by_book = {}
     for t in lessons:

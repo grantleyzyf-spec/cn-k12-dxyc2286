@@ -18,6 +18,11 @@
 `data/math-hujiao/{topics,questions,dependencies}.json` + `_skeleton.json`；
 知识点 id：`mhj_h###`（单元）/ `mhj_h1###`（课时），册名带「沪教版」前缀。
 
+- 课标：`mat-2017` 条目，`quote` 与仓库同 id 条目逐字一致；**79/101 点挂引文**，
+  其余 22 点在 `_std_waivers.json` 登记（高中课标无直接表述，留空不编），逐点含最近邻人与相似度。
+- 题目字段：`answer` 一律字符串（schema 要求）；numeric 的 `verify` 可复算。
+- 题库分布：choice 356 / numeric 186 / fill 113 / short-answer 90；basic 241 / standard 313 / hard 191。
+
 ## 整卷（exams/）
 - 41 卷 / 5 册 = 每册 5 份单元卷 + 期中 A/B + 期末 A/B
 - 卷面统一**高中模板**：120 分钟 / 150 分 / 22 题（单选 8×5 + 多选 4×5 + 填空 4×5 + 解答 10/12/12/12/12/12）

@@ -1,0 +1,3495 @@
+{
+ "tag": "x1",
+ "book": "沪教版选择性必修第一册",
+ "unit_points": [
+  {
+   "id": "mhj_h014",
+   "description": "把直线放进平面直角坐标系，用倾斜角与斜率刻画方向，用直线方程的多种形式实现形与数的互化，再用两条直线的位置关系与点到直线的距离解决几何度量问题。",
+   "mastery_criteria": [
+    "能用两点坐标求直线斜率，并在斜率、倾斜角与直线方程之间相互转化",
+    "能根据条件选择点斜式、斜截式、两点式、一般式或点法式写出直线方程",
+    "能判定两条直线平行、重合、垂直并求夹角，能求点到直线的距离与平行线间的距离"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h014_q1",
+     "topicId": "mhj_h014",
+     "prompt": "在平面直角坐标系中，直线 l 的倾斜角记为 θ，则 θ 的取值范围是",
+     "question": "在平面直角坐标系中，直线 l 的倾斜角记为 θ，则 θ 的取值范围是",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材规定倾斜角是 x 轴正方向与直线向上方向所成的角，直线与 x 轴平行或重合时倾斜角为 0，所以 θ 大于等于 0 且小于 π。",
+     "options": [
+      {
+       "label": "A",
+       "text": "大于 0 且小于 π"
+      },
+      {
+       "label": "B",
+       "text": "大于等于 0 且小于 π"
+      },
+      {
+       "label": "C",
+       "text": "大于等于 0 且小于等于 π"
+      },
+      {
+       "label": "D",
+       "text": "大于 0 且小于等于 π"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h014_q2",
+     "topicId": "mhj_h014",
+     "prompt": "直线 l 的一般式方程是 ax + by + c = 0，其中 a、b 不同时为零，则 l 的一个法向量是",
+     "question": "直线 l 的一般式方程是 ax + by + c = 0，其中 a、b 不同时为零，则 l 的一个法向量是",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材证明了以一般式方程一次项系数为坐标的向量与直线上的任意向量都垂直，因此向量（a，b）就是该直线的一个法向量。",
+     "options": [
+      {
+       "label": "A",
+       "text": "（a，b）"
+      },
+      {
+       "label": "B",
+       "text": "（-a，b）"
+      },
+      {
+       "label": "C",
+       "text": "（b，a）"
+      },
+      {
+       "label": "D",
+       "text": "（b，-a）"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h014_q3",
+     "topicId": "mhj_h014",
+     "prompt": "已知两条直线都不与 x 轴垂直，则这两条直线平行的充要条件是",
+     "question": "已知两条直线都不与 x 轴垂直，则这两条直线平行的充要条件是",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "斜率都存在时，两直线平行要求斜率相等且在 y 轴上的截距不相等；斜率之积等于 -1 与法向量垂直都对应两直线垂直，有唯一公共点则对应相交。",
+     "options": [
+      {
+       "label": "A",
+       "text": "两条直线的斜率之积等于 -1"
+      },
+      {
+       "label": "B",
+       "text": "两条直线的法向量互相垂直"
+      },
+      {
+       "label": "C",
+       "text": "两条直线的斜率相等且在 y 轴上的截距不相等"
+      },
+      {
+       "label": "D",
+       "text": "两条直线有且只有一个公共点"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h014_q4",
+     "topicId": "mhj_h014",
+     "prompt": "已知点 A（1，2）与点 B（3，6），求经过这两点的直线 AB 的斜率。",
+     "question": "已知点 A（1，2）与点 B（3，6），求经过这两点的直线 AB 的斜率。",
+     "answer": "2",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "由斜率公式，斜率等于纵坐标之差除以横坐标之差，即（6-2）除以（3-1），等于 6 除以 2，得斜率为 2。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 6}, {\"type\": \"num\", \"value\": 2}]}, {\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": 1}]}]}"
+    },
+    {
+     "id": "mhj_h014_q5",
+     "topicId": "mhj_h014",
+     "prompt": "求两条平行直线 y = 2x + 1 与 y = 2x - 3 之间的距离。",
+     "question": "求两条平行直线 y = 2x + 1 与 y = 2x - 3 之间的距离。",
+     "answer": "4√5/5",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "先把两条直线化为一般式 2x - y + 1 = 0 与 2x - y - 3 = 0，再用平行线间的距离公式，分子是常数项 1 与 -3 之差的绝对值 4，分母是根号 5，得 4√5/5。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h015",
+   "description": "以圆为起点建立圆锥曲线的整体图景：圆、椭圆、双曲线、抛物线都有统一形式的标准方程，都能由焦点、准线与离心率刻画形状，直线与它们的公共点个数可借助判别式或几何距离判断，而曲线与方程的对应关系需要正反两个方向同时成立。",
+   "mastery_criteria": [
+    "能写出圆、椭圆、双曲线、抛物线的标准方程并指出焦点、准线与离心率",
+    "能用判别式或圆心到直线的距离判断直线与圆锥曲线的公共点个数",
+    "能说明三类圆锥曲线都可以由平面截圆锥侧面得到"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h015_q1",
+     "topicId": "mhj_h015",
+     "prompt": "椭圆、双曲线与抛物线统称为圆锥曲线，这样称呼的主要依据是什么？",
+     "question": "椭圆、双曲线与抛物线统称为圆锥曲线，这样称呼的主要依据是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "它们的图像都关于坐标轴对称"
+      },
+      {
+       "label": "B",
+       "text": "它们都可以看作平面截圆锥侧面所得的曲线"
+      },
+      {
+       "label": "C",
+       "text": "它们的方程都能化为一元二次方程"
+      },
+      {
+       "label": "D",
+       "text": "它们都可以由圆经过平移或伸缩得到"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材章末阅读材料指出，用不过圆锥顶点的平面去截圆锥的侧面，当平面与旋转轴所成的角不同时，截得的曲线分别是椭圆、抛物线或双曲线，因此把它们统称为圆锥曲线。"
+    },
+    {
+     "id": "mhj_h015_q2",
+     "topicId": "mhj_h015",
+     "prompt": "关于圆锥曲线的离心率，下列表述正确的是哪一个？",
+     "question": "关于圆锥曲线的离心率，下列表述正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "椭圆的离心率等于半焦距与长半轴长的比，且介于 0 与 1 之间"
+      },
+      {
+       "label": "B",
+       "text": "双曲线的离心率等于半焦距与实半轴长的比，且小于 1"
+      },
+      {
+       "label": "C",
+       "text": "抛物线的离心率等于焦点到准线距离与顶点到焦点距离的比"
+      },
+      {
+       "label": "D",
+       "text": "椭圆的长半轴越短，它的离心率一定越大"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "椭圆的离心率 e 等于半焦距与长半轴长的比，因 a 大于 c 大于 0，故 e 介于 0 与 1 之间；双曲线的离心率同样是 c 与 a 的比，但因 c 大于 a，故 e 大于 1，所以选项 B 说反了；离心率由 c 与 a 的比值决定，只看长半轴的长无法判断扁平程度。"
+    },
+    {
+     "id": "mhj_h015_q3",
+     "topicId": "mhj_h015",
+     "prompt": "抛物线 y²=2px（p>0）的焦点坐标与准线方程分别是哪一组？",
+     "question": "抛物线 y²=2px（p>0）的焦点坐标与准线方程分别是哪一组？",
+     "options": [
+      {
+       "label": "A",
+       "text": "焦点 (p,0)，准线 x=-p"
+      },
+      {
+       "label": "B",
+       "text": "焦点 (p/2,0)，准线 x=p/2"
+      },
+      {
+       "label": "C",
+       "text": "焦点 (p/2,0)，准线 x=-p/2"
+      },
+      {
+       "label": "D",
+       "text": "焦点 (0,p/2)，准线 y=-p/2"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "教材推导时把焦点到准线的距离记为 p，顶点取在原点，于是焦点为 (p/2,0)，准线为 x=-p/2，焦点与准线关于顶点对称，两者到顶点的距离都是 p/2。"
+    },
+    {
+     "id": "mhj_h015_q4",
+     "topicId": "mhj_h015",
+     "prompt": "一座圆拱桥的圆拱跨度为 20 m，拱高为 4 m，建造时每隔 4 m 用一个支柱支撑。以跨度所在直线为 x 轴、拱的最高点所在竖直线为 y 轴建立坐标系，求距左端 4 m 处那个支柱的高度，结果精确到 0.01 m。",
+     "question": "一座圆拱桥的圆拱跨度为 20 m，拱高为 4 m，建造时每隔 4 m 用一个支柱支撑。以跨度所在直线为 x 轴、拱的最高点所在竖直线为 y 轴建立坐标系，求距左端 4 m 处那个支柱的高度，结果精确到 0.01 m。",
+     "answer": 2.7,
+     "type": "numeric",
+     "difficulty": "hard",
+     "verify": "{\"type\": \"num\", \"value\": 2.7}",
+     "explanation": "设圆心为 (0,-10.5)，半径为 R。由半跨 10 与拱高 4 得 10²+(R-4)²=R²，解得 R=14.5。支柱位置为 x=-6，代入方程 x²+(y+10.5)²=210.25 得 (y+10.5)²=174.25，故 y 约为 13.20-10.5=2.70 m。"
+    },
+    {
+     "id": "mhj_h015_q5",
+     "topicId": "mhj_h015",
+     "prompt": "在椭圆 x²/a²+y²/b²=1（a>b>0）与双曲线 x²/a²-y²/b²=1（a>0，b>0）中，a、b、c 的关系式分别是什么？请按先椭圆后双曲线的顺序填写。",
+     "question": "在椭圆 x²/a²+y²/b²=1（a>b>0）与双曲线 x²/a²-y²/b²=1（a>0，b>0）中，a、b、c 的关系式分别是什么？请按先椭圆后双曲线的顺序填写。",
+     "answer": "椭圆 b²=a²-c²，双曲线 c²=a²+b²",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "椭圆中 c 小于 a，由定义推导得 b²=a²-c²，即 a²=b²+c²；双曲线中 c 大于 a，推导得 b²=c²-a²，即 c²=a²+b²。两式形式相近，但 c 与 a 的大小关系正好相反，记忆时要分清。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h016",
+   "description": "把空间向量作为处理立体几何的统一工具：先由向量共面的条件与空间向量基本定理确定基底，再用数量积或坐标计算夹角、长度与垂直关系，进而判断线线、线面与面面的位置关系。",
+   "mastery_criteria": [
+    "能说出空间向量与平面向量相同的运算律，并用一组基底表示几何体中的向量",
+    "能用数量积或坐标计算两个空间向量的夹角、模与垂直关系",
+    "能把直线与平面平行、垂直的判断转化为向量的平行或垂直关系"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h016_q1",
+     "topicId": "mhj_h016",
+     "prompt": "关于空间向量，下列结论正确的是",
+     "question": "关于空间向量，下列结论正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "空间中的任意两个向量总是共面的"
+      },
+      {
+       "label": "B",
+       "text": "空间中的任意三个向量一定不共面"
+      },
+      {
+       "label": "C",
+       "text": "两个向量的和可能与这两个向量都不共面"
+      },
+      {
+       "label": "D",
+       "text": "空间向量没有相等向量与负向量的概念"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材指出空间的任意两个向量总是共面的，因为两个向量的和按平行四边形或三角形法则作出，仍在同一个平面内；三个向量才可能不共面，例如正方体同一个顶点出发的三条棱对应的向量。"
+    },
+    {
+     "id": "mhj_h016_q2",
+     "topicId": "mhj_h016",
+     "prompt": "如果三个向量 e1、e2、e3 不共面，那么下列结论正确的是",
+     "question": "如果三个向量 e1、e2、e3 不共面，那么下列结论正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "空间中只有部分向量能表示成它们的线性组合"
+      },
+      {
+       "label": "B",
+       "text": "空间中任意一个向量都能唯一地表示成它们的线性组合"
+      },
+      {
+       "label": "C",
+       "text": "空间中任意一个向量都能表示成它们的线性组合，但表示方法不唯一"
+      },
+      {
+       "label": "D",
+       "text": "其中任意两个向量的线性组合仍可能与第三个向量共面"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "这正是空间向量基本定理的内容：三个向量不共面时，对空间中任意一个向量 a，存在唯一一组实数 λ、μ、ν，使 a 等于 λe1 加 μe2 加 νe3；唯一性由不共面条件推出矛盾来证明。"
+    },
+    {
+     "id": "mhj_h016_q3",
+     "topicId": "mhj_h016",
+     "prompt": "在平行六面体 ABCD-A1B1C1D1 中，点 M 在体对角线 A1B 上，且 A1M 的长是 MB 的一半，点 N 在体对角线 A1C 上，且 A1N 的长是 NC 的三分之一，则下列结论正确的是",
+     "question": "在平行六面体 ABCD-A1B1C1D1 中，点 M 在体对角线 A1B 上，且 A1M 的长是 MB 的一半，点 N 在体对角线 A1C 上，且 A1N 的长是 NC 的三分之一，则下列结论正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "M、N、D1 三点不共线"
+      },
+      {
+       "label": "B",
+       "text": "D1M 等于 3 倍的 D1N"
+      },
+      {
+       "label": "C",
+       "text": "D1M 等于三分之四倍的 D1N"
+      },
+      {
+       "label": "D",
+       "text": "D1M 等于 2 倍的 D1N"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "设 AB 等于 a、AD 等于 b、AA1 等于 c，由条件得 A1M 等于三分之一 A1B、A1N 等于四分之一 A1C，算得 D1M 等于三分之一（a 减 3b 减 c），D1N 等于四分之一（a 减 3b 减 c），两者成比例，故 D1M 等于三分之四 D1N，且 M、N、D1 三点共线。"
+    },
+    {
+     "id": "mhj_h016_q4",
+     "topicId": "mhj_h016",
+     "prompt": "在棱长为 2 的正方体 ABCD-A1B1C1D1 中，DD1 与 DC1 的数量积 DD1·DC1 的值是多少",
+     "question": "在棱长为 2 的正方体 ABCD-A1B1C1D1 中，DD1 与 DC1 的数量积 DD1·DC1 的值是多少",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\":\"op\",\"op\":\"pow\",\"values\":[{\"type\":\"num\",\"value\":2},{\"type\":\"num\",\"value\":2}]}",
+     "explanation": "由于 DD1 垂直于 DC、也垂直于 CC1，把 DC1 写成 DC 加 CC1 后，只有 CC1 这一项留下，它的长与 DD1 的长都是 2，方向相同，所以数量积等于 2 乘 2 等于 4。"
+    },
+    {
+     "id": "mhj_h016_q5",
+     "topicId": "mhj_h016",
+     "prompt": "化简下列向量算式 3(2a - b - 4c) - 4(a - 2b + 3c)，结果是什么",
+     "question": "化简下列向量算式 3(2a - b - 4c) - 4(a - 2b + 3c)，结果是什么",
+     "answer": "2a + 5b - 24c",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "先去括号得 6a 减 3b 减 12c 减 4a 加 8b 减 12c，再合并同类项：a 的系数为 6 减 4 得 2，b 的系数为负 3 加 8 得 5，c 的系数为负 12 减 12 得负 24。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h017",
+   "description": "把数列看成定义在正整数上的函数，用等差数列与等比数列刻画线性增长与成倍变化，用前 n 项和解决累加问题，并用数学归纳法证明与正整数有关的命题。",
+   "mastery_criteria": [
+    "能判断一个数列是否为等差或等比数列，并求出公差、公比与通项公式",
+    "能根据已知项求等差中项、等比中项以及指定的项与项数",
+    "能求等差、等比数列的前 n 项和，并用数学归纳法证明与正整数有关的等式"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h017_q1",
+     "topicId": "mhj_h017",
+     "prompt": "下列四个数列中，能够构成等差数列的是",
+     "question": "下列四个数列中，能够构成等差数列的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "-5，-9，-13，-17"
+      },
+      {
+       "label": "B",
+       "text": "1，2，4，8"
+      },
+      {
+       "label": "C",
+       "text": "1，1/2，1/3，1/4"
+      },
+      {
+       "label": "D",
+       "text": "2，3，5，8"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "第一个数列从第二项起每一项与前一项的差都等于 -4，符合等差数列的定义；第二个数列相邻两项的比才相等，第三个数列相邻两项的差各不相同，第四个数列相邻两项的差依次为 1、2、3，也不是同一个常数。"
+    },
+    {
+     "id": "mhj_h017_q2",
+     "topicId": "mhj_h017",
+     "prompt": "已知等差数列的首项为 2，公差为 3，求该数列的第 10 项的值",
+     "question": "已知等差数列的首项为 2，公差为 3，求该数列的第 10 项的值",
+     "answer": 29,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 29}",
+     "explanation": "由等差数列的通项公式，第 n 项等于首项加上序数减 1 倍的公差，所以第 10 项等于 2 加 9 乘 3，等于 29。"
+    },
+    {
+     "id": "mhj_h017_q3",
+     "topicId": "mhj_h017",
+     "prompt": "已知等比数列的首项为 2，公比为 3，则该数列的第 4 项等于",
+     "question": "已知等比数列的首项为 2，公比为 3，则该数列的第 4 项等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "18"
+      },
+      {
+       "label": "B",
+       "text": "24"
+      },
+      {
+       "label": "C",
+       "text": "48"
+      },
+      {
+       "label": "D",
+       "text": "54"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "等比数列的通项公式是第 n 项等于首项乘公比的 n 减 1 次方，所以第 4 项等于 2 乘 3 的 3 次方，即 2 乘 27 等于 54。"
+    },
+    {
+     "id": "mhj_h017_q4",
+     "topicId": "mhj_h017",
+     "prompt": "已知 3、一个数、7 三个数依次成等差数列，则中间这个数等于",
+     "question": "已知 3、一个数、7 三个数依次成等差数列，则中间这个数等于",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "三个数依次成等差数列时，中间的数等于两端数的平均数，由等差中项公式得中间的数等于 3 与 7 的和的一半，即 5。",
+     "options": [
+      {
+       "label": "A",
+       "text": "4"
+      },
+      {
+       "label": "B",
+       "text": "5"
+      },
+      {
+       "label": "C",
+       "text": "6"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h017_q5",
+     "topicId": "mhj_h017",
+     "prompt": "已知等比数列的首项为 1，公比为 2，求该数列前 5 项的和",
+     "question": "已知等比数列的首项为 1，公比为 2，求该数列前 5 项的和",
+     "answer": "31",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "公比不等于 1，用等比数列前 n 项和公式，前 5 项和等于 1 乘 1 减 2 的 5 次方的差再除以 1 减 2，等于 63 除以 1，即 31。"
+    }
+   ]
+  }
+ ],
+ "lesson_points": [
+  {
+   "id": "mhj_h1049",
+   "page": 10,
+   "description": "理解直线倾斜角的含义与取值范围，会由两点坐标用斜率公式求斜率，并能借助正切值在斜率与倾斜角之间转化，判断直线的倾斜程度。",
+   "mastery_criteria": [
+    "能说出倾斜角的取值范围，并由图形或坐标判断倾斜角是锐角、直角还是钝角",
+    "能用两点坐标求斜率，并用斜率的正负判断直线的倾斜方向"
+   ],
+   "misconceptions": [
+    "认为倾斜角可以取到 π，把与 x 轴负方向重合的方向也算成倾斜角",
+    "求斜率时把两点坐标相减的顺序弄反，横纵坐标没有对应相减",
+    "认为斜率越大直线越陡，忽略斜率为负数时的情况",
+    "忽略横坐标相等的两点所在直线斜率不存在，直接代入公式得到分母为零"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1049_q1",
+     "topicId": "mhj_h1049",
+     "prompt": "已知直线 l 经过点 P（-2，2）与点 Q（2，-2），则 l 的倾斜角是",
+     "question": "已知直线 l 经过点 P（-2，2）与点 Q（2，-2），则 l 的倾斜角是",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "先求斜率，等于（-2-2）除以（2+2），即 -1；倾斜角是钝角，满足正切值等于 -1 的倾斜角为 3π/4。",
+     "options": [
+      {
+       "label": "A",
+       "text": "π/4"
+      },
+      {
+       "label": "B",
+       "text": "π/2"
+      },
+      {
+       "label": "C",
+       "text": "3π/4"
+      },
+      {
+       "label": "D",
+       "text": "2π/3"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1049_q2",
+     "topicId": "mhj_h1049",
+     "prompt": "直线 l 经过点 P（1，2）与点 Q（2，-1），求 l 的斜率 k。",
+     "question": "直线 l 经过点 P（1，2）与点 Q（2，-1），求 l 的斜率 k。",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由斜率公式，k 等于（-1-2）除以（2-1），即 -3；斜率为负说明直线的倾斜角是钝角。",
+     "options": [
+      {
+       "label": "A",
+       "text": "-3"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "-1/3"
+      },
+      {
+       "label": "D",
+       "text": "1/3"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1049_q3",
+     "topicId": "mhj_h1049",
+     "prompt": "已知直线 l 经过点 A（1，3）与点 B（4，9），求 l 的斜率。",
+     "question": "已知直线 l 经过点 A（1，3）与点 B（4，9），求 l 的斜率。",
+     "answer": "2",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "由斜率公式，k 等于（9-3）除以（4-1），即 6 除以 3，得 k 等于 2，直线的倾斜角为锐角。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 9}, {\"type\": \"num\", \"value\": 3}]}, {\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 1}]}]}"
+    },
+    {
+     "id": "mhj_h1049_q4",
+     "topicId": "mhj_h1049",
+     "prompt": "已知直线 l 的倾斜角为 π/6，求 l 的斜率。",
+     "question": "已知直线 l 的倾斜角为 π/6，求 l 的斜率。",
+     "answer": "√3/3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "斜率等于倾斜角的正切值，π/6 的正切值为 1 除以根号 3，分母有理化后得 √3/3。"
+    },
+    {
+     "id": "mhj_h1049_q5",
+     "topicId": "mhj_h1049",
+     "prompt": "已知三点 A（-1，2）、B（3，4）、C（x，y）在同一条直线上，则 x 与 y 所满足的关系式是",
+     "question": "已知三点 A（-1，2）、B（3，4）、C（x，y）在同一条直线上，则 x 与 y 所满足的关系式是",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "直线 AB 的斜率等于（4-2）除以（3+1），即 1/2；点 C 在直线 AB 上时用点 A 写点斜式，得 y - 2 = 1/2（x + 1）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y - 2 = 2（x + 1）"
+      },
+      {
+       "label": "B",
+       "text": "y - 2 = -1/2（x + 1）"
+      },
+      {
+       "label": "C",
+       "text": "y + 2 = 1/2（x - 1）"
+      },
+      {
+       "label": "D",
+       "text": "y - 2 = 1/2（x + 1）"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1049_q6",
+     "topicId": "mhj_h1049",
+     "prompt": "设直线 l1 与 l2 的倾斜角分别为 θ1 与 θ2，则 l1 与 l2 垂直的充要条件是",
+     "question": "设直线 l1 与 l2 的倾斜角分别为 θ1 与 θ2，则 l1 与 l2 垂直的充要条件是",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两条直线垂直时倾斜角相差 π/2；反过来，倾斜角之差为 π/2 的两条直线方向互相垂直，所以这个条件是充要条件。",
+     "options": [
+      {
+       "label": "A",
+       "text": "θ1 与 θ2 之差的绝对值等于 π/4"
+      },
+      {
+       "label": "B",
+       "text": "θ1 与 θ2 之差的绝对值等于 π/2"
+      },
+      {
+       "label": "C",
+       "text": "θ1 等于 θ2"
+      },
+      {
+       "label": "D",
+       "text": "θ1 与 θ2 之和等于 π"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1049_q7",
+     "topicId": "mhj_h1049",
+     "prompt": "已知三点 A（2，3）、B（4，7）、C（6，m）在同一条直线上，求实数 m 的值。",
+     "question": "已知三点 A（2，3）、B（4，7）、C（6，m）在同一条直线上，求实数 m 的值。",
+     "answer": "11",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "直线 AB 的斜率等于（7-3）除以（4-2），即 2；三点共线要求 AC 的斜率也是 2，即（m-3）除以（6-2）等于 2，解得 m 等于 11。",
+     "verify": "{\"type\": \"op\", \"op\": \"op\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 2}, {\"type\": \"num\", \"value\": 4}]}]}"
+    },
+    {
+     "id": "mhj_h1049_q8",
+     "topicId": "mhj_h1049",
+     "prompt": "已知点 A（2，4）、B（-1，-1）、C（4，1），过点 B 的直线 l 与线段 AC 相交，求直线 l 的斜率 k 的取值范围。",
+     "question": "已知点 A（2，4）、B（-1，-1）、C（4，1），过点 B 的直线 l 与线段 AC 相交，求直线 l 的斜率 k 的取值范围。",
+     "answer": "2/5 ≤ k ≤ 5/3",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "直线 l 绕点 B 由 BA 转到 BC 时斜率连续变化；BA 的斜率等于（4+1）除以（2+1）即 5/3，BC 的斜率等于（1+1）除以（4+1）即 2/5，故 k 从 2/5 变化到 5/3，取值范围是 2/5 ≤ k ≤ 5/3。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1050",
+   "page": 14,
+   "description": "掌握点斜式、斜截式、两点式、一般式与点法式等直线方程形式，理解截距的含义，能按已知条件选择合适形式写出方程并实现互化。",
+   "mastery_criteria": [
+    "能由一点与斜率写出点斜式方程，并化为斜截式或一般式",
+    "能由两点、截距或法向量写出直线方程，并由一般式读出斜率与截距",
+    "能处理含参数的直线方程，求定点或参数的取值范围"
+   ],
+   "misconceptions": [
+    "写点斜式时把 y - y0 写成 y + y0，横坐标也漏变号",
+    "把截距理解成距离，认为截距一定是正数",
+    "认为与 y 轴平行的直线也有斜率和在 y 轴上的截距",
+    "求含参直线恒过的定点时只代特殊值验证一点，没有说明对任意参数都成立"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mhj_h1050_q1",
+     "topicId": "mhj_h1050",
+     "prompt": "求经过点 P（-2，3）且斜率为 -1 的直线 l 的点斜式方程。",
+     "question": "求经过点 P（-2，3）且斜率为 -1 的直线 l 的点斜式方程。",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "点斜式方程为 y - y0 = k（x - x0），把点 P 的坐标与斜率 -1 代入，得 y - 3 = -（x + 2）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y + 3 = -（x - 2）"
+      },
+      {
+       "label": "B",
+       "text": "y - 3 = -（x + 2）"
+      },
+      {
+       "label": "C",
+       "text": "y - 3 = x + 2"
+      },
+      {
+       "label": "D",
+       "text": "y + 3 = x - 2"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1050_q2",
+     "topicId": "mhj_h1050",
+     "prompt": "已知直线 l 的倾斜角为 2π/3，且在 x 轴上的截距为 -3，求 l 的点斜式方程。",
+     "question": "已知直线 l 的倾斜角为 2π/3，且在 x 轴上的截距为 -3，求 l 的点斜式方程。",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "倾斜角 2π/3 的正切值为 -√3，直线在 x 轴上的截距为 -3，说明它经过点（-3，0），故方程为 y = -√3（x + 3）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = √3（x + 3）"
+      },
+      {
+       "label": "B",
+       "text": "y = -√3（x - 3）"
+      },
+      {
+       "label": "C",
+       "text": "y = -√3（x + 3）"
+      },
+      {
+       "label": "D",
+       "text": "y = √3（x - 3）"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1050_q3",
+     "topicId": "mhj_h1050",
+     "prompt": "已知直线 l 在 x 轴上的截距为 -2，在 y 轴上的截距为 4，求 l 的斜率。",
+     "question": "已知直线 l 在 x 轴上的截距为 -2，在 y 轴上的截距为 4，求 l 的斜率。",
+     "answer": "2",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "直线经过点（-2，0）与（0，4），由斜率公式得 k 等于（4-0）除以（0+2），即 2。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 4}, {\"type\": \"num\", \"value\": 0}]}, {\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 0}, {\"type\": \"num\", \"value\": -2}]}]}"
+    },
+    {
+     "id": "mhj_h1050_q4",
+     "topicId": "mhj_h1050",
+     "prompt": "写出直线 2x - 3y + 1 = 0 的一个法向量，用坐标形式表示。",
+     "question": "写出直线 2x - 3y + 1 = 0 的一个法向量，用坐标形式表示。",
+     "answer": "（2，-3）",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "一般式方程的一次项系数分别是 2 与 -3，以这两个系数为坐标的向量就是该直线的一个法向量。"
+    },
+    {
+     "id": "mhj_h1050_q5",
+     "topicId": "mhj_h1050",
+     "prompt": "无论实数 a 取何值，直线 ax + y + a + 1 = 0 都经过一个定点，该定点的坐标是",
+     "question": "无论实数 a 取何值，直线 ax + y + a + 1 = 0 都经过一个定点，该定点的坐标是",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把方程按参数 a 整理，得 y + 1 = -a（x + 1），这是点斜式方程，定点为（-1，-1），与 a 的取值无关。",
+     "options": [
+      {
+       "label": "A",
+       "text": "（1，1）"
+      },
+      {
+       "label": "B",
+       "text": "（-1，1）"
+      },
+      {
+       "label": "C",
+       "text": "（1，-1）"
+      },
+      {
+       "label": "D",
+       "text": "（-1，-1）"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1050_q6",
+     "topicId": "mhj_h1050",
+     "prompt": "已知直线 l 与 x 轴、y 轴分别交于 A、B 两个不同的点，且 OA 与 OB 的长度相等，其中 O 为坐标原点，又点 C（1，-2）在 l 上，则 l 的方程可能是",
+     "question": "已知直线 l 与 x 轴、y 轴分别交于 A、B 两个不同的点，且 OA 与 OB 的长度相等，其中 O 为坐标原点，又点 C（1，-2）在 l 上，则 l 的方程可能是",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由截距的绝对值相等可得斜率为 1 或 -1 两类；把点 C 的坐标代入，得 y = -x - 1 与 y = x - 3 两条，选项中只有 y = x - 3 符合。",
+     "options": [
+      {
+       "label": "A",
+       "text": "y = x - 3"
+      },
+      {
+       "label": "B",
+       "text": "y = -x - 3"
+      },
+      {
+       "label": "C",
+       "text": "y = x + 3"
+      },
+      {
+       "label": "D",
+       "text": "y = -x + 1"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1050_q7",
+     "topicId": "mhj_h1050",
+     "prompt": "一个弹簧在弹性限度内挂 4 kg 物体时长度为 20 cm，挂 5 kg 物体时长度为 21.5 cm，且所挂物体质量 x 与弹簧长度 y 的关系可用直线的方程表示，求弹簧自身的长度。",
+     "question": "一个弹簧在弹性限度内挂 4 kg 物体时长度为 20 cm，挂 5 kg 物体时长度为 21.5 cm，且所挂物体质量 x 与弹簧长度 y 的关系可用直线的方程表示，求弹簧自身的长度。",
+     "answer": "14",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "斜率等于（21.5-20）除以（5-4），即 1.5，表示每增加 1 kg 弹簧伸长 1.5 cm；由 20 减去 4 乘 1.5 得挂 0 kg 时的长度，即弹簧自身的长度 14 cm。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 20}, {\"type\": \"op\", \"op\": \"mul\", \"values\": [{\"type\": \"num\", \"value\": 1.5}, {\"type\": \"num\", \"value\": 4}]}]}"
+    },
+    {
+     "id": "mhj_h1050_q8",
+     "topicId": "mhj_h1050",
+     "prompt": "已知直线 l 的方程为（m + 1）x + my + 2 - m = 0，且 l 经过平面直角坐标系的第一、第二与第四象限，求实数 m 的取值范围。",
+     "question": "已知直线 l 的方程为（m + 1）x + my + 2 - m = 0，且 l 经过平面直角坐标系的第一、第二与第四象限，求实数 m 的取值范围。",
+     "answer": "m < -1 或 m > 2",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "m 等于 0 时方程表示竖直线，只经过两个象限，不合题意；一般情形下斜率为 -（m+1）/m，在 y 轴上的截距为（m-2）/m。经过第一、二、四象限要求斜率小于 0 且截距大于 0，即（m+1）/m 大于 0 且（m-2）/m 大于 0，解得 m < -1 或 m > 2。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1051",
+   "page": 24,
+   "description": "会用方程组解的个数与系数关系判定两条直线相交、平行与重合，掌握垂直的充要条件与夹角余弦公式，并能由位置关系求参数与直线方程。",
+   "mastery_criteria": [
+    "能用系数比或斜率判定两条直线的位置关系，并在相交时求出交点坐标",
+    "能用 a1a2 + b1b2 = 0 判定垂直，并用夹角余弦公式求两直线的夹角",
+    "能根据平行、垂直或夹角条件求参数值与直线方程"
+   ],
+   "misconceptions": [
+    "判定平行时只比较一次项系数之比，不检查常数项之比而导致平行与重合混淆",
+    "认为两直线垂直一定满足斜率之积为 -1，忽略一条直线斜率不存在的情形",
+    "求夹角时忘了取绝对值，得出钝角或负的余弦值",
+    "解含参位置关系问题时把增根直接保留，没有回代检验是否真的平行或重合"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mhj_h1051_q1",
+     "topicId": "mhj_h1051",
+     "prompt": "判断直线 l1: 0.5x - y + 1 = 0 与直线 l2: 3x - 6y + 8 = 0 的位置关系。",
+     "question": "判断直线 l1: 0.5x - y + 1 = 0 与直线 l2: 3x - 6y + 8 = 0 的位置关系。",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两直线一次项系数之比满足 0.5 比 3 等于 -1 比 -6，但常数项之比 1 比 8 与它不相等，故两直线平行，没有公共点。",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行"
+      },
+      {
+       "label": "B",
+       "text": "相交"
+      },
+      {
+       "label": "C",
+       "text": "重合"
+      },
+      {
+       "label": "D",
+       "text": "无法判断"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1051_q2",
+     "topicId": "mhj_h1051",
+     "prompt": "求直线 y = 2x + 3 与直线 y = -2x + 1 的交点坐标。",
+     "question": "求直线 y = 2x + 3 与直线 y = -2x + 1 的交点坐标。",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "联立两方程得 2x + 3 = -2x + 1，即 4x = -2，解得 x = -1/2；代回得 y = 2，交点坐标为（-1/2，2）。",
+     "options": [
+      {
+       "label": "A",
+       "text": "（1/2，2）"
+      },
+      {
+       "label": "B",
+       "text": "（-1/2，2）"
+      },
+      {
+       "label": "C",
+       "text": "（-1/2，-2）"
+      },
+      {
+       "label": "D",
+       "text": "（1/2，4）"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1051_q3",
+     "topicId": "mhj_h1051",
+     "prompt": "已知直线 l1: y = kx + 1 与直线 l2: y = 3x - 2 平行，求实数 k 的值。",
+     "question": "已知直线 l1: y = kx + 1 与直线 l2: y = 3x - 2 平行，求实数 k 的值。",
+     "answer": "3",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "两条直线的斜率都存在，平行的充要条件是斜率相等，故 k 等于 3；此时两直线在 y 轴上的截距分别是 1 与 -2，不相等，确实是平行而不是重合。",
+     "verify": "{\"type\": \"num\", \"value\": 3}"
+    },
+    {
+     "id": "mhj_h1051_q4",
+     "topicId": "mhj_h1051",
+     "prompt": "求经过直线 x - y - 4 = 0 与 2x - 3y - 7 = 0 的交点，且与直线 2x + y + 1 = 0 平行的直线方程。",
+     "question": "求经过直线 x - y - 4 = 0 与 2x - 3y - 7 = 0 的交点，且与直线 2x + y + 1 = 0 平行的直线方程。",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "联立两方程解得交点（5，1）；与 2x + y + 1 = 0 平行可设所求方程为 2x + y + c = 0，代入交点得 10 + 1 + c = 0，即 c = -11，故方程为 2x + y - 11 = 0。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2x + y + 11 = 0"
+      },
+      {
+       "label": "B",
+       "text": "x - 2y - 3 = 0"
+      },
+      {
+       "label": "C",
+       "text": "2x + y - 11 = 0"
+      },
+      {
+       "label": "D",
+       "text": "2x - y - 9 = 0"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1051_q5",
+     "topicId": "mhj_h1051",
+     "prompt": "已知直线 l1: （a - 2）x + ay - 2 = 0 与直线 l2: （1 - a）x + （a + 1）y + 1 = 0 互相垂直，求实数 a 的值。",
+     "question": "已知直线 l1: （a - 2）x + ay - 2 = 0 与直线 l2: （1 - a）x + （a + 1）y + 1 = 0 互相垂直，求实数 a 的值。",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两直线垂直的充要条件是法向量数量积为零，即（a-2）（1-a）加上 a（a+1）等于零，展开化简得 4a - 2 = 0，故 a 等于 1/2。",
+     "options": [
+      {
+       "label": "A",
+       "text": "-1/2"
+      },
+      {
+       "label": "B",
+       "text": "-2"
+      },
+      {
+       "label": "C",
+       "text": "2"
+      },
+      {
+       "label": "D",
+       "text": "1/2"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1051_q6",
+     "topicId": "mhj_h1051",
+     "prompt": "已知直线 l1: 6x + （t - 1）y - 8 = 0 与直线 l2: （t + 4）x + （t + 6）y - 16 = 0 平行但不重合，求实数 t 的值。",
+     "question": "已知直线 l1: 6x + （t - 1）y - 8 = 0 与直线 l2: （t + 4）x + （t + 6）y - 16 = 0 平行但不重合，求实数 t 的值。",
+     "answer": "-5",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "由平行的系数关系得 6（t+6）等于（t-1）（t+4），整理得 t 的平方减 3t 减 40 等于零，解得 t 等于 8 或 -5；t 等于 8 时两方程对应系数成比例，两直线重合，故 t 等于 -5。",
+     "verify": "{\"type\": \"num\", \"value\": -5}"
+    },
+    {
+     "id": "mhj_h1051_q7",
+     "topicId": "mhj_h1051",
+     "prompt": "求直线 l1: x + 3y - 1 = 0 与直线 l2: y = 2x + 7 的夹角的余弦值。",
+     "question": "求直线 l1: x + 3y - 1 = 0 与直线 l2: y = 2x + 7 的夹角的余弦值。",
+     "answer": "√2/10",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "把 l2 化为一般式 2x - y + 7 = 0，两直线夹角的余弦等于法向量数量积的绝对值除以两个法向量模的乘积，即 1 除以根号 10 与根号 5 的积，化简得 √2/10。"
+    },
+    {
+     "id": "mhj_h1051_q8",
+     "topicId": "mhj_h1051",
+     "prompt": "已知直线 l1: （k - 3）x + （5 - k）y + 1 = 0 与直线 l2: 2（k - 3）x - 2y + （2 - k） = 0 互相垂直，求实数 k 的值。",
+     "question": "已知直线 l1: （k - 3）x + （5 - k）y + 1 = 0 与直线 l2: 2（k - 3）x - 2y + （2 - k） = 0 互相垂直，求实数 k 的值。",
+     "answer": "k = 1 或 k = 4",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "两直线的法向量分别是（k-3，5-k）与（2（k-3），-2），由数量积为零得 2（k-3）的平方减去 2（5-k）等于零，化简为 k 的平方减 5k 加 4 等于零，解得 k 等于 1 或 k 等于 4。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1052",
+   "page": 32,
+   "description": "掌握点到直线的距离公式与两条平行线间的距离公式，理解公式由法向量投影推导的思路，能解决与距离有关的度量与最值问题。",
+   "mastery_criteria": [
+    "能直接用点到直线的距离公式求点线距离，包括直线为水平线或竖直线的情形",
+    "能把平行线化为同系数的一般式，用常数项之差求两平行线间的距离",
+    "能用距离公式处理含参数问题与最短距离问题"
+   ],
+   "misconceptions": [
+    "代入距离公式时没有先把直线方程化为一般式，或漏掉分子的绝对值",
+    "求两平行线距离时直接把常数项相减，没有先把 x、y 的系数化成相同",
+    "认为点线距离可以为负数，或用带符号的值参与比较大小",
+    "把点到直线上点的最短距离误当成两点间距离，没有转化为点到直线的距离"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mhj_h1052_q1",
+     "topicId": "mhj_h1052",
+     "prompt": "求点 P（1，2）到直线 l: x + 2y + 5 = 0 的距离。",
+     "question": "求点 P（1，2）到直线 l: x + 2y + 5 = 0 的距离。",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "由点到直线的距离公式，分子是 1 加 4 加 5 的绝对值 10，分母是 1 与 4 之和的算术平方根即根号 5，故距离为 2√5。",
+     "options": [
+      {
+       "label": "A",
+       "text": "√5"
+      },
+      {
+       "label": "B",
+       "text": "2√5"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "10"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1052_q2",
+     "topicId": "mhj_h1052",
+     "prompt": "求点 M（-2，-1）到直线 l: x = 3 的距离。",
+     "question": "求点 M（-2，-1）到直线 l: x = 3 的距离。",
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "直线 x 等于 3 与 y 轴平行，点到这条直线的距离等于两点横坐标之差的绝对值，即 3 减去 -2 得 5。",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "5"
+      },
+      {
+       "label": "D",
+       "text": "4"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1052_q3",
+     "topicId": "mhj_h1052",
+     "prompt": "求点 M（-2，-1）到直线 l: y = 3 的距离。",
+     "question": "求点 M（-2，-1）到直线 l: y = 3 的距离。",
+     "answer": "4",
+     "type": "numeric",
+     "difficulty": "basic",
+     "explanation": "直线 y 等于 3 与 x 轴平行，点到这条直线的距离等于纵坐标之差的绝对值，即 3 减去 -1 得 4。",
+     "verify": "{\"type\": \"op\", \"op\": \"sub\", \"values\": [{\"type\": \"num\", \"value\": 3}, {\"type\": \"num\", \"value\": -1}]}"
+    },
+    {
+     "id": "mhj_h1052_q4",
+     "topicId": "mhj_h1052",
+     "prompt": "求平行直线 l1: √2x + y + 1 = 0 与 l2: √2x + y + 4 = 0 之间的距离。",
+     "question": "求平行直线 l1: √2x + y + 1 = 0 与 l2: √2x + y + 4 = 0 之间的距离。",
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两平行线间的距离等于常数项之差的绝对值除以根号下 a 方加 b 方，即 3 除以根号 3，得 √3。",
+     "options": [
+      {
+       "label": "A",
+       "text": "√3"
+      },
+      {
+       "label": "B",
+       "text": "3"
+      },
+      {
+       "label": "C",
+       "text": "√2"
+      },
+      {
+       "label": "D",
+       "text": "3/2"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1052_q5",
+     "topicId": "mhj_h1052",
+     "prompt": "已知直线 2x - y + a = 0 与直线 -4x + 2y + 1 = 0 之间的距离为 7√5/10，求实数 a 的值。",
+     "question": "已知直线 2x - y + a = 0 与直线 -4x + 2y + 1 = 0 之间的距离为 7√5/10，求实数 a 的值。",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把第二条直线化为 2x - y - 1/2 = 0，两直线系数相同；由距离公式得 a 加 1/2 的绝对值除以根号 5 等于 7√5/10，即 a 加 1/2 的绝对值为 7/2，解得 a 等于 3 或 -4。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "-4"
+      },
+      {
+       "label": "C",
+       "text": "3 或 4"
+      },
+      {
+       "label": "D",
+       "text": "3 或 -4"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1052_q6",
+     "topicId": "mhj_h1052",
+     "prompt": "在直角三角形 ABC 中，角 A 等于 π/2，AB 的长为 6，AC 的长为 8，求三角形的重心 G 到斜边 BC 所在直线的距离。",
+     "question": "在直角三角形 ABC 中，角 A 等于 π/2，AB 的长为 6，AC 的长为 8，求三角形的重心 G 到斜边 BC 所在直线的距离。",
+     "answer": "1.6",
+     "type": "numeric",
+     "difficulty": "standard",
+     "explanation": "以 A 为原点、两条直角边所在直线为坐标轴建系，得 B（6，0）、C（0，8），重心 G 的坐标为（2，8/3）；斜边 BC 的方程是 4x + 3y - 24 = 0，代入距离公式得 8/5，即 1.6。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 8}, {\"type\": \"num\", \"value\": 5}]}"
+    },
+    {
+     "id": "mhj_h1052_q7",
+     "topicId": "mhj_h1052",
+     "prompt": "求两条平行线 2x - 3y + 1 = 0 与 4x - 6y + 1 = 0 之间的距离。",
+     "question": "求两条平行线 2x - 3y + 1 = 0 与 4x - 6y + 1 = 0 之间的距离。",
+     "answer": "√13/26",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "先把第二条直线化为 2x - 3y + 1/2 = 0，使两条直线的 x、y 系数相同；距离等于 1 减 1/2 的绝对值除以根号 13，即 1 除以 2 倍根号 13，化简得 √13/26。"
+    },
+    {
+     "id": "mhj_h1052_q8",
+     "topicId": "mhj_h1052",
+     "prompt": "已知点 P 是直线 3x - 4y + 2 = 0 上的任意一点，求点 P 与点 A（3，-1）之间距离的最小值。",
+     "question": "已知点 P 是直线 3x - 4y + 2 = 0 上的任意一点，求点 P 与点 A（3，-1）之间距离的最小值。",
+     "answer": "3",
+     "type": "numeric",
+     "difficulty": "hard",
+     "explanation": "点 A 与直线上点的距离的最小值就是点 A 到该直线的距离；分子为 3 乘 3 减 4 乘 -1 再加 2 的绝对值，即 15，分母为根号下 9 加 16 即 5，故最小值为 3。",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 15}, {\"type\": \"num\", \"value\": 5}]}"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1053",
+   "page": 42,
+   "description": "从圆的标准方程出发，推出圆的一般方程与判别式 D²+E²-4F 的三种情形，用待定系数法求过三点的圆，并用圆心到直线的距离或判别式判断直线与圆、圆与圆的位置关系，求切线方程与弦中点轨迹。",
+   "mastery_criteria": [
+    "能由圆心与半径写出圆的标准方程，并化为一般方程",
+    "能用圆心到直线的距离与半径比较，判断直线与圆的位置关系",
+    "能用圆心距与半径和、半径差判断两圆的五种位置关系"
+   ],
+   "misconceptions": [
+    "把一般方程中 D²+E²-4F=0 的情形仍当作圆，其实它只表示一个点",
+    "求过圆外一点的切线时只算出有斜率的一条，漏掉斜率不存在的直线",
+    "判断两圆位置关系时只比较圆心距与两半径之和，忽略半径差的绝对值"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mhj_h1053_q1",
+     "topicId": "mhj_h1053",
+     "prompt": "圆 (x-2)²+(y+1)²=9 的圆心坐标与半径分别是多少？",
+     "question": "圆 (x-2)²+(y+1)²=9 的圆心坐标与半径分别是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "圆心 (2,-1)，半径 3"
+      },
+      {
+       "label": "B",
+       "text": "圆心 (-2,1)，半径 3"
+      },
+      {
+       "label": "C",
+       "text": "圆心 (2,-1)，半径 9"
+      },
+      {
+       "label": "D",
+       "text": "圆心 (-2,1)，半径 9"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "圆的标准方程 (x-a)²+(y-b)²=r² 中圆心为 (a,b)、半径为 r，所以圆心是 (2,-1)，半径是 3，注意半径是右端常数的算术平方根而不是常数本身。"
+    },
+    {
+     "id": "mhj_h1053_q2",
+     "topicId": "mhj_h1053",
+     "prompt": "方程 x²+y²+Dx+Ey+F=0 表示一个圆的充要条件是什么？",
+     "question": "方程 x²+y²+Dx+Ey+F=0 表示一个圆的充要条件是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "D²+E²-4F=0"
+      },
+      {
+       "label": "B",
+       "text": "D²+E²-4F<0"
+      },
+      {
+       "label": "C",
+       "text": "D²+E²-4F>0"
+      },
+      {
+       "label": "D",
+       "text": "D²+E²-4F≥0"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "配方得 (x+D/2)²+(y+E/2)²=(D²+E²-4F)/4。当 D²+E²-4F 大于 0 时表示圆；等于 0 时只表示一个点；小于 0 时不表示任何图形。因此充要条件是 D²+E²-4F 大于 0。"
+    },
+    {
+     "id": "mhj_h1053_q3",
+     "topicId": "mhj_h1053",
+     "prompt": "求经过 A(1,0)、B(3,0)、C(2,2) 三点的圆 x²+y²+Dx+Ey+F=0，其中 D、E、F 是待定常数。求 D+E+F 的值。",
+     "question": "求经过 A(1,0)、B(3,0)、C(2,2) 三点的圆 x²+y²+Dx+Ey+F=0，其中 D、E、F 是待定常数。求 D+E+F 的值。",
+     "answer": -2.5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": -2.5}",
+     "explanation": "把三点坐标分别代入得 D+F+1=0，3D+F+9=0，2D+2E+F+8=0，解得 D=-4，E=-3/2，F=3，所以 D+E+F 等于 -4 减 1.5 加 3，结果是 -2.5。"
+    },
+    {
+     "id": "mhj_h1053_q4",
+     "topicId": "mhj_h1053",
+     "prompt": "已知点 M(x0,y0) 在圆 x²+y²=4 上，求过点 M 的该圆的切线方程，结果用 x0、y0 表示。",
+     "question": "已知点 M(x0,y0) 在圆 x²+y²=4 上，求过点 M 的该圆的切线方程，结果用 x0、y0 表示。",
+     "answer": "x0x+y0y=4",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "切点处半径 OM 的方向向量 (x0,y0) 就是切线的法向量，由点法式得 x0(x-x0)+y0(y-y0)=0，展开后用 x0²+y0²=4 化简，得到 x0x+y0y=4。"
+    },
+    {
+     "id": "mhj_h1053_q5",
+     "topicId": "mhj_h1053",
+     "prompt": "当 b 在什么范围内取值时，直线 2x-y+b=0 与圆 x²+y²=9 有两个公共点？",
+     "question": "当 b 在什么范围内取值时，直线 2x-y+b=0 与圆 x²+y²=9 有两个公共点？",
+     "options": [
+      {
+       "label": "A",
+       "text": "-3<b<3"
+      },
+      {
+       "label": "B",
+       "text": "-3√5<b<3√5"
+      },
+      {
+       "label": "C",
+       "text": "b>3√5 或 b<-3√5"
+      },
+      {
+       "label": "D",
+       "text": "b=3√5 或 b=-3√5"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把 y=2x+b 代入圆方程得 5x²+4bx+b²-9=0，判别式为 180-4b²，即 -4(b²-45)。由判别式大于 0 得 b² 小于 45，即 -3√5 小于 b 小于 3√5。"
+    },
+    {
+     "id": "mhj_h1053_q6",
+     "topicId": "mhj_h1053",
+     "prompt": "已知一个圆与 y 轴相切，它的圆心在直线 x-3y=0 上，且直线 y=x 被该圆截得的弦长为 2√7。求这个圆的半径。",
+     "question": "已知一个圆与 y 轴相切，它的圆心在直线 x-3y=0 上，且直线 y=x 被该圆截得的弦长为 2√7。求这个圆的半径。",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "hard",
+     "verify": "{\"type\": \"num\", \"value\": 3}",
+     "explanation": "设圆心为 (3b,b)，与 y 轴相切给出半径 r=3|b|；圆心到直线 x-y=0 的距离 d=√2|b|。由勾股关系 r²-d²=7 得 9b²-2b²=7b²=7，故 b²=1，半径 r=3。"
+    },
+    {
+     "id": "mhj_h1053_q7",
+     "topicId": "mhj_h1053",
+     "prompt": "设两圆的半径分别为 r1、r2，且 r1 不等于 r2，圆心距为 d。下列判断正确的是哪一个？",
+     "question": "设两圆的半径分别为 r1、r2，且 r1 不等于 r2，圆心距为 d。下列判断正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "d=r1+r2 时两圆内切"
+      },
+      {
+       "label": "B",
+       "text": "d=|r1-r2| 时两圆外离"
+      },
+      {
+       "label": "C",
+       "text": "d<|r1-r2| 时两圆相交"
+      },
+      {
+       "label": "D",
+       "text": "|r1-r2|<d<r1+r2 时两圆相交"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "教材给出的判定是：d 小于半径差时内含，d 等于半径差时内切，d 介于半径差与半径和之间时相交，d 等于半径和时外切，d 大于半径和时外离。因此只有第四项正确。"
+    },
+    {
+     "id": "mhj_h1053_q8",
+     "topicId": "mhj_h1053",
+     "prompt": "已知两点 P(3,4)、Q(-5,6)，求以线段 PQ 为直径的圆的标准方程。",
+     "question": "已知两点 P(3,4)、Q(-5,6)，求以线段 PQ 为直径的圆的标准方程。",
+     "answer": "(x+1)²+(y-5)²=17",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "圆心是 PQ 的中点，坐标为 (-1,5)；半径等于 PQ 长度的一半，即 2√17 除以 2 得 √17。故所求圆的标准方程为 (x+1)²+(y-5)²=17。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1054",
+   "page": 56,
+   "description": "由绳子画图实验给出椭圆的定义，推导焦点在坐标轴上的两种标准方程，讨论对称性、顶点、范围与离心率，并借助待定系数法、卫星轨道与直线相切的条件解决求方程与判位置的问题。",
+   "mastery_criteria": [
+    "能根据焦点位置写出椭圆的标准方程，并求 a、b、c",
+    "能用离心率刻画椭圆的扁平程度，并据此比较两个椭圆",
+    "能用判别式判断直线与椭圆的位置关系并求切线条件"
+   ],
+   "misconceptions": [
+    "把定义中的常数与焦距的关系写成 2a 小于 2c，混淆了椭圆与不存在轨迹的情形",
+    "求标准方程时没有先判断焦点在哪条坐标轴上，只写一种形式而漏解",
+    "把椭圆中 a、b、c 的关系误写成 c²=a²+b²，与双曲线混淆"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1054_q1",
+     "topicId": "mhj_h1054",
+     "prompt": "平面内到两个定点 F1、F2 的距离之和等于常数 2a 的点的轨迹是椭圆，其中的常数必须满足什么条件？",
+     "question": "平面内到两个定点 F1、F2 的距离之和等于常数 2a 的点的轨迹是椭圆，其中的常数必须满足什么条件？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2a 大于两定点间的距离"
+      },
+      {
+       "label": "B",
+       "text": "2a 等于两定点间的距离"
+      },
+      {
+       "label": "C",
+       "text": "2a 小于两定点间的距离"
+      },
+      {
+       "label": "D",
+       "text": "2a 可以取任意正数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材定义要求 2a 大于两定点间的距离。若 2a 等于焦距，轨迹退化为线段 F1F2；若 2a 小于焦距，这样的点不存在，轨迹为空集。"
+    },
+    {
+     "id": "mhj_h1054_q2",
+     "topicId": "mhj_h1054",
+     "prompt": "椭圆 x²/25+y²/16=1 的两个焦点坐标是什么？",
+     "question": "椭圆 x²/25+y²/16=1 的两个焦点坐标是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(0,-3) 与 (0,3)"
+      },
+      {
+       "label": "B",
+       "text": "(-4,0) 与 (4,0)"
+      },
+      {
+       "label": "C",
+       "text": "(-3,0) 与 (3,0)"
+      },
+      {
+       "label": "D",
+       "text": "(0,-4) 与 (0,4)"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "这里 a²=25，b²=16，故 c²=a²-b²=9，c=3。由于 a² 出现在 x² 的分母上，焦点在 x 轴上，坐标为 (-3,0) 与 (3,0)。"
+    },
+    {
+     "id": "mhj_h1054_q3",
+     "topicId": "mhj_h1054",
+     "prompt": "已知椭圆的焦点在 x 轴上，焦距为 2√6，且经过点 (√3,√2)。求该椭圆标准方程中 b² 的值。",
+     "question": "已知椭圆的焦点在 x 轴上，焦距为 2√6，且经过点 (√3,√2)。求该椭圆标准方程中 b² 的值。",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 3}",
+     "explanation": "由 2c=2√6 得 c=√6，故 a²=b²+6。把点代入 x²/a²+y²/b²=1 得 3/(b²+6)+2/b²=1，去分母整理得 b⁴+b²-12=0，解得 b²=3。"
+    },
+    {
+     "id": "mhj_h1054_q4",
+     "topicId": "mhj_h1054",
+     "prompt": "求椭圆 9x²+25y²=225 的离心率与焦点坐标。",
+     "question": "求椭圆 9x²+25y²=225 的离心率与焦点坐标。",
+     "answer": "4/5",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "两边除以 225 化为标准方程 x²/25+y²/9=1，得 a=5，b=3，于是 c=4，离心率 e=c/a=4/5。"
+    },
+    {
+     "id": "mhj_h1054_q5",
+     "topicId": "mhj_h1054",
+     "prompt": "关于椭圆离心率与形状的关系，下列说法正确的是哪一个？",
+     "question": "关于椭圆离心率与形状的关系，下列说法正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "离心率越接近 1，椭圆越接近圆"
+      },
+      {
+       "label": "B",
+       "text": "离心率越接近 0，椭圆越接近圆"
+      },
+      {
+       "label": "C",
+       "text": "离心率越大，椭圆的长轴越短"
+      },
+      {
+       "label": "D",
+       "text": "离心率与椭圆的扁平程度没有关系"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "在 a 确定的条件下，离心率越接近 1，c 越接近 a，b 越小，椭圆越扁；离心率越接近 0，b 越接近 a，椭圆越接近圆。离心率反映的是 c 与 a 的比值，与长轴的长短没有直接关系。"
+    },
+    {
+     "id": "mhj_h1054_q6",
+     "topicId": "mhj_h1054",
+     "prompt": "直线 2x-y=b 与椭圆 x²/75+y²/25=1 有且只有一个公共点，求 b² 的值。",
+     "question": "直线 2x-y=b 与椭圆 x²/75+y²/25=1 有且只有一个公共点，求 b² 的值。",
+     "answer": 325,
+     "type": "numeric",
+     "difficulty": "hard",
+     "verify": "{\"type\": \"num\", \"value\": 325}",
+     "explanation": "把 y=2x-b 代入椭圆方程并整理得 13x²-12bx+3b²-75=0，相切要求判别式为 0，即 144b²-52(3b²-75)=0，化简得 12(325-b²)=0，故 b²=325。"
+    },
+    {
+     "id": "mhj_h1054_q7",
+     "topicId": "mhj_h1054",
+     "prompt": "若方程 16x²+ky²=16k 表示焦点在 y 轴上的椭圆，实数 k 的取值范围是什么？",
+     "question": "若方程 16x²+ky²=16k 表示焦点在 y 轴上的椭圆，实数 k 的取值范围是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "k>16"
+      },
+      {
+       "label": "B",
+       "text": "k<0"
+      },
+      {
+       "label": "C",
+       "text": "k>0 且 k≠16"
+      },
+      {
+       "label": "D",
+       "text": "0<k<16"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "两边除以 16k 化为 x²/k+y²/16=1，由表示椭圆知 k 大于 0。焦点在 y 轴上要求 y² 的分母较大，即 16 大于 k，合起来得 0 小于 k 小于 16。"
+    },
+    {
+     "id": "mhj_h1054_q8",
+     "topicId": "mhj_h1054",
+     "prompt": "已知椭圆以坐标原点为中心，一个焦点的坐标为 (√2,0)，且长轴长是短轴长的 √3 倍。求该椭圆的标准方程。",
+     "question": "已知椭圆以坐标原点为中心，一个焦点的坐标为 (√2,0)，且长轴长是短轴长的 √3 倍。求该椭圆的标准方程。",
+     "answer": "x²/3+y²=1",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "由长轴长是短轴长的 √3 倍得 a=√3 b；焦点在 x 轴上，c=√2，且 a²-b²=c²，所以 3b²-b²=2，b²=1，a²=3，方程为 x²/3+y²=1。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1055",
+   "page": 64,
+   "description": "由拉链作图与距离之差给出双曲线的定义，推导焦点在坐标轴上的标准方程，讨论实轴、虚轴、范围、渐近线与离心率，并说明距离之差等于焦距时轨迹退化为射线。",
+   "mastery_criteria": [
+    "能由 a、b、c 的关系写出双曲线的标准方程、焦点与渐近线",
+    "能根据距离之差的正负与大小判断轨迹是双曲线的一支还是射线",
+    "能用离心率与渐近线斜率的平方关系比较双曲线开口的宽窄"
+   ],
+   "misconceptions": [
+    "把双曲线中 a、b、c 的关系误写成 b²=a²-c²，与椭圆的公式混用",
+    "忽略定义中的绝对值，只写距离之差等于 2a 而漏掉另一支或漏写横坐标范围",
+    "把虚轴的两个端点当成双曲线上的顶点，错误地认为曲线经过 (0,±b)"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1055_q1",
+     "topicId": "mhj_h1055",
+     "prompt": "平面内到两个定点 F1、F2 的距离之差的绝对值等于常数 2a 的点的轨迹是双曲线，其中的常数应满足什么条件？",
+     "question": "平面内到两个定点 F1、F2 的距离之差的绝对值等于常数 2a 的点的轨迹是双曲线，其中的常数应满足什么条件？",
+     "options": [
+      {
+       "label": "A",
+       "text": "2a 大于两定点间的距离"
+      },
+      {
+       "label": "B",
+       "text": "2a 大于 0 且小于两定点间的距离"
+      },
+      {
+       "label": "C",
+       "text": "2a 等于两定点间的距离"
+      },
+      {
+       "label": "D",
+       "text": "2a 可以取任意正数"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材定义要求 0 小于 2a 小于两定点间的距离。当 2a 等于焦距时，轨迹退化为两条射线；当 2a 大于焦距时，轨迹不存在，因此必须加上这个限制。"
+    },
+    {
+     "id": "mhj_h1055_q2",
+     "topicId": "mhj_h1055",
+     "prompt": "双曲线 16x²-9y²=144 的两条渐近线方程是什么？",
+     "question": "双曲线 16x²-9y²=144 的两条渐近线方程是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y=4x/3 与 y=-4x/3"
+      },
+      {
+       "label": "B",
+       "text": "y=3x/4 与 y=-3x/4"
+      },
+      {
+       "label": "C",
+       "text": "y=16x/9 与 y=-16x/9"
+      },
+      {
+       "label": "D",
+       "text": "y=9x/16 与 y=-9x/16"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "两边除以 144 化为标准方程 x²/9-y²/16=1，得 a=3，b=4，渐近线为 y=±(b/a)x，即 y=4x/3 与 y=-4x/3。"
+    },
+    {
+     "id": "mhj_h1055_q3",
+     "topicId": "mhj_h1055",
+     "prompt": "已知双曲线的焦距为 6，双曲线上的点到两个焦点距离之差的绝对值等于 4。求该双曲线标准方程中 b² 的值。",
+     "question": "已知双曲线的焦距为 6，双曲线上的点到两个焦点距离之差的绝对值等于 4。求该双曲线标准方程中 b² 的值。",
+     "answer": 5,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 5}",
+     "explanation": "由焦距 2c 等于 6 得 c 等于 3，由距离之差的绝对值 2a 等于 4 得 a 等于 2。双曲线中 a、b、c 满足 c²=a²+b²，所以 b²=c²-a²=9-4=5。"
+    },
+    {
+     "id": "mhj_h1055_q4",
+     "topicId": "mhj_h1055",
+     "prompt": "求双曲线 x²/9-y²/16=1 的离心率。",
+     "question": "求双曲线 x²/9-y²/16=1 的离心率。",
+     "answer": "5/3",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "由标准方程看出 a²=9，b²=16，于是 c²=a²+b²=25，c=5。离心率等于 c 与 a 的比，即 e=c/a=5/3。"
+    },
+    {
+     "id": "mhj_h1055_q5",
+     "topicId": "mhj_h1055",
+     "prompt": "已知点 M 到 F1(-3,0) 的距离减去它到 F2(3,0) 的距离等于 4，则点 M 的轨迹是什么？",
+     "question": "已知点 M 到 F1(-3,0) 的距离减去它到 F2(3,0) 的距离等于 4，则点 M 的轨迹是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "双曲线的左支，方程为 x²/4-y²/5=1 且 x≤-2"
+      },
+      {
+       "label": "B",
+       "text": "双曲线的两支，方程为 x²/4-y²/5=1"
+      },
+      {
+       "label": "C",
+       "text": "双曲线的右支，方程为 x²/4-y²/5=1 且 x≥2"
+      },
+      {
+       "label": "D",
+       "text": "一条射线，方程为 y=0 且 x≥3"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "距离之差是 4 且 4 小于焦距 6，但这里没有加绝对值，差为正说明点到 F1 更远、离 F2 更近，所以只取靠近 F2 的右支。由 c=3、a=2 得 b²=5，方程为 x²/4-y²/5=1 且 x 大于或等于 2。"
+    },
+    {
+     "id": "mhj_h1055_q6",
+     "topicId": "mhj_h1055",
+     "prompt": "已知离心率为 5/3 的双曲线与椭圆 x²/40+y²/15=1 有公共焦点，且焦点在 x 轴上。求该双曲线标准方程中 b² 的值。",
+     "question": "已知离心率为 5/3 的双曲线与椭圆 x²/40+y²/15=1 有公共焦点，且焦点在 x 轴上。求该双曲线标准方程中 b² 的值。",
+     "answer": 16,
+     "type": "numeric",
+     "difficulty": "hard",
+     "verify": "{\"type\": \"num\", \"value\": 16}",
+     "explanation": "椭圆中 c²=40-15=25，故 c=5，公共焦点为 (-5,0) 与 (5,0)。由双曲线离心率 e=c/a=5/3 得 a=3，再由 b²=c²-a²=25-9=16。"
+    },
+    {
+     "id": "mhj_h1055_q7",
+     "topicId": "mhj_h1055",
+     "prompt": "对双曲线 x²-y²=1 与直线 y=kx，下列结论正确的是哪一个？",
+     "question": "对双曲线 x²-y²=1 与直线 y=kx，下列结论正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "当 |k|<1 时只有一个公共点"
+      },
+      {
+       "label": "B",
+       "text": "当 |k|≥1 时有两个公共点"
+      },
+      {
+       "label": "C",
+       "text": "存在某个 k 使直线与双曲线只有一个公共点"
+      },
+      {
+       "label": "D",
+       "text": "当 |k|<1 时有两个公共点，当 |k|≥1 时没有公共点"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "把直线方程代入双曲线方程得 (1-k²)x²=1。当 |k| 小于 1 时方程有两个不同的实根，直线与双曲线有两个公共点；当 |k| 大于或等于 1 时方程无实根，没有公共点。因此不存在只有一个公共点的情形。"
+    },
+    {
+     "id": "mhj_h1055_q8",
+     "topicId": "mhj_h1055",
+     "prompt": "已知双曲线过点 P(4,3)，它的一条渐近线方程为 y=x/2，求该双曲线的标准方程。",
+     "question": "已知双曲线过点 P(4,3)，它的一条渐近线方程为 y=x/2，求该双曲线的标准方程。",
+     "answer": "y²/5-x²/20=1",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "渐近线在 x=4 处的纵坐标为 2，小于点 P 的纵坐标 3，说明点位于渐近线上方，焦点在 y 轴上。设方程为 y²/a²-x²/b²=1，由 a/b=1/2 令 a=k，b=2k，代入点得 9/k²-16/(4k²)=1，解得 k²=5，故方程为 y²/5-x²/20=1。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1056",
+   "page": 74,
+   "description": "由直尺与三角板的作图过程给出抛物线的定义，推导四种标准方程，讨论对称轴、范围与开口大小，用定义把焦半径转化为到准线的距离求焦点弦长，并处理只有一个公共点的直线与光学应用。",
+   "mastery_criteria": [
+    "能由抛物线的标准方程写出焦点坐标与准线方程",
+    "会用定义把抛物线上的点到焦点的距离转化为到准线的距离",
+    "能判断过定点的直线与抛物线只有一个公共点的条数"
+   ],
+   "misconceptions": [
+    "把焦点坐标写成 (p,0) 或把准线写成 x=-p，漏掉除以 2",
+    "认为与抛物线只有一个公共点的直线一定是抛物线的切线",
+    "焦点弦长直接用两根横坐标之和，漏掉常数 p"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1056_q1",
+     "topicId": "mhj_h1056",
+     "prompt": "抛物线 y²=2px（p>0）的准线方程是什么？",
+     "question": "抛物线 y²=2px（p>0）的准线方程是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x=p/2"
+      },
+      {
+       "label": "B",
+       "text": "x=-p"
+      },
+      {
+       "label": "C",
+       "text": "x=-p/2"
+      },
+      {
+       "label": "D",
+       "text": "y=-p/2"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "抛物线顶点在原点，焦点到准线的距离为 p，焦点为 (p/2,0)，准线与焦点关于顶点对称，故准线为 x=-p/2。"
+    },
+    {
+     "id": "mhj_h1056_q2",
+     "topicId": "mhj_h1056",
+     "prompt": "抛物线的定义中要求定点 F 不在定直线 l 上，这样要求的理由是什么？",
+     "question": "抛物线的定义中要求定点 F 不在定直线 l 上，这样要求的理由是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "若 F 在 l 上，满足条件的点组成过 F 且垂直于 l 的直线"
+      },
+      {
+       "label": "B",
+       "text": "若 F 在 l 上，这样的点根本不存在"
+      },
+      {
+       "label": "C",
+       "text": "若 F 在 l 上，轨迹仍是抛物线但开口变大"
+      },
+      {
+       "label": "D",
+       "text": "这只是书写习惯，不影响轨迹的形状"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "若定点在定直线上，到该点的距离与到该直线的距离相等的点集，恰好是过该点且与定直线垂直的一条直线，图形退化，不再是抛物线，所以定义中必须排除这种情形。"
+    },
+    {
+     "id": "mhj_h1056_q3",
+     "topicId": "mhj_h1056",
+     "prompt": "汽车前灯反射镜与轴截面的交线是抛物线的一部分，灯泡位于抛物线的焦点处。已知灯口直径为 24 cm，灯深为 10 cm，求灯泡与反射镜顶点的距离，以 cm 为单位。",
+     "question": "汽车前灯反射镜与轴截面的交线是抛物线的一部分，灯泡位于抛物线的焦点处。已知灯口直径为 24 cm，灯深为 10 cm，求灯泡与反射镜顶点的距离，以 cm 为单位。",
+     "answer": 3.6,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 3.6}",
+     "explanation": "以顶点为原点、对称轴为 x 轴，设方程为 y²=2px。灯口边缘的坐标为 (10,12)，代入得 144=20p，p=7.2，焦点坐标为 (3.6,0)，故灯泡与顶点的距离为 3.6 cm。"
+    },
+    {
+     "id": "mhj_h1056_q4",
+     "topicId": "mhj_h1056",
+     "prompt": "求抛物线 y²=4x 上到焦点的距离等于 9 的点的坐标。",
+     "question": "求抛物线 y²=4x 上到焦点的距离等于 9 的点的坐标。",
+     "answer": "(8,4√2) 或 (8,-4√2)",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "抛物线 y²=4x 的焦点为 (1,0)，准线为 x=-1。由定义，点到焦点的距离等于它到准线的距离，故 x+1=9，x=8，代入方程得 y²=32，y=±4√2。"
+    },
+    {
+     "id": "mhj_h1056_q5",
+     "topicId": "mhj_h1056",
+     "prompt": "过点 P(2,4) 且与抛物线 y²=8x 有且只有一个公共点的直线共有几条？",
+     "question": "过点 P(2,4) 且与抛物线 y²=8x 有且只有一个公共点的直线共有几条？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 条"
+      },
+      {
+       "label": "B",
+       "text": "2 条"
+      },
+      {
+       "label": "C",
+       "text": "3 条"
+      },
+      {
+       "label": "D",
+       "text": "4 条"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "点 P(2,4) 满足 16=16，在抛物线上。过它的切线只有 1 条；平行于对称轴的直线 y=4 与抛物线也只有一个公共点，但它不是切线；其余过 P 的直线与该抛物线都有两个公共点，所以共 2 条。"
+    },
+    {
+     "id": "mhj_h1056_q6",
+     "topicId": "mhj_h1056",
+     "prompt": "若抛物线 y²=2x 上的两点 A、B 到焦点 F 的距离之和是 5，求线段 AB 的中点的横坐标。",
+     "question": "若抛物线 y²=2x 上的两点 A、B 到焦点 F 的距离之和是 5，求线段 AB 的中点的横坐标。",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "hard",
+     "verify": "{\"type\": \"num\", \"value\": 2}",
+     "explanation": "抛物线 y²=2x 中 p=1，焦点为 (1/2,0)，准线为 x=-1/2。由定义 |AF|=x1+1/2，|BF|=x2+1/2，两式相加得 x1+x2+1=5，故 x1+x2=4，中点横坐标为 2。"
+    },
+    {
+     "id": "mhj_h1056_q7",
+     "topicId": "mhj_h1056",
+     "prompt": "过点 M(0,1) 且与抛物线 y²=2x 只有一个公共点的直线共有几条？",
+     "question": "过点 M(0,1) 且与抛物线 y²=2x 只有一个公共点的直线共有几条？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1 条"
+      },
+      {
+       "label": "B",
+       "text": "2 条"
+      },
+      {
+       "label": "C",
+       "text": "4 条"
+      },
+      {
+       "label": "D",
+       "text": "3 条"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "共 3 条：直线 y=1 平行于对称轴，与抛物线只有一个公共点；直线 y=x/2+1 与抛物线相切；直线 x=0 经过顶点，与抛物线也只有一个公共点。这说明只有一个公共点并不等于相切。"
+    },
+    {
+     "id": "mhj_h1056_q8",
+     "topicId": "mhj_h1056",
+     "prompt": "求顶点在坐标原点、焦点在坐标轴上且经过点 M(-2,-4) 的抛物线的标准方程。",
+     "question": "求顶点在坐标原点、焦点在坐标轴上且经过点 M(-2,-4) 的抛物线的标准方程。",
+     "answer": "y²=-8x 或 x²=-y",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "点 M 在第三象限。若焦点在 x 轴上，抛物线开口向左，设 y²=-2px，代入得 16=4p，p=4，方程为 y²=-8x；若焦点在 y 轴上，开口向下，设 x²=-2py，代入得 4=8p，p=1/2，方程为 x²=-y。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1057",
+   "page": 81,
+   "description": "给出曲线方程定义中必须同时成立的两个条件，指出前一章与本章推导标准方程时都做过正反两个方向的验证，并用两个反例说明只满足其中一个条件时方程不能称为曲线的方程。",
+   "mastery_criteria": [
+    "能完整说出方程是曲线方程需要满足的两个条件",
+    "能用具体反例说明某个方程不是给定曲线的方程"
+   ],
+   "misconceptions": [
+    "只验证曲线上的点满足方程，忽略方程的解所对应的点是否都在曲线上",
+    "把 x²-y²=0 直接当成直线 y=x 的方程，漏掉另一条直线",
+    "认为方程 x=√(1-y²) 与圆 x²+y²=1 完全等价，忽略半圆的限制"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1057_q1",
+     "topicId": "mhj_h1057",
+     "prompt": "要确认二元方程 F(x,y)=0 是平面曲线 C 的方程，必须验证哪两个条件？",
+     "question": "要确认二元方程 F(x,y)=0 是平面曲线 C 的方程，必须验证哪两个条件？",
+     "options": [
+      {
+       "label": "A",
+       "text": "曲线 C 上点的坐标都是方程的解，且以方程的解为坐标的点都在曲线 C 上"
+      },
+      {
+       "label": "B",
+       "text": "方程有无穷多组解，且曲线 C 上有无穷多个点"
+      },
+      {
+       "label": "C",
+       "text": "曲线 C 上的点都满足方程，且方程的次数为二次"
+      },
+      {
+       "label": "D",
+       "text": "方程的解都是实数，且曲线 C 关于坐标轴对称"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材把曲线方程的定义归结为两条：曲线 C 上任意一点的坐标都是方程的解，以方程的解为坐标的点都在曲线 C 上，两者缺一不可，只满足其一不能称为曲线的方程。"
+    },
+    {
+     "id": "mhj_h1057_q2",
+     "topicId": "mhj_h1057",
+     "prompt": "方程 x²-y²=0 所表示的图形是什么？",
+     "question": "方程 x²-y²=0 所表示的图形是什么？",
+     "options": [
+      {
+       "label": "A",
+       "text": "过原点的直线 y=x"
+      },
+      {
+       "label": "B",
+       "text": "只含原点的点集"
+      },
+      {
+       "label": "C",
+       "text": "两条相交直线 y=x 与 y=-x"
+      },
+      {
+       "label": "D",
+       "text": "一个圆"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "x²-y²=0 可分解为 (x-y)(x+y)=0，即 y=x 或 y=-x，因此图形是两条过原点且互相垂直的直线，而不是单独一条直线。"
+    },
+    {
+     "id": "mhj_h1057_q3",
+     "topicId": "mhj_h1057",
+     "prompt": "方程 x=√(1-y²) 所表示的图形上，横坐标为 0 的点共有几个？",
+     "question": "方程 x=√(1-y²) 所表示的图形上，横坐标为 0 的点共有几个？",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 2}",
+     "explanation": "令 x=0 得 √(1-y²)=0，两边平方得 1-y²=0，故 y=1 或 y=-1，图形上有 (0,1) 与 (0,-1) 两个点，横坐标为 0 的点共 2 个。"
+    },
+    {
+     "id": "mhj_h1057_q4",
+     "topicId": "mhj_h1057",
+     "prompt": "推导圆的方程时，由点 M 在圆上推出它的坐标满足方程，这一步验证的是曲线方程定义中的哪一个条件？请填写条件①或条件②。",
+     "question": "推导圆的方程时，由点 M 在圆上推出它的坐标满足方程，这一步验证的是曲线方程定义中的哪一个条件？请填写条件①或条件②。",
+     "answer": "条件①",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "条件①说的是曲线上任意一点的坐标都是方程的解，由点在圆上推出坐标满足方程正是条件①的内容；把推理倒过来，由方程的解推出点在圆上，对应的才是条件②。"
+    },
+    {
+     "id": "mhj_h1057_q5",
+     "topicId": "mhj_h1057",
+     "prompt": "为什么方程 x=√(1-y²) 不是圆心在原点、半径为 1 的圆的方程？",
+     "question": "为什么方程 x=√(1-y²) 不是圆心在原点、半径为 1 的圆的方程？",
+     "options": [
+      {
+       "label": "A",
+       "text": "因为方程的次数不是二次"
+      },
+      {
+       "label": "B",
+       "text": "因为圆上点 (-1,0) 的坐标不满足该方程，条件①不成立"
+      },
+      {
+       "label": "C",
+       "text": "因为方程的解对应的点不在圆上，条件②不成立"
+      },
+      {
+       "label": "D",
+       "text": "因为该方程只有有限多组解"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "点 (-1,0) 在圆 x²+y²=1 上，但代入后左边是 -1、右边是 1，等式不成立，它不是方程的解，说明圆上并非所有点都满足方程，条件①不成立。该方程实际只表示圆在 y 轴右侧的半圆。"
+    },
+    {
+     "id": "mhj_h1057_q6",
+     "topicId": "mhj_h1057",
+     "prompt": "方程 (x-1)²+(y+2)²=0 只有一个实数解。以这个解为坐标的点，它的横坐标与纵坐标之和是多少？",
+     "question": "方程 (x-1)²+(y+2)²=0 只有一个实数解。以这个解为坐标的点，它的横坐标与纵坐标之和是多少？",
+     "answer": -1,
+     "type": "numeric",
+     "difficulty": "hard",
+     "verify": "{\"type\": \"num\", \"value\": -1}",
+     "explanation": "实数的平方非负，两个平方之和为 0 时每一项都必须为 0，故 x=1，y=-2，横坐标与纵坐标之和为 1 加 -2，等于 -1。此时方程表示的是一个点而不是曲线。"
+    },
+    {
+     "id": "mhj_h1057_q7",
+     "topicId": "mhj_h1057",
+     "prompt": "下列结论中正确的是哪一个？",
+     "question": "下列结论中正确的是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "方程 x=√(1-y²) 是圆 x²+y²=1 的方程"
+      },
+      {
+       "label": "B",
+       "text": "方程 x²-y²=0 是过点 (0,0) 与 (1,1) 的直线的方程"
+      },
+      {
+       "label": "C",
+       "text": "只要方程有无穷多组解，它就能表示一条曲线"
+      },
+      {
+       "label": "D",
+       "text": "若 F(x,y)=0 是曲线 C 的方程，则曲线 C 上任意一点的坐标都满足该方程"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "选项 A 违反条件①，点 (-1,0) 在圆上却不满足该方程；选项 B 违反条件②，(-1,1) 满足方程却不在直线 y=x 上；方程解的多少与能否表示曲线无关；选项 D 正是曲线方程定义中的条件①，因此正确。"
+    },
+    {
+     "id": "mhj_h1057_q8",
+     "topicId": "mhj_h1057",
+     "prompt": "请举一个反例说明方程 x²-y²=0 不是过点 (0,0) 与 (1,1) 的直线的方程。",
+     "question": "请举一个反例说明方程 x²-y²=0 不是过点 (0,0) 与 (1,1) 的直线的方程。",
+     "answer": "点 (-1,1) 是方程的解，但它不在直线 y=x 上，条件②不成立",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "过 (0,0) 与 (1,1) 的直线是 y=x。点 (-1,1) 的坐标满足 x²-y²=1-1=0，即它是方程的解，但 -1 不等于 1，该点不在直线 y=x 上，说明方程的解不全在曲线上，条件②不成立。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1058",
+   "page": 104,
+   "description": "理解空间向量的加法、减法与数乘运算，会用首尾规则在几何体中求和，会用基底表示向量，并用数量积求夹角、判断垂直。",
+   "mastery_criteria": [
+    "能用首尾规则把正方体中的向量写成若干向量的和或差",
+    "会用数量积计算两个空间向量的夹角与模，并判断两向量是否垂直",
+    "能用基底 a、b、c 表示棱柱中的向量并化简线性组合"
+   ],
+   "misconceptions": [
+    "以为空间向量的加法不满足结合律，写连加时必须以括号规定运算顺序",
+    "以为两条直线异面就意味着它们的方向向量不共面，把直线的异面与三个向量不共面混为一谈",
+    "计算数量积时漏乘夹角的余弦，直接用两个向量的模相乘",
+    "用数量积为零判断垂直时，忘了先确认两个向量都是非零向量"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mhj_h1058_q1",
+     "topicId": "mhj_h1058",
+     "prompt": "在正方体 ABCD-A1B1C1D1 中，只考虑棱所对应的向量，与向量 AB 相等的向量是",
+     "question": "在正方体 ABCD-A1B1C1D1 中，只考虑棱所对应的向量，与向量 AB 相等的向量是",
+     "options": [
+      {
+       "label": "A",
+       "text": "A1B1"
+      },
+      {
+       "label": "B",
+       "text": "BA"
+      },
+      {
+       "label": "C",
+       "text": "A1B"
+      },
+      {
+       "label": "D",
+       "text": "B1A1"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "相等向量要求方向相同且模相等。A1B1 与 AB 平行同向且长度相等，所以与 AB 相等；BA 与 AB 方向相反，A1B 与 AB 方向不同，B1A1 与 AB 方向也相反。"
+    },
+    {
+     "id": "mhj_h1058_q2",
+     "topicId": "mhj_h1058",
+     "prompt": "已知两个空间向量的模分别为 3 和 4，它们的夹角为 60 度，则这两个向量的数量积是多少",
+     "question": "已知两个空间向量的模分别为 3 和 4，它们的夹角为 60 度，则这两个向量的数量积是多少",
+     "answer": 6,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\":\"op\",\"op\":\"mul\",\"values\":[{\"type\":\"num\",\"value\":12},{\"type\":\"num\",\"value\":0.5}]}",
+     "explanation": "数量积等于两个向量的模的乘积再乘以夹角的余弦，即 3 乘 4 再乘 cos60 度，等于 12 乘二分之一，结果为 6。"
+    },
+    {
+     "id": "mhj_h1058_q3",
+     "topicId": "mhj_h1058",
+     "prompt": "在棱长为 a 的正方体 ABCD-A1B1C1D1 中，E 是棱 CC1 的中点，则 AE·C1A1 等于",
+     "question": "在棱长为 a 的正方体 ABCD-A1B1C1D1 中，E 是棱 CC1 的中点，则 AE·C1A1 等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 的平方"
+      },
+      {
+       "label": "B",
+       "text": "负 a 的平方"
+      },
+      {
+       "label": "C",
+       "text": "2 a 的平方"
+      },
+      {
+       "label": "D",
+       "text": "负 2 a 的平方"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把 AE 写成 AB 加 BC 加二分之一 AA1，把 C1A1 写成负 AB 减 BC，利用三条棱两两垂直展开，交叉项全为 0，只剩 AB 的平方与 BC 的平方，即负 a 的平方减 a 的平方，等于负 2 a 的平方。"
+    },
+    {
+     "id": "mhj_h1058_q4",
+     "topicId": "mhj_h1058",
+     "prompt": "在棱长为 a 的正方体 ABCD-A1B1C1D1 中，E 是棱 CC1 的中点，则直线 AE 与直线 DB 的位置关系是",
+     "question": "在棱长为 a 的正方体 ABCD-A1B1C1D1 中，E 是棱 CC1 的中点，则直线 AE 与直线 DB 的位置关系是",
+     "options": [
+      {
+       "label": "A",
+       "text": "平行"
+      },
+      {
+       "label": "B",
+       "text": "垂直"
+      },
+      {
+       "label": "C",
+       "text": "所成角为 60 度"
+      },
+      {
+       "label": "D",
+       "text": "所成角为 45 度"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把 AE 与 DB 都用 AB、BC、AA1 表示后作数量积，展开式中只剩 AB 的平方减 BC 的平方，两者都等于 a 的平方，差为 0，所以 AE 垂直于 DB，两直线互相垂直。"
+    },
+    {
+     "id": "mhj_h1058_q5",
+     "topicId": "mhj_h1058",
+     "prompt": "化简向量式 OA - (OB - (AB - AC))，结果等于哪一个向量",
+     "question": "化简向量式 OA - (OB - (AB - AC))，结果等于哪一个向量",
+     "answer": "CA",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "先去括号得 OA 减 OB 加 AB 减 AC，其中 OA 减 OB 等于 BA，而 BA 加 AB 等于零向量，所以原式等于负 AC，也就是向量 CA。"
+    },
+    {
+     "id": "mhj_h1058_q6",
+     "topicId": "mhj_h1058",
+     "prompt": "已知向量 a 垂直于向量 b，向量 c 与 a、b 的夹角都是 60 度，且 a 的模为 1，b 的模为 2，c 的模为 3，则 (3a - 2b)·(b - 3c) 的值是多少",
+     "question": "已知向量 a 垂直于向量 b，向量 c 与 a、b 的夹角都是 60 度，且 a 的模为 1，b 的模为 2，c 的模为 3，则 (3a - 2b)·(b - 3c) 的值是多少",
+     "answer": -3.5,
+     "type": "numeric",
+     "difficulty": "hard",
+     "verify": "{\"type\":\"op\",\"op\":\"sub\",\"values\":[{\"type\":\"num\",\"value\":18},{\"type\":\"op\",\"op\":\"op\",\"values\":[{\"type\":\"num\",\"value\":13.5},{\"type\":\"num\",\"value\":8}]}]}",
+     "explanation": "展开得 3a·b 减 9a·c 减 2b·b 加 6b·c。其中 a·b 等于 0，a·c 等于 1 乘 3 乘二分之一得 1.5，b·b 等于 4，b·c 等于 2 乘 3 乘二分之一得 3，代入得 0 减 13.5 减 8 加 18，结果为负 3.5。"
+    },
+    {
+     "id": "mhj_h1058_q7",
+     "topicId": "mhj_h1058",
+     "prompt": "在棱长为 a 的正方体 ABCD-A1B1C1D1 中，E 是棱 CC1 的中点，则 AE 与 C1A1 的夹角等于",
+     "question": "在棱长为 a 的正方体 ABCD-A1B1C1D1 中，E 是棱 CC1 的中点，则 AE 与 C1A1 的夹角等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "π 减 arccos(三分之根号二)"
+      },
+      {
+       "label": "B",
+       "text": "arccos(三分之二倍根号二)"
+      },
+      {
+       "label": "C",
+       "text": "π 减 arccos(三分之二倍根号二)"
+      },
+      {
+       "label": "D",
+       "text": "60 度"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "由例 3 的计算，AE 与 C1A1 的数量积为负 2 a 的平方，两者的模分别为二分之三 a 与根号 2 a，夹角余弦等于负三分之二倍根号二，所以夹角为 π 减 arccos(三分之二倍根号二)。"
+    },
+    {
+     "id": "mhj_h1058_q8",
+     "topicId": "mhj_h1058",
+     "prompt": "在正方体 ABCD-A1B1C1D1 中，E 为棱 B1C1 上的任意一点，请用三个或三个以上向量的和表示向量 BE，写出一个等式",
+     "question": "在正方体 ABCD-A1B1C1D1 中，E 为棱 B1C1 上的任意一点，请用三个或三个以上向量的和表示向量 BE，写出一个等式",
+     "answer": "BE = BA1 + A1B1 + B1E",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "按首尾规则，从 B 出发依次经过 A1、B1 到达 E，每个向量的终点都是下一个向量的起点，和向量以第一个向量的起点 B 为起点、以最后一个向量的终点 E 为终点，所以 BE 等于 BA1 加 A1B1 加 B1E。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1059",
+   "page": 110,
+   "description": "理解向量共面的充要条件与空间向量基本定理，能判断三个向量是否共面，能选三棱锥的三条棱作基底表示其他向量。",
+   "mastery_criteria": [
+    "能用存在唯一一对实数这一形式表达向量共面的充要条件",
+    "能判断三个向量是否共面，并据此证明三点共线或点在平面内",
+    "能选取正四面体的三条棱作基底，表示其余棱与中线对应的向量"
+   ],
+   "misconceptions": [
+    "认为空间中的任意三个向量都能作为一组基底",
+    "把两条直线异面误判为它们的方向向量不共面",
+    "用三个系数之和是否等于 1 来判断三个向量共面，混淆四点共面与三个向量共面的条件",
+    "认为基底一旦选定，同一个向量的线性组合表示可以不唯一"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1059_q1",
+     "topicId": "mhj_h1059",
+     "prompt": "如果 e1 与 e2 是两个不平行的向量，那么空间中向量 a 与 e1、e2 共面的充要条件是",
+     "question": "如果 e1 与 e2 是两个不平行的向量，那么空间中向量 a 与 e1、e2 共面的充要条件是",
+     "options": [
+      {
+       "label": "A",
+       "text": "存在唯一的一对实数 λ、μ，使 a 等于 λe1 加 μe2"
+      },
+      {
+       "label": "B",
+       "text": "存在实数 λ，使 a 等于 λe1"
+      },
+      {
+       "label": "C",
+       "text": "a 与 e1、e2 中的至少一个平行"
+      },
+      {
+       "label": "D",
+       "text": "a 的模等于 e1 与 e2 的模之和"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "这是向量共面的充要条件：e1 与 e2 不平行时，与它们共面的向量一定能写成它们唯一的线性组合；反过来，两个不平行向量的任何线性组合都与这两个向量共面。"
+    },
+    {
+     "id": "mhj_h1059_q2",
+     "topicId": "mhj_h1059",
+     "prompt": "在长方体 ABCD-A1B1C1D1 中，E 是棱 AA1 的中点，O 是面对角线 BC1 与 B1C 的交点，则下列结论正确的是",
+     "question": "在长方体 ABCD-A1B1C1D1 中，E 是棱 AA1 的中点，O 是面对角线 BC1 与 B1C 的交点，则下列结论正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "EO 与 AB、AD 不共面"
+      },
+      {
+       "label": "B",
+       "text": "EO 等于 AB 加二分之一 AD，与 AB、AD 共面"
+      },
+      {
+       "label": "C",
+       "text": "EO 等于二分之一 AB 加 AD，与 AB、AD 共面"
+      },
+      {
+       "label": "D",
+       "text": "EO 等于 AB 减二分之一 AD，与 AB、AD 不共面"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把 EO 写成 EA 加 AB 加 BO，其中 EA 等于负二分之一 AA1，BO 等于二分之一（AD 加 AA1），两项中的 AA1 抵消，得 EO 等于 AB 加二分之一 AD，因此 EO 与 AB、AD 共面。"
+    },
+    {
+     "id": "mhj_h1059_q3",
+     "topicId": "mhj_h1059",
+     "prompt": "判断下列三个命题的真假：第一，若直线 AB 与 CD 是异面直线，则向量 AB 与 CD 不共面；第二，若 a、b 是平面 α 上互不平行的向量，点 C、D 都不在 α 上，则 CD 与 a、b 不共面；第三，若 a、b 是平面 α 上互不平行的向量，点 C 在 α 上而点 D 不在 α 上，则 CD 与 a、b 不共面。其中真命题有几个",
+     "question": "判断下列三个命题的真假：第一，若直线 AB 与 CD 是异面直线，则向量 AB 与 CD 不共面；第二，若 a、b 是平面 α 上互不平行的向量，点 C、D 都不在 α 上，则 CD 与 a、b 不共面；第三，若 a、b 是平面 α 上互不平行的向量，点 C 在 α 上而点 D 不在 α 上，则 CD 与 a、b 不共面。其中真命题有几个",
+     "answer": "1 个，只有第三个是真命题",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "空间中任意两个向量总是共面的，异面直线的方向向量也能平移到同一个平面上，故第一个是假命题；若 CD 平行于平面 α，则它与 a、b 共面，故第二个也是假命题；点 C 在 α 上而点 D 不在 α 上时 CD 不在 α 内，与 a、b 不共面，第三个为真。"
+    },
+    {
+     "id": "mhj_h1059_q4",
+     "topicId": "mhj_h1059",
+     "prompt": "在正方体 ABCD-A1B1C1D1 中，E 是面 A1B1C1D1 的中心，若 AE 等于 λAD 加 μAB 加 νAA1，则 λ、μ、ν 的值分别是",
+     "question": "在正方体 ABCD-A1B1C1D1 中，E 是面 A1B1C1D1 的中心，若 AE 等于 λAD 加 μAB 加 νAA1，则 λ、μ、ν 的值分别是",
+     "options": [
+      {
+       "label": "A",
+       "text": "1、1、1"
+      },
+      {
+       "label": "B",
+       "text": "二分之一、二分之一、二分之一"
+      },
+      {
+       "label": "C",
+       "text": "二分之一、二分之一、1"
+      },
+      {
+       "label": "D",
+       "text": "1、二分之一、二分之一"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "以 A 为起点看，从 A 到上底面中心，水平方向上沿 AB 与 AD 各走一半，竖直方向上正好走一条棱 AA1，所以 λ 与 μ 都等于二分之一，ν 等于 1。"
+    },
+    {
+     "id": "mhj_h1059_q5",
+     "topicId": "mhj_h1059",
+     "prompt": "在正四面体 ABCD 中，N 是面 ABC 的中心，令 DA 等于 a、DB 等于 b、DC 等于 c，则 DN 等于",
+     "question": "在正四面体 ABCD 中，N 是面 ABC 的中心，令 DA 等于 a、DB 等于 b、DC 等于 c，则 DN 等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "二分之一（a 加 b 加 c）"
+      },
+      {
+       "label": "B",
+       "text": "四分之一（a 加 b 加 c）"
+      },
+      {
+       "label": "C",
+       "text": "a 加 b 加 c"
+      },
+      {
+       "label": "D",
+       "text": "三分之一（a 加 b 加 c）"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "取 AB 的中点 E，则点 N 在 CE 上且 CN 等于三分之二 CE，把 CE 写成 CA 加二分之一 AB，再代入 a、b、c 化简，可得 DN 中 a、b、c 的系数都等于三分之一。"
+    },
+    {
+     "id": "mhj_h1059_q6",
+     "topicId": "mhj_h1059",
+     "prompt": "在长方体 ABCD-A1B1C1D1 中，AB、AA1、AD 的长的比为 2 比 1 比 1，E、F 分别是棱 AB、DC 的中点，若 AA1 的长为 1，则 A1F·B1C 的值是多少",
+     "question": "在长方体 ABCD-A1B1C1D1 中，AB、AA1、AD 的长的比为 2 比 1 比 1，E、F 分别是棱 AB、DC 的中点，若 AA1 的长为 1，则 A1F·B1C 的值是多少",
+     "answer": 2,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\":\"op\",\"op\":\"op\",\"values\":[{\"type\":\"num\",\"value\":1},{\"type\":\"num\",\"value\":1}]}",
+     "explanation": "把 A1F 写成二分之一 AB 加 AD 减 AA1，把 B1C 写成 AD 减 AA1，利用三条棱两两垂直展开，交叉项全为 0，只剩 AD 的平方与 AA1 的平方之和，即 1 加 1 等于 2。"
+    },
+    {
+     "id": "mhj_h1059_q7",
+     "topicId": "mhj_h1059",
+     "prompt": "若点 P 在平面 ABC 内，点 O 是平面 ABC 外的一点，且 OP 等于 λOA 加 μOB 加 νOC，则 λ 加 μ 加 ν 的值是多少",
+     "question": "若点 P 在平面 ABC 内，点 O 是平面 ABC 外的一点，且 OP 等于 λOA 加 μOB 加 νOC，则 λ 加 μ 加 ν 的值是多少",
+     "answer": 1,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\":\"num\",\"value\":1}",
+     "explanation": "空间四点共面的充要条件是对平面外一点 O，有 OP 等于 λOA 加 μOB 加 νOC 且三个系数之和等于 1，这可以由平面向量基本定理类比推广得到。"
+    },
+    {
+     "id": "mhj_h1059_q8",
+     "topicId": "mhj_h1059",
+     "prompt": "在正四面体 ABCD 中，N 是面 ABC 的中心，取 DA 等于 a、DB 等于 b、BC 等于 d 作为一组基底，则 DN 用这组基底表示时 b 的系数是多少",
+     "question": "在正四面体 ABCD 中，N 是面 ABC 的中心，取 DA 等于 a、DB 等于 b、BC 等于 d 作为一组基底，则 DN 用这组基底表示时 b 的系数是多少",
+     "answer": "2/3",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "教材中把 DN 用第二组基底表示为三分之一 a 加三分之二 b 加三分之一 d，所以 b 的系数是三分之二，这一组基底便于表示与 BC 相关的向量。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1060",
+   "page": 116,
+   "description": "会在空间直角坐标系中用坐标表示点与向量，用坐标计算模、数量积与夹角，并用坐标条件判断两个向量平行或垂直。",
+   "mastery_criteria": [
+    "能写出空间直角坐标系中点的坐标，以及它关于坐标平面的对称点坐标",
+    "能用终点坐标减起点坐标求向量坐标，并用坐标公式求模与数量积",
+    "能用坐标形式的充要条件判断两个向量平行或垂直"
+   ],
+   "misconceptions": [
+    "认为两点确定的向量坐标等于起点坐标减去终点坐标",
+    "把点关于 xOy 平面的对称点理解为三个坐标都变成相反数",
+    "用坐标判断平行时只比较两个坐标，忘了第三个坐标也要成同一比例",
+    "计算夹角时把向量的夹角与两条直线所成的角当成同一回事，忽略夹角的取值范围"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mhj_h1060_q1",
+     "topicId": "mhj_h1060",
+     "prompt": "在空间直角坐标系 Oxyz 中，点 P 的坐标是 7、6、4，则点 P 关于 xOy 平面的对称点的坐标是",
+     "question": "在空间直角坐标系 Oxyz 中，点 P 的坐标是 7、6、4，则点 P 关于 xOy 平面的对称点的坐标是",
+     "options": [
+      {
+       "label": "A",
+       "text": "7、6、负 4"
+      },
+      {
+       "label": "B",
+       "text": "负 7、6、4"
+      },
+      {
+       "label": "C",
+       "text": "7、负 6、4"
+      },
+      {
+       "label": "D",
+       "text": "负 7、负 6、负 4"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "关于 xOy 平面对称时，横坐标与纵坐标保持不变，竖坐标变为原来的相反数，所以对称点的坐标是 7、6、负 4。"
+    },
+    {
+     "id": "mhj_h1060_q2",
+     "topicId": "mhj_h1060",
+     "prompt": "已知向量 a 的坐标是负 m、1、3，向量 b 的坐标是 2、n、1，且 a 平行于 b，则 m、n 的值分别是",
+     "question": "已知向量 a 的坐标是负 m、1、3，向量 b 的坐标是 2、n、1，且 a 平行于 b，则 m、n 的值分别是",
+     "options": [
+      {
+       "label": "A",
+       "text": "6、三分之一"
+      },
+      {
+       "label": "B",
+       "text": "负 6、三分之一"
+      },
+      {
+       "label": "C",
+       "text": "负 6、3"
+      },
+      {
+       "label": "D",
+       "text": "6、3"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个向量平行时坐标成同一比例，由竖坐标 3 与 1 得比例系数为 3，于是负 m 等于 3 乘 2，得 m 等于负 6；1 等于 3 乘 n，得 n 等于三分之一。"
+    },
+    {
+     "id": "mhj_h1060_q3",
+     "topicId": "mhj_h1060",
+     "prompt": "已知平行四边形 ABCD 的三个顶点坐标分别为 A 的坐标 1、2、3，B 的坐标 2、负 1、5，C 的坐标 3、2、负 5，则顶点 D 的坐标是",
+     "question": "已知平行四边形 ABCD 的三个顶点坐标分别为 A 的坐标 1、2、3，B 的坐标 2、负 1、5，C 的坐标 3、2、负 5，则顶点 D 的坐标是",
+     "options": [
+      {
+       "label": "A",
+       "text": "2、5、7"
+      },
+      {
+       "label": "B",
+       "text": "4、5、负 3"
+      },
+      {
+       "label": "C",
+       "text": "2、5、负 7"
+      },
+      {
+       "label": "D",
+       "text": "0、负 1、13"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "平行四边形中两条对角线互相平分，所以 A 与 C 的坐标之和等于 B 与 D 的坐标之和，把 A、C 的对应坐标相加再减去 B 的对应坐标，得 D 的坐标为 2、5、负 7。"
+    },
+    {
+     "id": "mhj_h1060_q4",
+     "topicId": "mhj_h1060",
+     "prompt": "在棱长为 a 的正方体 ABCD-A1B1C1D1 中，以 A 为原点，射线 AB、AD、AA1 为 x、y、z 轴正半轴建立空间直角坐标系，则对角线 CA1 与 CA 所成角的余弦值是",
+     "question": "在棱长为 a 的正方体 ABCD-A1B1C1D1 中，以 A 为原点，射线 AB、AD、AA1 为 x、y、z 轴正半轴建立空间直角坐标系，则对角线 CA1 与 CA 所成角的余弦值是",
+     "options": [
+      {
+       "label": "A",
+       "text": "三分之根号三"
+      },
+      {
+       "label": "B",
+       "text": "二分之根号二"
+      },
+      {
+       "label": "C",
+       "text": "三分之一"
+      },
+      {
+       "label": "D",
+       "text": "三分之根号六"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "由点的坐标得 CA 等于负 a、负 a、0，CA1 等于负 a、负 a、a，数量积等于 a 的平方加 a 的平方，而两者的模分别为根号 2 a 与根号 3 a，所以余弦值等于 2 a 的平方除以根号 6 a 的平方，即三分之根号六。"
+    },
+    {
+     "id": "mhj_h1060_q5",
+     "topicId": "mhj_h1060",
+     "prompt": "已知向量 a 的坐标是 1、2、2，则 a 的模是多少",
+     "question": "已知向量 a 的坐标是 1、2、2，则 a 的模是多少",
+     "answer": 3,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\":\"op\",\"op\":\"pow\",\"values\":[{\"type\":\"num\",\"value\":9},{\"type\":\"num\",\"value\":0.5}]}",
+     "explanation": "向量的模等于三个坐标的平方和的算术平方根，即根号下 1 加 4 加 4 等于根号 9，所以 a 的模为 3。"
+    },
+    {
+     "id": "mhj_h1060_q6",
+     "topicId": "mhj_h1060",
+     "prompt": "已知向量 a 的坐标是 1、1、0，向量 b 的坐标是 0、1、1，则 a 与 b 的夹角是多少度",
+     "question": "已知向量 a 的坐标是 1、1、0，向量 b 的坐标是 0、1、1，则 a 与 b 的夹角是多少度",
+     "answer": 60,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\":\"num\",\"value\":60}",
+     "explanation": "数量积等于 1 乘 0 加 1 乘 1 加 0 乘 1 等于 1，两个向量的模都是根号 2，所以夹角的余弦等于 1 除以 2 得二分之一，夹角为 60 度。"
+    },
+    {
+     "id": "mhj_h1060_q7",
+     "topicId": "mhj_h1060",
+     "prompt": "已知向量 a 等于 i 加 j 减 4k，向量 b 等于 i 减 2j 加 2k，其中 i、j、k 是坐标轴正方向的单位向量，则 a 与 b 的夹角的余弦值是多少",
+     "question": "已知向量 a 等于 i 加 j 减 4k，向量 b 等于 i 减 2j 加 2k，其中 i、j、k 是坐标轴正方向的单位向量，则 a 与 b 的夹角的余弦值是多少",
+     "answer": "-√2/2",
+     "type": "fill",
+     "difficulty": "standard",
+     "explanation": "把 a、b 写成坐标得 1、1、负 4 与 1、负 2、2，数量积等于 1 减 2 减 8 得负 9，两者的模分别为 3 倍根号 2 与 3，所以余弦值等于负 9 除以 9 倍根号 2，即负二分之根号二。"
+    },
+    {
+     "id": "mhj_h1060_q8",
+     "topicId": "mhj_h1060",
+     "prompt": "在棱长为 2 的正方体 ABCD-A1B1C1D1 中，以 A 为原点，射线 AB、AD、AA1 为 x、y、z 轴正半轴建立空间直角坐标系，请用坐标说明 CA1 与 BD 垂直",
+     "question": "在棱长为 2 的正方体 ABCD-A1B1C1D1 中，以 A 为原点，射线 AB、AD、AA1 为 x、y、z 轴正半轴建立空间直角坐标系，请用坐标说明 CA1 与 BD 垂直",
+     "answer": "CA1 的坐标是负 2、负 2、2，BD 的坐标是负 2、2、0，数量积为 4 减 4 加 0 等于 0，故两者垂直",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "用坐标证明垂直的关键是算数量积。CA1 的坐标是负 2、负 2、2，BD 的坐标是负 2、2、0，对应坐标相乘再相加得 4 减 4 加 0 等于 0，所以这两个向量垂直，即直线 CA1 垂直于直线 BD。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1061",
+   "page": 122,
+   "description": "理解直线的方向向量与平面的法向量，用两个向量的平行与垂直刻画线线、线面、面面的位置关系，并用向量方法证明三垂线定理。",
+   "mastery_criteria": [
+    "能说出直线的方向向量与平面的法向量的定义，并在正方体中写出它们",
+    "能用方向向量与法向量的平行或垂直判断线面、面面的平行与垂直",
+    "能用向量方法证明三垂线定理与线面垂直的判定定理"
+   ],
+   "misconceptions": [
+    "把平面内的任意一个非零向量当成这个平面的法向量",
+    "认为直线与平面平行时方向向量与法向量平行，混淆线面平行与线面垂直的条件",
+    "证明三垂线定理时直接由投影垂直推出斜线垂直，漏掉斜线的向量分解",
+    "认为平面有唯一的方向向量，用方向向量刻画两个平面平行"
+   ],
+   "type": "application",
+   "questions": [
+    {
+     "id": "mhj_h1061_q1",
+     "topicId": "mhj_h1061",
+     "prompt": "与一条直线平行的任何非零向量称为这条直线的",
+     "question": "与一条直线平行的任何非零向量称为这条直线的",
+     "options": [
+      {
+       "label": "A",
+       "text": "法向量"
+      },
+      {
+       "label": "B",
+       "text": "方向向量"
+      },
+      {
+       "label": "C",
+       "text": "投影向量"
+      },
+      {
+       "label": "D",
+       "text": "位置向量"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材把与直线平行的任何非零向量称为这条直线的方向向量，把垂直于平面的任何非零向量称为平面的法向量，它们是这一节处理位置关系的基本工具。"
+    },
+    {
+     "id": "mhj_h1061_q2",
+     "topicId": "mhj_h1061",
+     "prompt": "关于平面 α 的法向量，下列说法正确的是",
+     "question": "关于平面 α 的法向量，下列说法正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "它一定在平面 α 内"
+      },
+      {
+       "label": "B",
+       "text": "它与平面 α 内的一条直线垂直即可"
+      },
+      {
+       "label": "C",
+       "text": "它是垂直于平面 α 的任何非零向量"
+      },
+      {
+       "label": "D",
+       "text": "它必须是单位向量"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "法向量的定义是垂直于平面的任何非零向量，因此它与平面内的每一条直线都垂直；它不要求在平面内，也不要求是单位向量。"
+    },
+    {
+     "id": "mhj_h1061_q3",
+     "topicId": "mhj_h1061",
+     "prompt": "设非零向量 v 是直线 l 的方向向量，非零向量 n 是平面 α 的法向量，且直线 l 不在平面 α 内，则 l 平行于 α 的充要条件是",
+     "question": "设非零向量 v 是直线 l 的方向向量，非零向量 n 是平面 α 的法向量，且直线 l 不在平面 α 内，则 l 平行于 α 的充要条件是",
+     "options": [
+      {
+       "label": "A",
+       "text": "v 等于 λn，λ 为某个实数"
+      },
+      {
+       "label": "B",
+       "text": "v 与 n 的夹角为 60 度"
+      },
+      {
+       "label": "C",
+       "text": "v 与 n 共线"
+      },
+      {
+       "label": "D",
+       "text": "v 与 n 的数量积等于 0"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "直线与平面平行时，它的方向向量与平面的法向量互相垂直，而两向量垂直的充要条件是数量积等于 0；若方向向量与法向量共线，则直线与平面垂直而不是平行。"
+    },
+    {
+     "id": "mhj_h1061_q4",
+     "topicId": "mhj_h1061",
+     "prompt": "设平面 α 与平面 β 是两个确定的平面，则 α 平行于 β 的充要条件是",
+     "question": "设平面 α 与平面 β 是两个确定的平面，则 α 平行于 β 的充要条件是",
+     "options": [
+      {
+       "label": "A",
+       "text": "它们的法向量平行"
+      },
+      {
+       "label": "B",
+       "text": "它们的法向量垂直"
+      },
+      {
+       "label": "C",
+       "text": "它们的法向量都是单位向量"
+      },
+      {
+       "label": "D",
+       "text": "它们的方向向量平行"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两个平面平行的充要条件是它们的法向量平行，法向量垂直对应的是两个平面垂直；平面没有唯一确定的方向向量，所以不能用方向向量刻画面面平行。"
+    },
+    {
+     "id": "mhj_h1061_q5",
+     "topicId": "mhj_h1061",
+     "prompt": "已知直线 l 的方向向量的坐标是 1、2、负 1，平面 α 的法向量的坐标是 2、负 1、k，且直线 l 平行于平面 α，则 k 的值是多少",
+     "question": "已知直线 l 的方向向量的坐标是 1、2、负 1，平面 α 的法向量的坐标是 2、负 1、k，且直线 l 平行于平面 α，则 k 的值是多少",
+     "answer": 0,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\":\"op\",\"op\":\"sub\",\"values\":[{\"type\":\"num\",\"value\":2},{\"type\":\"num\",\"value\":2}]}",
+     "explanation": "直线与平面平行时方向向量与法向量的数量积等于 0，即 1 乘 2 加 2 乘负 1 加负 1 乘 k 等于 2 减 2 减 k 等于 0，解得 k 等于 0。"
+    },
+    {
+     "id": "mhj_h1061_q6",
+     "topicId": "mhj_h1061",
+     "prompt": "PA 是平面 α 的一条斜线，PO 垂直于平面 α，点 O 在 α 内，OA 是 PA 在 α 上的投影，若 PA 的长为 5，OA 的长为 3，则 PO 的长是多少",
+     "question": "PA 是平面 α 的一条斜线，PO 垂直于平面 α，点 O 在 α 内，OA 是 PA 在 α 上的投影，若 PA 的长为 5，OA 的长为 3，则 PO 的长是多少",
+     "answer": 4,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\":\"op\",\"op\":\"pow\",\"values\":[{\"type\":\"num\",\"value\":16},{\"type\":\"num\",\"value\":0.5}]}",
+     "explanation": "由投影的定义 PO 垂直于平面 α，而 OA 在平面 α 内，所以 PO 垂直于 OA，三角形 POA 是直角三角形，由勾股定理得 PO 等于根号下 5 的平方减 3 的平方，即根号 16 等于 4。"
+    },
+    {
+     "id": "mhj_h1061_q7",
+     "topicId": "mhj_h1061",
+     "prompt": "在棱长为 1 的正方体 ABCD-A1B1C1D1 中，以 D 为原点，射线 DA、DC、DD1 为 x、y、z 轴正方向建立空间直角坐标系，则点 D1 到平面 A1BD 的距离是多少",
+     "question": "在棱长为 1 的正方体 ABCD-A1B1C1D1 中，以 D 为原点，射线 DA、DC、DD1 为 x、y、z 轴正方向建立空间直角坐标系，则点 D1 到平面 A1BD 的距离是多少",
+     "answer": "√3/3",
+     "type": "fill",
+     "difficulty": "hard",
+     "explanation": "平面 A1BD 经过原点，取它的一个法向量为 1、负 1、负 1，点 D1 的坐标是 0、0、1，用法向量与 DD1 的数量积的绝对值除以法向量的模，得 1 除以根号 3，即三分之根号三。"
+    },
+    {
+     "id": "mhj_h1061_q8",
+     "topicId": "mhj_h1061",
+     "prompt": "在棱长为 2 的正方体 ABCD-A1B1C1D1 中，以 D 为原点，射线 DA、DC、DD1 为 x、y、z 轴正方向建立空间直角坐标系，请用坐标证明 AC1 垂直于平面 A1BD",
+     "question": "在棱长为 2 的正方体 ABCD-A1B1C1D1 中，以 D 为原点，射线 DA、DC、DD1 为 x、y、z 轴正方向建立空间直角坐标系，请用坐标证明 AC1 垂直于平面 A1BD",
+     "answer": "AC1 的坐标是负 2、2、2，A1B 的坐标是 0、2、负 2，A1D 的坐标是负 2、0、负 2，两个数量积都等于 0，故 AC1 垂直于平面 A1BD",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "由点的坐标得 A1 的坐标 2、0、2，B 的坐标 2、2、0，C1 的坐标 0、2、2，于是 AC1 的坐标为负 2、2、2；平面 A1BD 内两条相交直线的方向向量 A1B 与 A1D 分别为 0、2、负 2 与负 2、0、负 2，两个数量积都等于 0，所以 AC1 垂直于平面内两条相交直线，从而垂直于这个平面。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1062",
+   "page": 140,
+   "description": "理解等差数列的定义与公差，掌握等差中项、通项公式和前 n 项和公式，并能由已知的项或部分和反求首项与公差。",
+   "mastery_criteria": [
+    "能用定义判断数列是否为等差数列，并由相邻两项求公差",
+    "能用通项公式求指定项与项数，并用等差中项处理三数成等差的问题",
+    "能选用前 n 项和的两个公式求和，并由已知的和反求首项与公差"
+   ],
+   "misconceptions": [
+    "认为只要前几项满足等差关系，整个数列就是等差数列",
+    "用两项之差求公差时忽略相减的顺序，把负公差算成正数",
+    "用前 n 项和公式时把末项的下标当成项数，导致项数取错",
+    "由前 n 项和求通项时忘记检验 n 等于 1 的情形是否满足同一表达式"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mhj_h1062_q1",
+     "topicId": "mhj_h1062",
+     "prompt": "已知等差数列 -5，-9，-13，…，则该数列的公差等于",
+     "question": "已知等差数列 -5，-9，-13，…，则该数列的公差等于",
+     "options": [
+      {
+       "label": "A",
+       "text": "-4"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "-5"
+      },
+      {
+       "label": "D",
+       "text": "-13"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "公差等于后一项减前一项，用第二项减第一项得 -9 减 -5 等于 -4，也可以看出每一项都比前一项小 4，所以公差为 -4。"
+    },
+    {
+     "id": "mhj_h1062_q2",
+     "topicId": "mhj_h1062",
+     "prompt": "已知等差数列的首项为 -1，公差为 4，求该数列的第 8 项",
+     "question": "已知等差数列的首项为 -1，公差为 4，求该数列的第 8 项",
+     "answer": 27,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 27}",
+     "explanation": "由通项公式，第 8 项等于首项 -1 加上 7 倍的公差 4，即 -1 加 28，等于 27。"
+    },
+    {
+     "id": "mhj_h1062_q3",
+     "topicId": "mhj_h1062",
+     "prompt": "已知等差数列 -5，-9，-13，…，求该数列的第 20 项的值",
+     "question": "已知等差数列 -5，-9，-13，…，求该数列的第 20 项的值",
+     "answer": "-81",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "该数列的通项公式为 -5 减 4 倍的 n 减 1，化简得 -4n 减 1，令 n 等于 20 得第 20 项等于 -81。"
+    },
+    {
+     "id": "mhj_h1062_q4",
+     "topicId": "mhj_h1062",
+     "prompt": "体育场一角看台的座位数成等差数列，已知第 3 排有 10 个座位，第 9 排有 28 个座位，则第 12 排的座位数为",
+     "question": "体育场一角看台的座位数成等差数列，已知第 3 排有 10 个座位，第 9 排有 28 个座位，则第 12 排的座位数为",
+     "options": [
+      {
+       "label": "A",
+       "text": "33"
+      },
+      {
+       "label": "B",
+       "text": "34"
+      },
+      {
+       "label": "C",
+       "text": "37"
+      },
+      {
+       "label": "D",
+       "text": "40"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "第 3 排与第 9 排相差 6 个公差，公差等于 28 减 10 的差除以 6 等于 3，首项等于 4，所以第 12 排有 4 加 11 乘 3 等于 37 个座位。"
+    },
+    {
+     "id": "mhj_h1062_q5",
+     "topicId": "mhj_h1062",
+     "prompt": "(8 减 √2) 除以 2 与 (8 加 √2) 除以 2 的等差中项等于",
+     "question": "(8 减 √2) 除以 2 与 (8 加 √2) 除以 2 的等差中项等于",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "等差中项等于这两个数的和的一半，两数相加时 √2 抵消，和为 8，所以等差中项等于 8 的一半，即 4。",
+     "options": [
+      {
+       "label": "A",
+       "text": "2"
+      },
+      {
+       "label": "B",
+       "text": "4"
+      },
+      {
+       "label": "C",
+       "text": "2√2"
+      },
+      {
+       "label": "D",
+       "text": "8"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1062_q6",
+     "topicId": "mhj_h1062",
+     "prompt": "已知等差数列的首项为 9，公差为 -2，且第 n 项等于 -15，求项数 n 的值",
+     "question": "已知等差数列的首项为 9，公差为 -2，且第 n 项等于 -15，求项数 n 的值",
+     "answer": "13",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "由通项公式得 9 减 2 倍的 n 减 1 等于 -15，即 2 倍的 n 减 1 等于 24，解得 n 等于 13，验证第 13 项确实等于 -15。"
+    },
+    {
+     "id": "mhj_h1062_q7",
+     "topicId": "mhj_h1062",
+     "prompt": "已知等差数列的前 10 项和为 310，前 20 项和为 1220，求该数列前 30 项的和",
+     "question": "已知等差数列的前 10 项和为 310，前 20 项和为 1220，求该数列前 30 项的和",
+     "answer": 2730,
+     "type": "numeric",
+     "difficulty": "hard",
+     "verify": "{\"type\": \"num\", \"value\": 2730}",
+     "explanation": "设首项与公差，由前 n 项和公式列方程组，解得首项为 4、公差为 6；再代入 n 等于 30，前 30 项和等于 30 乘 4 加 435 乘 6，等于 2730。"
+    },
+    {
+     "id": "mhj_h1062_q8",
+     "topicId": "mhj_h1062",
+     "prompt": "已知数列的前 n 项和等于 n 的平方加 2n，求该数列的通项公式，并说明它为什么是等差数列",
+     "question": "已知数列的前 n 项和等于 n 的平方加 2n，求该数列的通项公式，并说明它为什么是等差数列",
+     "answer": "该数列的通项公式为 an 等于 2n 加 1，相邻两项的差恒为 2，所以是等差数列",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "当 n 大于等于 2 时，前 n 项和与前 n 减 1 项和相减，得第 n 项等于 2n 加 1；n 等于 1 时首项为 3 也满足该式，故通项为 2n 加 1，相邻两项的差恒等于 2。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1063",
+   "page": 148,
+   "description": "理解等比数列的定义与非零公比，掌握等比中项、通项公式、前 n 项和公式以及公比绝对值小于 1 时的无穷等比数列各项之和。",
+   "mastery_criteria": [
+    "能用定义判断等比数列，并由相邻两项求公比",
+    "能用通项公式与前 n 项和公式求指定的项、项数与和，并注意公比是否为 1",
+    "能把循环小数化为分数，并求公比绝对值小于 1 的无穷等比数列各项之和"
+   ],
+   "misconceptions": [
+    "认为公比可以等于零，忽略定义中公比是非零常数",
+    "求等比中项时只取正的算术平方根，漏掉负的那一个",
+    "用前 n 项和公式时不对公比是否等于 1 分类讨论",
+    "由前 n 项和求通项时忘记检验 n 等于 1 时是否满足同一表达式"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mhj_h1063_q1",
+     "topicId": "mhj_h1063",
+     "prompt": "下列数列中，能够构成等比数列的是",
+     "question": "下列数列中，能够构成等比数列的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "1，1/4，1/9，1/16"
+      },
+      {
+       "label": "B",
+       "text": "1，1，-1，-1"
+      },
+      {
+       "label": "C",
+       "text": "1，√2/2，1/2，√2/4"
+      },
+      {
+       "label": "D",
+       "text": "1/2，2，1/2，2"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "第三个数列从第二项起，每一项与前一项的比都等于 √2 除以 2；第一个数列相邻两项的比不相等，第二个数列相邻两项的比在 1 与 -1 之间变化，第四个数列在 2 与 1/2 之间交替。"
+    },
+    {
+     "id": "mhj_h1063_q2",
+     "topicId": "mhj_h1063",
+     "prompt": "已知等比数列的首项为 3，公比为 -2，求该数列的第 6 项",
+     "question": "已知等比数列的首项为 3，公比为 -2，求该数列的第 6 项",
+     "answer": -96,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": -96}",
+     "explanation": "由等比数列的通项公式，第 6 项等于 3 乘 -2 的 5 次方，而 -2 的 5 次方等于 -32，所以第 6 项等于 -96。"
+    },
+    {
+     "id": "mhj_h1063_q3",
+     "topicId": "mhj_h1063",
+     "prompt": "已知等比数列的首项为 3，公比为 2，求该数列前 6 项的和",
+     "question": "已知等比数列的首项为 3，公比为 2，求该数列前 6 项的和",
+     "answer": "189",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "公比不等于 1，用等比数列前 n 项和公式，前 6 项和等于 3 乘 1 减 2 的 6 次方的差再除以 1 减 2，等于 3 乘 63 等于 189。"
+    },
+    {
+     "id": "mhj_h1063_q4",
+     "topicId": "mhj_h1063",
+     "prompt": "把循环小数 0.292929… 化为最简分数，结果是",
+     "question": "把循环小数 0.292929… 化为最简分数，结果是",
+     "options": [
+      {
+       "label": "A",
+       "text": "29/100"
+      },
+      {
+       "label": "B",
+       "text": "29/99"
+      },
+      {
+       "label": "C",
+       "text": "29/90"
+      },
+      {
+       "label": "D",
+       "text": "2/9"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "把它看成首项为 0.29、公比为 0.01 的无穷等比数列各项之和，公比绝对值小于 1，由求和公式得 0.29 除以 1 减 0.01，即 0.29 除以 0.99，等于 29/99。"
+    },
+    {
+     "id": "mhj_h1063_q5",
+     "topicId": "mhj_h1063",
+     "prompt": "已知等比数列的前 3 项和为 84，前 6 项和为 756，则该数列的公比等于",
+     "question": "已知等比数列的前 3 项和为 84，前 6 项和为 756，则该数列的公比等于",
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "两式相除得 1 加公比的立方等于 756 除以 84 等于 9，所以公比的立方等于 8，公比等于 2，此时首项为 12，检验前 3 项和为 84，与已知相符。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "-2"
+      },
+      {
+       "label": "C",
+       "text": "1/2"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1063_q6",
+     "topicId": "mhj_h1063",
+     "prompt": "已知数列的前 n 项和等于 3 的 n 次方加 a，其中 a 为常数，当 a 取何值时该数列是等比数列",
+     "question": "已知数列的前 n 项和等于 3 的 n 次方加 a，其中 a 为常数，当 a 取何值时该数列是等比数列",
+     "answer": "a 等于 -1",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "当 n 大于等于 2 时，相邻两个前 n 项和相减得第 n 项等于 2 乘 3 的 n 减 1 次方，公比为 3；要使首项是 2，须 3 加 a 等于 2，故 a 等于 -1。"
+    },
+    {
+     "id": "mhj_h1063_q7",
+     "topicId": "mhj_h1063",
+     "prompt": "一个球从 100 米高处自由落下，每次着地后又跳回原高度的一半再落下，求它第 10 次着地时经过的总路程，结果保留三位小数",
+     "question": "一个球从 100 米高处自由落下，每次着地后又跳回原高度的一半再落下，求它第 10 次着地时经过的总路程，结果保留三位小数",
+     "answer": 299.609375,
+     "type": "numeric",
+     "difficulty": "hard",
+     "verify": "{\"type\": \"num\", \"value\": 299.609375}",
+     "explanation": "首次下落 100 米，此后每次着地之间都要先上升再下落同样的高度，上升高度依次为 50、25 等，共 9 段，公比为 1/2，所以总路程等于 100 加 2 乘这 9 段的和，等于 300 减 25/64，约为 299.610 米。"
+    },
+    {
+     "id": "mhj_h1063_q8",
+     "topicId": "mhj_h1063",
+     "prompt": "边长为 1 的正方形依次连接各边中点得到新的正方形，如此无限继续下去，求所有这些正方形周长的和",
+     "question": "边长为 1 的正方形依次连接各边中点得到新的正方形，如此无限继续下去，求所有这些正方形周长的和",
+     "answer": "8 加 4√2",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "各正方形的边长构成首项为 1、公比为 √2 除以 2 的等比数列，周长构成首项为 4、公比为 √2 除以 2 的等比数列，公比绝对值小于 1，各项之和等于 4 除以 1 减 √2 除以 2，化简得 8 加 4√2。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1064",
+   "page": 158,
+   "description": "理解数列是按一定顺序排列的一列数，会由通项公式写项、判断单调性并求最大项与最小项，会用递推公式描述数列并求通项。",
+   "mastery_criteria": [
+    "能由通项公式写出数列的各项，并判断单调性与最大项、最小项",
+    "能用相邻两项之差或之比比较大小，处理含指数因子的最值问题",
+    "能由递推公式写出前几项，并用累加或构造等比数列的方法求通项"
+   ],
+   "misconceptions": [
+    "把数列与数集混为一谈，认为数列的项必须互不相同且可以任意交换顺序",
+    "判断单调性时只比较前两项，没有对一般的相邻两项作差",
+    "求最大项时只凭图像猜测位置，忽略项数必须是正整数",
+    "由递推公式累加求通项时忘记首项的取值"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1064_q1",
+     "topicId": "mhj_h1064",
+     "prompt": "下列关于数列的说法中，正确的是",
+     "question": "下列关于数列的说法中，正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "数列中的项必须互不相同"
+      },
+      {
+       "label": "B",
+       "text": "数列中的项可以交换顺序而不影响这个数列"
+      },
+      {
+       "label": "C",
+       "text": "数列中的项按一定顺序排列，且可以有相同的项"
+      },
+      {
+       "label": "D",
+       "text": "数列一定是无穷多个数排成的一列"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材指出集合中的元素无序且互异，而数列的项必须按一定顺序排列，并且项可以是相同的；项数有限的数列是有穷数列，所以数列不一定是无穷多个数排出的一列。"
+    },
+    {
+     "id": "mhj_h1064_q2",
+     "topicId": "mhj_h1064",
+     "prompt": "已知数列的通项公式为第 n 项等于 n 减 2 的差除以 n 加 1 的和，求该数列的第 4 项",
+     "question": "已知数列的通项公式为第 n 项等于 n 减 2 的差除以 n 加 1 的和，求该数列的第 4 项",
+     "answer": 0.4,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 0.4}",
+     "explanation": "把 n 等于 4 代入通项公式，分子为 4 减 2 等于 2，分母为 4 加 1 等于 5，所以第 4 项等于 2/5，写成小数是 0.4。"
+    },
+    {
+     "id": "mhj_h1064_q3",
+     "topicId": "mhj_h1064",
+     "prompt": "已知数列的通项公式为第 n 项等于 1 加上 1/2 的 n 次方，求该数列的第 3 项",
+     "question": "已知数列的通项公式为第 n 项等于 1 加上 1/2 的 n 次方，求该数列的第 3 项",
+     "answer": "9/8",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "把 n 等于 3 代入，1/2 的 3 次方等于 1/8，所以第 3 项等于 1 加 1/8，通分后等于 9/8。"
+    },
+    {
+     "id": "mhj_h1064_q4",
+     "topicId": "mhj_h1064",
+     "prompt": "已知数列的通项公式为第 n 项等于 2n 减 7 的绝对值，该数列的最小项是",
+     "question": "已知数列的通项公式为第 n 项等于 2n 减 7 的绝对值，该数列的最小项是",
+     "options": [
+      {
+       "label": "A",
+       "text": "第 1 项"
+      },
+      {
+       "label": "B",
+       "text": "第 3 项和第 4 项"
+      },
+      {
+       "label": "C",
+       "text": "第 7 项"
+      },
+      {
+       "label": "D",
+       "text": "不存在最小项"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "当 n 等于 3 时 2n 减 7 等于 -1，绝对值为 1；当 n 等于 4 时等于 1，绝对值也是 1；其余正整数代入后绝对值都大于 1，所以最小项是第 3 项和第 4 项。"
+    },
+    {
+     "id": "mhj_h1064_q5",
+     "topicId": "mhj_h1064",
+     "prompt": "在平面上画 n 条直线，任意两条都相交且任意三条不共点，这 n 条直线把平面分成的部分数满足首项为 2、后一项比前一项多 n，求 5 条直线把平面分成的部分数",
+     "question": "在平面上画 n 条直线，任意两条都相交且任意三条不共点，这 n 条直线把平面分成的部分数满足首项为 2、后一项比前一项多 n，求 5 条直线把平面分成的部分数",
+     "answer": 16,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 16}",
+     "explanation": "按递推关系依次计算，第 2 项为 2 加 2 等于 4，第 3 项为 4 加 3 等于 7，第 4 项为 7 加 4 等于 11，第 5 项为 11 加 5 等于 16。"
+    },
+    {
+     "id": "mhj_h1064_q6",
+     "topicId": "mhj_h1064",
+     "prompt": "已知数列的首项为 1，且从第二项起每一项等于前一项的 2 倍再加 1，求该数列的通项公式",
+     "question": "已知数列的首项为 1，且从第二项起每一项等于前一项的 2 倍再加 1，求该数列的通项公式",
+     "answer": "an 等于 2 的 n 次方减 1",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "在递推式两边同时加 1，得第 n 项加 1 等于前一项加 1 的 2 倍，所以各项加 1 后构成首项为 2、公比为 2 的等比数列，从而第 n 项等于 2 的 n 次方减 1。"
+    },
+    {
+     "id": "mhj_h1064_q7",
+     "topicId": "mhj_h1064",
+     "prompt": "已知数列的通项公式为第 n 项等于 n 加 1 的和乘以 9/10 的 n 减 1 次方，该数列的最大项是",
+     "question": "已知数列的通项公式为第 n 项等于 n 加 1 的和乘以 9/10 的 n 减 1 次方，该数列的最大项是",
+     "options": [
+      {
+       "label": "A",
+       "text": "第 7 项"
+      },
+      {
+       "label": "B",
+       "text": "第 8 项"
+      },
+      {
+       "label": "C",
+       "text": "第 10 项"
+      },
+      {
+       "label": "D",
+       "text": "第 8 项和第 9 项"
+      }
+     ],
+     "answer": "D",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "作相邻两项之差，得差等于 9/10 的 n 减 1 次方乘以 8 减 n 的差再除以 10，所以 n 小于 8 时数列递增，n 等于 8 时相邻两项相等，n 大于 8 时递减，最大项是第 8 项和第 9 项。"
+    },
+    {
+     "id": "mhj_h1064_q8",
+     "topicId": "mhj_h1064",
+     "prompt": "已知数列的通项公式为第 n 项等于 n 的平方加 λ 乘 n，若该数列为严格增数列，求常数 λ 的取值范围",
+     "question": "已知数列的通项公式为第 n 项等于 n 的平方加 λ 乘 n，若该数列为严格增数列，求常数 λ 的取值范围",
+     "answer": "λ 大于 -3",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "相邻两项作差得 2n 加 1 加 λ，要求它对一切正整数 n 都大于 0，只需 n 等于 1 时的最小值 3 加 λ 大于 0，所以 λ 大于 -3。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1065",
+   "page": 168,
+   "description": "理解数学归纳法两个步骤的含义与递推思想，能按步骤证明与正整数有关的等式，并会用先计算、再猜想、后证明的方式求数列通项。",
+   "mastery_criteria": [
+    "能说明第一步验证基础与第二步递推证明缺一不可",
+    "能按两个步骤规范书写与正整数有关的等式的证明过程",
+    "能由前几项归纳猜想通项公式，再用数学归纳法加以证明"
+   ],
+   "misconceptions": [
+    "只写了第二步的递推证明，漏掉验证第一个值时命题成立",
+    "在第二步中把要证明的结论直接当成已知条件使用",
+    "把假设 n 等于 k 时成立误写成对所有正整数都成立",
+    "初始值不是 1 的命题仍从 n 等于 1 开始验证"
+   ],
+   "type": "procedural",
+   "questions": [
+    {
+     "id": "mhj_h1065_q1",
+     "topicId": "mhj_h1065",
+     "prompt": "用数学归纳法证明 1 加 a 加 a 的平方一直加到 a 的 n 加 1 次方等于 1 减 a 的 n 加 2 次方除以 1 减 a，在验证 n 等于 1 时等式左边为",
+     "question": "用数学归纳法证明 1 加 a 加 a 的平方一直加到 a 的 n 加 1 次方等于 1 减 a 的 n 加 2 次方除以 1 减 a，在验证 n 等于 1 时等式左边为",
+     "options": [
+      {
+       "label": "A",
+       "text": "1"
+      },
+      {
+       "label": "B",
+       "text": "1 加 a"
+      },
+      {
+       "label": "C",
+       "text": "1 加 a 加 a 的平方"
+      },
+      {
+       "label": "D",
+       "text": "1 加 a 加 a 的平方加 a 的立方"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "当 n 等于 1 时末项是 a 的 2 次方，所以左边从 a 的 0 次方一直加到 a 的 2 次方，即 1 加 a 加 a 的平方。"
+    },
+    {
+     "id": "mhj_h1065_q2",
+     "topicId": "mhj_h1065",
+     "prompt": "用数学归纳法证明 1 加 2 加 2 的平方一直加到 2 的 n 减 1 次方等于 2 的 n 次方减 1，当 n 等于 3 时等式右边的值是多少",
+     "question": "用数学归纳法证明 1 加 2 加 2 的平方一直加到 2 的 n 减 1 次方等于 2 的 n 次方减 1，当 n 等于 3 时等式右边的值是多少",
+     "answer": 7,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 7}",
+     "explanation": "把 n 等于 3 代入右边，得 2 的 3 次方减 1，即 8 减 1 等于 7；左边 1 加 2 加 4 也等于 7，说明此时等式成立。"
+    },
+    {
+     "id": "mhj_h1065_q3",
+     "topicId": "mhj_h1065",
+     "prompt": "用数学归纳法证明 1 的立方加 2 的立方一直加到 n 的立方等于 n 乘 n 加 1 的和再除以 2 的平方，当 n 等于 3 时等式左边的值是多少",
+     "question": "用数学归纳法证明 1 的立方加 2 的立方一直加到 n 的立方等于 n 乘 n 加 1 的和再除以 2 的平方，当 n 等于 3 时等式左边的值是多少",
+     "answer": "36",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "n 等于 3 时左边等于 1 加 8 加 27，等于 36；右边等于 3 乘 4 除以 2 的平方，即 6 的平方，也等于 36。"
+    },
+    {
+     "id": "mhj_h1065_q4",
+     "topicId": "mhj_h1065",
+     "prompt": "有人证明 2 加 4 加 6 一直加到 2n 等于 n 的平方加 n 加 1 时，只写了假设 n 等于 k 时等式成立并推出 n 等于 k 加 1 时也成立，这个证明的错误在于",
+     "question": "有人证明 2 加 4 加 6 一直加到 2n 等于 n 的平方加 n 加 1 时，只写了假设 n 等于 k 时等式成立并推出 n 等于 k 加 1 时也成立，这个证明的错误在于",
+     "options": [
+      {
+       "label": "A",
+       "text": "第二步的代数变形算错了"
+      },
+      {
+       "label": "B",
+       "text": "缺少验证 n 等于 1 时命题是否成立"
+      },
+      {
+       "label": "C",
+       "text": "假设 n 等于 k 时用了错误的等式"
+      },
+      {
+       "label": "D",
+       "text": "没有说明 k 是正整数"
+      }
+     ],
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "这个证明只有第二步的递推，没有验证第一个值时命题是否成立；事实上 n 等于 1 时左边为 2，右边为 3，等式并不成立，所以缺少对基础的检验就会把错误命题当成真命题。"
+    },
+    {
+     "id": "mhj_h1065_q5",
+     "topicId": "mhj_h1065",
+     "prompt": "若等式 1 的平方加 2 的平方一直加到 n 的平方等于 a 乘 n 的立方加 b 乘 n 的平方加 c 乘 n 对任意正整数 n 都成立，求 a 加 b 加 c 的值",
+     "question": "若等式 1 的平方加 2 的平方一直加到 n 的平方等于 a 乘 n 的立方加 b 乘 n 的平方加 c 乘 n 对任意正整数 n 都成立，求 a 加 b 加 c 的值",
+     "answer": 1,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"num\", \"value\": 1}",
+     "explanation": "令 n 等于 1，左边为 1，右边为 a 加 b 加 c，所以 a 加 b 加 c 等于 1；这与教材求得的三分之一、二分之一、六分之一之和也相符。"
+    },
+    {
+     "id": "mhj_h1065_q6",
+     "topicId": "mhj_h1065",
+     "prompt": "用数学归纳法证明 1 加 3 加 5 一直加到 2n 减 1 等于 n 的平方时，若已假设 n 等于 k 时等式成立，请写出 n 等于 k 加 1 时左边的化简结果",
+     "question": "用数学归纳法证明 1 加 3 加 5 一直加到 2n 减 1 等于 n 的平方时，若已假设 n 等于 k 时等式成立，请写出 n 等于 k 加 1 时左边的化简结果",
+     "answer": "k 的平方加 2k 加 1，即 k 加 1 的和的平方",
+     "type": "short-answer",
+     "difficulty": "standard",
+     "explanation": "n 等于 k 加 1 时左边比原来多出末项 2k 加 1，由假设可把前面的和换成 k 的平方，于是左边等于 k 的平方加 2k 加 1，正好是 k 加 1 的和的平方。"
+    },
+    {
+     "id": "mhj_h1065_q7",
+     "topicId": "mhj_h1065",
+     "prompt": "是否存在常数 a、b，使 1 的平方加 3 的平方一直加到 2n 减 1 的平方等于 a 乘 n 的立方加 b 乘 n 对任意正整数 n 都成立，下列结论正确的是",
+     "question": "是否存在常数 a、b，使 1 的平方加 3 的平方一直加到 2n 减 1 的平方等于 a 乘 n 的立方加 b 乘 n 对任意正整数 n 都成立，下列结论正确的是",
+     "options": [
+      {
+       "label": "A",
+       "text": "a 等于 4/3，b 等于 -1/3"
+      },
+      {
+       "label": "B",
+       "text": "a 等于 1/3，b 等于 2/3"
+      },
+      {
+       "label": "C",
+       "text": "a 等于 2，b 等于 -1"
+      },
+      {
+       "label": "D",
+       "text": "不存在这样的常数"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "hard",
+     "explanation": "令 n 等于 1 得 a 加 b 等于 1，令 n 等于 2 得 8a 加 2b 等于 10，联立解得 a 等于 4/3、b 等于 -1/3；再用 n 等于 3 检验，左右两边都等于 35，符合猜想。"
+    },
+    {
+     "id": "mhj_h1065_q8",
+     "topicId": "mhj_h1065",
+     "prompt": "已知数列的首项为 1，且从第二项起满足后一项等于 3 乘前一项的积除以前一项加 3 的和，先计算前四项，再猜想该数列的通项公式",
+     "question": "已知数列的首项为 1，且从第二项起满足后一项等于 3 乘前一项的积除以前一项加 3 的和，先计算前四项，再猜想该数列的通项公式",
+     "answer": "an 等于 3 除以 n 加 2 的和",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "依次代入得第 2 项为 3/4，第 3 项为 3/5，第 4 项为 3/6 即 1/2，分子恒为 3 而分母依次为 4、5、6，故猜想第 n 项等于 3 除以 n 加 2 的和，可用数学归纳法证明。"
+    }
+   ]
+  },
+  {
+   "id": "mhj_h1066",
+   "page": 176,
+   "description": "理解迭代算法中初值、迭代序列与递推公式的含义，会用巴比伦算法由初值逐步算出根号 2 的近似值并说明其逼近理由。",
+   "mastery_criteria": [
+    "能说明迭代算法由初值与递推公式构成，并写出求根号 2 时对应的函数表达式",
+    "能由给定的初值逐次代入递推公式，算出迭代序列的前几项",
+    "能说明迭代序列趋于方程正根的理由，并解释初值需取正数的原因"
+   ],
+   "misconceptions": [
+    "把初值取为 0，导致递推公式中出现除以零",
+    "认为迭代一次就能得到精确值，忽略迭代序列是逐步逼近的",
+    "把递推公式记成前一项与 2 的差的平均，写错变形后的式子",
+    "认为迭代次数越多误差越大，误判逼近的方向"
+   ],
+   "type": "conceptual",
+   "questions": [
+    {
+     "id": "mhj_h1066_q1",
+     "topicId": "mhj_h1066",
+     "prompt": "在迭代算法中，先选定的那个用来反复代入递推公式的第一个数，通常称为",
+     "question": "在迭代算法中，先选定的那个用来反复代入递推公式的第一个数，通常称为",
+     "options": [
+      {
+       "label": "A",
+       "text": "初值"
+      },
+      {
+       "label": "B",
+       "text": "公差"
+      },
+      {
+       "label": "C",
+       "text": "公比"
+      },
+      {
+       "label": "D",
+       "text": "极限"
+      }
+     ],
+     "answer": "A",
+     "type": "choice",
+     "difficulty": "basic",
+     "explanation": "教材把迭代算法中选定的首项称为初值，由初值和递推公式反复计算得到的数列称为迭代序列，这种求方程近似解的方法称为迭代算法。"
+    },
+    {
+     "id": "mhj_h1066_q2",
+     "topicId": "mhj_h1066",
+     "prompt": "取初值 x1 等于 1，并按后一项等于前一项与 2 除以前一项的和的一半进行迭代，求 x2 的值",
+     "question": "取初值 x1 等于 1，并按后一项等于前一项与 2 除以前一项的和的一半进行迭代，求 x2 的值",
+     "answer": 1.5,
+     "type": "numeric",
+     "difficulty": "basic",
+     "verify": "{\"type\": \"num\", \"value\": 1.5}",
+     "explanation": "把 x1 等于 1 代入递推公式，1 加 2 除以 1 的和等于 3，再取一半得 1.5，所以 x2 等于 1.5。"
+    },
+    {
+     "id": "mhj_h1066_q3",
+     "topicId": "mhj_h1066",
+     "prompt": "用迭代法求根号 2 时，把方程 x 的平方等于 2 变形成 x 等于 f 在 x 处的值，请写出这个 f 的表达式",
+     "question": "用迭代法求根号 2 时，把方程 x 的平方等于 2 变形成 x 等于 f 在 x 处的值，请写出这个 f 的表达式",
+     "answer": "f 在 x 处等于二分之一乘 x 加 x 分之 2 的和",
+     "type": "fill",
+     "difficulty": "basic",
+     "explanation": "方程 x 的平方等于 2 且 x 为正数，两边除以 x 得 x 等于 2 除以 x，再与 x 相加后取一半，所以 f 在 x 处等于二分之一乘 x 加 x 分之 2 的和。"
+    },
+    {
+     "id": "mhj_h1066_q4",
+     "topicId": "mhj_h1066",
+     "prompt": "按后一项等于前一项与 2 除以前一项的和的一半构造的迭代序列，随着序数不断增大，它的值越来越接近于",
+     "question": "按后一项等于前一项与 2 除以前一项的和的一半构造的迭代序列，随着序数不断增大，它的值越来越接近于",
+     "options": [
+      {
+       "label": "A",
+       "text": "0"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "根号 2"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "C",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "该递推公式由方程 x 的平方等于 2 变形得到，序列的项逐步逼近这个方程的正根，也就是根号 2；教材取初值 1 迭代后得到的值依次趋于 1.414 左右。"
+    },
+    {
+     "id": "mhj_h1066_q5",
+     "topicId": "mhj_h1066",
+     "prompt": "取初值 x1 等于 1，按后一项等于前一项与 2 除以前一项的和的一半迭代，求 x4 的近似值，结果保留六位小数",
+     "question": "取初值 x1 等于 1，按后一项等于前一项与 2 除以前一项的和的一半迭代，求 x4 的近似值，结果保留六位小数",
+     "answer": 1.414216,
+     "type": "numeric",
+     "difficulty": "standard",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 577}, {\"type\": \"num\", \"value\": 408}]}",
+     "explanation": "由 x1 等于 1 得 x2 等于 3/2，x3 等于 17/12，再代入得 x4 等于 577/408，约等于 1.414216，已经非常接近根号 2 的值。"
+    },
+    {
+     "id": "mhj_h1066_q6",
+     "topicId": "mhj_h1066",
+     "prompt": "取初值 x1 等于 2，按后一项等于前一项与 2 除以前一项的和的一半迭代，则 x3 等于",
+     "question": "取初值 x1 等于 2，按后一项等于前一项与 2 除以前一项的和的一半迭代，则 x3 等于",
+     "answer": "B",
+     "type": "choice",
+     "difficulty": "standard",
+     "explanation": "先算第 2 项，2 加 1 的和的一半等于 3/2；再以 3/2 代入，3/2 加 2 除以 3/2 得 3/2 加 4/3，和的一半等于 17/12。",
+     "options": [
+      {
+       "label": "A",
+       "text": "3/2"
+      },
+      {
+       "label": "B",
+       "text": "17/12"
+      },
+      {
+       "label": "C",
+       "text": "7/5"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ]
+    },
+    {
+     "id": "mhj_h1066_q7",
+     "topicId": "mhj_h1066",
+     "prompt": "在求根号 2 的迭代序列中，若某一次算得的项恰好等于 3，求紧接着的下一项的值",
+     "question": "在求根号 2 的迭代序列中，若某一次算得的项恰好等于 3，求紧接着的下一项的值",
+     "answer": 1.8333333,
+     "type": "numeric",
+     "difficulty": "hard",
+     "verify": "{\"type\": \"op\", \"op\": \"div\", \"values\": [{\"type\": \"num\", \"value\": 11}, {\"type\": \"num\", \"value\": 6}]}",
+     "explanation": "把 3 代入递推公式，3 与 2 除以 3 的和等于 11/3，再取一半得 11/6，约等于 1.8333333，可见初值取得较远时序列也会逐步靠近根号 2。"
+    },
+    {
+     "id": "mhj_h1066_q8",
+     "topicId": "mhj_h1066",
+     "prompt": "设按后一项等于前一项与 2 除以前一项的和的一半得到的迭代序列越来越接近于某个正数 L，请说明 L 满足的方程，并解释为什么初值不能取 0",
+     "question": "设按后一项等于前一项与 2 除以前一项的和的一半得到的迭代序列越来越接近于某个正数 L，请说明 L 满足的方程，并解释为什么初值不能取 0",
+     "answer": "L 的平方等于 2；取 0 作初值时递推式要除以 0，式子没有意义",
+     "type": "short-answer",
+     "difficulty": "hard",
+     "explanation": "对递推式两边取极限，得 L 等于 L 与 L 分之 2 的和的一半，化简得 L 的平方等于 2，所以 L 是根号 2；而初值取 0 时递推式中出现除以 0，计算无法进行。"
+    }
+   ]
+  }
+ ]
+}
