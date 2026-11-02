@@ -25,6 +25,9 @@
   // 没有该文件时回退到上面的 SUBJECT_NAME，再回退到 id 本身。
   const EDITION_LABEL = {};
   const subjectLabel = (s) => SUBJECT_NAME[s] || EDITION_LABEL[s] || s;
+  // 下拉项要连教材版本一起说：单版本学科若只写「数学」，同列里就与「数学·北京版」不成体系
+  // （EDITION_LABEL 由 subject-groups.json 拼成「学科名·版本名」，缺数据时退回学科名）
+  const subjectOptionLabel = (s) => EDITION_LABEL[s] || SUBJECT_NAME[s] || s;
   const loadEditionLabels = async () => {
     try {
       const g = await (await fetch('../data/subject-groups.json', { cache: 'no-cache' })).json();
@@ -545,7 +548,7 @@
 
     if (subjSel) {
       subjSel.innerHTML = Object.keys(subjects)
-        .map(s => `<option value="${esc(s)}">${esc(subjectLabel(s))}（${subjects[s].count} 卷）</option>`).join('');
+        .map(s => `<option value="${esc(s)}">${esc(subjectOptionLabel(s))}（${subjects[s].count} 卷）</option>`).join('');
       subjSel.disabled = Object.keys(subjects).length <= 1;
       subjSel.onchange = fillEditions;
     }
