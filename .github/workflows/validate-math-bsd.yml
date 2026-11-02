@@ -1,0 +1,89 @@
+name: Validate math-bsd Subject Data
+
+# 北师大版数学（math-bsd）学科专用工作流。
+# 单独成文件：validate.yml 由并行会话维护，避免多人同改一份 workflow 互相卷进提交。
+
+on:
+  push:
+    paths:
+      - 'data/math-bsd/**/*.json'
+      - 'data/math-bsd/**/*.md'
+      - 'scripts/test_math_bsd.py'
+      - 'scripts/check_math_bsd_exam.py'
+      - 'scripts/check_math_bsd_learn.py'
+      - 'scripts/check_math_bsd_lecture.py'
+      - 'scripts/merge_learn_parts.py'
+      - 'scripts/gen_bsd_learn_shards.py'
+      - 'scripts/make_bsd_unit_specs.py'
+      - 'scripts/gen_exam_shards.py'
+      - '.github/workflows/validate-math-bsd.yml'
+  pull_request:
+    paths:
+      - 'data/math-bsd/**/*.json'
+      - 'scripts/test_math_bsd.py'
+      - '.github/workflows/validate-math-bsd.yml'
+  workflow_dispatch:
+
+jobs:
+  math_bsd:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Subject invariants · math-bsd
+        run: python3 scripts/test_math_bsd.py
+
+      - name: Every exam item carries itemId（整卷测试作答依赖）
+        run: |
+          python3 - <<'PY'
+          import glob, json, sys
+          bad = []
+          for p in glob.glob('data/math-bsd/exams/*/*.json'):
+              d = json.load(open(p, encoding='utf-8'))
+              for sec in d.get('sections') or []:
+                  for it in sec.get('items') or []:
+                      if not it.get('itemId'):
+                          bad.append((p, it.get('no')))
+          print('缺 itemId 的题：', len(bad))
+          for b in bad[:10]:
+              print(' ', b)
+          sys.exit(1 if bad else 0)
+          PY
+
+      - name: Exam gate · math-bsd（逐卷跑卷面检查）
+        run: |
+          n=0
+          for p in data/math-bsd/exams/*/*.json; do
+            python3 scripts/check_math_bsd_exam.py "$p" > /tmp/e.log 2>&1 || { echo "FAIL $p"; tail -8 /tmp/e.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 卷"
+
+      - name: Learn gate · math-bsd（成篇学层逐册跑）
+        run: |
+          shopt -s nullglob
+          files=(data/math-bsd/learn/*.json)
+          if [ ${#files[@]} -eq 0 ]; then echo "无学层成篇，跳过"; exit 0; fi
+          n=0
+          for f in "${files[@]}"; do
+            python3 scripts/check_math_bsd_learn.py "$f" > /tmp/l.log 2>&1 || { echo "FAIL $f"; tail -8 /tmp/l.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 册学层"
+
+      - name: Lecture gate · math-bsd（讲解逐份跑）
+        run: |
+          shopt -s nullglob
+          files=(data/math-bsd/exam_lectures/*/*.json)
+          if [ ${#files[@]} -eq 0 ]; then echo "无讲解文件，跳过"; exit 0; fi
+          n=0
+          for f in "${files[@]}"; do
+            python3 scripts/check_math_bsd_lecture.py "$f" > /tmp/c.log 2>&1 || { echo "FAIL $f"; tail -8 /tmp/c.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 份讲解"
