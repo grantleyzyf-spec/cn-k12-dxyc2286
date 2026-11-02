@@ -1,0 +1,1435 @@
+{
+ "book": "必修第二册",
+ "unit_no": "五",
+ "unit_name": "复数",
+ "topics": [
+  {
+   "id": "mbs_h117",
+   "type": "conceptual",
+   "description": "从方程 x 的平方加 1 等于 0 在实数范围内无解出发，引入虚数单位 i 与复数 a + bi 的代数形式，明确实部与虚部的含义，是本章全部运算与几何解释的起点。",
+   "mastery_criteria": [
+    "能说出虚数单位 i 的规定并计算 i 的低次幂",
+    "能写出复数的代数形式并正确指出实部与虚部",
+    "能说明实数与复数的包含关系"
+   ],
+   "diagnostic_question": {
+    "question": "复数 5 - 2i 的实部和虚部各是多少？",
+    "answer": "实部是 5，虚部是 -2"
+   }
+  },
+  {
+   "id": "mbs_h118",
+   "type": "conceptual",
+   "description": "在复数代数形式的基础上，按虚部是否为零把复数分为实数、虚数与纯虚数，并给出两个复数相等的充要条件，是解决含参复数问题的主要工具。",
+   "mastery_criteria": [
+    "能按实部、虚部的情况对复数正确分类",
+    "能由纯虚数或实数的条件列方程求参数",
+    "能用实部、虚部分别相等求未知数"
+   ],
+   "diagnostic_question": {
+    "question": "复数 3i 是实数、虚数还是纯虚数？",
+    "answer": "是纯虚数，实部为 0 且虚部不为 0"
+   }
+  },
+  {
+   "id": "mbs_h119",
+   "type": "conceptual",
+   "description": "把复数 a + bi 与复平面内的点 Z(a, b)、向量 OZ 对应起来，用图形刻画实部、虚部与点的位置关系，为模的计算和向量运算提供直观模型。",
+   "mastery_criteria": [
+    "能由复数的实部、虚部确定对应点所在象限",
+    "能由复平面内的点写出对应的复数",
+    "能说明复数与复平面内向量的对应关系"
+   ],
+   "diagnostic_question": {
+    "question": "复数 -2 + 3i 对应的点在第几象限？",
+    "answer": "在第二象限"
+   },
+   "domain": "数与代数",
+   "tags": null
+  },
+  {
+   "id": "mbs_h120",
+   "type": "procedural",
+   "description": "给出复数模与共轭复数的定义和计算公式，明确模的几何意义是对应点到原点的距离，并建立复数与其共轭复数之积等于模的平方这一常用关系。",
+   "mastery_criteria": [
+    "能由代数形式准确求出复数的模",
+    "能写出复数的共轭复数并判断其位置关系",
+    "能用复数与共轭复数之积等于模的平方化简计算"
+   ],
+   "diagnostic_question": {
+    "question": "复数 3 + 4i 的模是多少？",
+    "answer": "模等于 5"
+   }
+  },
+  {
+   "id": "mbs_h121",
+   "type": "procedural",
+   "description": "掌握复数加法和减法的代数法则，即实部与实部、虚部与虚部分别相加减，并从向量加减的角度理解其几何意义，为后续的乘法与除法运算作准备。",
+   "mastery_criteria": [
+    "能正确完成复数的加减运算并整理为标准形式",
+    "能由和或差反求其中一个复数",
+    "能用向量加法说明复数加减的几何意义"
+   ],
+   "diagnostic_question": {
+    "question": "计算 (1 + 3i) + (2 - i) 的结果。",
+    "answer": "结果是 3 + 2i"
+   }
+  },
+  {
+   "id": "mbs_h122",
+   "type": "procedural",
+   "description": "按多项式乘法法则展开后把 i 的平方换成 -1 化简，得到复数的乘法法则；并由此建立复数与其共轭复数之积为实数的重要结论，用于后续除法。",
+   "mastery_criteria": [
+    "能按多项式乘法展开并正确化简为代数形式",
+    "能用 i 的平方等于 -1 处理高次幂",
+    "能利用共轭复数的乘积把结果化为实数"
+   ],
+   "diagnostic_question": {
+    "question": "计算 (1 + i) 乘以 (1 - i) 的结果。",
+    "answer": "结果是 2"
+   }
+  },
+  {
+   "id": "mbs_h123",
+   "type": "procedural",
+   "description": "通过分子与分母同乘分母的共轭复数实现分母实数化，从而完成复数的除法运算，并把结果整理为标准的代数形式，是复数四则运算的最后一环。",
+   "mastery_criteria": [
+    "能正确找出分母的共轭复数并完成实数化",
+    "能把商整理成实部加虚部单位的形式",
+    "能处理形如纯虚数作分母的简单情形"
+   ],
+   "diagnostic_question": {
+    "question": "化简 (2 + 2i) 除以 (1 + i) 的结果。",
+    "answer": "结果是 2"
+   }
+  },
+  {
+   "id": "mbs_h124",
+   "type": "reasoning",
+   "description": "当判别式小于 0 时，实系数一元二次方程在复数集内有一对共轭虚根，本节用求根公式与两根之和、两根之积的关系处理求根及含参问题。",
+   "mastery_criteria": [
+    "能判断方程在复数集内根的类型",
+    "能由一根求出另一共轭虚根",
+    "能用韦达关系求方程中的待定系数"
+   ],
+   "diagnostic_question": {
+    "question": "方程 x 的平方加 1 等于 0 在复数集内的根是什么？",
+    "answer": "两个根是 i 和 -i"
+   }
+  },
+  {
+   "id": "mbs_h125",
+   "type": "conceptual",
+   "description": "用模与辐角刻画复数，写成 r(cos θ + i sin θ) 的三角形式，实现代数形式与三角形式的互相转化，为解释乘除运算的几何意义提供工具。",
+   "mastery_criteria": [
+    "能把简单的复数化为三角形式",
+    "能由三角形式读出模与辐角",
+    "能根据点所在象限确定辐角主值"
+   ],
+   "diagnostic_question": {
+    "question": "复数 2i 的三角形式是什么？",
+    "answer": "是 2(cos 90° + i sin 90°)"
+   },
+   "domain": "数与代数",
+   "tags": null
+  },
+  {
+   "id": "mbs_h126",
+   "type": "reasoning",
+   "description": "从模与辐角的变化规律解释复数乘法与除法的几何意义，即模相乘除、辐角相加减，从而把复数运算转化为复平面内向量的旋转与伸缩。",
+   "mastery_criteria": [
+    "能用模与辐角叙述乘除法的几何意义",
+    "能判断乘除运算后对应点位置的变化",
+    "能解释乘以虚数单位 i 相当于逆时针旋转 90°"
+   ],
+   "diagnostic_question": {
+    "question": "复数 z 乘以 i 后，对应向量发生什么变化？",
+    "answer": "绕原点逆时针旋转 90°，模不变"
+   },
+   "domain": "数与代数",
+   "tags": null
+  }
+ ],
+ "questions": [
+  {
+   "id": "mbs_q740001",
+   "topicId": "mbs_h117",
+   "prompt": "已知 i 是虚数单位，则 i 的三次方的值是多少？",
+   "question": "已知 i 是虚数单位，则 i 的三次方的值是多少？",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "A",
+   "explanation": "因为 i 的平方等于 -1，所以 i 的三次方等于 i 的平方乘以 i，即 -i。选 i 的忽略了符号，选 1 与 -1 的混淆了幂的周期。",
+   "options": [
+    {
+     "label": "A",
+     "text": "-i"
+    },
+    {
+     "label": "B",
+     "text": "i"
+    },
+    {
+     "label": "C",
+     "text": "1"
+    },
+    {
+     "label": "D",
+     "text": "-1"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q740002",
+   "topicId": "mbs_h117",
+   "prompt": "复数 z = -3 + 4i 的实部和虚部分别是多少？",
+   "question": "复数 z = -3 + 4i 的实部和虚部分别是多少？",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "B",
+   "explanation": "复数 a + bi 中 a 是实部、b 是虚部，故实部为 -3，虚部为 4。虚部只取系数 4，不带虚数单位 i，选 4i 的正是此处出错。",
+   "options": [
+    {
+     "label": "A",
+     "text": "3 和 4"
+    },
+    {
+     "label": "B",
+     "text": "-3 和 4"
+    },
+    {
+     "label": "C",
+     "text": "-3 和 4i"
+    },
+    {
+     "label": "D",
+     "text": "4 和 -3"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q740003",
+   "topicId": "mbs_h117",
+   "prompt": "已知一个复数的实部是 -4，虚部是 7，请写出它的代数形式。",
+   "question": "已知一个复数的实部是 -4，虚部是 7，请写出它的代数形式。",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "-4+7i",
+   "explanation": "复数的代数形式为 a + bi，把实部 -4 与虚部 7 代入即得 -4 + 7i，注意虚部为负数时直接用减号连接。"
+  },
+  {
+   "id": "mbs_q740004",
+   "topicId": "mbs_h117",
+   "prompt": "已知 i 是虚数单位，计算 i 的 2031 次方，结果写成最简形式。",
+   "question": "已知 i 是虚数单位，计算 i 的 2031 次方，结果写成最简形式。",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "-i",
+   "explanation": "i 的幂以 4 为周期循环，2031 除以 4 余 3，故 i 的 2031 次方等于 i 的三次方，即 -i。"
+  },
+  {
+   "id": "mbs_q740005",
+   "topicId": "mbs_h117",
+   "prompt": "设 z = 3 - 7i，求它的实部与虚部的平方和。",
+   "question": "设 z = 3 - 7i，求它的实部与虚部的平方和。",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "58",
+   "explanation": "实部为 3、虚部为 -7，平方和为 9 加 49 等于 58。计算时虚部要连符号一起平方，负数平方后仍为正。",
+   "verify": "3**2+(-7)**2"
+  },
+  {
+   "id": "mbs_q740006",
+   "topicId": "mbs_h117",
+   "prompt": "若复数 (a - 5) + 2i 的实部为 0，其中 a 是实数，求 a 的平方。",
+   "question": "若复数 (a - 5) + 2i 的实部为 0，其中 a 是实数，求 a 的平方。",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "25",
+   "explanation": "实部为 0 即 a - 5 = 0，得 a = 5，所以 a 的平方为 25。注意只让实部为零，虚部 2 不影响取值。",
+   "verify": "5**2"
+  },
+  {
+   "id": "mbs_q740007",
+   "topicId": "mbs_h117",
+   "prompt": "为什么说实数集是复数集的子集？请结合代数形式说明，并写出实数 -6 的实部与虚部。",
+   "question": "为什么说实数集是复数集的子集？请结合代数形式说明，并写出实数 -6 的实部与虚部。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "实数可写成虚部为 0 的复数，故实数集包含于复数集；-6 的实部为 -6，虚部为 0",
+   "explanation": "复数的一般形式是 a + bi（a、b 为实数）。当虚部 b 等于 0 时，a + 0i 就是实数 a，因此每个实数都是复数，实数集是复数集的子集，而复数集还多出虚部不为 0 的虚数。",
+   "keypoints": [
+    "复数的代数形式是 a + bi，其中 a、b 都是实数",
+    "当虚部 b 等于 0 时复数就是实数，故实数集包含于复数集",
+    "实数 -6 的实部为 -6，虚部为 0"
+   ]
+  },
+  {
+   "id": "mbs_q740008",
+   "topicId": "mbs_h117",
+   "prompt": "虚数单位 i 是怎样规定的？请写出 i 的幂的循环规律，并说明引入它解决了什么问题。",
+   "question": "虚数单位 i 是怎样规定的？请写出 i 的幂的循环规律，并说明引入它解决了什么问题。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "规定 i 的平方等于 -1，i 的幂按 i、-1、-i、1 四个一组循环，使负数开平方成为可能",
+   "explanation": "人们规定 i 的平方等于 -1，从而负数也可以开平方。i 的幂以 4 为周期循环：i、-1、-i、1 反复出现，计算高次幂时只需看指数除以 4 的余数。有了 i，x 的平方加 1 等于 0 这类方程才有解，数集由实数集扩充为复数集。",
+   "keypoints": [
+    "规定 i 的平方等于 -1",
+    "i 的幂以 4 为周期循环：i、-1、-i、1",
+    "使 x 的平方加 1 等于 0 这类方程有解，数集扩充为复数集"
+   ]
+  },
+  {
+   "id": "mbs_q740009",
+   "topicId": "mbs_h118",
+   "prompt": "下列各数中，属于纯虚数的是哪一个？",
+   "question": "下列各数中，属于纯虚数的是哪一个？",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "C",
+   "explanation": "纯虚数要求实部为 0 且虚部不为 0。-5i 的实部为 0、虚部为 -5，符合定义；1 + i 与 2 - i 实部不为 0，0 是实数。",
+   "options": [
+    {
+     "label": "A",
+     "text": "1 + i"
+    },
+    {
+     "label": "B",
+     "text": "0"
+    },
+    {
+     "label": "C",
+     "text": "-5i"
+    },
+    {
+     "label": "D",
+     "text": "2 - i"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q740010",
+   "topicId": "mbs_h118",
+   "prompt": "若复数 (m - 1) + (m + 3)i 是实数，则实数 m 的值是多少？",
+   "question": "若复数 (m - 1) + (m + 3)i 是实数，则实数 m 的值是多少？",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "D",
+   "explanation": "复数为实数要求虚部等于 0，即 m + 3 = 0，得 m = -3。实部 m - 1 不影响它是实数，选 1 的误把实部当成了条件。",
+   "options": [
+    {
+     "label": "A",
+     "text": "1"
+    },
+    {
+     "label": "B",
+     "text": "3"
+    },
+    {
+     "label": "C",
+     "text": "0"
+    },
+    {
+     "label": "D",
+     "text": "-3"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q740011",
+   "topicId": "mbs_h118",
+   "prompt": "若 (x + 1) + (y - 2)i = 3 + 5i，其中 x、y 是实数，则 x 的值是多少？",
+   "question": "若 (x + 1) + (y - 2)i = 3 + 5i，其中 x、y 是实数，则 x 的值是多少？",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "2",
+   "explanation": "两复数相等则实部与虚部分别相等，由实部 x + 1 = 3 得 x = 2，由虚部还可得 y = 7。"
+  },
+  {
+   "id": "mbs_q740012",
+   "topicId": "mbs_h118",
+   "prompt": "若复数 (m + 2) + (m - 4)i 是纯虚数，则实数 m 等于多少？",
+   "question": "若复数 (m + 2) + (m - 4)i 是纯虚数，则实数 m 等于多少？",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "-2",
+   "explanation": "纯虚数要求实部为 0 且虚部不为 0，由 m + 2 = 0 得 m = -2，此时虚部为 -6 不等于 0，符合要求。"
+  },
+  {
+   "id": "mbs_q740013",
+   "topicId": "mbs_h118",
+   "prompt": "若 (a - 3) + (b + 1)i = 7 - 4i，其中 a、b 为实数，求 a 与 b 的和。",
+   "question": "若 (a - 3) + (b + 1)i = 7 - 4i，其中 a、b 为实数，求 a 与 b 的和。",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "5",
+   "explanation": "由实部相等得 a - 3 = 7，即 a = 10；由虚部相等得 b + 1 = -4，即 b = -5。两数之和为 10 加 -5 等于 5，注意虚部方程右边是 -4，移项后 b 为负数。",
+   "verify": "10+(-5)"
+  },
+  {
+   "id": "mbs_q740014",
+   "topicId": "mbs_h118",
+   "prompt": "若复数 (m 的平方 - 9) + (m - 3)i 是纯虚数，求实数 m 的值。",
+   "question": "若复数 (m 的平方 - 9) + (m - 3)i 是纯虚数，求实数 m 的值。",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "-3",
+   "explanation": "纯虚数要求实部为零，即 m 的平方减 9 等于 0，m 等于 3 或 -3；但 m 等于 3 时虚部也为 0，该复数是实数 0，故舍去，得 m 等于 -3。",
+   "verify": "0-3"
+  },
+  {
+   "id": "mbs_q740015",
+   "topicId": "mbs_h118",
+   "prompt": "请按实部与虚部的情况，把复数 a + bi（a、b 为实数）分成三类，并各举一个例子。",
+   "question": "请按实部与虚部的情况，把复数 a + bi（a、b 为实数）分成三类，并各举一个例子。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "分为实数、虚数与纯虚数三类，例子分别为 5、2 + 3i 与 -4i",
+   "explanation": "当 b 等于 0 时 a + bi 是实数，例如 5；当 b 不等于 0 时是虚数，例如 2 + 3i；在虚数中若还有 a 等于 0，就是纯虚数，例如 -4i。分类的关键看虚部是否为零，纯虚数还要额外要求实部为零。",
+   "keypoints": [
+    "b 等于 0 时为实数，例如 5",
+    "b 不等于 0 时为虚数，例如 2 + 3i",
+    "a 等于 0 且 b 不等于 0 时为纯虚数，例如 -4i"
+   ]
+  },
+  {
+   "id": "mbs_q740016",
+   "topicId": "mbs_h118",
+   "prompt": "两个复数相等的条件是什么？请说明为什么可以用它求未知数，并举一个例子。",
+   "question": "两个复数相等的条件是什么？请说明为什么可以用它求未知数，并举一个例子。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "实部与虚部分别相等；据此可列出两个实数方程求两个未知数",
+   "explanation": "两个复数相等，当且仅当它们的实部相等且虚部相等。这一条件把复数相等转化为两个实数等式，因此可以列方程组求未知数。例如由 (x - 1) + (y + 2)i = 2 - 3i 得 x - 1 = 2 与 y + 2 = -3，解得 x = 3、y = -5。",
+   "keypoints": [
+    "两复数相等当且仅当实部与虚部分别相等",
+    "由此可列出两个实数方程，求两个未知数",
+    "例：(x-1)+(y+2)i = 2 - 3i，得 x = 3、y = -5"
+   ]
+  },
+  {
+   "id": "mbs_q740017",
+   "topicId": "mbs_h119",
+   "prompt": "复数 z = 2 - 3i 在复平面内对应的点位于第几象限？",
+   "question": "复数 z = 2 - 3i 在复平面内对应的点位于第几象限？",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "A",
+   "explanation": "对应点的坐标为 (2, -3)，横坐标为正、纵坐标为负，故位于第四象限。选第一象限的忽略了虚部的负号。",
+   "options": [
+    {
+     "label": "A",
+     "text": "第四象限"
+    },
+    {
+     "label": "B",
+     "text": "第一象限"
+    },
+    {
+     "label": "C",
+     "text": "第二象限"
+    },
+    {
+     "label": "D",
+     "text": "第三象限"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q740018",
+   "topicId": "mbs_h119",
+   "prompt": "在复平面内，表示实数 -2 的点位于什么位置？",
+   "question": "在复平面内，表示实数 -2 的点位于什么位置？",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "C",
+   "explanation": "实数 -2 可写成 -2 + 0i，对应点 (-2, 0)，纵坐标为零，故落在实轴的负半轴上。它不在任何象限内，也不在虚轴上。",
+   "options": [
+    {
+     "label": "A",
+     "text": "第一象限"
+    },
+    {
+     "label": "B",
+     "text": "第二象限"
+    },
+    {
+     "label": "C",
+     "text": "实轴的负半轴上"
+    },
+    {
+     "label": "D",
+     "text": "虚轴上"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q740019",
+   "topicId": "mbs_h119",
+   "prompt": "复数 z = -5 + 2i 在复平面内对应的点的横坐标是多少？",
+   "question": "复数 z = -5 + 2i 在复平面内对应的点的横坐标是多少？",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "-5",
+   "explanation": "复数 a + bi 对应点 (a, b)，横坐标就是实部，故横坐标为 -5，纵坐标是虚部 2。"
+  },
+  {
+   "id": "mbs_q740020",
+   "topicId": "mbs_h119",
+   "prompt": "在复平面内，点 A(3, -4) 对应的复数，其虚部是多少？",
+   "question": "在复平面内，点 A(3, -4) 对应的复数，其虚部是多少？",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "-4",
+   "explanation": "点 (3, -4) 对应的复数为 3 - 4i，实部是横坐标 3，虚部是纵坐标 -4，注意虚部带符号。"
+  },
+  {
+   "id": "mbs_q740021",
+   "topicId": "mbs_h119",
+   "prompt": "在复平面内，复数 2 + i 与 5 + 5i 对应的两点之间的距离是多少？",
+   "question": "在复平面内，复数 2 + i 与 5 + 5i 对应的两点之间的距离是多少？",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "5",
+   "explanation": "两点坐标为 (2, 1) 与 (5, 5)，横坐标相差 3、纵坐标相差 4，由勾股定理距离为 5。复平面上两点距离即对应向量差的模。",
+   "verify": "((5-2)**2+(5-1)**2)**0.5"
+  },
+  {
+   "id": "mbs_q740022",
+   "topicId": "mbs_h119",
+   "prompt": "若复数 (a - 4) + (a + 1)i 在复平面内对应的点位于实轴上，求实数 a 的值。",
+   "question": "若复数 (a - 4) + (a + 1)i 在复平面内对应的点位于实轴上，求实数 a 的值。",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "-1",
+   "explanation": "点位于实轴上说明纵坐标为零，即虚部 a + 1 等于 0，得 a = -1，此时实部为 -5，对应点是 (-5, 0)。",
+   "verify": "0-1"
+  },
+  {
+   "id": "mbs_q740023",
+   "topicId": "mbs_h119",
+   "prompt": "请说明复数 z = a + bi 与复平面内的点 Z(a, b) 的对应关系，并解释为什么复数可以用向量表示。",
+   "question": "请说明复数 z = a + bi 与复平面内的点 Z(a, b) 的对应关系，并解释为什么复数可以用向量表示。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "实部对应横坐标、虚部对应纵坐标，点 Z 与向量 OZ 一一对应",
+   "explanation": "建立复平面后，每个复数 a + bi 唯一确定点 Z(a, b)，反之每个点也唯一确定一个复数，二者一一对应。把原点 O 与点 Z 连接起来得到向量 OZ，向量由起点和终点唯一确定，因此复数又能与向量一一对应，复数的加减就可以用向量的加减来解释。",
+   "keypoints": [
+    "实部 a 对应横坐标，虚部 b 对应纵坐标",
+    "点 Z(a,b) 与向量 OZ 一一对应",
+    "因此复数的加减可转化为向量的加减，几何意义直观"
+   ]
+  },
+  {
+   "id": "mbs_q740024",
+   "topicId": "mbs_h119",
+   "prompt": "已知复数 z 在复平面内对应的点在第二象限，请判断 z 的实部与虚部的符号，并说明它的共轭复数对应的点在第几象限。",
+   "question": "已知复数 z 在复平面内对应的点在第二象限，请判断 z 的实部与虚部的符号，并说明它的共轭复数对应的点在第几象限。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "实部小于 0、虚部大于 0；共轭复数对应的点在第三象限",
+   "explanation": "第二象限内点的横坐标为负、纵坐标为正，故实部小于 0、虚部大于 0。共轭复数把虚部变为相反数、实部不变，对应点关于实轴对称，由第二象限翻到第三象限，因此共轭复数对应的点在第三象限。",
+   "keypoints": [
+    "第二象限对应实部小于 0、虚部大于 0",
+    "共轭复数实部不变、虚部变号，两点关于实轴对称",
+    "故共轭复数对应的点在第三象限"
+   ]
+  },
+  {
+   "id": "mbs_q740025",
+   "topicId": "mbs_h120",
+   "prompt": "复数 z = 3 - 4i 的模等于多少？",
+   "question": "复数 z = 3 - 4i 的模等于多少？",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "C",
+   "explanation": "模等于实部平方与虚部平方之和再开方，即 9 加 16 等于 25，开方得 5。选 25 的忘了最后开方，选 7 的是把两数直接相加。",
+   "options": [
+    {
+     "label": "A",
+     "text": "7"
+    },
+    {
+     "label": "B",
+     "text": "25"
+    },
+    {
+     "label": "C",
+     "text": "5"
+    },
+    {
+     "label": "D",
+     "text": "1"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q740026",
+   "topicId": "mbs_h120",
+   "prompt": "复数 z = -2 + 5i 的共轭复数是什么？",
+   "question": "复数 z = -2 + 5i 的共轭复数是什么？",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "D",
+   "explanation": "共轭复数只把虚部变号，实部保持不变，故为 -2 - 5i。选 2 + 5i 的把实部也变了号，这是相反数而不是共轭。",
+   "options": [
+    {
+     "label": "A",
+     "text": "2 + 5i"
+    },
+    {
+     "label": "B",
+     "text": "2 - 5i"
+    },
+    {
+     "label": "C",
+     "text": "-2 + 5i"
+    },
+    {
+     "label": "D",
+     "text": "-2 - 5i"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q740027",
+   "topicId": "mbs_h120",
+   "prompt": "复数 z = 1 + i 的模是多少？结果写成根号形式。",
+   "question": "复数 z = 1 + i 的模是多少？结果写成根号形式。",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "√2",
+   "explanation": "模等于 1 的平方加 1 的平方再开方，即根号 2，约等于 1.414，是正实数，模不可能是负数。"
+  },
+  {
+   "id": "mbs_q740028",
+   "topicId": "mbs_h120",
+   "prompt": "若复数 z 的共轭复数为 4 - 3i，则 z 等于多少？",
+   "question": "若复数 z 的共轭复数为 4 - 3i，则 z 等于多少？",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "4+3i",
+   "explanation": "共轭关系是对称的，把 4 - 3i 的虚部再变一次号即得 z 等于 4 + 3i，实部仍为 4。"
+  },
+  {
+   "id": "mbs_q740029",
+   "topicId": "mbs_h120",
+   "prompt": "已知复数 z = 6 - 8i，求 z 与它的共轭复数乘积的实部。",
+   "question": "已知复数 z = 6 - 8i，求 z 与它的共轭复数乘积的实部。",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "100",
+   "explanation": "共轭复数为 6 + 8i，相乘得 36 加 64 等于 100，虚部相互抵消，结果是一个正实数，恰等于模的平方。",
+   "verify": "6**2+8**2"
+  },
+  {
+   "id": "mbs_q740030",
+   "topicId": "mbs_h120",
+   "prompt": "已知复数 z = 2 + 3i，求 z 的模的平方。",
+   "question": "已知复数 z = 2 + 3i，求 z 的模的平方。",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "13",
+   "explanation": "模的平方等于实部平方加虚部平方，即 4 加 9 等于 13，不必先开方再平方，可避免根号运算。",
+   "verify": "2**2+3**2"
+  },
+  {
+   "id": "mbs_q740031",
+   "topicId": "mbs_h120",
+   "prompt": "请写出复数 z = a + bi 的模与共轭复数的表达式，并说明 z 乘以它的共轭复数得到什么。",
+   "question": "请写出复数 z = a + bi 的模与共轭复数的表达式，并说明 z 乘以它的共轭复数得到什么。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "模等于 a 平方加 b 平方再开方，共轭复数为 a - bi，两者之积等于模的平方",
+   "explanation": "复数 a + bi 的模规定为实部平方与虚部平方之和的算术平方根，即 a 平方加 b 平方再开方，它是一个非负实数。共轭复数是 a - bi，实部不变、虚部取相反数。两者相乘时虚部抵消，结果为 a 平方加 b 平方，正好等于模的平方。",
+   "keypoints": [
+    "模等于 a 平方加 b 平方的算术平方根，是非负实数",
+    "共轭复数为 a - bi，实部不变、虚部取相反数",
+    "两者之积等于 a 平方加 b 平方，即模的平方"
+   ]
+  },
+  {
+   "id": "mbs_q740032",
+   "topicId": "mbs_h120",
+   "prompt": "已知复数 z 的模等于 5，且实部为 3，求虚部所有可能的值，并说明理由。",
+   "question": "已知复数 z 的模等于 5，且实部为 3，求虚部所有可能的值，并说明理由。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "虚部为 4 或 -4",
+   "explanation": "设 z = 3 + bi，由模的平方等于实部平方加虚部平方，得 25 等于 9 加 b 的平方，故 b 的平方等于 16，b 等于 4 或 -4。两个值都使模等于 5，因此虚部有两个可能的值，不能只取正的一个。",
+   "keypoints": [
+    "设 z = 3 + bi，由模的平方等于实部平方加虚部平方",
+    "得 b 的平方等于 25 减 9 等于 16",
+    "b 等于 4 或 -4，两解都满足条件"
+   ]
+  },
+  {
+   "id": "mbs_q740033",
+   "topicId": "mbs_h121",
+   "prompt": "计算 (2 + 3i) + (4 - 5i) 的结果。",
+   "question": "计算 (2 + 3i) + (4 - 5i) 的结果。",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "A",
+   "explanation": "实部相加得 6，虚部相加得 -2，故结果为 6 - 2i。选 6 + 8i 的虚部符号算错，把减 5 当成了加 5。",
+   "options": [
+    {
+     "label": "A",
+     "text": "6 - 2i"
+    },
+    {
+     "label": "B",
+     "text": "6 + 8i"
+    },
+    {
+     "label": "C",
+     "text": "-2 + 6i"
+    },
+    {
+     "label": "D",
+     "text": "6 + 2i"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q740034",
+   "topicId": "mbs_h121",
+   "prompt": "计算 (5 - 2i) - (3 - 6i) 的结果。",
+   "question": "计算 (5 - 2i) - (3 - 6i) 的结果。",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "D",
+   "explanation": "减去一个复数等于加上它的相反数，实部 5 减 3 得 2，虚部 -2 加 6 得 4，故结果为 2 + 4i。选 2 - 8i 的没有对减数整体变号。",
+   "options": [
+    {
+     "label": "A",
+     "text": "2 - 8i"
+    },
+    {
+     "label": "B",
+     "text": "8 - 8i"
+    },
+    {
+     "label": "C",
+     "text": "2 - 4i"
+    },
+    {
+     "label": "D",
+     "text": "2 + 4i"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q740035",
+   "topicId": "mbs_h121",
+   "prompt": "计算 (1 + 2i) + (3 - 2i) 的结果。",
+   "question": "计算 (1 + 2i) + (3 - 2i) 的结果。",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "4",
+   "explanation": "实部相加得 4，虚部 2 与 -2 互为相反数，相加为 0，故结果退化为实数 4，写作 4 + 0i。"
+  },
+  {
+   "id": "mbs_q740036",
+   "topicId": "mbs_h121",
+   "prompt": "已知 z1 = 3 + i，z2 = -1 + 2i，则 z1 - z2 等于多少？",
+   "question": "已知 z1 = 3 + i，z2 = -1 + 2i，则 z1 - z2 等于多少？",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "4-i",
+   "explanation": "实部 3 减 -1 得 4，虚部 1 减 2 得 -1，故结果为 4 - i，注意减去负实部时要变号。"
+  },
+  {
+   "id": "mbs_q740037",
+   "topicId": "mbs_h121",
+   "prompt": "已知 z1 = 2 + 5i，z2 = 4 + 3i，求 z1 + z2 的虚部。",
+   "question": "已知 z1 = 2 + 5i，z2 = 4 + 3i，求 z1 + z2 的虚部。",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "8",
+   "explanation": "和的虚部等于两虚部之和，即 5 加 3 等于 8；实部 2 加 4 等于 6 与虚部无关。",
+   "verify": "5+3"
+  },
+  {
+   "id": "mbs_q740038",
+   "topicId": "mbs_h121",
+   "prompt": "已知复数 z = 3 - 4i 满足 z + w = 1 + i，求 w 的实部。",
+   "question": "已知复数 z = 3 - 4i 满足 z + w = 1 + i，求 w 的实部。",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "-2",
+   "explanation": "由 w 等于和减去 z，实部为 1 减 3 等于 -2，虚部为 1 加 4 等于 5，故 w 等于 -2 + 5i，实部是 -2。",
+   "verify": "1-3"
+  },
+  {
+   "id": "mbs_q740039",
+   "topicId": "mbs_h121",
+   "prompt": "从向量的角度说明复数加法的几何意义，并写出两个复数相加的法则。",
+   "question": "从向量的角度说明复数加法的几何意义，并写出两个复数相加的法则。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "两复数相加即对应向量相加，遵循平行四边形法则；法则是实部与实部、虚部与虚部分别相加",
+   "explanation": "复数与复平面内的向量一一对应，因此复数 z1 加 z2 就是向量 OZ1 与 OZ2 相加，用平行四边形法则作出和向量，其终点对应的复数就是和。代数上则把实部与实部相加、虚部与虚部相加，两种说法结果一致。",
+   "keypoints": [
+    "复数与复平面内的向量一一对应",
+    "两复数相加即两向量相加，遵循平行四边形法则",
+    "代数法则：实部与实部相加，虚部与虚部相加"
+   ]
+  },
+  {
+   "id": "mbs_q740040",
+   "topicId": "mbs_h121",
+   "prompt": "已知 z1 = a + 2i，z2 = 3 + bi，且 z1 + z2 = 5 + 6i，求实数 a、b 的值，并说明所用的依据。",
+   "question": "已知 z1 = a + 2i，z2 = 3 + bi，且 z1 + z2 = 5 + 6i，求实数 a、b 的值，并说明所用的依据。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "a 等于 2，b 等于 4",
+   "explanation": "先按加法法则求和，实部为 a + 3，虚部为 2 + b。再由复数相等的条件，实部与虚部分别相等：a + 3 = 5 得 a = 2，2 + b = 6 得 b = 4。依据就是复数相等的充要条件是实部、虚部分别相等。",
+   "keypoints": [
+    "和的实部为 a + 3，虚部为 2 + b",
+    "由实部相等得 a + 3 = 5，a = 2",
+    "由虚部相等得 2 + b = 6，b = 4"
+   ]
+  },
+  {
+   "id": "mbs_q740041",
+   "topicId": "mbs_h122",
+   "prompt": "计算 (2 + i)(3 - i) 的结果。",
+   "question": "计算 (2 + i)(3 - i) 的结果。",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "B",
+   "explanation": "按多项式乘法展开得 6 减 2i 加 3i 减 i 的平方，即 6 加 i 加 1，合并得 7 + i。选 7 - i 的漏掉了 i 的平方等于 -1 带来的加 1。",
+   "options": [
+    {
+     "label": "A",
+     "text": "7 - i"
+    },
+    {
+     "label": "B",
+     "text": "7 + i"
+    },
+    {
+     "label": "C",
+     "text": "5 + i"
+    },
+    {
+     "label": "D",
+     "text": "7 + 5i"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q740042",
+   "topicId": "mbs_h122",
+   "prompt": "计算 (1 + 2i)(1 - 2i) 的结果。",
+   "question": "计算 (1 + 2i)(1 - 2i) 的结果。",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "C",
+   "explanation": "展开得 1 减 4 倍的 i 的平方，即 1 加 4 等于 5，虚部抵消为 0，结果是实数 5。选 -3 的把 i 的平方当成了 1。",
+   "options": [
+    {
+     "label": "A",
+     "text": "1 - 4i"
+    },
+    {
+     "label": "B",
+     "text": "-3"
+    },
+    {
+     "label": "C",
+     "text": "5"
+    },
+    {
+     "label": "D",
+     "text": "3"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q740043",
+   "topicId": "mbs_h122",
+   "prompt": "计算 (3 + 2i) 乘以 i 的结果。",
+   "question": "计算 (3 + 2i) 乘以 i 的结果。",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "-2+3i",
+   "explanation": "分配展开得 3i 加 2 倍的 i 的平方，即 3i 减 2，整理为 -2 + 3i，注意结果要写成实部在前的标准形式。"
+  },
+  {
+   "id": "mbs_q740044",
+   "topicId": "mbs_h122",
+   "prompt": "已知 z = 1 - i，求 z 的平方。",
+   "question": "已知 z = 1 - i，求 z 的平方。",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "-2i",
+   "explanation": "按完全平方展开得 1 减 2i 加 i 的平方，即 1 减 2i 减 1，实部抵消，结果为 -2i，它是一个纯虚数。"
+  },
+  {
+   "id": "mbs_q740045",
+   "topicId": "mbs_h122",
+   "prompt": "已知 (a + i)(2 - i) 是实数，其中 a 为实数，求 a 的值。",
+   "question": "已知 (a + i)(2 - i) 是实数，其中 a 为实数，求 a 的值。",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "2",
+   "explanation": "展开得 2a 减 ai 加 2i 减 i 的平方，即 (2a + 1) 加 (2 - a)i。它是实数要求虚部为零，由 2 - a = 0 得 a = 2。",
+   "verify": "2"
+  },
+  {
+   "id": "mbs_q740046",
+   "topicId": "mbs_h122",
+   "prompt": "计算 (2 + i) 的平方，求它的实部与虚部之和。",
+   "question": "计算 (2 + i) 的平方，求它的实部与虚部之和。",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "7",
+   "explanation": "展开得 4 加 4i 加 i 的平方，即 3 + 4i，实部 3 与虚部 4 之和为 7。",
+   "verify": "3+4"
+  },
+  {
+   "id": "mbs_q740047",
+   "topicId": "mbs_h122",
+   "prompt": "复数乘法应按什么法则进行？请以 (1 + 2i)(3 - i) 为例写出完整过程，并指出最容易出错的地方。",
+   "question": "复数乘法应按什么法则进行？请以 (1 + 2i)(3 - i) 为例写出完整过程，并指出最容易出错的地方。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "按多项式乘法展开再把 i 的平方换成 -1，结果为 5 + 5i",
+   "explanation": "把两个复数当作二项式相乘，逐项展开得 3 减 i 加 6i 减 2 倍的 i 的平方，合并同类项并用 i 的平方等于 -1 化简，得 3 加 5i 加 2 等于 5 + 5i。最容易出错的地方是忘记把 i 的平方换成 -1，以及在负号较多的项上算错符号。",
+   "keypoints": [
+    "按多项式乘法逐项展开并合并同类项",
+    "把 i 的平方一律换成 -1",
+    "结果为 5 + 5i，易错点是漏换 i 的平方或符号算错"
+   ]
+  },
+  {
+   "id": "mbs_q740048",
+   "topicId": "mbs_h122",
+   "prompt": "已知 z = 2 + i，求 z 与它的共轭复数的乘积，并说明这个结果与 z 的模的关系。",
+   "question": "已知 z = 2 + i，求 z 与它的共轭复数的乘积，并说明这个结果与 z 的模的关系。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "乘积为 5，等于 z 的模的平方",
+   "explanation": "z 的共轭复数为 2 - i，两者相乘展开得 4 减 2i 加 2i 减 i 的平方，虚部抵消，结果为 4 加 1 等于 5。而 z 的模等于根号 5，模的平方也等于 5，故乘积等于模的平方，这是一个常用结论。",
+   "keypoints": [
+    "z 的共轭复数为 2 - i",
+    "乘积展开虚部抵消，得 4 加 1 等于 5",
+    "结果等于 z 的模的平方"
+   ]
+  },
+  {
+   "id": "mbs_q740049",
+   "topicId": "mbs_h123",
+   "prompt": "计算 (3 + 4i) 除以 (1 - 2i) 的结果。",
+   "question": "计算 (3 + 4i) 除以 (1 - 2i) 的结果。",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "A",
+   "explanation": "分子分母同乘 1 + 2i，分母得 1 加 4 等于 5，分子展开得 -5 + 10i，相除得 -1 + 2i。选 1 - 2i 的没有把分母实数化。",
+   "options": [
+    {
+     "label": "A",
+     "text": "-1 + 2i"
+    },
+    {
+     "label": "B",
+     "text": "1 - 2i"
+    },
+    {
+     "label": "C",
+     "text": "-1 - 2i"
+    },
+    {
+     "label": "D",
+     "text": "11 + 10i"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q740050",
+   "topicId": "mbs_h123",
+   "prompt": "化简复数 2 除以 i 的结果。",
+   "question": "化简复数 2 除以 i 的结果。",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "B",
+   "explanation": "分子分母同乘 i，分母得 i 的平方即 -1，分子得 2i，故结果为 -2i。选 2i 的漏掉了分母为负号这一步。",
+   "options": [
+    {
+     "label": "A",
+     "text": "2i"
+    },
+    {
+     "label": "B",
+     "text": "-2i"
+    },
+    {
+     "label": "C",
+     "text": "2"
+    },
+    {
+     "label": "D",
+     "text": "-2"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q740051",
+   "topicId": "mbs_h123",
+   "prompt": "化简 (1 + i) 除以 (1 - i) 的结果。",
+   "question": "化简 (1 + i) 除以 (1 - i) 的结果。",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "i",
+   "explanation": "分子分母同乘 1 + i，分母得 2，分子得 (1 + i) 的平方即 2i，相除得 i。也可先观察分子恰为分母的共轭，结果应为纯虚数。"
+  },
+  {
+   "id": "mbs_q740052",
+   "topicId": "mbs_h123",
+   "prompt": "已知复数 z = (4 + 2i)/(1 + i)，化简 z 的结果。",
+   "question": "已知复数 z = (4 + 2i)/(1 + i)，化简 z 的结果。",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "3-i",
+   "explanation": "分子分母同乘 1 - i，分母得 2，分子展开得 4 减 4i 加 2i 减 2 倍的 i 的平方，即 6 - 2i，相除得 3 - i。"
+  },
+  {
+   "id": "mbs_q740053",
+   "topicId": "mbs_h123",
+   "prompt": "已知复数 z = (6 + 8i)/(2 + i)，求 z 的实部。",
+   "question": "已知复数 z = (6 + 8i)/(2 + i)，求 z 的实部。",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "4",
+   "explanation": "分子分母同乘 2 - i，分母得 4 加 1 等于 5，分子展开得 12 减 6i 加 16i 加 8，即 20 + 10i，相除得 4 + 2i，实部为 4。",
+   "verify": "20/5"
+  },
+  {
+   "id": "mbs_q740054",
+   "topicId": "mbs_h123",
+   "prompt": "已知 z = (3 + i)/(1 - i)，求 z 的虚部。",
+   "question": "已知 z = (3 + i)/(1 - i)，求 z 的虚部。",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "2",
+   "explanation": "分子分母同乘 1 + i，分母得 2，分子展开得 3 加 3i 加 i 减 1，即 2 + 4i，相除得 1 + 2i，故虚部为 2。",
+   "verify": "4/2"
+  },
+  {
+   "id": "mbs_q740055",
+   "topicId": "mbs_h123",
+   "prompt": "复数除法的基本思路是什么？请以 (2 + i)/(1 - i) 为例说明分母实数化的过程。",
+   "question": "复数除法的基本思路是什么？请以 (2 + i)/(1 - i) 为例说明分母实数化的过程。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "分子分母同乘分母的共轭复数，结果化简为 1/2 + 3/2 i",
+   "explanation": "除法的关键是让分母变成实数，办法是分子分母同乘分母的共轭复数。以 (2 + i)/(1 - i) 为例，同乘 1 + i 后分母为 1 加 1 等于 2，分子展开得 2 加 2i 加 i 减 1 等于 1 + 3i，故商为 1/2 加 3/2 i。",
+   "keypoints": [
+    "分子分母同乘分母的共轭复数",
+    "分母变为实数，等于分母模的平方",
+    "分子展开化简，结果为 1/2 + 3/2 i"
+   ]
+  },
+  {
+   "id": "mbs_q740056",
+   "topicId": "mbs_h123",
+   "prompt": "已知 z 的共轭复数为 2 - i，求 1 除以 z 的商，并说明为什么可以用共轭复数化简。",
+   "question": "已知 z 的共轭复数为 2 - i，求 1 除以 z 的商，并说明为什么可以用共轭复数化简。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "商为 2/5 减 1/5 i",
+   "explanation": "由共轭复数为 2 - i 得 z 等于 2 + i。分子分母同乘 2 - i 后，分母为 4 加 1 等于 5，是正实数，分子为 2 - i，故商为 2/5 减去 1/5 的 i。用共轭复数化简的依据是复数与共轭复数之积等于模的平方，一定是实数。",
+   "keypoints": [
+    "由共轭复数为 2 - i 得 z = 2 + i",
+    "分子分母同乘 2 - i，分母为 4 加 1 等于 5",
+    "结果为 2/5 减 1/5 i"
+   ]
+  },
+  {
+   "id": "mbs_q740057",
+   "topicId": "mbs_h124",
+   "prompt": "方程 x 的平方加 4 等于 0 在复数集内的解集是什么？",
+   "question": "方程 x 的平方加 4 等于 0 在复数集内的解集是什么？",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "C",
+   "explanation": "由 x 的平方等于 -4 得 x 等于正负 2i，两根为共轭虚数。选 2 与 -2 的是只在实数范围内求解，选无解的忽略了数集已扩充到复数。",
+   "options": [
+    {
+     "label": "A",
+     "text": "{2, -2}"
+    },
+    {
+     "label": "B",
+     "text": "{2i}"
+    },
+    {
+     "label": "C",
+     "text": "{2i, -2i}"
+    },
+    {
+     "label": "D",
+     "text": "无解"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q740058",
+   "topicId": "mbs_h124",
+   "prompt": "方程 x 的平方减 2x 加 5 等于 0 在复数集内的两根之积是多少？",
+   "question": "方程 x 的平方减 2x 加 5 等于 0 在复数集内的两根之积是多少？",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "D",
+   "explanation": "由两根之积等于常数项除以二次项系数，得积为 5。判别式为负只说明根是虚数，韦达关系仍然成立。",
+   "options": [
+    {
+     "label": "A",
+     "text": "-5"
+    },
+    {
+     "label": "B",
+     "text": "2"
+    },
+    {
+     "label": "C",
+     "text": "-2"
+    },
+    {
+     "label": "D",
+     "text": "5"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q740059",
+   "topicId": "mbs_h124",
+   "prompt": "方程 x 的平方加 2x 加 5 等于 0 在复数集内的两个根分别是多少？",
+   "question": "方程 x 的平方加 2x 加 5 等于 0 在复数集内的两个根分别是多少？",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "-1+2i 和 -1-2i",
+   "explanation": "判别式等于 4 减 20 等于 -16，小于零。由求根公式得 x 等于 -1 加减 2i，两根互为共轭复数。"
+  },
+  {
+   "id": "mbs_q740060",
+   "topicId": "mbs_h124",
+   "prompt": "方程 x 的平方减 6x 加 13 等于 0 在复数集内的一个根是 3 + 2i，另一个根是多少？",
+   "question": "方程 x 的平方减 6x 加 13 等于 0 在复数集内的一个根是 3 + 2i，另一个根是多少？",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "3-2i",
+   "explanation": "实系数方程的虚根成对出现且互为共轭复数，故另一根为 3 - 2i。也可验证两根之和为 6、两根之积为 13。"
+  },
+  {
+   "id": "mbs_q740061",
+   "topicId": "mbs_h124",
+   "prompt": "方程 x 的平方加 6x 加 13 等于 0 在复数集内有两个虚根，求这两个根之和。",
+   "question": "方程 x 的平方加 6x 加 13 等于 0 在复数集内有两个虚根，求这两个根之和。",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "-6",
+   "explanation": "由韦达关系，两根之和等于一次项系数的相反数，即 -6，与根是否为虚数无关。",
+   "verify": "0-6"
+  },
+  {
+   "id": "mbs_q740062",
+   "topicId": "mbs_h124",
+   "prompt": "已知实系数一元二次方程有两个虚根 1 + 3i 与 1 - 3i，求这两根之积。",
+   "question": "已知实系数一元二次方程有两个虚根 1 + 3i 与 1 - 3i，求这两根之积。",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "10",
+   "explanation": "两根之积等于 (1 + 3i)(1 - 3i)，展开得 1 加 9 等于 10，虚部抵消，结果为正实数。",
+   "verify": "1**2+3**2"
+  },
+  {
+   "id": "mbs_q740063",
+   "topicId": "mbs_h124",
+   "prompt": "实系数一元二次方程在判别式小于 0 时根的情况如何？请说明两根之间的关系，并写出求根公式的形式。",
+   "question": "实系数一元二次方程在判别式小于 0 时根的情况如何？请说明两根之间的关系，并写出求根公式的形式。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "无实根，有一对共轭虚根，求根公式中根号内为判别式的相反数",
+   "explanation": "判别式小于 0 时方程没有实数根，但在复数集内有一对共轭虚根，它们实部相同、虚部互为相反数。求根公式中把根号内取判别式的相反数，写成实部加减虚部单位 i 的形式，实部为负的一次项系数除以二次项系数的二倍。",
+   "keypoints": [
+    "判别式小于 0 时无实根，有一对共轭虚根",
+    "两根实部相同、虚部互为相反数",
+    "求根时根号内取判别式的相反数，结果写成实部加减虚部单位 i"
+   ]
+  },
+  {
+   "id": "mbs_q740064",
+   "topicId": "mbs_h124",
+   "prompt": "已知方程 x 的平方加 bx 加 c 等于 0（b、c 为实数）的一个根是 2 - 3i，求 b 与 c 的值，并说明理由。",
+   "question": "已知方程 x 的平方加 bx 加 c 等于 0（b、c 为实数）的一个根是 2 - 3i，求 b 与 c 的值，并说明理由。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "b 等于 -4，c 等于 13",
+   "explanation": "实系数方程的虚根成对出现，另一根为 2 + 3i。由两根之和等于 -b，得 4 等于 -b，故 b 等于 -4；由两根之积等于 c，得 (2 - 3i)(2 + 3i) 等于 4 加 9 等于 13，故 c 等于 13。",
+   "keypoints": [
+    "另一根为 2 + 3i，共轭虚根成对出现",
+    "由两根之和 4 等于 -b，得 b = -4",
+    "由两根之积 13 等于 c，得 c = 13"
+   ]
+  },
+  {
+   "id": "mbs_q740065",
+   "topicId": "mbs_h125",
+   "prompt": "复数 z = 1 + i 的模和辐角主值分别是多少？",
+   "question": "复数 z = 1 + i 的模和辐角主值分别是多少？",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "A",
+   "explanation": "模等于 1 的平方加 1 的平方再开方，即根号 2；对应点在第一象限，辐角主值为 45°。选 135° 的把象限判断错了。",
+   "options": [
+    {
+     "label": "A",
+     "text": "模为 √2，辐角主值为 45°"
+    },
+    {
+     "label": "B",
+     "text": "模为 2，辐角主值为 45°"
+    },
+    {
+     "label": "C",
+     "text": "模为 √2，辐角主值为 135°"
+    },
+    {
+     "label": "D",
+     "text": "模为 1，辐角主值为 90°"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q740066",
+   "topicId": "mbs_h125",
+   "prompt": "复数 z = -1 + i 的辐角主值是多少？",
+   "question": "复数 z = -1 + i 的辐角主值是多少？",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "B",
+   "explanation": "对应点 (-1, 1) 在第二象限，横纵坐标绝对值相等，与实轴负方向夹角为 45°，故辐角主值为 135°。选 45° 的只看了绝对值忽略象限。",
+   "options": [
+    {
+     "label": "A",
+     "text": "45°"
+    },
+    {
+     "label": "B",
+     "text": "135°"
+    },
+    {
+     "label": "C",
+     "text": "225°"
+    },
+    {
+     "label": "D",
+     "text": "315°"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q740067",
+   "topicId": "mbs_h125",
+   "prompt": "把复数 z = 2i 写成三角形式。",
+   "question": "把复数 z = 2i 写成三角形式。",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "2(cos 90° + i sin 90°)",
+   "explanation": "对应点 (0, 2) 在虚轴正半轴上，模为 2，辐角主值为 90°，故三角形式为 2 乘以括号内余弦 90° 加 i 倍的正弦 90°。"
+  },
+  {
+   "id": "mbs_q740068",
+   "topicId": "mbs_h125",
+   "prompt": "写出复数 z = √3 + i 的三角形式。",
+   "question": "写出复数 z = √3 + i 的三角形式。",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "2(cos 30° + i sin 30°)",
+   "explanation": "模的平方等于 3 加 1 等于 4，模为 2；点在第一象限，正切值为 1 比根号 3，辐角主值为 30°，故三角形式如上。"
+  },
+  {
+   "id": "mbs_q740069",
+   "topicId": "mbs_h125",
+   "prompt": "复数 z = 6(cos 60° + i sin 60°) 的实部等于多少？",
+   "question": "复数 z = 6(cos 60° + i sin 60°) 的实部等于多少？",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "3",
+   "explanation": "实部等于模乘以余弦 60°，余弦 60° 等于 0.5，故实部为 6 乘 0.5 等于 3。",
+   "verify": "6*0.5"
+  },
+  {
+   "id": "mbs_q740070",
+   "topicId": "mbs_h125",
+   "prompt": "复数 z = 5(cos 90° + i sin 90°) 的虚部等于多少？",
+   "question": "复数 z = 5(cos 90° + i sin 90°) 的虚部等于多少？",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "5",
+   "explanation": "虚部等于模乘以正弦 90°，正弦 90° 等于 1，故虚部为 5，实部为 0，该复数就是 5i。",
+   "verify": "5*1"
+  },
+  {
+   "id": "mbs_q740071",
+   "topicId": "mbs_h125",
+   "prompt": "什么是复数的三角形式？请写出它的标准形式，并说明其中的模与辐角各表示什么。",
+   "question": "什么是复数的三角形式？请写出它的标准形式，并说明其中的模与辐角各表示什么。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "标准形式为 r(cos θ + i sin θ)，r 是模，θ 是辐角",
+   "explanation": "复数可以写成 r 乘以括号内余弦 θ 加 i 倍正弦 θ 的形式，其中 r 大于 0，称为三角形式。r 是这个复数的模，表示对应点到原点的距离；θ 是辐角，表示对应向量与实轴正方向的夹角，通常取 0° 到 360° 之间的主值。",
+   "keypoints": [
+    "标准形式为 r(cos θ + i sin θ)，其中 r 大于 0",
+    "r 是复数的模，即对应点到原点的距离",
+    "θ 是辐角，即对应向量与实轴正方向的夹角"
+   ]
+  },
+  {
+   "id": "mbs_q740072",
+   "topicId": "mbs_h125",
+   "prompt": "把复数 z = -√3 + i 化为三角形式，并写出所用的步骤。",
+   "question": "把复数 z = -√3 + i 化为三角形式，并写出所用的步骤。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "三角形式为 2(cos 150° + i sin 150°)",
+   "explanation": "第一步求模：模的平方等于 3 加 1 等于 4，模为 2。第二步定象限：点 (-√3, 1) 在第二象限，辐角主值应在 90° 与 180° 之间。第三步求辐角：与实轴负方向夹角为 30°，故辐角主值为 150°。于是三角形式为 2(cos 150° + i sin 150°)。",
+   "keypoints": [
+    "先求模：模的平方为 3 加 1 等于 4，模为 2",
+    "再由实部为负、虚部为正判定点在第二象限",
+    "辐角主值为 150°，三角形式为 2(cos 150° + i sin 150°)"
+   ]
+  },
+  {
+   "id": "mbs_q740073",
+   "topicId": "mbs_h126",
+   "prompt": "复数 z 乘以 i，在复平面内对应的向量相当于作什么变换？",
+   "question": "复数 z 乘以 i，在复平面内对应的向量相当于作什么变换？",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "C",
+   "explanation": "乘以 i 相当于把模乘以 1、辐角加 90°，即把原向量绕原点逆时针旋转 90°。选顺时针的把旋转方向弄反了。",
+   "options": [
+    {
+     "label": "A",
+     "text": "沿实轴翻折"
+    },
+    {
+     "label": "B",
+     "text": "关于原点对称"
+    },
+    {
+     "label": "C",
+     "text": "绕原点逆时针旋转 90°"
+    },
+    {
+     "label": "D",
+     "text": "绕原点顺时针旋转 90°"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q740074",
+   "topicId": "mbs_h126",
+   "prompt": "复数 z = 1 + i 乘以 i 后得到的复数是什么？",
+   "question": "复数 z = 1 + i 乘以 i 后得到的复数是什么？",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "D",
+   "explanation": "展开得 i 加 i 的平方，即 -1 + i。对应点由 (1, 1) 旋转到 (-1, 1)，恰好是逆时针旋转 90° 的结果。",
+   "options": [
+    {
+     "label": "A",
+     "text": "1 - i"
+    },
+    {
+     "label": "B",
+     "text": "-1 - i"
+    },
+    {
+     "label": "C",
+     "text": "1 + i"
+    },
+    {
+     "label": "D",
+     "text": "-1 + i"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q740075",
+   "topicId": "mbs_h126",
+   "prompt": "已知 z1 = 2(cos 30° + i sin 30°)，z2 = 3(cos 60° + i sin 60°)，则 z1 乘以 z2 的模是多少？",
+   "question": "已知 z1 = 2(cos 30° + i sin 30°)，z2 = 3(cos 60° + i sin 60°)，则 z1 乘以 z2 的模是多少？",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "6",
+   "explanation": "复数乘法中模相乘，两模分别为 2 与 3，故积的模为 6；辐角相加得 90°，也可用来核对结果。"
+  },
+  {
+   "id": "mbs_q740076",
+   "topicId": "mbs_h126",
+   "prompt": "已知 z = 2(cos 40° + i sin 40°)，则 z 除以 i 后所得复数的辐角主值是多少？",
+   "question": "已知 z = 2(cos 40° + i sin 40°)，则 z 除以 i 后所得复数的辐角主值是多少？",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "310°",
+   "explanation": "除以 i 相当于辐角减去 90°，得 -50°，加上 360° 化为辐角主值 310°，对应点在第四象限。"
+  },
+  {
+   "id": "mbs_q740077",
+   "topicId": "mbs_h126",
+   "prompt": "已知复数 z1 的模为 3，z2 的模为 4，求 z1 乘以 z2 的模。",
+   "question": "已知复数 z1 的模为 3，z2 的模为 4，求 z1 乘以 z2 的模。",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "12",
+   "explanation": "复数乘法的模等于两复数模的乘积，故积的模为 3 乘 4 等于 12，与两复数的辐角无关。",
+   "verify": "3*4"
+  },
+  {
+   "id": "mbs_q740078",
+   "topicId": "mbs_h126",
+   "prompt": "已知 z = 1 + i，求 z 乘以自身所得复数的模的平方。",
+   "question": "已知 z = 1 + i，求 z 乘以自身所得复数的模的平方。",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "4",
+   "explanation": "z 的平方为 2i，实部为 0、虚部为 2，模的平方等于 0 加 4 等于 4；也可由模相乘得根号 2 乘根号 2 等于 2，再平方得 4。",
+   "verify": "(1-1)**2+(1+1)**2"
+  },
+  {
+   "id": "mbs_q740079",
+   "topicId": "mbs_h126",
+   "prompt": "从模与辐角的角度说明复数乘法的几何意义，并写出乘法前后模与辐角的变化规律。",
+   "question": "从模与辐角的角度说明复数乘法的几何意义，并写出乘法前后模与辐角的变化规律。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "模等于两模之积，辐角等于两辐角之和，几何上是旋转加伸缩",
+   "explanation": "把复数都写成三角形式后，两复数相乘所得复数的模等于两复数模的乘积，辐角等于两复数辐角的和。几何上就是把一个复数对应的向量，按另一个复数的辐角旋转，再按它的模伸缩，因此乘法可以看作旋转与伸缩的复合变换。",
+   "keypoints": [
+    "积的模等于两复数模的乘积",
+    "积的辐角等于两复数辐角的和",
+    "几何上是把一向量旋转另一向量的辐角并按模伸缩"
+   ]
+  },
+  {
+   "id": "mbs_q740080",
+   "topicId": "mbs_h126",
+   "prompt": "已知复数 z 对应的点在以原点为圆心、半径为 2 的圆上，说明 z 乘以 i 后对应点的位置，并写出推理过程。",
+   "question": "已知复数 z 对应的点在以原点为圆心、半径为 2 的圆上，说明 z 乘以 i 后对应点的位置，并写出推理过程。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "仍在同一圆上，位置变为逆时针旋转 90° 后的点",
+   "explanation": "z 对应点的模为 2，乘以 i 相当于模不变、辐角加 90°，所以新复数的模仍为 2，对应点仍在以原点为圆心、半径为 2 的圆上，只是沿逆时针方向转过 90°，即整个圆的点绕圆心转了一个直角。",
+   "keypoints": [
+    "乘以 i 表示模不变、辐角加 90°",
+    "新复数的模仍为 2，故对应点仍在同一圆上",
+    "位置相当于把原向量逆时针旋转 90°"
+   ]
+  }
+ ]
+}

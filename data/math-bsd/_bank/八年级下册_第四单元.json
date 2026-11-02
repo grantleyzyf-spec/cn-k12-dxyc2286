@@ -1,0 +1,720 @@
+{
+ "book": "八年级下册",
+ "unit_no": "四",
+ "topics": [
+  {
+   "id": "mbs_j324",
+   "description": "本节从整式乘法出发认识因式分解的意义：把一个多项式化成几个整式积的形式。它是后面提公因式法、公式法的共同起点，也是判断一切分解结果是否正确、是否分解彻底的依据。",
+   "mastery_criteria": [
+    "能说出因式分解是把多项式化成几个整式积的形式",
+    "能判断一个变形是不是因式分解并说明理由",
+    "能把简单的二次二项式写成两个一次整式的积"
+   ],
+   "type": "conceptual",
+   "diagnostic_question": {
+    "question": "把 x²－4 写成两个整式积的形式，结果是什么？",
+    "answer": "（x＋2）（x－2）"
+   }
+  },
+  {
+   "id": "mbs_j325",
+   "description": "本节把整式乘法与因式分解对照起来看：两者方向相反、结果互逆。学会用乘法展开来检验分解是否正确，是后面各种分解方法通用的验算手段。",
+   "mastery_criteria": [
+    "能说出因式分解与整式乘法互为逆变形",
+    "会用展开积的方法检验分解是否正确",
+    "能利用恒等关系由已知条件求代数式的值"
+   ],
+   "type": "reasoning",
+   "diagnostic_question": {
+    "question": "（x＋3）（x－2）展开后得到什么？",
+    "answer": "x²＋x－6"
+   }
+  },
+  {
+   "id": "mbs_j326",
+   "description": "本节学习多项式各项的公因式，以及把公因式提到括号外的提公因式法。它是因式分解最先尝试的一步，凡是各项有公因式都必须先提出来，再考虑用公式。",
+   "mastery_criteria": [
+    "能找出多项式的公因式，系数取最大公约数、字母取最低次",
+    "能用提公因式法正确分解，括号内项数与原多项式相同",
+    "知道首项系数为负时先提出负号"
+   ],
+   "type": "procedural",
+   "diagnostic_question": {
+    "question": "多项式 6x²＋9x 的公因式是什么？",
+    "answer": "3x"
+   }
+  },
+  {
+   "id": "mbs_j327",
+   "description": "本节把乘法公式 a²－b²＝（a＋b）（a－b）反过来用，把两个平方的差分解成两个整式的积，并能对含字母、含整体、含高次的式子连续分解。",
+   "mastery_criteria": [
+    "能识别形如两个平方之差的式子",
+    "能写出公式中的 a、b 并套用平方差公式分解",
+    "知道分解要彻底，能连续两次使用平方差公式"
+   ],
+   "type": "procedural",
+   "diagnostic_question": {
+    "question": "分解因式 x²－25 的结果是什么？",
+    "answer": "（x＋5）（x－5）"
+   },
+   "domain": "数与代数",
+   "tags": null
+  },
+  {
+   "id": "mbs_j328",
+   "description": "本节把 a²±2ab＋b²＝（a±b）² 反过来用，认识完全平方式的结构特征，把符合特征的三项式分解成完全平方的形式，为后面的配方与综合分解打基础。",
+   "mastery_criteria": [
+    "能判断三项式是否为完全平方式：首末两项为平方，中间项是两底数积的 2 倍",
+    "能写出底数并分解成（a±b）² 的形式",
+    "能先提公因式再用完全平方公式分解"
+   ],
+   "type": "procedural",
+   "diagnostic_question": {
+    "question": "分解因式 x²＋8x＋16 的结果是什么？",
+    "answer": "（x＋4）²"
+   }
+  }
+ ],
+ "questions": [
+  {
+   "id": "mbs_q530001",
+   "topicId": "mbs_j324",
+   "prompt": "下列从左到右的变形中，属于因式分解的是哪一个？",
+   "question": "下列从左到右的变形中，属于因式分解的是哪一个？",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "A",
+   "explanation": "A 把多项式化成了两个整式的积，符合因式分解的定义；B 是整式乘法，变形方向相反；C 右边不是积的形式；D 两边不相等，展开后缺少 －4x 这一项。",
+   "options": [
+    {
+     "label": "A",
+     "text": "x²－4＝（x＋2）（x－2）"
+    },
+    {
+     "label": "B",
+     "text": "（x＋2）（x－2）＝x²－4"
+    },
+    {
+     "label": "C",
+     "text": "x²－4x＋1＝x（x－4）＋1"
+    },
+    {
+     "label": "D",
+     "text": "x²－4＝（x－2）²"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q530002",
+   "topicId": "mbs_j324",
+   "prompt": "若 x²＋ax＋b 分解为（x＋2）（x－3），则 a、b 的值分别是多少？",
+   "question": "若 x²＋ax＋b 分解为（x＋2）（x－3），则 a、b 的值分别是多少？",
+   "type": "choice",
+   "difficulty": "standard",
+   "answer": "C",
+   "explanation": "展开（x＋2）（x－3）得 x²－x－6，比较系数得 a＝－1，b＝－6；A 与 B 把常数项的符号写错，D 把一次项系数算成了 5。",
+   "options": [
+    {
+     "label": "A",
+     "text": "a＝1，b＝6"
+    },
+    {
+     "label": "B",
+     "text": "a＝－1，b＝6"
+    },
+    {
+     "label": "C",
+     "text": "a＝－1，b＝－6"
+    },
+    {
+     "label": "D",
+     "text": "a＝5，b＝－6"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q530003",
+   "topicId": "mbs_j324",
+   "prompt": "把多项式 x²－9 化成两个整式积的形式，结果是____。",
+   "question": "把多项式 x²－9 化成两个整式积的形式，结果是____。",
+   "type": "fill",
+   "difficulty": "basic",
+   "answer": "（x＋3）（x－3）",
+   "explanation": "x²－9＝x²－3²，是两个平方的差，写成（x＋3）（x－3）。如果只把式子改写而不写成积，仍然不算因式分解。"
+  },
+  {
+   "id": "mbs_q530004",
+   "topicId": "mbs_j324",
+   "prompt": "因式分解：x²＋5x＝____。",
+   "question": "因式分解：x²＋5x＝____。",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "x（x＋5）",
+   "explanation": "两项都含有因式 x，把 x 提到括号外得 x（x＋5）。括号内必须保留两项，写成 x（x）就把常数项丢了。"
+  },
+  {
+   "id": "mbs_q530005",
+   "topicId": "mbs_j324",
+   "prompt": "当 x＝5 时，分别计算 x²－16 与（x＋4）（x－4），所得结果相同，这个结果是____。",
+   "question": "当 x＝5 时，分别计算 x²－16 与（x＋4）（x－4），所得结果相同，这个结果是____。",
+   "type": "numeric",
+   "difficulty": "basic",
+   "answer": "9",
+   "explanation": "x²－16 与（x＋4）（x－4）恒等，代入 x＝5 得 25－16＝9；用另一种写法算也得 9×1＝9，说明分解正确。",
+   "verify": "5**2-16"
+  },
+  {
+   "id": "mbs_q530006",
+   "topicId": "mbs_j324",
+   "prompt": "已知 x²－y²＝45，且 x＋y＝9，那么 x－y 的值是多少？",
+   "question": "已知 x²－y²＝45，且 x＋y＝9，那么 x－y 的值是多少？",
+   "type": "numeric",
+   "difficulty": "hard",
+   "answer": "5",
+   "explanation": "因为 x²－y²＝（x＋y）（x－y），把已知条件代入得 9（x－y）＝45，所以 x－y＝5。",
+   "verify": "45/9"
+  },
+  {
+   "id": "mbs_q530007",
+   "topicId": "mbs_j324",
+   "prompt": "请说明 x²－1＝（x－1）（x＋1）是因式分解，而（x－1）（x＋1）＝x²－1 不是因式分解。",
+   "question": "请说明 x²－1＝（x－1）（x＋1）是因式分解，而（x－1）（x＋1）＝x²－1 不是因式分解。",
+   "type": "short-answer",
+   "difficulty": "standard",
+   "answer": "前者把多项式化成积的形式，是因式分解；后者把积化成多项式，是整式乘法。",
+   "explanation": "判断的关键是变形的方向：右边是积就是因式分解，右边是多项式就是整式乘法，两者互逆但并不等同。",
+   "keypoints": [
+    "x²－1 是多项式，右边是两个整式的积",
+    "因式分解的方向是由和差化积",
+    "（x－1）（x＋1）＝x²－1 是由积化和差，属于整式乘法"
+   ]
+  },
+  {
+   "id": "mbs_q530008",
+   "topicId": "mbs_j324",
+   "prompt": "若 x²＋mx＋6 能分解成两个一次整式的积，且 m 为整数，写出 m 所有可能的值，并说明理由。",
+   "question": "若 x²＋mx＋6 能分解成两个一次整式的积，且 m 为整数，写出 m 所有可能的值，并说明理由。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "m 可以是 7、－7、5、－5。",
+   "explanation": "设 x²＋mx＋6＝（x＋a）（x＋b），则 ab＝6、m＝a＋b，逐一列举 6 的整数因数对即可得到四个值，不漏负数。",
+   "keypoints": [
+    "6 可分解成整数因数对 1×6 与 2×3",
+    "两因数之和就是 m",
+    "1＋6＝7，－1－6＝－7，2＋3＝5，－2－3＝－5"
+   ]
+  },
+  {
+   "id": "mbs_q530009",
+   "topicId": "mbs_j325",
+   "prompt": "因式分解与整式乘法之间的关系，下列描述正确的是哪一项？",
+   "question": "因式分解与整式乘法之间的关系，下列描述正确的是哪一项？",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "B",
+   "explanation": "因式分解由和差化积，整式乘法由积化和差，两者方向相反、互为逆变形；A、C 把两种变形混为一谈，D 否认了两者的联系。",
+   "options": [
+    {
+     "label": "A",
+     "text": "两种变形完全相同，只是写法不同"
+    },
+    {
+     "label": "B",
+     "text": "方向相反，互为逆变形"
+    },
+    {
+     "label": "C",
+     "text": "因式分解是整式乘法的一种特殊情况"
+    },
+    {
+     "label": "D",
+     "text": "两者之间没有任何联系"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q530010",
+   "topicId": "mbs_j325",
+   "prompt": "若 x²＋bx＋c＝（x＋2）（x＋5），则 b、c 的值分别是多少？",
+   "question": "若 x²＋bx＋c＝（x＋2）（x＋5），则 b、c 的值分别是多少？",
+   "type": "choice",
+   "difficulty": "standard",
+   "answer": "D",
+   "explanation": "展开（x＋2）（x＋5）得 x²＋7x＋10，比较系数得 b＝7，c＝10；其余选项把一次项系数或常数项的符号写反了。",
+   "options": [
+    {
+     "label": "A",
+     "text": "b＝－7，c＝10"
+    },
+    {
+     "label": "B",
+     "text": "b＝－7，c＝－10"
+    },
+    {
+     "label": "C",
+     "text": "b＝7，c＝－10"
+    },
+    {
+     "label": "D",
+     "text": "b＝7，c＝10"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q530011",
+   "topicId": "mbs_j325",
+   "prompt": "因为（x＋3）（x＋3）＝x²＋6x＋9，所以 x²＋6x＋9 分解因式的结果是____。",
+   "question": "因为（x＋3）（x＋3）＝x²＋6x＋9，所以 x²＋6x＋9 分解因式的结果是____。",
+   "type": "fill",
+   "difficulty": "basic",
+   "answer": "（x＋3）²",
+   "explanation": "展开积得到多项式，反过来把多项式写成积就是因式分解；两个相同的因式可以合并写成平方的形式。"
+  },
+  {
+   "id": "mbs_q530012",
+   "topicId": "mbs_j325",
+   "prompt": "已知（2x－1）（x＋4）＝2x²＋7x－4，则 2x²＋7x－4 分解因式的结果是____。",
+   "question": "已知（2x－1）（x＋4）＝2x²＋7x－4，则 2x²＋7x－4 分解因式的结果是____。",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "（2x－1）（x＋4）",
+   "explanation": "由整式乘法得到的等式把左右互换即可，2x²＋7x－4＝（2x－1）（x＋4）。这类题考的正是两种变形的互逆关系。"
+  },
+  {
+   "id": "mbs_q530013",
+   "topicId": "mbs_j325",
+   "prompt": "当 x＝2 时，x²－1 与（x＋1）（x－1）的值相等，请求出这个相等的值。",
+   "question": "当 x＝2 时，x²－1 与（x＋1）（x－1）的值相等，请求出这个相等的值。",
+   "type": "numeric",
+   "difficulty": "basic",
+   "answer": "3",
+   "explanation": "把 x＝2 代入 x²－1 得 4－1＝3，代入（x＋1）（x－1）得 3×1＝3，两种算法结果相同。",
+   "verify": "2**2-1"
+  },
+  {
+   "id": "mbs_q530014",
+   "topicId": "mbs_j325",
+   "prompt": "已知 a＋b＝5，ab＝6，求 a²＋b² 的值。",
+   "question": "已知 a＋b＝5，ab＝6，求 a²＋b² 的值。",
+   "type": "numeric",
+   "difficulty": "hard",
+   "answer": "13",
+   "explanation": "由（a＋b）²＝a²＋2ab＋b² 得 a²＋b²＝（a＋b）²－2ab＝25－12＝13。",
+   "verify": "5**2-2*6"
+  },
+  {
+   "id": "mbs_q530015",
+   "topicId": "mbs_j325",
+   "prompt": "请用整式乘法检验 x²－5x＋6＝（x－2）（x－3）是否成立，并写出检验的方法。",
+   "question": "请用整式乘法检验 x²－5x＋6＝（x－2）（x－3）是否成立，并写出检验的方法。",
+   "type": "short-answer",
+   "difficulty": "standard",
+   "answer": "成立。把右边展开得 x²－5x＋6，与左边完全相同。",
+   "explanation": "检验因式分解最可靠的办法是把积重新展开，看能否还原成原来的多项式；这一步对任何分解方法都适用。",
+   "keypoints": [
+    "把右边两个一次式相乘展开",
+    "展开得 x²－3x－2x＋6，合并后为 x²－5x＋6",
+    "展开结果与左边一致，所以分解正确"
+   ]
+  },
+  {
+   "id": "mbs_q530016",
+   "topicId": "mbs_j325",
+   "prompt": "若 x²＋px＋q＝（x＋a）（x＋b），请写出 p、q 与 a、b 的关系，并用它判断 x²＋7x＋12 能否分解成两个一次整式的积。",
+   "question": "若 x²＋px＋q＝（x＋a）（x＋b），请写出 p、q 与 a、b 的关系，并用它判断 x²＋7x＋12 能否分解成两个一次整式的积。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "p＝a＋b，q＝ab；因为 3＋4＝7，3×4＝12，所以 x²＋7x＋12＝（x＋3）（x＋4）。",
+   "explanation": "比较系数能把分解问题变成找两个数的问题：积等于常数项、和等于一次项系数，找到这两个数就得到两个因式。",
+   "keypoints": [
+    "展开右边得 x²＋（a＋b）x＋ab",
+    "比较系数得 p＝a＋b，q＝ab",
+    "找和为 7、积为 12 的两个数，即 3 与 4"
+   ]
+  },
+  {
+   "id": "mbs_q530017",
+   "topicId": "mbs_j326",
+   "prompt": "多项式 8a³b²－12a²b³ 的公因式是哪一个？",
+   "question": "多项式 8a³b²－12a²b³ 的公因式是哪一个？",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "C",
+   "explanation": "系数 8 与 12 的最大公约数是 4，字母 a 取最低次 a²，b 取最低次 b²，公因式为 4a²b²；A 没有取到系数的最大公约数，B、D 取的次数过高。",
+   "options": [
+    {
+     "label": "A",
+     "text": "2a²b²"
+    },
+    {
+     "label": "B",
+     "text": "4a³b³"
+    },
+    {
+     "label": "C",
+     "text": "4a²b²"
+    },
+    {
+     "label": "D",
+     "text": "4a²b³"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q530018",
+   "topicId": "mbs_j326",
+   "prompt": "把 －6x²y－9xy² 分解因式，结果正确的是哪一个？",
+   "question": "把 －6x²y－9xy² 分解因式，结果正确的是哪一个？",
+   "type": "choice",
+   "difficulty": "standard",
+   "answer": "B",
+   "explanation": "公因式是 3xy，提出负号后括号内两项都要变号，得 －3xy（2x＋3y）；A 丢掉负号，C 括号内符号写错，D 没有提尽公因式。",
+   "options": [
+    {
+     "label": "A",
+     "text": "3xy（2x＋3y）"
+    },
+    {
+     "label": "B",
+     "text": "－3xy（2x＋3y）"
+    },
+    {
+     "label": "C",
+     "text": "－3xy（2x－3y）"
+    },
+    {
+     "label": "D",
+     "text": "－3x（2xy＋3y²）"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q530019",
+   "topicId": "mbs_j326",
+   "prompt": "分解因式：3x²－6x＝____。",
+   "question": "分解因式：3x²－6x＝____。",
+   "type": "fill",
+   "difficulty": "basic",
+   "answer": "3x（x－2）",
+   "explanation": "两项的公因式是 3x，提出后第一项剩 x，第二项剩 －2，结果写成 3x（x－2），括号内仍然是两项。"
+  },
+  {
+   "id": "mbs_q530020",
+   "topicId": "mbs_j326",
+   "prompt": "分解因式：a（x－y）＋b（x－y）＝____。",
+   "question": "分解因式：a（x－y）＋b（x－y）＝____。",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "（x－y）（a＋b）",
+   "explanation": "把（x－y）看成一个整体，它是两项的公因式，提出来得（x－y）（a＋b）。整体作公因式时括号不能拆开写。"
+  },
+  {
+   "id": "mbs_q530021",
+   "topicId": "mbs_j326",
+   "prompt": "利用提公因式法计算 39×37＋61×37 的值。",
+   "question": "利用提公因式法计算 39×37＋61×37 的值。",
+   "type": "numeric",
+   "difficulty": "basic",
+   "answer": "3700",
+   "explanation": "两项都有因数 37，提出 37 得 37×（39＋61）＝37×100＝3700，比分别相乘再相加简便。",
+   "verify": "37*(39+61)"
+  },
+  {
+   "id": "mbs_q530022",
+   "topicId": "mbs_j326",
+   "prompt": "已知 x＋y＝4，xy＝3，求 x²y＋xy² 的值。",
+   "question": "已知 x＋y＝4，xy＝3，求 x²y＋xy² 的值。",
+   "type": "numeric",
+   "difficulty": "hard",
+   "answer": "12",
+   "explanation": "先提公因式：x²y＋xy²＝xy（x＋y），再代入已知条件得 3×4＝12。先分解再代入是这类求值题的通法。",
+   "verify": "3*4"
+  },
+  {
+   "id": "mbs_q530023",
+   "topicId": "mbs_j326",
+   "prompt": "分解因式 4a²b－6ab²＋2ab，并写出确定公因式的步骤。",
+   "question": "分解因式 4a²b－6ab²＋2ab，并写出确定公因式的步骤。",
+   "type": "short-answer",
+   "difficulty": "standard",
+   "answer": "2ab（2a－3b＋1）",
+   "explanation": "找公因式分两步：系数取各项的最大公约数，字母取各项都有的最低次幂；提出后括号内的项数必须与原多项式相同。",
+   "keypoints": [
+    "系数 4、6、2 的最大公约数是 2",
+    "公共字母 a、b 都取最低次，得公因式 2ab",
+    "提出后第三项剩下 1，不能漏写成 0"
+   ]
+  },
+  {
+   "id": "mbs_q530024",
+   "topicId": "mbs_j326",
+   "prompt": "分解因式 －2x³＋4x²－2x，并说明首项系数为负时应当怎样处理。",
+   "question": "分解因式 －2x³＋4x²－2x，并说明首项系数为负时应当怎样处理。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "－2x（x－1）²",
+   "explanation": "首项系数为负时把负号一起提出，同时公因式取 －2x，括号内各项都要变号；提出后还要看括号内能否继续用公式分解，直到每个因式都不能再分为止。",
+   "keypoints": [
+    "首项系数为负，先提出负号，公因式取 －2x",
+    "提出后括号内为 x²－2x＋1",
+    "x²－2x＋1 是完全平方式，继续分解为（x－1）²"
+   ]
+  },
+  {
+   "id": "mbs_q530025",
+   "topicId": "mbs_j327",
+   "prompt": "下列多项式中，能用平方差公式分解因式的是哪一个？",
+   "question": "下列多项式中，能用平方差公式分解因式的是哪一个？",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "D",
+   "explanation": "平方差公式要求两项都是平方且符号相反，x²－9 符合；A、C 两项同号不能作差，B 是三项式，要用完全平方公式处理。",
+   "options": [
+    {
+     "label": "A",
+     "text": "x²＋9"
+    },
+    {
+     "label": "B",
+     "text": "x²－6x＋9"
+    },
+    {
+     "label": "C",
+     "text": "－x²－9"
+    },
+    {
+     "label": "D",
+     "text": "x²－9"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q530026",
+   "topicId": "mbs_j327",
+   "prompt": "分解因式 4x²－25y²，结果正确的是哪一个？",
+   "question": "分解因式 4x²－25y²，结果正确的是哪一个？",
+   "type": "choice",
+   "difficulty": "standard",
+   "answer": "A",
+   "explanation": "4x²＝（2x）²，25y²＝（5y）²，套用平方差公式得（2x＋5y）（2x－5y）；B 是完全平方，C 把 4x² 的底数写错，D 两个因式符号相反，乘出来是负的差。",
+   "options": [
+    {
+     "label": "A",
+     "text": "（2x＋5y）（2x－5y）"
+    },
+    {
+     "label": "B",
+     "text": "（2x－5y）²"
+    },
+    {
+     "label": "C",
+     "text": "（4x＋5y）（x－5y）"
+    },
+    {
+     "label": "D",
+     "text": "（2x＋5y）（5y－2x）"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q530027",
+   "topicId": "mbs_j327",
+   "prompt": "分解因式：x²－16＝____。",
+   "question": "分解因式：x²－16＝____。",
+   "type": "fill",
+   "difficulty": "basic",
+   "answer": "（x＋4）（x－4）",
+   "explanation": "x²－16＝x²－4²，是两个平方的差，用平方差公式得（x＋4）（x－4），两个因式都不能再继续分解。"
+  },
+  {
+   "id": "mbs_q530028",
+   "topicId": "mbs_j327",
+   "prompt": "分解因式：9a²－b²＝____。",
+   "question": "分解因式：9a²－b²＝____。",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "（3a＋b）（3a－b）",
+   "explanation": "9a²＝（3a）²，b² 的底数是 b，套用平方差公式得（3a＋b）（3a－b）。3a 是一个整体，括号不能漏。"
+  },
+  {
+   "id": "mbs_q530029",
+   "topicId": "mbs_j327",
+   "prompt": "利用平方差公式计算 51×49 的值。",
+   "question": "利用平方差公式计算 51×49 的值。",
+   "type": "numeric",
+   "difficulty": "basic",
+   "answer": "2499",
+   "explanation": "51×49＝（50＋1）（50－1）＝50²－1²＝2500－1＝2499，把相乘化成平方差计算更简便。",
+   "verify": "51*49"
+  },
+  {
+   "id": "mbs_q530030",
+   "topicId": "mbs_j327",
+   "prompt": "计算 101²－99² 的值。",
+   "question": "计算 101²－99² 的值。",
+   "type": "numeric",
+   "difficulty": "hard",
+   "answer": "400",
+   "explanation": "把 101²－99² 看成平方差，等于（101＋99）（101－99）＝200×2＝400，比先算两个平方再相减快得多。",
+   "verify": "101**2-99**2"
+  },
+  {
+   "id": "mbs_q530031",
+   "topicId": "mbs_j327",
+   "prompt": "分解因式 x⁴－16，要求在有理数范围内分解到不能再分为止，并写出每一步。",
+   "question": "分解因式 x⁴－16，要求在有理数范围内分解到不能再分为止，并写出每一步。",
+   "type": "short-answer",
+   "difficulty": "standard",
+   "answer": "（x²＋4）（x＋2）（x－2）",
+   "explanation": "含四次方的式子常常要连续用两次平方差公式；分解是否结束的标准是每个因式在指定数集内都不能再分解。",
+   "keypoints": [
+    "把 x⁴－16 看成（x²）²－4²，分解为（x²＋4）（x²－4）",
+    "x²－4 仍是平方差，继续分解为（x＋2）（x－2）",
+    "x²＋4 在有理数范围内不能再分解"
+   ]
+  },
+  {
+   "id": "mbs_q530032",
+   "topicId": "mbs_j327",
+   "prompt": "分解因式（m＋n）²－（m－n）²，并化简结果。",
+   "question": "分解因式（m＋n）²－（m－n）²，并化简结果。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "4mn",
+   "explanation": "整体也可以当作公式中的 a、b：套用平方差公式后，两个括号相加得 2m、相减得 2n，相乘化简为 4mn。",
+   "keypoints": [
+    "把（m＋n）与（m－n）分别看成公式中的 a 与 b",
+    "套用平方差公式得（2m）（2n）",
+    "化简两个因式相乘得 4mn"
+   ]
+  },
+  {
+   "id": "mbs_q530033",
+   "topicId": "mbs_j328",
+   "prompt": "下列多项式中，是完全平方式的是哪一个？",
+   "question": "下列多项式中，是完全平方式的是哪一个？",
+   "type": "choice",
+   "difficulty": "basic",
+   "answer": "B",
+   "explanation": "完全平方式要求首末两项是两个数的平方、中间项等于两底数积的 2 倍；x²＋4x＋4 中 4＝2²，4x＝2×x×2。A 的末项 8 不是平方数，C 缺常数项，D 末项是负数。",
+   "options": [
+    {
+     "label": "A",
+     "text": "x²＋4x＋8"
+    },
+    {
+     "label": "B",
+     "text": "x²＋4x＋4"
+    },
+    {
+     "label": "C",
+     "text": "x²＋4x"
+    },
+    {
+     "label": "D",
+     "text": "x²－4x－4"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q530034",
+   "topicId": "mbs_j328",
+   "prompt": "分解因式 x²－10x＋25，结果正确的是哪一个？",
+   "question": "分解因式 x²－10x＋25，结果正确的是哪一个？",
+   "type": "choice",
+   "difficulty": "standard",
+   "answer": "A",
+   "explanation": "25＝5²，中间项 －10x＝－2×x×5，所以原式＝（x－5）²；B 的符号与中间项不符，C 是平方差的结果，D 把底数写错了。",
+   "options": [
+    {
+     "label": "A",
+     "text": "（x－5）²"
+    },
+    {
+     "label": "B",
+     "text": "（x＋5）²"
+    },
+    {
+     "label": "C",
+     "text": "（x－5）（x＋5）"
+    },
+    {
+     "label": "D",
+     "text": "（x－10）²"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q530035",
+   "topicId": "mbs_j328",
+   "prompt": "分解因式：a²＋6a＋9＝____。",
+   "question": "分解因式：a²＋6a＋9＝____。",
+   "type": "fill",
+   "difficulty": "basic",
+   "answer": "（a＋3）²",
+   "explanation": "9＝3²，中间项 6a＝2×a×3，符合完全平方式的结构特征，所以 a²＋6a＋9 分解为（a＋3）²。"
+  },
+  {
+   "id": "mbs_q530036",
+   "topicId": "mbs_j328",
+   "prompt": "分解因式：4x²－12xy＋9y²＝____。",
+   "question": "分解因式：4x²－12xy＋9y²＝____。",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "（2x－3y）²",
+   "explanation": "4x²＝（2x）²，9y²＝（3y）²，中间项 －12xy＝－2×2x×3y，套用完全平方公式得（2x－3y）²。"
+  },
+  {
+   "id": "mbs_q530037",
+   "topicId": "mbs_j328",
+   "prompt": "利用完全平方公式计算 102² 的值。",
+   "question": "利用完全平方公式计算 102² 的值。",
+   "type": "numeric",
+   "difficulty": "basic",
+   "answer": "10404",
+   "explanation": "102²＝（100＋2）²＝100²＋2×100×2＋2²＝10000＋400＋4＝10404。",
+   "verify": "102**2"
+  },
+  {
+   "id": "mbs_q530038",
+   "topicId": "mbs_j328",
+   "prompt": "若 x²＋kx＋16 是完全平方式，且 k＞0，则 k 的值是多少？",
+   "question": "若 x²＋kx＋16 是完全平方式，且 k＞0，则 k 的值是多少？",
+   "type": "numeric",
+   "difficulty": "hard",
+   "answer": "8",
+   "explanation": "16＝4²，完全平方式的中间项是 2×x×4＝8x，又因为 k＞0，所以 k＝8；若允许 k 为负数，则 k＝－8 也成立。",
+   "verify": "2*4"
+  },
+  {
+   "id": "mbs_q530039",
+   "topicId": "mbs_j328",
+   "prompt": "分解因式 3a²－6a＋3，写出完整过程。",
+   "question": "分解因式 3a²－6a＋3，写出完整过程。",
+   "type": "short-answer",
+   "difficulty": "standard",
+   "answer": "3（a－1）²",
+   "explanation": "三项式先看有没有公因式，提出 3 之后再判断括号内是否为完全平方式；漏掉提公因式这一步就会分解不彻底。",
+   "keypoints": [
+    "先提公因式 3，得 3（a²－2a＋1）",
+    "括号内 a²－2a＋1 是完全平方式",
+    "继续分解得 3（a－1）²"
+   ]
+  },
+  {
+   "id": "mbs_q530040",
+   "topicId": "mbs_j328",
+   "prompt": "已知 a²＋b²－6a＋4b＋13＝0，求 a＋b 的值。",
+   "question": "已知 a²＋b²－6a＋4b＋13＝0，求 a＋b 的值。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "1",
+   "explanation": "两个非负数之和等于 0，只能各自为 0；把常数项 13 拆成 9 与 4 并分组配方，就能分别求出 a 与 b 的值。",
+   "keypoints": [
+    "把 13 拆成 9＋4，分组为（a²－6a＋9）＋（b²＋4b＋4）",
+    "两组分别配方得（a－3）² 与（b＋2）²，平方和为 0",
+    "得 a＝3，b＝－2，所以 a＋b＝1"
+   ]
+  }
+ ]
+}

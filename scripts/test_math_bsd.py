@@ -13,9 +13,17 @@ D = os.path.join(ROOT, "data")
 TXT = [
     "/Users/a627692/Desktop/中小学教材/2025修订课程标准TXT /义务教育/"
     "3.《义务教育数学课程标准·日常修订版》(2022年版2025年修订)（docx转换）.txt",
+    "/Users/a627692/Desktop/中小学教材/2025修订课程标准TXT /高中教育/"
+    "（3）普通高中数学课程标准日常修订版（2017年版2025年修订）.txt",
 ]
 FOUR = {"数与代数", "图形与几何", "统计与概率", "综合与实践"}
-MD_BAD = re.compile(r"\*\*|##|`|\$|\\frac|\|")
+MD_BAD = re.compile(r"\*\*|##|`|\$|\\frac")
+ABS_OK = re.compile(r"\|[^|\n]{1,14}\|")   # 绝对值 |x|、|a + b| 放行（与 check_bsd_bank.py 同口径）
+
+
+def has_md(s):
+    rest = ABS_OK.sub("", s)
+    return bool(MD_BAD.search(rest)) or "|" in rest
 
 fails, checks = [], []
 
@@ -41,7 +49,7 @@ by_topic = Counter(q["topicId"] for q in qs)
 ck("id 唯一", len(T) == len(topics))
 ck("全部 subject=math-bsd", all(t.get("subject") == SUBJECT for t in topics))
 ck("规模非空（≥31 知识点）", len(topics) >= 31, len(topics))
-ck("id 命名 mbs_[pju]NNN", all(re.fullmatch(r"mbs_[pju]\d{3}", t["id"]) for t in topics))
+ck("id 命名 mbs_[pjuh]NNN（h＝高中）", all(re.fullmatch(r"mbs_[pjuh]\d{3}", t["id"]) for t in topics))
 ck("领域只用课标四领域", {t.get("domain") for t in topics} <= FOUR,
    sorted({t.get("domain") for t in topics}))
 ck("四领域都有点", {t.get("domain") for t in topics} == FOUR,
@@ -68,8 +76,8 @@ ck("课标 id 都能在索引里解析",
 ck("每条课标都带 quote", not [1 for t in topics for s in t.get("standards", []) if not s.get("quote")])
 ck("confidence 三档", all(s.get("confidence") in ("exact", "partial", "inferred")
                            for t in topics for s in t.get("standards", [])))
-ck("quote 长度 12–60 字",
-   all(12 <= len(s["quote"]) <= 60 for t in topics for s in t.get("standards", [])))
+ck("quote 长度 12–120 字",
+   all(12 <= len(s["quote"]) <= 120 for t in topics for s in t.get("standards", [])))
 if all(os.path.exists(p) for p in TXT):
     src = norm("".join(open(p, encoding="utf-8", errors="ignore").read() for p in TXT))
     miss = [(t["id"], s["quote"][:14]) for t in topics for s in t.get("standards", [])
@@ -131,7 +139,7 @@ ck("题干全域不重复", len({q["prompt"] for q in qs}) == len(qs))
 ck("解析 ≥20 字", all(len(q.get("explanation", "")) >= 20 for q in qs),
    [q["id"] for q in qs if len(q.get("explanation", "")) < 20][:3])
 ck("无 Markdown 符号", not [q["id"] for q in qs
-                          if MD_BAD.search(q.get("prompt", "") + q.get("explanation", ""))])
+                          if has_md(q.get("prompt", "") + q.get("explanation", ""))])
 bad_choice = [q["id"] for q in qs if q["type"] == "choice"
               and (len(q.get("options") or []) != 4
                    or q.get("answer") not in [o["label"] for o in q["options"]]

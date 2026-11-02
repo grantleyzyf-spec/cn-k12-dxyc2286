@@ -1,0 +1,1799 @@
+{
+ "book": "选择性必修第二册",
+ "unit_no": "二",
+ "unit_name": "导数及其应用",
+ "topics": [
+  {
+   "id": "mbs_h212",
+   "name": "平均变化率与瞬时变化率",
+   "description": "从函数的增量与自变量增量之比出发刻画平均变化率，再让自变量增量趋于零得到瞬时变化率。它是第二章的入口，为导数概念、切线斜率与后续单调性研究提供直观基础。",
+   "mastery_criteria": [
+    "能对给定函数与区间算出平均变化率",
+    "能用增量语言说明瞬时变化率是平均变化率的极限",
+    "能区分平均变化率与瞬时变化率所描述的对象"
+   ],
+   "type": "conceptual",
+   "diagnostic_question": {
+    "question": "函数 f(x) = x² 在 x = 2 处的瞬时变化率是多少？",
+    "answer": "4"
+   }
+  },
+  {
+   "id": "mbs_h213",
+   "name": "导数的概念",
+   "description": "在瞬时变化率的基础上给出导数的定义式，理解导数是函数在某一点处增量比的极限，并会由定义求简单函数的导数，为求导公式与运算法则奠基。",
+   "mastery_criteria": [
+    "能写出并识别导数的定义式",
+    "能用定义计算多项式函数在指定点处的导数",
+    "能处理含常数倍的增量比极限"
+   ],
+   "type": "conceptual",
+   "diagnostic_question": {
+    "question": "已知 f(x) = 5x，求 f'(3)。",
+    "answer": "5"
+   }
+  },
+  {
+   "id": "mbs_h214",
+   "name": "导数的几何意义",
+   "description": "把导数值解释为曲线在该点处切线的斜率，会由导数值写出切线方程，并处理过曲线外一点作切线、切线与坐标轴围成图形等问题。",
+   "mastery_criteria": [
+    "能由导数值说出切线斜率",
+    "能写出曲线在给定点处的切线方程",
+    "会处理过曲线外一点的切线问题"
+   ],
+   "type": "procedural",
+   "diagnostic_question": {
+    "question": "曲线 y = x² 在点 (0, 0) 处切线的斜率是多少？",
+    "answer": "0"
+   }
+  },
+  {
+   "id": "mbs_h215",
+   "name": "导数的计算与导数公式表",
+   "description": "建立幂函数等基本初等函数的求导公式表，会用公式直接求导并代入求值。它是全章的计算工具，直接服务于切线、单调性与最值问题的求解。",
+   "mastery_criteria": [
+    "能默写幂函数的求导公式",
+    "能用公式表求多项式函数的导数",
+    "会把导数值代回具体点求瞬时变化率"
+   ],
+   "type": "procedural",
+   "diagnostic_question": {
+    "question": "已知 f(x) = x²，求 f'(x)。",
+    "answer": "2x"
+   }
+  },
+  {
+   "id": "mbs_h216",
+   "name": "导数的四则运算法则",
+   "description": "学习和差、积、商的求导法则，把复杂函数拆成基本函数的组合再求导。掌握后可处理展开式冗长的多项式与分式型函数，是计算能力的关键一环。",
+   "mastery_criteria": [
+    "能正确使用和差与积的求导法则",
+    "能对分式型函数求导",
+    "能由导数值反求参数"
+   ],
+   "type": "procedural",
+   "diagnostic_question": {
+    "question": "已知 f(x) = x² + 3x，求 f'(x)。",
+    "answer": "2x + 3"
+   }
+  },
+  {
+   "id": "mbs_h217",
+   "name": "简单复合函数的求导法则",
+   "description": "认识复合函数的内外层结构，掌握外层导数乘内层导数的求导法则。它把求导公式表的作用范围扩展到括号幂型的函数，是后续应用题建模的必备工具。",
+   "mastery_criteria": [
+    "能指出复合函数的内层与外层",
+    "能对括号幂型函数正确求导且不漏乘内层导数",
+    "能在指定点处求复合函数的导数值"
+   ],
+   "type": "procedural",
+   "diagnostic_question": {
+    "question": "函数 y = (x + 1)² 的内层函数是什么？",
+    "answer": "u = x + 1"
+   }
+  },
+  {
+   "id": "mbs_h218",
+   "name": "函数的单调性（第二章 导数及其应用）",
+   "description": "用导数的符号判定函数在区间上的增减，会解含参数的不等式确定单调区间，并处理已知单调性反求参数范围的问题。它是导数研究函数性质的第一类应用。",
+   "mastery_criteria": [
+    "能由导数符号写出单调区间",
+    "能解 f'(x) > 0 与 f'(x) < 0 得增减区间",
+    "能由给定区间上的单调性反求参数范围"
+   ],
+   "type": "reasoning",
+   "diagnostic_question": {
+    "question": "函数 f(x) = x² 在区间 (0, +∞) 上是增函数还是减函数？",
+    "answer": "增函数"
+   }
+  },
+  {
+   "id": "mbs_h219",
+   "name": "函数的极值",
+   "description": "研究导数零点两侧符号变化与极值的关系，会求极大值、极小值，并区分极值点为导数零点与不可导点的情形，明确极值是局部概念。",
+   "mastery_criteria": [
+    "能判断导数零点两侧符号变化",
+    "能求出函数的极大值与极小值",
+    "能由极值条件用韦达定理反求参数"
+   ],
+   "type": "reasoning",
+   "diagnostic_question": {
+    "question": "函数 f(x) = x² - 2x 在 x = 1 处取极大值还是极小值？",
+    "answer": "极小值"
+   }
+  },
+  {
+   "id": "mbs_h220",
+   "name": "函数的最值",
+   "description": "在闭区间上比较端点值与区间内极值点函数值求最值，掌握最值与极值的区别，并能处理分式型等简单函数在指定区间上的最值问题。",
+   "mastery_criteria": [
+    "能列出闭区间最值的全部候选点",
+    "能正确比较端点值与极值点的函数值",
+    "能说明极值不等于最值的理由"
+   ],
+   "type": "application",
+   "diagnostic_question": {
+    "question": "函数 f(x) = x² 在区间 [0, 3] 上的最大值是多少？",
+    "answer": "9"
+   }
+  },
+  {
+   "id": "mbs_h221",
+   "name": "导数的应用与数学探究",
+   "description": "把导数用到实际情境中：由位移函数求瞬时速度与加速度，由收益、成本函数求边际与最大利润，由几何约束求面积最大等优化问题。",
+   "mastery_criteria": [
+    "能把实际量翻译成函数关系再求导",
+    "能解二次型优化问题并验证最值",
+    "能说明边际量的实际含义"
+   ],
+   "type": "modeling",
+   "diagnostic_question": {
+    "question": "物体位移 s(t) = t²，它在 t = 2 时的瞬时速度是多少？",
+    "answer": "4"
+   }
+  }
+ ],
+ "questions": [
+  {
+   "id": "mbs_q991001",
+   "topicId": "mbs_h212",
+   "prompt": "函数 f(x) = x² 在区间 [1, 3] 上的平均变化率是多少？",
+   "question": "函数 f(x) = x² 在区间 [1, 3] 上的平均变化率是多少？",
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "平均变化率等于函数值增量除以自变量增量，(9 - 1)/(3 - 1) = 4，所以选 A。8 只是两个端点函数值之差，漏除了区间长度；2 与 5 都没有计算依据。",
+   "options": [
+    {
+     "label": "A",
+     "text": "4"
+    },
+    {
+     "label": "B",
+     "text": "8"
+    },
+    {
+     "label": "C",
+     "text": "2"
+    },
+    {
+     "label": "D",
+     "text": "5"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "4"
+    },
+    {
+     "label": "B",
+     "text": "8"
+    },
+    {
+     "label": "C",
+     "text": "2"
+    },
+    {
+     "label": "D",
+     "text": "5"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q991002",
+   "topicId": "mbs_h212",
+   "prompt": "一物体做直线运动，位移 s(t) = 3t²（s 单位米，t 单位秒），它在 t = 1 到 t = 2 这一秒内的平均速度为 ____ 米/秒。",
+   "question": "一物体做直线运动，位移 s(t) = 3t²（s 单位米，t 单位秒），它在 t = 1 到 t = 2 这一秒内的平均速度为 ____ 米/秒。",
+   "answer": "9",
+   "type": "fill",
+   "difficulty": "basic",
+   "explanation": "平均速度等于位移增量除以时间增量，(s(2) - s(1))/(2 - 1) = (12 - 3)/1 = 9 米/秒。注意不能把 t = 2 时的瞬时速度 12 当作平均速度。"
+  },
+  {
+   "id": "mbs_q991003",
+   "topicId": "mbs_h212",
+   "prompt": "函数 f(x) = x² + 2x 在区间 [0, 2] 上的平均变化率为 ____。",
+   "question": "函数 f(x) = x² + 2x 在区间 [0, 2] 上的平均变化率为 ____。",
+   "answer": "4",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "平均变化率等于 (f(2) - f(0))/(2 - 0) = (8 - 0)/2 = 4。先把两个端点的函数值分别算准，再作商，不能把 f(2) 直接当答案。",
+   "verify": "((2**2+2*2)-(0+0))/2"
+  },
+  {
+   "id": "mbs_q991004",
+   "topicId": "mbs_h212",
+   "prompt": "函数 f(x) = x² 在 x = 3 处的瞬时变化率为 ____。",
+   "question": "函数 f(x) = x² 在 x = 3 处的瞬时变化率为 ____。",
+   "answer": "6",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "f(x) = x² 的导函数是 2x，把 x = 3 代入得 2 乘 3 等于 6，这就是该点的瞬时变化率。若只算 f(3) = 9 那就成了函数值。",
+   "verify": "2*3"
+  },
+  {
+   "id": "mbs_q991005",
+   "topicId": "mbs_h212",
+   "prompt": "关于平均变化率与瞬时变化率的关系，下列说法正确的是哪一个？",
+   "question": "关于平均变化率与瞬时变化率的关系，下列说法正确的是哪一个？",
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "standard",
+   "explanation": "瞬时变化率定义为平均变化率当自变量增量趋于零时的极限，A 正确。B 只在常函数时偶然成立；C 忽略函数差异；D 恰好说反，平均变化率还要除以区间长度。",
+   "options": [
+    {
+     "label": "A",
+     "text": "瞬时变化率是平均变化率在自变量增量趋于零时的极限"
+    },
+    {
+     "label": "B",
+     "text": "平均变化率一定等于瞬时变化率"
+    },
+    {
+     "label": "C",
+     "text": "瞬时变化率恒为常数，与函数本身无关"
+    },
+    {
+     "label": "D",
+     "text": "平均变化率只与端点函数值之差有关，与区间长度无关"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "瞬时变化率是平均变化率在自变量增量趋于零时的极限"
+    },
+    {
+     "label": "B",
+     "text": "平均变化率一定等于瞬时变化率"
+    },
+    {
+     "label": "C",
+     "text": "瞬时变化率恒为常数，与函数本身无关"
+    },
+    {
+     "label": "D",
+     "text": "平均变化率只与端点函数值之差有关，与区间长度无关"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q991006",
+   "topicId": "mbs_h212",
+   "prompt": "函数 f(x) = 2x² 在 x = 1 处的瞬时变化率为 ____。",
+   "question": "函数 f(x) = 2x² 在 x = 1 处的瞬时变化率为 ____。",
+   "answer": "4",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "由 f(x) = 2x² 得 f'(x) = 4x，代入 x = 1 得 4，所以瞬时变化率是 4，而不是函数值 f(1) = 2。"
+  },
+  {
+   "id": "mbs_q991007",
+   "topicId": "mbs_h212",
+   "prompt": "用自变量的增量 Δx 表示函数 f(x) = x² 在 x = 1 处的平均变化率，并由此求出该点的瞬时变化率。",
+   "question": "用自变量的增量 Δx 表示函数 f(x) = x² 在 x = 1 处的平均变化率，并由此求出该点的瞬时变化率。",
+   "answer": "平均变化率为 2 + Δx，令 Δx 趋于零得瞬时变化率为 2",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "增量为 (1 + Δx)² - 1 = 2Δx + (Δx)²，作商得 2 + Δx；让 Δx 趋于零时它趋于 2，这正是 f'(1)，也说明平均变化率随区间缩短逼近瞬时变化率。",
+   "keypoints": [
+    "先算函数值增量 (1 + Δx)² - 1",
+    "作商得 Δy/Δx = 2 + Δx",
+    "令 Δx 趋于零得瞬时变化率 2"
+   ]
+  },
+  {
+   "id": "mbs_q991008",
+   "topicId": "mbs_h212",
+   "prompt": "分别求 f(x) = x³ 在区间 [1, 2] 上的平均变化率与在 x = 1 处的瞬时变化率，并比较两者的大小。",
+   "question": "分别求 f(x) = x³ 在区间 [1, 2] 上的平均变化率与在 x = 1 处的瞬时变化率，并比较两者的大小。",
+   "answer": "平均变化率为 7，瞬时变化率为 3，平均变化率更大",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "平均变化率是 (f(2) - f(1))/(2 - 1) = 7；瞬时变化率由 f'(x) = 3x² 得 3。该区间上函数增长越来越快，所以整段平均值大于起点处的瞬时值。",
+   "keypoints": [
+    "平均变化率 =(8 - 1)/(2 - 1) = 7",
+    "由 f'(x) = 3x² 得瞬时变化率为 3",
+    "比较得 7 大于 3"
+   ]
+  },
+  {
+   "id": "mbs_q991009",
+   "topicId": "mbs_h213",
+   "prompt": "设函数 y = f(x) 在 x = x0 处可导，则 f'(x0) 的定义式是下面哪一个？",
+   "question": "设函数 y = f(x) 在 x = x0 处可导，则 f'(x0) 的定义式是下面哪一个？",
+   "answer": "C",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "导数是函数增量与自变量增量之比的极限，第一个选项完全符合。第二个选项把除法写成了乘法；第三个选项缺了取极限这一步；第四个选项分母写成 x + x0，与定义式的 x - x0 不符。",
+   "options": [
+    {
+     "label": "A",
+     "text": "lim(Δx→0)[f(x0 + Δx) - f(x0)]·Δx"
+    },
+    {
+     "label": "B",
+     "text": "[f(x0 + Δx) - f(x0)]/Δx"
+    },
+    {
+     "label": "C",
+     "text": "lim(Δx→0)[f(x0 + Δx) - f(x0)]/Δx"
+    },
+    {
+     "label": "D",
+     "text": "lim(Δx→0)[f(x) - f(x0)]/(x + x0)"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "lim(Δx→0)[f(x0 + Δx) - f(x0)]·Δx"
+    },
+    {
+     "label": "B",
+     "text": "[f(x0 + Δx) - f(x0)]/Δx"
+    },
+    {
+     "label": "C",
+     "text": "lim(Δx→0)[f(x0 + Δx) - f(x0)]/Δx"
+    },
+    {
+     "label": "D",
+     "text": "lim(Δx→0)[f(x) - f(x0)]/(x + x0)"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q991010",
+   "topicId": "mbs_h213",
+   "prompt": "已知 f(x) = 3x，则 f'(2) = ____。",
+   "question": "已知 f(x) = 3x，则 f'(2) = ____。",
+   "answer": "3",
+   "type": "fill",
+   "difficulty": "basic",
+   "explanation": "一次函数 f(x) = 3x 的导数恒等于它的斜率 3，与自变量的取值无关，所以 f'(2) = 3 而不是 f(2) = 6。"
+  },
+  {
+   "id": "mbs_q991011",
+   "topicId": "mbs_h213",
+   "prompt": "已知 f(x) = x²，则 f'(4) 的值为 ____。",
+   "question": "已知 f(x) = x²，则 f'(4) 的值为 ____。",
+   "answer": "8",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "f(x) = x² 的导函数为 f'(x) = 2x，代入 x = 4 得 8，说明该点瞬时变化率是 8。漏乘导数系数 2 会错算成 4。",
+   "verify": "2*4"
+  },
+  {
+   "id": "mbs_q991012",
+   "topicId": "mbs_h213",
+   "prompt": "若 lim(Δx→0)[f(1 + Δx) - f(1)]/Δx = 5，则 f'(1) 的值为 ____。",
+   "question": "若 lim(Δx→0)[f(1 + Δx) - f(1)]/Δx = 5，则 f'(1) 的值为 ____。",
+   "answer": "5",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "该极限正是 f 在 x = 1 处的导数定义式，极限值为 5 就说明 f'(1) = 5，不必再做其他运算，也不要把 5 再乘或除任何系数。",
+   "verify": "10/2"
+  },
+  {
+   "id": "mbs_q991013",
+   "topicId": "mbs_h213",
+   "prompt": "已知 f(2) = 3，且 lim(Δx→0)[f(2 + Δx) - f(2)]/Δx = -1，则 f'(2) 的值是多少？",
+   "question": "已知 f(2) = 3，且 lim(Δx→0)[f(2 + Δx) - f(2)]/Δx = -1，则 f'(2) 的值是多少？",
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "standard",
+   "explanation": "该极限就是 f 在 x = 2 处的导数定义式，极限值为 -1 就说明 f'(2) = -1，与 f(2) = 3 无关。1 把符号看反了；3 与 -3 都是把函数值混进了导数。",
+   "options": [
+    {
+     "label": "A",
+     "text": "-1"
+    },
+    {
+     "label": "B",
+     "text": "1"
+    },
+    {
+     "label": "C",
+     "text": "3"
+    },
+    {
+     "label": "D",
+     "text": "-3"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "-1"
+    },
+    {
+     "label": "B",
+     "text": "1"
+    },
+    {
+     "label": "C",
+     "text": "3"
+    },
+    {
+     "label": "D",
+     "text": "-3"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q991014",
+   "topicId": "mbs_h213",
+   "prompt": "用导数定义可算得，函数 f(x) = x² 在 x = 5 处的导数为 ____。",
+   "question": "用导数定义可算得，函数 f(x) = x² 在 x = 5 处的导数为 ____。",
+   "answer": "10",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "由 f'(x) = 2x 得 f'(5) = 10。也可用定义：增量比为 10 + Δx，令 Δx 趋于零同样得到 10。"
+  },
+  {
+   "id": "mbs_q991015",
+   "topicId": "mbs_h213",
+   "prompt": "请用导数的定义求函数 f(x) = x² + 1 的导函数 f'(x)。",
+   "question": "请用导数的定义求函数 f(x) = x² + 1 的导函数 f'(x)。",
+   "answer": "f'(x) = 2x",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "常数 1 在作增量时被消掉，只剩 2xΔx + (Δx)²，作商得 2x + Δx，取极限即 2x。这说明常数项不影响导函数，只平移图象。",
+   "keypoints": [
+    "求增量 Δy = (x + Δx)² + 1 - (x² + 1) = 2xΔx + (Δx)²",
+    "作商得 Δy/Δx = 2x + Δx",
+    "令 Δx 趋于零得 f'(x) = 2x"
+   ]
+  },
+  {
+   "id": "mbs_q991016",
+   "topicId": "mbs_h213",
+   "prompt": "已知 f'(1) = 2，求极限 lim(h→0)[f(1 + 3h) - f(1)]/h 的值。",
+   "question": "已知 f'(1) = 2，求极限 lim(h→0)[f(1 + 3h) - f(1)]/h 的值。",
+   "answer": "6",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "令 t = 3h，则 h 趋于零时 t 也趋于零，原式等于 3 乘 [f(1 + t) - f(1)]/t 的极限，即 3f'(1) = 6。关键是自变量增量是 3h 而不是 h。",
+   "keypoints": [
+    "分子是 f(1 + 3h) - f(1)，对应自变量增量为 3h",
+    "把式子配成 3 乘 [f(1 + 3h) - f(1)]/(3h)",
+    "由导数定义得极限等于 3f'(1) = 6"
+   ]
+  },
+  {
+   "id": "mbs_q991017",
+   "topicId": "mbs_h214",
+   "prompt": "曲线 y = x² 在点 (1, 1) 处切线的斜率是多少？",
+   "question": "曲线 y = x² 在点 (1, 1) 处切线的斜率是多少？",
+   "answer": "C",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "切线斜率等于该点处的导数值，y' = 2x，在 x = 1 处为 2。1 是切点的纵坐标；4 误按 x = 2 代入；1/2 把斜率取成了倒数。",
+   "options": [
+    {
+     "label": "A",
+     "text": "1"
+    },
+    {
+     "label": "B",
+     "text": "4"
+    },
+    {
+     "label": "C",
+     "text": "2"
+    },
+    {
+     "label": "D",
+     "text": "1/2"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "1"
+    },
+    {
+     "label": "B",
+     "text": "4"
+    },
+    {
+     "label": "C",
+     "text": "2"
+    },
+    {
+     "label": "D",
+     "text": "1/2"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q991018",
+   "topicId": "mbs_h214",
+   "prompt": "曲线 y = x³ 在 x = 1 处的切线斜率为 ____。",
+   "question": "曲线 y = x³ 在 x = 1 处的切线斜率为 ____。",
+   "answer": "3",
+   "type": "fill",
+   "difficulty": "basic",
+   "explanation": "由 y' = 3x²，代入 x = 1 得切线斜率为 3。斜率是导数值，不是函数值 1，这是最常见的混淆。"
+  },
+  {
+   "id": "mbs_q991019",
+   "topicId": "mbs_h214",
+   "prompt": "曲线 y = x² + 1 在点 (1, 2) 处切线的斜率为 ____。",
+   "question": "曲线 y = x² + 1 在点 (1, 2) 处切线的斜率为 ____。",
+   "answer": "2",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "y' = 2x，在 x = 1 处切线斜率为 2。常数项 1 不影响导数，它只把切点从 (1, 1) 抬高到 (1, 2)。",
+   "verify": "2*1"
+  },
+  {
+   "id": "mbs_q991020",
+   "topicId": "mbs_h214",
+   "prompt": "曲线 y = x² 在点 (2, 4) 处的切线为 y = 4x - 4，则该切线与 x 轴交点的横坐标为 ____。",
+   "question": "曲线 y = x² 在点 (2, 4) 处的切线为 y = 4x - 4，则该切线与 x 轴交点的横坐标为 ____。",
+   "answer": "1",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "令切线方程中 4x - 4 = 0 得 x = 1，即切线与 x 轴交于 (1, 0)。有了切线方程直接解方程即可，不需再求导。",
+   "verify": "4/4"
+  },
+  {
+   "id": "mbs_q991021",
+   "topicId": "mbs_h214",
+   "prompt": "曲线 y = x² - 2x 在点 (1, -1) 处的切线是什么？",
+   "question": "曲线 y = x² - 2x 在点 (1, -1) 处的切线是什么？",
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "standard",
+   "explanation": "y' = 2x - 2，在 x = 1 处导数为 0，切线斜率为 0，所以切线是过 (1, -1) 的水平直线 y = -1。另外三个选项的斜率都不为 0，与导数值不符。",
+   "options": [
+    {
+     "label": "A",
+     "text": "y = -1（一条水平直线）"
+    },
+    {
+     "label": "B",
+     "text": "y = 2x - 3"
+    },
+    {
+     "label": "C",
+     "text": "y = -2x + 1"
+    },
+    {
+     "label": "D",
+     "text": "x = 1（一条竖直直线）"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "y = -1（一条水平直线）"
+    },
+    {
+     "label": "B",
+     "text": "y = 2x - 3"
+    },
+    {
+     "label": "C",
+     "text": "y = -2x + 1"
+    },
+    {
+     "label": "D",
+     "text": "x = 1（一条竖直直线）"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q991022",
+   "topicId": "mbs_h214",
+   "prompt": "曲线 y = 2x² 在点 (1, 2) 处切线的斜率为 ____。",
+   "question": "曲线 y = 2x² 在点 (1, 2) 处切线的斜率为 ____。",
+   "answer": "4",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "y' = 4x，代入 x = 1 得斜率为 4。若误按 y = x² 求导会得到 2，那是漏掉了系数 2 造成的。"
+  },
+  {
+   "id": "mbs_q991023",
+   "topicId": "mbs_h214",
+   "prompt": "求过点 (1, 0) 且与曲线 y = x² 相切的直线方程。",
+   "question": "求过点 (1, 0) 且与曲线 y = x² 相切的直线方程。",
+   "answer": "y = 0 与 y = 4x - 4 两条",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "点 (1, 0) 不在曲线上，必须先设切点再写切线。方程 a² = 2a(a - 1) 给出 a = 0 与 a = 2 两解，对应两条切线，漏解是常见错误。",
+   "keypoints": [
+    "设切点为 (a, a²)，切线斜率为 2a",
+    "由切线过 (1, 0) 得 a² = 2a(a - 1)",
+    "解得 a = 0 或 a = 2，得 y = 0 与 y = 4x - 4"
+   ]
+  },
+  {
+   "id": "mbs_q991024",
+   "topicId": "mbs_h214",
+   "prompt": "求曲线 y = x³ 在点 (1, 1) 处的切线与两条坐标轴围成的三角形面积。",
+   "question": "求曲线 y = x³ 在点 (1, 1) 处的切线与两条坐标轴围成的三角形面积。",
+   "answer": "2/3",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "切线为 y - 1 = 3(x - 1)，即 y = 3x - 2，与 x 轴交于 (2/3, 0)、与 y 轴交于 (0, -2)，直角三角形面积取截距绝对值之积的一半，得 2/3。",
+   "keypoints": [
+    "由 y' = 3x² 得切线斜率 3",
+    "切线方程为 y = 3x - 2",
+    "两截距为 2/3 与 -2，面积等于 1/2 乘 2/3 乘 2 得 2/3"
+   ]
+  },
+  {
+   "id": "mbs_q991025",
+   "topicId": "mbs_h215",
+   "prompt": "下列求导结果正确的是哪一个？",
+   "question": "下列求导结果正确的是哪一个？",
+   "answer": "D",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "幂函数求导法则是把指数提到前面作系数、指数再减 1，所以 (x³)' = 3x²。x² 是漏乘指数 3；3x 是漏减指数；3x⁴ 反而把指数加 1 了。",
+   "options": [
+    {
+     "label": "A",
+     "text": "(x³)' = x²"
+    },
+    {
+     "label": "B",
+     "text": "(x³)' = 3x"
+    },
+    {
+     "label": "C",
+     "text": "(x³)' = 3x⁴"
+    },
+    {
+     "label": "D",
+     "text": "(x³)' = 3x²"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "(x³)' = x²"
+    },
+    {
+     "label": "B",
+     "text": "(x³)' = 3x"
+    },
+    {
+     "label": "C",
+     "text": "(x³)' = 3x⁴"
+    },
+    {
+     "label": "D",
+     "text": "(x³)' = 3x²"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q991026",
+   "topicId": "mbs_h215",
+   "prompt": "已知 f(x) = x⁵，则 f'(x) = ____。",
+   "question": "已知 f(x) = x⁵，则 f'(x) = ____。",
+   "answer": "5x⁴",
+   "type": "fill",
+   "difficulty": "basic",
+   "explanation": "按幂函数求导法则，(x⁵)' = 5x⁴：指数 5 提到系数位置，新指数为 5 - 1 = 4。漏掉系数或指数不减都是错误。"
+  },
+  {
+   "id": "mbs_q991027",
+   "topicId": "mbs_h215",
+   "prompt": "已知 f(x) = x⁴，则 f'(1) 的值为 ____。",
+   "question": "已知 f(x) = x⁴，则 f'(1) 的值为 ____。",
+   "answer": "4",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "f'(x) = 4x³，代入 x = 1 得 4。也可由 f(1) = 1 与导函数表达式看出，该点切线斜率就是 4。",
+   "verify": "4*1**3"
+  },
+  {
+   "id": "mbs_q991028",
+   "topicId": "mbs_h215",
+   "prompt": "已知 f(x) = x³ - 3x，则 f'(2) 的值为 ____。",
+   "question": "已知 f(x) = x³ - 3x，则 f'(2) 的值为 ____。",
+   "answer": "9",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "逐项求导得 f'(x) = 3x² - 3，代入 x = 2 得 12 - 3 = 9。注意 -3x 的导数是 -3，不能把它当成常数项直接舍去。",
+   "verify": "3*2**2-3"
+  },
+  {
+   "id": "mbs_q991029",
+   "topicId": "mbs_h215",
+   "prompt": "函数 f(x) = 1/x（x 不等于 0）的导数是什么？",
+   "question": "函数 f(x) = 1/x（x 不等于 0）的导数是什么？",
+   "answer": "B",
+   "type": "choice",
+   "difficulty": "standard",
+   "explanation": "1/x 就是 x 的 -1 次方，按幂函数法则导数为 -x 的 -2 次方，即 -1/x²。正号选项漏掉了负指数带来的负号；-1/x 指数没减；-2/x² 把系数算错。",
+   "options": [
+    {
+     "label": "A",
+     "text": "f'(x) = 1/x²"
+    },
+    {
+     "label": "B",
+     "text": "f'(x) = -1/x²"
+    },
+    {
+     "label": "C",
+     "text": "f'(x) = -1/x"
+    },
+    {
+     "label": "D",
+     "text": "f'(x) = -2/x²"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "f'(x) = 1/x²"
+    },
+    {
+     "label": "B",
+     "text": "f'(x) = -1/x²"
+    },
+    {
+     "label": "C",
+     "text": "f'(x) = -1/x"
+    },
+    {
+     "label": "D",
+     "text": "f'(x) = -2/x²"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q991030",
+   "topicId": "mbs_h215",
+   "prompt": "函数 f(x) = √x（x 大于 0）的导数为 ____。",
+   "question": "函数 f(x) = √x（x 大于 0）的导数为 ____。",
+   "answer": "1/(2√x)",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "√x 即 x 的 1/2 次方，求导得 (1/2) 乘 x 的 -1/2 次方，写成根式就是 1/(2√x)。注意分母里仍带根号，不能写成 1/2 或 2√x。"
+  },
+  {
+   "id": "mbs_q991031",
+   "topicId": "mbs_h215",
+   "prompt": "求函数 f(x) = x³ - 2x + 1 的导函数，并求出 f'(1) 的值。",
+   "question": "求函数 f(x) = x³ - 2x + 1 的导函数，并求出 f'(1) 的值。",
+   "answer": "f'(x) = 3x² - 2，f'(1) = 1",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "多项式逐项求导：x³ 得 3x²，-2x 得 -2，常数 1 得 0，故 f'(x) = 3x² - 2，代入 x = 1 得 1。常数项导数必须是 0。",
+   "keypoints": [
+    "逐项求导得 f'(x) = 3x² - 2",
+    "常数 1 的导数为 0",
+    "代入 x = 1 得 f'(1) = 3 - 2 = 1"
+   ]
+  },
+  {
+   "id": "mbs_q991032",
+   "topicId": "mbs_h215",
+   "prompt": "曲线 y = x⁴ 上哪一点处的切线斜率等于 4？求出该点的横坐标并说明理由。",
+   "question": "曲线 y = x⁴ 上哪一点处的切线斜率等于 4？求出该点的横坐标并说明理由。",
+   "answer": "横坐标为 1",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "切线斜率由导数表示，令 4x³ = 4 得 x³ = 1，实数解只有 x = 1，故该点横坐标为 1，此时切线斜率恰为 4。",
+   "keypoints": [
+    "切线斜率由导数 y' = 4x³ 给出",
+    "令 4x³ = 4 得 x³ = 1",
+    "解得 x = 1"
+   ]
+  },
+  {
+   "id": "mbs_q991033",
+   "topicId": "mbs_h216",
+   "prompt": "若 f(x) 与 g(x) 都可导，则 f(x) 与 g(x) 之和的导数等于什么？",
+   "question": "若 f(x) 与 g(x) 都可导，则 f(x) 与 g(x) 之和的导数等于什么？",
+   "answer": "B",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "和差的导数等于导数的和差，所以和的导数是 f'(x) + g'(x)。两个乘积形式把加法的运算法则误当乘法；最后一个把符号弄反了。",
+   "options": [
+    {
+     "label": "A",
+     "text": "f'(x)·g'(x)"
+    },
+    {
+     "label": "B",
+     "text": "f'(x) + g'(x)"
+    },
+    {
+     "label": "C",
+     "text": "f(x)·g'(x)"
+    },
+    {
+     "label": "D",
+     "text": "f'(x) - g'(x)"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "f'(x)·g'(x)"
+    },
+    {
+     "label": "B",
+     "text": "f'(x) + g'(x)"
+    },
+    {
+     "label": "C",
+     "text": "f(x)·g'(x)"
+    },
+    {
+     "label": "D",
+     "text": "f'(x) - g'(x)"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q991034",
+   "topicId": "mbs_h216",
+   "prompt": "已知 f(x) = x² + x，则 f'(x) = ____。",
+   "question": "已知 f(x) = x² + x，则 f'(x) = ____。",
+   "answer": "2x + 1",
+   "type": "fill",
+   "difficulty": "basic",
+   "explanation": "逐项求导：x² 的导数是 2x，x 的导数是 1，所以 f'(x) = 2x + 1。漏掉一次项是常见错误。"
+  },
+  {
+   "id": "mbs_q991035",
+   "topicId": "mbs_h216",
+   "prompt": "已知 f(x) = (x + 1)(x - 1)，则 f'(2) 的值为 ____。",
+   "question": "已知 f(x) = (x + 1)(x - 1)，则 f'(2) 的值为 ____。",
+   "answer": "4",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "先展开得 f(x) = x² - 1，求导得 2x，代入 x = 2 得 4。若用积的求导法则，结果是 (x - 1) + (x + 1) = 2x，同样得 4。",
+   "verify": "2*2"
+  },
+  {
+   "id": "mbs_q991036",
+   "topicId": "mbs_h216",
+   "prompt": "已知 f(x) = x³ + x²，则 f'(1) 的值为 ____。",
+   "question": "已知 f(x) = x³ + x²，则 f'(1) 的值为 ____。",
+   "answer": "5",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "f'(x) = 3x² + 2x，代入 x = 1 得 3 + 2 = 5。两项分别按幂函数法则求导后相加即可。",
+   "verify": "3*1**2+2*1"
+  },
+  {
+   "id": "mbs_q991037",
+   "topicId": "mbs_h216",
+   "prompt": "函数 f(x) = (2x + 1)(x - 3) 的导数是什么？",
+   "question": "函数 f(x) = (2x + 1)(x - 3) 的导数是什么？",
+   "answer": "D",
+   "type": "choice",
+   "difficulty": "standard",
+   "explanation": "展开得 f(x) = 2x² - 5x - 3，求导得 4x - 5。2x - 5 漏乘了二次项系数 2；4x - 3 与 4x + 1 都把常数项或一次项系数的符号算错了。",
+   "options": [
+    {
+     "label": "A",
+     "text": "f'(x) = 2x - 5"
+    },
+    {
+     "label": "B",
+     "text": "f'(x) = 4x - 3"
+    },
+    {
+     "label": "C",
+     "text": "f'(x) = 4x + 1"
+    },
+    {
+     "label": "D",
+     "text": "f'(x) = 4x - 5"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "f'(x) = 2x - 5"
+    },
+    {
+     "label": "B",
+     "text": "f'(x) = 4x - 3"
+    },
+    {
+     "label": "C",
+     "text": "f'(x) = 4x + 1"
+    },
+    {
+     "label": "D",
+     "text": "f'(x) = 4x - 5"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q991038",
+   "topicId": "mbs_h216",
+   "prompt": "已知 f(x) = x² - 3x，则 f'(x) = ____。",
+   "question": "已知 f(x) = x² - 3x，则 f'(x) = ____。",
+   "answer": "2x - 3",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "对 x² 与 -3x 分别求导得 2x 与 -3，所以 f'(x) = 2x - 3。负号不能丢，写成 2x + 3 就是错的。"
+  },
+  {
+   "id": "mbs_q991039",
+   "topicId": "mbs_h216",
+   "prompt": "已知 f(x) = (x + 1)/x（x 不等于 0），求 f'(x)。",
+   "question": "已知 f(x) = (x + 1)/x（x 不等于 0），求 f'(x)。",
+   "answer": "f'(x) = -1/x²",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "把分子拆开后 f(x) = 1 + 1/x，逐项求导即得 -1/x²。若直接套商的求导法则，分子为 x 乘 1 减 (x + 1) 乘 1 得 -1，除以 x² 仍是 -1/x²。",
+   "keypoints": [
+    "先把 f(x) 化简为 1 + 1/x",
+    "1 的导数为 0，1/x 的导数为 -1/x²",
+    "相加得 f'(x) = -1/x²"
+   ]
+  },
+  {
+   "id": "mbs_q991040",
+   "topicId": "mbs_h216",
+   "prompt": "已知 f(x) = x³ + ax，且 f'(1) = 5，求实数 a 的值。",
+   "question": "已知 f(x) = x³ + ax，且 f'(1) = 5，求实数 a 的值。",
+   "answer": "a = 2",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "由 f'(x) = 3x² + a 得 f'(1) = 3 + a，令它等于 5 得 a = 2。回代可见 f'(x) = 3x² + 2，f'(1) = 5，符合条件。",
+   "keypoints": [
+    "求导得 f'(x) = 3x² + a",
+    "代入 x = 1 得 3 + a = 5",
+    "解得 a = 2 并回代检验"
+   ]
+  },
+  {
+   "id": "mbs_q991041",
+   "topicId": "mbs_h217",
+   "prompt": "函数 y = (2x + 1)² 可以看作哪两个函数的复合？",
+   "question": "函数 y = (2x + 1)² 可以看作哪两个函数的复合？",
+   "answer": "C",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "把括号里的 2x + 1 看作内层 u，外层就是 y = u²，复合后恰为 (2x + 1)²。另外三个选项的内层漏掉系数 2 或外层系数写错，复合后得不到原函数。",
+   "options": [
+    {
+     "label": "A",
+     "text": "y = 2u 与 u = x + 1"
+    },
+    {
+     "label": "B",
+     "text": "y = u² 与 u = x + 1"
+    },
+    {
+     "label": "C",
+     "text": "y = u² 与 u = 2x + 1"
+    },
+    {
+     "label": "D",
+     "text": "y = 2u² 与 u = x + 1"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "y = 2u 与 u = x + 1"
+    },
+    {
+     "label": "B",
+     "text": "y = u² 与 u = x + 1"
+    },
+    {
+     "label": "C",
+     "text": "y = u² 与 u = 2x + 1"
+    },
+    {
+     "label": "D",
+     "text": "y = 2u² 与 u = x + 1"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q991042",
+   "topicId": "mbs_h217",
+   "prompt": "函数 y = (3x + 1)² 的导数在 x = 0 处的值为 ____。",
+   "question": "函数 y = (3x + 1)² 的导数在 x = 0 处的值为 ____。",
+   "answer": "6",
+   "type": "fill",
+   "difficulty": "basic",
+   "explanation": "复合求导得 y' = 2(3x + 1) 乘 3 等于 6(3x + 1)，代入 x = 0 得 6。只对外层求导而漏乘内层导数 3 会得到 2。"
+  },
+  {
+   "id": "mbs_q991043",
+   "topicId": "mbs_h217",
+   "prompt": "函数 y = (x + 2)³ 在 x = 0 处的导数值为 ____。",
+   "question": "函数 y = (x + 2)³ 在 x = 0 处的导数值为 ____。",
+   "answer": "12",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "复合求导得 y' = 3(x + 2)²，内层 x + 2 的导数为 1，代入 x = 0 得 3 乘 4 等于 12。漏把指数 3 降下来会算成 4。",
+   "verify": "3*2**2"
+  },
+  {
+   "id": "mbs_q991044",
+   "topicId": "mbs_h217",
+   "prompt": "函数 y = (2x - 1)⁴ 在 x = 1 处的导数值为 ____。",
+   "question": "函数 y = (2x - 1)⁴ 在 x = 1 处的导数值为 ____。",
+   "answer": "8",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "y' = 4(2x - 1)³ 乘 2，代入 x = 1 得 4 乘 1 乘 2 等于 8。内层导数 2 必须乘上，漏乘会得到 4。",
+   "verify": "4*1**3*2"
+  },
+  {
+   "id": "mbs_q991045",
+   "topicId": "mbs_h217",
+   "prompt": "函数 y = (1 - 2x)³ 的导数是什么？",
+   "question": "函数 y = (1 - 2x)³ 的导数是什么？",
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "standard",
+   "explanation": "外层求导得 3(1 - 2x)²，内层 1 - 2x 的导数是 -2，相乘得 -6(1 - 2x)²。正号选项丢了内层负号；3(1 - 2x)² 完全漏乘内层导数。",
+   "options": [
+    {
+     "label": "A",
+     "text": "y' = -6(1 - 2x)²"
+    },
+    {
+     "label": "B",
+     "text": "y' = 3(1 - 2x)²"
+    },
+    {
+     "label": "C",
+     "text": "y' = 6(1 - 2x)²"
+    },
+    {
+     "label": "D",
+     "text": "y' = -3(1 - 2x)²"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "y' = -6(1 - 2x)²"
+    },
+    {
+     "label": "B",
+     "text": "y' = 3(1 - 2x)²"
+    },
+    {
+     "label": "C",
+     "text": "y' = 6(1 - 2x)²"
+    },
+    {
+     "label": "D",
+     "text": "y' = -3(1 - 2x)²"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q991046",
+   "topicId": "mbs_h217",
+   "prompt": "函数 y = (x² + 1)³ 在 x = 1 处的导数值为 ____。",
+   "question": "函数 y = (x² + 1)³ 在 x = 1 处的导数值为 ____。",
+   "answer": "24",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "y' = 3(x² + 1)² 乘 2x，代入 x = 1 得 3 乘 4 乘 2 等于 24。内层 2x 在 x = 1 处等于 2，不能当成 1。"
+  },
+  {
+   "id": "mbs_q991047",
+   "topicId": "mbs_h217",
+   "prompt": "求函数 y = (3x - 2)⁵ 的导函数。",
+   "question": "求函数 y = (3x - 2)⁵ 的导函数。",
+   "answer": "y' = 15(3x - 2)⁴",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "复合函数求导要外层导数乘内层导数，5(3x - 2)⁴ 再乘 3 得 15(3x - 2)⁴。只写 5(3x - 2)⁴ 就是漏乘内层导数。",
+   "keypoints": [
+    "设内层 u = 3x - 2，外层 y = u⁵",
+    "外层导数为 5u⁴，内层导数为 3",
+    "相乘得 y' = 15(3x - 2)⁴"
+   ]
+  },
+  {
+   "id": "mbs_q991048",
+   "topicId": "mbs_h217",
+   "prompt": "已知 y = (x² + 3x)²，求 y'(1) 的值。",
+   "question": "已知 y = (x² + 3x)²，求 y'(1) 的值。",
+   "answer": "40",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "由复合求导 y' = 2(x² + 3x)(2x + 3)，代入 x = 1 得 2 乘 4 乘 5 等于 40。先算内层值与内层导数再相乘最稳妥。",
+   "keypoints": [
+    "设内层 u = x² + 3x，则 y' = 2u 乘 u'",
+    "u(1) = 4，u'(1) = 2 乘 1 加 3 得 5",
+    "y'(1) = 2 乘 4 乘 5 = 40"
+   ]
+  },
+  {
+   "id": "mbs_q991049",
+   "topicId": "mbs_h218",
+   "prompt": "若在区间 (a, b) 内恒有 f'(x) 大于 0，则 f(x) 在该区间上的单调性是怎样的？",
+   "question": "若在区间 (a, b) 内恒有 f'(x) 大于 0，则 f(x) 在该区间上的单调性是怎样的？",
+   "answer": "B",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "导数符号刻画函数增减：导数为正说明函数值随自变量增大而增大，故单调递增。导数为负才对应递减，而先增后减需要导数变号。",
+   "options": [
+    {
+     "label": "A",
+     "text": "单调递减"
+    },
+    {
+     "label": "B",
+     "text": "单调递增"
+    },
+    {
+     "label": "C",
+     "text": "先增后减"
+    },
+    {
+     "label": "D",
+     "text": "无法判断"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "单调递减"
+    },
+    {
+     "label": "B",
+     "text": "单调递增"
+    },
+    {
+     "label": "C",
+     "text": "先增后减"
+    },
+    {
+     "label": "D",
+     "text": "无法判断"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q991050",
+   "topicId": "mbs_h218",
+   "prompt": "函数 f(x) = x² - 4x 的单调递减区间为 ____。",
+   "question": "函数 f(x) = x² - 4x 的单调递减区间为 ____。",
+   "answer": "(-∞, 2)",
+   "type": "fill",
+   "difficulty": "basic",
+   "explanation": "f'(x) = 2x - 4，令 2x - 4 小于 0 得 x 小于 2，所以递减区间是 (-∞, 2)。x = 2 处导数为 0，是增减的分界点。"
+  },
+  {
+   "id": "mbs_q991051",
+   "topicId": "mbs_h218",
+   "prompt": "函数 f(x) = x³ - 3x 的单调递减区间长度为 ____。",
+   "question": "函数 f(x) = x³ - 3x 的单调递减区间长度为 ____。",
+   "answer": "2",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "f'(x) = 3x² - 3，令它小于 0 得 -1 小于 x 小于 1，递减区间 (-1, 1) 的长度为 1 减 (-1) 等于 2。先把导数零点求准再定区间。",
+   "verify": "1-(-1)"
+  },
+  {
+   "id": "mbs_q991052",
+   "topicId": "mbs_h218",
+   "prompt": "函数 f(x) = x² - 2x 的单调递减区间与单调递增区间的分界点横坐标为 ____。",
+   "question": "函数 f(x) = x² - 2x 的单调递减区间与单调递增区间的分界点横坐标为 ____。",
+   "answer": "1",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "f'(x) = 2x - 2，零点为 x = 1，左侧导数为负、右侧为正，故分界点横坐标为 1，它也是增区间的左端点。",
+   "verify": "2/2"
+  },
+  {
+   "id": "mbs_q991053",
+   "topicId": "mbs_h218",
+   "prompt": "若函数 f(x) = x³ + ax 在实数集 R 上单调递增，则实数 a 的取值范围是什么？",
+   "question": "若函数 f(x) = x³ + ax 在实数集 R 上单调递增，则实数 a 的取值范围是什么？",
+   "answer": "D",
+   "type": "choice",
+   "difficulty": "standard",
+   "explanation": "f'(x) = 3x² + a 在 R 上不小于 0 只需 a 大于或等于 0，此时只有孤立点使导数为 0，函数仍严格递增。a 大于 0 只是充分不必要；两个非正选项会使导数为负。",
+   "options": [
+    {
+     "label": "A",
+     "text": "a 大于 0"
+    },
+    {
+     "label": "B",
+     "text": "a 小于或等于 0"
+    },
+    {
+     "label": "C",
+     "text": "a 小于 0"
+    },
+    {
+     "label": "D",
+     "text": "a 大于或等于 0"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "a 大于 0"
+    },
+    {
+     "label": "B",
+     "text": "a 小于或等于 0"
+    },
+    {
+     "label": "C",
+     "text": "a 小于 0"
+    },
+    {
+     "label": "D",
+     "text": "a 大于或等于 0"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q991054",
+   "topicId": "mbs_h218",
+   "prompt": "函数 f(x) = x² + 2x 的单调递增区间为 ____。",
+   "question": "函数 f(x) = x² + 2x 的单调递增区间为 ____。",
+   "answer": "(-1, +∞)",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "f'(x) = 2x + 2，令它大于 0 得 x 大于 -1，故增区间为 (-1, +∞)。顶点横坐标 -1 就是增减的分界。"
+  },
+  {
+   "id": "mbs_q991055",
+   "topicId": "mbs_h218",
+   "prompt": "求函数 f(x) = x³ - 3x² 的单调区间。",
+   "question": "求函数 f(x) = x³ - 3x² 的单调区间。",
+   "answer": "增区间为 (-∞, 0) 与 (2, +∞)，减区间为 (0, 2)",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "导数分解为 3x(x - 2)，符号在 x = 0 与 x = 2 两处改变，正号区间是 (-∞, 0) 与 (2, +∞)，负号区间是 (0, 2)，据此写出增区间与减区间。",
+   "keypoints": [
+    "求导得 f'(x) = 3x² - 6x = 3x(x - 2)",
+    "解 f'(x) 大于 0 得 x 小于 0 或 x 大于 2",
+    "解 f'(x) 小于 0 得 0 小于 x 小于 2"
+   ]
+  },
+  {
+   "id": "mbs_q991056",
+   "topicId": "mbs_h218",
+   "prompt": "已知函数 f(x) = x³ - ax 在区间 (1, +∞) 上单调递增，求实数 a 的取值范围。",
+   "question": "已知函数 f(x) = x³ - ax 在区间 (1, +∞) 上单调递增，求实数 a 的取值范围。",
+   "answer": "a 小于或等于 3",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "要求 3x² - a 不小于 0 对一切 x 大于 1 成立，即 a 不大于 3x² 恒成立。3x² 在区间上的下确界为 3，所以 a 小于或等于 3。",
+   "keypoints": [
+    "f'(x) = 3x² - a 在 (1, +∞) 上应不小于 0",
+    "3x² 在 x 大于 1 时大于 3",
+    "故 a 小于或等于 3"
+   ]
+  },
+  {
+   "id": "mbs_q991057",
+   "topicId": "mbs_h219",
+   "prompt": "若 f'(x0) = 0，且 f'(x) 在 x0 左右两侧符号相反，则 x0 是什么？",
+   "question": "若 f'(x0) = 0，且 f'(x) 在 x0 左右两侧符号相反，则 x0 是什么？",
+   "answer": "C",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "导数在两侧变号说明函数在此处由增变减或由减变增，故 x0 是极值点。极值是局部概念，未必是最大值点；它与函数零点和对称性也没有必然联系。",
+   "options": [
+    {
+     "label": "A",
+     "text": "f(x) 的最大值点"
+    },
+    {
+     "label": "B",
+     "text": "f(x) 的零点"
+    },
+    {
+     "label": "C",
+     "text": "f(x) 的极值点"
+    },
+    {
+     "label": "D",
+     "text": "f(x) 图象的对称中心"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "f(x) 的最大值点"
+    },
+    {
+     "label": "B",
+     "text": "f(x) 的零点"
+    },
+    {
+     "label": "C",
+     "text": "f(x) 的极值点"
+    },
+    {
+     "label": "D",
+     "text": "f(x) 图象的对称中心"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q991058",
+   "topicId": "mbs_h219",
+   "prompt": "函数 f(x) = x² - 2x 的极小值为 ____。",
+   "question": "函数 f(x) = x² - 2x 的极小值为 ____。",
+   "answer": "-1",
+   "type": "fill",
+   "difficulty": "basic",
+   "explanation": "f'(x) = 2x - 2，零点为 x = 1，此时 f(1) = 1 - 2 = -1。开口向上的抛物线在顶点处取极小值。"
+  },
+  {
+   "id": "mbs_q991059",
+   "topicId": "mbs_h219",
+   "prompt": "函数 f(x) = x³ - 3x 的极大值为 ____。",
+   "question": "函数 f(x) = x³ - 3x 的极大值为 ____。",
+   "answer": "2",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "f'(x) = 3x² - 3 的零点为 -1 与 1。x = -1 处导数由正变负，f(-1) = -1 + 3 = 2 为极大值。代入 1 会得到极小值 -2。",
+   "verify": "(-1)**3-3*(-1)"
+  },
+  {
+   "id": "mbs_q991060",
+   "topicId": "mbs_h219",
+   "prompt": "函数 f(x) = x³ - 3x² 的极小值为 ____。",
+   "question": "函数 f(x) = x³ - 3x² 的极小值为 ____。",
+   "answer": "-4",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "f'(x) = 3x² - 6x 的零点为 0 与 2。x = 2 处导数由负变正，f(2) = 8 - 12 = -4 为极小值。",
+   "verify": "2**3-3*2**2"
+  },
+  {
+   "id": "mbs_q991061",
+   "topicId": "mbs_h219",
+   "prompt": "函数 f(x) = x³ 在 x = 0 处的极值情况是怎样的？",
+   "question": "函数 f(x) = x³ 在 x = 0 处的极值情况是怎样的？",
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "standard",
+   "explanation": "f'(x) = 3x² 在 x = 0 两侧都为正，导数不变号，函数始终单调递增，所以 x = 0 不是极值点，尽管该点导数为 0。",
+   "options": [
+    {
+     "label": "A",
+     "text": "没有极值"
+    },
+    {
+     "label": "B",
+     "text": "取得极大值 0"
+    },
+    {
+     "label": "C",
+     "text": "取得极小值 0"
+    },
+    {
+     "label": "D",
+     "text": "既有极大值又有极小值"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "没有极值"
+    },
+    {
+     "label": "B",
+     "text": "取得极大值 0"
+    },
+    {
+     "label": "C",
+     "text": "取得极小值 0"
+    },
+    {
+     "label": "D",
+     "text": "既有极大值又有极小值"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q991062",
+   "topicId": "mbs_h219",
+   "prompt": "函数 f(x) = x³ - 6x² + 9x 的极大值点对应的 x 值为 ____。",
+   "question": "函数 f(x) = x³ - 6x² + 9x 的极大值点对应的 x 值为 ____。",
+   "answer": "1",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "f'(x) = 3x² - 12x + 9 = 3(x - 1)(x - 3)，在 x = 1 处导数由正变负，故极大值点为 x = 1，x = 3 处取极小值。"
+  },
+  {
+   "id": "mbs_q991063",
+   "topicId": "mbs_h219",
+   "prompt": "求函数 f(x) = x³ - 3x 的极大值与极小值。",
+   "question": "求函数 f(x) = x³ - 3x 的极大值与极小值。",
+   "answer": "极大值为 2（在 x = -1 处），极小值为 -2（在 x = 1 处）",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "导数为 3(x - 1)(x + 1)，两个零点把定义域分成三段，符号依次为正、负、正，所以先极大后极小，代入得极大值 2、极小值 -2。",
+   "keypoints": [
+    "f'(x) = 3x² - 3，零点为 -1 与 1",
+    "x = -1 处导数由正变负，f(-1) = 2 为极大值",
+    "x = 1 处导数由负变正，f(1) = -2 为极小值"
+   ]
+  },
+  {
+   "id": "mbs_q991064",
+   "topicId": "mbs_h219",
+   "prompt": "已知 f(x) = x³ + ax² + bx 在 x = 1 与 x = 3 处取得极值，求 a 与 b 的值。",
+   "question": "已知 f(x) = x³ + ax² + bx 在 x = 1 与 x = 3 处取得极值，求 a 与 b 的值。",
+   "answer": "a = -6，b = 9",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "三次函数在极值点处导数为 0，故 1 与 3 是 3x² + 2ax + b = 0 的两根。用韦达定理得两根和 -2a/3 = 4、两根积 b/3 = 3，解得 a = -6、b = 9。",
+   "keypoints": [
+    "求导得 f'(x) = 3x² + 2ax + b",
+    "1 与 3 是 f'(x) = 0 的两根，和为 4、积为 3",
+    "由 -2a/3 = 4 得 a = -6，由 b/3 = 3 得 b = 9"
+   ]
+  },
+  {
+   "id": "mbs_q991065",
+   "topicId": "mbs_h220",
+   "prompt": "求闭区间 [a, b] 上可导函数 f(x) 的最值时，需要比较哪些点处的函数值？",
+   "question": "求闭区间 [a, b] 上可导函数 f(x) 的最值时，需要比较哪些点处的函数值？",
+   "answer": "B",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "闭区间上连续函数的最值必在端点或极值点处取得，所以两者都要比较。只比端点会漏掉内部极值，只比极值点会漏掉端点，导数为正的点更不是候选。",
+   "options": [
+    {
+     "label": "A",
+     "text": "只需要区间端点"
+    },
+    {
+     "label": "B",
+     "text": "区间端点和区间内的极值点"
+    },
+    {
+     "label": "C",
+     "text": "只需要区间内的极值点"
+    },
+    {
+     "label": "D",
+     "text": "只需要导数为正的点"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "只需要区间端点"
+    },
+    {
+     "label": "B",
+     "text": "区间端点和区间内的极值点"
+    },
+    {
+     "label": "C",
+     "text": "只需要区间内的极值点"
+    },
+    {
+     "label": "D",
+     "text": "只需要导数为正的点"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q991066",
+   "topicId": "mbs_h220",
+   "prompt": "函数 f(x) = x² 在区间 [1, 3] 上的最大值为 ____。",
+   "question": "函数 f(x) = x² 在区间 [1, 3] 上的最大值为 ____。",
+   "answer": "9",
+   "type": "fill",
+   "difficulty": "basic",
+   "explanation": "f(x) = x² 在 [1, 3] 上单调递增，最大值在右端点取得，f(3) = 9。左端点值 1 是最小值而不是最大值。"
+  },
+  {
+   "id": "mbs_q991067",
+   "topicId": "mbs_h220",
+   "prompt": "函数 f(x) = x² - 4x + 1 在区间 [0, 3] 上的最小值为 ____。",
+   "question": "函数 f(x) = x² - 4x + 1 在区间 [0, 3] 上的最小值为 ____。",
+   "answer": "-3",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "f'(x) = 2x - 4 的零点 x = 2 在区间内且为极小值点，f(2) = 4 - 8 + 1 = -3，比端点值 f(0) = 1 与 f(3) = -2 都小。",
+   "verify": "2**2-4*2+1"
+  },
+  {
+   "id": "mbs_q991068",
+   "topicId": "mbs_h220",
+   "prompt": "函数 f(x) = x³ - 3x 在区间 [0, 2] 上的最大值为 ____。",
+   "question": "函数 f(x) = x³ - 3x 在区间 [0, 2] 上的最大值为 ____。",
+   "answer": "2",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "区间内极值点 x = 1 处 f(1) = -2，端点 f(0) = 0、f(2) = 2，三者比较得最大值 2。极值不一定是最值，端点必须参与比较。",
+   "verify": "2**3-3*2"
+  },
+  {
+   "id": "mbs_q991069",
+   "topicId": "mbs_h220",
+   "prompt": "函数 f(x) = x² + 2x 在区间 [-2, 1] 上的最小值是多少？",
+   "question": "函数 f(x) = x² + 2x 在区间 [-2, 1] 上的最小值是多少？",
+   "answer": "D",
+   "type": "choice",
+   "difficulty": "standard",
+   "explanation": "f'(x) = 2x + 2 的零点 x = -1 落在区间内，f(-1) = 1 - 2 = -1；端点值 f(-2) = 0、f(1) = 3 都更大，故最小值为 -1。-3 是把导数的零点代错了位置。",
+   "options": [
+    {
+     "label": "A",
+     "text": "-3"
+    },
+    {
+     "label": "B",
+     "text": "0"
+    },
+    {
+     "label": "C",
+     "text": "3"
+    },
+    {
+     "label": "D",
+     "text": "-1"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "-3"
+    },
+    {
+     "label": "B",
+     "text": "0"
+    },
+    {
+     "label": "C",
+     "text": "3"
+    },
+    {
+     "label": "D",
+     "text": "-1"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q991070",
+   "topicId": "mbs_h220",
+   "prompt": "函数 f(x) = x³ - 3x 在区间 [-2, 0] 上的最大值为 ____。",
+   "question": "函数 f(x) = x³ - 3x 在区间 [-2, 0] 上的最大值为 ____。",
+   "answer": "2",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "区间内极值点 x = -1 处 f(-1) = -1 + 3 = 2，端点 f(-2) = -2、f(0) = 0，比较得最大值 2。"
+  },
+  {
+   "id": "mbs_q991071",
+   "topicId": "mbs_h220",
+   "prompt": "求函数 f(x) = x³ - 3x² + 2 在区间 [-1, 3] 上的最大值与最小值。",
+   "question": "求函数 f(x) = x³ - 3x² + 2 在区间 [-1, 3] 上的最大值与最小值。",
+   "answer": "最大值为 2，最小值为 -2",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "闭区间最值只需比较端点与区间内极值点，四个候选值依次为 -2、2、-2、2，故最大值为 2、最小值为 -2，两端与极值点同时取到。",
+   "keypoints": [
+    "f'(x) = 3x² - 6x，零点 0 与 2 都在区间内",
+    "算得 f(-1) = -2，f(0) = 2，f(2) = -2，f(3) = 2",
+    "比较得最大值为 2，最小值为 -2"
+   ]
+  },
+  {
+   "id": "mbs_q991072",
+   "topicId": "mbs_h220",
+   "prompt": "求函数 f(x) = x + 4/x 在区间 [1, 4] 上的最小值。",
+   "question": "求函数 f(x) = x + 4/x 在区间 [1, 4] 上的最小值。",
+   "answer": "4",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "导数零点 x = 2 在区间内，此时 f(2) = 2 + 2 = 4，小于两个端点值 5，所以最小值是 4。端点相等说明区间选择不影响结论。",
+   "keypoints": [
+    "求导得 f'(x) = 1 - 4/x²",
+    "令 f'(x) = 0 得 x = 2，落在区间内",
+    "f(2) = 4，端点 f(1) = 5、f(4) = 5，故最小值为 4"
+   ]
+  },
+  {
+   "id": "mbs_q991073",
+   "topicId": "mbs_h221",
+   "prompt": "物体做直线运动，位移 s(t) 对时间 t 的导数表示什么？",
+   "question": "物体做直线运动，位移 s(t) 对时间 t 的导数表示什么？",
+   "answer": "C",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "位移对时间的导数就是瞬时速度；加速度是速度对时间的导数，位移本身是函数值，平均速度则是位移的平均变化率，四者不能混为一谈。",
+   "options": [
+    {
+     "label": "A",
+     "text": "该时刻的加速度"
+    },
+    {
+     "label": "B",
+     "text": "该时刻的位移"
+    },
+    {
+     "label": "C",
+     "text": "该时刻的瞬时速度"
+    },
+    {
+     "label": "D",
+     "text": "该段时间内的平均速度"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "该时刻的加速度"
+    },
+    {
+     "label": "B",
+     "text": "该时刻的位移"
+    },
+    {
+     "label": "C",
+     "text": "该时刻的瞬时速度"
+    },
+    {
+     "label": "D",
+     "text": "该段时间内的平均速度"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q991074",
+   "topicId": "mbs_h221",
+   "prompt": "物体位移 s(t) = 2t²（s 单位米，t 单位秒），它在 t = 3 秒时的瞬时速度为 ____ 米/秒。",
+   "question": "物体位移 s(t) = 2t²（s 单位米，t 单位秒），它在 t = 3 秒时的瞬时速度为 ____ 米/秒。",
+   "answer": "12",
+   "type": "fill",
+   "difficulty": "basic",
+   "explanation": "s'(t) = 4t，代入 t = 3 得 12。瞬时速度是位移函数的导数，而不是位移值 s(3) = 18。"
+  },
+  {
+   "id": "mbs_q991075",
+   "topicId": "mbs_h221",
+   "prompt": "某商品收益函数为 R(x) = 100x - x²（x 为销量），当销量 x = 20 时边际收益 R'(20) 的值为 ____。",
+   "question": "某商品收益函数为 R(x) = 100x - x²（x 为销量），当销量 x = 20 时边际收益 R'(20) 的值为 ____。",
+   "answer": "60",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "R'(x) = 100 - 2x，代入 x = 20 得 60，表示销量再增加一个单位时收益约增加 60。边际收益是收益函数的导数，不是收益本身。",
+   "verify": "100-2*20"
+  },
+  {
+   "id": "mbs_q991076",
+   "topicId": "mbs_h221",
+   "prompt": "用长为 20 米的篱笆围成一个矩形，该矩形面积的最大值为 ____ 平方米。",
+   "question": "用长为 20 米的篱笆围成一个矩形，该矩形面积的最大值为 ____ 平方米。",
+   "answer": "25",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "设一边为 x，则另一边为 10 - x，面积 S = x(10 - x) = -(x - 5)² + 25，当 x = 5 时取最大值 25，此时是正方形。",
+   "verify": "(20/4)**2"
+  },
+  {
+   "id": "mbs_q991077",
+   "topicId": "mbs_h221",
+   "prompt": "用长为 12 米的篱笆围成一个矩形，这个矩形面积的最大值是多少平方米？",
+   "question": "用长为 12 米的篱笆围成一个矩形，这个矩形面积的最大值是多少平方米？",
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "standard",
+   "explanation": "周长 12 时两邻边之和为 6，面积 S = x(6 - x) 在 x = 3 时最大，等于 9。12 是周长本身；16 是把 4 当成边长；36 误用 6 的平方。",
+   "options": [
+    {
+     "label": "A",
+     "text": "9"
+    },
+    {
+     "label": "B",
+     "text": "12"
+    },
+    {
+     "label": "C",
+     "text": "16"
+    },
+    {
+     "label": "D",
+     "text": "36"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "9"
+    },
+    {
+     "label": "B",
+     "text": "12"
+    },
+    {
+     "label": "C",
+     "text": "16"
+    },
+    {
+     "label": "D",
+     "text": "36"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q991078",
+   "topicId": "mbs_h221",
+   "prompt": "正方体的棱长为 x，其表面积 S = 6x²，当棱长 x = 1 时表面积关于棱长的变化率为 ____。",
+   "question": "正方体的棱长为 x，其表面积 S = 6x²，当棱长 x = 1 时表面积关于棱长的变化率为 ____。",
+   "answer": "12",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "S'(x) = 12x，代入 x = 1 得 12，表示棱长每增加 1 个单位，表面积约增加 12 平方单位。注意变化率带单位，数值是 12 而不是 6。"
+  },
+  {
+   "id": "mbs_q991079",
+   "topicId": "mbs_h221",
+   "prompt": "用长为 20 米的篱笆靠一面足够长的墙围成一个矩形菜地，墙作为矩形的一边不再用篱笆，求菜地的最大面积。",
+   "question": "用长为 20 米的篱笆靠一面足够长的墙围成一个矩形菜地，墙作为矩形的一边不再用篱笆，求菜地的最大面积。",
+   "answer": "最大面积为 50 平方米",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "三边用篱笆：垂直于墙的两边各为 x，平行于墙的一边为 20 - 2x，配方得 S 的最大值为 50 平方米。此时三边分别为 5、5、10。",
+   "keypoints": [
+    "设与墙垂直的边为 x，则平行于墙的一边为 20 - 2x",
+    "面积 S = x(20 - 2x) = -2(x - 5)² + 50",
+    "x = 5 时取最大值 50 平方米"
+   ]
+  },
+  {
+   "id": "mbs_q991080",
+   "topicId": "mbs_h221",
+   "prompt": "某商品的收益函数 R(x) = 30x - x²，成本函数 C(x) = 4x + 60（x 为产量），求利润最大时的产量与最大利润。",
+   "question": "某商品的收益函数 R(x) = 30x - x²，成本函数 C(x) = 4x + 60（x 为产量），求利润最大时的产量与最大利润。",
+   "answer": "产量 x = 13 时利润最大，最大利润为 109",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "利润等于收益减成本，得 L(x) = -x² + 26x - 60。导数零点 x = 13，此时 L(13) = 109；二次项系数为负，说明确为最大值。",
+   "keypoints": [
+    "利润 L(x) = R(x) - C(x) = -x² + 26x - 60",
+    "L'(x) = -2x + 26，令其为零得 x = 13",
+    "L(13) = -169 + 338 - 60 = 109"
+   ]
+  }
+ ]
+}

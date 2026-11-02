@@ -1,0 +1,1415 @@
+{
+ "shard": "必修第二册_第四单元",
+ "book": "必修第二册",
+ "unit_no": "四",
+ "questions": [
+  {
+   "id": "mbs_q730001",
+   "topicId": "mbs_h108",
+   "prompt": "已知 sinα = -5/13，且 α 是第三象限角，则 cosα 的值是",
+   "question": "已知 sinα = -5/13，且 α 是第三象限角，则 cosα 的值是",
+   "type": "choice",
+   "difficulty": "basic",
+   "options": [
+    {
+     "label": "A",
+     "text": "-12/13"
+    },
+    {
+     "label": "B",
+     "text": "12/13"
+    },
+    {
+     "label": "C",
+     "text": "-5/12"
+    },
+    {
+     "label": "D",
+     "text": "5/12"
+    }
+   ],
+   "answer": "A",
+   "explanation": "由 sin²α + cos²α = 1 得 cos²α = 1 - 25/169 = 144/169，所以 cosα = ±12/13。第三象限角的余弦为负，故 cosα = -12/13。选项 12/13 忽略了符号，-5/12 与 5/12 把正切当成了余弦。"
+  },
+  {
+   "id": "mbs_q730002",
+   "topicId": "mbs_h108",
+   "prompt": "已知 tanα = 2，且 α 是第一象限角，则 cosα 的值为",
+   "question": "已知 tanα = 2，且 α 是第一象限角，则 cosα 的值为",
+   "type": "fill",
+   "difficulty": "basic",
+   "answer": "√5/5",
+   "explanation": "由 tanα = sinα/cosα = 2 得 sinα = 2cosα，代入 sin²α + cos²α = 1 得 5cos²α = 1，即 cosα = ±√5/5。第一象限余弦为正，所以 cosα = √5/5。"
+  },
+  {
+   "id": "mbs_q730003",
+   "topicId": "mbs_h108",
+   "prompt": "已知 sinα = 0.6，且 α 是第二象限角，则 tanα 的值是",
+   "question": "已知 sinα = 0.6，且 α 是第二象限角，则 tanα 的值是",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "-0.75",
+   "verify": "0.6/(-1*(1-0.6**2)**0.5)",
+   "explanation": "由平方关系得 cos²α = 1 - 0.36 = 0.64，第二象限余弦为负，故 cosα = -0.8。于是 tanα = 0.6 ÷ (-0.8) = -0.75。忘记取负号会得到 0.75。"
+  },
+  {
+   "id": "mbs_q730004",
+   "topicId": "mbs_h108",
+   "prompt": "已知 tanα = -2，且 α 是第二象限角，则 sinα·cosα 的值是",
+   "question": "已知 tanα = -2，且 α 是第二象限角，则 sinα·cosα 的值是",
+   "type": "choice",
+   "difficulty": "standard",
+   "options": [
+    {
+     "label": "A",
+     "text": "2/5"
+    },
+    {
+     "label": "B",
+     "text": "-2/5"
+    },
+    {
+     "label": "C",
+     "text": "-1/2"
+    },
+    {
+     "label": "D",
+     "text": "1/5"
+    }
+   ],
+   "answer": "B",
+   "explanation": "把 sinα·cosα 写成 sinαcosα/(sin²α + cos²α)，分子分母同除以 cos²α，得 tanα/(1 + tan²α) = -2/5。这里只需知道 tanα，象限信息用来排除不合理的组合。若漏掉负号会误选 2/5。"
+  },
+  {
+   "id": "mbs_q730005",
+   "topicId": "mbs_h108",
+   "prompt": "已知 sinα - cosα = 1/2，则 sinα·cosα 的值是",
+   "question": "已知 sinα - cosα = 1/2，则 sinα·cosα 的值是",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "0.375",
+   "verify": "(1-0.5**2)/2",
+   "explanation": "把 sinα - cosα = 1/2 两边平方，得 1 - 2sinαcosα = 1/4，所以 2sinαcosα = 3/4，sinαcosα = 3/8 = 0.375。平方后交叉项系数是 2，漏掉 2 会算出 0.75。"
+  },
+  {
+   "id": "mbs_q730006",
+   "topicId": "mbs_h108",
+   "prompt": "已知 cosα = -3/5，且 α 是第二象限角，则 tanα 的值为",
+   "question": "已知 cosα = -3/5，且 α 是第二象限角，则 tanα 的值为",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "-4/3",
+   "explanation": "由 sin²α = 1 - 9/25 = 16/25，第二象限正弦为正，得 sinα = 4/5。所以 tanα = (4/5) ÷ (-3/5) = -4/3，负号来自第二象限余弦为负。"
+  },
+  {
+   "id": "mbs_q730007",
+   "topicId": "mbs_h108",
+   "prompt": "已知 tanα = 2，则 (sinα + cosα)/(sinα - cosα) 的值是",
+   "question": "已知 tanα = 2，则 (sinα + cosα)/(sinα - cosα) 的值是",
+   "type": "choice",
+   "difficulty": "hard",
+   "options": [
+    {
+     "label": "A",
+     "text": "1/3"
+    },
+    {
+     "label": "B",
+     "text": "-3"
+    },
+    {
+     "label": "C",
+     "text": "3"
+    },
+    {
+     "label": "D",
+     "text": "2"
+    }
+   ],
+   "answer": "C",
+   "explanation": "分子分母同时除以 cosα（tanα 存在说明 cosα ≠ 0），原式化为 (tanα + 1)/(tanα - 1)，代入 tanα = 2 得 3/1 = 3。若把分子分母颠倒会得到 1/3，符号算错会得到 -3。"
+  },
+  {
+   "id": "mbs_q730008",
+   "topicId": "mbs_h108",
+   "prompt": "已知 sinα + cosα = 1/5，且 0 < α < π，求 sinα - cosα 的值。",
+   "question": "已知 sinα + cosα = 1/5，且 0 < α < π，求 sinα - cosα 的值。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "7/5",
+   "keypoints": [
+    "两边平方得 1 + 2sinαcosα = 1/25，即 sinαcosα = -12/25",
+    "由 sinαcosα < 0 且 0 < α < π 知 α 为钝角，正弦为正、余弦为负，故 sinα - cosα > 0",
+    "(sinα - cosα)² = 1 - 2sinαcosα = 49/25，开方取正值得 7/5"
+   ],
+   "explanation": "先平方求 sinαcosα = -12/25，再用 (sinα - cosα)² = 1 - 2sinαcosα = 49/25。开方后必须判断符号：α 在 (0, π) 且 sinαcosα < 0 说明 α 是钝角，sinα - cosα 为正，所以取 7/5。"
+  },
+  {
+   "id": "mbs_q730009",
+   "topicId": "mbs_h109",
+   "prompt": "已知 cosα = 1/3，且 α 是第四象限角，则 sinα 的值是",
+   "question": "已知 cosα = 1/3，且 α 是第四象限角，则 sinα 的值是",
+   "type": "choice",
+   "difficulty": "basic",
+   "options": [
+    {
+     "label": "A",
+     "text": "2√2/3"
+    },
+    {
+     "label": "B",
+     "text": "-2/3"
+    },
+    {
+     "label": "C",
+     "text": "2/3"
+    },
+    {
+     "label": "D",
+     "text": "-2√2/3"
+    }
+   ],
+   "answer": "D",
+   "explanation": "由 sin²α = 1 - 1/9 = 8/9 得 sinα = ±2√2/3，第四象限正弦为负，故取 -2√2/3。2√2/3 是漏判象限符号的结果，2/3 与 -2/3 混淆了正弦与余弦。"
+  },
+  {
+   "id": "mbs_q730010",
+   "topicId": "mbs_h109",
+   "prompt": "已知 sinα = 1/2，且 α 是第二象限角，则 cosα 的值为",
+   "question": "已知 sinα = 1/2，且 α 是第二象限角，则 cosα 的值为",
+   "type": "fill",
+   "difficulty": "basic",
+   "answer": "-√3/2",
+   "explanation": "由 cos²α = 1 - 1/4 = 3/4 得 cosα = ±√3/2，第二象限余弦为负，所以 cosα = -√3/2。"
+  },
+  {
+   "id": "mbs_q730011",
+   "topicId": "mbs_h109",
+   "prompt": "已知 tanα = -3/4，且 α 是第四象限角，则 sinα 的值是",
+   "question": "已知 tanα = -3/4，且 α 是第四象限角，则 sinα 的值是",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "-0.6",
+   "verify": "-3/4/((1+(-3/4)**2)**0.5)",
+   "explanation": "由 1 + tan²α = 1/cos²α 得 cos²α = 16/25，第四象限余弦为正，cosα = 4/5。再由 sinα = tanα·cosα = (-3/4)(4/5) = -3/5 = -0.6，负号与第四象限正弦为负一致。"
+  },
+  {
+   "id": "mbs_q730012",
+   "topicId": "mbs_h109",
+   "prompt": "已知 cosα = 0.8，且 α 是第四象限角，则 tanα 的值是",
+   "question": "已知 cosα = 0.8，且 α 是第四象限角，则 tanα 的值是",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "-0.75",
+   "verify": "-(1-0.8**2)**0.5/0.8",
+   "explanation": "由 sin²α = 1 - 0.64 = 0.36，第四象限正弦为负，得 sinα = -0.6。所以 tanα = -0.6 ÷ 0.8 = -0.75。若忽略象限直接开正根会得到 0.75。"
+  },
+  {
+   "id": "mbs_q730013",
+   "topicId": "mbs_h109",
+   "prompt": "已知 sinα = -1/3，且 α 是第三象限角，则 tanα 的值是",
+   "question": "已知 sinα = -1/3，且 α 是第三象限角，则 tanα 的值是",
+   "type": "choice",
+   "difficulty": "standard",
+   "options": [
+    {
+     "label": "A",
+     "text": "√2/4"
+    },
+    {
+     "label": "B",
+     "text": "-√2/4"
+    },
+    {
+     "label": "C",
+     "text": "2√2"
+    },
+    {
+     "label": "D",
+     "text": "-2√2"
+    }
+   ],
+   "answer": "A",
+   "explanation": "由 cos²α = 1 - 1/9 = 8/9，第三象限余弦为负，得 cosα = -2√2/3。于是 tanα = (-1/3) ÷ (-2√2/3) = 1/(2√2) = √2/4，两个负号相除结果为正。-√2/4 是符号判断错误，2√2 是把正切写成了余弦的倒数。"
+  },
+  {
+   "id": "mbs_q730014",
+   "topicId": "mbs_h109",
+   "prompt": "已知 tanα = -2，且 α 是第二象限角，则 cosα 的值为",
+   "question": "已知 tanα = -2，且 α 是第二象限角，则 cosα 的值为",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "-√5/5",
+   "explanation": "由 1 + tan²α = 1/cos²α 得 cos²α = 1/5，第二象限余弦为负，故 cosα = -√5/5。"
+  },
+  {
+   "id": "mbs_q730015",
+   "topicId": "mbs_h109",
+   "prompt": "已知 sinα = 3/5，求 tanα 的所有可能值。",
+   "question": "已知 sinα = 3/5，求 tanα 的所有可能值。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "3/4 或 -3/4",
+   "keypoints": [
+    "由 sin²α + cos²α = 1 得 cos²α = 16/25，故 cosα = 4/5 或 cosα = -4/5",
+    "题目没有给出象限，两种情形都要保留：cosα = 4/5 时 α 在第一象限，cosα = -4/5 时 α 在第二象限",
+    "分别用 tanα = sinα/cosα 计算，得 tanα = 3/4 或 tanα = -3/4"
+   ],
+   "explanation": "只给正弦值而不定象限，余弦有两个可能值，因此正切也有两个值。分类讨论后得 3/4 与 -3/4；只写一个答案属于漏解。"
+  },
+  {
+   "id": "mbs_q730016",
+   "topicId": "mbs_h109",
+   "prompt": "已知 tanα = 2，求 (2sinα - cosα)/(sinα + 2cosα) 的值。",
+   "question": "已知 tanα = 2，求 (2sinα - cosα)/(sinα + 2cosα) 的值。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "3/4",
+   "keypoints": [
+    "因为 tanα = 2 存在，所以 cosα ≠ 0，分子分母可同时除以 cosα",
+    "化简得 (2tanα - 1)/(tanα + 2)",
+    "代入 tanα = 2 得 (4 - 1)/(2 + 2) = 3/4"
+   ],
+   "explanation": "这是一次齐次式，除以 cosα 后只剩 tanα。代入 tanα = 2 得 3/4。直接设 sinα = 2、cosα = 1 也能得到同一结果，但必须说明这是比例取值而非具体值。"
+  },
+  {
+   "id": "mbs_q730017",
+   "topicId": "mbs_h110",
+   "prompt": "计算 cos75° 的值，结果为",
+   "question": "计算 cos75° 的值，结果为",
+   "type": "choice",
+   "difficulty": "basic",
+   "options": [
+    {
+     "label": "A",
+     "text": "(√6+√2)/4"
+    },
+    {
+     "label": "B",
+     "text": "(√6-√2)/4"
+    },
+    {
+     "label": "C",
+     "text": "(√2-√6)/4"
+    },
+    {
+     "label": "D",
+     "text": "√3/2"
+    }
+   ],
+   "answer": "B",
+   "explanation": "75° = 45° + 30°，用余弦和角公式得 cos45°cos30° - sin45°sin30° = (√2/2)(√3/2) - (√2/2)(1/2) = (√6-√2)/4。(√6+√2)/4 是 cos15° 的值，把中间符号用反就会选错。"
+  },
+  {
+   "id": "mbs_q730018",
+   "topicId": "mbs_h110",
+   "prompt": "计算 cos15° 的值，结果为",
+   "question": "计算 cos15° 的值，结果为",
+   "type": "choice",
+   "difficulty": "basic",
+   "options": [
+    {
+     "label": "A",
+     "text": "(√6-√2)/4"
+    },
+    {
+     "label": "B",
+     "text": "√3/2"
+    },
+    {
+     "label": "C",
+     "text": "(√6+√2)/4"
+    },
+    {
+     "label": "D",
+     "text": "1/2"
+    }
+   ],
+   "answer": "C",
+   "explanation": "15° = 45° - 30°，用余弦差角公式得 cos45°cos30° + sin45°sin30° = (√2/2)(√3/2) + (√2/2)(1/2) = (√6+√2)/4。差角公式中间是加号，写成减号会得到 (√6-√2)/4。"
+  },
+  {
+   "id": "mbs_q730019",
+   "topicId": "mbs_h110",
+   "prompt": "已知 α、β 都是锐角，cosα = 3/5，cosβ = 5/13，则 cos(α + β) 的值是",
+   "question": "已知 α、β 都是锐角，cosα = 3/5，cosβ = 5/13，则 cos(α + β) 的值是",
+   "type": "choice",
+   "difficulty": "standard",
+   "options": [
+    {
+     "label": "A",
+     "text": "33/65"
+    },
+    {
+     "label": "B",
+     "text": "63/65"
+    },
+    {
+     "label": "C",
+     "text": "-63/65"
+    },
+    {
+     "label": "D",
+     "text": "-33/65"
+    }
+   ],
+   "answer": "D",
+   "explanation": "由平方关系得 sinα = 4/5，sinβ = 12/13。用余弦和角公式：cos(α+β) = cosαcosβ - sinαsinβ = (3/5)(5/13) - (4/5)(12/13) = 15/65 - 48/65 = -33/65。结果为负说明 α + β 是钝角，这与两锐角之和可以超过 90° 相符。33/65 是符号用反的结果。"
+  },
+  {
+   "id": "mbs_q730020",
+   "topicId": "mbs_h110",
+   "prompt": "cos80°cos20° + sin80°sin20° 的值是",
+   "question": "cos80°cos20° + sin80°sin20° 的值是",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "0.5",
+   "verify": "1/2",
+   "explanation": "这是余弦差角公式的右边，原式 = cos(80° - 20°) = cos60° = 1/2 = 0.5。识别结构比逐项计算更快，注意中间的加号对应差角公式。"
+  },
+  {
+   "id": "mbs_q730021",
+   "topicId": "mbs_h110",
+   "prompt": "cos105° 的精确值为",
+   "question": "cos105° 的精确值为",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "(√2-√6)/4",
+   "explanation": "105° = 60° + 45°，cos105° = cos60°cos45° - sin60°sin45° = (1/2)(√2/2) - (√3/2)(√2/2) = (√2-√6)/4。105° 在第二象限，余弦应为负，而 √2 - √6 < 0 正好保证结果为负。"
+  },
+  {
+   "id": "mbs_q730022",
+   "topicId": "mbs_h110",
+   "prompt": "已知 cosα = 3/5，sinβ = -4/5，α 是第一象限角，β 是第四象限角，则 cos(α + β) 的值是",
+   "question": "已知 cosα = 3/5，sinβ = -4/5，α 是第一象限角，β 是第四象限角，则 cos(α + β) 的值是",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "1",
+   "verify": "3/5*3/5-4/5*(-4/5)",
+   "explanation": "由平方关系得 sinα = 4/5，cosβ = 3/5。cos(α+β) = cosαcosβ - sinαsinβ = (3/5)(3/5) - (4/5)(-4/5) = 9/25 + 16/25 = 1。β 在第四象限使 sinβ 为负，代入后那一项变成加号，这是本题的关键。"
+  },
+  {
+   "id": "mbs_q730023",
+   "topicId": "mbs_h110",
+   "prompt": "已知 sinα + sinβ = 1/2，cosα + cosβ = 1/2，求 cos(α - β) 的值。",
+   "question": "已知 sinα + sinβ = 1/2，cosα + cosβ = 1/2，求 cos(α - β) 的值。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "-3/4",
+   "keypoints": [
+    "把两个等式分别平方后相加",
+    "左边化为 sin²α + cos²α + sin²β + cos²β + 2(sinαsinβ + cosαcosβ)，即 2 + 2cos(α - β)",
+    "右边为 1/4 + 1/4 = 1/2，故 2 + 2cos(α - β) = 1/2，解得 cos(α - β) = -3/4"
+   ],
+   "explanation": "平方相加能把交叉项凑成余弦差角公式的结构。注意右边是 1/4 + 1/4 = 1/2，解方程 2 + 2cos(α-β) = 1/2 得 cos(α-β) = -3/4。"
+  },
+  {
+   "id": "mbs_q730024",
+   "topicId": "mbs_h110",
+   "prompt": "已知 cosα = 1/7，cos(α - β) = 13/14，且 0 < β < α < π/2，求角 β 的大小。",
+   "question": "已知 cosα = 1/7，cos(α - β) = 13/14，且 0 < β < α < π/2，求角 β 的大小。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "β = π/3",
+   "keypoints": [
+    "由平方关系得 sinα = 4√3/7，sin(α - β) = 3√3/14",
+    "把 β 写成 α - (α - β)，用余弦差角公式：cosβ = cosαcos(α-β) + sinαsin(α-β) = 13/98 + 36/98 = 1/2",
+    "由 0 < β < π/2 得 β = π/3"
+   ],
+   "explanation": "关键是把 β 拆成 α - (α - β)，这样已知的两个角都能直接用上。算出 cosβ = 1/2 后，因为 β 是锐角，所以 β = π/3，不需要考虑其它终边相同的角。"
+  },
+  {
+   "id": "mbs_q730025",
+   "topicId": "mbs_h111",
+   "prompt": "计算 sin75° 的值，结果为",
+   "question": "计算 sin75° 的值，结果为",
+   "type": "choice",
+   "difficulty": "basic",
+   "options": [
+    {
+     "label": "A",
+     "text": "(√6+√2)/4"
+    },
+    {
+     "label": "B",
+     "text": "(√6-√2)/4"
+    },
+    {
+     "label": "C",
+     "text": "(√2-√6)/4"
+    },
+    {
+     "label": "D",
+     "text": "1/2"
+    }
+   ],
+   "answer": "A",
+   "explanation": "75° = 45° + 30°，sin75° = sin45°cos30° + cos45°sin30° = (√2/2)(√3/2) + (√2/2)(1/2) = (√6+√2)/4。75° 在第一象限，正弦大于 1/2，四个选项中只有 (√6+√2)/4 约等于 0.966 符合。(√6-√2)/4 是 sin15°。"
+  },
+  {
+   "id": "mbs_q730026",
+   "topicId": "mbs_h111",
+   "prompt": "sin15° 的精确值为",
+   "question": "sin15° 的精确值为",
+   "type": "fill",
+   "difficulty": "basic",
+   "answer": "(√6-√2)/4",
+   "explanation": "15° = 45° - 30°，sin15° = sin45°cos30° - cos45°sin30° = (√2/2)(√3/2) - (√2/2)(1/2) = (√6-√2)/4，约等于 0.259。"
+  },
+  {
+   "id": "mbs_q730027",
+   "topicId": "mbs_h111",
+   "prompt": "(sin15° + cos15°)² 的值是",
+   "question": "(sin15° + cos15°)² 的值是",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "1.5",
+   "verify": "1+1/2",
+   "explanation": "展开得 sin²15° + cos²15° + 2sin15°cos15° = 1 + sin30° = 1 + 1/2 = 1.5。这里用到了平方和为 1 和倍角公式 sin2α = 2sinαcosα，避免直接代入根式。"
+  },
+  {
+   "id": "mbs_q730028",
+   "topicId": "mbs_h111",
+   "prompt": "已知 cosα = 0.8，α 是第四象限角，则 sin(α + π/2) 的值是",
+   "question": "已知 cosα = 0.8，α 是第四象限角，则 sin(α + π/2) 的值是",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "0.8",
+   "verify": "0.8",
+   "explanation": "由正弦和角公式，sin(α + π/2) = sinαcos(π/2) + cosαsin(π/2)。因为 cos(π/2) = 0、sin(π/2) = 1，所以原式 = cosα = 0.8，与 α 在第几象限无关。"
+  },
+  {
+   "id": "mbs_q730029",
+   "topicId": "mbs_h111",
+   "prompt": "已知 sinα = -3/5，且 α 是第四象限角，则 sin(α - π/4) 的值为",
+   "question": "已知 sinα = -3/5，且 α 是第四象限角，则 sin(α - π/4) 的值为",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "-7√2/10",
+   "explanation": "由平方关系得 cosα = 4/5。sin(α - π/4) = sinαcos45° - cosαsin45° = (-3/5)(√2/2) - (4/5)(√2/2) = -7√2/10。两个负项都相加，结果约为 -0.99，与第四象限角减去 45° 后落在第四象限相符。"
+  },
+  {
+   "id": "mbs_q730030",
+   "topicId": "mbs_h111",
+   "prompt": "化简 sin(α + β)cosβ - cos(α + β)sinβ 的结果是",
+   "question": "化简 sin(α + β)cosβ - cos(α + β)sinβ 的结果是",
+   "type": "choice",
+   "difficulty": "standard",
+   "options": [
+    {
+     "label": "A",
+     "text": "cosα"
+    },
+    {
+     "label": "B",
+     "text": "sinα"
+    },
+    {
+     "label": "C",
+     "text": "sinβ"
+    },
+    {
+     "label": "D",
+     "text": "-sinα"
+    }
+   ],
+   "answer": "B",
+   "explanation": "把 α + β 看成一个整体，式子正好是正弦差角公式的右边，等于 sin[(α + β) - β] = sinα。选 cosα 是套错了公式，选 sinβ 是把整体当成了 β。"
+  },
+  {
+   "id": "mbs_q730031",
+   "topicId": "mbs_h111",
+   "prompt": "已知 α、β 都是锐角，sinα = 3/5，cos(α + β) = 5/13，则 sinβ 的值是",
+   "question": "已知 α、β 都是锐角，sinα = 3/5，cos(α + β) = 5/13，则 sinβ 的值是",
+   "type": "choice",
+   "difficulty": "hard",
+   "options": [
+    {
+     "label": "A",
+     "text": "63/65"
+    },
+    {
+     "label": "B",
+     "text": "16/65"
+    },
+    {
+     "label": "C",
+     "text": "33/65"
+    },
+    {
+     "label": "D",
+     "text": "-33/65"
+    }
+   ],
+   "answer": "C",
+   "explanation": "由平方关系得 cosα = 4/5。因 α、β 都是锐角且 cos(α+β) = 5/13 > 0，所以 α + β 是锐角，sin(α+β) = 12/13。把 β 写成 (α + β) - α，用正弦差角公式：sinβ = (12/13)(4/5) - (5/13)(3/5) = 48/65 - 15/65 = 33/65。63/65 是求 sin(α+β) 时用错加号的结果。"
+  },
+  {
+   "id": "mbs_q730032",
+   "topicId": "mbs_h111",
+   "prompt": "已知 sin(α + β) = 2/3，sin(α - β) = 1/5，求 tanα·cotβ 的值。",
+   "question": "已知 sin(α + β) = 2/3，sin(α - β) = 1/5，求 tanα·cotβ 的值。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "13/7",
+   "keypoints": [
+    "展开两式：sinαcosβ + cosαsinβ = 2/3，sinαcosβ - cosαsinβ = 1/5",
+    "两式相加得 2sinαcosβ = 13/15，即 sinαcosβ = 13/30；两式相减得 2cosαsinβ = 7/15，即 cosαsinβ = 7/30",
+    "tanα·cotβ = (sinαcosβ)/(cosαsinβ) = (13/30) ÷ (7/30) = 13/7"
+   ],
+   "explanation": "把和角与差角公式展开后相加、相减，正好解出 sinαcosβ 与 cosαsinβ 两组乘积，而 tanα·cotβ 就是这两个乘积的比，所以不需要单独求 α、β。"
+  },
+  {
+   "id": "mbs_q730033",
+   "topicId": "mbs_h112",
+   "prompt": "把 sinx + cosx 化为 Asin(x + φ) 的形式（A > 0），结果是",
+   "question": "把 sinx + cosx 化为 Asin(x + φ) 的形式（A > 0），结果是",
+   "type": "choice",
+   "difficulty": "basic",
+   "options": [
+    {
+     "label": "A",
+     "text": "√2sin(x - π/4)"
+    },
+    {
+     "label": "B",
+     "text": "2sin(x + π/4)"
+    },
+    {
+     "label": "C",
+     "text": "√2cos(x + π/4)"
+    },
+    {
+     "label": "D",
+     "text": "√2sin(x + π/4)"
+    }
+   ],
+   "answer": "D",
+   "explanation": "系数为 1 和 1，振幅 A = √(1² + 1²) = √2，辅助角满足 cosφ = 1/√2、sinφ = 1/√2，故 φ = π/4。所以 sinx + cosx = √2sin(x + π/4)。振幅写成 2 是把系数直接相加的错误。"
+  },
+  {
+   "id": "mbs_q730034",
+   "topicId": "mbs_h112",
+   "prompt": "化简 √3sinx + cosx，若写成 2sin(x + φ) 且 0 < φ ≤ π/2，则 φ 的值为",
+   "question": "化简 √3sinx + cosx，若写成 2sin(x + φ) 且 0 < φ ≤ π/2，则 φ 的值为",
+   "type": "fill",
+   "difficulty": "basic",
+   "answer": "π/6",
+   "explanation": "振幅 A = √((√3)² + 1²) = 2，且 √3sinx + cosx = 2[(√3/2)sinx + (1/2)cosx] = 2sin(x + φ)，其中 cosφ = √3/2、sinφ = 1/2，故 φ = π/6。"
+  },
+  {
+   "id": "mbs_q730035",
+   "topicId": "mbs_h112",
+   "prompt": "求函数 y = sinx + √3cosx 的最大值，并求取最大值时 x 的取值。",
+   "question": "求函数 y = sinx + √3cosx 的最大值，并求取最大值时 x 的取值。",
+   "type": "short-answer",
+   "difficulty": "standard",
+   "answer": "最大值为 2，当 x = π/6 + 2kπ（k 为整数）时取得",
+   "keypoints": [
+    "用辅助角公式化为 y = 2sin(x + π/3)",
+    "正弦的最大值为 1，故 y 的最大值为 2",
+    "令 x + π/3 = π/2 + 2kπ，解得 x = π/6 + 2kπ（k 为整数）"
+   ],
+   "explanation": "振幅 A = √(1 + 3) = 2，辅助角 φ 满足 cosφ = 1/2、sinφ = √3/2，即 φ = π/3，所以 y = 2sin(x + π/3)。最大值出现在正弦取 1 时，解 x + π/3 = π/2 + 2kπ 即可。"
+  },
+  {
+   "id": "mbs_q730036",
+   "topicId": "mbs_h112",
+   "prompt": "函数 y = 3sinx + 4cosx 的最大值是",
+   "question": "函数 y = 3sinx + 4cosx 的最大值是",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "5",
+   "verify": "(3**2+4**2)**0.5",
+   "explanation": "把函数化为 Asin(x + φ) 后，振幅 A = √(3² + 4²) = 5，而正弦的最大值为 1，所以函数的最大值是 5×1 = 5，在 x + φ = π/2 + 2kπ 时取到。"
+  },
+  {
+   "id": "mbs_q730037",
+   "topicId": "mbs_h112",
+   "prompt": "函数 y = 5sinx - 12cosx 的最小值是",
+   "question": "函数 y = 5sinx - 12cosx 的最小值是",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "-13",
+   "verify": "-(5**2+12**2)**0.5",
+   "explanation": "振幅 A = √(5² + (-12)²) = 13，函数可写成 13sin(x + φ) 的形式，取值范围是 [-13, 13]，所以最小值是 -13，在正弦取 -1 时达到。"
+  },
+  {
+   "id": "mbs_q730038",
+   "topicId": "mbs_h112",
+   "prompt": "化简 cosx - sinx 为 √2cos(x + φ)（0 < φ < π），则 φ 的值为",
+   "question": "化简 cosx - sinx 为 √2cos(x + φ)（0 < φ < π），则 φ 的值为",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "π/4",
+   "explanation": "展开 √2cos(x + φ) = √2(cosxcosφ - sinxsinφ)，与 cosx - sinx 比较得 √2cosφ = 1、√2sinφ = 1，即 cosφ = sinφ = √2/2，故 φ = π/4。"
+  },
+  {
+   "id": "mbs_q730039",
+   "topicId": "mbs_h112",
+   "prompt": "函数 y = sinx + cosx + sinxcosx 的最大值是",
+   "question": "函数 y = sinx + cosx + sinxcosx 的最大值是",
+   "type": "choice",
+   "difficulty": "hard",
+   "options": [
+    {
+     "label": "A",
+     "text": "√2 + 1/2"
+    },
+    {
+     "label": "B",
+     "text": "√2"
+    },
+    {
+     "label": "C",
+     "text": "3/2"
+    },
+    {
+     "label": "D",
+     "text": "√2 + 1"
+    }
+   ],
+   "answer": "A",
+   "explanation": "令 t = sinx + cosx，则 t ∈ [-√2, √2]，且 sinxcosx = (t² - 1)/2，于是 y = t + (t² - 1)/2 = (t + 1)²/2 - 1，在 [-√2, √2] 上单调递增，t = √2 时取最大值 √2 + 1/2。只代 t = √2 而漏掉 sinxcosx 项会误选 √2。"
+  },
+  {
+   "id": "mbs_q730040",
+   "topicId": "mbs_h112",
+   "prompt": "求函数 y = √3sin2x + cos2x 的最小正周期与最大值。",
+   "question": "求函数 y = √3sin2x + cos2x 的最小正周期与最大值。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "最小正周期为 π，最大值为 2",
+   "keypoints": [
+    "振幅 A = √((√3)² + 1²) = 2，且 tanφ = 1/√3，取 φ = π/6",
+    "化为 y = 2sin(2x + π/6)",
+    "由 2x 的系数 2 得 T = 2π ÷ 2 = π，最大值为 2"
+   ],
+   "explanation": "先算振幅 2，再把 √3sin2x + cos2x 写成 2[(√3/2)sin2x + (1/2)cos2x] = 2sin(2x + π/6)。周期只由 x 的系数决定，T = 2π/ω = π；最大值等于振幅 2。"
+  },
+  {
+   "id": "mbs_q730041",
+   "topicId": "mbs_h113",
+   "prompt": "把 sinαcosβ 化为和差形式，正确的是",
+   "question": "把 sinαcosβ 化为和差形式，正确的是",
+   "type": "choice",
+   "difficulty": "basic",
+   "options": [
+    {
+     "label": "A",
+     "text": "(1/2)[sin(α + β) - sin(α - β)]"
+    },
+    {
+     "label": "B",
+     "text": "(1/2)[sin(α + β) + sin(α - β)]"
+    },
+    {
+     "label": "C",
+     "text": "(1/2)[cos(α + β) + cos(α - β)]"
+    },
+    {
+     "label": "D",
+     "text": "(1/2)[cos(α - β) - cos(α + β)]"
+    }
+   ],
+   "answer": "B",
+   "explanation": "由 sin(α+β) = sinαcosβ + cosαsinβ 与 sin(α-β) = sinαcosβ - cosαsinβ 相加，得 2sinαcosβ = sin(α+β) + sin(α-β)，即 sinαcosβ = (1/2)[sin(α+β) + sin(α-β)]。相减得到的是 cosαsinβ，用余弦公式展开则得到另外两个干扰项。"
+  },
+  {
+   "id": "mbs_q730042",
+   "topicId": "mbs_h113",
+   "prompt": "sin75°sin15° 的值为",
+   "question": "sin75°sin15° 的值为",
+   "type": "fill",
+   "difficulty": "basic",
+   "answer": "1/4",
+   "explanation": "由积化和差 sinαsinβ = (1/2)[cos(α - β) - cos(α + β)]，得 sin75°sin15° = (1/2)(cos60° - cos90°) = (1/2)(1/2 - 0) = 1/4。"
+  },
+  {
+   "id": "mbs_q730043",
+   "topicId": "mbs_h113",
+   "prompt": "cos75°cos15° 的值是",
+   "question": "cos75°cos15° 的值是",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "0.25",
+   "verify": "(1/2)*(1/2+0)",
+   "explanation": "由积化和差 cosαcosβ = (1/2)[cos(α - β) + cos(α + β)]，得 cos75°cos15° = (1/2)(cos60° + cos90°) = (1/2)(1/2) = 1/4 = 0.25。余弦之积对应余弦之和，中间的符号是加号。"
+  },
+  {
+   "id": "mbs_q730044",
+   "topicId": "mbs_h113",
+   "prompt": "已知 sin(α + β) = 3/5，sin(α - β) = 1/5，则 sinαcosβ 的值是",
+   "question": "已知 sin(α + β) = 3/5，sin(α - β) = 1/5，则 sinαcosβ 的值是",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "0.4",
+   "verify": "(3/5+1/5)/2",
+   "explanation": "由积化和差 sinαcosβ = (1/2)[sin(α + β) + sin(α - β)]，代入得 (3/5 + 1/5)/2 = 2/5 = 0.4。若用相减的形式算，得到的是 cosαsinβ = 1/5，二者不要混淆。"
+  },
+  {
+   "id": "mbs_q730045",
+   "topicId": "mbs_h113",
+   "prompt": "化简 cos70° + cos50°，结果为",
+   "question": "化简 cos70° + cos50°，结果为",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "cos10°",
+   "explanation": "由和差化积 cosα + cosβ = 2cos((α+β)/2)cos((α-β)/2)，得 cos70° + cos50° = 2cos60°cos10° = 2×(1/2)×cos10° = cos10°。系数 2 与 cos60° 的 1/2 正好抵消。"
+  },
+  {
+   "id": "mbs_q730046",
+   "topicId": "mbs_h113",
+   "prompt": "sin40° + sin20° 的值是",
+   "question": "sin40° + sin20° 的值是",
+   "type": "choice",
+   "difficulty": "standard",
+   "options": [
+    {
+     "label": "A",
+     "text": "2cos10°"
+    },
+    {
+     "label": "B",
+     "text": "sin10°"
+    },
+    {
+     "label": "C",
+     "text": "cos10°"
+    },
+    {
+     "label": "D",
+     "text": "√3cos10°"
+    }
+   ],
+   "answer": "C",
+   "explanation": "由和差化积 sinα + sinβ = 2sin((α+β)/2)cos((α-β)/2)，得 sin40° + sin20° = 2sin30°cos10° = 2×(1/2)×cos10° = cos10°。漏掉 sin30° = 1/2 这一步就会误选 2cos10°。"
+  },
+  {
+   "id": "mbs_q730047",
+   "topicId": "mbs_h113",
+   "prompt": "cos20° + cos100° + cos140° 的值是",
+   "question": "cos20° + cos100° + cos140° 的值是",
+   "type": "choice",
+   "difficulty": "hard",
+   "options": [
+    {
+     "label": "A",
+     "text": "1/2"
+    },
+    {
+     "label": "B",
+     "text": "1"
+    },
+    {
+     "label": "C",
+     "text": "-1/2"
+    },
+    {
+     "label": "D",
+     "text": "0"
+    }
+   ],
+   "answer": "D",
+   "explanation": "先把 cos20° + cos100° 化积：2cos60°cos(-40°) = cos40°。再算 cos40° + cos140° = 2cos90°cos(-50°) = 0，故原式为 0。两个角互补时余弦之和为零，这一结构是快速判断的关键。"
+  },
+  {
+   "id": "mbs_q730048",
+   "topicId": "mbs_h113",
+   "prompt": "求 sin10°sin30°sin50°sin70° 的值。",
+   "question": "求 sin10°sin30°sin50°sin70° 的值。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "1/16",
+   "keypoints": [
+    "两两配对用积化和差：sin50°sin70° = (1/2)(cos20° - cos120°) = (1/2)(cos20° + 1/2)",
+    "又 sin10°sin30° = (1/2)sin10°，原式 = (1/4)sin10°cos20° + (1/8)sin10°",
+    "再用 sin10°cos20° = (1/2)(sin30° - sin10°) = 1/4 - (1/2)sin10°，代入后含 sin10° 的项相消，得 1/16"
+   ],
+   "explanation": "四个角都不是特殊角，逐项硬算不可行，必须配对使用积化和差把角化成 20°、30° 这类特殊角。化简后 sin10° 的项恰好抵消，结果是有理数 1/16。"
+  },
+  {
+   "id": "mbs_q730049",
+   "topicId": "mbs_h114",
+   "prompt": "已知 sinα = 3/5，且 α 是锐角，则 sin2α 的值是",
+   "question": "已知 sinα = 3/5，且 α 是锐角，则 sin2α 的值是",
+   "type": "choice",
+   "difficulty": "basic",
+   "options": [
+    {
+     "label": "A",
+     "text": "24/25"
+    },
+    {
+     "label": "B",
+     "text": "12/25"
+    },
+    {
+     "label": "C",
+     "text": "7/25"
+    },
+    {
+     "label": "D",
+     "text": "-24/25"
+    }
+   ],
+   "answer": "A",
+   "explanation": "由平方关系得 cosα = 4/5，再用二倍角公式 sin2α = 2sinαcosα = 2×(3/5)×(4/5) = 24/25。12/25 是漏乘 2 的结果，7/25 是 cos2α 的值。"
+  },
+  {
+   "id": "mbs_q730050",
+   "topicId": "mbs_h114",
+   "prompt": "已知 cosα = 1/3，则 cos2α 的值为",
+   "question": "已知 cosα = 1/3，则 cos2α 的值为",
+   "type": "fill",
+   "difficulty": "basic",
+   "answer": "-7/9",
+   "explanation": "用 cos2α = 2cos²α - 1，代入得 2×(1/9) - 1 = 2/9 - 9/9 = -7/9，结果为负说明 2α 是钝角或第三象限角。"
+  },
+  {
+   "id": "mbs_q730051",
+   "topicId": "mbs_h114",
+   "prompt": "已知 tanα = 3，则 tan2α 的值是",
+   "question": "已知 tanα = 3，则 tan2α 的值是",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "-0.75",
+   "verify": "2*3/(1-3**2)",
+   "explanation": "由 tan2α = 2tanα/(1 - tan²α)，代入 tanα = 3 得 6/(1 - 9) = -3/4 = -0.75。分母为负时结果变号，这是最容易算错的地方。"
+  },
+  {
+   "id": "mbs_q730052",
+   "topicId": "mbs_h114",
+   "prompt": "sin15°cos15° 的值是",
+   "question": "sin15°cos15° 的值是",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "0.25",
+   "verify": "0.5*0.5",
+   "explanation": "由二倍角公式 sin2α = 2sinαcosα 得 sinαcosα = (1/2)sin2α，所以 sin15°cos15° = (1/2)sin30° = (1/2)×(1/2) = 1/4 = 0.25。漏掉前面的 1/2 会得到 0.5。"
+  },
+  {
+   "id": "mbs_q730053",
+   "topicId": "mbs_h114",
+   "prompt": "1 - 2sin²15° 的值为",
+   "question": "1 - 2sin²15° 的值为",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "√3/2",
+   "explanation": "由 cos2α = 1 - 2sin²α 得 1 - 2sin²15° = cos30° = √3/2，直接用二倍角公式即可，不必先求 sin15°。"
+  },
+  {
+   "id": "mbs_q730054",
+   "topicId": "mbs_h114",
+   "prompt": "化简 (sinα + cosα)² 的结果是",
+   "question": "化简 (sinα + cosα)² 的结果是",
+   "type": "choice",
+   "difficulty": "standard",
+   "options": [
+    {
+     "label": "A",
+     "text": "1 - sin2α"
+    },
+    {
+     "label": "B",
+     "text": "1 + sin2α"
+    },
+    {
+     "label": "C",
+     "text": "1 + cos2α"
+    },
+    {
+     "label": "D",
+     "text": "2"
+    }
+   ],
+   "answer": "B",
+   "explanation": "展开得 sin²α + 2sinαcosα + cos²α，由平方和为 1、倍角公式 2sinαcosα = sin2α，结果为 1 + sin2α。中间的交叉项是加号，所以不会出现 1 - sin2α。"
+  },
+  {
+   "id": "mbs_q730055",
+   "topicId": "mbs_h114",
+   "prompt": "已知 sinα + cosα = 1/2，则 sin2α 的值是",
+   "question": "已知 sinα + cosα = 1/2，则 sin2α 的值是",
+   "type": "choice",
+   "difficulty": "hard",
+   "options": [
+    {
+     "label": "A",
+     "text": "3/4"
+    },
+    {
+     "label": "B",
+     "text": "-1/4"
+    },
+    {
+     "label": "C",
+     "text": "-3/4"
+    },
+    {
+     "label": "D",
+     "text": "1/4"
+    }
+   ],
+   "answer": "C",
+   "explanation": "把 sinα + cosα = 1/2 两边平方，得 1 + sin2α = 1/4，所以 sin2α = -3/4。结果小于 0，与 sinα、cosα 异号（α 在第二或第四象限）相符。3/4 是符号处理错误。"
+  },
+  {
+   "id": "mbs_q730056",
+   "topicId": "mbs_h114",
+   "prompt": "已知 cos(α + π/4) = 3/5，求 sin2α 的值。",
+   "question": "已知 cos(α + π/4) = 3/5，求 sin2α 的值。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "7/25",
+   "keypoints": [
+    "展开 cos(α + π/4) = (cosα - sinα)×(√2/2) = 3/5，故 cosα - sinα = 3√2/5",
+    "两边平方得 1 - sin2α = 18/25",
+    "解得 sin2α = 1 - 18/25 = 7/25"
+   ],
+   "explanation": "关键是把已知角的余弦展开，得到 cosα - sinα 的值，再整体平方。平方后交叉项正好是 -sin2α，所以一步就能解出；若试图先求 cosα、sinα 会陷入分类讨论。"
+  },
+  {
+   "id": "mbs_q730057",
+   "topicId": "mbs_h115",
+   "prompt": "已知 cosα = 1/2，且 0 < α < π，则 sin(α/2) 的值是",
+   "question": "已知 cosα = 1/2，且 0 < α < π，则 sin(α/2) 的值是",
+   "type": "choice",
+   "difficulty": "basic",
+   "options": [
+    {
+     "label": "A",
+     "text": "√3/2"
+    },
+    {
+     "label": "B",
+     "text": "-1/2"
+    },
+    {
+     "label": "C",
+     "text": "√2/2"
+    },
+    {
+     "label": "D",
+     "text": "1/2"
+    }
+   ],
+   "answer": "D",
+   "explanation": "由半角公式 sin²(α/2) = (1 - cosα)/2 = (1 - 1/2)/2 = 1/4，所以 sin(α/2) = ±1/2。因 0 < α < π，有 0 < α/2 < π/2，半角的正弦为正，故取 1/2。"
+  },
+  {
+   "id": "mbs_q730058",
+   "topicId": "mbs_h115",
+   "prompt": "已知 cosα = 3/5，且 0 < α < π/2，则 cos(α/2) 的值为",
+   "question": "已知 cosα = 3/5，且 0 < α < π/2，则 cos(α/2) 的值为",
+   "type": "fill",
+   "difficulty": "basic",
+   "answer": "2√5/5",
+   "explanation": "由 cos²(α/2) = (1 + cosα)/2 = (1 + 3/5)/2 = 4/5，又 0 < α/2 < π/4 使余弦为正，故 cos(α/2) = 2/√5 = 2√5/5。"
+  },
+  {
+   "id": "mbs_q730059",
+   "topicId": "mbs_h115",
+   "prompt": "已知 cosα = 0.6，则 sin²(α/2) 的值是",
+   "question": "已知 cosα = 0.6，则 sin²(α/2) 的值是",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "0.2",
+   "verify": "(1-0.6)/2",
+   "explanation": "由半角公式 sin²(α/2) = (1 - cosα)/2 = (1 - 0.6)/2 = 0.2。这里求的是平方值，不必讨论半角所在象限，符号问题被平方消掉了。"
+  },
+  {
+   "id": "mbs_q730060",
+   "topicId": "mbs_h115",
+   "prompt": "已知 sinα = 0.8，cosα = 0.6，则 tan(α/2) 的值是",
+   "question": "已知 sinα = 0.8，cosα = 0.6，则 tan(α/2) 的值是",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "0.5",
+   "verify": "0.8/(1+0.6)",
+   "explanation": "由半角公式 tan(α/2) = sinα/(1 + cosα)，代入得 0.8/(1 + 0.6) = 0.8/1.6 = 0.5。另一形式 (1 - cosα)/sinα 算得 0.4/0.8 = 0.5，两者结果一致。"
+  },
+  {
+   "id": "mbs_q730061",
+   "topicId": "mbs_h115",
+   "prompt": "tan22.5° 的值为",
+   "question": "tan22.5° 的值为",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "√2-1",
+   "explanation": "22.5° 是 45° 的一半，由 tan(α/2) = (1 - cosα)/sinα 得 tan22.5° = (1 - √2/2)/(√2/2) = √2 - 1，约等于 0.414。"
+  },
+  {
+   "id": "mbs_q730062",
+   "topicId": "mbs_h115",
+   "prompt": "已知 cosα = 3/5，且 α 是第四象限角，则 tan(α/2) 的值是",
+   "question": "已知 cosα = 3/5，且 α 是第四象限角，则 tan(α/2) 的值是",
+   "type": "choice",
+   "difficulty": "standard",
+   "options": [
+    {
+     "label": "A",
+     "text": "-1/2"
+    },
+    {
+     "label": "B",
+     "text": "1/2"
+    },
+    {
+     "label": "C",
+     "text": "-2"
+    },
+    {
+     "label": "D",
+     "text": "2"
+    }
+   ],
+   "answer": "A",
+   "explanation": "由平方关系得 sinα = -4/5。用 tan(α/2) = sinα/(1 + cosα) = (-4/5)/(8/5) = -1/2。第四象限正弦为负，分母 1 + cosα 恒为正，所以结果为负；1/2 是丢了符号。"
+  },
+  {
+   "id": "mbs_q730063",
+   "topicId": "mbs_h115",
+   "prompt": "已知 sinα = 3/5，且 α 是第二象限角，则 tan(α/2) 的值是",
+   "question": "已知 sinα = 3/5，且 α 是第二象限角，则 tan(α/2) 的值是",
+   "type": "choice",
+   "difficulty": "hard",
+   "options": [
+    {
+     "label": "A",
+     "text": "-3"
+    },
+    {
+     "label": "B",
+     "text": "3"
+    },
+    {
+     "label": "C",
+     "text": "1/3"
+    },
+    {
+     "label": "D",
+     "text": "-1/3"
+    }
+   ],
+   "answer": "B",
+   "explanation": "由平方关系得 cosα = -4/5。用 tan(α/2) = sinα/(1 + cosα) = (3/5)/(1 - 4/5) = (3/5)/(1/5) = 3。分母很小使结果偏大，这与 α 接近 180° 时半角接近 90°、正切趋于无穷相符。"
+  },
+  {
+   "id": "mbs_q730064",
+   "topicId": "mbs_h115",
+   "prompt": "已知 tan(α/2) = 3，求 sinα 与 cosα 的值。",
+   "question": "已知 tan(α/2) = 3，求 sinα 与 cosα 的值。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "sinα = 3/5，cosα = -4/5",
+   "keypoints": [
+    "令 t = tan(α/2) = 3，用万能公式 sinα = 2t/(1 + t²)，cosα = (1 - t²)/(1 + t²)",
+    "代入得 sinα = 6/(1 + 9) = 3/5",
+    "cosα = (1 - 9)/(1 + 9) = -4/5"
+   ],
+   "explanation": "把半角的正切作为桥梁，用万能公式直接得正弦、余弦，避免先求 α/2 的角。分母 1 + t² = 10 是公共的，cosα 为负说明 α 在第二象限，与 t = 3 大于 1 相符。"
+  },
+  {
+   "id": "mbs_q730065",
+   "topicId": "mbs_h116",
+   "prompt": "化简 sin²α - cos²α 的结果是",
+   "question": "化简 sin²α - cos²α 的结果是",
+   "type": "choice",
+   "difficulty": "basic",
+   "options": [
+    {
+     "label": "A",
+     "text": "cos2α"
+    },
+    {
+     "label": "B",
+     "text": "sin2α"
+    },
+    {
+     "label": "C",
+     "text": "-cos2α"
+    },
+    {
+     "label": "D",
+     "text": "-sin2α"
+    }
+   ],
+   "answer": "C",
+   "explanation": "由二倍角公式 cos2α = cos²α - sin²α，两边取相反数即得 sin²α - cos²α = -cos2α。选 cos2α 是漏掉了负号，sin2α 则是把平方差与二倍角正弦混为一谈。"
+  },
+  {
+   "id": "mbs_q730066",
+   "topicId": "mbs_h116",
+   "prompt": "化简 2cos²α - 1 的结果是",
+   "question": "化简 2cos²α - 1 的结果是",
+   "type": "fill",
+   "difficulty": "basic",
+   "answer": "cos2α",
+   "explanation": "这是二倍角余弦的变形公式：cos2α = 2cos²α - 1。它把二次式降为一次式，是化简题里最常用的降幂手段。"
+  },
+  {
+   "id": "mbs_q730067",
+   "topicId": "mbs_h116",
+   "prompt": "已知 α + β = 45°，tanα = 1/3，则 tanβ 的值是",
+   "question": "已知 α + β = 45°，tanα = 1/3，则 tanβ 的值是",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "0.5",
+   "verify": "(1-1/3)/(1+1/3)",
+   "explanation": "由 β = 45° - α，用正切差角公式 tanβ = (tan45° - tanα)/(1 + tan45°·tanα) = (1 - 1/3)/(1 + 1/3) = (2/3)/(4/3) = 0.5。分母用加号是因为差角公式的分母为 1 + tanαtanβ 的形式。"
+  },
+  {
+   "id": "mbs_q730068",
+   "topicId": "mbs_h116",
+   "prompt": "tan15° + tan30° + tan15°tan30° 的值是",
+   "question": "tan15° + tan30° + tan15°tan30° 的值是",
+   "type": "numeric",
+   "difficulty": "standard",
+   "answer": "1",
+   "verify": "1",
+   "explanation": "因为 15° + 30° = 45°，由正切和角公式 tan45° = (tan15° + tan30°)/(1 - tan15°tan30°) = 1，得 tan15° + tan30° = 1 - tan15°tan30°，移项即 tan15° + tan30° + tan15°tan30° = 1。这类题的通用结论是：若 A + B = 45°，则 tanA + tanB + tanAtanB = 1。"
+  },
+  {
+   "id": "mbs_q730069",
+   "topicId": "mbs_h116",
+   "prompt": "sin²10° + sin²80° 的值为",
+   "question": "sin²10° + sin²80° 的值为",
+   "type": "fill",
+   "difficulty": "standard",
+   "answer": "1",
+   "explanation": "因为 80° = 90° - 10°，所以 sin80° = cos10°，原式 = sin²10° + cos²10° = 1。互余两角的正弦与余弦互换，是同角关系与诱导公式联合使用的典型结构。"
+  },
+  {
+   "id": "mbs_q730070",
+   "topicId": "mbs_h116",
+   "prompt": "已知 tanα、tanβ 是方程 x² + 3x + 2 = 0 的两个根，求 tan(α + β) 的值。",
+   "question": "已知 tanα、tanβ 是方程 x² + 3x + 2 = 0 的两个根，求 tan(α + β) 的值。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "3",
+   "keypoints": [
+    "由韦达定理得 tanα + tanβ = -3，tanαtanβ = 2",
+    "代入正切和角公式 tan(α + β) = (tanα + tanβ)/(1 - tanαtanβ)",
+    "计算得 (-3)/(1 - 2) = 3"
+   ],
+   "explanation": "两根之和与两根之积正好是正切和角公式需要的两个量，所以不必解方程求根。分母 1 - 2 = -1 会使符号反转，最终结果是 3 而不是 -3。"
+  },
+  {
+   "id": "mbs_q730071",
+   "topicId": "mbs_h116",
+   "prompt": "函数 f(x) = sin²x + √3sinxcosx 的最大值是",
+   "question": "函数 f(x) = sin²x + √3sinxcosx 的最大值是",
+   "type": "choice",
+   "difficulty": "hard",
+   "options": [
+    {
+     "label": "A",
+     "text": "1"
+    },
+    {
+     "label": "B",
+     "text": "2"
+    },
+    {
+     "label": "C",
+     "text": "(1 + √3)/2"
+    },
+    {
+     "label": "D",
+     "text": "3/2"
+    }
+   ],
+   "answer": "D",
+   "explanation": "先用降幂与倍角公式：sin²x = (1 - cos2x)/2，√3sinxcosx = (√3/2)sin2x，所以 f(x) = 1/2 + (√3/2)sin2x - (1/2)cos2x = 1/2 + sin(2x - π/6)。正弦的最大值为 1，故最大值为 3/2。忘记常数项 1/2 会误选 1。"
+  },
+  {
+   "id": "mbs_q730072",
+   "topicId": "mbs_h116",
+   "prompt": "求函数 y = cos²x - sin²x + 2√3sinxcosx 的最小正周期与最大值。",
+   "question": "求函数 y = cos²x - sin²x + 2√3sinxcosx 的最小正周期与最大值。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "answer": "最小正周期为 π，最大值为 2",
+   "keypoints": [
+    "用倍角公式把两项都化成 2x 的形式：cos²x - sin²x = cos2x，2√3sinxcosx = √3sin2x",
+    "再用辅助角公式得 y = 2sin(2x + π/6)",
+    "由 ω = 2 得 T = 2π ÷ 2 = π，最大值为振幅 2"
+   ],
+   "explanation": "先统一角为 2x（降幂与倍角），再用辅助角公式合成一个正弦。周期由 ω = 2 决定，T = π；最大值等于振幅 √(1 + 3) = 2。"
+  }
+ ],
+ "topics": [
+  {
+   "id": "mbs_h108",
+   "name": "同角三角函数的基本关系",
+   "domain": "数与代数",
+   "grade": 11,
+   "book": "必修第二册",
+   "unit": "三角恒等变换",
+   "chapter": "必修第二册 第四章 三角恒等变换",
+   "type": "conceptual",
+   "description": "本课复习并深化同角三角函数的两个基本关系：平方关系 sin²α＋cos²α＝1 与商数关系 tanα＝sinα/cosα。重点是在已知一个三角函数值或所在象限的条件下，判断符号并求出其余两个三角函数值，为后续恒等变换打基础。",
+   "mastery_criteria": [
+    "能写出平方关系与商数关系并说明各自成立的条件",
+    "能由 sinα 或 cosα 的值结合象限确定另外两个三角函数值"
+   ],
+   "diagnostic_question": {
+    "question": "已知 sinα＝3/5，且 α 是第二象限角，求 cosα。",
+    "answer": "cosα＝－4/5，因为第二象限余弦为负，由平方关系得 cos²α＝16/25。"
+   }
+  },
+  {
+   "id": "mbs_h109",
+   "name": "由三角函数值求其他三角函数值",
+   "domain": "数与代数",
+   "grade": 11,
+   "book": "必修第二册",
+   "unit": "三角恒等变换",
+   "chapter": "必修第二册 第四章 三角恒等变换",
+   "type": "procedural",
+   "description": "本课训练由已知三角函数值反求其余函数值的完整流程：先用平方关系或商数关系求出未知函数值，再由角所在象限确定符号，最后按题目要求化简或代入求值。强调符号判断是与开方运算并列的关键步骤。",
+   "mastery_criteria": [
+    "能按「求值—定号—作答」三步完成一类求值题",
+    "能在含参数或含根号的条件下正确取舍正负号"
+   ],
+   "diagnostic_question": {
+    "question": "已知 cosα＝－1/3，α 为第三象限角，求 tanα。",
+    "answer": "tanα＝2√2，由平方关系得 sinα＝－2√2/3，再由商数关系得 tanα＝2√2。"
+   }
+  },
+  {
+   "id": "mbs_h110",
+   "name": "两角和与差的余弦公式",
+   "domain": "数与代数",
+   "grade": 11,
+   "book": "必修第二册",
+   "unit": "三角恒等变换",
+   "chapter": "必修第二册 第四章 三角恒等变换",
+   "type": "procedural",
+   "description": "本课推导并运用两角差的余弦公式 cos(α－β)＝cosαcosβ＋sinαsinβ 及其和角形式。重点是把特殊角拆成两个已知角的和差（如 75°＝45°＋30°），用公式展开求值，并理解公式对任意角都成立。",
+   "mastery_criteria": [
+    "能默写两角和与差的余弦公式并说明结构特点",
+    "能把非特殊角拆成两个特殊角的和或差再求值"
+   ],
+   "diagnostic_question": {
+    "question": "用两角差的余弦公式求 cos15° 的值。",
+    "answer": "cos15°＝cos(45°－30°)＝(√6＋√2)/4。"
+   }
+  },
+  {
+   "id": "mbs_h111",
+   "name": "两角和与差的正弦",
+   "domain": "数与代数",
+   "grade": 11,
+   "book": "必修第二册",
+   "unit": "三角恒等变换",
+   "chapter": "必修第二册 第四章 三角恒等变换",
+   "type": "procedural",
+   "description": "本课由余弦公式推出两角和与差的正弦公式，并用于求值和化简。重点是借助诱导公式 sin(α±β)＝cos[π/2－(α±β)] 完成推导，并能把形如 sin75° 的式子拆角展开。",
+   "mastery_criteria": [
+    "能由余弦公式推导出两角和与差的正弦公式",
+    "能用正弦公式求非特殊角的正弦值并化简三角式"
+   ],
+   "diagnostic_question": {
+    "question": "求 sin75° 的值。",
+    "answer": "sin75°＝sin(45°＋30°)＝(√6＋√2)/4。"
+   }
+  },
+  {
+   "id": "mbs_h112",
+   "name": "三角函数的叠加",
+   "domain": "数与代数",
+   "grade": 11,
+   "book": "必修第二册",
+   "unit": "三角恒等变换",
+   "chapter": "必修第二册 第四章 三角恒等变换",
+   "type": "reasoning",
+   "description": "本课研究形如 asinx＋bcosx 的三角函数式如何化为一个正弦型函数：提取 √(a²＋b²)，用辅助角把系数写成某个角的余弦与正弦，得到 √(a²＋b²)sin(x＋φ)。由此可读出振幅、周期与最值。",
+   "mastery_criteria": [
+    "能把 asinx＋bcosx 化为 √(a²＋b²)sin(x＋φ) 的形式",
+    "能由化得的结果说出振幅、周期与最大值最小值"
+   ],
+   "diagnostic_question": {
+    "question": "把 sinx＋√3cosx 化为一个正弦型函数。",
+    "answer": "原式＝2sin(x＋π/3)，振幅为 2，周期为 2π。"
+   }
+  },
+  {
+   "id": "mbs_h113",
+   "name": "积化和差与和差化积公式",
+   "domain": "数与代数",
+   "grade": 11,
+   "book": "必修第二册",
+   "unit": "三角恒等变换",
+   "chapter": "必修第二册 第四章 三角恒等变换",
+   "type": "procedural",
+   "description": "本课学习积化和差与和差化积两组公式，用来在「乘积」与「和差」之间转换。重点是根据目标形式选择公式，把 sinαcosβ 一类乘积化为两个正弦的和差，或把 sinα＋sinβ 化为乘积，从而便于求值或化简。",
+   "mastery_criteria": [
+    "能写出积化和差、和差化积公式并说明适用场合",
+    "能按目标形式在乘积与和差之间正确转换"
+   ],
+   "diagnostic_question": {
+    "question": "把 sin40°cos20° 化为和差形式。",
+    "answer": "sin40°cos20°＝(sin60°＋sin20°)/2。"
+   }
+  },
+  {
+   "id": "mbs_h114",
+   "name": "二倍角公式",
+   "domain": "数与代数",
+   "grade": 11,
+   "book": "必修第二册",
+   "unit": "三角恒等变换",
+   "chapter": "必修第二册 第四章 三角恒等变换",
+   "type": "procedural",
+   "description": "本课把和角公式中两角取相等，得到二倍角的正弦、余弦、正切公式，并强调余弦公式的三种等价写法。重点是按题目给出的函数类型选择降幂形式，用二倍角公式完成求值与化简。",
+   "mastery_criteria": [
+    "能由和角公式推出三个二倍角公式",
+    "能根据角的范围选择余弦二倍角公式的合适形式"
+   ],
+   "diagnostic_question": {
+    "question": "已知 sinα＝4/5，α 为锐角，求 sin2α。",
+    "answer": "sin2α＝2sinαcosα＝24/25。"
+   }
+  },
+  {
+   "id": "mbs_h115",
+   "name": "半角公式",
+   "domain": "数与代数",
+   "grade": 11,
+   "book": "必修第二册",
+   "unit": "三角恒等变换",
+   "chapter": "必修第二册 第四章 三角恒等变换",
+   "type": "procedural",
+   "description": "本课由余弦二倍角公式反解出半角公式，得到 sin²(α/2)、cos²(α/2)、tan(α/2) 的表达式。重点是降幂与升幂的相互转化，以及半角所在象限决定开方后正负号的判断方法。",
+   "mastery_criteria": [
+    "能由二倍角公式推出半角公式的三种形式",
+    "能根据半角所在象限确定开方后的符号"
+   ],
+   "diagnostic_question": {
+    "question": "已知 cosα＝1/2，求 sin²(α/2)。",
+    "answer": "sin²(α/2)＝(1－cosα)/2＝1/4。"
+   }
+  },
+  {
+   "id": "mbs_h116",
+   "name": "恒等变换的综合运用",
+   "domain": "数与代数",
+   "grade": 11,
+   "book": "必修第二册",
+   "unit": "三角恒等变换",
+   "chapter": "必修第二册 第四章 三角恒等变换",
+   "type": "reasoning",
+   "description": "本课综合运用和差角、二倍角、半角与辅助角公式完成较复杂的三角恒等变换。重点在于观察式子结构，确定先降幂、先化积还是先化同名，并按目标式逐步变形，体会恒等变换中「盯住目标」的策略。",
+   "mastery_criteria": [
+    "能为一个三角恒等式设计合理的变形路线",
+    "能在多步变形中保持等价性并完成证明或求值"
+   ],
+   "diagnostic_question": {
+    "question": "化简 (sin2α)/(1＋cos2α)。",
+    "answer": "原式＝(2sinαcosα)/(2cos²α)＝tanα。"
+   }
+  }
+ ]
+}

@@ -1,0 +1,2686 @@
+{
+ "book": "八年级上册",
+ "unit_no": "五",
+ "unit_name": "二元一次方程组",
+ "topics": [
+  {
+   "id": "mbs_j233",
+   "description": "本知识点从一元一次方程出发，认识只含两个未知数、未知数次数都是 1 的整式方程，学会判断二元一次方程，并能把它改写成用含一个未知数的式子表示另一个未知数的形式。",
+   "mastery_criteria": [
+    "能说出二元一次方程的三个特征：两个未知数、次数都是 1、整式方程",
+    "能从几个方程中挑出二元一次方程并说明其余方程不合格的原因",
+    "能把 2x＋y＝9 这类方程变形为用 x 表示 y 的形式"
+   ],
+   "type": "conceptual",
+   "diagnostic_question": {
+    "question": "3x＋2y＝7 是二元一次方程吗？它含有几个未知数？",
+    "answer": "是，含 x、y 两个未知数，次数都是 1"
+   }
+  },
+  {
+   "id": "mbs_j234",
+   "description": "本知识点把两个二元一次方程合在一起认识方程组，理解方程组必须每个方程都是二元一次方程，学会判断一组数值是否为方程组的解，并会按题意列出简单的方程组。",
+   "mastery_criteria": [
+    "能判断给出的两个方程能否组成二元一次方程组",
+    "能说出二元一次方程组中「解」必须同时满足两个方程",
+    "能根据两个等量关系列出二元一次方程组"
+   ],
+   "type": "conceptual",
+   "diagnostic_question": {
+    "question": "x＋y＝5 与 xy＝6 能组成二元一次方程组吗？为什么？",
+    "answer": "不能，xy 的次数是 2，第二个方程不是二元一次方程"
+   }
+  },
+  {
+   "id": "mbs_j235",
+   "description": "本知识点区分「方程的解」与「方程组的解」，学会把一组数值代入检验，也学会由已知解反求方程中的待定字母，是后续解方程组和应用题检验答案的基础。",
+   "mastery_criteria": [
+    "能用代入法检验一组数值是否为方程或方程组的解",
+    "能由已知解代入方程求出待定字母的值",
+    "能说明方程组的解必须同时满足组内每个方程"
+   ],
+   "type": "procedural",
+   "diagnostic_question": {
+    "question": "x＝1、y＝5 是方程 2x＋y＝7 的解吗？",
+    "answer": "是，2×1＋5＝7，等式成立"
+   }
+  },
+  {
+   "id": "mbs_j236",
+   "description": "本知识点练习由实际情境中的两个等量关系列方程组，包括和差关系、两位数与数位关系、件数与金额关系，重点是把生活语言准确地翻译成含两个未知数的等式。",
+   "mastery_criteria": [
+    "能从题目中找出两个独立的等量关系",
+    "能正确设未知数并列出对应的两个方程",
+    "能说明所列方程中每一项的实际含义"
+   ],
+   "type": "modeling",
+   "diagnostic_question": {
+    "question": "甲、乙两数和为 20、甲比乙大 4，设甲 x、乙 y 应列什么方程？",
+    "answer": "x＋y＝20 与 x－y＝4"
+   }
+  },
+  {
+   "id": "mbs_j237",
+   "description": "本知识点引入消元思想，说明解二元一次方程组的关键是把两个未知数化成一个未知数，并练习把方程变形、观察系数特点，为代入消元法和加减消元法作准备。",
+   "mastery_criteria": [
+    "能说出消元思想的核心是把二元转化为一元",
+    "能把一个方程变形为用一个未知数表示另一个未知数",
+    "能通过观察系数判断相加或相减能否消元"
+   ],
+   "type": "reasoning",
+   "diagnostic_question": {
+    "question": "解二元一次方程组的基本思路是什么？",
+    "answer": "消元，把两个未知数化成一个未知数，先解一元一次方程"
+   }
+  },
+  {
+   "id": "mbs_j238",
+   "description": "本知识点学习代入消元法：从系数简单的方程中解出一个未知数，整体代入另一个方程，先求一个未知数再回代求另一个，是解方程组最常用的方法之一。",
+   "mastery_criteria": [
+    "能选择系数简单的方程变形并整体代入",
+    "能按「变形、代入、求解、回代、检验」五步完成解题",
+    "能处理含括号或系数为分数的方程组的代入"
+   ],
+   "type": "procedural",
+   "diagnostic_question": {
+    "question": "用代入法解 y＝x＋3 与 2x＋y＝9，第一步应做什么？",
+    "answer": "把 y＝x＋3 代入 2x＋y＝9，得 2x＋x＋3＝9"
+   }
+  },
+  {
+   "id": "mbs_j239",
+   "description": "本知识点学习加减消元法：当同一个未知数在两个方程中的系数相等或互为相反数时，通过相加或相减直接消去该未知数，比代入法更快捷。",
+   "mastery_criteria": [
+    "能识别系数相等或互为相反数时选择相加或相减",
+    "能正确完成相减时每一项的变号",
+    "能用加减消元法解出方程组并检验"
+   ],
+   "type": "procedural",
+   "diagnostic_question": {
+    "question": "方程组 x＋y＝7 与 x－y＝3 中，两式相加能消去哪个未知数？",
+    "answer": "y"
+   }
+  },
+  {
+   "id": "mbs_j240",
+   "description": "本知识点是加减消元法的进阶：当同一个未知数的系数绝对值不相等时，先用最小公倍数把方程两边同乘适当的数，使系数对齐再消元，还会处理带括号、带小数的方程组。",
+   "mastery_criteria": [
+    "能找到两个系数的最小公倍数并确定各方程所乘的数",
+    "能把带括号或小数的方程组先化为标准整数形式",
+    "能完整解出系数不对齐的方程组并检验"
+   ],
+   "type": "procedural",
+   "diagnostic_question": {
+    "question": "解 2x＋3y＝7 与 3x－2y＝4 时想消去 x，两个方程各应乘几？",
+    "answer": "第一个方程乘 3、第二个方程乘 2"
+   }
+  },
+  {
+   "id": "mbs_j241",
+   "description": "本知识点用方程组解决鸡兔同笼问题，抓住「头数之和」与「腿数之和」两个等量关系，也练习「鸡比兔多几只」这类带差量条件的变形题。",
+   "mastery_criteria": [
+    "能由头数与腿数分别列出两个方程",
+    "能用假设法或方程组法求出鸡兔只数",
+    "能处理头数、腿数之外的差量条件"
+   ],
+   "type": "application",
+   "diagnostic_question": {
+    "question": "鸡兔同笼共 12 个头、32 条腿，设鸡 x、兔 y 应列什么方程？",
+    "answer": "x＋y＝12 与 2x＋4y＝32"
+   }
+  },
+  {
+   "id": "mbs_j242",
+   "description": "本知识点把《九章算术》《孙子算经》中的盈不足、兽禽、持钱等古算题翻译成方程组，体会古代数学的表达方式，练习从文言叙述中提取两个等量关系。",
+   "mastery_criteria": [
+    "能把「盈」「不足」等古语翻译成加减关系",
+    "能从古算题中准确设未知数并列出方程组",
+    "能解出结果并结合原题情境作答"
+   ],
+   "type": "modeling",
+   "diagnostic_question": {
+    "question": "「每人出 8 钱则多 3 钱」用方程怎样表示？",
+    "answer": "8x－y＝3，其中 x 是人数、y 是物价"
+   }
+  },
+  {
+   "id": "mbs_j243",
+   "description": "本知识点练习用表格整理应用题中的数量关系，把不同对象、不同量分列成行与列，再由表格横行或纵列读出等量关系，是解决较复杂应用题的常用工具。",
+   "mastery_criteria": [
+    "能按对象与数量设计两行三列的表格",
+    "能从表格中读出总人数、总金额等合计关系",
+    "能把表格信息转化为二元一次方程组"
+   ],
+   "type": "modeling",
+   "diagnostic_question": {
+    "question": "用表格整理「单价、数量、金额」时，金额一列怎么算？",
+    "answer": "金额等于单价乘数量，各行分别相乘后相加"
+   }
+  },
+  {
+   "id": "mbs_j244",
+   "description": "本知识点处理浓度、达标率与增收节支类问题，核心是「溶质（或收入）总量守恒」：混合前后同一种成分的总量不变，据此列出第二个方程。",
+   "mastery_criteria": [
+    "能写出「总量乘百分数等于部分量」的表达式",
+    "能用总量守恒列出第二个方程",
+    "能区分百分数的基数，避免把百分数直接相加"
+   ],
+   "type": "application",
+   "diagnostic_question": {
+    "question": "含蛋白质 20% 的食品 x 克中含蛋白质多少克？",
+    "answer": "0.2x 克"
+   }
+  },
+  {
+   "id": "mbs_j245",
+   "description": "本知识点用方程组解决行程问题，包括相遇、追及、船在水中航行和火车过隧道，关键是分清路程、速度、时间的关系以及「车长」在过隧道时的作用。",
+   "mastery_criteria": [
+    "能写出相遇、追及问题中的路程关系",
+    "能区分顺流、逆流速度与静水速度的关系",
+    "能处理火车过隧道时路程含车长的问题"
+   ],
+   "type": "application",
+   "diagnostic_question": {
+    "question": "火车完全通过隧道时行驶的路程等于什么？",
+    "answer": "隧道长加车长"
+   }
+  },
+  {
+   "id": "mbs_j246",
+   "description": "本知识点建立二元一次方程与一次函数的联系：把方程变形即得函数表达式，方程的每一组解对应直线上一个点，为用图象法理解方程组作准备。",
+   "mastery_criteria": [
+    "能把二元一次方程化成 y＝kx＋b 的形式",
+    "能说明方程的解与图象上点的坐标的对应关系",
+    "能由函数表达式求给定自变量对应的函数值"
+   ],
+   "type": "conceptual",
+   "diagnostic_question": {
+    "question": "把 2x＋y＝5 写成函数形式是什么？",
+    "answer": "y＝－2x＋5"
+   }
+  },
+  {
+   "id": "mbs_j247",
+   "description": "本知识点用图象理解方程组的解：两条直线的交点坐标就是方程组的解，交点个数对应解的个数，学会联立两个函数表达式求交点。",
+   "mastery_criteria": [
+    "能通过联立两个函数表达式求交点坐标",
+    "能由直线位置关系判断方程组解的情况",
+    "能根据交点所在象限确定字母的取值范围"
+   ],
+   "type": "reasoning",
+   "diagnostic_question": {
+    "question": "两条直线平行时，对应的二元一次方程组有几个解？",
+    "answer": "没有解"
+   },
+   "domain": "数与代数",
+   "tags": null
+  },
+  {
+   "id": "mbs_j248",
+   "description": "本知识点学习待定系数法：先设出含待定字母的函数表达式，再把已知点的坐标代入得到方程组，解出字母后写出表达式，是求函数表达式的通法。",
+   "mastery_criteria": [
+    "能按「设、代、解、写」四步求一次函数表达式",
+    "能用两点坐标建立关于 k、b 的方程组",
+    "能利用平行条件确定 k 再求 b"
+   ],
+   "type": "procedural",
+   "diagnostic_question": {
+    "question": "求一次函数表达式时，通常先设成什么形式？",
+    "answer": "y＝kx＋b，再代入已知点求 k、b"
+   }
+  },
+  {
+   "id": "mbs_j249",
+   "description": "本知识点把消元思想推广到三元一次方程组：先消去一个未知数化为二元，再消去一个化为一元；也练习「三式相加求总和」这类整体技巧。",
+   "mastery_criteria": [
+    "能按「三元化二元、二元化一元」的顺序消元",
+    "能用三式相加求 x＋y＋z 的整体值",
+    "能解出三元一次方程组并检验三式都成立"
+   ],
+   "type": "procedural",
+   "diagnostic_question": {
+    "question": "解三元一次方程组的基本思路是什么？",
+    "answer": "先消去一个未知数化为二元一次方程组，再化为一元"
+   }
+  }
+ ],
+ "questions": [
+  {
+   "id": "mbs_q470001",
+   "topicId": "mbs_j233",
+   "prompt": "下列各方程中，属于二元一次方程的是（ ）",
+   "question": "下列各方程中，属于二元一次方程的是（ ）",
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "二元一次方程要求只含两个未知数、未知数的次数都是 1，而且两边都是整式。B 中含 x²，次数为 2；C 中 x 出现在分母上，不是整式方程；D 只含一个未知数。",
+   "options": [
+    {
+     "label": "A",
+     "text": "2x＋3y＝7"
+    },
+    {
+     "label": "B",
+     "text": "x²－y＝4"
+    },
+    {
+     "label": "C",
+     "text": "3/x＋y＝5"
+    },
+    {
+     "label": "D",
+     "text": "2x＋3＝9"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470002",
+   "topicId": "mbs_j233",
+   "prompt": "二元一次方程 4x－3y＝12 中，x 的系数与 y 的系数之和是（ ）",
+   "question": "二元一次方程 4x－3y＝12 中，x 的系数与 y 的系数之和是（ ）",
+   "answer": "B",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "x 的系数是 4，y 的系数是 －3，两者之和为 4＋(－3)＝1。把系数当成 4 与 3 相加会得到 7，忽略 y 前面的负号是常见错误。",
+   "options": [
+    {
+     "label": "A",
+     "text": "7"
+    },
+    {
+     "label": "B",
+     "text": "1"
+    },
+    {
+     "label": "C",
+     "text": "－7"
+    },
+    {
+     "label": "D",
+     "text": "12"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470003",
+   "topicId": "mbs_j233",
+   "prompt": "若 (m－2)x＋3y＝5 是关于 x、y 的二元一次方程，则 m 不能取的值是多少",
+   "question": "若 (m－2)x＋3y＝5 是关于 x、y 的二元一次方程，则 m 不能取的值是多少",
+   "answer": "2",
+   "type": "numeric",
+   "difficulty": "basic",
+   "explanation": "二元一次方程中两个未知数的系数都不能为 0，所以 m－2≠0，即 m≠2。若 m＝2，方程变成 3y＝5，只含 y 一个未知数，就不再是二元一次方程。",
+   "verify": "1+1"
+  },
+  {
+   "id": "mbs_q470004",
+   "topicId": "mbs_j233",
+   "prompt": "方程 2x＋y＝9 中，用含 x 的式子表示 y，结果 y＝____",
+   "question": "方程 2x＋y＝9 中，用含 x 的式子表示 y，结果 y＝____",
+   "answer": "9－2x",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "把 2x 移到等号右边，得 y＝9－2x，移项时要改变符号。这样变形后，二元一次方程就写成了一次函数 y＝－2x＋9 的形式，便于观察 x 与 y 的对应关系。"
+  },
+  {
+   "id": "mbs_q470005",
+   "topicId": "mbs_j233",
+   "prompt": "已知二元一次方程 3x－y＝5，当 x＝4 时 y 的值是多少",
+   "question": "已知二元一次方程 3x－y＝5，当 x＝4 时 y 的值是多少",
+   "answer": "7",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "把 x＝4 代入 3x－y＝5，得 12－y＝5，所以 y＝7。也可以先把方程变形为 y＝3x－5，再代入 x＝4 得 y＝7，两种做法结果一致。",
+   "verify": "3*4-5"
+  },
+  {
+   "id": "mbs_q470006",
+   "topicId": "mbs_j233",
+   "prompt": "若 x＝3、y＝5 是方程 2x＋ay＝11 的一个解，则 a＝____",
+   "question": "若 x＝3、y＝5 是方程 2x＋ay＝11 的一个解，则 a＝____",
+   "answer": "1",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "把 x＝3、y＝5 代入方程，得 6＋5a＝11，移项得 5a＝5，所以 a＝1。代回检验 2×3＋1×5＝11，等式成立。"
+  },
+  {
+   "id": "mbs_q470007",
+   "topicId": "mbs_j233",
+   "prompt": "若 (k－3)x＋(k＋2)y＝4 是关于 x、y 的二元一次方程，则 k 应满足（ ）",
+   "question": "若 (k－3)x＋(k＋2)y＝4 是关于 x、y 的二元一次方程，则 k 应满足（ ）",
+   "answer": "C",
+   "type": "choice",
+   "difficulty": "hard",
+   "explanation": "两个未知数的系数都不能为 0，因此 k－3≠0 且 k＋2≠0，即 k≠3 且 k≠－2。只要有一个系数为 0，方程就只剩一个未知数，不满足二元一次方程的定义。",
+   "options": [
+    {
+     "label": "A",
+     "text": "k＝3"
+    },
+    {
+     "label": "B",
+     "text": "k＝－2"
+    },
+    {
+     "label": "C",
+     "text": "k≠3 且 k≠－2"
+    },
+    {
+     "label": "D",
+     "text": "k 可以取任意实数"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470008",
+   "topicId": "mbs_j233",
+   "prompt": "已知方程 (m－1)x＋(2－n)y＝5 是关于 x、y 的二元一次方程，求 m、n 应满足的条件，并说明理由。",
+   "question": "已知方程 (m－1)x＋(2－n)y＝5 是关于 x、y 的二元一次方程，求 m、n 应满足的条件，并说明理由。",
+   "answer": "m≠1 且 n≠2，因为 x、y 的系数都不能为 0，否则方程只含一个未知数。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "二元一次方程必须同时含有两个未知数，所以 x 的系数 m－1 与 y 的系数 2－n 都不能等于 0，由此得 m≠1 且 n≠2。若 m＝1，方程变成 (2－n)y＝5，只含 y 一个未知数。",
+   "keypoints": [
+    "两个未知数的系数都不为 0",
+    "由 m－1≠0 得 m≠1，由 2－n≠0 得 n≠2",
+    "结论要写成且的关系"
+   ]
+  },
+  {
+   "id": "mbs_q470009",
+   "topicId": "mbs_j234",
+   "prompt": "下列方程组中，属于二元一次方程组的是（ ）",
+   "question": "下列方程组中，属于二元一次方程组的是（ ）",
+   "answer": "D",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "二元一次方程组要求每个方程都是二元一次方程。B 中 xy 的次数是 2；C 中含 x²；D 中未知数出现在分母上，不是整式方程，三者都不符合定义。",
+   "options": [
+    {
+     "label": "A",
+     "text": "x＋y＝5 与 xy＝6"
+    },
+    {
+     "label": "B",
+     "text": "x²＋y＝5 与 x－y＝1"
+    },
+    {
+     "label": "C",
+     "text": "x＋y＝5 与 1/x－y＝1"
+    },
+    {
+     "label": "D",
+     "text": "x＋y＝5 与 x－y＝1"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470010",
+   "topicId": "mbs_j234",
+   "prompt": "方程组 2x＋y＝8 与 x－y＝1 中，第一个方程里 x 的系数与第二个方程里 y 的系数之积是多少",
+   "question": "方程组 2x＋y＝8 与 x－y＝1 中，第一个方程里 x 的系数与第二个方程里 y 的系数之积是多少",
+   "answer": "-2",
+   "type": "numeric",
+   "difficulty": "basic",
+   "explanation": "第一个方程中 x 的系数是 2，第二个方程中 y 的系数是 －1，它们的积为 2×(－1)＝－2。读题时要看清是哪一个方程里的系数，负号不能丢。",
+   "verify": "2*(-1)"
+  },
+  {
+   "id": "mbs_q470011",
+   "topicId": "mbs_j234",
+   "prompt": "方程组 x＋y＝10 与 x－y＝4 中，把两个方程相加可以消去未知数____",
+   "question": "方程组 x＋y＝10 与 x－y＝4 中，把两个方程相加可以消去未知数____",
+   "answer": "y",
+   "type": "fill",
+   "difficulty": "basic",
+   "explanation": "两个方程中 y 的系数分别是 1 与 －1，互为相反数，相加时 y 项相互抵消，所以能消去的是 y。相加后剩下一个只含 x 的方程 2x＝14。"
+  },
+  {
+   "id": "mbs_q470012",
+   "topicId": "mbs_j234",
+   "prompt": "下列各组数值中，是方程组 x＋y＝6 与 x－y＝2 的解的是（ ）",
+   "question": "下列各组数值中，是方程组 x＋y＝6 与 x－y＝2 的解的是（ ）",
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "standard",
+   "explanation": "把 x＝4、y＝2 分别代入两个方程，4＋2＝6 与 4－2＝2 都成立，所以它是方程组的解。代 x＝2、y＝4 得 2－4＝－2，代 x＝3、y＝3 得 3－3＝0，都不满足第二个方程。",
+   "options": [
+    {
+     "label": "A",
+     "text": "x＝4，y＝2"
+    },
+    {
+     "label": "B",
+     "text": "x＝2，y＝4"
+    },
+    {
+     "label": "C",
+     "text": "x＝3，y＝3"
+    },
+    {
+     "label": "D",
+     "text": "x＝5，y＝1"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470013",
+   "topicId": "mbs_j234",
+   "prompt": "方程组 x＋y＝9 与 x－y＝3 的解中，x 的值是多少",
+   "question": "方程组 x＋y＝9 与 x－y＝3 的解中，x 的值是多少",
+   "answer": "6",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "两式相加，y 项互相抵消，得 2x＝12，所以 x＝6，再代回得 y＝3。相加之所以能消去 y，是因为两个方程里 y 的系数互为相反数。",
+   "verify": "(9+3)/2"
+  },
+  {
+   "id": "mbs_q470014",
+   "topicId": "mbs_j234",
+   "prompt": "方程组 x＋y＝4 与 2x＋2y＝8 是不是一组有效的二元一次方程组？这两个方程之间有什么关系？它有多少个解？",
+   "question": "方程组 x＋y＝4 与 2x＋2y＝8 是不是一组有效的二元一次方程组？这两个方程之间有什么关系？它有多少个解？",
+   "answer": "是二元一次方程组；第二个方程由第一个方程两边同乘 2 得到，两方程同解，因此方程组有无数个解。",
+   "type": "short-answer",
+   "difficulty": "standard",
+   "explanation": "两个方程都含有两个未知数且次数为 1，符合二元一次方程组的定义。但第二个方程化简后与第一个完全相同，满足 x＋y＝4 的每一对数都是解，所以解有无数个而不是一个。",
+   "keypoints": [
+    "两个方程都是二元一次方程，可组成方程组",
+    "第二个方程由第一个方程两边乘 2 得到",
+    "两方程同解，方程组有无数个解"
+   ]
+  },
+  {
+   "id": "mbs_q470015",
+   "topicId": "mbs_j234",
+   "prompt": "已知 x＝1、y＝2 是方程组 ax－y＝1 与 x＋by＝5 的解，则 a＋b 的值是（ ）",
+   "question": "已知 x＝1、y＝2 是方程组 ax－y＝1 与 x＋by＝5 的解，则 a＋b 的值是（ ）",
+   "answer": "B",
+   "type": "choice",
+   "difficulty": "hard",
+   "explanation": "代入第一个方程得 a－2＝1，所以 a＝3；代入第二个方程得 1＋2b＝5，所以 b＝2。因此 a＋b＝5，只求出一个字母就停笔是常见失分点。",
+   "options": [
+    {
+     "label": "A",
+     "text": "3"
+    },
+    {
+     "label": "B",
+     "text": "5"
+    },
+    {
+     "label": "C",
+     "text": "2"
+    },
+    {
+     "label": "D",
+     "text": "1"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470016",
+   "topicId": "mbs_j234",
+   "prompt": "请写出一个解为 x＝3、y＝2 的二元一次方程组，并说明你的构造方法。",
+   "question": "请写出一个解为 x＝3、y＝2 的二元一次方程组，并说明你的构造方法。",
+   "answer": "例如 x＋y＝5 与 x－y＝1：把 x＝3、y＝2 分别代入两个不同的一次整式求出常数项即可。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "构造时先写出形如 x＋y 与 x－y 的两个一次整式，代入 x＝3、y＝2 分别得到 5 与 1，于是 x＋y＝5 与 x－y＝1 就是以 (3,2) 为解的方程组。写完后要代回检验两个方程都成立。",
+   "keypoints": [
+    "先取两个含 x、y 的一次整式",
+    "把 x＝3、y＝2 代入求出常数项",
+    "写出方程组并代回检验"
+   ]
+  },
+  {
+   "id": "mbs_q470017",
+   "topicId": "mbs_j235",
+   "prompt": "下列各组数值中，是方程 2x＋y＝7 的解的是（ ）",
+   "question": "下列各组数值中，是方程 2x＋y＝7 的解的是（ ）",
+   "answer": "C",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "代入检验：2×1＋5＝7 成立；2×2＋2＝6、2×3＋0＝6、2×0＋6＝6 都不等于 7。只有第一组数值使等式成立，所以它是方程的解。",
+   "options": [
+    {
+     "label": "A",
+     "text": "x＝2，y＝2"
+    },
+    {
+     "label": "B",
+     "text": "x＝3，y＝0"
+    },
+    {
+     "label": "C",
+     "text": "x＝1，y＝5"
+    },
+    {
+     "label": "D",
+     "text": "x＝0，y＝6"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470018",
+   "topicId": "mbs_j235",
+   "prompt": "已知 x＝2、y＝－1 是方程 3x－ay＝8 的一个解，则 a 的值是（ ）",
+   "question": "已知 x＝2、y＝－1 是方程 3x－ay＝8 的一个解，则 a 的值是（ ）",
+   "answer": "D",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "把 x＝2、y＝－1 代入得 6－a×(－1)＝8，即 6＋a＝8，所以 a＝2。把 －1 代入时 －a×(－1) 变成 ＋a，符号变化是本题的关键。",
+   "options": [
+    {
+     "label": "A",
+     "text": "－2"
+    },
+    {
+     "label": "B",
+     "text": "4"
+    },
+    {
+     "label": "C",
+     "text": "1"
+    },
+    {
+     "label": "D",
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470019",
+   "topicId": "mbs_j235",
+   "prompt": "若 x＝5、y＝2 是方程 kx－y＝13 的解，则 k 的值是多少",
+   "question": "若 x＝5、y＝2 是方程 kx－y＝13 的解，则 k 的值是多少",
+   "answer": "3",
+   "type": "numeric",
+   "difficulty": "basic",
+   "explanation": "把 x＝5、y＝2 代入得 5k－2＝13，移项得 5k＝15，所以 k＝3。代回检验 3×5－2＝13，等式成立。",
+   "verify": "(13+2)/5"
+  },
+  {
+   "id": "mbs_q470020",
+   "topicId": "mbs_j235",
+   "prompt": "方程组 x＋y＝8 与 x－y＝2 的解是____",
+   "question": "方程组 x＋y＝8 与 x－y＝2 的解是____",
+   "answer": "x＝5，y＝3",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "两式相加得 2x＝10，所以 x＝5，再代入 x＋y＝8 得 y＝3。也可以先相减求出 y＝3 再求 x，两种顺序结果相同，写答案时两个未知数都要写出。"
+  },
+  {
+   "id": "mbs_q470021",
+   "topicId": "mbs_j235",
+   "prompt": "若 x、y 互为相反数，且满足 3x＋2y＝12，则 x 的值是多少",
+   "question": "若 x、y 互为相反数，且满足 3x＋2y＝12，则 x 的值是多少",
+   "answer": "12",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "互为相反数说明 y＝－x，代入得 3x－2x＝12，即 x＝12，此时 y＝－12。把相反数关系写成 y＝－x 是本题的入口，代入后一元一次方程很容易解。",
+   "verify": "6*2"
+  },
+  {
+   "id": "mbs_q470022",
+   "topicId": "mbs_j235",
+   "prompt": "若方程组 2x＋y＝5 与 x－y＝1 的解也是方程 kx＋2y＝8 的解，则 k＝____",
+   "question": "若方程组 2x＋y＝5 与 x－y＝1 的解也是方程 kx＋2y＝8 的解，则 k＝____",
+   "answer": "3",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "先解方程组：两式相加得 3x＝6，x＝2，代回得 y＝1。再把这组解代入 kx＋2y＝8，得 2k＋2＝8，所以 k＝3，代回检验 3×2＋2×1＝8 成立。"
+  },
+  {
+   "id": "mbs_q470023",
+   "topicId": "mbs_j235",
+   "prompt": "方程组 x＋y＝5 与 x－y＝1 的解，也是方程组 ax＋by＝3 与 bx＋ay＝7 的解，则 a－b 的值是（ ）",
+   "question": "方程组 x＋y＝5 与 x－y＝1 的解，也是方程组 ax＋by＝3 与 bx＋ay＝7 的解，则 a－b 的值是（ ）",
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "hard",
+   "explanation": "先解得 x＝3、y＝2，代入两个含 a、b 的方程得 3a＋2b＝3 与 3b＋2a＝7。两式相减，左边为 a－b，右边为 3－7＝－4，不必分别求出 a 与 b。",
+   "options": [
+    {
+     "label": "A",
+     "text": "－4"
+    },
+    {
+     "label": "B",
+     "text": "4"
+    },
+    {
+     "label": "C",
+     "text": "－2"
+    },
+    {
+     "label": "D",
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470024",
+   "topicId": "mbs_j235",
+   "prompt": "已知 x＝4、y＝3 是方程组 ax＋y＝11 与 x－by＝1 的解，求 a、b 的值，并检验。",
+   "question": "已知 x＝4、y＝3 是方程组 ax＋y＝11 与 x－by＝1 的解，求 a、b 的值，并检验。",
+   "answer": "a＝2，b＝1；代回检验 2×4＋3＝11 与 4－1×3＝1 都成立。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "把 x＝4、y＝3 代入第一个方程得 4a＋3＝11，所以 a＝2；代入第二个方程得 4－3b＝1，所以 b＝1。最后把 a、b 与 x、y 一起代回两个方程检验，两个等式都成立才算完成。",
+   "keypoints": [
+    "把 x＝4、y＝3 代入第一个方程求 a",
+    "把同一组值代入第二个方程求 b",
+    "代回两个方程检验"
+   ]
+  },
+  {
+   "id": "mbs_q470025",
+   "topicId": "mbs_j236",
+   "prompt": "甲、乙两数的和是 20，甲数比乙数大 4。若设甲数为 x、乙数为 y，则列出的方程组是（ ）",
+   "question": "甲、乙两数的和是 20，甲数比乙数大 4。若设甲数为 x、乙数为 y，则列出的方程组是（ ）",
+   "answer": "B",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "和是 20 得 x＋y＝20，甲比乙大 4 得 x－y＝4。选项 B 把大小关系写反，C 把两个条件对调了位置，D 重复写同一个等式，都没有如实反映题意。",
+   "options": [
+    {
+     "label": "A",
+     "text": "x＋y＝20 与 y－x＝4"
+    },
+    {
+     "label": "B",
+     "text": "x＋y＝20 与 x－y＝4"
+    },
+    {
+     "label": "C",
+     "text": "x－y＝20 与 x＋y＝4"
+    },
+    {
+     "label": "D",
+     "text": "x＋y＝20 与 x＋y＝4"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470026",
+   "topicId": "mbs_j236",
+   "prompt": "若 x＝3、y＝2 是方程 ax＋y＝8 的解，则 a 的值是多少",
+   "question": "若 x＝3、y＝2 是方程 ax＋y＝8 的解，则 a 的值是多少",
+   "answer": "2",
+   "type": "numeric",
+   "difficulty": "basic",
+   "explanation": "把 x＝3、y＝2 代入得 3a＋2＝8，移项得 3a＝6，所以 a＝2。代回检验 2×3＋2＝8，等式成立。",
+   "verify": "(8-2)/3"
+  },
+  {
+   "id": "mbs_q470027",
+   "topicId": "mbs_j236",
+   "prompt": "某班有男生 x 人、女生 y 人，全班共 45 人，则列出的方程是____",
+   "question": "某班有男生 x 人、女生 y 人，全班共 45 人，则列出的方程是____",
+   "answer": "x＋y＝45",
+   "type": "fill",
+   "difficulty": "basic",
+   "explanation": "男生人数与女生人数之和就是全班人数，所以得 x＋y＝45。列方程时要把题中的「共」「合计」对应到加法，把「多」「少」对应到减法。"
+  },
+  {
+   "id": "mbs_q470028",
+   "topicId": "mbs_j236",
+   "prompt": "一个两位数，十位数字是 x，个位数字是 y。把这个两位数的两个数字交换位置后，所得的数与原数之和是 132，则列出的方程是（ ）",
+   "question": "一个两位数，十位数字是 x，个位数字是 y。把这个两位数的两个数字交换位置后，所得的数与原数之和是 132，则列出的方程是（ ）",
+   "answer": "C",
+   "type": "choice",
+   "difficulty": "standard",
+   "explanation": "原数是 10x＋y，交换后是 10y＋x，相加得 11x＋11y，所以方程是 11x＋11y＝132。只写原数会漏掉交换后的数，两个数相减才得 9x－9y。",
+   "options": [
+    {
+     "label": "A",
+     "text": "10x＋y＝132"
+    },
+    {
+     "label": "B",
+     "text": "9x－9y＝132"
+    },
+    {
+     "label": "C",
+     "text": "11x＋11y＝132"
+    },
+    {
+     "label": "D",
+     "text": "10x＋10y＝132"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470029",
+   "topicId": "mbs_j236",
+   "prompt": "鸡兔同笼，共有 10 个头、28 条腿。若设鸡 x 只、兔 y 只，则 x 的值是多少",
+   "question": "鸡兔同笼，共有 10 个头、28 条腿。若设鸡 x 只、兔 y 只，则 x 的值是多少",
+   "answer": "6",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "由 x＋y＝10 与 2x＋4y＝28 化简第二个方程得 x＋2y＝14，两式相减得 y＝4，所以 x＝6。代回检验 2×6＋4×4＝28，腿数吻合。",
+   "verify": "10-(28-2*10)/2"
+  },
+  {
+   "id": "mbs_q470030",
+   "topicId": "mbs_j236",
+   "prompt": "某文具店钢笔每支 8 元、笔记本每本 3 元。小明买了钢笔和笔记本共 9 件，共花 47 元。请设未知数并列出方程组，不必求解。",
+   "question": "某文具店钢笔每支 8 元、笔记本每本 3 元。小明买了钢笔和笔记本共 9 件，共花 47 元。请设未知数并列出方程组，不必求解。",
+   "answer": "设钢笔 x 支、笔记本 y 本，则 x＋y＝9 与 8x＋3y＝47。",
+   "type": "short-answer",
+   "difficulty": "standard",
+   "explanation": "两个等量关系分别是「共 9 件」与「共花 47 元」。件数直接相加得第一个方程，金额等于单价乘数量，所以第二个方程是 8x＋3y＝47，两个方程合起来就是所求的方程组。",
+   "keypoints": [
+    "设钢笔 x 支、笔记本 y 本",
+    "由件数列 x＋y＝9",
+    "由总价列 8x＋3y＝47"
+   ]
+  },
+  {
+   "id": "mbs_q470031",
+   "topicId": "mbs_j236",
+   "prompt": "用 1 元和 5 元的纸币共 20 张，合计 52 元。设 1 元纸币 x 张、5 元纸币 y 张，则列出的方程组是（ ）",
+   "question": "用 1 元和 5 元的纸币共 20 张，合计 52 元。设 1 元纸币 x 张、5 元纸币 y 张，则列出的方程组是（ ）",
+   "answer": "D",
+   "type": "choice",
+   "difficulty": "hard",
+   "explanation": "张数关系是 x＋y＝20，金额关系是 1×x＋5×y＝52。选项 B 把张数与金额对调，C 把面值乘到了错误的未知数上，D 把张数的加法写成了减法。",
+   "options": [
+    {
+     "label": "A",
+     "text": "x＋y＝52 与 x＋5y＝20"
+    },
+    {
+     "label": "B",
+     "text": "x＋y＝20 与 5x＋y＝52"
+    },
+    {
+     "label": "C",
+     "text": "x－y＝20 与 x＋5y＝52"
+    },
+    {
+     "label": "D",
+     "text": "x＋y＝20 与 x＋5y＝52"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470032",
+   "topicId": "mbs_j236",
+   "prompt": "甲、乙两人共存款 500 元。甲取出自己存款的十分之一后，两人的存款恰好相等。设甲存款 x 元、乙存款 y 元，请列出方程组并说明每个方程的由来。",
+   "question": "甲、乙两人共存款 500 元。甲取出自己存款的十分之一后，两人的存款恰好相等。设甲存款 x 元、乙存款 y 元，请列出方程组并说明每个方程的由来。",
+   "answer": "x＋y＝500 与 0.9x＝y：前者由存款总数得到，后者由甲取出十分之一后与乙相等得到。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "总数 500 元给出第一个方程。甲取出自己存款的十分之一，剩下的就是原来的十分之九，即 0.9x，此时与乙的存款 y 相等，所以 0.9x＝y。两个方程分别对应总数关系与相等关系。",
+   "keypoints": [
+    "由存款总数列 x＋y＝500",
+    "甲取出十分之一后剩 0.9x，与 y 相等",
+    "说明两个方程分别对应总数与相等关系"
+   ]
+  },
+  {
+   "id": "mbs_q470033",
+   "topicId": "mbs_j237",
+   "prompt": "解二元一次方程组的基本思路是（ ）",
+   "question": "解二元一次方程组的基本思路是（ ）",
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "消元思想是把两个未知数化成一个未知数，先解一元一次方程，再回代求另一个未知数。图象法只是表示方程组解的另一种方式，试值法在解不是整数时也无法穷尽。",
+   "options": [
+    {
+     "label": "A",
+     "text": "通过消元，把二元转化为一元"
+    },
+    {
+     "label": "B",
+     "text": "画出图象找交点"
+    },
+    {
+     "label": "C",
+     "text": "逐一试出所有的解"
+    },
+    {
+     "label": "D",
+     "text": "把两个方程直接相乘"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470034",
+   "topicId": "mbs_j237",
+   "prompt": "用代入法解方程组 y＝x＋3 与 2x＋y＝9 时，把 y＝x＋3 代入第二个方程，得到的方程是（ ）",
+   "question": "用代入法解方程组 y＝x＋3 与 2x＋y＝9 时，把 y＝x＋3 代入第二个方程，得到的方程是（ ）",
+   "answer": "B",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "把第二个方程中的 y 整体换成 x＋3，得 2x＋(x＋3)＝9。选项 B 把等号右边的 9 写成了 0，C 没有真正完成替换，D 把常数项的符号写错了。",
+   "options": [
+    {
+     "label": "A",
+     "text": "2x＋x＋3＝0"
+    },
+    {
+     "label": "B",
+     "text": "2x＋x＋3＝9"
+    },
+    {
+     "label": "C",
+     "text": "2(x＋3)＋y＝9"
+    },
+    {
+     "label": "D",
+     "text": "2x＋x－3＝9"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470035",
+   "topicId": "mbs_j237",
+   "prompt": "把方程 x－2y＝3 变形为用含 y 的式子表示 x，所得式子中 y 的系数是多少",
+   "question": "把方程 x－2y＝3 变形为用含 y 的式子表示 x，所得式子中 y 的系数是多少",
+   "answer": "2",
+   "type": "numeric",
+   "difficulty": "basic",
+   "explanation": "移项得 x＝3＋2y，所以 y 的系数是 2。－2y 移到等号右边变为 ＋2y，符号变化是本题的易错点，写成 x＝3－2y 就错了。",
+   "verify": "1+1"
+  },
+  {
+   "id": "mbs_q470036",
+   "topicId": "mbs_j237",
+   "prompt": "方程组 2x＋3y＝12 与 2x－y＝4 中，把两个方程相减可以消去 x，得到关于 y 的方程是____",
+   "question": "方程组 2x＋3y＝12 与 2x－y＝4 中，把两个方程相减可以消去 x，得到关于 y 的方程是____",
+   "answer": "4y＝8",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "两式相减，左边是 (2x＋3y)－(2x－y)＝4y，右边是 12－4＝8，所以得 4y＝8。相减时要把第二个方程的每一项都变号，否则会写成 2y＝8。"
+  },
+  {
+   "id": "mbs_q470037",
+   "topicId": "mbs_j237",
+   "prompt": "用代入法解方程组 y＝2x 与 x＋y＝9，则 x 的值是多少",
+   "question": "用代入法解方程组 y＝2x 与 x＋y＝9，则 x 的值是多少",
+   "answer": "3",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "把 y＝2x 代入 x＋y＝9，得 3x＝9，所以 x＝3，进而 y＝6。代回检验 3＋6＝9，两个方程同时成立。",
+   "verify": "9/3"
+  },
+  {
+   "id": "mbs_q470038",
+   "topicId": "mbs_j237",
+   "prompt": "已知 3x－2y＝5，用含 x 的代数式表示 y，结果是 y＝____",
+   "question": "已知 3x－2y＝5，用含 x 的代数式表示 y，结果是 y＝____",
+   "answer": "1.5x－2.5",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "由 3x－2y＝5 得 2y＝3x－5，两边同除以 2 得 y＝1.5x－2.5，也可以写成 y＝(3x－5)/2。除以 2 时右边的两项都要除，只除一项是常见错误。"
+  },
+  {
+   "id": "mbs_q470039",
+   "topicId": "mbs_j237",
+   "prompt": "解方程组 3x＋2y＝13 与 5x－2y＝11 时，最简便的做法是（ ）",
+   "question": "解方程组 3x＋2y＝13 与 5x－2y＝11 时，最简便的做法是（ ）",
+   "answer": "C",
+   "type": "choice",
+   "difficulty": "hard",
+   "explanation": "两个方程中 y 的系数是 2 与 －2，互为相反数，直接相加即可消去 y 得 8x＝24。相减消不去 y，相乘会让系数变得很大，代入法则要多做一步变形。",
+   "options": [
+    {
+     "label": "A",
+     "text": "两式相减，先消去 x"
+    },
+    {
+     "label": "B",
+     "text": "由第一个方程解出 x 再代入"
+    },
+    {
+     "label": "C",
+     "text": "两式相加，先消去 y"
+    },
+    {
+     "label": "D",
+     "text": "两式相乘后相减"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470040",
+   "topicId": "mbs_j237",
+   "prompt": "解方程组 x＋2y＝7 与 2x＋4y＝14 时，小明把第一个方程两边同乘 2 后与第二个方程比较。他发现了什么？这个方程组有多少个解？",
+   "question": "解方程组 x＋2y＝7 与 2x＋4y＝14 时，小明把第一个方程两边同乘 2 后与第二个方程比较。他发现了什么？这个方程组有多少个解？",
+   "answer": "乘 2 后得到 2x＋4y＝14，与第二个方程完全相同，两个方程同解，方程组有无数个解。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "第一个方程两边乘 2 后与第二个方程一模一样，说明两个方程表示同一个关系。凡是满足 x＋2y＝7 的数对都是解，所以解有无数个；用加减消元会出现 0＝0 的恒等式，这正是无数解的标志。",
+   "keypoints": [
+    "第一个方程两边乘 2 得 2x＋4y＝14",
+    "与第二个方程完全相同，两方程同解",
+    "消元出现 0＝0，方程组有无数个解"
+   ]
+  },
+  {
+   "id": "mbs_q470041",
+   "topicId": "mbs_j238",
+   "prompt": "用代入法解方程组 y＝3x－1 与 2x＋y＝9，代入后得到的方程是（ ）",
+   "question": "用代入法解方程组 y＝3x－1 与 2x＋y＝9，代入后得到的方程是（ ）",
+   "answer": "D",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "把 y＝3x－1 代入第二个方程，得 2x＋(3x－1)＝9。选项 B 把常数项符号写错，C 把等号右边的 9 写成了 0，D 没有完成替换，y 仍然留在式子里。",
+   "options": [
+    {
+     "label": "A",
+     "text": "2x＋3x＋1＝9"
+    },
+    {
+     "label": "B",
+     "text": "2x＋3x－1＝0"
+    },
+    {
+     "label": "C",
+     "text": "2(3x－1)＋y＝9"
+    },
+    {
+     "label": "D",
+     "text": "2x＋3x－1＝9"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470042",
+   "topicId": "mbs_j238",
+   "prompt": "方程组 y＝x＋2 与 2x＋y＝8 的解中 x 的值是多少",
+   "question": "方程组 y＝x＋2 与 2x＋y＝8 的解中 x 的值是多少",
+   "answer": "2",
+   "type": "numeric",
+   "difficulty": "basic",
+   "explanation": "把 y＝x＋2 代入 2x＋y＝8，得 2x＋x＋2＝8，即 3x＝6，所以 x＝2，y＝4。代回检验 4＋4＝8，两个方程都成立。",
+   "verify": "(8-2)/3"
+  },
+  {
+   "id": "mbs_q470043",
+   "topicId": "mbs_j238",
+   "prompt": "方程组 x＝2y 与 x＋y＝9 的解是____",
+   "question": "方程组 x＝2y 与 x＋y＝9 的解是____",
+   "answer": "x＝6，y＝3",
+   "type": "fill",
+   "difficulty": "basic",
+   "explanation": "把 x＝2y 代入 x＋y＝9，得 3y＝9，所以 y＝3，再求 x＝6。代回检验 6＋3＝9，6＝2×3，两个方程都成立。"
+  },
+  {
+   "id": "mbs_q470044",
+   "topicId": "mbs_j238",
+   "prompt": "方程组 x＋y＝5 与 2x－y＝4 的解是（ ）",
+   "question": "方程组 x＋y＝5 与 2x－y＝4 的解是（ ）",
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "standard",
+   "explanation": "两式相加得 3x＝9，x＝3，代回得 y＝2。把选项 B 代入第二个方程得 4－3＝1，不等于 4；C 得 8－1＝7；D 得 2－4＝－2，都不成立。",
+   "options": [
+    {
+     "label": "A",
+     "text": "x＝3，y＝2"
+    },
+    {
+     "label": "B",
+     "text": "x＝2，y＝3"
+    },
+    {
+     "label": "C",
+     "text": "x＝4，y＝1"
+    },
+    {
+     "label": "D",
+     "text": "x＝1，y＝4"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470045",
+   "topicId": "mbs_j238",
+   "prompt": "方程组 2x＋3y＝12 与 x＝y＋1 的解中 y 的值是多少",
+   "question": "方程组 2x＋3y＝12 与 x＝y＋1 的解中 y 的值是多少",
+   "answer": "2",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "把 x＝y＋1 代入第一个方程，得 2(y＋1)＋3y＝12，即 5y＋2＝12，所以 y＝2，x＝3。代回检验 6＋6＝12，等式成立。",
+   "verify": "(12-2)/5"
+  },
+  {
+   "id": "mbs_q470046",
+   "topicId": "mbs_j238",
+   "prompt": "用代入消元法解方程组 x＋3y＝7 与 2x－y＝0，写出完整的解题过程。",
+   "question": "用代入消元法解方程组 x＋3y＝7 与 2x－y＝0，写出完整的解题过程。",
+   "answer": "由第二个方程得 y＝2x，代入第一个方程得 7x＝7，所以 x＝1，再回代得 y＝2。",
+   "type": "short-answer",
+   "difficulty": "standard",
+   "explanation": "选择系数较简单的第二个方程变形，把 y 用 x 表示后整体代入另一个方程，得到一元一次方程 x＋6x＝7。求出 x＝1 后必须回代求 y，并检验两个方程都成立。",
+   "keypoints": [
+    "由 2x－y＝0 得 y＝2x",
+    "代入第一个方程得 x＋6x＝7",
+    "解得 x＝1，回代得 y＝2"
+   ]
+  },
+  {
+   "id": "mbs_q470047",
+   "topicId": "mbs_j238",
+   "prompt": "若方程组 3x－y＝5 与 2x＋3y＝18 的解也是方程 kx＋y＝10 的解，则 k 的值是（ ）",
+   "question": "若方程组 3x－y＝5 与 2x＋3y＝18 的解也是方程 kx＋y＝10 的解，则 k 的值是（ ）",
+   "answer": "B",
+   "type": "choice",
+   "difficulty": "hard",
+   "explanation": "由第一个方程得 y＝3x－5，代入第二个方程得 2x＋9x－15＝18，所以 x＝3，y＝4。再代入 kx＋y＝10 得 3k＋4＝10，解得 k＝2。",
+   "options": [
+    {
+     "label": "A",
+     "text": "1"
+    },
+    {
+     "label": "B",
+     "text": "2"
+    },
+    {
+     "label": "C",
+     "text": "－2"
+    },
+    {
+     "label": "D",
+     "text": "4"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470048",
+   "topicId": "mbs_j238",
+   "prompt": "甲、乙两地相距 27 千米，小李从甲地出发每小时走 5 千米，小王从乙地同时出发相向而行每小时走 4 千米。请用代入法求相遇所需时间与小李走的路程。",
+   "question": "甲、乙两地相距 27 千米，小李从甲地出发每小时走 5 千米，小王从乙地同时出发相向而行每小时走 4 千米。请用代入法求相遇所需时间与小李走的路程。",
+   "answer": "设相遇时间为 t 小时、小李走的路程为 s 千米，由 s＝5t 与 s＝27－4t 解得 t＝3，s＝15。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "两人相向而行，小李走的路程与小王走的路程之和等于两地距离 27 千米；小李的路程又可用速度乘时间表示。把 s＝5t 代入 s＝27－4t，得 5t＝27－4t，所以 t＝3 小时，s＝15 千米。",
+   "keypoints": [
+    "设相遇时间 t 小时、小李路程 s 千米",
+    "小李 s＝5t，小王走 27－s＝4t",
+    "联立得 t＝3、s＝15"
+   ]
+  },
+  {
+   "id": "mbs_q470049",
+   "topicId": "mbs_j239",
+   "prompt": "方程组 x＋y＝7 与 x－y＝3 中，两式相加得到的方程是（ ）",
+   "question": "方程组 x＋y＝7 与 x－y＝3 中，两式相加得到的方程是（ ）",
+   "answer": "C",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "左边相加为 (x＋y)＋(x－y)＝2x，右边为 7＋3＝10，所以得 2x＝10。相减才会消去 x 得到关于 y 的方程，相加消去的是 y。",
+   "options": [
+    {
+     "label": "A",
+     "text": "2y＝10"
+    },
+    {
+     "label": "B",
+     "text": "2x＝4"
+    },
+    {
+     "label": "C",
+     "text": "2x＝10"
+    },
+    {
+     "label": "D",
+     "text": "2y＝4"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470050",
+   "topicId": "mbs_j239",
+   "prompt": "解方程组 2x＋y＝5 与 3x－y＝5，最简便的消元方法是（ ）",
+   "question": "解方程组 2x＋y＝5 与 3x－y＝5，最简便的消元方法是（ ）",
+   "answer": "D",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "两个方程中 y 的系数是 1 与 －1，互为相反数，相加即可消去 y 得 5x＝10。相减会把 y 变成 2y＝0，无法消去 y，代入法则要多做一步变形。",
+   "options": [
+    {
+     "label": "A",
+     "text": "两式相减，消去 x"
+    },
+    {
+     "label": "B",
+     "text": "由第一式解出 y 再代入"
+    },
+    {
+     "label": "C",
+     "text": "两式相减，消去 y"
+    },
+    {
+     "label": "D",
+     "text": "两式相加，消去 y"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470051",
+   "topicId": "mbs_j239",
+   "prompt": "方程组 x＋y＝9 与 x－y＝5 的解中 x 的值是多少",
+   "question": "方程组 x＋y＝9 与 x－y＝5 的解中 x 的值是多少",
+   "answer": "7",
+   "type": "numeric",
+   "difficulty": "basic",
+   "explanation": "两式相加得 2x＝14，所以 x＝7，y＝2。代回检验 7＋2＝9 与 7－2＝5，两个方程都成立。",
+   "verify": "(9+5)/2"
+  },
+  {
+   "id": "mbs_q470052",
+   "topicId": "mbs_j239",
+   "prompt": "方程组 4x＋3y＝18 与 4x－3y＝6 的解是____",
+   "question": "方程组 4x＋3y＝18 与 4x－3y＝6 的解是____",
+   "answer": "x＝3，y＝2",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "两式相加得 8x＝24，所以 x＝3。代回第一个方程得 12＋3y＝18，所以 y＝2。代回检验 12－6＝6，第二个方程也成立。"
+  },
+  {
+   "id": "mbs_q470053",
+   "topicId": "mbs_j239",
+   "prompt": "方程组 2x＋5y＝16 与 2x－3y＝0 的解中 y 的值是多少",
+   "question": "方程组 2x＋5y＝16 与 2x－3y＝0 的解中 y 的值是多少",
+   "answer": "2",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "两式相减，左边得 (2x＋5y)－(2x－3y)＝8y，右边得 16－0＝16，所以 y＝2。代入第二个方程得 2x＝6，x＝3。相减时第二个方程每一项都要变号。",
+   "verify": "16/8"
+  },
+  {
+   "id": "mbs_q470054",
+   "topicId": "mbs_j239",
+   "prompt": "若方程组 ax＋y＝5 与 x－y＝1 的解是 x＝3、y＝2，则 a＝____",
+   "question": "若方程组 ax＋y＝5 与 x－y＝1 的解是 x＝3、y＝2，则 a＝____",
+   "answer": "1",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "把 x＝3、y＝2 代入第一个方程得 3a＋2＝5，所以 a＝1。代回检验 3＋2＝5，第一个方程成立；3－2＝1，第二个方程也成立。"
+  },
+  {
+   "id": "mbs_q470055",
+   "topicId": "mbs_j239",
+   "prompt": "已知方程组 3x＋2y＝10 与 2x＋3y＝15，则 x＋y 的值是（ ）",
+   "question": "已知方程组 3x＋2y＝10 与 2x＋3y＝15，则 x＋y 的值是（ ）",
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "hard",
+   "explanation": "两个方程相加得 5x＋5y＝25，两边同除以 5 得 x＋y＝5。本题不必分别求出 x 与 y，整体相加比解出两个未知数更快，也避免计算失误。",
+   "options": [
+    {
+     "label": "A",
+     "text": "5"
+    },
+    {
+     "label": "B",
+     "text": "25"
+    },
+    {
+     "label": "C",
+     "text": "1"
+    },
+    {
+     "label": "D",
+     "text": "－5"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470056",
+   "topicId": "mbs_j239",
+   "prompt": "用加减消元法解方程组 5x－2y＝11 与 3x＋2y＝13，写出完整过程，并说明为什么选择相加。",
+   "question": "用加减消元法解方程组 5x－2y＝11 与 3x＋2y＝13，写出完整过程，并说明为什么选择相加。",
+   "answer": "两式相加得 8x＝24，x＝3，代入得 y＝2，所以解为 x＝3、y＝2；因为 y 的系数互为相反数，相加即可消去 y。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "消元的关键是让某个未知数的系数绝对值相等。这里 y 的系数 2 与 －2 已经互为相反数，直接相加最省力，得 8x＝24。求出 x＝3 后代入任一方程得 y＝2，最后要检验两个方程都成立。",
+   "keypoints": [
+    "y 的系数 2 与 －2 互为相反数，选择相加",
+    "相加得 8x＝24，x＝3",
+    "回代得 y＝2，写出完整解"
+   ]
+  },
+  {
+   "id": "mbs_q470057",
+   "topicId": "mbs_j240",
+   "prompt": "解方程组 2x＋3y＝7 与 3x－2y＝4 时，若想消去 x，可把第一个方程乘 3，第二个方程应乘（ ）",
+   "question": "解方程组 2x＋3y＝7 与 3x－2y＝4 时，若想消去 x，可把第一个方程乘 3，第二个方程应乘（ ）",
+   "answer": "B",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "第一个方程乘 3 得 6x＋9y＝21，要让 x 的系数与它相同，第二个方程应乘 2 得 6x－4y＝8，再相减即消去 x。乘 3 或 6 都无法让 x 的系数对齐。",
+   "options": [
+    {
+     "label": "A",
+     "text": "3"
+    },
+    {
+     "label": "B",
+     "text": "2"
+    },
+    {
+     "label": "C",
+     "text": "6"
+    },
+    {
+     "label": "D",
+     "text": "9"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470058",
+   "topicId": "mbs_j240",
+   "prompt": "方程组 3x＋4y＝10 与 5x－4y＝6 的解中 x 的值是多少",
+   "question": "方程组 3x＋4y＝10 与 5x－4y＝6 的解中 x 的值是多少",
+   "answer": "2",
+   "type": "numeric",
+   "difficulty": "basic",
+   "explanation": "两式相加，y 项抵消，得 8x＝16，所以 x＝2，再代入得 y＝1。代回检验 6＋4＝10 与 10－4＝6，两个方程都成立。",
+   "verify": "16/8"
+  },
+  {
+   "id": "mbs_q470059",
+   "topicId": "mbs_j240",
+   "prompt": "解方程组 2x＋3y＝8 与 4x－3y＝10 时，两式相加可消去 y，得到的方程是____",
+   "question": "解方程组 2x＋3y＝8 与 4x－3y＝10 时，两式相加可消去 y，得到的方程是____",
+   "answer": "6x＝18",
+   "type": "fill",
+   "difficulty": "basic",
+   "explanation": "左边相加得 2x＋4x＝6x，y 项因系数互为相反数而抵消，右边 8＋10＝18，所以得到 6x＝18，进而 x＝3。"
+  },
+  {
+   "id": "mbs_q470060",
+   "topicId": "mbs_j240",
+   "prompt": "方程组 3x＋2y＝12 与 2x＋3y＝13 的解是（ ）",
+   "question": "方程组 3x＋2y＝12 与 2x＋3y＝13 的解是（ ）",
+   "answer": "C",
+   "type": "choice",
+   "difficulty": "standard",
+   "explanation": "两式相减得 x－y＝－1，即 x＝y－1，代入第一个方程得 3(y－1)＋2y＝12，所以 y＝3，x＝2。把选项 B 代入第一个方程得 13，不成立。",
+   "options": [
+    {
+     "label": "A",
+     "text": "x＝3，y＝2"
+    },
+    {
+     "label": "B",
+     "text": "x＝1，y＝4"
+    },
+    {
+     "label": "C",
+     "text": "x＝2，y＝3"
+    },
+    {
+     "label": "D",
+     "text": "x＝4，y＝1"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470061",
+   "topicId": "mbs_j240",
+   "prompt": "已知方程组 4x＋3y＝25 与 4x－3y＝7 的解中 y 的值是多少",
+   "question": "已知方程组 4x＋3y＝25 与 4x－3y＝7 的解中 y 的值是多少",
+   "answer": "3",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "两式相加得 8x＝32，所以 x＝4；代入第一个方程得 16＋3y＝25，3y＝9，所以 y＝3。代回检验 16－9＝7，第二个方程也成立。",
+   "verify": "9/3"
+  },
+  {
+   "id": "mbs_q470062",
+   "topicId": "mbs_j240",
+   "prompt": "用加减消元法解方程组 2x＋3y＝12 与 3x－4y＝1，写出完整过程。",
+   "question": "用加减消元法解方程组 2x＋3y＝12 与 3x－4y＝1，写出完整过程。",
+   "answer": "第一个方程乘 4、第二个方程乘 3，得 8x＋12y＝48 与 9x－12y＝3，相加得 17x＝51，x＝3，回代得 y＝2。",
+   "type": "short-answer",
+   "difficulty": "standard",
+   "explanation": "两个方程中 y 的系数 3 与 －4 绝对值不相等，要先找它们的最小公倍数 12，把两个方程分别乘 4 与 3，使 y 的系数变成 12 与 －12，再相加消去 y。解得 x＝3 后回代求 y＝2。",
+   "keypoints": [
+    "第一个方程乘 4、第二个方程乘 3 对齐 y 的系数",
+    "相加得 17x＝51，x＝3",
+    "回代得 y＝2"
+   ]
+  },
+  {
+   "id": "mbs_q470063",
+   "topicId": "mbs_j240",
+   "prompt": "若方程组 ax＋by＝4 与 bx＋ay＝5 的解是 x＝1、y＝2，则 a＋b 的值是（ ）",
+   "question": "若方程组 ax＋by＝4 与 bx＋ay＝5 的解是 x＝1、y＝2，则 a＋b 的值是（ ）",
+   "answer": "D",
+   "type": "choice",
+   "difficulty": "hard",
+   "explanation": "代入得 a＋2b＝4 与 b＋2a＝5。两式相加得 3a＋3b＝9，两边同除以 3 得 a＋b＝3，不必分别求出 a 与 b。",
+   "options": [
+    {
+     "label": "A",
+     "text": "9"
+    },
+    {
+     "label": "B",
+     "text": "1"
+    },
+    {
+     "label": "C",
+     "text": "4"
+    },
+    {
+     "label": "D",
+     "text": "3"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470064",
+   "topicId": "mbs_j240",
+   "prompt": "解方程组 2(x－1)＋3(y＋2)＝21 与 3(x＋2)－4(y－1)＝10，并说明解这类带括号的方程组的一般步骤。",
+   "question": "解方程组 2(x－1)＋3(y＋2)＝21 与 3(x＋2)－4(y－1)＝10，并说明解这类带括号的方程组的一般步骤。",
+   "answer": "去括号化简得 2x＋3y＝17 与 3x－4y＝0，用加减消元解得 x＝4、y＝3。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "带括号的方程组要先去括号、合并同类项，化成标准形式 2x＋3y＝17 与 3x－4y＝0，再用加减消元。化简时特别注意括号前的负号，它要改变括号内每一项的符号。",
+   "keypoints": [
+    "先去括号并合并同类项",
+    "化为 2x＋3y＝17 与 3x－4y＝0",
+    "消元得 x＝4、y＝3"
+   ]
+  },
+  {
+   "id": "mbs_q470065",
+   "topicId": "mbs_j241",
+   "prompt": "鸡兔同笼，共有 12 个头、32 条腿，则兔有多少只（ ）",
+   "question": "鸡兔同笼，共有 12 个头、32 条腿，则兔有多少只（ ）",
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "设兔 y 只，则鸡 12－y 只，由 4y＋2(12－y)＝32 得 2y＋24＝32，y＝4。此时鸡 8 只，腿数 16＋16＝32，与题设吻合。",
+   "options": [
+    {
+     "label": "A",
+     "text": "4"
+    },
+    {
+     "label": "B",
+     "text": "8"
+    },
+    {
+     "label": "C",
+     "text": "6"
+    },
+    {
+     "label": "D",
+     "text": "5"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470066",
+   "topicId": "mbs_j241",
+   "prompt": "鸡兔同笼共 35 只，设鸡 x 只、兔 y 只，根据头数关系列出的方程是（ ）",
+   "question": "鸡兔同笼共 35 只，设鸡 x 只、兔 y 只，根据头数关系列出的方程是（ ）",
+   "answer": "B",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "每只鸡、每只兔都只有一个头，所以头数等于只数之和，得 x＋y＝35。2x＋4y 表示的是腿数，不能与头数混用，写成等于 70 则把只数翻了一倍。",
+   "options": [
+    {
+     "label": "A",
+     "text": "x－y＝35"
+    },
+    {
+     "label": "B",
+     "text": "x＋y＝35"
+    },
+    {
+     "label": "C",
+     "text": "2x＋4y＝35"
+    },
+    {
+     "label": "D",
+     "text": "x＋y＝70"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470067",
+   "topicId": "mbs_j241",
+   "prompt": "鸡兔同笼共有 20 个头、56 条腿，鸡有多少只",
+   "question": "鸡兔同笼共有 20 个头、56 条腿，鸡有多少只",
+   "answer": "12",
+   "type": "numeric",
+   "difficulty": "basic",
+   "explanation": "若全是鸡只有 40 条腿，实际多出 16 条，每只兔比鸡多 2 条腿，所以兔有 8 只，鸡有 12 只。也可设未知数列方程组求解，答案相同。",
+   "verify": "20-(56-2*20)/2"
+  },
+  {
+   "id": "mbs_q470068",
+   "topicId": "mbs_j241",
+   "prompt": "鸡兔同笼，头共 15 个、腿共 40 条，则兔有____只",
+   "question": "鸡兔同笼，头共 15 个、腿共 40 条，则兔有____只",
+   "answer": "5",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "设兔 y 只、鸡 15－y 只，由 4y＋2(15－y)＝40 得 2y＋30＝40，所以 y＝5。此时鸡 10 只，腿数 20＋20＝40，检验成立。"
+  },
+  {
+   "id": "mbs_q470069",
+   "topicId": "mbs_j241",
+   "prompt": "《孙子算经》记载鸡兔同笼，上有 35 头，下有 94 足，兔有多少只",
+   "question": "《孙子算经》记载鸡兔同笼，上有 35 头，下有 94 足，兔有多少只",
+   "answer": "12",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "若全是鸡有 70 足，实际多 24 足，每只兔比鸡多 2 足，所以兔有 12 只、鸡有 23 只。代回检验 2×23＋4×12＝46＋48＝94。",
+   "verify": "(94-2*35)/2"
+  },
+  {
+   "id": "mbs_q470070",
+   "topicId": "mbs_j241",
+   "prompt": "鸡兔同笼共 30 只，腿共 80 条，则鸡有____只",
+   "question": "鸡兔同笼共 30 只，腿共 80 条，则鸡有____只",
+   "answer": "20",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "设鸡 x 只，则 2x＋4(30－x)＝80，化简得 120－2x＝80，所以 x＝20。此时兔 10 只，腿数 40＋40＝80，与题设一致。"
+  },
+  {
+   "id": "mbs_q470071",
+   "topicId": "mbs_j241",
+   "prompt": "鸡兔同笼，鸡比兔多 5 只，共有腿 70 条，则兔有多少只（ ）",
+   "question": "鸡兔同笼，鸡比兔多 5 只，共有腿 70 条，则兔有多少只（ ）",
+   "answer": "C",
+   "type": "choice",
+   "difficulty": "hard",
+   "explanation": "设兔 y 只，则鸡 y＋5 只，由 4y＋2(y＋5)＝70 得 6y＋10＝70，所以 y＝10。此时鸡 15 只，腿数 40＋30＝70，检验成立。",
+   "options": [
+    {
+     "label": "A",
+     "text": "15"
+    },
+    {
+     "label": "B",
+     "text": "8"
+    },
+    {
+     "label": "C",
+     "text": "10"
+    },
+    {
+     "label": "D",
+     "text": "12"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470072",
+   "topicId": "mbs_j241",
+   "prompt": "鸡兔同笼，头共 25 个、腿共 66 条。请设未知数、列方程组求解，并说明这个方程组为什么只有一组解。",
+   "question": "鸡兔同笼，头共 25 个、腿共 66 条。请设未知数、列方程组求解，并说明这个方程组为什么只有一组解。",
+   "answer": "设鸡 x 只、兔 y 只，由 x＋y＝25 与 2x＋4y＝66 解得 x＝17、y＝8；两方程中同类项系数不成比例，所以只有一组解。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "头数与腿数给出两个独立条件，化简第二个方程得 x＋2y＝33，与 x＋y＝25 相减得 y＝8，再得 x＝17。两个方程中 x、y 的系数比不同，直线只有一个交点，因此方程组只有唯一解。",
+   "keypoints": [
+    "设鸡 x 只、兔 y 只",
+    "由头数列 x＋y＝25，由腿数列 2x＋4y＝66",
+    "解得 x＝17、y＝8 并说明唯一解的理由"
+   ]
+  },
+  {
+   "id": "mbs_q470073",
+   "topicId": "mbs_j242",
+   "prompt": "《九章算术》盈不足问题：几人合买一物，每人出 8 钱则多 3 钱，每人出 7 钱则少 4 钱。设人数 x、物价 y 钱，则方程组是（ ）",
+   "question": "《九章算术》盈不足问题：几人合买一物，每人出 8 钱则多 3 钱，每人出 7 钱则少 4 钱。设人数 x、物价 y 钱，则方程组是（ ）",
+   "answer": "D",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "每人出 8 钱时总额 8x 比物价多 3，得 8x－y＝3；每人出 7 钱时总额比物价少 4，得 y－7x＝4。两个方程一个减一个加，正是「盈」与「不足」的区别。",
+   "options": [
+    {
+     "label": "A",
+     "text": "8x－y＝3 与 7x－y＝4"
+    },
+    {
+     "label": "B",
+     "text": "8x＋y＝3 与 y－7x＝4"
+    },
+    {
+     "label": "C",
+     "text": "8x－y＝3 与 y－7x＝－4"
+    },
+    {
+     "label": "D",
+     "text": "8x－y＝3 与 y－7x＝4"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470074",
+   "topicId": "mbs_j242",
+   "prompt": "上题中合买的人数是多少人",
+   "question": "上题中合买的人数是多少人",
+   "answer": "7",
+   "type": "numeric",
+   "difficulty": "basic",
+   "explanation": "把两个方程相加，y 项抵消，得 x＝7，即合买的有 7 人。代回第一个方程得物价 8×7－3＝53 钱，再用第二个方程检验 53－49＝4。",
+   "verify": "(3+4)/(8-7)"
+  },
+  {
+   "id": "mbs_q470075",
+   "topicId": "mbs_j242",
+   "prompt": "上题中该物品的价钱是____钱",
+   "question": "上题中该物品的价钱是____钱",
+   "answer": "53",
+   "type": "fill",
+   "difficulty": "basic",
+   "explanation": "由 8x－y＝3 与 x＝7 得 y＝8×7－3＝53。用第二个条件检验：每人出 7 钱共 49 钱，比 53 钱少 4 钱，与题设「不足四钱」吻合。"
+  },
+  {
+   "id": "mbs_q470076",
+   "topicId": "mbs_j242",
+   "prompt": "古题：几人合买一鸡，每人出 9 钱则多 11 钱，每人出 6 钱则少 16 钱，则人数是（ ）",
+   "question": "古题：几人合买一鸡，每人出 9 钱则多 11 钱，每人出 6 钱则少 16 钱，则人数是（ ）",
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "standard",
+   "explanation": "由 9x－y＝11 与 y－6x＝16，两式相加得 3x＝27，所以 x＝9，即 9 人。鸡价为 9×9－11＝70 钱，用 6×9＋16＝70 检验也成立。",
+   "options": [
+    {
+     "label": "A",
+     "text": "9"
+    },
+    {
+     "label": "B",
+     "text": "8"
+    },
+    {
+     "label": "C",
+     "text": "10"
+    },
+    {
+     "label": "D",
+     "text": "12"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470077",
+   "topicId": "mbs_j242",
+   "prompt": "上题中这只鸡的价钱是多少钱",
+   "question": "上题中这只鸡的价钱是多少钱",
+   "answer": "70",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "把 x＝9 代入 9x－y＝11，得 81－y＝11，所以 y＝70。用第二个条件检验：每人出 6 钱共 54 钱，比 70 钱少 16 钱，与题设吻合。",
+   "verify": "9*9-11"
+  },
+  {
+   "id": "mbs_q470078",
+   "topicId": "mbs_j242",
+   "prompt": "《孙子算经》题：今有兽六首四足，禽四首二足，上有七十六首，下有四十六足。设兽 x 只、禽 y 只，列出方程组并求解。",
+   "question": "《孙子算经》题：今有兽六首四足，禽四首二足，上有七十六首，下有四十六足。设兽 x 只、禽 y 只，列出方程组并求解。",
+   "answer": "由 6x＋4y＝76 与 4x＋2y＝46 解得 x＝8、y＝7。",
+   "type": "short-answer",
+   "difficulty": "standard",
+   "explanation": "兽每只有 6 头 4 足，禽每只有 4 头 2 足，按头数与足数分别列两个方程。把第二个方程两边除以 2 得 2x＋y＝23，即 y＝23－2x，代入第一个方程得 6x＋92－8x＝76，所以 x＝8、y＝7。",
+   "keypoints": [
+    "由头数列 6x＋4y＝76",
+    "由足数列 4x＋2y＝46",
+    "化简求解得 x＝8、y＝7"
+   ]
+  },
+  {
+   "id": "mbs_q470079",
+   "topicId": "mbs_j242",
+   "prompt": "用绳子量井深：绳三折来量，井外余 4 尺；绳四折来量，井外余 1 尺。设绳长 x 尺、井深 y 尺，则（ ）",
+   "question": "用绳子量井深：绳三折来量，井外余 4 尺；绳四折来量，井外余 1 尺。设绳长 x 尺、井深 y 尺，则（ ）",
+   "answer": "B",
+   "type": "choice",
+   "difficulty": "hard",
+   "explanation": "三折时每折长 x/3，井外余 4 尺，得 x/3－4＝y；四折时 x/4－1＝y。两式相减得 x/12＝3，所以 x＝36、y＝8。检验 12－4＝8、9－1＝8，都等于井深。",
+   "options": [
+    {
+     "label": "A",
+     "text": "绳长 24 尺、井深 4 尺"
+    },
+    {
+     "label": "B",
+     "text": "绳长 36 尺、井深 8 尺"
+    },
+    {
+     "label": "C",
+     "text": "绳长 36 尺、井深 12 尺"
+    },
+    {
+     "label": "D",
+     "text": "绳长 48 尺、井深 8 尺"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470080",
+   "topicId": "mbs_j242",
+   "prompt": "《九章算术》题：甲若得乙钱的一半，则有 50 钱；乙若得甲钱的三分之一，也有 50 钱。求甲、乙原来各有多少钱。",
+   "question": "《九章算术》题：甲若得乙钱的一半，则有 50 钱；乙若得甲钱的三分之一，也有 50 钱。求甲、乙原来各有多少钱。",
+   "answer": "设甲有 x 钱、乙有 y 钱，由 x＋y/2＝50 与 y＋x/3＝50 解得 x＝30、y＝40。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "「甲得乙钱的一半」表示甲的原有存款加上乙的一半等于 50，所以第一个方程是 x＋y/2＝50；同理第二个方程是 y＋x/3＝50。把第一式化为 x＝50－y/2 代入第二式，得 y＝40，再求 x＝30。",
+   "keypoints": [
+    "设甲 x 钱、乙 y 钱",
+    "列 x＋y/2＝50 与 y＋x/3＝50",
+    "解得 x＝30、y＝40"
+   ]
+  },
+  {
+   "id": "mbs_q470081",
+   "topicId": "mbs_j243",
+   "prompt": "篮球比赛胜一场得 2 分、负一场得 1 分。某队比赛 10 场共得 16 分，则胜的场数是（ ）",
+   "question": "篮球比赛胜一场得 2 分、负一场得 1 分。某队比赛 10 场共得 16 分，则胜的场数是（ ）",
+   "answer": "C",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "设胜 x 场，则负 10－x 场，由 2x＋(10－x)＝16 得 x＋10＝16，所以 x＝6。此时胜 6 场、负 4 场，得分 12＋4＝16，检验成立。",
+   "options": [
+    {
+     "label": "A",
+     "text": "4"
+    },
+    {
+     "label": "B",
+     "text": "5"
+    },
+    {
+     "label": "C",
+     "text": "6"
+    },
+    {
+     "label": "D",
+     "text": "8"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470082",
+   "topicId": "mbs_j243",
+   "prompt": "甲商品每件 8 元、乙商品每件 5 元，共买 11 件花了 73 元。设甲 x 件、乙 y 件，则关于金额的方程是（ ）",
+   "question": "甲商品每件 8 元、乙商品每件 5 元，共买 11 件花了 73 元。设甲 x 件、乙 y 件，则关于金额的方程是（ ）",
+   "answer": "D",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "金额等于单价乘数量，甲的金额是 8x，乙的金额是 5y，合计 73 元，所以方程是 8x＋5y＝73。选项 B 把两种商品的单价对调，C 把件数当成了金额。",
+   "options": [
+    {
+     "label": "A",
+     "text": "5x＋8y＝73"
+    },
+    {
+     "label": "B",
+     "text": "8x＋5y＝11"
+    },
+    {
+     "label": "C",
+     "text": "x＋y＝73"
+    },
+    {
+     "label": "D",
+     "text": "8x＋5y＝73"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470083",
+   "topicId": "mbs_j243",
+   "prompt": "上题中乙商品一共买了多少件",
+   "question": "上题中乙商品一共买了多少件",
+   "answer": "5",
+   "type": "numeric",
+   "difficulty": "basic",
+   "explanation": "由 x＋y＝11 与 8x＋5y＝73，把 y＝11－x 代入得 8x＋55－5x＝73，3x＝18，x＝6，所以 y＝5。检验 48＋25＝73，金额吻合。",
+   "verify": "11-6"
+  },
+  {
+   "id": "mbs_q470084",
+   "topicId": "mbs_j243",
+   "prompt": "足球比赛胜一场得 3 分、平一场得 1 分、负一场得 0 分。某队比赛 12 场，负 2 场，共得 20 分，则胜____场",
+   "question": "足球比赛胜一场得 3 分、平一场得 1 分、负一场得 0 分。某队比赛 12 场，负 2 场，共得 20 分，则胜____场",
+   "answer": "5",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "除去 2 场负，胜与平共 10 场。设胜 x 场，则平 10－x 场，由 3x＋(10－x)＝20 得 2x＝10，所以 x＝5。检验 15＋5＝20，得分吻合。"
+  },
+  {
+   "id": "mbs_q470085",
+   "topicId": "mbs_j243",
+   "prompt": "某班 40 名学生参加植树，男生每人植 3 棵、女生每人植 2 棵，共植树 105 棵。男生有多少人",
+   "question": "某班 40 名学生参加植树，男生每人植 3 棵、女生每人植 2 棵，共植树 105 棵。男生有多少人",
+   "answer": "25",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "设男生 x 人，则女生 40－x 人，由 3x＋2(40－x)＝105 得 x＋80＝105，所以 x＝25。检验 75＋30＝105，植树总数吻合。",
+   "verify": "105-2*40"
+  },
+  {
+   "id": "mbs_q470086",
+   "topicId": "mbs_j243",
+   "prompt": "成人票每张 30 元、学生票每张 15 元。某场演出共售出 200 张票，收入 5250 元，则学生票售出____张",
+   "question": "成人票每张 30 元、学生票每张 15 元。某场演出共售出 200 张票，收入 5250 元，则学生票售出____张",
+   "answer": "50",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "设学生票 s 张，则成人票 200－s 张，由 15s＋30(200－s)＝5250 得 6000－15s＝5250，所以 s＝50。检验 750＋4500＝5250，收入吻合。"
+  },
+  {
+   "id": "mbs_q470087",
+   "topicId": "mbs_j243",
+   "prompt": "某次知识竞赛共 20 题，答对一题得 5 分，答错或不答扣 2 分。小明得 79 分，则他答对了（ ）题",
+   "question": "某次知识竞赛共 20 题，答对一题得 5 分，答错或不答扣 2 分。小明得 79 分，则他答对了（ ）题",
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "hard",
+   "explanation": "设答对 x 题，则答错或不答 20－x 题，由 5x－2(20－x)＝79 得 7x－40＝79，所以 x＝17。检验 85－6＝79，得分吻合。",
+   "options": [
+    {
+     "label": "A",
+     "text": "17"
+    },
+    {
+     "label": "B",
+     "text": "16"
+    },
+    {
+     "label": "C",
+     "text": "18"
+    },
+    {
+     "label": "D",
+     "text": "15"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470088",
+   "topicId": "mbs_j243",
+   "prompt": "某校 100 名师生去植树，教师每人植 5 棵、学生每人植 2 棵，共植树 260 棵。请用表格整理数据，并求教师和学生各多少人。",
+   "question": "某校 100 名师生去植树，教师每人植 5 棵、学生每人植 2 棵，共植树 260 棵。请用表格整理数据，并求教师和学生各多少人。",
+   "answer": "教师 20 人、学生 80 人，由 x＋y＝100 与 5x＋2y＝260 解得。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "表格按教师、学生两行排列，设「人数」「每人植树棵数」「共植树棵数」三列，便于看清总棵数是人数与每人棵数之积。两行的人数相加得 x＋y＝100，两行的棵数相加得 5x＋2y＝260，消元后得教师 20 人、学生 80 人。",
+   "keypoints": [
+    "表格设人数、每人植树棵数、共植树三列",
+    "由总人数列 x＋y＝100",
+    "由总棵数列 5x＋2y＝260，解得 x＝20、y＝80"
+   ]
+  },
+  {
+   "id": "mbs_q470089",
+   "topicId": "mbs_j244",
+   "prompt": "含蛋白质 20% 的甲种食品与含蛋白质 40% 的乙种食品混合成 100 克含蛋白质 32% 的食品。设甲 x 克、乙 y 克，则方程组是（ ）",
+   "question": "含蛋白质 20% 的甲种食品与含蛋白质 40% 的乙种食品混合成 100 克含蛋白质 32% 的食品。设甲 x 克、乙 y 克，则方程组是（ ）",
+   "answer": "B",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "总质量 100 克给出第一个方程；蛋白质总量等于 32% 乘 100 克，即 32 克，给出第二个方程。选项 C 把百分比直接当成克数，D 漏掉了百分号。",
+   "options": [
+    {
+     "label": "A",
+     "text": "x＋y＝100 与 0.2x＋0.4y＝100"
+    },
+    {
+     "label": "B",
+     "text": "x＋y＝100 与 0.2x＋0.4y＝32"
+    },
+    {
+     "label": "C",
+     "text": "x＋y＝32 与 0.2x＋0.4y＝100"
+    },
+    {
+     "label": "D",
+     "text": "x＋y＝100 与 20x＋40y＝32"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470090",
+   "topicId": "mbs_j244",
+   "prompt": "上题中甲种食品需要多少克",
+   "question": "上题中甲种食品需要多少克",
+   "answer": "40",
+   "type": "numeric",
+   "difficulty": "basic",
+   "explanation": "设甲 x 克，则乙 100－x 克，由 0.2x＋0.4(100－x)＝32 得 40－0.2x＝32，所以 x＝40。此时乙 60 克，检验 8＋24＝32，蛋白质总量吻合。",
+   "verify": "100-(32-20)/0.2"
+  },
+  {
+   "id": "mbs_q470091",
+   "topicId": "mbs_j244",
+   "prompt": "含盐 5% 的盐水 200 克与含盐 20% 的盐水 100 克混合，混合液中共含盐____克",
+   "question": "含盐 5% 的盐水 200 克与含盐 20% 的盐水 100 克混合，混合液中共含盐____克",
+   "answer": "30",
+   "type": "fill",
+   "difficulty": "basic",
+   "explanation": "第一种含盐 200×5%＝10 克，第二种含盐 100×20%＝20 克，合计 30 克。混合后总质量 300 克，含盐率为 30÷300＝10%，可见浓度介于两者之间。"
+  },
+  {
+   "id": "mbs_q470092",
+   "topicId": "mbs_j244",
+   "prompt": "某商品原价 x 元，先涨价 20%，再降价 10%，则现价是（ ）",
+   "question": "某商品原价 x 元，先涨价 20%，再降价 10%，则现价是（ ）",
+   "answer": "C",
+   "type": "choice",
+   "difficulty": "standard",
+   "explanation": "涨价后价格为 1.2x，再降价 10% 是在 1.2x 的基础上乘 0.9，得 1.08x。把 20% 与 10% 直接相减得到 1.1x 是常见错误，因为两次百分数的基数不同。",
+   "options": [
+    {
+     "label": "A",
+     "text": "1.1x 元"
+    },
+    {
+     "label": "B",
+     "text": "1.2x 元"
+    },
+    {
+     "label": "C",
+     "text": "1.08x 元"
+    },
+    {
+     "label": "D",
+     "text": "0.9x 元"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470093",
+   "topicId": "mbs_j244",
+   "prompt": "甲种合金含铜 60%、乙种合金含铜 80%。取甲 300 克与乙 100 克熔合，所得合金含铜的百分数是多少",
+   "question": "甲种合金含铜 60%、乙种合金含铜 80%。取甲 300 克与乙 100 克熔合，所得合金含铜的百分数是多少",
+   "answer": "65",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "铜的总量是 300×60%＋100×80%＝180＋80＝260 克，合金总质量 400 克，含铜率为 260÷400＝65%。不能把两个百分数简单平均成 70%，因为两种合金的质量不同。",
+   "verify": "(0.6*300+0.8*100)/400*100"
+  },
+  {
+   "id": "mbs_q470094",
+   "topicId": "mbs_j244",
+   "prompt": "某农户种甲、乙两种蔬菜，甲每亩收入 3000 元、乙每亩收入 4500 元，共种 10 亩收入 36000 元。请列方程组求各多少亩。",
+   "question": "某农户种甲、乙两种蔬菜，甲每亩收入 3000 元、乙每亩收入 4500 元，共种 10 亩收入 36000 元。请列方程组求各多少亩。",
+   "answer": "设甲 x 亩、乙 y 亩，由 x＋y＝10 与 3000x＋4500y＝36000 解得 x＝6、y＝4。",
+   "type": "short-answer",
+   "difficulty": "standard",
+   "explanation": "亩数之和与收入之和是两个独立的等量关系，分别列方程即可。把 y＝10－x 代入收入方程，得 3000x＋45000－4500x＝36000，即 1500x＝9000，所以 x＝6、y＝4。",
+   "keypoints": [
+    "设甲 x 亩、乙 y 亩",
+    "面积关系 x＋y＝10",
+    "收入关系 3000x＋4500y＝36000，解得 x＝6、y＝4"
+   ]
+  },
+  {
+   "id": "mbs_q470095",
+   "topicId": "mbs_j244",
+   "prompt": "某车间 60 名工人，每人每天可加工甲种零件 10 个或乙种零件 5 个。每天加工的甲、乙两种零件数恰好相等，则安排加工甲种零件的工人数是（ ）",
+   "question": "某车间 60 名工人，每人每天可加工甲种零件 10 个或乙种零件 5 个。每天加工的甲、乙两种零件数恰好相等，则安排加工甲种零件的工人数是（ ）",
+   "answer": "D",
+   "type": "choice",
+   "difficulty": "hard",
+   "explanation": "设加工甲种零件 x 人，则加工乙种零件 60－x 人，由 10x＝5(60－x) 得 10x＝300－5x，所以 x＝20。检验甲种 200 个、乙种 200 个，数量相等。",
+   "options": [
+    {
+     "label": "A",
+     "text": "40"
+    },
+    {
+     "label": "B",
+     "text": "15"
+    },
+    {
+     "label": "C",
+     "text": "24"
+    },
+    {
+     "label": "D",
+     "text": "20"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470096",
+   "topicId": "mbs_j244",
+   "prompt": "甲种酒精溶液含酒精 70%、乙种含酒精 50%，要配制含酒精 60% 的溶液 300 克，需甲、乙各多少克？请说明「溶质质量守恒」如何变成方程。",
+   "question": "甲种酒精溶液含酒精 70%、乙种含酒精 50%，要配制含酒精 60% 的溶液 300 克，需甲、乙各多少克？请说明「溶质质量守恒」如何变成方程。",
+   "answer": "设甲 x 克、乙 y 克，由 x＋y＝300 与 0.7x＋0.5y＝180 解得 x＝150、y＝150。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "混合前后酒精（溶质）的总量不变，所以两种溶液中酒精质量之和等于配好后溶液中酒精的质量，即 0.7x＋0.5y＝0.6×300＝180。再加上溶液总质量方程 x＋y＝300，联立即可求解。",
+   "keypoints": [
+    "设甲 x 克、乙 y 克",
+    "溶液总量 x＋y＝300",
+    "溶质总量 0.7x＋0.5y＝180，解得 x＝150、y＝150"
+   ]
+  },
+  {
+   "id": "mbs_q470097",
+   "topicId": "mbs_j245",
+   "prompt": "甲、乙两人从相距 36 千米的两地同时出发相向而行，甲每小时走 5 千米、乙每小时走 4 千米，几小时后相遇（ ）",
+   "question": "甲、乙两人从相距 36 千米的两地同时出发相向而行，甲每小时走 5 千米、乙每小时走 4 千米，几小时后相遇（ ）",
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "相向而行时两人的速度和是 5＋4＝9 千米每小时，36÷9＝4，所以 4 小时后相遇。检验两人所走路程 20＋16＝36，正好等于两地距离。",
+   "options": [
+    {
+     "label": "A",
+     "text": "4"
+    },
+    {
+     "label": "B",
+     "text": "3"
+    },
+    {
+     "label": "C",
+     "text": "5"
+    },
+    {
+     "label": "D",
+     "text": "6"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470098",
+   "topicId": "mbs_j245",
+   "prompt": "火车完全通过一条隧道时，火车行驶的路程等于（ ）",
+   "question": "火车完全通过一条隧道时，火车行驶的路程等于（ ）",
+   "answer": "B",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "从车头进入隧道到车尾离开隧道，车头实际走过的路程是隧道长加一个车身长度。只算隧道长会漏掉车身，算成车长则完全没有考虑隧道。",
+   "options": [
+    {
+     "label": "A",
+     "text": "隧道长"
+    },
+    {
+     "label": "B",
+     "text": "隧道长与车长之和"
+    },
+    {
+     "label": "C",
+     "text": "车长"
+    },
+    {
+     "label": "D",
+     "text": "隧道长与车长之差"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470099",
+   "topicId": "mbs_j245",
+   "prompt": "一列长 200 米的火车以每秒 20 米的速度完全通过一条长 800 米的隧道，需要多少秒",
+   "question": "一列长 200 米的火车以每秒 20 米的速度完全通过一条长 800 米的隧道，需要多少秒",
+   "answer": "50",
+   "type": "numeric",
+   "difficulty": "basic",
+   "explanation": "火车行驶的路程是隧道长加车长，即 800＋200＝1000 米，速度是每秒 20 米，所以需要 1000÷20＝50 秒。漏加车长会算成 40 秒。",
+   "verify": "(800+200)/20"
+  },
+  {
+   "id": "mbs_q470100",
+   "topicId": "mbs_j245",
+   "prompt": "甲每小时走 6 千米、乙每小时走 4 千米。乙先走 2 小时后甲才出发，甲出发____小时后追上乙",
+   "question": "甲每小时走 6 千米、乙每小时走 4 千米。乙先走 2 小时后甲才出发，甲出发____小时后追上乙",
+   "answer": "4",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "乙先走 2 小时已行 8 千米。设甲出发 t 小时后追上，由 6t＝4(t＋2) 得 2t＝8，所以 t＝4。此时甲行 24 千米，乙共行 4×6＝24 千米，正好追上。"
+  },
+  {
+   "id": "mbs_q470101",
+   "topicId": "mbs_j245",
+   "prompt": "A、B 两地相距 30 千米，甲从 A 地步行每小时 5 千米，乙骑车从 B 地同时出发相向而行，2 小时后相遇，乙的速度是多少千米每小时",
+   "question": "A、B 两地相距 30 千米，甲从 A 地步行每小时 5 千米，乙骑车从 B 地同时出发相向而行，2 小时后相遇，乙的速度是多少千米每小时",
+   "answer": "10",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "甲 2 小时走 10 千米，剩余 20 千米由乙在 2 小时内骑完，所以乙的速度是 10 千米每小时。也可以列方程 5×2＋2v＝30 求 v。",
+   "verify": "(30-5*2)/2"
+  },
+  {
+   "id": "mbs_q470102",
+   "topicId": "mbs_j245",
+   "prompt": "一条船在静水中每小时行 12 千米，水流每小时 3 千米，它顺流航行 90 千米需要____小时",
+   "question": "一条船在静水中每小时行 12 千米，水流每小时 3 千米，它顺流航行 90 千米需要____小时",
+   "answer": "6",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "顺流速度等于船速加水速，即 12＋3＝15 千米每小时，90÷15＝6 小时。若误用船速减水速会算成 10 小时，那是逆流所用的时间。"
+  },
+  {
+   "id": "mbs_q470103",
+   "topicId": "mbs_j245",
+   "prompt": "一列火车通过 1200 米长的隧道用 60 秒，通过 800 米长的隧道用 44 秒，则火车的长度是（ ）",
+   "question": "一列火车通过 1200 米长的隧道用 60 秒，通过 800 米长的隧道用 44 秒，则火车的长度是（ ）",
+   "answer": "C",
+   "type": "choice",
+   "difficulty": "hard",
+   "explanation": "设车速 v、车长 L，由 60v＝1200＋L 与 44v＝800＋L 相减得 16v＝400，所以 v＝25，L＝1500－1200＝300 米。检验 800＋300＝1100＝44×25，算式成立。",
+   "options": [
+    {
+     "label": "A",
+     "text": "200 米"
+    },
+    {
+     "label": "B",
+     "text": "250 米"
+    },
+    {
+     "label": "C",
+     "text": "300 米"
+    },
+    {
+     "label": "D",
+     "text": "400 米"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470104",
+   "topicId": "mbs_j245",
+   "prompt": "甲、乙两地相距 240 千米，一辆汽车先以每小时 60 千米行驶一段，再以每小时 40 千米行驶剩余路段，全程共用 5.5 小时。求两段路程各多少千米。",
+   "question": "甲、乙两地相距 240 千米，一辆汽车先以每小时 60 千米行驶一段，再以每小时 40 千米行驶剩余路段，全程共用 5.5 小时。求两段路程各多少千米。",
+   "answer": "快速段 60 千米、慢速段 180 千米，由 x＋y＝240 与 x/60＋y/40＝5.5 解得。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "总路程与总时间给出两个等量关系，时间等于路程除以速度，所以第二个方程是 x/60＋y/40＝5.5。把 y＝240－x 代入得 x/60＋(240－x)/40＝5.5，两边乘 120 得 2x＋720－3x＝660，所以 x＝60、y＝180。",
+   "keypoints": [
+    "设快速段 x 千米、慢速段 y 千米",
+    "路程关系 x＋y＝240",
+    "时间关系 x/60＋y/40＝5.5，解得 x＝60、y＝180"
+   ]
+  },
+  {
+   "id": "mbs_q470105",
+   "topicId": "mbs_j246",
+   "prompt": "一次函数 y＝2x－3 的图象上，当 x＝4 时 y 的值是（ ）",
+   "question": "一次函数 y＝2x－3 的图象上，当 x＝4 时 y 的值是（ ）",
+   "answer": "D",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "把 x＝4 代入 y＝2x－3，得 y＝8－3＝5。把减 3 误算成加 3 会得到 11，只算 4－3 会得到 1，都要避免。",
+   "options": [
+    {
+     "label": "A",
+     "text": "11"
+    },
+    {
+     "label": "B",
+     "text": "1"
+    },
+    {
+     "label": "C",
+     "text": "－5"
+    },
+    {
+     "label": "D",
+     "text": "5"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470106",
+   "topicId": "mbs_j246",
+   "prompt": "方程 2x－y＝6 可以写成 y＝2x－6，当 x＝5 时 y 的值是多少",
+   "question": "方程 2x－y＝6 可以写成 y＝2x－6，当 x＝5 时 y 的值是多少",
+   "answer": "4",
+   "type": "numeric",
+   "difficulty": "basic",
+   "explanation": "把 x＝5 代入 y＝2x－6 得 10－6＝4。也可以把 x＝5 直接代入原方程 10－y＝6，解出 y＝4，两种算法结果相同。",
+   "verify": "2*5-6"
+  },
+  {
+   "id": "mbs_q470107",
+   "topicId": "mbs_j246",
+   "prompt": "把方程 3x＋y＝9 写成用 x 表示 y 的形式，得 y＝____",
+   "question": "把方程 3x＋y＝9 写成用 x 表示 y 的形式，得 y＝____",
+   "answer": "9－3x",
+   "type": "fill",
+   "difficulty": "basic",
+   "explanation": "把 3x 移到等号右边得 y＝9－3x，这正是一次函数 y＝－3x＋9 的表达式。移项后 x 的系数由 3 变成 －3，说明这条直线是下降的。"
+  },
+  {
+   "id": "mbs_q470108",
+   "topicId": "mbs_j246",
+   "prompt": "二元一次方程 x－y＝2 的图象是一条（ ）",
+   "question": "二元一次方程 x－y＝2 的图象是一条（ ）",
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "standard",
+   "explanation": "二元一次方程可化为 y＝x－2，形如 y＝kx＋b 的函数图象是直线，所以它的图象是一条直线。抛物线对应二次函数，双曲线对应反比例函数，都不是一次关系。",
+   "options": [
+    {
+     "label": "A",
+     "text": "直线"
+    },
+    {
+     "label": "B",
+     "text": "抛物线"
+    },
+    {
+     "label": "C",
+     "text": "双曲线"
+    },
+    {
+     "label": "D",
+     "text": "折线"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470109",
+   "topicId": "mbs_j246",
+   "prompt": "一次函数 y＝－2x＋7 的图象与 x 轴交点的横坐标是多少",
+   "question": "一次函数 y＝－2x＋7 的图象与 x 轴交点的横坐标是多少",
+   "answer": "3.5",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "图象与 x 轴相交时 y＝0，由 －2x＋7＝0 得 x＝3.5，所以交点坐标是 (3.5,0)。题目问的是横坐标，不要写成整个坐标。",
+   "verify": "7/2"
+  },
+  {
+   "id": "mbs_q470110",
+   "topicId": "mbs_j246",
+   "prompt": "说明二元一次方程 2x＋y＝5 与一次函数 y＝－2x＋5 之间的联系与区别。",
+   "question": "说明二元一次方程 2x＋y＝5 与一次函数 y＝－2x＋5 之间的联系与区别。",
+   "answer": "把方程中的 y 用含 x 的式子表示即得函数表达式；方程的每一组解对应直线上一个点，但方程强调解的数对，函数强调变量之间的对应关系。",
+   "type": "short-answer",
+   "difficulty": "standard",
+   "explanation": "两者只差一步变形，图象是同一条直线。区别在于方程着眼于「哪些数对满足等式」，解有无数个且以数对形式出现；函数着眼于「给定 x 如何确定 y」，自变量可在允许范围内任意取值。",
+   "keypoints": [
+    "把 2x＋y＝5 变形得 y＝－2x＋5",
+    "方程的解对应直线上点的坐标",
+    "方程强调解的数对，函数强调变量对应关系"
+   ]
+  },
+  {
+   "id": "mbs_q470111",
+   "topicId": "mbs_j246",
+   "prompt": "已知一次函数 y＝kx＋b 的图象经过点 (1,3) 和 (2,7)，则 k、b 的值是（ ）",
+   "question": "已知一次函数 y＝kx＋b 的图象经过点 (1,3) 和 (2,7)，则 k、b 的值是（ ）",
+   "answer": "B",
+   "type": "choice",
+   "difficulty": "hard",
+   "explanation": "把两点坐标代入得 k＋b＝3 与 2k＋b＝7，两式相减得 k＝4，再代回得 b＝－1。把 b 算成 1 是移项时符号出错，代回 (1,3) 检验即可发现。",
+   "options": [
+    {
+     "label": "A",
+     "text": "k＝4，b＝1"
+    },
+    {
+     "label": "B",
+     "text": "k＝4，b＝－1"
+    },
+    {
+     "label": "C",
+     "text": "k＝－4，b＝7"
+    },
+    {
+     "label": "D",
+     "text": "k＝2，b＝1"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470112",
+   "topicId": "mbs_j246",
+   "prompt": "已知一次函数 y＝kx＋b 的图象经过点 (－1,1) 和 (2,7)，求这个函数的表达式，并求当 y＝0 时 x 的值。",
+   "question": "已知一次函数 y＝kx＋b 的图象经过点 (－1,1) 和 (2,7)，求这个函数的表达式，并求当 y＝0 时 x 的值。",
+   "answer": "表达式为 y＝2x＋3，当 y＝0 时 x＝－1.5。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "把两点坐标代入 y＝kx＋b，得 －k＋b＝1 与 2k＋b＝7，两式相减得 3k＝6，k＝2，再求 b＝3，所以 y＝2x＋3。令 2x＋3＝0 得 x＝－1.5，即图象与 x 轴交点的横坐标。",
+   "keypoints": [
+    "代入两点得 －k＋b＝1 与 2k＋b＝7",
+    "相减得 3k＝6，k＝2、b＝3",
+    "令 2x＋3＝0 得 x＝－1.5"
+   ]
+  },
+  {
+   "id": "mbs_q470113",
+   "topicId": "mbs_j247",
+   "prompt": "直线 y＝x＋1 与直线 y＝－x＋5 的交点坐标是（ ）",
+   "question": "直线 y＝x＋1 与直线 y＝－x＋5 的交点坐标是（ ）",
+   "answer": "C",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "联立得 x＋1＝－x＋5，即 2x＝4，x＝2，代回得 y＝3，所以交点坐标是 (2,3)。检验 2＋1＝3、－2＋5＝3，两条直线在这一点相交。",
+   "options": [
+    {
+     "label": "A",
+     "text": "(3,2)"
+    },
+    {
+     "label": "B",
+     "text": "(2,－3)"
+    },
+    {
+     "label": "C",
+     "text": "(2,3)"
+    },
+    {
+     "label": "D",
+     "text": "(1,2)"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470114",
+   "topicId": "mbs_j247",
+   "prompt": "方程组 y＝2x－1 与 y＝x＋2 的解，在图象上对应两直线的（ ）",
+   "question": "方程组 y＝2x－1 与 y＝x＋2 的解，在图象上对应两直线的（ ）",
+   "answer": "D",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "方程组的解同时满足两个函数表达式，即对应的点同时在两条直线上，所以对应两直线的交点。与坐标轴的交点只满足其中一个函数，不能作为方程组的解。",
+   "options": [
+    {
+     "label": "A",
+     "text": "与 x 轴的交点"
+    },
+    {
+     "label": "B",
+     "text": "与 y 轴的交点"
+    },
+    {
+     "label": "C",
+     "text": "两个不同的点"
+    },
+    {
+     "label": "D",
+     "text": "交点"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470115",
+   "topicId": "mbs_j247",
+   "prompt": "直线 y＝3x－2 与直线 y＝x＋4 交点的横坐标是多少",
+   "question": "直线 y＝3x－2 与直线 y＝x＋4 交点的横坐标是多少",
+   "answer": "3",
+   "type": "numeric",
+   "difficulty": "basic",
+   "explanation": "令 3x－2＝x＋4，得 2x＝6，所以 x＝3。此时纵坐标 y＝7，交点坐标是 (3,7)，题目只问横坐标。",
+   "verify": "(4+2)/2"
+  },
+  {
+   "id": "mbs_q470116",
+   "topicId": "mbs_j247",
+   "prompt": "直线 y＝－2x＋6 与 x 轴的交点坐标是____",
+   "question": "直线 y＝－2x＋6 与 x 轴的交点坐标是____",
+   "answer": "(3,0)",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "与 x 轴相交时 y＝0，由 －2x＋6＝0 得 x＝3，所以交点坐标是 (3,0)。横坐标 3 就是方程 －2x＋6＝0 的解，这也是方程与函数联系的体现。"
+  },
+  {
+   "id": "mbs_q470117",
+   "topicId": "mbs_j247",
+   "prompt": "直线 y＝2x－3 与直线 y＝－x＋9 交点的纵坐标是多少",
+   "question": "直线 y＝2x－3 与直线 y＝－x＋9 交点的纵坐标是多少",
+   "answer": "5",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "令 2x－3＝－x＋9，得 3x＝12，x＝4，代入得 y＝5。用另一条直线检验 －4＋9＝5，结果一致，说明计算正确。",
+   "verify": "2*4-3"
+  },
+  {
+   "id": "mbs_q470118",
+   "topicId": "mbs_j247",
+   "prompt": "若直线 y＝kx＋2 与直线 y＝3x－4 的交点在 x 轴上，则 k＝____",
+   "question": "若直线 y＝kx＋2 与直线 y＝3x－4 的交点在 x 轴上，则 k＝____",
+   "answer": "－1.5",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "交点在 x 轴上说明 y＝0，由 3x－4＝0 得 x＝4/3。代入 y＝kx＋2 得 0＝4k/3＋2，所以 4k/3＝－2，k＝－1.5。"
+  },
+  {
+   "id": "mbs_q470119",
+   "topicId": "mbs_j247",
+   "prompt": "已知直线 y＝2x＋m 与直线 y＝－x＋3 的交点在第二象限，则 m 的取值范围是（ ）",
+   "question": "已知直线 y＝2x＋m 与直线 y＝－x＋3 的交点在第二象限，则 m 的取值范围是（ ）",
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "hard",
+   "explanation": "联立得 x＝(3－m)/3，第二象限要求 x＜0 且 y＞0。由 x＜0 得 m＞3，此时 y＝(m＋6)/3＞0 自动成立，所以只需 m＞3。",
+   "options": [
+    {
+     "label": "A",
+     "text": "m＞3"
+    },
+    {
+     "label": "B",
+     "text": "m＜3"
+    },
+    {
+     "label": "C",
+     "text": "m＞－6"
+    },
+    {
+     "label": "D",
+     "text": "－6＜m＜3"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470120",
+   "topicId": "mbs_j247",
+   "prompt": "用图象法说明方程组 y＝x＋2 与 y＝－2x＋8 解的情况，并求出交点坐标。",
+   "question": "用图象法说明方程组 y＝x＋2 与 y＝－2x＋8 解的情况，并求出交点坐标。",
+   "answer": "两条直线的斜率不同，只有一个交点，交点为 (2,4)，即方程组有唯一解 x＝2、y＝4。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "斜率 1 与 －2 不相等，两条直线不平行，必相交于一点，所以方程组有唯一解。联立 x＋2＝－2x＋8 得 3x＝6，x＝2，回代得 y＝4，交点坐标 (2,4) 就是方程组的解。",
+   "keypoints": [
+    "两直线斜率不同，只有一个交点",
+    "联立 x＋2＝－2x＋8 得 x＝2",
+    "回代得 y＝4，交点 (2,4) 就是解"
+   ]
+  },
+  {
+   "id": "mbs_q470121",
+   "topicId": "mbs_j248",
+   "prompt": "已知一次函数 y＝kx＋3 的图象经过点 (2,7)，则 k 的值是（ ）",
+   "question": "已知一次函数 y＝kx＋3 的图象经过点 (2,7)，则 k 的值是（ ）",
+   "answer": "B",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "把 x＝2、y＝7 代入得 2k＋3＝7，2k＝4，所以 k＝2。此时函数为 y＝2x＋3，代回检验 4＋3＝7，等式成立。",
+   "options": [
+    {
+     "label": "A",
+     "text": "5"
+    },
+    {
+     "label": "B",
+     "text": "2"
+    },
+    {
+     "label": "C",
+     "text": "3"
+    },
+    {
+     "label": "D",
+     "text": "－2"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470122",
+   "topicId": "mbs_j248",
+   "prompt": "若 y＝ax＋b 中，当 x＝1 时 y＝4，当 x＝2 时 y＝7，则 a 的值是多少",
+   "question": "若 y＝ax＋b 中，当 x＝1 时 y＝4，当 x＝2 时 y＝7，则 a 的值是多少",
+   "answer": "3",
+   "type": "numeric",
+   "difficulty": "basic",
+   "explanation": "代入得 a＋b＝4 与 2a＋b＝7，两式相减得 a＝3，再求 b＝1。也可以理解为 x 每增加 1，y 增加 3，这个增量正是 a。",
+   "verify": "7-4"
+  },
+  {
+   "id": "mbs_q470123",
+   "topicId": "mbs_j248",
+   "prompt": "已知一次函数 y＝kx＋b 的图象经过点 (0,5)，则 b＝____",
+   "question": "已知一次函数 y＝kx＋b 的图象经过点 (0,5)，则 b＝____",
+   "answer": "5",
+   "type": "fill",
+   "difficulty": "basic",
+   "explanation": "把 x＝0、y＝5 代入得 5＝0＋b，所以 b＝5。b 就是直线与 y 轴交点的纵坐标，因此只要知道直线过 y 轴上哪一点，就能直接读出 b。"
+  },
+  {
+   "id": "mbs_q470124",
+   "topicId": "mbs_j248",
+   "prompt": "已知一次函数 y＝kx＋b 的图象经过点 (1,2) 与 (3,8)，则这个函数的表达式是（ ）",
+   "question": "已知一次函数 y＝kx＋b 的图象经过点 (1,2) 与 (3,8)，则这个函数的表达式是（ ）",
+   "answer": "C",
+   "type": "choice",
+   "difficulty": "standard",
+   "explanation": "代入得 k＋b＝2 与 3k＋b＝8，相减得 2k＝6，k＝3，b＝－1，所以 y＝3x－1。把 (1,2) 代入 y＝3x＋1 得 4，不成立。",
+   "options": [
+    {
+     "label": "A",
+     "text": "y＝3x＋1"
+    },
+    {
+     "label": "B",
+     "text": "y＝2x＋1"
+    },
+    {
+     "label": "C",
+     "text": "y＝3x－1"
+    },
+    {
+     "label": "D",
+     "text": "y＝2x－1"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470125",
+   "topicId": "mbs_j248",
+   "prompt": "已知 y＝kx＋b 经过点 (－2,3) 和 (1,－3)，则 k 的值是多少",
+   "question": "已知 y＝kx＋b 经过点 (－2,3) 和 (1,－3)，则 k 的值是多少",
+   "answer": "-2",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "代入得 －2k＋b＝3 与 k＋b＝－3，两式相减得 －3k＝6，所以 k＝－2。再代回得 b＝－1，函数为 y＝－2x－1，可用两点检验。",
+   "verify": "(3-(-3))/(-2-1)"
+  },
+  {
+   "id": "mbs_q470126",
+   "topicId": "mbs_j248",
+   "prompt": "用待定系数法求经过点 (2,1) 和 (－1,7) 的一次函数表达式，写出步骤。",
+   "question": "用待定系数法求经过点 (2,1) 和 (－1,7) 的一次函数表达式，写出步骤。",
+   "answer": "设 y＝kx＋b，由 2k＋b＝1 与 －k＋b＝7 解得 k＝－2、b＝5，表达式为 y＝－2x＋5。",
+   "type": "short-answer",
+   "difficulty": "standard",
+   "explanation": "待定系数法先设出含 k、b 的表达式，再由已知点建立方程组。两式相减得 3k＝－6，所以 k＝－2，代回得 b＝5。写出表达式后应任取一点代回检验，确保无误。",
+   "keypoints": [
+    "设 y＝kx＋b",
+    "代入两点得 2k＋b＝1 与 －k＋b＝7",
+    "解得 k＝－2、b＝5，写出表达式"
+   ]
+  },
+  {
+   "id": "mbs_q470127",
+   "topicId": "mbs_j248",
+   "prompt": "若一次函数 y＝kx＋b 的图象与直线 y＝2x－3 平行，且经过点 (1,4)，则这个函数的表达式是（ ）",
+   "question": "若一次函数 y＝kx＋b 的图象与直线 y＝2x－3 平行，且经过点 (1,4)，则这个函数的表达式是（ ）",
+   "answer": "D",
+   "type": "choice",
+   "difficulty": "hard",
+   "explanation": "两直线平行说明 k 相同，所以 k＝2。再代入点 (1,4) 得 4＝2＋b，即 b＝2，表达式为 y＝2x＋2。代回检验 2＋2＝4，成立。",
+   "options": [
+    {
+     "label": "A",
+     "text": "y＝2x＋4"
+    },
+    {
+     "label": "B",
+     "text": "y＝－2x＋6"
+    },
+    {
+     "label": "C",
+     "text": "y＝2x－2"
+    },
+    {
+     "label": "D",
+     "text": "y＝2x＋2"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470128",
+   "topicId": "mbs_j248",
+   "prompt": "已知 y 与 x 满足 y＝kx＋b，当 x＝1 时 y＝5；当 x＝－2 时 y＝－1。求 k、b，并求当 y＝11 时 x 的值。",
+   "question": "已知 y 与 x 满足 y＝kx＋b，当 x＝1 时 y＝5；当 x＝－2 时 y＝－1。求 k、b，并求当 y＝11 时 x 的值。",
+   "answer": "k＝2、b＝3；当 y＝11 时 x＝4。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "两组对应值就是两个方程：k＋b＝5 与 －2k＋b＝－1，相减得 3k＝6，所以 k＝2、b＝3，表达式为 y＝2x＋3。把 y＝11 代入得 2x＋3＝11，解得 x＝4。",
+   "keypoints": [
+    "代入两组对应值得 k＋b＝5 与 －2k＋b＝－1",
+    "相减得 3k＝6，k＝2、b＝3",
+    "令 2x＋3＝11 得 x＝4"
+   ]
+  },
+  {
+   "id": "mbs_q470129",
+   "topicId": "mbs_j249",
+   "prompt": "下列方程组中，属于三元一次方程组的是（ ）",
+   "question": "下列方程组中，属于三元一次方程组的是（ ）",
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "三元一次方程组要求每个方程都是一次整式方程，且共含三个未知数。选项 B 含平方项，C 中 z 在分母上不是整式，D 含 xy 这样的二次项，都不符合要求。",
+   "options": [
+    {
+     "label": "A",
+     "text": "x＋y＝3 与 y＋z＝4 与 z＋x＝5"
+    },
+    {
+     "label": "B",
+     "text": "x＋y＝3 与 x²＋z＝4"
+    },
+    {
+     "label": "C",
+     "text": "x＋y＝3 与 1/z＋y＝4"
+    },
+    {
+     "label": "D",
+     "text": "x＋y＝3 与 xy＋z＝4"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470130",
+   "topicId": "mbs_j249",
+   "prompt": "解三元一次方程组的基本思路是（ ）",
+   "question": "解三元一次方程组的基本思路是（ ）",
+   "answer": "B",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "三元一次方程组仍用消元思想：先消去一个未知数得到二元一次方程组，再消去一个得到一元一次方程。全部相加只是当系数凑巧时可用的一步，不是普遍思路。",
+   "options": [
+    {
+     "label": "A",
+     "text": "直接解三个一元一次方程"
+    },
+    {
+     "label": "B",
+     "text": "逐步消元，把三元化为二元、再化为一元"
+    },
+    {
+     "label": "C",
+     "text": "用图象找三条直线的交点"
+    },
+    {
+     "label": "D",
+     "text": "把三个方程全部相加"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470131",
+   "topicId": "mbs_j249",
+   "prompt": "方程组 x＋y＝5、y＋z＝7、x＋z＝6 中 x 的值是多少",
+   "question": "方程组 x＋y＝5、y＋z＝7、x＋z＝6 中 x 的值是多少",
+   "answer": "2",
+   "type": "numeric",
+   "difficulty": "basic",
+   "explanation": "三式相加得 2(x＋y＋z)＝18，所以 x＋y＋z＝9。用这个和减去 y＋z＝7，得 x＝2；同理可得 y＝3、z＝4。",
+   "verify": "(5+7+6)/2-7"
+  },
+  {
+   "id": "mbs_q470132",
+   "topicId": "mbs_j249",
+   "prompt": "方程组 x＋y＝10、y＋z＝12、x＋z＝14 中 z 的值是____",
+   "question": "方程组 x＋y＝10、y＋z＝12、x＋z＝14 中 z 的值是____",
+   "answer": "8",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "三式相加得 2(x＋y＋z)＝36，所以 x＋y＋z＝18。减去 x＋y＝10 得 z＝8，此时 x＝6、y＝4，代回检验都成立。"
+  },
+  {
+   "id": "mbs_q470133",
+   "topicId": "mbs_j249",
+   "prompt": "方程组 x＋y＋z＝12、x＋y＝8、y＋z＝9 中 y 的值是多少",
+   "question": "方程组 x＋y＋z＝12、x＋y＝8、y＋z＝9 中 y 的值是多少",
+   "answer": "5",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "把 x＋y＝8 与 y＋z＝9 相加，得 x＋2y＋z＝17；再减去 x＋y＋z＝12，得 y＝5，于是 x＝3、z＝4。这种「加两个、减一个」的做法能直接求出目标未知数。",
+   "verify": "8+9-12"
+  },
+  {
+   "id": "mbs_q470134",
+   "topicId": "mbs_j249",
+   "prompt": "方程组 2x＋y＋z＝11、x＋2y＋z＝12、x＋y＋2z＝13 的解中 x＝____",
+   "question": "方程组 2x＋y＋z＝11、x＋2y＋z＝12、x＋y＋2z＝13 的解中 x＝____",
+   "answer": "2",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "三式相加得 4(x＋y＋z)＝36，所以 x＋y＋z＝9。第一个方程减去这个和，得 x＝2；同理 y＝3、z＝4，代回检验三个方程都成立。"
+  },
+  {
+   "id": "mbs_q470135",
+   "topicId": "mbs_j249",
+   "prompt": "若 x、y、z 满足 x＋y＝3、y＋z＝5、z＋x＝4，则 x＋y＋z 的值是（ ）",
+   "question": "若 x、y、z 满足 x＋y＝3、y＋z＝5、z＋x＝4，则 x＋y＋z 的值是（ ）",
+   "answer": "C",
+   "type": "choice",
+   "difficulty": "hard",
+   "explanation": "三式相加得 2(x＋y＋z)＝12，所以 x＋y＋z＝6。用这个和分别减去每个方程，得 x＝1、y＝2、z＝3，代回检验三个等式都成立。",
+   "options": [
+    {
+     "label": "A",
+     "text": "12"
+    },
+    {
+     "label": "B",
+     "text": "5"
+    },
+    {
+     "label": "C",
+     "text": "6"
+    },
+    {
+     "label": "D",
+     "text": "3"
+    }
+   ]
+  },
+  {
+   "id": "mbs_q470136",
+   "topicId": "mbs_j249",
+   "prompt": "解三元一次方程组 x＋y－z＝2、2x－y＋z＝4、x－2y＋3z＝3，说明你的消元顺序。",
+   "question": "解三元一次方程组 x＋y－z＝2、2x－y＋z＝4、x－2y＋3z＝3，说明你的消元顺序。",
+   "answer": "由第一个方程得 z＝x＋y－2，代入另外两个方程得二元一次方程组，解得 x＝2、y＝1，再回代得 z＝1。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "选择系数最简单的 z，从第一个方程把它用 x、y 表示并代入另外两个方程：第二个方程化为 3x－2＝4，得 x＝2；第三个方程化为 4x＋y－6＝3，即 4x＋y＝9，代入 x＝2 得 y＝1，最后 z＝2＋1－2＝1。",
+   "keypoints": [
+    "由第一个方程把 z 用 x、y 表示",
+    "代入后得 3x－2＝4 与 4x＋y＝9",
+    "解得 x＝2、y＝1，回代得 z＝1"
+   ]
+  }
+ ]
+}
