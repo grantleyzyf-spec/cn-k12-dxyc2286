@@ -41,7 +41,7 @@ by_topic = Counter(q["topicId"] for q in qs)
 ck("id 唯一", len(T) == len(topics))
 ck("全部 subject=math-bsd", all(t.get("subject") == SUBJECT for t in topics))
 ck("规模非空（≥31 知识点）", len(topics) >= 31, len(topics))
-ck("id 命名 mbs_[pjh]NNN", all(re.fullmatch(r"mbs_[pjh]\d{3}", t["id"]) for t in topics))
+ck("id 命名 mbs_[pju]NNN", all(re.fullmatch(r"mbs_[pju]\d{3}", t["id"]) for t in topics))
 ck("领域只用课标四领域", {t.get("domain") for t in topics} <= FOUR,
    sorted({t.get("domain") for t in topics}))
 ck("四领域都有点", {t.get("domain") for t in topics} == FOUR,
@@ -109,8 +109,10 @@ ck("根节点都有 root_reason",
    [t["id"] for t in topics if not t.get("prerequisites") and not t.get("root_reason")][:3])
 
 # ---- 题库 ----
-ck("诊断题 ≥8 题/点", all(by_topic.get(tid, 0) >= 8 for tid in T),
-   {k: v for k, v in by_topic.items() if v < 8})
+UNIT_TIDS = {t["id"] for t in topics if t.get("level") == "unit"}
+ck("诊断题 ≥8 题/课时点、≥5 题/单元点",
+   all(by_topic.get(tid, 0) >= (5 if tid in UNIT_TIDS else 8) for tid in T),
+   {k: v for k, v in by_topic.items() if v < (5 if k in UNIT_TIDS else 8)})
 ck("题 id 唯一", len({q["id"] for q in qs}) == len(qs))
 ck("题 id 命名 mbs_qNNNNNN", all(re.fullmatch(r"mbs_q\d{6}", q["id"]) for q in qs))
 ck("题目 topicId 均可对", all(q["topicId"] in T for q in qs))
@@ -154,9 +156,16 @@ ch = Counter(q["answer"] for q in qs if q["type"] == "choice")
 tot = sum(ch.values()) or 1
 ck("答案位均衡（各 ≥15%）", all(ch[k] / tot >= 0.15 for k in "ABCD"), dict(ch))
 g1 = [q for q in qs if T[q["topicId"]]["grade"] == 1]
-ck("一年级不超纲（数值 ≤20）",
-   not [q["id"] for q in g1 if [n for n in re.findall(r"(?<![\d.])(\d{1,3})(?![\d.])", q["prompt"])
-                                if int(n) > 20]], "")
+# 一年级上册只到 20 以内；下册到 100 以内 ⇒ 按册设上限（用 topic 的 chapter 判册，不看 grade）
+LIMIT = 20
+bad_g1 = []
+for q in g1:
+    ch = T[q["topicId"]]["chapter"]
+    lim = 100 if "一年级下册" in ch else 20
+    over = [n for n in re.findall(r"(?<![\d.])(\d{1,3})(?![\d.])", q["prompt"]) if int(n) > lim]
+    if over:
+        bad_g1.append((q["id"], ch.split(" ")[0], over[:3]))
+ck("一年级不超纲（上册 ≤20 / 下册 ≤100）", not bad_g1, bad_g1[:3])
 
 for name, ok, detail in checks:
     print(("  ✅ " if ok else "  ❌ ") + name + (f"  [{detail}]" if detail and not ok else ""))
