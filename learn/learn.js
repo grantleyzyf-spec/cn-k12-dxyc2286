@@ -253,7 +253,7 @@
   }
 
   function fillUnits(book) {
-    var b = getBook(book);
+    var b = getBook(book, selSubject.value, selEdition.value);
     if (!b) { selUnit.innerHTML = '<option value="">—</option>'; return; }
     var units = [];
     b.lessons.forEach(function (L) { if (units.indexOf(L.chapter) < 0) units.push(L.chapter); });
@@ -298,6 +298,15 @@
     });
   }
 
+  // 课标名称按学科目录区分（此前一律写「数学」，语文/心理健康等学科显示错名）
+  function stdLabel(dir) {
+    var d = String(dir || '');
+    if (d.indexOf('math') === 0) return '2022 版义务教育数学课程标准';
+    if (d === 'chinese') return '2022 版义务教育语文课程标准';
+    if (d === 'mental-health') return '《中小学心理健康教育指导纲要（2012 年修订）》';
+    return '本学科课程标准';
+  }
+
   function open(topicId) {
     if (!BOOK) return;
     var idx = -1;
@@ -309,13 +318,13 @@
     var html = md ? md2html(md) : '<p>这篇讲解还没写。</p>';
     var stds = STD[topicId] || [];
     var stdHtml = '<div class="stdbox">'
-      + '<b>课标对应（2022 版义务教育数学课程标准）</b>'
+      + '<b>课标对应（' + esc(stdLabel(BOOK.dir)) + '）</b>'
       + (stds.length ? stds.map(function (s) {
           return '<p class="stline"><code>' + esc(s.id || '') + '</code>'
             + (s.confidence ? ' <span class="conf">' + esc(s.confidence) + '</span>' : '')
             + '<br>' + esc(s.quote || '') + '</p>';
         }).join('')
-        : '<p class="stline">本课时在课标中无逐条对应表述（开学期/复习/实践类），未强行挂标。</p>')
+        : '<p class="stline">本课时在课标中暂无逐条对应表述，未强行挂标。</p>')
       + '</div>';
     var prev = BOOK.lessons[idx - 1], next = BOOK.lessons[idx + 1];
     var nav = '<div class="navrow">'
