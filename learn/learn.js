@@ -261,6 +261,22 @@
       + units.map(function (u) { return '<option value="' + esc(u) + '">' + esc(u) + '</option>'; }).join('');
   }
 
+  // ---- 课标映射（懒加载某学科 topics.json，只取已挂标的点）----
+  var STD = {}, STD_DIR = '', STD_LOADED = false;
+  function loadStandards(dir, then) {
+    if (!dir || (STD_LOADED && STD_DIR === dir)) { if (then) then(); return; }
+    fetch('../data/' + dir + '/topics.json').then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    }).then(function (j) {
+      var arr = j && j.topics ? j.topics : (j || []);
+      var map = {};
+      arr.forEach(function (t) { if (t && t.id && t.standards && t.standards.length) map[t.id] = t.standards; });
+      STD = map; STD_DIR = dir; STD_LOADED = true;
+      if (then) then();
+    }).catch(function () { STD_LOADED = true; if (then) then(); });
+  }
+
   function renderList() {
     if (!BOOK) { listEl.innerHTML = '<p class="empty">请选择册次</p>'; return; }
     var unitFilter = selUnit.value;
@@ -273,6 +289,7 @@
       }
       html.push('<button class="lesson' + (L.topicId === cur ? ' active' : '') + '" data-id="'
         + esc(L.topicId) + '">' + esc(L.title)
+        + (STD[L.topicId] ? '<span class="std" title="本课时已挂课标">课标</span>' : '')
         + (L.words ? '<span class="w">' + L.words + ' 字</span>' : '') + '</button>');
     });
     listEl.innerHTML = html.join('') || '<p class="empty">本单元暂无讲解</p>';
@@ -290,15 +307,28 @@
     var L = BOOK.lessons[idx];
     var md = (BOOK.md[topicId] || '').trim();
     var html = md ? md2html(md) : '<p>这篇讲解还没写。</p>';
+    var stds = STD[topicId] || [];
+    var stdHtml = '<div class="stdbox">'
+      + '<b>课标对应（2022 版义务教育数学课程标准）</b>'
+      + (stds.length ? stds.map(function (s) {
+          return '<p class="stline"><code>' + esc(s.id || '') + '</code>'
+            + (s.confidence ? ' <span class="conf">' + esc(s.confidence) + '</span>' : '')
+            + '<br>' + esc(s.quote || '') + '</p>';
+        }).join('')
+        : '<p class="stline">本课时在课标中无逐条对应表述（开学期/复习/实践类），未强行挂标。</p>')
+      + '</div>';
     var prev = BOOK.lessons[idx - 1], next = BOOK.lessons[idx + 1];
     var nav = '<div class="navrow">'
       + '<button id="btn-prev"' + (prev ? ' data-id="' + esc(prev.topicId) + '"' : ' disabled') + '>'
       + (prev ? '← ' + esc(prev.title) : '已是第一篇') + '</button>'
       + '<button id="btn-next"' + (next ? ' data-id="' + esc(next.topicId) + '"' : ' disabled') + '>'
       + (next ? esc(next.title) + ' →' : '已是最后一篇') + '</button></div>'
-      + '<p class="src">出处：' + esc(BOOK.book) + ' · 人教版数学 · 学生版精讲（'
+      + '<p class="src">出处：' + esc(BOOK.book) + ' · '
+      + esc((BOOK.meta && BOOK.meta.subjectName) || '数学')
+      + (BOOK.meta && BOOK.meta.edition ? '（' + esc(BOOK.meta.edition) + '）' : '')
+      + ' · 学生版精讲（'
       + (L.words || 0) + ' 字）· <a href="../diagnose/">去诊断这个课时</a></p>';
-    reader.innerHTML = html + nav;
+    reader.innerHTML = stdHtml + html + nav;
     ['btn-prev', 'btn-next'].forEach(function (id) {
       var b = document.getElementById(id);
       if (b && b.getAttribute('data-id')) {
@@ -326,7 +356,8 @@
     }).then(function (data) {
       var md = {};
       (data.lessons || []).forEach(function (L) { md[L.topicId] = L.markdown || ''; });
-      BOOK = { book: book, lessons: b.lessons, md: md };
+      BOOK = { book: book, lessons: b.lessons, md: md, meta: b, dir: (b.path || '').split('/')[1] };
+      loadStandards(BOOK.dir, function () { renderList(); });
       fillUnits(book);
       renderList();
       if (then) then();
