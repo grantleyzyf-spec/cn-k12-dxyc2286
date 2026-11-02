@@ -35,7 +35,10 @@ def dump(p, o, indent=1):
 
 def is_bsd(x):
     if isinstance(x, dict):
-        if str(x.get("path", "")).startswith(PREFIX):
+        p = str(x.get("path", ""))
+        # 学层索引 path 形如 data/math-bsd/learn/<册>.json；
+        # 讲解索引 path 形如 data/math-bsd-<册>.json（没有桶目录），故用子串判定。
+        if "math-bsd" in p or p.startswith(PREFIX):
             return True
         if x.get("subject") == "math-bsd":
             return True
@@ -51,7 +54,12 @@ def merge_books(new, old):
     res = dict(old)
     res.update({k: v for k, v in new.items() if k != "books"})
     res["books"] = out
-    res["count"] = len(out)
+    # count 口径随文件而异：学层索引 = 课时总数（sum lessonCount），
+    # 讲解索引 = 册数。判据看条目里有没有 lessonCount，别一律写 len(books)。
+    if any("lessonCount" in b for b in out):
+        res["count"] = sum(b.get("lessonCount", 0) for b in out)
+    else:
+        res["count"] = len(out)
     return res
 
 
