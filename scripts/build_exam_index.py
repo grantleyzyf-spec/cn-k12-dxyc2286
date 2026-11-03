@@ -36,6 +36,7 @@ SUBJECT_EDITION = {
     "politics": "统编版",
     "geography-shangwu": "商务星球版", "geography-xiangjiao": "湘教版", "geography-jin": "晋教版",
     "geography-zhongtu-cz": "中图版·钟作慈",
+    "geography-yuejiao": "粤教粤人版",
 }
 
 SUBJECTS = [
@@ -47,6 +48,7 @@ SUBJECTS = [
     "math-qd", "math-sujiao", "math-suke", "math-xiangjiao",
     # 地理各版本桶
     "geography-shangwu", "geography-xiangjiao", "geography-zhongtu-cz", "geography-jin",
+    "geography-yuejiao",
 ]
 
 
