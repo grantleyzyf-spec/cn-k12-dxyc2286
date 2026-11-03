@@ -1,0 +1,86 @@
+name: Validate geography-zhongtu-cz Subject Data
+
+# 中图版（钟作慈）初中地理（geography-zhongtu-cz）学科专用工作流。
+# 单独成文件：validate.yml 由并行会话维护，避免多人同改一份 workflow 互相卷进提交。
+
+on:
+  push:
+    paths:
+      - 'data/geography-zhongtu-cz/**/*.json'
+      - 'data/geography-zhongtu-cz/**/*.md'
+      - 'scripts/test_geo_ztu.py'
+      - 'scripts/check_geo_ztu_*.py'
+      - 'scripts/merge_geo_ztu_content.py'
+      - 'scripts/attach_geo_ztu_std.py'
+      - 'scripts/gen_geo_ztu_*.py'
+      - '.github/workflows/validate-geography-zhongtu-cz.yml'
+  pull_request:
+    paths:
+      - 'data/geography-zhongtu-cz/**/*.json'
+      - 'scripts/test_geo_ztu.py'
+      - '.github/workflows/validate-geography-zhongtu-cz.yml'
+  workflow_dispatch:
+
+jobs:
+  geography_jin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Subject invariants · geography-zhongtu-cz
+        run: python3 scripts/test_geo_ztu.py
+
+      - name: Every exam item carries itemId（整卷测试作答依赖）
+        run: |
+          python3 - <<'PY'
+          import glob, json, sys
+          bad = []
+          for p in glob.glob('data/geography-zhongtu-cz/exams/*/*.json'):
+              d = json.load(open(p, encoding='utf-8'))
+              for sec in d.get('sections') or []:
+                  for it in sec.get('items') or []:
+                      if not it.get('itemId'):
+                          bad.append((p, it.get('no')))
+          print('缺 itemId 的题：', len(bad))
+          for b in bad[:10]:
+              print(' ', b)
+          sys.exit(1 if bad else 0)
+          PY
+
+      - name: Exam gate · geography-zhongtu-cz（逐卷跑卷面结构检查）
+        run: |
+          n=0
+          for p in data/geography-zhongtu-cz/exams/*/*.json; do
+            python3 scripts/check_geo_ztu_exam.py "$p" > /tmp/e.log 2>&1 || { echo "FAIL $p"; tail -8 /tmp/e.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 卷"
+
+      - name: Learn gate · geography-zhongtu-cz（学层成篇逐册跑）
+        run: |
+          shopt -s nullglob
+          files=(data/geography-zhongtu-cz/learn/*.json)
+          if [ ${#files[@]} -eq 0 ]; then echo "无学层成篇，跳过"; exit 0; fi
+          n=0
+          for f in "${files[@]}"; do
+            python3 scripts/check_geo_ztu_learn.py "$f" > /tmp/l.log 2>&1 || { echo "FAIL $f"; tail -8 /tmp/l.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 册学层"
+
+      - name: Lecture gate · geography-zhongtu-cz（讲解逐份跑）
+        run: |
+          shopt -s nullglob
+          files=(data/geography-zhongtu-cz/exam_lectures/*/*.json)
+          if [ ${#files[@]} -eq 0 ]; then echo "无讲解文件，跳过"; exit 0; fi
+          n=0
+          for f in "${files[@]}"; do
+            python3 scripts/check_exam_lecture.py "$f" --subject geography-zhongtu-cz > /tmp/c.log 2>&1 || { echo "FAIL $f"; tail -8 /tmp/c.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 份讲解"
