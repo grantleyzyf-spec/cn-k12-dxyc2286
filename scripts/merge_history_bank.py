@@ -55,11 +55,17 @@ def main():
 
     for fn in files:
         shard = load(os.path.join(SH, fn))
-        out_p = shard["out"]
+        # 工位按合同写的是 `HNN_out.json`；作业单里的 out 字段曾误写成 HNN.json 本身（生成器 bug，已修），
+        # 这里以 `_out.json` 为准、找不到才回落到作业单字段。
+        out_p = os.path.join(SH, f"{shard['shard']}_out.json")
+        if not os.path.exists(out_p):
+            out_p = shard["out"]
         if not os.path.exists(out_p):
             errs.append(f"{shard['shard']}: 缺产物 {out_p}")
             continue
         out = load(out_p)
+        if isinstance(out, list):          # 部分工位按 checker 的 --shard 形状直接写了题目数组
+            out = {"shard": shard["shard"], "topics": [], "questions": out}
         # ---- 题目 ----
         got = {q.get("id"): q for q in out.get("questions") or []}
         for p in shard["points"]:

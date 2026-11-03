@@ -109,7 +109,7 @@ def main():
                 ans_i += 1
             pts.append({**it, "questions": labels})
         shard = {"shard": sid, "book": book_of(group[0]),
-                 "out": os.path.join(OUT, f"{sid}.json"), "points": pts,
+                 "out": os.path.join(OUT, f"{sid}_out.json"), "points": pts,
                  "questionCount": sum(len(p["questions"]) for p in pts)}
         with open(shard["out"], "w", encoding="utf-8") as f:
             json.dump(shard, f, ensure_ascii=False, indent=2)
