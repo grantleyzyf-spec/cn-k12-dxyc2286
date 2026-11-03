@@ -36,7 +36,7 @@ for i in 1 2 3 4 5; do
   sleep 20
 done
 if [ "$OK" = "1" ]; then
-  echo "✅ 已推送：连载已发布 ${NEW} 章（https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/novel/）"
+  echo "✅ 已推送：连载已发布 ${NEW} 章（https://xueketupu.com/novel/）"
 else
   echo "❌ 推送失败（本地已提交 ${CUR}→${NEW} 章，网络恢复后手动 git push 即可）"
   exit 1

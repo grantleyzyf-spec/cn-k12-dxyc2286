@@ -545,7 +545,7 @@ def main():
         })
         rel = "/".join([args.subject, slugify(edition), slugify(book or "未标注册次"), slugify(unit_no + "-" + unit_name)])
         rec["path"] = f"unit-design/{rel}/"
-        rec["url"] = f"https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/teacher/{rec['path']}"
+        rec["url"] = f"https://xueketupu.com/teacher/{rec['path']}"
         rec["fp"] = fp
         seen[dedup_key] = rec
         records.append(rec)

@@ -70,7 +70,7 @@ def shot(name, clip_h=900):
 cdp("Page.enable"); cdp("Runtime.enable")
 cdp("Emulation.setDeviceMetricsOverride", width=1440, height=900, deviceScaleFactor=2, mobile=False)
 
-BASE = "https://grantleyzyf-spec.github.io/cn-k12-dxyc2286"
+BASE = "https://xueketupu.com"
 
 # ① 首页
 print("① 首页")
