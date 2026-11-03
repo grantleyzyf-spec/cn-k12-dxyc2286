@@ -327,7 +327,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--source", default=SRC_DEFAULT)
     ap.add_argument("--limit", type=int, default=100, help="已发布章节数（日更 5 章后改这个数重跑）")
-    ap.add_argument("--site", default="https://grantleyzyf-spec.github.io/cn-k12-dxyc2286")
+    ap.add_argument("--site", default="https://xueketupu.com")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
