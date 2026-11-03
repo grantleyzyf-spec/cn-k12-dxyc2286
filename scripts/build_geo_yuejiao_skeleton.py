@@ -176,7 +176,7 @@ def main():
                     "diagnostic_question": {"question": f"关于「{title}」，下列叙述正确的是？", "answer": ""},
                     "external": False, "standards": ustd,
                     "tags": [dom, title], "prerequisites": [prev] if prev else [],
-                    "prereqUpper": uid, "root_reason": "" if prev else "单元起始课时，无先修",
+                    "prereqUpper": [uid], "root_reason": "" if prev else "单元起始课时，无先修",
                     "curriculumRef": ustd[0]["id"], "verified": False,
                 })
                 if prev:
