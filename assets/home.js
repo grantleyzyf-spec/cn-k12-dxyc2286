@@ -107,6 +107,10 @@
       host.setAttribute('aria-busy', 'false');
       var ns = document.getElementById('n-subjects');
       if (ns) ns.textContent = String(reg.subjects.length);
+      // 页面别处的“N 个学科”文案同源（避免 18 vs 19 自相矛盾）
+      document.querySelectorAll('[data-subject-count]').forEach(function (el) {
+        el.textContent = String(reg.subjects.length);
+      });
       return;
     }
 

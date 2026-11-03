@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>中国 K-12 全学科知识图谱 · 先找到真正没学会的那一步</title>
-<meta name="description" content="18 个学科的中小学知识图谱：知识点、先修关系、诊断题与课标条目。沿先修关系自适应出题，从选中的知识点往回追到薄弱根因，并按学习顺序给出补学路径。免费公益。">
+<meta name="description" content="中小学知识图谱：知识点、先修关系、诊断题与课标条目。沿先修关系自适应出题，从选中的知识点往回追到薄弱根因，并按学习顺序给出补学路径。免费公益。">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%227%22%20fill%3D%22%230f6e62%22%2F%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%222.6%22%20fill%3D%22%23dff3ef%22%2F%3E%3Ccircle%20cx%3D%2222%22%20cy%3D%2210%22%20r%3D%222.6%22%20fill%3D%22%23dff3ef%22%2F%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2222%22%20r%3D%222.6%22%20fill%3D%22%23dff3ef%22%2F%3E%3Ccircle%20cx%3D%2222%22%20cy%3D%2222%22%20r%3D%222.6%22%20fill%3D%22%23dff3ef%22%2F%3E%3Cpath%20d%3D%22M10%2010h12M10%2010v12M22%2022h-12%22%20stroke%3D%22%23dff3ef%22%20stroke-width%3D%221.4%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#0f6e62">
@@ -41,7 +41,7 @@
     </svg>
     <span class="brand-copy">
       <span class="brand-name">中国 K-12 知识图谱</span>
-      <span class="brand-kicker">18 个学科 · 先修诊断</span>
+      <span class="brand-kicker"><span data-subject-count>—</span> 个学科 · 先修诊断</span>
     </span>
   </a>
   <nav class="site-nav" aria-label="主导航">
@@ -63,7 +63,7 @@
 
 <main class="home">
   <section class="hero">
-    <p class="eyebrow">18 个学科 · 小学到高中 · <span data-stat="topics">—</span> 个知识点 · <span data-stat="dependencies">—</span> 条先修边</p>
+    <p class="eyebrow"><span data-subject-count>—</span> 个学科 · 小学到高中 · <span data-stat="topics">—</span> 个知识点 · <span data-stat="dependencies">—</span> 条先修边</p>
     <h1>先找到真正没学会的那一步</h1>
     <p class="lede">
       沿先修关系自适应出题：从你选的知识点往回追，逐层检测前置知识，定位薄弱根因，
@@ -126,7 +126,7 @@
       <p>带 <code>quote</code> 的条目可用脚本回表核验「这段文字是否逐字出现在课标原文里」，避免编造。</p>
     </div>
     <div class="feature">
-      <h3>18 个学科同一套契约</h3>
+      <h3><span data-subject-count>—</span> 个学科同一套契约</h3>
       <p>数学、语文、英语到德语、法语、西班牙语共用节点契约 v2，跨学科可比较、可合并。</p>
     </div>
     <div class="feature">
@@ -206,7 +206,7 @@
   })();
 </script>
 
-<script src="assets/home.js?v=2"></script>
+<script src="assets/home.js?v=3"></script>
 <script>
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js').catch(function (e) { console.log('SW registration failed:', e); });
