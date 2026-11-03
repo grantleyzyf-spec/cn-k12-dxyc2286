@@ -44,6 +44,7 @@ EDITIONS = {
     "geography-kepu": "科普版",
     "geography-shangwu": "商务星球版",
     "geography-xiangjiao": "湘教版",
+    "geography-yuejiao": "粤教粤人版",
     "geography-zhongtu-cz": "中图版·钟作慈",
     "information-technology": "人教版",
     "japanese": "人教版",

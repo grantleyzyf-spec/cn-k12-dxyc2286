@@ -1,0 +1,69 @@
+name: Validate geography-yuejiao Subject Data
+
+# 粤教粤人版地理（geography-yuejiao）学科专用工作流。
+# 单独成文件：validate.yml 由并行会话维护，避免多人同改一份 workflow 互相卷进提交。
+
+on:
+  push:
+    paths:
+      - 'data/geography-yuejiao/**/*.json'
+      - 'scripts/test_geo_yuejiao.py'
+      - 'scripts/check_geo_yuejiao_exam.py'
+      - 'scripts/check_geo_yuejiao_bank.py'
+      - 'scripts/check_geo_yuejiao_learn.py'
+      - '.github/workflows/validate-geography-yuejiao.yml'
+  pull_request:
+    paths:
+      - 'data/geography-yuejiao/**/*.json'
+      - 'scripts/test_geo_yuejiao.py'
+      - '.github/workflows/validate-geography-yuejiao.yml'
+  workflow_dispatch:
+
+jobs:
+  geo_yuejiao:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Subject invariants · geography-yuejiao
+        run: python3 scripts/test_geo_yuejiao.py
+
+      - name: Structure & references
+        run: python3 scripts/validate.py geography-yuejiao
+
+      - name: Schema compliance
+        run: |
+          npm install -g ajv-cli ajv-formats
+          ajv validate -c ajv-formats -s data/schema-topic.json -d data/geography-yuejiao/topics.json
+          if [ -f data/geography-yuejiao/questions.json ]; then
+            ajv validate -c ajv-formats -s data/schema-question.json -d data/geography-yuejiao/questions.json
+          fi
+
+      - name: Exam papers
+        run: |
+          if [ -d data/geography-yuejiao/exams ]; then
+            python3 scripts/check_geo_yuejiao_exam.py --all
+          else
+            echo "尚无试卷（阶段 4 未开）"
+          fi
+
+      - name: Learn layer
+        run: |
+          if ls data/geography-yuejiao/learn/*.json >/dev/null 2>&1; then
+            python3 scripts/check_geo_yuejiao_learn.py --dir data/geography-yuejiao/learn
+          else
+            echo "尚无学层（阶段 5 未开）"
+          fi
+
+      - name: Exam lectures
+        run: |
+          if [ -d data/geography-yuejiao/exam_lectures ]; then
+            python3 scripts/check_exam_lecture.py --subject geography-yuejiao
+          else
+            echo "尚无讲解（阶段 6 未开）"
+          fi
