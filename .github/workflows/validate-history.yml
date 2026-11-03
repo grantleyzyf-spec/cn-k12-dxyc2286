@@ -1,0 +1,78 @@
+name: Validate history Subject Data
+
+# 历史（history）学科专用工作流。
+# 单独成文件：validate.yml 由并行会话维护，避免多人同改一份 workflow 互相卷进提交。
+# 本工作流把「题库硬约束」也接进 CI —— 它此前只在本地跑，
+# 于是 66 条解析不足 20 汉字 / 21 条题干不足 12 字的存量题一直没人拦（2026-11 已全部补写清零）。
+
+on:
+  push:
+    paths:
+      - 'data/history/**/*.json'
+      - 'scripts/test_history.py'
+      - 'scripts/check_history_bank.py'
+      - '.github/workflows/validate-history.yml'
+  pull_request:
+    paths:
+      - 'data/history/**/*.json'
+      - 'scripts/test_history.py'
+      - 'scripts/check_history_bank.py'
+      - '.github/workflows/validate-history.yml'
+  workflow_dispatch:
+
+jobs:
+  history:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Subject invariants · history（35 项不变量）
+        run: python3 scripts/test_history.py
+
+      - name: Bank gate · history（题量 8/点 + 题干/解析/选项/答案位硬约束，--strict）
+        run: python3 scripts/check_history_bank.py --all --strict
+
+      - name: Schema compliance · history
+        run: |
+          npm install -g ajv-cli ajv-formats
+          ajv validate -c ajv-formats -s data/schema-topic.json    -d data/history/topics.json
+          ajv validate -c ajv-formats -s data/schema-question.json -d data/history/questions.json
+
+      - name: Registration · history（subjects.json / subject-groups.json 计数与数据一致）
+        run: |
+          python3 - <<'PY'
+          import json, sys
+          t = json.load(open('data/history/topics.json', encoding='utf-8'))
+          q = json.load(open('data/history/questions.json', encoding='utf-8'))
+          subs = json.load(open('data/subjects.json', encoding='utf-8'))
+          groups = json.load(open('data/subject-groups.json', encoding='utf-8'))
+          bad = []
+          row = [s for s in subs['subjects'] if s['id'] == 'history']
+          if not row or row[0]['count'] != len(t):
+              bad.append(f"subjects.json: {row[0]['count'] if row else '缺失'} != {len(t)}")
+          if subs.get('total_topics') != sum(s['count'] for s in subs['subjects']):
+              bad.append(f"subjects.json total_topics 与各学科之和不符：{subs.get('total_topics')}")
+          g = [s for s in groups['subjects'] if s['id'] == 'history']
+          if not g:
+              bad.append('subject-groups.json 未登记 history')
+          else:
+              if g[0]['topics'] != len(t):
+                  bad.append(f"subject-groups topics {g[0]['topics']} != {len(t)}")
+              if g[0]['questions'] != len(q):
+                  bad.append(f"subject-groups questions {g[0]['questions']} != {len(q)}")
+              for e in g[0].get('editions') or []:
+                  if e['topics'] != len(t) or e['questions'] != len(q):
+                      bad.append(f"edition {e['id']} 计数与数据不符")
+          print('\n'.join(bad) if bad else f"OK history {len(t)} 点 / {len(q)} 题")
+          sys.exit(1 if bad else 0)
+          PY
