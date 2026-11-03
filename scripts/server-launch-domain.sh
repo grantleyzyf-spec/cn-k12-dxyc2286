@@ -46,7 +46,12 @@ fi
 
 say "1/6 拉取站点"
 cd "$REPO" || die "进不去 $REPO"
-git pull --ff-only || echo "⚠ git pull 失败（网络或本地改动），继续用现有文件"
+if [ "${SKIP_PULL:-0}" = "1" ]; then
+  echo "SKIP_PULL=1，跳过 git pull（文件已手工就位）"
+else
+  # 限时 150s：这台机器到 GitHub 的整仓拉取常被掐断，不能让它把签证书卡住
+  timeout 150 git pull --ff-only || echo "⚠ git pull 未完成（网络/超时），继续用现有文件"
+fi
 grep -o '渝ICP备[0-9]*号-[0-9]' data/site-config.json || echo "⚠ site-config.json 里还没有备案号"
 
 say "2/6 准备 certbot"
