@@ -182,7 +182,11 @@ def render_paper(ex, path):
             # 题干末尾若已自带「（　）」就不再补，否则会出现「（　）（　　）」
             raw = it["stem"].rstrip()
             need_blank = it["type"] in ("choice", "multi") and "（" not in raw[-4:]
-            stem = f"{it['no']}．{raw}" + ("（　　）" if need_blank else "")
+            if not need_blank:
+                # 题干已自带「（　）」时改用不换行空格：否则行末只剩一个「（」被推到下一行，
+                # 学生看到的是「题干一行 + 孤零零的括号」，实测被指为排版缺陷
+                raw = re.sub(r"（[\s\u3000]*）\s*$", "（\u00a0\u00a0）", raw)
+            stem = f"{it['no']}．{raw}" + ("（\u00a0\u00a0）" if need_blank else "")
             para(doc, stem, size=10.5, space_after=2, line=1.4, hanging=True, keep_next=True)
             if it["type"] in ("choice", "multi"):
                 opts = it["options"]
