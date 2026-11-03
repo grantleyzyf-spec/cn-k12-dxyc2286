@@ -101,13 +101,8 @@ def main():
             out = dict(old[f])
             out.update({k: v for k, v in new.items() if k != "books"})
             out["books"] = books
-            # count 口径随文件而异：学层索引＝课时总数（lessonCount），讲解索引＝卷数（paperCount）
-            if any("lessonCount" in b for b in books):
-                out["count"] = sum(b.get("lessonCount", 0) for b in books)
-            elif any("paperCount" in b for b in books):
-                out["count"] = sum(b.get("paperCount", 0) for b in books)
-            else:
-                out["count"] = len(books)
+            out["count"] = (sum(b.get("lessonCount", 0) for b in books)
+                            if any("lessonCount" in b for b in books) else len(books))
             print(f"{f}: 本桶册 {len(ours)}，总 {out['count']}（旧 {old[f].get('count')}）")
             if not a.check:
                 dump(p, out, 2)

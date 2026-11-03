@@ -33,15 +33,20 @@ SUBJECT_EDITION = {
     "math-hebei": "冀教版", "math-hujiao": "沪教版", "math-qd": "青岛版",
     "math-sujiao": "苏教版", "math-suke": "苏科版", "math-xiangjiao": "湘教版",
     "mental-health": "北师大版", "chinese": "统编版", "history": "统编版",
+    "politics": "统编版",
+    "geography-shangwu": "商务星球版", "geography-xiangjiao": "湘教版", "geography-jin": "晋教版",
+    "geography-zhongtu-cz": "中图版·钟作慈",
 }
 
 SUBJECTS = [
     "math", "chinese", "english", "physics", "chemistry", "biology", "history", "geography",
     "science", "information-technology", "japanese", "russian", "german", "french", "spanish",
-    "music", "art", "mental-health",
+    "music", "art", "mental-health", "politics",
     # 数学各版本桶（同科异版各自一个桶；出卷后重跑本脚本即进「整卷测试」）
     "math-bj", "math-bsd", "math-ejiao", "math-hebei", "math-hujiao",
     "math-qd", "math-sujiao", "math-suke", "math-xiangjiao",
+    # 地理各版本桶
+    "geography-shangwu", "geography-xiangjiao", "geography-zhongtu-cz", "geography-jin",
 ]
 
 

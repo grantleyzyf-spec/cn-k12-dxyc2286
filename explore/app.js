@@ -21,7 +21,7 @@
     biology: '生物', history: '历史', geography: '地理', science: '科学',
     'information-technology': '信息科技', japanese: '日语', russian: '俄语',
     politics: '政治',
-    german: '德语', french: '法语', spanish: '西班牙语', music: '音乐', art: '美术', 'math-bsd': '数学（北师大版）', 'math-xiangjiao': '数学（湘教版）',
+    german: '德语', french: '法语', spanish: '西班牙语', music: '音乐', art: '美术', 'math-bsd': '数学（北师大版）', 'math-xiangjiao': '数学（湘教版）', 'geography-xiangjiao': '地理（湘教版）', 'geography-jin': '地理（晋教版）', 'geography-kepu': '地理（科普版）', 'geography-shangwu': '地理（商务星球版）', 'geography-zhongtu-cz': '地理（中图版·钟作慈）',
     'math-bj': '数学（北京版）', 'math-qd': '数学（青岛版）', 'math-hujiao': '数学（沪教版）',
     'mental-health': '心理健康'
   };

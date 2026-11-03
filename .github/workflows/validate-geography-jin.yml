@@ -1,0 +1,86 @@
+name: Validate geography-jin Subject Data
+
+# 晋教版初中地理（geography-jin）学科专用工作流。
+# 单独成文件：validate.yml 由并行会话维护，避免多人同改一份 workflow 互相卷进提交。
+
+on:
+  push:
+    paths:
+      - 'data/geography-jin/**/*.json'
+      - 'data/geography-jin/**/*.md'
+      - 'scripts/test_geo_jin.py'
+      - 'scripts/check_geo_jin_*.py'
+      - 'scripts/merge_geo_jin_content.py'
+      - 'scripts/attach_geo_jin_std.py'
+      - 'scripts/gen_geo_jin_*.py'
+      - '.github/workflows/validate-geography-jin.yml'
+  pull_request:
+    paths:
+      - 'data/geography-jin/**/*.json'
+      - 'scripts/test_geo_jin.py'
+      - '.github/workflows/validate-geography-jin.yml'
+  workflow_dispatch:
+
+jobs:
+  geography_jin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Subject invariants · geography-jin
+        run: python3 scripts/test_geo_jin.py
+
+      - name: Every exam item carries itemId（整卷测试作答依赖）
+        run: |
+          python3 - <<'PY'
+          import glob, json, sys
+          bad = []
+          for p in glob.glob('data/geography-jin/exams/*/*.json'):
+              d = json.load(open(p, encoding='utf-8'))
+              for sec in d.get('sections') or []:
+                  for it in sec.get('items') or []:
+                      if not it.get('itemId'):
+                          bad.append((p, it.get('no')))
+          print('缺 itemId 的题：', len(bad))
+          for b in bad[:10]:
+              print(' ', b)
+          sys.exit(1 if bad else 0)
+          PY
+
+      - name: Exam gate · geography-jin（逐卷跑卷面结构检查）
+        run: |
+          n=0
+          for p in data/geography-jin/exams/*/*.json; do
+            python3 scripts/check_geo_jin_exam.py "$p" > /tmp/e.log 2>&1 || { echo "FAIL $p"; tail -8 /tmp/e.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 卷"
+
+      - name: Learn gate · geography-jin（学层成篇逐册跑）
+        run: |
+          shopt -s nullglob
+          files=(data/geography-jin/learn/*.json)
+          if [ ${#files[@]} -eq 0 ]; then echo "无学层成篇，跳过"; exit 0; fi
+          n=0
+          for f in "${files[@]}"; do
+            python3 scripts/check_geo_jin_learn.py "$f" > /tmp/l.log 2>&1 || { echo "FAIL $f"; tail -8 /tmp/l.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 册学层"
+
+      - name: Lecture gate · geography-jin（讲解逐份跑）
+        run: |
+          shopt -s nullglob
+          files=(data/geography-jin/exam_lectures/*/*.json)
+          if [ ${#files[@]} -eq 0 ]; then echo "无讲解文件，跳过"; exit 0; fi
+          n=0
+          for f in "${files[@]}"; do
+            python3 scripts/check_exam_lecture.py "$f" --subject geography-jin > /tmp/c.log 2>&1 || { echo "FAIL $f"; tail -8 /tmp/c.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 份讲解"

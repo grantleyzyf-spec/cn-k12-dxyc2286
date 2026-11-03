@@ -34,11 +34,17 @@ EDITIONS = {
     # 单版本学科：教材出版社/版本名（不写会在站点「版本」下拉里显示成空白）
     "chinese": "统编版",
     "history": "统编版",
+    "politics": "统编版",
     "english": "人教版",
     "physics": "人教版",
     "chemistry": "人教版",
     "biology": "人教版",
     "geography": "人教版",
+    "geography-jin": "晋教版",
+    "geography-kepu": "科普版",
+    "geography-shangwu": "商务星球版",
+    "geography-xiangjiao": "湘教版",
+    "geography-zhongtu-cz": "中图版·钟作慈",
     "information-technology": "人教版",
     "japanese": "人教版",
     "russian": "人教版",
@@ -68,7 +74,7 @@ SUBJECT_LABEL = {
 
 def base_of(dir_id):
     """数据目录 → 学科基础 id：math-bsd → math；其余原样。"""
-    return dir_id.split("-")[0] if dir_id.startswith("math-") else dir_id
+    return dir_id.split("-")[0] if dir_id.startswith(("math-", "geography-")) else dir_id
 
 
 def strip_edition(name):
@@ -144,7 +150,7 @@ def main():
 
     subjects = []
     for base, g in groups.items():
-        eds = sorted(g["editions"], key=lambda e: (0 if e["id"] == "math" else 1, -e["topics"], e["id"]))
+        eds = sorted(g["editions"], key=lambda e: (0 if e["id"] in ("math", "geography") else 1, -e["topics"], e["id"]))
         subjects.append({
             "id": base,
             "name": SUBJECT_NAME.get(base) or g["subject_name"] or base,
