@@ -34,7 +34,7 @@ idx = json.load(open(os.path.join(D, "cn-curriculum-standards.json"), encoding="
 T = {t["id"]: t for t in topics}
 
 # 1 规模与唯一性
-ck("知识点 104 条", len(topics) == 104, len(topics))
+ck("知识点 108 条", len(topics) == 108, len(topics))
 ck("id 唯一", len(T) == len(topics))
 ck("全部 subject=geography", all(t.get("subject") == "geography" for t in topics))
 _per = Counter(q["topicId"] for q in qs)
@@ -63,8 +63,20 @@ need_ch = [
     "八年级下册 第八章 西北地区", "八年级下册 第九章 青藏地区",
     "八年级下册 第十章 中国在世界中",
 ]
-miss_ch = [c for c in need_ch if c not in chn]
-ck("初中册次章节齐全（16 章）", not miss_ch, miss_ch)
+miss_ch = [c for c in [
+    "七年级上册 第一章 地球", "七年级上册 第二章 地图", "七年级上册 第三章 陆地和海洋",
+    "七年级上册 第四章 天气与气候", "七年级上册 第五章 居民与文化", "七年级上册 第六章 发展与合作",
+    "七年级下册 第七章 我们生活的大洲——亚洲", "七年级下册 第八章 我们邻近的地区和国家",
+    "七年级下册 第九章 东半球其他的地区和国家", "七年级下册 第十章 西半球的国家",
+    "七年级下册 第十一章 极地地区",
+    "八年级上册 第一章 从世界看中国", "八年级上册 第二章 中国的自然环境",
+    "八年级上册 第三章 中国的自然资源", "八年级上册 第四章 中国的经济发展",
+    "八年级上册 第五章 建设美丽中国",
+    "八年级下册 第六章 中国的地理差异", "八年级下册 第七章 北方地区",
+    "八年级下册 第八章 南方地区", "八年级下册 第九章 西北地区",
+    "八年级下册 第十章 青藏地区", "八年级下册 第十一章 奋进中的中国",
+] if c not in chn]
+ck("初中册次章节齐全（2026 新版 22 章）", not miss_ch, miss_ch)
 ck("章名不含「十X年级」错写", not [c for c in chn if re.search(r"十[一二三四]年级", c)])
 
 # 3.1 领域分类（原文大批节点误用「地球与宇宙」兜底）
