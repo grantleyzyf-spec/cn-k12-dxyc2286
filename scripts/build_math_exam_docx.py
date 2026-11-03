@@ -144,8 +144,10 @@ def render_paper(ex, path):
     head(doc, ex)
     for sec in ex["sections"]:
         rule = sec.get("rule")
-        # 有的版本（沪教版）把分值说明直接写在节标题里、不给 rule 字段 → 标题原样输出
-        if not rule:
+        # 有的版本（沪教版/地理）把分值说明直接写在节标题里、不给 rule 字段 → 标题原样输出
+        # 也有两处都写的：标题已带「（…分…）」时不再追加，否则会出现「（每小题 3 分，共 54 分）（每小题 3 分，共 54 分）」
+        has_score_in_title = bool(re.search(r"（[^）]*分[^）]*）", sec["title"]))
+        if not rule or has_score_in_title:
             head_txt = sec["title"]
         else:
             # rule 形如「每小题 5 分，共 20 分（全部选对…）」时，两段要并进同一对括号，
@@ -198,7 +200,7 @@ def render_paper(ex, path):
                          size=10.5, space_after=0, line=1.3, hanging=True, keep_next=True)
                     para(doc, "　　".join(f"{o['label']}．{o['text']}" for o in opts[2:]),
                          size=10.5, space_after=4, line=1.3, hanging=True)
-            elif it["type"] == "solve":
+            elif it["type"] in ("solve", "short", "writing", "answer"):
                 blank = max(3, int(round(it["score"] / 6)) * 2)
                 for _ in range(blank):
                     para(doc, "", size=10.5, space_after=0, line=1.6)
@@ -216,7 +218,8 @@ def render_answer(ex, path):
         para(doc, sec["title"], size=12, bold=True, cn="黑体", space_before=8, space_after=4)
         for it in sec["items"]:
             ans = it["answer"]
-            line = f"{it['no']}．{ans}" if it["type"] != "solve" else f"{it['no']}．参考答案：{ans}"
+            line = (f"{it['no']}．{ans}" if it["type"] in ("choice", "multi", "fill", "numeric")
+                    else f"{it['no']}．参考答案：{ans}")
             para(doc, line, size=10.5, bold=True, space_after=1, line=1.35)
             para(doc, f"解析：{it['analysis']}", size=10.5, space_after=1, line=1.35, indent_first=True)
             sr = [s if isinstance(s, str)

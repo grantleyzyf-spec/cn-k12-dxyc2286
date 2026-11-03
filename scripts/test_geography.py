@@ -37,7 +37,9 @@ T = {t["id"]: t for t in topics}
 ck("知识点 104 条", len(topics) == 104, len(topics))
 ck("id 唯一", len(T) == len(topics))
 ck("全部 subject=geography", all(t.get("subject") == "geography" for t in topics))
-ck("题与知识点 1:1", len(qs) == len(topics), f"{len(qs)} vs {len(topics)}")
+_per = Counter(q["topicId"] for q in qs)
+ck("每点 ≥8 题（原 1:1 已升级为 8 题/点）", len(qs) >= len(topics) * 8 and min(_per.values()) >= 8,
+   f"{len(qs)} 题 / {len(topics)} 点 / 最少 {min(_per.values()) if _per else 0} 题")
 ck("题 id 唯一", len({q["id"] for q in qs}) == len(qs))
 
 # 2 册次覆盖（义教 7/8 全四册 + 高中 10–12）
