@@ -54,7 +54,8 @@ ck("subject 全为 geography-zhongtu-cz", all(t.get("subject") == "geography-zho
 # 2 册次与主题覆盖
 books_in = Counter(t["chapter"].split(" ")[0] for t in topics)
 ck("四册齐全且册级点数对表", set(books_in) == set(BOOKS) and all(books_in[b] == BOOK_POINTS[b] for b in BOOKS), dict(books_in))
-per_unit = Counter(t.get("prereqUpper") or t["id"] for t in lessons)
+per_unit = Counter((t.get("prereqUpper")[0] if isinstance(t.get("prereqUpper"), list)
+                         else (t.get("prereqUpper") or t["id"])) for t in lessons)
 ck("每个单元位课时数对表（17 章各 8 + 绪论 1）",
    len(per_unit) == N_UNITS and sum(per_unit.values()) == N_LESSONS and sorted(per_unit.values()).count(1) == 1
    and set(per_unit.values()) == {1, 8}, dict(per_unit))
@@ -117,8 +118,10 @@ ck("课时点先修只挂课时点",
    all(all(T[p]["level"] == "lesson" for p in t.get("prerequisites") or []) for t in lessons),
    [t["id"] for t in lessons if any(T[p]["level"] == "unit" for p in t.get("prerequisites") or [])][:3])
 ck("课时点都有 prereqUpper 且指向本主题单元点",
-   all(t.get("prereqUpper") in T and T[t["prereqUpper"]]["level"] == "unit" for t in lessons),
-   [t["id"] for t in lessons if t.get("prereqUpper") not in T][:3])
+   all((pu := (t.get("prereqUpper")[0] if isinstance(t.get("prereqUpper"), list)
+              else t.get("prereqUpper"))) in T and T[pu]["level"] == "unit" for t in lessons),
+   [t["id"] for t in lessons if (t.get("prereqUpper")[0] if isinstance(t.get("prereqUpper"), list)
+                                  else t.get("prereqUpper")) not in T][:3])
 
 seen, stack = set(), []
 

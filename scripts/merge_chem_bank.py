@@ -41,6 +41,16 @@ def main():
     if missing:
         print("⚠ 分片不齐，先补齐再合并（本次不写）")
         return 1
+    # schema 口径：落盘用 prompt / explanation（stem/analysis 是分片侧字段，schema 禁额外属性）
+    for q in qs:
+        if not q.get("prompt"):
+            q["prompt"] = q.get("stem") or q.get("question") or ""
+        if not q.get("question"):
+            q["question"] = q["prompt"]
+        if not q.get("explanation"):
+            q["explanation"] = q.get("analysis") or ""
+        q.pop("stem", None)
+        q.pop("analysis", None)
     # 按主题与难度排序
     order = {"basic": 0, "standard": 1, "hard": 2}
     qs.sort(key=lambda q: (q["topicId"], order.get(q.get("difficulty"), 3), q["id"]))

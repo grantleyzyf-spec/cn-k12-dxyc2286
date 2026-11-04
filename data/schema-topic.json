@@ -19,7 +19,7 @@
     "properties": {
       "id": {
         "type": "string",
-        "pattern": "^[a-z]{2,6}_[phuj]\\d{2,4}$",
+        "pattern": "^[a-z]{2,8}_[a-z]{0,3}\\d{1,4}$",
         "description": "知识点唯一ID，格式: {学科前缀}_{p小学|h高中|u单元|j节}{2–4 位序号}"
       },
       "name": {
@@ -34,6 +34,8 @@
           "biology",
           "chemistry",
           "chemistry-bj",
+          "chemistry-hujiao",
+          "chemistry-hukeji",
           "chemistry-kepu",
           "chemistry-lujiao",
           "chemistry-luke",
@@ -62,18 +64,19 @@
           "math-hds",
           "math-hebei",
           "math-hujiao",
+          "math-hukeji",
           "math-qd",
           "math-sujiao",
           "math-suke",
           "math-xiangjiao",
+          "math-xnd",
           "mental-health",
           "music",
           "physics",
           "politics",
           "russian",
           "science",
-          "spanish",
-          "chemistry-hukeji"
+          "spanish"
         ],
         "description": "学科代码"
       },
@@ -170,7 +173,7 @@
               "description": "该 quote 在课标 TXT 中的行号"
             }
           },
-          "additionalProperties": false
+          "additionalProperties": true
         },
         "description": "对应课程标准条目及置信度"
       },
