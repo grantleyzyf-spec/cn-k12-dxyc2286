@@ -1,0 +1,61 @@
+name: Validate geography-xiangjiao Subject Data
+
+# 湘教版地理（geography-xiangjiao）学科专用工作流。
+# 单独成文件：validate.yml 由并行会话维护，避免多人同改一份 workflow 互相卷进提交。
+
+on:
+  push:
+    paths:
+      - 'data/geography-xiangjiao/**/*.json'
+      - 'scripts/test_geo_xiangjiao.py'
+      - 'scripts/check_geo_xiangjiao_exam.py'
+      - 'scripts/check_geo_xiangjiao_bank.py'
+      - 'scripts/check_geo_xiangjiao_learn.py'
+      - '.github/workflows/validate-geography-xiangjiao.yml'
+  pull_request:
+    paths:
+      - 'data/geography-xiangjiao/**/*.json'
+      - 'scripts/test_geo_xiangjiao.py'
+      - '.github/workflows/validate-geography-xiangjiao.yml'
+  workflow_dispatch:
+
+jobs:
+  geo_xiangjiao:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Subject invariants · geography-xiangjiao
+        run: python3 scripts/test_geo_xiangjiao.py
+
+      - name: Structure & references
+        run: python3 scripts/validate.py geography-xiangjiao
+
+      - name: Schema compliance
+        run: |
+          npm install -g ajv-cli ajv-formats
+          ajv validate -c ajv-formats -s data/schema-topic.json -d data/geography-xiangjiao/topics.json
+          if [ -f data/geography-xiangjiao/questions.json ]; then
+            ajv validate -c ajv-formats -s data/schema-question.json -d data/geography-xiangjiao/questions.json
+          fi
+
+      - name: Exam papers
+        run: |
+          if [ -d data/geography-xiangjiao/exams ]; then
+            python3 scripts/check_geo_xiangjiao_exam.py --all
+          else
+            echo "尚无试卷（阶段 4 未开）"
+          fi
+
+      - name: Learn layer
+        run: |
+          if ls data/geography-xiangjiao/learn/*.json >/dev/null 2>&1; then
+            python3 scripts/check_geo_xiangjiao_learn.py --dir data/geography-xiangjiao/learn
+          else
+            echo "尚无学层（阶段 5 未开）"
+          fi

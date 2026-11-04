@@ -1,5 +1,18 @@
 # 变更日志
 
+## 0.7.0 · 新增地理·湘教版桶（geography-xiangjiao）
+
+- **教材源**：湘教版地理 9 册（初中 4 ＋ 高中 5）文字层 → `data/geography-xiangjiao/_text/`（3.9–6.4 万汉字/册）。
+- **结构**：教材目录 **39 章 / 124 节** → 知识点 **163 点**（39 单元点 ＋ 124 课时点，`chapter` 口径「<册> 第X章 <章名>[ · 第Y节 <节名>]」）。
+- **内容**：163 点全部回填 description / mastery_criteria / type / tags / 课标引文（义教 2022、高中 2017，逐字回表 100%）。
+- **题库**：1187 题（课时点 8 题、单元点 5 题，39 片 39/39 PASS）。
+- **试卷**：**75 卷 / 1800 题**（39 单元 ＋ 18 期中 ＋ 18 期末），覆盖 163/163 点，`check_geo_xiangjiao_exam.py --all` 75/75 PASS。
+- **学层**：**124 篇**（七段结构，引文回表湘教版教材），合并 9 册；docx 133 份（124 ＋ 9 合订）。
+- **试卷讲解**：75 份（六段结构，24 题全覆盖）。
+- **交付件**：试卷 150 份（75×2）、学层 133 份、讲解 75 份。
+- **门禁与注册**：`scripts/test_geo_xiangjiao.py`（31 项）、`check_geo_xiangjiao_{exam,bank,learn}.py`、专用 CI `validate-geography-xiangjiao.yml`；
+  `schema-topic.json` enum、`data/subjects.json`、`data/subject-groups.json`（地理组「湘教版」版本）、`explore/app.js` 四处注册。
+
 ## 0.6.1 · 地理迁册到 2026 新版章序 + 新增「建设美丽中国」
 
 - **章序迁移（B 方案）**：初中四册 `chapter` 全部改到人教版 2026 春/秋新版（22 章）——

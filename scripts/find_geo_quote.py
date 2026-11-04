@@ -12,6 +12,8 @@
 import os, re, sys
 
 D = os.path.expanduser("~/Desktop/cn-k12-dxyc2286/data/geography/_text")
+if "--root" in sys.argv:
+    D = sys.argv[sys.argv.index("--root") + 1]
 
 
 def main():
@@ -27,8 +29,8 @@ def main():
         print(f"没有 {path}")
         return 1
     raw = open(path, encoding="utf-8").read()
-    # 逐页索引
-    pieces = re.split(r"@@PAGE (\d+)@@\n", raw)
+    # 逐页索引（兼容两种落盘：标记单独一行 / 标记紧跟正文）
+    pieces = re.split(r"@@PAGE (\d+)@@\s*", raw)
     pages = []
     for i in range(1, len(pieces) - 1, 2):
         pages.append((pieces[i], pieces[i + 1]))
