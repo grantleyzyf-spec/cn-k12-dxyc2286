@@ -1,0 +1,86 @@
+name: Validate chemistry-sujiao Subject Data
+
+# 苏教版高中化学（chemistry-sujiao）学科专用工作流。
+# 单独成文件：validate.yml 由并行会话维护，避免多人同改一份 workflow 互相卷进提交。
+
+on:
+  push:
+    paths:
+      - 'data/chemistry-sujiao/**/*.json'
+      - 'data/chemistry-sujiao/**/*.md'
+      - 'scripts/test_chem_editions.py'
+      - 'scripts/check_chem_editions_*.py'
+      - 'scripts/merge_chem_editions_content.py'
+      - 'scripts/attach_chem_editions_std.py'
+      - 'scripts/gen_chem_editions_*.py'
+      - '.github/workflows/validate-chemistry-sujiao.yml'
+  pull_request:
+    paths:
+      - 'data/chemistry-sujiao/**/*.json'
+      - 'scripts/test_chem_editions.py'
+      - '.github/workflows/validate-chemistry-sujiao.yml'
+  workflow_dispatch:
+
+jobs:
+  geography_jin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Subject invariants · chemistry-sujiao
+        run: python3 scripts/test_chem_editions.py chemistry-sujiao
+
+      - name: Every exam item carries itemId（整卷测试作答依赖）
+        run: |
+          python3 - <<'PY'
+          import glob, json, sys
+          bad = []
+          for p in glob.glob('data/chemistry-sujiao/exams/*/*.json'):
+              d = json.load(open(p, encoding='utf-8'))
+              for sec in d.get('sections') or []:
+                  for it in sec.get('items') or []:
+                      if not it.get('itemId'):
+                          bad.append((p, it.get('no')))
+          print('缺 itemId 的题：', len(bad))
+          for b in bad[:10]:
+              print(' ', b)
+          sys.exit(1 if bad else 0)
+          PY
+
+      - name: Exam gate · chemistry-sujiao（逐卷跑卷面结构检查）
+        run: |
+          n=0
+          for p in data/chemistry-sujiao/exams/*/*.json; do
+            python3 scripts/check_chem_editions_exam.py --exam "$p" > /tmp/e.log 2>&1 || { echo "FAIL $p"; tail -8 /tmp/e.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 卷"
+
+      - name: Learn gate · chemistry-sujiao（学层成篇逐册跑）
+        run: |
+          shopt -s nullglob
+          files=(data/chemistry-sujiao/learn/*.json)
+          if [ ${#files[@]} -eq 0 ]; then echo "无学层成篇，跳过"; exit 0; fi
+          n=0
+          for f in "${files[@]}"; do
+            python3 scripts/check_chem_editions_learn.py --bucket chemistry-sujiao --file "$f" > /tmp/l.log 2>&1 || { echo "FAIL $f"; tail -8 /tmp/l.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 册学层"
+
+      - name: Lecture gate · chemistry-sujiao（讲解逐份跑）
+        run: |
+          shopt -s nullglob
+          files=(data/chemistry-sujiao/exam_lectures/*/*.json)
+          if [ ${#files[@]} -eq 0 ]; then echo "无讲解文件，跳过"; exit 0; fi
+          n=0
+          for f in "${files[@]}"; do
+            python3 scripts/check_chem_editions_lecture.py --bucket chemistry-sujiao --file "$f" > /tmp/c.log 2>&1 || { echo "FAIL $f"; tail -8 /tmp/c.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 份讲解"

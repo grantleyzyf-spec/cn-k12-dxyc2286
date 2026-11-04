@@ -1,0 +1,87 @@
+{
+  "shard": "B45",
+  "bucket": "chemistry-sujiao",
+  "questions": [
+    {
+      "id": "csj_u012_q01",
+      "topicId": "csj_u012",
+      "subject": "chemistry-sujiao",
+      "type": "choice",
+      "difficulty": "basic",
+      "prompt": "在水溶液中的离子反应专题中，下列物质属于弱电解质的是（　）",
+      "options": [
+        {"label": "A", "text": "NaCl"},
+        {"label": "B", "text": "CH3COOH"},
+        {"label": "C", "text": "蔗糖"},
+        {"label": "D", "text": "盐酸"}
+      ],
+      "choices": [
+        {"label": "A", "text": "NaCl"},
+        {"label": "B", "text": "CH3COOH"},
+        {"label": "C", "text": "蔗糖"},
+        {"label": "D", "text": "盐酸"}
+      ],
+      "answer": "B",
+      "explanation": "电解质按在水中是否完全电离分为强电解质和弱电解质。NaCl 是强电解质，在水中完全电离为 Na+ 和 Cl−；CH3COOH 在水中只有少部分分子电离出 CH3COO− 和 H+，存在电离平衡，属于弱电解质；蔗糖溶于水不电离，是非电解质；盐酸是 HCl 的水溶液，属于混合物，既不是电解质也不是非电解质。故选 B。"
+    },
+    {
+      "id": "csj_u012_q02",
+      "topicId": "csj_u012",
+      "subject": "chemistry-sujiao",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "常温下，将 0.1 mol/L 的 CH3COOH 溶液加水稀释，下列说法正确的是（　）",
+      "options": [
+        {"label": "A", "text": "CH3COOH 的电离程度减小"},
+        {"label": "B", "text": "溶液中 c(H+) 增大"},
+        {"label": "C", "text": "溶液中 c(OH−) 增大"},
+        {"label": "D", "text": "溶液的 pH 减小"}
+      ],
+      "choices": [
+        {"label": "A", "text": "CH3COOH 的电离程度减小"},
+        {"label": "B", "text": "溶液中 c(H+) 增大"},
+        {"label": "C", "text": "溶液中 c(OH−) 增大"},
+        {"label": "D", "text": "溶液的 pH 减小"}
+      ],
+      "answer": "C",
+      "explanation": "加水稀释时，弱电解质的电离平衡向电离方向移动，电离程度增大，故 A 错。稀释使体积增大，虽然电离出的 H+ 物质的量略有增加，但 c(H+) 仍然减小，pH 反而增大，故 B、D 错。由常温下 Kw = c(H+)·c(OH−) 为定值可知，c(H+) 减小则 c(OH−) 增大，故 C 正确。故选 C。"
+    },
+    {
+      "id": "csj_u012_q03",
+      "topicId": "csj_u012",
+      "subject": "chemistry-sujiao",
+      "type": "fill",
+      "difficulty": "basic",
+      "prompt": "常温下，某溶液中 c(H+) = 1×10^−3 mol/L，则该溶液的 pH 为 ____。",
+      "options": [],
+      "choices": [],
+      "answer": "3",
+      "explanation": "pH 的定义是溶液中氢离子浓度的负常用对数，即 pH = −lg c(H+)。把 c(H+) = 1×10^−3 mol/L 代入，得 pH = −lg(10^−3) = 3。常温下该值小于 7，说明溶液显酸性。所以本题答案为 3。"
+    },
+    {
+      "id": "csj_u012_q04",
+      "topicId": "csj_u012",
+      "subject": "chemistry-sujiao",
+      "type": "numeric",
+      "difficulty": "standard",
+      "prompt": "常温下，某 H2SO4 溶液的物质的量浓度为 0.005 mol/L，硫酸在水中完全电离。则该溶液中 c(H+) 为 ____ mol/L（只填数值）。",
+      "options": [],
+      "choices": [],
+      "answer": "0.01",
+      "explanation": "硫酸是二元强酸，在水中完全电离，1 mol H2SO4 电离出 2 mol H+ 和 1 mol SO4^2−。因此 c(H+) 等于硫酸浓度的两倍，即 2×0.005 mol/L = 0.01 mol/L。注意不能把硫酸的浓度直接当作氢离子浓度，这是常见的失分点。答案依据：c(H+) = 2c(H2SO4) = 0.01 mol/L。",
+      "verify": "2*0.005"
+    },
+    {
+      "id": "csj_u012_q05",
+      "topicId": "csj_u012",
+      "subject": "chemistry-sujiao",
+      "type": "short-answer",
+      "difficulty": "hard",
+      "prompt": "向盛有 CaSO4 沉淀的悬浊液中加入 Na2CO3 溶液并搅拌，一段时间后沉淀逐渐转化为 CaCO3。请用沉淀溶解平衡的原理说明这一转化的原因，并举出一条该原理在工业生产中的实际应用。",
+      "options": [],
+      "choices": [],
+      "answer": "CaSO4 悬浊液中存在沉淀溶解平衡 CaSO4(s) ⇌ Ca2+(aq) + SO4^2−(aq)，溶液中始终有一定浓度的 Ca2+；加入 Na2CO3 后 CO3^2− 与 Ca2+ 结合，使溶液中 c(Ca2+)·c(CO3^2−) 超过 CaCO3 的溶度积，生成溶解度更小的 CaCO3 沉淀，c(Ca2+) 随之降低，CaSO4 的溶解平衡不断向右移动，最终大部分 CaSO4 转化为 CaCO3；工业上可用 Na2CO3 把锅炉水垢中的 CaSO4 转化为疏松的 CaCO3，再加盐酸除去，也可用可溶性碳酸盐沉淀法除去废水中的 Ca2+。",
+      "explanation": "沉淀转化的实质是沉淀溶解平衡的移动：两种难溶电解质中溶度积较大的沉淀，可以转化为溶度积更小的沉淀。CaCO3 的溶度积远小于 CaSO4，加入 CO3^2− 后生成 CaCO3 使 c(Ca2+) 下降，CaSO4 的沉淀溶解平衡右移而持续溶解，转化得以进行。答案依据：沉淀转化遵循向溶解度更小的方向进行。"
+    }
+  ]
+}

@@ -34,21 +34,29 @@ SUBJECT_EDITION = {
     "math-sujiao": "苏教版", "math-suke": "苏科版", "math-xiangjiao": "湘教版",
     "mental-health": "北师大版", "chinese": "统编版", "history": "统编版",
     "politics": "统编版",
+    "geography-kepu": "科普版",
+    "geography-lujiao": "鲁教版",
     "geography-shangwu": "商务星球版", "geography-xiangjiao": "湘教版", "geography-jin": "晋教版",
     "geography-zhongtu-cz": "中图版·钟作慈",
     "geography-yuejiao": "粤教粤人版",
+    "chemistry-lujiao": "鲁教版", "chemistry-luke": "鲁科版", "chemistry-hujiao": "沪教版",
+    "chemistry-bj": "北京版",
+    "chemistry-yuejiao": "科学粤教版", "chemistry-kepu": "科普版", "chemistry-sujiao": "苏教版",
 }
 
 SUBJECTS = [
     "math", "chinese", "english", "physics", "chemistry", "biology", "history", "geography",
     "science", "information-technology", "japanese", "russian", "german", "french", "spanish",
-    "music", "art", "mental-health", "politics",
+    "music", "art", "mental-health", "politics", "geography-kepu", "geography-lujiao",
     # 数学各版本桶（同科异版各自一个桶；出卷后重跑本脚本即进「整卷测试」）
     "math-bj", "math-bsd", "math-ejiao", "math-hebei", "math-hujiao",
     "math-qd", "math-sujiao", "math-suke", "math-xiangjiao",
     # 地理各版本桶
     "geography-shangwu", "geography-xiangjiao", "geography-zhongtu-cz", "geography-jin",
     "geography-yuejiao",
+    # 化学各版本桶
+    "chemistry-lujiao", "chemistry-luke", "chemistry-hujiao", "chemistry-yuejiao",
+    "chemistry-bj", "chemistry-kepu", "chemistry-sujiao",
 ]
 
 
