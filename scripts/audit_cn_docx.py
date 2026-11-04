@@ -129,6 +129,7 @@ def main():
     ap.add_argument("--root", default=ROOT)
     ap.add_argument("--book", default=None, help="只核某册")
     ap.add_argument("--skip-learn", action="store_true")
+    ap.add_argument("--learn-max", type=int, default=2680, help="学层 docx 汉字上限（md 契约上限 + 卷头/小节标题开销）")
     ap.add_argument("--skip-exam", action="store_true")
     ap.add_argument("--skip-lecture", action="store_true")
     a = ap.parse_args()
@@ -216,7 +217,7 @@ def main():
                 miss = [k[0] for k in SEC7 if not any(w in body for w in k)]
                 A.ck(not miss, f"学层缺段 {miss}：{book}/{L['title']}")
                 n = len(HAN.findall(body))
-                A.ck(1200 <= n <= 2680, f"学层字数出带 {n}：{book}/{L['title']}")
+                A.ck(1200 <= n <= a.learn_max, f"学层字数出带 {n}：{book}/{L['title']}")
                 A.ck(not PLACEHOLDER.search(body), f"学层占位符：{book}/{L['title']}")
 
     # ---------------- 合订本 ----------------
