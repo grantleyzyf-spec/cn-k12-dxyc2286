@@ -99,6 +99,8 @@ CH_TMPL = """<!DOCTYPE html>
   body.night {{ background: #14181c; }}
   body.night .content p, body.night h1, body.night .meta, body.night .bar, body.night .note {{ color: #d6dde5; }}
   body.night .cta, body.night .bar button, body.night .pager a {{ background: #1c2228; border-color: #2c343c; color: #d6dde5; }}
+  .readstat {{ text-align: center; font-size: 13px; color: var(--ink-2); margin: 16px 0 0; }}
+  body.night .readstat {{ color: #8b98a5; }}
 </style>
 <script type="application/ld+json">{jsonld}</script>
 </head>
@@ -127,6 +129,8 @@ CH_TMPL = """<!DOCTYPE html>
 
   <div class="pager">{prev}{next}</div>
 
+  <p class="readstat" id="readstat" hidden>阅读 <span id="readnum">0</span> 次</p>
+
   <div class="cta">
     <b>追更 / 催更 / 讨论：公众号「{account}」</b>
     <div class="row">
@@ -154,6 +158,17 @@ CH_TMPL = """<!DOCTYPE html>
   document.getElementById('font-plus').onclick = function () {{ size = Math.min(26, size + 1); localStorage.setItem('k12novel.size', size); apply(); }};
   document.getElementById('font-minus').onclick = function () {{ size = Math.max(14, size - 1); localStorage.setItem('k12novel.size', size); apply(); }};
   document.getElementById('night').onclick = function () {{ night = !night; localStorage.setItem('k12novel.night', night ? '1' : '0'); apply(); }};
+  // 阅读次数：服务器侧从 Nginx 日志增量统计，前端只读静态 JSON（取不到就整行隐藏）
+  fetch('{root}_counts/novel.json', {{ cache: 'no-store' }})
+    .then(function (r) {{ return r.ok ? r.json() : null; }})
+    .then(function (d) {{
+      var c = d && d.chapters && d.chapters['{n}'];
+      if (typeof c === 'number' && c > 0) {{
+        document.getElementById('readnum').textContent = c.toLocaleString('zh-CN');
+        document.getElementById('readstat').hidden = false;
+      }}
+    }})
+    .catch(function () {{}});
 }})();
 </script>
 </body>
