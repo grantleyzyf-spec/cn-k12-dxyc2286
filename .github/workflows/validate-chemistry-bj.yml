@@ -1,0 +1,90 @@
+name: Validate chemistry-bj Subject Data
+
+# 北京版初中化学（chemistry-bj）学科专用工作流。
+# 单独成文件：validate.yml 由并行会话维护，避免多人同改一份 workflow 互相卷进提交。
+
+on:
+  push:
+    paths:
+      - 'data/chemistry-bj/**/*.json'
+      - 'data/chemistry-bj/**/*.md'
+      - 'scripts/test_chem_editions.py'
+      - 'scripts/check_chem_editions_*.py'
+      - 'scripts/merge_chem_editions_*.py'
+      - 'scripts/gen_chem_editions_*.py'
+      - 'scripts/build_chem_editions*.py'
+      - 'scripts/chem_bj_cz_data.py'
+      - '.github/workflows/validate-chemistry-bj.yml'
+  pull_request:
+    paths:
+      - 'data/chemistry-bj/**/*.json'
+      - 'scripts/test_chem_editions.py'
+      - '.github/workflows/validate-chemistry-bj.yml'
+  workflow_dispatch:
+
+jobs:
+  chemistry_bj:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Subject invariants · chemistry-bj
+        run: python3 scripts/test_chem_editions.py chemistry-bj
+
+      - name: Every exam item carries itemId（整卷测试作答依赖）
+        run: |
+          python3 - <<'PY'
+          import glob, json, sys
+          bad = []
+          for p in glob.glob('data/chemistry-bj/exams/*/*.json'):
+              d = json.load(open(p, encoding='utf-8'))
+              for sec in d.get('sections') or []:
+                  for it in sec.get('items') or []:
+                      if not it.get('itemId'):
+                          bad.append((p, it.get('no')))
+          print('缺 itemId 的题：', len(bad))
+          for b in bad[:10]:
+              print(' ', b)
+          sys.exit(1 if bad else 0)
+          PY
+
+      - name: Exam gate · chemistry-bj（逐卷跑卷面结构检查）
+        run: |
+          shopt -s nullglob
+          files=(data/chemistry-bj/exams/*/*.json)
+          if [ ${#files[@]} -eq 0 ]; then echo "无试卷，跳过"; exit 0; fi
+          n=0
+          for p in "${files[@]}"; do
+            python3 scripts/check_chem_editions_exam.py --exam "$p" > /tmp/e.log 2>&1 || { echo "FAIL $p"; tail -8 /tmp/e.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 卷"
+
+      - name: Learn gate · chemistry-bj（学层成篇逐册跑）
+        run: |
+          shopt -s nullglob
+          files=(data/chemistry-bj/learn/*.json)
+          if [ ${#files[@]} -eq 0 ]; then echo "无学层成篇，跳过"; exit 0; fi
+          n=0
+          for f in "${files[@]}"; do
+            python3 scripts/check_chem_editions_learn.py --bucket chemistry-bj --file "$f" > /tmp/l.log 2>&1 || { echo "FAIL $f"; tail -8 /tmp/l.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 册学层"
+
+      - name: Lecture gate · chemistry-bj（讲解逐份跑）
+        run: |
+          shopt -s nullglob
+          files=(data/chemistry-bj/exam_lectures/*/*.json)
+          if [ ${#files[@]} -eq 0 ]; then echo "无讲解文件，跳过"; exit 0; fi
+          n=0
+          for f in "${files[@]}"; do
+            python3 scripts/check_chem_editions_lecture.py --bucket chemistry-bj --file "$f" > /tmp/c.log 2>&1 || { echo "FAIL $f"; tail -8 /tmp/c.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 份讲解"
