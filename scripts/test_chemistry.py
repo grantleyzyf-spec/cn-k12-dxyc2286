@@ -83,8 +83,8 @@ bad_choice = [q["id"] for q in qs if q.get("type") == "choice"
               and (len(q.get("options") or []) != 4
                    or q.get("answer") not in [o.get("label") for o in q.get("options") or []])]
 ck("选择题 4 选项且答案在选项内", not bad_choice, bad_choice[:5])
-ck("题干 ≥8 字", all(len(q.get("prompt", "")) >= 8 for q in qs))
-ck("每题有解析", all(len(q.get("explanation", "")) >= 4 for q in qs))
+ck("题干 ≥8 字", all(len(q.get("stem") or q.get("prompt") or "") >= 8 for q in qs))
+ck("每题有解析", all(len(q.get("analysis") or q.get("explanation") or "") >= 4 for q in qs))
 ck("numeric 有 verify", all(q.get("verify") for q in qs if q.get("type") == "numeric"))
 need = ["name", "domain", "grade", "semester", "chapter", "type", "description", "mastery_criteria"]
 ck("核心字段齐全", all(all(t.get(k) for k in need) for t in topics))

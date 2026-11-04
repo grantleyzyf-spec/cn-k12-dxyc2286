@@ -1,0 +1,59 @@
+name: Validate chemistry Subject Data
+
+# 人教版化学（chemistry）学科专用工作流。
+# 单独成文件：validate.yml 由并行会话维护，避免多人同改一份 workflow 互相卷进提交。
+
+on:
+  push:
+    paths:
+      - 'data/chemistry/**/*.json'
+      - 'scripts/test_chemistry.py'
+      - 'scripts/check_chem_*.py'
+      - 'scripts/gen_chem_*.py'
+      - 'scripts/merge_chem_*.py'
+      - 'scripts/build_chem_*.py'
+      - 'scripts/assign_chem_standards.py'
+      - '.github/workflows/validate-chemistry.yml'
+  pull_request:
+    paths:
+      - 'data/chemistry/**/*.json'
+      - 'scripts/test_chemistry.py'
+      - '.github/workflows/validate-chemistry.yml'
+  workflow_dispatch:
+
+jobs:
+  chemistry:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Subject invariants · chemistry
+        run: python3 scripts/test_chemistry.py
+
+      - name: Exam gate · chemistry（逐卷跑卷面结构检查）
+        run: python3 scripts/check_chem_exam.py --all
+
+      - name: Learn gate · chemistry（逐册跑学层检查）
+        run: |
+          shopt -s nullglob
+          files=(data/chemistry/learn/*.json)
+          if [ ${#files[@]} -eq 0 ]; then echo "无学层成篇，跳过"; exit 0; fi
+          for f in "${files[@]}"; do
+            python3 scripts/check_chem_learn.py "$f" > /tmp/l.log 2>&1 || { echo "FAIL $f"; tail -8 /tmp/l.log; exit 1; }
+          done
+          echo "PASS ${#files[@]} 册学层"
+
+      - name: Lecture gate · chemistry（讲解逐份跑）
+        run: |
+          shopt -s nullglob
+          files=(data/chemistry/exam_lectures/*/*.json)
+          if [ ${#files[@]} -eq 0 ]; then echo "无讲解文件，跳过"; exit 0; fi
+          for f in "${files[@]}"; do
+            python3 scripts/check_exam_lecture.py "$f" --subject chemistry > /tmp/c.log 2>&1 || { echo "FAIL $f"; tail -8 /tmp/c.log; exit 1; }
+          done
+          echo "PASS ${#files[@]} 份讲解"
