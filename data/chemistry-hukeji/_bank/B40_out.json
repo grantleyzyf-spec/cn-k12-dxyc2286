@@ -1,0 +1,87 @@
+{
+  "shard": "B40",
+  "bucket": "chemistry-hukeji",
+  "questions": [
+    {
+      "id": "chk_u010_q01",
+      "topicId": "chk_u010",
+      "subject": "chemistry-hukeji",
+      "type": "choice",
+      "difficulty": "basic",
+      "prompt": "下列物质溶于水后，其水溶液中存在电离平衡的是（　）",
+      "options": [
+        {"label": "A", "text": "氯化钠"},
+        {"label": "B", "text": "醋酸"},
+        {"label": "C", "text": "氯化氢"},
+        {"label": "D", "text": "硝酸钾"}
+      ],
+      "choices": [
+        {"label": "A", "text": "氯化钠"},
+        {"label": "B", "text": "醋酸"},
+        {"label": "C", "text": "氯化氢"},
+        {"label": "D", "text": "硝酸钾"}
+      ],
+      "answer": "B",
+      "explanation": "氯化钠、氯化氢、硝酸钾溶于水后都完全电离，溶液中不存在未电离的溶质分子，因而没有电离平衡；醋酸是弱电解质，只有少部分分子电离成离子，溶液中未电离的醋酸分子与离子之间同时存在电离和结合两个过程，速率相等时即建立电离平衡。故选 B。"
+    },
+    {
+      "id": "chk_u010_q02",
+      "topicId": "chk_u010",
+      "subject": "chemistry-hukeji",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "将 0.10 mol·L^-1 的醋酸溶液加水稀释，下列叙述正确的是（　）",
+      "options": [
+        {"label": "A", "text": "电离程度减小，溶液的 pH 减小"},
+        {"label": "B", "text": "电离程度增大，溶液中 c(H+) 减小"},
+        {"label": "C", "text": "电离程度增大，溶液中 c(H+) 增大"},
+        {"label": "D", "text": "电离程度不变，溶液的 pH 不变"}
+      ],
+      "choices": [
+        {"label": "A", "text": "电离程度减小，溶液的 pH 减小"},
+        {"label": "B", "text": "电离程度增大，溶液中 c(H+) 减小"},
+        {"label": "C", "text": "电离程度增大，溶液中 c(H+) 增大"},
+        {"label": "D", "text": "电离程度不变，溶液的 pH 不变"}
+      ],
+      "answer": "B",
+      "explanation": "加水稀释使各微粒浓度同时减小，按浓度商判断，平衡向电离方向移动，故电离程度增大；但溶液体积增大的倍数大于氢离子物质的量增大的倍数，氢离子浓度总体仍然减小，酸性减弱，pH 增大。稀释有利于电离但不能改变浓度减小的总趋势。故选 B。"
+    },
+    {
+      "id": "chk_u010_q03",
+      "topicId": "chk_u010",
+      "subject": "chemistry-hukeji",
+      "type": "fill",
+      "difficulty": "basic",
+      "prompt": "常温下，0.005 mol·L^-1 的硫酸溶液中，c(H+) 约为 ____ mol·L^-1（硫酸按二元强酸处理）。",
+      "options": [],
+      "choices": [],
+      "answer": "0.01",
+      "explanation": "硫酸是二元强酸，在水溶液中两步电离都完全进行，每个硫酸分子可提供两个氢离子，故 c(H+) 等于硫酸浓度的两倍，即 0.005 mol·L^-1×2＝0.01 mol·L^-1。依据是强电解质完全电离与化学式中氢原子数目。"
+    },
+    {
+      "id": "chk_u010_q04",
+      "topicId": "chk_u010",
+      "subject": "chemistry-hukeji",
+      "type": "numeric",
+      "difficulty": "standard",
+      "prompt": "常温下，0.10 mol·L^-1 的氨水中已电离的一水合氨占原有总量的 1.3%，已知 lg1.3≈0.11，则该溶液的 pH 约为多少？",
+      "options": [],
+      "choices": [],
+      "answer": "11.11",
+      "explanation": "氨水部分电离：NH3·H2O 生成 NH4+ 与 OH-，故 c(OH-)＝0.10 mol·L^-1×1.3%＝1.3×10^-3 mol·L^-1。取负对数得 pOH＝3－lg1.3≈3－0.11＝2.89，再由常温下 pH＋pOH＝14 得 pH≈14－2.89＝11.11。答案依据是电离度与水的离子积的换算关系。",
+      "verify": "14-2.89"
+    },
+    {
+      "id": "chk_u010_q05",
+      "topicId": "chk_u010",
+      "subject": "chemistry-hukeji",
+      "type": "short-answer",
+      "difficulty": "hard",
+      "prompt": "实验室配制氯化铁溶液时，常先将其溶于较浓的盐酸中再加水稀释。请说明这样操作的原因，并写出氯化铁水解的离子方程式。",
+      "options": [],
+      "choices": [],
+      "answer": "氯化铁是强酸弱碱盐，铁离子水解使溶液显酸性，离子方程式为 Fe3+＋3H2O 可逆生成 Fe(OH)3＋3H+；；水解程度虽小，但稀释时溶液变稀、酸性被削弱，水解平衡右移，生成的氢氧化铁使溶液出现浑浊，甚至影响溶质的量；；先溶于较浓盐酸可提高溶液中氢离子浓度，使水解平衡向左移动，抑制铁离子水解，从而得到澄清的氯化铁溶液。",
+      "explanation": "盐类水解的实质是离子与水电离出的氢离子或氢氧根结合，生成弱电解质。铁离子水解生成氢氧化铁和氢离子，属于可逆过程；按浓度对平衡的影响，增大生成物氢离子浓度可使平衡逆向移动，因此用盐酸抑制水解。答案依据是水解平衡移动原理与离子方程式的书写规则。"
+    }
+  ]
+}

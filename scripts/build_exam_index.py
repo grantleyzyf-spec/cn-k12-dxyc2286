@@ -42,6 +42,7 @@ SUBJECT_EDITION = {
     "chemistry-lujiao": "鲁教版", "chemistry-luke": "鲁科版", "chemistry-hujiao": "沪教版",
     "chemistry-bj": "北京版",
     "chemistry-yuejiao": "科学粤教版", "chemistry-kepu": "科普版", "chemistry-sujiao": "苏教版",
+    "chemistry-hukeji": "沪科技版",
 }
 
 SUBJECTS = [
@@ -56,7 +57,7 @@ SUBJECTS = [
     "geography-yuejiao",
     # 化学各版本桶
     "chemistry-lujiao", "chemistry-luke", "chemistry-hujiao", "chemistry-yuejiao",
-    "chemistry-bj", "chemistry-kepu", "chemistry-sujiao",
+    "chemistry-bj", "chemistry-kepu", "chemistry-sujiao", "chemistry-hukeji",
 ]
 
 

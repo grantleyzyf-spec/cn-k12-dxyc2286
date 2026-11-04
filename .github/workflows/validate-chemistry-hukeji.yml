@@ -1,0 +1,70 @@
+name: Validate chemistry-hukeji Subject Data
+
+# 沪科技版高中化学（chemistry-hukeji）学科专用工作流。
+# 单独成文件：validate.yml 由并行会话维护，避免多人同改一份 workflow 互相卷进提交。
+
+on:
+  push:
+    paths:
+      - 'data/chemistry-hukeji/**/*.json'
+      - 'scripts/test_chem_editions.py'
+      - 'scripts/check_chem_editions_bank.py'
+      - 'scripts/check_chem_editions_exam.py'
+      - 'scripts/check_chem_editions_learn.py'
+      - 'scripts/check_chem_editions_lecture.py'
+      - '.github/workflows/validate-chemistry-hukeji.yml'
+  pull_request:
+    paths:
+      - 'data/chemistry-hukeji/**/*.json'
+      - 'scripts/test_chem_editions.py'
+      - '.github/workflows/validate-chemistry-hukeji.yml'
+  workflow_dispatch:
+
+jobs:
+  chem_hukeji:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Subject invariants · chemistry-hukeji
+        run: python3 scripts/test_chem_editions.py chemistry-hukeji
+
+      - name: Structure & references
+        run: python3 scripts/validate.py chemistry-hukeji
+
+      - name: Schema compliance
+        run: |
+          npm install -g ajv-cli ajv-formats
+          ajv validate -c ajv-formats -s data/schema-topic.json -d data/chemistry-hukeji/topics.json
+          if [ -f data/chemistry-hukeji/questions.json ]; then
+            ajv validate -c ajv-formats -s data/schema-question.json -d data/chemistry-hukeji/questions.json
+          fi
+
+      - name: Exam papers
+        run: |
+          if [ -d data/chemistry-hukeji/exams ]; then
+            python3 scripts/check_chem_editions_exam.py --subject chemistry-hukeji --all
+          else
+            echo "尚无试卷（阶段 4 未开）"
+          fi
+
+      - name: Learn layer
+        run: |
+          if ls data/chemistry-hukeji/learn/_parts/*/*.json >/dev/null 2>&1; then
+            python3 scripts/check_chem_editions_learn.py --bucket chemistry-hukeji --all
+          else
+            echo "尚无学层（阶段 5 未开）"
+          fi
+
+      - name: Exam lectures
+        run: |
+          if [ -d data/chemistry-hukeji/exam_lectures ]; then
+            python3 scripts/check_chem_editions_lecture.py --bucket chemistry-hukeji --all
+          else
+            echo "尚无讲解（阶段 6 未开）"
+          fi

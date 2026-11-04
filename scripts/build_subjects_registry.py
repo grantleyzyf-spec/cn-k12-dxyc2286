@@ -21,6 +21,7 @@ OUT = os.path.join(DATA, "subject-groups.json")   # ⚠️ 不要覆盖 data/sub
 
 # 版本目录 → 版本名（人教版排第一，其余按体量）
 EDITIONS = {
+    "geography-lujiao": "鲁教版",
     "math": "人教版",
     "math-bj": "北京版",
     "math-bsd": "北师大版",
@@ -38,6 +39,14 @@ EDITIONS = {
     "english": "人教版",
     "physics": "人教版",
     "chemistry": "人教版",
+    "chemistry-kepu": "科普版",
+    "chemistry-lujiao": "鲁教版",
+    "chemistry-luke": "鲁科版",
+    "chemistry-bj": "北京版",
+    "chemistry-hujiao": "沪教版",
+    "chemistry-sujiao": "苏教版",
+    "chemistry-hukeji": "沪科技版",
+    "chemistry-yuejiao": "科学粤教版",
     "biology": "人教版",
     "geography": "人教版",
     "geography-jin": "晋教版",
@@ -74,8 +83,13 @@ SUBJECT_LABEL = {
 
 
 def base_of(dir_id):
-    """数据目录 → 学科基础 id：math-bsd → math；其余原样。"""
-    return dir_id.split("-")[0] if dir_id.startswith(("math-", "geography-")) else dir_id
+    """数据目录 → 学科基础 id：math-bsd → math；chemistry-yuejiao → chemistry；其余原样。"""
+    for pref in ("math-", "geography-", "chemistry-", "biology-", "physics-",
+                 "politics-", "history-", "english-", "art-", "music-",
+                 "chinese-", "mental-health-", "information-technology-"):
+        if dir_id.startswith(pref):
+            return dir_id.split("-")[0]
+    return dir_id
 
 
 def strip_edition(name):
