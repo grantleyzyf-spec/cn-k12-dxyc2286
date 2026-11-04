@@ -1,0 +1,574 @@
+{
+ "examId": "hds8x_midA",
+ "paper": "期中测试卷A",
+ "book": "八年级下册",
+ "kind": "mid",
+ "stage": "初中",
+ "grade": 8,
+ "duration": 90,
+ "fullScore": 120,
+ "scope": [
+  "八年级下册 第15章 分式",
+  "八年级下册 第16章 函数及其图象",
+  "八年级下册 第17章 平行四边形"
+ ],
+ "sections": [
+  {
+   "title": "一、选择题（每小题 3 分，共 30 分）",
+   "rule": "每小题 3 分，共 30 分",
+   "items": [
+    {
+     "no": 1,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "hds_p227"
+     ],
+     "stem": "若分式 (x-3)/(x+2) 的值为 0，则 x 的取值是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3"
+      },
+      {
+       "label": "B",
+       "text": "-2"
+      },
+      {
+       "label": "C",
+       "text": "3 或 -2"
+      },
+      {
+       "label": "D",
+       "text": "0"
+      }
+     ],
+     "answer": "A",
+     "analysis": "分式的值为 0 需要分子为 0 且分母不为 0。由 x-3=0 得 x=3，此时 x+2=5 不为 0，故 x=3，选 A；x=-2 会使分母为 0，分式无意义。"
+    },
+    {
+     "no": 2,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "hds_p236"
+     ],
+     "stem": "计算 (-2)⁰ + 2⁻² 的结果是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "1/4"
+      },
+      {
+       "label": "B",
+       "text": "3/4"
+      },
+      {
+       "label": "C",
+       "text": "5/4"
+      },
+      {
+       "label": "D",
+       "text": "2"
+      }
+     ],
+     "answer": "C",
+     "analysis": "任何不为 0 的数的零次幂都等于 1，故 (-2)⁰=1；2⁻² 等于 1/4；两式相加得 1+1/4=5/4，所以选 C，其余选项都是只算了其中一项的结果。"
+    },
+    {
+     "no": 3,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "hds_p237"
+     ],
+     "stem": "用科学记数法表示 0.0000325，结果是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "3.25×10⁻⁵"
+      },
+      {
+       "label": "B",
+       "text": "3.25×10⁻⁴"
+      },
+      {
+       "label": "C",
+       "text": "32.5×10⁻⁵"
+      },
+      {
+       "label": "D",
+       "text": "0.325×10⁻³"
+      }
+     ],
+     "answer": "A",
+     "analysis": "把小数点向右移动 5 位得到系数 3.25，所以 0.0000325=3.25×10⁻⁵，选 A；B 的指数少了一位，C、D 的系数不在 1 到 10 之间，都不符合科学记数法的要求。"
+    },
+    {
+     "no": 4,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "hds_p228",
+      "hds_p229"
+     ],
+     "stem": "化简 (x²-9)/(x²+3x) 的结果是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(x+3)/x"
+      },
+      {
+       "label": "B",
+       "text": "(x-3)/(x+3)"
+      },
+      {
+       "label": "C",
+       "text": "x/(x-3)"
+      },
+      {
+       "label": "D",
+       "text": "(x-3)/x"
+      }
+     ],
+     "answer": "D",
+     "analysis": "分子用平方差公式分解为 (x-3)(x+3)，分母提取公因式得 x(x+3)，约去公因式 x+3 后得 (x-3)/x，选 D；约分前必须先分解因式，不能直接消去平方项。"
+    },
+    {
+     "no": 5,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "basic",
+     "topicIds": [
+      "hds_p243",
+      "hds_p242"
+     ],
+     "stem": "在平面直角坐标系中，点 P(-3,4) 关于 x 轴对称的点的坐标是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "(3,4)"
+      },
+      {
+       "label": "B",
+       "text": "(-3,-4)"
+      },
+      {
+       "label": "C",
+       "text": "(3,-4)"
+      },
+      {
+       "label": "D",
+       "text": "(4,-3)"
+      }
+     ],
+     "answer": "B",
+     "analysis": "关于 x 轴对称的两点横坐标不变、纵坐标互为相反数，所以 (-3,4) 的对称点是 (-3,-4)，选 B；A 是关于原点对称的点的坐标，C 是先关于 y 轴再关于 x 轴的结果。"
+    },
+    {
+     "no": 6,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "hds_p248",
+      "hds_p247"
+     ],
+     "stem": "若函数 y=(m-2)x 的 m²-3 次方是正比例函数，则 m 的值是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "-2"
+      },
+      {
+       "label": "B",
+       "text": "2"
+      },
+      {
+       "label": "C",
+       "text": "2 或 -2"
+      },
+      {
+       "label": "D",
+       "text": "0"
+      }
+     ],
+     "answer": "A",
+     "analysis": "正比例函数形如 y=kx 且 k 不为 0，所以 x 的指数 m²-3=1，得 m=2 或 m=-2；又系数 m-2 不为 0，即 m 不等于 2，只能取 m=-2，选 A。"
+    },
+    {
+     "no": 7,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "hds_p251",
+      "hds_p249"
+     ],
+     "stem": "一次函数 y=-2x+5 的图象经过哪几个象限？",
+     "options": [
+      {
+       "label": "A",
+       "text": "第一、二、三象限"
+      },
+      {
+       "label": "B",
+       "text": "第一、三、四象限"
+      },
+      {
+       "label": "C",
+       "text": "第二、三、四象限"
+      },
+      {
+       "label": "D",
+       "text": "第一、二、四象限"
+      }
+     ],
+     "answer": "D",
+     "analysis": "比例系数 -2 小于 0，图象从左到右下降，必过第二、四象限；常数项 5 大于 0，图象与 y 轴交于正半轴，故还过第一象限，选 D。"
+    },
+    {
+     "no": 8,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "standard",
+     "topicIds": [
+      "hds_p246",
+      "hds_p241",
+      "hds_p244"
+     ],
+     "stem": "已知某函数的图象是一条直线，它经过点 (-1,5) 和 (1,1)，则当 x=3 时这个函数的函数值是多少？",
+     "options": [
+      {
+       "label": "A",
+       "text": "-1"
+      },
+      {
+       "label": "B",
+       "text": "1"
+      },
+      {
+       "label": "C",
+       "text": "-3"
+      },
+      {
+       "label": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "C",
+     "analysis": "由两点坐标得直线的函数表达式为 y=3-2x，把 x=3 代入得 y=-3，选 C；也可由图象看出 x 每增加 2，函数值减少 4 而直接读出。"
+    },
+    {
+     "no": 9,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "hard",
+     "topicIds": [
+      "hds_p255",
+      "hds_p251"
+     ],
+     "stem": "已知一次函数 y=kx+b 的图象经过点 (2,0)，且 y 的值随 x 的增大而减小，则不等式 kx+b>0 的解集是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "x>2"
+      },
+      {
+       "label": "B",
+       "text": "x<2"
+      },
+      {
+       "label": "C",
+       "text": "x>0"
+      },
+      {
+       "label": "D",
+       "text": "x<0"
+      }
+     ],
+     "answer": "B",
+     "analysis": "y 随 x 增大而减小说明 k 小于 0，图象是一条下降的直线并与 x 轴交于 (2,0)，在交点左侧图象位于 x 轴上方，所以 kx+b>0 的解集是 x<2，选 B。"
+    },
+    {
+     "no": 10,
+     "score": 3,
+     "type": "choice",
+     "difficulty": "hard",
+     "topicIds": [
+      "hds_p259",
+      "hds_p258",
+      "hds_p257"
+     ],
+     "stem": "若点 A(-2,y₁)、B(-1,y₂)、C(3,y₃) 都在反比例函数 y=6/x 的图象上，则 y₁、y₂、y₃ 的大小关系是哪一个？",
+     "options": [
+      {
+       "label": "A",
+       "text": "y₂<y₁<y₃"
+      },
+      {
+       "label": "B",
+       "text": "y₁<y₂<y₃"
+      },
+      {
+       "label": "C",
+       "text": "y₃<y₁<y₂"
+      },
+      {
+       "label": "D",
+       "text": "y₁<y₃<y₂"
+      }
+     ],
+     "answer": "A",
+     "analysis": "把三个横坐标分别代入 y=6/x，得 y₁=-3、y₂=-6、y₃=2，所以 y₂<y₁<y₃，选 A；只有两个点在同一分支上时才可直接用增减性比较。"
+    }
+   ]
+  },
+  {
+   "title": "二、填空题（每小题 4 分，共 24 分）",
+   "rule": "每小题 4 分，共 24 分",
+   "items": [
+    {
+     "no": 11,
+     "score": 4,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "hds_p230"
+     ],
+     "stem": "计算 (a²/b) ÷ (a/b²) 的结果是____。",
+     "answer": "ab",
+     "analysis": "除以一个分式等于乘以它的倒数，原式=(a²/b)×(b²/a)=ab，结果要注意化为最简形式。"
+    },
+    {
+     "no": 12,
+     "score": 4,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "hds_p265",
+      "hds_p266"
+     ],
+     "stem": "在平行四边形 ABCD 中，∠A∶∠B=1∶2，则 ∠C 的度数是____。",
+     "answer": "60°",
+     "analysis": "平行四边形的邻角互补，即 ∠A+∠B=180°，由 1∶2 得 ∠A=60°；平行四边形对角相等，故 ∠C=∠A=60°。"
+    },
+    {
+     "no": 13,
+     "score": 4,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "hds_p231"
+     ],
+     "stem": "计算 1/(x-1) 与 1/(x+1) 的和，结果是____。",
+     "answer": "2x/(x²-1)",
+     "analysis": "两项通分后公分母为 (x-1)(x+1)=x²-1，分子为 (x+1)+(x-1)=2x，所以结果是 2x/(x²-1)。"
+    },
+    {
+     "no": 14,
+     "score": 4,
+     "type": "fill",
+     "difficulty": "standard",
+     "topicIds": [
+      "hds_p270",
+      "hds_p266"
+     ],
+     "stem": "在平行四边形 ABCD 中，AB=6，AD=8，∠A=30°，则边 AD 与 BC 之间的距离是____。",
+     "answer": "3",
+     "analysis": "AD 与 BC 之间的距离就是以 AD 为底时平行四边形的高。过 B 作 BE 垂直 AD 于 E，在直角三角形 ABE 中 BE=AB×sin30°=6×0.5=3。"
+    },
+    {
+     "no": 15,
+     "score": 4,
+     "type": "fill",
+     "difficulty": "basic",
+     "topicIds": [
+      "hds_p273"
+     ],
+     "stem": "在△ABC 中，点 D、E 分别是边 AB、AC 的中点，若 DE=3.5 厘米，则 BC 的长是____厘米。",
+     "answer": "7",
+     "analysis": "三角形的中位线平行于第三边并且等于第三边的一半，所以 BC=2DE=7 厘米；注意不要误把中位线当成第三边。"
+    },
+    {
+     "no": 16,
+     "score": 4,
+     "type": "fill",
+     "difficulty": "hard",
+     "topicIds": [
+      "hds_p253",
+      "hds_p254"
+     ],
+     "stem": "已知一个一次函数的图象与直线 y=2x 平行，且经过点 (1,-3)，则这个一次函数的表达式是____。",
+     "answer": "y=2x-5",
+     "analysis": "两直线平行则比例系数相同，设所求表达式为 y=2x+b，把点 (1,-3) 代入得 2+b=-3，解得 b=-5，所以表达式为 y=2x-5。"
+    }
+   ]
+  },
+  {
+   "title": "三、解答题（共 66 分）",
+   "rule": "共 66 分",
+   "items": [
+    {
+     "no": 17,
+     "score": 6,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "hds_p232",
+      "hds_p231"
+     ],
+     "stem": "计算括号内 1 减去 x+1 分之 1 的差，再除以 x²-1 分之 x。",
+     "answer": "结果是 x-1",
+     "analysis": "括号内通分得 x/(x+1)；把除法化为乘法得 x/(x+1)×(x²-1)/x；再把 x²-1 分解为 (x-1)(x+1) 并约分，最后得 x-1。",
+     "scoreRule": [
+      "把括号内的两项通分，得 x/(x+1)，得 2 分",
+      "把除法化为乘法，得 x/(x+1)×(x²-1)/x，得 2 分",
+      "分解因式并约分，得结果 x-1，得 2 分"
+     ]
+    },
+    {
+     "no": 18,
+     "score": 6,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "hds_p234",
+      "hds_p233"
+     ],
+     "stem": "解分式方程：2/(x-3)=3/x。",
+     "answer": "x=9",
+     "analysis": "两边同乘最简公分母 x(x-3) 得 2x=3(x-3)，即 2x=3x-9，解得 x=9；检验 x=9 时公分母为 54，不为 0，所以 x=9 是原方程的解。",
+     "scoreRule": [
+      "两边同乘 x(x-3) 去分母，得 2x=3(x-3)，得 2 分",
+      "解这个整式方程，得 x=9，得 2 分",
+      "检验 x=9 时公分母不为 0，确认 x=9 是原方程的解，得 2 分"
+     ]
+    },
+    {
+     "no": 19,
+     "score": 8,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "hds_p235"
+     ],
+     "stem": "某工程队修一条长 1200 米的道路，实际每天比原计划多修 20 米，结果比原计划提前 2 天完成。求原计划每天修多少米。",
+     "answer": "原计划每天修 100 米",
+     "analysis": "设原计划每天修 x 米，则实际每天修 x+20 米，由提前 2 天得 1200/x 减去 1200/(x+20) 等于 2；去分母整理得 x²+20x-12000=0，解得 x=100 或 x=-120，舍去负值，故原计划每天修 100 米。",
+     "scoreRule": [
+      "设原计划每天修 x 米，列出方程 1200/x 减去 1200/(x+20) 等于 2，得 2 分",
+      "去分母并整理，得 x²+20x-12000=0，得 2 分",
+      "解方程得 x=100 或 x=-120，得 2 分",
+      "结合题意舍去负值并检验，答原计划每天修 100 米，得 2 分"
+     ]
+    },
+    {
+     "no": 20,
+     "score": 8,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "hds_p256",
+      "hds_p262",
+      "hds_p239"
+     ],
+     "stem": "某汽车油箱中原有汽油 50 升，汽车行驶时每小时耗油 8 升。写出油箱中剩余油量 Q（升）与行驶时间 t（时）之间的函数表达式，求自变量 t 的取值范围；当油箱中剩余油量为 10 升时，汽车已行驶多少小时？",
+     "answer": "Q=50-8t，0≤t≤6.25；剩余 10 升时汽车已行驶 5 小时",
+     "analysis": "每小时耗油 8 升，t 小时共耗油 8t 升，故 Q=50-8t；油量不能为负，由 50-8t 不小于 0 得 t 不大于 6.25，又 t 不小于 0，所以 0≤t≤6.25；令 Q=10 得 8t=40，t=5 小时。",
+     "scoreRule": [
+      "由剩余油量等于原有油量减去耗油量，写出 Q=50-8t，得 2 分",
+      "由油量不为负得 t 不大于 6.25，再结合 t 不小于 0 写出取值范围，得 3 分",
+      "令 Q=10 解方程得 t=5 小时，得 3 分"
+     ]
+    },
+    {
+     "no": 21,
+     "score": 9,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "hds_p271",
+      "hds_p272",
+      "hds_p268",
+      "hds_p269"
+     ],
+     "stem": "在平行四边形 ABCD 中，点 E、F 都在对角线 BD 上，且 BE=DF。求证：四边形 AECF 是平行四边形。",
+     "answer": "由 AB=CD 且 AB∥CD 得 ∠ABE=∠CDF，结合 BE=DF 得△ABE≌△CDF，所以 AE=CF；同理可得 AF=CE；两组对边分别相等的四边形是平行四边形，故四边形 AECF 是平行四边形。",
+     "analysis": "先用平行四边形的对边平行且相等得到一组内错角相等，再用边角边证全等得 AE=CF，同法得 AF=CE，最后按两组对边分别相等的判定定理收尾。",
+     "scoreRule": [
+      "由平行四边形 ABCD 得 AB=CD 且 AB∥CD，从而 ∠ABE=∠CDF，得 3 分",
+      "结合 BE=DF 用边角边判定△ABE≌△CDF，得 2 分",
+      "由全等得 AE=CF，同法得出 AF=CE，得 2 分",
+      "按两组对边分别相等判定四边形 AECF 是平行四边形，得 2 分"
+     ]
+    },
+    {
+     "no": 22,
+     "score": 9,
+     "type": "solve",
+     "difficulty": "standard",
+     "topicIds": [
+      "hds_p274",
+      "hds_p273",
+      "hds_p275"
+     ],
+     "stem": "在四边形 ABCD 中，AB=CD，点 E、F、G、H 分别是边 AD、BD、BC、AC 的中点。求证：四边形 EFGH 是菱形；若四边形 ABCD 的面积为 24，求四边形 EFGH 的面积。",
+     "answer": "四边形 EFGH 是菱形；它的面积是 12",
+     "analysis": "在△ABD 中 EF 是中位线，EF 等于 AB 的一半；同理 HG 也等于 AB 的一半，EH 与 FG 都等于 CD 的一半；由 AB=CD 得四条边相等，故 EFGH 是菱形。顺次连接四边形各边中点所得四边形的面积是原四边形面积的一半，所以面积为 12。",
+     "scoreRule": [
+      "在△ABD 与△ABC 中用中位线定理得 EF 与 HG 都等于 AB 的一半，得 3 分",
+      "同理得 EH 与 FG 都等于 CD 的一半，得 2 分",
+      "由 AB=CD 推出四条边相等，判定四边形 EFGH 是菱形，得 2 分",
+      "说明中点四边形的面积是原四边形面积的一半，得面积为 12，得 2 分"
+     ]
+    },
+    {
+     "no": 23,
+     "score": 10,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "hds_p255",
+      "hds_p249",
+      "hds_p253"
+     ],
+     "stem": "已知直线 l₁ 的表达式为 y=2x+4，直线 l₂ 的表达式为 y=-x+1，两条直线相交于点 P。求点 P 的坐标；求这两条直线与 x 轴围成的三角形的面积；直接写出不等式 2x+4 大于 -x+1 的解集。",
+     "answer": "点 P 的坐标为 (-1,2)；三角形面积为 3；不等式的解集为 x>-1",
+     "analysis": "联立 2x+4=-x+1 得 x=-1，回代得 y=2，故 P(-1,2)；l₁ 与 x 轴交于 (-2,0)，l₂ 与 x 轴交于 (1,0)，底边长为 3，P 到 x 轴的距离为 2，面积等于 3；由图象知在交点左侧 l₁ 的图象高于 l₂，故解集为 x>-1。",
+     "scoreRule": [
+      "联立两个表达式得 2x+4=-x+1，得 2 分",
+      "解得 x=-1 并回代求 y=2，写出 P(-1,2)，得 2 分",
+      "求出两条直线与 x 轴的交点 (-2,0) 与 (1,0)，得底边长为 3，得 3 分",
+      "用三角形面积公式求得面积为 3，得 2 分",
+      "由图象位置写出不等式的解集为 x>-1，得 1 分"
+     ]
+    },
+    {
+     "no": 24,
+     "score": 10,
+     "type": "solve",
+     "difficulty": "hard",
+     "topicIds": [
+      "hds_p267",
+      "hds_p266"
+     ],
+     "stem": "在平行四边形 ABCD 中，AB=5，AD=8，∠A 的平分线 AE 交边 BC 于点 E。求证 AB=BE；求 EC 的长；若 ∠B=60°，求平行四边形 ABCD 的面积。",
+     "answer": "AB=BE 成立；EC=3；平行四边形的面积为 20√3",
+     "analysis": "由 AD∥BC 得 ∠EAD=∠AEB，又 AE 平分∠BAD 得 ∠BAE=∠EAD，所以 ∠BAE=∠AEB，从而 AB=BE=5；BC=AD=8，故 EC=8-5=3；以 AB 与 AD 为邻边，面积等于 5×8×sin60°，得 20√3。",
+     "scoreRule": [
+      "由 AD∥BC 得 ∠EAD=∠AEB，得 2 分",
+      "由 AE 平分∠BAD 得 ∠BAE=∠EAD，从而 ∠BAE=∠AEB，得 2 分",
+      "由等角对等边得 AB=BE=5，得 2 分",
+      "由 BC=AD=8 求出 EC=8-5=3，得 2 分",
+      "用两边及其夹角求面积，得 20√3，得 2 分"
+     ]
+    }
+   ]
+  }
+ ]
+}

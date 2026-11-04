@@ -32,6 +32,8 @@ EDITIONS = {
     "math-xiangjiao": "湘教版",
     "math-hujiao": "沪教版",
     "math-ejiao": "鄂教版",
+    "math-hukeji": "沪科技版",
+    "math-hds": "华东师大版",
     # 单版本学科：教材出版社/版本名（不写会在站点「版本」下拉里显示成空白）
     "chinese": "统编版",
     "history": "统编版",
