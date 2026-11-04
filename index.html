@@ -16,7 +16,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="学科图谱">
 <meta property="og:title" content="学科图谱 · 找到真正没学会的那一步">
-<meta property="og:description" content="18 学科的中小学知识图谱：知识点、先修关系、诊断题与课标条目。沿先修关系自适应出题，回溯到薄弱根因，并按年级排出补学路径。免费公益。">
+<meta property="og:description" content="19 个学科的中小学知识图谱：知识点、先修关系、诊断题与课标条目。沿先修关系自适应出题，回溯到薄弱根因，并按年级排出补学路径。免费公益。">
 <meta property="og:url" content="https://xueketupu.com/">
 <meta property="og:image" content="https://xueketupu.com/assets/og.png">
 <meta property="og:image:width" content="1200">
@@ -24,9 +24,10 @@
 <meta property="og:locale" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="学科图谱 · 找到真正没学会的那一步">
-<meta name="twitter:description" content="18 学科知识图谱 + 自适应前置诊断，回溯到薄弱根因并给出补学路径。">
+<meta name="twitter:description" content="19 个学科知识图谱 + 自适应前置诊断，回溯到薄弱根因并给出补学路径。">
 <meta name="twitter:image" content="https://xueketupu.com/assets/og.png">
 <link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/home-2026.css?v=2">
 </head>
 <body class="page-home">
 
@@ -53,121 +54,222 @@
     <a class="nav-link" href="children/history.html">记录</a>
     <a class="nav-link" href="contact/">联系</a>
     <a class="nav-link" href="teacher/">教师</a>
-
     <a class="nav-link" href="novel/">小说连载</a>
-
-
     <a class="nav-link" href="https://github.com/grantleyzyf-spec/cn-k12-dxyc2286" target="_blank" rel="noopener noreferrer">关于</a>
   </nav>
 </header>
 
 <main class="home">
+
+  <!-- ============ HERO ============ -->
   <section class="hero">
-    <p class="eyebrow"><span data-subject-count>—</span> 个学科 · 小学到高中 · <span data-stat="topics">—</span> 个知识点 · <span data-stat="dependencies">—</span> 条先修边</p>
-    <h1>先找到真正没学会的那一步</h1>
-    <p class="lede">
-      沿先修关系自适应出题：从你选的知识点往回追，逐层检测前置知识，定位薄弱根因，
-      再给出一条按学习顺序排好的路径。每个节点带可观察的掌握标准、诊断题和课标条目，
-      先修边分 hard / soft 两档。
-    </p>
-    <div class="hero-actions">
-      <a class="btn btn-primary btn-lg" href="diagnose/">开始诊断</a>
-      <a class="btn btn-lg" href="explore/">浏览知识图谱</a>
+    <div class="hero-copy">
+      <p class="eyebrow">
+        <span data-subject-count>—</span> 个学科 <i class="dot"></i>
+        小学到高中 <i class="dot"></i>
+        <span data-stat="topics">—</span> 个知识点 <i class="dot"></i>
+        <span data-stat="dependencies">—</span> 条先修边
+      </p>
+      <h1>先找到<em>真正没学会</em>的那一步</h1>
+      <p class="lede">
+        沿先修关系自适应出题：从你选的知识点往回追，逐层检测前置知识，定位薄弱根因，
+        再给出一条按学习顺序排好的路径。每个节点带可观察的掌握标准、诊断题和课标条目，
+        先修边分 <span style="white-space:nowrap">hard / soft</span> 两档。
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-lg" href="diagnose/">开始诊断</a>
+        <a class="btn btn-lg" href="explore/">浏览知识图谱</a>
+      </div>
+      <p class="quiet-link">数据与页面均开源 · 纯静态、无外网 CDN · 学习档案只存本机</p>
+      <ul class="hero-trust">
+        <li>仓库即数据，JSON 可 fork</li>
+        <li>不从 CDN 加载脚本 / 样式 / 字体</li>
+        <li>诊断记录只写 localStorage</li>
+      </ul>
     </div>
-    <p class="quiet-link">数据与页面均开源 · 纯静态、无外网 CDN · 学习档案只存本机</p>
+
+    <figure class="graph">
+      <div class="graph-hd"><span>先修关系 · hard 边</span><span>先学 → 后学</span></div>
+      <svg viewBox="0 0 420 300" role="img" aria-label="知识图谱示意：从目标知识点沿先修边回溯，找到薄弱根因，再给出学习路径">
+        <defs>
+          <marker id="ar" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M0,0.6 L7,4 L0,7.4 z" fill="#A9A294"/>
+          </marker>
+          <marker id="ar2" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M0,0.6 L7,4 L0,7.4 z" fill="#A8342A"/>
+          </marker>
+        </defs>
+        <g stroke="#A9A294" stroke-width="1.15" marker-end="url(#ar)" fill="none">
+          <path d="M62,72 L152,72"/>
+          <path d="M62,150 L152,150"/>
+          <path d="M62,228 L152,186"/>
+          <path d="M200,72 L290,46"/>
+          <path d="M200,72 L290,120"/>
+          <path d="M200,150 L290,120"/>
+          <path d="M200,186 L290,196"/>
+          <path d="M338,46 L338,120"/>
+          <path d="M338,120 L338,196"/>
+        </g>
+        <g stroke="#A8342A" stroke-width="2" fill="none" marker-end="url(#ar2)" class="path">
+          <path d="M338,46 L338,120 L200,150 L62,150"/>
+        </g>
+        <g font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#4E535A">
+          <circle cx="62" cy="72" r="10" fill="#FFFDF8" stroke="#B9B3A5" stroke-width="1.2"/>
+          <text x="62" y="76" text-anchor="middle">1</text>
+          <circle cx="62" cy="150" r="14" fill="#A8342A"/>
+          <text x="62" y="154" text-anchor="middle" fill="#fff" font-size="10">根因</text>
+          <circle cx="62" cy="228" r="10" fill="#FFFDF8" stroke="#B9B3A5" stroke-width="1.2"/>
+          <text x="62" y="232" text-anchor="middle">3</text>
+
+          <circle cx="176" cy="72" r="10" fill="#FFFDF8" stroke="#B9B3A5" stroke-width="1.2"/>
+          <text x="176" y="76" text-anchor="middle">4</text>
+          <circle cx="176" cy="150" r="11" fill="#FFFDF8" stroke="#A8342A" stroke-width="2"/>
+          <text x="176" y="154" text-anchor="middle" fill="#A8342A">5</text>
+          <circle cx="176" cy="186" r="10" fill="#FFFDF8" stroke="#B9B3A5" stroke-width="1.2"/>
+          <text x="176" y="190" text-anchor="middle">6</text>
+
+          <circle cx="314" cy="46" r="11" fill="#FFFDF8" stroke="#B9B3A5" stroke-width="1.2"/>
+          <text x="314" y="50" text-anchor="middle">7</text>
+          <circle cx="314" cy="120" r="10" fill="#FFFDF8" stroke="#B9B3A5" stroke-width="1.2"/>
+          <text x="314" y="124" text-anchor="middle">8</text>
+          <circle cx="314" cy="196" r="12" fill="#15181C"/>
+          <text x="314" y="200" text-anchor="middle" fill="#fff" font-size="9">目标</text>
+        </g>
+        <g font-family="-apple-system,PingFang SC,sans-serif" font-size="9.5" fill="#8A8578">
+          <text x="14" y="286">第 1 层</text><text x="150" y="286">第 2 层</text><text x="286" y="286">第 3 层</text>
+        </g>
+      </svg>
+      <div class="legend">
+        <span><i class="lg-line"></i>先修边</span>
+        <span><i class="lg-dash"></i>回溯路径</span>
+        <span><i class="lg-dot root"></i>薄弱根因</span>
+        <span><i class="lg-dot goal"></i>目标知识点</span>
+      </div>
+      <figcaption class="graph-cap">从一个目标点往回追，命中的第一处 <b>hard 断点</b> 就是薄弱根因；被跳过的不稳节点单独列出，不塞进补救路径。</figcaption>
+    </figure>
   </section>
 
-  <h2 class="section-title">三步 <small>选一个点，答几道题，拿到路径</small></h2>
-  <ol class="steps">
-    <li>
-      <h3>选知识点或整册</h3>
-      <p>按学科、学段、年级筛选；也可以直接对一册做整册筛查。不知道选哪个，就先到「知识图谱」里搜关键词。</p>
-    </li>
-    <li>
-      <h3>沿先修关系答题</h3>
-      <p>答对往下走，答错就沿 hard 先修边回溯到更低层；每个知识点最多问 2 题，逐层收窄范围。</p>
-    </li>
-    <li>
-      <h3>拿到根因和路径</h3>
-      <p>结果分成「薄弱根因 / 不稳 / 未测」和按学习顺序排好的路径，可导出 JSON、可打印，也能存进孩子档案。</p>
-    </li>
-  </ol>
+  <!-- ============ 三步 ============ -->
+  <section class="sec">
+    <h2 class="section-title">三步 <small>选一个点，答几道题，拿到路径</small></h2>
+    <ol class="steps">
+      <li>
+        <h3>选知识点或整册</h3>
+        <p>按学科、学段、年级筛选；也可以直接对一册做整册筛查。不知道选哪个，就先到「知识图谱」里搜关键词。</p>
+      </li>
+      <li>
+        <h3>沿先修关系答题</h3>
+        <p>答对往下走，答错就沿 hard 先修边回溯到更低层；每个知识点最多问 2 题，逐层收窄范围。</p>
+      </li>
+      <li>
+        <h3>拿到根因和路径</h3>
+        <p>结果分成「薄弱根因 / 不稳 / 未测」和按学习顺序排好的路径，可导出 JSON、可打印，也能存进孩子档案。</p>
+      </li>
+    </ol>
+  </section>
 
-  <h2 class="section-title">图谱里有什么 <small>打开页面时按 data/stats.json 现算</small></h2>
-  <div class="stat-grid" id="stats" aria-busy="true">
-    <div class="stat-card"><div class="stat-num" id="n-subjects">—</div><div class="stat-label">学科</div></div>
-    <div class="stat-card"><div class="stat-num" id="n-topics">—</div><div class="stat-label">知识点</div></div>
-    <div class="stat-card"><div class="stat-num" id="n-edges">—</div><div class="stat-label">先修边</div></div>
-    <div class="stat-card"><div class="stat-num" id="n-questions">—</div><div class="stat-label">诊断题</div></div>
-    <div class="stat-card"><div class="stat-num" id="n-standards">—</div><div class="stat-label">课标条目</div></div>
-  </div>
-  <div id="load-error" class="load-error" hidden></div>
+  <!-- ============ 统计 + 口径 ============ -->
+  <section class="sec">
+    <h2 class="section-title">图谱里有什么 <small>打开页面时按 data/stats.json 现算</small></h2>
+    <div class="stat-grid" id="stats" aria-busy="true">
+      <div class="stat-card"><div class="stat-num" id="n-subjects">—</div><div class="stat-label">学科</div></div>
+      <div class="stat-card"><div class="stat-num" id="n-topics">—</div><div class="stat-label">知识点</div></div>
+      <div class="stat-card"><div class="stat-num" id="n-edges">—</div><div class="stat-label">先修边</div></div>
+      <div class="stat-card"><div class="stat-num" id="n-questions">—</div><div class="stat-label">诊断题</div></div>
+      <div class="stat-card"><div class="stat-num" id="n-standards">—</div><div class="stat-label">课标条目</div></div>
+    </div>
+    <div id="load-error" class="load-error" hidden></div>
 
-  <h2 class="section-title">按学科进入 <small>点卡片进入该学科的知识图谱</small></h2>
-  <div class="subject-grid" id="subjects" aria-busy="true"></div>
+    <div class="notice">
+      <strong>口径提醒：</strong>「已挂课标」不等于「已对齐」。<span data-stat="topics">—</span> 个知识点里 <span data-stat="topics_with_standards">—</span> 个写了课标条目，其中 <strong><span data-stat="topics_with_quote">—</span></strong> 个带可逐字复核的课标原文引文（<code>quote</code>）。
+      所有先修边与题目都是 AI 初稿，未经一线教师审核。
+    </div>
+  </section>
 
-  <div class="notice">
-    <strong>口径提醒：</strong>「已挂课标」不等于「已对齐」。<span data-stat="topics">—</span> 个知识点里 <span data-stat="topics_with_standards">—</span> 个写了课标条目，其中 <strong><span data-stat="topics_with_quote">—</span></strong> 个带可逐字复核的课标原文引文（<code>quote</code>）。
-    所有先修边与题目都是 AI 初稿，未经一线教师审核。
-  </div>
+  <!-- ============ 学科 ============ -->
+  <section class="sec">
+    <h2 class="section-title">按学科进入 <small>点卡片进入该学科的知识图谱</small></h2>
+    <div class="subject-grid" id="subjects" aria-busy="true"></div>
+    <p class="subs-note">数学、地理等科目按教材版本分别计数，同一知识点在不同版本里可能各计一次；全站去重后的总数见上方「图谱里有什么」。</p>
+  </section>
 
-  <h2 class="section-title">这个仓库有什么不同</h2>
-  <div class="feature-grid">
-    <div class="feature">
-      <h3>掌握标准可判断</h3>
-      <p>每个知识点给 1–3 条可观察的 <code>mastery_criteria</code>，不写「理解」「了解」这类空话。</p>
+  <!-- ============ 六条不同 ============ -->
+  <section class="sec">
+    <h2 class="section-title">这个仓库有什么不同</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <h3>掌握标准可判断</h3>
+        <p>每个知识点给 1–3 条可观察的 <code>mastery_criteria</code>，不写「理解」「了解」这类空话。</p>
+      </div>
+      <div class="feature">
+        <h3>先修边分强度</h3>
+        <p><code>hard</code> 表示不掌握前者基本学不会后者，<code>soft</code> 多为教材编排顺序；诊断只沿 hard 边回溯。</p>
+      </div>
+      <div class="feature">
+        <h3>课标引文可复核</h3>
+        <p>带 <code>quote</code> 的条目可用脚本回表核验「这段文字是否逐字出现在课标原文里」，避免编造。</p>
+      </div>
+      <div class="feature">
+        <h3><span data-subject-count>—</span> 个学科同一套契约</h3>
+        <p>数学、语文、英语到德语、法语、西班牙语共用节点契约 v2，跨学科可比较、可合并。</p>
+      </div>
+      <div class="feature">
+        <h3>纯静态、无外网依赖</h3>
+        <p>页面只 <code>fetch</code> 仓库里的 JSON，图形库本地打包，不从 CDN 加载脚本、样式或字体。</p>
+      </div>
+      <div class="feature">
+        <h3>档案存本机</h3>
+        <p>孩子的诊断记录写在浏览器 <code>localStorage</code>，不上传、不联网，换设备不同步。</p>
+      </div>
     </div>
-    <div class="feature">
-      <h3>先修边分强度</h3>
-      <p><code>hard</code> 表示不掌握前者基本学不会后者，<code>soft</code> 多为教材编排顺序；诊断只沿 hard 边回溯。</p>
-    </div>
-    <div class="feature">
-      <h3>课标引文可复核</h3>
-      <p>带 <code>quote</code> 的条目可用脚本回表核验「这段文字是否逐字出现在课标原文里」，避免编造。</p>
-    </div>
-    <div class="feature">
-      <h3><span data-subject-count>—</span> 个学科同一套契约</h3>
-      <p>数学、语文、英语到德语、法语、西班牙语共用节点契约 v2，跨学科可比较、可合并。</p>
-    </div>
-    <div class="feature">
-      <h3>纯静态、无外网依赖</h3>
-      <p>页面只 <code>fetch</code> 仓库里的 JSON，图形库本地打包，不从 CDN 加载脚本、样式或字体。</p>
-    </div>
-    <div class="feature">
-      <h3>档案存本机</h3>
-      <p>孩子的诊断记录写在浏览器 <code>localStorage</code>，不上传、不联网，换设备不同步。</p>
-    </div>
-  </div>
+  </section>
 
-  <h2 class="section-title">常见问题</h2>
-  <details class="faq">
-    <summary>这套先修关系能直接用于教学吗？</summary>
-    <p>不建议。它是 AI 初稿：知识点粒度、hard / soft 判定、题目难度都没有经过教师评审，也没有学生答题数据校准。请当作「待审的草图」，先由一线教师审边、审题。</p>
-  </details>
-  <details class="faq">
-    <summary>为什么有的学科没有课标引文？</summary>
-    <p>引文要求逐字出自课标原文，做不到就不写。语文、历史、德语、俄语、法语、日语、西班牙语已完成引文回填；数学、英语、物理、生物、地理、化学、信息科技、美术、音乐、科学目前仍是课标编号引用，正在补。</p>
-  </details>
-  <details class="faq">
-    <summary>小语种的义教段为什么没有课标？</summary>
-    <p>义务教育阶段的外语课标只有英语、日语、俄语。法语、德语、西班牙语在 7–9 年级没有对应条文，只能挂高中课标并标 <code>confidence: inferred</code>。</p>
-  </details>
-  <details class="faq">
-    <summary>怎么本地跑起来？</summary>
-    <p>仓库根目录执行 <code>python3 -m http.server 8000</code>，再打开 <code>http://localhost:8000/</code>。页面用 <code>fetch</code> 读数据，不能直接双击 HTML 文件打开。</p>
-  </details>
+  <!-- ============ FAQ ============ -->
+  <section class="sec">
+    <h2 class="section-title">常见问题</h2>
+    <details class="faq">
+      <summary>这套先修关系能直接用于教学吗？</summary>
+      <p>不建议。它是 AI 初稿：知识点粒度、hard / soft 判定、题目难度都没有经过教师评审，也没有学生答题数据校准。请当作「待审的草图」，先由一线教师审边、审题。</p>
+    </details>
+    <details class="faq">
+      <summary>为什么有的学科没有课标引文？</summary>
+      <p>引文要求逐字出自课标原文，做不到就不写。语文、历史、德语、俄语、法语、日语、西班牙语已完成引文回填；数学、英语、物理、生物、地理、化学、信息科技、美术、音乐、科学目前仍是课标编号引用，正在补。</p>
+    </details>
+    <details class="faq">
+      <summary>小语种的义教段为什么没有课标？</summary>
+      <p>义务教育阶段的外语课标只有英语、日语、俄语。法语、德语、西班牙语在 7–9 年级没有对应条文，只能挂高中课标并标 <code>confidence: inferred</code>。</p>
+    </details>
+    <details class="faq">
+      <summary>怎么本地跑起来？</summary>
+      <p>仓库根目录执行 <code>python3 -m http.server 8000</code>，再打开 <code>http://localhost:8000/</code>。页面用 <code>fetch</code> 读数据，不能直接双击 HTML 文件打开。</p>
+    </details>
+  </section>
 
-  <h2 class="section-title">参与进来</h2>
-  <p class="lede">
-    发现知识点拆分不对、某条先修边不该存在、题目答案有误，或想补一科的引文，都欢迎提 Issue / PR。
-    数据改动请改 <code>data/&lt;subject&gt;/</code> 源文件，并在提交前跑一遍
-    <code>validate.py --all</code> 与 <code>build_stats.py --write</code>。
-  </p>
-  <div class="hero-actions">
-    <a class="btn" href="https://github.com/grantleyzyf-spec/cn-k12-dxyc2286/issues/new" target="_blank" rel="noopener noreferrer">提一个 Issue</a>
-    <a class="btn" href="https://github.com/grantleyzyf-spec/cn-k12-dxyc2286" target="_blank" rel="noopener noreferrer">看源码</a>
-    <a class="btn" href="sponsor/">赞助支持</a>
-  </div>
+  <!-- ============ 参与进来 ============ -->
+  <section class="join">
+    <div class="join-in">
+      <div>
+        <h2>参与进来</h2>
+        <p>
+          发现知识点拆分不对、某条先修边不该存在、题目答案有误，或想补一科的引文，都欢迎提 Issue / PR。
+          数据改动请改 <code>data/&lt;subject&gt;/</code> 源文件，并在提交前跑一遍
+          <code>validate.py --all</code> 与 <code>build_stats.py --write</code>。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://github.com/grantleyzyf-spec/cn-k12-dxyc2286/issues/new" target="_blank" rel="noopener noreferrer">提一个 Issue</a>
+          <a class="btn" href="https://github.com/grantleyzyf-spec/cn-k12-dxyc2286" target="_blank" rel="noopener noreferrer">看源码</a>
+          <a class="btn" href="sponsor/">赞助支持</a>
+        </div>
+      </div>
+      <div>
+        <p>本地跑起来：</p>
+        <div class="join-cmds">
+          python3 -m http.server 8000<br>
+          validate.py --all · build_stats.py --write
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
@@ -206,7 +308,7 @@
   })();
 </script>
 
-<script src="assets/home.js?v=3"></script>
+<script src="assets/home.js?v=4"></script>
 <script>
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js').catch(function (e) { console.log('SW registration failed:', e); });
