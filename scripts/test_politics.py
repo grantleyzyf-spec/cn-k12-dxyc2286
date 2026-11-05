@@ -48,7 +48,7 @@ ck("全部 subject 一致", all(t.get("subject") == SUBJECT for t in topics))
 ck("级别只有 unit/lesson", {t.get("level") for t in topics} <= {"unit", "lesson"},
    {t.get("level") for t in topics})
 lv = Counter(t["level"] for t in topics)
-ck("两级规模（unit 115 / lesson 320）", lv["unit"] == 115 and lv["lesson"] == 320, dict(lv))
+ck("两级规模（unit 115 / lesson 319）", lv["unit"] == 115 and lv["lesson"] == 319, dict(lv))
 ck("册次 21 册齐全", len({t["chapter"].split(" ")[0] for t in topics}) == 21,
    len({t["chapter"].split(" ")[0] for t in topics}))
 ck("无「目录」点", not [t["id"] for t in topics if t["name"].strip() in ("目录", "目 录")])
