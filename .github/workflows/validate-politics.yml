@@ -44,10 +44,8 @@ jobs:
       - name: Subject invariants · politics
         run: python3 scripts/test_politics.py
 
-      - name: Standards index freshness (regenerate & diff)
-        run: |
-          cp data/cn-curriculum-standards.json /tmp/a.json || true
-          cp data/mappings/volume-map.json /tmp/b.json || true
-          python3 scripts/build_standards_index.py
-          diff -q /tmp/a.json data/cn-curriculum-standards.json
-          diff -q /tmp/b.json data/mappings/volume-map.json
+      # ⛔ 不用全局 build_standards_index.py + diff：本仓并行会话会让别的学科
+      # 「分学科文件 ≠ 已提交聚合」（实测 math-bsd），那条断言永远红且与 politics 无关。
+      # 只按 politics 自己的 topics.json 重算它的桶并逐字段比对。
+      - name: Politics standards index freshness
+        run: python3 scripts/check_politics_standards_index.py
