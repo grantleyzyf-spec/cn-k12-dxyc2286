@@ -53,7 +53,6 @@ EDITIONS = {
     "chemistry-hujiao": "沪教版",
     "physics-jk": "教科版",
     "physics-hkjy": "沪科教版",
-    "physics-luke": "鲁科版",
     "chemistry-sujiao": "苏教版",
     "chemistry-hukeji": "沪科技版",
     "chemistry-yuejiao": "科学粤教版",

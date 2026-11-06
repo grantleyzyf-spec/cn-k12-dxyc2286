@@ -1,0 +1,66 @@
+name: Validate physics-hkjy Subject Data
+
+# 沪科教版高中物理（physics-hkjy）学科专用工作流。
+# 单独成文件，避免与并行会话维护的 validate.yml 互相卷进提交。
+
+on:
+  push:
+    paths:
+      - 'data/physics-hkjy/**/*.json'
+      - 'data/physics-hkjy/**/*.md'
+      - 'scripts/build_phys_hkjy_*.py'
+      - 'scripts/check_phys_hkjy_*.py'
+      - 'scripts/merge_phys_hkjy*.py'
+      - 'scripts/gen_phys_hkjy_exam_specs.py'
+      - '.github/workflows/validate-physics-hkjy.yml'
+  pull_request:
+    paths:
+      - 'data/physics-hkjy/**/*.json'
+      - '.github/workflows/validate-physics-hkjy.yml'
+  workflow_dispatch:
+
+jobs:
+  physics_hkjy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Topic schema gate
+        run: python3 scripts/validate.py physics-hkjy
+
+      - name: Bank gate（31 片逐片复跑）
+        run: python3 scripts/check_phys_hkjy_bank.py --all
+
+      - name: Exam structural gate（逐卷，跳过题库相似度以控时长）
+        run: |
+          shopt -s nullglob
+          files=(data/physics-hkjy/exams/*/*.json)
+          if [ ${#files[@]} -eq 0 ]; then echo "无试卷，跳过"; exit 0; fi
+          n=0
+          for p in "${files[@]}"; do
+            python3 scripts/check_phys_hkjy_exam.py "$p" --no-similarity > /tmp/e.log 2>&1 \
+              || { echo "FAIL $p"; tail -12 /tmp/e.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 卷"
+
+      - name: Learn gate（65 片逐片跑）
+        run: python3 scripts/check_phys_hkjy_learn.py --all
+
+      - name: Lecture gate（55 份逐份跑）
+        run: |
+          shopt -s nullglob
+          files=(data/physics-hkjy/exam_lectures/*/*.json)
+          if [ ${#files[@]} -eq 0 ]; then echo "无讲解文件，跳过"; exit 0; fi
+          n=0
+          for f in "${files[@]}"; do
+            python3 scripts/check_exam_lecture.py "$f" --subject physics-hkjy > /tmp/c.log 2>&1 \
+              || { echo "FAIL $f"; tail -10 /tmp/c.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 份讲解"
