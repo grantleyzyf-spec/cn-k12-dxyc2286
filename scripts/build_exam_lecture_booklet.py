@@ -95,22 +95,34 @@ def main():
         subj_key = {"数学": "math", "物理": "physics", "化学": "chemistry", "生物": "biology", "语文": "chinese"}.get(
             subject, os.environ.get("MATH_BUCKET", "math"))
         doc = L.new_doc()
-        L.add_para(doc, f"{subject}（{version}）{book}", subject=subj_key, size=20, bold=True, cn="黑体",
+        book_disp = book
+        if version and book_disp.startswith(version):   # 册名自带版本前缀（沪教版必修第一册）时不再重复
+            book_disp = book_disp[len(version):].strip()
+
+        def _paper_disp(p):
+            """卷名剥掉册名/版本前缀（只改展示，不动 paper 字段与文件名）"""
+            t = str(p.get("paper") or "")
+            for _pfx in (book, version, f"{version}{book_disp}"):
+                if _pfx and t.startswith(_pfx) and len(t) > len(_pfx):
+                    t = t[len(_pfx):].strip()
+            return t
+
+        L.add_para(doc, f"{subject}（{version}）{book_disp}", subject=subj_key, size=20, bold=True, cn="黑体",
                    align="center", after=6)
         L.add_para(doc, f"试卷讲解合订本 · 共 {len(papers)} 份 · 学生版",
                    subject=subj_key, size=11, align="center", after=14, color="666666")
         L.add_para(doc, "目　录", subject=subj_key, size=13, bold=True, cn="黑体", align="center", after=6)
         for i, p in enumerate(papers, 1):
-            L.add_para(doc, f"{i}. {p['paper']}", subject=subj_key, size=10.5, left=0.8, after=2)
+            L.add_para(doc, f"{i}. {_paper_disp(p)}", subject=subj_key, size=10.5, left=0.8, after=2)
         doc.add_page_break()
         for idx, p in enumerate(papers):
             if idx:
                 doc.add_page_break()
             ex = exams.get(p["paper"], {})
-            L.add_para(doc, p["paper"], subject=subj_key, size=15, bold=True, cn="黑体", align="center", after=2)
+            L.add_para(doc, _paper_disp(p), subject=subj_key, size=15, bold=True, cn="黑体", align="center", after=2)
             L.add_para(doc,
                        f"满分 {ex.get('fullScore', '')} 分 · {ex.get('duration', '')} 分钟 · "
-                       f"{sum(len(s['items']) for s in ex.get('sections', []))} 题",
+                       f"{len(ex.get('items') or [i for s in ex.get('sections', []) for i in s.get('items', [])])} 题　学生版：先想一遍，再看思路",
                        subject=subj_key, size=9, align="center", after=8, color="888888")
             render_md_into(doc, p.get("markdown") or "", subj_key)
         p0 = doc.sections[0].footer.paragraphs[0]
