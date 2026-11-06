@@ -249,6 +249,18 @@
           "lesson"
         ],
         "description": "知识点层级：unit=单元级（展示/上位），lesson=课时级（可诊断）"
+      },
+      "unitId": {
+        "type": "string",
+        "description": "所属单元节点 id（部分版本桶用于章节归属）"
+      },
+      "unitNo": {
+        "type": "integer",
+        "description": "所属单元序号（部分版本桶用于章节排序）"
+      },
+      "lessonNo": {
+        "type": "integer",
+        "description": "课时序号（部分版本桶用于章内排序）"
       }
     },
     "additionalProperties": false,
