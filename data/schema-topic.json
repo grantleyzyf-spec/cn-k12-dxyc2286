@@ -73,6 +73,8 @@
      "mental-health",
      "music",
      "physics",
+     "physics-bsd-gyy",
+     "physics-hkj-yj",
      "physics-jk",
      "physics-sk",
      "politics",
@@ -242,6 +244,16 @@
      "lesson"
     ],
     "description": "知识点层级：unit=单元级（展示/上位），lesson=课时级（可诊断）"
+   },
+   "unitId": {
+    "type": "string",
+    "description": "所属单元节点 id（课时点用）"
+   },
+   "unitNo": {
+    "description": "单元序号（物理教科版扩展）"
+   },
+   "lessonNo": {
+    "description": "课时序号（物理教科版扩展）"
    }
   },
   "additionalProperties": false,
