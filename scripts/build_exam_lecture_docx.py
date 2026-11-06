@@ -142,11 +142,20 @@ def render(md, lec, exam, path):
     subj_key = {"数学": "math", "物理": "physics", "化学": "chemistry", "生物": "biology",
                 "语文": "chinese"}.get(subject) or os.environ.get("MATH_BUCKET", "math")
     doc = new_doc()
-    add_para(doc, f"{subject}（{version}）{lec['book']}　{lec['paper']} · 讲解", subject=subj_key,
+    book_disp = lec["book"] or ""
+    if version and book_disp.startswith(version):   # 册名自带版本前缀（苏教版一年级上册）时不再重复
+        book_disp = book_disp[len(version):].strip()
+    paper_disp = str(lec["paper"] or "")
+    # 卷名自带册名/版本前缀（「湘教版七年级上册 第1章 有理数 测试卷」）时，标题里不再重复
+    for _pfx in (str(lec["book"] or ""), version, f"{version}{book_disp}"):
+        if _pfx and paper_disp.startswith(_pfx) and len(paper_disp) > len(_pfx):
+            paper_disp = paper_disp[len(_pfx):].strip()
+            break
+    add_para(doc, f"{subject}（{version}）{book_disp}　{paper_disp} · 讲解", subject=subj_key,
              size=16, bold=True, cn="黑体", align="center", after=2)
     add_para(doc,
              f"满分 {exam.get('fullScore', '')} 分 · {exam.get('duration', '')} 分钟 · "
-             f"{sum(len(s['items']) for s in exam['sections'])} 题　学生版：先想一遍，再看思路",
+             f"{len(exam.get('items') or [i for s in exam['sections'] for i in s.get('items', [])])} 题　学生版：先想一遍，再看思路",
              subject=subj_key, size=9, align="center", after=10, color="666666")
     for raw in md.split("\n"):
         ln = raw.rstrip()

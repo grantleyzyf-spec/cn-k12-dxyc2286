@@ -156,7 +156,13 @@ def render_paper(ex, path):
             head_txt = f"{sec['title']}（{m.group(1)}；{m.group(2)}）" if m else f"{sec['title']}（{rule}）"
         para(doc, head_txt, size=12, bold=True, cn="黑体",
              space_before=8, space_after=4, hanging=True, keep_next=True)
-        items = sec["items"]
+        # 兼容「items 在顶层、section 只是标题+题数+分值」的桶（physics-bsd-gyy 实测）
+        items = sec.get("items") or [it for it in ex.get("items", [])
+                                     if it.get("section") == sec["title"]]
+        # 本桶（physics-hkj-yj 等）题型写在 section 上、item 不带 type ⇒ 渲染前补齐
+        for _it in items:
+            if not _it.get("type"):
+                _it["type"] = sec.get("type") or "answer"
         # 小学/初中「计算」「直接写得数」这类纯算式题：同一前缀（如「直接写出得数：」）在每题重复 6 遍
         # 既啰嗦又占版面 ⇒ 提炼成一句导语，题目按 2–3 题一行紧凑排。
         lead = ""
@@ -215,20 +221,43 @@ def render_paper(ex, path):
     doc.save(path)
 
 
+def norm_rule(v):
+    """scoreRule 兼容五种写法：list[dict] / dict / list[int] / str / list[str]。"""
+    out = []
+    if not v:
+        return out
+    if isinstance(v, str):
+        return [v]
+    if isinstance(v, dict):
+        for k, sc in v.items():
+            out.append(f"{k}（{sc}）" if str(sc).strip() else str(k))
+        return out
+    for it in v:
+        if isinstance(it, int):
+            out.append(f"{it} 分")
+        elif isinstance(it, str):
+            out.append(it)
+        elif isinstance(it, dict):
+            d = it.get("step") or it.get("desc") or it.get("name") or ""
+            sc = it.get("score") or it.get("s") or ""
+            out.append(f"{d}（{sc} 分）" if sc != "" else str(d))
+    return out
+
+
 def render_answer(ex, path):
     doc = new_doc()
     head(doc, ex, answer=True)
     for sec in ex["sections"]:
         para(doc, sec["title"], size=12, bold=True, cn="黑体", space_before=8, space_after=4)
-        for it in sec["items"]:
+        _items = sec.get("items") or [it for it in ex.get("items", [])
+                                      if it.get("section") == sec["title"]]
+        for it in _items:
             ans = it["answer"]
             line = (f"{it['no']}．{ans}" if it["type"] in ("choice", "multi", "fill", "numeric")
                     else f"{it['no']}．参考答案：{ans}")
             para(doc, line, size=10.5, bold=True, space_after=1, line=1.35)
             para(doc, f"解析：{it['analysis']}", size=10.5, space_after=1, line=1.35, indent_first=True)
-            sr = [s if isinstance(s, str)
-                  else f"{s.get('step', '')}（{s.get('score', '')} 分）".replace("（ 分）", "")
-                  for s in (it.get("scoreRule") or [])]
+            sr = norm_rule(it.get("scoreRule"))
             if sr:
                 para(doc, "评分标准：" + "；".join(sr), size=10.5, space_after=4, line=1.35)
     add_page_number_footer(doc)
