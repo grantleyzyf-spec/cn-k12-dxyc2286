@@ -10,6 +10,11 @@ TXT = [
     "/Users/a627692/Desktop/中小学教材/2025修订课程标准TXT /义务教育/8.《义务教育化学课程标准·日常修订版》(2022年版2025年修订).txt",
     "/Users/a627692/Desktop/中小学教材/2025修订课程标准TXT /高中教育/（9）普通高中化学课程标准日常修订版（2017年版2025年修订）.txt",
 ]
+# 物理桶改用物理课标原文回表（化学 TXT 里当然查不到物理引文）
+if SUBJECT.startswith("physics"):
+    TXT = [
+        "/Users/a627692/Desktop/中小学教材/2025修订课程标准TXT /高中教育/（8）普通高中物理课程标准日常修订版（2017年版2025年修订）.txt",
+    ]
 
 fails, checks = [], []
 
@@ -21,7 +26,9 @@ def ck(name, ok, detail=None):
 
 
 def norm(s):
-    return re.sub(r"\s+", "", s or "")
+    s = re.sub(r"=+\s*第\s*\d+\s*页\s*/\s*共\s*\d+\s*页\s*=+", "", s or "")
+    s = re.sub(r"[│|]\s*五、课程内容\s*[│|]\s*\d*", "", s)
+    return re.sub(r"\s+", "", s)
 
 
 topics = json.load(open(os.path.join(D, SUBJECT, "topics.json"), encoding="utf-8"))
