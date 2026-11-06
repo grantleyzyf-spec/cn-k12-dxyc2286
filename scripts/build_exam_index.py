@@ -51,6 +51,7 @@ SUBJECT_EDITION = {
     "physics-bsd-gyy": "北师大版·郭玉英",
     "physics-sk": "苏科版",
     "physics-hkjy": "沪科教版",
+    "physics-luke": "鲁科版",
 }
 
 SUBJECTS = [
@@ -61,7 +62,7 @@ SUBJECTS = [
     "math-bj", "math-bsd", "math-ejiao", "math-hebei", "math-hujiao",
     "math-qd", "math-sujiao", "math-suke", "math-xiangjiao", "math-hukeji", "math-xnd", "math-hds",
     # 物理各版本桶
-    "physics-hkj-yj", "physics-bsd-gyy", "physics-hkjy",
+    "physics-hkj-yj", "physics-bsd-gyy", "physics-hkjy", "physics-luke",
     # 地理各版本桶
     "geography-shangwu", "geography-xiangjiao", "geography-zhongtu-cz", "geography-jin",
     "geography-yuejiao",
