@@ -1,0 +1,169 @@
+{
+ "shard": "S078",
+ "topics": [
+  {
+   "topicId": "pgy_j065",
+   "type": "conceptual",
+   "description": "本节从能量转化入手认识电功，明确电流做功的过程就是电能转化为其他形式能的过程；教材要求会读电能表并计算消耗的电能，会进行度与焦耳的换算，并用 W＝UIt 完成简单的定量计算。",
+   "mastery_criteria": [
+    "能说出电功的含义与单位，知道电能表读数的方法",
+    "能用 W＝UIt 和电能表参数完成电能的计算与换算"
+   ],
+   "diagnostic_question": {
+    "question": "电能表月末与月初示数之差表示什么？",
+    "answer": "A"
+   }
+  }
+ ],
+ "questions": [
+  {
+   "id": "pgy_q0578",
+   "topicId": "pgy_j065",
+   "prompt": "下列用电器正常工作时，主要把电能转化为机械能的是哪一台？",
+   "options": [
+    {
+     "label": "A",
+     "text": "电饭锅"
+    },
+    {
+     "label": "B",
+     "text": "电风扇"
+    },
+    {
+     "label": "C",
+     "text": "电热水壶"
+    },
+    {
+     "label": "D",
+     "text": "电熨斗"
+    }
+   ],
+   "answer": "B",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "电风扇的核心是电动机，通电后线圈在磁场中受力转动，把电能主要转化为机械能；电饭锅、电热水壶和电熨斗都是把电能转化为内能，用来加热食物或熨烫衣物，它们的能量转化方向与题意不符。"
+  },
+  {
+   "id": "pgy_q0579",
+   "topicId": "pgy_j065",
+   "prompt": "家庭用电中常说的一度电，合多少焦耳？",
+   "options": [
+    {
+     "label": "A",
+     "text": "3.6×10³ J"
+    },
+    {
+     "label": "B",
+     "text": "3.6×10⁶ J"
+    },
+    {
+     "label": "C",
+     "text": "1 J"
+    },
+    {
+     "label": "D",
+     "text": "3600 J"
+    }
+   ],
+   "answer": "B",
+   "type": "choice",
+   "difficulty": "basic",
+   "explanation": "一度电就是 1 kW·h，即功率为 1000 W 的用电器工作 1 h 消耗的电能；换算时 1 h 等于 3600 s，所以 1 kW·h ＝ 1000 W × 3600 s ＝ 3.6×10⁶ J，选项 A 的数量级小了三位，选项 D 漏乘了 1000。"
+  },
+  {
+   "id": "pgy_q0580",
+   "topicId": "pgy_j065",
+   "prompt": "某电能表上标有 3000 r/(kW·h) 的字样，接在该表上的用电器工作时表盘转过 150 转，这些用电器消耗的电能是多少？",
+   "options": [
+    {
+     "label": "A",
+     "text": "0.05 kW·h"
+    },
+    {
+     "label": "B",
+     "text": "0.5 kW·h"
+    },
+    {
+     "label": "C",
+     "text": "20 kW·h"
+    },
+    {
+     "label": "D",
+     "text": "0.05 J"
+    }
+   ],
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "standard",
+   "explanation": "3000 r/(kW·h) 表示每消耗 1 kW·h 的电能表盘转 3000 转，所以转过 150 转对应的电能是 150÷3000 kW·h，等于 0.05 kW·h；选项 B 多算了一位，选项 C 把除法做反了，选项 D 的数值对而单位错。"
+  },
+  {
+   "id": "pgy_q0581",
+   "topicId": "pgy_j065",
+   "prompt": "把阻值分别为 5 Ω 和 10 Ω 的两只电阻串联后接入电路，通电相同时间，电流通过它们做的功之比是多少？",
+   "options": [
+    {
+     "label": "A",
+     "text": "1:2"
+    },
+    {
+     "label": "B",
+     "text": "2:1"
+    },
+    {
+     "label": "C",
+     "text": "1:1"
+    },
+    {
+     "label": "D",
+     "text": "1:4"
+    }
+   ],
+   "answer": "A",
+   "type": "choice",
+   "difficulty": "hard",
+   "explanation": "串联电路中各处电流相等，由 W＝I²Rt 可知，电流和通电时间相同时电功与电阻成正比，所以 W甲:W乙＝5:10＝1:2；如果两只电阻并联，电压相同，电功之比才会是电阻的反比 2:1，这是最容易混淆的地方。"
+  },
+  {
+   "id": "pgy_q0582",
+   "topicId": "pgy_j065",
+   "prompt": "电流通过电动机做功时，把电能主要转化为 ____ 能，同时有少量电能转化为内能。",
+   "options": [],
+   "answer": "机械",
+   "type": "fill",
+   "difficulty": "basic",
+   "explanation": "电动机通电后转子转动，带动机械对外做功，所以电能主要转化为机械能；线圈本身有电阻，电流通过时按焦耳定律还会产生一部分热量，因此有少量电能转化为内能，这也是电动机外壳会发热的原因。"
+  },
+  {
+   "id": "pgy_q0583",
+   "topicId": "pgy_j065",
+   "prompt": "某电热器接在 220 V 的电路中，通过它的电流为 2 A，通电 5 min，电流做的功是 ____ J。",
+   "options": [],
+   "answer": "132000",
+   "type": "fill",
+   "difficulty": "standard",
+   "explanation": "先统一单位，5 min 等于 300 s；再由 W＝UIt 代入数据，W＝220 V × 2 A × 300 s ＝ 132000 J；电热器把电能几乎全部转化为内能，所以这些电功也等于它放出的热量。"
+  },
+  {
+   "id": "pgy_q0584",
+   "topicId": "pgy_j065",
+   "prompt": "有位同学认为，用电器通电的时间越长，消耗的电能就一定越多。请你判断这种说法是否正确，并说明理由。",
+   "options": [],
+   "answer": "这种说法不正确；用电器消耗的电能由实际功率和通电时间共同决定，关系式为 W＝Pt；当实际功率很小时，即使通电时间较长，消耗的电能也可能很少，例如长期插在插座上待机的手机充电器。",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "explanation": "判断这类说法要回到公式 W＝Pt，电能是两个因素共同决定的乘积，只看其中一个因素就下结论容易出错；用一个功率极小的用电器长时间工作作为反例，可以说明该说法缺少前提条件。"
+  },
+  {
+   "id": "pgy_q0585",
+   "topicId": "pgy_j065",
+   "prompt": "一只小灯泡接在 6 V 的电源上，通过它的电流为 0.3 A，通电 100 s，电流做的功是多少焦？",
+   "options": [],
+   "answer": 180,
+   "verify": "6*0.3*100",
+   "type": "numeric",
+   "difficulty": "standard",
+   "explanation": "题目给出了电压、电流和通电时间，可以直接用 W＝UIt 计算，W＝6 V × 0.3 A × 100 s ＝ 180 J；三个物理量用的都是国际单位制的主单位，所以结果直接以焦为单位，不需要再作换算。"
+  }
+ ]
+}
