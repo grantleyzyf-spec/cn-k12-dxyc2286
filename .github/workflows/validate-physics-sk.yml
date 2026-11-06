@@ -1,0 +1,94 @@
+name: Validate physics-sk Subject Data
+
+# 苏科版初中物理（physics-sk）学科专用工作流。
+# 单独成文件：validate.yml 由并行会话维护，避免多人同改一份 workflow 互相卷进提交。
+
+on:
+  push:
+    paths:
+      - 'data/physics-sk/**/*.json'
+      - 'data/physics-sk/**/*.md'
+      - 'scripts/test_phys_sk.py'
+      - 'scripts/check_phys_sk_*.py'
+      - 'scripts/attach_phys_sk_std.py'
+      - 'scripts/merge_phys_sk_*.py'
+      - '.github/workflows/validate-physics-sk.yml'
+  pull_request:
+    paths:
+      - 'data/physics-sk/**/*.json'
+      - 'scripts/test_phys_sk.py'
+      - '.github/workflows/validate-physics-sk.yml'
+  workflow_dispatch:
+
+jobs:
+  physics_sk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Subject invariants · physics-sk
+        run: python3 scripts/test_phys_sk.py
+
+      - name: Bank gate · physics-sk（19 片逐片跑）
+        run: |
+          n=0
+          for f in data/physics-sk/_bank/T*.json; do
+            python3 scripts/check_phys_sk_bank.py "$f" > /tmp/b.log 2>&1 || { echo "FAIL $f"; tail -8 /tmp/b.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 片题库"
+
+      - name: Every exam item carries itemId（整卷测试作答依赖）
+        run: |
+          python3 - <<'PY'
+          import glob, json, sys
+          bad = []
+          for p in glob.glob('data/physics-sk/exams/*/*.json'):
+              d = json.load(open(p, encoding='utf-8'))
+              for sec in d.get('sections') or []:
+                  for it in sec.get('items') or []:
+                      if not it.get('itemId'):
+                          bad.append((p, it.get('no')))
+          print('缺 itemId 的题：', len(bad))
+          for b in bad[:10]:
+              print(' ', b)
+          sys.exit(1 if bad else 0)
+          PY
+
+      - name: Exam gate · physics-sk（逐卷跑卷面结构检查）
+        run: |
+          n=0
+          for p in data/physics-sk/exams/*/*.json; do
+            python3 scripts/check_phys_sk_exam.py "$p" > /tmp/e.log 2>&1 || { echo "FAIL $p"; tail -8 /tmp/e.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 卷"
+
+      - name: Learn gate · physics-sk（学层成篇逐册跑）
+        run: |
+          shopt -s nullglob
+          files=(data/physics-sk/learn/*.json)
+          if [ ${#files[@]} -eq 0 ]; then echo "无学层成篇，跳过"; exit 0; fi
+          n=0
+          for f in "${files[@]}"; do
+            python3 scripts/check_phys_sk_learn.py "$f" > /tmp/l.log 2>&1 || { echo "FAIL $f"; tail -8 /tmp/l.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 册学层"
+
+      - name: Lecture gate · physics-sk（讲解逐份跑）
+        run: |
+          shopt -s nullglob
+          files=(data/physics-sk/exam_lectures/*/*.json)
+          if [ ${#files[@]} -eq 0 ]; then echo "无讲解文件，跳过"; exit 0; fi
+          n=0
+          for f in "${files[@]}"; do
+            python3 scripts/check_exam_lecture.py --subject physics-sk "$f" > /tmp/c.log 2>&1 || { echo "FAIL $f"; tail -8 /tmp/c.log; exit 1; }
+            n=$((n+1))
+          done
+          echo "PASS $n 份讲解"
