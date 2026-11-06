@@ -31,7 +31,7 @@ DEFAULT_EDITION = "人教版"
 SUBJECT_EDITION = {
     "math-bj": "北京版", "math-bsd": "北师大版", "math-ejiao": "鄂教版",
     "math-hebei": "冀教版", "math-hujiao": "沪教版", "math-qd": "青岛版",
-    "math-sujiao": "苏教版", "math-suke": "苏科版", "math-xiangjiao": "湘教版",
+    "math-sujiao": "苏教版", "math-suke": "苏科版", "math-xiangjiao": "湘教版", "math-xnd": "西南大学版",
     "math-hukeji": "沪科技版",
     "math-hds": "华东师大版",
     "mental-health": "北师大版", "chinese": "统编版", "history": "统编版",
@@ -42,9 +42,12 @@ SUBJECT_EDITION = {
     "geography-zhongtu-cz": "中图版·钟作慈",
     "geography-yuejiao": "粤教粤人版",
     "chemistry-lujiao": "鲁教版", "chemistry-luke": "鲁科版", "chemistry-hujiao": "沪教版",
+    "physics-jk": "教科版",
     "chemistry-bj": "北京版",
     "chemistry-yuejiao": "科学粤教版", "chemistry-kepu": "科普版", "chemistry-sujiao": "苏教版",
     "chemistry-hukeji": "沪科技版",
+    "physics-hkj-yj": "沪科技粤教版",
+    "physics-bsd-gyy": "北师大版·郭玉英",
 }
 
 SUBJECTS = [
@@ -53,12 +56,14 @@ SUBJECTS = [
     "music", "art", "mental-health", "politics", "geography-kepu", "geography-lujiao",
     # 数学各版本桶（同科异版各自一个桶；出卷后重跑本脚本即进「整卷测试」）
     "math-bj", "math-bsd", "math-ejiao", "math-hebei", "math-hujiao",
-    "math-qd", "math-sujiao", "math-suke", "math-xiangjiao", "math-hukeji", "math-hds",
+    "math-qd", "math-sujiao", "math-suke", "math-xiangjiao", "math-hukeji", "math-xnd", "math-hds",
+    # 物理各版本桶
+    "physics-hkj-yj", "physics-bsd-gyy",
     # 地理各版本桶
     "geography-shangwu", "geography-xiangjiao", "geography-zhongtu-cz", "geography-jin",
     "geography-yuejiao",
     # 化学各版本桶
-    "chemistry-lujiao", "chemistry-luke", "chemistry-hujiao", "chemistry-yuejiao",
+    "chemistry-lujiao", "chemistry-luke", "chemistry-hujiao", "physics-jk", "chemistry-yuejiao",
     "chemistry-bj", "chemistry-kepu", "chemistry-sujiao", "chemistry-hukeji",
 ]
 
