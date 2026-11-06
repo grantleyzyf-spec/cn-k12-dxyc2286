@@ -115,7 +115,7 @@ def build():
                     E = json.load(open(exam_f, encoding="utf-8"))
                     full = E.get("fullScore")
                     dur = E.get("duration")
-                    items = sum(len(s["items"]) for s in E.get("sections") or [])
+                    items = sum(len(s.get("items") or []) for s in E.get("sections") or [])
                 papers.append({"paper": L.get("paper"), "kind": L.get("kind"),
                                "examId": L.get("examId"), "words": L.get("words"),
                                "fullScore": full, "duration": dur, "items": items})
