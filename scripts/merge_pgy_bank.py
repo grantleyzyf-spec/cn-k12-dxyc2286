@@ -80,6 +80,9 @@ def main():
             if q.get('topicId') not in need_by:
                 errs.append('%s 题目挂到非本片知识点 %s' % (sid, q.get('topicId')))
             seen_ids.add(qid)
+            # schema 要求 answer 必须是字符串：数值题工位常写 int，合并时统一转字符串
+            if not isinstance(q.get('answer'), str):
+                q['answer'] = str(q['answer'])
             questions.append(q)
             by_topic[q.get('topicId')] = by_topic.get(q.get('topicId'), 0) + 1
 
