@@ -74,11 +74,14 @@
           "music",
           "physics",
           "physics-bsd-gyy",
+          "physics-bsd-lcm",
           "physics-hkj-yj",
           "physics-hushuke",
           "physics-jk",
+          "physics-hkjy",
           "physics-luke",
           "physics-sk",
+          "physics-yj",
           "politics",
           "russian",
           "science",
@@ -249,13 +252,11 @@
       },
       "unitId": {
         "type": "string",
-        "description": "所属单元节点 id（课时点用）"
+        "description": "所属单元节点 id（部分版本桶用于章节归属）"
       },
       "unitNo": {
-        "description": "单元序号（物理教科版扩展）"
-      },
-      "lessonNo": {
-        "description": "课时序号（物理教科版扩展）"
+        "type": "integer",
+        "description": "所属单元序号（部分版本桶用于章节排序）"
       }
     },
     "additionalProperties": false,
