@@ -1,0 +1,205 @@
+{
+ "shard": "B09",
+ "bucket": "physics-hushuke",
+ "questions": [
+  {
+   "id": "phu_j007_q01",
+   "topicId": "phu_j007",
+   "subject": "physics-hushuke",
+   "type": "choice",
+   "difficulty": "basic",
+   "prompt": "物体从静止开始做匀加速直线运动，加速度为 a，经过时间 t，关于它的速度和位移，下列关系式正确的是（　）",
+   "options": [
+    {
+     "label": "A",
+     "text": "v = at，x = ½at²"
+    },
+    {
+     "label": "B",
+     "text": "v = at²，x = ½at"
+    },
+    {
+     "label": "C",
+     "text": "v = ½at，x = at²"
+    },
+    {
+     "label": "D",
+     "text": "v = at，x = at"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "v = at，x = ½at²"
+    },
+    {
+     "label": "B",
+     "text": "v = at²，x = ½at"
+    },
+    {
+     "label": "C",
+     "text": "v = ½at，x = at²"
+    },
+    {
+     "label": "D",
+     "text": "v = at，x = at"
+    }
+   ],
+   "answer": "A",
+   "explanation": "初速度为零时，速度公式 v = v0 + at 化为 v = at，位移公式 x = v0t + ½at² 化为 x = ½at²，故选 A。B 项把时间的幂次弄反，速度应与时间的一次方成正比而不是二次方；C 项在速度里多写了系数 ½；D 项把位移写成 at，量纲上 at 是速度而不是位移。故选 A。"
+  },
+  {
+   "id": "phu_j007_q02",
+   "topicId": "phu_j007",
+   "subject": "physics-hushuke",
+   "type": "fill",
+   "difficulty": "basic",
+   "prompt": "一物体做匀加速直线运动，初速度为 4 m/s，加速度为 2 m/s²，则它在 3 s 内的位移为 ____ m。",
+   "options": [],
+   "choices": [],
+   "answer": "21",
+   "explanation": "由位移公式 x = v0t + ½at² 代入数据，x = 4 × 3 + ½ × 2 × 3² = 12 + 9 = 21 m。这里两项都要算：v0t 是初速度贡献的位移，½at² 是加速度额外贡献的位移，漏掉任何一项都会得到错误结果。"
+  },
+  {
+   "id": "phu_j007_q03",
+   "topicId": "phu_j007",
+   "subject": "physics-hushuke",
+   "type": "choice",
+   "difficulty": "standard",
+   "prompt": "物体做匀变速直线运动，初速度为 v0，经过时间 t 后速度为 v，则这段时间内物体的平均速度为（　）",
+   "options": [
+    {
+     "label": "A",
+     "text": "(v0 + v) / 2"
+    },
+    {
+     "label": "B",
+     "text": "v / 2"
+    },
+    {
+     "label": "C",
+     "text": "v0 · t + v · t"
+    },
+    {
+     "label": "D",
+     "text": "(v − v0) / t"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "(v0 + v) / 2"
+    },
+    {
+     "label": "B",
+     "text": "v / 2"
+    },
+    {
+     "label": "C",
+     "text": "v0 · t + v · t"
+    },
+    {
+     "label": "D",
+     "text": "(v − v0) / t"
+    }
+   ],
+   "answer": "A",
+   "explanation": "匀变速直线运动中速度随时间均匀变化，平均速度等于初速度与末速度的算术平均值，即 (v0 + v) / 2，故选 A。B 项漏掉了初速度，只在初速度为零时才与正确结果相同；C 项把速度与时间的乘积当作平均速度，量纲是位移的平方级，明显不对；D 项 (v − v0) / t 实际是加速度而不是平均速度。故选 A。"
+  },
+  {
+   "id": "phu_j007_q04",
+   "topicId": "phu_j007",
+   "subject": "physics-hushuke",
+   "type": "fill",
+   "difficulty": "standard",
+   "prompt": "一辆汽车以 10 m/s 的速度行驶，随后以 2 m/s² 的加速度匀加速前进，当速度增大到 22 m/s 时，汽车通过的位移为 ____ m。",
+   "options": [],
+   "choices": [],
+   "answer": "96",
+   "explanation": "已知初速度、末速度和加速度而不涉及时间，用速度位移关系式 v² − v0² = 2ax 最方便，得 x = (v² − v0²) / (2a) = (484 − 100) / 4 = 96 m。若改用速度公式先求时间 t = (22 − 10) / 2 = 6 s，再代入 x = v0t + ½at² = 60 + 36 = 96 m，两种做法结果一致，说明公式之间是自洽的。"
+  },
+  {
+   "id": "phu_j007_q05",
+   "topicId": "phu_j007",
+   "subject": "physics-hushuke",
+   "type": "choice",
+   "difficulty": "standard",
+   "prompt": "物体做匀变速直线运动，在连续相等的时间间隔 T 内，相邻两段位移之差为（　）",
+   "options": [
+    {
+     "label": "A",
+     "text": "aT²"
+    },
+    {
+     "label": "B",
+     "text": "aT"
+    },
+    {
+     "label": "C",
+     "text": "½aT²"
+    },
+    {
+     "label": "D",
+     "text": "2aT"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "aT²"
+    },
+    {
+     "label": "B",
+     "text": "aT"
+    },
+    {
+     "label": "C",
+     "text": "½aT²"
+    },
+    {
+     "label": "D",
+     "text": "2aT"
+    }
+   ],
+   "answer": "A",
+   "explanation": "设某段位移为 x1 = vT + ½aT²，下一段位移为 x2 = (v + aT)T + ½aT²，两式相减得 x2 − x1 = aT²，故选 A。这个结论与初速度大小无关，是处理纸带问题时逐差法测加速度的依据。B 项 aT 的量纲是速度，不是位移差；C 项多写了系数 ½，是把位移公式的系数误用到位移差上；D 项差了一个因子 2。故选 A。"
+  },
+  {
+   "id": "phu_j007_q06",
+   "topicId": "phu_j007",
+   "subject": "physics-hushuke",
+   "type": "numeric",
+   "difficulty": "hard",
+   "prompt": "一物体从静止开始做匀加速直线运动，已知它在第 3 s 内的位移为 10 m，求该物体的加速度大小。",
+   "options": [],
+   "choices": [],
+   "answer": 4,
+   "explanation": "第 3 s 内指 2 s 末到 3 s 末这一个 1 s 间隔，其位移等于前 3 s 内位移减去前 2 s 内位移，即 Δx = ½a × 3² − ½a × 2² = ½a × 5 = 2.5a。由 2.5a = 10 得 a = 4 m/s²。常见错误是直接把 1 s 代入 x = ½at² 得到 a = 20 m/s²，这实际算的是「以第 1 s 内位移为 10 m」的情形，忽略了物体在第 3 s 初已经有了一定速度。",
+   "verify": "10/(0.5*(3**2-2**2))"
+  },
+  {
+   "id": "phu_j007_q07",
+   "topicId": "phu_j007",
+   "subject": "physics-hushuke",
+   "type": "short-answer",
+   "difficulty": "standard",
+   "prompt": "请写出匀变速直线运动的速度公式和位移公式（用 v0、v、a、t、x 表示），并说明速度-时间图像中图线与时间轴所围面积的物理意义。",
+   "options": [],
+   "choices": [],
+   "answer": "速度公式为 v = v0 + at；位移公式为 x = v0t + ½at²，消去时间还可得 v² − v0² = 2ax；速度-时间图像中图线与时间轴所围的面积表示该段时间内物体的位移，时间轴上方的面积取正、下方取负",
+   "explanation": "两个基本公式都由加速度的定义 a = (v − v0) / t 与平均速度的定义推出：由加速度定义变形即得速度公式；把匀变速运动的平均速度 (v0 + v) / 2 乘以时间 t，并代入速度公式消去 v，即得位移公式。第三个式子由前两式消去 t 得到，它在不涉及时间的问题中最方便。图像中取极短时间 Δt，图线下的窄条面积 v·Δt 就是这段时间内的位移，把全部窄条累加即得总面积，所以面积在数值上等于位移，图线在时间轴下方时速度反向、位移取负值。"
+  },
+  {
+   "id": "phu_j007_q08",
+   "topicId": "phu_j007",
+   "subject": "physics-hushuke",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "prompt": "一辆汽车以 15 m/s 的速度行驶，司机刹车后汽车以 5 m/s² 的加速度匀减速直线运动。有同学直接把 t = 5 s 代入 x = v0t + ½at² 求刹车位移，请指出这种做法错在哪里，并求出正确的刹车位移。",
+   "options": [],
+   "choices": [],
+   "answer": "错误在于匀减速运动速度减到零后汽车就停住，不会继续反向运动，位移公式只在汽车仍在运动的 0 到 3 s 内成立；应先由 t = v0 / a = 3 s 判断停止时刻，再把 3 s 代入位移公式得 x = 15 × 3 − ½ × 5 × 3² = 22.5 m；若直接代 5 s 会算出 12.5 m，比真实位移还小，属于把公式外推到运动已经不存在的阶段",
+   "explanation": "匀减速直线运动的位移公式是以加速度始终不变为前提的数学关系，而实际的刹车过程在速度减为零时就结束了，此后汽车静止，加速度不再保持原来的值，公式的适用条件被破坏。所以解这类题的第一步永远是先求停止时间 t = v0 / a，再比较题给时间与停止时间的长短：题给时间不超过停止时间可直接代入，超过时只能用停止时间计算，或直接用 x = v0² / (2a)。本题正确位移为 22.5 m，可见外推会得到明显偏离的结果。"
+  }
+ ]
+}

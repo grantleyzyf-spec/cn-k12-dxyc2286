@@ -1,0 +1,70 @@
+name: Validate physics-hushuke Subject Data
+
+# physics-hushuke 沪科技版高中物理（physics-hushuke）学科专用工作流。
+# 单独成文件：validate.yml 由并行会话维护，避免多人同改一份 workflow 互相卷进提交。
+
+on:
+  push:
+    paths:
+      - 'data/physics-hushuke/**/*.json'
+      - 'scripts/test_chem_editions.py'
+      - 'scripts/check_chem_editions_bank.py'
+      - 'scripts/check_chem_editions_exam.py'
+      - 'scripts/check_chem_editions_learn.py'
+      - 'scripts/check_chem_editions_lecture.py'
+      - '.github/workflows/validate-physics-hushuke.yml'
+  pull_request:
+    paths:
+      - 'data/physics-hushuke/**/*.json'
+      - 'scripts/test_chem_editions.py'
+      - '.github/workflows/validate-physics-hushuke.yml'
+  workflow_dispatch:
+
+jobs:
+  phys_hushuke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Subject invariants · physics-hushuke
+        run: python3 scripts/test_chem_editions.py physics-hushuke
+
+      - name: Structure & references
+        run: python3 scripts/validate.py physics-hushuke
+
+      - name: Schema compliance
+        run: |
+          npm install -g ajv-cli ajv-formats
+          ajv validate -c ajv-formats -s data/schema-topic.json -d data/physics-hushuke/topics.json
+          if [ -f data/physics-hushuke/questions.json ]; then
+            ajv validate -c ajv-formats -s data/schema-question.json -d data/physics-hushuke/questions.json
+          fi
+
+      - name: Exam papers
+        run: |
+          if [ -d data/physics-hushuke/exams ]; then
+            python3 scripts/check_chem_editions_exam.py --subject physics-hushuke --all
+          else
+            echo "尚无试卷（阶段 4 未开）"
+          fi
+
+      - name: Learn layer
+        run: |
+          if ls data/physics-hushuke/learn/_parts/*/*.json >/dev/null 2>&1; then
+            python3 scripts/check_chem_editions_learn.py --bucket physics-hushuke --all
+          else
+            echo "尚无学层（阶段 5 未开）"
+          fi
+
+      - name: Exam lectures
+        run: |
+          if [ -d data/physics-hushuke/exam_lectures ]; then
+            python3 scripts/check_chem_editions_lecture.py --bucket physics-hushuke --all
+          else
+            echo "尚无讲解（阶段 6 未开）"
+          fi

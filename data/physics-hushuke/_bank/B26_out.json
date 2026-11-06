@@ -1,0 +1,239 @@
+{
+ "shard": "B26",
+ "bucket": "physics-hushuke",
+ "questions": [
+  {
+   "id": "phu_j021_q01",
+   "topicId": "phu_j021",
+   "subject": "physics-hushuke",
+   "type": "choice",
+   "difficulty": "basic",
+   "prompt": "汽车在水平路面上转弯，若轮胎与路面之间不打滑，则汽车做圆周运动所需的向心力来自（　）",
+   "options": [
+    {
+     "label": "A",
+     "text": "汽车受到的重力"
+    },
+    {
+     "label": "B",
+     "text": "路面对轮胎的静摩擦力"
+    },
+    {
+     "label": "C",
+     "text": "路面对轮胎的支持力"
+    },
+    {
+     "label": "D",
+     "text": "汽车发动机的牵引力"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "汽车受到的重力"
+    },
+    {
+     "label": "B",
+     "text": "路面对轮胎的静摩擦力"
+    },
+    {
+     "label": "C",
+     "text": "路面对轮胎的支持力"
+    },
+    {
+     "label": "D",
+     "text": "汽车发动机的牵引力"
+    }
+   ],
+   "answer": "B",
+   "explanation": "汽车在水平路面转弯时，重力与路面的支持力都在竖直方向上，二者平衡，不能提供指向圆心的力；只有轮胎与路面之间的静摩擦力沿半径指向圆心，充当向心力。若静摩擦力不足以提供所需向心力，汽车就会做离心运动而滑出弯道。故选 B。"
+  },
+  {
+   "id": "phu_j021_q02",
+   "topicId": "phu_j021",
+   "subject": "physics-hushuke",
+   "type": "choice",
+   "difficulty": "basic",
+   "prompt": "汽车以某一速度通过拱形桥的最高点时，车对桥面的压力与汽车所受重力相比（　）",
+   "options": [
+    {
+     "label": "A",
+     "text": "大于重力"
+    },
+    {
+     "label": "B",
+     "text": "等于重力"
+    },
+    {
+     "label": "C",
+     "text": "小于重力"
+    },
+    {
+     "label": "D",
+     "text": "先小于重力，后大于重力"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "大于重力"
+    },
+    {
+     "label": "B",
+     "text": "等于重力"
+    },
+    {
+     "label": "C",
+     "text": "小于重力"
+    },
+    {
+     "label": "D",
+     "text": "先小于重力，后大于重力"
+    }
+   ],
+   "answer": "C",
+   "explanation": "汽车在拱形桥最高点做圆周运动，重力与桥面支持力的合力提供向心力，方向竖直向下，由牛顿第二定律得 mg - N = mv²/R，所以 N = mg - mv²/R，支持力小于重力；根据牛顿第三定律，车对桥面的压力大小也小于重力。故选 C。"
+  },
+  {
+   "id": "phu_j021_q03",
+   "topicId": "phu_j021",
+   "subject": "physics-hushuke",
+   "type": "fill",
+   "difficulty": "standard",
+   "prompt": "质量为 m 的汽车以速度 v 通过半径为 R 的拱形桥最高点，重力加速度为 g，则桥面对汽车的支持力 N = ____。",
+   "options": [],
+   "choices": [],
+   "answer": "mg - mv²/R",
+   "explanation": "在拱形桥最高点，重力与支持力的合力提供向心力，方向指向圆心即竖直向下，由牛顿第二定律得 mg - N = mv²/R，解得 N = mg - mv²/R。当速度增大到 √(gR) 时支持力减为零，汽车将脱离桥面。答案依据：最高点的向心力方程。"
+  },
+  {
+   "id": "phu_j021_q04",
+   "topicId": "phu_j021",
+   "subject": "physics-hushuke",
+   "type": "numeric",
+   "difficulty": "standard",
+   "prompt": "质量为 1000 kg 的汽车以 10 m/s 的速度通过半径 50 m 的拱形桥最高点，取 g = 10 m/s²，则桥面对汽车的支持力为多少牛？",
+   "options": [],
+   "choices": [],
+   "answer": "8000",
+   "explanation": "最高点处重力与支持力的合力提供向心力，由 mg - N = mv²/R 代入数据，1000×10 - N = 1000×10²/50 = 2000，解得 N = 8000 N。结果为正，说明汽车仍压在桥面上而没有脱离。答案依据：向心力方程的计算结果 8000 N。",
+   "verify": "1000*10-1000*10**2/50"
+  },
+  {
+   "id": "phu_j021_q05",
+   "topicId": "phu_j021",
+   "subject": "physics-hushuke",
+   "type": "choice",
+   "difficulty": "standard",
+   "prompt": "关于离心现象，下列说法正确的是（　）",
+   "options": [
+    {
+     "label": "A",
+     "text": "物体做圆周运动时，只要速度足够大就一定会做离心运动"
+    },
+    {
+     "label": "B",
+     "text": "外界提供的向心力小于物体做圆周运动所需的向心力时，物体将逐渐远离圆心"
+    },
+    {
+     "label": "C",
+     "text": "离心现象说明物体受到的力已经全部消失"
+    },
+    {
+     "label": "D",
+     "text": "做离心运动的物体沿半径方向做匀速直线运动"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "物体做圆周运动时，只要速度足够大就一定会做离心运动"
+    },
+    {
+     "label": "B",
+     "text": "外界提供的向心力小于物体做圆周运动所需的向心力时，物体将逐渐远离圆心"
+    },
+    {
+     "label": "C",
+     "text": "离心现象说明物体受到的力已经全部消失"
+    },
+    {
+     "label": "D",
+     "text": "做离心运动的物体沿半径方向做匀速直线运动"
+    }
+   ],
+   "answer": "B",
+   "explanation": "做圆周运动的物体，若所受合力不足以提供所需的向心力，即实际提供的向心力小于 mv²/r 时，物体将逐渐远离圆心，这就是离心现象。离心现象中物体仍然受力，只是合力不够；其轨迹是逐渐远离圆心的曲线，而非沿半径的匀速直线运动。故选 B。"
+  },
+  {
+   "id": "phu_j021_q06",
+   "topicId": "phu_j021",
+   "subject": "physics-hushuke",
+   "type": "choice",
+   "difficulty": "hard",
+   "prompt": "汽车在水平路面上转弯，轮胎与路面间的动摩擦因数为 μ，弯道半径为 R，重力加速度为 g，取最大静摩擦力等于滑动摩擦力，则汽车不打滑通过弯道的最大速度 v 为（　）",
+   "options": [
+    {
+     "label": "A",
+     "text": "μgR"
+    },
+    {
+     "label": "B",
+     "text": "√(μgR)"
+    },
+    {
+     "label": "C",
+     "text": "√(gR/μ)"
+    },
+    {
+     "label": "D",
+     "text": "μg/R"
+    }
+   ],
+   "choices": [
+    {
+     "label": "A",
+     "text": "μgR"
+    },
+    {
+     "label": "B",
+     "text": "√(μgR)"
+    },
+    {
+     "label": "C",
+     "text": "√(gR/μ)"
+    },
+    {
+     "label": "D",
+     "text": "μg/R"
+    }
+   ],
+   "answer": "B",
+   "explanation": "汽车在水平路面转弯时由静摩擦力提供向心力，速度最大时静摩擦力达到最大值 μmg，由 μmg = mv²/R 解得 v = √(μgR)。速度超过该值后静摩擦力不足以提供所需向心力，汽车将做离心运动而滑出弯道。故选 B。"
+  },
+  {
+   "id": "phu_j021_q07",
+   "topicId": "phu_j021",
+   "subject": "physics-hushuke",
+   "type": "short-answer",
+   "difficulty": "hard",
+   "prompt": "洗衣机脱水时，湿衣服随脱水筒一起高速旋转，筒壁上的小孔让水甩出。请说明水被甩出的原因，并指出提高脱水效果可采取的措施。",
+   "options": [],
+   "choices": [],
+   "answer": "水随衣服做圆周运动需要向心力，衣服对水的附着力不足以提供所需向心力时，水做离心运动从筒壁小孔飞出；提高脱水筒转速可增大所需的向心力，使更多的水被甩出；适当增大脱水筒半径也有利于提高脱水效果。",
+   "explanation": "脱水筒高速旋转时，水与衣服之间的附着力是有限的，当附着力小于水做圆周运动所需的向心力时，水便做离心运动，从筒壁小孔飞出；转速越大、半径越大，所需的向心力越大，脱水效果越好。答案依据：离心现象的产生条件与向心力表达式。"
+  },
+  {
+   "id": "phu_j021_q08",
+   "topicId": "phu_j021",
+   "subject": "physics-hushuke",
+   "type": "fill",
+   "difficulty": "basic",
+   "prompt": "过山车通过圆形轨道最高点时，速度越大，座椅对乘客的压力越____。",
+   "options": [],
+   "choices": [],
+   "answer": "小",
+   "explanation": "在圆形轨道最高点，重力与座椅支持力的合力提供向心力，由 mg - N = mv²/R 得 N = mg - mv²/R，速度 v 越大，支持力 N 越小；当速度增大到 √(gR) 时 N 减为零，乘客处于完全失重状态。答案依据：最高点的向心力方程。"
+  }
+ ]
+}
