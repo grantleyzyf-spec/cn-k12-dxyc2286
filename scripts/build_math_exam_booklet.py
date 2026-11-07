@@ -17,6 +17,8 @@ import re
 import sys
 
 from docx import Document
+from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 spec = importlib.util.spec_from_file_location("exam_docx", os.path.join(HERE, "build_math_exam_docx.py"))
@@ -44,14 +46,60 @@ def cn_number(text):
     return total + cur
 
 
+def _has_content(p):
+    """段落是否含可见内容（文字/公式/图片/对象）；纯空段返回 False。"""
+    for el in p.iter():
+        tag = el.tag
+        if tag.endswith("}t"):
+            if (el.text or "").strip():
+                return True
+        elif tag.endswith(("}oMath", "}oMathPara", "}drawing", "}pict", "}object")):
+            return True
+    return False
+
+
 def merge_body(master, src_path):
-    """把 src_path 的正文元素深拷贝进 master（丢弃源 sectPr）"""
+    """把 src_path 的正文元素深拷贝进 master（丢弃源 sectPr）。
+
+    必须插到 master 自身 sectPr **之前**：python-docx 的 add_page_break()/add_paragraph()
+    都走 insert_element_before(sectPr)，若这里用 body.append() 追加，正文会落到 sectPr 之后，
+    结果所有分页符堆在正文前（每卷多 1 张空白页）、卷与卷之间反而没有分页。
+    """
     src = Document(src_path)
     body = master.element.body
-    for child in src.element.body:
-        if child.tag.endswith("}sectPr"):
-            continue
-        body.append(copy.deepcopy(child))
+    sect = body.find(qn("w:sectPr"))
+    first = None
+    kids = [c for c in src.element.body if not c.tag.endswith("}sectPr")]
+    # 丢掉卷末空段（单份渲染尾部留 3–4 个空段，合订时会把卷末顶出一张空白页）
+    while kids and kids[-1].tag.endswith("}p") and not _has_content(kids[-1]):
+        kids.pop()
+    for child in kids:
+        el = copy.deepcopy(child)
+        if first is None:
+            first = el
+        if sect is not None:
+            sect.addprevious(el)
+        else:
+            body.append(el)
+    return first
+
+
+def page_break_before(el):
+    """给卷首段落加「段前分页」：卷末正好占满页面时不会多出空白页（硬分页会多 1 张）。"""
+    if el is None or not el.tag.endswith("}p"):
+        return
+    pPr = el.find(qn("w:pPr"))
+    if pPr is None:
+        pPr = OxmlElement("w:pPr")
+        el.insert(0, pPr)
+    if pPr.find(qn("w:pageBreakBefore")) is not None:
+        return
+    pbb = OxmlElement("w:pageBreakBefore")
+    style = pPr.find(qn("w:pStyle"))
+    if style is not None:
+        style.addnext(pbb)
+    else:
+        pPr.insert(0, pbb)
 
 
 def build(master, papers, title, subtitle, out_path):
@@ -60,11 +108,8 @@ def build(master, papers, title, subtitle, out_path):
     E.para(master, "目　录", size=13, bold=True, align="center", cn="黑体", space_after=6)
     for i, (ex, _) in enumerate(papers, 1):
         E.para(master, f"{i}. {ex['book']}　{ex['paper']}", size=10.5, space_after=2)
-    master.add_page_break()
-    for idx, (ex, src) in enumerate(papers):
-        if idx:
-            master.add_page_break()
-        merge_body(master, src)
+    for ex, src in papers:
+        page_break_before(merge_body(master, src))
     E.add_page_number_footer(master)
     master.save(out_path)
 
