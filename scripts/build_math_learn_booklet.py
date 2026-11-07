@@ -36,17 +36,26 @@ def main():
         B.add_para(doc, f"{B.SUBJECT_NAME}（{EDITION}）· 共 {len(lessons)} 个课时 · 学生版", size=10, align="center", after=12, color="666666")
         B.add_para(doc, "目　录", size=13, bold=True, cn="黑体", align="center", after=6)
         for i, L in enumerate(lessons, 1):
-            B.add_para(doc, f"{i}. {L['title']}", size=10.5, left=0.8, after=2)
+            B.add_para(doc, f"{i}. {L.get('title') or L.get('name') or ''}", size=10.5, left=0.8, after=2)
         doc.add_page_break()
         for idx, L in enumerate(lessons):
             if idx:
                 doc.add_page_break()
-            B.add_para(doc, L["title"], size=15, bold=True, cn="黑体", align="center", after=2)
+            _t = L.get("title") or L.get("name") or ""      # 华东师大版学层 JSON 用 name 而非 title
+            B.add_para(doc, _t, size=15, bold=True, cn="黑体", align="center", after=2)
+            B.add_para(doc, "学生版精讲 · 先读课本原文，再用大白话拆开，最后自查", size=9,
+                       align="center", after=2, color="888888")   # 与单份讲解副题同源
             B.add_para(doc, f"（{len(re.findall(r'[一-龥]', L['markdown']))} 字）", size=8.5,
                        align="center", after=8, color="888888")
             for raw in L["markdown"].split("\n"):
                 ln = raw.rstrip()
-                if not ln.strip() or ln.startswith("# "):
+                if not ln.strip():
+                    continue
+                if ln.startswith("# "):
+                    _h1 = ln[2:].strip()
+                    if _h1 == _t.strip():
+                        continue          # 一级标题与课时名相同 ⇒ 已作为课时标题
+                    B.add_para(doc, _h1, size=11.5, bold=True, cn="黑体", align="center", before=2, after=6)
                     continue
                 if ln.startswith("## "):
                     B.add_para(doc, ln[3:].strip(), size=12, bold=True, cn="黑体", before=9, after=5)

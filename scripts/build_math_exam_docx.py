@@ -124,8 +124,26 @@ def new_doc():
     return doc
 
 
+def _strip_edition(text, extra=""):
+    """剥掉卷名/册名自带的版本前缀与册名前缀（最长优先）：
+
+    `苏科版八年级下册 第11章…` → `第11章…`；`苏教版一年级上册` → `一年级上册`。
+    只用于展示（标题），不动 `paper` 字段与文件名。
+    """
+    if not text:
+        return text
+    for pre in (EDITION + extra, extra, EDITION):
+        if pre and text.startswith(pre):
+            rest = text[len(pre):].lstrip(" \u3000")
+            if rest:
+                return rest
+    return text
+
+
 def head(doc, ex, answer=False):
-    title = f"{SUBJECT_NAME}（{EDITION}）{ex['book']}　{ex['paper']}"
+    book_disp = _strip_edition(ex["book"])
+    paper_disp = _strip_edition(ex["paper"], book_disp)
+    title = f"{SUBJECT_NAME}（{EDITION}）{book_disp}　{paper_disp}"
     if answer:
         title += "　参考答案与评分标准"
     para(doc, title, size=16, bold=True, align="center", cn="黑体", space_after=4)

@@ -116,7 +116,10 @@ def new_doc():
 
 def render(md, book, title, path):
     doc = new_doc()
-    add_para(doc, f"{SUBJECT_NAME}（{EDITION}）{book}　{title}", size=16, bold=True, cn="黑体",
+    book_disp = book or ""
+    if EDITION and book_disp.startswith(EDITION):   # 册名自带版本前缀（苏教版一年级上册）时标题不重复
+        book_disp = book_disp[len(EDITION):].strip()
+    add_para(doc, f"{SUBJECT_NAME}（{EDITION}）{book_disp}　{title}", size=16, bold=True, cn="黑体",
              align="center", after=2)
     add_para(doc, "学生版精讲 · 先读课本原文，再用大白话拆开，最后自查", size=9,
              align="center", after=10, color="666666")
@@ -125,7 +128,11 @@ def render(md, book, title, path):
         if not ln.strip():
             continue
         if ln.startswith("# "):
-            continue                     # 一级标题已作为文档标题
+            _h1 = ln[2:].strip()
+            if _h1 == (title or "").strip():
+                continue                 # 一级标题与课时名相同 ⇒ 已作为文档标题
+            add_para(doc, _h1, size=12, bold=True, cn="黑体", align="center", before=4, after=6)
+            continue
         if ln.startswith("## "):
             add_para(doc, ln[3:].strip(), size=12, bold=True, cn="黑体", before=10, after=6)
         elif ln.startswith("### "):
@@ -175,13 +182,15 @@ def main():
         d = os.path.join(OUT_ROOT, book)
         os.makedirs(d, exist_ok=True)
         used = set()
-        for L in data.get("lessons") or []:
-            safe = re.sub(r"[\\/:*?\"<>|]", "_", L["title"])
+        rows = data.get("lessons") or ([data] if data.get("markdown") else [])
+        for L in rows:
+            _title = L.get("title") or L.get("name") or ""   # 华东师大版学层 JSON 用 name 而非 title
+            safe = re.sub(r"[\\/:*?\"<>|]", "_", _title)
             # 同册可能有两课时同名（如两个「练习一」）⇒ 撞名时补 topicId，否则后一篇会覆盖前一篇
             if safe in used:
                 safe = f"{safe}_{L['topicId']}"
             used.add(safe)
-            render(L["markdown"], book, L["title"], os.path.join(d, f"{safe}.docx"))
+            render(L["markdown"], book, _title, os.path.join(d, f"{safe}.docx"))
             n += 1
     print(f"共渲染 {n} 篇学层 docx → {OUT_ROOT}")
 
