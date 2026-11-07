@@ -164,6 +164,7 @@ def main():
         if check_one(f):
             bad += 1
     print(f"\n共 {len(files)} 份 · 不合格 {bad}")
+    print("RESULT: PASS" if not bad else f"RESULT: FAIL ({bad} 份)")
     return 1 if bad else 0
 
 

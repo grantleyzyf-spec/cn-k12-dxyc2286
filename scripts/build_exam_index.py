@@ -50,8 +50,9 @@ SUBJECT_EDITION = {
     "physics-hkj-yj": "沪科技粤教版",
     "physics-bsd-gyy": "北师大版·郭玉英",
     "physics-sk": "苏科版",
-    "physics-hkjy": "沪科教版",
+    "physics-hushuke": "沪科技版",
     "physics-luke": "鲁科版",
+    "physics-hkjy": "沪科教版", "physics-bsd-lcm": "北师大版·李春密", "physics-bsd-gyy": "北师大版·郭玉英",
 }
 
 SUBJECTS = [
@@ -62,7 +63,8 @@ SUBJECTS = [
     "math-bj", "math-bsd", "math-ejiao", "math-hebei", "math-hujiao",
     "math-qd", "math-sujiao", "math-suke", "math-xiangjiao", "math-hukeji", "math-xnd", "math-hds",
     # 物理各版本桶
-    "physics-hkj-yj", "physics-bsd-gyy", "physics-hkjy", "physics-luke",
+    "physics-hkj-yj", "physics-bsd-gyy", "physics-bsd-lcm", "physics-luke", "physics-sk",
+    "physics-hushuke", "physics-hkjy", "physics-jk", "physics-yj", "physics-hkjy", "physics-luke",
     # 地理各版本桶
     "geography-shangwu", "geography-xiangjiao", "geography-zhongtu-cz", "geography-jin",
     "geography-yuejiao",
@@ -118,7 +120,8 @@ def main():
         if not eid:
             print(f"跳过（无 examId）{rel}")
             continue
-        edition = d.get("edition") or SUBJECT_EDITION.get(sub, DEFAULT_EDITION)
+        # 版本桶以 SUBJECT_EDITION 为准：卷文件里的 edition 常是生成时的旧值（实测鲁科版被写成人教版）
+        edition = SUBJECT_EDITION.get(sub) or d.get("edition") or DEFAULT_EDITION
         exams[eid] = {
             "examId": eid,
             "subject": sub,
