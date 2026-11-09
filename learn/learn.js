@@ -261,6 +261,17 @@
       + units.map(function (u) { return '<option value="' + esc(u) + '">' + esc(u) + '</option>'; }).join('');
   }
 
+  // ---- 视频讲解链接（夸克网盘）----
+  var VID = {}, VID_LOADED = false;
+  function loadVideos(then) {
+    if (VID_LOADED) { if (then) then(); return; }
+    fetch('../data/math/video_links.json').then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    }).then(function (j) { VID = j || {}; VID_LOADED = true; if (then) then(); })
+      .catch(function () { VID_LOADED = true; if (then) then(); });
+  }
+
   // ---- 课标映射（懒加载某学科 topics.json，只取已挂标的点）----
   var STD = {}, STD_DIR = '', STD_LOADED = false;
   function loadStandards(dir, then) {
@@ -274,6 +285,7 @@
       arr.forEach(function (t) { if (t && t.id && t.standards && t.standards.length) map[t.id] = t.standards; });
       STD = map; STD_DIR = dir; STD_LOADED = true;
       if (then) then();
+      if (cur) { try { open(cur); } catch (e) {} }   // 课标映射晚到时重绘当前课时，避免首点显示「暂无课标」
     }).catch(function () { STD_LOADED = true; if (then) then(); });
   }
 
@@ -304,6 +316,9 @@
     if (d.indexOf('math') === 0) return '2022 版义务教育数学课程标准';
     if (d === 'chinese') return '2022 版义务教育语文课程标准';
     if (d === 'mental-health') return '《中小学心理健康教育指导纲要（2012 年修订）》';
+    if (d === 'chemistry-lujiao' || d === 'chemistry-kepu') return '2022 版义务教育化学课程标准';
+    if (d === 'chemistry-luke') return '2017 版普通高中化学课程标准';
+    if (d === 'physics-yj') return '2017 版普通高中物理课程标准';
     return '本学科课程标准';
   }
 
@@ -316,6 +331,12 @@
     var L = BOOK.lessons[idx];
     var md = (BOOK.md[topicId] || '').trim();
     var html = md ? md2html(md) : '<p>这篇讲解还没写。</p>';
+    var v = VID[topicId];
+    var vidHtml = v ? ('<div class="vidbox"><b>🎬 视频讲解（约 1 分钟）</b>'
+      + '<p><a href="' + esc(v.url) + '" target="_blank" rel="noopener">在夸克网盘观看这支视频</a>'
+      + (v.code ? ' · 提取码 <code>' + esc(v.code) + '</code>' : '')
+      + (v.video ? '<br><span class="vfile">' + esc(v.video) + '</span>' : '')
+      + '</p></div>') : '';
     var stds = STD[topicId] || [];
     var stdHtml = '<div class="stdbox">'
       + '<b>课标对应（' + esc(stdLabel(BOOK.dir)) + '）</b>'
@@ -337,7 +358,7 @@
       + (BOOK.meta && BOOK.meta.edition ? '（' + esc(BOOK.meta.edition) + '）' : '')
       + ' · 学生版精讲（'
       + (L.words || 0) + ' 字）· <a href="../diagnose/">去诊断这个课时</a></p>';
-    reader.innerHTML = stdHtml + html + nav;
+    reader.innerHTML = vidHtml + stdHtml + html + nav;
     ['btn-prev', 'btn-next'].forEach(function (id) {
       var b = document.getElementById(id);
       if (b && b.getAttribute('data-id')) {
@@ -367,6 +388,7 @@
       (data.lessons || []).forEach(function (L) { md[L.topicId] = L.markdown || ''; });
       BOOK = { book: book, lessons: b.lessons, md: md, meta: b, dir: (b.path || '').split('/')[1] };
       loadStandards(BOOK.dir, function () { renderList(); });
+      loadVideos(function () { if (cur) open(cur); });
       fillUnits(book);
       renderList();
       if (then) then();
