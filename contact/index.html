@@ -166,7 +166,11 @@
         if (!c) return;
         var out = [];
         if (c.icp) out.push('<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">' + c.icp + '</a>');
-        if (c.police) out.push('<a href="https://beian.mps.gov.cn/" target="_blank" rel="noopener noreferrer">' + c.police + '</a>');
+        if (c.police) {
+          var pc = c.policeCode || (String(c.police).match(/\d{10,}/) || [''])[0];
+          var ph = pc ? 'https://beian.mps.gov.cn/#/query/webSearch?code=' + pc : 'https://beian.mps.gov.cn/';
+          out.push('<a href="' + ph + '" target="_blank" rel="noopener noreferrer">' + c.police + '</a>');
+        }
         if (!out.length) return;
         var el = document.getElementById('beian-slot');
         el.innerHTML = out.join(' · ');
