@@ -212,7 +212,8 @@ def parse_num(s):
     t = norm(s).strip('。 ')
     if re.fullmatch(r'-?\d+\.?\d*', t):
         return Fraction(Decimal(t))
-    m = re.fullmatch(r'(-?\d+)\s*(\d+)/(\d+)', t)
+    # 带分数必须带空格（12/9 是一个分数，不是「1又2/9」；旧判据 \s* 会把 12/9 算成 11/9）
+    m = re.fullmatch(r'(-?\d+)[　 ]+(\d+)/(\d+)', t)
     if m:
         a = m.group(1)
         sign = -1 if a.startswith('-') else 1
@@ -227,7 +228,13 @@ UNIT = re.compile(r'^(.*?)([^\d\.\-/]+)$')
 
 
 def num_with_unit(s):
-    t = norm(s).strip('。 ')
+    raw = str(s).strip().strip('。 ')
+    m = re.fullmatch(r'(-?\d+)[　 ]+(\d+)/(\d+)', raw)   # 带分数须带空格，且必须在 norm 删空格之前判
+    if m and int(m.group(3)) != 0:
+        sign = -1 if m.group(1).startswith('-') else 1
+        return sign * (Fraction(int(m.group(1).lstrip('-')), 1)
+                       + Fraction(int(m.group(2)), int(m.group(3)))), ''
+    t = norm(raw)
     v = parse_num(t)
     if v is not None:
         return v, ''
@@ -239,6 +246,34 @@ def num_with_unit(s):
     if v is None or re.search(r'[0-9]', unit):
         return None, ''
     return v, unit
+
+
+def opt_val(s):
+    """选择题选项 → 精确值：先按「数（可带单位）」读，再按纯表达式读（2²⁰²⁵、3/4 等）。"""
+    v, u = num_with_unit(s)
+    if v is not None and not u:
+        return v
+    return eval_frac(norm(s))
+
+
+CMP_SEP = r'(?:[○□◇]|[（(][\s_＿]*[)）])'
+
+
+def cmp_pairs(stem):
+    """题干里所有「算式 ○ 算式」配对 → [(左值, 右值)]；任一对不可求值则整体放弃（不猜）。"""
+    t = norm(stem).replace('。', '')
+    out = []
+    for m in re.finditer(r'([' + ECH + r']+?)' + CMP_SEP + r'([' + ECH + r']+)', t):
+        a, b = eval_frac(m.group(1)), eval_frac(m.group(2))
+        if a is None or b is None:
+            return []
+        out.append((a, b))
+    return out
+
+
+def cmp_answer(v):
+    t = norm(v).strip('。 ')
+    return {'>': '>', '<': '<', '=': '=', '＞': '>', '＜': '<', '＝': '='}.get(t)
 
 
 def ans_list(s):
@@ -264,40 +299,80 @@ def buckets_of(root):
 
 def check_bucket(root, bucket):
     st = {'files': 0, 'pool': 0, 'eval': 0, 'multi': 0, 'unit_ans': 0,
-          'expr_unparsed': 0, 'count_mismatch': 0, 'ans_unparsed': 0}
+          'expr_unparsed': 0, 'count_mismatch': 0, 'ans_unparsed': 0,
+          'cmp': 0, 'ch_pool': 0, 'ch': 0}
     bad = []
     for f in sorted(glob.glob(os.path.join(root, 'data', bucket, 'exams', '*', '*.json'))):
         st['files'] += 1
         d = json.load(open(f, encoding='utf-8'))
         for sec in d.get('sections', []):
             for it in sec.get('items', []):
-                if it.get('type') not in ('numeric', 'calc', 'operation', 'fill'):
-                    continue
-                st['pool'] += 1
-                exprs = extract_exprs(it.get('stem', ''))
-                if not exprs:
-                    continue
-                vals = [eval_frac(e) for e in exprs]
-                if any(v is None for v in vals):
-                    st['expr_unparsed'] += 1
-                    continue
-                ans = ans_list(it.get('answer'))
-                if len(ans) != len(vals):
-                    st['count_mismatch'] += 1
-                    continue
-                parsed = [num_with_unit(a) for a in ans]
-                if any(p[0] is None for p in parsed):
-                    st['ans_unparsed'] += 1
-                    continue
-                st['eval'] += 1
-                if len(vals) > 1:
-                    st['multi'] += 1
-                if any(p[1] for p in parsed):
-                    st['unit_ans'] += 1
-                if [p[0] for p in parsed] != vals:
-                    bad.append({'file': os.path.relpath(f, root), 'no': it.get('no'),
-                                'stem': it.get('stem'), 'answer': it.get('answer'),
-                                'calced': [str(v) for v in vals]})
+                typ = it.get('type')
+                ans_raw = it.get('answer')
+                # ---- 类别 D：比较大小（答案就是一个 > < = 符号）----
+                if typ in ('numeric', 'calc', 'operation', 'fill'):
+                    st['pool'] += 1
+                    alist = ans_list(ans_raw)
+                    rel = cmp_answer(alist[0]) if len(alist) == 1 else None
+                    if rel:
+                        pairs = cmp_pairs(it.get('stem', ''))
+                        if pairs:
+                            st['cmp'] += 1
+                            calced = ['>' if a > b else '<' if a < b else '=' for a, b in pairs]
+                            if calced != [rel]:
+                                bad.append({'file': os.path.relpath(f, root), 'no': it.get('no'),
+                                            'stem': it.get('stem'), 'answer': ans_raw,
+                                            'calced': calced, 'kind': '比较大小'})
+                            continue
+                # ---- 类别 A/B：纯算式给值 ----
+                if typ in ('numeric', 'calc', 'operation', 'fill'):
+                    exprs = extract_exprs(it.get('stem', ''))
+                    if not exprs:
+                        continue
+                    vals = [eval_frac(e) for e in exprs]
+                    if any(v is None for v in vals):
+                        st['expr_unparsed'] += 1
+                        continue
+                    ans = ans_list(ans_raw)
+                    if len(ans) != len(vals):
+                        st['count_mismatch'] += 1
+                        continue
+                    parsed = [num_with_unit(a) for a in ans]
+                    if any(p[0] is None for p in parsed):
+                        st['ans_unparsed'] += 1
+                        continue
+                    st['eval'] += 1
+                    if len(vals) > 1:
+                        st['multi'] += 1
+                    if any(p[1] for p in parsed):
+                        st['unit_ans'] += 1
+                    if [p[0] for p in parsed] != vals:
+                        bad.append({'file': os.path.relpath(f, root), 'no': it.get('no'),
+                                    'stem': it.get('stem'), 'answer': ans_raw,
+                                    'calced': [str(v) for v in vals], 'kind': '纯算式'})
+                # ---- 类别 C：单项选择题（题干纯算式，选项全可求值）----
+                elif typ == 'choice':
+                    st['ch_pool'] += 1
+                    exprs = extract_exprs(it.get('stem', ''))
+                    if not exprs or len(exprs) != 1:
+                        continue
+                    v = eval_frac(exprs[0])
+                    if v is None:
+                        continue
+                    opts = it.get('options') or []
+                    if len(opts) < 2:
+                        continue
+                    vals = [(str(o.get('label', '')).strip(), opt_val(o.get('text', ''))) for o in opts]
+                    if any(x[1] is None for x in vals):
+                        continue
+                    hits = [lab for lab, val in vals if val == v]
+                    if len(hits) != 1:      # 无匹配或选项值重复 → 判不出唯一答案，不判
+                        continue
+                    st['ch'] += 1
+                    if str(ans_raw).strip() != hits[0]:
+                        bad.append({'file': os.path.relpath(f, root), 'no': it.get('no'),
+                                    'stem': it.get('stem'), 'answer': ans_raw,
+                                    'calced': hits, 'kind': '选择题'})
     return st, bad
 
 
@@ -315,6 +390,29 @@ POS = [
     ('计算 √(49/64) 的结果是____。', '7/8'),
     ('计算 ∛(-8/27) 的结果是____。', '-2/3'),
     ('计算 12÷(-3/4)×(-1/2) 的值是 ____。', '8'),
+    ('直接写得数：30÷4＝（　）。', '15/2'),        # 回归：15/2 是分数 7.5，不是带分数 7 又 1/2
+]
+# 比较大小（类别 D）
+CMP_POS = [
+    ('比一比：在 4 和 2 中间填上合适的符号，4 ○ 2，○ 里填（　）。', '>'),
+    ('在○里填上「＞」「＜」或「＝」：36÷6○30÷5。', '='),
+    ('练习五：在 6＋2 和 9 之间填上合适的符号，6＋2 ○ 9，○ 里填（　）。', '<'),
+    ('在○里填上「＞」「＜」或「＝」：3×5○5×3。', '='),
+]
+CMP_NEG = [
+    ('若 3a>3b，根据不等式的基本性质，可以得到 a（　）b，请在括号里填上「>」或「<」。', '>'),
+    ('在○里填上合适的数：7－（　）＝3。', '=' ),
+]
+# 数值选择题（类别 C）：(题干, 卷答, 选项)
+CH_POS = [
+    ('计算 4/9×3 的结果是（　）。', 'A',
+     [('A', '12/9'), ('B', '4/27'), ('C', '3/4'), ('D', '1/3')]),
+    ('计算 (-2)²⁰²⁶+(-2)²⁰²⁵ 的结果是', 'A',
+     [('A', '2²⁰²⁵'), ('B', '-2²⁰²⁵'), ('C', '0'), ('D', '2²⁰²⁶')]),
+]
+CH_NEG = [
+    ('计算 √2×√8 的值是（　）。', 'C', [('A', '2'), ('B', '8'), ('C', '4'), ('D', '16')]),   # 根式不判
+    ('下列说法正确的是（　）。', 'B', [('A', '甲'), ('B', '乙'), ('C', '丙'), ('D', '丁')]),  # 非算式
 ]
 NEG = [
     ('一个数的 3 倍是 27，这个数是（　）。', '9'),
@@ -343,6 +441,33 @@ def judge(stem, answer):
     return True, [p[0] for p in parsed] == vals
 
 
+def judge_cmp(stem, answer):
+    rel = cmp_answer(answer)
+    if not rel:
+        return False, False
+    pairs = cmp_pairs(stem)
+    if not pairs:
+        return False, False
+    calced = ['>' if a > b else '<' if a < b else '=' for a, b in pairs]
+    return True, calced == [rel]
+
+
+def judge_choice(stem, answer, options):
+    exprs = extract_exprs(stem)
+    if not exprs or len(exprs) != 1:
+        return False, False
+    v = eval_frac(exprs[0])
+    if v is None:
+        return False, False
+    vals = [(lab, opt_val(txt)) for lab, txt in options]
+    if any(x[1] is None for x in vals):
+        return False, False
+    hits = [lab for lab, val in vals if val == v]
+    if len(hits) != 1:
+        return False, False
+    return True, str(answer).strip() == hits[0]
+
+
 def selftest():
     ok = 0
     tot = 0
@@ -359,6 +484,38 @@ def selftest():
         good = not is_expr
         ok += 1 if good else 0
         print(('  ✓' if good else '  ✗'), '应不识别:', stem, '=>', ans, '| 识别', is_expr)
+    num_reg = [('12/9', Fraction(4, 3)), ('15/2', Fraction(15, 2)),
+               ('1 2/9', Fraction(11, 9)), ('-1 1/2', Fraction(-3, 2))]
+    for raw, want in num_reg:
+        tot += 1
+        got = num_with_unit(raw)[0]
+        good = got == want
+        ok += 1 if good else 0
+        print(('  ✓' if good else '  ✗'), '数值解析:', raw, '→', got, '(应', want, ')')
+    for stem, ans in CMP_POS:
+        tot += 1
+        is_cmp, match = judge_cmp(stem, ans)
+        good = is_cmp and match
+        ok += 1 if good else 0
+        print(('  ✓' if good else '  ✗'), '比较大小应识别且一致:', stem, '=>', ans)
+    for stem, ans in CMP_NEG:
+        tot += 1
+        is_cmp, _ = judge_cmp(stem, ans)
+        good = not is_cmp
+        ok += 1 if good else 0
+        print(('  ✓' if good else '  ✗'), '比较大小应不识别:', stem, '=>', ans)
+    for stem, ans, opts in CH_POS:
+        tot += 1
+        is_ch, match = judge_choice(stem, ans, opts)
+        good = is_ch and match
+        ok += 1 if good else 0
+        print(('  ✓' if good else '  ✗'), '选择题应识别且一致:', stem, '=>', ans)
+    for stem, ans, opts in CH_NEG:
+        tot += 1
+        is_ch, _ = judge_choice(stem, ans, opts)
+        good = not is_ch
+        ok += 1 if good else 0
+        print(('  ✓' if good else '  ✗'), '选择题应不识别:', stem, '=>', ans)
     print(f'判据自检 {ok}/{tot}')
     return ok == tot
 
@@ -433,7 +590,8 @@ def main():
         print('没找到任何 math* 桶', file=sys.stderr)
         return 2
 
-    tot = {'files': 0, 'pool': 0, 'eval': 0, 'multi': 0, 'unit_ans': 0}
+    tot = {'files': 0, 'pool': 0, 'eval': 0, 'multi': 0, 'unit_ans': 0,
+           'cmp': 0, 'ch_pool': 0, 'ch': 0}
     allbad = []
     missing = []
     for b in buckets:
@@ -445,15 +603,16 @@ def main():
             tot[k] += st[k]
         allbad += bad
         print(f'[{b}] 卷 {st["files"]}｜题池 {st["pool"]}｜复算 {st["eval"]}'
-              f'（多空 {st["multi"]}、带单位 {st["unit_ans"]}）｜不一致 {len(bad)}')
+              f'（多空 {st["multi"]}、带单位 {st["unit_ans"]}）'
+              f'｜比较 {st["cmp"]}｜选择题 {st["ch"]}/{st["ch_pool"]}｜不一致 {len(bad)}')
 
     if missing:
         print('缺桶:', ' '.join(missing))
     print(f'== 合计 卷 {tot["files"]}｜题池 {tot["pool"]}｜复算 {tot["eval"]}'
-          f'｜不一致 {len(allbad)}')
+          f'（比较 {tot["cmp"]}、选择题 {tot["ch"]}）｜不一致 {len(allbad)}')
     for r in allbad:
-        print(f'  ✗ {r["file"]} 第{r["no"]}题 | {r["stem"][:60]} | 卷答 {r["answer"]}'
-              f' | 复算 {" / ".join(r["calced"])}')
+        print(f'  ✗ [{r.get("kind", "纯算式")}] {r["file"]} 第{r["no"]}题 | {r["stem"][:60]}'
+              f' | 卷答 {r["answer"]} | 复算 {" / ".join(r["calced"])}')
     if a.json:
         json.dump({'total': tot, 'mismatch': allbad}, open(a.json, 'w', encoding='utf-8'),
                   ensure_ascii=False, indent=1)
