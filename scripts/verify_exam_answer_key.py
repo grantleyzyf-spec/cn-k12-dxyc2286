@@ -54,7 +54,7 @@ class ParseError(Exception):
     pass
 
 
-TOKEN = re.compile(r'\d+\.?\d*|[A-Za-z]|[+\-*/^()]')
+TOKEN = re.compile(r'\d+\.?\d*|sqrt|cbrt|abs|[A-Za-z]|[+\-*/^()]')
 
 
 def tokenize(e):
@@ -114,7 +114,7 @@ class P:
                     if r == 0:
                         raise ParseError('div0')
                     v = v / r
-            elif tok is not None and (re.match(r'^\d', tok) or re.match(r'^[A-Za-z]$', tok)
+            elif tok is not None and (re.match(r'^\d', tok) or re.match(r'^[A-Za-z]+$', tok)
                                      or tok == '('):
                 r = self.unary()      # 隐式乘法：2x / 3a²b / 2(x+1) / (x+2)(x-2)
                 v = v * r
@@ -157,11 +157,80 @@ class P:
             if tok not in self.env:
                 raise ParseError('unbound %s' % tok)
             return self.env[tok]
+        if tok in ('sqrt', 'cbrt', 'abs'):
+            self.eat('(')
+            v = self.expr()
+            self.eat(')')
+            if tok == 'abs':
+                return abs(v)
+            return _root(v, 2 if tok == 'sqrt' else 3)
         if tok == '(':
             v = self.expr()
             self.eat(')')
             return v
         raise ParseError('atom %r' % tok)
+
+
+def _root(v, n):
+    """n 次根：完全 n 次方给精确 Fraction，否则给 float（负数按实根读）。"""
+    sign = -1 if v < 0 else 1
+    a = abs(Fraction(v)) if not isinstance(v, float) else abs(v)
+    if n == 2 and isinstance(v, float):
+        a = abs(v)
+    # 精确判定
+    try:
+        fr = Fraction(a)
+        num, den = fr.numerator, fr.denominator
+        rn = round(num ** (1.0 / n))
+        rd = round(den ** (1.0 / n))
+        if rn ** n == num and rd ** n == den:
+            return Fraction(sign * rn, rd)
+    except (ValueError, OverflowError):
+        pass
+    if v < 0:
+        return -((-float(v)) ** (1.0 / n))
+    return float(v) ** (1.0 / n)
+
+
+TRIG = {
+    ('sin', 0): 0, ('sin', 30): Fraction(1, 2), ('sin', 45): 2 ** .5 / 2,
+    ('sin', 60): 3 ** .5 / 2, ('sin', 90): 1,
+    ('cos', 0): 1, ('cos', 30): 3 ** .5 / 2, ('cos', 45): 2 ** .5 / 2,
+    ('cos', 60): Fraction(1, 2), ('cos', 90): 0,
+    ('tan', 0): 0, ('tan', 30): 1 / 3 ** .5, ('tan', 45): 1, ('tan', 60): 3 ** .5,
+}
+def _trigval(name, deg):
+    val = TRIG.get((name, deg))
+    if val is None:
+        raise ParseError('三角比非特殊角 %s%d°' % (name, deg))
+    return float(val)
+
+
+ZH_POW = re.compile(r'(\)|\]|\d+(?:\.\d+)?|[A-Za-z])\s*的\s*(平方|立方|(\d+)\s*次方)')
+
+
+def prep_expr(e):
+    """口语算式 → 可解析算式：的平方/的 N 次方、方括号、绝对值、根号、三角比、加/减。"""
+    s = e.replace('[', '(').replace(']', ')').replace('【', '(').replace('】', ')')
+    s = re.sub(r'\|([^|]+)\|', r'abs(\1)', s)
+    s = ZH_POW.sub(lambda m: '%s^%s' % (m.group(1),
+                                        {'平方': '2', '立方': '3'}.get(m.group(2), m.group(3) or '2')), s)
+    s = s.replace('立方根', '∛').replace('根号', '√')
+    s = re.sub(r'√\s*\(([^()]*)\)', r'sqrt(\1)', s)
+    s = re.sub(r'√\s*(-?\d+(?:\.\d+)?|[A-Za-z])', r'sqrt(\1)', s)
+    s = re.sub(r'∛\s*\(([^()]*)\)', r'cbrt(\1)', s)
+    s = re.sub(r'∛\s*(-?\d+(?:\.\d+)?|[A-Za-z])', r'cbrt(\1)', s)
+    # sin²30° → norm 后是 sin^230°：指数 1 位、角取特殊角，避免把 230 读成指数
+    s = re.sub(r'(sin|cos|tan)\^\s*(\d)\s*(0|30|45|60|90)\s*°',
+               lambda m: '(%s)^%s' % (_trigval(m.group(1), int(m.group(3))), m.group(2)), s)
+
+    def _trig(m):
+        pre = m.string[:m.start()].rstrip()
+        sep = '*' if pre and (pre[-1].isalnum() or pre[-1] in ')^') else ''
+        return '%s(%s)' % (sep, _trigval(m.group(1), int(m.group(2))))
+    s = re.sub(r'(sin|cos|tan)\s*(\d+)\s*°', _trig, s)
+    s = s.replace('乘以', '*').replace('除以', '/').replace('加', '+').replace('减', '-')
+    return s
 
 
 def to_plain(e):
@@ -231,6 +300,42 @@ def lane_B(item):
 ASSIGN = re.compile(r'([A-Za-z])\s*=\s*(-?\d+(?:\.\d+)?(?:/\d+)?)')
 
 
+def cut_expr(s):
+    """截到等号前：`12.6×3=（　），把得数写在括号里` → `12.6×3`。"""
+    m = re.search(r'=', s)
+    if m:
+        rest = s[m.end():].lstrip()
+        if rest == '' or rest[:1] in '（(':
+            return s[:m.start()]
+    return s
+
+
+def _num_eq(ans, v):
+    """精确优先；无理数/十进制近似用 1e-9 相对容差兜底（差 2e-3 的 0.33 vs 1/3 仍判不符）。"""
+    try:
+        if isinstance(v, Fraction) and Fraction(str(ans)) == v:
+            return True
+    except (ValueError, ZeroDivisionError):
+        pass
+    try:
+        a = float(ans)
+    except ValueError:
+        return False
+    return abs(a - float(v)) <= 1e-9 * max(1.0, abs(float(v)))
+
+
+def _hits(ans, vals):
+    return any(_num_eq(ans, v) for v in vals)
+
+
+def _has_bare_letter(expr, bound=''):
+    """去掉 sqrt/cbrt/abs 函数名与已赋值字母后还有字母 = 未给值的变量。"""
+    t = re.sub(r'sqrt|cbrt|abs', '', expr)
+    if bound:
+        t = re.sub('[%s]' % re.escape(bound), '', t)
+    return bool(re.search(r'[A-Za-z]', t))
+
+
 def lane_C(item):
     """代数式代值重算；返回 (问题串, 说明)。"""
     if item.get('type') != 'solve':
@@ -240,22 +345,26 @@ def lane_C(item):
         return None, '跳过（答案非纯数值）'
     stem = str(item.get('stem', ''))
     env = {}
-    for m in ASSIGN.finditer(stem):
+    for m in ASSIGN.finditer(stem.replace('＝', '=')):
         env[m.group(1)] = Fraction(m.group(2))
     if not env:
-        # C2：纯算式题（计算：…），不给变量，直接算
-        m = re.search(r'(?:计算|求值|算一算)[：:]\s*(.+?)[。．.]?\s*$', stem)
+        # C2：纯算式题（计算/竖式计算/脱式计算…），不给变量，直接算
+        m = re.search(r'(?:计算|求值|算一算|算出结果)\s*[：:]?\s*(.+?)[。．.]?\s*$', stem)
         if not m:
             return None, '不适用（未给变量值且非纯算式题）'
-        expr = norm_expr(m.group(1)).strip('。.;,')
-        if re.search(r'[A-Za-z√∛|]', expr):
-            return None, '不适用（含字母/根式/绝对值）'
+        expr = prep_expr(cut_expr(norm_expr(m.group(1)).strip('。．.;,')))
+        expr = expr.split(',')[0].strip()
+        expr = re.sub(r'的(?:值|结果)$', '', expr)
+        if re.search(r'[\u4e00-\u9fff]', expr) or not re.search(r'\d', expr):
+            return None, '不适用（算式后带中文说明）'
+        if _has_bare_letter(expr):
+            return None, '不适用（含字母变量）'
         try:
             v1 = ev(expr)
             v2 = ev(frac_literal_mode(expr))
         except (ParseError, ZeroDivisionError, ValueError) as ex:
             return None, '不适用（解析失败：%s）' % ex
-        if Fraction(a) in (v1, v2):
+        if _hits(a, (v1, v2)):
             return None, '通过'
         return ('C 算式复算不符：%s = %s/%s，卷面 answer = %s'
                 % (expr, v1, v2, a)), '不符'
@@ -271,15 +380,15 @@ def lane_C(item):
         cands.append(m.group(1))
     if not cands:
         return None, '不适用（未定位到表达式）'
-    expr = norm_expr(cands[0]).strip('。.;,')
-    if re.search(r'[√∛]', expr):
-        return None, '不适用（含根式）'
+    expr = prep_expr(cut_expr(norm_expr(cands[0]).strip('。．.;,')))
+    if _has_bare_letter(expr, ''.join(env)):
+        return None, '不适用（含未赋值字母）'
     try:
         v1 = ev(expr, env)
         v2 = ev(frac_literal_mode(expr), env)
     except (ParseError, ZeroDivisionError, ValueError) as ex:
         return None, '不适用（解析失败：%s）' % ex
-    if Fraction(a) in (v1, v2):
+    if _hits(a, (v1, v2)):
         return None, '通过'
     return ('C 代值复算不符：%s 在 %s 下 = %s/%s，卷面 answer = %s'
             % (expr, {k: str(x) for k, x in env.items()}, v1, v2, a)), '不符'
@@ -370,6 +479,36 @@ FIXTURES = [
                  'stem': '计算：(-2)³ + 6 × (-1/2) - 10 ÷ (-5)。'}, True),
     ('C 根式不适用', {'no': 12, 'type': 'solve', 'answer': '0',
                   'stem': '计算：∛(-8)+√25-|-3|．'}, False),
+    ('C 根式算错', {'no': 14, 'type': 'solve', 'answer': '2',
+                'stem': '计算：∛(-8)+√25-|-3|．'}, True),
+    ('C 无理数容差', {'no': 15, 'type': 'solve', 'answer': '1',
+                 'stem': '计算：|1-√2|+|√2-√3|+|√3-2|。'}, False),
+    ('C 无理数错答', {'no': 16, 'type': 'solve', 'answer': '0',
+                 'stem': '计算：|1-√2|+|√2-√3|+|√3-2|。'}, True),
+    ('C 口语的平方', {'no': 17, 'type': 'solve', 'answer': '14',
+                 'stem': '计算：-2 的 2 次方 × (-3) - (-6) ÷ 3'}, False),
+    ('C 口语的平方错', {'no': 18, 'type': 'solve', 'answer': '18',
+                  'stem': '计算：-2 的 2 次方 × (-3) - (-6) ÷ 3'}, True),
+    ('C 竖式等号截断', {'no': 19, 'type': 'solve', 'answer': '37.8',
+                  'stem': '用竖式计算：12.6×3＝（　），把得数写在括号里。'}, False),
+    ('C 竖式等号错答', {'no': 20, 'type': 'solve', 'answer': '37.08',
+                  'stem': '用竖式计算：12.6×3＝（　），把得数写在括号里。'}, True),
+    ('C 三角比根式', {'no': 21, 'type': 'solve', 'answer': '1',
+                 'stem': '计算：√2cos45°+tan60°·tan30°-2sin30°．'}, False),
+    ('C 根号汉字', {'no': 22, 'type': 'solve', 'answer': '1',
+                'stem': '计算：根号12 × 根号3 - 根号50 ÷ 根号2。'}, False),
+    ('C 方括号', {'no': 23, 'type': 'solve', 'answer': '1',
+               'stem': '先化简，再求值：3a^2 b - [2ab^2 + 2(a^2 b - 2ab^2)]，其中 a = -2，b = 1/2。'}, False),
+    ('C 三角比平方', {'no': 24, 'type': 'solve', 'answer': '1',
+                 'stem': '计算 sin²30°+cos²30°+tan45°-2sin45°·cos45° 的值。'}, False),
+    ('C 三角比平方错', {'no': 25, 'type': 'solve', 'answer': '0.5',
+                  'stem': '计算 sin²30°+cos²30°+tan45°-2sin45°·cos45° 的值。'}, True),
+    ('C 无冒号竖式', {'no': 26, 'type': 'solve', 'answer': '85',
+                 'stem': '用竖式计算 58＋27，先写清相同数位对齐的方法，再算出结果。'}, False),
+    ('C 无冒号竖式错', {'no': 27, 'type': 'solve', 'answer': '84',
+                  'stem': '用竖式计算 58＋27，先写清相同数位对齐的方法，再算出结果。'}, True),
+    ('C 近似兜底不宽松', {'no': 28, 'type': 'solve', 'answer': '0.33',
+                   'stem': '计算：1÷3。'}, True),
 ]
 
 
