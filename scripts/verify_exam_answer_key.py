@@ -353,9 +353,10 @@ UNIT_FAM = {
     'time': {'时': 3600, '小时': 3600, '分': 60, '秒': 1},
     'mass': {'吨': 10 ** 6, '千克': 1000, '公斤': 1000, '克': 1},
     'money': {'元': 100, '角': 10, '分': 1},
+    'vol': {'升': 1000, '毫升': 1},
 }
 UNIT_KEYS = sorted({k for t in UNIT_FAM.values() for k in t}, key=len, reverse=True)
-UNIT_CHARS = set('千米公里分米厘米毫米时小分秒吨克元角')
+UNIT_CHARS = set('千米公里分米厘米毫米时小分秒吨克元角升毫升')
 ARITH_TAIL = re.compile(r'[0-9()+\-*/^×÷.\s√∛|]+$')
 
 
@@ -523,6 +524,177 @@ def lane_C(item):
             % (expr, {k: str(x) for k, x in env.items()}, v1, v2, a)), '不符'
 
 
+# ------------------------------------------------ D：答案句内算式链自洽
+# 应用题/开放式题的 answer 常写成「算式＝值，…，结论值」整句。本判据只核**答案句自身**：
+#   ① 同一段里用「＝」连接的若干纯算术段必须等值（`25×16＝25×4×4＝100×4＝400` 四段全 400）；
+#   ② 带余数（……／余）时核 a÷b=q…r，即 a=q·b+r（`13.4÷1.8＝7（段）……0.8（米）`）；
+#   ③ 单位不同时按 UNIT_FAM 换算到同一族再比，族不明 / 复名数（1米25厘米）/ 比号 / ≈ / 字母式
+#      一律跳过，不判。
+# 它**不**判断「解法是否对题」（那要建模），只抓答案文本里的算术笔误与自相矛盾。
+_CNTR = '个人本元角张块条棵朵支件箱盒袋组排行天岁遍次倍位名辆瓶束粒颗头页段盘盏台只双副套间层格斗升'
+_ANS_UNITS = sorted({u for t in UNIT_FAM.values() for u in t}, key=len, reverse=True)
+_ANS_UNIT_SET = set(_ANS_UNITS)
+_ANS_LBL = re.compile(r'^\(\d{1,2}\)\s*(?=[\d(])')
+_ANS_ANN = re.compile(r'\(([^()\d][^()]*)\)$')
+
+
+def _split_top(s):
+    """按顶层 , ; 。 、 切句（括号内的分隔符不算）。"""
+    out, cur, depth = [], '', 0
+    for ch in s:
+        if ch == '(':
+            depth += 1
+        elif ch == ')':
+            depth = max(0, depth - 1)
+        if depth == 0 and ch in ',;。、':
+            out.append(cur)
+            cur = ''
+        else:
+            cur += ch
+    out.append(cur)
+    return [x.strip() for x in out if x.strip()]
+
+
+def _ans_seg(seg):
+    """答案句的一段 → (候选值集合, 单位)；带非算术残留一律 (None, None)（宁可跳过）。"""
+    s = seg.strip()
+    m = _ANS_LBL.match(s)
+    if m:
+        s = s[m.end():]
+    unit = ''
+    m = _ANS_ANN.search(s)
+    if m and not re.search(r'[A-Za-z]', m.group(1)):
+        # 注释里如果是单位（`36000（毫升）`、`48（升）`），要留下来参与换算，不能当普通注解丢掉
+        if m.group(1) in _ANS_UNIT_SET:
+            unit = m.group(1)
+        s = s[:m.start()].strip()
+    for k in _ANS_UNITS:
+        if s.endswith(k):
+            body = s[:-len(k)].rstrip()
+            if body and re.search(r'[\d)]$', body):
+                s, unit = body, k
+                break
+    if not unit:
+        m = re.match(r'^(.*[\d)])\s*([%s]{1,2})$' % re.escape(_CNTR), s)
+        if m:
+            s, unit = m.group(1), m.group(2)
+    if re.search(r'[A-Za-z\u4e00-\u9fff]', s):
+        return None, None
+    s = to_plain(s)                      # × ÷ → * /（norm_expr 有意保留全角，好在分式读法里看结构）
+    if not re.fullmatch(r'[-0-9.+*/^()\[\] ]+', s):
+        return None, None
+    try:
+        e = prep_expr(s)
+        v1, v2 = ev(e), ev(frac_literal_mode(e))
+    except (ParseError, ZeroDivisionError, ValueError):
+        return None, None
+    return {v1, v2}, unit
+
+
+def lane_D(item):
+    """答案句算式链自洽；返回 (问题串, 说明)。"""
+    if item.get('type') not in ('solve', 'fill', 'numeric', 'calc', 'operation', 'short-answer'):
+        return None, '跳过（题型不适用）'
+    a = norm_expr(str(item.get('answer', '')))
+    if '=' not in a:
+        return None, '跳过（答案句无等号）'
+    checked = 0
+    for p in _split_top(a):
+        if '=' not in p or re.search(r'[≈<>＜＞:∶]', p):
+            continue
+        parts = p.split('=')
+        mrem = re.match(r'^\s*(-?\d+(?:\.\d+)?)(?:\([^()]*\))?\s*(?:……|\.{3,}|余)\s*'
+                        r'(-?\d+(?:\.\d+)?)(?:\([^()]*\)|[^\d()]{1,3})?\s*$', parts[-1])
+        if mrem:
+            q, r = Fraction(mrem.group(1)), Fraction(mrem.group(2))
+            body = parts[0].strip()
+            m = _ANS_LBL.match(body)
+            if m:
+                body = body[m.end():]
+            pl = to_plain(body)
+            mm = re.match(r'^(-?\d+(?:\.\d+)?)/(\d+(?:\.\d+)?)$', pl)
+            if not mm:
+                continue
+            a0, b0 = Fraction(mm.group(1)), Fraction(mm.group(2))
+            if a0 != q * b0 + r:
+                return ('D 答案句余数不符：%s = %s……%s，而 %s×%s+%s = %s'
+                        % (pl, q, r, q, b0, r, q * b0 + r)), '不符'
+            checked += 1
+            continue
+        vals, ok = [], True
+        for x in parts:
+            v, u = _ans_seg(x)
+            if v is None:
+                ok = False
+                break
+            vals.append((v, u))
+        if not ok:
+            continue
+        units = {u for _, u in vals}
+        marked = {u for u in units if u}      # 只有末尾一段标了单位（`…＝480（千克）`）时按原值比
+        if len(marked) <= 1:
+            cand = [v for v, _ in vals]
+        else:
+            if '' in units:
+                continue
+            fam = None
+            for tbl in UNIT_FAM.values():
+                if all(u in tbl for u in units):
+                    fam = tbl
+                    break
+            if fam is None:
+                continue
+            cand = [{x * Fraction(fam[u]) for x in v} for v, u in vals]
+        inter = cand[0]
+        for nxt in cand[1:]:
+            inter = inter & nxt
+            if not inter:
+                return ('D 答案句算式链不符：%s' % p), '不符'
+        checked += 1
+    if checked:
+        return None, '通过'
+    return None, '跳过（无可核算式）'
+
+
+# ------------------------------------------------ E：选择题「结论句 ↔ 卷答」冲突
+# 解析里明确写出的结论（故选/应选/正确答案是/答案选 X）必须与 answer 字段一致。
+# 不认「错误答案 C」「故 A 错误」这类干扰项讨论——它们是逐项判断，不是结论。
+_PICK = [r'故\s*选\s*[:：]?\s*([A-D](?:\s*[,，、]?\s*[A-D])*)',
+         r'应\s*选\s*[:：]?\s*([A-D](?:\s*[,，、]?\s*[A-D])*)',
+         r'正\s*确\s*答\s*案\s*(?:应)?\s*(?:是|为|选)\s*[:：]?\s*([A-D](?:\s*[,，、]?\s*[A-D])*)',
+         r'答\s*案\s*选\s*[:：]?\s*([A-D](?:\s*[,，、]?\s*[A-D])*)']
+
+
+def _pick_letters(s):
+    return ''.join(sorted(set(re.findall(r'[A-D]', s))))
+
+
+def lane_E(item):
+    """解析结论句与 answer 冲突；返回 (问题串, 说明)。"""
+    if item.get('type') not in ('choice', 'multi'):
+        return None, '跳过（题型不适用）'
+    txt = ' '.join(str(x) for x in (item.get('analysis'), item.get('explain'),
+                                    item.get('solution')) if x)
+    if not txt.strip():
+        return None, '跳过（无解析）'
+    hits = set()
+    for p in _PICK:
+        for m in re.finditer(p, txt):
+            lt = _pick_letters(m.group(1))
+            if lt:
+                hits.add(lt)
+    if not hits:
+        return None, '跳过（解析无结论句）'
+    if len(hits) > 1:
+        return ('E 解析结论句自相矛盾：%s，卷面 answer = %s'
+                % ('/'.join(sorted(hits)), item.get('answer'))), '不符'
+    got = hits.pop()
+    want = _pick_letters(str(item.get('answer', '')))
+    if got == want:
+        return None, '通过'
+    return ('E 解析结论句与卷答冲突：解析「%s」，卷面 answer = %s' % (got, want)), '不符'
+
+
 # ---------------------------------------------------------------- 主流程
 def buckets():
     out = []
@@ -537,7 +709,9 @@ def papers(bucket):
 
 def run(bucket_list, verbose=True, want_json=None):
     stat = {'papers': 0, 'items': 0, 'A': 0, 'B': 0, 'C': 0,
-            'C_skip': 0, 'C_pass': 0}
+            'C_skip': 0, 'C_pass': 0,
+            'D': 0, 'D_pass': 0, 'D_skip': 0,
+            'E': 0, 'E_pass': 0, 'E_skip': 0}
     errs = []
     for b in bucket_list:
         before = dict(stat)
@@ -566,11 +740,26 @@ def run(bucket_list, verbose=True, want_json=None):
                         stat['C_pass'] += 1
                     else:
                         stat['C_skip'] += 1
+                    for lane, fn in (('D', lane_D), ('E', lane_E)):
+                        msg2, note2 = fn(it)
+                        if msg2:
+                            stat[lane] += 1
+                            errs.append({'bucket': b, 'file': os.path.relpath(f, REPO),
+                                         'no': it.get('no'), 'msg': msg2})
+                        elif note2 == '通过':
+                            stat[lane + '_pass'] += 1
+                        else:
+                            stat[lane + '_skip'] += 1
         if verbose:
             print('[%s] 卷 %d｜题 %d｜A %d｜B %d｜C 不符 %d（C 通过 %d、不适用 %d）'
+                  '｜D 不符 %d（通过 %d、不适用 %d）｜E 冲突 %d（通过 %d、不适用 %d）'
                   % (b, len(ps), stat['items'] - before['items'], stat['A'] - before['A'],
                      stat['B'] - before['B'], stat['C'] - before['C'],
-                     stat['C_pass'] - before['C_pass'], stat['C_skip'] - before['C_skip']))
+                     stat['C_pass'] - before['C_pass'], stat['C_skip'] - before['C_skip'],
+                     stat['D'] - before['D'], stat['D_pass'] - before['D_pass'],
+                     stat['D_skip'] - before['D_skip'],
+                     stat['E'] - before['E'], stat['E_pass'] - before['E_pass'],
+                     stat['E_skip'] - before['E_skip']))
     if want_json:
         json.dump({'stat': stat, 'errors': errs}, open(want_json, 'w', encoding='utf-8'),
                   ensure_ascii=False, indent=1)
@@ -649,6 +838,49 @@ FIXTURES = [
                     'stem': '计算23×3时，先算20×3＝60，再算3×3＝9，最后60＋9＝（　）。'}, False),
     ('C3 分步算式末空错', {'no': 34, 'type': 'fill', 'answer': '59',
                      'stem': '计算23×3时，先算20×3＝60，再算3×3＝9，最后60＋9＝（　）。'}, True),
+    # --- D：答案句算式链自洽 ---
+    ('D 答案句链相符', {'no': 38, 'type': 'solve',
+                   'answer': '5－3＝2（个），老师手里还剩 2 个沙包。',
+                   'stem': '老师有 5 个沙包，拿走 3 个，还剩几个？'}, False),
+    ('D 答案句链不符', {'no': 39, 'type': 'solve',
+                   'answer': '5－3＝3（个），老师手里还剩 3 个沙包。',
+                   'stem': '老师有 5 个沙包，拿走 3 个，还剩几个？'}, True),
+    ('D 分步两算式不误判为链', {'no': 40, 'type': 'solve',
+                        'answer': '18－9＝9（张），9＋5＝14（张），现在有 14 张卡片。',
+                        'stem': '小明原有 18 张，送出 9 张后妈妈又给 5 张，现有几张？'}, False),
+    ('D 链式等式相符', {'no': 41, 'type': 'solve',
+                  'answer': '25×16＝25×4×4＝100×4＝400（千克）',
+                  'stem': '每箱 25 千克，16 箱共多少千克？'}, False),
+    ('D 链式等式不符', {'no': 42, 'type': 'solve',
+                  'answer': '25×16＝25×4×4＝100×4＝480（千克）',
+                  'stem': '每箱 25 千克，16 箱共多少千克？'}, True),
+    ('D 余数相符', {'no': 43, 'type': 'solve',
+                 'answer': '13.4÷1.8＝7（段）……0.8（米），最多剪成 7 段。',
+                 'stem': '13.4 米长的绳子每 1.8 米剪一段，最多剪几段？'}, False),
+    ('D 余数不符', {'no': 44, 'type': 'solve',
+                 'answer': '13.4÷1.8＝7（段）……0.9（米），最多剪成 7 段。',
+                 'stem': '13.4 米长的绳子每 1.8 米剪一段，最多剪几段？'}, True),
+    ('D 单位链换算相符', {'no': 45, 'type': 'fill',
+                    'answer': '1米＝100厘米', 'stem': '1 米等于多少厘米？'}, False),
+    ('D 单位链换算不符', {'no': 46, 'type': 'fill',
+                    'answer': '1米＝90厘米', 'stem': '1 米等于多少厘米？'}, True),
+    ('D 字母方程跳过', {'no': 47, 'type': 'solve', 'answer': '2(2x－1)＝3(x＋2)',
+                   'stem': '解方程 2(2x－1)＝3(x＋2)。'}, False),
+    # --- E：解析结论句 ↔ 卷答 ---
+    ('E 结论句一致', {'no': 48, 'type': 'choice', 'answer': 'C', 'analysis': '代入得 3，故选 C。',
+                  'options': [{'label': 'A', 'text': '1'}, {'label': 'B', 'text': '2'},
+                              {'label': 'C', 'text': '3'}, {'label': 'D', 'text': '4'}]}, False),
+    ('E 结论句冲突', {'no': 49, 'type': 'choice', 'answer': 'B', 'analysis': '代入得 3，故选 C。',
+                  'options': [{'label': 'A', 'text': '1'}, {'label': 'B', 'text': '2'},
+                              {'label': 'C', 'text': '3'}, {'label': 'D', 'text': '4'}]}, True),
+    ('E 干扰项讨论不误报', {'no': 50, 'type': 'choice', 'answer': 'B',
+                      'analysis': 'A 需讨论，若误取交集会得到错误答案 C，故选 B。',
+                      'options': [{'label': 'A', 'text': '1'}, {'label': 'B', 'text': '2'},
+                                  {'label': 'C', 'text': '3'}, {'label': 'D', 'text': '4'}]}, False),
+    ('E 多选结论句一致', {'no': 51, 'type': 'multi', 'answer': 'ABD',
+                    'analysis': '逐项判断，A、B、D 正确，C 错误，故选 ABD。',
+                    'options': [{'label': 'A', 'text': '1'}, {'label': 'B', 'text': '2'},
+                                {'label': 'C', 'text': '3'}, {'label': 'D', 'text': '4'}]}, False),
 ]
 
 # 必须判「不适用」的读法歧义样本：宁可不算，也不能把 ∠2 读成 2、把比号当除号
@@ -674,6 +906,9 @@ def selftest():
         msg_c, note = lane_C(item)       # 题型门槛在 lane_C 内分流
         if msg_c:
             got = True                   # 「不适用」不改变 got：A/B 已判出的错不能被 C 的跳过覆盖
+        for fn in (lane_D, lane_E):
+            if fn(item)[0]:
+                got = True
         verdict = 'OK' if got == expect_bad else 'FAIL'
         if verdict == 'OK':
             ok += 1
@@ -708,8 +943,10 @@ def main():
     bl = a.bucket or buckets()
     stat, errs = run(bl, verbose=not a.quiet, want_json=a.json)
     print('== 合计 卷 %d｜题 %d｜A 结构 %d｜B 泄答案 %d｜C 代值不符 %d（C 通过 %d、不适用 %d）'
+          '｜D 答案句不符 %d（通过 %d、不适用 %d）｜E 结论句冲突 %d（通过 %d、不适用 %d）'
           % (stat['papers'], stat['items'], stat['A'], stat['B'], stat['C'],
-             stat['C_pass'], stat['C_skip']))
+             stat['C_pass'], stat['C_skip'], stat['D'], stat['D_pass'], stat['D_skip'],
+             stat['E'], stat['E_pass'], stat['E_skip']))
     for e in errs:
         print('  ! [%s] %s 第%s题 %s' % (e['bucket'], e['file'], e['no'], e['msg']))
     return 0 if not errs else 1

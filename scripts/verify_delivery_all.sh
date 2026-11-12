@@ -27,7 +27,7 @@ echo "=== 8/10 讲解↔卷 examId 身份对齐（孤儿 / 缺讲 / id 笔误）
 "$PY" "$DIR/verify_lecture_exam_id.py" --repo "$REPO" || rc=1
 echo "=== 9/10 讲解答案面锚定（题块定位 / 题分 / 结论冲突 / 答案数值落笔）"
 "$PY" "$DIR/verify_lecture_answer_anchor.py" --repo "$REPO" --quiet || rc=1
-echo "=== 10/10 答案键独立机检（选择结构 / 题干泄答案 / 算式与代值复算）"
+echo "=== 10/10 答案键独立机检（选择结构 / 题干泄答案 / 算式与代值复算 / 答案句算式链 / 解析结论句）"
 "$PY" "$DIR/verify_exam_answer_key.py" --quiet || rc=1
 echo "=== 汇总 rc=${rc}（0=全绿）"
 exit "$rc"
