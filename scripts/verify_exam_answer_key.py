@@ -11,9 +11,15 @@
     陈述句把答案写出来。试卷印出来就是把答案发给学生，属交付硬伤。
     判据要求「空后 + 括号类词 + 应填/要填/填上/填 + 与 answer 相同的值」，避免误命中
     「也可以分成 4 和 6」「都有 4 条边」这类题干本来就给的数。
-  C 代数式代值重算：solve 题给了具体变量值（当 x = -2，y = 3 时 / 其中 x = -3）的，
-    直接按 Fraction 精确算给定表达式，再与卷面 answer 比；化简求值不必先化简（代值同解）。
-    含根式（√ ∛）、未给值的字母、纯文字题一律记「不适用」，不判死。
+  C 算式与代值重算（三类，都不依赖讲解稿）：
+    C1 代数式代值：solve 题给了具体变量值（当 x = -2，y = 3 时 / 其中 x = -3）的，
+       直接按 Fraction 精确算给定表达式，再与卷面 answer 比；化简求值不必先化简（代值同解）。
+    C2 纯算式题：`计算：…` 开头的 solve 题，直接算。
+    C3 空位算式（fill/numeric/calc/operation/short-answer）：题干 `算式＝（　）` 取等号左侧
+       纯算式尾段；以及单位换算（元角分 / 米分米厘米毫米千米 / 时分秒 / 吨千克克），
+       先化到同族基单位加减、再换到目标单位。尾段必须含运算符（防把 ∠2 读成 2），
+       比号 `a : b` 与比例尺不计（否则 2.5 : 0.5 会被读成 0.5）。
+    含根式（√ ∛）、未给值的字母、纯文字题、多空题一律记「不适用」，不判死。
 
 只判死「算得出且明确不等」与「结构硬违例」「答案写在题干里」；算不出只记账。
 
@@ -39,6 +45,8 @@ TR = str.maketrans({'＋': '+', '－': '-', '−': '-', '﹣': '-', '—': '-', 
                     '＝': '=', '（': '(', '）': ')', '　': ' ', '，': ',', '；': ';'})
 # × ÷ 故意留到 to_plain 再换：分式读法要先看得到「÷ x/(x²-1)」这个结构
 PLAIN = str.maketrans({'×': '*', '÷': '/', '·': '*', '∗': '*'})
+# 全角方括号（教材与练习册常见）走与 [ ] 相同的读法
+TR.update({ord('［'): '[', ord('］'): ']'})
 
 
 def norm_expr(s):
@@ -336,10 +344,131 @@ def _has_bare_letter(expr, bound=''):
     return bool(re.search(r'[A-Za-z]', t))
 
 
+# ------------------------------------------------ C3：填空/口算题的「空位算式」
+# 只认两种可靠读法，其余一律记不适用（宁可少算，不可错杀）：
+#   ① 题干里 `算式＝（　）`：取等号左侧的纯算式尾段复算（要求含运算符，避免把 ∠2 读成 2）；
+#   ② 单位换算：`a单位1 ＋/－ b单位2 ＝（　）单位3`，先化到同族基单位做加减，再换到目标单位。
+UNIT_FAM = {
+    'len': {'千米': 10 ** 6, '公里': 10 ** 6, '米': 1000, '分米': 100, '厘米': 10, '毫米': 1},
+    'time': {'时': 3600, '小时': 3600, '分': 60, '秒': 1},
+    'mass': {'吨': 10 ** 6, '千克': 1000, '公斤': 1000, '克': 1},
+    'money': {'元': 100, '角': 10, '分': 1},
+}
+UNIT_KEYS = sorted({k for t in UNIT_FAM.values() for k in t}, key=len, reverse=True)
+UNIT_CHARS = set('千米公里分米厘米毫米时小分秒吨克元角')
+ARITH_TAIL = re.compile(r'[0-9()+\-*/^×÷.\s√∛|]+$')
+
+
+def _tail_arith(s):
+    m = ARITH_TAIL.search(s)
+    return m.group(0).strip() if m else ''
+
+
+def _unit_items(s):
+    """`2元5角` → [(2,'元'),(5,'角')]；`1元-4角` 中间插 ('OP',±1)。不认识返回 None。"""
+    s = s.strip()
+    if not s or re.search(r'平方|立方|面积|体积', s):
+        return None
+    items, i = [], 0
+    while i < len(s):
+        m = re.match(r'(-?\d+(?:\.\d+)?)\s*', s[i:])
+        if not m:
+            return None
+        num = m.group(1)
+        i += m.end()
+        unit = ''
+        for k in UNIT_KEYS:
+            if s.startswith(k, i):
+                unit = k
+                i += len(k)
+                break
+        items.append((Fraction(num), unit))
+        if i < len(s) and s[i] in '+-':
+            items.append((1 if s[i] == '+' else -1, 'OP'))
+            i += 1
+    return items
+
+
+def _tail_units(left):
+    """从左侧串里取最后一段「量化表达式」：只由数字/运算符/单位字组成。"""
+    ok = set('0123456789.+- ')
+    start = 0
+    for i, ch in enumerate(left):
+        if ch not in ok and ch not in UNIT_CHARS:
+            start = i + 1
+    return left[start:].strip()
+
+
+def _unit_convert(left, target):
+    """同族单位加减换算到 target；异族/歧义（「分」在时间与钱两族）/不认识 → None。"""
+    if not target:
+        return None
+    items = _unit_items(_tail_units(left))
+    if not items:
+        return None
+    units = {u for _, u in items if u and u != 'OP'}
+    fams = [f for f, tbl in UNIT_FAM.items() if target in tbl and all(u in tbl for u in units)]
+    if len(fams) != 1:
+        return None
+    tbl = UNIT_FAM[fams[0]]
+    tfac = tbl[target]
+    total, sign, expect = Fraction(0), 1, True
+    for val, u in items:
+        if u == 'OP':
+            if expect:
+                return None
+            sign, expect = val, True
+            continue
+        if not expect:
+            return None
+        base = tbl[u] if u else tfac          # 无单位项按目标单位计
+        total += sign * val * Fraction(base, tfac)
+        sign, expect = 1, False
+    if expect:
+        return None
+    return total
+
+
+def _lane_C3(item):
+    a = str(item.get('answer', '')).strip()
+    if not re.fullmatch(r'-?\d+(\.\d+)?', a):
+        return None, '跳过（答案非纯数值）'
+    n = norm_expr(str(item.get('stem', '')))
+    if re.search(r'\d:\d', n):
+        return None, '不适用（比/比例尺，非算式）'
+    blanks = list(re.finditer(r'=\(\)', n))
+    if not blanks:
+        return None, '不适用（无空位算式）'
+    m = blanks[-1]
+    left = n[:m.start()]
+    tail = _tail_arith(left)
+    if tail and re.search(r'\d', tail) and re.search(r'[+\-*/^×÷√∛|]', tail) \
+            and not _has_bare_letter(tail):
+        e = prep_expr(cut_expr(tail.strip('.')))
+        try:
+            v1 = ev(e)
+            v2 = ev(frac_literal_mode(e))
+        except (ParseError, ZeroDivisionError, ValueError) as ex:
+            return None, '不适用（解析失败：%s）' % ex
+        if _hits(a, (v1, v2)):
+            return None, '通过'
+        return ('C 空位算式复算不符：%s = %s/%s，卷面 answer = %s' % (e, v1, v2, a)), '不符'
+    tm = re.match(r'([\u4e00-\u9fff]{1,2})', n[m.end():])
+    v = _unit_convert(left, tm.group(1) if tm else '')
+    if v is None:
+        return None, '不适用（单位/算式均未识别）'
+    if _hits(a, (v,)):
+        return None, '通过'
+    return ('C 单位换算不符：%s → %s，卷面 answer = %s' % (left[-24:], v, a)), '不符'
+
+
 def lane_C(item):
     """代数式代值重算；返回 (问题串, 说明)。"""
-    if item.get('type') != 'solve':
-        return None, '跳过（非 solve）'
+    t = item.get('type')
+    if t != 'solve':
+        if t in ('fill', 'numeric', 'calc', 'operation', 'short-answer'):
+            return _lane_C3(item)
+        return None, '跳过（题型不适用）'
     a = str(item.get('answer', '')).strip()
     if not re.fullmatch(r'-?\d+(\.\d+)?', a):
         return None, '跳过（答案非纯数值）'
@@ -428,16 +557,15 @@ def run(bucket_list, verbose=True, want_json=None):
                             stat[lane] += 1
                             errs.append({'bucket': b, 'file': os.path.relpath(f, REPO),
                                          'no': it.get('no'), 'msg': msg})
-                    if it.get('type') == 'solve':
-                        msg, note = lane_C(it)
-                        if msg:
-                            stat['C'] += 1
-                            errs.append({'bucket': b, 'file': os.path.relpath(f, REPO),
-                                         'no': it.get('no'), 'msg': msg})
-                        elif note == '通过':
-                            stat['C_pass'] += 1
-                        else:
-                            stat['C_skip'] += 1
+                    msg, note = lane_C(it)     # 题型门槛在 lane_C 内分流（solve 走代值，填空/口算走空位算式）
+                    if msg:
+                        stat['C'] += 1
+                        errs.append({'bucket': b, 'file': os.path.relpath(f, REPO),
+                                     'no': it.get('no'), 'msg': msg})
+                    elif note == '通过':
+                        stat['C_pass'] += 1
+                    else:
+                        stat['C_skip'] += 1
         if verbose:
             print('[%s] 卷 %d｜题 %d｜A %d｜B %d｜C 不符 %d（C 通过 %d、不适用 %d）'
                   % (b, len(ps), stat['items'] - before['items'], stat['A'] - before['A'],
@@ -509,6 +637,28 @@ FIXTURES = [
                   'stem': '用竖式计算 58＋27，先写清相同数位对齐的方法，再算出结果。'}, True),
     ('C 近似兜底不宽松', {'no': 28, 'type': 'solve', 'answer': '0.33',
                    'stem': '计算：1÷3。'}, True),
+    ('C3 空位算式相符', {'no': 29, 'type': 'fill', 'answer': '84',
+                   'stem': '直接写得数：36＋48＝（　）。'}, False),
+    ('C3 空位算式错答', {'no': 30, 'type': 'fill', 'answer': '83',
+                   'stem': '直接写得数：36＋48＝（　）。'}, True),
+    ('C3 单位换算相符', {'no': 31, 'type': 'fill', 'answer': '70',
+                   'stem': '直接写得数：1米－30厘米＝（　）厘米。'}, False),
+    ('C3 单位换算错答', {'no': 32, 'type': 'fill', 'answer': '60',
+                   'stem': '直接写得数：1米－30厘米＝（　）厘米。'}, True),
+    ('C3 分步算式末空', {'no': 33, 'type': 'fill', 'answer': '69',
+                    'stem': '计算23×3时，先算20×3＝60，再算3×3＝9，最后60＋9＝（　）。'}, False),
+    ('C3 分步算式末空错', {'no': 34, 'type': 'fill', 'answer': '59',
+                     'stem': '计算23×3时，先算20×3＝60，再算3×3＝9，最后60＋9＝（　）。'}, True),
+]
+
+# 必须判「不适用」的读法歧义样本：宁可不算，也不能把 ∠2 读成 2、把比号当除号
+NO_CALC = [
+    ('∠标记不误读', {'no': 35, 'type': 'fill', 'answer': '55',
+                 'stem': '∠1和∠2合起来是一个直角，如果∠1＝35°，那么∠2＝（　）°。'}),
+    ('比号不误读', {'no': 36, 'type': 'numeric', 'answer': '5',
+                'stem': '求出下面各比的比值：2.5 : 0.5 = （　）。'}),
+    ('比例尺不误读', {'no': 37, 'type': 'fill', 'answer': '3',
+                 'stem': '在比例尺是 1 : 100000 的地图上，图上距离 3 厘米表示实际距离（　）千米。'}),
 ]
 
 
@@ -521,12 +671,9 @@ def selftest():
         msg_b = lane_B(item)
         if msg_b:
             got = True
-        if item['type'] == 'solve':
-            msg_c, note = lane_C(item)
-            if msg_c:
-                got = True
-            elif note != '通过' and expect_bad and '不适用' in note:
-                got = False
+        msg_c, note = lane_C(item)       # 题型门槛在 lane_C 内分流
+        if msg_c:
+            got = True                   # 「不适用」不改变 got：A/B 已判出的错不能被 C 的跳过覆盖
         verdict = 'OK' if got == expect_bad else 'FAIL'
         if verdict == 'OK':
             ok += 1
@@ -539,8 +686,14 @@ def selftest():
     good = (v1 != Fraction(2)) and (v2 == Fraction(2))
     print('  [%s] 分数双读数 3/4÷3/8：左结合=%s、分数读法=%s' % ('OK' if good else 'FAIL', v1, v2))
     ok += 1 if good else 0
-    print('== --selftest %d/%d' % (ok, len(FIXTURES) + 1))
-    return 0 if ok == len(FIXTURES) + 1 else 1
+    for name, item in NO_CALC:
+        msg_c, note = lane_C(item)
+        good = msg_c is None and note != '通过'
+        print('  [%s] %s（须不适用，实得 %s）' % ('OK' if good else 'FAIL', name, note))
+        ok += 1 if good else 0
+    total = len(FIXTURES) + 1 + len(NO_CALC)
+    print('== --selftest %d/%d' % (ok, total))
+    return 0 if ok == total else 1
 
 
 def main():
