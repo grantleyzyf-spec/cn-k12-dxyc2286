@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # 一点就跑：数学 12 版十链交付件核验（学层 / 讲解合订本 / 试卷 docx / 试卷合订本 /
-# 讲解题块 / 逐题对齐 / 答案复算｜讲解↔卷 examId 身份对齐｜讲解答案面锚定｜答案键独立机检）。
+# 讲解题块 / 逐题对齐 / 答案复算｜讲解↔卷 examId 身份对齐｜讲解答案面锚定｜答案键独立机检｜讲解 docx 同源）。
 # 任一链 FAIL ⇒ 退出码 1。
 #
 # 为什么这层壳：前六+第七链的脚本随技能库走（k12-knowledge-graph-repo/scripts），
@@ -17,17 +17,19 @@ PY="${PYTHON:-python3}"
 REPO="${REPO:-$(dirname "$DIR")}"
 SKILL="${SKILL_K12:-$HOME/.hermes/profiles/agent2/skills/education/k12-knowledge-graph-repo/scripts}"
 rc=0
-echo "=== 1/10 技能库七链（学层 / 讲解合订本 / 试卷 docx / 试卷合订本 / 讲解题块 / 逐题对齐 / 答案复算）"
+echo "=== 1/11 技能库七链（学层 / 讲解合订本 / 试卷 docx / 试卷合订本 / 讲解题块 / 逐题对齐 / 答案复算）"
 if [ -f "$SKILL/verify_delivery_all.sh" ]; then
   REPO="$REPO" bash "$SKILL/verify_delivery_all.sh" "$@" || rc=1
 else
   echo "✗ 找不到技能库门禁：$SKILL/verify_delivery_all.sh（用 SKILL_K12 指定）"; rc=1
 fi
-echo "=== 8/10 讲解↔卷 examId 身份对齐（孤儿 / 缺讲 / id 笔误）"
+echo "=== 8/11 讲解↔卷 examId 身份对齐（孤儿 / 缺讲 / id 笔误）"
 "$PY" "$DIR/verify_lecture_exam_id.py" --repo "$REPO" || rc=1
-echo "=== 9/10 讲解答案面锚定（题块定位 / 题分 / 结论冲突 / 答案数值落笔）"
+echo "=== 9/11 讲解答案面锚定（题块定位 / 题分 / 结论冲突 / 答案数值落笔）"
 "$PY" "$DIR/verify_lecture_answer_anchor.py" --repo "$REPO" --quiet || rc=1
-echo "=== 10/10 答案键独立机检（选择结构 / 题干泄答案 / 算式与代值复算 / 答案句算式链 / 解析结论句）"
+echo "=== 10/11 答案键独立机检（选择结构 / 题干泄答案 / 算式与代值复算 / 答案句算式链 / 解析结论句）"
 "$PY" "$DIR/verify_exam_answer_key.py" --quiet || rc=1
+echo "=== 11/11 讲解 docx ↔ 现役讲解 JSON 同源（逐份 Jaccard / 汉字比 / 题块头 / 合订本重建 / 旧稿残留）"
+"$PY" "$DIR/verify_lecture_docx_samesource.py" --quiet || rc=1
 echo "=== 汇总 rc=${rc}（0=全绿）"
 exit "$rc"
