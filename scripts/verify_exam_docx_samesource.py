@@ -28,6 +28,12 @@
     ① 目录行 `i. <册>　<卷>` 逐卷在册且顺序与渲染器排序一致；
     ② 每卷重渲正文 35%/75% 处各 60 字特征串在合订本内（防「单份重渲了、合订本没重建」）；
     ③ 合订本汉字数 / 各卷重渲汉字之和 ∈ [0.90, 1.10]（防漏卷、防旧稿拼册）；
+  C2 合订本版式同源（2026-11-14 18:00 加，接住 12:00 段记账的「指纹不覆盖合订本」限度）：
+    用现役合订本渲染器（`build_math_exam_booklet.build`）把**本次重渲的单份**重新拼成合订本，
+    与交付合订本比：① 版式指纹**零容差**（属性与 B2 同一套，含分节数 / 段前分页 / 空段 / 表格列数）；
+    ② 文本 Jaccard ≥ 0.98。标定：全库 260 本实测指纹零差异、Jaccard 恒 1.0000 ⇒ 零容差可用。
+    为什么需要：C 只看「目录行 + 特征串 + 汉字数」，同一册被换成同字数、同目录的旧版式照样过；
+    C2 复用的是 B/B2 已经渲好的单份文件，不额外重渲，整链只多 ~30 秒。
   F 多余件：交付目录里出现「无对应现役卷」的 docx（旧卷名残留）即 FAIL。
 
 用法：
@@ -85,7 +91,17 @@ def doc_sig(p):
     """版式指纹：只看「排出来是什么样」，不看文字（见文件头 B2）。"""
     with zipfile.ZipFile(p) as z:
         root = ET.fromstring(z.read("word/document.xml"))
-    c = {"p": 0, "p_empty": 0, "r": 0, "tbl": 0, "sect": 0, "br_page": 0, "pbb": 0}
+        # 页码在 footer 的 PAGE 域里，document.xml 完全没有它 ⇒ 不取这一面，「页码丢了」查不出
+        foot = []
+        for n in sorted(z.namelist()):
+            if not re.search(r"word/(?:footer|header)\d*\.xml$", n):
+                continue
+            fx = z.read(n).decode("utf-8", "ignore")
+            ftxt = "".join(re.findall(r"<w:t[^>]*>([^<]*)</w:t>", fx))
+            foot.append((n, fx.count("<w:fldSimple"), fx.count("<w:instrText"),
+                         re.sub(r"\s+", "", ftxt)[:40]))
+    c = {"p": 0, "p_empty": 0, "r": 0, "tbl": 0, "sect": 0, "br_page": 0, "pbb": 0,
+         "foot": tuple(foot)}
     jc, sz, sty, ind, spc, cols = {}, {}, {}, {}, {}, []
     for para in root.iter(W + "p"):
         c["p"] += 1
@@ -199,12 +215,28 @@ def render_pairs(R, repo, bucket, edition, files, tmp):
         R.render_paper(ex1, p1)
         R.render_answer(ex2, p2)
         # 卷名在同版多册间会重名（「期中测试卷A」）⇒ 键必须带册名，否则后册覆盖前册
-        # 文本 + 版式指纹一起取：B / B2 共用这一次重渲，不加耗时
+        # 文本 + 版式指纹 + 文件路径一起取：B / B2 / C2 共用这一次重渲，不加耗时
+        # 路径**不删**：C2 要用重渲单份重新拼合订本（tmp 由 check() 统一清）
         got[(ex1["book"], ex1["paper"])] = (doc_text(p1), doc_text(p2),
-                                           doc_sig(p1), doc_sig(p2))
-        os.remove(p1)
-        os.remove(p2)
+                                           doc_sig(p1), doc_sig(p2), p1, p2)
     return got
+
+
+def booklet_builder(repo):
+    """现役合订本渲染器（独立模块实例，E 里的 BUCKET/EDITION/EXAM 由调用方设置）。"""
+    key = "build_math_exam_booklet"
+    if key in sys.modules:
+        return sys.modules[key]
+    # 与 renderer() 同款解析：靠 sys.path 里的 scripts 目录，自检用假 repo 也能导入
+    sys.path.insert(0, os.path.join(repo, "scripts"))
+    return importlib.import_module(key)
+
+
+def rebuild_booklet(BB, edition, book, kind_cn, pairs, out):
+    """按现役 build() 拼一本合订本（目录 + 逐卷深拷贝 + 页脚页码）。"""
+    master = BB.E.new_doc()
+    BB.build(master, pairs, f"{BB.E.SUBJECT_NAME}（{edition}）{book}",
+             f"{kind_cn}合订本 · 共 {len(pairs)} 卷 · 学生打印版", out)
 
 
 def check(repo, edition, bucket, root=ROOT, stats=None):
@@ -212,14 +244,17 @@ def check(repo, edition, bucket, root=ROOT, stats=None):
     R = renderer(repo)
     files = exam_files(repo, bucket)
     base = f"{root}/{edition}"
+    BB = booklet_builder(repo)
+    BB.E.BUCKET, BB.E.EDITION, BB.E.EXAM = bucket, edition, f"{repo}/data/{bucket}/exams"
     tmp = tempfile.mkdtemp(prefix="exdocx_")
     try:
         got = render_pairs(R, repo, bucket, edition, files, tmp)
-    finally:
+    except BaseException:
         shutil.rmtree(tmp, ignore_errors=True)
+        raise
     by_book = {}
-    for (book, paper), (t1, t2, s1, s2) in got.items():
-        by_book.setdefault(book, []).append((paper, t1, t2, s1, s2))
+    for (book, paper), (t1, t2, s1, s2, p1, p2) in got.items():
+        by_book.setdefault(book, []).append((paper, t1, t2, s1, s2, p1, p2))
     for book in sorted(by_book):
         vols = by_book[book]
         d = f"{base}/{book}"
@@ -231,7 +266,7 @@ def check(repo, edition, bucket, root=ROOT, stats=None):
             errs.append(f"[A] {book}·{name}: 交付 docx 缺失")
         for name in sorted(have_set - want):
             errs.append(f"[F] {book}·{name}: 无对应现役卷的多余 docx（旧名/孤儿）")
-        for paper, t1, t2, s1, s2 in vols:
+        for paper, t1, t2, s1, s2, _p1, _p2 in vols:
             for suf, fresh, fsig in zip(SUFFIXES, (t1, t2), (s1, s2)):
                 f = f"{d}/{paper}{suf}"
                 if not os.path.exists(f):
@@ -260,7 +295,8 @@ def check(repo, edition, bucket, root=ROOT, stats=None):
         bdir = f"{d}/_合订本"
         order = sorted(vols, key=lambda v: (KIND_RANK.get(_kind(repo, bucket, book, v[0]), 9),
                                             cn_number(v[0])))
-        for tag, idx in (("试卷合订本", 1), ("参考答案合订本", 2)):
+        for tag, idx, kind_cn, pi in (("试卷合订本", 1, "试卷", 5),
+                                      ("参考答案合订本", 2, "参考答案与评分标准", 6)):
             b = f"{bdir}/{book}_{tag}.docx"
             if not os.path.exists(b):
                 errs.append(f"[C] {book}: {tag} 缺失")
@@ -290,6 +326,34 @@ def check(repo, edition, bucket, root=ROOT, stats=None):
                 if diff < -0.03 * want_han or diff > slack:
                     errs.append(f"[C] {book}: {tag} 汉字数 {bhan} 与各卷和 {want_han} 不符"
                                 f"（差 {diff:+d}，允许 −{int(0.03 * want_han)}…+{slack}）")
+            # C2 合订本版式同源：拿本次重渲的单份重新拼一本，与交付本比指纹与文本。
+            # 复用 B/B2 的临时文件 ⇒ 不额外重渲；C 的「目录 + 特征串」抓不到同字数换版式。
+            if not os.path.exists(b):
+                continue
+            fresh = f"{tmp}/bk_{book}_{tag}.docx"
+            try:
+                rebuild_booklet(BB, edition, book, kind_cn,
+                                [({"book": book, "paper": v[0]}, v[pi]) for v in order], fresh)
+            except Exception as e:
+                errs.append(f"[C2] {book}: {tag} 重渲失败（{type(e).__name__}: {e}）")
+                continue
+            a_sig, b_sig = doc_sig(b), doc_sig(fresh)
+            bad = [k for k in b_sig if a_sig.get(k) != b_sig[k]]
+            if stats is not None:
+                stats.setdefault("bsig", []).append(len(bad))
+            if bad:
+                detail = "；".join(f"{k}: {str(a_sig.get(k))[:60]} ≠ {str(b_sig.get(k))[:60]}"
+                                   for k in bad[:3])
+                errs.append(f"[C2] {book}: {tag} 版式与现役合订本渲染器不符"
+                            f"（{len(bad)} 项 / {detail}）")
+                continue
+            j = jaccard(doc_text(b), doc_text(fresh))
+            if stats is not None:
+                stats.setdefault("bj", []).append(j)
+            if j < J_MIN:
+                errs.append(f"[C2] {book}: {tag} 与现役合订本渲染器不同源"
+                            f"（Jaccard {j:.3f} < {J_MIN}）")
+    shutil.rmtree(tmp, ignore_errors=True)
     return errs, len(got)
 
 
@@ -344,11 +408,17 @@ def selftest():
         R.render_answer(json.loads(json.dumps(d)), p2)
 
     def booklet():
-        t1, t2 = doc_text(f"{root}/{edition}/{book}/{ex['paper']}_试卷.docx"), \
-            doc_text(f"{root}/{edition}/{book}/{ex['paper']}_参考答案与评分标准.docx")
-        head = f"1. {book}　{ex['paper']}"
-        for tag, t in (("试卷合订本", t1), ("参考答案合订本", t2)):
-            mk_docx(f"{root}/{edition}/{book}/_合订本/{book}_{tag}.docx", head + "\n" + t)
+        # 必须用现役合订本渲染器：C2 比的是「交付本 vs 重渲本」的指纹，手搓纯段落必红
+        BB = booklet_builder(repo)
+        BB.E.BUCKET, BB.E.EDITION = bucket, edition
+        d = f"{root}/{edition}/{book}/_合订本"
+        os.makedirs(d, exist_ok=True)
+        for tag, kind_cn, suf in (("试卷合订本", "试卷", "_试卷.docx"),
+                                  ("参考答案合订本", "参考答案与评分标准", "_参考答案与评分标准.docx")):
+            rebuild_booklet(BB, edition, book, kind_cn,
+                            [({"book": book, "paper": ex["paper"]},
+                              f"{root}/{edition}/{book}/{ex['paper']}{suf}")],
+                            f"{d}/{book}_{tag}.docx")
 
     def good():
         write_json(ex)
@@ -379,9 +449,8 @@ def selftest():
                                                                   {"no": 3, "type": "fill", "stem": "9＋9＝（　）",
                                                                    "answer": "18", "analysis": "两个九相加。",
                                                                    "score": 5, "scoreRule": "算对得 5 分"}])])), "[B]")
-    def drift_layout():
-        """只改字号、一字不动 ⇒ B 仍 1.000，只有 B2 能抓。"""
-        p = f"{root}/{edition}/{book}/{ex['paper']}_试卷.docx"
+    def bump_sz(p):
+        """只改字号、一字不动。"""
         with zipfile.ZipFile(p) as z:
             items = {n: z.read(n) for n in z.namelist()}
         x = items["word/document.xml"].decode("utf-8")
@@ -392,14 +461,37 @@ def selftest():
             for n, b in items.items():
                 z.writestr(n, b)
 
+    def drift_layout():
+        """只改单份字号、一字不动 ⇒ B 仍 1.000，只有 B2 能抓。"""
+        bump_sz(f"{root}/{edition}/{book}/{ex['paper']}_试卷.docx")
+
+    def drift_booklet():
+        """只改**合订本**字号（单份不动、目录不动）⇒ C 照过，只有 C2 能抓。"""
+        bump_sz(f"{root}/{edition}/{book}/_合订本/{book}_试卷合订本.docx")
+
     case("版式漂移（同字不同字号）", drift_layout, "[B2]")
+    def drop_page_number():
+        """删合订本页脚里的 PAGE 域（页码丢了，正文与汉字数全不变）。"""
+        p = f"{root}/{edition}/{book}/_合订本/{book}_试卷合订本.docx"
+        with zipfile.ZipFile(p) as z:
+            items = {n: z.read(n) for n in z.namelist()}
+        x = items["word/footer1.xml"].decode("utf-8")
+        x2 = x.replace('<w:fldSimple w:instr="PAGE"/>', "")
+        assert x2 != x, "夹具失效：footer 里没有 PAGE 域"
+        items["word/footer1.xml"] = x2.encode("utf-8")
+        with zipfile.ZipFile(p, "w", zipfile.ZIP_DEFLATED) as z:
+            for n, b in items.items():
+                z.writestr(n, b)
+
+    case("合订本版式漂移（单份不动）", drift_booklet, "[C2]")
+    case("合订本页码丢失（页脚 PAGE 域）", drop_page_number, "[C2]")
     case("缺件", lambda: os.remove(f"{root}/{edition}/{book}/{ex['paper']}_试卷.docx"), "[A]")
     case("旧名残留", lambda: mk_docx(f"{root}/{edition}/{book}/第一单元 测试卷(旧)_试卷.docx", "旧卷"),
          "[F]")
     case("合订本未重建", lambda: mk_docx(f"{root}/{edition}/{book}/_合订本/{book}_试卷合订本.docx",
                                      f"1. {book}　{ex['paper']}\n只有目录，没有正文"), "[C]")
     shutil.rmtree(tmp, ignore_errors=True)
-    print(("✅ selftest 6/6" if ok else "❌ selftest 未过"))
+    print(("✅ selftest 8/8" if ok else "❌ selftest 未过"))
     return 0 if ok else 1
 
 
@@ -416,7 +508,7 @@ def main():
         return selftest()
     pairs = [(a.pairs[0], a.pairs[1])] if len(a.pairs) >= 2 else list(PAIRS.items())
     rc, total, nvol = 0, 0, 0
-    st = {"doc": [], "book": []}
+    st = {"doc": [], "book": [], "bsig": [], "bj": []}
     for edition, bucket in pairs:
         errs, n = check(a.repo, edition, bucket, root=a.root, stats=st)
         nvol += n
@@ -432,9 +524,12 @@ def main():
         hrs = sorted(x[1] for x in st["doc"])
         bk = sorted(st["book"]) or [0.0]
         sg = st.get("sig") or [0]
+        bs = st.get("bsig") or [0]
+        bj = sorted(st.get("bj") or [1.0])
         print(f"== 分布 单份 {len(js)} 份：Jaccard min {js[0]:.4f} p1 {js[len(js)//100]:.4f} "
               f"中位 {js[len(js)//2]:.4f}｜汉字比 {hrs[0]:.4f}–{hrs[-1]:.4f}｜"
-              f"合订本增量 {bk[0]*100:+.2f}%…{bk[-1]*100:+.2f}%｜版式指纹差异 max {max(sg)} 项")
+              f"合订本增量 {bk[0]*100:+.2f}%…{bk[-1]*100:+.2f}%｜版式指纹差异 max {max(sg)} 项｜"
+              f"合订本 {len(bs)} 本：指纹差异 max {max(bs)} 项、Jaccard min {bj[0]:.4f}")
     print(f"== 合计 卷 {nvol}｜问题 {total}")
     return rc
 

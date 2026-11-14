@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# 一点就跑：数学 12 版十二链交付件核验（学层 / 讲解合订本 / 试卷 docx / 试卷合订本 /
+# 一点就跑：数学 12 版十三链交付件核验（学层 / 讲解合订本 / 试卷 docx / 试卷合订本 /
 # 讲解题块 / 逐题对齐 / 答案复算｜讲解↔卷 examId 身份对齐｜讲解答案面锚定｜答案键独立机检｜
-# 讲解 docx 同源｜学层 docx 同源｜试卷 docx 同源＋版式指纹）。
+# 讲解 docx 同源｜学层 docx 同源｜试卷 docx 同源＋版式指纹｜合订本同源＋版式指纹）。
 # 任一链 FAIL ⇒ 退出码 1。
 #
 # 为什么这层壳：前六+第七链的脚本随技能库走（k12-knowledge-graph-repo/scripts），
@@ -34,7 +34,7 @@ echo "=== 11/13 讲解 docx ↔ 现役讲解 JSON 同源（逐份 Jaccard / 汉�
 "$PY" "$DIR/verify_lecture_docx_samesource.py" --quiet || rc=1
 echo "=== 12/13 学层 docx ↔ 现役学层 JSON 同源（缺件/多余件 / 逐份 Jaccard / 汉字比 / 小标题覆盖 / 合订本正文）"
 "$PY" "$DIR/verify_learn_docx_samesource.py" --repo "$REPO" --quiet || rc=1
-echo "=== 13/13 试卷 docx ↔ 现役卷 JSON 同源（缺件/多余件 / 重渲逐份比对 / 版式指纹零容差 / 合订本目录与正文）"
+echo "=== 13/13 试卷 docx ↔ 现役卷 JSON 同源（缺件/多余件 / 重渲逐份比对 / 版式指纹零容差 / 合订本目录正文＋合订本版式指纹）"
 "$PY" "$DIR/verify_exam_docx_samesource.py" --repo "$REPO" --quiet || rc=1
 echo "=== 汇总 rc=${rc}（0=全绿）"
 exit "$rc"
