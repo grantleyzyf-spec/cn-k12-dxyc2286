@@ -1,0 +1,19 @@
+[Unit]
+Description=xueketupu.com site chat assistant
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/k12
+EnvironmentFile=/etc/xkt-chat.env
+ExecStart=/usr/bin/python3 /var/www/k12/chat/server.py
+Restart=always
+RestartSec=3
+MemoryMax=512M
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
