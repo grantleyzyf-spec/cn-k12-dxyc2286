@@ -128,7 +128,7 @@ def _today():
     return time.strftime("%Y-%m-%d")
 
 
-def quota(ip_hash):
+def quota(ip_hash, bypass_ip=False):
     fp = os.path.join(STATE_DIR, _today() + ".json")
     with _lock:
         st = {"turns": 0, "ips": {}}
@@ -140,7 +140,7 @@ def quota(ip_hash):
         used_ip = st["ips"].get(ip_hash, 0)
         if st["turns"] >= DAILY_BUDGET:
             return False, "budget"
-        if used_ip >= IP_DAILY:
+        if used_ip >= IP_DAILY and not bypass_ip:
             return False, "ip"
         st["turns"] += 1
         st["ips"][ip_hash] = used_ip + 1
@@ -271,15 +271,18 @@ class H(BaseHTTPRequestHandler):
         q = str(msgs[-1].get("content", ""))[:800]
         ip = self.client_address[0]
         ip_hash = hashlib.sha1((ip + time.strftime("%Y-%m-%d")).encode()).hexdigest()[:12]
-        ok, why = quota(ip_hash)
+        is_local = ip in ("127.0.0.1", "::1", "127.0.1.1")
+        ok, why = quota(ip_hash, bypass_ip=is_local)
 
         hits = bm25(q)
         kps = find_kps(q)
         if not ok:
-            ans = ("今天的在线咨询次数用完了（本站客服是个人维护，有每日上限）。\n"
-                   if why == "budget" else "你今天的咨询次数用完了。\n")
-            ans += kb_answer(q, hits, kps)
-            ans += "\n也可以直接发邮件：grantleyzyf@gmail.com"
+            ans = ("今天的在线咨询次数到上限了（个人维护的站，有每日配额）。\n"
+                   if why == "budget" else "今天这个 IP 的咨询次数到上限了。\n")
+            if kps:
+                ans += "你要找的可能是：" + "、".join(
+                    "%s（%s）%s" % (k["name"], k["meta"], k["url"]) for k in kps[:2]) + "\n"
+            ans += "直接发邮件更快：grantleyzyf@gmail.com"
             return self._stream_text(ans, mode="limit")
 
         if not API_KEY:

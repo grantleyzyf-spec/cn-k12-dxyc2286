@@ -59,7 +59,8 @@ def unpack():
         names = tf.getnames()
         tf.extractall(ROOT)
     for rel in ("chat/server.py", "chat/build_kb.py", "assets/chat-widget.js",
-                "assets/chat-widget.css", "deploy/chat/chat.conf", "deploy/chat/xkt-chat.service"):
+                "assets/chat-widget.css", "deploy/chat/chat.conf", "deploy/chat/xkt-chat.service",
+                "chat/selftest.py"):
         p = os.path.join(ROOT, rel)
         if not os.path.exists(p):
             sys.exit("解包缺文件: " + p)
