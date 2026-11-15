@@ -52,7 +52,11 @@
   var btn = el("button");
   btn.id = "xkt-chat-btn";
   btn.setAttribute("aria-label", "站内客服");
-  btn.innerHTML = '<span class="ico">💬</span>客服';
+  btn.innerHTML =
+    '<svg class="ico" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">' +
+    '<path d="M4 5.6A2.6 2.6 0 0 1 6.6 3h10.8A2.6 2.6 0 0 1 20 5.6v6.9a2.6 2.6 0 0 1-2.6 2.6H9.4l-4.1 3.3a.6.6 0 0 1-1.3-.5V5.6Z" fill="currentColor"/>' +
+    '<circle cx="9" cy="9" r="1" fill="#0f766e"/><circle cx="12" cy="9" r="1" fill="#0f766e"/><circle cx="15" cy="9" r="1" fill="#0f766e"/></svg>' +
+    "客服";
 
   var panel = el("div");
   panel.id = "xkt-chat-panel";
