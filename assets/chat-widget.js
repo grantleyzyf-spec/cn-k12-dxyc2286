@@ -81,7 +81,7 @@
 
   function addMsg(role, text) {
     var m = el("div", "xkt-msg " + role);
-    if (role === "bot") m.appendChild(linkify(text)); else m.textContent = text;
+    if (role === "bot") m.appendChild(linkify(String(text).replace(/^\s+/, ""))); else m.textContent = text;
     body.appendChild(m);
     body.scrollTop = body.scrollHeight;
     return m;
