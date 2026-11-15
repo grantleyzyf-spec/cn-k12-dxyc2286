@@ -120,6 +120,7 @@
 
   function openPanel() {
     panel.classList.add("open");
+    btn.style.display = "none";
     if (!state.msgs.length) {
       addMsg("bot", "你好，我是本站的小助手。\n可以问我：网站怎么用、某个知识点在哪个学科/年级、数据从哪来、是否收费。");
       renderChips();
@@ -128,7 +129,7 @@
     setTimeout(function () { ta.focus(); }, 60);
   }
 
-  function closePanel() { panel.classList.remove("open"); }
+  function closePanel() { panel.classList.remove("open"); btn.style.display = ""; }
 
   btn.onclick = function () { panel.classList.contains("open") ? closePanel() : openPanel(); };
   panel.querySelector(".xkt-x").onclick = closePanel;
