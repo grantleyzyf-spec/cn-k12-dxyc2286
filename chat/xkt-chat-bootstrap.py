@@ -17,6 +17,7 @@ UNIT = "/etc/systemd/system/xkt-chat.service"
 NGSNIP = "/etc/nginx/snippets/k12-chat.conf"
 NGCONF = "/etc/nginx/conf.d/k12.conf"
 SVC = "xkt-chat"
+SPACEY = (" ", chr(9), chr(13), chr(10))
 
 PAYLOAD_B64 = """
 H4sIAKJx+WoAA+19+3cTR9Lo/qy/ojMkayno7QeOjNiFAIGbBNiYfLu5tldnLI1sYVkSMyNsr/E5JuFhg8EmCe9HgEAgCdjk
@@ -312,25 +313,124 @@ def systemd():
         print(sh("journalctl -u %s -n 20 --no-pager" % SVC).stdout)
 
 
+def _blocks(s):
+    out, i, n = [], 0, len(s)
+    while i < n:
+        k = s.find("server", i)
+        if k < 0:
+            break
+        j = k + 6
+        while j < n and s[j] in SPACEY:
+            j += 1
+        if j < n and s[j] == "{":
+            depth, j = 1, j + 1
+            while j < n and depth:
+                if s[j] == "{":
+                    depth += 1
+                elif s[j] == "}":
+                    depth -= 1
+                j += 1
+            out.append((k, j))
+            i = j
+        else:
+            i = k + 6
+    return out
+
+
+def _has443(blk):
+    for line in blk.splitlines():
+        t = line.strip()
+        if t.startswith("listen") and "443" in t:
+            return True
+    return False
+
+
+def _sname(blk):
+    for line in blk.splitlines():
+        t = line.strip()
+        if t.startswith("server_name"):
+            v = t[len("server_name"):].strip().rstrip(";").strip()
+            return v or "(empty)"
+    return "(none)"
+
+
+def _anchor(blk):
+    pos = 0
+    for line in blk.splitlines(True):
+        pos += len(line)
+        if line.strip().startswith("server_name"):
+            return pos
+    pos = 0
+    for line in blk.splitlines(True):
+        pos += len(line)
+        if line.strip().startswith("listen"):
+            return pos
+    return blk.find("{") + 1
+
+
+def _patch(s, inc):
+    parts, last, log = [], 0, []
+    for idx, (a, b) in enumerate(_blocks(s), 1):
+        parts.append(s[last:a])
+        blk = s[a:b]
+        is443 = _has443(blk)
+        nm = _sname(blk)
+        has = inc in blk
+        if is443 and not has:
+            p = _anchor(blk)
+            blk = blk[:p] + "    " + inc + chr(10) + blk[p:]
+            log.append((idx, nm, "INSERTED", True))
+        elif (not is443) and has:
+            blk = blk.replace("    " + inc, "").replace(inc, "")
+            log.append((idx, nm, "REMOVED", False))
+        else:
+            log.append((idx, nm, "already" if has else "skip", is443))
+        parts.append(blk)
+        last = b
+    parts.append(s[last:])
+    return "".join(parts), log
+
+
 def nginx():
     print("== 5/6 nginx ==")
     os.makedirs(os.path.dirname(NGSNIP), exist_ok=True)
     shutil.copy(os.path.join(ROOT, "deploy/chat/chat.conf"), NGSNIP)
-    s = open(NGCONF, encoding="utf-8").read() if os.path.exists(NGCONF) else ""
-    if "k12-chat.conf" not in s:
-        if "include snippets/k12-common.conf;" in s:
-            s = s.replace("include snippets/k12-common.conf;",
-                          "include snippets/k12-common.conf;\n    include snippets/k12-chat.conf;", 1)
-        else:
-            s = s.replace("server {", "server {\n    include snippets/k12-chat.conf;", 1)
-        open(NGCONF, "w", encoding="utf-8").write(s)
-        print("   已给 %s 加 include" % NGCONF)
+    inc = "include snippets/k12-chat.conf;"
+    files = []
+    for d in ("/etc/nginx/conf.d", "/etc/nginx/sites-enabled"):
+        if os.path.isdir(d):
+            for f in sorted(os.listdir(d)):
+                p = os.path.realpath(os.path.join(d, f))
+                if os.path.isfile(p) and p not in files:
+                    files.append(p)
+    hit = 0
+    for p in files:
+        try:
+            s = open(p, encoding="utf-8").read()
+        except Exception:
+            continue
+        if "server" not in s:
+            continue
+        new, log = _patch(s, inc)
+        if new != s:
+            open(p, "w", encoding="utf-8").write(new)
+        for idx, nm, act, is443 in log:
+            if act == "INSERTED" and is443:
+                hit += 1
+            print("   [srv] %s block%d 443=%s name=%s %s" % (p, idx, "yes" if is443 else "no", nm, act))
+    if not hit:
+        print("   !! no 443 block patched; current listens:")
+        print(sh("grep -rn listen /etc/nginx/conf.d /etc/nginx/sites-enabled 2>/dev/null | head -20").stdout)
     t = sh("nginx -t")
     print("   " + (t.stderr or t.stdout).strip().splitlines()[-1])
     if t.returncode != 0:
-        sys.exit("nginx 配置未通过，未 reload")
+        sys.exit("nginx config test failed, not reloading")
     sh("systemctl reload nginx")
-    print("   reload 完成")
+    print("   reload done")
+    r = sh("curl -s -o /dev/null -w '%{http_code}' -H 'Host: xueketupu.com' http://127.0.0.1/api/chat/health")
+    print("   local nginx probe /api/chat/health : " + r.stdout.strip())
+    r = sh("nginx -T 2>/dev/null | grep -n 'k12-chat' | head -8")
+    print("   nginx -T hits:" + chr(10) + (r.stdout or "   (none)"))
 
 
 def verify():
