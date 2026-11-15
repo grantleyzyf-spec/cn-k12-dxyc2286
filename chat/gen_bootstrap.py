@@ -87,10 +87,14 @@ def env_file():
     cur.setdefault("CHAT_DAILY_BUDGET", "500")
     cur.setdefault("CHAT_IP_DAILY", "6")
     cur.setdefault("CHAT_MAX_TURNS", "12")
+    cur.setdefault("WECHAT_KF_URL", "")
+    cur.setdefault("QQ_GROUP", "1045844951")
+    cur.setdefault("SUPPORT_EMAIL", "grantleyzyf@gmail.com")
     lines = ["# xueketupu.com 客服环境变量（600 权限，勿入库）"]
     lines += ["%s=%s" % (k, cur[k]) for k in
               ("CHAT_API_KEY", "CHAT_API_BASE", "CHAT_MODEL", "PORT",
-               "CHAT_DAILY_BUDGET", "CHAT_IP_DAILY", "CHAT_MAX_TURNS")]
+               "CHAT_DAILY_BUDGET", "CHAT_IP_DAILY", "CHAT_MAX_TURNS",
+               "WECHAT_KF_URL", "QQ_GROUP", "SUPPORT_EMAIL")]
     with open(ENVF, "w", encoding="utf-8") as f:
         f.write("\\n".join(lines) + "\\n")
     os.chmod(ENVF, 0o600)

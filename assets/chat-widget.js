@@ -20,7 +20,7 @@
     ["能帮我解题吗", "站内不提供人工解题。建议用 /diagnose/ 定位薄弱点后自己做题，解析在知识点页里。"]
   ];
 
-  var state = { msgs: [], turns: 0, mode: null, busy: false, pending: null };
+  var state = { msgs: [], turns: 0, mode: null, busy: false, pending: null, cfg: null };
 
   function el(tag, cls, txt) {
     var e = document.createElement(tag);
@@ -93,24 +93,65 @@
 
   function addTools(text) {
     var t = el("div", "xkt-tools");
+
     var r = el("button", null, "这个回答不对");
     r.onclick = function () {
       fetch(API + "/report", {
         method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ q: state.msgs[state.msgs.length - 1] && state.msgs[state.msgs.length - 1].content, a: text })
+        body: JSON.stringify({ q: lastUser(), a: text })
       }).catch(function () {});
       r.textContent = "已记录，谢谢";
       r.disabled = true;
     };
-    var h = el("a", null, "转人工");
-    h.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent("站点咨询") +
+    t.appendChild(r);
+
+    var c = el("button", null, "复制对话");
+    c.onclick = function () {
+      var txt = state.msgs.map(function (x) {
+        return (x.role === "user" ? "我：" : "助手：") + x.content;
+      }).join("\n");
+      var done = function () { c.textContent = "已复制"; setTimeout(function () { c.textContent = "复制对话"; }, 1500); };
+      if (navigator.clipboard) navigator.clipboard.writeText(txt).then(done, done);
+      else done();
+    };
+    t.appendChild(c);
+
+    if (state.cfg && state.cfg.kf) {
+      var a = el("a", null, "微信客服");
+      a.href = state.cfg.kf;
+      a.target = "_blank";
+      a.rel = "noopener";
+      t.appendChild(a);
+    } else if (state.cfg && state.cfg.qq) {
+      var q = el("button", null, "群号 " + state.cfg.qq);
+      q.onclick = function () {
+        if (navigator.clipboard) navigator.clipboard.writeText(state.cfg.qq);
+        q.textContent = "已复制群号";
+        setTimeout(function () { q.textContent = "群号 " + state.cfg.qq; }, 1500);
+      };
+      t.appendChild(q);
+    }
+
+    var m = el("a", null, "转人工");
+    m.href = "mailto:" + ((state.cfg && state.cfg.email) || EMAIL) + "?subject=" + encodeURIComponent("站点咨询") +
       "&body=" + encodeURIComponent("我的问题：\n\n（对话）\n" + state.msgs.map(function (x) {
         return (x.role === "user" ? "我：" : "助手：") + x.content;
       }).join("\n"));
-    h.style.marginLeft = "auto";
-    t.appendChild(r);
-    t.appendChild(h);
+    t.appendChild(m);
+
     body.appendChild(t);
+  }
+
+  function lastUser() {
+    for (var i = state.msgs.length - 1; i >= 0; i--) if (state.msgs[i].role === "user") return state.msgs[i].content;
+    return "";
+  }
+
+  function loadConfig() {
+    fetch(API + "/config", { cache: "no-store" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) { if (j && j.ok) state.cfg = j; })
+      .catch(function () {});
   }
 
   function renderChips() {
@@ -129,6 +170,7 @@
       addMsg("bot", "你好，我是本站的小助手。\n可以问我：网站怎么用、某个知识点在哪个学科/年级、数据从哪来、是否收费。");
       renderChips();
       checkHealth();
+      loadConfig();
     }
     setTimeout(function () { ta.focus(); }, 60);
   }

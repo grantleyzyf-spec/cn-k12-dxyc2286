@@ -229,6 +229,20 @@ class H(BaseHTTPRequestHandler):
         self.end_headers()
 
     def do_GET(self):
+        if self.path.rstrip("/") in ("/api/chat/config", "/api/config"):
+            body = json.dumps({
+                "ok": True,
+                "kf": os.environ.get("WECHAT_KF_URL", "").strip(),
+                "qq": os.environ.get("QQ_GROUP", "").strip(),
+                "email": os.environ.get("SUPPORT_EMAIL", "grantleyzyf@gmail.com").strip(),
+            }, ensure_ascii=False).encode()
+            self.send_response(200)
+            self._cors()
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+            return
         if self.path.rstrip("/") in ("/api/chat/health", "/health"):
             body = json.dumps({"ok": True, "mode": "llm" if API_KEY else "kb", "model": MODEL},
                               ensure_ascii=False).encode()
