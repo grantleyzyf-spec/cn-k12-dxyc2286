@@ -7,6 +7,9 @@
 用法：
     MATH_BUCKET=math-bj MATH_EDITION=北京版 python3 scripts/build_exam_lecture_booklet.py
     MATH_BUCKET=math-bj MATH_EDITION=北京版 python3 scripts/build_exam_lecture_booklet.py 一年级上册
+
+`build_book(book, papers, out)` 是纯渲染入口（不读环境、不拼输出路径）：main 与第 11 链的
+「合订本版式同源」核验共用同一段渲染代码，避免核验器各抄一份后判据分叉。
 """
 import glob
 import importlib.util
@@ -47,6 +50,21 @@ def cn_number(text):
     return total + cur
 
 
+def sort_papers(papers):
+    """与 main 一致的排序：kind 先、卷名中文数字后、再按卷名。"""
+    return sorted(papers, key=lambda d: (KIND_RANK.get(d.get("kind"), 9),
+                                         cn_number(d.get("paper")), d.get("paper") or ""))
+
+
+def load_exams(book, bucket=None):
+    bucket = bucket or os.environ.get("MATH_BUCKET", "math")
+    exams = {}
+    for f in glob.glob(os.path.expanduser(f"{L.REPO}/data/{bucket}/exams/{book}/*.json")):
+        e = json.load(open(f, encoding="utf-8"))
+        exams[e["paper"]] = e
+    return exams
+
+
 def render_md_into(doc, md, subj_key):
     """把一份讲解 markdown 追加进已有 doc（与单份讲解版式一致）"""
     for raw in md.split("\n"):
@@ -71,6 +89,59 @@ def render_md_into(doc, md, subj_key):
             L.add_para(doc, ln, subject=subj_key, size=10.5, after=4, first=21)
 
 
+def build_book(book, papers, out, exams=None):
+    """按现役版式渲染一册讲解合订本到 out；无讲解返回 None。"""
+    papers = sort_papers(papers)
+    if not papers:
+        return None
+    if exams is None:
+        exams = load_exams(book)
+    subject, version, stage = L.book_info(book)
+    subj_key = {"数学": "math", "物理": "physics", "化学": "chemistry", "生物": "biology", "语文": "chinese"}.get(
+        subject, os.environ.get("MATH_BUCKET", "math"))
+    doc = L.new_doc()
+    book_disp = book
+    if version and book_disp.startswith(version):   # 册名自带版本前缀（沪教版必修第一册）时不再重复
+        book_disp = book_disp[len(version):].strip()
+
+    def _paper_disp(p):
+        """卷名剥掉册名/版本前缀（只改展示，不动 paper 字段与文件名）"""
+        t = str(p.get("paper") or "")
+        for _pfx in (book, version, f"{version}{book_disp}"):
+            if _pfx and t.startswith(_pfx) and len(t) > len(_pfx):
+                t = t[len(_pfx):].strip()
+        return t
+
+    L.add_para(doc, f"{subject}（{version}）{book_disp}", subject=subj_key, size=20, bold=True, cn="黑体",
+               align="center", after=6)
+    L.add_para(doc, f"试卷讲解合订本 · 共 {len(papers)} 份 · 学生版",
+               subject=subj_key, size=11, align="center", after=14, color="666666")
+    L.add_para(doc, "目　录", subject=subj_key, size=13, bold=True, cn="黑体", align="center", after=6)
+    for i, p in enumerate(papers, 1):
+        L.add_para(doc, f"{i}. {_paper_disp(p)}", subject=subj_key, size=10.5, left=0.8, after=2)
+    for idx, p in enumerate(papers):
+        ex = exams.get(p["paper"], {})
+        _pp = L.add_para(doc, _paper_disp(p), subject=subj_key, size=15, bold=True, cn="黑体", align="center", after=2)
+        # 同 build_math_learn_booklet：add_page_break() 的空段落会在「上一份恰好排满整页」时自成空白页，
+        # 改用段前分页（2026-11-15 实测讲解合订本 29 本有空白页）。
+        _pp.paragraph_format.page_break_before = True
+        L.add_para(doc,
+                   f"满分 {ex.get('fullScore', '')} 分 · {ex.get('duration', '')} 分钟 · "
+                   f"{len(ex.get('items') or [i for s in ex.get('sections', []) for i in s.get('items', [])])} 题　学生版：先想一遍，再看思路",
+                   subject=subj_key, size=9, align="center", after=8, color="888888")
+        render_md_into(doc, p.get("markdown") or "", subj_key)
+    p0 = doc.sections[0].footer.paragraphs[0]
+    p0.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    r0 = p0.add_run()
+    L.set_font(r0, size=9)
+    fld = OxmlElement("w:fldSimple")
+    fld.set(qn("w:instr"), "PAGE")
+    r0._element.addnext(fld)
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    doc.save(out)
+    return out
+
+
 def main():
     only = sys.argv[1] if len(sys.argv) > 1 else None
     books = sorted(glob.glob(os.path.join(L.LEC, "*")))
@@ -86,56 +157,9 @@ def main():
             papers.append(d)
         if not papers:
             continue
-        papers.sort(key=lambda d: (KIND_RANK.get(d.get("kind"), 9), cn_number(d.get("paper")), d.get("paper") or ""))
-        exams = {}
-        for f in glob.glob(os.path.expanduser(f"{L.REPO}/data/{os.environ.get('MATH_BUCKET', 'math')}/exams/{book}/*.json")):
-            e = json.load(open(f, encoding="utf-8"))
-            exams[e["paper"]] = e
         subject, version, stage = L.book_info(book)
-        subj_key = {"数学": "math", "物理": "physics", "化学": "chemistry", "生物": "biology", "语文": "chinese"}.get(
-            subject, os.environ.get("MATH_BUCKET", "math"))
-        doc = L.new_doc()
-        book_disp = book
-        if version and book_disp.startswith(version):   # 册名自带版本前缀（沪教版必修第一册）时不再重复
-            book_disp = book_disp[len(version):].strip()
-
-        def _paper_disp(p):
-            """卷名剥掉册名/版本前缀（只改展示，不动 paper 字段与文件名）"""
-            t = str(p.get("paper") or "")
-            for _pfx in (book, version, f"{version}{book_disp}"):
-                if _pfx and t.startswith(_pfx) and len(t) > len(_pfx):
-                    t = t[len(_pfx):].strip()
-            return t
-
-        L.add_para(doc, f"{subject}（{version}）{book_disp}", subject=subj_key, size=20, bold=True, cn="黑体",
-                   align="center", after=6)
-        L.add_para(doc, f"试卷讲解合订本 · 共 {len(papers)} 份 · 学生版",
-                   subject=subj_key, size=11, align="center", after=14, color="666666")
-        L.add_para(doc, "目　录", subject=subj_key, size=13, bold=True, cn="黑体", align="center", after=6)
-        for i, p in enumerate(papers, 1):
-            L.add_para(doc, f"{i}. {_paper_disp(p)}", subject=subj_key, size=10.5, left=0.8, after=2)
-        doc.add_page_break()
-        for idx, p in enumerate(papers):
-            if idx:
-                doc.add_page_break()
-            ex = exams.get(p["paper"], {})
-            L.add_para(doc, _paper_disp(p), subject=subj_key, size=15, bold=True, cn="黑体", align="center", after=2)
-            L.add_para(doc,
-                       f"满分 {ex.get('fullScore', '')} 分 · {ex.get('duration', '')} 分钟 · "
-                       f"{len(ex.get('items') or [i for s in ex.get('sections', []) for i in s.get('items', [])])} 题　学生版：先想一遍，再看思路",
-                       subject=subj_key, size=9, align="center", after=8, color="888888")
-            render_md_into(doc, p.get("markdown") or "", subj_key)
-        p0 = doc.sections[0].footer.paragraphs[0]
-        p0.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        r0 = p0.add_run()
-        L.set_font(r0, size=9)
-        fld = OxmlElement("w:fldSimple")
-        fld.set(qn("w:instr"), "PAGE")
-        r0._element.addnext(fld)
-        d = os.path.join(L.OUT_ROOT, subject, version, book, "_合订本")
-        os.makedirs(d, exist_ok=True)
-        out = os.path.join(d, f"{book}_试卷讲解合订本.docx")
-        doc.save(out)
+        out = os.path.join(L.OUT_ROOT, subject, version, book, "_合订本", f"{book}_试卷讲解合订本.docx")
+        build_book(book, papers, out)
         total += len(papers)
         print(f"✅ {book}：{len(papers)} 份讲解 → {out}")
     print(f"合计 {total} 份讲解并入合订本")
