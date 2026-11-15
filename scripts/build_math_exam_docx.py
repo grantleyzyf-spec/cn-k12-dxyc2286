@@ -160,6 +160,7 @@ def head(doc, ex, answer=False):
 def render_paper(ex, path):
     doc = new_doc()
     head(doc, ex)
+    last_group = None   # 卷末题组的段区间（见文末「末题整组不跨页」）
     for sec in ex["sections"]:
         rule = sec.get("rule")
         # 有的版本（沪教版/地理）把分值说明直接写在节标题里、不给 rule 字段 → 标题原样输出
@@ -201,8 +202,10 @@ def render_paper(ex, path):
             for i in range(0, len(items), per_row):
                 para(doc, sep.join(f"{it['no']}．{it['stem']}" for it in items[i:i + per_row]),
                      size=10.5, space_after=4, line=1.7)
+            last_group = None
             continue
         for it in items:
+            _i0 = len(doc.paragraphs)
             # 题干末尾若已自带「（　）」就不再补，否则会出现「（　）（　　）」
             raw = it["stem"].rstrip()
             need_blank = it["type"] in ("choice", "multi") and "（" not in raw[-4:]
@@ -235,6 +238,15 @@ def render_paper(ex, path):
                 para(doc, "", space_after=2)
             else:
                 para(doc, "", space_after=4)
+            last_group = (_i0, len(doc.paragraphs))
+
+    # 末题整组不跨页：末题的「题干 + 分值对应的答题空行 + 尾空段」必须落在同一页。
+    # 不这么做时，末题恰好排到页面底部、答题空行溢出到新页 ⇒ 读者看到的是一整页**只有页码**的空白页
+    # （2026-11-15 第 15 链在 8287 份单份件里实测 81 份试卷中招；合订本看不出来，因为下一份的标题会占掉那一页）。
+    # 做法只加 keepNext，不改任何文字与字号：装得下就一动不动，装不下就整组挪到下一页，答题空行一行不少。
+    if last_group:
+        for _p in doc.paragraphs[last_group[0]:last_group[1] - 1]:
+            _p.paragraph_format.keep_with_next = True
     add_page_number_footer(doc)
     doc.save(path)
 
