@@ -140,6 +140,7 @@
     t.appendChild(m);
 
     body.appendChild(t);
+    body.scrollTop = body.scrollHeight;
   }
 
   function lastUser() {
@@ -150,7 +151,17 @@
   function loadConfig() {
     fetch(API + "/config", { cache: "no-store" })
       .then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (j) { if (j && j.ok) state.cfg = j; })
+      .then(function (j) {
+        if (!j || !j.ok) return;
+        state.cfg = j;
+        var note = panel.querySelector(".xkt-note");
+        if (note) {
+          note.innerHTML = j.kf
+            ? '人工客服：<a href="' + j.kf + '" target="_blank" rel="noopener">微信</a> · ' +
+              (j.email || EMAIL) + " · 每日有条数上限"
+            : "人工：" + (j.email || EMAIL) + " · 每日有条数上限";
+        }
+      })
       .catch(function () {});
   }
 
