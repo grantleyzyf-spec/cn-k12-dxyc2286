@@ -97,9 +97,14 @@
 
 ## 许可证
 
-通过提交 Pull Request，你同意将你的贡献以 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) 许可证发布。
+本仓库采用**分层许可**：
+
+- **代码**（站点生成器、构建与审计脚本、HTML/CSS/JS、测试）：[MIT](LICENSE)
+- **数据集**（`data/` 下的知识点、先修边、诊断题、课标条目与引文）：[CC BY-NC 4.0](LICENSE-DATA)
+
+通过提交 Pull Request，你同意将你的代码贡献以 MIT 许可证发布；若贡献包含数据集内容，则该部分以 CC BY-NC 4.0 发布。数据集的商业授权请开 issue 联系。
 
 ## 联系方式
 
-- 问题反馈：[GitHub Issues](https://github.com/your-username/cn-k12-dxyc2286/issues)
-- 讨论交流：[GitHub Discussions](https://github.com/your-username/cn-k12-dxyc2286/discussions)
+- 问题反馈：[GitHub Issues](https://github.com/grantleyzyf-spec/cn-k12-dxyc2286/issues)
+- 讨论交流：[GitHub Discussions](https://github.com/grantleyzyf-spec/cn-k12-dxyc2286/discussions)
