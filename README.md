@@ -8,6 +8,7 @@
 [![先修边](https://img.shields.io/badge/%E5%85%88%E4%BF%AE%E8%BE%B9-13686-1f6feb)](data/dependencies.json)
 [![课标引文](https://img.shields.io/badge/%E5%B8%A6%E5%8E%9F%E6%96%87%E5%BC%95%E6%96%87-12034%2F12269-orange)](data/cn-curriculum-standards.json)
 [![GitHub Pages](https://img.shields.io/badge/%E7%AB%99%E7%82%B9-GitHub%20Pages-lightgrey)](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/)
+[![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-cn--k12--dxyc2286-yellow)](https://huggingface.co/datasets/grantley-8/cn-k12-dxyc2286)
 
 **[→ 在线浏览](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/)** · [知识图谱](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/explore/) · [自适应诊断](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/diagnose/) · [学习档案](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/children/) · [诊断记录](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/children/history.html) · [联系与反馈](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/contact/) · [❤️ 赞助支持](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/sponsor/)
 

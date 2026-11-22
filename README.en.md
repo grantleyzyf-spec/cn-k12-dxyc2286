@@ -2,7 +2,7 @@
 
 **19 subjects · 55 subject tracks · 12,269 knowledge nodes · 13,686 prerequisite edges (13,194 hard / 492 soft) · 80,539 diagnostic items · 4,375 curriculum-standard entries**, covering primary through senior high school in mainland China.
 
-**[Browse the live site](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/)**
+**[Browse the live site](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/)** · **[Download the dataset on Hugging Face](https://huggingface.co/datasets/grantley-8/cn-k12-dxyc2286)**
 
 ## What this is
 
