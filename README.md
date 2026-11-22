@@ -12,7 +12,7 @@
 **[→ 在线浏览](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/)** · [知识图谱](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/explore/) · [自适应诊断](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/diagnose/) · [学习档案](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/children/) · [诊断记录](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/children/history.html) · [联系与反馈](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/contact/) · [❤️ 赞助支持](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/sponsor/)
 
 > **English summary:** [README.en.md](README.en.md) — what the graph contains, how it is structured, licensing and citation.
-> **License:** code MIT (`LICENSE`), dataset CC BY-NC 4.0 (`LICENSE-DATA`).
+> **License:** code MIT (`LICENSE`), dataset CC BY-NC 4.0 (`LICENSE-DATA`). Scope details in [`NOTICE.md`](NOTICE.md).
 
 **微信公众号：学霸轻松养成过程**（同步更新教材内容拆解与知识点讲解文章；本站负责图谱浏览与自适应诊断）
 
