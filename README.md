@@ -1,12 +1,12 @@
 # 中国 K-12 全学科知识图谱（cn-k12-dxyc2286）
 
-**18 个学科 · 7,300 个知识点 · 9,142 条先修边 · 43,796 道诊断题 · 2,974 条课标条目**，覆盖小学到高中。每个知识点带**可观察的掌握标准**、**节点级诊断题**、**课标条目与置信度**；先修边分 hard / soft 两档，可直接驱动前置诊断与学习路径推荐。
+**19 个学科 · 55 条教材轨道 · 12,269 个知识点 · 13,686 条先修边（hard 13,194 / soft 492）· 80,539 道诊断题 · 4,375 条课标条目**，覆盖小学到高中。每个知识点带**可观察的掌握标准**、**节点级诊断题**、**课标条目与置信度**；先修边分 hard / soft 两档，可直接驱动前置诊断与学习路径推荐。
 
 [![License: MIT (code)](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Data: CC BY-NC 4.0](https://img.shields.io/badge/Data-CC_BY--NC_4.0-lightgreen.svg)](LICENSE-DATA)
-[![知识点](https://img.shields.io/badge/%E7%9F%A5%E8%AF%86%E7%82%B9-7300-2ea44f)](data/topics.json)
-[![先修边](https://img.shields.io/badge/%E5%85%88%E4%BF%AE%E8%BE%B9-9142-1f6feb)](data/dependencies.json)
-[![课标引文](https://img.shields.io/badge/%E5%B8%A6%E5%8E%9F%E6%96%87%E5%BC%95%E6%96%87-7167%2F7300-orange)](data/cn-curriculum-standards.json)
+[![知识点](https://img.shields.io/badge/%E7%9F%A5%E8%AF%86%E7%82%B9-12269-2ea44f)](data/topics.json)
+[![先修边](https://img.shields.io/badge/%E5%85%88%E4%BF%AE%E8%BE%B9-13686-1f6feb)](data/dependencies.json)
+[![课标引文](https://img.shields.io/badge/%E5%B8%A6%E5%8E%9F%E6%96%87%E5%BC%95%E6%96%87-12034%2F12269-orange)](data/cn-curriculum-standards.json)
 [![GitHub Pages](https://img.shields.io/badge/%E7%AB%99%E7%82%B9-GitHub%20Pages-lightgrey)](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/)
 
 **[→ 在线浏览](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/)** · [知识图谱](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/explore/) · [自适应诊断](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/diagnose/) · [学习档案](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/children/) · [诊断记录](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/children/history.html) · [联系与反馈](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/contact/) · [❤️ 赞助支持](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/sponsor/)

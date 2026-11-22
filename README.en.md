@@ -1,6 +1,6 @@
 # China K-12 Subject Knowledge Graph
 
-**18 subjects · 7,300 knowledge nodes · 9,142 prerequisite edges · 43,796 diagnostic items · 2,974 curriculum-standard entries**, covering primary through senior high school in mainland China.
+**19 subjects · 55 subject tracks · 12,269 knowledge nodes · 13,686 prerequisite edges (13,194 hard / 492 soft) · 80,539 diagnostic items · 4,375 curriculum-standard entries**, covering primary through senior high school in mainland China.
 
 **[Browse the live site](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/)**
 
@@ -10,14 +10,14 @@ A machine-readable knowledge graph of the Chinese K-12 curriculum. It is not a l
 
 - **An observable mastery criterion** — what a student must be able to *do*, not "understand the chapter".
 - **Node-level diagnostic items** — questions that test that specific node, not a whole unit.
-- **A prerequisite structure** with two edge types: `hard` (you cannot proceed without it) and `soft` (helps, but is not blocking). 9,142 edges total.
-- **A curriculum-standard anchor** — 7,167 of 7,300 nodes are mapped to one of 2,974 standard entries, with the quoted excerpt and a confidence score.
+- **A prerequisite structure** with two edge types: `hard` (you cannot proceed without it) and `soft` (helps, but is not blocking). 13,686 edges total (13,194 hard / 492 soft).
+- **A curriculum-standard anchor** — 12,034 of 12,269 nodes are mapped to one of 4,375 standard entries, with the quoted excerpt and a confidence score.
 
 Because the diagnostics are attached to nodes rather than units, the graph can be used directly for prerequisite diagnosis: a wrong answer walks the hard edges upward and returns a minimal, ordered list of missing nodes.
 
 ## Coverage
 
-18 subjects across primary, junior-high and senior-high stages, including multiple textbook editions for the main subjects (10 mathematics editions at the time of writing). Chinese mathematics, English, physics, chemistry, biology, politics, history, geography, information technology, and others.
+19 subjects across 55 subject tracks (13 mathematics tracks, 10 physics, 9 chemistry, 8 geography, plus single-track subjects), covering primary, junior-high and senior-high stages. Chinese mathematics, English, physics, chemistry, biology, politics, history, geography, information technology, and others.
 
 ## Layout
 
