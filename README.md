@@ -10,7 +10,7 @@
 [![GitHub Pages](https://img.shields.io/badge/%E7%AB%99%E7%82%B9-GitHub%20Pages-lightgrey)](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/)
 [![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-cn--k12--dxyc2286-yellow)](https://huggingface.co/datasets/grantley-8/cn-k12-dxyc2286)
 
-**[→ 在线浏览](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/)** · [知识图谱](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/explore/) · [自适应诊断](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/diagnose/) · [学习档案](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/children/) · [诊断记录](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/children/history.html) · [联系与反馈](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/contact/) · [❤️ 赞助支持](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/sponsor/)
+**[→ 在线浏览（主站）](https://xueketupu.com/)** · [镜像站](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/) · [知识图谱](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/explore/) · [自适应诊断](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/diagnose/) · [学习档案](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/children/) · [诊断记录](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/children/history.html) · [联系与反馈](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/contact/) · [❤️ 赞助支持](https://grantleyzyf-spec.github.io/cn-k12-dxyc2286/sponsor/)
 
 > **English summary:** [README.en.md](README.en.md) — what the graph contains, how it is structured, licensing and citation.
 > **License:** code MIT (`LICENSE`), dataset CC BY-NC 4.0 (`LICENSE-DATA`). Scope details in [`NOTICE.md`](NOTICE.md).
